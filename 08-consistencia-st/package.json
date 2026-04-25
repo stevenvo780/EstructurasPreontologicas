@@ -1,0 +1,17 @@
+{
+  "name": "estructuras-preontologicas-st-consistencia",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Capa de validación lógica y trazabilidad textual para la tesis usando ST.",
+  "scripts": {
+    "st:check": "node ./scripts/run-st-consistency.mjs",
+    "st:check:verbose": "node ./scripts/run-st-consistency.mjs --verbose",
+    "st:render:claims": "st run ./theories/03-text-layer-tesis.st",
+    "st:render:biblio": "st run ./theories/04-text-layer-bibliografia.st",
+    "st:smoke": "st eval \"check valid (P -> P)\""
+  },
+  "dependencies": {
+    "@stevenvo780/st-lang": "^3.2.2"
+  }
+}

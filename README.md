@@ -18,7 +18,8 @@ El documento `tesis.md` sigue siendo el **manuscrito fuente**: ahí está la for
 ├── 04-debates/
 ├── 05-aplicaciones/
 ├── 06-cierre/
-└── 07-bibliografia/
+├── 07-bibliografia/
+└── 08-consistencia-st/
 ```
 
 ## Orden recomendado de lectura
@@ -33,6 +34,7 @@ El documento `tesis.md` sigue siendo el **manuscrito fuente**: ahí está la for
 8. `05-aplicaciones/`
 9. `06-cierre/`
 10. `07-bibliografia/01-bibliografia-orientativa.md`
+11. `08-consistencia-st/README.md`
 
 ## Qué resuelve cada carpeta
 
@@ -59,6 +61,9 @@ Recoge la conclusión programática, la guía de defensa oral y la estrategia pa
 
 ### `07-bibliografia`
 Reúne líneas de diálogo bibliográfico para consolidar el aparato académico y preparar citas formales posteriores.
+
+### `08-consistencia-st`
+Integra `@stevenvo780/st-lang` como capa local de validación lógica: suite de consistencia, formalizaciones mínimas del núcleo de la tesis y trazabilidad con Text Layer hacia archivos del repositorio.
 
 ## Diagnóstico general del borrador actual
 
@@ -87,6 +92,7 @@ Al terminar el desarrollo, el borrador ya no funcionará solo como una intuició
 - aparato formal mínimo pero defendible;
 - aplicaciones comparativas;
 - estrategia de defensa oral;
-- bibliografía orientativa.
+- bibliografía orientativa;
+- capa de consistencia lógica con ST.
 
 Si el borrador original era la cantera, esta estructura ya es la obra negra. Y bastante habitable, por cierto.

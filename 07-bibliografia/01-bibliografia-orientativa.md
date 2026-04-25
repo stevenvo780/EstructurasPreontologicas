@@ -142,6 +142,24 @@ No se trata de reunir nombres por prestigio, sino de distribuirlos por función.
 - Sellars;
 - Varela y Thompson.
 
+## 11. Herramientas formales y de validación
+
+### ST — Symbolic Theory Language
+
+Útil no como autoridad filosófica de contenido, sino como **herramienta metodológica de consistencia local**. Permite formalizar núcleos declarativos del proyecto, verificar satisfacibilidad y derivación de consecuencias, y trazar `claims` hacia pasajes del repositorio mediante Text Layer.
+
+### Función concreta dentro de este proyecto
+
+ST puede usarse para tres tareas complementarias:
+
+1. verificar que el núcleo formalizado de la tesis no incurra en contradicciones simples;
+2. comprobar que ciertas consecuencias centrales se derivan explícitamente de premisas fijadas;
+3. enlazar pasajes de `tesis.md` y de esta misma bibliografía con formalizaciones mínimas auditables.
+
+### Precaución filosófica
+
+Usar ST no convierte automáticamente una tesis en verdadera. Solo fortalece la disciplina interna del proyecto: ayuda a detectar tensiones, huecos inferenciales o malas compresiones en la arquitectura declarativa del manuscrito.
+
 ## Recomendación práctica
 
 Cuando conviertas este proyecto en tesis final, conviene que cada capítulo tenga su pequeño núcleo bibliográfico propio:
