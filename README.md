@@ -19,7 +19,8 @@ El documento `tesis.md` sigue siendo el **manuscrito fuente**: ahí está la for
 ├── 05-aplicaciones/
 ├── 06-cierre/
 ├── 07-bibliografia/
-└── 08-consistencia-st/
+├── 08-consistencia-st/
+└── Tareas/
 ```
 
 ## Orden recomendado de lectura
@@ -35,6 +36,7 @@ El documento `tesis.md` sigue siendo el **manuscrito fuente**: ahí está la for
 9. `06-cierre/`
 10. `07-bibliografia/01-bibliografia-orientativa.md`
 11. `08-consistencia-st/README.md`
+12. `Tareas/README.md`
 
 ## Qué resuelve cada carpeta
 
@@ -64,6 +66,9 @@ Reúne líneas de diálogo bibliográfico para consolidar el aparato académico 
 
 ### `08-consistencia-st`
 Integra `@stevenvo780/st-lang` como capa local de validación lógica: suite de consistencia, formalizaciones mínimas del núcleo de la tesis y trazabilidad con Text Layer hacia archivos del repositorio.
+
+### `Tareas`
+Reúne la crítica más dura al proyecto y el backlog de tareas gigantes que todavía separan la tesis de un programa teórico-científico más severo, junto con una capa aparte de tareas documentales delegables a IA o soporte.
 
 ## Diagnóstico general del borrador actual
 
