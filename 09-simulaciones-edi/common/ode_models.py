@@ -366,6 +366,43 @@ def simulate_ode_model(params: dict, steps: int, seed: int = 3):
             series.append(x)
         return {ode_key: series, "forcing": forcing}
 
+    if model == "behavioral_attractor":
+        # Behavioral dynamics ODE (Fajen y Warren 2003; Warren 2006).
+        # Sistema de segundo orden con dependencia exponencial de distancia
+        # a meta. Versión adaptada al pipeline EDI:
+        #   φ̈ = -b·φ̇ - k_g·(φ - ψ_g)·(e^{-c1·d_g} + c2)
+        # donde la sonda usa el forcing como ψ_g (dirección de meta variable),
+        # con b, k_g, c1, c2 parámetros publicados por Fajen-Warren.
+        # Parámetros de control publicados: b=3.25, k_g=7.50, c1=0.40, c2=0.40.
+        b_fw = float(params.get("fw_b", 3.25))
+        k_g = float(params.get("fw_k_g", 7.50))
+        c1 = float(params.get("fw_c1", 0.40))
+        c2 = float(params.get("fw_c2", 0.40))
+        d_g = float(params.get("fw_d_g", 4.0))
+        dt = float(params.get("fw_dt", 0.05))
+
+        phi = float(params.get("phi0", 0.0))
+        phi_dot = float(params.get("phi_dot0", 0.0))
+
+        attract = math.exp(-c1 * d_g) + c2  # término de atracción a meta
+        series = []
+        for t in range(steps):
+            # ψ_g varía con el forcing (cambios de meta): ψ_g(t) = forcing[t]
+            psi_g = forcing[t]
+            # φ̈ = -b·φ̇ - k_g·(φ - ψ_g)·(e^{-c1·d_g} + c2)
+            phi_ddot = -b_fw * phi_dot - k_g * (phi - psi_g) * attract
+            # Acoplamiento bidireccional ABM→ODE (cuando aplica)
+            if abm_fb is not None and t < len(abm_fb) and abm_gamma > 1e-8:
+                phi_ddot += abm_gamma * (abm_fb[t] - phi)
+            # Integración Euler con dt explícito
+            phi_dot = phi_dot + phi_ddot * dt + random.uniform(-noise, noise) * dt
+            phi = phi + phi_dot * dt
+            phi = _apply_assimilation(phi, t, params)
+            # Heading error como observable
+            heading_error = phi - psi_g
+            series.append(heading_error)
+        return {ode_key: series, "forcing": forcing}
+
     # Default: mean reversion (legacy) + bidirectional feedback
     x = float(params.get("p0", 0.0))
     series = []

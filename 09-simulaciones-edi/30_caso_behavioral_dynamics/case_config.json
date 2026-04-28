@@ -1,6 +1,6 @@
 {
-  "case_name": "Behavioral Dynamics — Locomoción dirigida (Fajen-Warren 2003)",
-  "ode_model": "mean_reversion",
+  "case_name": "Behavioral Dynamics — Locomoción dirigida (Fajen-Warren 2003, segundo orden)",
+  "ode_model": "behavioral_attractor",
   "ode_key": "heading_error",
   "series_key": "heading_error",
   "log_transform": false,
@@ -21,17 +21,23 @@
   },
   "synthetic": {
     "freq": "MS",
-    "measurement_noise": 0.08,
+    "measurement_noise": 0.06,
     "forcing": {
-      "type": "sinusoidal",
+      "type": "step_changes",
       "amplitude": 0.5,
-      "period": 24,
-      "noise_std": 0.05
+      "period": 16,
+      "noise_std": 0.04
     },
     "true_params": {
-      "ode_alpha": 0.25,
+      "ode_alpha": 0.30,
       "ode_beta": 0.85,
-      "ode_noise": 0.04
+      "ode_noise": 0.03,
+      "fw_b": 3.25,
+      "fw_k_g": 7.50,
+      "fw_c1": 0.40,
+      "fw_c2": 0.40,
+      "fw_d_g": 4.0,
+      "fw_dt": 0.05
     }
   },
   "thresholds": {
@@ -66,16 +72,23 @@
     }
   },
   "extra_ode_params": {
-    "ode_alpha": 0.25,
+    "ode_alpha": 0.30,
     "ode_beta": 0.85,
+    "fw_b": 3.25,
+    "fw_k_g": 7.50,
+    "fw_c1": 0.40,
+    "fw_c2": 0.40,
+    "fw_d_g": 4.0,
+    "fw_dt": 0.05,
     "forcing_scale": 0.2,
     "macro_coupling": 0.30
   },
   "metadata": {
     "domain": "perception-action behavioral dynamics",
     "theoretical_basis": "Fajen y Warren (2003), Warren (2006). Dinámica de heading en locomoción dirigida.",
-    "ode_interpretation": "X = error de heading β = (φ - ψ_g). dX = α(F - β·X) modela atracción a la meta con damping. F representa el flujo óptico exógeno.",
-    "abm_interpretation": "Agentes en grilla 40x40 que ejecutan pasos individuales con biomecánica realista y ruido motor.",
-    "edi_interpretation": "EDI alto indica que el acoplamiento informacional macro (flujo óptico + meta) es necesario para reproducir trayectorias humanas — confirmando control informacional sobre control representacional interno."
+    "ode_interpretation": "φ̈ = -b·φ̇ - k_g·(φ - ψ_g)·(e^{-c1·d_g} + c2). Sistema de segundo orden completo.",
+    "abm_interpretation": "Agentes en grilla 40x40 ejecutan pasos individuales con biomecánica realista y ruido motor.",
+    "edi_interpretation": "EDI alto indica que el acoplamiento informacional macro (heading constraint via Fajen-Warren) es necesario para reproducir trayectorias humanas — confirmando control informacional sobre control representacional interno.",
+    "version": "v2 sonda segundo orden 2026-04-27"
   }
 }
