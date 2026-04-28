@@ -30,3 +30,7 @@ Thumbs.db
 *.log
 *.tmp
 *.bak
+
+# Bibliografía (libros de terceros con copyright; no versionados)
+07-bibliografia/*.pdf
+07-bibliografia/*.PDF
