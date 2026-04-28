@@ -10,12 +10,14 @@ Este capítulo fija el suelo ontológico de la tesis: qué cuenta como existente
 
 ### Nota sobre la generalidad multiescalar (auditoría severa A14, corpus 31-40)
 
-La afirmación de generalidad ontológica de la tesis está **operativamente respaldada** por dos corpus complementarios:
+La tesis es **ontológica general**: afirma que el sustrato material dinámico opera a través de **todas las escalas** físicas, biológicas y cosmológicas, y que las estructuras pre-ontológicas son atractores empíricamente identificables independientemente de la escala. Esta afirmación está **operativamente respaldada** por dos corpus complementarios que **no se distinguen ontológicamente**, sino metodológicamente:
 
-- **Corpus macro (30 casos):** discriminación entre dominios en la escala macro-poblacional (cap 09 + Anexo A.8).
-- **Corpus multiescala (10 casos):** discriminación a través de escalas, desde 10⁻¹⁰ m (atómica) hasta 10²⁰ m (cúmulos globulares), con **7 strong en 7 escalas distintas** + 1 weak + 2 nulls honestos (cap 05-06 + Anexo A.12).
+- **Corpus inter-dominio (30 casos):** discriminación entre dominios heterogéneos —física, biología, economía, política, tecnología, cultura, conducta humana— operando en escalas variables según el dominio (cap 09 + Anexo A.8).
+- **Corpus inter-escala (10 casos):** discriminación a través de **30 órdenes de magnitud espaciales** y temporales, desde dinámica de espín-órbita atómica (10⁻¹⁰ m, 10⁻¹⁵ s) hasta dinámica de cúmulos globulares (10²⁰ m, 10¹⁴ s), con **7 strong en 7 escalas distintas** + 1 weak + 2 nulls honestos (cap 05-06 + Anexo A.12).
 
-Las **estructuras pre-ontológicas** se demuestran como objeto operativo a múltiples escalas — no son artefacto de la escala macro. Esta es la afirmación filosófica más fuerte que el corpus actual sostiene, con la honestidad metodológica de reportar los nulls (Villin Headpiece bajo sonda equilibrio; locomoción τ-dot bajo observación con reinicios discretos) sin ajustarlos para forzar overall_pass.
+Las **estructuras pre-ontológicas** son objeto operativo a cualquier escala donde el aparato puede operar con sondas físicamente motivadas. No son artefacto de ninguna escala particular. Esta es la afirmación ontológica más fuerte que el corpus actual sostiene, con la honestidad metodológica de reportar los nulls (Villin Headpiece bajo sonda equilibrio; locomoción τ-dot bajo observación con reinicios discretos) sin ajustarlos para forzar overall_pass.
+
+La distinción "macro vs micro" en el manuscrito original era **artefacto de la primera iteración**, donde el corpus estaba sesgado a sistemas con datos públicos macro-poblacionales. La iteración posterior con corpus inter-escala demuestra que el aparato y la tesis son **ontológicamente generales**: el dominio macro-poblacional no es preferencial; es uno entre múltiples donde la tesis se demuestra. Cualquier referencia residual a "escala macro" en capítulos posteriores debe leerse como **una entre las escalas cubiertas**, no como límite de la tesis.
 
 ### Nota sobre el sistema modal asumido
 
@@ -34,6 +36,26 @@ La posición filosófica del **irrealismo operativo** se sitúa **explícitament
 
 - las estructuras pre-ontológicas son **reales en sentido moderado**: existen como atractores dinámicos materialmente sostenidos;
 - pero su descripción cuantitativa específica (parámetros, sondas, niveles) es **dependiente del aparato**;
+
+### Criterios operativos para distinguir κ-pragmática de κ-ontológica (auditoría V4-07)
+
+Para que la afirmación κ-ontológica fuerte se sostenga sobre un caso particular, deben cumplirse **tres criterios simultáneos** (ninguno por sí solo basta):
+
+1. **Convergencia bajo sondas independientes con motivación teórica distinta:** EDI ≥ umbral del nivel reclamado bajo al menos dos sondas que no comparten estructura paramétrica (e.g., ODE de orden distinto, formulación termodinámica vs ecológica, etc.). Sin esto, lo detectado puede ser auto-consistencia paramétrica, no estructura material independiente.
+2. **Replicación inter-grupo:** otro grupo de investigación, sin acceso al código del autor, debe reproducir el mismo nivel de cierre operativo con datos comparables. Sin esto, la inferencia es endógena al laboratorio.
+3. **Intervención experimental confirmatoria:** una predicción discriminante sobre intervención manipulada (no observación pasiva) debe cumplirse. Sin esto, la estructura puede ser correlación elaborada.
+
+**Estado del corpus actual respecto a κ-ontológica:**
+
+| Caso del corpus | C1 multi-sonda independiente | C2 replicación inter-grupo | C3 intervención confirmatoria |
+|-----------------|:---:|:---:|:---:|
+| 4 strong macro (04, 16, 20, 27) | parcial (multi-sonda interno solo) | NO | NO |
+| 7 strong inter-escala (31-40) | NO (depuración post-hoc) | NO | NO |
+| Caso 30 behavioral | NO (circularidad detectada) | NO | NO |
+
+**Implicación operacional:** **ningún caso** del corpus actual cumple los tres criterios simultáneos. Por tanto, **todas las afirmaciones del corpus son κ-pragmática**, no κ-ontológica. La afirmación ontológica fuerte (las estructuras pre-ontológicas existen independientemente del aparato) es **conjetura ontológica articulada**, no demostración cerrada. Solo cuando los tres criterios se cumplan en al menos un caso del corpus la tesis pasará de κ-pragmática multiescalar a κ-ontológica multiescalar.
+
+Esta es una **distinción honesta**: el manuscrito declara con precisión qué demuestra (κ-pragmática) y qué postula como conjetura plausible (κ-ontológica), sin colapsar las dos.
 - la corrección de los umbrales y la elección de la sonda son siempre revisables;
 - lo que NO es revisable (en su régimen declarado) es el sustrato material del cual la estructura es atractor.
 

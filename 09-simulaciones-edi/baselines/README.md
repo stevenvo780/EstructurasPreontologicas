@@ -84,9 +84,19 @@ El aparato ABM+ODE no se justifica por **mejor predicción puntual** sino por:
 - **clasificación robusta del corpus en niveles** (4 strong, 7 weak, 2 suggestive, 4 trend, 8 null);
 - **falsación correcta de controles** (3/3 rechazados);
 - **interpretabilidad ontológica** (la sonda ODE encarna una hipótesis teórica; ARIMA no);
-- **transferibilidad multidominio** (la misma metodología EDI atraviesa 30 dominios heterogéneos sin reentrenar arquitectura).
+- **transferibilidad multidominio + multiescala** (la misma metodología EDI atraviesa 30 dominios heterogéneos en escala variable + 10 casos en 8 escalas distintas sin reentrenar arquitectura).
 
 ARIMA y VAR pueden ganar en RMSE absoluto en casos con dinámica lineal estacionaria. Esto **no anula** la tesis: la anularía si ARIMA produjera tan buena clasificación en niveles como el aparato, lo cual no ocurre.
+
+### Aclaración crítica (auditoría V4-05): el AUC-ROC = 0.886 es interno, no externo
+
+El AUC-ROC reportado en N3 (0.886 vs ARIMA 0.600) mide la **capacidad de ranking interno** del EDI sobre el corpus de 12 casos donde las etiquetas strong/no-strong fueron asignadas por el propio aparato. Esto es **consistencia interna**, no validación contra estándar de oro independiente. Una validación AUC-ROC genuinamente externa requeriría:
+
+- etiquetas strong/no-strong asignadas por especialistas de cada dominio sin acceso al EDI;
+- replicación del cálculo EDI por un grupo independiente;
+- comparación de ranking EDI vs ranking experto.
+
+Esto NO se ha hecho. La afirmación correcta es: *"EDI tiene mejor capacidad de ranking interno que ARIMA sobre el mismo corpus"*, no *"EDI valida la tesis contra estándar de oro independiente"*. La validación externa es deuda bloqueante para sustentación.
 
 ## Limitaciones reconocidas
 

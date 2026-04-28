@@ -23,7 +23,7 @@ Astrofísica      ~10¹¹ m        ~10⁵ s          Caso 39 (Cefeida)
 Astrofísica masiva ~10¹⁷-10²⁰m  ~10¹⁴ s         Caso 40 (Cúmulo globular)
 ```
 
-**Cobertura efectiva:** 30 órdenes de magnitud espaciales (10⁻¹⁰ a 10²⁰), 30 órdenes temporales (10⁻¹⁵ a 10¹⁴).
+**Cobertura efectiva (con honestidad):** las escalas listadas son **etiquetas nominales** asociadas a los parámetros de cada modelo dinámico publicado, no propiedades verificadas de los datos crudos. Los datos del corpus inter-escala son **sintéticos** generados con parámetros tomados de literatura para cada escala. La cobertura "30 órdenes de magnitud" significa: *"el aparato es operativo bajo sondas físicamente motivadas que provienen de la literatura de cada escala"*, no *"el aparato ha sido validado sobre datos reales en cada escala"*. La elevación a datos reales abiertos (LoE 4-5) por escala es deuda priorizada de 6-12 meses post-defensa (ver Tabla A.12.4). Esta aclaración se impuso tras la auditoría severa V4-04 que señaló correctamente que la afirmación de cobertura sin esta nota era retórica nominal.
 
 ## 2. Resultados ejecutados
 
@@ -47,14 +47,19 @@ Astrofísica masiva ~10¹⁷-10²⁰m  ~10¹⁴ s         Caso 40 (Cúmulo globu
 |---|------|--------|----:|------------|
 | 35 | Ciclo celular | Celular | 0.13 | Tyson-Novak; señal genuina pero menor |
 
-### 2.3. Casos null honestos (Nivel 0)
+### 2.3. Casos null honestos (Nivel 0) y failure modes
 
 | # | Caso | Escala | EDI | Diagnóstico honesto |
 |---|------|--------|----:|--------------------|
-| 33 | Villin Headpiece | Molecular | 0.00 | Sonda equilibrio no captura dinámica fuera-de-equilibrio |
-| 38 | Locomoción τ-dot | Individual | -1.34 | Reinicios discretos a metas variables; sonda const captura mejor |
+| 33 | Villin Headpiece | Molecular | 0.00 | **Null genuino:** sonda equilibrio no capta dinámica fuera-de-equilibrio. Coupled y no_ode predicen idéntico bajo equilibrio termodinámico promedio. |
+| 38 | Locomoción τ-dot | Individual | -1.34 | **Failure mode de sonda:** EDI fuertemente negativo significa que la sonda τ-dot predice PEOR que la constante. Esto NO es null estructural; es indicación de que la sonda τ-dot está **mal especificada** para datos con reinicios discretos a metas variables. Reportado tal cual; debe leerse como **fallo de sonda**, no como evidencia contra el aparato. |
 
-**Lectura:** los null no son fallas del marco, son **fallas honestas de sondas específicas**. La tesis los reporta tal cual sin ajustarlos.
+**Lectura crítica (auditoría V4-03):** los dos casos no son equivalentes:
+
+- el caso 33 es null **honesto** del aparato: las dos versiones de la sonda predicen casi igual y el EDI sale ≈ 0. El aparato hace lo que debe (rechazar cuando no hay diferencia ablativa).
+- el caso 38 es **failure mode de la sonda alternativa propuesta**, no del aparato: la sonda τ-dot construye predicciones que se desvían más que la const, lo cual indica que τ-dot no es una alternativa funcional a Fajen-Warren para datos con reinicios discretos. Esto significa que la objeción N2 (circularidad de Fajen-Warren para caso 30) **no se ha resuelto** con el caso 38: todavía falta una sonda alternativa funcional para datos de locomoción real, lo cual requiere acceso a datos VENLab/WALK-MS humanos.
+
+Reportar el caso 38 como "null honesto" sería **engañoso**. Su rol correcto en el corpus es: ejemplo de failure mode de sonda, recordatorio de que el aparato puede fallar honestamente sin que ello implique invalidación de la tesis general.
 
 ## 3. Discriminación contra alternativas triviales
 

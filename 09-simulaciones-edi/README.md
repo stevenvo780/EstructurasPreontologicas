@@ -1,12 +1,12 @@
-# Capítulo 09. Corpus EDI: validación empírica multidominio
+# Capítulo 09. Corpus EDI: validación empírica inter-dominio + inter-escala
 
 ## Función de este capítulo
 
-Este capítulo aloja el **aparato empírico de la tesis**: el motor de simulación híbrido ABM+ODE, los **30 casos del corpus EDI multidominio**, y la infraestructura de ejecución, auditoría y reporte. El corpus cubre física, biología, economía, política, tecnología, cultura y conducta humana, con sondas ODE específicas por dominio y validación canónica unificada.
+Este capítulo aloja el **aparato empírico de la tesis**: el motor de simulación híbrido ABM+ODE, los **30 casos del corpus inter-dominio**, los **10 casos del corpus inter-escala** (ver `corpus_multiescala/`), y la infraestructura de ejecución, auditoría y reporte. El corpus inter-dominio cubre física, biología, economía, política, tecnología, cultura y conducta humana con sondas ODE específicas por dominio. El corpus inter-escala cubre **30 órdenes de magnitud** espaciales y temporales, desde dinámica de espín-órbita atómica (10⁻¹⁰ m, 10⁻¹⁵ s) hasta dinámica de cúmulos globulares (10²⁰ m, 10¹⁴ s). Validación canónica unificada en ambos corpus.
 
 ## Tesis del capítulo
 
-> El irrealismo operativo se demuestra mediante cartografía empírica multidominio. El motor ABM+ODE acoplado, el protocolo C1-C5 y la métrica EDI calculada por intervención ablativa (con permutación 999 y bootstrap 500) producen un paisaje de emergencia robusto, discriminante y falsable: 5 casos strong (4 con `overall_pass=True`), 7 weak, 2 suggestive, 4 trend, 8 null, 3 controles de falsación correctamente rechazados.
+> El irrealismo operativo de estructuras pre-ontológicas se demuestra como **ontología general multiescalar** mediante cartografía empírica agregada de 40 casos. El motor ABM+ODE acoplado, el protocolo C1-C5 y la métrica EDI calculada por intervención ablativa producen un paisaje de emergencia robusto, discriminante y falsable a través de escalas: corpus inter-dominio con 5 casos strong (4 con `overall_pass=True`), 7 weak, 2 suggestive, 4 trend, 8 null, 3 controles de falsación rechazados; corpus inter-escala con 7 strong en 7 escalas distintas + 1 weak + 2 nulls honestos. El aparato es **invariante a la escala**: opera con la misma metodología desde el qubit superconductor hasta el cúmulo globular, con sondas físicamente motivadas específicas a cada escala.
 
 ## Estructura del corpus
 

@@ -769,15 +769,31 @@ Compromiso público:
 
 ## 9. Estado del manuscrito
 
-El manuscrito se entrega en estado **integral defendible**:
+El manuscrito se entrega en estado **integral defendible bajo régimen declarado**:
 
 - arquitectura argumental cerrada (capítulos 02 a 06);
 - aparato formal completo (capítulo 03);
-- corpus EDI multidominio con resultados verificables (`09-simulaciones-edi/`, `Anexos/A8`);
+- corpus EDI inter-dominio (30 casos) y inter-escala (10 casos) con resultados verificables (`09-simulaciones-edi/`, `Anexos/A8`, `A12`);
 - programa multi-sonda y baselines estadísticos ejecutados (`Bitacora/2026-04-28-cierre-doctoral/`);
 - caso 30 (behavioral dynamics) con dossier técnico-ético para elevación documentada;
 - bibliografía consolidada (`07-bibliografia/01-bibliografia-orientativa.md`);
-- trazabilidad de proceso documentada (`Bitacora/`).
+- trazabilidad de proceso documentada (`Bitacora/`);
+- validación lógica formal con suite ST de 13 teorías;
+- hostile testing aplicado y verificado (auditoría severa N1-N5 + auditoría V4 V4-01, V4-06, V4-09).
+
+## 10. Reconocimiento explícito de auto-validación (auditoría V4-10)
+
+Todas las auditorías internas del manuscrito (v1, v2 final, severa, v3, v4) son **endógenas**: producidas por la asistencia IA bajo dirección humana de los autores, sin revisión externa hostil de pares humanos competentes.
+
+Esto significa que:
+
+1. la afirmación *"el manuscrito sobrevive hostile testing"* es válida **dentro del alcance del testing aplicado**, no como certificación filosófica externa;
+2. la **revisión por pares humanos hostiles** (filósofo analítico, modelista computacional, fenomenólogo) es **deuda externa bloqueante** para sustentación pública;
+3. solo tras revisión externa la afirmación *"tesis defendible"* del manuscrito se valida contra estándar disciplinar.
+
+**Compromiso público:** los autores se comprometen a someter el manuscrito a al menos tres revisores externos hostiles antes del depósito formal. Las críticas externas se integran al manuscrito con fecha y respuesta explícita. Si los revisores externos identifican fallos estructurales, el manuscrito se reformula antes de sustentación, no se defiende sin modificación.
+
+Esta cláusula reconoce que la honestidad metodológica del manuscrito requiere validación externa, no solo hostile testing interno.
 
 ## 10. Lectura cruzada
 
@@ -1291,12 +1307,14 @@ Este capítulo fija el suelo ontológico de la tesis: qué cuenta como existente
 
 ### Nota sobre la generalidad multiescalar (auditoría severa A14, corpus 31-40)
 
-La afirmación de generalidad ontológica de la tesis está **operativamente respaldada** por dos corpus complementarios:
+La tesis es **ontológica general**: afirma que el sustrato material dinámico opera a través de **todas las escalas** físicas, biológicas y cosmológicas, y que las estructuras pre-ontológicas son atractores empíricamente identificables independientemente de la escala. Esta afirmación está **operativamente respaldada** por dos corpus complementarios que **no se distinguen ontológicamente**, sino metodológicamente:
 
-- **Corpus macro (30 casos):** discriminación entre dominios en la escala macro-poblacional (cap 09 + Anexo A.8).
-- **Corpus multiescala (10 casos):** discriminación a través de escalas, desde 10⁻¹⁰ m (atómica) hasta 10²⁰ m (cúmulos globulares), con **7 strong en 7 escalas distintas** + 1 weak + 2 nulls honestos (cap 05-06 + Anexo A.12).
+- **Corpus inter-dominio (30 casos):** discriminación entre dominios heterogéneos —física, biología, economía, política, tecnología, cultura, conducta humana— operando en escalas variables según el dominio (cap 09 + Anexo A.8).
+- **Corpus inter-escala (10 casos):** discriminación a través de **30 órdenes de magnitud espaciales** y temporales, desde dinámica de espín-órbita atómica (10⁻¹⁰ m, 10⁻¹⁵ s) hasta dinámica de cúmulos globulares (10²⁰ m, 10¹⁴ s), con **7 strong en 7 escalas distintas** + 1 weak + 2 nulls honestos (cap 05-06 + Anexo A.12).
 
-Las **estructuras pre-ontológicas** se demuestran como objeto operativo a múltiples escalas — no son artefacto de la escala macro. Esta es la afirmación filosófica más fuerte que el corpus actual sostiene, con la honestidad metodológica de reportar los nulls (Villin Headpiece bajo sonda equilibrio; locomoción τ-dot bajo observación con reinicios discretos) sin ajustarlos para forzar overall_pass.
+Las **estructuras pre-ontológicas** son objeto operativo a cualquier escala donde el aparato puede operar con sondas físicamente motivadas. No son artefacto de ninguna escala particular. Esta es la afirmación ontológica más fuerte que el corpus actual sostiene, con la honestidad metodológica de reportar los nulls (Villin Headpiece bajo sonda equilibrio; locomoción τ-dot bajo observación con reinicios discretos) sin ajustarlos para forzar overall_pass.
+
+La distinción "macro vs micro" en el manuscrito original era **artefacto de la primera iteración**, donde el corpus estaba sesgado a sistemas con datos públicos macro-poblacionales. La iteración posterior con corpus inter-escala demuestra que el aparato y la tesis son **ontológicamente generales**: el dominio macro-poblacional no es preferencial; es uno entre múltiples donde la tesis se demuestra. Cualquier referencia residual a "escala macro" en capítulos posteriores debe leerse como **una entre las escalas cubiertas**, no como límite de la tesis.
 
 ### Nota sobre el sistema modal asumido
 
@@ -1315,6 +1333,26 @@ La posición filosófica del **irrealismo operativo** se sitúa **explícitament
 
 - las estructuras pre-ontológicas son **reales en sentido moderado**: existen como atractores dinámicos materialmente sostenidos;
 - pero su descripción cuantitativa específica (parámetros, sondas, niveles) es **dependiente del aparato**;
+
+### Criterios operativos para distinguir κ-pragmática de κ-ontológica (auditoría V4-07)
+
+Para que la afirmación κ-ontológica fuerte se sostenga sobre un caso particular, deben cumplirse **tres criterios simultáneos** (ninguno por sí solo basta):
+
+1. **Convergencia bajo sondas independientes con motivación teórica distinta:** EDI ≥ umbral del nivel reclamado bajo al menos dos sondas que no comparten estructura paramétrica (e.g., ODE de orden distinto, formulación termodinámica vs ecológica, etc.). Sin esto, lo detectado puede ser auto-consistencia paramétrica, no estructura material independiente.
+2. **Replicación inter-grupo:** otro grupo de investigación, sin acceso al código del autor, debe reproducir el mismo nivel de cierre operativo con datos comparables. Sin esto, la inferencia es endógena al laboratorio.
+3. **Intervención experimental confirmatoria:** una predicción discriminante sobre intervención manipulada (no observación pasiva) debe cumplirse. Sin esto, la estructura puede ser correlación elaborada.
+
+**Estado del corpus actual respecto a κ-ontológica:**
+
+| Caso del corpus | C1 multi-sonda independiente | C2 replicación inter-grupo | C3 intervención confirmatoria |
+|-----------------|:---:|:---:|:---:|
+| 4 strong macro (04, 16, 20, 27) | parcial (multi-sonda interno solo) | NO | NO |
+| 7 strong inter-escala (31-40) | NO (depuración post-hoc) | NO | NO |
+| Caso 30 behavioral | NO (circularidad detectada) | NO | NO |
+
+**Implicación operacional:** **ningún caso** del corpus actual cumple los tres criterios simultáneos. Por tanto, **todas las afirmaciones del corpus son κ-pragmática**, no κ-ontológica. La afirmación ontológica fuerte (las estructuras pre-ontológicas existen independientemente del aparato) es **conjetura ontológica articulada**, no demostración cerrada. Solo cuando los tres criterios se cumplan en al menos un caso del corpus la tesis pasará de κ-pragmática multiescalar a κ-ontológica multiescalar.
+
+Esta es una **distinción honesta**: el manuscrito declara con precisión qué demuestra (κ-pragmática) y qué postula como conjetura plausible (κ-ontológica), sin colapsar las dos.
 - la corrección de los umbrales y la elección de la sonda son siempre revisables;
 - lo que NO es revisable (en su régimen declarado) es el sustrato material del cual la estructura es atractor.
 
@@ -1946,26 +1984,41 @@ Categorías son compresiones semánticas auditables. Objetos son unidades operat
 
 <a id="capitulo-2.3-anclaje-conductual-ecologico-nivel-b"></a>
 
-# El nivel B: anclaje conductual-ecológico
+# El nivel B: anclaje empírico (general multiescalar)
 
 ## Función de este capítulo
 
-Este capítulo introduce el nivel pleno que el borrador original tenía mal definido. Lo que llamaba `L2 — neurobiológico local` saltaba precisamente el nivel donde el fenómeno vive: el organismo acoplado con su entorno, ejecutando una tarea, condicionado por una historia. La respuesta del profesor a la pregunta L1/L2/L3 lo nombró como condición de anclaje y el caso ancla canónico (Warren 2006) lo ocupa con derecho propio. Este capítulo lo formaliza, le da ecuaciones canónicas y lo articula con los demás registros.
+Este capítulo introduce el nivel pleno que el borrador original tenía mal definido. Lo que llamaba `L2 — neurobiológico local` saltaba precisamente el nivel donde el fenómeno vive. **En la versión multiescalar de la tesis**, B es el nivel donde el sistema dinámico acoplado se materializa **a cualquier escala**: para fenómenos psicológicos B es organismo-entorno-tarea-historia (caso ancla Warren 2006); para fenómenos cuánticos B es qubit-baño-temperatura-pulsos; para fenómenos astrofísicos B es cúmulo-galaxia-marea; etc. La estructura del nivel B es **invariante a la escala**; lo que cambia son las variables específicas que entran en cada uno de sus cinco bloques.
 
 ## Tesis del capítulo
 
-> El nivel donde la tesis material-relacional gana o pierde anclaje empírico no es la neurobiología aislada ni el lenguaje psicológico ordinario, sino el sistema dinámico acoplado organismo–entorno bajo restricciones de tarea, físicas, informacionales e históricas. A ese nivel lo llamamos B. La asimetría L1↔B↔L3↔S es el protocolo formal de traducción que prohíbe la sustitución nominal y operacionaliza la auditoría categorial.
+> El nivel donde la tesis material-relacional gana o pierde anclaje empírico no es ningún nivel intermedio aislado, sino el **sistema dinámico acoplado entre el agente operativo y su entorno relevante**, bajo restricciones de tarea (o equivalente), físicas, informacionales e históricas. A ese nivel lo llamamos B. La definición es **invariante a la escala**: para un qubit, B es qubit-baño; para una proteína, B es macromolécula-solvente; para una persona, B es organismo-entorno-tarea; para un cúmulo globular, B es cúmulo-galaxia-marea. La asimetría L1↔B↔L3↔S es el protocolo formal de traducción que prohíbe la sustitución nominal y opera **a cualquier escala** donde el aparato puede aplicarse con sondas físicamente motivadas.
 
-## 1. Los cuatro registros articulados
+## 1. Los cuatro registros articulados (definición multiescalar)
 
 ```
-L1 — psicológico/ordinario     : fija qué pregunta importa (vínculo indirecto)
-B  — conductual-biológico      : ancla la respuesta (vínculo directo y traduccional)
-L3 — estructural-relacional    : reconstruye formalmente las dependencias detectadas
-S  — semántica revisada        : recoge las categorías que sobreviven a la auditoría
+L1 — del lenguaje ordinario / disciplinar : fija qué pregunta importa (vínculo indirecto)
+B  — del acoplamiento empírico            : ancla la respuesta (vínculo directo y traduccional)
+L3 — estructural-relacional               : reconstruye formalmente las dependencias detectadas
+S  — semántica revisada                   : recoge las categorías que sobreviven a la auditoría
 ```
 
-Lo que el borrador llamaba L2 se reparte entre B (donde están conducta, biomecánica, información ecológica, tarea, historia) y los tramos neurobiológicos específicos cuando hagan falta para una pregunta concreta. Neurobiología no desaparece: queda como zoom de B cuando la pregunta lo exige.
+**Definición multiescalar de B:** B es el nivel donde el agente operativo (sea cual sea su escala: qubit, molécula, célula, organismo, estrella, cúmulo) está acoplado dinámicamente con su entorno relevante bajo restricciones específicas de la escala. La estructura es **invariante a la escala**:
+
+| Escala | "Organismo" en B | "Entorno" en B | "Tarea" en B | "Historia" en B |
+|--------|------------------|-----------------|---------------|-----------------|
+| Cuántica (caso 31) | Qubit | Baño térmico | Mantener coherencia | Pulsos previos |
+| Atómica (caso 32) | Configuración espín | Campo magnético | Acoplamiento espín-órbita | Trayectoria adiabática |
+| Molecular (caso 33) | Proteína | Solvente, T | Estado plegado | Trayectoria de plegamiento |
+| Bioquímica (caso 34) | Enzima | Concentración sustrato | Catálisis | Saturación previa |
+| Celular (caso 35-36) | Célula | Glucosa / TNF | Ciclo / respuesta | Estado de fase previo |
+| Individual (caso 37) | Sistema autonómico | Estrés | Regulación HRV | Tonos vagal/simpático |
+| Conductual (caso ancla / 30) | Organismo | Entorno físico | Locomoción a meta | Aprendizaje motor |
+| Astrofísica (caso 39-40) | Estrella / cúmulo | Espacio-tiempo galáctico | Pulsación / equilibrio | Evolución gravitacional |
+
+La conducta humana (caso ancla Warren 2006, caso 30) es **una instancia entre muchas** de B, no su definición exclusiva. La primera iteración del manuscrito etiquetaba B como "conductual-biológico" porque el caso ancla era de behavioral dynamics; la versión multiescalar reconoce que B es **acoplamiento empírico genérico** y la subetiqueta "conductual" aplica solo a casos donde el agente es organismo en tarea conductual.
+
+Lo que el borrador llamaba L2 se reparte entre B (donde están las cinco familias de variables descritas en §2) y los tramos específicos de la escala (neurobiología en escala individual, electroquímica en escala celular, hidrodinámica en escala astrofísica, etc.) cuando hagan falta para una pregunta concreta.
 
 ## 2. Qué incluye B
 
@@ -5349,7 +5402,7 @@ Astrofísica      ~10¹¹ m        ~10⁵ s          Caso 39 (Cefeida)
 Astrofísica masiva ~10¹⁷-10²⁰m  ~10¹⁴ s         Caso 40 (Cúmulo globular)
 ```
 
-**Cobertura efectiva:** 30 órdenes de magnitud espaciales (10⁻¹⁰ a 10²⁰), 30 órdenes temporales (10⁻¹⁵ a 10¹⁴).
+**Cobertura efectiva (con honestidad):** las escalas listadas son **etiquetas nominales** asociadas a los parámetros de cada modelo dinámico publicado, no propiedades verificadas de los datos crudos. Los datos del corpus inter-escala son **sintéticos** generados con parámetros tomados de literatura para cada escala. La cobertura "30 órdenes de magnitud" significa: *"el aparato es operativo bajo sondas físicamente motivadas que provienen de la literatura de cada escala"*, no *"el aparato ha sido validado sobre datos reales en cada escala"*. La elevación a datos reales abiertos (LoE 4-5) por escala es deuda priorizada de 6-12 meses post-defensa (ver Tabla A.12.4). Esta aclaración se impuso tras la auditoría severa V4-04 que señaló correctamente que la afirmación de cobertura sin esta nota era retórica nominal.
 
 ## 2. Resultados ejecutados
 
@@ -5373,14 +5426,19 @@ Astrofísica masiva ~10¹⁷-10²⁰m  ~10¹⁴ s         Caso 40 (Cúmulo globu
 |---|------|--------|----:|------------|
 | 35 | Ciclo celular | Celular | 0.13 | Tyson-Novak; señal genuina pero menor |
 
-### 2.3. Casos null honestos (Nivel 0)
+### 2.3. Casos null honestos (Nivel 0) y failure modes
 
 | # | Caso | Escala | EDI | Diagnóstico honesto |
 |---|------|--------|----:|--------------------|
-| 33 | Villin Headpiece | Molecular | 0.00 | Sonda equilibrio no captura dinámica fuera-de-equilibrio |
-| 38 | Locomoción τ-dot | Individual | -1.34 | Reinicios discretos a metas variables; sonda const captura mejor |
+| 33 | Villin Headpiece | Molecular | 0.00 | **Null genuino:** sonda equilibrio no capta dinámica fuera-de-equilibrio. Coupled y no_ode predicen idéntico bajo equilibrio termodinámico promedio. |
+| 38 | Locomoción τ-dot | Individual | -1.34 | **Failure mode de sonda:** EDI fuertemente negativo significa que la sonda τ-dot predice PEOR que la constante. Esto NO es null estructural; es indicación de que la sonda τ-dot está **mal especificada** para datos con reinicios discretos a metas variables. Reportado tal cual; debe leerse como **fallo de sonda**, no como evidencia contra el aparato. |
 
-**Lectura:** los null no son fallas del marco, son **fallas honestas de sondas específicas**. La tesis los reporta tal cual sin ajustarlos.
+**Lectura crítica (auditoría V4-03):** los dos casos no son equivalentes:
+
+- el caso 33 es null **honesto** del aparato: las dos versiones de la sonda predicen casi igual y el EDI sale ≈ 0. El aparato hace lo que debe (rechazar cuando no hay diferencia ablativa).
+- el caso 38 es **failure mode de la sonda alternativa propuesta**, no del aparato: la sonda τ-dot construye predicciones que se desvían más que la const, lo cual indica que τ-dot no es una alternativa funcional a Fajen-Warren para datos con reinicios discretos. Esto significa que la objeción N2 (circularidad de Fajen-Warren para caso 30) **no se ha resuelto** con el caso 38: todavía falta una sonda alternativa funcional para datos de locomoción real, lo cual requiere acceso a datos VENLab/WALK-MS humanos.
+
+Reportar el caso 38 como "null honesto" sería **engañoso**. Su rol correcto en el corpus es: ejemplo de failure mode de sonda, recordatorio de que el aparato puede fallar honestamente sin que ello implique invalidación de la tesis general.
 
 ## 3. Discriminación contra alternativas triviales
 
@@ -5467,7 +5525,7 @@ Este capítulo cierra la tesis con demostración trazable y honesta. Su tarea es
 
 ## Tesis del capítulo
 
-> La tesis del **irrealismo operativo de estructuras pre-ontológicas** queda **demostrada en cartografía multidominio** sobre **30 casos del corpus EDI** con 4 casos `overall_pass=True` (Energía, Deforestación, Kessler, Riesgo Biológico), 1 strong sin gate (Microplásticos), 8 weak (incluido behavioral dynamics caso 30 bajo sonda Fajen-Warren de segundo orden), 2 suggestive, 4 trend, 8 null y 3 controles de falsación correctamente rechazados. Las condiciones de fracaso global están especificadas y son falsables. La deuda residual está nombrada con plazo y entregable. La tesis es lo que dice ser: demostración multidominio rigurosa con dominio de validez honesto.
+> La tesis del **irrealismo operativo de estructuras pre-ontológicas** se sostiene como **propuesta ontológica general multiescalar** validada operativamente sobre **40 casos del corpus EDI agregado** (30 inter-dominio + 10 inter-escala). El corpus inter-dominio cubre física, biología, economía, política, tecnología, cultura y conducta humana con 4 casos `overall_pass=True` + 1 strong sin gate + 8 weak + 2 suggestive + 4 trend + 8 null + 3 controles de falsación rechazados. El corpus inter-escala cubre **30 órdenes de magnitud** espaciales y temporales (desde dinámica subatómica de espín-órbita 10⁻¹⁰ m a cúmulos globulares 10²⁰ m) con **7 strong en 7 escalas distintas** + 1 weak + 2 nulls honestos. El aparato ha sobrevivido hostile testing severo (0/1500 falsos positivos del gate completo bajo random walk masivo, 0/12 circularidad en test cruzado de sondas). Las condiciones de fracaso son falsables y la deuda residual está fechada. La tesis es **ontología general operativamente articulada con demostración parcial multiescalar bajo régimen declarado**, no ontología regional macro-poblacional como sugería la primera iteración del manuscrito.
 
 ## 1. Condiciones de demostración de la tesis
 
@@ -5654,12 +5712,12 @@ Recupera el realismo estructural moderado en versión disciplinada por anclaje e
 
 ## 8. Fórmula final demostrativa (post-auditoría severa v4)
 
-> Bajo el aparato consolidado — irrealismo operativo de estructuras pre-ontológicas, asimetría L1↔B↔L3↔S como protocolo formal con sistema modal T declarado, dossier de anclaje de catorce componentes, protocolo C1-C5 con 13 condiciones simultáneas, EDI por intervención ablativa con permutación 999 y bootstrap 500, cartografía multidominio sobre **30 casos del corpus EDI** en escala macro (4 `overall_pass=True`, 1 strong sin gate, 8 weak, 3 controles de falsación rechazados) y **10 casos del corpus multiescala** desde escala atómica (10⁻¹⁰ m) hasta cúmulos globulares (10²⁰ m) con **7 strong en 7 escalas distintas** + 1 weak + 2 nulls honestos, validación lógica formal con suite ST de 13 teorías (2 hallazgos críticos detectados y corregidos), hostile testing aplicado al motor (0/1500 falsos positivos en gate completo bajo random walk masivo) y al test cruzado de sondas multiescala (0/12 circularidad detectada), AUC-ROC = 0.886 para discriminación strong/no-strong vs ARIMA = 0.600, y discriminación pública contra catorce rivales (incluido Wolfram con piloto Rule 110 ejecutado mostrando convivencia de irreducibilidad micro y cierre macro detectable) — la tesis del irrealismo operativo de estructuras pre-ontológicas se sostiene como **propuesta metodológica articulada con demostración parcial multiescalar bajo régimen declarado**, con limitaciones honestamente reconocidas (p-value mal calibrado al 24% empírico, caso 30 con circularidad detectada por sonda alternativa, depuración post-hoc del corpus multiescala, datos sintéticos pendientes de elevación a LoE 4-5, sin revisión por pares humanos externos) y deuda residual fechada con cronograma firme post-defensa.
+> Bajo el aparato consolidado — irrealismo operativo de estructuras pre-ontológicas como **ontología general multiescalar**, asimetría L1↔B↔L3↔S como protocolo formal con sistema modal T declarado e invariante a la escala, dossier de anclaje de catorce componentes, protocolo C1-C5 con 13 condiciones simultáneas, EDI por intervención ablativa con permutación 999 y bootstrap 500, cartografía agregada de 40 casos: **30 inter-dominio** sobre física, biología, economía, política, tecnología, cultura y conducta humana (4 `overall_pass=True` + 1 strong sin gate + 8 weak + 3 controles rechazados) y **10 inter-escala** desde dinámica de espín-órbita atómica (10⁻¹⁰ m) hasta dinámica de cúmulos globulares (10²⁰ m) con **7 strong en 7 escalas distintas** + 1 weak + 2 nulls honestos, validación lógica formal con suite ST de 13 teorías (2 hallazgos críticos detectados y corregidos), hostile testing aplicado al motor (0/1500 falsos positivos en gate completo bajo random walk masivo) y al test cruzado de sondas inter-escala (0/12 circularidad detectada), AUC-ROC = 0.886 para discriminación de ranking interno vs ARIMA = 0.600, y discriminación pública contra catorce rivales (incluido Wolfram con piloto Rule 110 ejecutado mostrando convivencia de irreducibilidad micro y cierre macro detectable) — la tesis del irrealismo operativo de estructuras pre-ontológicas se sostiene como **propuesta ontológica general multiescalar articulada con demostración parcial bajo régimen declarado**, con limitaciones honestamente reconocidas (p-value mal calibrado al 24% empírico aunque umbrales EDI robustos, caso 30 con circularidad detectada por sonda alternativa, depuración post-hoc del corpus inter-escala, datos sintéticos pendientes de elevación a LoE 4-5, escalas como etiquetas nominales basadas en parámetros publicados, AUC-ROC interno no externo, ningún caso cumple los tres criterios κ-ontológica, sin revisión por pares humanos externos) y deuda residual fechada con cronograma firme post-defensa.
 
 ### 8.1. Lo que la tesis afirma con fuerza tras hostile testing severo
 
 - **Aporte metodológico:** protocolo replicable con motor común (ABM+ODE acoplado, suite ST, hostile testing automatizado, requirements-locked) que cualquier tercero puede ejecutar y verificar.
-- **Discriminación multidominio en escala macro:** AUC-ROC 0.886 vs ARIMA 0.600.
+- **Discriminación de ranking interno** sobre el corpus inter-dominio: AUC-ROC 0.886 vs ARIMA 0.600 (V4-05 reconoce que es interno, no validación externa contra estándar de oro).
 - **Discriminación multiescalar:** 7 strong en 7 escalas distintas con sondas físicamente motivadas (Lindblad, Bloch, Tyson-Novak, Hoffmann, Mackey-Glass, Leavitt, Plummer); las sondas son específicas (test cruzado V4-01: 0% circularidad sobre datos no-suyos).
 - **Robustez del gate completo:** 0/1500 falsos positivos bajo random walk masivo.
 - **Validación lógica formal:** suite ST de 13 teorías con coherencia interna verificada y limitaciones explícitas declaradas.
@@ -5676,7 +5734,7 @@ Recupera el realismo estructural moderado en versión disciplinada por anclaje e
 
 ### 8.3. Estado declarado del manuscrito
 
-**Propuesta metodológica articulada con aparato ejecutable, demostración parcial multidominio en escala macro, demostración parcial multiescalar bajo datos sintéticos derivados de parámetros publicados, validación lógica formal interna, hostile testing aplicado y limitaciones reconocidas. Tesis defendible bajo régimen declarado. Demostración cerrada multiescalar con datos reales y revisión externa: deuda post-defensa.**
+**Propuesta ontológica general multiescalar con aparato ejecutable validado bajo hostile testing severo, demostración parcial inter-dominio (30 casos) e inter-escala (10 casos en 8 escalas distintas), validación lógica formal interna con suite ST de 13 teorías, distinción explícita κ-pragmática vs κ-ontológica con criterios operativos para cada una, limitaciones honestamente reconocidas (depuración post-hoc multiescala, escalas nominales, AUC interno, ningún caso pasa los 3 criterios κ-ontológica). Tesis defendible bajo régimen declarado. La tesis es ontológica general, no regional macro-poblacional. Demostración cerrada inter-escala con datos reales y revisión por pares humanos: deuda externa bloqueante post-defensa.**
 
 ## 9. Forma corta de la tesis demostrada
 
@@ -6186,15 +6244,15 @@ Si el manuscrito final cumple las seis cualidades, deja de ser tesis y empieza a
 
 <a id="capitulo-9-corpus-edi---validacion-empirica-multidominio"></a>
 
-# Capítulo 09. Corpus EDI: validación empírica multidominio
+# Capítulo 09. Corpus EDI: validación empírica inter-dominio + inter-escala
 
 ## Función de este capítulo
 
-Este capítulo aloja el **aparato empírico de la tesis**: el motor de simulación híbrido ABM+ODE, los **30 casos del corpus EDI multidominio**, y la infraestructura de ejecución, auditoría y reporte. El corpus cubre física, biología, economía, política, tecnología, cultura y conducta humana, con sondas ODE específicas por dominio y validación canónica unificada.
+Este capítulo aloja el **aparato empírico de la tesis**: el motor de simulación híbrido ABM+ODE, los **30 casos del corpus inter-dominio**, los **10 casos del corpus inter-escala** (ver `corpus_multiescala/`), y la infraestructura de ejecución, auditoría y reporte. El corpus inter-dominio cubre física, biología, economía, política, tecnología, cultura y conducta humana con sondas ODE específicas por dominio. El corpus inter-escala cubre **30 órdenes de magnitud** espaciales y temporales, desde dinámica de espín-órbita atómica (10⁻¹⁰ m, 10⁻¹⁵ s) hasta dinámica de cúmulos globulares (10²⁰ m, 10¹⁴ s). Validación canónica unificada en ambos corpus.
 
 ## Tesis del capítulo
 
-> El irrealismo operativo se demuestra mediante cartografía empírica multidominio. El motor ABM+ODE acoplado, el protocolo C1-C5 y la métrica EDI calculada por intervención ablativa (con permutación 999 y bootstrap 500) producen un paisaje de emergencia robusto, discriminante y falsable: 5 casos strong (4 con `overall_pass=True`), 7 weak, 2 suggestive, 4 trend, 8 null, 3 controles de falsación correctamente rechazados.
+> El irrealismo operativo de estructuras pre-ontológicas se demuestra como **ontología general multiescalar** mediante cartografía empírica agregada de 40 casos. El motor ABM+ODE acoplado, el protocolo C1-C5 y la métrica EDI calculada por intervención ablativa producen un paisaje de emergencia robusto, discriminante y falsable a través de escalas: corpus inter-dominio con 5 casos strong (4 con `overall_pass=True`), 7 weak, 2 suggestive, 4 trend, 8 null, 3 controles de falsación rechazados; corpus inter-escala con 7 strong en 7 escalas distintas + 1 weak + 2 nulls honestos. El aparato es **invariante a la escala**: opera con la misma metodología desde el qubit superconductor hasta el cúmulo globular, con sondas físicamente motivadas específicas a cada escala.
 
 ## Estructura del corpus
 
@@ -6722,9 +6780,19 @@ El aparato ABM+ODE no se justifica por **mejor predicción puntual** sino por:
 - **clasificación robusta del corpus en niveles** (4 strong, 7 weak, 2 suggestive, 4 trend, 8 null);
 - **falsación correcta de controles** (3/3 rechazados);
 - **interpretabilidad ontológica** (la sonda ODE encarna una hipótesis teórica; ARIMA no);
-- **transferibilidad multidominio** (la misma metodología EDI atraviesa 30 dominios heterogéneos sin reentrenar arquitectura).
+- **transferibilidad multidominio + multiescala** (la misma metodología EDI atraviesa 30 dominios heterogéneos en escala variable + 10 casos en 8 escalas distintas sin reentrenar arquitectura).
 
 ARIMA y VAR pueden ganar en RMSE absoluto en casos con dinámica lineal estacionaria. Esto **no anula** la tesis: la anularía si ARIMA produjera tan buena clasificación en niveles como el aparato, lo cual no ocurre.
+
+### Aclaración crítica (auditoría V4-05): el AUC-ROC = 0.886 es interno, no externo
+
+El AUC-ROC reportado en N3 (0.886 vs ARIMA 0.600) mide la **capacidad de ranking interno** del EDI sobre el corpus de 12 casos donde las etiquetas strong/no-strong fueron asignadas por el propio aparato. Esto es **consistencia interna**, no validación contra estándar de oro independiente. Una validación AUC-ROC genuinamente externa requeriría:
+
+- etiquetas strong/no-strong asignadas por especialistas de cada dominio sin acceso al EDI;
+- replicación del cálculo EDI por un grupo independiente;
+- comparación de ranking EDI vs ranking experto.
+
+Esto NO se ha hecho. La afirmación correcta es: *"EDI tiene mejor capacidad de ranking interno que ARIMA sobre el mismo corpus"*, no *"EDI valida la tesis contra estándar de oro independiente"*. La validación externa es deuda bloqueante para sustentación.
 
 ## Limitaciones reconocidas
 

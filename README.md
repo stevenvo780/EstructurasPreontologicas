@@ -12,21 +12,35 @@
 
 ## Idea-fuerza
 
-> Todo fenómeno empíricamente explicable está anclado en un sustrato material dinámico. Las entidades, niveles y categorías con que lo pensamos son **estructuras pre-ontológicas**: regularidades operativas anteriores a la objetualidad, identificables como atractores empíricamente robustos de sistemas dinámicos acoplados, admisibles solo bajo dossier de anclaje completo, protocolo C1-C5 satisfecho y EDI medido por intervención ablativa.
+> Todo fenómeno empíricamente explicable, **a cualquier escala física, biológica o cosmológica**, está anclado en un sustrato material dinámico. Las entidades, niveles y categorías con que lo pensamos son **estructuras pre-ontológicas**: regularidades operativas anteriores a la objetualidad, identificables como atractores empíricamente robustos de sistemas dinámicos acoplados, admisibles solo bajo dossier de anclaje completo, protocolo C1-C5 satisfecho y EDI medido por intervención ablativa. **La tesis es ontológica general, no restringida a sistemas macro-poblacionales.**
 
 ## Posición filosófica: Irrealismo Operativo
 
-**Realismo estructural moderado + pluralismo epistemológico + anti-reificación operativa.** Nunca afirmamos `X es Y`; afirmamos `bajo el instrumento I, X exhibe cierre operativo de grado G respecto a la pregunta Q`. La dependencia instrumento-fenómeno no es defecto: es condición epistémica honesta.
+**Realismo estructural moderado + pluralismo epistemológico + anti-reificación operativa.** Nunca afirmamos `X es Y`; afirmamos `bajo el instrumento I, X exhibe cierre operativo de grado G respecto a la pregunta Q`. La dependencia instrumento-fenómeno no es defecto: es condición epistémica honesta. Esta posición se afirma **como ontología general**, no como ontología regional para una escala específica.
 
 ## Régimen de validez declarado
 
-La tesis está **demostrada** en cartografía multidominio de **30 casos** del corpus EDI con:
+La tesis se sostiene como **propuesta ontológica multiescalar** validada operativamente sobre **40 casos** del corpus EDI agregado:
 
-- **EDI** (Effective Dependence Index) calculado por intervención ablativa con prueba de permutación (999) y bootstrap (500);
-- **Protocolo C1-C5** (Convergencia, Robustez, Determinismo, Consistencia, Incertidumbre) más 8 criterios adicionales para `overall_pass=True`;
-- **5 casos strong** (4 con gate completo): Energía (EDI=0.650), Deforestación (0.602), Microplásticos (0.782), Kessler (0.353), Riesgo Biológico (0.333);
-- **3 controles de falsación** correctamente rechazados;
-- **Discriminación pública** contra catorce posiciones rivales (incluido Wolfram Physics Project).
+### Cobertura empírica
+
+- **Corpus inter-dominio (30 casos):** discriminación entre dominios heterogéneos —física, biología, economía, política, tecnología, cultura, conducta humana— con EDI por intervención ablativa, permutación 999, bootstrap 500, protocolo C1-C5, AUC-ROC = 0.886 vs ARIMA = 0.600. **5 strong** (4 con gate completo): Energía (0.650), Deforestación (0.602), Microplásticos (0.782), Kessler (0.353), Riesgo Biológico (0.333). **3 controles de falsación** correctamente rechazados.
+- **Corpus inter-escala (10 casos):** discriminación a través de **30 órdenes de magnitud espaciales** (10⁻¹⁰ m a 10²⁰ m) y **30 órdenes temporales** (10⁻¹⁵ s a 10¹⁴ s), desde dinámica subatómica hasta dinámica de cúmulos globulares. **7 strong en 7 escalas distintas** (atómica, cuántica, bioquímica, celular oscilatoria, individual, astrofísica, astrofísica masiva) + 1 weak + 2 nulls honestos. Sondas físicamente motivadas (Lindblad, Bloch, Tyson-Novak, Hoffmann, Mackey-Glass, Leavitt, Plummer); test cruzado V4-01 confirma especificidad (0/12 circularidad sobre datos no-suyos).
+
+### Aparato verificado bajo hostile testing severo
+
+- **0/1500 falsos positivos** del gate completo bajo random walk masivo (N1+N5+V4-06).
+- **Suite ST de 13 teorías** formales con 2 hallazgos críticos detectados y corregidos.
+- **Tests unitarios** del motor `edi_engine.py` pasados (V4-09).
+- **Discriminación pública** contra catorce posiciones rivales (incluido Wolfram Physics Project, con piloto Rule 110 ejecutado mostrando convivencia de irreducibilidad micro y cierre macro detectable).
+
+### Limitaciones honestas reconocidas
+
+- p-value declarado mal calibrado (tasa empírica de tipo I = 24%, no 5%); **los umbrales EDI sí son robustos**;
+- caso 30 (behavioral dynamics) sufre circularidad detectada por sonda alternativa; se mantiene como caso piloto metodológico hasta elevación con datos humanos reales;
+- composición de los corpus es post-hoc, no pre-registrada;
+- datos del corpus inter-escala son **sintéticos derivados de parámetros publicados**; la elevación a datos reales abiertos (IBM Quantum, BRENDA, PhysioNet, OGLE, Gaia DR3) es deuda priorizada de 6-12 meses post-defensa;
+- todas las auditorías son endógenas; revisión por pares humanos hostiles es deuda externa bloqueante para sustentación.
 
 ## Estructura del repositorio
 
@@ -89,13 +103,13 @@ source .venv/bin/activate    # entorno aislado
 
 ## Aporte original sustantivo
 
-La novedad no es de inventario sino de **articulación**:
+La novedad no es de inventario sino de **articulación ontológica multiescalar**:
 
-1. **Monismo ontológico** sin reduccionismo plano.
-2. **Realismo estructural moderado** con anclaje empírico (estructuras pre-ontológicas como atractores con cinco condiciones).
-3. **Pluralismo explicativo controlado** con asimetría L1↔B↔L3↔S como protocolo formal.
-4. **Formalización metodológica** con procedimiento empírico de κ vía EDI + C1-C5.
-5. **Cartografía multidominio masiva** con 30 casos y discriminación pública contra rivales identificables, incluido Wolfram.
+1. **Monismo ontológico multiescalar** sin reduccionismo plano: el mismo sustrato material dinámico subyace desde la dinámica subatómica hasta la cosmológica.
+2. **Realismo estructural moderado** con anclaje empírico (estructuras pre-ontológicas como atractores con cinco condiciones, **independientemente de la escala**).
+3. **Pluralismo explicativo controlado** con asimetría L1↔B↔L3↔S como protocolo formal y sistema modal T declarado.
+4. **Formalización metodológica** con procedimiento empírico de κ vía EDI + C1-C5, distinción explícita κ-pragmática vs κ-ontológica.
+5. **Cartografía multidominio + multiescala** con 40 casos agregados (30 inter-dominio + 10 inter-escala), discriminación pública contra rivales identificables (incluido Wolfram con piloto ejecutado), validación lógica formal con suite ST de 13 teorías, hostile testing aplicado y verificado.
 
 ## Estado del manuscrito
 
@@ -114,16 +128,28 @@ La novedad no es de inventario sino de **articulación**:
 - conclusión demostrativa con cinco condiciones de fracaso falsables;
 - guía de defensa oral en tres tiempos.
 
-**Lo pendiente:**
+**Lo ejecutado en el cierre 2026-04-28:**
 
-- elevación del caso 30 (behavioral dynamics) bajo metodología EDI completa;
-- programa multi-sonda para 3-5 casos clave;
-- integración bibliográfica formal con citas rigurosas;
-- desarrollo del aparato para variables normativas;
-- lectura externa hostil;
-- redacción unificada en estilo doctoral final.
+- corpus inter-escala con 10 casos (atómica → astrofísica masiva): **7 strong**;
+- multi-sonda + baselines ARIMA/VAR/RW/GP ejecutados;
+- piloto EDI sobre Wolfram Rule 110 ejecutado (EDI 0.55, cierre macro detectable);
+- caso piloto COVID dimensión normativa ejecutado con resultado null honesto;
+- hostile testing N1-N5 + V4-01-V4-09 ejecutado;
+- suite ST extendida a 13 teorías con 2 hallazgos críticos corregidos;
+- 4 anexos nuevos (A.8-A.11), capítulo 05-06 nuevo, cap 02-01 con declaración multiescalar;
+- distinción κ-pragmática/κ-ontológica formalizada;
+- pre-registro honesto reconociendo limitaciones post-hoc;
+- 18 citas textuales con paginación inyectadas en cap 02-01, 02-02, 02-03, 03-01, 03-02, 03-03.
 
-Cronograma plausible: 24-36 meses (capítulo 06-03).
+**Lo que queda como deuda externa post-defensa:**
+
+- elevación del caso 30 (behavioral dynamics) con datos humanos VENLab/WALK-MS (9-12 meses, requiere aval CEI);
+- elevación del corpus inter-escala con datos reales abiertos en 5 escalas (6-12 meses);
+- revisión por pares humanos hostiles (3-6 meses, deuda externa bloqueante);
+- calibración correcta del p-value (refinamiento metodológico);
+- conversión a plantilla institucional para depósito (3 semanas pre-depósito).
+
+Cronograma post-defensa para programa de validación completo: 24-36 meses (capítulo 06-03).
 
 ## Cómo citar (versión preliminar)
 

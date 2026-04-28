@@ -87,15 +87,31 @@ Compromiso público:
 
 ## 9. Estado del manuscrito
 
-El manuscrito se entrega en estado **integral defendible**:
+El manuscrito se entrega en estado **integral defendible bajo régimen declarado**:
 
 - arquitectura argumental cerrada (capítulos 02 a 06);
 - aparato formal completo (capítulo 03);
-- corpus EDI multidominio con resultados verificables (`09-simulaciones-edi/`, `Anexos/A8`);
+- corpus EDI inter-dominio (30 casos) y inter-escala (10 casos) con resultados verificables (`09-simulaciones-edi/`, `Anexos/A8`, `A12`);
 - programa multi-sonda y baselines estadísticos ejecutados (`Bitacora/2026-04-28-cierre-doctoral/`);
 - caso 30 (behavioral dynamics) con dossier técnico-ético para elevación documentada;
 - bibliografía consolidada (`07-bibliografia/01-bibliografia-orientativa.md`);
-- trazabilidad de proceso documentada (`Bitacora/`).
+- trazabilidad de proceso documentada (`Bitacora/`);
+- validación lógica formal con suite ST de 13 teorías;
+- hostile testing aplicado y verificado (auditoría severa N1-N5 + auditoría V4 V4-01, V4-06, V4-09).
+
+## 10. Reconocimiento explícito de auto-validación (auditoría V4-10)
+
+Todas las auditorías internas del manuscrito (v1, v2 final, severa, v3, v4) son **endógenas**: producidas por la asistencia IA bajo dirección humana de los autores, sin revisión externa hostil de pares humanos competentes.
+
+Esto significa que:
+
+1. la afirmación *"el manuscrito sobrevive hostile testing"* es válida **dentro del alcance del testing aplicado**, no como certificación filosófica externa;
+2. la **revisión por pares humanos hostiles** (filósofo analítico, modelista computacional, fenomenólogo) es **deuda externa bloqueante** para sustentación pública;
+3. solo tras revisión externa la afirmación *"tesis defendible"* del manuscrito se valida contra estándar disciplinar.
+
+**Compromiso público:** los autores se comprometen a someter el manuscrito a al menos tres revisores externos hostiles antes del depósito formal. Las críticas externas se integran al manuscrito con fecha y respuesta explícita. Si los revisores externos identifican fallos estructurales, el manuscrito se reformula antes de sustentación, no se defiende sin modificación.
+
+Esta cláusula reconoce que la honestidad metodológica del manuscrito requiere validación externa, no solo hostile testing interno.
 
 ## 10. Lectura cruzada
 

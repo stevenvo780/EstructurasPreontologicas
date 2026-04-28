@@ -1,23 +1,38 @@
-# El nivel B: anclaje conductual-ecológico
+# El nivel B: anclaje empírico (general multiescalar)
 
 ## Función de este capítulo
 
-Este capítulo introduce el nivel pleno que el borrador original tenía mal definido. Lo que llamaba `L2 — neurobiológico local` saltaba precisamente el nivel donde el fenómeno vive: el organismo acoplado con su entorno, ejecutando una tarea, condicionado por una historia. La respuesta del profesor a la pregunta L1/L2/L3 lo nombró como condición de anclaje y el caso ancla canónico (Warren 2006) lo ocupa con derecho propio. Este capítulo lo formaliza, le da ecuaciones canónicas y lo articula con los demás registros.
+Este capítulo introduce el nivel pleno que el borrador original tenía mal definido. Lo que llamaba `L2 — neurobiológico local` saltaba precisamente el nivel donde el fenómeno vive. **En la versión multiescalar de la tesis**, B es el nivel donde el sistema dinámico acoplado se materializa **a cualquier escala**: para fenómenos psicológicos B es organismo-entorno-tarea-historia (caso ancla Warren 2006); para fenómenos cuánticos B es qubit-baño-temperatura-pulsos; para fenómenos astrofísicos B es cúmulo-galaxia-marea; etc. La estructura del nivel B es **invariante a la escala**; lo que cambia son las variables específicas que entran en cada uno de sus cinco bloques.
 
 ## Tesis del capítulo
 
-> El nivel donde la tesis material-relacional gana o pierde anclaje empírico no es la neurobiología aislada ni el lenguaje psicológico ordinario, sino el sistema dinámico acoplado organismo–entorno bajo restricciones de tarea, físicas, informacionales e históricas. A ese nivel lo llamamos B. La asimetría L1↔B↔L3↔S es el protocolo formal de traducción que prohíbe la sustitución nominal y operacionaliza la auditoría categorial.
+> El nivel donde la tesis material-relacional gana o pierde anclaje empírico no es ningún nivel intermedio aislado, sino el **sistema dinámico acoplado entre el agente operativo y su entorno relevante**, bajo restricciones de tarea (o equivalente), físicas, informacionales e históricas. A ese nivel lo llamamos B. La definición es **invariante a la escala**: para un qubit, B es qubit-baño; para una proteína, B es macromolécula-solvente; para una persona, B es organismo-entorno-tarea; para un cúmulo globular, B es cúmulo-galaxia-marea. La asimetría L1↔B↔L3↔S es el protocolo formal de traducción que prohíbe la sustitución nominal y opera **a cualquier escala** donde el aparato puede aplicarse con sondas físicamente motivadas.
 
-## 1. Los cuatro registros articulados
+## 1. Los cuatro registros articulados (definición multiescalar)
 
 ```
-L1 — psicológico/ordinario     : fija qué pregunta importa (vínculo indirecto)
-B  — conductual-biológico      : ancla la respuesta (vínculo directo y traduccional)
-L3 — estructural-relacional    : reconstruye formalmente las dependencias detectadas
-S  — semántica revisada        : recoge las categorías que sobreviven a la auditoría
+L1 — del lenguaje ordinario / disciplinar : fija qué pregunta importa (vínculo indirecto)
+B  — del acoplamiento empírico            : ancla la respuesta (vínculo directo y traduccional)
+L3 — estructural-relacional               : reconstruye formalmente las dependencias detectadas
+S  — semántica revisada                   : recoge las categorías que sobreviven a la auditoría
 ```
 
-Lo que el borrador llamaba L2 se reparte entre B (donde están conducta, biomecánica, información ecológica, tarea, historia) y los tramos neurobiológicos específicos cuando hagan falta para una pregunta concreta. Neurobiología no desaparece: queda como zoom de B cuando la pregunta lo exige.
+**Definición multiescalar de B:** B es el nivel donde el agente operativo (sea cual sea su escala: qubit, molécula, célula, organismo, estrella, cúmulo) está acoplado dinámicamente con su entorno relevante bajo restricciones específicas de la escala. La estructura es **invariante a la escala**:
+
+| Escala | "Organismo" en B | "Entorno" en B | "Tarea" en B | "Historia" en B |
+|--------|------------------|-----------------|---------------|-----------------|
+| Cuántica (caso 31) | Qubit | Baño térmico | Mantener coherencia | Pulsos previos |
+| Atómica (caso 32) | Configuración espín | Campo magnético | Acoplamiento espín-órbita | Trayectoria adiabática |
+| Molecular (caso 33) | Proteína | Solvente, T | Estado plegado | Trayectoria de plegamiento |
+| Bioquímica (caso 34) | Enzima | Concentración sustrato | Catálisis | Saturación previa |
+| Celular (caso 35-36) | Célula | Glucosa / TNF | Ciclo / respuesta | Estado de fase previo |
+| Individual (caso 37) | Sistema autonómico | Estrés | Regulación HRV | Tonos vagal/simpático |
+| Conductual (caso ancla / 30) | Organismo | Entorno físico | Locomoción a meta | Aprendizaje motor |
+| Astrofísica (caso 39-40) | Estrella / cúmulo | Espacio-tiempo galáctico | Pulsación / equilibrio | Evolución gravitacional |
+
+La conducta humana (caso ancla Warren 2006, caso 30) es **una instancia entre muchas** de B, no su definición exclusiva. La primera iteración del manuscrito etiquetaba B como "conductual-biológico" porque el caso ancla era de behavioral dynamics; la versión multiescalar reconoce que B es **acoplamiento empírico genérico** y la subetiqueta "conductual" aplica solo a casos donde el agente es organismo en tarea conductual.
+
+Lo que el borrador llamaba L2 se reparte entre B (donde están las cinco familias de variables descritas en §2) y los tramos específicos de la escala (neurobiología en escala individual, electroquímica en escala celular, hidrodinámica en escala astrofísica, etc.) cuando hagan falta para una pregunta concreta.
 
 ## 2. Qué incluye B
 
