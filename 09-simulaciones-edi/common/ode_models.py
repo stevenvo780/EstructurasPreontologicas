@@ -366,6 +366,95 @@ def simulate_ode_model(params: dict, steps: int, seed: int = 3):
             series.append(x)
         return {ode_key: series, "forcing": forcing}
 
+    if model == "thermo_balance":
+        # Sonda alternativa multi-sonda para Energía: balance termodinámico
+        # de bajo orden con tres compartimentos (generación, almacenamiento,
+        # consumo). Conservación de energía como restricción global.
+        # Motivación: la dinámica de Energía es termodinámica antes que
+        # ecológica; un balance directo prueba si el cierre operativo persiste
+        # sin la metáfora ecológica/Lotka-Volterra.
+        #   dG/dt = α*F - λ*(G - C)
+        #   dC/dt = β*(G - C) - γ*C + δ*F
+        # Observable: C (consumo agregado).
+        gen = float(params.get("p0", 0.0))
+        cons = float(params.get("c0", 0.0))
+        alpha_t = float(params.get("ode_alpha", 0.4))
+        beta_t = float(params.get("ode_beta", 0.3))
+        lam = float(params.get("ode_lambda", 0.15))
+        gam = float(params.get("ode_gamma", 0.10))
+        delta = float(params.get("ode_delta", 0.2))
+        series = []
+        for t in range(steps):
+            f = forcing[t]
+            d_gen = alpha_t * f - lam * (gen - cons)
+            d_cons = beta_t * (gen - cons) - gam * cons + delta * f
+            if abm_fb is not None and t < len(abm_fb) and abm_gamma > 1e-8:
+                d_cons += abm_gamma * (abm_fb[t] - cons)
+            gen = gen + d_gen + random.uniform(-noise, noise)
+            cons = cons + d_cons + random.uniform(-noise, noise)
+            cons = _apply_assimilation(cons, t, params)
+            series.append(cons)
+        return {ode_key: series, "forcing": forcing}
+
+    if model == "spatial_logistic":
+        # Sonda alternativa multi-sonda para Deforestación: logística espacial
+        # saturada. Modelo de difusión espacial con saturación territorial:
+        #   dX/dt = r*X*(1 - X/K) + θ*F
+        # donde K es la frontera agrícola disponible. Motivación distinta a
+        # von Thünen: la dinámica es saturación de un recurso espacial, no
+        # renta económica.
+        x = float(params.get("p0", 0.05))
+        r = float(params.get("ode_alpha", 0.3))
+        K = float(params.get("ode_K", 1.0))
+        theta = float(params.get("ode_beta", 0.2))
+        series = []
+        for t in range(steps):
+            f = forcing[t]
+            denom = max(K, 1e-6)
+            dx = r * x * (1.0 - x / denom) + theta * f
+            if abm_fb is not None and t < len(abm_fb) and abm_gamma > 1e-8:
+                dx += abm_gamma * (abm_fb[t] - x)
+            x = x + dx + random.uniform(-noise, noise)
+            x = _apply_assimilation(x, t, params)
+            series.append(x)
+        return {ode_key: series, "forcing": forcing}
+
+    if model == "seir_demographic":
+        # Sonda alternativa multi-sonda para Riesgo Biológico: SIR/SEIR
+        # demográfico con mortalidad acoplada al estado infeccioso.
+        # Compartimentos: S, E, I, R. Mortalidad observable.
+        #   dS/dt = -β*S*I/N + θ*F
+        #   dE/dt = β*S*I/N - σ*E
+        #   dI/dt = σ*E - γ*I
+        #   dR/dt = γ*I
+        # Mortalidad agregada: μ*I + ξ*F
+        S = float(params.get("S0", 0.95))
+        E = float(params.get("E0", 0.03))
+        I = float(params.get("I0", 0.01))
+        R = float(params.get("R0", 0.01))
+        N = max(1e-6, S + E + I + R)
+        beta_e = float(params.get("ode_beta", 0.4))
+        sigma = float(params.get("ode_sigma", 0.2))
+        gamma_e = float(params.get("ode_gamma", 0.1))
+        mu = float(params.get("ode_mu", 0.05))
+        xi = float(params.get("ode_xi", 0.1))
+        theta = float(params.get("ode_alpha", 0.05))
+        series = []
+        for t in range(steps):
+            f = forcing[t]
+            new_inf = beta_e * S * I / N
+            S = max(0.0, S - new_inf + theta * f)
+            E = max(0.0, E + new_inf - sigma * E)
+            I = max(0.0, I + sigma * E - gamma_e * I)
+            R = R + gamma_e * I
+            mortality = mu * I + xi * f
+            if abm_fb is not None and t < len(abm_fb) and abm_gamma > 1e-8:
+                mortality += abm_gamma * (abm_fb[t] - mortality)
+            mortality = mortality + random.uniform(-noise, noise)
+            mortality = _apply_assimilation(mortality, t, params)
+            series.append(mortality)
+        return {ode_key: series, "forcing": forcing}
+
     if model == "behavioral_attractor":
         # Behavioral dynamics ODE (Fajen y Warren 2003; Warren 2006).
         # Sistema de segundo orden con dependencia exponencial de distancia

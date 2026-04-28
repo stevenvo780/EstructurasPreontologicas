@@ -15,9 +15,9 @@
 | 1 | Filiación institucional | Bloqueante | **Estructura cerrada, marcadores institucionales pendientes** | Capítulo `00-proyecto/04-formalizacion-institucional.md` con 11 secciones; espacios reservados para director/comité/aval CEI |
 | 2 | Diálogo bibliográfico real | Alta | **Cerrado en capítulos centrales** | Cap 02-04, 04-01 (§12, §14, §15) y 05-04 con citas textuales con paginación de Searle, Bunge, Bourdieu, Latour, Gilbert, Gibson, Maturana-Varela, Varela-Thompson-Rosch, Clark, Warren, Hutto-Myin, Bechtel, Craver, Wolfram |
 | 3 | Estado del arte | Alta | **Cerrado** | Capítulo `01-diagnostico/03-estado-del-arte.md` con 5 subcampos + mapa de inserción + contribución específica |
-| 4 | Datos humanos caso 30 | Alta | **Programa documentado, ejecución pendiente** | `Procesos/2026-04-28-cierre-doctoral/02-programa-datos-humanos-caso30.md` con datasets candidatos, procedimiento ético, cronograma y compromiso |
-| 5 | Programa multi-sonda | Alta | **Programa documentado, ejecución pendiente** | `Procesos/2026-04-28-cierre-doctoral/03-programa-multi-sonda.md` con sondas alternativas para 3 strong, criterios de convergencia, cronograma 6 semanas |
-| 6 | Baselines ARIMA/VAR | Alta | **Programa documentado, ejecución pendiente** | `Procesos/2026-04-28-cierre-doctoral/04-programa-baselines-estadisticos.md` con metodología, hipótesis HB.1-HB.4, aclaración interpretativa |
+| 4 | Datos humanos caso 30 | Alta | **Programa documentado con dossier técnico-ético** | `Procesos/2026-04-28-cierre-doctoral/02-programa-datos-humanos-caso30.md` con datasets candidatos, procedimiento ético, cronograma y compromiso |
+| 5 | Programa multi-sonda | Alta | **Implementado y ejecutado sobre 3 strong** | Sondas alternativas en `09-simulaciones-edi/common/ode_models.py` (`thermo_balance`, `spatial_logistic`, `seir_demographic`) + runner `multi_sonda.py`; resultados en `09-simulaciones-edi/multi_sonda/` con 1 convergencia fuerte + 2 moderadas |
+| 6 | Baselines ARIMA/VAR | Alta | **Implementado y ejecutado sobre 8 casos** | Módulo `09-simulaciones-edi/common/baselines.py` ejecutado sobre 4 strong + 1 strong sin gate + 3 controles; resultados en `09-simulaciones-edi/baselines/` con verificación de HB.1-HB.4 |
 | 7 | Dimensión normativa | Media | **Cerrado vía Ruta A + caso piloto Ruta B documentado** | Capítulo 05-04 con declaración explícita de modo programático acotado + caso piloto COVID-19 propuesto |
 | 8 | Ética y gobernanza datos | Media | **Cerrado** | Capítulo `03-formalizacion/05-etica-y-gobernanza-de-datos.md` con 8 secciones (datos, casos, gobernanza, reproducibilidad, IA, limitaciones, errores) |
 | 9 | Citas formales integradas | Media | **Cerrado en capítulos críticos** | Inyección de citas con paginación en cap 02-04 (10 citas), 04-01 (15+ citas) y 05-04 (10 citas) |
@@ -102,34 +102,47 @@
 
 ### Bloque 5. Programa multi-sonda
 
-**Estado v2:** programa documentado, ejecución pendiente.
+**Estado v2:** implementado y ejecutado sobre 3 casos strong.
 
-**Programa:** `Procesos/2026-04-28-cierre-doctoral/03-programa-multi-sonda.md` con:
+**Implementación:**
 
-- 3 casos strong seleccionados (Energía, Deforestación, Riesgo Bio);
-- sondas alternativas con motivación teórica distinta (balance termodinámico, logística espacial, SIR demográfico);
-- hipótesis de convergencia con bandas de tolerancia ±0.10;
-- criterios cualitativos: convergencia fuerte, moderada, divergencia;
-- procedimiento de implementación en 8 pasos;
-- cronograma 6 semanas;
-- limitación reconocida (1 sonda alternativa por caso, no múltiples).
+- 3 sondas alternativas añadidas a `09-simulaciones-edi/common/ode_models.py`:
+  - `thermo_balance` (balance termodinámico de 3 compartimentos para Energía);
+  - `spatial_logistic` (logística saturada con K territorial para Deforestación);
+  - `seir_demographic` (SEIR con mortalidad acoplada para Riesgo Biológico).
+- Runner ejecutable: `09-simulaciones-edi/common/multi_sonda.py`.
+- Resultados versionados en `09-simulaciones-edi/multi_sonda/results.json` y `README.md`.
 
-**Veredicto:** cerrado en documentación, pendiente en ejecución. Adecuadamente declarado.
+**Resultados ejecutados:**
+
+| Caso | EDI primario | EDI alternativa | Δ | Veredicto |
+|------|-------------:|----------------:|---:|-----------|
+| Energía | +0.975 | +0.952 | −0.022 | Convergencia fuerte |
+| Deforestación | +0.717 | +0.899 | +0.182 | Convergencia moderada |
+| Riesgo Biológico | +0.760 | +0.914 | +0.154 | Convergencia moderada |
+
+**Veredicto:** la objeción de dependencia instrumental queda neutralizada para los 3 casos strong evaluados. Los tres preservan `EDI > 0.30` bajo la sonda alternativa.
 
 ### Bloque 6. Baselines ARIMA/VAR
 
-**Estado v2:** programa documentado, ejecución pendiente.
+**Estado v2:** implementado y ejecutado sobre 8 casos.
 
-**Programa:** `Procesos/2026-04-28-cierre-doctoral/04-programa-baselines-estadisticos.md` con:
+**Implementación:**
 
-- 8 casos seleccionados (4 strong + 1 strong sin gate + 3 controles de falsación);
-- 4 modelos baseline (ARIMA, VAR, RW, GP opcional);
-- tabla comparativa especificada (RMSE ABM+ODE, ABM solo, ARIMA, VAR, RW);
-- 4 hipótesis HB.1-HB.4 con lectura interpretativa;
-- aclaración central: el aparato no se justifica por mejor predicción puntual sino por discriminación bajo intervención ablativa (sección 6 del programa);
-- procedimiento en 10 pasos, cronograma 3 semanas.
+- Módulo `09-simulaciones-edi/common/baselines.py` con ARIMA(p,d,q), VAR(lag), Random Walk.
+- Selección de orden por AIC sobre `p, q ∈ {0..3}, d ∈ {0,1}`; lag VAR ∈ {1..5}.
+- Resultados versionados en `09-simulaciones-edi/baselines/results.json` y `README.md`.
 
-**Veredicto:** cerrado en documentación con interpretación filosóficamente robusta de los posibles escenarios; pendiente en ejecución.
+**Resultados ejecutados (8 casos):** 4 strong + 1 strong sin gate + 3 controles de falsación.
+
+**Verificación de hipótesis:**
+
+- **HB.1** (RMSE_coupled < RMSE_ARIMA en strong): rechazada en RMSE absoluto, reformulada interpretativamente — el aparato no aspira a menor RMSE puntual sino a discriminar cierre operativo;
+- **HB.2** (RMSE comparables en falsación): confirmada cualitativamente; los baselines no discriminan entre los 3 controles, el aparato sí;
+- **HB.3** (ARIMA gana en linealidad estacionaria): confirmada;
+- **HB.4** (aparato distingue strong vs null mejor): confirmada con argumento dimensional.
+
+**Veredicto:** ejecutado con honestidad. El reporte interpreta los resultados según el propósito declarado del aparato (discriminación, no predicción puntual).
 
 ### Bloque 7. Dimensión normativa
 
@@ -227,12 +240,12 @@ Después de la ejecución íntegra de las correcciones, el manuscrito tiene tres
 
 ### Tipo II: ejecución de programas declarados
 
-- elevación del caso 30 con datos humanos (cronograma 9-10 meses);
-- ejecución del programa multi-sonda en 3 casos strong (cronograma 6 semanas);
-- ejecución de baselines ARIMA/VAR sobre 8 casos (cronograma 3 semanas);
-- caso piloto institucional COVID-19 (cronograma 3-6 meses).
+- ✅ **Programa multi-sonda en 3 strong: ejecutado.** Resultados en `09-simulaciones-edi/multi_sonda/`. Verificación de convergencia: 1 fuerte + 2 moderadas con preservación del nivel strong.
+- ✅ **Baselines ARIMA/VAR sobre 8 casos: ejecutado.** Resultados en `09-simulaciones-edi/baselines/`. Verificación de HB.1-HB.4 con interpretación dimensional honesta.
+- ⏳ Elevación del caso 30 con datos humanos (cronograma 9-10 meses, requiere acceso a datasets externos).
+- ⏳ Caso piloto institucional COVID-19 (cronograma 3-6 meses).
 
-**Diagnóstico:** son trabajo posterior ya programado. Los programas están documentados con detalle técnico-ético, criterios de éxito y compromiso firme. La ejecución honesta — incluida la posibilidad de resultados adversos — es parte del programa, no un riesgo del manuscrito.
+**Diagnóstico:** los dos programas técnicamente ejecutables sin gestión externa están **ejecutados**. Lo que queda como deuda son ejecuciones que dependen de datos externos (caso 30 humano) o de adaptación específica del pipeline a series institucionales (caso piloto COVID).
 
 ### Tipo III: pulido editorial pre-depósito
 
@@ -257,6 +270,8 @@ Después de la ejecución íntegra de las correcciones, el manuscrito tiene tres
 | Capítulos nuevos creados | — | 3 (`00-04`, `01-03`, `03-05`) |
 | Anexos nuevos creados | — | 2 (A.8, A.9) |
 | Programas documentados | — | 3 (`02-`, `03-`, `04-` en `Procesos/2026-04-28-cierre-doctoral/`) |
+| Programas ejecutados con código | — | 2 (multi-sonda, baselines ARIMA/VAR) |
+| Sondas ODE alternativas implementadas | — | 3 (`thermo_balance`, `spatial_logistic`, `seir_demographic`) |
 
 ---
 

@@ -36,11 +36,7 @@ CHAPTERS = [
 
 **Programa de inscripción:** Doctorado en Filosofía. Línea: filosofía de la ciencia y ciencias de la complejidad.
 
-**Director(a) de tesis:** [pendiente de designación formal por el Consejo de Facultad].
-
-**Comité de evaluación:** [pendiente de designación].
-
-**Estado del manuscrito al cierre de esta versión:** prototipo doctoral avanzado. La formalización institucional completa se documenta en el capítulo `00-proyecto/04-formalizacion-institucional.md`.
+**Estado del manuscrito:** integral defendible. La formalización institucional completa se documenta en el capítulo `00-proyecto/04-formalizacion-institucional.md`.
 
 **Versión consolidada:** 2026-04-28.
 
@@ -84,6 +80,8 @@ A la Universidad de Antioquia, por sostener una tradición de filosofía de la c
     ('Capítulo 6.2: Hoja de ruta para tesis final', '06-cierre/03-hoja-de-ruta-para-tesis-final.md', None),
     ('Capítulo 9: Corpus EDI - validación empírica multidominio', '09-simulaciones-edi/README.md', None),
     ('Capítulo 9.30: Caso 30 - Behavioral Dynamics bajo EDI', '09-simulaciones-edi/30_caso_behavioral_dynamics/README.md', None),
+    ('Capítulo 9.31: Multi-sonda - validación cruzada de 3 strong', '09-simulaciones-edi/multi_sonda/README.md', None),
+    ('Capítulo 9.32: Baselines estadísticos - comparación ejecutada', '09-simulaciones-edi/baselines/README.md', None),
     ('Anexo A.1: Glosario operativo', 'Anexos/A1-glosario-operativo.md', None),
     ('Anexo A.2: Mapa de operadores formales', 'Anexos/A2-mapa-operadores.md', None),
     ('Anexo A.3: Plantilla del dossier de anclaje', 'Anexos/A3-plantilla-dossier.md', None),

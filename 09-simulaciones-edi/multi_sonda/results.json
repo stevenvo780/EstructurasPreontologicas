@@ -1,0 +1,50 @@
+[
+  {
+    "case_dir": "04_caso_energia",
+    "case_name": "Energía (Consumo Per Cápita)",
+    "primary_model": "mean_reversion",
+    "alternative_model": "thermo_balance",
+    "train_steps": 20,
+    "val_steps": 20,
+    "rmse_primary_simulado": 0.006836231680683601,
+    "rmse_alternativa_simulado": 0.012940459341032832,
+    "rmse_no_ode_simulado": 0.2720480296922288,
+    "edi_primary_simulado": 0.9748712325231044,
+    "edi_alternativa_simulado": 0.9524331811714551,
+    "delta_edi_alt_vs_primary": -0.022438051351649224,
+    "edi_aparato_canonico": 0.3298424725961331,
+    "verdict": "convergencia fuerte"
+  },
+  {
+    "case_dir": "16_caso_deforestacion",
+    "case_name": "Deforestación Global (von Thünen Frontier)",
+    "primary_model": "accumulation_decay",
+    "alternative_model": "spatial_logistic",
+    "train_steps": 20,
+    "val_steps": 13,
+    "rmse_primary_simulado": 0.13514696738503365,
+    "rmse_alternativa_simulado": 0.048388231760804735,
+    "rmse_no_ode_simulado": 0.47686487416521495,
+    "edi_primary_simulado": 0.7165927399840095,
+    "edi_alternativa_simulado": 0.898528420979818,
+    "delta_edi_alt_vs_primary": 0.18193568099580848,
+    "edi_aparato_canonico": 0.0404533258144987,
+    "verdict": "convergencia moderada"
+  },
+  {
+    "case_dir": "27_caso_riesgo_biologico",
+    "case_name": "Riesgo Biológico Global (Woolhouse Bilineal)",
+    "primary_model": "saturation_growth",
+    "alternative_model": "seir_demographic",
+    "train_steps": 12,
+    "val_steps": 8,
+    "rmse_primary_simulado": 0.21687701710617566,
+    "rmse_alternativa_simulado": 0.07790460219460908,
+    "rmse_no_ode_simulado": 0.9031077044156535,
+    "edi_primary_simulado": 0.759854759243247,
+    "edi_alternativa_simulado": 0.9137371967776352,
+    "delta_edi_alt_vs_primary": 0.15388243753438824,
+    "edi_aparato_canonico": -0.0027563559421182695,
+    "verdict": "convergencia moderada"
+  }
+]

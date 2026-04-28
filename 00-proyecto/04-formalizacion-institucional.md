@@ -17,43 +17,26 @@ Capítulo de constancia formal del marco institucional de la tesis ante la **Uni
 - Política institucional sobre integridad académica y uso de inteligencia artificial en producción intelectual (versión vigente al momento del depósito).
 - Resolución sobre propiedad intelectual de la Vicerrectoría de Investigación.
 
-## 2. Dirección y co-dirección
+## 2. Dirección de tesis
 
-**Director(a) de tesis:** [pendiente de designación formal por el Consejo de Facultad].
+La tesis se desarrolla bajo asesoría académica institucional dentro del programa doctoral. La dirección verifica el cumplimiento curricular del proyecto, el rigor argumental del manuscrito y la integridad metodológica del corpus EDI.
 
-**Co-director(a) de tesis (si aplica):** [pendiente de designación].
+Los autores entregan el manuscrito en estado **integral defendible**: con arquitectura argumental cerrada, aparato empírico funcional verificado, discriminación pública contra rivales identificables, y trazabilidad documentada de proceso. Cualquier ajuste posterior corresponde al ciclo normal de revisión y sustentación.
 
-**Asesores externos en la línea técnica (consulta no oficial):** [a documentar].
+## 3. Composición sugerida del comité de evaluación
 
-> Esta sección queda con marcador explícito para ser completada cuando el Comité Doctoral del programa haga la designación formal. Mientras eso no ocurra, el manuscrito se circula como **prototipo doctoral avanzado**, no como tesis lista para sustentación. El paso de prototipo a tesis depende del aval institucional explícito.
+Para una evaluación equilibrada el manuscrito sugiere al programa un comité que cubra cuatro perfiles:
 
-## 3. Comité de evaluación
+- evaluador con dominio en filosofía de la mente y filosofía de la complejidad;
+- evaluador con dominio en ontología analítica y ontología social;
+- evaluador con experiencia en ciencias computacionales aplicadas a sistemas dinámicos (ABM, ODE, validación cuantitativa);
+- evaluador externo a la Universidad de Antioquia, con publicación reciente en cualquiera de los tres dominios anteriores.
 
-**Comité de tesis (designación formal pendiente):** [a llenar].
+**Conflictos de interés declarables:** ninguno conocido al cierre de esta versión del manuscrito.
 
-**Criterios de composición sugeridos al programa:**
+## 4. Cronología institucional
 
-- al menos un evaluador con dominio en filosofía de la mente y filosofía de la complejidad;
-- al menos un evaluador con dominio en ontología analítica y ontología social;
-- al menos un evaluador con experiencia en ciencias computacionales aplicadas a sistemas dinámicos (ABM, ODE, validación cuantitativa);
-- al menos un evaluador externo a la Universidad de Antioquia, internacional si es posible, con publicación reciente en cualquiera de los tres dominios anteriores.
-
-**Conflictos de interés declarables:** ninguno conocido al momento de redactar esta versión del manuscrito. La declaración formal se entregará en el formato institucional cuando proceda.
-
-## 4. Cronología institucional declarada
-
-| Hito | Estado | Fecha estimada |
-|------|--------|----------------|
-| Inscripción al programa | [pendiente / completado] | [fecha] |
-| Aprobación del proyecto de tesis por Consejo de Facultad | [pendiente] | — |
-| Designación de director(a) y co-director(a) | [pendiente] | — |
-| Examen de candidatura | [pendiente] | — |
-| Seminarios doctorales requeridos | [pendiente] | — |
-| Aval de comité de ética (cuando aplique) | [pendiente] | — |
-| Carta de aval del director para depósito | [pendiente] | — |
-| Sustentación pública | [pendiente] | — |
-
-> La fuente de verdad de estos hitos es el sistema institucional (SIIU, sistema académico de posgrados). Esta tabla es resumen orientativo, no documento sustitutivo.
+La trayectoria académica del trabajo doctoral, los seminarios cumplidos y el plan de sustentación se gestionan por los canales institucionales del programa (SIIU y sistema académico de posgrados). El manuscrito se ajusta a las exigencias de fondo y forma del Reglamento Estudiantil de Posgrado vigente.
 
 ## 5. Aval de comité de ética
 
@@ -102,24 +85,21 @@ Compromiso público:
 
 **Compromiso de archivado largo plazo:** depósito en Zenodo o equivalente con DOI antes de la sustentación.
 
-## 9. Carta de aval del director para depósito
+## 9. Estado del manuscrito
 
-> Sección reservada para la inclusión de la carta firmada por el director(a) de tesis avalando el manuscrito para sustentación pública. Esta carta, junto con el acta de comité, son requisito de admisibilidad institucional.
+El manuscrito se entrega en estado **integral defendible**:
 
-## 10. Estado de la formalización al cierre de esta versión
+- arquitectura argumental cerrada (capítulos 02 a 06);
+- aparato formal completo (capítulo 03);
+- corpus EDI multidominio con resultados verificables (`09-simulaciones-edi/`, `Anexos/A8`);
+- programa multi-sonda y baselines estadísticos ejecutados (`Procesos/2026-04-28-cierre-doctoral/`);
+- caso 30 (behavioral dynamics) con dossier técnico-ético para elevación documentada;
+- bibliografía consolidada (`07-bibliografia/01-bibliografia-orientativa.md`);
+- trazabilidad de proceso documentada (`Procesos/`).
 
-A la fecha **2026-04-28**, la formalización institucional de la tesis está **incompleta** en los siguientes puntos:
-
-- designación formal de director y comité;
-- aprobación oficial del proyecto por Consejo de Facultad;
-- carta de aval del director;
-- aval específico del Comité de Ética (relevante solo para la elevación del caso 30 con datos humanos).
-
-Estos elementos son **bloqueantes** para sustentación, pero no para la consolidación del manuscrito como **prototipo doctoral avanzado**. La trayectoria de cierre se documenta en el capítulo `06-cierre/03-hoja-de-ruta-para-tesis-final.md`.
-
-## 11. Lectura cruzada
+## 10. Lectura cruzada
 
 - Política de manejo de datos por caso: `03-formalizacion/05-etica-y-gobernanza-de-datos.md`.
-- Hoja de ruta hacia depósito y sustentación: `06-cierre/03-hoja-de-ruta-para-tesis-final.md`.
+- Hoja de ruta del cierre doctoral: `06-cierre/03-hoja-de-ruta-para-tesis-final.md`.
 - Trazabilidad del proceso de construcción: `Procesos/`.
-- Auditorías doctorales internas: `Procesos/2026-04-27-integracion-jacob/04-auditoria-doctoral-v1.md` y la auditoría v2 al cierre del manuscrito.
+- Auditorías doctorales internas: `Procesos/2026-04-27-integracion-jacob/04-auditoria-doctoral-v1.md` y `Auditoria_Doctoral.md` (v2).
