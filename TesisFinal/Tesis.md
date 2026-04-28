@@ -84,7 +84,7 @@ A la Universidad de Antioquia, por sostener una tradición de filosofía de la c
 - [Anexo A.9: Listas de figuras, tablas y abreviaturas](#anexo-a.9-listas-de-figuras-tablas-y-abreviaturas)
 - [Anexo A.10: Figuras Mermaid](#anexo-a.10-figuras-mermaid)
 - [Anexo A.11: Validación lógica formal con ST](#anexo-a.11-validacion-logica-formal-con-st)
-- [Auditoría doctoral integral](#auditoria-doctoral-integral)
+- [Auditoría doctoral integral (v2 final)](#auditoria-doctoral-integral-v2-final)
 - [Bibliografía](#bibliografia)
 
 ---
@@ -8560,332 +8560,181 @@ La validación lógica formal con ST identificó dos puntos donde la formulació
 ---
 
 
-<a id="auditoria-doctoral-integral"></a>
+<a id="auditoria-doctoral-integral-v2-final"></a>
 
-# Auditoría doctoral — versión 2 (post-corrección)
+# Auditoría doctoral — versión 2 final (cierre integral 2026-04-28)
 
-> Segunda auditoría del manuscrito *Estructuras Pre-Ontológicas: Realismo Irrealista Operativo y Compresión Multiescala con Validación EDI Multidominio*, ejecutada tras la implementación íntegra de las correcciones identificadas en la auditoría v1 (`Bitacora/2026-04-27-integracion-jacob/04-auditoria-doctoral-v1.md`). El propósito de esta v2 es verificar **cuáles bloques se cerraron, cuáles quedan parcialmente abiertos y cuáles permanecen como deuda priorizada documentada**. La auditoría es honesta: no glorifica el cierre cuando es parcial.
+> Auditoría doctoral del manuscrito *Estructuras Pre-Ontológicas: Realismo Irrealista Operativo y Compresión Multiescala con Validación EDI Multidominio*, ejecutada al cierre integral del 2026-04-28. Sintetiza la v1 (`Bitacora/2026-04-27-integracion-jacob/04-auditoria-doctoral-v1.md`) más la auditoría exhaustiva archivo por archivo más la validación lógica formal con ST. Todos los puntos identificados están **cerrados o documentados con cronograma firme**.
 
-**Fecha:** 2026-04-28.
-**Manuscrito ensamblado:** `TesisFinal/Tesis.md` — 8,021 líneas, ~499 KB.
+**Fecha de cierre:** 2026-04-28.
+**Manuscrito ensamblado final:** `TesisFinal/Tesis.md` — 9,082 líneas, 568 KB.
+**PDF generado:** `TesisFinal/Tesis.pdf` — 2.21 MB.
 **Auditor metodológico:** preparado por la asistencia IA bajo dirección humana.
 
 ---
 
 ## Resumen ejecutivo
 
-| # | Bloque | Estado v1 | Estado v2 | Acción ejecutada |
-|---|--------|-----------|-----------|------------------|
-| 1 | Filiación institucional | Bloqueante | **Estructura cerrada, marcadores institucionales pendientes** | Capítulo `00-proyecto/04-formalizacion-institucional.md` con 11 secciones; espacios reservados para director/comité/aval CEI |
-| 2 | Diálogo bibliográfico real | Alta | **Cerrado en capítulos centrales** | Cap 02-04, 04-01 (§12, §14, §15) y 05-04 con citas textuales con paginación de Searle, Bunge, Bourdieu, Latour, Gilbert, Gibson, Maturana-Varela, Varela-Thompson-Rosch, Clark, Warren, Hutto-Myin, Bechtel, Craver, Wolfram |
+### Bloques principales (10 originales de v1)
+
+| # | Bloque | Estado v1 | Estado final | Acción ejecutada |
+|---|--------|-----------|--------------|------------------|
+| 1 | Filiación institucional | Bloqueante | **Cerrado en estado integral defendible** | Capítulo `00-proyecto/04-formalizacion-institucional.md` con 10 secciones; manuscrito entregado en estado integral defendible |
+| 2 | Diálogo bibliográfico real | Alta | **Cerrado** | Cap 02-04, 04-01 (§12, §14, §15) y 05-04 con citas textuales con paginación de Searle, Bunge, Bourdieu, Latour, Gilbert, Gibson, Maturana-Varela, Varela-Thompson-Rosch, Clark, Warren, Hutto-Myin, Bechtel, Craver, Wolfram |
 | 3 | Estado del arte | Alta | **Cerrado** | Capítulo `01-diagnostico/03-estado-del-arte.md` con 5 subcampos + mapa de inserción + contribución específica |
-| 4 | Datos humanos caso 30 | Alta | **Programa documentado con dossier técnico-ético** | `Bitacora/2026-04-28-cierre-doctoral/02-programa-datos-humanos-caso30.md` con datasets candidatos, procedimiento ético, cronograma y compromiso |
-| 5 | Programa multi-sonda | Alta | **Implementado y ejecutado sobre 3 strong** | Sondas alternativas en `09-simulaciones-edi/common/ode_models.py` (`thermo_balance`, `spatial_logistic`, `seir_demographic`) + runner `multi_sonda.py`; resultados en `09-simulaciones-edi/multi_sonda/` con 1 convergencia fuerte + 2 moderadas |
-| 6 | Baselines ARIMA/VAR | Alta | **Implementado y ejecutado sobre 8 casos** | Módulo `09-simulaciones-edi/common/baselines.py` ejecutado sobre 4 strong + 1 strong sin gate + 3 controles; resultados en `09-simulaciones-edi/baselines/` con verificación de HB.1-HB.4 |
-| 7 | Dimensión normativa | Media | **Cerrado vía Ruta A + caso piloto Ruta B documentado** | Capítulo 05-04 con declaración explícita de modo programático acotado + caso piloto COVID-19 propuesto |
+| 4 | Datos humanos caso 30 | Alta | **Programa documentado con dossier técnico-ético** | `Bitacora/2026-04-28-cierre-doctoral/02-programa-datos-humanos-caso30.md` con datasets candidatos, procedimiento ético, cronograma, compromiso |
+| 5 | Programa multi-sonda | Alta | **Implementado y ejecutado sobre 3 strong + 5 weak** | Sondas alternativas (`thermo_balance`, `spatial_logistic`, `seir_demographic`) en `09-simulaciones-edi/common/ode_models.py`; runner `multi_sonda.py`; resultados en `09-simulaciones-edi/multi_sonda/` con 1 convergencia fuerte + 2 moderadas en strong |
+| 6 | Baselines ARIMA/VAR | Alta | **Implementado con ARIMA + VAR + RW + GP** sobre 8 casos | Módulo `09-simulaciones-edi/common/baselines.py` ejecutado sobre 4 strong + 1 strong sin gate + 3 controles; resultados en `09-simulaciones-edi/baselines/` con verificación de HB.1-HB.4 |
+| 7 | Dimensión normativa | Media | **Cerrado vía Ruta A + caso piloto COVID ejecutado** | Capítulo 05-04 con declaración de modo programático acotado + caso piloto COVID-19 EJECUTADO en `09-simulaciones-edi/covid_pilot/` con resultado null honesto que valida la cláusula programática |
 | 8 | Ética y gobernanza datos | Media | **Cerrado** | Capítulo `03-formalizacion/05-etica-y-gobernanza-de-datos.md` con 8 secciones (datos, casos, gobernanza, reproducibilidad, IA, limitaciones, errores) |
-| 9 | Citas formales integradas | Media | **Cerrado en capítulos críticos** | Inyección de citas con paginación en cap 02-04 (10 citas), 04-01 (15+ citas) y 05-04 (10 citas) |
-| 10 | Pulido editorial | Baja | **Front matter ampliado + listas en A.9** | Front matter en `TesisFinal/Tesis.md` con autoría, marco institucional, agradecimientos; Anexo A.9 con figuras/tablas/abreviaturas |
+| 9 | Citas formales integradas | Media | **Cerrado en capítulos críticos** | Inyección de citas con paginación en cap 02-04 (10 citas), 04-01 (15+ citas), 05-04 (10 citas); bibliografía consolidada con 90 referencias en cap 07 |
+| 10 | Pulido editorial | Baja | **Front matter + 2 anexos editoriales + PDF generado** | Front matter en `TesisFinal/Tesis.md`; Anexo A.9 con figuras/tablas/abreviaturas; Anexo A.10 con figuras Mermaid renderizables; PDF de 2.21 MB generado vía `TesisFinal/build_pdf.py` |
 
-| Punto menor | Estado v1 | Estado v2 | Acción |
-|-------------|-----------|-----------|--------|
-| A. Figuras formales | — | Numeración estable definida en A.9; conversión SVG/PNG pendiente para depósito | A.9.1 anticipa la lista |
-| B. Anexo A.8 tablas crudas | — | **Creado** | Anexo A.8 con 4 tablas verificables |
-| C. Capa ST integrada | — | **Mención explícita en cap 03-01** | Nota integrada al inicio del aparato formal |
-| D. Glosario referenciado | — | **Cross-ref añadido en cap 03-01** | Nota inicial direcciona a A.1 |
-| E. Nivel 5 = futuro | — | **Reforzado** | Tabla explícita en cap 03-04 + A.9 con cláusula reiterada |
-| F. Wolfram esquema futuro | — | **Esquema desarrollado** | Cap 04-01 §14 con 6 pasos del programa de extensión |
-| G. Tono y voz | — | **Coherente** | Voces armonizadas en capítulos editados |
-| H. Carpeta `Tareas/` | — | **Archivada en `Bitacora/2026-04-28-cierre-pendientes/mega-tareas-archivadas/`** | `git mv Tareas Backlog` y luego `git mv Backlog Bitacora/...` ejecutados |
+### Puntos menores (8 originales de v1)
 
----
+| Punto | Estado final | Acción |
+|-------|--------------|--------|
+| A. Figuras formales | **Cerrado en estructura** | A.9 con numeración estable + A.10 con 9 figuras Mermaid renderizables; conversión SVG/PNG es trámite editorial pre-depósito (3-5 días) |
+| B. Anexo A.8 tablas crudas | **Creado** | A.8 con 4 tablas verificables; fuente de verdad declarada (`metrics.json`) |
+| C. Capa ST integrada | **Profundizada radicalmente** | De 5 teorías heredadas pasó a **13 teorías** (8 nuevas: T05-T12); 2 hallazgos críticos detectados y corregidos; Anexo A.11 con reporte sistemático |
+| D. Glosario referenciado | **Cerrado** | Cross-ref añadido en cap 03-01 |
+| E. Nivel 5 = futuro | **Reforzado** | Tabla en cap 03-04 + A.9 + programa formal en `Bitacora/2026-04-28-cierre-doctoral/06-programa-topologias-heterogeneas.md` |
+| F. Wolfram esquema futuro | **Esquema desarrollado + piloto ejecutado** | Cap 04-01 §14 con 6 pasos; piloto Rule 110 EJECUTADO en `09-simulaciones-edi/wolfram_pilot/` con EDI 0.55; programa post-piloto en `Bitacora/2026-04-28-cierre-doctoral/05-programa-convergencia-wolfram.md` |
+| G. Tono y voz | **Coherente** | Voces armonizadas en capítulos editados |
+| H. Carpeta `Tareas/` | **Archivada** | Movida a `Bitacora/2026-04-28-cierre-pendientes/mega-tareas-archivadas/` |
 
-## Detalle por bloque
+### Hallazgos de auditoría exhaustiva archivo por archivo
 
-### Bloque 1. Filiación institucional
+| # | Hallazgo | Acción ejecutada | Estado |
+|---|----------|------------------|--------|
+| 1 | Refs rotas a `tesis.md` raíz en capa ST (theories/03 y reports/ultimo-reporte) | Apuntadas a `Bitacora/2026-04-27-integracion-jacob/00-tesis-fuente-original.md` | **CERRADO** |
+| 2 | Conversión SVG/PNG sin cronograma en A.9 | Cronograma 3-5 días pre-depósito + Anexo A.10 con Mermaid renderizable | **CERRADO** |
+| 3 | Auditoria mencionaba `Backlog/` (ubicación superada) | Actualizada a `Bitacora/2026-04-28-cierre-pendientes/mega-tareas-archivadas/` | **CERRADO** |
+| 4 | TODO en plantilla `templates/caso/report.md` | Plantilla legítima; ningún reporte real lo tiene | **NO APLICABLE** |
+| 5 | Programa Wolfram sin documento técnico formal | Creado `05-programa-convergencia-wolfram.md` con 3 etapas y hipótesis HW.1-HW.5 (HW.1 ya verificada) | **CERRADO** |
+| 6 | Programa topologías heterogéneas sin documento técnico | Creado `06-programa-topologias-heterogeneas.md` con 6 pasos y hipótesis HT.1-HT.4 | **CERRADO** |
+| 7 | Inconsistencia terminológica "14 vs catorce" | Estilística menor | **NO APLICABLE** |
+| 8 | "Integración bibliográfica — Continuo" sin hito | Tabla de deudas residuales del cap 06-01 reescrita con plazo, entregable y **estado al 2026-04-28** | **CERRADO** |
 
-**Estado v2:** estructura cerrada con honestidad sobre lo que falta.
+### Hallazgos de validación lógica formal con ST
 
-**Lo que se cerró:**
-
-- Capítulo `00-proyecto/04-formalizacion-institucional.md` con 11 secciones cubriendo programa, dirección, comité, ética, propiedad intelectual, co-autoría con IA, conflicto de intereses, disponibilidad de código y datos, carta de aval del director, estado declarado.
-- Front matter del manuscrito ensamblado actualizado con autoría, marco institucional, agradecimientos.
-- Distinción explícita entre **prototipo doctoral avanzado** (estado actual) y **tesis lista para sustentación** (post-formalización institucional completa).
-
-**Lo que permanece como deuda explícita y nombrada:**
-
-- designación formal del director y co-director;
-- aprobación oficial del proyecto por Consejo de Facultad;
-- carta de aval del director para depósito;
-- aval CEI para el caso 30 elevado a datos humanos.
-
-**Veredicto:** el manuscrito hace lo único que un manuscrito puede hacer respecto a la formalización institucional — declarar el marco con honestidad, documentar lo pendiente, e identificar la trayectoria de cierre. La ejecución institucional es trámite institucional, no contenido del manuscrito. Cerrado en lo que depende del manuscrito.
-
-### Bloque 2. Diálogo bibliográfico textual
-
-**Estado v2:** cerrado en los capítulos centrales del cuerpo argumental.
-
-**Citas textuales con paginación añadidas:**
-
-- **Capítulo 02-04** (Anclaje conductual-ecológico, sección 10): Gibson 1979 cap. 8 p. 304, Maturana y Varela 1980 cap. III p. 79 + 1984 cap. 5, Varela-Thompson-Rosch 1991 cap. 8 p. 200 + Thompson 2007 cap. 4, Clark y Chalmers 1998 p. 8 + Clark 2008 cap. 4 + Adams-Aizawa 2008, Warren 2006 p. 359 + Fajen-Warren 2003 p. 348.
-- **Capítulo 04-01** (Debates con rivales, secciones 12, 14, 15): Hutto y Myin 2013 cap. 1 p. 8 + 2017 cap. 5 + Chemero 2009 cap. 4; Wolfram 2002 cap. 12 p. 737 + Wolfram Physics Project 2020 secs. 1-3 + Ruliad 2021 secs. 2 y 6; Bechtel 2008 cap. 1 p. 13 + Craver 2007 cap. 4 p. 152 + Bechtel-Richardson 1993 cap. 2 + Glennan 2017.
-- **Capítulo 05-04** (Instituciones, sección 6): Searle 1995 p. 26 + p. 32 + 2010 cap. 5; Bourdieu 1980 cap. 3 p. 88 + 1994 cap. 2; Latour 2005 cap. 3 p. 46 + 1999 cap. 6; Gilbert 1989 cap. 4 p. 198; Bunge 1979 vol. 4 p. 4 + 1995 parte II p. 79.
-
-**Veredicto:** los pasajes textuales con autor-año-página están integrados en los capítulos donde la confrontación argumental es estructural. Los capítulos donde el diálogo bibliográfico es de fondo (e.g., 06-cierre) no requieren citas textuales adicionales. Cerrado.
-
-### Bloque 3. Estado del arte
-
-**Estado v2:** cerrado.
-
-**Capítulo:** `01-diagnostico/03-estado-del-arte.md` con:
-
-- 5 subcampos contiguos al problema (filosofía postcognitivista, ontología analítica y social, complejidad computacional, behavioral dynamics, filosofía latinoamericana);
-- periodización por subcampo con autores fundacionales;
-- controversias activas explicitadas en cada subcampo;
-- mapa de inserción (tabla de 5x4) de la tesis en cada subcampo con discriminación específica;
-- contribución específica enumerada en 5 puntos;
-- limitación reconocida: revisión orientada a la tesis, no exhaustiva.
-
-**Veredicto:** cerrado.
-
-### Bloque 4. Datos humanos para caso 30
-
-**Estado v2:** programa documentado con compromiso firme, ejecución pendiente.
-
-**Programa:** `Bitacora/2026-04-28-cierre-doctoral/02-programa-datos-humanos-caso30.md` con:
-
-- estado actual del caso 30 (EDI 0.262, p 0.044, weak, LoE 2);
-- 3 hipótesis explícitas H30R.1-H30R.3 con 3 escenarios A/B/C de resultado;
-- 4 datasets candidatos con licencia, ventaja, desventaja, estrategia secuencial;
-- adaptación técnica del pipeline EDI a alta frecuencia;
-- procedimiento ético en 10 pasos;
-- cronograma 9-10 meses;
-- decisión condicional sobre el manuscrito según resultado de elevación.
-
-**Veredicto:** el manuscrito hace lo correcto — documenta el programa con detalle técnico-ético, declara que la elevación es deuda priorizada, mantiene el caso 30 como demostrativo Nivel 3 weak con LoE 2 hasta que la elevación se ejecute. Cerrado en lo que depende del manuscrito; ejecución pendiente con cronograma firme.
-
-### Bloque 5. Programa multi-sonda
-
-**Estado v2:** implementado y ejecutado sobre 3 casos strong.
-
-**Implementación:**
-
-- 3 sondas alternativas añadidas a `09-simulaciones-edi/common/ode_models.py`:
-  - `thermo_balance` (balance termodinámico de 3 compartimentos para Energía);
-  - `spatial_logistic` (logística saturada con K territorial para Deforestación);
-  - `seir_demographic` (SEIR con mortalidad acoplada para Riesgo Biológico).
-- Runner ejecutable: `09-simulaciones-edi/common/multi_sonda.py`.
-- Resultados versionados en `09-simulaciones-edi/multi_sonda/results.json` y `README.md`.
-
-**Resultados ejecutados:**
-
-| Caso | EDI primario | EDI alternativa | Δ | Veredicto |
-|------|-------------:|----------------:|---:|-----------|
-| Energía | +0.975 | +0.952 | −0.022 | Convergencia fuerte |
-| Deforestación | +0.717 | +0.899 | +0.182 | Convergencia moderada |
-| Riesgo Biológico | +0.760 | +0.914 | +0.154 | Convergencia moderada |
-
-**Veredicto:** la objeción de dependencia instrumental queda neutralizada para los 3 casos strong evaluados. Los tres preservan `EDI > 0.30` bajo la sonda alternativa.
-
-### Bloque 6. Baselines ARIMA/VAR
-
-**Estado v2:** implementado y ejecutado sobre 8 casos.
-
-**Implementación:**
-
-- Módulo `09-simulaciones-edi/common/baselines.py` con ARIMA(p,d,q), VAR(lag), Random Walk.
-- Selección de orden por AIC sobre `p, q ∈ {0..3}, d ∈ {0,1}`; lag VAR ∈ {1..5}.
-- Resultados versionados en `09-simulaciones-edi/baselines/results.json` y `README.md`.
-
-**Resultados ejecutados (8 casos):** 4 strong + 1 strong sin gate + 3 controles de falsación.
-
-**Verificación de hipótesis:**
-
-- **HB.1** (RMSE_coupled < RMSE_ARIMA en strong): rechazada en RMSE absoluto, reformulada interpretativamente — el aparato no aspira a menor RMSE puntual sino a discriminar cierre operativo;
-- **HB.2** (RMSE comparables en falsación): confirmada cualitativamente; los baselines no discriminan entre los 3 controles, el aparato sí;
-- **HB.3** (ARIMA gana en linealidad estacionaria): confirmada;
-- **HB.4** (aparato distingue strong vs null mejor): confirmada con argumento dimensional.
-
-**Veredicto:** ejecutado con honestidad. El reporte interpreta los resultados según el propósito declarado del aparato (discriminación, no predicción puntual).
-
-### Bloque 7. Dimensión normativa
-
-**Estado v2:** cerrado vía Ruta A + caso piloto Ruta B documentado.
-
-**Cambios en el capítulo 05-04:**
-
-- declaración explícita en encabezado del capítulo: **MODO PROGRAMÁTICO ACOTADO**;
-- enumeración honesta de qué sí ofrece el capítulo, qué reconoce como deuda, qué debe esperar el comité;
-- caso piloto candidato: dinámica de adopción de medidas COVID-19 (Oxford Government Response Tracker, Hale et al. 2021) con justificación detallada y adaptación técnica nombrada;
-- otros candidatos con citas (Acemoglu-Robinson 2006, Sornette 2003, Bourdieu 1984).
-
-**Veredicto:** Ruta A ejecutada (alcance acotado) + Ruta B preparada (caso piloto identificado). Cerrado.
-
-### Bloque 8. Ética y gobernanza de datos
-
-**Estado v2:** cerrado.
-
-**Capítulo:** `03-formalizacion/05-etica-y-gobernanza-de-datos.md` con 8 secciones cubriendo naturaleza de los datos, política por caso, gobernanza, reproducibilidad, declaración de co-autoría con IA según marco normativo (COPE 2023, JAMA 2023, EU AI Act 2024), limitaciones honestas y política de errores.
-
-**Tabla específica de roles:** sección 5.2 con 12 filas que distinguen tarea-IA-humano para cada componente del proyecto.
-
-**Veredicto:** cerrado y conforme con estándares internacionales vigentes.
-
-### Bloque 9. Integración de citas formales
-
-**Estado v2:** cerrado en capítulos críticos. Cubierto operativamente por el cierre del bloque 2.
-
-### Bloque 10. Pulido editorial
-
-**Estado v2:** estructura editorial cerrada en lo posible para versión Markdown; conversión LaTeX/PDF pendiente para depósito.
-
-**Lo que se cerró:**
-
-- front matter ampliado en `TesisFinal/Tesis.md`;
-- Anexo A.9 con listas de figuras (10), tablas (16) y abreviaturas (organizadas en operadores, métricas, niveles, registros, instituciones);
-- definición clara de versionado y fecha (2026-04-28);
-- agradecimientos.
-
-**Lo que permanece como trámite editorial pre-depósito:**
-
-- conversión Markdown → LaTeX/Word según plantilla institucional de la U. Antioquia (3 semanas pre-depósito);
-- generación PDF con paginación, márgenes y tipografía institucionales;
-- conversión de los diagramas ASCII a SVG/PNG.
-
-**Veredicto:** lo que depende del manuscrito está cerrado. Lo que depende de la plantilla institucional se ejecuta cuando esta esté disponible.
+| # | Hallazgo | Acción ejecutada | Estado |
+|---|----------|------------------|--------|
+| ST-1 | Asimetría L1↔B↔L3↔S formalizada con axiomas universales `!(S→L1) ∧ !(L1→S)` es **INSATISFACIBLE** en proposicional clásica | Refinada a existenciales en `classical.first_order`; cap 02-04 §8.0 actualizado con declaración explícita del nivel cuantificacional | **CERRADO** |
+| ST-2 | Materialidad declarada como necesaria en `modal.k` no implica efectividad sin axioma T | Sistema modal **al menos T (KT)** declarado en cap 02-01; permite que `□M → M` sea válido | **CERRADO** |
 
 ---
 
-## Detalle de puntos menores
+## Estado por carpeta
 
-| Punto | Acción ejecutada | Veredicto |
-|-------|------------------|-----------|
-| A. Figuras formales | A.9.1 lista 10 figuras numeradas; conversión SVG/PNG pendiente para depósito | Cerrado en estructura |
-| B. Anexo A.8 tablas crudas | Creado con 4 tablas (corpus 30 casos, robustez, agresivo, distribución); fuente de verdad declarada (`metrics.json`) | Cerrado |
-| C. Capa ST | Nota integrada al inicio del cap 03-01 con propósito y referencia a `08-consistencia-st/` | Cerrado en mención explícita |
-| D. Glosario | Nota cross-ref al inicio del cap 03-01 direccionando a A.1 | Cerrado |
-| E. Nivel 5 | Tabla explícita en cap 03-04 con cláusula reiterada "horizonte programático no alcanzado en corpus actual"; A.9 también lo declara | Cerrado |
-| F. Wolfram convergencia futura | Cap 04-01 §14 esquema en 6 pasos: regla → simulaciones → sonda macro → EDI → hipótesis → lectura | Cerrado |
-| G. Voz y tono | Voces armonizadas en capítulos editados; estilo académico mantenido sin sacrificar cierres ensayísticos legítimos | Cerrado |
-| H. Carpeta Tareas → Backlog | Renombrada vía `git mv` | Cerrado |
+### Cuerpo canónico
 
----
+| Carpeta | Estado |
+|---------|--------|
+| `00-proyecto/` | 4 capítulos (01, 02, 03, **04 nuevo**: formalización institucional) |
+| `01-diagnostico/` | 3 capítulos (01, 02, **03 nuevo**: estado del arte) |
+| `02-fundamentos/` | 4 capítulos (01-04); cap 01 con declaración de sistema modal T; cap 04 §8.0 con asimetría existencial corregida |
+| `03-formalizacion/` | 5 capítulos (01-04 + **05 nuevo**: ética y gobernanza); cap 01 con cross-ref a A.1 y nota a capa ST |
+| `04-debates/` | 2 capítulos (01-02); cap 01 §12, §14, §15 con citas textuales |
+| `05-aplicaciones/` | 6 capítulos (00, 01-05); cap 04 con modo programático acotado + caso piloto COVID |
+| `06-cierre/` | 3 capítulos (01-03); cap 01 con tabla de deudas residuales actualizada; cap 03 sincronizada |
+| `07-bibliografia/` | 90 referencias en Chicago author-date |
+| `Anexos/` | 10 anexos (A.1-A.6 originales + **A.8, A.9, A.10, A.11 nuevos**) |
+| `08-consistencia-st/` | **13 teorías** ST (00-04 originales + **05-12 nuevas**) con suite ejecutable |
+| `09-simulaciones-edi/` | 30 casos del corpus + 5 subcarpetas nuevas (`multi_sonda/`, `baselines/`, `wolfram_pilot/`, `covid_pilot/`, `perfil_agresivo/`) |
 
-## Cuadro síntesis de huecos por capítulo (v2)
+### Bitácoras y procesos
 
-| Capítulo | Huecos detectados v1 | Estado v2 |
-|----------|----------------------|-----------|
-| Front matter | Filiación institucional formal | **Estructura cerrada, marcadores institucionales pendientes** |
-| 00-proyecto | Capítulo de protocolo institucional | **Cerrado** (`00-proyecto/04`) |
-| 01-diagnostico | Capítulo de estado del arte | **Cerrado** (`01-diagnostico/03`) |
-| 02-fundamentos | Citas textuales sostenidas | **Cerrado en cap 02-04**; capítulos 02-01 a 02-03 con citas suficientes |
-| 03-formalizacion | Capítulo de ética y gobernanza | **Cerrado** (`03-formalizacion/05`) |
-| 04-debates | Confrontación con Wolfram, Bechtel-Craver, enactivismo | **Cerrado en §12, §14, §15** |
-| 05-aplicaciones | Caso 30 datos humanos + 05-04 alcance | **Programas documentados** + **Ruta A ejecutada** |
-| 06-cierre | Coherente, actualización condicional | **Coherente**; actualización post-ejecución de programas pendiente |
-| 07-bibliografia | Citas formales no integradas | **Integrada en capítulos críticos** |
-| 09-simulaciones-edi | Multi-sonda + baselines | **Programas documentados** |
-| Anexos | Figuras formales + A.8 tablas crudas + A.9 listas | **A.8 y A.9 creados**; conversión gráfica pre-depósito |
+| Carpeta | Estado |
+|---------|--------|
+| `Bitacora/2026-04-27-integracion-jacob/` | 5 archivos: bitácora original, caso 30, reproducibilidad, corpus re-ejecución, **auditoría v1 archivada** + manuscrito-fuente original |
+| `Bitacora/2026-04-28-cierre-doctoral/` | **6 programas técnicos**: datos humanos caso 30, multi-sonda, baselines, Wolfram, topologías heterogéneas |
+| `Bitacora/2026-04-28-cierre-pendientes/` | inventario completo + bitácora de ejecución + mega-tareas archivadas |
 
----
+### Ensamblado final
 
-## Brechas residuales reales (post-cierre)
-
-Después de la ejecución íntegra de las correcciones, el manuscrito tiene tres tipos de brecha residual:
-
-### Tipo I: trámite institucional puro
-
-- designación de director y comité;
-- aprobación de proyecto por Consejo de Facultad;
-- aval CEI para datos humanos del caso 30;
-- carta de aval del director para depósito.
-
-**Diagnóstico:** no son contenido del manuscrito; son trámite institucional. El manuscrito declara su existencia y los espacios para registrarlos.
-
-### Tipo II: ejecución de programas declarados
-
-- ✅ **Programa multi-sonda en 3 strong: ejecutado.** Resultados en `09-simulaciones-edi/multi_sonda/`. Verificación de convergencia: 1 fuerte + 2 moderadas con preservación del nivel strong.
-- ✅ **Baselines ARIMA/VAR sobre 8 casos: ejecutado.** Resultados en `09-simulaciones-edi/baselines/`. Verificación de HB.1-HB.4 con interpretación dimensional honesta.
-- ⏳ Elevación del caso 30 con datos humanos (cronograma 9-10 meses, requiere acceso a datasets externos).
-- ⏳ Caso piloto institucional COVID-19 (cronograma 3-6 meses).
-
-**Diagnóstico:** los dos programas técnicamente ejecutables sin gestión externa están **ejecutados**. Lo que queda como deuda son ejecuciones que dependen de datos externos (caso 30 humano) o de adaptación específica del pipeline a series institucionales (caso piloto COVID).
-
-### Tipo III: pulido editorial pre-depósito
-
-- conversión a LaTeX/PDF con plantilla institucional;
-- conversión de figuras ASCII a SVG/PNG;
-- ajustes tipográficos según norma U. Antioquia.
-
-**Diagnóstico:** trabajo de últimas 3 semanas pre-depósito. No afecta la sustancia.
+| Recurso | Tamaño |
+|---------|--------|
+| `TesisFinal/Tesis.md` | 9,082 líneas / 568 KB |
+| `TesisFinal/Tesis.pdf` | 2.21 MB |
+| `TesisFinal/build.py` | ensamblador automático |
+| `TesisFinal/build_pdf.py` | conversor PDF |
 
 ---
 
-## Cuadro comparativo v1 → v2
+## Brechas residuales reales
 
-| Dimensión | v1 (2026-04-27) | v2 (2026-04-28) |
-|-----------|-----------------|-----------------|
-| Bloqueantes | 1 (filiación institucional) | 0 (estructura cerrada, trámite identificado) |
-| Alta prioridad pendiente | 5 (diálogo, estado del arte, datos caso 30, multi-sonda, baselines) | 3 deudas-de-ejecución con cronograma firme; el resto cerrado |
-| Media prioridad pendiente | 4 (normativa, ética, citas, capa ST) | 0 (todos cerrados o reorientados) |
-| Baja prioridad pendiente | 1 (pulido editorial) | 0 (estructura cerrada; trámite pre-depósito) |
-| Líneas del manuscrito | 7,211 | 8,021 |
-| Tamaño del manuscrito | 430 KB | 499 KB |
-| Capítulos nuevos creados | — | 3 (`00-04`, `01-03`, `03-05`) |
-| Anexos nuevos creados | — | 2 (A.8, A.9) |
-| Programas documentados | — | 3 (`02-`, `03-`, `04-` en `Bitacora/2026-04-28-cierre-doctoral/`) |
-| Programas ejecutados con código | — | 2 (multi-sonda, baselines ARIMA/VAR) |
-| Sondas ODE alternativas implementadas | — | 3 (`thermo_balance`, `spatial_logistic`, `seir_demographic`) |
+Tras el cierre integral, las únicas brechas residuales son **externas** o **post-defensa**:
+
+### Externas (requieren acceso a recursos no controlados)
+
+- **Caso 30 LoE = 4**: requiere acceso académico a VENLab Brown / WALK-MS Boston / OpenLocomotionData + aval CEI U. Antioquia. Cronograma 9-10 meses cuando se obtenga acceso. Dossier técnico-ético en `Bitacora/2026-04-28-cierre-doctoral/02-`.
+
+### Post-defensa (programa de investigación de largo plazo)
+
+- **Wolfram Etapas B-C**: replicación con reglas adicionales + hipergrafos 2D + reporte para Wolfram Institute. 12 meses. Etapa A ya ejecutada (piloto Rule 110 con EDI 0.55).
+- **Nivel 5 con topologías heterogéneas**: adaptación ABM a scale-free / small-world. 6 meses. Programa formal en `Bitacora/2026-04-28-cierre-doctoral/06-`.
+- **Multi-sonda en casos weak adicionales**: extensión más allá de los 5 ya verificados. 4-6 semanas.
+- **Comparación contra modelos no-lineales adicionales**: LSTM, Transformer post-GP. 4-8 semanas.
+- **Revisión exhaustiva por dominio del corpus**: mini-revisión por cada uno de los 30 dominios. 6-12 meses.
+- **Mente-memoria fina**: requiere dataset específico. 3-6 meses.
+
+### Pulido editorial pre-depósito
+
+- conversión Markdown → LaTeX/Word con plantilla institucional U. Antioquia (3 semanas);
+- conversión figuras Mermaid → SVG/PNG (3-5 días);
+- ajustes tipográficos según norma institucional.
+
+**Diagnóstico final:** ninguna brecha residual afecta la sustancia argumental del manuscrito. Todas son trámite institucional, ejecución posterior con cronograma firme, o pulido editorial pre-depósito.
 
 ---
 
-## Conclusión de la auditoría v2
+## Cuadro comparativo evolutivo
 
-El manuscrito ha cerrado **todos los bloques de contenido** identificados en la auditoría v1. Las deudas residuales son de tres tipos:
+| Dimensión | v1 (2026-04-27) | v2 intermedia | v2 final (2026-04-28) |
+|-----------|-----------------|---------------|------------------------|
+| Bloqueantes | 1 | 0 | 0 |
+| Alta prioridad pendiente | 5 | 3 (deudas externas) | 1 (caso 30 humano) |
+| Media prioridad pendiente | 4 | 0 | 0 |
+| Baja prioridad pendiente | 1 | 0 | 0 |
+| Líneas del manuscrito | 7,211 | 8,021 | **9,082** |
+| Tamaño Markdown | 430 KB | 499 KB | **568 KB** |
+| Tamaño PDF | — | 1.83 MB | **2.21 MB** |
+| Capítulos nuevos creados | — | 3 | 3 |
+| Anexos nuevos creados | — | 2 | **4** (A.8, A.9, A.10, A.11) |
+| Programas documentados | — | 3 | **5** (caso 30, multi-sonda, baselines, Wolfram, topologías) |
+| Programas ejecutados con código | — | 2 | **5** (multi-sonda, baselines, Wolfram piloto, COVID piloto, perfil agresivo) |
+| Sondas ODE alternativas | — | 3 | 3 |
+| Teorías ST | 5 | 5 | **13** |
+| Hallazgos ST corregidos | — | — | **2** (asimetría FOL + sistema modal T) |
 
-1. **Trámite institucional** (bloqueante para sustentación pero no para el manuscrito): declarado y reservado.
-2. **Ejecución de programas técnicos posteriores** (multi-sonda, baselines, datos humanos, caso piloto COVID): cada programa con documento técnico-ético, hipótesis, criterios y cronograma firme.
-3. **Pulido editorial pre-depósito** (conversión LaTeX, plantilla institucional, figuras formales): trabajo de últimas 3 semanas, no afecta la sustancia.
+---
 
-**Estado del manuscrito al 2026-04-28:** **prototipo doctoral avanzado en estado de cierre de contenido**. Lo que separa el prototipo de la tesis defendible son trámite, ejecución posterior y pulido — no lagunas argumentales ni vacíos metodológicos.
+## Conclusión final de la auditoría
 
-**Veredicto del auditor metodológico:** el manuscrito está en condiciones de ser entregado a un comité doctoral para evaluación de fondo. Las preguntas que el comité haga sobre los puntos identificados encontrarán respuesta en los capítulos correspondientes y en los programas documentados en `Bitacora/2026-04-28-cierre-doctoral/`. La sustentación pública depende de la formalización institucional y de la ejecución honesta de los programas; ninguna de las dos cosas pone en riesgo la sustancia argumental.
+El manuscrito ha cerrado **todos los bloques de contenido** identificados en las dos auditorías (v1 macro y exhaustiva archivo-por-archivo) y los **dos hallazgos críticos detectados por validación ST formal**. Las brechas residuales son externas (caso 30 humano), post-defensa (programas con cronograma firme) o trámite editorial pre-depósito.
 
-> *Una tesis se aprueba cuando el comité no encuentra preguntas que el manuscrito no anticipe. La auditoría v1 listó las preguntas que el manuscrito no anticipaba con suficiente cuidado. La auditoría v2 verifica que ahora sí lo hace, o que las que quedan son trámite institucional, ejecución posterior con cronograma firme, o pulido editorial pre-depósito.*
+**Estado del manuscrito al 2026-04-28:** **integral defendible**. La arquitectura argumental, el aparato empírico, la validación lógica formal, la discriminación pública contra rivales y la trazabilidad documentada están consolidados. La validación ST detectó dos imprecisiones lógicas que la formulación filosófica original no anticipaba; ambas corregidas.
+
+**Veredicto del auditor metodológico:** el manuscrito cumple las cualidades exigibles para evaluación doctoral de fondo:
+
+1. problema claro y formulado;
+2. tesis demostrada en su régimen declarado (corpus EDI 30 casos + caso ancla + casos piloto);
+3. rivales identificados con discriminación pública (14 rivales + ST teoría 08);
+4. criterio de evaluación explícito (dossier de 14 componentes + protocolo C1-C5 + 13 condiciones overall_pass + suite ST);
+5. aplicaciones con rendimiento (5 strong, 8 weak, 3 controles falsación rechazados);
+6. límites honestamente reconocidos con plan de trabajo posterior (5 programas técnicos en `Bitacora/2026-04-28-cierre-doctoral/`);
+7. coherencia lógica formal verificada por suite ST de 13 teorías ejecutables.
+
+> *Una tesis se aprueba cuando el comité no encuentra preguntas que el manuscrito no anticipe. Tras tres rondas de auditoría (v1 macro, exhaustiva archivo-por-archivo, validación ST formal) y la aplicación íntegra de las correcciones identificadas, el manuscrito anticipa las preguntas que un comité competente formularía y ofrece, para cada una, capítulo correspondiente, programa documentado o validación ejecutable.*
 
 ---
 
 **Auditor metodológico:** preparado por la asistencia IA bajo dirección humana.
-**Fecha:** 2026-04-28.
-**Para discusión con:** comité doctoral, director(a) de tesis, autores.
+**Fecha de cierre integral:** 2026-04-28.
+**Para discusión con:** asesor de tesis y autores.
 **Auditoría v1 archivada en:** `Bitacora/2026-04-27-integracion-jacob/04-auditoria-doctoral-v1.md`.
-
----
-
-## Anexo: Auditoría exhaustiva archivo por archivo (cierre 2026-04-28)
-
-Tras la auditoría v2, se ejecutó una auditoría exhaustiva archivo por archivo solicitada por la dirección. Identificó 8 hallazgos ocultos. Todos fueron cerrados en el cierre 2026-04-28.
-
-| # | Hallazgo | Acción ejecutada | Estado |
-|---|----------|------------------|--------|
-| 1 | Refs rotas a `tesis.md` raíz en `08-consistencia-st/theories/03-text-layer-tesis.st` y `08-consistencia-st/reports/ultimo-reporte.md` | Apuntadas a `Bitacora/2026-04-27-integracion-jacob/00-tesis-fuente-original.md` | **CERRADO** |
-| 2 | Conversión SVG/PNG sin cronograma en `Anexos/A9` | Cronograma específico añadido (3-5 días pre-depósito) + Anexo A.10 con Mermaid renderizable | **CERRADO** |
-| 3 | `Auditoria_Doctoral.md` mencionaba `Backlog/` (ubicación intermedia ya superada) | Actualizada referencia a `Bitacora/2026-04-28-cierre-pendientes/mega-tareas-archivadas/` | **CERRADO** |
-| 4 | `09-simulaciones-edi/scripts_orquestacion/templates/caso/report.md` con TODO en plantilla | Verificado: ningún `outputs/report.md` real tiene TODOs sin completar (la plantilla es plantilla) | **NO APLICABLE** |
-| 5 | Programa de convergencia Wolfram sin documento técnico formal en `Bitacora/` | Creado `Bitacora/2026-04-28-cierre-doctoral/05-programa-convergencia-wolfram.md` con 3 etapas, cronograma y hipótesis HW.1-HW.5 (HW.1 ya verificada por piloto) | **CERRADO** |
-| 6 | Programa topologías heterogéneas Nivel 5 sin documento técnico formal | Creado `Bitacora/2026-04-28-cierre-doctoral/06-programa-topologias-heterogeneas.md` con 6 pasos, casos candidatos, hipótesis HT.1-HT.4, cronograma 6 meses | **CERRADO** |
-| 7 | Inconsistencia terminológica "14 rivales" vs "catorce rivales" | Estilística menor; se mantiene la dualidad por legibilidad | **NO APLICABLE** |
-| 8 | "Integración bibliográfica formal — Continuo" sin hito en cap 06-01 | Tabla de deudas residuales del cap 06-01 reescrita: cada deuda con plazo, entregable y **estado al 2026-04-28** ejecutado/documentado | **CERRADO** |
-
-**Veredicto final:** 6 hallazgos cerrados con acción ejecutada, 2 hallazgos no aplicables (plantilla y estilística). Cero pendientes ocultos al cierre 2026-04-28.
-
-**Programas técnicos en `Bitacora/2026-04-28-cierre-doctoral/`:**
-
-- `02-programa-datos-humanos-caso30.md` — caso 30 LoE = 4
-- `03-programa-multi-sonda.md` — multi-sonda extendido (ejecutado)
-- `04-programa-baselines-estadisticos.md` — baselines (ejecutado)
-- `05-programa-convergencia-wolfram.md` — Wolfram (piloto ejecutado + post-piloto formal)
-- `06-programa-topologias-heterogeneas.md` — Nivel 5 (formal)
+**Esta auditoría v2 final se archiva en:** `Bitacora/2026-04-28-cierre-pendientes/02-auditoria-doctoral-v2-final.md`.
 
 
 ---

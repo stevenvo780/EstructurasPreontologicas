@@ -94,7 +94,7 @@ A la Universidad de Antioquia, por sostener una tradición de filosofía de la c
     ('Anexo A.9: Listas de figuras, tablas y abreviaturas', 'Anexos/A9-listas-figuras-tablas-abreviaturas.md', None),
     ('Anexo A.10: Figuras Mermaid', 'Anexos/A10-figuras-mermaid.md', None),
     ('Anexo A.11: Validación lógica formal con ST', 'Anexos/A11-validacion-st.md', None),
-    ('Auditoría doctoral integral', 'Auditoria_Doctoral.md', None),
+    ('Auditoría doctoral integral (v2 final)', 'Bitacora/2026-04-28-cierre-pendientes/02-auditoria-doctoral-v2-final.md', None),
     ('Bibliografía', '07-bibliografia/01-bibliografia-orientativa.md', None),
 ]
 
