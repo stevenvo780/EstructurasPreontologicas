@@ -1,0 +1,45 @@
+# docker-compose.yml — Contenedor GPU persistente para simulaciones
+#
+# USO:
+#   docker-compose up -d          # Levantar contenedor (una vez)
+#   docker exec -it tesis-gpu python validate.py   # Ejecutar dentro
+#   docker exec tesis-gpu python /workspace/repos/scripts/run_scaling.sh
+#
+# El contenedor se auto-reinicia y tiene el repo montado como volumen.
+# Cualquier cambio en el código se refleja inmediato (bind mount).
+
+services:
+  gpu:
+    container_name: tesis-gpu
+    build:
+      context: .
+      dockerfile: Dockerfile
+    # GPU passthrough — ambas GPUs disponibles
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+    # Volúmenes: montar repo completo + cache persistente
+    volumes:
+      - ../../:/workspace:rw
+      - cupy-cache:/root/.cupy
+    # Variables de entorno — NO poner HYPER_* aquí para que cada caso
+    # use su propio case_config.json. Los HYPER_* se pasan por docker exec.
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all
+      - CUPY_ACCELERATORS=cub
+    # Mantener corriendo siempre
+    restart: unless-stopped
+    stdin_open: true
+    tty: true
+    # Networking: no necesita puertos, solo compute
+    network_mode: none
+    # Working directory dentro del contenedor
+    working_dir: /workspace
+
+volumes:
+  cupy-cache:
+    name: tesis-cupy-cache

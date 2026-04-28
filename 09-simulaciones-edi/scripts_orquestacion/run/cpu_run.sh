@@ -1,0 +1,557 @@
+#!/usr/bin/env bash
+# ══════════════════════════════════════════════════════════════════════════════
+# cpu_run.sh — Ejecutor paralelo de simulaciones en CPU (sin Docker, sin GPU)
+#
+# Ejecuta los 29 casos de simulación localmente usando procesos paralelos.
+# Para ejecución con GPU, usar gpu_run.sh.
+#
+# ── USO ───────────────────────────────────────────────────────────────────────
+#
+#   # Todos los 29 casos en paralelo (workers = min(nproc, casos))
+#   ./cpu_run.sh
+#
+#   # Dividir en tandas
+#   ./cpu_run.sh --parts 3
+#   ./cpu_run.sh --parts 5 --part 2   # solo tanda 2 de 5
+#
+#   # Caso específico (match parcial, case-insensitive)
+#   ./cpu_run.sh --case clima
+#   ./cpu_run.sh --case falsacion      # matchea los 3 falsación
+#
+#   # Limitar workers paralelos
+#   ./cpu_run.sh --workers 4
+#
+#   # Multiplicador de grid (ponderado por grid base)
+#   ./cpu_run.sh --grid-mult 2
+#
+#   # Secuencial: un caso a la vez (para grids enormes que usan toda la RAM)
+#   ./cpu_run.sh --step-by-step
+#
+#   # Dry-run
+#   ./cpu_run.sh --dry-run
+#
+# ── FLAGS ─────────────────────────────────────────────────────────────────────
+#
+#   --parts N       Dividir en N tandas (default: 1 = todos de golpe)
+#   --part K        Ejecutar solo tanda K de N (default: todas)
+#   --case NOMBRE   Filtrar casos por nombre (match parcial, case-insensitive)
+#   --workers N     Workers paralelos (default: auto = min(nproc, ncasos))
+#   --grid-mult X   Multiplicador de grid (ponderado por tamaño base)
+#   --step-by-step  Ejecutar caso por caso secuencialmente (1 a la vez)
+#   --perm N        Permutaciones EDI (default: 9999)
+#   --boot N        Bootstrap samples (default: 5000)
+#   --refine N      Iteraciones refinamiento (default: 50000)
+#   --runs N        N_RUNS para C5 (default: 50)
+#   --no-sync       No ejecutar sincronización documental post-ejecución
+#   --dry-run       Solo muestra el plan, no ejecuta
+#   --help          Muestra este mensaje
+#
+# ══════════════════════════════════════════════════════════════════════════════
+set -euo pipefail
+
+# ── Rutas ─────────────────────────────────────────────────────────────────────
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+SIM_DIR="$(cd "$SCRIPT_DIR/../../Simulaciones" && pwd)"
+ROOT_DIR="$(cd "$SCRIPT_DIR/../../.." && pwd)"
+SYNC_OUTPUTS_SCRIPT="$ROOT_DIR/repos/scripts/build/sync_outputs_to_tesis.py"
+REGEN_READMES_SCRIPT="$ROOT_DIR/repos/scripts/build/regenerar_readmes.py"
+UPDATE_TABLES_SCRIPT="$ROOT_DIR/repos/scripts/build/actualizar_tablas_002.py"
+TESIS_CLI_SCRIPT="$ROOT_DIR/repos/scripts/tesis.py"
+
+# ── Defaults ──────────────────────────────────────────────────────────────────
+PARTS=1
+PART=0
+PERM=9999
+BOOT=5000
+REFINE=50000
+RUNS=50
+WORKERS=0          # 0 = auto
+STEP_BY_STEP=0
+DRY_RUN=0
+CASE_FILTER=""
+GRID_MULT="1.0"
+AUTO_SYNC=1
+
+# ── Metadata Git (host) para trazabilidad en metrics.json ────────────────────
+HOST_GIT_COMMIT="$(git -C "$ROOT_DIR" rev-parse HEAD 2>/dev/null || true)"
+HOST_GIT_DIRTY=""
+if [[ -n "$HOST_GIT_COMMIT" ]]; then
+    if [[ -n "$(git -C "$ROOT_DIR" status --porcelain 2>/dev/null || true)" ]]; then
+        HOST_GIT_DIRTY="1"
+    else
+        HOST_GIT_DIRTY="0"
+    fi
+fi
+
+# ── Cleanup trap ──────────────────────────────────────────────────────────────
+cleanup() {
+    echo ""
+    echo "⚠ Ctrl+C detectado — matando procesos validate.py..."
+    pkill -f "python3 validate.py" 2>/dev/null || true
+    sleep 1
+    pkill -9 -f "python3 validate.py" 2>/dev/null || true
+    echo "✓ Procesos terminados."
+    exit 130
+}
+trap cleanup INT TERM
+
+# ── Parse args ────────────────────────────────────────────────────────────────
+while [[ $# -gt 0 ]]; do
+    case "$1" in
+        --parts)     PARTS="$2";       shift 2 ;;
+        --part)      PART="$2";        shift 2 ;;
+        --perm)      PERM="$2";        shift 2 ;;
+        --boot)      BOOT="$2";        shift 2 ;;
+        --refine)    REFINE="$2";      shift 2 ;;
+        --runs)      RUNS="$2";        shift 2 ;;
+        --workers)   WORKERS="$2";     shift 2 ;;
+        --case)      CASE_FILTER="$2"; shift 2 ;;
+        --grid-mult) GRID_MULT="$2";   shift 2 ;;
+        --no-sync)   AUTO_SYNC=0;      shift ;;
+        --step-by-step) STEP_BY_STEP=1;  shift ;;
+        --dry-run)   DRY_RUN=1;        shift ;;
+        --help|-h)
+            head -45 "$0" | tail -41
+            exit 0 ;;
+        *) echo "Flag desconocido: $1"; exit 1 ;;
+    esac
+done
+
+# ── Lista de los 29 casos ────────────────────────────────────────────────────
+ALL_CASES=(
+    01_caso_clima
+    02_caso_conciencia
+    03_caso_contaminacion
+    04_caso_energia
+    05_caso_epidemiologia
+    06_caso_falsacion_exogeneidad
+    07_caso_falsacion_no_estacionariedad
+    08_caso_falsacion_observabilidad
+    09_caso_finanzas
+    10_caso_justicia
+    11_caso_movilidad
+    12_caso_paradigmas
+    13_caso_politicas_estrategicas
+    14_caso_postverdad
+    15_caso_wikipedia
+    16_caso_deforestacion
+    17_caso_oceanos
+    18_caso_urbanizacion
+    19_caso_acidificacion_oceanica
+    20_caso_kessler
+    21_caso_salinizacion
+    22_caso_fosforo
+    23_caso_erosion_dialectica
+    24_caso_microplasticos
+    25_caso_acuiferos
+    26_caso_starlink
+    27_caso_riesgo_biologico
+    28_caso_fuga_cerebros
+    29_caso_iot
+)
+
+# ── Filtrar por caso específico (--case) ──────────────────────────────────────
+if [[ -n "$CASE_FILTER" ]]; then
+    FILTERED=()
+    for c in "${ALL_CASES[@]}"; do
+        if [[ "${c,,}" == *"${CASE_FILTER,,}"* ]]; then
+            FILTERED+=("$c")
+        fi
+    done
+    if [[ ${#FILTERED[@]} -eq 0 ]]; then
+        echo "ERROR: Ningún caso coincide con '$CASE_FILTER'"
+        echo "Casos disponibles:"
+        printf '  %s\n' "${ALL_CASES[@]}"
+        exit 1
+    fi
+    if [[ ${#FILTERED[@]} -gt 1 ]]; then
+        echo "[--case] Múltiples casos coinciden con '$CASE_FILTER':"
+        printf '  → %s\n' "${FILTERED[@]}"
+        echo "[--case] Ejecutando todos los ${#FILTERED[@]} coincidentes."
+    else
+        echo "[--case] Caso: ${FILTERED[0]}"
+    fi
+    ALL_CASES=("${FILTERED[@]}")
+fi
+
+TOTAL=${#ALL_CASES[@]}
+
+# ── Grid por caso (desde validate.py) ─────────────────────────────────────────
+declare -A CASE_GRID
+declare -A CASE_GRID_BASE
+declare -A CASE_TOPOLOGY
+build_case_grid_map() {
+    local cases=("$@")
+    local out
+    out=$(SIM_DIR="$SIM_DIR" GRID_MULT="$GRID_MULT" python3 - <<'PY' "${cases[@]}"
+import os, re, sys, pathlib, json
+sim_dir = pathlib.Path(os.environ["SIM_DIR"])
+grid_mult = float(os.environ.get("GRID_MULT", "1.0"))
+cases = sys.argv[1:]
+
+def weight_for_grid(base):
+    if base <= 10:
+        return 0.0
+    return min(1.0, max(0.0, (base - 10) / 15.0))
+
+for c in cases:
+    base = 1
+    use_topo = False
+
+    # Primero: intentar leer case_config.json (fuente canónica)
+    cfg_path = sim_dir / c / "case_config.json"
+    if cfg_path.exists():
+        try:
+            cfg = json.loads(cfg_path.read_text(encoding="utf-8"))
+            base = int(cfg.get("execution", {}).get("grid_size", base))
+        except (json.JSONDecodeError, KeyError, ValueError):
+            pass  # fallback al scraping
+
+    # Fallback: leer validate.py si case_config.json no tenía grid_size
+    path = sim_dir / c / "src" / "validate.py"
+    if base <= 1 and path.exists():
+        text = path.read_text(encoding="utf-8", errors="ignore")
+        m = re.search(r"grid_size\s*=\s*(\d+)", text)
+        if m:
+            base = int(m.group(1))
+
+    # Detectar topology desde validate.py
+    if path.exists():
+        text = path.read_text(encoding="utf-8", errors="ignore")
+        if re.search(r"use_topology\s*=\s*True", text):
+            use_topo = True
+
+    scaled = base
+    if grid_mult != 1.0:
+        w = weight_for_grid(base)
+        factor = 1.0 + (grid_mult - 1.0) * w
+        scaled = int(round(base * factor))
+        if scaled < base:
+            scaled = base
+    if use_topo and scaled > 50:
+        scaled = 50
+    print(f"{c} {base} {scaled} {1 if use_topo else 0}")
+PY
+)
+    local max_g=1
+    while read -r c base scaled topo; do
+        [[ -z "$c" ]] && continue
+        CASE_GRID["$c"]="$scaled"
+        CASE_GRID_BASE["$c"]="$base"
+        CASE_TOPOLOGY["$c"]="$topo"
+        if [[ "$scaled" -gt "$max_g" ]]; then
+            max_g="$scaled"
+        fi
+    done <<< "$out"
+    echo "$max_g"
+}
+
+MAX_GRID=$(build_case_grid_map "${ALL_CASES[@]}")
+
+# ── Dividir array en N partes ─────────────────────────────────────────────────
+get_partition() {
+    local -n _arr=$1
+    local n_parts=$2
+    local which_part=$3
+    local total=${#_arr[@]}
+    local chunk=$(( (total + n_parts - 1) / n_parts ))
+    local start=$(( (which_part - 1) * chunk ))
+    local end=$(( start + chunk ))
+    [[ $end -gt $total ]] && end=$total
+    echo "${_arr[@]:$start:$((end - start))}"
+}
+
+# ── Workers automáticos ──────────────────────────────────────────────────────
+NCORES=$(nproc 2>/dev/null || echo 4)
+if [[ $STEP_BY_STEP -eq 1 ]]; then
+    WORKERS=1
+elif [[ $WORKERS -eq 0 ]]; then
+    WORKERS=$NCORES
+    [[ $WORKERS -gt $TOTAL ]] && WORKERS=$TOTAL
+    [[ $WORKERS -gt 16 ]] && WORKERS=16    # cap razonable para CPU
+fi
+
+# ── Ejecutar un grupo de casos con cola dinámica ─────────────────────────────
+run_batch() {
+    local cases=("$@")
+    local ncases=${#cases[@]}
+
+    if [[ $ncases -eq 0 ]]; then
+        echo "  (sin casos para esta tanda)"
+        return 0
+    fi
+
+    local nw=$WORKERS
+    [[ $nw -gt $ncases ]] && nw=$ncases
+    local threads_per_proc=$(( NCORES / (nw > 0 ? nw : 1) ))
+    [[ $threads_per_proc -lt 1 ]] && threads_per_proc=1
+    [[ $threads_per_proc -gt 8 ]] && threads_per_proc=8
+
+    echo "  Workers: ${nw} (CPU: ${NCORES} cores)"
+    echo "  Threads/proceso: ${threads_per_proc} (HYPER_CPU_THREADS)"
+    echo "  Modo: cola dinámica — ${nw} procesos paralelos"
+    echo "  Logs: /tmp/cpu_run_logs/  (tail -f para detalle)"
+
+    if [[ $DRY_RUN -eq 1 ]]; then
+        echo "  [DRY-RUN] ${ncases} casos → ${nw} workers"
+        echo "  Casos: ${cases[*]}"
+        return 0
+    fi
+
+    local LOG_DIR="/tmp/cpu_run_logs"
+    mkdir -p "$LOG_DIR"
+
+    local QUEUE_FILE=$(mktemp /tmp/_cpu_queue_XXXXXX)
+    local LOCK_FILE="${QUEUE_FILE}.lock"
+    local RESULT_FILE=$(mktemp /tmp/_cpu_results_XXXXXX)
+
+    printf '%s\n' "${cases[@]}" > "$QUEUE_FILE"
+
+    # ── Worker: toma casos de la cola hasta vaciarla ──
+    cpu_worker() {
+        local worker_id=$1
+        local count=0
+
+        while true; do
+            local caso
+            caso=$(flock "$LOCK_FILE" bash -c '
+                head -1 "$1" 2>/dev/null
+                sed -i "1d" "$1" 2>/dev/null
+            ' -- "$QUEUE_FILE")
+
+            [[ -z "$caso" ]] && break
+
+            local SRC="${SIM_DIR}/${caso}/src"
+            local LOG="${LOG_DIR}/${caso}.log"
+
+            if [[ ! -f "${SRC}/validate.py" ]]; then
+                echo "  [W${worker_id}] SKIP ${caso}"
+                echo "SKIP ${caso}" >> "$RESULT_FILE"
+                continue
+            fi
+
+            echo "  [W${worker_id}] ▶ ${caso}"
+            local START=$SECONDS
+
+            local GRID_CASE=${CASE_GRID[$caso]:-1}
+            (
+                cd "$SRC"
+                export PYTHONIOENCODING=utf-8
+                export HYPER_CPU_THREADS="$threads_per_proc"
+                export HYPER_N_JOBS="$threads_per_proc"
+                export OMP_NUM_THREADS="$threads_per_proc"
+                export MKL_NUM_THREADS="$threads_per_proc"
+                export OPENBLAS_NUM_THREADS="$threads_per_proc"
+                export NUMEXPR_NUM_THREADS="$threads_per_proc"
+                export HYPER_GRID_SIZE="$GRID_CASE"
+                export HYPER_N_PERM=$PERM
+                export HYPER_N_BOOT=$BOOT
+                export HYPER_N_REFINE=$REFINE
+                export HYPER_N_RUNS=$RUNS
+                export HYPER_GIT_COMMIT="$HOST_GIT_COMMIT"
+                export HYPER_GIT_DIRTY="$HOST_GIT_DIRTY"
+                python3 validate.py 2>&1
+            ) | \
+                tee "$LOG" | \
+                { grep --line-buffered -E '(▶|[0-9]/6|FIN)' || true; } | \
+                sed -u "s/^/  [W${worker_id}] /"
+            local RC=${PIPESTATUS[0]}
+            local ELAPSED=$(( SECONDS - START ))
+            echo "ELAPSED=${ELAPSED}s" >> "$LOG"
+
+            local EDI
+            EDI=$(grep -oP 'EDI[=:]\s*-?[\d.]+' "$LOG" 2>/dev/null | tail -1 || echo '?')
+
+            if [[ $RC -eq 0 ]]; then
+                echo "  [W${worker_id}] ✓ ${caso} — ${ELAPSED}s — ${EDI}"
+                echo "OK ${caso} ${ELAPSED}s ${EDI}" >> "$RESULT_FILE"
+            else
+                echo "  [W${worker_id}] ✗ ${caso} — ${ELAPSED}s (exit ${RC})"
+                echo "FAIL ${caso} ${ELAPSED}s exit=${RC}" >> "$RESULT_FILE"
+            fi
+            count=$((count + 1))
+        done
+        echo "  [W${worker_id}] Terminado (${count} casos)"
+    }
+
+    # ── Lanzar N workers ──
+    local WPIDS=()
+    for ((i=0; i<nw; i++)); do
+        cpu_worker "$i" &
+        WPIDS+=($!)
+    done
+
+    # ── Esperar ──
+    local FAIL=0
+    for pid in "${WPIDS[@]}"; do
+        wait "$pid" 2>/dev/null || FAIL=$((FAIL+1))
+    done
+
+    # ── Resumen ──
+    echo ""
+    echo "  ═══ Resumen de tanda ═══"
+    local TOTAL_OK=0 TOTAL_FAIL=0 TOTAL_SKIP=0
+    while read -r line; do
+        case "$line" in
+            OK*)   TOTAL_OK=$((TOTAL_OK+1)) ;;
+            FAIL*) TOTAL_FAIL=$((TOTAL_FAIL+1)) ;;
+            SKIP*) TOTAL_SKIP=$((TOTAL_SKIP+1)) ;;
+        esac
+    done < "$RESULT_FILE"
+
+    echo "  OK: ${TOTAL_OK}  FAIL: ${TOTAL_FAIL}  SKIP: ${TOTAL_SKIP}"
+
+    rm -f "$QUEUE_FILE" "$LOCK_FILE" "$RESULT_FILE"
+}
+
+run_post_sync() {
+    if [[ $AUTO_SYNC -eq 0 ]]; then
+        echo ""
+        echo "═══ Post-proceso de reportes: desactivado (--no-sync) ═══"
+        return 0
+    fi
+    if [[ $DRY_RUN -eq 1 ]]; then
+        return 0
+    fi
+
+    local -a case_args=()
+    if [[ -n "$CASE_FILTER" ]]; then
+        case_args=(--case "$CASE_FILTER")
+    fi
+
+    local rc=0
+    echo ""
+    echo "═══ Post-proceso de reportes ═══"
+
+    if ! python3 "$SYNC_OUTPUTS_SCRIPT" "${case_args[@]}"; then
+        echo "  ERROR: falló sync_outputs_to_tesis.py"
+        rc=1
+    fi
+    if ! python3 "$REGEN_READMES_SCRIPT" "${case_args[@]}"; then
+        echo "  ERROR: falló regenerar_readmes.py"
+        rc=1
+    fi
+    if ! python3 "$UPDATE_TABLES_SCRIPT"; then
+        echo "  ERROR: falló actualizar_tablas_002.py"
+        rc=1
+    fi
+    local -a tesis_sync_args=(sync)
+    if [[ -n "$CASE_FILTER" ]]; then
+        tesis_sync_args+=(--case "$CASE_FILTER")
+    fi
+    if ! python3 "$TESIS_CLI_SCRIPT" "${tesis_sync_args[@]}"; then
+        echo "  ERROR: falló tesis.py sync"
+        rc=1
+    fi
+
+    if [[ $rc -eq 0 ]]; then
+        echo "  ✓ Sincronización documental completada"
+    fi
+    return $rc
+}
+
+# ══════════════════════════════════════════════════════════════════════════════
+# MAIN
+# ══════════════════════════════════════════════════════════════════════════════
+
+echo "╔══════════════════════════════════════════════════════════════╗"
+echo "║  cpu_run.sh — Ejecución paralela CPU (sin GPU/Docker)      ║"
+echo "╠══════════════════════════════════════════════════════════════╣"
+echo "║  Grid:     por caso (max=${MAX_GRID})"
+echo "║  Parts:    ${PARTS}  $([ $PART -gt 0 ] && echo "(solo parte ${PART})" || echo "(todas)")"
+echo "║  Casos:    ${TOTAL}$( [[ -n "$CASE_FILTER" ]] && echo " (filtro: ${CASE_FILTER})" )"
+echo "║  Workers:  ${WORKERS} (cores: ${NCORES})$( [[ $STEP_BY_STEP -eq 1 ]] && echo " ⇢ SECUENCIAL" )"
+echo "║  Params:   perm=${PERM} boot=${BOOT} refine=${REFINE} runs=${RUNS}"
+echo "║  GridMult: ${GRID_MULT} (ponderado)"
+echo "║  PostSync: $([[ $AUTO_SYNC -eq 1 ]] && echo "ON" || echo "OFF (--no-sync)")"
+echo "║  SimDir:   ${SIM_DIR}"
+[[ $DRY_RUN -eq 1 ]] && \
+echo "║  *** DRY RUN — no se ejecuta nada ***"
+echo "╚══════════════════════════════════════════════════════════════╝"
+echo ""
+
+START_GLOBAL=$SECONDS
+
+# ── Ejecutar por tandas ───────────────────────────────────────────────────────────────────
+if [[ $STEP_BY_STEP -eq 1 ]]; then
+    # ── Modo secuencial: un caso a la vez, toda la RAM disponible ──
+    echo "═══ Modo SECUENCIAL — ${TOTAL} casos, 1 a la vez ═══"
+    LOG_DIR="/tmp/cpu_run_logs"
+    mkdir -p "$LOG_DIR"
+    TOTAL_OK=0; TOTAL_FAIL=0; TOTAL_SKIP=0
+    for ((i=0; i<TOTAL; i++)); do
+        caso=${ALL_CASES[$i]}
+        echo ""
+        echo "  [$((i+1))/${TOTAL}] ▶ ${caso}"
+        if [[ $DRY_RUN -eq 1 ]]; then
+            echo "  [DRY-RUN] ${caso}"
+            continue
+        fi
+        SRC="${SIM_DIR}/${caso}/src"
+        LOG="${LOG_DIR}/${caso}.log"
+        if [[ ! -f "${SRC}/validate.py" ]]; then
+            echo "  [$((i+1))/${TOTAL}] SKIP ${caso}"
+            TOTAL_SKIP=$((TOTAL_SKIP+1))
+            continue
+        fi
+        START_CASE=$SECONDS
+        GRID_CASE=${CASE_GRID[$caso]:-1}
+        (
+            cd "$SRC"
+            export PYTHONIOENCODING=utf-8
+            export HYPER_CPU_THREADS="$NCORES"
+            export HYPER_N_JOBS="$NCORES"
+            export OMP_NUM_THREADS="$NCORES"
+            export MKL_NUM_THREADS="$NCORES"
+            export OPENBLAS_NUM_THREADS="$NCORES"
+            export NUMEXPR_NUM_THREADS="$NCORES"
+            export HYPER_GRID_SIZE="$GRID_CASE"
+            export HYPER_N_PERM=$PERM
+            export HYPER_N_BOOT=$BOOT
+            export HYPER_N_REFINE=$REFINE
+            export HYPER_N_RUNS=$RUNS
+            export HYPER_GIT_COMMIT="$HOST_GIT_COMMIT"
+            export HYPER_GIT_DIRTY="$HOST_GIT_DIRTY"
+            python3 validate.py 2>&1 | tee "$LOG"
+        )
+        RC=$?
+        ELAPSED_CASE=$(( SECONDS - START_CASE ))
+        EDI=$(grep -oP 'EDI[=:]\s*-?[\d.]+' "$LOG" 2>/dev/null | tail -1 || echo '?')
+        if [[ $RC -eq 0 ]]; then
+            echo "  [$((i+1))/${TOTAL}] ✓ ${caso} — ${ELAPSED_CASE}s — ${EDI}"
+            TOTAL_OK=$((TOTAL_OK+1))
+        else
+            echo "  [$((i+1))/${TOTAL}] ✗ ${caso} — ${ELAPSED_CASE}s (exit ${RC})"
+            TOTAL_FAIL=$((TOTAL_FAIL+1))
+        fi
+    done
+    echo ""
+    echo "  ═══ Resumen secuencial ═══"
+    echo "  OK: ${TOTAL_OK}  FAIL: ${TOTAL_FAIL}  SKIP: ${TOTAL_SKIP}"
+else
+    # ── Modo paralelo por tandas (comportamiento normal) ──
+    for p in $(seq 1 "$PARTS"); do
+        if [[ $PART -gt 0 && $p -ne $PART ]]; then continue; fi
+
+        CASES_STR=$(get_partition ALL_CASES "$PARTS" "$p")
+        read -ra CASES_ARR <<< "$CASES_STR"
+
+        echo "═══ Tanda ${p}/${PARTS} — ${#CASES_ARR[@]} casos ═══"
+        run_batch "${CASES_ARR[@]}"
+
+        if [[ $p -lt $PARTS && $PART -eq 0 ]]; then
+            echo ""
+            echo "--- Pausa 2s entre tandas ---"
+            sleep 2
+        fi
+    done
+fi
+
+run_post_sync
+
+ELAPSED_GLOBAL=$(( SECONDS - START_GLOBAL ))
+echo ""
+echo "╔══════════════════════════════════════════════════════════════╗"
+echo "║  COMPLETADO en ${ELAPSED_GLOBAL}s                          "
+echo "║  Logs: ls /tmp/cpu_run_logs/"
+echo "╚══════════════════════════════════════════════════════════════╝"

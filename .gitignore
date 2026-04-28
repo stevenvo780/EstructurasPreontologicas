@@ -1,3 +1,31 @@
+# Node modules y caches NPM (subproyecto ST)
 08-consistencia-st/node_modules/
 08-consistencia-st/.npm/
 08-consistencia-st/npm-debug.log*
+
+# Entorno virtual Python (corpus EDI)
+09-simulaciones-edi/.venv/
+09-simulaciones-edi/**/__pycache__/
+09-simulaciones-edi/**/*.pyc
+09-simulaciones-edi/**/*.pyo
+
+# Cache de datos descargados (se regeneran ejecutando los casos)
+09-simulaciones-edi/data_cache/
+09-simulaciones-edi/**/data/*.csv
+09-simulaciones-edi/**/data/*.json
+
+# Outputs antiguos no canónicos (los canónicos están versionados)
+09-simulaciones-edi/**/outputs/*.tmp
+09-simulaciones-edi/**/outputs/_old/
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+*~
+*.swp
+*.swo
+
+# Logs y reports temporales
+*.log
+*.tmp
+*.bak

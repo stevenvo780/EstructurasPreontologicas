@@ -6,7 +6,7 @@ Este capítulo confronta la tesis con sus rivales reales bajo criterios público
 
 ## Tesis del capítulo
 
-> La tesis se discrimina de sus once rivales filosófica y empíricamente identificables (dualismo, materialismo de partículas, reduccionismo plano, emergentismo fuerte, constructivismo arbitrario, instrumentalismo puro, formalismo vacío, modelos internos / control óptimo, cognitivismo computacional, conductismo radical, enactivismo radical) en al menos dos criterios cada uno. La novedad de la tesis no es de inventario sino de articulación: dossier de anclaje + asimetría L1↔B↔L3↔S como filtro de admisión simultáneo.
+> La tesis se discrimina de sus catorce rivales filosófica y empíricamente identificables (dualismo, materialismo de partículas, reduccionismo plano, emergentismo fuerte, constructivismo arbitrario, instrumentalismo puro, formalismo vacío, modelos internos / control óptimo, cognitivismo computacional, conductismo radical, enactivismo radical, realismo estructural informativo, mecanicismo multinivel sin filtro, y **Wolfram Physics Project**) en al menos dos criterios cada uno. La novedad de la tesis no es de inventario sino de articulación: dossier de anclaje + asimetría L1↔B↔L3↔S como filtro de admisión simultáneo + cartografía multidominio bajo EDI con controles de falsación rechazados.
 
 ## 1. Marco general de la confrontación
 
@@ -320,7 +320,57 @@ Que la estructura sea ontología fundamental sin sustrato. La tesis afirma sustr
 
 Pierde en cero criterios. Discrimina en A, C, D. La diferencia es metafísica sutil pero real: la tesis no flota la estructura.
 
-## 14. Mecanicismo multinivel (Bechtel-Craver)
+## 14. Wolfram Physics Project (caso especial)
+
+### Forma fuerte
+
+Stephen Wolfram propone que la física fundamental se reduce a reglas de reescritura sobre hipergrafos: el sustrato del universo es un sistema computacional que evoluciona aplicando transformaciones locales a hipergrafos espaciales. La conjetura del **Ruliad** sostiene que toda la física emerge de la totalidad de reglas computacionales posibles, accedida desde un punto de vista observador. La posición es ambiciosa, técnicamente sofisticada, y comparte con la tesis dos elementos importantes: el papel central de los **hipergrafos** como representación estructural del sustrato, y el rechazo del reduccionismo plano (la organización multiescala importa).
+
+### Qué recoge la tesis
+
+- la centralidad de los hipergrafos como instrumento formal (capítulo 03-01);
+- el rechazo de la lista plana de partículas como descripción suficiente;
+- la importancia de la multiescalaridad sin emergentismo fuerte;
+- el espíritu de exploración computacional sistemática.
+
+### Qué rechaza
+
+Cuatro divergencias precisas:
+
+1. **Ambición ontológica:** Wolfram busca *ontología fundamental* (la física es hypergraph rewriting). La tesis es ontología y epistemología generales **integradoras**, no fundacionales. No busca reducir todo a hipergrafos; articula registros heterogéneos bajo dossier de admisión.
+2. **Procedimiento de admisión empírica:** Wolfram propone reglas computacionales pero no especifica filtro empírico de admisión para constructos macro. La tesis exige dossier de catorce componentes + protocolo C1-C5 + EDI con prueba de permutación + controles de falsación rechazados.
+3. **Asimetría L1↔B↔L3↔S:** Wolfram opera en un solo registro (sustrato computacional). La tesis distingue cuatro registros con vínculos asimétricos y prohíbe la sustitución nominal.
+4. **Cartografía empírica multidominio:** Wolfram propone simulaciones computacionales pero no validación discriminante sobre datos reales en dominios heterogéneos con controles de falsación. La tesis valida 30 casos en física, biología, economía, política, tecnología, cultura y conducta humana, con 3 controles de falsación correctamente rechazados.
+
+### Discriminación
+
+| Criterio | Tesis (irrealismo operativo) | Wolfram Physics Project |
+|---|---|---|
+| A (anclaje material sin reducción) | Sí | Sí (computacional) |
+| B (multiescalaridad operativa) | Sí | Sí |
+| C (procedimiento de admisión empírica) | Dossier completo + C1-C5 + EDI | No especificado |
+| D (traducibilidad L1↔B↔L3↔S) | Asimetría protocolar | Solo nivel computacional |
+| E (cartografía multidominio con discriminación) | 30 casos + falsación 3/3 | Simulaciones internas |
+| F (alcance generalizable) | Sí | Sí (más ambicioso ontológicamente) |
+
+Pierde en cero criterios. Discrimina en C, D, E.
+
+### Reconocimiento de fortalezas
+
+El Wolfram Physics Project tiene fortalezas que la tesis no posee:
+
+- mayor profundidad técnica en hypergraph rewriting;
+- exploración computacional masiva con visualizaciones avanzadas;
+- conjeturas con potencial unificador en física fundamental;
+- comunidad investigadora activa (Wolfram Physics Project, Wolfram Institute).
+
+La tesis es **complementaria**, no rival sustituta. Donde Wolfram busca la regla fundamental, la tesis pide que cualquier constructo derivado pase por dossier de admisión. **Wolfram fundamenta; la tesis disciplina**.
+
+### Convergencia productiva posible
+
+Un programa de investigación interesante: aplicar el protocolo EDI a fenómenos derivados de simulaciones de hypergraph rewriting. Esto crearía un puente entre la ontología fundacional de Wolfram y la cartografía empírica multidominio de la tesis. Trabajo futuro.
+
+## 15. Mecanicismo multinivel (Bechtel-Craver)
 
 ### Forma fuerte
 
@@ -348,7 +398,7 @@ Pierde en cero criterios. Discrimina en C, D, F.
 
 El mecanicismo multinivel es el aliado teórico principal de este capítulo. La tesis se entiende mejor como mecanicismo multinivel disciplinado por dossier de anclaje y asimetría L1↔B↔L3↔S.
 
-## 15. Tabla síntesis
+## 16. Tabla síntesis
 
 | Posición rival | Lo que la tesis acepta | Lo que la tesis rechaza | Criterios de discriminación |
 |---|---|---|---|
@@ -365,6 +415,7 @@ El mecanicismo multinivel es el aliado teórico principal de este capítulo. La 
 | Enactivismo radical | Acoplamiento dinámico, dependencia ecológica | Solo cualitativo, sin formalismo verificable | C, E, F |
 | Realismo estructural informativo | Estructura central | Estructura sin sustrato | A, C, D |
 | Mecanicismo multinivel | Aliado principal | Criterios de admisión más laxos | C, D, F |
+| **Wolfram Physics Project** | Hipergrafos centrales, no reduccionismo plano | Ontología fundacional sin filtro empírico | C, D, E |
 
 ## 16. Cuál es la novedad de la tesis
 

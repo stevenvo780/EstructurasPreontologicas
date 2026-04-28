@@ -1,0 +1,195 @@
+#!/usr/bin/env python3
+"""Actualiza tablas de 02_Modelado_Simulacion usando metrics.json.
+
+- Genera Reporte_General_Simulaciones.md
+- Reemplaza la tabla en 02_Modelado_Simulacion.md
+"""
+import argparse
+from pathlib import Path
+import json
+import math
+import re
+
+ROOT = Path(__file__).resolve().parents[3]
+CASES_ROOT = ROOT / 'TesisDesarrollo' / '02_Modelado_Simulacion'
+MAIN_DOC = CASES_ROOT / '02_Modelado_Simulacion.md'
+REPORT_DOC = CASES_ROOT / 'Reporte_General_Simulaciones.md'
+
+# Mapeo categoría → nivel de cierre operativo (Irrealismo Operativo)
+NIVEL_MAP = {
+    'strong': 4, 'weak': 3, 'suggestive': 2, 'trend': 1, 'null': 0,
+    'falsification': None,  # Control — no se clasifica
+}
+
+
+def read_metrics(case_dir: Path):
+    p = case_dir / 'metrics.json'
+    if not p.exists():
+        return None
+    return json.loads(p.read_text())
+
+
+def compute_metrics(metrics_obj):
+    if not metrics_obj:
+        return None
+    ph = metrics_obj.get('phases', {}).get('real') or metrics_obj.get('phases', {}).get('synthetic')
+    if not ph:
+        return None
+    # EDI: leer valor directo (calculado por hybrid_validator)
+    edi = ph.get('edi', {}).get('value')
+    edi_pval = ph.get('edi', {}).get('permutation_pvalue')
+    edi_sig = ph.get('edi', {}).get('permutation_significant', False)
+    # CR: usar campo 'cr' de symploké (abs(internal/external))
+    symploke = ph.get('symploke', {})
+    cr = symploke.get('cr')
+    if cr is None:
+        internal = symploke.get('internal')
+        external = symploke.get('external')
+        if internal is not None and external not in (None, 0):
+            cr = abs(internal / external)
+    # Taxonomía
+    taxonomy = ph.get('emergence_taxonomy', {})
+    category = taxonomy.get('category', '?')
+    # Nivel: leer de metrics.json si existe, si no mapear desde categoría
+    nivel = taxonomy.get('nivel')
+    if nivel is None:
+        nivel = NIVEL_MAP.get(category)
+    return {
+        'edi': edi,
+        'edi_pval': edi_pval,
+        'edi_sig': edi_sig,
+        'cr': cr,
+        'overall_pass': ph.get('overall_pass'),
+        'category': category,
+        'nivel': nivel,
+    }
+
+
+def fmt(x):
+    if x is None:
+        return 'n/a'
+    if isinstance(x, float):
+        if math.isinf(x):
+            return '∞'
+        if math.isnan(x):
+            return 'NaN'
+    return f"{x:.3f}"
+
+
+def build_rows():
+    rows = []
+    for case_dir in sorted(CASES_ROOT.glob('*_caso_*')):
+        metrics_obj = read_metrics(case_dir)
+        m = compute_metrics(metrics_obj)
+        case = case_dir.name
+        case_name = (metrics_obj or {}).get('case') or case
+        report_link = f"`{case_dir.name}/report.md`"
+        rows.append((case, case_name, m, report_link))
+    return rows
+
+
+def build_table(rows):
+    lines = []
+    lines.append("| Caso | Tema | EDI | p-perm | sig | CR | Cat | Nivel | Reporte |")
+    lines.append("| :--- | :--- | ---: | ---: | :---: | ---: | :--- | :---: | :--- |")
+    for case, case_name, m, report_link in rows:
+        if m:
+            edi = fmt(m['edi'])
+            pval = fmt(m.get('edi_pval'))
+            sig = '✅' if m.get('edi_sig') else '❌'
+            cr = fmt(m['cr'])
+            cat = m.get('category', '?')
+            nivel = m.get('nivel')
+            nivel_s = str(nivel) if nivel is not None else '—'
+        else:
+            edi = pval = cr = 'n/a'
+            sig = 'n/a'
+            cat = 'n/a'
+            nivel_s = 'n/a'
+        lines.append(
+            f"| {case} | {case_name} | {edi} | {pval} | {sig} | {cr} | {cat} | {nivel_s} | {report_link} |"
+        )
+    return "\n".join(lines)
+
+
+def update_report(rows):
+    table = build_table(rows)
+    content = "# Reporte General de Simulaciones\n\n" + table + "\n"
+    REPORT_DOC.write_text(content, encoding='utf-8')
+
+
+def update_main(rows):
+    table = build_table(rows)
+    block = "\n".join([
+        "## Resultados Consolidados (Matriz de Clasificación Operativa)",
+        "",
+        table,
+        "",
+        "Para recalcular este reporte de forma automatica, usar:",
+        "`python3 repos/scripts/build/actualizar_tablas_002.py`",
+        "",
+    ])
+    text = MAIN_DOC.read_text(encoding='utf-8', errors='ignore')
+    # Match both old and new header variants
+    text = re.sub(
+        r"## Resultados[^\n]*?Matriz de (?:Validaci.n T.cnica|Clasificaci.n Operativa)\)[\s\S]*?(?=\n## |\Z)",
+        block.rstrip(), text
+    )
+    MAIN_DOC.write_text(text.strip() + "\n", encoding='utf-8')
+
+
+def parse_args():
+    parser = argparse.ArgumentParser(
+        description="Actualiza tablas de 02_Modelado_Simulacion desde metrics.json"
+    )
+    parser.add_argument(
+        "--dry-run",
+        action="store_true",
+        help="No escribe archivos; solo valida y reporta acciones.",
+    )
+    parser.add_argument(
+        "--stdout",
+        action="store_true",
+        help="Imprime la tabla consolidada en stdout.",
+    )
+    parser.add_argument(
+        "--only-report",
+        action="store_true",
+        help="Solo actualiza Reporte_General_Simulaciones.md.",
+    )
+    parser.add_argument(
+        "--only-main",
+        action="store_true",
+        help="Solo actualiza 02_Modelado_Simulacion.md.",
+    )
+    return parser.parse_args()
+
+
+def main():
+    args = parse_args()
+    if args.only_report and args.only_main:
+        raise SystemExit("No puedes usar --only-report y --only-main al mismo tiempo.")
+
+    rows = build_rows()
+    table = build_table(rows)
+
+    if args.stdout:
+        print(table)
+
+    if args.dry_run:
+        if not args.only_main:
+            print(f"[DRY-RUN] actualizar: {REPORT_DOC}")
+        if not args.only_report:
+            print(f"[DRY-RUN] actualizar: {MAIN_DOC}")
+        return
+
+    if not args.only_main:
+        update_report(rows)
+        print(f"OK: actualizado {REPORT_DOC}")
+    if not args.only_report:
+        update_main(rows)
+        print(f"OK: actualizado {MAIN_DOC}")
+
+
+if __name__ == '__main__':
+    main()

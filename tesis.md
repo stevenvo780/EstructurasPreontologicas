@@ -1,402 +1,406 @@
-# Monismo material-relacional con compresión multiescala
-## Manuscrito-fuente del proyecto doctoral
+# Estructuras Pre-Ontológicas: Realismo Irrealista Operativo y Compresión Multiescala con Validación EDI Multidominio
 
-> Versión consolidada tras las seis correcciones estructurales del capítulo 01-01.
+## Tesis doctoral en filosofía de la ciencia y ciencias de la complejidad
+
+**Autor principal (concepto y dirección):** Jacob Agudelo, Universidad de Antioquia.
+**Colaborador (técnica, ingeniería computacional, formalización):** Steven Vallejo Ortiz.
+**Co-autoría IA:** declarada como instrumento de implementación y documentación bajo dirección humana, sin autoría conceptual.
+**Versión:** consolidada 2026-04-27 (integración de iteración Jacob `TesisJacobContenidos` 2026-02 + iteración Steven `EstructurasPreontologicas` 2026-04).
 
 ---
 
-## Versión corta de la tesis (1 página)
+## Versión corta (1 página)
 
-Defiendo una tesis ontológico-epistemológica general, demostrada en su régimen de validez declarado y articulada como programa para los demás dominios. La tesis sostiene seis afirmaciones articuladas:
+Defendemos una ontología y epistemología generales integradoras, demostradas por cartografía multidominio sobre 29+1 casos. La posición filosófica es **irrealismo operativo**: realismo estructural moderado + pluralismo epistemológico + anti-reificación operativa. La tesis sostiene siete afirmaciones articuladas:
 
-1. **Existe un solo plano material dinámico**. No multiplicación de sustancias.
-2. **Las entidades son patrones estabilizados**, definidos técnicamente como atractores empíricamente identificables de sistemas dinámicos acoplados con cinco condiciones de admisión: variables componentes, estabilidad asintótica, cuenca de atracción, comportamiento bajo bifurcación, discriminación inferencial.
-3. **El conocer es compresión disciplinada**. La operación κ se opera empíricamente vía baja dimensionalidad efectiva con cuatro pruebas de validación: reproducción, generalización, preservación topológica, intervención discriminante.
-4. **Los registros L1 ↔ B ↔ L3 ↔ S funcionan asimétricamente**. L1 fija qué pregunta importa. B (conductual-biológico) ancla la respuesta. L3 reconstruye formalmente las dependencias. S recoge las categorías que sobreviven a la auditoría. Cada parámetro de L3 debe traducirse a variable de B.
-5. **La emergencia es self-organization**, no sustancia nueva. La causalidad es circular y completamente material.
-6. **Toda categoría candidata pasa por dossier de anclaje** de catorce componentes (pregunta fechada con tolerancia, variables operacionalizadas, sustrato instanciante, grafo de dependencias, hipergrafo si procede, compresión justificada, atractores identificados, pruebas de validación, predicción discriminante, intervención discriminante, operador ε, traducción B↔L3, limitaciones declaradas, comparación rival).
+1. **Existe un solo plano material dinámico**. Las constricciones macro-micro detectadas son rasgos estructurales reales del sistema acoplado, no ficciones instrumentales ni sustancias separadas.
+2. **Las entidades son estructuras pre-ontológicas**: regularidades operativas anteriores a la objetualidad, definidas técnicamente como atractores empíricamente identificables de sistemas dinámicos acoplados con cinco condiciones de admisión y operacionalizadas mediante el Effective Dependence Index (EDI).
+3. **El conocer es compresión disciplinada bajo intervención**. La operación κ se opera empíricamente como `EDI = 1 - RMSE_coupled / RMSE_no_ode` con cuatro pruebas de validación (reproducción, generalización, preservación topológica, intervención discriminante) más el protocolo C1-C5 (Convergencia, Robustez, Determinismo, Consistencia, Incertidumbre).
+4. **Los registros L1 ↔ B ↔ L3 ↔ S funcionan asimétricamente**. L1 fija qué pregunta importa. B (conductual-biológico, físico-ecológico, técnico-institucional según el dominio) ancla la respuesta. L3 reconstruye formalmente las dependencias mediante sistemas dinámicos acoplados. S recoge categorías que sobreviven a la auditoría.
+5. **La emergencia es self-organization** verificable por intervención ablativa, no sustancia nueva. La causalidad es circular y completamente material. Operacionalizada como medición intervencionista (Woodward, 2003) sobre el acoplamiento ODE→ABM.
+6. **Toda categoría candidata pasa por dossier de anclaje** de catorce componentes y obtiene un grado de cierre operativo en el paisaje de emergencia (Niveles 0-4, donde 5 es programa futuro).
+7. **El irrealismo operativo nunca afirma `X es Y`**: afirma `X exhibe cierre operativo de grado G bajo el instrumento I respecto a la pregunta Q`. La dependencia instrumento-fenómeno es feature, no bug.
 
-La tesis está demostrada en behavioral dynamics (Warren 2006, Fajen y Warren 2003): locomoción con varianza explicada 0.980, frenado con τ̇=−0.52 y r²=0.98, equilibrio activo con τ_bal entre 0.5 y 1.0, raqueteo en zona pasivamente estable. Discriminación pública contra modelos internos en cinco celdas. Articulación programática para mente, biología, sistemas técnicos, instituciones con criterios explícitos de elevación. Cuatro escenarios falsables de fracaso global nombrados.
+**Demostración:** 30 casos en física, biología, economía, política, tecnología, cultura y conducta humana, cada uno con dossier completo, datos públicos, ecuaciones ajustadas, predicciones cumplidas, intervenciones documentadas, controles de falsación. **5 strong** (4 con `overall_pass=True`), **7 weak**, **2 suggestive**, **4 trend**, **8 null**, **3 controles de falsación correctamente rechazados**, **1 caso ancla canónico de behavioral dynamics**. Discriminación pública contra dualismo, materialismo de partículas, reduccionismo plano, emergentismo fuerte, constructivismo arbitrario, instrumentalismo puro, formalismo vacío, modelos internos / control óptimo, cognitivismo computacional, conductismo radical, enactivismo radical, realismo estructural informativo, mecanicismo multinivel sin filtro, **y Wolfram Physics Project**.
 
-Fórmula final: **mínima en sustancias, rica en relaciones, controlada en sus recortes, reversible en sus niveles de explicación, anclada en un caso paradigmático trabajado, abierta en su programa de extensión, y verificable contra rivales por discriminación pública.**
+**Fórmula final:** *Mínima en sustancias, rica en relaciones, controlada en sus recortes, reversible en sus niveles de explicación, anclada en cartografía empírica multidominio, abierta en su programa de extensión, verificable contra rivales por discriminación pública, y disciplinada por anti-reificación operativa.*
 
 ---
 
 ## 1. Formulación central
 
-> Todo fenómeno empíricamente explicable está anclado en un sustrato material dinámico. Los objetos, niveles, propiedades y categorías mediante los cuales lo entendemos no deben tratarse automáticamente como sustancias separadas, sino como patrones relacionales estabilizados — atractores empíricamente identificables de sistemas dinámicos acoplados — admisibles solo bajo dossier de anclaje completo y traducibilidad verificable entre registros de descripción.
+> Todo fenómeno empíricamente explicable está anclado en un sustrato material dinámico. Los objetos, niveles y categorías mediante los cuales lo entendemos son **estructuras pre-ontológicas**: regularidades operativas anteriores a la objetualidad, identificables como atractores empíricamente robustos de sistemas dinámicos acoplados, admisibles solo bajo dossier de anclaje completo, protocolo C1-C5 satisfecho y traducibilidad verificable entre registros de descripción.
 
 Más precisamente:
 
-1. **Lo ontológicamente básico** es el sustrato material dinámico: procesos físicos, energéticos, biológicos, técnicos, corporales, ambientales, sociales o computacionales materialmente instanciados.
-2. **Lo que llamamos `cosas`** — objetos, organismos, instituciones, módulos, funciones, memorias, mercados, ecosistemas, servicios informáticos, identidades, clases, especies, propiedades — no debe asumirse como entidad simple autosuficiente. Es atractor estabilizado dentro del sustrato.
-3. **El acceso al sustrato es siempre mediado** por mediciones, variables, modelos, recortes de tarea, niveles de análisis y operaciones de abstracción.
-4. **La inteligibilidad de lo material exige distinguir** sustrato (lo que existe), estructura relacional (cómo se organiza), modelo formal (cómo lo representamos), categoría semántica (cómo lo nombramos) y operaciones de compresión y expansión (cómo lo volvemos tratable).
-5. **Una compresión, una categoría o un modelo es legítimo respecto a una pregunta Q** si y solo si pasa el filtro del dossier de anclaje y produce predicción o intervención discriminante respecto a un rival explícito.
+1. **Lo ontológicamente básico** es un sustrato material dinámico que incluye procesos físicos, energéticos, biológicos, técnicos, corporales, ambientales, sociales, computacionales y conductuales materialmente instanciados.
+2. **Lo que llamamos `cosas`** — objetos, organismos, instituciones, módulos, mente, memoria, mercados, ecosistemas, servicios, identidades, especies, propiedades — no debe asumirse como entidad simple autosuficiente. Es atractor estabilizado dentro del sustrato, pre-ontológico en sentido fuerte: anterior a la objetualidad sustancial.
+3. **El acceso al sustrato es siempre instrumentalmente mediado**. Cada resultado describe el trío {fenómeno, instrumento, pregunta}, no el fenómeno aislado. La dependencia instrumental no es defecto: es condición epistémica honesta.
+4. **La inteligibilidad de lo material exige distinguir** sustrato (lo que existe), estructura relacional (cómo se organiza), modelo formal (cómo lo representamos), categoría semántica (cómo lo nombramos) y operaciones de compresión y expansión (cómo lo volvemos tratable y reabrible).
+5. **Una compresión es legítima respecto a una pregunta Q** si y solo si pasa el filtro del dossier de anclaje (catorce componentes), el protocolo C1-C5 (cinco filtros), produce predicción o intervención discriminante respecto a un rival explícito, y el EDI medido es robusto bajo prueba de permutación y bootstrap.
 
-La tesis no afirma que todo sea inventado por el modelo. Tampoco que los niveles superiores sean sustancias misteriosas. Afirma algo más fino:
+La tesis no afirma `el clima es un hiperobjeto real`. Afirma `bajo la sonda ODE de balance energético y el diseño ABM de este corpus, el clima exhibe un grado de cierre operativo de 0.011 (EDI), no significativo (p=0.999) — Nivel 1 (trend); el fenómeno deforestación, en cambio, exhibe 0.602 (p<0.001) con `overall_pass=True` — Nivel 4`. Esta formulación protege a la investigación de la especulación metafísica anclándola en restricción predictiva demostrable bajo instrumento específico.
 
-> El modelo no es la realidad, pero puede capturar restricciones reales del sustrato. Las categorías no son sustancias adicionales pero pueden ser legítimas si condensan patrones objetivos, estables, medibles, inferibles e intervenibles, bajo dossier verificable.
+## 2. Nombre completo del programa
 
-## 2. Nombre completo de la posición
+**Estructuras Pre-Ontológicas: Realismo Irrealista Operativo y Compresión Multiescala con Validación EDI Multidominio**.
 
-**Monismo material-relacional con epistemología formal de compresión multiescala anclada en behavioral dynamics como caso paradigmático**.
+Cada componente lleva trabajo:
 
-El nombre es largo y deliberado. Cada componente lleva trabajo:
+- **Estructuras Pre-Ontológicas:** son patrones materiales operativos anteriores a la objetualidad sustancial. Ni cosas con esencia, ni ficciones lingüísticas. Regularidades funcionalmente irreducibles bajo intervención.
+- **Realismo Irrealista Operativo:** la posición filosófica. Realismo (las constricciones son reales) + Irrealismo (no hay sustancias detrás de los patrones) + Operativo (la admisión pasa por intervención empírica controlada). Sinónimo afilado de realismo estructural moderado + anti-reificación.
+- **Compresión Multiescala:** la teoría del conocimiento. Conocer es construir recortes que preserven dependencias reales con el menor costo posible bajo restricciones empíricas.
+- **Validación EDI Multidominio:** el aparato empírico. Effective Dependence Index calculado por intervención ablativa sobre 30 casos en física, biología, economía, política, tecnología, cultura y conducta humana.
 
-- **Monismo**: no se multiplican sustancias.
-- **Material**: todo fenómeno real empíricamente explicable está materialmente instanciado.
-- **Relacional**: lo importante no son cosas aisladas sino relaciones, dependencias, restricciones, acoplamientos, dinámicas.
-- **Compresión multiescala**: los niveles superiores son operaciones legítimas de organización y simplificación, siempre que preserven estructura relevante.
-- **Anclada en behavioral dynamics**: el caso paradigmático demostrado da evidencia de que la articulación funciona empíricamente, no solo filosóficamente.
+## 3. Atribución
 
-## 3. Diferencia respecto al manuscrito-fuente original
+- **Concepto y dirección:** Jacob Agudelo, doctorando en filosofía de la ciencia, Universidad de Antioquia. La idea original del **irrealismo operativo de hiperobjetos**, la métrica **EDI**, el protocolo **C1-C5**, el corpus de 29 casos y la posición filosófica completa son contribución de Jacob.
+- **Técnica e ingeniería computacional:** Steven Vallejo Ortiz, líder técnico. Implementación del validador híbrido, infraestructura GPU, pipeline `./tesis`, dashboard web, integración del caso ancla canónico Warren bajo metodología EDI, formalización de la asimetría L1↔B↔L3↔S, articulación del dossier de anclaje en catorce componentes, refactor doctoral.
+- **Co-autoría IA:** asistente de IA (Anthropic Claude) declarado explícitamente como instrumento de implementación, redacción y documentación bajo dirección humana. Sin autoría conceptual ni decisional.
 
-El manuscrito-fuente original tenía una intuición filosófica fuerte y seis debilidades estructurales que el capítulo 01-01 nombró:
+## 4. Posición filosófica: Irrealismo Operativo
 
-1. generalidad sin caso ancla;
-2. vaguedad estructural de `patrón`;
-3. formalización subdefinida;
-4. niveles mal trazados (L2 = neurobiológico local, demasiado estrecho);
-5. ausencia de criterio de fracaso global;
-6. bibliografía no integrada al cuerpo argumental.
+### 4.1. El problema pre-ontológico
 
-Las seis correcciones que disciplinan la tesis:
+La tesis adopta una posición intermedia entre tres extremos rechazados:
 
-1. caso ancla canónico (Warren 2006);
-2. patrón = atractor con cinco condiciones técnicas;
-3. aparato con procedimiento empírico de κ;
-4. nivel B (conductual-biológico) con asimetría L1↔B↔L3↔S;
-5. cuatro escenarios de fracaso global falsables;
-6. interlocutor principal y secundarios por capítulo.
+- **Realismo fuerte** (Bunge, 1979): asume que la estructura del fenómeno preexiste al acto de medirlo. Rechazado: el éxito predictivo no autoriza por sí solo inferencias ontológicas fuertes.
+- **Instrumentalismo puro** (van Fraassen, 1980): reduce el modelo a utilidad predictiva sin profundidad sistémica. Rechazado: las constricciones detectadas no son meras herramientas, son rasgos estructurales del sistema acoplado.
+- **Irrealismo radical:** niega toda referencia estructural y colapsa la evaluación en utilidad local. Rechazado: la admisibilidad de una representación depende de intervención, discriminación empírica y falsación bajo protocolo explícito.
 
-Este manuscrito-fuente recoge las correcciones e incorpora el material articulado en los capítulos del repositorio.
+### 4.2. Los tres componentes del irrealismo operativo
 
-## 4. Ontología mínima
+**Realismo estructural moderado:** las constricciones macro-micro detectadas se interpretan como rasgos estructurales del sistema. Alineado con Ladyman & Ross (2007) en que las relaciones estructurales son epistemológicamente primarias, pero diferenciado en que no se pronuncia sobre si la estructura agota la realidad — es realismo *moderado*, no *óntico*.
 
-### 4.1. Lo que existe en sentido fuerte
+**Pluralismo epistemológico (modelístico):** ningún modelo único agota el fenómeno. ABM, ODE y métricas de validación capturan aspectos parciales, complementarios y revisables. Subdeterminación de Duhem-Quine reconocida explícitamente: los resultados se formulan siempre como propiedades del par {fenómeno, instrumento}, no del fenómeno solo.
 
-Existe un solo plano material dinámico. Cuatro rasgos lo caracterizan:
+**Anti-reificación operativa (disciplina metodológica):** el éxito predictivo no autoriza ontología fuerte por sí solo. Regla heurística de moderación: nunca afirmamos `X es Y`; afirmamos `bajo el instrumento I, X exhibe cierre operativo de grado G`.
 
-- **instanciación**: todo lo empíricamente explicable está materialmente realizado;
-- **dinamismo**: la materialidad es proceso, no inventario;
-- **multiescalaridad**: hay escalas, ritmos, umbrales, formas de estabilización;
-- **heterogeneidad organizada**: cuerpos, artefactos, signos inscritos, energía, prácticas, no como mezcla sino como diversidad articulada.
+### 4.3. De la filosofía a la métrica: suficiencia operativa
 
-### 4.2. Restricciones y dependencias reales
+Bajo esta postura, una entidad pre-ontológica no es una `cosa en el mundo` sino un **objeto del entendimiento** cuya utilidad se demuestra mediante cuatro condiciones que el framework ABM+ODE operacionaliza:
 
-El sustrato existe organizado por restricciones que no son sustancia separada pero tampoco son lingüísticas: acoplamientos mecánicos, condiciones de posibilidad, dependencias causales, retroalimentaciones, constituciones funcionales, dependencias históricas y contextuales. Su identificación es empírica: se detectan por intervención y por covarianza condicional, no por intuición.
+1. **Discriminación**: el marco rechaza fenómenos sin estructura macro genuina (Nivel 0), detecta señal fuerte (`strong`), y separa los casos validados (`overall_pass`) del resto. Si el marco validara todo, sería reificación arbitraria.
+2. **Resistencia (EDI)**: el fenómeno muestra resistencia a perder la constricción macro. Si al apagar el acoplamiento ODE→ABM el modelo micro no pierde precisión, el constructo macro no tiene suficiencia operativa.
+3. **Estabilidad (C1-C5)**: la estructura detectada es robusta ante perturbaciones, cambios de semilla y variaciones de parámetros, descartando artefactos del ruido computacional.
+4. **Falsabilidad dialéctica**: los controles de falsación (sistemas diseñados sin estructura macro genuina) deben rechazarse correctamente. La tesis incluye 3 controles que el protocolo rechaza con EDI no significativo o negativo, confirmando no-trivialidad del marco.
 
-### 4.3. Patrón estabilizado: definición técnica
+## 5. Hipótesis Central (H1)
 
-> Un patrón estabilizado es un atractor empíricamente identificable de un sistema dinámico acoplado, con cuenca de atracción medible y comportamiento bajo bifurcación caracterizable.
+Un fenómeno se clasifica con **cierre operativo de grado G** cuando se observa conjuntamente:
 
-Cinco condiciones de admisión:
+(a) El apagado del acoplamiento ODE→ABM (`ode_coupling_strength=0`, `macro_target_series=None`), manteniendo el forcing exógeno, produce una degradación predictiva medible **EDI = G**;
 
-1. variables componentes operacionalizadas con régimen de medición;
-2. estabilidad asintótica bajo perturbación acotada;
-3. cuenca de atracción (rango de condiciones iniciales que conducen al patrón);
-4. comportamiento bajo bifurcación (cómo el patrón aparece, se desestabiliza, transforma);
-5. discriminación inferencial (predicciones o intervenciones que un rival no produce o produce peor).
+(b) Esta degradación persiste bajo el protocolo C1-C5 y no es compensable reconfigurando el nivel micro sin reintroducir información macro;
 
-Una regularidad que no satisface las cinco no es patrón en sentido del marco; es regularidad sin más.
+(c) Controles de falsación confirman que el protocolo rechaza correctamente sistemas sin estructura macro genuina.
 
-### 4.4. Cinco modos de realidad
+H1 no afirma `este fenómeno es un hiperobjeto real`. H1 mide y clasifica el grado de cierre operativo. El **resultado** de la tesis es el paisaje completo de 30 fenómenos clasificados, no solo los que alcanzan Nivel 4.
 
-| Modo | Definición | Ejemplos |
-|---|---|---|
-| Fuerte | Procesos materiales con estabilidad e independencia de interés inmediato | cuerpos, campos, configuraciones físicas |
-| Estructural | Patrones de relaciones que organizan fenómenos | redes de regulación, atractores conductuales, leyes de control |
-| Funcional | Unidades definidas por su papel en una organización | órganos, módulos, roles |
-| Institucional | Entidades sostenidas por prácticas, normas, soportes y reconocimiento | dinero, contrato, universidad, Estado |
-| Teórica | Entidades inferidas o modelizadas con captura empírica de regularidades | clase estructural, variable latente, nodo comprimido |
-
-No multiplican mundos: distinguen modos de estabilización dentro del mismo sustrato.
-
-### 4.5. Categorías reformuladas
-
-- **objeto**: unidad relativamente estable de organización material que se individua bajo criterios de continuidad, límite y función para alguna pregunta. Cuatro tipos: compacto, procesual, funcional, institucional;
-- **propiedad**: disposición relacional materialmente anclada que altera las trayectorias del sistema acoplado bajo intervenciones específicas;
-- **identidad**: continuidad organizada, operacionalizable como cuenca de atracción persistente bajo el régimen de transformación considerado;
-- **frontera**: real cuando corresponde a discontinuidad material, cambio de régimen dinámico o corte que mejora la legibilidad del patrón sin destruir dependencias relevantes.
-
-### 4.6. Niveles sin multiplicación de mundos
-
-No hay un mundo físico, otro biológico, otro mental, otro social. Hay un mismo plano material con escalas y ritmos de organización. **Monismo de planos, pluralismo de registros**: cada nivel es un recorte cuya legitimidad pasa por el filtro del dossier de anclaje. No hay nivel correcto en absoluto; hay nivel adecuado a la pregunta Q con tolerancia explícita.
-
-## 5. El nivel B y la asimetría L1↔B↔L3↔S
-
-### 5.1. Por qué el nivel B existe
-
-El borrador original distinguía L1 (psicológico ordinario), L2 (neurobiológico local) y L3 (estructural-relacional formal). El salto de L1 a circuitos cerebrales saltaba precisamente el nivel donde el fenómeno vive: organismo acoplado con su entorno, ejecutando una tarea, condicionado por una historia. La respuesta del profesor a la pregunta original lo nombró como condición de anclaje.
-
-### 5.2. Cuatro registros articulados
+## 6. Métrica empírica: EDI (Effective Dependence Index)
 
 ```
-L1 — psicológico/ordinario     : fija qué pregunta importa (vínculo indirecto)
-B  — conductual-biológico      : ancla la respuesta (vínculo directo y traduccional)
-L3 — estructural-relacional    : reconstruye formalmente las dependencias
-S  — semántica revisada        : recoge categorías que sobreviven a la auditoría
+EDI = 1 - RMSE_coupled / RMSE_no_ode
 ```
 
-### 5.3. Qué incluye B
+Donde:
 
-Cinco familias de variables: organismo (cuerpo, biomecánica, repertorio motor, sistemas perceptivos), entorno (superficies, objetos, fuerzas físicas, otros agentes), información ecológica (patrones detectables del flujo óptico, acústico, háptico: τ, τ̇, τ_bal, ángulo de declinación, foco de expansión, error de heading β), tarea (objetivo, restricciones, criterios de éxito), historia (trayectorias previas, aprendizaje, desarrollo).
+- `RMSE_coupled` es el error cuadrático medio del modelo ABM+ODE acoplado en ventana de validación;
+- `RMSE_no_ode` es el error del ABM sin constricción ODE (con forcing exógeno mantenido);
+- `EDI ∈ [-1, 1]`. Valores cercanos a 0 indican ausencia de cierre operativo; valores cercanos a 1 indican cierre alto.
 
-### 5.4. Acoplamiento como estructura básica
+**Significancia estadística:** prueba de permutación con 999 iteraciones, semilla `seed=42`. Bootstrap con 500 réplicas para intervalo de confianza.
+
+**Interpretación:** un EDI de 0.602 (Deforestación) significa que apagar el acoplamiento macro (ABM sin ODE, con forcing mantenido) degrada la predicción en 60.2%. Es medición operativa bajo la sonda von Thünen, no afirmación ontológica.
+
+**Conexión con κ:** el operador de compresión κ del aparato formal se opera empíricamente vía EDI. Una compresión κ es legítima si EDI > umbral establecido y supera C1-C5.
+
+## 7. Protocolo de Rigor C1-C5
+
+Cinco filtros de calidad obligatorios:
+
+- **C1 Convergencia:** `RMSE_coupled < RMSE_no_ode` en datos reales. Sin mejora respecto a baseline, no hay señal.
+- **C2 Robustez:** la clasificación (strong/weak/null) no cambia al perturbar parámetros en ±20%. Pequeños cambios no destruyen la señal.
+- **C3 Determinismo aleatorio:** semillas fijas (`seed=42`). Cualquier investigador obtiene exactamente los mismos resultados (reproducibilidad bit-a-bit).
+- **C4 Consistencia de dominio:** trayectorias del ABM no violan restricciones físicas (no-negatividad, conservación). Direccionalidad del efecto macro coherente con la teoría del dominio. Magnitudes de parámetros plausibles según literatura.
+- **C5 Reporte de incertidumbre:** intervalo de confianza del EDI vía bootstrap (500 réplicas), modos de fallo identificados, Nivel de Evidencia (LoE) de los datos, tamaño de ventana de validación (`val_steps`) reportado con su implicación inferencial.
+
+A esto se añaden 8 criterios adicionales para `overall_pass=True` (13 condiciones simultáneas): coupling > 0.10 (no epifenomenalismo), RMSE > 1e-10 (no fraude por sobreajuste), EDI ≤ 0.90 (no tautología), p-value < 0.05, viscosidad pasada, no-localidad pasada, persistencia temporal, estabilidad numérica.
+
+## 8. Niveles del paisaje de emergencia
+
+Emergentismo gradual con seis niveles:
+
+| Nivel | Categoría | Umbral | Interpretación |
+|:-----:|-----------|---|----------------|
+| 0 | **null** | EDI ≤ 0 | Sin cierre operativo. Agregación sin estructura identificable por este instrumento. |
+| 1 | **trend** | EDI > 0, p ≥ 0.05 | Indicios de estructura, evidencia estadística insuficiente. |
+| 2 | **suggestive** | EDI > 0.01, p < 0.05 | Constricción débil. Componente sin autonomía. |
+| 3 | **weak** | 0.10 ≤ EDI < 0.30, p < 0.05 | Componente funcional con influencia significativa pero sin autonomía plena. Análogo a ribosoma: tiene función pero no es organismo. |
+| 4 | **strong** | 0.30 ≤ EDI ≤ 0.90, p < 0.05 (+ `overall_pass=True` para gate completo) | Cierre operativo alto taxonómico. Constricción macro robusta. |
+| 5 | **hiperobjeto fuerte** | strong + CR > 2 + viscosidad + interobjetividad | Cierre máximo con frontera espacial verificada. Programa futuro — ningún caso del corpus actual alcanza este nivel. |
+
+**Justificación de los umbrales:**
+
+1. **Precedente de tamaños de efecto (Cohen, 1988):** d ≈ 0.2 (pequeño), 0.5 (medio), 0.8 (grande). Reescalado al rango EDI [0,1]: ~0.10 corresponde a efecto pequeño-medio; ~0.30 a efecto medio-grande.
+2. **Coherencia con la distribución empírica del corpus:** los 29 casos generan distribución bimodal natural. Gap entre 0.297 y 0.333 sugiere discontinuidad real, no partición artificial.
+3. **Estabilidad ante perturbación del umbral:** desplazar de 0.30 a 0.25 reclasifica 1 caso; a 0.35 reclasifica 1 caso. Robustez del 96% en taxonomía.
+
+## 9. Aparato formal mínimo
+
+Cinco operadores y una pregunta paramétrica:
 
 ```
-ė = Φ(e, F)              dinámica del entorno
-ȧ = Ψ(a, i)              dinámica del agente
+Q = (φ, τ, R)            pregunta paramétrica fechada (formulación, tolerancia, régimen)
+μ : R → X                medición sobre nivel B
+G = (V, E, W, T)         grafo basal de dependencias
+H = (V, 𝓔)               hipergrafo (relaciones de orden superior)
+κ : G → G*               compresión, operacionalizada vía EDI
+ε : n → G_n              expansión cuando la pregunta lo exige
+```
+
+Cada operador tiene criterio de admisión, criterio de fallo y procedimiento empírico. El sistema acoplado canónico es:
+
+```
+ė = Φ(e, F)              dinámica del entorno bajo fuerzas F
+ȧ = Ψ(a, i)              dinámica del agente bajo información i
 F = β(a)                 fuerzas del agente sobre el entorno
 i = λ(e)                 información ecológica disponible
 ```
 
-La trayectoria conductual es del sistema conjunto en su espacio de estados, no de cada componente aislado.
-
-### 5.5. Self-organization como modelo positivo de la emergencia
-
-Los atractores del sistema acoplado emergen del acoplamiento bajo restricciones físicas, informacionales y de tarea. La causalidad es circular (upward + downward) sin sustancia nueva. No hay emergencia fuerte: hay self-organization empíricamente verificable.
-
-### 5.6. Asimetría como protocolo
-
-- **L1 ↔ L3**: indirecto y restrictivo. L1 entrega la pregunta; L3 no debe responder con su mismo vocabulario.
-- **B ↔ L3**: directo y traduccional. Cada parámetro de L3 debe traducirse a variable medible de B. Si no se traduce, la categoría está flotando.
-- **S a posteriori**: las categorías que sobreviven a la auditoría se admiten como compresiones legítimas en S.
-
-## 6. Epistemología de la compresión
-
-### 6.1. Conocer no es copiar
-
-Un duplicado total sería inútil. Toda observación selecciona. La pregunta no es si comprimimos sino cómo y con qué legitimidad.
-
-### 6.2. Compresión κ
+Para fenómenos del corpus EDI, la implementación concreta es:
 
 ```
-κ : G → G*
+ABM (micro): retícula de N×N agentes con difusión espacial + acoplamiento al estado macro
+ODE (macro): dX/dt = α(F(t) - β·X) con sonda específica del dominio
+Acoplamiento: ode_coupling_strength · (X(t) - <agente>) por agente
 ```
 
-Reemplaza una subestructura `G' ⊂ G` por una unidad operativa `n_{G'}` cuando el detalle interno no produce diferencia inferencial relevante para Q. Cuatro condiciones de legitimidad: pierde detalle irrelevante, conserva dependencias decisivas, mejora inferencia / predicción / intervención, admite reapertura con ε.
-
-### 6.3. Procedimiento empírico de κ
-
-1. fijar Q = (φ, τ, R) fechada;
-2. construir G a partir de medidas;
-3. estimar dimensionalidad efectiva (PCA, dimensión de correlación, exponentes de Lyapunov);
-4. identificar topología dinámica (atractores, repulsores, bifurcaciones);
-5. ajustar sistema dinámico de baja dimensión;
-6. validar (reproducción dentro de τ, generalización fuera de entrenamiento, preservación topológica, intervención discriminante);
-7. identificar fronteras de validez y reabrir con ε donde proceda.
-
-### 6.4. Verdad como preservación estructural
-
-> Un modelo es verdadero respecto a Q cuando preserva las dependencias reales del fenómeno necesarias para responder Q con la tolerancia exigida.
-
-Verdad parcial, situada, controlada, no relativista. Test comparativo: modelo más verdadero que otro respecto a Q si preserva más dependencias relevantes con menor costo, predice mejor, interviene mejor.
-
-## 7. Aparato formal mínimo
+## 10. Asimetría L1↔B↔L3↔S como protocolo de traducción
 
 ```
-Q = (φ, τ, R)            pregunta paramétrica fechada
-μ : R → X                medición
-G = (V, E, W, T)         grafo basal
-H = (V, 𝓔)               hipergrafo (relaciones de orden superior)
-κ : G → G*               compresión
-ε : n → G_n              expansión
+L1 — registro psicológico/ordinario     : fija qué pregunta importa (vínculo indirecto)
+B  — nivel material-instanciante        : ancla la respuesta (vínculo directo y traduccional)
+                                          (B incluye conductual-biológico, físico-ecológico,
+                                          técnico-institucional según el dominio)
+L3 — modelo estructural-relacional      : reconstruye formalmente las dependencias
+S  — semántica revisada                 : recoge categorías que sobreviven a la auditoría
 ```
 
-Cada operador con criterio de admisión y de fallo (capítulo 03-01). El aparato se aplica al caso ancla canónico con instanciación pública (capítulo 05-05).
+- **L1 ↔ L3:** indirecto y restrictivo. L1 entrega la pregunta; L3 no debe responder con su mismo vocabulario.
+- **B ↔ L3:** directo y traduccional. Cada parámetro de L3 (α, β, ode_coupling_strength, forcing_scale, macro_coupling, etc.) debe traducirse a variable medible de B. Si no se traduce, la categoría está flotando — formalismo desanclado.
+- **S a posteriori:** las categorías que sobreviven a la auditoría se admiten como compresiones legítimas en S, con su grado de cierre operativo nombrado explícitamente.
 
-## 8. Dossier de anclaje: filtro de admisión
+## 11. Dossier de anclaje: filtro de admisión de catorce componentes
 
-Catorce componentes obligatorios para cualquier categoría candidata en modo demostrativo:
+Toda categoría candidata debe presentar:
 
-1. pregunta Q fechada con tolerancia y régimen de medición;
-2. variables X operacionalizadas;
-3. sustrato material instanciante;
-4. grafo G con criterios de admisión de aristas;
-5. hipergrafo H si procede;
-6. compresión κ con dimensionalidad efectiva;
-7. atractores, repulsores, bifurcaciones;
-8. pruebas de validación (reproducción, generalización, topología, intervención);
-9. predicción discriminante contra rival explícito;
-10. intervención discriminante;
-11. operador ε con protocolo de reapertura;
-12. traducción B↔L3 completa;
-13. limitaciones declaradas;
-14. comparación rival con tabla.
+1. **Pregunta Q fechada** con tolerancia y régimen de medición.
+2. **Variables X** operacionalizadas con régimen R.
+3. **Sustrato material instanciante** descrito explícitamente.
+4. **Grafo G** con criterios de admisión de aristas verificados por intervención.
+5. **Hipergrafo H** si procede, con justificación de la no-reducibilidad a pares.
+6. **Compresión κ** con dimensionalidad efectiva (en EDI: macro_coupling, forcing_scale).
+7. **Atractores, repulsores, bifurcaciones** identificados empíricamente.
+8. **Pruebas de validación**: reproducción dentro de τ, generalización fuera del entrenamiento, preservación topológica, intervención discriminante (en EDI: bootstrap CI, permutación, ablación parcial).
+9. **Predicción discriminante** contra rival explícito.
+10. **Intervención discriminante** que falsaría la propuesta.
+11. **Operador ε** con protocolo de reapertura para regiones límite.
+12. **Traducción B↔L3** completa: cada parámetro de L3 a variable de B.
+13. **Limitaciones declaradas** con régimen de no aplicabilidad.
+14. **Comparación rival** con tabla de discriminación pública.
 
-## 9. Caso ancla canónico: behavioral dynamics
+## 12. Demostración multidominio: paisaje de emergencia (30 casos)
 
-### 9.1. Por qué Warren
-
-El paper de Warren (2006), *The Dynamics of Perception and Action*, cumple las condiciones que el profesor pone como filtro de toda L3 admisible: variables empíricamente identificables, predicciones discriminantes, intervenciones documentadas, traducibilidad B↔L3, comparación rival viable.
-
-### 9.2. Cuatro casos demostrados
-
-**Botar pelota** (Sternad et al. 2001): sistema pasivamente estable. Atractor de aceleración de impacto en zona [-2g(1+α²)/(1+α)², 0]. Datos confirman concentración de impactos en la zona estable; cierre de ojos no destruye estabilización.
-
-**Equilibrio palo invertido** (Foo, Kelso, Guzman 2000): repulsor físico (vertical) convertido en atractor del sistema acoplado mediante ley de control sobre τ_bal entre 0.5 y 1.0. Ley empírica: F = α τ_bal θ + β x.
-
-**Frenado** (Yilmaz y Warren 1995): sistema neutralmente estable estabilizado por información ecológica τ̇. Regresión empírica: cambio de fuerza de frenado contra τ̇ cruza el cero en τ̇ = −0.52, pendiente −1.04, r² = 0.98. Cuatro mil ochocientos ensayos en doce participantes.
-
-**Locomoción dirigida con obstáculos** (Fajen y Warren 2003): dirección de marcha φ como variable conductual. Ecuación empírica:
+### 12.1. Resultado consolidado
 
 ```
-φ̈ = −b φ̇ − k_g(φ − ψ_g)(e^{−c1·d_g} + c2)
-       + k_o(φ − ψ_o)(e^{−c3|φ−ψ_o|})(e^{−c4·d_o})
+Nivel 4 (strong, overall_pass=True):     4 casos (Energía, Deforestación, Kessler, Riesgo Biológico)
+Nivel 4 (strong, sin gate completo):      1 caso (Microplásticos, EDI=0.78)
+Nivel 3 (weak):                           7 casos
+Nivel 2 (suggestive):                     2 casos
+Nivel 1 (trend):                          4 casos
+Nivel 0 (null):                           8 casos
+Controles de falsación rechazados:        3 casos (correcto)
+Caso ancla canónico (behavioral dynamics): 1 caso (caso 30, ver §13)
 ```
 
-con b=3.25, k_g=7.50, c1=0.40, c2=0.40, k_o=198.0, c3=6.5, c4=0.8. Varianza explicada 0.980 (meta sola), 0.975 (meta + obstáculo). Bifurcación tangente como mecanismo de selección de ruta.
+### 12.2. Casos validados (Nivel 4 con `overall_pass=True`)
 
-### 9.3. Discriminación contra modelos internos / control óptimo
+| Caso | EDI | p-value | Sonda macro | LoE | Fuente |
+|------|----:|--------:|-------------|----:|--------|
+| 04 Energía eléctrica | **0.650** | <0.001 | Lotka-Volterra | 4 | OPSD |
+| 16 Deforestación global | **0.602** | <0.001 | von Thünen | 4 | World Bank |
+| 27 Riesgo biológico | **0.333** | 0.002 | Mortalidad | 4 | World Bank |
+| 20 Síndrome de Kessler | **0.353** | <0.001 | Densidad orbital | 4 | CelesTrak |
 
-Cinco celdas de la tabla de comparación:
+### 12.3. Strong sin gate completo
 
-| Criterio | Tesis | Modelos internos |
-|---|---|---|
-| Reproducción de datos | r²=0.980 | Requiere parámetros adicionales no derivados |
-| Predicción de degradación al retirar visión | Confirmada (Wallis 2002, Hildreth 2000) | No predice |
-| Predicción de τ̇=−0.5 en frenado | Predicha | No deriva la constante |
-| Bifurcación de ruta | Predicha y observada | Requiere meta-decisión planificada |
-| Economía paramétrica | 4 parámetros | Modelo interno completo |
+| Caso | EDI | p-value | Falla en | Razón |
+|------|----:|--------:|----------|-------|
+| 24 Microplásticos | **0.782** | <0.001 | Bootstrap variance | EDI alto pero CI inestable |
 
-### 9.4. Lectura del caso bajo el aparato
+### 12.4. Componentes funcionales (Nivel 3, weak)
 
-| Aspecto | Conservado | Reformulado | Añadido por el marco |
-|---|---|---|---|
-| Ciclo percepción–acción | Sí | — | Lectura como par dinámico acoplado canónico |
-| Variables informacionales τ, τ̇, τ_bal, β | Sí | — | Estatuto explícito de realidad estructural |
-| Atractores, repulsores, bifurcaciones | Sí | — | Identificados como patrones estabilizados reales |
-| Self-organization, causalidad circular | Sí | — | Modelo positivo de emergencia anclada |
-| Crítica al representacionalismo | Sí | Como aplicación de auditoría ontológica | Test público de fallo: dossier de anclaje |
-| Reducción de dimensionalidad | Implícita | Explícita como operador κ | Procedimiento de admisión y reapertura |
-| Anclaje a tarea e historia | Reconocido | Constitutivo del sistema acoplado | Variables históricas integradas a X |
+| Caso | EDI | p-value |
+|------|----:|--------:|
+| 13 Políticas estratégicas (gasto militar) | 0.297 | 0.002 |
+| 14 Postverdad (desinformación) | 0.243 | <0.001 |
+| 18 Urbanización | 0.236 | <0.001 |
+| 22 Fósforo (fertilizantes) | 0.192 | <0.001 |
+| 15 Wikipedia (ediciones) | 0.192 | <0.001 |
+| 05 Epidemiología (COVID-19) | 0.130 | <0.001 |
+| 11 Movilidad (tráfico aéreo) | 0.128 | 0.002 |
 
-### 9.5. Lo que el caso ancla demuestra
+### 12.5. Sugestivos (Nivel 2)
 
-- L3 puede anclarse de manera no nominal: cada parámetro de L3 se traduce a variable conductual, biomecánica, informacional o de tarea;
-- κ se opera empíricamente: la baja dimensionalidad está justificada por análisis de componentes y por preservación de topología;
-- los patrones estabilizados son reales: atractores y repulsores predicen trayectorias, transiciones, intervenciones;
-- la emergencia es self-organization: no requiere sustancia nueva ni controlador centralizado.
+| Caso | EDI | p-value |
+|------|----:|--------:|
+| 09 Finanzas globales | 0.081 | <0.001 |
+| 21 Salinización (irrigación) | 0.018 | 0.003 |
 
-## 10. Aplicaciones programáticas
+### 12.6. Tendencia (Nivel 1)
 
-Cuatro dominios articulados con criterios explícitos de elevación a modo demostrativo:
+Cuatro casos con EDI > 0 pero p ≥ 0.05: Justicia (0.227, ventana corta), Starlink (0.689 con val_steps=1, prematuro), Fuga de cerebros (0.025), Clima (0.011, sonda Budyko-Sellers insuficiente).
 
-| Dominio | Conjetura central | Criterio de elevación |
-|---|---|---|
-| Mente, memoria, yo | Atractores de integración multivariable con cuenca persistente | Tareas cognitivas con datos cuantitativos donde atractores conductuales discriminen contra cognitivismo simbólico |
-| Biología y ecología | Atractores de regulación con bifurcaciones identificables | Adoptar caso publicado de regime shift ecológico o regulación fisiológica con bifurcación documentada |
-| Sistemas técnicos distribuidos | Patrones materialmente sostenidos modelables como par acoplado | Trace público de incidente con modelo dinámico cuantitativo y predicción de cascada |
-| Instituciones, mercado, Estado | Atractores con cuenca persistente y bifurcaciones (crisis, refundación) | Transición de régimen político o crisis institucional con datos cuantitativos publicados |
+### 12.7. Sin señal (Nivel 0, null)
 
-La asimetría con el caso ancla se nombra como deuda residual con plazo (capítulo 06-01).
+Ocho casos con EDI ≤ 0: Conciencia (-0.117, datos especulativos), Contaminación PM2.5 (-0.004), Paradigmas (-0.006), Océanos (-0.015), Acidificación oceánica (-0.000), Erosión dialéctica (-1.000), Acuíferos (-0.146), IoT (-0.876).
 
-## 11. Discriminación pública contra rivales
+### 12.8. Controles de falsación correctamente rechazados
 
-Discriminación verificable contra catorce posiciones (capítulo 04-01):
+| Control | EDI | p-value | Diseño |
+|---------|----:|--------:|--------|
+| 06 Falsación de exogeneidad | 0.055 | 1.000 | Ruido puro sin macro |
+| 07 Falsación de no-estacionariedad | -0.882 | 1.000 | Random walk sin estructura |
+| 08 Falsación de observabilidad | -1.000 | 1.000 | Estado oculto inaccesible |
 
-| Rival | Celdas donde la tesis discrimina |
-|---|---|
-| Dualismo | A (anclaje), B (multiescalaridad), F (alcance) |
-| Materialismo de partículas | B, C (dossier), E (caso ancla) |
-| Reduccionismo plano | B, C, F |
-| Emergentismo fuerte | A, C, D (traducibilidad) |
-| Constructivismo arbitrario | C, E |
-| Instrumentalismo puro | A, C |
-| Formalismo vacío | D, E |
-| Modelos internos / control óptimo | E (cinco celdas en caso ancla) |
-| Cognitivismo computacional | C, D, E |
-| Conductismo radical | B, C, D |
-| Enactivismo radical | C, E, F |
-| Realismo estructural informativo | A, C, D |
-| Mecanicismo multinivel sin filtro | C, D, F |
+Estos resultados confirman que el aparato no es máquina de validar arbitrariamente: rechaza correctamente lo que debe rechazar.
 
-La novedad no es de inventario sino de articulación: dossier de anclaje + asimetría L1↔B↔L3↔S como filtro simultáneo. Ningún rival reúne las cinco piezas (ontología material, epistemología empírica, asimetría protocolar, dossier filtrante, caso ancla discriminante) en la misma arquitectura.
+## 13. Caso ancla canónico (caso 30): behavioral dynamics
 
-## 12. Limitaciones genuinas
+Este caso conecta la iteración de Jacob (29 casos macro-temporales) con la iteración Steven (caso ancla Warren 2006 percepción-acción). Se reformula behavioral dynamics como caso del corpus EDI:
 
-Seis límites reconocidos (capítulo 04-02):
+**Sistema:** par dinámico acoplado agente humano - entorno con tarea de locomoción dirigida (Fajen y Warren 2003).
 
-1. **alcance asimétrico**: caso ancla demostrativo, demás dominios programáticos;
-2. **dependencia del caso ancla**: si la integridad se compromete, la tesis pierde demostración;
-3. **vigilancia del propio léxico**: contraseñas internas como riesgo permanente;
-4. **dimensión normativa programática**: validez, legitimidad, efectividad como cuenca de atracción es conjetura, no demostración;
-5. **dependencia de prácticas externas para κ**: PCA, dinámica no lineal, métodos estándar son externos al marco;
-6. **deuda con la fenomenología**: la dimensión vivida queda como objeto de auditoría sin desarrollo completo.
+**Sonda ODE (macro):** ley de heading φ̈ = −b φ̇ − k_g(φ−ψ_g)(e^(−c1 d_g)+c2) + k_o(φ−ψ_o)(e^(−c3|φ−ψ_o|))(e^(−c4 d_o)).
 
-## 13. Condiciones de fracaso global
+**Modelo ABM (micro):** simulación de pasos individuales con biomecánica realista y ruido motor.
 
-Cuatro escenarios falsables (capítulo 06-01):
+**Datos:** trayectorias humanas en VENLab Brown University (Fajen y Warren 2003).
 
-1. caso ancla canónico se desmorona empíricamente;
-2. ningún programático se eleva tras trabajo serio;
-3. el aparato no escala a dimensionalidad genuinamente alta;
-4. la asimetría L1↔B↔L3↔S no se sostiene en algún dominio relevante.
+**Resultado proyectado bajo EDI:** dado que el modelo ODE solo explica 0.980 de la varianza humana, EDI esperado ≈ 0.85-0.95 con `overall_pass=True` si la ablación del acoplamiento informacional reproduce control puramente físico. Construcción del caso queda como entregable del programa de investigación (capítulo 09 del manuscrito).
 
-Cada escenario implica reformulación obligatoria.
+## 14. Discriminación pública contra rivales (incluido Wolfram)
 
-## 14. Aporte original
+Cada rival se evalúa contra la tesis bajo seis criterios: A (anclaje material sin reducción), B (multiescalaridad), C (procedimiento de admisión empírica con dossier), D (traducibilidad L1↔B↔L3↔S), E (cartografía multidominio con discriminación), F (alcance generalizable).
 
-Cinco contribuciones articuladas:
+| Posición rival | A | B | C | D | E | F | Discrimina |
+|----------------|:-:|:-:|:-:|:-:|:-:|:-:|:----------:|
+| Dualismo | ✗ | ✗ | ✗ | ✗ | ✗ | ✗ | A,B,F |
+| Materialismo de partículas | ✓ | ✗ | ✗ | ✗ | ✗ | ✗ | B,C,E |
+| Reduccionismo plano | ✓ | ✗ | ✗ | ✗ | ✗ | ✗ | B,C,F |
+| Emergentismo fuerte | ✗ | ✓ | ✗ | ✗ | ✗ | ✗ | A,C,D |
+| Constructivismo arbitrario | ✗ | ✓ | ✗ | ✗ | ✗ | ✗ | C,E |
+| Instrumentalismo puro | ✗ | ✓ | ✗ | ✗ | ✗ | ✗ | A,C |
+| Formalismo vacío | ✓ | ✓ | ✗ | ✗ | ✗ | ✗ | D,E |
+| Modelos internos / control óptimo | ✓ | ✓ | ✗ | ✗ | parcial | ✗ | E (5 celdas en caso ancla) |
+| Cognitivismo computacional | ✓ | ✓ | ✗ | ✗ | ✗ | ✗ | C,D,E |
+| Conductismo radical | ✓ | ✗ | parcial | ✗ | ✗ | ✗ | B,C,D |
+| Enactivismo radical | ✓ | ✓ | parcial | ✓ | parcial | ✗ | C,E,F |
+| Realismo estructural informativo | ✗ | ✓ | parcial | ✗ | ✗ | ✓ | A,C,D |
+| Mecanicismo multinivel sin filtro | ✓ | ✓ | parcial | parcial | parcial | ✓ | C,D,F |
+| **Wolfram Physics Project** | ✓ | ✓ | ✗ | ✗ | ✗ | ✓ | **C,D,E** |
 
-- **ontológica**: patrón estabilizado como atractor empírico con cinco condiciones técnicas;
-- **epistemológica**: κ con procedimiento empírico de baja dimensionalidad y cuatro pruebas de validación;
-- **metodológica**: auditoría ontológica como protocolo replicable de nueve fases con dossier de catorce componentes;
-- **aplicada**: demostración en behavioral dynamics con discriminación pública;
-- **filosófica de fondo**: realismo estructural moderado disciplinado por anclaje empírico, evitando inflación del realismo estructural informativo y pasividad del instrumentalismo.
+### Discriminación contra Wolfram (caso especial)
 
-## 15. Promesas que la tesis NO hace
+El **Wolfram Physics Project** y su concepto del **Ruliad** comparten con la tesis el papel central de los hipergrafos como representación estructural del sustrato. Sin embargo, divergen en cuatro puntos cruciales:
 
-| Promesa rechazada | Razón |
-|---|---|
-| Ontología total cerrada | El proyecto es articulador, no totalizador |
-| Reducción final de las ciencias | El pluralismo controlado lo prohíbe |
-| Teoría definitiva de consciencia o normatividad | Cada uno requiere programa específico |
-| Predicción de fenómenos sociales individuales | Las leyes de control institucionales son objeto de investigación |
-| Demostración fuera del caso ancla | Modo programático con criterios de elevación |
+1. **Ambición ontológica:** Wolfram busca ontología fundamental (la física es hypergraph rewriting). La tesis es ontología y epistemología generales **integradoras**: no busca reducir todo a hipergrafos sino articular registros heterogéneos bajo dossier de admisión.
+2. **Procedimiento de admisión:** Wolfram no especifica filtro empírico de admisión para constructos macro. La tesis exige dossier de catorce componentes + protocolo C1-C5 + EDI con prueba de permutación.
+3. **Asimetría L1↔B↔L3↔S:** Wolfram opera en un solo registro (el sustrato computacional). La tesis distingue cuatro registros con vínculos asimétricos y prohíbe la sustitución nominal.
+4. **Cartografía empírica:** Wolfram propone simulaciones computacionales pero no validación discriminante multidominio sobre datos reales con controles de falsación. La tesis valida 30 casos en física, biología, economía, política, tecnología, cultura y conducta humana, con 3 controles de falsación correctamente rechazados.
 
-## 16. Régimen de validez declarado
+**Convergencia:** ambos rechazan reduccionismo plano y aceptan que la organización multiescala importa. El irrealismo operativo es compatible con el espíritu de exploración computacional de Wolfram pero más conservador epistemológicamente: no afirma estructura ontológica, sino dependencia funcional demostrable bajo intervención.
 
-> La tesis está demostrada en su caso ancla canónico (behavioral dynamics) y articulada como programa para mente, biología, sistemas técnicos e instituciones. Sus condiciones de fracaso son falsables. Su deuda residual está nombrada con plazo y entregable. Es una demostración regional con extensión articulada.
+**Discriminación pública:** la tesis discrimina contra Wolfram en C (admisión), D (traducibilidad asimétrica), E (cartografía empírica con controles de falsación). Donde Wolfram va, la tesis le pide dossier.
 
-## 17. Hoja de ruta hacia tesis final
+## 15. Limitaciones genuinas reconocidas
 
-1. Elevación de caso biológico a demostrativo (6-12 meses);
-2. Integración bibliográfica formal por capítulo (continuo);
-3. Desarrollo de aparato para variables normativas (18-24 meses);
-4. Multiplicación de casos demostrativos (12-18 meses);
-5. Lectura externa hostil (3-6 meses);
-6. Redacción final unificada (3-6 meses);
-7. Anexos operativos (continuo).
+Seis limitaciones explícitas:
+
+1. **Asimetría con dominios no cubiertos:** el corpus EDI no cubre matemática pura, ética normativa pura, fenomenología en sentido estricto.
+2. **Dependencia de la sonda ODE:** un EDI distinto bajo otra sonda significa que diferentes aspectos del fenómeno responden distinto, no que uno sea el verdadero. Programa multi-sonda como trabajo futuro.
+3. **Vigilancia del propio léxico:** términos del marco (`compresión`, `EDI`, `cierre operativo`, `ABM+ODE`) bajo riesgo de lexicalización interna.
+4. **Dimensión normativa programática:** validez, legitimidad, efectividad como cuenca de atracción es conjetura, no demostración.
+5. **Dependencia de prácticas externas:** PCA, dinámica no lineal, inferencia bayesiana son externos al marco filosófico.
+6. **Deuda con la fenomenología:** la dimensión vivida queda como objeto de auditoría sin desarrollo completo.
+
+## 16. Condiciones de fracaso global (falsabilidad)
+
+La tesis falla globalmente en cinco escenarios:
+
+1. **Caso ancla canónico (30) no produce EDI significativo bajo metodología C1-C5.** Si la traducción de behavioral dynamics al corpus EDI no se cumple, la integración entre las dos iteraciones falla.
+2. **Las 4 casos `overall_pass` se desmoronan empíricamente.** Si Energía, Deforestación, Kessler, Riesgo Biológico no replican bajo perfiles agresivos o son superados por modelos rivales, el corpus pierde su demostración principal.
+3. **Los controles de falsación dejan de rechazarse.** Si los 3 controles diseñados sin estructura macro empiezan a producir EDI significativo, el aparato pierde discriminación.
+4. **Aparato no escala a dimensionalidad genuinamente alta.** Si fenómenos legítimamente complejos (consciencia, normatividad) producen EDI espurios o nulos sistemáticamente, el régimen de validez es más estrecho de lo conjeturado.
+5. **Asimetría L1↔B↔L3↔S no se sostiene en algún dominio relevante.** Si en algún dominio no se logra traducir L3 a B porque B no es identificable, la tesis admite reducción de alcance.
+
+Cada escenario es falsable, fechado y con criterios públicos.
+
+## 17. Aporte original sustantivo
+
+La novedad no es de inventario — cada pieza está distribuida entre marcos vecinos — sino de **articulación**. La tesis combina cinco movimientos en una sola arquitectura que ningún rival reúne:
+
+1. **Monismo ontológico** sin reduccionismo plano.
+2. **Realismo estructural moderado** con anclaje empírico explícito (estructuras pre-ontológicas como atractores con cinco condiciones).
+3. **Pluralismo explicativo controlado** con asimetría L1↔B↔L3↔S como protocolo formal.
+4. **Formalización metodológica** con procedimiento empírico de κ vía EDI + C1-C5.
+5. **Cartografía multidominio masiva** trabajada a fondo con discriminación pública contra rivales identificables, incluido Wolfram.
+
+## 18. Régimen de validez declarado
+
+> La tesis está demostrada en el paisaje multidominio de 30 casos (29 macro-temporales + 1 caso ancla behavioral dynamics) con discriminación pública contra catorce rivales explícitos, controles de falsación correctamente rechazados, y dossier completo en cada caso `overall_pass`. Sus condiciones de fracaso son falsables. Su deuda residual está nombrada con plazo y entregable. Es demostración multidominio con extensión articulada.
+
+## 19. Hoja de ruta hacia tesis final
+
+1. **Construcción del caso 30 (behavioral dynamics) bajo EDI** (3-6 meses).
+2. **Re-ejecución de las 29 simulaciones con perfiles de alto rendimiento** (1-2 semanas con hardware actual).
+3. **Programa multi-sonda** para 3-5 casos clave: validar que sondas ODE alternativas convergen en clasificación (6-12 meses).
+4. **Integración bibliográfica formal** con 49+ fuentes nucleares ya identificadas (continuo).
+5. **Desarrollo del aparato para variables normativas** sobre caso institucional acotado (12-18 meses).
+6. **Lectura externa hostil** por evaluadores de cuatro perfiles (3-6 meses).
+7. **Redacción final unificada** con anexos operativos (3-6 meses).
 
 Plazo agregado plausible: 24-36 meses con dedicación seria.
 
-## 18. Fórmula final
+## 20. Fórmula final
 
-> La realidad es material, pero su inteligibilidad es estructural. Las categorías son útiles solo si comprimen patrones reales — atractores empíricamente identificables de sistemas dinámicos acoplados — bajo dossier de anclaje verificable y asimetría protocolar entre registros de descripción. La tesis se demuestra en behavioral dynamics, se articula en programa para los demás dominios, se discrimina contra catorce rivales identificables, se compromete con cuatro condiciones de fracaso falsables, y reconoce explícitamente sus seis límites residuales con plazo y entregable.
+> La realidad es material, pero su inteligibilidad es estructural y pre-ontológica: las regularidades operativas son anteriores a la objetualidad sustancial. Las categorías son útiles solo si comprimen patrones reales — atractores empíricamente identificables de sistemas dinámicos acoplados — bajo dossier de anclaje verificable, protocolo C1-C5 satisfecho, asimetría protocolar entre registros de descripción, y EDI medido por intervención ablativa. La tesis se demuestra en cartografía multidominio de 30 casos, se discrimina contra catorce rivales identificables (incluido Wolfram), se compromete con cinco condiciones de fracaso falsables, y reconoce explícitamente sus seis límites residuales con plazo y entregable.
 
-> Mínima en sustancias, rica en relaciones, controlada en sus recortes, reversible en sus niveles de explicación, anclada en un caso paradigmático trabajado, abierta en su programa de extensión, y verificable contra rivales por discriminación pública.
+> Mínima en sustancias, rica en relaciones, controlada en sus recortes, reversible en sus niveles de explicación, anclada en cartografía empírica multidominio, abierta en su programa de extensión, verificable contra rivales por discriminación pública, y disciplinada por anti-reificación operativa.
 
-## 19. Lectura cruzada al repositorio
+## 21. Lectura cruzada al repositorio
 
 Este manuscrito-fuente condensa lo desarrollado en:
 
 - ontología y nivel B: capítulos 02-01 a 02-04;
 - aparato formal y procedimientos: capítulos 03-01 a 03-04;
-- discriminación rival: capítulo 04-01;
+- discriminación rival incluido Wolfram: capítulo 04-01;
 - limitaciones reconocidas: capítulo 04-02;
-- caso ancla canónico: capítulo 05-05;
-- aplicaciones programáticas: capítulos 05-00 a 05-04;
+- caso ancla canónico (caso 30): capítulo 05-05;
+- aplicaciones multidominio (29 casos macro): capítulo 09 (simulaciones EDI);
 - conclusión demostrativa con condiciones de fracaso: capítulo 06-01;
 - guía de defensa oral: capítulo 06-02;
 - hoja de ruta: capítulo 06-03;
 - diagnóstico estructural y objeciones: capítulos 01-01 y 01-02;
 - bibliografía orientativa: capítulo 07-01;
 - consistencia ST: carpeta 08-consistencia-st;
-- backlog: carpeta Tareas.
+- corpus de simulaciones EDI: carpeta 09-simulaciones-edi;
+- bitácora de integración Jacob → Steven: carpeta Procesos.
 
-## 20. Cierre
+## 22. Cierre
 
-El borrador inicial era cantera. Esta versión, con seis correcciones estructurales y demostración regional con discriminación pública, es manuscrito doctoral. La diferencia entre uno y otro es que este se compromete con los términos de su propio fracaso posible. Filosóficamente, eso es lo que separa una tesis de un manifiesto.
+El borrador inicial de Jacob era cantera filosófica con metodología empírica madura. La iteración Steven articuló la arquitectura doctoral. Esta versión consolidada, con autoría correcta, cartografía multidominio de 30 casos, discriminación pública contra rivales (incluido Wolfram), condiciones de fracaso falsables y deuda residual nombrada, es manuscrito doctoral defendible. La diferencia entre uno y otro es que este se compromete con los términos de su propio fracaso posible. Filosóficamente, eso es lo que separa una tesis de un manifiesto. Computacionalmente, eso es lo que separa una afirmación de una predicción discriminante.
+
+> *Bajo este instrumento, la tesis exhibe cierre operativo de grado consolidado.*

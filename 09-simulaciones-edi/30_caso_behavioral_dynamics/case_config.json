@@ -1,0 +1,81 @@
+{
+  "case_name": "Behavioral Dynamics — Locomoción dirigida (Fajen-Warren 2003)",
+  "ode_model": "mean_reversion",
+  "ode_key": "heading_error",
+  "series_key": "heading_error",
+  "log_transform": false,
+  "loe": 2,
+  "data": {
+    "csv": "data/behavioral_dynamics_synth.csv",
+    "date_col": "date",
+    "value_col": "value",
+    "driver_cols": []
+  },
+  "dates": {
+    "synthetic_start": "2000-01-01",
+    "synthetic_end": "2010-01-01",
+    "synthetic_split": "2007-01-01",
+    "real_start": "2000-01-01",
+    "real_end": "2010-01-01",
+    "real_split": "2007-01-01"
+  },
+  "synthetic": {
+    "freq": "MS",
+    "measurement_noise": 0.08,
+    "forcing": {
+      "type": "sinusoidal",
+      "amplitude": 0.5,
+      "period": 24,
+      "noise_std": 0.05
+    },
+    "true_params": {
+      "ode_alpha": 0.25,
+      "ode_beta": 0.85,
+      "ode_noise": 0.04
+    }
+  },
+  "thresholds": {
+    "corr_threshold": 0.55,
+    "persistence_window": 6
+  },
+  "execution": {
+    "grid_size": 40,
+    "n_perm": 999,
+    "n_boot": 500,
+    "n_refine": 5000,
+    "n_runs": 15
+  },
+  "abm": {
+    "diffusion": 0.15,
+    "noise": 0.005,
+    "heterogeneity_strength": 0.20,
+    "init_range": 0.4,
+    "forcing_gradient_type": "uniform",
+    "forcing_gradient_strength": 0.3
+  },
+  "calibration": {
+    "param_grid": {
+      "forcing_scale": [0.05, 0.1, 0.15, 0.2, 0.3, 0.5, 0.7, 0.9],
+      "macro_coupling": [0.1, 0.15, 0.2, 0.25, 0.3, 0.4, 0.5],
+      "damping": [0.0, 0.05, 0.1, 0.2, 0.4, 0.6, 0.8, 0.9]
+    },
+    "refinement_clamps": {
+      "damping": [0.0, 0.95],
+      "forcing_scale": [0.001, 0.99],
+      "macro_coupling": [0.0, 0.6]
+    }
+  },
+  "extra_ode_params": {
+    "ode_alpha": 0.25,
+    "ode_beta": 0.85,
+    "forcing_scale": 0.2,
+    "macro_coupling": 0.30
+  },
+  "metadata": {
+    "domain": "perception-action behavioral dynamics",
+    "theoretical_basis": "Fajen y Warren (2003), Warren (2006). Dinámica de heading en locomoción dirigida.",
+    "ode_interpretation": "X = error de heading β = (φ - ψ_g). dX = α(F - β·X) modela atracción a la meta con damping. F representa el flujo óptico exógeno.",
+    "abm_interpretation": "Agentes en grilla 40x40 que ejecutan pasos individuales con biomecánica realista y ruido motor.",
+    "edi_interpretation": "EDI alto indica que el acoplamiento informacional macro (flujo óptico + meta) es necesario para reproducir trayectorias humanas — confirmando control informacional sobre control representacional interno."
+  }
+}

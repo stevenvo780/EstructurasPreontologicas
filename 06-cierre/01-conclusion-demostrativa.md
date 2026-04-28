@@ -2,170 +2,228 @@
 
 ## Función de este capítulo
 
-Este capítulo cierra la tesis con demostración trazable, no con resumen amable. Su tarea es severa: identificar las condiciones bajo las cuales la tesis queda demostrada, verificar que el manuscrito las cumple, nombrar las condiciones de fracaso, y declarar la deuda residual con plazo y entregable. La diferencia con un cierre programático es que aquí se afirma algo verificable, no se promete algo plausible.
+Este capítulo cierra la tesis con demostración trazable y honesta. Su tarea es severa: identificar las condiciones bajo las cuales la tesis queda demostrada, verificar empíricamente que el manuscrito las cumple, nombrar las condiciones de fracaso, declarar la deuda residual con plazo y entregable, **y reportar honestamente los hallazgos negativos del propio aparato**. La diferencia con un cierre programático es que aquí se afirma algo verificable, no se promete algo plausible.
 
 ## Tesis del capítulo
 
-> Bajo el manuscrito corregido, la tesis material-relacional con compresión multiescala queda **demostrada en su régimen de validez declarado** — el caso ancla canónico de behavioral dynamics — bajo los seis criterios articulados en el capítulo 03-02 y la asimetría L1↔B↔L3↔S del capítulo 02-04. Los dominios programáticos (mente, biología, sistemas técnicos, instituciones) constituyen deuda residual con criterios de elevación explícitos. Las condiciones de fracaso global están especificadas y son falsables. La tesis es lo que dice ser: demostración regional con extensión articulada.
+> Bajo el manuscrito consolidado (integración de iteraciones Jacob 2026-02 + Steven 2026-04), la tesis del **irrealismo operativo de estructuras pre-ontológicas** queda **demostrada en cartografía multidominio** sobre 29 casos del corpus EDI con 4 casos `overall_pass=True` (Energía, Deforestación, Kessler, Riesgo Biológico) más 1 strong sin gate (Microplásticos), 7 weak, 2 suggestive, y 3 controles de falsación correctamente rechazados. El caso 30 (behavioral dynamics) construido en esta sesión **no alcanza modo demostrativo** bajo el protocolo EDI estándar (EDI=0.002, p=0.51) y queda **explícitamente como caso programático con criterio de elevación**. Las condiciones de fracaso global están especificadas y son falsables. La tesis es lo que dice ser: demostración regional rigurosa con extensión articulada y dominio de validez honesto.
 
 ## 1. Condiciones de demostración de la tesis
 
-La tesis queda demostrada cuando se cumplen seis condiciones simultáneas. Cada una se verifica con referencia a capítulo y producto específico.
+La tesis queda demostrada cuando se cumplen siete condiciones simultáneas. Cada una se verifica con referencia a capítulo y producto específico.
 
 ### Condición 1. Ontología sin multiplicación de sustancias
 
 **Verificada en**: capítulo 02-01.
 
-**Producto**: ontología material-relacional con cinco modos de realidad (fuerte, estructural, funcional, institucional, teórica) sin postular sustancias separadas. Patrón estabilizado definido técnicamente como atractor empíricamente identificable con cinco condiciones de admisión.
+**Producto**: ontología material-relacional con cinco modos de realidad sin postular sustancias separadas. Estructuras pre-ontológicas definidas técnicamente como atractores empíricamente identificables con cinco condiciones de admisión.
 
-**Test de fallo**: si alguna afirmación ontológica del manuscrito requiere segunda sustancia o dualismo encubierto, la tesis falla en esta condición. Verificación sostenida.
+**Test de fallo**: si alguna afirmación ontológica requiere segunda sustancia o dualismo encubierto, la tesis falla. **Verificación sostenida.**
 
 ### Condición 2. Epistemología con compresiones legítimas verificables
 
 **Verificada en**: capítulos 02-02 y 03-04.
 
-**Producto**: epistemología de la compresión multiescala con definición operativa de κ y ε. Procedimiento empírico de κ vía baja dimensionalidad, con cuatro pruebas de validación obligatorias.
+**Producto**: epistemología de la compresión multiescala con definición operativa de κ vía EDI = 1 - RMSE_coupled / RMSE_no_ode, con cuatro pruebas de validación + protocolo C1-C5.
 
-**Test de fallo**: si una compresión admitida no produce predicción ni intervención discriminante, falla. En el caso ancla canónico, las compresiones pasan las cuatro pruebas con varianza explicada superior al 97%. Verificación sostenida.
+**Test de fallo**: si una compresión admitida no produce predicción discriminante, falla. **Verificación sostenida**: 4 casos con `overall_pass=True` cumplen las 13 condiciones simultáneas.
 
 ### Condición 3. Aparato formal con protocolo empírico
 
 **Verificada en**: capítulo 03-01 con apoyo en 03-02, 03-03 y 03-04.
 
-**Producto**: aparato mínimo de cinco operadores (μ, G, H, κ, ε) y pregunta paramétrica Q con tolerancia. Cada operador con criterio de admisión, criterio de fallo, procedimiento empírico.
+**Producto**: aparato mínimo de cinco operadores (μ, G, H, κ, ε) con instanciación empírica vía pipeline ABM+ODE de 2252 líneas (`hybrid_validator.py`).
 
-**Test de fallo**: si algún operador del aparato no produce ganancia inferencial concreta sobre alguna Q, sobra. En el caso ancla, los cinco operadores se instancian con datos públicos. Verificación sostenida.
+**Test de fallo**: si algún operador no produce ganancia inferencial concreta sobre alguna Q, sobra. **Verificación sostenida**: en los 5 casos strong, los cinco operadores se instancian con datos públicos.
 
 ### Condición 4. Asimetría L1↔B↔L3↔S como protocolo de traducción
 
 **Verificada en**: capítulo 02-04.
 
-**Producto**: cuatro registros articulados con vínculo asimétrico. L1 fija pregunta. B ancla respuesta. L3 reconstruye formalmente. S recoge categorías que sobreviven a auditoría.
+**Producto**: cuatro registros articulados con vínculo asimétrico. Cada parámetro de L3 (ode_alpha, ode_beta, macro_coupling, forcing_scale, etc.) se traduce a variable de B medible.
 
-**Test de fallo**: si algún parámetro de L3 no se traduce a variable de B, hay formalismo desanclado. En el caso ancla canónico, todos los parámetros (b, k_g, k_o, c1, c2, c3, c4 en locomoción; α, β en equilibrio; b en frenado) se traducen a variables biomecánicas, informacionales o de tarea. Verificación sostenida.
+**Test de fallo**: si algún parámetro no se traduce a B, hay formalismo desanclado. **Verificación sostenida** en los 5 casos strong: todos los parámetros corresponden a magnitudes físicas, biológicas o socioeconómicas con contraparte empírica.
 
-### Condición 5. Caso ancla canónico con dossier completo
+### Condición 5. Cartografía multidominio con dossier completo
 
-**Verificada en**: capítulo 05-05.
+**Verificada en**: capítulo 09 (corpus EDI).
 
-**Producto**: behavioral dynamics (Warren 2006, Fajen y Warren 2003, Yilmaz y Warren 1995, Foo et al. 2000, Sternad et al. 2001) con catorce componentes del dossier completos. Predicciones cumplidas con varianzas explicadas 0.980 (locomoción meta), 0.975 (locomoción meta + obstáculo), 0.98 (frenado τ̇ = −0.52). Comparación rival con cinco celdas de discriminación contra modelos internos / control óptimo.
+**Producto**: 29 casos en física, biología, economía, política, tecnología, cultura. Resultados:
 
-**Test de fallo**: si los datos no replican o si un rival publica modelo con mejor ajuste, la tesis pierde su caso ancla. Hasta la fecha del manuscrito, el caso ancla está consolidado en la literatura. Verificación sostenida.
+| Categoría | N | Casos clave |
+|-----------|--:|-------------|
+| Strong (gate completo) | 4 | Energía (0.650), Deforestación (0.602), Kessler (0.353), Riesgo Biológico (0.333) |
+| Strong (sin gate) | 1 | Microplásticos (0.782) |
+| Weak | 7 | Políticas, Postverdad, Urbanización, Fósforo, Wikipedia, Epidemiología, Movilidad |
+| Suggestive | 2 | Finanzas, Salinización |
+| Trend | 4 | Justicia, Starlink, Fuga cerebros, Clima |
+| Null | 8 | Conciencia, Contaminación, Paradigmas, Océanos, Acidificación, Erosión, Acuíferos, IoT |
+| Falsación rechazada | 3 | Exogeneidad, No-estacionariedad, Observabilidad |
+
+**Test de fallo**: si los 4 casos `overall_pass` no replican o son superados por modelos rivales, la tesis pierde su demostración multidominio. **Verificación sostenida** en estado actual del corpus (outputs verificados bit-a-bit).
 
 ### Condición 6. Discriminación pública contra rivales
 
 **Verificada en**: capítulo 04-01.
 
-**Producto**: tabla de discriminación contra catorce posiciones rivales con criterios públicos (A: anclaje, B: multiescalaridad, C: dossier, D: traducibilidad, E: caso ancla, F: alcance). En cada rival, ventaja en al menos dos celdas; en el caso ancla, ventaja en cinco celdas contra modelos internos.
+**Producto**: tabla de discriminación contra catorce posiciones rivales con criterios públicos (incluido Wolfram Physics Project). En cada rival, ventaja en al menos dos celdas; en el caso ancla, ventaja en cinco celdas contra modelos internos.
 
-**Test de fallo**: si algún rival absorbe la tesis sin diferencia discriminante en la tabla, la tesis se reformula. La tabla actual no produce absorción. Verificación sostenida.
+**Test de fallo**: si algún rival absorbe la tesis sin diferencia discriminante, se reformula. La tabla actual no produce absorción. **Verificación sostenida.**
+
+### Condición 7. Honestidad sobre el dominio de validez del aparato
+
+**Verificada en**: caso 30 (behavioral dynamics) y este capítulo.
+
+**Producto**: reconocimiento explícito de que el protocolo EDI tiene dominio de validez (fenómenos macro-temporales). El caso 30 produjo EDI=0.002 (no significativo), siendo rechazado correctamente por el aparato. Esto se documenta como hallazgo del programa, no como fracaso oculto.
+
+**Test de fallo**: si el manuscrito hubiera forzado la admisión del caso 30 (reformulando datos, sondas o criterios para producir EDI alto), la tesis violaría su propio principio de anti-reificación operativa. **Verificación sostenida**: el caso 30 se admite explícitamente como programático con criterio de elevación documentado en `09-simulaciones-edi/30_caso_behavioral_dynamics/README.md`.
 
 ## 2. Condiciones de fracaso global
 
-La tesis falla globalmente, en el sentido del capítulo 01-01 §5, en cuatro escenarios:
+La tesis falla globalmente en cinco escenarios falsables:
 
-### Escenario 1. Caso ancla canónico se desmorona
+### Escenario 1. Los 4 casos `overall_pass` se desmoronan empíricamente
 
-Si los datos de Warren, Fajen y Warren, Yilmaz y Warren, Foo et al., Sternad et al. resultan no replicables o son superados por modelos rivales con mejor ajuste y mejor discriminación, la tesis pierde su modo demostrativo y retrocede a programa filosófico. Reformulación obligatoria.
+Si Energía, Deforestación, Kessler, Riesgo Biológico no replican bajo perfiles de alto rendimiento o son superados por baselines puramente estadísticos (ARIMA, VAR), la tesis pierde su demostración multidominio principal.
 
-### Escenario 2. Imposibilidad de elevación de cualquier dominio programático
+### Escenario 2. Los controles de falsación dejan de rechazarse
 
-Si después de trabajo serio ningún dominio programático puede elevarse a demostrativo (mente, biología, sistemas técnicos, instituciones), la tesis es teoría regional con pretensiones generales injustificadas. Reformulación obligatoria.
+Si los 3 controles de falsación (06, 07, 08) empiezan a producir EDI significativo, el aparato pierde discriminación y la tesis colapsa al instrumentalismo puro.
 
-### Escenario 3. Aparato formal no escala
+### Escenario 3. Aparato no escala más allá de su dominio
 
-Si el procedimiento empírico de κ vía baja dimensionalidad no funciona en dominios donde la dimensionalidad efectiva es genuinamente alta (algunos fenómenos sociales y cognitivos pueden ser candidatos), la tesis admite que su régimen de validez es más estrecho de lo conjeturado. Reformulación obligatoria.
+Si el caso 30 (behavioral dynamics) y otros candidatos en escalas no-macro-temporales no se elevan a demostrativo bajo el protocolo extendido, el dominio de validez de la tesis es regional, no general como aspira.
 
 ### Escenario 4. Asimetría L1↔B↔L3↔S no se sostiene en algún dominio
 
-Si en algún dominio relevante no se logra traducción de L3 a B porque B no es identificable (algunos fenómenos puramente abstractos o normativos podrían ser candidatos), la tesis admite que su programa exige extensión del aparato o reducción del alcance. Reformulación obligatoria.
+Si en algún dominio relevante no se logra traducir L3 a B porque B no es identificable, la tesis admite reducción de alcance.
 
-Cada escenario es falsable. La tesis se compromete con cada uno.
+### Escenario 5. Wolfram (u otro rival) absorbe la tesis sin diferencia discriminante
 
-## 3. Deuda residual
+Si un programa de investigación rival reúne todas las piezas (anclaje + asimetría + dossier + cartografía + falsación) en arquitectura equivalente o superior, la tesis cede prioridad y se reformula.
 
-Lo que el manuscrito no demuestra y reconoce explícitamente como deuda:
+Cada escenario es falsable, fechado y con criterios públicos.
+
+## 3. Hallazgos honestos no triviales del aparato
+
+### 3.1. La paradoja del LoE (Nivel de Evidencia)
+
+Casos con LoE=5 (datos físicos directos, >30 años) no necesariamente alcanzan EDI alto. El Clima (LoE=5, EDI=0.011) muestra que **sondas inadecuadas producen EDI bajos incluso con datos excelentes**. La calidad de la sonda macro es cuello de botella en algunos casos. Implicación: programa multi-sonda como trabajo futuro.
+
+### 3.2. La paradoja del val_steps
+
+Casos con ventanas largas (Epidemiología val_steps=104) producen EDI moderados pero estadísticamente robustos. Casos con ventanas cortas (Riesgo Biológico val_steps=9) pueden producir EDI altos pero requieren cautela inferencial. Starlink con val_steps=1 es exploratorio, no confirmatorio.
+
+### 3.3. La termodinámica manda
+
+Los 4 casos `overall_pass=True` están conectados con dinámicas físicas robustas (Energía, Deforestación, Riesgo Biológico, Kessler). Esto sugiere que **el cierre operativo se detecta más fácilmente cuando hay anclaje termodinámico claro**. Fenómenos puramente sociales o cognitivos requieren extensión metodológica.
+
+### 3.4. El éxito de la falsación
+
+3/3 controles de falsación rechazados. Esto refuta la objeción de tautología: si la ablación fuera trivialmente destructiva, los controles producirían EDI alto, pero no lo hacen. **El aparato discrimina genuinamente**.
+
+### 3.5. El caso 30 como confirmación de la disciplina del aparato
+
+El caso 30 (behavioral dynamics) **fue rechazado por el aparato** (EDI=0.002, no significativo) a pesar de ser construido por el equipo investigador con expectativa de aceptación. Este es el ejemplo más claro de que **el aparato no es máquina de validar deseos**: produce hallazgos que contradicen al investigador cuando los datos no apoyan la conjetura.
+
+## 4. Deuda residual
+
+Lo que el manuscrito no demuestra y reconoce explícitamente como deuda con plazo y entregable:
 
 | Deuda | Descripción | Plazo plausible | Entregable |
 |---|---|---|---|
-| Mente como caso demostrativo | Construir tarea cognitiva con atractores conductuales y discriminación contra cognitivismo simbólico | 12-18 meses de trabajo dedicado | Capítulo 05-01 elevado a demostrativo con dossier completo |
-| Biología como caso demostrativo | Adoptar caso publicado de regime shift ecológico o de regulación fisiológica con bifurcación documentada y construir dossier | 6-12 meses | Capítulo 05-02 elevado |
-| Sistemas técnicos como caso demostrativo | Adoptar trace público de incidente distribuido y construir modelo dinámico con predicción de cascada | 6-9 meses | Capítulo 05-03 elevado |
-| Instituciones como caso demostrativo | Adoptar transición de régimen político o crisis institucional con datos cuantitativos publicados | 12-24 meses | Capítulo 05-04 elevado |
-| Aparato para variables normativas | Desarrollar formalización dinámica de validez, legitimidad, efectividad como propiedades de cuenca de atracción | 18-24 meses | Capítulo metodológico adicional o anexo |
-| Diálogo bibliográfico profundo | Convertir mapa de interlocutores en discusión textual rigurosa por capítulo | Continuo durante redacción final | Bibliografía formal en cada capítulo |
+| Caso 30 elevación a demostrativo | Implementar sonda `behavioral_attractor` (segundo orden), pipeline alta frecuencia, datos humanos reales | 6-12 meses | Caso 30 con EDI > 0.30 y `overall_pass=True` |
+| Programa multi-sonda | Validar 3-5 casos clave con sondas alternativas convergentes | 6-12 meses | Tabla de convergencia multi-sonda |
+| Topologías heterogéneas | Aplicar `topology_generator.py` (scale-free, small-world) a casos relevantes para Nivel 5 | 3-6 meses | Casos con CR > 2.0 verificado |
+| Baselines estadísticos puros | Comparar contra ARIMA, VAR en los 4 casos `overall_pass` | 3-6 meses | Tabla comparativa con discriminación |
+| Aparato para variables normativas | Desarrollo formal de validez/legitimidad como cuenca de atracción | 18-24 meses | Capítulo metodológico adicional + caso institucional con datos cuantitativos |
+| Integración bibliográfica formal | Convertir 49+ fuentes nucleares a citas rigurosas por capítulo | Continuo | Bibliografía formal completa |
+| Programa de convergencia con Wolfram | Aplicar EDI a fenómenos derivados de hypergraph rewriting | 12-18 meses | Caso experimental conjunto |
 
-La deuda no se disimula: se nombra. Cada entregable se documenta en el momento de su completitud y se actualiza el inventario.
-
-## 4. Aporte conceptual sustantivo
+## 5. Aporte conceptual sustantivo
 
 La tesis introduce, articula y opera lo siguiente como aporte propio:
 
-### 4.1. Aporte ontológico
+### 5.1. Aporte ontológico
 
-Reformula entidades como atractores empíricamente identificables de sistemas dinámicos acoplados, no como sustancias simples ni como meras regularidades comprimidas. La definición técnica del patrón estabilizado con cinco condiciones de admisión es propia.
+Reformula entidades como **estructuras pre-ontológicas** — atractores empíricamente identificables de sistemas dinámicos acoplados con cinco condiciones técnicas de admisión. Vocabulario filosóficamente afilado: el "irrealismo operativo" sustituye con precisión al "realismo estructural moderado" sin perder rigor.
 
-### 4.2. Aporte epistemológico
+### 5.2. Aporte epistemológico
 
-Reformula el conocimiento como compresión disciplinada con procedimiento empírico (κ via baja dimensionalidad efectiva). La operacionalización de κ con cuatro pruebas de validación es propia.
+Reformula el conocimiento como compresión disciplinada bajo intervención ablativa, operacionalizada vía EDI con cuatro pruebas de validación + protocolo C1-C5. Verdad como preservación estructural verificable bajo permutación (999) y bootstrap (500).
 
-### 4.3. Aporte metodológico
+### 5.3. Aporte metodológico
 
-Ofrece la auditoría ontológica como protocolo replicable de nueve fases con dossier de anclaje de catorce componentes. La articulación dossier + asimetría L1↔B↔L3↔S es propia.
+Ofrece la auditoría ontológica como protocolo replicable de nueve fases con dossier de catorce componentes, más el pipeline ABM+ODE de 2252 líneas con soporte CPU/GPU, validador canónico, controles de falsación incorporados. Reproducibilidad bit-a-bit con `seed=42`.
 
-### 4.4. Aporte aplicado
+### 5.4. Aporte aplicado
 
-Demuestra que el aparato funciona en behavioral dynamics con discriminación pública contra modelos internos y articula el programa de extensión a cuatro dominios adicionales con criterios explícitos.
+Demuestra que el aparato funciona en cartografía multidominio masiva: 29 casos en física, biología, economía, política, tecnología, cultura, con discriminación pública contra rivales y controles de falsación rechazados. Identifica honestamente el dominio de validez (macro-temporal) y reconoce sus límites (caso 30 behavioral dynamics como programático).
 
-### 4.5. Aporte filosófico de fondo
+### 5.5. Aporte filosófico de fondo
 
-Recupera el realismo estructural moderado en versión disciplinada por anclaje empírico, evitando tanto la inflación ontológica del realismo estructural informativo (estructura sin sustrato) como la pasividad del instrumentalismo.
+Recupera el realismo estructural moderado en versión disciplinada por anclaje empírico explícito, evitando la inflación ontológica del realismo estructural informativo (estructura sin sustrato), la pasividad del instrumentalismo, y la ambición fundacional de Wolfram. Establece el **irrealismo operativo** como tercera vía: ni cosa, ni ficción, sino patrón cuya admisión requiere intervención empírica controlada.
 
-## 5. Lo que la tesis afirma con compromiso
+## 6. Lo que la tesis afirma con compromiso público
 
 | Afirmación | Compromiso | Verificación |
 |---|---|---|
 | La realidad es material y dinámica | Sustrato único | Capítulo 02-01 |
-| Los patrones son atractores empíricamente identificables | Cinco condiciones de admisión | Capítulos 02-01 y 02-04 |
+| Las estructuras pre-ontológicas son atractores empíricos | Cinco condiciones de admisión | Capítulos 02-01 y 02-04 |
 | La emergencia es self-organization | Modelo positivo, no negación | Capítulo 02-04 §4 |
-| La compresión es operación empírica | Procedimiento de baja dimensionalidad | Capítulo 03-04 |
+| La compresión κ se opera vía EDI | Procedimiento ABM+ODE con 13 condiciones | Capítulos 03-04 y 09 |
 | La asimetría L1↔B↔L3↔S es protocolo formal | Traducibilidad obligatoria | Capítulo 02-04 §8 |
-| El caso ancla demuestra el marco | Dossier completo | Capítulo 05-05 |
-| Los rivales se discriminan públicamente | Tabla con celdas | Capítulo 04-01 |
+| El corpus de 29 casos demuestra el marco | 4 casos `overall_pass=True` + 3 falsación rechazada | Capítulo 09 |
+| Los rivales se discriminan públicamente | Tabla con celdas (incluido Wolfram) | Capítulo 04-01 |
+| El aparato tiene dominio de validez declarado | Caso 30 rechazado correctamente | Capítulo 06-01 §3.5 |
 
-## 6. Lo que la tesis no afirma
+## 7. Lo que la tesis no afirma
 
 | Promesa rechazada | Razón |
 |---|---|
-| Ontología total cerrada de toda realidad | El proyecto es articulador, no totalizador |
-| Reducción final de las ciencias a esquema único | El pluralismo controlado lo prohíbe |
+| Ontología total cerrada | Articuladora, no totalizadora |
+| Reducción de las ciencias a esquema único | El pluralismo controlado lo prohíbe |
 | Teoría definitiva de consciencia o normatividad | Cada uno requiere programa específico |
+| El protocolo EDI funciona universalmente | El caso 30 muestra que tiene dominio de validez |
+| Behavioral dynamics como modo demostrativo bajo EDI actual | Programático con criterio de elevación |
 | Predicción de fenómenos sociales individuales | Las leyes de control institucionales son objeto de investigación |
-| Demostración en dominios distintos al caso ancla | Modo programático con criterios de elevación |
 
-## 7. Fórmula final demostrativa
+## 8. Fórmula final demostrativa
 
-> Bajo el aparato corregido — ontología material-relacional sin multiplicación de sustancias, epistemología de la compresión con procedimiento empírico, asimetría L1↔B↔L3↔S como protocolo formal, dossier de anclaje de catorce componentes como filtro de admisión, caso ancla canónico con discriminación pública contra rivales — la tesis material-relacional con compresión multiescala queda demostrada en su régimen de validez declarado. Los dominios programáticos constituyen deuda con criterios explícitos de elevación. Las condiciones de fracaso son falsables. La tesis es lo que dice ser, demuestra lo que dice demostrar, y nombra lo que aún no demuestra.
+> Bajo el aparato consolidado — irrealismo operativo de estructuras pre-ontológicas, asimetría L1↔B↔L3↔S como protocolo formal, dossier de anclaje de catorce componentes, protocolo C1-C5 con 13 condiciones simultáneas, EDI por intervención ablativa con permutación 999 y bootstrap 500, cartografía multidominio sobre 29 casos con 4 `overall_pass=True` y 3 controles de falsación correctamente rechazados, discriminación pública contra catorce rivales (incluido Wolfram), reconocimiento honesto del dominio de validez (caso 30 rechazado correctamente) — la tesis del irrealismo operativo de hiperobjetos / estructuras pre-ontológicas queda **demostrada en su régimen de validez declarado** con extensión articulada y deuda residual fechada.
 
-## 8. Forma corta de la tesis demostrada
+## 9. Forma corta de la tesis demostrada
 
-> Mínima en sustancias, rica en relaciones, controlada en sus recortes, reversible en sus niveles de explicación, anclada en un caso paradigmático trabajado, abierta en su programa de extensión, y verificable contra rivales por discriminación pública.
+> Mínima en sustancias, rica en relaciones, controlada en sus recortes, reversible en sus niveles de explicación, anclada en cartografía empírica multidominio con discriminación pública contra rivales, abierta en su programa de extensión, disciplinada por anti-reificación operativa, y honesta en sus rechazos.
 
-## 9. Lectura cruzada
+## 10. Lectura cruzada
 
 - ontología que la conclusión asume: capítulo 02-01;
 - epistemología: capítulo 02-02;
 - asimetría L1↔B↔L3↔S: capítulo 02-04;
-- aparato formal: capítulo 03-01;
-- criterios y dossier: capítulo 03-02;
-- procedimiento empírico de κ: capítulo 03-04;
-- debates con rivales: capítulo 04-01;
+- aparato formal y EDI: capítulos 03-01, 03-02, 03-04;
+- corpus EDI con 29 casos: capítulo 09;
+- caso 30 behavioral dynamics: `09-simulaciones-edi/30_caso_behavioral_dynamics/README.md`;
+- debates con rivales (incluido Wolfram): capítulo 04-01;
 - limitaciones residuales: capítulo 04-02;
-- caso ancla canónico: capítulo 05-05;
+- caso ancla cualitativo Warren 2006: capítulo 05-05;
 - aplicaciones programáticas: capítulos 05-01 a 05-04;
 - guía de defensa: capítulo 06-02;
-- hoja de ruta: capítulo 06-03.
+- hoja de ruta: capítulo 06-03;
+- bitácora de integración: `Procesos/2026-04-27-integracion-jacob/00-bitacora.md`;
+- resultado del caso 30: `Procesos/2026-04-27-integracion-jacob/01-resultado-caso-30.md`.
 
-## 10. Cierre del cierre
+## 11. Cierre del cierre
 
-La diferencia entre una tesis demostrada y un manifiesto bien escrito es que la tesis demostrada acepta perder y especifica cómo. Este capítulo es el lugar donde la tesis material-relacional acepta perder. No pierde, hasta el momento del manuscrito. Pero acepta los términos de la pérdida posible. Esa es la condición de su victoria local.
+La diferencia entre una tesis demostrada y un manifiesto bien escrito es que la tesis demostrada **acepta perder y especifica cómo**. Este capítulo es el lugar donde la tesis del irrealismo operativo acepta perder. No pierde, hasta el momento del manuscrito. Pero acepta los términos de la pérdida posible:
+
+- si los 4 casos `overall_pass` se desmoronan, perdimos;
+- si los controles de falsación dejan de rechazarse, perdimos;
+- si el caso 30 nunca se eleva tras programa serio, el dominio es regional;
+- si Wolfram (u otro) absorbe la tesis sin diferencia, cedemos prioridad.
+
+Y aún más importante: el caso 30 ya nos enseñó algo decisivo. **El aparato funciona porque rechaza honestamente cuando debe rechazar**. Si hubiéramos forzado el caso 30 a producir EDI alto reformulando datos o sondas, habríamos validado todo y demostrado nada. La tesis del irrealismo operativo se demuestra precisamente por su capacidad de decir no a sus propios autores.
+
+> *El cómputo es potente. Por eso necesita disciplina. Por eso necesita anti-reificación operativa. Por eso necesita, sobre todo, dejar de glorificarse.*
+
+Esa es la condición de la victoria local de esta tesis.

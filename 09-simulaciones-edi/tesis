@@ -1,0 +1,273 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+SCRIPTS="$ROOT/repos/scripts"
+SIM="$ROOT/repos/Simulaciones"
+
+usage() {
+  cat <<'EOF'
+Uso:
+  ./tesis <comando> [flags]
+
+Comandos principales:
+  demo                 Ejecuta el caso Clima (run_demo.sh)
+  run                  Ejecuta simulaciones (auto CPU/GPU)
+  web                  Levanta dashboard web visual de la tesis
+  metrics              Regenera tablas y reportes de métricas
+  audit                Auditoría rápida (sin re-ejecutar casos)
+  audit --deep         Auditoría profunda (re-ejecuta validate.py, perfil seguro por defecto)
+  build                Ensambla TesisFinal/Tesis.md
+  sync                 Sincroniza bloques AUTO con metrics.json
+  scaffold             Crea un nuevo caso desde plantillas
+  hash                 Verifica hashes de outputs vs baseline
+  fetch                Fetcher World Bank (ver flags con --help)
+
+Ejemplos:
+  ./tesis web --reload
+  ./tesis web --host 0.0.0.0 --port 8090
+  ./tesis run --case clima
+  ./tesis run --cpu --case deforest
+  ./tesis run --gpu --grid-mult 2
+  ./tesis audit
+  ./tesis audit --deep --cases 01,16
+  ./tesis metrics
+  ./tesis build
+
+Notas:
+  - run usa GPU si hay nvidia-smi y el contenedor existe; si no, cae a CPU.
+  - audit --deep puede tardar horas (re-ejecuta los 29 casos).
+  - audit --deep usa perfil seguro por defecto (CPU, 1 thread, GPU desactivada).
+    Puedes ajustar con: --cpu-threads N, --allow-gpu o --unsafe.
+EOF
+}
+
+if [[ $# -lt 1 ]]; then
+  usage
+  exit 0
+fi
+
+cmd="$1"; shift || true
+
+case "$cmd" in
+  -h|--help|help)
+    usage
+    ;;
+
+  demo)
+    "$ROOT/run_demo.sh"
+    ;;
+
+  build)
+    python3 "$SCRIPTS/tesis.py" build "$@"
+    ;;
+
+  sync)
+    python3 "$SCRIPTS/tesis.py" sync "$@"
+    ;;
+
+  scaffold)
+    python3 "$SCRIPTS/tesis.py" scaffold "$@"
+    ;;
+
+  metrics)
+    python3 "$SCRIPTS/build/sync_outputs_to_tesis.py"
+    python3 "$SCRIPTS/build/regenerar_readmes.py"
+    python3 "$SCRIPTS/build/evaluar_simulaciones.py" --write
+    python3 "$SCRIPTS/build/actualizar_tablas_002.py"
+    ;;
+
+  web)
+    host="127.0.0.1"
+    port="8080"
+    reload=0
+    args=()
+    while [[ $# -gt 0 ]]; do
+      case "$1" in
+        --host)
+          host="$2"; shift 2 ;;
+        --port)
+          port="$2"; shift 2 ;;
+        --reload)
+          reload=1; shift ;;
+        *)
+          args+=("$1"); shift ;;
+      esac
+    done
+    cmd=(python3 "$ROOT/repos/web_tesis/app.py" --host "$host" --port "$port")
+    [[ $reload -eq 1 ]] && cmd+=(--reload)
+    cmd+=("${args[@]}")
+    "${cmd[@]}"
+    ;;
+
+  hash|replay)
+    python3 "$SCRIPTS/audit/replay_hash.py" --verify
+    ;;
+
+  audit)
+    deep=0
+    quick_args=()
+    deep_args=()
+
+    while [[ $# -gt 0 ]]; do
+      case "$1" in
+        --deep)
+          deep=1
+          shift
+          ;;
+        --cases|--pattern)
+          if [[ $# -lt 2 ]]; then
+            echo "ERROR: falta valor para $1"
+            exit 1
+          fi
+          quick_args+=("$1" "$2")
+          deep_args+=("$1" "$2")
+          shift 2
+          ;;
+        --output)
+          if [[ $# -lt 2 ]]; then
+            echo "ERROR: falta valor para $1"
+            exit 1
+          fi
+          quick_args+=("$1" "$2")
+          shift 2
+          ;;
+        --stdout)
+          quick_args+=("$1")
+          shift
+          ;;
+        --max-cases|--timeout|--json-out)
+          if [[ $# -lt 2 ]]; then
+            echo "ERROR: falta valor para $1"
+            exit 1
+          fi
+          deep_args+=("$1" "$2")
+          shift 2
+          ;;
+        --fail-fast|--no-exec)
+          deep_args+=("$1")
+          shift
+          ;;
+        *)
+          # Compatibilidad futura: flags desconocidos se enrutan a la auditoría profunda.
+          deep_args+=("$1")
+          shift
+          ;;
+      esac
+    done
+
+    python3 "$SCRIPTS/audit/auditar_simulaciones.py" "${quick_args[@]}" || true
+    python3 "$SCRIPTS/audit/_audit_fresh.py" || true
+    python3 "$SCRIPTS/audit/verificar_consistencia.py" || true
+
+    if [[ $deep -eq 1 ]]; then
+      python3 "$SCRIPTS/audit/auditoria_cientifica_profunda.py" "${deep_args[@]}"
+    else
+      has_no_exec=0
+      for arg in "${deep_args[@]}"; do
+        if [[ "$arg" == "--no-exec" ]]; then
+          has_no_exec=1
+          break
+        fi
+      done
+      if [[ $has_no_exec -eq 1 ]]; then
+        python3 "$SCRIPTS/audit/auditoria_cientifica_profunda.py" "${deep_args[@]}"
+      else
+        python3 "$SCRIPTS/audit/auditoria_cientifica_profunda.py" --no-exec "${deep_args[@]}"
+      fi
+    fi
+    ;;
+
+  run)
+    mode="auto"
+    container="tesis-gpu"
+    case_filter=""
+    is_dry_run=0
+    args=()
+
+    while [[ $# -gt 0 ]]; do
+      case "$1" in
+        --cpu) mode="cpu"; shift ;;
+        --gpu)
+          mode="gpu"
+          if [[ $# -ge 2 && "$2" =~ ^[0-9]+$ ]]; then
+            args+=("$1" "$2")
+            shift 2
+          else
+            shift
+          fi
+          ;;
+        --auto) mode="auto"; shift ;;
+        --container)
+          container="$2"
+          args+=("$1" "$2")
+          shift 2
+          ;;
+        --case)
+          case_filter="$2"
+          args+=("$1" "$2")
+          shift 2
+          ;;
+        --dry-run)
+          is_dry_run=1
+          args+=("$1")
+          shift
+          ;;
+        *)
+          args+=("$1")
+          shift
+          ;;
+      esac
+    done
+
+    has_nvidia=0
+    if command -v nvidia-smi >/dev/null 2>&1; then
+      if nvidia-smi -L >/dev/null 2>&1; then
+        has_nvidia=1
+      fi
+    fi
+
+    has_container=0
+    if command -v docker >/dev/null 2>&1; then
+      if docker ps --format '{{.Names}}' | grep -qx "$container"; then
+        has_container=1
+      fi
+    fi
+
+    if [[ "$mode" == "gpu" ]]; then
+      if [[ $has_nvidia -eq 1 && $has_container -eq 1 ]]; then
+        "$SCRIPTS/run/gpu_run.sh" "${args[@]}"
+      else
+        echo "ERROR: GPU requerida pero no disponible (nvidia-smi o contenedor '$container' faltante)."
+        exit 1
+      fi
+    elif [[ "$mode" == "cpu" ]]; then
+      "$SCRIPTS/run/cpu_run.sh" "${args[@]}"
+    else
+      if [[ $has_nvidia -eq 1 && $has_container -eq 1 ]]; then
+        "$SCRIPTS/run/gpu_run.sh" "${args[@]}"
+      else
+        echo "INFO: GPU no disponible, usando CPU."
+        "$SCRIPTS/run/cpu_run.sh" "${args[@]}"
+      fi
+    fi
+
+    # Mantener Simulaciones ↔ TesisDesarrollo coherente tras ejecuciones reales.
+    if [[ $is_dry_run -eq 0 ]]; then
+      sync_args=()
+      [[ -n "$case_filter" ]] && sync_args+=(--case "$case_filter")
+      python3 "$SCRIPTS/build/sync_outputs_to_tesis.py" "${sync_args[@]}" >/dev/null
+    fi
+    ;;
+
+  fetch)
+    python3 "$SIM/worldbank_universal_fetcher.py" "$@"
+    ;;
+
+  *)
+    echo "Comando desconocido: $cmd"
+    usage
+    exit 1
+    ;;
+
+esac

@@ -1,0 +1,8 @@
+numpy
+pandas
+meteostat
+yfinance
+scipy
+requests
+joblib
+pytrends

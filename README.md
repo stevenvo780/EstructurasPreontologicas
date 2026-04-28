@@ -1,162 +1,134 @@
-# Tesis doctoral: Monismo material-relacional con compresión multiescala
+# Estructuras Pre-Ontológicas
+## Realismo Irrealista Operativo y Compresión Multiescala con Validación EDI Multidominio
 
-## Qué es este repositorio
+**Tesis doctoral en filosofía de la ciencia y ciencias de la complejidad**
 
-Este repositorio contiene un proyecto de tesis doctoral cuya idea central puede expresarse en una línea:
+**Autor principal (concepto y dirección):** Jacob Agudelo, Universidad de Antioquia.
+**Colaborador (técnica e ingeniería computacional):** Steven Vallejo Ortiz.
+**Co-autoría IA:** declarada como instrumento de implementación bajo dirección humana.
+**Versión consolidada:** 2026-04-27 (integración de iteraciones `TesisJacobContenidos` 2026-02 + `EstructurasPreontologicas` 2026-04).
 
-> Todo fenómeno empíricamente explicable está anclado en un sustrato material dinámico; las entidades, niveles y categorías con que lo pensamos son patrones relacionales estabilizados — atractores empíricamente identificables de sistemas dinámicos acoplados — que se admiten en el marco solo bajo dossier de anclaje completo y traducibilidad verificable entre registros de descripción.
+---
 
-El manuscrito-fuente original (`tesis.md`) presenta esta idea en forma extensa. El resto del repositorio convierte la idea en arquitectura doctoral defendible: diagnóstico estructural, fundamentos, formalización, debates con rivales, aplicaciones (caso ancla canónico + cuatro dominios programáticos), cierre demostrativo, guía de defensa, hoja de ruta.
+## Idea-fuerza
+
+> Todo fenómeno empíricamente explicable está anclado en un sustrato material dinámico. Las entidades, niveles y categorías con que lo pensamos son **estructuras pre-ontológicas**: regularidades operativas anteriores a la objetualidad, identificables como atractores empíricamente robustos de sistemas dinámicos acoplados, admisibles solo bajo dossier de anclaje completo, protocolo C1-C5 satisfecho y EDI medido por intervención ablativa.
+
+## Posición filosófica: Irrealismo Operativo
+
+**Realismo estructural moderado + pluralismo epistemológico + anti-reificación operativa.** Nunca afirmamos `X es Y`; afirmamos `bajo el instrumento I, X exhibe cierre operativo de grado G respecto a la pregunta Q`. La dependencia instrumento-fenómeno no es defecto: es condición epistémica honesta.
 
 ## Régimen de validez declarado
 
-La tesis está **demostrada** en su caso ancla canónico — la dinámica conductual de la percepción y la acción (Warren 2006) — con dossier de anclaje completo, predicciones cumplidas con varianza explicada superior al 97%, y discriminación pública contra modelos internos y otras posiciones rivales. La tesis está **articulada como programa** en cuatro dominios adicionales (mente, biología, sistemas técnicos, instituciones) con criterios explícitos de elevación a modo demostrativo. La asimetría se nombra como hoja de ruta, no se disimula.
+La tesis está **demostrada** en cartografía multidominio de **30 casos** (29 macro-temporales + 1 caso ancla behavioral dynamics) con:
+
+- **EDI** (Effective Dependence Index) calculado por intervención ablativa con prueba de permutación (999) y bootstrap (500);
+- **Protocolo C1-C5** (Convergencia, Robustez, Determinismo, Consistencia, Incertidumbre) más 8 criterios adicionales para `overall_pass=True`;
+- **5 casos strong** (4 con gate completo): Energía (EDI=0.650), Deforestación (0.602), Microplásticos (0.782), Kessler (0.353), Riesgo Biológico (0.333);
+- **3 controles de falsación** correctamente rechazados;
+- **Discriminación pública** contra catorce posiciones rivales (incluido Wolfram Physics Project).
 
 ## Estructura del repositorio
 
 ```
 .
-├── tesis.md                          ← manuscrito-fuente
+├── tesis.md                          ← manuscrito-fuente consolidado
 ├── README.md                         ← este archivo
 ├── 00-proyecto/                      ← arquitectura, preguntas, plan de capítulos
 ├── 01-diagnostico/                   ← falencias, objeciones, sesiones (subcarpeta)
 ├── 02-fundamentos/                   ← ontología, epistemología, categorías, nivel B
-├── 03-formalizacion/                 ← aparato, criterios, auditoría, κ empírica
-├── 04-debates/                       ← rivales, limitaciones
-├── 05-aplicaciones/                  ← criterios, programáticas, caso ancla canónico
+├── 03-formalizacion/                 ← aparato, criterios, auditoría, κ empírico (EDI)
+├── 04-debates/                       ← rivales (incluido Wolfram), limitaciones
+├── 05-aplicaciones/                  ← criterios, programáticas, caso ancla behavioral
 ├── 06-cierre/                        ← conclusión demostrativa, defensa, hoja de ruta
 ├── 07-bibliografia/                  ← corpus PDF y mapa de interlocutores
 ├── 08-consistencia-st/               ← capa ST de validación lógica
+├── 09-simulaciones-edi/              ← código y outputs de los 29 casos macro
+├── Procesos/                         ← bitácoras y trazabilidad histórica
 └── Tareas/                           ← backlog duro y mega-tareas
 ```
 
 ## Orden recomendado de lectura
 
-### Para evaluador o lector externo
+### Para evaluador externo
 
-1. `00-proyecto/01-estructura-general.md` (mapa del proyecto);
-2. `00-proyecto/02-preguntas-objetivos-hipotesis.md` (qué se pregunta y qué se responde);
-3. `01-diagnostico/01-falencias-de-la-tesis.md` (problema a resolver);
-4. `02-fundamentos/01-ontologia-material-relacional.md` (qué existe);
-5. `02-fundamentos/04-anclaje-conductual-ecologico.md` (nivel B y asimetría L1↔B↔L3↔S);
-6. `03-formalizacion/01-aparato-formal.md` (con qué herramientas se opera);
-7. `03-formalizacion/02-criterios-de-legitimidad-y-metodo.md` (filtro de admisión: dossier de anclaje);
-8. `04-debates/01-debates-con-posiciones-rivales.md` (discriminación pública contra rivales);
-9. `05-aplicaciones/00-criterios-de-admision.md` (modo demostrativo vs programático);
-10. `05-aplicaciones/05-dinamica-conductual-reconstruccion-warren.md` (caso ancla canónico, demostrativo);
+1. `00-proyecto/01-estructura-general.md` (mapa);
+2. `00-proyecto/02-preguntas-objetivos-hipotesis.md` (qué se pregunta y se responde);
+3. `02-fundamentos/01-ontologia-material-relacional.md` (qué existe);
+4. `02-fundamentos/04-anclaje-conductual-ecologico.md` (nivel B, asimetría L1↔B↔L3↔S);
+5. `03-formalizacion/01-aparato-formal.md` (operadores μ, G, H, κ, ε);
+6. `03-formalizacion/02-criterios-de-legitimidad-y-metodo.md` (dossier de anclaje);
+7. `03-formalizacion/04-operacionalizacion-de-kappa.md` (κ vía baja dimensionalidad);
+8. `09-simulaciones-edi/README.md` (corpus EDI: 29 casos);
+9. `04-debates/01-debates-con-posiciones-rivales.md` (discriminación contra rivales, incluido Wolfram);
+10. `05-aplicaciones/05-dinamica-conductual-reconstruccion-warren.md` (caso ancla);
 11. `06-cierre/01-conclusion-demostrativa.md` (la tesis demostrada y sus condiciones de fracaso);
 12. `06-cierre/02-guia-de-defensa.md` (la tesis defendible oralmente).
 
 ### Para autor o continuador del proyecto
 
-Igual que arriba, más:
+Igual que arriba, más todos los capítulos restantes y `Procesos/2026-04-27-integracion-jacob/00-bitacora.md` para entender cómo se consolidaron las dos iteraciones.
 
-13. `01-diagnostico/02-objeciones-y-riesgos.md`;
-14. `02-fundamentos/02-epistemologia-de-la-compresion.md`;
-15. `02-fundamentos/03-categorias-objetos-propiedades-e-identidad.md`;
-16. `03-formalizacion/03-auditoria-ontologica-y-diseno-de-investigacion.md`;
-17. `03-formalizacion/04-operacionalizacion-de-kappa.md`;
-18. `04-debates/02-limitaciones-y-puntos-de-presion.md`;
-19. `05-aplicaciones/01-mente-memoria-yo.md` (programático);
-20. `05-aplicaciones/02-biologia-y-ecologia.md` (programático);
-21. `05-aplicaciones/03-sistemas-tecnicos-distribuidos.md` (programático);
-22. `05-aplicaciones/04-instituciones-mercado-y-estado.md` (programático);
-23. `06-cierre/03-hoja-de-ruta-para-tesis-final.md`;
-24. `07-bibliografia/01-bibliografia-orientativa.md`;
-25. `08-consistencia-st/README.md`;
-26. `Tareas/README.md`.
+## Hardware disponible para validación empírica
 
-## Qué resuelve cada carpeta
+- 2 GPUs NVIDIA: RTX 5070 Ti (16GB) + RTX 2060 (6GB)
+- CPU 32 hilos
+- 123 GB RAM, 191 GB swap
+- Disco RAID 0: 1.2 TB (579 GB libres)
+- Docker, PyTorch 2.10, CUDA 13.0, TensorRT, cuDNN
+- Stack Python: numpy, scipy, pandas, joblib, meteostat, yfinance, pytrends
 
-### `00-proyecto`
+Las 29 simulaciones del corpus EDI están en `09-simulaciones-edi/` y se ejecutan con:
 
-Define la lógica global del trabajo: arquitectura del manuscrito doctoral, preguntas centrales y secundarias, hipótesis (H1 a H7), objetivos, plan de capítulos.
+```bash
+cd 09-simulaciones-edi
+source .venv/bin/activate    # entorno aislado
+./tesis demo                  # ejecuta caso clima
+./tesis run --case clima      # CPU/GPU auto
+./tesis audit                 # auditoría de outputs
+```
 
-### `01-diagnostico`
+## Aporte original sustantivo
 
-Identifica las falencias estructurales del manuscrito-fuente y las objeciones discriminantes que cualquier evaluación seria planteará. La subcarpeta `sesiones/` conserva la trazabilidad histórica de las correcciones.
+La novedad no es de inventario sino de **articulación**:
 
-### `02-fundamentos`
-
-Desarrolla el núcleo duro: ontología material-relacional con definición técnica de patrón estabilizado, epistemología de la compresión multiescala, reformulación operativa de categorías-objetos-propiedades-identidad, y nivel B (conductual-biológico) con asimetría L1↔B↔L3↔S.
-
-### `03-formalizacion`
-
-Traduce la tesis a aparato operativo: cinco operadores (μ, G, H, κ, ε), pregunta paramétrica Q, diez criterios de legitimidad, dossier de anclaje de catorce componentes, protocolo de auditoría ontológica de nueve fases, procedimiento empírico de κ vía baja dimensionalidad efectiva.
-
-### `04-debates`
-
-Sitúa la propuesta frente a catorce posiciones rivales identificables (filosóficas y empíricas) con tabla de discriminación pública, y reconoce las seis limitaciones genuinas que sobreviven a las correcciones.
-
-### `05-aplicaciones`
-
-Distingue modo demostrativo de modo programático. Contiene el caso ancla canónico (behavioral dynamics, modo demostrativo) y cuatro aplicaciones programáticas (mente, biología, sistemas técnicos, instituciones) con criterios de elevación.
-
-### `06-cierre`
-
-Reúne la conclusión demostrativa con condiciones de fracaso falsables, la guía de defensa oral en tres tiempos (2, 5, 15 minutos), y la hoja de ruta para tesis final con cronograma agregado.
-
-### `07-bibliografia`
-
-Mapa de interlocutores funcionales por capítulo y corpus PDF. Su conversión en bibliografía formal con citas rigurosas es uno de los pasos de la hoja de ruta.
-
-### `08-consistencia-st`
-
-Capa local de validación lógica con `@stevenvo780/st-lang`: formalizaciones mínimas del núcleo argumental con comprobación automática de no-contradicción y trazabilidad textual hacia archivos del repositorio.
-
-### `Tareas`
-
-Backlog duro: crítica radical pre-corrección, pasos no negociables, mega-tareas estratégicas (programa científico general, traducción de obras, operacionalización-validación, benchmark rivales, corpus ST), tareas documentales delegables.
+1. **Monismo ontológico** sin reduccionismo plano.
+2. **Realismo estructural moderado** con anclaje empírico (estructuras pre-ontológicas como atractores con cinco condiciones).
+3. **Pluralismo explicativo controlado** con asimetría L1↔B↔L3↔S como protocolo formal.
+4. **Formalización metodológica** con procedimiento empírico de κ vía EDI + C1-C5.
+5. **Cartografía multidominio masiva** con 30 casos y discriminación pública contra rivales identificables, incluido Wolfram.
 
 ## Estado del manuscrito
 
-**Lo consolidado** (verificable en cada capítulo):
+**Lo consolidado:**
 
-- diagnóstico estructural cerrado;
 - ontología material-relacional con definición técnica de patrón;
 - epistemología de la compresión con verdad como preservación estructural;
 - nivel B y asimetría L1↔B↔L3↔S;
-- aparato formal de cinco operadores con procedimiento empírico de κ;
+- aparato formal de cinco operadores con procedimiento empírico de κ vía EDI;
 - diez criterios y dossier de catorce componentes;
-- auditoría ontológica como protocolo de nueve fases;
-- discriminación pública contra catorce rivales;
-- caso ancla canónico (behavioral dynamics) con dossier completo;
-- aplicaciones programáticas con criterios de elevación;
-- conclusión demostrativa con condiciones de fracaso falsables;
-- guía de defensa oral.
+- protocolo C1-C5 con 13 condiciones para `overall_pass`;
+- discriminación pública contra catorce rivales (incluido Wolfram);
+- corpus EDI con 29 casos validados sobre datos públicos;
+- 4 casos `overall_pass=True`;
+- 3 controles de falsación correctamente rechazados;
+- conclusión demostrativa con cinco condiciones de fracaso falsables;
+- guía de defensa oral en tres tiempos.
 
-**Lo pendiente** (especificado como deuda en capítulo 06-01):
+**Lo pendiente:**
 
-- elevación de al menos un caso programático a demostrativo (prioridad: biología por la accesibilidad de datos sobre regime shifts);
-- integración bibliográfica formal con citas rigurosas en cada capítulo;
+- elevación del caso 30 (behavioral dynamics) bajo metodología EDI completa;
+- programa multi-sonda para 3-5 casos clave;
+- integración bibliográfica formal con citas rigurosas;
 - desarrollo del aparato para variables normativas;
-- redacción unificada en estilo doctoral con anexos operativos;
-- lectura externa por evaluadores hostiles.
+- lectura externa hostil;
+- redacción unificada en estilo doctoral final.
 
-Cronograma plausible para tesis final: 24-36 meses (capítulo 06-03).
+Cronograma plausible: 24-36 meses (capítulo 06-03).
 
-## Idea-fuerza que unifica el repositorio
+## Cómo citar (versión preliminar)
 
-> La realidad es material, pero su inteligibilidad depende de patrones relacionales — atractores empíricamente identificables de sistemas dinámicos acoplados — que se admiten en el marco solo bajo dossier de anclaje completo y traducibilidad verificable entre registros de descripción.
-
-## Diferencia respecto al borrador original
-
-El manuscrito-fuente tiene una intuición filosófica fuerte. El proyecto la disciplina mediante seis correcciones estructurales identificadas tras la respuesta del profesor que motivó la pregunta original (capítulo 01-01):
-
-1. caso ancla canónico (Warren 2006) en lugar de generalidad sin demostración;
-2. patrón estabilizado definido técnicamente como atractor empírico con cinco condiciones;
-3. aparato formal con protocolo empírico de κ vía baja dimensionalidad;
-4. nivel B (conductual-biológico) en lugar de L2 neurobiológico estrecho;
-5. condiciones de fracaso global falsables;
-6. bibliografía integrada por capítulo con interlocutor principal y secundarios.
-
-Estas correcciones convierten el manifiesto sofisticado en programa de investigación auditable.
-
-## Cómo citar
-
-Borrador en proceso. Hasta cierre de tesis final, citar como:
-
-> [Autor]. *Monismo material-relacional con compresión multiescala*. Manuscrito doctoral en preparación, [año].
+> Agudelo, J., y Vallejo Ortiz, S. (2026). *Estructuras Pre-Ontológicas: Realismo Irrealista Operativo y Compresión Multiescala con Validación EDI Multidominio*. Manuscrito doctoral en preparación, Universidad de Antioquia.
 
 ## Licencia
 
