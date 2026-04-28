@@ -48,6 +48,25 @@ Superficies, objetos, fuerzas físicas (gravedad, fricción, restitución), prop
 
 ### 2.3. Información ecológica
 
+#### 2.3.0. Definición filosófica de información (V5-11)
+
+Antes de listar los ejemplos, fijamos qué entiende por información la tesis. La tesis adopta una **definición material-relacional de información** que combina dos tradiciones:
+
+- **Bateson** (1972, *Steps to an Ecology of Mind*, p. 459): *"a difference which makes a difference"*. La información es **diferencia que produce diferencia** en la dinámica del sistema receptor.
+- **Dretske** (1981, *Knowledge and the Flow of Information*, cap. 3, p. 63): la información semántica es **correlación nómica** entre estados de la fuente y estados del receptor que sostiene inferencia confiable.
+
+**Síntesis de la tesis:** la **información es diferencia materialmente realizada** en el entorno (no en la mente del observador) que **modula la dinámica** del sistema acoplado cuando es detectada por sistemas perceptivos calibrados. No es entidad mental ni representación abstracta; es **propiedad estructural del sustrato material** que el organismo aprovecha sin necesidad de representarla internamente.
+
+**Distinción operativa:**
+
+- **información sintáctica** (Shannon): reducción de incertidumbre estadística;
+- **información semántica** (Dretske, Floridi): correlación con contenido inferencial;
+- **información ecológica** (Gibson, Bateson + tesis): diferencia materialmente realizada que modula dinámica acoplada **sin requerir representación interna**.
+
+La tesis usa principalmente **información ecológica**: τ, ρ, flujo óptico no son representaciones en la mente, son patrones del entorno que modulan la dinámica del sistema acoplado.
+
+#### 2.3.1. Ejemplos canónicos verificados en el caso ancla
+
 Patrones detectables del flujo óptico, acústico y háptico que estructuran el entorno. Ejemplos canónicos verificados en el caso ancla:
 
 - `τ`: razón entre tamaño angular óptico y su tasa de cambio; especifica tiempo hasta contacto;

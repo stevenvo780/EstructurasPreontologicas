@@ -4,6 +4,72 @@
 
 Este capítulo fija el suelo ontológico de la tesis: qué cuenta como existente, qué cuenta como entidad, qué cuenta como propiedad y qué se rechaza como inflación. Lo hace sin retórica de mobiliario y sin proliferación de planos. Su criterio rector es brutal: solo entra lo que el aparato del manuscrito puede luego operar y validar. Cualquier afirmación ontológica que no produzca consecuencia operacional en los capítulos siguientes se trata como literatura y se elimina.
 
+## 0. Pregunta filosófica fundamental (V5-00)
+
+> **¿Qué hay que hay, y cómo lo conocemos sin reificarlo prematuramente?**
+
+Esta es la pregunta filosófica que motiva la tesis. La pregunta tiene dos polos inseparables: el ontológico (*qué hay*) y el epistemológico (*cómo conocemos*), ligados por la advertencia metodológica (*sin reificar*). Reificar es, en este marco, otorgar estatus de sustancia o esencia a lo que es patrón material-relacional. La tesis se construye contra dos errores complementarios: (a) duplicar mobiliario ontológico inflando categorías sin anclaje material, y (b) reducir lo real a sus componentes mínimos sin reconocer la realidad de los patrones que los integran.
+
+La tesis responde: **lo que hay son patrones materialmente sostenidos en un sustrato dinámico**, identificables como atractores empíricos de sistemas acoplados; lo conocemos comprimiendo dependencias decisivas bajo intervención ablativa; el filtro contra reificación es el dossier de admisión de catorce componentes. Esto no es la única respuesta posible (el dualismo, el idealismo, el panpsiquismo y el operacionalismo puro responden distinto); es la respuesta que la tesis defiende y que el corpus inter-dominio + inter-escala respalda operativamente.
+
+## 0.1. Naturalismo metafísico moderado como compromiso de partida (V5-07)
+
+La tesis adopta **naturalismo metafísico moderado** como **compromiso de partida explícitamente declarado**, no como conclusión demostrada. Esto significa:
+
+1. el sustrato material dinámico se asume como punto de partida; **no se demuestra**, se compromete;
+2. el compromiso se justifica por tres razones operativas: (a) **continuidad con la ciencia** (ninguna disciplina científica madura opera sin compromiso material implícito); (b) **parsimonia ontológica** (no se postulan sustancias separadas sin necesidad operativa); (c) **capacidad operativa del aparato** (el aparato EDI, el dossier, la suite ST funcionan bajo este compromiso);
+3. el compromiso se valida operativamente **a posteriori**, por el éxito del marco articulado bajo este compromiso. Si el marco fallara estructuralmente, el compromiso de partida se replantearía.
+
+**Reconocimiento honesto:** lo anterior NO es demostración del naturalismo metafísico. Es compromiso filosófico que se asume con conciencia de que tiene alternativas legítimas en la tradición:
+
+| Alternativa rechazada | Por qué la tesis no la asume |
+|---|---|
+| **Dualismo cartesiano** | Postula segunda sustancia (*res cogitans*) sin ganancia operativa y con problema de interacción no resuelto |
+| **Idealismo metafísico** (Berkeley, Hegel) | Inverte la prioridad: la materia se vuelve apariencia del espíritu/Idea; pierde anclaje empírico operativo |
+| **Emanacionismo neoplatónico** | Postula Uno trascendente del cual emana la materia; entidad postulada sin acceso operativo |
+| **Creacionismo metafísico** | Compromete con sujeto creador; compromiso teológico que rebasa la ontología filosófica |
+| **Panpsiquismo** (Strawson, Chalmers) | Atribuye experiencia a partículas elementales; carece de filtro operativo de admisión y multiplica propiedades sin necesidad del aparato |
+| **Pluralismo de planos sustanciales** | Multiplica niveles ontológicos como sustancias; viola parsimonia |
+
+El compromiso por naturalismo no es **arbitrario**: es la elección que hace la tesis viable como programa de investigación articulado con disciplinas científicas existentes. La tesis declara esto abiertamente para evitar la objeción de petición de principio.
+
+## 0.2. En qué sentido las estructuras son **pre-ontológicas** (V5-01)
+
+El título de la tesis es *Estructuras Pre-Ontológicas*. El término "pre-ontológico" es técnico y exige aclaración filosófica. Distinguimos cinco sentidos posibles del prefijo "pre"; la tesis adopta una **combinación específica de dos** y rechaza los otros tres:
+
+### 0.2.1. Sentidos rechazados
+
+- **"Pre" temporal puro:** *"anterior en el tiempo cósmico a la constitución del objeto"*. La tesis NO usa este sentido. Las estructuras pre-ontológicas no son anteriores temporalmente; son **anteriores en orden de constitución** a la objetualidad nominal.
+- **"Pre" trascendental kantiano puro:** *"condición de posibilidad pura de cualquier objeto"*. La tesis NO usa este sentido. Las estructuras pre-ontológicas son **materialmente realizadas**, no condiciones puras del entendimiento.
+- **"Pre" fenomenológico puro:** *"dato dado antes del juicio constitutivo"*. La tesis NO usa este sentido. La tesis no asume primacía de la conciencia sobre el sustrato material.
+
+### 0.2.2. Sentidos adoptados
+
+- **"Pre" genético (Simondon):** las estructuras pre-ontológicas son **lo pre-individual**, lo metaestable que **genera** lo individual. Simondon (1958, *L'individuation à la lumière des notions de forme et d'information*, p. 24): *"il y a quelque chose qui est avant l'individu, quelque chose qui n'est pas encore un être individué [...] que nous appellerons le préindividuel"*. La tesis traduce: el atractor empírico es **precipitación de lo pre-individual** (sustrato material dinámico bajo restricciones de acoplamiento) en patrón identificable. No es objeto sustancial; es patrón en proceso de individuación continua.
+- **"Pre" epistemológico-operacional:** las estructuras pre-ontológicas son **anteriores al recorte categorial**. Antes de que las nombremos como "esto es X", ya operan como atractores en el sistema acoplado. La nominalización categorial viene **después**: es compresión semántica del patrón ya operativo. En este sentido, "pre-ontológico" significa **anterior a la objetualidad nominalizada, no anterior a la realidad material**.
+
+### 0.2.3. Síntesis: definición técnica de "pre-ontológico"
+
+> **Una estructura es pre-ontológica si y solo si:** (a) es regularidad operativa **materialmente sostenida** en un sustrato dinámico (no es entidad mental ni nominal); (b) es **previa al recorte categorial** que la nombra (opera antes de ser objetualizada); (c) es **génesis de lo individuado** (precipita en patrón identificable cuando las restricciones del acoplamiento la concentran); y (d) es **operativamente identificable** como atractor empírico bajo el aparato EDI con cinco condiciones de admisión.
+
+Las estructuras pre-ontológicas, en este sentido, **no son entidades fundacionales** (Wolfram lo postularía así); **no son objetos sustanciales** (la metafísica clásica lo postularía así); **no son construcciones nominales** (el constructivismo arbitrario lo postularía así). Son **patrones operativos en estado de individuación continua** que el aparato del manuscrito identifica con criterio público.
+
+### 0.2.4. Por qué este término es preferible a sus alternativas
+
+- *"Estructuras dinámicas"* es demasiado genérico (cualquier sistema dinámico tiene estructuras dinámicas);
+- *"Estructuras operativas"* pierde el énfasis en la genealogía (el atractor no es sólo operativo: es operativo porque se constituye genéticamente);
+- *"Patrones materialmente sostenidos"* es la noción técnica equivalente que se usa en cap 02-01 §2; *"estructura pre-ontológica"* es la noción ontológica que la nombra a nivel filosófico.
+
+El término *pre-ontológico*, así definido, **es coherente con Simondon, compatible con Bunge sistemista, y articulable con realismo estructural moderado**. Es la categoría ontológica central de la tesis.
+
+## 0.3. Diálogo con la tradición filosófica latinoamericana e institucional (V5-13)
+
+Para tesis depositada en la Universidad de Antioquia, el diálogo con la tradición filosófica institucional es deuda académica reconocida:
+
+- **Bunge** (Argentina-Canadá) es el interlocutor principal del sistemismo (cap 02-01 §1.3, cap 03-02, cap 03-03 con citas textuales);
+- **Hoyos Vásquez** (1935-2013, Universidad de Antioquia) representa la tradición hermenéutica colombiana. Hoyos articuló en *Borradores para una fenomenología* (1996) la pregunta por el sentido como pregunta hermenéutica de la ciencia. La tesis recoge esto parcialmente en su distinción entre L1 (lenguaje del sentido ordinario/disciplinar) y B (anclaje empírico): el sentido no se elimina, se traduce vía protocolo formal, lo cual es congruente con el espíritu hermenéutico hoyosiano de no reducir la comprensión a explicación;
+- **Salas Echeverri** (Universidad de Antioquia, filosofía analítica) representa la tradición analítica institucional. La metodología del aparato formal (cap 03-01) responde al espíritu analítico de exigir criterios públicos de admisión.
+
 ## Tesis del capítulo
 
 > Existe un solo plano ontológico básico — sustrato material dinámico — sobre el cual se constituyen patrones estabilizados (atractores empíricos de sistemas dinámicos acoplados) que cuentan como entidades reales en sentido moderado, **a través de escalas físicas, biológicas y cosmológicas**. Las propiedades son disposiciones relacionales del sistema; la identidad es continuidad organizada bajo transformación; los niveles son registros descriptivos del mismo plano, no mundos separados. La ontología no multiplica sustancias y, simultáneamente, no empobrece la organización: es austera en sustancia y rica en relación, condicionada en cada paso por traducibilidad al nivel conductual-biológico (B) y por validación empírica multiescalar.
@@ -260,6 +326,43 @@ Simondon ofrece la individuación como génesis: los individuos no preexisten al
 ## 12. Fórmula ontológica de cierre
 
 > Existe un solo plano material dinámico. Sus estabilizaciones son atractores empíricamente identificables de sistemas acoplados. Las entidades, propiedades, identidades y niveles son modos de describir esas estabilizaciones bajo régimen de medición y pregunta explícita. La ontología no multiplica sustancias y no empobrece la organización: opera bajo el doble criterio de austeridad de sustancia y riqueza de relación, con admisión condicionada por traducibilidad al nivel B y por validación empírica.
+
+## 12bis. La cuestión del observador en escala cuántica (V5-12)
+
+La generalidad multiescalar de la tesis llega hasta la escala cuántica (caso 31 decoherencia, caso 32 espín-órbita). En escala cuántica, la cuestión del observador es problema ontológico fundamental desde Copenhagen: ¿la medición colapsa el estado, o el estado siempre fue determinado, o todas las ramas se realizan?
+
+### 12bis.1. Postura: realismo estructural compatible con interpretaciones realistas
+
+La tesis adopta postura **explícita** sobre la mecánica cuántica: rechaza la **interpretación Copenhagen instrumentalista pura** (estado cuántico solo describe conocimiento del observador) y declara compatibilidad con **interpretaciones realistas**:
+
+- **Many-worlds** (Everett 1957, DeWitt 1970): todas las ramas se realizan; el observador es subsistema dentro de la rama;
+- **Bohmiana** (de Broglie-Bohm): hay variables ocultas reales (posiciones de partículas) que evolucionan deterministamente;
+- **GRW / colapso objetivo** (Ghirardi-Rimini-Weber 1986): el colapso es proceso físico real, no efecto del observador;
+- **Decoherencia ambiental** (Zurek 2003): la medición efectiva emerge del acoplamiento al ambiente, no del observador consciente.
+
+La tesis NO decide entre estas interpretaciones realistas — esa decisión rebasa el alcance del manuscrito. **Pero sí rechaza Copenhagen instrumentalista pura** porque:
+
+1. Copenhagen instrumentalista hace al observador consciente parte del aparato físico, lo cual viola el monismo material de la tesis;
+2. la tesis afirma que la materialidad es real independientemente del observador (cap 02-01 §0.1 naturalismo);
+3. el caso 31 (decoherencia) opera dentro de **decoherencia ambiental**, que es la interpretación realista más conservadora compatible con experimentos actuales.
+
+### 12bis.2. Implicación
+
+La afirmación "estructuras pre-ontológicas a escala cuántica" tiene sentido **bajo interpretación realista** de la mecánica cuántica. Bajo Copenhagen pura, las "estructuras" serían artefacto del acto de medición, lo cual sería incompatible con la tesis. Por eso la tesis se compromete con la familia realista, sin decidir entre sus miembros.
+
+## 12ter. Diálogo con manuscrito-fuente original (V5-16)
+
+`Bitacora/2026-04-27-integracion-jacob/00-tesis-fuente-original.md` es la formulación intuitiva de partida. `Bitacora/.../04-evolucion-conceptual.md` documenta la evolución conceptual hacia la versión canónica. Los claims principales del manuscrito-fuente que **sobreviven íntegramente** en esta versión son:
+
+- monismo material-dinámico (cap 02-01 §1);
+- estructuras pre-ontológicas como atractores (cap 02-01 §2);
+- compresión disciplinada como epistemología (cap 02-02);
+- asimetría L1↔B↔L3↔S (cap 02-04 §8);
+- emergencia como self-organization (cap 02-04 §4);
+- dossier de admisión (cap 03-02);
+- "X exhibe cierre operativo bajo I respecto a Q" como fórmula (cap 02-01).
+
+Los claims que **fueron refinados o atenuados** se documentan en `04-evolucion-conceptual.md`: caso 30 con circularidad reconocida; corpus post-hoc; AUC-ROC interno no externo; κ-pragmática vs κ-ontológica distinguidas; sistema modal T explícito; asimetría como FOL existencial. La continuidad conceptual entre fuente y versión canónica es **fuerte**; la honestidad metodológica es **mayor en la versión canónica**.
 
 ## 13. Lectura cruzada
 

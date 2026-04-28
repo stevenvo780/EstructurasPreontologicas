@@ -1,5 +1,31 @@
 # Biología y ecología
 
+## 0. Qué es vida en esta ontología (V5-14)
+
+Antes de tratar biología y ecología como dominios programáticos, fijamos lo que la tesis afirma sobre **vida** como categoría ontológica. La pregunta de Schrödinger (1944, *¿Qué es la vida?*) — ¿qué hace que una entidad sea viva? — recibe en la tesis respuesta articulada:
+
+### 0.1. Postura: vida como atractor autopoiético material
+
+Una entidad **viva** es un **atractor autopoiético materialmente sostenido** que cumple cinco condiciones:
+
+1. **cierre operacional**: el sistema produce los componentes que lo constituyen (Maturana-Varela 1980, *Autopoiesis and Cognition*, p. 79);
+2. **acoplamiento estructural**: mantiene su organización bajo perturbación del entorno con tolerancia identificable (cap 02-04 §3);
+3. **metabolismo material**: intercambia materia y energía con el entorno preservando su forma (Schrödinger 1944, p. 76: la vida se mantiene "negentropía");
+4. **reproducción** (en sentido amplio: replicación, división, transmisión de información estructural): el patrón se transmite a nuevos sustratos;
+5. **historia evolutiva**: la organización tiene origen en linajes con descendencia con modificación.
+
+Las cinco condiciones **se traducen al aparato**: cierre operacional = atractor con cuenca persistente bajo perturbación; metabolismo = acoplamiento dinámico abierto; reproducción = transmisión de variables que el aparato puede modelar; historia = entrada de variables históricas en B.
+
+### 0.2. Diálogo
+
+- **Maturana-Varela** (1980, p. 78): la autopoiesis es *"el cierre operacional que define la organización viva"*. La tesis recoge directamente.
+- **Kauffman** (1993, *The Origins of Order*, cap. 7): la vida emerge en redes autocatalíticas con propiedades de orden espontáneo. Compatible con la tesis: las redes autocatalíticas son atractores en el sustrato químico-material.
+- **Margulis** (1998, *Symbiotic Planet*): la vida es esencialmente simbiótica. La tesis recoge: el "agente" en B (cap 02-04) es típicamente sistema acoplado de subsistemas, no entidad aislada.
+
+### 0.3. Implicación
+
+La distinción vivo/no-vivo NO es ontológicamente abrupta — hay gradientes (virus, viroides, priones). La tesis afirma que **el aparato puede operar a lo largo del gradiente** detectando cierre operativo donde lo haya. Casos del corpus inter-escala (33 Villin, 34 MM, 35 ciclo celular, 36 NF-κB) operan en este gradiente: instancian biología sin necesidad de definir vida como esencia separada.
+
 ## MODO PROGRAMÁTICO
 
 Aplicación en **modo programático** según el capítulo 05-00. Articula una conjetura de aplicación del marco a fenómenos biológicos y ecológicos, con criterios de elevación. No demuestra.

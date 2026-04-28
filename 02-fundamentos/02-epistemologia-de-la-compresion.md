@@ -66,7 +66,46 @@ Estas condiciones no son retóricas. Tienen procedimiento empírico fijado en el
 - en sistemas técnicos distribuidos, la compresión de procesos, redes, certificados, balanceadores en `el servicio` es legítima cuando la pregunta es disponibilidad global; deja de serlo cuando la pregunta es diagnóstico de caída;
 - en biología, comprimir cientos de moléculas en `célula` es legítimo cuando la pregunta es tisular; deja de serlo cuando la pregunta es metabólica fina.
 
-### 3.4. Diálogo con interlocutores principales
+### 3.5. Lenguaje, significado y representación (V5-05)
+
+Una epistemología de la compresión exige postura sobre **qué relación tienen las representaciones (sondas, modelos, categorías) con lo que representan**. La tesis articula:
+
+#### 3.5.1. Inferencialismo brandomiano matizado
+
+La tesis adopta **inferencialismo brandomiano matizado** como teoría del significado: el significado de un término es su **rol inferencial** dentro de prácticas materiales sostenidas. Brandom (1994, *Making it Explicit*, cap. 3, p. 89) lo articula: *"to grasp the meaning of an expression is to grasp its role in inference"*.
+
+**Implicación para la tesis:**
+
+- el significado de "atractor", "cierre operativo κ", "estructura pre-ontológica" se constituye por **rol inferencial dentro del aparato y del corpus**;
+- no hay significado independiente del uso (Wittgenstein 1953, *Investigaciones filosóficas* §43, p. 18e: *"el significado de una palabra es su uso en el lenguaje"*);
+- pero el uso está **materialmente sostenido** (Brandom + materialismo de la tesis): no es uso lingüístico flotante, es práctica con cuerpos, instrumentos, datos.
+
+#### 3.5.2. Compresión sintáctica vs semántica
+
+Distinción técnica importante:
+
+- **compresión sintáctica:** preserva estructura formal (variables, ecuaciones, dependencias) sin atender al significado;
+- **compresión semántica:** preserva además **rol inferencial** dentro de la práctica disciplinar.
+
+La compresión κ del aparato EDI es **principalmente sintáctica** (preserva dependencias dinámicas verificables por intervención ablativa) pero **se vuelve semántica cuando la sonda se elige por su rol teórico en la disciplina** (Lotka-Volterra para Energía no es ecuación cualquiera; es estructura con significado disciplinar específico).
+
+Esto resuelve la objeción "¿la compresión es semántica o solo sintáctica?": **es ambas, en niveles diferentes**. La operación matemática es sintáctica; la elección de la sonda y su interpretación es semántica.
+
+#### 3.5.3. La sonda como representación
+
+¿Qué es una sonda ODE en relación con el fenómeno que describe? La tesis adopta **realismo estructural representacional**:
+
+- la sonda **NO es copia** del fenómeno (no es isomorfismo);
+- la sonda **NO es ficción útil sin referencia** (no es ficcionalismo);
+- la sonda es **homomorfismo parcial**: preserva las **dependencias decisivas** del fenómeno bajo la pregunta `Q` con tolerancia explícita.
+
+Esto se alinea con **Sellars** (1956, *Empiricism and the Philosophy of Mind*, §41): la representación es **inferencial-funcional**, no pictórica. Y con Pearl: el modelo causal es **estructura mínima suficiente** para responder a intervenciones, no copia exhaustiva.
+
+#### 3.5.4. Por qué la sustitución nominal es prohibida
+
+Cap 02-04 §8.0 prohíbe la sustitución nominal (decir "X es Y" cuando solo se quiere decir "X exhibe cierre operativo bajo I respecto a Q"). El fundamento filosófico de la prohibición es ahora explícito: **la sustitución nominal viola el rol inferencial** del término. Decir "el yo es atractor cerebral" sin pasar por la traducción L1↔B↔L3↔S asume rol inferencial del aparato científico para el término "yo" sin haberlo justificado en práctica.
+
+### 3.6. Diálogo con interlocutores principales
 
 **Cartwright.** En *How the Laws of Physics Lie* (1983, cap. 2, p. 53), Cartwright sostiene que las leyes científicas son *"ceteris paribus laws"* que no describen la realidad bruta sino *"that things behave as if those laws were true"*. La compresión κ de la tesis incorpora esta intuición pero la operacionaliza: el "como si" de Cartwright se convierte en condición empírica medible (las cuatro condiciones de §3.2). Donde Cartwright deja la operacionalización en el éxito explicativo intuitivo, la tesis exige EDI con permutación 999 + bootstrap 500 + protocolo C1-C5 (cap 03-04).
 

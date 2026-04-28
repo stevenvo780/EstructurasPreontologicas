@@ -284,6 +284,31 @@ Si el formalismo se usa para mucho más, sobreactúa. La cláusula:
 
 > El aparato formal mínimo consiste en una pregunta paramétrica Q y cinco operadores (μ, G, H, κ, ε) con criterios de admisión, criterios de fallo y procedimientos empíricos de aplicación. Los operadores no son ontología adicional: son disciplina de la inteligibilidad de la ontología material-relacional sobre fenómenos empíricamente accesibles. Su valor se prueba en el caso ancla canónico (capítulo 05-05); su programa de extensión se especifica en los capítulos de aplicaciones.
 
+## 15. Estatus ontológico de las entidades matemáticas (V5-08)
+
+La tesis usa hipergrafos, ODE, dinámica no-lineal, bootstrap, permutación. ¿Qué estatus ontológico tienen las entidades matemáticas en el marco material-relacional?
+
+### 15.1. Estructuralismo matemático moderado
+
+La tesis adopta **estructuralismo matemático moderado** como postura de partida:
+
+- las **estructuras matemáticas** (hipergrafos, ecuaciones diferenciales, espacios de fase) son **representaciones formales de patrones reales del sustrato**;
+- NO son **entidades platónicas independientes** (rechazado por incompatible con el monismo material de la tesis);
+- NO son **ficciones útiles sin referencia** (rechazado por incompatible con el realismo moderado);
+- son **representaciones cuya validez depende de homomorfismo parcial** con la dinámica material que describen.
+
+### 15.2. Diálogo
+
+- **Shapiro** (1997, *Philosophy of Mathematics: Structure and Ontology*, cap. 3, p. 85): *"mathematics is the science of structures"*. La tesis recoge esta caracterización en su versión moderada: la matemática describe estructuras, pero las estructuras son **estructuras de algo material**, no flotantes.
+- **Hellman** (1989, *Mathematics without Numbers*) defiende estructuralismo modal sin compromiso ontológico con números. La tesis se alinea: lo importante es la **estructura**, no la entidad numérica.
+- **Maddy** (1990, *Realism in Mathematics*) defiende empirismo matemático. La tesis es compatible: las estructuras matemáticas se validan **por su éxito en capturar dependencias materiales** verificables por intervención.
+
+### 15.3. Implicación para κ
+
+Si las **estructuras pre-ontológicas son atractores** y los atractores son **objetos matemáticos definidos sobre espacios de fase**, ¿qué tan real es la matemática en la ontología?
+
+**Respuesta:** la matemática es **real en sentido representacional moderado**: es la herramienta formal que captura las dependencias del sustrato material. Los atractores existen materialmente (como patrones del sustrato dinámico); las descripciones matemáticas de los atractores existen como **representaciones legítimas** de esos patrones cuando preservan dependencias decisivas. La realidad ontológica primaria está en el sustrato; la realidad de las estructuras matemáticas es **derivada y representacional**.
+
 ## 15. Lectura cruzada
 
 - ontología que el aparato modeliza: capítulo 02-01;

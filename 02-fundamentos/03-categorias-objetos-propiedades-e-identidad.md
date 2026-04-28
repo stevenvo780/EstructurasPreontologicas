@@ -172,6 +172,34 @@ Wittgenstein (*Investigaciones Filosóficas* §66, ed. Macmillan 1953, p. 27e) a
 
 Bourdieu (1980, *Le sens pratique*, cap. 3, p. 88) define el habitus como *"sistemas de disposiciones durables y transponibles, estructuras estructuradas predispuestas a funcionar como estructuras estructurantes"*. La tesis traduce literalmente: el habitus es **disposición relacional materialmente incorporada** (cuerpo, gestos, lenguaje) que constituye atractor en el campo de prácticas. Donde Bourdieu describe cualitativamente la persistencia del habitus *"aún cuando las condiciones objetivas que lo produjeron han cambiado"* (1980, p. 100), la tesis opera la persistencia como **anchura de la cuenca** del atractor (tema desarrollado en 05-04).
 
+## 8.bis. Identidad personal a través del tiempo (V5-15)
+
+La tesis trata identidad como **continuidad organizada bajo transformación** (§4) sin abordar específicamente la cuestión clásica de **identidad personal a través del tiempo**. Aclaración:
+
+### 8.bis.1. Postura: identidad como cuenca persistente del atractor humano
+
+La identidad personal NO es:
+
+- alma sustancial inmutable (rechazado por dualismo);
+- conjunto de memorias estrictamente continuo (criterio Locke insuficiente: amnesias parciales no eliminan persona);
+- agregado de estados psicológicos sin estructura (criterio reduccionista insuficiente).
+
+La identidad personal **es**:
+
+- **cuenca persistente** del atractor de integración corporal-narrativa-social-afectiva (cap 02-03 §8.5, ahora ampliado);
+- continuidad del **sistema acoplado completo** (cuerpo + memoria + relaciones + historia), no de uno solo de sus componentes;
+- **resistencia bajo perturbación**: una persona es la misma persona después de un shock si el sistema retorna a la cuenca de atracción característica.
+
+### 8.bis.2. Diálogo
+
+- **Locke** (1689, *An Essay Concerning Human Understanding*, II.27.9, p. 335 ed. Clarendon): identidad personal = continuidad de conciencia. La tesis recoge: la continuidad psicológica es **componente** del atractor, pero no único — la materialidad corporal y la trama relacional son co-constitutivas.
+- **Parfit** (1984, *Reasons and Persons*, parte III, p. 199): la identidad personal NO es lo importante — lo que importa es la conexión psicológica gradual. La tesis matiza: la conexión es real pero la **cuenca persistente del atractor** sí es objeto ontológico identificable, no solo gradiente psicológico.
+- **Strawson** (1959, *Individuals*) defiende re-identificación a través del cuerpo. La tesis recoge: el cuerpo es el **acoplador material continuo** que sostiene la cuenca.
+
+### 8.bis.3. Implicación
+
+La identidad de Pedro a los 5 y a los 50 años NO es identidad numérica estricta de elementos componentes (las células han cambiado, la memoria se ha transformado, las relaciones son otras). Es **persistencia de la cuenca de atracción** del sistema acoplado: el "estilo" de respuesta característica, la trama narrativa con sí mismo, la red relacional reconocible. Esta persistencia es **operativamente medible** en principio — el aparato no se ha aplicado a casos de identidad personal pero el marco general lo permite.
+
 ## 9. Regla práctica
 
 > Cuando una categoría parezca demasiado cómoda, conviene sospechar. La comodidad lingüística suele ser el primer síntoma de reificación exitosa.

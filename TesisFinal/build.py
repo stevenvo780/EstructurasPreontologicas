@@ -62,6 +62,8 @@ A la Universidad de Antioquia, por sostener una tradición de filosofía de la c
     ('Capítulo 2.1: Epistemología de la compresión', '02-fundamentos/02-epistemologia-de-la-compresion.md', None),
     ('Capítulo 2.2: Categorías, objetos, propiedades, identidad', '02-fundamentos/03-categorias-objetos-propiedades-e-identidad.md', None),
     ('Capítulo 2.3: Anclaje conductual-ecológico (nivel B)', '02-fundamentos/04-anclaje-conductual-ecologico.md', None),
+    ('Capítulo 2.4: Temporalidad y causalidad', '02-fundamentos/05-temporalidad-y-causalidad.md', None),
+    ('Capítulo 2.5: Dimensión normativa y ética', '02-fundamentos/06-dimension-normativa-y-etica.md', None),
     ('Capítulo 3: Aparato formal mínimo', '03-formalizacion/01-aparato-formal.md', None),
     ('Capítulo 3.1: Criterios de legitimidad y dossier', '03-formalizacion/02-criterios-de-legitimidad-y-metodo.md', None),
     ('Capítulo 3.2: Auditoría ontológica como protocolo', '03-formalizacion/03-auditoria-ontologica-y-diseno-de-investigacion.md', None),
@@ -97,6 +99,7 @@ A la Universidad de Antioquia, por sostener una tradición de filosofía de la c
     ('Anexo A.11: Validación lógica formal con ST', 'Anexos/A11-validacion-st.md', None),
     ('Anexo A.12: Corpus multiescala — tablas crudas', 'Anexos/A12-corpus-multiescala-tablas.md', None),
     ('Auditoría doctoral integral (v2 final)', 'Bitacora/2026-04-28-cierre-pendientes/02-auditoria-doctoral-v2-final.md', None),
+    ('Auditoría V5: vacíos estructurales de contenido filosófico', 'Auditoria_V5_Vacios_Estructurales.md', None),
     ('Bibliografía', '07-bibliografia/01-bibliografia-orientativa.md', None),
 ]
 

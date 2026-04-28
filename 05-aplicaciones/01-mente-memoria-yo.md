@@ -229,6 +229,49 @@ Este capítulo conjetura. No demuestra. La elevación a modo demostrativo requie
 - caso ancla canónico (demostrativo): capítulo 05-05;
 - limitaciones y deuda residual: capítulo 04-02 y 06-01.
 
+## A. Dimensión fenomenológica y qualia (V5-04)
+
+Una ontología que se afirma **general** debe tener postura sobre la **experiencia subjetiva**. La tesis adopta **complementarismo metodológico**: la fenomenología en primera persona y el aparato EDI en tercera persona son **métodos diferentes para fenómenos distintos pero ontológicamente continuos**.
+
+### A.1. Postura sobre los qualia
+
+- Los qualia (cualidades fenoménicas: el rojo del rojo, el dolor del dolor) **NO se reducen a atractores conductuales** ni a estados neurales descriptos en tercera persona;
+- pero **NO requieren sustancia mental separada** (la tesis es naturalista no-reduccionista, cap 02-01 §0.1);
+- los qualia son **propiedades constitutivas** del sistema acoplado organismo-mundo bajo el aspecto en primera persona;
+- esto se alinea con Thompson (2007, *Mind in Life*, cap. 11, p. 312): *"experience is not in the head, but in the world enacted by the embodied mind"*.
+
+### A.2. El "problema duro" de Chalmers
+
+Chalmers (1995, *Journal of Consciousness Studies* 2:200-219) plantea que ningún relato funcional explica por qué hay experiencia. La tesis responde:
+
+- el aparato EDI **no resuelve** el problema duro: ese no es su propósito;
+- el aparato describe la dinámica conductual-acoplada (tercera persona); no agota la realidad fenomenológica;
+- la **complementariedad** con métodos fenomenológicos (Husserl 1913 *Ideas I*, Merleau-Ponty 1945 *Fenomenología de la percepción*, Varela neurofenomenología) es feature, no bug;
+- la tesis ofrece **co-existencia disciplinada** entre tercera y primera persona, no eliminación de una por la otra.
+
+### A.3. Diálogo textual
+
+- **Husserl** (1913, *Ideas I*, §49, p. 92 ed. Springer): *"jede Erlebnis ist Bewusstsein, und Bewusstsein ist Bewusstsein von etwas"*. La tesis recoge: la conciencia es **intencional**, dirigida a contenido. Esto es compatible con la tesis: la intencionalidad es propiedad del sistema acoplado organismo-mundo en primera persona.
+- **Merleau-Ponty** (1945, *Fenomenología de la percepción*, p. xi ed. Gallimard): *"le corps est notre moyen général d'avoir un monde"*. La tesis lo recoge: el cuerpo es el **acoplador material** que constituye el mundo experimentado.
+- **Nagel** (1974, "What is it Like to be a Bat?", *Philosophical Review* 83:435-450, p. 436): el carácter subjetivo de la experiencia *"will not be adequately captured by any of the familiar, recently devised reductive analyses of the mental"*. La tesis recoge: el aparato EDI **no captura el carácter subjetivo**, pero esto no debilita su validez en su régimen propio.
+
+## B. Sujeto, agencia, libertad (V5-10)
+
+### B.1. Compatibilismo dennettiano matizado
+
+La tesis adopta **compatibilismo**: la libertad humana es compatible con determinismo material si por libertad entendemos **capacidad de control reflexivo** del propio comportamiento, no contracausalidad metafísica. Dennett (2003, *Freedom Evolves*, cap. 2, p. 56) lo articula: *"a free choice is one made for reasons, by an agent who can reflect on those reasons"*.
+
+### B.2. Estructura del agente en la tesis
+
+- El agente es **atractor de integración** corporal-narrativa-social-afectiva (cap 02-03 §8.5);
+- la agencia es **propiedad operativa del atractor**: el sistema acoplado organismo-entorno-tarea-historia tiene capacidades de selección reflexiva entre alternativas;
+- la libertad NO es contracausal; es **capacidad de control reflexivo** materialmente realizada.
+
+### B.3. Diálogo
+
+- **Frankfurt** (1971, "Freedom of the Will and the Concept of a Person", *Journal of Philosophy* 68:5-20): la libertad es jerarquía de deseos. La tesis recoge: el atractor humano tiene **estructura jerárquica** de variables que opera como deseos sobre deseos.
+- **Pereboom** (2001, *Living Without Free Will*) defiende eliminativismo de la libertad. La tesis lo rechaza por incompatible con el realismo moderado de patrones materialmente sostenidos.
+
 ## 10. Cierre
 
 > La mente no es cosa adicional al organismo, pero tampoco se deja agotar por una lista plana de eventos neuronales. Es atractor de integración corporal-cognitivo-afectivo-social-histórico cuya legitimidad como compresión depende de qué integra, qué conserva, para qué pregunta sirve, y qué predicción discriminante propone respecto a rivales identificables.
