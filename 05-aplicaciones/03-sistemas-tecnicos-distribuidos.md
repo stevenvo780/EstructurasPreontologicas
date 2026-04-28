@@ -4,9 +4,6 @@
 
 Aplicación en **modo programático** según el capítulo 05-00. La presentación del fenómeno es robusta y el aparato se opera con claridad pedagógica, pero falta el modelo dinámico cuantitativo con datos públicos que eleve el caso a demostrativo.
 
-## Función de este capítulo
-
-Los sistemas técnicos distribuidos muestran de manera casi pedagógica que una unidad operativa puede ser real sin ser simple, y permiten observar con claridad cuándo conviene comprimir y cuándo conviene expandir. El dominio es atractivo para la tesis porque la práctica de operación de servicios ya implementa, sin nombrarla así, una forma de auditoría ontológica. Lo que falta es el caso demostrativo formal.
 
 ## Conjetura del capítulo
 
@@ -122,14 +119,3 @@ Este caso es valioso pedagógicamente: muestra con claridad mínima de filosofí
 
 Este capítulo articula la conjetura con claridad, pero falta el modelo dinámico cuantitativo con datos públicos que eleve a demostrativo. La elevación es plausible y se prioriza en hoja de ruta.
 
-## 9. Lectura cruzada
-
-- ontología y compresión: capítulo 02-01 y 02-02;
-- aparato formal con hipergrafos: capítulo 03-01;
-- procedimiento empírico de κ: capítulo 03-04;
-- caso ancla canónico: capítulo 05-05;
-- bibliografía técnica e interlocutores: capítulo 07.
-
-## 10. Cierre
-
-> Un servicio distribuido existe como patrón operativo, no como bloque autosuficiente. Su realidad está en la coordinación material de procesos y dependencias; su inteligibilidad depende del nivel en que se formule la pregunta. La elevación a modo demostrativo requiere construir el dossier con datos cuantitativos. El programa de extensión está articulado.

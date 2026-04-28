@@ -1,6 +1,6 @@
 # Biología y ecología
 
-## 0. Qué es vida en esta ontología (V5-14)
+## 0. Qué es vida en esta ontología
 
 Antes de tratar biología y ecología como dominios programáticos, fijamos lo que la tesis afirma sobre **vida** como categoría ontológica. La pregunta de Schrödinger (1944, *¿Qué es la vida?*) — ¿qué hace que una entidad sea viva? — recibe en la tesis respuesta articulada:
 
@@ -30,9 +30,6 @@ La distinción vivo/no-vivo NO es ontológicamente abrupta — hay gradientes (v
 
 Aplicación en **modo programático** según el capítulo 05-00. Articula una conjetura de aplicación del marco a fenómenos biológicos y ecológicos, con criterios de elevación. No demuestra.
 
-## Función de este capítulo
-
-La biología y la ecología muestran con particular claridad dos cosas que la tesis afirma: la realidad material no es lista plana de componentes, y las unidades de análisis cambian con la escala sin que cambie la realidad. Aquí la conjetura es que las categorías biológicas centrales — célula, organismo, especie, ecosistema — son patrones materialmente sostenidos cuya formalización dinámica permite mejor articulación multinivel que reduccionismo molecular o holismo ecológico inflado.
 
 ## Conjetura del capítulo
 
@@ -224,14 +221,3 @@ Y articula explícitamente que la elevación a modo demostrativo está al alcanc
 
 Este capítulo conjetura. La elevación a modo demostrativo requiere adoptar un caso específico publicado con datos cuantitativos y construir el dossier completo. El programa posterior se prioriza en capítulo 06-03.
 
-## 10. Lectura cruzada
-
-- ontología y patrones estabilizados: capítulo 02-01;
-- aparato formal: capítulo 03-01;
-- criterios de admisión: capítulo 03-02 y 05-00;
-- caso ancla canónico: capítulo 05-05;
-- biología y filosofía de la ciencia: capítulo 07 (Dupré, Nicholson, Mitchell).
-
-## 11. Cierre
-
-> Lo vivo no obliga a abandonar el monismo material; obliga a enriquecerlo con organización, dependencia y multiescalaridad. La biología y la ecología muestran que la realidad material solo se vuelve inteligible cuando se modelan los acoplamientos dinámicos que la estabilizan. La conjetura del marco es elevable; el trabajo demostrativo es posterior.

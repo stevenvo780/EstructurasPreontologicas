@@ -88,7 +88,7 @@ El aparato ABM+ODE no se justifica por **mejor predicción puntual** sino por:
 
 ARIMA y VAR pueden ganar en RMSE absoluto en casos con dinámica lineal estacionaria. Esto **no anula** la tesis: la anularía si ARIMA produjera tan buena clasificación en niveles como el aparato, lo cual no ocurre.
 
-### Aclaración crítica (auditoría V4-05): el AUC-ROC = 0.886 es interno, no externo
+### Aclaración crítica: el AUC-ROC = 0.886 es interno, no externo
 
 El AUC-ROC reportado en N3 (0.886 vs ARIMA 0.600) mide la **capacidad de ranking interno** del EDI sobre el corpus de 12 casos donde las etiquetas strong/no-strong fueron asignadas por el propio aparato. Esto es **consistencia interna**, no validación contra estándar de oro independiente. Una validación AUC-ROC genuinamente externa requeriría:
 

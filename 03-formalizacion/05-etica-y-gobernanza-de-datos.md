@@ -157,9 +157,3 @@ La responsabilidad académica completa del manuscrito reside en los autores huma
 - revisar si el error afecta conclusiones del manuscrito;
 - en caso de impacto material, publicar versión corregida con nota de modificación.
 
-## 8. Lectura cruzada
-
-- Formalización institucional: capítulo `00-proyecto/04-formalizacion-institucional.md`.
-- Política de adquisición de datos humanos para caso 30: `Bitacora/2026-04-28-cierre-doctoral/02-programa-datos-humanos-caso30.md`.
-- Trazabilidad de procesos: `Bitacora/`.
-- Bibliografía completa: capítulo `07-bibliografia/01-bibliografia-orientativa.md`.

@@ -1,8 +1,5 @@
 # Diagnóstico estructural de la tesis
 
-## Función de este capítulo
-
-Toda tesis doctoral debe abrir con un examen sin complacencia de su propio borrador. Este capítulo no busca ser exhaustivo en defectos triviales. Identifica las debilidades estructurales del manuscrito tal como entró al proyecto y fija el cuadro de problemas que los capítulos subsiguientes deben resolver. Cada falencia se nombra una sola vez, se discute hasta su consecuencia y se redirige a su tratamiento posterior. Las objeciones externas previsibles se tratan en el capítulo 04 de debates; las limitaciones y zonas grises de la propuesta corregida se tratan en el capítulo 04-2 de puntos de presión. Lo que aquí entra es solo lo que afecta al núcleo estructural.
 
 ## Tesis del capítulo
 

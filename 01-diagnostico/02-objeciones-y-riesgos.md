@@ -1,8 +1,5 @@
 # Objeciones discriminantes anticipadas
 
-## Función de este capítulo
-
-Una tesis sobrevive a sus mejores objeciones, no a las peores. Este capítulo aísla las objeciones que efectivamente podrían comprometer el proyecto bajo la versión corregida y las trata como filtros de admisión: cada una se nombra en su forma más fuerte, se responde con un compromiso empírico verificable y se conecta con el lugar del manuscrito donde la respuesta queda demostrada. Las objeciones que el borrador ya neutralizó (dualismo, materialismo ingenuo, reduccionismo plano, formalismo vacío) se tratan como debates en el capítulo 04-01; aquí solo entran las objeciones que aún hoy podrían tirar la tesis si no se respondieran.
 
 ## Tesis del capítulo
 

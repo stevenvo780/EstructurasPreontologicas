@@ -10,9 +10,6 @@ Aplicación en **modo programático con alcance explícitamente acotado** según
 
 La demostración cuantitativa de la dimensión normativa queda explícitamente fuera del alcance del manuscrito actual y se documenta como deuda priorizada en `06-cierre/03-hoja-de-ruta-para-tesis-final.md` y en `Bitacora/2026-04-28-cierre-doctoral/`.
 
-## Función de este capítulo
-
-Los fenómenos sociales e institucionales son el campo donde aparecen con mayor intensidad dos errores opuestos: tratarlos como sustancias supraindividuales con voluntad propia o disolverlos por completo en sumas de individuos aislados. La tesis evita ambos extremos pero el desarrollo formal del aparato para tratar normas, validez, legitimidad y reconocimiento es aún programático.
 
 ## Conjetura del capítulo
 
@@ -216,16 +213,3 @@ Este capítulo conjetura. La elevación requiere:
 - desarrollo del aparato para variables normativas como dimensiones del sistema acoplado;
 - diálogo profundo con Searle, Bourdieu, Latour, Gilbert.
 
-## 10. Lectura cruzada
-
-- ontología material-relacional: capítulo 02-01;
-- categorías como compresiones: capítulo 02-03;
-- nivel B y acoplamiento (incluso para sistemas sociales): capítulo 02-04;
-- aparato formal: capítulo 03-01;
-- criterios de admisión: capítulo 03-02 y 05-00;
-- limitaciones que sobreviven: capítulo 04-02;
-- caso ancla canónico: capítulo 05-05.
-
-## 11. Cierre
-
-> Institución, mercado y Estado son reales no como sustancias suprahumanas sino como patrones materialmente sostenidos de organización, norma, reconocimiento y poder, modelables como atractores dinámicos con cuenca persistente y bifurcaciones identificables. Su análisis exige descomponer la compresión sin destruir la realidad del patrón que comprime, y exige desarrollo del aparato para tratar normatividad como variable. El programa de elevación está articulado, la deuda nombrada.

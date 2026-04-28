@@ -175,7 +175,7 @@ Sistema modal **al menos T (KT)** declarado en cap 02-01. T22 confirma: en `moda
 1. **ST no valida que los axiomas sean verdaderos en el mundo.** Solo certifica consistencia interna.
 2. **ST no detecta axiomas vacíos.** Un sistema puede ser consistente y vacío.
 3. **ST no captura la dinámica acoplada del aparato.** El motor ABM+ODE es objeto computacional con dinámica continua que ST no representa.
-4. **ST no audita la calibración empírica de la métrica.** El p-value del 24% (auditoría severa N1) es problema empírico que ST no detecta.
+4. **ST no audita la calibración empírica de la métrica.** El p-value del 24% es problema empírico que ST no detecta.
 5. **La cobertura de la suite es representativa, no exhaustiva.** 23 teorías cubren los puntos críticos identificados; no garantiza completitud.
 6. **ST no sustituye revisión humana experta.** El comité doctoral debe leer los axiomas declarados y juzgar si son los correctos.
 

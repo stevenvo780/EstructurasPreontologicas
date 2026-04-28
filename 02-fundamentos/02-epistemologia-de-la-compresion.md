@@ -1,12 +1,5 @@
 # Epistemología general de la compresión multiescala
 
-## Función de este capítulo
-
-Este capítulo fija la teoría general del conocimiento de la tesis. La pregunta no es solo qué existe sino cómo accedemos a lo existente sin deformarlo por exceso de detalle, por pobreza categorial o por herencia lingüística — **a cualquier escala donde queramos conocer**. La respuesta general:
-
-> conocer consiste en construir recortes que preserven dependencias reales con el menor costo explicativo y computacional compatible con la pregunta `Q` y con la tolerancia exigida por su uso, **independientemente de la escala física, biológica o cosmológica del fenómeno**.
-
-El capítulo se ocupa de tres cosas: (a) la diferencia entre realidad, modelo y categoría, (b) la teoría de la compresión y la expansión como operaciones epistémicas centrales, (c) la noción de verdad como preservación estructural. No repite la ontología (capítulo 02-01) ni anticipa el aparato formal (capítulo 03). Se ocupa solo de la función epistémica de los recortes — y lo hace **como teoría epistemológica general**, no como teoría restringida al conocimiento de fenómenos macro-poblacionales.
 
 ## Tesis del capítulo
 
@@ -66,7 +59,7 @@ Estas condiciones no son retóricas. Tienen procedimiento empírico fijado en el
 - en sistemas técnicos distribuidos, la compresión de procesos, redes, certificados, balanceadores en `el servicio` es legítima cuando la pregunta es disponibilidad global; deja de serlo cuando la pregunta es diagnóstico de caída;
 - en biología, comprimir cientos de moléculas en `célula` es legítimo cuando la pregunta es tisular; deja de serlo cuando la pregunta es metabólica fina.
 
-### 3.5. Lenguaje, significado y representación (V5-05)
+### 3.5. Lenguaje, significado y representación
 
 Una epistemología de la compresión exige postura sobre **qué relación tienen las representaciones (sondas, modelos, categorías) con lo que representan**. La tesis articula:
 
@@ -249,16 +242,3 @@ Esto es lo que opera el capítulo 03 (formalización) y lo que el capítulo 05-0
 
 Si la ontología (capítulo 02-01) da el suelo, esta epistemología enseña a caminar sobre él sin confundir el mapa con el territorio ni el territorio con masa muda. Si el aparato formal (capítulo 03) da los instrumentos, esta epistemología fija para qué sirven.
 
-## 15. Lectura cruzada
-
-Lo que esta epistemología afirma se opera en:
-
-- la formalización de κ y ε: capítulo 03-04;
-- el dossier de anclaje: capítulo 03-02;
-- la asimetría L1/B/L3/S: capítulo 02-04;
-- la prueba demostrativa: capítulo 05-05.
-
-Lo que esta epistemología rechaza se discute en:
-
-- capítulo 04-01 (rivales filosóficos);
-- capítulo 04-02 (objeciones que persisten).

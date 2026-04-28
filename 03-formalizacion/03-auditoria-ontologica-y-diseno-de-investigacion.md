@@ -1,8 +1,5 @@
 # Auditoría ontológica y diseño de investigación
 
-## Función de este capítulo
-
-Este capítulo convierte el aparato formal (03-01) y los criterios de legitimidad (03-02) en un protocolo replicable: la auditoría ontológica. La auditoría no es ejercicio retórico ni reflexión filosófica acerca de categorías; es procedimiento ejecutable por terceros que produce diagnóstico y decisión con trazabilidad. El capítulo cierra cuando un investigador externo puede tomar el protocolo y aplicarlo a un caso nuevo sin depender del autor original.
 
 ## Tesis del capítulo
 
@@ -253,11 +250,3 @@ Con esta auditoría, la tesis se presenta no solo como respuesta a una pregunta 
 
 > La filosofía propuesta no pregunta solo qué existe; pregunta también cómo recortar lo existente sin convertir un nombre útil en sustancia imaginaria ni una complejidad real en niebla conceptual. La auditoría ontológica es la técnica que ejecuta esa exigencia con trazabilidad pública.
 
-## 13. Lectura cruzada
-
-- aparato formal que la auditoría usa: capítulo 03-01;
-- criterios y dossier que la auditoría aplica: capítulo 03-02;
-- procedimiento empírico de κ que la auditoría invoca: capítulo 03-04;
-- caso donde la auditoría se aplica completa: capítulo 05-05;
-- casos donde la auditoría se aplica parcialmente: capítulos 05-01 a 05-04;
-- objeciones que la auditoría neutraliza: capítulo 04-02.

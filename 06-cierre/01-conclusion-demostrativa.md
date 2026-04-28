@@ -1,9 +1,5 @@
 # Conclusión demostrativa
 
-## Función de este capítulo
-
-Este capítulo cierra la tesis con demostración trazable y honesta. Su tarea es severa: identificar las condiciones bajo las cuales la tesis queda demostrada, verificar empíricamente que el manuscrito las cumple, nombrar las condiciones de fracaso, declarar la deuda residual con plazo y entregable, **y reportar honestamente los hallazgos negativos del propio aparato**. La diferencia con un cierre programático es que aquí se afirma algo verificable, no se promete algo plausible.
-
 ## Tesis del capítulo
 
 > La tesis del **irrealismo operativo de estructuras pre-ontológicas** se sostiene como **propuesta ontológica general multiescalar** validada operativamente sobre **40 casos del corpus EDI agregado** (30 inter-dominio + 10 inter-escala). El corpus inter-dominio cubre física, biología, economía, política, tecnología, cultura y conducta humana con 4 casos `overall_pass=True` + 1 strong sin gate + 8 weak + 2 suggestive + 4 trend + 8 null + 3 controles de falsación rechazados. El corpus inter-escala cubre **30 órdenes de magnitud** espaciales y temporales (desde dinámica subatómica de espín-órbita 10⁻¹⁰ m a cúmulos globulares 10²⁰ m) con **7 strong en 7 escalas distintas** + 1 weak + 2 nulls honestos. El aparato ha sobrevivido hostile testing severo (0/1500 falsos positivos del gate completo bajo random walk masivo, 0/12 circularidad en test cruzado de sondas). Las condiciones de fracaso son falsables y la deuda residual está fechada. La tesis es **ontología general operativamente articulada con demostración parcial multiescalar bajo régimen declarado**, no ontología regional macro-poblacional como sugería la primera iteración del manuscrito.
@@ -143,42 +139,23 @@ Lo que el manuscrito no demuestra y reconoce explícitamente como deuda con plaz
 
 ## 5. Aporte conceptual sustantivo
 
-> **Aclaración de alcance (auditoría severa A14, refinada por V4 narrativa unificada):** el aporte de la tesis es **triplemente general y sustantivo**. (1) **Ontología general:** una sola estructura ontológica con cuatro invariantes (sustrato material dinámico, acoplamiento, atractor empírico, cierre operativo κ) que se instancia a cualquier escala física, biológica o cosmológica. (2) **Epistemología general:** una sola teoría del conocimiento como compresión disciplinada bajo intervención ablativa, operativa al mismo modo desde lo cuántico hasta lo cosmológico. (3) **Metodología general:** un solo aparato (motor ABM+ODE acoplado + protocolo C1-C5 + EDI + dossier de 14 componentes + suite ST + hostile testing automatizado) que ejecuta esa epistemología sobre esa ontología sin reentrenar arquitectura entre dominios o escalas.
+El aporte de la tesis es triplemente general: ontología, epistemología y metodología generales, como se articula en la Parte I (capítulos 1-6) y la Parte II (capítulos 7-11). Los 40 casos del corpus son **justificación operativa** del marco, no son la tesis. La generalidad del marco es independiente de la cantidad del corpus; lo que el corpus aporta es discriminación operativa y demostración de transferibilidad.
 
-> **El estatus de los 40 casos del corpus en esta tripleta:** los 40 casos **NO son la tesis**. La tesis son los tres marcos generales (ontológico + epistemológico + metodológico). Los 40 casos son **justificación operativa** del marco: instancias verificables que muestran que las afirmaciones generales del marco no son meramente declarativas sino ejecutables y discriminantes. Sin los casos, el marco sería conjetura plausible; con los casos, el marco es propuesta operativamente articulada con respaldo empírico parcial. Pero **la generalidad del marco es independiente de la cantidad o composición específica del corpus**: si los 40 casos fueran 4 o 400, el marco general no cambiaría — solo cambiaría la fuerza inferencial del respaldo. Lo que el corpus aporta es **discriminación operativa** (el aparato distingue genuinamente cierre operativo vs ausencia) y **demostración de transferibilidad** (el mismo marco aplica a 8 escalas y 30 dominios). Lo que el corpus NO aporta y NO necesita aportar para que el marco sea general: ni completitud poblacional, ni cobertura de todas las escalas concebibles, ni descubrimiento sustantivo en cada disciplina.
+La tesis introduce como aporte propio:
 
-La tesis introduce, articula y opera **un marco tripartito general** del cual los 40 casos son justificación parcial:
+### 5.1. Aporte ontológico
 
-La tesis introduce, articula y opera lo siguiente como aporte propio:
+Reformula entidades como **estructuras pre-ontológicas** a cualquier escala donde el aparato puede operar con sondas físicamente motivadas. Afirma una estructura ontológica común entre el qubit superconductor, la enzima, la célula oscilante, el agente económico, el organismo en tarea, la estrella pulsante y el cúmulo globular: los cuatro invariantes (sustrato, acoplamiento, atractor, κ) son operativamente medibles en cada uno con la misma metodología EDI. El "irrealismo operativo" distingue κ-pragmática de κ-ontológica con criterios operativos para cada una (véase capítulo 1, §Nota sobre κ).
 
-### 5.1. Aporte ontológico (sustantivo, no solo metodológico)
+### 5.2. Aporte epistemológico
 
-Reformula entidades como **estructuras pre-ontológicas** — atractores empíricamente identificables de sistemas dinámicos acoplados con cinco condiciones técnicas de admisión, **a cualquier escala donde el aparato puede operar con sondas físicamente motivadas**. Vocabulario filosóficamente afilado: el "irrealismo operativo" sustituye con precisión al "realismo estructural moderado" sin perder rigor.
+Reformula el conocimiento como compresión disciplinada bajo intervención ablativa. La epistemología es general: opera del mismo modo en cualquier escala donde se disponga de sonda físicamente motivada. Lo que cambia entre escalas es la sonda específica; la teoría del conocimiento no cambia (véase capítulo 2).
 
-**Este aporte es ontológicamente sustantivo en sentido específico:** no afirma que existan entidades nuevas en cada dominio (cada dominio ya fue estudiado por sus especialistas), sino que afirma una **estructura ontológica común** entre el qubit superconductor, la enzima, la célula oscilante, el agente económico, el organismo en tarea, la estrella pulsante y el cúmulo globular. Lo que estos casos comparten **no es nominal**: son **operativamente medibles** los cuatro invariantes (sustrato, acoplamiento, atractor, κ) en cada uno de ellos con la misma metodología EDI. Esto es la afirmación ontológica fuerte de la tesis: hay una **arquitectura común** del sustrato material dinámico que produce atractores con cierre operativo a través de escalas, y esta arquitectura es lo que las "estructuras pre-ontológicas" nombran.
-
-**Lo que el aporte NO es:**
-
-- no es ontología fundacional al estilo Wolfram (no se postula una regla microestructural única);
-- no es ontología regional para una escala específica (no se restringe a macro-poblacional);
-- no es metafísica deductiva *a priori* (cada afirmación se respalda con caso operativo);
-- no es ontología sin filtro empírico (cada caso pasa por dossier de 14 componentes + EDI + C1-C5).
-
-**Lo que el aporte sí es:**
-
-- una **arquitectura ontológica común** verificada operativamente en al menos 8 escalas distintas;
-- una posición filosófica (irrealismo operativo) que distingue κ-pragmática de κ-ontológica con criterios operativos para cada una;
-- una formulación de las estructuras pre-ontológicas como categoría ontológica general, no como categoría regional.
-
-### 5.2. Aporte epistemológico (general, no regional)
-
-Reformula el conocimiento como **compresión disciplinada bajo intervención ablativa**, operacionalizada vía EDI con cuatro pruebas de validación + protocolo C1-C5. Verdad como preservación estructural verificable bajo permutación (999) y bootstrap (500). **Esta epistemología es general**: opera del mismo modo cuando el conocedor reduce un qubit a Lindblad, una proteína a MSM 2-estados, una célula a Tyson-Novak, un mercado a Lotka-Volterra, una persona a Mackey-Glass, una estrella a pulsación P-L, o un cúmulo a Plummer. La operación epistémica es la misma: identificar variables decisivas, comprimir detalle local irrelevante, verificar preservación estructural por intervención ablativa, declarar tolerancia. Lo que cambia entre escalas es la sonda específica; **la teoría del conocimiento no cambia**.
-
-**Limitación reconocida (auditoría severa N1):** el p-value declarado del aparato tiene tasa de tipo I empírica = 24%, no 5%. Los umbrales EDI sí son robustos contra falsos positivos (N1: 0.6% supera weak, 0% supera strong bajo random walk puro). La calibración exacta del p-value requiere refinamiento metodológico futuro pero **no afecta la generalidad de la epistemología**: la operación de compresión-verificación es válida con cualquier prueba de significancia bien calibrada.
+**Limitación reconocida:** el p-value declarado tiene tasa de tipo I empírica = 24%. Los umbrales EDI sí son robustos contra falsos positivos (0.6% supera weak, 0% supera strong bajo random walk puro).
 
 ### 5.3. Aporte metodológico (general, no regional)
 
-Ofrece la auditoría ontológica como protocolo replicable de nueve fases con dossier de catorce componentes, más el pipeline ABM+ODE con soporte CPU/GPU, validador canónico, controles de falsación incorporados, suite ST de 13 teorías formales, y procedimiento de hostile testing automatizado. Determinismo `seed=42` con `requirements-locked.txt` para reproducibilidad inter-instalación. **Esta metodología es general**: el mismo motor `edi_engine` opera sobre los 10 casos del corpus inter-escala y el mismo protocolo C1-C5 opera sobre los 30 casos del corpus inter-dominio sin reentrenar arquitectura. La transferibilidad metodológica entre escalas y dominios — verificada por test cruzado V4-01 (0/12 circularidad) y hostile testing V4-06 (0/500 falsos positivos) — es **prueba operativa de que la metodología no es regional**: una misma máquina funciona desde lo cuántico hasta lo cosmológico, desde lo físico hasta lo social.
+Ofrece la auditoría ontológica como protocolo replicable de nueve fases con dossier de catorce componentes, más el pipeline ABM+ODE con soporte CPU/GPU, validador canónico, controles de falsación incorporados, suite ST de 13 teorías formales y procedimiento de hostile testing automatizado. Determinismo `seed=42` con `requirements-locked.txt` para reproducibilidad inter-instalación. **Esta metodología es general**: el mismo motor `edi_engine` opera sobre los 10 casos del corpus inter-escala y el mismo protocolo C1-C5 opera sobre los 30 casos del corpus inter-dominio sin reentrenar arquitectura. La transferibilidad metodológica entre escalas y dominios —verificada por test cruzado (0/12 circularidad) y hostile testing (0/1500 falsos positivos)— es **prueba operativa de que la metodología no es regional**: una misma máquina funciona desde lo cuántico hasta lo cosmológico, desde lo físico hasta lo social.
 
 **Este aporte es ejecutable, no solo declarativo:** cualquier tercero puede correr el motor sobre datos nuevos en cualquier escala con sondas físicamente motivadas. La generalidad metodológica está respaldada por código, no por afirmación retórica.
 
@@ -206,7 +183,7 @@ Demuestra que el aparato **discrimina** y **detecta cierre operativo** en cartog
 
 ### 5.5. Aporte filosófico de fondo
 
-Recupera el realismo estructural moderado en versión disciplinada por anclaje empírico explícito, evitando la inflación ontológica del realismo estructural informativo (estructura sin sustrato), la pasividad del instrumentalismo, y la ambición fundacional de Wolfram. Establece el **irrealismo operativo** como tercera vía: ni cosa, ni ficción, sino patrón cuya admisión requiere intervención empírica controlada. **Distinción nueva (auditoría severa A8):** entre **κ-pragmática** (la compresión funciona) y **κ-ontológica** (la compresión corresponde a estructura material independiente). El manuscrito demuestra κ-pragmática con rigor; la afirmación κ-ontológica fuerte requiere convergencia bajo múltiples sondas y validación inter-grupo.
+Establece el **irrealismo operativo** como tercera vía: ni cosa, ni ficción, sino patrón cuya admisión requiere intervención empírica controlada. La distinción entre κ-pragmática y κ-ontológica (véase capítulo 1) es crítica: el manuscrito demuestra κ-pragmática con rigor; la afirmación κ-ontológica fuerte requiere convergencia bajo múltiples sondas y validación inter-grupo.
 
 ## 6. Lo que la tesis afirma con compromiso público
 
@@ -236,7 +213,7 @@ Recupera el realismo estructural moderado en versión disciplinada por anclaje e
 | Más casos = más verdad | Falacia inductivista; la generalidad del marco no depende del tamaño del corpus |
 | Predicción de fenómenos individuales no medibles | Las leyes de control sin instrumentación son objeto de investigación, no de afirmación dogmática |
 
-## 8. Fórmula final demostrativa (post-auditoría severa v4)
+## 8. Fórmula final demostrativa
 
 > Bajo el aparato consolidado — irrealismo operativo de estructuras pre-ontológicas como **ontología general multiescalar**, asimetría L1↔B↔L3↔S como protocolo formal con sistema modal T declarado e invariante a la escala, dossier de anclaje de catorce componentes, protocolo C1-C5 con 13 condiciones simultáneas, EDI por intervención ablativa con permutación 999 y bootstrap 500, cartografía agregada de 40 casos: **30 inter-dominio** sobre física, biología, economía, política, tecnología, cultura y conducta humana (4 `overall_pass=True` + 1 strong sin gate + 8 weak + 3 controles rechazados) y **10 inter-escala** desde dinámica de espín-órbita atómica (10⁻¹⁰ m) hasta dinámica de cúmulos globulares (10²⁰ m) con **7 strong en 7 escalas distintas** + 1 weak + 2 nulls honestos, validación lógica formal con suite ST de 13 teorías (2 hallazgos críticos detectados y corregidos), hostile testing aplicado al motor (0/1500 falsos positivos en gate completo bajo random walk masivo) y al test cruzado de sondas inter-escala (0/12 circularidad detectada), AUC-ROC = 0.886 para discriminación de ranking interno vs ARIMA = 0.600, y discriminación pública contra catorce rivales (incluido Wolfram con piloto Rule 110 ejecutado mostrando convivencia de irreducibilidad micro y cierre macro detectable) — la tesis del irrealismo operativo de estructuras pre-ontológicas se sostiene como **propuesta ontológica general multiescalar articulada con demostración parcial bajo régimen declarado**, con limitaciones honestamente reconocidas (p-value mal calibrado al 24% empírico aunque umbrales EDI robustos, caso 30 con circularidad detectada por sonda alternativa, depuración post-hoc del corpus inter-escala, datos sintéticos pendientes de elevación a LoE 4-5, escalas como etiquetas nominales basadas en parámetros publicados, AUC-ROC interno no externo, ningún caso cumple los tres criterios κ-ontológica, sin revisión por pares humanos externos) y deuda residual fechada con cronograma firme post-defensa.
 
@@ -250,7 +227,7 @@ Recupera el realismo estructural moderado en versión disciplinada por anclaje e
 
 ### 8.2. Lo que la tesis NO afirma (limitaciones honestas)
 
-- **No afirma que el p-value declarado tenga calibración correcta:** la tasa empírica de tipo I es 24%, no 5% (auditoría severa N1). Los umbrales EDI sí son robustos.
+- **No afirma que el p-value declarado tenga calibración correcta:** la tasa empírica de tipo I es 24%, no 5%. Los umbrales EDI sí son robustos.
 - **No afirma que el caso 30 (behavioral dynamics) demuestre cierre operativo específico:** la sonda Fajen-Warren produce EDI > 0.30 en 50% de mass-spring puro (N2). El caso 30 se mantiene como caso piloto metodológico hasta elevación con datos humanos reales.
 - **No afirma que la composición del corpus refleje prevalencia poblacional:** los umbrales 0.10/0.30 producen 5 strong; 0.15/0.40 produce 3; 0.05/0.20 produce 9 (N4). La composición es post-hoc.
 - **No afirma que κ-ontológica fuerte esté demostrada:** solo κ-pragmática multiescalar. La afirmación ontológica fuerte requiere convergencia inter-grupo y revisión externa.
@@ -266,22 +243,7 @@ Recupera el realismo estructural moderado en versión disciplinada por anclaje e
 
 > Mínima en sustancias, rica en relaciones, controlada en sus recortes, reversible en sus niveles de explicación, anclada en cartografía empírica multidominio con discriminación pública contra rivales, abierta en su programa de extensión, disciplinada por anti-reificación operativa, y honesta en sus rechazos.
 
-## 10. Lectura cruzada
 
-- ontología que la conclusión asume: capítulo 02-01;
-- epistemología: capítulo 02-02;
-- asimetría L1↔B↔L3↔S: capítulo 02-04;
-- aparato formal y EDI: capítulos 03-01, 03-02, 03-04;
-- corpus EDI con 30 casos: capítulo 09;
-- caso 30 behavioral dynamics: `09-simulaciones-edi/30_caso_behavioral_dynamics/README.md`;
-- debates con rivales (incluido Wolfram): capítulo 04-01;
-- limitaciones residuales: capítulo 04-02;
-- caso ancla cualitativo Warren 2006: capítulo 05-05;
-- aplicaciones programáticas: capítulos 05-01 a 05-04;
-- guía de defensa: capítulo 06-02;
-- hoja de ruta: capítulo 06-03;
-- bitácora de integración: `Bitacora/2026-04-27-integracion-jacob/00-bitacora.md`;
-- resultado del caso 30: `Bitacora/2026-04-27-integracion-jacob/01-resultado-caso-30.md`.
 
 ## 11. Cierre del cierre
 

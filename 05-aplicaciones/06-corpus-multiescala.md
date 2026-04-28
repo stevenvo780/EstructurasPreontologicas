@@ -1,8 +1,5 @@
 # Corpus EDI multiescala — demostración de generalidad ontológica
 
-## Función de este capítulo
-
-Este capítulo registra la demostración empírica de que el aparato EDI **opera a través de escalas**, no solo en sistemas macro-poblacionales. Responde a la objeción legítima de la auditoría severa (`Bitacora/2026-04-28-cierre-pendientes/03-auditoria-severa.md` ataque A14): el corpus original (30 casos macro) podría sugerir que la tesis es válida solo en escalas macro y no es ontología general como reclama. Este capítulo cierra esa objeción con 10 casos en escalas distintas, desde la dinámica subatómica (10⁻¹⁰ m) hasta la dinámica de cúmulos globulares (10²⁰ m).
 
 ## Tesis del capítulo
 
@@ -54,7 +51,7 @@ Astrofísica masiva ~10¹⁷-10²⁰m  ~10¹⁴ s         Caso 40 (Cúmulo globu
 | 33 | Villin Headpiece | Molecular | 0.00 | **Null genuino:** sonda equilibrio no capta dinámica fuera-de-equilibrio. Coupled y no_ode predicen idéntico bajo equilibrio termodinámico promedio. |
 | 38 | Locomoción τ-dot | Individual | -1.34 | **Failure mode de sonda:** EDI fuertemente negativo significa que la sonda τ-dot predice PEOR que la constante. Esto NO es null estructural; es indicación de que la sonda τ-dot está **mal especificada** para datos con reinicios discretos a metas variables. Reportado tal cual; debe leerse como **fallo de sonda**, no como evidencia contra el aparato. |
 
-**Lectura crítica (auditoría V4-03):** los dos casos no son equivalentes:
+**Lectura crítica:** los dos casos no son equivalentes:
 
 - el caso 33 es null **honesto** del aparato: las dos versiones de la sonda predicen casi igual y el EDI sale ≈ 0. El aparato hace lo que debe (rechazar cuando no hay diferencia ablativa).
 - el caso 38 es **failure mode de la sonda alternativa propuesta**, no del aparato: la sonda τ-dot construye predicciones que se desvían más que la const, lo cual indica que τ-dot no es una alternativa funcional a Fajen-Warren para datos con reinicios discretos. Esto significa que la objeción N2 (circularidad de Fajen-Warren para caso 30) **no se ha resuelto** con el caso 38: todavía falta una sonda alternativa funcional para datos de locomoción real, lo cual requiere acceso a datos VENLab/WALK-MS humanos.
@@ -158,11 +155,3 @@ La primera iteración era **ontología regional macro-poblacional con extensión
 
 Esta es la tesis que el manuscrito entrega tras hostile testing severo: **ontología general multiescalar operativamente articulada, no más auto-indulgente, no más restringida a la escala macro, validada operativamente en 8 escalas y 30 dominios, con 2 nulls honestos que muestran las fronteras del aparato y limitaciones explícitamente reconocidas como deuda externa**.
 
-## 8. Lectura cruzada
-
-- Corpus multiescala completo: `09-simulaciones-edi/corpus_multiescala/README.md`.
-- Plan original: `Bitacora/2026-04-28-cierre-severo/N15_corpus_multiescala.md`.
-- Auditoría severa que lo motivó: `Bitacora/2026-04-28-cierre-pendientes/03-auditoria-severa.md`.
-- Anexo A.12 con tablas crudas multiescala.
-- Cap 02-01 con afirmación de generalidad multiescalar (a actualizar).
-- Corpus macro original: `09-simulaciones-edi/README.md`.

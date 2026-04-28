@@ -1,8 +1,5 @@
 # Estado del arte
 
-## Función de este capítulo
-
-Mapa del campo donde la tesis interviene. No es revisión exhaustiva: es **revisión orientada a discriminación**. Para cada subcampo se identifica la línea principal, los autores de referencia con cita textual cuando procede, las afirmaciones consolidadas, las controversias activas y, sobre todo, **el hueco específico que la tesis pretende llenar**. La revisión se organiza en cinco subcampos contiguos al problema y cierra con un mapa de inserción.
 
 ## 1. Filosofía de la mente postcognitivista
 
@@ -132,10 +129,3 @@ Esta revisión es **orientada a la tesis**, no exhaustiva del campo en general. 
 
 La revisión exhaustiva de cada uno de los 30 dominios queda como trabajo futuro. Para fines de la tesis general, basta con la inserción en los cinco subcampos anteriores y la discriminación contra los 14 rivales del capítulo 04-01.
 
-## 9. Lectura cruzada
-
-- Confrontación detallada con rivales: capítulo 04-01.
-- Posición ontológica de la tesis: capítulo 02-01.
-- Aparato formal: capítulo 03-01.
-- Tabla comparativa con rivales: Anexo A.4.
-- Bibliografía completa con 90 referencias formales: capítulo 07-01.

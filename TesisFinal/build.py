@@ -34,13 +34,13 @@ PARTS = [
 
 **Colaborador (técnica e ingeniería computacional):** Steven Vallejo Ortiz.
 
-**Co-autoría con inteligencia artificial declarada:** Anthropic Claude (Opus 4.7), como instrumento de implementación bajo dirección humana. La IA no aparece como autora en el sentido legal ni epistémico: aparece como herramienta, igual que cualquier software estadístico avanzado. La declaración detallada del rol y los límites de la IA está en el capítulo `03-formalizacion/05-etica-y-gobernanza-de-datos.md`, sección 5.
+**Co-autoría con inteligencia artificial declarada:** Anthropic Claude (Opus 4.7), como instrumento de implementación bajo dirección humana. La IA no aparece como autora en el sentido legal ni epistémico: aparece como herramienta, igual que cualquier software estadístico avanzado. La declaración detallada del rol y los límites de la IA está en el capítulo de ética de investigación y gobernanza de datos (Parte II, cap. 5).
 
 ### Marco institucional
 
 **Programa de inscripción:** Doctorado en Filosofía. Línea: filosofía de la ciencia y ciencias de la complejidad.
 
-**Estado del manuscrito:** integral defendible. La formalización institucional completa se documenta en el capítulo `00-proyecto/04-formalizacion-institucional.md`.
+**Estado del manuscrito:** integral defendible. La formalización institucional completa se documenta en el Anexo B.1.
 
 **Versión consolidada:** 2026-04-28.
 
@@ -54,77 +54,80 @@ A la Universidad de Antioquia, por sostener una tradición de filosofía de la c
 '''),
         ('Abstract bilingüe', 'Anexos/A7-abstract-bilingue.md', None),
     ]),
-    ('Parte 0 — Plan general del proyecto', 'parte-0-proyecto', [
-        ('Capítulo 0.1: Estructura general', '00-proyecto/01-estructura-general.md', None),
-        ('Capítulo 0.2: Preguntas, objetivos e hipótesis', '00-proyecto/02-preguntas-objetivos-hipotesis.md', None),
-        ('Capítulo 0.3: Plan de capítulos', '00-proyecto/03-plan-de-capitulos.md', None),
-        ('Capítulo 0.4: Formalización institucional', '00-proyecto/04-formalizacion-institucional.md', None),
+    # ── INTRODUCCIÓN ────────────────────────────────────────────────
+    ('Introducción', 'introduccion', [
+        ('Introducción', '00-proyecto/00-introduccion.md', None),
+        ('Estado del arte', '01-diagnostico/03-estado-del-arte.md', None),
     ]),
-    ('Parte 1 — Diagnóstico estructural', 'parte-1-diagnostico', [
-        ('Capítulo 1.1: Falencias de la tesis', '01-diagnostico/01-falencias-de-la-tesis.md', None),
-        ('Capítulo 1.2: Objeciones discriminantes', '01-diagnostico/02-objeciones-y-riesgos.md', None),
-        ('Capítulo 1.3: Estado del arte', '01-diagnostico/03-estado-del-arte.md', None),
+    # ── PARTE I: FUNDAMENTOS ────────────────────────────────────────
+    ('Parte I — Fundamentos ontológicos y epistemológicos', 'parte-1-fundamentos', [
+        ('Capítulo 1: Ontología material-relacional', '02-fundamentos/01-ontologia-material-relacional.md', None),
+        ('Capítulo 2: Epistemología de la compresión', '02-fundamentos/02-epistemologia-de-la-compresion.md', None),
+        ('Capítulo 3: Categorías, objetos, propiedades, identidad', '02-fundamentos/03-categorias-objetos-propiedades-e-identidad.md', None),
+        ('Capítulo 4: Anclaje empírico (nivel B multiescalar)', '02-fundamentos/04-anclaje-conductual-ecologico.md', None),
+        ('Capítulo 5: Temporalidad y causalidad', '02-fundamentos/05-temporalidad-y-causalidad.md', None),
+        ('Capítulo 6: Dimensión normativa y ética', '02-fundamentos/06-dimension-normativa-y-etica.md', None),
     ]),
-    ('Parte 2 — Fundamentos ontológicos y epistemológicos', 'parte-2-fundamentos', [
-        ('Capítulo 2.1: Ontología material-relacional', '02-fundamentos/01-ontologia-material-relacional.md', None),
-        ('Capítulo 2.2: Epistemología de la compresión', '02-fundamentos/02-epistemologia-de-la-compresion.md', None),
-        ('Capítulo 2.3: Categorías, objetos, propiedades, identidad', '02-fundamentos/03-categorias-objetos-propiedades-e-identidad.md', None),
-        ('Capítulo 2.4: Anclaje empírico (nivel B multiescalar)', '02-fundamentos/04-anclaje-conductual-ecologico.md', None),
-        ('Capítulo 2.5: Temporalidad y causalidad', '02-fundamentos/05-temporalidad-y-causalidad.md', None),
-        ('Capítulo 2.6: Dimensión normativa y ética', '02-fundamentos/06-dimension-normativa-y-etica.md', None),
+    # ── PARTE II: APARATO Y MÉTODO ──────────────────────────────────
+    ('Parte II — Aparato formal y método', 'parte-2-metodo', [
+        ('Capítulo 7: Aparato formal mínimo', '03-formalizacion/01-aparato-formal.md', None),
+        ('Capítulo 8: Criterios de legitimidad y dossier', '03-formalizacion/02-criterios-de-legitimidad-y-metodo.md', None),
+        ('Capítulo 9: Auditoría ontológica como protocolo', '03-formalizacion/03-auditoria-ontologica-y-diseno-de-investigacion.md', None),
+        ('Capítulo 10: Operacionalización de κ vía EDI', '03-formalizacion/04-operacionalizacion-de-kappa.md', None),
+        ('Capítulo 11: Ética de investigación y gobernanza de datos', '03-formalizacion/05-etica-y-gobernanza-de-datos.md', None),
     ]),
-    ('Parte 3 — Formalización metodológica', 'parte-3-formalizacion', [
-        ('Capítulo 3.1: Aparato formal mínimo', '03-formalizacion/01-aparato-formal.md', None),
-        ('Capítulo 3.2: Criterios de legitimidad y dossier', '03-formalizacion/02-criterios-de-legitimidad-y-metodo.md', None),
-        ('Capítulo 3.3: Auditoría ontológica como protocolo', '03-formalizacion/03-auditoria-ontologica-y-diseno-de-investigacion.md', None),
-        ('Capítulo 3.4: Operacionalización de κ vía EDI', '03-formalizacion/04-operacionalizacion-de-kappa.md', None),
-        ('Capítulo 3.5: Ética de investigación y gobernanza de datos', '03-formalizacion/05-etica-y-gobernanza-de-datos.md', None),
+    # ── PARTE III: EVIDENCIA EMPÍRICA ───────────────────────────────
+    ('Parte III — Evidencia empírica', 'parte-3-evidencia', [
+        ('Capítulo 12: Criterios de admisión de aplicaciones', '05-aplicaciones/00-criterios-de-admision.md', None),
+        ('Capítulo 13: Caso ancla canónico — Behavioral Dynamics (Warren 2006)', '05-aplicaciones/05-dinamica-conductual-reconstruccion-warren.md', None),
+        ('Capítulo 14: Corpus inter-dominio (30 casos)', '09-simulaciones-edi/README.md', None),
+        ('Capítulo 15: Corpus inter-escala (10 casos)', '05-aplicaciones/06-corpus-multiescala.md', None),
+        ('Capítulo 16: Caso 30 — Behavioral Dynamics bajo EDI', '09-simulaciones-edi/30_caso_behavioral_dynamics/README.md', None),
+        ('Capítulo 17: Aplicaciones programáticas — Mente, memoria, yo', '05-aplicaciones/01-mente-memoria-yo.md', None),
+        ('Capítulo 18: Aplicaciones programáticas — Biología y ecología', '05-aplicaciones/02-biologia-y-ecologia.md', None),
+        ('Capítulo 19: Aplicaciones programáticas — Sistemas técnicos distribuidos', '05-aplicaciones/03-sistemas-tecnicos-distribuidos.md', None),
+        ('Capítulo 20: Aplicaciones programáticas — Instituciones, mercado, Estado', '05-aplicaciones/04-instituciones-mercado-y-estado.md', None),
     ]),
-    ('Parte 4 — Debates y limitaciones', 'parte-4-debates', [
-        ('Capítulo 4.1: Debates con posiciones rivales', '04-debates/01-debates-con-posiciones-rivales.md', None),
-        ('Capítulo 4.2: Limitaciones y puntos de presión', '04-debates/02-limitaciones-y-puntos-de-presion.md', None),
+    # ── PARTE IV: DISCUSIÓN CRÍTICA ─────────────────────────────────
+    ('Parte IV — Discusión crítica', 'parte-4-discusion', [
+        ('Capítulo 21: Debates con posiciones rivales', '04-debates/01-debates-con-posiciones-rivales.md', None),
+        ('Capítulo 22: Limitaciones y puntos de presión', '04-debates/02-limitaciones-y-puntos-de-presion.md', None),
     ]),
-    ('Parte 5 — Aplicaciones del marco', 'parte-5-aplicaciones', [
-        ('Capítulo 5.0: Criterios de admisión de aplicaciones', '05-aplicaciones/00-criterios-de-admision.md', None),
-        ('Capítulo 5.1: Mente, memoria, yo', '05-aplicaciones/01-mente-memoria-yo.md', None),
-        ('Capítulo 5.2: Biología y ecología', '05-aplicaciones/02-biologia-y-ecologia.md', None),
-        ('Capítulo 5.3: Sistemas técnicos distribuidos', '05-aplicaciones/03-sistemas-tecnicos-distribuidos.md', None),
-        ('Capítulo 5.4: Instituciones, mercado, Estado', '05-aplicaciones/04-instituciones-mercado-y-estado.md', None),
-        ('Capítulo 5.5: Caso ancla canónico — Behavioral Dynamics (Warren 2006)', '05-aplicaciones/05-dinamica-conductual-reconstruccion-warren.md', None),
-        ('Capítulo 5.6: Corpus inter-escala (10 casos, escalas atómica a astrofísica)', '05-aplicaciones/06-corpus-multiescala.md', None),
+    # ── PARTE V: CIERRE ─────────────────────────────────────────────
+    ('Parte V — Cierre demostrativo', 'parte-5-cierre', [
+        ('Capítulo 23: Conclusión demostrativa', '06-cierre/01-conclusion-demostrativa.md', None),
+        ('Capítulo 24: Hoja de ruta post-defensa', '06-cierre/03-hoja-de-ruta-para-tesis-final.md', None),
     ]),
-    ('Parte 6 — Cierre demostrativo', 'parte-6-cierre', [
-        ('Capítulo 6.1: Conclusión demostrativa', '06-cierre/01-conclusion-demostrativa.md', None),
-        ('Capítulo 6.2: Guía de defensa oral', '06-cierre/02-guia-de-defensa.md', None),
-        ('Capítulo 6.3: Hoja de ruta para tesis final', '06-cierre/03-hoja-de-ruta-para-tesis-final.md', None),
-    ]),
-    ('Parte 9 — Corpus EDI: justificación operativa', 'parte-9-corpus', [
-        ('Capítulo 9.0: Corpus inter-dominio (30 casos)', '09-simulaciones-edi/README.md', None),
-        ('Capítulo 9.1: Caso 30 — Behavioral Dynamics bajo EDI', '09-simulaciones-edi/30_caso_behavioral_dynamics/README.md', None),
-        ('Capítulo 9.2: Multi-sonda — validación cruzada', '09-simulaciones-edi/multi_sonda/README.md', None),
-        ('Capítulo 9.3: Baselines estadísticos — comparación ejecutada', '09-simulaciones-edi/baselines/README.md', None),
-        ('Capítulo 9.4: Caso piloto COVID — dimensión normativa', '09-simulaciones-edi/covid_pilot/README.md', None),
-        ('Capítulo 9.5: Perfil agresivo — análisis de drift', '09-simulaciones-edi/perfil_agresivo/README.md', None),
-    ]),
+    # ── BIBLIOGRAFÍA ────────────────────────────────────────────────
     ('Bibliografía', 'bibliografia', [
         ('Bibliografía consolidada', '07-bibliografia/01-bibliografia-orientativa.md', None),
     ]),
-    ('Anexos operativos', 'anexos', [
+    # ── ANEXOS OPERATIVOS (A) ───────────────────────────────────────
+    ('Anexos operativos', 'anexos-operativos', [
         ('Anexo A.1: Glosario operativo', 'Anexos/A1-glosario-operativo.md', None),
         ('Anexo A.2: Mapa de operadores formales', 'Anexos/A2-mapa-operadores.md', None),
         ('Anexo A.3: Plantilla del dossier de anclaje', 'Anexos/A3-plantilla-dossier.md', None),
         ('Anexo A.4: Tabla comparativa con rivales', 'Anexos/A4-tabla-comparativa-rivales.md', None),
         ('Anexo A.5: Mapa de aplicaciones', 'Anexos/A5-mapa-aplicaciones.md', None),
-        ('Anexo A.6: Versiones cortas de defensa', 'Anexos/A6-version-corta-defensa.md', None),
+        ('Anexo A.6: Versiones cortas de defensa y guía oral', 'Anexos/A6-version-corta-defensa.md', None),
+        ('Anexo A.7: Guía de defensa oral', '06-cierre/02-guia-de-defensa.md', None),
         ('Anexo A.8: Tablas crudas del corpus inter-dominio', 'Anexos/A8-tablas-crudas-corpus.md', None),
         ('Anexo A.9: Listas de figuras, tablas y abreviaturas', 'Anexos/A9-listas-figuras-tablas-abreviaturas.md', None),
         ('Anexo A.10: Figuras Mermaid', 'Anexos/A10-figuras-mermaid.md', None),
         ('Anexo A.11: Validación lógica formal con ST', 'Anexos/A11-validacion-st.md', None),
         ('Anexo A.12: Corpus inter-escala — tablas crudas', 'Anexos/A12-corpus-multiescala-tablas.md', None),
     ]),
-    ('Auditorías metodológicas', 'auditorias', [
-        ('Auditoría doctoral integral (v2 final)', 'Bitacora/2026-04-28-cierre-pendientes/02-auditoria-doctoral-v2-final.md', None),
-        ('Auditoría V5: vacíos estructurales de contenido filosófico', 'Auditoria_V5_Vacios_Estructurales.md', None),
+    # ── ANEXOS DE PROCESO (B) ───────────────────────────────────────
+    ('Anexos de proceso y administración', 'anexos-proceso', [
+        ('Anexo B.1: Formalización institucional', '00-proyecto/04-formalizacion-institucional.md', None),
+        ('Anexo B.2: Diagnóstico del borrador original', '01-diagnostico/01-falencias-de-la-tesis.md', None),
+        ('Anexo B.3: Objeciones discriminantes anticipadas', '01-diagnostico/02-objeciones-y-riesgos.md', None),
+        ('Anexo B.4: Plan de capítulos original', '00-proyecto/03-plan-de-capitulos.md', None),
+        ('Anexo B.5: Arquitectura del repositorio', '00-proyecto/01-estructura-general.md', None),
+        ('Anexo B.6: Validación cruzada multi-sonda', '09-simulaciones-edi/multi_sonda/README.md', None),
+        ('Anexo B.7: Baselines estadísticos', '09-simulaciones-edi/baselines/README.md', None),
+        ('Anexo B.8: Caso piloto COVID — dimensión normativa', '09-simulaciones-edi/covid_pilot/README.md', None),
+        ('Anexo B.9: Perfil agresivo — análisis de drift', '09-simulaciones-edi/perfil_agresivo/README.md', None),
     ]),
 ]
 

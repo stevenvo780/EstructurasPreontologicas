@@ -1,8 +1,5 @@
 # Hoja de ruta para tesis final
 
-## Función de este capítulo
-
-Este capítulo registra el estado del manuscrito al cierre del 2026-04-28 y los pasos posteriores a la sustentación, organizados como programa de investigación de largo plazo. La política: cada paso lleva entregable concreto y orden de prioridad. Lo ejecutado se reporta como tal; lo que continúa como programa post-defensa se prioriza por su capacidad de fortalecer el conjunto.
 
 ## Tesis del capítulo
 
@@ -249,17 +246,3 @@ El objetivo no es solo tener un texto largo defendible sino un manuscrito que re
 
 Si el manuscrito final cumple las seis cualidades, deja de ser tesis y empieza a ser programa de investigación.
 
-## 13. Lectura cruzada
-
-- conclusión demostrativa: capítulo 06-01;
-- guía de defensa: capítulo 06-02;
-- caso ancla canónico que sirve de modelo a casos elevados: capítulo 05-05;
-- criterios de elevación por dominio: capítulos 05-01 a 05-04;
-- objeciones que la versión final debe anticipar: capítulo 01-02;
-- limitaciones reconocidas: capítulo 04-02;
-- bibliografía orientativa que se convierte en formal: capítulo 07;
-- backlog de mega-tareas archivado: `Bitacora/2026-04-28-cierre-pendientes/mega-tareas-archivadas/`.
-
-## 14. Cierre
-
-> El prototipo doctoral existe y demuestra lo que dice demostrar. El paso siguiente no es inventar otra tesis sino consolidar esta mediante elevación de casos, integración bibliográfica, desarrollo del aparato normativo, lectura hostil y redacción unificada. Menos intuición dispersa, más arquitectura argumentativa probada. Filosóficamente, evolución honesta. Académicamente, manuscrito defendible.

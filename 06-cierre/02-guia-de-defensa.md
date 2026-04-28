@@ -1,8 +1,5 @@
 # Guía de defensa oral
 
-## Función de este capítulo
-
-Esta guía convierte la tesis demostrada en algo defendible oralmente. Una tesis fuerte en papel puede sufrir en exposición si no tiene formulaciones cortas, objeciones anticipadas, respuestas calibradas. La política: cada formulación oral debe ser fiel al contenido demostrativo (capítulo 06-01) y debe sobrevivir a interrogación severa sin retroceder a generalidades.
 
 ## Tesis del capítulo
 
@@ -176,12 +173,3 @@ Si el interlocutor dice "estás eliminando categorías mentales", recordar: la t
 
 Esa es la frase que debería poder sobrevivir incluso si el resto del día filosófico se incendia un poco.
 
-## 9. Lectura cruzada
-
-- conclusión demostrativa que la guía resume: capítulo 06-01;
-- objeciones discriminantes que la guía anticipa: capítulo 01-02;
-- debates con rivales: capítulo 04-01;
-- limitaciones reconocidas: capítulo 04-02;
-- caso ancla canónico: capítulo 05-05;
-- aplicaciones programáticas: capítulos 05-01 a 05-04;
-- hoja de ruta: capítulo 06-03.

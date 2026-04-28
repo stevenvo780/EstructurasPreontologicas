@@ -1,10 +1,5 @@
 # Dimensión normativa y ética — naturalismo no-reduccionista
 
-## Función de este capítulo
-
-Este capítulo articula explícitamente la postura de la tesis sobre **valores, normas, ética y la dimensión normativa en general** dentro de su ontología material-relacional. Su existencia responde al vacío V5-06 identificado en la auditoría V5: una ontología que se afirma **general** debe decir algo sobre la dimensión normativa, no solo sobre la descriptiva.
-
-La tesis no pretende fundar una ética nueva ni resolver los debates clásicos. Lo que sí debe — y este capítulo lo hace — es **declarar postura coherente con su ontología y epistemología generales**, articulando cómo los valores, las normas y la ética se sitúan en el marco material-relacional sin reducirlos ni multiplicarlos.
 
 ## Tesis del capítulo
 
@@ -100,13 +95,3 @@ La operacionalización empírica completa de la dimensión normativa **requiere 
 - **cap 06-01** (conclusión) puede ahora afirmar que la tesis cubre la dimensión normativa sin reducirla;
 - **caso piloto COVID** se reinterpreta a la luz de esta postura: el null no es fracaso de la ética, es señal de que la sonda elegida era inadecuada para capturar la dinámica institucional con saltos discretos.
 
-## 9. Lectura cruzada
-
-- ontología que sostiene la dimensión normativa: cap 02-01;
-- categorías como compresiones (incluidas las normativas): cap 02-03;
-- aplicación a instituciones, mercado, Estado: cap 05-04;
-- caso piloto COVID con resultado null honesto: `09-simulaciones-edi/covid_pilot/README.md`.
-
-## 10. Cierre
-
-> Los valores son atractores normativos materialmente sostenidos. Las normas son constricciones operativas con cuenca medible. La ética no se reduce a descripción material ni requiere sustancia adicional: emerge en el sistema humano-comunidad-historia con eficacia causal y dimensión propia. Esta postura permite a la tesis cumplir su pretensión de **ontología general**: cubre la dimensión normativa sin colapsarla en lo descriptivo ni postularla como plano separado.

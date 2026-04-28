@@ -1,10 +1,5 @@
 # Aparato formal mínimo (metodología general)
 
-## Función de este capítulo
-
-Este capítulo fija el aparato formal de la tesis como **metodología general**. El formalismo no aparece para decorar con símbolos sino para disciplinar el pensamiento. Su función es impedir tres confusiones recurrentes — confundir realidad con modelo, categoría con entidad, complejidad con falta de estructura — y producir un lenguaje común que cualquier capítulo posterior pueda invocar. Lo que aquí se define es lo que los capítulos 03-02 (criterios), 03-03 (auditoría) y 03-04 (operacionalización empírica) operan. La formalización es deliberadamente mínima: gana precisión sin inventar metafísica matemática.
-
-**Estatus general del aparato:** los cinco operadores (μ, G, H, κ, ε) son **invariantes a la escala y al dominio**. La misma definición de μ aplica cuando la medición es de coherencia cuántica, de RMSD molecular, de actividad CDK celular, de demanda eléctrica, de heading conductual, de magnitud aparente estelar o de dispersión de velocidades en un cúmulo globular. Lo que cambia con cada caso es la sonda específica que se inserta en G y H; la **operación formal** —medir, graficar dependencias, comprimir, reabrir cuando aparezcan anomalías— es la misma. Esta invarianza no es coincidencia sintáctica: es el correlato metodológico de que la ontología y la epistemología son generales (cap 02-01 y 02-02). Si la ontología fuera regional, cada escala requeriría su propio aparato; como la ontología es general, una sola metodología basta.
 
 ## Tesis del capítulo
 
@@ -284,7 +279,7 @@ Si el formalismo se usa para mucho más, sobreactúa. La cláusula:
 
 > El aparato formal mínimo consiste en una pregunta paramétrica Q y cinco operadores (μ, G, H, κ, ε) con criterios de admisión, criterios de fallo y procedimientos empíricos de aplicación. Los operadores no son ontología adicional: son disciplina de la inteligibilidad de la ontología material-relacional sobre fenómenos empíricamente accesibles. Su valor se prueba en el caso ancla canónico (capítulo 05-05); su programa de extensión se especifica en los capítulos de aplicaciones.
 
-## 15. Estatus ontológico de las entidades matemáticas (V5-08)
+## 15. Estatus ontológico de las entidades matemáticas
 
 La tesis usa hipergrafos, ODE, dinámica no-lineal, bootstrap, permutación. ¿Qué estatus ontológico tienen las entidades matemáticas en el marco material-relacional?
 
@@ -309,13 +304,3 @@ Si las **estructuras pre-ontológicas son atractores** y los atractores son **ob
 
 **Respuesta:** la matemática es **real en sentido representacional moderado**: es la herramienta formal que captura las dependencias del sustrato material. Los atractores existen materialmente (como patrones del sustrato dinámico); las descripciones matemáticas de los atractores existen como **representaciones legítimas** de esos patrones cuando preservan dependencias decisivas. La realidad ontológica primaria está en el sustrato; la realidad de las estructuras matemáticas es **derivada y representacional**.
 
-## 15. Lectura cruzada
-
-- ontología que el aparato modeliza: capítulo 02-01;
-- epistemología que justifica la operación de κ y ε: capítulo 02-02;
-- nivel B donde se mide: capítulo 02-04;
-- criterios de legitimidad de los operadores: capítulo 03-02;
-- protocolo de auditoría que usa el aparato: capítulo 03-03;
-- procedimiento empírico de κ: capítulo 03-04;
-- aplicación demostrativa: capítulo 05-05;
-- aplicaciones programáticas: capítulos 05-01 a 05-04.

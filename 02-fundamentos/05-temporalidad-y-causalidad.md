@@ -1,10 +1,5 @@
 # Temporalidad y causalidad — fundamentos generales
 
-## Función de este capítulo
-
-Este capítulo articula explícitamente lo que la tesis presupone sobre **tiempo** y **causalidad**, dimensiones ontológicas fundamentales que ningún capítulo anterior trató sistemáticamente. Su existencia responde a los vacíos V5-02 (temporalidad ausente), V5-03 (causalidad sin teoría) y V5-09 (downward causation sin tratamiento de Kim) identificados en la auditoría V5.
-
-Una ontología que se afirma **general multiescalar** debe tener postura explícita sobre tiempo y causalidad, porque ambas son dimensiones ontológicas que atraviesan toda escala (no son propiedades regionales). La omisión de estos temas en la primera iteración del manuscrito era laguna estructural.
 
 ## Tesis del capítulo
 
@@ -75,7 +70,7 @@ La tesis usa "causalidad circular" en cap 02-04 §3 (acoplamientos simultáneos 
 
 Kim (1998, *Mind in a Physical World*, cap. 4, p. 84) presenta el **argumento de exclusión causal**: si el nivel macro M causa Y y los componentes micro P causan Y, entonces M es causalmente sobredeterminante o epifenoménico; ambas opciones rechazables, luego M no causa Y.
 
-**Respuesta de la tesis (V5-09):**
+**Respuesta de la tesis:**
 
 La tesis NO afirma downward causation en el sentido fuerte que Kim ataca. La tesis afirma **constitución descendente** (downward constitution), que es relación distinta:
 
@@ -109,14 +104,3 @@ La tesis ahora afirma con respaldo articulado:
 
 Esto cubre los vacíos V5-02, V5-03, V5-09 con honestidad: la tesis no inventa metafísica del tiempo ni de la causalidad; **adopta posturas defendidas en la literatura** y las articula explícitamente para que el aparato no quede flotando metodológicamente.
 
-## 4. Lectura cruzada
-
-- ontología que estas dimensiones presuponen: cap 02-01;
-- aparato formal que opera intervenciones causales: cap 03-01;
-- procedimiento empírico de κ (que presupone temporalidad): cap 03-04;
-- self-organization (que presupone constitución descendente): cap 02-04 §4;
-- limitaciones reconocidas: cap 04-02.
-
-## 5. Cierre
-
-> El tiempo es real-relacional, la flecha es termodinámica, la causalidad es manipulabilidad woodwardiana, la circularidad es retroacción dinámica con grafos cíclicos, y lo que parecía downward causation es constitución descendente compatible con exclusión causal. Estas posturas no son originales — son adopciones explícitas de la literatura — pero hacían falta articuladas para que la ontología material-relacional general no quedara con dos huecos centrales sin cerrar.

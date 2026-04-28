@@ -99,7 +99,7 @@ El manuscrito se entrega en estado **integral defendible bajo régimen declarado
 - validación lógica formal con suite ST de 13 teorías;
 - hostile testing aplicado y verificado (auditoría severa N1-N5 + auditoría V4 V4-01, V4-06, V4-09).
 
-## 10. Reconocimiento explícito de auto-validación (auditoría V4-10)
+## 10. Reconocimiento explícito de auto-validación
 
 Todas las auditorías internas del manuscrito (v1, v2 final, severa, v3, v4) son **endógenas**: producidas por la asistencia IA bajo dirección humana de los autores, sin revisión externa hostil de pares humanos competentes.
 
@@ -113,9 +113,3 @@ Esto significa que:
 
 Esta cláusula reconoce que la honestidad metodológica del manuscrito requiere validación externa, no solo hostile testing interno.
 
-## 10. Lectura cruzada
-
-- Política de manejo de datos por caso: `03-formalizacion/05-etica-y-gobernanza-de-datos.md`.
-- Hoja de ruta del cierre doctoral: `06-cierre/03-hoja-de-ruta-para-tesis-final.md`.
-- Trazabilidad del proceso de construcción: `Bitacora/`.
-- Auditorías doctorales internas: `Bitacora/2026-04-27-integracion-jacob/04-auditoria-doctoral-v1.md` y `Auditoria_Doctoral.md` (v2).

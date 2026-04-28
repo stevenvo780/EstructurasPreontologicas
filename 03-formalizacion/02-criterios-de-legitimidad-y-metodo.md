@@ -1,8 +1,5 @@
 # Criterios de legitimidad y dossier de anclaje
 
-## Función de este capítulo
-
-Este capítulo convierte los principios filosóficos de la tesis en un filtro de admisión operable. Cualquier modelo, categoría, compresión o aplicación que aparezca en el manuscrito debe pasar por aquí antes de admitirse. La función es severa: la tesis no se mide por su elegancia retórica sino por su capacidad de exigir compromisos públicos verificables a cada uno de sus productos. El capítulo 03-01 fija el aparato; este especifica las condiciones que debe satisfacer cualquier uso del aparato.
 
 ## Tesis del capítulo
 
@@ -246,11 +243,3 @@ Pearl (2009, *Causality*, cap. 3, p. 86) formaliza la diferencia entre `P(y|x)` 
 
 Los diez criterios y el dossier de anclaje convierten la tesis en una propuesta auditable. Ningún producto del marco entra en el manuscrito sin pasar el filtro. La diferencia con un manifiesto es esta exactamente: un manifiesto promete; un programa de investigación se compromete. La tesis se compromete con el dossier.
 
-## 13. Lectura cruzada
-
-- aparato formal que el dossier instrumenta: capítulo 03-01;
-- protocolo de auditoría que aplica el dossier paso a paso: capítulo 03-03;
-- procedimiento empírico de κ: capítulo 03-04;
-- objeciones que el dossier neutraliza: capítulo 04-02;
-- dossier completo del caso ancla canónico: capítulo 05-05;
-- dossier programático de cada dominio adicional: capítulos 05-01 a 05-04.

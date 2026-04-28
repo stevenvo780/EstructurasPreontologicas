@@ -4,9 +4,6 @@
 
 Este capítulo presenta una aplicación en **modo programático** según el capítulo 05-00. Articula una conjetura de aplicación del marco material-relacional al dominio mente / memoria / yo, con criterios explícitos de elevación a modo demostrativo. No demuestra; conjetura con plan de prueba.
 
-## Función de este capítulo
-
-La filosofía de la mente es terreno privilegiado para probar la tesis porque reúne casi todas las tentaciones que el marco corrige: reificación de categorías ordinarias (`mente` como sustancia), dualismo encubierto, reduccionismo neuronal simplista, vaguedad de `emergencia`, confusión entre experiencia, mecanismo y vocabulario. La conjetura: el aparato material-relacional con anclaje en B (capítulo 02-04) y dossier de admisión (03-02) puede reformular las tres categorías centrales — mente, memoria, yo — sin eliminarlas y sin reificarlas.
 
 ## Conjetura del capítulo
 
@@ -212,68 +209,58 @@ Searle defiende que la mente es propiedad biológica del cerebro. La tesis difie
 
 Ambos como antídoto permanente contra reificación gramatical de categorías mentales.
 
-## 7. Lo que este capítulo devuelve a la tesis general
-
-Este dominio prueba que el aparato puede tratar fenómenos clásicamente difíciles sin recaer en dualismo, reduccionismo o eliminativismo. La conjetura es articulada y elevable. La asimetría con el caso ancla canónico se nombra: faltan datos cuantitativos publicados de la calidad de Warren en este dominio. El programa posterior es claro.
-
-## 8. Limitación honesta
-
-Este capítulo conjetura. No demuestra. La elevación a modo demostrativo requiere construir tareas y datos que no están en el manuscrito. La tesis no presenta este dominio como prueba; lo presenta como aplicación articulada con plan.
-
-## 9. Lectura cruzada
-
-- ontología material-relacional: capítulo 02-01;
-- nivel B y acoplamiento: capítulo 02-04;
-- aparato formal: capítulo 03-01;
-- criterios de admisión: capítulo 03-02 y 05-00;
-- caso ancla canónico (demostrativo): capítulo 05-05;
-- limitaciones y deuda residual: capítulo 04-02 y 06-01.
-
-## A. Dimensión fenomenológica y qualia (V5-04)
+## 7. Dimensión fenomenológica y qualia
 
 Una ontología que se afirma **general** debe tener postura sobre la **experiencia subjetiva**. La tesis adopta **complementarismo metodológico**: la fenomenología en primera persona y el aparato EDI en tercera persona son **métodos diferentes para fenómenos distintos pero ontológicamente continuos**.
 
-### A.1. Postura sobre los qualia
+### 7.1. Postura sobre los qualia
 
 - Los qualia (cualidades fenoménicas: el rojo del rojo, el dolor del dolor) **NO se reducen a atractores conductuales** ni a estados neurales descriptos en tercera persona;
 - pero **NO requieren sustancia mental separada** (la tesis es naturalista no-reduccionista, cap 02-01 §0.1);
 - los qualia son **propiedades constitutivas** del sistema acoplado organismo-mundo bajo el aspecto en primera persona;
 - esto se alinea con Thompson (2007, *Mind in Life*, cap. 11, p. 312): *"experience is not in the head, but in the world enacted by the embodied mind"*.
 
-### A.2. El "problema duro" de Chalmers
+### 7.2. El "problema duro" de Chalmers
 
 Chalmers (1995, *Journal of Consciousness Studies* 2:200-219) plantea que ningún relato funcional explica por qué hay experiencia. La tesis responde:
 
 - el aparato EDI **no resuelve** el problema duro: ese no es su propósito;
 - el aparato describe la dinámica conductual-acoplada (tercera persona); no agota la realidad fenomenológica;
-- la **complementariedad** con métodos fenomenológicos (Husserl 1913 *Ideas I*, Merleau-Ponty 1945 *Fenomenología de la percepción*, Varela neurofenomenología) es feature, no bug;
+- la **complementariedad** con métodos fenomenológicos (Husserl 1913 *Ideas I*, Merleau-Ponty 1945 *Fenomenología de la percepción*, Varela neurofenomenología) es una característica de diseño, no un fallo;
 - la tesis ofrece **co-existencia disciplinada** entre tercera y primera persona, no eliminación de una por la otra.
 
-### A.3. Diálogo textual
+### 7.3. Diálogo textual extendido
 
-- **Husserl** (1913, *Ideas I*, §49, p. 92 ed. Springer): *"jede Erlebnis ist Bewusstsein, und Bewusstsein ist Bewusstsein von etwas"*. La tesis recoge: la conciencia es **intencional**, dirigida a contenido. Esto es compatible con la tesis: la intencionalidad es propiedad del sistema acoplado organismo-mundo en primera persona.
+- **Husserl** (1913, *Ideas I*, §49, p. 92 ed. Springer): *"jede Erlebnis ist Bewusstsein, y Bewusstsein ist Bewusstsein von etwas"*. La tesis recoge: la conciencia es **intencional**, dirigida a contenido. Esto es compatible con la tesis: la intencionalidad es propiedad del sistema acoplado organismo-mundo en primera persona.
 - **Merleau-Ponty** (1945, *Fenomenología de la percepción*, p. xi ed. Gallimard): *"le corps est notre moyen général d'avoir un monde"*. La tesis lo recoge: el cuerpo es el **acoplador material** que constituye el mundo experimentado.
 - **Nagel** (1974, "What is it Like to be a Bat?", *Philosophical Review* 83:435-450, p. 436): el carácter subjetivo de la experiencia *"will not be adequately captured by any of the familiar, recently devised reductive analyses of the mental"*. La tesis recoge: el aparato EDI **no captura el carácter subjetivo**, pero esto no debilita su validez en su régimen propio.
 
-## B. Sujeto, agencia, libertad (V5-10)
+## 8. Sujeto, agencia, libertad
 
-### B.1. Compatibilismo dennettiano matizado
+### 8.1. Compatibilismo dennettiano matizado
 
 La tesis adopta **compatibilismo**: la libertad humana es compatible con determinismo material si por libertad entendemos **capacidad de control reflexivo** del propio comportamiento, no contracausalidad metafísica. Dennett (2003, *Freedom Evolves*, cap. 2, p. 56) lo articula: *"a free choice is one made for reasons, by an agent who can reflect on those reasons"*.
 
-### B.2. Estructura del agente en la tesis
+### 8.2. Estructura del agente en la tesis
 
 - El agente es **atractor de integración** corporal-narrativa-social-afectiva (cap 02-03 §8.5);
 - la agencia es **propiedad operativa del atractor**: el sistema acoplado organismo-entorno-tarea-historia tiene capacidades de selección reflexiva entre alternativas;
 - la libertad NO es contracausal; es **capacidad de control reflexivo** materialmente realizada.
 
-### B.3. Diálogo
+### 8.3. Posiciones rivales en libertad
 
 - **Frankfurt** (1971, "Freedom of the Will and the Concept of a Person", *Journal of Philosophy* 68:5-20): la libertad es jerarquía de deseos. La tesis recoge: el atractor humano tiene **estructura jerárquica** de variables que opera como deseos sobre deseos.
 - **Pereboom** (2001, *Living Without Free Will*) defiende eliminativismo de la libertad. La tesis lo rechaza por incompatible con el realismo moderado de patrones materialmente sostenidos.
 
-## 10. Cierre
+## 9. Lo que este capítulo devuelve a la tesis general
+
+Este dominio prueba que el aparato puede tratar fenómenos clásicamente difíciles sin recaer en dualismo, reduccionismo o eliminativismo. La conjetura es articulada y elevable. La asimetría con el caso ancla canónico se nombra: faltan datos cuantitativos publicados de la calidad de Warren en este dominio. El programa posterior es claro.
+
+## 10. Limitación honesta
+
+Este capítulo conjetura. No demuestra. La elevación a modo demostrativo requiere construir tareas y datos que no están en el manuscrito. La tesis no presenta este dominio como prueba; lo presenta como aplicación articulada con plan.
+
+## 11. Cierre
 
 > La mente no es cosa adicional al organismo, pero tampoco se deja agotar por una lista plana de eventos neuronales. Es atractor de integración corporal-cognitivo-afectivo-social-histórico cuya legitimidad como compresión depende de qué integra, qué conserva, para qué pregunta sirve, y qué predicción discriminante propone respecto a rivales identificables.
 
-Para que esta conjetura se eleve a demostración, hay que construir el dossier. Eso es trabajo posterior, fechado, con entregable definido en la hoja de ruta.

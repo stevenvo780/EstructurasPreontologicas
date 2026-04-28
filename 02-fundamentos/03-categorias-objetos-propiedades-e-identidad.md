@@ -1,8 +1,5 @@
 # Categorías, objetos, propiedades e identidad
 
-## Función de este capítulo
-
-La ontología (02-01) y la epistemología (02-02) fijan el suelo y la teoría del conocimiento. Este capítulo aplica ambas a las cuatro nociones que sostienen buena parte del pensamiento ordinario y científico: categoría, objeto, propiedad, identidad. Si estas no se reformulan con cuidado, la tesis se proclama relacional mientras sigue pensando con metafísica sustancialista de fondo. La consigna es severa: cada noción se reformula con criterio operativo que cualquier capítulo subsiguiente puede invocar como filtro.
 
 ## Tesis del capítulo
 
@@ -172,7 +169,7 @@ Wittgenstein (*Investigaciones Filosóficas* §66, ed. Macmillan 1953, p. 27e) a
 
 Bourdieu (1980, *Le sens pratique*, cap. 3, p. 88) define el habitus como *"sistemas de disposiciones durables y transponibles, estructuras estructuradas predispuestas a funcionar como estructuras estructurantes"*. La tesis traduce literalmente: el habitus es **disposición relacional materialmente incorporada** (cuerpo, gestos, lenguaje) que constituye atractor en el campo de prácticas. Donde Bourdieu describe cualitativamente la persistencia del habitus *"aún cuando las condiciones objetivas que lo produjeron han cambiado"* (1980, p. 100), la tesis opera la persistencia como **anchura de la cuenca** del atractor (tema desarrollado en 05-04).
 
-## 8.bis. Identidad personal a través del tiempo (V5-15)
+## 8.bis. Identidad personal a través del tiempo
 
 La tesis trata identidad como **continuidad organizada bajo transformación** (§4) sin abordar específicamente la cuestión clásica de **identidad personal a través del tiempo**. Aclaración:
 
@@ -210,14 +207,3 @@ Esto se aplica también a los términos del propio marco: `dossier`, `compresió
 
 Categorías son compresiones semánticas auditables. Objetos son unidades operativas relativas con tipos discriminables. Propiedades son disposiciones relacionales materialmente ancladas. Identidad es continuidad organizada como cuenca persistente. Las cuatro reformuladas son el inventario suficiente para que la tesis trate cualquier dominio sin sustancialismo y sin nominalismo. Lo que con ellas se puede hacer es lo que el capítulo 03 (formalización) opera y lo que los capítulos 05 (aplicaciones) demuestran.
 
-## 11. Lectura cruzada
-
-- definición técnica de patrón estabilizado: capítulo 02-01;
-- nivel B donde se mide el anclaje: capítulo 02-04;
-- procedimiento empírico de admisión: capítulo 03-04;
-- criterios formales de legitimidad: capítulo 03-02;
-- aplicación a mente: 05-01;
-- aplicación a biología/ecología: 05-02;
-- aplicación a sistemas técnicos: 05-03;
-- aplicación a instituciones: 05-04;
-- caso ancla canónico: 05-05.

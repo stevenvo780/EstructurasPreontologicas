@@ -1,10 +1,8 @@
 # Ontología material-relacional
 
-## Función de este capítulo
 
-Este capítulo fija el suelo ontológico de la tesis: qué cuenta como existente, qué cuenta como entidad, qué cuenta como propiedad y qué se rechaza como inflación. Lo hace sin retórica de mobiliario y sin proliferación de planos. Su criterio rector es brutal: solo entra lo que el aparato del manuscrito puede luego operar y validar. Cualquier afirmación ontológica que no produzca consecuencia operacional en los capítulos siguientes se trata como literatura y se elimina.
 
-## 0. Pregunta filosófica fundamental (V5-00)
+## 0. Pregunta filosófica fundamental
 
 > **¿Qué hay que hay, y cómo lo conocemos sin reificarlo prematuramente?**
 
@@ -12,7 +10,7 @@ Esta es la pregunta filosófica que motiva la tesis. La pregunta tiene dos polos
 
 La tesis responde: **lo que hay son patrones materialmente sostenidos en un sustrato dinámico**, identificables como atractores empíricos de sistemas acoplados; lo conocemos comprimiendo dependencias decisivas bajo intervención ablativa; el filtro contra reificación es el dossier de admisión de catorce componentes. Esto no es la única respuesta posible (el dualismo, el idealismo, el panpsiquismo y el operacionalismo puro responden distinto); es la respuesta que la tesis defiende y que el corpus inter-dominio + inter-escala respalda operativamente.
 
-## 0.1. Naturalismo metafísico moderado como compromiso de partida (V5-07)
+## 0.1. Naturalismo metafísico moderado como compromiso de partida
 
 La tesis adopta **naturalismo metafísico moderado** como **compromiso de partida explícitamente declarado**, no como conclusión demostrada. Esto significa:
 
@@ -33,7 +31,7 @@ La tesis adopta **naturalismo metafísico moderado** como **compromiso de partid
 
 El compromiso por naturalismo no es **arbitrario**: es la elección que hace la tesis viable como programa de investigación articulado con disciplinas científicas existentes. La tesis declara esto abiertamente para evitar la objeción de petición de principio.
 
-## 0.2. En qué sentido las estructuras son **pre-ontológicas** (V5-01)
+## 0.2. En qué sentido las estructuras son **pre-ontológicas**
 
 El título de la tesis es *Estructuras Pre-Ontológicas*. El término "pre-ontológico" es técnico y exige aclaración filosófica. Distinguimos cinco sentidos posibles del prefijo "pre"; la tesis adopta una **combinación específica de dos** y rechaza los otros tres:
 
@@ -62,7 +60,7 @@ Las estructuras pre-ontológicas, en este sentido, **no son entidades fundaciona
 
 El término *pre-ontológico*, así definido, **es coherente con Simondon, compatible con Bunge sistemista, y articulable con realismo estructural moderado**. Es la categoría ontológica central de la tesis.
 
-## 0.3. Diálogo con la tradición filosófica latinoamericana e institucional (V5-13)
+## 0.3. Diálogo con la tradición filosófica latinoamericana e institucional
 
 Para tesis depositada en la Universidad de Antioquia, el diálogo con la tradición filosófica institucional es deuda académica reconocida:
 
@@ -119,7 +117,7 @@ Esta es la diferencia entre **ontología general** y **descripción multidominio
 
 ### Nota sobre el sistema modal asumido
 
-Cuando este capítulo y los posteriores invocan **necesidad** o **contingencia** (e.g., "la materialidad es necesaria", "el cierre operativo es contingente"), la lógica modal asumida es **al menos T (KT)**: el axioma de reflexividad `□P → P` está disponible. Esto significa que lo declarado como necesario implica que ocurre en el mundo de evaluación, evitando una lectura puramente esquemática de la necesidad. Sistemas más ricos (S4, S5) son admisibles para la lectura epistémica del capítulo 02-02. Esta declaración fue impuesta por la validación lógica formal con ST (Anexo A.11, Hallazgo ST-2): en `modal.k` básico la necesidad no implica efectividad, lo cual sería incoherente con la posición material-relacional.
+Cuando este capítulo y los posteriores invocan **necesidad** o **contingencia** (e.g., "la materialidad es necesaria", "el cierre operativo es contingente"), la lógica modal asumida es **al menos T (KT)**: el axioma de reflexividad `□P → P` está disponible. Esto significa que lo declarado como necesario implica que ocurre en el mundo de evaluación, evitando una lectura puramente esquemática de la necesidad. Sistemas más ricos (S4, S5) son admisibles para la lectura epistémica del capítulo de epistemología. La validación lógica formal con ST (Anexo A.11) verificó que en `modal.k` básico la necesidad no implica efectividad, lo cual sería incoherente con la posición material-relacional.
 
 ### Nota sobre el grado de compromiso ontológico de κ
 
@@ -135,7 +133,7 @@ La posición filosófica del **irrealismo operativo** se sitúa **explícitament
 - las estructuras pre-ontológicas son **reales en sentido moderado**: existen como atractores dinámicos materialmente sostenidos;
 - pero su descripción cuantitativa específica (parámetros, sondas, niveles) es **dependiente del aparato**;
 
-### Criterios operativos para distinguir κ-pragmática de κ-ontológica (auditoría V4-07)
+### Criterios operativos para distinguir κ-pragmática de κ-ontológica
 
 Para que la afirmación κ-ontológica fuerte se sostenga sobre un caso particular, deben cumplirse **tres criterios simultáneos** (ninguno por sí solo basta):
 
@@ -157,7 +155,7 @@ Esta es una **distinción honesta**: el manuscrito declara con precisión qué d
 - la corrección de los umbrales y la elección de la sonda son siempre revisables;
 - lo que NO es revisable (en su régimen declarado) es el sustrato material del cual la estructura es atractor.
 
-Esta distinción se impuso tras la auditoría severa (`Bitacora/2026-04-28-cierre-pendientes/03-auditoria-severa.md` ataque A8), que señaló que la formulación previa colapsaba ambas lecturas. El cap 04-02 reconoce este punto como límite del marco, no como debilidad oculta.
+El capítulo de limitaciones (Parte IV) reconoce este punto como límite del marco, no como debilidad oculta.
 
 ## 1. Lo que existe
 
@@ -327,7 +325,7 @@ Simondon ofrece la individuación como génesis: los individuos no preexisten al
 
 > Existe un solo plano material dinámico. Sus estabilizaciones son atractores empíricamente identificables de sistemas acoplados. Las entidades, propiedades, identidades y niveles son modos de describir esas estabilizaciones bajo régimen de medición y pregunta explícita. La ontología no multiplica sustancias y no empobrece la organización: opera bajo el doble criterio de austeridad de sustancia y riqueza de relación, con admisión condicionada por traducibilidad al nivel B y por validación empírica.
 
-## 12bis. La cuestión del observador en escala cuántica (V5-12)
+## 12bis. La cuestión del observador en escala cuántica
 
 La generalidad multiescalar de la tesis llega hasta la escala cuántica (caso 31 decoherencia, caso 32 espín-órbita). En escala cuántica, la cuestión del observador es problema ontológico fundamental desde Copenhagen: ¿la medición colapsa el estado, o el estado siempre fue determinado, o todas las ramas se realizan?
 
@@ -350,34 +348,8 @@ La tesis NO decide entre estas interpretaciones realistas — esa decisión reba
 
 La afirmación "estructuras pre-ontológicas a escala cuántica" tiene sentido **bajo interpretación realista** de la mecánica cuántica. Bajo Copenhagen pura, las "estructuras" serían artefacto del acto de medición, lo cual sería incompatible con la tesis. Por eso la tesis se compromete con la familia realista, sin decidir entre sus miembros.
 
-## 12ter. Diálogo con manuscrito-fuente original (V5-16)
+## 12ter. Evolución conceptual
 
-`Bitacora/2026-04-27-integracion-jacob/00-tesis-fuente-original.md` es la formulación intuitiva de partida. `Bitacora/.../04-evolucion-conceptual.md` documenta la evolución conceptual hacia la versión canónica. Los claims principales del manuscrito-fuente que **sobreviven íntegramente** en esta versión son:
+La formulación intuitiva de partida evolucionó hacia la versión canónica. Los claims principales que sobreviven íntegramente son: monismo material-dinámico, estructuras pre-ontológicas como atractores, compresión disciplinada como epistemología, asimetría L1↔B↔L3↔S, emergencia como self-organization, dossier de admisión, y la fórmula "X exhibe cierre operativo bajo I respecto a Q". Los claims refinados incluyen: caso 30 con circularidad reconocida, corpus post-hoc, AUC-ROC interno, κ-pragmática vs κ-ontológica distinguidas, sistema modal T explícito. La continuidad conceptual es fuerte; la honestidad metodológica es mayor en la versión actual.
 
-- monismo material-dinámico (cap 02-01 §1);
-- estructuras pre-ontológicas como atractores (cap 02-01 §2);
-- compresión disciplinada como epistemología (cap 02-02);
-- asimetría L1↔B↔L3↔S (cap 02-04 §8);
-- emergencia como self-organization (cap 02-04 §4);
-- dossier de admisión (cap 03-02);
-- "X exhibe cierre operativo bajo I respecto a Q" como fórmula (cap 02-01).
 
-Los claims que **fueron refinados o atenuados** se documentan en `04-evolucion-conceptual.md`: caso 30 con circularidad reconocida; corpus post-hoc; AUC-ROC interno no externo; κ-pragmática vs κ-ontológica distinguidas; sistema modal T explícito; asimetría como FOL existencial. La continuidad conceptual entre fuente y versión canónica es **fuerte**; la honestidad metodológica es **mayor en la versión canónica**.
-
-## 13. Lectura cruzada
-
-Lo que esta ontología sostiene se opera en:
-
-- las herramientas formales: capítulo 03-01 (aparato), 03-04 (operacionalización de κ);
-- el anclaje empírico: capítulo 02-04 (B);
-- los criterios de legitimidad: capítulo 03-02;
-- la auditoría categorial: capítulo 02-03 (categorías, objetos, propiedades, identidad);
-- la prueba demostrativa: capítulo 05-05 (caso ancla canónico);
-- las objeciones que la presionan: capítulo 04-02.
-
-Lo que esta ontología rechaza se discute en:
-
-- capítulo 04-01 (debates con rivales filosóficos);
-- capítulo 04-02 (limitaciones que sobreviven a la corrección).
-
-La fórmula del cierre no es retórica. Es la condición de admisión que rige todo lo que viene después.

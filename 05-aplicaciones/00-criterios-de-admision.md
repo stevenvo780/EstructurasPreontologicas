@@ -1,8 +1,5 @@
 # Criterios de admisión de aplicaciones
 
-## Función de este capítulo
-
-Este capítulo fija los criterios bajo los cuales una aplicación entra en el manuscrito. La distinción es central para la honestidad de la tesis: se admiten dos modos disjuntos, demostrativo y programático, con criterios distintos. Un caso demostrativo es una prueba; un caso programático es una conjetura con plan de prueba. Ningún caso se admite fuera de uno de los dos modos. Esta política responde directamente a la objeción de sobreextensión generalista (capítulo 01-02 §5).
 
 ## Tesis del capítulo
 
@@ -126,16 +123,3 @@ Bunge insiste en que la filosofía científica debe diferenciar análisis concep
 
 Esta política de admisión es la respuesta operativa a la objeción de sobreextensión. La tesis admite que solo está demostrada en su caso ancla y que los demás dominios son conjeturas con plan. La diferencia entre conjetura articulada y conjetura imprecisa es la articulación de los criterios de elevación. Cada capítulo programático lleva esa articulación; cada capítulo demostrativo lleva su dossier completo.
 
-## 10. Lectura cruzada
-
-- aparato formal que el dossier instrumenta: capítulo 03-01;
-- criterios y dossier completo: capítulo 03-02;
-- protocolo de auditoría: capítulo 03-03;
-- procedimiento empírico de κ: capítulo 03-04;
-- caso ancla canónico (demostrativo): capítulo 05-05;
-- mente (programático): capítulo 05-01;
-- biología (programático): capítulo 05-02;
-- sistemas técnicos (programático): capítulo 05-03;
-- instituciones (programático): capítulo 05-04;
-- objeción que justifica la distinción: capítulo 01-02 §5;
-- deuda residual: capítulo 06-01.

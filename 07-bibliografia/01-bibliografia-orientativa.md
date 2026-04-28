@@ -1,8 +1,5 @@
 # Bibliografía formal del proyecto
 
-## Función de este capítulo
-
-Bibliografía nuclear consolidada del manuscrito doctoral *Estructuras Pre-Ontológicas: Realismo Irrealista Operativo y Compresión Multiescala con Validación EDI Multidominio*. 90 referencias formales organizadas en doce secciones temáticas en estilo Chicago author-date, más mapa de fuentes de datos por caso del corpus.
 
 ## Asignación de interlocutores por capítulo
 

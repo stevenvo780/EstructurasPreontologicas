@@ -1,8 +1,6 @@
 # Limitaciones y puntos de presión
 
-## Función de este capítulo
 
-Una tesis doctoral honesta nombra sus zonas delicadas con la misma precisión con la que defiende sus tesis fuertes. Este capítulo reúne los límites que sobreviven a las correcciones, los puntos donde la argumentación debe ser más cuidadosa, y la deuda residual que el manuscrito reconoce explícitamente. La política es severa: lo que aquí entra es genuinamente débil. Lo que ya está resuelto no entra.
 
 ## Tesis del capítulo
 
@@ -197,11 +195,4 @@ Ese tipo de modestia fuerte suele convencer más que una ambición totalizadora 
 
 La tesis sobrevive a las objeciones discriminantes (capítulo 04-01 y 01-diagnostico/02) si logra mantener austeridad ontológica, riqueza estructural, criterios explícitos, casos comparativos fuertes y vigilancia del propio léxico. Los seis límites de este capítulo no debilitan la tesis: la sitúan en su régimen de validez. Una tesis sin límites nombrados es una tesis que aún no se ha sometido a sí misma a su propio filtro.
 
-## 14. Lectura cruzada
 
-- diagnóstico estructural inicial: capítulo 01-01;
-- objeciones discriminantes: capítulo 01-02;
-- debates con posiciones rivales: capítulo 04-01;
-- aplicaciones programáticas con su deuda: capítulos 05-01 a 05-04;
-- cierre demostrativo y deuda residual: capítulo 06-01;
-- hoja de ruta para tesis final: capítulo 06-03.

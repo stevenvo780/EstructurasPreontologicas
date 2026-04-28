@@ -1,8 +1,5 @@
 # El nivel B: anclaje empírico (general multiescalar)
 
-## Función de este capítulo
-
-Este capítulo introduce el nivel pleno que el borrador original tenía mal definido. Lo que llamaba `L2 — neurobiológico local` saltaba precisamente el nivel donde el fenómeno vive. **En la versión multiescalar de la tesis**, B es el nivel donde el sistema dinámico acoplado se materializa **a cualquier escala**: para fenómenos psicológicos B es organismo-entorno-tarea-historia (caso ancla Warren 2006); para fenómenos cuánticos B es qubit-baño-temperatura-pulsos; para fenómenos astrofísicos B es cúmulo-galaxia-marea; etc. La estructura del nivel B es **invariante a la escala**; lo que cambia son las variables específicas que entran en cada uno de sus cinco bloques.
 
 ## Tesis del capítulo
 
@@ -48,7 +45,7 @@ Superficies, objetos, fuerzas físicas (gravedad, fricción, restitución), prop
 
 ### 2.3. Información ecológica
 
-#### 2.3.0. Definición filosófica de información (V5-11)
+#### 2.3.0. Definición filosófica de información
 
 Antes de listar los ejemplos, fijamos qué entiende por información la tesis. La tesis adopta una **definición material-relacional de información** que combina dos tradiciones:
 
@@ -240,12 +237,3 @@ Con la incorporación de B como nivel pleno, la tesis recupera el plano que la r
 - la epistemología de la compresión gana su test (la dinámica de baja dimensión a nivel B);
 - la crítica al mentalismo deja de ser eliminativa para volverse constructiva: no se trata de borrar `mente`, `memoria` o `yo`, sino de reconstruir cuáles atractores conductuales-ecológicos comprime cada una y, a partir de ahí, decidir qué se conserva, qué se reformula y qué se descarta.
 
-## 13. Lectura cruzada
-
-- definición técnica de patrón estabilizado: capítulo 02-01;
-- compresión como operación epistémica: capítulo 02-02;
-- categorías, objetos, propiedades, identidad: capítulo 02-03;
-- aparato formal con μ, G, H, κ, ε: capítulo 03-01;
-- procedimiento empírico de κ vía baja dimensionalidad: capítulo 03-04;
-- demostración del nivel B en el caso ancla canónico: capítulo 05-05;
-- aplicación programática a mente: capítulo 05-01.

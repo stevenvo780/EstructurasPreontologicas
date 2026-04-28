@@ -1,8 +1,5 @@
 # Debates con posiciones rivales
 
-## Función de este capítulo
-
-Este capítulo confronta la tesis con sus rivales reales bajo criterios públicos de discriminación. No se trata de derribar siluetas sino de examinar dónde la tesis gana, dónde pierde y dónde empata respecto a posiciones que ocupan terreno empíricamente comparable. La consigna: cada rival se presenta en su forma fuerte, se identifica el punto de discriminación con el aparato del manuscrito, y se publica la tabla comparativa. Si en algún rival la tabla no produce ventaja en al menos dos celdas, la tesis admite haber sido absorbida y reformula.
 
 ## Tesis del capítulo
 
@@ -463,11 +460,3 @@ La tesis ocupa un punto difícil pero filosóficamente fértil:
 
 Eso es lo que la tesis quiere demostrar una y otra vez, hasta que incluso sus objeciones tengan que discutir en ese terreno.
 
-## 19. Lectura cruzada
-
-- ontología que justifica la confrontación: capítulo 02-01;
-- aparato formal con el que se evalúan los rivales: capítulo 03-01;
-- criterios de admisión que el dossier aplica: capítulo 03-02;
-- caso ancla canónico donde la confrontación se opera: capítulo 05-05;
-- limitaciones que sobreviven a la confrontación: capítulo 04-02;
-- defensa oral: capítulo 06-02.

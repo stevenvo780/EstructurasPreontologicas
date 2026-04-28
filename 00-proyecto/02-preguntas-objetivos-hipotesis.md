@@ -1,8 +1,5 @@
 # Preguntas, objetivos e hipótesis
 
-## Función de este capítulo
-
-Este capítulo fija el problema, las preguntas, las hipótesis y los objetivos que la tesis demuestra o articula como programa. Cada elemento se enuncia en su forma fuerte y se conecta con el capítulo del manuscrito donde se trata. Sin estas fijaciones explícitas, la tesis se difumina.
 
 ## Pregunta central
 
