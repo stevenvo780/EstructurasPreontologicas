@@ -1,0 +1,14 @@
+{
+  "summary": {
+    "n_trials": 500,
+    "n_valid": 500,
+    "edi_mean": -0.005299501011574826,
+    "edi_p99": 0.11516756366280335,
+    "edi_max": 0.16180682022994952,
+    "tasa_overall_pass": 0.0,
+    "tasa_p_005": 0.274,
+    "tasa_strong_edi": 0.0,
+    "tasa_strong_full": 0.0
+  },
+  "verdict": "Motor edi_engine ROBUSTO bajo random walk: tasa overall_pass = 0.0000 < 1%. Los strong multiescala son verdaderos positivos genuinos."
+}

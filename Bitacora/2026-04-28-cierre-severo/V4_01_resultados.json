@@ -1,0 +1,82 @@
+{
+  "31_decoherencia": {
+    "random_walk": {
+      "edi": 0.14479940037166383,
+      "p_value": 0.995995995995996,
+      "nivel": "1_trend",
+      "overall_pass": false
+    },
+    "constante_ruido": {
+      "edi": -1.068898896276711,
+      "p_value": 0.4754754754754755,
+      "nivel": "0_null",
+      "overall_pass": false
+    },
+    "oscilador_simple": {
+      "edi": 0.3283127825267669,
+      "p_value": 0.8028028028028028,
+      "nivel": "1_trend",
+      "overall_pass": false
+    }
+  },
+  "34_michaelis_menten": {
+    "random_walk": {
+      "edi": -0.6630195238326944,
+      "p_value": 0.998998998998999,
+      "nivel": "0_null",
+      "overall_pass": false
+    },
+    "constante_ruido": {
+      "edi": -8.971007386522064,
+      "p_value": 0.4164164164164164,
+      "nivel": "0_null",
+      "overall_pass": false
+    },
+    "oscilador_simple": {
+      "edi": -1.3121545317775807,
+      "p_value": 0.0,
+      "nivel": "0_null",
+      "overall_pass": false
+    }
+  },
+  "37_hrv": {
+    "random_walk": {
+      "edi": -0.005985618005658111,
+      "p_value": 0.994994994994995,
+      "nivel": "0_null",
+      "overall_pass": false
+    },
+    "constante_ruido": {
+      "edi": -0.00601485509298838,
+      "p_value": 0.0990990990990991,
+      "nivel": "0_null",
+      "overall_pass": false
+    },
+    "oscilador_simple": {
+      "edi": -0.006024514190676511,
+      "p_value": 0.008008008008008008,
+      "nivel": "0_null",
+      "overall_pass": false
+    }
+  },
+  "39_cefeida": {
+    "random_walk": {
+      "edi": 0.001810533640333234,
+      "p_value": 0.997997997997998,
+      "nivel": "1_trend",
+      "overall_pass": false
+    },
+    "constante_ruido": {
+      "edi": -5.475929384130801,
+      "p_value": 0.05905905905905906,
+      "nivel": "0_null",
+      "overall_pass": false
+    },
+    "oscilador_simple": {
+      "edi": 0.1577946198493343,
+      "p_value": 0.0,
+      "nivel": "3_weak",
+      "overall_pass": false
+    }
+  }
+}

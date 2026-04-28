@@ -191,9 +191,31 @@ Recupera el realismo estructural moderado en versión disciplinada por anclaje e
 | Behavioral dynamics como modo demostrativo bajo EDI actual | Programático con criterio de elevación |
 | Predicción de fenómenos sociales individuales | Las leyes de control institucionales son objeto de investigación |
 
-## 8. Fórmula final demostrativa
+## 8. Fórmula final demostrativa (post-auditoría severa v4)
 
-> Bajo el aparato consolidado — irrealismo operativo de estructuras pre-ontológicas, asimetría L1↔B↔L3↔S como protocolo formal, dossier de anclaje de catorce componentes, protocolo C1-C5 con 13 condiciones simultáneas, EDI por intervención ablativa con permutación 999 y bootstrap 500, cartografía multidominio sobre **30 casos del corpus EDI** con 4 `overall_pass=True`, 1 strong sin gate, 8 weak (incluido behavioral dynamics) y 3 controles de falsación correctamente rechazados, discriminación pública contra catorce rivales (incluido Wolfram) — la tesis del irrealismo operativo de estructuras pre-ontológicas queda **demostrada en su régimen de validez declarado** con extensión articulada y deuda residual fechada.
+> Bajo el aparato consolidado — irrealismo operativo de estructuras pre-ontológicas, asimetría L1↔B↔L3↔S como protocolo formal con sistema modal T declarado, dossier de anclaje de catorce componentes, protocolo C1-C5 con 13 condiciones simultáneas, EDI por intervención ablativa con permutación 999 y bootstrap 500, cartografía multidominio sobre **30 casos del corpus EDI** en escala macro (4 `overall_pass=True`, 1 strong sin gate, 8 weak, 3 controles de falsación rechazados) y **10 casos del corpus multiescala** desde escala atómica (10⁻¹⁰ m) hasta cúmulos globulares (10²⁰ m) con **7 strong en 7 escalas distintas** + 1 weak + 2 nulls honestos, validación lógica formal con suite ST de 13 teorías (2 hallazgos críticos detectados y corregidos), hostile testing aplicado al motor (0/1500 falsos positivos en gate completo bajo random walk masivo) y al test cruzado de sondas multiescala (0/12 circularidad detectada), AUC-ROC = 0.886 para discriminación strong/no-strong vs ARIMA = 0.600, y discriminación pública contra catorce rivales (incluido Wolfram con piloto Rule 110 ejecutado mostrando convivencia de irreducibilidad micro y cierre macro detectable) — la tesis del irrealismo operativo de estructuras pre-ontológicas se sostiene como **propuesta metodológica articulada con demostración parcial multiescalar bajo régimen declarado**, con limitaciones honestamente reconocidas (p-value mal calibrado al 24% empírico, caso 30 con circularidad detectada por sonda alternativa, depuración post-hoc del corpus multiescala, datos sintéticos pendientes de elevación a LoE 4-5, sin revisión por pares humanos externos) y deuda residual fechada con cronograma firme post-defensa.
+
+### 8.1. Lo que la tesis afirma con fuerza tras hostile testing severo
+
+- **Aporte metodológico:** protocolo replicable con motor común (ABM+ODE acoplado, suite ST, hostile testing automatizado, requirements-locked) que cualquier tercero puede ejecutar y verificar.
+- **Discriminación multidominio en escala macro:** AUC-ROC 0.886 vs ARIMA 0.600.
+- **Discriminación multiescalar:** 7 strong en 7 escalas distintas con sondas físicamente motivadas (Lindblad, Bloch, Tyson-Novak, Hoffmann, Mackey-Glass, Leavitt, Plummer); las sondas son específicas (test cruzado V4-01: 0% circularidad sobre datos no-suyos).
+- **Robustez del gate completo:** 0/1500 falsos positivos bajo random walk masivo.
+- **Validación lógica formal:** suite ST de 13 teorías con coherencia interna verificada y limitaciones explícitas declaradas.
+
+### 8.2. Lo que la tesis NO afirma (limitaciones honestas)
+
+- **No afirma que el p-value declarado tenga calibración correcta:** la tasa empírica de tipo I es 24%, no 5% (auditoría severa N1). Los umbrales EDI sí son robustos.
+- **No afirma que el caso 30 (behavioral dynamics) demuestre cierre operativo específico:** la sonda Fajen-Warren produce EDI > 0.30 en 50% de mass-spring puro (N2). El caso 30 se mantiene como caso piloto metodológico hasta elevación con datos humanos reales.
+- **No afirma que la composición del corpus refleje prevalencia poblacional:** los umbrales 0.10/0.30 producen 5 strong; 0.15/0.40 produce 3; 0.05/0.20 produce 9 (N4). La composición es post-hoc.
+- **No afirma que κ-ontológica fuerte esté demostrada:** solo κ-pragmática multiescalar. La afirmación ontológica fuerte requiere convergencia inter-grupo y revisión externa.
+- **No afirma generalidad multiescalar sin reservas:** las escalas son etiquetas nominales basadas en parámetros publicados; los datos son sintéticos. La elevación a datos reales abiertos (IBM Quantum, BRENDA, PhysioNet, OGLE, Gaia DR3) es deuda priorizada de 6-12 meses post-defensa.
+- **No afirma haber resuelto el caso 38 (locomoción τ-dot):** la sonda alternativa propuesta produjo EDI = -1.34, lo cual es failure mode de sonda, no null estructural. La objeción N2 sobre circularidad de Fajen-Warren sigue parcialmente abierta hasta datos VENLab humanos.
+- **No afirma haber sido validada por pares humanos externos:** todas las auditorías (v1, v2, severa, v3, v4) son endógenas. La revisión externa hostil es deuda bloqueante para sustentación.
+
+### 8.3. Estado declarado del manuscrito
+
+**Propuesta metodológica articulada con aparato ejecutable, demostración parcial multidominio en escala macro, demostración parcial multiescalar bajo datos sintéticos derivados de parámetros publicados, validación lógica formal interna, hostile testing aplicado y limitaciones reconocidas. Tesis defendible bajo régimen declarado. Demostración cerrada multiescalar con datos reales y revisión externa: deuda post-defensa.**
 
 ## 9. Forma corta de la tesis demostrada
 
