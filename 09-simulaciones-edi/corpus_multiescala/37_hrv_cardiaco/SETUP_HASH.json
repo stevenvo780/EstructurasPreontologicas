@@ -1,0 +1,13 @@
+{
+  "case_id": "37_hrv_cardiaco",
+  "timestamp_utc": "2026-04-28T22:44:09.434282+00:00",
+  "git_commit": "a24f6dd14049cd8ce571bb53abc4f6d056a00e3a",
+  "file_count": 3,
+  "aggregate_hash": "1fb446f4673485c3ee561176466fdfe64b7f42b7d18e3e8f321a24e7f2931780",
+  "file_hashes": {
+    "data/FETCH_MANIFEST.json": "5a8ba858c4be08ba21b4a5d06a10793a799612436cc2863b6aba9d206b1ed05c",
+    "docs/protocolo_simulacion.md": "57cd707d07a39787fb84a9fe34a7c209aaf3207ba88641479fed67b79b0b325c",
+    "run.py": "b423f944b18e65bc2c2a8862de121ecd54cf375b96e36265133c3f4401d5f2d0"
+  },
+  "protocol_version": "V5.3 (inter-escala)"
+}

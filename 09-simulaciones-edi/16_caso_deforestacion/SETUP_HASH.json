@@ -1,0 +1,21 @@
+{
+  "case_id": "16_caso_deforestacion",
+  "timestamp_utc": "2026-04-28T22:44:09.352172+00:00",
+  "git_commit": "a24f6dd14049cd8ce571bb53abc4f6d056a00e3a",
+  "git_dirty": true,
+  "file_count": 9,
+  "aggregate_hash": "66096f5c23c1cc1f5e87eb44a9870f4522dc336087565c1f7abbd366014b8f32",
+  "file_hashes": {
+    "README.md": "d161feb8439a640bd14c85196daf2f7e37a52548dd56202d93f6aac5dab77615",
+    "case_config.json": "32ec9b702be82d1ab5edb103d00a207b68e9e0f661fdf16c23db083183a1800b",
+    "data/FETCH_MANIFEST.json": "6e28a34563eaf9b59eb51a4d147f1cc995957c0574c9e9ba2956978b000114cc",
+    "data/wb_deforestation.csv": "b61c4b7e6590a748af2d92136ccdd1129ef7ac395e51001d0b3c5c24feac3035",
+    "docs/protocolo_simulacion.md": "96ca9e56e866069eca57d6ba75419d3360071992874169db67acc7fe0417f6a1",
+    "src/abm.py": "508e5a3497e202be4eb2196960ff7bd7e457ec2c0c6a03e39df75db1e4cea233",
+    "src/data.py": "1c3e22ebefecdcf469b11dbd5692c9f35ed693ae88e18e7cf2fca5ff81936080",
+    "src/ode.py": "41cd2dca1aee3e262ffd5bba2ddee6028d1c2c54008bc686a540d009982aa8c5",
+    "src/validate.py": "ffc3511fea4d67c86dd714360345618384958c8ba6642f9cf16920ffb1e43ea9"
+  },
+  "protocol_version": "V5.1",
+  "method": "sha256_recursive_with_output_exclusion"
+}

@@ -1,0 +1,25 @@
+{
+  "case_id": "08_caso_falsacion_observabilidad",
+  "timestamp_utc": "2026-04-28T22:44:09.323202+00:00",
+  "git_commit": "a24f6dd14049cd8ce571bb53abc4f6d056a00e3a",
+  "git_dirty": true,
+  "file_count": 13,
+  "aggregate_hash": "cc4240f852cc5c33391d83f92774e69594369672283a971c04821f9899255711",
+  "file_hashes": {
+    "README.md": "48bca78a6c213dfaddddc29113c887632cb4ade1c767552551664639e920cf18",
+    "case_config.json": "912f1c5d8568a969d69fb4e502244a2adb03cf13a3559b09dca86d041b319861",
+    "data/FETCH_MANIFEST.json": "bfec1ef31a98212d196bc85b25bcfa175fb0dbeb170c6b407561871335856883",
+    "docs/arquitectura.md": "2e4c6bf657655e2ea034432369ae0e89fbe00c43d27e49d8d174e37f1ebbc072",
+    "docs/indicadores_metricas.md": "3c88c238199c49fe12d0f1f8326a32d5bec2d939c629bc5b99268fcc254c8b09",
+    "docs/protocolo_simulacion.md": "68acc9e252ad75df4f5b1d24cc585b4b90d0f54fc72d9b4edfa237aa2d41ddad",
+    "docs/reproducibilidad.md": "76ebef1a35a315855414036f1ee13a62d4d0197f219286cabe8ed10372eae921",
+    "docs/validacion_c1_c5.md": "72d72b1aef8cfeaa6540af41377816397b69a81f2c759cc5c32b69ff9bf9fe6a",
+    "requirements.txt": "49a15faee932b0e39bc734a9881b3ef1f1d194ebab44858f724036babafbd9eb",
+    "src/abm.py": "3c6eda192050a751d1a671de71cfd529c315a860966f18986ad7a89f7ae49444",
+    "src/data.py": "93d17785df52e500a90d441f5a74d35bdd90e5b57d8d6d55faef38fb78a16d10",
+    "src/ode.py": "928673d721dc10cc98d3ab41cde214cde4306d0fc66eb565b46196cf8cc2a363",
+    "src/validate.py": "fd87d4492f60ef45bd8cdcb3682490ceb2df975eee4c3708a04903bc6e30b9d6"
+  },
+  "protocol_version": "V5.1",
+  "method": "sha256_recursive_with_output_exclusion"
+}

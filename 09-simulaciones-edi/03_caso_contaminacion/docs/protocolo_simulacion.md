@@ -1,26 +1,30 @@
-# Protocolo de Simulacion (Contaminacion PM2.5)
+# Protocolo de simulación — 03_caso_contaminacion
 
-## 1. Definicion de escenario
-- Objetivo: demostrar persistencia, no-localidad funcional y emergencia en contaminacion agregada.
-- Delimitacion: promedio global (WLD) como proxy del sistema.
+## Sonda Lotka-Volterra adaptada a contaminación-respuesta
 
-## 2. Diseno de agentes
-- Agentes: celdas con contaminacion `C`.
-- Reglas: difusion local + forcing exogeno + acople macro.
+**Régimen físico:** Sistema acoplado emisor-receptor con feedback regulatorio.
 
-## 3. Inicializacion
-- Grilla con distribucion inicial y semillas documentadas.
-- Parametros base definidos en `src/validate.py`.
-- Split sintetica: 1980-1999 / 2000-2019.
-- Split real: 1990-2005 / 2006-2022.
+## Ecuación de la sonda
 
-## 4. Ejecucion
-- Escenario base y contrafactuales.
-- Criterio de paro: estabilidad de indicadores y costo marginal > beneficio.
-- Se usa nudging con observacion rezagada (t-1) para evaluacion de corto plazo.
+```
+dC/dt = α*S - β*C*R; dR/dt = -γ*R + δ*C
+```
 
-## 5. Evaluacion
-- Comparacion en dos fases:
-- Fase sintetica: verificacion interna y calibracion base.
-- Fase real: evaluacion final con datos reales.
-- C1-C5 obligatorios.
+## Motivación física
+
+Acoplamiento depredador-presa adaptado a presión-respuesta (Volterra 1926).
+
+## Origen de parámetros
+
+Calibrado contra series AQICN.
+
+## Citas disciplinares
+
+- Volterra, V. (1926). Variazioni e fluttuazioni. *Mem. Accad. Lincei*.
+
+## Lectura cruzada
+
+- `03_caso_contaminacion/data/FETCH_MANIFEST.json` — trazabilidad de datos
+- `03_caso_contaminacion/SETUP_HASH.json` — pre-registro criptográfico
+- `03_caso_contaminacion/outputs/metrics.json` — outputs canónicos
+- `03_caso_contaminacion/outputs/metrics_enriched_v5_2.json` — calibración avanzada V5.2/5.3

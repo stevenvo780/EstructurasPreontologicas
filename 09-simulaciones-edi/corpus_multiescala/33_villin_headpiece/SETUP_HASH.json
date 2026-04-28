@@ -1,0 +1,13 @@
+{
+  "case_id": "33_villin_headpiece",
+  "timestamp_utc": "2026-04-28T22:44:09.431400+00:00",
+  "git_commit": "a24f6dd14049cd8ce571bb53abc4f6d056a00e3a",
+  "file_count": 3,
+  "aggregate_hash": "ee5ec4e212a9ff1e85eb97b0ff1f76fa9962b971a4648beda7bc191428af28dc",
+  "file_hashes": {
+    "data/FETCH_MANIFEST.json": "6971f22a9886153cf0b4504f54b52ddc53c86f11f11b16bb64c1f17174547d5f",
+    "docs/protocolo_simulacion.md": "c94a66e09f0ecab4df412e835c495afaca1ce374e0f60cbb37b0733546436a05",
+    "run.py": "1b7e3a809949455aa082725cffda84b8dc926758513c47982fff066680fce27a"
+  },
+  "protocol_version": "V5.3 (inter-escala)"
+}

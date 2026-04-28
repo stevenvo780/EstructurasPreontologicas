@@ -1,0 +1,196 @@
+{
+  "version_protocolo": "V5.2",
+  "fecha": "2026-04-28",
+  "deuda_objetivo": "elevación de casos débiles del corpus inter-dominio",
+  "n_elevados": 14,
+  "summary_table": [
+    {
+      "case_id": "01_caso_clima",
+      "edi": 0.011072299899552383,
+      "p_naive": 0.998998998998999,
+      "p_block": 0.0003333333333333333,
+      "se_hac": 0.01210687852811625,
+      "p_holm": 1.0,
+      "fwer_survives": false,
+      "invariant": true,
+      "invariant_level": "suggestive",
+      "veredicto": "REQUIERE EVALUACIÓN ESPECÍFICA"
+    },
+    {
+      "case_id": "06_caso_falsacion_exogeneidad",
+      "edi": 0.05505918915717987,
+      "p_naive": 1.0,
+      "p_block": 0.3873333333333333,
+      "se_hac": 0.01530563289866194,
+      "p_holm": 1.0,
+      "fwer_survives": false,
+      "invariant": false,
+      "invariant_level": null,
+      "veredicto": "CONFIRMADO COMO MARGINAL: p_block > 0.10 bajo calibración avanzada. El caso no produce inferencia robusta; reportar como no significativo post-calibración."
+    },
+    {
+      "case_id": "09_caso_finanzas",
+      "edi": 0.08125725845167885,
+      "p_naive": 0.0,
+      "p_block": 0.010333333333333333,
+      "se_hac": 0.0038265306122448983,
+      "p_holm": 0.0,
+      "fwer_survives": true,
+      "invariant": false,
+      "invariant_level": null,
+      "veredicto": "SENSIBLE A UMBRALES: clasificación variable bajo grilla. Reportar como caso de borde con honestidad explícita."
+    },
+    {
+      "case_id": "10_caso_justicia",
+      "edi": 0.22744325283615935,
+      "p_naive": 0.4774774774774775,
+      "p_block": 1.0,
+      "se_hac": 0.06064211198576083,
+      "p_holm": 1.0,
+      "fwer_survives": false,
+      "invariant": false,
+      "invariant_level": null,
+      "veredicto": "CONFIRMADO COMO MARGINAL: p_block > 0.10 bajo calibración avanzada. El caso no produce inferencia robusta; reportar como no significativo post-calibración."
+    },
+    {
+      "case_id": "11_caso_movilidad",
+      "edi": 0.12828980793063793,
+      "p_naive": 0.002002002002002002,
+      "p_block": 0.0003333333333333333,
+      "se_hac": 0.12435856112199115,
+      "p_holm": 0.03403403403403403,
+      "fwer_survives": true,
+      "invariant": false,
+      "invariant_level": null,
+      "veredicto": "SENSIBLE A UMBRALES: clasificación variable bajo grilla. Reportar como caso de borde con honestidad explícita."
+    },
+    {
+      "case_id": "13_caso_politicas_estrategicas",
+      "edi": 0.2972459599653249,
+      "p_naive": 0.0015001500150015,
+      "p_block": 0.001,
+      "se_hac": 0.027158218330942317,
+      "p_holm": 0.027002700270027002,
+      "fwer_survives": true,
+      "invariant": false,
+      "invariant_level": null,
+      "veredicto": "SENSIBLE A UMBRALES: clasificación variable bajo grilla. Reportar como caso de borde con honestidad explícita."
+    },
+    {
+      "case_id": "14_caso_postverdad",
+      "edi": 0.24284958859933714,
+      "p_naive": 0.0,
+      "p_block": 0.0003333333333333333,
+      "se_hac": 0.07213478979969593,
+      "p_holm": 0.0,
+      "fwer_survives": true,
+      "invariant": false,
+      "invariant_level": null,
+      "veredicto": "SENSIBLE A UMBRALES: clasificación variable bajo grilla. Reportar como caso de borde con honestidad explícita."
+    },
+    {
+      "case_id": "15_caso_wikipedia",
+      "edi": 0.19162977697124867,
+      "p_naive": 0.0,
+      "p_block": 0.0003333333333333333,
+      "se_hac": 0.1487990324251577,
+      "p_holm": 0.0,
+      "fwer_survives": true,
+      "invariant": true,
+      "invariant_level": "weak",
+      "veredicto": "ELEVADO A ROBUSTO: invariante a umbrales + p_block significativo + sobrevive FWER. Inferencia se sostiene bajo régimen calibrado."
+    },
+    {
+      "case_id": "20_caso_kessler",
+      "edi": 0.35269595151500943,
+      "p_naive": 0.0,
+      "p_block": 0.0003333333333333333,
+      "se_hac": 0.08093132472507826,
+      "p_holm": 0.0,
+      "fwer_survives": true,
+      "invariant": false,
+      "invariant_level": null,
+      "veredicto": "SENSIBLE A UMBRALES: clasificación variable bajo grilla. Reportar como caso de borde con honestidad explícita."
+    },
+    {
+      "case_id": "21_caso_salinizacion",
+      "edi": 0.01842115528473093,
+      "p_naive": 0.0028002800280028,
+      "p_block": 0.0003333333333333333,
+      "se_hac": 0.06110112999761645,
+      "p_holm": 0.04200420042004201,
+      "fwer_survives": true,
+      "invariant": true,
+      "invariant_level": "suggestive",
+      "veredicto": "REQUIERE EVALUACIÓN ESPECÍFICA"
+    },
+    {
+      "case_id": "26_caso_starlink",
+      "edi": 0.6891705119737255,
+      "p_naive": 1.0,
+      "p_block": 0.001,
+      "se_hac": 0.0038265306122448983,
+      "p_holm": 1.0,
+      "fwer_survives": false,
+      "invariant": true,
+      "invariant_level": "strong",
+      "veredicto": "ELEVADO PARCIALMENTE: invariante a umbrales + p_block significativo, pero NO sobrevive FWER del corpus completo. Significancia individual robusta; familia colectiva requiere atención."
+    },
+    {
+      "case_id": "27_caso_riesgo_biologico",
+      "edi": 0.3325786296723718,
+      "p_naive": 0.0022002200220022,
+      "p_block": 0.0003333333333333333,
+      "se_hac": 0.32371347239439685,
+      "p_holm": 0.0352035203520352,
+      "fwer_survives": true,
+      "invariant": false,
+      "invariant_level": null,
+      "veredicto": "SENSIBLE A UMBRALES: clasificación variable bajo grilla. Reportar como caso de borde con honestidad explícita."
+    },
+    {
+      "case_id": "28_caso_fuga_cerebros",
+      "edi": 0.024881669387389924,
+      "p_naive": 0.9974997499749975,
+      "p_block": 0.001,
+      "se_hac": 0.13055276096387022,
+      "p_holm": 1.0,
+      "fwer_survives": false,
+      "invariant": true,
+      "invariant_level": "suggestive",
+      "veredicto": "REQUIERE EVALUACIÓN ESPECÍFICA"
+    },
+    {
+      "case_id": "30_caso_behavioral_dynamics",
+      "edi": 0.26216558939208157,
+      "p_naive": 0.044044044044044044,
+      "p_block": 0.9783333333333334,
+      "se_hac": 0.011635642651372648,
+      "p_holm": 0.6166166166166166,
+      "fwer_survives": false,
+      "invariant": false,
+      "invariant_level": null,
+      "veredicto": "CONFIRMADO COMO MARGINAL: p_block > 0.10 bajo calibración avanzada. El caso no produce inferencia robusta; reportar como no significativo post-calibración."
+    }
+  ],
+  "elevados_a_robusto": [
+    "15_caso_wikipedia"
+  ],
+  "elevados_parcialmente": [
+    "26_caso_starlink"
+  ],
+  "confirmados_marginal": [
+    "06_caso_falsacion_exogeneidad",
+    "10_caso_justicia",
+    "30_caso_behavioral_dynamics"
+  ],
+  "sensibles_a_umbrales": [
+    "09_caso_finanzas",
+    "11_caso_movilidad",
+    "13_caso_politicas_estrategicas",
+    "14_caso_postverdad",
+    "20_caso_kessler",
+    "27_caso_riesgo_biologico"
+  ],
+  "confirmados_null_post_calibracion": []
+}

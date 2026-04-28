@@ -1,26 +1,31 @@
-# Protocolo de Simulacion (Energia Electrica)
+# Protocolo de simulación — 04_caso_energia
 
-## 1. Definicion de escenario
-- Objetivo: demostrar persistencia, no-localidad funcional y emergencia en demanda agregada.
-- Delimitacion: demanda nacional (GB) como proxy del sistema.
+## Sonda Lotka-Volterra ecológica + Maxwell-Boltzmann termodinámica
 
-## 2. Diseno de agentes
-- Agentes: celdas con demanda `D`.
-- Reglas: difusion local + forcing exogeno + acople macro.
+**Régimen físico:** Sistema acoplado oferta-demanda con conservación de masa energética.
 
-## 3. Inicializacion
-- Grilla con distribucion inicial y semillas documentadas.
-- Parametros base definidos en `src/validate.py`.
-- Split sintetica: 2000-2009 / 2010-2019.
-- Split real: 2015-2018 / 2019-2020.
+## Ecuación de la sonda
 
-## 4. Ejecucion
-- Escenario base y contrafactuales.
-- Criterio de paro: estabilidad de indicadores y costo marginal > beneficio.
-- Se usa nudging con observacion del mismo periodo (t) para evaluacion de corto plazo.
+```
+dE/dt = r*E*(1-E/K) + acoplamiento_demanda
+```
 
-## 5. Evaluacion
-- Comparacion en dos fases:
-- Fase sintetica: verificacion interna y calibracion base.
-- Fase real: evaluacion final con datos reales.
-- C1-C5 obligatorios.
+## Motivación física
+
+Lotka-Volterra ecológica (consumo agregado como recurso); Maxwell-Boltzmann termodinámica (sonda secundaria B4).
+
+## Origen de parámetros
+
+OPSD para series reales 2010-2020.
+
+## Citas disciplinares
+
+- Volterra (1926).
+- Maxwell, J. C. (1860). *Phil. Mag.* 19.
+
+## Lectura cruzada
+
+- `04_caso_energia/data/FETCH_MANIFEST.json` — trazabilidad de datos
+- `04_caso_energia/SETUP_HASH.json` — pre-registro criptográfico
+- `04_caso_energia/outputs/metrics.json` — outputs canónicos
+- `04_caso_energia/outputs/metrics_enriched_v5_2.json` — calibración avanzada V5.2/5.3

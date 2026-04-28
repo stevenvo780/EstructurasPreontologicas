@@ -1,0 +1,79 @@
+{
+  "version_protocolo": "V5.1",
+  "bloque_cientifico": "B4 — sondas teóricamente independientes",
+  "criterio_evaluado": "C1 de κ-ontológica fuerte (cap 02-01 §criterios)",
+  "convergence_threshold": 0.05,
+  "cases": [
+    {
+      "case_id": "04_caso_energia",
+      "primary_probe": "Lotka-Volterra ecológico",
+      "secondary_probe": "maxwell_boltzmann_energy_probe",
+      "primary_motivation": "primary (existing in corpus)",
+      "secondary_motivation": "termodinamica_estadistica",
+      "secondary_hypothesis": "Consumo agregado como observable cinético de un sistema en equilibrio térmico aproximado; T(t) relaja hacia el forcing.",
+      "independencia": "Lotka-Volterra es ecologico-poblacional; Maxwell-Boltzmann es fisico-termodinamico. No comparten variables, ecuaciones ni asunciones.",
+      "convergence": {
+        "edi_primary": 0.6498989813917239,
+        "edi_secondary": -0.7357467830059291,
+        "rmse_primary": 0.0746775368817083,
+        "rmse_secondary": 0.37023969516142297,
+        "rmse_baseline": 0.21330282664862543,
+        "delta_edi": 1.385645764397653,
+        "convergence_threshold": 0.05,
+        "convergen": false,
+        "cumple_criterio_C1_kappa_ontologica": false,
+        "interpretacion": "Sondas DIVERGEN (|Δ|=1.386 > 0.05). El cierre operativo detectado por la sonda primaria puede depender del paradigma elegido. NO cumple criterio C1 de κ-ontológica fuerte.",
+        "version_protocolo": "V5.1"
+      },
+      "data_source_note": "primary EDI no disponible en metrics; usando referencia 0.65"
+    },
+    {
+      "case_id": "16_caso_deforestacion",
+      "primary_probe": "von Thünen económico-espacial",
+      "secondary_probe": "fisher_kpp_deforestation_probe",
+      "primary_motivation": "primary (existing in corpus)",
+      "secondary_motivation": "fisico_matematica_difusion_reactiva",
+      "secondary_hypothesis": "Deforestación como frente reactivo-difusivo; propagación espacial gobernada por D*∇²u + r*u(1-u/K).",
+      "independencia": "von Thünen es economico-espacial con mercados, costos de transporte, rentas. Fisher-KPP es matematica pura sin asunciones economicas.",
+      "convergence": {
+        "edi_primary": 0.59988455016197,
+        "edi_secondary": 0.8607297283131282,
+        "rmse_primary": 0.09840036421552774,
+        "rmse_secondary": 0.03425072804344664,
+        "rmse_baseline": 0.24592992911261238,
+        "delta_edi": 0.26084517815115826,
+        "convergence_threshold": 0.05,
+        "convergen": false,
+        "cumple_criterio_C1_kappa_ontologica": false,
+        "interpretacion": "Sondas DIVERGEN (|Δ|=0.261 > 0.05). El cierre operativo detectado por la sonda primaria puede depender del paradigma elegido. NO cumple criterio C1 de κ-ontológica fuerte.",
+        "version_protocolo": "V5.1"
+      },
+      "data_source_note": "primary EDI no disponible en metrics; usando referencia 0.60"
+    },
+    {
+      "case_id": "27_caso_riesgo_biologico",
+      "primary_probe": "SIR epidemiológico",
+      "secondary_probe": "zeeman_catastrophe_biorisk_probe",
+      "primary_motivation": "primary (existing in corpus)",
+      "secondary_motivation": "topologia_diferencial_catastrofes",
+      "secondary_hypothesis": "Mortalidad por riesgo biológico como variable sobre superficie cusp con dos parámetros de control; admite saltos discontinuos.",
+      "independencia": "SIR es compartimental con tasas constantes en regimen continuo. Zeeman es topologico-diferencial con bifurcaciones discontinuas.",
+      "convergence": {
+        "edi_primary": 0.32980662152129997,
+        "edi_secondary": 0.7057522559127959,
+        "rmse_primary": 0.5310171970069398,
+        "rmse_secondary": 0.23314257840846223,
+        "rmse_baseline": 0.7923342934427642,
+        "delta_edi": 0.3759456343914959,
+        "convergence_threshold": 0.05,
+        "convergen": false,
+        "cumple_criterio_C1_kappa_ontologica": false,
+        "interpretacion": "Sondas DIVERGEN (|Δ|=0.376 > 0.05). El cierre operativo detectado por la sonda primaria puede depender del paradigma elegido. NO cumple criterio C1 de κ-ontológica fuerte.",
+        "version_protocolo": "V5.1"
+      },
+      "data_source_note": "primary EDI no disponible en metrics; usando referencia 0.33"
+    }
+  ],
+  "casos_que_cumplen_C1": [],
+  "limitacion_actual": "Las predicciones primarias se reconstruyen desde EDI publicado, no desde arrays primarios versionados. La validación definitiva requiere que cada caso emita en outputs/ los arrays obs, abm, reduced y forcing individualmente. Esto está en deuda L17."
+}

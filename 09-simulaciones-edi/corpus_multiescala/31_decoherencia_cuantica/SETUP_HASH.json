@@ -1,0 +1,13 @@
+{
+  "case_id": "31_decoherencia_cuantica",
+  "timestamp_utc": "2026-04-28T22:44:09.429218+00:00",
+  "git_commit": "a24f6dd14049cd8ce571bb53abc4f6d056a00e3a",
+  "file_count": 3,
+  "aggregate_hash": "5b8af6e2aaa8a57dd4983d63f64e9c3553c5f8d624cd0eb6249595836a4d503c",
+  "file_hashes": {
+    "data/FETCH_MANIFEST.json": "c79c78ec2edee4bef8fa03d438559382ef370f3d48ee71b10ad6faf6db846040",
+    "docs/protocolo_simulacion.md": "091c4226b1a59c71f3e26cb32f05ffafbcf4fdb763a6bbf55c1f4aa914dd07ef",
+    "run.py": "fc543302006623ed14afb92d8bfa915ccbaf5c32d4b4c739a00fa30ee113ca82"
+  },
+  "protocol_version": "V5.3 (inter-escala)"
+}

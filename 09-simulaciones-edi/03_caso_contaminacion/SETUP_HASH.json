@@ -1,0 +1,26 @@
+{
+  "case_id": "03_caso_contaminacion",
+  "timestamp_utc": "2026-04-28T22:44:09.306123+00:00",
+  "git_commit": "a24f6dd14049cd8ce571bb53abc4f6d056a00e3a",
+  "git_dirty": true,
+  "file_count": 14,
+  "aggregate_hash": "76616e41d9d8a9615ac5b08c92ebbec25d262f05d3a7a9c2f09aebecac750d88",
+  "file_hashes": {
+    "README.md": "810235870a8c784492e34ac4c8925995d2142596e01f56bdc61500d0a1e251c9",
+    "case_config.json": "cead01718cded5f85fc0421d93e32cb08b2fa6407416bd31441f023d67f342a7",
+    "data/FETCH_MANIFEST.json": "e27ea68a7dde28c288a6e4a6a53721886e1ab37ea53182e2d5a088d0df35e3d1",
+    "docs/arquitectura.md": "3647860d97f6dc48d19572d730bbf10ac580de46007d040922218c8c5cf30afe",
+    "docs/indicadores_metricas.md": "651d509260a6e0a7a476cbcfc89dc047544e017b42dcbd9a4e25a7cc41026b47",
+    "docs/protocolo_simulacion.md": "66bd98d366b34bc1cd279d41d757de006f524b0948c79775c1fc639c424e8d7e",
+    "docs/reproducibilidad.md": "f9632df564926d5461de389571a2c57ec87eab91c0a84a1a29a56650c3ba5bdd",
+    "docs/validacion_c1_c5.md": "99d6600faf4ca8da32af6fd8ef630783311fc7e27062602fc10c8afe53b293a2",
+    "requirements.txt": "49a15faee932b0e39bc734a9881b3ef1f1d194ebab44858f724036babafbd9eb",
+    "src/_analyze.py": "a1b9be7ab75ada90297f4b8b2e4330cf4dcd20035cc024abce867ed230d33853",
+    "src/abm.py": "c793e86c8c579b4f19743bb1015bdeac0dbf309e28c4444acdcfb12bb80e3031",
+    "src/data.py": "6eabc720eb2e7e7c5ce30243e7384073056f6de248fce104871029b700173802",
+    "src/ode.py": "56ba7d117834fed802aa535119c032b2689fc827f624915e0a7820e9337039ed",
+    "src/validate.py": "6b628b3846b810a63b20b3e6ba340835f7f51222fd1e8b60a0f397292004cbda"
+  },
+  "protocol_version": "V5.1",
+  "method": "sha256_recursive_with_output_exclusion"
+}

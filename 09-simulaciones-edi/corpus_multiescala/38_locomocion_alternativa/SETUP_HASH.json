@@ -1,0 +1,13 @@
+{
+  "case_id": "38_locomocion_alternativa",
+  "timestamp_utc": "2026-04-28T22:44:09.434968+00:00",
+  "git_commit": "a24f6dd14049cd8ce571bb53abc4f6d056a00e3a",
+  "file_count": 3,
+  "aggregate_hash": "1262938a52d09926f3b6fb1913a1ca6e567ddf2e469b0ff2982cf6b8d47f3c85",
+  "file_hashes": {
+    "data/FETCH_MANIFEST.json": "b30c53ec5b0814649e9ff41ba2ca09a5e8275d5ea0a7aff67f0dddc199b331ca",
+    "docs/protocolo_simulacion.md": "1af6a77d079ded89196a6ed7a701488738a88a282e2022097d09d3b6820234fa",
+    "run.py": "35f200c03f6186676220b3ca798b6486d51c30ae512997173fa3b50a3a0aee9a"
+  },
+  "protocol_version": "V5.3 (inter-escala)"
+}

@@ -1,0 +1,13 @@
+{
+  "case_id": "36_nfkb",
+  "timestamp_utc": "2026-04-28T22:44:09.433640+00:00",
+  "git_commit": "a24f6dd14049cd8ce571bb53abc4f6d056a00e3a",
+  "file_count": 3,
+  "aggregate_hash": "31096b2aad3155b45378b5f21280a506cee5c4eec97b72b544289c938cf183a3",
+  "file_hashes": {
+    "data/FETCH_MANIFEST.json": "e72c5560987f028dc27acfd99b8594e6692ddda68a07245c6e2322cecec4aa48",
+    "docs/protocolo_simulacion.md": "7a33a31156694526ca3fd84edc2be460f83a54cf423062dd47ef737279ae54f3",
+    "run.py": "b43eff2a594b7e994febca433cc001eb7f8d69089be40340ca8c4c5299d1be19"
+  },
+  "protocol_version": "V5.3 (inter-escala)"
+}

@@ -1,0 +1,20 @@
+{
+  "case_id": "28_caso_fuga_cerebros",
+  "timestamp_utc": "2026-04-28T22:44:09.399513+00:00",
+  "git_commit": "a24f6dd14049cd8ce571bb53abc4f6d056a00e3a",
+  "git_dirty": true,
+  "file_count": 8,
+  "aggregate_hash": "b668b62cd2ac226602a7d38b509dda3a6c12c8d1aa22a5b30941393591e4af72",
+  "file_hashes": {
+    "README.md": "29f5fbcf31eda48fab8ec5f16c893b762ef294ba80f03f1c30bb5c03244191b7",
+    "case_config.json": "47ca48fad8a19ca40248d71afefcd4d0769e250dcc9dcf1fa39dfd85a006e626",
+    "data/FETCH_MANIFEST.json": "e299577b51c1203ef1e5a1ab4afee8ac22b680a894d3061fd5993abb698fffff",
+    "docs/protocolo_simulacion.md": "9946571ba834e314efa987af8ffc95520a13ad0b3bb835f1898ae32741d30d50",
+    "src/abm.py": "eb1fbe0260afc35f54d9e115a7fb7bdc36397e63bb0a5bf7fa78ebb5d2c3bce0",
+    "src/data.py": "ba2d526a078d25b724075d3193954c827f65be6f71789c07db9876a6d3f00dfe",
+    "src/ode.py": "9d4a8cc7aec03a06acd00a072f16e70e9b2a4b4434062122fe7a3b12bb311d34",
+    "src/validate.py": "432eae9f67f6113d1a92c4f3e586133e04f26978ec01ca2781401af17141dd36"
+  },
+  "protocol_version": "V5.1",
+  "method": "sha256_recursive_with_output_exclusion"
+}

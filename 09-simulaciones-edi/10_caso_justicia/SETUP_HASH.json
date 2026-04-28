@@ -1,0 +1,20 @@
+{
+  "case_id": "10_caso_justicia",
+  "timestamp_utc": "2026-04-28T22:44:09.331018+00:00",
+  "git_commit": "a24f6dd14049cd8ce571bb53abc4f6d056a00e3a",
+  "git_dirty": true,
+  "file_count": 8,
+  "aggregate_hash": "221d698d11a6755f5ee2f5aac6406fa9680d3dd8896e7f9c782fad55331b2722",
+  "file_hashes": {
+    "README.md": "2934919f75a0bd969e772237e953bf070fb209e30e21da2eb29b9bc783dbb210",
+    "case_config.json": "d118c4784de7979b107cfe9ce5a58a5bd3f0d9a7392dccb895f8a2b31fd8e329",
+    "data/FETCH_MANIFEST.json": "ca0ed465dbaec32ca79ba0c9b22a9d0ce311b51b9085c781bd8b6fe9166d95d2",
+    "docs/protocolo_simulacion.md": "0a99cb35c5c2902db9e1db85d16886b75754129e37793622ee668aa501c57caf",
+    "src/abm.py": "36b5ea4ebfe3f791a332ba0a5e1632e2097db771495fcb235a1f6a5a2fe9d485",
+    "src/data.py": "46fbbacb05ff7557468181fc9272dfc365854a5ebe6d46f885ed7c6e6ff8cd20",
+    "src/ode.py": "2cb3aff455ddb7604b8b67acdee5d369dddaaadf45b7ba7170f5c7435e6fc68b",
+    "src/validate.py": "ab185b13c5cacf7cfd7425117011913ce4ba45b454a9450deb98006de9102aff"
+  },
+  "protocol_version": "V5.1",
+  "method": "sha256_recursive_with_output_exclusion"
+}

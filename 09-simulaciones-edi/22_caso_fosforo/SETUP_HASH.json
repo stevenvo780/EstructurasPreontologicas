@@ -1,0 +1,20 @@
+{
+  "case_id": "22_caso_fosforo",
+  "timestamp_utc": "2026-04-28T22:44:09.372989+00:00",
+  "git_commit": "a24f6dd14049cd8ce571bb53abc4f6d056a00e3a",
+  "git_dirty": true,
+  "file_count": 8,
+  "aggregate_hash": "d570544204fffe43b4aa0c7fa60f928ca983d27d7705b13fdf73684f2587a7d5",
+  "file_hashes": {
+    "README.md": "9a3e395add54ddbc0c16379ba0a1a63d8ffb54be2813f417178e4436923a8900",
+    "case_config.json": "eaa1d8fff6683edb2970e250f4247e367ce5d9bdd7c2e54b64f4d8071541311a",
+    "data/FETCH_MANIFEST.json": "4c7c6551976e3560a2a85a461fe6b7c0121b886d210a465d9fdce52d80694bb5",
+    "docs/protocolo_simulacion.md": "d79f553b2a6dfffd27bcedc756b92881b523967e446c846d7bac9f13721358bd",
+    "src/abm.py": "4cf80e0480b480100121d4995f1be16926a396910560faae25d95054b03a3f96",
+    "src/data.py": "7135ebe0b98bc1bd17184de263aa46f002b54c26da846c3d6a28681cfbde373f",
+    "src/ode.py": "784a70eb5d836e3a0d41637144e7f15066455a5632f2a62d212e90a2d3c9f84b",
+    "src/validate.py": "e155281f1fee33b46242683cca88a84ab59afaffea16b6d400c79859c1f398ba"
+  },
+  "protocol_version": "V5.1",
+  "method": "sha256_recursive_with_output_exclusion"
+}

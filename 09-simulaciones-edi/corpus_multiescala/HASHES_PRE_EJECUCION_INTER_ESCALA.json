@@ -1,0 +1,19 @@
+{
+  "timestamp_utc": "2026-04-28T22:44:09.436620+00:00",
+  "git_commit": "a24f6dd14049cd8ce571bb53abc4f6d056a00e3a",
+  "corpus_size": 10,
+  "corpus_aggregate_hash": "de6838120ccd521e704c74dee9f750b28626e3a9c479e46d173046152dd6a520",
+  "case_aggregates": {
+    "31_decoherencia_cuantica": "5b8af6e2aaa8a57dd4983d63f64e9c3553c5f8d624cd0eb6249595836a4d503c",
+    "32_espin_orbita": "840bc61ba5876851e0cb291d53c4140ec7a38023d16669d465052512d62092be",
+    "33_villin_headpiece": "ee5ec4e212a9ff1e85eb97b0ff1f76fa9962b971a4648beda7bc191428af28dc",
+    "34_michaelis_menten": "7b06722af002b03aa6796e6076d1b7b6a0ee1a8229845b260bb776dffe4648b4",
+    "35_ciclo_celular": "383da90b293698a25f835bda50a4503128a3d66fc982bd890c4397ba8a74bc37",
+    "36_nfkb": "31096b2aad3155b45378b5f21280a506cee5c4eec97b72b544289c938cf183a3",
+    "37_hrv_cardiaco": "1fb446f4673485c3ee561176466fdfe64b7f42b7d18e3e8f321a24e7f2931780",
+    "38_locomocion_alternativa": "1262938a52d09926f3b6fb1913a1ca6e567ddf2e469b0ff2982cf6b8d47f3c85",
+    "39_cefeidas_ogle": "72155ff90e82ba9a8f5769d7a7e82d87c7c5b4d5786951182b78ca7a08d3878d",
+    "40_cumulos_globulares": "9bc8e3003deeac7bbf133e07ffa6c18e0e3eb7e22723d4bbde38305f6038adc7"
+  },
+  "protocol_version": "V5.3 (inter-escala)"
+}

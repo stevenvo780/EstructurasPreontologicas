@@ -1,0 +1,65 @@
+{
+  "case_id": "10_caso_justicia",
+  "version_protocolo": "V5.2",
+  "expected_classification": "suggestive",
+  "loe": 3,
+  "B1_calibration": {
+    "edi_canonical": 0.22744325283615935,
+    "p_value_naive_canonical": 0.4774774774774775,
+    "p_value_block_bootstrap_estimated": 1.0,
+    "p_value_naive_re_estimated": 1.0,
+    "calibration_shift": 0.5225225225225225,
+    "newey_west_se_estimated": 0.06064211198576083,
+    "newey_west_ci_95_estimated": [
+      0.10858471334406812,
+      0.3463017923282506
+    ],
+    "fwer_position_in_corpus": {
+      "raw_p_value": 0.4774774774774775,
+      "rank_in_corpus": 24,
+      "corpus_size": 30,
+      "p_adjusted_bonferroni": 1.0,
+      "p_adjusted_holm": 1.0,
+      "survives_fwer_at_alpha_0_05": false
+    },
+    "inferencia_robusta_post_calibracion": false
+  },
+  "B2_replication": {
+    "seed_robustness_estimated": {
+      "estimated_max_drift_inter_seed": 0.06339122106244865,
+      "criterio_robusto": "max_drift ≤ 0.05",
+      "robust_estimated": false,
+      "verificacion_definitiva_requiere": "re-ejecución con seeds {1,7,13,17,23,42}"
+    },
+    "holdout_temporal_estimated": {
+      "edi_full_published": 0.22744325283615935,
+      "n_test_estimated": 2,
+      "se_holdout_estimated": 0.07071067811865475,
+      "delta_test_vs_full_max_at_95pct": 0.13859292911256332,
+      "sin_leakage_si_delta_observado_menor_que": 0.13859292911256332,
+      "criterio": "Bajo train_frac=0.8, |Δ test-full| esperable ≤ 1.96 * SE_test",
+      "verificacion_definitiva_requiere": "arrays obs/abm publicados"
+    },
+    "verificacion_definitiva_requiere": "re-ejecución con dump de arrays obs/abm/forcing en metrics.json"
+  },
+  "B3_preregistration": {
+    "setup_aggregate_hash": "221d698d11a6755f5ee2f5aac6406fa9680d3dd8896e7f9c782fad55331b2722",
+    "git_commit": "a24f6dd14049cd8ce571bb53abc4f6d056a00e3a",
+    "git_dirty": true,
+    "frozen_at": "2026-04-28T22:44:09.331018+00:00",
+    "file_count": 8
+  },
+  "B5_threshold_invariance": {
+    "levels_under_grid": [
+      "strong",
+      "weak"
+    ],
+    "invariant": false,
+    "invariant_level": null
+  },
+  "elevacion_neta": {
+    "antes_v5_1": "EDI=+0.2274, p_naive=0.4775, clasificación canónica reportada",
+    "despues_v5_2": "EDI=+0.2274, p_block=1.0000, SE_HAC=0.0606, FWER_Holm=1.0000, invariante=False",
+    "veredicto": "CONFIRMADO COMO MARGINAL: p_block > 0.10 bajo calibración avanzada. El caso no produce inferencia robusta; reportar como no significativo post-calibración."
+  }
+}

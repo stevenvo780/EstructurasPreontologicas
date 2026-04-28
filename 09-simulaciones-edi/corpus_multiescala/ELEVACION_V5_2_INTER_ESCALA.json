@@ -1,0 +1,266 @@
+{
+  "version_protocolo": "V5.2",
+  "corpus": "inter-escala (10 casos, 31-40)",
+  "casos_evaluados": 10,
+  "summary_table": [
+    {
+      "case_id": "31_decoherencia_cuantica",
+      "version_protocolo": "V5.2",
+      "scale": "cuántica (10⁻⁹ m, 10⁻⁶ s)",
+      "nivel_canonico": "4_strong",
+      "edi": 0.913177796635811,
+      "p_value_naive_canonico": 0.0,
+      "p_value_block_bootstrap_estimado": 0.0003333333333333333,
+      "newey_west_se_estimado": 0.017672768164763288,
+      "ci_95_canonico": [
+        0.8854121570965395,
+        0.9315969912337876
+      ],
+      "fwer_holm_inter_escala": 0.0,
+      "sobrevive_fwer": true,
+      "threshold_invariance": {
+        "levels": [
+          "strong"
+        ],
+        "invariant": true,
+        "level": "strong"
+      },
+      "veredicto_V5_2": "ELEVADO A ROBUSTO V5.2"
+    },
+    {
+      "case_id": "32_espin_orbita",
+      "version_protocolo": "V5.2",
+      "scale": "atómica (10⁻¹⁰ m, 10⁻¹⁵ s)",
+      "nivel_canonico": "4_strong",
+      "edi": 0.8250879834716865,
+      "p_value_naive_canonico": 0.0,
+      "p_value_block_bootstrap_estimado": 0.0003333333333333333,
+      "newey_west_se_estimado": 0.020608882633478556,
+      "ci_95_canonico": [
+        0.7970136996952593,
+        0.8508715796440832
+      ],
+      "fwer_holm_inter_escala": 0.0,
+      "sobrevive_fwer": true,
+      "threshold_invariance": {
+        "levels": [
+          "strong"
+        ],
+        "invariant": true,
+        "level": "strong"
+      },
+      "veredicto_V5_2": "ELEVADO A ROBUSTO V5.2"
+    },
+    {
+      "case_id": "33_villin_headpiece",
+      "version_protocolo": "V5.2",
+      "scale": "molecular (10⁻⁹ m, 10⁻⁶ s)",
+      "nivel_canonico": "0_null",
+      "edi": 0.0,
+      "p_value_naive_canonico": 0.8258258258258259,
+      "p_value_block_bootstrap_estimado": 0.5113333333333333,
+      "newey_west_se_estimado": 0.00038265306122448983,
+      "ci_95_canonico": [
+        -2.220446049250313e-16,
+        0.0
+      ],
+      "fwer_holm_inter_escala": 1.0,
+      "sobrevive_fwer": false,
+      "threshold_invariance": {
+        "levels": [
+          "null"
+        ],
+        "invariant": true,
+        "level": "null"
+      },
+      "veredicto_V5_2": "CONFIRMADO NULL"
+    },
+    {
+      "case_id": "34_michaelis_menten",
+      "version_protocolo": "V5.2",
+      "scale": "bioquímica (10⁻⁸ m, 10⁻³ s)",
+      "nivel_canonico": "4_strong",
+      "edi": 0.4580474281524688,
+      "p_value_naive_canonico": 0.0,
+      "p_value_block_bootstrap_estimado": 0.0003333333333333333,
+      "newey_west_se_estimado": 0.08987836894061729,
+      "ci_95_canonico": [
+        0.33388872384377416,
+        0.5687708613419207
+      ],
+      "fwer_holm_inter_escala": 0.0,
+      "sobrevive_fwer": true,
+      "threshold_invariance": {
+        "levels": [
+          "strong"
+        ],
+        "invariant": true,
+        "level": "strong"
+      },
+      "veredicto_V5_2": "ELEVADO A ROBUSTO V5.2"
+    },
+    {
+      "case_id": "35_ciclo_celular",
+      "version_protocolo": "V5.2",
+      "scale": "celular (10⁻⁵ m, 10³-10⁴ s)",
+      "nivel_canonico": "3_weak",
+      "edi": 0.1306799800346662,
+      "p_value_naive_canonico": 0.0,
+      "p_value_block_bootstrap_estimado": 0.003,
+      "newey_west_se_estimado": 0.014896610205644025,
+      "ci_95_canonico": [
+        0.10892306370480587,
+        0.14785287170888892
+      ],
+      "fwer_holm_inter_escala": 0.0,
+      "sobrevive_fwer": true,
+      "threshold_invariance": {
+        "levels": [
+          "suggestive",
+          "weak"
+        ],
+        "invariant": false,
+        "level": null
+      },
+      "veredicto_V5_2": "SENSIBLE A UMBRALES"
+    },
+    {
+      "case_id": "36_nfkb",
+      "version_protocolo": "V5.2",
+      "scale": "celular oscilatoria (10⁻⁵ m, 10²-10³ s)",
+      "nivel_canonico": "4_strong",
+      "edi": 0.5873739314271895,
+      "p_value_naive_canonico": 0.0,
+      "p_value_block_bootstrap_estimado": 0.0003333333333333333,
+      "newey_west_se_estimado": 0.0018615338189773975,
+      "ci_95_canonico": [
+        0.5842874947984737,
+        0.5891523031787347
+      ],
+      "fwer_holm_inter_escala": 0.0,
+      "sobrevive_fwer": true,
+      "threshold_invariance": {
+        "levels": [
+          "strong"
+        ],
+        "invariant": true,
+        "level": "strong"
+      },
+      "veredicto_V5_2": "ELEVADO A ROBUSTO V5.2"
+    },
+    {
+      "case_id": "37_hrv_cardiaco",
+      "version_protocolo": "V5.2",
+      "scale": "individual (1 m, 1 s)",
+      "nivel_canonico": "4_strong",
+      "edi": 0.5771350469912229,
+      "p_value_naive_canonico": 0.0,
+      "p_value_block_bootstrap_estimado": 0.0003333333333333333,
+      "newey_west_se_estimado": 0.05187985963113345,
+      "ci_95_canonico": [
+        0.5087538984308582,
+        0.6443332649335536
+      ],
+      "fwer_holm_inter_escala": 0.0,
+      "sobrevive_fwer": true,
+      "threshold_invariance": {
+        "levels": [
+          "strong"
+        ],
+        "invariant": true,
+        "level": "strong"
+      },
+      "veredicto_V5_2": "ELEVADO A ROBUSTO V5.2"
+    },
+    {
+      "case_id": "38_locomocion_alternativa",
+      "version_protocolo": "V5.2",
+      "scale": "individual / behavioral (1 m, 1 s)",
+      "nivel_canonico": "0_null",
+      "edi": -1.3412282437650878,
+      "p_value_naive_canonico": 1.0,
+      "p_value_block_bootstrap_estimado": 1.0,
+      "newey_west_se_estimado": 0.11403549787751285,
+      "ci_95_canonico": [
+        -1.5079292367208414,
+        -1.2099164689342745
+      ],
+      "fwer_holm_inter_escala": 1.0,
+      "sobrevive_fwer": false,
+      "threshold_invariance": {
+        "levels": [
+          "null"
+        ],
+        "invariant": true,
+        "level": "null"
+      },
+      "veredicto_V5_2": "CONFIRMADO NULL"
+    },
+    {
+      "case_id": "39_cefeidas_ogle",
+      "version_protocolo": "V5.2",
+      "scale": "astrofísica (10¹¹ m, 10⁵ s)",
+      "nivel_canonico": "4_strong",
+      "edi": 0.9162290686317869,
+      "p_value_naive_canonico": 0.0,
+      "p_value_block_bootstrap_estimado": 0.0003333333333333333,
+      "newey_west_se_estimado": 0.011626018486440154,
+      "ci_95_canonico": [
+        0.9002927973394179,
+        0.9306754589839815
+      ],
+      "fwer_holm_inter_escala": 0.0,
+      "sobrevive_fwer": true,
+      "threshold_invariance": {
+        "levels": [
+          "strong"
+        ],
+        "invariant": true,
+        "level": "strong"
+      },
+      "veredicto_V5_2": "ELEVADO A ROBUSTO V5.2"
+    },
+    {
+      "case_id": "40_cumulos_globulares",
+      "version_protocolo": "V5.2",
+      "scale": "astrofísica grande (10¹⁷-10²⁰ m, 10¹⁴ s)",
+      "nivel_canonico": "4_strong",
+      "edi": 0.4275530650113536,
+      "p_value_naive_canonico": 0.0,
+      "p_value_block_bootstrap_estimado": 0.0003333333333333333,
+      "newey_west_se_estimado": 0.06267407406289249,
+      "ci_95_canonico": [
+        0.34758870756158783,
+        0.5113769544459469
+      ],
+      "fwer_holm_inter_escala": 0.0,
+      "sobrevive_fwer": true,
+      "threshold_invariance": {
+        "levels": [
+          "strong"
+        ],
+        "invariant": true,
+        "level": "strong"
+      },
+      "veredicto_V5_2": "ELEVADO A ROBUSTO V5.2"
+    }
+  ],
+  "by_verdict": {
+    "ELEVADO A ROBUSTO V5.2": [
+      "31_decoherencia_cuantica",
+      "32_espin_orbita",
+      "34_michaelis_menten",
+      "36_nfkb",
+      "37_hrv_cardiaco",
+      "39_cefeidas_ogle",
+      "40_cumulos_globulares"
+    ],
+    "CONFIRMADO NULL": [
+      "33_villin_headpiece",
+      "38_locomocion_alternativa"
+    ],
+    "SENSIBLE A UMBRALES": [
+      "35_ciclo_celular"
+    ]
+  }
+}

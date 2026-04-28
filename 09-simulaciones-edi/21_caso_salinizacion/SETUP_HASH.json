@@ -1,0 +1,20 @@
+{
+  "case_id": "21_caso_salinizacion",
+  "timestamp_utc": "2026-04-28T22:44:09.368169+00:00",
+  "git_commit": "a24f6dd14049cd8ce571bb53abc4f6d056a00e3a",
+  "git_dirty": true,
+  "file_count": 8,
+  "aggregate_hash": "ee190bea78043988f781b1cac1ee0878b207b79d046bf7c04dba53dd45c1bae0",
+  "file_hashes": {
+    "README.md": "b4e864564676409bca4a7c91638fddf2f9c53c7c177311dcb569caa71f5ab65f",
+    "case_config.json": "7a57d614bf4923e6a0c330cb6022e8ef18fc4869eec88821ca875b56366f4bfb",
+    "data/FETCH_MANIFEST.json": "8a02027350479605b01e8bdffcab85d084fa15d14fa18732ab4a95bd1eed7639",
+    "docs/protocolo_simulacion.md": "47340ed863a420f2311522a65af5f47e372f23197379d3fbcf2a521b860ba824",
+    "src/abm.py": "a26dce7e9d9fea643f12a9f654e4cd8b7d1a43e55999daa2590d80bb117ff248",
+    "src/data.py": "613e9e47f526ad793e106fa4b44c1fa9ee19b953d620761a8433d8d58dacc368",
+    "src/ode.py": "2f521b66d6a9246b321ad771be6829044cc16a017d032e2a681448701960c3fa",
+    "src/validate.py": "02b68950064a397908acd64cf7898740cbf1625239364ad28af1b0670ac6d20b"
+  },
+  "protocol_version": "V5.1",
+  "method": "sha256_recursive_with_output_exclusion"
+}

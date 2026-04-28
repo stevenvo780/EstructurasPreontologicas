@@ -1,0 +1,25 @@
+{
+  "case_id": "07_caso_falsacion_no_estacionariedad",
+  "timestamp_utc": "2026-04-28T22:44:09.319789+00:00",
+  "git_commit": "a24f6dd14049cd8ce571bb53abc4f6d056a00e3a",
+  "git_dirty": true,
+  "file_count": 13,
+  "aggregate_hash": "5a574918ba5f3bdff2af284020651784cfe917a74aaf5f2d0201caabd339ea14",
+  "file_hashes": {
+    "README.md": "610255d5fe7266b5647924779902efc180ff164342dc5131376e36a26663d0cf",
+    "case_config.json": "783dcb4644bcce112322c09065460963ce225c178396ff864cdc0eb2b945a7f5",
+    "data/FETCH_MANIFEST.json": "624b5fb1704df9a82343517707818f171764358ed6548ab190f3d24cbfeccf35",
+    "docs/arquitectura.md": "2e4c6bf657655e2ea034432369ae0e89fbe00c43d27e49d8d174e37f1ebbc072",
+    "docs/indicadores_metricas.md": "3c88c238199c49fe12d0f1f8326a32d5bec2d939c629bc5b99268fcc254c8b09",
+    "docs/protocolo_simulacion.md": "e8d118e047210f2a0633686dcf8b99a991b2245ea48186a8a6036e7279e48362",
+    "docs/reproducibilidad.md": "76ebef1a35a315855414036f1ee13a62d4d0197f219286cabe8ed10372eae921",
+    "docs/validacion_c1_c5.md": "72d72b1aef8cfeaa6540af41377816397b69a81f2c759cc5c32b69ff9bf9fe6a",
+    "requirements.txt": "49a15faee932b0e39bc734a9881b3ef1f1d194ebab44858f724036babafbd9eb",
+    "src/abm.py": "3c6eda192050a751d1a671de71cfd529c315a860966f18986ad7a89f7ae49444",
+    "src/data.py": "83ecc63f8c255708ff8f12bec04bd89c6c5b4e10324979bcd7ec7b1e18a917ad",
+    "src/ode.py": "9f6091c31ead9650c6c067469ab759e8821fb1d00eecc043df84130ae9c6b2f9",
+    "src/validate.py": "4d4fd57fdd854f71916437e16a52dbb6c6ece57a86644a6029619e2c7479ec0e"
+  },
+  "protocol_version": "V5.1",
+  "method": "sha256_recursive_with_output_exclusion"
+}

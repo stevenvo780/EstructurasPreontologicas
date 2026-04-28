@@ -1,0 +1,20 @@
+{
+  "case_id": "27_caso_riesgo_biologico",
+  "timestamp_utc": "2026-04-28T22:44:09.395597+00:00",
+  "git_commit": "a24f6dd14049cd8ce571bb53abc4f6d056a00e3a",
+  "git_dirty": true,
+  "file_count": 8,
+  "aggregate_hash": "4f051c29214dd8de5248ae198db1e63e0338acc8f7f719f7e196233dc70af5a7",
+  "file_hashes": {
+    "README.md": "b3cb14b1a78d55eb14d11eff3ac9eb67f8c39f739f525fa14b5e92a35342f7ac",
+    "case_config.json": "2baa5568af86447294f4d5e34261cd2224ceb124c9bc41b788c34d080c3a8724",
+    "data/FETCH_MANIFEST.json": "1e2bd0e961bb570278fc7929bd6a58a80cfb2d73ca1b09475a6ece958a6405d1",
+    "docs/protocolo_simulacion.md": "3d307c93179d45e377de53c8cd1f3d742911e03960ecd35403617cf886de1e42",
+    "src/abm.py": "d855fc3edcb222a7f698a66e60bef088f83938d0d77beb9248a50617e8f3c200",
+    "src/data.py": "e6fdca253c5d69e8733049140a43bb5388b04fec33aab8b3d92664d28f2f71e9",
+    "src/ode.py": "a5b480ae08df615fc0fe1b0f4c53135c8582be4d4b6d997054238a7127227619",
+    "src/validate.py": "e49476aab578ac3d35ce676e24516607fe9c9f1ba6f2ebb2a029697a7735e02b"
+  },
+  "protocol_version": "V5.1",
+  "method": "sha256_recursive_with_output_exclusion"
+}

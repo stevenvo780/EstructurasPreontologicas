@@ -1,26 +1,30 @@
-# Protocolo de Simulacion (Epidemiologia)
+# Protocolo de simulación — 05_caso_epidemiologia
 
-## 1. Definicion de escenario
-- Objetivo: demostrar persistencia, no-localidad funcional y emergencia en incidencia agregada.
-- Delimitacion: serie global (World) como proxy del sistema.
+## Sonda SIR (Kermack-McKendrick)
 
-## 2. Diseno de agentes
-- Agentes: estados S/I/R con contagio local.
-- Reglas: probabilidad de contagio + recuperacion + acople macro.
+**Régimen físico:** Población cerrada, contactos homogéneos, periodo infeccioso fijo.
 
-## 3. Inicializacion
-- Grilla con distribucion inicial y semillas documentadas.
-- Parametros base definidos en `src/validate.py`.
-- Split sintetica: 2010-2016 / 2017-2020.
-- Split real: 2020-2021 / 2022-2023.
+## Ecuación de la sonda
 
-## 4. Ejecucion
-- Escenario base y contrafactuales.
-- Criterio de paro: estabilidad de indicadores y costo marginal > beneficio.
-- Se usa nudging con observacion del mismo periodo (t) para evaluacion de corto plazo.
+```
+dS/dt = -β*S*I; dI/dt = β*S*I - γ*I; dR/dt = γ*I
+```
 
-## 5. Evaluacion
-- Comparacion en dos fases:
-- Fase sintetica: verificacion interna y calibracion base.
-- Fase real: evaluacion final con datos reales.
-- C1-C5 obligatorios.
+## Motivación física
+
+Modelo compartimental epidemiológico clásico (Kermack-McKendrick 1927).
+
+## Origen de parámetros
+
+OWID COVID-19 con calibración por país.
+
+## Citas disciplinares
+
+- Kermack, W. O. y McKendrick, A. G. (1927). *Proc. R. Soc. A* 115(772).
+
+## Lectura cruzada
+
+- `05_caso_epidemiologia/data/FETCH_MANIFEST.json` — trazabilidad de datos
+- `05_caso_epidemiologia/SETUP_HASH.json` — pre-registro criptográfico
+- `05_caso_epidemiologia/outputs/metrics.json` — outputs canónicos
+- `05_caso_epidemiologia/outputs/metrics_enriched_v5_2.json` — calibración avanzada V5.2/5.3

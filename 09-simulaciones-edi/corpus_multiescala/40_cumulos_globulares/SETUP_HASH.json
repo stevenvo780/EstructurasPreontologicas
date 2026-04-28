@@ -1,0 +1,13 @@
+{
+  "case_id": "40_cumulos_globulares",
+  "timestamp_utc": "2026-04-28T22:44:09.436143+00:00",
+  "git_commit": "a24f6dd14049cd8ce571bb53abc4f6d056a00e3a",
+  "file_count": 3,
+  "aggregate_hash": "9bc8e3003deeac7bbf133e07ffa6c18e0e3eb7e22723d4bbde38305f6038adc7",
+  "file_hashes": {
+    "data/FETCH_MANIFEST.json": "fd441dc7219fccb6e2734602f98efe96040d8eef2843bde239d8f6482c7a0fd5",
+    "docs/protocolo_simulacion.md": "0254a9aec8cc082622e626935ecc4fd40818b2f9d33f85b1cba6a3a899a72cf7",
+    "run.py": "0f7b2e89ae45e617ae0c2293378b8c49d6764131b7de69849899f09ce87e8131"
+  },
+  "protocol_version": "V5.3 (inter-escala)"
+}

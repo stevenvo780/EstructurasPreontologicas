@@ -1,0 +1,20 @@
+{
+  "case_id": "23_caso_erosion_dialectica",
+  "timestamp_utc": "2026-04-28T22:44:09.377762+00:00",
+  "git_commit": "a24f6dd14049cd8ce571bb53abc4f6d056a00e3a",
+  "git_dirty": true,
+  "file_count": 8,
+  "aggregate_hash": "50ebe8ef770bc5d3ba15505655c9405f9cf0d656dc66f887d0a8c8ec1d3026c4",
+  "file_hashes": {
+    "README.md": "b02844ace4e1af8d6a2da4a85c6576bf24ca9d3ebf54c82b55874b27c95301ea",
+    "case_config.json": "bfd05fdf145d2cfdb831a7e64a02119363e039c9af29784223354d0bf9f38085",
+    "data/FETCH_MANIFEST.json": "35aa59e2ffb7ce2a8ae81583b9744796efdebcbea8e912f85a52b8073fe5c95a",
+    "docs/protocolo_simulacion.md": "5bd81c84709b869a537da11f71b3c0aa948f77d302d8aeb09e9d4ca701522639",
+    "src/abm.py": "804ad84e81ad47d797219b3f16cd17017e044e9d6ec93dc2db305a4220825d2f",
+    "src/data.py": "a8870f317b14da1fcbcb037ea70f74fb57c9ca41dba6437ee3e5f6aa8ef4d758",
+    "src/ode.py": "737063ecdaaa34bbd10fc252d84e0fa32921965a22306c932a3ae2d04b3e34a7",
+    "src/validate.py": "dd4127b582024b0f1b769e74513725cccf96a9b1eef68cdec85e8c1b993dadb6"
+  },
+  "protocol_version": "V5.1",
+  "method": "sha256_recursive_with_output_exclusion"
+}

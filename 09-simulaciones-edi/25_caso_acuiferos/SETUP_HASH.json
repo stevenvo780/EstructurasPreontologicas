@@ -1,0 +1,20 @@
+{
+  "case_id": "25_caso_acuiferos",
+  "timestamp_utc": "2026-04-28T22:44:09.387318+00:00",
+  "git_commit": "a24f6dd14049cd8ce571bb53abc4f6d056a00e3a",
+  "git_dirty": true,
+  "file_count": 8,
+  "aggregate_hash": "a4ad9b7cf06ff39e15156edf68018bfc34b0c69f5a08f60e8eb5f1626bf171f2",
+  "file_hashes": {
+    "README.md": "8c05d43889a26334325c5f2f1977922c83dad179fcb5144d6321f6c9652237c3",
+    "case_config.json": "04a53f848b2ad26317bec946413627d30a09d945854d5b670aff721ada7ef784",
+    "data/FETCH_MANIFEST.json": "b90712cce7fecf9843702d075d0b473fd82c52418bdd49cb318f9e49a282d781",
+    "docs/protocolo_simulacion.md": "3938d4d833aa9ee73ee4a1e82cba8974cbc9843a732124e2e8ba9a72ee69379e",
+    "src/abm.py": "3331278a167429d25428fc941acd326cc00482ff5ce0e14e56983c801f928999",
+    "src/data.py": "a37e6abd99e07162a1ee881b8e2e312dd5d559966cb8461da971ccd149b95a87",
+    "src/ode.py": "110c37c6eb4a630b620d9157fd1919bcb4c0ad188b43d85914863da23b44cacd",
+    "src/validate.py": "aab2f1c15e255e82c613b38e384d48ff080e1db7c45e1981592a7679abe4dccd"
+  },
+  "protocol_version": "V5.1",
+  "method": "sha256_recursive_with_output_exclusion"
+}

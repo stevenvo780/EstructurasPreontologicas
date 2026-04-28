@@ -1,0 +1,454 @@
+{
+  "version_protocolo": "V5.2 / B7",
+  "n_total": 40,
+  "categorias": {
+    "no_null": [
+      "04_caso_energia",
+      "05_caso_epidemiologia",
+      "10_caso_justicia",
+      "11_caso_movilidad",
+      "13_caso_politicas_estrategicas",
+      "14_caso_postverdad",
+      "15_caso_wikipedia",
+      "16_caso_deforestacion",
+      "18_caso_urbanizacion",
+      "20_caso_kessler",
+      "22_caso_fosforo",
+      "24_caso_microplasticos",
+      "26_caso_starlink",
+      "27_caso_riesgo_biologico",
+      "30_caso_behavioral_dynamics",
+      "31_decoherencia_cuantica",
+      "32_espin_orbita",
+      "34_michaelis_menten",
+      "35_ciclo_celular",
+      "36_nfkb",
+      "37_hrv_cardiaco",
+      "39_cefeidas_ogle",
+      "40_cumulos_globulares"
+    ],
+    "null_real": [
+      "01_caso_clima",
+      "06_caso_falsacion_exogeneidad",
+      "07_caso_falsacion_no_estacionariedad",
+      "09_caso_finanzas"
+    ],
+    "null_por_potencia_insuficiente": [
+      "02_caso_conciencia",
+      "03_caso_contaminacion",
+      "08_caso_falsacion_observabilidad",
+      "12_caso_paradigmas",
+      "17_caso_oceanos",
+      "19_caso_acidificacion_oceanica",
+      "21_caso_salinizacion",
+      "23_caso_erosion_dialectica",
+      "25_caso_acuiferos",
+      "28_caso_fuga_cerebros",
+      "29_caso_iot",
+      "33_villin_headpiece",
+      "38_locomocion_alternativa"
+    ]
+  },
+  "results_por_caso": {
+    "01_caso_clima": {
+      "edi_observado": 0.011072299899552383,
+      "n": 168,
+      "potencia_para_detectar_weak": 0.8949472418268769,
+      "mde_actual": 0.08580965230422175,
+      "n_necesario_para_detectar_weak": 124,
+      "criterio": "Potencia ≥ 0.8 para detectar EDI = 0.1 con α = 0.05",
+      "clasificacion": "null_real",
+      "interpretacion": "Null real: la potencia (89.49%) era suficiente para detectar EDI = 0.10 si lo hubiera; la ausencia de señal es genuina."
+    },
+    "02_caso_conciencia": {
+      "edi_observado": -0.11646132488773708,
+      "n": 9,
+      "potencia_para_detectar_weak": 0.2594635928547797,
+      "mde_actual": 0.24870000000000003,
+      "n_necesario_para_detectar_weak": 124,
+      "criterio": "Potencia ≥ 0.8 para detectar EDI = 0.1 con α = 0.05",
+      "clasificacion": "null_por_potencia_insuficiente",
+      "interpretacion": "Null por potencia insuficiente: con n actual la potencia (25.95%) es insuficiente. Para detectar EDI = 0.10 con potencia 0.80 se necesitaría n ≥ 124 (vs n actual = 9). NO se puede afirmar que no haya cierre operativo; sólo que el corpus actual no tiene resolución para detectarlo."
+    },
+    "03_caso_contaminacion": {
+      "edi_observado": -0.003799866103022012,
+      "n": 11,
+      "potencia_para_detectar_weak": 0.2594635928547797,
+      "mde_actual": 0.24870000000000003,
+      "n_necesario_para_detectar_weak": 124,
+      "criterio": "Potencia ≥ 0.8 para detectar EDI = 0.1 con α = 0.05",
+      "clasificacion": "null_por_potencia_insuficiente",
+      "interpretacion": "Null por potencia insuficiente: con n actual la potencia (25.95%) es insuficiente. Para detectar EDI = 0.10 con potencia 0.80 se necesitaría n ≥ 124 (vs n actual = 11). NO se puede afirmar que no haya cierre operativo; sólo que el corpus actual no tiene resolución para detectarlo."
+    },
+    "04_caso_energia": {
+      "edi_observado": 0.650265837204689,
+      "n": 13,
+      "potencia_para_detectar_weak": 0.2594635928547797,
+      "mde_actual": 0.24870000000000003,
+      "n_necesario_para_detectar_weak": 124,
+      "criterio": "Potencia ≥ 0.8 para detectar EDI = 0.1 con α = 0.05",
+      "clasificacion": "no_null",
+      "interpretacion": "No es null (EDI > 0.10)."
+    },
+    "05_caso_epidemiologia": {
+      "edi_observado": 0.12944152062099962,
+      "n": 104,
+      "potencia_para_detectar_weak": 0.7374001920228561,
+      "mde_actual": 0.10906216470082908,
+      "n_necesario_para_detectar_weak": 124,
+      "criterio": "Potencia ≥ 0.8 para detectar EDI = 0.1 con α = 0.05",
+      "clasificacion": "no_null",
+      "interpretacion": "No es null (EDI > 0.10)."
+    },
+    "06_caso_falsacion_exogeneidad": {
+      "edi_observado": 0.05505918915717987,
+      "n": 731,
+      "potencia_para_detectar_weak": 0.9999946038842962,
+      "mde_actual": 0.041136950548264974,
+      "n_necesario_para_detectar_weak": 124,
+      "criterio": "Potencia ≥ 0.8 para detectar EDI = 0.1 con α = 0.05",
+      "clasificacion": "null_real",
+      "interpretacion": "Null real: la potencia (100.00%) era suficiente para detectar EDI = 0.10 si lo hubiera; la ausencia de señal es genuina."
+    },
+    "07_caso_falsacion_no_estacionariedad": {
+      "edi_observado": -0.8819209901612093,
+      "n": 731,
+      "potencia_para_detectar_weak": 0.9999946038842962,
+      "mde_actual": 0.041136950548264974,
+      "n_necesario_para_detectar_weak": 124,
+      "criterio": "Potencia ≥ 0.8 para detectar EDI = 0.1 con α = 0.05",
+      "clasificacion": "null_real",
+      "interpretacion": "Null real: la potencia (100.00%) era suficiente para detectar EDI = 0.10 si lo hubiera; la ausencia de señal es genuina."
+    },
+    "08_caso_falsacion_observabilidad": {
+      "edi_observado": -1.0,
+      "n": 97,
+      "potencia_para_detectar_weak": 0.7113290462277985,
+      "mde_actual": 0.1129288527046825,
+      "n_necesario_para_detectar_weak": 124,
+      "criterio": "Potencia ≥ 0.8 para detectar EDI = 0.1 con α = 0.05",
+      "clasificacion": "null_por_potencia_insuficiente",
+      "interpretacion": "Null por potencia insuficiente: con n actual la potencia (71.13%) es insuficiente. Para detectar EDI = 0.10 con potencia 0.80 se necesitaría n ≥ 124 (vs n actual = 97). NO se puede afirmar que no haya cierre operativo; sólo que el corpus actual no tiene resolución para detectarlo."
+    },
+    "09_caso_finanzas": {
+      "edi_observado": 0.08125725845167885,
+      "n": 168,
+      "potencia_para_detectar_weak": 0.8949472418268769,
+      "mde_actual": 0.08580965230422175,
+      "n_necesario_para_detectar_weak": 124,
+      "criterio": "Potencia ≥ 0.8 para detectar EDI = 0.1 con α = 0.05",
+      "clasificacion": "null_real",
+      "interpretacion": "Null real: la potencia (89.49%) era suficiente para detectar EDI = 0.10 si lo hubiera; la ausencia de señal es genuina."
+    },
+    "10_caso_justicia": {
+      "edi_observado": 0.22744325283615935,
+      "n": 12,
+      "potencia_para_detectar_weak": 0.2594635928547797,
+      "mde_actual": 0.24870000000000003,
+      "n_necesario_para_detectar_weak": 124,
+      "criterio": "Potencia ≥ 0.8 para detectar EDI = 0.1 con α = 0.05",
+      "clasificacion": "no_null",
+      "interpretacion": "No es null (EDI > 0.10)."
+    },
+    "11_caso_movilidad": {
+      "edi_observado": 0.12828980793063793,
+      "n": 19,
+      "potencia_para_detectar_weak": 0.2594635928547797,
+      "mde_actual": 0.24870000000000003,
+      "n_necesario_para_detectar_weak": 124,
+      "criterio": "Potencia ≥ 0.8 para detectar EDI = 0.1 con α = 0.05",
+      "clasificacion": "no_null",
+      "interpretacion": "No es null (EDI > 0.10)."
+    },
+    "12_caso_paradigmas": {
+      "edi_observado": -0.006047380762526654,
+      "n": 11,
+      "potencia_para_detectar_weak": 0.2594635928547797,
+      "mde_actual": 0.24870000000000003,
+      "n_necesario_para_detectar_weak": 124,
+      "criterio": "Potencia ≥ 0.8 para detectar EDI = 0.1 con α = 0.05",
+      "clasificacion": "null_por_potencia_insuficiente",
+      "interpretacion": "Null por potencia insuficiente: con n actual la potencia (25.95%) es insuficiente. Para detectar EDI = 0.10 con potencia 0.80 se necesitaría n ≥ 124 (vs n actual = 11). NO se puede afirmar que no haya cierre operativo; sólo que el corpus actual no tiene resolución para detectarlo."
+    },
+    "13_caso_politicas_estrategicas": {
+      "edi_observado": 0.2972459599653249,
+      "n": 13,
+      "potencia_para_detectar_weak": 0.2594635928547797,
+      "mde_actual": 0.24870000000000003,
+      "n_necesario_para_detectar_weak": 124,
+      "criterio": "Potencia ≥ 0.8 para detectar EDI = 0.1 con α = 0.05",
+      "clasificacion": "no_null",
+      "interpretacion": "No es null (EDI > 0.10)."
+    },
+    "14_caso_postverdad": {
+      "edi_observado": 0.24284958859933714,
+      "n": 8,
+      "potencia_para_detectar_weak": 0.2594635928547797,
+      "mde_actual": 0.24870000000000003,
+      "n_necesario_para_detectar_weak": 124,
+      "criterio": "Potencia ≥ 0.8 para detectar EDI = 0.1 con α = 0.05",
+      "clasificacion": "no_null",
+      "interpretacion": "No es null (EDI > 0.10)."
+    },
+    "15_caso_wikipedia": {
+      "edi_observado": 0.19162977697124867,
+      "n": 48,
+      "potencia_para_detectar_weak": 0.46183706328761914,
+      "mde_actual": 0.16053515970029744,
+      "n_necesario_para_detectar_weak": 124,
+      "criterio": "Potencia ≥ 0.8 para detectar EDI = 0.1 con α = 0.05",
+      "clasificacion": "no_null",
+      "interpretacion": "No es null (EDI > 0.10)."
+    },
+    "16_caso_deforestacion": {
+      "edi_observado": 0.5802201286883273,
+      "n": 13,
+      "potencia_para_detectar_weak": 0.2594635928547797,
+      "mde_actual": 0.24870000000000003,
+      "n_necesario_para_detectar_weak": 124,
+      "criterio": "Potencia ≥ 0.8 para detectar EDI = 0.1 con α = 0.05",
+      "clasificacion": "no_null",
+      "interpretacion": "No es null (EDI > 0.10)."
+    },
+    "17_caso_oceanos": {
+      "edi_observado": -0.015399742732341487,
+      "n": 14,
+      "potencia_para_detectar_weak": 0.2594635928547797,
+      "mde_actual": 0.24870000000000003,
+      "n_necesario_para_detectar_weak": 124,
+      "criterio": "Potencia ≥ 0.8 para detectar EDI = 0.1 con α = 0.05",
+      "clasificacion": "null_por_potencia_insuficiente",
+      "interpretacion": "Null por potencia insuficiente: con n actual la potencia (25.95%) es insuficiente. Para detectar EDI = 0.10 con potencia 0.80 se necesitaría n ≥ 124 (vs n actual = 14). NO se puede afirmar que no haya cierre operativo; sólo que el corpus actual no tiene resolución para detectarlo."
+    },
+    "18_caso_urbanizacion": {
+      "edi_observado": 0.23583251166779556,
+      "n": 23,
+      "potencia_para_detectar_weak": 0.2834511867679327,
+      "mde_actual": 0.23191394580936606,
+      "n_necesario_para_detectar_weak": 124,
+      "criterio": "Potencia ≥ 0.8 para detectar EDI = 0.1 con α = 0.05",
+      "clasificacion": "no_null",
+      "interpretacion": "No es null (EDI > 0.10)."
+    },
+    "19_caso_acidificacion_oceanica": {
+      "edi_observado": -0.0001909971007845106,
+      "n": 11,
+      "potencia_para_detectar_weak": 0.2594635928547797,
+      "mde_actual": 0.24870000000000003,
+      "n_necesario_para_detectar_weak": 124,
+      "criterio": "Potencia ≥ 0.8 para detectar EDI = 0.1 con α = 0.05",
+      "clasificacion": "null_por_potencia_insuficiente",
+      "interpretacion": "Null por potencia insuficiente: con n actual la potencia (25.95%) es insuficiente. Para detectar EDI = 0.10 con potencia 0.80 se necesitaría n ≥ 124 (vs n actual = 11). NO se puede afirmar que no haya cierre operativo; sólo que el corpus actual no tiene resolución para detectarlo."
+    },
+    "20_caso_kessler": {
+      "edi_observado": 0.35269595151500943,
+      "n": 15,
+      "potencia_para_detectar_weak": 0.2594635928547797,
+      "mde_actual": 0.24870000000000003,
+      "n_necesario_para_detectar_weak": 124,
+      "criterio": "Potencia ≥ 0.8 para detectar EDI = 0.1 con α = 0.05",
+      "clasificacion": "no_null",
+      "interpretacion": "No es null (EDI > 0.10)."
+    },
+    "21_caso_salinizacion": {
+      "edi_observado": 0.01842115528473093,
+      "n": 18,
+      "potencia_para_detectar_weak": 0.2594635928547797,
+      "mde_actual": 0.24870000000000003,
+      "n_necesario_para_detectar_weak": 124,
+      "criterio": "Potencia ≥ 0.8 para detectar EDI = 0.1 con α = 0.05",
+      "clasificacion": "null_por_potencia_insuficiente",
+      "interpretacion": "Null por potencia insuficiente: con n actual la potencia (25.95%) es insuficiente. Para detectar EDI = 0.10 con potencia 0.80 se necesitaría n ≥ 124 (vs n actual = 18). NO se puede afirmar que no haya cierre operativo; sólo que el corpus actual no tiene resolución para detectarlo."
+    },
+    "22_caso_fosforo": {
+      "edi_observado": 0.19240058742600652,
+      "n": 18,
+      "potencia_para_detectar_weak": 0.2594635928547797,
+      "mde_actual": 0.24870000000000003,
+      "n_necesario_para_detectar_weak": 124,
+      "criterio": "Potencia ≥ 0.8 para detectar EDI = 0.1 con α = 0.05",
+      "clasificacion": "no_null",
+      "interpretacion": "No es null (EDI > 0.10)."
+    },
+    "23_caso_erosion_dialectica": {
+      "edi_observado": -1.0,
+      "n": 8,
+      "potencia_para_detectar_weak": 0.2594635928547797,
+      "mde_actual": 0.24870000000000003,
+      "n_necesario_para_detectar_weak": 124,
+      "criterio": "Potencia ≥ 0.8 para detectar EDI = 0.1 con α = 0.05",
+      "clasificacion": "null_por_potencia_insuficiente",
+      "interpretacion": "Null por potencia insuficiente: con n actual la potencia (25.95%) es insuficiente. Para detectar EDI = 0.10 con potencia 0.80 se necesitaría n ≥ 124 (vs n actual = 8). NO se puede afirmar que no haya cierre operativo; sólo que el corpus actual no tiene resolución para detectarlo."
+    },
+    "24_caso_microplasticos": {
+      "edi_observado": 0.7818771547395869,
+      "n": 15,
+      "potencia_para_detectar_weak": 0.2594635928547797,
+      "mde_actual": 0.24870000000000003,
+      "n_necesario_para_detectar_weak": 124,
+      "criterio": "Potencia ≥ 0.8 para detectar EDI = 0.1 con α = 0.05",
+      "clasificacion": "no_null",
+      "interpretacion": "No es null (EDI > 0.10)."
+    },
+    "25_caso_acuiferos": {
+      "edi_observado": -0.14615334806176566,
+      "n": 19,
+      "potencia_para_detectar_weak": 0.2594635928547797,
+      "mde_actual": 0.24870000000000003,
+      "n_necesario_para_detectar_weak": 124,
+      "criterio": "Potencia ≥ 0.8 para detectar EDI = 0.1 con α = 0.05",
+      "clasificacion": "null_por_potencia_insuficiente",
+      "interpretacion": "Null por potencia insuficiente: con n actual la potencia (25.95%) es insuficiente. Para detectar EDI = 0.10 con potencia 0.80 se necesitaría n ≥ 124 (vs n actual = 19). NO se puede afirmar que no haya cierre operativo; sólo que el corpus actual no tiene resolución para detectarlo."
+    },
+    "26_caso_starlink": {
+      "edi_observado": 0.6891705119737255,
+      "n": 1,
+      "potencia_para_detectar_weak": 0.2594635928547797,
+      "mde_actual": 0.24870000000000003,
+      "n_necesario_para_detectar_weak": 124,
+      "criterio": "Potencia ≥ 0.8 para detectar EDI = 0.1 con α = 0.05",
+      "clasificacion": "no_null",
+      "interpretacion": "No es null (EDI > 0.10)."
+    },
+    "27_caso_riesgo_biologico": {
+      "edi_observado": 0.3325786296723718,
+      "n": 9,
+      "potencia_para_detectar_weak": 0.2594635928547797,
+      "mde_actual": 0.24870000000000003,
+      "n_necesario_para_detectar_weak": 124,
+      "criterio": "Potencia ≥ 0.8 para detectar EDI = 0.1 con α = 0.05",
+      "clasificacion": "no_null",
+      "interpretacion": "No es null (EDI > 0.10)."
+    },
+    "28_caso_fuga_cerebros": {
+      "edi_observado": 0.024881669387389924,
+      "n": 18,
+      "potencia_para_detectar_weak": 0.2594635928547797,
+      "mde_actual": 0.24870000000000003,
+      "n_necesario_para_detectar_weak": 124,
+      "criterio": "Potencia ≥ 0.8 para detectar EDI = 0.1 con α = 0.05",
+      "clasificacion": "null_por_potencia_insuficiente",
+      "interpretacion": "Null por potencia insuficiente: con n actual la potencia (25.95%) es insuficiente. Para detectar EDI = 0.10 con potencia 0.80 se necesitaría n ≥ 124 (vs n actual = 18). NO se puede afirmar que no haya cierre operativo; sólo que el corpus actual no tiene resolución para detectarlo."
+    },
+    "29_caso_iot": {
+      "edi_observado": -0.8760101554802692,
+      "n": 15,
+      "potencia_para_detectar_weak": 0.2594635928547797,
+      "mde_actual": 0.24870000000000003,
+      "n_necesario_para_detectar_weak": 124,
+      "criterio": "Potencia ≥ 0.8 para detectar EDI = 0.1 con α = 0.05",
+      "clasificacion": "null_por_potencia_insuficiente",
+      "interpretacion": "Null por potencia insuficiente: con n actual la potencia (25.95%) es insuficiente. Para detectar EDI = 0.10 con potencia 0.80 se necesitaría n ≥ 124 (vs n actual = 15). NO se puede afirmar que no haya cierre operativo; sólo que el corpus actual no tiene resolución para detectarlo."
+    },
+    "30_caso_behavioral_dynamics": {
+      "edi_observado": 0.26216558939208157,
+      "n": 35,
+      "potencia_para_detectar_weak": 0.373679248099283,
+      "mde_actual": 0.18799952887478963,
+      "n_necesario_para_detectar_weak": 124,
+      "criterio": "Potencia ≥ 0.8 para detectar EDI = 0.1 con α = 0.05",
+      "clasificacion": "no_null",
+      "interpretacion": "No es null (EDI > 0.10)."
+    },
+    "31_decoherencia_cuantica": {
+      "edi_observado": 0.913177796635811,
+      "n": 60,
+      "potencia_para_detectar_weak": 0.5346844366243186,
+      "mde_actual": 0.14358701194745996,
+      "n_necesario_para_detectar_weak": 124,
+      "criterio": "Potencia ≥ 0.8 para detectar EDI = 0.1 con α = 0.05",
+      "clasificacion": "no_null",
+      "interpretacion": "No es null (EDI > 0.10)."
+    },
+    "32_espin_orbita": {
+      "edi_observado": 0.8250879834716865,
+      "n": 75,
+      "potencia_para_detectar_weak": 0.614662344288293,
+      "mde_actual": 0.12842812776023796,
+      "n_necesario_para_detectar_weak": 124,
+      "criterio": "Potencia ≥ 0.8 para detectar EDI = 0.1 con α = 0.05",
+      "clasificacion": "no_null",
+      "interpretacion": "No es null (EDI > 0.10)."
+    },
+    "33_villin_headpiece": {
+      "edi_observado": 0.0,
+      "n": 90,
+      "potencia_para_detectar_weak": 0.6830769128736038,
+      "mde_actual": 0.1172383043207296,
+      "n_necesario_para_detectar_weak": 124,
+      "criterio": "Potencia ≥ 0.8 para detectar EDI = 0.1 con α = 0.05",
+      "clasificacion": "null_por_potencia_insuficiente",
+      "interpretacion": "Null por potencia insuficiente: con n actual la potencia (68.31%) es insuficiente. Para detectar EDI = 0.10 con potencia 0.80 se necesitaría n ≥ 124 (vs n actual = 90). NO se puede afirmar que no haya cierre operativo; sólo que el corpus actual no tiene resolución para detectarlo."
+    },
+    "34_michaelis_menten": {
+      "edi_observado": 0.4580474281524688,
+      "n": 60,
+      "potencia_para_detectar_weak": 0.5346844366243186,
+      "mde_actual": 0.14358701194745996,
+      "n_necesario_para_detectar_weak": 124,
+      "criterio": "Potencia ≥ 0.8 para detectar EDI = 0.1 con α = 0.05",
+      "clasificacion": "no_null",
+      "interpretacion": "No es null (EDI > 0.10)."
+    },
+    "35_ciclo_celular": {
+      "edi_observado": 0.1306799800346662,
+      "n": 90,
+      "potencia_para_detectar_weak": 0.6830769128736038,
+      "mde_actual": 0.1172383043207296,
+      "n_necesario_para_detectar_weak": 124,
+      "criterio": "Potencia ≥ 0.8 para detectar EDI = 0.1 con α = 0.05",
+      "clasificacion": "no_null",
+      "interpretacion": "No es null (EDI > 0.10)."
+    },
+    "36_nfkb": {
+      "edi_observado": 0.5873739314271895,
+      "n": 90,
+      "potencia_para_detectar_weak": 0.6830769128736038,
+      "mde_actual": 0.1172383043207296,
+      "n_necesario_para_detectar_weak": 124,
+      "criterio": "Potencia ≥ 0.8 para detectar EDI = 0.1 con α = 0.05",
+      "clasificacion": "no_null",
+      "interpretacion": "No es null (EDI > 0.10)."
+    },
+    "37_hrv_cardiaco": {
+      "edi_observado": 0.5771350469912229,
+      "n": 75,
+      "potencia_para_detectar_weak": 0.614662344288293,
+      "mde_actual": 0.12842812776023796,
+      "n_necesario_para_detectar_weak": 124,
+      "criterio": "Potencia ≥ 0.8 para detectar EDI = 0.1 con α = 0.05",
+      "clasificacion": "no_null",
+      "interpretacion": "No es null (EDI > 0.10)."
+    },
+    "38_locomocion_alternativa": {
+      "edi_observado": -1.3412282437650878,
+      "n": 75,
+      "potencia_para_detectar_weak": 0.614662344288293,
+      "mde_actual": 0.12842812776023796,
+      "n_necesario_para_detectar_weak": 124,
+      "criterio": "Potencia ≥ 0.8 para detectar EDI = 0.1 con α = 0.05",
+      "clasificacion": "null_por_potencia_insuficiente",
+      "interpretacion": "Null por potencia insuficiente: con n actual la potencia (61.47%) es insuficiente. Para detectar EDI = 0.10 con potencia 0.80 se necesitaría n ≥ 124 (vs n actual = 75). NO se puede afirmar que no haya cierre operativo; sólo que el corpus actual no tiene resolución para detectarlo."
+    },
+    "39_cefeidas_ogle": {
+      "edi_observado": 0.9162290686317869,
+      "n": 90,
+      "potencia_para_detectar_weak": 0.6830769128736038,
+      "mde_actual": 0.1172383043207296,
+      "n_necesario_para_detectar_weak": 124,
+      "criterio": "Potencia ≥ 0.8 para detectar EDI = 0.1 con α = 0.05",
+      "clasificacion": "no_null",
+      "interpretacion": "No es null (EDI > 0.10)."
+    },
+    "40_cumulos_globulares": {
+      "edi_observado": 0.4275530650113536,
+      "n": 75,
+      "potencia_para_detectar_weak": 0.614662344288293,
+      "mde_actual": 0.12842812776023796,
+      "n_necesario_para_detectar_weak": 124,
+      "criterio": "Potencia ≥ 0.8 para detectar EDI = 0.1 con α = 0.05",
+      "clasificacion": "no_null",
+      "interpretacion": "No es null (EDI > 0.10)."
+    }
+  }
+}

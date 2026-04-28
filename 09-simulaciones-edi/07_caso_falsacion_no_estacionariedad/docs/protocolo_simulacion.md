@@ -1,7 +1,34 @@
-# Protocolo (Falsacion)
+# Protocolo de simulación — 07_caso_falsacion_no_estacionariedad
 
-1. Cargar datos reales y generar fase sintetica.
-2. Normalizar observaciones (z-score).
-3. Desactivar nudging (asimilacion=0) para evaluar poder predictivo.
-4. Ejecutar validacion C1–C5.
-5. Registrar fallos esperados.
+## Control de falsación: random walk con drift no-estacionario
+
+**Régimen físico:** Control de falsación. El aparato debe rechazar.
+
+## Ecuación de la sonda
+
+```
+X(t+1) = X(t) + drift + ε(t)
+```
+
+## Motivación física
+
+Hipótesis nula: tendencia espuria sin acoplamiento estructural.
+
+## Origen de parámetros
+
+Sintético.
+
+## Citas disciplinares
+
+- Phipson y Smyth (2010).
+
+## Limitaciones declaradas
+
+Control de falsabilidad.
+
+## Lectura cruzada
+
+- `07_caso_falsacion_no_estacionariedad/data/FETCH_MANIFEST.json` — trazabilidad de datos
+- `07_caso_falsacion_no_estacionariedad/SETUP_HASH.json` — pre-registro criptográfico
+- `07_caso_falsacion_no_estacionariedad/outputs/metrics.json` — outputs canónicos
+- `07_caso_falsacion_no_estacionariedad/outputs/metrics_enriched_v5_2.json` — calibración avanzada V5.2/5.3

@@ -1,0 +1,39 @@
+{
+  "case_id": "35_ciclo_celular",
+  "version_protocolo": "V5.3",
+  "scale": "celular (10⁻⁵ m, 10³-10⁴ s)",
+  "nivel_canonico": "3_weak",
+  "B1_calibration": {
+    "edi_canonical": 0.1306799800346662,
+    "p_value_naive_canonical": 0.0,
+    "p_value_block_bootstrap_estimated": 0.003,
+    "newey_west_se_estimated": 0.014896610205644025,
+    "ci_95_canonical": [
+      0.10892306370480587,
+      0.14785287170888892
+    ],
+    "fwer_position_in_corpus": {
+      "p_adjusted_holm": 0.0,
+      "survives_fwer_at_alpha_0_05": true
+    },
+    "inferencia_robusta_post_calibracion": true
+  },
+  "B3_preregistration": {
+    "setup_aggregate_hash": "383da90b293698a25f835bda50a4503128a3d66fc982bd890c4397ba8a74bc37",
+    "git_commit": "a24f6dd14049cd8ce571bb53abc4f6d056a00e3a",
+    "frozen_at": "2026-04-28T22:44:09.432957+00:00"
+  },
+  "B5_threshold_invariance": {
+    "levels_under_grid": [
+      "suggestive",
+      "weak"
+    ],
+    "invariant": false,
+    "invariant_level": null
+  },
+  "elevacion_neta": {
+    "veredicto": "SENSIBLE A UMBRALES",
+    "antes": "EDI=+0.1307, p_naive=0.0000",
+    "despues": "EDI=+0.1307, p_block=0.0030, FWER=0.0000, inv=False"
+  }
+}

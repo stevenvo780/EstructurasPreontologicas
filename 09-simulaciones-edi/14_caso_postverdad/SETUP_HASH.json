@@ -1,0 +1,20 @@
+{
+  "case_id": "14_caso_postverdad",
+  "timestamp_utc": "2026-04-28T22:44:09.344136+00:00",
+  "git_commit": "a24f6dd14049cd8ce571bb53abc4f6d056a00e3a",
+  "git_dirty": true,
+  "file_count": 8,
+  "aggregate_hash": "141bc5aac568c2c61940f792cc4d93fdfa8e1bc2992b82c65cd31b46bdacc076",
+  "file_hashes": {
+    "README.md": "66eb51b28a671ba455937a6f036cb5ebd995d751232b610632e7156d03b24a86",
+    "case_config.json": "18f6ebd80dbd44b5cc7dde6060c6eb9cfcabaf092f8247ac93530c8a7572adc3",
+    "data/FETCH_MANIFEST.json": "e15264a0f497638477bb0a66497531e7aa6c6db854ad4b90bc60a427bfe2faa0",
+    "docs/protocolo_simulacion.md": "9ec494b45086325c4c82f4349eb01b170f35c2e2920ec49fe1e057fac0bb01fa",
+    "src/abm.py": "8bdcaa4bdb1976539c1165d6467d462d9c07dc602a2e7f000262a9708fd4b809",
+    "src/data.py": "ff04e0e29c1c508a3890933f5e456b6f4cd8d25cef50a092dbd787e441dcca34",
+    "src/ode.py": "33e8cfa3f582922fbdc663418a9291e5773af63aee7973bd85c278a1e9ce1f12",
+    "src/validate.py": "9114e635f864a5688716c7e2a129ca341498e321994f2c174e564e05b423a63d"
+  },
+  "protocol_version": "V5.1",
+  "method": "sha256_recursive_with_output_exclusion"
+}

@@ -1,0 +1,20 @@
+{
+  "case_id": "24_caso_microplasticos",
+  "timestamp_utc": "2026-04-28T22:44:09.382031+00:00",
+  "git_commit": "a24f6dd14049cd8ce571bb53abc4f6d056a00e3a",
+  "git_dirty": true,
+  "file_count": 8,
+  "aggregate_hash": "96623651410fb65c1258e988fa8b8ea42808aacd595fad0bc25e1ccc14cb077c",
+  "file_hashes": {
+    "README.md": "b14ed5f034039260b63fcf45f43bfc3c0261edb6d161086f9aad0b2351a6b1b9",
+    "case_config.json": "b8166e5c7a7c19407874244dafa66fff1c3517b18ca4c8109c9af7c4a0b058e9",
+    "data/FETCH_MANIFEST.json": "d12a83dce91f272a2b9f9f1de3c4c51edb6b310e883c58227a3a6a8f65898194",
+    "docs/protocolo_simulacion.md": "48a2501da90f31a3b5cf78e5bd2493bbc8744fd660a4fea85555d48b9b067538",
+    "src/abm.py": "5eceb8ba4d5069f32305ce752f53455ca9988a6e502b767704a304701d6847b4",
+    "src/data.py": "260ca63e01fb4079a70dced8e1e36cf7d1539134f3a6ac29ab2233f9223684d6",
+    "src/ode.py": "c472acd61cab7584184adf55bdd62f19e152d1fa4f8fb828ac5dd2a006a5e0a4",
+    "src/validate.py": "a80da41caba22dcfedf3f58e6f53492a887106f4a79bb528f61d439a785ce48c"
+  },
+  "protocol_version": "V5.1",
+  "method": "sha256_recursive_with_output_exclusion"
+}

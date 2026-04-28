@@ -1,0 +1,20 @@
+{
+  "case_id": "19_caso_acidificacion_oceanica",
+  "timestamp_utc": "2026-04-28T22:44:09.362188+00:00",
+  "git_commit": "a24f6dd14049cd8ce571bb53abc4f6d056a00e3a",
+  "git_dirty": true,
+  "file_count": 8,
+  "aggregate_hash": "2e3020640031ffc3d2085db7022de1ebe91be4a263217bbe10c65b1f890fdf64",
+  "file_hashes": {
+    "README.md": "0e30eb582e7ee7605d67dfcbdd1d654509b4a67040a0786de0b429f16b5bfd41",
+    "case_config.json": "b3665c8e57e40db2f6b0653012b5b689685439ee32c03aae689be991199cf6db",
+    "data/FETCH_MANIFEST.json": "cc45c7950e5f4a35c2e8de1af3b5117c49622e34075ab771f8c62c0af29f089b",
+    "docs/protocolo_simulacion.md": "f168f3c12b09161a77cde1e9df6932a7cab4ee9233f6a4118e2de69a681d0e0e",
+    "src/abm.py": "988334d8cd6bdf0802e99b56a272329b052035056d545c98a81155e64e1acad4",
+    "src/data.py": "a8cee63bc76a00acae8037e8d8bcec77d96734746e4b93f2bbeb8e69f935e98d",
+    "src/ode.py": "bbbeda41f68c48c0aee64ede95eb30ec4b7f728101a3d8a0e675ead3ffaaaf49",
+    "src/validate.py": "3bd6719211d72a2b926e985076054f6f145996e69751c3328d6f4f35d9eccbb3"
+  },
+  "protocol_version": "V5.1",
+  "method": "sha256_recursive_with_output_exclusion"
+}

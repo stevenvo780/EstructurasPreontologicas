@@ -1,0 +1,13 @@
+{
+  "case_id": "35_ciclo_celular",
+  "timestamp_utc": "2026-04-28T22:44:09.432957+00:00",
+  "git_commit": "a24f6dd14049cd8ce571bb53abc4f6d056a00e3a",
+  "file_count": 3,
+  "aggregate_hash": "383da90b293698a25f835bda50a4503128a3d66fc982bd890c4397ba8a74bc37",
+  "file_hashes": {
+    "data/FETCH_MANIFEST.json": "c1036723e3fa3bbc0012a07bd479a44b626bd170aa99e8b1c9d92309c9df63b5",
+    "docs/protocolo_simulacion.md": "cd2358d34220e9d7300192d5b63db1edc37d5c1104da5d737dd7402723efed5b",
+    "run.py": "54a7e521a9c1c8669b930b905a8f155974152495ee090512fdda6d8972241677"
+  },
+  "protocol_version": "V5.3 (inter-escala)"
+}

@@ -1,0 +1,13 @@
+{
+  "case_id": "39_cefeidas_ogle",
+  "timestamp_utc": "2026-04-28T22:44:09.435557+00:00",
+  "git_commit": "a24f6dd14049cd8ce571bb53abc4f6d056a00e3a",
+  "file_count": 3,
+  "aggregate_hash": "72155ff90e82ba9a8f5769d7a7e82d87c7c5b4d5786951182b78ca7a08d3878d",
+  "file_hashes": {
+    "data/FETCH_MANIFEST.json": "18df67287586bea636c61ae445122d236b64daa2d4625e90c40849d3560801f6",
+    "docs/protocolo_simulacion.md": "b11566124aa9ba8f7e9d8aa3ae3e3d6b66ff7800dc7cb010b56146ee847358b8",
+    "run.py": "43bc7136892fa4d8e61bea9f7421b613559373b03a268c54f239f505060865d0"
+  },
+  "protocol_version": "V5.3 (inter-escala)"
+}

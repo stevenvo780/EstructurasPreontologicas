@@ -1,0 +1,38 @@
+{
+  "case_id": "37_hrv_cardiaco",
+  "version_protocolo": "V5.3",
+  "scale": "individual (1 m, 1 s)",
+  "nivel_canonico": "4_strong",
+  "B1_calibration": {
+    "edi_canonical": 0.5771350469912229,
+    "p_value_naive_canonical": 0.0,
+    "p_value_block_bootstrap_estimated": 0.0003333333333333333,
+    "newey_west_se_estimated": 0.05187985963113345,
+    "ci_95_canonical": [
+      0.5087538984308582,
+      0.6443332649335536
+    ],
+    "fwer_position_in_corpus": {
+      "p_adjusted_holm": 0.0,
+      "survives_fwer_at_alpha_0_05": true
+    },
+    "inferencia_robusta_post_calibracion": true
+  },
+  "B3_preregistration": {
+    "setup_aggregate_hash": "1fb446f4673485c3ee561176466fdfe64b7f42b7d18e3e8f321a24e7f2931780",
+    "git_commit": "a24f6dd14049cd8ce571bb53abc4f6d056a00e3a",
+    "frozen_at": "2026-04-28T22:44:09.434282+00:00"
+  },
+  "B5_threshold_invariance": {
+    "levels_under_grid": [
+      "strong"
+    ],
+    "invariant": true,
+    "invariant_level": "strong"
+  },
+  "elevacion_neta": {
+    "veredicto": "ELEVADO A ROBUSTO V5.2",
+    "antes": "EDI=+0.5771, p_naive=0.0000",
+    "despues": "EDI=+0.5771, p_block=0.0003, FWER=0.0000, inv=True"
+  }
+}

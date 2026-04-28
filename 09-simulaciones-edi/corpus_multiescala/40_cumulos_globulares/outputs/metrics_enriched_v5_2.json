@@ -1,0 +1,38 @@
+{
+  "case_id": "40_cumulos_globulares",
+  "version_protocolo": "V5.3",
+  "scale": "astrofísica grande (10¹⁷-10²⁰ m, 10¹⁴ s)",
+  "nivel_canonico": "4_strong",
+  "B1_calibration": {
+    "edi_canonical": 0.4275530650113536,
+    "p_value_naive_canonical": 0.0,
+    "p_value_block_bootstrap_estimated": 0.0003333333333333333,
+    "newey_west_se_estimated": 0.06267407406289249,
+    "ci_95_canonical": [
+      0.34758870756158783,
+      0.5113769544459469
+    ],
+    "fwer_position_in_corpus": {
+      "p_adjusted_holm": 0.0,
+      "survives_fwer_at_alpha_0_05": true
+    },
+    "inferencia_robusta_post_calibracion": true
+  },
+  "B3_preregistration": {
+    "setup_aggregate_hash": "9bc8e3003deeac7bbf133e07ffa6c18e0e3eb7e22723d4bbde38305f6038adc7",
+    "git_commit": "a24f6dd14049cd8ce571bb53abc4f6d056a00e3a",
+    "frozen_at": "2026-04-28T22:44:09.436143+00:00"
+  },
+  "B5_threshold_invariance": {
+    "levels_under_grid": [
+      "strong"
+    ],
+    "invariant": true,
+    "invariant_level": "strong"
+  },
+  "elevacion_neta": {
+    "veredicto": "ELEVADO A ROBUSTO V5.2",
+    "antes": "EDI=+0.4276, p_naive=0.0000",
+    "despues": "EDI=+0.4276, p_block=0.0003, FWER=0.0000, inv=True"
+  }
+}

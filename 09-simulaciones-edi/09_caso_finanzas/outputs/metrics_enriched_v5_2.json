@@ -1,0 +1,65 @@
+{
+  "case_id": "09_caso_finanzas",
+  "version_protocolo": "V5.2",
+  "expected_classification": "suggestive",
+  "loe": 4,
+  "B1_calibration": {
+    "edi_canonical": 0.08125725845167885,
+    "p_value_naive_canonical": 0.0,
+    "p_value_block_bootstrap_estimated": 0.010333333333333333,
+    "p_value_naive_re_estimated": 0.0003333333333333333,
+    "calibration_shift": 0.010333333333333333,
+    "newey_west_se_estimated": 0.0038265306122448983,
+    "newey_west_ci_95_estimated": [
+      0.07375725845167884,
+      0.08875725845167885
+    ],
+    "fwer_position_in_corpus": {
+      "raw_p_value": 0.0,
+      "rank_in_corpus": 3,
+      "corpus_size": 30,
+      "p_adjusted_bonferroni": 0.0,
+      "p_adjusted_holm": 0.0,
+      "survives_fwer_at_alpha_0_05": true
+    },
+    "inferencia_robusta_post_calibracion": true
+  },
+  "B2_replication": {
+    "seed_robustness_estimated": {
+      "estimated_max_drift_inter_seed": 0.004,
+      "criterio_robusto": "max_drift ≤ 0.05",
+      "robust_estimated": true,
+      "verificacion_definitiva_requiere": "re-ejecución con seeds {1,7,13,17,23,42}"
+    },
+    "holdout_temporal_estimated": {
+      "edi_full_published": 0.08125725845167885,
+      "n_test_estimated": 33,
+      "se_holdout_estimated": 0.02,
+      "delta_test_vs_full_max_at_95pct": 0.0392,
+      "sin_leakage_si_delta_observado_menor_que": 0.0392,
+      "criterio": "Bajo train_frac=0.8, |Δ test-full| esperable ≤ 1.96 * SE_test",
+      "verificacion_definitiva_requiere": "arrays obs/abm publicados"
+    },
+    "verificacion_definitiva_requiere": "re-ejecución con dump de arrays obs/abm/forcing en metrics.json"
+  },
+  "B3_preregistration": {
+    "setup_aggregate_hash": "7b586f71a8ef2040aa3baafa42a54718c3865907dd131e6a45c8848c33e5f40e",
+    "git_commit": "a24f6dd14049cd8ce571bb53abc4f6d056a00e3a",
+    "git_dirty": true,
+    "frozen_at": "2026-04-28T22:44:09.327570+00:00",
+    "file_count": 9
+  },
+  "B5_threshold_invariance": {
+    "levels_under_grid": [
+      "suggestive",
+      "weak"
+    ],
+    "invariant": false,
+    "invariant_level": null
+  },
+  "elevacion_neta": {
+    "antes_v5_1": "EDI=+0.0813, p_naive=0.0000, clasificación canónica reportada",
+    "despues_v5_2": "EDI=+0.0813, p_block=0.0103, SE_HAC=0.0038, FWER_Holm=0.0000, invariante=False",
+    "veredicto": "SENSIBLE A UMBRALES: clasificación variable bajo grilla. Reportar como caso de borde con honestidad explícita."
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "case_id": "28_caso_fuga_cerebros",
+  "version_protocolo": "V5.2",
+  "expected_classification": "suggestive",
+  "loe": 3,
+  "B1_calibration": {
+    "edi_canonical": 0.024881669387389924,
+    "p_value_naive_canonical": 0.9974997499749975,
+    "p_value_block_bootstrap_estimated": 0.001,
+    "p_value_naive_re_estimated": 0.0003333333333333333,
+    "calibration_shift": 0.9964997499749975,
+    "newey_west_se_estimated": 0.13055276096387022,
+    "newey_west_ci_95_estimated": [
+      -0.23100174210179572,
+      0.2807650808765756
+    ],
+    "fwer_position_in_corpus": {
+      "raw_p_value": 0.9974997499749975,
+      "rank_in_corpus": 29,
+      "corpus_size": 30,
+      "p_adjusted_bonferroni": 1.0,
+      "p_adjusted_holm": 1.0,
+      "survives_fwer_at_alpha_0_05": false
+    },
+    "inferencia_robusta_post_calibracion": false
+  },
+  "B2_replication": {
+    "seed_robustness_estimated": {
+      "estimated_max_drift_inter_seed": 0.13647115279423236,
+      "criterio_robusto": "max_drift ≤ 0.05",
+      "robust_estimated": false,
+      "verificacion_definitiva_requiere": "re-ejecución con seeds {1,7,13,17,23,42}"
+    },
+    "holdout_temporal_estimated": {
+      "edi_full_published": 0.024881669387389924,
+      "n_test_estimated": 3,
+      "se_holdout_estimated": 0.05773502691896258,
+      "delta_test_vs_full_max_at_95pct": 0.11316065276116666,
+      "sin_leakage_si_delta_observado_menor_que": 0.11316065276116666,
+      "criterio": "Bajo train_frac=0.8, |Δ test-full| esperable ≤ 1.96 * SE_test",
+      "verificacion_definitiva_requiere": "arrays obs/abm publicados"
+    },
+    "verificacion_definitiva_requiere": "re-ejecución con dump de arrays obs/abm/forcing en metrics.json"
+  },
+  "B3_preregistration": {
+    "setup_aggregate_hash": "b668b62cd2ac226602a7d38b509dda3a6c12c8d1aa22a5b30941393591e4af72",
+    "git_commit": "a24f6dd14049cd8ce571bb53abc4f6d056a00e3a",
+    "git_dirty": true,
+    "frozen_at": "2026-04-28T22:44:09.399513+00:00",
+    "file_count": 8
+  },
+  "B5_threshold_invariance": {
+    "levels_under_grid": [
+      "suggestive"
+    ],
+    "invariant": true,
+    "invariant_level": "suggestive"
+  },
+  "elevacion_neta": {
+    "antes_v5_1": "EDI=+0.0249, p_naive=0.9975, clasificación canónica reportada",
+    "despues_v5_2": "EDI=+0.0249, p_block=0.0010, SE_HAC=0.1306, FWER_Holm=1.0000, invariante=True",
+    "veredicto": "REQUIERE EVALUACIÓN ESPECÍFICA"
+  }
+}

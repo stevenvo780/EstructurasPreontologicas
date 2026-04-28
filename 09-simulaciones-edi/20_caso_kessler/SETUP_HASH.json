@@ -1,0 +1,21 @@
+{
+  "case_id": "20_caso_kessler",
+  "timestamp_utc": "2026-04-28T22:44:09.365236+00:00",
+  "git_commit": "a24f6dd14049cd8ce571bb53abc4f6d056a00e3a",
+  "git_dirty": true,
+  "file_count": 9,
+  "aggregate_hash": "29e050ac20a2321eb878c20786c508f3e57ae907b771f28f07962e7d8ef465a1",
+  "file_hashes": {
+    "README.md": "05c207c773cd13a5f73926cd354a611c3c1528b43c5406406f1663a8143a9f1e",
+    "case_config.json": "2112cdbfe748ed794d8596757aa9014335e9bfbee72b3c20935b53c6d3e5b26a",
+    "data/FETCH_MANIFEST.json": "127cadd71d3cafb061452febc916ff52ea55473b7a2e140f6cb0931a1b53d985",
+    "data/celestrak_snapshot.json": "0d4bc6e775d9e7a22ae6f9622432af29d974449005d02bd4a823be46346f3dc0",
+    "docs/protocolo_simulacion.md": "e9c1d43443cdfe54facc692090cd13505b99b060bda69d804996c75201292045",
+    "src/abm.py": "8bf67974dcf17b2b922301620b2a7cfcf247551e235803638a0646a2a13c431d",
+    "src/data.py": "c94fd75bdee3dfa5c2382a947beabc15978151b07792a3842e01be8c75ac393b",
+    "src/ode.py": "db02c7e5bb364a712f97a7bb937136dc1abd2674a15e2f16c49085e0db49bfbf",
+    "src/validate.py": "bfcda438d62454a51489262802c4a237d8aa9e3515e8c091c881c797d2d05cf3"
+  },
+  "protocol_version": "V5.1",
+  "method": "sha256_recursive_with_output_exclusion"
+}

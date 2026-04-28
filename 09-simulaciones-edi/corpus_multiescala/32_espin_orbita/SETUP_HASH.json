@@ -1,0 +1,13 @@
+{
+  "case_id": "32_espin_orbita",
+  "timestamp_utc": "2026-04-28T22:44:09.430176+00:00",
+  "git_commit": "a24f6dd14049cd8ce571bb53abc4f6d056a00e3a",
+  "file_count": 3,
+  "aggregate_hash": "840bc61ba5876851e0cb291d53c4140ec7a38023d16669d465052512d62092be",
+  "file_hashes": {
+    "data/FETCH_MANIFEST.json": "72f8460f8d83308d8f315c46cfba42aba61ce08760d98c519467abff0f495b19",
+    "docs/protocolo_simulacion.md": "7e561cc324ba4b891ec48024b0d03c18c1b9e11b2cae984319a02ec40168162a",
+    "run.py": "ed4f236b96be8256fb47fd705ac179b5a432d2bbcf78456849fcc6407bdfaa5d"
+  },
+  "protocol_version": "V5.3 (inter-escala)"
+}

@@ -1,0 +1,20 @@
+{
+  "case_id": "18_caso_urbanizacion",
+  "timestamp_utc": "2026-04-28T22:44:09.359154+00:00",
+  "git_commit": "a24f6dd14049cd8ce571bb53abc4f6d056a00e3a",
+  "git_dirty": true,
+  "file_count": 8,
+  "aggregate_hash": "492791cc95d13fb1772ec6f21ca934d7058d32fc5f6e7f5e52b2c3a0edcc9a0b",
+  "file_hashes": {
+    "README.md": "f116c2870711e4935bf58d3a6d5042b0a7037e8dac3ca258591398330a98031d",
+    "case_config.json": "c6712b6d54d8f6349a411818c2262f9f36675619f45b3e6fa831474ee48b7322",
+    "data/FETCH_MANIFEST.json": "6ac8be04edb9c36ade181d616bec9527c728493a320ace6c2d033cf248c43c6c",
+    "docs/protocolo_simulacion.md": "fe1f5d489efce084b22c5fe1126e23089ead029026d3721b14c59fdf50ea38e3",
+    "src/abm.py": "f1f77125ae736f87084013a715e7088194e515e431d217e2e071c068acc94115",
+    "src/data.py": "841dd0427c0e315fb4ec6a562212642358438041957a2026a82a617d995f3df5",
+    "src/ode.py": "eef6573ab1559f91026d904309a586affcc55b08c184657f77f8888cad26e4e1",
+    "src/validate.py": "09435b53eccc531555fe4a5a49c63aa89b98cc41dc44734db5ea6bf5dfb98dc9"
+  },
+  "protocol_version": "V5.1",
+  "method": "sha256_recursive_with_output_exclusion"
+}

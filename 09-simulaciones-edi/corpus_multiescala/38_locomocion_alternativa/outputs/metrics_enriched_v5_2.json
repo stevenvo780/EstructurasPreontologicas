@@ -1,0 +1,38 @@
+{
+  "case_id": "38_locomocion_alternativa",
+  "version_protocolo": "V5.3",
+  "scale": "individual / behavioral (1 m, 1 s)",
+  "nivel_canonico": "0_null",
+  "B1_calibration": {
+    "edi_canonical": -1.3412282437650878,
+    "p_value_naive_canonical": 1.0,
+    "p_value_block_bootstrap_estimated": 1.0,
+    "newey_west_se_estimated": 0.11403549787751285,
+    "ci_95_canonical": [
+      -1.5079292367208414,
+      -1.2099164689342745
+    ],
+    "fwer_position_in_corpus": {
+      "p_adjusted_holm": 1.0,
+      "survives_fwer_at_alpha_0_05": false
+    },
+    "inferencia_robusta_post_calibracion": false
+  },
+  "B3_preregistration": {
+    "setup_aggregate_hash": "1262938a52d09926f3b6fb1913a1ca6e567ddf2e469b0ff2982cf6b8d47f3c85",
+    "git_commit": "a24f6dd14049cd8ce571bb53abc4f6d056a00e3a",
+    "frozen_at": "2026-04-28T22:44:09.434968+00:00"
+  },
+  "B5_threshold_invariance": {
+    "levels_under_grid": [
+      "null"
+    ],
+    "invariant": true,
+    "invariant_level": "null"
+  },
+  "elevacion_neta": {
+    "veredicto": "CONFIRMADO NULL",
+    "antes": "EDI=-1.3412, p_naive=1.0000",
+    "despues": "EDI=-1.3412, p_block=1.0000, FWER=1.0000, inv=True"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "case_id": "09_caso_finanzas",
+  "timestamp_utc": "2026-04-28T22:44:09.327570+00:00",
+  "git_commit": "a24f6dd14049cd8ce571bb53abc4f6d056a00e3a",
+  "git_dirty": true,
+  "file_count": 9,
+  "aggregate_hash": "7b586f71a8ef2040aa3baafa42a54718c3865907dd131e6a45c8848c33e5f40e",
+  "file_hashes": {
+    "README.md": "5e756d37c33fad24641762deed0cbdd86b3d1bfea2adcf6626718428411db8bf",
+    "case_config.json": "905fae564a9a32a077b575b22b22fd431135f19fd8c30adfcda283d167837bb4",
+    "data/FETCH_MANIFEST.json": "d35d4fb14241a6666f6c965507025c3f195d8f39113c69c9b3688b219926da7f",
+    "docs/protocolo_simulacion.md": "7cb981c306130743a4b63767cef8c9e2391f913918b74498e22e97c9e5004d26",
+    "requirements.txt": "97b567bf7eaf3335d01df2ce391bb55d55d5b4386b6af4f13462eac587267166",
+    "src/abm.py": "10c26433c12c55e87696e204d86fb23591f85b0e534e5f182f5825034c726a08",
+    "src/data.py": "871b841f1198a2974aa31e679c4f3b3a08cf7b6fa4fa27c53446498cd650b3c0",
+    "src/ode.py": "22052690d3f35df8c1951a5c7db2fd27609742f302a4e013aabbe5adae15b650",
+    "src/validate.py": "c79531fbfc6ad8094c47398f081bed3934f5ea11cc59c1419b1d1a0eec38be33"
+  },
+  "protocol_version": "V5.1",
+  "method": "sha256_recursive_with_output_exclusion"
+}

@@ -1,0 +1,20 @@
+{
+  "case_id": "12_caso_paradigmas",
+  "timestamp_utc": "2026-04-28T22:44:09.337207+00:00",
+  "git_commit": "a24f6dd14049cd8ce571bb53abc4f6d056a00e3a",
+  "git_dirty": true,
+  "file_count": 8,
+  "aggregate_hash": "38efc10f8f29d18e86ac843e4a736248134fdbe2a98ab2d05b02da3f3c49f929",
+  "file_hashes": {
+    "README.md": "bc5ec0c8c4aa9476b786259b9d22bd5840dcad8039fb307b779ab634f78db069",
+    "case_config.json": "e9bed6a02c307970eddf22ef9afc2375b149452ac8ce1e2d7c06085451f7c0de",
+    "data/FETCH_MANIFEST.json": "6bbdcdbd524958928ebfb8fede5c9723d5de773a4e02ee4cc9d50d64f446bf35",
+    "docs/protocolo_simulacion.md": "dc717aaa631f223fa7e22da515b837e4108b258b8851b7d72d6b6b14f7f2d771",
+    "src/abm.py": "1e5fc741b6a6d93bab011394eab20ea0fe8ad9d86103fcf9641696b97d20de29",
+    "src/data.py": "1dd473cf58735cad45c2c5d7befb84dde7f6f0083082522ba0663dcb66bbf366",
+    "src/ode.py": "912e9aa35e2007e300ad687efb3a14326bde135a72297122ddb71a6f6513b199",
+    "src/validate.py": "a2c6c338b997024d0ff929e928d09c020d6a73709ad926a6fea61ac8cfc3a898"
+  },
+  "protocol_version": "V5.1",
+  "method": "sha256_recursive_with_output_exclusion"
+}

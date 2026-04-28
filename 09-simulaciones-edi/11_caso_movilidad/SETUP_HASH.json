@@ -1,0 +1,20 @@
+{
+  "case_id": "11_caso_movilidad",
+  "timestamp_utc": "2026-04-28T22:44:09.334130+00:00",
+  "git_commit": "a24f6dd14049cd8ce571bb53abc4f6d056a00e3a",
+  "git_dirty": true,
+  "file_count": 8,
+  "aggregate_hash": "5b9cc18b44081f1a001784aee4abd57394937f5dbb3a98d233222b9b3e5b0330",
+  "file_hashes": {
+    "README.md": "8c5ba730d82f0ad5290289d7c8fd3d9a613e6b9d55970f3708a0d7f69d806921",
+    "case_config.json": "5aa33854adbe3099447009a6af67df0553e4e2d98eaec3c26b9fb103b8bc417a",
+    "data/FETCH_MANIFEST.json": "9e6bf9d5e40fba08cc5f5aa087db58b4d96c926bd41a7eb88c3439eb1e607650",
+    "docs/protocolo_simulacion.md": "28e2a6ae19ef92838a3635a491d091bd4f0be3165f32c4cbded4555e7836d44e",
+    "src/abm.py": "f8158503cd635343ced093538e3316a9d8f9467fec87b1589b4f0b55a89c8ec1",
+    "src/data.py": "e3d83dae61ba63b3d85e063203f7cf9052b50355dfc3380f8faf634c2382560b",
+    "src/ode.py": "4c0b4e45edc78bd978996de08b3f23308b7c5bd3ba1bbbe49a81df3efc1f6cd2",
+    "src/validate.py": "95ac3443723935d77ab914d09d6109f50626cfceaf1507428caecd5932b1d657"
+  },
+  "protocol_version": "V5.1",
+  "method": "sha256_recursive_with_output_exclusion"
+}

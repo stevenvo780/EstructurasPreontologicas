@@ -1,0 +1,25 @@
+{
+  "case_id": "15_caso_wikipedia",
+  "timestamp_utc": "2026-04-28T22:44:09.348851+00:00",
+  "git_commit": "a24f6dd14049cd8ce571bb53abc4f6d056a00e3a",
+  "git_dirty": true,
+  "file_count": 13,
+  "aggregate_hash": "40a0fb0f9e9c7c7c1c4a6002334f16d2ab267aa3fef85bd229687ef747c9f429",
+  "file_hashes": {
+    "README.md": "9c7191533486326cb36730dd18e77941b21e6df7e351c829cc0b301b3c495ffb",
+    "case_config.json": "a68b09f1311de08c67c3019ed32d099127420df4b55c906fdc6befe1cb6f7b92",
+    "data/FETCH_MANIFEST.json": "544254eb13895be9eeb0d5910412d3e533af8208687579fa4a5576ae47013937",
+    "docs/arquitectura.md": "c7273dc7e413b2c3efaecef227fe55dae2ddd16f59f89ee37bbe5dad4d06c901",
+    "docs/indicadores_metricas.md": "5801b9aca33298edf9aa801f5d8505be96b9e944c5f40843739f82d6fa3fd1a4",
+    "docs/protocolo_simulacion.md": "e58d5d5b4a55bc4f97565dcecabcbdaaba81ab1032c9028c4d623ded009f622f",
+    "docs/reproducibilidad.md": "f9632df564926d5461de389571a2c57ec87eab91c0a84a1a29a56650c3ba5bdd",
+    "docs/validacion_c1_c5.md": "d8eef98bb66daab8b3ab50a9494294602b22f7977c99146d18f72006e0ee43f5",
+    "requirements.txt": "49a15faee932b0e39bc734a9881b3ef1f1d194ebab44858f724036babafbd9eb",
+    "src/abm.py": "56cf23b7d15fbe8931a5a4e37df18c05aaef8427628c1d8d85b1dabd3fd06c47",
+    "src/data.py": "ddb375bb668240b28ec11c387543f30f8498b23caa2c2010835f72f11cbb3e76",
+    "src/ode.py": "60bf26de37c81d14706e141d71fe7df49f027228be60f3962e479f3585df9530",
+    "src/validate.py": "b86bcae73e3d9267b1396c8e513d3f6283a4b121a76e036096e00983c322e099"
+  },
+  "protocol_version": "V5.1",
+  "method": "sha256_recursive_with_output_exclusion"
+}

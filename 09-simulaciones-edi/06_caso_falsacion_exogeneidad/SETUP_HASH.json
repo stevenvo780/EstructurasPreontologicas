@@ -1,0 +1,25 @@
+{
+  "case_id": "06_caso_falsacion_exogeneidad",
+  "timestamp_utc": "2026-04-28T22:44:09.316158+00:00",
+  "git_commit": "a24f6dd14049cd8ce571bb53abc4f6d056a00e3a",
+  "git_dirty": true,
+  "file_count": 13,
+  "aggregate_hash": "9290d18a53e301134ae2823b8411ac8e09aa90bbfc50487afa299172fc2e314f",
+  "file_hashes": {
+    "README.md": "d480581d08b9dc743f31227eee204fe11b2ee46947bb0e48cb53958d7533d33c",
+    "case_config.json": "50da992650f30b2d02ecb78efa221bf338e79f585226a3220dd69bcb729ffdd9",
+    "data/FETCH_MANIFEST.json": "30fc233d89ca1bd298372e727b1fa6bfabdb9d77d2617f33635065e42fe391a7",
+    "docs/arquitectura.md": "2e4c6bf657655e2ea034432369ae0e89fbe00c43d27e49d8d174e37f1ebbc072",
+    "docs/indicadores_metricas.md": "3c88c238199c49fe12d0f1f8326a32d5bec2d939c629bc5b99268fcc254c8b09",
+    "docs/protocolo_simulacion.md": "92bc8fa588ff3a4c2ce1c4fa654bd2120605d5000e858fd0b5f40b4b808645b9",
+    "docs/reproducibilidad.md": "76ebef1a35a315855414036f1ee13a62d4d0197f219286cabe8ed10372eae921",
+    "docs/validacion_c1_c5.md": "72d72b1aef8cfeaa6540af41377816397b69a81f2c759cc5c32b69ff9bf9fe6a",
+    "requirements.txt": "49a15faee932b0e39bc734a9881b3ef1f1d194ebab44858f724036babafbd9eb",
+    "src/abm.py": "3c6eda192050a751d1a671de71cfd529c315a860966f18986ad7a89f7ae49444",
+    "src/data.py": "61569b06b43c48492561b60189ebf73fa213030206d61367505652daefdb919a",
+    "src/ode.py": "9f6091c31ead9650c6c067469ab759e8821fb1d00eecc043df84130ae9c6b2f9",
+    "src/validate.py": "e47656486a25710626dbab1a5ee2edeca0cc3f4e86921b6b80227fa602e789a1"
+  },
+  "protocol_version": "V5.1",
+  "method": "sha256_recursive_with_output_exclusion"
+}

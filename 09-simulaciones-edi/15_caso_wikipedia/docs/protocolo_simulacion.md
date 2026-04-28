@@ -1,26 +1,30 @@
-# Protocolo de Simulacion (Wikipedia)
+# Protocolo de simulación — 15_caso_wikipedia
 
-## 1. Definicion de escenario
-- Objetivo: demostrar persistencia, no-localidad funcional y emergencia en atencion agregada.
-- Delimitacion: cluster de articulos (clima) como proxy del sistema.
+## Sonda de crecimiento de conocimiento con saturación
 
-## 2. Diseno de agentes
-- Agentes: celdas con atencion `A`.
-- Reglas: difusion local + forcing exogeno + acople macro.
+**Régimen físico:** Sistema saturable de contenido digital.
 
-## 3. Inicializacion
-- Grilla con distribucion inicial y semillas documentadas.
-- Parametros base definidos en `src/validate.py`.
-- Split sintetica: 2000-2009 / 2010-2019.
-- Split real: 2015-2019 / 2020-2024.
+## Ecuación de la sonda
 
-## 4. Ejecucion
-- Escenario base y contrafactuales.
-- Criterio de paro: estabilidad de indicadores y costo marginal > beneficio.
-- Se usa nudging con observacion del mismo periodo (t) para evaluacion de corto plazo.
+```
+dW/dt = r*W*(1-W/K) (logística pura)
+```
 
-## 5. Evaluacion
-- Comparacion en dos fases:
-- Fase sintetica: verificacion interna y calibracion base.
-- Fase real: evaluacion final con datos reales.
-- C1-C5 obligatorios.
+## Motivación física
+
+Crecimiento logístico de un repositorio de conocimiento.
+
+## Origen de parámetros
+
+Wikimedia stats serie mensual 2007-2024.
+
+## Citas disciplinares
+
+- Wikimedia Statistics. https://stats.wikimedia.org
+
+## Lectura cruzada
+
+- `15_caso_wikipedia/data/FETCH_MANIFEST.json` — trazabilidad de datos
+- `15_caso_wikipedia/SETUP_HASH.json` — pre-registro criptográfico
+- `15_caso_wikipedia/outputs/metrics.json` — outputs canónicos
+- `15_caso_wikipedia/outputs/metrics_enriched_v5_2.json` — calibración avanzada V5.2/5.3

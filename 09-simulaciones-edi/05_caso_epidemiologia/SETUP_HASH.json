@@ -1,0 +1,25 @@
+{
+  "case_id": "05_caso_epidemiologia",
+  "timestamp_utc": "2026-04-28T22:44:09.312985+00:00",
+  "git_commit": "a24f6dd14049cd8ce571bb53abc4f6d056a00e3a",
+  "git_dirty": true,
+  "file_count": 13,
+  "aggregate_hash": "6c10649fda9f67af06b2c28ee3dd371e6c0cc0eb705e718c39ca57a64390e447",
+  "file_hashes": {
+    "README.md": "2d3e6ee0d463baa2993500b50fe44efac4f2f60e63095802104a8df97e8216ca",
+    "case_config.json": "966d3540d3f6a00be586cee60b5f34bd1a3300ce902b6ab467121e2313dc4bed",
+    "data/FETCH_MANIFEST.json": "8fa4b725cfb76fec0d7056cc73cf0c9f4632e6761e802a34e3ff70d9457a8f57",
+    "docs/arquitectura.md": "5219e62ed6a16fbaa4ddb77874bf4343ed4162452bf61085856d27a2dcab27d2",
+    "docs/indicadores_metricas.md": "ed47ff0d9198ed23caa01a057bb1598ed016a4105670386d77fc2516ac63bf32",
+    "docs/protocolo_simulacion.md": "c1101c53d997af10e5c31bda44f5c4e8b1cc9e4b433d0e48c5f4ed0008acdb83",
+    "docs/reproducibilidad.md": "f9632df564926d5461de389571a2c57ec87eab91c0a84a1a29a56650c3ba5bdd",
+    "docs/validacion_c1_c5.md": "2667bb751528439764c916d27c8cc4f9facf1af70682ff2e29b245f22ecfe61d",
+    "requirements.txt": "49a15faee932b0e39bc734a9881b3ef1f1d194ebab44858f724036babafbd9eb",
+    "src/abm.py": "88a07a9cbb3946eb1af01d3c02ba079df29c8541b2f9796049134221dcec3d9f",
+    "src/data.py": "7df5cb33d79c328e6845e12f8fd2b12c90ad833a1a1c6d050f75e4d333512566",
+    "src/ode.py": "38a881b687adc615db5687c27c70c75666a997257cda6d5c9087fce6b0ce3236",
+    "src/validate.py": "584b53fac2143824372f0f3d9cb7f1513ab1ef516964e85f7df4f29a1fd7a536"
+  },
+  "protocol_version": "V5.1",
+  "method": "sha256_recursive_with_output_exclusion"
+}

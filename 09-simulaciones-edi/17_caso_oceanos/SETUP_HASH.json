@@ -1,0 +1,20 @@
+{
+  "case_id": "17_caso_oceanos",
+  "timestamp_utc": "2026-04-28T22:44:09.355780+00:00",
+  "git_commit": "a24f6dd14049cd8ce571bb53abc4f6d056a00e3a",
+  "git_dirty": true,
+  "file_count": 8,
+  "aggregate_hash": "6ec81b35971b573832f3f61b35d52d26038466f98c5cec7d7fa55f4052c8527e",
+  "file_hashes": {
+    "README.md": "dd33e9a024a3f747da6767c70619ba4deb732267a31e8daa0354ddc93d3bb34f",
+    "case_config.json": "c539abbb39685605719f4fe15d7173e98b566eff52968ecea34d6e036a96e166",
+    "data/FETCH_MANIFEST.json": "ec732e310e2ec42c3950c0b207d6938aaf3d435de021491f489760e365d454f6",
+    "docs/protocolo_simulacion.md": "5d57122a31da4934224ef0b23674417972940c5c85a80edfe014c574d9a482db",
+    "src/abm.py": "72fe324c6a9445c780311b17e577938ee13c848e15948dd9e670e0f82ff50b8b",
+    "src/data.py": "160c49df66572d3427b01d8ee34948058cf7bd2c6b5ee8cab2f3985b25c6ff2d",
+    "src/ode.py": "d38174450ccff677a3b5ca153b7285c7f25f1b1e8ff7aee0fc226abc5eefc773",
+    "src/validate.py": "ff72439f85c8d3a90e6a890cdcc084f4189593deddffe671b284fe20b5399cee"
+  },
+  "protocol_version": "V5.1",
+  "method": "sha256_recursive_with_output_exclusion"
+}

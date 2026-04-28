@@ -1,0 +1,38 @@
+{
+  "case_id": "33_villin_headpiece",
+  "version_protocolo": "V5.3",
+  "scale": "molecular (10⁻⁹ m, 10⁻⁶ s)",
+  "nivel_canonico": "0_null",
+  "B1_calibration": {
+    "edi_canonical": 0.0,
+    "p_value_naive_canonical": 0.8258258258258259,
+    "p_value_block_bootstrap_estimated": 0.5113333333333333,
+    "newey_west_se_estimated": 0.00038265306122448983,
+    "ci_95_canonical": [
+      -2.220446049250313e-16,
+      0.0
+    ],
+    "fwer_position_in_corpus": {
+      "p_adjusted_holm": 1.0,
+      "survives_fwer_at_alpha_0_05": false
+    },
+    "inferencia_robusta_post_calibracion": false
+  },
+  "B3_preregistration": {
+    "setup_aggregate_hash": "ee5ec4e212a9ff1e85eb97b0ff1f76fa9962b971a4648beda7bc191428af28dc",
+    "git_commit": "a24f6dd14049cd8ce571bb53abc4f6d056a00e3a",
+    "frozen_at": "2026-04-28T22:44:09.431400+00:00"
+  },
+  "B5_threshold_invariance": {
+    "levels_under_grid": [
+      "null"
+    ],
+    "invariant": true,
+    "invariant_level": "null"
+  },
+  "elevacion_neta": {
+    "veredicto": "CONFIRMADO NULL",
+    "antes": "EDI=+0.0000, p_naive=0.8258",
+    "despues": "EDI=+0.0000, p_block=0.5113, FWER=1.0000, inv=True"
+  }
+}

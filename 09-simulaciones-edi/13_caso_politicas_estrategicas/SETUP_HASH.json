@@ -1,0 +1,20 @@
+{
+  "case_id": "13_caso_politicas_estrategicas",
+  "timestamp_utc": "2026-04-28T22:44:09.340275+00:00",
+  "git_commit": "a24f6dd14049cd8ce571bb53abc4f6d056a00e3a",
+  "git_dirty": true,
+  "file_count": 8,
+  "aggregate_hash": "bf1c78a68688ef510cf694bcf429b126c7a08f1981fb5b5fe29e9093b6bd99f3",
+  "file_hashes": {
+    "README.md": "f3408a31a5df33fd75b0c8e218ee140eae6c3cf14ab962fe127b669ae43cc3ba",
+    "case_config.json": "3d10fc09c8601705d5d4301388414071f498188164665fda19e9b02f576bea16",
+    "data/FETCH_MANIFEST.json": "84a9cb658116d196491f0f0f31d1b1ec94a970c47501d2ad10b43019e3e64198",
+    "docs/protocolo_simulacion.md": "a1394ed1b7ee3fdd7658dc8e390af8add1b98e20755d7e7c3e749b622a53410d",
+    "src/abm.py": "c59548a6fee53cdf225d2995c676ba52253137639edc1d9cebb0e1195cb6778e",
+    "src/data.py": "11a057b0e4e185113b6ba07ed6cd2a8e77f024b9a4780229b83c1c35e16c1f49",
+    "src/ode.py": "0a1e32de09890a7db10e72845c878d969fe67b585cb3452582c2410fa573d026",
+    "src/validate.py": "14b358c5fb35edb06cbef6d3cd6e4a3d91c0194e61e9ea16a3560f2dc01e4502"
+  },
+  "protocol_version": "V5.1",
+  "method": "sha256_recursive_with_output_exclusion"
+}

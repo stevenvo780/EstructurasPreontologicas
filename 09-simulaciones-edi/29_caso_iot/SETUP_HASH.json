@@ -1,0 +1,20 @@
+{
+  "case_id": "29_caso_iot",
+  "timestamp_utc": "2026-04-28T22:44:09.402942+00:00",
+  "git_commit": "a24f6dd14049cd8ce571bb53abc4f6d056a00e3a",
+  "git_dirty": true,
+  "file_count": 8,
+  "aggregate_hash": "805e71ae59f84c9e78247df7e8e67e154b158e354e3c153e7fbeabecc1973051",
+  "file_hashes": {
+    "README.md": "68e08f34f2479074f85eb2dcd838147913cc210f574a82924fe851eab370ca65",
+    "case_config.json": "ad0c998cf5168e93293b86152e4cb3e3720f34e3cd18bf6f568286eeff0264ac",
+    "data/FETCH_MANIFEST.json": "bcbc053145d05519ff1974ab44aba42123607a82f2abd5ec35d61f7442972912",
+    "docs/protocolo_simulacion.md": "c8f87229f3edcbb7325986c123ef1a2b531f925a78ed0d2b1925321d1647e01e",
+    "src/abm.py": "fbe136cf5632e9f7d7b99bd818e9fdc1618213e4f89252dbd78bc410b01d4df2",
+    "src/data.py": "eafec19a086d3965ea61b42ec631b455b43bb37f597a726cf6332209f0115573",
+    "src/ode.py": "321ff8c83187b0d36e6bb4a654a1899d2225b83af5201e562e1275396d98e31d",
+    "src/validate.py": "58bec1f4b7bf42abfec74d9096d9de29f20a0f580aefeb547e72ec7cf73751d0"
+  },
+  "protocol_version": "V5.1",
+  "method": "sha256_recursive_with_output_exclusion"
+}

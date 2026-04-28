@@ -1,0 +1,25 @@
+{
+  "case_id": "04_caso_energia",
+  "timestamp_utc": "2026-04-28T22:44:09.309744+00:00",
+  "git_commit": "a24f6dd14049cd8ce571bb53abc4f6d056a00e3a",
+  "git_dirty": true,
+  "file_count": 13,
+  "aggregate_hash": "354d8c0264940f463bb4dd958433ccb701b9e3cfded9df3d63d1ff587166041e",
+  "file_hashes": {
+    "README.md": "5e1ab0031187ded690b3f830d7be64be584d25c57094298728b6496a5afe9e7b",
+    "case_config.json": "40e66e189c8fd94318a59d9a8cda53658615e82f85a33cfcf2f2b847e1a18b9f",
+    "data/FETCH_MANIFEST.json": "3411c4320a0e292d7e9f8d5dc1f3e506f2d7adfd100f8693ade2bfc250b3f668",
+    "docs/arquitectura.md": "3c6d72b9731f7dc611704f781c4aaa21e990f25face10fa870baf515d18736bb",
+    "docs/indicadores_metricas.md": "7f87d7a34021b9a0363f328f4360eea5d1aa39a3a18700ce14131745d082f42e",
+    "docs/protocolo_simulacion.md": "847783885f0f477195a5bd21ea7426ca49749e8e82dbeb29063924954ebc28b4",
+    "docs/reproducibilidad.md": "f9632df564926d5461de389571a2c57ec87eab91c0a84a1a29a56650c3ba5bdd",
+    "docs/validacion_c1_c5.md": "b52a6ca22c1f6251f2702cbb15711bb1a04bbebe4c7a0a95d0f26b71ed664f1d",
+    "requirements.txt": "49a15faee932b0e39bc734a9881b3ef1f1d194ebab44858f724036babafbd9eb",
+    "src/abm.py": "86d309f6e110af596b15e15c4fbb14319e702f90dbb9ae885c0883c58e869127",
+    "src/data.py": "1ad23088fb6ecd3b5e15ae922702ed9ec001d71de25c2026688b6903f3235786",
+    "src/ode.py": "f9e01aa61c792a6e49d1697b193e27338d2cabfc79086ef9066d0029a7eb8a8b",
+    "src/validate.py": "d196dc6ee9d129ea8beb8393584ee2eae5a988b482e0a3b21f9093aa62aa969f"
+  },
+  "protocol_version": "V5.1",
+  "method": "sha256_recursive_with_output_exclusion"
+}

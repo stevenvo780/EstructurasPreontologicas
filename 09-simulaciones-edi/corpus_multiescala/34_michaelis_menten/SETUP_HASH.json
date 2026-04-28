@@ -1,0 +1,13 @@
+{
+  "case_id": "34_michaelis_menten",
+  "timestamp_utc": "2026-04-28T22:44:09.432226+00:00",
+  "git_commit": "a24f6dd14049cd8ce571bb53abc4f6d056a00e3a",
+  "file_count": 3,
+  "aggregate_hash": "7b06722af002b03aa6796e6076d1b7b6a0ee1a8229845b260bb776dffe4648b4",
+  "file_hashes": {
+    "data/FETCH_MANIFEST.json": "a6079bb21c3077960b826860f6de3cbba43808b8ff6e2d232dadc3ba8b779bd3",
+    "docs/protocolo_simulacion.md": "8b90ece5b0893695e4a3dfb17e76435e8e86382852b8e4c0703bd1efeea39ba2",
+    "run.py": "116310632f1148444fa71687a3682dba7023dc622e4e9ce60aff04f5a207b569"
+  },
+  "protocol_version": "V5.3 (inter-escala)"
+}

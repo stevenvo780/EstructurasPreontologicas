@@ -1,0 +1,22 @@
+{
+  "case_id": "01_caso_clima",
+  "timestamp_utc": "2026-04-28T22:44:09.297805+00:00",
+  "git_commit": "a24f6dd14049cd8ce571bb53abc4f6d056a00e3a",
+  "git_dirty": true,
+  "file_count": 10,
+  "aggregate_hash": "90f533060bbaec343634f849d684cb477c3bb42650f41517ea12beb63e18a267",
+  "file_hashes": {
+    "README.md": "2edd189f9c5657b0b90a7d2f7ee9d057dad67cb6a92562ea25de227be652ee2a",
+    "case_config.json": "3804b73afe125fec9c351fc1062e5a37f93636553119eb6bc82c85b80266f13b",
+    "data/FETCH_MANIFEST.json": "540894156f8e57ef0c35495be9afcf30f5ffe9b7896a7d0c29d614b56da85510",
+    "docs/protocolo_simulacion.md": "aa35fec5f1f681e85e4cf25fb399c4a46af72327aaf5739593930d3008daa4c9",
+    "docs/tests_adversariales_iteracion_2.md": "73a6058c4bed2262d0bc19b954aba014017d5862f74ad83adc0e683e108e835f",
+    "requirements.txt": "be6c7f3d3b6b758f84ddc9cc28110aec2797209188090afdefc92cb634dbbcfe",
+    "src/abm.py": "1bf23ad9f47350290374dad460f2bb5b63ef33b7598169687033c8bd44ddb811",
+    "src/data.py": "12f3b5a5971d08116b59f7be51e057a0cd641925a1bebdba6d5ade1bf8283d43",
+    "src/ode.py": "27b117ef042466e6c058f3854c708480fca086a197a331cb7794d90274ee0f2b",
+    "src/validate.py": "bdf66067077fbf11b6de7588538d06079c5a57b35264aa085868a10ba7c83b44"
+  },
+  "protocol_version": "V5.1",
+  "method": "sha256_recursive_with_output_exclusion"
+}

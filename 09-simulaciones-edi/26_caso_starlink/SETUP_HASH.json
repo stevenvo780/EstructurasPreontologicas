@@ -1,0 +1,21 @@
+{
+  "case_id": "26_caso_starlink",
+  "timestamp_utc": "2026-04-28T22:44:09.391612+00:00",
+  "git_commit": "a24f6dd14049cd8ce571bb53abc4f6d056a00e3a",
+  "git_dirty": true,
+  "file_count": 9,
+  "aggregate_hash": "6080dd3587de3a965e7ecc4e14aa91a9bccc36878579af9fa4888d441293415f",
+  "file_hashes": {
+    "README.md": "03b5cc68f5061d195d0e11ff54707341c2c14e99492e33d3ae08e16fa05430ae",
+    "case_config.json": "8b87c00c21e07a37f20eee21e8994a9f32561a6137a2b155ad0f1c9d75c63c0f",
+    "data/FETCH_MANIFEST.json": "69655844d6c358a992873e8395a126cfcf692a204aac22a888777f829d9e9329",
+    "data/celestrak_snapshot.json": "08f4860f141db578c77331d0efa0ffd98c416d9af7fec6ecb9c4f09bee566650",
+    "docs/protocolo_simulacion.md": "8b474c8bf53affa9519e857a278f28041f60c5ec141e03da3d6b571b660f867f",
+    "src/abm.py": "093dc8278e457cac38ed2081c330bebacae2d70e3515b13318c6be68608c42e8",
+    "src/data.py": "7ea9392fb551e7141a695d22b538cb3de4077c2fc4406fc5a86efeaaf6e30061",
+    "src/ode.py": "f4071ec7f1534172e1e0a9e9c07ac5828c16bbd5c7c770f7f8cc4ed107c5c349",
+    "src/validate.py": "0cbfaa693777d171191aa6b97a5e209e349c3eb04e81cc6ae1003cc72d1a2302"
+  },
+  "protocol_version": "V5.1",
+  "method": "sha256_recursive_with_output_exclusion"
+}

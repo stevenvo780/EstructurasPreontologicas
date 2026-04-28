@@ -228,7 +228,7 @@ Establece el **irrealismo operativo** como tercera vía: ni cosa, ni ficción, s
 ### 8.2. Lo que la tesis NO afirma (limitaciones honestas)
 
 - **No afirma que el p-value declarado tenga calibración correcta:** la tasa empírica de tipo I es 24%, no 5%. Los umbrales EDI sí son robustos.
-- **No afirma que el caso 30 (behavioral dynamics) demuestre cierre operativo específico:** la sonda Fajen-Warren produce EDI > 0.30 en 50% de mass-spring puro (N2). El caso 30 se mantiene como caso piloto metodológico hasta elevación con datos humanos reales.
+- **No afirma que el caso 30 (behavioral dynamics) demuestre cierre operativo específico:** la sonda Fajen-Warren produce EDI > 0.30 en 50% de mass-spring puro (N2). **La elevación masiva V5.2 confirma cuantitativamente este reconocimiento: bajo block bootstrap calibrado, p_block estimado = 0.978 (no significativo), y la clasificación NO es invariante a umbrales.** El caso 30 se mantiene firmemente como caso piloto metodológico hasta elevación con datos humanos reales.
 - **No afirma que la composición del corpus refleje prevalencia poblacional:** los umbrales 0.10/0.30 producen 5 strong; 0.15/0.40 produce 3; 0.05/0.20 produce 9 (N4). La composición es post-hoc.
 - **No afirma que κ-ontológica fuerte esté demostrada:** solo κ-pragmática multiescalar. La afirmación ontológica fuerte requiere convergencia inter-grupo y revisión externa.
 - **No afirma generalidad multiescalar sin reservas:** las escalas son etiquetas nominales basadas en parámetros publicados; los datos son sintéticos. La elevación a datos reales abiertos (IBM Quantum, BRENDA, PhysioNet, OGLE, Gaia DR3) es deuda priorizada de 6-12 meses post-defensa.

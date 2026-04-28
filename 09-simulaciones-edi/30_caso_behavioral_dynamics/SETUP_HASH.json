@@ -1,0 +1,21 @@
+{
+  "case_id": "30_caso_behavioral_dynamics",
+  "timestamp_utc": "2026-04-28T22:44:09.406106+00:00",
+  "git_commit": "a24f6dd14049cd8ce571bb53abc4f6d056a00e3a",
+  "git_dirty": true,
+  "file_count": 9,
+  "aggregate_hash": "242d33bce16712b804747c80cd65f7e9f1299e796c07e51895d95096e3dc00cc",
+  "file_hashes": {
+    "README.md": "2567350c1dc830f498699f8361c2108fc47f89af0a547d8dee404ebd66852887",
+    "case_config.json": "5a892db177f4531c657de9bbbf2c0365c758107d8955c87a7042bc8d6bde950f",
+    "data/FETCH_MANIFEST.json": "5b23a13dab11ec50bd517d1e736f03c60beebaabc843d6ea485b73dc269fa9c3",
+    "data/behavioral_dynamics_synth.csv": "14ccc403222ad1181433d4bd427e00b7c18d14768008017172ed8332549bd1cf",
+    "docs/protocolo_simulacion.md": "538c24a75d985eb08ad24c6153f95d15211d7276dccb4252820a02f54fb08d18",
+    "src/abm.py": "c6fceb67d459dd014259df89f5903772c672b1ef8772accfec83d01c10f79d32",
+    "src/data.py": "2fdfb0230f88f643c98e4028d02a3ad3866add638e84287688e81758c9a305a2",
+    "src/ode.py": "b9c52a5e1c74d688268c43062afa0ca24654c72c8ac80dc6f486b0694fdfe68f",
+    "src/validate.py": "1d8c521ce0c5abc8de3a86ff967431341dbbf2b7e9702fb1d97cc17820d5f392"
+  },
+  "protocol_version": "V5.1",
+  "method": "sha256_recursive_with_output_exclusion"
+}
