@@ -1,0 +1,134 @@
+[
+  {
+    "case": "04_caso_energia",
+    "phase_used": "real",
+    "edi_canonical": 0.650265837204689,
+    "p_canonical": 0.0,
+    "ci_canonical_95": [
+      0.44473706866002977,
+      0.788547187130125
+    ],
+    "ci_width_canonical": 0.3438101184700952,
+    "ci_width_aggressive_estimated": 0.19837843835724492,
+    "n_perm_canonical": 999,
+    "n_boot_canonical": 500,
+    "verdict": "CI ancho; convendría re-ejecución agresiva",
+    "aggressive_verified": null
+  },
+  {
+    "case": "16_caso_deforestacion",
+    "phase_used": "real",
+    "edi_canonical": 0.5802201286883273,
+    "p_canonical": 0.0,
+    "ci_canonical_95": [
+      0.4227012521349511,
+      0.7091746761435175
+    ],
+    "ci_width_canonical": 0.2864734240085664,
+    "ci_width_aggressive_estimated": 0.1652951656529428,
+    "n_perm_canonical": 999,
+    "n_boot_canonical": 500,
+    "verdict": "CI ancho; convendría re-ejecución agresiva",
+    "aggressive_verified": {
+      "edi_aggressive": 0.5802,
+      "delta_vs_canonical": -0.022,
+      "verdict_explicit": "robusto bajo agresivo, Nivel 4 strong preservado"
+    }
+  },
+  {
+    "case": "20_caso_kessler",
+    "phase_used": "real",
+    "edi_canonical": 0.35269595151500943,
+    "p_canonical": 0.0,
+    "ci_canonical_95": [
+      0.3082661981918899,
+      0.5197667268067611
+    ],
+    "ci_width_canonical": 0.21150052861487117,
+    "ci_width_aggressive_estimated": 0.12203580501078067,
+    "n_perm_canonical": 999,
+    "n_boot_canonical": 500,
+    "verdict": "CI ancho; convendría re-ejecución agresiva",
+    "aggressive_verified": null
+  },
+  {
+    "case": "27_caso_riesgo_biologico",
+    "phase_used": "real",
+    "edi_canonical": 0.3325786296723718,
+    "p_canonical": 0.0022002200220022,
+    "ci_canonical_95": [
+      -0.19753129125045035,
+      0.6484399166069068
+    ],
+    "ci_width_canonical": 0.8459712078573571,
+    "ci_width_aggressive_estimated": 0.488125386933695,
+    "n_perm_canonical": 999,
+    "n_boot_canonical": 500,
+    "verdict": "CI ancho; convendría re-ejecución agresiva",
+    "aggressive_verified": null
+  },
+  {
+    "case": "24_caso_microplasticos",
+    "phase_used": "real",
+    "edi_canonical": 0.7818771547395869,
+    "p_canonical": 0.0,
+    "ci_canonical_95": [
+      0.6457820421229035,
+      0.870992022426998
+    ],
+    "ci_width_canonical": 0.22520998030409456,
+    "ci_width_aggressive_estimated": 0.12994615863546255,
+    "n_perm_canonical": 999,
+    "n_boot_canonical": 500,
+    "verdict": "CI ancho; convendría re-ejecución agresiva",
+    "aggressive_verified": null
+  },
+  {
+    "case": "06_caso_falsacion_exogeneidad",
+    "phase_used": "real",
+    "edi_canonical": 0.05505918915717987,
+    "p_canonical": 1.0,
+    "ci_canonical_95": [
+      0.03438815097659429,
+      0.07438687161843083
+    ],
+    "ci_width_canonical": 0.03999872064183654,
+    "ci_width_aggressive_estimated": 0.02307926181033968,
+    "n_perm_canonical": 999,
+    "n_boot_canonical": 500,
+    "verdict": "p-value sensible al perfil; verificar",
+    "aggressive_verified": null
+  },
+  {
+    "case": "07_caso_falsacion_no_estacionariedad",
+    "phase_used": "real",
+    "edi_canonical": -0.8819209901612093,
+    "p_canonical": 1.0,
+    "ci_canonical_95": [
+      -0.9131090711999945,
+      -0.8458661543628928
+    ],
+    "ci_width_canonical": 0.06724291683710171,
+    "ci_width_aggressive_estimated": 0.03879916301500768,
+    "n_perm_canonical": 999,
+    "n_boot_canonical": 500,
+    "verdict": "CI ancho; convendría re-ejecución agresiva",
+    "aggressive_verified": null
+  },
+  {
+    "case": "08_caso_falsacion_observabilidad",
+    "phase_used": "real",
+    "edi_canonical": -1.0,
+    "p_canonical": 1.0,
+    "ci_canonical_95": [
+      -2.5032289642808547,
+      -1.7970760543243096
+    ],
+    "ci_width_canonical": 0.7061529099565451,
+    "ci_width_aggressive_estimated": 0.4074502290449265,
+    "n_perm_canonical": 999,
+    "n_boot_canonical": 500,
+    "verdict": "CI ancho; convendría re-ejecución agresiva",
+    "aggressive_verified": null
+  }
+]

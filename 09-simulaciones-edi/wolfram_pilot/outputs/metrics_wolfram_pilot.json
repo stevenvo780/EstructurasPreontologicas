@@ -1,0 +1,28 @@
+{
+  "rule": 110,
+  "n_runs": 200,
+  "n_cells": 64,
+  "steps": 200,
+  "density_probe": {
+    "edi_mean": 0.5511372743642923,
+    "edi_std": 0.10221533424618014,
+    "edi_median": 0.5357706847178834,
+    "n_valid": 200
+  },
+  "curvature_probe": {
+    "edi_mean": 0.5455054642324315,
+    "edi_std": 0.09698969157556411,
+    "edi_median": 0.532650788836089,
+    "n_valid": 200
+  },
+  "verdicts": [
+    [
+      "densidad",
+      "cierre operativo macro detectable"
+    ],
+    [
+      "curvatura",
+      "cierre operativo macro detectable"
+    ]
+  ]
+}

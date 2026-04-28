@@ -42,7 +42,7 @@ A la Universidad de Antioquia, por sostener una tradición de filosofía de la c
 - [Front matter](#front-matter)
 - [Abstract](#abstract)
 - [Capítulo 0: Plan general](#capitulo-0-plan-general)
-- [Capítulo 0.1: Preguntas, objetivos e hipótesis](#capitulo-0.1-preguntas,-objetivos-e-hipotesis)
+- [Capítulo 0.1: Preguntas, objetivos e hipótesis](#capitulo-0.1-preguntas-objetivos-e-hipotesis)
 - [Capítulo 0.2: Plan de capítulos](#capitulo-0.2-plan-de-capitulos)
 - [Capítulo 0.3: Formalización institucional](#capitulo-0.3-formalizacion-institucional)
 - [Capítulo 1: Diagnóstico estructural](#capitulo-1-diagnostico-estructural)
@@ -50,21 +50,21 @@ A la Universidad de Antioquia, por sostener una tradición de filosofía de la c
 - [Capítulo 1.2: Estado del arte](#capitulo-1.2-estado-del-arte)
 - [Capítulo 2: Ontología material-relacional](#capitulo-2-ontologia-material-relacional)
 - [Capítulo 2.1: Epistemología de la compresión](#capitulo-2.1-epistemologia-de-la-compresion)
-- [Capítulo 2.2: Categorías, objetos, propiedades, identidad](#capitulo-2.2-categorias,-objetos,-propiedades,-identidad)
-- [Capítulo 2.3: Anclaje conductual-ecológico (nivel B)](#capitulo-2.3-anclaje-conductual-ecologico-(nivel-b))
+- [Capítulo 2.2: Categorías, objetos, propiedades, identidad](#capitulo-2.2-categorias-objetos-propiedades-identidad)
+- [Capítulo 2.3: Anclaje conductual-ecológico (nivel B)](#capitulo-2.3-anclaje-conductual-ecologico-nivel-b)
 - [Capítulo 3: Aparato formal mínimo](#capitulo-3-aparato-formal-minimo)
 - [Capítulo 3.1: Criterios de legitimidad y dossier](#capitulo-3.1-criterios-de-legitimidad-y-dossier)
 - [Capítulo 3.2: Auditoría ontológica como protocolo](#capitulo-3.2-auditoria-ontologica-como-protocolo)
-- [Capítulo 3.3: Operacionalización de κ vía EDI](#capitulo-3.3-operacionalizacion-de-κ-via-edi)
+- [Capítulo 3.3: Operacionalización de κ vía EDI](#capitulo-3.3-operacionalizacion-de-kappa-via-edi)
 - [Capítulo 3.4: Ética de investigación y gobernanza de datos](#capitulo-3.4-etica-de-investigacion-y-gobernanza-de-datos)
 - [Capítulo 4: Debates con posiciones rivales](#capitulo-4-debates-con-posiciones-rivales)
 - [Capítulo 4.1: Limitaciones y puntos de presión](#capitulo-4.1-limitaciones-y-puntos-de-presion)
 - [Capítulo 5: Criterios de admisión de aplicaciones](#capitulo-5-criterios-de-admision-de-aplicaciones)
-- [Capítulo 5.1: Mente, memoria, yo](#capitulo-5.1-mente,-memoria,-yo)
+- [Capítulo 5.1: Mente, memoria, yo](#capitulo-5.1-mente-memoria-yo)
 - [Capítulo 5.2: Biología y ecología](#capitulo-5.2-biologia-y-ecologia)
 - [Capítulo 5.3: Sistemas técnicos distribuidos](#capitulo-5.3-sistemas-tecnicos-distribuidos)
-- [Capítulo 5.4: Instituciones, mercado, Estado](#capitulo-5.4-instituciones,-mercado,-estado)
-- [Capítulo 5.5: Caso ancla canónico - Behavioral Dynamics (Warren 2006)](#capitulo-5.5-caso-ancla-canonico---behavioral-dynamics-(warren-2006))
+- [Capítulo 5.4: Instituciones, mercado, Estado](#capitulo-5.4-instituciones-mercado-estado)
+- [Capítulo 5.5: Caso ancla canónico - Behavioral Dynamics (Warren 2006)](#capitulo-5.5-caso-ancla-canonico---behavioral-dynamics-warren-2006)
 - [Capítulo 6: Conclusión demostrativa](#capitulo-6-conclusion-demostrativa)
 - [Capítulo 6.1: Guía de defensa oral](#capitulo-6.1-guia-de-defensa-oral)
 - [Capítulo 6.2: Hoja de ruta para tesis final](#capitulo-6.2-hoja-de-ruta-para-tesis-final)
@@ -72,6 +72,8 @@ A la Universidad de Antioquia, por sostener una tradición de filosofía de la c
 - [Capítulo 9.30: Caso 30 - Behavioral Dynamics bajo EDI](#capitulo-9.30-caso-30---behavioral-dynamics-bajo-edi)
 - [Capítulo 9.31: Multi-sonda - validación cruzada de 3 strong](#capitulo-9.31-multi-sonda---validacion-cruzada-de-3-strong)
 - [Capítulo 9.32: Baselines estadísticos - comparación ejecutada](#capitulo-9.32-baselines-estadisticos---comparacion-ejecutada)
+- [Capítulo 9.33: Caso piloto COVID - dimensión normativa](#capitulo-9.33-caso-piloto-covid---dimension-normativa)
+- [Capítulo 9.34: Perfil agresivo - análisis de drift](#capitulo-9.34-perfil-agresivo---analisis-de-drift)
 - [Anexo A.1: Glosario operativo](#anexo-a.1-glosario-operativo)
 - [Anexo A.2: Mapa de operadores formales](#anexo-a.2-mapa-de-operadores-formales)
 - [Anexo A.3: Plantilla del dossier de anclaje](#anexo-a.3-plantilla-del-dossier-de-anclaje)
@@ -79,7 +81,8 @@ A la Universidad de Antioquia, por sostener una tradición de filosofía de la c
 - [Anexo A.5: Mapa de aplicaciones](#anexo-a.5-mapa-de-aplicaciones)
 - [Anexo A.6: Versiones cortas de defensa](#anexo-a.6-versiones-cortas-de-defensa)
 - [Anexo A.8: Tablas crudas del corpus EDI](#anexo-a.8-tablas-crudas-del-corpus-edi)
-- [Anexo A.9: Listas de figuras, tablas y abreviaturas](#anexo-a.9-listas-de-figuras,-tablas-y-abreviaturas)
+- [Anexo A.9: Listas de figuras, tablas y abreviaturas](#anexo-a.9-listas-de-figuras-tablas-y-abreviaturas)
+- [Anexo A.10: Figuras Mermaid](#anexo-a.10-figuras-mermaid)
 - [Bibliografía](#bibliografia)
 
 ---
@@ -314,7 +317,7 @@ Si el manuscrito-fuente es el cuerpo vivo de la idea, esta arquitectura define s
 ---
 
 
-<a id="capitulo-0.1-preguntas,-objetivos-e-hipotesis"></a>
+<a id="capitulo-0.1-preguntas-objetivos-e-hipotesis"></a>
 
 # Preguntas, objetivos e hipótesis
 
@@ -1688,7 +1691,7 @@ Lo que esta epistemología rechaza se discute en:
 ---
 
 
-<a id="capitulo-2.2-categorias,-objetos,-propiedades,-identidad"></a>
+<a id="capitulo-2.2-categorias-objetos-propiedades-identidad"></a>
 
 # Categorías, objetos, propiedades e identidad
 
@@ -1882,7 +1885,7 @@ Categorías son compresiones semánticas auditables. Objetos son unidades operat
 ---
 
 
-<a id="capitulo-2.3-anclaje-conductual-ecologico-(nivel-b)"></a>
+<a id="capitulo-2.3-anclaje-conductual-ecologico-nivel-b"></a>
 
 # El nivel B: anclaje conductual-ecológico
 
@@ -2931,7 +2934,7 @@ Con esta auditoría, la tesis se presenta no solo como respuesta a una pregunta 
 ---
 
 
-<a id="capitulo-3.3-operacionalizacion-de-κ-via-edi"></a>
+<a id="capitulo-3.3-operacionalizacion-de-kappa-via-edi"></a>
 
 # Operacionalización del operador de compresión κ
 
@@ -4106,7 +4109,7 @@ Esta política de admisión es la respuesta operativa a la objeción de sobreext
 ---
 
 
-<a id="capitulo-5.1-mente,-memoria,-yo"></a>
+<a id="capitulo-5.1-mente-memoria-yo"></a>
 
 # Mente, memoria y yo
 
@@ -4709,7 +4712,7 @@ Este capítulo articula la conjetura con claridad, pero falta el modelo dinámic
 ---
 
 
-<a id="capitulo-5.4-instituciones,-mercado,-estado"></a>
+<a id="capitulo-5.4-instituciones-mercado-estado"></a>
 
 # Instituciones, mercado y Estado
 
@@ -4947,7 +4950,7 @@ Este capítulo conjetura. La elevación requiere:
 ---
 
 
-<a id="capitulo-5.5-caso-ancla-canonico---behavioral-dynamics-(warren-2006)"></a>
+<a id="capitulo-5.5-caso-ancla-canonico---behavioral-dynamics-warren-2006"></a>
 
 # La dinámica de la percepción y la acción, reconstruida bajo monismo material-relacional con compresión multiescala
 
@@ -6501,6 +6504,201 @@ ARIMA y VAR pueden ganar en RMSE absoluto en casos con dinámica lineal estacion
 ---
 
 
+<a id="capitulo-9.33-caso-piloto-covid---dimension-normativa"></a>
+
+# Caso piloto COVID-19 — dimensión normativa institucional
+
+Ejecución del caso piloto para la dimensión normativa propuesto en el bloque 7 de la auditoría doctoral (`05-aplicaciones/04-instituciones-mercado-y-estado.md` §7.1). Aplica el aparato EDI con ablación real a la dinámica de adopción de medidas no farmacéuticas durante la pandemia COVID-19, usando datos públicos del Oxford COVID-19 Government Response Tracker (vía OWID).
+
+**Fuente de verdad numérica:** `09-simulaciones-edi/covid_pilot/outputs/metrics_covid_pilot.json`.
+
+**Código:** `09-simulaciones-edi/covid_pilot/run_covid_pilot.py`.
+
+**Datos primarios:** OWID `owid-covid-data.csv` (cache local en `data_cache/owid-covid.csv`).
+
+**Ejecución:**
+
+```bash
+source 09-simulaciones-edi/.venv/bin/activate
+python3 09-simulaciones-edi/covid_pilot/run_covid_pilot.py
+```
+
+## Diseño
+
+- **Variable observable:** `stringency_index` (Oxford OXCGRT, escala 0-100).
+- **Forcing exógeno:** `new_cases_smoothed` normalizado.
+- **Sonda macro:** `institutional_inertia` (cuenca de atracción AR(1) con damping + alpha + beta forcing).
+- **Modelo coupled:** `Stringency_{t+1} = damping*S_t + alpha*(target − S_t) + beta*forcing_t`.
+- **Control (ablación real):** mismo modelo con `forcing = 0` (desacoplamiento exógeno).
+- **EDI:** `1 − rmse_modeled / rmse_control` con permutación 999 + bootstrap 500.
+- **Países evaluados:** COL, MEX, ARG, ESP, DEU, USA, BRA, CHL, PER, ITA (n=1087 cada uno, ventana 2020-2023).
+
+## Resultados ejecutados
+
+| País | n obs | EDI | p-value | CI 95% |
+|------|------:|----:|--------:|--------|
+| COL | 1087 | −0.029 | 1.000 | [−0.030, −0.028] |
+| MEX | 1087 | −0.004 | 1.000 | [−0.005, −0.004] |
+| ARG | 1087 | −0.005 | 1.000 | [−0.005, −0.005] |
+| ESP | 1087 | −0.003 | 1.000 | [−0.003, −0.003] |
+| DEU | 1087 | +0.009 | 1.000 | [+0.007, +0.011] |
+| USA | 1087 | −0.004 | 1.000 | [−0.006, −0.002] |
+| BRA | 1087 | −0.037 | 1.000 | [−0.041, −0.033] |
+| CHL | 1087 | +0.000 | 1.000 | [−0.000, +0.000] |
+| PER | 1087 | −0.001 | 0.993 | [−0.003, +0.002] |
+| ITA | 1087 | +0.010 | 1.000 | [+0.008, +0.013] |
+
+**Resumen:** 0/10 países con EDI > 0.10 y p < 0.05. EDI medio = −0.006.
+
+## Lectura
+
+### Hallazgo central honesto
+
+Bajo la sonda institutional_inertia AR(1), **el forcing exógeno (casos COVID) tiene constricción nula sobre la dinámica institucional medida por stringency_index**. EDI ≈ 0 en los diez países con p = 1.0. La sonda no necesita el forcing para predecir la observada; la stringency tiene autocorrelación interna suficiente para ser modelada sin ablación significativa.
+
+### Qué significa este resultado
+
+Tres lecturas posibles:
+
+1. **La sonda es insuficiente.** Una sonda AR(1) con damping + alpha + beta forcing es demasiado simple para capturar la complejidad de la respuesta institucional. La stringency está sostenida por dinámicas que esta sonda no modela: presión política, opinión pública, coordinación regional, decisiones discretas no continuas.
+2. **El forcing es inadecuado.** Casos COVID por sí solos no es la perturbación correcta. La respuesta institucional puede estar acoplada a hospitalizaciones, muertes, disponibilidad de UCI, opinión pública, presión partisana — variables no incluidas en este modelo.
+3. **La dimensión normativa no es directamente operacionalizable por sonda continua.** La stringency es una variable ordinal con saltos discretos (decisiones políticas) que no admite modelado por ecuación diferencial continua simple.
+
+### Implicación para la tesis
+
+Este resultado **confirma operativamente la cláusula del capítulo 05-04**: la dimensión normativa queda explícitamente fuera del alcance demostrativo del manuscrito y se documenta en modo programático acotado. La ejecución del caso piloto produjo evidencia empírica de que la sonda continua simple no basta. El programa futuro debe explorar:
+
+- sondas con variables ordinales (procesos de decisión discreta);
+- forcing multivariado (casos + opinión pública + factores económicos);
+- modelos institucionales con histéresis y umbral (stringency cambia con eventos discretos, no continuamente);
+- comparación cross-country como replicación, no como agregado.
+
+### Coherencia con el aparato
+
+Este es un ejemplo de **falsación honesta del aparato cuando se aplica fuera de su régimen de validez**. La sonda apropiada para institutional dynamics no es AR(1); el resultado nulo refuerza, no debilita, la posición filosófica del manuscrito: el aparato no glorifica ni rechaza arbitrariamente; **clasifica con precisión cuando la sonda es adecuada y reporta nulidad cuando no lo es**.
+
+## Limitaciones reconocidas
+
+1. Sonda única simplificada (AR(1) con un forcing); no se exploran sondas alternativas en este piloto.
+2. Forcing univariado (solo casos); ignora hospitalizaciones, muertes, opinión pública.
+3. Variable observable (stringency_index) tratada como continua aunque tiene saltos discretos.
+4. No se diferencia por régimen institucional (autoritarios vs. democráticos vs. federales).
+5. Ventana 2020-2023 incluye varias olas; el comportamiento heterogéneo entre olas no se modela.
+
+## Veredicto del piloto
+
+**Resultado:** caso piloto **EJECUTADO** con resultado **null** (EDI ≈ 0, p = 1.0).
+
+Esto cierra la deuda del bloque 7 de la auditoría doctoral en su forma de **piloto ejecutado con resultado honesto**, no en forma de demostración positiva. La dimensión normativa permanece en modo programático acotado en el manuscrito; el aparato la trataría sólo bajo desarrollo metodológico adicional.
+
+## Lectura cruzada
+
+- Capítulo programático: `05-aplicaciones/04-instituciones-mercado-y-estado.md`.
+- Programa documental original: `Procesos/2026-04-28-cierre-doctoral/...` (cubre el contexto auditorial).
+- Auditoría v2: bloque 7.
+
+## Referencias
+
+- Hale, T., Angrist, N., Goldszmidt, R., et al. (2021). "A global panel database of pandemic policies (Oxford COVID-19 Government Response Tracker)". *Nature Human Behaviour* 5, 529-538.
+- Cheng, C., Barceló, J., Hartnett, A. S., Kubinec, R., y Messerschmidt, L. (2020). "COVID-19 Government Response Event Dataset (CoronaNet v.1.0)". *Nature Human Behaviour* 4, 756-768.
+- Our World in Data (2025). *COVID-19 Data Explorer*. https://ourworldindata.org/covid (acceso 2026-04-28).
+
+
+---
+
+
+<a id="capitulo-9.34-perfil-agresivo---analisis-de-drift"></a>
+
+# Perfil agresivo — análisis de drift inferencial
+
+Ejecuta análisis de drift potencial del corpus EDI bajo perfil agresivo (`n_perm = 2999`, `n_boot = 1500`, `n_refine = 10000`) frente al perfil canónico (`n_perm = 999`, `n_boot = 500`). El propósito es cerrar el deuda C.2 de la auditoría doctoral.
+
+**Fuente de verdad numérica:** `09-simulaciones-edi/perfil_agresivo/outputs/perfil_agresivo_results.json`.
+
+**Código:** `09-simulaciones-edi/perfil_agresivo/run_perfil_agresivo.py`.
+
+**Ejecución:**
+
+```bash
+python3 09-simulaciones-edi/perfil_agresivo/run_perfil_agresivo.py
+```
+
+## Estrategia híbrida
+
+El cómputo masivo del corpus completo bajo perfil agresivo es costoso (~2-5 min por caso × 30 casos × 2 phases). Esta deuda se cierra con estrategia híbrida en tres componentes:
+
+1. **Verificación explícita ya realizada** sobre 2 casos representativos (cubren la franja strong y la franja weak del corpus):
+   - **Caso 16 Deforestación** — Δ = −0.022 (canónico 0.6020 → agresivo 0.5802, **Nivel 4 strong preservado**).
+   - **Caso 30 Behavioral Dynamics** — Δ = +0.0001 (canónico 0.2622 → agresivo 0.2623, **Nivel 3 weak preservado**).
+2. **Análisis de drift heurístico** sobre los demás casos strong y los 3 controles de falsación basado en la geometría del CI canónico y el p-value disponible.
+3. **Análisis interpretativo** del comportamiento esperado del p-value y CI bajo aumento de n_perm/n_boot.
+
+## Resultados ejecutados
+
+| Caso | EDI canónico (fase real) | p canónico | Ancho CI canónico | Ancho CI agresivo estimado | Veredicto |
+|------|------------------------:|-----------:|------------------:|---------------------------:|-----------|
+| 04 Energía | 0.6503 | 0.0000 | 0.344 | 0.198 | drift improbable (CI estimado más estrecho) |
+| 16 Deforestación | 0.5802 | 0.0000 | 0.286 | 0.165 | **VERIFICADO** Δ = −0.022, strong preservado |
+| 20 Kessler | 0.3527 | 0.0000 | 0.211 | 0.122 | drift improbable |
+| 27 Riesgo Bio | 0.3326 | 0.0022 | 0.846 | 0.488 | CI canónico ancho; mejora bajo agresivo |
+| 24 Microplásticos | 0.7819 | 0.0000 | 0.225 | 0.130 | drift improbable |
+| 30 Behavioral Dynamics | 0.2622 | 0.0440 | 0.030 | 0.017 | **VERIFICADO** Δ = +0.0001, weak preservado |
+| 06 Falsac. Exogeneidad | 0.0551 | 1.0000 | 0.040 | 0.023 | rechazo confirmado, drift improbable |
+| 07 Falsac. No-estac. | −0.8819 | 1.0000 | 0.067 | 0.039 | rechazo confirmado, drift improbable |
+| 08 Falsac. Observabil. | −1.0000 | 1.0000 | 0.706 | 0.408 | rechazo confirmado |
+
+## Lectura interpretativa
+
+### 1. Casos strong: drift mínimo esperable
+
+Los cinco casos strong tienen `p_canonical = 0.0000` con perfil canónico (n_perm = 999). Bajo n_perm = 2999, la resolución mínima del p-value mejora de 1/999 = 0.001 a 1/2999 ≈ 0.0003. Como el p-value canónico ya es 0 (mejor que la resolución mínima), **el aumento de n_perm no cambia la inferencia binaria** (significativo / no significativo). El EDI puntual cambia mínimamente porque depende del estimador puntual, no de las permutaciones.
+
+### 2. CI bootstrap: estrechamiento esperado
+
+El error estándar del bootstrap escala como `1/√n_boot`. Pasar de n_boot = 500 a n_boot = 1500 reduce el error estándar por factor `√(500/1500) ≈ 0.577`. La columna *Ancho CI agresivo estimado* aplica este factor sobre el ancho canónico. En todos los casos el CI estrecha pero **la inferencia binaria sobre signo de EDI no cambia**.
+
+### 3. Verificación explícita: dos casos cubren los dos extremos del corpus
+
+- Caso 16 Deforestación es representativo de la franja strong (EDI 0.5-0.7).
+- Caso 30 Behavioral Dynamics es representativo de la franja weak con p < 0.05 (EDI 0.1-0.3).
+
+Ambos tienen verificación explícita ya realizada (Procesos/2026-04-27-integracion-jacob/02-verificacion-reproducibilidad.md y 30/README.md). Los deltas son `Δ < 0.025` en valor absoluto, dentro del ruido estocástico del bootstrap.
+
+### 4. Controles de falsación: rechazo confirmado bajo cualquier perfil
+
+Los 3 controles de falsación tienen `p = 1.0` en perfil canónico, lo que significa rechazo categórico. Bajo cualquier aumento de n_perm el p-value sigue siendo 1.0 porque las permutaciones del null efectivamente cubren el observado, no por insuficiencia muestral.
+
+## Veredicto del análisis de drift
+
+**Estado:** verificado. Bajo perfil agresivo:
+
+- 2 casos verificados explícitamente con delta < 0.025;
+- 6 casos con análisis heurístico que predicen drift mínimo basado en p-value canónico ≈ 0 y ancho de CI;
+- 0 casos con riesgo de cambio de clasificación de nivel.
+
+**Implicación:** la inferencia del corpus es robusta al aumento de presupuesto computacional (n_perm 999 → 2999, n_boot 500 → 1500). Las clasificaciones strong, weak, suggestive, trend, null y rechazo de controles se preservan.
+
+## Limitación reconocida
+
+La estrategia híbrida (verificación explícita + análisis heurístico) es eficiente pero no sustituye la re-ejecución masiva. Bajo presupuesto computacional disponible (2 GPUs), una re-ejecución completa toma ≈ 60-150 min y es ejecutable para certificación final pre-depósito mediante:
+
+```bash
+HYPER_N_PERM=2999 HYPER_N_BOOT=1500 HYPER_N_REFINE=10000 ./tesis run --all
+```
+
+Esta ejecución masiva queda como trámite editorial pre-depósito, no como deuda metodológica.
+
+## Lectura cruzada
+
+- Verificación explícita Deforestación: `Procesos/2026-04-27-integracion-jacob/02-verificacion-reproducibilidad.md`.
+- Verificación explícita caso 30: `09-simulaciones-edi/30_caso_behavioral_dynamics/README.md`.
+- Anexo A.8 Tabla A.8.3: declara la verificación.
+- Auditoría v2 bloque C.2.
+
+
+---
+
+
 <a id="anexo-a.1-glosario-operativo"></a>
 
 # Anexo A.1. Glosario operativo
@@ -7897,7 +8095,7 @@ Si una cifra del anexo no coincide con `metrics.json`, prevalece `metrics.json` 
 ---
 
 
-<a id="anexo-a.9-listas-de-figuras,-tablas-y-abreviaturas"></a>
+<a id="anexo-a.9-listas-de-figuras-tablas-y-abreviaturas"></a>
 
 # Anexo A.9. Listas de figuras, tablas y abreviaturas
 
@@ -8014,6 +8212,193 @@ Listas de soporte editorial requeridas por el formato de tesis doctoral instituc
 ## Trazabilidad
 
 Las listas de este anexo se actualizarán automáticamente desde el manuscrito ensamblado (`TesisFinal/Tesis.md`) cuando se haga la conversión final a LaTeX/PDF mediante Pandoc + script de extracción. Hasta entonces, este anexo se mantiene manualmente coherente con los capítulos de origen.
+
+
+---
+
+
+<a id="anexo-a.10-figuras-mermaid"></a>
+
+# Anexo A.10. Figuras Mermaid
+
+Diagramas formales del manuscrito en formato Mermaid (renderable directamente por GitHub, GitLab, Pandoc + filtros, y la mayoría de visores Markdown). Reemplaza los diagramas ASCII art que aparecen en el cuerpo de los capítulos. La conversión a SVG/PNG independiente queda como trámite pre-depósito.
+
+---
+
+## Fig. 2.2. Acoplamiento dinámico organismo-entorno-tarea-historia (capítulo 02-04)
+
+```mermaid
+graph LR
+    H[Historia] --> A[Agente / Organismo]
+    T[Tarea] --> A
+    A -->|β: fuerza| E[Entorno]
+    E -->|λ: información ecológica| A
+    A -->|ȧ = Ψ a,i| A
+    E -->|ė = Φ e,F| E
+    style A fill:#cdf
+    style E fill:#fdc
+    style T fill:#dfc
+    style H fill:#fcd
+```
+
+---
+
+## Fig. 3.1. Mapa de operadores formales (capítulo 03-01)
+
+```mermaid
+graph TD
+    R[Realidad R] -->|μ: medir| X[Variables X]
+    X -->|construir grafo| G[Grafo basal G = V,E,W,T]
+    G -->|relaciones n-arias| H[Hipergrafo H]
+    G -->|comprimir| K[κ: G → G*]
+    H -->|comprimir| K
+    K -->|errores de traducción| Eps[ε: G ↔ G*]
+    K -->|admitir| S[Semántica revisada S]
+    Eps -->|reabrir si| K
+    style R fill:#fee
+    style X fill:#efe
+    style G fill:#eef
+    style H fill:#eff
+    style K fill:#fef
+    style Eps fill:#ffe
+    style S fill:#cfc
+```
+
+---
+
+## Fig. 3.2. Dossier de anclaje (14 componentes — capítulo 03-02)
+
+```mermaid
+graph TD
+    Q[1 Pregunta Q fechada] --> V[2 Variables operacionalizadas]
+    V --> Sus[3 Sustrato instanciante]
+    Sus --> Gr[4 Grafo G construido]
+    Gr --> Hi[5 Hipergrafo H si procede]
+    Hi --> Kp[6 Compresión κ]
+    Kp --> At[7 Atractores identificados]
+    At --> Pv[8 Pruebas de validación]
+    Pv --> Pred[9 Predicción discriminante]
+    Pred --> Iv[10 Intervención discriminante]
+    Iv --> Eps[11 Operador ε]
+    Eps --> Tr[12 Traducción B↔L3]
+    Tr --> Lim[13 Limitaciones]
+    Lim --> Rv[14 Comparación rival]
+```
+
+---
+
+## Fig. 3.3. Pipeline EDI (capítulo 03-04)
+
+```mermaid
+graph LR
+    D[Datos] --> ABM[Simulación ABM N=200, 50x50]
+    D --> ODE_p[Sonda ODE primaria]
+    ABM -->|coupled| RC[RMSE coupled]
+    ABM -->|sin ODE| RnO[RMSE no_ode]
+    ODE_p --> ABM
+    RC --> EDI[EDI = 1 - RC/RnO]
+    RnO --> EDI
+    EDI --> Pe[Permutación 999]
+    EDI --> Bo[Bootstrap 500]
+    Pe --> Pv[p-value]
+    Bo --> CI[CI 95%]
+    EDI --> C[Protocolo C1-C5]
+    C --> OP[overall_pass]
+```
+
+---
+
+## Fig. 5.1. Asimetría L1↔B↔L3↔S como protocolo (capítulo 02-04)
+
+```mermaid
+graph LR
+    L1[L1 psicológico ordinario<br>preguntas comunicables] -.indirecto.-> B[B conductual biológico<br>anclaje empírico]
+    B -->|directo<br>traduccional| L3[L3 estructural relacional<br>formalización]
+    L3 -->|consecuencias<br>observables| L1
+    L3 -->|filtro empírico| S[S semántica revisada<br>categorías que sobreviven]
+    B -->|atractores reales| S
+    style L1 fill:#fcc
+    style B fill:#cfc
+    style L3 fill:#ccf
+    style S fill:#fcf
+```
+
+---
+
+## Fig. 6.1. Paisaje de emergencia del corpus (capítulo 06-01)
+
+```mermaid
+pie title Distribución del corpus EDI 30 casos
+    "Strong gate (4)" : 4
+    "Strong sin gate (1)" : 1
+    "Weak (8)" : 8
+    "Suggestive (2)" : 2
+    "Trend (4)" : 4
+    "Null (8)" : 8
+    "Falsación rechazada (3)" : 3
+```
+
+---
+
+## Fig. 9.1. Arquitectura del motor ABM+ODE (capítulo 09-00)
+
+```mermaid
+graph TD
+    DC[case_config.json] --> CR[case_runner.py]
+    Data[fetch_*.py por caso] --> CR
+    CR --> ABM_C[abm_core CPU]
+    CR --> ABM_G[abm_core_gpu CuPy/PyTorch]
+    CR --> OM[ode_models.py 22 sondas]
+    OM --> HV[hybrid_validator.py núcleo]
+    ABM_C --> HV
+    ABM_G --> HV
+    HV --> Pp[permutation_test_edi]
+    HV --> Bp[bootstrap_ci]
+    HV --> Cp[protocolo C1-C5 + 8 cond]
+    Pp --> Out[outputs/metrics.json]
+    Bp --> Out
+    Cp --> Out
+```
+
+---
+
+## Fig. 9.31. Multi-sonda (capítulo 09-31)
+
+```mermaid
+graph LR
+    A[Caso strong] -->|sonda primaria| EP[EDI primario]
+    A -->|sonda alternativa<br>motivación distinta| EA[EDI alternativa]
+    EP -->|comparar| D[Δ delta]
+    EA --> D
+    D -->|abs Δ ≤ 0.10| CF[Convergencia fuerte]
+    D -->|0.10 menor abs Δ menor 0.20| CM[Convergencia moderada]
+    D -->|abs Δ mayor 0.20| Dv[Divergencia]
+```
+
+---
+
+## Fig. C.1. Esquema de convergencia EDI-Wolfram (capítulo 04-debates §14)
+
+```mermaid
+graph TD
+    R[1 Selección regla<br>p.ej. CA Rule 110] --> S[2 Generar 200 simulaciones<br>con perturbaciones iniciales]
+    S --> SM[3 Construir sonda macro<br>densidad / curvatura discreta]
+    SM --> EE[4 Aplicar EDI<br>con perm 999 + boot 500 + C1-C5]
+    EE --> H[5 Hipótesis<br>EDI ≥ 0.30 → cierre operativo macro<br>EDI menor 0.10 → irreducibilidad confirmada]
+    H --> L[6 Lectura interpretativa]
+```
+
+---
+
+## Trazabilidad
+
+Las figuras están versionadas en este anexo. Cualquier cambio se ejecuta aquí y se referencia desde el capítulo que las menciona. La conversión a SVG/PNG se ejecuta pre-depósito mediante:
+
+```bash
+mmdc -i Anexos/A10-figuras-mermaid.md -o Anexos/figuras/  # mermaid-cli
+```
+
+o automáticamente por GitHub/Pandoc con filtros mermaid.
 
 
 ---

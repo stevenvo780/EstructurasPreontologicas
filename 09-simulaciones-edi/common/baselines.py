@@ -113,6 +113,27 @@ def random_walk_forecast(train: np.ndarray, val_steps: int) -> np.ndarray:
     return np.full(val_steps, last, dtype=float)
 
 
+def fit_gaussian_process(train: np.ndarray, val_steps: int) -> dict:
+    """GP no-paramétrico con kernel temporal RBF. Baseline no-lineal flexible."""
+    from sklearn.gaussian_process import GaussianProcessRegressor
+    from sklearn.gaussian_process.kernels import RBF, ConstantKernel as C, WhiteKernel
+    n = len(train)
+    X = np.arange(n).reshape(-1, 1).astype(float)
+    y = train.astype(float)
+    kernel = C(1.0, (1e-3, 1e3)) * RBF(length_scale=10.0, length_scale_bounds=(1e-1, 1e3)) \
+        + WhiteKernel(noise_level=1e-2, noise_level_bounds=(1e-5, 1e0))
+    try:
+        gp = GaussianProcessRegressor(kernel=kernel, normalize_y=True,
+                                      n_restarts_optimizer=2, random_state=42)
+        gp.fit(X, y)
+        Xtest = np.arange(n, n + val_steps).reshape(-1, 1).astype(float)
+        fc = gp.predict(Xtest)
+        return {"forecast": np.asarray(fc, dtype=float),
+                "kernel": str(gp.kernel_)}
+    except Exception as exc:
+        return {"forecast": None, "error": str(exc)}
+
+
 def rmse(a: np.ndarray, b: np.ndarray) -> float:
     return float(np.sqrt(np.mean((np.asarray(a) - np.asarray(b)) ** 2)))
 
@@ -152,10 +173,12 @@ def run_baselines_on_case(case_dir: Path, seed: int = 42) -> dict:
     var_data = np.column_stack([series, forcing])[:train_steps]
     var = fit_var(var_data, val_steps, max_lag=min(5, train_steps // 4))
     rw = random_walk_forecast(train, val_steps)
+    gp = fit_gaussian_process(train, val_steps)
 
     rmse_arima = rmse(arima["forecast"], val) if arima["forecast"] is not None else float("nan")
     rmse_var = rmse(var["forecast"], val) if var["forecast"] is not None else float("nan")
     rmse_rw = rmse(rw, val)
+    rmse_gp = rmse(gp["forecast"], val) if gp.get("forecast") is not None else float("nan")
 
     rmse_coupled = float(syn_phase.get("errors", {}).get("rmse_abm", float("nan")))
     rmse_no_ode = float(syn_phase.get("errors", {}).get("rmse_abm_no_ode", float("nan")))
@@ -176,20 +199,24 @@ def run_baselines_on_case(case_dir: Path, seed: int = 42) -> dict:
         "rmse_var": rmse_var,
         "var_lag": var.get("lag"),
         "rmse_rw": rmse_rw,
+        "rmse_gp": rmse_gp,
+        "gp_kernel": gp.get("kernel"),
         "ratio_arima_vs_coupled": rmse_arima / rmse_coupled if rmse_coupled and not np.isnan(rmse_arima) else None,
         "ratio_var_vs_coupled": rmse_var / rmse_coupled if rmse_coupled and not np.isnan(rmse_var) else None,
         "ratio_rw_vs_coupled": rmse_rw / rmse_coupled if rmse_coupled else None,
-        "winner": _pick_winner(rmse_coupled, rmse_arima, rmse_var, rmse_rw),
+        "ratio_gp_vs_coupled": rmse_gp / rmse_coupled if rmse_coupled and not np.isnan(rmse_gp) else None,
+        "winner": _pick_winner(rmse_coupled, rmse_arima, rmse_var, rmse_rw, rmse_gp),
     }
 
 
-def _pick_winner(rmse_coupled, rmse_arima, rmse_var, rmse_rw):
+def _pick_winner(rmse_coupled, rmse_arima, rmse_var, rmse_rw, rmse_gp=None):
     """Veredicto cualitativo: qué modelo tiene menor RMSE."""
     options = {
         "ABM+ODE coupled": rmse_coupled,
         "ARIMA": rmse_arima,
         "VAR": rmse_var,
         "Random Walk": rmse_rw,
+        "Gaussian Process": rmse_gp,
     }
     valid = {k: v for k, v in options.items() if v is not None and not np.isnan(v)}
     if not valid:
@@ -225,7 +252,7 @@ if __name__ == "__main__":
         try:
             r = run_baselines_on_case(case_dir)
             results.append(r)
-            print(f"{r['case_dir']:42s}  ARIMA={r['rmse_arima']:.4f}  VAR={r['rmse_var']:.4f}  RW={r['rmse_rw']:.4f}  coupled={r['rmse_coupled_aparato']:.4f}  winner={r['winner']}")
+            print(f"{r['case_dir']:42s}  ARIMA={r['rmse_arima']:.4f}  VAR={r['rmse_var']:.4f}  RW={r['rmse_rw']:.4f}  GP={r['rmse_gp']:.4f}  coupled={r['rmse_coupled_aparato']:.4f}  winner={r['winner']}")
         except Exception as exc:
             print(f"FAIL {c}: {exc}")
             import traceback; traceback.print_exc()

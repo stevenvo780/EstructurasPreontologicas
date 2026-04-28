@@ -1,0 +1,149 @@
+{
+  "n_countries": 10,
+  "countries_with_signal": 0,
+  "edi_mean": -0.006452621186107621,
+  "edi_median": -0.003603380919901533,
+  "edi_max": 0.010025360428147279,
+  "results": [
+    {
+      "country": "COL",
+      "country_name": "Colombia",
+      "n_observations": 1087,
+      "edi": -0.02915701844699714,
+      "p_value": 1.0,
+      "ci_95": [
+        -0.02997076205755884,
+        -0.028304263554185527
+      ],
+      "rmse_modeled": 9.156816096915646,
+      "rmse_control": 8.897394598477621,
+      "val_steps": 181
+    },
+    {
+      "country": "MEX",
+      "country_name": "Mexico",
+      "n_observations": 1087,
+      "edi": -0.004100448969980963,
+      "p_value": 1.0,
+      "ci_95": [
+        -0.004664187846192292,
+        -0.0036624921318027803
+      ],
+      "rmse_modeled": 9.873687164124615,
+      "rmse_control": 9.833365948848215,
+      "val_steps": 181
+    },
+    {
+      "country": "ARG",
+      "country_name": "Argentina",
+      "n_observations": 1087,
+      "edi": -0.0050645574058785225,
+      "p_value": 1.0,
+      "ci_95": [
+        -0.005310005064087781,
+        -0.004791006088245221
+      ],
+      "rmse_modeled": 14.787608347270234,
+      "rmse_control": 14.713093042936253,
+      "val_steps": 181
+    },
+    {
+      "country": "ESP",
+      "country_name": "Spain",
+      "n_observations": 1087,
+      "edi": -0.003106312869822103,
+      "p_value": 1.0,
+      "ci_95": [
+        -0.0032106490086613983,
+        -0.003013263709410058
+      ],
+      "rmse_modeled": 15.25809495913394,
+      "rmse_control": 15.21084531457241,
+      "val_steps": 181
+    },
+    {
+      "country": "DEU",
+      "country_name": "Germany",
+      "n_observations": 1087,
+      "edi": 0.009079157374549562,
+      "p_value": 1.0,
+      "ci_95": [
+        0.007254897094019813,
+        0.011132962521941861
+      ],
+      "rmse_modeled": 14.15840384654359,
+      "rmse_control": 14.28812800932799,
+      "val_steps": 181
+    },
+    {
+      "country": "USA",
+      "country_name": "United States",
+      "n_observations": 1087,
+      "edi": -0.0042199904026687385,
+      "p_value": 1.0,
+      "ci_95": [
+        -0.005904877079276144,
+        -0.002412882136683876
+      ],
+      "rmse_modeled": 3.1960714199326614,
+      "rmse_control": 3.182640706695264,
+      "val_steps": 181
+    },
+    {
+      "country": "BRA",
+      "country_name": "Brazil",
+      "n_observations": 1087,
+      "edi": -0.03753055140773065,
+      "p_value": 1.0,
+      "ci_95": [
+        -0.04134247920943347,
+        -0.033078779547267685
+      ],
+      "rmse_modeled": 4.3316003781109,
+      "rmse_control": 4.174913569758255,
+      "val_steps": 181
+    },
+    {
+      "country": "CHL",
+      "country_name": "Chile",
+      "n_observations": 1087,
+      "edi": 0.00015747571965540885,
+      "p_value": 1.0,
+      "ci_95": [
+        -6.884529506228642e-05,
+        0.0004340059253199522
+      ],
+      "rmse_modeled": 10.793494060796748,
+      "rmse_control": 10.795194041747292,
+      "val_steps": 181
+    },
+    {
+      "country": "PER",
+      "country_name": "Peru",
+      "n_observations": 1087,
+      "edi": -0.0006093258803503421,
+      "p_value": 0.992992992992993,
+      "ci_95": [
+        -0.0028683889375338834,
+        0.0017996819971055407
+      ],
+      "rmse_modeled": 11.97126600154122,
+      "rmse_control": 11.963976041307362,
+      "val_steps": 181
+    },
+    {
+      "country": "ITA",
+      "country_name": "Italy",
+      "n_observations": 1087,
+      "edi": 0.010025360428147279,
+      "p_value": 1.0,
+      "ci_95": [
+        0.007772342199598025,
+        0.012553955155596435
+      ],
+      "rmse_modeled": 11.979776106805925,
+      "rmse_control": 12.10109393507997,
+      "val_steps": 181
+    }
+  ]
+}

@@ -82,6 +82,8 @@ A la Universidad de Antioquia, por sostener una tradición de filosofía de la c
     ('Capítulo 9.30: Caso 30 - Behavioral Dynamics bajo EDI', '09-simulaciones-edi/30_caso_behavioral_dynamics/README.md', None),
     ('Capítulo 9.31: Multi-sonda - validación cruzada de 3 strong', '09-simulaciones-edi/multi_sonda/README.md', None),
     ('Capítulo 9.32: Baselines estadísticos - comparación ejecutada', '09-simulaciones-edi/baselines/README.md', None),
+    ('Capítulo 9.33: Caso piloto COVID - dimensión normativa', '09-simulaciones-edi/covid_pilot/README.md', None),
+    ('Capítulo 9.34: Perfil agresivo - análisis de drift', '09-simulaciones-edi/perfil_agresivo/README.md', None),
     ('Anexo A.1: Glosario operativo', 'Anexos/A1-glosario-operativo.md', None),
     ('Anexo A.2: Mapa de operadores formales', 'Anexos/A2-mapa-operadores.md', None),
     ('Anexo A.3: Plantilla del dossier de anclaje', 'Anexos/A3-plantilla-dossier.md', None),
@@ -90,15 +92,27 @@ A la Universidad de Antioquia, por sostener una tradición de filosofía de la c
     ('Anexo A.6: Versiones cortas de defensa', 'Anexos/A6-version-corta-defensa.md', None),
     ('Anexo A.8: Tablas crudas del corpus EDI', 'Anexos/A8-tablas-crudas-corpus.md', None),
     ('Anexo A.9: Listas de figuras, tablas y abreviaturas', 'Anexos/A9-listas-figuras-tablas-abreviaturas.md', None),
+    ('Anexo A.10: Figuras Mermaid', 'Anexos/A10-figuras-mermaid.md', None),
     ('Bibliografía', '07-bibliografia/01-bibliografia-orientativa.md', None),
 ]
 
 
 def slugify(s: str) -> str:
     s = s.lower().replace(' ', '-').replace(':', '')
-    for a, b in [('á', 'a'), ('é', 'e'), ('í', 'i'), ('ó', 'o'), ('ú', 'u'), ('ñ', 'n')]:
+    pairs = [('á', 'a'), ('é', 'e'), ('í', 'i'), ('ó', 'o'), ('ú', 'u'),
+             ('ñ', 'n'), ('κ', 'kappa'), ('μ', 'mu'), ('ε', 'epsilon'),
+             ('φ', 'phi'), ('ψ', 'psi'), ('τ', 'tau'), ('β', 'beta'),
+             ('α', 'alpha'), ('γ', 'gamma'), ('δ', 'delta'),
+             ('ç', 'c'), ('ü', 'u')]
+    for a, b in pairs:
         s = s.replace(a, b)
-    return s
+    keep = []
+    for ch in s:
+        if ch.isalnum() or ch in '-_.':
+            keep.append(ch)
+        elif ch == ' ':
+            keep.append('-')
+    return ''.join(keep)
 
 
 def build():

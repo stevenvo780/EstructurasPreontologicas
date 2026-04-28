@@ -50,6 +50,37 @@ CASOS = {
         "alt_params": {"ode_sigma": 0.2, "ode_mu": 0.05, "ode_xi": 0.1},
         "esperado_edi": 0.25,
     },
+    # Extensión a casos weak con p<0.001
+    "14_caso_postverdad": {
+        "primary": "sis_contagion",
+        "alternative": "saturation_growth",
+        "alt_params": {"ode_alpha": 0.4, "ode_beta": 0.6},
+        "esperado_edi": 0.20,
+    },
+    "18_caso_urbanizacion": {
+        "primary": "mean_reversion",
+        "alternative": "spatial_logistic",
+        "alt_params": {"ode_K": 1.0, "ode_alpha": 0.3, "ode_beta": 0.2},
+        "esperado_edi": 0.20,
+    },
+    "22_caso_fosforo": {
+        "primary": "bilinear",
+        "alternative": "accumulation_decay",
+        "alt_params": {"ode_inflow": 0.4, "ode_decay": 0.2},
+        "esperado_edi": 0.15,
+    },
+    "15_caso_wikipedia": {
+        "primary": "mean_reversion",
+        "alternative": "saturation_growth",
+        "alt_params": {"ode_alpha": 0.3, "ode_beta": 0.6},
+        "esperado_edi": 0.15,
+    },
+    "05_caso_epidemiologia": {
+        "primary": "seir",
+        "alternative": "seir_demographic",
+        "alt_params": {"ode_sigma": 0.25, "ode_mu": 0.04, "ode_xi": 0.08},
+        "esperado_edi": 0.10,
+    },
 }
 
 
