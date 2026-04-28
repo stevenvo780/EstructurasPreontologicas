@@ -11,7 +11,8 @@ const stBin = path.join(projectRoot, 'node_modules', '.bin', 'st');
 const verbose = process.argv.includes('--verbose');
 
 const suite = [
-  { file: 'theories/00-nucleo-ontologico.st', mode: 'check' },
+  // Teorías originales (refactorizadas en V5)
+  { file: 'theories/00-nucleo-ontologico.st', mode: 'run' },
   { file: 'theories/01-criterios-legitimidad.st', mode: 'check' },
   { file: 'theories/02-debates-y-limites.st', mode: 'check' },
   { file: 'theories/03-text-layer-tesis.st', mode: 'run' },
@@ -23,7 +24,18 @@ const suite = [
   { file: 'theories/09-niveles-paisaje.st', mode: 'run' },
   { file: 'theories/10-falsabilidad.st', mode: 'run' },
   { file: 'theories/11-modal-coherencia-epistemica.st', mode: 'run' },
-  { file: 'theories/12-paraconsistencia-wolfram.st', mode: 'run' }
+  { file: 'theories/12-paraconsistencia-wolfram.st', mode: 'run' },
+  // Teorías V5 nuevas (post-auditoría V5 + corpus multiescala + tres marcos)
+  { file: 'theories/13-temporalidad-causalidad.st', mode: 'run' },
+  { file: 'theories/14-pre-ontologico-genetico.st', mode: 'run' },
+  { file: 'theories/15-tres-marcos-generales.st', mode: 'run' },
+  { file: 'theories/16-naturalismo-y-rivales-metafisicos.st', mode: 'run' },
+  { file: 'theories/17-kappa-pragmatica-vs-ontologica.st', mode: 'run' },
+  { file: 'theories/18-deontica-normativa.st', mode: 'run' },
+  { file: 'theories/19-asimetria-tres-marcos.st', mode: 'run' },
+  { file: 'theories/20-stress-test-falsabilidad.st', mode: 'run' },
+  { file: 'theories/21-belnap-corpus-multiescala.st', mode: 'run' },
+  { file: 'theories/22-modal-s5-marco-tripartito.st', mode: 'run' }
 ];
 
 mkdirSync(reportsDir, { recursive: true });
