@@ -1,126 +1,211 @@
-# Aplicación 2. Biología y ecología
+# Biología y ecología
 
-## Por qué este caso es clave
+## MODO PROGRAMÁTICO
 
-La biología y la ecología muestran con mucha claridad que el mundo material no es una lista plana de componentes. También muestran que las unidades de análisis cambian con la escala sin que por eso cambie de mundo la realidad.
+Aplicación en **modo programático** según el capítulo 05-00. Articula una conjetura de aplicación del marco a fenómenos biológicos y ecológicos, con criterios de elevación. No demuestra.
+
+## Función de este capítulo
+
+La biología y la ecología muestran con particular claridad dos cosas que la tesis afirma: la realidad material no es lista plana de componentes, y las unidades de análisis cambian con la escala sin que cambie la realidad. Aquí la conjetura es que las categorías biológicas centrales — célula, organismo, especie, ecosistema — son patrones materialmente sostenidos cuya formalización dinámica permite mejor articulación multinivel que reduccionismo molecular o holismo ecológico inflado.
+
+## Conjetura del capítulo
+
+> Célula, organismo y ecosistema son atractores de sistemas dinámicos acoplados de creciente complejidad cuya realidad como patrones se verifica por estabilidad bajo perturbación, cuenca medible, bifurcaciones identificables, y predicción discriminante contra rivales reduccionistas o holistas. La elevación a demostrativo requiere identificar atractores con datos publicados específicos en cada subdominio.
 
 ## 1. La célula
 
-### Recorte heredado
+### 1.1. Recorte heredado
 
-La célula suele tomarse como unidad básica de lo vivo.
+La célula como unidad básica de lo vivo.
 
-### Qué confirma la tesis
+### 1.2. Hipótesis de auditoría
 
-La célula es una unidad muy fuerte, pero su identidad no proviene solo de una suma de moléculas. Depende de:
+La célula es atractor de organización con cuenca persistente bajo recambio molecular. Las componentes:
 
-- membrana;
-- metabolismo;
-- intercambio;
-- señalización;
-- regulación;
-- reproducción;
-- acoplamiento con el entorno.
+- membrana (frontera dura);
+- metabolismo (dinámica);
+- intercambio con el entorno (acoplamiento);
+- señalización (información intracelular);
+- regulación (leyes de control);
+- reproducción (transición a otros atractores);
+- acoplamiento con el medio extracelular.
 
-### Lectura material-relacional
+### 1.3. Variables candidatas
 
-La célula puede tratarse como:
+- concentraciones moleculares clave;
+- flujos metabólicos;
+- estados de transcripción;
+- señales químicas;
+- propiedades mecánicas de membrana;
+- estado del entorno inmediato.
 
-- subred compleja cuando el foco es biología celular;
-- nodo comprimido cuando el foco es tejido u órgano.
+### 1.4. Atractores conjeturados
+
+Estados estables de homeostasis bajo régimen ambiental específico; bifurcaciones entre tipos celulares (diferenciación); transiciones de fase (apoptosis, mitosis).
+
+### 1.5. Compresión y expansión
+
+- compresión legítima: tratar la célula como nodo en modelos tisulares cuando la pregunta es estructura de tejido;
+- expansión necesaria: abrir la célula en su red metabólica cuando la pregunta es regulación específica.
+
+### 1.6. Criterio de elevación
+
+Identificar caso publicado donde un modelo dinámico de baja dimensionalidad sobre subred metabólica reproduzca trayectorias observadas con bifurcación de diferenciación celular, y discrimine contra modelo reduccionista plano (todos los detalles moleculares) o modelo holista (la célula sin más).
 
 ## 2. El organismo
 
-### Problema clásico
+### 2.1. Recorte heredado
 
-El organismo parece una cosa unitaria, pero también es un proceso abierto de intercambio continuo.
+El organismo como cosa unitaria, simultáneamente proceso abierto de intercambio.
 
-### Reconstrucción propuesta
+### 2.2. Hipótesis de auditoría
 
-La identidad del organismo no descansa en partes idénticas e invariantes, sino en una continuidad organizada de:
+El organismo es atractor de continuidad organizada bajo recambio metabólico, regulación interna, acoplamiento con el entorno y dependencia histórica del desarrollo. Su identidad es continuidad estructural, no permanencia molecular.
 
-- regulación interna;
-- intercambio energético;
-- coordinación funcional;
-- historia de desarrollo;
-- adaptación al entorno.
+### 2.3. Variables candidatas
 
-### Consecuencia
+- regulación interna (homeostasis);
+- intercambio energético con el entorno;
+- coordinación funcional entre subsistemas;
+- estado del desarrollo;
+- adaptación al ambiente actual.
 
-El organismo es un excelente ejemplo de objeto procesual: real, estable y material, pero no fijo ni cerrado en sentido ingenuo.
+### 2.4. Atractores y bifurcaciones
 
-## 3. El ecosistema
+Estados estables de fisiología (vigilia, sueño, regímenes metabólicos); bifurcaciones (estrés, enfermedad, recuperación).
 
-### Recorte heredado
+### 2.5. Rival principal
 
-A veces se habla del ecosistema como si fuera una entidad homogénea y a veces como simple suma de especies.
+Reduccionismo molecular fuerte (todo es bioquímica) y vitalismo residual (algo en el organismo escapa la materialidad). La tesis discrimina contra ambos: el organismo es atractor materialmente realizado y empíricamente verificable.
 
-### Problema
+### 2.6. Criterio de elevación
 
-Ambas miradas son insuficientes.
+Construir caso de regulación fisiológica con bifurcación documentada (transición sueño-vigilia, transición de desarrollo, respuesta al estrés agudo) y mostrar que el modelo dinámico predice la transición con más economía que el modelo reduccionista o el holista.
 
-### Reconstrucción propuesta
+## 3. La especie
 
-Un ecosistema se entiende mejor como una red material de interacciones entre:
+### 3.1. Recorte heredado
 
-- organismos;
-- clima;
-- suelo;
-- agua;
-- energía;
-- nutrientes;
-- perturbaciones históricas;
-- actividad humana.
+La especie como categoría taxonómica básica, a veces tratada como esencia, a veces como mera convención clasificatoria.
 
-### Consecuencia
+### 3.2. Hipótesis de auditoría
 
-El ecosistema no es una sustancia separada, pero tampoco se deja reducir a inventario de organismos aislados. Es una organización material-relacional multivariable.
+La especie es patrón histórico-biológico estabilizado por reproducción, descendencia, variación y selección bajo restricciones ambientales. No es esencia inmóvil ni convención libre.
 
-## 4. Qué enseña este dominio sobre los niveles
+### 3.3. Variables candidatas
 
-La misma realidad puede ser tratada en distintas resoluciones:
+- distribución de fenotipos;
+- estructura genética poblacional;
+- redes de interacción reproductiva;
+- distribución espacial;
+- historia evolutiva.
 
-- moléculas;
-- orgánulos;
-- células;
-- tejidos;
-- organismos;
-- poblaciones;
-- ecosistemas.
+### 3.4. Compresión y expansión
 
-La tesis no dice que uno de estos niveles sea el único verdadero. Dice que cada uno debe justificarse por la estructura que conserva para una pregunta dada.
+- compresión legítima: tratar la especie como unidad en modelos ecológicos cuando la pregunta es interacción entre poblaciones;
+- expansión necesaria: abrir la especie en variación intraespecífica, plasticidad fenotípica, microbioma cuando la pregunta es adaptación local.
 
-## 5. Ejemplo de compresión legítima
+### 3.5. Rival principal
 
-En un modelo ecológico amplio, tratar a una especie como unidad puede ser razonable.
+Esencialismo de especies y nominalismo taxonómico. La tesis discrimina con realismo estructural moderado: las especies son atractores reales de poblaciones bajo restricciones de reproducción y selección, sin esencia.
 
-## 6. Ejemplo de expansión necesaria
+### 3.6. Criterio de elevación
 
-Si el fenómeno depende de variación intraespecífica, plasticidad fenotípica o microbioma, la compresión `especie` puede ser excesiva y debe abrirse.
+Construir caso donde la transición especiación se modele dinámicamente con bifurcación identificable en datos publicados.
 
-## 7. Qué evita la tesis en este dominio
+## 4. El ecosistema
 
-### Evita el esencialismo biológico
+### 4.1. Recorte heredado
 
-Porque categorías como especie, organismo o función no se toman como esencias inmóviles.
+A veces como entidad homogénea, a veces como suma de especies.
 
-### Evita el reduccionismo molecular
+### 4.2. Hipótesis de auditoría
 
-Porque la lista de moléculas no agota regulación, forma, función ni organización ecológica.
+El ecosistema es red material de interacciones entre organismos, clima, suelo, agua, energía, nutrientes, perturbaciones históricas y actividad humana. No es sustancia separada ni inventario aditivo.
 
-### Evita el holismo nebuloso
+### 4.3. Variables candidatas
 
-Porque la red ecológica no se invoca como totalidad mística, sino como conjunto de dependencias concretas y modelables.
+- abundancias poblacionales;
+- flujos energéticos;
+- ciclos biogeoquímicos;
+- estructura de interacciones tróficas;
+- variables climáticas;
+- impacto antropogénico.
 
-## 8. Valor probatorio para la tesis general
+### 4.4. Atractores y bifurcaciones
 
-Este dominio prueba que la propuesta puede:
+Estados estables del ecosistema bajo régimen climático y de perturbación; bifurcaciones (regime shifts) entre estados alternativos. La literatura sobre regime shifts en ecología (Scheffer y colegas) es donde el caso programático puede elevarse a demostrativo más fácilmente.
+
+### 4.5. Rival principal
+
+Holismo ecológico inflado (Gaia como sustancia) y reduccionismo poblacional (solo especies aisladas). La tesis discrimina con red de hipergrafos que captura acoplamientos múltiples.
+
+### 4.6. Criterio de elevación
+
+Adoptar caso publicado de regime shift (lake eutrophication, coral reef bleaching, savana-bosque) y mostrar que el modelo dinámico hipergrafo discrimina contra rivales con datos cuantitativos.
+
+## 5. Qué enseña este dominio sobre los niveles
+
+La misma realidad puede tratarse en distintas resoluciones:
+
+- moléculas → orgánulos → células → tejidos → organismos → poblaciones → comunidades → ecosistemas → biomas.
+
+La tesis no privilegia ninguno como único verdadero. Cada nivel se justifica por la estructura que conserva para una pregunta dada. El criterio de cambio de escala (capítulo 03-02 §6) opera con precisión en este dominio.
+
+## 6. Qué evita el marco en este dominio
+
+| Tentación | Razón del rechazo |
+|---|---|
+| Esencialismo biológico | Categorías como especie o función no son esencias inmóviles |
+| Reduccionismo molecular | La lista de moléculas no agota regulación, forma, función o organización ecológica |
+| Holismo nebuloso | La red ecológica no es totalidad mística; es conjunto de dependencias modelables |
+| Vitalismo | No requiere fuerza vital adicional; self-organization explica organización |
+
+## 7. Diálogo con interlocutores
+
+### 7.1. Nicholson y Dupré — biología procesual
+
+Defienden que la unidad biológica básica es proceso, no cosa. La tesis lo recoge: organismo como atractor procesual.
+
+### 7.2. Evelyn Fox Keller — organización biológica
+
+Plantea los límites del reduccionismo lineal y la complejidad de la organización biológica. La tesis converge en el énfasis en organización.
+
+### 7.3. Bechtel y Craver — mecanicismo en biología
+
+El mecanicismo multinivel es aliado natural en biología. La tesis se inscribe en su tradición con el filtro adicional de dossier.
+
+### 7.4. Maturana y Varela — autopoiesis
+
+La autopoiesis se reformula como cuenca de atracción persistente bajo perturbación con tolerancia explícita.
+
+### 7.5. Scheffer y colegas — regime shifts
+
+Aliados empíricos: muestran cómo identificar bifurcaciones ecológicas con datos. El caso programático de ecosistemas se elevaría con su trabajo como base.
+
+## 8. Lo que este capítulo devuelve a la tesis general
+
+Demuestra que el marco puede:
 
 - defender materialidad sin fisicalismo estrecho;
 - sostener niveles sin mundos independientes;
-- explicar identidad como continuidad organizada;
-- justificar el uso alternado de compresión y expansión.
+- explicar identidad como continuidad organizada bajo recambio;
+- justificar uso alternado de compresión y expansión según pregunta.
 
-## Fórmula final del caso
+Y articula explícitamente que la elevación a modo demostrativo está al alcance: la literatura de regime shifts ecológicos y de modelos dinámicos en biología regulatoria ofrece material publicado para construir dossiers completos.
 
-> lo vivo no obliga a abandonar el monismo material, pero sí obliga a enriquecerlo con organización, dependencia y multiescalaridad; la biología y la ecología muestran que la realidad material solo se vuelve inteligible cuando se modelan las relaciones que la estabilizan.
+## 9. Limitación honesta
+
+Este capítulo conjetura. La elevación a modo demostrativo requiere adoptar un caso específico publicado con datos cuantitativos y construir el dossier completo. El programa posterior se prioriza en capítulo 06-03.
+
+## 10. Lectura cruzada
+
+- ontología y patrones estabilizados: capítulo 02-01;
+- aparato formal: capítulo 03-01;
+- criterios de admisión: capítulo 03-02 y 05-00;
+- caso ancla canónico: capítulo 05-05;
+- biología y filosofía de la ciencia: capítulo 07 (Dupré, Nicholson, Mitchell).
+
+## 11. Cierre
+
+> Lo vivo no obliga a abandonar el monismo material; obliga a enriquecerlo con organización, dependencia y multiescalaridad. La biología y la ecología muestran que la realidad material solo se vuelve inteligible cuando se modelan los acoplamientos dinámicos que la estabilizan. La conjetura del marco es elevable; el trabajo demostrativo es posterior.

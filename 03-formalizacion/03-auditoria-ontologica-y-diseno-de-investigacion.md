@@ -1,166 +1,263 @@
 # Auditoría ontológica y diseño de investigación
 
-## De tesis filosófica a programa de trabajo
+## Función de este capítulo
 
-Una de las virtudes potenciales del proyecto es que puede funcionar como un programa de investigación, no solo como una posición doctrinal. Para lograrlo, la tesis debe ofrecer un protocolo de uso.
+Este capítulo convierte el aparato formal (03-01) y los criterios de legitimidad (03-02) en un protocolo replicable: la auditoría ontológica. La auditoría no es ejercicio retórico ni reflexión filosófica acerca de categorías; es procedimiento ejecutable por terceros que produce diagnóstico y decisión con trazabilidad. El capítulo cierra cuando un investigador externo puede tomar el protocolo y aplicarlo a un caso nuevo sin depender del autor original.
 
-## Qué es una auditoría ontológica
+## Tesis del capítulo
 
-Una auditoría ontológica es el examen sistemático de una categoría, entidad o nivel para determinar:
+> La auditoría ontológica es un protocolo de nueve fases que examina cualquier categoría candidata bajo el filtro del dossier de anclaje y produce decisión trazable. Su criterio de cierre no es la satisfacción del autor sino la replicabilidad por tercero competente. Sin esta auditoría, la tesis sigue siendo programa filosófico; con ella, se convierte en programa de investigación reproducible.
 
-- qué sustrato material la sostiene;
-- qué relaciones la organizan;
-- qué patrón comprime;
-- qué pierde y qué gana su uso;
-- si está siendo reificada indebidamente.
+## 1. Qué es una auditoría ontológica
 
-## Preguntas básicas de auditoría
+> Una auditoría ontológica es el examen sistemático de una categoría, entidad, propiedad o nivel mediante el aparato formal y los criterios de legitimidad, con el fin de determinar su admisión, reformulación o retiro respecto a una pregunta `Q` con tolerancia explícita.
 
-Ante cualquier concepto `C`, conviene formular al menos estas preguntas:
+La auditoría se aplica a cualquier candidato: una categoría heredada (`mente`, `mercado`, `especie`), una unidad teórica propuesta (`atractor de integración corporal`, `módulo funcional X`), una clase modelística (`memoria de trabajo`), una entidad institucional (`Estado`).
 
-1. ¿Qué fenómeno pretende capturar?
-2. ¿Qué sustrato material lo instancia?
-3. ¿Qué variables lo componen?
-4. ¿Qué relaciones lo sostienen?
-5. ¿Qué nivel de análisis exige?
-6. ¿Qué evidencia lo apoya?
-7. ¿Qué predicciones permite?
-8. ¿Qué intervenciones orienta?
-9. ¿Qué se pierde si desaparece del modelo?
-10. ¿Qué se gana si se lo reemplaza por una estructura más fina?
+## 2. Preguntas básicas de auditoría
 
-## Secuencia operativa completa
+Ante cualquier concepto C, la auditoría plantea diez preguntas estandarizadas:
+
+1. ¿qué fenómeno pretende capturar?
+2. ¿qué sustrato material lo instancia?
+3. ¿qué variables lo componen?
+4. ¿qué relaciones lo sostienen?
+5. ¿qué nivel de análisis exige?
+6. ¿qué evidencia lo apoya?
+7. ¿qué predicciones permite?
+8. ¿qué intervenciones orienta?
+9. ¿qué se pierde si desaparece del modelo?
+10. ¿qué se gana si se lo reemplaza por una estructura más fina?
+
+Las respuestas se registran en el dossier de anclaje (capítulo 03-02 §3).
+
+## 3. Protocolo de nueve fases
 
 ### Fase 1. Detección del recorte heredado
 
-Identificar el concepto que ya opera en el lenguaje ordinario o en una disciplina.
+Identificar la categoría que ya opera en el lenguaje ordinario o disciplinar. Documentar contextos de uso, sinónimos cercanos, autores principales que la trabajan.
 
 ### Fase 2. Desustancialización inicial
 
-Suspender la suposición de que ese concepto designa automáticamente una entidad simple.
+Suspender la suposición de que C designa automáticamente una entidad simple. Tratar C como hipótesis de patrón estabilizado a verificar.
 
 ### Fase 3. Reconstrucción material
 
-Buscar soportes, procesos, mecanismos, infraestructuras o prácticas que materialicen el fenómeno.
+Buscar soportes, procesos, mecanismos, infraestructuras o prácticas que materialicen el fenómeno bajo C. Si no se encuentra ninguno, C es candidato a categoría sin anclaje y debe declararse como tal.
 
 ### Fase 4. Modelización basal
 
-Levantar variables, estados y dependencias iniciales.
+Aplicar μ y construir G = (V, E, W, T) sobre las variables identificadas en la Fase 3. Cada arista pasa criterio de admisión del capítulo 03-01 §4.3.
 
-### Fase 5. Detección de patrones
+### Fase 5. Detección de patrones de orden superior
 
-Buscar módulos, ciclos, acoplamientos, cuellos de botella, jerarquías o ensamblajes.
+Buscar módulos, ciclos, acoplamientos, cuellos de botella, jerarquías o ensamblajes. Si los hay, construir H. Si las dependencias son binarias, no se postula H.
 
 ### Fase 6. Ensayo de compresión
 
-Agrupar subestructuras en unidades de trabajo cuando ello mejore la inteligibilidad.
+Aplicar κ con procedimiento empírico del capítulo 03-04. Identificar dimensionalidad efectiva y atractores empíricos del sistema reducido.
 
 ### Fase 7. Ensayo de expansión
 
-Abrir las compresiones cuando haya sospecha de ocultamiento relevante.
+Si la compresión falla en alguna prueba de validación, aplicar ε en la subestructura responsable. Iterar hasta admisión o declaración de límite.
 
 ### Fase 8. Evaluación comparativa
 
-Comparar el rendimiento del nuevo modelo con otras formas de recorte.
+Comparar el rendimiento del recorte material-relacional bajo el aparato contra al menos un rival explícito. Producir tabla de discriminación según método del capítulo 03-02 §9.
 
 ### Fase 9. Decisión ontológica local
 
-Decidir si la entidad debe tratarse como:
+Decidir el estatuto final de C respecto a Q:
 
-- patrón estable;
-- función;
-- clase;
-- convención útil;
-- etiqueta a revisar o abandonar.
+- **patrón estabilizado admisible**: C se admite como compresión legítima, entra en S como categoría revisada;
+- **función dependiente**: C designa función en un sistema más amplio, admisible como tal;
+- **clase teórica**: C es construcción teórica útil bajo Q sin atractor empírico directo, admisible como categoría con anclaje teórico;
+- **convención práctica**: C funciona como rótulo comunicativo sin pretensión ontológica, admisible con marca explícita de uso convencional;
+- **etiqueta a revisar**: C tiene contenido pero su formulación actual es defectuosa, requiere reformulación;
+- **etiqueta a abandonar**: C no satisface ningún criterio bajo ninguna Q razonable.
 
-## Diseño de investigación para esta tesis
+La decisión se documenta con justificación trazable a las fases anteriores.
 
-La manera más adecuada de desarrollar el proyecto completo es una combinación de:
+## 4. Diseño de investigación para la tesis
 
-1. **análisis conceptual riguroso**;
-2. **comparación filosófica con posiciones rivales**;
-3. **estudios de caso estratégicos**.
+### 4.1. Combinación metodológica obligatoria
 
-## Por qué esta combinación funciona
+La tesis requiere tres tipos de trabajo simultáneos:
 
-### Análisis conceptual
+- **análisis conceptual riguroso**: limpieza de vocabulario, definiciones de trabajo, separación de niveles;
+- **comparación filosófica con posiciones rivales**: discriminación bajo criterios públicos, no contraste retórico;
+- **estudios de caso estratégicos**: caso ancla canónico (modo demostrativo) y dominios adicionales (modo programático con criterios de elevación).
 
-Permite limpiar vocabulario, separar niveles y fijar definiciones.
+### 4.2. Por qué esta combinación funciona
 
-### Comparación filosófica
+| Trabajo | Función |
+|---|---|
+| Análisis conceptual | Permite limpiar vocabulario, separar niveles, fijar definiciones operativas |
+| Comparación filosófica | Permite mostrar que la tesis no es intuición aislada sino intervención en debates reales con discriminación verificable |
+| Estudios de caso | Permiten demostrar que la tesis produce rendimiento explicativo efectivo respecto a rivales explícitos |
 
-Permite mostrar que la tesis no es una intuición aislada sino una intervención en debates reales.
+Sin alguna de las tres patas, el manuscrito es incompleto: análisis sin comparación es solipsismo; comparación sin caso es académicamente vacía; caso sin análisis es ad hoc.
 
-### Estudios de caso
+## 5. Cómo seleccionar casos
 
-Permiten demostrar que la tesis produce rendimiento explicativo efectivo.
+Un caso vale la pena si cumple cuatro condiciones:
 
-## Cómo seleccionar casos de estudio
+1. usa categorías muy naturalizadas (susceptibles de auditoría);
+2. exige paso entre escalas (probará la operación de κ y ε);
+3. muestra claramente la diferencia entre reificación y compresión legítima;
+4. admite construcción de dossier de anclaje completo o programático con criterio de elevación explícito.
 
-Un caso vale la pena si cumple al menos tres condiciones:
+Un caso que no cumple las cuatro queda fuera del manuscrito o se incluye con marca de incompletud.
 
-1. usa categorías muy naturalizadas;
-2. exige paso entre escalas;
-3. muestra claramente la diferencia entre reificación y compresión legítima.
+## 6. Casos del manuscrito
 
-## Casos propuestos
+### 6.1. Caso ancla canónico (modo demostrativo)
 
-### Caso 1. Mente, memoria y yo
+**Behavioral dynamics** (Warren 2006): tareas de raqueteo, equilibrio, frenado, locomoción. Datos públicos, ecuaciones ajustadas, predicciones cumplidas, intervenciones documentadas. Dossier completo en capítulo 05-05.
 
-Sirve para mostrar cómo una categoría psicológica puede descomponerse sin ser eliminada.
+### 6.2. Casos en modo programático
 
-### Caso 2. Célula, organismo y ecosistema
+| Caso | Por qué es candidato | Criterio de elevación a demostrativo |
+|---|---|---|
+| Mente, memoria, yo | Categorías altamente reificadas, exigen multiescalaridad | Construcción de tareas con datos cuantitativos donde atractores conductuales discriminen contra cognitivismo |
+| Biología y ecología | Multiescalaridad biológica clásica, organización procesual | Identificación de atractores de regulación con bifurcaciones empíricas en datos publicados |
+| Sistemas técnicos distribuidos | Compresión y expansión muy claras, intervención cotidiana | Construcción de modelo dinámico cuantitativo de sistema distribuido con predicción de fallo verificable |
+| Instituciones, mercado, Estado | Espesor normativo e histórico, riesgo de hipóstasis | Identificación de atractores institucionales con bifurcaciones (crisis, refundación) y predicción discriminante contra individualismo o holismo |
 
-Sirve para mostrar multiescalaridad biológica sin multiplicación de sustancias.
+Estos casos se desarrollan en capítulos 05-01 a 05-04 con marca explícita de modo programático y dossier parcial.
 
-### Caso 3. Servicio técnico y sistema distribuido
+## 7. Indicadores de éxito del programa
 
-Sirve para mostrar cómo una unidad operativa puede ser real sin ser simple.
+El proyecto está metodológicamente bien armado si logra:
 
-### Caso 4. Institución, mercado y Estado
+- usar la misma matriz en dominios heterogéneos sin variación arbitraria de criterios;
+- producir distinciones nuevas y no triviales en al menos un dominio;
+- justificar cuándo cambia de escala con regla pública;
+- evitar reificaciones sin caer en nominalismo en cada dominio examinado;
+- mostrar al menos una aplicación demostrativa donde la teoría mejora respecto a rivales con datos públicos.
 
-Sirve para mostrar patrones materialmente sostenidos que no se reducen ni a individuos aislados ni a entes trascendentes.
+El manuscrito actual cumple los cinco indicadores: el caso ancla canónico cumple el último explícitamente; los criterios y la auditoría cumplen los cuatro primeros estructuralmente.
 
-## Qué tipo de resultado debe producir cada caso
-
-Cada aplicación debe entregar cinco resultados mínimos:
-
-1. una categoría inicialmente heredada;
-2. una reconstrucción material-relacional;
-3. una propuesta de compresión o expansión;
-4. una comparación con lecturas rivales;
-5. una conclusión sobre legitimidad y límites.
-
-## Indicadores de éxito del programa
-
-El proyecto estará metodológicamente bien armado si logra:
-
-- usar la misma matriz en dominios heterogéneos;
-- producir distinciones nuevas y no triviales;
-- justificar cuándo cambia de escala;
-- evitar reificaciones sin caer en nominalismo;
-- mostrar aplicaciones donde la teoría realmente mejora el análisis.
-
-## Riesgos del diseño
+## 8. Riesgos del diseño
 
 ### Riesgo 1. Convertir todos los casos en meras ilustraciones
 
-Hay que evitar que los casos solo repitan la tesis. Deben ponerla a prueba.
+Hay que evitar que los casos solo repitan la tesis. Deben ponerla a prueba. Antídoto: cada caso programático lleva criterio explícito de fallo (qué resultado lo desautorizaría) además de criterio de elevación.
 
 ### Riesgo 2. Elegir casos demasiado fáciles
 
-Si solo se escogen ejemplos donde la conclusión ya parece obvia, la tesis no gana fuerza.
+Si solo se escogen ejemplos donde la conclusión ya parece obvia, la tesis no gana fuerza. Antídoto: el caso ancla canónico se eligió porque enfrenta directamente al rival más fuerte (modelos internos / control óptimo) en su mejor terreno.
 
 ### Riesgo 3. Perder el hilo común
 
-Cada caso debe devolver algo al marco general y no quedar como miniensayo aislado.
+Cada caso debe devolver algo al marco general. Antídoto: cada capítulo de aplicaciones cierra con sección `Lo que este caso devuelve a la tesis general` que articula el aporte específico al marco.
 
-## Resultado metodológico final
+### Riesgo 4. Hipertrofia de la auditoría
 
-Con esta auditoría ontológica, la tesis puede presentarse no solo como respuesta a una pregunta metafísica, sino como una técnica filosófica para examinar conceptos complejos.
+La auditoría puede convertirse en burocracia que ahoga al fenómeno. Antídoto: cuando una auditoría se vuelve más larga que el fenómeno examinado, se reescribe.
 
-## Fórmula de cierre
+## 9. Plantilla operativa del dossier
 
-> la filosofía propuesta no pregunta solo qué existe; pregunta también cómo debemos recortar lo existente para no convertir un nombre útil en una sustancia imaginaria ni una complejidad real en una niebla conceptual.
+Para investigador externo que aplique el protocolo a un caso nuevo:
 
-Ahí está el corazón metodológico del proyecto.
+```markdown
+# Dossier de anclaje: [Nombre del caso]
+
+## 1. Pregunta Q
+- Formulación φ:
+- Tolerancia τ:
+- Régimen R:
+- Fecha de fijación:
+
+## 2. Variables X
+- Observables:
+- Inferidas:
+- Régimen de medición:
+
+## 3. Sustrato material instanciante
+[Descripción explícita]
+
+## 4. Grafo G = (V, E, W, T)
+[Estructura, criterios de admisión de aristas]
+
+## 5. Hipergrafo H (si procede)
+[Justificación]
+
+## 6. Compresión κ propuesta
+- Dimensionalidad efectiva d:
+- Forma funcional del sistema reducido:
+- Parámetros y unidades:
+
+## 7. Topología dinámica
+- Atractores:
+- Repulsores:
+- Bifurcaciones:
+
+## 8. Validación
+- Reproducción (varianza explicada, error medio):
+- Generalización (condiciones no usadas para ajuste):
+- Topología (preservación de atractores y bifurcaciones):
+- Intervención (predicciones cumplidas o falladas):
+
+## 9. Predicción discriminante
+[Predicción específica que un rival no produce o produce peor]
+
+## 10. Intervención discriminante
+[Experimento que falsaría la propuesta]
+
+## 11. Operador ε
+[Protocolo de reapertura para regiones límite]
+
+## 12. Traducción B↔L3
+- Cada parámetro de L3 → variable de B
+- Cada categoría de S → atractor de B
+
+## 13. Limitaciones declaradas
+[Régimen donde el modelo no se aplica]
+
+## 14. Comparación rival
+| Criterio | Modelo propuesto | Rival 1 | Rival 2 |
+|---|---|---|---|
+[...]
+```
+
+Esta plantilla se aplica al caso ancla canónico (capítulo 05-05) y se aplica parcialmente, marcada como tal, a los casos programáticos.
+
+## 10. Diálogo con interlocutores
+
+### 10.1. Bunge — método científico riguroso
+
+Bunge formula la investigación como ciclo entre problema, hipótesis, contrastación, teoría, aplicación. La auditoría ontológica es esa estructura aplicada a categorías filosóficas y científicas. Bunge queda como referente metodológico principal de este capítulo.
+
+### 10.2. Bechtel — descomposición funcional
+
+Bechtel articula la descomposición funcional en mecanismos como método de explicación multinivel. La auditoría incorpora la descomposición pero la disciplina con el filtro del dossier: no toda descomposición funcional es admisible; debe pasar la batería de criterios.
+
+### 10.3. Craver — niveles mecanicistas
+
+Craver fija criterios para identificar niveles mecanicistas relevantes. La auditoría los incorpora en Fase 5 (detección de patrones de orden superior) y Fase 6 (ensayo de compresión).
+
+### 10.4. Mitchell — pluralismo integrativo
+
+Mitchell defiende coexistencia de modelos parciales para fenómenos complejos. La auditoría la admite con condición: cada modelo parcial debe llevar dossier con su Q específica. Pluralismo no es mezcla; es articulación bajo criterios.
+
+### 10.5. Ladyman y Ross — realismo estructural
+
+Ladyman y Ross sugieren tomar la estructura como ontología fundamental. La auditoría adopta estructura como objeto del análisis, pero se compromete con sustrato material como ontología base: la estructura es estructura **del** sustrato, no estructura sin sustrato.
+
+## 11. Resultado metodológico
+
+Con esta auditoría, la tesis se presenta no solo como respuesta a una pregunta metafísica sino como técnica filosófica para examinar conceptos complejos. El protocolo es explícito, replicable y sometido a criterios de fallo. Eso es lo que separa un programa de investigación de una posición doctrinal.
+
+## 12. Cierre
+
+> La filosofía propuesta no pregunta solo qué existe; pregunta también cómo recortar lo existente sin convertir un nombre útil en sustancia imaginaria ni una complejidad real en niebla conceptual. La auditoría ontológica es la técnica que ejecuta esa exigencia con trazabilidad pública.
+
+## 13. Lectura cruzada
+
+- aparato formal que la auditoría usa: capítulo 03-01;
+- criterios y dossier que la auditoría aplica: capítulo 03-02;
+- procedimiento empírico de κ que la auditoría invoca: capítulo 03-04;
+- caso donde la auditoría se aplica completa: capítulo 05-05;
+- casos donde la auditoría se aplica parcialmente: capítulos 05-01 a 05-04;
+- objeciones que la auditoría neutraliza: capítulo 04-02.

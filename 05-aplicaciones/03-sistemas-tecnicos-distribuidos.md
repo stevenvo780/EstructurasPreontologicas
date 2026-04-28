@@ -1,97 +1,135 @@
-# Aplicación 3. Sistemas técnicos y servicios distribuidos
+# Sistemas técnicos distribuidos
 
-## Por qué este caso es especialmente útil
+## MODO PROGRAMÁTICO
 
-Los sistemas técnicos muestran de manera casi pedagógica que una unidad operativa puede ser real sin ser simple. Además, permiten observar con claridad cuándo conviene comprimir y cuándo conviene expandir.
+Aplicación en **modo programático** según el capítulo 05-00. La presentación del fenómeno es robusta y el aparato se opera con claridad pedagógica, pero falta el modelo dinámico cuantitativo con datos públicos que eleve el caso a demostrativo.
+
+## Función de este capítulo
+
+Los sistemas técnicos distribuidos muestran de manera casi pedagógica que una unidad operativa puede ser real sin ser simple, y permiten observar con claridad cuándo conviene comprimir y cuándo conviene expandir. El dominio es atractivo para la tesis porque la práctica de operación de servicios ya implementa, sin nombrarla así, una forma de auditoría ontológica. Lo que falta es el caso demostrativo formal.
+
+## Conjetura del capítulo
+
+> Los sistemas técnicos distribuidos son patrones materialmente sostenidos cuya disponibilidad, latencia y modos de fallo se modelan dinámicamente con acoplamientos múltiples. La conjetura es que el aparato del marco mejora el diagnóstico y la predicción de fallo respecto a vistas estáticas (arquitectura como diagrama) o reduccionistas (todo es hardware). La elevación a demostrativo requiere caso específico con datos de telemetría públicos y modelo dinámico cuantitativo.
 
 ## 1. La categoría `servicio`
 
-### Recorte heredado
+### 1.1. Recorte heredado
 
-En la práctica cotidiana se dice: `el servicio está arriba`, `el servicio cayó`, `el servicio responde lento`.
+En la práctica cotidiana se dice `el servicio está arriba`, `el servicio cayó`, `el servicio responde lento`.
 
-### Problema
+### 1.2. Hipótesis de auditoría
 
-Esa categoría funciona muy bien para operar a alto nivel, pero puede ocultar demasiadas subestructuras si se la toma como bloque indiviso.
+`Servicio` es compresión operativa legítima cuando la pregunta es disponibilidad global, arquitectura, frontera funcional, responsabilidad organizativa. Es compresión que oculta cuando la pregunta es diagnóstico fino. La regla del capítulo 03-02 (compresión cuando el detalle no cambia inferencia, expansión cuando sí) opera con claridad.
 
-### Reconstrucción material-relacional
+### 1.3. Reconstrucción material
 
-Un servicio distribuido depende de una coordinación material entre, por ejemplo:
+Un servicio depende de:
 
-- procesos;
-- red;
-- rutas;
-- DNS;
-- certificados;
-- balanceadores;
-- almacenamiento;
-- bases de datos;
-- colas;
-- permisos;
-- configuración;
-- despliegues;
-- monitoreo;
-- usuarios;
+- procesos en máquinas;
+- red entre máquinas;
+- rutas y DNS;
+- certificados TLS;
+- balanceadores de carga;
+- almacenamiento (bases de datos, colas);
+- autenticación y autorización;
+- configuración y despliegues;
+- monitoreo y observabilidad;
+- usuarios y patrones de tráfico;
 - dependencias externas.
 
-## 2. Qué hace la tesis aquí
+### 1.4. Variables candidatas (X)
 
-La tesis afirma que `servicio` es una **compresión operativa legítima** cuando la pregunta es global: disponibilidad, arquitectura general, frontera funcional o responsabilidad organizativa.
+- latencia (p50, p99) por endpoint;
+- throughput;
+- error rate por tipo;
+- saturación de recursos (CPU, memoria, IO, red);
+- profundidad de cola;
+- validez de certificados;
+- tiempo de resolución DNS;
+- estado de despliegues recientes.
 
-Pero la misma categoría debe expandirse cuando la pregunta exige diagnóstico fino.
+### 1.5. Atractores conjeturados
 
-## 3. Ejemplo de expansión
+- estado estable de operación nominal con latencia y error rate dentro de SLO;
+- estados degradados (latencia elevada pero servicio funcional);
+- estado de fallo total (servicio caído).
 
-Si el servicio falla, la categoría comprimida deja de ser suficiente. Entonces hay que preguntar:
+### 1.6. Bifurcaciones
 
-- ¿falló DNS?
-- ¿falló TLS?
-- ¿falló persistencia?
-- ¿falló red?
-- ¿falló autenticación?
-- ¿falló una dependencia externa?
-- ¿falló el despliegue?
+- transiciones entre estados (saturación cascada, fallo de dependencia, expiración de certificado);
+- regímenes biestables donde pequeñas perturbaciones empujan al sistema entre operación y degradación.
 
-Aquí la expansión no es caprichosa: la exige el fenómeno.
+### 1.7. Compresión y expansión en la práctica
 
-## 4. Qué enseña esto sobre ontología aplicada
+- compresión legítima al describir arquitectura general: `el servicio sirve requests`;
+- expansión necesaria al diagnosticar fallo: `¿falló DNS, TLS, persistencia, autenticación, dependencia externa, despliegue, configuración, capacidad?`;
+- la práctica de incident response implementa esta dialéctica.
 
-El `servicio` no es una ficción. Es real como patrón de coordinación estable, reconocible, intervenible y funcional. Pero no es una sustancia simple. Es una unidad comprimida, reversible y dependiente de múltiples soportes.
+## 2. Hipergrafo de dependencias
 
-## 5. Qué enseña sobre epistemología
+Los sistemas distribuidos requieren H, no solo G binario. Razones:
 
-Este caso muestra muy bien la regla de oro del proyecto:
+- fallos cascada involucran múltiples servicios simultáneamente;
+- restricciones de capacidad afectan conjuntos de operaciones;
+- timeouts y retry policies acoplan dinámicas no binarias.
 
-> comprimir cuando el detalle interno no cambia la inferencia buscada; expandir cuando sí la cambia.
+La modelización con hipergrafo permite representar grupos de servicios que comparten infraestructura, cuyas fallas se correlacionan no por dependencia directa sino por restricción global compartida.
 
-## 6. Qué evita la tesis en este dominio
+## 3. Rival principal
 
-### Evita el reificado técnico
+Vistas estáticas de arquitectura (diagramas de servicios sin dinámica) y aproximaciones físicalistas absurdas (todo es electrones, transistores). Ninguna captura la dinámica acoplada que produce los fallos reales.
 
-No trata `la plataforma`, `la app` o `el backend` como si fueran cosas simples por el hecho de nombrarlas así.
+## 4. Criterio de elevación a demostrativo
 
-### Evita el reduccionismo físico absurdo
+Adoptar caso publicado o construible con datos:
 
-Nadie diagnostica una caída de producción describiendo electrones o transistores. La tesis explica por qué eso sería una mala escala de inteligibilidad.
+- telemetría completa (logs, métricas, traces) de servicio distribuido durante un incidente;
+- ajuste de modelo dinámico de bajo orden sobre indicadores clave;
+- predicción de cascada con respecto a tiempo de respuesta;
+- intervención discriminante: estrategia de circuit breaker con parámetros derivados del modelo dinámico contra estrategia ad hoc.
 
-### Evita el formalismo arquitectónico vacío
+Candidatos: SRE journals con post-mortems publicados, datasets de Google Borg, traces de Microsoft Azure publicados con permisos.
 
-Los diagramas técnicos solo valen si siguen dependencias reales y ayudan a intervenir sobre el sistema.
+## 5. Qué evita el marco en este dominio
 
-## 7. Valor filosófico del caso
+| Tentación | Razón |
+|---|---|
+| Reificado técnico | No tratar `la plataforma`, `la app` o `el backend` como cosas simples |
+| Reduccionismo físico absurdo | Nadie diagnostica caída de producción describiendo electrones |
+| Diagramas estáticos sin dinámica | Las arquitecturas no operan en estado estático; viven dinámica |
+| Modelado solo de happy path | Los fallos en sistemas distribuidos son cualitativos, no cuantitativos lineales |
 
-Este caso es poderoso porque muestra, sin niebla metafísica, cómo una entidad puede ser:
+## 6. Diálogo con interlocutores
 
-- materialmente real;
-- estructuralmente distribuida;
-- funcionalmente estable;
-- semánticamente comprimida;
-- metodológicamente expandible.
+### 6.1. Simondon — modo de existencia de los objetos técnicos
 
-## 8. Resultado para la tesis general
+Simondon ofrece la categoría de individuación técnica y de objetos técnicos como concretizaciones de tendencias. La tesis lo opera: un servicio es individuación técnica cuya identidad depende de su funcionamiento sostenido en red.
 
-El ejemplo técnico permite ver que la propuesta no es solo una filosofía abstracta de la mente o del lenguaje. Es una teoría general de unidades complejas ancladas en sustratos materiales y organizadas por dependencias multiescala.
+### 6.2. Latour — actantes y redes
 
-## Fórmula final del caso
+Latour insiste en redes con humanos y no-humanos. La tesis aplica: los componentes técnicos son actantes que entran en `V` si pasan filtro de admisión.
 
-> un servicio distribuido existe como patrón operativo, no como bloque autosuficiente; su realidad está en la coordinación material de procesos y dependencias, y su inteligibilidad depende del nivel en que se formule la pregunta.
+### 6.3. SRE / práctica de operaciones (Beyer y colegas)
+
+Los principios de Site Reliability Engineering (definir SLO, error budgets, circuit breakers, blast radius limitation) son implementación informal de la auditoría ontológica del marco. La tesis los recoge como inspiración técnica.
+
+## 7. Lo que este capítulo devuelve a la tesis general
+
+Este caso es valioso pedagógicamente: muestra con claridad mínima de filosofía cómo opera la dialéctica compresión / expansión y por qué el modelo dinámico es preferible al diagrama estático. El servicio es real como patrón operativo, no como bloque autosuficiente; es nodo comprimido reabrible en hipergrafo de dependencias. La traducción al aparato es directa.
+
+## 8. Limitación honesta
+
+Este capítulo articula la conjetura con claridad, pero falta el modelo dinámico cuantitativo con datos públicos que eleve a demostrativo. La elevación es plausible y se prioriza en hoja de ruta.
+
+## 9. Lectura cruzada
+
+- ontología y compresión: capítulo 02-01 y 02-02;
+- aparato formal con hipergrafos: capítulo 03-01;
+- procedimiento empírico de κ: capítulo 03-04;
+- caso ancla canónico: capítulo 05-05;
+- bibliografía técnica e interlocutores: capítulo 07.
+
+## 10. Cierre
+
+> Un servicio distribuido existe como patrón operativo, no como bloque autosuficiente. Su realidad está en la coordinación material de procesos y dependencias; su inteligibilidad depende del nivel en que se formule la pregunta. La elevación a modo demostrativo requiere construir el dossier con datos cuantitativos. El programa de extensión está articulado.

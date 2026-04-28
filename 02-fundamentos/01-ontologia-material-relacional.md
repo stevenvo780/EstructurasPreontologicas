@@ -1,204 +1,187 @@
 # Ontología material-relacional
 
-## Tesis ontológica mínima
+## Función de este capítulo
 
-La tesis se apoya en una afirmación de base:
+Este capítulo fija el suelo ontológico de la tesis: qué cuenta como existente, qué cuenta como entidad, qué cuenta como propiedad y qué se rechaza como inflación. Lo hace sin retórica de mobiliario y sin proliferación de planos. Su criterio rector es brutal: solo entra lo que el aparato del manuscrito puede luego operar y validar. Cualquier afirmación ontológica que no produzca consecuencia operacional en los capítulos siguientes se trata como literatura y se elimina.
 
-> todo fenómeno empíricamente explicable está materialmente instanciado, pero su unidad explicativa no siempre coincide con una sustancia simple o con un objeto aislado.
+## Tesis del capítulo
 
-Eso obliga a pensar la realidad en dos registros inseparables:
+> Existe un solo plano ontológico básico — sustrato material dinámico — sobre el cual se constituyen patrones estabilizados (atractores empíricos de sistemas dinámicos acoplados) que cuentan como entidades reales en sentido moderado. Las propiedades son disposiciones relacionales del sistema; la identidad es continuidad organizada bajo transformación; los niveles son registros descriptivos del mismo plano, no mundos separados. La ontología no multiplica sustancias y, simultáneamente, no empobrece la organización: es austera en sustancia y rica en relación, condicionada en cada paso por traducibilidad al nivel conductual-biológico (B) y por validación empírica.
 
-1. **sustrato material dinámico**;
-2. **patrones relacionales estabilizados** que se actualizan en ese sustrato.
+## 1. Lo que existe
 
-La clave está en que el segundo registro no añade una segunda sustancia. Añade una forma más precisa de describir cómo la materialidad se organiza.
+### 1.1. Sustrato material dinámico
 
-## Qué significa `material`
+El sustrato es el dominio efectivo de procesos, cuerpos, campos, energía, infraestructuras técnicas, organismos, prácticas materialmente sostenidas, soportes inscritos y trayectorias históricas. No es lista de partículas. No es metáfora. Es aquello que opera con independencia de cómo lo nombremos. Cuatro rasgos lo caracterizan:
 
-En esta tesis, `material` no equivale a una colección de partículas mudas ni a un fisicalismo reduccionista de baja resolución. `Material` significa, al menos, cuatro cosas:
+- **instanciación**: todo lo empíricamente explicable está realizado en alguna configuración material;
+- **dinamismo**: la materialidad es proceso, no inventario;
+- **multiescalaridad**: hay escalas, ritmos, umbrales y formas de estabilización;
+- **heterogeneidad organizada**: lo material incluye cuerpos, artefactos, signos inscritos, energía, prácticas, no como mezcla sino como diversidad articulada.
 
-### 1. Instanciación
+Esa caracterización no es estipulativa: cada rasgo se cumple en el caso ancla canónico (locomoción, frenado, equilibrio, raqueteo) y se cumple en cada dominio programático del capítulo 05.
 
-Nada empíricamente explicable puede flotar por fuera de condiciones de realización efectivas.
+### 1.2. Restricciones y dependencias reales
 
-### 2. Dinamismo
+El sustrato existe organizado por restricciones que no son sustancia separada pero tampoco son lingüísticas. Acoplamientos mecánicos, condiciones de posibilidad, dependencias causales, retroalimentaciones, constituciones funcionales, dependencias históricas y contextuales. Estas restricciones son el modo en que el sustrato se estabiliza en patrones reconocibles. Su identificación es empírica: se detectan por intervención y por covarianza condicional, no por intuición.
 
-La materialidad no se agota en cosas estáticas; incluye procesos, flujos, intercambios, trayectorias y transformaciones.
+## 2. Patrón estabilizado: definición técnica
 
-### 3. Multiescalaridad
+### 2.1. Por qué hace falta una definición técnica
 
-La realidad material no está organizada en una sola resolución. Hay escalas, ensamblajes, umbrales, ritmos y formas de estabilización.
+`Patrón` carga el peso ontológico central de la tesis. Si queda como sinónimo de regularidad, la tesis pierde tracción. La definición técnica no impone matemática gratuita: sigue la práctica que el caso ancla ya implementa.
 
-### 4. Heterogeneidad organizada
+### 2.2. Definición
 
-Lo material no es homogéneo: incluye cuerpos, artefactos, infraestructuras, organismos, signos inscritos, energía, memoria física, circuitos, prácticas y soportes.
+> Un patrón estabilizado es un atractor empíricamente identificable de un sistema dinámico acoplado, con cuenca de atracción medible y comportamiento bajo bifurcación caracterizable.
 
-## Monismo sin atomismo
+Cinco condiciones de admisión hacen operativa la definición:
 
-La tesis es monista porque no multiplica sustancias fundamentales. Pero no es atomista porque niega que el análisis correcto consista siempre en bajar hasta la parte más pequeña disponible.
+1. **Variables componentes** observables o inferidas con régimen de medición especificado;
+2. **Estabilidad asintótica**: las trayectorias del sistema convergen al patrón bajo perturbación acotada;
+3. **Cuenca de atracción**: rango de condiciones iniciales que conducen al patrón, identificado experimentalmente;
+4. **Comportamiento bajo bifurcación**: cómo el patrón aparece, se desestabiliza o se transforma cuando varían parámetros del sistema;
+5. **Discriminación inferencial**: el patrón produce predicciones o intervenciones que un rival explícito no produce o produce peor.
 
-Hay dos razones para ello:
+Una regularidad que no satisface las cinco condiciones no es patrón en el sentido del marco. Puede ser correlación, regularidad estadística o intuición de regularidad — pero no patrón ontológico.
 
-1. una descripción de microcomponentes puede ser verdadera y aun así no capturar la organización relevante;
-2. muchos fenómenos dependen de restricciones, acoplamientos y dependencias distribuidas que no aparecen bien descritas como suma local de elementos.
+### 2.3. Consecuencias
 
-Por eso la tesis adopta una fórmula precisa:
+- entidades como célula, organismo, servicio, institución se admiten como patrones si y solo si pasan las cinco condiciones para alguna pregunta `Q`;
+- categorías como `mente`, `memoria`, `mercado`, `Estado` se admiten como compresiones legítimas si pueden traducirse a patrones que pasan las cinco condiciones;
+- el realismo es estructural moderado: el atractor existe en el sustrato dinámico, pero su descripción depende del recorte de tarea y del régimen de medición.
 
-> ontológicamente austera, estructuralmente rica.
+## 3. Tipos de realidad
 
-## Qué existe en sentido fuerte
+La realidad no es plana. La tesis distingue cinco modos de realidad sin multiplicar mundos:
 
-La tesis distingue dos compromisos ontológicos básicos.
+| Modo | Definición | Ejemplo paradigmático |
+|---|---|---|
+| Fuerte | Procesos materiales con estabilidad e independencia de interés inmediato | cuerpos, campos, configuraciones físicas |
+| Estructural | Patrones de relaciones que organizan fenómenos | redes de regulación, arquitecturas de software, atractores de sistemas acoplados |
+| Funcional | Unidades definidas por su papel dentro de una organización | órganos, módulos, roles |
+| Institucional | Entidades sostenidas por prácticas, normas, soportes y reconocimiento | dinero, contrato, universidad, Estado |
+| Teórica | Entidades inferidas o modelizadas cuya legitimidad depende de captura de regularidades reales | clase estructural, variable latente, nodo comprimido |
 
-### A. Existe el sustrato material dinámico
+Estas distinciones no proliferan sustancias: distinguen modos de estabilización y de legitimación dentro del mismo sustrato. La tesis se compromete con la realidad fuerte y estructural; admite la funcional, institucional y teórica si y solo si se traducen a patrones estabilizados con dossier de anclaje.
 
-Esto incluye:
+## 4. Entidad, proceso, sistema
 
-- procesos físicos;
-- cuerpos;
-- campos;
-- energía;
-- configuraciones biológicas;
-- infraestructuras técnicas;
-- prácticas sociales materialmente sostenidas;
-- soportes de información;
-- trayectorias históricas inscritas en estructuras efectivas.
+La tesis rompe la falsa alternativa entre `cosa` y `flujo`:
 
-### B. Existen restricciones y dependencias reales
+- **objeto**: continuidad y delimitación robustas suficientes para tratar la unidad como compacta (piedra, herramienta, molécula);
+- **proceso**: identidad sostenida por dinámica más que por permanencia material (tormenta, llama, organismo en su metabolismo);
+- **sistema**: inteligibilidad dependiente de múltiples componentes y relaciones coordinadas (ecosistema, servicio distribuido, par agente–entorno).
 
-No como sustancia separada, sino como forma efectiva de organización del sustrato.
+No se elige una sola forma para todo. Se justifica la forma adecuada para cada fenómeno y cada pregunta. La justificación es operativa: la forma admisible es aquella que permite identificar el patrón estabilizado correspondiente sin redundancia.
 
-Esto significa que no todo lo real se deja capturar como lista de componentes. También hay:
+## 5. Propiedades como disposiciones relacionales
 
-- acoplamientos;
-- límites de posibilidad;
-- condiciones de estabilidad;
-- dependencias funcionales;
-- relaciones constitutivas;
-- circuitos de retroalimentación;
-- umbrales de reorganización.
+Una propiedad no es etiqueta pegada a una cosa. Es una disposición que se manifiesta bajo condiciones de interacción específicas. Tres consecuencias:
 
-## Entidad como patrón estabilizado
+- la fragilidad es relación entre estructura y fuerzas posibles, no contenido oculto;
+- la inteligencia es patrón de adaptación, inferencia y aprendizaje bajo condiciones, no sustancia interna;
+- la salud es organización funcional bajo rangos de operación y entorno, no esencia del organismo.
 
-La tesis redefine el concepto de entidad. Una entidad no es, en primer término, una cosa autosuficiente; es:
+La definición técnica: una propiedad es una disposición relacional materialmente anclada que altera las trayectorias del sistema acoplado bajo intervenciones específicas. Esto preserva el monismo material — la disposición está realizada — sin reducirla a etiqueta local.
 
-> una estabilización relativa de relaciones materiales que puede ser delimitada y utilizada como unidad de explicación bajo ciertas condiciones.
+## 6. Identidad como continuidad organizada
 
-Esto permite tratar bajo una misma gramática objetos muy distintos sin volverlos idénticos:
+La identidad no es esencia inmóvil. Es continuidad de organización bajo transformación. Operativamente:
 
-- una molécula;
-- un organismo;
-- una tormenta;
-- un ecosistema;
-- una universidad;
-- un módulo técnico;
-- una identidad personal.
+> Una entidad conserva identidad cuando mantiene un patrón estabilizado a través de transformaciones tolerables para su tipo, donde la tolerancia se especifica como cuenca de atracción persistente bajo el régimen de transformación considerado.
 
-Lo común no es que todos sean sustancias del mismo tipo, sino que todos pueden funcionar como **regiones relativamente estables de organización material**.
+Esto explica por qué un organismo sigue siendo el mismo a pesar del recambio molecular (cuenca persistente bajo recambio), por qué un servicio mantiene identidad a través de despliegues (cuenca persistente bajo redespliegue), por qué una institución persiste con miembros rotativos (cuenca persistente bajo rotación). En cada caso la tolerancia es operacionalizable.
 
-## Tipos de realidad dentro del marco
+## 7. Fronteras y límites
 
-Para evitar tanto el reduccionismo como la inflación ontológica, conviene distinguir grados o modos de realidad.
+Las fronteras no son siempre absolutas. Son reales cuando corresponden a discontinuidades materiales, restricciones funcionales, cambios de régimen dinámico o cortes relevantes para una pregunta. La tesis admite tres tipos de frontera:
 
-### 1. Realidad fuerte
+- **frontera dura**: discontinuidad material (membrana, superficie de objeto, contrato firmado);
+- **frontera funcional**: cambio de régimen dinámico (transición fásica, cambio de atractor);
+- **frontera pragmática**: corte justificado por la pregunta, sin discontinuidad material única.
 
-La de procesos y configuraciones con anclaje material directo.
+Una frontera del tercer tipo no es arbitraria si su trazado mejora la legibilidad del patrón sin destruir dependencias relevantes. La verificación es la misma de siempre: predicción e intervención discriminantes.
 
-### 2. Realidad estructural
+## 8. Niveles sin multiplicación de mundos
 
-La de redes, patrones, acoplamientos y dependencias que organizan fenómenos.
+No hay un mundo físico, otro biológico, otro mental, otro social, otro simbólico. Hay un mismo plano material con escalas y ritmos de organización. Un nivel es un registro descriptivo del mismo plano, no una capa ontológica adicional. Esta tesis es **monismo de planos, pluralismo de registros**:
 
-### 3. Realidad funcional
+- la célula no viola la física, pero la biología celular no se vuelve trivial al conocer las partículas;
+- una red informática no existe sin hardware, pero no se administra describiéndola como electrones;
+- una institución no flota sobre individuos, pero no se explica como suma de individuos aislados;
+- la conducta no existe sin organismo y entorno, pero no se entiende reduciéndola a microeventos locales.
 
-La de unidades definidas por el papel que cumplen en una organización.
+Cada `nivel` es un recorte cuya legitimidad pasa por el filtro del capítulo 03-02 (criterios). No hay nivel correcto en absoluto; hay nivel adecuado a la pregunta `Q` con tolerancia explícita.
 
-### 4. Realidad institucional
+## 9. Causalidad, restricción y organización
 
-La de entidades sostenidas por prácticas, normas, reconocimiento y soportes materiales.
+La tesis no reduce toda explicación a causalidad lineal. Reconoce un repertorio operativo de relaciones:
 
-### 5. Realidad teórica
+- **causalidad directa**: A produce cambio en B;
+- **condición de posibilidad**: A permite que B ocurra;
+- **restricción**: A limita el rango de estados posibles de B;
+- **acoplamiento dinámico**: A y B co-varían bajo dinámica conjunta;
+- **constitución**: A forma parte de la estructura que hace que B sea lo que es;
+- **retroalimentación**: A afecta B y B afecta A;
+- **dependencia histórica**: el estado actual depende de trayectorias pasadas;
+- **dependencia contextual**: la relación cambia según entorno o escala.
 
-La de entidades inferidas o modelizadas cuya legitimidad depende de su capacidad de capturar regularidades reales.
+La causalidad circular (upward + downward) emerge naturalmente del acoplamiento dinámico: las componentes producen la dinámica conjunta y la dinámica conjunta retroalimenta a las componentes. No hay aquí emergencia fuerte: hay self-organization. El capítulo 02-04 desarrolla esto con ecuaciones canónicas.
 
-Estas distinciones no crean mundos separados. Sirven para describir **distintos modos de estabilización y legitimación** dentro de una misma realidad material.
+## 10. Qué evita la ontología
 
-## Objeto, proceso y sistema
+| Tentación rechazada | Razón |
+|---|---|
+| Dualismo | Multiplica sustancias sin necesidad y sin compromiso operacional |
+| Materialismo de partículas | La lista de componentes no agota la organización |
+| Emergentismo fuerte | Convierte la self-organization en sustancia nueva |
+| Constructivismo arbitrario | Trata todos los recortes como equivalentes |
+| Reificación del modelo | Confunde el formalismo con el sustrato |
+| Realismo ingenuo de categorías | Asume que las palabras ya recortan correctamente |
 
-Un aporte importante de la tesis es romper la falsa alternativa entre `cosa` y `flujo`. Hay fenómenos que son mejor entendidos como objetos relativamente estables, otros como procesos, y otros como sistemas acoplados.
+Cada rechazo es selectivo, no total: el dualismo aporta la intuición de que algunos fenómenos no se entienden con descripción microfísica; el materialismo aporta el anclaje material; el emergentismo aporta la atención a la organización; el constructivismo aporta la advertencia sobre la mediación lingüística; el realismo ingenuo aporta el funcionamiento práctico de muchas categorías. La tesis recoge la intuición y rechaza la inflación o el empobrecimiento.
 
-### Objeto
+## 11. Diálogo con interlocutores
 
-Hay objeto cuando la continuidad y delimitación son suficientemente robustas para usar una unidad relativamente compacta.
+### 11.1. Bunge — sistemismo y materialismo realista
 
-### Proceso
+Bunge ofrece dos lecciones aprovechables: la exigencia de anclaje material en toda explicación legítima y el sistemismo como alternativa al individualismo y al holismo. La tesis recoge ambas y agrega: el sistemismo necesita el filtro de admisión de patrones (cinco condiciones) para no resbalar hacia totalidades sin variables. Donde Bunge habla de sistemas con entornos, la tesis habla de pares dinámicos acoplados con tarea e historia.
 
-Hay proceso cuando la identidad depende más de una dinámica continua que de una permanencia material fija.
+### 11.2. Dennett — real patterns
 
-### Sistema
+Dennett sostiene que los patrones son reales si capturan compresión informacional con pérdida controlada. La tesis recoge la intuición pero exige más: un patrón es real cuando es atractor empíricamente identificable con cuenca y bifurcación, no solo regularidad comprimida. La diferencia es operativa: la regularidad comprimida puede ser correlación; el atractor es estructura dinámica.
 
-Hay sistema cuando la inteligibilidad depende de múltiples componentes y relaciones coordinadas.
+### 11.3. Sellars — imagen manifiesta vs imagen científica
 
-La tesis no obliga a elegir una sola forma para todo. Obliga a justificar cuál es la forma adecuada para cada fenómeno y cada pregunta.
+Sellars distingue la imagen manifiesta (categorías ordinarias) de la científica (categorías teóricas). La tesis rechaza tratarlas como dos sustancias separadas y propone su articulación operativa: L1 es la imagen manifiesta como registro de relevancia; B y L3 reconstruyen la imagen científica con anclaje empírico; S es la categoría que sobrevive a la auditoría y puede coexistir con L1 sin sustituirlo nominalmente.
 
-## Propiedades como disposiciones relacionales
+### 11.4. Wittgenstein — gramática y reificación
 
-Las propiedades no deben entenderse siempre como etiquetas adheridas a una cosa. Muchas veces son disposiciones relacionales activables bajo ciertas condiciones.
+Wittgenstein advierte que la gramática arrastra metafísica. La tesis convierte la advertencia en protocolo: cada categoría heredada pasa por auditoría con cinco condiciones de admisión. La sospecha gramatical no se queda en crítica; produce un test público.
 
-Por ejemplo:
+### 11.5. Simondon — individuación
 
-- la fragilidad depende de estructura y tipo de fuerza;
-- la memoria depende de trazas, actualización y reuso;
-- la seguridad depende de configuración, amenazas y exposición;
-- la inteligencia depende de tareas, entorno, aprendizaje y capacidad adaptativa.
+Simondon ofrece la individuación como génesis: los individuos no preexisten al proceso. La tesis recoge la idea, pero la opera: la individuación es la formación de un atractor a partir de un sistema metaestable, identificable empíricamente como bifurcación que pasa de monoestable a multiestable. La metáfora de Simondon se vuelve modelo dinámico.
 
-Esto evita convertir las propiedades en mini-sustancias ocultas dentro de un objeto.
+## 12. Fórmula ontológica de cierre
 
-## Identidad sin esencia rígida
+> Existe un solo plano material dinámico. Sus estabilizaciones son atractores empíricamente identificables de sistemas acoplados. Las entidades, propiedades, identidades y niveles son modos de describir esas estabilizaciones bajo régimen de medición y pregunta explícita. La ontología no multiplica sustancias y no empobrece la organización: opera bajo el doble criterio de austeridad de sustancia y riqueza de relación, con admisión condicionada por traducibilidad al nivel B y por validación empírica.
 
-La tesis propone una teoría relacional de la identidad.
+## 13. Lectura cruzada
 
-Una entidad mantiene identidad no porque conserve exactamente las mismas partes, sino porque conserva una **organización suficientemente estable bajo ciertas transformaciones**.
+Lo que esta ontología sostiene se opera en:
 
-Esto explica por qué:
+- las herramientas formales: capítulo 03-01 (aparato), 03-04 (operacionalización de κ);
+- el anclaje empírico: capítulo 02-04 (B);
+- los criterios de legitimidad: capítulo 03-02;
+- la auditoría categorial: capítulo 02-03 (categorías, objetos, propiedades, identidad);
+- la prueba demostrativa: capítulo 05-05 (caso ancla canónico);
+- las objeciones que la presionan: capítulo 04-02.
 
-- un organismo sigue siendo el mismo a pesar del recambio molecular;
-- un servicio sigue siendo el mismo aunque cambien instancias y despliegues;
-- una institución persiste aunque roten sus miembros;
-- una persona mantenga identidad a través de transformaciones corporales, sociales y narrativas.
+Lo que esta ontología rechaza se discute en:
 
-La identidad no es una esencia inmóvil; es una continuidad estructurada.
+- capítulo 04-01 (debates con rivales filosóficos);
+- capítulo 04-02 (limitaciones que sobreviven a la corrección).
 
-## Fronteras y límites
-
-Los límites de una entidad tampoco son siempre absolutos. Pueden depender de:
-
-- discontinuidades materiales;
-- restricciones funcionales;
-- criterios de escala;
-- finalidad explicativa.
-
-La tesis no concluye que los límites sean arbitrarios. Concluye algo más preciso:
-
-> hay fronteras reales, pero su trazado exacto puede depender del problema, siempre que ese trazado siga discontinuidades o estabilizaciones relevantes.
-
-## Fórmula ontológica final
-
-La ontología de la tesis puede resumirse así:
-
-> existe una realidad material dinámica organizada por relaciones, restricciones y patrones multiescala; las entidades son estabilizaciones relativas dentro de esa organización y no sustancias adicionales autosuficientes.
-
-## Qué gana la tesis con esta ontología
-
-1. evita el dualismo, porque no introduce dos tipos de sustancia;
-2. evita el materialismo ingenuo, porque no reduce la realidad a una lista plana de componentes;
-3. evita el emergentismo sustancialista, porque los niveles superiores no son nuevos mundos;
-4. evita el relativismo, porque no todo recorte vale por igual.
-
-## Regla de sobriedad ontológica
-
-Siempre conviene preguntar:
-
-- ¿esta entidad exige una sustancia nueva?
-- ¿o basta con entenderla como patrón material-relacional estabilizado?
-
-La tesis apuesta sistemáticamente por la segunda opción, salvo prueba fuerte en contrario. Y eso, filosóficamente, es una muy buena economía del mobiliario del mundo.
+La fórmula del cierre no es retórica. Es la condición de admisión que rige todo lo que viene después.

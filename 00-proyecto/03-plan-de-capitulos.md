@@ -2,145 +2,206 @@
 
 ## Visión general
 
-La tesis puede transformarse en un manuscrito final de **seis capítulos**, más introducción, conclusión y anexos metodológicos. Esta distribución permite convertir el prototipo actual en un texto defendible y progresivo.
+La tesis se transforma en manuscrito doctoral final de **seis capítulos**, más introducción, conclusión demostrativa, guía de defensa, hoja de ruta y anexos operativos. Esta distribución mantiene la fortaleza filosófica del manuscrito-fuente y le añade la arquitectura argumental que cierra la demostración.
+
+## Política de capítulos
+
+- cada capítulo responde a una pregunta específica y deja preparada la transición al siguiente;
+- cada capítulo enuncia su tesis al inicio, en una línea, y la verifica en el cierre;
+- cada capítulo nombra su interlocutor bibliográfico principal y secundarios;
+- cada aplicación se etiqueta inequívocamente como modo demostrativo o modo programático;
+- ningún capítulo se admite sin función argumental clara.
 
 ## Introducción
 
 ### Función
 
-Presentar el problema, la tesis, la motivación filosófica y la estrategia general.
+Presentar el problema, la tesis, la motivación filosófica y la estrategia general de demostración. Anunciar la asimetría entre caso ancla y dominios programáticos para que el lector sepa, desde el inicio, qué se demuestra y qué se articula como programa.
 
 ### Debe incluir
 
-- por qué las categorías heredadas tienden a reificarse;
-- por qué el reduccionismo plano tampoco resuelve el problema;
-- formulación corta de la tesis;
-- estructura del trabajo.
+- la pregunta original (cuándo es legítimo reemplazar L1 por L3 sin sustitución nominal);
+- la respuesta del profesor que disciplina la tesis (anclaje conductual-biológico como condición);
+- formulación corta de la tesis principal;
+- estructura del trabajo y orden de lectura;
+- política demostrativo / programático.
 
 ## Capítulo 1. El problema filosófico de las categorías y los niveles
 
-### Objetivo
+### Pregunta
 
-Mostrar que la dificultad no es local a la filosofía de la mente, sino general a toda investigación que trabaja con objetos, niveles y vocabularios heredados.
+¿Por qué hace falta esta tesis y contra qué problema concreto se construye?
 
 ### Núcleos
 
 - categorías ordinarias versus categorías explicativas;
 - el error de reificación;
 - la diferencia entre describir y explicar;
-- por qué la multiescalaridad obliga a revisar la ontología clásica de objetos.
+- la multiescalaridad obliga a revisar la ontología clásica de objetos;
+- la pregunta sobre L1 / B / L3 / S como protocolo de traducción.
 
-## Capítulo 2. Ontología material-relacional mínima
+### Interlocutores
 
-### Objetivo
+Sellars (imagen manifiesta versus científica), Wittgenstein (gramática y reificación), Dennett (real patterns), Bunge (cientificidad de constructos).
 
-Defender una ontología sobria: sustrato material dinámico más patrones relacionales estabilizados.
+### Conexión con repositorio
+
+Diagnóstico estructural (capítulo 01-01) y objeciones discriminantes (capítulo 01-02).
+
+## Capítulo 2. Ontología material-relacional con nivel B
+
+### Pregunta
+
+¿Qué existe según esta tesis y bajo qué condiciones?
 
 ### Núcleos
 
-- qué significa `material`;
-- por qué monismo no equivale a atomismo;
-- entidad como patrón relativamente estable;
-- tipos de realidad: fuerte, estructural, funcional, institucional y teórica.
+- monismo material sin atomismo;
+- patrón estabilizado como atractor empíricamente identificable con cinco condiciones de admisión;
+- categorías, objetos, propiedades, identidad reformulados;
+- nivel B (conductual-biológico) y asimetría L1↔B↔L3↔S como protocolo;
+- self-organization como modelo positivo de la emergencia;
+- causalidad circular sin emergencia fuerte;
+- cinco modos de realidad (fuerte, estructural, funcional, institucional, teórica).
 
-## Capítulo 3. Epistemología de la compresión multiescala
+### Interlocutores
 
-### Objetivo
+Bunge (sistemismo materialista), Dupré (pluralismo procesual), Dennett (real patterns), Simondon (individuación), Maturana-Varela (autopoiesis), Gibson (información ecológica), Warren (acoplamiento dinámico).
 
-Mostrar que conocer es seleccionar, organizar y comprimir dependencias reales sin destruir las diferencias relevantes.
+### Conexión
+
+Capítulos 02-01 a 02-04 del repositorio.
+
+## Capítulo 3. Epistemología y aparato formal
+
+### Pregunta
+
+¿Cómo conocemos según esta tesis y cómo se opera el conocimiento?
 
 ### Núcleos
 
 - diferencia entre realidad, modelo y categoría;
-- compresión y expansión;
-- economía explicativa;
-- verdad como preservación estructural;
-- criterios de legitimidad epistemológica.
+- conocer como compresión disciplinada;
+- compresión κ y expansión ε como operaciones complementarias;
+- procedimiento empírico de κ vía baja dimensionalidad;
+- aparato mínimo de cinco operadores con pregunta paramétrica Q;
+- diez criterios de legitimidad y dossier de anclaje de catorce componentes;
+- protocolo de auditoría ontológica de nueve fases;
+- verdad como preservación estructural verificable.
 
-## Capítulo 4. Formalización y método
+### Interlocutores
 
-### Objetivo
+Cartwright (capacidades), Pearl (modelos causales y do-calculus), Bechtel-Craver (mecanicismo multinivel), Mitchell (pluralismo integrativo), Strogatz / Kelso / Haken (dinámica no lineal).
 
-Dar estatuto operativo al marco mediante grafos, hipergrafos, clases estructurales y auditoría ontológica.
+### Conexión
 
-### Núcleos
+Capítulos 03-01 a 03-04 del repositorio.
 
-- grafo multivariable;
-- hipergrafo y relaciones de orden superior;
-- operaciones `μ`, `κ` y `ε`;
-- criterios de preservación relevante respecto de una pregunta `Q`;
-- protocolo de investigación conceptual y aplicada.
+## Capítulo 4. Discusión con posiciones rivales y limitaciones
 
-## Capítulo 5. Discusión con posiciones rivales
+### Pregunta
 
-### Objetivo
-
-Situar la tesis frente a otras respuestas filosóficas y mostrar su ventaja comparativa.
+¿Por qué esta tesis es mejor que sus rivales y qué límites genuinos reconoce?
 
 ### Núcleos
 
-- contra el dualismo;
-- contra el materialismo ingenuo;
-- contra el emergentismo sustancialista;
-- contra el constructivismo arbitrario;
-- contra el formalismo vacío.
+- discriminación pública contra catorce posiciones rivales (dualismo, materialismo de partículas, reduccionismo plano, emergentismo fuerte, constructivismo arbitrario, instrumentalismo puro, formalismo vacío, modelos internos, cognitivismo computacional, conductismo radical, enactivismo radical, realismo estructural informativo, mecanicismo multinivel sin filtro);
+- novedad de la articulación dossier + asimetría L1↔B↔L3↔S;
+- seis limitaciones genuinas (alcance asimétrico, dependencia del caso ancla, vigilancia del propio léxico, dimensión normativa, dependencia de prácticas externas, deuda con fenomenología);
+- riesgos heredados que sobreviven (inmunización por nivel, hipertrofia metodológica, asimetría desigual);
+- promesas que la tesis NO hace.
 
-## Capítulo 6. Casos de aplicación
+### Interlocutores
 
-### Objetivo
+Cada rival en su forma fuerte; Searle (ontología social), Bourdieu (campos), Latour (actantes), Varela-Thompson (fenomenología naturalizada).
 
-Probar la fecundidad del marco en dominios heterogéneos.
+### Conexión
 
-### Casos sugeridos
+Capítulos 04-01 y 04-02 del repositorio.
 
-1. mente, memoria y yo;
-2. célula, organismo y ecosistema;
-3. servicio informático y sistema distribuido;
-4. institución, mercado y Estado.
+## Capítulo 5. Casos de aplicación
 
-### Criterio de selección
+### Pregunta
 
-Los casos deben mostrar:
+¿Dónde se demuestra la tesis y dónde se articula como programa?
 
-- categorías altamente reificadas;
-- necesidad real de pasar entre escalas;
-- utilidad de compresión y expansión;
-- mejora explicativa respecto a alternativas más planas.
+### Núcleos
 
-## Conclusión general
+- criterios de admisión (modo demostrativo vs programático);
+- caso ancla canónico (behavioral dynamics) en modo demostrativo con dossier completo;
+- aplicaciones en modo programático: mente, biología, sistemas técnicos, instituciones;
+- criterios de elevación por dominio.
 
-### Objetivo
+### Interlocutores
 
-Cerrar la tesis reafirmando la fórmula central:
+Para caso ancla: Warren, Gibson, Fajen, Sternad, Foo, Yilmaz, Lee, Fink. Por dominio programático: los nombrados en capítulos 05-01 a 05-04.
 
-> mínima en sustancias, rica en relaciones, rigurosa en sus recortes y reversible en sus niveles de explicación.
+### Conexión
+
+Capítulos 05-00 a 05-05 del repositorio.
+
+## Capítulo 6. Conclusión demostrativa
+
+### Pregunta
+
+¿La tesis queda demostrada y bajo qué condiciones puede fracasar?
+
+### Núcleos
+
+- las seis condiciones de demostración con verificación capítulo por capítulo;
+- los cuatro escenarios de fracaso global falsables;
+- aporte conceptual sustantivo (ontológico, epistemológico, metodológico, aplicado, filosófico de fondo);
+- afirmaciones con compromiso versus promesas rechazadas;
+- fórmula final demostrativa.
+
+### Conexión
+
+Capítulo 06-01 del repositorio.
+
+## Conclusión general (cierre del manuscrito)
+
+### Función
+
+Cerrar la tesis con su régimen de validez declarado. La tesis demuestra lo que dice demostrar, articula lo que articula como programa, nombra lo que aún no demuestra, y especifica las condiciones bajo las cuales aceptaría perder.
 
 ### Debe incluir
 
-- balance de logros;
-- límites del proyecto;
-- líneas futuras de investigación;
-- alcance interdisciplinario.
+- balance de logros (caso ancla, aparato, asimetría L1↔B↔L3↔S, discriminación rival);
+- balance de límites (asimetría con dominios programáticos, deuda con normatividad);
+- líneas futuras de investigación (hoja de ruta del capítulo 06-03);
+- alcance interdisciplinario (filosofía, ciencia cognitiva, sistemas dinámicos, biología, sociología, informática).
 
-## Anexos sugeridos
+## Anexos operativos
 
-1. glosario conceptual;
-2. esquema formal de operadores;
-3. protocolo de auditoría ontológica;
-4. cuadros comparativos con posiciones rivales;
-5. mapa de aplicaciones.
+1. **glosario operativo**: definición de trabajo de cada término del marco;
+2. **mapa de operadores formales**: presentación visual del aparato μ, G, H, κ, ε;
+3. **plantilla del dossier de anclaje** (de capítulo 03-02 §3);
+4. **matriz de auditoría ontológica** (de capítulo 03-03);
+5. **cuadros comparativos con posiciones rivales** (de capítulo 04-01);
+6. **mapa de aplicaciones** (estado demostrativo / programático y deuda);
+7. **versiones cortas de la tesis** (1 página, 2 minutos, 5 minutos, 15 minutos);
+8. **bibliografía consolidada** en formato académico estándar.
 
 ## Regla práctica de redacción
 
-Cada capítulo debe responder una pregunta específica y dejar lista la transición al siguiente. Si un capítulo no genera esa necesidad, todavía está demasiado ensayístico y poco arquitectónico.
+Cada capítulo debe responder una pregunta específica, enunciar tesis explícita en su inicio, y dejar preparada la transición al siguiente. Si un capítulo no genera la necesidad del siguiente, todavía está demasiado ensayístico y poco arquitectónico.
 
-## Fórmula útil para orientar la escritura
+## Fórmula útil
 
-- **Capítulo 1**: por qué hace falta esta tesis.
-- **Capítulo 2**: qué existe según esta tesis.
-- **Capítulo 3**: cómo conocemos según esta tesis.
-- **Capítulo 4**: cómo se opera con esta tesis.
-- **Capítulo 5**: por qué esta tesis es mejor que sus rivales.
-- **Capítulo 6**: dónde se muestra su potencia.
+- **Capítulo 1**: por qué hace falta esta tesis;
+- **Capítulo 2**: qué existe y bajo qué nivel se ancla;
+- **Capítulo 3**: cómo conocemos y con qué aparato;
+- **Capítulo 4**: por qué la tesis discrimina contra rivales y qué límites reconoce;
+- **Capítulo 5**: dónde se demuestra y dónde queda como programa;
+- **Capítulo 6**: la tesis demostrada y las condiciones de su fracaso posible.
 
-Con eso, el trabajo deja de ser solo una gran intuición y se convierte en una máquina argumentativa con piezas identificables.
+Con eso, el trabajo deja de ser una intuición y se convierte en máquina argumentativa con piezas identificables y discriminación pública.
+
+## Lectura cruzada
+
+- estructura general del proyecto: capítulo 00-01;
+- preguntas, objetivos, hipótesis: capítulo 00-02 (este conjunto);
+- diagnóstico que motiva la corrección: capítulo 01-01;
+- conclusión demostrativa final: capítulo 06-01;
+- guía de defensa oral: capítulo 06-02;
+- hoja de ruta para tesis final: capítulo 06-03.

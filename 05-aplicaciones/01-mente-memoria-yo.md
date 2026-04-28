@@ -1,131 +1,236 @@
-# Aplicación 1. Mente, memoria y yo
+# Mente, memoria y yo
 
-## Por qué este caso es decisivo
+## MODO PROGRAMÁTICO
 
-La filosofía de la mente es un terreno privilegiado para probar la tesis porque reúne casi todas las tentaciones que el proyecto quiere corregir:
+Este capítulo presenta una aplicación en **modo programático** según el capítulo 05-00. Articula una conjetura de aplicación del marco material-relacional al dominio mente / memoria / yo, con criterios explícitos de elevación a modo demostrativo. No demuestra; conjetura con plan de prueba.
 
-- reificación de categorías ordinarias;
-- dualismo encubierto;
-- reduccionismo neuronal simplista;
-- vaguedad en el uso de `emergencia`;
-- confusión entre experiencia, mecanismo y vocabulario.
+## Función de este capítulo
+
+La filosofía de la mente es terreno privilegiado para probar la tesis porque reúne casi todas las tentaciones que el marco corrige: reificación de categorías ordinarias (`mente` como sustancia), dualismo encubierto, reduccionismo neuronal simplista, vaguedad de `emergencia`, confusión entre experiencia, mecanismo y vocabulario. La conjetura: el aparato material-relacional con anclaje en B (capítulo 02-04) y dossier de admisión (03-02) puede reformular las tres categorías centrales — mente, memoria, yo — sin eliminarlas y sin reificarlas.
+
+## Conjetura del capítulo
+
+> Las categorías `mente`, `memoria` y `yo` son compresiones de patrones de integración multivariable cuyos atractores son empíricamente identificables si se dispone de tareas adecuadas y datos cuantitativos. La conjetura programática es que en cada caso el dossier completo es construible: variables a nivel B, atractores con cuenca y bifurcaciones, predicción discriminante contra cognitivismo simbólico, intervención discriminante. La elevación a demostrativo requiere construir tareas y datos que no están disponibles en este manuscrito.
 
 ## 1. La categoría `mente`
 
-### Recorte heredado
+### 1.1. Recorte heredado
 
-En el lenguaje común, `mente` suele presentarse como una especie de interioridad unificada o sede de facultades.
+En el lenguaje común, `mente` aparece como interioridad unificada o sede de facultades.
 
-### Auditoría ontológica
+### 1.2. Hipótesis de auditoría
 
-La tesis pregunta:
-
-- ¿qué procesos materialmente instancian lo que llamamos mente?
-- ¿qué dependencias la sostienen?
-- ¿qué se pierde si se la trata como cosa simple?
-
-### Reconstrucción propuesta
-
-La mente puede entenderse como un **patrón material-relacional de integración** entre:
+La conjetura: la mente es atractor de integración entre múltiples subsistemas materialmente realizados. No es sustancia separada; tampoco es etiqueta vacía. Es patrón que comprime la coordinación material entre:
 
 - actividad neural;
-- organización corporal;
+- organización corporal y biomecánica;
 - acoplamiento sensorimotor;
-- historia del organismo;
-- entorno técnico y social;
+- historia del organismo (desarrollo, aprendizaje);
+- entorno técnico, lingüístico y social;
 - regulación afectiva;
 - capacidad de aprendizaje y orientación práctica.
 
-### Resultado
+### 1.3. Variables candidatas (X)
 
-La categoría `mente` no tiene que eliminarse, pero deja de funcionar como sustancia y pasa a funcionar como compresión legítima solo cuando condensa este patrón de integración.
+Para una pregunta Q sobre integración cognitiva sostenida, X podría incluir:
+
+- variables conductuales: tasa de éxito en tareas cognitivas, latencia, errores, transferencia entre tareas;
+- variables fisiológicas: dinámicas EEG/MEG en bandas relevantes, conectividad funcional;
+- variables ecológicas: complejidad de tarea, restricciones contextuales;
+- variables históricas: experiencia previa, fase de aprendizaje;
+- variables corporales: postura, respiración, estado autonómico.
+
+### 1.4. Atractores conjeturados
+
+Patrones de integración sostenida que estabilizan la conducta cognitiva bajo perturbación; bifurcaciones entre regímenes (atención sostenida → distracción; vigilia → sueño; estado focalizado → mente errante).
+
+### 1.5. Rival principal
+
+Cognitivismo simbólico clásico: la mente es procesador de símbolos sobre representaciones internas, su descripción adecuada está en el nivel del software. La discriminación se haría en tareas donde el acoplamiento dinámico predice la transición entre regímenes con menos parámetros que el procesamiento simbólico postulado.
+
+### 1.6. Criterio de elevación a demostrativo
+
+Construir tarea cognitiva donde:
+
+- haya atractores conductuales identificables empíricamente con dimensionalidad efectiva baja;
+- haya bifurcación predecible entre regímenes;
+- haya intervención (cambio en restricción ecológica, en acoplamiento corporal, en historia inmediata) que produzca transición predecible;
+- haya rival cognitivista articulado con sus parámetros, y haya diferencia de varianza explicada o de capacidad predictiva.
+
+Candidatos prometedores: sostenimiento de atención, alternancia entre tareas, integración perceptual cross-modal, decisión bajo restricción temporal.
+
+### 1.7. Resultado conjeturado
+
+La categoría `mente` se admite como compresión legítima en S si el dossier completo se construye. No se elimina; se reformula como atractor de integración.
 
 ## 2. La categoría `memoria`
 
-### Recorte heredado
+### 2.1. Recorte heredado
 
-La memoria suele imaginarse como depósito, archivo o contenedor de información pasada.
+La memoria se imagina habitualmente como depósito, archivo o contenedor de información pasada.
 
-### Problema
+### 2.2. Problema
 
-Esa imagen convierte una familia de procesos heterogéneos en una cosa homogénea.
+Esa imagen reifica una familia heterogénea de procesos como cosa homogénea.
 
-### Reconstrucción propuesta
+### 2.3. Hipótesis de auditoría
 
-`Memoria` puede descomponerse en procesos tales como:
+La memoria no es objeto. Es disposición relacional: capacidad del sistema acoplado de modificar su trayectoria actual en función de trazas pasadas materialmente sostenidas. Los procesos componentes:
 
 - codificación;
 - consolidación;
-- reactivación;
+- reactivación / recuperación;
 - reconsolidación;
-- uso práctico;
-- dependencia de contexto;
-- modificación de conducta presente por trazas pasadas.
+- uso práctico (modificación de conducta presente);
+- dependencia de contexto.
 
-### Resultado
+### 2.4. Variables candidatas
 
-La tesis no exige eliminar la palabra `memoria`, sino usarla como rótulo compresivo condicionado por la pregunta. En ciertos contextos conviene hablar de una familia de memorias; en otros, conviene abrir la categoría.
+- conductuales: tasa de recuerdo bajo manipulación de claves contextuales, sensibilidad a interferencia, transferencia bajo cambio de contexto;
+- fisiológicas: dinámicas hipocampales, sincronía cortical;
+- ecológicas: similitud entre contexto de codificación y de prueba;
+- históricas: tiempo desde codificación, frecuencia de reactivación;
+- de tarea: criterios de éxito específicos.
+
+### 2.5. Atractores conjeturados
+
+Estados estables de coordinación entre subsistemas que sostienen modulaciones específicas de conducta. La diferencia entre `memoria episódica`, `memoria de trabajo` y `memoria procedimental` se reformularía como diferencia entre tipos de atractor con distintas escalas temporales y distintas variables de control.
+
+### 2.6. Rival principal
+
+Modelo de memoria como almacén con buffers (modelo modal Atkinson-Shiffrin y descendientes). Discriminación: el modelo de almacén predice fronteras nítidas entre buffers; el modelo dinámico predice gradualidad y dependencia contextual. Los datos publicados en la literatura sobre interferencia, forgetting y reconsolidación favorecen modelo dinámico, pero la discriminación cuantitativa fina queda como trabajo posterior.
+
+### 2.7. Criterio de elevación
+
+Construir paradigma donde se pueda manipular específicamente:
+
+- el contexto de codificación (variable ecológica);
+- el régimen de reactivación (variable interventiva);
+- la historia inmediata (variable temporal);
+
+y comparar predicciones del modelo dinámico contra modelo de almacén con criterios públicos de varianza explicada y capacidad de generalización.
+
+### 2.8. Resultado conjeturado
+
+`Memoria` se admite como rótulo compresivo de una familia de atractores con dependencia contextual, escala temporal y variable de control específicas para cada subtipo. La categoría se conserva como abreviatura útil con marca de uso.
 
 ## 3. La categoría `yo`
 
-### Recorte heredado
+### 3.1. Recorte heredado
 
-El yo aparece con frecuencia como centro simple, sustancia interior o núcleo de identidad.
+El yo aparece como centro simple, sustancia interior, núcleo de identidad.
 
-### Reconstrucción propuesta
+### 3.2. Hipótesis de auditoría
 
-El yo puede analizarse como una estabilización relativa entre:
+El yo no es ilusión completa ni sustancia simple. Es atractor dinámico de integración multivariable con cuenca persistente bajo transformación. Sus dimensiones:
 
-- integración corporal;
-- continuidad narrativa;
-- reconocimiento social;
-- hábitos de acción;
+- integración corporal (propiocepción, esquema corporal);
+- continuidad narrativa (autobiografía);
+- reconocimiento social (otros me reconocen como el mismo);
+- hábitos de acción (repertorios estables);
 - memoria autobiográfica;
-- afectividad;
+- afectividad (regulación emocional sostenida);
 - capacidad reflexiva;
-- inscripción temporal.
+- inscripción temporal (sentido del tiempo personal).
 
-### Resultado
+### 3.3. Variables candidatas
 
-El yo no es una ilusión completa ni una sustancia simple. Es un patrón dinámico de integración con distintos soportes y ritmos de estabilidad.
+- conductuales: consistencia de respuesta bajo cambio de contexto, perfil de preferencia, repertorio motor;
+- corporales: integración propioceptiva-visual, sentido de agencia;
+- narrativas: coherencia de relatos autobiográficos;
+- sociales: reconocimiento intersubjetivo;
+- afectivas: patrones de regulación;
+- temporales: sentido de continuidad biográfica.
 
-## 4. Qué evita la tesis en este dominio
+### 3.4. Atractores conjeturados
 
-### Evita el dualismo
+Patrones de integración corporal-narrativa-social-afectiva con cuenca persistente bajo transformación biográfica. Bifurcaciones: rupturas biográficas, despersonalización, transiciones de identidad.
 
-Porque no necesita una mente separada del cuerpo o del mundo material.
+### 3.5. Rival principal
 
-### Evita el reduccionismo neural plano
+Posiciones que tratan el yo como ilusión narrativa pura (algunas variantes de Dennett en versión fuerte) o como sustancia metafísica simple (cartesianismo). La tesis discrimina contra ambos: el yo es realidad estructural — atractor dinámico — no ilusión ni sustancia.
 
-Porque la actividad neuronal por sí sola no agota la organización corporal, ambiental, social y temporal del fenómeno.
+### 3.6. Criterio de elevación
 
-### Evita el eliminativismo apresurado
+Construir caso donde el atractor de integración se desestabiliza específicamente (despersonalización clínica, alteraciones del esquema corporal en condiciones experimentales, ilusiones de propiedad como rubber hand illusion) y mostrar que el modelo dinámico predice la cuenca de transición con más precisión que rivales.
 
-Porque reconoce que categorías como mente o memoria pueden seguir siendo útiles si comprimen estructura real.
+### 3.7. Resultado conjeturado
 
-## 5. Ejemplo de compresión y expansión
+`Yo` se admite como atractor dinámico de integración con cuenca persistente. La categoría se mantiene como compresión legítima si el dossier se construye.
+
+## 4. Compresión y expansión en este dominio
 
 ### Compresión legítima
 
-En una explicación psicológica general, puede ser razonable decir que una tarea exige `memoria de trabajo`.
+En explicación psicológica general, hablar de `memoria de trabajo` como módulo unitario es compresión razonable cuando la pregunta es comparación de tareas globales.
 
 ### Expansión necesaria
 
-Si la pregunta pasa a ser por qué dos sujetos fallan de modo distinto, quizá haya que abrir esa compresión en:
+Si la pregunta es por qué dos sujetos fallan de modo diferente en la misma tarea, la compresión `memoria de trabajo` puede ser excesiva y debe abrirse en:
 
 - capacidad de mantenimiento activo;
 - interferencia contextual;
 - control atencional;
 - carga afectiva;
-- historia de aprendizaje.
+- historia de aprendizaje específica.
 
-## 6. Qué gana la investigación con esta aplicación
+La regla del capítulo 03-02 aplica: comprimir cuando el detalle interno no cambia la inferencia, expandir cuando sí la cambia.
 
-1. desustancializa categorías psicológicas sin eliminarlas;
-2. articula cerebro, cuerpo, entorno y temporalidad;
-3. convierte el vocabulario mental en objeto de auditoría y no de fe gramatical;
-4. muestra que la tesis general tiene rendimiento real sobre un caso filosóficamente clásico.
+## 5. Qué evita el marco en este dominio
 
-## Fórmula final del caso
+| Tentación | Razón del rechazo |
+|---|---|
+| Dualismo cartesiano | No requiere mente separada del cuerpo o el entorno |
+| Reduccionismo neural plano | La actividad neuronal no agota la organización corporal-ambiental-social-temporal |
+| Eliminativismo apresurado | Las categorías mentales pueden ser compresiones legítimas si pasan auditoría |
+| Cognitivismo simbólico desligado de B | La traducibilidad B↔L3 es obligatoria |
+| Funcionalismo abstracto | La realización múltiple no exime de anclaje en B |
 
-> la mente no es una cosa adicional al organismo, pero tampoco se deja agotar por una lista plana de eventos neuronales; es una compresión de organización material-relacional cuya legitimidad depende de qué integra, qué conserva y para qué pregunta sirve.
+## 6. Diálogo con interlocutores
+
+### 6.1. Dennett — patrones reales y centro de gravedad narrativo
+
+Dennett ofrece la noción de patrón real y la imagen del yo como centro de gravedad narrativo. La tesis recoge ambas y exige más: el patrón debe ser atractor con cuenca medible; el yo es atractor de integración dinámica, no solo narrativa.
+
+### 6.2. Varela, Thompson y Rosch — embodied mind
+
+Embodied mind es aliada principal. La tesis se inscribe en su horizonte general y añade el filtro de admisión y la operacionalización de κ.
+
+### 6.3. Andy Clark — extended mind
+
+Clark insiste en que algunos procesos cognitivos se extienden al entorno técnico. La tesis lo opera: el entorno técnico entra en X cuando la tarea lo exige.
+
+### 6.4. Alva Noë — percepción enactiva
+
+Noë sostiene que la percepción es habilidad práctica para navegar el entorno. La tesis lo recoge como caso de acoplamiento informacional sin representación interna como recurso primario, alineado con Warren en behavioral dynamics.
+
+### 6.5. Searle — naturalismo biológico
+
+Searle defiende que la mente es propiedad biológica del cerebro. La tesis difiere: la mente es propiedad del sistema acoplado organismo-entorno-tarea-historia, no solo del cerebro. Searle es interlocutor con punto de fricción claro.
+
+### 6.6. Sellars y Wittgenstein — crítica de reificación
+
+Ambos como antídoto permanente contra reificación gramatical de categorías mentales.
+
+## 7. Lo que este capítulo devuelve a la tesis general
+
+Este dominio prueba que el aparato puede tratar fenómenos clásicamente difíciles sin recaer en dualismo, reduccionismo o eliminativismo. La conjetura es articulada y elevable. La asimetría con el caso ancla canónico se nombra: faltan datos cuantitativos publicados de la calidad de Warren en este dominio. El programa posterior es claro.
+
+## 8. Limitación honesta
+
+Este capítulo conjetura. No demuestra. La elevación a modo demostrativo requiere construir tareas y datos que no están en el manuscrito. La tesis no presenta este dominio como prueba; lo presenta como aplicación articulada con plan.
+
+## 9. Lectura cruzada
+
+- ontología material-relacional: capítulo 02-01;
+- nivel B y acoplamiento: capítulo 02-04;
+- aparato formal: capítulo 03-01;
+- criterios de admisión: capítulo 03-02 y 05-00;
+- caso ancla canónico (demostrativo): capítulo 05-05;
+- limitaciones y deuda residual: capítulo 04-02 y 06-01.
+
+## 10. Cierre
+
+> La mente no es cosa adicional al organismo, pero tampoco se deja agotar por una lista plana de eventos neuronales. Es atractor de integración corporal-cognitivo-afectivo-social-histórico cuya legitimidad como compresión depende de qué integra, qué conserva, para qué pregunta sirve, y qué predicción discriminante propone respecto a rivales identificables.
+
+Para que esta conjetura se eleve a demostración, hay que construir el dossier. Eso es trabajo posterior, fechado, con entregable definido en la hoja de ruta.

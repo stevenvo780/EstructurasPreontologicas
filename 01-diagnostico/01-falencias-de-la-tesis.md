@@ -1,322 +1,163 @@
-# Falencias de la tesis a atacar
+# Diagnóstico estructural de la tesis
 
-## Sentido de este diagnóstico
+## Función de este capítulo
 
-El borrador original ya contiene una tesis potente. El problema no es que carezca de idea, sino que todavía mezcla en un mismo flujo:
+Toda tesis doctoral debe abrir con un examen sin complacencia de su propio borrador. Este capítulo no busca ser exhaustivo en defectos triviales. Identifica las debilidades estructurales del manuscrito tal como entró al proyecto y fija el cuadro de problemas que los capítulos subsiguientes deben resolver. Cada falencia se nombra una sola vez, se discute hasta su consecuencia y se redirige a su tratamiento posterior. Las objeciones externas previsibles se tratan en el capítulo 04 de debates; las limitaciones y zonas grises de la propuesta corregida se tratan en el capítulo 04-2 de puntos de presión. Lo que aquí entra es solo lo que afecta al núcleo estructural.
 
-- intuición ontológica;
-- crítica del lenguaje;
-- programa epistemológico;
-- sugerencias metodológicas;
-- ejemplos aplicados.
+## Tesis del capítulo
 
-Eso le da fuerza creativa, pero también lo vuelve vulnerable en un contexto académico. La tarea de este archivo es identificar con precisión **qué debilidades deben resolverse** para que la tesis deje de ser un gran manifiesto y pase a ser una argumentación robusta.
+> El manuscrito-fuente contenía una intuición filosófica fuerte pero seis debilidades estructurales que lo dejaban a un paso del manifiesto: generalidad sin caso ancla, vaguedad de `patrón`, formalización subdefinida, niveles mal trazados, ausencia de criterio de fracaso global y bibliografía no integrada. Las correcciones que disciplinan la tesis se derivan exactamente de esas seis debilidades.
 
-## Falencia 1. Exceso de generalidad
+## Falencia 1. Generalidad sin caso ancla
 
-### Problema
+### Diagnóstico
 
-La tesis aspira a explicar fenómenos físicos, biológicos, psicológicos, sociales, técnicos y ecológicos. Esa amplitud es una fortaleza, pero también puede ser leída como falta de delimitación.
+El borrador aspira a explicar fenómenos físicos, biológicos, psicológicos, sociales, técnicos y ecológicos con la misma matriz. Esa amplitud es virtud filosófica. Es defecto académico mientras no se elija un caso paradigmático trabajado a fondo. Sin caso ancla, la tesis no puede mostrar diferencia de rendimiento frente a rivales: solo puede prometerla.
 
-### Riesgo
+### Consecuencia operativa
 
-Un lector crítico podría decir:
+La tesis debe distinguir explícitamente dos modos de operación: **modo demostrativo** (caso paradigmático trabajado con datos, ecuaciones, predicciones, comparación rival) y **modo programático** (conjetura de que la matriz se aplica a un dominio adicional, sin desarrollo equivalente). Mezclar los dos modos es la principal causa de que la tesis suene a manifiesto.
 
-> si la tesis vale para todo, entonces quizá no explica nada en particular.
+### Cómo se resuelve
 
-### Qué hay que hacer
+El caso ancla canónico es la **dinámica conductual de la percepción y la acción** (Warren 2006). Razón: cumple las condiciones de admisión que el profesor pone como filtro de toda L3 admisible — variables empíricas, predicciones discriminantes, intervenciones, traducibilidad B↔L3, comparación rival viable. Los demás dominios quedan en modo programático, marcados como tales, hasta que se construya su análogo.
 
-- delimitar el problema central;
-- distinguir núcleo de tesis y dominios de aplicación;
-- mostrar que la generalidad es estructural, no totalizante.
+### Dónde se trata
 
-### Resolución prevista
+- selección y justificación del caso ancla: capítulo 05-00 (criterios de admisión) y capítulo 05-05 (caso ancla canónico);
+- modo programático para mente, biología, sistemas técnicos, instituciones: capítulos 05-01 a 05-04, todos marcados.
 
-Esto se trabaja sobre todo en:
+## Falencia 2. Vaguedad estructural de `patrón`
 
-- `00-proyecto/02-preguntas-objetivos-hipotesis.md`
-- `05-aplicaciones/`
+### Diagnóstico
 
-## Falencia 2. Ambigüedad del término `material`
+El término `patrón` carga el peso ontológico central de la tesis (las entidades son patrones estabilizados) pero quedaba sin criterios severos de individuación. Si cada vez que aparece una dificultad la tesis responde "eso es un patrón", no resuelve: desplaza.
 
-### Problema
+### Consecuencia operativa
 
-El manuscrito afirma un monismo material, pero todavía no fija con suficiente precisión qué cuenta como `material`.
+Un patrón solo cuenta como tal en el marco si:
 
-### Riesgo
+1. tiene variables componentes identificables;
+2. exhibe estabilidad medible bajo perturbación;
+3. tolera transformaciones acotadas sin perder identidad;
+4. produce diferencias inferenciales o de intervención;
+5. admite criterio de individuación que sobrevive a tercer observador.
 
-Sin aclaración, el lector puede sospechar tres cosas distintas:
+### Cómo se resuelve
 
-1. que `material` equivale a fisicalismo estrecho;
-2. que `material` es una palabra vaga para decir `real`;
-3. que el proyecto cambia de sentido según el caso.
+`Patrón estabilizado` se redefine técnicamente como **atractor empíricamente identificable de un sistema dinámico acoplado** (organismo–entorno–tarea). Esa traducción no impone matemática gratuita: sigue la práctica que el caso ancla ya implementa. Los cinco criterios anteriores se reformulan como condiciones de admisión de cualquier patrón en el modelo: variables (observables o inferidas), atractor (estabilidad asintótica medible), cuenca (rango de condiciones iniciales que conducen a él), bifurcación (cómo se transforma bajo cambios de parámetro), discriminación (qué predice que un rival no predice).
 
-### Qué hay que hacer
+### Dónde se trata
 
-- distinguir materialidad de atomismo;
-- incluir procesos, cuerpos, infraestructuras, prácticas e información físicamente implementada;
-- mostrar que el monismo es compatible con organización multiescala.
+- definición técnica: capítulo 02 (ontología) y capítulo 04 (anclaje conductual-ecológico);
+- procedimiento de identificación: capítulo 03-04 (operacionalización de κ).
 
-### Resolución prevista
+## Falencia 3. Formalización subdefinida
 
-Se desarrolla en:
+### Diagnóstico
 
-- `02-fundamentos/01-ontologia-material-relacional.md`
-- `04-debates/01-debates-con-posiciones-rivales.md`
+Los operadores `μ`, `G`, `H`, `κ`, `ε` aparecían como notación filosóficamente útil pero sin criterio de admisión empírica. La consistencia local con ST no basta: una teoría grande no gana por no contradecirse, gana porque explica más, distingue mejor, falla menos y se deja comparar contra rivales.
 
-## Falencia 3. Falta de delimitación entre ontología, epistemología y semántica
+### Consecuencia operativa
 
-### Problema
+Cada operador del aparato formal debe traer un protocolo empírico explícito de aplicación, criterio de fallo, y test de refutación. Sin protocolos, el formalismo es decoración.
 
-El borrador distingue esos niveles, pero todavía no los convierte en una arquitectura de trabajo sistemática.
+### Cómo se resuelve
 
-### Riesgo
+`κ` se opera como reducción de dimensionalidad empírica (PCA, dimensión de correlación, ajuste de sistemas dinámicos de bajo orden) con cuatro pruebas de validación obligatorias: reproducción, generalización, preservación topológica de atractores y bifurcaciones, predicción interventiva. `ε` se opera como protocolo de reapertura cuando alguna prueba falla. `μ` exige especificar régimen de medición. `G` y `H` exigen variables conectadas a observables.
 
-La tesis podría parecer circular si no queda claro cuándo habla de:
+### Dónde se trata
 
-- lo que existe;
-- cómo lo modelamos;
-- cómo lo nombramos.
+- aparato formal mínimo: capítulo 03-01;
+- criterios de legitimidad: capítulo 03-02;
+- procedimiento empírico de κ: capítulo 03-04.
 
-### Qué hay que hacer
+## Falencia 4. Niveles mal trazados
 
-- separar los planos con rigor;
-- dar a cada uno criterios propios;
-- mostrar cómo interactúan sin confundirse.
+### Diagnóstico
 
-### Resolución prevista
+El borrador distinguía L1 (psicológico ordinario), L2 (neurobiológico local) y L3 (estructural-relacional formal). El salto de L1 a circuitos cerebrales saltaba precisamente el nivel donde el fenómeno vive: organismo acoplado con su entorno, tarea e historia. La respuesta del profesor a la pregunta original lo nombra explícitamente como condición de anclaje.
 
-Se resuelve en:
+### Consecuencia operativa
 
-- `02-fundamentos/02-epistemologia-de-la-compresion.md`
-- `03-formalizacion/01-aparato-formal.md`
+El nivel medio debe reformularse como **B** (conductual-biológico): organismo + entorno + información ecológica + tarea + historia + biomecánica + actividad neural cuando proceda. El vínculo de L3 con L1 es indirecto y restrictivo (L1 fija qué pregunta importa); el vínculo de L3 con B es directo y traduccional (B fija si la respuesta es legítima). Cada término de L3 debe traducirse a una variable de B medible o admitirse en modo programático.
 
-## Falencia 4. Formalización todavía programática
+### Cómo se resuelve
 
-### Problema
+Se introduce el registro **B** como nivel pleno con ecuaciones canónicas del par dinámico acoplado. La semántica revisada **S** se gana solo a posteriori, con las categorías que sobreviven a la auditoría.
 
-Los grafos e hipergrafos aparecen como intuición fértil, pero todavía no tienen un estatuto metodológico suficientemente preciso.
+### Dónde se trata
 
-### Riesgo
+- definición de B: capítulo 02-04 (anclaje conductual-ecológico);
+- asimetría L1/B/L3/S: capítulo 02-04 y capítulo 03-02.
 
-Un evaluador podría ver el formalismo como decoración conceptual, no como herramienta disciplinaria real.
+## Falencia 5. Ausencia de criterio de fracaso global
 
-### Qué hay que hacer
+### Diagnóstico
 
-- especificar qué representan los nodos, relaciones y operadores;
-- aclarar que el formalismo no es ontología adicional;
-- fijar límites de la formalización.
+El borrador listaba criterios locales de legitimidad categorial. Faltaba la respuesta a una pregunta más severa: ¿qué tendría que pasar para admitir que la tesis, como marco general, falló? Sin esa respuesta, la tesis sigue siendo fuerte como visión y débil como apuesta.
 
-### Resolución prevista
+### Consecuencia operativa
 
-Se trabaja en:
+La tesis falla como marco general si, en su caso ancla canónico, el aparato no produce ventaja discriminante respecto a rivales ya consolidados. Falla como marco extensible si los dominios programáticos no admiten construcción de su análogo del caso ancla. Ambos fallos son falsificables.
 
-- `03-formalizacion/01-aparato-formal.md`
-- `03-formalizacion/02-criterios-de-legitimidad-y-metodo.md`
+### Cómo se resuelve
 
-## Falencia 5. Déficit de criterios de evaluación
+Se especifica en el capítulo 06-01 (cierre demostrativo): condiciones suficientes de demostración, condiciones necesarias de fracaso, deuda residual nombrada con plazo y entregable.
 
-### Problema
+### Dónde se trata
 
-La tesis afirma que algunas categorías son legítimas y otras sospechosas, pero todavía necesita criterios que permitan decidirlo de modo no arbitrario.
+- criterios de fracaso: capítulo 06-01;
+- comparación rival pública: capítulo 04-01.
 
-### Riesgo
+## Falencia 6. Bibliografía no integrada al cuerpo argumental
 
-Sin criterios, la propuesta podría parecer una preferencia terminológica sofisticada.
+### Diagnóstico
 
-### Qué hay que hacer
+El repositorio reunió un corpus considerable (Bunge, Dennett, Searle, Bourdieu, Latour, Simondon, Wittgenstein, Sellars, Maturana–Varela, Whitehead, Chalmers y otros). Hasta la corrección, ese corpus aparecía como mapa orientativo pero no como diálogo textual riguroso.
 
-Fijar criterios como:
+### Consecuencia operativa
 
-- anclaje material;
-- dependencia empírica;
-- fidelidad relacional;
-- poder inferencial;
-- poder predictivo;
-- poder interventivo;
-- reversibilidad parcial;
-- economía explicativa.
+Cada capítulo de fundamentos, formalización, debates y aplicaciones debe nombrar al menos un interlocutor cuya posición se recoja, se reformule o se discrimine. La integración bibliográfica deja de ser tarea pospuesta y pasa a ser condición de admisión académica.
 
-### Resolución prevista
+### Cómo se resuelve
 
-Se resuelve en:
+Se asignan interlocutores principales por capítulo (Bunge y Dupré en ontología; Dennett en patrones reales; Sellars y Wittgenstein en crítica de reificación; Bechtel y Craver en explicación multinivel; Simondon en individuación; Bourdieu y Latour en aplicaciones institucionales; Searle en ontología social; Varela–Thompson y Noë en mente; Warren y Gibson en behavioral dynamics) y se exige diálogo textual mínimo por capítulo.
 
-- `03-formalizacion/02-criterios-de-legitimidad-y-metodo.md`
+### Dónde se trata
 
-## Falencia 6. Riesgo de relacionalismo vacío
+- mapa de interlocutores funcionales: capítulo 07 (bibliografía);
+- diálogo textual: distribuido en cada capítulo según corresponda.
 
-### Problema
+## Riesgos heredados que las correcciones no eliminan
 
-Toda tesis que enfatiza relaciones corre el riesgo de volverse trivial si no aclara qué diferencia una relación relevante de una mera conexión verbal.
+Tres riesgos sobreviven a las correcciones y deben vigilarse durante la redacción.
 
-### Riesgo
+### Riesgo de inmunización por nivel
 
-Se podría objetar que `todo está relacionado con todo`, lo cual vacía la tesis de poder explicativo.
+La cláusula "depende del nivel" puede convertirse en escudo retórico que protege contra cualquier objeción. Antídoto: cada uso de la cláusula debe especificar qué pregunta determina el nivel y qué predicción discriminante se compromete a producir.
 
-### Qué hay que hacer
+### Riesgo de lexicalización interna
 
-- insistir en restricciones, dependencias y diferencias relevantes;
-- vincular relación con efectos explicativos, predictivos o interventivos;
-- distinguir estructura real de asociación suelta.
+Términos del marco propio (`compresión`, `anclaje`, `multiescala`, `dossier`, `atractor`) pueden volverse contraseña de tribu si se repiten sin distinciones nuevas. Antídoto: cada uso debe poder traducirse a operación, observable o predicción.
 
-### Resolución prevista
+### Riesgo de hipertrofia metodológica
 
-Se ataca en:
+Una tesis que se concentra demasiado en sus propios protocolos puede perder de vista el explanandum. Antídoto: el caso ancla canónico fija el centro fenomenológico; los protocolos solo se justifican en la medida en que mejoran su tratamiento o el de un dominio análogo.
 
-- `02-fundamentos/02-epistemologia-de-la-compresion.md`
-- `03-formalizacion/02-criterios-de-legitimidad-y-metodo.md`
+## Balance del diagnóstico
 
-## Falencia 7. Falta de adversarios filosóficos explícitos
+La tesis no necesita ser reemplazada. Necesita ser disciplinada. Las seis falencias se atacan con seis movimientos articulados — caso ancla canónico, definición técnica de patrón, formalización con protocolo empírico, registro B explícito, criterios de fracaso, bibliografía integrada — que reorganizan el manuscrito sin sacrificar su intuición fuerte. El resto del proyecto desarrolla cada movimiento.
 
-### Problema
+## Lectura cruzada
 
-El borrador sugiere muchos contrastes, pero todavía no organiza una discusión explícita con posiciones rivales.
+Para pasar de este diagnóstico al cuerpo de la tesis corregida:
 
-### Riesgo
+- la falencia 1 se resuelve sobre todo en `05-aplicaciones/05-dinamica-conductual-reconstruccion-warren.md`;
+- la falencia 2 se resuelve en `02-fundamentos/01-ontologia-material-relacional.md` y `02-fundamentos/04-anclaje-conductual-ecologico.md`;
+- la falencia 3 se resuelve en `03-formalizacion/01-aparato-formal.md` y `03-formalizacion/04-operacionalizacion-de-kappa.md`;
+- la falencia 4 se resuelve en `02-fundamentos/04-anclaje-conductual-ecologico.md`;
+- la falencia 5 se resuelve en `06-cierre/01-conclusion-demostrativa.md`;
+- la falencia 6 se resuelve transversalmente, con guía en `07-bibliografia/01-bibliografia-orientativa.md`.
 
-Sin contrincantes claramente nombrados, la tesis puede parecer inmune a prueba.
-
-### Qué hay que hacer
-
-Definir con claridad el enfrentamiento con:
-
-- dualismo;
-- materialismo ingenuo;
-- reduccionismo plano;
-- emergentismo sustancialista;
-- constructivismo arbitrario;
-- instrumentalismo puro;
-- formalismo vacío.
-
-### Resolución prevista
-
-Se desarrolla en:
-
-- `01-diagnostico/02-objeciones-y-riesgos.md`
-- `04-debates/01-debates-con-posiciones-rivales.md`
-
-## Falencia 8. Falta de casos de prueba jerarquizados
-
-### Problema
-
-El borrador ofrece muchos ejemplos, pero todavía no organiza cuáles son ilustrativos y cuáles son decisivos.
-
-### Riesgo
-
-Una teoría muy general necesita casos estratégicos para mostrar que no es un mero cambio de vocabulario.
-
-### Qué hay que hacer
-
-Seleccionar pocos casos fuertes, no muchos casos dispersos.
-
-### Resolución prevista
-
-Los casos elegidos son:
-
-1. mente, memoria y yo;
-2. célula, organismo y ecosistema;
-3. servicio técnico y sistema distribuido;
-4. institución, mercado y Estado.
-
-Se desarrollan en `05-aplicaciones/`.
-
-## Falencia 9. Falta de una metodología explícita de investigación
-
-### Problema
-
-El borrador insinúa un método, pero todavía no lo presenta como protocolo replicable.
-
-### Riesgo
-
-La tesis podría ser fuerte como interpretación filosófica, pero débil como programa de investigación.
-
-### Qué hay que hacer
-
-Transformar el principio de auditoría ontológica en una secuencia operativa:
-
-1. detectar categoría heredada;
-2. buscar sustrato material;
-3. aislar variables;
-4. mapear relaciones;
-5. decidir qué comprimir y qué expandir;
-6. evaluar el modelo por su rendimiento.
-
-### Resolución prevista
-
-Se desarrolla en:
-
-- `03-formalizacion/02-criterios-de-legitimidad-y-metodo.md`
-
-## Falencia 10. Ausencia de una estrategia de defensa oral
-
-### Problema
-
-El borrador es conceptualmente denso, pero aún no está preparado para ser defendido frente a preguntas rápidas, agresivas o escépticas.
-
-### Riesgo
-
-Una tesis sólida en papel puede sufrir en exposición oral si no tiene formulaciones cortas, objeciones anticipadas y respuestas calibradas.
-
-### Qué hay que hacer
-
-- preparar una versión de 2 minutos, 5 minutos y 15 minutos;
-- anticipar preguntas de tribunal;
-- convertir conceptos complejos en fórmulas precisas y memorizables.
-
-### Resolución prevista
-
-Se trabaja en:
-
-- `06-cierre/02-guia-de-defensa.md`
-
-## Falencia 11. Insuficiente anclaje bibliográfico explícito
-
-### Problema
-
-El manuscrito se siente filosóficamente maduro, pero todavía no hace visible con quién conversa.
-
-### Riesgo
-
-Sin mapa bibliográfico, puede parecer una intuición aislada en vez de una intervención en debates reales.
-
-### Qué hay que hacer
-
-- identificar tradiciones aliadas;
-- identificar adversarios cercanos;
-- convertir esas líneas en bibliografía formal posterior.
-
-### Resolución prevista
-
-Se inicia en:
-
-- `07-bibliografia/01-bibliografia-orientativa.md`
-
-## Falencia 12. Riesgo de que el lenguaje gane demasiado terreno
-
-### Problema
-
-La tesis critica la reificación lingüística, pero puede terminar girando demasiado alrededor de nombres y categorías si no insiste en mecanismos, restricciones y efectos.
-
-### Riesgo
-
-El lector podría pensar que la propuesta es principalmente una crítica semántica.
-
-### Qué hay que hacer
-
-- recordar que el centro es la estructura material-relacional;
-- usar el análisis del lenguaje como herramienta, no como tema soberano;
-- reforzar la conexión con medición, modelización e intervención.
-
-### Resolución prevista
-
-Se resuelve transversalmente, sobre todo en:
-
-- `02-fundamentos/`
-- `03-formalizacion/`
-- `05-aplicaciones/`
-
-## Balance diagnóstico
-
-La tesis no necesita ser reemplazada: necesita ser **disciplinada**.
-
-Su problema no es la debilidad de la intuición, sino el exceso de potencia todavía no canalizada. En términos filosóficos, la tarea no es negar el manuscrito, sino comprimirlo mejor sin mutilarlo. Bastante coherente con la tesis misma, lo cual siempre ayuda.
+La bitácora de la sesión que produjo las correcciones queda como material auxiliar en `01-diagnostico/sesiones/`. No es parte del cuerpo argumental: es trazabilidad histórica.

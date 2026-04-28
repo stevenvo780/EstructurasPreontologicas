@@ -1,103 +1,163 @@
-# Proyecto de tesis
-## Monismo material-relacional, formalización estructural y compresión controlada de la realidad
+# Tesis doctoral: Monismo material-relacional con compresión multiescala
 
-Este repositorio convierte el borrador base de `tesis.md` en un **proyecto de tesis modular**, pensado para pasar de una intuición filosófica potente a una propuesta académica defendible, ampliable y ordenada.
+## Qué es este repositorio
 
-El documento `tesis.md` sigue siendo el **manuscrito fuente**: ahí está la formulación extensa y continua de la intuición central. El resto de carpetas traduce esa intuición a una arquitectura de tesis más rigurosa.
+Este repositorio contiene un proyecto de tesis doctoral cuya idea central puede expresarse en una línea:
 
-## Cómo está organizado el proyecto
+> Todo fenómeno empíricamente explicable está anclado en un sustrato material dinámico; las entidades, niveles y categorías con que lo pensamos son patrones relacionales estabilizados — atractores empíricamente identificables de sistemas dinámicos acoplados — que se admiten en el marco solo bajo dossier de anclaje completo y traducibilidad verificable entre registros de descripción.
 
-```text
+El manuscrito-fuente original (`tesis.md`) presenta esta idea en forma extensa. El resto del repositorio convierte la idea en arquitectura doctoral defendible: diagnóstico estructural, fundamentos, formalización, debates con rivales, aplicaciones (caso ancla canónico + cuatro dominios programáticos), cierre demostrativo, guía de defensa, hoja de ruta.
+
+## Régimen de validez declarado
+
+La tesis está **demostrada** en su caso ancla canónico — la dinámica conductual de la percepción y la acción (Warren 2006) — con dossier de anclaje completo, predicciones cumplidas con varianza explicada superior al 97%, y discriminación pública contra modelos internos y otras posiciones rivales. La tesis está **articulada como programa** en cuatro dominios adicionales (mente, biología, sistemas técnicos, instituciones) con criterios explícitos de elevación a modo demostrativo. La asimetría se nombra como hoja de ruta, no se disimula.
+
+## Estructura del repositorio
+
+```
 .
-├── tesis.md
-├── README.md
-├── 00-proyecto/
-├── 01-diagnostico/
-├── 02-fundamentos/
-├── 03-formalizacion/
-├── 04-debates/
-├── 05-aplicaciones/
-├── 06-cierre/
-├── 07-bibliografia/
-├── 08-consistencia-st/
-└── Tareas/
+├── tesis.md                          ← manuscrito-fuente
+├── README.md                         ← este archivo
+├── 00-proyecto/                      ← arquitectura, preguntas, plan de capítulos
+├── 01-diagnostico/                   ← falencias, objeciones, sesiones (subcarpeta)
+├── 02-fundamentos/                   ← ontología, epistemología, categorías, nivel B
+├── 03-formalizacion/                 ← aparato, criterios, auditoría, κ empírica
+├── 04-debates/                       ← rivales, limitaciones
+├── 05-aplicaciones/                  ← criterios, programáticas, caso ancla canónico
+├── 06-cierre/                        ← conclusión demostrativa, defensa, hoja de ruta
+├── 07-bibliografia/                  ← corpus PDF y mapa de interlocutores
+├── 08-consistencia-st/               ← capa ST de validación lógica
+└── Tareas/                           ← backlog duro y mega-tareas
 ```
 
 ## Orden recomendado de lectura
 
-1. `00-proyecto/01-estructura-general.md`
-2. `01-diagnostico/01-falencias-de-la-tesis.md`
-3. `01-diagnostico/02-objeciones-y-riesgos.md`
-4. `00-proyecto/02-preguntas-objetivos-hipotesis.md`
-5. `02-fundamentos/`
-6. `03-formalizacion/`
-7. `04-debates/`
-8. `05-aplicaciones/`
-9. `06-cierre/`
-10. `07-bibliografia/01-bibliografia-orientativa.md`
-11. `08-consistencia-st/README.md`
-12. `Tareas/README.md`
+### Para evaluador o lector externo
+
+1. `00-proyecto/01-estructura-general.md` (mapa del proyecto);
+2. `00-proyecto/02-preguntas-objetivos-hipotesis.md` (qué se pregunta y qué se responde);
+3. `01-diagnostico/01-falencias-de-la-tesis.md` (problema a resolver);
+4. `02-fundamentos/01-ontologia-material-relacional.md` (qué existe);
+5. `02-fundamentos/04-anclaje-conductual-ecologico.md` (nivel B y asimetría L1↔B↔L3↔S);
+6. `03-formalizacion/01-aparato-formal.md` (con qué herramientas se opera);
+7. `03-formalizacion/02-criterios-de-legitimidad-y-metodo.md` (filtro de admisión: dossier de anclaje);
+8. `04-debates/01-debates-con-posiciones-rivales.md` (discriminación pública contra rivales);
+9. `05-aplicaciones/00-criterios-de-admision.md` (modo demostrativo vs programático);
+10. `05-aplicaciones/05-dinamica-conductual-reconstruccion-warren.md` (caso ancla canónico, demostrativo);
+11. `06-cierre/01-conclusion-demostrativa.md` (la tesis demostrada y sus condiciones de fracaso);
+12. `06-cierre/02-guia-de-defensa.md` (la tesis defendible oralmente).
+
+### Para autor o continuador del proyecto
+
+Igual que arriba, más:
+
+13. `01-diagnostico/02-objeciones-y-riesgos.md`;
+14. `02-fundamentos/02-epistemologia-de-la-compresion.md`;
+15. `02-fundamentos/03-categorias-objetos-propiedades-e-identidad.md`;
+16. `03-formalizacion/03-auditoria-ontologica-y-diseno-de-investigacion.md`;
+17. `03-formalizacion/04-operacionalizacion-de-kappa.md`;
+18. `04-debates/02-limitaciones-y-puntos-de-presion.md`;
+19. `05-aplicaciones/01-mente-memoria-yo.md` (programático);
+20. `05-aplicaciones/02-biologia-y-ecologia.md` (programático);
+21. `05-aplicaciones/03-sistemas-tecnicos-distribuidos.md` (programático);
+22. `05-aplicaciones/04-instituciones-mercado-y-estado.md` (programático);
+23. `06-cierre/03-hoja-de-ruta-para-tesis-final.md`;
+24. `07-bibliografia/01-bibliografia-orientativa.md`;
+25. `08-consistencia-st/README.md`;
+26. `Tareas/README.md`.
 
 ## Qué resuelve cada carpeta
 
 ### `00-proyecto`
-Define la lógica global del trabajo: arquitectura, preguntas, objetivos, hipótesis y plan de capítulos.
+
+Define la lógica global del trabajo: arquitectura del manuscrito doctoral, preguntas centrales y secundarias, hipótesis (H1 a H7), objetivos, plan de capítulos.
 
 ### `01-diagnostico`
-Identifica las debilidades del borrador actual y las objeciones fuertes que una evaluación académica probablemente planteará.
+
+Identifica las falencias estructurales del manuscrito-fuente y las objeciones discriminantes que cualquier evaluación seria planteará. La subcarpeta `sesiones/` conserva la trazabilidad histórica de las correcciones.
 
 ### `02-fundamentos`
-Desarrolla la tesis en su núcleo duro: ontología, epistemología y estatuto de categorías, objetos, propiedades y niveles.
+
+Desarrolla el núcleo duro: ontología material-relacional con definición técnica de patrón estabilizado, epistemología de la compresión multiescala, reformulación operativa de categorías-objetos-propiedades-identidad, y nivel B (conductual-biológico) con asimetría L1↔B↔L3↔S.
 
 ### `03-formalizacion`
-Traduce la tesis a un aparato conceptual más preciso: grafos, hipergrafos, compresión, expansión, criterios de legitimidad y método de investigación.
+
+Traduce la tesis a aparato operativo: cinco operadores (μ, G, H, κ, ε), pregunta paramétrica Q, diez criterios de legitimidad, dossier de anclaje de catorce componentes, protocolo de auditoría ontológica de nueve fases, procedimiento empírico de κ vía baja dimensionalidad efectiva.
 
 ### `04-debates`
-Sitúa la propuesta frente a posiciones rivales: dualismo, reduccionismo plano, emergentismo fuerte, constructivismo arbitrario, instrumentalismo puro y formalismo vacío.
+
+Sitúa la propuesta frente a catorce posiciones rivales identificables (filosóficas y empíricas) con tabla de discriminación pública, y reconoce las seis limitaciones genuinas que sobreviven a las correcciones.
 
 ### `05-aplicaciones`
-Muestra que la tesis no es retórica general: se pone a prueba en mente, biología, ecología, sistemas técnicos e instituciones.
+
+Distingue modo demostrativo de modo programático. Contiene el caso ancla canónico (behavioral dynamics, modo demostrativo) y cuatro aplicaciones programáticas (mente, biología, sistemas técnicos, instituciones) con criterios de elevación.
 
 ### `06-cierre`
-Recoge la conclusión programática, la guía de defensa oral y la estrategia para convertir el prototipo en tesis final.
+
+Reúne la conclusión demostrativa con condiciones de fracaso falsables, la guía de defensa oral en tres tiempos (2, 5, 15 minutos), y la hoja de ruta para tesis final con cronograma agregado.
 
 ### `07-bibliografia`
-Reúne líneas de diálogo bibliográfico para consolidar el aparato académico y preparar citas formales posteriores.
+
+Mapa de interlocutores funcionales por capítulo y corpus PDF. Su conversión en bibliografía formal con citas rigurosas es uno de los pasos de la hoja de ruta.
 
 ### `08-consistencia-st`
-Integra `@stevenvo780/st-lang` como capa local de validación lógica: suite de consistencia, formalizaciones mínimas del núcleo de la tesis y trazabilidad con Text Layer hacia archivos del repositorio.
+
+Capa local de validación lógica con `@stevenvo780/st-lang`: formalizaciones mínimas del núcleo argumental con comprobación automática de no-contradicción y trazabilidad textual hacia archivos del repositorio.
 
 ### `Tareas`
-Reúne la crítica más dura al proyecto y el backlog de tareas gigantes que todavía separan la tesis de un programa teórico-científico más severo, junto con una capa aparte de tareas documentales delegables a IA o soporte.
 
-## Diagnóstico general del borrador actual
+Backlog duro: crítica radical pre-corrección, pasos no negociables, mega-tareas estratégicas (programa científico general, traducción de obras, operacionalización-validación, benchmark rivales, corpus ST), tareas documentales delegables.
 
-El borrador original tiene una gran fortaleza: **ya contiene una tesis fuerte**, una intuición metodológica clara y un vocabulario relativamente consistente. Pero todavía tiene cinco debilidades típicas de una propuesta prometedora en estado predoctoral:
+## Estado del manuscrito
 
-1. **Generalidad excesiva**: dice mucho, pero aún no termina de delimitar contra quién discute y con qué criterios gana.
-2. **Falta de arquitectura académica**: hay tesis, pero todavía no hay secuencia de capítulos, preguntas, objetivos y resultados esperables bien separados.
-3. **Formalización programática**: la idea de grafos e hipergrafos está presente, pero necesita estatuto metodológico, límites y reglas de uso.
-4. **Validación insuficiente**: la propuesta necesita criterios para mostrar cuándo una compresión es legítima y cuándo no.
-5. **Necesidad de casos estratégicos**: sin aplicaciones fuertes, una tesis tan general corre el riesgo de parecer elegante pero inmune a prueba.
+**Lo consolidado** (verificable en cada capítulo):
 
-Todo el proyecto está diseñado para atacar exactamente esas debilidades.
+- diagnóstico estructural cerrado;
+- ontología material-relacional con definición técnica de patrón;
+- epistemología de la compresión con verdad como preservación estructural;
+- nivel B y asimetría L1↔B↔L3↔S;
+- aparato formal de cinco operadores con procedimiento empírico de κ;
+- diez criterios y dossier de catorce componentes;
+- auditoría ontológica como protocolo de nueve fases;
+- discriminación pública contra catorce rivales;
+- caso ancla canónico (behavioral dynamics) con dossier completo;
+- aplicaciones programáticas con criterios de elevación;
+- conclusión demostrativa con condiciones de fracaso falsables;
+- guía de defensa oral.
+
+**Lo pendiente** (especificado como deuda en capítulo 06-01):
+
+- elevación de al menos un caso programático a demostrativo (prioridad: biología por la accesibilidad de datos sobre regime shifts);
+- integración bibliográfica formal con citas rigurosas en cada capítulo;
+- desarrollo del aparato para variables normativas;
+- redacción unificada en estilo doctoral con anexos operativos;
+- lectura externa por evaluadores hostiles.
+
+Cronograma plausible para tesis final: 24-36 meses (capítulo 06-03).
 
 ## Idea-fuerza que unifica el repositorio
 
-> La realidad es material, pero su inteligibilidad depende de patrones relacionales multiescala; por eso las categorías solo son legítimas cuando funcionan como compresiones controladas de estructura real.
+> La realidad es material, pero su inteligibilidad depende de patrones relacionales — atractores empíricamente identificables de sistemas dinámicos acoplados — que se admiten en el marco solo bajo dossier de anclaje completo y traducibilidad verificable entre registros de descripción.
 
-## Resultado esperado de este proyecto
+## Diferencia respecto al borrador original
 
-Al terminar el desarrollo, el borrador ya no funcionará solo como una intuición extensa, sino como un **esqueleto integral de tesis** con:
+El manuscrito-fuente tiene una intuición filosófica fuerte. El proyecto la disciplina mediante seis correcciones estructurales identificadas tras la respuesta del profesor que motivó la pregunta original (capítulo 01-01):
 
-- problema bien formulado;
-- preguntas y objetivos diferenciados;
-- objeciones anticipadas;
-- núcleo ontológico y epistemológico sólido;
-- aparato formal mínimo pero defendible;
-- aplicaciones comparativas;
-- estrategia de defensa oral;
-- bibliografía orientativa;
-- capa de consistencia lógica con ST.
+1. caso ancla canónico (Warren 2006) en lugar de generalidad sin demostración;
+2. patrón estabilizado definido técnicamente como atractor empírico con cinco condiciones;
+3. aparato formal con protocolo empírico de κ vía baja dimensionalidad;
+4. nivel B (conductual-biológico) en lugar de L2 neurobiológico estrecho;
+5. condiciones de fracaso global falsables;
+6. bibliografía integrada por capítulo con interlocutor principal y secundarios.
 
-Si el borrador original era la cantera, esta estructura ya es la obra negra. Y bastante habitable, por cierto.
+Estas correcciones convierten el manifiesto sofisticado en programa de investigación auditable.
+
+## Cómo citar
+
+Borrador en proceso. Hasta cierre de tesis final, citar como:
+
+> [Autor]. *Monismo material-relacional con compresión multiescala*. Manuscrito doctoral en preparación, [año].
+
+## Licencia
+
+[Por especificar según política institucional]

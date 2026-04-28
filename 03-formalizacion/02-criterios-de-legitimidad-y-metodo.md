@@ -1,116 +1,183 @@
-# Criterios de legitimidad y método
+# Criterios de legitimidad y dossier de anclaje
 
-## Problema rector
+## Función de este capítulo
 
-La tesis afirma que algunas categorías y compresiones son legítimas y otras no. Para que esa afirmación no sea arbitraria, hacen falta criterios explícitos. Este archivo fija esos criterios y los convierte en método.
+Este capítulo convierte los principios filosóficos de la tesis en un filtro de admisión operable. Cualquier modelo, categoría, compresión o aplicación que aparezca en el manuscrito debe pasar por aquí antes de admitirse. La función es severa: la tesis no se mide por su elegancia retórica sino por su capacidad de exigir compromisos públicos verificables a cada uno de sus productos. El capítulo 03-01 fija el aparato; este especifica las condiciones que debe satisfacer cualquier uso del aparato.
 
-## Regla general
+## Tesis del capítulo
 
-> una categoría, un modelo o una compresión son legítimos si preservan estructura relevante del fenómeno para una pregunta determinada y mejoran la capacidad de explicar, predecir o intervenir sin inflación ontológica innecesaria.
+> Una compresión, una categoría o un modelo es legítimo respecto a una pregunta `Q` si y solo si satisface los diez criterios del marco organizados en un dossier de anclaje verificable por terceros. El dossier no es lista decorativa: es filtro de admisión cuyo incumplimiento implica retiro de la propuesta. El método de evaluación es público, comparativo y trazable.
 
-## Los diez criterios de legitimidad
+## 1. Regla general
 
-### 1. Anclaje material
+> una categoría, un modelo o una compresión son legítimos si preservan estructura relevante del fenómeno para una pregunta `Q` y mejoran la capacidad de explicar, predecir o intervenir sin inflación ontológica innecesaria, bajo dossier de anclaje públicamente verificable.
 
-El modelo debe conectarse con procesos materialmente instanciados. Si no puede señalarse qué soporta o realiza el fenómeno, la categoría pierde fuerza ontológica.
+Esto consolida los criterios dispersos en el borrador original en un solo gesto operativo. Lo que sigue son las condiciones específicas y el procedimiento de evaluación.
 
-### 2. Dependencia empírica
+## 2. Los diez criterios
 
-Debe haber posibilidad de observación, medición, registro, comparación o intervención, aun si el acceso es indirecto.
+### 2.1. Anclaje material
 
-### 3. Fidelidad relacional
+El modelo debe conectarse con procesos materialmente instanciados. Si no puede señalarse qué soporta o realiza el fenómeno, la propuesta pierde fuerza ontológica antes de evaluarse cualquier otro criterio.
 
-La compresión no debe borrar dependencias que cambian el fenómeno en cuestión.
+### 2.2. Dependencia empírica
 
-### 4. Poder inferencial
+Debe haber posibilidad de observación, medición, registro, comparación o intervención bajo régimen R explícito. Acceso indirecto se admite si está justificado.
 
-El recorte debe permitir concluir algo nuevo, ordenar mejor los casos o reducir confusión conceptual.
+### 2.3. Fidelidad relacional
 
-### 5. Poder predictivo
+La compresión no debe borrar dependencias que cambian el fenómeno bajo Q. La fidelidad se prueba con intervención: si manipular una variable supuestamente comprimida produce diferencia inferencial inesperada, la compresión ocultaba estructura relevante.
 
-La representación debe mejorar la anticipación de estados, conductas, fallas o trayectorias.
+### 2.4. Poder inferencial
 
-### 6. Poder interventivo
+El recorte debe permitir concluir algo nuevo, ordenar mejor los casos o reducir confusión conceptual respecto a la versión no comprimida o respecto a alternativas.
 
-Una buena categoría ayuda a decidir qué modificar para producir otro resultado.
+### 2.5. Poder predictivo
 
-### 7. Robustez
+La representación debe mejorar la anticipación de estados, conductas, fallas o trayectorias. La mejora es comparativa: respecto a un rival explícito, no en abstracto.
 
-El patrón debe sostenerse al menos parcialmente bajo cambios razonables de contexto, medición o escala.
+### 2.6. Poder interventivo
 
-### 8. Reversibilidad parcial
+Una buena categoría ayuda a decidir qué modificar para producir otro resultado. Si la categoría no orienta intervención discriminante, su utilidad es solo descriptiva.
 
-Debe ser posible reabrir lo comprimido cuando el problema lo exija.
+### 2.7. Robustez
 
-### 9. Economía explicativa
+El patrón debe sostenerse al menos parcialmente bajo cambios razonables de contexto, medición o escala. Una compresión que se evapora ante cualquier perturbación menor es frágil.
 
-La representación debe reducir complejidad sin ocultar lo decisivo.
+### 2.8. Reversibilidad parcial
 
-### 10. No reificación
+Debe ser posible reabrir lo comprimido cuando el problema lo exija. Una compresión sin operador ε disponible es caja negra.
 
-Debe quedar claro que la categoría o el modelo no se convierten automáticamente en sustancia independiente.
+### 2.9. Economía explicativa
 
-## Cómo usar los criterios
+La representación debe reducir complejidad sin ocultar lo decisivo. La medida no es estética: es relación entre coste del modelo y ganancia inferencial.
 
-No hace falta que cada criterio se satisfaga en grado absoluto. La evaluación es comparativa y depende de la pregunta `Q`. Aun así, los criterios permiten detectar fallas claras.
+### 2.10. No reificación
 
-## Matriz simple de evaluación
+Debe quedar claro que la categoría o el modelo no se convierten automáticamente en sustancia independiente. Esto se verifica revisando si se predican capacidades sustantivas no derivables del sustrato.
 
-Puede usarse esta escala orientativa:
+## 3. Dossier de anclaje
+
+El dossier consolida los diez criterios en un documento operativo que cualquier aplicación admisible debe acompañar.
+
+### 3.1. Componentes obligatorios
+
+Un dossier completo contiene:
+
+```
+1. Pregunta Q = (φ, τ, R)                    fechada
+2. Variables X (observables o inferidas)     con régimen de medición
+3. Sustrato material instanciante            descrito explícitamente
+4. Grafo G = (V, E, W, T)                    con criterios de admisión de aristas
+5. Hipergrafo H si procede                   con justificación
+6. Compresión κ propuesta                    con dimensionalidad efectiva
+7. Atractores, repulsores, bifurcaciones     identificados empíricamente
+8. Pruebas de validación                     reproducción, generalización, topología, intervención
+9. Predicción discriminante                  contra rival explícito
+10. Intervención discriminante               experimento que la falsaría
+11. Operador ε                               protocolo de reapertura para regiones límite
+12. Traducción B↔L3                          cada parámetro de L3 a variable de B
+13. Limitaciones declaradas                  régimen donde el modelo no se aplica
+14. Comparación rival                        tabla con criterios públicos
+```
+
+### 3.2. Criterio de completitud
+
+Un dossier es admisible si los catorce componentes están presentes con contenido sustantivo. Componentes vacíos o decorativos invalidan el dossier.
+
+### 3.3. Criterio de fallo del dossier
+
+Un dossier falla si:
+
+- alguna variable no es operacionalizable;
+- alguna arista no resiste `do`-test;
+- la compresión no pasa las pruebas de validación;
+- la predicción discriminante no se cumple en datos públicos;
+- la intervención discriminante se evita;
+- algún parámetro de L3 no se traduce a B (formalismo desanclado).
+
+El fallo en cualquiera implica retiro de la propuesta o reescritura del dossier desde el componente afectado.
+
+## 4. Matriz de evaluación
+
+Para evaluación operativa rápida, los diez criterios se puntúan en escala de tres niveles:
 
 - **0**: el criterio no se cumple;
-- **1**: se cumple de manera débil o parcial;
-- **2**: se cumple de manera robusta.
+- **1**: se cumple débilmente o parcialmente;
+- **2**: se cumple robustamente.
 
-Una categoría que sistemáticamente obtiene `0` o `1` en los criterios clave para una pregunta dada debe ser revisada, dividida, expandida o abandonada.
+Una categoría que sistemáticamente obtiene 0 o 1 en los criterios clave para Q debe revisarse, dividirse, expandirse o abandonarse. La evaluación se documenta en el dossier para trazabilidad.
 
-## Método general de trabajo
+### Matriz para el caso ancla canónico
 
-### Paso 1. Fijar la pregunta
+Aplicada al modelo de Fajen y Warren (2003) bajo Q = `predicción de heading en marcha hacia meta y evitando obstáculo`:
 
-No hay evaluación legítima sin una pregunta explícita. Toda compresión vale o falla respecto de un problema.
+| Criterio | Valor | Justificación |
+|---|---|---|
+| Anclaje material | 2 | Cuerpo + entorno + tarea + información ecológica explícita |
+| Dependencia empírica | 2 | Captura motora en VENLab, intervenciones documentadas |
+| Fidelidad relacional | 2 | Reproduce datos con r²=0.980/0.975 |
+| Poder inferencial | 2 | Predice rutas que el lenguaje ordinario no formula |
+| Poder predictivo | 2 | Predicciones cumplidas en condiciones nuevas |
+| Poder interventivo | 2 | Manipulación de flujo óptico, posición de obstáculos |
+| Robustez | 2 | Estable bajo ruido gaussiano del 10% en variables perceptivas |
+| Reversibilidad parcial | 2 | ε bien definido en regiones de bifurcación |
+| Economía explicativa | 2 | 4 parámetros para r²=0.980 |
+| No reificación | 2 | Atractores y repulsores como propiedades del sistema acoplado |
+
+Total: 20/20. Esta matriz es el estándar contra el cual se mide cualquier otro candidato a aplicación demostrativa.
+
+## 5. Método de evaluación
+
+### Paso 1. Fijar la pregunta Q
+
+No hay evaluación legítima sin pregunta explícita. Cambiar Q después del fallo invalida el ciclo.
 
 ### Paso 2. Identificar la categoría heredada
 
-Preguntar qué término o unidad viene dada por el lenguaje ordinario o disciplinar.
+Preguntar qué término o unidad viene dado por el lenguaje ordinario o disciplinar.
 
 ### Paso 3. Localizar el sustrato material
 
-Señalar qué procesos, soportes, cuerpos, infraestructuras o prácticas la instancian.
+Señalar qué procesos, soportes, cuerpos, infraestructuras o prácticas la instancian. Para fenómenos a nivel B, esto incluye organismo + entorno + información + tarea + historia.
 
 ### Paso 4. Aislar variables relevantes
 
-Construir un conjunto inicial de variables observables, inferidas u operacionalizables.
+Construir el conjunto X de variables observables, inferidas u operacionalizables. Especificar régimen de medición R.
 
 ### Paso 5. Mapear dependencias
 
-Representar relaciones, restricciones, secuencias, acoplamientos y retroalimentaciones.
+Construir G = (V, E, W, T). Cada arista pasa criterio de admisión del capítulo 03-01.
 
 ### Paso 6. Probar una compresión
 
-Agrupar subestructuras en nodos, módulos o clases cuando eso reduzca complejidad sin destruir diferencias relevantes.
+Aplicar κ con procedimiento empírico del capítulo 03-04. Identificar dimensionalidad efectiva y atractores.
 
-### Paso 7. Someter la compresión a los criterios
+### Paso 7. Someter a los diez criterios
 
-Evaluar el nuevo recorte según los diez criterios.
+Puntuar cada criterio. Identificar puntuaciones débiles.
 
-### Paso 8. Decidir
+### Paso 8. Comparar contra rival explícito
 
-Solo entonces puede decidirse si conviene:
+Construir tabla de discriminación contra al menos un rival. Identificar celdas donde el modelo gana, celdas donde pierde, celdas donde empata.
 
-- mantener la compresión;
-- expandirla;
-- dividirla;
-- reemplazarla;
-- conservarla solo como etiqueta práctica.
+### Paso 9. Decidir
 
-## Método de cambio de escala
+Solo entonces puede decidirse:
 
-Uno de los aportes centrales de la tesis es que el paso entre escalas no debe depender de intuición vaga. Puede orientarse por tres preguntas:
+- **mantener la compresión** si pasa todos los criterios y discrimina contra rival;
+- **expandirla** si falla en fidelidad relacional o robustez;
+- **dividirla** si la cuenca de atracción no es única;
+- **reemplazarla** si un rival la domina en la matriz;
+- **conservarla solo como rótulo práctico** si su valor es comunicativo pero no inferencial.
 
-1. ¿la estructura interna modifica la explicación?
+## 6. Método de cambio de escala
+
+El paso entre escalas no debe depender de intuición. Se orienta por tres preguntas:
+
+1. ¿la estructura interna modifica la explicación bajo Q?
 2. ¿la compresión actual impide distinguir casos relevantes?
-3. ¿abrir el nivel añade ganancia explicativa mayor que el costo que introduce?
+3. ¿abrir el nivel añade ganancia explicativa mayor que el costo?
 
 ### Regla de decisión
 
@@ -118,46 +185,72 @@ Uno de los aportes centrales de la tesis es que el paso entre escalas no debe de
 - si la tercera respuesta es no, conviene mantener compresión;
 - si el beneficio marginal del detalle es bajo, la expansión es metodológicamente mala.
 
-## Qué cuenta como evidencia a favor de la tesis
+## 7. Qué cuenta como evidencia a favor de la tesis
 
-La propuesta gana fuerza cuando puede mostrar que un recorte material-relacional:
+La propuesta gana fuerza cuando puede mostrar que un recorte material-relacional bajo el aparato:
 
-- mejora un diagnóstico;
-- resuelve una falsa sustancialización;
-- ordena mejor un fenómeno multiescala;
-- permite comparar dominios distintos con una misma matriz de evaluación.
+- mejora un diagnóstico respecto a marco rival;
+- resuelve una falsa sustancialización con predicción discriminante verificable;
+- ordena mejor un fenómeno multiescala con dimensionalidad efectiva justificada;
+- permite comparar dominios distintos con la misma matriz de evaluación.
 
-## Qué contaría como fracaso
+Cada uno de estos requiere caso paradigmático, no afirmación general.
+
+## 8. Qué contaría como fracaso
 
 La tesis fracasa localmente cuando:
 
 - no puede distinguir un buen recorte de uno malo;
-- termina usando `relación` o `patrón` como comodines vacíos;
+- termina usando `relación`, `patrón` o `compresión` como comodines vacíos;
 - no sabe cuándo expandir ni cuándo comprimir;
-- no mejora ninguna explicación concreta frente a alternativas disponibles.
+- no mejora ninguna explicación concreta frente a alternativas disponibles;
+- algún parámetro de L3 no se traduce a B.
 
-## Método comparativo con posiciones rivales
+El fracaso global se discute en capítulo 06-01.
 
-Para mostrar ventaja filosófica, cada caso de aplicación debe compararse con al menos tres lecturas rivales:
+## 9. Método comparativo con posiciones rivales
 
-1. lectura sustancialista;
-2. lectura reduccionista plana;
-3. lectura constructivista o nominalista.
+Para mostrar ventaja filosófica, cada caso de aplicación se compara con tres rivales explícitos. Por dominio:
 
-La tesis debe mostrar qué preserva mejor y qué pierde menos que cada una de ellas.
+- **caso ancla canónico** (percepción-acción): rivales son control óptimo con modelos internos, cognitivismo computacional, conductismo radical;
+- **mente, memoria, yo** (modo programático): rivales son cognitivismo simbólico, dualismo de propiedades, eliminativismo neuroreductor;
+- **biología/ecología**: rivales son reduccionismo molecular, holismo ecológico inflado, esencialismo de especie;
+- **sistemas técnicos**: rivales son arquitectura monolítica, modelado de servicios sin dependencias, físicalismo absurdo;
+- **instituciones**: rivales son individualismo metodológico, holismo trascendental, nominalismo social.
 
-## Uso académico de esta matriz
+La tesis debe mostrar qué preserva mejor y qué pierde menos que cada rival. Capítulo 04-01 desarrolla la confrontación filosófica; los capítulos 05-* la operan por dominio.
 
-Esta matriz sirve para tres tareas:
+## 10. Diferencia entre los diez criterios y el dossier de anclaje
 
-- escribir capítulos con mayor rigor;
-- responder objeciones de tribunal;
-- convertir intuiciones potentes en evaluaciones explícitas.
+Los diez criterios son la **lista verificable** de propiedades exigidas. El dossier de anclaje es el **documento operativo** que organiza la evidencia de cumplimiento. Los criterios son condiciones; el dossier es prueba. Una propuesta puede satisfacer los criterios en abstracto y carecer de dossier; en ese caso no se admite. La tesis exige dossier publicable, no solo cumplimiento abstracto.
 
-## Fórmula metodológica final
+## 11. Diálogo con interlocutores
 
-El método completo puede resumirse así:
+### 11.1. Bunge — exigencias de cientificidad
 
-> fijar la pregunta, localizar el sustrato, aislar variables, mapear relaciones, ensayar compresiones, evaluar su legitimidad y revisar el recorte según su rendimiento explicativo.
+Bunge formula condiciones de cientificidad de un constructo: claridad, falsabilidad, no contradicción, ajuste empírico. Los diez criterios extienden esta lista al dominio multiescala con énfasis en compresión y reversibilidad.
 
-Ahí la tesis deja de ser únicamente una ontología sugerente y se convierte en un procedimiento intelectual aplicable.
+### 11.2. Lakatos — programas de investigación
+
+Lakatos distingue núcleo duro y cinturón protector de un programa. La tesis se organiza así: el núcleo duro son las condiciones de admisión (capítulo 02-01, 02-02, 02-04, 03-01, 03-02); el cinturón protector son las aplicaciones (capítulo 05). Una falsificación local del cinturón no falsifica el núcleo, pero acumular falsificaciones del cinturón degrada el programa.
+
+### 11.3. Cartwright — capacidades verificables por intervención
+
+Cartwright propone que las leyes científicas describen capacidades, no comportamientos invariantes. La tesis recoge la idea: los criterios 5 (predictivo) y 6 (interventivo) son verificación de capacidad bajo intervención, no de regularidad observada.
+
+### 11.4. Pearl — `do`-calculus
+
+Pearl distingue intervención (`do(x)`) de observación (`x`). Los criterios 3, 5 y 6 exigen `do`-test cuando es factible. Las dependencias del grafo G no son correlaciones: son sensibilidades a intervención.
+
+## 12. Cierre
+
+Los diez criterios y el dossier de anclaje convierten la tesis en una propuesta auditable. Ningún producto del marco entra en el manuscrito sin pasar el filtro. La diferencia con un manifiesto es esta exactamente: un manifiesto promete; un programa de investigación se compromete. La tesis se compromete con el dossier.
+
+## 13. Lectura cruzada
+
+- aparato formal que el dossier instrumenta: capítulo 03-01;
+- protocolo de auditoría que aplica el dossier paso a paso: capítulo 03-03;
+- procedimiento empírico de κ: capítulo 03-04;
+- objeciones que el dossier neutraliza: capítulo 04-02;
+- dossier completo del caso ancla canónico: capítulo 05-05;
+- dossier programático de cada dominio adicional: capítulos 05-01 a 05-04.

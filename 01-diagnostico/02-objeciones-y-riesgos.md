@@ -1,233 +1,162 @@
-# Objeciones y riesgos principales
+# Objeciones discriminantes anticipadas
 
-## Función de este archivo
+## Función de este capítulo
 
-Toda tesis ambiciosa debe sobrevivir a sus mejores objeciones. Este documento no enumera críticas débiles para luego derrotarlas con facilidad; intenta aislar las objeciones que realmente podrían comprometer el proyecto.
+Una tesis sobrevive a sus mejores objeciones, no a las peores. Este capítulo aísla las objeciones que efectivamente podrían comprometer el proyecto bajo la versión corregida y las trata como filtros de admisión: cada una se nombra en su forma más fuerte, se responde con un compromiso empírico verificable y se conecta con el lugar del manuscrito donde la respuesta queda demostrada. Las objeciones que el borrador ya neutralizó (dualismo, materialismo ingenuo, reduccionismo plano, formalismo vacío) se tratan como debates en el capítulo 04-01; aquí solo entran las objeciones que aún hoy podrían tirar la tesis si no se respondieran.
 
-## Objeción 1. "Eso sigue siendo materialismo, solo que con más palabras"
+## Tesis del capítulo
 
-### Fuerza de la objeción
+> Bajo el aparato corregido, las cinco objeciones genuinamente peligrosas — sustitución nominal, irrefutabilidad por nivel, vaguedad de patrón, redundancia respecto a marcos vecinos, sobreextensión generalista — admiten respuestas con compromiso empírico explícito. Cada una traza una predicción discriminante o un test público de fallo. La tesis no se inmuniza retóricamente: se expone.
 
-Un crítico puede sostener que la tesis no añade nada sustantivo: simplemente reformula un materialismo conocido con léxico de relaciones, patrones y niveles.
+## Objeción 1. Sustitución nominal
 
-### Respuesta estratégica
+### Forma fuerte
 
-La tesis no se limita a decir que todo está materialmente instanciado. Su novedad consiste en mostrar:
+> Tu tesis cambia "mente" por "atractor del sistema acoplado", "memoria" por "modulación de trazas", "institución" por "patrón material-normativo estabilizado". Eso es renombrar, no explicar. Has trasladado el problema del lenguaje ordinario al lenguaje matemático sin pagar el precio epistémico.
 
-- por qué la materialidad no agota la explicación;
-- por qué los niveles no exigen nuevas sustancias;
-- por qué las categorías deben evaluarse por su rendimiento estructural;
-- cómo operar con compresión y expansión de forma explícita.
+### Por qué pega
 
-### Qué debe probarse
+Es la versión madura del autodiagnóstico §18.8 del borrador. Si la tesis cae en sustitución nominal, falla en el plano que ella misma denuncia.
 
-Que la propuesta cambia efectivamente el modo de evaluar categorías y niveles, y no solo su vocabulario.
+### Respuesta con compromiso
 
-## Objeción 2. "El concepto de patrón es demasiado vago"
+La sustitución es nominal cuando la nueva categoría no produce predicción ni intervención discriminante respecto a la antigua. La respuesta no es retórica; es un test: cada categoría reformulada debe acompañarse de al menos una predicción que el lenguaje ordinario no formula y que un rival explícito formula peor o no formula. En el caso ancla, las leyes de control de Warren–Fajen predicen rutas de evasión de obstáculo con `r² ≈ 0.98` que el lenguaje ordinario `evita el obstáculo` no produce y que el modelo de planificación interna no captura sin parámetros adicionales.
 
-### Fuerza de la objeción
+### Compromiso público
 
-`Patrón` puede volverse una palabra refugio: cuando no se sabe qué decir, se dice que algo es un patrón.
+Cada aplicación admitida en modo demostrativo expone su predicción discriminante en un dossier de anclaje. Si la predicción no aparece o no se cumple en datos públicos, la categoría se retira del marco.
 
-### Respuesta estratégica
+### Dónde se trata
 
-La tesis debe definir patrón de manera operacional:
+Capítulo 03-02 (criterios), capítulo 03-04 (operacionalización de κ), capítulo 05-05 (caso ancla canónico).
 
-> un conjunto relativamente estable de dependencias y diferencias que conserva poder explicativo bajo ciertas transformaciones y escalas.
+## Objeción 2. Irrefutabilidad por nivel
 
-### Qué debe probarse
+### Forma fuerte
 
-- que no toda regularidad cuenta como patrón relevante;
-- que un patrón exige estabilidad relativa y eficacia explicativa;
-- que puede abrirse, medirse o intervenirse al menos parcialmente.
+> Cada vez que una predicción de tu marco falla, puedes responder "ah, ese era el nivel equivocado, había que abrir más" o "la pregunta exigía otra escala". Eso es una máquina de inmunización filosófica. Una teoría que siempre puede redefinir el nivel correcto después del golpe no se expone realmente a perder.
 
-## Objeción 3. "Relación" puede volverse un comodín trivial
+### Por qué pega
 
-### Fuerza de la objeción
+La cláusula `el nivel correcto depende de la pregunta` es genuinamente útil pero puede convertirse en escudo. Si lo hace, la tesis se vuelve ipsa magia.
 
-Si toda cosa está relacionada con otras, decir `relacional` podría no aportar nada.
+### Respuesta con compromiso
 
-### Respuesta estratégica
+La pregunta `Q` debe fijarse antes del intento de modelización, con tolerancia explícita y régimen de medición preestablecido. Cambiar `Q` después del fallo es trampa epistémica reconocida y prohibida por el procedimiento. Cuando un fallo predictivo aparece, el protocolo obliga a una de tres respuestas trazables: (a) el modelo se revisa dentro de la `Q` original aceptando el fallo como límite de validez, (b) se declara el fallo y se retira el modelo, o (c) se documenta el cambio de `Q` como nueva pregunta y se reinicia el ciclo de admisión, sin reciclar el éxito anterior como si valiera para la nueva pregunta.
 
-No toda relación importa. La tesis debe trabajar con relaciones que funcionen como:
+### Compromiso público
 
-- restricciones;
-- dependencias causales;
-- condiciones de posibilidad;
-- acoplamientos dinámicos;
-- constituciones funcionales.
+Cualquier aplicación del marco que aparezca en el manuscrito final lleva fechada la `Q` original y los criterios de fallo asociados. Las revisiones posteriores se anotan como tales.
 
-### Qué debe probarse
+### Dónde se trata
 
-Que la tesis distingue entre conexión irrelevante y estructura operativa.
+Capítulo 03-02 (criterios), capítulo 03-03 (auditoría y diseño), capítulo 06-01 (cierre demostrativo).
 
-## Objeción 4. La tesis podría confundirse con emergentismo débil mal definido
+## Objeción 3. Vaguedad de `patrón`
 
-### Fuerza de la objeción
+### Forma fuerte
 
-Un lector podría decir que el proyecto solo rebautiza la emergencia como organización relacional.
+> Tu tesis depende de la palabra `patrón` para todo: entidad, propiedad, identidad, institución, mente. Si `patrón` significa cualquier regularidad estable, no significa nada. Has importado el problema clásico de los universales con vocabulario nuevo.
 
-### Respuesta estratégica
+### Por qué pega
 
-La tesis debe mostrar dos diferencias:
+`Patrón` es la articulación ontológica central. Si queda vago, la tesis queda vaga en su núcleo.
 
-1. no introduce entidades nuevas por encima del sustrato;
-2. no usa `emergencia` como palabra mágica, sino como señal de que el nivel relevante de organización no coincide con la inspección local de componentes.
+### Respuesta con compromiso
 
-### Qué debe probarse
+`Patrón estabilizado` se define como atractor empíricamente identificable de un sistema dinámico acoplado, con cinco condiciones de admisión: variables componentes medibles, estabilidad asintótica bajo perturbación, cuenca de atracción, comportamiento bajo bifurcación, capacidad de discriminación inferencial. Una regularidad que no satisface las cinco no es patrón en el sentido del marco; es regularidad. La distinción no es estipulativa: sigue la práctica de la dinámica no lineal y se aplica al caso ancla.
 
-Que la organización multiescala es compatible con austeridad ontológica.
+### Compromiso público
 
-## Objeción 5. El proyecto puede derivar en constructivismo encubierto
+Cualquier uso de `patrón` en el manuscrito que no pueda traducirse a las cinco condiciones es marca de error y se reescribe.
 
-### Fuerza de la objeción
+### Dónde se trata
 
-Si las categorías son construidas, alguien podría concluir que su validez depende solo de nuestros intereses.
+Capítulo 02-01 (ontología), capítulo 02-04 (anclaje), capítulo 03-04 (operacionalización).
 
-### Respuesta estratégica
+## Objeción 4. Redundancia respecto a marcos vecinos
 
-La tesis debe insistir en que la construcción teórica está objetivamente constreñida por:
+### Forma fuerte
 
-- regularidades empíricas;
-- estabilidad material;
-- robustez bajo medición;
-- capacidad predictiva;
-- capacidad interventiva.
+> Lo que propones ya existe. Realismo estructural informativo (Ladyman–Ross), explicación mecanicista multinivel (Bechtel–Craver), enactivismo (Varela–Thompson), real patterns (Dennett), behavioral dynamics (Warren). Tu tesis es una colcha de retazos sin diferencia teórica clara respecto a esos marcos.
 
-### Qué debe probarse
+### Por qué pega
 
-Que no todos los recortes son equivalentes y que algunos son objetivamente mejores.
+Es la versión académicamente más peligrosa. Una tesis sin diferencia respecto a sus vecinos no es novedad: es síntesis didáctica.
 
-## Objeción 6. El formalismo puede parecer cosmético
+### Respuesta con compromiso
 
-### Fuerza de la objeción
+La diferencia no es de inventario sino de articulación. La tesis introduce dos elementos que ningún marco vecino reúne en la misma arquitectura: (a) el dossier de anclaje como filtro de admisión que cualquier categoría debe pasar para ser admitida (filtro que combina criterios ontológicos, formales y empíricos en un solo gesto); (b) la asimetría L1↔B↔L3↔S como protocolo formal de traducción que prohíbe la sustitución nominal y operacionaliza la auditoría categorial. Realismo estructural no exige el filtro ni la asimetría; mecanicismo multinivel exige la asimetría parcialmente pero no el filtro; enactivismo exige el anclaje conductual pero no la formalización; Dennett exige patrones reales pero sin protocolo de admisión; Warren exige acoplamiento empírico pero sin generalización ontológica. La novedad está en el ensamblaje, no en cada pieza aislada.
 
-En filosofía, introducir notación sin ganancia clara es un pecado menor, pero irritante. Y a veces mayor.
+### Compromiso público
 
-### Respuesta estratégica
+El capítulo 04-01 contiene tabla de discriminación contra cada marco vecino con criterios de pérdida y ganancia explícitos. Si la tabla no produce ventaja discriminante en al menos dos celdas por marco, la tesis admite haber sido absorbida por el rival y se reformula.
 
-La notación debe cumplir una función disciplinaria concreta:
+### Dónde se trata
 
-- separar planos de análisis;
-- fijar operadores;
-- mostrar criterios de pérdida y preservación;
-- impedir saltos retóricos.
+Capítulo 04-01 (debates), capítulo 06-01 (cierre demostrativo).
 
-### Qué debe probarse
+## Objeción 5. Sobreextensión generalista
 
-Que sin el aparato formal, parte de la tesis quedaría ambigua; y que con él se gana claridad sin inventar una nueva metafísica.
+### Forma fuerte
 
-## Objeción 7. La tesis corre el riesgo de abarcar demasiado
+> Tu tesis aspira a explicar mente, biología, ecología, sistemas técnicos, instituciones, mercado, identidad. Solo desarrollas seriamente uno de esos dominios. Lo demás es promesa. Una tesis ontológica general que solo demuestra un dominio es una teoría regional con pretensiones generales.
 
-### Fuerza de la objeción
+### Por qué pega
 
-Cuanto más universal sea la pretensión, más fácil es sospechar que el proyecto no podrá defenderse en detalle.
+Es honesta. La generalización antes de la demostración es exactamente lo que el borrador hacía.
 
-### Respuesta estratégica
+### Respuesta con compromiso
 
-La tesis debe distinguir entre:
+La tesis se presenta en dos modos disjuntos. **Modo demostrativo**: caso ancla canónico (behavioral dynamics) trabajado a fondo, con datos, ecuaciones, predicciones, comparación rival, dossier de anclaje completo. **Modo programático**: dominios adicionales (mente como tal, biología, sistemas técnicos, instituciones) presentados como conjeturas con criterios explícitos de elevación. La tesis admite que solo está demostrada en su caso ancla y que los dominios programáticos quedan como deuda con plazo y entregable. La generalización ontológica de la tesis es legítima si la matriz formal puede absorber dominios programáticos sin contradicción interna; su demostración para cada dominio es trabajo posterior y se nombra como tal.
 
-- **núcleo fuerte**, que sí pretende validez general;
-- **aplicaciones ejemplares**, que muestran rendimiento en dominios particulares;
-- **extensiones futuras**, que no se prometen resolver aquí.
+### Compromiso público
 
-### Qué debe probarse
+Cada capítulo programático lleva su criterio de elevación a modo demostrativo (qué datos hacen falta, qué rival se enfrentaría, qué predicción discriminante se buscaría). El capítulo 06-01 reúne la deuda residual.
 
-Que la generalidad es de estructura y método, no de detalle empírico exhaustivo.
+### Dónde se trata
 
-## Objeción 8. El paso entre escalas puede no estar suficientemente justificado
+Capítulo 05-00 (criterios de admisión), capítulos 05-01 a 05-04 (modos programáticos marcados), capítulo 06-01 (cierre demostrativo y deuda).
 
-### Fuerza de la objeción
+## Matriz de objeciones, respuestas y compromisos
 
-Decir que a veces hay que comprimir y a veces expandir puede sonar intuitivo, pero aún no normativo.
+| Objeción | Forma corta | Respuesta corta | Compromiso público |
+|---|---|---|---|
+| Sustitución nominal | Renombras, no explicas | Predicción discriminante por categoría | Dossier de anclaje publicado |
+| Irrefutabilidad por nivel | Cláusula de nivel inmuniza | Q fijada antes, fallos trazados | Fechas y criterios de fallo en cada aplicación |
+| Vaguedad de patrón | `Patrón` significa todo | Atractor con cinco condiciones | Toda regularidad sin cinco condiciones se reescribe |
+| Redundancia con vecinos | Ya está hecho | Filtro de admisión + asimetría L1/B/L3/S | Tabla de discriminación obligatoria |
+| Sobreextensión generalista | Prometes más de lo que demuestras | Modo demostrativo vs programático separados | Deuda residual con plazo y entregable |
 
-### Respuesta estratégica
+## Riesgos internos que sobreviven
 
-La tesis debe ofrecer una regla clara:
+Tres riesgos quedan abiertos como vigilancia permanente.
 
-> expandir cuando la estructura interna cambia la explicación relevante; comprimir cuando no hacerlo solo agrega costo sin ganancia inferencial.
+### Lexicalización del propio marco
 
-### Qué debe probarse
+Términos como `dossier`, `compresión`, `acoplamiento`, `atractor` pueden convertirse en contraseña interna. Cada aparición debe poder traducirse a una operación, observable o predicción.
 
-Que esa regla funciona en casos comparativos y no es una simple intuición de conveniencia.
+### Hipertrofia metodológica
 
-## Objeción 9. La categoría de `realidad teórica` puede parecer ambigua
+El protocolo puede ahogar al fenómeno. Los protocolos solo se justifican mientras mejoran el tratamiento del caso ancla o un dominio análogo. Si la tesis empieza a hablar más de sus protocolos que de sus fenómenos, hay que reescribir.
 
-### Fuerza de la objeción
+### Asimetría desigual entre dominios
 
-Si se habla de realidad fuerte, estructural, funcional, institucional y teórica, alguien puede preguntar si `teórica` designa algo existente o solo algo útil.
+El caso ancla es asimétricamente más sólido que cualquier otro dominio del manuscrito. Esa asimetría no debe disimularse: el cierre la nombra y la convierte en programa de investigación posterior.
 
-### Respuesta estratégica
+## Regla de oro al responder objeciones futuras
 
-La tesis debe aclarar que `realidad teórica` no designa una nueva sustancia, sino el grado de legitimidad que tiene una entidad modelizada dentro de una práctica explicativa.
+Antes de responder cualquier objeción nueva, debe pasar este filtro:
 
-### Qué debe probarse
+1. ¿es una objeción a inflación ontológica?
+2. ¿es a pérdida de estructura relevante?
+3. ¿es a vaguedad metodológica?
+4. ¿es a falta de anclaje empírico?
+5. ¿es a exceso de abstracción?
+6. ¿es a redundancia con marcos vecinos?
 
-Que la distinción de grados de realidad ordena el análisis sin multiplicar ontologías.
+Si no cae en ninguna de las seis, probablemente es objeción mal formulada. Si cae en alguna, la respuesta debe ser por compromiso verificable, no por reformulación retórica.
 
-## Objeción 10. La tesis podría sacrificar la fenomenología o la experiencia vivida
+## Cierre
 
-### Fuerza de la objeción
-
-Un lector cercano a la fenomenología o a las ciencias humanas puede sentir que el énfasis en estructura y formalización empobrece la dimensión vivida del fenómeno.
-
-### Respuesta estratégica
-
-La tesis no debe negar la experiencia, sino reubicarla:
-
-- como fenómeno real a explicar;
-- como dominio que también exige sustrato, organización y articulación categorial;
-- como dimensión que puede requerir escalas específicas sin convertirse en una sustancia separada.
-
-### Qué debe probarse
-
-Que la tesis no elimina lo vivido, sino que lo desustancializa y lo rearticula.
-
-## Riesgos metodológicos internos
-
-Además de las objeciones externas, hay riesgos internos que deben vigilarse durante la redacción.
-
-### Riesgo A. Repetición terminológica
-
-La tesis tiene expresiones fuertes —`patrón`, `compresión`, `relacional`, `anclaje`, `multiescala`— que pueden desgastarse si se repiten sin distinciones nuevas.
-
-### Riesgo B. Inflación de ejemplos
-
-Muchos ejemplos ayudan a mostrar alcance, pero demasiados dispersan el foco.
-
-### Riesgo C. Circularidad justificativa
-
-No se puede definir una buena categoría solo como la que sirve al modelo y luego definir un buen modelo como el que usa buenas categorías.
-
-### Riesgo D. Pérdida del hilo central
-
-El trabajo debe recordar siempre que su pregunta rectora es doble:
-
-1. qué existe en sentido fuerte;
-2. cómo justificamos las unidades con las que lo pensamos.
-
-## Estrategia general de respuesta
-
-La tesis sobrevive a estas objeciones si logra hacer cinco cosas al mismo tiempo:
-
-1. mantener austeridad ontológica;
-2. mostrar riqueza estructural;
-3. ofrecer criterios explícitos;
-4. producir casos comparativos fuertes;
-5. evitar que el formalismo sustituya al fenómeno.
-
-## Regla de oro para responder objeciones
-
-Cada vez que aparezca una crítica, conviene volver a esta matriz:
-
-- ¿la objeción muestra inflación ontológica?
-- ¿la objeción muestra pérdida de estructura?
-- ¿la objeción muestra vaguedad metodológica?
-- ¿la objeción muestra falta de anclaje empírico?
-- ¿la objeción muestra exceso de abstracción?
-
-Si la respuesta no puede formularse en alguno de esos planos, probablemente todavía está verde.
-
-## Balance
-
-La mejor señal para esta tesis no es que carezca de objeciones, sino que sus objeciones fuertes sean inteligibles y respondibles. Una tesis sin enemigos suele ser una tesis sin contorno.
+Las cinco objeciones discriminantes definen las pruebas que la tesis acepta enfrentar. Cada una trae compromiso público, no inmunización. Si el manuscrito las responde, no porque las desmonte sino porque produce los entregables prometidos, la tesis ha pagado el precio epistémico de su léxico. Si alguno de esos entregables falla, el manuscrito acepta el fallo en el capítulo 06-01 y reformula. Esa es la diferencia entre una tesis fuerte y un manifiesto bien escrito.
