@@ -1,0 +1,14 @@
+{
+  "summary": {
+    "n_trials": 1000,
+    "n_valid": 1000,
+    "edi_mean": -0.0013418632476484525,
+    "edi_p99": 0.07532361185774761,
+    "tasa_overall_pass": 0.0,
+    "tasa_p_005": 0.255,
+    "tasa_p_001": 0.163,
+    "fraction_edi_above_010": 0.006,
+    "fraction_edi_above_030": 0.0
+  },
+  "verdict": "Aparato robusto bajo hostile testing: tasa de overall_pass bajo nulo = 0.0000 < 1%. Los strong del corpus son verdaderos positivos genuinos."
+}

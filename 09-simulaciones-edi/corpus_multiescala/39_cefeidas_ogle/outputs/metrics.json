@@ -1,0 +1,17 @@
+{
+  "case_name": "Cefeida pulsante",
+  "scale": "astrofísica (10¹¹ m, 10⁵ s)",
+  "edi": 0.9162290686317869,
+  "p_value": 0.0,
+  "ci_95": [
+    0.9002927973394179,
+    0.9306754589839815
+  ],
+  "rmse_coupled": 0.02422346321883465,
+  "rmse_no_ode": 0.28916311211058393,
+  "val_steps": 90,
+  "train_steps": 210,
+  "nivel": "4_strong",
+  "overall_pass": true,
+  "notes": "Modelo Leavitt P-L, parámetros típicos OGLE survey"
+}

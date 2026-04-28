@@ -1,0 +1,17 @@
+{
+  "case_name": "Decoherencia cuántica de qubit",
+  "scale": "cuántica (10⁻⁹ m, 10⁻⁶ s)",
+  "edi": 0.913177796635811,
+  "p_value": 0.0,
+  "ci_95": [
+    0.8854121570965395,
+    0.9315969912337876
+  ],
+  "rmse_coupled": 0.01807369585363031,
+  "rmse_no_ode": 0.2081690529992359,
+  "val_steps": 60,
+  "train_steps": 140,
+  "nivel": "4_strong",
+  "overall_pass": true,
+  "notes": "Sintético físicamente realista, parámetros transmón NIST/IBM"
+}

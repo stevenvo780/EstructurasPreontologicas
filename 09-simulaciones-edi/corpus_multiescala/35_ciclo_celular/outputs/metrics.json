@@ -1,0 +1,17 @@
+{
+  "case_name": "Ciclo celular S. cerevisiae",
+  "scale": "celular (10⁻⁵ m, 10³-10⁴ s)",
+  "edi": 0.1306799800346662,
+  "p_value": 0.0,
+  "ci_95": [
+    0.10892306370480587,
+    0.14785287170888892
+  ],
+  "rmse_coupled": 0.020578927179190982,
+  "rmse_no_ode": 0.02367244134100537,
+  "val_steps": 90,
+  "train_steps": 210,
+  "nivel": "3_weak",
+  "overall_pass": false,
+  "notes": "Tyson-Novak reducido, parámetros Cross Lab Rockefeller"
+}

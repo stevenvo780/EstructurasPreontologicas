@@ -75,6 +75,7 @@ A la Universidad de Antioquia, por sostener una tradición de filosofía de la c
     ('Capítulo 5.3: Sistemas técnicos distribuidos', '05-aplicaciones/03-sistemas-tecnicos-distribuidos.md', None),
     ('Capítulo 5.4: Instituciones, mercado, Estado', '05-aplicaciones/04-instituciones-mercado-y-estado.md', None),
     ('Capítulo 5.5: Caso ancla canónico - Behavioral Dynamics (Warren 2006)', '05-aplicaciones/05-dinamica-conductual-reconstruccion-warren.md', None),
+    ('Capítulo 5.6: Corpus EDI multiescala (10 casos, escalas atómica a astrofísica)', '05-aplicaciones/06-corpus-multiescala.md', None),
     ('Capítulo 6: Conclusión demostrativa', '06-cierre/01-conclusion-demostrativa.md', None),
     ('Capítulo 6.1: Guía de defensa oral', '06-cierre/02-guia-de-defensa.md', None),
     ('Capítulo 6.2: Hoja de ruta para tesis final', '06-cierre/03-hoja-de-ruta-para-tesis-final.md', None),
@@ -94,6 +95,7 @@ A la Universidad de Antioquia, por sostener una tradición de filosofía de la c
     ('Anexo A.9: Listas de figuras, tablas y abreviaturas', 'Anexos/A9-listas-figuras-tablas-abreviaturas.md', None),
     ('Anexo A.10: Figuras Mermaid', 'Anexos/A10-figuras-mermaid.md', None),
     ('Anexo A.11: Validación lógica formal con ST', 'Anexos/A11-validacion-st.md', None),
+    ('Anexo A.12: Corpus multiescala — tablas crudas', 'Anexos/A12-corpus-multiescala-tablas.md', None),
     ('Auditoría doctoral integral (v2 final)', 'Bitacora/2026-04-28-cierre-pendientes/02-auditoria-doctoral-v2-final.md', None),
     ('Bibliografía', '07-bibliografia/01-bibliografia-orientativa.md', None),
 ]

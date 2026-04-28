@@ -1,0 +1,17 @@
+{
+  "case_name": "Locomoción humana τ-dot (Lee 1976)",
+  "scale": "individual / behavioral (1 m, 1 s)",
+  "edi": -1.3412282437650878,
+  "p_value": 1.0,
+  "ci_95": [
+    -1.5079292367208414,
+    -1.2099164689342745
+  ],
+  "rmse_coupled": 3.8982312630973244,
+  "rmse_no_ode": 1.6650368341825206,
+  "val_steps": 75,
+  "train_steps": 175,
+  "nivel": "0_null",
+  "overall_pass": false,
+  "notes": "Sonda τ-dot, alternativa NO-FW al caso 30 (responde a N2)"
+}

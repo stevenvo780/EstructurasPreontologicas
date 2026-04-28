@@ -6,7 +6,16 @@ Este capítulo fija el suelo ontológico de la tesis: qué cuenta como existente
 
 ## Tesis del capítulo
 
-> Existe un solo plano ontológico básico — sustrato material dinámico — sobre el cual se constituyen patrones estabilizados (atractores empíricos de sistemas dinámicos acoplados) que cuentan como entidades reales en sentido moderado. Las propiedades son disposiciones relacionales del sistema; la identidad es continuidad organizada bajo transformación; los niveles son registros descriptivos del mismo plano, no mundos separados. La ontología no multiplica sustancias y, simultáneamente, no empobrece la organización: es austera en sustancia y rica en relación, condicionada en cada paso por traducibilidad al nivel conductual-biológico (B) y por validación empírica.
+> Existe un solo plano ontológico básico — sustrato material dinámico — sobre el cual se constituyen patrones estabilizados (atractores empíricos de sistemas dinámicos acoplados) que cuentan como entidades reales en sentido moderado, **a través de escalas físicas, biológicas y cosmológicas**. Las propiedades son disposiciones relacionales del sistema; la identidad es continuidad organizada bajo transformación; los niveles son registros descriptivos del mismo plano, no mundos separados. La ontología no multiplica sustancias y, simultáneamente, no empobrece la organización: es austera en sustancia y rica en relación, condicionada en cada paso por traducibilidad al nivel conductual-biológico (B) y por validación empírica multiescalar.
+
+### Nota sobre la generalidad multiescalar (auditoría severa A14, corpus 31-40)
+
+La afirmación de generalidad ontológica de la tesis está **operativamente respaldada** por dos corpus complementarios:
+
+- **Corpus macro (30 casos):** discriminación entre dominios en la escala macro-poblacional (cap 09 + Anexo A.8).
+- **Corpus multiescala (10 casos):** discriminación a través de escalas, desde 10⁻¹⁰ m (atómica) hasta 10²⁰ m (cúmulos globulares), con **7 strong en 7 escalas distintas** + 1 weak + 2 nulls honestos (cap 05-06 + Anexo A.12).
+
+Las **estructuras pre-ontológicas** se demuestran como objeto operativo a múltiples escalas — no son artefacto de la escala macro. Esta es la afirmación filosófica más fuerte que el corpus actual sostiene, con la honestidad metodológica de reportar los nulls (Villin Headpiece bajo sonda equilibrio; locomoción τ-dot bajo observación con reinicios discretos) sin ajustarlos para forzar overall_pass.
 
 ### Nota sobre el sistema modal asumido
 

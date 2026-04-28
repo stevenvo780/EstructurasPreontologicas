@@ -1,0 +1,17 @@
+{
+  "case_name": "Plegamiento Villin Headpiece",
+  "scale": "molecular (10⁻⁹ m, 10⁻⁶ s)",
+  "edi": 0.0,
+  "p_value": 0.8258258258258259,
+  "ci_95": [
+    -2.220446049250313e-16,
+    0.0
+  ],
+  "rmse_coupled": 2.4079165702058907,
+  "rmse_no_ode": 2.4079165702058907,
+  "val_steps": 90,
+  "train_steps": 210,
+  "nivel": "0_null",
+  "overall_pass": false,
+  "notes": "MSM 2-estados con tasas Arrhenius, parámetros DE Shaw Anton"
+}

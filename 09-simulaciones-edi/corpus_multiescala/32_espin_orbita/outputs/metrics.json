@@ -1,0 +1,17 @@
+{
+  "case_name": "Acoplamiento espín-órbita",
+  "scale": "atómica (10⁻¹⁰ m, 10⁻¹⁵ s)",
+  "edi": 0.8250879834716865,
+  "p_value": 0.0,
+  "ci_95": [
+    0.7970136996952593,
+    0.8508715796440832
+  ],
+  "rmse_coupled": 0.027065974159856024,
+  "rmse_no_ode": 0.15474050723939134,
+  "val_steps": 75,
+  "train_steps": 175,
+  "nivel": "4_strong",
+  "overall_pass": true,
+  "notes": "Sistema de dos átomos con coupling espín-órbita (Bloch)"
+}

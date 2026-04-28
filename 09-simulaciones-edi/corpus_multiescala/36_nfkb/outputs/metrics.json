@@ -1,0 +1,17 @@
+{
+  "case_name": "Oscilaciones NF-κB",
+  "scale": "celular oscilatoria (10⁻⁵ m, 10²-10³ s)",
+  "edi": 0.5873739314271895,
+  "p_value": 0.0,
+  "ci_95": [
+    0.5842874947984737,
+    0.5891523031787347
+  ],
+  "rmse_coupled": 77.48868440887513,
+  "rmse_no_ode": 187.79396240497528,
+  "val_steps": 90,
+  "train_steps": 210,
+  "nivel": "4_strong",
+  "overall_pass": true,
+  "notes": "Hoffmann reducido, parámetros Tay Lab ETH"
+}

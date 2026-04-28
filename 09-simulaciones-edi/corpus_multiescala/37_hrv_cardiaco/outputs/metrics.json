@@ -1,0 +1,17 @@
+{
+  "case_name": "Variabilidad cardíaca bajo estrés",
+  "scale": "individual (1 m, 1 s)",
+  "edi": 0.5771350469912229,
+  "p_value": 0.0,
+  "ci_95": [
+    0.5087538984308582,
+    0.6443332649335536
+  ],
+  "rmse_coupled": 14.024863603538074,
+  "rmse_no_ode": 33.16629459062069,
+  "val_steps": 75,
+  "train_steps": 175,
+  "nivel": "4_strong",
+  "overall_pass": true,
+  "notes": "Mackey-Glass con delay, parámetros PhysioNet"
+}

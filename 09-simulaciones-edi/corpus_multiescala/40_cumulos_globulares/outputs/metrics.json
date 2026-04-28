@@ -1,0 +1,17 @@
+{
+  "case_name": "Cúmulo globular Plummer",
+  "scale": "astrofísica grande (10¹⁷-10²⁰ m, 10¹⁴ s)",
+  "edi": 0.4275530650113536,
+  "p_value": 0.0,
+  "ci_95": [
+    0.34758870756158783,
+    0.5113769544459469
+  ],
+  "rmse_coupled": 0.30040587283736564,
+  "rmse_no_ode": 0.5247750568239548,
+  "val_steps": 75,
+  "train_steps": 175,
+  "nivel": "4_strong",
+  "overall_pass": true,
+  "notes": "Plummer con marea galáctica, parámetros típicos Gaia DR3"
+}

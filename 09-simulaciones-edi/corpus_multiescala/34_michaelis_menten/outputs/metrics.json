@@ -1,0 +1,17 @@
+{
+  "case_name": "Cinética Michaelis-Menten",
+  "scale": "bioquímica (10⁻⁸ m, 10⁻³ s)",
+  "edi": 0.4580474281524688,
+  "p_value": 0.0,
+  "ci_95": [
+    0.33388872384377416,
+    0.5687708613419207
+  ],
+  "rmse_coupled": 0.39526708958408224,
+  "rmse_no_ode": 0.7293388944287243,
+  "val_steps": 60,
+  "train_steps": 140,
+  "nivel": "4_strong",
+  "overall_pass": true,
+  "notes": "β-galactosidasa, parámetros publicados Yang Lab Berkeley"
+}
