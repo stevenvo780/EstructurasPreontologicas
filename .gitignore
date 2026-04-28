@@ -13,6 +13,7 @@
 09-simulaciones-edi/data_cache/
 09-simulaciones-edi/**/data/*.csv
 09-simulaciones-edi/**/data/*.json
+09-simulaciones-edi/**/data_cache/
 
 # Outputs antiguos no canónicos (los canónicos están versionados)
 09-simulaciones-edi/**/outputs/*.tmp
