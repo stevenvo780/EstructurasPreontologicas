@@ -79,9 +79,9 @@ Reúne corpus PDF y mapa de interlocutores funcionales por capítulo. Su convers
 
 Capa de validación lógica local: formalizaciones mínimas del núcleo argumental con comprobación automática de no-contradicción y trazabilidad textual.
 
-### 9. Tareas (carpeta `Tareas/`)
+### 9. Procesos y mega-tareas archivadas (`Procesos/`)
 
-Backlog duro: crítica radical previa al manuscrito, pasos no negociables, mega-tareas estratégicas (programa científico general, traducción de obras, operacionalización-validación, benchmark rivales, corpus ST), tareas documentales delegables.
+Trazabilidad histórica del proyecto, bitácoras fechadas y archivo de mega-tareas estratégicas. Contiene la crítica radical previa, pasos no negociables, mega-tareas estratégicas (programa científico general, traducción de obras, operacionalización-validación, benchmark rivales, corpus ST), tareas documentales delegables, las dos auditorías doctorales y los programas técnico-éticos del cierre 2026-04-28. Las mega-tareas residen en `Procesos/2026-04-28-cierre-pendientes/mega-tareas-archivadas/`.
 
 ## Lógica de redacción
 

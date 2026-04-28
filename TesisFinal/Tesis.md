@@ -230,9 +230,9 @@ Reúne corpus PDF y mapa de interlocutores funcionales por capítulo. Su convers
 
 Capa de validación lógica local: formalizaciones mínimas del núcleo argumental con comprobación automática de no-contradicción y trazabilidad textual.
 
-### 9. Tareas (carpeta `Tareas/`)
+### 9. Procesos y mega-tareas archivadas (`Procesos/`)
 
-Backlog duro: crítica radical previa al manuscrito, pasos no negociables, mega-tareas estratégicas (programa científico general, traducción de obras, operacionalización-validación, benchmark rivales, corpus ST), tareas documentales delegables.
+Trazabilidad histórica del proyecto, bitácoras fechadas y archivo de mega-tareas estratégicas. Contiene la crítica radical previa, pasos no negociables, mega-tareas estratégicas (programa científico general, traducción de obras, operacionalización-validación, benchmark rivales, corpus ST), tareas documentales delegables, las dos auditorías doctorales y los programas técnico-éticos del cierre 2026-04-28. Las mega-tareas residen en `Procesos/2026-04-28-cierre-pendientes/mega-tareas-archivadas/`.
 
 ## Lógica de redacción
 
@@ -5690,42 +5690,53 @@ Esa es la frase que debería poder sobrevivir incluso si el resto del día filos
 
 ## Función de este capítulo
 
-Este capítulo convierte el manuscrito corregido en plan ejecutable hacia tesis doctoral final. La política: cada paso lleva entregable concreto y orden de prioridad. Los pasos están organizados según el principio de mayor retorno marginal sobre la robustez del programa. Lo que ya está consolidado se nombra y se mantiene; lo que falta se prioriza por su capacidad de fortalecer el conjunto.
+Este capítulo registra el estado del manuscrito al cierre del 2026-04-28 y los pasos posteriores a la sustentación, organizados como programa de investigación de largo plazo. La política: cada paso lleva entregable concreto y orden de prioridad. Lo ejecutado se reporta como tal; lo que continúa como programa post-defensa se prioriza por su capacidad de fortalecer el conjunto.
 
 ## Tesis del capítulo
 
-> El manuscrito está en estado de prototipo doctoral con caso ancla demostrativo consolidado. La tesis final exige siete pasos secuenciales con entregables concretos: elevación del primer caso programático, integración bibliográfica formal, aparato para variables normativas, multiplicación de casos demostrativos, lectura externa hostil, redacción final unificada, anexos operativos. El plazo agregado plausible es 24-36 meses con dedicación seria.
+> El manuscrito está en estado integral defendible al cierre 2026-04-28 con corpus EDI multidominio ejecutado, multi-sonda y baselines verificados, piloto Wolfram-EDI ejecutado y caso piloto COVID con resultado null honesto. Lo que continúa como programa de investigación post-defensa son tres líneas: elevación del caso 30 con datos humanos reales, multiplicación de casos demostrativos a partir del corpus weak, desarrollo formal de la dimensión normativa con sondas más sofisticadas. El plazo agregado para programa de investigación post-defensa es 24-36 meses adicionales.
 
-## 1. Estado actual del manuscrito
+## 1. Estado del manuscrito al 2026-04-28
 
-Lo que está consolidado:
+### Lo consolidado en la versión integral defendible
 
 - diagnóstico estructural con seis falencias identificadas y resueltas (capítulo 01-01);
 - objeciones discriminantes con respuesta y compromiso público (capítulo 01-02);
+- estado del arte con 5 subcampos y mapa de inserción (capítulo 01-03);
 - ontología material-relacional con definición técnica de patrón estabilizado (capítulo 02-01);
 - epistemología de la compresión con verdad como preservación estructural (capítulo 02-02);
 - categorías, objetos, propiedades, identidad reformulados (capítulo 02-03);
-- nivel B (conductual-biológico) con asimetría L1↔B↔L3↔S (capítulo 02-04);
+- nivel B (conductual-biológico) con asimetría L1↔B↔L3↔S y citas textuales con paginación (capítulo 02-04);
 - aparato formal con cinco operadores (capítulo 03-01);
 - diez criterios y dossier de catorce componentes (capítulo 03-02);
 - protocolo de auditoría ontológica de nueve fases (capítulo 03-03);
 - procedimiento empírico de κ vía baja dimensionalidad (capítulo 03-04);
-- debates con catorce rivales identificables (capítulo 04-01);
+- ética de investigación y gobernanza de datos con declaración de co-autoría con IA (capítulo 03-05);
+- debates con catorce rivales identificables y citas textuales (capítulo 04-01);
 - limitaciones genuinas con seis puntos de presión (capítulo 04-02);
 - distinción demostrativo/programático con criterios (capítulo 05-00);
 - caso ancla canónico con dossier completo (capítulo 05-05);
 - cuatro aplicaciones programáticas con criterios de elevación (capítulos 05-01 a 05-04);
 - conclusión demostrativa con condiciones de fracaso falsables (capítulo 06-01);
-- guía de defensa oral en tres tiempos (capítulo 06-02).
+- guía de defensa oral en tres tiempos (capítulo 06-02);
+- corpus EDI con 30 casos verificados (`09-simulaciones-edi/`);
+- multi-sonda en 3 strong + 5 weak ejecutado (`09-simulaciones-edi/multi_sonda/`);
+- baselines ARIMA + VAR + RW + GP ejecutados sobre 8 casos (`09-simulaciones-edi/baselines/`);
+- piloto Wolfram Rule 110 ejecutado con EDI 0.55 (`09-simulaciones-edi/wolfram_pilot/`);
+- caso piloto COVID con ablación real ejecutado (`09-simulaciones-edi/covid_pilot/`);
+- análisis de drift bajo perfil agresivo (`09-simulaciones-edi/perfil_agresivo/`);
+- 10 anexos operativos completos (A.1 a A.10);
+- bibliografía consolidada con 90 referencias en Chicago author-date (capítulo 07);
+- PDF generado de 1.8 MB (`TesisFinal/Tesis.pdf`).
 
-Lo que falta para tesis doctoral final:
+### Programa post-defensa (no requerido para sustentación)
 
-- elevación de al menos un caso programático a demostrativo;
-- integración bibliográfica formal con citaciones rigurosas en cada capítulo;
-- desarrollo del aparato para variables normativas;
-- redacción unificada en estilo doctoral con anexos operativos;
-- lectura externa por evaluadores hostiles;
-- glosario operativo y matriz comparativa para anexos.
+- elevación del caso 30 con datos humanos reales (LoE = 4) cuando se obtenga acceso a VENLab/WALK-MS/OpenLocomotionData;
+- elevación de casos programáticos del capítulo 05 (mente, biología, sistemas técnicos, instituciones) a modo demostrativo con dossier completo;
+- desarrollo formal de la dimensión normativa con sondas más sofisticadas (resultado null del piloto COVID confirmó insuficiencia de AR(1));
+- revisión exhaustiva por dominio del corpus EDI (mini-revisiones específicas por cada uno de los 30 dominios);
+- comparación contra modelos no lineales adicionales (LSTM, Transformer);
+- conversión final a plantilla institucional con figuras formales (trámite editorial pre-depósito).
 
 ## 2. Paso 1. Elegir caso programático prioritario para elevación
 
@@ -5781,7 +5792,7 @@ Cada capítulo con citas insertadas, bibliografía formal por capítulo y biblio
 
 ### Plazo
 
-Continuo durante redacción final, con prioridad alta. Tareas documentales delegables a IA según el capítulo Tareas/90 ayudan acumulativamente.
+Continuo durante redacción final, con prioridad alta. Tareas documentales delegables a IA según el archivo `Procesos/2026-04-28-cierre-pendientes/mega-tareas-archivadas/90-tareas-documentales-delegables-a-ia.md` ayudan acumulativamente.
 
 ## 4. Paso 3. Desarrollo del aparato para variables normativas
 
@@ -5935,7 +5946,7 @@ Si el manuscrito final cumple las seis cualidades, deja de ser tesis y empieza a
 - objeciones que la versión final debe anticipar: capítulo 01-02;
 - limitaciones reconocidas: capítulo 04-02;
 - bibliografía orientativa que se convierte en formal: capítulo 07;
-- backlog de mega-tareas: carpeta `Tareas/`.
+- backlog de mega-tareas archivado: `Procesos/2026-04-28-cierre-pendientes/mega-tareas-archivadas/`.
 
 ## 14. Cierre
 

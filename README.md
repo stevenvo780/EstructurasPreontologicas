@@ -44,8 +44,7 @@ La tesis está **demostrada** en cartografía multidominio de **30 casos** del c
 ├── 07-bibliografia/                  ← corpus PDF y mapa de interlocutores
 ├── 08-consistencia-st/               ← capa ST de validación lógica
 ├── 09-simulaciones-edi/              ← código y outputs de los 30 casos del corpus EDI
-├── Procesos/                         ← bitácoras y trazabilidad histórica
-└── Tareas/                           ← backlog duro y mega-tareas
+└── Procesos/                         ← bitácoras, trazabilidad histórica y mega-tareas archivadas
 ```
 
 ## Orden recomendado de lectura
