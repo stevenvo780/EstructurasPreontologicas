@@ -1,163 +1,10 @@
 
 
-<a id="frontmatter"></a>
+<div id="frontmatter"></div>
 
 
+<div id="front-matter"></div>
 
-<a id="front-matter"></a>
-
-
-
-<a id="tabla-de-contenidos"></a>
-
-# 📑 Tabla de Contenidos
-
-> **Navegación:** este manuscrito tiene ~10 mil líneas. Las partes están agrupadas en secciones colapsables. Haz clic en ▸ para expandir cada parte. Cada capítulo tiene un enlace «↑ volver al índice» al final para regresar aquí.
-
-## Navegación rápida por partes
-
-- [Front matter](#frontmatter)
-- [Parte 0 — Plan general del proyecto](#parte-0-proyecto)
-- [Parte 1 — Diagnóstico estructural](#parte-1-diagnostico)
-- [Parte 2 — Fundamentos ontológicos y epistemológicos](#parte-2-fundamentos)
-- [Parte 3 — Formalización metodológica](#parte-3-formalizacion)
-- [Parte 4 — Debates y limitaciones](#parte-4-debates)
-- [Parte 5 — Aplicaciones del marco](#parte-5-aplicaciones)
-- [Parte 6 — Cierre demostrativo](#parte-6-cierre)
-- [Parte 9 — Corpus EDI: justificación operativa](#parte-9-corpus)
-- [Bibliografía](#bibliografia)
-- [Anexos operativos](#anexos)
-- [Auditorías metodológicas](#auditorias)
-
----
-
-## Índice detallado (colapsable)
-
-<details open>
-<summary><strong>Front matter</strong></summary>
-
-- [Front matter](#front-matter)
-- [Abstract bilingüe](#abstract-bilingue)
-
-</details>
-
-<details open>
-<summary><strong>Parte 0 — Plan general del proyecto</strong></summary>
-
-- [Capítulo 0.1: Estructura general](#capitulo-0.1-estructura-general)
-- [Capítulo 0.2: Preguntas, objetivos e hipótesis](#capitulo-0.2-preguntas-objetivos-e-hipotesis)
-- [Capítulo 0.3: Plan de capítulos](#capitulo-0.3-plan-de-capitulos)
-- [Capítulo 0.4: Formalización institucional](#capitulo-0.4-formalizacion-institucional)
-
-</details>
-
-<details >
-<summary><strong>Parte 1 — Diagnóstico estructural</strong></summary>
-
-- [Capítulo 1.1: Falencias de la tesis](#capitulo-1.1-falencias-de-la-tesis)
-- [Capítulo 1.2: Objeciones discriminantes](#capitulo-1.2-objeciones-discriminantes)
-- [Capítulo 1.3: Estado del arte](#capitulo-1.3-estado-del-arte)
-
-</details>
-
-<details >
-<summary><strong>Parte 2 — Fundamentos ontológicos y epistemológicos</strong></summary>
-
-- [Capítulo 2.1: Ontología material-relacional](#capitulo-2.1-ontologia-material-relacional)
-- [Capítulo 2.2: Epistemología de la compresión](#capitulo-2.2-epistemologia-de-la-compresion)
-- [Capítulo 2.3: Categorías, objetos, propiedades, identidad](#capitulo-2.3-categorias-objetos-propiedades-identidad)
-- [Capítulo 2.4: Anclaje empírico (nivel B multiescalar)](#capitulo-2.4-anclaje-empirico-nivel-b-multiescalar)
-- [Capítulo 2.5: Temporalidad y causalidad](#capitulo-2.5-temporalidad-y-causalidad)
-- [Capítulo 2.6: Dimensión normativa y ética](#capitulo-2.6-dimension-normativa-y-etica)
-
-</details>
-
-<details >
-<summary><strong>Parte 3 — Formalización metodológica</strong></summary>
-
-- [Capítulo 3.1: Aparato formal mínimo](#capitulo-3.1-aparato-formal-minimo)
-- [Capítulo 3.2: Criterios de legitimidad y dossier](#capitulo-3.2-criterios-de-legitimidad-y-dossier)
-- [Capítulo 3.3: Auditoría ontológica como protocolo](#capitulo-3.3-auditoria-ontologica-como-protocolo)
-- [Capítulo 3.4: Operacionalización de κ vía EDI](#capitulo-3.4-operacionalizacion-de-kappa-via-edi)
-- [Capítulo 3.5: Ética de investigación y gobernanza de datos](#capitulo-3.5-etica-de-investigacion-y-gobernanza-de-datos)
-
-</details>
-
-<details >
-<summary><strong>Parte 4 — Debates y limitaciones</strong></summary>
-
-- [Capítulo 4.1: Debates con posiciones rivales](#capitulo-4.1-debates-con-posiciones-rivales)
-- [Capítulo 4.2: Limitaciones y puntos de presión](#capitulo-4.2-limitaciones-y-puntos-de-presion)
-
-</details>
-
-<details >
-<summary><strong>Parte 5 — Aplicaciones del marco</strong></summary>
-
-- [Capítulo 5.0: Criterios de admisión de aplicaciones](#capitulo-5.0-criterios-de-admision-de-aplicaciones)
-- [Capítulo 5.1: Mente, memoria, yo](#capitulo-5.1-mente-memoria-yo)
-- [Capítulo 5.2: Biología y ecología](#capitulo-5.2-biologia-y-ecologia)
-- [Capítulo 5.3: Sistemas técnicos distribuidos](#capitulo-5.3-sistemas-tecnicos-distribuidos)
-- [Capítulo 5.4: Instituciones, mercado, Estado](#capitulo-5.4-instituciones-mercado-estado)
-- [Capítulo 5.5: Caso ancla canónico — Behavioral Dynamics (Warren 2006)](#capitulo-5.5-caso-ancla-canonico---behavioral-dynamics-warren-2006)
-- [Capítulo 5.6: Corpus inter-escala (10 casos, escalas atómica a astrofísica)](#capitulo-5.6-corpus-inter-escala-10-casos-escalas-atomica-a-astrofisica)
-
-</details>
-
-<details >
-<summary><strong>Parte 6 — Cierre demostrativo</strong></summary>
-
-- [Capítulo 6.1: Conclusión demostrativa](#capitulo-6.1-conclusion-demostrativa)
-- [Capítulo 6.2: Guía de defensa oral](#capitulo-6.2-guia-de-defensa-oral)
-- [Capítulo 6.3: Hoja de ruta para tesis final](#capitulo-6.3-hoja-de-ruta-para-tesis-final)
-
-</details>
-
-<details >
-<summary><strong>Parte 9 — Corpus EDI: justificación operativa</strong></summary>
-
-- [Capítulo 9.0: Corpus inter-dominio (30 casos)](#capitulo-9.0-corpus-inter-dominio-30-casos)
-- [Capítulo 9.1: Caso 30 — Behavioral Dynamics bajo EDI](#capitulo-9.1-caso-30---behavioral-dynamics-bajo-edi)
-- [Capítulo 9.2: Multi-sonda — validación cruzada](#capitulo-9.2-multi-sonda---validacion-cruzada)
-- [Capítulo 9.3: Baselines estadísticos — comparación ejecutada](#capitulo-9.3-baselines-estadisticos---comparacion-ejecutada)
-- [Capítulo 9.4: Caso piloto COVID — dimensión normativa](#capitulo-9.4-caso-piloto-covid---dimension-normativa)
-- [Capítulo 9.5: Perfil agresivo — análisis de drift](#capitulo-9.5-perfil-agresivo---analisis-de-drift)
-
-</details>
-
-<details >
-<summary><strong>Bibliografía</strong></summary>
-
-- [Bibliografía consolidada](#bibliografia-consolidada)
-
-</details>
-
-<details >
-<summary><strong>Anexos operativos</strong></summary>
-
-- [Anexo A.1: Glosario operativo](#anexo-a.1-glosario-operativo)
-- [Anexo A.2: Mapa de operadores formales](#anexo-a.2-mapa-de-operadores-formales)
-- [Anexo A.3: Plantilla del dossier de anclaje](#anexo-a.3-plantilla-del-dossier-de-anclaje)
-- [Anexo A.4: Tabla comparativa con rivales](#anexo-a.4-tabla-comparativa-con-rivales)
-- [Anexo A.5: Mapa de aplicaciones](#anexo-a.5-mapa-de-aplicaciones)
-- [Anexo A.6: Versiones cortas de defensa](#anexo-a.6-versiones-cortas-de-defensa)
-- [Anexo A.8: Tablas crudas del corpus inter-dominio](#anexo-a.8-tablas-crudas-del-corpus-inter-dominio)
-- [Anexo A.9: Listas de figuras, tablas y abreviaturas](#anexo-a.9-listas-de-figuras-tablas-y-abreviaturas)
-- [Anexo A.10: Figuras Mermaid](#anexo-a.10-figuras-mermaid)
-- [Anexo A.11: Validación lógica formal con ST](#anexo-a.11-validacion-logica-formal-con-st)
-- [Anexo A.12: Corpus inter-escala — tablas crudas](#anexo-a.12-corpus-inter-escala---tablas-crudas)
-
-</details>
-
-<details >
-<summary><strong>Auditorías metodológicas</strong></summary>
-
-- [Auditoría doctoral integral (v2 final)](#auditoria-doctoral-integral-v2-final)
-- [Auditoría V5: vacíos estructurales de contenido filosófico](#auditoria-v5-vacios-estructurales-de-contenido-filosofico)
-
-</details>
-
----
 # Estructuras Pre-Ontológicas
 
 ## Realismo Irrealista Operativo y Compresión Multiescala con Validación EDI Multidominio
@@ -192,10 +39,159 @@
 
 A la Universidad de Antioquia, por sostener una tradición de filosofía de la ciencia que hace posible este trabajo. A los colegas y revisores que aportaron críticas tempranas. A los autores de los datasets públicos del corpus, sin los cuales la cartografía multidominio no sería viable. A William H. Warren y Brett R. Fajen por la conjetura cuantitativa de la behavioral dynamics que opera como caso ancla.
 
+
+<div id="tabla-de-contenidos"></div>
+
+# 📑 Tabla de Contenidos
+
+> **Navegación:** este manuscrito tiene ~10 mil líneas. Las partes están agrupadas en secciones colapsables. Haz clic en ▸ para expandir cada parte. Cada capítulo termina con un enlace «↑ volver al índice» que regresa aquí.
+
+## Navegación rápida por partes
+
+- [Front matter](#frontmatter)
+- [Parte 0 — Plan general del proyecto](#parte-0-proyecto)
+- [Parte 1 — Diagnóstico estructural](#parte-1-diagnostico)
+- [Parte 2 — Fundamentos ontológicos y epistemológicos](#parte-2-fundamentos)
+- [Parte 3 — Formalización metodológica](#parte-3-formalizacion)
+- [Parte 4 — Debates y limitaciones](#parte-4-debates)
+- [Parte 5 — Aplicaciones del marco](#parte-5-aplicaciones)
+- [Parte 6 — Cierre demostrativo](#parte-6-cierre)
+- [Parte 9 — Corpus EDI: justificación operativa](#parte-9-corpus)
+- [Bibliografía](#bibliografia)
+- [Anexos operativos](#anexos)
+- [Auditorías metodológicas](#auditorias)
+
 ---
 
+## Índice detallado
 
-<a id="abstract-bilingue"></a>
+<details open>
+<summary><b>Front matter</b></summary>
+
+- [Front matter](#front-matter)
+- [Abstract bilingüe](#abstract-bilingue)
+
+</details>
+
+<details open>
+<summary><b>Parte 0 — Plan general del proyecto</b></summary>
+
+- [Capítulo 0.1: Estructura general](#capitulo-0.1-estructura-general)
+- [Capítulo 0.2: Preguntas, objetivos e hipótesis](#capitulo-0.2-preguntas-objetivos-e-hipotesis)
+- [Capítulo 0.3: Plan de capítulos](#capitulo-0.3-plan-de-capitulos)
+- [Capítulo 0.4: Formalización institucional](#capitulo-0.4-formalizacion-institucional)
+
+</details>
+
+<details>
+<summary><b>Parte 1 — Diagnóstico estructural</b></summary>
+
+- [Capítulo 1.1: Falencias de la tesis](#capitulo-1.1-falencias-de-la-tesis)
+- [Capítulo 1.2: Objeciones discriminantes](#capitulo-1.2-objeciones-discriminantes)
+- [Capítulo 1.3: Estado del arte](#capitulo-1.3-estado-del-arte)
+
+</details>
+
+<details>
+<summary><b>Parte 2 — Fundamentos ontológicos y epistemológicos</b></summary>
+
+- [Capítulo 2.1: Ontología material-relacional](#capitulo-2.1-ontologia-material-relacional)
+- [Capítulo 2.2: Epistemología de la compresión](#capitulo-2.2-epistemologia-de-la-compresion)
+- [Capítulo 2.3: Categorías, objetos, propiedades, identidad](#capitulo-2.3-categorias-objetos-propiedades-identidad)
+- [Capítulo 2.4: Anclaje empírico (nivel B multiescalar)](#capitulo-2.4-anclaje-empirico-nivel-b-multiescalar)
+- [Capítulo 2.5: Temporalidad y causalidad](#capitulo-2.5-temporalidad-y-causalidad)
+- [Capítulo 2.6: Dimensión normativa y ética](#capitulo-2.6-dimension-normativa-y-etica)
+
+</details>
+
+<details>
+<summary><b>Parte 3 — Formalización metodológica</b></summary>
+
+- [Capítulo 3.1: Aparato formal mínimo](#capitulo-3.1-aparato-formal-minimo)
+- [Capítulo 3.2: Criterios de legitimidad y dossier](#capitulo-3.2-criterios-de-legitimidad-y-dossier)
+- [Capítulo 3.3: Auditoría ontológica como protocolo](#capitulo-3.3-auditoria-ontologica-como-protocolo)
+- [Capítulo 3.4: Operacionalización de κ vía EDI](#capitulo-3.4-operacionalizacion-de-kappa-via-edi)
+- [Capítulo 3.5: Ética de investigación y gobernanza de datos](#capitulo-3.5-etica-de-investigacion-y-gobernanza-de-datos)
+
+</details>
+
+<details>
+<summary><b>Parte 4 — Debates y limitaciones</b></summary>
+
+- [Capítulo 4.1: Debates con posiciones rivales](#capitulo-4.1-debates-con-posiciones-rivales)
+- [Capítulo 4.2: Limitaciones y puntos de presión](#capitulo-4.2-limitaciones-y-puntos-de-presion)
+
+</details>
+
+<details>
+<summary><b>Parte 5 — Aplicaciones del marco</b></summary>
+
+- [Capítulo 5.0: Criterios de admisión de aplicaciones](#capitulo-5.0-criterios-de-admision-de-aplicaciones)
+- [Capítulo 5.1: Mente, memoria, yo](#capitulo-5.1-mente-memoria-yo)
+- [Capítulo 5.2: Biología y ecología](#capitulo-5.2-biologia-y-ecologia)
+- [Capítulo 5.3: Sistemas técnicos distribuidos](#capitulo-5.3-sistemas-tecnicos-distribuidos)
+- [Capítulo 5.4: Instituciones, mercado, Estado](#capitulo-5.4-instituciones-mercado-estado)
+- [Capítulo 5.5: Caso ancla canónico — Behavioral Dynamics (Warren 2006)](#capitulo-5.5-caso-ancla-canonico---behavioral-dynamics-warren-2006)
+- [Capítulo 5.6: Corpus inter-escala (10 casos, escalas atómica a astrofísica)](#capitulo-5.6-corpus-inter-escala-10-casos-escalas-atomica-a-astrofisica)
+
+</details>
+
+<details>
+<summary><b>Parte 6 — Cierre demostrativo</b></summary>
+
+- [Capítulo 6.1: Conclusión demostrativa](#capitulo-6.1-conclusion-demostrativa)
+- [Capítulo 6.2: Guía de defensa oral](#capitulo-6.2-guia-de-defensa-oral)
+- [Capítulo 6.3: Hoja de ruta para tesis final](#capitulo-6.3-hoja-de-ruta-para-tesis-final)
+
+</details>
+
+<details>
+<summary><b>Parte 9 — Corpus EDI: justificación operativa</b></summary>
+
+- [Capítulo 9.0: Corpus inter-dominio (30 casos)](#capitulo-9.0-corpus-inter-dominio-30-casos)
+- [Capítulo 9.1: Caso 30 — Behavioral Dynamics bajo EDI](#capitulo-9.1-caso-30---behavioral-dynamics-bajo-edi)
+- [Capítulo 9.2: Multi-sonda — validación cruzada](#capitulo-9.2-multi-sonda---validacion-cruzada)
+- [Capítulo 9.3: Baselines estadísticos — comparación ejecutada](#capitulo-9.3-baselines-estadisticos---comparacion-ejecutada)
+- [Capítulo 9.4: Caso piloto COVID — dimensión normativa](#capitulo-9.4-caso-piloto-covid---dimension-normativa)
+- [Capítulo 9.5: Perfil agresivo — análisis de drift](#capitulo-9.5-perfil-agresivo---analisis-de-drift)
+
+</details>
+
+<details>
+<summary><b>Bibliografía</b></summary>
+
+- [Bibliografía consolidada](#bibliografia-consolidada)
+
+</details>
+
+<details>
+<summary><b>Anexos operativos</b></summary>
+
+- [Anexo A.1: Glosario operativo](#anexo-a.1-glosario-operativo)
+- [Anexo A.2: Mapa de operadores formales](#anexo-a.2-mapa-de-operadores-formales)
+- [Anexo A.3: Plantilla del dossier de anclaje](#anexo-a.3-plantilla-del-dossier-de-anclaje)
+- [Anexo A.4: Tabla comparativa con rivales](#anexo-a.4-tabla-comparativa-con-rivales)
+- [Anexo A.5: Mapa de aplicaciones](#anexo-a.5-mapa-de-aplicaciones)
+- [Anexo A.6: Versiones cortas de defensa](#anexo-a.6-versiones-cortas-de-defensa)
+- [Anexo A.8: Tablas crudas del corpus inter-dominio](#anexo-a.8-tablas-crudas-del-corpus-inter-dominio)
+- [Anexo A.9: Listas de figuras, tablas y abreviaturas](#anexo-a.9-listas-de-figuras-tablas-y-abreviaturas)
+- [Anexo A.10: Figuras Mermaid](#anexo-a.10-figuras-mermaid)
+- [Anexo A.11: Validación lógica formal con ST](#anexo-a.11-validacion-logica-formal-con-st)
+- [Anexo A.12: Corpus inter-escala — tablas crudas](#anexo-a.12-corpus-inter-escala---tablas-crudas)
+
+</details>
+
+<details>
+<summary><b>Auditorías metodológicas</b></summary>
+
+- [Auditoría doctoral integral (v2 final)](#auditoria-doctoral-integral-v2-final)
+- [Auditoría V5: vacíos estructurales de contenido filosófico](#auditoria-v5-vacios-estructurales-de-contenido-filosofico)
+
+</details>
+
+---
+
+<div id="abstract-bilingue"></div>
 
 # Anexo A.7. Abstract bilingüe
 
@@ -263,20 +259,17 @@ The main outcome is not a binary validation score but a **discriminative map of 
 > Agudelo, J., y Vallejo Ortiz, S. (2026). *Estructuras Pre-Ontológicas: Realismo Irrealista Operativo y Compresión Multiescala con Validación EDI Multidominio* [Manuscrito doctoral]. Universidad de Antioquia.
 
 
-<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
+<p align="right"><sub><a href="#tabla-de-contenidos">↑ volver al índice</a></sub></p>
 
 ---
 
 
-<a id="parte-0-proyecto"></a>
+<div id="parte-0-proyecto"></div>
 
 # Parte 0 — Plan general del proyecto
 
-<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
 
-
-
-<a id="capitulo-0.1-estructura-general"></a>
+<div id="capitulo-0.1-estructura-general"></div>
 
 # Estructura general del proyecto
 
@@ -443,12 +436,11 @@ La raíz de cada carpeta de capítulo contiene solo el texto canónico que entra
 Si el manuscrito-fuente es el cuerpo vivo de la idea, esta arquitectura define su esqueleto. Sin esqueleto, incluso una idea brillante termina filosóficamente amorfa. Con esqueleto, la idea se vuelve manuscrito, el manuscrito tesis, y la tesis programa de investigación.
 
 
-<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
+<p align="right"><sub><a href="#tabla-de-contenidos">↑ volver al índice</a></sub></p>
 
 ---
 
-
-<a id="capitulo-0.2-preguntas-objetivos-e-hipotesis"></a>
+<div id="capitulo-0.2-preguntas-objetivos-e-hipotesis"></div>
 
 # Preguntas, objetivos e hipótesis
 
@@ -588,12 +580,11 @@ La tesis está demostrada en behavioral dynamics. Es marco general por aspiraci�
 - hoja de ruta: capítulo 06-03.
 
 
-<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
+<p align="right"><sub><a href="#tabla-de-contenidos">↑ volver al índice</a></sub></p>
 
 ---
 
-
-<a id="capitulo-0.3-plan-de-capitulos"></a>
+<div id="capitulo-0.3-plan-de-capitulos"></div>
 
 # Plan de capítulos de la tesis
 
@@ -804,12 +795,11 @@ Con eso, el trabajo deja de ser una intuición y se convierte en máquina argume
 - hoja de ruta para tesis final: capítulo 06-03.
 
 
-<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
+<p align="right"><sub><a href="#tabla-de-contenidos">↑ volver al índice</a></sub></p>
 
 ---
 
-
-<a id="capitulo-0.4-formalizacion-institucional"></a>
+<div id="capitulo-0.4-formalizacion-institucional"></div>
 
 # Formalización institucional
 
@@ -934,20 +924,17 @@ Esta cláusula reconoce que la honestidad metodológica del manuscrito requiere 
 - Auditorías doctorales internas: `Bitacora/2026-04-27-integracion-jacob/04-auditoria-doctoral-v1.md` y `Auditoria_Doctoral.md` (v2).
 
 
-<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
+<p align="right"><sub><a href="#tabla-de-contenidos">↑ volver al índice</a></sub></p>
 
 ---
 
 
-<a id="parte-1-diagnostico"></a>
+<div id="parte-1-diagnostico"></div>
 
 # Parte 1 — Diagnóstico estructural
 
-<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
 
-
-
-<a id="capitulo-1.1-falencias-de-la-tesis"></a>
+<div id="capitulo-1.1-falencias-de-la-tesis"></div>
 
 # Diagnóstico estructural de la tesis
 
@@ -1114,12 +1101,11 @@ Para pasar de este diagnóstico al cuerpo de la tesis corregida:
 La bitácora de la sesión que produjo las correcciones queda como material auxiliar en `01-diagnostico/sesiones/`. No es parte del cuerpo argumental: es trazabilidad histórica.
 
 
-<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
+<p align="right"><sub><a href="#tabla-de-contenidos">↑ volver al índice</a></sub></p>
 
 ---
 
-
-<a id="capitulo-1.2-objeciones-discriminantes"></a>
+<div id="capitulo-1.2-objeciones-discriminantes"></div>
 
 # Objeciones discriminantes anticipadas
 
@@ -1285,12 +1271,11 @@ Si no cae en ninguna de las seis, probablemente es objeción mal formulada. Si c
 Las cinco objeciones discriminantes definen las pruebas que la tesis acepta enfrentar. Cada una trae compromiso público, no inmunización. Si el manuscrito las responde, no porque las desmonte sino porque produce los entregables prometidos, la tesis ha pagado el precio epistémico de su léxico. Si alguno de esos entregables falla, el manuscrito acepta el fallo en el capítulo 06-01 y reformula. Esa es la diferencia entre una tesis fuerte y un manifiesto bien escrito.
 
 
-<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
+<p align="right"><sub><a href="#tabla-de-contenidos">↑ volver al índice</a></sub></p>
 
 ---
 
-
-<a id="capitulo-1.3-estado-del-arte"></a>
+<div id="capitulo-1.3-estado-del-arte"></div>
 
 # Estado del arte
 
@@ -1435,20 +1420,17 @@ La revisión exhaustiva de cada uno de los 30 dominios queda como trabajo futuro
 - Bibliografía completa con 90 referencias formales: capítulo 07-01.
 
 
-<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
+<p align="right"><sub><a href="#tabla-de-contenidos">↑ volver al índice</a></sub></p>
 
 ---
 
 
-<a id="parte-2-fundamentos"></a>
+<div id="parte-2-fundamentos"></div>
 
 # Parte 2 — Fundamentos ontológicos y epistemológicos
 
-<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
 
-
-
-<a id="capitulo-2.1-ontologia-material-relacional"></a>
+<div id="capitulo-2.1-ontologia-material-relacional"></div>
 
 # Ontología material-relacional
 
@@ -1835,12 +1817,11 @@ Lo que esta ontología rechaza se discute en:
 La fórmula del cierre no es retórica. Es la condición de admisión que rige todo lo que viene después.
 
 
-<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
+<p align="right"><sub><a href="#tabla-de-contenidos">↑ volver al índice</a></sub></p>
 
 ---
 
-
-<a id="capitulo-2.2-epistemologia-de-la-compresion"></a>
+<div id="capitulo-2.2-epistemologia-de-la-compresion"></div>
 
 # Epistemología general de la compresión multiescala
 
@@ -2108,12 +2089,11 @@ Lo que esta epistemología rechaza se discute en:
 - capítulo 04-02 (objeciones que persisten).
 
 
-<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
+<p align="right"><sub><a href="#tabla-de-contenidos">↑ volver al índice</a></sub></p>
 
 ---
 
-
-<a id="capitulo-2.3-categorias-objetos-propiedades-identidad"></a>
+<div id="capitulo-2.3-categorias-objetos-propiedades-identidad"></div>
 
 # Categorías, objetos, propiedades e identidad
 
@@ -2340,12 +2320,11 @@ Categorías son compresiones semánticas auditables. Objetos son unidades operat
 - caso ancla canónico: 05-05.
 
 
-<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
+<p align="right"><sub><a href="#tabla-de-contenidos">↑ volver al índice</a></sub></p>
 
 ---
 
-
-<a id="capitulo-2.4-anclaje-empirico-nivel-b-multiescalar"></a>
+<div id="capitulo-2.4-anclaje-empirico-nivel-b-multiescalar"></div>
 
 # El nivel B: anclaje empírico (general multiescalar)
 
@@ -2600,12 +2579,11 @@ Con la incorporación de B como nivel pleno, la tesis recupera el plano que la r
 - aplicación programática a mente: capítulo 05-01.
 
 
-<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
+<p align="right"><sub><a href="#tabla-de-contenidos">↑ volver al índice</a></sub></p>
 
 ---
 
-
-<a id="capitulo-2.5-temporalidad-y-causalidad"></a>
+<div id="capitulo-2.5-temporalidad-y-causalidad"></div>
 
 # Temporalidad y causalidad — fundamentos generales
 
@@ -2731,12 +2709,11 @@ Esto cubre los vacíos V5-02, V5-03, V5-09 con honestidad: la tesis no inventa m
 > El tiempo es real-relacional, la flecha es termodinámica, la causalidad es manipulabilidad woodwardiana, la circularidad es retroacción dinámica con grafos cíclicos, y lo que parecía downward causation es constitución descendente compatible con exclusión causal. Estas posturas no son originales — son adopciones explícitas de la literatura — pero hacían falta articuladas para que la ontología material-relacional general no quedara con dos huecos centrales sin cerrar.
 
 
-<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
+<p align="right"><sub><a href="#tabla-de-contenidos">↑ volver al índice</a></sub></p>
 
 ---
 
-
-<a id="capitulo-2.6-dimension-normativa-y-etica"></a>
+<div id="capitulo-2.6-dimension-normativa-y-etica"></div>
 
 # Dimensión normativa y ética — naturalismo no-reduccionista
 
@@ -2852,20 +2829,17 @@ La operacionalización empírica completa de la dimensión normativa **requiere 
 > Los valores son atractores normativos materialmente sostenidos. Las normas son constricciones operativas con cuenca medible. La ética no se reduce a descripción material ni requiere sustancia adicional: emerge en el sistema humano-comunidad-historia con eficacia causal y dimensión propia. Esta postura permite a la tesis cumplir su pretensión de **ontología general**: cubre la dimensión normativa sin colapsarla en lo descriptivo ni postularla como plano separado.
 
 
-<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
+<p align="right"><sub><a href="#tabla-de-contenidos">↑ volver al índice</a></sub></p>
 
 ---
 
 
-<a id="parte-3-formalizacion"></a>
+<div id="parte-3-formalizacion"></div>
 
 # Parte 3 — Formalización metodológica
 
-<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
 
-
-
-<a id="capitulo-3.1-aparato-formal-minimo"></a>
+<div id="capitulo-3.1-aparato-formal-minimo"></div>
 
 # Aparato formal mínimo (metodología general)
 
@@ -3190,12 +3164,11 @@ Si las **estructuras pre-ontológicas son atractores** y los atractores son **ob
 - aplicaciones programáticas: capítulos 05-01 a 05-04.
 
 
-<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
+<p align="right"><sub><a href="#tabla-de-contenidos">↑ volver al índice</a></sub></p>
 
 ---
 
-
-<a id="capitulo-3.2-criterios-de-legitimidad-y-dossier"></a>
+<div id="capitulo-3.2-criterios-de-legitimidad-y-dossier"></div>
 
 # Criterios de legitimidad y dossier de anclaje
 
@@ -3455,12 +3428,11 @@ Los diez criterios y el dossier de anclaje convierten la tesis en una propuesta 
 - dossier programático de cada dominio adicional: capítulos 05-01 a 05-04.
 
 
-<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
+<p align="right"><sub><a href="#tabla-de-contenidos">↑ volver al índice</a></sub></p>
 
 ---
 
-
-<a id="capitulo-3.3-auditoria-ontologica-como-protocolo"></a>
+<div id="capitulo-3.3-auditoria-ontologica-como-protocolo"></div>
 
 # Auditoría ontológica y diseño de investigación
 
@@ -3727,12 +3699,11 @@ Con esta auditoría, la tesis se presenta no solo como respuesta a una pregunta 
 - objeciones que la auditoría neutraliza: capítulo 04-02.
 
 
-<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
+<p align="right"><sub><a href="#tabla-de-contenidos">↑ volver al índice</a></sub></p>
 
 ---
 
-
-<a id="capitulo-3.4-operacionalizacion-de-kappa-via-edi"></a>
+<div id="capitulo-3.4-operacionalizacion-de-kappa-via-edi"></div>
 
 # Operacionalización del operador de compresión κ
 
@@ -3890,12 +3861,11 @@ La taxonomía operativa del corpus EDI distingue seis niveles (0–5):
 La operación κ deja de ser un acto interpretativo del filósofo y se convierte en un protocolo reproducible. Esto es lo que permitirá al capítulo de aplicaciones mostrar cómo Warren (2006) ya implementó, sin nombrarla así, esta misma operacionalización: identificó variables conductuales clave, midió series, ajustó sistemas dinámicos de baja dimensión, validó atractores, predijo bifurcaciones, e indicó las regiones donde el modelo se queda corto. Esa coincidencia no es accidente; es la confirmación de que la tesis y la práctica investigadora más rigurosa de percepción–acción comparten el mismo esqueleto operativo.
 
 
-<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
+<p align="right"><sub><a href="#tabla-de-contenidos">↑ volver al índice</a></sub></p>
 
 ---
 
-
-<a id="capitulo-3.5-etica-de-investigacion-y-gobernanza-de-datos"></a>
+<div id="capitulo-3.5-etica-de-investigacion-y-gobernanza-de-datos"></div>
 
 # Ética de investigación y gobernanza de datos
 
@@ -4064,20 +4034,17 @@ La responsabilidad académica completa del manuscrito reside en los autores huma
 - Bibliografía completa: capítulo `07-bibliografia/01-bibliografia-orientativa.md`.
 
 
-<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
+<p align="right"><sub><a href="#tabla-de-contenidos">↑ volver al índice</a></sub></p>
 
 ---
 
 
-<a id="parte-4-debates"></a>
+<div id="parte-4-debates"></div>
 
 # Parte 4 — Debates y limitaciones
 
-<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
 
-
-
-<a id="capitulo-4.1-debates-con-posiciones-rivales"></a>
+<div id="capitulo-4.1-debates-con-posiciones-rivales"></div>
 
 # Debates con posiciones rivales
 
@@ -4554,12 +4521,11 @@ Eso es lo que la tesis quiere demostrar una y otra vez, hasta que incluso sus ob
 - defensa oral: capítulo 06-02.
 
 
-<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
+<p align="right"><sub><a href="#tabla-de-contenidos">↑ volver al índice</a></sub></p>
 
 ---
 
-
-<a id="capitulo-4.2-limitaciones-y-puntos-de-presion"></a>
+<div id="capitulo-4.2-limitaciones-y-puntos-de-presion"></div>
 
 # Limitaciones y puntos de presión
 
@@ -4770,20 +4736,17 @@ La tesis sobrevive a las objeciones discriminantes (capítulo 04-01 y 01-diagnos
 - hoja de ruta para tesis final: capítulo 06-03.
 
 
-<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
+<p align="right"><sub><a href="#tabla-de-contenidos">↑ volver al índice</a></sub></p>
 
 ---
 
 
-<a id="parte-5-aplicaciones"></a>
+<div id="parte-5-aplicaciones"></div>
 
 # Parte 5 — Aplicaciones del marco
 
-<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
 
-
-
-<a id="capitulo-5.0-criterios-de-admision-de-aplicaciones"></a>
+<div id="capitulo-5.0-criterios-de-admision-de-aplicaciones"></div>
 
 # Criterios de admisión de aplicaciones
 
@@ -4928,12 +4891,11 @@ Esta política de admisión es la respuesta operativa a la objeción de sobreext
 - deuda residual: capítulo 06-01.
 
 
-<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
+<p align="right"><sub><a href="#tabla-de-contenidos">↑ volver al índice</a></sub></p>
 
 ---
 
-
-<a id="capitulo-5.1-mente-memoria-yo"></a>
+<div id="capitulo-5.1-mente-memoria-yo"></div>
 
 # Mente, memoria y yo
 
@@ -5216,12 +5178,11 @@ La tesis adopta **compatibilismo**: la libertad humana es compatible con determi
 Para que esta conjetura se eleve a demostración, hay que construir el dossier. Eso es trabajo posterior, fechado, con entregable definido en la hoja de ruta.
 
 
-<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
+<p align="right"><sub><a href="#tabla-de-contenidos">↑ volver al índice</a></sub></p>
 
 ---
 
-
-<a id="capitulo-5.2-biologia-y-ecologia"></a>
+<div id="capitulo-5.2-biologia-y-ecologia"></div>
 
 # Biología y ecología
 
@@ -5462,12 +5423,11 @@ Este capítulo conjetura. La elevación a modo demostrativo requiere adoptar un 
 > Lo vivo no obliga a abandonar el monismo material; obliga a enriquecerlo con organización, dependencia y multiescalaridad. La biología y la ecología muestran que la realidad material solo se vuelve inteligible cuando se modelan los acoplamientos dinámicos que la estabilizan. La conjetura del marco es elevable; el trabajo demostrativo es posterior.
 
 
-<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
+<p align="right"><sub><a href="#tabla-de-contenidos">↑ volver al índice</a></sub></p>
 
 ---
 
-
-<a id="capitulo-5.3-sistemas-tecnicos-distribuidos"></a>
+<div id="capitulo-5.3-sistemas-tecnicos-distribuidos"></div>
 
 # Sistemas técnicos distribuidos
 
@@ -5606,12 +5566,11 @@ Este capítulo articula la conjetura con claridad, pero falta el modelo dinámic
 > Un servicio distribuido existe como patrón operativo, no como bloque autosuficiente. Su realidad está en la coordinación material de procesos y dependencias; su inteligibilidad depende del nivel en que se formule la pregunta. La elevación a modo demostrativo requiere construir el dossier con datos cuantitativos. El programa de extensión está articulado.
 
 
-<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
+<p align="right"><sub><a href="#tabla-de-contenidos">↑ volver al índice</a></sub></p>
 
 ---
 
-
-<a id="capitulo-5.4-instituciones-mercado-estado"></a>
+<div id="capitulo-5.4-instituciones-mercado-estado"></div>
 
 # Instituciones, mercado y Estado
 
@@ -5846,12 +5805,11 @@ Este capítulo conjetura. La elevación requiere:
 > Institución, mercado y Estado son reales no como sustancias suprahumanas sino como patrones materialmente sostenidos de organización, norma, reconocimiento y poder, modelables como atractores dinámicos con cuenca persistente y bifurcaciones identificables. Su análisis exige descomponer la compresión sin destruir la realidad del patrón que comprime, y exige desarrollo del aparato para tratar normatividad como variable. El programa de elevación está articulado, la deuda nombrada.
 
 
-<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
+<p align="right"><sub><a href="#tabla-de-contenidos">↑ volver al índice</a></sub></p>
 
 ---
 
-
-<a id="capitulo-5.5-caso-ancla-canonico---behavioral-dynamics-warren-2006"></a>
+<div id="capitulo-5.5-caso-ancla-canonico---behavioral-dynamics-warren-2006"></div>
 
 # La dinámica de la percepción y la acción, reconstruida bajo monismo material-relacional con compresión multiescala
 
@@ -6152,12 +6110,11 @@ La frase de Gibson que Warren cita al inicio — `el comportamiento puede ser re
 Esto es lo que el profesor pedía como demostración. Esto es lo que la tesis material-relacional pretendía hacer. Aquí están en el mismo cuadro.
 
 
-<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
+<p align="right"><sub><a href="#tabla-de-contenidos">↑ volver al índice</a></sub></p>
 
 ---
 
-
-<a id="capitulo-5.6-corpus-inter-escala-10-casos-escalas-atomica-a-astrofisica"></a>
+<div id="capitulo-5.6-corpus-inter-escala-10-casos-escalas-atomica-a-astrofisica"></div>
 
 # Corpus EDI multiescala — demostración de generalidad ontológica
 
@@ -6329,20 +6286,17 @@ Esta es la tesis que el manuscrito entrega tras hostile testing severo: **ontolo
 - Corpus macro original: `09-simulaciones-edi/README.md`.
 
 
-<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
+<p align="right"><sub><a href="#tabla-de-contenidos">↑ volver al índice</a></sub></p>
 
 ---
 
 
-<a id="parte-6-cierre"></a>
+<div id="parte-6-cierre"></div>
 
 # Parte 6 — Cierre demostrativo
 
-<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
 
-
-
-<a id="capitulo-6.1-conclusion-demostrativa"></a>
+<div id="capitulo-6.1-conclusion-demostrativa"></div>
 
 # Conclusión demostrativa
 
@@ -6645,12 +6599,11 @@ Y aún más importante: el caso 30 ya nos enseñó algo decisivo. **El aparato f
 Esa es la condición de la victoria local de esta tesis.
 
 
-<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
+<p align="right"><sub><a href="#tabla-de-contenidos">↑ volver al índice</a></sub></p>
 
 ---
 
-
-<a id="capitulo-6.2-guia-de-defensa-oral"></a>
+<div id="capitulo-6.2-guia-de-defensa-oral"></div>
 
 # Guía de defensa oral
 
@@ -6841,12 +6794,11 @@ Esa es la frase que debería poder sobrevivir incluso si el resto del día filos
 - hoja de ruta: capítulo 06-03.
 
 
-<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
+<p align="right"><sub><a href="#tabla-de-contenidos">↑ volver al índice</a></sub></p>
 
 ---
 
-
-<a id="capitulo-6.3-hoja-de-ruta-para-tesis-final"></a>
+<div id="capitulo-6.3-hoja-de-ruta-para-tesis-final"></div>
 
 # Hoja de ruta para tesis final
 
@@ -7115,20 +7067,17 @@ Si el manuscrito final cumple las seis cualidades, deja de ser tesis y empieza a
 > El prototipo doctoral existe y demuestra lo que dice demostrar. El paso siguiente no es inventar otra tesis sino consolidar esta mediante elevación de casos, integración bibliográfica, desarrollo del aparato normativo, lectura hostil y redacción unificada. Menos intuición dispersa, más arquitectura argumentativa probada. Filosóficamente, evolución honesta. Académicamente, manuscrito defendible.
 
 
-<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
+<p align="right"><sub><a href="#tabla-de-contenidos">↑ volver al índice</a></sub></p>
 
 ---
 
 
-<a id="parte-9-corpus"></a>
+<div id="parte-9-corpus"></div>
 
 # Parte 9 — Corpus EDI: justificación operativa
 
-<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
 
-
-
-<a id="capitulo-9.0-corpus-inter-dominio-30-casos"></a>
+<div id="capitulo-9.0-corpus-inter-dominio-30-casos"></div>
 
 # Capítulo 09. Corpus EDI: validación empírica inter-dominio + inter-escala
 
@@ -7390,12 +7339,11 @@ La trazabilidad histórica del crecimiento del corpus, las decisiones metodológ
 Este corpus es la prueba empírica del irrealismo operativo. No es ilustración de la tesis: es su demostración bajo intervención controlada con datos públicos, semillas fijas, controles de falsación rechazados, y discriminación entre fenómenos con y sin cierre operativo. Lo que el aparato formal del capítulo 03 promete operativamente, este corpus lo entrega cuantitativamente sobre 30 dominios heterogéneos.
 
 
-<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
+<p align="right"><sub><a href="#tabla-de-contenidos">↑ volver al índice</a></sub></p>
 
 ---
 
-
-<a id="capitulo-9.1-caso-30---behavioral-dynamics-bajo-edi"></a>
+<div id="capitulo-9.1-caso-30---behavioral-dynamics-bajo-edi"></div>
 
 # Caso 30. Behavioral Dynamics (Fajen-Warren 2003)
 
@@ -7548,12 +7496,11 @@ Tiempo aproximado en CPU 32 hilos: 2-5 minutos.
 Las decisiones metodológicas, versiones de la sonda, ajustes de parámetros y verificaciones de robustez quedan documentadas en `Bitacora/`. La fuente de verdad del manuscrito es `outputs/metrics.json` versionado en este directorio.
 
 
-<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
+<p align="right"><sub><a href="#tabla-de-contenidos">↑ volver al índice</a></sub></p>
 
 ---
 
-
-<a id="capitulo-9.2-multi-sonda---validacion-cruzada"></a>
+<div id="capitulo-9.2-multi-sonda---validacion-cruzada"></div>
 
 # Multi-sonda — resultados ejecutados
 
@@ -7652,12 +7599,11 @@ Esto **neutraliza la objeción de dependencia instrumental fuerte**: la conclusi
 - Kermack, W.O. y McKendrick, A.G. (1927). "A contribution to the mathematical theory of epidemics". *Proc. Roy. Soc. A* 115(772): 700-721. (SEIR).
 
 
-<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
+<p align="right"><sub><a href="#tabla-de-contenidos">↑ volver al índice</a></sub></p>
 
 ---
 
-
-<a id="capitulo-9.3-baselines-estadisticos---comparacion-ejecutada"></a>
+<div id="capitulo-9.3-baselines-estadisticos---comparacion-ejecutada"></div>
 
 # Baselines estadísticos puros — resultados ejecutados
 
@@ -7773,12 +7719,11 @@ Esto NO se ha hecho. La afirmación correcta es: *"EDI tiene mejor capacidad de 
 - Breiman, L. (2001). "Statistical Modeling: The Two Cultures". *Statistical Science* 16(3): 199–231.
 
 
-<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
+<p align="right"><sub><a href="#tabla-de-contenidos">↑ volver al índice</a></sub></p>
 
 ---
 
-
-<a id="capitulo-9.4-caso-piloto-covid---dimension-normativa"></a>
+<div id="capitulo-9.4-caso-piloto-covid---dimension-normativa"></div>
 
 # Caso piloto COVID-19 — dimensión normativa institucional
 
@@ -7878,12 +7823,11 @@ Esto cierra la deuda del bloque 7 de la auditoría doctoral en su forma de **pil
 - Our World in Data (2025). *COVID-19 Data Explorer*. https://ourworldindata.org/covid (acceso 2026-04-28).
 
 
-<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
+<p align="right"><sub><a href="#tabla-de-contenidos">↑ volver al índice</a></sub></p>
 
 ---
 
-
-<a id="capitulo-9.5-perfil-agresivo---analisis-de-drift"></a>
+<div id="capitulo-9.5-perfil-agresivo---analisis-de-drift"></div>
 
 # Perfil agresivo — análisis de drift inferencial
 
@@ -7972,20 +7916,17 @@ Esta ejecución masiva queda como trámite editorial pre-depósito, no como deud
 - Auditoría v2 bloque C.2.
 
 
-<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
+<p align="right"><sub><a href="#tabla-de-contenidos">↑ volver al índice</a></sub></p>
 
 ---
 
 
-<a id="bibliografia"></a>
+<div id="bibliografia"></div>
 
 # Bibliografía
 
-<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
 
-
-
-<a id="bibliografia-consolidada"></a>
+<div id="bibliografia-consolidada"></div>
 
 # Bibliografía formal del proyecto
 
@@ -8173,20 +8114,17 @@ Cada capítulo del manuscrito se ancla en al menos un interlocutor principal y u
 > Una tesis doctoral no se valida por la cantidad de referencias sino por la **función argumental** de cada una. Aquí cada referencia tiene su asignación a capítulo y su rol (alianza, contraste, afinación). Una vez asignados, se convierten en aparato real durante la redacción final.
 
 
-<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
+<p align="right"><sub><a href="#tabla-de-contenidos">↑ volver al índice</a></sub></p>
 
 ---
 
 
-<a id="anexos"></a>
+<div id="anexos"></div>
 
 # Anexos operativos
 
-<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
 
-
-
-<a id="anexo-a.1-glosario-operativo"></a>
+<div id="anexo-a.1-glosario-operativo"></div>
 
 # Anexo A.1. Glosario operativo
 
@@ -8392,12 +8330,11 @@ Dirección de marcha actual. Variable conductual clave en locomoción (Fajen y W
 Cada término del glosario se usa de manera consistente en todos los capítulos del manuscrito. Cuando un capítulo introduce un término nuevo, se añade aquí con su definición operativa y referencia cruzada.
 
 
-<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
+<p align="right"><sub><a href="#tabla-de-contenidos">↑ volver al índice</a></sub></p>
 
 ---
 
-
-<a id="anexo-a.2-mapa-de-operadores-formales"></a>
+<div id="anexo-a.2-mapa-de-operadores-formales"></div>
 
 # Anexo A.2. Mapa de operadores formales
 
@@ -8639,12 +8576,11 @@ EDI = -1 ─┬───────────────────┬─�
 - Aplicación a 30 casos: capítulo 09 + `09-simulaciones-edi/<caso>/`
 
 
-<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
+<p align="right"><sub><a href="#tabla-de-contenidos">↑ volver al índice</a></sub></p>
 
 ---
 
-
-<a id="anexo-a.3-plantilla-del-dossier-de-anclaje"></a>
+<div id="anexo-a.3-plantilla-del-dossier-de-anclaje"></div>
 
 # Anexo A.3. Plantilla del dossier de anclaje
 
@@ -8830,12 +8766,11 @@ Cada uno tiene:
 > El dossier no es burocracia: es la articulación operativa del filtro de admisión que distingue una tesis de un manifiesto. Cualquier categoría que entre al manuscrito sin dossier completo (en demostrativo) o sin criterio de elevación (en programático) está fuera del marco.
 
 
-<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
+<p align="right"><sub><a href="#tabla-de-contenidos">↑ volver al índice</a></sub></p>
 
 ---
 
-
-<a id="anexo-a.4-tabla-comparativa-con-rivales"></a>
+<div id="anexo-a.4-tabla-comparativa-con-rivales"></div>
 
 # Anexo A.4. Tabla comparativa con rivales
 
@@ -9060,12 +8995,11 @@ Esta tabla es compromiso. Si en algún rival la tesis no muestra ventaja en al m
 - Convergencia con Wolfram (programa futuro): capítulo 06-03.
 
 
-<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
+<p align="right"><sub><a href="#tabla-de-contenidos">↑ volver al índice</a></sub></p>
 
 ---
 
-
-<a id="anexo-a.5-mapa-de-aplicaciones"></a>
+<div id="anexo-a.5-mapa-de-aplicaciones"></div>
 
 # Anexo A.5. Mapa de aplicaciones — corpus inter-dominio + inter-escala
 
@@ -9269,12 +9203,11 @@ El caso 30 (Nivel 3 weak) demuestra que **el aparato EDI funciona en escala beha
 - Verificación de reproducibilidad: `Bitacora/2026-04-27-integracion-jacob/02-verificacion-reproducibilidad.md`
 
 
-<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
+<p align="right"><sub><a href="#tabla-de-contenidos">↑ volver al índice</a></sub></p>
 
 ---
 
-
-<a id="anexo-a.6-versiones-cortas-de-defensa"></a>
+<div id="anexo-a.6-versiones-cortas-de-defensa"></div>
 
 # Anexo A.6. Versiones cortas de defensa oral
 
@@ -9488,12 +9421,11 @@ Esta tesis no clausura la complejidad de lo real. Ofrece reglas para no empeorar
 Esa es la frase que sobrevive incluso si el resto del día filosófico se incendia un poco.
 
 
-<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
+<p align="right"><sub><a href="#tabla-de-contenidos">↑ volver al índice</a></sub></p>
 
 ---
 
-
-<a id="anexo-a.8-tablas-crudas-del-corpus-inter-dominio"></a>
+<div id="anexo-a.8-tablas-crudas-del-corpus-inter-dominio"></div>
 
 # Anexo A.8. Tablas crudas del corpus EDI
 
@@ -9620,12 +9552,11 @@ cat outputs/metrics.json | python3 -m json.tool
 Si una cifra del anexo no coincide con `metrics.json`, prevalece `metrics.json` y este anexo se corrige.
 
 
-<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
+<p align="right"><sub><a href="#tabla-de-contenidos">↑ volver al índice</a></sub></p>
 
 ---
 
-
-<a id="anexo-a.9-listas-de-figuras-tablas-y-abreviaturas"></a>
+<div id="anexo-a.9-listas-de-figuras-tablas-y-abreviaturas"></div>
 
 # Anexo A.9. Listas de figuras, tablas y abreviaturas
 
@@ -9744,12 +9675,11 @@ Listas de soporte editorial requeridas por el formato de tesis doctoral instituc
 Las listas de este anexo se actualizarán automáticamente desde el manuscrito ensamblado (`TesisFinal/Tesis.md`) cuando se haga la conversión final a LaTeX/PDF mediante Pandoc + script de extracción. Hasta entonces, este anexo se mantiene manualmente coherente con los capítulos de origen.
 
 
-<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
+<p align="right"><sub><a href="#tabla-de-contenidos">↑ volver al índice</a></sub></p>
 
 ---
 
-
-<a id="anexo-a.10-figuras-mermaid"></a>
+<div id="anexo-a.10-figuras-mermaid"></div>
 
 # Anexo A.10. Figuras Mermaid
 
@@ -9933,12 +9863,11 @@ mmdc -i Anexos/A10-figuras-mermaid.md -o Anexos/figuras/  # mermaid-cli
 o automáticamente por GitHub/Pandoc con filtros mermaid.
 
 
-<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
+<p align="right"><sub><a href="#tabla-de-contenidos">↑ volver al índice</a></sub></p>
 
 ---
 
-
-<a id="anexo-a.11-validacion-logica-formal-con-st"></a>
+<div id="anexo-a.11-validacion-logica-formal-con-st"></div>
 
 # Anexo A.11. Validación lógica formal con ST (refactor V5 + 10 teorías nuevas)
 
@@ -10145,12 +10074,11 @@ La validación lógica formal con ST refactorizada **confirma que los cierres co
 - Auditoría V5: `Auditoria_V5_Vacios_Estructurales.md`.
 
 
-<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
+<p align="right"><sub><a href="#tabla-de-contenidos">↑ volver al índice</a></sub></p>
 
 ---
 
-
-<a id="anexo-a.12-corpus-inter-escala---tablas-crudas"></a>
+<div id="anexo-a.12-corpus-inter-escala---tablas-crudas"></div>
 
 # Anexo A.12. Corpus EDI multiescala — tablas crudas
 
@@ -10226,20 +10154,17 @@ Anexo tabular de **resultados crudos verificables** del corpus EDI multiescala (
 - corpus macro original: `Anexos/A8-tablas-crudas-corpus.md`
 
 
-<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
+<p align="right"><sub><a href="#tabla-de-contenidos">↑ volver al índice</a></sub></p>
 
 ---
 
 
-<a id="auditorias"></a>
+<div id="auditorias"></div>
 
 # Auditorías metodológicas
 
-<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
 
-
-
-<a id="auditoria-doctoral-integral-v2-final"></a>
+<div id="auditoria-doctoral-integral-v2-final"></div>
 
 # Auditoría doctoral — versión 2 final (cierre integral 2026-04-28)
 
@@ -10416,12 +10341,11 @@ El manuscrito ha cerrado **todos los bloques de contenido** identificados en las
 **Esta auditoría v2 final se archiva en:** `Bitacora/2026-04-28-cierre-pendientes/02-auditoria-doctoral-v2-final.md`.
 
 
-<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
+<p align="right"><sub><a href="#tabla-de-contenidos">↑ volver al índice</a></sub></p>
 
 ---
 
-
-<a id="auditoria-v5-vacios-estructurales-de-contenido-filosofico"></a>
+<div id="auditoria-v5-vacios-estructurales-de-contenido-filosofico"></div>
 
 # Auditoría V5 — Vacíos estructurales de contenido filosófico
 
@@ -10951,6 +10875,6 @@ Sección breve en cap 01-01 (falencias) o cap 06-01 (cierre) que integre la evol
 **Fecha:** 2026-04-28.
 
 
-<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
+<p align="right"><sub><a href="#tabla-de-contenidos">↑ volver al índice</a></sub></p>
 
 ---

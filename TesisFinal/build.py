@@ -1,7 +1,10 @@
 """build.py — Ensamblador del manuscrito doctoral final.
 
-Lee los capítulos en su orden canónico y ensambla TesisFinal/Tesis.md
-con TOC colapsable agrupado y enlaces de regreso al índice.
+Genera TesisFinal/Tesis.md con:
+  - Front matter visible (sin anchors duplicados)
+  - TOC colapsable por partes (HTML inline limpio)
+  - Anclajes únicos por capítulo (sin duplicación)
+  - Enlaces "↑ volver al índice" tras cada capítulo
 
 Uso:
     cd /datos/repos/EstructurasPreontologicas
@@ -13,7 +16,6 @@ from pathlib import Path
 
 REPO = Path(__file__).parent.parent
 
-# Estructura agrupada por partes con TOC colapsable
 PARTS = [
     ('Front matter', 'frontmatter', [
         ('Front matter', None, '''# Estructuras Pre-Ontológicas
@@ -49,8 +51,6 @@ PARTS = [
 ### Agradecimientos
 
 A la Universidad de Antioquia, por sostener una tradición de filosofía de la ciencia que hace posible este trabajo. A los colegas y revisores que aportaron críticas tempranas. A los autores de los datasets públicos del corpus, sin los cuales la cartografía multidominio no sería viable. A William H. Warren y Brett R. Fajen por la conjetura cuantitativa de la behavioral dynamics que opera como caso ancla.
-
----
 '''),
         ('Abstract bilingüe', 'Anexos/A7-abstract-bilingue.md', None),
     ]),
@@ -148,75 +148,82 @@ def slugify(s: str) -> str:
 
 
 TOC_ANCHOR = 'tabla-de-contenidos'
-TOP_LINK = (f'\n\n<sub>[↑ volver al índice](#{TOC_ANCHOR})</sub>\n\n---\n')
+BACK_LINK = (
+    f'\n\n<p align="right"><sub><a href="#{TOC_ANCHOR}">↑ volver al índice</a></sub></p>\n\n---\n')
+
+
+def build_toc():
+    """Construye el TOC colapsable como bloque HTML válido."""
+    toc = []
+
+    # Anchor único del TOC (oculto pero referenciable)
+    toc.append(f'<div id="{TOC_ANCHOR}"></div>\n\n')
+    toc.append('# 📑 Tabla de Contenidos\n\n')
+    toc.append(
+        '> **Navegación:** este manuscrito tiene ~10 mil líneas. '
+        'Las partes están agrupadas en secciones colapsables. '
+        'Haz clic en ▸ para expandir cada parte. Cada capítulo termina '
+        'con un enlace «↑ volver al índice» que regresa aquí.\n\n')
+
+    # Navegación rápida
+    toc.append('## Navegación rápida por partes\n\n')
+    for part_title, part_anchor, _ in PARTS:
+        toc.append(f'- [{part_title}](#{part_anchor})\n')
+    toc.append('\n---\n\n')
+
+    # Índice detallado colapsable
+    toc.append('## Índice detallado\n\n')
+
+    for part_title, part_anchor, items in PARTS:
+        is_open = ' open' if part_anchor in (
+            'frontmatter', 'parte-0-proyecto') else ''
+        toc.append(f'<details{is_open}>\n')
+        toc.append(f'<summary><b>{part_title}</b></summary>\n\n')
+        for title, _, _ in items:
+            anchor = slugify(title)
+            toc.append(f'- [{title}](#{anchor})\n')
+        toc.append('\n</details>\n\n')
+
+    toc.append('---\n')
+    return ''.join(toc)
 
 
 def build():
     out_path = REPO / 'TesisFinal/Tesis.md'
     out_path.parent.mkdir(parents=True, exist_ok=True)
 
-    body_lines = []
-    toc_lines = [f'\n\n<a id="{TOC_ANCHOR}"></a>\n\n# 📑 Tabla de Contenidos\n\n']
-    toc_lines.append(
-        '> **Navegación:** este manuscrito tiene ~10 mil líneas. '
-        'Las partes están agrupadas en secciones colapsables. '
-        'Haz clic en ▸ para expandir cada parte. Cada capítulo tiene un enlace '
-        '«↑ volver al índice» al final para regresar aquí.\n\n')
-
-    # TOC: navegación rápida por partes
-    toc_lines.append('## Navegación rápida por partes\n\n')
-    for part_title, part_anchor, _ in PARTS:
-        toc_lines.append(f'- [{part_title}](#{part_anchor})\n')
-    toc_lines.append('\n---\n\n')
-
-    # TOC detallado colapsable
-    toc_lines.append('## Índice detallado (colapsable)\n\n')
+    body = []
 
     for part_title, part_anchor, items in PARTS:
-        # Front matter no se colapsa: es la entrada
-        is_open = ('open' if part_anchor in ('frontmatter', 'parte-0-proyecto')
-                   else '')
-        toc_lines.append(f'<details {is_open}>\n')
-        toc_lines.append(
-            f'<summary><strong>{part_title}</strong></summary>\n\n')
-        for title, path, raw in items:
-            anchor = slugify(title)
-            toc_lines.append(f'- [{title}](#{anchor})\n')
-        toc_lines.append('\n</details>\n\n')
+        # Anchor de la parte (único, antes del título)
+        body.append(f'\n\n<div id="{part_anchor}"></div>\n\n')
 
-    toc_lines.append('---\n')
-
-    # Body: cada parte con su anchor y cada capítulo con anchor + back-to-top
-    for part_title, part_anchor, items in PARTS:
-        body_lines.append(f'\n\n<a id="{part_anchor}"></a>\n\n')
-        # Encabezado de parte (excepto front matter que ya tiene su título)
+        # Encabezado de parte (front matter ya viene con su propio H1)
         if part_anchor != 'frontmatter':
-            body_lines.append(f'# {part_title}\n\n')
-            body_lines.append(
-                f'<sub>[↑ volver al índice](#{TOC_ANCHOR})</sub>\n\n')
+            body.append(f'# {part_title}\n\n')
 
+        # Capítulos de la parte
         for title, path, raw in items:
             anchor = slugify(title)
-            body_lines.append(f'\n\n<a id="{anchor}"></a>\n\n')
+            body.append(f'\n<div id="{anchor}"></div>\n\n')
             if raw is not None:
-                body_lines.append(raw)
+                body.append(raw)
             else:
                 full_path = REPO / path
                 if not full_path.exists():
                     print(f'  WARNING: missing {path}')
-                    body_lines.append(f'> _Capítulo no disponible: {path}_\n')
+                    body.append(f'> _Capítulo no disponible: {path}_\n')
                 else:
                     content = full_path.read_text(encoding='utf-8')
-                    body_lines.append(content)
-                    body_lines.append(TOP_LINK)
+                    body.append(content)
+                    body.append(BACK_LINK)
 
-    # Front matter primero, luego TOC, luego body restante
-    front_idx = 0
-    # body_lines[0] = anchor frontmatter; body_lines[1] = front matter raw
-    front = body_lines[0] + body_lines[1]
-    rest = ''.join(body_lines[2:])
-    final_md = front + ''.join(toc_lines) + rest
+    # Estructura final: Front matter, luego TOC, luego resto del cuerpo
+    front_matter_block = body[0] + body[1] + body[2]  # anchor parte + raw front
+    rest = ''.join(body[3:])
+    toc = build_toc()
 
+    final_md = front_matter_block + '\n\n' + toc + rest
     out_path.write_text(final_md, encoding='utf-8')
 
     size = os.path.getsize(out_path)

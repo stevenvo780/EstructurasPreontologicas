@@ -489,6 +489,102 @@ body {
   transform: rotate(90deg);
 }
 
+/* Estilos para <details> dentro del cuerpo markdown del manuscrito (TOC inline) */
+.markdown-body details {
+  margin: 0.5rem 0 0.8rem;
+  padding: 0.5rem 0.85rem;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(255, 248, 239, 0.55);
+  transition: background 0.15s ease;
+}
+
+.markdown-body details[open] {
+  background: rgba(255, 248, 239, 0.92);
+}
+
+.markdown-body details > summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: #143036;
+  padding: 0.25rem 0;
+  list-style: none;
+  user-select: none;
+}
+
+.markdown-body details > summary::-webkit-details-marker {
+  display: none;
+}
+
+.markdown-body details > summary::marker {
+  display: none;
+}
+
+.markdown-body details > summary::before {
+  content: "▸";
+  display: inline-block;
+  margin-right: 0.45rem;
+  transition: transform 0.15s ease;
+  color: var(--accent);
+  font-size: 0.9em;
+}
+
+.markdown-body details[open] > summary::before {
+  transform: rotate(90deg);
+}
+
+.markdown-body details > summary:hover {
+  color: var(--accent);
+}
+
+.markdown-body details > summary b {
+  font-weight: 700;
+}
+
+.markdown-body details > ul {
+  margin: 0.5rem 0 0.2rem 1.4rem;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.markdown-body details > ul > li {
+  margin: 0.2rem 0;
+  position: relative;
+  padding-left: 0.9rem;
+}
+
+.markdown-body details > ul > li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  opacity: 0.65;
+  font-size: 0.85em;
+}
+
+.markdown-body details > ul > li > a {
+  color: #214f57;
+  text-decoration: none;
+  border-bottom: 1px dashed transparent;
+  transition: border-color 0.15s ease, color 0.15s ease;
+}
+
+.markdown-body details > ul > li > a:hover {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
+
+/* Anchors invisibles inyectados por build.py para navegación */
+.markdown-body div[id] {
+  scroll-margin-top: 80px;
+}
+
+.markdown-body h1[id],
+.markdown-body h2[id],
+.markdown-body h3[id] {
+  scroll-margin-top: 80px;
+}
+
 /* Breadcrumb de capítulo en página de capítulo */
 .chapter-breadcrumb {
   font-size: 0.8rem;

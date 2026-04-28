@@ -44,7 +44,7 @@ NIVEL_MAP = {
     "falsification": None,
 }
 
-MD = MarkdownIt("js-default", {"html": False, "linkify": True, "typographer": True})
+MD = MarkdownIt("js-default", {"html": True, "linkify": True, "typographer": True})
 
 
 def _slugify(value: str) -> str:
