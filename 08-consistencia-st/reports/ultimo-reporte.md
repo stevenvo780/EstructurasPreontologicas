@@ -46,7 +46,7 @@
 
 ```text
 Perfil logico: classical.propositional
-Passage p_formulacion = [[../tesis.md#1-formulacion-central]]
+Passage p_formulacion = [[../Bitacora/2026-04-27-integracion-jacob/00-tesis-fuente-original.md#1-formulacion-central]]
 Formalizacion f_formulacion: p_formulacion -> (M & C & R & L)
 Claim c_formulacion registrado
 Support: c_formulacion <- p_formulacion
@@ -58,7 +58,7 @@ Claim c_criterios registrado
 Support: c_criterios <- p_criterios
 Confidence: c_criterios = 0.95
 Context: c_criterios = "Matriz mínima de legitimidad epistemológica"
-Passage p_principio = [[../tesis.md#44-la-tesis-como-principio-general]]
+Passage p_principio = [[../Bitacora/2026-04-27-integracion-jacob/00-tesis-fuente-original.md#44-la-tesis-como-principio-general]]
 Formalizacion f_principio: p_principio -> (M & C & R)
 Claim c_principio registrado
 Support: c_principio <- p_principio

@@ -130,15 +130,16 @@ El caso 30 (behavioral dynamics) **fue rechazado por el aparato** (EDI=0.002, no
 
 Lo que el manuscrito no demuestra y reconoce explícitamente como deuda con plazo y entregable:
 
-| Deuda | Descripción | Plazo plausible | Entregable |
-|---|---|---|---|
-| Caso 30 elevación a demostrativo | Implementar sonda `behavioral_attractor` (segundo orden), pipeline alta frecuencia, datos humanos reales | 6-12 meses | Caso 30 con EDI > 0.30 y `overall_pass=True` |
-| Programa multi-sonda | Validar 3-5 casos clave con sondas alternativas convergentes | 6-12 meses | Tabla de convergencia multi-sonda |
-| Topologías heterogéneas | Aplicar `topology_generator.py` (scale-free, small-world) a casos relevantes para Nivel 5 | 3-6 meses | Casos con CR > 2.0 verificado |
-| Baselines estadísticos puros | Comparar contra ARIMA, VAR en los 4 casos `overall_pass` | 3-6 meses | Tabla comparativa con discriminación |
-| Aparato para variables normativas | Desarrollo formal de validez/legitimidad como cuenca de atracción | 18-24 meses | Capítulo metodológico adicional + caso institucional con datos cuantitativos |
-| Integración bibliográfica formal | Convertir 49+ fuentes nucleares a citas rigurosas por capítulo | Continuo | Bibliografía formal completa |
-| Programa de convergencia con Wolfram | Aplicar EDI a fenómenos derivados de hypergraph rewriting | 12-18 meses | Caso experimental conjunto |
+| Deuda | Descripción | Plazo | Entregable | Estado al 2026-04-28 |
+|---|---|---|---|---|
+| Caso 30 elevación a LoE = 4 | Datos humanos reales (VENLab/WALK-MS) con aval CEI, pipeline alta frecuencia | 9-10 meses | Caso 30 con EDI sobre datos humanos | Dossier técnico-ético en `Bitacora/2026-04-28-cierre-doctoral/02-` |
+| Programa multi-sonda | Validar casos clave con sondas alternativas convergentes | 6 semanas | Tabla de convergencia multi-sonda | **EJECUTADO** sobre 3 strong + 5 weak (`09-simulaciones-edi/multi_sonda/`) |
+| Topologías heterogéneas para Nivel 5 | Adaptar ABM a scale-free / small-world; verificar CR > 2.0 | 6 meses | Caso elevado a Nivel 5 o reporte negativo honesto | Programa formal en `Bitacora/2026-04-28-cierre-doctoral/06-` |
+| Baselines estadísticos puros | Comparar contra ARIMA, VAR, RW, GP | 3 semanas | Tabla comparativa con discriminación | **EJECUTADO** sobre 8 casos (`09-simulaciones-edi/baselines/`) |
+| Aparato para variables normativas | Desarrollo formal de validez/legitimidad como cuenca de atracción + caso piloto | 18-24 meses | Capítulo metodológico + caso institucional cuantitativo | Caso piloto COVID **EJECUTADO** con resultado null honesto (`09-simulaciones-edi/covid_pilot/`); programa restante documentado |
+| Integración bibliográfica formal | Citas Chicago author-date en cada capítulo del cuerpo argumental | Hito de cierre | Bibliografía consolidada al depósito | **EJECUTADA** en cap 02-04, 04-01, 05-04; bibliografía consolidada en cap 07 con 90 referencias |
+| Programa de convergencia con Wolfram | Aplicar EDI a hypergraph rewriting | 12 meses | Reporte técnico para Wolfram Institute | Piloto Rule 110 **EJECUTADO** (EDI 0.55, `09-simulaciones-edi/wolfram_pilot/`); programa post-piloto en `Bitacora/2026-04-28-cierre-doctoral/05-` |
+| Conversión editorial pre-depósito | LaTeX/PDF + figuras SVG/PNG + plantilla institucional | 3 semanas pre-depósito | PDF institucional final | PDF intermedio generado (`TesisFinal/Tesis.pdf` 1.83 MB); figuras Mermaid en Anexo A.10; conversión a plantilla institucional pendiente del momento del depósito |
 
 ## 5. Aporte conceptual sustantivo
 

@@ -8,7 +8,7 @@ Listas de soporte editorial requeridas por el formato de tesis doctoral instituc
 
 ## A.9.1. Lista de figuras
 
-> Nota: en la versión actual del manuscrito, los diagramas y figuras están representados en ASCII art en el cuerpo de los capítulos. La conversión a SVG/PNG con Mermaid o herramientas equivalentes es trabajo de pulido editorial pendiente para depósito (ver bloque 10 de la auditoría doctoral). Esta lista anticipa la numeración estable.
+> Nota: las versiones Mermaid renderizables de las 9 figuras principales están consolidadas en el Anexo A.10 (`Anexos/A10-figuras-mermaid.md`). En el cuerpo de los capítulos los diagramas siguen en ASCII art para legibilidad en texto plano. La conversión final a SVG/PNG con `mmdc` (mermaid-cli) o equivalente es trámite editorial pre-depósito con cronograma específico: 3-5 días en la semana previa al depósito institucional. Esta lista anticipa la numeración estable.
 
 | Figura | Título | Capítulo |
 |--------|--------|----------|

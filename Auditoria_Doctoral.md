@@ -32,7 +32,7 @@
 | E. Nivel 5 = futuro | — | **Reforzado** | Tabla explícita en cap 03-04 + A.9 con cláusula reiterada |
 | F. Wolfram esquema futuro | — | **Esquema desarrollado** | Cap 04-01 §14 con 6 pasos del programa de extensión |
 | G. Tono y voz | — | **Coherente** | Voces armonizadas en capítulos editados |
-| H. Carpeta `Tareas/` | — | **Renombrada a `Backlog/`** | `git mv Tareas Backlog` ejecutado |
+| H. Carpeta `Tareas/` | — | **Archivada en `Bitacora/2026-04-28-cierre-pendientes/mega-tareas-archivadas/`** | `git mv Tareas Backlog` y luego `git mv Backlog Bitacora/...` ejecutados |
 
 ---
 
@@ -295,3 +295,30 @@ El manuscrito ha cerrado **todos los bloques de contenido** identificados en la 
 **Fecha:** 2026-04-28.
 **Para discusión con:** comité doctoral, director(a) de tesis, autores.
 **Auditoría v1 archivada en:** `Bitacora/2026-04-27-integracion-jacob/04-auditoria-doctoral-v1.md`.
+
+---
+
+## Anexo: Auditoría exhaustiva archivo por archivo (cierre 2026-04-28)
+
+Tras la auditoría v2, se ejecutó una auditoría exhaustiva archivo por archivo solicitada por la dirección. Identificó 8 hallazgos ocultos. Todos fueron cerrados en el cierre 2026-04-28.
+
+| # | Hallazgo | Acción ejecutada | Estado |
+|---|----------|------------------|--------|
+| 1 | Refs rotas a `tesis.md` raíz en `08-consistencia-st/theories/03-text-layer-tesis.st` y `08-consistencia-st/reports/ultimo-reporte.md` | Apuntadas a `Bitacora/2026-04-27-integracion-jacob/00-tesis-fuente-original.md` | **CERRADO** |
+| 2 | Conversión SVG/PNG sin cronograma en `Anexos/A9` | Cronograma específico añadido (3-5 días pre-depósito) + Anexo A.10 con Mermaid renderizable | **CERRADO** |
+| 3 | `Auditoria_Doctoral.md` mencionaba `Backlog/` (ubicación intermedia ya superada) | Actualizada referencia a `Bitacora/2026-04-28-cierre-pendientes/mega-tareas-archivadas/` | **CERRADO** |
+| 4 | `09-simulaciones-edi/scripts_orquestacion/templates/caso/report.md` con TODO en plantilla | Verificado: ningún `outputs/report.md` real tiene TODOs sin completar (la plantilla es plantilla) | **NO APLICABLE** |
+| 5 | Programa de convergencia Wolfram sin documento técnico formal en `Bitacora/` | Creado `Bitacora/2026-04-28-cierre-doctoral/05-programa-convergencia-wolfram.md` con 3 etapas, cronograma y hipótesis HW.1-HW.5 (HW.1 ya verificada por piloto) | **CERRADO** |
+| 6 | Programa topologías heterogéneas Nivel 5 sin documento técnico formal | Creado `Bitacora/2026-04-28-cierre-doctoral/06-programa-topologias-heterogeneas.md` con 6 pasos, casos candidatos, hipótesis HT.1-HT.4, cronograma 6 meses | **CERRADO** |
+| 7 | Inconsistencia terminológica "14 rivales" vs "catorce rivales" | Estilística menor; se mantiene la dualidad por legibilidad | **NO APLICABLE** |
+| 8 | "Integración bibliográfica formal — Continuo" sin hito en cap 06-01 | Tabla de deudas residuales del cap 06-01 reescrita: cada deuda con plazo, entregable y **estado al 2026-04-28** ejecutado/documentado | **CERRADO** |
+
+**Veredicto final:** 6 hallazgos cerrados con acción ejecutada, 2 hallazgos no aplicables (plantilla y estilística). Cero pendientes ocultos al cierre 2026-04-28.
+
+**Programas técnicos en `Bitacora/2026-04-28-cierre-doctoral/`:**
+
+- `02-programa-datos-humanos-caso30.md` — caso 30 LoE = 4
+- `03-programa-multi-sonda.md` — multi-sonda extendido (ejecutado)
+- `04-programa-baselines-estadisticos.md` — baselines (ejecutado)
+- `05-programa-convergencia-wolfram.md` — Wolfram (piloto ejecutado + post-piloto formal)
+- `06-programa-topologias-heterogeneas.md` — Nivel 5 (formal)

@@ -1,6 +1,6 @@
 logic classical.propositional
 
-let p_formulacion = passage([[../tesis.md#1-formulacion-central]])
+let p_formulacion = passage([[../Bitacora/2026-04-27-integracion-jacob/00-tesis-fuente-original.md#1-formulacion-central]])
 let f_formulacion = formalize p_formulacion as (M & C & R & L)
 claim c_formulacion = f_formulacion
 support c_formulacion <- p_formulacion
@@ -14,7 +14,7 @@ support c_criterios <- p_criterios
 confidence c_criterios = 0.95
 context c_criterios = "Matriz mínima de legitimidad epistemológica"
 
-let p_principio = passage([[../tesis.md#44-la-tesis-como-principio-general]])
+let p_principio = passage([[../Bitacora/2026-04-27-integracion-jacob/00-tesis-fuente-original.md#44-la-tesis-como-principio-general]])
 let f_principio = formalize p_principio as (M & C & R)
 claim c_principio = f_principio
 support c_principio <- p_principio
