@@ -1,18 +1,39 @@
 {% extends "base.html" %}
 
 {% block content %}
+<a id="top"></a>
 <section id="tesis" class="panel thesis-panel">
   <aside class="toc-box">
-    <h3>Índice de la Tesis</h3>
+    <h3>📑 Índice de la Tesis</h3>
+    <p style="font-size: 0.72rem; color: #5a7178; margin: 0 0 0.55rem;">
+      Las primeras 4 secciones se abren automáticamente. Haz clic en ▸ para expandir las demás.
+    </p>
     <nav>
+      {% set ns = namespace(open=false, count=0) %}
       {% for item in thesis_toc %}
-      <a href="#{{ item.anchor }}" class="toc-l{{ item.level }}">{{ item.title }}</a>
+        {% if item.level == 1 %}
+          {% if ns.open %}</nav></details>{% endif %}
+          {% set ns.count = ns.count + 1 %}
+          <details {% if ns.count <= 4 %}open{% endif %}>
+            <summary>{{ item.title }}</summary>
+            <nav>
+            <a href="#{{ item.anchor }}" class="toc-l1">→ ir a sección</a>
+          {% set ns.open = true %}
+        {% else %}
+          <a href="#{{ item.anchor }}" class="toc-l{{ item.level }}">{{ item.title }}</a>
+        {% endif %}
       {% endfor %}
+      {% if ns.open %}</nav></details>{% endif %}
     </nav>
+    <hr style="margin: 0.7rem 0; border: none; border-top: 1px solid var(--line);">
+    <a href="#capitulos" class="back-to-toc">↓ Capítulos por carpeta</a>
   </aside>
 
   <article class="thesis-content markdown-body">
     {{ thesis_html|safe }}
+    <p style="text-align: right; margin-top: 2rem;">
+      <a href="#top" class="back-to-toc">↑ Volver al inicio del manuscrito</a>
+    </p>
   </article>
 </section>
 

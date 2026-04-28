@@ -1,7 +1,12 @@
 {% extends "base.html" %}
 
 {% block content %}
-<section class="panel case-hero">
+<section class="panel case-hero" id="top">
+  <p class="chapter-breadcrumb">
+    <a href="/">Inicio</a> &nbsp;›&nbsp;
+    <a href="/#capitulos">Capítulos</a> &nbsp;›&nbsp;
+    <span>{{ chapter.title }}</span>
+  </p>
   <a class="back-link" href="/#capitulos">← Volver al índice de capítulos</a>
   <p class="kicker">Capítulo {{ chapter.code }}</p>
   <h2>{{ chapter.title }}</h2>
@@ -10,12 +15,14 @@
 
 <section class="panel thesis-panel">
   <aside class="toc-box">
-    <h3>Documentos</h3>
+    <h3>📑 Documentos del capítulo</h3>
     <nav>
       {% for doc in chapter.docs %}
       <a href="#{{ doc.anchor }}" class="toc-l1">{{ doc.title }}</a>
       {% endfor %}
     </nav>
+    <hr style="margin: 0.7rem 0; border: none; border-top: 1px solid var(--line);">
+    <a href="/#capitulos" class="back-to-toc">← Otros capítulos</a>
   </aside>
 
   <article class="thesis-content">
@@ -28,6 +35,9 @@
       <div class="markdown-body">
         {{ doc.html|safe }}
       </div>
+      <p style="text-align: right; margin-top: 1rem;">
+        <a href="#top" class="back-to-toc">↑ Volver al inicio del capítulo</a>
+      </p>
     </details>
     {% endfor %}
   </article>

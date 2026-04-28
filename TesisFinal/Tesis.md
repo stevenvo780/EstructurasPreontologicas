@@ -1,7 +1,163 @@
 
 
+<a id="frontmatter"></a>
+
+
+
 <a id="front-matter"></a>
 
+
+
+<a id="tabla-de-contenidos"></a>
+
+# 📑 Tabla de Contenidos
+
+> **Navegación:** este manuscrito tiene ~10 mil líneas. Las partes están agrupadas en secciones colapsables. Haz clic en ▸ para expandir cada parte. Cada capítulo tiene un enlace «↑ volver al índice» al final para regresar aquí.
+
+## Navegación rápida por partes
+
+- [Front matter](#frontmatter)
+- [Parte 0 — Plan general del proyecto](#parte-0-proyecto)
+- [Parte 1 — Diagnóstico estructural](#parte-1-diagnostico)
+- [Parte 2 — Fundamentos ontológicos y epistemológicos](#parte-2-fundamentos)
+- [Parte 3 — Formalización metodológica](#parte-3-formalizacion)
+- [Parte 4 — Debates y limitaciones](#parte-4-debates)
+- [Parte 5 — Aplicaciones del marco](#parte-5-aplicaciones)
+- [Parte 6 — Cierre demostrativo](#parte-6-cierre)
+- [Parte 9 — Corpus EDI: justificación operativa](#parte-9-corpus)
+- [Bibliografía](#bibliografia)
+- [Anexos operativos](#anexos)
+- [Auditorías metodológicas](#auditorias)
+
+---
+
+## Índice detallado (colapsable)
+
+<details open>
+<summary><strong>Front matter</strong></summary>
+
+- [Front matter](#front-matter)
+- [Abstract bilingüe](#abstract-bilingue)
+
+</details>
+
+<details open>
+<summary><strong>Parte 0 — Plan general del proyecto</strong></summary>
+
+- [Capítulo 0.1: Estructura general](#capitulo-0.1-estructura-general)
+- [Capítulo 0.2: Preguntas, objetivos e hipótesis](#capitulo-0.2-preguntas-objetivos-e-hipotesis)
+- [Capítulo 0.3: Plan de capítulos](#capitulo-0.3-plan-de-capitulos)
+- [Capítulo 0.4: Formalización institucional](#capitulo-0.4-formalizacion-institucional)
+
+</details>
+
+<details >
+<summary><strong>Parte 1 — Diagnóstico estructural</strong></summary>
+
+- [Capítulo 1.1: Falencias de la tesis](#capitulo-1.1-falencias-de-la-tesis)
+- [Capítulo 1.2: Objeciones discriminantes](#capitulo-1.2-objeciones-discriminantes)
+- [Capítulo 1.3: Estado del arte](#capitulo-1.3-estado-del-arte)
+
+</details>
+
+<details >
+<summary><strong>Parte 2 — Fundamentos ontológicos y epistemológicos</strong></summary>
+
+- [Capítulo 2.1: Ontología material-relacional](#capitulo-2.1-ontologia-material-relacional)
+- [Capítulo 2.2: Epistemología de la compresión](#capitulo-2.2-epistemologia-de-la-compresion)
+- [Capítulo 2.3: Categorías, objetos, propiedades, identidad](#capitulo-2.3-categorias-objetos-propiedades-identidad)
+- [Capítulo 2.4: Anclaje empírico (nivel B multiescalar)](#capitulo-2.4-anclaje-empirico-nivel-b-multiescalar)
+- [Capítulo 2.5: Temporalidad y causalidad](#capitulo-2.5-temporalidad-y-causalidad)
+- [Capítulo 2.6: Dimensión normativa y ética](#capitulo-2.6-dimension-normativa-y-etica)
+
+</details>
+
+<details >
+<summary><strong>Parte 3 — Formalización metodológica</strong></summary>
+
+- [Capítulo 3.1: Aparato formal mínimo](#capitulo-3.1-aparato-formal-minimo)
+- [Capítulo 3.2: Criterios de legitimidad y dossier](#capitulo-3.2-criterios-de-legitimidad-y-dossier)
+- [Capítulo 3.3: Auditoría ontológica como protocolo](#capitulo-3.3-auditoria-ontologica-como-protocolo)
+- [Capítulo 3.4: Operacionalización de κ vía EDI](#capitulo-3.4-operacionalizacion-de-kappa-via-edi)
+- [Capítulo 3.5: Ética de investigación y gobernanza de datos](#capitulo-3.5-etica-de-investigacion-y-gobernanza-de-datos)
+
+</details>
+
+<details >
+<summary><strong>Parte 4 — Debates y limitaciones</strong></summary>
+
+- [Capítulo 4.1: Debates con posiciones rivales](#capitulo-4.1-debates-con-posiciones-rivales)
+- [Capítulo 4.2: Limitaciones y puntos de presión](#capitulo-4.2-limitaciones-y-puntos-de-presion)
+
+</details>
+
+<details >
+<summary><strong>Parte 5 — Aplicaciones del marco</strong></summary>
+
+- [Capítulo 5.0: Criterios de admisión de aplicaciones](#capitulo-5.0-criterios-de-admision-de-aplicaciones)
+- [Capítulo 5.1: Mente, memoria, yo](#capitulo-5.1-mente-memoria-yo)
+- [Capítulo 5.2: Biología y ecología](#capitulo-5.2-biologia-y-ecologia)
+- [Capítulo 5.3: Sistemas técnicos distribuidos](#capitulo-5.3-sistemas-tecnicos-distribuidos)
+- [Capítulo 5.4: Instituciones, mercado, Estado](#capitulo-5.4-instituciones-mercado-estado)
+- [Capítulo 5.5: Caso ancla canónico — Behavioral Dynamics (Warren 2006)](#capitulo-5.5-caso-ancla-canonico---behavioral-dynamics-warren-2006)
+- [Capítulo 5.6: Corpus inter-escala (10 casos, escalas atómica a astrofísica)](#capitulo-5.6-corpus-inter-escala-10-casos-escalas-atomica-a-astrofisica)
+
+</details>
+
+<details >
+<summary><strong>Parte 6 — Cierre demostrativo</strong></summary>
+
+- [Capítulo 6.1: Conclusión demostrativa](#capitulo-6.1-conclusion-demostrativa)
+- [Capítulo 6.2: Guía de defensa oral](#capitulo-6.2-guia-de-defensa-oral)
+- [Capítulo 6.3: Hoja de ruta para tesis final](#capitulo-6.3-hoja-de-ruta-para-tesis-final)
+
+</details>
+
+<details >
+<summary><strong>Parte 9 — Corpus EDI: justificación operativa</strong></summary>
+
+- [Capítulo 9.0: Corpus inter-dominio (30 casos)](#capitulo-9.0-corpus-inter-dominio-30-casos)
+- [Capítulo 9.1: Caso 30 — Behavioral Dynamics bajo EDI](#capitulo-9.1-caso-30---behavioral-dynamics-bajo-edi)
+- [Capítulo 9.2: Multi-sonda — validación cruzada](#capitulo-9.2-multi-sonda---validacion-cruzada)
+- [Capítulo 9.3: Baselines estadísticos — comparación ejecutada](#capitulo-9.3-baselines-estadisticos---comparacion-ejecutada)
+- [Capítulo 9.4: Caso piloto COVID — dimensión normativa](#capitulo-9.4-caso-piloto-covid---dimension-normativa)
+- [Capítulo 9.5: Perfil agresivo — análisis de drift](#capitulo-9.5-perfil-agresivo---analisis-de-drift)
+
+</details>
+
+<details >
+<summary><strong>Bibliografía</strong></summary>
+
+- [Bibliografía consolidada](#bibliografia-consolidada)
+
+</details>
+
+<details >
+<summary><strong>Anexos operativos</strong></summary>
+
+- [Anexo A.1: Glosario operativo](#anexo-a.1-glosario-operativo)
+- [Anexo A.2: Mapa de operadores formales](#anexo-a.2-mapa-de-operadores-formales)
+- [Anexo A.3: Plantilla del dossier de anclaje](#anexo-a.3-plantilla-del-dossier-de-anclaje)
+- [Anexo A.4: Tabla comparativa con rivales](#anexo-a.4-tabla-comparativa-con-rivales)
+- [Anexo A.5: Mapa de aplicaciones](#anexo-a.5-mapa-de-aplicaciones)
+- [Anexo A.6: Versiones cortas de defensa](#anexo-a.6-versiones-cortas-de-defensa)
+- [Anexo A.8: Tablas crudas del corpus inter-dominio](#anexo-a.8-tablas-crudas-del-corpus-inter-dominio)
+- [Anexo A.9: Listas de figuras, tablas y abreviaturas](#anexo-a.9-listas-de-figuras-tablas-y-abreviaturas)
+- [Anexo A.10: Figuras Mermaid](#anexo-a.10-figuras-mermaid)
+- [Anexo A.11: Validación lógica formal con ST](#anexo-a.11-validacion-logica-formal-con-st)
+- [Anexo A.12: Corpus inter-escala — tablas crudas](#anexo-a.12-corpus-inter-escala---tablas-crudas)
+
+</details>
+
+<details >
+<summary><strong>Auditorías metodológicas</strong></summary>
+
+- [Auditoría doctoral integral (v2 final)](#auditoria-doctoral-integral-v2-final)
+- [Auditoría V5: vacíos estructurales de contenido filosófico](#auditoria-v5-vacios-estructurales-de-contenido-filosofico)
+
+</details>
+
+---
 # Estructuras Pre-Ontológicas
 
 ## Realismo Irrealista Operativo y Compresión Multiescala con Validación EDI Multidominio
@@ -37,65 +193,9 @@
 A la Universidad de Antioquia, por sostener una tradición de filosofía de la ciencia que hace posible este trabajo. A los colegas y revisores que aportaron críticas tempranas. A los autores de los datasets públicos del corpus, sin los cuales la cartografía multidominio no sería viable. A William H. Warren y Brett R. Fajen por la conjetura cuantitativa de la behavioral dynamics que opera como caso ancla.
 
 ---
-# Tabla de Contenidos
-
-- [Front matter](#front-matter)
-- [Abstract](#abstract)
-- [Capítulo 0: Plan general](#capitulo-0-plan-general)
-- [Capítulo 0.1: Preguntas, objetivos e hipótesis](#capitulo-0.1-preguntas-objetivos-e-hipotesis)
-- [Capítulo 0.2: Plan de capítulos](#capitulo-0.2-plan-de-capitulos)
-- [Capítulo 0.3: Formalización institucional](#capitulo-0.3-formalizacion-institucional)
-- [Capítulo 1: Diagnóstico estructural](#capitulo-1-diagnostico-estructural)
-- [Capítulo 1.1: Objeciones discriminantes](#capitulo-1.1-objeciones-discriminantes)
-- [Capítulo 1.2: Estado del arte](#capitulo-1.2-estado-del-arte)
-- [Capítulo 2: Ontología material-relacional](#capitulo-2-ontologia-material-relacional)
-- [Capítulo 2.1: Epistemología de la compresión](#capitulo-2.1-epistemologia-de-la-compresion)
-- [Capítulo 2.2: Categorías, objetos, propiedades, identidad](#capitulo-2.2-categorias-objetos-propiedades-identidad)
-- [Capítulo 2.3: Anclaje conductual-ecológico (nivel B)](#capitulo-2.3-anclaje-conductual-ecologico-nivel-b)
-- [Capítulo 2.4: Temporalidad y causalidad](#capitulo-2.4-temporalidad-y-causalidad)
-- [Capítulo 2.5: Dimensión normativa y ética](#capitulo-2.5-dimension-normativa-y-etica)
-- [Capítulo 3: Aparato formal mínimo](#capitulo-3-aparato-formal-minimo)
-- [Capítulo 3.1: Criterios de legitimidad y dossier](#capitulo-3.1-criterios-de-legitimidad-y-dossier)
-- [Capítulo 3.2: Auditoría ontológica como protocolo](#capitulo-3.2-auditoria-ontologica-como-protocolo)
-- [Capítulo 3.3: Operacionalización de κ vía EDI](#capitulo-3.3-operacionalizacion-de-kappa-via-edi)
-- [Capítulo 3.4: Ética de investigación y gobernanza de datos](#capitulo-3.4-etica-de-investigacion-y-gobernanza-de-datos)
-- [Capítulo 4: Debates con posiciones rivales](#capitulo-4-debates-con-posiciones-rivales)
-- [Capítulo 4.1: Limitaciones y puntos de presión](#capitulo-4.1-limitaciones-y-puntos-de-presion)
-- [Capítulo 5: Criterios de admisión de aplicaciones](#capitulo-5-criterios-de-admision-de-aplicaciones)
-- [Capítulo 5.1: Mente, memoria, yo](#capitulo-5.1-mente-memoria-yo)
-- [Capítulo 5.2: Biología y ecología](#capitulo-5.2-biologia-y-ecologia)
-- [Capítulo 5.3: Sistemas técnicos distribuidos](#capitulo-5.3-sistemas-tecnicos-distribuidos)
-- [Capítulo 5.4: Instituciones, mercado, Estado](#capitulo-5.4-instituciones-mercado-estado)
-- [Capítulo 5.5: Caso ancla canónico - Behavioral Dynamics (Warren 2006)](#capitulo-5.5-caso-ancla-canonico---behavioral-dynamics-warren-2006)
-- [Capítulo 5.6: Corpus EDI multiescala (10 casos, escalas atómica a astrofísica)](#capitulo-5.6-corpus-edi-multiescala-10-casos-escalas-atomica-a-astrofisica)
-- [Capítulo 6: Conclusión demostrativa](#capitulo-6-conclusion-demostrativa)
-- [Capítulo 6.1: Guía de defensa oral](#capitulo-6.1-guia-de-defensa-oral)
-- [Capítulo 6.2: Hoja de ruta para tesis final](#capitulo-6.2-hoja-de-ruta-para-tesis-final)
-- [Capítulo 9: Corpus EDI - validación empírica multidominio](#capitulo-9-corpus-edi---validacion-empirica-multidominio)
-- [Capítulo 9.30: Caso 30 - Behavioral Dynamics bajo EDI](#capitulo-9.30-caso-30---behavioral-dynamics-bajo-edi)
-- [Capítulo 9.31: Multi-sonda - validación cruzada de 3 strong](#capitulo-9.31-multi-sonda---validacion-cruzada-de-3-strong)
-- [Capítulo 9.32: Baselines estadísticos - comparación ejecutada](#capitulo-9.32-baselines-estadisticos---comparacion-ejecutada)
-- [Capítulo 9.33: Caso piloto COVID - dimensión normativa](#capitulo-9.33-caso-piloto-covid---dimension-normativa)
-- [Capítulo 9.34: Perfil agresivo - análisis de drift](#capitulo-9.34-perfil-agresivo---analisis-de-drift)
-- [Anexo A.1: Glosario operativo](#anexo-a.1-glosario-operativo)
-- [Anexo A.2: Mapa de operadores formales](#anexo-a.2-mapa-de-operadores-formales)
-- [Anexo A.3: Plantilla del dossier de anclaje](#anexo-a.3-plantilla-del-dossier-de-anclaje)
-- [Anexo A.4: Tabla comparativa con rivales](#anexo-a.4-tabla-comparativa-con-rivales)
-- [Anexo A.5: Mapa de aplicaciones](#anexo-a.5-mapa-de-aplicaciones)
-- [Anexo A.6: Versiones cortas de defensa](#anexo-a.6-versiones-cortas-de-defensa)
-- [Anexo A.8: Tablas crudas del corpus EDI](#anexo-a.8-tablas-crudas-del-corpus-edi)
-- [Anexo A.9: Listas de figuras, tablas y abreviaturas](#anexo-a.9-listas-de-figuras-tablas-y-abreviaturas)
-- [Anexo A.10: Figuras Mermaid](#anexo-a.10-figuras-mermaid)
-- [Anexo A.11: Validación lógica formal con ST](#anexo-a.11-validacion-logica-formal-con-st)
-- [Anexo A.12: Corpus multiescala — tablas crudas](#anexo-a.12-corpus-multiescala--tablas-crudas)
-- [Auditoría doctoral integral (v2 final)](#auditoria-doctoral-integral-v2-final)
-- [Auditoría V5: vacíos estructurales de contenido filosófico](#auditoria-v5-vacios-estructurales-de-contenido-filosofico)
-- [Bibliografía](#bibliografia)
-
----
 
 
-<a id="abstract"></a>
+<a id="abstract-bilingue"></a>
 
 # Anexo A.7. Abstract bilingüe
 
@@ -163,10 +263,20 @@ The main outcome is not a binary validation score but a **discriminative map of 
 > Agudelo, J., y Vallejo Ortiz, S. (2026). *Estructuras Pre-Ontológicas: Realismo Irrealista Operativo y Compresión Multiescala con Validación EDI Multidominio* [Manuscrito doctoral]. Universidad de Antioquia.
 
 
+<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
+
 ---
 
 
-<a id="capitulo-0-plan-general"></a>
+<a id="parte-0-proyecto"></a>
+
+# Parte 0 — Plan general del proyecto
+
+<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
+
+
+
+<a id="capitulo-0.1-estructura-general"></a>
 
 # Estructura general del proyecto
 
@@ -333,10 +443,12 @@ La raíz de cada carpeta de capítulo contiene solo el texto canónico que entra
 Si el manuscrito-fuente es el cuerpo vivo de la idea, esta arquitectura define su esqueleto. Sin esqueleto, incluso una idea brillante termina filosóficamente amorfa. Con esqueleto, la idea se vuelve manuscrito, el manuscrito tesis, y la tesis programa de investigación.
 
 
+<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
+
 ---
 
 
-<a id="capitulo-0.1-preguntas-objetivos-e-hipotesis"></a>
+<a id="capitulo-0.2-preguntas-objetivos-e-hipotesis"></a>
 
 # Preguntas, objetivos e hipótesis
 
@@ -476,10 +588,12 @@ La tesis está demostrada en behavioral dynamics. Es marco general por aspiraci�
 - hoja de ruta: capítulo 06-03.
 
 
+<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
+
 ---
 
 
-<a id="capitulo-0.2-plan-de-capitulos"></a>
+<a id="capitulo-0.3-plan-de-capitulos"></a>
 
 # Plan de capítulos de la tesis
 
@@ -690,10 +804,12 @@ Con eso, el trabajo deja de ser una intuición y se convierte en máquina argume
 - hoja de ruta para tesis final: capítulo 06-03.
 
 
+<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
+
 ---
 
 
-<a id="capitulo-0.3-formalizacion-institucional"></a>
+<a id="capitulo-0.4-formalizacion-institucional"></a>
 
 # Formalización institucional
 
@@ -818,10 +934,20 @@ Esta cláusula reconoce que la honestidad metodológica del manuscrito requiere 
 - Auditorías doctorales internas: `Bitacora/2026-04-27-integracion-jacob/04-auditoria-doctoral-v1.md` y `Auditoria_Doctoral.md` (v2).
 
 
+<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
+
 ---
 
 
-<a id="capitulo-1-diagnostico-estructural"></a>
+<a id="parte-1-diagnostico"></a>
+
+# Parte 1 — Diagnóstico estructural
+
+<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
+
+
+
+<a id="capitulo-1.1-falencias-de-la-tesis"></a>
 
 # Diagnóstico estructural de la tesis
 
@@ -988,10 +1114,12 @@ Para pasar de este diagnóstico al cuerpo de la tesis corregida:
 La bitácora de la sesión que produjo las correcciones queda como material auxiliar en `01-diagnostico/sesiones/`. No es parte del cuerpo argumental: es trazabilidad histórica.
 
 
+<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
+
 ---
 
 
-<a id="capitulo-1.1-objeciones-discriminantes"></a>
+<a id="capitulo-1.2-objeciones-discriminantes"></a>
 
 # Objeciones discriminantes anticipadas
 
@@ -1157,10 +1285,12 @@ Si no cae en ninguna de las seis, probablemente es objeción mal formulada. Si c
 Las cinco objeciones discriminantes definen las pruebas que la tesis acepta enfrentar. Cada una trae compromiso público, no inmunización. Si el manuscrito las responde, no porque las desmonte sino porque produce los entregables prometidos, la tesis ha pagado el precio epistémico de su léxico. Si alguno de esos entregables falla, el manuscrito acepta el fallo en el capítulo 06-01 y reformula. Esa es la diferencia entre una tesis fuerte y un manifiesto bien escrito.
 
 
+<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
+
 ---
 
 
-<a id="capitulo-1.2-estado-del-arte"></a>
+<a id="capitulo-1.3-estado-del-arte"></a>
 
 # Estado del arte
 
@@ -1305,10 +1435,20 @@ La revisión exhaustiva de cada uno de los 30 dominios queda como trabajo futuro
 - Bibliografía completa con 90 referencias formales: capítulo 07-01.
 
 
+<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
+
 ---
 
 
-<a id="capitulo-2-ontologia-material-relacional"></a>
+<a id="parte-2-fundamentos"></a>
+
+# Parte 2 — Fundamentos ontológicos y epistemológicos
+
+<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
+
+
+
+<a id="capitulo-2.1-ontologia-material-relacional"></a>
 
 # Ontología material-relacional
 
@@ -1695,10 +1835,12 @@ Lo que esta ontología rechaza se discute en:
 La fórmula del cierre no es retórica. Es la condición de admisión que rige todo lo que viene después.
 
 
+<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
+
 ---
 
 
-<a id="capitulo-2.1-epistemologia-de-la-compresion"></a>
+<a id="capitulo-2.2-epistemologia-de-la-compresion"></a>
 
 # Epistemología general de la compresión multiescala
 
@@ -1966,10 +2108,12 @@ Lo que esta epistemología rechaza se discute en:
 - capítulo 04-02 (objeciones que persisten).
 
 
+<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
+
 ---
 
 
-<a id="capitulo-2.2-categorias-objetos-propiedades-identidad"></a>
+<a id="capitulo-2.3-categorias-objetos-propiedades-identidad"></a>
 
 # Categorías, objetos, propiedades e identidad
 
@@ -2196,10 +2340,12 @@ Categorías son compresiones semánticas auditables. Objetos son unidades operat
 - caso ancla canónico: 05-05.
 
 
+<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
+
 ---
 
 
-<a id="capitulo-2.3-anclaje-conductual-ecologico-nivel-b"></a>
+<a id="capitulo-2.4-anclaje-empirico-nivel-b-multiescalar"></a>
 
 # El nivel B: anclaje empírico (general multiescalar)
 
@@ -2454,10 +2600,12 @@ Con la incorporación de B como nivel pleno, la tesis recupera el plano que la r
 - aplicación programática a mente: capítulo 05-01.
 
 
+<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
+
 ---
 
 
-<a id="capitulo-2.4-temporalidad-y-causalidad"></a>
+<a id="capitulo-2.5-temporalidad-y-causalidad"></a>
 
 # Temporalidad y causalidad — fundamentos generales
 
@@ -2583,10 +2731,12 @@ Esto cubre los vacíos V5-02, V5-03, V5-09 con honestidad: la tesis no inventa m
 > El tiempo es real-relacional, la flecha es termodinámica, la causalidad es manipulabilidad woodwardiana, la circularidad es retroacción dinámica con grafos cíclicos, y lo que parecía downward causation es constitución descendente compatible con exclusión causal. Estas posturas no son originales — son adopciones explícitas de la literatura — pero hacían falta articuladas para que la ontología material-relacional general no quedara con dos huecos centrales sin cerrar.
 
 
+<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
+
 ---
 
 
-<a id="capitulo-2.5-dimension-normativa-y-etica"></a>
+<a id="capitulo-2.6-dimension-normativa-y-etica"></a>
 
 # Dimensión normativa y ética — naturalismo no-reduccionista
 
@@ -2702,10 +2852,20 @@ La operacionalización empírica completa de la dimensión normativa **requiere 
 > Los valores son atractores normativos materialmente sostenidos. Las normas son constricciones operativas con cuenca medible. La ética no se reduce a descripción material ni requiere sustancia adicional: emerge en el sistema humano-comunidad-historia con eficacia causal y dimensión propia. Esta postura permite a la tesis cumplir su pretensión de **ontología general**: cubre la dimensión normativa sin colapsarla en lo descriptivo ni postularla como plano separado.
 
 
+<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
+
 ---
 
 
-<a id="capitulo-3-aparato-formal-minimo"></a>
+<a id="parte-3-formalizacion"></a>
+
+# Parte 3 — Formalización metodológica
+
+<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
+
+
+
+<a id="capitulo-3.1-aparato-formal-minimo"></a>
 
 # Aparato formal mínimo (metodología general)
 
@@ -3030,10 +3190,12 @@ Si las **estructuras pre-ontológicas son atractores** y los atractores son **ob
 - aplicaciones programáticas: capítulos 05-01 a 05-04.
 
 
+<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
+
 ---
 
 
-<a id="capitulo-3.1-criterios-de-legitimidad-y-dossier"></a>
+<a id="capitulo-3.2-criterios-de-legitimidad-y-dossier"></a>
 
 # Criterios de legitimidad y dossier de anclaje
 
@@ -3293,10 +3455,12 @@ Los diez criterios y el dossier de anclaje convierten la tesis en una propuesta 
 - dossier programático de cada dominio adicional: capítulos 05-01 a 05-04.
 
 
+<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
+
 ---
 
 
-<a id="capitulo-3.2-auditoria-ontologica-como-protocolo"></a>
+<a id="capitulo-3.3-auditoria-ontologica-como-protocolo"></a>
 
 # Auditoría ontológica y diseño de investigación
 
@@ -3563,10 +3727,12 @@ Con esta auditoría, la tesis se presenta no solo como respuesta a una pregunta 
 - objeciones que la auditoría neutraliza: capítulo 04-02.
 
 
+<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
+
 ---
 
 
-<a id="capitulo-3.3-operacionalizacion-de-kappa-via-edi"></a>
+<a id="capitulo-3.4-operacionalizacion-de-kappa-via-edi"></a>
 
 # Operacionalización del operador de compresión κ
 
@@ -3724,10 +3890,12 @@ La taxonomía operativa del corpus EDI distingue seis niveles (0–5):
 La operación κ deja de ser un acto interpretativo del filósofo y se convierte en un protocolo reproducible. Esto es lo que permitirá al capítulo de aplicaciones mostrar cómo Warren (2006) ya implementó, sin nombrarla así, esta misma operacionalización: identificó variables conductuales clave, midió series, ajustó sistemas dinámicos de baja dimensión, validó atractores, predijo bifurcaciones, e indicó las regiones donde el modelo se queda corto. Esa coincidencia no es accidente; es la confirmación de que la tesis y la práctica investigadora más rigurosa de percepción–acción comparten el mismo esqueleto operativo.
 
 
+<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
+
 ---
 
 
-<a id="capitulo-3.4-etica-de-investigacion-y-gobernanza-de-datos"></a>
+<a id="capitulo-3.5-etica-de-investigacion-y-gobernanza-de-datos"></a>
 
 # Ética de investigación y gobernanza de datos
 
@@ -3896,10 +4064,20 @@ La responsabilidad académica completa del manuscrito reside en los autores huma
 - Bibliografía completa: capítulo `07-bibliografia/01-bibliografia-orientativa.md`.
 
 
+<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
+
 ---
 
 
-<a id="capitulo-4-debates-con-posiciones-rivales"></a>
+<a id="parte-4-debates"></a>
+
+# Parte 4 — Debates y limitaciones
+
+<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
+
+
+
+<a id="capitulo-4.1-debates-con-posiciones-rivales"></a>
 
 # Debates con posiciones rivales
 
@@ -4376,10 +4554,12 @@ Eso es lo que la tesis quiere demostrar una y otra vez, hasta que incluso sus ob
 - defensa oral: capítulo 06-02.
 
 
+<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
+
 ---
 
 
-<a id="capitulo-4.1-limitaciones-y-puntos-de-presion"></a>
+<a id="capitulo-4.2-limitaciones-y-puntos-de-presion"></a>
 
 # Limitaciones y puntos de presión
 
@@ -4590,10 +4770,20 @@ La tesis sobrevive a las objeciones discriminantes (capítulo 04-01 y 01-diagnos
 - hoja de ruta para tesis final: capítulo 06-03.
 
 
+<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
+
 ---
 
 
-<a id="capitulo-5-criterios-de-admision-de-aplicaciones"></a>
+<a id="parte-5-aplicaciones"></a>
+
+# Parte 5 — Aplicaciones del marco
+
+<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
+
+
+
+<a id="capitulo-5.0-criterios-de-admision-de-aplicaciones"></a>
 
 # Criterios de admisión de aplicaciones
 
@@ -4737,6 +4927,8 @@ Esta política de admisión es la respuesta operativa a la objeción de sobreext
 - objeción que justifica la distinción: capítulo 01-02 §5;
 - deuda residual: capítulo 06-01.
 
+
+<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
 
 ---
 
@@ -5024,6 +5216,8 @@ La tesis adopta **compatibilismo**: la libertad humana es compatible con determi
 Para que esta conjetura se eleve a demostración, hay que construir el dossier. Eso es trabajo posterior, fechado, con entregable definido en la hoja de ruta.
 
 
+<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
+
 ---
 
 
@@ -5268,6 +5462,8 @@ Este capítulo conjetura. La elevación a modo demostrativo requiere adoptar un 
 > Lo vivo no obliga a abandonar el monismo material; obliga a enriquecerlo con organización, dependencia y multiescalaridad. La biología y la ecología muestran que la realidad material solo se vuelve inteligible cuando se modelan los acoplamientos dinámicos que la estabilizan. La conjetura del marco es elevable; el trabajo demostrativo es posterior.
 
 
+<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
+
 ---
 
 
@@ -5409,6 +5605,8 @@ Este capítulo articula la conjetura con claridad, pero falta el modelo dinámic
 
 > Un servicio distribuido existe como patrón operativo, no como bloque autosuficiente. Su realidad está en la coordinación material de procesos y dependencias; su inteligibilidad depende del nivel en que se formule la pregunta. La elevación a modo demostrativo requiere construir el dossier con datos cuantitativos. El programa de extensión está articulado.
 
+
+<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
 
 ---
 
@@ -5647,6 +5845,8 @@ Este capítulo conjetura. La elevación requiere:
 
 > Institución, mercado y Estado son reales no como sustancias suprahumanas sino como patrones materialmente sostenidos de organización, norma, reconocimiento y poder, modelables como atractores dinámicos con cuenca persistente y bifurcaciones identificables. Su análisis exige descomponer la compresión sin destruir la realidad del patrón que comprime, y exige desarrollo del aparato para tratar normatividad como variable. El programa de elevación está articulado, la deuda nombrada.
 
+
+<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
 
 ---
 
@@ -5952,10 +6152,12 @@ La frase de Gibson que Warren cita al inicio — `el comportamiento puede ser re
 Esto es lo que el profesor pedía como demostración. Esto es lo que la tesis material-relacional pretendía hacer. Aquí están en el mismo cuadro.
 
 
+<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
+
 ---
 
 
-<a id="capitulo-5.6-corpus-edi-multiescala-10-casos-escalas-atomica-a-astrofisica"></a>
+<a id="capitulo-5.6-corpus-inter-escala-10-casos-escalas-atomica-a-astrofisica"></a>
 
 # Corpus EDI multiescala — demostración de generalidad ontológica
 
@@ -6127,10 +6329,20 @@ Esta es la tesis que el manuscrito entrega tras hostile testing severo: **ontolo
 - Corpus macro original: `09-simulaciones-edi/README.md`.
 
 
+<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
+
 ---
 
 
-<a id="capitulo-6-conclusion-demostrativa"></a>
+<a id="parte-6-cierre"></a>
+
+# Parte 6 — Cierre demostrativo
+
+<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
+
+
+
+<a id="capitulo-6.1-conclusion-demostrativa"></a>
 
 # Conclusión demostrativa
 
@@ -6433,10 +6645,12 @@ Y aún más importante: el caso 30 ya nos enseñó algo decisivo. **El aparato f
 Esa es la condición de la victoria local de esta tesis.
 
 
+<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
+
 ---
 
 
-<a id="capitulo-6.1-guia-de-defensa-oral"></a>
+<a id="capitulo-6.2-guia-de-defensa-oral"></a>
 
 # Guía de defensa oral
 
@@ -6627,10 +6841,12 @@ Esa es la frase que debería poder sobrevivir incluso si el resto del día filos
 - hoja de ruta: capítulo 06-03.
 
 
+<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
+
 ---
 
 
-<a id="capitulo-6.2-hoja-de-ruta-para-tesis-final"></a>
+<a id="capitulo-6.3-hoja-de-ruta-para-tesis-final"></a>
 
 # Hoja de ruta para tesis final
 
@@ -6899,10 +7115,20 @@ Si el manuscrito final cumple las seis cualidades, deja de ser tesis y empieza a
 > El prototipo doctoral existe y demuestra lo que dice demostrar. El paso siguiente no es inventar otra tesis sino consolidar esta mediante elevación de casos, integración bibliográfica, desarrollo del aparato normativo, lectura hostil y redacción unificada. Menos intuición dispersa, más arquitectura argumentativa probada. Filosóficamente, evolución honesta. Académicamente, manuscrito defendible.
 
 
+<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
+
 ---
 
 
-<a id="capitulo-9-corpus-edi---validacion-empirica-multidominio"></a>
+<a id="parte-9-corpus"></a>
+
+# Parte 9 — Corpus EDI: justificación operativa
+
+<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
+
+
+
+<a id="capitulo-9.0-corpus-inter-dominio-30-casos"></a>
 
 # Capítulo 09. Corpus EDI: validación empírica inter-dominio + inter-escala
 
@@ -7164,10 +7390,12 @@ La trazabilidad histórica del crecimiento del corpus, las decisiones metodológ
 Este corpus es la prueba empírica del irrealismo operativo. No es ilustración de la tesis: es su demostración bajo intervención controlada con datos públicos, semillas fijas, controles de falsación rechazados, y discriminación entre fenómenos con y sin cierre operativo. Lo que el aparato formal del capítulo 03 promete operativamente, este corpus lo entrega cuantitativamente sobre 30 dominios heterogéneos.
 
 
+<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
+
 ---
 
 
-<a id="capitulo-9.30-caso-30---behavioral-dynamics-bajo-edi"></a>
+<a id="capitulo-9.1-caso-30---behavioral-dynamics-bajo-edi"></a>
 
 # Caso 30. Behavioral Dynamics (Fajen-Warren 2003)
 
@@ -7320,10 +7548,12 @@ Tiempo aproximado en CPU 32 hilos: 2-5 minutos.
 Las decisiones metodológicas, versiones de la sonda, ajustes de parámetros y verificaciones de robustez quedan documentadas en `Bitacora/`. La fuente de verdad del manuscrito es `outputs/metrics.json` versionado en este directorio.
 
 
+<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
+
 ---
 
 
-<a id="capitulo-9.31-multi-sonda---validacion-cruzada-de-3-strong"></a>
+<a id="capitulo-9.2-multi-sonda---validacion-cruzada"></a>
 
 # Multi-sonda — resultados ejecutados
 
@@ -7422,10 +7652,12 @@ Esto **neutraliza la objeción de dependencia instrumental fuerte**: la conclusi
 - Kermack, W.O. y McKendrick, A.G. (1927). "A contribution to the mathematical theory of epidemics". *Proc. Roy. Soc. A* 115(772): 700-721. (SEIR).
 
 
+<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
+
 ---
 
 
-<a id="capitulo-9.32-baselines-estadisticos---comparacion-ejecutada"></a>
+<a id="capitulo-9.3-baselines-estadisticos---comparacion-ejecutada"></a>
 
 # Baselines estadísticos puros — resultados ejecutados
 
@@ -7541,10 +7773,12 @@ Esto NO se ha hecho. La afirmación correcta es: *"EDI tiene mejor capacidad de 
 - Breiman, L. (2001). "Statistical Modeling: The Two Cultures". *Statistical Science* 16(3): 199–231.
 
 
+<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
+
 ---
 
 
-<a id="capitulo-9.33-caso-piloto-covid---dimension-normativa"></a>
+<a id="capitulo-9.4-caso-piloto-covid---dimension-normativa"></a>
 
 # Caso piloto COVID-19 — dimensión normativa institucional
 
@@ -7644,10 +7878,12 @@ Esto cierra la deuda del bloque 7 de la auditoría doctoral en su forma de **pil
 - Our World in Data (2025). *COVID-19 Data Explorer*. https://ourworldindata.org/covid (acceso 2026-04-28).
 
 
+<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
+
 ---
 
 
-<a id="capitulo-9.34-perfil-agresivo---analisis-de-drift"></a>
+<a id="capitulo-9.5-perfil-agresivo---analisis-de-drift"></a>
 
 # Perfil agresivo — análisis de drift inferencial
 
@@ -7736,7 +7972,218 @@ Esta ejecución masiva queda como trámite editorial pre-depósito, no como deud
 - Auditoría v2 bloque C.2.
 
 
+<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
+
 ---
+
+
+<a id="bibliografia"></a>
+
+# Bibliografía
+
+<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
+
+
+
+<a id="bibliografia-consolidada"></a>
+
+# Bibliografía formal del proyecto
+
+## Función de este capítulo
+
+Bibliografía nuclear consolidada del manuscrito doctoral *Estructuras Pre-Ontológicas: Realismo Irrealista Operativo y Compresión Multiescala con Validación EDI Multidominio*. 90 referencias formales organizadas en doce secciones temáticas en estilo Chicago author-date, más mapa de fuentes de datos por caso del corpus.
+
+## Asignación de interlocutores por capítulo
+
+Cada capítulo del manuscrito se ancla en al menos un interlocutor principal y un conjunto de secundarios. Esta asignación no es decorativa: estructura el diálogo textual obligatorio.
+
+| Capítulo | Interlocutor principal | Secundarios |
+|----------|------------------------|-------------|
+| 02-01 (ontología) | Bunge (1979) | Dupré, Ladyman & Ross, Dennett, Sellars, Wittgenstein, Simondon, Bueno |
+| 02-02 (epistemología) | Cartwright (1989) | Pearl, Bechtel & Craver, Mitchell, Dennett, Popper |
+| 02-03 (categorías) | Dennett (1991) | Searle, Bourdieu, Latour, Simondon |
+| 02-04 (nivel B) | Warren (2006), Gibson (1979) | Maturana & Varela, Varela-Thompson-Rosch, Clark, Noë, Fajen |
+| 03-01 (aparato) | Pearl (2009) | Ladyman & Ross, Strogatz, Kelso, Haken |
+| 03-02 (criterios) | Bunge (1959), Lakatos (1978) | Cartwright, Pearl, Popper |
+| 03-03 (auditoría) | Bunge (1959) | Bechtel, Craver, Mitchell |
+| 03-04 (κ empírico, EDI) | Hoel (2017) | Strogatz, Kelso, Haken, Tononi, Seth, Rosas, Mediano, Klein |
+| 04-01 (rivales) | Por rival | Wolfram (2020), Tononi (IIT), Searle (1980), Chalmers (2006) |
+| 04-02 (límites) | Searle (1995) | Varela-Thompson, Bourdieu, Latour |
+| 05-01 (mente) | Varela-Thompson-Rosch (1991), Dennett (1991) | Clark & Chalmers, Noë, Searle, Sellars |
+| 05-02 (biología) | Nicholson & Dupré (2018), Scheffer (2009) | Keller, Bechtel & Craver, Maturana & Varela |
+| 05-03 (técnico) | Simondon (1989), Latour (2005) | Brooks, Beyer (SRE), Hayhoe |
+| 05-04 (instituciones) | Bourdieu (1980) | Searle, Latour, Gilbert, Bunge, North |
+| 05-05 (caso ancla cualitativo) | Warren (2006), Gibson (1979) | Fajen, Sternad, Foo, Yilmaz, Lee, Fink |
+| 06-01 (cierre) | — | sintetiza todos los anteriores |
+| 09 (corpus EDI) | Hoel (2017), Morton (2013) | Bunge, Ladyman & Ross, Woodward, Kim, Humphreys, O'Connor & Wong |
+
+## Bibliografía Nuclear Completa (76 fuentes)
+
+### A. Filosofía de la Ciencia, Ontología y Emergencia
+
+1. Bedau, M. (1997). "Weak Emergence". *Philosophical Perspectives* 11: 375–399.
+2. Bennett, J. (2010). *Vibrant Matter: A Political Ecology of Things*. Durham: Duke University Press.
+3. Bueno, G. (1978). *Ensayos materialistas*. Madrid: Taurus.
+4. Bunge, M. (1959). *Causality: The Place of the Causal Principle in Modern Science*. Cambridge: Harvard University Press.
+5. Bunge, M. (1979). *Treatise on Basic Philosophy, Volume 4: Ontology II: A World of Systems*. Dordrecht: Reidel.
+6. Chalmers, D. (2006). "Strong and Weak Emergence". En P. Clayton y P. Davies (eds.), *The Re-Emergence of Emergence*. Oxford: Oxford University Press.
+7. Dennett, D. (1991). "Real Patterns". *The Journal of Philosophy* 88(1): 27–51.
+8. Dupré, J. (1993). *The Disorder of Things: Metaphysical Foundations of the Disunity of Science*. Cambridge: Harvard University Press.
+9. Harman, G. (2018). *Object-Oriented Ontology: A New Theory of Everything*. London: Pelican Books.
+10. Humphreys, P. (2016). *Emergence: A Philosophical Account*. Oxford: Oxford University Press.
+11. Kant, I. (1781/1998). *Crítica de la razón pura*. Trad. P. Guyer y A. W. Wood. Cambridge: Cambridge University Press.
+12. Kim, J. (1999). "Making Sense of Emergence". *Philosophical Studies* 95(1–2): 3–36.
+13. Ladyman, J. y Ross, D. (2007). *Every Thing Must Go: Metaphysics Naturalized*. Oxford: Oxford University Press.
+14. Latour, B. (2005). *Reassembling the Social: An Introduction to Actor-Network-Theory*. Oxford: Oxford University Press.
+15. Latour, B. (2017). *Facing Gaia: Eight Lectures on the New Climatic Regime*. Cambridge: Polity Press.
+16. Morton, T. (2013). *Hyperobjects: Philosophy and Ecology after the End of the World*. Minneapolis: University of Minnesota Press.
+17. Nicholson, D. y Dupré, J. (eds.) (2018). *Everything Flows: Towards a Processual Philosophy of Biology*. Oxford: Oxford University Press.
+18. O'Connor, T. y Wong, H. Y. (2005). "The Metaphysics of Emergence". *Noûs* 39(4): 658–678.
+19. Psillos, S. (1999). *Scientific Realism: How Science Tracks Truth*. London: Routledge.
+20. Sellars, W. (1962). "Philosophy and the Scientific Image of Man". En R. Colodny (ed.), *Frontiers of Science and Philosophy*. Pittsburgh: University of Pittsburgh Press.
+21. Simondon, G. (1989). *Du mode d'existence des objets techniques*. Paris: Aubier.
+22. van Fraassen, B. C. (1980). *The Scientific Image*. Oxford: Oxford University Press.
+23. Whitehead, A. N. (1929). *Process and Reality*. New York: Macmillan.
+24. Wittgenstein, L. (1953). *Philosophical Investigations*. Oxford: Blackwell.
+
+### B. Causalidad, Reducción, Mecanismos
+
+25. Batterman, R. (2002). *The Devil in the Details: Asymptotic Reasoning in Explanation, Reduction, and Emergence*. Oxford: Oxford University Press.
+26. Bechtel, W. (2008). *Mental Mechanisms: Philosophical Perspectives on Cognitive Neuroscience*. New York: Routledge.
+27. Cartwright, N. (1989). *Nature's Capacities and Their Measurement*. Oxford: Clarendon Press.
+28. Cartwright, N. (1999). *The Dappled World: A Study of the Boundaries of Science*. Cambridge: Cambridge University Press.
+29. Craver, C. (2007). *Explaining the Brain: Mechanisms and the Mosaic Unity of Neuroscience*. Oxford: Oxford University Press.
+30. Mitchell, S. D. (2009). *Unsimple Truths: Science, Complexity, and Policy*. Chicago: University of Chicago Press.
+31. Pearl, J. (2009). *Causality: Models, Reasoning, and Inference*. 2.ª ed. Cambridge: Cambridge University Press.
+32. Woodward, J. (2003). *Making Things Happen: A Theory of Causal Explanation*. Oxford: Oxford University Press.
+
+### C. Información, Complejidad y Emergencia Cuantitativa
+
+33. Bar-Yam, Y. (2004). "Multiscale Complexity/Entropy". *Advances in Complex Systems* 7(1): 47–63.
+34. Cohen, J. (1988). *Statistical Power Analysis for the Behavioral Sciences*. 2.ª ed. Hillsdale: Lawrence Erlbaum.
+35. Comolatti, R. y Hoel, E. P. (2022). "Causal Emergence is Widespread Across Measures of Causation". *arXiv:2202.01854*.
+36. Flack, J. C. (2017). "Coarse-graining as a Downward Causation Mechanism". *Philosophical Transactions of the Royal Society A* 375(2109): 20160338.
+37. Hoel, E. P. (2017). "When the Map is Better than the Territory". *Entropy* 19(5): 188.
+38. Klein, B. y Hoel, E. P. (2020). "The Emergence of Informative Higher Scales in Complex Networks". *Complexity* 2020: 8932526.
+39. Mediano, P. A. M., Rosas, F. E., Luppi, A. I., Carhart-Harris, R. L., Bor, D., Seth, A. K. y Barrett, A. B. (2022). "Greater than the Parts: A Review of the Information Decomposition Approach to Causal Emergence". *Philosophical Transactions of the Royal Society A* 380(2227): 20210246.
+40. Rosas, F. E., Mediano, P. A. M., Gastpar, M. y Jensen, H. J. (2020). "Quantifying High-order Interdependencies via Multivariate Extensions of the Mutual Information". *Physical Review E* 100(3): 032310.
+41. Seth, A. K. (2008). "Measuring Autonomy and Emergence via Granger Causality". *Artificial Life* 16(2): 179–196.
+42. Shannon, C. E. (1948). "A Mathematical Theory of Communication". *Bell System Technical Journal* 27: 379–423, 623–656.
+43. Tononi, G. (2004). "An Information Integration Theory of Consciousness". *BMC Neuroscience* 5: 42.
+44. Tononi, G., Boly, M., Massimini, M. y Koch, C. (2016). "Integrated Information Theory: An Updated Account". *Archives Italiennes de Biologie* 154: 1–21.
+45. Varley, T. F. y Hoel, E. P. (2022). "Emergence as the Conversion of Information: A Unifying Theory". *Philosophical Transactions of the Royal Society A* 380(2227): 20210150.
+
+### D. Metodología y Filosofía de la Práctica Científica
+
+46. Evensen, G. (2009). *Data Assimilation: The Ensemble Kalman Filter*. 2.ª ed. Berlin: Springer.
+47. Lakatos, I. (1978). *The Methodology of Scientific Research Programmes*. Cambridge: Cambridge University Press.
+48. Popper, K. (1959). *The Logic of Scientific Discovery*. London: Hutchinson.
+
+### E. Sistemas Complejos, Simulación y Dinámica No Lineal
+
+49. Haken, H. (1983). *Synergetics: An Introduction*. 3.ª ed. Berlin: Springer.
+50. Holland, J. H. (1995). *Hidden Order: How Adaptation Builds Complexity*. Reading: Addison-Wesley.
+51. Kelso, J. A. S. (1995). *Dynamic Patterns: The Self-Organization of Brain and Behavior*. Cambridge: MIT Press.
+52. Luhmann, N. (1995). *Social Systems*. Stanford: Stanford University Press.
+53. Schelling, T. C. (1978). *Micromotives and Macrobehavior*. New York: Norton.
+54. Strogatz, S. H. (2014). *Nonlinear Dynamics and Chaos: With Applications to Physics, Biology, Chemistry, and Engineering*. 2.ª ed. Boulder: Westview Press.
+55. Soros, G. (1987). *The Alchemy of Finance*. New York: Simon & Schuster.
+56. Taleb, N. N. (2012). *Antifragile: Things That Gain from Disorder*. New York: Random House.
+
+### F. Filosofía de la Mente, Cognición Encarnada y Embodied
+
+57. Clark, A. (2008). *Supersizing the Mind: Embodiment, Action, and Cognitive Extension*. Oxford: Oxford University Press.
+58. Clark, A. y Chalmers, D. (1998). "The Extended Mind". *Analysis* 58(1): 7–19.
+59. Maturana, H. y Varela, F. J. (1980). *Autopoiesis and Cognition: The Realization of the Living*. Dordrecht: Reidel.
+60. Noë, A. (2004). *Action in Perception*. Cambridge: MIT Press.
+61. Searle, J. R. (1980). "Minds, Brains, and Programs". *Behavioral and Brain Sciences* 3(3): 417–424.
+62. Searle, J. R. (1995). *The Construction of Social Reality*. New York: Free Press.
+63. Varela, F. J., Thompson, E. y Rosch, E. (1991). *The Embodied Mind: Cognitive Science and Human Experience*. Cambridge: MIT Press.
+
+### G. Behavioral Dynamics y Percepción Ecológica
+
+64. Fajen, B. R. y Warren, W. H. (2003). "Behavioral Dynamics of Steering, Obstacle Avoidance, and Route Selection". *Journal of Experimental Psychology: Human Perception and Performance* 29(2): 343–362.
+65. Foo, P., Kelso, J. A. S. y de Guzman, G. C. (2000). "Functional Stabilization of Unstable Fixed Points: Human Pole Balancing Using Time-to-Balance Information". *Journal of Experimental Psychology: Human Perception and Performance* 26(4): 1281–1297.
+66. Gibson, J. J. (1966). *The Senses Considered as Perceptual Systems*. Boston: Houghton Mifflin.
+67. Gibson, J. J. (1979). *The Ecological Approach to Visual Perception*. Boston: Houghton Mifflin.
+68. Lee, D. N. (1976). "A Theory of Visual Control of Braking Based on Information about Time-to-Collision". *Perception* 5(4): 437–459.
+69. Sternad, D., Duarte, M., Katsumata, H. y Schaal, S. (2001). "Bouncing a Ball: Tuning into Dynamic Stability". *Journal of Experimental Psychology: Human Perception and Performance* 27(5): 1163–1184.
+70. Warren, W. H. (2006). "The Dynamics of Perception and Action". *Psychological Review* 113(2): 358–389.
+71. Yilmaz, E. H. y Warren, W. H. (1995). "Visual Control of Braking: A Test of the Tau-Dot Hypothesis". *Journal of Experimental Psychology: Human Perception and Performance* 21(5): 996–1014.
+
+### H. Modelos de Dominio Específico (sondas ODE del corpus EDI)
+
+72. Budyko, M. I. (1969). "The Effect of Solar Radiation Variations on the Climate of the Earth". *Tellus* 21(5): 611–619.
+73. Carpenter, S. R. (2005). "Eutrophication of Aquatic Ecosystems: Bistability and Soil Phosphorus". *Proceedings of the National Academy of Sciences* 102(29): 10002–10005.
+74. Docquier, F. y Rapoport, H. (2012). "Globalization, Brain Drain, and Development". *Journal of Economic Literature* 50(3): 681–730.
+75. Jambeck, J. R., Geyer, R., Wilcox, C., Siegler, T. R., Perryman, M., Andrady, A., Narayan, R. y Law, K. L. (2015). "Plastic Waste Inputs from Land into the Ocean". *Science* 347(6223): 768–771.
+76. Kermack, W. O. y McKendrick, A. G. (1927). "A Contribution to the Mathematical Theory of Epidemics". *Proceedings of the Royal Society A* 115(772): 700–721.
+77. North, D. C. (1990). *Institutions, Institutional Change and Economic Performance*. Cambridge: Cambridge University Press.
+78. Scheffer, M. (2009). *Critical Transitions in Nature and Society*. Princeton: Princeton University Press.
+79. Sellers, W. D. (1969). "A Global Climatic Model Based on the Energy Balance of the Earth-Atmosphere System". *Journal of Applied Meteorology* 8(3): 392–400.
+80. von Thünen, J. H. (1826). *Der isolirte Staat in Beziehung auf Landwirthschaft und Nationalökonomie*. Hamburg: Perthes.
+
+### I. Computación, Hipergrafos y Wolfram
+
+81. Wolfram, S. (2020). *A Project to Find the Fundamental Theory of Physics*. Champaign: Wolfram Media.
+82. Wolfram, S. (2002). *A New Kind of Science*. Champaign: Wolfram Media.
+
+### J. Ontología social e instituciones
+
+83. Bourdieu, P. (1980). *Le sens pratique*. Paris: Éditions de Minuit.
+84. Bourdieu, P. (1990). *The Logic of Practice*. Stanford: Stanford University Press.
+85. Gilbert, M. (1989). *On Social Facts*. London: Routledge.
+86. Searle, J. R. (2010). *Making the Social World: The Structure of Human Civilization*. Oxford: Oxford University Press.
+
+### K. Filosofía latinoamericana / Universidad de Antioquia
+
+87. Hoyos Vásquez, G. (1996). *Ética para ciudadanos*. Bogotá: Siglo del Hombre.
+88. Salas, R. (ed.) (2014). *Pensamiento crítico latinoamericano: conceptos fundamentales*. Santiago: Universidad Católica.
+
+### L. Robótica situada y embodied AI
+
+89. Brooks, R. A. (1991). "Intelligence Without Representation". *Artificial Intelligence* 47(1–3): 139–159.
+90. Pfeifer, R. y Scheier, C. (1999). *Understanding Intelligence*. Cambridge: MIT Press.
+
+## Fuentes de Datos (Repositorios Principales)
+
+| Fuente | URL/API | Casos del corpus |
+|--------|---------|-----|
+| World Bank Open Data | api.worldbank.org/v2 | 10, 11, 13, 16, 18, 22, 25, 27, 28, 29 |
+| Our World in Data (OWID) | github.com/owid/owid-grapher-data | 5, 24 |
+| Meteostat / NOAA | meteostat.net | 1 |
+| Yahoo Finance | finance.yahoo.com / yfinance | 9 |
+| OPSD (Open Power Systems Data) | open-power-system-data.org | 4 |
+| CelesTrak | celestrak.org | 20, 26 |
+| Wikimedia Statistics | stats.wikimedia.org | 15 |
+| AQICN | aqicn.org | 3 |
+| WMO/PMEL (proxies) | psl.noaa.gov | 17, 19 |
+| GRAVIS+USGS (proxy) | usgs.gov | 25 |
+| Synthetic (Fajen-Warren) | local | 30 |
+
+## Notas editoriales
+
+1. **Convención de citación:** Chicago author-date adaptado al manuscrito doctoral en español. Para envío a revista Q1 específica, debe ajustarse al estilo solicitado (APA, Vancouver según campo).
+2. **Cobertura por capítulo:** las 90 referencias cubren todos los capítulos del manuscrito con al menos 3 fuentes nucleares por capítulo.
+3. **Fuentes faltantes para futuro:** envío a revistas exige revisión sistemática por dominio. Aquí están las fuentes nucleares; las complementarias se incorporan en fase de redacción final.
+4. **Bibliografía secundaria:** el corpus PDF en `07-bibliografia/` (Bunge, Dennett, Searle, Bourdieu, Latour, Simondon, Wittgenstein, Sellars, Maturana-Varela, Whitehead, Chalmers, Noë-Thompson, Warren) sirve como fuente directa para citas extensas.
+
+## Fórmula final de la bibliografía
+
+> Una tesis doctoral no se valida por la cantidad de referencias sino por la **función argumental** de cada una. Aquí cada referencia tiene su asignación a capítulo y su rol (alianza, contraste, afinación). Una vez asignados, se convierten en aparato real durante la redacción final.
+
+
+<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
+
+---
+
+
+<a id="anexos"></a>
+
+# Anexos operativos
+
+<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
+
 
 
 <a id="anexo-a.1-glosario-operativo"></a>
@@ -7944,6 +8391,8 @@ Dirección de marcha actual. Variable conductual clave en locomoción (Fajen y W
 
 Cada término del glosario se usa de manera consistente en todos los capítulos del manuscrito. Cuando un capítulo introduce un término nuevo, se añade aquí con su definición operativa y referencia cruzada.
 
+
+<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
 
 ---
 
@@ -8190,6 +8639,8 @@ EDI = -1 ─┬───────────────────┬─�
 - Aplicación a 30 casos: capítulo 09 + `09-simulaciones-edi/<caso>/`
 
 
+<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
+
 ---
 
 
@@ -8378,6 +8829,8 @@ Cada uno tiene:
 
 > El dossier no es burocracia: es la articulación operativa del filtro de admisión que distingue una tesis de un manifiesto. Cualquier categoría que entre al manuscrito sin dossier completo (en demostrativo) o sin criterio de elevación (en programático) está fuera del marco.
 
+
+<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
 
 ---
 
@@ -8607,6 +9060,8 @@ Esta tabla es compromiso. Si en algún rival la tesis no muestra ventaja en al m
 - Convergencia con Wolfram (programa futuro): capítulo 06-03.
 
 
+<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
+
 ---
 
 
@@ -8813,6 +9268,8 @@ El caso 30 (Nivel 3 weak) demuestra que **el aparato EDI funciona en escala beha
 - Resultados consolidados: `09-simulaciones-edi/README.md`
 - Verificación de reproducibilidad: `Bitacora/2026-04-27-integracion-jacob/02-verificacion-reproducibilidad.md`
 
+
+<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
 
 ---
 
@@ -9031,10 +9488,12 @@ Esta tesis no clausura la complejidad de lo real. Ofrece reglas para no empeorar
 Esa es la frase que sobrevive incluso si el resto del día filosófico se incendia un poco.
 
 
+<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
+
 ---
 
 
-<a id="anexo-a.8-tablas-crudas-del-corpus-edi"></a>
+<a id="anexo-a.8-tablas-crudas-del-corpus-inter-dominio"></a>
 
 # Anexo A.8. Tablas crudas del corpus EDI
 
@@ -9161,6 +9620,8 @@ cat outputs/metrics.json | python3 -m json.tool
 Si una cifra del anexo no coincide con `metrics.json`, prevalece `metrics.json` y este anexo se corrige.
 
 
+<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
+
 ---
 
 
@@ -9282,6 +9743,8 @@ Listas de soporte editorial requeridas por el formato de tesis doctoral instituc
 
 Las listas de este anexo se actualizarán automáticamente desde el manuscrito ensamblado (`TesisFinal/Tesis.md`) cuando se haga la conversión final a LaTeX/PDF mediante Pandoc + script de extracción. Hasta entonces, este anexo se mantiene manualmente coherente con los capítulos de origen.
 
+
+<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
 
 ---
 
@@ -9470,6 +9933,8 @@ mmdc -i Anexos/A10-figuras-mermaid.md -o Anexos/figuras/  # mermaid-cli
 o automáticamente por GitHub/Pandoc con filtros mermaid.
 
 
+<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
+
 ---
 
 
@@ -9622,10 +10087,12 @@ La validación lógica formal con ST identificó dos puntos donde la formulació
 - Capítulo 03-04 (niveles excluyentes como axiomas explícitos): tabla de niveles.
 
 
+<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
+
 ---
 
 
-<a id="anexo-a.12-corpus-multiescala--tablas-crudas"></a>
+<a id="anexo-a.12-corpus-inter-escala---tablas-crudas"></a>
 
 # Anexo A.12. Corpus EDI multiescala — tablas crudas
 
@@ -9701,7 +10168,17 @@ Anexo tabular de **resultados crudos verificables** del corpus EDI multiescala (
 - corpus macro original: `Anexos/A8-tablas-crudas-corpus.md`
 
 
+<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
+
 ---
+
+
+<a id="auditorias"></a>
+
+# Auditorías metodológicas
+
+<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
+
 
 
 <a id="auditoria-doctoral-integral-v2-final"></a>
@@ -9880,6 +10357,8 @@ El manuscrito ha cerrado **todos los bloques de contenido** identificados en las
 **Auditoría v1 archivada en:** `Bitacora/2026-04-27-integracion-jacob/04-auditoria-doctoral-v1.md`.
 **Esta auditoría v2 final se archiva en:** `Bitacora/2026-04-28-cierre-pendientes/02-auditoria-doctoral-v2-final.md`.
 
+
+<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
 
 ---
 
@@ -10414,195 +10893,6 @@ Sección breve en cap 01-01 (falencias) o cap 06-01 (cierre) que integre la evol
 **Fecha:** 2026-04-28.
 
 
----
-
-
-<a id="bibliografia"></a>
-
-# Bibliografía formal del proyecto
-
-## Función de este capítulo
-
-Bibliografía nuclear consolidada del manuscrito doctoral *Estructuras Pre-Ontológicas: Realismo Irrealista Operativo y Compresión Multiescala con Validación EDI Multidominio*. 90 referencias formales organizadas en doce secciones temáticas en estilo Chicago author-date, más mapa de fuentes de datos por caso del corpus.
-
-## Asignación de interlocutores por capítulo
-
-Cada capítulo del manuscrito se ancla en al menos un interlocutor principal y un conjunto de secundarios. Esta asignación no es decorativa: estructura el diálogo textual obligatorio.
-
-| Capítulo | Interlocutor principal | Secundarios |
-|----------|------------------------|-------------|
-| 02-01 (ontología) | Bunge (1979) | Dupré, Ladyman & Ross, Dennett, Sellars, Wittgenstein, Simondon, Bueno |
-| 02-02 (epistemología) | Cartwright (1989) | Pearl, Bechtel & Craver, Mitchell, Dennett, Popper |
-| 02-03 (categorías) | Dennett (1991) | Searle, Bourdieu, Latour, Simondon |
-| 02-04 (nivel B) | Warren (2006), Gibson (1979) | Maturana & Varela, Varela-Thompson-Rosch, Clark, Noë, Fajen |
-| 03-01 (aparato) | Pearl (2009) | Ladyman & Ross, Strogatz, Kelso, Haken |
-| 03-02 (criterios) | Bunge (1959), Lakatos (1978) | Cartwright, Pearl, Popper |
-| 03-03 (auditoría) | Bunge (1959) | Bechtel, Craver, Mitchell |
-| 03-04 (κ empírico, EDI) | Hoel (2017) | Strogatz, Kelso, Haken, Tononi, Seth, Rosas, Mediano, Klein |
-| 04-01 (rivales) | Por rival | Wolfram (2020), Tononi (IIT), Searle (1980), Chalmers (2006) |
-| 04-02 (límites) | Searle (1995) | Varela-Thompson, Bourdieu, Latour |
-| 05-01 (mente) | Varela-Thompson-Rosch (1991), Dennett (1991) | Clark & Chalmers, Noë, Searle, Sellars |
-| 05-02 (biología) | Nicholson & Dupré (2018), Scheffer (2009) | Keller, Bechtel & Craver, Maturana & Varela |
-| 05-03 (técnico) | Simondon (1989), Latour (2005) | Brooks, Beyer (SRE), Hayhoe |
-| 05-04 (instituciones) | Bourdieu (1980) | Searle, Latour, Gilbert, Bunge, North |
-| 05-05 (caso ancla cualitativo) | Warren (2006), Gibson (1979) | Fajen, Sternad, Foo, Yilmaz, Lee, Fink |
-| 06-01 (cierre) | — | sintetiza todos los anteriores |
-| 09 (corpus EDI) | Hoel (2017), Morton (2013) | Bunge, Ladyman & Ross, Woodward, Kim, Humphreys, O'Connor & Wong |
-
-## Bibliografía Nuclear Completa (76 fuentes)
-
-### A. Filosofía de la Ciencia, Ontología y Emergencia
-
-1. Bedau, M. (1997). "Weak Emergence". *Philosophical Perspectives* 11: 375–399.
-2. Bennett, J. (2010). *Vibrant Matter: A Political Ecology of Things*. Durham: Duke University Press.
-3. Bueno, G. (1978). *Ensayos materialistas*. Madrid: Taurus.
-4. Bunge, M. (1959). *Causality: The Place of the Causal Principle in Modern Science*. Cambridge: Harvard University Press.
-5. Bunge, M. (1979). *Treatise on Basic Philosophy, Volume 4: Ontology II: A World of Systems*. Dordrecht: Reidel.
-6. Chalmers, D. (2006). "Strong and Weak Emergence". En P. Clayton y P. Davies (eds.), *The Re-Emergence of Emergence*. Oxford: Oxford University Press.
-7. Dennett, D. (1991). "Real Patterns". *The Journal of Philosophy* 88(1): 27–51.
-8. Dupré, J. (1993). *The Disorder of Things: Metaphysical Foundations of the Disunity of Science*. Cambridge: Harvard University Press.
-9. Harman, G. (2018). *Object-Oriented Ontology: A New Theory of Everything*. London: Pelican Books.
-10. Humphreys, P. (2016). *Emergence: A Philosophical Account*. Oxford: Oxford University Press.
-11. Kant, I. (1781/1998). *Crítica de la razón pura*. Trad. P. Guyer y A. W. Wood. Cambridge: Cambridge University Press.
-12. Kim, J. (1999). "Making Sense of Emergence". *Philosophical Studies* 95(1–2): 3–36.
-13. Ladyman, J. y Ross, D. (2007). *Every Thing Must Go: Metaphysics Naturalized*. Oxford: Oxford University Press.
-14. Latour, B. (2005). *Reassembling the Social: An Introduction to Actor-Network-Theory*. Oxford: Oxford University Press.
-15. Latour, B. (2017). *Facing Gaia: Eight Lectures on the New Climatic Regime*. Cambridge: Polity Press.
-16. Morton, T. (2013). *Hyperobjects: Philosophy and Ecology after the End of the World*. Minneapolis: University of Minnesota Press.
-17. Nicholson, D. y Dupré, J. (eds.) (2018). *Everything Flows: Towards a Processual Philosophy of Biology*. Oxford: Oxford University Press.
-18. O'Connor, T. y Wong, H. Y. (2005). "The Metaphysics of Emergence". *Noûs* 39(4): 658–678.
-19. Psillos, S. (1999). *Scientific Realism: How Science Tracks Truth*. London: Routledge.
-20. Sellars, W. (1962). "Philosophy and the Scientific Image of Man". En R. Colodny (ed.), *Frontiers of Science and Philosophy*. Pittsburgh: University of Pittsburgh Press.
-21. Simondon, G. (1989). *Du mode d'existence des objets techniques*. Paris: Aubier.
-22. van Fraassen, B. C. (1980). *The Scientific Image*. Oxford: Oxford University Press.
-23. Whitehead, A. N. (1929). *Process and Reality*. New York: Macmillan.
-24. Wittgenstein, L. (1953). *Philosophical Investigations*. Oxford: Blackwell.
-
-### B. Causalidad, Reducción, Mecanismos
-
-25. Batterman, R. (2002). *The Devil in the Details: Asymptotic Reasoning in Explanation, Reduction, and Emergence*. Oxford: Oxford University Press.
-26. Bechtel, W. (2008). *Mental Mechanisms: Philosophical Perspectives on Cognitive Neuroscience*. New York: Routledge.
-27. Cartwright, N. (1989). *Nature's Capacities and Their Measurement*. Oxford: Clarendon Press.
-28. Cartwright, N. (1999). *The Dappled World: A Study of the Boundaries of Science*. Cambridge: Cambridge University Press.
-29. Craver, C. (2007). *Explaining the Brain: Mechanisms and the Mosaic Unity of Neuroscience*. Oxford: Oxford University Press.
-30. Mitchell, S. D. (2009). *Unsimple Truths: Science, Complexity, and Policy*. Chicago: University of Chicago Press.
-31. Pearl, J. (2009). *Causality: Models, Reasoning, and Inference*. 2.ª ed. Cambridge: Cambridge University Press.
-32. Woodward, J. (2003). *Making Things Happen: A Theory of Causal Explanation*. Oxford: Oxford University Press.
-
-### C. Información, Complejidad y Emergencia Cuantitativa
-
-33. Bar-Yam, Y. (2004). "Multiscale Complexity/Entropy". *Advances in Complex Systems* 7(1): 47–63.
-34. Cohen, J. (1988). *Statistical Power Analysis for the Behavioral Sciences*. 2.ª ed. Hillsdale: Lawrence Erlbaum.
-35. Comolatti, R. y Hoel, E. P. (2022). "Causal Emergence is Widespread Across Measures of Causation". *arXiv:2202.01854*.
-36. Flack, J. C. (2017). "Coarse-graining as a Downward Causation Mechanism". *Philosophical Transactions of the Royal Society A* 375(2109): 20160338.
-37. Hoel, E. P. (2017). "When the Map is Better than the Territory". *Entropy* 19(5): 188.
-38. Klein, B. y Hoel, E. P. (2020). "The Emergence of Informative Higher Scales in Complex Networks". *Complexity* 2020: 8932526.
-39. Mediano, P. A. M., Rosas, F. E., Luppi, A. I., Carhart-Harris, R. L., Bor, D., Seth, A. K. y Barrett, A. B. (2022). "Greater than the Parts: A Review of the Information Decomposition Approach to Causal Emergence". *Philosophical Transactions of the Royal Society A* 380(2227): 20210246.
-40. Rosas, F. E., Mediano, P. A. M., Gastpar, M. y Jensen, H. J. (2020). "Quantifying High-order Interdependencies via Multivariate Extensions of the Mutual Information". *Physical Review E* 100(3): 032310.
-41. Seth, A. K. (2008). "Measuring Autonomy and Emergence via Granger Causality". *Artificial Life* 16(2): 179–196.
-42. Shannon, C. E. (1948). "A Mathematical Theory of Communication". *Bell System Technical Journal* 27: 379–423, 623–656.
-43. Tononi, G. (2004). "An Information Integration Theory of Consciousness". *BMC Neuroscience* 5: 42.
-44. Tononi, G., Boly, M., Massimini, M. y Koch, C. (2016). "Integrated Information Theory: An Updated Account". *Archives Italiennes de Biologie* 154: 1–21.
-45. Varley, T. F. y Hoel, E. P. (2022). "Emergence as the Conversion of Information: A Unifying Theory". *Philosophical Transactions of the Royal Society A* 380(2227): 20210150.
-
-### D. Metodología y Filosofía de la Práctica Científica
-
-46. Evensen, G. (2009). *Data Assimilation: The Ensemble Kalman Filter*. 2.ª ed. Berlin: Springer.
-47. Lakatos, I. (1978). *The Methodology of Scientific Research Programmes*. Cambridge: Cambridge University Press.
-48. Popper, K. (1959). *The Logic of Scientific Discovery*. London: Hutchinson.
-
-### E. Sistemas Complejos, Simulación y Dinámica No Lineal
-
-49. Haken, H. (1983). *Synergetics: An Introduction*. 3.ª ed. Berlin: Springer.
-50. Holland, J. H. (1995). *Hidden Order: How Adaptation Builds Complexity*. Reading: Addison-Wesley.
-51. Kelso, J. A. S. (1995). *Dynamic Patterns: The Self-Organization of Brain and Behavior*. Cambridge: MIT Press.
-52. Luhmann, N. (1995). *Social Systems*. Stanford: Stanford University Press.
-53. Schelling, T. C. (1978). *Micromotives and Macrobehavior*. New York: Norton.
-54. Strogatz, S. H. (2014). *Nonlinear Dynamics and Chaos: With Applications to Physics, Biology, Chemistry, and Engineering*. 2.ª ed. Boulder: Westview Press.
-55. Soros, G. (1987). *The Alchemy of Finance*. New York: Simon & Schuster.
-56. Taleb, N. N. (2012). *Antifragile: Things That Gain from Disorder*. New York: Random House.
-
-### F. Filosofía de la Mente, Cognición Encarnada y Embodied
-
-57. Clark, A. (2008). *Supersizing the Mind: Embodiment, Action, and Cognitive Extension*. Oxford: Oxford University Press.
-58. Clark, A. y Chalmers, D. (1998). "The Extended Mind". *Analysis* 58(1): 7–19.
-59. Maturana, H. y Varela, F. J. (1980). *Autopoiesis and Cognition: The Realization of the Living*. Dordrecht: Reidel.
-60. Noë, A. (2004). *Action in Perception*. Cambridge: MIT Press.
-61. Searle, J. R. (1980). "Minds, Brains, and Programs". *Behavioral and Brain Sciences* 3(3): 417–424.
-62. Searle, J. R. (1995). *The Construction of Social Reality*. New York: Free Press.
-63. Varela, F. J., Thompson, E. y Rosch, E. (1991). *The Embodied Mind: Cognitive Science and Human Experience*. Cambridge: MIT Press.
-
-### G. Behavioral Dynamics y Percepción Ecológica
-
-64. Fajen, B. R. y Warren, W. H. (2003). "Behavioral Dynamics of Steering, Obstacle Avoidance, and Route Selection". *Journal of Experimental Psychology: Human Perception and Performance* 29(2): 343–362.
-65. Foo, P., Kelso, J. A. S. y de Guzman, G. C. (2000). "Functional Stabilization of Unstable Fixed Points: Human Pole Balancing Using Time-to-Balance Information". *Journal of Experimental Psychology: Human Perception and Performance* 26(4): 1281–1297.
-66. Gibson, J. J. (1966). *The Senses Considered as Perceptual Systems*. Boston: Houghton Mifflin.
-67. Gibson, J. J. (1979). *The Ecological Approach to Visual Perception*. Boston: Houghton Mifflin.
-68. Lee, D. N. (1976). "A Theory of Visual Control of Braking Based on Information about Time-to-Collision". *Perception* 5(4): 437–459.
-69. Sternad, D., Duarte, M., Katsumata, H. y Schaal, S. (2001). "Bouncing a Ball: Tuning into Dynamic Stability". *Journal of Experimental Psychology: Human Perception and Performance* 27(5): 1163–1184.
-70. Warren, W. H. (2006). "The Dynamics of Perception and Action". *Psychological Review* 113(2): 358–389.
-71. Yilmaz, E. H. y Warren, W. H. (1995). "Visual Control of Braking: A Test of the Tau-Dot Hypothesis". *Journal of Experimental Psychology: Human Perception and Performance* 21(5): 996–1014.
-
-### H. Modelos de Dominio Específico (sondas ODE del corpus EDI)
-
-72. Budyko, M. I. (1969). "The Effect of Solar Radiation Variations on the Climate of the Earth". *Tellus* 21(5): 611–619.
-73. Carpenter, S. R. (2005). "Eutrophication of Aquatic Ecosystems: Bistability and Soil Phosphorus". *Proceedings of the National Academy of Sciences* 102(29): 10002–10005.
-74. Docquier, F. y Rapoport, H. (2012). "Globalization, Brain Drain, and Development". *Journal of Economic Literature* 50(3): 681–730.
-75. Jambeck, J. R., Geyer, R., Wilcox, C., Siegler, T. R., Perryman, M., Andrady, A., Narayan, R. y Law, K. L. (2015). "Plastic Waste Inputs from Land into the Ocean". *Science* 347(6223): 768–771.
-76. Kermack, W. O. y McKendrick, A. G. (1927). "A Contribution to the Mathematical Theory of Epidemics". *Proceedings of the Royal Society A* 115(772): 700–721.
-77. North, D. C. (1990). *Institutions, Institutional Change and Economic Performance*. Cambridge: Cambridge University Press.
-78. Scheffer, M. (2009). *Critical Transitions in Nature and Society*. Princeton: Princeton University Press.
-79. Sellers, W. D. (1969). "A Global Climatic Model Based on the Energy Balance of the Earth-Atmosphere System". *Journal of Applied Meteorology* 8(3): 392–400.
-80. von Thünen, J. H. (1826). *Der isolirte Staat in Beziehung auf Landwirthschaft und Nationalökonomie*. Hamburg: Perthes.
-
-### I. Computación, Hipergrafos y Wolfram
-
-81. Wolfram, S. (2020). *A Project to Find the Fundamental Theory of Physics*. Champaign: Wolfram Media.
-82. Wolfram, S. (2002). *A New Kind of Science*. Champaign: Wolfram Media.
-
-### J. Ontología social e instituciones
-
-83. Bourdieu, P. (1980). *Le sens pratique*. Paris: Éditions de Minuit.
-84. Bourdieu, P. (1990). *The Logic of Practice*. Stanford: Stanford University Press.
-85. Gilbert, M. (1989). *On Social Facts*. London: Routledge.
-86. Searle, J. R. (2010). *Making the Social World: The Structure of Human Civilization*. Oxford: Oxford University Press.
-
-### K. Filosofía latinoamericana / Universidad de Antioquia
-
-87. Hoyos Vásquez, G. (1996). *Ética para ciudadanos*. Bogotá: Siglo del Hombre.
-88. Salas, R. (ed.) (2014). *Pensamiento crítico latinoamericano: conceptos fundamentales*. Santiago: Universidad Católica.
-
-### L. Robótica situada y embodied AI
-
-89. Brooks, R. A. (1991). "Intelligence Without Representation". *Artificial Intelligence* 47(1–3): 139–159.
-90. Pfeifer, R. y Scheier, C. (1999). *Understanding Intelligence*. Cambridge: MIT Press.
-
-## Fuentes de Datos (Repositorios Principales)
-
-| Fuente | URL/API | Casos del corpus |
-|--------|---------|-----|
-| World Bank Open Data | api.worldbank.org/v2 | 10, 11, 13, 16, 18, 22, 25, 27, 28, 29 |
-| Our World in Data (OWID) | github.com/owid/owid-grapher-data | 5, 24 |
-| Meteostat / NOAA | meteostat.net | 1 |
-| Yahoo Finance | finance.yahoo.com / yfinance | 9 |
-| OPSD (Open Power Systems Data) | open-power-system-data.org | 4 |
-| CelesTrak | celestrak.org | 20, 26 |
-| Wikimedia Statistics | stats.wikimedia.org | 15 |
-| AQICN | aqicn.org | 3 |
-| WMO/PMEL (proxies) | psl.noaa.gov | 17, 19 |
-| GRAVIS+USGS (proxy) | usgs.gov | 25 |
-| Synthetic (Fajen-Warren) | local | 30 |
-
-## Notas editoriales
-
-1. **Convención de citación:** Chicago author-date adaptado al manuscrito doctoral en español. Para envío a revista Q1 específica, debe ajustarse al estilo solicitado (APA, Vancouver según campo).
-2. **Cobertura por capítulo:** las 90 referencias cubren todos los capítulos del manuscrito con al menos 3 fuentes nucleares por capítulo.
-3. **Fuentes faltantes para futuro:** envío a revistas exige revisión sistemática por dominio. Aquí están las fuentes nucleares; las complementarias se incorporan en fase de redacción final.
-4. **Bibliografía secundaria:** el corpus PDF en `07-bibliografia/` (Bunge, Dennett, Searle, Bourdieu, Latour, Simondon, Wittgenstein, Sellars, Maturana-Varela, Whitehead, Chalmers, Noë-Thompson, Warren) sirve como fuente directa para citas extensas.
-
-## Fórmula final de la bibliografía
-
-> Una tesis doctoral no se valida por la cantidad de referencias sino por la **función argumental** de cada una. Aquí cada referencia tiene su asignación a capítulo y su rol (alianza, contraste, afinación). Una vez asignados, se convierten en aparato real durante la redacción final.
-
+<sub>[↑ volver al índice](#tabla-de-contenidos)</sub>
 
 ---

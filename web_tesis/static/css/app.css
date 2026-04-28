@@ -404,6 +404,107 @@ body {
 .toc-l2 { padding-left: 0.65rem; }
 .toc-l3 { padding-left: 1.2rem; }
 
+/* TOC entry destacada (scroll-spy) */
+.toc-box a.toc-active {
+  color: var(--accent);
+  font-weight: 600;
+  border-left: 3px solid var(--accent);
+  padding-left: 0.4rem;
+  background: rgba(33, 79, 87, 0.06);
+  border-radius: 0 4px 4px 0;
+}
+
+/* Botón flotante "volver arriba" */
+.back-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  font-size: 1.3rem;
+  cursor: pointer;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+  z-index: 999;
+  text-decoration: none;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.back-to-top:hover {
+  transform: translateY(-2px);
+  opacity: 0.92;
+}
+
+.back-to-top.visible {
+  display: flex;
+}
+
+/* Botón "↑ índice" inline al final de cada sección */
+.back-to-toc {
+  display: inline-block;
+  margin: 1.2rem 0 0;
+  padding: 0.3rem 0.8rem;
+  font-size: 0.78rem;
+  background: #fff8ef;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: #214f57;
+  text-decoration: none;
+}
+
+.back-to-toc:hover {
+  background: var(--accent);
+  color: #fff;
+}
+
+/* Detalles colapsables del TOC agrupado */
+.toc-box details {
+  margin-bottom: 0.4rem;
+  padding: 0.2rem 0;
+}
+
+.toc-box details summary {
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.82rem;
+  color: #143036;
+  margin-bottom: 0.25rem;
+  padding: 0.2rem 0;
+  list-style: none;
+}
+
+.toc-box details summary::before {
+  content: "▸ ";
+  display: inline-block;
+  transition: transform 0.15s ease;
+}
+
+.toc-box details[open] summary::before {
+  transform: rotate(90deg);
+}
+
+/* Breadcrumb de capítulo en página de capítulo */
+.chapter-breadcrumb {
+  font-size: 0.8rem;
+  color: #5a7178;
+  margin-bottom: 0.5rem;
+}
+
+.chapter-breadcrumb a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.chapter-breadcrumb a:hover {
+  text-decoration: underline;
+}
+
 .thesis-content {
   background: linear-gradient(180deg, #ffffff, #fffcf7);
   border: 1px solid var(--line);

@@ -19,15 +19,20 @@ THESIS_FINAL_MD = ROOT / "TesisFinal" / "Tesis.md"
 VIS_ROOT = ROOT / "visualizations"  # Optional; created on demand if missing
 
 CHAPTER_DIRS = [
-    ("00-proyecto", "Proyecto y arquitectura"),
-    ("01-diagnostico", "Diagnóstico y objeciones"),
-    ("02-fundamentos", "Fundamentos ontológicos"),
-    ("03-formalizacion", "Aparato formal y método"),
-    ("04-debates", "Debates con rivales"),
-    ("05-aplicaciones", "Aplicaciones y caso ancla"),
-    ("06-cierre", "Cierre, defensa y hoja de ruta"),
-    ("07-bibliografia", "Bibliografía"),
-    ("08-consistencia-st", "Consistencia ST"),
+    # Cuerpo argumental principal
+    ("00-proyecto", "0 · Proyecto y arquitectura"),
+    ("01-diagnostico", "1 · Diagnóstico y estado del arte"),
+    ("02-fundamentos", "2 · Fundamentos ontológicos y epistemológicos"),
+    ("03-formalizacion", "3 · Aparato formal y método"),
+    ("04-debates", "4 · Debates con rivales y limitaciones"),
+    ("05-aplicaciones", "5 · Aplicaciones y caso ancla"),
+    ("06-cierre", "6 · Cierre, defensa y hoja de ruta"),
+    # Justificación operativa
+    ("09-simulaciones-edi", "9 · Corpus EDI inter-dominio + inter-escala"),
+    # Material complementario al final
+    ("07-bibliografia", "Bibliografía consolidada"),
+    ("Anexos", "Anexos operativos (A.1 a A.12)"),
+    ("08-consistencia-st", "Consistencia ST (validación lógica)"),
 ]
 
 NIVEL_MAP = {
