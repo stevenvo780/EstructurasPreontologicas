@@ -158,10 +158,10 @@ categoría está flotando y debe reformularse.]
 ## Casos completos disponibles en el repositorio
 
 - **04 Energía:** dossier en `09-simulaciones-edi/04_caso_energia/` (overall_pass=True)
-- **16 Deforestación:** dossier en `09-simulaciones-edi/16_caso_deforestacion/` (overall_pass=True, reproducido en sesión 2026-04-27)
+- **16 Deforestación:** dossier en `09-simulaciones-edi/16_caso_deforestacion/` (overall_pass=True, reproducibilidad verificada con World Bank en vivo)
 - **20 Kessler:** dossier en `09-simulaciones-edi/20_caso_kessler/` (overall_pass=True)
 - **27 Riesgo Biológico:** dossier en `09-simulaciones-edi/27_caso_riesgo_biologico/` (overall_pass=True)
-- **30 Behavioral Dynamics:** dossier en `09-simulaciones-edi/30_caso_behavioral_dynamics/` (Nivel 3 weak, sesión 2026-04-27)
+- **30 Behavioral Dynamics:** dossier en `09-simulaciones-edi/30_caso_behavioral_dynamics/` (Nivel 3 weak, sonda `behavioral_attractor` segundo orden)
 
 Cada uno tiene:
 - `case_config.json` con parámetros y dates

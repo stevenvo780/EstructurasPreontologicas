@@ -2,7 +2,7 @@
 
 ## Función de este capítulo
 
-Bibliografía nuclear consolidada del manuscrito doctoral *Estructuras Pre-Ontológicas: Realismo Irrealista Operativo y Compresión Multiescala con Validación EDI Multidominio*. Integra las 49 fuentes nucleares de la iteración Jacob (2026-02) con el corpus de filosofía de la mente y dinámica conductual añadido por la iteración Steven (2026-04). Total: 76 referencias formales en estilo Chicago author-date más mapa de fuentes de datos.
+Bibliografía nuclear consolidada del manuscrito doctoral *Estructuras Pre-Ontológicas: Realismo Irrealista Operativo y Compresión Multiescala con Validación EDI Multidominio*. 90 referencias formales organizadas en doce secciones temáticas en estilo Chicago author-date, más mapa de fuentes de datos por caso del corpus.
 
 ## Asignación de interlocutores por capítulo
 

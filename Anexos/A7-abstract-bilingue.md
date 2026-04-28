@@ -43,7 +43,7 @@ The main outcome is not a binary validation score but a **discriminative map of 
 **Co-autoría IA:** Anthropic Claude (Opus 4.7) declarada como instrumento de implementación bajo dirección humana.
 **Filiación institucional:** Universidad de Antioquia, Medellín, Colombia.
 **Campo:** Filosofía de la Ciencia y Ciencias de la Complejidad.
-**Versión consolidada:** 2026-04-27 (integración de iteraciones *TesisJacobContenidos* 2026-02 y *EstructurasPreontologicas* 2026-04).
+**Versión:** 2026-04-27.
 
 ---
 

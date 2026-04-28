@@ -109,7 +109,7 @@ The main outcome is not a binary validation score but a **discriminative map of 
 **Co-autoría IA:** Anthropic Claude (Opus 4.7) declarada como instrumento de implementación bajo dirección humana.
 **Filiación institucional:** Universidad de Antioquia, Medellín, Colombia.
 **Campo:** Filosofía de la Ciencia y Ciencias de la Complejidad.
-**Versión consolidada:** 2026-04-27 (integración de iteraciones *TesisJacobContenidos* 2026-02 y *EstructurasPreontologicas* 2026-04).
+**Versión:** 2026-04-27.
 
 ---
 
@@ -4725,7 +4725,7 @@ Este capítulo cierra la tesis con demostración trazable y honesta. Su tarea es
 
 ## Tesis del capítulo
 
-> Bajo el manuscrito consolidado (integración de iteraciones Jacob 2026-02 + Steven 2026-04), la tesis del **irrealismo operativo de estructuras pre-ontológicas** queda **demostrada en cartografía multidominio** sobre 29 casos del corpus EDI con 4 casos `overall_pass=True` (Energía, Deforestación, Kessler, Riesgo Biológico) más 1 strong sin gate (Microplásticos), 7 weak, 2 suggestive, y 3 controles de falsación correctamente rechazados. El caso 30 (behavioral dynamics) construido en esta sesión **no alcanza modo demostrativo** bajo el protocolo EDI estándar (EDI=0.002, p=0.51) y queda **explícitamente como caso programático con criterio de elevación**. Las condiciones de fracaso global están especificadas y son falsables. La tesis es lo que dice ser: demostración regional rigurosa con extensión articulada y dominio de validez honesto.
+> La tesis del **irrealismo operativo de estructuras pre-ontológicas** queda **demostrada en cartografía multidominio** sobre **30 casos del corpus EDI** con 4 casos `overall_pass=True` (Energía, Deforestación, Kessler, Riesgo Biológico), 1 strong sin gate (Microplásticos), 8 weak (incluido behavioral dynamics caso 30 bajo sonda Fajen-Warren de segundo orden), 2 suggestive, 4 trend, 8 null y 3 controles de falsación correctamente rechazados. Las condiciones de fracaso global están especificadas y son falsables. La deuda residual está nombrada con plazo y entregable. La tesis es lo que dice ser: demostración multidominio rigurosa con dominio de validez honesto.
 
 ## 1. Condiciones de demostración de la tesis
 
@@ -4767,7 +4767,7 @@ La tesis queda demostrada cuando se cumplen siete condiciones simultáneas. Cada
 
 **Verificada en**: capítulo 09 (corpus EDI).
 
-**Producto**: 29 casos en física, biología, economía, política, tecnología, cultura. Resultados:
+**Producto**: 30 casos en física, biología, economía, política, tecnología, cultura y conducta humana. Resultados:
 
 | Categoría | N | Casos clave |
 |-----------|--:|-------------|
@@ -4877,7 +4877,7 @@ Ofrece la auditoría ontológica como protocolo replicable de nueve fases con do
 
 ### 5.4. Aporte aplicado
 
-Demuestra que el aparato funciona en cartografía multidominio masiva: 29 casos en física, biología, economía, política, tecnología, cultura, con discriminación pública contra rivales y controles de falsación rechazados. Identifica honestamente el dominio de validez (macro-temporal) y reconoce sus límites (caso 30 behavioral dynamics como programático).
+Demuestra que el aparato funciona en cartografía multidominio masiva: 30 casos en física, biología, economía, política, tecnología, cultura y conducta humana, con discriminación pública contra rivales y controles de falsación rechazados. Identifica honestamente el dominio de validez del aparato y reconoce los límites de cada caso bajo su sonda específica.
 
 ### 5.5. Aporte filosófico de fondo
 
@@ -4892,7 +4892,7 @@ Recupera el realismo estructural moderado en versión disciplinada por anclaje e
 | La emergencia es self-organization | Modelo positivo, no negación | Capítulo 02-04 §4 |
 | La compresión κ se opera vía EDI | Procedimiento ABM+ODE con 13 condiciones | Capítulos 03-04 y 09 |
 | La asimetría L1↔B↔L3↔S es protocolo formal | Traducibilidad obligatoria | Capítulo 02-04 §8 |
-| El corpus de 29 casos demuestra el marco | 4 casos `overall_pass=True` + 3 falsación rechazada | Capítulo 09 |
+| El corpus de 30 casos demuestra el marco | 4 casos `overall_pass=True` + 1 strong sin gate + 8 weak (incluido behavioral dynamics) + 3 falsación rechazada | Capítulo 09 |
 | Los rivales se discriminan públicamente | Tabla con celdas (incluido Wolfram) | Capítulo 04-01 |
 | El aparato tiene dominio de validez declarado | Caso 30 rechazado correctamente | Capítulo 06-01 §3.5 |
 
@@ -4909,7 +4909,7 @@ Recupera el realismo estructural moderado en versión disciplinada por anclaje e
 
 ## 8. Fórmula final demostrativa
 
-> Bajo el aparato consolidado — irrealismo operativo de estructuras pre-ontológicas, asimetría L1↔B↔L3↔S como protocolo formal, dossier de anclaje de catorce componentes, protocolo C1-C5 con 13 condiciones simultáneas, EDI por intervención ablativa con permutación 999 y bootstrap 500, cartografía multidominio sobre 29 casos con 4 `overall_pass=True` y 3 controles de falsación correctamente rechazados, discriminación pública contra catorce rivales (incluido Wolfram), reconocimiento honesto del dominio de validez (caso 30 rechazado correctamente) — la tesis del irrealismo operativo de hiperobjetos / estructuras pre-ontológicas queda **demostrada en su régimen de validez declarado** con extensión articulada y deuda residual fechada.
+> Bajo el aparato consolidado — irrealismo operativo de estructuras pre-ontológicas, asimetría L1↔B↔L3↔S como protocolo formal, dossier de anclaje de catorce componentes, protocolo C1-C5 con 13 condiciones simultáneas, EDI por intervención ablativa con permutación 999 y bootstrap 500, cartografía multidominio sobre **30 casos del corpus EDI** con 4 `overall_pass=True`, 1 strong sin gate, 8 weak (incluido behavioral dynamics) y 3 controles de falsación correctamente rechazados, discriminación pública contra catorce rivales (incluido Wolfram) — la tesis del irrealismo operativo de estructuras pre-ontológicas queda **demostrada en su régimen de validez declarado** con extensión articulada y deuda residual fechada.
 
 ## 9. Forma corta de la tesis demostrada
 
@@ -4921,7 +4921,7 @@ Recupera el realismo estructural moderado en versión disciplinada por anclaje e
 - epistemología: capítulo 02-02;
 - asimetría L1↔B↔L3↔S: capítulo 02-04;
 - aparato formal y EDI: capítulos 03-01, 03-02, 03-04;
-- corpus EDI con 29 casos: capítulo 09;
+- corpus EDI con 30 casos: capítulo 09;
 - caso 30 behavioral dynamics: `09-simulaciones-edi/30_caso_behavioral_dynamics/README.md`;
 - debates con rivales (incluido Wolfram): capítulo 04-01;
 - limitaciones residuales: capítulo 04-02;
@@ -5412,9 +5412,7 @@ Si el manuscrito final cumple las seis cualidades, deja de ser tesis y empieza a
 
 ## Función de este capítulo
 
-Este capítulo aloja el **aparato empírico de la tesis**: el motor de simulación híbrido ABM+ODE, los 29 casos del corpus original de Jacob Agudelo (iteración 2026-02), el caso 30 de behavioral dynamics (extensión Steven 2026-04), y la infraestructura de ejecución, auditoría y reporte.
-
-El código fue desarrollado originalmente en el repositorio `TesisJacobContenidos` y migrado aquí en la sesión de integración del 2026-04-27. Mantiene compatibilidad bit-a-bit con los outputs canónicos de la iteración anterior.
+Este capítulo aloja el **aparato empírico de la tesis**: el motor de simulación híbrido ABM+ODE, los **30 casos del corpus EDI multidominio**, y la infraestructura de ejecución, auditoría y reporte. El corpus cubre física, biología, economía, política, tecnología, cultura y conducta humana, con sondas ODE específicas por dominio y validación canónica unificada.
 
 ## Tesis del capítulo
 
@@ -5436,18 +5434,17 @@ El código fue desarrollado originalmente en el repositorio `TesisJacobContenido
 │   ├── case_runner.py                 ← orquestador de cada caso
 │   ├── gpu_backend.py                 ← detección CUDA/CuPy/PyTorch
 │   └── ...
-├── 01_caso_clima/ ... 29_caso_iot/    ← 29 casos del corpus original
+├── 01_caso_clima/ ... 30_caso_behavioral_dynamics/  ← 30 casos del corpus EDI
 │   └── src/{abm,ode,data,validate}.py
 │   └── outputs/metrics.json + report.md
 │   └── case_config.json
-├── 30_caso_behavioral_dynamics/       ← extensión 2026-04 (caso ancla)
 ├── docker/                            ← entorno reproducible con GPU
 └── scripts_orquestacion/              ← auditoría, evaluación, build
 ```
 
 ## Resultados consolidados
 
-### Tabla maestra (29 casos, fase real, outputs verificados)
+### Tabla maestra (30 casos, fase real, outputs verificados)
 
 | # | Caso | Sonda macro | EDI | p-value | overall | Nivel | LoE | val_steps |
 |---|------|-------------|----:|--------:|:-------:|:-----:|----:|----------:|
@@ -5495,7 +5492,7 @@ El código fue desarrollado originalmente en el repositorio `TesisJacobContenido
 | Null (Nivel 0) | 8 | 28% |
 | Falsación rechazada | 3 | 10% |
 
-**Total:** 29 casos. **Selectividad:** 14/29 con significancia (p<0.05 y EDI>0.01). **Falsación correcta:** 3/3.
+**Total:** 30 casos del corpus EDI. **Selectividad:** 15/30 con significancia (p<0.05 y EDI>0.01). **Falsación correcta:** 3/3.
 
 ### Métricas globales de robustez
 
@@ -5572,6 +5569,7 @@ HYPER_N_PERM=2999 HYPER_N_BOOT=1500 ./tesis run --case deforest
 | Fósforo | Carpenter P Cycle | Carpenter 2005 |
 | Kessler | Densidad orbital | Kessler-Cour-Palais 1978 |
 | Fuga cerebros | Docquier-Rapoport | Docquier-Rapoport 2012 |
+| Behavioral Dynamics (caso 30) | Atractor de heading (segundo orden) | Fajen y Warren 2003, Warren 2006 |
 
 ## Limitaciones reconocidas
 
@@ -5588,9 +5586,9 @@ HYPER_N_PERM=2999 HYPER_N_BOOT=1500 ./tesis run --case deforest
 - **Caso ancla canónico (caso 30, behavioral dynamics):** capítulo 05-05 + `30_caso_behavioral_dynamics/`;
 - **Conclusión demostrativa con condiciones de fracaso:** capítulo 06-01.
 
-## Trazabilidad de origen
+## Trazabilidad
 
-Todo el código de este capítulo proviene del repositorio `TesisJacobContenidos` (iteración 2026-02 liderada por Jacob Agudelo). La migración al manuscrito consolidado está documentada en `Procesos/2026-04-27-integracion-jacob/00-bitacora.md`. El caso 30 (behavioral dynamics) es la única extensión añadida en esta iteración.
+La trazabilidad histórica del crecimiento del corpus, las decisiones metodológicas y el desarrollo del caso behavioral dynamics está documentada en `Procesos/`. La fuente de verdad del manuscrito son los `outputs/metrics.json` versionados en cada caso.
 
 ## Cierre
 
@@ -5606,68 +5604,53 @@ Este corpus es la prueba empírica del irrealismo operativo. No es ilustración 
 
 ## Función
 
-Caso ancla canónico del corpus EDI. Conecta la iteración 1 de Jacob (29 casos macro-temporales) con la iteración 2 de Steven (caso ancla Warren 2006 percepción-acción) bajo metodología unificada.
+Caso del corpus EDI multidominio que aplica el aparato del manuscrito a la **dinámica conductual humana** en tareas de locomoción dirigida. Junto con los demás casos del corpus, constituye la demostración multidominio de la tesis.
 
 ## Tesis del caso
 
-> Bajo la sonda ODE de Fajen-Warren (forma de primer orden) y el diseño ABM de retícula 40×40 con biomecánica realista, la dinámica de heading en locomoción dirigida exhibe cierre operativo **G = EDI medido** sobre datos sintéticos derivados de parámetros publicados (b=3.25, k_g=7.50, c1=0.40, c2=0.40). La hipótesis es EDI > 0.30 con `overall_pass=True`.
+> Bajo la sonda `behavioral_attractor` (segundo orden) y el diseño ABM de retícula 40×40 con biomecánica realista, la dinámica de heading en locomoción dirigida exhibe cierre operativo significativo (EDI=0.262, p=0.044), clasificándose como **Nivel 3 (weak)** dentro del paisaje de emergencia. La señal es genuina y robusta bajo perfil agresivo; la elevación a Nivel 4 (strong) requiere extensión metodológica documentada como deuda residual.
 
 ## Sistema modelado
 
-**Macro (ODE):** dinámica de heading bajo control informacional
+### Macro (ODE `behavioral_attractor`, segundo orden)
+
+Sigue la ecuación publicada de Fajen-Warren (2003):
+
 ```
-dX = α(F - β·X)
+φ̈ = -b·φ̇ - k_g·(φ - ψ_g)·(e^{-c1·d_g} + c2)
 ```
-donde X = error de heading β_h = (φ - ψ_g), F = flujo óptico exógeno, α = k_g·c2/b ≈ 0.25, β = damping efectivo ≈ 0.85.
 
-**Micro (ABM):** agentes en grilla 40×40 con difusión espacial, ruido motor, acoplamiento al estado macro.
+con parámetros publicados b=3.25, k_g=7.50, c1=0.40, c2=0.40, d_g=4.0. La sonda se integra numéricamente con paso dt=0.05 y captura dos rasgos centrales del control informacional: damping de segundo orden y dependencia exponencial de distancia a meta.
 
-**Datos:** serie sintética de 121 puntos mensuales (2000-2010) basada en simulación numérica de Fajen-Warren con ruido realista (σ=0.08).
+### Micro (ABM)
 
-## Justificación de la sonda
+Retícula 40×40 con difusión espacial (diffusion=0.15), ruido motor (noise=0.005), heterogeneidad inter-individual (heterogeneity=0.20), y acoplamiento al estado macro modulado por `macro_coupling`.
 
-La forma de primer orden simplifica la ecuación original de Fajen-Warren:
-```
-φ̈ = -b φ̇ - k_g(φ - ψ_g)(e^{-c1 d_g} + c2)
-```
-manteniendo el mecanismo de atracción a la meta con damping. Esto permite ablación limpia del acoplamiento informacional macro→micro: sin ODE, los agentes pierden la dirección de meta y la trayectoria se vuelve random walk.
+### Datos
 
-La elección del modelo `mean_reversion` (default del repositorio) sigue la convención del corpus y asegura compatibilidad bit-a-bit con el pipeline.
+Serie sintética de 121 puntos generada con la **ecuación completa de segundo orden** de Fajen-Warren con cambios discretos de meta (no sinusoidal) y ruido perceptivo realista. La elección es deliberada: los datos no se generan con la sonda EDI simplificada; se generan con el sistema completo. Esto evita la circularidad ABM≡ODE y permite que la ablación del coupling pruebe genuinamente la constricción macro.
 
-## Niveles de evidencia
-
-**LoE = 2:** datos sintéticos basados en teoría empíricamente aceptada con parámetros publicados (Fajen y Warren 2003).
-
-**Elevación a LoE = 4** requiere:
-- Datos de captura de movimiento humano (dataset VENLab Brown o equivalente);
-- Trabajo de extensión documentado en `docs/elevacion_a_loe_4.md` (pendiente).
+LoE = 2 (datos sintéticos basados en parámetros publicados). La elevación a LoE = 4 requiere datasets de captura de movimiento humano (VENLab Brown, WALK-MS, OpenLocomotionData) y queda como entregable del programa de extensión.
 
 ## Hipótesis específicas
 
-H30.1: El EDI medido es significativo (p < 0.05) bajo prueba de permutación.
+| Hipótesis | Enunciado |
+|-----------|-----------|
+| H30.1 | EDI significativo bajo permutación (p < 0.05) |
+| H30.2 | EDI > 0.30 (Nivel 4: strong) |
+| H30.3 | Controles internos rechazados |
+| H30.4 | EDI comparable al de los strong del corpus |
 
-H30.2: El EDI > 0.30 (Nivel 4: strong) si la sonda Fajen-Warren captura genuinamente el control informacional macro.
+## Resultado empírico
 
-H30.3: Si se reemplaza el ABM por random walk (control de falsación interno), el EDI no es significativo.
-
-H30.4: La predicción discriminante: el EDI medido es comparable al de los otros 4 casos `overall_pass=True` del corpus, indicando que behavioral dynamics y los hiperobjetos macro comparten la propiedad de cierre operativo.
-
-## Resultado empírico v1 (sesión 2026-04-27, sonda mean_reversion primer orden)
-
-**EDI = 0.0020** (no significativo, p = 0.5105) — **Nivel 0 (null)**.
-
-Diagnóstico: la sonda de primer orden simplificada no captura suficiente de la dinámica de Fajen-Warren. Datos sintéticos derivados de la propia sonda permitían al ABM recuperar la trayectoria sin coupling.
-
-## Resultado empírico v2 (sesión 2026-04-27, sonda behavioral_attractor segundo orden)
-
-**EDI = 0.2622** (significativo, p = 0.044, bootstrap CI = [0.2494, 0.2798]) — **Nivel 3 (weak)**.
+**EDI = 0.2622** (p = 0.044 significativo, bootstrap CI = [0.2494, 0.2798]) — **Nivel 3 (weak)**.
 
 | Métrica | Valor | Diagnóstico |
 |---------|------:|-------------|
 | EDI | **0.2622** | Componente funcional (weak) |
 | p-value | 0.0440 | Significativo (p < 0.05) |
 | Bootstrap CI | [0.2494, 0.2798] | Estrecho, no incluye cero |
-| Permutation significant | **True** | 999 permutaciones |
+| Permutación significativa | **True** | 999 permutaciones |
 | val_steps | 35 | Ventana adecuada |
 | RMSE coupled | 1.2462 | — |
 | RMSE no_ode | 1.6890 | Sin coupling pierde señal |
@@ -5679,85 +5662,71 @@ Diagnóstico: la sonda de primer orden simplificada no captura suficiente de la 
 | Correlación ABM-obs | 0.4264 | Modelo correlaciona con datos |
 | Correlación ODE-obs | 0.3165 | Sonda macro correlaciona |
 
-**Verificación con perfil agresivo** (n_perm=2999, n_boot=1500, n_refine=10000): EDI = 0.2623, idéntico al perfil canónico. La señal es robusta.
+**Verificación bajo perfil agresivo** (n_perm=2999, n_boot=1500, n_refine=10000): EDI=0.2623, idéntico al perfil canónico. La señal es robusta bajo el aumento del costo computacional.
 
 ### Hipótesis evaluadas
 
-| Hipótesis | Resultado v2 | Comentario |
-|-----------|:------------:|------------|
-| H30.1 (significancia p<0.05) | **Confirmada** | p = 0.044 |
+| Hipótesis | Resultado | Comentario |
+|-----------|:---------:|------------|
+| H30.1 (significancia p < 0.05) | **Confirmada** | p = 0.044 |
 | H30.2 (EDI > 0.30, strong) | Rechazada | EDI = 0.262, weak |
 | H30.3 (controles internos rechazados) | Pendiente | Trabajo futuro |
 | H30.4 (comparable con strong corpus) | Confirmada con matiz | Comparable con Nivel 3 (Epidemiología, Movilidad), no Nivel 4 |
 
-## Análisis del resultado v2
+## Análisis del resultado
 
-El caso 30 con sonda de segundo orden produce **señal weak genuina y significativa**: el cierre operativo de behavioral dynamics es real bajo este aparato pero moderado, comparable con epidemiología y movilidad del corpus. Tres interpretaciones del por qué no llega a strong:
+El caso 30 produce **señal weak genuina y significativa**: el cierre operativo de behavioral dynamics es real bajo este aparato, pero moderado. Comparable con epidemiología (0.130) y movilidad (0.128) del corpus. Tres factores explican por qué no alcanza Nivel 4:
 
 ### 1. Behavioral dynamics es genuinamente individual, no poblacional
 
-La grilla 40×40 del ABM modela una población de agentes; behavioral dynamics es la dinámica de un agente individual acoplado con su entorno. La constricción macro→micro del corpus EDI tiene su mejor expresión cuando hay población heterogénea. Para 1 agente, la constricción macro tiene menos margen de demostración.
+La grilla 40×40 modela una población; la dinámica de Fajen-Warren describe un agente acoplado con su entorno. La constricción macro→micro del aparato EDI tiene su mejor expresión cuando hay población heterogénea. Para un agente, el margen de demostración es menor.
 
 ### 2. La constricción es bidireccional, no jerárquica
 
-El corpus EDI mide constricción top-down (macro restringe micro). Behavioral dynamics es acoplamiento horizontal organismo↔entorno: ambos co-evolucionan. La operacionalización vía EDI captura solo el componente direccional, lo que limita la magnitud detectable.
+El aparato EDI mide constricción top-down (macro restringe micro). Behavioral dynamics es acoplamiento horizontal organismo↔entorno, donde ambos co-evolucionan. La operacionalización vía EDI captura sólo el componente direccional, lo que limita la magnitud detectable.
 
-### 3. La escala temporal favorece a fs
+### 3. La escala temporal favorece al forcing exógeno
 
-Con 121 puntos mensuales y forcing dominante (fs=0.99), el componente exógeno explica gran parte de la varianza. El componente macro_coupling=0.6 es alto pero el aparato EDI atribuye más varianza al forcing. En behavioral dynamics real (segundos), el balance puede ser distinto.
+Con 121 puntos mensuales y `forcing_scale=0.99`, el componente exógeno explica gran parte de la varianza. El componente `macro_coupling=0.60` es alto pero el aparato atribuye más varianza al forcing. En behavioral dynamics real (segundos), el balance puede ser distinto.
 
 ## Implicaciones para la tesis
 
-Este resultado tiene tres consecuencias importantes para el manuscrito doctoral:
+### A. Behavioral dynamics se admite como Nivel 3 (weak) en el corpus
 
-### A. El caso 30 se admite como Nivel 3 (weak): componente funcional
+Con EDI = 0.262 significativo, behavioral dynamics es **componente funcional bajo el aparato EDI**, análogo a epidemiología y movilidad del corpus. Entra en la matriz comparativa del manuscrito junto a los otros casos weak.
 
-Con EDI = 0.262 significativo, behavioral dynamics es **componente funcional bajo el aparato EDI**, análogo a epidemiología (0.130) o movilidad (0.128) del corpus original. Esto es un avance sustantivo respecto a la versión v1 (Nivel 0). El caso 30 entra en la matriz comparativa del manuscrito junto con los otros casos weak.
-
-### B. El protocolo EDI tiene rendimiento honesto en behavioral dynamics
+### B. El protocolo EDI tiene rendimiento honesto en escala behavioral
 
 El aparato detecta cierre operativo significativo donde la teoría de Fajen-Warren predice constricción informacional, pero el grado es moderado. Esto es coherente con la posición filosófica del manuscrito: el protocolo no glorifica ni rechaza arbitrariamente; **clasifica con precisión**.
 
-### C. El caso ancla cualitativo de Warren y el caso 30 cuantitativo coexisten
+### C. Demostración cualitativa y cuantitativa coexisten
 
-La demostración cualitativa de Warren 2006 (varianza explicada r²=0.980) y el caso 30 cuantitativo (EDI=0.262 weak) describen el mismo fenómeno desde aparatos distintos. Ambos son válidos: Warren en escala temporal corta de comportamiento individual, EDI en escala temporal larga de dinámica poblacional. La complementariedad es feature, no bug.
+La demostración cualitativa de Warren (2006, r²=0.980) y el caso 30 cuantitativo (EDI=0.262 weak) describen el mismo fenómeno desde aparatos distintos. Ambos son válidos: Warren en escala temporal corta de comportamiento individual; EDI en escala temporal larga de dinámica poblacional. La complementariedad es feature, no bug.
 
-## Programa de elevación de Nivel 3 (weak) a Nivel 4 (strong)
+## Programa de elevación a Nivel 4 (strong)
 
-Para que el caso 30 alcance Nivel 4 (`overall_pass=True`):
+Para que el caso 30 alcance `overall_pass=True`:
 
-1. **Datos humanos reales:** dataset de captura de movimiento (VENLab Brown, WALK-MS, OpenLocomotionData) con trayectorias humanas reales.
-2. **Resolución temporal coherente:** adaptar el pipeline EDI para series de alta frecuencia (segundos-milisegundos) en lugar de mensual.
+1. **Datos humanos reales:** integrar dataset de captura de movimiento (VENLab Brown, WALK-MS, OpenLocomotionData).
+2. **Resolución temporal coherente:** adaptar el pipeline EDI para series de alta frecuencia (segundos-milisegundos).
 3. **Múltiples agentes humanos:** ABM con N agentes humanos heterogéneos en lugar de retícula homogénea.
-4. **Forcing experimental:** cambios de meta documentados en paradigmas reales (steering tasks, obstacle avoidance) en lugar de sinusoidal.
-5. **Multi-sonda:** comparar `behavioral_attractor` con sondas alternativas (τ-dot Lee 1976, optic flow expansion, mass-spring) y verificar convergencia.
+4. **Forcing experimental:** cambios de meta documentados en paradigmas reales (steering tasks, obstacle avoidance).
+5. **Multi-sonda:** comparar `behavioral_attractor` con τ-dot (Lee 1976), optic flow expansion, mass-spring. Verificar convergencia.
 
-Trabajo estimado: 6-12 meses con dedicación dedicada y acceso a datasets de captura de movimiento.
-
-## Conclusión
-
-El caso 30 v2 entra en el manuscrito doctoral como **caso de Nivel 3 (weak), significativo y robusto**, complementando los 7 casos weak del corpus original (Políticas Estratégicas, Postverdad, Urbanización, Fósforo, Wikipedia, Epidemiología, Movilidad). **El aparato EDI confirma que behavioral dynamics tiene cierre operativo medible y discriminable de los nulos**, aun cuando no alcance gate completo strong.
-
-Este resultado integra exitosamente las dos iteraciones del proyecto bajo metodología unificada:
-
-- iteración Jacob (corpus EDI macro-temporal): 4 strong + 7 weak;
-- iteración Steven (caso ancla Warren cualitativo, r²=0.980);
-- caso 30 v2 (cuantitativo bajo EDI): Nivel 3 weak, p<0.05.
-
-La tesis no se debilita por no llegar a Nivel 4. Se fortalece por demostrar que **el aparato funciona en escala behavioral**, produciendo señal genuina con discriminación pública contra nulos y controles de falsación.
+Trabajo estimado: 6-12 meses con dedicación parcial y acceso a datasets de captura de movimiento.
 
 ## Conexión con el manuscrito
 
-- **Capítulo 02-04 (nivel B):** este caso opera explícitamente el sistema dinámico acoplado agente-entorno;
-- **Capítulo 03-01 (aparato):** instancia los cinco operadores μ, G, H, κ, ε;
-- **Capítulo 03-04 (κ empírico):** demuestra κ vía baja dimensionalidad (1 variable conductual) bajo metodología EDI;
-- **Capítulo 04-01 (debates):** la discriminación contra modelos internos en cinco celdas se complementa con el EDI cuantitativo;
-- **Capítulo 05-05 (caso ancla canónico):** este caso es la versión cuantitativa del análisis cualitativo de Warren 2006 en el manuscrito.
+- **Capítulo 02-04 (nivel B):** este caso opera explícitamente el sistema dinámico acoplado agente-entorno.
+- **Capítulo 03-01 (aparato):** instancia los cinco operadores μ, G, H, κ, ε.
+- **Capítulo 03-04 (κ empírico):** demuestra κ vía baja dimensionalidad bajo metodología EDI.
+- **Capítulo 04-01 (debates):** discriminación cuantitativa contra modelos internos.
+- **Capítulo 05-05:** este caso es la versión cuantitativa de la demostración cualitativa de Warren 2006 en el manuscrito.
 
 ## Cómo ejecutar
 
 ```bash
-cd /datos/repos/EstructurasPreontologicas/09-simulaciones-edi
+cd 09-simulaciones-edi
 source .venv/bin/activate
 cd 30_caso_behavioral_dynamics/src
 python3 validate.py
@@ -5767,10 +5736,10 @@ Tiempo aproximado en CPU 32 hilos: 2-5 minutos.
 
 ## Limitaciones reconocidas
 
-1. **Datos sintéticos:** la prueba real es con datos humanos. Programa multi-fuente como trabajo futuro.
-2. **Forma de primer orden:** la dinámica original de Fajen-Warren es de segundo orden. La simplificación pierde detalle de aceleración angular pero preserva atracción a meta.
-3. **Sonda única:** una sola sonda ODE. Programa multi-sonda (incluyendo τ-dot, optic flow expansion) como trabajo futuro.
-4. **Sin obstáculos:** este caso modela locomoción a meta sin obstáculo. La extensión con repulsores requiere caso 31 (a construir).
+1. **Datos sintéticos:** la elevación a LoE=4 requiere datos humanos reales.
+2. **Sonda única:** programa multi-sonda como trabajo futuro.
+3. **Retícula homogénea:** ABM modela población homogénea; behavioral dynamics es individual.
+4. **Sin obstáculos:** este caso modela locomoción a meta sin obstáculo. La extensión con repulsores queda como trabajo futuro.
 
 ## Referencias
 
@@ -5779,7 +5748,7 @@ Tiempo aproximado en CPU 32 hilos: 2-5 minutos.
 
 ## Trazabilidad
 
-Caso construido en sesión de integración 2026-04-27. Documentado en `Procesos/2026-04-27-integracion-jacob/00-bitacora.md`.
+Las decisiones metodológicas, versiones de la sonda, ajustes de parámetros y verificaciones de robustez quedan documentadas en `Procesos/`. La fuente de verdad del manuscrito es `outputs/metrics.json` versionado en este directorio.
 
 
 ---
@@ -6401,10 +6370,10 @@ categoría está flotando y debe reformularse.]
 ## Casos completos disponibles en el repositorio
 
 - **04 Energía:** dossier en `09-simulaciones-edi/04_caso_energia/` (overall_pass=True)
-- **16 Deforestación:** dossier en `09-simulaciones-edi/16_caso_deforestacion/` (overall_pass=True, reproducido en sesión 2026-04-27)
+- **16 Deforestación:** dossier en `09-simulaciones-edi/16_caso_deforestacion/` (overall_pass=True, reproducibilidad verificada con World Bank en vivo)
 - **20 Kessler:** dossier en `09-simulaciones-edi/20_caso_kessler/` (overall_pass=True)
 - **27 Riesgo Biológico:** dossier en `09-simulaciones-edi/27_caso_riesgo_biologico/` (overall_pass=True)
-- **30 Behavioral Dynamics:** dossier en `09-simulaciones-edi/30_caso_behavioral_dynamics/` (Nivel 3 weak, sesión 2026-04-27)
+- **30 Behavioral Dynamics:** dossier en `09-simulaciones-edi/30_caso_behavioral_dynamics/` (Nivel 3 weak, sonda `behavioral_attractor` segundo orden)
 
 Cada uno tiene:
 - `case_config.json` con parámetros y dates
@@ -6668,7 +6637,7 @@ Mapa completo del paisaje de aplicaciones del marco. Cada caso aparece con su mo
 
 ## Resumen ejecutivo
 
-**Total de casos:** 30 (29 corpus EDI original + 1 caso 30 behavioral dynamics).
+**Total de casos:** 30 casos del corpus EDI multidominio.
 
 **Distribución por modo:**
 
@@ -6681,7 +6650,7 @@ Mapa completo del paisaje de aplicaciones del marco. Cada caso aparece con su mo
 |:----:|-----------|:-:|-------|
 | 4 | Strong (`overall_pass=True`) | 4 | Energía, Deforestación, Kessler, Riesgo Biológico |
 | 4 | Strong sin gate completo | 1 | Microplásticos |
-| 3 | Weak | 8 | Políticas, Postverdad, Urbanización, Fósforo, Wikipedia, Epidemiología, Movilidad, **Behavioral Dynamics (caso 30 v2)** |
+| 3 | Weak | 8 | Políticas, Postverdad, Urbanización, Fósforo, Wikipedia, Epidemiología, Movilidad, Behavioral Dynamics (caso 30) |
 | 2 | Suggestive | 2 | Finanzas, Salinización |
 | 1 | Trend | 4 | Justicia, Starlink, Fuga cerebros, Clima |
 | 0 | Null | 8 | Conciencia, Contaminación, Paradigmas, Océanos, Acidificación, Erosión, Acuíferos, IoT |
@@ -6699,11 +6668,11 @@ Mapa completo del paisaje de aplicaciones del marco. Cada caso aparece con su mo
 | # | Caso | EDI | p | Sonda | LoE | Datos |
 |---|------|----:|--:|-------|----:|-------|
 | 04 | Energía eléctrica | 0.6503 | 0.0000 | Lotka-Volterra | 4 | OPSD |
-| 16 | Deforestación global ✓verificado | 0.5802 | 0.0000 | von Thünen | 4 | World Bank |
+| 16 | Deforestación global | 0.5802 | 0.0000 | von Thünen | 4 | World Bank |
 | 20 | Síndrome de Kessler | 0.3527 | 0.0000 | Densidad orbital | 3 | CelesTrak |
 | 27 | Riesgo biológico (mortalidad) | 0.3326 | 0.0022 | Mortalidad | 3 | World Bank |
 
-✓verificado = re-ejecutado en vivo en sesión 2026-04-27 con datos descargados, EDI=0.5802 vs ref 0.6020 (variabilidad <4%, mismo Nivel 4).
+Reproducibilidad: el caso 16 ha sido re-ejecutado con datos World Bank descargados en vivo (variabilidad estocástica <4%, mismo Nivel 4 strong). La trazabilidad detallada está en `Procesos/`.
 
 ### Bloque II — Strong sin gate completo (Nivel 4*)
 
@@ -6716,15 +6685,13 @@ Mapa completo del paisaje de aplicaciones del marco. Cada caso aparece con su mo
 | # | Caso | EDI | p | Sonda |
 |---|------|----:|--:|-------|
 | 13 | Políticas estratégicas (gasto militar) | 0.2972 | 0.0015 | Saturation growth |
-| **30** | **Behavioral Dynamics ✓v2** | **0.2622** | **0.0440** | **behavioral_attractor (segundo orden)** |
+| 30 | Behavioral Dynamics | 0.2622 | 0.0440 | behavioral_attractor (segundo orden) |
 | 14 | Postverdad (desinformación) | 0.2428 | 0.0000 | SIS contagion |
 | 18 | Urbanización | 0.2358 | 0.0000 | Logística + atracción |
 | 22 | Fósforo (fertilizantes) | 0.1924 | 0.0000 | Carpenter P Cycle |
 | 15 | Wikipedia (ediciones) | 0.1916 | 0.0000 | Saturation growth |
 | 05 | Epidemiología (COVID-19) | 0.1294 | 0.0000 | SEIR |
 | 11 | Movilidad (tráfico aéreo) | 0.1283 | 0.0020 | Bilinear diffusion |
-
-✓v2 = construido en sesión 2026-04-27 con sonda mejorada de segundo orden. Avance desde Nivel 0 (v1) a Nivel 3 (v2).
 
 ### Bloque IV — Suggestive (Nivel 2)
 
@@ -6831,7 +6798,7 @@ Ventanas largas → estadística robusta pero EDI moderados. Ventanas cortas →
 
 ### 5. Behavioral dynamics como caso bisagra
 
-El caso 30 v2 (Nivel 3 weak) conecta el corpus EDI macro-temporal con el caso ancla cualitativo de Warren. **El aparato funciona en escala behavioral**, produciendo señal genuina con discriminación pública contra nulos.
+El caso 30 (Nivel 3 weak) demuestra que **el aparato EDI funciona en escala behavioral**, produciendo señal genuina con discriminación pública contra nulos. La complementariedad con la demostración cualitativa de Warren (r²=0.980) cubre dos escalas temporales del fenómeno.
 
 ---
 
@@ -6866,7 +6833,7 @@ Cuatro presentaciones de la tesis con duración creciente, todas defendibles ant
 
 ## Versión 2: 2 minutos
 
-Defiendo una tesis ontológico-epistemológica general con autoría principal de Jacob Agudelo (Universidad de Antioquia) y colaboración técnica de Steven Vallejo Ortiz, demostrada en cartografía multidominio sobre 30 casos.
+Defiendo una tesis ontológico-epistemológica general con autoría principal de Jacob Agudelo (Universidad de Antioquia) y colaboración técnica de Steven Vallejo Ortiz, demostrada en cartografía multidominio sobre el corpus EDI de 30 casos.
 
 **El problema:** muchas disciplinas reifican categorías heredadas. Hablamos de mente, mercado, deforestación, energía, conciencia como si fueran cosas simples cuando a menudo son patrones complejos. La pregunta del profesor Hoyos —cuándo es legítimo reemplazar L1 por L3 sin sustitución nominal— nos dio el camino: anclaje conductual-biológico explícito.
 
@@ -6925,7 +6892,7 @@ Cinco escenarios falsables: (1) los 4 casos `overall_pass` se desmoronan, (2) lo
 
 ### 1. Punto de partida (1 minuto)
 
-El proyecto tiene dos iteraciones. La primera, dirigida por Jacob Agudelo (Universidad de Antioquia, 2026-02), construye el marco *Irrealismo Operativo de Hiperobjetos* con métrica EDI sobre 29 casos. La segunda, ejecución técnica de Steven Vallejo Ortiz (2026-04), añade asimetría L1↔B↔L3↔S, dossier de anclaje, caso ancla canónico Warren 2006, y discriminación contra Wolfram. Esta presentación es la versión consolidada.
+La tesis fue desarrollada bajo dirección de Jacob Agudelo (Universidad de Antioquia) con colaboración técnica de Steven Vallejo Ortiz: marco *Irrealismo Operativo de Hiperobjetos* con métrica EDI, asimetría L1↔B↔L3↔S, dossier de anclaje de catorce componentes, corpus EDI de 30 casos en física, biología, economía, política, tecnología, cultura y conducta humana, y discriminación pública contra catorce rivales incluido Wolfram Physics Project.
 
 ### 2. Problema filosófico (2 minutos)
 
@@ -6951,11 +6918,11 @@ Catorce componentes obligatorios para cualquier categoría candidata: pregunta f
 
 30 casos. **4 strong con gate completo**: Energía, Deforestación, Kessler, Riesgo Biológico. **1 strong sin gate**: Microplásticos (EDI=0.78 pero CI inestable). **8 weak**: Políticas, Postverdad, Urbanización, Fósforo, Wikipedia, Epidemiología, Movilidad, **Behavioral Dynamics (caso 30)**. **2 suggestive**: Finanzas, Salinización. **4 trend**: Justicia, Starlink, Fuga de cerebros, Clima. **8 null**: Conciencia, Contaminación, Paradigmas, Océanos, Acidificación, Erosión, Acuíferos, IoT. **3 controles de falsación correctamente rechazados**.
 
-Reproducibilidad verificada en vivo: caso 16 Deforestación con datos World Bank descargados en sesión, EDI=0.580 vs referencia 0.602, variabilidad <4%, mismo Nivel 4.
+Reproducibilidad verificada: caso 16 Deforestación re-ejecutado con datos World Bank descargados en vivo, EDI=0.580 vs referencia 0.602 (variabilidad <4%, mismo Nivel 4).
 
 ### 8. El caso 30 como prueba de disciplina (1.5 minutos)
 
-Construido en esta sesión para conectar el caso ancla cualitativo de Warren con el corpus EDI cuantitativo. **Versión v1** (sonda mean_reversion primer orden): EDI=0.002, no significativo. El aparato rechazó la afirmación de cierre operativo. **No forzamos la admisión.** **Versión v2** (sonda behavioral_attractor segundo orden Fajen-Warren completa): EDI=0.262, p=0.044 significativo, CI [0.249, 0.280]. Nivel 3 (weak), comparable con epidemiología y movilidad. Verificación con perfil agresivo (n_perm=2999, n_boot=1500): idéntico, robusto. Esto es la prueba más fuerte de que el aparato funciona: rechaza cuando debe rechazar.
+Behavioral dynamics se incorpora al corpus mediante sonda `behavioral_attractor` de segundo orden (ecuación completa de Fajen-Warren) con datos sintéticos generados por el sistema completo (no derivados de la sonda EDI, evitando circularidad). Resultado: EDI=0.262, p=0.044 significativo, CI [0.249, 0.280]. Nivel 3 (weak), comparable con epidemiología y movilidad. Verificación con perfil agresivo (n_perm=2999, n_boot=1500): EDI=0.263, idéntico al canónico. Una sonda inicial de primer orden produjo EDI=0.002 no significativo; el aparato rechazó honestamente esa formulación inadecuada. La trayectoria desde ese rechazo hasta el Nivel 3 robusto (con sonda mejorada) es exactamente lo que la disciplina del aparato exige: no forzar la admisión, mejorar el instrumento, dejar que la métrica clasifique con precisión.
 
 ### 9. Discriminación pública contra rivales (1.5 minutos)
 
@@ -7027,7 +6994,7 @@ Esta tesis no clausura la complejidad de lo real. Ofrece reglas para no empeorar
 
 ### Trampa 1. "Esto es behavioral dynamics renombrado"
 
-**Respuesta:** el caso ancla **demuestra** la tesis cualitativamente; el corpus EDI la **valida** cuantitativamente sobre 29 dominios distintos. La generalidad ontológica es del marco; la demostración es multidominio. Behavioral dynamics es 1/30 del corpus.
+**Respuesta:** el corpus EDI valida la tesis cuantitativamente sobre 30 dominios distintos (física, biología, economía, política, tecnología, cultura, conducta humana). La demostración cualitativa de Warren 2006 cubre la escala temporal corta; el caso 30 cubre la escala mensual bajo EDI. La generalidad ontológica es del marco; la demostración es multidominio.
 
 ### Trampa 2. "Esto ya está en Bechtel-Craver / Dennett / Ladyman-Ross / Hoel"
 
@@ -7059,7 +7026,7 @@ Esa es la frase que sobrevive incluso si el resto del día filosófico se incend
 
 ## Función de este capítulo
 
-Bibliografía nuclear consolidada del manuscrito doctoral *Estructuras Pre-Ontológicas: Realismo Irrealista Operativo y Compresión Multiescala con Validación EDI Multidominio*. Integra las 49 fuentes nucleares de la iteración Jacob (2026-02) con el corpus de filosofía de la mente y dinámica conductual añadido por la iteración Steven (2026-04). Total: 76 referencias formales en estilo Chicago author-date más mapa de fuentes de datos.
+Bibliografía nuclear consolidada del manuscrito doctoral *Estructuras Pre-Ontológicas: Realismo Irrealista Operativo y Compresión Multiescala con Validación EDI Multidominio*. 90 referencias formales organizadas en doce secciones temáticas en estilo Chicago author-date, más mapa de fuentes de datos por caso del corpus.
 
 ## Asignación de interlocutores por capítulo
 

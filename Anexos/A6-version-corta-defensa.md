@@ -14,7 +14,7 @@ Cuatro presentaciones de la tesis con duración creciente, todas defendibles ant
 
 ## Versión 2: 2 minutos
 
-Defiendo una tesis ontológico-epistemológica general con autoría principal de Jacob Agudelo (Universidad de Antioquia) y colaboración técnica de Steven Vallejo Ortiz, demostrada en cartografía multidominio sobre 30 casos.
+Defiendo una tesis ontológico-epistemológica general con autoría principal de Jacob Agudelo (Universidad de Antioquia) y colaboración técnica de Steven Vallejo Ortiz, demostrada en cartografía multidominio sobre el corpus EDI de 30 casos.
 
 **El problema:** muchas disciplinas reifican categorías heredadas. Hablamos de mente, mercado, deforestación, energía, conciencia como si fueran cosas simples cuando a menudo son patrones complejos. La pregunta del profesor Hoyos —cuándo es legítimo reemplazar L1 por L3 sin sustitución nominal— nos dio el camino: anclaje conductual-biológico explícito.
 
@@ -73,7 +73,7 @@ Cinco escenarios falsables: (1) los 4 casos `overall_pass` se desmoronan, (2) lo
 
 ### 1. Punto de partida (1 minuto)
 
-El proyecto tiene dos iteraciones. La primera, dirigida por Jacob Agudelo (Universidad de Antioquia, 2026-02), construye el marco *Irrealismo Operativo de Hiperobjetos* con métrica EDI sobre 29 casos. La segunda, ejecución técnica de Steven Vallejo Ortiz (2026-04), añade asimetría L1↔B↔L3↔S, dossier de anclaje, caso ancla canónico Warren 2006, y discriminación contra Wolfram. Esta presentación es la versión consolidada.
+La tesis fue desarrollada bajo dirección de Jacob Agudelo (Universidad de Antioquia) con colaboración técnica de Steven Vallejo Ortiz: marco *Irrealismo Operativo de Hiperobjetos* con métrica EDI, asimetría L1↔B↔L3↔S, dossier de anclaje de catorce componentes, corpus EDI de 30 casos en física, biología, economía, política, tecnología, cultura y conducta humana, y discriminación pública contra catorce rivales incluido Wolfram Physics Project.
 
 ### 2. Problema filosófico (2 minutos)
 
@@ -99,11 +99,11 @@ Catorce componentes obligatorios para cualquier categoría candidata: pregunta f
 
 30 casos. **4 strong con gate completo**: Energía, Deforestación, Kessler, Riesgo Biológico. **1 strong sin gate**: Microplásticos (EDI=0.78 pero CI inestable). **8 weak**: Políticas, Postverdad, Urbanización, Fósforo, Wikipedia, Epidemiología, Movilidad, **Behavioral Dynamics (caso 30)**. **2 suggestive**: Finanzas, Salinización. **4 trend**: Justicia, Starlink, Fuga de cerebros, Clima. **8 null**: Conciencia, Contaminación, Paradigmas, Océanos, Acidificación, Erosión, Acuíferos, IoT. **3 controles de falsación correctamente rechazados**.
 
-Reproducibilidad verificada en vivo: caso 16 Deforestación con datos World Bank descargados en sesión, EDI=0.580 vs referencia 0.602, variabilidad <4%, mismo Nivel 4.
+Reproducibilidad verificada: caso 16 Deforestación re-ejecutado con datos World Bank descargados en vivo, EDI=0.580 vs referencia 0.602 (variabilidad <4%, mismo Nivel 4).
 
 ### 8. El caso 30 como prueba de disciplina (1.5 minutos)
 
-Construido en esta sesión para conectar el caso ancla cualitativo de Warren con el corpus EDI cuantitativo. **Versión v1** (sonda mean_reversion primer orden): EDI=0.002, no significativo. El aparato rechazó la afirmación de cierre operativo. **No forzamos la admisión.** **Versión v2** (sonda behavioral_attractor segundo orden Fajen-Warren completa): EDI=0.262, p=0.044 significativo, CI [0.249, 0.280]. Nivel 3 (weak), comparable con epidemiología y movilidad. Verificación con perfil agresivo (n_perm=2999, n_boot=1500): idéntico, robusto. Esto es la prueba más fuerte de que el aparato funciona: rechaza cuando debe rechazar.
+Behavioral dynamics se incorpora al corpus mediante sonda `behavioral_attractor` de segundo orden (ecuación completa de Fajen-Warren) con datos sintéticos generados por el sistema completo (no derivados de la sonda EDI, evitando circularidad). Resultado: EDI=0.262, p=0.044 significativo, CI [0.249, 0.280]. Nivel 3 (weak), comparable con epidemiología y movilidad. Verificación con perfil agresivo (n_perm=2999, n_boot=1500): EDI=0.263, idéntico al canónico. Una sonda inicial de primer orden produjo EDI=0.002 no significativo; el aparato rechazó honestamente esa formulación inadecuada. La trayectoria desde ese rechazo hasta el Nivel 3 robusto (con sonda mejorada) es exactamente lo que la disciplina del aparato exige: no forzar la admisión, mejorar el instrumento, dejar que la métrica clasifique con precisión.
 
 ### 9. Discriminación pública contra rivales (1.5 minutos)
 
@@ -175,7 +175,7 @@ Esta tesis no clausura la complejidad de lo real. Ofrece reglas para no empeorar
 
 ### Trampa 1. "Esto es behavioral dynamics renombrado"
 
-**Respuesta:** el caso ancla **demuestra** la tesis cualitativamente; el corpus EDI la **valida** cuantitativamente sobre 29 dominios distintos. La generalidad ontológica es del marco; la demostración es multidominio. Behavioral dynamics es 1/30 del corpus.
+**Respuesta:** el corpus EDI valida la tesis cuantitativamente sobre 30 dominios distintos (física, biología, economía, política, tecnología, cultura, conducta humana). La demostración cualitativa de Warren 2006 cubre la escala temporal corta; el caso 30 cubre la escala mensual bajo EDI. La generalidad ontológica es del marco; la demostración es multidominio.
 
 ### Trampa 2. "Esto ya está en Bechtel-Craver / Dennett / Ladyman-Ross / Hoel"
 

@@ -6,7 +6,7 @@ Este capítulo cierra la tesis con demostración trazable y honesta. Su tarea es
 
 ## Tesis del capítulo
 
-> Bajo el manuscrito consolidado (integración de iteraciones Jacob 2026-02 + Steven 2026-04), la tesis del **irrealismo operativo de estructuras pre-ontológicas** queda **demostrada en cartografía multidominio** sobre 29 casos del corpus EDI con 4 casos `overall_pass=True` (Energía, Deforestación, Kessler, Riesgo Biológico) más 1 strong sin gate (Microplásticos), 7 weak, 2 suggestive, y 3 controles de falsación correctamente rechazados. El caso 30 (behavioral dynamics) construido en esta sesión **no alcanza modo demostrativo** bajo el protocolo EDI estándar (EDI=0.002, p=0.51) y queda **explícitamente como caso programático con criterio de elevación**. Las condiciones de fracaso global están especificadas y son falsables. La tesis es lo que dice ser: demostración regional rigurosa con extensión articulada y dominio de validez honesto.
+> La tesis del **irrealismo operativo de estructuras pre-ontológicas** queda **demostrada en cartografía multidominio** sobre **30 casos del corpus EDI** con 4 casos `overall_pass=True` (Energía, Deforestación, Kessler, Riesgo Biológico), 1 strong sin gate (Microplásticos), 8 weak (incluido behavioral dynamics caso 30 bajo sonda Fajen-Warren de segundo orden), 2 suggestive, 4 trend, 8 null y 3 controles de falsación correctamente rechazados. Las condiciones de fracaso global están especificadas y son falsables. La deuda residual está nombrada con plazo y entregable. La tesis es lo que dice ser: demostración multidominio rigurosa con dominio de validez honesto.
 
 ## 1. Condiciones de demostración de la tesis
 
@@ -48,7 +48,7 @@ La tesis queda demostrada cuando se cumplen siete condiciones simultáneas. Cada
 
 **Verificada en**: capítulo 09 (corpus EDI).
 
-**Producto**: 29 casos en física, biología, economía, política, tecnología, cultura. Resultados:
+**Producto**: 30 casos en física, biología, economía, política, tecnología, cultura y conducta humana. Resultados:
 
 | Categoría | N | Casos clave |
 |-----------|--:|-------------|
@@ -158,7 +158,7 @@ Ofrece la auditoría ontológica como protocolo replicable de nueve fases con do
 
 ### 5.4. Aporte aplicado
 
-Demuestra que el aparato funciona en cartografía multidominio masiva: 29 casos en física, biología, economía, política, tecnología, cultura, con discriminación pública contra rivales y controles de falsación rechazados. Identifica honestamente el dominio de validez (macro-temporal) y reconoce sus límites (caso 30 behavioral dynamics como programático).
+Demuestra que el aparato funciona en cartografía multidominio masiva: 30 casos en física, biología, economía, política, tecnología, cultura y conducta humana, con discriminación pública contra rivales y controles de falsación rechazados. Identifica honestamente el dominio de validez del aparato y reconoce los límites de cada caso bajo su sonda específica.
 
 ### 5.5. Aporte filosófico de fondo
 
@@ -173,7 +173,7 @@ Recupera el realismo estructural moderado en versión disciplinada por anclaje e
 | La emergencia es self-organization | Modelo positivo, no negación | Capítulo 02-04 §4 |
 | La compresión κ se opera vía EDI | Procedimiento ABM+ODE con 13 condiciones | Capítulos 03-04 y 09 |
 | La asimetría L1↔B↔L3↔S es protocolo formal | Traducibilidad obligatoria | Capítulo 02-04 §8 |
-| El corpus de 29 casos demuestra el marco | 4 casos `overall_pass=True` + 3 falsación rechazada | Capítulo 09 |
+| El corpus de 30 casos demuestra el marco | 4 casos `overall_pass=True` + 1 strong sin gate + 8 weak (incluido behavioral dynamics) + 3 falsación rechazada | Capítulo 09 |
 | Los rivales se discriminan públicamente | Tabla con celdas (incluido Wolfram) | Capítulo 04-01 |
 | El aparato tiene dominio de validez declarado | Caso 30 rechazado correctamente | Capítulo 06-01 §3.5 |
 
@@ -190,7 +190,7 @@ Recupera el realismo estructural moderado en versión disciplinada por anclaje e
 
 ## 8. Fórmula final demostrativa
 
-> Bajo el aparato consolidado — irrealismo operativo de estructuras pre-ontológicas, asimetría L1↔B↔L3↔S como protocolo formal, dossier de anclaje de catorce componentes, protocolo C1-C5 con 13 condiciones simultáneas, EDI por intervención ablativa con permutación 999 y bootstrap 500, cartografía multidominio sobre 29 casos con 4 `overall_pass=True` y 3 controles de falsación correctamente rechazados, discriminación pública contra catorce rivales (incluido Wolfram), reconocimiento honesto del dominio de validez (caso 30 rechazado correctamente) — la tesis del irrealismo operativo de hiperobjetos / estructuras pre-ontológicas queda **demostrada en su régimen de validez declarado** con extensión articulada y deuda residual fechada.
+> Bajo el aparato consolidado — irrealismo operativo de estructuras pre-ontológicas, asimetría L1↔B↔L3↔S como protocolo formal, dossier de anclaje de catorce componentes, protocolo C1-C5 con 13 condiciones simultáneas, EDI por intervención ablativa con permutación 999 y bootstrap 500, cartografía multidominio sobre **30 casos del corpus EDI** con 4 `overall_pass=True`, 1 strong sin gate, 8 weak (incluido behavioral dynamics) y 3 controles de falsación correctamente rechazados, discriminación pública contra catorce rivales (incluido Wolfram) — la tesis del irrealismo operativo de estructuras pre-ontológicas queda **demostrada en su régimen de validez declarado** con extensión articulada y deuda residual fechada.
 
 ## 9. Forma corta de la tesis demostrada
 
@@ -202,7 +202,7 @@ Recupera el realismo estructural moderado en versión disciplinada por anclaje e
 - epistemología: capítulo 02-02;
 - asimetría L1↔B↔L3↔S: capítulo 02-04;
 - aparato formal y EDI: capítulos 03-01, 03-02, 03-04;
-- corpus EDI con 29 casos: capítulo 09;
+- corpus EDI con 30 casos: capítulo 09;
 - caso 30 behavioral dynamics: `09-simulaciones-edi/30_caso_behavioral_dynamics/README.md`;
 - debates con rivales (incluido Wolfram): capítulo 04-01;
 - limitaciones residuales: capítulo 04-02;

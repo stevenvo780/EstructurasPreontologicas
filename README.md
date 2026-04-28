@@ -6,7 +6,7 @@
 **Autor principal (concepto y dirección):** Jacob Agudelo, Universidad de Antioquia.
 **Colaborador (técnica e ingeniería computacional):** Steven Vallejo Ortiz.
 **Co-autoría IA:** declarada como instrumento de implementación bajo dirección humana.
-**Versión consolidada:** 2026-04-27 (integración de iteraciones `TesisJacobContenidos` 2026-02 + `EstructurasPreontologicas` 2026-04).
+**Versión:** 2026-04-27.
 
 ---
 
@@ -20,7 +20,7 @@
 
 ## Régimen de validez declarado
 
-La tesis está **demostrada** en cartografía multidominio de **30 casos** (29 macro-temporales + 1 caso ancla behavioral dynamics) con:
+La tesis está **demostrada** en cartografía multidominio de **30 casos** del corpus EDI con:
 
 - **EDI** (Effective Dependence Index) calculado por intervención ablativa con prueba de permutación (999) y bootstrap (500);
 - **Protocolo C1-C5** (Convergencia, Robustez, Determinismo, Consistencia, Incertidumbre) más 8 criterios adicionales para `overall_pass=True`;
@@ -43,7 +43,7 @@ La tesis está **demostrada** en cartografía multidominio de **30 casos** (29 m
 ├── 06-cierre/                        ← conclusión demostrativa, defensa, hoja de ruta
 ├── 07-bibliografia/                  ← corpus PDF y mapa de interlocutores
 ├── 08-consistencia-st/               ← capa ST de validación lógica
-├── 09-simulaciones-edi/              ← código y outputs de los 29 casos macro
+├── 09-simulaciones-edi/              ← código y outputs de los 30 casos del corpus EDI
 ├── Procesos/                         ← bitácoras y trazabilidad histórica
 └── Tareas/                           ← backlog duro y mega-tareas
 ```
@@ -59,7 +59,7 @@ La tesis está **demostrada** en cartografía multidominio de **30 casos** (29 m
 5. `03-formalizacion/01-aparato-formal.md` (operadores μ, G, H, κ, ε);
 6. `03-formalizacion/02-criterios-de-legitimidad-y-metodo.md` (dossier de anclaje);
 7. `03-formalizacion/04-operacionalizacion-de-kappa.md` (κ vía baja dimensionalidad);
-8. `09-simulaciones-edi/README.md` (corpus EDI: 29 casos);
+8. `09-simulaciones-edi/README.md` (corpus EDI: 30 casos);
 9. `04-debates/01-debates-con-posiciones-rivales.md` (discriminación contra rivales, incluido Wolfram);
 10. `05-aplicaciones/05-dinamica-conductual-reconstruccion-warren.md` (caso ancla);
 11. `06-cierre/01-conclusion-demostrativa.md` (la tesis demostrada y sus condiciones de fracaso);
@@ -109,7 +109,7 @@ La novedad no es de inventario sino de **articulación**:
 - diez criterios y dossier de catorce componentes;
 - protocolo C1-C5 con 13 condiciones para `overall_pass`;
 - discriminación pública contra catorce rivales (incluido Wolfram);
-- corpus EDI con 29 casos validados sobre datos públicos;
+- corpus EDI con 30 casos validados sobre datos públicos y sintéticos;
 - 4 casos `overall_pass=True`;
 - 3 controles de falsación correctamente rechazados;
 - conclusión demostrativa con cinco condiciones de fracaso falsables;

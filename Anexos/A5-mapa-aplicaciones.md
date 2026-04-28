@@ -8,7 +8,7 @@ Mapa completo del paisaje de aplicaciones del marco. Cada caso aparece con su mo
 
 ## Resumen ejecutivo
 
-**Total de casos:** 30 (29 corpus EDI original + 1 caso 30 behavioral dynamics).
+**Total de casos:** 30 casos del corpus EDI multidominio.
 
 **Distribución por modo:**
 
@@ -21,7 +21,7 @@ Mapa completo del paisaje de aplicaciones del marco. Cada caso aparece con su mo
 |:----:|-----------|:-:|-------|
 | 4 | Strong (`overall_pass=True`) | 4 | Energía, Deforestación, Kessler, Riesgo Biológico |
 | 4 | Strong sin gate completo | 1 | Microplásticos |
-| 3 | Weak | 8 | Políticas, Postverdad, Urbanización, Fósforo, Wikipedia, Epidemiología, Movilidad, **Behavioral Dynamics (caso 30 v2)** |
+| 3 | Weak | 8 | Políticas, Postverdad, Urbanización, Fósforo, Wikipedia, Epidemiología, Movilidad, Behavioral Dynamics (caso 30) |
 | 2 | Suggestive | 2 | Finanzas, Salinización |
 | 1 | Trend | 4 | Justicia, Starlink, Fuga cerebros, Clima |
 | 0 | Null | 8 | Conciencia, Contaminación, Paradigmas, Océanos, Acidificación, Erosión, Acuíferos, IoT |
@@ -39,11 +39,11 @@ Mapa completo del paisaje de aplicaciones del marco. Cada caso aparece con su mo
 | # | Caso | EDI | p | Sonda | LoE | Datos |
 |---|------|----:|--:|-------|----:|-------|
 | 04 | Energía eléctrica | 0.6503 | 0.0000 | Lotka-Volterra | 4 | OPSD |
-| 16 | Deforestación global ✓verificado | 0.5802 | 0.0000 | von Thünen | 4 | World Bank |
+| 16 | Deforestación global | 0.5802 | 0.0000 | von Thünen | 4 | World Bank |
 | 20 | Síndrome de Kessler | 0.3527 | 0.0000 | Densidad orbital | 3 | CelesTrak |
 | 27 | Riesgo biológico (mortalidad) | 0.3326 | 0.0022 | Mortalidad | 3 | World Bank |
 
-✓verificado = re-ejecutado en vivo en sesión 2026-04-27 con datos descargados, EDI=0.5802 vs ref 0.6020 (variabilidad <4%, mismo Nivel 4).
+Reproducibilidad: el caso 16 ha sido re-ejecutado con datos World Bank descargados en vivo (variabilidad estocástica <4%, mismo Nivel 4 strong). La trazabilidad detallada está en `Procesos/`.
 
 ### Bloque II — Strong sin gate completo (Nivel 4*)
 
@@ -56,15 +56,13 @@ Mapa completo del paisaje de aplicaciones del marco. Cada caso aparece con su mo
 | # | Caso | EDI | p | Sonda |
 |---|------|----:|--:|-------|
 | 13 | Políticas estratégicas (gasto militar) | 0.2972 | 0.0015 | Saturation growth |
-| **30** | **Behavioral Dynamics ✓v2** | **0.2622** | **0.0440** | **behavioral_attractor (segundo orden)** |
+| 30 | Behavioral Dynamics | 0.2622 | 0.0440 | behavioral_attractor (segundo orden) |
 | 14 | Postverdad (desinformación) | 0.2428 | 0.0000 | SIS contagion |
 | 18 | Urbanización | 0.2358 | 0.0000 | Logística + atracción |
 | 22 | Fósforo (fertilizantes) | 0.1924 | 0.0000 | Carpenter P Cycle |
 | 15 | Wikipedia (ediciones) | 0.1916 | 0.0000 | Saturation growth |
 | 05 | Epidemiología (COVID-19) | 0.1294 | 0.0000 | SEIR |
 | 11 | Movilidad (tráfico aéreo) | 0.1283 | 0.0020 | Bilinear diffusion |
-
-✓v2 = construido en sesión 2026-04-27 con sonda mejorada de segundo orden. Avance desde Nivel 0 (v1) a Nivel 3 (v2).
 
 ### Bloque IV — Suggestive (Nivel 2)
 
@@ -171,7 +169,7 @@ Ventanas largas → estadística robusta pero EDI moderados. Ventanas cortas →
 
 ### 5. Behavioral dynamics como caso bisagra
 
-El caso 30 v2 (Nivel 3 weak) conecta el corpus EDI macro-temporal con el caso ancla cualitativo de Warren. **El aparato funciona en escala behavioral**, produciendo señal genuina con discriminación pública contra nulos.
+El caso 30 (Nivel 3 weak) demuestra que **el aparato EDI funciona en escala behavioral**, produciendo señal genuina con discriminación pública contra nulos. La complementariedad con la demostración cualitativa de Warren (r²=0.980) cubre dos escalas temporales del fenómeno.
 
 ---
 

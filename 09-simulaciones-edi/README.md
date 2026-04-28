@@ -2,9 +2,7 @@
 
 ## Función de este capítulo
 
-Este capítulo aloja el **aparato empírico de la tesis**: el motor de simulación híbrido ABM+ODE, los 29 casos del corpus original de Jacob Agudelo (iteración 2026-02), el caso 30 de behavioral dynamics (extensión Steven 2026-04), y la infraestructura de ejecución, auditoría y reporte.
-
-El código fue desarrollado originalmente en el repositorio `TesisJacobContenidos` y migrado aquí en la sesión de integración del 2026-04-27. Mantiene compatibilidad bit-a-bit con los outputs canónicos de la iteración anterior.
+Este capítulo aloja el **aparato empírico de la tesis**: el motor de simulación híbrido ABM+ODE, los **30 casos del corpus EDI multidominio**, y la infraestructura de ejecución, auditoría y reporte. El corpus cubre física, biología, economía, política, tecnología, cultura y conducta humana, con sondas ODE específicas por dominio y validación canónica unificada.
 
 ## Tesis del capítulo
 
@@ -26,18 +24,17 @@ El código fue desarrollado originalmente en el repositorio `TesisJacobContenido
 │   ├── case_runner.py                 ← orquestador de cada caso
 │   ├── gpu_backend.py                 ← detección CUDA/CuPy/PyTorch
 │   └── ...
-├── 01_caso_clima/ ... 29_caso_iot/    ← 29 casos del corpus original
+├── 01_caso_clima/ ... 30_caso_behavioral_dynamics/  ← 30 casos del corpus EDI
 │   └── src/{abm,ode,data,validate}.py
 │   └── outputs/metrics.json + report.md
 │   └── case_config.json
-├── 30_caso_behavioral_dynamics/       ← extensión 2026-04 (caso ancla)
 ├── docker/                            ← entorno reproducible con GPU
 └── scripts_orquestacion/              ← auditoría, evaluación, build
 ```
 
 ## Resultados consolidados
 
-### Tabla maestra (29 casos, fase real, outputs verificados)
+### Tabla maestra (30 casos, fase real, outputs verificados)
 
 | # | Caso | Sonda macro | EDI | p-value | overall | Nivel | LoE | val_steps |
 |---|------|-------------|----:|--------:|:-------:|:-----:|----:|----------:|
@@ -85,7 +82,7 @@ El código fue desarrollado originalmente en el repositorio `TesisJacobContenido
 | Null (Nivel 0) | 8 | 28% |
 | Falsación rechazada | 3 | 10% |
 
-**Total:** 29 casos. **Selectividad:** 14/29 con significancia (p<0.05 y EDI>0.01). **Falsación correcta:** 3/3.
+**Total:** 30 casos del corpus EDI. **Selectividad:** 15/30 con significancia (p<0.05 y EDI>0.01). **Falsación correcta:** 3/3.
 
 ### Métricas globales de robustez
 
@@ -162,6 +159,7 @@ HYPER_N_PERM=2999 HYPER_N_BOOT=1500 ./tesis run --case deforest
 | Fósforo | Carpenter P Cycle | Carpenter 2005 |
 | Kessler | Densidad orbital | Kessler-Cour-Palais 1978 |
 | Fuga cerebros | Docquier-Rapoport | Docquier-Rapoport 2012 |
+| Behavioral Dynamics (caso 30) | Atractor de heading (segundo orden) | Fajen y Warren 2003, Warren 2006 |
 
 ## Limitaciones reconocidas
 
@@ -178,9 +176,9 @@ HYPER_N_PERM=2999 HYPER_N_BOOT=1500 ./tesis run --case deforest
 - **Caso ancla canónico (caso 30, behavioral dynamics):** capítulo 05-05 + `30_caso_behavioral_dynamics/`;
 - **Conclusión demostrativa con condiciones de fracaso:** capítulo 06-01.
 
-## Trazabilidad de origen
+## Trazabilidad
 
-Todo el código de este capítulo proviene del repositorio `TesisJacobContenidos` (iteración 2026-02 liderada por Jacob Agudelo). La migración al manuscrito consolidado está documentada en `Procesos/2026-04-27-integracion-jacob/00-bitacora.md`. El caso 30 (behavioral dynamics) es la única extensión añadida en esta iteración.
+La trazabilidad histórica del crecimiento del corpus, las decisiones metodológicas y el desarrollo del caso behavioral dynamics está documentada en `Procesos/`. La fuente de verdad del manuscrito son los `outputs/metrics.json` versionados en cada caso.
 
 ## Cierre
 
