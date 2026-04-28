@@ -24,13 +24,33 @@ CHAPTERS = [
 
 ---
 
-**Autor principal (concepto y dirección):** Jacob Agudelo, Universidad de Antioquia.
+### Autoría declarada
+
+**Autor principal (concepto y dirección teórica):** Jacob Agudelo. Universidad de Antioquia.
+
 **Colaborador (técnica e ingeniería computacional):** Steven Vallejo Ortiz.
-**Co-autoría IA:** Anthropic Claude (Opus 4.7) — instrumento de implementación bajo dirección humana, sin autoría conceptual.
 
-**Versión consolidada:** 2026-04-27.
+**Co-autoría con inteligencia artificial declarada:** Anthropic Claude (Opus 4.7), como instrumento de implementación bajo dirección humana. La IA no aparece como autora en el sentido legal ni epistémico: aparece como herramienta, igual que cualquier software estadístico avanzado. La declaración detallada del rol y los límites de la IA está en el capítulo `03-formalizacion/05-etica-y-gobernanza-de-datos.md`, sección 5.
 
-> Documento ensamblado automáticamente desde el repositorio doctoral. Fuente de verdad: capítulos individuales en cada carpeta numerada.
+### Marco institucional
+
+**Programa de inscripción:** Doctorado en Filosofía. Línea: filosofía de la ciencia y ciencias de la complejidad.
+
+**Director(a) de tesis:** [pendiente de designación formal por el Consejo de Facultad].
+
+**Comité de evaluación:** [pendiente de designación].
+
+**Estado del manuscrito al cierre de esta versión:** prototipo doctoral avanzado. La formalización institucional completa se documenta en el capítulo `00-proyecto/04-formalizacion-institucional.md`.
+
+**Versión consolidada:** 2026-04-28.
+
+### Sobre la disponibilidad y la fuente de verdad del documento
+
+> Documento ensamblado automáticamente desde el repositorio doctoral. La fuente de verdad textual son los capítulos individuales en cada carpeta numerada. La fuente de verdad numérica del corpus EDI son los `outputs/metrics.json` versionados en `09-simulaciones-edi/<caso>/`. Si hay discrepancia entre este ensamblado y la fuente, prevalece la fuente.
+
+### Agradecimientos
+
+A la Universidad de Antioquia, por sostener una tradición de filosofía de la ciencia que hace posible este trabajo. A los colegas y revisores que aportaron críticas tempranas. A los autores de los datasets públicos del corpus, sin los cuales la cartografía multidominio no sería viable. A William H. Warren y Brett R. Fajen por la conjetura cuantitativa de la behavioral dynamics que opera como caso ancla.
 
 ---
 '''),
@@ -38,8 +58,10 @@ CHAPTERS = [
     ('Capítulo 0: Plan general', '00-proyecto/01-estructura-general.md', None),
     ('Capítulo 0.1: Preguntas, objetivos e hipótesis', '00-proyecto/02-preguntas-objetivos-hipotesis.md', None),
     ('Capítulo 0.2: Plan de capítulos', '00-proyecto/03-plan-de-capitulos.md', None),
+    ('Capítulo 0.3: Formalización institucional', '00-proyecto/04-formalizacion-institucional.md', None),
     ('Capítulo 1: Diagnóstico estructural', '01-diagnostico/01-falencias-de-la-tesis.md', None),
     ('Capítulo 1.1: Objeciones discriminantes', '01-diagnostico/02-objeciones-y-riesgos.md', None),
+    ('Capítulo 1.2: Estado del arte', '01-diagnostico/03-estado-del-arte.md', None),
     ('Capítulo 2: Ontología material-relacional', '02-fundamentos/01-ontologia-material-relacional.md', None),
     ('Capítulo 2.1: Epistemología de la compresión', '02-fundamentos/02-epistemologia-de-la-compresion.md', None),
     ('Capítulo 2.2: Categorías, objetos, propiedades, identidad', '02-fundamentos/03-categorias-objetos-propiedades-e-identidad.md', None),
@@ -48,6 +70,7 @@ CHAPTERS = [
     ('Capítulo 3.1: Criterios de legitimidad y dossier', '03-formalizacion/02-criterios-de-legitimidad-y-metodo.md', None),
     ('Capítulo 3.2: Auditoría ontológica como protocolo', '03-formalizacion/03-auditoria-ontologica-y-diseno-de-investigacion.md', None),
     ('Capítulo 3.3: Operacionalización de κ vía EDI', '03-formalizacion/04-operacionalizacion-de-kappa.md', None),
+    ('Capítulo 3.4: Ética de investigación y gobernanza de datos', '03-formalizacion/05-etica-y-gobernanza-de-datos.md', None),
     ('Capítulo 4: Debates con posiciones rivales', '04-debates/01-debates-con-posiciones-rivales.md', None),
     ('Capítulo 4.1: Limitaciones y puntos de presión', '04-debates/02-limitaciones-y-puntos-de-presion.md', None),
     ('Capítulo 5: Criterios de admisión de aplicaciones', '05-aplicaciones/00-criterios-de-admision.md', None),
@@ -67,6 +90,8 @@ CHAPTERS = [
     ('Anexo A.4: Tabla comparativa con rivales', 'Anexos/A4-tabla-comparativa-rivales.md', None),
     ('Anexo A.5: Mapa de aplicaciones', 'Anexos/A5-mapa-aplicaciones.md', None),
     ('Anexo A.6: Versiones cortas de defensa', 'Anexos/A6-version-corta-defensa.md', None),
+    ('Anexo A.8: Tablas crudas del corpus EDI', 'Anexos/A8-tablas-crudas-corpus.md', None),
+    ('Anexo A.9: Listas de figuras, tablas y abreviaturas', 'Anexos/A9-listas-figuras-tablas-abreviaturas.md', None),
     ('Bibliografía', '07-bibliografia/01-bibliografia-orientativa.md', None),
 ]
 

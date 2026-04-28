@@ -134,6 +134,21 @@ La tesis no inventa una matemática nueva — adopta el lenguaje estándar de la
 
 Se pierde la posibilidad de aplicar la tesis a cualquier dominio sin medidas, sin protocolos de tarea y sin posibilidad de intervención. Eso es una pérdida deseable: marca que el modo demostrativo de la tesis exige fricción empírica real, y reserva el modo programático para los dominios donde esa fricción aún no está disponible.
 
+## Niveles del paisaje de emergencia (clarificación)
+
+La taxonomía operativa del corpus EDI distingue seis niveles (0–5):
+
+| Nivel | Etiqueta | Definición operativa | Ejemplos del corpus |
+|------:|----------|----------------------|---------------------|
+| 0 | Null | EDI ≤ 0 o sin estructura macro detectable | Conciencia, Acidificación, Erosión |
+| 1 | Trend | EDI > 0 sin significancia (p ≥ 0.05) | Justicia, Starlink, Clima |
+| 2 | Suggestive | 0.01 ≤ EDI < 0.10, p < 0.05 | Finanzas, Salinización |
+| 3 | Weak | 0.10 ≤ EDI < 0.30, p < 0.05 | Epidemiología, Behavioral Dynamics, Wikipedia |
+| 4 | Strong | EDI ≥ 0.30, p < 0.01, `overall_pass = True` | Energía, Deforestación, Kessler, Riesgo Bio |
+| 5 | Crítico | Convergencia bajo múltiples sondas + LoE = 5 + frontera espacial nítida | **(programa futuro, no alcanzado en el corpus actual)** |
+
+**Aclaración explícita y reiterada del Nivel 5:** el Nivel 5 está definido como **horizonte programático del marco**, no como nivel alcanzado en el corpus actual. Sus condiciones (multi-sonda convergente con resultados consistentes, LoE = 5, topología heterogénea con frontera espacial nítida) son objetivos del programa de elevación documentado en `Procesos/2026-04-28-cierre-doctoral/03-programa-multi-sonda.md`. El manuscrito no afirma haberlo alcanzado en ningún caso. Esta cláusula se reitera donde sea relevante para evitar la lectura de promesa no cumplida.
+
 ## Cierre
 
 La operación κ deja de ser un acto interpretativo del filósofo y se convierte en un protocolo reproducible. Esto es lo que permitirá al capítulo de aplicaciones mostrar cómo Warren (2006) ya implementó, sin nombrarla así, esta misma operacionalización: identificó variables conductuales clave, midió series, ajustó sistemas dinámicos de baja dimensión, validó atractores, predijo bifurcaciones, e indicó las regiones donde el modelo se queda corto. Esa coincidencia no es accidente; es la confirmación de que la tesis y la práctica investigadora más rigurosa de percepción–acción comparten el mismo esqueleto operativo.

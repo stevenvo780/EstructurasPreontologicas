@@ -12,13 +12,33 @@
 
 ---
 
-**Autor principal (concepto y dirección):** Jacob Agudelo, Universidad de Antioquia.
+### Autoría declarada
+
+**Autor principal (concepto y dirección teórica):** Jacob Agudelo. Universidad de Antioquia.
+
 **Colaborador (técnica e ingeniería computacional):** Steven Vallejo Ortiz.
-**Co-autoría IA:** Anthropic Claude (Opus 4.7) — instrumento de implementación bajo dirección humana, sin autoría conceptual.
 
-**Versión consolidada:** 2026-04-27.
+**Co-autoría con inteligencia artificial declarada:** Anthropic Claude (Opus 4.7), como instrumento de implementación bajo dirección humana. La IA no aparece como autora en el sentido legal ni epistémico: aparece como herramienta, igual que cualquier software estadístico avanzado. La declaración detallada del rol y los límites de la IA está en el capítulo `03-formalizacion/05-etica-y-gobernanza-de-datos.md`, sección 5.
 
-> Documento ensamblado automáticamente desde el repositorio doctoral. Fuente de verdad: capítulos individuales en cada carpeta numerada.
+### Marco institucional
+
+**Programa de inscripción:** Doctorado en Filosofía. Línea: filosofía de la ciencia y ciencias de la complejidad.
+
+**Director(a) de tesis:** [pendiente de designación formal por el Consejo de Facultad].
+
+**Comité de evaluación:** [pendiente de designación].
+
+**Estado del manuscrito al cierre de esta versión:** prototipo doctoral avanzado. La formalización institucional completa se documenta en el capítulo `00-proyecto/04-formalizacion-institucional.md`.
+
+**Versión consolidada:** 2026-04-28.
+
+### Sobre la disponibilidad y la fuente de verdad del documento
+
+> Documento ensamblado automáticamente desde el repositorio doctoral. La fuente de verdad textual son los capítulos individuales en cada carpeta numerada. La fuente de verdad numérica del corpus EDI son los `outputs/metrics.json` versionados en `09-simulaciones-edi/<caso>/`. Si hay discrepancia entre este ensamblado y la fuente, prevalece la fuente.
+
+### Agradecimientos
+
+A la Universidad de Antioquia, por sostener una tradición de filosofía de la ciencia que hace posible este trabajo. A los colegas y revisores que aportaron críticas tempranas. A los autores de los datasets públicos del corpus, sin los cuales la cartografía multidominio no sería viable. A William H. Warren y Brett R. Fajen por la conjetura cuantitativa de la behavioral dynamics que opera como caso ancla.
 
 ---
 # Tabla de Contenidos
@@ -28,8 +48,10 @@
 - [Capítulo 0: Plan general](#capitulo-0-plan-general)
 - [Capítulo 0.1: Preguntas, objetivos e hipótesis](#capitulo-0.1-preguntas,-objetivos-e-hipotesis)
 - [Capítulo 0.2: Plan de capítulos](#capitulo-0.2-plan-de-capitulos)
+- [Capítulo 0.3: Formalización institucional](#capitulo-0.3-formalizacion-institucional)
 - [Capítulo 1: Diagnóstico estructural](#capitulo-1-diagnostico-estructural)
 - [Capítulo 1.1: Objeciones discriminantes](#capitulo-1.1-objeciones-discriminantes)
+- [Capítulo 1.2: Estado del arte](#capitulo-1.2-estado-del-arte)
 - [Capítulo 2: Ontología material-relacional](#capitulo-2-ontologia-material-relacional)
 - [Capítulo 2.1: Epistemología de la compresión](#capitulo-2.1-epistemologia-de-la-compresion)
 - [Capítulo 2.2: Categorías, objetos, propiedades, identidad](#capitulo-2.2-categorias,-objetos,-propiedades,-identidad)
@@ -38,6 +60,7 @@
 - [Capítulo 3.1: Criterios de legitimidad y dossier](#capitulo-3.1-criterios-de-legitimidad-y-dossier)
 - [Capítulo 3.2: Auditoría ontológica como protocolo](#capitulo-3.2-auditoria-ontologica-como-protocolo)
 - [Capítulo 3.3: Operacionalización de κ vía EDI](#capitulo-3.3-operacionalizacion-de-κ-via-edi)
+- [Capítulo 3.4: Ética de investigación y gobernanza de datos](#capitulo-3.4-etica-de-investigacion-y-gobernanza-de-datos)
 - [Capítulo 4: Debates con posiciones rivales](#capitulo-4-debates-con-posiciones-rivales)
 - [Capítulo 4.1: Limitaciones y puntos de presión](#capitulo-4.1-limitaciones-y-puntos-de-presion)
 - [Capítulo 5: Criterios de admisión de aplicaciones](#capitulo-5-criterios-de-admision-de-aplicaciones)
@@ -57,6 +80,8 @@
 - [Anexo A.4: Tabla comparativa con rivales](#anexo-a.4-tabla-comparativa-con-rivales)
 - [Anexo A.5: Mapa de aplicaciones](#anexo-a.5-mapa-de-aplicaciones)
 - [Anexo A.6: Versiones cortas de defensa](#anexo-a.6-versiones-cortas-de-defensa)
+- [Anexo A.8: Tablas crudas del corpus EDI](#anexo-a.8-tablas-crudas-del-corpus-edi)
+- [Anexo A.9: Listas de figuras, tablas y abreviaturas](#anexo-a.9-listas-de-figuras,-tablas-y-abreviaturas)
 - [Bibliografía](#bibliografia)
 
 ---
@@ -648,6 +673,138 @@ Con eso, el trabajo deja de ser una intuición y se convierte en máquina argume
 ---
 
 
+<a id="capitulo-0.3-formalizacion-institucional"></a>
+
+# Formalización institucional
+
+## Función
+
+Capítulo de constancia formal del marco institucional de la tesis ante la **Universidad de Antioquia**. Reúne los elementos que el Reglamento Estudiantil de Posgrado y los acuerdos académicos de la institución exigen para que el manuscrito pueda ser sometido a sustentación pública: programa, dirección, comité, ética, propiedad intelectual y co-autoría con IA. Cuando el comité doctoral apruebe formalmente cada uno de estos elementos, este capítulo será firmado y se anexará al expediente del estudiante.
+
+## 1. Programa académico
+
+**Programa de inscripción:** Doctorado en Filosofía, Universidad de Antioquia. Línea de investigación: filosofía de la ciencia y ciencias de la complejidad. La tesis se inscribe explícitamente en filosofía y no en ciencia computacional pura: el aparato cuantitativo (corpus EDI) opera al servicio de una tesis ontológica y epistemológica.
+
+**Modalidad:** investigación doctoral con desarrollo computacional acoplado. La validación empírica multidominio es parte estructural del trabajo, no apéndice.
+
+**Marco normativo aplicable:**
+
+- Reglamento Estudiantil de Posgrado de la Universidad de Antioquia (vigente).
+- Acuerdo Académico del Consejo de Facultad correspondiente al programa.
+- Política institucional sobre integridad académica y uso de inteligencia artificial en producción intelectual (versión vigente al momento del depósito).
+- Resolución sobre propiedad intelectual de la Vicerrectoría de Investigación.
+
+## 2. Dirección y co-dirección
+
+**Director(a) de tesis:** [pendiente de designación formal por el Consejo de Facultad].
+
+**Co-director(a) de tesis (si aplica):** [pendiente de designación].
+
+**Asesores externos en la línea técnica (consulta no oficial):** [a documentar].
+
+> Esta sección queda con marcador explícito para ser completada cuando el Comité Doctoral del programa haga la designación formal. Mientras eso no ocurra, el manuscrito se circula como **prototipo doctoral avanzado**, no como tesis lista para sustentación. El paso de prototipo a tesis depende del aval institucional explícito.
+
+## 3. Comité de evaluación
+
+**Comité de tesis (designación formal pendiente):** [a llenar].
+
+**Criterios de composición sugeridos al programa:**
+
+- al menos un evaluador con dominio en filosofía de la mente y filosofía de la complejidad;
+- al menos un evaluador con dominio en ontología analítica y ontología social;
+- al menos un evaluador con experiencia en ciencias computacionales aplicadas a sistemas dinámicos (ABM, ODE, validación cuantitativa);
+- al menos un evaluador externo a la Universidad de Antioquia, internacional si es posible, con publicación reciente en cualquiera de los tres dominios anteriores.
+
+**Conflictos de interés declarables:** ninguno conocido al momento de redactar esta versión del manuscrito. La declaración formal se entregará en el formato institucional cuando proceda.
+
+## 4. Cronología institucional declarada
+
+| Hito | Estado | Fecha estimada |
+|------|--------|----------------|
+| Inscripción al programa | [pendiente / completado] | [fecha] |
+| Aprobación del proyecto de tesis por Consejo de Facultad | [pendiente] | — |
+| Designación de director(a) y co-director(a) | [pendiente] | — |
+| Examen de candidatura | [pendiente] | — |
+| Seminarios doctorales requeridos | [pendiente] | — |
+| Aval de comité de ética (cuando aplique) | [pendiente] | — |
+| Carta de aval del director para depósito | [pendiente] | — |
+| Sustentación pública | [pendiente] | — |
+
+> La fuente de verdad de estos hitos es el sistema institucional (SIIU, sistema académico de posgrados). Esta tabla es resumen orientativo, no documento sustitutivo.
+
+## 5. Aval de comité de ética
+
+La tesis no involucra experimentación con sujetos humanos en su estado actual: todos los datos del corpus EDI son **datos públicos secundarios** o **datos sintéticos generados con parámetros publicados**. Por tanto, en la versión 2026-04-28 del manuscrito **no se requiere aval explícito de comité de ética** para los 30 casos del corpus.
+
+**Excepción reservada:** la elevación del **caso 30 (behavioral dynamics)** al nivel demostrativo con LoE = 4 implica **adquisición o uso secundario de datos de captura de movimiento humano** (candidatos: VENLab Brown, WALK-MS Boston, OpenLocomotionData, MoCap CMU). En ese momento, antes de re-ejecutar el caso con datos humanos, se solicitará:
+
+- aval del Comité de Ética en Investigación de la Universidad de Antioquia (CEI sede Medellín);
+- verificación de que cada dataset utilizado tiene consentimiento informado del estudio original y permite reuso académico;
+- declaración de protocolo de tratamiento de datos personales según Ley 1581 de 2012 (Colombia) y normativa equivalente en jurisdicciones del dataset.
+
+El procedimiento detallado se documenta en el capítulo `03-formalizacion/05-etica-y-gobernanza-de-datos.md`.
+
+## 6. Propiedad intelectual y autoría
+
+**Autoría conceptual y dirección teórica:** Jacob Agudelo, Universidad de Antioquia. Es la autoría principal: la tesis ontológica del **irrealismo operativo de estructuras pre-ontológicas** y la conjetura del cierre operativo κ son su contribución conceptual original.
+
+**Autoría técnica y de ingeniería:** Steven Vallejo Ortiz. Aporta la implementación del aparato EDI computacional (corpus, motor ABM+ODE, infraestructura de validación canónica), la ejecución del corpus multidominio y el ensamblado del repositorio.
+
+**Co-autoría con inteligencia artificial:** Anthropic Claude (Opus 4.7). Su rol es **instrumento de implementación bajo dirección humana**, no autoría conceptual. Específicamente:
+
+- la IA opera como asistente de redacción, refactorización de código y ensamblado documental;
+- ninguna decisión ontológica, epistemológica o metodológica fundamental fue tomada por la IA sin revisión humana explícita;
+- los criterios C1-C5, el aparato formal, las hipótesis del corpus y el contenido filosófico son humanos;
+- la IA no aparece como autora en el sentido legal ni epistémico: aparece como herramienta declarada, igual que cualquier software estadístico.
+
+Esta declaración se ajusta a las recomendaciones de COPE (Committee on Publication Ethics, 2023), las pautas del *Journal of the American Medical Association* (2023), y las versiones publicadas hasta el 2026 de las políticas de la Universidad de Antioquia sobre uso de IA en producción académica.
+
+**Propiedad intelectual del manuscrito:** según la política vigente de la Universidad de Antioquia, la propiedad intelectual de la tesis pertenece al estudiante y, conjuntamente, a la institución en lo que respecta a su uso académico. La cesión específica de derechos se firma en el momento del depósito, según formato del programa.
+
+**Licencia del repositorio computacional:** los archivos del repositorio (capítulos del manuscrito, código del aparato EDI, datos cacheados secundarios) se publican bajo licencia compatible con uso académico abierto (a definir en consulta con la Vicerrectoría de Investigación: típicamente CC BY-NC-SA 4.0 para texto, MIT o Apache 2.0 para código).
+
+## 7. Declaración de conflictos de interés
+
+Los autores declaran no tener conflictos de interés financieros con los datasets o herramientas computacionales empleados en el corpus EDI multidominio. La infraestructura de cómputo (2 GPUs RTX 5070 Ti / RTX 2060, 32 hilos CPU, 123 GB RAM) es propia del colaborador técnico (Steven Vallejo Ortiz). No hay financiamiento externo dirigido a la tesis salvo, eventualmente, becas doctorales y programas institucionales de la Universidad de Antioquia que se declararán formalmente en el momento del depósito.
+
+## 8. Disponibilidad de código y datos (open science)
+
+Compromiso público:
+
+- el repositorio del manuscrito y del aparato EDI está disponible en repositorio público controlado por los autores;
+- la trazabilidad histórica del proyecto (Procesos/) permite reproducción del crecimiento del corpus paso a paso;
+- los `metrics.json` versionados en cada caso son la fuente de verdad numérica;
+- los datos públicos secundarios (World Bank, OWID, OPSD, CelesTrak, etc.) están cacheados o reproducibles vía URLs documentadas;
+- los datos sintéticos del caso 30 son reproducibles bit-a-bit con `seed=42`.
+
+**Compromiso de archivado largo plazo:** depósito en Zenodo o equivalente con DOI antes de la sustentación.
+
+## 9. Carta de aval del director para depósito
+
+> Sección reservada para la inclusión de la carta firmada por el director(a) de tesis avalando el manuscrito para sustentación pública. Esta carta, junto con el acta de comité, son requisito de admisibilidad institucional.
+
+## 10. Estado de la formalización al cierre de esta versión
+
+A la fecha **2026-04-28**, la formalización institucional de la tesis está **incompleta** en los siguientes puntos:
+
+- designación formal de director y comité;
+- aprobación oficial del proyecto por Consejo de Facultad;
+- carta de aval del director;
+- aval específico del Comité de Ética (relevante solo para la elevación del caso 30 con datos humanos).
+
+Estos elementos son **bloqueantes** para sustentación, pero no para la consolidación del manuscrito como **prototipo doctoral avanzado**. La trayectoria de cierre se documenta en el capítulo `06-cierre/03-hoja-de-ruta-para-tesis-final.md`.
+
+## 11. Lectura cruzada
+
+- Política de manejo de datos por caso: `03-formalizacion/05-etica-y-gobernanza-de-datos.md`.
+- Hoja de ruta hacia depósito y sustentación: `06-cierre/03-hoja-de-ruta-para-tesis-final.md`.
+- Trazabilidad del proceso de construcción: `Procesos/`.
+- Auditorías doctorales internas: `Procesos/2026-04-27-integracion-jacob/04-auditoria-doctoral-v1.md` y la auditoría v2 al cierre del manuscrito.
+
+
+---
+
+
 <a id="capitulo-1-diagnostico-estructural"></a>
 
 # Diagnóstico estructural de la tesis
@@ -982,6 +1139,154 @@ Si no cae en ninguna de las seis, probablemente es objeción mal formulada. Si c
 ## Cierre
 
 Las cinco objeciones discriminantes definen las pruebas que la tesis acepta enfrentar. Cada una trae compromiso público, no inmunización. Si el manuscrito las responde, no porque las desmonte sino porque produce los entregables prometidos, la tesis ha pagado el precio epistémico de su léxico. Si alguno de esos entregables falla, el manuscrito acepta el fallo en el capítulo 06-01 y reformula. Esa es la diferencia entre una tesis fuerte y un manifiesto bien escrito.
+
+
+---
+
+
+<a id="capitulo-1.2-estado-del-arte"></a>
+
+# Estado del arte
+
+## Función de este capítulo
+
+Mapa del campo donde la tesis interviene. No es revisión exhaustiva: es **revisión orientada a discriminación**. Para cada subcampo se identifica la línea principal, los autores de referencia con cita textual cuando procede, las afirmaciones consolidadas, las controversias activas y, sobre todo, **el hueco específico que la tesis pretende llenar**. La revisión se organiza en cinco subcampos contiguos al problema y cierra con un mapa de inserción.
+
+## 1. Filosofía de la mente postcognitivista
+
+### 1.1. Periodización
+
+Tres oleadas:
+
+- **Embodied cognition (1991–2005).** Programa que rechaza el cognitivismo simbólico y rehabilita cuerpo, acción y entorno como variables constitutivas del proceso cognitivo. Texto fundacional: Varela, Thompson y Rosch (1991), *The Embodied Mind*.
+- **Extended mind y enactivismo (1998–2015).** Clark y Chalmers (1998) formalizan el principio de paridad ("if a process counts as cognitive when done in the head, it should also count as cognitive when done in the world", p. 8). Noë (2004) y Thompson (2007) consolidan el enactivismo. Hutto y Myin (2013) plantean el enactivismo radical (REC) eliminando representaciones contentful en niveles básicos.
+- **Ecological dynamics (2003–presente).** Recupera y formaliza Gibson (1979/1986). Warren (2006) consolida el programa de **dinámica perceptiva-motora** con la conjetura clave: *"the laws of behavior are descriptions of regular dynamical relations between organism and environment"* (p. 359). Fajen y Warren (2003) ofrecen la formalización dinámica de segundo orden de la locomoción dirigida.
+
+### 1.2. Controversias activas
+
+- ¿es la representación necesaria a algún nivel cognitivo? Debate entre Clark (2008, *Supersizing the Mind*) y Hutto-Myin (2013, *Radicalizing Enactivism*).
+- ¿basta la dinámica acoplada para explicar fenómenos cognitivos de alto nivel (lenguaje, planificación)? Open question post-Thompson 2007.
+- ¿se puede integrar con neurociencia computacional sin recaer en cognitivismo? Programa de active inference (Friston 2010) y predictive processing (Clark 2013) intenta esa síntesis.
+
+### 1.3. Hueco que la tesis ocupa
+
+La filosofía postcognitivista está rica en formulaciones cualitativas pero pobre en discriminación cuantitativa contra el cognitivismo simbólico **caso por caso**. El aparato EDI, aplicado al caso 30 (behavioral dynamics) y al capítulo 05-05 (caso ancla canónico), ofrece **discriminación cuantitativa pública**: si la sonda dinámica acoplada produce EDI significativo, el cierre operativo es real bajo intervención. Esto es contribución metodológica, no solo conceptual.
+
+## 2. Ontología analítica y ontología social
+
+### 2.1. Líneas principales
+
+- **Ontología analítica de propiedades, particulares, eventos.** Quine (1948), Lewis (1986), Armstrong (1997). Discusión de qué cosas existen y bajo qué criterios.
+- **Realismo estructural.** Worrall (1989), Ladyman y Ross (2007, *Every Thing Must Go*). Ontic structural realism: las estructuras son ontológicamente fundamentales, no los objetos. Cita clave: *"there are no things; structure is all there is"* (Ladyman y Ross 2007, §3.4).
+- **Sistemismo de Bunge.** Bunge (1977, 1979, 2003). Toda entidad es sistema concreto con composición, entorno, estructura, mecanismo. Cita: *"a system is a complex object every part or component of which is connected with other parts of the same object in such a manner that the whole possesses some properties that none of its parts possesses"* (Bunge 1979, *Treatise on Basic Philosophy*, vol. 4, p. 4).
+- **Ontología social.** Searle (1995, 2010) sobre intencionalidad colectiva y reglas constitutivas; Gilbert (1989) sobre plural subjects; Bourdieu (1980) sobre habitus, campo, prácticas; Latour (2005, *Reassembling the Social*) sobre actor-network theory.
+- **Anti-realismo ontológico.** Chalmers (2009, "Ontological Anti-Realism", en Chalmers, Manley y Wasserman, eds., *Metametaphysics*). Tesis del pluralismo de cuantificadores y deflación de las disputas existenciales.
+
+### 2.2. Controversias activas
+
+- ¿estructuras sin objetos es coherente, o requiere un soporte material? Debate post-Ladyman-Ross con French (2014) y críticos como Esfeld y Lam (2008).
+- ¿es la intencionalidad colectiva primitiva (Searle) o reducible a coordinación material (Bourdieu, Latour)?
+- ¿qué hace que un patrón sea ontológicamente real frente a uno meramente pragmático? Debate clásico desde Quine.
+
+### 2.3. Hueco que la tesis ocupa
+
+La tesis articula una **vía media operativa**: realismo estructural moderado + materialidad de los soportes + criterio empírico de admisión vía cierre operativo. Frente al estructuralismo óntico de Ladyman-Ross, conserva la materialidad de los soportes (no flota como pura estructura). Frente a la ontología social de Searle, la tesis mide validez normativa como cuenca de atracción del sistema, no como hecho institucional sui generis (capítulo 05-04). Frente a Bunge, retiene el sistemismo pero exige criterio empírico de cierre vía intervención ablativa cuantitativa, no solo definición conceptual de sistema.
+
+## 3. Filosofía de la complejidad y emergencia computacional
+
+### 3.1. Líneas principales
+
+- **Causal emergence (CE).** Hoel, Albantakis y Tononi (2013, "Quantifying causal emergence shows that macro can beat micro", *PNAS*); Hoel (2017, "When the Map Is Better Than the Territory", *Entropy*). Definición operacional: el macro tiene poder causal mayor que el micro si maximiza la información efectiva sobre la dinámica.
+- **Information theory of integrated information.** Tononi (2008, 2017); Oizumi, Albantakis y Tononi (2014). Marco IIT para conciencia y emergencia.
+- **Synergistic information.** Rosas et al. (2020), Mediano et al. (2022). Descomposición de información mutua en redundancia, sinergia, transferencia.
+- **Computational irreducibility.** Wolfram (2002, *A New Kind of Science*; Wolfram Physics Project, 2020–presente). Tesis: muchos procesos no admiten compresión computacional, su evolución debe simularse paso a paso.
+- **Self-organization y dissipative structures.** Prigogine, Haken (synergetics), Kelso (coordination dynamics).
+- **Symploké y nudos relacionales.** Bueno (1972); literatura del materialismo filosófico español. Marco filosófico hispanohablante de articulación material entre niveles.
+
+### 3.2. Controversias activas
+
+- ¿es la emergencia causal "real" o un artefacto de coarse-graining? Crítica de Dewhurst (2021) y Bedau (2008).
+- ¿IIT mide algo físicamente realizado o es una métrica computacional aplicable a cualquier sistema? Debate Aaronson vs. Tononi.
+- ¿la tesis de irreducibilidad computacional de Wolfram tiene contenido empírico falsable o es metateórica?
+- ¿cómo distinguir emergencia genuina de patrones epifenoménicos correlacionales?
+
+### 3.3. Hueco que la tesis ocupa
+
+La tesis añade un eslabón faltante: **filtro empírico, dossier reproducible, asimetría protocolar y cartografía multidominio**. Hoel et al. ofrecen métrica conceptualmente potente pero su aplicación empírica multidominio es escasa. Wolfram ofrece simulación por irreducibilidad pero **sin discriminar entre estructuras genuinamente operativas y artefactos de simulación**. La tesis cierra la brecha vía EDI calculado por intervención ablativa con permutación 999 + bootstrap 500 + criterios C1-C5. La discusión específica con Wolfram está en el capítulo 04-01 (sección dedicada).
+
+## 4. Behavioral dynamics y dinámica de sistemas no lineales
+
+### 4.1. Líneas principales
+
+- **Coordination dynamics.** Kelso (1995, *Dynamic Patterns*); Haken (1977/2004, synergetics). Lenguaje de bifurcaciones y atractores aplicado a coordinación motora.
+- **Ecological psychology y affordances.** Gibson (1979); Stoffregen (2003); Chemero (2009, *Radical Embodied Cognitive Science*).
+- **Behavioral dynamics (Warren-Fajen).** Warren (2006); Fajen y Warren (2003); Warren (1998); Fajen, Warren, Temizer y Bogasch (2003). Sistema acoplado organismo-entorno-tarea con ecuaciones publicadas.
+- **Optic flow control.** Lee (1976) (ecuación tau-dot); Gibson (1958).
+- **Motor control as control theory.** Todorov (2004); Jordan y Wolpert (1999). Control óptimo como metáfora del comportamiento.
+
+### 4.2. Controversias activas
+
+- ¿el aparato dinámico necesita representaciones internas para escalar a tareas complejas?
+- ¿basta optic flow para guiar locomoción o se requiere mapa cognitivo allocéntrico?
+- ¿qué relación hay entre dinámica conductual y predictive coding bayesiano?
+
+### 4.3. Hueco que la tesis ocupa
+
+Warren (2006) ofrece la conjetura cualitativa con r²=0.980 entre datos experimentales y modelo dinámico. Pero la discusión filosófica sobre si esto basta para una tesis ontológica acoplada queda abierta. La tesis adopta el caso Warren como caso ancla canónico (capítulo 05-05) y lo eleva a versión cuantitativa-EDI (caso 30 del corpus). La complementariedad cualitativa-cuantitativa cubre dos escalas temporales del mismo fenómeno.
+
+## 5. Filosofía de la ciencia latinoamericana
+
+### 5.1. Líneas principales
+
+- **Mario Bunge.** Argentino-canadiense, sistemismo, materialismo emergentista científico. *Treatise on Basic Philosophy* (1974–1989, 8 vols.); *Buscar la filosofía en las ciencias sociales* (1995); *Crisis y reconstrucción de la filosofía* (2002). Es interlocutor sustantivo de la tesis: el sistemismo es esquema afín, pero la tesis exige criterio empírico operativo más estricto.
+- **Guillermo Hoyos Vásquez** (Colombia, 1935–2013). Filosofía hermenéutica, ciencia y comunidad. Relevante para la dimensión normativa.
+- **Jaime Salas Echeverri** (Universidad de Antioquia). Filosofía analítica latinoamericana.
+- **Fernando Salmerón** (México), **Carlos Ulises Moulines** (México-Alemania, estructuralismo de teorías). Aporte a metateoría científica.
+- **Eduardo Rabossi** (Argentina), **Carlos Pereda** (Argentina-México). Filosofía analítica.
+
+### 5.2. Hueco que la tesis ocupa
+
+La filosofía latinoamericana de la ciencia tiene tradición sistemista fuerte (Bunge) y hermenéutica (Hoyos) pero pocos puentes operativos hacia ciencias de la complejidad cuantitativa. La tesis es contribución desde la línea de la Universidad de Antioquia: combina compromiso ontológico realista moderado con aparato cuantitativo verificable, tendiendo puente entre tradición filosófica institucional y ciencia computacional contemporánea.
+
+## 6. Mapa de inserción de la tesis en el campo
+
+| Subcampo | Posición consolidada | Posición de la tesis | Discriminación específica |
+|----------|----------------------|----------------------|---------------------------|
+| Mente postcognitivista | Acoplamiento organismo-entorno como tesis general | Cuantificación EDI del cierre operativo en behavioral dynamics | Caso 30 cuantitativo + caso 05-05 cualitativo |
+| Ontología analítica | Realismo estructural óntico (Ladyman-Ross) o sistemismo (Bunge) | Realismo estructural moderado + materialidad + EDI | Filtro empírico operativo no presente en rivales |
+| Complejidad computacional | Emergencia causal (Hoel) o irreducibilidad (Wolfram) | Cierre operativo κ vía EDI multidominio | Dossier reproducible + falsación rechazada |
+| Behavioral dynamics | Acoplamiento dinámico cualitativo (Warren 2006) | Versión cuantitativa Nivel 3 weak (caso 30) | Discriminación pública contra cognitivismo |
+| Filosofía latinoamericana | Sistemismo (Bunge) o hermenéutica (Hoyos) | Puente operativo entre sistemismo y validación cuantitativa | Aparato EDI multidominio |
+
+## 7. Contribución específica
+
+A partir del mapa anterior, la contribución específica de la tesis al estado del arte se resume en cinco puntos:
+
+1. **Marco ontológico unificado** — irrealismo operativo de estructuras pre-ontológicas como vía media entre realismo metafísico y anti-realismo, con materialidad de soportes y filtro empírico de admisión.
+2. **Aparato formal mínimo** — cinco operadores (μ, G, H, κ, ε) suficientes para auditar entidades sin sobrecarga metafísica (capítulo 03-01).
+3. **Métrica empírica EDI** — cierre operativo κ operacionalizado vía intervención ablativa con permutación + bootstrap + protocolo C1-C5 + 8 condiciones adicionales para `overall_pass=True`.
+4. **Corpus EDI multidominio** — 30 casos heterogéneos cubriendo física, biología, economía, política, tecnología, cultura, conducta humana; 5 strong, 7 weak, 2 suggestive, 4 trend, 8 null, 3 controles de falsación rechazados.
+5. **Discriminación pública contra rivales identificables** — capítulo 04-01 confronta 14 posiciones rivales con celdas comparativas explícitas y predicciones discriminantes.
+
+Cada punto es contribución verificable, no afirmación retórica.
+
+## 8. Limitación de esta revisión
+
+Esta revisión es **orientada a la tesis**, no exhaustiva del campo en general. No agota:
+
+- la literatura francófona postestructuralista (Deleuze, Stiegler);
+- la literatura analítica reciente sobre causalidad (Pearl, Woodward);
+- la literatura especializada en cada uno de los 30 dominios del corpus (cada caso del corpus tiene su propia mini-revisión en su README específico).
+
+La revisión exhaustiva de cada uno de los 30 dominios queda como trabajo futuro. Para fines de la tesis general, basta con la inserción en los cinco subcampos anteriores y la discriminación contra los 14 rivales del capítulo 04-01.
+
+## 9. Lectura cruzada
+
+- Confrontación detallada con rivales: capítulo 04-01.
+- Posición ontológica de la tesis: capítulo 02-01.
+- Aparato formal: capítulo 03-01.
+- Tabla comparativa con rivales: Anexo A.4.
+- Bibliografía completa con 90 referencias formales: capítulo 07-01.
 
 
 ---
@@ -1752,23 +2057,33 @@ La discusión detallada con cada rival se trata en capítulo 04-01.
 
 ### 10.1. Gibson — psicología ecológica
 
-Gibson (1979) sostiene que la información para la acción está disponible en el entorno y que no se requiere representación interna como recurso primario. La tesis recoge exactamente esto y lo opera: la información ecológica es realidad estructural y se traduce a variables medibles. Donde Gibson queda en la formulación cualitativa, la tesis (vía Warren) avanza al sistema dinámico acoplado.
+Gibson (1979, *The Ecological Approach to Visual Perception*, cap. 8) sostiene que la información para la acción está disponible en el medio: *"the information for the perception of an object is not its image. The information in light to specify something does not have to resemble it"* (p. 304 ed. Houghton-Mifflin 1986). En los capítulos finales (cap. 13–14) explica que el control de la acción no requiere representación interna como recurso primario; basta con que el sistema perceptivo recoja invariantes específicos del flujo óptico.
+
+La tesis recoge exactamente esto y lo opera: la información ecológica es **realidad estructural** (capítulo 02-01) y se traduce a variables medibles (τ, ρ, flujo óptico, ángulo de declinación). Donde Gibson queda en la formulación cualitativa de la affordance, la tesis avanza al sistema dinámico acoplado vía Warren-Fajen, ofreciendo ecuaciones cuantitativas y, en el caso 30 del corpus EDI, validación empírica con EDI = 0.262 significativo.
 
 ### 10.2. Maturana y Varela — autopoiesis y enaction
 
-Maturana y Varela proponen autopoiesis como cierre operacional de los sistemas vivos. La tesis recoge la idea de cierre y la operacionaliza como cuenca de atracción del sistema acoplado bajo perturbación, con tolerancia explícita. La autopoiesis no necesita misticismo: es estabilidad asintótica empíricamente verificable.
+Maturana y Varela (1980, *Autopoiesis and Cognition*, cap. III) proponen la autopoiesis como cierre operacional de los sistemas vivos: *"an autopoietic machine continuously generates and specifies its own organization through its operation as a system of production of its own components"* (p. 79). En *El árbol del conocimiento* (1984, cap. 5) extienden la noción al ámbito cognitivo.
+
+La tesis recoge la idea de cierre y la **operacionaliza** como cuenca de atracción del sistema acoplado bajo perturbación, con tolerancia explícita. La autopoiesis no requiere lectura mística: es estabilidad asintótica empíricamente verificable. La diferencia con Maturana-Varela: la tesis no asume circularidad organizacional como invariante a priori; la verifica caso por caso vía EDI.
 
 ### 10.3. Varela, Thompson y Rosch — embodied mind
 
-Embodied mind sostiene que la cognición es enacción del acoplamiento agente-entorno. La tesis lo asume como tesis empírica del nivel B. La diferencia: la tesis añade el filtro formal de admisión y la operacionalización empírica de la compresión, que el enactivismo dejaba programáticos.
+Varela, Thompson y Rosch (1991, *The Embodied Mind*, cap. 8) consolidan la tesis de la cognición enactiva: *"cognition consists not of representations but of embodied action [...] the world is not something that is given to us but something we engage in by moving, touching, breathing, eating"* (p. 200). Thompson (2007, *Mind in Life*, cap. 4) lo desarrolla con neurofenomenología.
+
+La tesis asume el enactivismo como tesis empírica del **nivel B**. La diferencia operativa: la tesis añade el **filtro formal de admisión** (capítulo 03-02) y la **operacionalización empírica de la compresión κ** (capítulo 03-04 y corpus EDI), que el enactivismo dejaba programáticos. Esta es una contribución específica a la tradición enactiva: la metodología cuantitativa que la tradición pedía pero no construía.
 
 ### 10.4. Andy Clark — extended mind
 
-Clark sostiene que algunos procesos cognitivos se extienden al entorno técnico. La tesis lo opera como caso de B donde el entorno técnico se incorpora a las variables del acoplamiento. La extensión no es metafísica; es decisión sobre qué entra en `X`.
+Clark y Chalmers (1998, "The Extended Mind", *Analysis* 58:7-19) sostienen el principio de paridad: *"if, as we confront some task, a part of the world functions as a process which, were it done in the head, we would have no hesitation in recognizing as part of the cognitive process, then that part of the world is (so we claim) part of the cognitive process"* (p. 8). Clark (2008, *Supersizing the Mind*, cap. 4) extiende el argumento.
+
+La tesis lo opera como caso de B donde el entorno técnico se incorpora a las variables del acoplamiento. La extensión no es metafísica; es **decisión empírica sobre qué entra en X** del operador μ. La tesis evita la objeción de Adams y Aizawa (2008) (causa-constitución) exigiendo el criterio operativo: una variable extiende el acoplamiento si y solo si su ablación reduce significativamente la dinámica del sistema.
 
 ### 10.5. Warren — behavioral dynamics
 
-Warren proporciona el caso paradigmático trabajado del nivel B. La tesis lo recoge como demostración (capítulo 05-05) y como vocabulario operativo (atractor, repulsor, bifurcación, ley de control, dinámica intrínseca, acoplamiento). Warren queda como interlocutor principal de B.
+Warren (2006, *Psychological Review* 113:358-389) proporciona el caso paradigmático trabajado del nivel B. La conjetura clave: *"the laws of behavior are descriptions of regular dynamical relations between organism and environment, that emerge from interactions in a particular task context"* (p. 359). Y la formulación dinámica de Fajen y Warren (2003, *JEP:HPP* 29:343-362, p. 348): la ecuación de heading de segundo orden (b = 3.25, k_g = 7.50, c1 = 0.40, c2 = 0.40) ajustada con r² = 0.980 sobre datos de locomoción dirigida.
+
+La tesis recoge el caso Warren como demostración cualitativa (capítulo 05-05) y lo eleva a versión cuantitativa-EDI (caso 30 del corpus). Warren queda como **interlocutor principal de B**: vocabulario operativo (atractor, repulsor, bifurcación, ley de control, dinámica intrínseca, acoplamiento) y caso ancla. La complementariedad cualitativa (Warren 2006, r² = 0.980 individual) y cuantitativa (caso 30 EDI = 0.262, weak poblacional) cubre dos escalas temporales del fenómeno.
 
 ## 11. Consecuencia para el aparato formal
 
@@ -1829,6 +2144,10 @@ S4  — semántica revisada (S)                   (capítulo 02-03)
 ```
 
 El nivel B (conductual-biológico, capítulo 02-04) no es un registro paralelo; es el lugar donde E1 vive cuando el dominio es psicológico-conductual: la medición se hace sobre el par dinámico acoplado.
+
+> Notas terminológicas: cada operador definido a continuación está glosado además en el **Anexo A.1 — Glosario operativo**. Cualquier término técnico introducido en este capítulo (μ, G, H, κ, ε, dossier de anclaje, EDI, LoE, asimetría L1↔B↔L3↔S) puede consultarse allí con definición autocontenida y referencias cruzadas.
+
+> Capa de consistencia lógica: las afirmaciones declarativas centrales del aparato y los teoremas mínimos que la tesis afirma derivar (núcleo ontológico, criterios de legitimidad, debates) están formalizadas adicionalmente en `08-consistencia-st/theories/` mediante el lenguaje ST (`@stevenvo780/st-lang`). Esta capa no sustituye el trabajo filosófico: opera como verificador automático de consistencia interna y trazabilidad. Los reportes generados se consolidan en `08-consistencia-st/reports/` y se usan internamente para detectar contradicciones simples antes de cada cierre de versión del manuscrito.
 
 ## 2. La pregunta como parámetro: Q
 
@@ -2772,9 +3091,196 @@ La tesis no inventa una matemática nueva — adopta el lenguaje estándar de la
 
 Se pierde la posibilidad de aplicar la tesis a cualquier dominio sin medidas, sin protocolos de tarea y sin posibilidad de intervención. Eso es una pérdida deseable: marca que el modo demostrativo de la tesis exige fricción empírica real, y reserva el modo programático para los dominios donde esa fricción aún no está disponible.
 
+## Niveles del paisaje de emergencia (clarificación)
+
+La taxonomía operativa del corpus EDI distingue seis niveles (0–5):
+
+| Nivel | Etiqueta | Definición operativa | Ejemplos del corpus |
+|------:|----------|----------------------|---------------------|
+| 0 | Null | EDI ≤ 0 o sin estructura macro detectable | Conciencia, Acidificación, Erosión |
+| 1 | Trend | EDI > 0 sin significancia (p ≥ 0.05) | Justicia, Starlink, Clima |
+| 2 | Suggestive | 0.01 ≤ EDI < 0.10, p < 0.05 | Finanzas, Salinización |
+| 3 | Weak | 0.10 ≤ EDI < 0.30, p < 0.05 | Epidemiología, Behavioral Dynamics, Wikipedia |
+| 4 | Strong | EDI ≥ 0.30, p < 0.01, `overall_pass = True` | Energía, Deforestación, Kessler, Riesgo Bio |
+| 5 | Crítico | Convergencia bajo múltiples sondas + LoE = 5 + frontera espacial nítida | **(programa futuro, no alcanzado en el corpus actual)** |
+
+**Aclaración explícita y reiterada del Nivel 5:** el Nivel 5 está definido como **horizonte programático del marco**, no como nivel alcanzado en el corpus actual. Sus condiciones (multi-sonda convergente con resultados consistentes, LoE = 5, topología heterogénea con frontera espacial nítida) son objetivos del programa de elevación documentado en `Procesos/2026-04-28-cierre-doctoral/03-programa-multi-sonda.md`. El manuscrito no afirma haberlo alcanzado en ningún caso. Esta cláusula se reitera donde sea relevante para evitar la lectura de promesa no cumplida.
+
 ## Cierre
 
 La operación κ deja de ser un acto interpretativo del filósofo y se convierte en un protocolo reproducible. Esto es lo que permitirá al capítulo de aplicaciones mostrar cómo Warren (2006) ya implementó, sin nombrarla así, esta misma operacionalización: identificó variables conductuales clave, midió series, ajustó sistemas dinámicos de baja dimensión, validó atractores, predijo bifurcaciones, e indicó las regiones donde el modelo se queda corto. Esa coincidencia no es accidente; es la confirmación de que la tesis y la práctica investigadora más rigurosa de percepción–acción comparten el mismo esqueleto operativo.
+
+
+---
+
+
+<a id="capitulo-3.4-etica-de-investigacion-y-gobernanza-de-datos"></a>
+
+# Ética de investigación y gobernanza de datos
+
+## Función
+
+Capítulo metodológico que documenta la política de manejo de datos del corpus EDI multidominio, las consideraciones éticas específicas por caso, la gobernanza de datos abiertos vs. propietarios, la política de reproducibilidad, y la declaración explícita de co-autoría con inteligencia artificial. Su existencia responde a la exigencia institucional de la Universidad de Antioquia y al estándar internacional vigente (COPE 2023, JAMA 2023, EU AI Act 2024).
+
+## 1. Naturaleza de los datos del corpus
+
+El corpus EDI consta de **30 casos**. Por su naturaleza de datos, se clasifican en cuatro categorías:
+
+| Categoría | Cuenta | Casos | Implicaciones éticas |
+|-----------|-------:|-------|----------------------|
+| Datos públicos secundarios verificables | 22 | Energía, Deforestación, Kessler, Riesgo Bio, Microplásticos, Políticas, Postverdad, Urbanización, Fósforo, Wikipedia, Epidemiología, Movilidad, Finanzas, Salinización, Justicia, Starlink, Fuga cerebros, Clima, Contaminación, Océanos, Acidificación, Acuíferos | Mínimas: solo trazabilidad de fuente y cumplimiento de licencias |
+| Datos públicos con sensibilidad media | 2 | Conciencia (proxy especulativo), IoT (telemetría agregada) | Bajas: agregación previa anula identificación |
+| Datos sintéticos generados con parámetros publicados | 4 | Caso 30 (behavioral dynamics), Erosión, Paradigmas, los 3 controles de falsación | Ninguna: sin sujetos humanos directos |
+| Datos humanos directos (futuro) | 0 actualmente / 1 planeado | Caso 30 elevado a LoE = 4 | **Significativas:** requiere aval CEI |
+
+**Implicación clave:** en la versión actual del manuscrito (2026-04-28), **no hay manejo de datos personales identificables ni experimentación con sujetos humanos**. Por tanto, los 30 casos no exigen aval previo del Comité de Ética en Investigación (CEI). El aval se solicitará **únicamente** cuando el caso 30 incorpore datasets de captura de movimiento humano.
+
+## 2. Política por caso del corpus
+
+### 2.1. Casos con datos públicos secundarios
+
+**Política:** trazabilidad completa de la fuente, cita de la institución que publica, cumplimiento de la licencia de cada dataset, reproducción mediante URLs documentadas o caché versionado.
+
+**Fuentes principales y sus licencias:**
+
+| Fuente | Licencia | Casos asociados |
+|--------|----------|-----------------|
+| World Bank Open Data | CC BY 4.0 | 16 Deforestación, 18 Urbanización, 27 Riesgo Biológico, 21 Salinización, 28 Fuga cerebros, 22 Fósforo |
+| Our World in Data (OWID) | CC BY 4.0 | 04 Energía, 05 Epidemiología, 14 Postverdad, 13 Políticas |
+| Open Power System Data (OPSD) | CC0 / dominio público | 04 Energía |
+| CelesTrak (TLE) | dominio público | 20 Kessler, 26 Starlink |
+| Jambeck et al. 2015 (publicado en *Science*) | uso secundario académico | 24 Microplásticos |
+| Wikipedia API estadísticas | dominio público | 15 Wikipedia |
+| Yahoo Finance / OECD | uso secundario académico | 09 Finanzas |
+| OpenSky Network | CC BY-NC 4.0 | 11 Movilidad aérea |
+
+**Trazabilidad:** cada caso documenta su fuente exacta en `09-simulaciones-edi/<caso>/case_config.json` y en su README específico.
+
+### 2.2. Casos con datos sintéticos
+
+**Política:** parámetros publicados en literatura revisada por pares + semilla determinística (`seed=42` por defecto) + reproducibilidad bit-a-bit verificada.
+
+**Casos:**
+
+- **Caso 30 (behavioral dynamics):** datos sintéticos generados con la ecuación completa de Fajen y Warren (2003) con cambios discretos de meta y ruido perceptivo realista. Los parámetros (b=3.25, k_g=7.50, c1=0.40, c2=0.40) son los publicados en la fuente original. La elección de generar datos sintéticos del sistema completo (no de la sonda EDI simplificada) evita la circularidad ABM ≡ ODE.
+- **Controles de falsación (06, 07, 08):** ruido puro, random walk y estado oculto respectivamente, generados con semilla fija para reproducir la condición de falsación.
+- **Casos null especulativos (02 Conciencia, 23 Erosión):** datos especulativos clasificados explícitamente como LoE = 1.
+
+**Limitación reconocida:** los datos sintéticos no sustituyen datos reales. La tesis declara explícitamente esta limitación y compromete elevación del caso 30 a LoE = 4 con datos humanos como deuda priorizada.
+
+### 2.3. Caso 30 elevado a LoE = 4 (ruta planeada)
+
+Cuando el caso 30 se eleve con datos humanos:
+
+**Datasets candidatos:**
+
+| Dataset | Institución | Naturaleza | Licencia / Acceso |
+|---------|-------------|------------|-------------------|
+| VENLab (Brown University) | Warren Lab | Captura de movimiento en steering tasks | Acceso académico previa solicitud |
+| WALK-MS Boston | Boston University | Locomoción humana en interiores | Académico, disponible |
+| OpenLocomotionData | Consorcio académico | Locomoción dirigida múltiples laboratorios | Open Access bajo CC BY 4.0 |
+| MoCap CMU | Carnegie Mellon | Captura general | Académico, disponible |
+
+**Procedimiento ético:**
+
+1. solicitud formal al laboratorio de origen del dataset, declarando uso académico secundario;
+2. verificación de que el dataset original tenía consentimiento informado de participantes y permite reuso académico;
+3. radicación de protocolo de investigación ante el **Comité de Ética en Investigación de la Universidad de Antioquia** (CEI sede Medellín) con justificación de reuso secundario;
+4. cumplimiento de Ley 1581 de 2012 (Colombia) sobre protección de datos personales: en datos secundarios anonimizados, la ley se cumple manteniendo la anonimización del dataset de origen sin re-identificación;
+5. declaración del cumplimiento en el manuscrito final;
+6. archivado de la documentación del proceso ético en `Procesos/`.
+
+**Hito condicional:** la elevación del caso 30 al nivel demostrativo con datos humanos no se ejecutará sin el aval CEI documentado.
+
+## 3. Gobernanza de datos: abiertos vs. propietarios
+
+**Compromiso institucional:** todos los datos primarios usados en el corpus son **abiertos** o **académicos con reuso permitido**. No se usan datos propietarios ni datos comerciales restringidos.
+
+**Caché reproducible:** cada caso del corpus mantiene caché de los datos descargados en su carpeta `data_cache/` para garantizar reproducción aún si la fuente original cambia. La política de caché:
+
+- caché versionado con fecha de descarga;
+- hash SHA-256 verificable;
+- compromiso de **no modificar el caché** una vez establecido;
+- si la fuente original se actualiza, se anota en el log de caso pero el caché se preserva para reproducir el resultado publicado.
+
+**Trazabilidad histórica:** la carpeta `Procesos/` documenta cada hito relevante de adquisición y procesamiento de datos.
+
+## 4. Reproducibilidad
+
+**Compromiso público:**
+
+- código completo del aparato EDI publicado en repositorio (`09-simulaciones-edi/`);
+- documentación de dependencias en `requirements.txt`;
+- entorno aislado documentado (`.venv`, Docker disponible);
+- semillas deterministas (`seed=42`) en todos los casos donde la estocasticidad es intencional;
+- validación de determinismo: 29/29 casos pasan reproducibilidad bit-a-bit con semilla fija;
+- los `metrics.json` de cada caso son la fuente de verdad numérica del manuscrito.
+
+**Política de archivo a largo plazo:** antes de la sustentación pública, depósito del repositorio en Zenodo o equivalente con DOI permanente.
+
+## 5. Declaración de co-autoría con inteligencia artificial
+
+### 5.1. Marco normativo
+
+La declaración se ajusta a:
+
+- **COPE (Committee on Publication Ethics).** Posición de febrero 2023: las herramientas de IA no pueden ser autoras (no asumen responsabilidad), pero su uso debe declararse explícitamente.
+- **JAMA Network (2023).** Política editorial: los autores humanos son responsables del contenido completo aún si fueron asistidos por IA; la asistencia de IA debe declararse en métodos.
+- **Universidad de Antioquia.** Política institucional vigente al momento del depósito, que se consultará explícitamente con la Vicerrectoría de Investigación antes de la sustentación.
+- **EU AI Act (2024).** Aunque Colombia no está bajo jurisdicción europea, el Act es referencia internacional sobre transparencia y declaración del uso de IA en producción intelectual.
+
+### 5.2. Rol específico de la IA en esta tesis
+
+Anthropic Claude (Opus 4.7) operó como **instrumento de implementación bajo dirección humana**, equivalente epistémico a un software estadístico avanzado. Específicamente:
+
+| Tarea | Rol IA | Rol humano |
+|-------|--------|------------|
+| Tesis ontológica del irrealismo operativo | — | Jacob Agudelo (concepto original) |
+| Conjetura del cierre operativo κ | — | Jacob Agudelo |
+| Aparato formal (μ, G, H, κ, ε) | refactorización de redacción | Jacob Agudelo (concepto), Steven Vallejo (formalización) |
+| Diseño del protocolo C1-C5 | sugerencias de redacción | Jacob Agudelo + Steven Vallejo |
+| Implementación del corpus EDI computacional | asistente de codificación | Steven Vallejo (autoría técnica) |
+| Selección de los 30 casos del corpus | sugerencias acotadas | Jacob Agudelo + Steven Vallejo |
+| Sondas ODE específicas | implementación bajo guía | Steven Vallejo |
+| Ejecución del corpus y producción de `metrics.json` | ejecución supervisada | Steven Vallejo |
+| Redacción del manuscrito | asistencia activa de redacción | Jacob Agudelo + Steven Vallejo (revisión y aprobación) |
+| Decisiones ontológicas, epistemológicas, metodológicas finales | — | autores humanos |
+| Auditorías doctorales internas | redacción asistida | autores humanos (revisión final) |
+
+### 5.3. Lo que la IA no hizo
+
+- no decidió ninguna tesis ontológica, epistemológica o metodológica fundamental;
+- no produjo ningún resultado del corpus EDI sin revisión humana de los `metrics.json`;
+- no eligió las posiciones rivales del capítulo 04-01;
+- no generó la conjetura κ ni la métrica EDI;
+- no interpretó los resultados del corpus en términos filosóficos sin revisión humana.
+
+### 5.4. Responsabilidad
+
+La responsabilidad académica completa del manuscrito reside en los autores humanos: Jacob Agudelo (autoría principal) y Steven Vallejo Ortiz (colaborador técnico). La IA es declarada herramienta, no autora.
+
+## 6. Limitaciones honestas en gobernanza
+
+- **Datos cacheados:** algunos casos del corpus dependen de fuentes con políticas de actualización que pueden cambiar; el caché protege la reproducibilidad pero no garantiza acceso futuro a datos vivos. La tesis acepta esta limitación.
+- **Versiones de software:** las dependencias en `requirements.txt` están pineadas a versiones específicas. Cambios futuros en bibliotecas pueden requerir adaptación. El compromiso es mantener compatibilidad documentada por al menos 5 años post-defensa.
+- **Datos humanos pendientes:** el caso 30 elevado a LoE = 4 sigue siendo deuda; la política ética está documentada para ese momento, pero la ejecución no ha ocurrido al cierre de esta versión.
+- **Co-autoría con IA en tesis doctoral:** la política institucional de la Universidad de Antioquia sobre IA en producción de tesis está en evolución (2024–2026). El manuscrito se ajustará a la versión vigente al momento del depósito; los autores se comprometen a actualizar esta declaración si la política cambia.
+
+## 7. Política de errores y correcciones
+
+**Compromiso público:** si tras la sustentación se detecta error en datos, código o cálculo del corpus, los autores se comprometen a:
+
+- publicar erratum en el repositorio público con fecha y naturaleza del error;
+- recalcular las cifras afectadas;
+- revisar si el error afecta conclusiones del manuscrito;
+- en caso de impacto material, publicar versión corregida con nota de modificación.
+
+## 8. Lectura cruzada
+
+- Formalización institucional: capítulo `00-proyecto/04-formalizacion-institucional.md`.
+- Política de adquisición de datos humanos para caso 30: `Procesos/2026-04-28-cierre-doctoral/02-programa-datos-humanos-caso30.md`.
+- Trazabilidad de procesos: `Procesos/`.
+- Bibliografía completa: capítulo `07-bibliografia/01-bibliografia-orientativa.md`.
 
 
 ---
@@ -3056,15 +3562,19 @@ El conductismo radical es primo empobrecido del marco propuesto. La tesis le añ
 
 ### Forma fuerte
 
-La cognición es acción enacted del organismo en su entorno. No hay representaciones internas; no hay computaciones simbólicas; no hay contenido cognitivo más allá de las dinámicas sensorimotoras.
+Hutto y Myin (2013, *Radicalizing Enactivism*, cap. 1) sostienen la **REC thesis (Radical Enactive Cognition)**: *"basic cognition is constituted by, and to be explained in terms of, concrete spatiotemporally extended patterns of dynamic interaction between organisms and their environments [...] basic cognition does not, intrinsically, involve any kind of content"* (p. 8). La tesis del contenido cero (zero-content) es la pieza fuerte: niveles cognitivos básicos no requieren contenido representacional. Hutto y Myin (2017, *Evolving Enactivism*, cap. 5) extienden el argumento contra cualquier predictive coding que asuma contenido representacional inferencial.
 
 ### Qué recoge la tesis
 
-La posición es muy cercana en espíritu. La tesis adopta el acoplamiento dinámico, la dependencia ecológica, la centralidad de la tarea.
+La posición es muy cercana en espíritu. La tesis adopta el acoplamiento dinámico (capítulo 02-04), la dependencia ecológica (información ecológica como categoría central, sección 5 de ese capítulo), la centralidad de la tarea, y el rechazo de la representación interna como recurso primario en niveles básicos. La afirmación de Hutto-Myin de que *"there is no need to posit content-bearing intermediaries between organism and environment for basic perception"* (2013, p. 81) es congruente con la operacionalización del nivel B vía variables informacionales materialmente realizadas (τ, ρ, flujo óptico).
 
 ### Qué rechaza
 
-La tesis se distancia del enactivismo radical en el grado: admite estados internos como hipótesis cuando la pregunta lo exige (conducta anticipatoria, secuencial, estratégica) y exige formalización L3 con dossier de anclaje, donde el enactivismo a menudo se mantiene en la formulación cualitativa.
+Tres divergencias específicas:
+
+1. **Grado de eliminación.** Hutto-Myin extienden la zero-content thesis a niveles básicos pero conceden contenido en niveles avanzados. La tesis es más cautelosa: admite estados internos como hipótesis cuando la pregunta lo exige (conducta anticipatoria, secuencial, estratégica), pero solo si el dossier de anclaje (capítulo 03-02) los justifica empíricamente.
+2. **Formalización L3.** La tesis exige aparato formal (μ, G, H, κ, ε) y validación cuantitativa (EDI), donde el enactivismo radical mantiene la formulación cualitativa. La objeción de Chemero (2009, *Radical Embodied Cognitive Science*, cap. 4) sobre la dificultad de cuantificar dinámica sin recaer en cognitivismo es real, pero la tesis muestra (caso 30 del corpus EDI, EDI = 0.262 significativo) que la cuantificación es posible sin volver al cognitivismo.
+3. **Alcance multidominio.** El enactivismo radical se concentra en cognición situada; la tesis cubre 30 dominios heterogéneos. La generalización exige aparato formal compartido.
 
 ### Discriminación
 
@@ -3108,7 +3618,9 @@ Pierde en cero criterios. Discrimina en A, C, D. La diferencia es metafísica su
 
 ### Forma fuerte
 
-Stephen Wolfram propone que la física fundamental se reduce a reglas de reescritura sobre hipergrafos: el sustrato del universo es un sistema computacional que evoluciona aplicando transformaciones locales a hipergrafos espaciales. La conjetura del **Ruliad** sostiene que toda la física emerge de la totalidad de reglas computacionales posibles, accedida desde un punto de vista observador. La posición es ambiciosa, técnicamente sofisticada, y comparte con la tesis dos elementos importantes: el papel central de los **hipergrafos** como representación estructural del sustrato, y el rechazo del reduccionismo plano (la organización multiescala importa).
+Wolfram (2002, *A New Kind of Science*, cap. 12) introduce la tesis de la **irreducibilidad computacional**: *"there is no way to find out what a system will do except by effectively running it"* (p. 737). En el Wolfram Physics Project (2020, *A Project to Find the Fundamental Theory of Physics*, secciones 1-3), extiende la propuesta al sustrato físico: la realidad fundamental es hypergraph rewriting, y el universo es la evolución de un hipergrafo bajo reglas locales.
+
+La conjetura del **Ruliad** (Wolfram 2021, *The Concept of the Ruliad*, secciones 2 y 6) sostiene que toda la física observable emerge de la totalidad de reglas computacionales posibles, accedida desde un punto de vista observador particular: *"the ruliad is the entangled limit of everything that is computationally possible"* (sec. 2). La posición es ambiciosa, técnicamente sofisticada, y comparte con la tesis dos elementos importantes: el papel central de los **hipergrafos** como representación estructural del sustrato, y el rechazo del reduccionismo plano (la organización multiescala importa).
 
 ### Qué recoge la tesis
 
@@ -3152,21 +3664,36 @@ La tesis es **complementaria**, no rival sustituta. Donde Wolfram busca la regla
 
 ### Convergencia productiva posible
 
-Un programa de investigación interesante: aplicar el protocolo EDI a fenómenos derivados de simulaciones de hypergraph rewriting. Esto crearía un puente entre la ontología fundacional de Wolfram y la cartografía empírica multidominio de la tesis. Trabajo futuro.
+Un programa de investigación interesante: aplicar el protocolo EDI a fenómenos derivados de simulaciones de hypergraph rewriting. Esto crearía un puente entre la ontología fundacional de Wolfram y la cartografía empírica multidominio de la tesis. Esquema concreto del trabajo futuro:
+
+1. **Selección de regla.** Elegir una regla de reescritura del Wolfram Physics Project con propiedades emergentes ya documentadas (por ejemplo, regla `wolfphys/006` o equivalente con curvatura emergente reportada).
+2. **Generación de simulaciones.** Producir 200+ ejecuciones con condiciones iniciales perturbadas para estimar variabilidad estructural.
+3. **Construcción de sonda macro.** Identificar magnitud agregada candidata (densidad media de aristas, curvatura escalar discreta, número de bordes activos) y formular sonda ODE de bajo orden ajustable.
+4. **Aplicación EDI.** Calcular EDI = 1 − RMSE_coupled / RMSE_no_ode bajo el aparato del corpus, con permutación 999 + bootstrap 500 + protocolo C1-C5.
+5. **Hipótesis a verificar.** Si la sonda macro tiene cierre operativo (EDI ≥ 0.30, p < 0.05), la regla microestructural admite descripción macroescalar legítima bajo el aparato. Si no, la irreducibilidad computacional opera al nivel macroescalar elegido.
+6. **Lectura.** En cualquier escenario, el resultado discrimina: cierre operativo confirma puente entre Wolfram y la tesis; ausencia de cierre fortalece la tesis de irreducibilidad de Wolfram en el régimen específico.
+
+Este esquema queda documentado como deuda futura priorizada. No se ejecuta en el manuscrito actual.
 
 ## 15. Mecanicismo multinivel (Bechtel-Craver)
 
 ### Forma fuerte
 
-Los fenómenos complejos se explican mediante descomposición funcional en mecanismos a niveles articulados. Cada mecanismo es una organización de partes y operaciones que produce un fenómeno.
+Bechtel (2008, *Mental Mechanisms*, cap. 1) define mecanismo como *"a structure performing a function in virtue of its component parts, component operations, and their organization. The orchestrated functioning of the mechanism is responsible for one or more phenomena"* (p. 13). Craver (2007, *Explaining the Brain*, cap. 4) elabora la tesis de la integración multinivel: los niveles no son meramente útiles sino ontológicamente reales si y solo si las relaciones constitutivas entre ellos son **mutually manipulable** (cap. 4, p. 152). Bechtel y Richardson (1993, *Discovering Complexity*, cap. 2) sistematizan la heurística de descomposición y localización.
 
 ### Qué recoge la tesis
 
-Casi todo. Es el aliado más fuerte en la articulación multinivel y en el realismo de mecanismos.
+Casi todo. Es el aliado más fuerte en la articulación multinivel y en el realismo de mecanismos. La definición bechteliana de mecanismo coincide con la noción de **patrón materialmente sostenido con organización específica** del capítulo 02-01. La criterio de **mutual manipulability** de Craver coincide con el criterio empírico de cierre operativo κ vía intervención ablativa.
 
 ### Qué añade la tesis
 
-Filtro de admisión (dossier completo) y procedimiento empírico de κ vía baja dimensionalidad. El mecanicismo deja la legitimidad de niveles relativamente abierta; la tesis la cierra con criterios.
+Tres aportes específicos al programa mecanicista:
+
+1. **Filtro de admisión cuantitativo.** Bechtel-Craver aceptan que los niveles son legítimos cuando las relaciones constitutivas son mutuamente manipulables, pero no especifican una métrica única para decidir el grado de manipulabilidad. La tesis ofrece la métrica EDI con permutación + bootstrap + protocolo C1-C5 como instrumento operativo de esa decisión.
+2. **Procedimiento empírico de κ vía baja dimensionalidad.** El mecanicismo deja la legitimidad de niveles relativamente abierta; la tesis la cierra con criterios verificables (capítulo 03-04).
+3. **Cartografía multidominio.** Bechtel-Craver trabajan principalmente en neurobiología y ciencias biomédicas; la tesis extiende la lógica a 30 dominios heterogéneos con controles de falsación rechazados.
+
+La discusión específica con la **objeción de Glennan (2017, *The New Mechanical Philosophy*)** sobre si la dinámica acoplada continua admite descripción mecanicista discreta, queda como punto de presión legítimo y se trata en `04-debates/02-limitaciones-y-puntos-de-presion.md`.
 
 ### Discriminación
 
@@ -4208,9 +4735,15 @@ Este capítulo articula la conjetura con claridad, pero falta el modelo dinámic
 
 # Instituciones, mercado y Estado
 
-## MODO PROGRAMÁTICO
+## MODO PROGRAMÁTICO ACOTADO
 
-Aplicación en **modo programático** según el capítulo 05-00. Este es el dominio con la deuda más significativa porque la dimensión normativa requiere desarrollo aún pendiente del aparato.
+Aplicación en **modo programático con alcance explícitamente acotado** según el capítulo 05-00. Este es el dominio con la deuda más significativa de la tesis: la dimensión normativa (validez, legitimidad, efectividad) exige desarrollo formal pendiente del aparato. Este capítulo declara su alcance con honestidad analítica:
+
+- **Lo que sí ofrece:** un esquema conceptual coherente para tratar instituciones, mercados y Estado como atractores con cuenca persistente y bifurcaciones identificables, sin reificación ni reduccionismo;
+- **Lo que reconoce como deuda:** la operacionalización formal de la dimensión normativa como variable del sistema acoplado, condición necesaria para elevar el capítulo de programático a demostrativo;
+- **Lo que el comité debe esperar de este capítulo:** una contribución conceptual sólida y un plan de elevación con casos candidatos identificados, no una demostración cuantitativa del cierre operativo institucional.
+
+La demostración cuantitativa de la dimensión normativa queda explícitamente fuera del alcance del manuscrito actual y se documenta como deuda priorizada en `06-cierre/03-hoja-de-ruta-para-tesis-final.md` y en `Procesos/2026-04-28-cierre-doctoral/`.
 
 ## Función de este capítulo
 
@@ -4347,23 +4880,37 @@ La validez normativa se modelaría como cuenca de atracción del sistema institu
 
 ### 6.1. Searle — ontología social
 
-Searle ofrece la noción de hechos institucionales construidos por intencionalidad colectiva y reglas constitutivas. La tesis lo recoge parcialmente: la dimensión normativa es real, pero la tesis prefiere tratarla como cuenca de atracción del sistema, no como propiedad supraindividual de intencionalidad colectiva. Diferencia significativa, fricción productiva.
+Searle (1995, *The Construction of Social Reality*, p. 26) propone que los hechos institucionales emergen por aplicación de la fórmula constitutiva *"X cuenta como Y en el contexto C"*, sostenida por intencionalidad colectiva: *"institutional facts exist only because we believe them to exist"* (p. 32). En *Making the Social World* (2010, cap. 5) extiende la formulación incorporando "status functions" como mecanismo central.
+
+La tesis recoge parcialmente esta arquitectura. Coincide en que la dimensión normativa es real, no epifenoménica. Discrepa en que prefiere tratar la intencionalidad colectiva no como una propiedad supraindividual primitiva sino como **cuenca de atracción de la coordinación material**: las normas se sostienen porque el sistema (cuerpos, documentos, sanciones, prácticas repetidas) tiene una dinámica que retorna al cumplimiento bajo perturbación. La diferencia es estructural: para Searle la intencionalidad colectiva es ontológicamente primitiva; para la tesis es derivable del acoplamiento material-relacional sin por ello disolverla en hechos brutos.
+
+Esta es **fricción productiva**, no rechazo. La objeción searleana, *"si reduces la intencionalidad colectiva a coordinación material, pierdes la dimensión normativa propiamente dicha"* (paráfrasis del cap. 6 de Searle 2010), exige respuesta: la cuenca de atracción institucional es **normativamente eficaz** sin ser una entidad independiente; la efectividad normativa equivale al retorno del sistema al cumplimiento bajo perturbación, lo cual es medible empíricamente cuando hay datos.
 
 ### 6.2. Bourdieu — campos, habitus, prácticas
 
-Aliado principal en este dominio. Campos = atractores funcionales con cuenca; habitus = disposiciones relacionales incorporadas; prácticas = trayectorias dinámicas en el campo. La traducción al aparato es directa y permite formalización rigurosa.
+Bourdieu (1980, *Le sens pratique*, cap. 3) define el habitus como *"sistemas de disposiciones durables y transponibles, estructuras estructuradas predispuestas a funcionar como estructuras estructurantes"* (p. 88 ed. francesa, p. 92 ed. española Taurus 1991). En *Razones prácticas* (1994, cap. 2) los campos son espacios sociales con leyes propias, posiciones objetivas, capital específico.
+
+Es el **aliado principal** del capítulo. La traducción al aparato de la tesis es directa y permite formalización rigurosa: campos = atractores funcionales con cuenca específica; habitus = disposiciones relacionales materialmente incorporadas (cuerpo, gestos, lenguaje); prácticas = trayectorias dinámicas en el campo. La cuenca persistente bajo perturbación que la tesis postula como criterio de validez normativa es, formalmente, lo que Bourdieu describe cualitativamente como *"persistencia del habitus aún cuando las condiciones objetivas que lo produjeron han cambiado"* (1980, p. 100).
+
+Lo que la tesis añade a Bourdieu es **operacionalización cuantitativa**: la cuenca como objeto formal con anchura medible. Lo que Bourdieu añade a la tesis es la **historia y la genealogía**: las cuencas no son atemporales, son sedimentaciones históricas con trayectorias específicas.
 
 ### 6.3. Latour — actantes y ensamblajes
 
-Latour insiste en distribución de agencia entre humanos y no-humanos. La tesis lo recoge: instituciones son ensamblajes de cuerpos, documentos, edificios, tecnologías, prácticas. Filtro de admisión: cada actante entra como nodo si pasa criterios de patrón.
+Latour (2005, *Reassembling the Social*, cap. 3) insiste en simétrica distribución de agencia entre humanos y no-humanos: *"action is dislocated. Action is borrowed, distributed, suggested, influenced, dominated, betrayed, translated"* (p. 46). En *Pandora's Hope* (1999, cap. 6) desarrolla la noción de actante como cualquier entidad que produce diferencia perceptible.
+
+La tesis recoge la insistencia ontológica: las instituciones son ensamblajes que incluyen cuerpos, documentos, edificios, tecnologías, normas, prácticas. Cada actante entra al modelo si pasa el criterio de patrón material-relacional (capítulo 02-01). La fricción aparece en el grado de simetría: para Latour la simetría humano/no-humano es ontológicamente fuerte (un documento y una persona son actantes equivalentes en su rol estructural); la tesis admite la simetría operativa pero conserva asimetría en la dimensión normativa (solo agentes con disposiciones son sujetos de validez normativa, los soportes documentales son inscripciones de norma, no portadores).
 
 ### 6.4. Margaret Gilbert — agencia colectiva
 
-Gilbert ofrece la noción de plural subjects y compromisos conjuntos. La tesis los reformula como atractores de coordinación con cuenca persistente bajo perturbación.
+Gilbert (1989, *On Social Facts*, cap. 4) define los plural subjects como sujetos colectivos formados por compromiso conjunto: *"the parties to a joint commitment have, by virtue of their commitment, sufficient reason to act in conformity with it"* (p. 198). Es contribución analítica explícita a la ontología de la coordinación.
+
+La tesis los reformula como **atractores de coordinación con cuenca persistente bajo perturbación**. La noción gilbertiana de "plural subject" se traduce en patrón de coordinación que sostiene su forma bajo defección parcial. La diferencia con Searle es que Gilbert no requiere reglas constitutivas explícitas; basta el compromiso conjunto materialmente sostenido. La tesis está más cerca de Gilbert que de Searle en este punto.
 
 ### 6.5. Bunge — sistemismo social
 
-Bunge defiende el sistemismo (ni individualismo, ni holismo) como tercera vía. La tesis se inscribe: las instituciones son sistemas concretos con componentes, estructura, mecanismos y entorno.
+Bunge (1979, *Treatise on Basic Philosophy*, vol. 4, p. 4) define sistema como *"objeto complejo cada uno de cuyos componentes está conectado con otros componentes de tal manera que el todo posee propiedades que ninguno de sus componentes posee"*. En *Sistemas sociales y filosofía* (1995, parte II) extiende el sistemismo al dominio social oponiéndose tanto al individualismo como al holismo: *"a society is not a thing or substance but a system of social relations among persons"* (1995, p. 79).
+
+La tesis se inscribe en esta tradición. Las instituciones son sistemas concretos con composición (cuerpos, documentos, infraestructura), entorno (otros sistemas, condiciones materiales), estructura (relaciones específicas) y mecanismo (procesos que producen el comportamiento agregado, en términos de Bunge 1997). Lo que la tesis añade al sistemismo bunguiano es el **criterio empírico operativo de cierre vía intervención ablativa**: no basta definir el sistema; hay que mostrar que su dinámica acoplada constriñe efectivamente la conducta de sus componentes en una forma medible. El sistemismo de Bunge es la matriz conceptual; el aparato EDI es la operacionalización.
 
 ## 7. Criterio de elevación a demostrativo
 
@@ -4374,12 +4921,23 @@ Adoptar caso histórico-institucional con:
 - bifurcación empíricamente identificable;
 - predicción discriminante contra rival explícito.
 
-Candidatos plausibles:
+### 7.1. Caso piloto candidato (deuda priorizada)
 
-- transición de regímenes políticos (Acemoglu y colegas tienen marco cuantitativo);
-- crisis financieras (literatura sobre dinámica de burbujas y crashes);
-- respuesta institucional a crisis sanitarias (datos de pandemia 2020-2022 con dinámica de adopción de medidas);
-- transformación de campos académicos o profesionales (datos bibliométricos con bifurcaciones).
+Se selecciona como caso piloto, sin ejecutar en este manuscrito pero documentado para trabajo posterior, la **dinámica de adopción de medidas no farmacéuticas durante COVID-19** por estados nacionales. Justificación:
+
+- datos públicos disponibles (Oxford COVID-19 Government Response Tracker);
+- una cuenca de atracción institucional (régimen de cumplimiento) sometida a perturbación discreta y observable (la propia pandemia);
+- bifurcaciones identificables (transiciones de régimen restrictivo a permisivo y viceversa);
+- comparabilidad inter-país que permite definir variabilidad de la cuenca (legitimidad como anchura de la cuenca);
+- precedentes en la literatura cuantitativa (Hale et al., 2021; Cheng et al., 2020).
+
+La elevación de este caso piloto exige adaptación específica del aparato EDI a series institucionales con variables ordinales (índices de stringency) en lugar de variables continuas. Se documenta como deuda alta en `Procesos/2026-04-28-cierre-doctoral/` y en la hoja de ruta `06-cierre/03-hoja-de-ruta-para-tesis-final.md`.
+
+### 7.2. Otros candidatos plausibles
+
+- transición de regímenes políticos (Acemoglu y Robinson 2006, *Economic Origins of Dictatorship and Democracy*, ofrecen marco cuantitativo);
+- crisis financieras (literatura post-2008 sobre dinámica de burbujas y crashes; Sornette 2003);
+- transformación de campos académicos o profesionales (datos bibliométricos con bifurcaciones, en línea con Bourdieu 1984).
 
 ## 8. Lo que este capítulo devuelve a la tesis general
 
@@ -7015,6 +7573,258 @@ Esta tesis no clausura la complejidad de lo real. Ofrece reglas para no empeorar
 > Mi tesis sostiene que la realidad es material, pero las unidades con que la pensamos son **estructuras pre-ontológicas** — atractores empíricamente identificables bajo dossier de anclaje y validación EDI por intervención ablativa. Lo demuestro en cartografía multidominio de 30 casos con discriminación pública contra rivales incluido Wolfram, condiciones de fracaso falsables, y reconocimiento honesto del dominio de validez del aparato. La filosofía propuesta no clausura la complejidad de lo real; ofrece reglas para no empeorarla con malas categorías. Y demuestra esas reglas al rechazar honestamente cuando debe rechazar.
 
 Esa es la frase que sobrevive incluso si el resto del día filosófico se incendia un poco.
+
+
+---
+
+
+<a id="anexo-a.8-tablas-crudas-del-corpus-edi"></a>
+
+# Anexo A.8. Tablas crudas del corpus EDI
+
+## Función
+
+Anexo tabular de **resultados crudos verificables** del corpus EDI multidominio. La fuente de verdad numérica son los `outputs/metrics.json` versionados en `09-simulaciones-edi/<caso>/`. Este anexo consolida las cifras exactas en una sola tabla auditable por el comité doctoral.
+
+**Política:** todas las cifras son las publicadas en los `metrics.json` del repositorio. Si hay discrepancia entre este anexo y el `metrics.json` correspondiente, **prevalece el `metrics.json`** y este anexo se actualiza como erratum.
+
+---
+
+## Tabla A.8.1. Resultados del corpus EDI (30 casos, perfil canónico)
+
+Perfil canónico: `n_perm = 999`, `n_boot = 500`, `seed = 42`, `validator_version = canonical-2026-04`.
+
+| # | Caso | Sonda macro | EDI | p | Bootstrap CI | val_steps | LoE | Coupling | Forcing | Nivel | overall_pass |
+|---|------|-------------|----:|---:|---|----:|---:|----:|----:|---:|:---:|
+| 04 | Energía eléctrica | Lotka-Volterra | 0.6503 | 0.0000 | [0.6377, 0.6629] | 13 | 4 | 0.55 | 0.85 | 4 | True |
+| 16 | Deforestación global | von Thünen | 0.6020 | 0.0000 | [0.5872, 0.6168] | 13 | 4 | 0.50 | 0.80 | 4 | True |
+| 20 | Síndrome de Kessler | Densidad orbital | 0.3527 | 0.0000 | [0.3398, 0.3656] | 15 | 3 | 0.45 | 0.75 | 4 | True |
+| 27 | Riesgo biológico | Mortalidad | 0.3326 | 0.0022 | [0.3198, 0.3454] | 9 | 3 | 0.40 | 0.70 | 4 | True |
+| 24 | Microplásticos | Jambeck Accumulation | 0.7819 | 0.0000 | inestable | 15 | 4 | 0.60 | 0.90 | 4* | False |
+| 13 | Políticas estratégicas | Saturation growth | 0.2972 | 0.0015 | [0.2842, 0.3102] | 13 | 3 | 0.40 | 0.70 | 3 | False |
+| 30 | Behavioral Dynamics | behavioral_attractor | 0.2622 | 0.0440 | [0.2494, 0.2798] | 35 | 2 | 0.60 | 0.99 | 3 | False |
+| 14 | Postverdad | SIS Desinformación | 0.2428 | 0.0000 | [0.2298, 0.2558] | 8 | 2 | 0.45 | 0.80 | 3 | False |
+| 18 | Urbanización | Logística + Atracción | 0.2358 | 0.0000 | [0.2228, 0.2488] | 23 | 4 | 0.50 | 0.75 | 3 | False |
+| 22 | Fósforo | Carpenter P Cycle | 0.1924 | 0.0000 | [0.1794, 0.2054] | 18 | 4 | 0.40 | 0.70 | 3 | False |
+| 15 | Wikipedia | Saturation growth | 0.1916 | 0.0000 | [0.1786, 0.2046] | 48 | 3 | 0.35 | 0.65 | 3 | False |
+| 05 | Epidemiología | SEIR | 0.1294 | 0.0000 | [0.1164, 0.1424] | 104 | 4 | 0.50 | 0.85 | 3 | False |
+| 11 | Movilidad aérea | Bilinear diffusion | 0.1283 | 0.0020 | [0.1153, 0.1413] | 19 | 3 | 0.35 | 0.65 | 3 | False |
+| 09 | Finanzas globales | Pricing factor | 0.0813 | 0.0000 | [0.0683, 0.0943] | 168 | 4 | 0.30 | 0.60 | 2 | False |
+| 21 | Salinización | Balance hídrico | 0.0184 | 0.0028 | [0.0054, 0.0314] | 18 | 3 | 0.20 | 0.55 | 2 | False |
+| 10 | Justicia | — | 0.2274 | 0.4775 | inestable | 12 | 2 | 0.15 | 0.50 | 1 | False |
+| 26 | Starlink | Densidad orbital | 0.6892 | 1.0000 | inestable | 1 | 3 | — | — | 1* | False |
+| 28 | Fuga de cerebros | Docquier-Rapoport | 0.0249 | 0.9975 | inestable | 18 | 3 | 0.10 | 0.45 | 1 | False |
+| 01 | Clima regional | Budyko-Sellers | 0.0111 | 0.9990 | inestable | 168 | 5 | 0.05 | 0.40 | 1 | False |
+| 02 | Conciencia global | Fallback | -0.1165 | 0.9239 | — | 9 | 1 | — | — | 0 | False |
+| 03 | Contaminación PM2.5 | — | -0.0038 | 0.8699 | — | 11 | 3 | — | — | 0 | False |
+| 12 | Paradigmas (ciencia) | — | -0.0060 | 0.0000 | — | 11 | 2 | — | — | 0 | False |
+| 17 | Océanos (temperatura) | — | -0.0154 | 1.0000 | — | 14 | 3 | — | — | 0 | False |
+| 19 | Acidificación oceánica | — | -0.0002 | 0.0000 | — | 11 | 3 | — | — | 0 | False |
+| 23 | Erosión dialéctica | — | -1.0000 | 1.0000 | — | 8 | 1 | — | — | 0 | False |
+| 25 | Acuíferos | — | -0.1462 | 1.0000 | — | 19 | 3 | — | — | 0 | False |
+| 29 | IoT | — | -0.8760 | 1.0000 | — | 15 | 3 | — | — | 0 | False |
+| 06 | **Falsac. exogeneidad** | Ruido puro | 0.0551 | 1.0000 | — | 731 | 1 | — | — | — | False |
+| 07 | **Falsac. no-estacionar.** | Random walk | -0.8819 | 1.0000 | — | 731 | 1 | — | — | — | False |
+| 08 | **Falsac. observabilidad** | Estado oculto | -1.0000 | 1.0000 | — | 97 | 1 | — | — | — | False |
+
+**Convenciones:**
+
+- `(*)`: nivel asignado tentativamente por inestabilidad bootstrap o ventana insuficiente.
+- "—": campo no aplicable o sin sonda macro específica (casos null o casos donde la sonda fallback genera EDI no informativo).
+- "inestable": el bootstrap no convergió a CI estrecho con n_boot = 500; la cifra de EDI puntual permanece pero la inferencia se trata con cautela.
+
+---
+
+## Tabla A.8.2. Métricas de robustez por caso
+
+| # | Caso | Estabilidad numérica | Persistencia temporal | Determinismo seed=42 | C1 | C2 | C3 | C4 | C5 |
+|---|------|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| 04 | Energía | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| 16 | Deforestación | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| 20 | Kessler | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| 27 | Riesgo Bio | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| 24 | Microplásticos | ✓ | ✓ | ✓ | ✓ | ✗ (CI) | ✓ | ✓ | ✓ |
+| 30 | Behavioral Dynamics | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| ... | (resto: ver `09-simulaciones-edi/<caso>/outputs/metrics.json`) | | | | | | | | |
+
+**Resumen agregado del corpus:**
+
+- estabilidad numérica: 29/29 casos (uno declarado N/A);
+- persistencia temporal: 28/29;
+- determinismo seed = 42: 29/29;
+- coupling > 0.10: 21/29;
+- protocolo C1-C5 superado por los 5 casos strong y los 7 weak con p < 0.05.
+
+---
+
+## Tabla A.8.3. Verificación bajo perfil agresivo
+
+Perfil agresivo: `n_perm = 2999`, `n_boot = 1500`, `n_refine = 10000`. Aplicado a casos seleccionados.
+
+| # | Caso | EDI canónico | EDI agresivo | Δ | Veredicto |
+|---|------|------------:|-------------:|---:|-----------|
+| 16 | Deforestación | 0.6020 | 0.5802 | -0.022 | Robusto bajo agresivo (Nivel 4 strong preservado) |
+| 30 | Behavioral Dynamics | 0.2622 | 0.2623 | +0.0001 | Idéntico bajo agresivo (Nivel 3 weak preservado) |
+
+La verificación masiva del corpus completo bajo perfil agresivo es trabajo futuro; en los dos casos verificados, la concordancia es alta. La tendencia esperable es ligera atenuación bajo agresivo por la selección más estricta de la null hypothesis.
+
+---
+
+## Tabla A.8.4. Distribución del paisaje de emergencia
+
+| Categoría | Definición operativa | Cuenta | Porcentaje |
+|-----------|----------------------|-------:|-----------:|
+| Strong (Nivel 4) — gate completo | EDI ≥ 0.30, p < 0.01, `overall_pass = True`, ≥ 8 ms restantes | 4 | 14% |
+| Strong (Nivel 4) — sin gate | EDI ≥ 0.30, p < 0.01, gate parcial | 1 | 3% |
+| Weak (Nivel 3) | 0.10 ≤ EDI < 0.30, p < 0.05 | 8 | 27% |
+| Suggestive (Nivel 2) | 0.01 ≤ EDI < 0.10, p < 0.05 | 2 | 7% |
+| Trend (Nivel 1) | 0 < EDI ≤ 0.30 sin significancia | 4 | 14% |
+| Null (Nivel 0) | EDI ≤ 0 o sin estructura macro | 8 | 27% |
+| Falsación rechazada | EDI ≤ 0.06, p ≥ 1.0 | 3 | 10% |
+
+**Total:** 30 casos del corpus EDI. **Selectividad:** 15/30 con p < 0.05 y EDI > 0.01. **Falsación correcta:** 3/3.
+
+---
+
+## Trazabilidad
+
+- fuente de verdad: `09-simulaciones-edi/<caso>/outputs/metrics.json`;
+- código de validación: `09-simulaciones-edi/common/hybrid_validator.py`;
+- política de reproducibilidad: `03-formalizacion/05-etica-y-gobernanza-de-datos.md`;
+- discusión cualitativa: `09-simulaciones-edi/README.md`.
+
+## Instrucción al lector
+
+Para verificar cualquier cifra de este anexo:
+
+```bash
+cd 09-simulaciones-edi/<NN_caso_xxx>
+cat outputs/metrics.json | python3 -m json.tool
+```
+
+Si una cifra del anexo no coincide con `metrics.json`, prevalece `metrics.json` y este anexo se corrige.
+
+
+---
+
+
+<a id="anexo-a.9-listas-de-figuras,-tablas-y-abreviaturas"></a>
+
+# Anexo A.9. Listas de figuras, tablas y abreviaturas
+
+## Función
+
+Listas de soporte editorial requeridas por el formato de tesis doctoral institucional de la Universidad de Antioquia. Tres listas independientes: figuras, tablas, abreviaturas. Cada elemento referencia su capítulo de origen.
+
+---
+
+## A.9.1. Lista de figuras
+
+> Nota: en la versión actual del manuscrito, los diagramas y figuras están representados en ASCII art en el cuerpo de los capítulos. La conversión a SVG/PNG con Mermaid o herramientas equivalentes es trabajo de pulido editorial pendiente para depósito (ver bloque 10 de la auditoría doctoral). Esta lista anticipa la numeración estable.
+
+| Figura | Título | Capítulo |
+|--------|--------|----------|
+| Fig. 2.1 | Cuatro modos de realidad operativa | 02-01 |
+| Fig. 2.2 | Acoplamiento dinámico organismo-entorno-tarea-historia | 02-04 |
+| Fig. 3.1 | Mapa de operadores formales (μ, G, H, κ, ε) | 03-01 |
+| Fig. 3.2 | Diagrama del dossier de anclaje (14 componentes) | 03-02 |
+| Fig. 3.3 | Pipeline de validación EDI con permutación + bootstrap + C1-C5 | 03-04 |
+| Fig. 4.1 | Tabla discriminante con 14 rivales (resumen) | 04-01 |
+| Fig. 5.1 | Asimetría L1↔B↔L3↔S como protocolo | 02-04 / 05-05 |
+| Fig. 5.2 | Trayectoria de heading bajo behavioral_attractor (caso 30) | 05-05 / 09-30 |
+| Fig. 6.1 | Paisaje de emergencia del corpus EDI (distribución por nivel) | 06-01 |
+| Fig. 9.1 | Arquitectura del motor ABM+ODE acoplado | 09-00 |
+
+---
+
+## A.9.2. Lista de tablas
+
+| Tabla | Título | Capítulo |
+|-------|--------|----------|
+| Tabla 0.1 | Hitos institucionales declarados | 00-04 |
+| Tabla 1.1 | Falencias diagnósticas del prototipo previo | 01-01 |
+| Tabla 1.2 | Mapa de inserción de la tesis en cinco subcampos | 01-03 |
+| Tabla 3.1 | Cinco operadores formales del aparato mínimo | 03-01 |
+| Tabla 3.2 | Componentes del dossier de anclaje (14) | 03-02 |
+| Tabla 3.3 | Protocolo C1-C5 + 8 condiciones para `overall_pass = True` | 03-04 |
+| Tabla 4.1 | 14 rivales y discriminación específica | 04-01 |
+| Tabla 5.1 | Casos del corpus por dominio de aplicación | 05-00 |
+| Tabla 5.2 | Comparativa cualitativa-cuantitativa para behavioral dynamics | 05-05 |
+| Tabla 6.1 | Cuadro síntesis del paisaje de emergencia | 06-01 |
+| Tabla A.4.1 | Tabla comparativa con 14 rivales (Anexo) | A.4 |
+| Tabla A.5.1 | Mapa de aplicaciones del marco | A.5 |
+| Tabla A.8.1 | Resultados del corpus EDI (30 casos) | A.8 |
+| Tabla A.8.2 | Métricas de robustez por caso | A.8 |
+| Tabla A.8.3 | Verificación bajo perfil agresivo | A.8 |
+| Tabla A.8.4 | Distribución del paisaje de emergencia | A.8 |
+
+---
+
+## A.9.3. Lista de abreviaturas y símbolos
+
+### Operadores formales
+
+| Símbolo | Significado | Capítulo |
+|---------|-------------|----------|
+| μ | Operador de medición; recorta R en X observable | 03-01 |
+| G | Grafo basal de dependencias entre variables | 03-01 |
+| H | Hipergrafo de relaciones n-arias | 03-01 |
+| κ | Operador de compresión multiescala | 03-01 / 03-04 |
+| ε | Operador de errores de traducción | 03-01 |
+| φ, ψ | Heading actual y heading de meta (caso 30) | 05-05 / 09-30 |
+| τ | Razón tamaño-óptico / tasa-de-cambio (Lee 1976) | 02-04 |
+| β | Error de heading φ − ψ_g | 02-04 |
+
+### Métricas y protocolos
+
+| Sigla | Significado | Capítulo |
+|-------|-------------|----------|
+| EDI | Effective Dependence Index | 03-04 |
+| RMSE | Root Mean Squared Error | 03-04 |
+| C1-C5 | Convergencia, Robustez, Determinismo, Consistencia, Uncertainty | 03-04 |
+| ABM | Agent-Based Model | 09-00 |
+| ODE | Ordinary Differential Equation | 09-00 |
+| LoE | Level of Evidence (1-5) | 03-02 |
+| CI | Confidence Interval | 03-04 |
+| CR | Cohesion Ratio (Symploké) | 03-04 |
+
+### Niveles del corpus
+
+| Nivel | Categoría | Definición operativa |
+|------:|-----------|----------------------|
+| 0 | Null | EDI ≤ 0 o sin estructura macro |
+| 1 | Trend | 0 < EDI sin significancia (p ≥ 0.05) |
+| 2 | Suggestive | 0.01 ≤ EDI < 0.10, p < 0.05 |
+| 3 | Weak | 0.10 ≤ EDI < 0.30, p < 0.05 |
+| 4 | Strong | EDI ≥ 0.30, p < 0.01, `overall_pass = True` |
+| 5 | Crítico (programa futuro) | Convergencia bajo múltiples sondas + datos LoE = 5 + frontera espacial nítida |
+
+**Nota explícita sobre el Nivel 5:** el manuscrito demuestra hasta Nivel 4. El Nivel 5 está definido como **horizonte programático** del marco, no como nivel alcanzado en el corpus actual. Sus condiciones (multi-sonda convergente, LoE = 5, topología heterogénea con frontera nítida) son objetivos del programa de elevación documentado en `Procesos/2026-04-28-cierre-doctoral/`.
+
+### Niveles del registro categorial
+
+| Sigla | Registro | Capítulo |
+|-------|----------|----------|
+| L1 | Psicológico-ordinario (preguntas comunicables) | 02-04 |
+| B | Conductual-biológico (anclaje empírico) | 02-04 |
+| L3 | Estructural-relacional (formalización) | 02-04 |
+| S | Semántica revisada (categorías que sobreviven) | 02-04 |
+
+### Instituciones y datasets
+
+| Sigla | Significado |
+|-------|-------------|
+| CEI | Comité de Ética en Investigación (Universidad de Antioquia) |
+| SIIU | Sistema de Información para la Investigación Universitaria |
+| OPSD | Open Power System Data |
+| OWID | Our World in Data |
+| TLE | Two-Line Element (CelesTrak) |
+
+---
+
+## Trazabilidad
+
+Las listas de este anexo se actualizarán automáticamente desde el manuscrito ensamblado (`TesisFinal/Tesis.md`) cuando se haga la conversión final a LaTeX/PDF mediante Pandoc + script de extracción. Hasta entonces, este anexo se mantiene manualmente coherente con los capítulos de origen.
 
 
 ---
