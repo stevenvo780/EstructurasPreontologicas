@@ -67,6 +67,24 @@ Cada capítulo del manuscrito se ancla en al menos un interlocutor principal y u
 31. Pearl, J. (2009). *Causality: Models, Reasoning, and Inference*. 2.ª ed. Cambridge: Cambridge University Press.
 32. Woodward, J. (2003). *Making Things Happen: A Theory of Causal Explanation*. Oxford: Oxford University Press.
 
+### B-bis. Temporalidad y filosofía del tiempo (cap 02-05)
+
+32a. Bergson, H. (1889). *Essai sur les données immédiates de la conscience*. Paris: Alcan.
+32b. Kim, J. (1998). *Mind in a Physical World: An Essay on the Mind-Body Problem and Mental Causation*. Cambridge: MIT Press.
+32c. McTaggart, J. M. E. (1908). "The Unreality of Time". *Mind* 17(68): 457–484.
+32d. Mellor, D. H. (1998). *Real Time II*. London: Routledge.
+32e. Smolin, L. (2013). *Time Reborn: From the Crisis in Physics to the Future of the Universe*. Boston: Houghton Mifflin Harcourt.
+32f. Whitehead, A. N. (1920). *The Concept of Nature*. Cambridge: Cambridge University Press.
+
+### B-ter. Ética sustantiva y filosofía normativa (cap 02-06)
+
+32g. Bunge, M. (1989). *Treatise on Basic Philosophy, Volume 8: Ethics: The Good and the Right*. Dordrecht: Reidel.
+32h. Foot, P. (2001). *Natural Goodness*. Oxford: Clarendon Press.
+32i. MacIntyre, A. (1981). *After Virtue: A Study in Moral Theory*. Notre Dame: University of Notre Dame Press.
+32j. Mackie, J. L. (1977). *Ethics: Inventing Right and Wrong*. London: Penguin.
+32k. Searle, J. R. (1964). "How to Derive 'Ought' from 'Is'". *Philosophical Review* 73(1): 43–58.
+32l. Hoyos Vásquez, G. (2007). *Comunicación y mundo de la vida*. Bogotá: Pontificia Universidad Javeriana.
+
 ### C. Información, Complejidad y Emergencia Cuantitativa
 
 33. Bar-Yam, Y. (2004). "Multiscale Complexity/Entropy". *Advances in Complex Systems* 7(1): 47–63.

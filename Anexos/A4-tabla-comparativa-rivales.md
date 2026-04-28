@@ -201,7 +201,7 @@ La tesis cumple los seis criterios. Ninguna posición rival cumple los seis. La 
 
 **Discrimina en:** C (dossier vs no especificado), D (asimetría protocolar vs un solo registro), E (cartografía multidominio con falsación 3/3 vs simulaciones internas).
 
-**Posición:** Wolfram fundamenta; la tesis disciplina. Programa de convergencia: aplicar EDI a fenómenos derivados de hypergraph rewriting (trabajo futuro 12-18 meses).
+**Posición:** Wolfram fundamenta; la tesis disciplina. **Piloto Rule 110 ejecutado** (`09-simulaciones-edi/wolfram_pilot/`): EDI = 0.55 sobre dos sondas independientes, mostrando convivencia de irreducibilidad computacional micro y cierre operativo macro detectable. Programa de convergencia post-piloto: aplicar EDI a fenómenos adicionales derivados de hypergraph rewriting (trabajo futuro 12-18 meses, ver `Bitacora/2026-04-28-cierre-doctoral/05-`).
 
 ---
 

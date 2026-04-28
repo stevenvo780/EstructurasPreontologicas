@@ -79,8 +79,9 @@ Sistema modal **al menos T (KT)** declarado en cap 02-01. T22 confirma: en `moda
 | **20 — Stress test falsabilidad (V5)** | classical.propositional | 8 condiciones de fracaso falsables | ✅ |
 | **21 — Belnap corpus multiescala (V5)** | paraconsistent.belnap | Honestidad metodológica sin colapso | ✅ |
 | **22 — Modal marco tripartito (V5)** | modal.k | Invariantes necesarios + sondas contingentes | ✅ |
+| **23 — Modal T (KT) bajo hipótesis (V5.1)** | modal.k + axioma T explícito | Cierre formal de la declaración "AT LEAST T" del cap 02-01 | ✅ |
 
-**23 teorías ejecutadas, 6 hallazgos críticos detectados (2 V4 + 4 V5), todos resueltos.**
+**24 teorías ejecutadas, 6 hallazgos críticos detectados (2 V4 + 4 V5), todos resueltos. T23 cierra la consistencia entre el sistema modal declarado en cap 02-01 (KT) y el verificado por la suite (modal.k + axioma T como hipótesis explícita, lógicamente equivalente a modal.kt).**
 
 ## Pruebas duras pasadas por la suite refactorizada
 

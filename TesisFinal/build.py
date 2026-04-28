@@ -106,12 +106,14 @@ A la Universidad de Antioquia, por sostener una tradición de filosofía de la c
     ]),
     # ── ANEXOS OPERATIVOS (A) ───────────────────────────────────────
     ('Anexos operativos', 'anexos-operativos', [
+        ('Anexo A.0: Limitaciones declaradas (consolidación)', 'Anexos/A0-limitaciones-declaradas.md', None),
         ('Anexo A.1: Glosario operativo', 'Anexos/A1-glosario-operativo.md', None),
         ('Anexo A.2: Mapa de operadores formales', 'Anexos/A2-mapa-operadores.md', None),
         ('Anexo A.3: Plantilla del dossier de anclaje', 'Anexos/A3-plantilla-dossier.md', None),
         ('Anexo A.4: Tabla comparativa con rivales', 'Anexos/A4-tabla-comparativa-rivales.md', None),
         ('Anexo A.5: Mapa de aplicaciones', 'Anexos/A5-mapa-aplicaciones.md', None),
         ('Anexo A.6: Versiones cortas de defensa y guía oral', 'Anexos/A6-version-corta-defensa.md', None),
+        ('Anexo A.6b: Respuestas tipo para defensa oral (Q&A)', 'Anexos/A6b-respuestas-tipo-defensa.md', None),
         ('Anexo A.7: Guía de defensa oral', '06-cierre/02-guia-de-defensa.md', None),
         ('Anexo A.8: Tablas crudas del corpus inter-dominio', 'Anexos/A8-tablas-crudas-corpus.md', None),
         ('Anexo A.9: Listas de figuras, tablas y abreviaturas', 'Anexos/A9-listas-figuras-tablas-abreviaturas.md', None),

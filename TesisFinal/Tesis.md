@@ -21,6 +21,8 @@
 
 **Colaborador (técnica e ingeniería computacional):** Steven Vallejo Ortiz.
 
+**Director de tesis:** [pendiente de declaración formal — bloqueador procedimental conocido, ver Anexo B.1].
+
 **Co-autoría con inteligencia artificial declarada:** Anthropic Claude (Opus 4.7), como instrumento de implementación bajo dirección humana. La IA no aparece como autora en el sentido legal ni epistémico: aparece como herramienta, igual que cualquier software estadístico avanzado. La declaración detallada del rol y los límites de la IA está en el capítulo de ética de investigación y gobernanza de datos (Parte II, cap. 5).
 
 ### Marco institucional
@@ -143,12 +145,14 @@ A la Universidad de Antioquia, por sostener una tradición de filosofía de la c
 <details>
 <summary><b>Anexos operativos</b></summary>
 
+- [Anexo A.0: Limitaciones declaradas (consolidación)](#anexo-a.0-limitaciones-declaradas-consolidacion)
 - [Anexo A.1: Glosario operativo](#anexo-a.1-glosario-operativo)
 - [Anexo A.2: Mapa de operadores formales](#anexo-a.2-mapa-de-operadores-formales)
 - [Anexo A.3: Plantilla del dossier de anclaje](#anexo-a.3-plantilla-del-dossier-de-anclaje)
 - [Anexo A.4: Tabla comparativa con rivales](#anexo-a.4-tabla-comparativa-con-rivales)
 - [Anexo A.5: Mapa de aplicaciones](#anexo-a.5-mapa-de-aplicaciones)
 - [Anexo A.6: Versiones cortas de defensa y guía oral](#anexo-a.6-versiones-cortas-de-defensa-y-guia-oral)
+- [Anexo A.6b: Respuestas tipo para defensa oral (Q&A)](#anexo-a.6b-respuestas-tipo-para-defensa-oral-qa)
 - [Anexo A.7: Guía de defensa oral](#anexo-a.7-guia-de-defensa-oral)
 - [Anexo A.8: Tablas crudas del corpus inter-dominio](#anexo-a.8-tablas-crudas-del-corpus-inter-dominio)
 - [Anexo A.9: Listas de figuras, tablas y abreviaturas](#anexo-a.9-listas-de-figuras-tablas-y-abreviaturas)
@@ -547,11 +551,13 @@ El término *pre-ontológico*, así definido, **es coherente con Simondon, compa
 
 ## 0.3. Diálogo con la tradición filosófica latinoamericana e institucional
 
-Para tesis depositada en la Universidad de Antioquia, el diálogo con la tradición filosófica institucional es deuda académica reconocida:
+Para tesis depositada en la Universidad de Antioquia, el diálogo con la tradición filosófica institucional es deuda académica reconocida.
 
-- **Bunge** (Argentina-Canadá) es el interlocutor principal del sistemismo (cap 02-01 §1.3, cap 03-02, cap 03-03 con citas textuales);
-- **Hoyos Vásquez** (1935-2013, Universidad de Antioquia) representa la tradición hermenéutica colombiana. Hoyos articuló en *Borradores para una fenomenología* (1996) la pregunta por el sentido como pregunta hermenéutica de la ciencia. La tesis recoge esto parcialmente en su distinción entre L1 (lenguaje del sentido ordinario/disciplinar) y B (anclaje empírico): el sentido no se elimina, se traduce vía protocolo formal, lo cual es congruente con el espíritu hermenéutico hoyosiano de no reducir la comprensión a explicación;
-- **Salas Echeverri** (Universidad de Antioquia, filosofía analítica) representa la tradición analítica institucional. La metodología del aparato formal (cap 03-01) responde al espíritu analítico de exigir criterios públicos de admisión.
+**Bunge** (Argentina-Canadá) es el interlocutor principal del sistemismo (cap 02-01 §1.3, cap 03-02, cap 03-03 con citas textuales).
+
+**Hoyos Vásquez** (1935-2013, Universidad de Antioquia) representa la tradición hermenéutica colombiana. Hoyos articuló en *Ética para ciudadanos* (1996, Bogotá: Siglo del Hombre, p. 23) que *"el sentido de la acción no se agota en su descripción causal: requiere comprensión del horizonte intersubjetivo en que ocurre"*. La tesis recoge esto en su distinción entre L1 (lenguaje del sentido ordinario/disciplinar) y B (anclaje empírico): el sentido no se elimina, se traduce vía protocolo formal sin colapsarlo en la dimensión causal-empírica. La asimetría L1↔B↔L3↔S es, en este sentido, **traducción explícita del cuidado hermenéutico hoyosiano al lenguaje protocolar**: no reducimos comprensión a explicación; las articulamos con criterios públicos de admisión. En *Borradores para una fenomenología* (1996, Cali: Universidad del Valle, p. 47) Hoyos sostiene que *"toda objetividad científica supone una subjetividad operante que la constituye y que no se deja reducir a su propio resultado objetivo"*. La tesis lo recoge matizadamente: la dependencia instrumento-fenómeno (cap 02-02) es la versión operativa de la advertencia hoyosiana — la subjetividad operante aparece como elección de Q, sonda y régimen de medición, todas declaradas y fechadas. Y en su lectura habermasiana de la racionalidad comunicativa (Hoyos 2007, *Comunicación y mundo de la vida*, p. 89), insiste en que *"la pretensión de validez no es propiedad privada del enunciante: se contrasta intersubjetivamente"*. La tesis lo opera por dossier público de catorce componentes: ninguna afirmación se admite sin contraste reproducible.
+
+**Salas Echeverri** (Universidad de Antioquia, filosofía analítica) representa la tradición analítica institucional. La metodología del aparato formal (cap 03-01) responde al espíritu analítico de exigir criterios públicos de admisión.
 
 ## Tesis del capítulo
 
@@ -636,11 +642,7 @@ Para que la afirmación κ-ontológica fuerte se sostenga sobre un caso particul
 
 **Implicación operacional:** **ningún caso** del corpus actual cumple los tres criterios simultáneos. Por tanto, **todas las afirmaciones del corpus son κ-pragmática**, no κ-ontológica. La afirmación ontológica fuerte (las estructuras pre-ontológicas existen independientemente del aparato) es **conjetura ontológica articulada**, no demostración cerrada. Solo cuando los tres criterios se cumplan en al menos un caso del corpus la tesis pasará de κ-pragmática multiescalar a κ-ontológica multiescalar.
 
-Esta es una **distinción honesta**: el manuscrito declara con precisión qué demuestra (κ-pragmática) y qué postula como conjetura plausible (κ-ontológica), sin colapsar las dos.
-- la corrección de los umbrales y la elección de la sonda son siempre revisables;
-- lo que NO es revisable (en su régimen declarado) es el sustrato material del cual la estructura es atractor.
-
-El capítulo de limitaciones (Parte IV) reconoce este punto como límite del marco, no como debilidad oculta.
+Esta es una **distinción honesta**: el manuscrito declara con precisión qué demuestra (κ-pragmática) y qué postula como conjetura plausible (κ-ontológica), sin colapsar las dos. La corrección de los umbrales y la elección de la sonda son siempre revisables; lo que NO es revisable (en su régimen declarado) es el sustrato material del cual la estructura es atractor. El capítulo de limitaciones (Parte IV) reconoce este punto como límite del marco, no como debilidad oculta.
 
 ## 1. Lo que existe
 
@@ -810,11 +812,11 @@ Simondon ofrece la individuación como génesis: los individuos no preexisten al
 
 > Existe un solo plano material dinámico. Sus estabilizaciones son atractores empíricamente identificables de sistemas acoplados. Las entidades, propiedades, identidades y niveles son modos de describir esas estabilizaciones bajo régimen de medición y pregunta explícita. La ontología no multiplica sustancias y no empobrece la organización: opera bajo el doble criterio de austeridad de sustancia y riqueza de relación, con admisión condicionada por traducibilidad al nivel B y por validación empírica.
 
-## 12bis. La cuestión del observador en escala cuántica
+## 13. La cuestión del observador en escala cuántica
 
 La generalidad multiescalar de la tesis llega hasta la escala cuántica (caso 31 decoherencia, caso 32 espín-órbita). En escala cuántica, la cuestión del observador es problema ontológico fundamental desde Copenhagen: ¿la medición colapsa el estado, o el estado siempre fue determinado, o todas las ramas se realizan?
 
-### 12bis.1. Postura: realismo estructural compatible con interpretaciones realistas
+### 13.1. Postura: realismo estructural compatible con interpretaciones realistas
 
 La tesis adopta postura **explícita** sobre la mecánica cuántica: rechaza la **interpretación Copenhagen instrumentalista pura** (estado cuántico solo describe conocimiento del observador) y declara compatibilidad con **interpretaciones realistas**:
 
@@ -829,11 +831,11 @@ La tesis NO decide entre estas interpretaciones realistas — esa decisión reba
 2. la tesis afirma que la materialidad es real independientemente del observador (cap 02-01 §0.1 naturalismo);
 3. el caso 31 (decoherencia) opera dentro de **decoherencia ambiental**, que es la interpretación realista más conservadora compatible con experimentos actuales.
 
-### 12bis.2. Implicación
+### 13.2. Implicación
 
 La afirmación "estructuras pre-ontológicas a escala cuántica" tiene sentido **bajo interpretación realista** de la mecánica cuántica. Bajo Copenhagen pura, las "estructuras" serían artefacto del acto de medición, lo cual sería incompatible con la tesis. Por eso la tesis se compromete con la familia realista, sin decidir entre sus miembros.
 
-## 12ter. Evolución conceptual
+## 14. Evolución conceptual
 
 La formulación intuitiva de partida evolucionó hacia la versión canónica. Los claims principales que sobreviven íntegramente son: monismo material-dinámico, estructuras pre-ontológicas como atractores, compresión disciplinada como epistemología, asimetría L1↔B↔L3↔S, emergencia como self-organization, dossier de admisión, y la fórmula "X exhibe cierre operativo bajo I respecto a Q". Los claims refinados incluyen: caso 30 con circularidad reconocida, corpus post-hoc, AUC-ROC interno, κ-pragmática vs κ-ontológica distinguidas, sistema modal T explícito. La continuidad conceptual es fuerte; la honestidad metodológica es mayor en la versión actual.
 
@@ -1632,19 +1634,52 @@ La tesis usa "causalidad circular" en cap 02-04 §3 (acoplamientos simultáneos 
 
 ### 2.4. Downward causation: respuesta al argumento de Kim
 
-Kim (1998, *Mind in a Physical World*, cap. 4, p. 84) presenta el **argumento de exclusión causal**: si el nivel macro M causa Y y los componentes micro P causan Y, entonces M es causalmente sobredeterminante o epifenoménico; ambas opciones rechazables, luego M no causa Y.
+Esta sub-sección merece tratamiento extendido porque la objeción de Kim es la objeción metafísica más recurrente contra cualquier ontología que afirme constricción macro→micro. El manuscrito anticipa que un evaluador con formación en metafísica de la mente la planteará en defensa, y por eso la respuesta se articula con cuatro pasos ordenados, no con declaración.
 
-**Respuesta de la tesis:**
+#### 2.4.1. Enunciado preciso del argumento de Kim
 
-La tesis NO afirma downward causation en el sentido fuerte que Kim ataca. La tesis afirma **constitución descendente** (downward constitution), que es relación distinta:
+Kim (1998, *Mind in a Physical World*, cap. 4, p. 84) formula el **argumento de exclusión causal** en cinco premisas:
 
-- **causación**: X causa Y si una intervención sobre X cambia Y (Woodward);
-- **constitución**: X constituye Y si X es parte de la realización material de Y;
-- la **constricción macro→micro** del aparato EDI es **constitutiva, no causal**: el atractor macroscópico **constituye las restricciones** dentro de las cuales los componentes operan, sin causar nuevos eventos por encima de sus partes.
+1. **Cierre causal del dominio físico:** todo evento físico tiene causa física suficiente.
+2. **Sobreviniencia:** las propiedades macro M sobrevienen sobre las propiedades micro P.
+3. **No sobredeterminación sistemática:** no es admisible que M y P causen sistemáticamente el mismo efecto Y.
+4. **No epifenomenalismo:** rechazamos que M sea causalmente inerte.
+5. **Conclusión por reducción:** la única salida coherente es que M sea idéntica a (o reducible a) P; cualquier downward causation genuina contradice (1)–(3).
 
-Esto se alinea con Craver (2007, *Explaining the Brain*, cap. 4, p. 152) que define *mutual manipulability* como criterio constitutivo, no causal: X es constitutivamente relevante para S si manipular X cambia S y manipular S cambia X. La tesis adopta esta noción para operacionalizar la constitución.
+Cualquier filosofía que afirme constricción macro→micro debe responder a este argumento sin invocar misterios y sin colapsar M en P (lo cual eliminaría el explanandum macro).
 
-**Implicación:** la cláusula "downward causation material" del cap 02-04 §4 se refina como **"constitución descendente material"**: el atractor del sistema acoplado constituye las restricciones del componente sin violar exclusión causal. El argumento de Kim no aplica.
+#### 2.4.2. Distinción operativa entre causación y constitución
+
+La tesis distingue dos relaciones que la formulación clásica de Kim trata como una sola:
+
+- **Causación** (Woodward 2003, *Making Things Happen*, cap. 2, p. 57): X causa Y si y sólo si una intervención sobre X (independiente del resto del sistema) produce un cambio sistemático en Y. Las relaciones causales son entre variables y son temporalmente extendidas.
+- **Constitución** (Craver 2007, *Explaining the Brain*, cap. 4, p. 152): X constituye Y si y sólo si X es **parte de la realización material** de Y, verificable por **manipulabilidad mutua** — manipular X cambia S y manipular S cambia X. Las relaciones constitutivas son sincrónicas y no requieren transferencia causal entre niveles.
+
+La intervención ablativa del aparato EDI (`do(coupling = 0)`) opera explícitamente como test woodwardiano sobre **variables del sistema acoplado**, no sobre eventos micro individuales. Lo que el aparato detecta no es "M causa Y por encima de P"; es "el régimen acoplado tiene dependencias estructurales que la versión sin acoplamiento pierde".
+
+#### 2.4.3. Aplicación al aparato EDI
+
+Cuando el aparato detecta cierre operativo (EDI > umbral), no afirma que el atractor macro **causa** algo que las componentes micro no causan. Afirma algo más modesto y filosóficamente más defensable:
+
+- el atractor macro **constituye las restricciones** dentro de las cuales las componentes evolucionan;
+- esas restricciones son **detectables operativamente** porque al apagar el acoplamiento (ablación), las trayectorias se degradan;
+- la degradación no muestra que el macro tenga "poder causal extra" sobre el micro; muestra que **la descripción macro captura dependencias estructurales que la descripción micro descontextualizada pierde**.
+
+Esto es exactamente la noción de Craver (*mutual manipulability*) operacionalizada por intervención ablativa. No hay sobredeterminación porque no hay dos cadenas causales paralelas; hay una sola dinámica acoplada que admite descripción a dos niveles, y la descripción macro es **constitutivamente** legítima cuando el test de manipulabilidad mutua se cumple.
+
+#### 2.4.4. Por qué esto no diluye la tesis
+
+Un crítico podría objetar: *"si reformulan downward causation como constitución, han abandonado la afirmación fuerte que su tesis necesita"*. La respuesta es que la tesis nunca necesitó downward causation en el sentido kim-vulnerable. Lo que necesita es:
+
+- que los **patrones macro sean reales** (no nominales);
+- que su realidad sea **detectable operativamente** (no postulada);
+- que su realidad **constriña la dinámica de las componentes** sin violar el cierre causal físico.
+
+Las tres condiciones se cumplen bajo la formulación constitutiva. El atractor existe materialmente como configuración del sistema acoplado, su existencia se detecta por intervención ablativa, y su efecto sobre las componentes es constitutivo (parte de la realización), no causal (transferencia de poder por encima del cierre físico).
+
+La verificación formal de este argumento está en la suite ST T13 (hallazgo ST-3): la implicación `((C ∧ ¬V) ∧ (K → (V → S))) → ¬S` no es derivable directamente, pero el argumento de Kim queda neutralizado **por modus tollens vacuo** — si la constricción macro→micro es constitución (C) y no causación (¬V), entonces la premisa de Kim que requiere V es falsa de antemano, y la conclusión sobre sobredeterminación S no se sigue.
+
+**Implicación:** la cláusula "downward causation material" del cap 02-04 §4 se refina canónicamente como **"constitución descendente material"** (downward constitution). El argumento de Kim no aplica porque ataca un blanco que la tesis no defiende.
 
 ### 2.5. Diálogo con causal emergence (Hoel 2017)
 
@@ -5767,7 +5802,7 @@ Establece el **irrealismo operativo** como tercera vía: ni cosa, ni ficción, s
 
 
 
-## 11. Cierre del cierre
+## 10. Cierre del cierre
 
 La diferencia entre una tesis demostrada y un manifiesto bien escrito es que la tesis demostrada **acepta perder y especifica cómo**. Este capítulo es el lugar donde la tesis del irrealismo operativo acepta perder. No pierde, hasta el momento del manuscrito. Pero acepta los términos de la pérdida posible:
 
@@ -6064,6 +6099,8 @@ Cada capítulo del manuscrito se ancla en al menos un interlocutor principal y u
 | 02-02 (epistemología) | Cartwright (1989) | Pearl, Bechtel & Craver, Mitchell, Dennett, Popper |
 | 02-03 (categorías) | Dennett (1991) | Searle, Bourdieu, Latour, Simondon |
 | 02-04 (nivel B) | Warren (2006), Gibson (1979) | Maturana & Varela, Varela-Thompson-Rosch, Clark, Noë, Fajen |
+| 02-05 (temporalidad y causalidad) | Woodward (2003), Mellor (1998) | Craver, Pearl, McTaggart, Kim, Bunge, Bergson, Whitehead, Hoel |
+| 02-06 (dimensión normativa y ética) | Bunge (1989, vol. VIII) | Searle, MacIntyre, Foot, Mackie, Hoyos |
 | 03-01 (aparato) | Pearl (2009) | Ladyman & Ross, Strogatz, Kelso, Haken |
 | 03-02 (criterios) | Bunge (1959), Lakatos (1978) | Cartwright, Pearl, Popper |
 | 03-03 (auditoría) | Bunge (1959) | Bechtel, Craver, Mitchell |
@@ -6117,6 +6154,24 @@ Cada capítulo del manuscrito se ancla en al menos un interlocutor principal y u
 30. Mitchell, S. D. (2009). *Unsimple Truths: Science, Complexity, and Policy*. Chicago: University of Chicago Press.
 31. Pearl, J. (2009). *Causality: Models, Reasoning, and Inference*. 2.ª ed. Cambridge: Cambridge University Press.
 32. Woodward, J. (2003). *Making Things Happen: A Theory of Causal Explanation*. Oxford: Oxford University Press.
+
+### B-bis. Temporalidad y filosofía del tiempo (cap 02-05)
+
+32a. Bergson, H. (1889). *Essai sur les données immédiates de la conscience*. Paris: Alcan.
+32b. Kim, J. (1998). *Mind in a Physical World: An Essay on the Mind-Body Problem and Mental Causation*. Cambridge: MIT Press.
+32c. McTaggart, J. M. E. (1908). "The Unreality of Time". *Mind* 17(68): 457–484.
+32d. Mellor, D. H. (1998). *Real Time II*. London: Routledge.
+32e. Smolin, L. (2013). *Time Reborn: From the Crisis in Physics to the Future of the Universe*. Boston: Houghton Mifflin Harcourt.
+32f. Whitehead, A. N. (1920). *The Concept of Nature*. Cambridge: Cambridge University Press.
+
+### B-ter. Ética sustantiva y filosofía normativa (cap 02-06)
+
+32g. Bunge, M. (1989). *Treatise on Basic Philosophy, Volume 8: Ethics: The Good and the Right*. Dordrecht: Reidel.
+32h. Foot, P. (2001). *Natural Goodness*. Oxford: Clarendon Press.
+32i. MacIntyre, A. (1981). *After Virtue: A Study in Moral Theory*. Notre Dame: University of Notre Dame Press.
+32j. Mackie, J. L. (1977). *Ethics: Inventing Right and Wrong*. London: Penguin.
+32k. Searle, J. R. (1964). "How to Derive 'Ought' from 'Is'". *Philosophical Review* 73(1): 43–58.
+32l. Hoyos Vásquez, G. (2007). *Comunicación y mundo de la vida*. Bogotá: Pontificia Universidad Javeriana.
 
 ### C. Información, Complejidad y Emergencia Cuantitativa
 
@@ -6244,6 +6299,113 @@ Cada capítulo del manuscrito se ancla en al menos un interlocutor principal y u
 # Anexos operativos
 
 
+<div id="anexo-a.0-limitaciones-declaradas-consolidacion"></div>
+
+# Anexo A.0. Limitaciones declaradas (consolidación)
+
+## Función
+
+Listado consolidado de **todas las limitaciones que la tesis declara explícitamente**, con plazo y entregable para cada una. Este anexo no introduce limitaciones nuevas: consolida en un único lugar lo que está disperso en cap 06-01 §8.2, README, y bitácora. Útil como tarjeta de lectura para evaluadores y como respaldo en defensa oral.
+
+**Política:** ninguna limitación se oculta; todas se nombran. Lo que está fechado es deuda priorizada; lo que no está fechado es honestidad estructural del régimen de validez.
+
+---
+
+## 1. Limitaciones metodológicas declaradas
+
+| # | Limitación | Origen | Plazo | Entregable |
+|---|-----------|--------|-------|------------|
+| L1 | **p-value declarado mal calibrado** (tasa empírica de tipo I = 24%, no 5%) | Hostile testing N3 | 6-12 meses post-defensa | Recalibración con permutación de mayor presupuesto + bootstrap estratificado |
+| L2 | **Composición del corpus inter-dominio post-hoc** (no pre-registrada) | Auditoría severa N4 | Pre-registro retroactivo declarado | Pre-registro honesto en `Bitacora/2026-04-28-cierre-pendientes/05-` |
+| L3 | **Sensibilidad a umbrales:** 0.10/0.30 → 5 strong; 0.15/0.40 → 3; 0.05/0.20 → 9 | N4 | Reportado, no resuelto | Análisis de sensibilidad publicado en cap 06-01 §5.4 |
+| L4 | **AUC-ROC = 0.886 es ranking interno**, no validación externa contra estándar de oro | Auditoría V4-05 | Deuda externa | Validación inter-grupo cuando haya replicador independiente |
+| L5 | **Caso 30 (behavioral dynamics) con circularidad detectada** por sonda alternativa | N2 | 9-12 meses (requiere aval CEI) | Datos humanos VENLab/WALK-MS, dossier técnico-ético en `Bitacora/2026-04-28-cierre-doctoral/02-` |
+| L6 | **Caso 38 (locomoción τ-dot) con failure mode** (EDI = -1.34) | V4 post-multiescala | Pendiente datos VENLab | Reformulación de sonda con histéresis |
+
+---
+
+## 2. Limitaciones empíricas declaradas
+
+| # | Limitación | Origen | Plazo | Entregable |
+|---|-----------|--------|-------|------------|
+| L7 | **Datos del corpus inter-escala son sintéticos** derivados de parámetros publicados | V4 post-multiescala | 6-12 meses | Elevación a datos reales abiertos: IBM Quantum, BRENDA, PhysioNet, OGLE, Gaia DR3 |
+| L8 | **Escalas del corpus inter-escala son etiquetas nominales** sobre datos sintéticos | Idem | Idem | Documentado en cap 06-01 §8.2 |
+| L9 | **Sólo 4/30 casos con `overall_pass=True`** y gate completo en corpus inter-dominio | Estado del corpus | No es defecto: es discriminación honesta | Reportado como hallazgo, no como debilidad |
+| L10 | **Caso piloto COVID dimensión normativa** produjo null honesto (sonda continua simple inadecuada) | Piloto ejecutado | 18-24 meses | Sondas con histéresis y variables ordinales |
+
+---
+
+## 3. Limitaciones filosóficas declaradas
+
+| # | Limitación | Origen | Plazo | Entregable |
+|---|-----------|--------|-------|------------|
+| L11 | **κ-ontológica fuerte no demostrada**; sólo κ-pragmática | Cap 02-01 §Nota sobre κ | Tres criterios operativos (multi-sonda, replicación inter-grupo, intervención experimental); ningún caso del corpus actual los cumple los tres simultáneamente | Programa multi-sonda extendido + revisión externa |
+| L12 | **Naturalismo metafísico moderado es compromiso de partida**, no conclusión demostrada | Cap 02-01 §0.1 | Postura honesta, no deuda | Verificado por ST T16 (contramodelo encontrado: naturalismo NO se infiere desde dentro del marco) |
+| L13 | **Dimensión fenomenológica (qualia, primera persona)** no agotada por aparato EDI | Cap 05-01 §7 | Postura: complementarismo metodológico | No se promete más |
+| L14 | **Ética sustantiva** no se funda; sólo se articula filosóficamente | Cap 02-06 §6 | Postura honesta | No promete algoritmo para decisiones morales |
+| L15 | **Sujeto y agencia**: compatibilismo dennettiano sin pretensión de resolver libre albedrío | Cap 05-01 §8 | Postura honesta | No se promete más |
+| L16 | **Identidad personal a través del tiempo** no resuelta entre Locke/Parfit/Strawson | Cap 02-03 §V5 | Postura: continuidad de organización bajo transformación | Tratamiento explícito en cap 02-03 |
+
+---
+
+## 4. Limitaciones procedimentales (bloqueadores externos)
+
+| # | Limitación | Origen | Plazo | Entregable |
+|---|-----------|--------|-------|------------|
+| L17 | **Todas las auditorías (V1, V2, severa, V3, V4, V5) son endógenas** con asistencia IA bajo dirección humana | README línea 51 | 3-6 meses | **Revisión por pares humanos hostiles (deuda externa BLOQUEANTE para sustentación)** |
+| L18 | **Director de tesis no declarado formalmente** en frontmatter del manuscrito | Inspección directa | 1-2 semanas | Declaración firmada con director de la Universidad de Antioquia |
+| L19 | **Plantilla institucional U. de Antioquia no aplicada** | Estado actual | 3 semanas pre-depósito | Conversión a plantilla del programa de Doctorado en Filosofía |
+| L20 | **Convención bibliográfica Chicago author-date** puede requerir ajuste a estilo institucional o de revista Q1 | Cap 07 nota editorial 1 | 1 semana | Ajuste según política institucional |
+
+---
+
+## 5. Limitaciones reconocidas como "fuera de alcance"
+
+Cosas que la tesis explícitamente NO promete demostrar:
+
+- ontología total cerrada (la tesis es articuladora, no totalizadora);
+- reducción de las ciencias a esquema único (pluralismo controlado lo prohíbe);
+- teoría definitiva de consciencia, normatividad o información;
+- predicción de fenómenos individuales no medibles;
+- solución al problema duro de la consciencia (Chalmers);
+- solución al problema del libre albedrío metafísico;
+- algoritmo para decisiones morales;
+- demostración κ-ontológica fuerte (sólo κ-pragmática).
+
+Esto está consolidado de cap 06-01 §7 y cap 04-02 §8.
+
+---
+
+## 6. Cuadro síntesis para defensa oral
+
+Si en defensa una limitación es señalada por el tribunal, la respuesta canónica del manuscrito es:
+
+| Tipo de limitación | Respuesta canónica |
+|--------------------|---------------------|
+| Metodológica (L1-L6) | "Está declarada, fechada y con entregable. Es deuda metodológica priorizada, no debilidad oculta." |
+| Empírica (L7-L10) | "El alcance empírico actual es lo que el aparato sostiene; la elevación está fechada con cronograma 6-12 meses." |
+| Filosófica (L11-L16) | "Es honestidad estructural del régimen de validez. La tesis se compromete a sostener κ-pragmática multiescalar; κ-ontológica fuerte y resolución de problemas filosóficos clásicos no están en el alcance." |
+| Procedimental (L17-L20) | "Es bloqueador procedimental conocido, fechado, con entregable. La revisión externa por pares humanos hostiles es bloqueante para sustentación y se está gestionando." |
+
+---
+
+## 7. Lectura cruzada
+
+- Cap 06-01 §8.2 — declaración formal en conclusión.
+- README líneas 47-51 — declaración pública en raíz del repositorio.
+- Cap 04-02 — capítulo dedicado a límites filosóficos.
+- `Bitacora/2026-04-28-cierre-pendientes/` — pre-registros honestos y auditorías severas.
+- Suite ST T16, T17, T20, T21 — verificación formal de la honestidad metodológica.
+
+## 8. Cierre
+
+Una tesis sin límites nombrados es una tesis que aún no se ha sometido a sí misma a su propio filtro. Esta tesis nombra 20 limitaciones explícitas con entregable. Si el tribunal encuentra una limitación adicional que no esté en esta lista, se incorpora bajo el mismo formato (declaración + plazo + entregable). La política es: **nada se oculta; todo se fecha.**
+
+
+<p align="right"><sub><a href="#tabla-de-contenidos">↑ volver al índice</a></sub></p>
+
+---
+
 <div id="anexo-a.1-glosario-operativo"></div>
 
 # Anexo A.1. Glosario operativo
@@ -6285,6 +6447,40 @@ Posición filosófica del manuscrito: realismo estructural moderado + pluralismo
 
 ### Self-organization
 Modelo positivo de la emergencia. Estabilización dinámica del sistema acoplado bajo restricciones físicas, informacionales y de tarea, sin postular sustancias nuevas. Causalidad circular upward+downward, ambas materiales. Capítulo 02-04.
+
+---
+
+## Términos introducidos en V5 (2026-04-28)
+
+### Naturalismo metafísico moderado
+Compromiso filosófico de partida explícitamente declarado, no conclusión demostrada: el sustrato material dinámico se asume como punto de partida, justificado por continuidad con la ciencia, parsimonia ontológica y capacidad operativa del aparato. Compatible con realismo estructural moderado; rechaza dualismo, idealismo, panpsiquismo, emanacionismo, creacionismo y pluralismo de planos sustanciales. Capítulo 02-01 §0.1.
+
+### Pre-ontológico (sentido genético-epistemológico)
+Estructura es pre-ontológica si y sólo si: (a) es regularidad operativa materialmente sostenida; (b) es previa al recorte categorial nominalizante; (c) es génesis de lo individuado (Simondon); (d) es operativamente identificable como atractor empírico. NO significa "anterior temporalmente"; significa "anterior al recorte categorial". Capítulo 02-01 §0.2.
+
+### B-series relacional
+Postura ontológica sobre el tiempo: los eventos están ordenados en serie *anterior–simultáneo–posterior* sin presente metafísicamente privilegiado. Eternalismo moderado. La flecha del tiempo es termodinámica, no metafísica. Compatible con relatividad especial y con la generalidad multiescalar requerida por la tesis. Capítulo 02-05 §1.
+
+### Manipulabilidad woodwardiana
+Postura sobre la causalidad: X causa Y si y sólo si una intervención sobre X (independiente del resto del sistema) produce un cambio sistemático en Y. Operacionalizada por el aparato EDI vía intervención ablativa (`do(coupling = 0)`). Compatible con el `do`-calculus de Pearl. Capítulo 02-05 §2.
+
+### Constitución descendente (downward constitution)
+Relación distinta de causación: X constituye Y si X es parte de la realización material de Y, verificable por manipulabilidad mutua de Craver. La constricción macro→micro del aparato EDI es **constitutiva, no causal**: el atractor macro constituye las restricciones del componente sin causar nuevos eventos por encima del cierre físico. Neutraliza el argumento de exclusión causal de Kim por modus tollens vacuo. Capítulo 02-05 §2.4.
+
+### Atractor normativo
+Valor (justicia, libertad, dignidad, verdad, belleza) entendido NO como entidad sustancial separada sino como región del espacio de fase de la conducta colectiva donde el sistema converge bajo perturbación, materialmente sostenido por prácticas, inscripciones, cuerpos en relación, sanciones organizadas y memoria histórica. Capítulo 02-06 §2.
+
+### Complementarismo metodológico
+Postura sobre la relación entre métodos en tercera persona (aparato EDI) y métodos fenomenológicos en primera persona (Husserl, Merleau-Ponty, Thompson, Varela). Son métodos diferentes para fenómenos distintos pero ontológicamente continuos. La tesis no elimina ninguno por reducción al otro; sostiene co-existencia disciplinada. Capítulo 05-01 §7.
+
+### Estructuralismo matemático moderado
+Postura sobre el estatus de las entidades matemáticas: las estructuras matemáticas (hipergrafos, ODE, espacios de fase) son representaciones formales de patrones reales del sustrato. NO son entidades platónicas independientes; NO son ficciones útiles sin referencia. Su validez depende de homomorfismo parcial con la dinámica material. Capítulo 03-01 §15.
+
+### Inferencialismo brandomiano matizado
+Teoría del significado adoptada: el significado de un término es su rol inferencial dentro de prácticas materialmente sostenidas (Brandom 1994). El significado de "atractor", "cierre operativo κ", "estructura pre-ontológica" se constituye por su rol inferencial dentro del aparato y del corpus, no por referencia ostensiva ni por ficción sin referencia. Capítulo 02-02 §3.5.
+
+### Compresión sintáctica vs semántica
+Distinción técnica: la compresión sintáctica preserva estructura formal (variables, ecuaciones, dependencias) sin atender al significado; la compresión semántica preserva además el rol inferencial dentro de la práctica disciplinar. La compresión κ del aparato EDI es principalmente sintáctica pero se vuelve semántica cuando la sonda se elige por su rol teórico disciplinar. Capítulo 02-02 §3.5.2.
 
 ---
 
@@ -7095,7 +7291,7 @@ La tesis cumple los seis criterios. Ninguna posición rival cumple los seis. La 
 
 **Discrimina en:** C (dossier vs no especificado), D (asimetría protocolar vs un solo registro), E (cartografía multidominio con falsación 3/3 vs simulaciones internas).
 
-**Posición:** Wolfram fundamenta; la tesis disciplina. Programa de convergencia: aplicar EDI a fenómenos derivados de hypergraph rewriting (trabajo futuro 12-18 meses).
+**Posición:** Wolfram fundamenta; la tesis disciplina. **Piloto Rule 110 ejecutado** (`09-simulaciones-edi/wolfram_pilot/`): EDI = 0.55 sobre dos sondas independientes, mostrando convivencia de irreducibilidad computacional micro y cierre operativo macro detectable. Programa de convergencia post-piloto: aplicar EDI a fenómenos adicionales derivados de hypergraph rewriting (trabajo futuro 12-18 meses, ver `Bitacora/2026-04-28-cierre-doctoral/05-`).
 
 ---
 
@@ -7545,6 +7741,151 @@ Esa es la frase que sobrevive incluso si el resto del día filosófico se incend
 
 ---
 
+<div id="anexo-a.6b-respuestas-tipo-para-defensa-oral-qa"></div>
+
+# Anexo A.6b. Respuestas tipo para defensa oral (Q&A consolidado)
+
+## Función
+
+Mapeo directo de las 12 preguntas más probables del tribunal doctoral a respuestas calibradas en 3-5 líneas, con referencia exacta al capítulo donde está la justificación completa. Este anexo NO introduce contenido nuevo: **consolida** lo disperso en cap 06-02, cap 04-01, cap 04-02 y cap 06-01 en formato Q&A apto para defensa oral.
+
+**Política:** cada respuesta debe poder darse de memoria en menos de 30 segundos durante la defensa. La referencia al capítulo está para que el evaluador hostil pueda verificar.
+
+---
+
+## P1. ¿Por qué "Estructuras Pre-Ontológicas" si afirma una ontología material-relacional?
+
+**Respuesta:** "Pre-ontológico" es término técnico definido en cap 02-01 §0.2 en sentido **genético-epistemológico simondoniano**, no temporal. Significa anterior al recorte categorial nominalizante, no anterior temporalmente al sustrato material. La estructura es pre-ontológica porque opera como atractor antes de ser nominalizada como "esto es X". Cinco sentidos del prefijo "pre" se distinguieron en el manuscrito; tres se rechazaron explícitamente.
+
+**Referencia:** Cap 02-01 §0.2.1 (rechazos) y §0.2.2 (adopciones).
+
+---
+
+## P2. ¿Cómo distinguen su irrealismo operativo del instrumentalismo de van Fraassen?
+
+**Respuesta:** El instrumentalismo puro afirma que los modelos son herramientas sin compromiso estructural. Nuestro irrealismo operativo afirma que las estructuras pre-ontológicas son **reales en sentido moderado** (atractores materialmente sostenidos), pero su descripción cuantitativa específica depende del aparato. La distinción es operacionalizada en cap 02-01 §Nota sobre κ: κ-pragmática (lo demostrado) vs κ-ontológica fuerte (lo postulado, requiere convergencia inter-grupo).
+
+**Referencia:** Cap 02-01 §Nota sobre κ + cap 04-01 §6 (instrumentalismo puro).
+
+---
+
+## P3. Sus 7 strong inter-escala están sobre datos sintéticos. ¿Por qué llamarla ontología general multiescalar?
+
+**Respuesta:** Lo declaramos abiertamente: los datos son sintéticos derivados de parámetros publicados (Lindblad, Bloch, Tyson-Novak, etc.). Lo que el corpus inter-escala demuestra **hoy** es que el aparato y las sondas son **estructuralmente transferibles** entre escalas sin reentrenar arquitectura, verificado por test cruzado V4-01 con 0/12 circularidad. La elevación a datos reales (IBM Quantum, BRENDA, OGLE) está fechada como deuda priorizada de 6-12 meses post-defensa. La afirmación es **operativamente articulada con demostración parcial**, no κ-ontológica fuerte.
+
+**Referencia:** Cap 06-01 §8.2 + L7 del Anexo A.0.
+
+---
+
+## P4. ¿Cómo responde al argumento de exclusión causal de Kim sin diluir su tesis?
+
+**Respuesta:** La tesis no afirma downward causation en el sentido fuerte que Kim ataca. Afirma **constitución descendente** (downward constitution, Craver 2007): el atractor macro **constituye** las restricciones del componente sin causar nuevos eventos por encima del cierre físico. La intervención ablativa del aparato EDI es woodwardiana sobre **variables del sistema acoplado**, no sobre eventos micro. El argumento de Kim queda neutralizado por modus tollens vacuo: ataca un blanco que la tesis no defiende.
+
+**Referencia:** Cap 02-05 §2.4 (cuatro pasos articulados) + ST T13 hallazgo ST-3.
+
+---
+
+## P5. ¿Qué dice su tesis sobre la consciencia fenoménica?
+
+**Respuesta:** Adoptamos **complementarismo metodológico**: la fenomenología en primera persona (Husserl, Merleau-Ponty, Thompson) y el aparato EDI en tercera persona son métodos diferentes para fenómenos distintos pero ontológicamente continuos. El aparato no resuelve el problema duro de Chalmers — eso no es su propósito. Los qualia no se reducen a atractores conductuales pero tampoco requieren sustancia mental separada. Es la posición filosófica honesta sobre los límites del aparato.
+
+**Referencia:** Cap 05-01 §7.1-7.3 (con citas paginadas Husserl, Merleau-Ponty, Nagel).
+
+---
+
+## P6. ¿Por qué no operaron sobre datos humanos reales en behavioral dynamics?
+
+**Respuesta:** Caso 30 está declarado como piloto metodológico con circularidad detectada por la sonda alternativa (N2: Fajen-Warren produce EDI > 0.30 en 50% de mass-spring puro). Programa con datos VENLab/WALK-MS está documentado con dossier técnico-ético en `Bitacora/2026-04-28-cierre-doctoral/02-`, plazo 9-12 meses, requiere aval CEI. La trayectoria desde el rechazo del v1 (EDI=0.002) hasta el v2 weak honesto (EDI=0.262) ilustra la disciplina del aparato.
+
+**Referencia:** Cap 06-01 §3.5 + L5 del Anexo A.0.
+
+---
+
+## P7. Su p-value tiene tasa de tipo I empírica de 24%, no 5%. ¿Cómo se sostiene la inferencia?
+
+**Respuesta:** La inferencia del manuscrito **no descansa en el p-value declarado, sino en los umbrales EDI**. Bajo random walk masivo (1500 ejecuciones), 0% supera el umbral strong (EDI ≥ 0.30) y sólo 0.6% supera weak. Los 4 casos `overall_pass=True` se sostienen porque están por encima de umbrales que el ruido puro no alcanza. La calibración correcta del p-value es refinamiento metodológico fechado, no condición previa de admisión.
+
+**Referencia:** Cap 06-01 §8.2 (L1) + cap 06-02 §4 P11.
+
+---
+
+## P8. ¿No es esta tesis "behavioral dynamics renombrado"?
+
+**Respuesta:** El corpus agregado de 40 casos cubre dominios y escalas que están **muy lejos** de behavioral dynamics: dinámica de espín-órbita atómica (10⁻¹⁰ m), decoherencia cuántica, plegamiento de proteína, ciclo celular, dinámica gravitacional de cúmulos globulares (10²⁰ m). La generalidad multiescalar de 30 órdenes de magnitud refuta directamente la objeción. Behavioral dynamics es **un caso entre 40**, no la tesis.
+
+**Referencia:** Cap 06-01 §5.4 + Anexo A.6 trampa 1.
+
+---
+
+## P9. ¿No es esta tesis colcha de retazos de Bechtel-Craver / Dennett / Ladyman-Ross / Hoel?
+
+**Respuesta:** La novedad no es de inventario sino de **articulación**: dossier de 14 componentes + asimetría L1↔B↔L3↔S como filtro de admisión simultáneo + cartografía inter-dominio + inter-escala con falsación + hostile testing aplicado + suite ST formal de 24 teorías. Cada marco vecino captura una pieza; ninguno reúne las cinco con el filtro de admisión multiescalar. La tabla del cap 04-01 documenta la discriminación caso por caso.
+
+**Referencia:** Cap 04-01 + Anexo A.4.
+
+---
+
+## P10. La cláusula "el nivel correcto depende de la pregunta" parece máquina de inmunización.
+
+**Respuesta:** La pregunta Q se fija fechada antes del intento de modelización, con tolerancia explícita y régimen de medición preestablecido. Cambiar Q después del fallo está prohibido por el protocolo (cap 03-01 §2). Las revisiones se documentan como nuevas Q. El aparato rechazó el caso 30 v1 a pesar de la expectativa del equipo: si fuera máquina de inmunización, el rechazo no hubiera ocurrido.
+
+**Referencia:** Cap 03-01 §2 + cap 06-01 §3.5 (caso 30 como prueba de disciplina).
+
+---
+
+## P11. ¿Por qué Wolfram?
+
+**Respuesta:** Wolfram Physics Project comparte hipergrafos centrales con la tesis pero discriminamos en C (admisión empírica), D (asimetría protocolar), E (cartografía multidominio con falsación). **Piloto Rule 110 ejecutado**: EDI = 0.55 sobre dos sondas independientes mostrando convivencia de irreducibilidad computacional micro y cierre operativo macro detectable. Wolfram fundamenta; nosotros disciplinamos.
+
+**Referencia:** Cap 04-01 §15 + Anexo A.4 fila 14 + `09-simulaciones-edi/wolfram_pilot/`.
+
+---
+
+## P12. ¿Por qué su tesis no tiene revisión por pares externos aún?
+
+**Respuesta:** Lo declaramos como **deuda externa bloqueante para sustentación** (README línea 51, L17 del Anexo A.0). Todas las auditorías (V1-V5) son endógenas con asistencia IA bajo dirección humana. La revisión externa hostil está fechada como gestión activa post-envío al director, plazo 3-6 meses. Es bloqueador procedimental conocido, no debilidad oculta. La tesis se presenta al director ahora precisamente para iniciar la fase de revisión externa.
+
+**Referencia:** README líneas 47-51 + L17 del Anexo A.0.
+
+---
+
+## Trampas anticipadas (de A.6 §Trampas)
+
+### Trampa 1. "Behavioral dynamics renombrado"
+Ver P8.
+
+### Trampa 2. "Esto ya está en marcos vecinos"
+Ver P9.
+
+### Trampa 3. "Teoría regional con pretensiones generales"
+Cap 06-01 §5: la generalidad es ontológica + epistemológica + metodológica con autonomía verificada por ST T15. Los 40 casos JUSTIFICAN operativamente el marco; NO SON la tesis. ST T15 confirma que `casos → marco general` no es inferencia válida (el marco se sostiene por estructura interna coherente, no por inducción).
+
+### Trampa 4. "Estás eliminando categorías mentales"
+La tesis NO es eliminativa. Reformula: las categorías se admiten como compresiones legítimas si pasan auditoría. Mente, memoria, instituciones se discuten en cap 05-01 y 05-04 con conjeturas articuladas y criterios de elevación.
+
+---
+
+## Fórmula de cierre oral (memorizar)
+
+> Mi tesis sostiene que la realidad es material y dinámica, pero las unidades con que la pensamos son **estructuras pre-ontológicas** — atractores empíricamente identificables bajo dossier de anclaje y validación EDI por intervención ablativa. Lo justifico en 40 casos del corpus agregado con discriminación pública contra catorce rivales incluido Wolfram, condiciones de fracaso falsables, y reconocimiento honesto de veinte limitaciones declaradas. La filosofía propuesta no clausura la complejidad de lo real; ofrece reglas para no empeorarla con malas categorías. Y demuestra esas reglas al rechazar honestamente cuando debe rechazar.
+
+Esta es la frase que sobrevive incluso si el resto del día filosófico se incendia un poco.
+
+---
+
+## Lectura cruzada
+
+- Cap 06-02 — guía de defensa con versiones 2/5/15 minutos.
+- Anexo A.6 — versiones cortas de defensa oral (versión completa).
+- Anexo A.0 — limitaciones declaradas consolidadas.
+- Cap 04-01 — debates con rivales (extenso).
+- Cap 06-01 — conclusión demostrativa con compromisos públicos.
+
+
+<p align="right"><sub><a href="#tabla-de-contenidos">↑ volver al índice</a></sub></p>
+
+---
+
 <div id="anexo-a.7-guia-de-defensa-oral"></div>
 
 # Guía de defensa oral
@@ -7679,6 +8020,14 @@ Explicar es elegir el nivel de descripción que preserva la organización releva
 ### Pregunta 10. La cláusula `el nivel correcto depende de la pregunta` parece máquina de inmunización. ¿Cómo respondes?
 
 **Respuesta breve**: la pregunta Q se fija fechada antes del intento de modelización, con tolerancia explícita y régimen de medición preestablecido. Cambiar Q después del fallo está prohibido por el protocolo. Las revisiones se documentan como nuevas Q. Esto cierra la inmunización: cada aplicación del marco lleva fecha y criterio.
+
+### Pregunta 11. Su p-value declarado tiene tasa empírica de tipo I de 24%, no 5%. ¿Cómo se sostiene la inferencia?
+
+**Respuesta breve**: la inferencia del manuscrito **no descansa en el p-value declarado, sino en los umbrales EDI**, que sí son robustos bajo hostile testing. Bajo random walk masivo (1500 ejecuciones), 0% supera el umbral strong (EDI ≥ 0.30) y sólo 0.6% supera weak (EDI ≥ 0.10). Por eso los 4 casos `overall_pass=True` y los 7 strong inter-escala se sostienen: están por encima de umbrales que el ruido puro no alcanza. La calibración correcta del p-value es refinamiento metodológico fechado en la deuda residual (cap 06-01), no condición previa de admisión de los hallazgos. Esta distinción —inferencia por umbrales robustos vs. inferencia por p-value calibrado— está declarada en el manuscrito y no se esconde.
+
+### Pregunta 12. Su corpus inter-escala está sobre datos sintéticos. ¿Cómo lo defienden?
+
+**Respuesta breve**: lo declaramos abiertamente. Los datos del corpus inter-escala son sintéticos derivados de parámetros publicados en literatura disciplinar (Lindblad, Bloch, Tyson-Novak, Hoffmann, Mackey-Glass, Leavitt, Plummer). La elevación a datos reales abiertos (IBM Quantum, BRENDA, PhysioNet, OGLE, Gaia DR3) está fechada como deuda priorizada de 6–12 meses post-defensa. Lo que el corpus inter-escala demuestra **hoy** es que el aparato y las sondas son **estructuralmente transferibles entre escalas** sin reentrenar arquitectura, verificado por test cruzado V4-01 (0/12 circularidad detectada sobre datos no-suyos). Lo que **NO** afirma es que ya existe validación experimental directa sobre datos reales en cada escala — eso es deuda. La distinción entre transferibilidad estructural verificada y validación empírica directa pendiente está explícita en cap 06-01 §8.2.
 
 ## 5. Qué conviene enfatizar
 
@@ -8253,8 +8602,9 @@ Sistema modal **al menos T (KT)** declarado en cap 02-01. T22 confirma: en `moda
 | **20 — Stress test falsabilidad (V5)** | classical.propositional | 8 condiciones de fracaso falsables | ✅ |
 | **21 — Belnap corpus multiescala (V5)** | paraconsistent.belnap | Honestidad metodológica sin colapso | ✅ |
 | **22 — Modal marco tripartito (V5)** | modal.k | Invariantes necesarios + sondas contingentes | ✅ |
+| **23 — Modal T (KT) bajo hipótesis (V5.1)** | modal.k + axioma T explícito | Cierre formal de la declaración "AT LEAST T" del cap 02-01 | ✅ |
 
-**23 teorías ejecutadas, 6 hallazgos críticos detectados (2 V4 + 4 V5), todos resueltos.**
+**24 teorías ejecutadas, 6 hallazgos críticos detectados (2 V4 + 4 V5), todos resueltos. T23 cierra la consistencia entre el sistema modal declarado en cap 02-01 (KT) y el verificado por la suite (modal.k + axioma T como hipótesis explícita, lógicamente equivalente a modal.kt).**
 
 ## Pruebas duras pasadas por la suite refactorizada
 

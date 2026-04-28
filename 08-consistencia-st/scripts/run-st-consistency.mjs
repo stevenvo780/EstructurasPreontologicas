@@ -35,7 +35,9 @@ const suite = [
   { file: 'theories/19-asimetria-tres-marcos.st', mode: 'run' },
   { file: 'theories/20-stress-test-falsabilidad.st', mode: 'run' },
   { file: 'theories/21-belnap-corpus-multiescala.st', mode: 'run' },
-  { file: 'theories/22-modal-s5-marco-tripartito.st', mode: 'run' }
+  { file: 'theories/22-modal-s5-marco-tripartito.st', mode: 'run' },
+  // Teoría V5.1 (cierre de consistencia formal entre lo declarado KT y lo verificado)
+  { file: 'theories/23-modal-kt-bajo-hipotesis.st', mode: 'run' }
 ];
 
 mkdirSync(reportsDir, { recursive: true });
