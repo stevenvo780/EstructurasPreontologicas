@@ -1,8 +1,14 @@
 # Instituciones, mercado y Estado
 
-## MODO PROGRAMÁTICO
+## MODO PROGRAMÁTICO ACOTADO
 
-Aplicación en **modo programático** según el capítulo 05-00. Este es el dominio con la deuda más significativa porque la dimensión normativa requiere desarrollo aún pendiente del aparato.
+Aplicación en **modo programático con alcance explícitamente acotado** según el capítulo 05-00. Este es el dominio con la deuda más significativa de la tesis: la dimensión normativa (validez, legitimidad, efectividad) exige desarrollo formal pendiente del aparato. Este capítulo declara su alcance con honestidad analítica:
+
+- **Lo que sí ofrece:** un esquema conceptual coherente para tratar instituciones, mercados y Estado como atractores con cuenca persistente y bifurcaciones identificables, sin reificación ni reduccionismo;
+- **Lo que reconoce como deuda:** la operacionalización formal de la dimensión normativa como variable del sistema acoplado, condición necesaria para elevar el capítulo de programático a demostrativo;
+- **Lo que el comité debe esperar de este capítulo:** una contribución conceptual sólida y un plan de elevación con casos candidatos identificados, no una demostración cuantitativa del cierre operativo institucional.
+
+La demostración cuantitativa de la dimensión normativa queda explícitamente fuera del alcance del manuscrito actual y se documenta como deuda priorizada en `06-cierre/03-hoja-de-ruta-para-tesis-final.md` y en `Procesos/2026-04-28-cierre-doctoral/`.
 
 ## Función de este capítulo
 
@@ -139,23 +145,37 @@ La validez normativa se modelaría como cuenca de atracción del sistema institu
 
 ### 6.1. Searle — ontología social
 
-Searle ofrece la noción de hechos institucionales construidos por intencionalidad colectiva y reglas constitutivas. La tesis lo recoge parcialmente: la dimensión normativa es real, pero la tesis prefiere tratarla como cuenca de atracción del sistema, no como propiedad supraindividual de intencionalidad colectiva. Diferencia significativa, fricción productiva.
+Searle (1995, *The Construction of Social Reality*, p. 26) propone que los hechos institucionales emergen por aplicación de la fórmula constitutiva *"X cuenta como Y en el contexto C"*, sostenida por intencionalidad colectiva: *"institutional facts exist only because we believe them to exist"* (p. 32). En *Making the Social World* (2010, cap. 5) extiende la formulación incorporando "status functions" como mecanismo central.
+
+La tesis recoge parcialmente esta arquitectura. Coincide en que la dimensión normativa es real, no epifenoménica. Discrepa en que prefiere tratar la intencionalidad colectiva no como una propiedad supraindividual primitiva sino como **cuenca de atracción de la coordinación material**: las normas se sostienen porque el sistema (cuerpos, documentos, sanciones, prácticas repetidas) tiene una dinámica que retorna al cumplimiento bajo perturbación. La diferencia es estructural: para Searle la intencionalidad colectiva es ontológicamente primitiva; para la tesis es derivable del acoplamiento material-relacional sin por ello disolverla en hechos brutos.
+
+Esta es **fricción productiva**, no rechazo. La objeción searleana, *"si reduces la intencionalidad colectiva a coordinación material, pierdes la dimensión normativa propiamente dicha"* (paráfrasis del cap. 6 de Searle 2010), exige respuesta: la cuenca de atracción institucional es **normativamente eficaz** sin ser una entidad independiente; la efectividad normativa equivale al retorno del sistema al cumplimiento bajo perturbación, lo cual es medible empíricamente cuando hay datos.
 
 ### 6.2. Bourdieu — campos, habitus, prácticas
 
-Aliado principal en este dominio. Campos = atractores funcionales con cuenca; habitus = disposiciones relacionales incorporadas; prácticas = trayectorias dinámicas en el campo. La traducción al aparato es directa y permite formalización rigurosa.
+Bourdieu (1980, *Le sens pratique*, cap. 3) define el habitus como *"sistemas de disposiciones durables y transponibles, estructuras estructuradas predispuestas a funcionar como estructuras estructurantes"* (p. 88 ed. francesa, p. 92 ed. española Taurus 1991). En *Razones prácticas* (1994, cap. 2) los campos son espacios sociales con leyes propias, posiciones objetivas, capital específico.
+
+Es el **aliado principal** del capítulo. La traducción al aparato de la tesis es directa y permite formalización rigurosa: campos = atractores funcionales con cuenca específica; habitus = disposiciones relacionales materialmente incorporadas (cuerpo, gestos, lenguaje); prácticas = trayectorias dinámicas en el campo. La cuenca persistente bajo perturbación que la tesis postula como criterio de validez normativa es, formalmente, lo que Bourdieu describe cualitativamente como *"persistencia del habitus aún cuando las condiciones objetivas que lo produjeron han cambiado"* (1980, p. 100).
+
+Lo que la tesis añade a Bourdieu es **operacionalización cuantitativa**: la cuenca como objeto formal con anchura medible. Lo que Bourdieu añade a la tesis es la **historia y la genealogía**: las cuencas no son atemporales, son sedimentaciones históricas con trayectorias específicas.
 
 ### 6.3. Latour — actantes y ensamblajes
 
-Latour insiste en distribución de agencia entre humanos y no-humanos. La tesis lo recoge: instituciones son ensamblajes de cuerpos, documentos, edificios, tecnologías, prácticas. Filtro de admisión: cada actante entra como nodo si pasa criterios de patrón.
+Latour (2005, *Reassembling the Social*, cap. 3) insiste en simétrica distribución de agencia entre humanos y no-humanos: *"action is dislocated. Action is borrowed, distributed, suggested, influenced, dominated, betrayed, translated"* (p. 46). En *Pandora's Hope* (1999, cap. 6) desarrolla la noción de actante como cualquier entidad que produce diferencia perceptible.
+
+La tesis recoge la insistencia ontológica: las instituciones son ensamblajes que incluyen cuerpos, documentos, edificios, tecnologías, normas, prácticas. Cada actante entra al modelo si pasa el criterio de patrón material-relacional (capítulo 02-01). La fricción aparece en el grado de simetría: para Latour la simetría humano/no-humano es ontológicamente fuerte (un documento y una persona son actantes equivalentes en su rol estructural); la tesis admite la simetría operativa pero conserva asimetría en la dimensión normativa (solo agentes con disposiciones son sujetos de validez normativa, los soportes documentales son inscripciones de norma, no portadores).
 
 ### 6.4. Margaret Gilbert — agencia colectiva
 
-Gilbert ofrece la noción de plural subjects y compromisos conjuntos. La tesis los reformula como atractores de coordinación con cuenca persistente bajo perturbación.
+Gilbert (1989, *On Social Facts*, cap. 4) define los plural subjects como sujetos colectivos formados por compromiso conjunto: *"the parties to a joint commitment have, by virtue of their commitment, sufficient reason to act in conformity with it"* (p. 198). Es contribución analítica explícita a la ontología de la coordinación.
+
+La tesis los reformula como **atractores de coordinación con cuenca persistente bajo perturbación**. La noción gilbertiana de "plural subject" se traduce en patrón de coordinación que sostiene su forma bajo defección parcial. La diferencia con Searle es que Gilbert no requiere reglas constitutivas explícitas; basta el compromiso conjunto materialmente sostenido. La tesis está más cerca de Gilbert que de Searle en este punto.
 
 ### 6.5. Bunge — sistemismo social
 
-Bunge defiende el sistemismo (ni individualismo, ni holismo) como tercera vía. La tesis se inscribe: las instituciones son sistemas concretos con componentes, estructura, mecanismos y entorno.
+Bunge (1979, *Treatise on Basic Philosophy*, vol. 4, p. 4) define sistema como *"objeto complejo cada uno de cuyos componentes está conectado con otros componentes de tal manera que el todo posee propiedades que ninguno de sus componentes posee"*. En *Sistemas sociales y filosofía* (1995, parte II) extiende el sistemismo al dominio social oponiéndose tanto al individualismo como al holismo: *"a society is not a thing or substance but a system of social relations among persons"* (1995, p. 79).
+
+La tesis se inscribe en esta tradición. Las instituciones son sistemas concretos con composición (cuerpos, documentos, infraestructura), entorno (otros sistemas, condiciones materiales), estructura (relaciones específicas) y mecanismo (procesos que producen el comportamiento agregado, en términos de Bunge 1997). Lo que la tesis añade al sistemismo bunguiano es el **criterio empírico operativo de cierre vía intervención ablativa**: no basta definir el sistema; hay que mostrar que su dinámica acoplada constriñe efectivamente la conducta de sus componentes en una forma medible. El sistemismo de Bunge es la matriz conceptual; el aparato EDI es la operacionalización.
 
 ## 7. Criterio de elevación a demostrativo
 
@@ -166,12 +186,23 @@ Adoptar caso histórico-institucional con:
 - bifurcación empíricamente identificable;
 - predicción discriminante contra rival explícito.
 
-Candidatos plausibles:
+### 7.1. Caso piloto candidato (deuda priorizada)
 
-- transición de regímenes políticos (Acemoglu y colegas tienen marco cuantitativo);
-- crisis financieras (literatura sobre dinámica de burbujas y crashes);
-- respuesta institucional a crisis sanitarias (datos de pandemia 2020-2022 con dinámica de adopción de medidas);
-- transformación de campos académicos o profesionales (datos bibliométricos con bifurcaciones).
+Se selecciona como caso piloto, sin ejecutar en este manuscrito pero documentado para trabajo posterior, la **dinámica de adopción de medidas no farmacéuticas durante COVID-19** por estados nacionales. Justificación:
+
+- datos públicos disponibles (Oxford COVID-19 Government Response Tracker);
+- una cuenca de atracción institucional (régimen de cumplimiento) sometida a perturbación discreta y observable (la propia pandemia);
+- bifurcaciones identificables (transiciones de régimen restrictivo a permisivo y viceversa);
+- comparabilidad inter-país que permite definir variabilidad de la cuenca (legitimidad como anchura de la cuenca);
+- precedentes en la literatura cuantitativa (Hale et al., 2021; Cheng et al., 2020).
+
+La elevación de este caso piloto exige adaptación específica del aparato EDI a series institucionales con variables ordinales (índices de stringency) en lugar de variables continuas. Se documenta como deuda alta en `Procesos/2026-04-28-cierre-doctoral/` y en la hoja de ruta `06-cierre/03-hoja-de-ruta-para-tesis-final.md`.
+
+### 7.2. Otros candidatos plausibles
+
+- transición de regímenes políticos (Acemoglu y Robinson 2006, *Economic Origins of Dictatorship and Democracy*, ofrecen marco cuantitativo);
+- crisis financieras (literatura post-2008 sobre dinámica de burbujas y crashes; Sornette 2003);
+- transformación de campos académicos o profesionales (datos bibliométricos con bifurcaciones, en línea con Bourdieu 1984).
 
 ## 8. Lo que este capítulo devuelve a la tesis general
 

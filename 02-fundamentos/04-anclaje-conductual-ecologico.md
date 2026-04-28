@@ -149,23 +149,33 @@ La discusión detallada con cada rival se trata en capítulo 04-01.
 
 ### 10.1. Gibson — psicología ecológica
 
-Gibson (1979) sostiene que la información para la acción está disponible en el entorno y que no se requiere representación interna como recurso primario. La tesis recoge exactamente esto y lo opera: la información ecológica es realidad estructural y se traduce a variables medibles. Donde Gibson queda en la formulación cualitativa, la tesis (vía Warren) avanza al sistema dinámico acoplado.
+Gibson (1979, *The Ecological Approach to Visual Perception*, cap. 8) sostiene que la información para la acción está disponible en el medio: *"the information for the perception of an object is not its image. The information in light to specify something does not have to resemble it"* (p. 304 ed. Houghton-Mifflin 1986). En los capítulos finales (cap. 13–14) explica que el control de la acción no requiere representación interna como recurso primario; basta con que el sistema perceptivo recoja invariantes específicos del flujo óptico.
+
+La tesis recoge exactamente esto y lo opera: la información ecológica es **realidad estructural** (capítulo 02-01) y se traduce a variables medibles (τ, ρ, flujo óptico, ángulo de declinación). Donde Gibson queda en la formulación cualitativa de la affordance, la tesis avanza al sistema dinámico acoplado vía Warren-Fajen, ofreciendo ecuaciones cuantitativas y, en el caso 30 del corpus EDI, validación empírica con EDI = 0.262 significativo.
 
 ### 10.2. Maturana y Varela — autopoiesis y enaction
 
-Maturana y Varela proponen autopoiesis como cierre operacional de los sistemas vivos. La tesis recoge la idea de cierre y la operacionaliza como cuenca de atracción del sistema acoplado bajo perturbación, con tolerancia explícita. La autopoiesis no necesita misticismo: es estabilidad asintótica empíricamente verificable.
+Maturana y Varela (1980, *Autopoiesis and Cognition*, cap. III) proponen la autopoiesis como cierre operacional de los sistemas vivos: *"an autopoietic machine continuously generates and specifies its own organization through its operation as a system of production of its own components"* (p. 79). En *El árbol del conocimiento* (1984, cap. 5) extienden la noción al ámbito cognitivo.
+
+La tesis recoge la idea de cierre y la **operacionaliza** como cuenca de atracción del sistema acoplado bajo perturbación, con tolerancia explícita. La autopoiesis no requiere lectura mística: es estabilidad asintótica empíricamente verificable. La diferencia con Maturana-Varela: la tesis no asume circularidad organizacional como invariante a priori; la verifica caso por caso vía EDI.
 
 ### 10.3. Varela, Thompson y Rosch — embodied mind
 
-Embodied mind sostiene que la cognición es enacción del acoplamiento agente-entorno. La tesis lo asume como tesis empírica del nivel B. La diferencia: la tesis añade el filtro formal de admisión y la operacionalización empírica de la compresión, que el enactivismo dejaba programáticos.
+Varela, Thompson y Rosch (1991, *The Embodied Mind*, cap. 8) consolidan la tesis de la cognición enactiva: *"cognition consists not of representations but of embodied action [...] the world is not something that is given to us but something we engage in by moving, touching, breathing, eating"* (p. 200). Thompson (2007, *Mind in Life*, cap. 4) lo desarrolla con neurofenomenología.
+
+La tesis asume el enactivismo como tesis empírica del **nivel B**. La diferencia operativa: la tesis añade el **filtro formal de admisión** (capítulo 03-02) y la **operacionalización empírica de la compresión κ** (capítulo 03-04 y corpus EDI), que el enactivismo dejaba programáticos. Esta es una contribución específica a la tradición enactiva: la metodología cuantitativa que la tradición pedía pero no construía.
 
 ### 10.4. Andy Clark — extended mind
 
-Clark sostiene que algunos procesos cognitivos se extienden al entorno técnico. La tesis lo opera como caso de B donde el entorno técnico se incorpora a las variables del acoplamiento. La extensión no es metafísica; es decisión sobre qué entra en `X`.
+Clark y Chalmers (1998, "The Extended Mind", *Analysis* 58:7-19) sostienen el principio de paridad: *"if, as we confront some task, a part of the world functions as a process which, were it done in the head, we would have no hesitation in recognizing as part of the cognitive process, then that part of the world is (so we claim) part of the cognitive process"* (p. 8). Clark (2008, *Supersizing the Mind*, cap. 4) extiende el argumento.
+
+La tesis lo opera como caso de B donde el entorno técnico se incorpora a las variables del acoplamiento. La extensión no es metafísica; es **decisión empírica sobre qué entra en X** del operador μ. La tesis evita la objeción de Adams y Aizawa (2008) (causa-constitución) exigiendo el criterio operativo: una variable extiende el acoplamiento si y solo si su ablación reduce significativamente la dinámica del sistema.
 
 ### 10.5. Warren — behavioral dynamics
 
-Warren proporciona el caso paradigmático trabajado del nivel B. La tesis lo recoge como demostración (capítulo 05-05) y como vocabulario operativo (atractor, repulsor, bifurcación, ley de control, dinámica intrínseca, acoplamiento). Warren queda como interlocutor principal de B.
+Warren (2006, *Psychological Review* 113:358-389) proporciona el caso paradigmático trabajado del nivel B. La conjetura clave: *"the laws of behavior are descriptions of regular dynamical relations between organism and environment, that emerge from interactions in a particular task context"* (p. 359). Y la formulación dinámica de Fajen y Warren (2003, *JEP:HPP* 29:343-362, p. 348): la ecuación de heading de segundo orden (b = 3.25, k_g = 7.50, c1 = 0.40, c2 = 0.40) ajustada con r² = 0.980 sobre datos de locomoción dirigida.
+
+La tesis recoge el caso Warren como demostración cualitativa (capítulo 05-05) y lo eleva a versión cuantitativa-EDI (caso 30 del corpus). Warren queda como **interlocutor principal de B**: vocabulario operativo (atractor, repulsor, bifurcación, ley de control, dinámica intrínseca, acoplamiento) y caso ancla. La complementariedad cualitativa (Warren 2006, r² = 0.980 individual) y cuantitativa (caso 30 EDI = 0.262, weak poblacional) cubre dos escalas temporales del fenómeno.
 
 ## 11. Consecuencia para el aparato formal
 

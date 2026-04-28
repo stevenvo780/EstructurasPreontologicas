@@ -272,15 +272,19 @@ El conductismo radical es primo empobrecido del marco propuesto. La tesis le añ
 
 ### Forma fuerte
 
-La cognición es acción enacted del organismo en su entorno. No hay representaciones internas; no hay computaciones simbólicas; no hay contenido cognitivo más allá de las dinámicas sensorimotoras.
+Hutto y Myin (2013, *Radicalizing Enactivism*, cap. 1) sostienen la **REC thesis (Radical Enactive Cognition)**: *"basic cognition is constituted by, and to be explained in terms of, concrete spatiotemporally extended patterns of dynamic interaction between organisms and their environments [...] basic cognition does not, intrinsically, involve any kind of content"* (p. 8). La tesis del contenido cero (zero-content) es la pieza fuerte: niveles cognitivos básicos no requieren contenido representacional. Hutto y Myin (2017, *Evolving Enactivism*, cap. 5) extienden el argumento contra cualquier predictive coding que asuma contenido representacional inferencial.
 
 ### Qué recoge la tesis
 
-La posición es muy cercana en espíritu. La tesis adopta el acoplamiento dinámico, la dependencia ecológica, la centralidad de la tarea.
+La posición es muy cercana en espíritu. La tesis adopta el acoplamiento dinámico (capítulo 02-04), la dependencia ecológica (información ecológica como categoría central, sección 5 de ese capítulo), la centralidad de la tarea, y el rechazo de la representación interna como recurso primario en niveles básicos. La afirmación de Hutto-Myin de que *"there is no need to posit content-bearing intermediaries between organism and environment for basic perception"* (2013, p. 81) es congruente con la operacionalización del nivel B vía variables informacionales materialmente realizadas (τ, ρ, flujo óptico).
 
 ### Qué rechaza
 
-La tesis se distancia del enactivismo radical en el grado: admite estados internos como hipótesis cuando la pregunta lo exige (conducta anticipatoria, secuencial, estratégica) y exige formalización L3 con dossier de anclaje, donde el enactivismo a menudo se mantiene en la formulación cualitativa.
+Tres divergencias específicas:
+
+1. **Grado de eliminación.** Hutto-Myin extienden la zero-content thesis a niveles básicos pero conceden contenido en niveles avanzados. La tesis es más cautelosa: admite estados internos como hipótesis cuando la pregunta lo exige (conducta anticipatoria, secuencial, estratégica), pero solo si el dossier de anclaje (capítulo 03-02) los justifica empíricamente.
+2. **Formalización L3.** La tesis exige aparato formal (μ, G, H, κ, ε) y validación cuantitativa (EDI), donde el enactivismo radical mantiene la formulación cualitativa. La objeción de Chemero (2009, *Radical Embodied Cognitive Science*, cap. 4) sobre la dificultad de cuantificar dinámica sin recaer en cognitivismo es real, pero la tesis muestra (caso 30 del corpus EDI, EDI = 0.262 significativo) que la cuantificación es posible sin volver al cognitivismo.
+3. **Alcance multidominio.** El enactivismo radical se concentra en cognición situada; la tesis cubre 30 dominios heterogéneos. La generalización exige aparato formal compartido.
 
 ### Discriminación
 
@@ -324,7 +328,9 @@ Pierde en cero criterios. Discrimina en A, C, D. La diferencia es metafísica su
 
 ### Forma fuerte
 
-Stephen Wolfram propone que la física fundamental se reduce a reglas de reescritura sobre hipergrafos: el sustrato del universo es un sistema computacional que evoluciona aplicando transformaciones locales a hipergrafos espaciales. La conjetura del **Ruliad** sostiene que toda la física emerge de la totalidad de reglas computacionales posibles, accedida desde un punto de vista observador. La posición es ambiciosa, técnicamente sofisticada, y comparte con la tesis dos elementos importantes: el papel central de los **hipergrafos** como representación estructural del sustrato, y el rechazo del reduccionismo plano (la organización multiescala importa).
+Wolfram (2002, *A New Kind of Science*, cap. 12) introduce la tesis de la **irreducibilidad computacional**: *"there is no way to find out what a system will do except by effectively running it"* (p. 737). En el Wolfram Physics Project (2020, *A Project to Find the Fundamental Theory of Physics*, secciones 1-3), extiende la propuesta al sustrato físico: la realidad fundamental es hypergraph rewriting, y el universo es la evolución de un hipergrafo bajo reglas locales.
+
+La conjetura del **Ruliad** (Wolfram 2021, *The Concept of the Ruliad*, secciones 2 y 6) sostiene que toda la física observable emerge de la totalidad de reglas computacionales posibles, accedida desde un punto de vista observador particular: *"the ruliad is the entangled limit of everything that is computationally possible"* (sec. 2). La posición es ambiciosa, técnicamente sofisticada, y comparte con la tesis dos elementos importantes: el papel central de los **hipergrafos** como representación estructural del sustrato, y el rechazo del reduccionismo plano (la organización multiescala importa).
 
 ### Qué recoge la tesis
 
@@ -368,21 +374,36 @@ La tesis es **complementaria**, no rival sustituta. Donde Wolfram busca la regla
 
 ### Convergencia productiva posible
 
-Un programa de investigación interesante: aplicar el protocolo EDI a fenómenos derivados de simulaciones de hypergraph rewriting. Esto crearía un puente entre la ontología fundacional de Wolfram y la cartografía empírica multidominio de la tesis. Trabajo futuro.
+Un programa de investigación interesante: aplicar el protocolo EDI a fenómenos derivados de simulaciones de hypergraph rewriting. Esto crearía un puente entre la ontología fundacional de Wolfram y la cartografía empírica multidominio de la tesis. Esquema concreto del trabajo futuro:
+
+1. **Selección de regla.** Elegir una regla de reescritura del Wolfram Physics Project con propiedades emergentes ya documentadas (por ejemplo, regla `wolfphys/006` o equivalente con curvatura emergente reportada).
+2. **Generación de simulaciones.** Producir 200+ ejecuciones con condiciones iniciales perturbadas para estimar variabilidad estructural.
+3. **Construcción de sonda macro.** Identificar magnitud agregada candidata (densidad media de aristas, curvatura escalar discreta, número de bordes activos) y formular sonda ODE de bajo orden ajustable.
+4. **Aplicación EDI.** Calcular EDI = 1 − RMSE_coupled / RMSE_no_ode bajo el aparato del corpus, con permutación 999 + bootstrap 500 + protocolo C1-C5.
+5. **Hipótesis a verificar.** Si la sonda macro tiene cierre operativo (EDI ≥ 0.30, p < 0.05), la regla microestructural admite descripción macroescalar legítima bajo el aparato. Si no, la irreducibilidad computacional opera al nivel macroescalar elegido.
+6. **Lectura.** En cualquier escenario, el resultado discrimina: cierre operativo confirma puente entre Wolfram y la tesis; ausencia de cierre fortalece la tesis de irreducibilidad de Wolfram en el régimen específico.
+
+Este esquema queda documentado como deuda futura priorizada. No se ejecuta en el manuscrito actual.
 
 ## 15. Mecanicismo multinivel (Bechtel-Craver)
 
 ### Forma fuerte
 
-Los fenómenos complejos se explican mediante descomposición funcional en mecanismos a niveles articulados. Cada mecanismo es una organización de partes y operaciones que produce un fenómeno.
+Bechtel (2008, *Mental Mechanisms*, cap. 1) define mecanismo como *"a structure performing a function in virtue of its component parts, component operations, and their organization. The orchestrated functioning of the mechanism is responsible for one or more phenomena"* (p. 13). Craver (2007, *Explaining the Brain*, cap. 4) elabora la tesis de la integración multinivel: los niveles no son meramente útiles sino ontológicamente reales si y solo si las relaciones constitutivas entre ellos son **mutually manipulable** (cap. 4, p. 152). Bechtel y Richardson (1993, *Discovering Complexity*, cap. 2) sistematizan la heurística de descomposición y localización.
 
 ### Qué recoge la tesis
 
-Casi todo. Es el aliado más fuerte en la articulación multinivel y en el realismo de mecanismos.
+Casi todo. Es el aliado más fuerte en la articulación multinivel y en el realismo de mecanismos. La definición bechteliana de mecanismo coincide con la noción de **patrón materialmente sostenido con organización específica** del capítulo 02-01. La criterio de **mutual manipulability** de Craver coincide con el criterio empírico de cierre operativo κ vía intervención ablativa.
 
 ### Qué añade la tesis
 
-Filtro de admisión (dossier completo) y procedimiento empírico de κ vía baja dimensionalidad. El mecanicismo deja la legitimidad de niveles relativamente abierta; la tesis la cierra con criterios.
+Tres aportes específicos al programa mecanicista:
+
+1. **Filtro de admisión cuantitativo.** Bechtel-Craver aceptan que los niveles son legítimos cuando las relaciones constitutivas son mutuamente manipulables, pero no especifican una métrica única para decidir el grado de manipulabilidad. La tesis ofrece la métrica EDI con permutación + bootstrap + protocolo C1-C5 como instrumento operativo de esa decisión.
+2. **Procedimiento empírico de κ vía baja dimensionalidad.** El mecanicismo deja la legitimidad de niveles relativamente abierta; la tesis la cierra con criterios verificables (capítulo 03-04).
+3. **Cartografía multidominio.** Bechtel-Craver trabajan principalmente en neurobiología y ciencias biomédicas; la tesis extiende la lógica a 30 dominios heterogéneos con controles de falsación rechazados.
+
+La discusión específica con la **objeción de Glennan (2017, *The New Mechanical Philosophy*)** sobre si la dinámica acoplada continua admite descripción mecanicista discreta, queda como punto de presión legítimo y se trata en `04-debates/02-limitaciones-y-puntos-de-presion.md`.
 
 ### Discriminación
 
