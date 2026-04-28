@@ -30,7 +30,7 @@ Métrica empírica que opera el operador κ. Definición: `EDI = 1 - RMSE_couple
 Regularidad operativa anterior a la objetualidad sustancial. Ni cosa con esencia, ni ficción lingüística. Identificable como atractor empíricamente robusto de un sistema dinámico acoplado. Núcleo del nombre del proyecto. Capítulo 02-01.
 
 ### Hiperobjeto (operativo)
-Constructo del entendimiento que designa un fenómeno de gran escala con cierre operativo alto (Nivel 4+). No implica existencia metafísica. Heurística de candidatura inspirada en Morton (2013) pero usada en sentido operativo. Capítulo 02-01.
+Constructo del entendimiento que designa un fenómeno de cualquier escala con cierre operativo alto (Nivel 4+) que excede la captura intuitiva inmediata. No restringido a gran escala temporal o espacial: aplica desde decoherencia cuántica (caso 31) hasta cúmulos globulares (caso 40), pasando por dinámica social macro. No implica existencia metafísica adicional. Heurística de candidatura inspirada en Morton (2013) pero usada en sentido operativo y multiescalar. Capítulo 02-01.
 
 ### Irrealismo operativo
 Posición filosófica del manuscrito: realismo estructural moderado + pluralismo epistemológico + anti-reificación operativa. Ni realismo ingenuo, ni instrumentalismo puro, ni irrealismo radical. Capítulo 02-01.
@@ -77,10 +77,10 @@ EDI > 0.01, p < 0.05. Constricción débil. 2 casos.
 0.10 ≤ EDI < 0.30, p < 0.05. Componente funcional con significancia. Análogo al ribosoma: tiene función pero no es organismo autónomo. 8 casos (incluido caso 30 v2).
 
 ### Nivel 4 (strong)
-0.30 ≤ EDI ≤ 0.90, p < 0.05 (con `overall_pass=True` para gate completo). Cierre operativo alto. 5 casos (4 con gate + 1 sin gate).
+0.30 ≤ EDI ≤ 0.90, p < 0.05 (con `overall_pass=True` para gate completo). Cierre operativo alto. **En el corpus inter-dominio:** 5 casos (4 con gate + 1 sin gate). **En el corpus inter-escala:** 7 casos en 7 escalas distintas (atómica, cuántica, bioquímica, celular oscilatoria, individual, astrofísica, astrofísica masiva).
 
-### Nivel 5 (hiperobjeto fuerte)
-Strong + CR > 2 + viscosidad + interobjetividad + persistencia transtemporal verificada. Programa futuro. Ningún caso del corpus actual lo alcanza.
+### Nivel 5 (cierre operativo fuerte)
+Strong + convergencia bajo múltiples sondas independientes + LoE = 5 (datos físicos directos) + frontera espacial nítida verificada. Programa futuro. Ningún caso del corpus actual lo alcanza, en ninguna escala. Definido con criterios operativos explícitos en cap 03-04 §"Niveles del paisaje" para evitar lectura como promesa no cumplida.
 
 ---
 

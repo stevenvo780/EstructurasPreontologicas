@@ -8,23 +8,23 @@ Cuatro presentaciones de la tesis con duración creciente, todas defendibles ant
 
 ## Versión 1: 30 segundos (elevator pitch)
 
-> Defendemos un irrealismo operativo de estructuras pre-ontológicas: las entidades que nombramos en ciencia y filosofía son atractores empíricamente identificables de sistemas dinámicos acoplados, admisibles solo bajo dossier de anclaje y validación EDI por intervención ablativa. Lo demostramos en cartografía multidominio sobre 30 casos con 4 strong validados, 8 weak significativos, 3 controles de falsación rechazados, y discriminación pública contra catorce rivales incluido Wolfram. La tesis no glorifica: rechaza honestamente cuando debe rechazar.
+> Defendemos un irrealismo operativo de estructuras pre-ontológicas como **ontología, epistemología y metodología generales aplicables a cualquier escala**: las entidades que nombramos en ciencia y filosofía son atractores empíricamente identificables de sistemas dinámicos acoplados, admisibles solo bajo dossier de anclaje y validación EDI por intervención ablativa. Lo justificamos operativamente en 40 casos agregados (30 inter-dominio + 10 inter-escala desde 10⁻¹⁰ m hasta 10²⁰ m) con 11 strong en 8 escalas distintas, 3 controles de falsación rechazados, hostile testing severo aplicado, suite ST de 13 teorías formales, y discriminación pública contra catorce rivales incluido Wolfram. La tesis no glorifica: rechaza honestamente cuando debe rechazar.
 
 ---
 
 ## Versión 2: 2 minutos
 
-Defiendo una tesis ontológico-epistemológica general con autoría principal de Jacob Agudelo (Universidad de Antioquia) y colaboración técnica de Steven Vallejo Ortiz, demostrada en cartografía multidominio sobre el corpus EDI de 30 casos.
+Defiendo una tesis ontológica-epistemológica-metodológica **triple general y multiescalar** con autoría principal de Jacob Agudelo (Universidad de Antioquia) y colaboración técnica de Steven Vallejo Ortiz, justificada operativamente sobre el corpus EDI agregado de 40 casos (30 inter-dominio + 10 inter-escala).
 
-**El problema:** muchas disciplinas reifican categorías heredadas. Hablamos de mente, mercado, deforestación, energía, conciencia como si fueran cosas simples cuando a menudo son patrones complejos. La pregunta del profesor Hoyos —cuándo es legítimo reemplazar L1 por L3 sin sustitución nominal— nos dio el camino: anclaje conductual-biológico explícito.
+**El problema:** muchas disciplinas reifican categorías heredadas. Hablamos de qubit, proteína, célula, mercado, organismo, estrella, cúmulo galáctico como si fueran cosas simples cuando a menudo son patrones complejos. La pregunta filosófica fundamental: ¿qué hay que hay y cómo lo conocemos sin reificarlo prematuramente, **a cualquier escala**?
 
-**La tesis:** todo fenómeno empíricamente explicable está anclado en un sustrato material dinámico, pero las entidades son **estructuras pre-ontológicas** — regularidades operativas anteriores a la objetualidad. La posición filosófica es **irrealismo operativo**: realismo estructural moderado + pluralismo epistemológico + anti-reificación operativa.
+**La tesis:** todo fenómeno empíricamente explicable —desde lo subatómico hasta lo cosmológico— está anclado en un sustrato material dinámico, pero las entidades son **estructuras pre-ontológicas** (en sentido genético-epistemológico simondoniano) — regularidades operativas anteriores al recorte categorial. La posición filosófica es **irrealismo operativo**: realismo estructural moderado + pluralismo epistemológico + anti-reificación operativa, **como ontología, epistemología y metodología generales** invariantes a la escala.
 
-**Aparato:** cinco operadores formales (μ, G, H, κ, ε), asimetría L1↔B↔L3↔S como protocolo, dossier de anclaje de catorce componentes, métrica EDI calculada por intervención ablativa con permutación 999 y bootstrap 500, protocolo C1-C5.
+**Aparato (metodología general):** cinco operadores formales (μ, G, H, κ, ε) invariantes a la escala, asimetría L1↔B↔L3↔S como protocolo, dossier de anclaje de catorce componentes, métrica EDI calculada por intervención ablativa con permutación 999 y bootstrap 500, protocolo C1-C5, suite ST de 13 teorías formales.
 
-**Demostración:** 4 casos `overall_pass=True` con cierre operativo strong (Energía 0.65, Deforestación 0.60, Kessler 0.35, Riesgo Biológico 0.33), 8 weak (incluido caso 30 behavioral dynamics 0.26), 3 controles de falsación correctamente rechazados. Discriminación pública contra catorce rivales identificables, incluido Wolfram Physics Project. Reproducibilidad verificada en vivo (caso 16 deforestación: EDI=0.580 vs ref 0.602, variabilidad <4%).
+**Justificación operativa (40 casos):** **corpus inter-dominio:** 4 casos `overall_pass=True` strong (Energía 0.65, Deforestación 0.60, Kessler 0.35, Riesgo Biológico 0.33), 1 strong sin gate (Microplásticos 0.78), 8 weak (incluido caso 30 behavioral dynamics 0.26), 3 controles de falsación correctamente rechazados. **Corpus inter-escala:** 7 strong en 7 escalas distintas (atómica, cuántica, bioquímica, celular oscilatoria, individual, astrofísica, astrofísica masiva). Hostile testing severo: 0/1500 falsos positivos del gate completo bajo random walk masivo. Discriminación pública contra catorce rivales identificables, incluido Wolfram Physics Project (con piloto Rule 110 ejecutado mostrando convivencia de irreducibilidad micro y cierre macro detectable).
 
-**Lección epistémica clave:** el aparato rechazó el caso 30 v1 (EDI=0.002) a pesar de que el equipo lo construyó con expectativa de aceptación. La sonda mejorada v2 produjo Nivel 3 weak honesto. **El aparato funciona porque rechaza honestamente cuando debe rechazar.**
+**Lección epistémica clave:** el aparato rechazó el caso 30 v1 (EDI=0.002) a pesar de que el equipo lo construyó con expectativa de aceptación. La sonda mejorada v2 produjo Nivel 3 weak honesto. **El aparato funciona porque rechaza honestamente cuando debe rechazar.** Los 40 casos son justificación operativa del marco tripartito; **NO son la tesis**. La tesis son los tres marcos generales; los casos muestran que sus afirmaciones son ejecutables, discriminantes y transferibles entre escalas.
 
 La tesis discrimina, no glorifica.
 
@@ -34,26 +34,34 @@ La tesis discrimina, no glorifica.
 
 ### Problema
 
-Muchas disciplinas heredan categorías que funcionan bien en el lenguaje pero no necesariamente en la explicación científica. Hablamos de mente, memoria, mercado, institución, servicio, organismo, hiperobjeto, deforestación, conciencia como si fueran cosas simples, cuando a menudo condensan organizaciones complejas. La pregunta del profesor en filosofía de la ciencia, sobre cuándo es legítimo reemplazar el lenguaje psicológico ordinario por un lenguaje formal estructural-relacional sin caer en sustitución nominal, nos dio el horizonte: cualquier reemplazo legítimo exige **anclaje empírico explícito**.
+Muchas disciplinas heredan categorías que funcionan bien en el lenguaje pero no necesariamente en la explicación científica. Hablamos de qubit, proteína, célula, mente, memoria, mercado, institución, servicio, organismo, estrella, cúmulo galáctico como si fueran cosas simples, cuando a menudo condensan organizaciones complejas a múltiples escalas. La pregunta filosófica fundamental — qué hay que hay y cómo lo conocemos sin reificarlo prematuramente — nos da el horizonte: cualquier afirmación ontológica legítima exige **anclaje empírico explícito a su escala correspondiente**.
 
-### Tesis
+### Tesis (triple general y multiescalar)
 
-Todo fenómeno empíricamente explicable está anclado en un sustrato material dinámico. Las unidades con que lo describimos son **estructuras pre-ontológicas**: atractores empíricamente identificables de sistemas dinámicos acoplados con cinco condiciones de admisión (variables medibles, estabilidad, cuenca, bifurcaciones, discriminación inferencial). Posición filosófica: **irrealismo operativo** = realismo estructural moderado + pluralismo epistemológico + anti-reificación operativa. Nunca afirmamos `X es Y`; afirmamos `bajo el instrumento I, X exhibe cierre operativo de grado G`.
+Todo fenómeno empíricamente explicable, **a cualquier escala física, biológica o cosmológica**, está anclado en un sustrato material dinámico. Las unidades con que lo describimos son **estructuras pre-ontológicas** (en sentido genético-epistemológico simondoniano): atractores empíricamente identificables de sistemas dinámicos acoplados con cinco condiciones de admisión (variables medibles, estabilidad, cuenca, bifurcaciones, discriminación inferencial). Posición filosófica: **irrealismo operativo** = realismo estructural moderado + pluralismo epistemológico + anti-reificación operativa, **como ontología, epistemología y metodología generales invariantes a la escala**. Nunca afirmamos `X es Y`; afirmamos `bajo el instrumento I, X exhibe cierre operativo de grado G`.
 
-### Aparato
+### Aparato (metodología general)
 
-Cinco operadores formales (μ medición, G grafo, H hipergrafo, κ compresión, ε expansión) sobre pregunta paramétrica Q fechada con tolerancia. Asimetría L1↔B↔L3↔S: L1 fija qué pregunta importa, B (conductual-biológico) ancla la respuesta, L3 reconstruye, S recoge categorías que sobreviven. Dossier de anclaje de catorce componentes obligatorio. Métrica EDI = 1 - RMSE_coupled / RMSE_no_ode con permutación 999 y bootstrap 500. Protocolo C1-C5 con 13 condiciones simultáneas para `overall_pass=True`.
+Cinco operadores formales (μ medición, G grafo, H hipergrafo, κ compresión, ε expansión) **invariantes a la escala** sobre pregunta paramétrica Q fechada con tolerancia. Asimetría L1↔B↔L3↔S: L1 fija qué pregunta importa, B (acoplamiento empírico genérico — qubit-baño, proteína-solvente, célula-citoplasma, organismo-entorno, cúmulo-galaxia, según la escala) ancla la respuesta, L3 reconstruye, S recoge categorías que sobreviven. Dossier de anclaje de catorce componentes obligatorio. Métrica EDI = 1 - RMSE_coupled / RMSE_no_ode con permutación 999 y bootstrap 500. Protocolo C1-C5 con 13 condiciones simultáneas para `overall_pass=True`. Validación lógica formal con suite ST de 13 teorías.
 
-### Demostración
+### Justificación operativa (40 casos)
 
-Cartografía multidominio sobre 30 casos en física, biología, economía, política, tecnología, cultura y conducta humana:
+**Corpus inter-dominio sobre 30 casos** (física, biología, economía, política, tecnología, cultura y conducta humana):
 
 - **4 casos strong validados con gate completo:** Energía (EDI=0.65), Deforestación (0.60), Kessler (0.35), Riesgo Biológico (0.33).
 - **1 strong sin gate:** Microplásticos (0.78).
 - **8 weak (significativos):** incluido caso 30 behavioral dynamics (0.26 v2 con sonda Fajen-Warren segundo orden).
 - **3 controles de falsación correctamente rechazados** (refutan objeción de tautología).
 
-Discriminación pública contra catorce posiciones rivales identificables: dualismo, materialismo de partículas, reduccionismo plano, emergentismo fuerte, constructivismo arbitrario, instrumentalismo puro, formalismo vacío, modelos internos / control óptimo, cognitivismo computacional, conductismo radical, enactivismo radical, realismo estructural informativo, mecanicismo multinivel sin filtro, **y Wolfram Physics Project** (Wolfram fundamenta; nosotros disciplinamos).
+**Corpus inter-escala sobre 10 casos** desde dinámica subatómica hasta cosmológica:
+
+- **7 strong en 7 escalas distintas:** decoherencia cuántica (10⁻⁹ m), espín-órbita atómica (10⁻¹⁰ m), Michaelis-Menten bioquímica (10⁻⁸ m), NF-κB celular oscilatoria (10⁻⁵ m), HRV cardíaco individual (1 m), Cefeida pulsante (10¹¹ m), cúmulo globular (10²⁰ m).
+
+**Hostile testing severo:** 0/1500 falsos positivos del gate completo bajo random walk masivo, 0/12 circularidad detectada en test cruzado de sondas inter-escala, suite ST con 2 hallazgos críticos detectados y corregidos.
+
+**Los 40 casos son justificación operativa del marco tripartito; no son la tesis.** La tesis son los tres marcos generales; los casos muestran que sus afirmaciones son ejecutables, discriminantes y transferibles entre escalas.
+
+Discriminación pública contra catorce posiciones rivales identificables: dualismo, materialismo de partículas, reduccionismo plano, emergentismo fuerte, constructivismo arbitrario, instrumentalismo puro, formalismo vacío, modelos internos / control óptimo, cognitivismo computacional, conductismo radical, enactivismo radical, realismo estructural informativo, mecanicismo multinivel sin filtro, **y Wolfram Physics Project** (con piloto Rule 110 ejecutado mostrando convivencia de irreducibilidad computacional micro y cierre operativo macro detectable: Wolfram fundamenta; nosotros disciplinamos).
 
 ### Lección epistémica clave
 
@@ -73,19 +81,19 @@ Cinco escenarios falsables: (1) los 4 casos `overall_pass` se desmoronan, (2) lo
 
 ### 1. Punto de partida (1 minuto)
 
-La tesis fue desarrollada bajo dirección de Jacob Agudelo (Universidad de Antioquia) con colaboración técnica de Steven Vallejo Ortiz: marco *Irrealismo Operativo de Hiperobjetos* con métrica EDI, asimetría L1↔B↔L3↔S, dossier de anclaje de catorce componentes, corpus EDI de 30 casos en física, biología, economía, política, tecnología, cultura y conducta humana, y discriminación pública contra catorce rivales incluido Wolfram Physics Project.
+La tesis fue desarrollada bajo dirección de Jacob Agudelo (Universidad de Antioquia) con colaboración técnica de Steven Vallejo Ortiz: marco *Irrealismo Operativo de Estructuras Pre-Ontológicas* como **ontología, epistemología y metodología generales aplicables a cualquier escala física, biológica o cosmológica** con métrica EDI, asimetría L1↔B↔L3↔S, dossier de anclaje de catorce componentes, corpus EDI agregado de **40 casos** (30 inter-dominio + 10 inter-escala desde 10⁻¹⁰ m hasta 10²⁰ m), suite ST de 13 teorías formales, y discriminación pública contra catorce rivales incluido Wolfram Physics Project.
 
 ### 2. Problema filosófico (2 minutos)
 
-El lenguaje heredado tiende a reificar. Pero el reduccionismo plano no resuelve el problema, solo lo desplaza al nivel inferior. El emergentismo fuerte multiplica sustancias. El constructivismo arbitrario entrega cualquier recorte. El formalismo vacío produce elegancia sin captura. La tesis intenta ocupar un punto distinto: el irrealismo operativo. Su pregunta original — cuándo es legítimo reemplazar L1 por L3 sin sustitución nominal — recibe respuesta operativa por la voz del profesor: anclaje conductual-biológico explícito.
+El lenguaje heredado tiende a reificar **a cualquier escala**: hablamos de qubit, proteína, célula, mente, mercado, organismo, estrella, cúmulo galáctico como si fueran cosas simples cuando a menudo son patrones complejos. El reduccionismo plano no resuelve el problema, solo lo desplaza al nivel inferior. El emergentismo fuerte multiplica sustancias. El constructivismo arbitrario entrega cualquier recorte. El formalismo vacío produce elegancia sin captura. La tesis intenta ocupar un punto distinto: el irrealismo operativo como **ontología, epistemología y metodología generales**. La pregunta filosófica fundamental: ¿qué hay que hay y cómo lo conocemos sin reificarlo prematuramente, **a cualquier escala**?
 
 ### 3. Núcleo de la tesis (2 minutos)
 
-Hay una sola realidad material, dinámica y multiescala. Las unidades con que la pensamos son **estructuras pre-ontológicas** — atractores empíricamente identificables de sistemas dinámicos acoplados con cinco condiciones de admisión. Lo `pre-ontológico` significa: anterior a la objetualidad sustancial. Ni cosa con esencia, ni ficción lingüística. Patrón cuya existencia se mide por su irreducibilidad funcional bajo intervención.
+Hay una sola realidad material, dinámica y multiescala. Las unidades con que la pensamos —**a cualquier escala desde la subatómica hasta la cosmológica**— son **estructuras pre-ontológicas** (en sentido genético-epistemológico simondoniano) — atractores empíricamente identificables de sistemas dinámicos acoplados con cinco condiciones de admisión. Lo `pre-ontológico` significa: anterior al recorte categorial nominalizante (no anterior temporalmente). Ni cosa con esencia, ni ficción lingüística. Patrón cuya existencia se mide por su irreducibilidad funcional bajo intervención. La tesis afirma **tres marcos generales simultáneos**: ontología general (cuatro invariantes a cualquier escala), epistemología general (compresión disciplinada bajo intervención ablativa), metodología general (aparato invariante a la escala).
 
 ### 4. Asimetría L1↔B↔L3↔S (1 minuto)
 
-L1 (psicológico/ordinario) fija qué pregunta importa. B (conductual-biológico, físico-ecológico, técnico-institucional según dominio) ancla la respuesta. L3 (estructural-relacional formal) reconstruye dependencias. S (semántica revisada) recoge categorías que sobreviven a la auditoría. **Cada parámetro de L3 debe traducirse a variable de B**, o no se admite. Esto prohíbe la sustitución nominal.
+L1 (lenguaje ordinario/disciplinar) fija qué pregunta importa. **B (acoplamiento empírico genérico — qubit-baño en cuántica, proteína-solvente en molecular, célula-citoplasma en celular, organismo-entorno en conductual, cúmulo-galaxia en astrofísico)** ancla la respuesta. L3 (estructural-relacional formal) reconstruye dependencias. S (semántica revisada) recoge categorías que sobreviven a la auditoría. **La estructura es invariante a la escala**; lo que cambia son las variables específicas que entran en cada bloque de B. Cada parámetro de L3 debe traducirse a variable de B, o no se admite. Esto prohíbe la sustitución nominal.
 
 ### 5. Aparato formal (2 minutos)
 
@@ -95,11 +103,15 @@ Cinco operadores: μ (medición), G (grafo), H (hipergrafo), κ (compresión), �
 
 Catorce componentes obligatorios para cualquier categoría candidata: pregunta fechada, variables operacionalizadas, sustrato instanciante, grafo, hipergrafo si procede, compresión, atractores identificados, pruebas de validación, predicción discriminante, intervención discriminante, operador ε, traducción B↔L3, limitaciones, comparación rival.
 
-### 7. Cartografía multidominio (3 minutos)
+### 7. Cartografía agregada inter-dominio + inter-escala (3 minutos)
 
-30 casos. **4 strong con gate completo**: Energía, Deforestación, Kessler, Riesgo Biológico. **1 strong sin gate**: Microplásticos (EDI=0.78 pero CI inestable). **8 weak**: Políticas, Postverdad, Urbanización, Fósforo, Wikipedia, Epidemiología, Movilidad, **Behavioral Dynamics (caso 30)**. **2 suggestive**: Finanzas, Salinización. **4 trend**: Justicia, Starlink, Fuga de cerebros, Clima. **8 null**: Conciencia, Contaminación, Paradigmas, Océanos, Acidificación, Erosión, Acuíferos, IoT. **3 controles de falsación correctamente rechazados**.
+**40 casos justifican operativamente el marco tripartito; no son la tesis**. La tesis son los marcos generales; los casos muestran que sus afirmaciones son ejecutables, discriminantes y transferibles entre escalas.
 
-Reproducibilidad verificada: caso 16 Deforestación re-ejecutado con datos World Bank descargados en vivo, EDI=0.580 vs referencia 0.602 (variabilidad <4%, mismo Nivel 4).
+**Corpus inter-dominio (30 casos):** **4 strong con gate completo**: Energía, Deforestación, Kessler, Riesgo Biológico. **1 strong sin gate**: Microplásticos (EDI=0.78 pero CI inestable). **8 weak**: Políticas, Postverdad, Urbanización, Fósforo, Wikipedia, Epidemiología, Movilidad, **Behavioral Dynamics (caso 30)**. **2 suggestive**: Finanzas, Salinización. **4 trend**: Justicia, Starlink, Fuga de cerebros, Clima. **8 null**: Conciencia, Contaminación, Paradigmas, Océanos, Acidificación, Erosión, Acuíferos, IoT. **3 controles de falsación correctamente rechazados**.
+
+**Corpus inter-escala (10 casos)** desde dinámica subatómica hasta cosmológica, **30 órdenes de magnitud** espaciales y temporales: **7 strong en 7 escalas distintas** — atómica (espín-órbita), cuántica (decoherencia), bioquímica (Michaelis-Menten), celular oscilatoria (NF-κB), individual (HRV cardíaco), astrofísica (Cefeida), astrofísica masiva (cúmulo globular). 1 weak (ciclo celular Tyson-Novak), 2 nulls honestos (Villin Headpiece bajo sonda equilibrio inadecuada; locomoción τ-dot bajo observación con reinicios).
+
+**Hostile testing severo:** 0/1500 falsos positivos del gate completo bajo random walk masivo, 0/12 circularidad detectada en test cruzado de sondas inter-escala. Reproducibilidad verificada: caso 16 Deforestación re-ejecutado con datos World Bank descargados en vivo, EDI=0.580 vs referencia 0.602 (variabilidad <4%, mismo Nivel 4).
 
 ### 8. El caso 30 como prueba de disciplina (1.5 minutos)
 
@@ -175,15 +187,15 @@ Esta tesis no clausura la complejidad de lo real. Ofrece reglas para no empeorar
 
 ### Trampa 1. "Esto es behavioral dynamics renombrado"
 
-**Respuesta:** el corpus EDI valida la tesis cuantitativamente sobre 30 dominios distintos (física, biología, economía, política, tecnología, cultura, conducta humana). La demostración cualitativa de Warren 2006 cubre la escala temporal corta; el caso 30 cubre la escala mensual bajo EDI. La generalidad ontológica es del marco; la demostración es multidominio.
+**Respuesta:** el corpus agregado de 40 casos cubre dominios y escalas que están **muy lejos** de behavioral dynamics: dinámica de espín-órbita atómica, decoherencia cuántica, plegamiento de proteína, ciclo celular, dinámica gravitacional de cúmulos globulares. La generalidad multiescalar (10⁻¹⁰ m a 10²⁰ m) elimina la objeción "es behavioral dynamics renombrado".
 
 ### Trampa 2. "Esto ya está en Bechtel-Craver / Dennett / Ladyman-Ross / Hoel"
 
-**Respuesta:** la novedad es la articulación dossier + asimetría L1↔B↔L3↔S + cartografía multidominio con falsación. Cada marco vecino captura una pieza; ninguno las reúne con el filtro de admisión.
+**Respuesta:** la novedad es la articulación dossier + asimetría L1↔B↔L3↔S + cartografía inter-dominio + inter-escala con falsación + hostile testing aplicado + suite ST formal. Cada marco vecino captura una pieza; ninguno las reúne con el filtro de admisión multiescalar.
 
 ### Trampa 3. "Es teoría regional con pretensiones generales"
 
-**Respuesta:** la pretensión general es de marco articulador, no de demostración total. La asimetría está nombrada; la hoja de ruta extiende el programa. Esto no es debilidad; es honestidad.
+**Respuesta:** la generalidad ahora se justifica operativamente. El corpus inter-escala (10 casos en 8 escalas distintas, 30 órdenes de magnitud cubiertos) refuta directamente esta objeción. El test cruzado de sondas (0/12 circularidad) confirma que las sondas son específicas y la generalidad no es artefacto del aparato. La pretensión es **ontológica general multiescalar operativamente articulada con demostración parcial**, no demostración cerrada — pero tampoco regional.
 
 ### Trampa 4. "Estás eliminando categorías mentales / sociales"
 

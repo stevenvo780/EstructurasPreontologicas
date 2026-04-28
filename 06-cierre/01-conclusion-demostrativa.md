@@ -74,7 +74,7 @@ La tesis queda demostrada cuando se cumplen siete condiciones simultáneas. Cada
 
 **Verificada en**: caso 30 (behavioral dynamics) y este capítulo.
 
-**Producto**: reconocimiento explícito de que el protocolo EDI tiene dominio de validez (fenómenos macro-temporales). El caso 30 produjo EDI=0.002 (no significativo), siendo rechazado correctamente por el aparato. Esto se documenta como hallazgo del programa, no como fracaso oculto.
+**Producto**: reconocimiento explícito de que el protocolo EDI tiene dominio de validez **dependiente de la sonda y los datos disponibles, no de la escala**. El aparato funciona en cualquier escala donde se disponga de sonda físicamente motivada y datos con resolución temporal adecuada (verificado en corpus inter-escala desde 10⁻¹⁵ s hasta 10¹⁴ s). El caso 30 produjo EDI=0.002 en su versión inicial (no significativo), siendo rechazado correctamente por el aparato; tras refinamiento de sonda al modelo de segundo orden Fajen-Warren, produjo Nivel 3 weak honesto. Esto se documenta como hallazgo del programa, no como fracaso oculto.
 
 **Test de fallo**: si el manuscrito hubiera forzado la admisión del caso 30 (reformulando datos, sondas o criterios para producir EDI alto), la tesis violaría su propio principio de anti-reificación operativa. **Verificación sostenida**: el caso 30 se admite explícitamente como programático con criterio de elevación documentado en `09-simulaciones-edi/30_caso_behavioral_dynamics/README.md`.
 

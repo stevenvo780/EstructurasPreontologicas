@@ -11,11 +11,11 @@ Síntesis de la discriminación pública contra catorce posiciones rivales. Cada
 | Código | Criterio |
 |--------|----------|
 | **A** | Anclaje material sin reducción a partículas |
-| **B** | Multiescalaridad operativa |
+| **B** | Multiescalaridad operativa **invariante a la escala** (aplicable desde lo cuántico hasta lo cosmológico) |
 | **C** | Procedimiento de admisión empírica con dossier de catorce componentes |
-| **D** | Traducibilidad asimétrica L1↔B↔L3↔S |
-| **E** | Cartografía multidominio con discriminación verificable y controles de falsación |
-| **F** | Alcance generalizable a dominios programáticos |
+| **D** | Traducibilidad asimétrica L1↔B↔L3↔S **invariante a la escala** |
+| **E** | Cartografía inter-dominio + inter-escala con discriminación verificable y controles de falsación |
+| **F** | Alcance generalizable a dominios y escalas programáticas |
 
 ---
 
