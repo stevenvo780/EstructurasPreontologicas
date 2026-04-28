@@ -1,0 +1,13 @@
+{
+  "case_id": "25_caso_acuiferos",
+  "secondary_probe_name": "darcy_groundwater",
+  "secondary_motivation": "hidrogeologia_clasica",
+  "primary_edi_canonical": -0.14615334806176566,
+  "convergence": {
+    "edi_primary_proxy": -0.14648415610774354,
+    "edi_secondary": -0.11346073393424425,
+    "delta_edi": 0.033023422173499295,
+    "convergen": true
+  },
+  "version_protocolo": "V5.4"
+}

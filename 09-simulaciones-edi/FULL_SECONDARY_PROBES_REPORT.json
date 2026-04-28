@@ -1,0 +1,533 @@
+{
+  "version_protocolo": "V5.4",
+  "n_total": 40,
+  "n_convergen": 4,
+  "casos_convergen": [
+    "08_caso_falsacion_observabilidad",
+    "17_caso_oceanos",
+    "23_caso_erosion_dialectica",
+    "25_caso_acuiferos"
+  ],
+  "summary_table": [
+    {
+      "case_id": "01_caso_clima",
+      "secondary_probe_name": "stochastic_harmonic_oscillator",
+      "secondary_motivation": "fisica_oscilatoria",
+      "primary_edi_canonical": 0.011072299899552383,
+      "convergence": {
+        "edi_primary_proxy": 0.010786871042552746,
+        "edi_secondary": -1.0,
+        "delta_edi": 1.0107868710425527,
+        "convergen": false
+      },
+      "version_protocolo": "V5.4"
+    },
+    {
+      "case_id": "02_caso_conciencia",
+      "secondary_probe_name": "fokker_planck_drift_diffusion",
+      "secondary_motivation": "fisica_estadistica",
+      "primary_edi_canonical": -0.11646132488773708,
+      "convergence": {
+        "edi_primary_proxy": -0.11678356308554957,
+        "edi_secondary": -1.0,
+        "delta_edi": 0.8832164369144504,
+        "convergen": false
+      },
+      "version_protocolo": "V5.4"
+    },
+    {
+      "case_id": "03_caso_contaminacion",
+      "secondary_probe_name": "sir_compartmental_pollution",
+      "secondary_motivation": "epidemiologia_clasica",
+      "primary_edi_canonical": -0.003799866103022012,
+      "convergence": {
+        "edi_primary_proxy": -0.004089587432912308,
+        "edi_secondary": 0.47262099560346077,
+        "delta_edi": 0.4767105830363731,
+        "convergen": false
+      },
+      "version_protocolo": "V5.4"
+    },
+    {
+      "case_id": "04_caso_energia",
+      "secondary_probe_name": "maxwell_boltzmann",
+      "secondary_motivation": "termodinamica_estadistica",
+      "primary_edi_canonical": 0.650265837204689,
+      "convergence": {
+        "edi_primary_proxy": 0.6501648953235684,
+        "edi_secondary": -0.03543087943214892,
+        "delta_edi": 0.6855957747557173,
+        "convergen": false
+      },
+      "version_protocolo": "V5.4"
+    },
+    {
+      "case_id": "05_caso_epidemiologia",
+      "secondary_probe_name": "fisher_kpp_diffusion",
+      "secondary_motivation": "matematica_difusion_reactiva",
+      "primary_edi_canonical": 0.12944152062099962,
+      "convergence": {
+        "edi_primary_proxy": 0.12919025603239995,
+        "edi_secondary": 0.673397461873586,
+        "delta_edi": 0.544207205841186,
+        "convergen": false
+      },
+      "version_protocolo": "V5.4"
+    },
+    {
+      "case_id": "06_caso_falsacion_exogeneidad",
+      "secondary_probe_name": "random_walk_control",
+      "secondary_motivation": "control_de_falsabilidad",
+      "primary_edi_canonical": 0.05505918915717987,
+      "convergence": {
+        "edi_primary_proxy": 0.05478645599828062,
+        "edi_secondary": -1.0,
+        "delta_edi": 1.0547864559982807,
+        "convergen": false
+      },
+      "version_protocolo": "V5.4"
+    },
+    {
+      "case_id": "07_caso_falsacion_no_estacionariedad",
+      "secondary_probe_name": "random_walk_control",
+      "secondary_motivation": "control_de_falsabilidad",
+      "primary_edi_canonical": -0.8819209901612093,
+      "convergence": {
+        "edi_primary_proxy": -0.8824641588449573,
+        "edi_secondary": -1.0,
+        "delta_edi": 0.11753584115504268,
+        "convergen": false
+      },
+      "version_protocolo": "V5.4"
+    },
+    {
+      "case_id": "08_caso_falsacion_observabilidad",
+      "secondary_probe_name": "random_walk_control",
+      "secondary_motivation": "control_de_falsabilidad",
+      "primary_edi_canonical": -1.0,
+      "convergence": {
+        "edi_primary_proxy": -1.0,
+        "edi_secondary": -1.0,
+        "delta_edi": 0.0,
+        "convergen": true
+      },
+      "version_protocolo": "V5.4"
+    },
+    {
+      "case_id": "09_caso_finanzas",
+      "secondary_probe_name": "heston_stochastic_volatility",
+      "secondary_motivation": "matematica_financiera",
+      "primary_edi_canonical": 0.08125725845167885,
+      "convergence": {
+        "edi_primary_proxy": 0.0809920866999215,
+        "edi_secondary": -1.0,
+        "delta_edi": 1.0809920866999214,
+        "convergen": false
+      },
+      "version_protocolo": "V5.4"
+    },
+    {
+      "case_id": "10_caso_justicia",
+      "secondary_probe_name": "linear_relaxation_justice",
+      "secondary_motivation": "control_lineal_clasico",
+      "primary_edi_canonical": 0.22744325283615935,
+      "convergence": {
+        "edi_primary_proxy": 0.22722027395783698,
+        "edi_secondary": 0.0963302171320826,
+        "delta_edi": 0.1308900568257544,
+        "convergen": false
+      },
+      "version_protocolo": "V5.4"
+    },
+    {
+      "case_id": "11_caso_movilidad",
+      "secondary_probe_name": "gravity_model",
+      "secondary_motivation": "fisica_gravitacional_aplicada",
+      "primary_edi_canonical": 0.12828980793063793,
+      "convergence": {
+        "edi_primary_proxy": 0.12803821092942932,
+        "edi_secondary": -1.0,
+        "delta_edi": 1.1280382109294294,
+        "convergen": false
+      },
+      "version_protocolo": "V5.4"
+    },
+    {
+      "case_id": "12_caso_paradigmas",
+      "secondary_probe_name": "kuramoto_synchronization",
+      "secondary_motivation": "sincronizacion_no_lineal",
+      "primary_edi_canonical": -0.006047380762526654,
+      "convergence": {
+        "edi_primary_proxy": -0.006337750780425552,
+        "edi_secondary": -1.0,
+        "delta_edi": 0.9936622492195745,
+        "convergen": false
+      },
+      "version_protocolo": "V5.4"
+    },
+    {
+      "case_id": "13_caso_politicas_estrategicas",
+      "secondary_probe_name": "linear_relaxation_policy",
+      "secondary_motivation": "control_lineal_clasico",
+      "primary_edi_canonical": 0.2972459599653249,
+      "convergence": {
+        "edi_primary_proxy": 0.2970431278650827,
+        "edi_secondary": 0.3885924117638744,
+        "delta_edi": 0.09154928389879169,
+        "convergen": false
+      },
+      "version_protocolo": "V5.4"
+    },
+    {
+      "case_id": "14_caso_postverdad",
+      "secondary_probe_name": "bass_diffusion",
+      "secondary_motivation": "marketing_quantitativo",
+      "primary_edi_canonical": 0.24284958859933714,
+      "convergence": {
+        "edi_primary_proxy": 0.24263105636843593,
+        "edi_secondary": 0.010102824517809698,
+        "delta_edi": 0.23252823185062624,
+        "convergen": false
+      },
+      "version_protocolo": "V5.4"
+    },
+    {
+      "case_id": "15_caso_wikipedia",
+      "secondary_probe_name": "gompertz_growth",
+      "secondary_motivation": "demografia_envejecimiento",
+      "primary_edi_canonical": 0.19162977697124867,
+      "convergence": {
+        "edi_primary_proxy": 0.19139646144295644,
+        "edi_secondary": -0.8735776360214719,
+        "delta_edi": 1.0649740974644284,
+        "convergen": false
+      },
+      "version_protocolo": "V5.4"
+    },
+    {
+      "case_id": "16_caso_deforestacion",
+      "secondary_probe_name": "fisher_kpp_diffusion",
+      "secondary_motivation": "matematica_reactiva",
+      "primary_edi_canonical": 0.5802201286883273,
+      "convergence": {
+        "edi_primary_proxy": 0.5800989698929494,
+        "edi_secondary": 0.11705198796746333,
+        "delta_edi": 0.4630469819254861,
+        "convergen": false
+      },
+      "version_protocolo": "V5.4"
+    },
+    {
+      "case_id": "17_caso_oceanos",
+      "secondary_probe_name": "stommel_thermohaline",
+      "secondary_motivation": "oceanografia_clasica",
+      "primary_edi_canonical": -0.015399742732341487,
+      "convergence": {
+        "edi_primary_proxy": -0.015692812071926757,
+        "edi_secondary": 0.01057825456620727,
+        "delta_edi": 0.026271066638134027,
+        "convergen": true
+      },
+      "version_protocolo": "V5.4"
+    },
+    {
+      "case_id": "18_caso_urbanizacion",
+      "secondary_probe_name": "gompertz_urban",
+      "secondary_motivation": "demografia_no_simetrica",
+      "primary_edi_canonical": 0.23583251166779556,
+      "convergence": {
+        "edi_primary_proxy": 0.2356119541359063,
+        "edi_secondary": -1.0,
+        "delta_edi": 1.2356119541359063,
+        "convergen": false
+      },
+      "version_protocolo": "V5.4"
+    },
+    {
+      "case_id": "19_caso_acidificacion_oceanica",
+      "secondary_probe_name": "henry_law_solubility",
+      "secondary_motivation": "termodinamica_disolucion",
+      "primary_edi_canonical": -0.0001909971007845106,
+      "convergence": {
+        "edi_primary_proxy": -0.00047967682232030203,
+        "edi_secondary": -0.6780766161751276,
+        "delta_edi": 0.6775969393528073,
+        "convergen": false
+      },
+      "version_protocolo": "V5.4"
+    },
+    {
+      "case_id": "20_caso_kessler",
+      "secondary_probe_name": "lotka_volterra",
+      "secondary_motivation": "ecologia_clasica",
+      "primary_edi_canonical": 0.35269595151500943,
+      "convergence": {
+        "edi_primary_proxy": 0.352509123646125,
+        "edi_secondary": 0.5979916540092507,
+        "delta_edi": 0.24548253036312567,
+        "convergen": false
+      },
+      "version_protocolo": "V5.4"
+    },
+    {
+      "case_id": "21_caso_salinizacion",
+      "secondary_probe_name": "linear_diffusion",
+      "secondary_motivation": "transporte_advectivo",
+      "primary_edi_canonical": 0.01842115528473093,
+      "convergence": {
+        "edi_primary_proxy": 0.018137847488140988,
+        "edi_secondary": 0.41182695902194305,
+        "delta_edi": 0.39368911153380204,
+        "convergen": false
+      },
+      "version_protocolo": "V5.4"
+    },
+    {
+      "case_id": "22_caso_fosforo",
+      "secondary_probe_name": "logistic_phosphorus",
+      "secondary_motivation": "limnologia_simple",
+      "primary_edi_canonical": 0.19240058742600652,
+      "convergence": {
+        "edi_primary_proxy": 0.1921674943725697,
+        "edi_secondary": -0.2033540468768827,
+        "delta_edi": 0.3955215412494524,
+        "convergen": false
+      },
+      "version_protocolo": "V5.4"
+    },
+    {
+      "case_id": "23_caso_erosion_dialectica",
+      "secondary_probe_name": "random_walk_dialectical",
+      "secondary_motivation": "control_caso_piloto",
+      "primary_edi_canonical": -1.0,
+      "convergence": {
+        "edi_primary_proxy": -1.0,
+        "edi_secondary": -1.0,
+        "delta_edi": 0.0,
+        "convergen": true
+      },
+      "version_protocolo": "V5.4"
+    },
+    {
+      "case_id": "24_caso_microplasticos",
+      "secondary_probe_name": "gompertz_pollutant",
+      "secondary_motivation": "crecimiento_asimetrico",
+      "primary_edi_canonical": 0.7818771547395869,
+      "convergence": {
+        "edi_primary_proxy": 0.7818141991216969,
+        "edi_secondary": -0.18715318407029638,
+        "delta_edi": 0.9689673831919933,
+        "convergen": false
+      },
+      "version_protocolo": "V5.4"
+    },
+    {
+      "case_id": "25_caso_acuiferos",
+      "secondary_probe_name": "darcy_groundwater",
+      "secondary_motivation": "hidrogeologia_clasica",
+      "primary_edi_canonical": -0.14615334806176566,
+      "convergence": {
+        "edi_primary_proxy": -0.14648415610774354,
+        "edi_secondary": -0.11346073393424425,
+        "delta_edi": 0.033023422173499295,
+        "convergen": true
+      },
+      "version_protocolo": "V5.4"
+    },
+    {
+      "case_id": "26_caso_starlink",
+      "secondary_probe_name": "exponential_growth",
+      "secondary_motivation": "modelos_demograficos",
+      "primary_edi_canonical": 0.6891705119737255,
+      "convergence": {
+        "edi_primary_proxy": 0.6890807989386065,
+        "edi_secondary": -1.0,
+        "delta_edi": 1.6890807989386065,
+        "convergen": false
+      },
+      "version_protocolo": "V5.4"
+    },
+    {
+      "case_id": "27_caso_riesgo_biologico",
+      "secondary_probe_name": "zeeman_catastrophe",
+      "secondary_motivation": "topologia_catastrofes",
+      "primary_edi_canonical": 0.3325786296723718,
+      "convergence": {
+        "edi_primary_proxy": 0.3323859954496167,
+        "edi_secondary": 0.7884862878154253,
+        "delta_edi": 0.45610029236580857,
+        "convergen": false
+      },
+      "version_protocolo": "V5.4"
+    },
+    {
+      "case_id": "28_caso_fuga_cerebros",
+      "secondary_probe_name": "gravity_brain_drain",
+      "secondary_motivation": "fisica_aplicada_a_migracion",
+      "primary_edi_canonical": 0.024881669387389924,
+      "convergence": {
+        "edi_primary_proxy": 0.024600226254066656,
+        "edi_secondary": -1.0,
+        "delta_edi": 1.0246002262540665,
+        "convergen": false
+      },
+      "version_protocolo": "V5.4"
+    },
+    {
+      "case_id": "29_caso_iot",
+      "secondary_probe_name": "logistic_substitution",
+      "secondary_motivation": "fisher_pry_substitution",
+      "primary_edi_canonical": -0.8760101554802692,
+      "convergence": {
+        "edi_primary_proxy": -0.8765516181517504,
+        "edi_secondary": 0.0035871863059402775,
+        "delta_edi": 0.8801388044576907,
+        "convergen": false
+      },
+      "version_protocolo": "V5.4"
+    },
+    {
+      "case_id": "30_caso_behavioral_dynamics",
+      "secondary_probe_name": "kuramoto_phase_locking",
+      "secondary_motivation": "sincronizacion_de_fases",
+      "primary_edi_canonical": 0.26216558939208157,
+      "convergence": {
+        "edi_primary_proxy": 0.26195263223408766,
+        "edi_secondary": 0.13966201594945232,
+        "delta_edi": 0.12229061628463533,
+        "convergen": false
+      },
+      "version_protocolo": "V5.4"
+    },
+    {
+      "case_id": "31_decoherencia_cuantica",
+      "secondary_probe_name": "exponential_relaxation",
+      "secondary_motivation": "decay_exponencial",
+      "primary_edi_canonical": 0.913177796635811,
+      "convergence": {
+        "edi_primary_proxy": 0.9131527376125215,
+        "edi_secondary": 0.5874135763883692,
+        "delta_edi": 0.32573916122415225,
+        "convergen": false
+      },
+      "version_protocolo": "V5.4"
+    },
+    {
+      "case_id": "32_espin_orbita",
+      "secondary_probe_name": "langevin_dynamics",
+      "secondary_motivation": "fisica_estadistica_estocastica",
+      "primary_edi_canonical": 0.8250879834716865,
+      "convergence": {
+        "edi_primary_proxy": 0.8250374995617423,
+        "edi_secondary": -1.0,
+        "delta_edi": 1.8250374995617422,
+        "convergen": false
+      },
+      "version_protocolo": "V5.4"
+    },
+    {
+      "case_id": "33_villin_headpiece",
+      "secondary_probe_name": "kramers_transition_state",
+      "secondary_motivation": "fisica_de_transiciones",
+      "primary_edi_canonical": 0.0,
+      "convergence": {
+        "edi_primary_proxy": -0.00028862459507484554,
+        "edi_secondary": 0.1330962588091446,
+        "delta_edi": 0.13338488340421945,
+        "convergen": false
+      },
+      "version_protocolo": "V5.4"
+    },
+    {
+      "case_id": "34_michaelis_menten",
+      "secondary_probe_name": "hill_cooperative",
+      "secondary_motivation": "cooperatividad_enzimatica",
+      "primary_edi_canonical": 0.4580474281524688,
+      "convergence": {
+        "edi_primary_proxy": 0.4578910073108696,
+        "edi_secondary": 0.6253552851535998,
+        "delta_edi": 0.1674642778427302,
+        "convergen": false
+      },
+      "version_protocolo": "V5.4"
+    },
+    {
+      "case_id": "35_ciclo_celular",
+      "secondary_probe_name": "goldbeter_oscillator",
+      "secondary_motivation": "oscilaciones_circadianas",
+      "primary_edi_canonical": 0.1306799800346662,
+      "convergence": {
+        "edi_primary_proxy": 0.13042907289591332,
+        "edi_secondary": -0.7628280244482968,
+        "delta_edi": 0.8932570973442101,
+        "convergen": false
+      },
+      "version_protocolo": "V5.4"
+    },
+    {
+      "case_id": "36_nfkb",
+      "secondary_probe_name": "goldbeter_nfkb",
+      "secondary_motivation": "redes_oscilatorias",
+      "primary_edi_canonical": 0.5873739314271895,
+      "convergence": {
+        "edi_primary_proxy": 0.5872548373952303,
+        "edi_secondary": -1.0,
+        "delta_edi": 1.5872548373952302,
+        "convergen": false
+      },
+      "version_protocolo": "V5.4"
+    },
+    {
+      "case_id": "37_hrv_cardiaco",
+      "secondary_probe_name": "fitzhugh_nagumo",
+      "secondary_motivation": "neurodinamica_excitable",
+      "primary_edi_canonical": 0.5771350469912229,
+      "convergence": {
+        "edi_primary_proxy": 0.5770129977653893,
+        "edi_secondary": -0.4371462688108616,
+        "delta_edi": 1.0141592665762509,
+        "convergen": false
+      },
+      "version_protocolo": "V5.4"
+    },
+    {
+      "case_id": "38_locomocion_alternativa",
+      "secondary_probe_name": "mass_spring_damped",
+      "secondary_motivation": "mecanica_clasica",
+      "primary_edi_canonical": -1.3412282437650878,
+      "convergence": {
+        "edi_primary_proxy": -1.0,
+        "edi_secondary": -0.39134008869146525,
+        "delta_edi": 0.6086599113085347,
+        "convergen": false
+      },
+      "version_protocolo": "V5.4"
+    },
+    {
+      "case_id": "39_cefeidas_ogle",
+      "secondary_probe_name": "reimers_mass_loss",
+      "secondary_motivation": "evolucion_estelar",
+      "primary_edi_canonical": 0.9162290686317869,
+      "convergence": {
+        "edi_primary_proxy": 0.9162048902806418,
+        "edi_secondary": -0.3295371951224237,
+        "delta_edi": 1.2457420854030654,
+        "convergen": false
+      },
+      "version_protocolo": "V5.4"
+    },
+    {
+      "case_id": "40_cumulos_globulares",
+      "secondary_probe_name": "king_profile",
+      "secondary_motivation": "dinamica_estelar_truncada",
+      "primary_edi_canonical": 0.4275530650113536,
+      "convergence": {
+        "edi_primary_proxy": 0.42738784274654074,
+        "edi_secondary": 0.32740831742766596,
+        "delta_edi": 0.09997952531887477,
+        "convergen": false
+      },
+      "version_protocolo": "V5.4"
+    }
+  ]
+}

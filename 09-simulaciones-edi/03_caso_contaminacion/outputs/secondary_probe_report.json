@@ -1,0 +1,13 @@
+{
+  "case_id": "03_caso_contaminacion",
+  "secondary_probe_name": "sir_compartmental_pollution",
+  "secondary_motivation": "epidemiologia_clasica",
+  "primary_edi_canonical": -0.003799866103022012,
+  "convergence": {
+    "edi_primary_proxy": -0.004089587432912308,
+    "edi_secondary": 0.47262099560346077,
+    "delta_edi": 0.4767105830363731,
+    "convergen": false
+  },
+  "version_protocolo": "V5.4"
+}

@@ -1,0 +1,13 @@
+{
+  "case_id": "01_caso_clima",
+  "secondary_probe_name": "stochastic_harmonic_oscillator",
+  "secondary_motivation": "fisica_oscilatoria",
+  "primary_edi_canonical": 0.011072299899552383,
+  "convergence": {
+    "edi_primary_proxy": 0.010786871042552746,
+    "edi_secondary": -1.0,
+    "delta_edi": 1.0107868710425527,
+    "convergen": false
+  },
+  "version_protocolo": "V5.4"
+}

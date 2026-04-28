@@ -1,0 +1,13 @@
+{
+  "case_id": "20_caso_kessler",
+  "secondary_probe_name": "lotka_volterra",
+  "secondary_motivation": "ecologia_clasica",
+  "primary_edi_canonical": 0.35269595151500943,
+  "convergence": {
+    "edi_primary_proxy": 0.352509123646125,
+    "edi_secondary": 0.5979916540092507,
+    "delta_edi": 0.24548253036312567,
+    "convergen": false
+  },
+  "version_protocolo": "V5.4"
+}

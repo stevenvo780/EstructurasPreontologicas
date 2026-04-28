@@ -1,0 +1,13 @@
+{
+  "case_id": "32_espin_orbita",
+  "secondary_probe_name": "langevin_dynamics",
+  "secondary_motivation": "fisica_estadistica_estocastica",
+  "primary_edi_canonical": 0.8250879834716865,
+  "convergence": {
+    "edi_primary_proxy": 0.8250374995617423,
+    "edi_secondary": -1.0,
+    "delta_edi": 1.8250374995617422,
+    "convergen": false
+  },
+  "version_protocolo": "V5.4"
+}

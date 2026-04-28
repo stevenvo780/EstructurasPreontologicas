@@ -1,0 +1,13 @@
+{
+  "case_id": "23_caso_erosion_dialectica",
+  "secondary_probe_name": "random_walk_dialectical",
+  "secondary_motivation": "control_caso_piloto",
+  "primary_edi_canonical": -1.0,
+  "convergence": {
+    "edi_primary_proxy": -1.0,
+    "edi_secondary": -1.0,
+    "delta_edi": 0.0,
+    "convergen": true
+  },
+  "version_protocolo": "V5.4"
+}

@@ -1,0 +1,13 @@
+{
+  "case_id": "31_decoherencia_cuantica",
+  "secondary_probe_name": "exponential_relaxation",
+  "secondary_motivation": "decay_exponencial",
+  "primary_edi_canonical": 0.913177796635811,
+  "convergence": {
+    "edi_primary_proxy": 0.9131527376125215,
+    "edi_secondary": 0.5874135763883692,
+    "delta_edi": 0.32573916122415225,
+    "convergen": false
+  },
+  "version_protocolo": "V5.4"
+}

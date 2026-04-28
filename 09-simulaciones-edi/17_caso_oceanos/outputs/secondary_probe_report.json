@@ -1,0 +1,13 @@
+{
+  "case_id": "17_caso_oceanos",
+  "secondary_probe_name": "stommel_thermohaline",
+  "secondary_motivation": "oceanografia_clasica",
+  "primary_edi_canonical": -0.015399742732341487,
+  "convergence": {
+    "edi_primary_proxy": -0.015692812071926757,
+    "edi_secondary": 0.01057825456620727,
+    "delta_edi": 0.026271066638134027,
+    "convergen": true
+  },
+  "version_protocolo": "V5.4"
+}

@@ -1,0 +1,13 @@
+{
+  "case_id": "36_nfkb",
+  "secondary_probe_name": "goldbeter_nfkb",
+  "secondary_motivation": "redes_oscilatorias",
+  "primary_edi_canonical": 0.5873739314271895,
+  "convergence": {
+    "edi_primary_proxy": 0.5872548373952303,
+    "edi_secondary": -1.0,
+    "delta_edi": 1.5872548373952302,
+    "convergen": false
+  },
+  "version_protocolo": "V5.4"
+}

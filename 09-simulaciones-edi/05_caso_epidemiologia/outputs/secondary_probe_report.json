@@ -1,0 +1,13 @@
+{
+  "case_id": "05_caso_epidemiologia",
+  "secondary_probe_name": "fisher_kpp_diffusion",
+  "secondary_motivation": "matematica_difusion_reactiva",
+  "primary_edi_canonical": 0.12944152062099962,
+  "convergence": {
+    "edi_primary_proxy": 0.12919025603239995,
+    "edi_secondary": 0.673397461873586,
+    "delta_edi": 0.544207205841186,
+    "convergen": false
+  },
+  "version_protocolo": "V5.4"
+}

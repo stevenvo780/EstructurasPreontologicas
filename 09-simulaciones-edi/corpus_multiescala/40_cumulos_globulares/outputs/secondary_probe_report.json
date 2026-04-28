@@ -1,0 +1,13 @@
+{
+  "case_id": "40_cumulos_globulares",
+  "secondary_probe_name": "king_profile",
+  "secondary_motivation": "dinamica_estelar_truncada",
+  "primary_edi_canonical": 0.4275530650113536,
+  "convergence": {
+    "edi_primary_proxy": 0.42738784274654074,
+    "edi_secondary": 0.32740831742766596,
+    "delta_edi": 0.09997952531887477,
+    "convergen": false
+  },
+  "version_protocolo": "V5.4"
+}

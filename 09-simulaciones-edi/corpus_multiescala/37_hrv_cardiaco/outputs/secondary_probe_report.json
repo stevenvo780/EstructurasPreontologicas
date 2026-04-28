@@ -1,0 +1,13 @@
+{
+  "case_id": "37_hrv_cardiaco",
+  "secondary_probe_name": "fitzhugh_nagumo",
+  "secondary_motivation": "neurodinamica_excitable",
+  "primary_edi_canonical": 0.5771350469912229,
+  "convergence": {
+    "edi_primary_proxy": 0.5770129977653893,
+    "edi_secondary": -0.4371462688108616,
+    "delta_edi": 1.0141592665762509,
+    "convergen": false
+  },
+  "version_protocolo": "V5.4"
+}

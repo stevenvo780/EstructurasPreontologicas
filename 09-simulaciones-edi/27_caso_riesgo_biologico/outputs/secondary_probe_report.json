@@ -1,0 +1,13 @@
+{
+  "case_id": "27_caso_riesgo_biologico",
+  "secondary_probe_name": "zeeman_catastrophe",
+  "secondary_motivation": "topologia_catastrofes",
+  "primary_edi_canonical": 0.3325786296723718,
+  "convergence": {
+    "edi_primary_proxy": 0.3323859954496167,
+    "edi_secondary": 0.7884862878154253,
+    "delta_edi": 0.45610029236580857,
+    "convergen": false
+  },
+  "version_protocolo": "V5.4"
+}

@@ -1,0 +1,13 @@
+{
+  "case_id": "33_villin_headpiece",
+  "secondary_probe_name": "kramers_transition_state",
+  "secondary_motivation": "fisica_de_transiciones",
+  "primary_edi_canonical": 0.0,
+  "convergence": {
+    "edi_primary_proxy": -0.00028862459507484554,
+    "edi_secondary": 0.1330962588091446,
+    "delta_edi": 0.13338488340421945,
+    "convergen": false
+  },
+  "version_protocolo": "V5.4"
+}

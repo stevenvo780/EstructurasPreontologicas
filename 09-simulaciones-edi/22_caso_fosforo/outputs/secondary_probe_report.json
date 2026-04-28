@@ -1,0 +1,13 @@
+{
+  "case_id": "22_caso_fosforo",
+  "secondary_probe_name": "logistic_phosphorus",
+  "secondary_motivation": "limnologia_simple",
+  "primary_edi_canonical": 0.19240058742600652,
+  "convergence": {
+    "edi_primary_proxy": 0.1921674943725697,
+    "edi_secondary": -0.2033540468768827,
+    "delta_edi": 0.3955215412494524,
+    "convergen": false
+  },
+  "version_protocolo": "V5.4"
+}

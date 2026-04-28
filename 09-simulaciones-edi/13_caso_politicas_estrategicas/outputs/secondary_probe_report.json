@@ -1,0 +1,13 @@
+{
+  "case_id": "13_caso_politicas_estrategicas",
+  "secondary_probe_name": "linear_relaxation_policy",
+  "secondary_motivation": "control_lineal_clasico",
+  "primary_edi_canonical": 0.2972459599653249,
+  "convergence": {
+    "edi_primary_proxy": 0.2970431278650827,
+    "edi_secondary": 0.3885924117638744,
+    "delta_edi": 0.09154928389879169,
+    "convergen": false
+  },
+  "version_protocolo": "V5.4"
+}
