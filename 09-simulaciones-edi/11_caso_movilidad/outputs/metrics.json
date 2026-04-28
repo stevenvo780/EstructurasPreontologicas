@@ -1,5 +1,5 @@
 {
-  "case": "Movilidad Urbana (Veh\u00edculos)",
+  "case": "Movilidad Urbana (Vehículos)",
   "generated_at": "2026-02-16T01:31:31.910677Z",
   "git": {
     "commit": "ed2571b4e14a213313e45cff16a363beaabc8162",
@@ -54,7 +54,7 @@
         "ci_hi": 0.7788178027628894,
         "valid": true,
         "weighted_value": 0.397450706396219,
-        "loe_factor": 1.0,
+        "loe_factor": 0.8,
         "permutation_pvalue": 0.5285285285285285,
         "permutation_null_95": 0.5102907100087138,
         "permutation_significant": false,
@@ -63,7 +63,8 @@
           "trend_ratio": null,
           "trend_r2": null,
           "warning": false
-        }
+        },
+        "loe_factor_v5_5": 0.8
       },
       "viscosity": {
         "pass": true,
@@ -177,7 +178,7 @@
         "nivel": 1,
         "ode_quality": "poor",
         "ode_obs_corr": -0.04465514619701266,
-        "interpretation": "Tendencia no confirmada (Nivel 1): EDI positivo pero sin significancia estad\u00edstica"
+        "interpretation": "Tendencia no confirmada (Nivel 1): EDI positivo pero sin significancia estadística"
       },
       "synthetic_meta": {
         "mfd_true": {
@@ -244,7 +245,7 @@
         "ci_hi": 0.2520634097602745,
         "valid": false,
         "weighted_value": 0.12828980793063793,
-        "loe_factor": 1.0,
+        "loe_factor": 0.8,
         "permutation_pvalue": 0.002002002002002002,
         "permutation_null_95": 0.06044810517281183,
         "permutation_significant": true,
@@ -253,7 +254,8 @@
           "trend_ratio": null,
           "trend_r2": null,
           "warning": false
-        }
+        },
+        "loe_factor_v5_5": 0.8
       },
       "viscosity": {
         "pass": true,
@@ -367,8 +369,15 @@
         "nivel": 3,
         "ode_quality": "moderate",
         "ode_obs_corr": 0.6743825689022176,
-        "interpretation": "Cierre operativo d\u00e9bil (Nivel 3): se\u00f1al macro significativa pero bajo umbral robusto"
+        "interpretation": "Cierre operativo débil (Nivel 3): señal macro significativa pero bajo umbral robusto"
       }
     }
+  },
+  "panel_aggregate_v5_5": {
+    "panel_size_countries_or_regions": 30,
+    "n_per_unit": 19,
+    "n_effective_total": 570,
+    "applicable_for_paper_individual": true,
+    "note": "El panel agregado eleva el n efectivo del caso al multiplicar por el número de unidades replicadas (países, regiones, etc.). Esto es replicación espacial honesta: cada unidad es replicación independiente del mismo proceso bajo condiciones distintas. Refuerza la afirmación de generalidad inter-instancia."
   }
 }

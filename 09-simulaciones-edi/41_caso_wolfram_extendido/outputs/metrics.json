@@ -1,0 +1,140 @@
+{
+  "case_name": "Wolfram extendido (Rule 30/90/110/184)",
+  "case_id": "41_caso_wolfram_extendido",
+  "scale": "computacional (autómata celular elemental)",
+  "edi_aggregate": -0.2750861300597808,
+  "rules": {
+    "rule_30": {
+      "rule": 30,
+      "edi_primary": {
+        "value": -0.12326523846087115,
+        "permutation_pvalue": 0.562,
+        "ci_lo": -0.2337595085168694,
+        "ci_hi": -0.024843972123855956,
+        "bootstrap_mean": -0.12484106743515326,
+        "rmse_primary": 0.1071143020499542,
+        "rmse_baseline": 0.09535975865925056
+      },
+      "edi_secondary": {
+        "value": 0.6068922067073975,
+        "permutation_pvalue": 0.605,
+        "ci_lo": 0.5612964845921036,
+        "ci_hi": 0.6497899644974829,
+        "bootstrap_mean": 0.6064882541405545,
+        "rmse_primary": 0.03748666429545313,
+        "rmse_baseline": 0.09535975865925056
+      },
+      "delta_edi_inter_paradigma": 0.7301574451682686,
+      "convergen": false,
+      "n_steps": 200,
+      "grid_width": 200
+    },
+    "rule_90": {
+      "rule": 90,
+      "edi_primary": {
+        "value": -0.19895059526211759,
+        "permutation_pvalue": 0.238,
+        "ci_lo": -0.3149677703624615,
+        "ci_hi": -0.0852330469769519,
+        "bootstrap_mean": -0.2001919215032545,
+        "rmse_primary": 0.10490299778872435,
+        "rmse_baseline": 0.08749568014167439
+      },
+      "edi_secondary": {
+        "value": 0.6151248104313433,
+        "permutation_pvalue": 0.258,
+        "ci_lo": 0.5722123665948595,
+        "ci_hi": 0.6547507825158883,
+        "bootstrap_mean": 0.6146833995456168,
+        "rmse_primary": 0.03367491648096549,
+        "rmse_baseline": 0.08749568014167439
+      },
+      "delta_edi_inter_paradigma": 0.8140754056934608,
+      "convergen": false,
+      "n_steps": 200,
+      "grid_width": 200
+    },
+    "rule_110": {
+      "rule": 110,
+      "edi_primary": {
+        "value": -0.7781286865161343,
+        "permutation_pvalue": 0.494,
+        "ci_lo": -1.0,
+        "ci_hi": -0.557982957852906,
+        "bootstrap_mean": -0.7845492722546776,
+        "rmse_primary": 0.12097263847135223,
+        "rmse_baseline": 0.06803368023288148
+      },
+      "edi_secondary": {
+        "value": -0.024852065185222483,
+        "permutation_pvalue": 0.975,
+        "ci_lo": -0.12661880899918296,
+        "ci_hi": 0.06342758467891496,
+        "bootstrap_mean": -0.027572540011429107,
+        "rmse_primary": 0.06972445768881963,
+        "rmse_baseline": 0.06803368023288148
+      },
+      "delta_edi_inter_paradigma": 0.7532766213309119,
+      "convergen": false,
+      "n_steps": 200,
+      "grid_width": 200
+    },
+    "rule_184": {
+      "rule": 184,
+      "edi_primary": {
+        "value": 0.0,
+        "permutation_pvalue": 1.0,
+        "ci_lo": 0.0,
+        "ci_hi": 0.0,
+        "bootstrap_mean": 0.0,
+        "rmse_primary": 0.09992037807549424,
+        "rmse_baseline": 4.194858366605158e-16
+      },
+      "edi_secondary": {
+        "value": 0.0,
+        "permutation_pvalue": 1.0,
+        "ci_lo": 0.0,
+        "ci_hi": 0.0,
+        "bootstrap_mean": 0.0,
+        "rmse_primary": 0.010000000000000009,
+        "rmse_baseline": 4.194858366605158e-16
+      },
+      "delta_edi_inter_paradigma": 0.0,
+      "convergen": true,
+      "n_steps": 200,
+      "grid_width": 200
+    }
+  },
+  "n_rules_convergen": 1,
+  "version_protocolo": "V5.5",
+  "generated_at": "2026-04-28T23:40:46.662549+00:00",
+  "notes": "Extiende el piloto Rule 110 del cap 04-01 §15 a Rule 30 (caos), Rule 90 (sierpinski), Rule 184 (tráfico). Datos sintéticos generados por el autómata mismo (sin proxy literario). Sirve a discriminación estructural contra Wolfram: el cierre operativo macro detectable no es artefacto de un autómata particular.",
+  "git": null,
+  "seed": 42,
+  "phases": {
+    "synthetic": {
+      "phase": "synthetic",
+      "overall_pass": false,
+      "data": {
+        "steps": 200,
+        "val_steps": 200,
+        "grid_width": 200
+      },
+      "edi": {
+        "value": -0.2750861300597808,
+        "permutation_pvalue": 0.5735,
+        "ci_lo": -0.38718181971983273,
+        "ci_hi": -0.16701499423842847,
+        "bootstrap_mean": -0.2750861300597808,
+        "valid": false,
+        "weighted_value": -0.16505167803586845,
+        "loe_factor": 0.6,
+        "loe_factor_v5_5": 0.6
+      },
+      "errors": {
+        "rmse_abm": 0.10822757909638125,
+        "rmse_reduced": 0.06272227975845171
+      }
+    }
+  }
+}

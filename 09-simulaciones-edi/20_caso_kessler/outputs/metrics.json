@@ -54,7 +54,7 @@
         "ci_hi": 0.10246848580829016,
         "valid": false,
         "weighted_value": -0.11658793793412779,
-        "loe_factor": 0.6,
+        "loe_factor": 0.8,
         "permutation_pvalue": 1.0,
         "permutation_null_95": -0.13072913033842526,
         "permutation_significant": false,
@@ -63,7 +63,8 @@
           "trend_ratio": 1.0,
           "trend_r2": 0.851,
           "warning": false
-        }
+        },
+        "loe_factor_v5_5": 0.8
       },
       "viscosity": {
         "pass": true,
@@ -177,7 +178,7 @@
         "nivel": 0,
         "ode_quality": "good",
         "ode_obs_corr": 0.9040853956936614,
-        "interpretation": "Sin cierre operativo (Nivel 0): sin evidencia de constricci\u00f3n macro efectiva"
+        "interpretation": "Sin cierre operativo (Nivel 0): sin evidencia de constricción macro efectiva"
       },
       "synthetic_meta": {
         "model": "NASA ORDEM / ESA MASTER (Kessler-Liou)",
@@ -237,7 +238,7 @@
         "ci_hi": 0.5197667268067611,
         "valid": true,
         "weighted_value": 0.21161757090900565,
-        "loe_factor": 0.6,
+        "loe_factor": 0.8,
         "permutation_pvalue": 0.0,
         "permutation_null_95": 0.20334379041696707,
         "permutation_significant": true,
@@ -246,7 +247,8 @@
           "trend_ratio": 1.0,
           "trend_r2": 0.872,
           "warning": false
-        }
+        },
+        "loe_factor_v5_5": 0.8
       },
       "viscosity": {
         "pass": true,
@@ -360,7 +362,7 @@
         "nivel": 4,
         "ode_quality": "good",
         "ode_obs_corr": 0.9286803522109255,
-        "interpretation": "Cierre operativo fuerte (Nivel 4): la macro constri\u00f1e significativamente la din\u00e1mica micro"
+        "interpretation": "Cierre operativo fuerte (Nivel 4): la macro constriñe significativamente la dinámica micro"
       }
     }
   }

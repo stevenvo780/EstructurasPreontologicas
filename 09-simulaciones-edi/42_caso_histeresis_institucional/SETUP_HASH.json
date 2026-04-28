@@ -1,0 +1,14 @@
+{
+  "case_id": "42_caso_histeresis_institucional",
+  "timestamp_utc": "2026-04-28T23:47:23.398401+00:00",
+  "git_commit": "a05767f0554bfe58c4b38f9cf0ade46b87ac9e14",
+  "git_dirty": true,
+  "file_count": 2,
+  "aggregate_hash": "4aa7ec16ee9c53b1d41ce924dc99b90961f3abbb88bb379b11efade02bfed9fa",
+  "file_hashes": {
+    "NARRATIVA_TESIS_V5_5.md": "ec590e76b8654be48520ea63deab9d7e8c3f2337ac590d7ffc2ff3da9b6d4e12",
+    "run.py": "f25771b5bdb4de2bf0f682a8bfc6cf56a98d6a2a504bf9065ca3c186a501653f"
+  },
+  "protocol_version": "V5.1",
+  "method": "sha256_recursive_with_output_exclusion"
+}

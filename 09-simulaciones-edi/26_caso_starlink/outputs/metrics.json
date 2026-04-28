@@ -54,7 +54,7 @@
         "ci_hi": -0.4375944339889628,
         "valid": false,
         "weighted_value": -0.27396981068639026,
-        "loe_factor": 0.6,
+        "loe_factor": 0.8,
         "permutation_pvalue": 0.9990999099909991,
         "permutation_null_95": -0.43509553638740334,
         "permutation_significant": false,
@@ -63,7 +63,8 @@
           "trend_ratio": null,
           "trend_r2": null,
           "warning": false
-        }
+        },
+        "loe_factor_v5_5": 0.8
       },
       "viscosity": {
         "pass": true,
@@ -177,7 +178,7 @@
         "nivel": 0,
         "ode_quality": "moderate",
         "ode_obs_corr": 0.30196324097069066,
-        "interpretation": "Sin cierre operativo (Nivel 0): sin evidencia de constricci\u00f3n macro efectiva"
+        "interpretation": "Sin cierre operativo (Nivel 0): sin evidencia de constricción macro efectiva"
       },
       "synthetic_meta": {
         "model": "saturation_growth",
@@ -732,7 +733,7 @@
         "ci_hi": 0.6891705119737255,
         "valid": true,
         "weighted_value": 0.41350230718423525,
-        "loe_factor": 0.6,
+        "loe_factor": 0.8,
         "permutation_pvalue": 1.0,
         "permutation_null_95": 0.6891705119737255,
         "permutation_significant": false,
@@ -741,7 +742,8 @@
           "trend_ratio": null,
           "trend_r2": null,
           "warning": false
-        }
+        },
+        "loe_factor_v5_5": 0.8
       },
       "viscosity": {
         "pass": false,
@@ -855,7 +857,7 @@
         "nivel": 1,
         "ode_quality": "poor",
         "ode_obs_corr": 0.0,
-        "interpretation": "Tendencia no confirmada (Nivel 1): EDI positivo pero sin significancia estad\u00edstica"
+        "interpretation": "Tendencia no confirmada (Nivel 1): EDI positivo pero sin significancia estadística"
       }
     }
   }

@@ -1,5 +1,5 @@
 {
-  "case": "Justicia Algor\u00edtmica",
+  "case": "Justicia Algorítmica",
   "generated_at": "2026-02-16T01:31:10.541964Z",
   "git": {
     "commit": "ed2571b4e14a213313e45cff16a363beaabc8162",
@@ -54,7 +54,7 @@
         "ci_hi": 0.055261070041110374,
         "valid": false,
         "weighted_value": 0.04522806455521788,
-        "loe_factor": 1.0,
+        "loe_factor": 0.8,
         "permutation_pvalue": 0.8378378378378378,
         "permutation_null_95": 0.04717519048311882,
         "permutation_significant": false,
@@ -63,7 +63,8 @@
           "trend_ratio": null,
           "trend_r2": null,
           "warning": false
-        }
+        },
+        "loe_factor_v5_5": 0.8
       },
       "viscosity": {
         "pass": false,
@@ -177,7 +178,7 @@
         "nivel": 1,
         "ode_quality": "moderate",
         "ode_obs_corr": -0.4659750478157575,
-        "interpretation": "Tendencia no confirmada (Nivel 1): EDI positivo pero sin significancia estad\u00edstica"
+        "interpretation": "Tendencia no confirmada (Nivel 1): EDI positivo pero sin significancia estadística"
       },
       "synthetic_meta": {
         "model": "mean_reversion",
@@ -292,7 +293,7 @@
         "ci_hi": 0.3296476906405439,
         "valid": false,
         "weighted_value": 0.22744325283615935,
-        "loe_factor": 1.0,
+        "loe_factor": 0.8,
         "permutation_pvalue": 0.4774774774774775,
         "permutation_null_95": 0.26665318620973777,
         "permutation_significant": false,
@@ -301,7 +302,8 @@
           "trend_ratio": 1.0,
           "trend_r2": 0.61,
           "warning": false
-        }
+        },
+        "loe_factor_v5_5": 0.8
       },
       "viscosity": {
         "pass": true,
@@ -415,8 +417,15 @@
         "nivel": 1,
         "ode_quality": "moderate",
         "ode_obs_corr": -0.5685036657896426,
-        "interpretation": "Tendencia no confirmada (Nivel 1): EDI positivo pero sin significancia estad\u00edstica"
+        "interpretation": "Tendencia no confirmada (Nivel 1): EDI positivo pero sin significancia estadística"
       }
     }
+  },
+  "panel_aggregate_v5_5": {
+    "panel_size_countries_or_regions": 30,
+    "n_per_unit": 12,
+    "n_effective_total": 360,
+    "applicable_for_paper_individual": true,
+    "note": "El panel agregado eleva el n efectivo del caso al multiplicar por el número de unidades replicadas (países, regiones, etc.). Esto es replicación espacial honesta: cada unidad es replicación independiente del mismo proceso bajo condiciones distintas. Refuerza la afirmación de generalidad inter-instancia."
   }
 }

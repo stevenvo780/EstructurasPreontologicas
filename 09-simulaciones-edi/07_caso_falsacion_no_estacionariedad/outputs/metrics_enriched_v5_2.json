@@ -16,8 +16,8 @@
     ],
     "fwer_position_in_corpus": {
       "raw_p_value": 1.0,
-      "rank_in_corpus": 22,
-      "corpus_size": 30,
+      "rank_in_corpus": 23,
+      "corpus_size": 32,
       "p_adjusted_bonferroni": 1.0,
       "p_adjusted_holm": 1.0,
       "survives_fwer_at_alpha_0_05": false

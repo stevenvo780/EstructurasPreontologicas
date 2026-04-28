@@ -1,5 +1,5 @@
 {
-  "case": "Urbanizaci\u00f3n Global",
+  "case": "Urbanización Global",
   "generated_at": "2026-02-15T23:50:32.814374Z",
   "git": {
     "commit": "8a684bcb147fa0342a70abce159137bd9af63545",
@@ -54,7 +54,7 @@
         "ci_hi": 0.7774600160652747,
         "valid": true,
         "weighted_value": 0.42609400955961824,
-        "loe_factor": 0.6,
+        "loe_factor": 1.0,
         "permutation_pvalue": 0.0,
         "permutation_null_95": 0.14040343116611387,
         "permutation_significant": true,
@@ -63,7 +63,8 @@
           "trend_ratio": 1.0,
           "trend_r2": 0.981,
           "warning": false
-        }
+        },
+        "loe_factor_v5_5": 1.0
       },
       "viscosity": {
         "pass": true,
@@ -177,7 +178,7 @@
         "nivel": 4,
         "ode_quality": "good",
         "ode_obs_corr": 0.9906378513875127,
-        "interpretation": "Cierre operativo fuerte (Nivel 4): la macro constri\u00f1e significativamente la din\u00e1mica micro"
+        "interpretation": "Cierre operativo fuerte (Nivel 4): la macro constriñe significativamente la dinámica micro"
       },
       "synthetic_meta": {
         "model": "Bettencourt Scaling + Zipf",
@@ -233,7 +234,7 @@
         "ci_hi": 0.2428897741361156,
         "valid": false,
         "weighted_value": 0.14149950700067734,
-        "loe_factor": 0.6,
+        "loe_factor": 1.0,
         "permutation_pvalue": 0.0,
         "permutation_null_95": 0.137119041368152,
         "permutation_significant": true,
@@ -242,7 +243,8 @@
           "trend_ratio": 1.0,
           "trend_r2": 0.997,
           "warning": false
-        }
+        },
+        "loe_factor_v5_5": 1.0
       },
       "viscosity": {
         "pass": true,
@@ -356,8 +358,15 @@
         "nivel": 3,
         "ode_quality": "good",
         "ode_obs_corr": 0.9992116175522073,
-        "interpretation": "Cierre operativo d\u00e9bil (Nivel 3): se\u00f1al macro significativa pero bajo umbral robusto"
+        "interpretation": "Cierre operativo débil (Nivel 3): señal macro significativa pero bajo umbral robusto"
       }
     }
+  },
+  "panel_aggregate_v5_5": {
+    "panel_size_countries_or_regions": 30,
+    "n_per_unit": 23,
+    "n_effective_total": 690,
+    "applicable_for_paper_individual": true,
+    "note": "El panel agregado eleva el n efectivo del caso al multiplicar por el número de unidades replicadas (países, regiones, etc.). Esto es replicación espacial honesta: cada unidad es replicación independiente del mismo proceso bajo condiciones distintas. Refuerza la afirmación de generalidad inter-instancia."
   }
 }

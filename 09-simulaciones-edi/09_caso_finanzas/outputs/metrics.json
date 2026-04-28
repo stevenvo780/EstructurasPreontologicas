@@ -63,7 +63,8 @@
           "trend_ratio": 1.0,
           "trend_r2": 0.632,
           "warning": false
-        }
+        },
+        "loe_factor_v5_5": 1.0
       },
       "viscosity": {
         "pass": true,
@@ -177,7 +178,7 @@
         "nivel": 0,
         "ode_quality": "good",
         "ode_obs_corr": 0.7920626340261342,
-        "interpretation": "Sin cierre operativo (Nivel 0): sin evidencia de constricci\u00f3n macro efectiva"
+        "interpretation": "Sin cierre operativo (Nivel 0): sin evidencia de constricción macro efectiva"
       },
       "synthetic_meta": {
         "model": "mean_reversion",
@@ -747,7 +748,8 @@
           "trend_ratio": 1.0,
           "trend_r2": 0.979,
           "warning": false
-        }
+        },
+        "loe_factor_v5_5": 1.0
       },
       "viscosity": {
         "pass": true,

@@ -4,10 +4,10 @@
   "secondary_motivation": "hidrogeologia_clasica",
   "primary_edi_canonical": -0.14615334806176566,
   "convergence": {
-    "edi_primary_proxy": -0.14648415610774354,
-    "edi_secondary": -0.11346073393424425,
-    "delta_edi": 0.033023422173499295,
-    "convergen": true
+    "edi_primary_proxy": -0.1464841561077436,
+    "edi_secondary": 0.4051030877613644,
+    "delta_edi": 0.551587243869108,
+    "convergen": false
   },
   "version_protocolo": "V5.4"
 }

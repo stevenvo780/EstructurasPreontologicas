@@ -4,9 +4,9 @@
   "secondary_motivation": "neurodinamica_excitable",
   "primary_edi_canonical": 0.5771350469912229,
   "convergence": {
-    "edi_primary_proxy": 0.5770129977653893,
-    "edi_secondary": -0.4371462688108616,
-    "delta_edi": 1.0141592665762509,
+    "edi_primary_proxy": 0.5770129977653894,
+    "edi_secondary": -0.6790315458359459,
+    "delta_edi": 1.2560445436013352,
     "convergen": false
   },
   "version_protocolo": "V5.4"

@@ -430,6 +430,57 @@ def king_globular(obs, forcing, c=2.0, seed=42):
 # Mapeo completo
 # =====================================================================
 
+def markov_compression_wolfram(obs, forcing, n_states=5, seed=42):
+    """41 Wolfram extendido — Markov compression sobre densidad cuantizada."""
+    n = len(obs)
+    bins = np.linspace(0, 1, n_states + 1)
+    states = np.digitize(obs, bins) - 1
+    states = np.clip(states, 0, n_states - 1)
+    T = np.zeros((n_states, n_states)) + 1e-6
+    for t in range(n - 1):
+        T[states[t], states[t+1]] += 1
+    T = T / T.sum(axis=1, keepdims=True)
+    pred_states = np.zeros_like(states)
+    pred_states[0] = states[0]
+    for t in range(1, n):
+        pred_states[t] = np.argmax(T[pred_states[t-1]])
+    pred = (pred_states + 0.5) / n_states
+    return {"prediction": pred, "probe": "markov_compression",
+            "motivacion": "compresion_estado_discreto"}
+
+
+def random_forest_threshold_panel(obs, forcing, lookback=7, seed=42):
+    """42 Histéresis — Threshold por bisección (sonda secundaria)."""
+    obs = _arr(obs); f = _arr(forcing, len(obs))
+    n = len(obs)
+    train_size = int(n * 0.5)
+    best_th = 0.20; best_score = float("inf")
+    for th in np.linspace(0.10, 0.50, 30):
+        s_pred = np.zeros(train_size); s_pred[0] = obs[0]
+        for i in range(1, train_size):
+            window = f[max(0, i-lookback):i].mean()
+            if window > th and s_pred[i-1] < 1.0:
+                s_pred[i] = min(s_pred[i-1] + 0.25, 1.0)
+            elif window < th * 0.6 and s_pred[i-1] > 0:
+                s_pred[i] = max(s_pred[i-1] - 0.25, 0.0)
+            else:
+                s_pred[i] = s_pred[i-1]
+        score = float(np.sqrt(np.mean((s_pred - obs[:train_size])**2)))
+        if score < best_score:
+            best_score = score; best_th = th
+    pred = np.zeros(n); pred[0] = obs[0]
+    for i in range(1, n):
+        window = f[max(0, i-lookback):i].mean()
+        if window > best_th and pred[i-1] < 1.0:
+            pred[i] = min(pred[i-1] + 0.25, 1.0)
+        elif window < best_th * 0.6 and pred[i-1] > 0:
+            pred[i] = max(pred[i-1] - 0.25, 0.0)
+        else:
+            pred[i] = pred[i-1]
+    return {"prediction": pred, "probe": "rf_threshold_bisection",
+            "motivacion": "aprendizaje_supervisado_decision_tree"}
+
+
 ALL_SECONDARY_PROBES = {
     "01_caso_clima":              stochastic_oscillator_climate,
     "02_caso_conciencia":         fokker_planck_consciousness,
@@ -472,6 +523,8 @@ ALL_SECONDARY_PROBES = {
     "38_locomocion_alternativa":  mass_spring_locomotion,
     "39_cefeidas_ogle":           reimers_cefeidas,
     "40_cumulos_globulares":      king_globular,
+    "41_caso_wolfram_extendido":  markov_compression_wolfram,
+    "42_caso_histeresis_institucional": random_forest_threshold_panel,
 }
 
 

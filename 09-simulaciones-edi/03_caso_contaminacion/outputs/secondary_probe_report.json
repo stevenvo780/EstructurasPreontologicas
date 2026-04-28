@@ -4,9 +4,9 @@
   "secondary_motivation": "epidemiologia_clasica",
   "primary_edi_canonical": -0.003799866103022012,
   "convergence": {
-    "edi_primary_proxy": -0.004089587432912308,
-    "edi_secondary": 0.47262099560346077,
-    "delta_edi": 0.4767105830363731,
+    "edi_primary_proxy": -0.004089587432911963,
+    "edi_secondary": 0.6074834050989912,
+    "delta_edi": 0.6115729925319032,
     "convergen": false
   },
   "version_protocolo": "V5.4"

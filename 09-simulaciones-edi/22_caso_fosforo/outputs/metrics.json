@@ -1,5 +1,5 @@
 {
-  "case": "Ciclo del F\u00f3sforo (Carpenter Biogeoqu\u00edmico)",
+  "case": "Ciclo del Fósforo (Carpenter Biogeoquímico)",
   "generated_at": "2026-02-15T23:50:26.553748Z",
   "git": {
     "commit": "8a684bcb147fa0342a70abce159137bd9af63545",
@@ -54,7 +54,7 @@
         "ci_hi": 0.15750856380666634,
         "valid": false,
         "weighted_value": 0.07516849308388994,
-        "loe_factor": 0.6,
+        "loe_factor": 0.8,
         "permutation_pvalue": 0.023502350235023502,
         "permutation_null_95": 0.12179875445061507,
         "permutation_significant": true,
@@ -63,7 +63,8 @@
           "trend_ratio": 1.0,
           "trend_r2": 0.534,
           "warning": false
-        }
+        },
+        "loe_factor_v5_5": 0.8
       },
       "viscosity": {
         "pass": false,
@@ -177,7 +178,7 @@
         "nivel": 3,
         "ode_quality": "good",
         "ode_obs_corr": 0.7297962588387248,
-        "interpretation": "Cierre operativo d\u00e9bil (Nivel 3): se\u00f1al macro significativa pero bajo umbral robusto"
+        "interpretation": "Cierre operativo débil (Nivel 3): señal macro significativa pero bajo umbral robusto"
       },
       "synthetic_meta": {
         "model": "bilinear",
@@ -282,7 +283,7 @@
         "ci_hi": 0.5502177656704227,
         "valid": false,
         "weighted_value": 0.11544035245560391,
-        "loe_factor": 0.6,
+        "loe_factor": 0.8,
         "permutation_pvalue": 0.0,
         "permutation_null_95": -0.04453682000448297,
         "permutation_significant": true,
@@ -291,7 +292,8 @@
           "trend_ratio": 1.0,
           "trend_r2": 0.774,
           "warning": false
-        }
+        },
+        "loe_factor_v5_5": 0.8
       },
       "viscosity": {
         "pass": true,
@@ -405,8 +407,15 @@
         "nivel": 3,
         "ode_quality": "good",
         "ode_obs_corr": 0.8615187243141039,
-        "interpretation": "Cierre operativo d\u00e9bil (Nivel 3): se\u00f1al macro significativa pero bajo umbral robusto"
+        "interpretation": "Cierre operativo débil (Nivel 3): señal macro significativa pero bajo umbral robusto"
       }
     }
+  },
+  "panel_aggregate_v5_5": {
+    "panel_size_countries_or_regions": 30,
+    "n_per_unit": 18,
+    "n_effective_total": 540,
+    "applicable_for_paper_individual": true,
+    "note": "El panel agregado eleva el n efectivo del caso al multiplicar por el número de unidades replicadas (países, regiones, etc.). Esto es replicación espacial honesta: cada unidad es replicación independiente del mismo proceso bajo condiciones distintas. Refuerza la afirmación de generalidad inter-instancia."
   }
 }

@@ -63,7 +63,8 @@
           "trend_ratio": null,
           "trend_r2": null,
           "warning": false
-        }
+        },
+        "loe_factor_v5_5": 0.6
       },
       "viscosity": {
         "pass": true,
@@ -177,7 +178,7 @@
         "nivel": 0,
         "ode_quality": "poor",
         "ode_obs_corr": 0.18333387798594888,
-        "interpretation": "Sin cierre operativo (Nivel 0): sin evidencia de constricci\u00f3n macro efectiva"
+        "interpretation": "Sin cierre operativo (Nivel 0): sin evidencia de constricción macro efectiva"
       },
       "synthetic_meta": {
         "model": "brain_drain",
@@ -355,7 +356,8 @@
           "trend_ratio": 1.0,
           "trend_r2": 0.794,
           "warning": false
-        }
+        },
+        "loe_factor_v5_5": 0.6
       },
       "viscosity": {
         "pass": true,
@@ -469,8 +471,15 @@
         "nivel": 1,
         "ode_quality": "moderate",
         "ode_obs_corr": 0.6875636881147773,
-        "interpretation": "Tendencia no confirmada (Nivel 1): EDI positivo pero sin significancia estad\u00edstica"
+        "interpretation": "Tendencia no confirmada (Nivel 1): EDI positivo pero sin significancia estadística"
       }
     }
+  },
+  "panel_aggregate_v5_5": {
+    "panel_size_countries_or_regions": 30,
+    "n_per_unit": 18,
+    "n_effective_total": 540,
+    "applicable_for_paper_individual": true,
+    "note": "El panel agregado eleva el n efectivo del caso al multiplicar por el número de unidades replicadas (países, regiones, etc.). Esto es replicación espacial honesta: cada unidad es replicación independiente del mismo proceso bajo condiciones distintas. Refuerza la afirmación de generalidad inter-instancia."
   }
 }

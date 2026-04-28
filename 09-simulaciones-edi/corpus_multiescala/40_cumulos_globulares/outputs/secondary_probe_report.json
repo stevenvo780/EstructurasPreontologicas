@@ -4,10 +4,10 @@
   "secondary_motivation": "dinamica_estelar_truncada",
   "primary_edi_canonical": 0.4275530650113536,
   "convergence": {
-    "edi_primary_proxy": 0.42738784274654074,
-    "edi_secondary": 0.32740831742766596,
-    "delta_edi": 0.09997952531887477,
-    "convergen": false
+    "edi_primary_proxy": 0.4273878427465406,
+    "edi_secondary": 0.46256805664558626,
+    "delta_edi": 0.03518021389904563,
+    "convergen": true
   },
   "version_protocolo": "V5.4"
 }

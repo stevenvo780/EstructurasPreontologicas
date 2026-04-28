@@ -4,9 +4,9 @@
   "secondary_motivation": "sincronizacion_de_fases",
   "primary_edi_canonical": 0.26216558939208157,
   "convergence": {
-    "edi_primary_proxy": 0.26195263223408766,
-    "edi_secondary": 0.13966201594945232,
-    "delta_edi": 0.12229061628463533,
+    "edi_primary_proxy": 0.2619526322340877,
+    "edi_secondary": 0.08708288191238987,
+    "delta_edi": 0.17486975032169783,
     "convergen": false
   },
   "version_protocolo": "V5.4"

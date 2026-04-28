@@ -1,5 +1,5 @@
 {
-  "case": "Erosi\u00f3n Dial\u00e9ctica (Abrams-Strogatz Prestige)",
+  "case": "Erosión Dialéctica (Abrams-Strogatz Prestige)",
   "generated_at": "2026-02-15T23:50:21.085603Z",
   "git": {
     "commit": "8a684bcb147fa0342a70abce159137bd9af63545",
@@ -54,7 +54,7 @@
         "ci_hi": -0.016982879736767136,
         "valid": false,
         "weighted_value": -0.011394708308988989,
-        "loe_factor": 0.6,
+        "loe_factor": 0.4,
         "permutation_pvalue": 0.9746974697469747,
         "permutation_null_95": -0.016845593721725262,
         "permutation_significant": false,
@@ -63,7 +63,8 @@
           "trend_ratio": null,
           "trend_r2": null,
           "warning": false
-        }
+        },
+        "loe_factor_v5_5": 0.4
       },
       "viscosity": {
         "pass": false,
@@ -177,7 +178,7 @@
         "nivel": 0,
         "ode_quality": "moderate",
         "ode_obs_corr": 0.6628957027899677,
-        "interpretation": "Sin cierre operativo (Nivel 0): sin evidencia de constricci\u00f3n macro efectiva"
+        "interpretation": "Sin cierre operativo (Nivel 0): sin evidencia de constricción macro efectiva"
       },
       "synthetic_meta": {
         "model": "prestige_competition",
@@ -282,7 +283,7 @@
         "ci_hi": -0.6847569321727853,
         "valid": false,
         "weighted_value": -0.6,
-        "loe_factor": 0.6,
+        "loe_factor": 0.4,
         "permutation_pvalue": 1.0,
         "permutation_null_95": -0.035946080730575605,
         "permutation_significant": false,
@@ -291,7 +292,8 @@
           "trend_ratio": 1.0,
           "trend_r2": 0.988,
           "warning": false
-        }
+        },
+        "loe_factor_v5_5": 0.4
       },
       "viscosity": {
         "pass": true,
@@ -405,7 +407,7 @@
         "nivel": 0,
         "ode_quality": "good",
         "ode_obs_corr": 0.9937365958057109,
-        "interpretation": "Sin cierre operativo (Nivel 0): sin evidencia de constricci\u00f3n macro efectiva"
+        "interpretation": "Sin cierre operativo (Nivel 0): sin evidencia de constricción macro efectiva"
       }
     }
   }

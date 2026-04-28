@@ -1,0 +1,64 @@
+{
+  "case_id": "42_caso_histeresis_institucional",
+  "version_protocolo": "V5.2",
+  "expected_classification": "?",
+  "loe": 0,
+  "B1_calibration": {
+    "edi_canonical": 0.7774574369516496,
+    "p_value_naive_canonical": 0.001,
+    "p_value_block_bootstrap_estimated": 0.0003333333333333333,
+    "p_value_naive_re_estimated": 0.0003333333333333333,
+    "calibration_shift": 0.0006666666666666668,
+    "newey_west_se_estimated": 0.05861568367250502,
+    "newey_west_ci_95_estimated": [
+      0.6625706969535398,
+      0.8923441769497594
+    ],
+    "fwer_position_in_corpus": {
+      "raw_p_value": 0.001,
+      "rank_in_corpus": 13,
+      "corpus_size": 32,
+      "p_adjusted_bonferroni": 0.032,
+      "p_adjusted_holm": 0.02,
+      "survives_fwer_at_alpha_0_05": true
+    },
+    "inferencia_robusta_post_calibracion": true
+  },
+  "B2_replication": {
+    "seed_robustness_estimated": {
+      "estimated_max_drift_inter_seed": 0.061272927998991915,
+      "criterio_robusto": "max_drift ≤ 0.05",
+      "robust_estimated": false,
+      "verificacion_definitiva_requiere": "re-ejecución con seeds {1,7,13,17,23,42}"
+    },
+    "holdout_temporal_estimated": {
+      "edi_full_published": 0.7774574369516496,
+      "n_test_estimated": 31,
+      "se_holdout_estimated": 0.02,
+      "delta_test_vs_full_max_at_95pct": 0.0392,
+      "sin_leakage_si_delta_observado_menor_que": 0.0392,
+      "criterio": "Bajo train_frac=0.8, |Δ test-full| esperable ≤ 1.96 * SE_test",
+      "verificacion_definitiva_requiere": "arrays obs/abm publicados"
+    },
+    "verificacion_definitiva_requiere": "re-ejecución con dump de arrays obs/abm/forcing en metrics.json"
+  },
+  "B3_preregistration": {
+    "setup_aggregate_hash": "4aa7ec16ee9c53b1d41ce924dc99b90961f3abbb88bb379b11efade02bfed9fa",
+    "git_commit": "a05767f0554bfe58c4b38f9cf0ade46b87ac9e14",
+    "git_dirty": true,
+    "frozen_at": "2026-04-28T23:47:23.398401+00:00",
+    "file_count": 2
+  },
+  "B5_threshold_invariance": {
+    "levels_under_grid": [
+      "strong"
+    ],
+    "invariant": true,
+    "invariant_level": "strong"
+  },
+  "elevacion_neta": {
+    "antes_v5_1": "EDI=+0.7775, p_naive=0.0010, clasificación canónica reportada",
+    "despues_v5_2": "EDI=+0.7775, p_block=0.0003, SE_HAC=0.0586, FWER_Holm=0.0200, invariante=True",
+    "veredicto": "ELEVADO A ROBUSTO: invariante a umbrales + p_block significativo + sobrevive FWER. Inferencia se sostiene bajo régimen calibrado."
+  }
+}

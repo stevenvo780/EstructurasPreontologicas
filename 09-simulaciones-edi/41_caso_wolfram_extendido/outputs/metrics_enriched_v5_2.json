@@ -1,0 +1,64 @@
+{
+  "case_id": "41_caso_wolfram_extendido",
+  "version_protocolo": "V5.2",
+  "expected_classification": "?",
+  "loe": 0,
+  "B1_calibration": {
+    "edi_canonical": -0.2750861300597808,
+    "p_value_naive_canonical": 0.5735,
+    "p_value_block_bootstrap_estimated": 1.0,
+    "p_value_naive_re_estimated": 1.0,
+    "calibration_shift": 0.4265,
+    "newey_west_se_estimated": 0.08424750975053735,
+    "newey_west_ci_95_estimated": [
+      -0.440211249170834,
+      -0.10996101094872757
+    ],
+    "fwer_position_in_corpus": {
+      "raw_p_value": 0.5735,
+      "rank_in_corpus": 32,
+      "corpus_size": 32,
+      "p_adjusted_bonferroni": 1.0,
+      "p_adjusted_holm": 0.5735,
+      "survives_fwer_at_alpha_0_05": false
+    },
+    "inferencia_robusta_post_calibracion": false
+  },
+  "B2_replication": {
+    "seed_robustness_estimated": {
+      "estimated_max_drift_inter_seed": 0.08806673019256171,
+      "criterio_robusto": "max_drift ≤ 0.05",
+      "robust_estimated": false,
+      "verificacion_definitiva_requiere": "re-ejecución con seeds {1,7,13,17,23,42}"
+    },
+    "holdout_temporal_estimated": {
+      "edi_full_published": -0.2750861300597808,
+      "n_test_estimated": 39,
+      "se_holdout_estimated": 0.02,
+      "delta_test_vs_full_max_at_95pct": 0.0392,
+      "sin_leakage_si_delta_observado_menor_que": 0.0392,
+      "criterio": "Bajo train_frac=0.8, |Δ test-full| esperable ≤ 1.96 * SE_test",
+      "verificacion_definitiva_requiere": "arrays obs/abm publicados"
+    },
+    "verificacion_definitiva_requiere": "re-ejecución con dump de arrays obs/abm/forcing en metrics.json"
+  },
+  "B3_preregistration": {
+    "setup_aggregate_hash": "b3a5f578c8bcb1fe9079915c14f2d7981868c5b86ade4962e54ef71de15b6e4b",
+    "git_commit": "a05767f0554bfe58c4b38f9cf0ade46b87ac9e14",
+    "git_dirty": true,
+    "frozen_at": "2026-04-28T23:47:23.374329+00:00",
+    "file_count": 3
+  },
+  "B5_threshold_invariance": {
+    "levels_under_grid": [
+      "null"
+    ],
+    "invariant": true,
+    "invariant_level": "null"
+  },
+  "elevacion_neta": {
+    "antes_v5_1": "EDI=-0.2751, p_naive=0.5735, clasificación canónica reportada",
+    "despues_v5_2": "EDI=-0.2751, p_block=1.0000, SE_HAC=0.0842, FWER_Holm=0.5735, invariante=True",
+    "veredicto": "CONFIRMADO NULL: invariante a umbrales con clasificación null. El caso es honestamente null bajo cualquier régimen."
+  }
+}

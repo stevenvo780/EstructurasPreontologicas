@@ -4,9 +4,9 @@
   "secondary_motivation": "transporte_advectivo",
   "primary_edi_canonical": 0.01842115528473093,
   "convergence": {
-    "edi_primary_proxy": 0.018137847488140988,
-    "edi_secondary": 0.41182695902194305,
-    "delta_edi": 0.39368911153380204,
+    "edi_primary_proxy": 0.018137847488141026,
+    "edi_secondary": 0.2538093910013981,
+    "delta_edi": 0.2356715435132571,
     "convergen": false
   },
   "version_protocolo": "V5.4"

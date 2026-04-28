@@ -32,3 +32,11 @@ n=14 insuficiente. Programático.
 - `17_caso_oceanos/SETUP_HASH.json` — pre-registro criptográfico
 - `17_caso_oceanos/outputs/metrics.json` — outputs canónicos
 - `17_caso_oceanos/outputs/metrics_enriched_v5_2.json` — calibración avanzada V5.2/5.3
+
+
+## Reproducibilidad mecanizada V5.5
+
+- Seed fijo: `seed=42`
+- requirements lock: `09-simulaciones-edi/requirements.txt`
+- Pre-registro criptográfico: `SETUP_HASH.json`
+- Pipeline reproducible bit-a-bit: `scripts/run_full_pipeline.py`

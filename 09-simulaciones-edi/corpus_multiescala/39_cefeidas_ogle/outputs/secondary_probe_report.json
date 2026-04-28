@@ -4,9 +4,9 @@
   "secondary_motivation": "evolucion_estelar",
   "primary_edi_canonical": 0.9162290686317869,
   "convergence": {
-    "edi_primary_proxy": 0.9162048902806418,
-    "edi_secondary": -0.3295371951224237,
-    "delta_edi": 1.2457420854030654,
+    "edi_primary_proxy": 0.9162048902806417,
+    "edi_secondary": -1.0,
+    "delta_edi": 1.9162048902806417,
     "convergen": false
   },
   "version_protocolo": "V5.4"

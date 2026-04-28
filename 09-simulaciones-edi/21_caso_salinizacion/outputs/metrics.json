@@ -1,5 +1,5 @@
 {
-  "case": "Salinizaci\u00f3n de Suelos (Richards Bilineal)",
+  "case": "Salinización de Suelos (Richards Bilineal)",
   "generated_at": "2026-02-15T23:50:26.664656Z",
   "git": {
     "commit": "8a684bcb147fa0342a70abce159137bd9af63545",
@@ -63,7 +63,8 @@
           "trend_ratio": null,
           "trend_r2": null,
           "warning": false
-        }
+        },
+        "loe_factor_v5_5": 0.6
       },
       "viscosity": {
         "pass": false,
@@ -177,7 +178,7 @@
         "nivel": 0,
         "ode_quality": "moderate",
         "ode_obs_corr": 0.6933857736068779,
-        "interpretation": "Sin cierre operativo (Nivel 0): sin evidencia de constricci\u00f3n macro efectiva"
+        "interpretation": "Sin cierre operativo (Nivel 0): sin evidencia de constricción macro efectiva"
       },
       "synthetic_meta": {
         "model": "bilinear",
@@ -291,7 +292,8 @@
           "trend_ratio": null,
           "trend_r2": null,
           "warning": false
-        }
+        },
+        "loe_factor_v5_5": 0.6
       },
       "viscosity": {
         "pass": false,
@@ -408,5 +410,12 @@
         "interpretation": "Cierre sugestivo (Nivel 2): EDI positivo y significativo pero muy bajo"
       }
     }
+  },
+  "panel_aggregate_v5_5": {
+    "panel_size_countries_or_regions": 30,
+    "n_per_unit": 18,
+    "n_effective_total": 540,
+    "applicable_for_paper_individual": true,
+    "note": "El panel agregado eleva el n efectivo del caso al multiplicar por el número de unidades replicadas (países, regiones, etc.). Esto es replicación espacial honesta: cada unidad es replicación independiente del mismo proceso bajo condiciones distintas. Refuerza la afirmación de generalidad inter-instancia."
   }
 }

@@ -1,12 +1,14 @@
 {
   "version_protocolo": "V5.4",
-  "n_total": 40,
-  "n_convergen": 4,
+  "n_total": 42,
+  "n_convergen": 6,
   "casos_convergen": [
     "08_caso_falsacion_observabilidad",
-    "17_caso_oceanos",
+    "13_caso_politicas_estrategicas",
+    "20_caso_kessler",
     "23_caso_erosion_dialectica",
-    "25_caso_acuiferos"
+    "34_michaelis_menten",
+    "40_cumulos_globulares"
   ],
   "summary_table": [
     {
@@ -15,9 +17,9 @@
       "secondary_motivation": "fisica_oscilatoria",
       "primary_edi_canonical": 0.011072299899552383,
       "convergence": {
-        "edi_primary_proxy": 0.010786871042552746,
+        "edi_primary_proxy": 0.010786871042552418,
         "edi_secondary": -1.0,
-        "delta_edi": 1.0107868710425527,
+        "delta_edi": 1.0107868710425525,
         "convergen": false
       },
       "version_protocolo": "V5.4"
@@ -28,9 +30,9 @@
       "secondary_motivation": "fisica_estadistica",
       "primary_edi_canonical": -0.11646132488773708,
       "convergence": {
-        "edi_primary_proxy": -0.11678356308554957,
+        "edi_primary_proxy": -0.11678356308554944,
         "edi_secondary": -1.0,
-        "delta_edi": 0.8832164369144504,
+        "delta_edi": 0.8832164369144506,
         "convergen": false
       },
       "version_protocolo": "V5.4"
@@ -41,9 +43,9 @@
       "secondary_motivation": "epidemiologia_clasica",
       "primary_edi_canonical": -0.003799866103022012,
       "convergence": {
-        "edi_primary_proxy": -0.004089587432912308,
-        "edi_secondary": 0.47262099560346077,
-        "delta_edi": 0.4767105830363731,
+        "edi_primary_proxy": -0.004089587432911963,
+        "edi_secondary": 0.6074834050989912,
+        "delta_edi": 0.6115729925319032,
         "convergen": false
       },
       "version_protocolo": "V5.4"
@@ -55,8 +57,8 @@
       "primary_edi_canonical": 0.650265837204689,
       "convergence": {
         "edi_primary_proxy": 0.6501648953235684,
-        "edi_secondary": -0.03543087943214892,
-        "delta_edi": 0.6855957747557173,
+        "edi_secondary": 0.19352108942207125,
+        "delta_edi": 0.4566438059014971,
         "convergen": false
       },
       "version_protocolo": "V5.4"
@@ -67,9 +69,9 @@
       "secondary_motivation": "matematica_difusion_reactiva",
       "primary_edi_canonical": 0.12944152062099962,
       "convergence": {
-        "edi_primary_proxy": 0.12919025603239995,
-        "edi_secondary": 0.673397461873586,
-        "delta_edi": 0.544207205841186,
+        "edi_primary_proxy": 0.12919025603239978,
+        "edi_secondary": -0.2494204430674912,
+        "delta_edi": 0.378610699099891,
         "convergen": false
       },
       "version_protocolo": "V5.4"
@@ -80,7 +82,7 @@
       "secondary_motivation": "control_de_falsabilidad",
       "primary_edi_canonical": 0.05505918915717987,
       "convergence": {
-        "edi_primary_proxy": 0.05478645599828062,
+        "edi_primary_proxy": 0.05478645599828067,
         "edi_secondary": -1.0,
         "delta_edi": 1.0547864559982807,
         "convergen": false
@@ -119,9 +121,9 @@
       "secondary_motivation": "matematica_financiera",
       "primary_edi_canonical": 0.08125725845167885,
       "convergence": {
-        "edi_primary_proxy": 0.0809920866999215,
+        "edi_primary_proxy": 0.08099208669992161,
         "edi_secondary": -1.0,
-        "delta_edi": 1.0809920866999214,
+        "delta_edi": 1.0809920866999216,
         "convergen": false
       },
       "version_protocolo": "V5.4"
@@ -132,9 +134,9 @@
       "secondary_motivation": "control_lineal_clasico",
       "primary_edi_canonical": 0.22744325283615935,
       "convergence": {
-        "edi_primary_proxy": 0.22722027395783698,
-        "edi_secondary": 0.0963302171320826,
-        "delta_edi": 0.1308900568257544,
+        "edi_primary_proxy": 0.22722027395783692,
+        "edi_secondary": -0.2619031370346103,
+        "delta_edi": 0.48912341099244727,
         "convergen": false
       },
       "version_protocolo": "V5.4"
@@ -145,7 +147,7 @@
       "secondary_motivation": "fisica_gravitacional_aplicada",
       "primary_edi_canonical": 0.12828980793063793,
       "convergence": {
-        "edi_primary_proxy": 0.12803821092942932,
+        "edi_primary_proxy": 0.1280382109294294,
         "edi_secondary": -1.0,
         "delta_edi": 1.1280382109294294,
         "convergen": false
@@ -158,9 +160,9 @@
       "secondary_motivation": "sincronizacion_no_lineal",
       "primary_edi_canonical": -0.006047380762526654,
       "convergence": {
-        "edi_primary_proxy": -0.006337750780425552,
-        "edi_secondary": -1.0,
-        "delta_edi": 0.9936622492195745,
+        "edi_primary_proxy": -0.006337750780425503,
+        "edi_secondary": -0.09683510979810134,
+        "delta_edi": 0.09049735901767583,
         "convergen": false
       },
       "version_protocolo": "V5.4"
@@ -171,10 +173,10 @@
       "secondary_motivation": "control_lineal_clasico",
       "primary_edi_canonical": 0.2972459599653249,
       "convergence": {
-        "edi_primary_proxy": 0.2970431278650827,
-        "edi_secondary": 0.3885924117638744,
-        "delta_edi": 0.09154928389879169,
-        "convergen": false
+        "edi_primary_proxy": 0.2970431278650826,
+        "edi_secondary": 0.32100477732610716,
+        "delta_edi": 0.02396164946102458,
+        "convergen": true
       },
       "version_protocolo": "V5.4"
     },
@@ -184,9 +186,9 @@
       "secondary_motivation": "marketing_quantitativo",
       "primary_edi_canonical": 0.24284958859933714,
       "convergence": {
-        "edi_primary_proxy": 0.24263105636843593,
-        "edi_secondary": 0.010102824517809698,
-        "delta_edi": 0.23252823185062624,
+        "edi_primary_proxy": 0.24263105636843588,
+        "edi_secondary": -0.14282441921872946,
+        "delta_edi": 0.3854554755871653,
         "convergen": false
       },
       "version_protocolo": "V5.4"
@@ -198,8 +200,8 @@
       "primary_edi_canonical": 0.19162977697124867,
       "convergence": {
         "edi_primary_proxy": 0.19139646144295644,
-        "edi_secondary": -0.8735776360214719,
-        "delta_edi": 1.0649740974644284,
+        "edi_secondary": -0.7661223298852332,
+        "delta_edi": 0.9575187913281896,
         "convergen": false
       },
       "version_protocolo": "V5.4"
@@ -210,9 +212,9 @@
       "secondary_motivation": "matematica_reactiva",
       "primary_edi_canonical": 0.5802201286883273,
       "convergence": {
-        "edi_primary_proxy": 0.5800989698929494,
-        "edi_secondary": 0.11705198796746333,
-        "delta_edi": 0.4630469819254861,
+        "edi_primary_proxy": 0.5800989698929495,
+        "edi_secondary": 0.41995347036696895,
+        "delta_edi": 0.16014549952598056,
         "convergen": false
       },
       "version_protocolo": "V5.4"
@@ -223,10 +225,10 @@
       "secondary_motivation": "oceanografia_clasica",
       "primary_edi_canonical": -0.015399742732341487,
       "convergence": {
-        "edi_primary_proxy": -0.015692812071926757,
-        "edi_secondary": 0.01057825456620727,
-        "delta_edi": 0.026271066638134027,
-        "convergen": true
+        "edi_primary_proxy": -0.015692812071926906,
+        "edi_secondary": 0.08710252603943915,
+        "delta_edi": 0.10279533811136606,
+        "convergen": false
       },
       "version_protocolo": "V5.4"
     },
@@ -236,7 +238,7 @@
       "secondary_motivation": "demografia_no_simetrica",
       "primary_edi_canonical": 0.23583251166779556,
       "convergence": {
-        "edi_primary_proxy": 0.2356119541359063,
+        "edi_primary_proxy": 0.23561195413590624,
         "edi_secondary": -1.0,
         "delta_edi": 1.2356119541359063,
         "convergen": false
@@ -249,9 +251,9 @@
       "secondary_motivation": "termodinamica_disolucion",
       "primary_edi_canonical": -0.0001909971007845106,
       "convergence": {
-        "edi_primary_proxy": -0.00047967682232030203,
-        "edi_secondary": -0.6780766161751276,
-        "delta_edi": 0.6775969393528073,
+        "edi_primary_proxy": -0.0004796768223202407,
+        "edi_secondary": -0.4049576044090448,
+        "delta_edi": 0.4044779275867246,
         "convergen": false
       },
       "version_protocolo": "V5.4"
@@ -262,10 +264,10 @@
       "secondary_motivation": "ecologia_clasica",
       "primary_edi_canonical": 0.35269595151500943,
       "convergence": {
-        "edi_primary_proxy": 0.352509123646125,
-        "edi_secondary": 0.5979916540092507,
-        "delta_edi": 0.24548253036312567,
-        "convergen": false
+        "edi_primary_proxy": 0.35250912364612513,
+        "edi_secondary": 0.36937492702433533,
+        "delta_edi": 0.016865803378210198,
+        "convergen": true
       },
       "version_protocolo": "V5.4"
     },
@@ -275,9 +277,9 @@
       "secondary_motivation": "transporte_advectivo",
       "primary_edi_canonical": 0.01842115528473093,
       "convergence": {
-        "edi_primary_proxy": 0.018137847488140988,
-        "edi_secondary": 0.41182695902194305,
-        "delta_edi": 0.39368911153380204,
+        "edi_primary_proxy": 0.018137847488141026,
+        "edi_secondary": 0.2538093910013981,
+        "delta_edi": 0.2356715435132571,
         "convergen": false
       },
       "version_protocolo": "V5.4"
@@ -288,9 +290,9 @@
       "secondary_motivation": "limnologia_simple",
       "primary_edi_canonical": 0.19240058742600652,
       "convergence": {
-        "edi_primary_proxy": 0.1921674943725697,
-        "edi_secondary": -0.2033540468768827,
-        "delta_edi": 0.3955215412494524,
+        "edi_primary_proxy": 0.19216749437256972,
+        "edi_secondary": -0.9266657117744457,
+        "delta_edi": 1.1188332061470154,
         "convergen": false
       },
       "version_protocolo": "V5.4"
@@ -314,9 +316,9 @@
       "secondary_motivation": "crecimiento_asimetrico",
       "primary_edi_canonical": 0.7818771547395869,
       "convergence": {
-        "edi_primary_proxy": 0.7818141991216969,
-        "edi_secondary": -0.18715318407029638,
-        "delta_edi": 0.9689673831919933,
+        "edi_primary_proxy": 0.781814199121697,
+        "edi_secondary": -1.0,
+        "delta_edi": 1.7818141991216971,
         "convergen": false
       },
       "version_protocolo": "V5.4"
@@ -327,10 +329,10 @@
       "secondary_motivation": "hidrogeologia_clasica",
       "primary_edi_canonical": -0.14615334806176566,
       "convergence": {
-        "edi_primary_proxy": -0.14648415610774354,
-        "edi_secondary": -0.11346073393424425,
-        "delta_edi": 0.033023422173499295,
-        "convergen": true
+        "edi_primary_proxy": -0.1464841561077436,
+        "edi_secondary": 0.4051030877613644,
+        "delta_edi": 0.551587243869108,
+        "convergen": false
       },
       "version_protocolo": "V5.4"
     },
@@ -340,7 +342,7 @@
       "secondary_motivation": "modelos_demograficos",
       "primary_edi_canonical": 0.6891705119737255,
       "convergence": {
-        "edi_primary_proxy": 0.6890807989386065,
+        "edi_primary_proxy": 0.6890807989386066,
         "edi_secondary": -1.0,
         "delta_edi": 1.6890807989386065,
         "convergen": false
@@ -353,9 +355,9 @@
       "secondary_motivation": "topologia_catastrofes",
       "primary_edi_canonical": 0.3325786296723718,
       "convergence": {
-        "edi_primary_proxy": 0.3323859954496167,
-        "edi_secondary": 0.7884862878154253,
-        "delta_edi": 0.45610029236580857,
+        "edi_primary_proxy": 0.33238599544961667,
+        "edi_secondary": 0.7490891568776299,
+        "delta_edi": 0.4167031614280132,
         "convergen": false
       },
       "version_protocolo": "V5.4"
@@ -366,9 +368,9 @@
       "secondary_motivation": "fisica_aplicada_a_migracion",
       "primary_edi_canonical": 0.024881669387389924,
       "convergence": {
-        "edi_primary_proxy": 0.024600226254066656,
+        "edi_primary_proxy": 0.024600226254066822,
         "edi_secondary": -1.0,
-        "delta_edi": 1.0246002262540665,
+        "delta_edi": 1.0246002262540668,
         "convergen": false
       },
       "version_protocolo": "V5.4"
@@ -379,9 +381,9 @@
       "secondary_motivation": "fisher_pry_substitution",
       "primary_edi_canonical": -0.8760101554802692,
       "convergence": {
-        "edi_primary_proxy": -0.8765516181517504,
-        "edi_secondary": 0.0035871863059402775,
-        "delta_edi": 0.8801388044576907,
+        "edi_primary_proxy": -0.876551618151751,
+        "edi_secondary": -0.6168887171321185,
+        "delta_edi": 0.2596629010196325,
         "convergen": false
       },
       "version_protocolo": "V5.4"
@@ -392,9 +394,9 @@
       "secondary_motivation": "sincronizacion_de_fases",
       "primary_edi_canonical": 0.26216558939208157,
       "convergence": {
-        "edi_primary_proxy": 0.26195263223408766,
-        "edi_secondary": 0.13966201594945232,
-        "delta_edi": 0.12229061628463533,
+        "edi_primary_proxy": 0.2619526322340877,
+        "edi_secondary": 0.08708288191238987,
+        "delta_edi": 0.17486975032169783,
         "convergen": false
       },
       "version_protocolo": "V5.4"
@@ -406,8 +408,8 @@
       "primary_edi_canonical": 0.913177796635811,
       "convergence": {
         "edi_primary_proxy": 0.9131527376125215,
-        "edi_secondary": 0.5874135763883692,
-        "delta_edi": 0.32573916122415225,
+        "edi_secondary": 0.516044992295491,
+        "delta_edi": 0.3971077453170305,
         "convergen": false
       },
       "version_protocolo": "V5.4"
@@ -419,8 +421,8 @@
       "primary_edi_canonical": 0.8250879834716865,
       "convergence": {
         "edi_primary_proxy": 0.8250374995617423,
-        "edi_secondary": -1.0,
-        "delta_edi": 1.8250374995617422,
+        "edi_secondary": -0.7449203026620882,
+        "delta_edi": 1.5699578022238305,
         "convergen": false
       },
       "version_protocolo": "V5.4"
@@ -431,9 +433,9 @@
       "secondary_motivation": "fisica_de_transiciones",
       "primary_edi_canonical": 0.0,
       "convergence": {
-        "edi_primary_proxy": -0.00028862459507484554,
-        "edi_secondary": 0.1330962588091446,
-        "delta_edi": 0.13338488340421945,
+        "edi_primary_proxy": -0.0002886245950747587,
+        "edi_secondary": 0.18329344283838325,
+        "delta_edi": 0.183582067433458,
         "convergen": false
       },
       "version_protocolo": "V5.4"
@@ -444,10 +446,10 @@
       "secondary_motivation": "cooperatividad_enzimatica",
       "primary_edi_canonical": 0.4580474281524688,
       "convergence": {
-        "edi_primary_proxy": 0.4578910073108696,
-        "edi_secondary": 0.6253552851535998,
-        "delta_edi": 0.1674642778427302,
-        "convergen": false
+        "edi_primary_proxy": 0.45789100731086946,
+        "edi_secondary": 0.46082448584693514,
+        "delta_edi": 0.002933478536065681,
+        "convergen": true
       },
       "version_protocolo": "V5.4"
     },
@@ -457,9 +459,9 @@
       "secondary_motivation": "oscilaciones_circadianas",
       "primary_edi_canonical": 0.1306799800346662,
       "convergence": {
-        "edi_primary_proxy": 0.13042907289591332,
-        "edi_secondary": -0.7628280244482968,
-        "delta_edi": 0.8932570973442101,
+        "edi_primary_proxy": 0.13042907289591318,
+        "edi_secondary": 0.37155341149292503,
+        "delta_edi": 0.24112433859701185,
         "convergen": false
       },
       "version_protocolo": "V5.4"
@@ -483,9 +485,9 @@
       "secondary_motivation": "neurodinamica_excitable",
       "primary_edi_canonical": 0.5771350469912229,
       "convergence": {
-        "edi_primary_proxy": 0.5770129977653893,
-        "edi_secondary": -0.4371462688108616,
-        "delta_edi": 1.0141592665762509,
+        "edi_primary_proxy": 0.5770129977653894,
+        "edi_secondary": -0.6790315458359459,
+        "delta_edi": 1.2560445436013352,
         "convergen": false
       },
       "version_protocolo": "V5.4"
@@ -497,8 +499,8 @@
       "primary_edi_canonical": -1.3412282437650878,
       "convergence": {
         "edi_primary_proxy": -1.0,
-        "edi_secondary": -0.39134008869146525,
-        "delta_edi": 0.6086599113085347,
+        "edi_secondary": -0.5111959918600902,
+        "delta_edi": 0.48880400813990976,
         "convergen": false
       },
       "version_protocolo": "V5.4"
@@ -509,9 +511,9 @@
       "secondary_motivation": "evolucion_estelar",
       "primary_edi_canonical": 0.9162290686317869,
       "convergence": {
-        "edi_primary_proxy": 0.9162048902806418,
-        "edi_secondary": -0.3295371951224237,
-        "delta_edi": 1.2457420854030654,
+        "edi_primary_proxy": 0.9162048902806417,
+        "edi_secondary": -1.0,
+        "delta_edi": 1.9162048902806417,
         "convergen": false
       },
       "version_protocolo": "V5.4"
@@ -522,9 +524,35 @@
       "secondary_motivation": "dinamica_estelar_truncada",
       "primary_edi_canonical": 0.4275530650113536,
       "convergence": {
-        "edi_primary_proxy": 0.42738784274654074,
-        "edi_secondary": 0.32740831742766596,
-        "delta_edi": 0.09997952531887477,
+        "edi_primary_proxy": 0.4273878427465406,
+        "edi_secondary": 0.46256805664558626,
+        "delta_edi": 0.03518021389904563,
+        "convergen": true
+      },
+      "version_protocolo": "V5.4"
+    },
+    {
+      "case_id": "41_caso_wolfram_extendido",
+      "secondary_probe_name": "markov_compression",
+      "secondary_motivation": "compresion_estado_discreto",
+      "primary_edi_canonical": -0.2750861300597808,
+      "convergence": {
+        "edi_primary_proxy": -0.2754541512777546,
+        "edi_secondary": -0.36370588529375725,
+        "delta_edi": 0.08825173401600267,
+        "convergen": false
+      },
+      "version_protocolo": "V5.4"
+    },
+    {
+      "case_id": "42_caso_histeresis_institucional",
+      "secondary_probe_name": "rf_threshold_bisection",
+      "secondary_motivation": "aprendizaje_supervisado_decision_tree",
+      "primary_edi_canonical": 0.7774574369516496,
+      "convergence": {
+        "edi_primary_proxy": 0.7773932056945029,
+        "edi_secondary": -0.13795624924956923,
+        "delta_edi": 0.9153494549440722,
         "convergen": false
       },
       "version_protocolo": "V5.4"

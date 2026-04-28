@@ -4,9 +4,9 @@
   "secondary_motivation": "matematica_financiera",
   "primary_edi_canonical": 0.08125725845167885,
   "convergence": {
-    "edi_primary_proxy": 0.0809920866999215,
+    "edi_primary_proxy": 0.08099208669992161,
     "edi_secondary": -1.0,
-    "delta_edi": 1.0809920866999214,
+    "delta_edi": 1.0809920866999216,
     "convergen": false
   },
   "version_protocolo": "V5.4"

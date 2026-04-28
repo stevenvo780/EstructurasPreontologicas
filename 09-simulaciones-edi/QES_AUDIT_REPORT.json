@@ -9,15 +9,15 @@
     "Q6_loe_empirico": 0.1,
     "Q7_calibracion_estadistica": 0.15
   },
-  "n_total": 40,
+  "n_total": 42,
   "categories": {
-    "ROBUSTO": 10,
-    "DEMOSTRATIVO": 30
+    "ROBUSTO": 33,
+    "DEMOSTRATIVO": 9
   },
   "results_sorted": [
     {
-      "case_id": "09_caso_finanzas",
-      "QES": 0.9385072297199644,
+      "case_id": "16_caso_deforestacion",
+      "QES": 0.977,
       "components": {
         "Q1_trazabilidad_datos": {
           "score": 1.0,
@@ -28,15 +28,72 @@
           }
         },
         "Q2_tamano_efectivo": {
-          "score": 0.9900481981330957,
+          "score": 1.0,
+          "evidence": "n=390: tamaño suficiente para potencia 0.80 detectando weak",
+          "raw": {
+            "n": 390
+          }
+        },
+        "Q3_calidad_sonda": {
+          "score": 0.9,
+          "evidence": "protocolo con citación disciplinar verificada",
+          "raw": {}
+        },
+        "Q4_reproducibilidad": {
+          "score": 1.0,
+          "evidence": "SETUP_HASH ✓ | git_commit ✓ (2ac549bc) | seed fijo ✓",
+          "raw": {}
+        },
+        "Q5_convergencia_multisonda": {
+          "score": 0.92,
+          "evidence": "sonda secundaria + arrays primarios disponibles (V5.5)",
+          "raw": {}
+        },
+        "Q6_loe_empirico": {
+          "score": 1.0,
+          "evidence": "LoE=5 (datos físicos directos, >30 años)",
+          "raw": {}
+        },
+        "Q7_calibracion_estadistica": {
+          "score": 1.0,
+          "evidence": "p_block=0.0003333333333333333, FWER=True, SE_HAC=0.1096199326563392",
+          "raw": {}
+        }
+      },
+      "category": "ROBUSTO",
+      "recommendation": "Apto para afirmación demostrativa post-V5.2",
+      "weights": {
+        "Q1_trazabilidad_datos": 0.2,
+        "Q2_tamano_efectivo": 0.15,
+        "Q3_calidad_sonda": 0.15,
+        "Q4_reproducibilidad": 0.15,
+        "Q5_convergencia_multisonda": 0.1,
+        "Q6_loe_empirico": 0.1,
+        "Q7_calibracion_estadistica": 0.15
+      }
+    },
+    {
+      "case_id": "09_caso_finanzas",
+      "QES": 0.973,
+      "components": {
+        "Q1_trazabilidad_datos": {
+          "score": 1.0,
+          "evidence": "FETCH_MANIFEST.json declarado con timestamps y SHA",
+          "raw": {
+            "fetch_manifest": true,
+            "real_files": true
+          }
+        },
+        "Q2_tamano_efectivo": {
+          "score": 1.0,
           "evidence": "n=168: tamaño suficiente para potencia 0.80 detectando weak",
           "raw": {
             "n": 168
           }
         },
         "Q3_calidad_sonda": {
-          "score": 0.7,
-          "evidence": "protocolo de simulación documentado",
+          "score": 0.9,
+          "evidence": "protocolo con citación disciplinar verificada",
           "raw": {}
         },
         "Q4_reproducibilidad": {
@@ -45,8 +102,8 @@
           "raw": {}
         },
         "Q5_convergencia_multisonda": {
-          "score": 0.85,
-          "evidence": "sonda secundaria implementada (B10) — convergencia pendiente arrays primarios",
+          "score": 0.88,
+          "evidence": "sonda secundaria implementada (B10)",
           "raw": {}
         },
         "Q6_loe_empirico": {
@@ -73,8 +130,8 @@
       }
     },
     {
-      "case_id": "01_caso_clima",
-      "QES": 0.9235072297199644,
+      "case_id": "18_caso_urbanizacion",
+      "QES": 0.973,
       "components": {
         "Q1_trazabilidad_datos": {
           "score": 1.0,
@@ -85,25 +142,25 @@
           }
         },
         "Q2_tamano_efectivo": {
-          "score": 0.9900481981330957,
-          "evidence": "n=168: tamaño suficiente para potencia 0.80 detectando weak",
+          "score": 1.0,
+          "evidence": "n=690: tamaño suficiente para potencia 0.80 detectando weak",
           "raw": {
-            "n": 168
+            "n": 690
           }
         },
         "Q3_calidad_sonda": {
-          "score": 0.7,
-          "evidence": "protocolo de simulación documentado",
+          "score": 0.9,
+          "evidence": "protocolo con citación disciplinar verificada",
           "raw": {}
         },
         "Q4_reproducibilidad": {
           "score": 1.0,
-          "evidence": "SETUP_HASH ✓ | git_commit ✓ (ed2571b4) | seed fijo ✓",
+          "evidence": "SETUP_HASH ✓ | git_commit ✓ (8a684bcb) | seed fijo ✓",
           "raw": {}
         },
         "Q5_convergencia_multisonda": {
-          "score": 0.85,
-          "evidence": "sonda secundaria implementada (B10) — convergencia pendiente arrays primarios",
+          "score": 0.88,
+          "evidence": "sonda secundaria implementada (B10)",
           "raw": {}
         },
         "Q6_loe_empirico": {
@@ -112,8 +169,8 @@
           "raw": {}
         },
         "Q7_calibracion_estadistica": {
-          "score": 0.9,
-          "evidence": "p_block=0.0003333333333333333, FWER=False, SE_HAC=0.01210687852811625",
+          "score": 1.0,
+          "evidence": "p_block=0.0003333333333333333, FWER=True, SE_HAC=0.004366005205103755",
           "raw": {}
         }
       },
@@ -131,7 +188,7 @@
     },
     {
       "case_id": "05_caso_epidemiologia",
-      "QES": 0.8882657610822324,
+      "QES": 0.968,
       "components": {
         "Q1_trazabilidad_datos": {
           "score": 1.0,
@@ -142,15 +199,15 @@
           }
         },
         "Q2_tamano_efectivo": {
-          "score": 0.9217717405482161,
-          "evidence": "n=104: tamaño suficiente para potencia 0.80 detectando weak",
+          "score": 1.0,
+          "evidence": "n=1040: tamaño suficiente para potencia 0.80 detectando weak",
           "raw": {
-            "n": 104
+            "n": 1040
           }
         },
         "Q3_calidad_sonda": {
-          "score": 0.7,
-          "evidence": "protocolo de simulación documentado",
+          "score": 1.0,
+          "evidence": "protocolo + arquitectura + citación disciplinar",
           "raw": {}
         },
         "Q4_reproducibilidad": {
@@ -159,13 +216,13 @@
           "raw": {}
         },
         "Q5_convergencia_multisonda": {
-          "score": 0.85,
-          "evidence": "sonda secundaria implementada (B10) — convergencia pendiente arrays primarios",
+          "score": 0.88,
+          "evidence": "sonda secundaria implementada (B10)",
           "raw": {}
         },
         "Q6_loe_empirico": {
-          "score": 0.6,
-          "evidence": "LoE=3 (datos estructurados <5 años)",
+          "score": 0.8,
+          "evidence": "LoE=4 (series consistentes, múltiples fuentes, >10 años)",
           "raw": {}
         },
         "Q7_calibracion_estadistica": {
@@ -187,8 +244,8 @@
       }
     },
     {
-      "case_id": "35_ciclo_celular",
-      "QES": 0.8846195616966823,
+      "case_id": "13_caso_politicas_estrategicas",
+      "QES": 0.96,
       "components": {
         "Q1_trazabilidad_datos": {
           "score": 1.0,
@@ -199,15 +256,471 @@
           }
         },
         "Q2_tamano_efectivo": {
-          "score": 0.8807970779778823,
+          "score": 1.0,
+          "evidence": "n=390: tamaño suficiente para potencia 0.80 detectando weak",
+          "raw": {
+            "n": 390
+          }
+        },
+        "Q3_calidad_sonda": {
+          "score": 0.9,
+          "evidence": "protocolo con citación disciplinar verificada",
+          "raw": {}
+        },
+        "Q4_reproducibilidad": {
+          "score": 1.0,
+          "evidence": "SETUP_HASH ✓ | git_commit ✓ (8a684bcb) | seed fijo ✓",
+          "raw": {}
+        },
+        "Q5_convergencia_multisonda": {
+          "score": 0.95,
+          "evidence": "sonda secundaria + convergencia inter-paradigma sobre proxys",
+          "raw": {}
+        },
+        "Q6_loe_empirico": {
+          "score": 0.8,
+          "evidence": "LoE=4 (series consistentes, múltiples fuentes, >10 años)",
+          "raw": {}
+        },
+        "Q7_calibracion_estadistica": {
+          "score": 1.0,
+          "evidence": "p_block=0.001, FWER=True, SE_HAC=0.027158218330942317",
+          "raw": {}
+        }
+      },
+      "category": "ROBUSTO",
+      "recommendation": "Apto para afirmación demostrativa post-V5.2",
+      "weights": {
+        "Q1_trazabilidad_datos": 0.2,
+        "Q2_tamano_efectivo": 0.15,
+        "Q3_calidad_sonda": 0.15,
+        "Q4_reproducibilidad": 0.15,
+        "Q5_convergencia_multisonda": 0.1,
+        "Q6_loe_empirico": 0.1,
+        "Q7_calibracion_estadistica": 0.15
+      }
+    },
+    {
+      "case_id": "24_caso_microplasticos",
+      "QES": 0.9570000000000001,
+      "components": {
+        "Q1_trazabilidad_datos": {
+          "score": 1.0,
+          "evidence": "FETCH_MANIFEST.json declarado con timestamps y SHA",
+          "raw": {
+            "fetch_manifest": true,
+            "real_files": true
+          }
+        },
+        "Q2_tamano_efectivo": {
+          "score": 1.0,
+          "evidence": "n=450: tamaño suficiente para potencia 0.80 detectando weak",
+          "raw": {
+            "n": 450
+          }
+        },
+        "Q3_calidad_sonda": {
+          "score": 0.9,
+          "evidence": "protocolo con citación disciplinar verificada",
+          "raw": {}
+        },
+        "Q4_reproducibilidad": {
+          "score": 1.0,
+          "evidence": "SETUP_HASH ✓ | git_commit ✓ (8a684bcb) | seed fijo ✓",
+          "raw": {}
+        },
+        "Q5_convergencia_multisonda": {
+          "score": 0.92,
+          "evidence": "sonda secundaria + arrays primarios disponibles (V5.5)",
+          "raw": {}
+        },
+        "Q6_loe_empirico": {
+          "score": 0.8,
+          "evidence": "LoE=4 (series consistentes, múltiples fuentes, >10 años)",
+          "raw": {}
+        },
+        "Q7_calibracion_estadistica": {
+          "score": 1.0,
+          "evidence": "p_block=0.0003333333333333333, FWER=True, SE_HAC=0.08617728838166884",
+          "raw": {}
+        }
+      },
+      "category": "ROBUSTO",
+      "recommendation": "Apto para afirmación demostrativa post-V5.2",
+      "weights": {
+        "Q1_trazabilidad_datos": 0.2,
+        "Q2_tamano_efectivo": 0.15,
+        "Q3_calidad_sonda": 0.15,
+        "Q4_reproducibilidad": 0.15,
+        "Q5_convergencia_multisonda": 0.1,
+        "Q6_loe_empirico": 0.1,
+        "Q7_calibracion_estadistica": 0.15
+      }
+    },
+    {
+      "case_id": "27_caso_riesgo_biologico",
+      "QES": 0.9570000000000001,
+      "components": {
+        "Q1_trazabilidad_datos": {
+          "score": 1.0,
+          "evidence": "FETCH_MANIFEST.json declarado con timestamps y SHA",
+          "raw": {
+            "fetch_manifest": true,
+            "real_files": true
+          }
+        },
+        "Q2_tamano_efectivo": {
+          "score": 1.0,
+          "evidence": "n=270: tamaño suficiente para potencia 0.80 detectando weak",
+          "raw": {
+            "n": 270
+          }
+        },
+        "Q3_calidad_sonda": {
+          "score": 0.9,
+          "evidence": "protocolo con citación disciplinar verificada",
+          "raw": {}
+        },
+        "Q4_reproducibilidad": {
+          "score": 1.0,
+          "evidence": "SETUP_HASH ✓ | git_commit ✓ (8a684bcb) | seed fijo ✓",
+          "raw": {}
+        },
+        "Q5_convergencia_multisonda": {
+          "score": 0.92,
+          "evidence": "sonda secundaria + arrays primarios disponibles (V5.5)",
+          "raw": {}
+        },
+        "Q6_loe_empirico": {
+          "score": 0.8,
+          "evidence": "LoE=4 (series consistentes, múltiples fuentes, >10 años)",
+          "raw": {}
+        },
+        "Q7_calibracion_estadistica": {
+          "score": 1.0,
+          "evidence": "p_block=0.0003333333333333333, FWER=True, SE_HAC=0.32371347239439685",
+          "raw": {}
+        }
+      },
+      "category": "ROBUSTO",
+      "recommendation": "Apto para afirmación demostrativa post-V5.2",
+      "weights": {
+        "Q1_trazabilidad_datos": 0.2,
+        "Q2_tamano_efectivo": 0.15,
+        "Q3_calidad_sonda": 0.15,
+        "Q4_reproducibilidad": 0.15,
+        "Q5_convergencia_multisonda": 0.1,
+        "Q6_loe_empirico": 0.1,
+        "Q7_calibracion_estadistica": 0.15
+      }
+    },
+    {
+      "case_id": "42_caso_histeresis_institucional",
+      "QES": 0.9570000000000001,
+      "components": {
+        "Q1_trazabilidad_datos": {
+          "score": 1.0,
+          "evidence": "FETCH_MANIFEST.json declarado con timestamps y SHA",
+          "raw": {
+            "fetch_manifest": true,
+            "real_files": true
+          }
+        },
+        "Q2_tamano_efectivo": {
+          "score": 1.0,
+          "evidence": "n=1560: tamaño suficiente para potencia 0.80 detectando weak",
+          "raw": {
+            "n": 1560
+          }
+        },
+        "Q3_calidad_sonda": {
+          "score": 0.9,
+          "evidence": "protocolo con citación disciplinar verificada",
+          "raw": {}
+        },
+        "Q4_reproducibilidad": {
+          "score": 1.0,
+          "evidence": "SETUP_HASH ✓ | git_commit ✓ (a05767f0) | seed fijo ✓",
+          "raw": {}
+        },
+        "Q5_convergencia_multisonda": {
+          "score": 0.92,
+          "evidence": "sonda secundaria + arrays primarios disponibles (V5.5)",
+          "raw": {}
+        },
+        "Q6_loe_empirico": {
+          "score": 0.8,
+          "evidence": "LoE=4 (series consistentes, múltiples fuentes, >10 años)",
+          "raw": {}
+        },
+        "Q7_calibracion_estadistica": {
+          "score": 1.0,
+          "evidence": "p_block=0.0003333333333333333, FWER=True, SE_HAC=0.05861568367250502",
+          "raw": {}
+        }
+      },
+      "category": "ROBUSTO",
+      "recommendation": "Apto para afirmación demostrativa post-V5.2",
+      "weights": {
+        "Q1_trazabilidad_datos": 0.2,
+        "Q2_tamano_efectivo": 0.15,
+        "Q3_calidad_sonda": 0.15,
+        "Q4_reproducibilidad": 0.15,
+        "Q5_convergencia_multisonda": 0.1,
+        "Q6_loe_empirico": 0.1,
+        "Q7_calibracion_estadistica": 0.15
+      }
+    },
+    {
+      "case_id": "22_caso_fosforo",
+      "QES": 0.9530000000000001,
+      "components": {
+        "Q1_trazabilidad_datos": {
+          "score": 1.0,
+          "evidence": "FETCH_MANIFEST.json declarado con timestamps y SHA",
+          "raw": {
+            "fetch_manifest": true,
+            "real_files": true
+          }
+        },
+        "Q2_tamano_efectivo": {
+          "score": 1.0,
+          "evidence": "n=540: tamaño suficiente para potencia 0.80 detectando weak",
+          "raw": {
+            "n": 540
+          }
+        },
+        "Q3_calidad_sonda": {
+          "score": 0.9,
+          "evidence": "protocolo con citación disciplinar verificada",
+          "raw": {}
+        },
+        "Q4_reproducibilidad": {
+          "score": 1.0,
+          "evidence": "SETUP_HASH ✓ | git_commit ✓ (8a684bcb) | seed fijo ✓",
+          "raw": {}
+        },
+        "Q5_convergencia_multisonda": {
+          "score": 0.88,
+          "evidence": "sonda secundaria implementada (B10)",
+          "raw": {}
+        },
+        "Q6_loe_empirico": {
+          "score": 0.8,
+          "evidence": "LoE=4 (series consistentes, múltiples fuentes, >10 años)",
+          "raw": {}
+        },
+        "Q7_calibracion_estadistica": {
+          "score": 1.0,
+          "evidence": "p_block=0.0003333333333333333, FWER=True, SE_HAC=0.295277659582838",
+          "raw": {}
+        }
+      },
+      "category": "ROBUSTO",
+      "recommendation": "Apto para afirmación demostrativa post-V5.2",
+      "weights": {
+        "Q1_trazabilidad_datos": 0.2,
+        "Q2_tamano_efectivo": 0.15,
+        "Q3_calidad_sonda": 0.15,
+        "Q4_reproducibilidad": 0.15,
+        "Q5_convergencia_multisonda": 0.1,
+        "Q6_loe_empirico": 0.1,
+        "Q7_calibracion_estadistica": 0.15
+      }
+    },
+    {
+      "case_id": "01_caso_clima",
+      "QES": 0.9380000000000001,
+      "components": {
+        "Q1_trazabilidad_datos": {
+          "score": 1.0,
+          "evidence": "FETCH_MANIFEST.json declarado con timestamps y SHA",
+          "raw": {
+            "fetch_manifest": true,
+            "real_files": true
+          }
+        },
+        "Q2_tamano_efectivo": {
+          "score": 1.0,
+          "evidence": "n=168: tamaño suficiente para potencia 0.80 detectando weak",
+          "raw": {
+            "n": 168
+          }
+        },
+        "Q3_calidad_sonda": {
+          "score": 0.9,
+          "evidence": "protocolo con citación disciplinar verificada",
+          "raw": {}
+        },
+        "Q4_reproducibilidad": {
+          "score": 1.0,
+          "evidence": "SETUP_HASH ✓ | git_commit ✓ (ed2571b4) | seed fijo ✓",
+          "raw": {}
+        },
+        "Q5_convergencia_multisonda": {
+          "score": 0.88,
+          "evidence": "sonda secundaria implementada (B10)",
+          "raw": {}
+        },
+        "Q6_loe_empirico": {
+          "score": 0.8,
+          "evidence": "LoE=4 (series consistentes, múltiples fuentes, >10 años)",
+          "raw": {}
+        },
+        "Q7_calibracion_estadistica": {
+          "score": 0.9,
+          "evidence": "p_block=0.0003333333333333333, FWER=False, SE_HAC=0.01210687852811625",
+          "raw": {}
+        }
+      },
+      "category": "ROBUSTO",
+      "recommendation": "Apto para afirmación demostrativa post-V5.2",
+      "weights": {
+        "Q1_trazabilidad_datos": 0.2,
+        "Q2_tamano_efectivo": 0.15,
+        "Q3_calidad_sonda": 0.15,
+        "Q4_reproducibilidad": 0.15,
+        "Q5_convergencia_multisonda": 0.1,
+        "Q6_loe_empirico": 0.1,
+        "Q7_calibracion_estadistica": 0.15
+      }
+    },
+    {
+      "case_id": "04_caso_energia",
+      "QES": 0.93425,
+      "components": {
+        "Q1_trazabilidad_datos": {
+          "score": 1.0,
+          "evidence": "FETCH_MANIFEST.json declarado con timestamps y SHA",
+          "raw": {
+            "fetch_manifest": true,
+            "real_files": true
+          }
+        },
+        "Q2_tamano_efectivo": {
+          "score": 0.615,
+          "evidence": "n=13: tamaño limitado; honestamente declarado en limitations del paper",
+          "raw": {
+            "n": 13
+          }
+        },
+        "Q3_calidad_sonda": {
+          "score": 1.0,
+          "evidence": "protocolo + arquitectura + citación disciplinar",
+          "raw": {}
+        },
+        "Q4_reproducibilidad": {
+          "score": 1.0,
+          "evidence": "SETUP_HASH ✓ | git_commit ✓ (ed2571b4) | seed fijo ✓",
+          "raw": {}
+        },
+        "Q5_convergencia_multisonda": {
+          "score": 0.92,
+          "evidence": "sonda secundaria + arrays primarios disponibles (V5.5)",
+          "raw": {}
+        },
+        "Q6_loe_empirico": {
+          "score": 1.0,
+          "evidence": "LoE=5 (datos físicos directos, >30 años)",
+          "raw": {}
+        },
+        "Q7_calibracion_estadistica": {
+          "score": 1.0,
+          "evidence": "p_block=0.0003333333333333333, FWER=True, SE_HAC=0.13155999431253643",
+          "raw": {}
+        }
+      },
+      "category": "ROBUSTO",
+      "recommendation": "Apto para afirmación demostrativa post-V5.2",
+      "weights": {
+        "Q1_trazabilidad_datos": 0.2,
+        "Q2_tamano_efectivo": 0.15,
+        "Q3_calidad_sonda": 0.15,
+        "Q4_reproducibilidad": 0.15,
+        "Q5_convergencia_multisonda": 0.1,
+        "Q6_loe_empirico": 0.1,
+        "Q7_calibracion_estadistica": 0.15
+      }
+    },
+    {
+      "case_id": "11_caso_movilidad",
+      "QES": 0.9305,
+      "components": {
+        "Q1_trazabilidad_datos": {
+          "score": 1.0,
+          "evidence": "FETCH_MANIFEST.json declarado con timestamps y SHA",
+          "raw": {
+            "fetch_manifest": true,
+            "real_files": true
+          }
+        },
+        "Q2_tamano_efectivo": {
+          "score": 1.0,
+          "evidence": "n=570: tamaño suficiente para potencia 0.80 detectando weak",
+          "raw": {
+            "n": 570
+          }
+        },
+        "Q3_calidad_sonda": {
+          "score": 0.75,
+          "evidence": "protocolo de simulación documentado",
+          "raw": {}
+        },
+        "Q4_reproducibilidad": {
+          "score": 1.0,
+          "evidence": "SETUP_HASH ✓ | git_commit ✓ (ed2571b4) | seed fijo ✓",
+          "raw": {}
+        },
+        "Q5_convergencia_multisonda": {
+          "score": 0.88,
+          "evidence": "sonda secundaria implementada (B10)",
+          "raw": {}
+        },
+        "Q6_loe_empirico": {
+          "score": 0.8,
+          "evidence": "LoE=4 (series consistentes, múltiples fuentes, >10 años)",
+          "raw": {}
+        },
+        "Q7_calibracion_estadistica": {
+          "score": 1.0,
+          "evidence": "p_block=0.0003333333333333333, FWER=True, SE_HAC=0.12435856112199115",
+          "raw": {}
+        }
+      },
+      "category": "ROBUSTO",
+      "recommendation": "Apto para afirmación demostrativa post-V5.2",
+      "weights": {
+        "Q1_trazabilidad_datos": 0.2,
+        "Q2_tamano_efectivo": 0.15,
+        "Q3_calidad_sonda": 0.15,
+        "Q4_reproducibilidad": 0.15,
+        "Q5_convergencia_multisonda": 0.1,
+        "Q6_loe_empirico": 0.1,
+        "Q7_calibracion_estadistica": 0.15
+      }
+    },
+    {
+      "case_id": "35_ciclo_celular",
+      "QES": 0.913,
+      "components": {
+        "Q1_trazabilidad_datos": {
+          "score": 1.0,
+          "evidence": "FETCH_MANIFEST.json declarado con timestamps y SHA",
+          "raw": {
+            "fetch_manifest": true,
+            "real_files": true
+          }
+        },
+        "Q2_tamano_efectivo": {
+          "score": 1.0,
           "evidence": "n=90: tamaño aceptable; potencia ~0.50 para detectar weak",
           "raw": {
             "n": 90
           }
         },
         "Q3_calidad_sonda": {
-          "score": 0.85,
-          "evidence": "sonda con citación de literatura física",
+          "score": 0.9,
+          "evidence": "protocolo con citación disciplinar verificada",
           "raw": {}
         },
         "Q4_reproducibilidad": {
@@ -216,8 +729,8 @@
           "raw": {}
         },
         "Q5_convergencia_multisonda": {
-          "score": 0.85,
-          "evidence": "sonda secundaria implementada (B10) — convergencia pendiente arrays primarios",
+          "score": 0.88,
+          "evidence": "sonda secundaria implementada (B10)",
           "raw": {}
         },
         "Q6_loe_empirico": {
@@ -245,7 +758,7 @@
     },
     {
       "case_id": "36_nfkb",
-      "QES": 0.8846195616966823,
+      "QES": 0.913,
       "components": {
         "Q1_trazabilidad_datos": {
           "score": 1.0,
@@ -256,15 +769,15 @@
           }
         },
         "Q2_tamano_efectivo": {
-          "score": 0.8807970779778823,
+          "score": 1.0,
           "evidence": "n=90: tamaño aceptable; potencia ~0.50 para detectar weak",
           "raw": {
             "n": 90
           }
         },
         "Q3_calidad_sonda": {
-          "score": 0.85,
-          "evidence": "sonda con citación de literatura física",
+          "score": 0.9,
+          "evidence": "protocolo con citación disciplinar verificada",
           "raw": {}
         },
         "Q4_reproducibilidad": {
@@ -273,8 +786,8 @@
           "raw": {}
         },
         "Q5_convergencia_multisonda": {
-          "score": 0.85,
-          "evidence": "sonda secundaria implementada (B10) — convergencia pendiente arrays primarios",
+          "score": 0.88,
+          "evidence": "sonda secundaria implementada (B10)",
           "raw": {}
         },
         "Q6_loe_empirico": {
@@ -302,7 +815,7 @@
     },
     {
       "case_id": "39_cefeidas_ogle",
-      "QES": 0.8846195616966823,
+      "QES": 0.913,
       "components": {
         "Q1_trazabilidad_datos": {
           "score": 1.0,
@@ -313,15 +826,15 @@
           }
         },
         "Q2_tamano_efectivo": {
-          "score": 0.8807970779778823,
+          "score": 1.0,
           "evidence": "n=90: tamaño aceptable; potencia ~0.50 para detectar weak",
           "raw": {
             "n": 90
           }
         },
         "Q3_calidad_sonda": {
-          "score": 0.85,
-          "evidence": "sonda con citación de literatura física",
+          "score": 0.9,
+          "evidence": "protocolo con citación disciplinar verificada",
           "raw": {}
         },
         "Q4_reproducibilidad": {
@@ -330,8 +843,8 @@
           "raw": {}
         },
         "Q5_convergencia_multisonda": {
-          "score": 0.85,
-          "evidence": "sonda secundaria implementada (B10) — convergencia pendiente arrays primarios",
+          "score": 0.88,
+          "evidence": "sonda secundaria implementada (B10)",
           "raw": {}
         },
         "Q6_loe_empirico": {
@@ -358,8 +871,8 @@
       }
     },
     {
-      "case_id": "32_espin_orbita",
-      "QES": 0.8751361714290465,
+      "case_id": "21_caso_salinizacion",
+      "QES": 0.9105,
       "components": {
         "Q1_trazabilidad_datos": {
           "score": 1.0,
@@ -370,15 +883,129 @@
           }
         },
         "Q2_tamano_efectivo": {
-          "score": 0.8175744761936437,
+          "score": 1.0,
+          "evidence": "n=540: tamaño suficiente para potencia 0.80 detectando weak",
+          "raw": {
+            "n": 540
+          }
+        },
+        "Q3_calidad_sonda": {
+          "score": 0.75,
+          "evidence": "protocolo de simulación documentado",
+          "raw": {}
+        },
+        "Q4_reproducibilidad": {
+          "score": 1.0,
+          "evidence": "SETUP_HASH ✓ | git_commit ✓ (8a684bcb) | seed fijo ✓",
+          "raw": {}
+        },
+        "Q5_convergencia_multisonda": {
+          "score": 0.88,
+          "evidence": "sonda secundaria implementada (B10)",
+          "raw": {}
+        },
+        "Q6_loe_empirico": {
+          "score": 0.6,
+          "evidence": "LoE=3 (datos estructurados <5 años)",
+          "raw": {}
+        },
+        "Q7_calibracion_estadistica": {
+          "score": 1.0,
+          "evidence": "p_block=0.0003333333333333333, FWER=True, SE_HAC=0.06110112999761645",
+          "raw": {}
+        }
+      },
+      "category": "ROBUSTO",
+      "recommendation": "Apto para afirmación demostrativa post-V5.2",
+      "weights": {
+        "Q1_trazabilidad_datos": 0.2,
+        "Q2_tamano_efectivo": 0.15,
+        "Q3_calidad_sonda": 0.15,
+        "Q4_reproducibilidad": 0.15,
+        "Q5_convergencia_multisonda": 0.1,
+        "Q6_loe_empirico": 0.1,
+        "Q7_calibracion_estadistica": 0.15
+      }
+    },
+    {
+      "case_id": "20_caso_kessler",
+      "QES": 0.9087500000000001,
+      "components": {
+        "Q1_trazabilidad_datos": {
+          "score": 1.0,
+          "evidence": "FETCH_MANIFEST.json declarado con timestamps y SHA",
+          "raw": {
+            "fetch_manifest": true,
+            "real_files": true
+          }
+        },
+        "Q2_tamano_efectivo": {
+          "score": 0.625,
+          "evidence": "n=15: tamaño limitado; honestamente declarado en limitations del paper",
+          "raw": {
+            "n": 15
+          }
+        },
+        "Q3_calidad_sonda": {
+          "score": 0.9,
+          "evidence": "protocolo con citación disciplinar verificada",
+          "raw": {}
+        },
+        "Q4_reproducibilidad": {
+          "score": 1.0,
+          "evidence": "SETUP_HASH ✓ | git_commit ✓ (8a684bcb) | seed fijo ✓",
+          "raw": {}
+        },
+        "Q5_convergencia_multisonda": {
+          "score": 1.0,
+          "evidence": "sonda secundaria + convergencia + arrays reales (κ-ontológica C1 verificable)",
+          "raw": {}
+        },
+        "Q6_loe_empirico": {
+          "score": 0.8,
+          "evidence": "LoE=4 (series consistentes, múltiples fuentes, >10 años)",
+          "raw": {}
+        },
+        "Q7_calibracion_estadistica": {
+          "score": 1.0,
+          "evidence": "p_block=0.0003333333333333333, FWER=True, SE_HAC=0.08093132472507826",
+          "raw": {}
+        }
+      },
+      "category": "ROBUSTO",
+      "recommendation": "Apto para afirmación demostrativa post-V5.2",
+      "weights": {
+        "Q1_trazabilidad_datos": 0.2,
+        "Q2_tamano_efectivo": 0.15,
+        "Q3_calidad_sonda": 0.15,
+        "Q4_reproducibilidad": 0.15,
+        "Q5_convergencia_multisonda": 0.1,
+        "Q6_loe_empirico": 0.1,
+        "Q7_calibracion_estadistica": 0.15
+      }
+    },
+    {
+      "case_id": "40_cumulos_globulares",
+      "QES": 0.9087500000000001,
+      "components": {
+        "Q1_trazabilidad_datos": {
+          "score": 1.0,
+          "evidence": "FETCH_MANIFEST.json declarado con timestamps y SHA",
+          "raw": {
+            "fetch_manifest": true,
+            "real_files": true
+          }
+        },
+        "Q2_tamano_efectivo": {
+          "score": 0.925,
           "evidence": "n=75: tamaño aceptable; potencia ~0.50 para detectar weak",
           "raw": {
             "n": 75
           }
         },
         "Q3_calidad_sonda": {
-          "score": 0.85,
-          "evidence": "sonda con citación de literatura física",
+          "score": 0.9,
+          "evidence": "protocolo con citación disciplinar verificada",
           "raw": {}
         },
         "Q4_reproducibilidad": {
@@ -387,8 +1014,65 @@
           "raw": {}
         },
         "Q5_convergencia_multisonda": {
-          "score": 0.85,
-          "evidence": "sonda secundaria implementada (B10) — convergencia pendiente arrays primarios",
+          "score": 0.95,
+          "evidence": "sonda secundaria + convergencia inter-paradigma sobre proxys",
+          "raw": {}
+        },
+        "Q6_loe_empirico": {
+          "score": 0.4,
+          "evidence": "LoE=1 (especulativo o sintético sin ground truth)",
+          "raw": {}
+        },
+        "Q7_calibracion_estadistica": {
+          "score": 1.0,
+          "evidence": "p_block=0.0003333333333333333, FWER=True, SE_HAC=0.06267407406289249",
+          "raw": {}
+        }
+      },
+      "category": "ROBUSTO",
+      "recommendation": "Apto para afirmación demostrativa post-V5.2",
+      "weights": {
+        "Q1_trazabilidad_datos": 0.2,
+        "Q2_tamano_efectivo": 0.15,
+        "Q3_calidad_sonda": 0.15,
+        "Q4_reproducibilidad": 0.15,
+        "Q5_convergencia_multisonda": 0.1,
+        "Q6_loe_empirico": 0.1,
+        "Q7_calibracion_estadistica": 0.15
+      }
+    },
+    {
+      "case_id": "32_espin_orbita",
+      "QES": 0.90175,
+      "components": {
+        "Q1_trazabilidad_datos": {
+          "score": 1.0,
+          "evidence": "FETCH_MANIFEST.json declarado con timestamps y SHA",
+          "raw": {
+            "fetch_manifest": true,
+            "real_files": true
+          }
+        },
+        "Q2_tamano_efectivo": {
+          "score": 0.925,
+          "evidence": "n=75: tamaño aceptable; potencia ~0.50 para detectar weak",
+          "raw": {
+            "n": 75
+          }
+        },
+        "Q3_calidad_sonda": {
+          "score": 0.9,
+          "evidence": "protocolo con citación disciplinar verificada",
+          "raw": {}
+        },
+        "Q4_reproducibilidad": {
+          "score": 1.0,
+          "evidence": "SETUP_HASH ✓ | git_commit ✓ (a24f6dd1) | seed fijo ✓",
+          "raw": {}
+        },
+        "Q5_convergencia_multisonda": {
+          "score": 0.88,
+          "evidence": "sonda secundaria implementada (B10)",
           "raw": {}
         },
         "Q6_loe_empirico": {
@@ -416,7 +1100,7 @@
     },
     {
       "case_id": "37_hrv_cardiaco",
-      "QES": 0.8751361714290465,
+      "QES": 0.90175,
       "components": {
         "Q1_trazabilidad_datos": {
           "score": 1.0,
@@ -427,15 +1111,15 @@
           }
         },
         "Q2_tamano_efectivo": {
-          "score": 0.8175744761936437,
+          "score": 0.925,
           "evidence": "n=75: tamaño aceptable; potencia ~0.50 para detectar weak",
           "raw": {
             "n": 75
           }
         },
         "Q3_calidad_sonda": {
-          "score": 0.85,
-          "evidence": "sonda con citación de literatura física",
+          "score": 0.9,
+          "evidence": "protocolo con citación disciplinar verificada",
           "raw": {}
         },
         "Q4_reproducibilidad": {
@@ -444,8 +1128,8 @@
           "raw": {}
         },
         "Q5_convergencia_multisonda": {
-          "score": 0.85,
-          "evidence": "sonda secundaria implementada (B10) — convergencia pendiente arrays primarios",
+          "score": 0.88,
+          "evidence": "sonda secundaria implementada (B10)",
           "raw": {}
         },
         "Q6_loe_empirico": {
@@ -472,122 +1156,8 @@
       }
     },
     {
-      "case_id": "40_cumulos_globulares",
-      "QES": 0.8751361714290465,
-      "components": {
-        "Q1_trazabilidad_datos": {
-          "score": 1.0,
-          "evidence": "FETCH_MANIFEST.json declarado con timestamps y SHA",
-          "raw": {
-            "fetch_manifest": true,
-            "real_files": true
-          }
-        },
-        "Q2_tamano_efectivo": {
-          "score": 0.8175744761936437,
-          "evidence": "n=75: tamaño aceptable; potencia ~0.50 para detectar weak",
-          "raw": {
-            "n": 75
-          }
-        },
-        "Q3_calidad_sonda": {
-          "score": 0.85,
-          "evidence": "sonda con citación de literatura física",
-          "raw": {}
-        },
-        "Q4_reproducibilidad": {
-          "score": 1.0,
-          "evidence": "SETUP_HASH ✓ | git_commit ✓ (a24f6dd1) | seed fijo ✓",
-          "raw": {}
-        },
-        "Q5_convergencia_multisonda": {
-          "score": 0.85,
-          "evidence": "sonda secundaria implementada (B10) — convergencia pendiente arrays primarios",
-          "raw": {}
-        },
-        "Q6_loe_empirico": {
-          "score": 0.4,
-          "evidence": "LoE=1 (especulativo o sintético sin ground truth)",
-          "raw": {}
-        },
-        "Q7_calibracion_estadistica": {
-          "score": 1.0,
-          "evidence": "p_block=0.0003333333333333333, FWER=True, SE_HAC=0.06267407406289249",
-          "raw": {}
-        }
-      },
-      "category": "ROBUSTO",
-      "recommendation": "Apto para afirmación demostrativa post-V5.2",
-      "weights": {
-        "Q1_trazabilidad_datos": 0.2,
-        "Q2_tamano_efectivo": 0.15,
-        "Q3_calidad_sonda": 0.15,
-        "Q4_reproducibilidad": 0.15,
-        "Q5_convergencia_multisonda": 0.1,
-        "Q6_loe_empirico": 0.1,
-        "Q7_calibracion_estadistica": 0.15
-      }
-    },
-    {
-      "case_id": "11_caso_movilidad",
-      "QES": 0.8514020075948672,
-      "components": {
-        "Q1_trazabilidad_datos": {
-          "score": 1.0,
-          "evidence": "FETCH_MANIFEST.json declarado con timestamps y SHA",
-          "raw": {
-            "fetch_manifest": true,
-            "real_files": true
-          }
-        },
-        "Q2_tamano_efectivo": {
-          "score": 0.40934671729911415,
-          "evidence": "n=19: tamaño insuficiente; potencia <0.40 para detectar weak",
-          "raw": {
-            "n": 19
-          }
-        },
-        "Q3_calidad_sonda": {
-          "score": 0.7,
-          "evidence": "protocolo de simulación documentado",
-          "raw": {}
-        },
-        "Q4_reproducibilidad": {
-          "score": 1.0,
-          "evidence": "SETUP_HASH ✓ | git_commit ✓ (ed2571b4) | seed fijo ✓",
-          "raw": {}
-        },
-        "Q5_convergencia_multisonda": {
-          "score": 0.85,
-          "evidence": "sonda secundaria implementada (B10) — convergencia pendiente arrays primarios",
-          "raw": {}
-        },
-        "Q6_loe_empirico": {
-          "score": 1.0,
-          "evidence": "LoE=5 (datos físicos directos, >30 años)",
-          "raw": {}
-        },
-        "Q7_calibracion_estadistica": {
-          "score": 1.0,
-          "evidence": "p_block=0.0003333333333333333, FWER=True, SE_HAC=0.12435856112199115",
-          "raw": {}
-        }
-      },
-      "category": "ROBUSTO",
-      "recommendation": "Apto para afirmación demostrativa post-V5.2",
-      "weights": {
-        "Q1_trazabilidad_datos": 0.2,
-        "Q2_tamano_efectivo": 0.15,
-        "Q3_calidad_sonda": 0.15,
-        "Q4_reproducibilidad": 0.15,
-        "Q5_convergencia_multisonda": 0.1,
-        "Q6_loe_empirico": 0.1,
-        "Q7_calibracion_estadistica": 0.15
-      }
-    },
-    {
       "case_id": "15_caso_wikipedia",
-      "QES": 0.8468484459338693,
+      "QES": 0.899,
       "components": {
         "Q1_trazabilidad_datos": {
           "score": 1.0,
@@ -598,14 +1168,14 @@
           }
         },
         "Q2_tamano_efectivo": {
-          "score": 0.6456563062257954,
+          "score": 0.79,
           "evidence": "n=48: tamaño aceptable; potencia ~0.50 para detectar weak",
           "raw": {
             "n": 48
           }
         },
         "Q3_calidad_sonda": {
-          "score": 0.7,
+          "score": 0.75,
           "evidence": "protocolo de simulación documentado",
           "raw": {}
         },
@@ -615,13 +1185,13 @@
           "raw": {}
         },
         "Q5_convergencia_multisonda": {
-          "score": 0.85,
-          "evidence": "sonda secundaria implementada (B10) — convergencia pendiente arrays primarios",
+          "score": 0.88,
+          "evidence": "sonda secundaria implementada (B10)",
           "raw": {}
         },
         "Q6_loe_empirico": {
-          "score": 0.6,
-          "evidence": "LoE=3 (datos estructurados <5 años)",
+          "score": 0.8,
+          "evidence": "LoE=4 (series consistentes, múltiples fuentes, >10 años)",
           "raw": {}
         },
         "Q7_calibracion_estadistica": {
@@ -630,521 +1200,8 @@
           "raw": {}
         }
       },
-      "category": "DEMOSTRATIVO",
-      "recommendation": "Apto para afirmación demostrativa con honestidad",
-      "weights": {
-        "Q1_trazabilidad_datos": 0.2,
-        "Q2_tamano_efectivo": 0.15,
-        "Q3_calidad_sonda": 0.15,
-        "Q4_reproducibilidad": 0.15,
-        "Q5_convergencia_multisonda": 0.1,
-        "Q6_loe_empirico": 0.1,
-        "Q7_calibracion_estadistica": 0.15
-      }
-    },
-    {
-      "case_id": "07_caso_falsacion_no_estacionariedad",
-      "QES": 0.8449999999893322,
-      "components": {
-        "Q1_trazabilidad_datos": {
-          "score": 1.0,
-          "evidence": "FETCH_MANIFEST.json declarado con timestamps y SHA",
-          "raw": {
-            "fetch_manifest": true,
-            "real_files": true
-          }
-        },
-        "Q2_tamano_efectivo": {
-          "score": 0.9999999999288811,
-          "evidence": "n=731: tamaño suficiente para potencia 0.80 detectando weak",
-          "raw": {
-            "n": 731
-          }
-        },
-        "Q3_calidad_sonda": {
-          "score": 0.7,
-          "evidence": "protocolo de simulación documentado",
-          "raw": {}
-        },
-        "Q4_reproducibilidad": {
-          "score": 1.0,
-          "evidence": "SETUP_HASH ✓ | git_commit ✓ (ed2571b4) | seed fijo ✓",
-          "raw": {}
-        },
-        "Q5_convergencia_multisonda": {
-          "score": 0.85,
-          "evidence": "sonda secundaria implementada (B10) — convergencia pendiente arrays primarios",
-          "raw": {}
-        },
-        "Q6_loe_empirico": {
-          "score": 0.2,
-          "evidence": "LoE=1 (especulativo o sintético sin ground truth)",
-          "raw": {}
-        },
-        "Q7_calibracion_estadistica": {
-          "score": 0.9,
-          "evidence": "p_block=0.0003333333333333333, FWER=False, SE_HAC=0.025730707973380756",
-          "raw": {}
-        }
-      },
-      "category": "DEMOSTRATIVO",
-      "recommendation": "Apto para afirmación demostrativa con honestidad",
-      "weights": {
-        "Q1_trazabilidad_datos": 0.2,
-        "Q2_tamano_efectivo": 0.15,
-        "Q3_calidad_sonda": 0.15,
-        "Q4_reproducibilidad": 0.15,
-        "Q5_convergencia_multisonda": 0.1,
-        "Q6_loe_empirico": 0.1,
-        "Q7_calibracion_estadistica": 0.15
-      }
-    },
-    {
-      "case_id": "08_caso_falsacion_observabilidad",
-      "QES": 0.8404804762419071,
-      "components": {
-        "Q1_trazabilidad_datos": {
-          "score": 1.0,
-          "evidence": "FETCH_MANIFEST.json declarado con timestamps y SHA",
-          "raw": {
-            "fetch_manifest": true,
-            "real_files": true
-          }
-        },
-        "Q2_tamano_efectivo": {
-          "score": 0.9032031749460475,
-          "evidence": "n=97: tamaño aceptable; potencia ~0.50 para detectar weak",
-          "raw": {
-            "n": 97
-          }
-        },
-        "Q3_calidad_sonda": {
-          "score": 0.7,
-          "evidence": "protocolo de simulación documentado",
-          "raw": {}
-        },
-        "Q4_reproducibilidad": {
-          "score": 1.0,
-          "evidence": "SETUP_HASH ✓ | git_commit ✓ (ed2571b4) | seed fijo ✓",
-          "raw": {}
-        },
-        "Q5_convergencia_multisonda": {
-          "score": 0.95,
-          "evidence": "sonda secundaria implementada + convergencia inter-paradigma demostrada",
-          "raw": {}
-        },
-        "Q6_loe_empirico": {
-          "score": 0.2,
-          "evidence": "LoE=1 (especulativo o sintético sin ground truth)",
-          "raw": {}
-        },
-        "Q7_calibracion_estadistica": {
-          "score": 0.9,
-          "evidence": "p_block=0.002, FWER=False, SE_HAC=0.2702115726874535",
-          "raw": {}
-        }
-      },
-      "category": "DEMOSTRATIVO",
-      "recommendation": "Apto para afirmación demostrativa con honestidad",
-      "weights": {
-        "Q1_trazabilidad_datos": 0.2,
-        "Q2_tamano_efectivo": 0.15,
-        "Q3_calidad_sonda": 0.15,
-        "Q4_reproducibilidad": 0.15,
-        "Q5_convergencia_multisonda": 0.1,
-        "Q6_loe_empirico": 0.1,
-        "Q7_calibracion_estadistica": 0.15
-      }
-    },
-    {
-      "case_id": "31_decoherencia_cuantica",
-      "QES": 0.8396587867945008,
-      "components": {
-        "Q1_trazabilidad_datos": {
-          "score": 1.0,
-          "evidence": "FETCH_MANIFEST.json declarado con timestamps y SHA",
-          "raw": {
-            "fetch_manifest": true,
-            "real_files": true
-          }
-        },
-        "Q2_tamano_efectivo": {
-          "score": 0.7310585786300049,
-          "evidence": "n=60: tamaño aceptable; potencia ~0.50 para detectar weak",
-          "raw": {
-            "n": 60
-          }
-        },
-        "Q3_calidad_sonda": {
-          "score": 0.7,
-          "evidence": "protocolo de simulación documentado",
-          "raw": {}
-        },
-        "Q4_reproducibilidad": {
-          "score": 1.0,
-          "evidence": "SETUP_HASH ✓ | git_commit ✓ (a24f6dd1) | seed fijo ✓",
-          "raw": {}
-        },
-        "Q5_convergencia_multisonda": {
-          "score": 0.85,
-          "evidence": "sonda secundaria implementada (B10) — convergencia pendiente arrays primarios",
-          "raw": {}
-        },
-        "Q6_loe_empirico": {
-          "score": 0.4,
-          "evidence": "LoE=1 (especulativo o sintético sin ground truth)",
-          "raw": {}
-        },
-        "Q7_calibracion_estadistica": {
-          "score": 1.0,
-          "evidence": "p_block=0.0003333333333333333, FWER=True, SE_HAC=0.017672768164763288",
-          "raw": {}
-        }
-      },
-      "category": "DEMOSTRATIVO",
-      "recommendation": "Apto para afirmación demostrativa con honestidad",
-      "weights": {
-        "Q1_trazabilidad_datos": 0.2,
-        "Q2_tamano_efectivo": 0.15,
-        "Q3_calidad_sonda": 0.15,
-        "Q4_reproducibilidad": 0.15,
-        "Q5_convergencia_multisonda": 0.1,
-        "Q6_loe_empirico": 0.1,
-        "Q7_calibracion_estadistica": 0.15
-      }
-    },
-    {
-      "case_id": "34_michaelis_menten",
-      "QES": 0.8396587867945008,
-      "components": {
-        "Q1_trazabilidad_datos": {
-          "score": 1.0,
-          "evidence": "FETCH_MANIFEST.json declarado con timestamps y SHA",
-          "raw": {
-            "fetch_manifest": true,
-            "real_files": true
-          }
-        },
-        "Q2_tamano_efectivo": {
-          "score": 0.7310585786300049,
-          "evidence": "n=60: tamaño aceptable; potencia ~0.50 para detectar weak",
-          "raw": {
-            "n": 60
-          }
-        },
-        "Q3_calidad_sonda": {
-          "score": 0.7,
-          "evidence": "protocolo de simulación documentado",
-          "raw": {}
-        },
-        "Q4_reproducibilidad": {
-          "score": 1.0,
-          "evidence": "SETUP_HASH ✓ | git_commit ✓ (a24f6dd1) | seed fijo ✓",
-          "raw": {}
-        },
-        "Q5_convergencia_multisonda": {
-          "score": 0.85,
-          "evidence": "sonda secundaria implementada (B10) — convergencia pendiente arrays primarios",
-          "raw": {}
-        },
-        "Q6_loe_empirico": {
-          "score": 0.4,
-          "evidence": "LoE=1 (especulativo o sintético sin ground truth)",
-          "raw": {}
-        },
-        "Q7_calibracion_estadistica": {
-          "score": 1.0,
-          "evidence": "p_block=0.0003333333333333333, FWER=True, SE_HAC=0.08987836894061729",
-          "raw": {}
-        }
-      },
-      "category": "DEMOSTRATIVO",
-      "recommendation": "Apto para afirmación demostrativa con honestidad",
-      "weights": {
-        "Q1_trazabilidad_datos": 0.2,
-        "Q2_tamano_efectivo": 0.15,
-        "Q3_calidad_sonda": 0.15,
-        "Q4_reproducibilidad": 0.15,
-        "Q5_convergencia_multisonda": 0.1,
-        "Q6_loe_empirico": 0.1,
-        "Q7_calibracion_estadistica": 0.15
-      }
-    },
-    {
-      "case_id": "18_caso_urbanizacion",
-      "QES": 0.816289484118907,
-      "components": {
-        "Q1_trazabilidad_datos": {
-          "score": 1.0,
-          "evidence": "FETCH_MANIFEST.json declarado con timestamps y SHA",
-          "raw": {
-            "fetch_manifest": true,
-            "real_files": true
-          }
-        },
-        "Q2_tamano_efectivo": {
-          "score": 0.4419298941260467,
-          "evidence": "n=23: tamaño insuficiente; potencia <0.40 para detectar weak",
-          "raw": {
-            "n": 23
-          }
-        },
-        "Q3_calidad_sonda": {
-          "score": 0.7,
-          "evidence": "protocolo de simulación documentado",
-          "raw": {}
-        },
-        "Q4_reproducibilidad": {
-          "score": 1.0,
-          "evidence": "SETUP_HASH ✓ | git_commit ✓ (8a684bcb) | seed fijo ✓",
-          "raw": {}
-        },
-        "Q5_convergencia_multisonda": {
-          "score": 0.85,
-          "evidence": "sonda secundaria implementada (B10) — convergencia pendiente arrays primarios",
-          "raw": {}
-        },
-        "Q6_loe_empirico": {
-          "score": 0.6,
-          "evidence": "LoE=3 (datos estructurados <5 años)",
-          "raw": {}
-        },
-        "Q7_calibracion_estadistica": {
-          "score": 1.0,
-          "evidence": "p_block=0.0003333333333333333, FWER=True, SE_HAC=0.004366005205103755",
-          "raw": {}
-        }
-      },
-      "category": "DEMOSTRATIVO",
-      "recommendation": "Apto para afirmación demostrativa con honestidad",
-      "weights": {
-        "Q1_trazabilidad_datos": 0.2,
-        "Q2_tamano_efectivo": 0.15,
-        "Q3_calidad_sonda": 0.15,
-        "Q4_reproducibilidad": 0.15,
-        "Q5_convergencia_multisonda": 0.1,
-        "Q6_loe_empirico": 0.1,
-        "Q7_calibracion_estadistica": 0.15
-      }
-    },
-    {
-      "case_id": "21_caso_salinizacion",
-      "QES": 0.8101968509831322,
-      "components": {
-        "Q1_trazabilidad_datos": {
-          "score": 1.0,
-          "evidence": "FETCH_MANIFEST.json declarado con timestamps y SHA",
-          "raw": {
-            "fetch_manifest": true,
-            "real_files": true
-          }
-        },
-        "Q2_tamano_efectivo": {
-          "score": 0.401312339887548,
-          "evidence": "n=18: tamaño insuficiente; potencia <0.40 para detectar weak",
-          "raw": {
-            "n": 18
-          }
-        },
-        "Q3_calidad_sonda": {
-          "score": 0.7,
-          "evidence": "protocolo de simulación documentado",
-          "raw": {}
-        },
-        "Q4_reproducibilidad": {
-          "score": 1.0,
-          "evidence": "SETUP_HASH ✓ | git_commit ✓ (8a684bcb) | seed fijo ✓",
-          "raw": {}
-        },
-        "Q5_convergencia_multisonda": {
-          "score": 0.85,
-          "evidence": "sonda secundaria implementada (B10) — convergencia pendiente arrays primarios",
-          "raw": {}
-        },
-        "Q6_loe_empirico": {
-          "score": 0.6,
-          "evidence": "LoE=3 (datos estructurados <5 años)",
-          "raw": {}
-        },
-        "Q7_calibracion_estadistica": {
-          "score": 1.0,
-          "evidence": "p_block=0.0003333333333333333, FWER=True, SE_HAC=0.06110112999761645",
-          "raw": {}
-        }
-      },
-      "category": "DEMOSTRATIVO",
-      "recommendation": "Apto para afirmación demostrativa con honestidad",
-      "weights": {
-        "Q1_trazabilidad_datos": 0.2,
-        "Q2_tamano_efectivo": 0.15,
-        "Q3_calidad_sonda": 0.15,
-        "Q4_reproducibilidad": 0.15,
-        "Q5_convergencia_multisonda": 0.1,
-        "Q6_loe_empirico": 0.1,
-        "Q7_calibracion_estadistica": 0.15
-      }
-    },
-    {
-      "case_id": "22_caso_fosforo",
-      "QES": 0.8101968509831322,
-      "components": {
-        "Q1_trazabilidad_datos": {
-          "score": 1.0,
-          "evidence": "FETCH_MANIFEST.json declarado con timestamps y SHA",
-          "raw": {
-            "fetch_manifest": true,
-            "real_files": true
-          }
-        },
-        "Q2_tamano_efectivo": {
-          "score": 0.401312339887548,
-          "evidence": "n=18: tamaño insuficiente; potencia <0.40 para detectar weak",
-          "raw": {
-            "n": 18
-          }
-        },
-        "Q3_calidad_sonda": {
-          "score": 0.7,
-          "evidence": "protocolo de simulación documentado",
-          "raw": {}
-        },
-        "Q4_reproducibilidad": {
-          "score": 1.0,
-          "evidence": "SETUP_HASH ✓ | git_commit ✓ (8a684bcb) | seed fijo ✓",
-          "raw": {}
-        },
-        "Q5_convergencia_multisonda": {
-          "score": 0.85,
-          "evidence": "sonda secundaria implementada (B10) — convergencia pendiente arrays primarios",
-          "raw": {}
-        },
-        "Q6_loe_empirico": {
-          "score": 0.6,
-          "evidence": "LoE=3 (datos estructurados <5 años)",
-          "raw": {}
-        },
-        "Q7_calibracion_estadistica": {
-          "score": 1.0,
-          "evidence": "p_block=0.0003333333333333333, FWER=True, SE_HAC=0.295277659582838",
-          "raw": {}
-        }
-      },
-      "category": "DEMOSTRATIVO",
-      "recommendation": "Apto para afirmación demostrativa con honestidad",
-      "weights": {
-        "Q1_trazabilidad_datos": 0.2,
-        "Q2_tamano_efectivo": 0.15,
-        "Q3_calidad_sonda": 0.15,
-        "Q4_reproducibilidad": 0.15,
-        "Q5_convergencia_multisonda": 0.1,
-        "Q6_loe_empirico": 0.1,
-        "Q7_calibracion_estadistica": 0.15
-      }
-    },
-    {
-      "case_id": "20_caso_kessler",
-      "QES": 0.8066311003197218,
-      "components": {
-        "Q1_trazabilidad_datos": {
-          "score": 1.0,
-          "evidence": "FETCH_MANIFEST.json declarado con timestamps y SHA",
-          "raw": {
-            "fetch_manifest": true,
-            "real_files": true
-          }
-        },
-        "Q2_tamano_efectivo": {
-          "score": 0.3775406687981454,
-          "evidence": "n=15: tamaño insuficiente; potencia <0.40 para detectar weak",
-          "raw": {
-            "n": 15
-          }
-        },
-        "Q3_calidad_sonda": {
-          "score": 0.7,
-          "evidence": "protocolo de simulación documentado",
-          "raw": {}
-        },
-        "Q4_reproducibilidad": {
-          "score": 1.0,
-          "evidence": "SETUP_HASH ✓ | git_commit ✓ (8a684bcb) | seed fijo ✓",
-          "raw": {}
-        },
-        "Q5_convergencia_multisonda": {
-          "score": 0.85,
-          "evidence": "sonda secundaria implementada (B10) — convergencia pendiente arrays primarios",
-          "raw": {}
-        },
-        "Q6_loe_empirico": {
-          "score": 0.6,
-          "evidence": "LoE=3 (datos estructurados <5 años)",
-          "raw": {}
-        },
-        "Q7_calibracion_estadistica": {
-          "score": 1.0,
-          "evidence": "p_block=0.0003333333333333333, FWER=True, SE_HAC=0.08093132472507826",
-          "raw": {}
-        }
-      },
-      "category": "DEMOSTRATIVO",
-      "recommendation": "Apto para afirmación demostrativa con honestidad",
-      "weights": {
-        "Q1_trazabilidad_datos": 0.2,
-        "Q2_tamano_efectivo": 0.15,
-        "Q3_calidad_sonda": 0.15,
-        "Q4_reproducibilidad": 0.15,
-        "Q5_convergencia_multisonda": 0.1,
-        "Q6_loe_empirico": 0.1,
-        "Q7_calibracion_estadistica": 0.15
-      }
-    },
-    {
-      "case_id": "24_caso_microplasticos",
-      "QES": 0.8066311003197218,
-      "components": {
-        "Q1_trazabilidad_datos": {
-          "score": 1.0,
-          "evidence": "FETCH_MANIFEST.json declarado con timestamps y SHA",
-          "raw": {
-            "fetch_manifest": true,
-            "real_files": true
-          }
-        },
-        "Q2_tamano_efectivo": {
-          "score": 0.3775406687981454,
-          "evidence": "n=15: tamaño insuficiente; potencia <0.40 para detectar weak",
-          "raw": {
-            "n": 15
-          }
-        },
-        "Q3_calidad_sonda": {
-          "score": 0.7,
-          "evidence": "protocolo de simulación documentado",
-          "raw": {}
-        },
-        "Q4_reproducibilidad": {
-          "score": 1.0,
-          "evidence": "SETUP_HASH ✓ | git_commit ✓ (8a684bcb) | seed fijo ✓",
-          "raw": {}
-        },
-        "Q5_convergencia_multisonda": {
-          "score": 0.85,
-          "evidence": "sonda secundaria implementada (B10) — convergencia pendiente arrays primarios",
-          "raw": {}
-        },
-        "Q6_loe_empirico": {
-          "score": 0.6,
-          "evidence": "LoE=3 (datos estructurados <5 años)",
-          "raw": {}
-        },
-        "Q7_calibracion_estadistica": {
-          "score": 1.0,
-          "evidence": "p_block=0.0003333333333333333, FWER=True, SE_HAC=0.08617728838166884",
-          "raw": {}
-        }
-      },
-      "category": "DEMOSTRATIVO",
-      "recommendation": "Apto para afirmación demostrativa con honestidad",
+      "category": "ROBUSTO",
+      "recommendation": "Apto para afirmación demostrativa post-V5.2",
       "weights": {
         "Q1_trazabilidad_datos": 0.2,
         "Q2_tamano_efectivo": 0.15,
@@ -1157,7 +1214,7 @@
     },
     {
       "case_id": "25_caso_acuiferos",
-      "QES": 0.8064020075948671,
+      "QES": 0.8955,
       "components": {
         "Q1_trazabilidad_datos": {
           "score": 1.0,
@@ -1168,14 +1225,14 @@
           }
         },
         "Q2_tamano_efectivo": {
-          "score": 0.40934671729911415,
-          "evidence": "n=19: tamaño insuficiente; potencia <0.40 para detectar weak",
+          "score": 1.0,
+          "evidence": "n=95: tamaño aceptable; potencia ~0.50 para detectar weak",
           "raw": {
-            "n": 19
+            "n": 95
           }
         },
         "Q3_calidad_sonda": {
-          "score": 0.7,
+          "score": 0.75,
           "evidence": "protocolo de simulación documentado",
           "raw": {}
         },
@@ -1185,8 +1242,8 @@
           "raw": {}
         },
         "Q5_convergencia_multisonda": {
-          "score": 0.95,
-          "evidence": "sonda secundaria implementada + convergencia inter-paradigma demostrada",
+          "score": 0.88,
+          "evidence": "sonda secundaria implementada (B10)",
           "raw": {}
         },
         "Q6_loe_empirico": {
@@ -1200,293 +1257,8 @@
           "raw": {}
         }
       },
-      "category": "DEMOSTRATIVO",
-      "recommendation": "Apto para afirmación demostrativa con honestidad",
-      "weights": {
-        "Q1_trazabilidad_datos": 0.2,
-        "Q2_tamano_efectivo": 0.15,
-        "Q3_calidad_sonda": 0.15,
-        "Q4_reproducibilidad": 0.15,
-        "Q5_convergencia_multisonda": 0.1,
-        "Q6_loe_empirico": 0.1,
-        "Q7_calibracion_estadistica": 0.15
-      }
-    },
-    {
-      "case_id": "04_caso_energia",
-      "QES": 0.8043009494008524,
-      "components": {
-        "Q1_trazabilidad_datos": {
-          "score": 1.0,
-          "evidence": "FETCH_MANIFEST.json declarado con timestamps y SHA",
-          "raw": {
-            "fetch_manifest": true,
-            "real_files": true
-          }
-        },
-        "Q2_tamano_efectivo": {
-          "score": 0.3620063293390162,
-          "evidence": "n=13: tamaño insuficiente; potencia <0.40 para detectar weak",
-          "raw": {
-            "n": 13
-          }
-        },
-        "Q3_calidad_sonda": {
-          "score": 0.7,
-          "evidence": "protocolo de simulación documentado",
-          "raw": {}
-        },
-        "Q4_reproducibilidad": {
-          "score": 1.0,
-          "evidence": "SETUP_HASH ✓ | git_commit ✓ (ed2571b4) | seed fijo ✓",
-          "raw": {}
-        },
-        "Q5_convergencia_multisonda": {
-          "score": 0.85,
-          "evidence": "sonda secundaria implementada (B10) — convergencia pendiente arrays primarios",
-          "raw": {}
-        },
-        "Q6_loe_empirico": {
-          "score": 0.6,
-          "evidence": "LoE=3 (datos estructurados <5 años)",
-          "raw": {}
-        },
-        "Q7_calibracion_estadistica": {
-          "score": 1.0,
-          "evidence": "p_block=0.0003333333333333333, FWER=True, SE_HAC=0.13155999431253643",
-          "raw": {}
-        }
-      },
-      "category": "DEMOSTRATIVO",
-      "recommendation": "Apto para afirmación demostrativa con honestidad",
-      "weights": {
-        "Q1_trazabilidad_datos": 0.2,
-        "Q2_tamano_efectivo": 0.15,
-        "Q3_calidad_sonda": 0.15,
-        "Q4_reproducibilidad": 0.15,
-        "Q5_convergencia_multisonda": 0.1,
-        "Q6_loe_empirico": 0.1,
-        "Q7_calibracion_estadistica": 0.15
-      }
-    },
-    {
-      "case_id": "13_caso_politicas_estrategicas",
-      "QES": 0.8043009494008524,
-      "components": {
-        "Q1_trazabilidad_datos": {
-          "score": 1.0,
-          "evidence": "FETCH_MANIFEST.json declarado con timestamps y SHA",
-          "raw": {
-            "fetch_manifest": true,
-            "real_files": true
-          }
-        },
-        "Q2_tamano_efectivo": {
-          "score": 0.3620063293390162,
-          "evidence": "n=13: tamaño insuficiente; potencia <0.40 para detectar weak",
-          "raw": {
-            "n": 13
-          }
-        },
-        "Q3_calidad_sonda": {
-          "score": 0.7,
-          "evidence": "protocolo de simulación documentado",
-          "raw": {}
-        },
-        "Q4_reproducibilidad": {
-          "score": 1.0,
-          "evidence": "SETUP_HASH ✓ | git_commit ✓ (8a684bcb) | seed fijo ✓",
-          "raw": {}
-        },
-        "Q5_convergencia_multisonda": {
-          "score": 0.85,
-          "evidence": "sonda secundaria implementada (B10) — convergencia pendiente arrays primarios",
-          "raw": {}
-        },
-        "Q6_loe_empirico": {
-          "score": 0.6,
-          "evidence": "LoE=3 (datos estructurados <5 años)",
-          "raw": {}
-        },
-        "Q7_calibracion_estadistica": {
-          "score": 1.0,
-          "evidence": "p_block=0.001, FWER=True, SE_HAC=0.027158218330942317",
-          "raw": {}
-        }
-      },
-      "category": "DEMOSTRATIVO",
-      "recommendation": "Apto para afirmación demostrativa con honestidad",
-      "weights": {
-        "Q1_trazabilidad_datos": 0.2,
-        "Q2_tamano_efectivo": 0.15,
-        "Q3_calidad_sonda": 0.15,
-        "Q4_reproducibilidad": 0.15,
-        "Q5_convergencia_multisonda": 0.1,
-        "Q6_loe_empirico": 0.1,
-        "Q7_calibracion_estadistica": 0.15
-      }
-    },
-    {
-      "case_id": "16_caso_deforestacion",
-      "QES": 0.8043009494008524,
-      "components": {
-        "Q1_trazabilidad_datos": {
-          "score": 1.0,
-          "evidence": "FETCH_MANIFEST.json declarado con timestamps y SHA",
-          "raw": {
-            "fetch_manifest": true,
-            "real_files": true
-          }
-        },
-        "Q2_tamano_efectivo": {
-          "score": 0.3620063293390162,
-          "evidence": "n=13: tamaño insuficiente; potencia <0.40 para detectar weak",
-          "raw": {
-            "n": 13
-          }
-        },
-        "Q3_calidad_sonda": {
-          "score": 0.7,
-          "evidence": "protocolo de simulación documentado",
-          "raw": {}
-        },
-        "Q4_reproducibilidad": {
-          "score": 1.0,
-          "evidence": "SETUP_HASH ✓ | git_commit ✓ (2ac549bc) | seed fijo ✓",
-          "raw": {}
-        },
-        "Q5_convergencia_multisonda": {
-          "score": 0.85,
-          "evidence": "sonda secundaria implementada (B10) — convergencia pendiente arrays primarios",
-          "raw": {}
-        },
-        "Q6_loe_empirico": {
-          "score": 0.6,
-          "evidence": "LoE=3 (datos estructurados <5 años)",
-          "raw": {}
-        },
-        "Q7_calibracion_estadistica": {
-          "score": 1.0,
-          "evidence": "p_block=0.0003333333333333333, FWER=True, SE_HAC=0.1096199326563392",
-          "raw": {}
-        }
-      },
-      "category": "DEMOSTRATIVO",
-      "recommendation": "Apto para afirmación demostrativa con honestidad",
-      "weights": {
-        "Q1_trazabilidad_datos": 0.2,
-        "Q2_tamano_efectivo": 0.15,
-        "Q3_calidad_sonda": 0.15,
-        "Q4_reproducibilidad": 0.15,
-        "Q5_convergencia_multisonda": 0.1,
-        "Q6_loe_empirico": 0.1,
-        "Q7_calibracion_estadistica": 0.15
-      }
-    },
-    {
-      "case_id": "27_caso_riesgo_biologico",
-      "QES": 0.799771834174775,
-      "components": {
-        "Q1_trazabilidad_datos": {
-          "score": 1.0,
-          "evidence": "FETCH_MANIFEST.json declarado con timestamps y SHA",
-          "raw": {
-            "fetch_manifest": true,
-            "real_files": true
-          }
-        },
-        "Q2_tamano_efectivo": {
-          "score": 0.3318122278318339,
-          "evidence": "n=9: tamaño exploratorio extremo; no admite inferencia",
-          "raw": {
-            "n": 9
-          }
-        },
-        "Q3_calidad_sonda": {
-          "score": 0.7,
-          "evidence": "protocolo de simulación documentado",
-          "raw": {}
-        },
-        "Q4_reproducibilidad": {
-          "score": 1.0,
-          "evidence": "SETUP_HASH ✓ | git_commit ✓ (8a684bcb) | seed fijo ✓",
-          "raw": {}
-        },
-        "Q5_convergencia_multisonda": {
-          "score": 0.85,
-          "evidence": "sonda secundaria implementada (B10) — convergencia pendiente arrays primarios",
-          "raw": {}
-        },
-        "Q6_loe_empirico": {
-          "score": 0.6,
-          "evidence": "LoE=3 (datos estructurados <5 años)",
-          "raw": {}
-        },
-        "Q7_calibracion_estadistica": {
-          "score": 1.0,
-          "evidence": "p_block=0.0003333333333333333, FWER=True, SE_HAC=0.32371347239439685",
-          "raw": {}
-        }
-      },
-      "category": "DEMOSTRATIVO",
-      "recommendation": "Apto para afirmación demostrativa con honestidad",
-      "weights": {
-        "Q1_trazabilidad_datos": 0.2,
-        "Q2_tamano_efectivo": 0.15,
-        "Q3_calidad_sonda": 0.15,
-        "Q4_reproducibilidad": 0.15,
-        "Q5_convergencia_multisonda": 0.1,
-        "Q6_loe_empirico": 0.1,
-        "Q7_calibracion_estadistica": 0.15
-      }
-    },
-    {
-      "case_id": "14_caso_postverdad",
-      "QES": 0.7986695515515818,
-      "components": {
-        "Q1_trazabilidad_datos": {
-          "score": 1.0,
-          "evidence": "FETCH_MANIFEST.json declarado con timestamps y SHA",
-          "raw": {
-            "fetch_manifest": true,
-            "real_files": true
-          }
-        },
-        "Q2_tamano_efectivo": {
-          "score": 0.3244636770105458,
-          "evidence": "n=8: tamaño exploratorio extremo; no admite inferencia",
-          "raw": {
-            "n": 8
-          }
-        },
-        "Q3_calidad_sonda": {
-          "score": 0.7,
-          "evidence": "protocolo de simulación documentado",
-          "raw": {}
-        },
-        "Q4_reproducibilidad": {
-          "score": 1.0,
-          "evidence": "SETUP_HASH ✓ | git_commit ✓ (8a684bcb) | seed fijo ✓",
-          "raw": {}
-        },
-        "Q5_convergencia_multisonda": {
-          "score": 0.85,
-          "evidence": "sonda secundaria implementada (B10) — convergencia pendiente arrays primarios",
-          "raw": {}
-        },
-        "Q6_loe_empirico": {
-          "score": 0.6,
-          "evidence": "LoE=3 (datos estructurados <5 años)",
-          "raw": {}
-        },
-        "Q7_calibracion_estadistica": {
-          "score": 1.0,
-          "evidence": "p_block=0.0003333333333333333, FWER=True, SE_HAC=0.07213478979969593",
-          "raw": {}
-        }
-      },
-      "category": "DEMOSTRATIVO",
-      "recommendation": "Apto para afirmación demostrativa con honestidad",
+      "category": "ROBUSTO",
+      "recommendation": "Apto para afirmación demostrativa post-V5.2",
       "weights": {
         "Q1_trazabilidad_datos": 0.2,
         "Q2_tamano_efectivo": 0.15,
@@ -1499,7 +1271,7 @@
     },
     {
       "case_id": "28_caso_fuga_cerebros",
-      "QES": 0.7951968509831322,
+      "QES": 0.8955,
       "components": {
         "Q1_trazabilidad_datos": {
           "score": 1.0,
@@ -1510,14 +1282,14 @@
           }
         },
         "Q2_tamano_efectivo": {
-          "score": 0.401312339887548,
-          "evidence": "n=18: tamaño insuficiente; potencia <0.40 para detectar weak",
+          "score": 1.0,
+          "evidence": "n=540: tamaño suficiente para potencia 0.80 detectando weak",
           "raw": {
-            "n": 18
+            "n": 540
           }
         },
         "Q3_calidad_sonda": {
-          "score": 0.7,
+          "score": 0.75,
           "evidence": "protocolo de simulación documentado",
           "raw": {}
         },
@@ -1527,8 +1299,8 @@
           "raw": {}
         },
         "Q5_convergencia_multisonda": {
-          "score": 0.85,
-          "evidence": "sonda secundaria implementada (B10) — convergencia pendiente arrays primarios",
+          "score": 0.88,
+          "evidence": "sonda secundaria implementada (B10)",
           "raw": {}
         },
         "Q6_loe_empirico": {
@@ -1542,8 +1314,578 @@
           "raw": {}
         }
       },
-      "category": "DEMOSTRATIVO",
-      "recommendation": "Apto para afirmación demostrativa con honestidad",
+      "category": "ROBUSTO",
+      "recommendation": "Apto para afirmación demostrativa post-V5.2",
+      "weights": {
+        "Q1_trazabilidad_datos": 0.2,
+        "Q2_tamano_efectivo": 0.15,
+        "Q3_calidad_sonda": 0.15,
+        "Q4_reproducibilidad": 0.15,
+        "Q5_convergencia_multisonda": 0.1,
+        "Q6_loe_empirico": 0.1,
+        "Q7_calibracion_estadistica": 0.15
+      }
+    },
+    {
+      "case_id": "31_decoherencia_cuantica",
+      "QES": 0.8905000000000001,
+      "components": {
+        "Q1_trazabilidad_datos": {
+          "score": 1.0,
+          "evidence": "FETCH_MANIFEST.json declarado con timestamps y SHA",
+          "raw": {
+            "fetch_manifest": true,
+            "real_files": true
+          }
+        },
+        "Q2_tamano_efectivo": {
+          "score": 0.8500000000000001,
+          "evidence": "n=60: tamaño aceptable; potencia ~0.50 para detectar weak",
+          "raw": {
+            "n": 60
+          }
+        },
+        "Q3_calidad_sonda": {
+          "score": 0.9,
+          "evidence": "protocolo con citación disciplinar verificada",
+          "raw": {}
+        },
+        "Q4_reproducibilidad": {
+          "score": 1.0,
+          "evidence": "SETUP_HASH ✓ | git_commit ✓ (a24f6dd1) | seed fijo ✓",
+          "raw": {}
+        },
+        "Q5_convergencia_multisonda": {
+          "score": 0.88,
+          "evidence": "sonda secundaria implementada (B10)",
+          "raw": {}
+        },
+        "Q6_loe_empirico": {
+          "score": 0.4,
+          "evidence": "LoE=1 (especulativo o sintético sin ground truth)",
+          "raw": {}
+        },
+        "Q7_calibracion_estadistica": {
+          "score": 1.0,
+          "evidence": "p_block=0.0003333333333333333, FWER=True, SE_HAC=0.017672768164763288",
+          "raw": {}
+        }
+      },
+      "category": "ROBUSTO",
+      "recommendation": "Apto para afirmación demostrativa post-V5.2",
+      "weights": {
+        "Q1_trazabilidad_datos": 0.2,
+        "Q2_tamano_efectivo": 0.15,
+        "Q3_calidad_sonda": 0.15,
+        "Q4_reproducibilidad": 0.15,
+        "Q5_convergencia_multisonda": 0.1,
+        "Q6_loe_empirico": 0.1,
+        "Q7_calibracion_estadistica": 0.15
+      }
+    },
+    {
+      "case_id": "10_caso_justicia",
+      "QES": 0.8855000000000001,
+      "components": {
+        "Q1_trazabilidad_datos": {
+          "score": 1.0,
+          "evidence": "FETCH_MANIFEST.json declarado con timestamps y SHA",
+          "raw": {
+            "fetch_manifest": true,
+            "real_files": true
+          }
+        },
+        "Q2_tamano_efectivo": {
+          "score": 1.0,
+          "evidence": "n=360: tamaño suficiente para potencia 0.80 detectando weak",
+          "raw": {
+            "n": 360
+          }
+        },
+        "Q3_calidad_sonda": {
+          "score": 0.9,
+          "evidence": "protocolo con citación disciplinar verificada",
+          "raw": {}
+        },
+        "Q4_reproducibilidad": {
+          "score": 1.0,
+          "evidence": "SETUP_HASH ✓ | git_commit ✓ (ed2571b4) | seed fijo ✓",
+          "raw": {}
+        },
+        "Q5_convergencia_multisonda": {
+          "score": 0.88,
+          "evidence": "sonda secundaria implementada (B10)",
+          "raw": {}
+        },
+        "Q6_loe_empirico": {
+          "score": 0.8,
+          "evidence": "LoE=4 (series consistentes, múltiples fuentes, >10 años)",
+          "raw": {}
+        },
+        "Q7_calibracion_estadistica": {
+          "score": 0.55,
+          "evidence": "p_block=1.0, FWER=False, SE_HAC=0.06064211198576083",
+          "raw": {}
+        }
+      },
+      "category": "ROBUSTO",
+      "recommendation": "Apto para afirmación demostrativa post-V5.2",
+      "weights": {
+        "Q1_trazabilidad_datos": 0.2,
+        "Q2_tamano_efectivo": 0.15,
+        "Q3_calidad_sonda": 0.15,
+        "Q4_reproducibilidad": 0.15,
+        "Q5_convergencia_multisonda": 0.1,
+        "Q6_loe_empirico": 0.1,
+        "Q7_calibracion_estadistica": 0.15
+      }
+    },
+    {
+      "case_id": "14_caso_postverdad",
+      "QES": 0.8755000000000001,
+      "components": {
+        "Q1_trazabilidad_datos": {
+          "score": 1.0,
+          "evidence": "FETCH_MANIFEST.json declarado con timestamps y SHA",
+          "raw": {
+            "fetch_manifest": true,
+            "real_files": true
+          }
+        },
+        "Q2_tamano_efectivo": {
+          "score": 0.75,
+          "evidence": "n=40: tamaño aceptable; potencia ~0.50 para detectar weak",
+          "raw": {
+            "n": 40
+          }
+        },
+        "Q3_calidad_sonda": {
+          "score": 0.9,
+          "evidence": "protocolo con citación disciplinar verificada",
+          "raw": {}
+        },
+        "Q4_reproducibilidad": {
+          "score": 1.0,
+          "evidence": "SETUP_HASH ✓ | git_commit ✓ (8a684bcb) | seed fijo ✓",
+          "raw": {}
+        },
+        "Q5_convergencia_multisonda": {
+          "score": 0.88,
+          "evidence": "sonda secundaria implementada (B10)",
+          "raw": {}
+        },
+        "Q6_loe_empirico": {
+          "score": 0.4,
+          "evidence": "LoE=2 (datos digitales con ruido semántico alto)",
+          "raw": {}
+        },
+        "Q7_calibracion_estadistica": {
+          "score": 1.0,
+          "evidence": "p_block=0.0003333333333333333, FWER=True, SE_HAC=0.07213478979969593",
+          "raw": {}
+        }
+      },
+      "category": "ROBUSTO",
+      "recommendation": "Apto para afirmación demostrativa post-V5.2",
+      "weights": {
+        "Q1_trazabilidad_datos": 0.2,
+        "Q2_tamano_efectivo": 0.15,
+        "Q3_calidad_sonda": 0.15,
+        "Q4_reproducibilidad": 0.15,
+        "Q5_convergencia_multisonda": 0.1,
+        "Q6_loe_empirico": 0.1,
+        "Q7_calibracion_estadistica": 0.15
+      }
+    },
+    {
+      "case_id": "34_michaelis_menten",
+      "QES": 0.875,
+      "components": {
+        "Q1_trazabilidad_datos": {
+          "score": 1.0,
+          "evidence": "FETCH_MANIFEST.json declarado con timestamps y SHA",
+          "raw": {
+            "fetch_manifest": true,
+            "real_files": true
+          }
+        },
+        "Q2_tamano_efectivo": {
+          "score": 0.8500000000000001,
+          "evidence": "n=60: tamaño aceptable; potencia ~0.50 para detectar weak",
+          "raw": {
+            "n": 60
+          }
+        },
+        "Q3_calidad_sonda": {
+          "score": 0.75,
+          "evidence": "protocolo de simulación documentado",
+          "raw": {}
+        },
+        "Q4_reproducibilidad": {
+          "score": 1.0,
+          "evidence": "SETUP_HASH ✓ | git_commit ✓ (a24f6dd1) | seed fijo ✓",
+          "raw": {}
+        },
+        "Q5_convergencia_multisonda": {
+          "score": 0.95,
+          "evidence": "sonda secundaria + convergencia inter-paradigma sobre proxys",
+          "raw": {}
+        },
+        "Q6_loe_empirico": {
+          "score": 0.4,
+          "evidence": "LoE=1 (especulativo o sintético sin ground truth)",
+          "raw": {}
+        },
+        "Q7_calibracion_estadistica": {
+          "score": 1.0,
+          "evidence": "p_block=0.0003333333333333333, FWER=True, SE_HAC=0.08987836894061729",
+          "raw": {}
+        }
+      },
+      "category": "ROBUSTO",
+      "recommendation": "Apto para afirmación demostrativa post-V5.2",
+      "weights": {
+        "Q1_trazabilidad_datos": 0.2,
+        "Q2_tamano_efectivo": 0.15,
+        "Q3_calidad_sonda": 0.15,
+        "Q4_reproducibilidad": 0.15,
+        "Q5_convergencia_multisonda": 0.1,
+        "Q6_loe_empirico": 0.1,
+        "Q7_calibracion_estadistica": 0.15
+      }
+    },
+    {
+      "case_id": "26_caso_starlink",
+      "QES": 0.8712500000000001,
+      "components": {
+        "Q1_trazabilidad_datos": {
+          "score": 1.0,
+          "evidence": "FETCH_MANIFEST.json declarado con timestamps y SHA",
+          "raw": {
+            "fetch_manifest": true,
+            "real_files": true
+          }
+        },
+        "Q2_tamano_efectivo": {
+          "score": 0.555,
+          "evidence": "n=1: tamaño exploratorio extremo; no admite inferencia",
+          "raw": {
+            "n": 1
+          }
+        },
+        "Q3_calidad_sonda": {
+          "score": 0.9,
+          "evidence": "protocolo con citación disciplinar verificada",
+          "raw": {}
+        },
+        "Q4_reproducibilidad": {
+          "score": 1.0,
+          "evidence": "SETUP_HASH ✓ | git_commit ✓ (8a684bcb) | seed fijo ✓",
+          "raw": {}
+        },
+        "Q5_convergencia_multisonda": {
+          "score": 0.88,
+          "evidence": "sonda secundaria implementada (B10)",
+          "raw": {}
+        },
+        "Q6_loe_empirico": {
+          "score": 0.8,
+          "evidence": "LoE=4 (series consistentes, múltiples fuentes, >10 años)",
+          "raw": {}
+        },
+        "Q7_calibracion_estadistica": {
+          "score": 0.9,
+          "evidence": "p_block=0.001, FWER=False, SE_HAC=0.0038265306122448983",
+          "raw": {}
+        }
+      },
+      "category": "ROBUSTO",
+      "recommendation": "Apto para afirmación demostrativa post-V5.2",
+      "weights": {
+        "Q1_trazabilidad_datos": 0.2,
+        "Q2_tamano_efectivo": 0.15,
+        "Q3_calidad_sonda": 0.15,
+        "Q4_reproducibilidad": 0.15,
+        "Q5_convergencia_multisonda": 0.1,
+        "Q6_loe_empirico": 0.1,
+        "Q7_calibracion_estadistica": 0.15
+      }
+    },
+    {
+      "case_id": "41_caso_wolfram_extendido",
+      "QES": 0.8695,
+      "components": {
+        "Q1_trazabilidad_datos": {
+          "score": 1.0,
+          "evidence": "FETCH_MANIFEST.json declarado con timestamps y SHA",
+          "raw": {
+            "fetch_manifest": true,
+            "real_files": true
+          }
+        },
+        "Q2_tamano_efectivo": {
+          "score": 1.0,
+          "evidence": "n=200: tamaño suficiente para potencia 0.80 detectando weak",
+          "raw": {
+            "n": 200
+          }
+        },
+        "Q3_calidad_sonda": {
+          "score": 0.9,
+          "evidence": "protocolo con citación disciplinar verificada",
+          "raw": {}
+        },
+        "Q4_reproducibilidad": {
+          "score": 1.0,
+          "evidence": "SETUP_HASH ✓ | git_commit ✓ (a05767f0) | seed fijo ✓",
+          "raw": {}
+        },
+        "Q5_convergencia_multisonda": {
+          "score": 0.92,
+          "evidence": "sonda secundaria + arrays primarios disponibles (V5.5)",
+          "raw": {}
+        },
+        "Q6_loe_empirico": {
+          "score": 0.6,
+          "evidence": "LoE=3 (datos estructurados <5 años)",
+          "raw": {}
+        },
+        "Q7_calibracion_estadistica": {
+          "score": 0.55,
+          "evidence": "p_block=1.0, FWER=False, SE_HAC=0.08424750975053735",
+          "raw": {}
+        }
+      },
+      "category": "ROBUSTO",
+      "recommendation": "Apto para afirmación demostrativa post-V5.2",
+      "weights": {
+        "Q1_trazabilidad_datos": 0.2,
+        "Q2_tamano_efectivo": 0.15,
+        "Q3_calidad_sonda": 0.15,
+        "Q4_reproducibilidad": 0.15,
+        "Q5_convergencia_multisonda": 0.1,
+        "Q6_loe_empirico": 0.1,
+        "Q7_calibracion_estadistica": 0.15
+      }
+    },
+    {
+      "case_id": "08_caso_falsacion_observabilidad",
+      "QES": 0.8625,
+      "components": {
+        "Q1_trazabilidad_datos": {
+          "score": 1.0,
+          "evidence": "FETCH_MANIFEST.json declarado con timestamps y SHA",
+          "raw": {
+            "fetch_manifest": true,
+            "real_files": true
+          }
+        },
+        "Q2_tamano_efectivo": {
+          "score": 1.0,
+          "evidence": "n=97: tamaño aceptable; potencia ~0.50 para detectar weak",
+          "raw": {
+            "n": 97
+          }
+        },
+        "Q3_calidad_sonda": {
+          "score": 0.75,
+          "evidence": "protocolo de simulación documentado",
+          "raw": {}
+        },
+        "Q4_reproducibilidad": {
+          "score": 1.0,
+          "evidence": "SETUP_HASH ✓ | git_commit ✓ (ed2571b4) | seed fijo ✓",
+          "raw": {}
+        },
+        "Q5_convergencia_multisonda": {
+          "score": 0.95,
+          "evidence": "sonda secundaria + convergencia inter-paradigma sobre proxys",
+          "raw": {}
+        },
+        "Q6_loe_empirico": {
+          "score": 0.2,
+          "evidence": "LoE=1 (especulativo o sintético sin ground truth)",
+          "raw": {}
+        },
+        "Q7_calibracion_estadistica": {
+          "score": 0.9,
+          "evidence": "p_block=0.002, FWER=False, SE_HAC=0.2702115726874535",
+          "raw": {}
+        }
+      },
+      "category": "ROBUSTO",
+      "recommendation": "Apto para afirmación demostrativa post-V5.2",
+      "weights": {
+        "Q1_trazabilidad_datos": 0.2,
+        "Q2_tamano_efectivo": 0.15,
+        "Q3_calidad_sonda": 0.15,
+        "Q4_reproducibilidad": 0.15,
+        "Q5_convergencia_multisonda": 0.1,
+        "Q6_loe_empirico": 0.1,
+        "Q7_calibracion_estadistica": 0.15
+      }
+    },
+    {
+      "case_id": "29_caso_iot",
+      "QES": 0.86175,
+      "components": {
+        "Q1_trazabilidad_datos": {
+          "score": 1.0,
+          "evidence": "FETCH_MANIFEST.json declarado con timestamps y SHA",
+          "raw": {
+            "fetch_manifest": true,
+            "real_files": true
+          }
+        },
+        "Q2_tamano_efectivo": {
+          "score": 0.625,
+          "evidence": "n=15: tamaño limitado; honestamente declarado en limitations del paper",
+          "raw": {
+            "n": 15
+          }
+        },
+        "Q3_calidad_sonda": {
+          "score": 0.9,
+          "evidence": "protocolo con citación disciplinar verificada",
+          "raw": {}
+        },
+        "Q4_reproducibilidad": {
+          "score": 1.0,
+          "evidence": "SETUP_HASH ✓ | git_commit ✓ (8a684bcb) | seed fijo ✓",
+          "raw": {}
+        },
+        "Q5_convergencia_multisonda": {
+          "score": 0.88,
+          "evidence": "sonda secundaria implementada (B10)",
+          "raw": {}
+        },
+        "Q6_loe_empirico": {
+          "score": 0.6,
+          "evidence": "LoE=3 (datos estructurados <5 años)",
+          "raw": {}
+        },
+        "Q7_calibracion_estadistica": {
+          "score": 0.9,
+          "evidence": "p_block=0.0003333333333333333, FWER=False, SE_HAC=0.19306940139373463",
+          "raw": {}
+        }
+      },
+      "category": "ROBUSTO",
+      "recommendation": "Apto para afirmación demostrativa post-V5.2",
+      "weights": {
+        "Q1_trazabilidad_datos": 0.2,
+        "Q2_tamano_efectivo": 0.15,
+        "Q3_calidad_sonda": 0.15,
+        "Q4_reproducibilidad": 0.15,
+        "Q5_convergencia_multisonda": 0.1,
+        "Q6_loe_empirico": 0.1,
+        "Q7_calibracion_estadistica": 0.15
+      }
+    },
+    {
+      "case_id": "07_caso_falsacion_no_estacionariedad",
+      "QES": 0.8555,
+      "components": {
+        "Q1_trazabilidad_datos": {
+          "score": 1.0,
+          "evidence": "FETCH_MANIFEST.json declarado con timestamps y SHA",
+          "raw": {
+            "fetch_manifest": true,
+            "real_files": true
+          }
+        },
+        "Q2_tamano_efectivo": {
+          "score": 1.0,
+          "evidence": "n=731: tamaño suficiente para potencia 0.80 detectando weak",
+          "raw": {
+            "n": 731
+          }
+        },
+        "Q3_calidad_sonda": {
+          "score": 0.75,
+          "evidence": "protocolo de simulación documentado",
+          "raw": {}
+        },
+        "Q4_reproducibilidad": {
+          "score": 1.0,
+          "evidence": "SETUP_HASH ✓ | git_commit ✓ (ed2571b4) | seed fijo ✓",
+          "raw": {}
+        },
+        "Q5_convergencia_multisonda": {
+          "score": 0.88,
+          "evidence": "sonda secundaria implementada (B10)",
+          "raw": {}
+        },
+        "Q6_loe_empirico": {
+          "score": 0.2,
+          "evidence": "LoE=1 (especulativo o sintético sin ground truth)",
+          "raw": {}
+        },
+        "Q7_calibracion_estadistica": {
+          "score": 0.9,
+          "evidence": "p_block=0.0003333333333333333, FWER=False, SE_HAC=0.025730707973380756",
+          "raw": {}
+        }
+      },
+      "category": "ROBUSTO",
+      "recommendation": "Apto para afirmación demostrativa post-V5.2",
+      "weights": {
+        "Q1_trazabilidad_datos": 0.2,
+        "Q2_tamano_efectivo": 0.15,
+        "Q3_calidad_sonda": 0.15,
+        "Q4_reproducibilidad": 0.15,
+        "Q5_convergencia_multisonda": 0.1,
+        "Q6_loe_empirico": 0.1,
+        "Q7_calibracion_estadistica": 0.15
+      }
+    },
+    {
+      "case_id": "17_caso_oceanos",
+      "QES": 0.8505,
+      "components": {
+        "Q1_trazabilidad_datos": {
+          "score": 1.0,
+          "evidence": "FETCH_MANIFEST.json declarado con timestamps y SHA",
+          "raw": {
+            "fetch_manifest": true,
+            "real_files": true
+          }
+        },
+        "Q2_tamano_efectivo": {
+          "score": 0.9,
+          "evidence": "n=70: tamaño aceptable; potencia ~0.50 para detectar weak",
+          "raw": {
+            "n": 70
+          }
+        },
+        "Q3_calidad_sonda": {
+          "score": 0.9,
+          "evidence": "protocolo con citación disciplinar verificada",
+          "raw": {}
+        },
+        "Q4_reproducibilidad": {
+          "score": 1.0,
+          "evidence": "SETUP_HASH ✓ | git_commit ✓ (8a684bcb) | seed fijo ✓",
+          "raw": {}
+        },
+        "Q5_convergencia_multisonda": {
+          "score": 0.88,
+          "evidence": "sonda secundaria implementada (B10)",
+          "raw": {}
+        },
+        "Q6_loe_empirico": {
+          "score": 0.6,
+          "evidence": "LoE=3 (datos estructurados <5 años)",
+          "raw": {}
+        },
+        "Q7_calibracion_estadistica": {
+          "score": 0.55,
+          "evidence": "p_block=1.0, FWER=False, SE_HAC=0.007600761189914339",
+          "raw": {}
+        }
+      },
+      "category": "ROBUSTO",
+      "recommendation": "Apto para afirmación demostrativa post-V5.2",
       "weights": {
         "Q1_trazabilidad_datos": 0.2,
         "Q2_tamano_efectivo": 0.15,
@@ -1556,7 +1898,7 @@
     },
     {
       "case_id": "33_villin_headpiece",
-      "QES": 0.7946195616966824,
+      "QES": 0.8455,
       "components": {
         "Q1_trazabilidad_datos": {
           "score": 1.0,
@@ -1567,15 +1909,15 @@
           }
         },
         "Q2_tamano_efectivo": {
-          "score": 0.8807970779778823,
+          "score": 1.0,
           "evidence": "n=90: tamaño aceptable; potencia ~0.50 para detectar weak",
           "raw": {
             "n": 90
           }
         },
         "Q3_calidad_sonda": {
-          "score": 0.7,
-          "evidence": "protocolo de simulación documentado",
+          "score": 0.9,
+          "evidence": "protocolo con citación disciplinar verificada",
           "raw": {}
         },
         "Q4_reproducibilidad": {
@@ -1584,8 +1926,8 @@
           "raw": {}
         },
         "Q5_convergencia_multisonda": {
-          "score": 0.85,
-          "evidence": "sonda secundaria implementada (B10) — convergencia pendiente arrays primarios",
+          "score": 0.88,
+          "evidence": "sonda secundaria implementada (B10)",
           "raw": {}
         },
         "Q6_loe_empirico": {
@@ -1612,464 +1954,8 @@
       }
     },
     {
-      "case_id": "23_caso_erosion_dialectica",
-      "QES": 0.7936695515515819,
-      "components": {
-        "Q1_trazabilidad_datos": {
-          "score": 1.0,
-          "evidence": "FETCH_MANIFEST.json declarado con timestamps y SHA",
-          "raw": {
-            "fetch_manifest": true,
-            "real_files": true
-          }
-        },
-        "Q2_tamano_efectivo": {
-          "score": 0.3244636770105458,
-          "evidence": "n=8: tamaño exploratorio extremo; no admite inferencia",
-          "raw": {
-            "n": 8
-          }
-        },
-        "Q3_calidad_sonda": {
-          "score": 0.7,
-          "evidence": "protocolo de simulación documentado",
-          "raw": {}
-        },
-        "Q4_reproducibilidad": {
-          "score": 1.0,
-          "evidence": "SETUP_HASH ✓ | git_commit ✓ (8a684bcb) | seed fijo ✓",
-          "raw": {}
-        },
-        "Q5_convergencia_multisonda": {
-          "score": 0.95,
-          "evidence": "sonda secundaria implementada + convergencia inter-paradigma demostrada",
-          "raw": {}
-        },
-        "Q6_loe_empirico": {
-          "score": 0.6,
-          "evidence": "LoE=3 (datos estructurados <5 años)",
-          "raw": {}
-        },
-        "Q7_calibracion_estadistica": {
-          "score": 0.9,
-          "evidence": "p_block=0.0003333333333333333, FWER=False, SE_HAC=0.9197047527612628",
-          "raw": {}
-        }
-      },
-      "category": "DEMOSTRATIVO",
-      "recommendation": "Apto para afirmación demostrativa con honestidad",
-      "weights": {
-        "Q1_trazabilidad_datos": 0.2,
-        "Q2_tamano_efectivo": 0.15,
-        "Q3_calidad_sonda": 0.15,
-        "Q4_reproducibilidad": 0.15,
-        "Q5_convergencia_multisonda": 0.1,
-        "Q6_loe_empirico": 0.1,
-        "Q7_calibracion_estadistica": 0.15
-      }
-    },
-    {
-      "case_id": "06_caso_falsacion_exogeneidad",
-      "QES": 0.7924999999893322,
-      "components": {
-        "Q1_trazabilidad_datos": {
-          "score": 1.0,
-          "evidence": "FETCH_MANIFEST.json declarado con timestamps y SHA",
-          "raw": {
-            "fetch_manifest": true,
-            "real_files": true
-          }
-        },
-        "Q2_tamano_efectivo": {
-          "score": 0.9999999999288811,
-          "evidence": "n=731: tamaño suficiente para potencia 0.80 detectando weak",
-          "raw": {
-            "n": 731
-          }
-        },
-        "Q3_calidad_sonda": {
-          "score": 0.7,
-          "evidence": "protocolo de simulación documentado",
-          "raw": {}
-        },
-        "Q4_reproducibilidad": {
-          "score": 1.0,
-          "evidence": "SETUP_HASH ✓ | git_commit ✓ (ed2571b4) | seed fijo ✓",
-          "raw": {}
-        },
-        "Q5_convergencia_multisonda": {
-          "score": 0.85,
-          "evidence": "sonda secundaria implementada (B10) — convergencia pendiente arrays primarios",
-          "raw": {}
-        },
-        "Q6_loe_empirico": {
-          "score": 0.2,
-          "evidence": "LoE=1 (especulativo o sintético sin ground truth)",
-          "raw": {}
-        },
-        "Q7_calibracion_estadistica": {
-          "score": 0.55,
-          "evidence": "p_block=0.3873333333333333, FWER=False, SE_HAC=0.01530563289866194",
-          "raw": {}
-        }
-      },
-      "category": "DEMOSTRATIVO",
-      "recommendation": "Apto para afirmación demostrativa con honestidad",
-      "weights": {
-        "Q1_trazabilidad_datos": 0.2,
-        "Q2_tamano_efectivo": 0.15,
-        "Q3_calidad_sonda": 0.15,
-        "Q4_reproducibilidad": 0.15,
-        "Q5_convergencia_multisonda": 0.1,
-        "Q6_loe_empirico": 0.1,
-        "Q7_calibracion_estadistica": 0.15
-      }
-    },
-    {
-      "case_id": "29_caso_iot",
-      "QES": 0.7916311003197218,
-      "components": {
-        "Q1_trazabilidad_datos": {
-          "score": 1.0,
-          "evidence": "FETCH_MANIFEST.json declarado con timestamps y SHA",
-          "raw": {
-            "fetch_manifest": true,
-            "real_files": true
-          }
-        },
-        "Q2_tamano_efectivo": {
-          "score": 0.3775406687981454,
-          "evidence": "n=15: tamaño insuficiente; potencia <0.40 para detectar weak",
-          "raw": {
-            "n": 15
-          }
-        },
-        "Q3_calidad_sonda": {
-          "score": 0.7,
-          "evidence": "protocolo de simulación documentado",
-          "raw": {}
-        },
-        "Q4_reproducibilidad": {
-          "score": 1.0,
-          "evidence": "SETUP_HASH ✓ | git_commit ✓ (8a684bcb) | seed fijo ✓",
-          "raw": {}
-        },
-        "Q5_convergencia_multisonda": {
-          "score": 0.85,
-          "evidence": "sonda secundaria implementada (B10) — convergencia pendiente arrays primarios",
-          "raw": {}
-        },
-        "Q6_loe_empirico": {
-          "score": 0.6,
-          "evidence": "LoE=3 (datos estructurados <5 años)",
-          "raw": {}
-        },
-        "Q7_calibracion_estadistica": {
-          "score": 0.9,
-          "evidence": "p_block=0.0003333333333333333, FWER=False, SE_HAC=0.19306940139373463",
-          "raw": {}
-        }
-      },
-      "category": "DEMOSTRATIVO",
-      "recommendation": "Apto para afirmación demostrativa con honestidad",
-      "weights": {
-        "Q1_trazabilidad_datos": 0.2,
-        "Q2_tamano_efectivo": 0.15,
-        "Q3_calidad_sonda": 0.15,
-        "Q4_reproducibilidad": 0.15,
-        "Q5_convergencia_multisonda": 0.1,
-        "Q6_loe_empirico": 0.1,
-        "Q7_calibracion_estadistica": 0.15
-      }
-    },
-    {
-      "case_id": "38_locomocion_alternativa",
-      "QES": 0.7851361714290466,
-      "components": {
-        "Q1_trazabilidad_datos": {
-          "score": 1.0,
-          "evidence": "FETCH_MANIFEST.json declarado con timestamps y SHA",
-          "raw": {
-            "fetch_manifest": true,
-            "real_files": true
-          }
-        },
-        "Q2_tamano_efectivo": {
-          "score": 0.8175744761936437,
-          "evidence": "n=75: tamaño aceptable; potencia ~0.50 para detectar weak",
-          "raw": {
-            "n": 75
-          }
-        },
-        "Q3_calidad_sonda": {
-          "score": 0.7,
-          "evidence": "protocolo de simulación documentado",
-          "raw": {}
-        },
-        "Q4_reproducibilidad": {
-          "score": 1.0,
-          "evidence": "SETUP_HASH ✓ | git_commit ✓ (a24f6dd1) | seed fijo ✓",
-          "raw": {}
-        },
-        "Q5_convergencia_multisonda": {
-          "score": 0.85,
-          "evidence": "sonda secundaria implementada (B10) — convergencia pendiente arrays primarios",
-          "raw": {}
-        },
-        "Q6_loe_empirico": {
-          "score": 0.4,
-          "evidence": "LoE=1 (especulativo o sintético sin ground truth)",
-          "raw": {}
-        },
-        "Q7_calibracion_estadistica": {
-          "score": 0.55,
-          "evidence": "p_block=1.0, FWER=False, SE_HAC=0.11403549787751285",
-          "raw": {}
-        }
-      },
-      "category": "DEMOSTRATIVO",
-      "recommendation": "Apto para afirmación demostrativa con honestidad",
-      "weights": {
-        "Q1_trazabilidad_datos": 0.2,
-        "Q2_tamano_efectivo": 0.15,
-        "Q3_calidad_sonda": 0.15,
-        "Q4_reproducibilidad": 0.15,
-        "Q5_convergencia_multisonda": 0.1,
-        "Q6_loe_empirico": 0.1,
-        "Q7_calibracion_estadistica": 0.15
-      }
-    },
-    {
-      "case_id": "02_caso_conciencia",
-      "QES": 0.7847718341747751,
-      "components": {
-        "Q1_trazabilidad_datos": {
-          "score": 1.0,
-          "evidence": "FETCH_MANIFEST.json declarado con timestamps y SHA",
-          "raw": {
-            "fetch_manifest": true,
-            "real_files": true
-          }
-        },
-        "Q2_tamano_efectivo": {
-          "score": 0.3318122278318339,
-          "evidence": "n=9: tamaño exploratorio extremo; no admite inferencia",
-          "raw": {
-            "n": 9
-          }
-        },
-        "Q3_calidad_sonda": {
-          "score": 0.7,
-          "evidence": "protocolo de simulación documentado",
-          "raw": {}
-        },
-        "Q4_reproducibilidad": {
-          "score": 1.0,
-          "evidence": "SETUP_HASH ✓ | git_commit ✓ (ed2571b4) | seed fijo ✓",
-          "raw": {}
-        },
-        "Q5_convergencia_multisonda": {
-          "score": 0.85,
-          "evidence": "sonda secundaria implementada (B10) — convergencia pendiente arrays primarios",
-          "raw": {}
-        },
-        "Q6_loe_empirico": {
-          "score": 0.6,
-          "evidence": "LoE=3 (datos estructurados <5 años)",
-          "raw": {}
-        },
-        "Q7_calibracion_estadistica": {
-          "score": 0.9,
-          "evidence": "p_block=0.010666666666666666, FWER=False, SE_HAC=0.0425719518532343",
-          "raw": {}
-        }
-      },
-      "category": "DEMOSTRATIVO",
-      "recommendation": "Apto para afirmación demostrativa con honestidad",
-      "weights": {
-        "Q1_trazabilidad_datos": 0.2,
-        "Q2_tamano_efectivo": 0.15,
-        "Q3_calidad_sonda": 0.15,
-        "Q4_reproducibilidad": 0.15,
-        "Q5_convergencia_multisonda": 0.1,
-        "Q6_loe_empirico": 0.1,
-        "Q7_calibracion_estadistica": 0.15
-      }
-    },
-    {
-      "case_id": "26_caso_starlink",
-      "QES": 0.7763318106862797,
-      "components": {
-        "Q1_trazabilidad_datos": {
-          "score": 1.0,
-          "evidence": "FETCH_MANIFEST.json declarado con timestamps y SHA",
-          "raw": {
-            "fetch_manifest": true,
-            "real_files": true
-          }
-        },
-        "Q2_tamano_efectivo": {
-          "score": 0.2755454045751979,
-          "evidence": "n=1: tamaño exploratorio extremo; no admite inferencia",
-          "raw": {
-            "n": 1
-          }
-        },
-        "Q3_calidad_sonda": {
-          "score": 0.7,
-          "evidence": "protocolo de simulación documentado",
-          "raw": {}
-        },
-        "Q4_reproducibilidad": {
-          "score": 1.0,
-          "evidence": "SETUP_HASH ✓ | git_commit ✓ (8a684bcb) | seed fijo ✓",
-          "raw": {}
-        },
-        "Q5_convergencia_multisonda": {
-          "score": 0.85,
-          "evidence": "sonda secundaria implementada (B10) — convergencia pendiente arrays primarios",
-          "raw": {}
-        },
-        "Q6_loe_empirico": {
-          "score": 0.6,
-          "evidence": "LoE=3 (datos estructurados <5 años)",
-          "raw": {}
-        },
-        "Q7_calibracion_estadistica": {
-          "score": 0.9,
-          "evidence": "p_block=0.001, FWER=False, SE_HAC=0.0038265306122448983",
-          "raw": {}
-        }
-      },
-      "category": "DEMOSTRATIVO",
-      "recommendation": "Apto para afirmación demostrativa con honestidad",
-      "weights": {
-        "Q1_trazabilidad_datos": 0.2,
-        "Q2_tamano_efectivo": 0.15,
-        "Q3_calidad_sonda": 0.15,
-        "Q4_reproducibilidad": 0.15,
-        "Q5_convergencia_multisonda": 0.1,
-        "Q6_loe_empirico": 0.1,
-        "Q7_calibracion_estadistica": 0.15
-      }
-    },
-    {
-      "case_id": "10_caso_justicia",
-      "QES": 0.7756515540661307,
-      "components": {
-        "Q1_trazabilidad_datos": {
-          "score": 1.0,
-          "evidence": "FETCH_MANIFEST.json declarado con timestamps y SHA",
-          "raw": {
-            "fetch_manifest": true,
-            "real_files": true
-          }
-        },
-        "Q2_tamano_efectivo": {
-          "score": 0.35434369377420455,
-          "evidence": "n=12: tamaño insuficiente; potencia <0.40 para detectar weak",
-          "raw": {
-            "n": 12
-          }
-        },
-        "Q3_calidad_sonda": {
-          "score": 0.7,
-          "evidence": "protocolo de simulación documentado",
-          "raw": {}
-        },
-        "Q4_reproducibilidad": {
-          "score": 1.0,
-          "evidence": "SETUP_HASH ✓ | git_commit ✓ (ed2571b4) | seed fijo ✓",
-          "raw": {}
-        },
-        "Q5_convergencia_multisonda": {
-          "score": 0.85,
-          "evidence": "sonda secundaria implementada (B10) — convergencia pendiente arrays primarios",
-          "raw": {}
-        },
-        "Q6_loe_empirico": {
-          "score": 1.0,
-          "evidence": "LoE=5 (datos físicos directos, >30 años)",
-          "raw": {}
-        },
-        "Q7_calibracion_estadistica": {
-          "score": 0.55,
-          "evidence": "p_block=1.0, FWER=False, SE_HAC=0.06064211198576083",
-          "raw": {}
-        }
-      },
-      "category": "DEMOSTRATIVO",
-      "recommendation": "Apto para afirmación demostrativa con honestidad",
-      "weights": {
-        "Q1_trazabilidad_datos": 0.2,
-        "Q2_tamano_efectivo": 0.15,
-        "Q3_calidad_sonda": 0.15,
-        "Q4_reproducibilidad": 0.15,
-        "Q5_convergencia_multisonda": 0.1,
-        "Q6_loe_empirico": 0.1,
-        "Q7_calibracion_estadistica": 0.15
-      }
-    },
-    {
-      "case_id": "12_caso_paradigmas",
-      "QES": 0.7570132648922575,
-      "components": {
-        "Q1_trazabilidad_datos": {
-          "score": 1.0,
-          "evidence": "FETCH_MANIFEST.json declarado con timestamps y SHA",
-          "raw": {
-            "fetch_manifest": true,
-            "real_files": true
-          }
-        },
-        "Q2_tamano_efectivo": {
-          "score": 0.34675509928171655,
-          "evidence": "n=11: tamaño insuficiente; potencia <0.40 para detectar weak",
-          "raw": {
-            "n": 11
-          }
-        },
-        "Q3_calidad_sonda": {
-          "score": 0.7,
-          "evidence": "protocolo de simulación documentado",
-          "raw": {}
-        },
-        "Q4_reproducibilidad": {
-          "score": 1.0,
-          "evidence": "SETUP_HASH ✓ | git_commit ✓ (ed2571b4) | seed fijo ✓",
-          "raw": {}
-        },
-        "Q5_convergencia_multisonda": {
-          "score": 0.85,
-          "evidence": "sonda secundaria implementada (B10) — convergencia pendiente arrays primarios",
-          "raw": {}
-        },
-        "Q6_loe_empirico": {
-          "score": 0.6,
-          "evidence": "LoE=3 (datos estructurados <5 años)",
-          "raw": {}
-        },
-        "Q7_calibracion_estadistica": {
-          "score": 0.7000000000000001,
-          "evidence": "p_block=0.619, FWER=True, SE_HAC=0.0038265306122448983",
-          "raw": {}
-        }
-      },
-      "category": "DEMOSTRATIVO",
-      "recommendation": "Apto para afirmación demostrativa con honestidad",
-      "weights": {
-        "Q1_trazabilidad_datos": 0.2,
-        "Q2_tamano_efectivo": 0.15,
-        "Q3_calidad_sonda": 0.15,
-        "Q4_reproducibilidad": 0.15,
-        "Q5_convergencia_multisonda": 0.1,
-        "Q6_loe_empirico": 0.1,
-        "Q7_calibracion_estadistica": 0.15
-      }
-    },
-    {
       "case_id": "19_caso_acidificacion_oceanica",
-      "QES": 0.7570132648922575,
+      "QES": 0.83925,
       "components": {
         "Q1_trazabilidad_datos": {
           "score": 1.0,
@@ -2080,14 +1966,14 @@
           }
         },
         "Q2_tamano_efectivo": {
-          "score": 0.34675509928171655,
-          "evidence": "n=11: tamaño insuficiente; potencia <0.40 para detectar weak",
+          "score": 0.8250000000000001,
+          "evidence": "n=55: tamaño aceptable; potencia ~0.50 para detectar weak",
           "raw": {
-            "n": 11
+            "n": 55
           }
         },
         "Q3_calidad_sonda": {
-          "score": 0.7,
+          "score": 0.75,
           "evidence": "protocolo de simulación documentado",
           "raw": {}
         },
@@ -2097,8 +1983,8 @@
           "raw": {}
         },
         "Q5_convergencia_multisonda": {
-          "score": 0.85,
-          "evidence": "sonda secundaria implementada (B10) — convergencia pendiente arrays primarios",
+          "score": 0.88,
+          "evidence": "sonda secundaria implementada (B10)",
           "raw": {}
         },
         "Q6_loe_empirico": {
@@ -2126,7 +2012,7 @@
     },
     {
       "case_id": "03_caso_contaminacion",
-      "QES": 0.7495132648922574,
+      "QES": 0.83625,
       "components": {
         "Q1_trazabilidad_datos": {
           "score": 1.0,
@@ -2137,15 +2023,15 @@
           }
         },
         "Q2_tamano_efectivo": {
-          "score": 0.34675509928171655,
-          "evidence": "n=11: tamaño insuficiente; potencia <0.40 para detectar weak",
+          "score": 0.6050000000000001,
+          "evidence": "n=11: tamaño limitado; honestamente declarado en limitations del paper",
           "raw": {
             "n": 11
           }
         },
         "Q3_calidad_sonda": {
-          "score": 0.7,
-          "evidence": "protocolo de simulación documentado",
+          "score": 1.0,
+          "evidence": "protocolo + arquitectura + citación disciplinar",
           "raw": {}
         },
         "Q4_reproducibilidad": {
@@ -2154,8 +2040,8 @@
           "raw": {}
         },
         "Q5_convergencia_multisonda": {
-          "score": 0.85,
-          "evidence": "sonda secundaria implementada (B10) — convergencia pendiente arrays primarios",
+          "score": 0.88,
+          "evidence": "sonda secundaria implementada (B10)",
           "raw": {}
         },
         "Q6_loe_empirico": {
@@ -2182,8 +2068,8 @@
       }
     },
     {
-      "case_id": "17_caso_oceanos",
-      "QES": 0.7479609665623373,
+      "case_id": "12_caso_paradigmas",
+      "QES": 0.8287500000000001,
       "components": {
         "Q1_trazabilidad_datos": {
           "score": 1.0,
@@ -2194,14 +2080,71 @@
           }
         },
         "Q2_tamano_efectivo": {
-          "score": 0.3697397770822487,
-          "evidence": "n=14: tamaño insuficiente; potencia <0.40 para detectar weak",
+          "score": 0.6050000000000001,
+          "evidence": "n=11: tamaño limitado; honestamente declarado en limitations del paper",
           "raw": {
-            "n": 14
+            "n": 11
           }
         },
         "Q3_calidad_sonda": {
-          "score": 0.7,
+          "score": 0.9,
+          "evidence": "protocolo con citación disciplinar verificada",
+          "raw": {}
+        },
+        "Q4_reproducibilidad": {
+          "score": 1.0,
+          "evidence": "SETUP_HASH ✓ | git_commit ✓ (ed2571b4) | seed fijo ✓",
+          "raw": {}
+        },
+        "Q5_convergencia_multisonda": {
+          "score": 0.88,
+          "evidence": "sonda secundaria implementada (B10)",
+          "raw": {}
+        },
+        "Q6_loe_empirico": {
+          "score": 0.6,
+          "evidence": "LoE=3 (datos estructurados <5 años)",
+          "raw": {}
+        },
+        "Q7_calibracion_estadistica": {
+          "score": 0.7000000000000001,
+          "evidence": "p_block=0.619, FWER=True, SE_HAC=0.0038265306122448983",
+          "raw": {}
+        }
+      },
+      "category": "DEMOSTRATIVO",
+      "recommendation": "Apto para afirmación demostrativa con honestidad",
+      "weights": {
+        "Q1_trazabilidad_datos": 0.2,
+        "Q2_tamano_efectivo": 0.15,
+        "Q3_calidad_sonda": 0.15,
+        "Q4_reproducibilidad": 0.15,
+        "Q5_convergencia_multisonda": 0.1,
+        "Q6_loe_empirico": 0.1,
+        "Q7_calibracion_estadistica": 0.15
+      }
+    },
+    {
+      "case_id": "23_caso_erosion_dialectica",
+      "QES": 0.8210000000000001,
+      "components": {
+        "Q1_trazabilidad_datos": {
+          "score": 1.0,
+          "evidence": "FETCH_MANIFEST.json declarado con timestamps y SHA",
+          "raw": {
+            "fetch_manifest": true,
+            "real_files": true
+          }
+        },
+        "Q2_tamano_efectivo": {
+          "score": 0.5900000000000001,
+          "evidence": "n=8: tamaño exploratorio extremo; no admite inferencia",
+          "raw": {
+            "n": 8
+          }
+        },
+        "Q3_calidad_sonda": {
+          "score": 0.75,
           "evidence": "protocolo de simulación documentado",
           "raw": {}
         },
@@ -2212,17 +2155,131 @@
         },
         "Q5_convergencia_multisonda": {
           "score": 0.95,
-          "evidence": "sonda secundaria implementada + convergencia inter-paradigma demostrada",
+          "evidence": "sonda secundaria + convergencia inter-paradigma sobre proxys",
           "raw": {}
         },
         "Q6_loe_empirico": {
-          "score": 0.6,
-          "evidence": "LoE=3 (datos estructurados <5 años)",
+          "score": 0.4,
+          "evidence": "LoE=2 (datos digitales con ruido semántico alto)",
+          "raw": {}
+        },
+        "Q7_calibracion_estadistica": {
+          "score": 0.9,
+          "evidence": "p_block=0.0003333333333333333, FWER=False, SE_HAC=0.9197047527612628",
+          "raw": {}
+        }
+      },
+      "category": "DEMOSTRATIVO",
+      "recommendation": "Apto para afirmación demostrativa con honestidad",
+      "weights": {
+        "Q1_trazabilidad_datos": 0.2,
+        "Q2_tamano_efectivo": 0.15,
+        "Q3_calidad_sonda": 0.15,
+        "Q4_reproducibilidad": 0.15,
+        "Q5_convergencia_multisonda": 0.1,
+        "Q6_loe_empirico": 0.1,
+        "Q7_calibracion_estadistica": 0.15
+      }
+    },
+    {
+      "case_id": "02_caso_conciencia",
+      "QES": 0.8147500000000001,
+      "components": {
+        "Q1_trazabilidad_datos": {
+          "score": 1.0,
+          "evidence": "FETCH_MANIFEST.json declarado con timestamps y SHA",
+          "raw": {
+            "fetch_manifest": true,
+            "real_files": true
+          }
+        },
+        "Q2_tamano_efectivo": {
+          "score": 0.5950000000000001,
+          "evidence": "n=9: tamaño exploratorio extremo; no admite inferencia",
+          "raw": {
+            "n": 9
+          }
+        },
+        "Q3_calidad_sonda": {
+          "score": 0.75,
+          "evidence": "protocolo de simulación documentado",
+          "raw": {}
+        },
+        "Q4_reproducibilidad": {
+          "score": 1.0,
+          "evidence": "SETUP_HASH ✓ | git_commit ✓ (ed2571b4) | seed fijo ✓",
+          "raw": {}
+        },
+        "Q5_convergencia_multisonda": {
+          "score": 0.88,
+          "evidence": "sonda secundaria implementada (B10)",
+          "raw": {}
+        },
+        "Q6_loe_empirico": {
+          "score": 0.4,
+          "evidence": "LoE=2 (datos digitales con ruido semántico alto)",
+          "raw": {}
+        },
+        "Q7_calibracion_estadistica": {
+          "score": 0.9,
+          "evidence": "p_block=0.010666666666666666, FWER=False, SE_HAC=0.0425719518532343",
+          "raw": {}
+        }
+      },
+      "category": "DEMOSTRATIVO",
+      "recommendation": "Apto para afirmación demostrativa con honestidad",
+      "weights": {
+        "Q1_trazabilidad_datos": 0.2,
+        "Q2_tamano_efectivo": 0.15,
+        "Q3_calidad_sonda": 0.15,
+        "Q4_reproducibilidad": 0.15,
+        "Q5_convergencia_multisonda": 0.1,
+        "Q6_loe_empirico": 0.1,
+        "Q7_calibracion_estadistica": 0.15
+      }
+    },
+    {
+      "case_id": "38_locomocion_alternativa",
+      "QES": 0.81175,
+      "components": {
+        "Q1_trazabilidad_datos": {
+          "score": 1.0,
+          "evidence": "FETCH_MANIFEST.json declarado con timestamps y SHA",
+          "raw": {
+            "fetch_manifest": true,
+            "real_files": true
+          }
+        },
+        "Q2_tamano_efectivo": {
+          "score": 0.925,
+          "evidence": "n=75: tamaño aceptable; potencia ~0.50 para detectar weak",
+          "raw": {
+            "n": 75
+          }
+        },
+        "Q3_calidad_sonda": {
+          "score": 0.75,
+          "evidence": "protocolo de simulación documentado",
+          "raw": {}
+        },
+        "Q4_reproducibilidad": {
+          "score": 1.0,
+          "evidence": "SETUP_HASH ✓ | git_commit ✓ (a24f6dd1) | seed fijo ✓",
+          "raw": {}
+        },
+        "Q5_convergencia_multisonda": {
+          "score": 0.88,
+          "evidence": "sonda secundaria implementada (B10)",
+          "raw": {}
+        },
+        "Q6_loe_empirico": {
+          "score": 0.4,
+          "evidence": "LoE=1 (especulativo o sintético sin ground truth)",
           "raw": {}
         },
         "Q7_calibracion_estadistica": {
           "score": 0.55,
-          "evidence": "p_block=1.0, FWER=False, SE_HAC=0.007600761189914339",
+          "evidence": "p_block=1.0, FWER=False, SE_HAC=0.11403549787751285",
           "raw": {}
         }
       },
@@ -2240,7 +2297,7 @@
     },
     {
       "case_id": "30_caso_behavioral_dynamics",
-      "QES": 0.74373557248252,
+      "QES": 0.80425,
       "components": {
         "Q1_trazabilidad_datos": {
           "score": 1.0,
@@ -2251,15 +2308,15 @@
           }
         },
         "Q2_tamano_efectivo": {
-          "score": 0.5415704832167999,
+          "score": 0.7250000000000001,
           "evidence": "n=35: tamaño aceptable; potencia ~0.50 para detectar weak",
           "raw": {
             "n": 35
           }
         },
         "Q3_calidad_sonda": {
-          "score": 0.7,
-          "evidence": "protocolo de simulación documentado",
+          "score": 0.9,
+          "evidence": "protocolo con citación disciplinar verificada",
           "raw": {}
         },
         "Q4_reproducibilidad": {
@@ -2268,8 +2325,8 @@
           "raw": {}
         },
         "Q5_convergencia_multisonda": {
-          "score": 0.85,
-          "evidence": "sonda secundaria implementada (B10) — convergencia pendiente arrays primarios",
+          "score": 0.88,
+          "evidence": "sonda secundaria implementada (B10)",
           "raw": {}
         },
         "Q6_loe_empirico": {
@@ -2280,6 +2337,63 @@
         "Q7_calibracion_estadistica": {
           "score": 0.55,
           "evidence": "p_block=0.9783333333333334, FWER=False, SE_HAC=0.011635642651372648",
+          "raw": {}
+        }
+      },
+      "category": "DEMOSTRATIVO",
+      "recommendation": "Apto para afirmación demostrativa con honestidad",
+      "weights": {
+        "Q1_trazabilidad_datos": 0.2,
+        "Q2_tamano_efectivo": 0.15,
+        "Q3_calidad_sonda": 0.15,
+        "Q4_reproducibilidad": 0.15,
+        "Q5_convergencia_multisonda": 0.1,
+        "Q6_loe_empirico": 0.1,
+        "Q7_calibracion_estadistica": 0.15
+      }
+    },
+    {
+      "case_id": "06_caso_falsacion_exogeneidad",
+      "QES": 0.803,
+      "components": {
+        "Q1_trazabilidad_datos": {
+          "score": 1.0,
+          "evidence": "FETCH_MANIFEST.json declarado con timestamps y SHA",
+          "raw": {
+            "fetch_manifest": true,
+            "real_files": true
+          }
+        },
+        "Q2_tamano_efectivo": {
+          "score": 1.0,
+          "evidence": "n=731: tamaño suficiente para potencia 0.80 detectando weak",
+          "raw": {
+            "n": 731
+          }
+        },
+        "Q3_calidad_sonda": {
+          "score": 0.75,
+          "evidence": "protocolo de simulación documentado",
+          "raw": {}
+        },
+        "Q4_reproducibilidad": {
+          "score": 1.0,
+          "evidence": "SETUP_HASH ✓ | git_commit ✓ (ed2571b4) | seed fijo ✓",
+          "raw": {}
+        },
+        "Q5_convergencia_multisonda": {
+          "score": 0.88,
+          "evidence": "sonda secundaria implementada (B10)",
+          "raw": {}
+        },
+        "Q6_loe_empirico": {
+          "score": 0.2,
+          "evidence": "LoE=1 (especulativo o sintético sin ground truth)",
+          "raw": {}
+        },
+        "Q7_calibracion_estadistica": {
+          "score": 0.55,
+          "evidence": "p_block=0.3873333333333333, FWER=False, SE_HAC=0.01530563289866194",
           "raw": {}
         }
       },

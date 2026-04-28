@@ -1,5 +1,5 @@
 {
-  "case": "Behavioral Dynamics \u2014 Locomoci\u00f3n dirigida (Fajen-Warren 2003, segundo orden)",
+  "case": "Behavioral Dynamics — Locomoción dirigida (Fajen-Warren 2003, segundo orden)",
   "generated_at": "2026-04-28T02:49:09.311623Z",
   "git": {
     "commit": "2ac549bccd46939ff25228b438617a5a0e137065",
@@ -63,7 +63,8 @@
           "trend_ratio": null,
           "trend_r2": null,
           "warning": false
-        }
+        },
+        "loe_factor_v5_5": 0.4
       },
       "viscosity": {
         "pass": true,
@@ -177,7 +178,7 @@
         "nivel": 1,
         "ode_quality": "poor",
         "ode_obs_corr": 0.09342295082517692,
-        "interpretation": "Tendencia no confirmada (Nivel 1): EDI positivo pero sin significancia estad\u00edstica"
+        "interpretation": "Tendencia no confirmada (Nivel 1): EDI positivo pero sin significancia estadística"
       },
       "synthetic_meta": {
         "model": "behavioral_attractor",
@@ -498,7 +499,8 @@
           "trend_ratio": null,
           "trend_r2": null,
           "warning": false
-        }
+        },
+        "loe_factor_v5_5": 0.4
       },
       "viscosity": {
         "pass": true,
@@ -612,7 +614,7 @@
         "nivel": 3,
         "ode_quality": "moderate",
         "ode_obs_corr": 0.3165459941652974,
-        "interpretation": "Cierre operativo d\u00e9bil (Nivel 3): se\u00f1al macro significativa pero bajo umbral robusto"
+        "interpretation": "Cierre operativo débil (Nivel 3): señal macro significativa pero bajo umbral robusto"
       }
     }
   }

@@ -1,5 +1,5 @@
 {
-  "case": "Falsaci\u00f3n: No-Estacionariedad",
+  "case": "Falsación: No-Estacionariedad",
   "generated_at": "2026-02-16T01:30:20.390406Z",
   "git": {
     "commit": "ed2571b4e14a213313e45cff16a363beaabc8162",
@@ -71,7 +71,8 @@
           "trend_ratio": 1.0,
           "trend_r2": 0.945,
           "warning": false
-        }
+        },
+        "loe_factor_v5_5": 0.2
       },
       "viscosity": {
         "pass": true,
@@ -185,7 +186,7 @@
         "nivel": null,
         "ode_quality": "good",
         "ode_obs_corr": 0.8532426251146262,
-        "interpretation": "Control de falsaci\u00f3n: rechazo esperado por dise\u00f1o experimental"
+        "interpretation": "Control de falsación: rechazo esperado por diseño experimental"
       }
     }
   },

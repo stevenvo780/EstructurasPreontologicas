@@ -4,9 +4,9 @@
   "secondary_motivation": "limnologia_simple",
   "primary_edi_canonical": 0.19240058742600652,
   "convergence": {
-    "edi_primary_proxy": 0.1921674943725697,
-    "edi_secondary": -0.2033540468768827,
-    "delta_edi": 0.3955215412494524,
+    "edi_primary_proxy": 0.19216749437256972,
+    "edi_secondary": -0.9266657117744457,
+    "delta_edi": 1.1188332061470154,
     "convergen": false
   },
   "version_protocolo": "V5.4"

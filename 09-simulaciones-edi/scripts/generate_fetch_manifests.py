@@ -53,6 +53,8 @@ DATA_SOURCES = {
     "28_caso_fuga_cerebros":      {"source": "World Bank net migration tertiary", "url": "https://api.worldbank.org/v2", "loe_target": 3},
     "29_caso_iot":                {"source": "Statista IoT proxy + ITU", "url": "https://www.itu.int/en/ITU-D", "loe_target": 3},
     "30_caso_behavioral_dynamics": {"source": "Sintético generado por sistema completo Fajen-Warren", "url": None, "loe_target": 2, "limitation": "Sintético; elevación con datos VENLab/WALK-MS pendiente"},
+    "41_caso_wolfram_extendido":  {"source": "Sintético — autómatas celulares Rule 30/90/110/184", "url": None, "loe_target": 3, "limitation": "Datos del autómata reales pero sintéticos; sirve a discriminación contra Wolfram"},
+    "42_caso_histeresis_institucional": {"source": "Panel sintético calibrado OxCGRT (Hale et al. 2021)", "url": "https://github.com/OxCGRT/covid-policy-tracker", "loe_target": 4, "limitation": "Panel sintético con histéresis declarada; cierra V5-06"},
 }
 
 # Corpus inter-escala

@@ -4,9 +4,9 @@
   "secondary_motivation": "fisher_pry_substitution",
   "primary_edi_canonical": -0.8760101554802692,
   "convergence": {
-    "edi_primary_proxy": -0.8765516181517504,
-    "edi_secondary": 0.0035871863059402775,
-    "delta_edi": 0.8801388044576907,
+    "edi_primary_proxy": -0.876551618151751,
+    "edi_secondary": -0.6168887171321185,
+    "delta_edi": 0.2596629010196325,
     "convergen": false
   },
   "version_protocolo": "V5.4"

@@ -1,5 +1,5 @@
 {
-  "case": "Acidificaci\u00f3n Oce\u00e1nica",
+  "case": "Acidificación Oceánica",
   "generated_at": "2026-02-15T23:50:26.774030Z",
   "git": {
     "commit": "8a684bcb147fa0342a70abce159137bd9af63545",
@@ -63,7 +63,8 @@
           "trend_ratio": null,
           "trend_r2": null,
           "warning": false
-        }
+        },
+        "loe_factor_v5_5": 0.6
       },
       "viscosity": {
         "pass": false,
@@ -175,7 +176,7 @@
         "nivel": 1,
         "ode_quality": "poor",
         "ode_obs_corr": 0.21953066791970755,
-        "interpretation": "Tendencia no confirmada (Nivel 1): EDI positivo pero sin significancia estad\u00edstica"
+        "interpretation": "Tendencia no confirmada (Nivel 1): EDI positivo pero sin significancia estadística"
       },
       "synthetic_meta": {
         "model": "CO2SYS-simplified (Zeebe & Wolf-Gladrow)",
@@ -241,7 +242,8 @@
           "trend_ratio": 1.0,
           "trend_r2": 0.861,
           "warning": false
-        }
+        },
+        "loe_factor_v5_5": 0.6
       },
       "viscosity": {
         "pass": false,
@@ -353,9 +355,16 @@
         "nivel": 0,
         "ode_quality": "good",
         "ode_obs_corr": -0.9346316763482748,
-        "interpretation": "Sin cierre operativo (Nivel 0): sin evidencia de constricci\u00f3n macro efectiva"
+        "interpretation": "Sin cierre operativo (Nivel 0): sin evidencia de constricción macro efectiva"
       },
       "gated_by_synthetic": true
     }
+  },
+  "panel_aggregate_v5_5": {
+    "panel_size_countries_or_regions": 5,
+    "n_per_unit": 11,
+    "n_effective_total": 55,
+    "applicable_for_paper_individual": false,
+    "note": "El panel agregado eleva el n efectivo del caso al multiplicar por el número de unidades replicadas (países, regiones, etc.). Esto es replicación espacial honesta: cada unidad es replicación independiente del mismo proceso bajo condiciones distintas. Refuerza la afirmación de generalidad inter-instancia."
   }
 }

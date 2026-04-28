@@ -1,0 +1,13 @@
+{
+  "case_id": "42_caso_histeresis_institucional",
+  "secondary_probe_name": "rf_threshold_bisection",
+  "secondary_motivation": "aprendizaje_supervisado_decision_tree",
+  "primary_edi_canonical": 0.7774574369516496,
+  "convergence": {
+    "edi_primary_proxy": 0.7773932056945029,
+    "edi_secondary": -0.13795624924956923,
+    "delta_edi": 0.9153494549440722,
+    "convergen": false
+  },
+  "version_protocolo": "V5.4"
+}

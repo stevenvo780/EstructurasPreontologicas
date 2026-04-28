@@ -4,9 +4,9 @@
   "secondary_motivation": "fisica_aplicada_a_migracion",
   "primary_edi_canonical": 0.024881669387389924,
   "convergence": {
-    "edi_primary_proxy": 0.024600226254066656,
+    "edi_primary_proxy": 0.024600226254066822,
     "edi_secondary": -1.0,
-    "delta_edi": 1.0246002262540665,
+    "delta_edi": 1.0246002262540668,
     "convergen": false
   },
   "version_protocolo": "V5.4"

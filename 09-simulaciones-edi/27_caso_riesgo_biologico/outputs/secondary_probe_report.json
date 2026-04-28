@@ -4,9 +4,9 @@
   "secondary_motivation": "topologia_catastrofes",
   "primary_edi_canonical": 0.3325786296723718,
   "convergence": {
-    "edi_primary_proxy": 0.3323859954496167,
-    "edi_secondary": 0.7884862878154253,
-    "delta_edi": 0.45610029236580857,
+    "edi_primary_proxy": 0.33238599544961667,
+    "edi_secondary": 0.7490891568776299,
+    "delta_edi": 0.4167031614280132,
     "convergen": false
   },
   "version_protocolo": "V5.4"

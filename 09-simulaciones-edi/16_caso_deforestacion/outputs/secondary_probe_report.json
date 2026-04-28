@@ -4,9 +4,9 @@
   "secondary_motivation": "matematica_reactiva",
   "primary_edi_canonical": 0.5802201286883273,
   "convergence": {
-    "edi_primary_proxy": 0.5800989698929494,
-    "edi_secondary": 0.11705198796746333,
-    "delta_edi": 0.4630469819254861,
+    "edi_primary_proxy": 0.5800989698929495,
+    "edi_secondary": 0.41995347036696895,
+    "delta_edi": 0.16014549952598056,
     "convergen": false
   },
   "version_protocolo": "V5.4"

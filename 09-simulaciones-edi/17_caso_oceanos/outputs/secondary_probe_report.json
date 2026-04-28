@@ -4,10 +4,10 @@
   "secondary_motivation": "oceanografia_clasica",
   "primary_edi_canonical": -0.015399742732341487,
   "convergence": {
-    "edi_primary_proxy": -0.015692812071926757,
-    "edi_secondary": 0.01057825456620727,
-    "delta_edi": 0.026271066638134027,
-    "convergen": true
+    "edi_primary_proxy": -0.015692812071926906,
+    "edi_secondary": 0.08710252603943915,
+    "delta_edi": 0.10279533811136606,
+    "convergen": false
   },
   "version_protocolo": "V5.4"
 }

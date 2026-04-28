@@ -4,9 +4,9 @@
   "secondary_motivation": "control_lineal_clasico",
   "primary_edi_canonical": 0.22744325283615935,
   "convergence": {
-    "edi_primary_proxy": 0.22722027395783698,
-    "edi_secondary": 0.0963302171320826,
-    "delta_edi": 0.1308900568257544,
+    "edi_primary_proxy": 0.22722027395783692,
+    "edi_secondary": -0.2619031370346103,
+    "delta_edi": 0.48912341099244727,
     "convergen": false
   },
   "version_protocolo": "V5.4"

@@ -54,7 +54,7 @@
         "ci_hi": 0.009474347247412534,
         "valid": false,
         "weighted_value": 0.008859153880156,
-        "loe_factor": 1.0,
+        "loe_factor": 0.8,
         "permutation_pvalue": 0.0,
         "permutation_null_95": 0.006498928670901896,
         "permutation_significant": false,
@@ -63,7 +63,8 @@
           "trend_ratio": 1.0,
           "trend_r2": 0.984,
           "warning": false
-        }
+        },
+        "loe_factor_v5_5": 0.8
       },
       "viscosity": {
         "pass": true,
@@ -177,7 +178,7 @@
         "nivel": 1,
         "ode_quality": "good",
         "ode_obs_corr": 0.9909384835899047,
-        "interpretation": "Tendencia no confirmada (Nivel 1): EDI positivo pero sin significancia estad\u00edstica"
+        "interpretation": "Tendencia no confirmada (Nivel 1): EDI positivo pero sin significancia estadística"
       },
       "synthetic_meta": {
         "ode_true": {
@@ -247,7 +248,7 @@
         "ci_hi": 0.028363288615172646,
         "valid": false,
         "weighted_value": 0.011072299899552383,
-        "loe_factor": 1.0,
+        "loe_factor": 0.8,
         "permutation_pvalue": 0.998998998998999,
         "permutation_null_95": 0.018782951155880145,
         "permutation_significant": false,
@@ -256,7 +257,8 @@
           "trend_ratio": 1.0,
           "trend_r2": 0.525,
           "warning": false
-        }
+        },
+        "loe_factor_v5_5": 0.8
       },
       "viscosity": {
         "pass": true,
@@ -370,7 +372,7 @@
         "nivel": 1,
         "ode_quality": "good",
         "ode_obs_corr": 0.7191459382505383,
-        "interpretation": "Tendencia no confirmada (Nivel 1): EDI positivo pero sin significancia estad\u00edstica"
+        "interpretation": "Tendencia no confirmada (Nivel 1): EDI positivo pero sin significancia estadística"
       }
     }
   }

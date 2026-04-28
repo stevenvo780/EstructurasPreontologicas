@@ -1,5 +1,5 @@
 {
-  "case": "Energ\u00eda (Consumo Per C\u00e1pita)",
+  "case": "Energía (Consumo Per Cápita)",
   "generated_at": "2026-02-16T01:29:43.765158Z",
   "git": {
     "commit": "ed2571b4e14a213313e45cff16a363beaabc8162",
@@ -54,7 +54,7 @@
         "ci_hi": 0.3796069087814028,
         "valid": true,
         "weighted_value": 0.19790548355767984,
-        "loe_factor": 0.6,
+        "loe_factor": 1.0,
         "permutation_pvalue": 0.0,
         "permutation_null_95": 0.23294835506355974,
         "permutation_significant": true,
@@ -63,7 +63,8 @@
           "trend_ratio": 1.0,
           "trend_r2": 0.852,
           "warning": false
-        }
+        },
+        "loe_factor_v5_5": 1.0
       },
       "viscosity": {
         "pass": true,
@@ -177,7 +178,7 @@
         "nivel": 4,
         "ode_quality": "good",
         "ode_obs_corr": 0.9231316960376814,
-        "interpretation": "Cierre operativo fuerte (Nivel 4): la macro constri\u00f1e significativamente la din\u00e1mica micro"
+        "interpretation": "Cierre operativo fuerte (Nivel 4): la macro constriñe significativamente la dinámica micro"
       },
       "synthetic_meta": {
         "model": "mean_reversion",
@@ -334,7 +335,7 @@
         "ci_hi": 0.788547187130125,
         "valid": true,
         "weighted_value": 0.3901595023228134,
-        "loe_factor": 0.6,
+        "loe_factor": 1.0,
         "permutation_pvalue": 0.0,
         "permutation_null_95": 0.5883292572176154,
         "permutation_significant": true,
@@ -343,7 +344,8 @@
           "trend_ratio": null,
           "trend_r2": null,
           "warning": false
-        }
+        },
+        "loe_factor_v5_5": 1.0
       },
       "viscosity": {
         "pass": true,
@@ -457,7 +459,7 @@
         "nivel": 4,
         "ode_quality": "moderate",
         "ode_obs_corr": 0.4710173012536293,
-        "interpretation": "Cierre operativo fuerte (Nivel 4): la macro constri\u00f1e significativamente la din\u00e1mica micro"
+        "interpretation": "Cierre operativo fuerte (Nivel 4): la macro constriñe significativamente la dinámica micro"
       }
     }
   }

@@ -4,9 +4,9 @@
   "secondary_motivation": "sincronizacion_no_lineal",
   "primary_edi_canonical": -0.006047380762526654,
   "convergence": {
-    "edi_primary_proxy": -0.006337750780425552,
-    "edi_secondary": -1.0,
-    "delta_edi": 0.9936622492195745,
+    "edi_primary_proxy": -0.006337750780425503,
+    "edi_secondary": -0.09683510979810134,
+    "delta_edi": 0.09049735901767583,
     "convergen": false
   },
   "version_protocolo": "V5.4"

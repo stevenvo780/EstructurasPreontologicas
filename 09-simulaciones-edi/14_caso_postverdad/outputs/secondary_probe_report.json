@@ -4,9 +4,9 @@
   "secondary_motivation": "marketing_quantitativo",
   "primary_edi_canonical": 0.24284958859933714,
   "convergence": {
-    "edi_primary_proxy": 0.24263105636843593,
-    "edi_secondary": 0.010102824517809698,
-    "delta_edi": 0.23252823185062624,
+    "edi_primary_proxy": 0.24263105636843588,
+    "edi_secondary": -0.14282441921872946,
+    "delta_edi": 0.3854554755871653,
     "convergen": false
   },
   "version_protocolo": "V5.4"

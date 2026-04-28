@@ -54,7 +54,7 @@
         "ci_hi": 0.30514870278902684,
         "valid": false,
         "weighted_value": -0.004201457315644498,
-        "loe_factor": 0.6,
+        "loe_factor": 0.4,
         "permutation_pvalue": 0.8668668668668669,
         "permutation_null_95": 0.02827680441047683,
         "permutation_significant": false,
@@ -63,7 +63,8 @@
           "trend_ratio": 1.0,
           "trend_r2": 0.606,
           "warning": false
-        }
+        },
+        "loe_factor_v5_5": 0.4
       },
       "viscosity": {
         "pass": false,
@@ -175,7 +176,7 @@
         "nivel": 0,
         "ode_quality": "moderate",
         "ode_obs_corr": 0.31768229601158027,
-        "interpretation": "Sin cierre operativo (Nivel 0): sin evidencia de constricci\u00f3n macro efectiva"
+        "interpretation": "Sin cierre operativo (Nivel 0): sin evidencia de constricción macro efectiva"
       },
       "synthetic_meta": {
         "model": "logistic_forced",
@@ -290,7 +291,7 @@
         "ci_hi": -0.06170601129643648,
         "valid": false,
         "weighted_value": -0.06987679493264225,
-        "loe_factor": 0.6,
+        "loe_factor": 0.4,
         "permutation_pvalue": 0.923923923923924,
         "permutation_null_95": -0.08101073476297035,
         "permutation_significant": false,
@@ -299,7 +300,8 @@
           "trend_ratio": null,
           "trend_r2": null,
           "warning": false
-        }
+        },
+        "loe_factor_v5_5": 0.4
       },
       "viscosity": {
         "pass": false,
@@ -411,7 +413,7 @@
         "nivel": 0,
         "ode_quality": "moderate",
         "ode_obs_corr": 0.44293130502232286,
-        "interpretation": "Sin cierre operativo (Nivel 0): sin evidencia de constricci\u00f3n macro efectiva"
+        "interpretation": "Sin cierre operativo (Nivel 0): sin evidencia de constricción macro efectiva"
       }
     }
   }

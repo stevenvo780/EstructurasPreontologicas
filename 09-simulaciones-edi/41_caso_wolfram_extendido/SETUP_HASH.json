@@ -1,0 +1,15 @@
+{
+  "case_id": "41_caso_wolfram_extendido",
+  "timestamp_utc": "2026-04-28T23:47:23.374329+00:00",
+  "git_commit": "a05767f0554bfe58c4b38f9cf0ade46b87ac9e14",
+  "git_dirty": true,
+  "file_count": 3,
+  "aggregate_hash": "b3a5f578c8bcb1fe9079915c14f2d7981868c5b86ade4962e54ef71de15b6e4b",
+  "file_hashes": {
+    "INTERPRETACION_FILOSOFICA.md": "e015ee9d0c1215429f1fd9a924047458de7ea050edef3d7a41ad1f63de47e26c",
+    "NARRATIVA_TESIS_V5_5.md": "bdf2e0a6532d3c1bfa5c08a509b209c92fb17e0430c0808ef62e909d84bf7ffa",
+    "run.py": "1e8dadf3a6e6abc75496c75656219b83bc0c3df3758287457e3241d0a27a2f20"
+  },
+  "protocol_version": "V5.1",
+  "method": "sha256_recursive_with_output_exclusion"
+}

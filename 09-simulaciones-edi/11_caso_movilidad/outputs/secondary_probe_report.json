@@ -4,7 +4,7 @@
   "secondary_motivation": "fisica_gravitacional_aplicada",
   "primary_edi_canonical": 0.12828980793063793,
   "convergence": {
-    "edi_primary_proxy": 0.12803821092942932,
+    "edi_primary_proxy": 0.1280382109294294,
     "edi_secondary": -1.0,
     "delta_edi": 1.1280382109294294,
     "convergen": false

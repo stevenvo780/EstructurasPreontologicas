@@ -54,7 +54,7 @@
         "ci_hi": 0.20144444954737328,
         "valid": false,
         "weighted_value": 0.1179958687993163,
-        "loe_factor": 0.6,
+        "loe_factor": 0.8,
         "permutation_pvalue": 0.00010001000100010001,
         "permutation_null_95": 0.19490283845079448,
         "permutation_significant": true,
@@ -63,7 +63,8 @@
           "trend_ratio": null,
           "trend_r2": null,
           "warning": false
-        }
+        },
+        "loe_factor_v5_5": 0.8
       },
       "viscosity": {
         "pass": true,
@@ -177,7 +178,7 @@
         "nivel": 3,
         "ode_quality": "poor",
         "ode_obs_corr": 0.22753180302096263,
-        "interpretation": "Cierre operativo d\u00e9bil (Nivel 3): se\u00f1al macro significativa pero bajo umbral robusto"
+        "interpretation": "Cierre operativo débil (Nivel 3): señal macro significativa pero bajo umbral robusto"
       },
       "synthetic_meta": {
         "model": "Edit Wars (Yasseri)",
@@ -233,7 +234,7 @@
         "ci_hi": 0.5135395847963541,
         "valid": false,
         "weighted_value": 0.11497786618274919,
-        "loe_factor": 0.6,
+        "loe_factor": 0.8,
         "permutation_pvalue": 0.0,
         "permutation_null_95": 0.15258957190377323,
         "permutation_significant": true,
@@ -242,7 +243,8 @@
           "trend_ratio": null,
           "trend_r2": null,
           "warning": false
-        }
+        },
+        "loe_factor_v5_5": 0.8
       },
       "viscosity": {
         "pass": true,
@@ -356,7 +358,7 @@
         "nivel": 3,
         "ode_quality": "moderate",
         "ode_obs_corr": 0.5490668678735692,
-        "interpretation": "Cierre operativo d\u00e9bil (Nivel 3): se\u00f1al macro significativa pero bajo umbral robusto"
+        "interpretation": "Cierre operativo débil (Nivel 3): señal macro significativa pero bajo umbral robusto"
       }
     }
   }

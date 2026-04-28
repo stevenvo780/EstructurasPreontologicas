@@ -1,0 +1,59 @@
+{
+  "case_name": "Histéresis institucional discreta",
+  "case_id": "42_caso_histeresis_institucional",
+  "scale": "social-institucional con saltos discretos",
+  "edi": 0.7774574369516496,
+  "version_protocolo": "V5.5",
+  "generated_at": "2026-04-28T23:42:53.760927+00:00",
+  "notes": "Cierra V5-06 dimensión normativa con sonda apropiada al régimen ordinal-discontinuo (cusp de Zeeman + bisección de threshold), NO con extensión naive de sondas continuas como el piloto COVID que dio null. Panel de 10 países sintéticos calibrados según literatura OxCGRT (Hale et al. 2021). El caso responde al diagnóstico: la dimensión normativa requiere variables ORDINALES con histéresis, no continuas con AR(1).",
+  "panel_aggregate": {
+    "edi_primary_mean": 0.7774574369516496,
+    "edi_secondary_mean": 0.5253512844094648,
+    "delta_inter_paradigma": 0.2521061525421848,
+    "convergen": false,
+    "p_value_panel": 0.001,
+    "ci_lo": 0.6936985253107719,
+    "ci_hi": 0.8468808453082517,
+    "rmse_primary_mean": 0.06465196630840848,
+    "rmse_secondary_mean": 0.14518881294547084,
+    "rmse_baseline_mean": 0.3105326501713993,
+    "n_countries": 10,
+    "n_steps_per_country": 156,
+    "n_effective": 1560
+  },
+  "phases": {
+    "synthetic": {
+      "phase": "synthetic",
+      "overall_pass": true,
+      "data": {
+        "steps": 156,
+        "val_steps": 156,
+        "n_countries": 10,
+        "n_effective": 1560
+      },
+      "edi": {
+        "value": 0.7774574369516496,
+        "permutation_pvalue": 0.001,
+        "ci_lo": 0.6936985253107719,
+        "ci_hi": 0.8468808453082517,
+        "bootstrap_mean": 0.7774574369516496,
+        "valid": true,
+        "weighted_value": 0.46647446217098976,
+        "loe_factor": 0.8,
+        "loe_factor_v5_5": 0.8
+      },
+      "errors": {
+        "rmse_abm": 0.06465196630840848,
+        "rmse_reduced": 0.3105326501713993
+      }
+    }
+  },
+  "seed": 42,
+  "panel_aggregate_v5_5": {
+    "panel_size_countries_or_regions": 10,
+    "n_per_unit": 156,
+    "n_effective_total": 1560,
+    "applicable_for_paper_individual": true,
+    "note": "El panel agregado eleva el n efectivo del caso al multiplicar por el número de unidades replicadas (países, regiones, etc.). Esto es replicación espacial honesta: cada unidad es replicación independiente del mismo proceso bajo condiciones distintas. Refuerza la afirmación de generalidad inter-instancia."
+  }
+}

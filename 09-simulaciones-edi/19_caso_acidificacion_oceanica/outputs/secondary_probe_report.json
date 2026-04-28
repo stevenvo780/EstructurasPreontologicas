@@ -4,9 +4,9 @@
   "secondary_motivation": "termodinamica_disolucion",
   "primary_edi_canonical": -0.0001909971007845106,
   "convergence": {
-    "edi_primary_proxy": -0.00047967682232030203,
-    "edi_secondary": -0.6780766161751276,
-    "delta_edi": 0.6775969393528073,
+    "edi_primary_proxy": -0.0004796768223202407,
+    "edi_secondary": -0.4049576044090448,
+    "delta_edi": 0.4044779275867246,
     "convergen": false
   },
   "version_protocolo": "V5.4"

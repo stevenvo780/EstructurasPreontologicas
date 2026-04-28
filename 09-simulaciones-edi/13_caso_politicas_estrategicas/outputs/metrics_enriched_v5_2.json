@@ -16,10 +16,10 @@
     ],
     "fwer_position_in_corpus": {
       "raw_p_value": 0.0015001500150015,
-      "rank_in_corpus": 13,
-      "corpus_size": 30,
-      "p_adjusted_bonferroni": 0.045004500450045004,
-      "p_adjusted_holm": 0.027002700270027002,
+      "rank_in_corpus": 14,
+      "corpus_size": 32,
+      "p_adjusted_bonferroni": 0.048004800480048,
+      "p_adjusted_holm": 0.0285028502850285,
       "survives_fwer_at_alpha_0_05": true
     },
     "inferencia_robusta_post_calibracion": true
@@ -59,7 +59,7 @@
   },
   "elevacion_neta": {
     "antes_v5_1": "EDI=+0.2972, p_naive=0.0015, clasificación canónica reportada",
-    "despues_v5_2": "EDI=+0.2972, p_block=0.0010, SE_HAC=0.0272, FWER_Holm=0.0270, invariante=False",
+    "despues_v5_2": "EDI=+0.2972, p_block=0.0010, SE_HAC=0.0272, FWER_Holm=0.0285, invariante=False",
     "veredicto": "SENSIBLE A UMBRALES: clasificación variable bajo grilla. Reportar como caso de borde con honestidad explícita."
   }
 }

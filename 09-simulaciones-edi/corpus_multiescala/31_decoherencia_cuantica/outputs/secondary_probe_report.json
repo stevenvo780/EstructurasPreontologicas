@@ -5,8 +5,8 @@
   "primary_edi_canonical": 0.913177796635811,
   "convergence": {
     "edi_primary_proxy": 0.9131527376125215,
-    "edi_secondary": 0.5874135763883692,
-    "delta_edi": 0.32573916122415225,
+    "edi_secondary": 0.516044992295491,
+    "delta_edi": 0.3971077453170305,
     "convergen": false
   },
   "version_protocolo": "V5.4"

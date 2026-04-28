@@ -4,9 +4,9 @@
   "secondary_motivation": "crecimiento_asimetrico",
   "primary_edi_canonical": 0.7818771547395869,
   "convergence": {
-    "edi_primary_proxy": 0.7818141991216969,
-    "edi_secondary": -0.18715318407029638,
-    "delta_edi": 0.9689673831919933,
+    "edi_primary_proxy": 0.781814199121697,
+    "edi_secondary": -1.0,
+    "delta_edi": 1.7818141991216971,
     "convergen": false
   },
   "version_protocolo": "V5.4"

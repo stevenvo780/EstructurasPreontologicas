@@ -4,9 +4,9 @@
   "secondary_motivation": "oscilaciones_circadianas",
   "primary_edi_canonical": 0.1306799800346662,
   "convergence": {
-    "edi_primary_proxy": 0.13042907289591332,
-    "edi_secondary": -0.7628280244482968,
-    "delta_edi": 0.8932570973442101,
+    "edi_primary_proxy": 0.13042907289591318,
+    "edi_secondary": 0.37155341149292503,
+    "delta_edi": 0.24112433859701185,
     "convergen": false
   },
   "version_protocolo": "V5.4"
