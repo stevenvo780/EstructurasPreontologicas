@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>{{ page_title }}</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" />
-  <link rel="stylesheet" href="{{ request.url_for('static', path='css/app.css') }}" />
+  <link rel="stylesheet" href="{{ request.url_for('static', path='css/app.css') }}?v={{ asset_version|default('1') }}" />
 </head>
 <body>
   <div class="bg-aura"></div>

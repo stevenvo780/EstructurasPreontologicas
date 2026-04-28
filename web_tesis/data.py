@@ -684,8 +684,25 @@ def _collect_chapters() -> list[dict[str, Any]]:
     return out
 
 
-@lru_cache(maxsize=1)
+_DATASET_CACHE: dict[str, Any] = {}
+_DATASET_MTIME: float = 0.0
+
+
+def _compute_thesis_mtime() -> float:
+    """mtime del archivo Tesis.md para invalidación automática del caché."""
+    try:
+        return THESIS_FINAL_MD.stat().st_mtime if THESIS_FINAL_MD.exists() else 0.0
+    except OSError:
+        return 0.0
+
+
 def get_dataset() -> dict[str, Any]:
+    """Carga el dataset, recargando automáticamente si Tesis.md cambió."""
+    global _DATASET_CACHE, _DATASET_MTIME
+    current_mtime = _compute_thesis_mtime()
+    if _DATASET_CACHE and abs(current_mtime - _DATASET_MTIME) < 1e-3:
+        return _DATASET_CACHE
+
     thesis_text = THESIS_FINAL_MD.read_text(encoding="utf-8") if THESIS_FINAL_MD.exists() else ""
     thesis_html, thesis_toc = render_markdown_with_toc(thesis_text)
 
@@ -698,7 +715,7 @@ def get_dataset() -> dict[str, Any]:
     summary = _build_summary(cases)
     chapters = _collect_chapters()
 
-    return {
+    _DATASET_CACHE = {
         "thesis_html": thesis_html,
         "thesis_toc": thesis_toc,
         "summary": summary,
@@ -707,10 +724,15 @@ def get_dataset() -> dict[str, Any]:
         "chapters": chapters,
         "chapter_map": {c["slug"]: c for c in chapters},
     }
+    _DATASET_MTIME = current_mtime
+    return _DATASET_CACHE
 
 
 def refresh_dataset() -> dict[str, Any]:
-    get_dataset.cache_clear()
+    """Fuerza recarga (vaciar caché)."""
+    global _DATASET_CACHE, _DATASET_MTIME
+    _DATASET_CACHE = {}
+    _DATASET_MTIME = 0.0
     return get_dataset()
 
 

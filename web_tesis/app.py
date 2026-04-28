@@ -46,6 +46,16 @@ except ImportError:
 
 APP_DIR = Path(__file__).resolve().parent
 
+
+def _asset_version() -> str:
+    """mtime de app.css como versión cache-bust del navegador."""
+    css = APP_DIR / "static" / "css" / "app.css"
+    try:
+        return str(int(css.stat().st_mtime))
+    except OSError:
+        return "1"
+
+
 app = FastAPI(
     title="Estructuras Pre-Ontológicas — Visual",
     description="Capa web para la tesis Realismo Irrealista Operativo y EDI multidominio",
@@ -68,6 +78,7 @@ async def home(request: Request, refresh: bool = Query(default=False)):
         request,
         "home.html",
         {
+            "asset_version": _asset_version(),
             "page_title": "Estructuras Pre-Ontológicas — Tesis Visual",
             "summary": dataset["summary"],
             "cases": dataset["cases"],
@@ -98,6 +109,7 @@ async def case_detail(request: Request, case_id: str, refresh: bool = Query(defa
         request,
         "case.html",
         {
+            "asset_version": _asset_version(),
             "page_title": f"{case['case_name']} — Tesis Visual",
             "case": case,
             "report_html": report_html,
@@ -117,6 +129,7 @@ async def chapter_detail(request: Request, slug: str, refresh: bool = Query(defa
         request,
         "chapter.html",
         {
+            "asset_version": _asset_version(),
             "page_title": f"{chapter['title']} — Tesis Visual",
             "chapter": chapter,
         },
