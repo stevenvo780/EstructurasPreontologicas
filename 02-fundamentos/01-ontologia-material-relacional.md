@@ -12,6 +12,24 @@ Este capítulo fija el suelo ontológico de la tesis: qué cuenta como existente
 
 Cuando este capítulo y los posteriores invocan **necesidad** o **contingencia** (e.g., "la materialidad es necesaria", "el cierre operativo es contingente"), la lógica modal asumida es **al menos T (KT)**: el axioma de reflexividad `□P → P` está disponible. Esto significa que lo declarado como necesario implica que ocurre en el mundo de evaluación, evitando una lectura puramente esquemática de la necesidad. Sistemas más ricos (S4, S5) son admisibles para la lectura epistémica del capítulo 02-02. Esta declaración fue impuesta por la validación lógica formal con ST (Anexo A.11, Hallazgo ST-2): en `modal.k` básico la necesidad no implica efectividad, lo cual sería incoherente con la posición material-relacional.
 
+### Nota sobre el grado de compromiso ontológico de κ
+
+La compresión κ admite **dos lecturas** que conviene distinguir explícitamente:
+
+- **κ-pragmática:** la compresión es legítima si el sistema reducido predice trayectorias dentro de tolerancia, preserva topología y discrimina intervenciones. Esta lectura es la que el cap 03-04 operacionaliza vía EDI, prueba de permutación, bootstrap y protocolo C1-C5. Es **interna** al modelo.
+- **κ-ontológica:** la compresión corresponde a una estructura material independiente del modelo — no solo es útil, es real en el sentido de que existiría aunque nadie la modelara.
+
+**El manuscrito demuestra κ-pragmática con rigor cuantificado** (corpus EDI multidominio, AUC-ROC de discriminación = 0.886 según auditoría severa N3). **La afirmación κ-ontológica fuerte requiere argumento adicional** que el corpus por sí solo no provee: se requeriría convergencia bajo múltiples sondas con motivaciones teóricas independientes (programa multi-sonda extendido, en `Bitacora/2026-04-28-cierre-doctoral/03-`) más correspondencia con resultados experimentales obtenidos por otros grupos con métodos distintos (deuda externa).
+
+La posición filosófica del **irrealismo operativo** se sitúa **explícitamente entre las dos lecturas**: ni operacionalismo puro (κ-pragmática sola) ni realismo metafísico fuerte (κ-ontológica sin filtro empírico). El compromiso es:
+
+- las estructuras pre-ontológicas son **reales en sentido moderado**: existen como atractores dinámicos materialmente sostenidos;
+- pero su descripción cuantitativa específica (parámetros, sondas, niveles) es **dependiente del aparato**;
+- la corrección de los umbrales y la elección de la sonda son siempre revisables;
+- lo que NO es revisable (en su régimen declarado) es el sustrato material del cual la estructura es atractor.
+
+Esta distinción se impuso tras la auditoría severa (`Bitacora/2026-04-28-cierre-pendientes/03-auditoria-severa.md` ataque A8), que señaló que la formulación previa colapsaba ambas lecturas. El cap 04-02 reconoce este punto como límite del marco, no como debilidad oculta.
+
 ## 1. Lo que existe
 
 ### 1.1. Sustrato material dinámico
@@ -28,6 +46,14 @@ Esa caracterización no es estipulativa: cada rasgo se cumple en el caso ancla c
 ### 1.2. Restricciones y dependencias reales
 
 El sustrato existe organizado por restricciones que no son sustancia separada pero tampoco son lingüísticas. Acoplamientos mecánicos, condiciones de posibilidad, dependencias causales, retroalimentaciones, constituciones funcionales, dependencias históricas y contextuales. Estas restricciones son el modo en que el sustrato se estabiliza en patrones reconocibles. Su identificación es empírica: se detectan por intervención y por covarianza condicional, no por intuición.
+
+### 1.3. Diálogo con interlocutores principales
+
+**Bunge.** En *Treatise on Basic Philosophy* vol. 3 (1977, *Ontology I: The Furniture of the World*, p. 27), Bunge enuncia el principio que la tesis recoge: *"to be is to be a system or a component of one"*. El sustrato dinámico de la tesis encarna esta consigna sin reducirla a inventario: cada componente es a su vez sistema con composición, entorno, estructura y mecanismo (Bunge 1979, vol. 4, p. 4-5). La diferencia operativa con Bunge es el filtro empírico: Bunge define qué cuenta como sistema; la tesis añade el procedimiento (dossier de 14 componentes + EDI) para admitir sistemas concretos en cada caso de estudio.
+
+**Ladyman y Ross.** En *Every Thing Must Go* (2007, §2.4, p. 130), sostienen que *"the ontic structural realist holds that all there is, at the most fundamental level, is structure"*. La tesis discrepa: la estructura sin sustrato dinámico es **estructura flotante**, criticable como inflación ontológica de signo opuesto al instrumentalismo. La materialidad es **necesaria** (en el sistema modal T declarado más arriba) para que la estructura sea operativamente real, no solo abstractamente posible.
+
+**Dennett.** En *The Intentional Stance* (1987, cap. 2, p. 27), Dennett introduce los *"real patterns"* como criterio: *"a pattern exists in some data—is real—if there is a description of the data that is more efficient than the bit map, whether or not anyone can concoct it"*. La definición de patrón estabilizado de §2.2 retoma este criterio (compresión predictiva) pero le añade dos condiciones que Dennett deja implícitas: (a) materialmente sostenido, (b) discriminante bajo intervención. Sin estas dos, el patrón es mera regularidad estadística. La tesis se apropia de Dennett con disciplina, no como cita decorativa.
 
 ## 2. Patrón estabilizado: definición técnica
 

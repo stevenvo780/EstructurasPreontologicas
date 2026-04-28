@@ -228,19 +228,19 @@ Los diez criterios son la **lista verificable** de propiedades exigidas. El doss
 
 ### 11.1. Bunge — exigencias de cientificidad
 
-Bunge formula condiciones de cientificidad de un constructo: claridad, falsabilidad, no contradicción, ajuste empírico. Los diez criterios extienden esta lista al dominio multiescala con énfasis en compresión y reversibilidad.
+Bunge (1967, *La investigación científica*, vol. 2, p. 32) formula los criterios de cientificidad de un constructo: *"claridad, falsabilidad, contrastabilidad, no contradicción interna, compatibilidad con el grueso del conocimiento previo, capacidad explicativa y predictiva"*. Los diez criterios de este capítulo extienden esa lista al dominio multiescala con énfasis en **compresión** y **reversibilidad**, dos exigencias adicionales que Bunge no operacionaliza con la misma especificidad pero que la tesis vuelve verificables.
 
 ### 11.2. Lakatos — programas de investigación
 
-Lakatos distingue núcleo duro y cinturón protector de un programa. La tesis se organiza así: el núcleo duro son las condiciones de admisión (capítulo 02-01, 02-02, 02-04, 03-01, 03-02); el cinturón protector son las aplicaciones (capítulo 05). Una falsificación local del cinturón no falsifica el núcleo, pero acumular falsificaciones del cinturón degrada el programa.
+Lakatos (1970, "Falsification and the Methodology of Scientific Research Programmes", en *Criticism and the Growth of Knowledge*, Cambridge, p. 132) distingue núcleo duro y cinturón protector: *"the negative heuristic of the programme forbids us to direct the modus tollens at this 'hard core'"*. La tesis se organiza así: el núcleo duro son las condiciones de admisión (capítulos 02-01, 02-02, 02-04, 03-01, 03-02); el cinturón protector son las aplicaciones (capítulo 05). Una falsificación local del cinturón no falsifica el núcleo, pero **acumular falsificaciones del cinturón degrada el programa** (criterio lakatosiano de progresividad). Los 8 nulls del corpus son falsificaciones legítimas del cinturón aplicado, no del núcleo.
 
 ### 11.3. Cartwright — capacidades verificables por intervención
 
-Cartwright propone que las leyes científicas describen capacidades, no comportamientos invariantes. La tesis recoge la idea: los criterios 5 (predictivo) y 6 (interventivo) son verificación de capacidad bajo intervención, no de regularidad observada.
+Cartwright (1989, *Nature's Capacities and their Measurement*, cap. 4, p. 141) propone que *"causes are taken to act 'individually', i.e., they have stable, transferable capacities to produce effects which they continue to be disposed to do whether they actually do produce them or not"*. La tesis recoge esta idea: los criterios 5 (predictivo) y 6 (interventivo) son **verificación de capacidad bajo intervención**, no de regularidad observada. La métrica EDI mide capacidad ablativa: si el acoplamiento es capacidad real, su ablación produce diferencia; si es ficción explicativa, no.
 
 ### 11.4. Pearl — `do`-calculus
 
-Pearl distingue intervención (`do(x)`) de observación (`x`). Los criterios 3, 5 y 6 exigen `do`-test cuando es factible. Las dependencias del grafo G no son correlaciones: son sensibilidades a intervención.
+Pearl (2009, *Causality*, cap. 3, p. 86) formaliza la diferencia entre `P(y|x)` y `P(y|do(x))`: la primera es observación, la segunda intervención. La tesis exige `do`-test cuando es factible (criterios 3, 5 y 6). Las dependencias del grafo G no son correlaciones: son sensibilidades a intervención. Esta es la diferencia entre el corpus EDI (admite ablación) y comparaciones puramente correlacionales (no admiten).
 
 ## 12. Cierre
 

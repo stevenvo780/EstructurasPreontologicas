@@ -162,7 +162,15 @@ Simondon distingue individuo de individuación y trata la información como dife
 
 ### 8.5. Dennett — abstracciones reales
 
-Dennett trata `el yo` como centro de gravedad narrativo y `creencias` como abstracciones útiles. La tesis recoge el realismo de patrones pero exige más: el yo es atractor de integración corporal-narrativa-social-afectiva con cuenca medible; las creencias son disposiciones relacionales con efectos sobre la trayectoria conductual. La diferencia se opera en 05-01.
+Dennett (1991, *Consciousness Explained*, cap. 13, p. 412) trata `el yo` como *"a center of narrative gravity"*: *"like a center of gravity in physics, it is a wonderfully useful fiction. It allows us to organize our world the way we are inclined to organize it"*. La tesis recoge el realismo de patrones pero **exige más**: el yo no es ficción útil sino atractor de integración corporal-narrativa-social-afectiva con cuenca medible; las creencias son disposiciones relacionales con efectos sobre la trayectoria conductual. Donde Dennett admite que el yo es ficción útil con consecuencias, la tesis distingue κ-pragmática (utilidad) de κ-ontológica (realidad estructural moderada): el yo es ficción útil **además de** patrón estabilizado del sistema acoplado organismo-entorno-tarea-historia. La diferencia se opera empíricamente en 05-01.
+
+### 8.6. Wittgenstein — uso categorial y semejanzas de familia
+
+Wittgenstein (*Investigaciones Filosóficas* §66, ed. Macmillan 1953, p. 27e) advierte sobre la búsqueda de esencias compartidas en categorías de uso: *"don't think, but look! Look for example at board-games... what is common to them all? — Don't say: 'There must be something common, or they would not be called "games"' — but look and see whether there is anything common to all"*. La tesis adopta esta sospecha pero la disciplina: las categorías como compresiones admisibles bajo κ no requieren esencia compartida, sino **función inferencial homogénea bajo Q**. Si dos casos respondiendo "X es Y" no comparten función inferencial bajo la misma `Q`, son categorías distintas con la misma palabra.
+
+### 8.7. Bourdieu — habitus como disposición materialmente sedimentada
+
+Bourdieu (1980, *Le sens pratique*, cap. 3, p. 88) define el habitus como *"sistemas de disposiciones durables y transponibles, estructuras estructuradas predispuestas a funcionar como estructuras estructurantes"*. La tesis traduce literalmente: el habitus es **disposición relacional materialmente incorporada** (cuerpo, gestos, lenguaje) que constituye atractor en el campo de prácticas. Donde Bourdieu describe cualitativamente la persistencia del habitus *"aún cuando las condiciones objetivas que lo produjeron han cambiado"* (1980, p. 100), la tesis opera la persistencia como **anchura de la cuenca** del atractor (tema desarrollado en 05-04).
 
 ## 9. Regla práctica
 

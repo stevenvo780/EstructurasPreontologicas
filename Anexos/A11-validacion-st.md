@@ -101,10 +101,33 @@ La suite **detectó dos problemas reales** que la formulación previa del manusc
 
 ## Limitaciones de la validación ST
 
-1. La capa ST opera sobre la **lógica declarada** del marco, no sobre la realidad empírica. Confirma coherencia interna; no certifica veracidad de los axiomas.
-2. La ausencia de contradicción interna no garantiza correspondencia con el mundo. La validación empírica está en el corpus EDI multidominio (cap 09 y A.8).
-3. ST no captura la dinámica acoplada del aparato; solo sus afirmaciones declarativas.
-4. La cobertura de la suite es **representativa** de los puntos críticos identificados, no exhaustiva.
+### Lo que ST sí valida
+
+- Coherencia interna de los axiomas declarados (ausencia de contradicción).
+- Validez de inferencias específicas (modus ponens, modus tollens, instanciación universal cuando se aplica).
+- Detección de falacias formales conocidas (afirmación del consecuente, etc.).
+- Existencia de contramodelos para implicaciones no válidas (el sistema reporta contraejemplos efectivos).
+- Cobertura de los puntos críticos identificados en el marco (asimetría, operadores, niveles, falsabilidad, etc.).
+
+### Lo que ST NO valida (límite explícito)
+
+ST es un certificador **lógico**, no un certificador **filosófico ni empírico**. Específicamente:
+
+1. **ST no valida que los axiomas sean verdaderos en el mundo.** La asimetría L1↔B↔L3↔S puede estar bien formalizada y aún así no corresponder a ninguna distinción real entre categorías reales; la prueba ST solo certifica que la formalización no es contradictoria.
+2. **ST no detecta axiomas vacíos.** Un sistema axiomático puede ser consistente y vacío (todos sus modelos satisfacen cualquier afirmación). La consistencia no garantiza contenido empírico.
+3. **ST no captura la dinámica acoplada del aparato.** El motor ABM+ODE, la métrica EDI y los protocolos C1-C5 son objetos computacionales con dinámica continua que ST no representa: solo sus afirmaciones declarativas.
+4. **ST no audita la calibración de la métrica.** La auditoría severa N1 detectó que el p-value declarado del aparato tiene tasa de tipo I empírica = 24.4%, no 5%; esto es un problema EMPÍRICO de calibración que ST no podía detectar porque no opera sobre el procedimiento computacional sino sobre las afirmaciones meta.
+5. **La cobertura de la suite es representativa, no exhaustiva.** Cada teoría cubre un punto crítico identificado; no hay garantía de que todos los puntos críticos estén identificados.
+6. **ST no sustituye revisión humana experta.** El comité doctoral debe leer los axiomas declarados y juzgar si son los correctos; ST solo verifica que sean consistentes.
+
+### Política de uso
+
+La validación ST debe leerse como **certificación de coherencia interna**, no como certificación de validez filosófica o empírica. Las dos validaciones complementarias son:
+
+- **validez empírica:** corpus EDI multidominio (cap 09, A.8), con sus limitaciones documentadas en auditoría severa (N1, N2, N4);
+- **validez filosófica:** revisión por pares humanos competentes en filosofía de la mente, ontología analítica y ciencias de la complejidad (deuda externa pendiente, A13 de auditoría severa).
+
+Esta declaración fue impuesta por la auditoría severa (ataque A9), que señaló que el manuscrito anterior trataba a ST como certificación más amplia de la que efectivamente provee.
 
 ## Conclusión
 

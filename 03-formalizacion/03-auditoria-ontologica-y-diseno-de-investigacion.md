@@ -227,15 +227,15 @@ Esta plantilla se aplica al caso ancla canónico (capítulo 05-05) y se aplica p
 
 ### 10.1. Bunge — método científico riguroso
 
-Bunge formula la investigación como ciclo entre problema, hipótesis, contrastación, teoría, aplicación. La auditoría ontológica es esa estructura aplicada a categorías filosóficas y científicas. Bunge queda como referente metodológico principal de este capítulo.
+Bunge (1972, *La investigación científica*, vol. 1, parte II) formula el ciclo *"problema → hipótesis → contrastación → teoría → aplicación"* como protocolo iterativo. La auditoría ontológica de este capítulo es esa estructura aplicada a **categorías filosóficas y científicas**, no a hechos puntuales. Bunge queda como referente metodológico principal: la diferencia es que aquí el "problema" es siempre la legitimidad de una compresión, y la "contrastación" exige operacionalización empírica vía EDI.
 
 ### 10.2. Bechtel — descomposición funcional
 
-Bechtel articula la descomposición funcional en mecanismos como método de explicación multinivel. La auditoría incorpora la descomposición pero la disciplina con el filtro del dossier: no toda descomposición funcional es admisible; debe pasar la batería de criterios.
+Bechtel y Richardson (1993/2010, *Discovering Complexity*, cap. 1, p. 17) sistematizan la heurística de descomposición y localización: *"the strategies of decomposition and localization treat the system as if it were a physical machine and then attempt to identify the parts that perform specific operations"*. La auditoría incorpora esta descomposición pero la **disciplina con el filtro del dossier**: no toda descomposición funcional es admisible; debe pasar la batería de criterios. Bechtel deja la decisión de qué cuenta como "operación específica" relativamente abierta; la tesis lo cierra con el dossier de 14 componentes.
 
 ### 10.3. Craver — niveles mecanicistas
 
-Craver fija criterios para identificar niveles mecanicistas relevantes. La auditoría los incorpora en Fase 5 (detección de patrones de orden superior) y Fase 6 (ensayo de compresión).
+Craver (2007, *Explaining the Brain*, cap. 4, p. 152) define el criterio de **mutual manipulability**: *"X is constitutively relevant to S's φ-ing iff X is part of S, and... if (a) intervening to manipulate X gives rise to a change in φ, and (b) intervening to manipulate φ gives rise to a change in X"*. La auditoría incorpora este criterio en Fase 5 (detección de patrones de orden superior) y Fase 6 (ensayo de compresión): un nivel se admite solo si las relaciones constitutivas son mutuamente manipulables empíricamente, no nominalmente.
 
 ### 10.4. Mitchell — pluralismo integrativo
 

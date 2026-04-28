@@ -250,15 +250,15 @@ La diferencia con el caso ancla: aquí no hay datos experimentales con sistema c
 
 ### 12.1. Pearl — grafos causales y do-calculus
 
-Pearl ofrece formalismo riguroso para inferencia causal con DAG y operador de intervención `do`. La tesis lo absorbe en G y E con dos restricciones: (a) los grafos representan dependencias del sistema acoplado, no causalidad lineal aislada; (b) la admisión de aristas exige `do`-test, no solo correlación.
+Pearl (2009, *Causality*, 2.ª ed., cap. 3, p. 70) define el operador de intervención: *"the action `do(X = x)` represents an experiment in which the variable X is set to value x by an outside intervention, while the rest of the model remains unchanged"*. La tesis absorbe esta operación en `G` y `E` con dos restricciones: (a) los grafos representan dependencias del sistema acoplado, no causalidad lineal aislada; (b) la admisión de aristas exige `do`-test, no solo correlación. La métrica EDI es **operacionalización directa de un do-test**: ablación del acoplamiento ODE con preservación del forcing exógeno, comparada contra coupled completo.
 
 ### 12.2. Ladyman y Ross — realismo estructural informativo
 
-Ladyman y Ross sostienen que la ontología fundamental es estructural y se captura mediante invariantes de simetría. La tesis converge parcialmente: las invariantes son, en este marco, las propiedades preservadas por `κ`. Diverge en que la tesis no postula estructura como ontología fundamental sino como descripción del sustrato material.
+Ladyman y Ross (2007, *Every Thing Must Go*, §3.4) sostienen que la ontología fundamental es estructural: *"the world is not made of things or stuff but of structure all the way down"*. La tesis converge parcialmente: las invariantes son, en este marco, las propiedades preservadas por `κ`. Diverge en que la tesis no postula estructura como ontología fundamental sino como **descripción operativa del sustrato material**: la estructura es estructura **del** sustrato dinámico, no flotante (cap 02-01). Esta es la diferencia que la tabla A.4 codifica como discriminación en el criterio A (anclaje material).
 
 ### 12.3. Strogatz, Kelso, Haken — sistemas dinámicos no lineales
 
-Strogatz (texto canónico de dinámica no lineal), Kelso y Haken (synergetics) proporcionan el vocabulario técnico de atractores, repulsores, bifurcaciones, parámetros de control, de orden. La tesis lo adopta sin modificación: la formalización del aparato es precisamente este vocabulario.
+Strogatz (1994, *Nonlinear Dynamics and Chaos*, cap. 6, p. 168) define el atractor como *"a closed set A such that any trajectory that comes close enough to A approaches A as t → ∞"*. Kelso (1995, *Dynamic Patterns*, cap. 3, p. 73) extiende el lenguaje al dominio de coordinación: *"the qualitative change in the form of behavioral patterns is termed a phase transition or bifurcation"*. Haken (1977/2004, *Synergetics*, cap. 1) introduce los parámetros de orden como variables macroscópicas que dominan la dinámica cerca de transiciones. La tesis adopta este vocabulario **sin modificación**: la formalización del aparato es precisamente este vocabulario, ahora aplicado bajo dossier de admisión.
 
 ### 12.4. Symbolic Theory Language (ST)
 

@@ -66,6 +66,14 @@ Estas condiciones no son retóricas. Tienen procedimiento empírico fijado en el
 - en sistemas técnicos distribuidos, la compresión de procesos, redes, certificados, balanceadores en `el servicio` es legítima cuando la pregunta es disponibilidad global; deja de serlo cuando la pregunta es diagnóstico de caída;
 - en biología, comprimir cientos de moléculas en `célula` es legítimo cuando la pregunta es tisular; deja de serlo cuando la pregunta es metabólica fina.
 
+### 3.4. Diálogo con interlocutores principales
+
+**Cartwright.** En *How the Laws of Physics Lie* (1983, cap. 2, p. 53), Cartwright sostiene que las leyes científicas son *"ceteris paribus laws"* que no describen la realidad bruta sino *"that things behave as if those laws were true"*. La compresión κ de la tesis incorpora esta intuición pero la operacionaliza: el "como si" de Cartwright se convierte en condición empírica medible (las cuatro condiciones de §3.2). Donde Cartwright deja la operacionalización en el éxito explicativo intuitivo, la tesis exige EDI con permutación 999 + bootstrap 500 + protocolo C1-C5 (cap 03-04).
+
+**Pearl.** En *Causality* (2009, 2.ª ed., cap. 1, p. 1), Pearl distingue tres niveles de inferencia (asociación, intervención, contrafactual). La condición §3.2(3) (*"mejora inferencia, predicción o intervención respecto a la versión no comprimida"*) recoge explícitamente el segundo nivel pearliano: la compresión legítima debe sobrevivir el `do`-operador. La métrica EDI (ablación del acoplamiento ODE manteniendo el forcing) es operacionalización del nivel 2.
+
+**Bechtel y Craver.** Bechtel (2008, *Mental Mechanisms*, cap. 1, p. 13) define el mecanismo como *"a structure performing a function in virtue of its component parts, component operations, and their organization"*. La compresión κ es el procedimiento epistémico que **identifica** ese mecanismo en datos: descompone, comprime, valida. Craver (2007, *Explaining the Brain*, cap. 4, p. 152) añade el criterio de **mutual manipulability** que la condición §3.2(4) (admite reapertura ε) recoge en forma de reversibilidad parcial.
+
 ## 4. Expansión
 
 ### 4.1. Definición

@@ -143,27 +143,29 @@ Lo que el manuscrito no demuestra y reconoce explícitamente como deuda con plaz
 
 ## 5. Aporte conceptual sustantivo
 
+> **Aclaración de alcance (auditoría severa A14):** el aporte primario de la tesis es **metodológico-filosófico**, no descubrimiento sustantivo en cada uno de los 30 dominios del corpus. La tesis ofrece un protocolo, una métrica y una posición; los dominios particulares ya fueron estudiados por especialistas con sus propias herramientas. El aporte está en **cómo** se articulan y validan las afirmaciones ontológicas multidominio, no en qué descubrimiento nuevo añade a cada disciplina.
+
 La tesis introduce, articula y opera lo siguiente como aporte propio:
 
 ### 5.1. Aporte ontológico
 
-Reformula entidades como **estructuras pre-ontológicas** — atractores empíricamente identificables de sistemas dinámicos acoplados con cinco condiciones técnicas de admisión. Vocabulario filosóficamente afilado: el "irrealismo operativo" sustituye con precisión al "realismo estructural moderado" sin perder rigor.
+Reformula entidades como **estructuras pre-ontológicas** — atractores empíricamente identificables de sistemas dinámicos acoplados con cinco condiciones técnicas de admisión. Vocabulario filosóficamente afilado: el "irrealismo operativo" sustituye con precisión al "realismo estructural moderado" sin perder rigor. **Este aporte es ontológico-metodológico, no sustantivo:** no afirma que existan entidades nuevas, sino que ofrece un criterio operativo para admitir entidades reconocidas.
 
 ### 5.2. Aporte epistemológico
 
-Reformula el conocimiento como compresión disciplinada bajo intervención ablativa, operacionalizada vía EDI con cuatro pruebas de validación + protocolo C1-C5. Verdad como preservación estructural verificable bajo permutación (999) y bootstrap (500).
+Reformula el conocimiento como compresión disciplinada bajo intervención ablativa, operacionalizada vía EDI con cuatro pruebas de validación + protocolo C1-C5. Verdad como preservación estructural verificable bajo permutación (999) y bootstrap (500). **Limitación reconocida (auditoría severa N1):** el p-value declarado del aparato tiene tasa de tipo I empírica = 24%, no 5%. Los umbrales EDI sí son robustos contra falsos positivos (N1: 0.6% supera weak, 0% supera strong bajo random walk puro). La calibración exacta del p-value requiere refinamiento metodológico futuro.
 
-### 5.3. Aporte metodológico
+### 5.3. Aporte metodológico (PRIMARIO)
 
-Ofrece la auditoría ontológica como protocolo replicable de nueve fases con dossier de catorce componentes, más el pipeline ABM+ODE de 2252 líneas con soporte CPU/GPU, validador canónico, controles de falsación incorporados. Reproducibilidad bit-a-bit con `seed=42`.
+Ofrece la auditoría ontológica como protocolo replicable de nueve fases con dossier de catorce componentes, más el pipeline ABM+ODE con soporte CPU/GPU, validador canónico, controles de falsación incorporados, suite ST de 13 teorías formales, y procedimiento de hostile testing automatizado. Determinismo `seed=42` con `requirements-locked.txt` para reproducibilidad inter-instalación. **Este es el aporte más fuerte:** ofrece infraestructura ejecutable, no solo afirmaciones.
 
 ### 5.4. Aporte aplicado
 
-Demuestra que el aparato funciona en cartografía multidominio masiva: 30 casos en física, biología, economía, política, tecnología, cultura y conducta humana, con discriminación pública contra rivales y controles de falsación rechazados. Identifica honestamente el dominio de validez del aparato y reconoce los límites de cada caso bajo su sonda específica.
+Demuestra que el aparato **discrimina** strong vs no-strong en cartografía multidominio (AUC-ROC = 0.886 según auditoría severa N3): 30 casos en física, biología, economía, política, tecnología, cultura y conducta humana. **Reconocimiento honesto:** los 30 casos son post-hoc (no pre-registrados); la composición numérica es frágil a umbrales (N4: pasar de 0.10/0.30 a 0.15/0.40 reduce strong de 5 a 3); el caso 30 (behavioral dynamics) sufre circularidad detectada por N2 (la sonda Fajen-Warren produce EDI > 0.30 en 50% de mass-spring puro). El aparato discrimina, pero la composición específica del corpus no debe leerse como prevalencia poblacional.
 
 ### 5.5. Aporte filosófico de fondo
 
-Recupera el realismo estructural moderado en versión disciplinada por anclaje empírico explícito, evitando la inflación ontológica del realismo estructural informativo (estructura sin sustrato), la pasividad del instrumentalismo, y la ambición fundacional de Wolfram. Establece el **irrealismo operativo** como tercera vía: ni cosa, ni ficción, sino patrón cuya admisión requiere intervención empírica controlada.
+Recupera el realismo estructural moderado en versión disciplinada por anclaje empírico explícito, evitando la inflación ontológica del realismo estructural informativo (estructura sin sustrato), la pasividad del instrumentalismo, y la ambición fundacional de Wolfram. Establece el **irrealismo operativo** como tercera vía: ni cosa, ni ficción, sino patrón cuya admisión requiere intervención empírica controlada. **Distinción nueva (auditoría severa A8):** entre **κ-pragmática** (la compresión funciona) y **κ-ontológica** (la compresión corresponde a estructura material independiente). El manuscrito demuestra κ-pragmática con rigor; la afirmación κ-ontológica fuerte requiere convergencia bajo múltiples sondas y validación inter-grupo.
 
 ## 6. Lo que la tesis afirma con compromiso público
 
