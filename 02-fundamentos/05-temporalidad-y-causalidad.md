@@ -68,19 +68,52 @@ La tesis usa "causalidad circular" en cap 02-04 §3 (acoplamientos simultáneos 
 
 ### 2.4. Downward causation: respuesta al argumento de Kim
 
-Kim (1998, *Mind in a Physical World*, cap. 4, p. 84) presenta el **argumento de exclusión causal**: si el nivel macro M causa Y y los componentes micro P causan Y, entonces M es causalmente sobredeterminante o epifenoménico; ambas opciones rechazables, luego M no causa Y.
+Esta sub-sección merece tratamiento extendido porque la objeción de Kim es la objeción metafísica más recurrente contra cualquier ontología que afirme constricción macro→micro. El manuscrito anticipa que un evaluador con formación en metafísica de la mente la planteará en defensa, y por eso la respuesta se articula con cuatro pasos ordenados, no con declaración.
 
-**Respuesta de la tesis:**
+#### 2.4.1. Enunciado preciso del argumento de Kim
 
-La tesis NO afirma downward causation en el sentido fuerte que Kim ataca. La tesis afirma **constitución descendente** (downward constitution), que es relación distinta:
+Kim (1998, *Mind in a Physical World*, cap. 4, p. 84) formula el **argumento de exclusión causal** en cinco premisas:
 
-- **causación**: X causa Y si una intervención sobre X cambia Y (Woodward);
-- **constitución**: X constituye Y si X es parte de la realización material de Y;
-- la **constricción macro→micro** del aparato EDI es **constitutiva, no causal**: el atractor macroscópico **constituye las restricciones** dentro de las cuales los componentes operan, sin causar nuevos eventos por encima de sus partes.
+1. **Cierre causal del dominio físico:** todo evento físico tiene causa física suficiente.
+2. **Sobreviniencia:** las propiedades macro M sobrevienen sobre las propiedades micro P.
+3. **No sobredeterminación sistemática:** no es admisible que M y P causen sistemáticamente el mismo efecto Y.
+4. **No epifenomenalismo:** rechazamos que M sea causalmente inerte.
+5. **Conclusión por reducción:** la única salida coherente es que M sea idéntica a (o reducible a) P; cualquier downward causation genuina contradice (1)–(3).
 
-Esto se alinea con Craver (2007, *Explaining the Brain*, cap. 4, p. 152) que define *mutual manipulability* como criterio constitutivo, no causal: X es constitutivamente relevante para S si manipular X cambia S y manipular S cambia X. La tesis adopta esta noción para operacionalizar la constitución.
+Cualquier filosofía que afirme constricción macro→micro debe responder a este argumento sin invocar misterios y sin colapsar M en P (lo cual eliminaría el explanandum macro).
 
-**Implicación:** la cláusula "downward causation material" del cap 02-04 §4 se refina como **"constitución descendente material"**: el atractor del sistema acoplado constituye las restricciones del componente sin violar exclusión causal. El argumento de Kim no aplica.
+#### 2.4.2. Distinción operativa entre causación y constitución
+
+La tesis distingue dos relaciones que la formulación clásica de Kim trata como una sola:
+
+- **Causación** (Woodward 2003, *Making Things Happen*, cap. 2, p. 57): X causa Y si y sólo si una intervención sobre X (independiente del resto del sistema) produce un cambio sistemático en Y. Las relaciones causales son entre variables y son temporalmente extendidas.
+- **Constitución** (Craver 2007, *Explaining the Brain*, cap. 4, p. 152): X constituye Y si y sólo si X es **parte de la realización material** de Y, verificable por **manipulabilidad mutua** — manipular X cambia S y manipular S cambia X. Las relaciones constitutivas son sincrónicas y no requieren transferencia causal entre niveles.
+
+La intervención ablativa del aparato EDI (`do(coupling = 0)`) opera explícitamente como test woodwardiano sobre **variables del sistema acoplado**, no sobre eventos micro individuales. Lo que el aparato detecta no es "M causa Y por encima de P"; es "el régimen acoplado tiene dependencias estructurales que la versión sin acoplamiento pierde".
+
+#### 2.4.3. Aplicación al aparato EDI
+
+Cuando el aparato detecta cierre operativo (EDI > umbral), no afirma que el atractor macro **causa** algo que las componentes micro no causan. Afirma algo más modesto y filosóficamente más defensable:
+
+- el atractor macro **constituye las restricciones** dentro de las cuales las componentes evolucionan;
+- esas restricciones son **detectables operativamente** porque al apagar el acoplamiento (ablación), las trayectorias se degradan;
+- la degradación no muestra que el macro tenga "poder causal extra" sobre el micro; muestra que **la descripción macro captura dependencias estructurales que la descripción micro descontextualizada pierde**.
+
+Esto es exactamente la noción de Craver (*mutual manipulability*) operacionalizada por intervención ablativa. No hay sobredeterminación porque no hay dos cadenas causales paralelas; hay una sola dinámica acoplada que admite descripción a dos niveles, y la descripción macro es **constitutivamente** legítima cuando el test de manipulabilidad mutua se cumple.
+
+#### 2.4.4. Por qué esto no diluye la tesis
+
+Un crítico podría objetar: *"si reformulan downward causation como constitución, han abandonado la afirmación fuerte que su tesis necesita"*. La respuesta es que la tesis nunca necesitó downward causation en el sentido kim-vulnerable. Lo que necesita es:
+
+- que los **patrones macro sean reales** (no nominales);
+- que su realidad sea **detectable operativamente** (no postulada);
+- que su realidad **constriña la dinámica de las componentes** sin violar el cierre causal físico.
+
+Las tres condiciones se cumplen bajo la formulación constitutiva. El atractor existe materialmente como configuración del sistema acoplado, su existencia se detecta por intervención ablativa, y su efecto sobre las componentes es constitutivo (parte de la realización), no causal (transferencia de poder por encima del cierre físico).
+
+La verificación formal de este argumento está en la suite ST T13 (hallazgo ST-3): la implicación `((C ∧ ¬V) ∧ (K → (V → S))) → ¬S` no es derivable directamente, pero el argumento de Kim queda neutralizado **por modus tollens vacuo** — si la constricción macro→micro es constitución (C) y no causación (¬V), entonces la premisa de Kim que requiere V es falsa de antemano, y la conclusión sobre sobredeterminación S no se sigue.
+
+**Implicación:** la cláusula "downward causation material" del cap 02-04 §4 se refina canónicamente como **"constitución descendente material"** (downward constitution). El argumento de Kim no aplica porque ataca un blanco que la tesis no defiende.
 
 ### 2.5. Diálogo con causal emergence (Hoel 2017)
 

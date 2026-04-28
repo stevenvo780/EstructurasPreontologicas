@@ -11,6 +11,8 @@ Cada capítulo del manuscrito se ancla en al menos un interlocutor principal y u
 | 02-02 (epistemología) | Cartwright (1989) | Pearl, Bechtel & Craver, Mitchell, Dennett, Popper |
 | 02-03 (categorías) | Dennett (1991) | Searle, Bourdieu, Latour, Simondon |
 | 02-04 (nivel B) | Warren (2006), Gibson (1979) | Maturana & Varela, Varela-Thompson-Rosch, Clark, Noë, Fajen |
+| 02-05 (temporalidad y causalidad) | Woodward (2003), Mellor (1998) | Craver, Pearl, McTaggart, Kim, Bunge, Bergson, Whitehead, Hoel |
+| 02-06 (dimensión normativa y ética) | Bunge (1989, vol. VIII) | Searle, MacIntyre, Foot, Mackie, Hoyos |
 | 03-01 (aparato) | Pearl (2009) | Ladyman & Ross, Strogatz, Kelso, Haken |
 | 03-02 (criterios) | Bunge (1959), Lakatos (1978) | Cartwright, Pearl, Popper |
 | 03-03 (auditoría) | Bunge (1959) | Bechtel, Craver, Mitchell |

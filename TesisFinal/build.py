@@ -34,6 +34,8 @@ PARTS = [
 
 **Colaborador (técnica e ingeniería computacional):** Steven Vallejo Ortiz.
 
+**Director de tesis:** [pendiente de declaración formal — bloqueador procedimental conocido, ver Anexo B.1].
+
 **Co-autoría con inteligencia artificial declarada:** Anthropic Claude (Opus 4.7), como instrumento de implementación bajo dirección humana. La IA no aparece como autora en el sentido legal ni epistémico: aparece como herramienta, igual que cualquier software estadístico avanzado. La declaración detallada del rol y los límites de la IA está en el capítulo de ética de investigación y gobernanza de datos (Parte II, cap. 5).
 
 ### Marco institucional

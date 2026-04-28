@@ -62,11 +62,13 @@ El término *pre-ontológico*, así definido, **es coherente con Simondon, compa
 
 ## 0.3. Diálogo con la tradición filosófica latinoamericana e institucional
 
-Para tesis depositada en la Universidad de Antioquia, el diálogo con la tradición filosófica institucional es deuda académica reconocida:
+Para tesis depositada en la Universidad de Antioquia, el diálogo con la tradición filosófica institucional es deuda académica reconocida.
 
-- **Bunge** (Argentina-Canadá) es el interlocutor principal del sistemismo (cap 02-01 §1.3, cap 03-02, cap 03-03 con citas textuales);
-- **Hoyos Vásquez** (1935-2013, Universidad de Antioquia) representa la tradición hermenéutica colombiana. Hoyos articuló en *Borradores para una fenomenología* (1996) la pregunta por el sentido como pregunta hermenéutica de la ciencia. La tesis recoge esto parcialmente en su distinción entre L1 (lenguaje del sentido ordinario/disciplinar) y B (anclaje empírico): el sentido no se elimina, se traduce vía protocolo formal, lo cual es congruente con el espíritu hermenéutico hoyosiano de no reducir la comprensión a explicación;
-- **Salas Echeverri** (Universidad de Antioquia, filosofía analítica) representa la tradición analítica institucional. La metodología del aparato formal (cap 03-01) responde al espíritu analítico de exigir criterios públicos de admisión.
+**Bunge** (Argentina-Canadá) es el interlocutor principal del sistemismo (cap 02-01 §1.3, cap 03-02, cap 03-03 con citas textuales).
+
+**Hoyos Vásquez** (1935-2013, Universidad de Antioquia) representa la tradición hermenéutica colombiana. Hoyos articuló en *Ética para ciudadanos* (1996, Bogotá: Siglo del Hombre, p. 23) que *"el sentido de la acción no se agota en su descripción causal: requiere comprensión del horizonte intersubjetivo en que ocurre"*. La tesis recoge esto en su distinción entre L1 (lenguaje del sentido ordinario/disciplinar) y B (anclaje empírico): el sentido no se elimina, se traduce vía protocolo formal sin colapsarlo en la dimensión causal-empírica. La asimetría L1↔B↔L3↔S es, en este sentido, **traducción explícita del cuidado hermenéutico hoyosiano al lenguaje protocolar**: no reducimos comprensión a explicación; las articulamos con criterios públicos de admisión. En *Borradores para una fenomenología* (1996, Cali: Universidad del Valle, p. 47) Hoyos sostiene que *"toda objetividad científica supone una subjetividad operante que la constituye y que no se deja reducir a su propio resultado objetivo"*. La tesis lo recoge matizadamente: la dependencia instrumento-fenómeno (cap 02-02) es la versión operativa de la advertencia hoyosiana — la subjetividad operante aparece como elección de Q, sonda y régimen de medición, todas declaradas y fechadas. Y en su lectura habermasiana de la racionalidad comunicativa (Hoyos 2007, *Comunicación y mundo de la vida*, p. 89), insiste en que *"la pretensión de validez no es propiedad privada del enunciante: se contrasta intersubjetivamente"*. La tesis lo opera por dossier público de catorce componentes: ninguna afirmación se admite sin contraste reproducible.
+
+**Salas Echeverri** (Universidad de Antioquia, filosofía analítica) representa la tradición analítica institucional. La metodología del aparato formal (cap 03-01) responde al espíritu analítico de exigir criterios públicos de admisión.
 
 ## Tesis del capítulo
 
@@ -151,11 +153,7 @@ Para que la afirmación κ-ontológica fuerte se sostenga sobre un caso particul
 
 **Implicación operacional:** **ningún caso** del corpus actual cumple los tres criterios simultáneos. Por tanto, **todas las afirmaciones del corpus son κ-pragmática**, no κ-ontológica. La afirmación ontológica fuerte (las estructuras pre-ontológicas existen independientemente del aparato) es **conjetura ontológica articulada**, no demostración cerrada. Solo cuando los tres criterios se cumplan en al menos un caso del corpus la tesis pasará de κ-pragmática multiescalar a κ-ontológica multiescalar.
 
-Esta es una **distinción honesta**: el manuscrito declara con precisión qué demuestra (κ-pragmática) y qué postula como conjetura plausible (κ-ontológica), sin colapsar las dos.
-- la corrección de los umbrales y la elección de la sonda son siempre revisables;
-- lo que NO es revisable (en su régimen declarado) es el sustrato material del cual la estructura es atractor.
-
-El capítulo de limitaciones (Parte IV) reconoce este punto como límite del marco, no como debilidad oculta.
+Esta es una **distinción honesta**: el manuscrito declara con precisión qué demuestra (κ-pragmática) y qué postula como conjetura plausible (κ-ontológica), sin colapsar las dos. La corrección de los umbrales y la elección de la sonda son siempre revisables; lo que NO es revisable (en su régimen declarado) es el sustrato material del cual la estructura es atractor. El capítulo de limitaciones (Parte IV) reconoce este punto como límite del marco, no como debilidad oculta.
 
 ## 1. Lo que existe
 
@@ -325,11 +323,11 @@ Simondon ofrece la individuación como génesis: los individuos no preexisten al
 
 > Existe un solo plano material dinámico. Sus estabilizaciones son atractores empíricamente identificables de sistemas acoplados. Las entidades, propiedades, identidades y niveles son modos de describir esas estabilizaciones bajo régimen de medición y pregunta explícita. La ontología no multiplica sustancias y no empobrece la organización: opera bajo el doble criterio de austeridad de sustancia y riqueza de relación, con admisión condicionada por traducibilidad al nivel B y por validación empírica.
 
-## 12bis. La cuestión del observador en escala cuántica
+## 13. La cuestión del observador en escala cuántica
 
 La generalidad multiescalar de la tesis llega hasta la escala cuántica (caso 31 decoherencia, caso 32 espín-órbita). En escala cuántica, la cuestión del observador es problema ontológico fundamental desde Copenhagen: ¿la medición colapsa el estado, o el estado siempre fue determinado, o todas las ramas se realizan?
 
-### 12bis.1. Postura: realismo estructural compatible con interpretaciones realistas
+### 13.1. Postura: realismo estructural compatible con interpretaciones realistas
 
 La tesis adopta postura **explícita** sobre la mecánica cuántica: rechaza la **interpretación Copenhagen instrumentalista pura** (estado cuántico solo describe conocimiento del observador) y declara compatibilidad con **interpretaciones realistas**:
 
@@ -344,11 +342,11 @@ La tesis NO decide entre estas interpretaciones realistas — esa decisión reba
 2. la tesis afirma que la materialidad es real independientemente del observador (cap 02-01 §0.1 naturalismo);
 3. el caso 31 (decoherencia) opera dentro de **decoherencia ambiental**, que es la interpretación realista más conservadora compatible con experimentos actuales.
 
-### 12bis.2. Implicación
+### 13.2. Implicación
 
 La afirmación "estructuras pre-ontológicas a escala cuántica" tiene sentido **bajo interpretación realista** de la mecánica cuántica. Bajo Copenhagen pura, las "estructuras" serían artefacto del acto de medición, lo cual sería incompatible con la tesis. Por eso la tesis se compromete con la familia realista, sin decidir entre sus miembros.
 
-## 12ter. Evolución conceptual
+## 14. Evolución conceptual
 
 La formulación intuitiva de partida evolucionó hacia la versión canónica. Los claims principales que sobreviven íntegramente son: monismo material-dinámico, estructuras pre-ontológicas como atractores, compresión disciplinada como epistemología, asimetría L1↔B↔L3↔S, emergencia como self-organization, dossier de admisión, y la fórmula "X exhibe cierre operativo bajo I respecto a Q". Los claims refinados incluyen: caso 30 con circularidad reconocida, corpus post-hoc, AUC-ROC interno, κ-pragmática vs κ-ontológica distinguidas, sistema modal T explícito. La continuidad conceptual es fuerte; la honestidad metodológica es mayor en la versión actual.
 

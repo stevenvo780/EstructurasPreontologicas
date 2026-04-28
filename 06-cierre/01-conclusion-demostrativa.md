@@ -245,7 +245,7 @@ Establece el **irrealismo operativo** como tercera vía: ni cosa, ni ficción, s
 
 
 
-## 11. Cierre del cierre
+## 10. Cierre del cierre
 
 La diferencia entre una tesis demostrada y un manifiesto bien escrito es que la tesis demostrada **acepta perder y especifica cómo**. Este capítulo es el lugar donde la tesis del irrealismo operativo acepta perder. No pierde, hasta el momento del manuscrito. Pero acepta los términos de la pérdida posible:
 

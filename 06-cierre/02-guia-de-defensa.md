@@ -131,6 +131,14 @@ Explicar es elegir el nivel de descripción que preserva la organización releva
 
 **Respuesta breve**: la pregunta Q se fija fechada antes del intento de modelización, con tolerancia explícita y régimen de medición preestablecido. Cambiar Q después del fallo está prohibido por el protocolo. Las revisiones se documentan como nuevas Q. Esto cierra la inmunización: cada aplicación del marco lleva fecha y criterio.
 
+### Pregunta 11. Su p-value declarado tiene tasa empírica de tipo I de 24%, no 5%. ¿Cómo se sostiene la inferencia?
+
+**Respuesta breve**: la inferencia del manuscrito **no descansa en el p-value declarado, sino en los umbrales EDI**, que sí son robustos bajo hostile testing. Bajo random walk masivo (1500 ejecuciones), 0% supera el umbral strong (EDI ≥ 0.30) y sólo 0.6% supera weak (EDI ≥ 0.10). Por eso los 4 casos `overall_pass=True` y los 7 strong inter-escala se sostienen: están por encima de umbrales que el ruido puro no alcanza. La calibración correcta del p-value es refinamiento metodológico fechado en la deuda residual (cap 06-01), no condición previa de admisión de los hallazgos. Esta distinción —inferencia por umbrales robustos vs. inferencia por p-value calibrado— está declarada en el manuscrito y no se esconde.
+
+### Pregunta 12. Su corpus inter-escala está sobre datos sintéticos. ¿Cómo lo defienden?
+
+**Respuesta breve**: lo declaramos abiertamente. Los datos del corpus inter-escala son sintéticos derivados de parámetros publicados en literatura disciplinar (Lindblad, Bloch, Tyson-Novak, Hoffmann, Mackey-Glass, Leavitt, Plummer). La elevación a datos reales abiertos (IBM Quantum, BRENDA, PhysioNet, OGLE, Gaia DR3) está fechada como deuda priorizada de 6–12 meses post-defensa. Lo que el corpus inter-escala demuestra **hoy** es que el aparato y las sondas son **estructuralmente transferibles entre escalas** sin reentrenar arquitectura, verificado por test cruzado V4-01 (0/12 circularidad detectada sobre datos no-suyos). Lo que **NO** afirma es que ya existe validación experimental directa sobre datos reales en cada escala — eso es deuda. La distinción entre transferibilidad estructural verificada y validación empírica directa pendiente está explícita en cap 06-01 §8.2.
+
 ## 5. Qué conviene enfatizar
 
 - la tesis es general en estructura pero regional en demostración, y eso se nombra explícitamente;
