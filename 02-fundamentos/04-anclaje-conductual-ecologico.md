@@ -121,6 +121,15 @@ La historia no se trata como variable aparte; se incorpora como parte de las var
 
 Este es el aporte estructural del capítulo. La asimetría no es decorativa; es protocolo de admisión y traducción.
 
+### 8.0. Nota sobre el nivel cuantificacional de la asimetría
+
+La asimetría se formula con dos partes que viven en niveles cuantificacionales distintos. La validación lógica formal con ST (Anexo A.11, Hallazgo ST-1) detectó que mezclarlos en un solo nivel produce contradicción proposicional. La formulación correcta es:
+
+- **Universal:** la traducción B ↔ L3 es bidireccional para toda categoría admisible (`∀x ((B(x) ↔ L3(x)))`); el filtro de S vía B y L3 es universal (`∀x ((B(x) ∧ L3(x)) → S(x))`).
+- **Existencial:** las afirmaciones *"L1 no se deriva universalmente de S"* y *"S no se deriva universalmente de L1"* son **existenciales** (`∃x (L1(x) ∧ ¬S(x))` y `∃x (S(x) ∧ ¬L1(x))`), no negaciones de implicación universal. Significan: existen categorías L1 que no sobreviven al filtro y existen categorías S que no proceden de un L1 nombrado.
+
+Esto evita la trampa de leer la asimetría como negación universal (que sería contradictoria) y la fija como **distinción de cobertura**: B y L3 cubren completamente el espacio de categorías admisibles; L1 y S sólo se solapan parcialmente con ese espacio.
+
 ### 8.1. L1 con L3: indirecto y restrictivo
 
 L1 plantea preguntas comunicables (`¿cómo decide alguien por dónde caminar?`, `¿cómo recuerda una secuencia?`). Esas preguntas son indispensables para fijar relevancia. Pero L1 no responde: nombra el explanandum. La respuesta se construye en B y se formaliza en L3. L3 no debe responder con el mismo vocabulario de L1 (so pena de sustitución nominal); le habla a L1 solo a través de sus consecuencias observables.

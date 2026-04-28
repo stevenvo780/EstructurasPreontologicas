@@ -8,6 +8,10 @@ Este capítulo fija el suelo ontológico de la tesis: qué cuenta como existente
 
 > Existe un solo plano ontológico básico — sustrato material dinámico — sobre el cual se constituyen patrones estabilizados (atractores empíricos de sistemas dinámicos acoplados) que cuentan como entidades reales en sentido moderado. Las propiedades son disposiciones relacionales del sistema; la identidad es continuidad organizada bajo transformación; los niveles son registros descriptivos del mismo plano, no mundos separados. La ontología no multiplica sustancias y, simultáneamente, no empobrece la organización: es austera en sustancia y rica en relación, condicionada en cada paso por traducibilidad al nivel conductual-biológico (B) y por validación empírica.
 
+### Nota sobre el sistema modal asumido
+
+Cuando este capítulo y los posteriores invocan **necesidad** o **contingencia** (e.g., "la materialidad es necesaria", "el cierre operativo es contingente"), la lógica modal asumida es **al menos T (KT)**: el axioma de reflexividad `□P → P` está disponible. Esto significa que lo declarado como necesario implica que ocurre en el mundo de evaluación, evitando una lectura puramente esquemática de la necesidad. Sistemas más ricos (S4, S5) son admisibles para la lectura epistémica del capítulo 02-02. Esta declaración fue impuesta por la validación lógica formal con ST (Anexo A.11, Hallazgo ST-2): en `modal.k` básico la necesidad no implica efectividad, lo cual sería incoherente con la posición material-relacional.
+
 ## 1. Lo que existe
 
 ### 1.1. Sustrato material dinámico

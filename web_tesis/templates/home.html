@@ -1,0 +1,194 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section id="tesis" class="panel thesis-panel">
+  <aside class="toc-box">
+    <h3>Índice de la Tesis</h3>
+    <nav>
+      {% for item in thesis_toc %}
+      <a href="#{{ item.anchor }}" class="toc-l{{ item.level }}">{{ item.title }}</a>
+      {% endfor %}
+    </nav>
+  </aside>
+
+  <article class="thesis-content markdown-body">
+    {{ thesis_html|safe }}
+  </article>
+</section>
+
+<section id="capitulos" class="panel">
+  <div class="section-header">
+    <h2>Capítulos del Repositorio</h2>
+    <p>Versiones de trabajo por carpeta (las mismas que se ensamblan en <code>TesisFinal/Tesis.md</code>).</p>
+  </div>
+  <div class="case-grid">
+    {% for ch in chapters %}
+    <a href="/capitulos/{{ ch.slug }}" class="case-card">
+      <div class="case-head">
+        <span class="case-id">{{ ch.code }}</span>
+        <span class="case-category">{{ ch.docs|length }} docs</span>
+      </div>
+      <h3>{{ ch.title }}</h3>
+      <p>{{ ch.slug }}</p>
+    </a>
+    {% endfor %}
+  </div>
+</section>
+
+<section id="resumen" class="panel hero-panel">
+  <div>
+    <p class="kicker">Panel de control de tesis</p>
+    <h2>Lectura académica + analítica EDI multidominio</h2>
+    <p>
+      La tesis está arriba como documento principal. Debajo se expone la analítica del corpus EDI:
+      distribución de cierre operativo, robustez por criterio C1-C5+ y detalle caso a caso (30 casos).
+    </p>
+  </div>
+  <div class="stats-grid">
+    <article class="stat-card">
+      <span>Total de casos</span>
+      <strong>{{ summary.stats.total_cases }}</strong>
+    </article>
+    <article class="stat-card">
+      <span>overall_pass</span>
+      <strong>{{ summary.stats.overall_pass }}</strong>
+    </article>
+    <article class="stat-card">
+      <span>Significativos (perm)</span>
+      <strong>{{ summary.stats.significant }}</strong>
+    </article>
+    <article class="stat-card">
+      <span>Nivel 4 (strong)</span>
+      <strong>{{ summary.stats.nivel_4 }}</strong>
+    </article>
+    <article class="stat-card">
+      <span>EDI promedio</span>
+      <strong>
+        {% if summary.stats.edi_avg is not none %}
+          {{ '%.3f'|format(summary.stats.edi_avg) }}
+        {% else %}
+          n/a
+        {% endif %}
+      </strong>
+    </article>
+    <article class="stat-card">
+      <span>Reducción RMSE promedio</span>
+      <strong>
+        {% if summary.stats.rmse_reduction_avg is not none %}
+          {{ '%.1f%%'|format(summary.stats.rmse_reduction_avg * 100) }}
+        {% else %}
+          n/a
+        {% endif %}
+      </strong>
+    </article>
+  </div>
+
+  <div class="top-bottom-grid">
+    <article class="mini-table-card">
+      <h3>Top 5 EDI</h3>
+      <table>
+        <thead><tr><th>Caso</th><th>EDI</th><th>Nivel</th></tr></thead>
+        <tbody>
+          {% for row in summary.top_edi %}
+          <tr>
+            <td><a href="/casos/{{ row.case_name }}">{{ row.case_name }}</a></td>
+            <td>{{ '%.3f'|format(row.edi) }}</td>
+            <td>{{ row.nivel if row.nivel is not none else '—' }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </article>
+
+    <article class="mini-table-card">
+      <h3>Bottom 5 EDI</h3>
+      <table>
+        <thead><tr><th>Caso</th><th>EDI</th><th>Nivel</th></tr></thead>
+        <tbody>
+          {% for row in summary.bottom_edi %}
+          <tr>
+            <td><a href="/casos/{{ row.case_name }}">{{ row.case_name }}</a></td>
+            <td>{{ '%.3f'|format(row.edi) }}</td>
+            <td>{{ row.nivel if row.nivel is not none else '—' }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </article>
+  </div>
+</section>
+
+<section class="panel viz-panel">
+  <div class="viz-grid">
+    <article class="viz-card">
+      <h3>Niveles de Cierre Operativo</h3>
+      <div id="chart-levels" class="chart"></div>
+    </article>
+
+    <article class="viz-card">
+      <h3>Categorías de Emergencia</h3>
+      <div id="chart-categories" class="chart"></div>
+    </article>
+
+    <article class="viz-card">
+      <h3>Histograma EDI</h3>
+      <div id="chart-edi-hist" class="chart"></div>
+    </article>
+
+    <article class="viz-card">
+      <h3>Tasa de Aprobación por Criterio</h3>
+      <div id="chart-criteria-rates" class="chart"></div>
+    </article>
+
+    <article class="viz-card wide">
+      <h3>Dispersión EDI vs CR</h3>
+      <div id="chart-scatter" class="chart"></div>
+    </article>
+
+    <article class="viz-card wide">
+      <h3>Serie por Caso (EDI + RMSE Δ)</h3>
+      <div id="chart-timeline" class="chart"></div>
+    </article>
+
+    <article class="viz-card wide">
+      <h3>Grafo Caso ↔ Categoría</h3>
+      <div id="chart-graph" class="chart"></div>
+    </article>
+
+    <article class="viz-card full">
+      <h3>Mapa de Calor de Criterios</h3>
+      <div id="chart-heatmap" class="chart"></div>
+    </article>
+  </div>
+</section>
+
+<section id="casos" class="panel">
+  <div class="section-header">
+    <h2>Casos del Corpus EDI</h2>
+    <p>Detalle individual con métricas, reporte, docs y material gráfico.</p>
+  </div>
+  <div class="case-grid">
+    {% for case in cases %}
+    <a href="/casos/{{ case.case_name }}" class="case-card {% if case.metrics.overall_pass %}pass{% else %}fail{% endif %}">
+      <div class="case-head">
+        <span class="case-id">{{ "%02d"|format(case.case_num) if case.case_num is not none else "--" }}</span>
+        <span class="case-category">{{ case.metrics.category }}</span>
+      </div>
+      <h3>{{ case.title }}</h3>
+      <p>{{ case.case_name }}</p>
+      <div class="case-metrics">
+        <span>EDI: {{ '%.3f'|format(case.metrics.edi) if case.metrics.edi is not none else 'n/a' }}</span>
+        <span>CR: {{ '%.3f'|format(case.metrics.cr) if case.metrics.cr is not none else 'n/a' }}</span>
+        <span>RMSE Δ: {{ '%.1f%%'|format(case.metrics.rmse_reduction * 100) if case.metrics.rmse_reduction is not none else 'n/a' }}</span>
+        <span>Nivel: {{ case.metrics.nivel if case.metrics.nivel is not none else '—' }}</span>
+      </div>
+    </a>
+    {% endfor %}
+  </div>
+</section>
+{% endblock %}
+
+{% block scripts %}
+<script id="summary-data" type="application/json">{{ summary_json|safe }}</script>
+<script src="{{ request.url_for('static', path='js/dashboard.js') }}"></script>
+{% endblock %}

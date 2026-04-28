@@ -1,0 +1,182 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="panel case-hero">
+  <a class="back-link" href="/">← Volver al tablero</a>
+  <p class="kicker">Caso {{ "%02d"|format(case.case_num) if case.case_num is not none else "--" }}</p>
+  <h2>{{ case.title }}</h2>
+  <p><code>{{ case.case_name }}</code></p>
+  <p class="case-meta">
+    {% if case.meta.generated_at %}<span>Generado: {{ case.meta.generated_at }}</span>{% endif %}
+    {% if case.meta.git and case.meta.git.commit %}<span>Commit: <code>{{ case.meta.git.commit[:10] }}</code></span>{% endif %}
+    <span>Fases: {{ case.phase_order|join(", ") if case.phase_order else "n/a" }}</span>
+  </p>
+
+  <div class="stats-grid">
+    <article class="stat-card">
+      <span>EDI</span>
+      <strong>{{ '%.3f'|format(case.metrics.edi) if case.metrics.edi is not none else 'n/a' }}</strong>
+    </article>
+    <article class="stat-card">
+      <span>p-perm</span>
+      <strong>{{ '%.3f'|format(case.metrics.pvalue) if case.metrics.pvalue is not none else 'n/a' }}</strong>
+    </article>
+    <article class="stat-card">
+      <span>CR</span>
+      <strong>{{ '%.3f'|format(case.metrics.cr) if case.metrics.cr is not none else 'n/a' }}</strong>
+    </article>
+    <article class="stat-card">
+      <span>Categoría</span>
+      <strong>{{ case.metrics.category }}</strong>
+    </article>
+    <article class="stat-card">
+      <span>Nivel</span>
+      <strong>{{ case.metrics.nivel if case.metrics.nivel is not none else '—' }}</strong>
+    </article>
+    <article class="stat-card">
+      <span>overall_pass</span>
+      <strong>{{ 'PASS' if case.metrics.overall_pass else 'FAIL' }}</strong>
+    </article>
+  </div>
+
+  {% if case.interpretation %}
+  <p class="interpretation">{{ case.interpretation }}</p>
+  {% endif %}
+
+  {% if case.insights %}
+  <div class="insights-box">
+    <h3>Lectura Rápida del Caso</h3>
+    <ul>
+      {% for insight in case.insights %}
+      <li>{{ insight }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% endif %}
+</section>
+
+<section class="panel viz-panel">
+  <div class="section-header">
+    <h2>Panel Analítico del Caso</h2>
+    <p>Comparación real/sintético, compuertas, error, calibración y patrones operativos.</p>
+  </div>
+  <div class="viz-grid case-viz-grid">
+    <article class="viz-card">
+      <h3>Comparación Global por Fase</h3>
+      <div id="case-chart-phase-overview" class="chart"></div>
+    </article>
+    <article class="viz-card">
+      <h3>EDI, Intervalos y Permutación</h3>
+      <div id="case-chart-edi-evidence" class="chart"></div>
+    </article>
+    <article class="viz-card">
+      <h3>Compuertas de Validación</h3>
+      <div id="case-chart-gates" class="chart"></div>
+    </article>
+    <article class="viz-card">
+      <h3>Errores (RMSE) y Ganancia</h3>
+      <div id="case-chart-errors" class="chart"></div>
+    </article>
+    <article class="viz-card">
+      <h3>Correlaciones y Symploke</h3>
+      <div id="case-chart-correlations" class="chart"></div>
+    </article>
+    <article class="viz-card">
+      <h3>Calibración de Parámetros</h3>
+      <div id="case-chart-calibration" class="chart"></div>
+    </article>
+    <article class="viz-card">
+      <h3>Robustez C1-C5 (Detalles)</h3>
+      <div id="case-chart-details" class="chart"></div>
+    </article>
+    <article class="viz-card">
+      <h3>No Localidad, Persistencia y Ruido</h3>
+      <div id="case-chart-dynamics" class="chart"></div>
+    </article>
+    <article class="viz-card full">
+      <h3>Matriz de Checks y Taxonomía</h3>
+      <div id="case-chart-checks" class="chart"></div>
+    </article>
+    <article class="viz-card full">
+      <h3>Tabla Comparativa Completa</h3>
+      <div id="case-chart-table" class="chart"></div>
+    </article>
+  </div>
+</section>
+
+{% if case.heatmap_image_url or case.metrics_image_url %}
+<section class="panel media-grid">
+  {% if case.heatmap_image_url %}
+  <article>
+    <h3>Mapa de Calor</h3>
+    <img src="{{ case.heatmap_image_url }}" alt="Heatmap {{ case.case_name }}" loading="lazy" />
+  </article>
+  {% endif %}
+
+  {% if case.metrics_image_url %}
+  <article>
+    <h3>Resumen Gráfico de Métricas</h3>
+    <img src="{{ case.metrics_image_url }}" alt="Métricas {{ case.case_name }}" loading="lazy" />
+  </article>
+  {% endif %}
+</section>
+{% endif %}
+
+<section class="panel files-panel">
+  <h3>Artefactos y Documentación</h3>
+  <div class="file-links">
+    <a href="/{{ case.metrics_path }}" target="_blank" rel="noreferrer">metrics.json</a>
+    {% if case.report_url %}<a href="{{ case.report_url }}" target="_blank" rel="noreferrer">report.md</a>{% endif %}
+    {% if case.thesis_readme_url %}<a href="{{ case.thesis_readme_url }}" target="_blank" rel="noreferrer">README.md</a>{% endif %}
+    {% for doc in case.docs %}
+      <a href="{{ doc.url }}" target="_blank" rel="noreferrer">docs/{{ doc.name }}</a>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="panel docs-panel">
+  <h3>Documentación Técnica y Explicación Matemática</h3>
+  <p class="docs-subtitle">Resumen formal del caso + documentación metodológica usada en tesis.</p>
+
+  {% if math_explainer_html %}
+  <article class="docs-block markdown-body">
+    {{ math_explainer_html|safe }}
+  </article>
+  {% endif %}
+
+  {% if thesis_readme_html %}
+  <article class="docs-block markdown-body">
+    <h4>README del Caso</h4>
+    {{ thesis_readme_html|safe }}
+  </article>
+  {% endif %}
+
+  {% if thesis_docs_html %}
+  <div class="docs-accordion-list">
+    {% for doc in thesis_docs_html %}
+    <details class="doc-accordion" {% if loop.first %}open{% endif %}>
+      <summary>
+        <span>{{ doc.title }}</span>
+        <a href="{{ doc.url }}" target="_blank" rel="noreferrer">{{ doc.name }}</a>
+      </summary>
+      <div class="markdown-body">
+        {{ doc.html|safe }}
+      </div>
+    </details>
+    {% endfor %}
+  </div>
+  {% endif %}
+</section>
+
+{% if report_html %}
+<section class="panel markdown-body">
+  <h3>Reporte Narrativo del Caso</h3>
+  {{ report_html|safe }}
+</section>
+{% endif %}
+{% endblock %}
+
+{% block scripts %}
+<script id="case-data" type="application/json">{{ case|tojson }}</script>
+<script src="{{ request.url_for('static', path='js/case_charts.js') }}"></script>
+{% endblock %}

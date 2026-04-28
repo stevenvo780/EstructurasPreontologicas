@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="panel case-hero">
+  <a class="back-link" href="/#capitulos">← Volver al índice de capítulos</a>
+  <p class="kicker">Capítulo {{ chapter.code }}</p>
+  <h2>{{ chapter.title }}</h2>
+  <p><code>{{ chapter.slug }}/</code> — {{ chapter.docs|length }} documentos</p>
+</section>
+
+<section class="panel thesis-panel">
+  <aside class="toc-box">
+    <h3>Documentos</h3>
+    <nav>
+      {% for doc in chapter.docs %}
+      <a href="#{{ doc.anchor }}" class="toc-l1">{{ doc.title }}</a>
+      {% endfor %}
+    </nav>
+  </aside>
+
+  <article class="thesis-content">
+    {% for doc in chapter.docs %}
+    <details class="doc-accordion" id="{{ doc.anchor }}" {% if loop.first %}open{% endif %}>
+      <summary>
+        <span>{{ doc.title }}</span>
+        <a href="{{ doc.url }}" target="_blank" rel="noreferrer">{{ doc.name }}</a>
+      </summary>
+      <div class="markdown-body">
+        {{ doc.html|safe }}
+      </div>
+    </details>
+    {% endfor %}
+  </article>
+</section>
+{% endblock %}

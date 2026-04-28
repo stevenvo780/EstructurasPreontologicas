@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{{ page_title }}</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" />
+  <link rel="stylesheet" href="{{ request.url_for('static', path='css/app.css') }}" />
+</head>
+<body>
+  <div class="bg-aura"></div>
+  <header class="topbar">
+    <div class="brand">
+      <h2>Estructuras Pre-Ontológicas — Irrealismo Operativo</h2>
+    </div>
+    <nav class="nav-actions">
+      <a href="/">Inicio</a>
+      <a href="/#tesis">Tesis</a>
+      <a href="/#capitulos">Capítulos</a>
+      <a href="/#resumen">Resumen</a>
+      <a href="/#casos">Casos EDI</a>
+      <a href="/?refresh=1">Refrescar datos</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    {% block content %}{% endblock %}
+  </main>
+
+  <footer class="footer">
+    <p>
+      Datos fuente: <code>09-simulaciones-edi/*_caso_*/outputs/metrics.json</code>,
+      <code>TesisFinal/Tesis.md</code>, capítulos <code>00-proyecto/</code> a <code>06-cierre/</code>.
+    </p>
+    <p>
+      Tesis doctoral de Jacob Agudelo (Universidad de Antioquia) y Steven Vallejo Ortiz.
+    </p>
+  </footer>
+
+  {% block scripts %}{% endblock %}
+  <script defer src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+  <script defer src="{{ request.url_for('static', path='js/markdown_render.js') }}"></script>
+</body>
+</html>

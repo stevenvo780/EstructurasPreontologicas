@@ -93,6 +93,7 @@ A la Universidad de Antioquia, por sostener una tradición de filosofía de la c
     ('Anexo A.8: Tablas crudas del corpus EDI', 'Anexos/A8-tablas-crudas-corpus.md', None),
     ('Anexo A.9: Listas de figuras, tablas y abreviaturas', 'Anexos/A9-listas-figuras-tablas-abreviaturas.md', None),
     ('Anexo A.10: Figuras Mermaid', 'Anexos/A10-figuras-mermaid.md', None),
+    ('Anexo A.11: Validación lógica formal con ST', 'Anexos/A11-validacion-st.md', None),
     ('Auditoría doctoral integral', 'Auditoria_Doctoral.md', None),
     ('Bibliografía', '07-bibliografia/01-bibliografia-orientativa.md', None),
 ]

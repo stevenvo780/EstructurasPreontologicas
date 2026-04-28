@@ -15,7 +15,15 @@ const suite = [
   { file: 'theories/01-criterios-legitimidad.st', mode: 'check' },
   { file: 'theories/02-debates-y-limites.st', mode: 'check' },
   { file: 'theories/03-text-layer-tesis.st', mode: 'run' },
-  { file: 'theories/04-text-layer-bibliografia.st', mode: 'run' }
+  { file: 'theories/04-text-layer-bibliografia.st', mode: 'run' },
+  { file: 'theories/05-asimetria-l1-b-l3-s.st', mode: 'run' },
+  { file: 'theories/06-operadores-y-circularidad.st', mode: 'run' },
+  { file: 'theories/07-overall-pass-13-condiciones.st', mode: 'run' },
+  { file: 'theories/08-discriminacion-rivales.st', mode: 'run' },
+  { file: 'theories/09-niveles-paisaje.st', mode: 'run' },
+  { file: 'theories/10-falsabilidad.st', mode: 'run' },
+  { file: 'theories/11-modal-coherencia-epistemica.st', mode: 'run' },
+  { file: 'theories/12-paraconsistencia-wolfram.st', mode: 'run' }
 ];
 
 mkdirSync(reportsDir, { recursive: true });
