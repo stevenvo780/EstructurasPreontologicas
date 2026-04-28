@@ -2,7 +2,19 @@
 
 ## Función de este capítulo
 
-Este capítulo aloja el **aparato empírico de la tesis**: el motor de simulación híbrido ABM+ODE, los **30 casos del corpus inter-dominio**, los **10 casos del corpus inter-escala** (ver `corpus_multiescala/`), y la infraestructura de ejecución, auditoría y reporte. El corpus inter-dominio cubre física, biología, economía, política, tecnología, cultura y conducta humana con sondas ODE específicas por dominio. El corpus inter-escala cubre **30 órdenes de magnitud** espaciales y temporales, desde dinámica de espín-órbita atómica (10⁻¹⁰ m, 10⁻¹⁵ s) hasta dinámica de cúmulos globulares (10²⁰ m, 10¹⁴ s). Validación canónica unificada en ambos corpus.
+Este capítulo aloja la **justificación operativa del marco general** de la tesis: el motor de simulación híbrido ABM+ODE, los **30 casos del corpus inter-dominio**, los **10 casos del corpus inter-escala** (ver `corpus_multiescala/`), y la infraestructura de ejecución, auditoría y reporte. El corpus inter-dominio cubre física, biología, economía, política, tecnología, cultura y conducta humana con sondas ODE específicas por dominio. El corpus inter-escala cubre **30 órdenes de magnitud** espaciales y temporales, desde dinámica de espín-órbita atómica (10⁻¹⁰ m, 10⁻¹⁵ s) hasta dinámica de cúmulos globulares (10²⁰ m, 10¹⁴ s). Validación canónica unificada en ambos corpus.
+
+### Estatus epistémico de los casos: justificación, no tesis
+
+Los 40 casos del corpus **no son la tesis**. La tesis son los tres marcos generales:
+
+- **ontología general** (cap 02-01): cuatro invariantes (sustrato material dinámico, acoplamiento, atractor empírico, cierre operativo κ) válidos a cualquier escala;
+- **epistemología general** (cap 02-02): una teoría del conocimiento como compresión disciplinada bajo intervención ablativa, válida a cualquier escala;
+- **metodología general** (cap 03): un aparato formal y empírico que ejecuta la epistemología sobre la ontología sin reentrenar arquitectura entre dominios o escalas.
+
+Los 40 casos son **justificación operativa parcial de los tres marcos**: instancias verificables que muestran que las afirmaciones generales son ejecutables, discriminantes y transferibles. La generalidad del marco es **conceptualmente independiente** del tamaño del corpus: si el corpus tuviera 4 o 400 casos, el marco general no cambiaría — solo la fuerza inferencial del respaldo cambiaría. Lo que el corpus aporta es **demostración operativa de transferibilidad** (el aparato funciona en 8 escalas y 30 dominios) y **discriminación verificada** (gate completo robusto bajo random walk masivo, controles de falsación rechazados, sondas específicas).
+
+Esta distinción importa filosóficamente: confundir el corpus con la tesis sería caer en la falacia inductivista (más casos → más verdad). El marco general se sostiene por su **estructura interna coherente y operativamente articulada**, no por la cuenta de casos. El corpus respalda; la tesis se sostiene en su propia articulación tripartita general.
 
 ## Tesis del capítulo
 

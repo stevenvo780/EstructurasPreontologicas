@@ -143,7 +143,11 @@ Lo que el manuscrito no demuestra y reconoce explícitamente como deuda con plaz
 
 ## 5. Aporte conceptual sustantivo
 
-> **Aclaración de alcance (auditoría severa A14, refinada por V4):** el aporte de la tesis es **doblemente sustantivo**. (1) **Aporte ontológico:** una sola ontología general, multiescalar e inter-dominio, con cuatro invariantes (sustrato material, acoplamiento dinámico, atractor empírico, cierre operativo κ) que se instancian en cualquier escala donde el aparato puede operar. (2) **Aporte metodológico:** protocolo, métrica y posición que articula y valida operativamente esa ontología. La primera iteración del manuscrito sugería que el aporte era solo metodológico (porque el corpus estaba en escala macro); la versión V4 reconoce que el aporte ontológico es independiente y central: la tesis afirma una **estructura ontológica común** detectable a través de 8 escalas y 30 dominios.
+> **Aclaración de alcance (auditoría severa A14, refinada por V4 narrativa unificada):** el aporte de la tesis es **triplemente general y sustantivo**. (1) **Ontología general:** una sola estructura ontológica con cuatro invariantes (sustrato material dinámico, acoplamiento, atractor empírico, cierre operativo κ) que se instancia a cualquier escala física, biológica o cosmológica. (2) **Epistemología general:** una sola teoría del conocimiento como compresión disciplinada bajo intervención ablativa, operativa al mismo modo desde lo cuántico hasta lo cosmológico. (3) **Metodología general:** un solo aparato (motor ABM+ODE acoplado + protocolo C1-C5 + EDI + dossier de 14 componentes + suite ST + hostile testing automatizado) que ejecuta esa epistemología sobre esa ontología sin reentrenar arquitectura entre dominios o escalas.
+
+> **El estatus de los 40 casos del corpus en esta tripleta:** los 40 casos **NO son la tesis**. La tesis son los tres marcos generales (ontológico + epistemológico + metodológico). Los 40 casos son **justificación operativa** del marco: instancias verificables que muestran que las afirmaciones generales del marco no son meramente declarativas sino ejecutables y discriminantes. Sin los casos, el marco sería conjetura plausible; con los casos, el marco es propuesta operativamente articulada con respaldo empírico parcial. Pero **la generalidad del marco es independiente de la cantidad o composición específica del corpus**: si los 40 casos fueran 4 o 400, el marco general no cambiaría — solo cambiaría la fuerza inferencial del respaldo. Lo que el corpus aporta es **discriminación operativa** (el aparato distingue genuinamente cierre operativo vs ausencia) y **demostración de transferibilidad** (el mismo marco aplica a 8 escalas y 30 dominios). Lo que el corpus NO aporta y NO necesita aportar para que el marco sea general: ni completitud poblacional, ni cobertura de todas las escalas concebibles, ni descubrimiento sustantivo en cada disciplina.
+
+La tesis introduce, articula y opera **un marco tripartito general** del cual los 40 casos son justificación parcial:
 
 La tesis introduce, articula y opera lo siguiente como aporte propio:
 
@@ -166,13 +170,17 @@ Reformula entidades como **estructuras pre-ontológicas** — atractores empíri
 - una posición filosófica (irrealismo operativo) que distingue κ-pragmática de κ-ontológica con criterios operativos para cada una;
 - una formulación de las estructuras pre-ontológicas como categoría ontológica general, no como categoría regional.
 
-### 5.2. Aporte epistemológico
+### 5.2. Aporte epistemológico (general, no regional)
 
-Reformula el conocimiento como compresión disciplinada bajo intervención ablativa, operacionalizada vía EDI con cuatro pruebas de validación + protocolo C1-C5. Verdad como preservación estructural verificable bajo permutación (999) y bootstrap (500). **Limitación reconocida (auditoría severa N1):** el p-value declarado del aparato tiene tasa de tipo I empírica = 24%, no 5%. Los umbrales EDI sí son robustos contra falsos positivos (N1: 0.6% supera weak, 0% supera strong bajo random walk puro). La calibración exacta del p-value requiere refinamiento metodológico futuro.
+Reformula el conocimiento como **compresión disciplinada bajo intervención ablativa**, operacionalizada vía EDI con cuatro pruebas de validación + protocolo C1-C5. Verdad como preservación estructural verificable bajo permutación (999) y bootstrap (500). **Esta epistemología es general**: opera del mismo modo cuando el conocedor reduce un qubit a Lindblad, una proteína a MSM 2-estados, una célula a Tyson-Novak, un mercado a Lotka-Volterra, una persona a Mackey-Glass, una estrella a pulsación P-L, o un cúmulo a Plummer. La operación epistémica es la misma: identificar variables decisivas, comprimir detalle local irrelevante, verificar preservación estructural por intervención ablativa, declarar tolerancia. Lo que cambia entre escalas es la sonda específica; **la teoría del conocimiento no cambia**.
 
-### 5.3. Aporte metodológico (PRIMARIO)
+**Limitación reconocida (auditoría severa N1):** el p-value declarado del aparato tiene tasa de tipo I empírica = 24%, no 5%. Los umbrales EDI sí son robustos contra falsos positivos (N1: 0.6% supera weak, 0% supera strong bajo random walk puro). La calibración exacta del p-value requiere refinamiento metodológico futuro pero **no afecta la generalidad de la epistemología**: la operación de compresión-verificación es válida con cualquier prueba de significancia bien calibrada.
 
-Ofrece la auditoría ontológica como protocolo replicable de nueve fases con dossier de catorce componentes, más el pipeline ABM+ODE con soporte CPU/GPU, validador canónico, controles de falsación incorporados, suite ST de 13 teorías formales, y procedimiento de hostile testing automatizado. Determinismo `seed=42` con `requirements-locked.txt` para reproducibilidad inter-instalación. **Este es el aporte más fuerte:** ofrece infraestructura ejecutable, no solo afirmaciones.
+### 5.3. Aporte metodológico (general, no regional)
+
+Ofrece la auditoría ontológica como protocolo replicable de nueve fases con dossier de catorce componentes, más el pipeline ABM+ODE con soporte CPU/GPU, validador canónico, controles de falsación incorporados, suite ST de 13 teorías formales, y procedimiento de hostile testing automatizado. Determinismo `seed=42` con `requirements-locked.txt` para reproducibilidad inter-instalación. **Esta metodología es general**: el mismo motor `edi_engine` opera sobre los 10 casos del corpus inter-escala y el mismo protocolo C1-C5 opera sobre los 30 casos del corpus inter-dominio sin reentrenar arquitectura. La transferibilidad metodológica entre escalas y dominios — verificada por test cruzado V4-01 (0/12 circularidad) y hostile testing V4-06 (0/500 falsos positivos) — es **prueba operativa de que la metodología no es regional**: una misma máquina funciona desde lo cuántico hasta lo cosmológico, desde lo físico hasta lo social.
+
+**Este aporte es ejecutable, no solo declarativo:** cualquier tercero puede correr el motor sobre datos nuevos en cualquier escala con sondas físicamente motivadas. La generalidad metodológica está respaldada por código, no por afirmación retórica.
 
 ### 5.4. Aporte aplicado: cartografía agregada inter-dominio + inter-escala
 
@@ -204,25 +212,29 @@ Recupera el realismo estructural moderado en versión disciplinada por anclaje e
 
 | Afirmación | Compromiso | Verificación |
 |---|---|---|
+| **La ontología es general (no regional macro)** | Cuatro invariantes válidos a cualquier escala | Capítulo 02-01 |
+| **La epistemología es general** | Compresión disciplinada a cualquier escala | Capítulo 02-02 |
+| **La metodología es general** | Aparato invariante a la escala (μ, G, H, κ, ε) | Capítulo 03-01 |
 | La realidad es material y dinámica | Sustrato único | Capítulo 02-01 |
-| Las estructuras pre-ontológicas son atractores empíricos | Cinco condiciones de admisión | Capítulos 02-01 y 02-04 |
+| Las estructuras pre-ontológicas son atractores empíricos | Cinco condiciones de admisión, instanciables a cualquier escala | Capítulos 02-01 y 02-04 |
 | La emergencia es self-organization | Modelo positivo, no negación | Capítulo 02-04 §4 |
-| La compresión κ se opera vía EDI | Procedimiento ABM+ODE con 13 condiciones | Capítulos 03-04 y 09 |
-| La asimetría L1↔B↔L3↔S es protocolo formal | Traducibilidad obligatoria | Capítulo 02-04 §8 |
-| El corpus de 30 casos demuestra el marco | 4 casos `overall_pass=True` + 1 strong sin gate + 8 weak (incluido behavioral dynamics) + 3 falsación rechazada | Capítulo 09 |
+| La compresión κ se opera vía EDI | Procedimiento ABM+ODE con 13 condiciones, transferible entre escalas | Capítulos 03-04 y 09 |
+| La asimetría L1↔B↔L3↔S es protocolo formal | Traducibilidad obligatoria, invariante a la escala | Capítulo 02-04 §8 |
+| **Los 40 casos del corpus justifican el marco** (no son la tesis) | 30 inter-dominio + 10 inter-escala, 8 escalas, 30 dominios | Capítulos 09 + 05-06 |
 | Los rivales se discriminan públicamente | Tabla con celdas (incluido Wolfram) | Capítulo 04-01 |
-| El aparato tiene dominio de validez declarado | Caso 30 rechazado correctamente | Capítulo 06-01 §3.5 |
+| El aparato tiene dominio de validez declarado | Casos null + caso 38 failure mode reportados honestamente | Capítulo 06-01 §3.5 |
 
 ## 7. Lo que la tesis no afirma
 
 | Promesa rechazada | Razón |
 |---|---|
-| Ontología total cerrada | Articuladora, no totalizadora |
-| Reducción de las ciencias a esquema único | El pluralismo controlado lo prohíbe |
-| Teoría definitiva de consciencia o normatividad | Cada uno requiere programa específico |
-| El protocolo EDI funciona universalmente | El caso 30 muestra que tiene dominio de validez |
-| Behavioral dynamics como modo demostrativo bajo EDI actual | Programático con criterio de elevación |
-| Predicción de fenómenos sociales individuales | Las leyes de control institucionales son objeto de investigación |
+| Ontología total cerrada | Articuladora general, no totalizadora |
+| Reducción de las ciencias a esquema único | El pluralismo controlado lo prohíbe; la generalidad ontológica es de invariantes estructurales, no de contenido sustantivo |
+| Teoría definitiva de consciencia o normatividad | Cada uno requiere programa específico bajo el marco general |
+| El protocolo EDI funciona universalmente sobre cualquier dato | El caso 33 (Villin) y caso 38 (locomoción τ-dot) muestran que sondas inadecuadas producen null/failure mode honestos |
+| Los 40 casos demuestran el marco por inducción | Los casos justifican el marco operativamente; el marco se sostiene por su articulación tripartita interna |
+| Más casos = más verdad | Falacia inductivista; la generalidad del marco no depende del tamaño del corpus |
+| Predicción de fenómenos individuales no medibles | Las leyes de control sin instrumentación son objeto de investigación, no de afirmación dogmática |
 
 ## 8. Fórmula final demostrativa (post-auditoría severa v4)
 

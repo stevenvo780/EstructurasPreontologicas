@@ -1,12 +1,14 @@
-# Aparato formal mínimo
+# Aparato formal mínimo (metodología general)
 
 ## Función de este capítulo
 
-Este capítulo fija el aparato formal de la tesis. El formalismo no aparece para decorar con símbolos sino para disciplinar el pensamiento. Su función es impedir tres confusiones recurrentes — confundir realidad con modelo, categoría con entidad, complejidad con falta de estructura — y producir un lenguaje común que cualquier capítulo posterior pueda invocar. Lo que aquí se define es lo que los capítulos 03-02 (criterios), 03-03 (auditoría) y 03-04 (operacionalización empírica) operan. La formalización es deliberadamente mínima: gana precisión sin inventar metafísica matemática.
+Este capítulo fija el aparato formal de la tesis como **metodología general**. El formalismo no aparece para decorar con símbolos sino para disciplinar el pensamiento. Su función es impedir tres confusiones recurrentes — confundir realidad con modelo, categoría con entidad, complejidad con falta de estructura — y producir un lenguaje común que cualquier capítulo posterior pueda invocar. Lo que aquí se define es lo que los capítulos 03-02 (criterios), 03-03 (auditoría) y 03-04 (operacionalización empírica) operan. La formalización es deliberadamente mínima: gana precisión sin inventar metafísica matemática.
+
+**Estatus general del aparato:** los cinco operadores (μ, G, H, κ, ε) son **invariantes a la escala y al dominio**. La misma definición de μ aplica cuando la medición es de coherencia cuántica, de RMSD molecular, de actividad CDK celular, de demanda eléctrica, de heading conductual, de magnitud aparente estelar o de dispersión de velocidades en un cúmulo globular. Lo que cambia con cada caso es la sonda específica que se inserta en G y H; la **operación formal** —medir, graficar dependencias, comprimir, reabrir cuando aparezcan anomalías— es la misma. Esta invarianza no es coincidencia sintáctica: es el correlato metodológico de que la ontología y la epistemología son generales (cap 02-01 y 02-02). Si la ontología fuera regional, cada escala requeriría su propio aparato; como la ontología es general, una sola metodología basta.
 
 ## Tesis del capítulo
 
-> El aparato mínimo de la tesis consiste en cinco operadores (μ, G, H, κ, ε) y una pregunta paramétrica (Q con tolerancia τ). Cada operador tiene definición precisa, criterio de admisión, criterio de fallo y procedimiento empírico de aplicación. Ningún operador entra en el manuscrito sin protocolo. La formalización no es ontología adicional: es disciplina de inteligibilidad de la ontología material-relacional sobre fenómenos empíricamente accesibles.
+> El aparato mínimo de la tesis consiste en cinco operadores (μ, G, H, κ, ε) y una pregunta paramétrica (Q con tolerancia τ). Cada operador tiene definición precisa, criterio de admisión, criterio de fallo y procedimiento empírico de aplicación. Ningún operador entra en el manuscrito sin protocolo. La formalización **no es ontología adicional**: es disciplina de inteligibilidad de la ontología material-relacional general sobre fenómenos empíricamente accesibles **a cualquier escala**. Es **metodología general** porque la ontología que disciplina es general.
 
 ## 1. Niveles del esquema general
 

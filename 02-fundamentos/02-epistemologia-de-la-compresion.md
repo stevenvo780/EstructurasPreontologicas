@@ -1,16 +1,16 @@
-# Epistemología de la compresión multiescala
+# Epistemología general de la compresión multiescala
 
 ## Función de este capítulo
 
-Este capítulo fija la teoría del conocimiento de la tesis. La pregunta no es solo qué existe sino cómo accedemos a lo existente sin deformarlo por exceso de detalle, por pobreza categorial o por herencia lingüística. La respuesta general:
+Este capítulo fija la teoría general del conocimiento de la tesis. La pregunta no es solo qué existe sino cómo accedemos a lo existente sin deformarlo por exceso de detalle, por pobreza categorial o por herencia lingüística — **a cualquier escala donde queramos conocer**. La respuesta general:
 
-> conocer consiste en construir recortes que preserven dependencias reales con el menor costo explicativo y computacional compatible con la pregunta `Q` y con la tolerancia exigida por su uso.
+> conocer consiste en construir recortes que preserven dependencias reales con el menor costo explicativo y computacional compatible con la pregunta `Q` y con la tolerancia exigida por su uso, **independientemente de la escala física, biológica o cosmológica del fenómeno**.
 
-El capítulo se ocupa de tres cosas: (a) la diferencia entre realidad, modelo y categoría, (b) la teoría de la compresión y la expansión como operaciones epistémicas centrales, (c) la noción de verdad como preservación estructural. No repite la ontología (capítulo 02-01) ni anticipa el aparato formal (capítulo 03). Se ocupa solo de la función epistémica de los recortes.
+El capítulo se ocupa de tres cosas: (a) la diferencia entre realidad, modelo y categoría, (b) la teoría de la compresión y la expansión como operaciones epistémicas centrales, (c) la noción de verdad como preservación estructural. No repite la ontología (capítulo 02-01) ni anticipa el aparato formal (capítulo 03). Se ocupa solo de la función epistémica de los recortes — y lo hace **como teoría epistemológica general**, no como teoría restringida al conocimiento de fenómenos macro-poblacionales.
 
 ## Tesis del capítulo
 
-> El conocimiento no es copia ni invención. Es compresión disciplinada de estructura material-relacional bajo restricciones empíricas. Una compresión es legítima cuando preserva las dependencias relevantes para una pregunta `Q` con tolerancia explícita y produce predicción o intervención discriminante respecto a alternativas. La verdad de un modelo no es identidad con la realidad sino preservación estructural verificable.
+> El conocimiento es compresión disciplinada de estructura material-relacional bajo restricciones empíricas, **a cualquier escala**. Una compresión es legítima cuando preserva las dependencias relevantes para una pregunta `Q` con tolerancia explícita y produce predicción o intervención discriminante respecto a alternativas. La verdad de un modelo no es identidad con la realidad sino preservación estructural verificable. **Esta epistemología es general**: opera del mismo modo cuando el conocedor reduce un sistema cuántico a Lindblad, una proteína a MSM 2-estados, una célula a Tyson-Novak, un mercado a Lotka-Volterra, una persona a Mackey-Glass, una estrella a pulsación P-L, o un cúmulo a Plummer. La diferencia entre estos casos es la sonda específica; la **operación epistémica de compresión es la misma**.
 
 ## 1. Tres planos analíticamente disjuntos
 

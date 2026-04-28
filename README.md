@@ -12,7 +12,15 @@
 
 ## Idea-fuerza
 
-> Todo fenómeno empíricamente explicable, **a cualquier escala física, biológica o cosmológica**, está anclado en un sustrato material dinámico. Las entidades, niveles y categorías con que lo pensamos son **estructuras pre-ontológicas**: regularidades operativas anteriores a la objetualidad, identificables como atractores empíricamente robustos de sistemas dinámicos acoplados, admisibles solo bajo dossier de anclaje completo, protocolo C1-C5 satisfecho y EDI medido por intervención ablativa. **La tesis es ontológica general, no restringida a sistemas macro-poblacionales.**
+> Todo fenómeno empíricamente explicable, **a cualquier escala física, biológica o cosmológica**, está anclado en un sustrato material dinámico. Las entidades, niveles y categorías con que lo pensamos son **estructuras pre-ontológicas**: regularidades operativas anteriores a la objetualidad, identificables como atractores empíricamente robustos de sistemas dinámicos acoplados, admisibles solo bajo dossier de anclaje completo, protocolo C1-C5 satisfecho y EDI medido por intervención ablativa.
+
+**La tesis ofrece tres marcos generales simultáneos:**
+
+1. **Ontología general:** una sola estructura ontológica (sustrato material dinámico + acoplamiento + atractor empírico + cierre operativo κ) que se instancia a cualquier escala.
+2. **Epistemología general:** una sola teoría del conocimiento como compresión disciplinada bajo intervención ablativa, operativa al mismo modo desde lo cuántico hasta lo cosmológico.
+3. **Metodología general:** un solo aparato (motor ABM+ODE acoplado + protocolo C1-C5 + EDI + dossier de 14 componentes + suite ST) que ejecuta esa epistemología sobre esa ontología sin reentrenar arquitectura entre dominios o escalas.
+
+**Los 40 casos del corpus son justificación operativa de los tres marcos, NO son la tesis.** La tesis son los marcos generales; el corpus muestra que las afirmaciones generales de los marcos son ejecutables, discriminantes y transferibles. Sin los casos los marcos serían conjetura plausible; con los casos son propuesta operativamente articulada con respaldo empírico parcial. Pero **la generalidad de los marcos no depende del tamaño del corpus**.
 
 ## Posición filosófica: Irrealismo Operativo
 
