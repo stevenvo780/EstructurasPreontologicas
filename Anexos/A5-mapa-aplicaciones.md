@@ -1,14 +1,16 @@
-# Anexo A.5. Mapa de aplicaciones
+# Anexo A.5. Mapa de aplicaciones — corpus inter-dominio + inter-escala
 
 ## Función
 
-Mapa completo del paisaje de aplicaciones del marco. Cada caso aparece con su modo (demostrativo/programático), nivel de cierre operativo, criterio de elevación si procede, y referencias cruzadas.
+Mapa completo del paisaje de aplicaciones del marco como **ontología general multiescalar**. Cada caso aparece con su modo (demostrativo/programático), nivel de cierre operativo, escala instanciada, criterio de elevación si procede, y referencias cruzadas. El paisaje agrega 40 casos: 30 inter-dominio + 10 inter-escala. Cada caso es **instancia particular de los cuatro invariantes ontológicos** (sustrato material, acoplamiento dinámico, atractor empírico, cierre operativo κ); ningún caso es aplicación aislada del aparato a un dominio.
 
 ---
 
 ## Resumen ejecutivo
 
-**Total de casos:** 30 casos del corpus EDI multidominio.
+**Total de casos:** 40 (30 corpus inter-dominio + 10 corpus inter-escala). Cobertura conjunta: 8 escalas físicas/biológicas/cosmológicas + 7 dominios disciplinares heterogéneos.
+
+### Corpus inter-dominio (30 casos)
 
 **Distribución por modo:**
 
@@ -29,6 +31,21 @@ Mapa completo del paisaje de aplicaciones del marco. Cada caso aparece con su mo
 
 **Total con señal significativa:** 15/30 (50%).
 **Falsación correcta:** 3/3 (100%).
+
+### Corpus inter-escala (10 casos)
+
+| Nivel | Categoría | N | Casos (escala instanciada) |
+|:----:|-----------|:-:|----------------------------|
+| 4 | Strong (`overall_pass=True`) | 7 | 31 Decoherencia (cuántica), 32 Espín-órbita (atómica), 34 Michaelis-Menten (bioquímica), 36 NF-κB (celular oscilatoria), 37 HRV (individual), 39 Cefeida (astrofísica), 40 Cúmulo globular (astrofísica masiva) |
+| 3 | Weak | 1 | 35 Ciclo celular (celular) |
+| 0 | Null honesto | 1 | 33 Villin Headpiece (sonda equilibrio inadecuada) |
+| 0 | Failure mode | 1 | 38 Locomoción τ-dot (sonda mal especificada para reinicios discretos) |
+
+**Cobertura de escalas:** 30 órdenes de magnitud espaciales (10⁻¹⁰ m → 10²⁰ m), 30 órdenes temporales (10⁻¹⁵ s → 10¹⁴ s).
+
+### Lectura ontológica integrada
+
+Los 40 casos del corpus agregado **no son aplicaciones independientes**: cada uno es **instancia de los cuatro invariantes ontológicos** que la tesis afirma. Lo que cambia entre casos es el dominio sustantivo y la escala física donde los invariantes se materializan; la **estructura ontológica subyacente es una sola**. Esto es lo que la tesis llama *"ontología general multiescalar"*: una arquitectura común que se instancia diferenciadamente.
 
 ---
 

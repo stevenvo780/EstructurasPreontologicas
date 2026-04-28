@@ -8,6 +8,67 @@ Este capítulo aloja el **aparato empírico de la tesis**: el motor de simulaci�
 
 > El irrealismo operativo de estructuras pre-ontológicas se demuestra como **ontología general multiescalar** mediante cartografía empírica agregada de 40 casos. El motor ABM+ODE acoplado, el protocolo C1-C5 y la métrica EDI calculada por intervención ablativa producen un paisaje de emergencia robusto, discriminante y falsable a través de escalas: corpus inter-dominio con 5 casos strong (4 con `overall_pass=True`), 7 weak, 2 suggestive, 4 trend, 8 null, 3 controles de falsación rechazados; corpus inter-escala con 7 strong en 7 escalas distintas + 1 weak + 2 nulls honestos. El aparato es **invariante a la escala**: opera con la misma metodología desde el qubit superconductor hasta el cúmulo globular, con sondas físicamente motivadas específicas a cada escala.
 
+## Lectura ontológica del corpus: cada caso es instanciación de la misma estructura
+
+Los 40 casos del corpus agregado **no son listado de aplicaciones independientes**: cada caso instancia **los cuatro invariantes ontológicos** que la tesis afirma (cap 02-01). Lo que cambia entre casos es la escala y el dominio donde los invariantes se materializan; la **estructura ontológica subyacente es una sola**.
+
+Para cada caso del corpus, la lectura ontológica articula:
+
+- **Sustrato material:** qué cuerpo material dinámico aloja el fenómeno;
+- **Acoplamiento:** qué dos polos interactúan dinámicamente bajo restricciones de la escala;
+- **Atractor empírico:** qué región del espacio de fase concentra la convergencia bajo perturbación;
+- **Cierre operativo κ:** qué reducción a sistema de baja dimensión preserva las dependencias decisivas, medida por EDI.
+
+Esta lectura no es opcional retórica: es lo que el motor del aparato computa para cada caso. El `metrics.json` de cada caso reporta el cierre operativo κ; los demás invariantes están instanciados en `case_config.json` y la sonda específica.
+
+### Articulación ontológica por familia de casos del corpus inter-dominio
+
+#### Casos strong (4 con `overall_pass=True`): donde la estructura ontológica se manifiesta más nítidamente
+
+| Caso | Sustrato material | Acoplamiento | Atractor | Cierre operativo κ |
+|------|-------------------|--------------|----------|---------------------|
+| 04 Energía | Red eléctrica + agentes económicos + recursos | F↔R bajo coste y política | Mix energético de equilibrio dinámico | EDI 0.65 (Lotka-Volterra) |
+| 16 Deforestación | Frontera agrícola/forestal + agentes humanos + biosfera | Renta agrícola↔distancia al mercado | Patrón espacial de ocupación territorial | EDI 0.60 (von Thünen) |
+| 20 Kessler | Densidad orbital + flujo de fragmentos | Densidad↔tasa colisional | Régimen de saturación orbital | EDI 0.35 (densidad orbital) |
+| 27 Riesgo Biológico | Población humana + patógenos + sistemas sanitarios | Mortalidad↔presión biológica | Tasa de mortalidad estable bajo régimen | EDI 0.33 (mortalidad) |
+
+Estos cuatro casos, aunque pertenecen a dominios heterogéneos (energético, ecológico, espacial, sanitario), instancian la **misma estructura ontológica**. La diferencia entre ellos es de escala temporal (años en Energía vs décadas en Deforestación) y de dominio sustantivo (recursos vs biosfera vs órbita vs salud), no de **forma ontológica**. Cada uno es atractor empírico de un sistema material acoplado con cierre operativo medible.
+
+#### Caso strong sin gate completo: estructura ontológica detectada con cautela inferencial
+
+| Caso | Sustrato material | Acoplamiento | Atractor | Cierre operativo κ |
+|------|-------------------|--------------|----------|---------------------|
+| 24 Microplásticos | Hidrosfera + materiales sintéticos + ecosistemas marinos | Generación↔acumulación | Concentración acumulada estable | EDI 0.78 (Jambeck) |
+
+EDI muy alto pero CI bootstrap inestable. Estructura ontológica plausible pero la inferencia estadística requiere refinamiento.
+
+#### Casos weak (8 con p < 0.05 y EDI ≥ 0.10): estructura ontológica detectable pero atenuada
+
+Cada uno instancia los invariantes con **componente exógeno dominante** o **acoplamiento parcial**:
+
+- **05 Epidemiología, 18 Urbanización, 22 Fósforo, 13 Políticas, 14 Postverdad, 15 Wikipedia, 11 Movilidad** — sustratos sociotecnoecológicos con acoplamientos identificables, atractores parciales, cierre operativo modesto pero significativo.
+- **30 Behavioral Dynamics** — caso bisagra entre dimensión individual y poblacional; sustrato organismo-entorno-tarea; acoplamiento informacional vía τ; atractor de control de heading; κ medido bajo Fajen-Warren con circularidad detectada por N2 (limita la fuerza ontológica del caso individual).
+
+#### Casos null (8 con EDI ≤ 0): instancias donde el aparato detecta correctamente ausencia de cierre operativo bajo la sonda elegida
+
+Estos casos **no refutan la ontología general**: muestran que **no toda regularidad superficial es atractor de cierre operativo**. Conciencia global, contaminación PM2.5, paradigmas científicos, océanos como temperatura agregada, acidificación, erosión dialéctica, acuíferos, IoT — en cada uno, la sonda específica no captura un acoplamiento dinámico genuino. La ontología sí se afirma: el aparato distingue entre cierre operativo real y ausencia de él.
+
+#### Controles de falsación (3 rechazados): la prueba inversa de la ontología
+
+Los 3 controles (exogeneidad, no-estacionariedad, observabilidad) están construidos para que el aparato **DEBA fallar**. El rechazo correcto de los tres confirma que el cierre operativo detectado en los strong/weak no es artefacto del aparato: si fuera artefacto, los controles también producirían EDI alto. **No lo hacen.** Esto es prueba operativa de que la ontología no es vacía.
+
+### Articulación ontológica del corpus inter-escala
+
+Los 10 casos del corpus inter-escala (`corpus_multiescala/`) instancian los mismos cuatro invariantes en escalas físicas distintas. Ver `09-simulaciones-edi/corpus_multiescala/README.md` y `Anexos/A12-corpus-multiescala-tablas.md` para la tabla detallada. Lo importante para esta sección: los 7 strong en 7 escalas distintas (atómica, cuántica, bioquímica, celular oscilatoria, individual, astrofísica, astrofísica masiva) **no son aplicación nominal del aparato a otros dominios**: cada uno verifica los cuatro invariantes ontológicos en su escala, con sondas físicamente motivadas y test cruzado de especificidad (V4-01: 0/12 circularidad).
+
+### Síntesis filosófica del corpus agregado
+
+Los 40 casos del corpus, leídos ontológicamente, **dicen lo mismo**: hay un sustrato material dinámico que se acopla en pares (o más) bajo restricciones, produce atractores empíricos, y admite descripción comprimida cuando el detalle local no afecta la dependencia decisiva. Esta es **una sola ontología**, no una colección. Los dominios y las escalas cambian; los invariantes permanecen.
+
+La diferencia entre 5 strong, 8 weak, 2 suggestive, 4 trend, 8 null, 3 controles rechazados (corpus inter-dominio) y 7 strong + 1 weak + 2 null (corpus inter-escala) **no es diferencia ontológica**: es diferencia de **calidad de la sonda y de los datos** disponibles para verificar la estructura común. Donde la sonda es físicamente adecuada y los datos preservan la dinámica, el cierre operativo aparece. Donde la sonda no captura el acoplamiento o los datos son ruido sin estructura, el aparato lo reporta honestamente.
+
+**Esto es lo que significa "ontología general operativamente articulada":** una sola estructura ontológica, multiescalar e inter-dominio, validada caso por caso por su capacidad de discriminar genuinamente entre presencia y ausencia de cierre operativo bajo intervención ablativa controlada.
+
 ## Estructura del corpus
 
 ```

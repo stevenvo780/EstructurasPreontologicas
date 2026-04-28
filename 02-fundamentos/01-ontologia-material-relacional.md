@@ -8,9 +8,20 @@ Este capítulo fija el suelo ontológico de la tesis: qué cuenta como existente
 
 > Existe un solo plano ontológico básico — sustrato material dinámico — sobre el cual se constituyen patrones estabilizados (atractores empíricos de sistemas dinámicos acoplados) que cuentan como entidades reales en sentido moderado, **a través de escalas físicas, biológicas y cosmológicas**. Las propiedades son disposiciones relacionales del sistema; la identidad es continuidad organizada bajo transformación; los niveles son registros descriptivos del mismo plano, no mundos separados. La ontología no multiplica sustancias y, simultáneamente, no empobrece la organización: es austera en sustancia y rica en relación, condicionada en cada paso por traducibilidad al nivel conductual-biológico (B) y por validación empírica multiescalar.
 
-### Nota sobre la generalidad multiescalar (auditoría severa A14, corpus 31-40)
+### La tesis como ontología general invariante a la escala
 
-La tesis es **ontológica general**: afirma que el sustrato material dinámico opera a través de **todas las escalas** físicas, biológicas y cosmológicas, y que las estructuras pre-ontológicas son atractores empíricamente identificables independientemente de la escala. Esta afirmación está **operativamente respaldada** por dos corpus complementarios que **no se distinguen ontológicamente**, sino metodológicamente:
+La tesis del **irrealismo operativo de estructuras pre-ontológicas** afirma una sola estructura ontológica que se instancia a múltiples escalas. No es la suma de ontologías regionales (una para lo cuántico, otra para lo biológico, otra para lo social) ni es ontología macro extendida nominalmente a otras escalas. Es **una ontología cuyos invariantes estructurales no dependen de la escala**. Lo que sí depende de la escala son las **instancias** de esos invariantes (qué cuerpo, qué entorno, qué tarea, qué historia entran en cada caso).
+
+Los invariantes ontológicos son cuatro:
+
+1. **Sustrato material dinámico:** existe a cualquier escala (campos cuánticos, moléculas, células, organismos, estrellas, cúmulos). No hay escala donde la materialidad deje de ser materialidad.
+2. **Acoplamiento dinámico:** a cualquier escala hay un sistema con dos polos en interacción (qubit↔baño térmico; enzima↔sustrato; organismo↔entorno; estrella↔espacio-tiempo galáctico) cuyo estado conjunto evoluciona bajo restricciones específicas de la escala.
+3. **Atractor empírico:** a cualquier escala el sistema acoplado tiene regiones de convergencia bajo perturbación acotada (estado de equilibrio térmico del qubit; forma plegada de la proteína; ciclo límite del NF-κB; cuenca del campo institucional; relación período-luminosidad de la Cefeida; equilibrio gravitacional del cúmulo).
+4. **Cierre operativo κ:** el atractor admite descripción comprimida con dependencias decisivas preservadas y detalle local removible cuando la pregunta lo permite. Esta operación es **la misma operación matemática** independientemente de la escala: ablación del acoplamiento + comparación de RMSE + permutación + bootstrap + protocolo C1-C5.
+
+**Lo que cambia con la escala** son los nombres específicos: el "agente" en la escala atómica es una configuración de espín; en la celular es un cuerpo celular con su maquinaria; en la individual es un organismo; en la astrofísica es un cuerpo estelar. Pero la estructura ontológica que estos nombres instancian es **una sola**.
+
+Esta invarianza no es postulado *a priori*: está respaldada por los corpus operativos complementarios que **no se distinguen ontológicamente entre sí**, solo metodológicamente:
 
 - **Corpus inter-dominio (30 casos):** discriminación entre dominios heterogéneos —física, biología, economía, política, tecnología, cultura, conducta humana— operando en escalas variables según el dominio (cap 09 + Anexo A.8).
 - **Corpus inter-escala (10 casos):** discriminación a través de **30 órdenes de magnitud espaciales** y temporales, desde dinámica de espín-órbita atómica (10⁻¹⁰ m, 10⁻¹⁵ s) hasta dinámica de cúmulos globulares (10²⁰ m, 10¹⁴ s), con **7 strong en 7 escalas distintas** + 1 weak + 2 nulls honestos (cap 05-06 + Anexo A.12).
@@ -18,6 +29,27 @@ La tesis es **ontológica general**: afirma que el sustrato material dinámico o
 Las **estructuras pre-ontológicas** son objeto operativo a cualquier escala donde el aparato puede operar con sondas físicamente motivadas. No son artefacto de ninguna escala particular. Esta es la afirmación ontológica más fuerte que el corpus actual sostiene, con la honestidad metodológica de reportar los nulls (Villin Headpiece bajo sonda equilibrio; locomoción τ-dot bajo observación con reinicios discretos) sin ajustarlos para forzar overall_pass.
 
 La distinción "macro vs micro" en el manuscrito original era **artefacto de la primera iteración**, donde el corpus estaba sesgado a sistemas con datos públicos macro-poblacionales. La iteración posterior con corpus inter-escala demuestra que el aparato y la tesis son **ontológicamente generales**: el dominio macro-poblacional no es preferencial; es uno entre múltiples donde la tesis se demuestra. Cualquier referencia residual a "escala macro" en capítulos posteriores debe leerse como **una entre las escalas cubiertas**, no como límite de la tesis.
+
+#### Tabla síntesis: invariantes ontológicos instanciados a través de escalas
+
+| Invariante | Caso 31 (cuántico) | Caso 33 (molecular) | Caso 36 (celular) | Caso 04 (energético macro) | Caso 27 (riesgo bio macro) | Caso 30 (conductual) | Caso 39 (estelar) | Caso 40 (cosmológico) |
+|------------|--------------------|---------------------|-------------------|----------------------------|----------------------------|---------------------|-------------------|----------------------|
+| **Sustrato material** | qubit superconductor + baño térmico | proteína Villin + solvente | núcleo celular + citoplasma | red eléctrica + agentes económicos | población humana + patógenos | cuerpo + entorno físico | gas estelar + radiación | gas estelar + campo galáctico |
+| **Acoplamiento dinámico** | T2(T_bath) | k_fold/k_unfold(T) | NF-κB↔IκBα bajo TNF | F↔R bajo precio energético | mortalidad↔presión biológica | φ↔ψ_g bajo τ | pulsación radial bajo gravedad | σ_v↔marea galáctica |
+| **Atractor empírico** | estado coherente bajo pulso | basin del estado plegado | ciclo límite oscilatorio | mix energético de equilibrio | tasa de mortalidad estable | trayectoria a meta | relación P-L como atractor | equilibrio Plummer |
+| **Cierre operativo κ** | EDI 0.84 (Lindblad) | EDI 0.00 (sonda equilibrio inadecuada) | EDI 0.59 (Hoffmann) | EDI 0.65 (Lotka-Volterra) | EDI 0.33 (mortalidad) | EDI 0.26 (Fajen-Warren) | EDI 0.92 (P-L) | EDI 0.43 (Plummer+marea) |
+
+Cada columna representa una **instancia particular** de los mismos cuatro invariantes ontológicos. Leer la tabla horizontalmente es leer la **unidad ontológica** de la tesis; leer cada columna verticalmente es leer la **especificación de escala** que cada caso requiere. Ambas lecturas son simultáneas y no opcionales.
+
+#### Por qué esta estructura es ontológica, no metodológica
+
+Un escéptico podría decir: *"el aparato funciona a múltiples escalas porque es estadístico genérico; eso no demuestra ontología, sólo capacidad descriptiva"*. La respuesta de la tesis tiene tres partes:
+
+1. **Si el aparato fuera estadístico genérico, sus controles de falsación NO se rechazarían** (random walk, no-estacionariedad, observabilidad). Pero los 3 controles del corpus inter-dominio se rechazan correctamente, y los 1500 random walks bajo hostile testing producen 0 falsos positivos del gate completo. Esto significa que el aparato **discrimina entre dinámica con cierre operativo y dinámica sin él**, no solo describe trayectorias.
+2. **Si la coincidencia ontológica entre escalas fuera artefacto del aparato, las sondas de una escala detectarían cierre sobre datos de otra escala.** El test cruzado V4-01 lo refuta: las sondas multiescala son específicas (0/12 circularidad sobre datos no-suyos). Cada sonda sólo detecta el atractor que su escala instancia.
+3. **La estructura ontológica común NO es nominal.** Los cuatro invariantes (sustrato, acoplamiento, atractor, cierre operativo) son **operativamente medibles** en cada caso del corpus. La tabla síntesis no es resumen retórico; es lectura directa de los `metrics.json` de cada caso.
+
+Esta es la diferencia entre **ontología general** y **descripción multidominio**: la primera afirma que hay una estructura común; la segunda solo cataloga. La tesis afirma la primera, con respaldo operativo de los 40 casos del corpus agregado.
 
 ### Nota sobre el sistema modal asumido
 

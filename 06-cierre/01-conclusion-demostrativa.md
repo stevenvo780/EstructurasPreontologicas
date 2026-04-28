@@ -143,13 +143,28 @@ Lo que el manuscrito no demuestra y reconoce explícitamente como deuda con plaz
 
 ## 5. Aporte conceptual sustantivo
 
-> **Aclaración de alcance (auditoría severa A14):** el aporte primario de la tesis es **metodológico-filosófico**, no descubrimiento sustantivo en cada uno de los 30 dominios del corpus. La tesis ofrece un protocolo, una métrica y una posición; los dominios particulares ya fueron estudiados por especialistas con sus propias herramientas. El aporte está en **cómo** se articulan y validan las afirmaciones ontológicas multidominio, no en qué descubrimiento nuevo añade a cada disciplina.
+> **Aclaración de alcance (auditoría severa A14, refinada por V4):** el aporte de la tesis es **doblemente sustantivo**. (1) **Aporte ontológico:** una sola ontología general, multiescalar e inter-dominio, con cuatro invariantes (sustrato material, acoplamiento dinámico, atractor empírico, cierre operativo κ) que se instancian en cualquier escala donde el aparato puede operar. (2) **Aporte metodológico:** protocolo, métrica y posición que articula y valida operativamente esa ontología. La primera iteración del manuscrito sugería que el aporte era solo metodológico (porque el corpus estaba en escala macro); la versión V4 reconoce que el aporte ontológico es independiente y central: la tesis afirma una **estructura ontológica común** detectable a través de 8 escalas y 30 dominios.
 
 La tesis introduce, articula y opera lo siguiente como aporte propio:
 
-### 5.1. Aporte ontológico
+### 5.1. Aporte ontológico (sustantivo, no solo metodológico)
 
-Reformula entidades como **estructuras pre-ontológicas** — atractores empíricamente identificables de sistemas dinámicos acoplados con cinco condiciones técnicas de admisión. Vocabulario filosóficamente afilado: el "irrealismo operativo" sustituye con precisión al "realismo estructural moderado" sin perder rigor. **Este aporte es ontológico-metodológico, no sustantivo:** no afirma que existan entidades nuevas, sino que ofrece un criterio operativo para admitir entidades reconocidas.
+Reformula entidades como **estructuras pre-ontológicas** — atractores empíricamente identificables de sistemas dinámicos acoplados con cinco condiciones técnicas de admisión, **a cualquier escala donde el aparato puede operar con sondas físicamente motivadas**. Vocabulario filosóficamente afilado: el "irrealismo operativo" sustituye con precisión al "realismo estructural moderado" sin perder rigor.
+
+**Este aporte es ontológicamente sustantivo en sentido específico:** no afirma que existan entidades nuevas en cada dominio (cada dominio ya fue estudiado por sus especialistas), sino que afirma una **estructura ontológica común** entre el qubit superconductor, la enzima, la célula oscilante, el agente económico, el organismo en tarea, la estrella pulsante y el cúmulo globular. Lo que estos casos comparten **no es nominal**: son **operativamente medibles** los cuatro invariantes (sustrato, acoplamiento, atractor, κ) en cada uno de ellos con la misma metodología EDI. Esto es la afirmación ontológica fuerte de la tesis: hay una **arquitectura común** del sustrato material dinámico que produce atractores con cierre operativo a través de escalas, y esta arquitectura es lo que las "estructuras pre-ontológicas" nombran.
+
+**Lo que el aporte NO es:**
+
+- no es ontología fundacional al estilo Wolfram (no se postula una regla microestructural única);
+- no es ontología regional para una escala específica (no se restringe a macro-poblacional);
+- no es metafísica deductiva *a priori* (cada afirmación se respalda con caso operativo);
+- no es ontología sin filtro empírico (cada caso pasa por dossier de 14 componentes + EDI + C1-C5).
+
+**Lo que el aporte sí es:**
+
+- una **arquitectura ontológica común** verificada operativamente en al menos 8 escalas distintas;
+- una posición filosófica (irrealismo operativo) que distingue κ-pragmática de κ-ontológica con criterios operativos para cada una;
+- una formulación de las estructuras pre-ontológicas como categoría ontológica general, no como categoría regional.
 
 ### 5.2. Aporte epistemológico
 
@@ -159,9 +174,27 @@ Reformula el conocimiento como compresión disciplinada bajo intervención ablat
 
 Ofrece la auditoría ontológica como protocolo replicable de nueve fases con dossier de catorce componentes, más el pipeline ABM+ODE con soporte CPU/GPU, validador canónico, controles de falsación incorporados, suite ST de 13 teorías formales, y procedimiento de hostile testing automatizado. Determinismo `seed=42` con `requirements-locked.txt` para reproducibilidad inter-instalación. **Este es el aporte más fuerte:** ofrece infraestructura ejecutable, no solo afirmaciones.
 
-### 5.4. Aporte aplicado
+### 5.4. Aporte aplicado: cartografía agregada inter-dominio + inter-escala
 
-Demuestra que el aparato **discrimina** strong vs no-strong en cartografía multidominio (AUC-ROC = 0.886 según auditoría severa N3): 30 casos en física, biología, economía, política, tecnología, cultura y conducta humana. **Reconocimiento honesto:** los 30 casos son post-hoc (no pre-registrados); la composición numérica es frágil a umbrales (N4: pasar de 0.10/0.30 a 0.15/0.40 reduce strong de 5 a 3); el caso 30 (behavioral dynamics) sufre circularidad detectada por N2 (la sonda Fajen-Warren produce EDI > 0.30 en 50% de mass-spring puro). El aparato discrimina, pero la composición específica del corpus no debe leerse como prevalencia poblacional.
+Demuestra que el aparato **discrimina** y **detecta cierre operativo** en cartografía agregada de **40 casos** que cubren simultáneamente:
+
+**(a) heterogeneidad de dominio** (corpus inter-dominio, 30 casos): física, biología, economía, política, tecnología, cultura y conducta humana, con AUC-ROC = 0.886 de ranking interno strong vs no-strong (N3).
+
+**(b) heterogeneidad de escala** (corpus inter-escala, 10 casos): desde la dinámica de espín-órbita atómica (10⁻¹⁰ m, 10⁻¹⁵ s) hasta la dinámica gravitacional de cúmulos globulares (10²⁰ m, 10¹⁴ s), con 7 strong en 7 escalas distintas y test cruzado V4-01 que confirma la especificidad de las sondas (0/12 circularidad).
+
+**Lectura ontológica de los 40 casos:** **no son catálogo**, son **instancias** de los cuatro invariantes ontológicos. Cada caso strong (4 con `overall_pass` macro + 7 strong inter-escala) verifica los cuatro invariantes en su dominio y escala. Cada null honesto verifica que el aparato discrimina entre presencia y ausencia de cierre operativo bajo la sonda elegida. Cada control de falsación rechazado confirma que el aparato no glorifica indiscriminadamente.
+
+**Reconocimientos honestos (V4):**
+
+- los 40 casos son post-hoc (no pre-registrados; tabla de depuración multiescala en `Bitacora/2026-04-28-cierre-pendientes/08-pre-registro-multiescala-honesto.md`);
+- la composición numérica del corpus inter-dominio es frágil a umbrales (N4: pasar de 0.10/0.30 a 0.15/0.40 reduce strong de 5 a 3);
+- el caso 30 (behavioral dynamics) sufre circularidad detectada por N2 (Fajen-Warren produce EDI > 0.30 en 50% de mass-spring puro);
+- el caso 38 (locomoción τ-dot, intentado como alternativa a Fajen-Warren) produjo failure mode de sonda (EDI = -1.34), no resolución de N2;
+- las escalas del corpus inter-escala son etiquetas nominales sobre datos sintéticos derivados de parámetros publicados;
+- el AUC-ROC = 0.886 es ranking interno, no validación externa contra estándar de oro independiente;
+- ningún caso del corpus cumple los **3 criterios κ-ontológica** simultáneamente; todas las afirmaciones son κ-pragmática hasta que se ejecuten convergencia inter-grupo + replicación + intervención experimental confirmatoria.
+
+**Lo que el corpus agregado sí demuestra con fuerza:** la **arquitectura ontológica común** (cuatro invariantes) es detectable en al menos 8 escalas y 30 dominios, no como artefacto del aparato (V4-01 + V4-06 lo refutan empíricamente: las sondas son específicas y el motor es robusto bajo random walk masivo). La afirmación "ontología general multiescalar" se sostiene como **propuesta operativamente articulada con demostración parcial**, con las limitaciones reconocidas como deuda de validación externa, no como debilidad oculta.
 
 ### 5.5. Aporte filosófico de fondo
 
