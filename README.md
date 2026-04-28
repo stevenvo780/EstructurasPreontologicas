@@ -32,8 +32,8 @@ La tesis está **demostrada** en cartografía multidominio de **30 casos** del c
 
 ```
 .
-├── tesis.md                          ← manuscrito-fuente consolidado
 ├── README.md                         ← este archivo
+├── TesisFinal/                       ← manuscrito doctoral ensamblado (Tesis.md + Tesis.pdf)
 ├── 00-proyecto/                      ← arquitectura, preguntas, plan de capítulos
 ├── 01-diagnostico/                   ← falencias, objeciones, sesiones (subcarpeta)
 ├── 02-fundamentos/                   ← ontología, epistemología, categorías, nivel B
@@ -44,7 +44,7 @@ La tesis está **demostrada** en cartografía multidominio de **30 casos** del c
 ├── 07-bibliografia/                  ← corpus PDF y mapa de interlocutores
 ├── 08-consistencia-st/               ← capa ST de validación lógica
 ├── 09-simulaciones-edi/              ← código y outputs de los 30 casos del corpus EDI
-└── Procesos/                         ← bitácoras, trazabilidad histórica y mega-tareas archivadas
+└── Bitacora/                         ← bitácoras, trazabilidad histórica y mega-tareas archivadas
 ```
 
 ## Orden recomendado de lectura
@@ -66,7 +66,7 @@ La tesis está **demostrada** en cartografía multidominio de **30 casos** del c
 
 ### Para autor o continuador del proyecto
 
-Igual que arriba, más todos los capítulos restantes y `Procesos/2026-04-27-integracion-jacob/00-bitacora.md` para entender cómo se consolidaron las dos iteraciones.
+Igual que arriba, más todos los capítulos restantes y `Bitacora/2026-04-27-integracion-jacob/00-bitacora.md` para entender cómo se consolidaron las dos iteraciones.
 
 ## Hardware disponible para validación empírica
 

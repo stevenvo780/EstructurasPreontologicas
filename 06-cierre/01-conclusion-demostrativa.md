@@ -210,8 +210,8 @@ Recupera el realismo estructural moderado en versión disciplinada por anclaje e
 - aplicaciones programáticas: capítulos 05-01 a 05-04;
 - guía de defensa: capítulo 06-02;
 - hoja de ruta: capítulo 06-03;
-- bitácora de integración: `Procesos/2026-04-27-integracion-jacob/00-bitacora.md`;
-- resultado del caso 30: `Procesos/2026-04-27-integracion-jacob/01-resultado-caso-30.md`.
+- bitácora de integración: `Bitacora/2026-04-27-integracion-jacob/00-bitacora.md`;
+- resultado del caso 30: `Bitacora/2026-04-27-integracion-jacob/01-resultado-caso-30.md`.
 
 ## 11. Cierre del cierre
 

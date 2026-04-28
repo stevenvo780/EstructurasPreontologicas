@@ -109,7 +109,7 @@ Este programa se ejecuta como **deuda alta priorizada** durante el cierre doctor
 
 ## 10. Lectura cruzada
 
-- Auditoría que motivó este programa: `Procesos/2026-04-27-integracion-jacob/04-auditoria-doctoral-v1.md` §5.
+- Auditoría que motivó este programa: `Bitacora/2026-04-27-integracion-jacob/04-auditoria-doctoral-v1.md` §5.
 - Programa complementario de baselines estadísticos: `04-programa-baselines-estadisticos.md`.
 - Hoja de ruta general: `06-cierre/03-hoja-de-ruta-para-tesis-final.md`.
 - Casos del corpus: `09-simulaciones-edi/<caso>/README.md`.

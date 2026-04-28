@@ -36,7 +36,7 @@ Los RMSE en términos absolutos son menores en ARIMA / VAR / RW para varios caso
 - **ARIMA / VAR / RW** ajustan una serie temporal univariada (o multivariada en VAR) **sin modelar la dinámica poblacional**. Tienen pocos parámetros, son lineales, optimizan RMSE puntual.
 - **ABM + ODE acoplado** simula 200 agentes en una grilla 50×50 con dinámica acoplada al estado macro y forcing exógeno. Predice el comportamiento agregado del sistema bajo intervención ablativa, no la próxima observación puntual.
 
-La comparación directa de RMSE es **pertinente sólo si lo que se busca es predicción puntual**, lo cual no es el propósito declarado del aparato (capítulo 03-04 y `Procesos/2026-04-28-cierre-doctoral/04-programa-baselines-estadisticos.md` §6).
+La comparación directa de RMSE es **pertinente sólo si lo que se busca es predicción puntual**, lo cual no es el propósito declarado del aparato (capítulo 03-04 y `Bitacora/2026-04-28-cierre-doctoral/04-programa-baselines-estadisticos.md` §6).
 
 ### 2. Lo que sí mide el aparato y los baselines no miden
 

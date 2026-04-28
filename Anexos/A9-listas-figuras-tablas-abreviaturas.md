@@ -87,7 +87,7 @@ Listas de soporte editorial requeridas por el formato de tesis doctoral instituc
 | 4 | Strong | EDI ≥ 0.30, p < 0.01, `overall_pass = True` |
 | 5 | Crítico (programa futuro) | Convergencia bajo múltiples sondas + datos LoE = 5 + frontera espacial nítida |
 
-**Nota explícita sobre el Nivel 5:** el manuscrito demuestra hasta Nivel 4. El Nivel 5 está definido como **horizonte programático** del marco, no como nivel alcanzado en el corpus actual. Sus condiciones (multi-sonda convergente, LoE = 5, topología heterogénea con frontera nítida) son objetivos del programa de elevación documentado en `Procesos/2026-04-28-cierre-doctoral/`.
+**Nota explícita sobre el Nivel 5:** el manuscrito demuestra hasta Nivel 4. El Nivel 5 está definido como **horizonte programático** del marco, no como nivel alcanzado en el corpus actual. Sus condiciones (multi-sonda convergente, LoE = 5, topología heterogénea con frontera nítida) son objetivos del programa de elevación documentado en `Bitacora/2026-04-28-cierre-doctoral/`.
 
 ### Niveles del registro categorial
 

@@ -86,7 +86,7 @@ Esto cierra la deuda del bloque 7 de la auditoría doctoral en su forma de **pil
 ## Lectura cruzada
 
 - Capítulo programático: `05-aplicaciones/04-instituciones-mercado-y-estado.md`.
-- Programa documental original: `Procesos/2026-04-28-cierre-doctoral/...` (cubre el contexto auditorial).
+- Programa documental original: `Bitacora/2026-04-28-cierre-doctoral/...` (cubre el contexto auditorial).
 - Auditoría v2: bloque 7.
 
 ## Referencias

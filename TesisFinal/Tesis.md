@@ -153,7 +153,7 @@ The main outcome is not a binary validation score but a **discriminative map of 
 
 ## Función de esta carpeta
 
-Esta carpeta define la **arquitectura del manuscrito doctoral**. Su función no es repetir `tesis.md` sino organizarlo como obra de tesis con orden de lectura, jerarquía conceptual y secuencia argumentativa que cierre la demostración.
+Esta carpeta define la **arquitectura del manuscrito doctoral**. Organiza la formulación inicial intuitiva (archivada como manuscrito-fuente histórico en `Bitacora/2026-04-27-integracion-jacob/00-tesis-fuente-original.md`) como obra de tesis con orden de lectura, jerarquía conceptual y secuencia argumentativa que cierre la demostración. La fuente de verdad del manuscrito final es `TesisFinal/Tesis.md` (ensamblado de los capítulos numerados).
 
 ## Principio de organización
 
@@ -230,9 +230,9 @@ Reúne corpus PDF y mapa de interlocutores funcionales por capítulo. Su convers
 
 Capa de validación lógica local: formalizaciones mínimas del núcleo argumental con comprobación automática de no-contradicción y trazabilidad textual.
 
-### 9. Procesos y mega-tareas archivadas (`Procesos/`)
+### 9. Procesos y mega-tareas archivadas (`Bitacora/`)
 
-Trazabilidad histórica del proyecto, bitácoras fechadas y archivo de mega-tareas estratégicas. Contiene la crítica radical previa, pasos no negociables, mega-tareas estratégicas (programa científico general, traducción de obras, operacionalización-validación, benchmark rivales, corpus ST), tareas documentales delegables, las dos auditorías doctorales y los programas técnico-éticos del cierre 2026-04-28. Las mega-tareas residen en `Procesos/2026-04-28-cierre-pendientes/mega-tareas-archivadas/`.
+Trazabilidad histórica del proyecto, bitácoras fechadas y archivo de mega-tareas estratégicas. Contiene la crítica radical previa, pasos no negociables, mega-tareas estratégicas (programa científico general, traducción de obras, operacionalización-validación, benchmark rivales, corpus ST), tareas documentales delegables, las dos auditorías doctorales y los programas técnico-éticos del cierre 2026-04-28. Las mega-tareas residen en `Bitacora/2026-04-28-cierre-pendientes/mega-tareas-archivadas/`.
 
 ## Lógica de redacción
 
@@ -290,7 +290,7 @@ Una vez completada, esta arquitectura permite que cualquier lector pueda respond
 
 ## Diferencia con el borrador original
 
-El manuscrito-fuente (`tesis.md`) sigue siendo la formulación extensa y continua de la intuición central. El resto del repositorio convierte esa intuición en arquitectura doctoral defendible mediante seis correcciones estructurales (capítulo 01-01):
+El manuscrito-fuente histórico (archivado en `Bitacora/2026-04-27-integracion-jacob/00-tesis-fuente-original.md`) es la formulación extensa y continua de la intuición central. El resto del repositorio convierte esa intuición en arquitectura doctoral defendible mediante seis correcciones estructurales (capítulo 01-01):
 
 - caso ancla canónico (Warren 2006) en lugar de generalidad sin demostración;
 - patrón estabilizado definido técnicamente como atractor empírico;
@@ -756,7 +756,7 @@ Los autores declaran no tener conflictos de interés financieros con los dataset
 Compromiso público:
 
 - el repositorio del manuscrito y del aparato EDI está disponible en repositorio público controlado por los autores;
-- la trazabilidad histórica del proyecto (Procesos/) permite reproducción del crecimiento del corpus paso a paso;
+- la trazabilidad histórica del proyecto (Bitacora/) permite reproducción del crecimiento del corpus paso a paso;
 - los `metrics.json` versionados en cada caso son la fuente de verdad numérica;
 - los datos públicos secundarios (World Bank, OWID, OPSD, CelesTrak, etc.) están cacheados o reproducibles vía URLs documentadas;
 - los datos sintéticos del caso 30 son reproducibles bit-a-bit con `seed=42`.
@@ -770,17 +770,17 @@ El manuscrito se entrega en estado **integral defendible**:
 - arquitectura argumental cerrada (capítulos 02 a 06);
 - aparato formal completo (capítulo 03);
 - corpus EDI multidominio con resultados verificables (`09-simulaciones-edi/`, `Anexos/A8`);
-- programa multi-sonda y baselines estadísticos ejecutados (`Procesos/2026-04-28-cierre-doctoral/`);
+- programa multi-sonda y baselines estadísticos ejecutados (`Bitacora/2026-04-28-cierre-doctoral/`);
 - caso 30 (behavioral dynamics) con dossier técnico-ético para elevación documentada;
 - bibliografía consolidada (`07-bibliografia/01-bibliografia-orientativa.md`);
-- trazabilidad de proceso documentada (`Procesos/`).
+- trazabilidad de proceso documentada (`Bitacora/`).
 
 ## 10. Lectura cruzada
 
 - Política de manejo de datos por caso: `03-formalizacion/05-etica-y-gobernanza-de-datos.md`.
 - Hoja de ruta del cierre doctoral: `06-cierre/03-hoja-de-ruta-para-tesis-final.md`.
-- Trazabilidad del proceso de construcción: `Procesos/`.
-- Auditorías doctorales internas: `Procesos/2026-04-27-integracion-jacob/04-auditoria-doctoral-v1.md` y `Auditoria_Doctoral.md` (v2).
+- Trazabilidad del proceso de construcción: `Bitacora/`.
+- Auditorías doctorales internas: `Bitacora/2026-04-27-integracion-jacob/04-auditoria-doctoral-v1.md` y `Auditoria_Doctoral.md` (v2).
 
 
 ---
@@ -3085,7 +3085,7 @@ La taxonomía operativa del corpus EDI distingue seis niveles (0–5):
 | 4 | Strong | EDI ≥ 0.30, p < 0.01, `overall_pass = True` | Energía, Deforestación, Kessler, Riesgo Bio |
 | 5 | Crítico | Convergencia bajo múltiples sondas + LoE = 5 + frontera espacial nítida | **(programa futuro, no alcanzado en el corpus actual)** |
 
-**Aclaración explícita y reiterada del Nivel 5:** el Nivel 5 está definido como **horizonte programático del marco**, no como nivel alcanzado en el corpus actual. Sus condiciones (multi-sonda convergente con resultados consistentes, LoE = 5, topología heterogénea con frontera espacial nítida) son objetivos del programa de elevación documentado en `Procesos/2026-04-28-cierre-doctoral/03-programa-multi-sonda.md`. El manuscrito no afirma haberlo alcanzado en ningún caso. Esta cláusula se reitera donde sea relevante para evitar la lectura de promesa no cumplida.
+**Aclaración explícita y reiterada del Nivel 5:** el Nivel 5 está definido como **horizonte programático del marco**, no como nivel alcanzado en el corpus actual. Sus condiciones (multi-sonda convergente con resultados consistentes, LoE = 5, topología heterogénea con frontera espacial nítida) son objetivos del programa de elevación documentado en `Bitacora/2026-04-28-cierre-doctoral/03-programa-multi-sonda.md`. El manuscrito no afirma haberlo alcanzado en ningún caso. Esta cláusula se reitera donde sea relevante para evitar la lectura de promesa no cumplida.
 
 ## Cierre
 
@@ -3169,7 +3169,7 @@ Cuando el caso 30 se eleve con datos humanos:
 3. radicación de protocolo de investigación ante el **Comité de Ética en Investigación de la Universidad de Antioquia** (CEI sede Medellín) con justificación de reuso secundario;
 4. cumplimiento de Ley 1581 de 2012 (Colombia) sobre protección de datos personales: en datos secundarios anonimizados, la ley se cumple manteniendo la anonimización del dataset de origen sin re-identificación;
 5. declaración del cumplimiento en el manuscrito final;
-6. archivado de la documentación del proceso ético en `Procesos/`.
+6. archivado de la documentación del proceso ético en `Bitacora/`.
 
 **Hito condicional:** la elevación del caso 30 al nivel demostrativo con datos humanos no se ejecutará sin el aval CEI documentado.
 
@@ -3184,7 +3184,7 @@ Cuando el caso 30 se eleve con datos humanos:
 - compromiso de **no modificar el caché** una vez establecido;
 - si la fuente original se actualiza, se anota en el log de caso pero el caché se preserva para reproducir el resultado publicado.
 
-**Trazabilidad histórica:** la carpeta `Procesos/` documenta cada hito relevante de adquisición y procesamiento de datos.
+**Trazabilidad histórica:** la carpeta `Bitacora/` documenta cada hito relevante de adquisición y procesamiento de datos.
 
 ## 4. Reproducibilidad
 
@@ -3259,8 +3259,8 @@ La responsabilidad académica completa del manuscrito reside en los autores huma
 ## 8. Lectura cruzada
 
 - Formalización institucional: capítulo `00-proyecto/04-formalizacion-institucional.md`.
-- Política de adquisición de datos humanos para caso 30: `Procesos/2026-04-28-cierre-doctoral/02-programa-datos-humanos-caso30.md`.
-- Trazabilidad de procesos: `Procesos/`.
+- Política de adquisición de datos humanos para caso 30: `Bitacora/2026-04-28-cierre-doctoral/02-programa-datos-humanos-caso30.md`.
+- Trazabilidad de procesos: `Bitacora/`.
 - Bibliografía completa: capítulo `07-bibliografia/01-bibliografia-orientativa.md`.
 
 
@@ -4724,7 +4724,7 @@ Aplicación en **modo programático con alcance explícitamente acotado** según
 - **Lo que reconoce como deuda:** la operacionalización formal de la dimensión normativa como variable del sistema acoplado, condición necesaria para elevar el capítulo de programático a demostrativo;
 - **Lo que el comité debe esperar de este capítulo:** una contribución conceptual sólida y un plan de elevación con casos candidatos identificados, no una demostración cuantitativa del cierre operativo institucional.
 
-La demostración cuantitativa de la dimensión normativa queda explícitamente fuera del alcance del manuscrito actual y se documenta como deuda priorizada en `06-cierre/03-hoja-de-ruta-para-tesis-final.md` y en `Procesos/2026-04-28-cierre-doctoral/`.
+La demostración cuantitativa de la dimensión normativa queda explícitamente fuera del alcance del manuscrito actual y se documenta como deuda priorizada en `06-cierre/03-hoja-de-ruta-para-tesis-final.md` y en `Bitacora/2026-04-28-cierre-doctoral/`.
 
 ## Función de este capítulo
 
@@ -4912,7 +4912,7 @@ Se selecciona como caso piloto, sin ejecutar en este manuscrito pero documentado
 - comparabilidad inter-país que permite definir variabilidad de la cuenca (legitimidad como anchura de la cuenca);
 - precedentes en la literatura cuantitativa (Hale et al., 2021; Cheng et al., 2020).
 
-La elevación de este caso piloto exige adaptación específica del aparato EDI a series institucionales con variables ordinales (índices de stringency) en lugar de variables continuas. Se documenta como deuda alta en `Procesos/2026-04-28-cierre-doctoral/` y en la hoja de ruta `06-cierre/03-hoja-de-ruta-para-tesis-final.md`.
+La elevación de este caso piloto exige adaptación específica del aparato EDI a series institucionales con variables ordinales (índices de stringency) en lugar de variables continuas. Se documenta como deuda alta en `Bitacora/2026-04-28-cierre-doctoral/` y en la hoja de ruta `06-cierre/03-hoja-de-ruta-para-tesis-final.md`.
 
 ### 7.2. Otros candidatos plausibles
 
@@ -5468,8 +5468,8 @@ Recupera el realismo estructural moderado en versión disciplinada por anclaje e
 - aplicaciones programáticas: capítulos 05-01 a 05-04;
 - guía de defensa: capítulo 06-02;
 - hoja de ruta: capítulo 06-03;
-- bitácora de integración: `Procesos/2026-04-27-integracion-jacob/00-bitacora.md`;
-- resultado del caso 30: `Procesos/2026-04-27-integracion-jacob/01-resultado-caso-30.md`.
+- bitácora de integración: `Bitacora/2026-04-27-integracion-jacob/00-bitacora.md`;
+- resultado del caso 30: `Bitacora/2026-04-27-integracion-jacob/01-resultado-caso-30.md`.
 
 ## 11. Cierre del cierre
 
@@ -5792,7 +5792,7 @@ Cada capítulo con citas insertadas, bibliografía formal por capítulo y biblio
 
 ### Plazo
 
-Continuo durante redacción final, con prioridad alta. Tareas documentales delegables a IA según el archivo `Procesos/2026-04-28-cierre-pendientes/mega-tareas-archivadas/90-tareas-documentales-delegables-a-ia.md` ayudan acumulativamente.
+Continuo durante redacción final, con prioridad alta. Tareas documentales delegables a IA según el archivo `Bitacora/2026-04-28-cierre-pendientes/mega-tareas-archivadas/90-tareas-documentales-delegables-a-ia.md` ayudan acumulativamente.
 
 ## 4. Paso 3. Desarrollo del aparato para variables normativas
 
@@ -5946,7 +5946,7 @@ Si el manuscrito final cumple las seis cualidades, deja de ser tesis y empieza a
 - objeciones que la versión final debe anticipar: capítulo 01-02;
 - limitaciones reconocidas: capítulo 04-02;
 - bibliografía orientativa que se convierte en formal: capítulo 07;
-- backlog de mega-tareas archivado: `Procesos/2026-04-28-cierre-pendientes/mega-tareas-archivadas/`.
+- backlog de mega-tareas archivado: `Bitacora/2026-04-28-cierre-pendientes/mega-tareas-archivadas/`.
 
 ## 14. Cierre
 
@@ -6138,7 +6138,7 @@ HYPER_N_PERM=2999 HYPER_N_BOOT=1500 ./tesis run --case deforest
 
 ## Trazabilidad
 
-La trazabilidad histórica del crecimiento del corpus, las decisiones metodológicas y el desarrollo del caso behavioral dynamics está documentada en `Procesos/`. La fuente de verdad del manuscrito son los `outputs/metrics.json` versionados en cada caso.
+La trazabilidad histórica del crecimiento del corpus, las decisiones metodológicas y el desarrollo del caso behavioral dynamics está documentada en `Bitacora/`. La fuente de verdad del manuscrito son los `outputs/metrics.json` versionados en cada caso.
 
 ## Cierre
 
@@ -6298,7 +6298,7 @@ Tiempo aproximado en CPU 32 hilos: 2-5 minutos.
 
 ## Trazabilidad
 
-Las decisiones metodológicas, versiones de la sonda, ajustes de parámetros y verificaciones de robustez quedan documentadas en `Procesos/`. La fuente de verdad del manuscrito es `outputs/metrics.json` versionado en este directorio.
+Las decisiones metodológicas, versiones de la sonda, ajustes de parámetros y verificaciones de robustez quedan documentadas en `Bitacora/`. La fuente de verdad del manuscrito es `outputs/metrics.json` versionado en este directorio.
 
 
 ---
@@ -6446,7 +6446,7 @@ Los RMSE en términos absolutos son menores en ARIMA / VAR / RW para varios caso
 - **ARIMA / VAR / RW** ajustan una serie temporal univariada (o multivariada en VAR) **sin modelar la dinámica poblacional**. Tienen pocos parámetros, son lineales, optimizan RMSE puntual.
 - **ABM + ODE acoplado** simula 200 agentes en una grilla 50×50 con dinámica acoplada al estado macro y forcing exógeno. Predice el comportamiento agregado del sistema bajo intervención ablativa, no la próxima observación puntual.
 
-La comparación directa de RMSE es **pertinente sólo si lo que se busca es predicción puntual**, lo cual no es el propósito declarado del aparato (capítulo 03-04 y `Procesos/2026-04-28-cierre-doctoral/04-programa-baselines-estadisticos.md` §6).
+La comparación directa de RMSE es **pertinente sólo si lo que se busca es predicción puntual**, lo cual no es el propósito declarado del aparato (capítulo 03-04 y `Bitacora/2026-04-28-cierre-doctoral/04-programa-baselines-estadisticos.md` §6).
 
 ### 2. Lo que sí mide el aparato y los baselines no miden
 
@@ -6605,7 +6605,7 @@ Esto cierra la deuda del bloque 7 de la auditoría doctoral en su forma de **pil
 ## Lectura cruzada
 
 - Capítulo programático: `05-aplicaciones/04-instituciones-mercado-y-estado.md`.
-- Programa documental original: `Procesos/2026-04-28-cierre-doctoral/...` (cubre el contexto auditorial).
+- Programa documental original: `Bitacora/2026-04-28-cierre-doctoral/...` (cubre el contexto auditorial).
 - Auditoría v2: bloque 7.
 
 ## Referencias
@@ -6673,7 +6673,7 @@ El error estándar del bootstrap escala como `1/√n_boot`. Pasar de n_boot = 50
 - Caso 16 Deforestación es representativo de la franja strong (EDI 0.5-0.7).
 - Caso 30 Behavioral Dynamics es representativo de la franja weak con p < 0.05 (EDI 0.1-0.3).
 
-Ambos tienen verificación explícita ya realizada (Procesos/2026-04-27-integracion-jacob/02-verificacion-reproducibilidad.md y 30/README.md). Los deltas son `Δ < 0.025` en valor absoluto, dentro del ruido estocástico del bootstrap.
+Ambos tienen verificación explícita ya realizada (Bitacora/2026-04-27-integracion-jacob/02-verificacion-reproducibilidad.md y 30/README.md). Los deltas son `Δ < 0.025` en valor absoluto, dentro del ruido estocástico del bootstrap.
 
 ### 4. Controles de falsación: rechazo confirmado bajo cualquier perfil
 
@@ -6701,7 +6701,7 @@ Esta ejecución masiva queda como trámite editorial pre-depósito, no como deud
 
 ## Lectura cruzada
 
-- Verificación explícita Deforestación: `Procesos/2026-04-27-integracion-jacob/02-verificacion-reproducibilidad.md`.
+- Verificación explícita Deforestación: `Bitacora/2026-04-27-integracion-jacob/02-verificacion-reproducibilidad.md`.
 - Verificación explícita caso 30: `09-simulaciones-edi/30_caso_behavioral_dynamics/README.md`.
 - Anexo A.8 Tabla A.8.3: declara la verificación.
 - Auditoría v2 bloque C.2.
@@ -7628,7 +7628,7 @@ Mapa completo del paisaje de aplicaciones del marco. Cada caso aparece con su mo
 | 20 | Síndrome de Kessler | 0.3527 | 0.0000 | Densidad orbital | 3 | CelesTrak |
 | 27 | Riesgo biológico (mortalidad) | 0.3326 | 0.0022 | Mortalidad | 3 | World Bank |
 
-Reproducibilidad: el caso 16 ha sido re-ejecutado con datos World Bank descargados en vivo (variabilidad estocástica <4%, mismo Nivel 4 strong). La trazabilidad detallada está en `Procesos/`.
+Reproducibilidad: el caso 16 ha sido re-ejecutado con datos World Bank descargados en vivo (variabilidad estocástica <4%, mismo Nivel 4 strong). La trazabilidad detallada está en `Bitacora/`.
 
 ### Bloque II — Strong sin gate completo (Nivel 4*)
 
@@ -7765,7 +7765,7 @@ El caso 30 (Nivel 3 weak) demuestra que **el aparato EDI funciona en escala beha
 - Caso 30 detallado: `09-simulaciones-edi/30_caso_behavioral_dynamics/README.md`
 - Cada caso del corpus: `09-simulaciones-edi/<caso>/README.md`
 - Resultados consolidados: `09-simulaciones-edi/README.md`
-- Verificación de reproducibilidad: `Procesos/2026-04-27-integracion-jacob/02-verificacion-reproducibilidad.md`
+- Verificación de reproducibilidad: `Bitacora/2026-04-27-integracion-jacob/02-verificacion-reproducibilidad.md`
 
 
 ---
@@ -8197,7 +8197,7 @@ Listas de soporte editorial requeridas por el formato de tesis doctoral instituc
 | 4 | Strong | EDI ≥ 0.30, p < 0.01, `overall_pass = True` |
 | 5 | Crítico (programa futuro) | Convergencia bajo múltiples sondas + datos LoE = 5 + frontera espacial nítida |
 
-**Nota explícita sobre el Nivel 5:** el manuscrito demuestra hasta Nivel 4. El Nivel 5 está definido como **horizonte programático** del marco, no como nivel alcanzado en el corpus actual. Sus condiciones (multi-sonda convergente, LoE = 5, topología heterogénea con frontera nítida) son objetivos del programa de elevación documentado en `Procesos/2026-04-28-cierre-doctoral/`.
+**Nota explícita sobre el Nivel 5:** el manuscrito demuestra hasta Nivel 4. El Nivel 5 está definido como **horizonte programático** del marco, no como nivel alcanzado en el corpus actual. Sus condiciones (multi-sonda convergente, LoE = 5, topología heterogénea con frontera nítida) son objetivos del programa de elevación documentado en `Bitacora/2026-04-28-cierre-doctoral/`.
 
 ### Niveles del registro categorial
 

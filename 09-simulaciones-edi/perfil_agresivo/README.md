@@ -51,7 +51,7 @@ El error estándar del bootstrap escala como `1/√n_boot`. Pasar de n_boot = 50
 - Caso 16 Deforestación es representativo de la franja strong (EDI 0.5-0.7).
 - Caso 30 Behavioral Dynamics es representativo de la franja weak con p < 0.05 (EDI 0.1-0.3).
 
-Ambos tienen verificación explícita ya realizada (Procesos/2026-04-27-integracion-jacob/02-verificacion-reproducibilidad.md y 30/README.md). Los deltas son `Δ < 0.025` en valor absoluto, dentro del ruido estocástico del bootstrap.
+Ambos tienen verificación explícita ya realizada (Bitacora/2026-04-27-integracion-jacob/02-verificacion-reproducibilidad.md y 30/README.md). Los deltas son `Δ < 0.025` en valor absoluto, dentro del ruido estocástico del bootstrap.
 
 ### 4. Controles de falsación: rechazo confirmado bajo cualquier perfil
 
@@ -79,7 +79,7 @@ Esta ejecución masiva queda como trámite editorial pre-depósito, no como deud
 
 ## Lectura cruzada
 
-- Verificación explícita Deforestación: `Procesos/2026-04-27-integracion-jacob/02-verificacion-reproducibilidad.md`.
+- Verificación explícita Deforestación: `Bitacora/2026-04-27-integracion-jacob/02-verificacion-reproducibilidad.md`.
 - Verificación explícita caso 30: `09-simulaciones-edi/30_caso_behavioral_dynamics/README.md`.
 - Anexo A.8 Tabla A.8.3: declara la verificación.
 - Auditoría v2 bloque C.2.

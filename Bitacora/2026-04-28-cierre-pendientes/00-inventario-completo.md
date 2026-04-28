@@ -2,7 +2,7 @@
 
 ## Función
 
-Registro consolidado del estado de actividades pendientes al cierre del manuscrito doctoral (versión 2026-04-28). Su propósito es **no modificar archivos canónicos** dejando referencia única en `Procesos/` con marca de tiempo.
+Registro consolidado del estado de actividades pendientes al cierre del manuscrito doctoral (versión 2026-04-28). Su propósito es **no modificar archivos canónicos** dejando referencia única en `Bitacora/` con marca de tiempo.
 
 Este inventario clasifica los pendientes en cuatro categorías por tipo de cierre:
 
@@ -32,7 +32,7 @@ Este inventario clasifica los pendientes en cuatro categorías por tipo de cierr
 
 ### B.1. Elevación del caso 30 con datos humanos a LoE = 4
 
-- **Estado:** dossier completo en `Procesos/2026-04-28-cierre-doctoral/02-programa-datos-humanos-caso30.md`.
+- **Estado:** dossier completo en `Bitacora/2026-04-28-cierre-doctoral/02-programa-datos-humanos-caso30.md`.
 - **Ruta:** OpenLocomotionData → WALK-MS Boston → VENLab Brown.
 - **Cronograma:** 9–10 meses de dedicación parcial.
 - **Bloqueante operativo:** acceso a datasets externos + aval de Comité de Ética.
@@ -116,7 +116,7 @@ La carpeta `Backlog/` (originalmente `Tareas/`) contiene siete documentos de **m
 - `90-tareas-documentales-delegables-a-ia.md`
 - `README.md`
 
-**Destino:** `Procesos/2026-04-28-cierre-pendientes/mega-tareas-archivadas/`.
+**Destino:** `Bitacora/2026-04-28-cierre-pendientes/mega-tareas-archivadas/`.
 
 **Diagnóstico:** son hojas de ruta de programa científico de largo plazo, no tareas pendientes del manuscrito doctoral. Se preservan tal cual, sin modificación, para que cualquier extensión posterior del programa pueda invocarlas.
 
@@ -135,7 +135,7 @@ Al cierre del 2026-04-28:
 
 ## Lectura cruzada
 
-- Procesos del 2026-04-27: `Procesos/2026-04-27-integracion-jacob/`.
-- Procesos del 2026-04-28 (programas técnico-éticos): `Procesos/2026-04-28-cierre-doctoral/`.
-- Auditorías: `Procesos/2026-04-27-integracion-jacob/04-auditoria-doctoral-v1.md` y `Auditoria_Doctoral.md` (v2).
-- Mega-tareas archivadas: `Procesos/2026-04-28-cierre-pendientes/mega-tareas-archivadas/`.
+- Procesos del 2026-04-27: `Bitacora/2026-04-27-integracion-jacob/`.
+- Procesos del 2026-04-28 (programas técnico-éticos): `Bitacora/2026-04-28-cierre-doctoral/`.
+- Auditorías: `Bitacora/2026-04-27-integracion-jacob/04-auditoria-doctoral-v1.md` y `Auditoria_Doctoral.md` (v2).
+- Mega-tareas archivadas: `Bitacora/2026-04-28-cierre-pendientes/mega-tareas-archivadas/`.

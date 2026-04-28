@@ -147,7 +147,7 @@ La taxonomía operativa del corpus EDI distingue seis niveles (0–5):
 | 4 | Strong | EDI ≥ 0.30, p < 0.01, `overall_pass = True` | Energía, Deforestación, Kessler, Riesgo Bio |
 | 5 | Crítico | Convergencia bajo múltiples sondas + LoE = 5 + frontera espacial nítida | **(programa futuro, no alcanzado en el corpus actual)** |
 
-**Aclaración explícita y reiterada del Nivel 5:** el Nivel 5 está definido como **horizonte programático del marco**, no como nivel alcanzado en el corpus actual. Sus condiciones (multi-sonda convergente con resultados consistentes, LoE = 5, topología heterogénea con frontera espacial nítida) son objetivos del programa de elevación documentado en `Procesos/2026-04-28-cierre-doctoral/03-programa-multi-sonda.md`. El manuscrito no afirma haberlo alcanzado en ningún caso. Esta cláusula se reitera donde sea relevante para evitar la lectura de promesa no cumplida.
+**Aclaración explícita y reiterada del Nivel 5:** el Nivel 5 está definido como **horizonte programático del marco**, no como nivel alcanzado en el corpus actual. Sus condiciones (multi-sonda convergente con resultados consistentes, LoE = 5, topología heterogénea con frontera espacial nítida) son objetivos del programa de elevación documentado en `Bitacora/2026-04-28-cierre-doctoral/03-programa-multi-sonda.md`. El manuscrito no afirma haberlo alcanzado en ningún caso. Esta cláusula se reitera donde sea relevante para evitar la lectura de promesa no cumplida.
 
 ## Cierre
 

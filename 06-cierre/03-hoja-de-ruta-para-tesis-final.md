@@ -104,7 +104,7 @@ Cada capítulo con citas insertadas, bibliografía formal por capítulo y biblio
 
 ### Plazo
 
-Continuo durante redacción final, con prioridad alta. Tareas documentales delegables a IA según el archivo `Procesos/2026-04-28-cierre-pendientes/mega-tareas-archivadas/90-tareas-documentales-delegables-a-ia.md` ayudan acumulativamente.
+Continuo durante redacción final, con prioridad alta. Tareas documentales delegables a IA según el archivo `Bitacora/2026-04-28-cierre-pendientes/mega-tareas-archivadas/90-tareas-documentales-delegables-a-ia.md` ayudan acumulativamente.
 
 ## 4. Paso 3. Desarrollo del aparato para variables normativas
 
@@ -258,7 +258,7 @@ Si el manuscrito final cumple las seis cualidades, deja de ser tesis y empieza a
 - objeciones que la versión final debe anticipar: capítulo 01-02;
 - limitaciones reconocidas: capítulo 04-02;
 - bibliografía orientativa que se convierte en formal: capítulo 07;
-- backlog de mega-tareas archivado: `Procesos/2026-04-28-cierre-pendientes/mega-tareas-archivadas/`.
+- backlog de mega-tareas archivado: `Bitacora/2026-04-28-cierre-pendientes/mega-tareas-archivadas/`.
 
 ## 14. Cierre
 

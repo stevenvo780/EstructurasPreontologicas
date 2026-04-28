@@ -2,7 +2,7 @@
 
 ## Función de esta carpeta
 
-Esta carpeta define la **arquitectura del manuscrito doctoral**. Su función no es repetir `tesis.md` sino organizarlo como obra de tesis con orden de lectura, jerarquía conceptual y secuencia argumentativa que cierre la demostración.
+Esta carpeta define la **arquitectura del manuscrito doctoral**. Organiza la formulación inicial intuitiva (archivada como manuscrito-fuente histórico en `Bitacora/2026-04-27-integracion-jacob/00-tesis-fuente-original.md`) como obra de tesis con orden de lectura, jerarquía conceptual y secuencia argumentativa que cierre la demostración. La fuente de verdad del manuscrito final es `TesisFinal/Tesis.md` (ensamblado de los capítulos numerados).
 
 ## Principio de organización
 
@@ -79,9 +79,9 @@ Reúne corpus PDF y mapa de interlocutores funcionales por capítulo. Su convers
 
 Capa de validación lógica local: formalizaciones mínimas del núcleo argumental con comprobación automática de no-contradicción y trazabilidad textual.
 
-### 9. Procesos y mega-tareas archivadas (`Procesos/`)
+### 9. Procesos y mega-tareas archivadas (`Bitacora/`)
 
-Trazabilidad histórica del proyecto, bitácoras fechadas y archivo de mega-tareas estratégicas. Contiene la crítica radical previa, pasos no negociables, mega-tareas estratégicas (programa científico general, traducción de obras, operacionalización-validación, benchmark rivales, corpus ST), tareas documentales delegables, las dos auditorías doctorales y los programas técnico-éticos del cierre 2026-04-28. Las mega-tareas residen en `Procesos/2026-04-28-cierre-pendientes/mega-tareas-archivadas/`.
+Trazabilidad histórica del proyecto, bitácoras fechadas y archivo de mega-tareas estratégicas. Contiene la crítica radical previa, pasos no negociables, mega-tareas estratégicas (programa científico general, traducción de obras, operacionalización-validación, benchmark rivales, corpus ST), tareas documentales delegables, las dos auditorías doctorales y los programas técnico-éticos del cierre 2026-04-28. Las mega-tareas residen en `Bitacora/2026-04-28-cierre-pendientes/mega-tareas-archivadas/`.
 
 ## Lógica de redacción
 
@@ -139,7 +139,7 @@ Una vez completada, esta arquitectura permite que cualquier lector pueda respond
 
 ## Diferencia con el borrador original
 
-El manuscrito-fuente (`tesis.md`) sigue siendo la formulación extensa y continua de la intuición central. El resto del repositorio convierte esa intuición en arquitectura doctoral defendible mediante seis correcciones estructurales (capítulo 01-01):
+El manuscrito-fuente histórico (archivado en `Bitacora/2026-04-27-integracion-jacob/00-tesis-fuente-original.md`) es la formulación extensa y continua de la intuición central. El resto del repositorio convierte esa intuición en arquitectura doctoral defendible mediante seis correcciones estructurales (capítulo 01-01):
 
 - caso ancla canónico (Warren 2006) en lugar de generalidad sin demostración;
 - patrón estabilizado definido técnicamente como atractor empírico;

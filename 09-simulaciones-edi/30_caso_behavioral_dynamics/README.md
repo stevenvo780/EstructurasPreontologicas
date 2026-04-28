@@ -146,4 +146,4 @@ Tiempo aproximado en CPU 32 hilos: 2-5 minutos.
 
 ## Trazabilidad
 
-Las decisiones metodológicas, versiones de la sonda, ajustes de parámetros y verificaciones de robustez quedan documentadas en `Procesos/`. La fuente de verdad del manuscrito es `outputs/metrics.json` versionado en este directorio.
+Las decisiones metodológicas, versiones de la sonda, ajustes de parámetros y verificaciones de robustez quedan documentadas en `Bitacora/`. La fuente de verdad del manuscrito es `outputs/metrics.json` versionado en este directorio.

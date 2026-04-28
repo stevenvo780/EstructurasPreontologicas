@@ -340,7 +340,7 @@ El manuscrito alterna entre voz académica formal y voz más ensayística (espec
 
 ### H. Tareas/ y backlog del proyecto
 
-La carpeta `Tareas/` contiene mega-tareas estratégicas (programa científico general, traducción de obras, benchmark de rivales, etc.) que son trabajo posterior al manuscrito. Conviene mover esa carpeta a `Procesos/Tareas/` o renombrarla a `Backlog/` para que no se confunda con material del manuscrito final. Prioridad baja.
+La carpeta `Tareas/` contiene mega-tareas estratégicas (programa científico general, traducción de obras, benchmark de rivales, etc.) que son trabajo posterior al manuscrito. Conviene mover esa carpeta a `Bitacora/Tareas/` o renombrarla a `Backlog/` para que no se confunda con material del manuscrito final. Prioridad baja.
 
 ---
 

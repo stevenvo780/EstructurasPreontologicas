@@ -8,7 +8,7 @@ Aplicación en **modo programático con alcance explícitamente acotado** según
 - **Lo que reconoce como deuda:** la operacionalización formal de la dimensión normativa como variable del sistema acoplado, condición necesaria para elevar el capítulo de programático a demostrativo;
 - **Lo que el comité debe esperar de este capítulo:** una contribución conceptual sólida y un plan de elevación con casos candidatos identificados, no una demostración cuantitativa del cierre operativo institucional.
 
-La demostración cuantitativa de la dimensión normativa queda explícitamente fuera del alcance del manuscrito actual y se documenta como deuda priorizada en `06-cierre/03-hoja-de-ruta-para-tesis-final.md` y en `Procesos/2026-04-28-cierre-doctoral/`.
+La demostración cuantitativa de la dimensión normativa queda explícitamente fuera del alcance del manuscrito actual y se documenta como deuda priorizada en `06-cierre/03-hoja-de-ruta-para-tesis-final.md` y en `Bitacora/2026-04-28-cierre-doctoral/`.
 
 ## Función de este capítulo
 
@@ -196,7 +196,7 @@ Se selecciona como caso piloto, sin ejecutar en este manuscrito pero documentado
 - comparabilidad inter-país que permite definir variabilidad de la cuenca (legitimidad como anchura de la cuenca);
 - precedentes en la literatura cuantitativa (Hale et al., 2021; Cheng et al., 2020).
 
-La elevación de este caso piloto exige adaptación específica del aparato EDI a series institucionales con variables ordinales (índices de stringency) en lugar de variables continuas. Se documenta como deuda alta en `Procesos/2026-04-28-cierre-doctoral/` y en la hoja de ruta `06-cierre/03-hoja-de-ruta-para-tesis-final.md`.
+La elevación de este caso piloto exige adaptación específica del aparato EDI a series institucionales con variables ordinales (índices de stringency) en lugar de variables continuas. Se documenta como deuda alta en `Bitacora/2026-04-28-cierre-doctoral/` y en la hoja de ruta `06-cierre/03-hoja-de-ruta-para-tesis-final.md`.
 
 ### 7.2. Otros candidatos plausibles
 

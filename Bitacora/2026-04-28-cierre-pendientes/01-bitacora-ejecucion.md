@@ -8,7 +8,7 @@ Registro temporal de las acciones que cerraron las tareas pendientes inventariad
 
 ### E.01 — Mover Backlog a archivo histórico
 
-**Acción:** `git mv Backlog Procesos/2026-04-28-cierre-pendientes/mega-tareas-archivadas`.
+**Acción:** `git mv Backlog Bitacora/2026-04-28-cierre-pendientes/mega-tareas-archivadas`.
 
 **Resultado:** 9 archivos de mega-tareas estratégicas movidos como referencia histórica. Cierra punto D del inventario.
 
@@ -119,7 +119,7 @@ curvature_probe:  EDI mean = 0.5455, std = 0.0970, n=200
 | C.8 Figuras Mermaid | **EJECUTADO** | A.10 con 9 figuras formales |
 | B.1 Caso 30 datos humanos | DEUDA EXTERNA | requiere acceso VENLab/WALK-MS |
 | B.2 Caso piloto COVID | **EJECUTADO** | resultado null honesto, valida cláusula programática |
-| D Mega-tareas Backlog | **ARCHIVADO** | movidas a Procesos/ |
+| D Mega-tareas Backlog | **ARCHIVADO** | movidas a Bitacora/ |
 
 **Pendientes activos restantes:** 0 ejecutables sin recurso externo. Las 3 deudas remanentes (C.5, C.6, B.1) requieren acceso a datos externos o tiempo de meses.
 

@@ -134,7 +134,7 @@ Este programa se ejecuta como **deuda alta** del cierre doctoral. Su no-ejecuci�
 
 ## 12. Lectura cruzada
 
-- Auditoría que motivó este programa: `Procesos/2026-04-27-integracion-jacob/04-auditoria-doctoral-v1.md` §6.
+- Auditoría que motivó este programa: `Bitacora/2026-04-27-integracion-jacob/04-auditoria-doctoral-v1.md` §6.
 - Programa complementario multi-sonda: `03-programa-multi-sonda.md`.
 - Aparato formal y métrica EDI: capítulo `03-formalizacion/04-operacionalizacion-de-kappa.md`.
 - Resultados consolidados del corpus: `09-simulaciones-edi/README.md`.

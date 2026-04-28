@@ -1,6 +1,6 @@
 # Auditoría doctoral — versión 2 (post-corrección)
 
-> Segunda auditoría del manuscrito *Estructuras Pre-Ontológicas: Realismo Irrealista Operativo y Compresión Multiescala con Validación EDI Multidominio*, ejecutada tras la implementación íntegra de las correcciones identificadas en la auditoría v1 (`Procesos/2026-04-27-integracion-jacob/04-auditoria-doctoral-v1.md`). El propósito de esta v2 es verificar **cuáles bloques se cerraron, cuáles quedan parcialmente abiertos y cuáles permanecen como deuda priorizada documentada**. La auditoría es honesta: no glorifica el cierre cuando es parcial.
+> Segunda auditoría del manuscrito *Estructuras Pre-Ontológicas: Realismo Irrealista Operativo y Compresión Multiescala con Validación EDI Multidominio*, ejecutada tras la implementación íntegra de las correcciones identificadas en la auditoría v1 (`Bitacora/2026-04-27-integracion-jacob/04-auditoria-doctoral-v1.md`). El propósito de esta v2 es verificar **cuáles bloques se cerraron, cuáles quedan parcialmente abiertos y cuáles permanecen como deuda priorizada documentada**. La auditoría es honesta: no glorifica el cierre cuando es parcial.
 
 **Fecha:** 2026-04-28.
 **Manuscrito ensamblado:** `TesisFinal/Tesis.md` — 8,021 líneas, ~499 KB.
@@ -15,7 +15,7 @@
 | 1 | Filiación institucional | Bloqueante | **Estructura cerrada, marcadores institucionales pendientes** | Capítulo `00-proyecto/04-formalizacion-institucional.md` con 11 secciones; espacios reservados para director/comité/aval CEI |
 | 2 | Diálogo bibliográfico real | Alta | **Cerrado en capítulos centrales** | Cap 02-04, 04-01 (§12, §14, §15) y 05-04 con citas textuales con paginación de Searle, Bunge, Bourdieu, Latour, Gilbert, Gibson, Maturana-Varela, Varela-Thompson-Rosch, Clark, Warren, Hutto-Myin, Bechtel, Craver, Wolfram |
 | 3 | Estado del arte | Alta | **Cerrado** | Capítulo `01-diagnostico/03-estado-del-arte.md` con 5 subcampos + mapa de inserción + contribución específica |
-| 4 | Datos humanos caso 30 | Alta | **Programa documentado con dossier técnico-ético** | `Procesos/2026-04-28-cierre-doctoral/02-programa-datos-humanos-caso30.md` con datasets candidatos, procedimiento ético, cronograma y compromiso |
+| 4 | Datos humanos caso 30 | Alta | **Programa documentado con dossier técnico-ético** | `Bitacora/2026-04-28-cierre-doctoral/02-programa-datos-humanos-caso30.md` con datasets candidatos, procedimiento ético, cronograma y compromiso |
 | 5 | Programa multi-sonda | Alta | **Implementado y ejecutado sobre 3 strong** | Sondas alternativas en `09-simulaciones-edi/common/ode_models.py` (`thermo_balance`, `spatial_logistic`, `seir_demographic`) + runner `multi_sonda.py`; resultados en `09-simulaciones-edi/multi_sonda/` con 1 convergencia fuerte + 2 moderadas |
 | 6 | Baselines ARIMA/VAR | Alta | **Implementado y ejecutado sobre 8 casos** | Módulo `09-simulaciones-edi/common/baselines.py` ejecutado sobre 4 strong + 1 strong sin gate + 3 controles; resultados en `09-simulaciones-edi/baselines/` con verificación de HB.1-HB.4 |
 | 7 | Dimensión normativa | Media | **Cerrado vía Ruta A + caso piloto Ruta B documentado** | Capítulo 05-04 con declaración explícita de modo programático acotado + caso piloto COVID-19 propuesto |
@@ -88,7 +88,7 @@
 
 **Estado v2:** programa documentado con compromiso firme, ejecución pendiente.
 
-**Programa:** `Procesos/2026-04-28-cierre-doctoral/02-programa-datos-humanos-caso30.md` con:
+**Programa:** `Bitacora/2026-04-28-cierre-doctoral/02-programa-datos-humanos-caso30.md` con:
 
 - estado actual del caso 30 (EDI 0.262, p 0.044, weak, LoE 2);
 - 3 hipótesis explícitas H30R.1-H30R.3 con 3 escenarios A/B/C de resultado;
@@ -269,7 +269,7 @@ Después de la ejecución íntegra de las correcciones, el manuscrito tiene tres
 | Tamaño del manuscrito | 430 KB | 499 KB |
 | Capítulos nuevos creados | — | 3 (`00-04`, `01-03`, `03-05`) |
 | Anexos nuevos creados | — | 2 (A.8, A.9) |
-| Programas documentados | — | 3 (`02-`, `03-`, `04-` en `Procesos/2026-04-28-cierre-doctoral/`) |
+| Programas documentados | — | 3 (`02-`, `03-`, `04-` en `Bitacora/2026-04-28-cierre-doctoral/`) |
 | Programas ejecutados con código | — | 2 (multi-sonda, baselines ARIMA/VAR) |
 | Sondas ODE alternativas implementadas | — | 3 (`thermo_balance`, `spatial_logistic`, `seir_demographic`) |
 
@@ -285,7 +285,7 @@ El manuscrito ha cerrado **todos los bloques de contenido** identificados en la 
 
 **Estado del manuscrito al 2026-04-28:** **prototipo doctoral avanzado en estado de cierre de contenido**. Lo que separa el prototipo de la tesis defendible son trámite, ejecución posterior y pulido — no lagunas argumentales ni vacíos metodológicos.
 
-**Veredicto del auditor metodológico:** el manuscrito está en condiciones de ser entregado a un comité doctoral para evaluación de fondo. Las preguntas que el comité haga sobre los puntos identificados encontrarán respuesta en los capítulos correspondientes y en los programas documentados en `Procesos/2026-04-28-cierre-doctoral/`. La sustentación pública depende de la formalización institucional y de la ejecución honesta de los programas; ninguna de las dos cosas pone en riesgo la sustancia argumental.
+**Veredicto del auditor metodológico:** el manuscrito está en condiciones de ser entregado a un comité doctoral para evaluación de fondo. Las preguntas que el comité haga sobre los puntos identificados encontrarán respuesta en los capítulos correspondientes y en los programas documentados en `Bitacora/2026-04-28-cierre-doctoral/`. La sustentación pública depende de la formalización institucional y de la ejecución honesta de los programas; ninguna de las dos cosas pone en riesgo la sustancia argumental.
 
 > *Una tesis se aprueba cuando el comité no encuentra preguntas que el manuscrito no anticipe. La auditoría v1 listó las preguntas que el manuscrito no anticipaba con suficiente cuidado. La auditoría v2 verifica que ahora sí lo hace, o que las que quedan son trámite institucional, ejecución posterior con cronograma firme, o pulido editorial pre-depósito.*
 
@@ -294,4 +294,4 @@ El manuscrito ha cerrado **todos los bloques de contenido** identificados en la 
 **Auditor metodológico:** preparado por la asistencia IA bajo dirección humana.
 **Fecha:** 2026-04-28.
 **Para discusión con:** comité doctoral, director(a) de tesis, autores.
-**Auditoría v1 archivada en:** `Procesos/2026-04-27-integracion-jacob/04-auditoria-doctoral-v1.md`.
+**Auditoría v1 archivada en:** `Bitacora/2026-04-27-integracion-jacob/04-auditoria-doctoral-v1.md`.

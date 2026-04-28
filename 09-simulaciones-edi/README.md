@@ -178,7 +178,7 @@ HYPER_N_PERM=2999 HYPER_N_BOOT=1500 ./tesis run --case deforest
 
 ## Trazabilidad
 
-La trazabilidad histórica del crecimiento del corpus, las decisiones metodológicas y el desarrollo del caso behavioral dynamics está documentada en `Procesos/`. La fuente de verdad del manuscrito son los `outputs/metrics.json` versionados en cada caso.
+La trazabilidad histórica del crecimiento del corpus, las decisiones metodológicas y el desarrollo del caso behavioral dynamics está documentada en `Bitacora/`. La fuente de verdad del manuscrito son los `outputs/metrics.json` versionados en cada caso.
 
 ## Cierre
 

@@ -70,7 +70,7 @@ Cuando el caso 30 se eleve con datos humanos:
 3. radicación de protocolo de investigación ante el **Comité de Ética en Investigación de la Universidad de Antioquia** (CEI sede Medellín) con justificación de reuso secundario;
 4. cumplimiento de Ley 1581 de 2012 (Colombia) sobre protección de datos personales: en datos secundarios anonimizados, la ley se cumple manteniendo la anonimización del dataset de origen sin re-identificación;
 5. declaración del cumplimiento en el manuscrito final;
-6. archivado de la documentación del proceso ético en `Procesos/`.
+6. archivado de la documentación del proceso ético en `Bitacora/`.
 
 **Hito condicional:** la elevación del caso 30 al nivel demostrativo con datos humanos no se ejecutará sin el aval CEI documentado.
 
@@ -85,7 +85,7 @@ Cuando el caso 30 se eleve con datos humanos:
 - compromiso de **no modificar el caché** una vez establecido;
 - si la fuente original se actualiza, se anota en el log de caso pero el caché se preserva para reproducir el resultado publicado.
 
-**Trazabilidad histórica:** la carpeta `Procesos/` documenta cada hito relevante de adquisición y procesamiento de datos.
+**Trazabilidad histórica:** la carpeta `Bitacora/` documenta cada hito relevante de adquisición y procesamiento de datos.
 
 ## 4. Reproducibilidad
 
@@ -160,6 +160,6 @@ La responsabilidad académica completa del manuscrito reside en los autores huma
 ## 8. Lectura cruzada
 
 - Formalización institucional: capítulo `00-proyecto/04-formalizacion-institucional.md`.
-- Política de adquisición de datos humanos para caso 30: `Procesos/2026-04-28-cierre-doctoral/02-programa-datos-humanos-caso30.md`.
-- Trazabilidad de procesos: `Procesos/`.
+- Política de adquisición de datos humanos para caso 30: `Bitacora/2026-04-28-cierre-doctoral/02-programa-datos-humanos-caso30.md`.
+- Trazabilidad de procesos: `Bitacora/`.
 - Bibliografía completa: capítulo `07-bibliografia/01-bibliografia-orientativa.md`.

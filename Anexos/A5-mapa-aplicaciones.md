@@ -43,7 +43,7 @@ Mapa completo del paisaje de aplicaciones del marco. Cada caso aparece con su mo
 | 20 | Síndrome de Kessler | 0.3527 | 0.0000 | Densidad orbital | 3 | CelesTrak |
 | 27 | Riesgo biológico (mortalidad) | 0.3326 | 0.0022 | Mortalidad | 3 | World Bank |
 
-Reproducibilidad: el caso 16 ha sido re-ejecutado con datos World Bank descargados en vivo (variabilidad estocástica <4%, mismo Nivel 4 strong). La trazabilidad detallada está en `Procesos/`.
+Reproducibilidad: el caso 16 ha sido re-ejecutado con datos World Bank descargados en vivo (variabilidad estocástica <4%, mismo Nivel 4 strong). La trazabilidad detallada está en `Bitacora/`.
 
 ### Bloque II — Strong sin gate completo (Nivel 4*)
 
@@ -180,4 +180,4 @@ El caso 30 (Nivel 3 weak) demuestra que **el aparato EDI funciona en escala beha
 - Caso 30 detallado: `09-simulaciones-edi/30_caso_behavioral_dynamics/README.md`
 - Cada caso del corpus: `09-simulaciones-edi/<caso>/README.md`
 - Resultados consolidados: `09-simulaciones-edi/README.md`
-- Verificación de reproducibilidad: `Procesos/2026-04-27-integracion-jacob/02-verificacion-reproducibilidad.md`
+- Verificación de reproducibilidad: `Bitacora/2026-04-27-integracion-jacob/02-verificacion-reproducibilidad.md`

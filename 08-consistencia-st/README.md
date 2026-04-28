@@ -25,7 +25,7 @@ Verifica que el marco no obligue a aceptar dualismo, reduccionismo plano, emerge
 
 ### 4. Text Layer
 
-Usa `passage`, `formalize`, `claim`, `support`, `confidence` y `context` para anclar formalizaciones a archivos reales del repositorio, sobre todo `tesis.md` y `07-bibliografia/01-bibliografia-orientativa.md`.
+Usa `passage`, `formalize`, `claim`, `support`, `confidence` y `context` para anclar formalizaciones a archivos reales del repositorio, sobre todo el manuscrito-fuente histórico (`Bitacora/2026-04-27-integracion-jacob/00-tesis-fuente-original.md`), los capítulos numerados, `TesisFinal/Tesis.md` y `07-bibliografia/01-bibliografia-orientativa.md`.
 
 ## Estructura
 

@@ -111,7 +111,7 @@ Estrategia secuencial:
 | 7 | Re-ejecución del caso 30 con datos reales | autor técnico |
 | 8 | Reporte de resultados en `09-simulaciones-edi/30_caso_behavioral_dynamics/outputs/metrics_real.json` | autor técnico |
 | 9 | Actualización del README del caso 30 con escenario A/B/C | ambos autores |
-| 10 | Archivado de documentación del proceso ético en `Procesos/` | autor técnico |
+| 10 | Archivado de documentación del proceso ético en `Bitacora/` | autor técnico |
 
 **Bloqueante:** sin aval CEI documentado, no se ejecuta el paso 7.
 
@@ -146,11 +146,11 @@ Total: 9–10 meses de dedicación parcial (compatible con el ciclo doctoral dec
 
 ## 8. Compromiso público
 
-Este programa se asume como **compromiso firme** del autor técnico (Steven Vallejo) en coordinación con el autor principal (Jacob Agudelo). Su ejecución se documenta en `Procesos/`, sus resultados se publican en el repositorio, y su no-ejecución (si por motivos institucionales no procede) se reporta también con honestidad.
+Este programa se asume como **compromiso firme** del autor técnico (Steven Vallejo) en coordinación con el autor principal (Jacob Agudelo). Su ejecución se documenta en `Bitacora/`, sus resultados se publican en el repositorio, y su no-ejecución (si por motivos institucionales no procede) se reporta también con honestidad.
 
 ## 9. Lectura cruzada
 
 - Caso 30 actual: `09-simulaciones-edi/30_caso_behavioral_dynamics/README.md`.
 - Política ética y de gobernanza de datos: `03-formalizacion/05-etica-y-gobernanza-de-datos.md`.
-- Auditoría que motivó este programa: `Procesos/2026-04-27-integracion-jacob/04-auditoria-doctoral-v1.md` §4.
+- Auditoría que motivó este programa: `Bitacora/2026-04-27-integracion-jacob/04-auditoria-doctoral-v1.md` §4.
 - Hoja de ruta general: `06-cierre/03-hoja-de-ruta-para-tesis-final.md`.

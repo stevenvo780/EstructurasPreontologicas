@@ -78,7 +78,7 @@ Los autores declaran no tener conflictos de interés financieros con los dataset
 Compromiso público:
 
 - el repositorio del manuscrito y del aparato EDI está disponible en repositorio público controlado por los autores;
-- la trazabilidad histórica del proyecto (Procesos/) permite reproducción del crecimiento del corpus paso a paso;
+- la trazabilidad histórica del proyecto (Bitacora/) permite reproducción del crecimiento del corpus paso a paso;
 - los `metrics.json` versionados en cada caso son la fuente de verdad numérica;
 - los datos públicos secundarios (World Bank, OWID, OPSD, CelesTrak, etc.) están cacheados o reproducibles vía URLs documentadas;
 - los datos sintéticos del caso 30 son reproducibles bit-a-bit con `seed=42`.
@@ -92,14 +92,14 @@ El manuscrito se entrega en estado **integral defendible**:
 - arquitectura argumental cerrada (capítulos 02 a 06);
 - aparato formal completo (capítulo 03);
 - corpus EDI multidominio con resultados verificables (`09-simulaciones-edi/`, `Anexos/A8`);
-- programa multi-sonda y baselines estadísticos ejecutados (`Procesos/2026-04-28-cierre-doctoral/`);
+- programa multi-sonda y baselines estadísticos ejecutados (`Bitacora/2026-04-28-cierre-doctoral/`);
 - caso 30 (behavioral dynamics) con dossier técnico-ético para elevación documentada;
 - bibliografía consolidada (`07-bibliografia/01-bibliografia-orientativa.md`);
-- trazabilidad de proceso documentada (`Procesos/`).
+- trazabilidad de proceso documentada (`Bitacora/`).
 
 ## 10. Lectura cruzada
 
 - Política de manejo de datos por caso: `03-formalizacion/05-etica-y-gobernanza-de-datos.md`.
 - Hoja de ruta del cierre doctoral: `06-cierre/03-hoja-de-ruta-para-tesis-final.md`.
-- Trazabilidad del proceso de construcción: `Procesos/`.
-- Auditorías doctorales internas: `Procesos/2026-04-27-integracion-jacob/04-auditoria-doctoral-v1.md` y `Auditoria_Doctoral.md` (v2).
+- Trazabilidad del proceso de construcción: `Bitacora/`.
+- Auditorías doctorales internas: `Bitacora/2026-04-27-integracion-jacob/04-auditoria-doctoral-v1.md` y `Auditoria_Doctoral.md` (v2).
