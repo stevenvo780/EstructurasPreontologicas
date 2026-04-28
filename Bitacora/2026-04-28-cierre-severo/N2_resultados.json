@@ -1,0 +1,54 @@
+{
+  "results_by_generator": [
+    {
+      "generator": "random_walk_drift",
+      "n_valid": 100,
+      "edi_mean": 0.020687004321324823,
+      "edi_median": 0.0200378826979275,
+      "edi_std": 0.02831589135111554,
+      "edi_p95": 0.05950306147774796,
+      "fraction_above_010": 0.01,
+      "fraction_above_020": 0.0,
+      "fraction_above_030": 0.0,
+      "fraction_positive": 0.93
+    },
+    {
+      "generator": "mass_spring_oscilador",
+      "n_valid": 100,
+      "edi_mean": -0.15120343210944123,
+      "edi_median": 0.29851590230021097,
+      "edi_std": 1.0876907400532203,
+      "edi_p95": 0.5706197701866313,
+      "fraction_above_010": 0.65,
+      "fraction_above_020": 0.62,
+      "fraction_above_030": 0.5,
+      "fraction_positive": 0.66
+    },
+    {
+      "generator": "ar2_estocastico",
+      "n_valid": 100,
+      "edi_mean": -0.0203373603365483,
+      "edi_median": -0.023007446741416304,
+      "edi_std": 0.097755223494594,
+      "edi_p95": 0.1270935807454505,
+      "fraction_above_010": 0.08,
+      "fraction_above_020": 0.01,
+      "fraction_above_030": 0.0,
+      "fraction_positive": 0.43
+    },
+    {
+      "generator": "constante_ruido",
+      "n_valid": 100,
+      "edi_mean": -0.028236102540115007,
+      "edi_median": -0.02607486550166127,
+      "edi_std": 0.08021811031878474,
+      "edi_p95": 0.09395577146723048,
+      "fraction_above_010": 0.05,
+      "fraction_above_020": 0.0,
+      "fraction_above_030": 0.0,
+      "fraction_positive": 0.41
+    }
+  ],
+  "verdict": "CIRCULARIDAD DETECTADA: la sonda Fajen-Warren produce EDI > 0.20 en >10% de trials sobre datos no-FW. El caso 30 puede estar midiendo auto-consistencia paramétrica.",
+  "case30_reference_edi": 0.2622
+}

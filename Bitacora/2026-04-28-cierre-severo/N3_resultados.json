@@ -1,0 +1,9 @@
+{
+  "auc_edi": 0.8857142857142858,
+  "auc_arima_diff": 0.6,
+  "auc_arima_ratio": 0.6,
+  "delta": 0.2857142857142858,
+  "verdict": "EDI domina en discriminación: AUC EDI (0.886) supera mejor ARIMA (0.600) por al menos 0.10. Valor diferencial confirmado.",
+  "n_strong": 5,
+  "n_no_strong": 7
+}
