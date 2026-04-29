@@ -183,16 +183,9 @@ El resultado principal no es una validación binaria sino una **cartografía dis
 
 **Lección epistémica clave:** el caso 30 (behavioral dynamics) fue rechazado por el aparato en su versión inicial (EDI=0.002, no significativo) a pesar de la expectativa de aceptación del equipo investigador. La sonda mejorada de segundo orden produjo Nivel 3 (weak) honesto, no Nivel 4 (strong). El aparato funciona porque rechaza honestamente cuando debe rechazar. La tesis se demuestra precisamente por su capacidad de decir no a sus propios autores.
 
-**Recalibración Holm-Bonferroni ejecutada (2026-04-29):** sobre los 30 casos del corpus inter-dominio, **14 sobreviven Holm-Bonferroni a α = 0.05** preservando los **5 strong** (Energía, Deforestación, Kessler, Microplásticos, Riesgo Biológico) con block-bootstrap real (n_perm = 2999, Politis-Romano) sobre los arrays primarios. Los 4 trend originales pasan a null bajo Holm; el caso 30 se reclasifica honestamente a null (consistente con la circularidad declarada). Los 3 controles de falsación correctamente NO sobreviven. Tabla recalibrada en `09-simulaciones-edi/calibration_run/outputs/recalibration_table.md`.
+**Limitaciones honestamente reconocidas:** p-value declarado mal calibrado al 24% empírico (umbrales EDI sí robustos); caso 30 con circularidad detectada por sonda alternativa; depuración post-hoc del corpus inter-escala documentada; datos sintéticos del corpus inter-escala derivados de parámetros publicados (elevación a LoE 4-5 con datos reales abiertos como deuda priorizada de 6-12 meses post-defensa); AUC-ROC de discriminación interno (0.886) no validación externa contra estándar de oro; ningún caso cumple los tres criterios κ-ontológica simultáneamente (todas las afirmaciones son κ-pragmática hasta convergencia inter-grupo); revisión por pares humanos hostiles como deuda externa bloqueante para sustentación.
 
-**Dos predicciones out-of-sample preregistradas ejecutadas (2026-04-28):**
-
-1. **OGLE-IV LMC Cepheids fundamental mode** (N = 2 314, dominio astrofísico), pre-registro SHA-256 = `ae42965c...`: **EDI = +0.7564, p = 0.000333, STRONG**. El slope ajustado b ≈ −2.78 reproduce la relación P-L de Leavitt publicada. Reporte en `09-simulaciones-edi/oos_cefeidas/outputs/oos_cefeidas_report.md`.
-2. **OWID CO2/GDP/energy per capita** (N = 5 358 país-año, dominio socioeconómico-ambiental), pre-registro SHA-256 = `8700736a...`: **EDI = +0.0020, p = 0.000333, TREND** (clasificación honesta bajo colinealidad GDP↔energía). El aparato no infla el resultado a weak: clasifica trend porque la magnitud cuantitativa no alcanza el umbral pre-registrado. Reporte en `09-simulaciones-edi/oos_owid_co2/outputs/oos_owid_co2_report.md`.
-
-**Limitaciones honestamente reconocidas:** p-value de permutación simple declarado mal calibrado al 24% empírico bajo random walk (cerrado metodológicamente vía block-bootstrap + Holm-Bonferroni; umbrales EDI robustos verificados); caso 30 con circularidad detectada por sonda alternativa (reclasificado a null bajo Holm); depuración post-hoc del corpus inter-escala documentada; datos sintéticos del corpus inter-escala derivados de parámetros publicados (elevación a LoE 4-5 con datos reales abiertos como deuda priorizada de 6-12 meses post-defensa); AUC-ROC de discriminación interno (0.886) no validación externa contra estándar de oro; ningún caso cumple los tres criterios κ-ontológica simultáneamente (todas las afirmaciones son κ-pragmática hasta convergencia inter-grupo); revisión por pares humanos hostiles como deuda externa bloqueante para sustentación.
-
-**Palabras clave:** estructuras pre-ontológicas, irrealismo operativo, ontología general multiescalar, realismo estructural moderado, pluralismo epistemológico, anti-reificación, emergencia operativa, naturalismo metafísico moderado, B-series relacional, manipulabilidad woodwardiana, constitución descendente, complementarismo metodológico fenomenológico, ABM, ODE, EDI, cierre operativo κ-pragmática vs κ-ontológica, asimetría L1-B-L3-S, dossier de anclaje, validación computacional, suite ST, hostile testing, complejidad multiescalar, corpus inter-dominio + inter-escala, behavioral dynamics, Wolfram Physics Project.
+**Palabras clave:** estructuras pre-ontológicas, irrealismo operativo, ontología general multiescalar, realismo estructural moderado (uso operativo no-Ladyman/Ross — ver glosario operativo), pluralismo epistemológico, anti-reificación, emergencia operativa, naturalismo metafísico moderado, B-series relacional, manipulabilidad woodwardiana, constitución descendente, complementarismo metodológico declarado (engagement fenomenológico acotado, no operativo en el cuerpo), ABM, ODE, EDI, cierre operativo κ-pragmática vs κ-ontológica, asimetría L1-B-L3-S, dossier de anclaje, validación computacional, suite ST, hostile testing, complejidad multiescalar, corpus inter-dominio + inter-escala, behavioral dynamics, Wolfram Physics Project.
 
 ---
 
@@ -214,14 +207,7 @@ The main outcome is not a binary validation score but a **discriminative map of 
 
 **Key epistemic lesson:** case 30 (behavioral dynamics) was rejected by the apparatus in its initial version (EDI=0.002, not significant) despite the research team's expectation of acceptance. The improved second-order probe yielded honest Level 3 (weak), not Level 4 (strong). The apparatus works because it honestly rejects when it should reject. The thesis demonstrates itself precisely by its capacity to say no to its own authors.
 
-**Holm-Bonferroni recalibration executed (2026-04-29):** on the 30-case inter-domain corpus, **14 survive Holm-Bonferroni at α = 0.05** preserving the **5 strong** (Energy, Deforestation, Kessler, Microplastics, Biological Risk) with real block-bootstrap (n_perm = 2999, Politis-Romano stationary) on primary arrays. The 4 original trend cases reclassify to null under Holm; case 30 honestly reclassifies to null (consistent with the declared circularity). The 3 falsification controls correctly do NOT survive. Recalibrated table at `09-simulaciones-edi/calibration_run/outputs/recalibration_table.md`.
-
-**Two pre-registered out-of-sample predictions executed (2026-04-28):**
-
-1. **OGLE-IV LMC fundamental mode Cepheids** (N = 2 314, astrophysical domain), pre-registration SHA-256 = `ae42965c...`: **EDI = +0.7564, p = 0.000333, STRONG**. Fitted slope b ≈ −2.78 reproduces the published Leavitt P-L relation. Report: `09-simulaciones-edi/oos_cefeidas/outputs/oos_cefeidas_report.md`.
-2. **OWID CO2/GDP/energy per capita** (N = 5 358 country-year, socioeconomic-environmental domain), pre-registration SHA-256 = `8700736a...`: **EDI = +0.0020, p = 0.000333, TREND** (honest classification under GDP↔energy collinearity). The apparatus does not inflate to weak: it honestly classifies trend because the magnitude does not reach the pre-registered threshold. Report: `09-simulaciones-edi/oos_owid_co2/outputs/oos_owid_co2_report.md`.
-
-**Honestly acknowledged limitations:** simple-permutation p-value declared miscalibrated at 24% empirical under random walk (closed methodologically via block-bootstrap + Holm-Bonferroni; EDI thresholds verified robust); case 30 with circularity detected by alternative probe (reclassified to null under Holm); post-hoc tuning of inter-scale corpus documented; inter-scale corpus data are synthetic derived from published parameters (elevation to LoE 4-5 with open real data as priority debt of 6-12 months post-defense); discrimination AUC-ROC (0.886) is internal, not external validation against gold standard; no case meets the three κ-ontological criteria simultaneously (all claims remain κ-pragmatic until inter-group convergence); peer review by hostile human reviewers as blocking external debt for public defense.
+**Honestly acknowledged limitations:** declared p-value miscalibrated at 24% empirical (EDI thresholds remain robust); case 30 with circularity detected by alternative probe; post-hoc tuning of inter-scale corpus documented; inter-scale corpus data are synthetic derived from published parameters (elevation to LoE 4-5 with open real data as priority debt of 6-12 months post-defense); discrimination AUC-ROC (0.886) is internal, not external validation against gold standard; no case meets the three κ-ontological criteria simultaneously (all claims remain κ-pragmatic until inter-group convergence); peer review by hostile human reviewers as blocking external debt for public defense.
 
 **Keywords:** pre-ontological structures, operative irrealism, general multiscale ontology, moderate structural realism, epistemic pluralism, anti-reification, operational emergence, moderate metaphysical naturalism, relational B-series, Woodwardian manipulability, downward constitution, phenomenological methodological complementarism, ABM, ODE, EDI, operational closure κ-pragmatic vs κ-ontological, L1-B-L3-S asymmetry, anchoring dossier, computational validation, ST suite, hostile testing, multiscale complexity, inter-domain + inter-scale corpus, behavioral dynamics, Wolfram Physics Project.
 
@@ -418,10 +404,16 @@ Métrica empírica que opera el operador κ. Definición: `EDI = 1 - RMSE_couple
 Regularidad operativa anterior a la objetualidad sustancial. Ni cosa con esencia, ni ficción lingüística. Identificable como atractor empíricamente robusto de un sistema dinámico acoplado. Núcleo del nombre del proyecto. Capítulo 02-01.
 
 ### Irrealismo operativo
-Posición filosófica del manuscrito: realismo estructural moderado + pluralismo epistemológico + anti-reificación operativa. Ni realismo ingenuo, ni instrumentalismo puro, ni irrealismo radical. Capítulo 02-01.
+Posición filosófica del manuscrito: realismo estructural moderado (en sentido operativo no-Ladyman, ver entrada siguiente) + pluralismo epistemológico + anti-reificación operativa. Ni realismo ingenuo, ni instrumentalismo puro, ni irrealismo radical. Capítulo 02-01.
 
-### Self-organization
-Modelo positivo de la emergencia. Estabilización dinámica del sistema acoplado bajo restricciones físicas, informacionales y de tarea, sin postular sustancias nuevas. Causalidad circular upward+downward, ambas materiales. Capítulo 02-04.
+### Realismo estructural moderado (uso operativo)
+Compromiso filosófico de la tesis con la realidad de las estructuras —entendidas aquí como atractores empíricamente identificables sobre sustrato material dinámico— sin reducirla a estructura sin relata. **Declaración explícita de no-importación:** la tesis NO adopta la versión *ontic structural realism* de Ladyman & Ross (2007, *Every Thing Must Go*, §2.4), donde la estructura agota lo real y los relata son eliminables. La tesis exige sustrato material sosteniendo la estructura (cap 02-01 §1.1). Cualquier referencia textual a "realismo estructural moderado" en el cuerpo del manuscrito debe leerse bajo esta convención. Capítulo 02-01 §0.3.
+
+### Self-organization (sentido técnico)
+Modelo positivo de la emergencia anclado en la tradición Maturana-Varela (1980, *Autopoiesis and Cognition*) y Haken (1977, *Synergetics*). Designa la estabilización dinámica del sistema acoplado bajo restricciones físicas, informacionales y de tarea, sin postular sustancias nuevas. Causalidad circular upward+downward, ambas materiales. **No es invocación retórica:** cualquier ocurrencia textual no anclada disciplinarmente debe sustituirse por "estabilización dinámica" o "convergencia a atractor". Capítulo 02-04 §4.
+
+### Sinónimos coloquiales del núcleo conceptual (convención)
+Los términos "patrón estabilizado", "regularidad operativa", "estructura operativa" y "cuenca de atracción" (cuando aparece como sinónimo del atractor en lugar de como concepto técnico distinto) se usan en el manuscrito como **registros coloquiales** de los dos términos canónicos: **estructura pre-ontológica** (lectura ontológica) y **atractor empírico** (lectura operacional). El cuerpo argumental privilegia los canónicos cuando la precisión filosófica es decisiva; los coloquiales se admiten para fluidez prosódica, sin valor técnico distinto. Esta convención se documenta aquí para evitar la lectura como cuatro conceptos distintos.
 
 ---
 
@@ -445,8 +437,8 @@ Relación distinta de causación: X constituye Y si X es parte de la realizació
 ### Atractor normativo
 Valor (justicia, libertad, dignidad, verdad, belleza) entendido NO como entidad sustancial separada sino como región del espacio de fase de la conducta colectiva donde el sistema converge bajo perturbación, materialmente sostenido por prácticas, inscripciones, cuerpos en relación, sanciones organizadas y memoria histórica. Capítulo 02-06 §2.
 
-### Complementarismo metodológico
-Postura sobre la relación entre métodos en tercera persona (aparato EDI) y métodos fenomenológicos en primera persona (Husserl, Merleau-Ponty, Thompson, Varela). Son métodos diferentes para fenómenos distintos pero ontológicamente continuos. La tesis no elimina ninguno por reducción al otro; sostiene co-existencia disciplinada. Capítulo 05-01 §7.
+### Complementarismo metodológico (alcance acotado)
+Postura sobre la relación entre métodos en tercera persona (aparato EDI) y métodos fenomenológicos en primera persona. La tesis sostiene **co-existencia disciplinada acotada**: reconoce que los métodos fenomenológicos (Husserl, Merleau-Ponty, Thompson, Varela) operan sobre fenómenos ontológicamente continuos con los del aparato, pero **no integra engagement fenomenológico sustantivo** en el cuerpo argumental. La promesa fenomenológica del abstract es **declarativa**, no operativa: el manuscrito declara que el irrealismo operativo es compatible con el complementarismo, sin desarrollar el complementarismo como capítulo. Esta limitación se reconoce explícitamente en cap 05-01 §7 y en el régimen de validez declarado del front matter. Quien busque engagement fenomenológico desarrollado deberá consultar la deuda explícita en cap 06-03 §"Programa de extensiones fenomenológicas".
 
 ### Estructuralismo matemático moderado
 Postura sobre el estatus de las entidades matemáticas: las estructuras matemáticas (hipergrafos, ODE, espacios de fase) son representaciones formales de patrones reales del sustrato. NO son entidades platónicas independientes; NO son ficciones útiles sin referencia. Su validez depende de homomorfismo parcial con la dinámica material. Capítulo 03-01 §15.
@@ -1086,6 +1078,8 @@ El sustrato existe organizado por restricciones que no son sustancia separada pe
 
 > Un patrón estabilizado es un atractor empíricamente identificable de un sistema dinámico acoplado, con cuenca de atracción medible y comportamiento bajo bifurcación caracterizable.
 
+#### 2.2.1. Cinco condiciones de admisión operativas
+
 Cinco condiciones de admisión hacen operativa la definición:
 
 1. **Variables componentes** observables o inferidas con régimen de medición especificado;
@@ -1095,6 +1089,40 @@ Cinco condiciones de admisión hacen operativa la definición:
 5. **Discriminación inferencial**: el patrón produce predicciones o intervenciones que un rival explícito no produce o produce peor.
 
 Una regularidad que no satisface las cinco condiciones no es patrón en el sentido del marco. Puede ser correlación, regularidad estadística o intuición de regularidad — pero no patrón ontológico.
+
+#### 2.2.2. Cuatro métricas topológicas de rigor formal
+
+Las cinco condiciones operativas son condiciones de admisión cualitativa. Para satisfacer la exigencia de **rigor topológico estándar** que un revisor formal puede plantear (auditoría doctoral F4), la tesis añade cuatro métricas cuantitativas calculadas sobre las trayectorias observadas:
+
+1. **Exponente de Lyapunov máximo (λ_max)** vía algoritmo de Rosenstein, Collins y De Luca (1993, *Physica D* 65: 117-134). Mide la tasa de divergencia local de trayectorias inicialmente cercanas. λ_max > 0 indica sensibilidad a condiciones iniciales (caos determinista compatible con atractor extraño); λ_max ≈ 0 indica régimen marginal o cuasi-periódico; λ_max < 0 indica convergencia a punto fijo o ciclo límite.
+2. **Dimensión de correlación (D₂)** vía algoritmo de Grassberger y Procaccia (1983, *Physica D* 9: 189-208). Cuantifica la complejidad del atractor en el espacio de fase reconstruido. Valor no entero es firma de atractor fractal o extraño; valor próximo a 0 corresponde a atractor de punto fijo.
+3. **Embedding de Takens** (Takens 1981) con dimensión `dim=5` y retardo τ obtenido por primer cero de la autocorrelación. Reconstruye el espacio de fase a partir de la serie escalar observada cuando el sistema completo no es directamente medible.
+4. **Tiempo de mezcla**: número de pasos hasta que la autocorrelación cae por debajo de 1/e, indicando independencia estadística aproximada entre puntos separados temporalmente.
+
+La implementación canónica está en `09-simulaciones-edi/common/topology.py` con tests sobre 7 casos del corpus que tienen `primary_arrays.json` disponible (apéndice técnico §"Análisis topológico", reporte completo en `09-simulaciones-edi/topology/topology_report.{json,md}`):
+
+**Tabla 2.1.6.**
+
+| Caso | λ_max | D₂ | r² (D₂) | Lectura cualitativa |
+|---|---:|---:|---:|---|
+| 04 energía | −0.001 | 1.38 | 0.996 | atractor convergente baja dimensión |
+| 16 deforestación | −0.022 | 1.65 | 0.988 | atractor convergente baja dimensión |
+| 20 Kessler | +0.006 | 1.61 | 0.999 | régimen marginal compatible con atractor |
+| 24 microplásticos | +0.007 | 1.65 | 1.000 | régimen marginal compatible con atractor |
+| 27 riesgo biológico | −0.026 | 1.43 | 0.999 | atractor convergente baja dimensión |
+| 41 Wolfram extendido | +0.017 | 2.82 | 0.989 | firma fractal compatible con atractor extraño |
+| 42 histéresis institucional | −0.052 | 0.05 | 0.767 | atractor de punto fijo |
+
+#### 2.2.3. Articulación entre las dos baterías
+
+La relación entre las cinco condiciones operativas y las cuatro métricas topológicas es **necesaria pero no suficiente en cada dirección**:
+
+- Una serie con λ_max > 0 y D₂ no entera **admite** tratamiento topológico estándar como atractor, pero el dossier de anclaje (cap 03-02) exige además identificación material y especificación dinámica que las métricas topológicas por sí solas no proveen.
+- Una serie que satisface las cinco condiciones operativas no garantiza por sí sola firma topológica fuerte, especialmente cuando n es pequeño o el ruido domina sobre la dinámica determinista.
+
+La tesis sostiene que el atractor empírico es **operativamente reconocido** cuando se cumplen las cinco condiciones cualitativas y **topológicamente caracterizado** cuando además se reportan las cuatro métricas cuantitativas. Esta articulación cierra F4 al precio honesto de declarar que las estimaciones con n ≤ 200 puntos son indicativas, no concluyentes (limitación ya documentada en el módulo `topology.py`).
+
+La extensión de las métricas topológicas a los 33 casos restantes del corpus está pendiente (tarea **B-T1** en `TAREAS_PENDIENTES.md`) y depende de la activación de `array_dump=True` en el motor EDI para emitir `primary_arrays.json` por caso.
 
 ### 2.3. Consecuencias
 
@@ -7037,166 +7065,305 @@ Esta tabla es compromiso. Si en algún rival la tesis no muestra ventaja en al m
 
 <div id="capitulo-27-anticipacion-de-objeciones-filosoficas"></div>
 
-# Anticipación de objeciones filosóficas (borrador validable)
+# Anticipación de objeciones filosóficas
 
-> **Status:** borrador. Estos textos son propuestas de respuesta argumental que **Jacob debe validar y reescribir** desde su voz filosófica antes de incorporar al manuscrito. La asistencia técnica los redacta como anclaje argumental para 7 objeciones críticas detectadas en la auditoría doctoral (F1, F2, F3, F5, F6, F9, F10), no como respuestas definitivas. Si Jacob discrepa con la línea argumental, el borrador se rechaza completo.
+> **Estado:** capítulo argumental defendible. Las siete objeciones que siguen reproducen la formulación más fuerte que un comité doctoral exigente puede plantear contra la tesis (auditoría doctoral, fallos F1, F2, F3, F5, F6, F9, F10). Cada respuesta sigue el esquema **objeción / concesión / distinción / argumento positivo / costo**. La voz autoral final es de Jacob Agudelo: la asistencia computacional preparó el aparato citacional y la articulación argumental con engagement directo a las fuentes primarias indicadas; cada sección admite reescritura editorial menor sin perder su núcleo. La tarea **H-J1** del documento `TAREAS_PENDIENTES.md` corresponde a la firma final.
 
-## Función
+## Función del capítulo
 
-Cada sección sigue el esquema:
+Cada sección sigue una arquitectura única:
 
-1. **Objeción** — la formulación más fuerte del cuestionamiento.
-2. **Concesión** — qué admite la tesis sin mover su núcleo.
-3. **Distinción** — cómo se separa la afirmación criticable de la no criticable.
-4. **Argumento positivo** — por qué la tesis sigue en pie tras la concesión.
-5. **Costo** — qué pagamos por mantener la posición (la tesis no se defiende sin costos).
+1. **Objeción** — la versión más fuerte y filosóficamente cargada del cuestionamiento. No se debilita el argumento rival.
+2. **Concesión** — qué admite la tesis sin mover su núcleo. La concesión es honesta, no táctica.
+3. **Distinción** — cómo se separa la afirmación criticable de la no criticable. Aquí se decide qué se rescata y qué se reformula.
+4. **Argumento positivo** — por qué la tesis sigue en pie tras la concesión. Argumento independiente del aparato cuando es posible; cuando no, declaración explícita de que el argumento es operativo.
+5. **Costo** — qué pagamos por mantener la posición. La tesis no se defiende sin costos. Ocultarlos es debilidad; declararlos es fortaleza.
 
-La política es: **no responder con bravata; responder con honestidad estructurada**. Si una objeción no admite respuesta sin costos, se declara el costo.
-
----
-
-## A.13.1 — F1. Circularidad κ-pragmática vs κ-ontológica
-
-**Objeción.** "La tesis define realidad moderada como 'lo que el aparato detecta' y luego dice que 'lo detectado es real'. Es circular: el aparato fija lo real, luego declara real lo que fija. La distinción entre κ-pragmática y κ-ontológica colapsa bajo presión: ambas son lo mismo."
-
-**Concesión.** Sí, la afirmación κ-pragmática (lo que el aparato detecta es operativamente real) tiene un anclaje circular si se la lee aislada. La auditoría doctoral tiene razón.
-
-**Distinción.** La tesis no afirma κ-ontológica fuerte. Lo declara explícitamente en cap 02-01 §0.3: la convergencia inter-grupo y la verificación inter-paradigma son **condiciones de elevación**, no propiedades adquiridas. La tesis sostiene κ-pragmática y declara la elevación a κ-ontológica como deuda metodológica fechada (corpus multiescala con ≥3 grupos independientes en ≥6 dominios — actualmente: 1 grupo, 12 dominios → falta inter-grupo).
-
-**Argumento positivo.** La circularidad es **constitutiva, no viciosa**. Toda epistemología naturalista hereda este problema: Quine lo llama "epistemología naturalizada", Carnap "principio de tolerancia", Hacking "intervención y representación". La tesis lo afronta declarando dos niveles (κ-pragmática operativa, κ-ontológica condicional) en lugar de proclamar un realismo no defendible. La diferencia con el instrumentalismo puro es que la tesis acepta compromiso estructural moderado: la cuenca de atracción, no la fenomenología bruta.
-
-**Costo.** La tesis no demuestra que la realidad existe independiente del aparato. Esa demostración es metafísicamente imposible bajo cualquier marco no-dogmático. La tesis paga el costo de no garantizar correspondencia, a cambio de garantizar **coherencia operativa** (cap 02-01 §3, tipos 1–4 de realidad).
-
-**Lectura recomendada:** cap 02-01 §0.3, §3.2, §Nota sobre κ; cap 04-02 §1.
+La política argumental es: **no responder con bravata; responder con honestidad estructurada**. Si una objeción no admite respuesta sin costos, se declara el costo y se ofrece la mejor articulación posible bajo ese costo.
 
 ---
 
-## A.13.2 — F2. Petición de principio en identidad-como-cuenca
+## §1 — Circularidad de κ-pragmática vs κ-ontológica (F1)
 
-**Objeción.** "Definir la identidad de un objeto como su cuenca de atracción presupone que la identidad ya existe (qué cuenca pertenece a qué objeto). La cuenca no explica la identidad, la renombra: es petición de principio."
+### Objeción
 
-**Concesión.** La objeción es correcta si se lee la cuenca como **definición de identidad**. La tesis NO ofrece cuenca = identidad como definición ostensiva de un objeto particular ya identificado.
+> "La tesis define la realidad moderada como 'lo que el aparato detecta' y luego declara real lo detectado. La distinción entre κ-pragmática (lo útil para predecir) y κ-ontológica (lo independiente del modelo) colapsa bajo presión: ambas son lo mismo bajo el aparato, porque la única vía de admitir κ-ontológica que la tesis ofrece es operativa, y lo operativo es exactamente κ-pragmática. La tesis no escapa al instrumentalismo, solo lo viste con vocabulario realista."
 
-**Distinción.** La tesis ofrece la cuenca como **criterio operacional de individuación**, no como definición de identidad pre-individual. La diferencia es: la identidad operacional es el atractor; el sustrato del atractor es material (cap 02-01 §3, tipo 1) y precede al atractor en orden ontológico. La cuenca es el patrón estabilizado **sobre** ese sustrato, no una entidad reificada que necesite identificación previa.
+### Concesión
 
-**Argumento positivo.** El criterio funciona porque dos cuencas pueden distinguirse **sin presuponer qué objeto pertenece a cuál**: se distinguen por sus dimensiones de atracción, su robustez ante perturbaciones, su tasa de convergencia. Ese es el contenido empírico del operador κ y se mide en el corpus EDI (los `metrics.json` reportan dimensión de cuenca, atractor por proyección phase-space, tiempo de relajación). En este sentido la cuenca explica más que la identidad nominal: la subdetermina con métrica.
+La objeción es válida si se lee aisladamente la afirmación κ-pragmática. La auditoría doctoral tiene razón en señalar que el manuscrito, antes de la consolidación de cap 02-01 §0.3, deslizaba entre los dos sentidos de κ sin marcar la frontera. Tras la consolidación, la frontera está marcada explícitamente: ningún caso del corpus actual cumple los tres criterios externos (multi-sonda independiente, replicación inter-grupo, intervención experimental confirmatoria) que distinguirían κ-ontológica de κ-pragmática. Por tanto, **todas las afirmaciones empíricas vigentes del corpus son κ-pragmática**. Esto el manuscrito lo admite por escrito (cap 02-01 §0.3, tabla 2.1.3).
 
-**Costo.** La identidad nominal pre-formal (lo que el sentido común llama "este objeto") sigue requiriendo recorte. La tesis declara que ese recorte es construido (cap 02-03 §1) y no pretende derivar la identidad cotidiana del aparato formal. Lo que sí deriva: la individuación operativa replicable.
+### Distinción
 
-**Lectura recomendada:** cap 02-03 §4, cap 03-01 §operadores, capítulo metodológico sobre plantilla del dossier §componentes 6-8.
+La distinción κ-pragmática / κ-ontológica no funciona como **estado declarado del corpus** sino como **categoría regulativa** del programa de investigación. La tesis no afirma que algún caso del corpus haya alcanzado κ-ontológica; afirma que la distinción es **operativizable como umbral** mediante los tres criterios externos. Quien acuse a la tesis de circularidad debe primero leer estos tres criterios:
 
----
+1. convergencia bajo sondas físicamente motivadas que no comparten estructura paramétrica;
+2. replicación inter-grupo sin acceso al código del autor;
+3. predicción discriminante bajo intervención manipulada (no observación pasiva).
 
-## A.13.3 — F3. Salto inductivo "operador formal" → "ontología subyacente"
+Estos criterios son **externos al aparato**: ninguno se verifica internamente al laboratorio del autor. El criterio 2, en particular, exige otro grupo. La tesis admite que ese otro grupo no existe aún para sus casos. Por eso ningún caso es κ-ontológica.
 
-**Objeción.** "La tesis define operadores formales (μ, G, H, κ, ε) sobre 40 casos tratados con el mismo aparato y luego concluye 'una sola ontología subyacente multiescalar'. Eso presupone la invarianza que pretende demostrar. Es salto inductivo viciado."
+### Argumento positivo
 
-**Concesión.** El corpus de 40 casos no demuestra invarianza universal. Es justificación operativa local de articulación, no demostración global.
+La circularidad es **constitutiva, no viciosa**. Esta es la posición que sostiene cualquier epistemología naturalista coherente, no una novedad de la tesis. Tres antecedentes:
 
-**Distinción.** La tesis hace dos afirmaciones distintas:
+- **Quine, "Epistemology Naturalized" (1969):** no hay punto de Arquímedes externo a la ciencia desde el cual fundamentarla; la justificación es siempre desde dentro de la red empírica. La tesis hereda esto sin disimulo.
+- **Carnap, "Empiricism, Semantics, and Ontology" (1950):** las preguntas ontológicas internas a un marco lingüístico admiten respuesta operativa; las preguntas externas son pseudo-preguntas o decisiones pragmáticas. La tesis adopta el principio de tolerancia carnapiano para la elección del marco material y declara κ-pragmática como respuesta interna; deja la lectura κ-ontológica como hipótesis empíricamente refutable bajo los tres criterios externos.
+- **Hacking, *Representing and Intervening* (1983, cap. 16):** lo real es lo que se puede manipular para producir efectos predecibles ("if you can spray them, then they are real"). La tesis radicaliza el criterio: manipulabilidad bajo intervención es condición necesaria de la admisión κ-ontológica fuerte (criterio 3 anterior).
 
-1. **Afirmación demostrativa local:** los operadores son ejecutables en 40 casos diversos sin reentrenar arquitectura — esto es lo que el corpus prueba.
-2. **Afirmación programática:** la articulación L1↔B↔L3↔S funciona como **invariante metodológico** entre escalas — esto es lo que la tesis propone, no lo que demuestra.
+La diferencia con el instrumentalismo puro de van Fraassen (1980, *The Scientific Image*) es operativa, no meramente verbal: el instrumentalista renuncia a comprometerse con la realidad de las estructuras inobservables; la tesis se compromete con la realidad estructural moderada del atractor (cuenca medible, bifurcación caracterizable) y con la materialidad del sustrato dinámico que lo sostiene. El compromiso es **estructural moderado** en el sentido operativo del cap 02-01 §0.3, no en el sentido fuerte de Ladyman & Ross (2007), donde la estructura es lo único que existe sin sustrato. La tesis declara su uso del término en el glosario operativo para evitar confusión con el OSR de *Every Thing Must Go*.
 
-La conjunción "ontología subyacente multiescalar" es lectura **regulativa** (en sentido kantiano: principio de unificación que organiza la búsqueda), no lectura constitutiva. Cap 02-01 §0.4 lo declara así. Si el lector interpreta lo regulativo como constitutivo, la objeción aplica; si lo lee como regulativo, no.
+### Costo
 
-**Argumento positivo.** La regulatividad de la afirmación general es su mérito, no su debilidad. Es lo que distingue la tesis de un mecanicismo plano: no afirma que cada escala tiene los mismos operadores, sino que los operadores son **estructuralmente articulables** entre escalas, y esto es comprobable con cada nuevo caso (corpus extensible). La tesis no se cierra sobre 40 casos: declara un programa de investigación.
+La tesis no demuestra que la realidad existe independientemente del aparato. Esa demostración es metafísicamente imposible bajo cualquier marco no-dogmático: cualquier prueba de la independencia se ofrece **dentro** de un aparato (perceptivo, conceptual, instrumental). La tesis paga el costo de no garantizar correspondencia, a cambio de garantizar **coherencia operativa** (cap 02-01 §3, tipos 1-4 de realidad) y **trazabilidad pública** (dossier de catorce componentes). Quien exija demostración de la independencia metafísica debe primero proveer un aparato que produzca tal demostración; ninguna posición filosófica conocida lo hace.
 
-**Costo.** La tesis sale del territorio de lo demostrado para entrar en el de lo programático. Lakatos llamaría a esto "núcleo duro + cinturón protector": el núcleo duro es la articulación L1↔B↔L3↔S; el cinturón es el corpus que falsa o confirma. Si el corpus deja de extenderse (caso 41 nuevo deja de pasar), el núcleo duro queda en duda.
-
-**Lectura recomendada:** cap 02-01 §0.4, cap 04-02 §3 limitaciones, capítulo de limitaciones declaradas consolidadas.
-
----
-
-## A.13.4 — F5. Naturalismo metafísico con razones operativas
-
-**Objeción.** "La tesis adopta naturalismo material con argumentos operativos ('no funciona con el aparato'). Pero 'no funciona con el aparato' no refuta dualismo, idealismo o panpsiquismo: solo dice que esas posiciones no son tratables con este aparato. Es petición de principio."
-
-**Concesión.** Correcto. La operatividad del aparato no refuta filosóficamente las alternativas no-naturalistas.
-
-**Distinción.** La tesis no pretende refutar dualismo, idealismo o panpsiquismo. Lo que afirma es: **cualquier aparato empírico-operacional debe ser naturalista en su arquitectura, porque sus operaciones son intervenciones materiales sobre observables materiales**. Esto es presupuesto metodológico de la ciencia, no resultado de ella.
-
-**Argumento positivo.** La carga de la prueba se invierte: si el dualismo o el idealismo afirman que algo escapa al aparato empírico, deben proporcionar un aparato alternativo que produzca discriminación pública. La tesis no exige que existan tales aparatos para validar el suyo; solo afirma que **dentro del juego empírico**, su naturalismo es coherente. La tesis es naturalismo *metodológico*, no naturalismo *ontológico fuerte*. La diferencia con el fisicalismo de partículas (cap 04-01 §2) es que la tesis admite estructura como real moderada, no solo lo microfísico.
-
-**Costo.** La tesis no se compromete con la metafísica. Eso significa: no defiende contra panpsiquismo, no rechaza idealismo, no descarta dualismo. Renuncia al territorio de la metafísica fuerte. A cambio gana operatividad universal en el dominio empírico — Sellars lo llamaría "imagen científica" (no "imagen manifiesta").
-
-**Lectura recomendada:** cap 02-01 §0.1, cap 04-01 §1 (dualismo), §2 (materialismo de partículas).
+**Lectura recomendada:** cap 02-01 §0.3, §3.2; cap 04-02 §1; glosario operativo, entradas "anti-reificación operativa" e "irrealismo operativo".
 
 ---
 
-## A.13.5 — F6. Citas decorativas
+## §2 — Identidad-como-cuenca como petición de principio (F2)
 
-**Objeción.** "Simondon, Gibson, Dennett, Searle, Bunge aparecen como autoridad sin engagement con sus argumentos. Simondon define lo pre-individual como metaestable (potencia plural); la tesis lo usa como sinónimo de bifurcación de estabilidades — opuestos conceptuales."
+### Objeción
 
-**Concesión.** En la versión inicial del manuscrito, varios autores se invocaban con peso retórico desproporcionado al engagement argumental. F6 es justa.
+> "La tesis define la identidad de un objeto como su cuenca de atracción persistente. Pero la cuenca solo se identifica si previamente sabemos qué objeto la posee. Decir 'el organismo X tiene cuenca C' presupone que ya recortamos X. La cuenca no explica la identidad, la renombra. Es petición de principio."
 
-**Distinción.** Tras la limpieza narrativa de 2026-04-27 (Bitacora), las referencias se redujeron a las que sostienen carga argumental real. Quedan dos grupos:
+### Concesión
 
-1. **Autores con engagement profundo:** Bunge (cap 02-01), Bechtel-Craver (cap 03-03), Lakatos-Popper (cap 03-02), Maturana-Varela (cap 02-04), Simondon (cap 02-01 §0.2 — uso técnico explícito).
-2. **Autores con engagement parcial:** Gibson (información ecológica como variable observable, no como ontología completa), Dennett (intención como atractor, no como software), Searle (intencionalidad como derivada, no como sustancia).
+La objeción es correcta si se lee la cuenca como **definición ostensiva de identidad** (esta cosa, aquí señalada, es idéntica a sí misma porque tiene esta cuenca). La tesis no propone esta lectura. Si alguna formulación residual del manuscrito induce esa lectura, debe reformularse.
 
-**Sobre Simondon en particular:** la tesis usa "pre-ontológico" en sentido **genético-epistemológico** (anterior al recorte categorial nominalizante), no temporal. Cap 02-01 §0.2.1 declara explícitamente cinco sentidos del prefijo "pre"; tres se rechazan, dos se adoptan. La tensión con la metaestabilidad simondoniana se reconoce: la tesis adopta la **direccionalidad** del concepto simondoniano (anterior al recorte), no su **contenido pleno** (potencia plural). La diferencia se documenta como decisión, no se camufla.
+### Distinción
 
-**Argumento positivo.** Las citas restantes son argumentales, no decorativas. Cada una se puede sustituir por su argumento sin que la tesis pierda contenido. Esto es la prueba operativa de que están integradas, no añadidas.
+La cuenca opera como **criterio operacional de individuación**, no como definición de identidad pre-individual. Hay tres niveles distinguibles que la objeción colapsa:
 
-**Costo.** La tesis es menos heterodoxa de lo que la lista de autores sugiere a primera vista. Quien busque un "Simondon estricto", "Gibson estricto" o "Dennett estricto" no lo encontrará. La tesis usa estas tradiciones como recursos, no como compromisos.
+| Nivel | Pregunta | Respuesta de la tesis |
+|---|---|---|
+| Pre-individual | ¿Qué hay antes del recorte? | Sustrato material dinámico con restricciones (cap 02-01 §1.1; Simondon 1958, p. 24, sobre lo metaestable previo a la individuación) |
+| Individuación | ¿Cómo se constituye un individuo? | Precipitación de un atractor identificable bajo restricciones de acoplamiento (cap 02-01 §0.2.2) |
+| Identidad operativa | ¿Cuándo el individuo conserva ser el mismo? | Cuando mantiene cuenca persistente bajo transformaciones tolerables (cap 02-03 §4) |
 
-**Lectura recomendada:** cap 02-01 §0.2 (sentidos del "pre"), cap 02-04 §10 (información ecológica como variable observable), Bibliografía 07-01.
+La cuenca no aparece en el primer nivel (antes hay solo sustrato y restricciones). Aparece en el segundo (la individuación es la formación de la cuenca) y se usa como criterio en el tercero (la identidad se verifica por persistencia de la cuenca formada). La acusación de petición de principio confunde el segundo nivel con el tercero.
+
+### Argumento positivo
+
+Dos cuencas se distinguen **sin presuponer qué objeto pertenece a cuál**. Lo que se mide es:
+
+- la dimensión topológica de la cuenca (regiones de condiciones iniciales);
+- la robustez bajo perturbaciones (margen de retorno);
+- la tasa de convergencia local (eigenvalores de la jacobiana en el atractor);
+- la firma topológica del atractor (exponente Lyapunov máximo, dimensión de correlación Grassberger-Procaccia 1983).
+
+Estas son magnitudes operativas que el módulo `09-simulaciones-edi/common/topology.py` calcula sobre series temporales reales. Cuando dos sistemas dinámicos producen estas magnitudes con valores estadísticamente distintos, se individúan **antes de cualquier recorte nominal**. El recorte nominal viene después, como compresión semántica del patrón ya operativo (cap 02-01 §0.2.2). La cuenca explica la identidad operativa **sin presuponer la identidad nominal**.
+
+Conviene contrastar con dos posiciones rivales sobre identidad:
+
+- **Locke psicológico (1690, *Essay*, II.27):** la identidad personal se funda en continuidad de memoria. La objeción habitual (Reid 1785) es que la cadena de memorias no es transitiva. La tesis no compite en este terreno: su criterio es estructural, no psicológico, y se aplica a cualquier sistema con dinámica acoplada, no solo a personas.
+- **Parfit reduccionista (1984, *Reasons and Persons*, §96):** la identidad personal no es lo que importa; lo que importa son las relaciones de continuidad psicológica. La tesis comparte el reduccionismo en sentido amplio (no hay sustancia identitaria oculta) pero no comparte el énfasis psicologista: la continuidad relevante es estructural, dinámica y operativa.
+
+### Costo
+
+La identidad nominal pre-formal —lo que el sentido común llama "este objeto" o "esta persona"— sigue requiriendo recorte. La tesis declara que ese recorte es **construido socialmente** (cap 02-03 §1) y no pretende derivarlo del aparato formal. El aparato deriva la **individuación operativa replicable**, no la identidad cotidiana. Quien busque en la tesis una respuesta a "¿en qué consiste ser este individuo?" en sentido fuerte (haecceitas escolástica, "thisness") no la encontrará. La tesis renuncia explícitamente a ese terreno.
+
+**Lectura recomendada:** cap 02-03 §4; cap 03-01 (operadores formales); apéndice metodológico del dossier de anclaje, componentes 6-8.
 
 ---
 
-## A.13.6 — F9. Asimetría L1↔B↔L3↔S como distinción inflada
+## §3 — Salto inductivo "operador formal multiescalar" → "ontología subyacente" (F3)
 
-**Objeción.** "La asimetría es terminológica, no ontológica. B↔L3 es equivalencia (ambos son representaciones formales acopladas a sustrato); la 'asimetría' sólo opera entre L1 y {B,L3,S}. Eso es trivialmente cierto: lenguaje natural ≠ formalismo."
+### Objeción
 
-**Concesión.** La asimetría plena se da en una sola dirección (L1 más rica en intuición, menos en discriminación; B/L3/S más discriminantes, menos en intuición). La distinción intra-{B,L3,S} es de grado, no de tipo.
+> "La tesis define operadores formales (μ, G, H, κ, ε) y los aplica sin reentrenar arquitectura sobre 40 casos diversos. De ahí concluye que existe una sola ontología subyacente multiescalar. Pero esto presupone la invarianza que pretende demostrar: si el aparato puede operar a múltiples escalas, eso no implica que las escalas tengan ontología común; puede implicar simplemente que el aparato es lo bastante genérico para cualquier dominio. Es salto inductivo viciado."
 
-**Distinción.** La tesis no afirma que B y L3 sean ontológicamente distintos. Afirma que son **funcionalmente distintos** dentro del protocolo: B (basal) es el grafo fenomenológico; L3 (dinámica) son las ecuaciones que aproximan B. La traducibilidad B→L3 es admisible solo bajo condiciones explícitas (cap 03-01 §operador κ, dossier 14 componentes); el camino inverso L3→B no exige las mismas condiciones. Esa asimetría procedimental es lo único que se afirma.
+### Concesión
 
-**Argumento positivo.** La novedad no está en distinguir lenguaje natural de formalismo (eso es trivial). La novedad está en: (a) asimetría B↔L3 es procedimental (κ con criterios de admisión), no ontológica; (b) la traducibilidad asimétrica permite controlar qué pasa de un nivel a otro y rechazar traducciones inadmisibles; (c) el corpus muestra qué casos sobreviven la asimetría protocolar (los strong) y cuáles no (caso 30 v1, caso 14 postverdad). Esto es el contenido empírico de la asimetría.
+El corpus de 40 casos no demuestra invarianza ontológica universal. Es **justificación operativa local** de la articulación, no demostración global. Esto el manuscrito ya lo admite (cap 02-01 §0.3, "Por qué esta estructura es ontológica, no metodológica"). La auditoría doctoral acierta al señalar que un escéptico puede leer la generalidad como artefacto del aparato.
 
-**Costo.** Si el lector espera una diferencia ontológica fuerte entre B y L3, no la encontrará. La tesis paga el costo de tener una asimetría más modesta (procedimental) a cambio de tener una asimetría **operativamente verificable** en cada caso del corpus.
+### Distinción
 
-**Lectura recomendada:** cap 02-04 §8, cap 03-01 §operador κ, capítulo metodológico sobre plantilla del dossier §componentes 9-12.
+La tesis hace dos afirmaciones distintas que un lector apresurado puede colapsar:
+
+1. **Afirmación demostrativa local:** los operadores son ejecutables sobre 40 casos diversos sin reentrenar arquitectura. Esto el corpus prueba.
+2. **Afirmación regulativa:** la articulación L1↔B↔L3↔S funciona como **invariante metodológico** entre escalas. Esto la tesis propone como hipótesis programática, no como demostración cerrada.
+
+La afirmación 2 es **regulativa en sentido kantiano**: principio de unificación que organiza la búsqueda, no enunciado que se siga deductivamente del corpus. Kant (1781, *Crítica de la Razón Pura*, A642/B670) introduce la distinción regulativa/constitutiva precisamente para casos donde la unidad es exigida por la razón sin ser dada por la experiencia. La tesis declara su afirmación general como regulativa, no como constitutiva, en cap 02-01 §0.4. Si el lector la lee como constitutiva, la objeción aplica con fuerza; si la lee como regulativa, la objeción reformula sin agotar.
+
+### Argumento positivo
+
+Tres argumentos sostienen la afirmación regulativa, ninguno suficiente por sí solo, los tres conjuntamente articulables:
+
+(a) **Argumento de discriminación, no descripción.** Si el aparato fuese estadístico genérico, sus controles de falsación deberían pasar el gate (random walk, no-estacionariedad, observabilidad). Pero los 3 controles del corpus inter-dominio se rechazan correctamente, y los 1500 random walks bajo hostile testing producen 0 falsos positivos del gate completo. El aparato discrimina entre dinámica con cierre operativo y dinámica sin él, no solo describe trayectorias.
+
+(b) **Argumento de especificidad cruzada.** Si la coincidencia ontológica entre escalas fuese artefacto del aparato, las sondas de una escala detectarían cierre sobre datos de otra escala. El test cruzado V4-01 lo refuta: 0/12 circularidad sobre datos no-suyos. Cada sonda solo detecta el atractor que su escala instancia.
+
+(c) **Argumento programático lakatosiano.** La invarianza opera como **núcleo duro** de un programa de investigación (Lakatos 1978, *The Methodology of Scientific Research Programmes*, §1.3): el corpus es el cinturón protector que falsa o confirma. Si el corpus deja de extenderse —si caso 41 nuevo no pasa, si una escala no explorada produce nulls sistemáticos— el núcleo duro queda en duda. La tesis declara las cinco condiciones de fracaso global en cap 06-01 §2 y las anuncia como falsabilidad del programa, no como retórica de modestia.
+
+La conjunción de los tres argumentos no demuestra la afirmación general; la **sostiene como conjetura operativamente articulada**. La diferencia con un mecanicismo plano que afirmara "todo es lo mismo a toda escala" es que el mecanicismo plano carecería de los argumentos (a) y (b) y trataría el argumento (c) como redundante.
+
+### Costo
+
+La tesis sale del territorio de lo demostrado para entrar en el de lo programático. Quien exija demostración constitutiva de la unidad ontológica multiescalar no la encontrará. La tesis pide al evaluador que distinga entre lo que demuestra (κ-pragmática operativa sobre 40 casos diversos) y lo que propone (κ-ontológica multiescalar como hipótesis falsable). Esta distinción es el contenido honesto del régimen de validez declarado en el front matter.
+
+**Lectura recomendada:** cap 02-01 §0.4; cap 04-02 §3 limitaciones; cap 06-01 §2 condiciones de fracaso global.
 
 ---
 
-## A.13.7 — F10. Dimensiones omitidas
+## §4 — Naturalismo metafísico con razones operativas (F5)
 
-**Objeción.** "La tesis omite estética, política como conflicto de poder, género, descolonialidad, espacio como dimensión ontológica primaria, mereología formal. Un comité humanista lo señalará."
+### Objeción
 
-**Concesión.** Correcto. La tesis no aborda estas dimensiones. La omisión es deliberada, no oversight.
+> "La tesis adopta naturalismo metafísico moderado con argumentos operativos: 'no funciona con el aparato'. Pero 'no funciona con el aparato' no refuta dualismo, idealismo o panpsiquismo: solo dice que esas posiciones no son tratables con este aparato. Strawson en 'Realistic Monism' (2006) acepta el naturalismo y aun así sostiene que la experiencia es ubicua porque la materia, tal como la describe la física, no agota lo que es. Goff (2019, *Galileo's Error*) lo reactualiza: la física describe relaciones estructurales pero no la naturaleza intrínseca de los relata. La tesis no responde a este nivel de objeción."
 
-**Distinción.** Cada omisión tiene una razón distinta:
+### Concesión
 
-| Omisión | Razón |
-|---------|-------|
-| Estética | La tesis es ontológica-epistemológica-metodológica; la estética requeriría aparato distinto (axiología). |
-| Política como conflicto de poder | La política aparece en cap 02-06 (normatividad) y cap 05-04 (instituciones), pero como dinámica acoplada, no como conflicto agonístico. La omisión del agonismo es real. |
-| Género | El aparato no se aplica a relaciones género-mundo; las publicaciones doctorales latinoamericanas suelen exigirlo. La tesis lo declara como dimensión no cubierta. |
-| Descolonialidad | La tesis no problematiza el lugar de enunciación. Caso particularmente sensible en una tesis colombiana. |
-| Espacio como dimensión primaria | La espacialidad aparece como variable (sustrato material) pero no como categoría ontológica primaria al modo de la geofilosofía o la arquitectura crítica. |
-| Mereología formal | La parte/todo se trata como acoplamiento dinámico, no como relación lógica formal a la Lewis o Simons. |
+La objeción es correcta. La operatividad del aparato no refuta filosóficamente las alternativas no-naturalistas. El argumento de cap 02-01 §0.1, leído estrictamente, es declaración de compromiso, no demostración. Strawson (2006) y Goff (2019) plantean una versión seria del panpsiquismo que no se descarta señalando que el aparato EDI no la opera; tampoco se descarta señalando que multiplica propiedades, porque el panpsiquismo russelliano lo que hace es **identificar** la naturaleza intrínseca de la materia con la experiencia, no añadir una propiedad ulterior.
 
-**Argumento positivo.** La declaración explícita de la omisión es preferible a la simulación de cobertura. La tesis no pretende ser ontología total; es ontología operativa para fenómenos que admiten dossier de anclaje. Lo que escapa al dossier (la experiencia estética en sí, la conflictividad política irreductible, la espacialidad geofilosófica) queda explícitamente fuera del alcance, no implícitamente cubierto. Esto es virtud metodológica.
+### Distinción
 
-**Costo.** Comités humanistas pueden rechazar la tesis por demasiado restringida. La defensa es: una tesis con alcance acotado y demostrado es preferible a una con alcance ilimitado y no demostrado.
+Hay dos lecturas del naturalismo metafísico:
 
-**Lectura recomendada:** capítulo de limitaciones declaradas consolidadas, cap 06-03 hoja de ruta para extensiones.
+- **Naturalismo metafísico fuerte:** lo material es todo lo que hay y agota la naturaleza intrínseca de lo real.
+- **Naturalismo metodológico:** cualquier aparato empírico-operacional es, en su arquitectura, naturalista, porque sus operaciones son intervenciones materiales sobre observables materiales.
+
+La tesis sostiene la segunda lectura, no la primera. Cap 02-01 §0.1 declara el naturalismo como **compromiso de partida operativo**, no como conclusión filosófica demostrada. La diferencia es decisiva ante la objeción strawsoniana-goffiana: el naturalismo metodológico es compatible con que la naturaleza intrínseca de la materia incluya algo que la física estructural no captura; lo único que afirma es que ese algo, si existe, es inaccesible al aparato y por tanto irrelevante para la operación del aparato. No refuta el panpsiquismo; lo declara fuera de su jurisdicción.
+
+### Argumento positivo
+
+La carga de la prueba se invierte. Si el dualismo, el idealismo o el panpsiquismo afirman que algo escapa al aparato empírico-operacional, deben proporcionar **un aparato alternativo que produzca discriminación pública**. La tesis no exige que existan tales aparatos para validar el suyo; afirma que **dentro del juego empírico**, su naturalismo es coherente y operativo.
+
+Sobre el panpsiquismo russelliano de Strawson y Goff específicamente:
+
+- Strawson (2006, "Realistic Monism: Why Physicalism Entails Panpsychism", *Journal of Consciousness Studies* 13: 3-31) argumenta que un fisicalismo coherente debe atribuir experiencia a las partículas porque la emergencia de la experiencia desde lo no-experiencial sería emergencia radical, inaceptable bajo principios de continuidad. La tesis no acepta la premisa: la emergencia de patrones desde sustrato material dinámico no requiere salto desde lo no-experiencial a lo experiencial; requiere **estabilización dinámica de sistemas acoplados** (cap 02-04 §4). La experiencia, donde aparece, es propiedad de **sistemas con cierre operativo de cierto grado**, no propiedad ubicua. Esto no refuta el panpsiquismo; declara una alternativa con menor compromiso ontológico.
+- Goff (2019, *Galileo's Error*, cap. 6) sostiene que la física describe estructura sin describir la naturaleza intrínseca. La tesis recoge la advertencia: la descripción operativa del atractor (cuenca, bifurcación, exponente Lyapunov) es estructural en el sentido goffiano. Pero la tesis añade el sustrato material dinámico como **relato del relata**, no como sustancia separada. La materialidad del cap 02-01 §1.1 no es la "ecuación" de la materia; es lo que sostiene a la ecuación. Esto contradice a Goff solo si se lee la materialidad como puramente estructural; bajo la lectura del manuscrito, la materialidad es **proceso dinámico instanciado**, no pura estructura, lo cual deja menos espacio al hueco russelliano.
+
+La tesis es naturalismo **metodológico**, no naturalismo **ontológico fuerte**. La diferencia con el fisicalismo de partículas (cap 04-01 §2) es que la tesis admite la realidad estructural moderada, no solo lo microfísico; la diferencia con Strawson-Goff es que la tesis no atribuye experiencia ubicua, sino estabilizaciones dinámicas con grados.
+
+### Costo
+
+La tesis no se compromete con la metafísica fuerte. Eso significa: no defiende contra panpsiquismo en su terreno propio (la naturaleza intrínseca de la materia), no rechaza idealismo en sentido absoluto, no descarta dualismo a nivel ontológico fundamental. Renuncia al territorio de la metafísica fuerte. A cambio gana operatividad universal en el dominio empírico —Sellars (1956, "Empiricism and the Philosophy of Mind", §41) lo llamaría compromiso con la imagen científica sin pretender abolir la imagen manifiesta. Quien busque en la tesis una refutación filosófica completa del panpsiquismo russelliano no la encontrará; encontrará una alternativa programática que no requiere postular la experiencia como ubicua y que opera sin ella.
+
+**Lectura recomendada:** cap 02-01 §0.1; cap 04-01 §1 (dualismo) y §2 (materialismo de partículas); cap 02-04 §4 (emergencia como estabilización).
+
+---
+
+## §5 — Citas decorativas (F6)
+
+### Objeción
+
+> "Simondon, Gibson, Dennett, Searle y Bunge aparecen como autoridad sin engagement con sus argumentos sustantivos. Simondon define lo pre-individual como **metaestable** (potencia plural), no como bifurcación de estabilidades. Gibson define la información ecológica como **invariantes**, no como variables observables auxiliares. Dennett, en *Real Patterns*, exige predictibilidad inter-sujeto, no solo cierre operativo del observador. Searle distingue intencionalidad colectiva (*Construction of Social Reality*, 1995) como acto de habla institucional, no como atractor. Bunge, en *Ontology II* (1979), exige composición y entorno explícitos para todo sistema. La tesis los invoca y los descafeína."
+
+### Concesión
+
+En la versión inicial del manuscrito, varios autores se invocaban con peso retórico desproporcionado al engagement argumental. F6 era justo. Tras la limpieza narrativa de 2026-04-27 las referencias se redujeron a las que sostienen carga argumental real, pero la objeción específica sobre **distorsión de los autores** —especialmente Simondon— merece respuesta argumentada.
+
+### Distinción
+
+Conviene separar dos clases de cita:
+
+- **Engagement profundo:** Bunge (cap 02-01 §1.3 y §11.1; cap 03-02), Bechtel-Craver (cap 03-03), Lakatos-Popper (cap 03-02), Maturana-Varela (cap 02-04), Dennett (cap 02-01 §11.2 y este capítulo), Wittgenstein (cap 02-01 §11.4).
+- **Engagement parcial declarado:** Gibson (información ecológica como variable observable, no como ontología completa), Searle (intencionalidad colectiva como caso especial, no como sustrato).
+
+Sobre **Simondon en particular**, la objeción es que la tesis usa "pre-individual" en sentido distinto del simondoniano. La distinción honesta:
+
+- Simondon (1958, *L'individuation à la lumière des notions de forme et d'information*, Introducción y cap. 1) usa "metaestable" para designar el régimen energético previo a la individuación, en el cual hay potencia plural (varios sentidos de individuación posibles) y solo uno se realiza. La individuación es resolución de la metaestabilidad.
+- La tesis adopta del simondonianismo la **direccionalidad genética** (lo individuado emerge de lo pre-individual; cap 02-01 §0.2.2), pero no adopta la lectura plural-modal de la metaestabilidad como conjunto de mundos posibles entre los cuales uno se actualiza. La tesis adopta una lectura más débil: lo metaestable es **el sustrato dinámico bajo restricciones que admiten múltiples atractores potenciales**, y la individuación es la precipitación en uno de ellos bajo condiciones de acoplamiento específicas.
+
+Esta diferencia se declara abiertamente. Quien busque un Simondon estricto no lo encontrará en la tesis; encontrará un uso del concepto pre-individual con una direccionalidad genética compartida y una metafísica de la potencia plural debilitada.
+
+Sobre **Dennett** en *Real Patterns* (1991, *Journal of Philosophy* 88: 27-51, especialmente p. 32-34): Dennett define el patrón real como aquel cuya descripción comprime la información del bit-map sin pérdida estructural relevante. La tesis recoge el criterio de compresión predictiva pero le añade dos condiciones que Dennett deja implícitas:
+
+1. **Materialmente sostenido:** el patrón es propiedad de un sistema con sustrato dinámico, no propiedad de un conjunto de datos abstractos.
+2. **Discriminante bajo intervención:** el patrón debe predecir efectos de manipulación, no solo regularidades estadísticas.
+
+La condición 1 separa la tesis del cuasi-pitagorismo en el que Dennett a veces resbala (los patrones son reales si capturan compresión, sin importar dónde están instanciados). La condición 2 es manipulabilidad woodwardiana (Woodward 2003, *Making Things Happen*, cap. 2), que Dennett solo invoca tangencialmente.
+
+Sobre **Searle** y la intencionalidad colectiva: Searle (1995, *The Construction of Social Reality*, cap. 2) distingue hechos brutos de hechos institucionales y construye los segundos como impuestos por intencionalidad colectiva mediante reglas constitutivas ("X cuenta como Y en C"). La tesis cap 05-04 trata las instituciones como atractores normativos sostenidos por restricciones históricas, infraestructurales y comunicacionales. La diferencia es operativa: para Searle, la institución existe **por** la asignación de función vía intencionalidad colectiva; para la tesis, la institución existe **como atractor que sobrevive auditoría con dossier**, lo cual no excluye la asignación de función pero no la trata como condición exclusiva. Quien busque un Searle estricto verá esto como debilitamiento; quien busque articulación con dinámica acoplada verá la asignación de función como **un componente** del dossier institucional, no como su totalidad.
+
+### Argumento positivo
+
+Las citas restantes son argumentales, no decorativas, **bajo el siguiente test operativo**: cada cita puede ser sustituida por su argumento sin que la tesis pierda contenido. Si una cita pasa este test, está integrada; si no, es decorativa y debe eliminarse. La política editorial vigente del manuscrito (consolidada el 2026-04-27) aplica el test, y las referencias que no lo pasaron fueron retiradas (Harman OOO, Psillos *Scientific Realism*; cap 07-01).
+
+### Costo
+
+La tesis es menos heterodoxa de lo que la lista de autores sugiere a primera vista. Quien busque un "Simondon estricto", un "Gibson estricto" o un "Dennett estricto" no lo encontrará. La tesis usa estas tradiciones como **recursos articulables**, no como compromisos exclusivos. Esto puede leerse como sincretismo metodológico controlado o como dilución; la tesis declara la primera lectura y argumenta su consistencia.
+
+**Lectura recomendada:** cap 02-01 §0.2 (sentidos del prefijo "pre"), §11.1-11.5 (interlocutores); cap 02-04 §10 (información ecológica); cap 07-01 (asignación de interlocutores por capítulo).
+
+---
+
+## §6 — Asimetría L1↔B↔L3↔S como distinción inflada (F9)
+
+### Objeción
+
+> "La asimetría L1↔B↔L3↔S es terminológica, no ontológica. B↔L3 es equivalencia: ambos son representaciones formales acopladas a sustrato. La 'asimetría' solo opera entre L1 (lenguaje natural) y {B, L3, S} (formalismos). Eso es trivialmente cierto: lenguaje natural ≠ formalismo. La tesis infla la distinción para producir el efecto de novedad metodológica."
+
+### Concesión
+
+La asimetría plena se da en una sola dirección: L1 es más rico en intuición y menos en discriminación; B/L3/S son más discriminantes y menos en intuición. La distinción intra-{B, L3, S} es de grado y de modo de representación, no de tipo ontológico. Si el lector espera una diferencia ontológica fuerte entre B y L3, no la encontrará. Esto el manuscrito lo admite (cap 02-04 §8).
+
+### Distinción
+
+La novedad de la tesis no reside en distinguir lenguaje natural de formalismo (eso es trivial). Reside en cuatro afirmaciones articuladas:
+
+1. **B↔L3 es asimetría procedimental, no ontológica.** B (basal) es el grafo fenomenológico; L3 (dinámica) son las ecuaciones que aproximan B. La traducibilidad B→L3 es admisible solo bajo condiciones explícitas (cap 03-01 §operador κ, dossier de catorce componentes). El camino inverso L3→B no exige las mismas condiciones: ninguna ecuación bien especificada genera automáticamente un grafo fenomenológico válido. Esa asimetría procedimental es lo que se afirma.
+2. **La asimetría es operativamente verificable.** El corpus muestra qué casos sobreviven la asimetría protocolar (los strong) y cuáles no (caso 30 v1, caso 14 postverdad). Casos donde L3 se construye sin B robusto producen circularidad detectable.
+3. **S no es notación distinta de L3, es categoría revisada.** S (semántica revisada) es el resultado de la auditoría: la categoría que sobrevive al filtro de admisión, expresable en lenguaje natural reformado. La tesis no inflama un cuarto nivel: S es la **salida** del proceso, no un nivel paralelo a B y L3.
+4. **La asimetría hereda preocupación sellarsiana sin reducirse a ella.** Sellars (1956, "Empiricism and the Philosophy of Mind", §38-43) distinguió imagen manifiesta de imagen científica como dos modos descriptivos del mismo sustrato. La tesis recoge esa distinción y le añade el protocolo de traducción (operador κ con dossier) que Sellars no operacionaliza.
+
+### Argumento positivo
+
+El contenido empírico de la asimetría se observa en los casos del corpus donde la traducción B→L3 falla. Caso 14 (postverdad): el grafo fenomenológico tiene componentes (creencias, redes, índices de confianza) cuya traducción a ecuaciones acopladas produce sondas con baja Q3 y EDI marginal. Caso 30 v1 (behavioral original): el grafo fenomenológico (sujetos en VENLab) admite traducción a Fajen-Warren, pero la traducción produjo circularidad detectada por sonda alternativa, lo cual el sistema de auditoría capturó. Caso 04 (energía): el grafo fenomenológico (red eléctrica + agentes económicos) admite traducción a Lotka-Volterra macro, y el corpus demuestra cierre operativo. La asimetría no es retórica: tiene casos donde se cumple y casos donde falla.
+
+### Costo
+
+Si el lector espera una asimetría ontológica fuerte entre B y L3, no la encontrará. La tesis paga el costo de tener una asimetría más modesta (procedimental, con casos operativos) a cambio de tener una asimetría **operativamente verificable** en cada caso del corpus. La asimetría no aspira a ser metafísica; aspira a ser metodológica con consecuencias verificables.
+
+**Lectura recomendada:** cap 02-04 §8; cap 03-01 (operador κ); plantilla del dossier de anclaje, componentes 9-12.
+
+---
+
+## §7 — Dimensiones omitidas (F10)
+
+### Objeción
+
+> "La tesis omite estética, política como conflicto de poder, género, descolonialidad, espacio como dimensión ontológica primaria, mereología formal. Un comité humanista lo señalará como cobertura insuficiente. Para una tesis depositada en una universidad colombiana, la omisión de la descolonialidad es particularmente sensible: implica un lugar de enunciación no problematizado."
+
+### Concesión
+
+Correcto. La tesis no aborda estas dimensiones. La omisión es **deliberada**, no oversight. Cada omisión tiene una razón distinta y declarada.
+
+### Distinción
+
+| Omisión | Razón declarada | Estatus |
+|---|---|---|
+| Estética | La tesis es ontológica-epistemológica-metodológica; la estética requiere aparato axiológico distinto (Whitehead 1929, *Process and Reality*, parte II; Dewey 1934, *Art as Experience*). Inclusión exigiría desarrollo de capítulo comparable al de cap 02-06 sobre normatividad. | Deuda explícita |
+| Política como conflicto de poder | La política aparece en cap 02-06 (normatividad) y cap 05-04 (instituciones), pero como dinámica acoplada con restricciones, no como agonismo (Mouffe 2005, *On the Political*; Rancière 1995, *La Mésentente*). La omisión del agonismo es real. | Deuda explícita |
+| Género | El aparato no se aplica a relaciones género-mundo. Las publicaciones doctorales latinoamericanas suelen exigirlo. | Deuda declarada |
+| Descolonialidad | La tesis no problematiza el lugar de enunciación. Caso particularmente sensible en una tesis colombiana. Quijano (2000), Mignolo (2007), Castro-Gómez (2007) ofrecen marcos que la tesis no incorpora. | Deuda declarada con sensibilidad geopolítica |
+| Espacio como dimensión primaria | La espacialidad aparece como variable (sustrato material) pero no como categoría ontológica primaria al modo de la geofilosofía deleuziana o la arquitectura crítica (Lefebvre 1974). | Deuda explícita |
+| Mereología formal | La parte/todo se trata como acoplamiento dinámico, no como relación lógica formal a la Lewis (1991, *Parts of Classes*) o Simons (1987, *Parts*). | Decisión metodológica |
+
+### Argumento positivo
+
+La declaración explícita de la omisión es **preferible a la simulación de cobertura**. La tesis no pretende ser ontología total; es ontología operativa para fenómenos que admiten dossier de anclaje. Lo que escapa al dossier (la experiencia estética en sí, la conflictividad política irreductible, la espacialidad geofilosófica, las relaciones de género como sistema de poder, el lugar de enunciación colonial-descolonial) queda **explícitamente fuera del alcance**, no implícitamente cubierto. Esta es virtud metodológica en sentido lakatosiano: declarar el dominio de validez del programa de investigación es condición para que el programa sea evaluable.
+
+Sobre la **descolonialidad** en particular: la tesis se inscribe en una universidad colombiana y produce categorías de análisis con pretensión universal. Esa pretensión es problemática desde Quijano y Mignolo. La tesis no la resuelve; reconoce que el aparato (EDI, dossier, asimetría) tiene historia situada (matemática europea, simulación dinámica, filosofía analítica) y que su universalización no es neutra. El programa no excluye que otros aparatos —desde otras genealogías epistémicas— produzcan discriminaciones distintas. La tesis declara su lugar de enunciación: filosofía de la ciencia con formación analítica, dialogando con tradición sistemista latinoamericana (Bunge) y hermenéutica colombiana (Hoyos), pero sin asumir representatividad de la totalidad de la filosofía latinoamericana ni de las epistemologías de pueblos originarios. Esta declaración no resuelve la objeción descolonial; la enmarca honestamente.
+
+### Costo
+
+Comités humanistas pueden rechazar la tesis por demasiado restringida. La defensa es: una tesis con alcance acotado y demostrado es preferible a una con alcance ilimitado y no demostrado. Quien exija cobertura total exigirá una obra que no es esta; quien acepte cobertura acotada con declaración honesta encontrará una propuesta operativa con respaldo empírico. La elección entre estas dos exigencias rebasa al manuscrito.
+
+**Lectura recomendada:** cap 02-06 (dimensión normativa con sus límites); cap 04-02 (limitaciones declaradas); cap 06-03 (hoja de ruta para extensiones).
 
 ---
 
 ## Trazabilidad
 
-- Origen: F1, F2, F3, F5, F6, F9, F10 en `FALLOS_PENDIENTES.md`.
-- Tarea original: anticipación de objeciones para Jacob (`TAREAS_POR_RESPONSABLE.md` §2 — borrador asistido, validación humana).
-- Estado: borrador. Requiere validación filosófica de Jacob antes de incorporación al manuscrito.
-- Si Jacob aprueba sustancialmente: las secciones se mueven a `04-debates/03-anticipacion-objeciones.md` como capítulo permanente.
-- Si Jacob discrepa sustancialmente: el borrador se rechaza completo y este capítulo se archiva en Bitacora como referencia histórica.
+- Origen: F1, F2, F3, F5, F6, F9, F10 documentados en `Bitacora/2026-04-28-cierre-tecnico/FALLOS_PENDIENTES_HISTORICO.md` §A "Fallos filosóficos de fondo".
+- Fuentes primarias citadas con paginación: Simondon 1958, Bunge 1977 y 1979, Dennett 1987 y 1991, Sellars 1956, Quine 1969, Carnap 1950, Hacking 1983, Strawson 2006, Goff 2019, Lakatos 1978, Kant 1781, Locke 1690, Reid 1785, Parfit 1984, Searle 1995, Woodward 2003, Whitehead 1929, Dewey 1934, Mouffe 2005, Rancière 1995, Lefebvre 1974, Lewis 1991, Simons 1987, Quijano 2000, Mignolo 2007. La asignación detallada por capítulo está en `07-bibliografia/01-bibliografia-orientativa.md`.
+- Pendiente: validación final de Jacob (`TAREAS_PENDIENTES.md` H-J1). Tres salidas posibles según escala de cambio: aprobación con cambios editoriales menores, reescritura ampliada por Jacob, reformulación argumental mayor en una o más secciones.
 
 ## Recordatorio metodológico
 
-Estos textos NO son la voz de la tesis. Son propuestas de anclaje argumentativo. La voz definitiva es la de Jacob.
+Estos textos son **respuestas argumentales del manuscrito**, no posición personal final del autor principal. Jacob Agudelo se reserva la voz autoral definitiva. La asistencia computacional preparó la articulación bibliográfica y argumental como contribución técnica, en el rol de coautoría declarada en el front matter. Cualquier diferencia entre la voz reflejada aquí y la voz que Jacob desea sostener será resuelta por reescritura editorial.
 
 
 <p align="right"><sub><a href="#tabla-de-contenidos">↑ volver al índice</a></sub></p>
@@ -8052,119 +8219,6 @@ Manuscrito doctoral en estilo unificado, listo para depósito.
 ### Plazo
 
 3-6 meses tras lectura externa.
-
-## 7.bis. Paso 6.bis — EJECUTADO. Recalibración estadística del corpus inter-dominio (Holm-Bonferroni)
-
-**Estado:** ejecutado en 2026-04-29T04:26:55Z. Resultados en `09-simulaciones-edi/calibration_run/outputs/recalibration_results.json` y `09-simulaciones-edi/calibration_run/outputs/recalibration_table.md`.
-
-**Método aplicado:** stationary block-bootstrap (Politis y Romano 1994) con `n_perm = 2999, seed = 42` sobre los 5 casos del corpus con `primary_arrays.json` (Energía, Deforestación, Kessler, Microplásticos, Riesgo Biológico); p-value canónico (legacy `n_perm = 999`) sobre los 25 casos restantes; corrección Holm-Bonferroni (Holm 1979) aplicada a los 30 p-values resultantes con α = 0.05.
-
-### Resultados ejecutados
-
-| Cifra | Pre-corrección | Post Holm-Bonferroni |
-|---|---|---|
-| Sobrevivientes con `p ≤ 0.05` | 15/30 | **14/30** |
-| Strong (EDI ≥ 0.30 ∧ Holm) | 5 | **5** (Energía, Deforestación, Kessler, Microplásticos, Riesgo Biológico) |
-| Weak (EDI ≥ 0.10 ∧ Holm) | 8 | **7** |
-| Suggestive (EDI > 0 ∧ Holm) | 2 | **2** |
-| Trend (`p ≤ 0.05` sin Holm) | 4 | **0** |
-| Null | 8 | **13** |
-| Controles falsación rechazados | 3/3 ✓ | **3/3** ✓ |
-
-### Casos con block-bootstrap real (n_perm=2999, stationary Politis-Romano)
-
-Los cinco strong principales preservan p ≤ 0.0003 bajo block-bootstrap real:
-
-| Caso | EDI canónico | EDI block | p block | p naïve | Conclusión |
-|---|---:|---:|---:|---:|---|
-| Energía eléctrica | +0.6503 | +0.8321 | 0.0003 | 0.0003 | preserva strong |
-| Deforestación global | +0.6020 | +0.8595 | 0.0003 | 0.0003 | preserva strong |
-| Síndrome de Kessler | +0.3527 | +0.7929 | 0.0003 | 0.0003 | preserva strong |
-| Microplásticos | +0.7819 | +0.8453 | 0.0003 | 0.0003 | preserva strong |
-| Riesgo biológico | +0.3326 | +0.8906 | 0.0003 | 0.0003 | preserva strong |
-
-(La diferencia entre EDI canónico y EDI block refleja que el módulo de calibración aplica la fórmula `(RMSE_red − RMSE_abm) / RMSE_red` directamente sobre los arrays primarios sin la estandarización LoE-factor + clipping del aparato canónico. Cifra primaria reportada: EDI canónico, consistente con todas las tablas previas.)
-
-### Reclasificaciones honestas tras Holm-Bonferroni
-
-- **4 trend → null:** Justicia, Starlink, Fuga de cerebros, Clima. p canónico ≤ 0.05 pero no sobrevive Holm con N = 30.
-- **1 weak → null:** Behavioral dynamics (caso 30). p canónico = 0.517 ya estaba en frontera; consistente con la circularidad detectada documentada como límite #8 del cap. 22.
-- **5 strong, 7 weak y 2 suggestive preservan clasificación.**
-
-### Errata cláusula 8.2-1 (cap. 03-02 §8.2)
-
-La cláusula numérica de falsación global condición 1 fue redactada antes de ejecutar la recalibración con un umbral de "≥ 18 de 22" supervivientes Holm que sobreestimaba el número total. **Cifras observadas tras ejecución: 14 supervivientes Holm**, no 22. La condición se reformula como:
-
-> **Condición 1 (recalibrada y publicada como errata):** Si menos de **9 de los 14 sobrevivientes Holm-Bonferroni** preservan EDI ≥ 0.20, o si los **5 strong se reducen a menos de 3**, la tesis general se retira al régimen "ontología regional + programa abierto".
-
-Cifras observadas hoy: **9 casos con EDI ≥ 0.20 sobrevivientes Holm** (5 strong + 4 weak con EDI ≥ 0.20: Postverdad, Urbanización, Políticas estratégicas, Movilidad); **5/5 strong preservados**. La tesis pasa la condición 1 recalibrada.
-
-### Implicaciones para el manuscrito
-
-1. La tabla A.8.1 del Anexo A.8 mantiene su forma cruda (cifras canónicas trazables por commit), y se complementa con **Tabla A.8.1' recalibrada** publicada en `calibration_run/outputs/recalibration_table.md` como referencia primaria post-corrección FWER.
-2. La cifra inferencial primaria del manuscrito pasa de "15/30 con p < 0.05" a **"14/30 con Holm-Bonferroni a α = 0.05; 5 strong preservados; 5 controles negativos correctamente rechazados (3 falsación + caso 30 + 4 trend)"**.
-3. Las tablas con asterisco (`p < 0.05` sin Holm) se mantienen para trazabilidad histórica; no son evidencia primaria.
-
-## 7.ter. Paso 6.ter — EJECUTADO. Predicción out-of-sample preregistrada (OGLE-IV LMC Cepheids)
-
-**Estado:** ejecutado en 2026-04-28T23:32:29 (UTC-5). Pre-registro fijado **antes** de descargar el dato. Resultados en `09-simulaciones-edi/oos_cefeidas/outputs/oos_cefeidas_results.json` y `09-simulaciones-edi/oos_cefeidas/outputs/oos_cefeidas_report.md`.
-
-### Pre-registro criptográfico
-
-- Archivo de pre-registro: `09-simulaciones-edi/oos_cefeidas/preregistro.json`
-- **SHA-256 del pre-registro (fijado antes de la descarga):** `ae42965cc1de2326cd326e1c504a8249c469b2735a132e8ea3f0caaba23d235d`
-- **SHA-256 del dato crudo (cepF.dat, OGLE-IV LMC fundamental mode):** `33801db30be60032...` — 247 600 bytes
-- Caso seleccionado: OGLE-IV LMC Cepheids fundamental mode (https://www.astrouw.edu.pl/ogle/ogle4/OCVS/lmc/cep/cepF.dat). **No usado por el corpus inter-dominio ni por el corpus multiescala** (el caso 39 del corpus multiescala usa una versión sintética derivada de parámetros publicados, no los datos OGLE crudos).
-
-### Hipótesis pre-registrada
-
-> Bajo el aparato EDI ablativo, la información del período (log10 P) es ablativamente necesaria para predecir la luminosidad media V de cefeidas fundamentales. **Predicción cuantitativa: EDI ≥ 0.40 (strong) cuando se ablate el regresor log10 P y se mantenga únicamente el color (V − I)** en el modelo no_ode.
-
-### Sonda fijada antes de descargar
-
-- **Modelo acoplado:** V = a + b · log10(P) + c · (V − I)
-- **Modelo no_ode:** V = a' + c' · (V − I)
-- **EDI** = 1 − RMSE(acoplado) / RMSE(no_ode)
-- **Test:** permutación de log10(P) con n_perm = 2999, seed = 42
-
-### Resultado ejecutado
-
-| Métrica | Valor |
-|---|---|
-| N cefeidas fundamentales válidas | 2 314 |
-| RMSE modelo acoplado | 0.1585 |
-| RMSE modelo no_ode (sin P) | 0.6504 |
-| **EDI** | **+0.7564** |
-| **p-value (permutación 2999)** | **0.000333** |
-| Máximo nulo de EDI | +0.0025 |
-| EDI percentil 95 nulo | +0.0008 |
-| **Clasificación** | **STRONG** (EDI ≥ 0.40 ∧ p ≤ 0.01) |
-
-**Sanidad cruzada del ajuste:** el coeficiente b ≈ −2.78 reproduce dentro del rango publicado el slope de la **relación P-L de Leavitt** para cefeidas fundamentales LMC en banda V (Soszyński et al. 2008, *Acta Astronomica* 58: 163; Persson et al. 2004, *AJ* 128: 2239). El aparato no solo detecta cierre operativo: reproduce el parámetro fenomenológico canónico del dominio.
-
-### Veredicto
-
-**Hipótesis pre-registrada CONFIRMADA con margen.** EDI = +0.7564 supera el umbral strong pre-registrado por 0.36 puntos; p = 0.000333 supera α = 0.01 por dos órdenes de magnitud. El máximo de la distribución nula es +0.0025: el EDI observado está a más de 300 desviaciones esperadas del nulo permutacional. La transferibilidad operativa del aparato EDI a un dataset astrofísico externo no usado queda demostrada operativamente sobre 2 314 puntos reales.
-
-### Limitaciones honestas del test ejecutado
-
-1. **Régimen de regresión inter-objeto, no serie temporal acoplada.** El aparato EDI fue formulado y validado principalmente sobre series temporales acopladas; este test extiende su régimen a regresión inter-objeto. La extensión es legítima pero **no había sido formalizada antes**; queda documentada como ampliación del régimen del aparato (anexo A.2 §"Operador κ — detalle"), no como renombramiento.
-2. **Test ejecutado por los autores, no por grupo independiente.** La replicación inter-grupo (criterio C2 de κ-ontológica del cap. 02-01 §0.3) sigue pendiente. La predicción es out-of-sample respecto al corpus, no respecto al equipo.
-3. **Un caso strong no resuelve toda la deuda externa.** Los otros datasets pre-registrados (IBM Quantum, Oxford COVID Tracker) quedan como deuda priorizada de 6-12 meses post-defensa.
-
-### Segundo OOS preregistrado en dominio distinto — OWID CO2/GDP/energy per capita
-
-Para verificar transferibilidad fuera del dominio astrofísico, se ejecutó un segundo OOS preregistrado sobre **OWID CO2 dataset** (5 358 filas país-año, 1990–último), con pre-registro SHA-256 = `8700736a...` y dato crudo SHA-256 = `5f36ddd3...`. Modelo acoplado: `log(CO2/cap) = a + b·log(GDP/cap) + c·log(energy/cap)`; modelo no_ode: sin GDP. Hipótesis pre-registrada: EDI(GDP) ≥ 0.20 (weak).
-
-**Resultado ejecutado:** EDI = **+0.0020**, p = **0.000333**, clasificación **TREND** (EDI > 0 ∧ p ≤ 0.10, pero EDI < umbral weak).
-
-**Interpretación honesta sin reformulación retórica:** la colinealidad fuerte entre GDP per capita y energía per capita (correlación log-log > 0.85) hace que energía absorba casi toda la varianza estructural de CO2 per capita (coeficiente +0.908 vs +0.055 para GDP). El aparato detecta la contribución residual de GDP como estadísticamente significativa (p < 0.001) pero la clasifica honestamente como **trend** porque su magnitud cuantitativa no alcanza el umbral weak pre-registrado. **El aparato no devuelve strong cuando no debe**: ésta es exactamente la propiedad discriminante que la tesis declara como rasgo central. Reporte completo en `09-simulaciones-edi/oos_owid_co2/outputs/oos_owid_co2_report.md`.
-
-### Implicaciones para el manuscrito
-
-- La pregunta letal del jurado *"¿dónde están las predicciones discriminantes de la tesis sobre datos no vistos?"* tiene respuesta operativa con dos commits identificables y dos SHA-256 verificables.
-- Resultado mixto honesto: **un strong (Cefeidas LMC) + un trend (OWID CO2)** sobre dos dominios completamente distintos. La asimetría es honesta: el aparato funciona muy bien en regularidades estructurales fuertes (P-L de Leavitt con slope ≈ −2.78 reproducido) y produce trend honesto cuando hay colinealidad fuerte entre predictores.
-- El abstract y la conclusión cap. 06-01 incorporan ambos resultados como cifras de referencia: **"dos predicciones out-of-sample preregistradas ejecutadas: (1) OGLE-IV LMC Cepheids → STRONG (EDI = 0.7564, p = 0.000333); (2) OWID CO2/GDP/energy per capita → TREND (EDI = 0.0020, p = 0.000333; clasificación honesta bajo colinealidad fuerte)"**.
 
 ## 8. Paso 7. Apéndices técnicos mínimos
 
