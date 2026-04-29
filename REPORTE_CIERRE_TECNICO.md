@@ -26,6 +26,14 @@ Reporta los 17 fallos del inventario `FALLOS_PENDIENTES.md` que dependían exclu
 | Fallo | Estado | Falta |
 |------:|--------|-------|
 
+## Cerrados — tercera pasada técnica (2026-04-28)
+
+| Fallo | Acción ejecutada |
+|------:|------------------|
+| F4 atractor sin rigor topológico | `09-simulaciones-edi/common/topology.py` implementa exponente de Lyapunov máximo (Rosenstein 1993), dimensión de correlación (Grassberger-Procaccia 1983), tiempo de mezcla y embedding Takens con τ por primer cero de ACF. `scripts/run_topology_analysis.py` ejecuta sobre los 7 casos con arrays primarios. Reporte en `09-simulaciones-edi/topology/topology_report.{json,md}`. Resultados ej.: 04 energía λ_max=−0.001 D₂=1.38, 41 wolfram λ_max=+0.017 D₂=2.82 (firma fractal), 42 histéresis λ_max=−0.052 D₂≈0 (atractor convergente puntual). |
+| F13 sondas circulares sobre proxys sintéticos | `scripts/run_secondary_probes_on_primary_arrays.py` aplica las sondas secundarias teóricamente independientes a las series `obs` y `forcing` reales del `primary_arrays.json`, no a proxys derivados del EDI publicado. **Resultado honesto crítico:** sólo 1/7 casos (riesgo biológico) converge bajo |ΔEDI| ≤ 0.10; 0/7 bajo ≤ 0.05. La convergencia inter-paradigma del corpus es más débil de lo que el procedimiento con proxys sugería. Reporte en `09-simulaciones-edi/multi_sonda/secondary_on_primary_arrays.{json,md}`. F13 cerrado parcialmente: extensión a 33 casos restantes requiere re-ejecución con `array_dump=True`. |
+| F33+ caso ancla sin espacio de fase | `scripts/phase_portrait_caso30.py` reproduce Fajen-Warren completo y produce 4 paneles en `figures/caso30/phase_portrait_caso30.{png,svg}`: (1) espacio de fase (φ, φ̇) coloreado por tiempo con cambios de meta marcados, (2) sensibilidad a k_g (sub/canónico/sobreamortiguado), (3) serie temporal β_h(t) con bifurcaciones de ruta, (4) seguimiento ψ_g vs φ. Visualiza el ejemplo más citado de la tesis. |
+
 ## Cerrados — segunda pasada técnica (2026-04-28)
 
 | Fallo | Acción ejecutada |

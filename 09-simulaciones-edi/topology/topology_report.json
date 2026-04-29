@@ -1,0 +1,243 @@
+{
+  "n_cases": 7,
+  "results": [
+    {
+      "n": 100,
+      "embedding_dim": 3,
+      "tau_acf_zero": 22,
+      "mixing_time": {
+        "mixing_time": 14,
+        "threshold": 0.36787944117144233,
+        "method": "ACF<1/e"
+      },
+      "lyapunov": {
+        "method": "Rosenstein-1993",
+        "dim": 3,
+        "tau": 22,
+        "n_embedded": 56,
+        "lyapunov_max": -0.0014397711431803353,
+        "linear_fit_r2": 0.004269402052326621,
+        "horizon": 20,
+        "interpretation": "\u03bb > 0 \u2192 caos (sensibilidad a condiciones iniciales); \u03bb \u2248 0 \u2192 comportamiento marginal/cuasi-peri\u00f3dico; \u03bb < 0 \u2192 atractor convergente. n peque\u00f1o hace estimaci\u00f3n indicativa."
+      },
+      "correlation_dimension": {
+        "method": "Grassberger-Procaccia",
+        "dim": 3,
+        "tau": 22,
+        "n_embedded": 56,
+        "correlation_dimension": 1.3783095910152554,
+        "log_log_r2": 0.9963418491024193,
+        "scaling_window": [
+          -0.20012060921345498,
+          0.7208294361914459
+        ]
+      },
+      "case_id": "04_caso_energia",
+      "case_name": "04_caso_energia"
+    },
+    {
+      "n": 100,
+      "embedding_dim": 3,
+      "tau_acf_zero": 25,
+      "mixing_time": {
+        "mixing_time": 24,
+        "threshold": 0.36787944117144233,
+        "method": "ACF<1/e"
+      },
+      "lyapunov": {
+        "method": "Rosenstein-1993",
+        "dim": 3,
+        "tau": 25,
+        "n_embedded": 50,
+        "lyapunov_max": -0.02238943141956695,
+        "linear_fit_r2": 0.6929508566724809,
+        "horizon": 20,
+        "interpretation": "\u03bb > 0 \u2192 caos (sensibilidad a condiciones iniciales); \u03bb \u2248 0 \u2192 comportamiento marginal/cuasi-peri\u00f3dico; \u03bb < 0 \u2192 atractor convergente. n peque\u00f1o hace estimaci\u00f3n indicativa."
+      },
+      "correlation_dimension": {
+        "method": "Grassberger-Procaccia",
+        "dim": 3,
+        "tau": 25,
+        "n_embedded": 50,
+        "correlation_dimension": 1.646783749164507,
+        "log_log_r2": 0.9876148180989407,
+        "scaling_window": [
+          -0.5646627322783289,
+          0.406846525793986
+        ]
+      },
+      "case_id": "16_caso_deforestacion",
+      "case_name": "16_caso_deforestacion"
+    },
+    {
+      "n": 100,
+      "embedding_dim": 3,
+      "tau_acf_zero": 18,
+      "mixing_time": {
+        "mixing_time": 9,
+        "threshold": 0.36787944117144233,
+        "method": "ACF<1/e"
+      },
+      "lyapunov": {
+        "method": "Rosenstein-1993",
+        "dim": 3,
+        "tau": 18,
+        "n_embedded": 64,
+        "lyapunov_max": 0.006391821622581511,
+        "linear_fit_r2": 0.23849580679281768,
+        "horizon": 20,
+        "interpretation": "\u03bb > 0 \u2192 caos (sensibilidad a condiciones iniciales); \u03bb \u2248 0 \u2192 comportamiento marginal/cuasi-peri\u00f3dico; \u03bb < 0 \u2192 atractor convergente. n peque\u00f1o hace estimaci\u00f3n indicativa."
+      },
+      "correlation_dimension": {
+        "method": "Grassberger-Procaccia",
+        "dim": 3,
+        "tau": 18,
+        "n_embedded": 64,
+        "correlation_dimension": 1.609065228462491,
+        "log_log_r2": 0.9991025279057578,
+        "scaling_window": [
+          -0.06579532147432222,
+          0.8209615018849532
+        ]
+      },
+      "case_id": "20_caso_kessler",
+      "case_name": "20_caso_kessler"
+    },
+    {
+      "n": 100,
+      "embedding_dim": 3,
+      "tau_acf_zero": 14,
+      "mixing_time": {
+        "mixing_time": 8,
+        "threshold": 0.36787944117144233,
+        "method": "ACF<1/e"
+      },
+      "lyapunov": {
+        "method": "Rosenstein-1993",
+        "dim": 3,
+        "tau": 14,
+        "n_embedded": 72,
+        "lyapunov_max": 0.00667536031026061,
+        "linear_fit_r2": 0.09633407641388159,
+        "horizon": 20,
+        "interpretation": "\u03bb > 0 \u2192 caos (sensibilidad a condiciones iniciales); \u03bb \u2248 0 \u2192 comportamiento marginal/cuasi-peri\u00f3dico; \u03bb < 0 \u2192 atractor convergente. n peque\u00f1o hace estimaci\u00f3n indicativa."
+      },
+      "correlation_dimension": {
+        "method": "Grassberger-Procaccia",
+        "dim": 3,
+        "tau": 14,
+        "n_embedded": 72,
+        "correlation_dimension": 1.6501429636729579,
+        "log_log_r2": 0.9996501942648843,
+        "scaling_window": [
+          -0.05434658158013586,
+          0.7968224281125627
+        ]
+      },
+      "case_id": "24_caso_microplasticos",
+      "case_name": "24_caso_microplasticos"
+    },
+    {
+      "n": 100,
+      "embedding_dim": 3,
+      "tau_acf_zero": 25,
+      "mixing_time": {
+        "mixing_time": 17,
+        "threshold": 0.36787944117144233,
+        "method": "ACF<1/e"
+      },
+      "lyapunov": {
+        "method": "Rosenstein-1993",
+        "dim": 3,
+        "tau": 25,
+        "n_embedded": 50,
+        "lyapunov_max": -0.026082095267799088,
+        "linear_fit_r2": 0.7859198555121212,
+        "horizon": 20,
+        "interpretation": "\u03bb > 0 \u2192 caos (sensibilidad a condiciones iniciales); \u03bb \u2248 0 \u2192 comportamiento marginal/cuasi-peri\u00f3dico; \u03bb < 0 \u2192 atractor convergente. n peque\u00f1o hace estimaci\u00f3n indicativa."
+      },
+      "correlation_dimension": {
+        "method": "Grassberger-Procaccia",
+        "dim": 3,
+        "tau": 25,
+        "n_embedded": 50,
+        "correlation_dimension": 1.4316694579000357,
+        "log_log_r2": 0.998792010943704,
+        "scaling_window": [
+          -0.3735107301897723,
+          0.43296775985112124
+        ]
+      },
+      "case_id": "27_caso_riesgo_biologico",
+      "case_name": "27_caso_riesgo_biologico"
+    },
+    {
+      "n": 200,
+      "embedding_dim": 5,
+      "tau_acf_zero": 2,
+      "mixing_time": {
+        "mixing_time": 1,
+        "threshold": 0.36787944117144233,
+        "method": "ACF<1/e"
+      },
+      "lyapunov": {
+        "method": "Rosenstein-1993",
+        "dim": 5,
+        "tau": 2,
+        "n_embedded": 192,
+        "lyapunov_max": 0.016674434139977025,
+        "linear_fit_r2": 0.25737474106046654,
+        "horizon": 20,
+        "interpretation": "\u03bb > 0 \u2192 caos (sensibilidad a condiciones iniciales); \u03bb \u2248 0 \u2192 comportamiento marginal/cuasi-peri\u00f3dico; \u03bb < 0 \u2192 atractor convergente. n peque\u00f1o hace estimaci\u00f3n indicativa."
+      },
+      "correlation_dimension": {
+        "method": "Grassberger-Procaccia",
+        "dim": 5,
+        "tau": 2,
+        "n_embedded": 192,
+        "correlation_dimension": 2.8165720850170644,
+        "log_log_r2": 0.9887056101214451,
+        "scaling_window": [
+          -2.8497630160531284,
+          -2.325091900501283
+        ]
+      },
+      "case_id": "41_caso_wolfram_extendido",
+      "case_name": "41_caso_wolfram_extendido"
+    },
+    {
+      "n": 156,
+      "embedding_dim": 3,
+      "tau_acf_zero": 20,
+      "mixing_time": {
+        "mixing_time": 13,
+        "threshold": 0.36787944117144233,
+        "method": "ACF<1/e"
+      },
+      "lyapunov": {
+        "method": "Rosenstein-1993",
+        "dim": 3,
+        "tau": 20,
+        "n_embedded": 116,
+        "lyapunov_max": -0.05148923786128391,
+        "linear_fit_r2": 0.813364181251765,
+        "horizon": 20,
+        "interpretation": "\u03bb > 0 \u2192 caos (sensibilidad a condiciones iniciales); \u03bb \u2248 0 \u2192 comportamiento marginal/cuasi-peri\u00f3dico; \u03bb < 0 \u2192 atractor convergente. n peque\u00f1o hace estimaci\u00f3n indicativa."
+      },
+      "correlation_dimension": {
+        "method": "Grassberger-Procaccia",
+        "dim": 3,
+        "tau": 20,
+        "n_embedded": 116,
+        "correlation_dimension": 0.049218989925575655,
+        "log_log_r2": 0.7669103316119725,
+        "scaling_window": [
+          -1.0214800555620247,
+          -0.364814305557866
+        ]
+      },
+      "case_id": "42_caso_histeresis_institucional",
+      "case_name": "42_caso_histeresis_institucional"
+    }
+  ]
+}

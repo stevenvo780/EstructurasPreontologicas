@@ -1,0 +1,103 @@
+{
+  "n_cases": 7,
+  "results": [
+    {
+      "case_id": "04_caso_energia",
+      "n": 100,
+      "secondary_probe": "maxwell_boltzmann",
+      "secondary_motivation": "termodinamica_estadistica",
+      "rmse_coupled": 0.43814208213973954,
+      "rmse_no_ode": 2.6088606904151224,
+      "rmse_secondary": 1.1867585306833215,
+      "edi_primary": 0.8320561600895515,
+      "edi_secondary": 0.5451046753690462,
+      "delta_edi": 0.28695148472050536,
+      "converge_under_005": false,
+      "converge_under_010": false
+    },
+    {
+      "case_id": "16_caso_deforestacion",
+      "n": 100,
+      "secondary_probe": "fisher_kpp_diffusion",
+      "secondary_motivation": "matematica_reactiva",
+      "rmse_coupled": 0.49619611234257105,
+      "rmse_no_ode": 3.5316057400521084,
+      "rmse_secondary": 0.8581914758874666,
+      "edi_primary": 0.8594984409739775,
+      "edi_secondary": 0.756996805686808,
+      "delta_edi": 0.10250163528716949,
+      "converge_under_005": false,
+      "converge_under_010": false
+    },
+    {
+      "case_id": "20_caso_kessler",
+      "n": 100,
+      "secondary_probe": "lotka_volterra",
+      "secondary_motivation": "ecologia_clasica",
+      "rmse_coupled": 0.6781373173857579,
+      "rmse_no_ode": 3.2740723887125394,
+      "rmse_secondary": 1.31344103560323,
+      "edi_primary": 0.7928765045868698,
+      "edi_secondary": 0.5988356762876238,
+      "delta_edi": 0.19404082829924596,
+      "converge_under_005": false,
+      "converge_under_010": false
+    },
+    {
+      "case_id": "24_caso_microplasticos",
+      "n": 100,
+      "secondary_probe": "gompertz_pollutant",
+      "secondary_motivation": "crecimiento_asimetrico",
+      "rmse_coupled": 0.3687653510308256,
+      "rmse_no_ode": 2.3841710839960575,
+      "rmse_secondary": 2.171732406018588,
+      "edi_primary": 0.845327647203595,
+      "edi_secondary": 0.08910378932262086,
+      "delta_edi": 0.7562238578809741,
+      "converge_under_005": false,
+      "converge_under_010": false
+    },
+    {
+      "case_id": "27_caso_riesgo_biologico",
+      "n": 100,
+      "secondary_probe": "zeeman_catastrophe",
+      "secondary_motivation": "topologia_catastrofes",
+      "rmse_coupled": 0.3259991335434197,
+      "rmse_no_ode": 2.981221735558669,
+      "rmse_secondary": 0.5017388029328637,
+      "edi_primary": 0.8906491490870844,
+      "edi_secondary": 0.8317002734320801,
+      "delta_edi": 0.058948875655004285,
+      "converge_under_005": false,
+      "converge_under_010": true
+    },
+    {
+      "case_id": "41_caso_wolfram_extendido",
+      "n": 200,
+      "secondary_probe": "markov_compression",
+      "secondary_motivation": "compresion_estado_discreto",
+      "rmse_coupled": 0.12097263847135223,
+      "rmse_no_ode": 0.06803368023288148,
+      "rmse_secondary": 0.06972445768881963,
+      "edi_primary": -0.7781286865161343,
+      "edi_secondary": -0.024852065185222427,
+      "delta_edi": 0.7532766213309119,
+      "converge_under_005": false,
+      "converge_under_010": false
+    },
+    {
+      "case_id": "42_caso_histeresis_institucional",
+      "n": 156,
+      "secondary_probe": "rf_threshold_bisection",
+      "secondary_motivation": "aprendizaje_supervisado_decision_tree",
+      "rmse_coupled": 0.0,
+      "rmse_no_ode": 0.31262851469916864,
+      "rmse_secondary": 0.2655425022718972,
+      "edi_primary": 1.0,
+      "edi_secondary": 0.15061330049365673,
+      "delta_edi": 0.8493866995063433,
+      "converge_under_005": false,
+      "converge_under_010": false
+    }
+  ]
+}
