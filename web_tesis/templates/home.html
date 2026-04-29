@@ -30,6 +30,11 @@
   </aside>
 
   <article class="thesis-content markdown-body">
+    <div class="reading-mode-toggle" style="text-align: right; margin-bottom: 1rem; position: sticky; top: 60px; z-index: 10;">
+      <button id="toggle-sidebar-btn" style="background: #ffffff; border: 1px solid var(--line); padding: 0.5rem 0.9rem; border-radius: 8px; cursor: pointer; font-size: 0.85rem; font-weight: 600; color: #143036; box-shadow: 0 2px 8px rgba(0,0,0,0.05); transition: all 0.2s;">
+        👁️ Ocultar Índice
+      </button>
+    </div>
     {{ thesis_html|safe }}
     <p style="text-align: right; margin-top: 2rem;">
       <a href="#top" class="back-to-toc">↑ Volver al inicio del manuscrito</a>
@@ -212,4 +217,20 @@
 {% block scripts %}
 <script id="summary-data" type="application/json">{{ summary_json|safe }}</script>
 <script src="{{ request.url_for('static', path='js/dashboard.js') }}"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const toggleBtn = document.getElementById('toggle-sidebar-btn');
+    const thesisPanel = document.querySelector('.thesis-panel');
+    if (toggleBtn && thesisPanel) {
+      toggleBtn.addEventListener('click', () => {
+        thesisPanel.classList.toggle('reading-mode');
+        if (thesisPanel.classList.contains('reading-mode')) {
+          toggleBtn.innerHTML = '📖 Mostrar Índice';
+        } else {
+          toggleBtn.innerHTML = '👁️ Ocultar Índice';
+        }
+      });
+    }
+  });
+</script>
 {% endblock %}

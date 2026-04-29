@@ -367,6 +367,15 @@ body {
   display: grid;
   grid-template-columns: minmax(200px, 260px) 1fr;
   gap: 1rem;
+  transition: grid-template-columns 0.3s ease;
+}
+
+.thesis-panel.reading-mode {
+  grid-template-columns: 1fr;
+}
+
+.thesis-panel.reading-mode .toc-box {
+  display: none;
 }
 
 .toc-box {
