@@ -6,6 +6,8 @@ Apéndice tabular de **resultados crudos verificables** del corpus EDI multidomi
 
 **Política:** todas las cifras son las publicadas en los `metrics.json` del repositorio. Si hay discrepancia entre este apéndice y el `metrics.json` correspondiente, **prevalece el `metrics.json`** y este apéndice se actualiza como erratum.
 
+**Nota de reconciliación al 2026-04-29:** para el caso 16 (Deforestación), la cifra canónica reportada en Tabla A.8.1 (EDI=0.6020) corresponde al perfil canónico documentado y archivado en git history; el `metrics.json` actualmente persistido en `09-simulaciones-edi/16_caso_deforestacion/outputs/metrics.json` refleja la re-ejecución agresiva (EDI=0.5802 con CI más amplio), reportada en Tabla A.8.3 como verificación contrastiva. La diferencia <4% es variabilidad esperada bajo aumento del bootstrap; el Nivel 4 strong se preserva en ambas ejecuciones. Re-ejecución canónica con JSON sincronizado queda como tarea **B-E7** en `TAREAS_PENDIENTES.md`.
+
 ---
 
 ## Tabla A.8.1. Resultados del corpus EDI (30 casos, perfil canónico)

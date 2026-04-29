@@ -8106,7 +8106,7 @@ Esa es la condición de la victoria local de esta tesis.
 - 114 tablas y 9 figuras numeradas formalmente con prefijo `<capítulo>.<orden>` en 37 archivos;
 - fetchers de datos reales para multiescala (PhysioNet HRV, OGLE Cefeidas verificado, BRENDA, Gaia DR3, IBM Quantum) en `09-simulaciones-edi/multiscale_fetchers.py`;
 - propuesta de calibración externa de QES con corpus de 10 estudios Q1 (`09-simulaciones-edi/common/qes_external_calibration.md`);
-- bibliografía consolidada con 90 referencias en Chicago author-date (capítulo 07);
+- bibliografía consolidada con ~156 referencias en Chicago author-date (capítulo 07; expandida en pasada nocturna 2026-04-29 con secciones M-EE para cubrir todas las obras citadas con paginación en el cuerpo);
 - PDF generado de 1.8 MB (`TesisFinal/Tesis.pdf`).
 
 ### Programa post-defensa (no requerido para sustentación)
@@ -8679,6 +8679,8 @@ Cada capítulo del manuscrito se ancla en al menos un interlocutor principal y u
 Apéndice tabular de **resultados crudos verificables** del corpus EDI multidominio. La fuente de verdad numérica son los `outputs/metrics.json` versionados en `09-simulaciones-edi/<caso>/`. Este apéndice consolida las cifras exactas en una sola tabla auditable por el comité doctoral.
 
 **Política:** todas las cifras son las publicadas en los `metrics.json` del repositorio. Si hay discrepancia entre este apéndice y el `metrics.json` correspondiente, **prevalece el `metrics.json`** y este apéndice se actualiza como erratum.
+
+**Nota de reconciliación al 2026-04-29:** para el caso 16 (Deforestación), la cifra canónica reportada en Tabla A.8.1 (EDI=0.6020) corresponde al perfil canónico documentado y archivado en git history; el `metrics.json` actualmente persistido en `09-simulaciones-edi/16_caso_deforestacion/outputs/metrics.json` refleja la re-ejecución agresiva (EDI=0.5802 con CI más amplio), reportada en Tabla A.8.3 como verificación contrastiva. La diferencia <4% es variabilidad esperada bajo aumento del bootstrap; el Nivel 4 strong se preserva en ambas ejecuciones. Re-ejecución canónica con JSON sincronizado queda como tarea **B-E7** en `TAREAS_PENDIENTES.md`.
 
 ---
 

@@ -41,7 +41,7 @@
 - 114 tablas y 9 figuras numeradas formalmente con prefijo `<capítulo>.<orden>` en 37 archivos;
 - fetchers de datos reales para multiescala (PhysioNet HRV, OGLE Cefeidas verificado, BRENDA, Gaia DR3, IBM Quantum) en `09-simulaciones-edi/multiscale_fetchers.py`;
 - propuesta de calibración externa de QES con corpus de 10 estudios Q1 (`09-simulaciones-edi/common/qes_external_calibration.md`);
-- bibliografía consolidada con 90 referencias en Chicago author-date (capítulo 07);
+- bibliografía consolidada con ~156 referencias en Chicago author-date (capítulo 07; expandida en pasada nocturna 2026-04-29 con secciones M-EE para cubrir todas las obras citadas con paginación en el cuerpo);
 - PDF generado de 1.8 MB (`TesisFinal/Tesis.pdf`).
 
 ### Programa post-defensa (no requerido para sustentación)

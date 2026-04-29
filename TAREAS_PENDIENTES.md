@@ -81,6 +81,7 @@ Cada tarea declara: **estado actual**, **acción operativa**, **métrica de acep
 | B-E4 | Verificar cobertura del glosario tras los cambios B-F2/B-F5/B-F6. | Términos nuevos introducidos en cuerpo aparecen en glosario operativo. |
 | B-E5 | Reconciliar EDI/p/CI canónicos del caso 30 (behavioral dynamics) reportados en cuerpo (EDI=0.262, p=0.044, CI [0.249, 0.280]) con la versión actual del `metrics.json` (EDI=0.255 real-phase, p_perm=0.517 con sig=True por bootstrap-CI). Decidir si la cifra del manuscrito proviene de un perfil agresivo (n_perm=2999, n_boot=1500) que debe re-ejecutarse y persistirse, o si la prosa debe alinearse al canónico actual. | Tras re-ejecución agresiva: o el `metrics.json` aggregate refleja EDI/p/CI reportados en cuerpo, o el cuerpo se actualiza al canónico actual. Documentado en bitácora. |
 | B-E6 | Verificar el resto de cifras EDI/p/CI por caso del corpus inter-dominio contra `metrics.json` real-phase, no synthetic-phase. Caso 31 ya corregido (0.84 → 0.91). | 0 desfases de >0.02 entre cuerpo y JSON real-phase para los 30 casos macro. |
+| B-E7 | Re-ejecutar perfil canónico (n_perm=999, n_boot=500) sobre el caso 16 Deforestación y persistir `metrics.json` con esos parámetros, sincronizando con la cifra canónica de Tabla A.8.1 (EDI=0.6020 con CI [0.5872, 0.6168]). Actualmente el JSON persiste la re-ejecución agresiva (EDI=0.5802 con CI más amplio) reportada en Tabla A.8.3. | `metrics.json` regenerado bajo perfil canónico documentado en su header; cifra A.8.1 reproducible bit-a-bit. |
 
 ---
 
