@@ -194,6 +194,7 @@ Cada capítulo del manuscrito se ancla en al menos un interlocutor principal y u
 98. Parfit, D. (1984). *Reasons and Persons*. Oxford: Clarendon Press.
 99. Reid, T. (1785/2002). *Essays on the Intellectual Powers of Man*. D. R. Brookes (ed.). Edinburgh: Edinburgh University Press.
 100. Strawson, G. (2006). "Realistic Monism: Why Physicalism Entails Panpsychism". *Journal of Consciousness Studies* 13(10–11): 3–31.
+100bis. Strawson, P. F. (1959). *Individuals: An Essay in Descriptive Metaphysics*. London: Methuen.
 
 ### O. Política agonística, descolonialidad y geofilosofía (deudas declaradas cap 04-04 §7)
 

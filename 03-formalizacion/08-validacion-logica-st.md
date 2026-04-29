@@ -16,7 +16,7 @@ npm run st:check
 
 ## Hallazgos críticos detectados durante la validación
 
-La suite extendida **detectó cuatro problemas reales** que la formulación V4 del manuscrito no anticipaba. Todos se resuelven aquí y se propagan al cuerpo argumental.
+La suite extendida **detectó seis hallazgos críticos** (ST-1 a ST-6) que la formulación V4 del manuscrito no anticipaba o solo anticipaba parcialmente. Todos se resuelven aquí y se propagan al cuerpo argumental. La numeración ST-1 y ST-2 conserva los hallazgos heredados de la suite V4 (asimetría existencial + necesidad modal con axioma T); ST-3 a ST-6 corresponden a la extensión doctoral.
 
 ### Hallazgo ST-1 (V4 conservado): asimetría L1↔B↔L3↔S no es expresable como axiomas universales proposicionales
 

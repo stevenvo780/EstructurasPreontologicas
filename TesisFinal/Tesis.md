@@ -3844,7 +3844,7 @@ npm run st:check
 
 ## Hallazgos críticos detectados durante la validación
 
-La suite extendida **detectó cuatro problemas reales** que la formulación V4 del manuscrito no anticipaba. Todos se resuelven aquí y se propagan al cuerpo argumental.
+La suite extendida **detectó seis hallazgos críticos** (ST-1 a ST-6) que la formulación V4 del manuscrito no anticipaba o solo anticipaba parcialmente. Todos se resuelven aquí y se propagan al cuerpo argumental. La numeración ST-1 y ST-2 conserva los hallazgos heredados de la suite V4 (asimetría existencial + necesidad modal con axioma T); ST-3 a ST-6 corresponden a la extensión doctoral.
 
 ### Hallazgo ST-1 (V4 conservado): asimetría L1↔B↔L3↔S no es expresable como axiomas universales proposicionales
 
@@ -8523,6 +8523,7 @@ Cada capítulo del manuscrito se ancla en al menos un interlocutor principal y u
 98. Parfit, D. (1984). *Reasons and Persons*. Oxford: Clarendon Press.
 99. Reid, T. (1785/2002). *Essays on the Intellectual Powers of Man*. D. R. Brookes (ed.). Edinburgh: Edinburgh University Press.
 100. Strawson, G. (2006). "Realistic Monism: Why Physicalism Entails Panpsychism". *Journal of Consciousness Studies* 13(10–11): 3–31.
+100bis. Strawson, P. F. (1959). *Individuals: An Essay in Descriptive Metaphysics*. London: Methuen.
 
 ### O. Política agonística, descolonialidad y geofilosofía (deudas declaradas cap 04-04 §7)
 
