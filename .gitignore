@@ -34,3 +34,9 @@ Thumbs.db
 # Bibliografía (libros de terceros con copyright; no versionados)
 07-bibliografia/*.pdf
 07-bibliografia/*.PDF
+
+
+# React build artifacts
+web_react/node_modules/
+web_react/.vite/
+# dist/ se commitea para que Vercel/FastAPI sirvan los assets compilados

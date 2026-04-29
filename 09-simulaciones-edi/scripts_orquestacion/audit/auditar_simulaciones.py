@@ -11,9 +11,9 @@ import math
 import re
 import argparse
 
-ROOT = Path(__file__).resolve().parents[3]
-CASES_ROOT = ROOT / 'TesisDesarrollo' / '02_Modelado_Simulacion'
-OUTPUT = CASES_ROOT / 'Auditoria_Simulaciones.md'
+SIM_ROOT = Path(__file__).resolve().parents[2]
+CASES_ROOT = SIM_ROOT
+OUTPUT = SIM_ROOT / 'Auditoria_Simulaciones.md'
 
 # Mapeo categoría → nivel de cierre operativo
 NIVEL_MAP = {
@@ -23,7 +23,7 @@ NIVEL_MAP = {
 
 
 def read_metrics(case_dir: Path):
-    p = case_dir / 'metrics.json'
+    p = case_dir / 'outputs' / 'metrics.json'
     if not p.exists():
         return None
     return json.loads(p.read_text())
@@ -106,9 +106,10 @@ def audit_case(case_dir: Path):
     # Completitud de archivos básicos
     if not (case_dir / 'README.md').exists():
         issues.append('README.md faltante')
-    if not (case_dir / 'report.md').exists():
-        issues.append('report.md faltante')
-    elif not report_has_results(case_dir / 'report.md'):
+    report_path = case_dir / 'outputs' / 'report.md'
+    if not report_path.exists():
+        issues.append('outputs/report.md faltante')
+    elif not report_has_results(report_path):
         issues.append('report.md sin resultados')
 
     # Docs opcionales (solo reportar si la carpeta docs/ existe pero incompleta)

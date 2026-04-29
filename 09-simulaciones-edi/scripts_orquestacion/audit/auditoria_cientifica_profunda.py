@@ -17,7 +17,7 @@ import os, sys, json, re, ast, subprocess, glob, importlib.util, traceback, argp
 import numpy as np
 
 BASE = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
-SIM_DIR = os.path.join(BASE, "Simulaciones")
+SIM_DIR = BASE
 
 # ── Helpers ───────────────────────────────────────────────────────────
 
@@ -46,9 +46,11 @@ def check_structure(case_dir):
     has_local_abm = file_exists(case_dir, "src", "abm.py")
     if not has_local_abm:
         # check if validate imports from common
-        val_src = read_file(os.path.join(case_dir, "src", "validate.py"))
-        if "abm" not in val_src.lower() and "hybrid_validator" not in val_src:
-            issues.append("Sin ABM local ni import de common")
+        validate_path = os.path.join(case_dir, "src", "validate.py")
+        if os.path.exists(validate_path):
+            val_src = read_file(validate_path)
+            if "abm" not in val_src.lower() and "hybrid_validator" not in val_src:
+                issues.append("Sin ABM local ni import de common")
     return issues
 
 def check_data_source(case_dir):
@@ -647,8 +649,10 @@ def audit_case(
     critical_ok = all_checks.get("structure", False) and all_checks.get("execution", False)
     math_ok = all_checks.get("ode", False) and all_checks.get("coherence", False) and all_checks.get("post_coherence", False)
     
-    if report.get("execution_skipped"):
+    if report.get("execution_skipped") and critical_ok and math_ok:
         report["verdict"] = "CHECK (sin ejecucion)"
+    elif report.get("execution_skipped"):
+        report["verdict"] = "NO-CHECK"
     elif critical_ok and math_ok and len(report["issues"]) == 0:
         report["verdict"] = "PERFECTO"
     elif critical_ok and math_ok:
@@ -751,14 +755,15 @@ def main():
     print(f"{'='*60}\n")
     
     perfecto = [r for r in reports if r["verdict"] == "PERFECTO"]
-    check = [r for r in reports if "CHECK" in r["verdict"]]
+    check = [r for r in reports if r["verdict"].startswith("CHECK")]
     nocheck = [r for r in reports if r["verdict"] == "NO-CHECK"]
     can_scale = [r for r in reports if r.get("scalability", {}).get("can_improve", False)]
     
-    print(f"  ✅ PERFECTO: {len(perfecto)}/29")
-    print(f"  ☑️  CHECK:   {len(check)}/29")
-    print(f"  ❌ NO-CHECK: {len(nocheck)}/29")
-    print(f"  🔼 Escalables: {len(can_scale)}/29")
+    total_cases = len(reports)
+    print(f"  ✅ PERFECTO: {len(perfecto)}/{total_cases}")
+    print(f"  ☑️  CHECK:   {len(check)}/{total_cases}")
+    print(f"  ❌ NO-CHECK: {len(nocheck)}/{total_cases}")
+    print(f"  🔼 Escalables: {len(can_scale)}/{total_cases}")
     
     print(f"\n  Detalle:")
     for r in reports:

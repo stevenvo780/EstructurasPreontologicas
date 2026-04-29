@@ -40,6 +40,10 @@ def build():
     """
 
     pdf.add_section(Section(md, toc=True, root="."), user_css=css)
+    # The manuscript TOC uses explicit HTML anchors that PyMuPDF does not
+    # always register as PDF destinations. Keep the generated PDF outline, but
+    # skip link annotations so PDF generation remains reproducible.
+    pdf.hrefs = []
 
     pdf.meta["title"] = "Estructuras Pre-Ontológicas"
     pdf.meta["author"] = "Jacob Agudelo, Steven Vallejo Ortiz"

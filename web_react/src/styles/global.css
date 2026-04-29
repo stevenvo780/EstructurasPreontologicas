@@ -1,0 +1,301 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-bg: 247 248 250;
+    --color-fg: 14 18 25;
+    --color-accent: 228 118 10;
+    --color-line: 221 225 233;
+    --color-card: 255 255 255;
+  }
+
+  :root.dark {
+    --color-bg: 7 10 16;
+    --color-fg: 238 240 244;
+    --color-accent: 251 178 77;
+    --color-line: 42 49 64;
+    --color-card: 14 18 25;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+    font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+  }
+
+  /* Scrollbar editorial */
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgba(125, 138, 159, 0.3);
+    border-radius: 6px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(125, 138, 159, 0.55);
+  }
+
+  /* Selección */
+  ::selection {
+    background: rgb(251 178 77 / 0.35);
+    color: inherit;
+  }
+
+  /* Tipografía editorial para prosa larga */
+  .prose-academic {
+    font-family: 'Source Serif 4', 'Iowan Old Style', Georgia, serif;
+    font-size: 1.0625rem;
+    line-height: 1.75;
+    color: rgb(var(--color-fg));
+  }
+
+  .prose-academic h1,
+  .prose-academic h2,
+  .prose-academic h3,
+  .prose-academic h4,
+  .prose-academic h5,
+  .prose-academic h6 {
+    font-family: 'Inter', system-ui, sans-serif;
+    font-weight: 650;
+    letter-spacing: -0.011em;
+    color: rgb(var(--color-fg));
+    scroll-margin-top: 5rem;
+  }
+
+  .prose-academic h1 {
+    font-size: 2.25rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1.25rem;
+    line-height: 1.15;
+    border-bottom: 1px solid rgb(var(--color-line));
+    padding-bottom: 0.5rem;
+  }
+  .prose-academic h2 {
+    font-size: 1.625rem;
+    margin-top: 2.25rem;
+    margin-bottom: 0.85rem;
+    line-height: 1.25;
+  }
+  .prose-academic h3 {
+    font-size: 1.25rem;
+    margin-top: 1.75rem;
+    margin-bottom: 0.7rem;
+    line-height: 1.35;
+  }
+  .prose-academic h4 {
+    font-size: 1.05rem;
+    margin-top: 1.4rem;
+    margin-bottom: 0.55rem;
+    color: rgb(var(--color-accent));
+  }
+
+  .prose-academic p {
+    margin-bottom: 1.1em;
+  }
+
+  .prose-academic a {
+    color: rgb(var(--color-accent));
+    text-decoration: underline;
+    text-decoration-color: rgb(var(--color-accent) / 0.35);
+    text-underline-offset: 3px;
+    transition: text-decoration-color 150ms ease;
+  }
+  .prose-academic a:hover {
+    text-decoration-color: rgb(var(--color-accent));
+  }
+
+  .prose-academic blockquote {
+    border-left: 3px solid rgb(var(--color-accent) / 0.6);
+    padding: 0.6em 1.1em;
+    margin: 1.5em 0;
+    font-style: italic;
+    background: rgb(var(--color-line) / 0.25);
+    border-radius: 0 0.5rem 0.5rem 0;
+  }
+
+  .prose-academic ul,
+  .prose-academic ol {
+    margin: 1em 0;
+    padding-left: 1.5em;
+  }
+
+  .prose-academic ul li {
+    list-style-type: disc;
+    margin-bottom: 0.4em;
+  }
+  .prose-academic ol li {
+    list-style-type: decimal;
+    margin-bottom: 0.4em;
+  }
+
+  .prose-academic code {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.875em;
+    padding: 0.15em 0.4em;
+    border-radius: 0.3rem;
+    background: rgb(var(--color-line) / 0.4);
+  }
+
+  .prose-academic pre {
+    margin: 1.5em 0;
+    padding: 1em 1.2em;
+    background: rgb(var(--color-fg) / 0.92) !important;
+    color: rgb(var(--color-bg));
+    border-radius: 0.6rem;
+    overflow-x: auto;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.875em;
+    line-height: 1.6;
+    border: 1px solid rgb(var(--color-line));
+  }
+  .prose-academic pre code {
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    color: inherit;
+  }
+
+  .prose-academic table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5em 0;
+    font-size: 0.95em;
+    font-family: 'Inter', sans-serif;
+  }
+  .prose-academic table th {
+    background: rgb(var(--color-line) / 0.4);
+    padding: 0.65em 0.85em;
+    text-align: left;
+    font-weight: 600;
+    border-bottom: 2px solid rgb(var(--color-line));
+  }
+  .prose-academic table td {
+    padding: 0.6em 0.85em;
+    border-bottom: 1px solid rgb(var(--color-line) / 0.6);
+    vertical-align: top;
+  }
+  .prose-academic table tbody tr:hover {
+    background: rgb(var(--color-line) / 0.2);
+  }
+
+  .prose-academic hr {
+    margin: 2em 0;
+    border: none;
+    border-top: 1px solid rgb(var(--color-line));
+  }
+
+  .prose-academic img {
+    max-width: 100%;
+    border-radius: 0.5rem;
+    margin: 1.5em auto;
+    display: block;
+  }
+
+  .prose-academic strong {
+    font-weight: 600;
+    color: rgb(var(--color-fg));
+  }
+  .prose-academic em {
+    font-style: italic;
+  }
+
+  /* KaTeX ajustes finos */
+  .katex-display {
+    margin: 1.4em 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 0.4em 0;
+  }
+
+  /* Mermaid */
+  .mermaid {
+    text-align: center;
+    margin: 1.5em 0;
+  }
+}
+
+@layer components {
+  .glass {
+    @apply bg-white/85 dark:bg-ink-900/85 backdrop-blur-md border border-ink-200/50 dark:border-ink-700/50;
+  }
+
+  .card {
+    @apply bg-white dark:bg-ink-900/60 border border-ink-200 dark:border-ink-800 rounded-xl shadow-sm transition-all duration-200;
+  }
+
+  .card-hover {
+    @apply hover:shadow-md hover:border-ink-300 dark:hover:border-ink-700 hover:-translate-y-0.5;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 px-4 py-2 rounded-lg font-medium text-sm transition-all duration-150 focus:outline-none focus:ring-2 focus:ring-accent-400 focus:ring-offset-2 dark:focus:ring-offset-ink-950 disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .btn-primary {
+    @apply btn bg-accent-500 text-white hover:bg-accent-600 active:bg-accent-700;
+  }
+
+  .btn-ghost {
+    @apply btn text-ink-700 dark:text-ink-200 hover:bg-ink-100 dark:hover:bg-ink-800;
+  }
+
+  .btn-outline {
+    @apply btn border border-ink-300 dark:border-ink-700 text-ink-700 dark:text-ink-200 hover:border-accent-400 hover:text-accent-600 dark:hover:text-accent-400;
+  }
+
+  .badge {
+    @apply inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-xs font-medium;
+  }
+
+  .badge-success {
+    @apply badge bg-success/10 text-success border border-success/30;
+  }
+  .badge-warning {
+    @apply badge bg-warning/10 text-warning border border-warning/30;
+  }
+  .badge-danger {
+    @apply badge bg-danger/10 text-danger border border-danger/30;
+  }
+  .badge-neutral {
+    @apply badge bg-ink-100 dark:bg-ink-800 text-ink-700 dark:text-ink-300;
+  }
+  .badge-accent {
+    @apply badge bg-accent-100 dark:bg-accent-900/30 text-accent-700 dark:text-accent-300 border border-accent-300/40;
+  }
+
+  .input {
+    @apply w-full px-3 py-2 rounded-lg border border-ink-300 dark:border-ink-700 bg-white dark:bg-ink-900 text-ink-900 dark:text-ink-100 placeholder:text-ink-400 focus:outline-none focus:ring-2 focus:ring-accent-400 focus:border-transparent text-sm;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .anchor-alias {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+  }
+
+  /* Modo lectura — tipografía ampliada */
+  .reading-mode .prose-academic {
+    max-width: 70ch;
+    margin-inline: auto;
+    font-size: 1.125rem;
+    line-height: 1.85;
+  }
+}

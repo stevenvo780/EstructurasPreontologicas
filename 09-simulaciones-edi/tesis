@@ -2,8 +2,9 @@
 set -euo pipefail
 
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-SCRIPTS="$ROOT/repos/scripts"
-SIM="$ROOT/repos/Simulaciones"
+REPO="$(cd "$ROOT/.." && pwd)"
+SCRIPTS="$ROOT/scripts_orquestacion"
+SIM="$ROOT"
 
 usage() {
   cat <<'EOF'
@@ -94,7 +95,7 @@ case "$cmd" in
           args+=("$1"); shift ;;
       esac
     done
-    cmd=(python3 "$ROOT/repos/web_tesis/app.py" --host "$host" --port "$port")
+    cmd=(python3 "$REPO/web_tesis/app.py" --host "$host" --port "$port")
     [[ $reload -eq 1 ]] && cmd+=(--reload)
     cmd+=("${args[@]}")
     "${cmd[@]}"

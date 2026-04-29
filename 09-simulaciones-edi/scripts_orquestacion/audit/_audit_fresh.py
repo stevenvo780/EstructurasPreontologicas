@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
 """Auditoría fresca de todos los metrics.json generados."""
 import os, json
+from pathlib import Path
 
-base = os.path.join(os.path.dirname(__file__), '..', '..', 'Simulaciones')
-cases = sorted([d for d in os.listdir(base) if '_caso_' in d and os.path.isdir(os.path.join(base, d))])
+base = Path(__file__).resolve().parents[2]
+cases = sorted([d.name for d in base.iterdir() if '_caso_' in d.name and d.is_dir()])
+total_cases = len(cases)
 
 sig_cases = []
 ns_fail = []
@@ -25,11 +27,11 @@ print(header)
 print('-' * len(header))
 
 for c in cases:
-    mpath = os.path.join(base, c, 'outputs', 'metrics.json')
-    if not os.path.exists(mpath):
+    mpath = base / c / 'outputs' / 'metrics.json'
+    if not mpath.exists():
         print(f"{c}: NO METRICS")
         continue
-    with open(mpath) as f:
+    with mpath.open() as f:
         m = json.load(f)
     ph = m.get('phases', {}).get('real') or m.get('phases', {}).get('synthetic', {})
     if not ph:
@@ -80,10 +82,10 @@ print()
 print("=" * 60)
 print("RESUMEN")
 print("=" * 60)
-print(f"  overall_pass : {len(op_pass)}/29 → {op_pass}")
-print(f"  sig (perm)   : {len(sig_cases)}/29 → {sig_cases}")
-print(f"  ns stable    : {29 - len(ns_fail)}/29 (fail: {ns_fail})")
-print(f"  per pass     : {29 - len(per_fail)}/29 (fail: {per_fail})")
+print(f"  overall_pass : {len(op_pass)}/{total_cases} → {op_pass}")
+print(f"  sig (perm)   : {len(sig_cases)}/{total_cases} → {sig_cases}")
+print(f"  ns stable    : {total_cases - len(ns_fail)}/{total_cases} (fail: {ns_fail})")
+print(f"  per pass     : {total_cases - len(per_fail)}/{total_cases} (fail: {per_fail})")
 print(f"  Categories   : {dict(sorted(cats.items()))}")
 print(f"  Niveles      : {dict(sorted(niveles.items()))}")
 print(f"  BC modes     : {dict(sorted(bcs.items()))}")
@@ -93,10 +95,10 @@ print()
 print("CAMPO FALTANTE CHECK:")
 missing_fields = {}
 for c in cases:
-    mpath = os.path.join(base, c, 'outputs', 'metrics.json')
-    if not os.path.exists(mpath):
+    mpath = base / c / 'outputs' / 'metrics.json'
+    if not mpath.exists():
         continue
-    with open(mpath) as f:
+    with mpath.open() as f:
         m = json.load(f)
     ph = m.get('phases', {}).get('real') or m.get('phases', {}).get('synthetic', {})
     num = c.split('_')[0]
@@ -123,4 +125,4 @@ if missing_fields:
     for field, nums in sorted(missing_fields.items()):
         print(f"  MISSING {field}: cases {nums}")
 else:
-    print("  ✅ Todos los campos requeridos presentes en 29/29 casos")
+    print(f"  ✅ Todos los campos requeridos presentes en {total_cases}/{total_cases} casos")
