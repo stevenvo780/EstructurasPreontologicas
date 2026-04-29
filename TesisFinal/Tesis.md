@@ -4476,10 +4476,10 @@ Reproducibilidad: el caso 16 ha sido re-ejecutado con datos World Bank descargad
 | # | Caso | EDI | Comentario |
 |---|------|----:|-----------|
 | 02 | Conciencia global | -0.1165 | Datos especulativos LoE=1 |
-| 03 | Contaminación PM2.5 | -0.0038 | Sin estructura macro |
-| 12 | Paradigmas (ciencia) | -0.0060 | Reflexividad |
+| 03 | Contaminación PM2.5 | -0.0901 | Sin estructura macro detectable bajo régimen real-phase actual |
+| 12 | Paradigmas (ciencia) | -0.1536 | Reflexividad; null bajo régimen real-phase actual |
 | 17 | Océanos (temperatura) | -0.0154 | Sin sonda específica |
-| 19 | Acidificación oceánica | -0.0002 | Proxy débil |
+| 19 | Acidificación oceánica | 0.7278 | EDI elevado pero p=0.49 (no significativo); promovido a Nivel 1\* trend con cautela inferencial — candidato a re-evaluación con sondas físicas alternativas |
 | 23 | Erosión dialéctica | -1.0000 | Categoría mal definida |
 | 25 | Acuíferos | -0.1462 | Datos heterogéneos |
 | 29 | IoT | -0.8760 | Reflexividad técnica |
