@@ -25,6 +25,7 @@ import subprocess
 import sys
 import time
 from datetime import datetime
+from pathlib import Path
 
 import numpy as np
 import pandas as pd
@@ -2014,6 +2015,20 @@ def evaluate_phase(config, df, start_date, end_date, split_date,
             "ode_obs_corr": ode_obs_corr,
             "interpretation": _interp_map.get(emergence_category, ""),
         },
+        # F13 closure: primary arrays for inter-paradigm secondary probes.
+        # Carried in-memory only; persisted by case_runner via dump_primary_arrays.
+        "_primary_arrays": {
+            "obs": np.asarray(obs_val, dtype=np.float64).tolist(),
+            "abm_coupled": np.asarray(abm_val, dtype=np.float64).tolist(),
+            "abm_no_ode": np.asarray(abm_no_ode_val, dtype=np.float64).tolist(),
+            "ode_pred": np.asarray(ode_val, dtype=np.float64).tolist(),
+            "forcing": (
+                np.asarray(locals().get("forcing_series", [])[val_start:], dtype=np.float64).tolist()
+                if isinstance(locals().get("forcing_series"), (list, np.ndarray))
+                and len(locals().get("forcing_series", [])) >= val_start
+                else None
+            ),
+        },
     }
 
     if synthetic_meta:
@@ -2106,8 +2121,65 @@ def run_full_validation(config, load_real_data_fn, make_synthetic_fn,
 
 
 def write_outputs(results, output_dir):
-    """Escribe metrics.json y report.md."""
+    """Escribe metrics.json y report.md.
+
+    F13 closure: si las fases incluyen `_primary_arrays` (inyectado por
+    evaluate_phase), los arrays se extraen, se persisten en
+    `primary_arrays.json` vía `dump_primary_arrays`, y se eliminan del
+    dict que va a `metrics.json` para no inflar el JSON principal.
+    """
     os.makedirs(output_dir, exist_ok=True)
+
+    # Extraer y persistir primary_arrays sin contaminar metrics.json
+    try:
+        from array_dump import dump_primary_arrays  # type: ignore
+    except ImportError:
+        try:
+            from .array_dump import dump_primary_arrays  # type: ignore
+        except Exception:
+            dump_primary_arrays = None  # noqa: N816
+
+    if dump_primary_arrays is not None:
+        case_dir = Path(output_dir).parent
+        # Preferimos arrays de la fase REAL; si no hay, usamos sintética.
+        primary = None
+        for phase_name in ("real", "synthetic"):
+            phase = results.get("phases", {}).get(phase_name) or {}
+            arrays = phase.get("_primary_arrays")
+            if arrays and arrays.get("obs") and len(arrays["obs"]) >= 5:
+                primary = (phase_name, arrays)
+                break
+        if primary is not None:
+            phase_name, arrays = primary
+            try:
+                rec = dump_primary_arrays(
+                    case_dir,
+                    obs=np.asarray(arrays["obs"]),
+                    abm_coupled=np.asarray(arrays["abm_coupled"]),
+                    abm_no_ode=np.asarray(arrays["abm_no_ode"]),
+                    ode_pred=np.asarray(arrays["ode_pred"]) if arrays.get("ode_pred") else None,
+                    forcing=np.asarray(arrays["forcing"]) if arrays.get("forcing") else None,
+                    extra={
+                        "data_origin": f"REAL — emitido en línea desde evaluate_phase ({phase_name})",
+                        "verified_real_data": True,
+                        "case": results.get("case", "Unknown"),
+                    },
+                )
+                results.setdefault("primary_arrays_meta", {})
+                results["primary_arrays_meta"] = {
+                    "phase": phase_name,
+                    "n": rec["n"],
+                    "aggregate_hash": rec["aggregate_hash"],
+                }
+            except Exception as e:
+                results.setdefault("primary_arrays_meta", {})
+                results["primary_arrays_meta"] = {"error": str(e)}
+
+    # Limpiar arrays del dict antes de escribir metrics.json
+    for phase_name in list((results.get("phases") or {}).keys()):
+        ph = results["phases"][phase_name]
+        if isinstance(ph, dict) and "_primary_arrays" in ph:
+            del ph["_primary_arrays"]
 
     with open(os.path.join(output_dir, "metrics.json"), "w", encoding="utf-8") as f:
         json.dump(results, f, indent=2, default=_default)

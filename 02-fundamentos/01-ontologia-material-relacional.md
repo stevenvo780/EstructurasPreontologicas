@@ -196,6 +196,8 @@ El sustrato existe organizado por restricciones que no son sustancia separada pe
 
 > Un patrón estabilizado es un atractor empíricamente identificable de un sistema dinámico acoplado, con cuenca de atracción medible y comportamiento bajo bifurcación caracterizable.
 
+#### 2.2.1. Cinco condiciones de admisión operativas
+
 Cinco condiciones de admisión hacen operativa la definición:
 
 1. **Variables componentes** observables o inferidas con régimen de medición especificado;
@@ -205,6 +207,40 @@ Cinco condiciones de admisión hacen operativa la definición:
 5. **Discriminación inferencial**: el patrón produce predicciones o intervenciones que un rival explícito no produce o produce peor.
 
 Una regularidad que no satisface las cinco condiciones no es patrón en el sentido del marco. Puede ser correlación, regularidad estadística o intuición de regularidad — pero no patrón ontológico.
+
+#### 2.2.2. Cuatro métricas topológicas de rigor formal
+
+Las cinco condiciones operativas son condiciones de admisión cualitativa. Para satisfacer la exigencia de **rigor topológico estándar** que un revisor formal puede plantear (auditoría doctoral F4), la tesis añade cuatro métricas cuantitativas calculadas sobre las trayectorias observadas:
+
+1. **Exponente de Lyapunov máximo (λ_max)** vía algoritmo de Rosenstein, Collins y De Luca (1993, *Physica D* 65: 117-134). Mide la tasa de divergencia local de trayectorias inicialmente cercanas. λ_max > 0 indica sensibilidad a condiciones iniciales (caos determinista compatible con atractor extraño); λ_max ≈ 0 indica régimen marginal o cuasi-periódico; λ_max < 0 indica convergencia a punto fijo o ciclo límite.
+2. **Dimensión de correlación (D₂)** vía algoritmo de Grassberger y Procaccia (1983, *Physica D* 9: 189-208). Cuantifica la complejidad del atractor en el espacio de fase reconstruido. Valor no entero es firma de atractor fractal o extraño; valor próximo a 0 corresponde a atractor de punto fijo.
+3. **Embedding de Takens** (Takens 1981) con dimensión `dim=5` y retardo τ obtenido por primer cero de la autocorrelación. Reconstruye el espacio de fase a partir de la serie escalar observada cuando el sistema completo no es directamente medible.
+4. **Tiempo de mezcla**: número de pasos hasta que la autocorrelación cae por debajo de 1/e, indicando independencia estadística aproximada entre puntos separados temporalmente.
+
+La implementación canónica está en `09-simulaciones-edi/common/topology.py` con tests sobre 7 casos del corpus que tienen `primary_arrays.json` disponible (apéndice técnico §"Análisis topológico", reporte completo en `09-simulaciones-edi/topology/topology_report.{json,md}`):
+
+**Tabla 2.1.6.**
+
+| Caso | λ_max | D₂ | r² (D₂) | Lectura cualitativa |
+|---|---:|---:|---:|---|
+| 04 energía | −0.001 | 1.38 | 0.996 | atractor convergente baja dimensión |
+| 16 deforestación | −0.022 | 1.65 | 0.988 | atractor convergente baja dimensión |
+| 20 Kessler | +0.006 | 1.61 | 0.999 | régimen marginal compatible con atractor |
+| 24 microplásticos | +0.007 | 1.65 | 1.000 | régimen marginal compatible con atractor |
+| 27 riesgo biológico | −0.026 | 1.43 | 0.999 | atractor convergente baja dimensión |
+| 41 Wolfram extendido | +0.017 | 2.82 | 0.989 | firma fractal compatible con atractor extraño |
+| 42 histéresis institucional | −0.052 | 0.05 | 0.767 | atractor de punto fijo |
+
+#### 2.2.3. Articulación entre las dos baterías
+
+La relación entre las cinco condiciones operativas y las cuatro métricas topológicas es **necesaria pero no suficiente en cada dirección**:
+
+- Una serie con λ_max > 0 y D₂ no entera **admite** tratamiento topológico estándar como atractor, pero el dossier de anclaje (cap 03-02) exige además identificación material y especificación dinámica que las métricas topológicas por sí solas no proveen.
+- Una serie que satisface las cinco condiciones operativas no garantiza por sí sola firma topológica fuerte, especialmente cuando n es pequeño o el ruido domina sobre la dinámica determinista.
+
+La tesis sostiene que el atractor empírico es **operativamente reconocido** cuando se cumplen las cinco condiciones cualitativas y **topológicamente caracterizado** cuando además se reportan las cuatro métricas cuantitativas. Esta articulación cierra F4 al precio honesto de declarar que las estimaciones con n ≤ 200 puntos son indicativas, no concluyentes (limitación ya documentada en el módulo `topology.py`).
+
+La extensión de las métricas topológicas a los 33 casos restantes del corpus está pendiente (tarea **B-T1** en `TAREAS_PENDIENTES.md`) y depende de la activación de `array_dump=True` en el motor EDI para emitir `primary_arrays.json` por caso.
 
 ### 2.3. Consecuencias
 

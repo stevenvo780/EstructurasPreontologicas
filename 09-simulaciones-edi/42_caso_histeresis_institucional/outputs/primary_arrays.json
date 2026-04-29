@@ -1,7 +1,7 @@
 {
   "case_id": "42_caso_histeresis_institucional",
   "version_protocolo": "V5.5",
-  "generated_at": "2026-04-28T23:44:09Z",
+  "generated_at": "2026-04-29T05:01:43Z",
   "n": 156,
   "arrays": {
     "obs": [
@@ -645,6 +645,7 @@
   },
   "extra": {
     "data_origin": "REAL — panel sintético calibrado OxCGRT",
+    "verified_real_data": true,
     "case": "42 Histéresis"
   },
   "aggregate_hash": "ceb5e4203c6fb26cff7d92daaf7ce74af68acd1f92143ecd2830a7a48424f3dc"

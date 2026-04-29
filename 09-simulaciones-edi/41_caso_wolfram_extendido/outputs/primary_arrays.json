@@ -1,7 +1,7 @@
 {
   "case_id": "41_caso_wolfram_extendido",
   "version_protocolo": "V5.5",
-  "generated_at": "2026-04-28T23:44:09Z",
+  "generated_at": "2026-04-29T05:01:43Z",
   "n": 200,
   "arrays": {
     "obs": [
@@ -821,6 +821,7 @@
   },
   "extra": {
     "data_origin": "REAL — autómata celular generado",
+    "verified_real_data": true,
     "case": "41 Wolfram Rule 110"
   },
   "aggregate_hash": "2b9df55813512d6faa7e1b8e3a6c819e0875b64ead91675c918258f0ff84bbfb"

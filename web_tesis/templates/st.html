@@ -1,6 +1,24 @@
 {% extends "base.html" %}
 
 {% block content %}
+<style>
+  /* Estilos específicos para la consola ST */
+  #st-report-html pre {
+    background: #111a1c !important;
+    color: #a5b9bf !important;
+    border-radius: 8px;
+    padding: 1rem;
+    font-family: 'IBM Plex Mono', Consolas, monospace;
+    overflow-x: auto;
+  }
+  .st-pass { color: #4ade80; }
+  .st-fail { color: #f87171; }
+  .st-warn { color: #facc15; }
+  .st-info { color: #60a5fa; }
+  .st-header { color: #c084fc; font-weight: bold; }
+  .st-keyword { color: #f472b6; font-weight: 600; }
+</style>
+
 <section class="panel hero-panel" style="padding-bottom: 2rem;">
   <div>
     <p class="kicker">Ejecutor y Validación Formal</p>
@@ -64,7 +82,27 @@
           : '❌ Hubo fallos en las pruebas ST';
         
         reportHtml.innerHTML = data.html || '<p>No se pudo generar el reporte HTML.</p>';
-        logBox.textContent = data.log || 'No hay log de consola.';
+        
+        // Colorizar output
+        function colorizeLog(text) {
+          let escaped = String(text).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+          return escaped
+            .replace(/^(\s*)(✓|✅)(.*)$/gm, '$1<span class="st-pass">$2$3</span>')
+            .replace(/^(\s*)(✗|❌|⊘)(.*)$/gm, '$1<span class="st-fail">$2$3</span>')
+            .replace(/^(\s*)(⚠)(.*)$/gm, '$1<span class="st-warn">$2$3</span>')
+            .replace(/^(\s*)(◎)(.*)$/gm, '$1<span class="st-info">$2$3</span>')
+            .replace(/^(\s*)(=== Teoría.*===)$/gm, '$1<span class="st-header">$2</span>')
+            .replace(/^(\s*)(=== Fin.*===)$/gm, '$1<span class="st-header">$2</span>')
+            .replace(/\b(Let|Axioma|Test|Passage|Claim|Support|Confidence|Context)\b/g, '<span class="st-keyword">$1</span>');
+        }
+
+        logBox.innerHTML = data.log ? colorizeLog(data.log) : 'No hay log de consola.';
+
+        // Colorizar también los bloques de código dentro del reporte markdown
+        const codeBlocks = reportHtml.querySelectorAll('pre code');
+        codeBlocks.forEach(block => {
+          block.innerHTML = colorizeLog(block.textContent);
+        });
         
       } catch (err) {
         resultsSection.style.display = 'block';

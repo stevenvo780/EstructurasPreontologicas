@@ -30,10 +30,16 @@ Métrica empírica que opera el operador κ. Definición: `EDI = 1 - RMSE_couple
 Regularidad operativa anterior a la objetualidad sustancial. Ni cosa con esencia, ni ficción lingüística. Identificable como atractor empíricamente robusto de un sistema dinámico acoplado. Núcleo del nombre del proyecto. Capítulo 02-01.
 
 ### Irrealismo operativo
-Posición filosófica del manuscrito: realismo estructural moderado + pluralismo epistemológico + anti-reificación operativa. Ni realismo ingenuo, ni instrumentalismo puro, ni irrealismo radical. Capítulo 02-01.
+Posición filosófica del manuscrito: realismo estructural moderado (en sentido operativo no-Ladyman, ver entrada siguiente) + pluralismo epistemológico + anti-reificación operativa. Ni realismo ingenuo, ni instrumentalismo puro, ni irrealismo radical. Capítulo 02-01.
 
-### Self-organization
-Modelo positivo de la emergencia. Estabilización dinámica del sistema acoplado bajo restricciones físicas, informacionales y de tarea, sin postular sustancias nuevas. Causalidad circular upward+downward, ambas materiales. Capítulo 02-04.
+### Realismo estructural moderado (uso operativo)
+Compromiso filosófico de la tesis con la realidad de las estructuras —entendidas aquí como atractores empíricamente identificables sobre sustrato material dinámico— sin reducirla a estructura sin relata. **Declaración explícita de no-importación:** la tesis NO adopta la versión *ontic structural realism* de Ladyman & Ross (2007, *Every Thing Must Go*, §2.4), donde la estructura agota lo real y los relata son eliminables. La tesis exige sustrato material sosteniendo la estructura (cap 02-01 §1.1). Cualquier referencia textual a "realismo estructural moderado" en el cuerpo del manuscrito debe leerse bajo esta convención. Capítulo 02-01 §0.3.
+
+### Self-organization (sentido técnico)
+Modelo positivo de la emergencia anclado en la tradición Maturana-Varela (1980, *Autopoiesis and Cognition*) y Haken (1977, *Synergetics*). Designa la estabilización dinámica del sistema acoplado bajo restricciones físicas, informacionales y de tarea, sin postular sustancias nuevas. Causalidad circular upward+downward, ambas materiales. **No es invocación retórica:** cualquier ocurrencia textual no anclada disciplinarmente debe sustituirse por "estabilización dinámica" o "convergencia a atractor". Capítulo 02-04 §4.
+
+### Sinónimos coloquiales del núcleo conceptual (convención)
+Los términos "patrón estabilizado", "regularidad operativa", "estructura operativa" y "cuenca de atracción" (cuando aparece como sinónimo del atractor en lugar de como concepto técnico distinto) se usan en el manuscrito como **registros coloquiales** de los dos términos canónicos: **estructura pre-ontológica** (lectura ontológica) y **atractor empírico** (lectura operacional). El cuerpo argumental privilegia los canónicos cuando la precisión filosófica es decisiva; los coloquiales se admiten para fluidez prosódica, sin valor técnico distinto. Esta convención se documenta aquí para evitar la lectura como cuatro conceptos distintos.
 
 ---
 
@@ -57,8 +63,8 @@ Relación distinta de causación: X constituye Y si X es parte de la realizació
 ### Atractor normativo
 Valor (justicia, libertad, dignidad, verdad, belleza) entendido NO como entidad sustancial separada sino como región del espacio de fase de la conducta colectiva donde el sistema converge bajo perturbación, materialmente sostenido por prácticas, inscripciones, cuerpos en relación, sanciones organizadas y memoria histórica. Capítulo 02-06 §2.
 
-### Complementarismo metodológico
-Postura sobre la relación entre métodos en tercera persona (aparato EDI) y métodos fenomenológicos en primera persona (Husserl, Merleau-Ponty, Thompson, Varela). Son métodos diferentes para fenómenos distintos pero ontológicamente continuos. La tesis no elimina ninguno por reducción al otro; sostiene co-existencia disciplinada. Capítulo 05-01 §7.
+### Complementarismo metodológico (alcance acotado)
+Postura sobre la relación entre métodos en tercera persona (aparato EDI) y métodos fenomenológicos en primera persona. La tesis sostiene **co-existencia disciplinada acotada**: reconoce que los métodos fenomenológicos (Husserl, Merleau-Ponty, Thompson, Varela) operan sobre fenómenos ontológicamente continuos con los del aparato, pero **no integra engagement fenomenológico sustantivo** en el cuerpo argumental. La promesa fenomenológica del abstract es **declarativa**, no operativa: el manuscrito declara que el irrealismo operativo es compatible con el complementarismo, sin desarrollar el complementarismo como capítulo. Esta limitación se reconoce explícitamente en cap 05-01 §7 y en el régimen de validez declarado del front matter. Quien busque engagement fenomenológico desarrollado deberá consultar la deuda explícita en cap 06-03 §"Programa de extensiones fenomenológicas".
 
 ### Estructuralismo matemático moderado
 Postura sobre el estatus de las entidades matemáticas: las estructuras matemáticas (hipergrafos, ODE, espacios de fase) son representaciones formales de patrones reales del sustrato. NO son entidades platónicas independientes; NO son ficciones útiles sin referencia. Su validez depende de homomorfismo parcial con la dinámica material. Capítulo 03-01 §15.
