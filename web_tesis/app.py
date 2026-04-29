@@ -76,7 +76,7 @@ templates = Jinja2Templates(directory=str(APP_DIR / "templates"))
 app.mount(
     "/legacy_static",
     StaticFiles(directory=str(APP_DIR / "static")),
-    name="legacy_static",
+    name="static",  # nombre `static` para compatibilidad con templates Jinja2 legacy
 )
 
 if USE_REACT:
