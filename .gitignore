@@ -43,3 +43,4 @@ web_react/.vite/
 
 # El build de Vite se sincroniza a /public para Vercel; web_react/dist es intermedio
 web_react/dist/
+.vercel

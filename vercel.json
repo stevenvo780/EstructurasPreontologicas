@@ -8,6 +8,7 @@
     { "source": "/legacy_static/:path*", "destination": "/api/index.py" },
     { "source": "/legacy/:path*", "destination": "/api/index.py" },
     { "source": "/legacy", "destination": "/api/index.py" },
+    { "source": "/", "destination": "/index.html" },
     {
       "source": "/((?!api|healthz|visualizations|sim_files|repo_files|legacy|assets|favicon|robots|.*\\.(?:js|css|png|jpg|jpeg|gif|svg|ico|webp|woff|woff2|ttf|eot|map)$).*)",
       "destination": "/index.html"

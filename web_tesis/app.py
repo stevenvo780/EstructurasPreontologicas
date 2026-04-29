@@ -363,15 +363,14 @@ async def healthz():
 def _serve_spa() -> FileResponse | HTMLResponse:
     if USE_REACT:
         return FileResponse(REACT_DIST / "index.html")
-    # Fallback legacy: redirect a la home Jinja2 si no hay build React
+    # Fallback en runtime de Vercel: el bundle React vive en /public/ servido
+    # como sitio estático directo del CDN; la lambda nunca debería ver una
+    # ruta SPA. Si llega aquí, redirigir a /index.html para que el filesystem
+    # static handler lo sirva.
     return HTMLResponse(
-        '<!doctype html><meta charset="utf-8"><title>Estructuras Pre-Ontológicas</title>'
-        '<style>body{font-family:system-ui;padding:3rem;max-width:42rem;margin:auto;color:#1a1f2c;line-height:1.6}'
-        'code{background:#eef0f4;padding:0.15em 0.4em;border-radius:0.25rem;font-size:0.9em}</style>'
-        "<h1>Web React no compilada</h1>"
-        "<p>El bundle React no se ha generado todavía. Para construirlo:</p>"
-        "<pre><code>cd web_react && npm install && npm run build</code></pre>"
-        "<p>O usa el modo legacy Jinja2 en <a href='/legacy/'>/legacy/</a>.</p>"
+        status_code=302,
+        content="",
+        headers={"Location": "/index.html"},
     )
 
 
