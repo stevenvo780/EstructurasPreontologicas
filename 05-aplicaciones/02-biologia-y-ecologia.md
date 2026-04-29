@@ -177,6 +177,8 @@ La tesis no privilegia ninguno como único verdadero. Cada nivel se justifica po
 
 ## 6. Qué evita el marco en este dominio
 
+**Tabla 5.2.1.**
+
 | Tentación | Razón del rechazo |
 |---|---|
 | Esencialismo biológico | Categorías como especie o función no son esencias inmóviles |
@@ -220,4 +222,3 @@ Y articula explícitamente que la elevación a modo demostrativo está al alcanc
 ## 9. Limitación honesta
 
 Este capítulo conjetura. La elevación a modo demostrativo requiere adoptar un caso específico publicado con datos cuantitativos y construir el dossier completo. El programa posterior se prioriza en capítulo 06-03.
-

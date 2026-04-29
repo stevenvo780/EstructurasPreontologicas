@@ -20,6 +20,8 @@ La tesis adopta **naturalismo metafísico moderado** como **compromiso de partid
 
 **Reconocimiento honesto:** lo anterior NO es demostración del naturalismo metafísico. Es compromiso filosófico que se asume con conciencia de que tiene alternativas legítimas en la tradición:
 
+**Tabla 2.1.1.**
+
 | Alternativa rechazada | Por qué la tesis no la asume |
 |---|---|
 | **Dualismo cartesiano** | Postula segunda sustancia (*res cogitans*) sin ganancia operativa y con problema de interacción no resuelto |
@@ -98,6 +100,8 @@ La distinción "macro vs micro" en el manuscrito original era **artefacto de la 
 
 #### Tabla síntesis: invariantes ontológicos instanciados a través de escalas
 
+**Tabla 2.1.2.**
+
 | Invariante | Caso 31 (cuántico) | Caso 33 (molecular) | Caso 36 (celular) | Caso 04 (energético macro) | Caso 27 (riesgo bio macro) | Caso 30 (conductual) | Caso 39 (estelar) | Caso 40 (cosmológico) |
 |------------|--------------------|---------------------|-------------------|----------------------------|----------------------------|---------------------|-------------------|----------------------|
 | **Sustrato material** | qubit superconductor + baño térmico | proteína Villin + solvente | núcleo celular + citoplasma | red eléctrica + agentes económicos | población humana + patógenos | cuerpo + entorno físico | gas estelar + radiación | gas estelar + campo galáctico |
@@ -144,6 +148,8 @@ Para que la afirmación κ-ontológica fuerte se sostenga sobre un caso particul
 3. **Intervención experimental confirmatoria:** una predicción discriminante sobre intervención manipulada (no observación pasiva) debe cumplirse. Sin esto, la estructura puede ser correlación elaborada.
 
 **Estado del corpus actual respecto a κ-ontológica:**
+
+**Tabla 2.1.3.**
 
 | Caso del corpus | C1 multi-sonda independiente | C2 replicación inter-grupo | C3 intervención confirmatoria |
 |-----------------|:---:|:---:|:---:|
@@ -209,6 +215,8 @@ Una regularidad que no satisface las cinco condiciones no es patrón en el senti
 ## 3. Tipos de realidad
 
 La realidad no es plana. La tesis distingue cinco modos de realidad sin multiplicar mundos:
+
+**Tabla 2.1.4.**
 
 | Modo | Definición | Ejemplo paradigmático |
 |---|---|---|
@@ -286,6 +294,8 @@ La causalidad circular (upward + downward) emerge naturalmente del acoplamiento 
 
 ## 10. Qué evita la ontología
 
+**Tabla 2.1.5.**
+
 | Tentación rechazada | Razón |
 |---|---|
 | Dualismo | Multiplica sustancias sin necesidad y sin compromiso operacional |
@@ -349,5 +359,4 @@ La afirmación "estructuras pre-ontológicas a escala cuántica" tiene sentido *
 ## 14. Evolución conceptual
 
 La formulación intuitiva de partida evolucionó hacia la versión canónica. Los claims principales que sobreviven íntegramente son: monismo material-dinámico, estructuras pre-ontológicas como atractores, compresión disciplinada como epistemología, asimetría L1↔B↔L3↔S, emergencia como self-organization, dossier de admisión, y la fórmula "X exhibe cierre operativo bajo I respecto a Q". Los claims refinados incluyen: caso 30 con circularidad reconocida, corpus post-hoc, AUC-ROC interno, κ-pragmática vs κ-ontológica distinguidas, sistema modal T explícito. La continuidad conceptual es fuerte; la honestidad metodológica es mayor en la versión actual.
-
 

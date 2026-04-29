@@ -215,6 +215,8 @@ La cláusula es estricta: ninguna entidad del aparato formal se reifica. La disc
 
 En el caso ancla canónico (Warren 2006, capítulo 05-05) los operadores se instancian así:
 
+**Tabla 3.1.1.**
+
 | Operador | Instanciación |
 |---|---|
 | Q | `¿qué dirección de marcha adopta un humano caminando hacia meta y evitando obstáculo?` con τ = error en `r²` ≤ 0.02 |
@@ -230,6 +232,8 @@ Este ejemplo no es ilustrativo: es la prueba de que el aparato opera empíricame
 ## 11. Ejemplo programático: sistemas técnicos
 
 En sistemas distribuidos los operadores se instancian programáticamente (sin medición experimental controlada equivalente al caso ancla):
+
+**Tabla 3.1.2.**
 
 | Operador | Instanciación |
 |---|---|
@@ -303,4 +307,3 @@ La tesis adopta **estructuralismo matemático moderado** como postura de partida
 Si las **estructuras pre-ontológicas son atractores** y los atractores son **objetos matemáticos definidos sobre espacios de fase**, ¿qué tan real es la matemática en la ontología?
 
 **Respuesta:** la matemática es **real en sentido representacional moderado**: es la herramienta formal que captura las dependencias del sustrato material. Los atractores existen materialmente (como patrones del sustrato dinámico); las descripciones matemáticas de los atractores existen como **representaciones legítimas** de esos patrones cuando preservan dependencias decisivas. La realidad ontológica primaria está en el sustrato; la realidad de las estructuras matemáticas es **derivada y representacional**.
-

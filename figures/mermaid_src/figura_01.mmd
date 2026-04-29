@@ -1,0 +1,11 @@
+graph LR
+    H[Historia] --> A[Agente / Organismo]
+    T[Tarea] --> A
+    A -->|β: fuerza| E[Entorno]
+    E -->|λ: información ecológica| A
+    A -->|ȧ = Ψ a,i| A
+    E -->|ė = Φ e,F| E
+    style A fill:#cdf
+    style E fill:#fdc
+    style T fill:#dfc
+    style H fill:#fcd

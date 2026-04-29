@@ -16,6 +16,8 @@ S  — semántica revisada                   : recoge las categorías que sobrev
 
 **Definición multiescalar de B:** B es el nivel donde el agente operativo (sea cual sea su escala: qubit, molécula, célula, organismo, estrella, cúmulo) está acoplado dinámicamente con su entorno relevante bajo restricciones específicas de la escala. La estructura es **invariante a la escala**:
 
+**Tabla 2.4.1.**
+
 | Escala | "Organismo" en B | "Entorno" en B | "Tarea" en B | "Historia" en B |
 |--------|------------------|-----------------|---------------|-----------------|
 | Cuántica (caso 31) | Qubit | Baño térmico | Mantener coherencia | Pulsos previos |
@@ -175,6 +177,8 @@ S (la semántica revisada: las categorías que sobreviven a la auditoría) se ga
 
 ## 9. Qué descarta este nivel
 
+**Tabla 2.4.2.**
+
 | Tentación rechazada | Razón |
 |---|---|
 | Reduccionismo neurocéntrico | Sin tarea, entorno e historia, los circuitos no explican conducta |
@@ -236,4 +240,3 @@ Con la incorporación de B como nivel pleno, la tesis recupera el plano que la r
 - la ontología de patrones estabilizados gana su modelo positivo (atractores de sistemas acoplados);
 - la epistemología de la compresión gana su test (la dinámica de baja dimensión a nivel B);
 - la crítica al mentalismo deja de ser eliminativa para volverse constructiva: no se trata de borrar `mente`, `memoria` o `yo`, sino de reconstruir cuáles atractores conductuales-ecológicos comprime cada una y, a partir de ahí, decidir qué se conserva, qué se reformula y qué se descarta.
-

@@ -45,6 +45,8 @@ Esto rechaza el objeto como sustancia simple autosuficiente y rechaza también e
 
 ### 2.2. Cuatro tipos de objetualidad
 
+**Tabla 2.3.1.**
+
 | Tipo | Definición | Ejemplos |
 |---|---|---|
 | **Compacto** | Continuidad material relativamente clara, límites estables | piedras, herramientas, moléculas |
@@ -126,6 +128,8 @@ Una frontera es real si su trazado mejora la legibilidad del patrón sin destrui
 
 ## 6. Qué se evita con esta cuadrícula
 
+**Tabla 2.3.2.**
+
 | Tentación rechazada | Razón |
 |---|---|
 | Reificación | La categoría no garantiza sustancia |
@@ -206,4 +210,3 @@ Esto se aplica también a los términos del propio marco: `dossier`, `compresió
 ## 10. Cierre
 
 Categorías son compresiones semánticas auditables. Objetos son unidades operativas relativas con tipos discriminables. Propiedades son disposiciones relacionales materialmente ancladas. Identidad es continuidad organizada como cuenca persistente. Las cuatro reformuladas son el inventario suficiente para que la tesis trate cualquier dominio sin sustancialismo y sin nominalismo. Lo que con ellas se puede hacer es lo que el capítulo 03 (formalización) opera y lo que los capítulos 05 (aplicaciones) demuestran.
-

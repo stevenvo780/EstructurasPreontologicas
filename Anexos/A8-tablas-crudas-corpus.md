@@ -12,6 +12,8 @@ Anexo tabular de **resultados crudos verificables** del corpus EDI multidominio.
 
 Perfil canónico: `n_perm = 999`, `n_boot = 500`, `seed = 42`, `validator_version = canonical-2026-04`.
 
+**Tabla A.8.1.**
+
 | # | Caso | Sonda macro | EDI | p | Bootstrap CI | val_steps | LoE | Coupling | Forcing | Nivel | overall_pass |
 |---|------|-------------|----:|---:|---|----:|---:|----:|----:|---:|:---:|
 | 04 | Energía eléctrica | Lotka-Volterra | 0.6503 | 0.0000 | [0.6377, 0.6629] | 13 | 4 | 0.55 | 0.85 | 4 | True |
@@ -55,6 +57,8 @@ Perfil canónico: `n_perm = 999`, `n_boot = 500`, `seed = 42`, `validator_versio
 
 ## Tabla A.8.2. Métricas de robustez por caso
 
+**Tabla A.8.2.**
+
 | # | Caso | Estabilidad numérica | Persistencia temporal | Determinismo seed=42 | C1 | C2 | C3 | C4 | C5 |
 |---|------|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | 04 | Energía | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
@@ -79,6 +83,8 @@ Perfil canónico: `n_perm = 999`, `n_boot = 500`, `seed = 42`, `validator_versio
 
 Perfil agresivo: `n_perm = 2999`, `n_boot = 1500`, `n_refine = 10000`. Aplicado a casos seleccionados.
 
+**Tabla A.8.3.**
+
 | # | Caso | EDI canónico | EDI agresivo | Δ | Veredicto |
 |---|------|------------:|-------------:|---:|-----------|
 | 16 | Deforestación | 0.6020 | 0.5802 | -0.022 | Robusto bajo agresivo (Nivel 4 strong preservado) |
@@ -89,6 +95,8 @@ La verificación masiva del corpus completo bajo perfil agresivo es trabajo futu
 ---
 
 ## Tabla A.8.4. Distribución del paisaje de emergencia
+
+**Tabla A.8.4.**
 
 | Categoría | Definición operativa | Cuenta | Porcentaje |
 |-----------|----------------------|-------:|-----------:|

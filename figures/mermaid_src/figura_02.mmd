@@ -1,0 +1,16 @@
+graph TD
+    R[Realidad R] -->|μ: medir| X[Variables X]
+    X -->|construir grafo| G[Grafo basal G = V,E,W,T]
+    G -->|relaciones n-arias| H[Hipergrafo H]
+    G -->|comprimir| K[κ: G → G*]
+    H -->|comprimir| K
+    K -->|errores de traducción| Eps[ε: G ↔ G*]
+    K -->|admitir| S[Semántica revisada S]
+    Eps -->|reabrir si| K
+    style R fill:#fee
+    style X fill:#efe
+    style G fill:#eef
+    style H fill:#eff
+    style K fill:#fef
+    style Eps fill:#ffe
+    style S fill:#cfc

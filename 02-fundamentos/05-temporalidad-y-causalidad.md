@@ -127,6 +127,8 @@ Hoel, Albantakis y Tononi (2013, *PNAS* 110:19790-19795) introducen **causal eme
 
 La tesis ahora afirma con respaldo articulado:
 
+**Tabla 2.5.1.**
+
 | Dimensión | Postura | Operacionalización |
 |-----------|---------|---------------------|
 | **Tiempo** | B-series relacional, eternalismo moderado | Series temporales del corpus, dt explícito en sondas |
@@ -136,4 +138,3 @@ La tesis ahora afirma con respaldo articulado:
 | **Downward "causation"** | Reformulado como constitución | Mutual manipulability de Craver |
 
 Esto cubre los vacíos V5-02, V5-03, V5-09 con honestidad: la tesis no inventa metafísica del tiempo ni de la causalidad; **adopta posturas defendidas en la literatura** y las articula explícitamente para que el aparato no quede flotando metodológicamente.
-

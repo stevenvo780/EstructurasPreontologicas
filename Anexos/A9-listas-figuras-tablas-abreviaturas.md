@@ -10,6 +10,8 @@ Listas de soporte editorial requeridas por el formato de tesis doctoral instituc
 
 > Nota: las versiones Mermaid renderizables de las 9 figuras principales están consolidadas en el Anexo A.10 (`Anexos/A10-figuras-mermaid.md`). En el cuerpo de los capítulos los diagramas siguen en ASCII art para legibilidad en texto plano. La conversión final a SVG/PNG con `mmdc` (mermaid-cli) o equivalente es trámite editorial pre-depósito con cronograma específico: 3-5 días en la semana previa al depósito institucional. Esta lista anticipa la numeración estable.
 
+**Tabla A.9.1.**
+
 | Figura | Título | Capítulo |
 |--------|--------|----------|
 | Fig. 2.1 | Cuatro modos de realidad operativa | 02-01 |
@@ -26,6 +28,8 @@ Listas de soporte editorial requeridas por el formato de tesis doctoral instituc
 ---
 
 ## A.9.2. Lista de tablas
+
+**Tabla A.9.2.**
 
 | Tabla | Título | Capítulo |
 |-------|--------|----------|
@@ -52,6 +56,8 @@ Listas de soporte editorial requeridas por el formato de tesis doctoral instituc
 
 ### Operadores formales
 
+**Tabla A.9.3.**
+
 | Símbolo | Significado | Capítulo |
 |---------|-------------|----------|
 | μ | Operador de medición; recorta R en X observable | 03-01 |
@@ -64,6 +70,8 @@ Listas de soporte editorial requeridas por el formato de tesis doctoral instituc
 | β | Error de heading φ − ψ_g | 02-04 |
 
 ### Métricas y protocolos
+
+**Tabla A.9.4.**
 
 | Sigla | Significado | Capítulo |
 |-------|-------------|----------|
@@ -78,6 +86,8 @@ Listas de soporte editorial requeridas por el formato de tesis doctoral instituc
 
 ### Niveles del corpus
 
+**Tabla A.9.5.**
+
 | Nivel | Categoría | Definición operativa |
 |------:|-----------|----------------------|
 | 0 | Null | EDI ≤ 0 o sin estructura macro |
@@ -91,6 +101,8 @@ Listas de soporte editorial requeridas por el formato de tesis doctoral instituc
 
 ### Niveles del registro categorial
 
+**Tabla A.9.6.**
+
 | Sigla | Registro | Capítulo |
 |-------|----------|----------|
 | L1 | Psicológico-ordinario (preguntas comunicables) | 02-04 |
@@ -99,6 +111,8 @@ Listas de soporte editorial requeridas por el formato de tesis doctoral instituc
 | S | Semántica revisada (categorías que sobreviven) | 02-04 |
 
 ### Instituciones y datasets
+
+**Tabla A.9.7.**
 
 | Sigla | Significado |
 |-------|-------------|

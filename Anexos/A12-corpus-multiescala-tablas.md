@@ -10,6 +10,8 @@ Anexo tabular de **resultados crudos verificables** del corpus EDI multiescala (
 
 ## Tabla A.12.1. Resultados del corpus multiescala (10 casos)
 
+**Tabla A.12.1.**
+
 | # | Caso | Escala (longitud) | Escala (tiempo) | EDI | p | CI 95% | Nivel | Overall pass |
 |---|------|-------------------|-----------------|----:|--:|--------|------:|:------------:|
 | 31 | Decoherencia qubit | 10⁻⁹ m | 10⁻⁶ s | 0.84 | 0.000 | estrecho | 4 | True |
@@ -25,6 +27,8 @@ Anexo tabular de **resultados crudos verificables** del corpus EDI multiescala (
 
 ## Tabla A.12.2. Distribución por nivel y por escala
 
+**Tabla A.12.2.**
+
 | Nivel | Cuenta | Escalas representadas |
 |-------|-------:|----------------------|
 | 4 strong (`overall_pass=True`) | 7 | atómica, cuántica, bioquímica, celular oscilatoria, individual, astrofísica chica, astrofísica grande |
@@ -34,6 +38,8 @@ Anexo tabular de **resultados crudos verificables** del corpus EDI multiescala (
 **Selectividad multiescala:** 8/10 con señal positiva (EDI > 0); 7/10 con `overall_pass=True`.
 
 ## Tabla A.12.3. Sondas físicas usadas por caso
+
+**Tabla A.12.3.**
 
 | # | Caso | Sonda macro | Referencia teórica |
 |---|------|-------------|---------------------|
@@ -49,6 +55,8 @@ Anexo tabular de **resultados crudos verificables** del corpus EDI multiescala (
 | 40 | Cúmulo globular | Plummer + marea | Plummer 1911 |
 
 ## Tabla A.12.4. Datos candidatos para elevación a LoE 4
+
+**Tabla A.12.4.**
 
 | # | Caso | Dataset abierto | Acceso | Cronograma |
 |---|------|-----------------|--------|------------|

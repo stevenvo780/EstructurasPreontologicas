@@ -99,6 +99,8 @@ La filosofía latinoamericana de la ciencia tiene tradición sistemista fuerte (
 
 ## 6. Mapa de inserción de la tesis en el campo
 
+**Tabla 1.3.1.**
+
 | Subcampo | Posición consolidada | Posición de la tesis | Discriminación específica |
 |----------|----------------------|----------------------|---------------------------|
 | Mente postcognitivista | Acoplamiento organismo-entorno como tesis general | Cuantificación EDI del cierre operativo en behavioral dynamics | Caso 30 cuantitativo + caso 05-05 cualitativo |
@@ -128,4 +130,3 @@ Esta revisión es **orientada a la tesis**, no exhaustiva del campo en general. 
 - la literatura especializada en cada uno de los 30 dominios del corpus (cada caso del corpus tiene su propia mini-revisión en su README específico).
 
 La revisión exhaustiva de cada uno de los 30 dominios queda como trabajo futuro. Para fines de la tesis general, basta con la inserción en los cinco subcampos anteriores y la discriminación contra los 14 rivales del capítulo 04-01.
-

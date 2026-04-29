@@ -131,6 +131,8 @@ La validez normativa se modelaría como cuenca de atracción del sistema institu
 
 ## 5. Qué evita el marco en este dominio
 
+**Tabla 5.4.1.**
+
 | Tentación | Razón del rechazo |
 |---|---|
 | Hipóstasis institucional | No convertir instituciones en sujetos metafísicos autónomos |
@@ -212,4 +214,3 @@ Este capítulo conjetura. La elevación requiere:
 - caso específico con datos cuantitativos;
 - desarrollo del aparato para variables normativas como dimensiones del sistema acoplado;
 - diálogo profundo con Searle, Bourdieu, Latour, Gilbert.
-

@@ -207,6 +207,8 @@ Y también ilustra los límites: el modelo trata obstáculos como puntos, no cap
 
 ## Tabla de pérdidas y ganancias respecto al programa original de Warren
 
+**Tabla 5.5.1.**
+
 | Aspecto | Conservado tal cual | Reformulado | Añadido por el marco |
 |---|---|---|---|
 | Ciclo percepción–acción y ecuaciones acopladas | Sí | — | Lectura como par dinámico acoplado canónico |

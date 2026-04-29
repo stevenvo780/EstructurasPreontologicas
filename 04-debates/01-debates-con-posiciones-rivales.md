@@ -34,6 +34,8 @@ Que la dificultad explicativa exija multiplicar sustancias. La tesis muestra que
 
 ### Discriminación
 
+**Tabla 4.1.1.**
+
 | Criterio | Tesis | Dualismo |
 |---|---|---|
 | A | Sí (sustrato único) | Parcial (segunda sustancia no anclada) |
@@ -57,6 +59,8 @@ La exigencia de anclaje material y la negativa a introducir entidades misteriosa
 Que conocer las partes equivalga automáticamente a conocer el fenómeno. La tesis muestra que la organización importa: una descripción micro puede ser verdadera y no capturar la estructura relevante para Q.
 
 ### Discriminación
+
+**Tabla 4.1.2.**
 
 | Criterio | Tesis | Materialismo de partículas |
 |---|---|---|
@@ -82,6 +86,8 @@ La identificación entre profundidad ontológica y suficiencia explicativa. El n
 
 ### Discriminación
 
+**Tabla 4.1.3.**
+
 | Criterio | Tesis | Reduccionismo plano |
 |---|---|---|
 | B | Sí (paso entre escalas como decisión operativa) | No (un nivel privilegiado) |
@@ -105,6 +111,8 @@ La intuición de que hay patrones que solo se vuelven visibles en ciertos nivele
 Convertir esa visibilidad en prueba de sustancia nueva. La tesis ofrece self-organization como modelo positivo de la emergencia anclada (capítulo 02-04 §4): estabilización dinámica del sistema acoplado, no aparición de entidad adicional.
 
 ### Discriminación
+
+**Tabla 4.1.4.**
 
 | Criterio | Tesis | Emergentismo fuerte |
 |---|---|---|
@@ -130,6 +138,8 @@ Que todos los recortes sean equivalentes. La realidad constriñe la validez de l
 
 ### Discriminación
 
+**Tabla 4.1.5.**
+
 | Criterio | Tesis | Constructivismo arbitrario |
 |---|---|---|
 | C | Sí (dossier de anclaje, predicción discriminante) | No (todas las construcciones son admisibles) |
@@ -152,6 +162,8 @@ Que los modelos son construcciones y no espejos directos del mundo.
 Que la utilidad baste sin relación robusta con restricciones reales. La utilidad importa como señal de captura estructural, no como sustituto.
 
 ### Discriminación
+
+**Tabla 4.1.6.**
 
 | Criterio | Tesis | Instrumentalismo puro |
 |---|---|---|
@@ -176,6 +188,8 @@ Que la estructura formal tenga valor por sí misma sin contacto mejorado con el 
 
 ### Discriminación
 
+**Tabla 4.1.7.**
+
 | Criterio | Tesis | Formalismo vacío |
 |---|---|---|
 | D | Sí (traducibilidad B↔L3 obligatoria) | No (formalismo opera independiente del fenómeno) |
@@ -198,6 +212,8 @@ La existencia de procesos internos relevantes para conducta secuencial, anticipa
 Que los modelos internos sean recurso primario para tareas como locomoción, frenado, equilibrio, raqueteo, donde el control directo informacional explica los datos con menos hipótesis y mejor predicción.
 
 ### Discriminación en el caso ancla canónico
+
+**Tabla 4.1.8.**
 
 | Criterio | Tesis (control informacional, leyes acopladas) | Modelos internos / control óptimo |
 |---|---|---|
@@ -229,6 +245,8 @@ Que la metáfora computacional sea recurso primario para fenómenos donde el aco
 
 ### Discriminación en el caso ancla y en mente
 
+**Tabla 4.1.9.**
+
 | Criterio | Tesis | Cognitivismo computacional |
 |---|---|---|
 | D (traducibilidad B↔L3) | Obligatoria | Bloqueada (multiple realizability como dogma) |
@@ -252,6 +270,8 @@ El recorte correcto del plano observable y la negativa a postular entidades inte
 La negación de la estructura formal L3 que efectivamente discrimina hipótesis. La tesis añade L3 anclado sin perder anclaje en B.
 
 ### Discriminación
+
+**Tabla 4.1.10.**
 
 | Criterio | Tesis | Conductismo radical |
 |---|---|---|
@@ -285,6 +305,8 @@ Tres divergencias específicas:
 
 ### Discriminación
 
+**Tabla 4.1.11.**
+
 | Criterio | Tesis | Enactivismo radical |
 |---|---|---|
 | C | Dossier formal | Mayormente cualitativo |
@@ -312,6 +334,8 @@ La centralidad de la estructura como objeto del análisis ontológico.
 Que la estructura sea ontología fundamental sin sustrato. La tesis afirma sustrato material como base; la estructura es estructura **del** sustrato.
 
 ### Discriminación
+
+**Tabla 4.1.12.**
 
 | Criterio | Tesis | Realismo estructural informativo |
 |---|---|---|
@@ -346,6 +370,8 @@ Cuatro divergencias precisas:
 4. **Cartografía empírica multidominio:** Wolfram propone simulaciones computacionales pero no validación discriminante sobre datos reales en dominios heterogéneos con controles de falsación. La tesis valida 30 casos en física, biología, economía, política, tecnología, cultura y conducta humana, con 3 controles de falsación correctamente rechazados.
 
 ### Discriminación
+
+**Tabla 4.1.13.**
 
 | Criterio | Tesis (irrealismo operativo) | Wolfram Physics Project |
 |---|---|---|
@@ -404,6 +430,8 @@ La discusión específica con la **objeción de Glennan (2017, *The New Mechanic
 
 ### Discriminación
 
+**Tabla 4.1.14.**
+
 | Criterio | Tesis | Mecanicismo multinivel |
 |---|---|---|
 | C | Dossier completo | Criterios mecanicistas sin batería de diez |
@@ -417,6 +445,8 @@ Pierde en cero criterios. Discrimina en C, D, F.
 El mecanicismo multinivel es el aliado teórico principal de este capítulo. La tesis se entiende mejor como mecanicismo multinivel disciplinado por dossier de anclaje y asimetría L1↔B↔L3↔S.
 
 ## 16. Tabla síntesis
+
+**Tabla 4.1.15.**
 
 | Posición rival | Lo que la tesis acepta | Lo que la tesis rechaza | Criterios de discriminación |
 |---|---|---|---|
@@ -459,4 +489,3 @@ La tesis ocupa un punto difícil pero filosóficamente fértil:
 > La realidad no exige más sustancias, pero sí mejores recortes, dossier completo y predicción discriminante.
 
 Eso es lo que la tesis quiere demostrar una y otra vez, hasta que incluso sus objeciones tengan que discutir en ese terreno.
-

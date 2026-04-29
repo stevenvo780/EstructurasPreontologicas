@@ -1,0 +1,186 @@
+{
+  "generated_at": "2026-04-29T01:45:01.399749+00:00Z",
+  "n_cases": 7,
+  "results": [
+    {
+      "case_id": "04_caso_energia",
+      "n": 100,
+      "train_len": 80,
+      "val_len": 20,
+      "rmse": {
+        "persistence": 0.5689210887149376,
+        "random_walk": 0.45268014633571524,
+        "arima_1_1_1": 0.48300652338384653,
+        "var_obs_forcing": 0.5846368600131052,
+        "abm_coupled_val": 0.40583882545313854,
+        "abm_no_ode_val": 3.108343863837032,
+        "abm_coupled_metrics_full": 1.5252972523421895,
+        "abm_no_ode_metrics_full": 2.276027933687563
+      },
+      "edi_vs_baseline": {
+        "persistence": 0.28665181603685064,
+        "random_walk": 0.10347553622958838,
+        "arima_1_1_1": 0.15976533275386562,
+        "var_obs_forcing": 0.30582750898730326,
+        "abm_no_ode_val": 0.8694356727469145,
+        "abm_coupled_metrics_full": 0.7339280426618827,
+        "abm_no_ode_metrics_full": 0.8216898749587802
+      },
+      "edi_internal_val": 0.8694356727469145
+    },
+    {
+      "case_id": "16_caso_deforestacion",
+      "n": 100,
+      "train_len": 87,
+      "val_len": 13,
+      "rmse": {
+        "persistence": 0.2814001803664579,
+        "random_walk": 0.5867697629468553,
+        "arima_1_1_1": 0.2806844911289528,
+        "var_obs_forcing": 0.24652917032745342,
+        "abm_coupled_val": 0.5651696622348304,
+        "abm_no_ode_val": 4.708529770493872,
+        "abm_coupled_metrics_full": 0.933009162875924,
+        "abm_no_ode_metrics_full": 0.9723436993493794
+      },
+      "edi_vs_baseline": {
+        "persistence": -1.0084196872184985,
+        "random_walk": 0.03681188444943995,
+        "arima_1_1_1": -1.0135407551790196,
+        "var_obs_forcing": -1.2925062437201302,
+        "abm_no_ode_val": 0.8799689733775325,
+        "abm_coupled_metrics_full": 0.3942506839989208,
+        "abm_no_ode_metrics_full": 0.4187552584410221
+      },
+      "edi_internal_val": 0.8799689733775325
+    },
+    {
+      "case_id": "20_caso_kessler",
+      "n": 100,
+      "train_len": 92,
+      "val_len": 8,
+      "rmse": {
+        "persistence": 1.5829199270425114,
+        "random_walk": 1.2208063591746505,
+        "arima_1_1_1": 1.5887208599646685,
+        "var_obs_forcing": 1.610459558605208,
+        "abm_coupled_val": 0.5575954848399179,
+        "abm_no_ode_val": 2.958618903519827,
+        "abm_coupled_metrics_full": 0.6723025112338473,
+        "abm_no_ode_metrics_full": 0.562919755394193
+      },
+      "edi_vs_baseline": {
+        "persistence": 0.6477424566372629,
+        "random_walk": 0.5432564053672763,
+        "arima_1_1_1": 0.6490286626863335,
+        "var_obs_forcing": 0.6537662297320636,
+        "abm_no_ode_val": 0.8115352118596435,
+        "abm_coupled_metrics_full": 0.1706181733330322,
+        "abm_no_ode_metrics_full": 0.00945831178112888
+      },
+      "edi_internal_val": 0.8115352118596435
+    },
+    {
+      "case_id": "24_caso_microplasticos",
+      "n": 100,
+      "train_len": 92,
+      "val_len": 8,
+      "rmse": {
+        "persistence": 0.3750702478397625,
+        "random_walk": 0.6144663498916606,
+        "arima_1_1_1": 0.3655609728682623,
+        "var_obs_forcing": 0.25951352217498685,
+        "abm_coupled_val": 0.3054899707174851,
+        "abm_no_ode_val": 2.053944640982529,
+        "abm_coupled_metrics_full": 1.401724115499031,
+        "abm_no_ode_metrics_full": 1.4602280298990131
+      },
+      "edi_vs_baseline": {
+        "persistence": 0.1855126540242229,
+        "random_walk": 0.5028369401003856,
+        "arima_1_1_1": 0.1643255342041805,
+        "var_obs_forcing": -0.17716398034741676,
+        "abm_no_ode_val": 0.851266696958614,
+        "abm_coupled_metrics_full": 0.7820612720151947,
+        "abm_no_ode_metrics_full": 0.7907929690004565
+      },
+      "edi_internal_val": 0.851266696958614
+    },
+    {
+      "case_id": "27_caso_riesgo_biologico",
+      "n": 100,
+      "train_len": 92,
+      "val_len": 8,
+      "rmse": {
+        "persistence": 0.18173268474272983,
+        "random_walk": 0.606682459467552,
+        "arima_1_1_1": 0.18198008490127354,
+        "var_obs_forcing": 0.22568275659372156,
+        "abm_coupled_val": 0.23929162356020883,
+        "abm_no_ode_val": 4.16237698106729,
+        "abm_coupled_metrics_full": 1.9400074324834535,
+        "abm_no_ode_metrics_full": 1.9346747801571011
+      },
+      "edi_vs_baseline": {
+        "persistence": -0.31672309743820937,
+        "random_walk": 0.6055735256130192,
+        "arima_1_1_1": -0.3149330251715594,
+        "var_obs_forcing": -0.060300871771901576,
+        "abm_no_ode_val": 0.9425108238276747,
+        "abm_coupled_metrics_full": 0.8766542748478621,
+        "abm_no_ode_metrics_full": 0.8763142901254041
+      },
+      "edi_internal_val": 0.9425108238276747
+    },
+    {
+      "case_id": "41_caso_wolfram_extendido",
+      "n": 200,
+      "train_len": 140,
+      "val_len": 60,
+      "rmse": {
+        "persistence": 0.08003384700654258,
+        "random_walk": 0.09591850641714986,
+        "arima_1_1_1": 0.0287294110485188,
+        "var_obs_forcing": 0.04821283336693562,
+        "abm_coupled_val": 0.05324445083803468,
+        "abm_no_ode_val": 0.07743283850517636,
+        "abm_coupled_metrics_full": 0.10822757909638125,
+        "abm_no_ode_metrics_full": null
+      },
+      "edi_vs_baseline": {
+        "persistence": 0.334725833762782,
+        "random_walk": 0.4448990833273152,
+        "arima_1_1_1": -0.8533081220535428,
+        "var_obs_forcing": -0.10436261716470185,
+        "abm_no_ode_val": 0.3123789355277825,
+        "abm_coupled_metrics_full": 0.5080325062928901
+      },
+      "edi_internal_val": 0.3123789355277825
+    },
+    {
+      "case_id": "42_caso_histeresis_institucional",
+      "n": 156,
+      "train_len": 110,
+      "val_len": 46,
+      "rmse": {
+        "persistence": 0.05212860351426869,
+        "random_walk": 0.3147109871075748,
+        "arima_1_1_1": 0.05212860351426869,
+        "var_obs_forcing": 0.20184005412754494,
+        "abm_coupled_val": 0.0,
+        "abm_no_ode_val": 0.5001781146340651,
+        "abm_coupled_metrics_full": 0.06465196630840848,
+        "abm_no_ode_metrics_full": null
+      },
+      "edi_vs_baseline": {
+        "persistence": 1.0,
+        "random_walk": 1.0,
+        "arima_1_1_1": 1.0,
+        "var_obs_forcing": 1.0,
+        "abm_no_ode_val": 1.0,
+        "abm_coupled_metrics_full": 1.0
+      },
+      "edi_internal_val": 1.0
+    }
+  ]
+}

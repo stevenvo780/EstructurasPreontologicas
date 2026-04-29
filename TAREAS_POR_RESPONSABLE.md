@@ -2,6 +2,8 @@
 
 División operativa de los 34 fallos detectados en `FALLOS_PENDIENTES.md` por quién puede cerrarlos. Cada bloque indica el alcance, las dependencias y el tiempo razonable de cierre.
 
+> **Estado 2026-04-28:** los fallos cerrados por la asistencia técnica (F7, F8, F11, F12, F14, F15, F18–F22, F27–F31, F32, F33, F34) están auditados en `REPORTE_CIERRE_TECNICO.md`. Lo que sigue listado en §1 quedó como referencia histórica del alcance original; los abiertos son ahora §2 (Steven/Jacob) y §3 (Universidad).
+
 ---
 
 ## 1. Tareas que la asistencia computacional puede ejecutar

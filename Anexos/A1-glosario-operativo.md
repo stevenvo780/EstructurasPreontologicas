@@ -179,6 +179,8 @@ CI bootstrap, modos de fallo, LoE, val_steps reportados con su implicación infe
 
 ## Niveles de Evidencia (LoE)
 
+**Tabla A.1.1.**
+
 | LoE | Descripción | Ejemplos |
 |----:|-------------|----------|
 | 1 | Especulativo | Proxies indirectos, encuestas subjetivas, datos sintéticos sin ground truth |

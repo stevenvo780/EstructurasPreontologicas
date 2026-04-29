@@ -54,6 +54,8 @@ Sistema modal **al menos T (KT)** declarado en cap 02-01. T22 confirma: en `moda
 
 ## Resumen de la suite refactorizada
 
+**Tabla A.11.1.**
+
 | Teoría | Perfil ST | Foco | Estado |
 |--------|-----------|------|--------|
 | 00 — Núcleo ontológico | classical.propositional | 4 invariantes + naturalismo + rechazo de 3 rivales | ✅ |

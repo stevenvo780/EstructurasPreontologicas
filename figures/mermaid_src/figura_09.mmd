@@ -1,0 +1,6 @@
+graph TD
+    R[1 Selección regla<br>p.ej. CA Rule 110] --> S[2 Generar 200 simulaciones<br>con perturbaciones iniciales]
+    S --> SM[3 Construir sonda macro<br>densidad / curvatura discreta]
+    SM --> EE[4 Aplicar EDI<br>con perm 999 + boot 500 + C1-C5]
+    EE --> H[5 Hipótesis<br>EDI ≥ 0.30 → cierre operativo macro<br>EDI menor 0.10 → irreducibilidad confirmada]
+    H --> L[6 Lectura interpretativa]

@@ -28,6 +28,8 @@ Astrofísica masiva ~10¹⁷-10²⁰m  ~10¹⁴ s         Caso 40 (Cúmulo globu
 
 7 casos en 7 escalas distintas detectan cierre operativo significativo:
 
+**Tabla 5.6.1.**
+
 | # | Caso | Escala | EDI | p | Sonda |
 |---|------|--------|----:|--:|-------|
 | 32 | Espín-órbita | Atómica | 0.83 | 0.000 | H_eff con coupling |
@@ -40,11 +42,15 @@ Astrofísica masiva ~10¹⁷-10²⁰m  ~10¹⁴ s         Caso 40 (Cúmulo globu
 
 ### 2.2. Casos weak (Nivel 3)
 
+**Tabla 5.6.2.**
+
 | # | Caso | Escala | EDI | Comentario |
 |---|------|--------|----:|------------|
 | 35 | Ciclo celular | Celular | 0.13 | Tyson-Novak; señal genuina pero menor |
 
 ### 2.3. Casos null honestos (Nivel 0) y failure modes
+
+**Tabla 5.6.3.**
 
 | # | Caso | Escala | EDI | Diagnóstico honesto |
 |---|------|--------|----:|--------------------|
@@ -91,6 +97,8 @@ Bajo este criterio, el corpus multiescala produce **7 strong en 7 escalas distin
 - **La discriminación strong/null es robusta** a la elección de escala: el aparato no produce strong indiscriminadamente.
 
 ## 5. Cómo conecta con el corpus macro original
+
+**Tabla 5.6.4.**
 
 | Característica | Corpus macro (30 casos) | Corpus multiescala (10 casos) |
 |----------------|------------------------|-------------------------------|
@@ -143,6 +151,8 @@ Una crítica posible: *"el aparato funciona en muchas escalas porque es estadís
 
 La primera iteración era **ontología regional macro-poblacional con extensión multiescalar opcional**. Después del corpus inter-escala y la auditoría V4 con narrativa unificada, la tesis es:
 
+**Tabla 5.6.5.**
+
 | Antes (primera iteración) | Después (V4 narrativa unificada) |
 |---------------------------|----------------------------------|
 | Ontología en escala macro | Ontología general multiescalar |
@@ -154,4 +164,3 @@ La primera iteración era **ontología regional macro-poblacional con extensión
 **Esto NO es auto-indulgencia retórica:** las correcciones aplicadas en V4 reconocen explícitamente que la generalidad sigue siendo **propuesta operativamente articulada con demostración parcial bajo régimen declarado**, no demostración cerrada. Lo que cambió es el alcance conceptual de la tesis (ahora es ontológica general), no la fuerza inferencial (sigue siendo parcial hasta convergencia inter-grupo + datos reales + revisión externa).
 
 Esta es la tesis que el manuscrito entrega tras hostile testing severo: **ontología general multiescalar operativamente articulada, no más auto-indulgente, no más restringida a la escala macro, validada operativamente en 8 escalas y 30 dominios, con 2 nulls honestos que muestran las fronteras del aparato y limitaciones explícitamente reconocidas como deuda externa**.
-

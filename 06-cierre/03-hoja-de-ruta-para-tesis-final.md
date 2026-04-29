@@ -73,6 +73,8 @@ Convertir el mapa de interlocutores funcionales del capítulo 07 en aparato bibl
 
 ### Distribución obligatoria
 
+**Tabla 6.3.1.**
+
 | Capítulo | Interlocutor principal | Interlocutores secundarios |
 |---|---|---|
 | 02-01 (ontología) | Bunge | Dupré, Ladyman-Ross, Dennett, Sellars, Wittgenstein, Simondon |
@@ -188,6 +190,8 @@ Continuo durante el desarrollo. Cierre completo al final.
 
 ## 9. Cronograma agregado
 
+**Tabla 6.3.2.**
+
 | Mes | Hito |
 |---|---|
 | 1-12 | Elevación de caso biológico (paso 1); inicio integración bibliográfica (paso 2); inicio aparato normativo (paso 3) |
@@ -245,4 +249,3 @@ El objetivo no es solo tener un texto largo defendible sino un manuscrito que re
 - posible escalado a programa de investigación más amplio.
 
 Si el manuscrito final cumple las seis cualidades, deja de ser tesis y empieza a ser programa de investigación.
-

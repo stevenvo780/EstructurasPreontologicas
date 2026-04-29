@@ -134,6 +134,8 @@ El caso ancla es asimétricamente más sólido que cualquier otro dominio del ma
 
 Para no debilitarse, conviene no prometer más de lo que el proyecto realmente puede sostener.
 
+**Tabla 4.2.1.**
+
 | Promesa rechazada | Razón |
 |---|---|
 | Ontología total cerrada | El proyecto no es totalizador; es articulador |
@@ -144,6 +146,8 @@ Para no debilitarse, conviene no prometer más de lo que el proyecto realmente p
 | Predicción de fenómenos sociales individuales | Las leyes de control institucionales son objeto de investigación, no resultado disponible |
 
 ## 9. Lo que la tesis sí puede prometer con fuerza
+
+**Tabla 4.2.2.**
 
 | Promesa sostenida | Estado |
 |---|---|
@@ -194,5 +198,4 @@ Ese tipo de modestia fuerte suele convencer más que una ambición totalizadora 
 ## 13. Cierre
 
 La tesis sobrevive a las objeciones discriminantes (capítulo 04-01 y 01-diagnostico/02) si logra mantener austeridad ontológica, riqueza estructural, criterios explícitos, casos comparativos fuertes y vigilancia del propio léxico. Los seis límites de este capítulo no debilitan la tesis: la sitúan en su régimen de validez. Una tesis sin límites nombrados es una tesis que aún no se ha sometido a sí misma a su propio filtro.
-
 

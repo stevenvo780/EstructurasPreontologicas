@@ -19,6 +19,8 @@ Mapa completo del paisaje de aplicaciones del marco como **ontología general mu
 
 **Distribución por Nivel:**
 
+**Tabla A.5.1.**
+
 | Nivel | Categoría | N | Casos |
 |:----:|-----------|:-:|-------|
 | 4 | Strong (`overall_pass=True`) | 4 | Energía, Deforestación, Kessler, Riesgo Biológico |
@@ -33,6 +35,8 @@ Mapa completo del paisaje de aplicaciones del marco como **ontología general mu
 **Falsación correcta:** 3/3 (100%).
 
 ### Corpus inter-escala (10 casos)
+
+**Tabla A.5.2.**
 
 | Nivel | Categoría | N | Casos (escala instanciada) |
 |:----:|-----------|:-:|----------------------------|
@@ -53,6 +57,8 @@ Los 40 casos del corpus agregado **no son aplicaciones independientes**: cada un
 
 ### Bloque I — Strong con gate completo (Nivel 4)
 
+**Tabla A.5.3.**
+
 | # | Caso | EDI | p | Sonda | LoE | Datos |
 |---|------|----:|--:|-------|----:|-------|
 | 04 | Energía eléctrica | 0.6503 | 0.0000 | Lotka-Volterra | 4 | OPSD |
@@ -64,11 +70,15 @@ Reproducibilidad: el caso 16 ha sido re-ejecutado con datos World Bank descargad
 
 ### Bloque II — Strong sin gate completo (Nivel 4*)
 
+**Tabla A.5.4.**
+
 | # | Caso | EDI | p | Sonda | Por qué no gate |
 |---|------|----:|--:|-------|-----------------|
 | 24 | Microplásticos | 0.7819 | 0.0000 | Jambeck Accumulation | Bootstrap CI inestable |
 
 ### Bloque III — Weak (Nivel 3)
+
+**Tabla A.5.5.**
 
 | # | Caso | EDI | p | Sonda |
 |---|------|----:|--:|-------|
@@ -83,12 +93,16 @@ Reproducibilidad: el caso 16 ha sido re-ejecutado con datos World Bank descargad
 
 ### Bloque IV — Suggestive (Nivel 2)
 
+**Tabla A.5.6.**
+
 | # | Caso | EDI | p |
 |---|------|----:|--:|
 | 09 | Finanzas globales | 0.0813 | 0.0000 |
 | 21 | Salinización (irrigación) | 0.0184 | 0.0028 |
 
 ### Bloque V — Trend (Nivel 1)
+
+**Tabla A.5.7.**
 
 | # | Caso | EDI | p | Comentario |
 |---|------|----:|--:|------------|
@@ -98,6 +112,8 @@ Reproducibilidad: el caso 16 ha sido re-ejecutado con datos World Bank descargad
 | 01 | Clima regional | 0.0111 | 0.9990 | Sonda Budyko-Sellers insuficiente |
 
 ### Bloque VI — Null (Nivel 0)
+
+**Tabla A.5.8.**
 
 | # | Caso | EDI | Comentario |
 |---|------|----:|-----------|
@@ -111,6 +127,8 @@ Reproducibilidad: el caso 16 ha sido re-ejecutado con datos World Bank descargad
 | 29 | IoT | -0.8760 | Reflexividad técnica |
 
 ### Bloque VII — Controles de falsación (correctamente rechazados)
+
+**Tabla A.5.9.**
 
 | # | Caso | EDI | p | Diseño |
 |---|------|----:|--:|--------|

@@ -90,6 +90,8 @@ Candidatos: SRE journals con post-mortems publicados, datasets de Google Borg, t
 
 ## 5. Qué evita el marco en este dominio
 
+**Tabla 5.3.1.**
+
 | Tentación | Razón |
 |---|---|
 | Reificado técnico | No tratar `la plataforma`, `la app` o `el backend` como cosas simples |
@@ -118,4 +120,3 @@ Este caso es valioso pedagógicamente: muestra con claridad mínima de filosofí
 ## 8. Limitación honesta
 
 Este capítulo articula la conjetura con claridad, pero falta el modelo dinámico cuantitativo con datos públicos que eleve a demostrativo. La elevación es plausible y se prioriza en hoja de ruta.
-

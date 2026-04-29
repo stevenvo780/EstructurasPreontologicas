@@ -138,6 +138,8 @@ Se pierde la posibilidad de aplicar la tesis a cualquier dominio sin medidas, si
 
 La taxonomía operativa del corpus EDI distingue seis niveles (0–5):
 
+**Tabla 3.4.1.**
+
 | Nivel | Etiqueta | Definición operativa | Ejemplos del corpus |
 |------:|----------|----------------------|---------------------|
 | 0 | Null | EDI ≤ 0 o sin estructura macro detectable | Conciencia, Acidificación, Erosión |
@@ -178,6 +180,8 @@ Esto no produce pre-registro retroactivo (lógicamente imposible); produce pre-r
 ### Sondas teóricamente independientes
 
 Ningún caso del corpus actual cumple los tres criterios de κ-ontológica fuerte simultáneamente. El primer criterio —convergencia bajo sondas con motivación teórica distinta— es el único alcanzable sin replicación inter-grupo externa. El módulo `common/full_secondary_probes.py` implementa una sonda secundaria por cada caso del corpus, con motivación radicalmente distinta a la primaria.
+
+**Tabla 3.4.2.**
 
 | Caso | Sonda primaria | Sonda secundaria |
 |------|----------------|------------------|

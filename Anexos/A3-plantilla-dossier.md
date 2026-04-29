@@ -26,6 +26,8 @@ Plantilla estandarizada del dossier de anclaje obligatorio para cualquier catego
 
 ## 2. Variables X
 
+**Tabla A.3.1.**
+
 | Variable | Tipo | Régimen R | Operacionalización |
 |----------|------|-----------|--------------------|
 | ... | observable / inferida | mensual / anual / etc | método de medición |
@@ -67,6 +69,8 @@ de orden superior, listar hiperaristas y justificar no-reducibilidad.]
 
 ## 8. Pruebas de validación
 
+**Tabla A.3.2.**
+
 | Prueba | Resultado | Tolerancia |
 |--------|-----------|-----------:|
 | Reproducción | varianza explicada = X% | τ específica |
@@ -75,6 +79,8 @@ de orden superior, listar hiperaristas y justificar no-reducibilidad.]
 | Intervención | predicciones cumplidas X/N | — |
 
 **Protocolo C1-C5:**
+
+**Tabla A.3.3.**
 
 | Filtro | Estado | Detalle |
 |--------|:------:|---------|
@@ -115,6 +121,8 @@ Identificar variables que se reabrirían y régimen de reapertura.]
 
 ## 12. Traducción B↔L3
 
+**Tabla A.3.4.**
+
 | Parámetro de L3 | Variable de B | Unidad | Operacionalización |
 |-----------------|---------------|--------|---------------------|
 | ode_alpha | tasa de [...] | unidades físicas | medición directa |
@@ -132,6 +140,8 @@ categoría está flotando y debe reformularse.]
 - **Otras limitaciones:** [...]
 
 ## 14. Comparación rival
+
+**Tabla A.3.5.**
 
 | Criterio | Tesis (irrealismo operativo) | Rival 1 | Rival 2 | Rival 3 |
 |---|---|---|---|---|

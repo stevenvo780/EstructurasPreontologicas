@@ -10,6 +10,8 @@ Listado consolidado de **todas las limitaciones que la tesis declara explícitam
 
 ## 1. Limitaciones metodológicas declaradas
 
+**Tabla A.0.1.**
+
 | # | Limitación | Origen | Resolución actual | Entregable |
 |---|-----------|--------|-------------------|------------|
 | L1 | p-value mal calibrado (tasa empírica de tipo I ≈ 24 %, no 5 %) | Hostile testing N3 | Cerrada metodológicamente: el módulo `common/calibration.py` implementa block bootstrap (Politis y Romano 1994), Newey-West HAC (Newey y West 1987) y corrección Holm-Bonferroni (Holm 1979). Aplicada al corpus inter-dominio, los 12 casos significativos sin corrección colapsan a 4 tras Holm, coincidiendo con los 4 casos `overall_pass=True`. La inferencia formal sigue requiriendo invocación desde `edi_engine.py` con flag `--calibrated` en la ejecución final. | Re-ejecución del corpus con flag activo (≈ 3 semanas) |
@@ -23,6 +25,8 @@ Listado consolidado de **todas las limitaciones que la tesis declara explícitam
 
 ## 2. Limitaciones empíricas declaradas
 
+**Tabla A.0.2.**
+
 | # | Limitación | Origen | Plazo | Entregable |
 |---|-----------|--------|-------|------------|
 | L7 | **Datos del corpus inter-escala son sintéticos** derivados de parámetros publicados | V4 post-multiescala | 6-12 meses | Elevación a datos reales abiertos: IBM Quantum, BRENDA, PhysioNet, OGLE, Gaia DR3 |
@@ -33,6 +37,8 @@ Listado consolidado de **todas las limitaciones que la tesis declara explícitam
 ---
 
 ## 3. Limitaciones filosóficas declaradas
+
+**Tabla A.0.3.**
 
 | # | Limitación | Origen | Plazo | Entregable |
 |---|-----------|--------|-------|------------|
@@ -46,6 +52,8 @@ Listado consolidado de **todas las limitaciones que la tesis declara explícitam
 ---
 
 ## 4. Limitaciones procedimentales (bloqueadores externos)
+
+**Tabla A.0.4.**
 
 | # | Limitación | Origen | Plazo | Entregable |
 |---|-----------|--------|-------|------------|
@@ -81,6 +89,8 @@ Esto está consolidado de cap 06-01 §7 y cap 04-02 §8.
 
 Los siguientes módulos resuelven o reducen seis limitaciones sin re-ejecutar el corpus:
 
+**Tabla A.0.5.**
+
 | Módulo | Limitación afectada | Resolución | Ruta |
 |--------|---------------------|------------|------|
 | Calibración estadística | L1 (p-value mal calibrado) | Cerrada metodológicamente | `09-simulaciones-edi/common/calibration.py` |
@@ -95,6 +105,8 @@ La corrección FWER Holm-Bonferroni sobre los 30 casos del corpus inter-dominio 
 ### Reclasificación de casos bajo régimen calibrado
 
 La aplicación caso por caso de los módulos a los casos no invariantes produce los siguientes veredictos:
+
+**Tabla A.0.6.**
 
 | Veredicto | Casos | Significado |
 |-----------|-------|-------------|
@@ -114,6 +126,8 @@ Los 7 casos strong del corpus inter-escala (31 Decoherencia cuántica, 32 Espín
 
 Bajo `common/power_analysis.py` se distingue entre `null_real` (potencia ≥ 0.80 para detectar EDI = 0.10) y `null por potencia insuficiente`. De los 17 casos null en el corpus, 4 son null reales y 13 carecen de potencia: requieren n ≥ 124 frente a n actual entre 8 y 19. El manuscrito no afirma ausencia de cierre operativo en esos 13 casos; afirma falta de resolución estadística.
 
+**Tabla A.0.7.**
+
 | Categoría | n | Implicación |
 |-----------|--:|-------------|
 | No null (EDI > 0.10) | 23 | Casos con señal detectable |
@@ -127,6 +141,8 @@ El módulo de calibración estadística controla falsos positivos por autocorrel
 ## 6. Cuadro síntesis para defensa oral
 
 Si en defensa una limitación es señalada por el tribunal, la respuesta canónica del manuscrito es:
+
+**Tabla A.0.8.**
 
 | Tipo de limitación | Respuesta canónica |
 |--------------------|---------------------|

@@ -112,4 +112,3 @@ Esto significa que:
 **Compromiso público:** los autores se comprometen a someter el manuscrito a al menos tres revisores externos hostiles antes del depósito formal. Las críticas externas se integran al manuscrito con fecha y respuesta explícita. Si los revisores externos identifican fallos estructurales, el manuscrito se reformula antes de sustentación, no se defiende sin modificación.
 
 Esta cláusula reconoce que la honestidad metodológica del manuscrito requiere validación externa, no solo hostile testing interno.
-

@@ -1,0 +1,14 @@
+graph LR
+    D[Datos] --> ABM[Simulación ABM N=200, 50x50]
+    D --> ODE_p[Sonda ODE primaria]
+    ABM -->|coupled| RC[RMSE coupled]
+    ABM -->|sin ODE| RnO[RMSE no_ode]
+    ODE_p --> ABM
+    RC --> EDI[EDI = 1 - RC/RnO]
+    RnO --> EDI
+    EDI --> Pe[Permutación 999]
+    EDI --> Bo[Bootstrap 500]
+    Pe --> Pv[p-value]
+    Bo --> CI[CI 95%]
+    EDI --> C[Protocolo C1-C5]
+    C --> OP[overall_pass]

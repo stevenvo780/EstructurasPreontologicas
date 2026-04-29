@@ -110,6 +110,8 @@ nivel = clasificar(EDI=validacion.edi,
 
 ## Operador μ — detalle
 
+**Tabla A.2.1.**
+
 | Campo | Especificación |
 |-------|----------------|
 | Firma | `μ : R → X` |
@@ -122,6 +124,8 @@ nivel = clasificar(EDI=validacion.edi,
 ---
 
 ## Operador G — detalle
+
+**Tabla A.2.2.**
 
 | Campo | Especificación |
 |-------|----------------|
@@ -138,6 +142,8 @@ nivel = clasificar(EDI=validacion.edi,
 
 ## Operador H — detalle
 
+**Tabla A.2.3.**
+
 | Campo | Especificación |
 |-------|----------------|
 | Firma | `H = (V, 𝓔)` |
@@ -149,6 +155,8 @@ nivel = clasificar(EDI=validacion.edi,
 ---
 
 ## Operador κ — detalle (operacionalizado vía EDI)
+
+**Tabla A.2.4.**
 
 | Campo | Especificación |
 |-------|----------------|
@@ -173,6 +181,8 @@ nivel = clasificar(EDI=validacion.edi,
 
 ## Operador ε — detalle
 
+**Tabla A.2.5.**
+
 | Campo | Especificación |
 |-------|----------------|
 | Firma | `ε : n → G_n` |
@@ -184,6 +194,8 @@ nivel = clasificar(EDI=validacion.edi,
 ---
 
 ## Pregunta Q — detalle
+
+**Tabla A.2.6.**
 
 | Campo | Especificación |
 |-------|----------------|
@@ -197,6 +209,8 @@ nivel = clasificar(EDI=validacion.edi,
 ---
 
 ## Validación canónica vs perfiles agresivos
+
+**Tabla A.2.7.**
 
 | Parámetro | Canónico | Agresivo (HYPER_*) |
 |-----------|---------:|-------------------:|

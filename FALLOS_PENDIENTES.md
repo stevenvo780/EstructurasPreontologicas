@@ -4,6 +4,8 @@ Inventario brutal de los 34 fallos detectados en auditoría profunda con tres le
 
 Los fallos de auto-indulgencia narrativa de iteraciones anteriores ya fueron corregidos y archivados en `Bitacora/2026-04-28-iteraciones-IA/REPORTE_AUTOINDULGENCIAS.md`.
 
+> **Estado 2026-04-28:** los fallos atendibles por la asistencia computacional (F7, F8, F11, F12, F14, F15, F18–F22, F27–F31, F32, F33, F34) están auditados en `REPORTE_CIERRE_TECNICO.md`. Permanecen abiertos: F1–F6, F9, F10 (filosóficos de fondo); F13, F16, F17 (científicos que requieren decisión técnica/datos reales); F23–F26 (institucionales).
+
 ---
 
 ## A. Fallos filosóficos de fondo (10)

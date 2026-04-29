@@ -175,6 +175,8 @@ La regla del capítulo 03-02 aplica: comprimir cuando el detalle interno no camb
 
 ## 5. Qué evita el marco en este dominio
 
+**Tabla 5.1.1.**
+
 | Tentación | Razón del rechazo |
 |---|---|
 | Dualismo cartesiano | No requiere mente separada del cuerpo o el entorno |
@@ -263,4 +265,3 @@ Este capítulo conjetura. No demuestra. La elevación a modo demostrativo requie
 ## 11. Cierre
 
 > La mente no es cosa adicional al organismo, pero tampoco se deja agotar por una lista plana de eventos neuronales. Es atractor de integración corporal-cognitivo-afectivo-social-histórico cuya legitimidad como compresión depende de qué integra, qué conserva, para qué pregunta sirve, y qué predicción discriminante propone respecto a rivales identificables.
-

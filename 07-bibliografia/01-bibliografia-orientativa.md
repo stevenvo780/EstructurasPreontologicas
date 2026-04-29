@@ -5,6 +5,8 @@
 
 Cada capítulo del manuscrito se ancla en al menos un interlocutor principal y un conjunto de secundarios. Esta asignación no es decorativa: estructura el diálogo textual obligatorio.
 
+**Tabla 7.1.**
+
 | Capítulo | Interlocutor principal | Secundarios |
 |----------|------------------------|-------------|
 | 02-01 (ontología) | Bunge (1979) | Dupré, Ladyman y Ross, Dennett, Sellars, Wittgenstein, Simondon, Bueno |
@@ -172,6 +174,8 @@ Cada capítulo del manuscrito se ancla en al menos un interlocutor principal y u
 90. Pfeifer, R. y Scheier, C. (1999). *Understanding Intelligence*. Cambridge: MIT Press.
 
 ## Fuentes de Datos (Repositorios Principales)
+
+**Tabla 7.2.**
 
 | Fuente | URL/API | Casos del corpus |
 |--------|---------|-----|

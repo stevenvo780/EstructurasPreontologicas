@@ -1,0 +1,43 @@
+scope,case_id,case_name,domain,edi,ci_lo,ci_hi,p_value,overall_pass,log_length_m,log_time_s
+macro,01_caso_clima,Clima Regional (CONUS),físico,0.008859153880156,0.008382078367959593,0.009474347247412534,0.0,False,,
+macro,02_caso_conciencia,Conciencia Colectiva,social,-0.007002428859407496,-0.12488257293517814,0.30514870278902684,0.8668668668668669,False,,
+macro,03_caso_contaminacion,Contaminación PM2.5,ecológico,0.22746704911641602,0.1992969303796137,0.25864877855984825,0.0,False,,
+macro,04_caso_energia,Energía (Consumo Per Cápita),social-técnico,0.3298424725961331,0.2879732772532249,0.3796069087814028,0.0,True,,
+macro,05_caso_epidemiologia,Epidemiología (COVID-19 Global),biológico,0.3281625269506755,0.3251121117812039,0.3322036241847245,0.0,True,,
+macro,06_caso_falsacion_exogeneidad,Falsación: Exogeneidad,control,0.05505918915717987,0.03438815097659429,0.07438687161843083,1.0,False,,
+macro,07_caso_falsacion_no_estacionariedad,Falsación: No-Estacionariedad,control,-0.8819209901612093,-0.9131090711999945,-0.8458661543628928,1.0,False,,
+macro,08_caso_falsacion_observabilidad,Falsación: Observabilidad Escasa,control,-1.0,-2.5032289642808547,-1.7970760543243096,1.0,False,,
+macro,09_caso_finanzas,Finanzas (SPY),social,-0.4050857942985503,-0.4379267034303756,-0.378134069920624,1.0,False,,
+macro,10_caso_justicia,Justicia Algorítmica,social,0.04522806455521788,0.040242041856138173,0.055261070041110374,0.8378378378378378,False,,
+macro,11_caso_movilidad,Movilidad Urbana (Vehículos),social-técnico,0.397450706396219,-0.15348949580415794,0.7788178027628894,0.5285285285285285,False,,
+macro,12_caso_paradigmas,Paradigmas Científicos (R&D),social,-0.14406616286063934,-0.20717475357690768,-0.10743419602222466,0.7867867867867868,False,,
+macro,13_caso_politicas_estrategicas,Políticas Estratégicas (Bass Diffusion + Inertia),social,0.022909066717278635,-0.901752172266691,0.5062887001730015,1.0,False,,
+macro,14_caso_postverdad,Postverdad (SIS Infodemic),social,-0.013616617344968057,-0.02555279081531043,0.012254362887144921,0.9940994099409941,False,,
+macro,15_caso_wikipedia,Wikipedia (Conocimiento Colectivo),social-técnico,0.19665978133219383,0.19251991059417908,0.20144444954737328,0.00010001000100010001,False,,
+macro,16_caso_deforestacion,Deforestación Global (von Thünen Frontier),ecológico,0.0404533258144987,0.017204053501066244,0.07217087731742705,0.7167167167167167,False,,
+macro,17_caso_oceanos,Océanos (OHC proxy),físico,0.14948392043771355,0.13065743614747236,0.19275618615930679,0.0,False,,
+macro,18_caso_urbanizacion,Urbanización Global,social,0.7101566825993637,0.6480200224869432,0.7774600160652747,0.0,True,,
+macro,19_caso_acidificacion_oceanica,Acidificación Oceánica,físico-químico,4.279257183288182e-05,-2.7602888279409556e-05,0.00013098313144008892,0.0014001400140014,False,,
+macro,20_caso_kessler,Kessler (Debris Orbital),físico-técnico,-0.194313229890213,-0.41613475207305983,0.10246848580829016,1.0,False,,
+macro,21_caso_salinizacion,Salinización de Suelos (Richards Bilineal),ecológico,-0.00220532263533265,-0.004034684484354418,0.00021859426290043288,0.9786978697869787,False,,
+macro,22_caso_fosforo,Ciclo del Fósforo (Carpenter Biogeoquímico),biogeoquímico,0.12528082180648323,0.10466791940475303,0.15750856380666634,0.023502350235023502,False,,
+macro,23_caso_erosion_dialectica,Erosión Dialéctica (Abrams-Strogatz Prestige),social,-0.018991180514981647,-0.024194144613366518,-0.016982879736767136,0.9746974697469747,False,,
+macro,24_caso_microplasticos,Microplásticos Oceánicos (Jambeck Accumulation-Decay),ecológico,0.04006491671306171,0.036388016101885634,0.04904638742573228,0.0016001600160016002,False,,
+macro,25_caso_acuiferos,Depleción de Acuíferos (Darcy-Theis),físico,-0.021585425972979803,-0.037332452803564405,-0.015610781996586538,0.2704270427042704,False,,
+macro,26_caso_starlink,Constelaciones Satelitales Starlink (Saturation Growth),físico-técnico,-0.45661635114398375,-0.4781004598066844,-0.4375944339889628,0.9990999099909991,False,,
+macro,27_caso_riesgo_biologico,Riesgo Biológico Global (Woolhouse Bilineal),biológico,-0.0027563559421182695,-0.004605672659434853,-0.00035562273678155714,0.9792979297929792,False,,
+macro,28_caso_fuga_cerebros,Fuga de Cerebros Global (Docquier-Rapoport),social,-0.005597454208930316,-0.08903591228053198,0.11449123918405062,0.21782178217821782,False,,
+macro,29_caso_iot,Ecosistema IoT Global (Bass-Metcalfe Bilineal),social-técnico,-0.010184665219509273,-0.012567047473961401,-0.007292186484486902,0.9920992099209921,False,,
+macro,30_caso_behavioral_dynamics,"Behavioral Dynamics — Locomoción dirigida (Fajen-Warren 2003, segundo orden)",individual,0.1327439880393106,-0.1643987365912751,0.36394930155810434,0.35435435435435436,False,,
+macro,41_caso_wolfram_extendido,41_caso_wolfram_extendido,computacional,-0.2750861300597808,-0.38718181971983273,-0.16701499423842847,0.5735,False,,
+macro,42_caso_histeresis_institucional,42_caso_histeresis_institucional,social,0.7774574369516496,0.6936985253107719,0.8468808453082517,0.001,True,,
+multiescala,31_decoherencia_cuantica,Decoherencia cuántica de qubit,cuántico,0.913177796635811,0.8854121570965395,0.9315969912337876,0.0,True,-9,-6
+multiescala,32_espin_orbita,Acoplamiento espín-órbita,atómico,0.8250879834716865,0.7970136996952593,0.8508715796440832,0.0,True,-10,-15
+multiescala,33_villin_headpiece,Plegamiento Villin Headpiece,molecular,0.0,-2.220446049250313e-16,0.0,0.8258258258258259,False,-9,-6
+multiescala,34_michaelis_menten,Cinética Michaelis-Menten,bioquímico,0.4580474281524688,0.33388872384377416,0.5687708613419207,0.0,True,-8,-3
+multiescala,35_ciclo_celular,Ciclo celular S. cerevisiae,celular,0.1306799800346662,0.10892306370480587,0.14785287170888892,0.0,False,-5,3
+multiescala,36_nfkb,Oscilaciones NF-κB,celular,0.5873739314271895,0.5842874947984737,0.5891523031787347,0.0,True,-5,2
+multiescala,37_hrv_cardiaco,Variabilidad cardíaca bajo estrés,organísmico,0.5771350469912229,0.5087538984308582,0.6443332649335536,0.0,True,0,0
+multiescala,38_locomocion_alternativa,Locomoción humana τ-dot (Lee 1976),organísmico,-1.3412282437650878,-1.5079292367208414,-1.2099164689342745,1.0,False,0,0
+multiescala,39_cefeidas_ogle,Cefeida pulsante,astrofísico,0.9162290686317869,0.9002927973394179,0.9306754589839815,0.0,True,11,5
+multiescala,40_cumulos_globulares,Cúmulo globular Plummer,astrofísico,0.4275530650113536,0.34758870756158783,0.5113769544459469,0.0,True,18,14

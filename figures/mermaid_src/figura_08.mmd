@@ -1,0 +1,8 @@
+graph LR
+    A[Caso strong] -->|sonda primaria| EP[EDI primario]
+    A -->|sonda alternativa<br>motivación distinta| EA[EDI alternativa]
+    EP -->|comparar| D[Δ delta]
+    EA --> D
+    D -->|abs Δ ≤ 0.10| CF[Convergencia fuerte]
+    D -->|0.10 menor abs Δ menor 0.20| CM[Convergencia moderada]
+    D -->|abs Δ mayor 0.20| Dv[Divergencia]

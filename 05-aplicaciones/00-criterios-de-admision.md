@@ -60,11 +60,15 @@ Una aplicación que solo renombra el fenómeno con vocabulario del marco sin pro
 
 ### 4.1. Caso ancla canónico (modo demostrativo)
 
+**Tabla 5.0.1.**
+
 | Capítulo | Tema | Estado |
 |---|---|---|
 | 05-05 | Behavioral dynamics: locomoción, obstáculos, frenado, raqueteo, equilibrio | DEMOSTRATIVO con dossier completo (Warren 2006, Fajen y Warren 2003, Yilmaz y Warren 1995, Foo et al. 2000, Sternad et al. 2001) |
 
 ### 4.2. Aplicaciones en modo programático
+
+**Tabla 5.0.2.**
 
 | Capítulo | Tema | Estado | Criterio de elevación |
 |---|---|---|---|
@@ -122,4 +126,3 @@ Bunge insiste en que la filosofía científica debe diferenciar análisis concep
 ## 9. Cierre
 
 Esta política de admisión es la respuesta operativa a la objeción de sobreextensión. La tesis admite que solo está demostrada en su caso ancla y que los demás dominios son conjeturas con plan. La diferencia entre conjetura articulada y conjetura imprecisa es la articulación de los criterios de elevación. Cada capítulo programático lleva esa articulación; cada capítulo demostrativo lleva su dossier completo.
-

@@ -1,0 +1,15 @@
+graph TD
+    DC[case_config.json] --> CR[case_runner.py]
+    Data[fetch_*.py por caso] --> CR
+    CR --> ABM_C[abm_core CPU]
+    CR --> ABM_G[abm_core_gpu CuPy/PyTorch]
+    CR --> OM[ode_models.py 22 sondas]
+    OM --> HV[hybrid_validator.py núcleo]
+    ABM_C --> HV
+    ABM_G --> HV
+    HV --> Pp[permutation_test_edi]
+    HV --> Bp[bootstrap_ci]
+    HV --> Cp[protocolo C1-C5 + 8 cond]
+    Pp --> Out[outputs/metrics.json]
+    Bp --> Out
+    Cp --> Out

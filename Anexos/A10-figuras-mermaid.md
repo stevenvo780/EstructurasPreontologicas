@@ -1,10 +1,20 @@
 # Anexo A.10. Figuras Mermaid
 
-Diagramas formales del manuscrito en formato Mermaid (renderable directamente por GitHub, GitLab, Pandoc + filtros, y la mayoría de visores Markdown). Reemplaza los diagramas ASCII art que aparecen en el cuerpo de los capítulos. La conversión a SVG/PNG independiente queda como trámite pre-depósito.
+Diagramas formales del manuscrito en formato Mermaid (renderable directamente por GitHub, GitLab, Pandoc + filtros, y la mayoría de visores Markdown). Reemplaza los diagramas ASCII art que aparecen en el cuerpo de los capítulos.
+
+**Versiones vectoriales pre-depósito (generadas por `@mermaid-js/mermaid-cli`):**
+
+- SVG: `figures/mermaid_svg/figura_<NN>.svg`
+- PNG (1600×1200): `figures/mermaid_png/figura_<NN>.png`
+- Fuente `.mmd` extraída automáticamente: `figures/mermaid_src/figura_<NN>.mmd`
+
+La numeración `<NN>` (01-09) corresponde al orden de aparición en este anexo (`Figura A.10.1` → `figura_01.svg`, etc.). La regeneración es reproducible con `scripts/render_mermaid.sh`.
 
 ---
 
 ## Fig. 2.2. Acoplamiento dinámico organismo-entorno-tarea-historia (capítulo 02-04)
+
+**Figura A.10.1.**
 
 ```mermaid
 graph LR
@@ -23,6 +33,8 @@ graph LR
 ---
 
 ## Fig. 3.1. Mapa de operadores formales (capítulo 03-01)
+
+**Figura A.10.2.**
 
 ```mermaid
 graph TD
@@ -47,6 +59,8 @@ graph TD
 
 ## Fig. 3.2. Dossier de anclaje (14 componentes — capítulo 03-02)
 
+**Figura A.10.3.**
+
 ```mermaid
 graph TD
     Q[1 Pregunta Q fechada] --> V[2 Variables operacionalizadas]
@@ -67,6 +81,8 @@ graph TD
 ---
 
 ## Fig. 3.3. Pipeline EDI (capítulo 03-04)
+
+**Figura A.10.4.**
 
 ```mermaid
 graph LR
@@ -89,6 +105,8 @@ graph LR
 
 ## Fig. 5.1. Asimetría L1↔B↔L3↔S como protocolo (capítulo 02-04)
 
+**Figura A.10.5.**
+
 ```mermaid
 graph LR
     L1[L1 psicológico ordinario<br>preguntas comunicables] -.indirecto.-> B[B conductual biológico<br>anclaje empírico]
@@ -106,6 +124,8 @@ graph LR
 
 ## Fig. 6.1. Paisaje de emergencia del corpus (capítulo 06-01)
 
+**Figura A.10.6.**
+
 ```mermaid
 pie title Distribución del corpus EDI 30 casos
     "Strong gate (4)" : 4
@@ -120,6 +140,8 @@ pie title Distribución del corpus EDI 30 casos
 ---
 
 ## Fig. 9.1. Arquitectura del motor ABM+ODE (capítulo 09-00)
+
+**Figura A.10.7.**
 
 ```mermaid
 graph TD
@@ -143,6 +165,8 @@ graph TD
 
 ## Fig. 9.31. Multi-sonda (capítulo 09-31)
 
+**Figura A.10.8.**
+
 ```mermaid
 graph LR
     A[Caso strong] -->|sonda primaria| EP[EDI primario]
@@ -157,6 +181,8 @@ graph LR
 ---
 
 ## Fig. C.1. Esquema de convergencia EDI-Wolfram (capítulo 04-debates §14)
+
+**Figura A.10.9.**
 
 ```mermaid
 graph TD

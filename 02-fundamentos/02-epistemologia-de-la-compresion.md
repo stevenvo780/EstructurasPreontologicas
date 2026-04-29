@@ -9,6 +9,8 @@
 
 Mucho error filosófico nace de confundir lo que existe con lo que modelamos o con cómo lo nombramos. La tesis distingue:
 
+**Tabla 2.2.1.**
+
 | Plano | Qué entra | Qué no entra |
 |---|---|---|
 | **Realidad** | Sustrato material dinámico; restricciones; patrones estabilizados | Cualquier modelo; cualquier nombre |
@@ -169,6 +171,8 @@ Esto conecta con la noción de baja dimensionalidad efectiva del capítulo 03-04
 
 ## 9. Errores epistémicos típicos
 
+**Tabla 2.2.2.**
+
 | Error | Forma | Antídoto |
 |---|---|---|
 | Compresión excesiva | Tratar como unidad algo cuya estructura interna sí cambia el fenómeno | Aplicar test de discriminación; reabrir con ε |
@@ -241,4 +245,3 @@ Esto es lo que opera el capítulo 03 (formalización) y lo que el capítulo 05-0
 > Conocer es comprimir estructura real bajo restricciones empíricas, sin mutilar la diferencia que importa para la pregunta planteada y bajo compromiso público de predicción discriminante.
 
 Si la ontología (capítulo 02-01) da el suelo, esta epistemología enseña a caminar sobre él sin confundir el mapa con el territorio ni el territorio con masa muda. Si el aparato formal (capítulo 03) da los instrumentos, esta epistemología fija para qué sirven.
-

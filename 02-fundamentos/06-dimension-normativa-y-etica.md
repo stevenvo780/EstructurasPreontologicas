@@ -57,6 +57,8 @@ La objeción humeana clásica: *"de hechos descriptivos no se siguen prescripcio
 
 ## 5. Diálogo con tradición ética
 
+**Tabla 2.6.1.**
+
 | Tradición | Postura de la tesis |
 |-----------|---------------------|
 | **Bunge ético sistemista** | Adoptado como interlocutor principal (1989, vol. VIII) |
@@ -94,4 +96,3 @@ La operacionalización empírica completa de la dimensión normativa **requiere 
 - **cap 05-04** (instituciones, mercado, Estado) recibe respaldo filosófico explícito: la dimensión normativa institucional opera como atractor en el sentido aquí articulado;
 - **cap 06-01** (conclusión) puede ahora afirmar que la tesis cubre la dimensión normativa sin reducirla;
 - **caso piloto COVID** se reinterpreta a la luz de esta postura: el null no es fracaso de la ética, es señal de que la sonda elegida era inadecuada para capturar la dinámica institucional con saltos discretos.
-

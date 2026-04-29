@@ -109,6 +109,8 @@ Una categoría que sistemáticamente obtiene 0 o 1 en los criterios clave para Q
 
 Aplicada al modelo de Fajen y Warren (2003) bajo Q = `predicción de heading en marcha hacia meta y evitando obstáculo`:
 
+**Tabla 3.2.1.**
+
 | Criterio | Valor | Justificación |
 |---|---|---|
 | Anclaje material | 2 | Cuerpo + entorno + tarea + información ecológica explícita |
@@ -242,4 +244,3 @@ Pearl (2009, *Causality*, cap. 3, p. 86) formaliza la diferencia entre `P(y|x)` 
 ## 12. Cierre
 
 Los diez criterios y el dossier de anclaje convierten la tesis en una propuesta auditable. Ningún producto del marco entra en el manuscrito sin pasar el filtro. La diferencia con un manifiesto es esta exactamente: un manifiesto promete; un programa de investigación se compromete. La tesis se compromete con el dossier.
-

@@ -87,6 +87,8 @@ La tesis requiere tres tipos de trabajo simultáneos:
 
 ### 4.2. Por qué esta combinación funciona
 
+**Tabla 3.3.1.**
+
 | Trabajo | Función |
 |---|---|
 | Análisis conceptual | Permite limpiar vocabulario, separar niveles, fijar definiciones operativas |
@@ -113,6 +115,8 @@ Un caso que no cumple las cuatro queda fuera del manuscrito o se incluye con mar
 **Behavioral dynamics** (Warren 2006): tareas de raqueteo, equilibrio, frenado, locomoción. Datos públicos, ecuaciones ajustadas, predicciones cumplidas, intervenciones documentadas. Dossier completo en capítulo 05-05.
 
 ### 6.2. Casos en modo programático
+
+**Tabla 3.3.2.**
 
 | Caso | Por qué es candidato | Criterio de elevación a demostrativo |
 |---|---|---|
@@ -213,6 +217,9 @@ Para investigador externo que aplique el protocolo a un caso nuevo:
 [Régimen donde el modelo no se aplica]
 
 ## 14. Comparación rival
+
+**Tabla 3.3.3.**
+
 | Criterio | Modelo propuesto | Rival 1 | Rival 2 |
 |---|---|---|---|
 [...]
@@ -249,4 +256,3 @@ Con esta auditoría, la tesis se presenta no solo como respuesta a una pregunta 
 ## 12. Cierre
 
 > La filosofía propuesta no pregunta solo qué existe; pregunta también cómo recortar lo existente sin convertir un nombre útil en sustancia imaginaria ni una complejidad real en niebla conceptual. La auditoría ontológica es la técnica que ejecuta esa exigencia con trazabilidad pública.
-
