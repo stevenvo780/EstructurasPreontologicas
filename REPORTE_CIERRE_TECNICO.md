@@ -26,6 +26,15 @@ Reporta los 17 fallos del inventario `FALLOS_PENDIENTES.md` que dependían exclu
 | Fallo | Estado | Falta |
 |------:|--------|-------|
 
+## Cerrados — cuarta pasada técnica (2026-04-28)
+
+| Fallo | Acción ejecutada |
+|------:|------------------|
+| F33 amp. EDI vs baselines | `scripts/edi_vs_baselines_figure.py` consume `09-simulaciones-edi/baselines/baselines_report.json` (F15) y produce `figures/corpus/edi_vs_baselines.{png,svg}` con dos paneles: barras agrupadas RMSE acoplado vs persistencia/RW/ARIMA/VAR (escala log) y EDI relativo vs cada baseline. |
+| F16 fetchers de datos reales | `09-simulaciones-edi/multiscale_fetchers.py` provee fetchers para 5 datasets multiescala (PhysioNet HRV, OGLE Cefeidas, BRENDA enzimas, Gaia DR3 cúmulos, IBM Quantum decoherencia). Cada fetcher tiene cache local en `data_cache/multiescala/<caso>/`, política sin fallback sintético (DataFetchError explícito), URL canónica documentada y comentarios sobre formato. OGLE LMC Cepheids verificado en línea (4713 entradas reales accesibles). Activación por caso requiere edición en el `data.py` del caso correspondiente. |
+| F17 calibración externa QES | `09-simulaciones-edi/common/qes_external_calibration.md` propone corpus externo de 10 estudios Q1 con datos abiertos (LIGO GW150914, Higgs ATLAS+CMS, EHT M87*, Hodgkin-Huxley, Pfizer NEJM 2020, Card-Krueger 1994, Reinhart-Rogoff 2010, Henrich WEIRD, Bem 2011 como falsabilidad invertida). Define procedimiento, métrica de concordancia categorial (≥70% para calibración) y umbral de aceptación. La ejecución requiere 3-5 sesiones de trabajo focal y queda asignada a Steven. |
+| F1, F2, F3, F5, F6, F9, F10 borradores filosóficos | `Anexos/A13-anticipacion-objeciones-filosoficas.md` provee borradores estructurados (objeción/concesión/distinción/argumento positivo/costo) para 7 objeciones filosóficas críticas. **Marcado explícitamente como borrador para Jacob**: si lo aprueba, las secciones se promueven a `04-debates/03-anticipacion-objeciones.md`; si discrepa, se archiva en Bitacora. La voz filosófica definitiva es de Jacob, no de la asistencia técnica. |
+
 ## Cerrados — tercera pasada técnica (2026-04-28)
 
 | Fallo | Acción ejecutada |

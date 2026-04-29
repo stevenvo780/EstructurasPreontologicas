@@ -4,7 +4,7 @@ Inventario brutal de los 34 fallos detectados en auditoría profunda con tres le
 
 Los fallos de auto-indulgencia narrativa de iteraciones anteriores ya fueron corregidos y archivados en `Bitacora/2026-04-28-iteraciones-IA/REPORTE_AUTOINDULGENCIAS.md`.
 
-> **Estado 2026-04-28:** los fallos atendibles por la asistencia computacional (F4, F7, F8, F11–F15, F18–F22, F27–F34) están auditados en `REPORTE_CIERRE_TECNICO.md`. F13 cerrado parcialmente: el método circular fue reemplazado por sondas sobre arrays primarios reales (sólo 7 casos disponibles; convergencia honesta 1/7 bajo |ΔEDI|≤0.10). Permanecen abiertos: F1–F3, F5, F6, F9, F10 (filosóficos de fondo); F16, F17 (datos reales + calibración externa de QES); F23–F26 (institucionales).
+> **Estado 2026-04-28:** los fallos atendibles por la asistencia computacional (F4, F7, F8, F11–F15, F16, F17, F18–F22, F27–F34) están auditados en `REPORTE_CIERRE_TECNICO.md`. F13 cerrado parcialmente (convergencia honesta 1/7 bajo |ΔEDI|≤0.10). F16 con fetchers reales implementados (5 datasets multiescala con cache, sin fallback sintético). F17 con propuesta de calibración externa lista para ejecución. F1, F2, F3, F5, F6, F9, F10 con borradores estructurados para validación de Jacob en `Anexos/A13`. Permanecen abiertos: F23–F26 (institucionales); ejecución de F17 (3-5 sesiones); validación filosófica de A13 por Jacob.
 
 ---
 

@@ -41,6 +41,7 @@ Organización de los 14 archivos de `Anexos/` en 7 grupos temáticos. Cada archi
 | Anexo | Función |
 |-------|---------|
 | `A0-limitaciones-declaradas.md` | Inventario público de limitaciones. La tesis declara qué no demuestra; lo declarado es trazable. |
+| `A13-anticipacion-objeciones-filosoficas.md` | **Borrador para Jacob** — anticipación estructurada de 7 objeciones filosóficas críticas (F1, F2, F3, F5, F6, F9, F10). Cada sección sigue el esquema objeción/concesión/distinción/argumento/costo. Requiere validación filosófica antes de incorporación al manuscrito. |
 
 ---
 
