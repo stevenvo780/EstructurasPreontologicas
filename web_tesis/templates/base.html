@@ -80,7 +80,13 @@
           if (targets[i].el.offsetTop <= y) active = targets[i];
         }
         tocLinks.forEach(function(l) { l.classList.remove('toc-active'); });
-        if (active) active.link.classList.add('toc-active');
+        if (active) {
+          active.link.classList.add('toc-active');
+          const detailsParent = active.link.closest('details');
+          if (detailsParent && !detailsParent.open) {
+            detailsParent.open = true;
+          }
+        }
       }
       window.addEventListener('scroll', update, { passive: true });
       update();

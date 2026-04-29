@@ -69,7 +69,7 @@ def render_markdown(text: str) -> str:
     return MD.render(text or "")
 
 
-def render_markdown_with_toc(text: str, max_level: int = 3) -> tuple[str, list[dict[str, Any]]]:
+def render_markdown_with_toc(text: str, max_level: int = 2) -> tuple[str, list[dict[str, Any]]]:
     html = render_markdown(text)
     toc: list[dict[str, Any]] = []
     used: Counter[str] = Counter()

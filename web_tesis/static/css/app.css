@@ -1197,7 +1197,8 @@ body {
 
   .toc-box {
     position: static;
-    max-height: none;
+    max-height: 50vh;
+    overflow-y: auto;
   }
 }
 
