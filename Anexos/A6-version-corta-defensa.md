@@ -8,7 +8,7 @@ Cuatro presentaciones de la tesis con duración creciente, todas defendibles ant
 
 ## Versión 1: 30 segundos (elevator pitch)
 
-> Defendemos un irrealismo operativo de estructuras pre-ontológicas como **ontología, epistemología y metodología generales aplicables a cualquier escala**: las entidades que nombramos en ciencia y filosofía son atractores empíricamente identificables de sistemas dinámicos acoplados, admisibles solo bajo dossier de anclaje y validación EDI por intervención ablativa. Lo justificamos operativamente en 40 casos agregados (30 inter-dominio + 10 inter-escala desde 10⁻¹⁰ m hasta 10²⁰ m) con 11 strong en 8 escalas distintas, 3 controles de falsación rechazados, hostile testing severo aplicado, suite ST de 13 teorías formales, y discriminación pública contra catorce rivales incluido Wolfram. La tesis no glorifica: rechaza honestamente cuando debe rechazar.
+> Defendemos un irrealismo operativo de estructuras pre-ontológicas como **ontología, epistemología y metodología generales aplicables a cualquier escala**: las entidades que nombramos en ciencia y filosofía son atractores empíricamente identificables de sistemas dinámicos acoplados, admisibles solo bajo dossier de anclaje y validación EDI por intervención ablativa. Lo justificamos operativamente en 40 casos agregados (30 inter-dominio + 10 inter-escala desde 10⁻¹⁰ m hasta 10²⁰ m) con 11 strong en 8 escalas distintas, 3 controles de falsación rechazados, hostile testing severo aplicado, suite ST de 24 teorías formales, y discriminación pública contra catorce rivales incluido Wolfram. La tesis no glorifica: rechaza honestamente cuando debe rechazar.
 
 ---
 
@@ -20,7 +20,7 @@ Defiendo una tesis ontológica-epistemológica-metodológica **triple general y 
 
 **La tesis:** todo fenómeno empíricamente explicable —desde lo subatómico hasta lo cosmológico— está anclado en un sustrato material dinámico, pero las entidades son **estructuras pre-ontológicas** (en sentido genético-epistemológico simondoniano) — regularidades operativas anteriores al recorte categorial. La posición filosófica es **irrealismo operativo**: realismo estructural moderado + pluralismo epistemológico + anti-reificación operativa, **como ontología, epistemología y metodología generales** invariantes a la escala.
 
-**Aparato (metodología general):** cinco operadores formales (μ, G, H, κ, ε) invariantes a la escala, asimetría L1↔B↔L3↔S como protocolo, dossier de anclaje de catorce componentes, métrica EDI calculada por intervención ablativa con permutación 999 y bootstrap 500, protocolo C1-C5, suite ST de 13 teorías formales.
+**Aparato (metodología general):** cinco operadores formales (μ, G, H, κ, ε) invariantes a la escala, asimetría L1↔B↔L3↔S como protocolo, dossier de anclaje de catorce componentes, métrica EDI calculada por intervención ablativa con permutación 999 y bootstrap 500, protocolo C1-C5, suite ST de 24 teorías formales.
 
 **Justificación operativa (40 casos):** **corpus inter-dominio:** 4 casos `overall_pass=True` strong (Energía 0.65, Deforestación 0.60, Kessler 0.35, Riesgo Biológico 0.33), 1 strong sin gate (Microplásticos 0.78), 8 weak (incluido caso 30 behavioral dynamics 0.26), 3 controles de falsación correctamente rechazados. **Corpus inter-escala:** 7 strong en 7 escalas distintas (atómica, cuántica, bioquímica, celular oscilatoria, individual, astrofísica, astrofísica masiva). Hostile testing severo: 0/1500 falsos positivos del gate completo bajo random walk masivo. Discriminación pública contra catorce rivales identificables, incluido Wolfram Physics Project (con piloto Rule 110 ejecutado mostrando convivencia de irreducibilidad micro y cierre macro detectable).
 
@@ -42,7 +42,7 @@ Todo fenómeno empíricamente explicable, **a cualquier escala física, biológi
 
 ### Aparato (metodología general)
 
-Cinco operadores formales (μ medición, G grafo, H hipergrafo, κ compresión, ε expansión) **invariantes a la escala** sobre pregunta paramétrica Q fechada con tolerancia. Asimetría L1↔B↔L3↔S: L1 fija qué pregunta importa, B (acoplamiento empírico genérico — qubit-baño, proteína-solvente, célula-citoplasma, organismo-entorno, cúmulo-galaxia, según la escala) ancla la respuesta, L3 reconstruye, S recoge categorías que sobreviven. Dossier de anclaje de catorce componentes obligatorio. Métrica EDI = 1 - RMSE_coupled / RMSE_no_ode con permutación 999 y bootstrap 500. Protocolo C1-C5 con 13 condiciones simultáneas para `overall_pass=True`. Validación lógica formal con suite ST de 13 teorías.
+Cinco operadores formales (μ medición, G grafo, H hipergrafo, κ compresión, ε expansión) **invariantes a la escala** sobre pregunta paramétrica Q fechada con tolerancia. Asimetría L1↔B↔L3↔S: L1 fija qué pregunta importa, B (acoplamiento empírico genérico — qubit-baño, proteína-solvente, célula-citoplasma, organismo-entorno, cúmulo-galaxia, según la escala) ancla la respuesta, L3 reconstruye, S recoge categorías que sobreviven. Dossier de anclaje de catorce componentes obligatorio. Métrica EDI = 1 - RMSE_coupled / RMSE_no_ode con permutación 999 y bootstrap 500. Protocolo C1-C5 con 13 condiciones simultáneas para `overall_pass=True`. Validación lógica formal con suite ST de 24 teorías.
 
 ### Justificación operativa (40 casos)
 
@@ -57,7 +57,7 @@ Cinco operadores formales (μ medición, G grafo, H hipergrafo, κ compresión, 
 
 - **7 strong en 7 escalas distintas:** decoherencia cuántica (10⁻⁹ m), espín-órbita atómica (10⁻¹⁰ m), Michaelis-Menten bioquímica (10⁻⁸ m), NF-κB celular oscilatoria (10⁻⁵ m), HRV cardíaco individual (1 m), Cefeida pulsante (10¹¹ m), cúmulo globular (10²⁰ m).
 
-**Hostile testing severo:** 0/1500 falsos positivos del gate completo bajo random walk masivo, 0/12 circularidad detectada en test cruzado de sondas inter-escala, suite ST con 2 hallazgos críticos detectados y corregidos.
+**Hostile testing severo:** 0/1500 falsos positivos del gate completo bajo random walk masivo, 0/12 circularidad detectada en test cruzado de sondas inter-escala, suite ST con 6 hallazgos críticos detectados y corregidos. Sondas secundarias re-aplicadas a arrays primarios reales (no proxys derivados): 1/7 converge bajo \|ΔEDI\| ≤ 0.10 — limitación honestamente reportada.
 
 **Los 40 casos son justificación operativa del marco tripartito; no son la tesis.** La tesis son los tres marcos generales; los casos muestran que sus afirmaciones son ejecutables, discriminantes y transferibles entre escalas.
 
@@ -81,7 +81,7 @@ Cinco escenarios falsables: (1) los 4 casos `overall_pass` se desmoronan, (2) lo
 
 ### 1. Punto de partida (1 minuto)
 
-La tesis fue desarrollada bajo dirección de Jacob Agudelo (Universidad de Antioquia) con colaboración técnica de Steven Vallejo Ortiz: marco *Irrealismo Operativo de Estructuras Pre-Ontológicas* como **ontología, epistemología y metodología generales aplicables a cualquier escala física, biológica o cosmológica** con métrica EDI, asimetría L1↔B↔L3↔S, dossier de anclaje de catorce componentes, corpus EDI agregado de **40 casos** (30 inter-dominio + 10 inter-escala desde 10⁻¹⁰ m hasta 10²⁰ m), suite ST de 13 teorías formales, y discriminación pública contra catorce rivales incluido Wolfram Physics Project.
+La tesis fue desarrollada bajo dirección de Jacob Agudelo (Universidad de Antioquia) con colaboración técnica de Steven Vallejo Ortiz: marco *Irrealismo Operativo de Estructuras Pre-Ontológicas* como **ontología, epistemología y metodología generales aplicables a cualquier escala física, biológica o cosmológica** con métrica EDI, asimetría L1↔B↔L3↔S, dossier de anclaje de catorce componentes, corpus EDI agregado de **40 casos** (30 inter-dominio + 10 inter-escala desde 10⁻¹⁰ m hasta 10²⁰ m), suite ST de 24 teorías formales, y discriminación pública contra catorce rivales incluido Wolfram Physics Project.
 
 ### 2. Problema filosófico (2 minutos)
 

@@ -14,7 +14,7 @@ Listado consolidado de **todas las limitaciones que la tesis declara explícitam
 
 | # | Limitación | Origen | Resolución actual | Entregable |
 |---|-----------|--------|-------------------|------------|
-| L1 | p-value mal calibrado (tasa empírica de tipo I ≈ 24 %, no 5 %) | Hostile testing N3 | Cerrada metodológicamente: el módulo `common/calibration.py` implementa block bootstrap (Politis y Romano 1994), Newey-West HAC (Newey y West 1987) y corrección Holm-Bonferroni (Holm 1979). Aplicada al corpus inter-dominio, los 12 casos significativos sin corrección colapsan a 4 tras Holm, coincidiendo con los 4 casos `overall_pass=True`. La inferencia formal sigue requiriendo invocación desde `edi_engine.py` con flag `--calibrated` en la ejecución final. | Re-ejecución del corpus con flag activo (≈ 3 semanas) |
+| L1 | p-value mal calibrado (tasa empírica de tipo I ≈ 24 %, no 5 %) | Hostile testing N3 | Cerrada metodológicamente: el módulo `common/calibration.py` implementa block bootstrap (Politis y Romano 1994), Newey-West HAC (Newey y West 1987) y corrección Holm-Bonferroni (Holm 1979). Aplicada al corpus inter-dominio, 14 casos del corpus inter-dominio + 8 del corpus multiescala = 22 casos sobreviven Holm-Bonferroni a α=0.05; los 4 casos macro `overall_pass=True` están entre los sobrevivientes. La inferencia formal sigue requiriendo invocación desde `edi_engine.py` con flag `--calibrated` en la ejecución final. | Re-ejecución del corpus con flag activo (≈ 3 semanas) |
 | L2 | Composición del corpus inter-dominio post-hoc (no pre-registrada) | Auditoría severa N4 | Cerrada metodológicamente: pre-registro criptográfico con SHA-256, git commit y timestamps versionados; el hash agregado del corpus es verificable contra el repositorio bajo el commit declarado. | Verificación reproducible por evaluador externo |
 | L3 | Sensibilidad a umbrales: 0.10/0.30 → 5 strong; 0.15/0.40 → 3; 0.05/0.20 → 9 | N4 | Mecanizada: el módulo `common/threshold_sensitivity.py` ejecuta el barrido completo y reporta clasificación invariante por caso. Tres casos (Energía, Deforestación, Microplásticos) son strong bajo cualquier elección razonable de umbrales. | Reporte automatizable por caso |
 | L4 | AUC-ROC = 0.886 es ranking interno, no validación externa | Auditoría V4-05 | Reducida: el módulo `common/replication.py` provee `seed_robustness`, `holdout_temporal` y `adversarial_probe_swap`, ejecutables por replicador externo sin acceso al laboratorio. | Validación inter-grupo con replicador independiente |
@@ -100,7 +100,7 @@ Los siguientes módulos resuelven o reducen seis limitaciones sin re-ejecutar el
 | Sensibilidad a umbrales | L3 (sensibilidad declarada) | Mecanizada | `09-simulaciones-edi/common/threshold_sensitivity.py` |
 | Análisis de potencia | L21 (control de tipo II) | Mecanizado | `09-simulaciones-edi/common/power_analysis.py` |
 
-La corrección FWER Holm-Bonferroni sobre los 30 casos del corpus inter-dominio reduce 12 casos significativos sin corrección a 4 tras Holm, que coinciden con los 4 casos `overall_pass=True`: la clasificación strong sobrevive a la corrección por comparaciones múltiples.
+La corrección FWER Holm-Bonferroni sobre los 30 casos del corpus inter-dominio preserva 14 casos inter-dominio (más 8 inter-escala) tras Holm; los 4 casos macro `overall_pass=True` están entre los sobrevivientes: la clasificación strong sobrevive a la corrección por comparaciones múltiples.
 
 ### Reclasificación de casos bajo régimen calibrado
 

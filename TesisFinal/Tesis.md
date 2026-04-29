@@ -191,7 +191,7 @@ El término **"pre-ontológico"** se entiende en sentido genético-epistemológi
 
 El aporte metodológico central es un instrumento computacional híbrido **ABM + ODE** que mide cierre operativo mediante EDI = 1 − RMSE_coupled / RMSE_no_ode, con prueba de permutación (999), bootstrap (500), y protocolo de validación robusta (C1-C5 más 8 criterios adicionales para *overall_pass*). El aparato se opera sobre cinco operadores formales (μ medición, G grafo, H hipergrafo, κ compresión, ε expansión) con pregunta paramétrica Q fechada y tolerancia explícita. **El aparato es invariante a la escala**: opera con la misma metodología desde la dinámica subatómica de espín-órbita (10⁻¹⁰ m, 10⁻¹⁵ s) hasta la dinámica gravitacional de cúmulos globulares (10²⁰ m, 10¹⁴ s).
 
-Se evaluaron **40 casos agregados en dos corpus complementarios**: (a) **corpus inter-dominio** con 30 casos en dominios físicos, biológicos, socioeconómicos, tecnoculturales y conductuales (4 strong con `overall_pass`, 1 strong sin gate, 8 weak, 2 suggestive, 4 trend, 8 null, 3 controles de falsación rechazados); (b) **corpus inter-escala** con 10 casos en 8 escalas distintas, **30 órdenes de magnitud** espaciales y temporales cubiertos, con **7 strong en 7 escalas distintas** (atómica, cuántica, bioquímica, celular oscilatoria, individual, astrofísica, astrofísica masiva), 1 weak y 2 nulls honestos. El aparato sobrevive hostile testing severo (0/1500 falsos positivos del gate completo bajo random walk masivo, 0/12 circularidad detectada en test cruzado de sondas inter-escala). Validación lógica formal con suite ST de 13 teorías, dos hallazgos críticos detectados y corregidos.
+Se evaluaron **40 casos agregados en dos corpus complementarios**: (a) **corpus inter-dominio** con 30 casos en dominios físicos, biológicos, socioeconómicos, tecnoculturales y conductuales (4 strong con `overall_pass`, 1 strong sin gate, 8 weak, 2 suggestive, 4 trend, 8 null, 3 controles de falsación rechazados); (b) **corpus inter-escala** con 10 casos en 8 escalas distintas, **30 órdenes de magnitud** espaciales y temporales cubiertos, con **7 strong en 7 escalas distintas** (atómica, cuántica, bioquímica, celular oscilatoria, individual, astrofísica, astrofísica masiva), 1 weak y 2 nulls honestos. El aparato sobrevive hostile testing severo (0/1500 falsos positivos del gate completo bajo random walk masivo, 0/12 circularidad detectada en test cruzado de sondas inter-escala). Validación lógica formal con suite ST de 24 teorías, seis hallazgos críticos detectados y corregidos.
 
 **Los 40 casos son justificación operativa del marco tripartito general (ontológico + epistemológico + metodológico), no son la tesis.** La tesis son los tres marcos generales; el corpus muestra que las afirmaciones generales son ejecutables, discriminantes y transferibles. La generalidad no depende del tamaño del corpus.
 
@@ -443,6 +443,8 @@ La filosofía latinoamericana de la ciencia tiene tradición sistemista fuerte (
 
 ## 6. Mapa de inserción de la tesis en el campo
 
+**Tabla 1.3.1.**
+
 | Subcampo | Posición consolidada | Posición de la tesis | Discriminación específica |
 |----------|----------------------|----------------------|---------------------------|
 | Mente postcognitivista | Acoplamiento organismo-entorno como tesis general | Cuantificación EDI del cierre operativo en behavioral dynamics | Caso 30 cuantitativo + caso 05-05 cualitativo |
@@ -472,7 +474,6 @@ Esta revisión es **orientada a la tesis**, no exhaustiva del campo en general. 
 - la literatura especializada en cada uno de los 30 dominios del corpus (cada caso del corpus tiene su propia mini-revisión en su README específico).
 
 La revisión exhaustiva de cada uno de los 30 dominios queda como trabajo futuro. Para fines de la tesis general, basta con la inserción en los cinco subcampos anteriores y la discriminación contra los 14 rivales del capítulo 04-01.
-
 
 
 <p align="right"><sub><a href="#tabla-de-contenidos">↑ volver al índice</a></sub></p>
@@ -508,6 +509,8 @@ La tesis adopta **naturalismo metafísico moderado** como **compromiso de partid
 3. el compromiso se valida operativamente **a posteriori**, por el éxito del marco articulado bajo este compromiso. Si el marco fallara estructuralmente, el compromiso de partida se replantearía.
 
 **Reconocimiento honesto:** lo anterior NO es demostración del naturalismo metafísico. Es compromiso filosófico que se asume con conciencia de que tiene alternativas legítimas en la tradición:
+
+**Tabla 2.1.1.**
 
 | Alternativa rechazada | Por qué la tesis no la asume |
 |---|---|
@@ -587,6 +590,8 @@ La distinción "macro vs micro" en el manuscrito original era **artefacto de la 
 
 #### Tabla síntesis: invariantes ontológicos instanciados a través de escalas
 
+**Tabla 2.1.2.**
+
 | Invariante | Caso 31 (cuántico) | Caso 33 (molecular) | Caso 36 (celular) | Caso 04 (energético macro) | Caso 27 (riesgo bio macro) | Caso 30 (conductual) | Caso 39 (estelar) | Caso 40 (cosmológico) |
 |------------|--------------------|---------------------|-------------------|----------------------------|----------------------------|---------------------|-------------------|----------------------|
 | **Sustrato material** | qubit superconductor + baño térmico | proteína Villin + solvente | núcleo celular + citoplasma | red eléctrica + agentes económicos | población humana + patógenos | cuerpo + entorno físico | gas estelar + radiación | gas estelar + campo galáctico |
@@ -633,6 +638,8 @@ Para que la afirmación κ-ontológica fuerte se sostenga sobre un caso particul
 3. **Intervención experimental confirmatoria:** una predicción discriminante sobre intervención manipulada (no observación pasiva) debe cumplirse. Sin esto, la estructura puede ser correlación elaborada.
 
 **Estado del corpus actual respecto a κ-ontológica:**
+
+**Tabla 2.1.3.**
 
 | Caso del corpus | C1 multi-sonda independiente | C2 replicación inter-grupo | C3 intervención confirmatoria |
 |-----------------|:---:|:---:|:---:|
@@ -698,6 +705,8 @@ Una regularidad que no satisface las cinco condiciones no es patrón en el senti
 ## 3. Tipos de realidad
 
 La realidad no es plana. La tesis distingue cinco modos de realidad sin multiplicar mundos:
+
+**Tabla 2.1.4.**
 
 | Modo | Definición | Ejemplo paradigmático |
 |---|---|---|
@@ -775,6 +784,8 @@ La causalidad circular (upward + downward) emerge naturalmente del acoplamiento 
 
 ## 10. Qué evita la ontología
 
+**Tabla 2.1.5.**
+
 | Tentación rechazada | Razón |
 |---|---|
 | Dualismo | Multiplica sustancias sin necesidad y sin compromiso operacional |
@@ -841,7 +852,6 @@ La formulación intuitiva de partida evolucionó hacia la versión canónica. Lo
 
 
 
-
 <p align="right"><sub><a href="#tabla-de-contenidos">↑ volver al índice</a></sub></p>
 
 ---
@@ -858,6 +868,8 @@ La formulación intuitiva de partida evolucionó hacia la versión canónica. Lo
 ## 1. Tres planos analíticamente disjuntos
 
 Mucho error filosófico nace de confundir lo que existe con lo que modelamos o con cómo lo nombramos. La tesis distingue:
+
+**Tabla 2.2.1.**
 
 | Plano | Qué entra | Qué no entra |
 |---|---|---|
@@ -1019,6 +1031,8 @@ Esto conecta con la noción de baja dimensionalidad efectiva del capítulo 03-04
 
 ## 9. Errores epistémicos típicos
 
+**Tabla 2.2.2.**
+
 | Error | Forma | Antídoto |
 |---|---|---|
 | Compresión excesiva | Tratar como unidad algo cuya estructura interna sí cambia el fenómeno | Aplicar test de discriminación; reabrir con ε |
@@ -1093,7 +1107,6 @@ Esto es lo que opera el capítulo 03 (formalización) y lo que el capítulo 05-0
 Si la ontología (capítulo 02-01) da el suelo, esta epistemología enseña a caminar sobre él sin confundir el mapa con el territorio ni el territorio con masa muda. Si el aparato formal (capítulo 03) da los instrumentos, esta epistemología fija para qué sirven.
 
 
-
 <p align="right"><sub><a href="#tabla-de-contenidos">↑ volver al índice</a></sub></p>
 
 ---
@@ -1146,6 +1159,8 @@ Ninguna de estas categorías se elimina automáticamente. Cada una pasa por audi
 Esto rechaza el objeto como sustancia simple autosuficiente y rechaza también el objeto como mera convención lingüística. La objetualidad tiene grados.
 
 ### 2.2. Cuatro tipos de objetualidad
+
+**Tabla 2.3.1.**
 
 | Tipo | Definición | Ejemplos |
 |---|---|---|
@@ -1227,6 +1242,8 @@ Una frontera es real si su trazado mejora la legibilidad del patrón sin destrui
 - ¿dónde termina la mente y empieza el entorno técnico-social que la soporta? Frontera funcional/pragmática: depende del fenómeno (cognición situada, herramienta, prótesis).
 
 ## 6. Qué se evita con esta cuadrícula
+
+**Tabla 2.3.2.**
 
 | Tentación rechazada | Razón |
 |---|---|
@@ -1310,7 +1327,6 @@ Esto se aplica también a los términos del propio marco: `dossier`, `compresió
 Categorías son compresiones semánticas auditables. Objetos son unidades operativas relativas con tipos discriminables. Propiedades son disposiciones relacionales materialmente ancladas. Identidad es continuidad organizada como cuenca persistente. Las cuatro reformuladas son el inventario suficiente para que la tesis trate cualquier dominio sin sustancialismo y sin nominalismo. Lo que con ellas se puede hacer es lo que el capítulo 03 (formalización) opera y lo que los capítulos 05 (aplicaciones) demuestran.
 
 
-
 <p align="right"><sub><a href="#tabla-de-contenidos">↑ volver al índice</a></sub></p>
 
 ---
@@ -1334,6 +1350,8 @@ S  — semántica revisada                   : recoge las categorías que sobrev
 ```
 
 **Definición multiescalar de B:** B es el nivel donde el agente operativo (sea cual sea su escala: qubit, molécula, célula, organismo, estrella, cúmulo) está acoplado dinámicamente con su entorno relevante bajo restricciones específicas de la escala. La estructura es **invariante a la escala**:
+
+**Tabla 2.4.1.**
 
 | Escala | "Organismo" en B | "Entorno" en B | "Tarea" en B | "Historia" en B |
 |--------|------------------|-----------------|---------------|-----------------|
@@ -1494,6 +1512,8 @@ S (la semántica revisada: las categorías que sobreviven a la auditoría) se ga
 
 ## 9. Qué descarta este nivel
 
+**Tabla 2.4.2.**
+
 | Tentación rechazada | Razón |
 |---|---|
 | Reduccionismo neurocéntrico | Sin tarea, entorno e historia, los circuitos no explican conducta |
@@ -1555,7 +1575,6 @@ Con la incorporación de B como nivel pleno, la tesis recupera el plano que la r
 - la ontología de patrones estabilizados gana su modelo positivo (atractores de sistemas acoplados);
 - la epistemología de la compresión gana su test (la dinámica de baja dimensión a nivel B);
 - la crítica al mentalismo deja de ser eliminativa para volverse constructiva: no se trata de borrar `mente`, `memoria` o `yo`, sino de reconstruir cuáles atractores conductuales-ecológicos comprime cada una y, a partir de ahí, decidir qué se conserva, qué se reformula y qué se descarta.
-
 
 
 <p align="right"><sub><a href="#tabla-de-contenidos">↑ volver al índice</a></sub></p>
@@ -1693,6 +1712,8 @@ Hoel, Albantakis y Tononi (2013, *PNAS* 110:19790-19795) introducen **causal eme
 
 La tesis ahora afirma con respaldo articulado:
 
+**Tabla 2.5.1.**
+
 | Dimensión | Postura | Operacionalización |
 |-----------|---------|---------------------|
 | **Tiempo** | B-series relacional, eternalismo moderado | Series temporales del corpus, dt explícito en sondas |
@@ -1702,7 +1723,6 @@ La tesis ahora afirma con respaldo articulado:
 | **Downward "causation"** | Reformulado como constitución | Mutual manipulability de Craver |
 
 Esto cubre los vacíos V5-02, V5-03, V5-09 con honestidad: la tesis no inventa metafísica del tiempo ni de la causalidad; **adopta posturas defendidas en la literatura** y las articula explícitamente para que el aparato no quede flotando metodológicamente.
-
 
 
 <p align="right"><sub><a href="#tabla-de-contenidos">↑ volver al índice</a></sub></p>
@@ -1770,6 +1790,8 @@ La objeción humeana clásica: *"de hechos descriptivos no se siguen prescripcio
 
 ## 5. Diálogo con tradición ética
 
+**Tabla 2.6.1.**
+
 | Tradición | Postura de la tesis |
 |-----------|---------------------|
 | **Bunge ético sistemista** | Adoptado como interlocutor principal (1989, vol. VIII) |
@@ -1807,7 +1829,6 @@ La operacionalización empírica completa de la dimensión normativa **requiere 
 - **cap 05-04** (instituciones, mercado, Estado) recibe respaldo filosófico explícito: la dimensión normativa institucional opera como atractor en el sentido aquí articulado;
 - **cap 06-01** (conclusión) puede ahora afirmar que la tesis cubre la dimensión normativa sin reducirla;
 - **caso piloto COVID** se reinterpreta a la luz de esta postura: el null no es fracaso de la ética, es señal de que la sonda elegida era inadecuada para capturar la dinámica institucional con saltos discretos.
-
 
 
 <p align="right"><sub><a href="#tabla-de-contenidos">↑ volver al índice</a></sub></p>
@@ -2039,6 +2060,8 @@ La cláusula es estricta: ninguna entidad del aparato formal se reifica. La disc
 
 En el caso ancla canónico (Warren 2006, capítulo 05-05) los operadores se instancian así:
 
+**Tabla 3.1.1.**
+
 | Operador | Instanciación |
 |---|---|
 | Q | `¿qué dirección de marcha adopta un humano caminando hacia meta y evitando obstáculo?` con τ = error en `r²` ≤ 0.02 |
@@ -2054,6 +2077,8 @@ Este ejemplo no es ilustrativo: es la prueba de que el aparato opera empíricame
 ## 11. Ejemplo programático: sistemas técnicos
 
 En sistemas distribuidos los operadores se instancian programáticamente (sin medición experimental controlada equivalente al caso ancla):
+
+**Tabla 3.1.2.**
 
 | Operador | Instanciación |
 |---|---|
@@ -2127,7 +2152,6 @@ La tesis adopta **estructuralismo matemático moderado** como postura de partida
 Si las **estructuras pre-ontológicas son atractores** y los atractores son **objetos matemáticos definidos sobre espacios de fase**, ¿qué tan real es la matemática en la ontología?
 
 **Respuesta:** la matemática es **real en sentido representacional moderado**: es la herramienta formal que captura las dependencias del sustrato material. Los atractores existen materialmente (como patrones del sustrato dinámico); las descripciones matemáticas de los atractores existen como **representaciones legítimas** de esos patrones cuando preservan dependencias decisivas. La realidad ontológica primaria está en el sustrato; la realidad de las estructuras matemáticas es **derivada y representacional**.
-
 
 
 <p align="right"><sub><a href="#tabla-de-contenidos">↑ volver al índice</a></sub></p>
@@ -2246,6 +2270,8 @@ Una categoría que sistemáticamente obtiene 0 o 1 en los criterios clave para Q
 ### Matriz para el caso ancla canónico
 
 Aplicada al modelo de Fajen y Warren (2003) bajo Q = `predicción de heading en marcha hacia meta y evitando obstáculo`:
+
+**Tabla 3.2.1.**
 
 | Criterio | Valor | Justificación |
 |---|---|---|
@@ -2382,7 +2408,6 @@ Pearl (2009, *Causality*, cap. 3, p. 86) formaliza la diferencia entre `P(y|x)` 
 Los diez criterios y el dossier de anclaje convierten la tesis en una propuesta auditable. Ningún producto del marco entra en el manuscrito sin pasar el filtro. La diferencia con un manifiesto es esta exactamente: un manifiesto promete; un programa de investigación se compromete. La tesis se compromete con el dossier.
 
 
-
 <p align="right"><sub><a href="#tabla-de-contenidos">↑ volver al índice</a></sub></p>
 
 ---
@@ -2478,6 +2503,8 @@ La tesis requiere tres tipos de trabajo simultáneos:
 
 ### 4.2. Por qué esta combinación funciona
 
+**Tabla 3.3.1.**
+
 | Trabajo | Función |
 |---|---|
 | Análisis conceptual | Permite limpiar vocabulario, separar niveles, fijar definiciones operativas |
@@ -2504,6 +2531,8 @@ Un caso que no cumple las cuatro queda fuera del manuscrito o se incluye con mar
 **Behavioral dynamics** (Warren 2006): tareas de raqueteo, equilibrio, frenado, locomoción. Datos públicos, ecuaciones ajustadas, predicciones cumplidas, intervenciones documentadas. Dossier completo en capítulo 05-05.
 
 ### 6.2. Casos en modo programático
+
+**Tabla 3.3.2.**
 
 | Caso | Por qué es candidato | Criterio de elevación a demostrativo |
 |---|---|---|
@@ -2604,6 +2633,9 @@ Para investigador externo que aplique el protocolo a un caso nuevo:
 [Régimen donde el modelo no se aplica]
 
 ## 14. Comparación rival
+
+**Tabla 3.3.3.**
+
 | Criterio | Modelo propuesto | Rival 1 | Rival 2 |
 |---|---|---|---|
 [...]
@@ -2640,7 +2672,6 @@ Con esta auditoría, la tesis se presenta no solo como respuesta a una pregunta 
 ## 12. Cierre
 
 > La filosofía propuesta no pregunta solo qué existe; pregunta también cómo recortar lo existente sin convertir un nombre útil en sustancia imaginaria ni una complejidad real en niebla conceptual. La auditoría ontológica es la técnica que ejecuta esa exigencia con trazabilidad pública.
-
 
 
 <p align="right"><sub><a href="#tabla-de-contenidos">↑ volver al índice</a></sub></p>
@@ -2789,6 +2820,8 @@ Se pierde la posibilidad de aplicar la tesis a cualquier dominio sin medidas, si
 
 La taxonomía operativa del corpus EDI distingue seis niveles (0–5):
 
+**Tabla 3.4.1.**
+
 | Nivel | Etiqueta | Definición operativa | Ejemplos del corpus |
 |------:|----------|----------------------|---------------------|
 | 0 | Null | EDI ≤ 0 o sin estructura macro detectable | Conciencia, Acidificación, Erosión |
@@ -2810,7 +2843,7 @@ La permutación simple con `n_perm=999` produce tasa empírica de tipo I cercana
 
 1. **Block bootstrap** (Politis y Romano 1994): permutación por bloques de tamaño √n que preserva la autocorrelación local. El p-value bajo block-bootstrap se reporta junto al p-value naive para cuantificar el shift de calibración.
 2. **Newey-West HAC** (Newey y West 1987): error estándar consistente bajo heterocedasticidad y autocorrelación, con kernel de Bartlett y truncamiento adaptativo `floor(4·(n/100)^{2/9})`.
-3. **FWER Holm-Bonferroni** (Holm 1979): corrección de family-wise error rate sobre los casos del corpus. Aplicada al corpus inter-dominio, los 12 casos significativos sin corrección colapsan a 4 tras Holm — coinciden con los 4 casos `overall_pass=True`. La clasificación strong sobrevive a la corrección por comparaciones múltiples.
+3. **FWER Holm-Bonferroni** (Holm 1979): corrección de family-wise error rate sobre los casos del corpus. Aplicada al corpus completo: **14 casos inter-dominio + 8 casos inter-escala = 22 casos sobreviven Holm-Bonferroni a α=0.05**; los 4 casos macro `overall_pass=True` están entre los sobrevivientes (caso por caso documentado en `metrics.json::fwer_holm`). La clasificación strong sobrevive a la corrección por comparaciones múltiples.
 
 ### Replicación robusta sin replicador externo
 
@@ -2829,6 +2862,8 @@ Esto no produce pre-registro retroactivo (lógicamente imposible); produce pre-r
 ### Sondas teóricamente independientes
 
 Ningún caso del corpus actual cumple los tres criterios de κ-ontológica fuerte simultáneamente. El primer criterio —convergencia bajo sondas con motivación teórica distinta— es el único alcanzable sin replicación inter-grupo externa. El módulo `common/full_secondary_probes.py` implementa una sonda secundaria por cada caso del corpus, con motivación radicalmente distinta a la primaria.
+
+**Tabla 3.4.2.**
 
 | Caso | Sonda primaria | Sonda secundaria |
 |------|----------------|------------------|
@@ -2892,6 +2927,8 @@ Capítulo metodológico que documenta la política de manejo de datos del corpus
 
 El corpus EDI consta de **30 casos**. Por su naturaleza de datos, se clasifican en cuatro categorías:
 
+**Tabla 3.5.1.**
+
 | Categoría | Cuenta | Casos | Implicaciones éticas |
 |-----------|-------:|-------|----------------------|
 | Datos públicos secundarios verificables | 22 | Energía, Deforestación, Kessler, Riesgo Bio, Microplásticos, Políticas, Postverdad, Urbanización, Fósforo, Wikipedia, Epidemiología, Movilidad, Finanzas, Salinización, Justicia, Starlink, Fuga cerebros, Clima, Contaminación, Océanos, Acidificación, Acuíferos | Mínimas: solo trazabilidad de fuente y cumplimiento de licencias |
@@ -2908,6 +2945,8 @@ El corpus EDI consta de **30 casos**. Por su naturaleza de datos, se clasifican 
 **Política:** trazabilidad completa de la fuente, cita de la institución que publica, cumplimiento de la licencia de cada dataset, reproducción mediante URLs documentadas o caché versionado.
 
 **Fuentes principales y sus licencias:**
+
+**Tabla 3.5.2.**
 
 | Fuente | Licencia | Casos asociados |
 |--------|----------|-----------------|
@@ -2939,6 +2978,8 @@ El corpus EDI consta de **30 casos**. Por su naturaleza de datos, se clasifican 
 Cuando el caso 30 se eleve con datos humanos:
 
 **Datasets candidatos:**
+
+**Tabla 3.5.3.**
 
 | Dataset | Institución | Naturaleza | Licencia / Acceso |
 |---------|-------------|------------|-------------------|
@@ -2999,6 +3040,8 @@ La declaración se ajusta a:
 
 Anthropic Claude (Opus 4.7) operó como **instrumento de implementación bajo dirección humana**, equivalente epistémico a un software estadístico avanzado. Específicamente:
 
+**Tabla 3.5.4.**
+
 | Tarea | Rol IA | Rol humano |
 |-------|--------|------------|
 | Tesis ontológica del irrealismo operativo | — | Jacob Agudelo (concepto original) |
@@ -3040,7 +3083,6 @@ La responsabilidad académica completa del manuscrito reside en los autores huma
 - recalcular las cifras afectadas;
 - revisar si el error afecta conclusiones del manuscrito;
 - en caso de impacto material, publicar versión corregida con nota de modificación.
-
 
 
 <p align="right"><sub><a href="#tabla-de-contenidos">↑ volver al índice</a></sub></p>
@@ -3117,11 +3159,15 @@ Una aplicación que solo renombra el fenómeno con vocabulario del marco sin pro
 
 ### 4.1. Caso ancla canónico (modo demostrativo)
 
+**Tabla 5.0.1.**
+
 | Capítulo | Tema | Estado |
 |---|---|---|
 | 05-05 | Behavioral dynamics: locomoción, obstáculos, frenado, raqueteo, equilibrio | DEMOSTRATIVO con dossier completo (Warren 2006, Fajen y Warren 2003, Yilmaz y Warren 1995, Foo et al. 2000, Sternad et al. 2001) |
 
 ### 4.2. Aplicaciones en modo programático
+
+**Tabla 5.0.2.**
 
 | Capítulo | Tema | Estado | Criterio de elevación |
 |---|---|---|---|
@@ -3179,7 +3225,6 @@ Bunge insiste en que la filosofía científica debe diferenciar análisis concep
 ## 9. Cierre
 
 Esta política de admisión es la respuesta operativa a la objeción de sobreextensión. La tesis admite que solo está demostrada en su caso ancla y que los demás dominios son conjeturas con plan. La diferencia entre conjetura articulada y conjetura imprecisa es la articulación de los criterios de elevación. Cada capítulo programático lleva esa articulación; cada capítulo demostrativo lleva su dossier completo.
-
 
 
 <p align="right"><sub><a href="#tabla-de-contenidos">↑ volver al índice</a></sub></p>
@@ -3396,6 +3441,8 @@ Este es el caso más contundente para la tesis porque ilustra simultáneamente:
 Y también ilustra los límites: el modelo trata obstáculos como puntos, no captura intención de interceptar agentes con su propia dinámica de evitación, no maneja toma de decisiones bajo memoria larga. La tesis exige que esos límites se nombren explícitamente — y aquí están nombrados.
 
 ## Tabla de pérdidas y ganancias respecto al programa original de Warren
+
+**Tabla 5.5.1.**
 
 | Aspecto | Conservado tal cual | Reformulado | Añadido por el marco |
 |---|---|---|---|
@@ -3789,6 +3836,8 @@ Astrofísica masiva ~10¹⁷-10²⁰m  ~10¹⁴ s         Caso 40 (Cúmulo globu
 
 7 casos en 7 escalas distintas detectan cierre operativo significativo:
 
+**Tabla 5.6.1.**
+
 | # | Caso | Escala | EDI | p | Sonda |
 |---|------|--------|----:|--:|-------|
 | 32 | Espín-órbita | Atómica | 0.83 | 0.000 | H_eff con coupling |
@@ -3801,11 +3850,15 @@ Astrofísica masiva ~10¹⁷-10²⁰m  ~10¹⁴ s         Caso 40 (Cúmulo globu
 
 ### 2.2. Casos weak (Nivel 3)
 
+**Tabla 5.6.2.**
+
 | # | Caso | Escala | EDI | Comentario |
 |---|------|--------|----:|------------|
 | 35 | Ciclo celular | Celular | 0.13 | Tyson-Novak; señal genuina pero menor |
 
 ### 2.3. Casos null honestos (Nivel 0) y failure modes
+
+**Tabla 5.6.3.**
 
 | # | Caso | Escala | EDI | Diagnóstico honesto |
 |---|------|--------|----:|--------------------|
@@ -3852,6 +3905,8 @@ Bajo este criterio, el corpus multiescala produce **7 strong en 7 escalas distin
 - **La discriminación strong/null es robusta** a la elección de escala: el aparato no produce strong indiscriminadamente.
 
 ## 5. Cómo conecta con el corpus macro original
+
+**Tabla 5.6.4.**
 
 | Característica | Corpus macro (30 casos) | Corpus multiescala (10 casos) |
 |----------------|------------------------|-------------------------------|
@@ -3904,6 +3959,8 @@ Una crítica posible: *"el aparato funciona en muchas escalas porque es estadís
 
 La primera iteración era **ontología regional macro-poblacional con extensión multiescalar opcional**. Después del corpus inter-escala y la auditoría V4 con narrativa unificada, la tesis es:
 
+**Tabla 5.6.5.**
+
 | Antes (primera iteración) | Después (V4 narrativa unificada) |
 |---------------------------|----------------------------------|
 | Ontología en escala macro | Ontología general multiescalar |
@@ -3915,7 +3972,6 @@ La primera iteración era **ontología regional macro-poblacional con extensión
 **Esto NO es auto-indulgencia retórica:** las correcciones aplicadas en V4 reconocen explícitamente que la generalidad sigue siendo **propuesta operativamente articulada con demostración parcial bajo régimen declarado**, no demostración cerrada. Lo que cambió es el alcance conceptual de la tesis (ahora es ontológica general), no la fuerza inferencial (sigue siendo parcial hasta convergencia inter-grupo + datos reales + revisión externa).
 
 Esta es la tesis que el manuscrito entrega tras hostile testing severo: **ontología general multiescalar operativamente articulada, no más auto-indulgente, no más restringida a la escala macro, validada operativamente en 8 escalas y 30 dominios, con 2 nulls honestos que muestran las fronteras del aparato y limitaciones explícitamente reconocidas como deuda externa**.
-
 
 
 <p align="right"><sub><a href="#tabla-de-contenidos">↑ volver al índice</a></sub></p>
@@ -4258,6 +4314,8 @@ La regla del capítulo 03-02 aplica: comprimir cuando el detalle interno no camb
 
 ## 5. Qué evita el marco en este dominio
 
+**Tabla 5.1.1.**
+
 | Tentación | Razón del rechazo |
 |---|---|
 | Dualismo cartesiano | No requiere mente separada del cuerpo o el entorno |
@@ -4346,7 +4404,6 @@ Este capítulo conjetura. No demuestra. La elevación a modo demostrativo requie
 ## 11. Cierre
 
 > La mente no es cosa adicional al organismo, pero tampoco se deja agotar por una lista plana de eventos neuronales. Es atractor de integración corporal-cognitivo-afectivo-social-histórico cuya legitimidad como compresión depende de qué integra, qué conserva, para qué pregunta sirve, y qué predicción discriminante propone respecto a rivales identificables.
-
 
 
 <p align="right"><sub><a href="#tabla-de-contenidos">↑ volver al índice</a></sub></p>
@@ -4534,6 +4591,8 @@ La tesis no privilegia ninguno como único verdadero. Cada nivel se justifica po
 
 ## 6. Qué evita el marco en este dominio
 
+**Tabla 5.2.1.**
+
 | Tentación | Razón del rechazo |
 |---|---|
 | Esencialismo biológico | Categorías como especie o función no son esencias inmóviles |
@@ -4577,7 +4636,6 @@ Y articula explícitamente que la elevación a modo demostrativo está al alcanc
 ## 9. Limitación honesta
 
 Este capítulo conjetura. La elevación a modo demostrativo requiere adoptar un caso específico publicado con datos cuantitativos y construir el dossier completo. El programa posterior se prioriza en capítulo 06-03.
-
 
 
 <p align="right"><sub><a href="#tabla-de-contenidos">↑ volver al índice</a></sub></p>
@@ -4678,6 +4736,8 @@ Candidatos: SRE journals con post-mortems publicados, datasets de Google Borg, t
 
 ## 5. Qué evita el marco en este dominio
 
+**Tabla 5.3.1.**
+
 | Tentación | Razón |
 |---|---|
 | Reificado técnico | No tratar `la plataforma`, `la app` o `el backend` como cosas simples |
@@ -4706,7 +4766,6 @@ Este caso es valioso pedagógicamente: muestra con claridad mínima de filosofí
 ## 8. Limitación honesta
 
 Este capítulo articula la conjetura con claridad, pero falta el modelo dinámico cuantitativo con datos públicos que eleve a demostrativo. La elevación es plausible y se prioriza en hoja de ruta.
-
 
 
 <p align="right"><sub><a href="#tabla-de-contenidos">↑ volver al índice</a></sub></p>
@@ -4848,6 +4907,8 @@ La validez normativa se modelaría como cuenca de atracción del sistema institu
 
 ## 5. Qué evita el marco en este dominio
 
+**Tabla 5.4.1.**
+
 | Tentación | Razón del rechazo |
 |---|---|
 | Hipóstasis institucional | No convertir instituciones en sujetos metafísicos autónomos |
@@ -4931,7 +4992,6 @@ Este capítulo conjetura. La elevación requiere:
 - diálogo profundo con Searle, Bourdieu, Latour, Gilbert.
 
 
-
 <p align="right"><sub><a href="#tabla-de-contenidos">↑ volver al índice</a></sub></p>
 
 ---
@@ -4980,6 +5040,8 @@ Que la dificultad explicativa exija multiplicar sustancias. La tesis muestra que
 
 ### Discriminación
 
+**Tabla 4.1.1.**
+
 | Criterio | Tesis | Dualismo |
 |---|---|---|
 | A | Sí (sustrato único) | Parcial (segunda sustancia no anclada) |
@@ -5003,6 +5065,8 @@ La exigencia de anclaje material y la negativa a introducir entidades misteriosa
 Que conocer las partes equivalga automáticamente a conocer el fenómeno. La tesis muestra que la organización importa: una descripción micro puede ser verdadera y no capturar la estructura relevante para Q.
 
 ### Discriminación
+
+**Tabla 4.1.2.**
 
 | Criterio | Tesis | Materialismo de partículas |
 |---|---|---|
@@ -5028,6 +5092,8 @@ La identificación entre profundidad ontológica y suficiencia explicativa. El n
 
 ### Discriminación
 
+**Tabla 4.1.3.**
+
 | Criterio | Tesis | Reduccionismo plano |
 |---|---|---|
 | B | Sí (paso entre escalas como decisión operativa) | No (un nivel privilegiado) |
@@ -5051,6 +5117,8 @@ La intuición de que hay patrones que solo se vuelven visibles en ciertos nivele
 Convertir esa visibilidad en prueba de sustancia nueva. La tesis ofrece self-organization como modelo positivo de la emergencia anclada (capítulo 02-04 §4): estabilización dinámica del sistema acoplado, no aparición de entidad adicional.
 
 ### Discriminación
+
+**Tabla 4.1.4.**
 
 | Criterio | Tesis | Emergentismo fuerte |
 |---|---|---|
@@ -5076,6 +5144,8 @@ Que todos los recortes sean equivalentes. La realidad constriñe la validez de l
 
 ### Discriminación
 
+**Tabla 4.1.5.**
+
 | Criterio | Tesis | Constructivismo arbitrario |
 |---|---|---|
 | C | Sí (dossier de anclaje, predicción discriminante) | No (todas las construcciones son admisibles) |
@@ -5098,6 +5168,8 @@ Que los modelos son construcciones y no espejos directos del mundo.
 Que la utilidad baste sin relación robusta con restricciones reales. La utilidad importa como señal de captura estructural, no como sustituto.
 
 ### Discriminación
+
+**Tabla 4.1.6.**
 
 | Criterio | Tesis | Instrumentalismo puro |
 |---|---|---|
@@ -5122,6 +5194,8 @@ Que la estructura formal tenga valor por sí misma sin contacto mejorado con el 
 
 ### Discriminación
 
+**Tabla 4.1.7.**
+
 | Criterio | Tesis | Formalismo vacío |
 |---|---|---|
 | D | Sí (traducibilidad B↔L3 obligatoria) | No (formalismo opera independiente del fenómeno) |
@@ -5144,6 +5218,8 @@ La existencia de procesos internos relevantes para conducta secuencial, anticipa
 Que los modelos internos sean recurso primario para tareas como locomoción, frenado, equilibrio, raqueteo, donde el control directo informacional explica los datos con menos hipótesis y mejor predicción.
 
 ### Discriminación en el caso ancla canónico
+
+**Tabla 4.1.8.**
 
 | Criterio | Tesis (control informacional, leyes acopladas) | Modelos internos / control óptimo |
 |---|---|---|
@@ -5175,6 +5251,8 @@ Que la metáfora computacional sea recurso primario para fenómenos donde el aco
 
 ### Discriminación en el caso ancla y en mente
 
+**Tabla 4.1.9.**
+
 | Criterio | Tesis | Cognitivismo computacional |
 |---|---|---|
 | D (traducibilidad B↔L3) | Obligatoria | Bloqueada (multiple realizability como dogma) |
@@ -5198,6 +5276,8 @@ El recorte correcto del plano observable y la negativa a postular entidades inte
 La negación de la estructura formal L3 que efectivamente discrimina hipótesis. La tesis añade L3 anclado sin perder anclaje en B.
 
 ### Discriminación
+
+**Tabla 4.1.10.**
 
 | Criterio | Tesis | Conductismo radical |
 |---|---|---|
@@ -5231,6 +5311,8 @@ Tres divergencias específicas:
 
 ### Discriminación
 
+**Tabla 4.1.11.**
+
 | Criterio | Tesis | Enactivismo radical |
 |---|---|---|
 | C | Dossier formal | Mayormente cualitativo |
@@ -5258,6 +5340,8 @@ La centralidad de la estructura como objeto del análisis ontológico.
 Que la estructura sea ontología fundamental sin sustrato. La tesis afirma sustrato material como base; la estructura es estructura **del** sustrato.
 
 ### Discriminación
+
+**Tabla 4.1.12.**
 
 | Criterio | Tesis | Realismo estructural informativo |
 |---|---|---|
@@ -5292,6 +5376,8 @@ Cuatro divergencias precisas:
 4. **Cartografía empírica multidominio:** Wolfram propone simulaciones computacionales pero no validación discriminante sobre datos reales en dominios heterogéneos con controles de falsación. La tesis valida 30 casos en física, biología, economía, política, tecnología, cultura y conducta humana, con 3 controles de falsación correctamente rechazados.
 
 ### Discriminación
+
+**Tabla 4.1.13.**
 
 | Criterio | Tesis (irrealismo operativo) | Wolfram Physics Project |
 |---|---|---|
@@ -5350,6 +5436,8 @@ La discusión específica con la **objeción de Glennan (2017, *The New Mechanic
 
 ### Discriminación
 
+**Tabla 4.1.14.**
+
 | Criterio | Tesis | Mecanicismo multinivel |
 |---|---|---|
 | C | Dossier completo | Criterios mecanicistas sin batería de diez |
@@ -5363,6 +5451,8 @@ Pierde en cero criterios. Discrimina en C, D, F.
 El mecanicismo multinivel es el aliado teórico principal de este capítulo. La tesis se entiende mejor como mecanicismo multinivel disciplinado por dossier de anclaje y asimetría L1↔B↔L3↔S.
 
 ## 16. Tabla síntesis
+
+**Tabla 4.1.15.**
 
 | Posición rival | Lo que la tesis acepta | Lo que la tesis rechaza | Criterios de discriminación |
 |---|---|---|---|
@@ -5405,7 +5495,6 @@ La tesis ocupa un punto difícil pero filosóficamente fértil:
 > La realidad no exige más sustancias, pero sí mejores recortes, dossier completo y predicción discriminante.
 
 Eso es lo que la tesis quiere demostrar una y otra vez, hasta que incluso sus objeciones tengan que discutir en ese terreno.
-
 
 
 <p align="right"><sub><a href="#tabla-de-contenidos">↑ volver al índice</a></sub></p>
@@ -5550,6 +5639,8 @@ El caso ancla es asimétricamente más sólido que cualquier otro dominio del ma
 
 Para no debilitarse, conviene no prometer más de lo que el proyecto realmente puede sostener.
 
+**Tabla 4.2.1.**
+
 | Promesa rechazada | Razón |
 |---|---|
 | Ontología total cerrada | El proyecto no es totalizador; es articulador |
@@ -5560,6 +5651,8 @@ Para no debilitarse, conviene no prometer más de lo que el proyecto realmente p
 | Predicción de fenómenos sociales individuales | Las leyes de control institucionales son objeto de investigación, no resultado disponible |
 
 ## 9. Lo que la tesis sí puede prometer con fuerza
+
+**Tabla 4.2.2.**
 
 | Promesa sostenida | Estado |
 |---|---|
@@ -5610,7 +5703,6 @@ Ese tipo de modestia fuerte suele convencer más que una ambición totalizadora 
 ## 13. Cierre
 
 La tesis sobrevive a las objeciones discriminantes (capítulo 04-01 y 01-diagnostico/02) si logra mantener austeridad ontológica, riqueza estructural, criterios explícitos, casos comparativos fuertes y vigilancia del propio léxico. Los seis límites de este capítulo no debilitan la tesis: la sitúan en su régimen de validez. Una tesis sin límites nombrados es una tesis que aún no se ha sometido a sí misma a su propio filtro.
-
 
 
 
@@ -5673,6 +5765,8 @@ La tesis queda demostrada cuando se cumplen siete condiciones simultáneas. Cada
 **Verificada en**: capítulo 09 (corpus EDI).
 
 **Producto**: 30 casos en física, biología, economía, política, tecnología, cultura y conducta humana. Resultados:
+
+**Tabla 6.1.1.**
 
 | Categoría | N | Casos clave |
 |-----------|--:|-------------|
@@ -5754,16 +5848,22 @@ El caso 30 (behavioral dynamics) **fue rechazado por el aparato** (EDI=0.002, no
 
 Lo que el manuscrito no demuestra y reconoce explícitamente como deuda con plazo y entregable:
 
+**Tabla 6.1.2.**
+
 | Deuda | Descripción | Plazo | Entregable | Estado al 2026-04-28 |
 |---|---|---|---|---|
 | Caso 30 elevación a LoE = 4 | Datos humanos reales (VENLab/WALK-MS) con aval CEI, pipeline alta frecuencia | 9-10 meses | Caso 30 con EDI sobre datos humanos | Dossier técnico-ético en `Bitacora/2026-04-28-cierre-doctoral/02-` |
 | Programa multi-sonda | Validar casos clave con sondas alternativas convergentes | 6 semanas | Tabla de convergencia multi-sonda | **EJECUTADO** sobre 3 strong + 5 weak (`09-simulaciones-edi/multi_sonda/`) |
 | Topologías heterogéneas para Nivel 5 | Adaptar ABM a scale-free / small-world; verificar CR > 2.0 | 6 meses | Caso elevado a Nivel 5 o reporte negativo honesto | Programa formal en `Bitacora/2026-04-28-cierre-doctoral/06-` |
-| Baselines estadísticos puros | Comparar contra ARIMA, VAR, RW, GP | 3 semanas | Tabla comparativa con discriminación | **EJECUTADO** sobre 8 casos (`09-simulaciones-edi/baselines/`) |
+| Baselines estadísticos puros | Comparar contra ARIMA, VAR, RW, GP | 3 semanas | Tabla comparativa con discriminación | **EJECUTADO** sobre 7 casos con `primary_arrays.json` (`09-simulaciones-edi/baselines/`) |
 | Aparato para variables normativas | Desarrollo formal de validez/legitimidad como cuenca de atracción + caso piloto | 18-24 meses | Capítulo metodológico + caso institucional cuantitativo | Caso piloto COVID **EJECUTADO** con resultado null honesto (`09-simulaciones-edi/covid_pilot/`); programa restante documentado |
 | Integración bibliográfica formal | Citas Chicago author-date en cada capítulo del cuerpo argumental | Hito de cierre | Bibliografía consolidada al depósito | **EJECUTADA** en cap 02-04, 04-01, 05-04; bibliografía consolidada en cap 07 con 90 referencias |
 | Programa de convergencia con Wolfram | Aplicar EDI a hypergraph rewriting | 12 meses | Reporte técnico para Wolfram Institute | Piloto Rule 110 **EJECUTADO** (EDI 0.55, `09-simulaciones-edi/wolfram_pilot/`); programa post-piloto en `Bitacora/2026-04-28-cierre-doctoral/05-` |
-| Conversión editorial pre-depósito | LaTeX/PDF + figuras SVG/PNG + plantilla institucional | 3 semanas pre-depósito | PDF institucional final | PDF intermedio generado (`TesisFinal/Tesis.pdf` 1.83 MB); figuras Mermaid en Anexo A.10; conversión a plantilla institucional pendiente del momento del depósito |
+| Rigor topológico del concepto de atractor | Lyapunov local + dimensión de correlación + mixing time | 1 mes | Reporte topológico por caso | **EJECUTADO** sobre 7 casos con `primary_arrays.json` (`09-simulaciones-edi/topology/topology_report.md`); ej. caso 41 wolfram λ_max=+0.017 D₂=2.82 (firma fractal), caso 42 histéresis λ_max=−0.052 D₂≈0 (atractor convergente puntual) |
+| Sondas inter-paradigma sobre arrays primarios reales | Aplicar las sondas teóricamente independientes a `obs`/`forcing` reales, no a proxys derivados | 1 mes | Reporte de convergencia inter-paradigma honesto | **EJECUTADO** sobre 7 casos (`09-simulaciones-edi/multi_sonda/secondary_on_primary_arrays.md`); resultado honesto: 1/7 converge bajo \|ΔEDI\| ≤ 0.10. Cierra parcialmente F13 de la auditoría doctoral. |
+| Visualización del corpus | Scatter espacial × temporal, barras EDI con CI bootstrap, heatmap dominio × banda, espacio de fase del caso ancla | 1 mes | 5 figuras vectoriales SVG/PNG | **EJECUTADO** (`figures/corpus/`, `figures/caso30/`, `figures/mermaid_svg/`); CSV maestro con 42 casos en `figures/corpus/corpus_summary_table.csv` |
+| Anticipación filosófica de objeciones | Borradores estructurados (concesión / distinción / argumento / costo) para 7 objeciones críticas | Hito de cierre | Anexo A.13 con 7 secciones | **BORRADOR EJECUTADO** (`Anexos/A13-anticipacion-objeciones-filosoficas.md`); validación filosófica de Jacob pendiente antes de promoción a `04-debates/03-`. |
+| Conversión editorial pre-depósito | LaTeX/PDF + figuras SVG/PNG + plantilla institucional | 3 semanas pre-depósito | PDF institucional final | PDF intermedio generado (`TesisFinal/Tesis.pdf` 1.83 MB); figuras Mermaid convertidas a SVG vectorial (`figures/mermaid_svg/`) y PNG 1600×1200 (`figures/mermaid_png/`); conversión a plantilla institucional pendiente del momento del depósito |
 
 ## 5. Aporte conceptual sustantivo
 
@@ -5783,7 +5883,7 @@ Reformula el conocimiento como compresión disciplinada bajo intervención ablat
 
 ### 5.3. Aporte metodológico (general, no regional)
 
-Ofrece la auditoría ontológica como protocolo replicable de nueve fases con dossier de catorce componentes, más el pipeline ABM+ODE con soporte CPU/GPU, validador canónico, controles de falsación incorporados, suite ST de 13 teorías formales y procedimiento de hostile testing automatizado. Determinismo `seed=42` con `requirements-locked.txt` para reproducibilidad inter-instalación. **Esta metodología es general**: el mismo motor `edi_engine` opera sobre los 10 casos del corpus inter-escala y el mismo protocolo C1-C5 opera sobre los 30 casos del corpus inter-dominio sin reentrenar arquitectura. La transferibilidad metodológica entre escalas y dominios —verificada por test cruzado (0/12 circularidad) y hostile testing (0/1500 falsos positivos)— es **prueba operativa de que la metodología no es regional**: una misma máquina funciona desde lo cuántico hasta lo cosmológico, desde lo físico hasta lo social.
+Ofrece la auditoría ontológica como protocolo replicable de nueve fases con dossier de catorce componentes, más el pipeline ABM+ODE con soporte CPU/GPU, validador canónico, controles de falsación incorporados, suite ST de 24 teorías formales y procedimiento de hostile testing automatizado. Determinismo `seed=42` con `requirements-locked.txt` para reproducibilidad inter-instalación. **Esta metodología es general**: el mismo motor `edi_engine` opera sobre los 10 casos del corpus inter-escala y el mismo protocolo C1-C5 opera sobre los 30 casos del corpus inter-dominio sin reentrenar arquitectura. La transferibilidad metodológica entre escalas y dominios —verificada por test cruzado (0/12 circularidad) y hostile testing (0/1500 falsos positivos)— es **prueba operativa de que la metodología no es regional**: una misma máquina funciona desde lo cuántico hasta lo cosmológico, desde lo físico hasta lo social.
 
 **Este aporte es ejecutable, no solo declarativo:** cualquier tercero puede correr el motor sobre datos nuevos en cualquier escala con sondas físicamente motivadas. La generalidad metodológica está respaldada por código, no por afirmación retórica.
 
@@ -5815,6 +5915,8 @@ Establece el **irrealismo operativo** como tercera vía: ni cosa, ni ficción, s
 
 ## 6. Lo que la tesis afirma con compromiso público
 
+**Tabla 6.1.3.**
+
 | Afirmación | Compromiso | Verificación |
 |---|---|---|
 | **La ontología es general (no regional macro)** | Cuatro invariantes válidos a cualquier escala | Capítulo 02-01 |
@@ -5831,6 +5933,8 @@ Establece el **irrealismo operativo** como tercera vía: ni cosa, ni ficción, s
 
 ## 7. Lo que la tesis no afirma
 
+**Tabla 6.1.4.**
+
 | Promesa rechazada | Razón |
 |---|---|
 | Ontología total cerrada | Articuladora general, no totalizadora |
@@ -5843,7 +5947,7 @@ Establece el **irrealismo operativo** como tercera vía: ni cosa, ni ficción, s
 
 ## 8. Fórmula final demostrativa
 
-> Bajo el aparato consolidado — irrealismo operativo de estructuras pre-ontológicas como **ontología general multiescalar**, asimetría L1↔B↔L3↔S como protocolo formal con sistema modal T declarado e invariante a la escala, dossier de anclaje de catorce componentes, protocolo C1-C5 con 13 condiciones simultáneas, EDI por intervención ablativa con permutación 999 y bootstrap 500, cartografía agregada de 40 casos: **30 inter-dominio** sobre física, biología, economía, política, tecnología, cultura y conducta humana (4 `overall_pass=True` + 1 strong sin gate + 8 weak + 3 controles rechazados) y **10 inter-escala** desde dinámica de espín-órbita atómica (10⁻¹⁰ m) hasta dinámica de cúmulos globulares (10²⁰ m) con **7 strong en 7 escalas distintas** + 1 weak + 2 nulls honestos, validación lógica formal con suite ST de 13 teorías (2 hallazgos críticos detectados y corregidos), hostile testing aplicado al motor (0/1500 falsos positivos en gate completo bajo random walk masivo) y al test cruzado de sondas inter-escala (0/12 circularidad detectada), AUC-ROC = 0.886 para discriminación de ranking interno vs ARIMA = 0.600, y discriminación pública contra catorce rivales (incluido Wolfram con piloto Rule 110 ejecutado mostrando convivencia de irreducibilidad micro y cierre macro detectable) — la tesis del irrealismo operativo de estructuras pre-ontológicas se sostiene como **propuesta ontológica general multiescalar articulada con demostración parcial bajo régimen declarado**, con limitaciones honestamente reconocidas (p-value mal calibrado al 24% empírico aunque umbrales EDI robustos, caso 30 con circularidad detectada por sonda alternativa, depuración post-hoc del corpus inter-escala, datos sintéticos pendientes de elevación a LoE 4-5, escalas como etiquetas nominales basadas en parámetros publicados, AUC-ROC interno no externo, ningún caso cumple los tres criterios κ-ontológica, sin revisión por pares humanos externos) y deuda residual fechada con cronograma firme post-defensa.
+> Bajo el aparato consolidado — irrealismo operativo de estructuras pre-ontológicas como **ontología general multiescalar**, asimetría L1↔B↔L3↔S como protocolo formal con sistema modal T declarado e invariante a la escala, dossier de anclaje de catorce componentes, protocolo C1-C5 con 13 condiciones simultáneas, EDI por intervención ablativa con permutación 999 y bootstrap 500, cartografía agregada de 40 casos: **30 inter-dominio** sobre física, biología, economía, política, tecnología, cultura y conducta humana (4 `overall_pass=True` + 1 strong sin gate + 8 weak + 3 controles rechazados) y **10 inter-escala** desde dinámica de espín-órbita atómica (10⁻¹⁰ m) hasta dinámica de cúmulos globulares (10²⁰ m) con **7 strong en 7 escalas distintas** + 1 weak + 2 nulls honestos, validación lógica formal con suite ST de 24 teorías (6 hallazgos críticos detectados y corregidos), hostile testing aplicado al motor (0/1500 falsos positivos en gate completo bajo random walk masivo) y al test cruzado de sondas inter-escala (0/12 circularidad detectada), AUC-ROC = 0.886 para discriminación de ranking interno vs ARIMA = 0.600, y discriminación pública contra catorce rivales (incluido Wolfram con piloto Rule 110 ejecutado mostrando convivencia de irreducibilidad micro y cierre macro detectable) — la tesis del irrealismo operativo de estructuras pre-ontológicas se sostiene como **propuesta ontológica general multiescalar articulada con demostración parcial bajo régimen declarado**, con limitaciones honestamente reconocidas (p-value mal calibrado al 24% empírico aunque umbrales EDI robustos, caso 30 con circularidad detectada por sonda alternativa, depuración post-hoc del corpus inter-escala, datos sintéticos pendientes de elevación a LoE 4-5, escalas como etiquetas nominales basadas en parámetros publicados, AUC-ROC interno no externo, ningún caso cumple los tres criterios κ-ontológica, sin revisión por pares humanos externos) y deuda residual fechada con cronograma firme post-defensa.
 
 ### 8.1. Lo que la tesis afirma con fuerza tras hostile testing severo
 
@@ -5851,7 +5955,7 @@ Establece el **irrealismo operativo** como tercera vía: ni cosa, ni ficción, s
 - **Discriminación de ranking interno** sobre el corpus inter-dominio: AUC-ROC 0.886 vs ARIMA 0.600 (V4-05 reconoce que es interno, no validación externa contra estándar de oro).
 - **Discriminación multiescalar:** 7 strong en 7 escalas distintas con sondas físicamente motivadas (Lindblad, Bloch, Tyson-Novak, Hoffmann, Mackey-Glass, Leavitt, Plummer); las sondas son específicas (test cruzado V4-01: 0% circularidad sobre datos no-suyos).
 - **Robustez del gate completo:** 0/1500 falsos positivos bajo random walk masivo.
-- **Validación lógica formal:** suite ST de 13 teorías con coherencia interna verificada y limitaciones explícitas declaradas.
+- **Validación lógica formal:** suite ST de 24 teorías con coherencia interna verificada y limitaciones explícitas declaradas.
 
 ### 8.2. Lo que la tesis NO afirma (limitaciones honestas)
 
@@ -5865,7 +5969,7 @@ Establece el **irrealismo operativo** como tercera vía: ni cosa, ni ficción, s
 
 ### 8.3. Estado declarado del manuscrito
 
-**Propuesta ontológica general multiescalar con aparato ejecutable validado bajo hostile testing severo, demostración parcial inter-dominio (30 casos) e inter-escala (10 casos en 8 escalas distintas), validación lógica formal interna con suite ST de 13 teorías, distinción explícita κ-pragmática vs κ-ontológica con criterios operativos para cada una, limitaciones honestamente reconocidas (depuración post-hoc multiescala, escalas nominales, AUC interno, ningún caso pasa los 3 criterios κ-ontológica). Tesis defendible bajo régimen declarado. La tesis es ontológica general, no regional macro-poblacional. Demostración cerrada inter-escala con datos reales y revisión por pares humanos: deuda externa bloqueante post-defensa.**
+**Propuesta ontológica general multiescalar con aparato ejecutable validado bajo hostile testing severo, demostración parcial inter-dominio (30 casos) e inter-escala (10 casos en 8 escalas distintas), validación lógica formal interna con suite ST de 24 teorías, distinción explícita κ-pragmática vs κ-ontológica con criterios operativos para cada una, limitaciones honestamente reconocidas (depuración post-hoc multiescala, escalas nominales, AUC interno, ningún caso pasa los 3 criterios κ-ontológica). Tesis defendible bajo régimen declarado. La tesis es ontológica general, no regional macro-poblacional. Demostración cerrada inter-escala con datos reales y revisión por pares humanos: deuda externa bloqueante post-defensa.**
 
 ## 9. Forma corta de la tesis demostrada
 
@@ -5927,11 +6031,17 @@ Esa es la condición de la victoria local de esta tesis.
 - guía de defensa oral en tres tiempos (capítulo 06-02);
 - corpus EDI con 30 casos verificados (`09-simulaciones-edi/`);
 - multi-sonda en 3 strong + 5 weak ejecutado (`09-simulaciones-edi/multi_sonda/`);
-- baselines ARIMA + VAR + RW + GP ejecutados sobre 8 casos (`09-simulaciones-edi/baselines/`);
+- baselines ARIMA + VAR + persistencia + RW ejecutados sobre 7 casos con `primary_arrays.json` (`09-simulaciones-edi/baselines/baselines_report.md`);
+- análisis topológico (Lyapunov + Grassberger-Procaccia + mixing time) ejecutado sobre 7 casos (`09-simulaciones-edi/topology/topology_report.md`);
+- sondas inter-paradigma sobre arrays primarios reales (cierre parcial de F13): convergencia honesta 1/7 bajo \|ΔEDI\| ≤ 0.10 (`09-simulaciones-edi/multi_sonda/secondary_on_primary_arrays.md`);
 - piloto Wolfram Rule 110 ejecutado con EDI 0.55 (`09-simulaciones-edi/wolfram_pilot/`);
 - caso piloto COVID con ablación real ejecutado (`09-simulaciones-edi/covid_pilot/`);
 - análisis de drift bajo perfil agresivo (`09-simulaciones-edi/perfil_agresivo/`);
-- 10 anexos operativos completos (A.1 a A.10);
+- 14 anexos consolidados con índice temático (`Anexos/README.md`); A.13 borrador filosófico para validación de Jacob;
+- visualización vectorial completa: 5 figuras del corpus + espacio de fase del caso ancla + 9 figuras Mermaid en SVG/PNG (`figures/`);
+- 114 tablas y 9 figuras numeradas formalmente con prefijo `<capítulo>.<orden>` en 37 archivos;
+- fetchers de datos reales para multiescala (PhysioNet HRV, OGLE Cefeidas verificado, BRENDA, Gaia DR3, IBM Quantum) en `09-simulaciones-edi/multiscale_fetchers.py`;
+- propuesta de calibración externa de QES con corpus de 10 estudios Q1 (`09-simulaciones-edi/common/qes_external_calibration.md`);
 - bibliografía consolidada con 90 referencias en Chicago author-date (capítulo 07);
 - PDF generado de 1.8 MB (`TesisFinal/Tesis.pdf`).
 
@@ -5969,6 +6079,8 @@ Capítulo 05-02 elevado a modo demostrativo con dossier completo: pregunta Q sob
 Convertir el mapa de interlocutores funcionales del capítulo 07 en aparato bibliográfico real con citas rigurosas distribuidas por capítulo.
 
 ### Distribución obligatoria
+
+**Tabla 6.3.1.**
 
 | Capítulo | Interlocutor principal | Interlocutores secundarios |
 |---|---|---|
@@ -6085,6 +6197,8 @@ Continuo durante el desarrollo. Cierre completo al final.
 
 ## 9. Cronograma agregado
 
+**Tabla 6.3.2.**
+
 | Mes | Hito |
 |---|---|
 | 1-12 | Elevación de caso biológico (paso 1); inicio integración bibliográfica (paso 2); inicio aparato normativo (paso 3) |
@@ -6144,7 +6258,6 @@ El objetivo no es solo tener un texto largo defendible sino un manuscrito que re
 Si el manuscrito final cumple las seis cualidades, deja de ser tesis y empieza a ser programa de investigación.
 
 
-
 <p align="right"><sub><a href="#tabla-de-contenidos">↑ volver al índice</a></sub></p>
 
 ---
@@ -6163,6 +6276,8 @@ Si el manuscrito final cumple las seis cualidades, deja de ser tesis y empieza a
 ## Asignación de interlocutores por capítulo
 
 Cada capítulo del manuscrito se ancla en al menos un interlocutor principal y un conjunto de secundarios. Esta asignación no es decorativa: estructura el diálogo textual obligatorio.
+
+**Tabla 7.1.**
 
 | Capítulo | Interlocutor principal | Secundarios |
 |----------|------------------------|-------------|
@@ -6332,6 +6447,8 @@ Cada capítulo del manuscrito se ancla en al menos un interlocutor principal y u
 
 ## Fuentes de Datos (Repositorios Principales)
 
+**Tabla 7.2.**
+
 | Fuente | URL/API | Casos del corpus |
 |--------|---------|-----|
 | World Bank Open Data | api.worldbank.org/v2 | 10, 11, 13, 16, 18, 22, 25, 27, 28, 29 |
@@ -6382,9 +6499,11 @@ Listado consolidado de **todas las limitaciones que la tesis declara explícitam
 
 ## 1. Limitaciones metodológicas declaradas
 
+**Tabla A.0.1.**
+
 | # | Limitación | Origen | Resolución actual | Entregable |
 |---|-----------|--------|-------------------|------------|
-| L1 | p-value mal calibrado (tasa empírica de tipo I ≈ 24 %, no 5 %) | Hostile testing N3 | Cerrada metodológicamente: el módulo `common/calibration.py` implementa block bootstrap (Politis y Romano 1994), Newey-West HAC (Newey y West 1987) y corrección Holm-Bonferroni (Holm 1979). Aplicada al corpus inter-dominio, los 12 casos significativos sin corrección colapsan a 4 tras Holm, coincidiendo con los 4 casos `overall_pass=True`. La inferencia formal sigue requiriendo invocación desde `edi_engine.py` con flag `--calibrated` en la ejecución final. | Re-ejecución del corpus con flag activo (≈ 3 semanas) |
+| L1 | p-value mal calibrado (tasa empírica de tipo I ≈ 24 %, no 5 %) | Hostile testing N3 | Cerrada metodológicamente: el módulo `common/calibration.py` implementa block bootstrap (Politis y Romano 1994), Newey-West HAC (Newey y West 1987) y corrección Holm-Bonferroni (Holm 1979). Aplicada al corpus inter-dominio, 14 casos del corpus inter-dominio + 8 del corpus multiescala = 22 casos sobreviven Holm-Bonferroni a α=0.05; los 4 casos macro `overall_pass=True` están entre los sobrevivientes. La inferencia formal sigue requiriendo invocación desde `edi_engine.py` con flag `--calibrated` en la ejecución final. | Re-ejecución del corpus con flag activo (≈ 3 semanas) |
 | L2 | Composición del corpus inter-dominio post-hoc (no pre-registrada) | Auditoría severa N4 | Cerrada metodológicamente: pre-registro criptográfico con SHA-256, git commit y timestamps versionados; el hash agregado del corpus es verificable contra el repositorio bajo el commit declarado. | Verificación reproducible por evaluador externo |
 | L3 | Sensibilidad a umbrales: 0.10/0.30 → 5 strong; 0.15/0.40 → 3; 0.05/0.20 → 9 | N4 | Mecanizada: el módulo `common/threshold_sensitivity.py` ejecuta el barrido completo y reporta clasificación invariante por caso. Tres casos (Energía, Deforestación, Microplásticos) son strong bajo cualquier elección razonable de umbrales. | Reporte automatizable por caso |
 | L4 | AUC-ROC = 0.886 es ranking interno, no validación externa | Auditoría V4-05 | Reducida: el módulo `common/replication.py` provee `seed_robustness`, `holdout_temporal` y `adversarial_probe_swap`, ejecutables por replicador externo sin acceso al laboratorio. | Validación inter-grupo con replicador independiente |
@@ -6394,6 +6513,8 @@ Listado consolidado de **todas las limitaciones que la tesis declara explícitam
 ---
 
 ## 2. Limitaciones empíricas declaradas
+
+**Tabla A.0.2.**
 
 | # | Limitación | Origen | Plazo | Entregable |
 |---|-----------|--------|-------|------------|
@@ -6405,6 +6526,8 @@ Listado consolidado de **todas las limitaciones que la tesis declara explícitam
 ---
 
 ## 3. Limitaciones filosóficas declaradas
+
+**Tabla A.0.3.**
 
 | # | Limitación | Origen | Plazo | Entregable |
 |---|-----------|--------|-------|------------|
@@ -6418,6 +6541,8 @@ Listado consolidado de **todas las limitaciones que la tesis declara explícitam
 ---
 
 ## 4. Limitaciones procedimentales (bloqueadores externos)
+
+**Tabla A.0.4.**
 
 | # | Limitación | Origen | Plazo | Entregable |
 |---|-----------|--------|-------|------------|
@@ -6453,6 +6578,8 @@ Esto está consolidado de cap 06-01 §7 y cap 04-02 §8.
 
 Los siguientes módulos resuelven o reducen seis limitaciones sin re-ejecutar el corpus:
 
+**Tabla A.0.5.**
+
 | Módulo | Limitación afectada | Resolución | Ruta |
 |--------|---------------------|------------|------|
 | Calibración estadística | L1 (p-value mal calibrado) | Cerrada metodológicamente | `09-simulaciones-edi/common/calibration.py` |
@@ -6462,11 +6589,13 @@ Los siguientes módulos resuelven o reducen seis limitaciones sin re-ejecutar el
 | Sensibilidad a umbrales | L3 (sensibilidad declarada) | Mecanizada | `09-simulaciones-edi/common/threshold_sensitivity.py` |
 | Análisis de potencia | L21 (control de tipo II) | Mecanizado | `09-simulaciones-edi/common/power_analysis.py` |
 
-La corrección FWER Holm-Bonferroni sobre los 30 casos del corpus inter-dominio reduce 12 casos significativos sin corrección a 4 tras Holm, que coinciden con los 4 casos `overall_pass=True`: la clasificación strong sobrevive a la corrección por comparaciones múltiples.
+La corrección FWER Holm-Bonferroni sobre los 30 casos del corpus inter-dominio preserva 14 casos inter-dominio (más 8 inter-escala) tras Holm; los 4 casos macro `overall_pass=True` están entre los sobrevivientes: la clasificación strong sobrevive a la corrección por comparaciones múltiples.
 
 ### Reclasificación de casos bajo régimen calibrado
 
 La aplicación caso por caso de los módulos a los casos no invariantes produce los siguientes veredictos:
+
+**Tabla A.0.6.**
 
 | Veredicto | Casos | Significado |
 |-----------|-------|-------------|
@@ -6486,6 +6615,8 @@ Los 7 casos strong del corpus inter-escala (31 Decoherencia cuántica, 32 Espín
 
 Bajo `common/power_analysis.py` se distingue entre `null_real` (potencia ≥ 0.80 para detectar EDI = 0.10) y `null por potencia insuficiente`. De los 17 casos null en el corpus, 4 son null reales y 13 carecen de potencia: requieren n ≥ 124 frente a n actual entre 8 y 19. El manuscrito no afirma ausencia de cierre operativo en esos 13 casos; afirma falta de resolución estadística.
 
+**Tabla A.0.7.**
+
 | Categoría | n | Implicación |
 |-----------|--:|-------------|
 | No null (EDI > 0.10) | 23 | Casos con señal detectable |
@@ -6499,6 +6630,8 @@ El módulo de calibración estadística controla falsos positivos por autocorrel
 ## 6. Cuadro síntesis para defensa oral
 
 Si en defensa una limitación es señalada por el tribunal, la respuesta canónica del manuscrito es:
+
+**Tabla A.0.8.**
 
 | Tipo de limitación | Respuesta canónica |
 |--------------------|---------------------|
@@ -6709,6 +6842,8 @@ CI bootstrap, modos de fallo, LoE, val_steps reportados con su implicación infe
 
 ## Niveles de Evidencia (LoE)
 
+**Tabla A.1.1.**
+
 | LoE | Descripción | Ejemplos |
 |----:|-------------|----------|
 | 1 | Especulativo | Proxies indirectos, encuestas subjetivas, datos sintéticos sin ground truth |
@@ -6908,6 +7043,8 @@ nivel = clasificar(EDI=validacion.edi,
 
 ## Operador μ — detalle
 
+**Tabla A.2.1.**
+
 | Campo | Especificación |
 |-------|----------------|
 | Firma | `μ : R → X` |
@@ -6920,6 +7057,8 @@ nivel = clasificar(EDI=validacion.edi,
 ---
 
 ## Operador G — detalle
+
+**Tabla A.2.2.**
 
 | Campo | Especificación |
 |-------|----------------|
@@ -6936,6 +7075,8 @@ nivel = clasificar(EDI=validacion.edi,
 
 ## Operador H — detalle
 
+**Tabla A.2.3.**
+
 | Campo | Especificación |
 |-------|----------------|
 | Firma | `H = (V, 𝓔)` |
@@ -6947,6 +7088,8 @@ nivel = clasificar(EDI=validacion.edi,
 ---
 
 ## Operador κ — detalle (operacionalizado vía EDI)
+
+**Tabla A.2.4.**
 
 | Campo | Especificación |
 |-------|----------------|
@@ -6971,6 +7114,8 @@ nivel = clasificar(EDI=validacion.edi,
 
 ## Operador ε — detalle
 
+**Tabla A.2.5.**
+
 | Campo | Especificación |
 |-------|----------------|
 | Firma | `ε : n → G_n` |
@@ -6982,6 +7127,8 @@ nivel = clasificar(EDI=validacion.edi,
 ---
 
 ## Pregunta Q — detalle
+
+**Tabla A.2.6.**
 
 | Campo | Especificación |
 |-------|----------------|
@@ -6995,6 +7142,8 @@ nivel = clasificar(EDI=validacion.edi,
 ---
 
 ## Validación canónica vs perfiles agresivos
+
+**Tabla A.2.7.**
 
 | Parámetro | Canónico | Agresivo (HYPER_*) |
 |-----------|---------:|-------------------:|
@@ -7070,6 +7219,8 @@ Plantilla estandarizada del dossier de anclaje obligatorio para cualquier catego
 
 ## 2. Variables X
 
+**Tabla A.3.1.**
+
 | Variable | Tipo | Régimen R | Operacionalización |
 |----------|------|-----------|--------------------|
 | ... | observable / inferida | mensual / anual / etc | método de medición |
@@ -7111,6 +7262,8 @@ de orden superior, listar hiperaristas y justificar no-reducibilidad.]
 
 ## 8. Pruebas de validación
 
+**Tabla A.3.2.**
+
 | Prueba | Resultado | Tolerancia |
 |--------|-----------|-----------:|
 | Reproducción | varianza explicada = X% | τ específica |
@@ -7119,6 +7272,8 @@ de orden superior, listar hiperaristas y justificar no-reducibilidad.]
 | Intervención | predicciones cumplidas X/N | — |
 
 **Protocolo C1-C5:**
+
+**Tabla A.3.3.**
 
 | Filtro | Estado | Detalle |
 |--------|:------:|---------|
@@ -7159,6 +7314,8 @@ Identificar variables que se reabrirían y régimen de reapertura.]
 
 ## 12. Traducción B↔L3
 
+**Tabla A.3.4.**
+
 | Parámetro de L3 | Variable de B | Unidad | Operacionalización |
 |-----------------|---------------|--------|---------------------|
 | ode_alpha | tasa de [...] | unidades físicas | medición directa |
@@ -7176,6 +7333,8 @@ categoría está flotando y debe reformularse.]
 - **Otras limitaciones:** [...]
 
 ## 14. Comparación rival
+
+**Tabla A.3.5.**
 
 | Criterio | Tesis (irrealismo operativo) | Rival 1 | Rival 2 | Rival 3 |
 |---|---|---|---|---|
@@ -7242,6 +7401,8 @@ Síntesis de la discriminación pública contra catorce posiciones rivales. Cada
 
 ## Criterios de discriminación
 
+**Tabla A.4.1.**
+
 | Código | Criterio |
 |--------|----------|
 | **A** | Anclaje material sin reducción a partículas |
@@ -7254,6 +7415,8 @@ Síntesis de la discriminación pública contra catorce posiciones rivales. Cada
 ---
 
 ## Tabla síntesis (14 rivales)
+
+**Tabla A.4.2.**
 
 | # | Posición rival | A | B | C | D | E | F | Discrimina en |
 |---|----------------|:-:|:-:|:-:|:-:|:-:|:-:|:------------:|
@@ -7275,6 +7438,8 @@ Síntesis de la discriminación pública contra catorce posiciones rivales. Cada
 ---
 
 ## La tesis (irrealismo operativo) en la matriz
+
+**Tabla A.4.3.**
 
 | # | A | B | C | D | E | F |
 |---|:-:|:-:|:-:|:-:|:-:|:-:|
@@ -7482,6 +7647,8 @@ Mapa completo del paisaje de aplicaciones del marco como **ontología general mu
 
 **Distribución por Nivel:**
 
+**Tabla A.5.1.**
+
 | Nivel | Categoría | N | Casos |
 |:----:|-----------|:-:|-------|
 | 4 | Strong (`overall_pass=True`) | 4 | Energía, Deforestación, Kessler, Riesgo Biológico |
@@ -7496,6 +7663,8 @@ Mapa completo del paisaje de aplicaciones del marco como **ontología general mu
 **Falsación correcta:** 3/3 (100%).
 
 ### Corpus inter-escala (10 casos)
+
+**Tabla A.5.2.**
 
 | Nivel | Categoría | N | Casos (escala instanciada) |
 |:----:|-----------|:-:|----------------------------|
@@ -7516,6 +7685,8 @@ Los 40 casos del corpus agregado **no son aplicaciones independientes**: cada un
 
 ### Bloque I — Strong con gate completo (Nivel 4)
 
+**Tabla A.5.3.**
+
 | # | Caso | EDI | p | Sonda | LoE | Datos |
 |---|------|----:|--:|-------|----:|-------|
 | 04 | Energía eléctrica | 0.6503 | 0.0000 | Lotka-Volterra | 4 | OPSD |
@@ -7527,11 +7698,15 @@ Reproducibilidad: el caso 16 ha sido re-ejecutado con datos World Bank descargad
 
 ### Bloque II — Strong sin gate completo (Nivel 4*)
 
+**Tabla A.5.4.**
+
 | # | Caso | EDI | p | Sonda | Por qué no gate |
 |---|------|----:|--:|-------|-----------------|
 | 24 | Microplásticos | 0.7819 | 0.0000 | Jambeck Accumulation | Bootstrap CI inestable |
 
 ### Bloque III — Weak (Nivel 3)
+
+**Tabla A.5.5.**
 
 | # | Caso | EDI | p | Sonda |
 |---|------|----:|--:|-------|
@@ -7546,12 +7721,16 @@ Reproducibilidad: el caso 16 ha sido re-ejecutado con datos World Bank descargad
 
 ### Bloque IV — Suggestive (Nivel 2)
 
+**Tabla A.5.6.**
+
 | # | Caso | EDI | p |
 |---|------|----:|--:|
 | 09 | Finanzas globales | 0.0813 | 0.0000 |
 | 21 | Salinización (irrigación) | 0.0184 | 0.0028 |
 
 ### Bloque V — Trend (Nivel 1)
+
+**Tabla A.5.7.**
 
 | # | Caso | EDI | p | Comentario |
 |---|------|----:|--:|------------|
@@ -7561,6 +7740,8 @@ Reproducibilidad: el caso 16 ha sido re-ejecutado con datos World Bank descargad
 | 01 | Clima regional | 0.0111 | 0.9990 | Sonda Budyko-Sellers insuficiente |
 
 ### Bloque VI — Null (Nivel 0)
+
+**Tabla A.5.8.**
 
 | # | Caso | EDI | Comentario |
 |---|------|----:|-----------|
@@ -7574,6 +7755,8 @@ Reproducibilidad: el caso 16 ha sido re-ejecutado con datos World Bank descargad
 | 29 | IoT | -0.8760 | Reflexividad técnica |
 
 ### Bloque VII — Controles de falsación (correctamente rechazados)
+
+**Tabla A.5.9.**
 
 | # | Caso | EDI | p | Diseño |
 |---|------|----:|--:|--------|
@@ -7679,7 +7862,7 @@ Cuatro presentaciones de la tesis con duración creciente, todas defendibles ant
 
 ## Versión 1: 30 segundos (elevator pitch)
 
-> Defendemos un irrealismo operativo de estructuras pre-ontológicas como **ontología, epistemología y metodología generales aplicables a cualquier escala**: las entidades que nombramos en ciencia y filosofía son atractores empíricamente identificables de sistemas dinámicos acoplados, admisibles solo bajo dossier de anclaje y validación EDI por intervención ablativa. Lo justificamos operativamente en 40 casos agregados (30 inter-dominio + 10 inter-escala desde 10⁻¹⁰ m hasta 10²⁰ m) con 11 strong en 8 escalas distintas, 3 controles de falsación rechazados, hostile testing severo aplicado, suite ST de 13 teorías formales, y discriminación pública contra catorce rivales incluido Wolfram. La tesis no glorifica: rechaza honestamente cuando debe rechazar.
+> Defendemos un irrealismo operativo de estructuras pre-ontológicas como **ontología, epistemología y metodología generales aplicables a cualquier escala**: las entidades que nombramos en ciencia y filosofía son atractores empíricamente identificables de sistemas dinámicos acoplados, admisibles solo bajo dossier de anclaje y validación EDI por intervención ablativa. Lo justificamos operativamente en 40 casos agregados (30 inter-dominio + 10 inter-escala desde 10⁻¹⁰ m hasta 10²⁰ m) con 11 strong en 8 escalas distintas, 3 controles de falsación rechazados, hostile testing severo aplicado, suite ST de 24 teorías formales, y discriminación pública contra catorce rivales incluido Wolfram. La tesis no glorifica: rechaza honestamente cuando debe rechazar.
 
 ---
 
@@ -7691,7 +7874,7 @@ Defiendo una tesis ontológica-epistemológica-metodológica **triple general y 
 
 **La tesis:** todo fenómeno empíricamente explicable —desde lo subatómico hasta lo cosmológico— está anclado en un sustrato material dinámico, pero las entidades son **estructuras pre-ontológicas** (en sentido genético-epistemológico simondoniano) — regularidades operativas anteriores al recorte categorial. La posición filosófica es **irrealismo operativo**: realismo estructural moderado + pluralismo epistemológico + anti-reificación operativa, **como ontología, epistemología y metodología generales** invariantes a la escala.
 
-**Aparato (metodología general):** cinco operadores formales (μ, G, H, κ, ε) invariantes a la escala, asimetría L1↔B↔L3↔S como protocolo, dossier de anclaje de catorce componentes, métrica EDI calculada por intervención ablativa con permutación 999 y bootstrap 500, protocolo C1-C5, suite ST de 13 teorías formales.
+**Aparato (metodología general):** cinco operadores formales (μ, G, H, κ, ε) invariantes a la escala, asimetría L1↔B↔L3↔S como protocolo, dossier de anclaje de catorce componentes, métrica EDI calculada por intervención ablativa con permutación 999 y bootstrap 500, protocolo C1-C5, suite ST de 24 teorías formales.
 
 **Justificación operativa (40 casos):** **corpus inter-dominio:** 4 casos `overall_pass=True` strong (Energía 0.65, Deforestación 0.60, Kessler 0.35, Riesgo Biológico 0.33), 1 strong sin gate (Microplásticos 0.78), 8 weak (incluido caso 30 behavioral dynamics 0.26), 3 controles de falsación correctamente rechazados. **Corpus inter-escala:** 7 strong en 7 escalas distintas (atómica, cuántica, bioquímica, celular oscilatoria, individual, astrofísica, astrofísica masiva). Hostile testing severo: 0/1500 falsos positivos del gate completo bajo random walk masivo. Discriminación pública contra catorce rivales identificables, incluido Wolfram Physics Project (con piloto Rule 110 ejecutado mostrando convivencia de irreducibilidad micro y cierre macro detectable).
 
@@ -7713,7 +7896,7 @@ Todo fenómeno empíricamente explicable, **a cualquier escala física, biológi
 
 ### Aparato (metodología general)
 
-Cinco operadores formales (μ medición, G grafo, H hipergrafo, κ compresión, ε expansión) **invariantes a la escala** sobre pregunta paramétrica Q fechada con tolerancia. Asimetría L1↔B↔L3↔S: L1 fija qué pregunta importa, B (acoplamiento empírico genérico — qubit-baño, proteína-solvente, célula-citoplasma, organismo-entorno, cúmulo-galaxia, según la escala) ancla la respuesta, L3 reconstruye, S recoge categorías que sobreviven. Dossier de anclaje de catorce componentes obligatorio. Métrica EDI = 1 - RMSE_coupled / RMSE_no_ode con permutación 999 y bootstrap 500. Protocolo C1-C5 con 13 condiciones simultáneas para `overall_pass=True`. Validación lógica formal con suite ST de 13 teorías.
+Cinco operadores formales (μ medición, G grafo, H hipergrafo, κ compresión, ε expansión) **invariantes a la escala** sobre pregunta paramétrica Q fechada con tolerancia. Asimetría L1↔B↔L3↔S: L1 fija qué pregunta importa, B (acoplamiento empírico genérico — qubit-baño, proteína-solvente, célula-citoplasma, organismo-entorno, cúmulo-galaxia, según la escala) ancla la respuesta, L3 reconstruye, S recoge categorías que sobreviven. Dossier de anclaje de catorce componentes obligatorio. Métrica EDI = 1 - RMSE_coupled / RMSE_no_ode con permutación 999 y bootstrap 500. Protocolo C1-C5 con 13 condiciones simultáneas para `overall_pass=True`. Validación lógica formal con suite ST de 24 teorías.
 
 ### Justificación operativa (40 casos)
 
@@ -7728,7 +7911,7 @@ Cinco operadores formales (μ medición, G grafo, H hipergrafo, κ compresión, 
 
 - **7 strong en 7 escalas distintas:** decoherencia cuántica (10⁻⁹ m), espín-órbita atómica (10⁻¹⁰ m), Michaelis-Menten bioquímica (10⁻⁸ m), NF-κB celular oscilatoria (10⁻⁵ m), HRV cardíaco individual (1 m), Cefeida pulsante (10¹¹ m), cúmulo globular (10²⁰ m).
 
-**Hostile testing severo:** 0/1500 falsos positivos del gate completo bajo random walk masivo, 0/12 circularidad detectada en test cruzado de sondas inter-escala, suite ST con 2 hallazgos críticos detectados y corregidos.
+**Hostile testing severo:** 0/1500 falsos positivos del gate completo bajo random walk masivo, 0/12 circularidad detectada en test cruzado de sondas inter-escala, suite ST con 6 hallazgos críticos detectados y corregidos. Sondas secundarias re-aplicadas a arrays primarios reales (no proxys derivados): 1/7 converge bajo \|ΔEDI\| ≤ 0.10 — limitación honestamente reportada.
 
 **Los 40 casos son justificación operativa del marco tripartito; no son la tesis.** La tesis son los tres marcos generales; los casos muestran que sus afirmaciones son ejecutables, discriminantes y transferibles entre escalas.
 
@@ -7752,7 +7935,7 @@ Cinco escenarios falsables: (1) los 4 casos `overall_pass` se desmoronan, (2) lo
 
 ### 1. Punto de partida (1 minuto)
 
-La tesis fue desarrollada bajo dirección de Jacob Agudelo (Universidad de Antioquia) con colaboración técnica de Steven Vallejo Ortiz: marco *Irrealismo Operativo de Estructuras Pre-Ontológicas* como **ontología, epistemología y metodología generales aplicables a cualquier escala física, biológica o cosmológica** con métrica EDI, asimetría L1↔B↔L3↔S, dossier de anclaje de catorce componentes, corpus EDI agregado de **40 casos** (30 inter-dominio + 10 inter-escala desde 10⁻¹⁰ m hasta 10²⁰ m), suite ST de 13 teorías formales, y discriminación pública contra catorce rivales incluido Wolfram Physics Project.
+La tesis fue desarrollada bajo dirección de Jacob Agudelo (Universidad de Antioquia) con colaboración técnica de Steven Vallejo Ortiz: marco *Irrealismo Operativo de Estructuras Pre-Ontológicas* como **ontología, epistemología y metodología generales aplicables a cualquier escala física, biológica o cosmológica** con métrica EDI, asimetría L1↔B↔L3↔S, dossier de anclaje de catorce componentes, corpus EDI agregado de **40 casos** (30 inter-dominio + 10 inter-escala desde 10⁻¹⁰ m hasta 10²⁰ m), suite ST de 24 teorías formales, y discriminación pública contra catorce rivales incluido Wolfram Physics Project.
 
 ### 2. Problema filosófico (2 minutos)
 
@@ -8216,7 +8399,6 @@ Si el interlocutor dice "estás eliminando categorías mentales", recordar: la t
 Esa es la frase que debería poder sobrevivir incluso si el resto del día filosófico se incendia un poco.
 
 
-
 <p align="right"><sub><a href="#tabla-de-contenidos">↑ volver al índice</a></sub></p>
 
 ---
@@ -8236,6 +8418,8 @@ Anexo tabular de **resultados crudos verificables** del corpus EDI multidominio.
 ## Tabla A.8.1. Resultados del corpus EDI (30 casos, perfil canónico)
 
 Perfil canónico: `n_perm = 999`, `n_boot = 500`, `seed = 42`, `validator_version = canonical-2026-04`.
+
+**Tabla A.8.1.**
 
 | # | Caso | Sonda macro | EDI | p | Bootstrap CI | val_steps | LoE | Coupling | Forcing | Nivel | overall_pass |
 |---|------|-------------|----:|---:|---|----:|---:|----:|----:|---:|:---:|
@@ -8280,6 +8464,8 @@ Perfil canónico: `n_perm = 999`, `n_boot = 500`, `seed = 42`, `validator_versio
 
 ## Tabla A.8.2. Métricas de robustez por caso
 
+**Tabla A.8.2.**
+
 | # | Caso | Estabilidad numérica | Persistencia temporal | Determinismo seed=42 | C1 | C2 | C3 | C4 | C5 |
 |---|------|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | 04 | Energía | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
@@ -8304,6 +8490,8 @@ Perfil canónico: `n_perm = 999`, `n_boot = 500`, `seed = 42`, `validator_versio
 
 Perfil agresivo: `n_perm = 2999`, `n_boot = 1500`, `n_refine = 10000`. Aplicado a casos seleccionados.
 
+**Tabla A.8.3.**
+
 | # | Caso | EDI canónico | EDI agresivo | Δ | Veredicto |
 |---|------|------------:|-------------:|---:|-----------|
 | 16 | Deforestación | 0.6020 | 0.5802 | -0.022 | Robusto bajo agresivo (Nivel 4 strong preservado) |
@@ -8314,6 +8502,8 @@ La verificación masiva del corpus completo bajo perfil agresivo es trabajo futu
 ---
 
 ## Tabla A.8.4. Distribución del paisaje de emergencia
+
+**Tabla A.8.4.**
 
 | Categoría | Definición operativa | Cuenta | Porcentaje |
 |-----------|----------------------|-------:|-----------:|
@@ -8366,6 +8556,8 @@ Listas de soporte editorial requeridas por el formato de tesis doctoral instituc
 
 > Nota: las versiones Mermaid renderizables de las 9 figuras principales están consolidadas en el Anexo A.10 (`Anexos/A10-figuras-mermaid.md`). En el cuerpo de los capítulos los diagramas siguen en ASCII art para legibilidad en texto plano. La conversión final a SVG/PNG con `mmdc` (mermaid-cli) o equivalente es trámite editorial pre-depósito con cronograma específico: 3-5 días en la semana previa al depósito institucional. Esta lista anticipa la numeración estable.
 
+**Tabla A.9.1.**
+
 | Figura | Título | Capítulo |
 |--------|--------|----------|
 | Fig. 2.1 | Cuatro modos de realidad operativa | 02-01 |
@@ -8382,6 +8574,8 @@ Listas de soporte editorial requeridas por el formato de tesis doctoral instituc
 ---
 
 ## A.9.2. Lista de tablas
+
+**Tabla A.9.2.**
 
 | Tabla | Título | Capítulo |
 |-------|--------|----------|
@@ -8408,6 +8602,8 @@ Listas de soporte editorial requeridas por el formato de tesis doctoral instituc
 
 ### Operadores formales
 
+**Tabla A.9.3.**
+
 | Símbolo | Significado | Capítulo |
 |---------|-------------|----------|
 | μ | Operador de medición; recorta R en X observable | 03-01 |
@@ -8420,6 +8616,8 @@ Listas de soporte editorial requeridas por el formato de tesis doctoral instituc
 | β | Error de heading φ − ψ_g | 02-04 |
 
 ### Métricas y protocolos
+
+**Tabla A.9.4.**
 
 | Sigla | Significado | Capítulo |
 |-------|-------------|----------|
@@ -8434,6 +8632,8 @@ Listas de soporte editorial requeridas por el formato de tesis doctoral instituc
 
 ### Niveles del corpus
 
+**Tabla A.9.5.**
+
 | Nivel | Categoría | Definición operativa |
 |------:|-----------|----------------------|
 | 0 | Null | EDI ≤ 0 o sin estructura macro |
@@ -8447,6 +8647,8 @@ Listas de soporte editorial requeridas por el formato de tesis doctoral instituc
 
 ### Niveles del registro categorial
 
+**Tabla A.9.6.**
+
 | Sigla | Registro | Capítulo |
 |-------|----------|----------|
 | L1 | Psicológico-ordinario (preguntas comunicables) | 02-04 |
@@ -8455,6 +8657,8 @@ Listas de soporte editorial requeridas por el formato de tesis doctoral instituc
 | S | Semántica revisada (categorías que sobreviven) | 02-04 |
 
 ### Instituciones y datasets
+
+**Tabla A.9.7.**
 
 | Sigla | Significado |
 |-------|-------------|
@@ -8479,11 +8683,21 @@ Las listas de este anexo se actualizarán automáticamente desde el manuscrito e
 
 # Anexo A.10. Figuras Mermaid
 
-Diagramas formales del manuscrito en formato Mermaid (renderable directamente por GitHub, GitLab, Pandoc + filtros, y la mayoría de visores Markdown). Reemplaza los diagramas ASCII art que aparecen en el cuerpo de los capítulos. La conversión a SVG/PNG independiente queda como trámite pre-depósito.
+Diagramas formales del manuscrito en formato Mermaid (renderable directamente por GitHub, GitLab, Pandoc + filtros, y la mayoría de visores Markdown). Reemplaza los diagramas ASCII art que aparecen en el cuerpo de los capítulos.
+
+**Versiones vectoriales pre-depósito (generadas por `@mermaid-js/mermaid-cli`):**
+
+- SVG: `figures/mermaid_svg/figura_<NN>.svg`
+- PNG (1600×1200): `figures/mermaid_png/figura_<NN>.png`
+- Fuente `.mmd` extraída automáticamente: `figures/mermaid_src/figura_<NN>.mmd`
+
+La numeración `<NN>` (01-09) corresponde al orden de aparición en este anexo (`Figura A.10.1` → `figura_01.svg`, etc.). La regeneración es reproducible con `scripts/render_mermaid.sh`.
 
 ---
 
 ## Fig. 2.2. Acoplamiento dinámico organismo-entorno-tarea-historia (capítulo 02-04)
+
+**Figura A.10.1.**
 
 ```mermaid
 graph LR
@@ -8502,6 +8716,8 @@ graph LR
 ---
 
 ## Fig. 3.1. Mapa de operadores formales (capítulo 03-01)
+
+**Figura A.10.2.**
 
 ```mermaid
 graph TD
@@ -8526,6 +8742,8 @@ graph TD
 
 ## Fig. 3.2. Dossier de anclaje (14 componentes — capítulo 03-02)
 
+**Figura A.10.3.**
+
 ```mermaid
 graph TD
     Q[1 Pregunta Q fechada] --> V[2 Variables operacionalizadas]
@@ -8546,6 +8764,8 @@ graph TD
 ---
 
 ## Fig. 3.3. Pipeline EDI (capítulo 03-04)
+
+**Figura A.10.4.**
 
 ```mermaid
 graph LR
@@ -8568,6 +8788,8 @@ graph LR
 
 ## Fig. 5.1. Asimetría L1↔B↔L3↔S como protocolo (capítulo 02-04)
 
+**Figura A.10.5.**
+
 ```mermaid
 graph LR
     L1[L1 psicológico ordinario<br>preguntas comunicables] -.indirecto.-> B[B conductual biológico<br>anclaje empírico]
@@ -8585,6 +8807,8 @@ graph LR
 
 ## Fig. 6.1. Paisaje de emergencia del corpus (capítulo 06-01)
 
+**Figura A.10.6.**
+
 ```mermaid
 pie title Distribución del corpus EDI 30 casos
     "Strong gate (4)" : 4
@@ -8599,6 +8823,8 @@ pie title Distribución del corpus EDI 30 casos
 ---
 
 ## Fig. 9.1. Arquitectura del motor ABM+ODE (capítulo 09-00)
+
+**Figura A.10.7.**
 
 ```mermaid
 graph TD
@@ -8622,6 +8848,8 @@ graph TD
 
 ## Fig. 9.31. Multi-sonda (capítulo 09-31)
 
+**Figura A.10.8.**
+
 ```mermaid
 graph LR
     A[Caso strong] -->|sonda primaria| EP[EDI primario]
@@ -8636,6 +8864,8 @@ graph LR
 ---
 
 ## Fig. C.1. Esquema de convergencia EDI-Wolfram (capítulo 04-debates §14)
+
+**Figura A.10.9.**
 
 ```mermaid
 graph TD
@@ -8720,6 +8950,8 @@ Sistema modal **al menos T (KT)** declarado en cap 02-01. T22 confirma: en `moda
 **Implicación:** la honestidad metodológica del manuscrito está formalmente verificada: la tesis NO presume que el naturalismo es una verdad demostrada; lo declara como compromiso filosófico.
 
 ## Resumen de la suite refactorizada
+
+**Tabla A.11.1.**
 
 | Teoría | Perfil ST | Foco | Estado |
 |--------|-----------|------|--------|
@@ -8889,6 +9121,8 @@ Anexo tabular de **resultados crudos verificables** del corpus EDI multiescala (
 
 ## Tabla A.12.1. Resultados del corpus multiescala (10 casos)
 
+**Tabla A.12.1.**
+
 | # | Caso | Escala (longitud) | Escala (tiempo) | EDI | p | CI 95% | Nivel | Overall pass |
 |---|------|-------------------|-----------------|----:|--:|--------|------:|:------------:|
 | 31 | Decoherencia qubit | 10⁻⁹ m | 10⁻⁶ s | 0.84 | 0.000 | estrecho | 4 | True |
@@ -8904,6 +9138,8 @@ Anexo tabular de **resultados crudos verificables** del corpus EDI multiescala (
 
 ## Tabla A.12.2. Distribución por nivel y por escala
 
+**Tabla A.12.2.**
+
 | Nivel | Cuenta | Escalas representadas |
 |-------|-------:|----------------------|
 | 4 strong (`overall_pass=True`) | 7 | atómica, cuántica, bioquímica, celular oscilatoria, individual, astrofísica chica, astrofísica grande |
@@ -8913,6 +9149,8 @@ Anexo tabular de **resultados crudos verificables** del corpus EDI multiescala (
 **Selectividad multiescala:** 8/10 con señal positiva (EDI > 0); 7/10 con `overall_pass=True`.
 
 ## Tabla A.12.3. Sondas físicas usadas por caso
+
+**Tabla A.12.3.**
 
 | # | Caso | Sonda macro | Referencia teórica |
 |---|------|-------------|---------------------|
@@ -8928,6 +9166,8 @@ Anexo tabular de **resultados crudos verificables** del corpus EDI multiescala (
 | 40 | Cúmulo globular | Plummer + marea | Plummer 1911 |
 
 ## Tabla A.12.4. Datos candidatos para elevación a LoE 4
+
+**Tabla A.12.4.**
 
 | # | Caso | Dataset abierto | Acceso | Cronograma |
 |---|------|-----------------|--------|------------|
@@ -9061,7 +9301,7 @@ El manuscrito se entrega en estado **integral defendible bajo régimen declarado
 - caso 30 (behavioral dynamics) con dossier técnico-ético para elevación documentada;
 - bibliografía consolidada (`07-bibliografia/01-bibliografia-orientativa.md`);
 - trazabilidad de proceso documentada (`Bitacora/`);
-- validación lógica formal con suite ST de 13 teorías;
+- validación lógica formal con suite ST de 24 teorías;
 - hostile testing aplicado y verificado (auditoría severa N1-N5 + auditoría V4 V4-01, V4-06, V4-09).
 
 ## 10. Reconocimiento explícito de auto-validación
@@ -9077,7 +9317,6 @@ Esto significa que:
 **Compromiso público:** los autores se comprometen a someter el manuscrito a al menos tres revisores externos hostiles antes del depósito formal. Las críticas externas se integran al manuscrito con fecha y respuesta explícita. Si los revisores externos identifican fallos estructurales, el manuscrito se reformula antes de sustentación, no se defiende sin modificación.
 
 Esta cláusula reconoce que la honestidad metodológica del manuscrito requiere validación externa, no solo hostile testing interno.
-
 
 
 <p align="right"><sub><a href="#tabla-de-contenidos">↑ volver al índice</a></sub></p>
@@ -9372,6 +9611,8 @@ Cada capítulo programático lleva su criterio de elevación a modo demostrativo
 Capítulo 05-00 (criterios de admisión), capítulos 05-01 a 05-04 (modos programáticos marcados), capítulo 06-01 (cierre demostrativo y deuda).
 
 ## Matriz de objeciones, respuestas y compromisos
+
+**Tabla 1.2.1.**
 
 | Objeción | Forma corta | Respuesta corta | Compromiso público |
 |---|---|---|---|

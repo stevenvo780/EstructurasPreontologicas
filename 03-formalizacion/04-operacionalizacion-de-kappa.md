@@ -161,7 +161,7 @@ La permutación simple con `n_perm=999` produce tasa empírica de tipo I cercana
 
 1. **Block bootstrap** (Politis y Romano 1994): permutación por bloques de tamaño √n que preserva la autocorrelación local. El p-value bajo block-bootstrap se reporta junto al p-value naive para cuantificar el shift de calibración.
 2. **Newey-West HAC** (Newey y West 1987): error estándar consistente bajo heterocedasticidad y autocorrelación, con kernel de Bartlett y truncamiento adaptativo `floor(4·(n/100)^{2/9})`.
-3. **FWER Holm-Bonferroni** (Holm 1979): corrección de family-wise error rate sobre los casos del corpus. Aplicada al corpus inter-dominio, los 12 casos significativos sin corrección colapsan a 4 tras Holm — coinciden con los 4 casos `overall_pass=True`. La clasificación strong sobrevive a la corrección por comparaciones múltiples.
+3. **FWER Holm-Bonferroni** (Holm 1979): corrección de family-wise error rate sobre los casos del corpus. Aplicada al corpus completo: **14 casos inter-dominio + 8 casos inter-escala = 22 casos sobreviven Holm-Bonferroni a α=0.05**; los 4 casos macro `overall_pass=True` están entre los sobrevivientes (caso por caso documentado en `metrics.json::fwer_holm`). La clasificación strong sobrevive a la corrección por comparaciones múltiples.
 
 ### Replicación robusta sin replicador externo
 

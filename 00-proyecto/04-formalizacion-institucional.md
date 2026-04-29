@@ -96,7 +96,7 @@ El manuscrito se entrega en estado **integral defendible bajo régimen declarado
 - caso 30 (behavioral dynamics) con dossier técnico-ético para elevación documentada;
 - bibliografía consolidada (`07-bibliografia/01-bibliografia-orientativa.md`);
 - trazabilidad de proceso documentada (`Bitacora/`);
-- validación lógica formal con suite ST de 13 teorías;
+- validación lógica formal con suite ST de 24 teorías;
 - hostile testing aplicado y verificado (auditoría severa N1-N5 + auditoría V4 V4-01, V4-06, V4-09).
 
 ## 10. Reconocimiento explícito de auto-validación

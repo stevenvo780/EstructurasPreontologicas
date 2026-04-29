@@ -30,11 +30,17 @@
 - guía de defensa oral en tres tiempos (capítulo 06-02);
 - corpus EDI con 30 casos verificados (`09-simulaciones-edi/`);
 - multi-sonda en 3 strong + 5 weak ejecutado (`09-simulaciones-edi/multi_sonda/`);
-- baselines ARIMA + VAR + RW + GP ejecutados sobre 8 casos (`09-simulaciones-edi/baselines/`);
+- baselines ARIMA + VAR + persistencia + RW ejecutados sobre 7 casos con `primary_arrays.json` (`09-simulaciones-edi/baselines/baselines_report.md`);
+- análisis topológico (Lyapunov + Grassberger-Procaccia + mixing time) ejecutado sobre 7 casos (`09-simulaciones-edi/topology/topology_report.md`);
+- sondas inter-paradigma sobre arrays primarios reales (cierre parcial de F13): convergencia honesta 1/7 bajo \|ΔEDI\| ≤ 0.10 (`09-simulaciones-edi/multi_sonda/secondary_on_primary_arrays.md`);
 - piloto Wolfram Rule 110 ejecutado con EDI 0.55 (`09-simulaciones-edi/wolfram_pilot/`);
 - caso piloto COVID con ablación real ejecutado (`09-simulaciones-edi/covid_pilot/`);
 - análisis de drift bajo perfil agresivo (`09-simulaciones-edi/perfil_agresivo/`);
-- 10 anexos operativos completos (A.1 a A.10);
+- 14 anexos consolidados con índice temático (`Anexos/README.md`); A.13 borrador filosófico para validación de Jacob;
+- visualización vectorial completa: 5 figuras del corpus + espacio de fase del caso ancla + 9 figuras Mermaid en SVG/PNG (`figures/`);
+- 114 tablas y 9 figuras numeradas formalmente con prefijo `<capítulo>.<orden>` en 37 archivos;
+- fetchers de datos reales para multiescala (PhysioNet HRV, OGLE Cefeidas verificado, BRENDA, Gaia DR3, IBM Quantum) en `09-simulaciones-edi/multiscale_fetchers.py`;
+- propuesta de calibración externa de QES con corpus de 10 estudios Q1 (`09-simulaciones-edi/common/qes_external_calibration.md`);
 - bibliografía consolidada con 90 referencias en Chicago author-date (capítulo 07);
 - PDF generado de 1.8 MB (`TesisFinal/Tesis.pdf`).
 
