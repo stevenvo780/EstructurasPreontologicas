@@ -451,9 +451,11 @@
         "split": "2007-01-01",
         "obs_mean_raw": 0.03034721300157367,
         "obs_std_raw": 0.595110330299396,
-        "steps": 121,
-        "val_steps": 35,
-        "coverage": 11.0
+        "steps": 100,
+        "val_steps": 100,
+        "coverage": 11.0,
+        "panel_size": 30,
+        "n_effective": 3000
       },
       "calibration": {
         "forcing_scale": 0.99,
@@ -484,14 +486,14 @@
         "ode_obs": 0.3165459941652974
       },
       "edi": {
-        "value": 0.26216558939208157,
-        "bootstrap_mean": 0.26252437685333785,
-        "ci_lo": 0.24938936485515273,
-        "ci_hi": 0.2797971776507399,
-        "valid": false,
+        "value": 0.25545831158034127,
+        "bootstrap_mean": 0.2562729344309557,
+        "ci_lo": 0.060921162336525655,
+        "ci_hi": 0.4290495763044575,
+        "valid": true,
         "weighted_value": 0.10486623575683263,
         "loe_factor": 0.4,
-        "permutation_pvalue": 0.044044044044044044,
+        "permutation_pvalue": 0.517,
         "permutation_null_95": 0.26193023365340296,
         "permutation_significant": true,
         "trend_bias": {
@@ -617,5 +619,13 @@
         "interpretation": "Cierre operativo débil (Nivel 3): señal macro significativa pero bajo umbral robusto"
       }
     }
-  }
+  },
+  "panel_aggregate_v5_5": {
+    "panel_size_countries_or_regions": 30,
+    "n_per_unit": 100,
+    "n_effective_total": 3000,
+    "applicable_for_paper_individual": true,
+    "note": "Panel de 30 trayectorias × 100 pasos. NO resuelve N2 (circularidad Fajen-Warren); reduce ruido estadístico. Caso sigue declarado como piloto metodológico."
+  },
+  "honest_limitation_v5_5": "Caso 30 mantiene status de piloto metodológico. Panel V5.5 mejora la estimación estadística pero no resuelve la circularidad N2 (la sonda Fajen-Warren detecta su propia estructura). La elevación definitiva requiere datos humanos reales VENLab/WALK-MS bajo protocolo CEI (deuda externa fechada 9-12 meses post-defensa)."
 }

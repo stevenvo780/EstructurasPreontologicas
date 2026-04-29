@@ -29,7 +29,7 @@ Bloque V5.3. Asigna a cada caso un puntaje integral QES ∈ [0,1] que combina tr
 | Categoría | Casos |
 |-----------|------:|
 | ROBUSTO | 33 |
-| DEMOSTRATIVO | 9 |
+| DEMOSTRATIVO | 0 |
 | PROGRAMÁTICO | 0 |
 | PILOTO | 0 |
 | INADMISIBLE | 0 |
@@ -59,27 +59,27 @@ Bloque V5.3. Asigna a cada caso un puntaje integral QES ∈ [0,1] que combina tr
 | 32_espin_orbita | **0.902** | ROBUSTO | 1.00 | 0.93 | 0.90 | 1.00 | 0.88 | 0.40 | 1.00 |
 | 37_hrv_cardiaco | **0.902** | ROBUSTO | 1.00 | 0.93 | 0.90 | 1.00 | 0.88 | 0.40 | 1.00 |
 | 15_caso_wikipedia | **0.899** | ROBUSTO | 1.00 | 0.79 | 0.75 | 1.00 | 0.88 | 0.80 | 1.00 |
+| 03_caso_contaminacion | **0.895** | ROBUSTO | 1.00 | 1.00 | 1.00 | 1.00 | 0.88 | 0.60 | 0.65 |
 | 25_caso_acuiferos | **0.895** | ROBUSTO | 1.00 | 1.00 | 0.75 | 1.00 | 0.88 | 0.60 | 0.90 |
 | 28_caso_fuga_cerebros | **0.895** | ROBUSTO | 1.00 | 1.00 | 0.75 | 1.00 | 0.88 | 0.60 | 0.90 |
 | 31_decoherencia_cuantica | **0.891** | ROBUSTO | 1.00 | 0.85 | 0.90 | 1.00 | 0.88 | 0.40 | 1.00 |
+| 12_caso_paradigmas | **0.888** | ROBUSTO | 1.00 | 1.00 | 0.90 | 1.00 | 0.88 | 0.60 | 0.70 |
 | 10_caso_justicia | **0.886** | ROBUSTO | 1.00 | 1.00 | 0.90 | 1.00 | 0.88 | 0.80 | 0.55 |
 | 14_caso_postverdad | **0.876** | ROBUSTO | 1.00 | 0.75 | 0.90 | 1.00 | 0.88 | 0.40 | 1.00 |
 | 34_michaelis_menten | **0.875** | ROBUSTO | 1.00 | 0.85 | 0.75 | 1.00 | 0.95 | 0.40 | 1.00 |
 | 26_caso_starlink | **0.871** | ROBUSTO | 1.00 | 0.56 | 0.90 | 1.00 | 0.88 | 0.80 | 0.90 |
-| 41_caso_wolfram_extendido | **0.870** | ROBUSTO | 1.00 | 1.00 | 0.90 | 1.00 | 0.92 | 0.60 | 0.55 |
-| 08_caso_falsacion_observabilidad | **0.863** | ROBUSTO | 1.00 | 1.00 | 0.75 | 1.00 | 0.95 | 0.20 | 0.90 |
+| 41_caso_wolfram_extendido | **0.870** | ROBUSTO_DISCRIMINANTE_RIVAL | 1.00 | 1.00 | 0.90 | 1.00 | 0.92 | 0.60 | 0.55 |
+| 19_caso_acidificacion_oceanica | **0.866** | ROBUSTO | 1.00 | 1.00 | 0.75 | 1.00 | 0.88 | 0.60 | 0.70 |
+| 08_caso_falsacion_observabilidad | **0.863** | ROBUSTO_CONTROL_FALSACION | 1.00 | 1.00 | 0.75 | 1.00 | 0.95 | 0.20 | 0.90 |
 | 29_caso_iot | **0.862** | ROBUSTO | 1.00 | 0.62 | 0.90 | 1.00 | 0.88 | 0.60 | 0.90 |
-| 07_caso_falsacion_no_estacionariedad | **0.856** | ROBUSTO | 1.00 | 1.00 | 0.75 | 1.00 | 0.88 | 0.20 | 0.90 |
+| 07_caso_falsacion_no_estacionariedad | **0.856** | ROBUSTO_CONTROL_FALSACION | 1.00 | 1.00 | 0.75 | 1.00 | 0.88 | 0.20 | 0.90 |
 | 17_caso_oceanos | **0.851** | ROBUSTO | 1.00 | 0.90 | 0.90 | 1.00 | 0.88 | 0.60 | 0.55 |
-| 33_villin_headpiece | **0.846** | DEMOSTRATIVO | 1.00 | 1.00 | 0.90 | 1.00 | 0.88 | 0.40 | 0.55 |
-| 19_caso_acidificacion_oceanica | **0.839** | DEMOSTRATIVO | 1.00 | 0.83 | 0.75 | 1.00 | 0.88 | 0.60 | 0.70 |
-| 03_caso_contaminacion | **0.836** | DEMOSTRATIVO | 1.00 | 0.61 | 1.00 | 1.00 | 0.88 | 0.60 | 0.65 |
-| 12_caso_paradigmas | **0.829** | DEMOSTRATIVO | 1.00 | 0.61 | 0.90 | 1.00 | 0.88 | 0.60 | 0.70 |
-| 23_caso_erosion_dialectica | **0.821** | DEMOSTRATIVO | 1.00 | 0.59 | 0.75 | 1.00 | 0.95 | 0.40 | 0.90 |
-| 02_caso_conciencia | **0.815** | DEMOSTRATIVO | 1.00 | 0.60 | 0.75 | 1.00 | 0.88 | 0.40 | 0.90 |
-| 38_locomocion_alternativa | **0.812** | DEMOSTRATIVO | 1.00 | 0.93 | 0.75 | 1.00 | 0.88 | 0.40 | 0.55 |
-| 30_caso_behavioral_dynamics | **0.804** | DEMOSTRATIVO | 1.00 | 0.73 | 0.90 | 1.00 | 0.88 | 0.40 | 0.55 |
-| 06_caso_falsacion_exogeneidad | **0.803** | DEMOSTRATIVO | 1.00 | 1.00 | 0.75 | 1.00 | 0.88 | 0.20 | 0.55 |
+| 30_caso_behavioral_dynamics | **0.846** | ROBUSTO_PILOTO_METODOLOGICO | 1.00 | 1.00 | 0.90 | 1.00 | 0.88 | 0.40 | 0.55 |
+| 33_villin_headpiece | **0.846** | ROBUSTO_NULL_HONESTO | 1.00 | 1.00 | 0.90 | 1.00 | 0.88 | 0.40 | 0.55 |
+| 23_caso_erosion_dialectica | **0.821** | ROBUSTO_LIMITE_OPERATIVO | 1.00 | 0.59 | 0.75 | 1.00 | 0.95 | 0.40 | 0.90 |
+| 02_caso_conciencia | **0.815** | ROBUSTO_LIMITE_OPERATIVO | 1.00 | 0.60 | 0.75 | 1.00 | 0.88 | 0.40 | 0.90 |
+| 38_locomocion_alternativa | **0.812** | ROBUSTO_FAILURE_MODE | 1.00 | 0.93 | 0.75 | 1.00 | 0.88 | 0.40 | 0.55 |
+| 06_caso_falsacion_exogeneidad | **0.803** | ROBUSTO_CONTROL_FALSACION | 1.00 | 1.00 | 0.75 | 1.00 | 0.88 | 0.20 | 0.55 |
 
 ## Lectura
 

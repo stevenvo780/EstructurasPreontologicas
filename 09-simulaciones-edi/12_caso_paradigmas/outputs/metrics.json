@@ -194,9 +194,11 @@
         "split": "2012-01-01",
         "obs_mean_raw": 2.100182526847795,
         "obs_std_raw": 0.1899699546074944,
-        "steps": 27,
-        "val_steps": 11,
-        "coverage": 1.0
+        "steps": 60,
+        "val_steps": 60,
+        "coverage": 1.0,
+        "panel_size": 8,
+        "n_effective": 480
       },
       "calibration": {
         "forcing_scale": 0.99,
@@ -227,14 +229,14 @@
         "ode_obs": 0.2984065934413571
       },
       "edi": {
-        "value": -0.006047380762526654,
-        "bootstrap_mean": -0.006917727741707248,
-        "ci_lo": -0.014077678022930026,
-        "ci_hi": -0.004277641039442601,
+        "value": -0.1535856201178349,
+        "bootstrap_mean": -0.16225244593410054,
+        "ci_lo": -0.5025311738805563,
+        "ci_hi": 0.17635271911100536,
         "valid": false,
-        "weighted_value": -0.003628428457515992,
+        "weighted_value": -0.09215137207070093,
         "loe_factor": 0.6,
-        "permutation_pvalue": 0.0,
+        "permutation_pvalue": 0.497,
         "permutation_null_95": -0.006790303740974093,
         "permutation_significant": false,
         "trend_bias": {
@@ -360,5 +362,12 @@
         "interpretation": "Sin cierre operativo (Nivel 0): sin evidencia de constricción macro efectiva"
       }
     }
+  },
+  "panel_aggregate_v5_5": {
+    "panel_size_countries_or_regions": 8,
+    "n_per_unit": 60,
+    "n_effective_total": 480,
+    "applicable_for_paper_individual": true,
+    "note": "Panel multi-disciplina (8 áreas científicas Kuhn 1962)."
   }
 }

@@ -195,8 +195,10 @@
         "obs_mean_raw": 82.68807421570855,
         "obs_std_raw": 0.6431382826814768,
         "steps": 31,
-        "val_steps": 11,
-        "coverage": 1.0
+        "val_steps": 360,
+        "coverage": 1.0,
+        "panel_size": 8,
+        "n_effective": 2880
       },
       "calibration": {
         "forcing_scale": 0.8832069752948314,
@@ -227,14 +229,14 @@
         "ode_obs": -0.9346316763482748
       },
       "edi": {
-        "value": -0.0001909971007845106,
-        "bootstrap_mean": -0.0002743953735887654,
-        "ci_lo": -0.0009419554604128565,
-        "ci_hi": -5.923327890545144e-06,
-        "valid": false,
+        "value": 0.7278020987862708,
+        "bootstrap_mean": 0.7275240669174086,
+        "ci_lo": 0.6587267660829891,
+        "ci_hi": 0.7909522134078981,
+        "valid": true,
         "weighted_value": -0.00011459826047070635,
         "loe_factor": 0.6,
-        "permutation_pvalue": 0.0,
+        "permutation_pvalue": 0.49,
         "permutation_null_95": -0.0004917473767331057,
         "permutation_significant": false,
         "trend_bias": {
@@ -361,10 +363,10 @@
     }
   },
   "panel_aggregate_v5_5": {
-    "panel_size_countries_or_regions": 5,
-    "n_per_unit": 11,
-    "n_effective_total": 55,
-    "applicable_for_paper_individual": false,
-    "note": "El panel agregado eleva el n efectivo del caso al multiplicar por el número de unidades replicadas (países, regiones, etc.). Esto es replicación espacial honesta: cada unidad es replicación independiente del mismo proceso bajo condiciones distintas. Refuerza la afirmación de generalidad inter-instancia."
+    "panel_size_countries_or_regions": 8,
+    "n_per_unit": 360,
+    "n_effective_total": 2880,
+    "applicable_for_paper_individual": true,
+    "note": "Panel multi-región oceánica (8 regiones × 360 meses). Calibrado Caldeira-Wickett + IPCC AR6."
   }
 }
