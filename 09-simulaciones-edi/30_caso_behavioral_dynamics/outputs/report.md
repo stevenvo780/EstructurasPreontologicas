@@ -1,6 +1,6 @@
 # Reporte de Validación — Behavioral Dynamics — Locomoción dirigida (Fajen-Warren 2003, segundo orden)
 
-- generated_at: 2026-04-28T02:49:09.311623Z
+- generated_at: 2026-04-29T12:00:19.475545Z
 
 ## Fase synthetic
 - **overall_pass**: False
