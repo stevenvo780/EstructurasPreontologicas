@@ -103,15 +103,15 @@ Candidatos: SRE journals con post-mortems publicados, datasets de Google Borg, t
 
 ### 6.1. Simondon — modo de existencia de los objetos técnicos
 
-Simondon ofrece la categoría de individuación técnica y de objetos técnicos como concretizaciones de tendencias. La tesis lo opera: un servicio es individuación técnica cuya identidad depende de su funcionamiento sostenido en red.
+Simondon (1989, *Du mode d'existence des objets techniques*, parte I) introduce la categoría de **concretización** del objeto técnico: el objeto técnico evoluciona desde formas abstractas (cada función realizada por una pieza distinta) hacia formas concretas (piezas que cumplen múltiples funciones simultáneas mediante adaptación causal interna). La tesis lo opera: un servicio distribuido es individuación técnica cuya identidad depende de su funcionamiento sostenido en red, y la concretización simondoniana se traduce a **dimensionalidad efectiva reducida** del operador κ — un servicio bien diseñado comprime múltiples funciones en componentes acoplados internamente sin pérdida de fidelidad relacional.
 
 ### 6.2. Latour — actantes y redes
 
-Latour insiste en redes con humanos y no-humanos. La tesis aplica: los componentes técnicos son actantes que entran en `V` si pasan filtro de admisión.
+Latour (2005, *Reassembling the Social*, cap. 3) insiste en distribución simétrica de agencia entre humanos y no-humanos. La tesis lo aplica: los componentes técnicos (servidores, balanceadores, certificados, DNS) son actantes que entran en `V` si pasan filtro de admisión por intervención (su ablación produce diferencia inferencial significativa).
 
-### 6.3. SRE / práctica de operaciones (Beyer y colegas)
+### 6.3. SRE / práctica de operaciones (Beyer et al. 2016)
 
-Los principios de Site Reliability Engineering (definir SLO, error budgets, circuit breakers, blast radius limitation) son implementación informal de la auditoría ontológica del marco. La tesis los recoge como inspiración técnica.
+Beyer, Jones, Petoff y Murphy (2016, *Site Reliability Engineering: How Google Runs Production Systems*, O'Reilly) sistematizan los principios SRE: SLO (Service Level Objectives), error budgets, circuit breakers, blast radius limitation, postmortems sin culpa. La tesis los recoge como **implementación informal del aparato del manuscrito**: SLO ↔ tolerancia τ de la pregunta Q; error budget ↔ región de admisibilidad; circuit breaker ↔ operador ε activado bajo bifurcación detectada; postmortem ↔ auditoría ontológica del fallo (cap 03-03). La convergencia entre filosofía de la ciencia formal y práctica industrial madura es **fricción productiva**: ambas tradiciones independientemente desarrollan la misma estructura operativa.
 
 ## 7. Lo que este capítulo devuelve a la tesis general
 

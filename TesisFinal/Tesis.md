@@ -5721,8 +5721,8 @@ Chalmers (1995, *Journal of Consciousness Studies* 2:200-219) plantea que ningú
 
 ### 7.3. Diálogo textual extendido
 
-- **Husserl** (1913, *Ideas I*, §49, p. 92 ed. Springer): *"jede Erlebnis ist Bewusstsein, y Bewusstsein ist Bewusstsein von etwas"*. La tesis recoge: la conciencia es **intencional**, dirigida a contenido. Esto es compatible con la tesis: la intencionalidad es propiedad del sistema acoplado organismo-mundo en primera persona.
-- **Merleau-Ponty** (1945, *Fenomenología de la percepción*, p. xi ed. Gallimard): *"le corps est notre moyen général d'avoir un monde"*. La tesis lo recoge: el cuerpo es el **acoplador material** que constituye el mundo experimentado.
+- **Husserl** (1913, *Ideen zu einer reinen Phänomenologie und phänomenologischen Philosophie I*) postula que toda conciencia es **intencional** — dirigida a un contenido (*Bewusstsein von etwas*). La tesis recoge la idea: la intencionalidad es propiedad del sistema acoplado organismo-mundo en primera persona, sin reducirse a estados internos representacionales. La asistencia computacional no reproduce cita textual paginada porque la edición consultada y el pasaje específico requieren verificación que queda como tarea de Jacob (`TAREAS_PENDIENTES.md` H-J5).
+- **Merleau-Ponty** (1945, *Phénoménologie de la perception*) sostiene que el cuerpo no es objeto entre objetos sino "nuestro medio general de tener un mundo" — el cuerpo como acoplador material que constituye el horizonte fenomenológico. La tesis lo recoge en el plano operativo: el cuerpo entra en la variable `X` del operador μ como sustrato del acoplamiento informacional con el entorno (cap 02-04 §2). La asistencia computacional no reproduce paginación específica de la cita francesa hasta verificación de la edición consultada.
 - **Nagel** (1974, "What is it Like to be a Bat?", *Philosophical Review* 83:435-450, p. 436): el carácter subjetivo de la experiencia *"will not be adequately captured by any of the familiar, recently devised reductive analyses of the mental"*. La tesis recoge: el aparato EDI **no captura el carácter subjetivo**, pero esto no debilita su validez en su régimen propio.
 
 ## 8. Sujeto, agencia, libertad
@@ -6098,15 +6098,15 @@ Candidatos: SRE journals con post-mortems publicados, datasets de Google Borg, t
 
 ### 6.1. Simondon — modo de existencia de los objetos técnicos
 
-Simondon ofrece la categoría de individuación técnica y de objetos técnicos como concretizaciones de tendencias. La tesis lo opera: un servicio es individuación técnica cuya identidad depende de su funcionamiento sostenido en red.
+Simondon (1989, *Du mode d'existence des objets techniques*, parte I) introduce la categoría de **concretización** del objeto técnico: el objeto técnico evoluciona desde formas abstractas (cada función realizada por una pieza distinta) hacia formas concretas (piezas que cumplen múltiples funciones simultáneas mediante adaptación causal interna). La tesis lo opera: un servicio distribuido es individuación técnica cuya identidad depende de su funcionamiento sostenido en red, y la concretización simondoniana se traduce a **dimensionalidad efectiva reducida** del operador κ — un servicio bien diseñado comprime múltiples funciones en componentes acoplados internamente sin pérdida de fidelidad relacional.
 
 ### 6.2. Latour — actantes y redes
 
-Latour insiste en redes con humanos y no-humanos. La tesis aplica: los componentes técnicos son actantes que entran en `V` si pasan filtro de admisión.
+Latour (2005, *Reassembling the Social*, cap. 3) insiste en distribución simétrica de agencia entre humanos y no-humanos. La tesis lo aplica: los componentes técnicos (servidores, balanceadores, certificados, DNS) son actantes que entran en `V` si pasan filtro de admisión por intervención (su ablación produce diferencia inferencial significativa).
 
-### 6.3. SRE / práctica de operaciones (Beyer y colegas)
+### 6.3. SRE / práctica de operaciones (Beyer et al. 2016)
 
-Los principios de Site Reliability Engineering (definir SLO, error budgets, circuit breakers, blast radius limitation) son implementación informal de la auditoría ontológica del marco. La tesis los recoge como inspiración técnica.
+Beyer, Jones, Petoff y Murphy (2016, *Site Reliability Engineering: How Google Runs Production Systems*, O'Reilly) sistematizan los principios SRE: SLO (Service Level Objectives), error budgets, circuit breakers, blast radius limitation, postmortems sin culpa. La tesis los recoge como **implementación informal del aparato del manuscrito**: SLO ↔ tolerancia τ de la pregunta Q; error budget ↔ región de admisibilidad; circuit breaker ↔ operador ε activado bajo bifurcación detectada; postmortem ↔ auditoría ontológica del fallo (cap 03-03). La convergencia entre filosofía de la ciencia formal y práctica industrial madura es **fricción productiva**: ambas tradiciones independientemente desarrollan la misma estructura operativa.
 
 ## 7. Lo que este capítulo devuelve a la tesis general
 
@@ -8367,6 +8367,7 @@ Cada capítulo del manuscrito se ancla en al menos un interlocutor principal y u
 3. Bueno, G. (1978). *Ensayos materialistas*. Madrid: Taurus.
 4. Bunge, M. (1959). *Causality: The Place of the Causal Principle in Modern Science*. Cambridge: Harvard University Press.
 4bis. Bunge, M. (1977). *Treatise on Basic Philosophy, Volume 3: Ontology I: The Furniture of the World*. Dordrecht: Reidel.
+4ter. Bunge, M. (1967/1972). *La investigación científica: Su estrategia y su filosofía*. Barcelona: Ariel. [Edición original 1967, ed. revisada 1972].
 5. Bunge, M. (1979). *Treatise on Basic Philosophy, Volume 4: Ontology II: A World of Systems*. Dordrecht: Reidel.
 6. Chalmers, D. (2006). "Strong and Weak Emergence". En P. Clayton y P. Davies (eds.), *The Re-Emergence of Emergence*. Oxford: Oxford University Press.
 7. Dennett, D. (1991). "Real Patterns". *The Journal of Philosophy* 88(1): 27–51.
@@ -8447,6 +8448,7 @@ Cada capítulo del manuscrito se ancla en al menos un interlocutor principal y u
 52. Luhmann, N. (1995). *Social Systems*. Stanford: Stanford University Press.
 53. Schelling, T. C. (1978). *Micromotives and Macrobehavior*. New York: Norton.
 54. Strogatz, S. H. (2014). *Nonlinear Dynamics and Chaos: With Applications to Physics, Biology, Chemistry, and Engineering*. 2.ª ed. Boulder: Westview Press.
+54bis. Strogatz, S. H. (1994). *Nonlinear Dynamics and Chaos: With Applications to Physics, Biology, Chemistry, and Engineering*. 1.ª ed. Reading: Addison-Wesley.
 55. Soros, G. (1987). *The Alchemy of Finance*. New York: Simon & Schuster.
 56. Taleb, N. N. (2012). *Antifragile: Things That Gain from Disorder*. New York: Random House.
 
@@ -8487,6 +8489,7 @@ Cada capítulo del manuscrito se ancla en al menos un interlocutor principal y u
 
 81. Wolfram, S. (2020). *A Project to Find the Fundamental Theory of Physics*. Champaign: Wolfram Media.
 82. Wolfram, S. (2002). *A New Kind of Science*. Champaign: Wolfram Media.
+82bis. Wolfram, S. (2021). "The Concept of the Ruliad". *Stephen Wolfram Writings*, November 10, 2021. https://writings.stephenwolfram.com/2021/11/the-concept-of-the-ruliad/.
 
 ### J. Ontología social e instituciones
 
@@ -8586,6 +8589,45 @@ Cada capítulo del manuscrito se ancla en al menos un interlocutor principal y u
 ### X. Filosofía de la mente analítica (cap 05-01, 04-01)
 
 136. Chalmers, D. J. (1995). "Facing Up to the Problem of Consciousness". *Journal of Consciousness Studies* 2(3): 200–219.
+
+### Y. Filosofía de la matemática (cap 03-01 §15)
+
+137. Hellman, G. (1989). *Mathematics without Numbers: Towards a Modal-Structural Interpretation*. Oxford: Clarendon Press.
+138. Maddy, P. (1990). *Realism in Mathematics*. Oxford: Clarendon Press.
+139. Shapiro, S. (1997). *Philosophy of Mathematics: Structure and Ontology*. Oxford: Oxford University Press.
+
+### Z. Fenomenología clásica y filosofía de la conciencia (cap 05-01)
+
+140. Husserl, E. (1913/1950). *Ideen zu einer reinen Phänomenologie und phänomenologischen Philosophie. Erstes Buch: Allgemeine Einführung in die reine Phänomenologie*. Husserliana III, ed. W. Biemel. La Haya: Martinus Nijhoff.
+141. Merleau-Ponty, M. (1945). *Phénoménologie de la perception*. Paris: Gallimard.
+142. Nagel, T. (1974). "What Is It Like to Be a Bat?". *Philosophical Review* 83(4): 435–450.
+
+### AA. Filosofía de la libertad y agencia (cap 05-01 §8)
+
+143. Dennett, D. C. (2003). *Freedom Evolves*. New York: Viking.
+144. Frankfurt, H. G. (1971). "Freedom of the Will and the Concept of a Person". *Journal of Philosophy* 68(1): 5–20.
+145. Pereboom, D. (2001). *Living Without Free Will*. Cambridge: Cambridge University Press.
+
+### BB. Ontología social — extensiones (cap 05-04)
+
+146. Bourdieu, P. (1994). *Raisons pratiques: Sur la théorie de l'action*. Paris: Seuil. [Trad. española: *Razones prácticas: Sobre la teoría de la acción*. Barcelona: Anagrama, 1997].
+147. Bunge, M. (1995). *Sistemas sociales y filosofía*. Buenos Aires: Sudamericana.
+148. Latour, B. (1999). *Pandora's Hope: Essays on the Reality of Science Studies*. Cambridge: Harvard University Press.
+
+### CC. Economía política y dinámica institucional (cap 05-04 §7.2)
+
+149. Acemoglu, D. y Robinson, J. A. (2006). *Economic Origins of Dictatorship and Democracy*. Cambridge: Cambridge University Press.
+150. Sornette, D. (2003). *Why Stock Markets Crash: Critical Events in Complex Financial Systems*. Princeton: Princeton University Press.
+
+### DD. Filosofía de la biología (cap 05-02 §0)
+
+151. Kauffman, S. A. (1993). *The Origins of Order: Self-Organization and Selection in Evolution*. New York: Oxford University Press.
+152. Margulis, L. (1998). *Symbiotic Planet: A New Look at Evolution*. New York: Basic Books.
+153. Schrödinger, E. (1944). *What Is Life? The Physical Aspect of the Living Cell*. Cambridge: Cambridge University Press. [Trad. española: *¿Qué es la vida?*. Salvat, 1986].
+
+### EE. Ingeniería de confiabilidad e infraestructura (cap 05-03 §6.3)
+
+154. Beyer, B., Jones, C., Petoff, J. y Murphy, N. R. (eds.) (2016). *Site Reliability Engineering: How Google Runs Production Systems*. Sebastopol: O'Reilly Media.
 
 ## Fuentes de Datos (Repositorios Principales)
 

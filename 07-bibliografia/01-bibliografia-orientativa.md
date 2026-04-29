@@ -38,6 +38,7 @@ Cada capítulo del manuscrito se ancla en al menos un interlocutor principal y u
 3. Bueno, G. (1978). *Ensayos materialistas*. Madrid: Taurus.
 4. Bunge, M. (1959). *Causality: The Place of the Causal Principle in Modern Science*. Cambridge: Harvard University Press.
 4bis. Bunge, M. (1977). *Treatise on Basic Philosophy, Volume 3: Ontology I: The Furniture of the World*. Dordrecht: Reidel.
+4ter. Bunge, M. (1967/1972). *La investigación científica: Su estrategia y su filosofía*. Barcelona: Ariel. [Edición original 1967, ed. revisada 1972].
 5. Bunge, M. (1979). *Treatise on Basic Philosophy, Volume 4: Ontology II: A World of Systems*. Dordrecht: Reidel.
 6. Chalmers, D. (2006). "Strong and Weak Emergence". En P. Clayton y P. Davies (eds.), *The Re-Emergence of Emergence*. Oxford: Oxford University Press.
 7. Dennett, D. (1991). "Real Patterns". *The Journal of Philosophy* 88(1): 27–51.
@@ -118,6 +119,7 @@ Cada capítulo del manuscrito se ancla en al menos un interlocutor principal y u
 52. Luhmann, N. (1995). *Social Systems*. Stanford: Stanford University Press.
 53. Schelling, T. C. (1978). *Micromotives and Macrobehavior*. New York: Norton.
 54. Strogatz, S. H. (2014). *Nonlinear Dynamics and Chaos: With Applications to Physics, Biology, Chemistry, and Engineering*. 2.ª ed. Boulder: Westview Press.
+54bis. Strogatz, S. H. (1994). *Nonlinear Dynamics and Chaos: With Applications to Physics, Biology, Chemistry, and Engineering*. 1.ª ed. Reading: Addison-Wesley.
 55. Soros, G. (1987). *The Alchemy of Finance*. New York: Simon & Schuster.
 56. Taleb, N. N. (2012). *Antifragile: Things That Gain from Disorder*. New York: Random House.
 
@@ -158,6 +160,7 @@ Cada capítulo del manuscrito se ancla en al menos un interlocutor principal y u
 
 81. Wolfram, S. (2020). *A Project to Find the Fundamental Theory of Physics*. Champaign: Wolfram Media.
 82. Wolfram, S. (2002). *A New Kind of Science*. Champaign: Wolfram Media.
+82bis. Wolfram, S. (2021). "The Concept of the Ruliad". *Stephen Wolfram Writings*, November 10, 2021. https://writings.stephenwolfram.com/2021/11/the-concept-of-the-ruliad/.
 
 ### J. Ontología social e instituciones
 
@@ -257,6 +260,45 @@ Cada capítulo del manuscrito se ancla en al menos un interlocutor principal y u
 ### X. Filosofía de la mente analítica (cap 05-01, 04-01)
 
 136. Chalmers, D. J. (1995). "Facing Up to the Problem of Consciousness". *Journal of Consciousness Studies* 2(3): 200–219.
+
+### Y. Filosofía de la matemática (cap 03-01 §15)
+
+137. Hellman, G. (1989). *Mathematics without Numbers: Towards a Modal-Structural Interpretation*. Oxford: Clarendon Press.
+138. Maddy, P. (1990). *Realism in Mathematics*. Oxford: Clarendon Press.
+139. Shapiro, S. (1997). *Philosophy of Mathematics: Structure and Ontology*. Oxford: Oxford University Press.
+
+### Z. Fenomenología clásica y filosofía de la conciencia (cap 05-01)
+
+140. Husserl, E. (1913/1950). *Ideen zu einer reinen Phänomenologie und phänomenologischen Philosophie. Erstes Buch: Allgemeine Einführung in die reine Phänomenologie*. Husserliana III, ed. W. Biemel. La Haya: Martinus Nijhoff.
+141. Merleau-Ponty, M. (1945). *Phénoménologie de la perception*. Paris: Gallimard.
+142. Nagel, T. (1974). "What Is It Like to Be a Bat?". *Philosophical Review* 83(4): 435–450.
+
+### AA. Filosofía de la libertad y agencia (cap 05-01 §8)
+
+143. Dennett, D. C. (2003). *Freedom Evolves*. New York: Viking.
+144. Frankfurt, H. G. (1971). "Freedom of the Will and the Concept of a Person". *Journal of Philosophy* 68(1): 5–20.
+145. Pereboom, D. (2001). *Living Without Free Will*. Cambridge: Cambridge University Press.
+
+### BB. Ontología social — extensiones (cap 05-04)
+
+146. Bourdieu, P. (1994). *Raisons pratiques: Sur la théorie de l'action*. Paris: Seuil. [Trad. española: *Razones prácticas: Sobre la teoría de la acción*. Barcelona: Anagrama, 1997].
+147. Bunge, M. (1995). *Sistemas sociales y filosofía*. Buenos Aires: Sudamericana.
+148. Latour, B. (1999). *Pandora's Hope: Essays on the Reality of Science Studies*. Cambridge: Harvard University Press.
+
+### CC. Economía política y dinámica institucional (cap 05-04 §7.2)
+
+149. Acemoglu, D. y Robinson, J. A. (2006). *Economic Origins of Dictatorship and Democracy*. Cambridge: Cambridge University Press.
+150. Sornette, D. (2003). *Why Stock Markets Crash: Critical Events in Complex Financial Systems*. Princeton: Princeton University Press.
+
+### DD. Filosofía de la biología (cap 05-02 §0)
+
+151. Kauffman, S. A. (1993). *The Origins of Order: Self-Organization and Selection in Evolution*. New York: Oxford University Press.
+152. Margulis, L. (1998). *Symbiotic Planet: A New Look at Evolution*. New York: Basic Books.
+153. Schrödinger, E. (1944). *What Is Life? The Physical Aspect of the Living Cell*. Cambridge: Cambridge University Press. [Trad. española: *¿Qué es la vida?*. Salvat, 1986].
+
+### EE. Ingeniería de confiabilidad e infraestructura (cap 05-03 §6.3)
+
+154. Beyer, B., Jones, C., Petoff, J. y Murphy, N. R. (eds.) (2016). *Site Reliability Engineering: How Google Runs Production Systems*. Sebastopol: O'Reilly Media.
 
 ## Fuentes de Datos (Repositorios Principales)
 
