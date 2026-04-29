@@ -14,7 +14,10 @@
 
   safeRender("chart-levels", () => renderLevelBars(summary.levels || []));
   safeRender("chart-categories", () => renderCategoryBars(summary.categories || []));
-  safeRender("chart-edi-hist", () => renderEdiHistogram(summary.edi_bins || []));
+  safeRender("chart-edi-hist", () => renderHistogram(summary.edi_bins || [], "chart-edi-hist"));
+  safeRender("chart-cr-hist", () => renderHistogram(summary.cr_bins || [], "chart-cr-hist"));
+  safeRender("chart-rmse-hist", () => renderHistogram(summary.rmse_bins || [], "chart-rmse-hist"));
+  safeRender("chart-pass-pie", () => renderPassPie(summary.stats || {}));
   safeRender("chart-criteria-rates", () => renderCriteriaRates(summary.criteria_pass_rates || []));
   safeRender("chart-scatter", () => renderScatter(summary.cases || []));
   safeRender("chart-timeline", () => renderTimeline(summary.timeline || []));
@@ -86,8 +89,8 @@ function renderCategoryBars(categories) {
     .join("")}</div>`;
 }
 
-function renderEdiHistogram(bins) {
-  const root = document.getElementById("chart-edi-hist");
+function renderHistogram(bins, targetId) {
+  const root = document.getElementById(targetId);
   if (!root) return;
   if (!bins.length) {
     root.textContent = "Sin datos";
@@ -107,6 +110,31 @@ function renderEdiHistogram(bins) {
       `;
     })
     .join("")}</div>`;
+}
+
+function renderPassPie(stats) {
+  const root = document.getElementById("chart-pass-pie");
+  if (!root) return;
+  const pass = stats.overall_pass || 0;
+  const total = stats.total_cases || 1;
+  const fail = total - pass;
+  const pctPass = (pass / total) * 100;
+  const pctFail = (fail / total) * 100;
+  
+  root.innerHTML = `
+    <div class="bar-list" style="margin-top: 1rem;">
+      <div class="bar-row">
+        <span>Aprobados (Pass)</span>
+        <div class="bar-track"><div class="bar-fill" style="width:${pctPass.toFixed(1)}%; background: #2a8f67;"></div></div>
+        <strong>${pass}</strong>
+      </div>
+      <div class="bar-row">
+        <span>Fallidos (Fail)</span>
+        <div class="bar-track"><div class="bar-fill" style="width:${pctFail.toFixed(1)}%; background: #b3473b;"></div></div>
+        <strong>${fail}</strong>
+      </div>
+    </div>
+  `;
 }
 
 function renderCriteriaRates(rates) {

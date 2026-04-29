@@ -3,6 +3,7 @@ from __future__ import annotations
 import argparse
 import json
 import sys
+import subprocess
 from pathlib import Path
 
 import uvicorn
@@ -28,6 +29,7 @@ try:
         refresh_dataset,
         resolve_case,
         resolve_chapter,
+        render_markdown,
     )
 except ImportError:
     from data import (  # type: ignore
@@ -42,6 +44,7 @@ except ImportError:
         refresh_dataset,
         resolve_case,
         resolve_chapter,
+        render_markdown,
     )
 
 APP_DIR = Path(__file__).resolve().parent
@@ -134,6 +137,49 @@ async def chapter_detail(request: Request, slug: str, refresh: bool = Query(defa
             "chapter": chapter,
         },
     )
+
+
+@app.get("/st", response_class=HTMLResponse)
+async def st_view(request: Request):
+    return templates.TemplateResponse(
+        request,
+        "st.html",
+        {
+            "asset_version": _asset_version(),
+            "page_title": "Consistencia ST — Tesis Visual",
+        },
+    )
+
+
+@app.post("/api/run-st", response_class=JSONResponse)
+async def api_run_st():
+    st_dir = ROOT / "08-consistencia-st"
+    report_path = st_dir / "reports" / "ultimo-reporte.md"
+    try:
+        result = subprocess.run(
+            ["npm", "run", "st:check"],
+            cwd=str(st_dir),
+            capture_output=True,
+            text=True,
+            timeout=45
+        )
+        success = result.returncode == 0
+        log = result.stdout + "\n" + result.stderr
+    except Exception as e:
+        success = False
+        log = f"Error ejecutando npm: {e}"
+
+    html = ""
+    if report_path.exists():
+        html = render_markdown(report_path.read_text(encoding="utf-8", errors="ignore"))
+
+    return JSONResponse({
+        "success": success,
+        "log": log,
+        "html": html
+    })
+
+
 
 
 @app.get("/api/summary", response_class=JSONResponse)

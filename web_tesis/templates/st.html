@@ -1,0 +1,81 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="panel hero-panel" style="padding-bottom: 2rem;">
+  <div>
+    <p class="kicker">Ejecutor y Validación Formal</p>
+    <h2>Consistencia ST</h2>
+    <p>
+      Este entorno permite ejecutar las pruebas de consistencia formal ST contra las teorías declaradas. 
+      Los resultados verifican la legitimidad epistémica, compresión multiescala y falsabilidad.
+    </p>
+  </div>
+  
+  <div style="margin-top: 1.5rem;">
+    <button id="run-st-btn" class="btn" style="background: var(--accent); color: white; border: none; padding: 0.8rem 1.5rem; border-radius: 8px; font-weight: 600; cursor: pointer; font-size: 1rem; transition: background 0.2s;">
+      ▶ Ejecutar Simulaciones ST
+    </button>
+  </div>
+</section>
+
+<section id="st-results" class="panel" style="display: none;">
+  <div class="section-header">
+    <h2 id="st-status-title">Resultados de la Ejecución</h2>
+  </div>
+  
+  <div style="display: grid; grid-template-columns: 1fr; gap: 1.5rem;">
+    <article class="thesis-content markdown-body" style="background: #ffffff; border: 1px solid var(--line); border-radius: 12px; padding: 1.5rem;">
+      <div id="st-report-html">
+        <!-- Markdown HTML goes here -->
+      </div>
+    </article>
+    
+    <article class="viz-card" style="background: #111a1c; color: #a5b9bf; font-family: 'IBM Plex Mono', monospace; padding: 1rem; border-radius: 12px; overflow-x: auto;">
+      <h3 style="color: #fff; margin-top: 0;">Console Log</h3>
+      <pre id="st-log" style="white-space: pre-wrap; font-size: 0.85rem; margin: 0;"></pre>
+    </article>
+  </div>
+</section>
+{% endblock %}
+
+{% block scripts %}
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const runBtn = document.getElementById('run-st-btn');
+    const resultsSection = document.getElementById('st-results');
+    const statusTitle = document.getElementById('st-status-title');
+    const reportHtml = document.getElementById('st-report-html');
+    const logBox = document.getElementById('st-log');
+
+    if (!runBtn) return;
+
+    runBtn.addEventListener('click', async () => {
+      runBtn.disabled = true;
+      runBtn.innerHTML = '⏳ Ejecutando pruebas...';
+      resultsSection.style.display = 'none';
+
+      try {
+        const res = await fetch('/api/run-st', { method: 'POST' });
+        const data = await res.json();
+        
+        resultsSection.style.display = 'block';
+        statusTitle.innerHTML = data.success 
+          ? '✅ Pruebas ST completadas con éxito' 
+          : '❌ Hubo fallos en las pruebas ST';
+        
+        reportHtml.innerHTML = data.html || '<p>No se pudo generar el reporte HTML.</p>';
+        logBox.textContent = data.log || 'No hay log de consola.';
+        
+      } catch (err) {
+        resultsSection.style.display = 'block';
+        statusTitle.innerHTML = '⚠️ Error de Red / Ejecución';
+        reportHtml.innerHTML = '<p>Error al comunicarse con el servidor.</p>';
+        logBox.textContent = String(err);
+      } finally {
+        runBtn.disabled = false;
+        runBtn.innerHTML = '▶ Ejecutar Simulaciones ST';
+      }
+    });
+  });
+</script>
+{% endblock %}
