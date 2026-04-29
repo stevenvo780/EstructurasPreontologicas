@@ -301,6 +301,15 @@ Cada capítulo del manuscrito se ancla en al menos un interlocutor principal y u
 
 154. Beyer, B., Jones, C., Petoff, J. y Murphy, N. R. (eds.) (2016). *Site Reliability Engineering: How Google Runs Production Systems*. Sebastopol: O'Reilly Media.
 
+### FF. Tesis Duhem-Quine y holismo confirmatorio (cap 04-04 §1)
+
+155. Duhem, P. (1906). *La théorie physique: son objet, sa structure*. Paris: Chevalier et Rivière.
+156. Quine, W. V. O. (1951). "Two Dogmas of Empiricism". *Philosophical Review* 60(1): 20–43.
+
+### GG. Combination problem en panpsiquismo (cap 04-04 §4)
+
+157. Coleman, S. (2014). "The Real Combination Problem: Panpsychism, Micro-subjects, and Emergence". *Erkenntnis* 79(1): 19–44.
+
 ## Fuentes de Datos (Repositorios Principales)
 
 **Tabla 7.2.**

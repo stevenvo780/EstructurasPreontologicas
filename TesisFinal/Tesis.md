@@ -7135,6 +7135,8 @@ La circularidad es **constitutiva, no viciosa**. Esta es la posición que sostie
 
 La diferencia con el instrumentalismo puro de van Fraassen (1980, *The Scientific Image*) es operativa, no meramente verbal: el instrumentalista renuncia a comprometerse con la realidad de las estructuras inobservables; la tesis se compromete con la realidad estructural moderada del atractor (cuenca medible, bifurcación caracterizable) y con la materialidad del sustrato dinámico que lo sostiene. El compromiso es **estructural moderado** en el sentido operativo del cap 02-01 §0.3, no en el sentido fuerte de Ladyman y Ross (2007), donde la estructura es lo único que existe sin sustrato. La tesis declara su uso del término en el glosario operativo para evitar confusión con el OSR de *Every Thing Must Go*.
 
+**Tres criterios externos como demarcación operacional contra la circularidad viciosa.** Quine y Duhem mostraron que ninguna teoría se contrasta aisladamente — siempre arrastra hipótesis auxiliares que pueden absorber el fallo predictivo (tesis Duhem-Quine: Quine 1951, "Two Dogmas of Empiricism", *Phil. Review* 60: 20-43; Duhem 1906, *La théorie physique*). La tesis acepta la holístico-empirismo y le añade un cierre operativo: los tres criterios externos (multi-sonda, replicación inter-grupo, intervención experimental confirmatoria) **no se ajustan caso por caso** sino que son la frontera fija más allá de la cual el ajuste es imposible. Esto convierte la circularidad constitutiva en **circularidad demarcable**: dentro del aparato, la justificación es interna (κ-pragmática); en la frontera de los tres criterios externos, la justificación se vuelve externa (κ-ontológica). Mientras los tres criterios no se cumplan en ningún caso del corpus, la tesis declara explícitamente que sus afirmaciones son κ-pragmática. El día en que un caso los cumpla, la tesis pasa a κ-ontológica para ese caso, no para los demás. La distinción es **operativamente verificable caso por caso**, no programáticamente abstracta.
+
 ### Costo
 
 La tesis no demuestra que la realidad existe independientemente del aparato. Esa demostración es metafísicamente imposible bajo cualquier marco no-dogmático: cualquier prueba de la independencia se ofrece **dentro** de un aparato (perceptivo, conceptual, instrumental). La tesis paga el costo de no garantizar correspondencia, a cambio de garantizar **coherencia operativa** (cap 02-01 §3, tipos 1-4 de realidad) y **trazabilidad pública** (dossier de catorce componentes). Quien exija demostración de la independencia metafísica debe primero proveer un aparato que produzca tal demostración; ninguna posición filosófica conocida lo hace.
@@ -7259,6 +7261,10 @@ Sobre el panpsiquismo russelliano de Strawson y Goff específicamente:
 - Goff (2019, *Galileo's Error*, cap. 6) sostiene que la física describe estructura sin describir la naturaleza intrínseca. La tesis recoge la advertencia: la descripción operativa del atractor (cuenca, bifurcación, exponente Lyapunov) es estructural en el sentido goffiano. Pero la tesis añade el sustrato material dinámico como **relato del relata**, no como sustancia separada. La materialidad del cap 02-01 §1.1 no es la "ecuación" de la materia; es lo que sostiene a la ecuación. Esto contradice a Goff solo si se lee la materialidad como puramente estructural; bajo la lectura del manuscrito, la materialidad es **proceso dinámico instanciado**, no pura estructura, lo cual deja menos espacio al hueco russelliano.
 
 La tesis es naturalismo **metodológico**, no naturalismo **ontológico fuerte**. La diferencia con el fisicalismo de partículas (cap 04-01 §2) es que la tesis admite la realidad estructural moderada, no solo lo microfísico; la diferencia con Strawson-Goff es que la tesis no atribuye experiencia ubicua, sino estabilizaciones dinámicas con grados.
+
+**Argumento contra el problema de la combinación.** La objeción específica al panpsiquismo russelliano que la tesis hace propia es el **combination problem** articulado por Chalmers (1996, *The Conscious Mind*, cap. 8) y reformulado por Coleman (2014, "The Real Combination Problem", *Erkenntnis* 79: 19-44): si las micro-experiencias de las partículas son inextensas y simples, ¿cómo se combinan en macro-experiencia unificada de un sujeto? El panpsiquismo russelliano carece de mecanismo articulado para esa combinación; cada propuesta (constituive panpsychism, emergent panpsychism, cosmopsychism) reproduce el problema duro al nivel macro o exige emergencia radical en algún punto. La tesis evita el problema **no postulando experiencia ubicua**: la experiencia, donde aparece (sistemas con cierto grado de cierre operativo y autoorganización), es propiedad de la dinámica acoplada, no de las partículas. La carga de la prueba sobre la combinación se traslada al panpsiquismo: hasta que articule el mecanismo, su parsimonia aparente es ilusoria.
+
+**Argumento de progresividad operativa.** Mientras el panpsiquismo russelliano no produce predicción discriminante sobre fenómenos observables (ningún experimento distingue universo panpsiquista de universo no-panpsiquista, dado que la experiencia ubicua sería estructuralmente invisible), la tesis sí produce predicciones discriminantes en su régimen propio: el corpus EDI distingue casos con cierre operativo de casos sin él, y los controles de falsación se rechazan correctamente. La progresividad lakatosiana (definida en §3 (d)) opera aquí como criterio de demarcación: el programa de la tesis es operativamente progresivo; el programa panpsiquista russelliano, en su versión actual, no lo es. Esto no refuta filosóficamente al panpsiquismo —la tesis lo declara fuera de su jurisdicción— pero sí justifica metodológicamente la elección por el naturalismo metodológico para el dominio empíricamente accesible.
 
 ### Costo
 
@@ -8638,6 +8644,15 @@ Cada capítulo del manuscrito se ancla en al menos un interlocutor principal y u
 ### EE. Ingeniería de confiabilidad e infraestructura (cap 05-03 §6.3)
 
 154. Beyer, B., Jones, C., Petoff, J. y Murphy, N. R. (eds.) (2016). *Site Reliability Engineering: How Google Runs Production Systems*. Sebastopol: O'Reilly Media.
+
+### FF. Tesis Duhem-Quine y holismo confirmatorio (cap 04-04 §1)
+
+155. Duhem, P. (1906). *La théorie physique: son objet, sa structure*. Paris: Chevalier et Rivière.
+156. Quine, W. V. O. (1951). "Two Dogmas of Empiricism". *Philosophical Review* 60(1): 20–43.
+
+### GG. Combination problem en panpsiquismo (cap 04-04 §4)
+
+157. Coleman, S. (2014). "The Real Combination Problem: Panpsychism, Micro-subjects, and Emergence". *Erkenntnis* 79(1): 19–44.
 
 ## Fuentes de Datos (Repositorios Principales)
 
