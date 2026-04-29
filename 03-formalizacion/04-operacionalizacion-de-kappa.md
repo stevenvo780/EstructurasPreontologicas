@@ -202,6 +202,18 @@ El módulo `common/threshold_sensitivity.py` barre la grilla `weak_low ∈ {0.05
 
 El módulo `common/power_analysis.py` distingue `null_real` (potencia ≥ 0.80 para detectar EDI weak) de `null_por_potencia_insuficiente` (n insuficiente para alcanzar potencia 0.80). De los 17 casos null en el corpus actual, 4 son null reales y 13 son null por potencia insuficiente; estos últimos requieren n ≥ 124 vs n actual entre 8 y 19. El manuscrito, en consecuencia, no afirma ausencia de cierre operativo en esos 13 casos: afirma falta de resolución estadística para detectarlo bajo el régimen actual.
 
+### Información efectiva como métrica auxiliar (declaración)
+
+El módulo `09-simulaciones-edi/common/hybrid_validator.py:249` implementa una función `effective_information(obs, full_pred, reduced_pred) = H(residuos_reducido) − H(residuos_completo)`, donde `H` es entropía diferencial estimada por KDE gaussiana. El valor se persiste en `metrics.json::effective_information` para cada caso del corpus.
+
+**Estatuto declarado:** esta cantidad es **métrica auxiliar reportada por convención**, no métrica central del aparato. La tesis hace explícitas tres aclaraciones para evitar confusión con la tradición IIT:
+
+1. **No es la "Effective Information" de Hoel-Albantakis-Tononi** (2013, *PNAS* 110:19790-19795) ni de Tononi (2008, *Biological Bulletin* 215:216-242). Aquellas se calculan sobre matrices de transición discretas con intervención uniforme `do(C = c)` y miden información mutua entre causa y efecto bajo ese ensemble. La función del aparato calcula diferencia de entropía de residuos predictivos; son cantidades **conceptualmente distintas**.
+2. **No hay compromiso con IIT.** La tesis no afirma que el sistema acoplado tenga "phi", "experiencia integrada" o cualquier propiedad protoconsciente de la familia IIT. La discusión filosófica con causal emergence (Hoel 2017) en cap 02-05 §2.5 se mantiene como diálogo conceptual, no como adopción operativa.
+3. **No es árbitro.** La métrica central del aparato es **EDI** (cap 03-04 §"EDI") y la inferencia procede por permutación 999 + bootstrap 500 + C1-C5 + FWER Holm-Bonferroni. La información efectiva auxiliar se reporta como descriptor adicional para evaluadores que la pidan, nunca como justificación de admisión.
+
+**Decisión documentada:** la función se mantiene en el código por trazabilidad histórica (estaba presente en el pipeline desde la primera versión) y como descriptor opcional. Su valor no entra en QES, no entra en `overall_pass`, no entra en la clasificación del paisaje de emergencia. Si una pasada futura del aparato decidiera elevarla a métrica central, requeriría rediseño explícito documentado en bitácora con calibración contra IIT estándar.
+
 ### Auditoría de calidad de evidencia (QES)
 
 El módulo `common/quality_scorer.py` asigna a cada caso siete puntajes Qi ∈ [0, 1]:

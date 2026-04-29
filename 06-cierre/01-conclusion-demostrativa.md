@@ -52,7 +52,7 @@ La tesis queda demostrada cuando se cumplen siete condiciones simultáneas. Cada
 |-----------|--:|-------------|
 | Strong (gate completo) | 4 | Energía (0.650), Deforestación (0.602), Kessler (0.353), Riesgo Biológico (0.333) |
 | Strong (sin gate) | 1 | Microplásticos (0.782) |
-| Weak | 7 | Políticas, Postverdad, Urbanización, Fósforo, Wikipedia, Epidemiología, Movilidad |
+| Weak | 8 | Políticas, Postverdad, Urbanización, Fósforo, Wikipedia, Epidemiología, Movilidad, Behavioral Dynamics (caso 30 v2) |
 | Suggestive | 2 | Finanzas, Salinización |
 | Trend | 4 | Justicia, Starlink, Fuga cerebros, Clima |
 | Null | 8 | Conciencia, Contaminación, Paradigmas, Océanos, Acidificación, Erosión, Acuíferos, IoT |

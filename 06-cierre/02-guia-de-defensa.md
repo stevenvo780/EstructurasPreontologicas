@@ -25,7 +25,7 @@ Cinco operadores formales con procedimiento empírico, cuatro registros articula
 
 ### Criterio central
 
-Una compresión es legítima si preserva las dependencias relevantes para la pregunta con tolerancia explícita y produce predicción o intervención discriminante. La emergencia es self-organization de sistemas acoplados, no sustancia nueva. La causalidad es circular y completamente material.
+Una compresión es legítima si preserva las dependencias relevantes para la pregunta con tolerancia explícita y produce predicción o intervención discriminante. La emergencia es self-organization de sistemas acoplados (sentido técnico anclado en cap 02-04 §4: Maturana-Varela 1980, Haken 1977), no sustancia nueva. La causalidad es circular y completamente material.
 
 ### Demostración
 
@@ -97,7 +97,7 @@ Explicar es elegir el nivel de descripción que preserva la organización releva
 
 ### Pregunta 2. ¿No estás simplemente reformulando un emergentismo débil?
 
-**Respuesta breve**: no, porque no presento la organización como sustancia nueva. La trato como self-organization: estabilización dinámica del sistema acoplado verificable por cuenca de atracción y bifurcación. La diferencia es operativa, no retórica.
+**Respuesta breve**: no, porque no presento la organización como sustancia nueva. La trato como self-organization en sentido técnico (cap 02-04 §4, Maturana-Varela 1980, Haken 1977): estabilización dinámica del sistema acoplado verificable por cuenca de atracción y bifurcación. La diferencia es operativa, no retórica.
 
 ### Pregunta 3. ¿Cómo decides cuándo una categoría es legítima?
 

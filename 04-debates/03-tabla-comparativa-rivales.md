@@ -161,7 +161,7 @@ La tesis cumple los seis criterios. Ninguna posición rival cumple los seis. La 
 
 **Tesis rechaza:** negación de L3.
 
-**Discrimina en:** B, C, D. La tesis es conductismo enriquecido con dinámica y self-organization.
+**Discrimina en:** B, C, D. La tesis es conductismo enriquecido con dinámica y self-organization en el sentido técnico de cap 02-04 §4 (Maturana-Varela 1980, Haken 1977).
 
 ### 11. Enactivismo radical
 

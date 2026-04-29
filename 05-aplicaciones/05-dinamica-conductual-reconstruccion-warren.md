@@ -150,7 +150,7 @@ F = α τ_bal θ + β x          ley de control derivada
 
 ### Lo que esto le aporta a la tesis
 
-Aquí se ve con nitidez la **causalidad circular**: la dinámica acoplada produce una estabilización (oscilación controlada) que no estaba en ninguna de las componentes por separado, y esa estabilización retroalimenta a las componentes (las leyes de control quedan ajustadas porque funcionan). Eso es self-organization en el sentido técnico de la corrección 3 del diagnóstico — emergencia anclada, sin sustancia nueva.
+Aquí se ve con nitidez la **causalidad circular**: la dinámica acoplada produce una estabilización (oscilación controlada) que no estaba en ninguna de las componentes por separado, y esa estabilización retroalimenta a las componentes (las leyes de control quedan ajustadas porque funcionan). Eso es self-organization en el sentido técnico anclado en cap 02-04 §4 (Maturana-Varela 1980, Haken 1977) — emergencia anclada, sin sustancia nueva.
 
 Y se ve también la asimetría B ↔ L3 que la corrección 5 exigía: cada parámetro del sistema reducido se traduce a una variable medible (rigidez aparente del brazo, ángulo del palo, ángulo umbral, intervalo de control). No hay nada flotante.
 
@@ -250,7 +250,7 @@ Postula que solo cuentan las relaciones entre estímulos y respuestas observable
 
 - recorta correctamente el plano B pero borra la estructura formal L3 que efectivamente discrimina hipótesis;
 - niega la realidad estructural de los atractores que sí están empíricamente identificados;
-- no provee aparato para tratar acoplamientos múltiples, bifurcaciones, self-organization.
+- no provee aparato para tratar acoplamientos múltiples, bifurcaciones, self-organization (en el sentido técnico anclado en cap 02-04 §4).
 
 Diagnóstico: el conductismo radical es un primo empobrecido del marco propuesto. La tesis le añade L3 sin perder anclaje en B.
 
@@ -286,7 +286,7 @@ Este capítulo demuestra cuatro cosas.
 
 3. **Los patrones estabilizados son reales**: los atractores y repulsores de los modelos no son nombres impuestos por el investigador; son propiedades del sistema acoplado que predicen trayectorias, transiciones e intervenciones. Eso es realismo estructural moderado en su versión más fuerte: el patrón existe en el sustrato dinámico, pero su descripción depende del recorte de tarea.
 
-4. **La emergencia funciona como self-organization**: las estabilidades observadas no requieren sustancia nueva ni controlador centralizado. Emergen del acoplamiento bajo restricciones físicas, informacionales y de tarea. La causalidad es circular y completamente material.
+4. **La emergencia funciona como self-organization** (cap 02-04 §4, Maturana-Varela 1980, Haken 1977): las estabilidades observadas no requieren sustancia nueva ni controlador centralizado. Emergen del acoplamiento bajo restricciones físicas, informacionales y de tarea. La causalidad es circular y completamente material.
 
 ## Lo que este caso no demuestra
 

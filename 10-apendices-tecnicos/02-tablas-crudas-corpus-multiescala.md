@@ -14,7 +14,7 @@ Apéndice tabular de **resultados crudos verificables** del corpus EDI multiesca
 
 | # | Caso | Escala (longitud) | Escala (tiempo) | EDI | p | CI 95% | Nivel | Overall pass |
 |---|------|-------------------|-----------------|----:|--:|--------|------:|:------------:|
-| 31 | Decoherencia qubit | 10⁻⁹ m | 10⁻⁶ s | 0.84 | 0.000 | estrecho | 4 | True |
+| 31 | Decoherencia qubit | 10⁻⁹ m | 10⁻⁶ s | 0.91 | 0.000 | [0.89, 0.93] | 4 | True |
 | 32 | Espín-órbita | 10⁻¹⁰ m | 10⁻¹⁵ s | 0.83 | 0.000 | [0.80, 0.85] | 4 | True |
 | 33 | Villin Headpiece | 10⁻⁹ m | 10⁻⁶ s | 0.00 | 0.826 | ~0 | 0 | False |
 | 34 | Michaelis-Menten | 10⁻⁸ m | 10⁻³ s | 0.46 | 0.000 | [0.33, 0.57] | 4 | True |

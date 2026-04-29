@@ -37,6 +37,7 @@ Cada capítulo del manuscrito se ancla en al menos un interlocutor principal y u
 2. Bennett, J. (2010). *Vibrant Matter: A Political Ecology of Things*. Durham: Duke University Press.
 3. Bueno, G. (1978). *Ensayos materialistas*. Madrid: Taurus.
 4. Bunge, M. (1959). *Causality: The Place of the Causal Principle in Modern Science*. Cambridge: Harvard University Press.
+4bis. Bunge, M. (1977). *Treatise on Basic Philosophy, Volume 3: Ontology I: The Furniture of the World*. Dordrecht: Reidel.
 5. Bunge, M. (1979). *Treatise on Basic Philosophy, Volume 4: Ontology II: A World of Systems*. Dordrecht: Reidel.
 6. Chalmers, D. (2006). "Strong and Weak Emergence". En P. Clayton y P. Davies (eds.), *The Re-Emergence of Emergence*. Oxford: Oxford University Press.
 7. Dennett, D. (1991). "Real Patterns". *The Journal of Philosophy* 88(1): 27–51.
@@ -51,6 +52,7 @@ Cada capítulo del manuscrito se ancla en al menos un interlocutor principal y u
 16. O'Connor, T. y Wong, H. Y. (2005). "The Metaphysics of Emergence". *Noûs* 39(4): 658–678.
 17. Sellars, W. (1962). "Philosophy and the Scientific Image of Man". En R. Colodny (ed.), *Frontiers of Science and Philosophy*. Pittsburgh: University of Pittsburgh Press.
 18. Simondon, G. (1989). *Du mode d'existence des objets techniques*. Paris: Aubier.
+18bis. Simondon, G. (1958/2005). *L'individuation à la lumière des notions de forme et d'information*. Grenoble: Millon (edición completa). [Tesis doctoral defendida en 1958; ediciones parciales 1964 PUF y 1989 Aubier].
 19. van Fraassen, B. C. (1980). *The Scientific Image*. Oxford: Oxford University Press.
 20. Whitehead, A. N. (1929). *Process and Reality*. New York: Macmillan.
 21. Wittgenstein, L. (1953). *Philosophical Investigations*. Oxford: Blackwell.
@@ -60,7 +62,9 @@ Cada capítulo del manuscrito se ancla en al menos un interlocutor principal y u
 23. Batterman, R. (2002). *The Devil in the Details: Asymptotic Reasoning in Explanation, Reduction, and Emergence*. Oxford: Oxford University Press.
 24. Bechtel, W. (2008). *Mental Mechanisms: Philosophical Perspectives on Cognitive Neuroscience*. New York: Routledge.
 25. Cartwright, N. (1989). *Nature's Capacities and Their Measurement*. Oxford: Clarendon Press.
+25bis. Cartwright, N. (1983). *How the Laws of Physics Lie*. Oxford: Clarendon Press.
 26. Cartwright, N. (1999). *The Dappled World: A Study of the Boundaries of Science*. Cambridge: Cambridge University Press.
+26bis. Cartwright, N. (2007). *Hunting Causes and Using Them: Approaches in Philosophy and Economics*. Cambridge: Cambridge University Press.
 27. Craver, C. (2007). *Explaining the Brain: Mechanisms and the Mosaic Unity of Neuroscience*. Oxford: Oxford University Press.
 28. Mitchell, S. D. (2009). *Unsimple Truths: Science, Complexity, and Policy*. Chicago: University of Chicago Press.
 29. Pearl, J. (2009). *Causality: Models, Reasoning, and Inference*. 2.ª ed. Cambridge: Cambridge University Press.
@@ -171,6 +175,88 @@ Cada capítulo del manuscrito se ancla en al menos un interlocutor principal y u
 
 89. Brooks, R. A. (1991). "Intelligence Without Representation". *Artificial Intelligence* 47(1–3): 139–159.
 90. Pfeifer, R. y Scheier, C. (1999). *Understanding Intelligence*. Cambridge: MIT Press.
+
+### M. Epistemología naturalizada e instrumentalismo
+
+91. Carnap, R. (1950). "Empiricism, Semantics, and Ontology". *Revue Internationale de Philosophie* 4(11): 20–40.
+92. Hacking, I. (1983). *Representing and Intervening: Introductory Topics in the Philosophy of Natural Science*. Cambridge: Cambridge University Press.
+93. Quine, W. V. O. (1969). "Epistemology Naturalized". En *Ontological Relativity and Other Essays*, pp. 69–90. New York: Columbia University Press.
+94. Sellars, W. (1956). "Empiricism and the Philosophy of Mind". En H. Feigl y M. Scriven (eds.), *Minnesota Studies in the Philosophy of Science*, vol. 1, pp. 253–329. Minneapolis: University of Minnesota Press.
+
+### N. Filosofía de la mente — panpsiquismo, identidad, naturaleza intrínseca
+
+95. Chalmers, D. J. (1996). *The Conscious Mind: In Search of a Fundamental Theory*. New York: Oxford University Press.
+96. Goff, P. (2019). *Galileo's Error: Foundations for a New Science of Consciousness*. New York: Pantheon Books.
+97. Locke, J. (1690/1975). *An Essay Concerning Human Understanding*. P. H. Nidditch (ed.). Oxford: Clarendon Press.
+98. Parfit, D. (1984). *Reasons and Persons*. Oxford: Clarendon Press.
+99. Reid, T. (1785/2002). *Essays on the Intellectual Powers of Man*. D. R. Brookes (ed.). Edinburgh: Edinburgh University Press.
+100. Strawson, G. (2006). "Realistic Monism: Why Physicalism Entails Panpsychism". *Journal of Consciousness Studies* 13(10–11): 3–31.
+
+### O. Política agonística, descolonialidad y geofilosofía (deudas declaradas cap 04-04 §7)
+
+101. Castro-Gómez, S. (2007). *La hybris del punto cero: Ciencia, raza e Ilustración en la Nueva Granada (1750-1816)*. Bogotá: Pontificia Universidad Javeriana.
+102. Dewey, J. (1934). *Art as Experience*. New York: Minton, Balch & Company.
+103. Lefebvre, H. (1974/1991). *The Production of Space*. Trad. D. Nicholson-Smith. Oxford: Blackwell.
+104. Lewis, D. (1991). *Parts of Classes*. Oxford: Blackwell.
+105. Mignolo, W. (2007). *The Idea of Latin America*. Oxford: Blackwell.
+106. Mouffe, C. (2005). *On the Political*. London: Routledge.
+107. Quijano, A. (2000). "Colonialidad del poder, eurocentrismo y América Latina". En E. Lander (comp.), *La colonialidad del saber: eurocentrismo y ciencias sociales. Perspectivas latinoamericanas*, pp. 201–246. Buenos Aires: CLACSO.
+108. Rancière, J. (1995/1999). *Disagreement: Politics and Philosophy*. Trad. J. Rose. Minneapolis: University of Minnesota Press. [Original *La Mésentente*, Galilée 1995].
+109. Simons, P. (1987). *Parts: A Study in Ontology*. Oxford: Clarendon Press.
+110. Whitehead, A. N. (1929). *Process and Reality: An Essay in Cosmology*. New York: Macmillan. [Edición corregida: Free Press, 1978].
+
+### P. Información ecológica y comunicación (cap 02-04)
+
+111. Bateson, G. (1972). *Steps to an Ecology of Mind*. New York: Ballantine Books.
+112. Dretske, F. (1981). *Knowledge and the Flow of Information*. Cambridge: MIT Press.
+113. Floridi, L. (2011). *The Philosophy of Information*. Oxford: Oxford University Press.
+
+### Q. Análisis topológico de series (cap 02-01 §2.2.2)
+
+114. Grassberger, P. y Procaccia, I. (1983). "Characterization of Strange Attractors". *Physical Review Letters* 50(5): 346–349. [Versión extendida: *Physica D* 9(1–2): 189–208].
+115. Haken, H. (1977). *Synergetics: An Introduction. Nonequilibrium Phase Transitions and Self-Organization in Physics, Chemistry and Biology*. 1.ª ed. Berlin: Springer-Verlag. [3.ª ed. 1983 ya listada en E.49].
+116. Rosenstein, M. T., Collins, J. J. y De Luca, C. J. (1993). "A Practical Method for Calculating Largest Lyapunov Exponents from Small Data Sets". *Physica D* 65(1–2): 117–134.
+117. Takens, F. (1981). "Detecting Strange Attractors in Turbulence". En D. A. Rand y L.-S. Young (eds.), *Dynamical Systems and Turbulence*, *Lecture Notes in Mathematics* 898, pp. 366–381. Berlin: Springer.
+
+### R. Calibración estadística avanzada (cap 03-04)
+
+118. Holm, S. (1979). "A Simple Sequentially Rejective Multiple Test Procedure". *Scandinavian Journal of Statistics* 6(2): 65–70.
+119. Newey, W. K. y West, K. D. (1987). "A Simple, Positive Semi-definite, Heteroskedasticity and Autocorrelation Consistent Covariance Matrix". *Econometrica* 55(3): 703–708.
+120. Politis, D. N. y Romano, J. P. (1994). "The Stationary Bootstrap". *Journal of the American Statistical Association* 89(428): 1303–1313.
+121. Künsch, H. R. (1989). "The Jackknife and the Bootstrap for General Stationary Observations". *Annals of Statistics* 17(3): 1217–1241.
+
+### S. Mecánica cuántica — interpretaciones realistas (cap 02-01 §13)
+
+122. Everett III, H. (1957). "'Relative State' Formulation of Quantum Mechanics". *Reviews of Modern Physics* 29(3): 454–462.
+123. DeWitt, B. S. (1970). "Quantum Mechanics and Reality". *Physics Today* 23(9): 30–35.
+124. Ghirardi, G. C., Rimini, A. y Weber, T. (1986). "Unified Dynamics for Microscopic and Macroscopic Systems". *Physical Review D* 34(2): 470–491.
+125. Zurek, W. H. (2003). "Decoherence, einselection, and the quantum origins of the classical". *Reviews of Modern Physics* 75(3): 715–775.
+
+### T. Biología procesual y enactivismo (cap 02-04, 05-01)
+
+126. Hutto, D. D. y Myin, E. (2013). *Radicalizing Enactivism: Basic Minds without Content*. Cambridge: MIT Press.
+127. Hutto, D. D. y Myin, E. (2017). *Evolving Enactivism: Basic Minds Meet Content*. Cambridge: MIT Press.
+128. Thompson, E. (2007). *Mind in Life: Biology, Phenomenology, and the Sciences of Mind*. Cambridge: Harvard University Press.
+
+### U. Filosofía colombiana e hispanoamericana (extensión cap 02-01 §0.3)
+
+129. Bunge, M. (1980). *Epistemología: Curso de actualización*. Barcelona: Ariel.
+130. Hoyos Vásquez, G. (1986). *Los intereses de la vida cotidiana y las ciencias*. Bogotá: Universidad Nacional de Colombia.
+
+### V. Inferencialismo y filosofía del lenguaje (cap 02-02)
+
+131. Brandom, R. B. (1994). *Making It Explicit: Reasoning, Representing, and Discursive Commitment*. Cambridge: Harvard University Press.
+
+### W. Mecanicismo procesual y enactivismo radical (cap 03-03, 04-01)
+
+132. Adams, F. y Aizawa, K. (2008). *The Bounds of Cognition*. Oxford: Wiley-Blackwell.
+133. Bechtel, W. y Richardson, R. C. (1993/2010). *Discovering Complexity: Decomposition and Localization as Strategies in Scientific Research*. Cambridge: MIT Press. [Reedición 2010 con prólogo nuevo].
+134. Chemero, A. (2009). *Radical Embodied Cognitive Science*. Cambridge: MIT Press.
+135. Glennan, S. (2017). *The New Mechanical Philosophy*. Oxford: Oxford University Press.
+
+### X. Filosofía de la mente analítica (cap 05-01, 04-01)
+
+136. Chalmers, D. J. (1995). "Facing Up to the Problem of Consciousness". *Journal of Consciousness Studies* 2(3): 200–219.
 
 ## Fuentes de Datos (Repositorios Principales)
 

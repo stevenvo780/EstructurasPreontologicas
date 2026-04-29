@@ -283,7 +283,7 @@ Pierde en cero criterios. Discrimina en B, C, D.
 
 ### Restricción honesta
 
-El conductismo radical es primo empobrecido del marco propuesto. La tesis le añade L3 sin perder anclaje en B; podría decirse que es un conductismo enriquecido con dinámica y self-organization.
+El conductismo radical es primo empobrecido del marco propuesto. La tesis le añade L3 sin perder anclaje en B; podría decirse que es un conductismo enriquecido con dinámica y self-organization en el sentido técnico anclado en cap 02-04 §4 (Maturana-Varela 1980, Haken 1977).
 
 ## 12. Enactivismo radical
 

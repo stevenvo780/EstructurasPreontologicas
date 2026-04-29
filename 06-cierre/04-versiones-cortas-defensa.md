@@ -139,7 +139,7 @@ Esta tesis no clausura la complejidad de lo real. Ofrece reglas para no empeorar
 
 ### P2. ¿No estás reformulando emergentismo débil?
 
-**Respuesta:** no, porque no presento la organización como sustancia nueva. La trato como self-organization: estabilización dinámica del sistema acoplado verificable por cuenca y bifurcación. La diferencia es operativa, no retórica.
+**Respuesta:** no, porque no presento la organización como sustancia nueva. La trato como self-organization en sentido técnico (cap 02-04 §4, Maturana-Varela 1980 y Haken 1977): estabilización dinámica del sistema acoplado verificable por cuenca y bifurcación. La diferencia es operativa, no retórica.
 
 ### P3. ¿Cómo decides cuándo una categoría es legítima?
 

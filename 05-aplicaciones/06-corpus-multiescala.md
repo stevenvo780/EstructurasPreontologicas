@@ -33,7 +33,7 @@ Astrofísica masiva ~10¹⁷-10²⁰m  ~10¹⁴ s         Caso 40 (Cúmulo globu
 | # | Caso | Escala | EDI | p | Sonda |
 |---|------|--------|----:|--:|-------|
 | 32 | Espín-órbita | Atómica | 0.83 | 0.000 | H_eff con coupling |
-| 31 | Decoherencia qubit | Cuántica | 0.84 | 0.000 | Lindblad con T2(T_bath) |
+| 31 | Decoherencia qubit | Cuántica | 0.91 | 0.000 | Lindblad con T2(T_bath) |
 | 34 | Michaelis-Menten | Bioquímica | 0.46 | 0.000 | MM con Lineweaver-Burk |
 | 36 | NF-κB | Celular oscilatoria | 0.59 | 0.000 | Hoffmann reducido |
 | 37 | HRV cardíaco | Individual | 0.58 | 0.000 | Mackey-Glass con delay |
@@ -161,6 +161,6 @@ La primera iteración era **ontología regional macro-poblacional con extensión
 | "Estructuras pre-ontológicas" como criterio de admisión | "Estructuras pre-ontológicas" como **categoría ontológica común** verificada |
 | Generalidad postulada | Generalidad operativamente respaldada |
 
-**Esto NO es auto-indulgencia retórica:** las correcciones aplicadas en V4 reconocen explícitamente que la generalidad sigue siendo **propuesta operativamente articulada con demostración parcial bajo régimen declarado**, no demostración cerrada. Lo que cambió es el alcance conceptual de la tesis (ahora es ontológica general), no la fuerza inferencial (sigue siendo parcial hasta convergencia inter-grupo + datos reales + revisión externa).
+La generalidad multiescalar se sostiene como **propuesta operativamente articulada con demostración parcial bajo régimen declarado**, no como demostración cerrada. Lo que cambió respecto a la primera iteración es el alcance conceptual (ahora ontología general), no la fuerza inferencial (sigue siendo parcial hasta convergencia inter-grupo, datos reales y revisión externa).
 
-Esta es la tesis que el manuscrito entrega tras hostile testing severo: **ontología general multiescalar operativamente articulada, no más auto-indulgente, no más restringida a la escala macro, validada operativamente en 8 escalas y 30 dominios, con 2 nulls honestos que muestran las fronteras del aparato y limitaciones explícitamente reconocidas como deuda externa**.
+La tesis que el manuscrito entrega es: ontología general multiescalar operativamente articulada, validada en 8 escalas y 30 dominios, con 2 nulls honestos que delimitan el aparato y limitaciones explícitamente reconocidas como deuda externa.

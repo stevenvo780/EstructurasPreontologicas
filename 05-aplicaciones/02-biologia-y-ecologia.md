@@ -184,7 +184,7 @@ La tesis no privilegia ninguno como único verdadero. Cada nivel se justifica po
 | Esencialismo biológico | Categorías como especie o función no son esencias inmóviles |
 | Reduccionismo molecular | La lista de moléculas no agota regulación, forma, función o organización ecológica |
 | Holismo nebuloso | La red ecológica no es totalidad mística; es conjunto de dependencias modelables |
-| Vitalismo | No requiere fuerza vital adicional; self-organization explica organización |
+| Vitalismo | No requiere fuerza vital adicional; self-organization (cap 02-04 §4, Maturana-Varela 1980 y Haken 1977) explica organización sin sustancia nueva |
 
 ## 7. Diálogo con interlocutores
 

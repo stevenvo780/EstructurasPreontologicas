@@ -111,17 +111,24 @@ La trayectoria conductual del par no es la suma de la trayectoria del agente y l
 
 ## 4. Self-organization: el modelo positivo de la emergencia
 
-El borrador rechazaba el emergentismo fuerte (correctamente) pero solo como negación. Faltaba el modelo positivo. La tesis lo proporciona aquí:
+El borrador rechazaba el emergentismo fuerte (correctamente) pero solo como negación. Faltaba el modelo positivo. La tesis lo proporciona aquí, **anclado disciplinarmente** en dos tradiciones independientes que convergen en lo esencial:
+
+- **Maturana y Varela (1980, *Autopoiesis and Cognition*, p. 78-84):** la organización viva es *"a network of processes of production [...] which through their interactions and transformations continuously regenerate and realize the network of processes that produced them"* (p. 78-79). La autopoiesis es **cierre operacional sostenido por transformaciones materiales**, no propiedad emergente sustancial.
+- **Haken (1977, *Synergetics: An Introduction*, cap. 1, p. 1-7):** *"in many disciplines [...] a sudden self-organization of structure is observed when control parameters cross critical values"* (p. 1). El **principio del esclavizamiento** (slaving principle, cap. 7, p. 191-204) reduce la dinámica de muchos modos a unos pocos modos colectivos cuando el sistema cruza un umbral crítico — operacionalización de la emergencia sin sustancia añadida.
+
+Sobre esa doble base, la tesis fija:
 
 > Un fenómeno es emergente, en el sentido del marco, cuando dos o más sistemas dinámicos materialmente acoplados generan en el espacio conjunto estabilidades, inestabilidades y transiciones que no están preinscritas en ninguno de los componentes aislados pero tampoco son sustancia nueva.
 
-Esta es la formulación técnica de self-organization: la emergencia es estabilización dinámica del sistema acoplado, no aparición de entidad adicional. Tres rasgos:
+Esta es la formulación técnica de **self-organization en sentido Maturana-Varela + Haken**: la emergencia es estabilización dinámica del sistema acoplado bajo restricciones físicas, informacionales y de tarea, no aparición de entidad adicional. Tres rasgos:
 
 - **upward causation**: las componentes producen la dinámica global;
 - **downward causation**: la dinámica global retroalimenta a las componentes (las leyes de control quedan ajustadas porque funcionan en el régimen estable);
 - **anclaje material**: el fenómeno emergente es materialmente realizado y empíricamente identificable.
 
-Esto cierra la cláusula del capítulo 02-01: la emergencia no multiplica sustancias, opera como auto-organización.
+**Convención del manuscrito (glosario operativo §"Self-organization (sentido técnico)"):** cualquier ocurrencia textual de "self-organization", "auto-organización" o equivalentes en este manuscrito remite a esta sección y a las dos fuentes citadas. Donde la prosa no pueda mantener el anclaje disciplinar, debe sustituirse por "estabilización dinámica" o "convergencia a atractor".
+
+Esto cierra la cláusula del capítulo 02-01: la emergencia no multiplica sustancias, opera como auto-organización en el sentido Maturana-Varela 1980 y Haken 1977.
 
 ## 5. Información ecológica como categoría central
 

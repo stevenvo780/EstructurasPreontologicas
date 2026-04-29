@@ -407,7 +407,7 @@ Regularidad operativa anterior a la objetualidad sustancial. Ni cosa con esencia
 Posición filosófica del manuscrito: realismo estructural moderado (en sentido operativo no-Ladyman, ver entrada siguiente) + pluralismo epistemológico + anti-reificación operativa. Ni realismo ingenuo, ni instrumentalismo puro, ni irrealismo radical. Capítulo 02-01.
 
 ### Realismo estructural moderado (uso operativo)
-Compromiso filosófico de la tesis con la realidad de las estructuras —entendidas aquí como atractores empíricamente identificables sobre sustrato material dinámico— sin reducirla a estructura sin relata. **Declaración explícita de no-importación:** la tesis NO adopta la versión *ontic structural realism* de Ladyman & Ross (2007, *Every Thing Must Go*, §2.4), donde la estructura agota lo real y los relata son eliminables. La tesis exige sustrato material sosteniendo la estructura (cap 02-01 §1.1). Cualquier referencia textual a "realismo estructural moderado" en el cuerpo del manuscrito debe leerse bajo esta convención. Capítulo 02-01 §0.3.
+Compromiso filosófico de la tesis con la realidad de las estructuras —entendidas aquí como atractores empíricamente identificables sobre sustrato material dinámico— sin reducirla a estructura sin relata. **Declaración explícita de no-importación:** la tesis NO adopta la versión *ontic structural realism* de Ladyman y Ross (2007, *Every Thing Must Go*, §2.4), donde la estructura agota lo real y los relata son eliminables. La tesis exige sustrato material sosteniendo la estructura (cap 02-01 §1.1). Cualquier referencia textual a "realismo estructural moderado" en el cuerpo del manuscrito debe leerse bajo esta convención. Capítulo 02-01 §0.3.
 
 ### Self-organization (sentido técnico)
 Modelo positivo de la emergencia anclado en la tradición Maturana-Varela (1980, *Autopoiesis and Cognition*) y Haken (1977, *Synergetics*). Designa la estabilización dinámica del sistema acoplado bajo restricciones físicas, informacionales y de tarea, sin postular sustancias nuevas. Causalidad circular upward+downward, ambas materiales. **No es invocación retórica:** cualquier ocurrencia textual no anclada disciplinarmente debe sustituirse por "estabilización dinámica" o "convergencia a atractor". Capítulo 02-04 §4.
@@ -469,6 +469,9 @@ Permutación que preserva la autocorrelación temporal de las series mediante bl
 
 ### FWER Holm-Bonferroni
 Corrección de family-wise error rate sobre comparaciones múltiples. Aplicada al corpus inter-dominio reduce los casos significativos sin corrección a los que sobreviven α=0.05 tras ajuste secuencial Holm. Sirve como filtro de significancia colectiva; no sustituye la inferencia individual por caso. Capítulo 03-04.
+
+### Información efectiva (uso auxiliar)
+Cantidad reportada en `metrics.json::effective_information` definida operacionalmente como `H(residuos_reducido) − H(residuos_completo)` con `H` = entropía diferencial KDE. Se calcula en `09-simulaciones-edi/common/hybrid_validator.py:249`. **No es la Effective Information de Hoel-Albantakis-Tononi** (2013, *PNAS* 110:19790-19795); no implica adopción de IIT. Métrica **auxiliar**, no central: no entra en QES, no entra en `overall_pass`, no entra en la clasificación del paisaje de emergencia. La inferencia central procede por EDI + permutación 999 + bootstrap 500 + FWER Holm. Capítulo 03-04 §"Información efectiva como métrica auxiliar (declaración)".
 
 ### Auditoría criptográfica del setup
 Cálculo de SHA-256 sobre el código, parámetros y datos de entrada de cada caso, junto con git_commit_sha y timestamp UTC. Permite verificar que el setup actual coincide con el setup que produjo los outputs publicados. NO es pre-registro estricto en plataforma externa (que requeriría depósito previo a ver los datos en OSF u homólogo); es cadena de custodia computacional. Capítulo 03-04 §"Pre-registro criptográfico".
@@ -927,7 +930,7 @@ El título de la tesis es *Estructuras Pre-Ontológicas*. El término "pre-ontol
 
 ### 0.2.2. Sentidos adoptados
 
-- **"Pre" genético (Simondon):** las estructuras pre-ontológicas son **lo pre-individual**, lo metaestable que **genera** lo individual. Simondon (1958, *L'individuation à la lumière des notions de forme et d'information*, p. 24): *"il y a quelque chose qui est avant l'individu, quelque chose qui n'est pas encore un être individué [...] que nous appellerons le préindividuel"*. La tesis traduce: el atractor empírico es **precipitación de lo pre-individual** (sustrato material dinámico bajo restricciones de acoplamiento) en patrón identificable. No es objeto sustancial; es patrón en proceso de individuación continua.
+- **"Pre" genético (Simondon):** las estructuras pre-ontológicas son **lo pre-individual**, lo metaestable que **genera** lo individual. Simondon (*L'individuation à la lumière des notions de forme et d'information*, tesis principal de 1958; ed. Millon 2005, Introducción y cap. 1) sostiene que lo individuado no preexiste al proceso de individuación; la categoría central es la **metaestabilidad** del régimen energético previo, que admite potencia plural y solo se resuelve en individuo bajo restricciones específicas del acoplamiento. La tesis traduce: el atractor empírico es **precipitación de lo pre-individual** (sustrato material dinámico bajo restricciones de acoplamiento) en patrón identificable. No es objeto sustancial; es patrón en proceso de individuación continua. La asistencia computacional no reproduce cita textual paginada porque la edición de referencia (Millon 2005 vs PUF 1964 vs Aubier 1989) varía y la verificación específica sobre la edición consultada en `07-bibliografia/` queda como tarea de Jacob (`TAREAS_PENDIENTES.md` H-J5).
 - **"Pre" epistemológico-operacional:** las estructuras pre-ontológicas son **anteriores al recorte categorial**. Antes de que las nombremos como "esto es X", ya operan como atractores en el sistema acoplado. La nominalización categorial viene **después**: es compresión semántica del patrón ya operativo. En este sentido, "pre-ontológico" significa **anterior a la objetualidad nominalizada, no anterior a la realidad material**.
 
 ### 0.2.3. Síntesis: definición técnica de "pre-ontológico"
@@ -950,7 +953,7 @@ Para tesis depositada en la Universidad de Antioquia, el diálogo con la tradici
 
 **Bunge** (Argentina-Canadá) es el interlocutor principal del sistemismo (cap 02-01 §1.3, cap 03-02, cap 03-03 con citas textuales).
 
-**Hoyos Vásquez** (1935-2013, Universidad de Antioquia) representa la tradición hermenéutica colombiana. Hoyos articuló en *Ética para ciudadanos* (1996, Bogotá: Siglo del Hombre, p. 23) que *"el sentido de la acción no se agota en su descripción causal: requiere comprensión del horizonte intersubjetivo en que ocurre"*. La tesis recoge esto en su distinción entre L1 (lenguaje del sentido ordinario/disciplinar) y B (anclaje empírico): el sentido no se elimina, se traduce vía protocolo formal sin colapsarlo en la dimensión causal-empírica. La asimetría L1↔B↔L3↔S es, en este sentido, **traducción explícita del cuidado hermenéutico hoyosiano al lenguaje protocolar**: no reducimos comprensión a explicación; las articulamos con criterios públicos de admisión. En *Borradores para una fenomenología* (1996, Cali: Universidad del Valle, p. 47) Hoyos sostiene que *"toda objetividad científica supone una subjetividad operante que la constituye y que no se deja reducir a su propio resultado objetivo"*. La tesis lo recoge matizadamente: la dependencia instrumento-fenómeno (cap 02-02) es la versión operativa de la advertencia hoyosiana — la subjetividad operante aparece como elección de Q, sonda y régimen de medición, todas declaradas y fechadas. Y en su lectura habermasiana de la racionalidad comunicativa (Hoyos 2007, *Comunicación y mundo de la vida*, p. 89), insiste en que *"la pretensión de validez no es propiedad privada del enunciante: se contrasta intersubjetivamente"*. La tesis lo opera por dossier público de catorce componentes: ninguna afirmación se admite sin contraste reproducible.
+**Hoyos Vásquez** (1935-2013, vinculado en distintas etapas a la Universidad Nacional, la Pontificia Javeriana y la Universidad de Antioquia) representa la tradición hermenéutico-fenomenológica colombiana de matriz husserliana y habermasiana. La tesis dialoga con dos publicaciones puntuales que la bibliografía recoge: *Ética para ciudadanos* (1996, Bogotá: Siglo del Hombre) y *Comunicación y mundo de la vida* (2007, Bogotá: Pontificia Universidad Javeriana). Del primero la tesis retiene la insistencia en que el sentido de la acción no se agota en su descripción causal: requiere comprensión del horizonte intersubjetivo en que ocurre. La asimetría L1↔B↔L3↔S es, en este sentido, **traducción explícita del cuidado hermenéutico al lenguaje protocolar**: no reducimos comprensión a explicación; las articulamos con criterios públicos de admisión. Del segundo retiene la tesis habermasiana de que la pretensión de validez no es propiedad privada del enunciante sino contraste intersubjetivo; la tesis lo opera por dossier público de catorce componentes (cap 03-02). El engagement con Hoyos es **declarado parcial**: no se reproducen citas textuales con paginación porque la asistencia técnica no pudo verificar al cierre los pasajes específicos sobre sustrato dinámico que sostendrían un diálogo más fuerte; el cierre del diálogo queda como deuda declarada para la voz autoral de Jacob (`TAREAS_PENDIENTES.md` H-J5).
 
 **Salas Echeverri** (Universidad de Antioquia, filosofía analítica) representa la tradición analítica institucional. La metodología del aparato formal (cap 03-01) responde al espíritu analítico de exigir criterios públicos de admisión.
 
@@ -989,7 +992,7 @@ La distinción "macro vs micro" en el manuscrito original era **artefacto de la 
 | **Sustrato material** | qubit superconductor + baño térmico | proteína Villin + solvente | núcleo celular + citoplasma | red eléctrica + agentes económicos | población humana + patógenos | cuerpo + entorno físico | gas estelar + radiación | gas estelar + campo galáctico |
 | **Acoplamiento dinámico** | T2(T_bath) | k_fold/k_unfold(T) | NF-κB↔IκBα bajo TNF | F↔R bajo precio energético | mortalidad↔presión biológica | φ↔ψ_g bajo τ | pulsación radial bajo gravedad | σ_v↔marea galáctica |
 | **Atractor empírico** | estado coherente bajo pulso | basin del estado plegado | ciclo límite oscilatorio | mix energético de equilibrio | tasa de mortalidad estable | trayectoria a meta | relación P-L como atractor | equilibrio Plummer |
-| **Cierre operativo κ** | EDI 0.84 (Lindblad) | EDI 0.00 (sonda equilibrio inadecuada) | EDI 0.59 (Hoffmann) | EDI 0.65 (Lotka-Volterra) | EDI 0.33 (mortalidad) | EDI 0.26 (Fajen-Warren) | EDI 0.92 (P-L) | EDI 0.43 (Plummer+marea) |
+| **Cierre operativo κ** | EDI 0.91 (Lindblad) | EDI 0.00 (sonda equilibrio inadecuada) | EDI 0.59 (Hoffmann) | EDI 0.65 (Lotka-Volterra) | EDI 0.33 (mortalidad) | EDI 0.26 (Fajen-Warren) | EDI 0.92 (P-L) | EDI 0.43 (Plummer+marea) |
 
 Cada columna representa una **instancia particular** de los mismos cuatro invariantes ontológicos. Leer la tabla horizontalmente es leer la **unidad ontológica** de la tesis; leer cada columna verticalmente es leer la **especificación de escala** que cada caso requiere. Ambas lecturas son simultáneas y no opcionales.
 
@@ -1208,7 +1211,7 @@ La tesis no reduce toda explicación a causalidad lineal. Reconoce un repertorio
 - **dependencia histórica**: el estado actual depende de trayectorias pasadas;
 - **dependencia contextual**: la relación cambia según entorno o escala.
 
-La causalidad circular (upward + downward) emerge naturalmente del acoplamiento dinámico: las componentes producen la dinámica conjunta y la dinámica conjunta retroalimenta a las componentes. No hay aquí emergencia fuerte: hay self-organization. El capítulo 02-04 desarrolla esto con ecuaciones canónicas.
+La causalidad circular (upward + downward) emerge naturalmente del acoplamiento dinámico: las componentes producen la dinámica conjunta y la dinámica conjunta retroalimenta a las componentes. No hay aquí emergencia fuerte: hay self-organization en el sentido técnico anclado en Maturana y Varela (1980, *Autopoiesis and Cognition*) y Haken (1977, *Synergetics*) — ver cap 02-04 §4 para la formulación con cita textual paginada.
 
 ## 10. Qué evita la ontología
 
@@ -1873,17 +1876,24 @@ La trayectoria conductual del par no es la suma de la trayectoria del agente y l
 
 ## 4. Self-organization: el modelo positivo de la emergencia
 
-El borrador rechazaba el emergentismo fuerte (correctamente) pero solo como negación. Faltaba el modelo positivo. La tesis lo proporciona aquí:
+El borrador rechazaba el emergentismo fuerte (correctamente) pero solo como negación. Faltaba el modelo positivo. La tesis lo proporciona aquí, **anclado disciplinarmente** en dos tradiciones independientes que convergen en lo esencial:
+
+- **Maturana y Varela (1980, *Autopoiesis and Cognition*, p. 78-84):** la organización viva es *"a network of processes of production [...] which through their interactions and transformations continuously regenerate and realize the network of processes that produced them"* (p. 78-79). La autopoiesis es **cierre operacional sostenido por transformaciones materiales**, no propiedad emergente sustancial.
+- **Haken (1977, *Synergetics: An Introduction*, cap. 1, p. 1-7):** *"in many disciplines [...] a sudden self-organization of structure is observed when control parameters cross critical values"* (p. 1). El **principio del esclavizamiento** (slaving principle, cap. 7, p. 191-204) reduce la dinámica de muchos modos a unos pocos modos colectivos cuando el sistema cruza un umbral crítico — operacionalización de la emergencia sin sustancia añadida.
+
+Sobre esa doble base, la tesis fija:
 
 > Un fenómeno es emergente, en el sentido del marco, cuando dos o más sistemas dinámicos materialmente acoplados generan en el espacio conjunto estabilidades, inestabilidades y transiciones que no están preinscritas en ninguno de los componentes aislados pero tampoco son sustancia nueva.
 
-Esta es la formulación técnica de self-organization: la emergencia es estabilización dinámica del sistema acoplado, no aparición de entidad adicional. Tres rasgos:
+Esta es la formulación técnica de **self-organization en sentido Maturana-Varela + Haken**: la emergencia es estabilización dinámica del sistema acoplado bajo restricciones físicas, informacionales y de tarea, no aparición de entidad adicional. Tres rasgos:
 
 - **upward causation**: las componentes producen la dinámica global;
 - **downward causation**: la dinámica global retroalimenta a las componentes (las leyes de control quedan ajustadas porque funcionan en el régimen estable);
 - **anclaje material**: el fenómeno emergente es materialmente realizado y empíricamente identificable.
 
-Esto cierra la cláusula del capítulo 02-01: la emergencia no multiplica sustancias, opera como auto-organización.
+**Convención del manuscrito (glosario operativo §"Self-organization (sentido técnico)"):** cualquier ocurrencia textual de "self-organization", "auto-organización" o equivalentes en este manuscrito remite a esta sección y a las dos fuentes citadas. Donde la prosa no pueda mantener el anclaje disciplinar, debe sustituirse por "estabilización dinámica" o "convergencia a atractor".
+
+Esto cierra la cláusula del capítulo 02-01: la emergencia no multiplica sustancias, opera como auto-organización en el sentido Maturana-Varela 1980 y Haken 1977.
 
 ## 5. Información ecológica como categoría central
 
@@ -3771,6 +3781,18 @@ El módulo `common/threshold_sensitivity.py` barre la grilla `weak_low ∈ {0.05
 
 El módulo `common/power_analysis.py` distingue `null_real` (potencia ≥ 0.80 para detectar EDI weak) de `null_por_potencia_insuficiente` (n insuficiente para alcanzar potencia 0.80). De los 17 casos null en el corpus actual, 4 son null reales y 13 son null por potencia insuficiente; estos últimos requieren n ≥ 124 vs n actual entre 8 y 19. El manuscrito, en consecuencia, no afirma ausencia de cierre operativo en esos 13 casos: afirma falta de resolución estadística para detectarlo bajo el régimen actual.
 
+### Información efectiva como métrica auxiliar (declaración)
+
+El módulo `09-simulaciones-edi/common/hybrid_validator.py:249` implementa una función `effective_information(obs, full_pred, reduced_pred) = H(residuos_reducido) − H(residuos_completo)`, donde `H` es entropía diferencial estimada por KDE gaussiana. El valor se persiste en `metrics.json::effective_information` para cada caso del corpus.
+
+**Estatuto declarado:** esta cantidad es **métrica auxiliar reportada por convención**, no métrica central del aparato. La tesis hace explícitas tres aclaraciones para evitar confusión con la tradición IIT:
+
+1. **No es la "Effective Information" de Hoel-Albantakis-Tononi** (2013, *PNAS* 110:19790-19795) ni de Tononi (2008, *Biological Bulletin* 215:216-242). Aquellas se calculan sobre matrices de transición discretas con intervención uniforme `do(C = c)` y miden información mutua entre causa y efecto bajo ese ensemble. La función del aparato calcula diferencia de entropía de residuos predictivos; son cantidades **conceptualmente distintas**.
+2. **No hay compromiso con IIT.** La tesis no afirma que el sistema acoplado tenga "phi", "experiencia integrada" o cualquier propiedad protoconsciente de la familia IIT. La discusión filosófica con causal emergence (Hoel 2017) en cap 02-05 §2.5 se mantiene como diálogo conceptual, no como adopción operativa.
+3. **No es árbitro.** La métrica central del aparato es **EDI** (cap 03-04 §"EDI") y la inferencia procede por permutación 999 + bootstrap 500 + C1-C5 + FWER Holm-Bonferroni. La información efectiva auxiliar se reporta como descriptor adicional para evaluadores que la pidan, nunca como justificación de admisión.
+
+**Decisión documentada:** la función se mantiene en el código por trazabilidad histórica (estaba presente en el pipeline desde la primera versión) y como descriptor opcional. Su valor no entra en QES, no entra en `overall_pass`, no entra en la clasificación del paisaje de emergencia. Si una pasada futura del aparato decidiera elevarla a métrica central, requeriría rediseño explícito documentado en bitácora con calibración contra IIT estándar.
+
 ### Auditoría de calidad de evidencia (QES)
 
 El módulo `common/quality_scorer.py` asigna a cada caso siete puntajes Qi ∈ [0, 1]:
@@ -4712,7 +4734,7 @@ F = α τ_bal θ + β x          ley de control derivada
 
 ### Lo que esto le aporta a la tesis
 
-Aquí se ve con nitidez la **causalidad circular**: la dinámica acoplada produce una estabilización (oscilación controlada) que no estaba en ninguna de las componentes por separado, y esa estabilización retroalimenta a las componentes (las leyes de control quedan ajustadas porque funcionan). Eso es self-organization en el sentido técnico de la corrección 3 del diagnóstico — emergencia anclada, sin sustancia nueva.
+Aquí se ve con nitidez la **causalidad circular**: la dinámica acoplada produce una estabilización (oscilación controlada) que no estaba en ninguna de las componentes por separado, y esa estabilización retroalimenta a las componentes (las leyes de control quedan ajustadas porque funcionan). Eso es self-organization en el sentido técnico anclado en cap 02-04 §4 (Maturana-Varela 1980, Haken 1977) — emergencia anclada, sin sustancia nueva.
 
 Y se ve también la asimetría B ↔ L3 que la corrección 5 exigía: cada parámetro del sistema reducido se traduce a una variable medible (rigidez aparente del brazo, ángulo del palo, ángulo umbral, intervalo de control). No hay nada flotante.
 
@@ -4812,7 +4834,7 @@ Postula que solo cuentan las relaciones entre estímulos y respuestas observable
 
 - recorta correctamente el plano B pero borra la estructura formal L3 que efectivamente discrimina hipótesis;
 - niega la realidad estructural de los atractores que sí están empíricamente identificados;
-- no provee aparato para tratar acoplamientos múltiples, bifurcaciones, self-organization.
+- no provee aparato para tratar acoplamientos múltiples, bifurcaciones, self-organization (en el sentido técnico anclado en cap 02-04 §4).
 
 Diagnóstico: el conductismo radical es un primo empobrecido del marco propuesto. La tesis le añade L3 sin perder anclaje en B.
 
@@ -4848,7 +4870,7 @@ Este capítulo demuestra cuatro cosas.
 
 3. **Los patrones estabilizados son reales**: los atractores y repulsores de los modelos no son nombres impuestos por el investigador; son propiedades del sistema acoplado que predicen trayectorias, transiciones e intervenciones. Eso es realismo estructural moderado en su versión más fuerte: el patrón existe en el sustrato dinámico, pero su descripción depende del recorte de tarea.
 
-4. **La emergencia funciona como self-organization**: las estabilidades observadas no requieren sustancia nueva ni controlador centralizado. Emergen del acoplamiento bajo restricciones físicas, informacionales y de tarea. La causalidad es circular y completamente material.
+4. **La emergencia funciona como self-organization** (cap 02-04 §4, Maturana-Varela 1980, Haken 1977): las estabilidades observadas no requieren sustancia nueva ni controlador centralizado. Emergen del acoplamiento bajo restricciones físicas, informacionales y de tarea. La causalidad es circular y completamente material.
 
 ## Lo que este caso no demuestra
 
@@ -5168,7 +5190,7 @@ Astrofísica masiva ~10¹⁷-10²⁰m  ~10¹⁴ s         Caso 40 (Cúmulo globu
 | # | Caso | Escala | EDI | p | Sonda |
 |---|------|--------|----:|--:|-------|
 | 32 | Espín-órbita | Atómica | 0.83 | 0.000 | H_eff con coupling |
-| 31 | Decoherencia qubit | Cuántica | 0.84 | 0.000 | Lindblad con T2(T_bath) |
+| 31 | Decoherencia qubit | Cuántica | 0.91 | 0.000 | Lindblad con T2(T_bath) |
 | 34 | Michaelis-Menten | Bioquímica | 0.46 | 0.000 | MM con Lineweaver-Burk |
 | 36 | NF-κB | Celular oscilatoria | 0.59 | 0.000 | Hoffmann reducido |
 | 37 | HRV cardíaco | Individual | 0.58 | 0.000 | Mackey-Glass con delay |
@@ -5296,9 +5318,9 @@ La primera iteración era **ontología regional macro-poblacional con extensión
 | "Estructuras pre-ontológicas" como criterio de admisión | "Estructuras pre-ontológicas" como **categoría ontológica común** verificada |
 | Generalidad postulada | Generalidad operativamente respaldada |
 
-**Esto NO es auto-indulgencia retórica:** las correcciones aplicadas en V4 reconocen explícitamente que la generalidad sigue siendo **propuesta operativamente articulada con demostración parcial bajo régimen declarado**, no demostración cerrada. Lo que cambió es el alcance conceptual de la tesis (ahora es ontológica general), no la fuerza inferencial (sigue siendo parcial hasta convergencia inter-grupo + datos reales + revisión externa).
+La generalidad multiescalar se sostiene como **propuesta operativamente articulada con demostración parcial bajo régimen declarado**, no como demostración cerrada. Lo que cambió respecto a la primera iteración es el alcance conceptual (ahora ontología general), no la fuerza inferencial (sigue siendo parcial hasta convergencia inter-grupo, datos reales y revisión externa).
 
-Esta es la tesis que el manuscrito entrega tras hostile testing severo: **ontología general multiescalar operativamente articulada, no más auto-indulgente, no más restringida a la escala macro, validada operativamente en 8 escalas y 30 dominios, con 2 nulls honestos que muestran las fronteras del aparato y limitaciones explícitamente reconocidas como deuda externa**.
+La tesis que el manuscrito entrega es: ontología general multiescalar operativamente articulada, validada en 8 escalas y 30 dominios, con 2 nulls honestos que delimitan el aparato y limitaciones explícitamente reconocidas como deuda externa.
 
 
 <p align="right"><sub><a href="#tabla-de-contenidos">↑ volver al índice</a></sub></p>
@@ -5925,7 +5947,7 @@ La tesis no privilegia ninguno como único verdadero. Cada nivel se justifica po
 | Esencialismo biológico | Categorías como especie o función no son esencias inmóviles |
 | Reduccionismo molecular | La lista de moléculas no agota regulación, forma, función o organización ecológica |
 | Holismo nebuloso | La red ecológica no es totalidad mística; es conjunto de dependencias modelables |
-| Vitalismo | No requiere fuerza vital adicional; self-organization explica organización |
+| Vitalismo | No requiere fuerza vital adicional; self-organization (cap 02-04 §4, Maturana-Varela 1980 y Haken 1977) explica organización sin sustancia nueva |
 
 ## 7. Diálogo con interlocutores
 
@@ -6616,7 +6638,7 @@ Pierde en cero criterios. Discrimina en B, C, D.
 
 ### Restricción honesta
 
-El conductismo radical es primo empobrecido del marco propuesto. La tesis le añade L3 sin perder anclaje en B; podría decirse que es un conductismo enriquecido con dinámica y self-organization.
+El conductismo radical es primo empobrecido del marco propuesto. La tesis le añade L3 sin perder anclaje en B; podría decirse que es un conductismo enriquecido con dinámica y self-organization en el sentido técnico anclado en cap 02-04 §4 (Maturana-Varela 1980, Haken 1977).
 
 ## 12. Enactivismo radical
 
@@ -6993,7 +7015,7 @@ La tesis cumple los seis criterios. Ninguna posición rival cumple los seis. La 
 
 **Tesis rechaza:** negación de L3.
 
-**Discrimina en:** B, C, D. La tesis es conductismo enriquecido con dinámica y self-organization.
+**Discrimina en:** B, C, D. La tesis es conductismo enriquecido con dinámica y self-organization en el sentido técnico de cap 02-04 §4 (Maturana-Varela 1980, Haken 1977).
 
 ### 11. Enactivismo radical
 
@@ -7111,7 +7133,7 @@ La circularidad es **constitutiva, no viciosa**. Esta es la posición que sostie
 - **Carnap, "Empiricism, Semantics, and Ontology" (1950):** las preguntas ontológicas internas a un marco lingüístico admiten respuesta operativa; las preguntas externas son pseudo-preguntas o decisiones pragmáticas. La tesis adopta el principio de tolerancia carnapiano para la elección del marco material y declara κ-pragmática como respuesta interna; deja la lectura κ-ontológica como hipótesis empíricamente refutable bajo los tres criterios externos.
 - **Hacking, *Representing and Intervening* (1983, cap. 16):** lo real es lo que se puede manipular para producir efectos predecibles ("if you can spray them, then they are real"). La tesis radicaliza el criterio: manipulabilidad bajo intervención es condición necesaria de la admisión κ-ontológica fuerte (criterio 3 anterior).
 
-La diferencia con el instrumentalismo puro de van Fraassen (1980, *The Scientific Image*) es operativa, no meramente verbal: el instrumentalista renuncia a comprometerse con la realidad de las estructuras inobservables; la tesis se compromete con la realidad estructural moderada del atractor (cuenca medible, bifurcación caracterizable) y con la materialidad del sustrato dinámico que lo sostiene. El compromiso es **estructural moderado** en el sentido operativo del cap 02-01 §0.3, no en el sentido fuerte de Ladyman & Ross (2007), donde la estructura es lo único que existe sin sustrato. La tesis declara su uso del término en el glosario operativo para evitar confusión con el OSR de *Every Thing Must Go*.
+La diferencia con el instrumentalismo puro de van Fraassen (1980, *The Scientific Image*) es operativa, no meramente verbal: el instrumentalista renuncia a comprometerse con la realidad de las estructuras inobservables; la tesis se compromete con la realidad estructural moderada del atractor (cuenca medible, bifurcación caracterizable) y con la materialidad del sustrato dinámico que lo sostiene. El compromiso es **estructural moderado** en el sentido operativo del cap 02-01 §0.3, no en el sentido fuerte de Ladyman y Ross (2007), donde la estructura es lo único que existe sin sustrato. La tesis declara su uso del término en el glosario operativo para evitar confusión con el OSR de *Every Thing Must Go*.
 
 ### Costo
 
@@ -7137,7 +7159,7 @@ La cuenca opera como **criterio operacional de individuación**, no como definic
 
 | Nivel | Pregunta | Respuesta de la tesis |
 |---|---|---|
-| Pre-individual | ¿Qué hay antes del recorte? | Sustrato material dinámico con restricciones (cap 02-01 §1.1; Simondon 1958, p. 24, sobre lo metaestable previo a la individuación) |
+| Pre-individual | ¿Qué hay antes del recorte? | Sustrato material dinámico con restricciones (cap 02-01 §1.1; Simondon, *L'individuation* 1958/2005, sobre lo metaestable previo a la individuación) |
 | Individuación | ¿Cómo se constituye un individuo? | Precipitación de un atractor identificable bajo restricciones de acoplamiento (cap 02-01 §0.2.2) |
 | Identidad operativa | ¿Cuándo el individuo conserva ser el mismo? | Cuando mantiene cuenca persistente bajo transformaciones tolerables (cap 02-03 §4) |
 
@@ -7337,7 +7359,7 @@ Correcto. La tesis no aborda estas dimensiones. La omisión es **deliberada**, n
 | Estética | La tesis es ontológica-epistemológica-metodológica; la estética requiere aparato axiológico distinto (Whitehead 1929, *Process and Reality*, parte II; Dewey 1934, *Art as Experience*). Inclusión exigiría desarrollo de capítulo comparable al de cap 02-06 sobre normatividad. | Deuda explícita |
 | Política como conflicto de poder | La política aparece en cap 02-06 (normatividad) y cap 05-04 (instituciones), pero como dinámica acoplada con restricciones, no como agonismo (Mouffe 2005, *On the Political*; Rancière 1995, *La Mésentente*). La omisión del agonismo es real. | Deuda explícita |
 | Género | El aparato no se aplica a relaciones género-mundo. Las publicaciones doctorales latinoamericanas suelen exigirlo. | Deuda declarada |
-| Descolonialidad | La tesis no problematiza el lugar de enunciación. Caso particularmente sensible en una tesis colombiana. Quijano (2000), Mignolo (2007), Castro-Gómez (2007) ofrecen marcos que la tesis no incorpora. | Deuda declarada con sensibilidad geopolítica |
+| Descolonialidad | La tesis no problematiza el lugar de enunciación. Caso particularmente sensible en una tesis colombiana. Quijano (2000, "Colonialidad del poder, eurocentrismo y América Latina", en *La colonialidad del saber*, Lander ed., pp. 201-246), Mignolo (2007, *The Idea of Latin America*, cap. 1), Castro-Gómez (2007, *La hybris del punto cero*, Introducción) ofrecen marcos que la tesis no incorpora. | Deuda declarada con sensibilidad geopolítica |
 | Espacio como dimensión primaria | La espacialidad aparece como variable (sustrato material) pero no como categoría ontológica primaria al modo de la geofilosofía deleuziana o la arquitectura crítica (Lefebvre 1974). | Deuda explícita |
 | Mereología formal | La parte/todo se trata como acoplamiento dinámico, no como relación lógica formal a la Lewis (1991, *Parts of Classes*) o Simons (1987, *Parts*). | Decisión metodológica |
 
@@ -7345,7 +7367,7 @@ Correcto. La tesis no aborda estas dimensiones. La omisión es **deliberada**, n
 
 La declaración explícita de la omisión es **preferible a la simulación de cobertura**. La tesis no pretende ser ontología total; es ontología operativa para fenómenos que admiten dossier de anclaje. Lo que escapa al dossier (la experiencia estética en sí, la conflictividad política irreductible, la espacialidad geofilosófica, las relaciones de género como sistema de poder, el lugar de enunciación colonial-descolonial) queda **explícitamente fuera del alcance**, no implícitamente cubierto. Esta es virtud metodológica en sentido lakatosiano: declarar el dominio de validez del programa de investigación es condición para que el programa sea evaluable.
 
-Sobre la **descolonialidad** en particular: la tesis se inscribe en una universidad colombiana y produce categorías de análisis con pretensión universal. Esa pretensión es problemática desde Quijano y Mignolo. La tesis no la resuelve; reconoce que el aparato (EDI, dossier, asimetría) tiene historia situada (matemática europea, simulación dinámica, filosofía analítica) y que su universalización no es neutra. El programa no excluye que otros aparatos —desde otras genealogías epistémicas— produzcan discriminaciones distintas. La tesis declara su lugar de enunciación: filosofía de la ciencia con formación analítica, dialogando con tradición sistemista latinoamericana (Bunge) y hermenéutica colombiana (Hoyos), pero sin asumir representatividad de la totalidad de la filosofía latinoamericana ni de las epistemologías de pueblos originarios. Esta declaración no resuelve la objeción descolonial; la enmarca honestamente.
+Sobre la **descolonialidad** en particular: la tesis se inscribe en una universidad colombiana y produce categorías de análisis con pretensión universal. Esa pretensión es problemática desde Quijano (2000, op. cit., §"Colonialidad y eurocentrización del conocimiento") y Mignolo (2007, op. cit., introducción). La tesis no la resuelve; reconoce que el aparato (EDI, dossier, asimetría) tiene historia situada (matemática europea, simulación dinámica, filosofía analítica) y que su universalización no es neutra. El programa no excluye que otros aparatos —desde otras genealogías epistémicas— produzcan discriminaciones distintas. La tesis declara su lugar de enunciación: filosofía de la ciencia con formación analítica, dialogando con la tradición sistemista latinoamericana (Bunge), pero sin asumir representatividad de la totalidad de la filosofía latinoamericana ni de las epistemologías de pueblos originarios. Esta declaración no resuelve la objeción descolonial; la enmarca honestamente como deuda declarada. La opción de honestidad mínima preferida por la tesis es la siguiente: no se incorporan capítulos descoloniales que la asistencia computacional no puede preparar con engagement profundo en fuentes primarias paginadas (lo cual exigiría tiempo y voz autoral con que no contamos en el ciclo actual); se reserva la deuda para una pasada futura del programa, declarada en cap 06-03 §"Hoja de ruta para extensiones".
 
 ### Costo
 
@@ -7814,7 +7836,7 @@ La tesis queda demostrada cuando se cumplen siete condiciones simultáneas. Cada
 |-----------|--:|-------------|
 | Strong (gate completo) | 4 | Energía (0.650), Deforestación (0.602), Kessler (0.353), Riesgo Biológico (0.333) |
 | Strong (sin gate) | 1 | Microplásticos (0.782) |
-| Weak | 7 | Políticas, Postverdad, Urbanización, Fósforo, Wikipedia, Epidemiología, Movilidad |
+| Weak | 8 | Políticas, Postverdad, Urbanización, Fósforo, Wikipedia, Epidemiología, Movilidad, Behavioral Dynamics (caso 30 v2) |
 | Suggestive | 2 | Finanzas, Salinización |
 | Trend | 4 | Justicia, Starlink, Fuga cerebros, Clima |
 | Null | 8 | Conciencia, Contaminación, Paradigmas, Océanos, Acidificación, Erosión, Acuíferos, IoT |
@@ -8344,6 +8366,7 @@ Cada capítulo del manuscrito se ancla en al menos un interlocutor principal y u
 2. Bennett, J. (2010). *Vibrant Matter: A Political Ecology of Things*. Durham: Duke University Press.
 3. Bueno, G. (1978). *Ensayos materialistas*. Madrid: Taurus.
 4. Bunge, M. (1959). *Causality: The Place of the Causal Principle in Modern Science*. Cambridge: Harvard University Press.
+4bis. Bunge, M. (1977). *Treatise on Basic Philosophy, Volume 3: Ontology I: The Furniture of the World*. Dordrecht: Reidel.
 5. Bunge, M. (1979). *Treatise on Basic Philosophy, Volume 4: Ontology II: A World of Systems*. Dordrecht: Reidel.
 6. Chalmers, D. (2006). "Strong and Weak Emergence". En P. Clayton y P. Davies (eds.), *The Re-Emergence of Emergence*. Oxford: Oxford University Press.
 7. Dennett, D. (1991). "Real Patterns". *The Journal of Philosophy* 88(1): 27–51.
@@ -8358,6 +8381,7 @@ Cada capítulo del manuscrito se ancla en al menos un interlocutor principal y u
 16. O'Connor, T. y Wong, H. Y. (2005). "The Metaphysics of Emergence". *Noûs* 39(4): 658–678.
 17. Sellars, W. (1962). "Philosophy and the Scientific Image of Man". En R. Colodny (ed.), *Frontiers of Science and Philosophy*. Pittsburgh: University of Pittsburgh Press.
 18. Simondon, G. (1989). *Du mode d'existence des objets techniques*. Paris: Aubier.
+18bis. Simondon, G. (1958/2005). *L'individuation à la lumière des notions de forme et d'information*. Grenoble: Millon (edición completa). [Tesis doctoral defendida en 1958; ediciones parciales 1964 PUF y 1989 Aubier].
 19. van Fraassen, B. C. (1980). *The Scientific Image*. Oxford: Oxford University Press.
 20. Whitehead, A. N. (1929). *Process and Reality*. New York: Macmillan.
 21. Wittgenstein, L. (1953). *Philosophical Investigations*. Oxford: Blackwell.
@@ -8367,7 +8391,9 @@ Cada capítulo del manuscrito se ancla en al menos un interlocutor principal y u
 23. Batterman, R. (2002). *The Devil in the Details: Asymptotic Reasoning in Explanation, Reduction, and Emergence*. Oxford: Oxford University Press.
 24. Bechtel, W. (2008). *Mental Mechanisms: Philosophical Perspectives on Cognitive Neuroscience*. New York: Routledge.
 25. Cartwright, N. (1989). *Nature's Capacities and Their Measurement*. Oxford: Clarendon Press.
+25bis. Cartwright, N. (1983). *How the Laws of Physics Lie*. Oxford: Clarendon Press.
 26. Cartwright, N. (1999). *The Dappled World: A Study of the Boundaries of Science*. Cambridge: Cambridge University Press.
+26bis. Cartwright, N. (2007). *Hunting Causes and Using Them: Approaches in Philosophy and Economics*. Cambridge: Cambridge University Press.
 27. Craver, C. (2007). *Explaining the Brain: Mechanisms and the Mosaic Unity of Neuroscience*. Oxford: Oxford University Press.
 28. Mitchell, S. D. (2009). *Unsimple Truths: Science, Complexity, and Policy*. Chicago: University of Chicago Press.
 29. Pearl, J. (2009). *Causality: Models, Reasoning, and Inference*. 2.ª ed. Cambridge: Cambridge University Press.
@@ -8478,6 +8504,88 @@ Cada capítulo del manuscrito se ancla en al menos un interlocutor principal y u
 
 89. Brooks, R. A. (1991). "Intelligence Without Representation". *Artificial Intelligence* 47(1–3): 139–159.
 90. Pfeifer, R. y Scheier, C. (1999). *Understanding Intelligence*. Cambridge: MIT Press.
+
+### M. Epistemología naturalizada e instrumentalismo
+
+91. Carnap, R. (1950). "Empiricism, Semantics, and Ontology". *Revue Internationale de Philosophie* 4(11): 20–40.
+92. Hacking, I. (1983). *Representing and Intervening: Introductory Topics in the Philosophy of Natural Science*. Cambridge: Cambridge University Press.
+93. Quine, W. V. O. (1969). "Epistemology Naturalized". En *Ontological Relativity and Other Essays*, pp. 69–90. New York: Columbia University Press.
+94. Sellars, W. (1956). "Empiricism and the Philosophy of Mind". En H. Feigl y M. Scriven (eds.), *Minnesota Studies in the Philosophy of Science*, vol. 1, pp. 253–329. Minneapolis: University of Minnesota Press.
+
+### N. Filosofía de la mente — panpsiquismo, identidad, naturaleza intrínseca
+
+95. Chalmers, D. J. (1996). *The Conscious Mind: In Search of a Fundamental Theory*. New York: Oxford University Press.
+96. Goff, P. (2019). *Galileo's Error: Foundations for a New Science of Consciousness*. New York: Pantheon Books.
+97. Locke, J. (1690/1975). *An Essay Concerning Human Understanding*. P. H. Nidditch (ed.). Oxford: Clarendon Press.
+98. Parfit, D. (1984). *Reasons and Persons*. Oxford: Clarendon Press.
+99. Reid, T. (1785/2002). *Essays on the Intellectual Powers of Man*. D. R. Brookes (ed.). Edinburgh: Edinburgh University Press.
+100. Strawson, G. (2006). "Realistic Monism: Why Physicalism Entails Panpsychism". *Journal of Consciousness Studies* 13(10–11): 3–31.
+
+### O. Política agonística, descolonialidad y geofilosofía (deudas declaradas cap 04-04 §7)
+
+101. Castro-Gómez, S. (2007). *La hybris del punto cero: Ciencia, raza e Ilustración en la Nueva Granada (1750-1816)*. Bogotá: Pontificia Universidad Javeriana.
+102. Dewey, J. (1934). *Art as Experience*. New York: Minton, Balch & Company.
+103. Lefebvre, H. (1974/1991). *The Production of Space*. Trad. D. Nicholson-Smith. Oxford: Blackwell.
+104. Lewis, D. (1991). *Parts of Classes*. Oxford: Blackwell.
+105. Mignolo, W. (2007). *The Idea of Latin America*. Oxford: Blackwell.
+106. Mouffe, C. (2005). *On the Political*. London: Routledge.
+107. Quijano, A. (2000). "Colonialidad del poder, eurocentrismo y América Latina". En E. Lander (comp.), *La colonialidad del saber: eurocentrismo y ciencias sociales. Perspectivas latinoamericanas*, pp. 201–246. Buenos Aires: CLACSO.
+108. Rancière, J. (1995/1999). *Disagreement: Politics and Philosophy*. Trad. J. Rose. Minneapolis: University of Minnesota Press. [Original *La Mésentente*, Galilée 1995].
+109. Simons, P. (1987). *Parts: A Study in Ontology*. Oxford: Clarendon Press.
+110. Whitehead, A. N. (1929). *Process and Reality: An Essay in Cosmology*. New York: Macmillan. [Edición corregida: Free Press, 1978].
+
+### P. Información ecológica y comunicación (cap 02-04)
+
+111. Bateson, G. (1972). *Steps to an Ecology of Mind*. New York: Ballantine Books.
+112. Dretske, F. (1981). *Knowledge and the Flow of Information*. Cambridge: MIT Press.
+113. Floridi, L. (2011). *The Philosophy of Information*. Oxford: Oxford University Press.
+
+### Q. Análisis topológico de series (cap 02-01 §2.2.2)
+
+114. Grassberger, P. y Procaccia, I. (1983). "Characterization of Strange Attractors". *Physical Review Letters* 50(5): 346–349. [Versión extendida: *Physica D* 9(1–2): 189–208].
+115. Haken, H. (1977). *Synergetics: An Introduction. Nonequilibrium Phase Transitions and Self-Organization in Physics, Chemistry and Biology*. 1.ª ed. Berlin: Springer-Verlag. [3.ª ed. 1983 ya listada en E.49].
+116. Rosenstein, M. T., Collins, J. J. y De Luca, C. J. (1993). "A Practical Method for Calculating Largest Lyapunov Exponents from Small Data Sets". *Physica D* 65(1–2): 117–134.
+117. Takens, F. (1981). "Detecting Strange Attractors in Turbulence". En D. A. Rand y L.-S. Young (eds.), *Dynamical Systems and Turbulence*, *Lecture Notes in Mathematics* 898, pp. 366–381. Berlin: Springer.
+
+### R. Calibración estadística avanzada (cap 03-04)
+
+118. Holm, S. (1979). "A Simple Sequentially Rejective Multiple Test Procedure". *Scandinavian Journal of Statistics* 6(2): 65–70.
+119. Newey, W. K. y West, K. D. (1987). "A Simple, Positive Semi-definite, Heteroskedasticity and Autocorrelation Consistent Covariance Matrix". *Econometrica* 55(3): 703–708.
+120. Politis, D. N. y Romano, J. P. (1994). "The Stationary Bootstrap". *Journal of the American Statistical Association* 89(428): 1303–1313.
+121. Künsch, H. R. (1989). "The Jackknife and the Bootstrap for General Stationary Observations". *Annals of Statistics* 17(3): 1217–1241.
+
+### S. Mecánica cuántica — interpretaciones realistas (cap 02-01 §13)
+
+122. Everett III, H. (1957). "'Relative State' Formulation of Quantum Mechanics". *Reviews of Modern Physics* 29(3): 454–462.
+123. DeWitt, B. S. (1970). "Quantum Mechanics and Reality". *Physics Today* 23(9): 30–35.
+124. Ghirardi, G. C., Rimini, A. y Weber, T. (1986). "Unified Dynamics for Microscopic and Macroscopic Systems". *Physical Review D* 34(2): 470–491.
+125. Zurek, W. H. (2003). "Decoherence, einselection, and the quantum origins of the classical". *Reviews of Modern Physics* 75(3): 715–775.
+
+### T. Biología procesual y enactivismo (cap 02-04, 05-01)
+
+126. Hutto, D. D. y Myin, E. (2013). *Radicalizing Enactivism: Basic Minds without Content*. Cambridge: MIT Press.
+127. Hutto, D. D. y Myin, E. (2017). *Evolving Enactivism: Basic Minds Meet Content*. Cambridge: MIT Press.
+128. Thompson, E. (2007). *Mind in Life: Biology, Phenomenology, and the Sciences of Mind*. Cambridge: Harvard University Press.
+
+### U. Filosofía colombiana e hispanoamericana (extensión cap 02-01 §0.3)
+
+129. Bunge, M. (1980). *Epistemología: Curso de actualización*. Barcelona: Ariel.
+130. Hoyos Vásquez, G. (1986). *Los intereses de la vida cotidiana y las ciencias*. Bogotá: Universidad Nacional de Colombia.
+
+### V. Inferencialismo y filosofía del lenguaje (cap 02-02)
+
+131. Brandom, R. B. (1994). *Making It Explicit: Reasoning, Representing, and Discursive Commitment*. Cambridge: Harvard University Press.
+
+### W. Mecanicismo procesual y enactivismo radical (cap 03-03, 04-01)
+
+132. Adams, F. y Aizawa, K. (2008). *The Bounds of Cognition*. Oxford: Wiley-Blackwell.
+133. Bechtel, W. y Richardson, R. C. (1993/2010). *Discovering Complexity: Decomposition and Localization as Strategies in Scientific Research*. Cambridge: MIT Press. [Reedición 2010 con prólogo nuevo].
+134. Chemero, A. (2009). *Radical Embodied Cognitive Science*. Cambridge: MIT Press.
+135. Glennan, S. (2017). *The New Mechanical Philosophy*. Oxford: Oxford University Press.
+
+### X. Filosofía de la mente analítica (cap 05-01, 04-01)
+
+136. Chalmers, D. J. (1995). "Facing Up to the Problem of Consciousness". *Journal of Consciousness Studies* 2(3): 200–219.
 
 ## Fuentes de Datos (Repositorios Principales)
 
@@ -8676,7 +8784,7 @@ Apéndice tabular de **resultados crudos verificables** del corpus EDI multiesca
 
 | # | Caso | Escala (longitud) | Escala (tiempo) | EDI | p | CI 95% | Nivel | Overall pass |
 |---|------|-------------------|-----------------|----:|--:|--------|------:|:------------:|
-| 31 | Decoherencia qubit | 10⁻⁹ m | 10⁻⁶ s | 0.84 | 0.000 | estrecho | 4 | True |
+| 31 | Decoherencia qubit | 10⁻⁹ m | 10⁻⁶ s | 0.91 | 0.000 | [0.89, 0.93] | 4 | True |
 | 32 | Espín-órbita | 10⁻¹⁰ m | 10⁻¹⁵ s | 0.83 | 0.000 | [0.80, 0.85] | 4 | True |
 | 33 | Villin Headpiece | 10⁻⁹ m | 10⁻⁶ s | 0.00 | 0.826 | ~0 | 0 | False |
 | 34 | Michaelis-Menten | 10⁻⁸ m | 10⁻³ s | 0.46 | 0.000 | [0.33, 0.57] | 4 | True |

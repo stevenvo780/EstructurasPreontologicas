@@ -1,6 +1,6 @@
 # Tareas pendientes para el cierre de la tesis
 
-Documento maestro de pendientes al **2026-04-28**. Reemplaza la lectura dispersa de `Tareas_Humanas/`, `Bitacora/2026-04-28-cierre-tecnico/` y `Bitacora/2026-04-28-cierre-pendientes/`. La regla de partición es la siguiente:
+Documento maestro de pendientes al **2026-04-29** (actualizado tras pasada nocturna). Reemplaza la lectura dispersa de `Tareas_Humanas/`, `Bitacora/2026-04-28-cierre-tecnico/` y `Bitacora/2026-04-28-cierre-pendientes/`. La regla de partición es la siguiente:
 
 - **Sección A — humanas o institucionales:** lo que **no** puede cerrar la asistencia computacional. Solo trámites institucionales de la Universidad de Antioquia, decisiones procedimentales de Jacob/Steven que requieren firma o relaciones, y validación final de voz de Jacob. La asistencia computacional puede preparar borradores, pero no firmar ni decidir el corte final.
 - **Sección B — ejecutables por la asistencia computacional:** lo que **sí** se puede cerrar desde el repositorio sin perder rigor. Se ejecuta en esta misma iteración o se deja con plan operativo y métrica de aceptación explícita.
@@ -79,6 +79,8 @@ Cada tarea declara: **estado actual**, **acción operativa**, **métrica de acep
 | B-E2 | Verificar uniformidad de Chicago author-date en bibliografía y cuerpo (uso de "y" en español, "and" en inglés, paginación en citas textuales). | ≤5 anomalías persistentes documentadas como excepción justificada. |
 | B-E3 | Verificar numeración de tablas y figuras (114 tablas + 9 figuras según F31 cerrado); reparar posibles desfases tras inserciones de nueva sección. | Numeración estable y referencias cruzadas verificadas. |
 | B-E4 | Verificar cobertura del glosario tras los cambios B-F2/B-F5/B-F6. | Términos nuevos introducidos en cuerpo aparecen en glosario operativo. |
+| B-E5 | Reconciliar EDI/p/CI canónicos del caso 30 (behavioral dynamics) reportados en cuerpo (EDI=0.262, p=0.044, CI [0.249, 0.280]) con la versión actual del `metrics.json` (EDI=0.255 real-phase, p_perm=0.517 con sig=True por bootstrap-CI). Decidir si la cifra del manuscrito proviene de un perfil agresivo (n_perm=2999, n_boot=1500) que debe re-ejecutarse y persistirse, o si la prosa debe alinearse al canónico actual. | Tras re-ejecución agresiva: o el `metrics.json` aggregate refleja EDI/p/CI reportados en cuerpo, o el cuerpo se actualiza al canónico actual. Documentado en bitácora. |
+| B-E6 | Verificar el resto de cifras EDI/p/CI por caso del corpus inter-dominio contra `metrics.json` real-phase, no synthetic-phase. Caso 31 ya corregido (0.84 → 0.91). | 0 desfases de >0.02 entre cuerpo y JSON real-phase para los 30 casos macro. |
 
 ---
 
