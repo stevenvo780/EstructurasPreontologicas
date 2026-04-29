@@ -58,7 +58,7 @@ disponible en la biblioteca local (31 archivos PDF/EPUB, 112 MB).
 - **Ontología social**: Bourdieu 1990 *The Logic of Practice* (inglés);
   Gilbert 1989 *On Social Facts*.
 - **Robótica embodied**: Brooks 1991 *Intelligence Without Representation*;
-  Pfeifer & Scheier 1999 *Understanding Intelligence*.
+  Pfeifer y Scheier 1999 *Understanding Intelligence*.
 - **Otros realismos / OOO**: Harman 2018 *Object-Oriented Ontology*; Ladyman
   & Ross 2007 *Every Thing Must Go*; Morton 2013 *Hyperobjects*; Psillos 1999
   *Scientific Realism*; Sellars *Empiricism and the Philosophy of Mind /

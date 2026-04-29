@@ -61,36 +61,121 @@ def _compute_edi_vec(rmse_abm: np.ndarray, rmse_red: np.ndarray) -> np.ndarray:
     return np.clip(edi, -1.0, 1.0)
 
 
+def standardize_series(series: Sequence[float]) -> tuple[np.ndarray, dict]:
+    """
+    Estandariza una serie temporal a media 0 y desviación 1.
+
+    EDI es sensible al rango de las series cuando el ratio
+    RMSE_coupled/RMSE_no_ode depende de la magnitud absoluta. La
+    estandarización reduce esa sensibilidad reportando comparaciones
+    sobre series adimensionales.
+
+    Returns
+    -------
+    standardized : np.ndarray
+    info : dict con mean y std originales para revertir si hace falta
+    """
+    a = np.asarray(series, dtype=np.float64)
+    mu = float(a.mean())
+    sigma = float(a.std(ddof=0))
+    if sigma <= 1e-15:
+        return a - mu, {"mean": mu, "std": sigma, "standardized": False}
+    return (a - mu) / sigma, {"mean": mu, "std": sigma, "standardized": True}
+
+
+def edi_with_standardization_check(
+    obs: Sequence[float],
+    abm_coupled: Sequence[float],
+    abm_no_ode: Sequence[float],
+) -> dict:
+    """
+    Computa EDI sobre las series originales y sobre las series estandarizadas
+    (z-score). Reporta ambos valores para auditar la sensibilidad de EDI al
+    rango de las series.
+
+    Si |EDI_raw - EDI_standardized| > 0.05, las series tienen diferencias
+    de escala que afectan la métrica; el caso debe reportar el EDI
+    estandarizado como referencia primaria.
+    """
+    obs_a = np.asarray(obs, dtype=np.float64)
+    abm_a = np.asarray(abm_coupled, dtype=np.float64)
+    red_a = np.asarray(abm_no_ode, dtype=np.float64)
+
+    rmse_abm_raw = float(np.sqrt(np.mean((abm_a - obs_a) ** 2)))
+    rmse_red_raw = float(np.sqrt(np.mean((red_a - obs_a) ** 2)))
+    edi_raw = (
+        float((rmse_red_raw - rmse_abm_raw) / rmse_red_raw)
+        if rmse_red_raw > 1e-15 else 0.0
+    )
+
+    obs_z, info = standardize_series(obs_a)
+    abm_z = (abm_a - info["mean"]) / max(info["std"], 1e-12)
+    red_z = (red_a - info["mean"]) / max(info["std"], 1e-12)
+    rmse_abm_z = float(np.sqrt(np.mean((abm_z - obs_z) ** 2)))
+    rmse_red_z = float(np.sqrt(np.mean((red_z - obs_z) ** 2)))
+    edi_z = (
+        float((rmse_red_z - rmse_abm_z) / rmse_red_z)
+        if rmse_red_z > 1e-15 else 0.0
+    )
+
+    drift = abs(edi_raw - edi_z)
+    return {
+        "edi_raw": float(np.clip(edi_raw, -1.0, 1.0)),
+        "edi_standardized": float(np.clip(edi_z, -1.0, 1.0)),
+        "drift_due_to_scale": float(drift),
+        "scale_sensitive": bool(drift > 0.05),
+        "info": info,
+        "interpretation": (
+            "EDI estable bajo estandarización; la métrica no es sensible al rango."
+            if drift <= 0.05
+            else f"EDI cambia |Δ|={drift:.3f} bajo estandarización; reportar el "
+                 "valor estandarizado como referencia primaria."
+        ),
+    }
+
+
 def block_bootstrap_pvalue(
     obs_val: Sequence[float],
     abm_val: Sequence[float],
     reduced_val: Sequence[float],
     n_perm: int = 2999,
     block_size: int | None = None,
+    method: str = "stationary",
     seed: int = 42,
 ) -> tuple[float, float, float]:
     """
-    Block-permutation test para EDI bajo autocorrelación temporal.
+    Block-bootstrap para EDI bajo autocorrelación temporal.
 
-    A diferencia de la permutación independiente clásica (que asume
-    intercambiabilidad bajo H0), este test permuta bloques contiguos de
-    tamaño `block_size`, preservando la estructura local de autocorrelación.
-    Esto evita la inflación del Type-I error que ocurre cuando las series
-    tienen memoria.
+    method = "stationary": stationary bootstrap de Politis-Romano (1994).
+        Los bloques tienen LONGITUD GEOMÉTRICA aleatoria con parámetro
+        p = 1/block_size. Esto produce un proceso bootstrap estacionario
+        cuya autocorrelación se preserva en promedio. Es la implementación
+        canónica de Politis-Romano (1994).
 
-    Por defecto block_size = max(2, ceil(sqrt(n))), siguiendo la
-    recomendación estándar para estacionariedad débil.
+    method = "moving": moving block bootstrap clásico (Künsch 1989).
+        Bloques de longitud fija. Más simple; subconvergente bajo
+        no-estacionariedad.
+
+    Por defecto block_size promedio = max(2, ceil(sqrt(n))) (Politis-Romano
+    1994 recomienda elegirlo proporcional a la longitud de autocorrelación;
+    sqrt(n) es valor por defecto razonable bajo estacionariedad débil).
 
     Returns
     -------
     edi_real : float
         EDI puntual sobre los datos sin permutar.
     p_block : float
-        p-value calibrado bajo block-bootstrap (más conservador y
-        correctamente calibrado bajo autocorrelación).
+        p-value calibrado bajo el método elegido.
     p_naive : float
-        p-value bajo permutación simple (la versión miscalibrada legacy);
-        se reporta para comparación y para cuantificar el shift.
+        p-value bajo permutación simple (legacy); se reporta para
+        comparación y para cuantificar el shift de calibración.
+
+    References
+    ----------
+    Politis, D. N. y Romano, J. P. (1994). "The Stationary Bootstrap".
+        *Journal of the American Statistical Association* 89(428): 1303-1313.
+    Künsch, H. R. (1989). "The Jackknife and the Bootstrap for General
+        Stationary Observations". *Annals of Statistics* 17(3): 1217-1241.
     """
     obs = np.asarray(obs_val, dtype=np.float64)
     abm = np.asarray(abm_val, dtype=np.float64)
@@ -103,7 +188,6 @@ def block_bootstrap_pvalue(
     if block_size is None:
         block_size = max(2, int(math.ceil(math.sqrt(n))))
     block_size = min(block_size, n)
-    n_blocks = int(math.ceil(n / block_size))
 
     edi_real = float(_compute_edi_vec(
         _rmse(abm, obs).reshape(()), _rmse(red, obs).reshape(())
@@ -111,20 +195,40 @@ def block_bootstrap_pvalue(
 
     rng = np.random.RandomState(seed)
 
-    # ------- block-bootstrap -------
-    # Para cada permutación: tomamos n_blocks índices de inicio aleatorios
-    # y concatenamos bloques de longitud block_size.
-    starts = rng.randint(0, max(1, n - block_size + 1), size=(n_perm, n_blocks))
-    # Construir matriz de índices (n_perm, n)
-    offsets = np.arange(block_size)
-    idx_blocks = (starts[:, :, None] + offsets[None, None, :]).reshape(n_perm, -1)[:, :n]
-    obs_perm_block = obs[idx_blocks]  # (n_perm, n)
+    if method == "stationary":
+        # Stationary bootstrap (Politis-Romano 1994): para cada posición
+        # de la serie remuestreada, se conserva el siguiente índice con
+        # probabilidad 1 - p (p = 1/block_size esperado), y se reinicia
+        # con un índice aleatorio con probabilidad p.
+        p_geom = 1.0 / block_size
+        idx_matrix = np.empty((n_perm, n), dtype=np.int64)
+        for i in range(n_perm):
+            idx = np.empty(n, dtype=np.int64)
+            idx[0] = rng.randint(0, n)
+            jumps = rng.uniform(0, 1, n) < p_geom
+            for t in range(1, n):
+                if jumps[t]:
+                    idx[t] = rng.randint(0, n)
+                else:
+                    idx[t] = (idx[t - 1] + 1) % n
+            idx_matrix[i] = idx
+        obs_perm_block = obs[idx_matrix]
+    elif method == "moving":
+        # Moving block bootstrap (Künsch 1989): bloques de longitud fija.
+        n_blocks = int(math.ceil(n / block_size))
+        starts = rng.randint(0, max(1, n - block_size + 1), size=(n_perm, n_blocks))
+        offsets = np.arange(block_size)
+        idx_blocks = (starts[:, :, None] + offsets[None, None, :]).reshape(n_perm, -1)[:, :n]
+        obs_perm_block = obs[idx_blocks]
+    else:
+        raise ValueError(f"método desconocido: {method!r}; usar 'stationary' o 'moving'")
+
     rmse_abm_null_b = _rmse(abm[None, :], obs_perm_block)
     rmse_red_null_b = _rmse(red[None, :], obs_perm_block)
     null_edis_block = _compute_edi_vec(rmse_abm_null_b, rmse_red_null_b)
     p_block = float((np.sum(null_edis_block >= edi_real) + 1) / (n_perm + 1))
 
-    # ------- permutación simple (legacy) para comparación -------
+    # Permutación simple (legacy) para comparación
     idx_naive = np.array([rng.permutation(n) for _ in range(n_perm)])
     obs_perm_naive = obs[idx_naive]
     rmse_abm_null_n = _rmse(abm[None, :], obs_perm_naive)

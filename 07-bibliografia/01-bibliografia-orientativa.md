@@ -7,27 +7,27 @@ Cada capítulo del manuscrito se ancla en al menos un interlocutor principal y u
 
 | Capítulo | Interlocutor principal | Secundarios |
 |----------|------------------------|-------------|
-| 02-01 (ontología) | Bunge (1979) | Dupré, Ladyman & Ross, Dennett, Sellars, Wittgenstein, Simondon, Bueno |
-| 02-02 (epistemología) | Cartwright (1989) | Pearl, Bechtel & Craver, Mitchell, Dennett, Popper |
+| 02-01 (ontología) | Bunge (1979) | Dupré, Ladyman y Ross, Dennett, Sellars, Wittgenstein, Simondon, Bueno |
+| 02-02 (epistemología) | Cartwright (1989) | Pearl, Bechtel y Craver, Mitchell, Dennett, Popper |
 | 02-03 (categorías) | Dennett (1991) | Searle, Bourdieu, Latour, Simondon |
-| 02-04 (nivel B) | Warren (2006), Gibson (1979) | Maturana & Varela, Varela-Thompson-Rosch, Clark, Noë, Fajen |
+| 02-04 (nivel B) | Warren (2006), Gibson (1979) | Maturana y Varela, Varela-Thompson-Rosch, Clark, Noë, Fajen |
 | 02-05 (temporalidad y causalidad) | Woodward (2003), Mellor (1998) | Craver, Pearl, McTaggart, Kim, Bunge, Bergson, Whitehead, Hoel |
 | 02-06 (dimensión normativa y ética) | Bunge (1989, vol. VIII) | Searle, MacIntyre, Foot, Mackie, Hoyos |
-| 03-01 (aparato) | Pearl (2009) | Ladyman & Ross, Strogatz, Kelso, Haken |
-| 03-02 (criterios) | Bunge (1959), Lakatos (1978) | Cartwright, Pearl, Popper |
-| 03-03 (auditoría) | Bunge (1959) | Bechtel, Craver, Mitchell |
+| 03-01 (aparato) | Pearl (2009) | Ladyman y Ross, Strogatz, Kelso, Haken |
+| 03-02 (criterios) | Lakatos (1978), Popper (1959) | Cartwright, Pearl, Bunge |
+| 03-03 (auditoría) | Bechtel y Craver (2007), Mitchell (2009) | Bunge, Cartwright |
 | 03-04 (κ empírico, EDI) | Hoel (2017) | Strogatz, Kelso, Haken, Tononi, Seth, Rosas, Mediano, Klein |
 | 04-01 (rivales) | Por rival | Wolfram (2020), Tononi (IIT), Searle (1980), Chalmers (2006) |
 | 04-02 (límites) | Searle (1995) | Varela-Thompson, Bourdieu, Latour |
-| 05-01 (mente) | Varela-Thompson-Rosch (1991), Dennett (1991) | Clark & Chalmers, Noë, Searle, Sellars |
-| 05-02 (biología) | Nicholson & Dupré (2018), Scheffer (2009) | Keller, Bechtel & Craver, Maturana & Varela |
+| 05-01 (mente) | Varela-Thompson-Rosch (1991), Dennett (1991) | Clark y Chalmers, Noë, Searle, Sellars |
+| 05-02 (biología) | Nicholson y Dupré (2018), Scheffer (2009) | Keller, Bechtel y Craver, Maturana y Varela |
 | 05-03 (técnico) | Simondon (1989), Latour (2005) | Brooks, Beyer (SRE), Hayhoe |
 | 05-04 (instituciones) | Bourdieu (1980) | Searle, Latour, Gilbert, Bunge, North |
 | 05-05 (caso ancla cualitativo) | Warren (2006), Gibson (1979) | Fajen, Sternad, Foo, Yilmaz, Lee, Fink |
 | 06-01 (cierre) | — | sintetiza todos los anteriores |
-| 09 (corpus EDI) | Hoel (2017), Morton (2013) | Bunge, Ladyman & Ross, Woodward, Kim, Humphreys, O'Connor & Wong |
+| 09 (corpus EDI) | Hoel (2017), Morton (2013) | Bunge, Ladyman y Ross, Woodward, Kim, Humphreys, O'Connor y Wong |
 
-## Bibliografía Nuclear Completa (76 fuentes)
+## Bibliografía nuclear completa
 
 ### A. Filosofía de la Ciencia, Ontología y Emergencia
 
@@ -39,33 +39,31 @@ Cada capítulo del manuscrito se ancla en al menos un interlocutor principal y u
 6. Chalmers, D. (2006). "Strong and Weak Emergence". En P. Clayton y P. Davies (eds.), *The Re-Emergence of Emergence*. Oxford: Oxford University Press.
 7. Dennett, D. (1991). "Real Patterns". *The Journal of Philosophy* 88(1): 27–51.
 8. Dupré, J. (1993). *The Disorder of Things: Metaphysical Foundations of the Disunity of Science*. Cambridge: Harvard University Press.
-9. Harman, G. (2018). *Object-Oriented Ontology: A New Theory of Everything*. London: Pelican Books.
-10. Humphreys, P. (2016). *Emergence: A Philosophical Account*. Oxford: Oxford University Press.
-11. Kant, I. (1781/1998). *Crítica de la razón pura*. Trad. P. Guyer y A. W. Wood. Cambridge: Cambridge University Press.
-12. Kim, J. (1999). "Making Sense of Emergence". *Philosophical Studies* 95(1–2): 3–36.
-13. Ladyman, J. y Ross, D. (2007). *Every Thing Must Go: Metaphysics Naturalized*. Oxford: Oxford University Press.
-14. Latour, B. (2005). *Reassembling the Social: An Introduction to Actor-Network-Theory*. Oxford: Oxford University Press.
-15. Latour, B. (2017). *Facing Gaia: Eight Lectures on the New Climatic Regime*. Cambridge: Polity Press.
-16. Morton, T. (2013). *Hyperobjects: Philosophy and Ecology after the End of the World*. Minneapolis: University of Minnesota Press.
-17. Nicholson, D. y Dupré, J. (eds.) (2018). *Everything Flows: Towards a Processual Philosophy of Biology*. Oxford: Oxford University Press.
-18. O'Connor, T. y Wong, H. Y. (2005). "The Metaphysics of Emergence". *Noûs* 39(4): 658–678.
-19. Psillos, S. (1999). *Scientific Realism: How Science Tracks Truth*. London: Routledge.
-20. Sellars, W. (1962). "Philosophy and the Scientific Image of Man". En R. Colodny (ed.), *Frontiers of Science and Philosophy*. Pittsburgh: University of Pittsburgh Press.
-21. Simondon, G. (1989). *Du mode d'existence des objets techniques*. Paris: Aubier.
-22. van Fraassen, B. C. (1980). *The Scientific Image*. Oxford: Oxford University Press.
-23. Whitehead, A. N. (1929). *Process and Reality*. New York: Macmillan.
-24. Wittgenstein, L. (1953). *Philosophical Investigations*. Oxford: Blackwell.
+9. Humphreys, P. (2016). *Emergence: A Philosophical Account*. Oxford: Oxford University Press.
+10. Kant, I. (1781/1998). *Crítica de la razón pura*. Trad. P. Guyer y A. W. Wood. Cambridge: Cambridge University Press.
+11. Kim, J. (1999). "Making Sense of Emergence". *Philosophical Studies* 95(1–2): 3–36.
+12. Ladyman, J. y Ross, D. (2007). *Every Thing Must Go: Metaphysics Naturalized*. Oxford: Oxford University Press.
+13. Latour, B. (2005). *Reassembling the Social: An Introduction to Actor-Network-Theory*. Oxford: Oxford University Press.
+14. Latour, B. (2017). *Facing Gaia: Eight Lectures on the New Climatic Regime*. Cambridge: Polity Press.
+15. Morton, T. (2013). *Hyperobjects: Philosophy and Ecology after the End of the World*. Minneapolis: University of Minnesota Press.
+16. Nicholson, D. y Dupré, J. (eds.) (2018). *Everything Flows: Towards a Processual Philosophy of Biology*. Oxford: Oxford University Press.
+17. O'Connor, T. y Wong, H. Y. (2005). "The Metaphysics of Emergence". *Noûs* 39(4): 658–678.
+18. Sellars, W. (1962). "Philosophy and the Scientific Image of Man". En R. Colodny (ed.), *Frontiers of Science and Philosophy*. Pittsburgh: University of Pittsburgh Press.
+19. Simondon, G. (1989). *Du mode d'existence des objets techniques*. Paris: Aubier.
+20. van Fraassen, B. C. (1980). *The Scientific Image*. Oxford: Oxford University Press.
+21. Whitehead, A. N. (1929). *Process and Reality*. New York: Macmillan.
+22. Wittgenstein, L. (1953). *Philosophical Investigations*. Oxford: Blackwell.
 
 ### B. Causalidad, Reducción, Mecanismos
 
-25. Batterman, R. (2002). *The Devil in the Details: Asymptotic Reasoning in Explanation, Reduction, and Emergence*. Oxford: Oxford University Press.
-26. Bechtel, W. (2008). *Mental Mechanisms: Philosophical Perspectives on Cognitive Neuroscience*. New York: Routledge.
-27. Cartwright, N. (1989). *Nature's Capacities and Their Measurement*. Oxford: Clarendon Press.
-28. Cartwright, N. (1999). *The Dappled World: A Study of the Boundaries of Science*. Cambridge: Cambridge University Press.
-29. Craver, C. (2007). *Explaining the Brain: Mechanisms and the Mosaic Unity of Neuroscience*. Oxford: Oxford University Press.
-30. Mitchell, S. D. (2009). *Unsimple Truths: Science, Complexity, and Policy*. Chicago: University of Chicago Press.
-31. Pearl, J. (2009). *Causality: Models, Reasoning, and Inference*. 2.ª ed. Cambridge: Cambridge University Press.
-32. Woodward, J. (2003). *Making Things Happen: A Theory of Causal Explanation*. Oxford: Oxford University Press.
+23. Batterman, R. (2002). *The Devil in the Details: Asymptotic Reasoning in Explanation, Reduction, and Emergence*. Oxford: Oxford University Press.
+24. Bechtel, W. (2008). *Mental Mechanisms: Philosophical Perspectives on Cognitive Neuroscience*. New York: Routledge.
+25. Cartwright, N. (1989). *Nature's Capacities and Their Measurement*. Oxford: Clarendon Press.
+26. Cartwright, N. (1999). *The Dappled World: A Study of the Boundaries of Science*. Cambridge: Cambridge University Press.
+27. Craver, C. (2007). *Explaining the Brain: Mechanisms and the Mosaic Unity of Neuroscience*. Oxford: Oxford University Press.
+28. Mitchell, S. D. (2009). *Unsimple Truths: Science, Complexity, and Policy*. Chicago: University of Chicago Press.
+29. Pearl, J. (2009). *Causality: Models, Reasoning, and Inference*. 2.ª ed. Cambridge: Cambridge University Press.
+30. Woodward, J. (2003). *Making Things Happen: A Theory of Causal Explanation*. Oxford: Oxford University Press.
 
 ### B-bis. Temporalidad y filosofía del tiempo (cap 02-05)
 

@@ -375,5 +375,12 @@
         "interpretation": "Tendencia no confirmada (Nivel 1): EDI positivo pero sin significancia estadística"
       }
     }
+  },
+  "fwer_holm": {
+    "p_value_raw": 0.998998998998999,
+    "p_value_holm_adjusted": 1.0,
+    "survives_alpha_0_05": false,
+    "correction_method": "Holm-Bonferroni (1979)",
+    "note": "Corrección de family-wise error rate aplicada al corpus completo. Sobrevivir α=0.05 significa que el caso permanece estadísticamente significativo tras corrección por comparaciones múltiples. Casos con p_raw < 0.05 pero p_holm > 0.05 son significativos individuales pero no significativos colectivamente."
   }
 }

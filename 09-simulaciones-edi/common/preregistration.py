@@ -1,34 +1,40 @@
 """
-Pre-registro criptográfico — bloque científico B3 (V5.1).
+Auditoría criptográfica del setup del corpus.
 
-Cierra parcialmente la deuda L2 (composición post-hoc) sin la imposibilidad
-lógica de pre-registrar retroactivamente. La idea operativa es:
+Honestidad sobre el alcance: este módulo NO constituye pre-registro en el
+sentido estricto del término. El pre-registro estricto (e.g., OSF
+Registries, AsPredicted) requiere depósito de hipótesis y plan de análisis
+ANTES de ver los datos, en una plataforma externa que provee garantía
+temporal independiente del autor.
 
-- Cada caso del corpus tiene un "setup" (código, sondas, parámetros base,
-  configuraciones, datos de entrada) que vive en su carpeta antes de la
-  ejecución de la validación.
-- Calculamos SHA-256 sobre todo el setup ANTES de cualquier `tesis run`,
-  junto con el git commit SHA y un timestamp UTC. Esto se versiona en
-  un archivo immutable junto al output.
-- Cualquier evaluador externo puede:
-    1. Verificar que los hashes versionados coinciden con el setup actual
-       (no se modificó retroactivamente);
-    2. Reproducir bit-a-bit la ejecución desde el commit declarado.
+Lo que este módulo provee es **auditoría criptográfica de cambios**:
 
-Esto NO produce pre-registro retroactivo (eso es lógicamente imposible).
-Lo que produce es **pre-registro mecánico de cualquier ejecución futura**
-y **garantía criptográfica** de que el setup declarado coincide con el
-ejecutado. Combinado con el pre-registro honesto (declarado en
-`Bitacora/2026-04-28-cierre-pendientes/05-pre-registro-corpus-honesto.md`),
-cierra la deuda L2 al nivel científicamente exigible.
+- Calcula SHA-256 sobre el setup de cada caso (código, sondas, parámetros,
+  configuraciones, datos de entrada cuando aplica).
+- Versiona ese hash junto con `git_commit_sha` y `timestamp_utc` en
+  `SETUP_HASH.json` por caso y en `HASHES_PRE_EJECUCION.json` agregado.
+- Permite que un evaluador externo verifique que el setup actual del
+  repositorio coincide con el setup que produjo los outputs publicados.
 
-Cumple con el espíritu de las recomendaciones de:
-- Open Science Framework (OSF) registries
-- COS Registered Reports
-- AsPredicted protocol freezes
+Casos de uso válidos del módulo:
+- Detectar modificaciones retroactivas del código o los parámetros
+  posteriores a la ejecución reportada.
+- Garantizar que un re-run sobre el commit declarado reproduce los
+  mismos resultados bit-a-bit.
+- Servir como cadena de custodia computacional para revisores.
 
-Sin requerir registro en plataforma externa: el commit SHA + el hash del
-setup son inmutables en el git log, lo cual provee garantía equivalente.
+Casos de uso NO válidos del módulo:
+- Sustituir un pre-registro genuino en plataforma externa.
+- Demostrar que las hipótesis del análisis se formularon antes de ver
+  los datos (eso es imposible de verificar criptográficamente).
+- Resolver la composición post-hoc del corpus (que requiere pre-registro
+  en plataforma externa antes de la próxima iteración del corpus).
+
+Combinado con la declaración honesta de composición post-hoc en bitácora
+(`Bitacora/2026-04-28-cierre-pendientes/05-pre-registro-corpus-honesto.md`),
+este módulo cierra la deuda L2 hasta donde es operativamente verificable
+sin plataforma externa. La elevación a pre-registro estricto requiere
+gestión institucional (OSF u homólogo).
 
 Uso:
 
@@ -158,7 +164,7 @@ def freeze_case_setup(
     write_marker: bool = True,
 ) -> dict:
     """
-    Genera el record de pre-registro del setup del caso.
+    Genera el record de auditoría criptográfica del setup del caso.
 
     Parameters
     ----------
@@ -212,6 +218,15 @@ def freeze_case_setup(
         "protocol_version": "V5.1",
         "method": "sha256_recursive_with_output_exclusion",
     }
+
+    record["audit_type"] = "cryptographic_setup_audit"
+    record["disclaimer"] = (
+        "Este record es auditoría criptográfica de cambios sobre el setup del "
+        "caso, no pre-registro estricto en plataforma externa. Permite "
+        "verificar que el setup actual coincide bit-a-bit con el setup "
+        "publicado bajo el commit declarado, pero no garantiza que las "
+        "hipótesis del análisis se formularan antes de ver los datos."
+    )
 
     if write_marker:
         marker_path = case_dir / "SETUP_HASH.json"

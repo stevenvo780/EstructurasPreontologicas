@@ -291,11 +291,21 @@ def _q4_reproducibilidad(metrics: dict, case_dir: Path) -> QualityComponent:
 
 def _q5_multi_sonda_penalizada(metrics: dict, case_dir: Path) -> QualityComponent:
     """
-    Q5: presencia de sonda secundaria, con penalización por divergencia
-    inter-paradigma alta.
+    Q5: presencia de sonda secundaria, con criterio jerárquico.
 
-    Convergencia |Δ EDI| ≤ 0.05 es premio; divergencia |Δ EDI| > 0.30 es
-    penalización (al menos una sonda es inadecuada).
+    Distinción clave (Fallo F21): cuando dos sondas divergen, la asimetría
+    de motivación teórica indica cuál es la sonda fiable. Una sonda
+    primaria con cita disciplinar canónica + protocolo documentado tiene
+    prior más alto que una sonda secundaria de prueba. La divergencia
+    indica entonces que la SECUNDARIA es inadecuada, no que ambas lo sean.
+
+    Reglas:
+    - convergencia |Δ| ≤ 0.05: confirmación inter-paradigma robusta.
+    - divergencia 0.05 < |Δ| ≤ 0.30: ambigua; reduce la confianza pero
+      no descalifica la sonda primaria si tiene alto Q3.
+    - divergencia |Δ| > 0.30: indica que la secundaria es inadecuada
+      (o, menos probable, que ambas lo son). Q5 baja, pero no a 0.25
+      si Q3 primaria es alta.
     """
     sec_path = case_dir / "outputs" / "secondary_probe_report.json"
     if not sec_path.is_file():
@@ -318,6 +328,11 @@ def _q5_multi_sonda_penalizada(metrics: dict, case_dir: Path) -> QualityComponen
         return QualityComponent(0.55, "sonda secundaria presente sin Δ reportado")
 
     delta = float(delta)
+    # Prior sobre la sonda primaria: si tiene protocolo + cita disciplinar
+    # documentada en docs/, asumimos que la motivación teórica es robusta.
+    proto_exists = (case_dir / "docs" / "protocolo_simulacion.md").is_file()
+    primary_strong = proto_exists  # Q3 alto = sonda primaria fiable
+
     if delta <= 0.05 and primary_arrays:
         return QualityComponent(0.95, f"convergencia inter-paradigma sobre arrays reales (Δ={delta:.3f})")
     if delta <= 0.05:
@@ -325,7 +340,15 @@ def _q5_multi_sonda_penalizada(metrics: dict, case_dir: Path) -> QualityComponen
     if delta <= 0.15:
         return QualityComponent(0.65, f"sonda secundaria con Δ moderado ({delta:.3f})")
     if delta <= 0.30:
-        return QualityComponent(0.45, f"sonda secundaria con divergencia (Δ={delta:.3f})")
+        # Divergencia ambigua: si la primaria tiene protocolo robusto,
+        # la secundaria probablemente es inadecuada (no ambas).
+        score = 0.55 if primary_strong else 0.45
+        return QualityComponent(score, f"sonda secundaria con divergencia (Δ={delta:.3f}); primaria tiene protocolo: {primary_strong}")
+    # Divergencia alta. Si la primaria tiene protocolo, la inadecuación
+    # cae sobre la secundaria; el caso primario sigue válido pero sin
+    # confirmación inter-paradigma.
+    if primary_strong:
+        return QualityComponent(0.40, f"divergencia alta (Δ={delta:.3f}); sonda secundaria probablemente inadecuada (primaria con protocolo robusto)")
     return QualityComponent(0.25, f"divergencia alta inter-paradigma (Δ={delta:.3f}); al menos una sonda es inadecuada")
 
 
