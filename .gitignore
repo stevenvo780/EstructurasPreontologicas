@@ -40,3 +40,6 @@ Thumbs.db
 web_react/node_modules/
 web_react/.vite/
 # dist/ se commitea para que Vercel/FastAPI sirvan los assets compilados
+
+# El build de Vite se sincroniza a /public para Vercel; web_react/dist es intermedio
+web_react/dist/

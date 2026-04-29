@@ -52,8 +52,18 @@ except ImportError:
     )
 
 APP_DIR = Path(__file__).resolve().parent
-REACT_DIST = ROOT / "web_react" / "dist"
-USE_REACT = REACT_DIST.exists() and (REACT_DIST / "index.html").exists()
+# En despliegue Vercel los estáticos viven en /public; en desarrollo local
+# generamos a web_react/dist con `npm run build`. El servidor FastAPI escoge
+# la ubicación que exista (público > dist).
+_REACT_PUBLIC = ROOT / "public"
+_REACT_DIST = ROOT / "web_react" / "dist"
+if _REACT_PUBLIC.exists() and (_REACT_PUBLIC / "index.html").exists():
+    REACT_DIST = _REACT_PUBLIC
+elif _REACT_DIST.exists() and (_REACT_DIST / "index.html").exists():
+    REACT_DIST = _REACT_DIST
+else:
+    REACT_DIST = _REACT_DIST  # default, USE_REACT será False
+USE_REACT = (REACT_DIST / "index.html").exists()
 
 
 def _asset_version() -> str:
