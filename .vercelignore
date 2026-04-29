@@ -1,0 +1,100 @@
+# Excluir todo lo que NO necesita la lambda Python en runtime.
+# La lambda solo lee:
+#   - web_tesis/, api/, requirements.txt
+#   - TesisFinal/Tesis.md
+#   - 09-simulaciones-edi/*/outputs/metrics.json + report.md + primary_arrays.json
+#   - 09-simulaciones-edi/*/case_config.json + README.md + docs/*.md
+#   - capítulos 00-08 + 10 (markdown sources)
+#   - 07-bibliografia/01-bibliografia-orientativa.md (no los PDFs)
+
+# ─── Build artifacts e infraestructura local ──────────────────────────────────
+node_modules/
+**/node_modules/
+.venv/
+**/.venv/
+__pycache__/
+**/__pycache__/
+**/*.pyc
+**/*.pyo
+**/.pytest_cache/
+**/.cache/
+**/.vite/
+**/dist/
+
+# ─── React: el dist está en /public, los fuentes no son necesarios en runtime ─
+web_react/
+
+# ─── Bibliografía (PDFs de terceros con copyright; ~cientos MB) ───────────────
+07-bibliografia/*.pdf
+07-bibliografia/*.PDF
+
+# ─── Datos descargables del corpus EDI (regenerables, pueden ser MB) ──────────
+09-simulaciones-edi/data_cache/
+09-simulaciones-edi/**/data_cache/
+09-simulaciones-edi/**/data/*.csv
+09-simulaciones-edi/**/data/*.parquet
+09-simulaciones-edi/**/data/*.feather
+
+# ─── Visualizaciones pre-renderizadas (figuras del corpus) ────────────────────
+visualizations/
+figures/
+**/*.png
+**/*.jpg
+**/*.jpeg
+**/*.gif
+**/*.webp
+**/*.svg
+# Excepción: los SVGs/PNGs que viven dentro de /public/ (bundle React) sí se sirven
+!public/**/*.png
+!public/**/*.jpg
+!public/**/*.svg
+
+# ─── PDF y outputs binarios ──────────────────────────────────────────────────
+**/*.pdf
+**/*.PDF
+TesisFinal/Tesis.pdf
+TesisFinal/build_pdf.py
+
+# ─── Bitácora antigua y plantillas archivadas ────────────────────────────────
+Bitacora/2026-04-28-iteraciones-IA/V5_documentos/
+Bitacora/2026-04-28-iteraciones-IA/V5_plantillas_por_caso/
+Bitacora/2026-04-28-iteraciones-IA/V5_reportes_tecnicos/
+Bitacora/2026-04-28-iteraciones-IA/V5_scripts_jerga/
+
+# ─── Suite ST: el runtime no necesita las dependencias node ──────────────────
+08-consistencia-st/node_modules/
+08-consistencia-st/.npm/
+08-consistencia-st/coverage/
+
+# ─── Output binario del corpus (solo metrics.json + reports md son necesarios) ─
+09-simulaciones-edi/**/outputs/*.npy
+09-simulaciones-edi/**/outputs/*.npz
+09-simulaciones-edi/**/outputs/*.parquet
+09-simulaciones-edi/**/outputs/_old/
+09-simulaciones-edi/**/outputs/_archive/
+09-simulaciones-edi/**/outputs/*.tmp
+
+# ─── Tests, scripts auxiliares y bench ────────────────────────────────────────
+09-simulaciones-edi/baselines/results.json
+09-simulaciones-edi/multi_sonda/results.json
+09-simulaciones-edi/perfil_agresivo/
+09-simulaciones-edi/wolfram_pilot/data/
+09-simulaciones-edi/covid_pilot/data/
+
+# ─── Archivos del sistema ────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+*.bak
+*~
+
+# ─── Git, CI, docs locales ──────────────────────────────────────────────────
+.git/
+.github/
+.vercel/
+*.md.bak
+TAREAS_PENDIENTES.md.bak
+
+# ─── PDFs de las correspondencias ──────────────────────────────────────────
+Correspondencia_Ricardo/
