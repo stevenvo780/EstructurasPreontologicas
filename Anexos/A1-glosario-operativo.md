@@ -40,7 +40,7 @@ Modelo positivo de la emergencia. Estabilización dinámica del sistema acoplado
 
 ---
 
-## Términos introducidos en V5 (2026-04-28)
+## Términos operativos del marco
 
 ### Naturalismo metafísico moderado
 Compromiso filosófico de partida explícitamente declarado, no conclusión demostrada: el sustrato material dinámico se asume como punto de partida, justificado por continuidad con la ciencia, parsimonia ontológica y capacidad operativa del aparato. Compatible con realismo estructural moderado; rechaza dualismo, idealismo, panpsiquismo, emanacionismo, creacionismo y pluralismo de planos sustanciales. Capítulo 02-01 §0.1.

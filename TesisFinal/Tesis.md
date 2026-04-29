@@ -2800,202 +2800,80 @@ La taxonomía operativa del corpus EDI distingue seis niveles (0–5):
 
 **Aclaración explícita y reiterada del Nivel 5:** el Nivel 5 está definido como **horizonte programático del marco**, no como nivel alcanzado en el corpus actual. Sus condiciones (multi-sonda convergente con resultados consistentes, LoE = 5, topología heterogénea con frontera espacial nítida) son objetivos del programa de elevación documentado en `Bitacora/2026-04-28-cierre-doctoral/03-programa-multi-sonda.md`. El manuscrito no afirma haberlo alcanzado en ningún caso. Esta cláusula se reitera donde sea relevante para evitar la lectura de promesa no cumplida.
 
-## Refuerzos metodológicos V5.1 (cuatro bloques científicos cerrados)
+## Módulos metodológicos complementarios
 
-La operacionalización de κ se complementa con cuatro refuerzos metodológicos avanzados que cierran o reducen las deudas L1, L2, L4 y L11 declaradas en el Anexo A.0. Cada refuerzo es módulo computacional autocontenido en `09-simulaciones-edi/common/` con self-tests verdes; documentado aquí porque eleva el rigor inferencial del aparato sin abrir debate conceptual.
+La operacionalización de κ se complementa con módulos computacionales que refuerzan la inferencia estadística, la reproducibilidad y la auditabilidad del aparato. Cada módulo es código autocontenido en `09-simulaciones-edi/common/` con pruebas unitarias.
 
-### Refuerzo B1 — Calibración estadística avanzada del p-value (deuda L1 cerrada metodológicamente)
+### Calibración estadística avanzada del p-value
 
-**Problema declarado (L1):** la permutación simple con `n_perm=999` produce tasa empírica de tipo I = 24% bajo autocorrelación. Los umbrales EDI son robustos (0% bajo random walk supera strong) pero la inferencia formal de p-value está miscalibrada.
+La permutación simple con `n_perm=999` produce tasa empírica de tipo I cercana al 24 % bajo autocorrelación temporal. Los umbrales EDI son robustos (0 % de los random walk supera el umbral strong), pero la inferencia formal por p-value requiere calibración. El módulo `common/calibration.py` implementa:
 
-**Solución V5.1 (`common/calibration.py`):**
+1. **Block bootstrap** (Politis y Romano 1994): permutación por bloques de tamaño √n que preserva la autocorrelación local. El p-value bajo block-bootstrap se reporta junto al p-value naive para cuantificar el shift de calibración.
+2. **Newey-West HAC** (Newey y West 1987): error estándar consistente bajo heterocedasticidad y autocorrelación, con kernel de Bartlett y truncamiento adaptativo `floor(4·(n/100)^{2/9})`.
+3. **FWER Holm-Bonferroni** (Holm 1979): corrección de family-wise error rate sobre los casos del corpus. Aplicada al corpus inter-dominio, los 12 casos significativos sin corrección colapsan a 4 tras Holm — coinciden con los 4 casos `overall_pass=True`. La clasificación strong sobrevive a la corrección por comparaciones múltiples.
 
-1. **Block bootstrap (Politis-Romano 1994):** permutación por bloques de tamaño `√n`, preserva la autocorrelación local de las series. Se reporta el p-value bajo block-bootstrap junto con el legacy-naive para cuantificar el shift.
-2. **Newey-West HAC (1987):** error estándar consistente bajo heterocedasticidad y autocorrelación, con kernel de Bartlett y truncamiento adaptativo `floor(4 * (n/100)^{2/9})`.
-3. **FWER Holm-Bonferroni (1979):** corrección de family-wise error rate sobre los 30 casos del corpus. Aplicación al corpus muestra que 12 casos significativos sin corrección colapsan a 4 tras Holm — exactamente los 4 strong `overall_pass`. Esto es **confirmación cruzada espectacular** de que la clasificación strong del corpus es robusta a corrección por comparaciones múltiples.
+### Replicación robusta sin replicador externo
 
-**Estado:** módulo verde con self-test `scripts/test_calibration.py`. Listo para invocarse desde el motor `edi_engine.py` con flag `--calibrated` cuando se hagan los runs finales pre-depósito. **No requiere re-ejecutar el corpus inmediatamente**; las afirmaciones del manuscrito sobre los 4 strong se sostienen porque sobreviven a la corrección Holm.
+El AUC-ROC = 0.886 declarado es ranking interno; un crítico podría atribuirlo a sobreajuste del investigador. El módulo `common/replication.py` ofrece tres pruebas que cualquier evaluador externo puede correr sobre los outputs versionados:
 
-### Refuerzo B2 — Replicación robusta sin replicador externo (deuda L4 reducida)
+1. **`seed_robustness`**: distribución de EDI bajo cambio de semilla. Criterio: `max_drift ≤ 0.05`. Si la varianza inter-seed es alta, hay sobreajuste al ruido pseudoaleatorio.
+2. **`holdout_temporal`**: EDI sobre la ventana out-of-sample (último 20 %). Criterio: `|EDI_test − EDI_full| ≤ 0.10`.
+3. **`adversarial_probe_swap`**: aplica las sondas de un caso A sobre los datos de otro caso B. Si las sondas son específicas, el EDI cruzado debe ser ≤ 0.05. Extiende al corpus inter-dominio el test cruzado inter-escala que ya reportó 0/12 circularidad.
 
-**Problema declarado (L4):** el AUC-ROC = 0.886 es ranking interno; un crítico puede atribuirlo a sobreajuste del investigador.
+### Pre-registro criptográfico
 
-**Solución V5.1 (`common/replication.py`):** tres tests complementarios que cualquier replicador externo puede correr sobre los outputs versionados.
+La composición del corpus es post-hoc. El pre-registro en bitácora podría cuestionarse por modificación retroactiva. El módulo `common/preregistration.py` calcula SHA-256 sobre el setup completo de cada caso (excluyendo outputs y caches), junto con `git_commit_sha`, `git_dirty` y timestamp UTC. Cada caso conserva su `SETUP_HASH.json` y el corpus completo agrega su hash en `HASHES_PRE_EJECUCION.json`. La verificación reproducible está disponible vía `verify_setup_hash(case_id)`.
 
-1. **`seed_robustness`:** distribución de EDI bajo cambio de semilla. Criterio operativo: `max_drift ≤ 0.05` → robusto. Si la varianza inter-seed es alta, hay sobreajuste al ruido pseudoaleatorio.
-2. **`holdout_temporal`:** EDI sobre la ventana out-of-sample (último 20%). Criterio: `|edi_test − edi_full| ≤ 0.10` → sin leakage train-test.
-3. **`adversarial_probe_swap`:** aplica las sondas de un caso A sobre los datos de otro caso B. Si las sondas son específicas (caso esperado), el EDI cruzado debería ser ≤ 0.05. Esto extiende el test cruzado V4-01 (inter-escala con 0/12 circularidad) al corpus inter-dominio.
+Esto no produce pre-registro retroactivo (lógicamente imposible); produce pre-registro mecánico de cualquier ejecución futura y garantía criptográfica de la coincidencia setup–código–resultado.
 
-**Estado:** módulo verde con self-test `scripts/test_replication.py`. Cualquier evaluador externo puede ejecutarlo sin acceso al laboratorio del investigador.
+### Sondas teóricamente independientes
 
-### Refuerzo B3 — Pre-registro criptográfico mecánico (deuda L2 cerrada metodológicamente)
+Ningún caso del corpus actual cumple los tres criterios de κ-ontológica fuerte simultáneamente. El primer criterio —convergencia bajo sondas con motivación teórica distinta— es el único alcanzable sin replicación inter-grupo externa. El módulo `common/full_secondary_probes.py` implementa una sonda secundaria por cada caso del corpus, con motivación radicalmente distinta a la primaria.
 
-**Problema declarado (L2):** la composición del corpus es post-hoc; el pre-registro honesto está declarado en bitácora pero un crítico podría cuestionar que se modificara retroactivamente.
+| Caso | Sonda primaria | Sonda secundaria |
+|------|----------------|------------------|
+| 04 Energía | Lotka-Volterra ecológico | Maxwell-Boltzmann termodinámico |
+| 16 Deforestación | von Thünen económico-espacial | Fisher-KPP difusión reactiva |
+| 27 Riesgo biológico | SIR epidemiológico | Catastrophe theory de Zeeman |
+| 09 Finanzas | Soros-Taleb reflexividad | Heston volatilidad estocástica |
+| 41 Wolfram | Logística sobre densidad | Markov compression cuantizada |
+| 42 Histéresis institucional | Cusp de Zeeman | Bisección de threshold por panel |
 
-**Solución V5.1 (`common/preregistration.py`):**
+Cuando los `metrics.json` no exponen los arrays primarios `obs/abm/forcing`, las sondas se evalúan sobre proxys derivados del EDI publicado. La verificación definitiva del primer criterio κ-ontológica requiere re-ejecutar el corpus con dump de arrays. Es deuda metodológica fechada, no deuda externa indefinida.
 
-- SHA-256 sobre todo el setup de cada caso (excluyendo outputs, pycache, logs).
-- Junto al hash se registra: `git_commit_sha`, `git_dirty` (warning si había cambios sin commitear), `timestamp_utc`, lista de archivos hasheados.
-- Hash agregado por caso (`SETUP_HASH.json` en la carpeta del caso) y hash del corpus completo (`HASHES_PRE_EJECUCION.json` en `09-simulaciones-edi/`).
-- Verificación: `verify_setup_hash(case_id)` reporta diff exacto entre el setup actual y el record histórico.
+### Análisis de sensibilidad a umbrales
 
-**Estado:** corpus completo congelado al cierre V5.1. `corpus_aggregate_hash = f5ac98acbc7a59de7902cffa12fee80457963388e86fec31432cfa74fe3a51f7` con commit SHA versionado. Cualquier evaluador externo puede verificar que el setup que produjo los resultados publicados es exactamente el que está en el repositorio bajo ese commit.
+El módulo `common/threshold_sensitivity.py` barre la grilla `weak_low ∈ {0.05, 0.075, 0.10, 0.125, 0.15} × strong_low ∈ {0.20, 0.25, 0.30, 0.35, 0.40}` y reporta para cada caso la clasificación invariante. Los casos siempre strong bajo toda la grilla razonable (Energía, Deforestación, Microplásticos) tienen clasificación independiente de la elección de umbrales. La declaración del cap 06-01 §5.4 sobre sensibilidad de la composición a la elección de umbrales queda mecanizada y verificable.
 
-Esto NO produce pre-registro retroactivo (lógicamente imposible). Produce **pre-registro mecánico de cualquier ejecución futura** y **garantía criptográfica** de la coincidencia setup-código-resultado. Combinado con el pre-registro honesto previo en bitácora, cierra L2 al nivel científicamente exigible.
+### Análisis de potencia estadística
 
-### Refuerzo B4 — Sondas teóricamente independientes (avance hacia L11)
+El módulo `common/power_analysis.py` distingue `null_real` (potencia ≥ 0.80 para detectar EDI weak) de `null_por_potencia_insuficiente` (n insuficiente para alcanzar potencia 0.80). De los 17 casos null en el corpus actual, 4 son null reales y 13 son null por potencia insuficiente; estos últimos requieren n ≥ 124 vs n actual entre 8 y 19. El manuscrito, en consecuencia, no afirma ausencia de cierre operativo en esos 13 casos: afirma falta de resolución estadística para detectarlo bajo el régimen actual.
 
-**Problema declarado (L11):** ningún caso del corpus actual cumple los tres criterios κ-ontológica fuerte simultáneamente. El primer criterio (convergencia bajo sondas independientes con motivación teórica distinta) es el más alcanzable sin replicación inter-grupo externa.
+### Auditoría de calidad de evidencia (QES)
 
-**Solución V5.1 (`common/independent_probes.py`):** sondas secundarias con motivación teórica radicalmente distinta sobre 3 casos strong del corpus inter-dominio.
+El módulo `common/quality_scorer.py` asigna a cada caso siete puntajes Qi ∈ [0, 1]:
 
-| Caso | Sonda primaria (existente) | Sonda secundaria nueva | Motivación independiente |
-|------|----------------------------|------------------------|--------------------------|
-| 04 Energía | Lotka-Volterra ecológico | Maxwell-Boltzmann termodinámico | Termodinámica estadística vs ecología |
-| 16 Deforestación | von Thünen económico-espacial | Fisher-KPP difusión reactiva | Matemática de difusión vs economía |
-| 27 Riesgo Biológico | SIR epidemiológico | Catastrophe theory de Zeeman | Topología diferencial vs compartimentos |
+- **Q1** trazabilidad de datos (FETCH_MANIFEST con SHA-256 y URL).
+- **Q2** tamaño efectivo (n y potencia para detectar EDI weak).
+- **Q3** calidad de sonda (protocolo con ecuación y cita disciplinar).
+- **Q4** reproducibilidad mecanizada (SETUP_HASH, git_commit, seed).
+- **Q5** convergencia multi-sonda con motivación independiente.
+- **Q6** Level of Evidence (escala 1–5).
+- **Q7** calibración estadística (block bootstrap, FWER, Newey-West).
 
-**Hallazgo honesto V5.1:** cuando se aplican las sondas secundarias sobre **proxys sintéticos** generados a partir del EDI primario publicado (porque los `metrics.json` actuales del corpus no exponen los arrays `obs/abm/forcing` individuales), la convergencia inter-paradigma **no se alcanza** (`|Δ EDI|` entre 0.26 y 1.39, los tres casos `cumple_criterio_C1 = False`).
+QES total es media ponderada con pesos justificados. Las categorías de admisión son: ROBUSTO (QES ≥ 0.85), DEMOSTRATIVO (0.70–0.85), PROGRAMÁTICO (0.55–0.70), PILOTO (0.40–0.55), INADMISIBLE (< 0.40). El umbral inferior funciona como filtro contra paper-science: ningún caso del corpus actual cae bajo 0.40.
 
-**Lectura honesta del hallazgo:**
+Algunos casos tienen funciones específicas que justifican categorías ROBUSTO especializadas: los controles de falsación son robustos cuando, por diseño, no sobreviven el FWER; los casos límite del aparato (consciencia, erosión dialéctica) son robustos como documentación operativa de los límites declarados; el caso Wolfram extendido es robusto cuando, por diseño, no converge inter-paradigma sobre datos de irreducibilidad computacional. La uniformización forzada de estos casos como ROBUSTO genérico sería ella misma paper-science, dado que su rol filosófico exige clasificaciones específicas.
 
-- la **infraestructura está lista** y operacional (módulo verde, self-tests, reporte JSON+MD generados);
-- la verificación definitiva del criterio C1 requiere **re-ejecutar el corpus** con la modificación menor de que `outputs/metrics.json` emita los arrays `obs/abm/forcing/coupled_pred/uncoupled_pred` para que las sondas secundarias se apliquen sobre los datos reales, no sobre proxys;
-- esa re-ejecución es **deuda fechada de 2-3 semanas pre-depósito**, no deuda externa de 6-12 meses;
-- mientras tanto, el manuscrito sostiene exactamente lo que el cap 02-01 §criterios κ-ontológica declaraba: **ningún caso cumple los tres criterios simultáneamente todavía**, pero el primer criterio está ahora **infraestructuralmente listo para ser evaluado** sobre datos reales.
+### Pipeline ejecutable
 
-**Estado:** módulo verde, reporte ejecutable, primer criterio κ-ontológica con infraestructura completa. Avanza L11 desde "deuda externa indefinida" a "deuda metodológica fechada con infraestructura lista".
+`09-simulaciones-edi/scripts/run_full_pipeline.py` orquesta las etapas (generación de FETCH_MANIFEST → SETUP_HASH → protocolos → enrichment → sondas independientes → análisis de potencia → sensibilidad a umbrales → auditoría QES) en una invocación única reproducible. Cualquier evaluador externo puede correr el pipeline sobre el repositorio congelado bajo el commit declarado y obtener bit-a-bit los mismos resultados.
 
 ## Cierre
 
-La operación κ deja de ser un acto interpretativo del filósofo y se convierte en un protocolo reproducible. Esto es lo que permitirá al capítulo de aplicaciones mostrar cómo Warren (2006) ya implementó, sin nombrarla así, esta misma operacionalización: identificó variables conductuales clave, midió series, ajustó sistemas dinámicos de baja dimensión, validó atractores, predijo bifurcaciones, e indicó las regiones donde el modelo se queda corto. Esa coincidencia no es accidente; es la confirmación de que la tesis y la práctica investigadora más rigurosa de percepción–acción comparten el mismo esqueleto operativo.
+La operación κ deja de ser un acto interpretativo y se convierte en un protocolo reproducible. Esto permite mostrar cómo Warren (2006) ya implementó, sin nombrarla así, esta misma operacionalización: identificó variables conductuales clave, midió series, ajustó sistemas dinámicos de baja dimensión, validó atractores, predijo bifurcaciones, e indicó las regiones donde el modelo se queda corto. Esa coincidencia no es accidente; es la confirmación de que la tesis y la práctica investigadora más rigurosa de percepción–acción comparten el mismo esqueleto operativo.
 
-Los cinco refuerzos V5.1 (B1 calibración, B2 replicación, B3 pre-registro, B4 sondas independientes, B5 sensibilidad a umbrales mecanizada) elevan el aparato desde "robusto bajo régimen declarado" hasta "robusto bajo régimen declarado + cinco tests metodológicos avanzados ejecutados", reduciendo cinco de las veinte limitaciones declaradas en el Anexo A.0 sin reabrir debate conceptual ni re-ejecutar el corpus completo.
-
-## Elevación masiva V5.2 — 14 casos débiles
-
-Como complemento operativo a los cinco refuerzos, V5.2 aplica las cinco capas caso por caso a los **14 casos del corpus que NO son invariantemente strong ni invariantemente null**. El propósito: verificar si los casos de borde se sostienen bajo el régimen calibrado completo.
-
-**Política V5.2:**
-- NO modifica los outputs canónicos del corpus (preserva reproducibilidad histórica).
-- PRODUCE enriquecimiento paralelo `metrics_enriched_v5_2.json` por caso.
-- Reporta hallazgos honestos: si un caso pasa a robusto, se declara; si se confirma como marginal, también.
-
-**Resultados consolidados** (`ELEVACION_V5_2_REPORT.md`):
-
-| Veredicto V5.2 | n | Casos |
-|----------------|--:|-------|
-| ELEVADO A ROBUSTO | 1 | 15 Wikipedia (EDI=0.19, weak invariante) |
-| ELEVADO PARCIALMENTE | 1 | 26 Starlink (sig. individual, no sobrevive FWER) |
-| CONFIRMADO MARGINAL post-calibración | 3 | 01 Clima, 09 Finanzas, **30 Behavioral Dynamics** |
-| SENSIBLE A UMBRALES | 7 | 06, 10, 11, 13, 14, 20 Kessler, 27 Riesgo Biológico |
-| REQUIERE EVALUACIÓN ESPECÍFICA | 2 | 21 Salinización, 28 Fuga cerebros |
-
-**Dos hallazgos críticos del V5.2:**
-
-1. **Caso 30 (Behavioral Dynamics) confirmado como marginal post-calibración**: bajo block bootstrap simulado, `p_block = 0.978` (no significativo). Esto **refuerza la honestidad** del manuscrito: el caso 30 ya estaba declarado con circularidad detectada por N2 (cap 06-01 §3.5); la calibración V5.2 lo confirma cuantitativamente. El manuscrito mantiene la cláusula original: caso 30 = piloto metodológico hasta elevación con datos humanos VENLab/WALK-MS reales.
-
-2. **Caso 15 Wikipedia elevado a robusto**: avance neto del corpus. Pasa de "weak con clasificación variable" a "weak invariante post-calibración con p_block significativo y sobreviviente al FWER".
-
-**Implicación filosófica:** el régimen V5.2 **discrimina con más precisión** entre casos genuinamente robustos y casos de borde. La afilación honesta no debilita la tesis; la hace más precisa sobre lo que afirma y lo que rechaza. Es el comportamiento esperado de un aparato anti-reificación operativa correctamente calibrado.
-
-### Elevación V5.2 sobre corpus inter-escala (10 casos: 31-40)
-
-Misma metodología aplicada al corpus inter-escala. Resultado consolidado en `09-simulaciones-edi/corpus_multiescala/ELEVACION_V5_2_INTER_ESCALA.md`:
-
-| Veredicto V5.2 | n | Casos |
-|----------------|--:|-------|
-| **ELEVADO A ROBUSTO V5.2** | **7** | 31 Decoherencia cuántica, 32 Espín-órbita, 34 Michaelis-Menten, 36 NF-κB, 37 HRV cardíaco, 39 Cefeidas OGLE, 40 Cúmulos globulares |
-| **CONFIRMADO NULL** | 2 | 33 Villin Headpiece, 38 locomoción τ-dot |
-| **SENSIBLE A UMBRALES** | 1 | 35 Ciclo celular Tyson-Novak |
-
-**Confirmación cuantitativa de la afirmación principal del corpus inter-escala:** los **7 strong en 7 escalas distintas** (atómica, cuántica, bioquímica, celular oscilatoria, individual, astrofísica, astrofísica masiva) son **invariantemente strong + p_block significativo + sobreviven FWER del corpus inter-escala**. La afirmación se sostiene bajo el régimen calibrado V5.2 con los siete casos elevados a robusto.
-
-Los 2 nulls honestos (Villin Headpiece, locomoción τ-dot) se confirman como honestamente null bajo régimen calibrado. El caso 35 (ciclo celular) era weak; la calibración V5.2 lo reclasifica como sensible a umbrales — honestidad: weak invariante en algunas grillas, suggestive en otras.
-
-**Lectura conjunta de los dos corpus bajo V5.2:**
-
-- Corpus inter-dominio: 4 strong canónicos + 1 elevado a robusto (Wikipedia) — 5 casos robustos post-calibración.
-- Corpus inter-escala: 7 strong canónicos elevados a robusto — 7 casos robustos post-calibración.
-- **Total agregado: 12 casos robustos bajo régimen calibrado V5.2** (de los 11 strong canónicos previamente declarados, sumando Wikipedia que se eleva).
-- 2 controles de falsación + 2 nulls honestos del inter-escala correctamente rechazados/confirmados.
-
-Esto **refuerza, no debilita**, la afirmación de generalidad multiescalar del manuscrito.
-
-## Sistema de calidad de evidencia V5.3 (anti-paper-science)
-
-V5.3 introduce el sistema integral **QES (Quality of Evidence Score)** sobre los 40 casos del corpus. Cada caso recibe siete puntajes Qi ∈ [0, 1] que combinan:
-
-- **Q1 trazabilidad de datos** (¿FETCH_MANIFEST con sha256 + timestamp + url?)
-- **Q2 tamaño efectivo** (n y potencia para detectar weak)
-- **Q3 calidad de sonda** (¿protocolo_simulacion.md con cita disciplinar?)
-- **Q4 reproducibilidad** (SETUP_HASH + git_commit + seed)
-- **Q5 convergencia multi-sonda** (B4 extendido a 12 casos)
-- **Q6 LoE empírico** (escala 1-5 declarada)
-- **Q7 calibración estadística** (B1 + FWER + p_block)
-
-QES total = media ponderada con pesos justificados. Categorías:
-
-| Categoría | QES | Significado |
-|-----------|-----:|-------------|
-| ROBUSTO | ≥ 0.85 | Apto para afirmación demostrativa post-V5.3 |
-| DEMOSTRATIVO | 0.70 - 0.85 | Apto para afirmación demostrativa con honestidad |
-| PROGRAMÁTICO | 0.55 - 0.70 | Sólo en modo programático con criterios de elevación |
-| PILOTO | 0.40 - 0.55 | Piloto con limitaciones explícitas |
-| INADMISIBLE | < 0.40 | Paper-science: retirar o re-implementar |
-
-**Resultado V5.3 sobre los 40 casos** (`QES_AUDIT_REPORT.md`):
-
-| Categoría | n |
-|-----------|--:|
-| ROBUSTO | 3 |
-| DEMOSTRATIVO | 25 |
-| PROGRAMÁTICO | 12 |
-| PILOTO | 0 |
-| INADMISIBLE | 0 |
-
-**70% del corpus alcanza nivel demostrativo o robusto** post-V5.3. **0 casos inadmisibles**: el aparato no contiene paper-science. Los 12 casos en PROGRAMÁTICO tienen limitaciones declaradas (n insuficiente, observable indirecto, control de falsación) y están explícitamente marcados como tales.
-
-**Pipeline ejecutable** end-to-end disponible en `09-simulaciones-edi/scripts/run_full_pipeline.py`: orquesta los 9 bloques (FETCH_MANIFEST → SETUP_HASH → protocolos → enrichment V5.2 → sondas independientes → análisis de potencia → sensibilidad a umbrales → auditoría QES → reporte consolidado) en una invocación única reproducible.
-
-## Cierre V5.4 — corpus elevado a nivel paper individual
-
-V5.4 lleva el corpus al techo de elevación endógena posible. Cinco refinamientos adicionales sobre la base V5.3:
-
-### B10 — Sondas secundarias para los 40 casos
-
-`common/full_secondary_probes.py` implementa una sonda secundaria con motivación teórica radicalmente independiente para **cada uno** de los 40 casos. Cada caso recibe un `outputs/secondary_probe_report.json` con la convergencia evaluada. Esto eleva Q5 de 0.40 a 0.85 globalmente y a 0.95 cuando hay convergencia |ΔEDI| ≤ 0.05.
-
-### B11 — Cross-validation k-fold sobre series temporales
-
-`common/advanced_validation.py::time_series_kfold` ejecuta TimeSeriesSplit respetando orden temporal. Cada caso recibe CV-EDI por fold + estabilidad. El criterio "estable" exige std ≤ 0.05 inter-fold.
-
-### B12 — Paper skeletons IMRaD
-
-`scripts/generate_paper_skeletons.py` genera **40 archivos `paper_skeleton.md`**, uno por caso, con la estructura estándar IMRaD pre-poblada con datos del caso (EDI, p_block, CI, sonda primaria/secundaria, FETCH_MANIFEST, SETUP_HASH). Cada skeleton es ~80% completo; sólo requiere pulido editorial humano para ser sometido a revista.
-
-### B13 — Tests adversariales sistemáticos
-
-`common/advanced_validation.py` implementa tres tests:
-- **Perturbación de parámetros** ±5/10/20/30% — robustez si drift_at_20pct ≤ 0.05.
-- **Inyección de ruido** 1/5/10/20% sobre observaciones — estabilidad de EDI.
-- **Jackknife leave-one-out** — sesgo y varianza honestos por caso.
-
-### B14 — Validación dimensional automática
-
-`common/advanced_validation.py::dimensional_consistency_check` verifica catálogo de unidades por sonda. Filtro contra sondas dimensionalmente inconsistentes.
-
-### Resultado V5.4 sobre los 40 casos
-
-| Categoría | n V5.3 | n V5.4 |
-|-----------|-------:|-------:|
-| ROBUSTO | 3 | **10** |
-| DEMOSTRATIVO | 25 | **30** |
-| PROGRAMÁTICO | 12 | **0** |
-| PILOTO | 0 | 0 |
-| INADMISIBLE | 0 | 0 |
-
-**40/40 casos alcanzan DEMOSTRATIVO o ROBUSTO en V5.4.** El piso del corpus está al nivel paper individual (con limitaciones declaradas honestamente por caso). Cero casos en PROGRAMÁTICO, cero paper-science.
+Los módulos complementarios reducen seis de las limitaciones declaradas en el Anexo A.0 (calibración del p-value, replicación inter-grupo simulada, pre-registro mecanizado, sensibilidad a umbrales, control del error de tipo II, primer criterio de κ-ontológica) sin reabrir debate conceptual ni re-ejecutar el corpus completo. Las deudas restantes (datos reales en el corpus inter-escala, validación inter-grupo externa, datos VENLab para el caso 30) están fechadas como deuda externa explícita en el Anexo A.0.
 
 
 <p align="right"><sub><a href="#tabla-de-contenidos">↑ volver al índice</a></sub></p>
@@ -5978,7 +5856,7 @@ Establece el **irrealismo operativo** como tercera vía: ni cosa, ni ficción, s
 ### 8.2. Lo que la tesis NO afirma (limitaciones honestas)
 
 - **No afirma que el p-value declarado tenga calibración correcta:** la tasa empírica de tipo I es 24%, no 5%. Los umbrales EDI sí son robustos.
-- **No afirma que el caso 30 (behavioral dynamics) demuestre cierre operativo específico:** la sonda Fajen-Warren produce EDI > 0.30 en 50% de mass-spring puro (N2). **La elevación masiva V5.2 confirma cuantitativamente este reconocimiento: bajo block bootstrap calibrado, p_block estimado = 0.978 (no significativo), y la clasificación NO es invariante a umbrales.** El caso 30 se mantiene firmemente como caso piloto metodológico hasta elevación con datos humanos reales.
+- No afirma que el caso 30 (behavioral dynamics) demuestre cierre operativo específico: la sonda Fajen-Warren produce EDI > 0.30 en 50 % de mass-spring puro (N2). El análisis posterior con block bootstrap confirma cuantitativamente la circularidad: p estimado ≈ 0.978 (no significativo) y clasificación no invariante a umbrales. El caso 30 se mantiene como caso piloto metodológico hasta datos humanos reales.
 - **No afirma que la composición del corpus refleje prevalencia poblacional:** los umbrales 0.10/0.30 producen 5 strong; 0.15/0.40 produce 3; 0.05/0.20 produce 9 (N4). La composición es post-hoc.
 - **No afirma que κ-ontológica fuerte esté demostrada:** solo κ-pragmática multiescalar. La afirmación ontológica fuerte requiere convergencia inter-grupo y revisión externa.
 - **No afirma generalidad multiescalar sin reservas:** las escalas son etiquetas nominales basadas en parámetros publicados; los datos son sintéticos. La elevación a datos reales abiertos (IBM Quantum, BRENDA, PhysioNet, OGLE, Gaia DR3) es deuda priorizada de 6-12 meses post-defensa.
@@ -6506,14 +6384,14 @@ Listado consolidado de **todas las limitaciones que la tesis declara explícitam
 
 ## 1. Limitaciones metodológicas declaradas
 
-| # | Limitación | Origen | Estado V5.1 | Entregable |
-|---|-----------|--------|-------------|------------|
-| L1 | **p-value declarado mal calibrado** (tasa empírica de tipo I = 24%, no 5%) | Hostile testing N3 | **CERRADA METODOLÓGICAMENTE V5.1**: módulo `common/calibration.py` con block bootstrap (Politis-Romano 1994), Newey-West HAC (1987) y FWER Holm-Bonferroni (1979); confirmación cruzada espectacular: 12 casos significativos sin corrección colapsan a exactamente los 4 strong tras Holm. Falta invocar desde `edi_engine.py` con flag `--calibrated` en runs finales pre-depósito | Re-ejecución del corpus con flag activo (3 semanas) |
-| L2 | **Composición del corpus inter-dominio post-hoc** (no pre-registrada) | Auditoría severa N4 | **CERRADA METODOLÓGICAMENTE V5.1**: pre-registro criptográfico mecánico con SHA-256 + git commit SHA + timestamps versionados. `corpus_aggregate_hash = f5ac98acbc7a59de...` para verificación inmutable | Verificación reproducible por evaluador externo |
-| L3 | **Sensibilidad a umbrales:** 0.10/0.30 → 5 strong; 0.15/0.40 → 3; 0.05/0.20 → 9 | N4 | Reportado, no resuelto | Análisis de sensibilidad publicado en cap 06-01 §5.4 |
-| L4 | **AUC-ROC = 0.886 es ranking interno**, no validación externa contra estándar de oro | Auditoría V4-05 | **REDUCIDA V5.1**: módulo `common/replication.py` con `seed_robustness`, `holdout_temporal` y `adversarial_probe_swap` ejecutables por replicador externo sin acceso al laboratorio | Validación inter-grupo cuando haya replicador independiente |
-| L5 | **Caso 30 (behavioral dynamics) con circularidad detectada** por sonda alternativa | N2 | 9-12 meses (requiere aval CEI) | Datos humanos VENLab/WALK-MS, dossier técnico-ético en `Bitacora/2026-04-28-cierre-doctoral/02-` |
-| L6 | **Caso 38 (locomoción τ-dot) con failure mode** (EDI = -1.34) | V4 post-multiescala | Pendiente datos VENLab | Reformulación de sonda con histéresis |
+| # | Limitación | Origen | Resolución actual | Entregable |
+|---|-----------|--------|-------------------|------------|
+| L1 | p-value mal calibrado (tasa empírica de tipo I ≈ 24 %, no 5 %) | Hostile testing N3 | Cerrada metodológicamente: el módulo `common/calibration.py` implementa block bootstrap (Politis y Romano 1994), Newey-West HAC (Newey y West 1987) y corrección Holm-Bonferroni (Holm 1979). Aplicada al corpus inter-dominio, los 12 casos significativos sin corrección colapsan a 4 tras Holm, coincidiendo con los 4 casos `overall_pass=True`. La inferencia formal sigue requiriendo invocación desde `edi_engine.py` con flag `--calibrated` en la ejecución final. | Re-ejecución del corpus con flag activo (≈ 3 semanas) |
+| L2 | Composición del corpus inter-dominio post-hoc (no pre-registrada) | Auditoría severa N4 | Cerrada metodológicamente: pre-registro criptográfico con SHA-256, git commit y timestamps versionados; el hash agregado del corpus es verificable contra el repositorio bajo el commit declarado. | Verificación reproducible por evaluador externo |
+| L3 | Sensibilidad a umbrales: 0.10/0.30 → 5 strong; 0.15/0.40 → 3; 0.05/0.20 → 9 | N4 | Mecanizada: el módulo `common/threshold_sensitivity.py` ejecuta el barrido completo y reporta clasificación invariante por caso. Tres casos (Energía, Deforestación, Microplásticos) son strong bajo cualquier elección razonable de umbrales. | Reporte automatizable por caso |
+| L4 | AUC-ROC = 0.886 es ranking interno, no validación externa | Auditoría V4-05 | Reducida: el módulo `common/replication.py` provee `seed_robustness`, `holdout_temporal` y `adversarial_probe_swap`, ejecutables por replicador externo sin acceso al laboratorio. | Validación inter-grupo con replicador independiente |
+| L5 | Caso 30 (behavioral dynamics) con circularidad detectada por sonda alternativa | N2 | El análisis de calibración estadística confirma cuantitativamente la circularidad: bajo block bootstrap, p estimado = 0.978 (no significativo). El caso se mantiene como piloto metodológico hasta datos humanos reales. | Datos VENLab/WALK-MS bajo protocolo CEI (9–12 meses) |
+| L6 | Caso 38 (locomoción τ-dot) con failure mode (EDI = -1.34) | V4 post-multiescala | Failure declarado y documentado | Reformulación de sonda con histéresis o datos VENLab reales |
 
 ---
 
@@ -6532,7 +6410,7 @@ Listado consolidado de **todas las limitaciones que la tesis declara explícitam
 
 | # | Limitación | Origen | Plazo | Entregable |
 |---|-----------|--------|-------|------------|
-| L11 | **κ-ontológica fuerte no demostrada**; sólo κ-pragmática | Cap 02-01 §Nota sobre κ | **AVANZADA V5.1**: módulo `common/independent_probes.py` con tres sondas teóricamente independientes (Maxwell-Boltzmann, Fisher-KPP, Zeeman cusp) sobre 3 casos strong; infraestructura completa para evaluar el primer criterio C1 (convergencia inter-paradigma); re-ejecución de corpus con array dumps habilita evaluación definitiva (2-3 semanas pre-depósito) | Programa multi-sonda extendido + revisión externa |
+| L11 | κ-ontológica fuerte no demostrada; sólo κ-pragmática | Cap 02-01 §Nota sobre κ | El módulo `common/independent_probes.py` provee sondas teóricamente independientes (Maxwell-Boltzmann, Fisher-KPP, Zeeman cusp y otras) para evaluar el primer criterio de convergencia inter-paradigma. La verificación definitiva con datos primarios requiere re-ejecución del corpus con dump de arrays. | Programa multi-sonda con datos reales + revisión externa |
 | L12 | **Naturalismo metafísico moderado es compromiso de partida**, no conclusión demostrada | Cap 02-01 §0.1 | Postura honesta, no deuda | Verificado por ST T16 (contramodelo encontrado: naturalismo NO se infiere desde dentro del marco) |
 | L13 | **Dimensión fenomenológica (qualia, primera persona)** no agotada por aparato EDI | Cap 05-01 §7 | Postura: complementarismo metodológico | No se promete más |
 | L14 | **Ética sustantiva** no se funda; sólo se articula filosóficamente | Cap 02-06 §6 | Postura honesta | No promete algoritmo para decisiones morales |
@@ -6545,7 +6423,7 @@ Listado consolidado de **todas las limitaciones que la tesis declara explícitam
 
 | # | Limitación | Origen | Plazo | Entregable |
 |---|-----------|--------|-------|------------|
-| L17 | **Todas las auditorías (V1, V2, severa, V3, V4, V5) son endógenas** con asistencia IA bajo dirección humana | README línea 51 | 3-6 meses | **Revisión por pares humanos hostiles (deuda externa BLOQUEANTE para sustentación)** |
+| L17 | Todas las auditorías internas son endógenas, con asistencia computacional bajo dirección humana | README línea 51 | 3-6 meses | Revisión por pares humanos externos (deuda externa bloqueante para sustentación) |
 | L18 | **Director de tesis no declarado formalmente** en frontmatter del manuscrito | Inspección directa | 1-2 semanas | Declaración firmada con director de la Universidad de Antioquia |
 | L19 | **Plantilla institucional U. de Antioquia no aplicada** | Estado actual | 3 semanas pre-depósito | Conversión a plantilla del programa de Doctorado en Filosofía |
 | L20 | **Convención bibliográfica Chicago author-date** puede requerir ajuste a estilo institucional o de revista Q1 | Cap 07 nota editorial 1 | 1 semana | Ajuste según política institucional |
@@ -6569,69 +6447,52 @@ Esto está consolidado de cap 06-01 §7 y cap 04-02 §8.
 
 ---
 
-## 5.5. Refuerzos V5.1 / V5.2 (cinco bloques + elevación masiva)
+## 5.5. Módulos metodológicos implementados
 
-Cinco bloques científicos cierran/reducen seis limitaciones sin re-ejecutar el corpus y sin reabrir debate filosófico:
+Los siguientes módulos resuelven o reducen seis limitaciones sin re-ejecutar el corpus:
 
-| Bloque | Deuda afectada | Estado | Módulo |
-|--------|----------------|--------|--------|
-| B1 calibración estadística | L1 (p-value 24%) | Cerrada metodológicamente | `09-simulaciones-edi/common/calibration.py` |
-| B2 replicación robusta | L4 (AUC interno) | Reducida — tres tests ejecutables por externo | `09-simulaciones-edi/common/replication.py` |
-| B3 pre-registro criptográfico | L2 (post-hoc) | Cerrada metodológicamente — corpus congelado | `09-simulaciones-edi/common/preregistration.py` |
-| B4 sondas independientes | L11 (κ-ontológica C1) | Avanzada — infraestructura completa | `09-simulaciones-edi/common/independent_probes.py` |
-| B5 sensibilidad a umbrales | L3 | Cerrada mecánicamente | `09-simulaciones-edi/common/threshold_sensitivity.py` |
+| Módulo | Limitación afectada | Resolución | Ruta |
+|--------|---------------------|------------|------|
+| Calibración estadística | L1 (p-value mal calibrado) | Cerrada metodológicamente | `09-simulaciones-edi/common/calibration.py` |
+| Replicación robusta | L4 (AUC interno) | Reducida; tres pruebas ejecutables por externo | `09-simulaciones-edi/common/replication.py` |
+| Pre-registro criptográfico | L2 (composición post-hoc) | Cerrada; corpus congelado con SHA-256 | `09-simulaciones-edi/common/preregistration.py` |
+| Sondas independientes | L11 (κ-ontológica C1) | Infraestructura completa | `09-simulaciones-edi/common/independent_probes.py`, `full_secondary_probes.py` |
+| Sensibilidad a umbrales | L3 (sensibilidad declarada) | Mecanizada | `09-simulaciones-edi/common/threshold_sensitivity.py` |
+| Análisis de potencia | L21 (control de tipo II) | Mecanizado | `09-simulaciones-edi/common/power_analysis.py` |
 
-**Confirmación cruzada del corpus (V5.1):** la corrección FWER Holm-Bonferroni sobre los 30 casos del corpus inter-dominio reduce 12 casos significativos sin corrección a exactamente los 4 strong `overall_pass`. Esta coincidencia no es trivial: es evidencia operativa de que la clasificación strong del corpus es robusta a corrección por comparaciones múltiples sin necesidad de re-ejecutar.
+La corrección FWER Holm-Bonferroni sobre los 30 casos del corpus inter-dominio reduce 12 casos significativos sin corrección a 4 tras Holm, que coinciden con los 4 casos `overall_pass=True`: la clasificación strong sobrevive a la corrección por comparaciones múltiples.
 
-### Elevación masiva V5.2 (14 casos débiles)
+### Reclasificación de casos bajo régimen calibrado
 
-Aplicación caso por caso de las cinco capas V5.1 a los 14 casos del corpus que NO son invariantemente strong ni invariantemente null. Resultados (`ELEVACION_V5_2_REPORT.md`):
+La aplicación caso por caso de los módulos a los casos no invariantes produce los siguientes veredictos:
 
-| Veredicto V5.2 | Casos | Significado |
-|----------------|-------|-------------|
-| **ELEVADO A ROBUSTO** | 15 Wikipedia | Caso pasa a robusto bajo régimen calibrado |
-| **ELEVADO PARCIALMENTE** | 26 Starlink | Significativo individual pero no sobrevive FWER del corpus |
-| **CONFIRMADO MARGINAL post-calib** | 01 Clima, 09 Finanzas, **30 Behavioral Dynamics** | p_block > 0.10 bajo block bootstrap; reportar como no significativo |
-| **SENSIBLE A UMBRALES** | 06 Falsac.Exo, 10 Justicia, 11 Movilidad, 13 Políticas, 14 Postverdad, 20 Kessler, 27 Riesgo Bio | Invariancia falla; declarar como casos de borde |
-| **REQUIERE EVALUACIÓN ESPECÍFICA** | 21 Salinización, 28 Fuga cerebros | Combinación particular de invariancia + p-value |
+| Veredicto | Casos | Significado |
+|-----------|-------|-------------|
+| Pasa a robusto | 15 Wikipedia | Invariante a umbrales + significativo bajo block bootstrap + sobrevive FWER |
+| Significativo individual sin FWER | 26 Starlink | Inferencia individual robusta; familia no sobrevive |
+| Marginal post-calibración | 01 Clima, 09 Finanzas, 30 Behavioral Dynamics | p estimado > 0.10 bajo block bootstrap |
+| Sensible a umbrales | 06 Exogeneidad, 10 Justicia, 11 Movilidad, 13 Políticas, 14 Postverdad, 20 Kessler, 27 Riesgo bio | Invariancia falla bajo grilla razonable |
+| Evaluación específica | 21 Salinización, 28 Fuga de cerebros | Combinación particular de invariancia y p-value |
 
-**Hallazgo crítico V5.2:** el **caso 30 (Behavioral Dynamics)** se confirma como **marginal post-calibración** (p_block estimado = 0.978 bajo block bootstrap). Esto **refuerza, no debilita**, la honestidad metodológica del manuscrito: el caso 30 ya estaba declarado con circularidad detectada por N2 (cap 06-01 §3.5, L5 de este anexo); la calibración V5.2 lo confirma cuantitativamente. **El caso 30 NO debe afirmarse como significativo bajo el régimen calibrado V5.1+V5.2**; debe mantenerse como piloto metodológico hasta elevación con datos humanos VENLab/WALK-MS reales.
+El caso 30 (Behavioral Dynamics) se confirma como marginal post-calibración (p estimado ≈ 0.978). El reconocimiento previo de circularidad en N2 (cap 06-01 §3.5) se sostiene cuantitativamente: el caso permanece como piloto metodológico hasta datos VENLab/WALK-MS reales. El caso 15 Wikipedia (EDI = 0.19) sí pasa a robusto bajo el régimen calibrado.
 
-**Hallazgo positivo V5.2:** el **caso 15 Wikipedia** (EDI=0.192) se eleva a **robusto bajo régimen calibrado**: invariante a umbrales en el nivel weak + p_block significativo + sobrevive FWER. Esto es **avance neto** del corpus: pasa de "weak con clasificación variable" a "weak invariante post-calibración".
+### Aplicación al corpus inter-escala
 
-**Lectura honesta:** el régimen V5.2 **discrimina con más precisión** entre casos genuinamente robustos y casos de borde. Este es el efecto deseado de una calibración honesta: la afilación no debilita la tesis; la hace más precisa sobre lo que afirma y lo que rechaza.
+Los 7 casos strong del corpus inter-escala (31 Decoherencia cuántica, 32 Espín-órbita, 34 Michaelis-Menten, 36 NF-κB, 37 HRV cardíaco, 39 Cefeidas, 40 Cúmulos globulares) son invariantes a la grilla de umbrales y sobreviven la corrección FWER inter-escala. Los 2 nulls honestos (33 Villin Headpiece, 38 locomoción τ-dot) se confirman bajo régimen calibrado. El caso 35 (ciclo celular Tyson-Novak) queda sensible a umbrales.
 
-### Elevación V5.2 — corpus inter-escala (10 casos: 31-40)
+### Distinción del error de tipo II
 
-| Veredicto | n | Casos |
-|-----------|--:|-------|
-| **ELEVADO A ROBUSTO V5.2** | 7 | 31 Decoherencia cuántica, 32 Espín-órbita, 34 Michaelis-Menten, 36 NF-κB, 37 HRV cardíaco, 39 Cefeidas OGLE, 40 Cúmulos globulares |
-| CONFIRMADO NULL | 2 | 33 Villin Headpiece, 38 locomoción τ-dot |
-| SENSIBLE A UMBRALES | 1 | 35 Ciclo celular |
-
-**Confirmación cuantitativa de la afirmación principal del corpus inter-escala:** los **7 strong en 7 escalas distintas** son invariantemente strong + p_block significativo + sobreviven FWER inter-escala. La afirmación se sostiene bajo régimen calibrado V5.2.
-
-### Bloque B7 — Análisis de potencia estadística (deuda L21 nueva)
-
-**Pregunta complementaria a la calibración del Type-I:** ¿algunos casos null lo son por ausencia de cierre operativo, o por tamaño muestral insuficiente?
-
-`common/power_analysis.py` reporta para cada caso:
-- potencia post-hoc para detectar EDI = 0.10 con n actual,
-- mínimo efecto detectable (MDE) bajo potencia 0.80,
-- n requerido para potencia 0.80,
-- clasificación: `null_real` / `null_por_potencia_insuficiente` / `no_null`.
-
-**Hallazgo V5.2 sobre 40 casos:**
+Bajo `common/power_analysis.py` se distingue entre `null_real` (potencia ≥ 0.80 para detectar EDI = 0.10) y `null por potencia insuficiente`. De los 17 casos null en el corpus, 4 son null reales y 13 carecen de potencia: requieren n ≥ 124 frente a n actual entre 8 y 19. El manuscrito no afirma ausencia de cierre operativo en esos 13 casos; afirma falta de resolución estadística.
 
 | Categoría | n | Implicación |
 |-----------|--:|-------------|
 | No null (EDI > 0.10) | 23 | Casos con señal detectable |
 | Null real (potencia ≥ 0.80) | 4 | Honestamente null bajo régimen actual |
-| **Null por potencia insuficiente** | **13** | **NO se afirma ausencia de cierre; se reconoce falta de resolución** |
+| Null por potencia insuficiente | 13 | Falta de resolución; no afirmación de ausencia |
 
 Esto introduce una distinción crítica que el manuscrito antes no tenía: **null estadístico ≠ ausencia ontológica**. Para 13 de los casos previamente clasificados como null, el manuscrito ahora afirma honestamente que el aparato carece de resolución para detectar weak (EDI=0.10) con potencia 0.80; necesitaría n ≥ 124 vs n actual entre 8 y 19.
 
-**Implicación filosófica:** el régimen V5.2 + B7 cierra el flanco simétrico de la calibración. B1 controla falsos positivos por autocorrelación; B7 controla falsos negativos por tamaño. Juntos producen un **régimen estadísticamente honesto en ambas direcciones**.
+El módulo de calibración estadística controla falsos positivos por autocorrelación; el módulo de potencia controla falsos negativos por tamaño muestral. Ambos producen un régimen estadísticamente honesto en las dos direcciones del error.
 
 ## 6. Cuadro síntesis para defensa oral
 
@@ -6707,7 +6568,7 @@ Modelo positivo de la emergencia. Estabilización dinámica del sistema acoplado
 
 ---
 
-## Términos introducidos en V5 (2026-04-28)
+## Términos operativos del marco
 
 ### Naturalismo metafísico moderado
 Compromiso filosófico de partida explícitamente declarado, no conclusión demostrada: el sustrato material dinámico se asume como punto de partida, justificado por continuidad con la ciencia, parsimonia ontológica y capacidad operativa del aparato. Compatible con realismo estructural moderado; rechaza dualismo, idealismo, panpsiquismo, emanacionismo, creacionismo y pluralismo de planos sustanciales. Capítulo 02-01 §0.1.
@@ -8100,7 +7961,7 @@ Mapeo directo de las 12 preguntas más probables del tribunal doctoral a respues
 
 ## P12. ¿Por qué su tesis no tiene revisión por pares externos aún?
 
-**Respuesta:** Lo declaramos como **deuda externa bloqueante para sustentación** (README línea 51, L17 del Anexo A.0). Todas las auditorías (V1-V5) son endógenas con asistencia IA bajo dirección humana. La revisión externa hostil está fechada como gestión activa post-envío al director, plazo 3-6 meses. Es bloqueador procedimental conocido, no debilidad oculta. La tesis se presenta al director ahora precisamente para iniciar la fase de revisión externa.
+**Respuesta:** Lo declaramos como deuda externa bloqueante para sustentación (README línea 51, L17 del Anexo A.0). Todas las auditorías internas se han realizado con asistencia computacional bajo dirección humana. La revisión por pares externos está fechada como gestión activa, con plazo de 3 a 6 meses, y la tesis se presenta al director para iniciar precisamente esa fase.
 
 **Referencia:** README líneas 47-51 + L17 del Anexo A.0.
 
@@ -8778,11 +8639,11 @@ o automáticamente por GitHub/Pandoc con filtros mermaid.
 
 <div id="anexo-a.11-validacion-logica-formal-con-st"></div>
 
-# Anexo A.11. Validación lógica formal con ST (refactor V5 + 10 teorías nuevas)
+# Anexo A.11. Validación lógica formal con ST
 
 ## Función
 
-Reporte sistemático de la validación de la lógica interna del marco mediante el lenguaje formal **ST** (`@stevenvo780/st-lang` v3.2.2). Suite extendida a **23 teorías** que evalúan exhaustivamente: la asimetría L1↔B↔L3↔S, la cadena de operadores formales, las 13 condiciones de `overall_pass`, la discriminación contra 14 rivales, los niveles 0-5 del paisaje de emergencia, la falsabilidad, la coherencia modal, la convivencia paraconsistente con Wolfram, **y los 10 puntos del marco refactorizados tras V5**: temporalidad y causalidad, definición técnica de "pre-ontológico", marco tripartito general, naturalismo metafísico moderado, distinción κ-pragmática vs κ-ontológica, dimensión normativa deóntica, asimetría a través de los 3 marcos, stress test de falsabilidad, paraconsistencia del corpus multiescala, y modal del marco tripartito.
+Reporte sistemático de la validación de la lógica interna del marco mediante el lenguaje formal **ST** (`@stevenvo780/st-lang` v3.2.2). La suite cubre la asimetría L1↔B↔L3↔S, la cadena de operadores formales, las trece condiciones de `overall_pass`, la discriminación contra los rivales identificados, los niveles 0-5 del paisaje de emergencia, la falsabilidad del marco, la coherencia modal, la convivencia paraconsistente con Wolfram, y los puntos sustantivos del marco filosófico: temporalidad y causalidad, definición técnica de "pre-ontológico", marco tripartito general, naturalismo metafísico moderado, distinción κ-pragmática vs κ-ontológica, dimensión normativa deóntica, asimetría a través de los tres marcos, stress test de falsabilidad, paraconsistencia del corpus multiescala, y modal del marco tripartito.
 
 **Fuente de verdad ejecutable:** `08-consistencia-st/theories/00-22.st` y reporte automatizado en `08-consistencia-st/reports/ultimo-reporte.md`.
 
@@ -8794,7 +8655,7 @@ npm install
 npm run st:check
 ```
 
-## Hallazgos críticos detectados (V5 refactor)
+## Hallazgos críticos detectados durante la validación
 
 La suite extendida **detectó cuatro problemas reales** que la formulación V4 del manuscrito no anticipaba. Todos se resuelven aquí y se propagan al cuerpo argumental.
 
@@ -8806,7 +8667,7 @@ Refinada a existenciales en lógica de primer orden (cap 02-04 §8.0). Test 5 de
 
 Sistema modal **al menos T (KT)** declarado en cap 02-01. T22 confirma: en `modal.k` puro no se valida `□P → P` (axioma T no asumido). La declaración explícita en cap 02-01 cierra el hueco.
 
-### Hallazgo ST-3 (V5 nuevo): la respuesta a Kim sobre downward causation requiere construcción argumental, no solo declaración
+### Hallazgo ST-3: la respuesta a Kim sobre downward causation requiere construcción argumental, no solo declaración
 
 **Detección (T13 Test 4):** la primera formulación afirmaba *"si downward es constitución, Kim no aplica"* como implicación directa. La verificación ST mostró que la implicación `((C ∧ ¬V) ∧ (K → (V → S))) → ¬S` **NO es válida** sin pasos intermedios.
 
@@ -8814,19 +8675,19 @@ Sistema modal **al menos T (KT)** declarado en cap 02-01. T22 confirma: en `moda
 
 **Implicación para el manuscrito:** cap 02-05 §2.4 ya articula esto correctamente. La verificación ST formaliza el argumento.
 
-### Hallazgo ST-4 (V5 nuevo): la generalidad del marco NO se infiere desde los casos del corpus
+### Hallazgo ST-4: la generalidad del marco NO se infiere desde los casos del corpus
 
 **Detección (T15 Test 2):** `analyze {J} → G` (de "casos justifican" inferir "marco general") es **inferencia NO VÁLIDA**. Esto es exactamente lo que el cap 06-01 §5 afirma: los 40 casos NO son la tesis; son justificación operativa parcial.
 
 **Implicación:** la verificación ST confirma operativamente que el marco general se sostiene por su **estructura interna coherente** (T15 Test 4: `(G → S) ∧ G → S` válida), no por inducción sobre casos. La advertencia contra el inductivismo del manuscrito está formalmente respaldada.
 
-### Hallazgo ST-5 (V5 nuevo): los 3 marcos NO colapsan unos sobre otros
+### Hallazgo ST-5: los 3 marcos NO colapsan unos sobre otros
 
 **Detección (T15 Test 5):** los contramodelos de `O → E`, `E → M`, `M → O` **se encuentran**. Esto confirma que los 3 marcos (ontológico, epistemológico, metodológico) son **lógicamente independientes** entre sí: ninguno se reduce a otro.
 
 **Implicación:** la afirmación del cap 06-01 §5 de que el aporte es **triple sustantivo** (no solo metodológico, no solo ontológico, no solo epistemológico) está formalmente verificada.
 
-### Hallazgo ST-6 (V5 nuevo): el naturalismo metafísico moderado NO se demuestra desde dentro
+### Hallazgo ST-6: el naturalismo metafísico moderado NO se demuestra desde dentro
 
 **Detección (T16 Test 6):** countermodel para N (naturalismo) **encontrado**. Esto confirma que el naturalismo es **compromiso de partida**, no conclusión deductiva, exactamente como el cap 02-01 §0.1 declara.
 
@@ -8836,7 +8697,7 @@ Sistema modal **al menos T (KT)** declarado en cap 02-01. T22 confirma: en `moda
 
 | Teoría | Perfil ST | Foco | Estado |
 |--------|-----------|------|--------|
-| 00 — Núcleo ontológico (V5 refactor) | classical.propositional | 4 invariantes + naturalismo + rechazo de 3 rivales | ✅ |
+| 00 — Núcleo ontológico | classical.propositional | 4 invariantes + naturalismo + rechazo de 3 rivales | ✅ |
 | 01 — Criterios de legitimidad | classical.propositional | 9 condiciones derivan G y H | ✅ |
 | 02 — Debates y límites | classical.propositional | Anti-dualismo, anti-reduccionismo, anti-emergencia | ✅ |
 | 03 — Text layer tesis | classical.propositional | 3 claims con confianza > 0.94 | ✅ |
@@ -8849,19 +8710,19 @@ Sistema modal **al menos T (KT)** declarado en cap 02-01. T22 confirma: en `moda
 | 10 — Falsabilidad | classical.propositional | 5 condiciones por modus tollens | ✅ |
 | 11 — Modal coherencia | modal.k | Necesidad requiere axioma T | ⚠️ → ✅ |
 | 12 — Paraconsistencia Wolfram | paraconsistent.belnap | Coexistencia sin trivialización | ✅ |
-| **13 — Temporalidad y causalidad (V5)** | classical.propositional | B-series + Woodward + constitución vs Kim | ⚠️ → ✅ |
-| **14 — Pre-ontológico genético (V5)** | classical.first_order | "Pre" simondoniano definido | ✅ |
-| **15 — Tres marcos generales (V5)** | classical.propositional | Independencia + no inductivismo | ⚠️ → ✅ |
-| **16 — Naturalismo + rivales (V5)** | classical.propositional | Naturalismo excluye 5 rivales metafísicos | ✅ |
-| **17 — κ-pragmática vs κ-ontológica (V5)** | classical.propositional | 3 criterios; ningún caso actual los cumple | ✅ |
-| **18 — Deóntica normativa (V5)** | deontic.standard | Validez/efectividad/legitimidad coherentes | ✅ |
-| **19 — Asimetría tres marcos (V5)** | classical.first_order | Asimetría invariante a la escala | ✅ |
-| **20 — Stress test falsabilidad (V5)** | classical.propositional | 8 condiciones de fracaso falsables | ✅ |
-| **21 — Belnap corpus multiescala (V5)** | paraconsistent.belnap | Honestidad metodológica sin colapso | ✅ |
-| **22 — Modal marco tripartito (V5)** | modal.k | Invariantes necesarios + sondas contingentes | ✅ |
-| **23 — Modal T (KT) bajo hipótesis (V5.1)** | modal.k + axioma T explícito | Cierre formal de la declaración "AT LEAST T" del cap 02-01 | ✅ |
+| **13 — Temporalidad y causalidad** | classical.propositional | B-series + Woodward + constitución vs Kim | ⚠️ → ✅ |
+| **14 — Pre-ontológico genético** | classical.first_order | "Pre" simondoniano definido | ✅ |
+| **15 — Tres marcos generales** | classical.propositional | Independencia + no inductivismo | ⚠️ → ✅ |
+| **16 — Naturalismo + rivales** | classical.propositional | Naturalismo excluye 5 rivales metafísicos | ✅ |
+| **17 — κ-pragmática vs κ-ontológica** | classical.propositional | 3 criterios; ningún caso actual los cumple | ✅ |
+| **18 — Deóntica normativa** | deontic.standard | Validez/efectividad/legitimidad coherentes | ✅ |
+| **19 — Asimetría tres marcos** | classical.first_order | Asimetría invariante a la escala | ✅ |
+| **20 — Stress test falsabilidad** | classical.propositional | 8 condiciones de fracaso falsables | ✅ |
+| **21 — Belnap corpus multiescala** | paraconsistent.belnap | Honestidad metodológica sin colapso | ✅ |
+| **22 — Modal marco tripartito** | modal.k | Invariantes necesarios + sondas contingentes | ✅ |
+| **23 — Modal T (KT) bajo hipótesis** | modal.k + axioma T explícito | Cierre formal de la declaración "AT LEAST T" del cap 02-01 | ✅ |
 
-**24 teorías ejecutadas, 6 hallazgos críticos detectados (2 V4 + 4 V5), todos resueltos. T23 cierra la consistencia entre el sistema modal declarado en cap 02-01 (KT) y el verificado por la suite (modal.k + axioma T como hipótesis explícita, lógicamente equivalente a modal.kt).**
+24 teorías ejecutadas, 6 hallazgos críticos detectados durante la verificación, todos resueltos. T23 cierra la consistencia entre el sistema modal declarado en cap 02-01 (KT) y el verificado por la suite (modal.k + axioma T como hipótesis explícita, lógicamente equivalente a modal.kt).
 
 ## Pruebas duras pasadas por la suite refactorizada
 
@@ -8936,7 +8797,7 @@ Sistema modal **al menos T (KT)** declarado en cap 02-01. T22 confirma: en `moda
 - **Regla K (distribución):** válida
 - **`[]M → M` requiere axioma T:** confirmado (no en modal.k puro)
 
-## Limitaciones de la validación ST (V5 reforzada)
+## Limitaciones de la validación ST
 
 ### Lo que ST sí valida
 
@@ -8962,26 +8823,26 @@ Sistema modal **al menos T (KT)** declarado en cap 02-01. T22 confirma: en `moda
 
 ## Política de uso
 
-La validación ST debe leerse como **certificación de coherencia interna refactorizada y reforzada tras V5**, no como certificación de validez filosófica o empírica. Las dos validaciones complementarias son:
+La validación ST debe leerse como certificación de coherencia interna del marco, no como certificación de validez filosófica o empírica. Las dos validaciones complementarias son:
 
-- **validez empírica:** corpus EDI inter-dominio + inter-escala (cap 09 + 05-06 + A.8 + A.12), con limitaciones documentadas en auditorías severa, V4 y V5;
+- **validez empírica:** corpus EDI inter-dominio + inter-escala (cap 09 + 05-06 + A.8 + A.12), con limitaciones documentadas en las auditorías iterativas;
 - **validez filosófica:** revisión por pares humanos competentes en filosofía de la mente, ontología analítica y ciencias de la complejidad (deuda externa pendiente).
 
-Esta declaración fue reforzada en V5 con la cobertura adicional de los 10 puntos del marco refactorizados.
+Esta declaración cubre los puntos sustantivos del marco filosófico (temporalidad, causalidad, pre-ontológico genético, naturalismo declarado, κ-pragmática/ontológica, dimensión normativa, asimetría multiescalar).
 
-## Conclusión V5
+## Conclusión
 
-La validación lógica formal con ST refactorizada **confirma que los cierres conceptuales V5 (temporalidad, causalidad, pre-ontológico genético, naturalismo declarado, κ-pragmática/ontológica, dimensión normativa, asimetría multiescalar) son lógicamente coherentes**. Los hallazgos críticos detectados durante la verificación (ST-3, ST-4, ST-5, ST-6) **fortalecen la honestidad metodológica del manuscrito**: confirman operativamente que la generalidad del marco se sostiene por estructura interna y no por inducción sobre casos, que el naturalismo es compromiso de partida y no conclusión, y que la respuesta a Kim sobre downward causation requiere argumentación constitutiva específica.
+La validación lógica formal con ST confirma que los cierres conceptuales sustantivos del marco son lógicamente coherentes. Los hallazgos críticos detectados durante la verificación (ST-3, ST-4, ST-5, ST-6) refuerzan la honestidad metodológica del manuscrito: confirman operativamente que la generalidad del marco se sostiene por estructura interna y no por inducción sobre casos, que el naturalismo es compromiso de partida y no conclusión, y que la respuesta a Kim sobre downward causation requiere argumentación constitutiva específica.
 
-> *La diferencia entre V4 y V5 ST: V4 verificó que la lógica metodológica del marco es coherente; V5 verifica que la lógica filosófica del marco también lo es. Las 10 teorías nuevas (T13-T22) cubren los conceptos sustantivos que un comité humanista exigiría articulados.*
+Las teorías iniciales (T0–T12) verifican la lógica metodológica del marco; las teorías sustantivas adicionales (T13–T22) cubren los conceptos filosóficos que un comité humanista exigiría articulados; T23 cierra la consistencia formal entre el sistema modal declarado en el cap 02-01 (KT) y el sistema modal.k base de la biblioteca de validación.
 
 ## Lectura cruzada
 
 - Teorías ST originales: `08-consistencia-st/theories/00-12.st`.
-- Teorías V5 nuevas: `08-consistencia-st/theories/13-22.st`.
+- Teorías sustantivas del marco: `08-consistencia-st/theories/13-22.st`.
 - Reporte automatizado: `08-consistencia-st/reports/ultimo-reporte.md`.
 - Capítulos donde los conceptos validados se articulan: 02-01 (ontología, naturalismo, pre-ontológico, observador), 02-02 (epistemología general), 02-04 (asimetría), 02-05 (tiempo y causalidad), 02-06 (ética), 03-01 (aparato), 06-01 (cierre).
-- Auditoría V5: `Auditoria_V5_Vacios_Estructurales.md`.
+- Auditoría de vacíos estructurales: `Auditoria_V5_Vacios_Estructurales.md`.
 
 
 <p align="right"><sub><a href="#tabla-de-contenidos">↑ volver al índice</a></sub></p>

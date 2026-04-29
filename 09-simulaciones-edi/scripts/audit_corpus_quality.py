@@ -79,18 +79,10 @@ def main() -> int:
     print("\n" + "=" * 90)
     print("Síntesis:")
     print("=" * 90)
-    # Todas las categorías ROBUSTO suman como ROBUSTO_TOTAL
-    robusto_categories = [c for c in cat_counts if c.startswith("ROBUSTO")]
-    robusto_total = sum(cat_counts[c] for c in robusto_categories)
-    print(f"  ROBUSTO_TOTAL        {robusto_total:>3} (todas categorías ROBUSTO_*)")
-    for cat in sorted(robusto_categories):
-        n = cat_counts[cat]
-        print(f"    {cat:<32} {n:>3}")
-    for cat in ["DEMOSTRATIVO", "PROGRAMÁTICO", "PILOTO", "INADMISIBLE"]:
+    for cat in ["ROBUSTO", "DEMOSTRATIVO", "PROGRAMÁTICO", "PILOTO", "INADMISIBLE"]:
         n = cat_counts.get(cat, 0)
-        if n > 0 or cat == "DEMOSTRATIVO":
-            bar = "█" * (n * 2)
-            print(f"  {cat:<20} {n:>3} {bar}")
+        bar = "█" * (n * 2)
+        print(f"  {cat:<14} {n:>3} {bar}")
 
     full = {
         "version_protocolo": "V5.3",

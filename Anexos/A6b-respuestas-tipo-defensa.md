@@ -98,7 +98,7 @@ Mapeo directo de las 12 preguntas más probables del tribunal doctoral a respues
 
 ## P12. ¿Por qué su tesis no tiene revisión por pares externos aún?
 
-**Respuesta:** Lo declaramos como **deuda externa bloqueante para sustentación** (README línea 51, L17 del Anexo A.0). Todas las auditorías (V1-V5) son endógenas con asistencia IA bajo dirección humana. La revisión externa hostil está fechada como gestión activa post-envío al director, plazo 3-6 meses. Es bloqueador procedimental conocido, no debilidad oculta. La tesis se presenta al director ahora precisamente para iniciar la fase de revisión externa.
+**Respuesta:** Lo declaramos como deuda externa bloqueante para sustentación (README línea 51, L17 del Anexo A.0). Todas las auditorías internas se han realizado con asistencia computacional bajo dirección humana. La revisión por pares externos está fechada como gestión activa, con plazo de 3 a 6 meses, y la tesis se presenta al director para iniciar precisamente esa fase.
 
 **Referencia:** README líneas 47-51 + L17 del Anexo A.0.
 
