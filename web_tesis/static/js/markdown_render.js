@@ -166,7 +166,6 @@ function scrollToHash(rawHash, pushState) {
   if (!target) return;
 
   target.scrollIntoView({ behavior: "smooth", block: "start" });
-  window.setTimeout(() => window.scrollBy({ top: -50, left: 0, behavior: "auto" }), 140);
 
   if (pushState) {
     const safeHash = `#${encodeURIComponent(decoded)}`;

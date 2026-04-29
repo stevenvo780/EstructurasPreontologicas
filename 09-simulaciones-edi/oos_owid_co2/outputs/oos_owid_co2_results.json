@@ -1,0 +1,34 @@
+{
+  "compromiso": "paso 6.ter (segundo test) hoja de ruta cap. 06-03",
+  "preregistro_sha256": "8700736af97a35691b8e9c58c72c0c2c09d9a0b4dbfdb50e6dd551ac848f0371",
+  "dataset": {
+    "fuente": "OWID co2-data master",
+    "sha256": "5f36ddd3ec7799f30d0223d0b447b512b17f7e7e1652cd9c10890eb8bc4eaaed",
+    "n_filas_validas": 5358
+  },
+  "modelo_acoplado": {
+    "rmse": 0.39363050407815997,
+    "coefs": {
+      "a": -8.120219672968817,
+      "b_log_gdp_pc": 0.05453281382866615,
+      "c_log_energy_pc": 0.9077956913044387
+    }
+  },
+  "modelo_no_ode": {
+    "rmse": 0.39443650626401877,
+    "coefs": {
+      "a": -7.960931646088393,
+      "c_log_energy_pc": 0.9438741956101179
+    }
+  },
+  "edi": 0.002043426947198723,
+  "permutacion": {
+    "n_perm": 2999,
+    "seed": 42,
+    "p_value": 0.0003333333333333333,
+    "null_max": 0.0010744486094629302,
+    "null_p95": 0.00035536343561508587
+  },
+  "clasificacion_calibrada_preregistrada": "trend",
+  "ejecutado_en_utc": "2026-04-29T04:38:48Z"
+}

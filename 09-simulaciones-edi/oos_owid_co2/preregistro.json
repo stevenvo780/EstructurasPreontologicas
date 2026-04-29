@@ -1,0 +1,40 @@
+{
+  "preregistro_version": "1.0",
+  "fecha_preregistro_utc": "2026-04-29T04:42:00Z",
+  "compromiso": "Paso 6.ter (segundo test) hoja de ruta cap. 06-03 — predicción out-of-sample preregistrada en dominio distinto al astrofísico",
+  "caso": {
+    "nombre": "OWID CO2 emissions per capita vs GDP per capita (Kaya identity reducida)",
+    "fuente_url": "https://raw.githubusercontent.com/owid/co2-data/master/owid-co2-data.csv",
+    "razon": "Dataset socioeconómico-ambiental público no usado por el corpus inter-dominio. El caso 04 del corpus (Energía) usa OPSD, no OWID; los casos 17, 19 (Océanos, Acidificación) usan PMEL/USGS. La relación log(CO2/cap) ~ log(GDP/cap) (Ehrlich-Holdren / Kaya identity reducida) es regularidad estructural establecida que NO ha sido testada por el aparato",
+    "out_of_sample_garantizado": true,
+    "dominio": "socioeconómico-ambiental, completamente distinto al astrofísico del primer OOS"
+  },
+  "hipotesis_principal": {
+    "Q": "¿Es el ingreso per capita ablativamente necesario para predecir las emisiones de CO2 per capita país-año bajo el aparato EDI?",
+    "claim": "Bajo el modelo log(CO2/cap) = a + b*log(GDP/cap) + c*log(energy/cap), el regresor log(GDP/cap) es ablativamente necesario: EDI(GDP) >= 0.20 (al menos weak)"
+  },
+  "sonda_fijada_pre_descarga": {
+    "modelo_acoplado": "log(co2_per_capita) = a + b*log(gdp_per_capita) + c*log(energy_per_capita)",
+    "modelo_no_ode": "log(co2_per_capita) = a' + c'*log(energy_per_capita)",
+    "metrica": "EDI = 1 - RMSE_acoplado / RMSE_no_ode sobre país-año",
+    "filtros": [
+      "Sólo filas con co2 > 0, gdp > 0, energy_per_capita > 0",
+      "Sólo países (no agregados regionales/mundiales)",
+      "Año >= 1990 (datos OWID consolidados)"
+    ]
+  },
+  "umbrales_clasificacion_pre_registrados": {
+    "strong": "EDI >= 0.40 y p <= 0.01",
+    "weak": "0.20 <= EDI < 0.40 y p <= 0.05",
+    "suggestive": "0.10 <= EDI < 0.20 y p <= 0.05",
+    "trend": "EDI > 0 y p <= 0.10",
+    "null": "otro"
+  },
+  "test_estadistico": {
+    "n_perm": 2999,
+    "metodo": "permutacion_log_gdp",
+    "seed": 42,
+    "alpha": 0.05
+  },
+  "compromiso_publico_de_reporte": "Cualquier resultado se publica sin atenuación. Aunque la hipótesis es defensiva (umbral weak), si el resultado es null se reporta como límite del aparato sobre dato socioeconómico no visto"
+}

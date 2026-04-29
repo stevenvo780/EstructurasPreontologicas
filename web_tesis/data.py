@@ -565,6 +565,35 @@ def _build_summary(cases: list[dict[str, Any]]) -> dict[str, Any]:
                 item["count"] += 1
                 break
 
+    cr_bins = [
+        {"label": "< 0.5", "min": float("-inf"), "max": 0.5, "count": 0},
+        {"label": "0.5 a 1.0", "min": 0.5, "max": 1.0, "count": 0},
+        {"label": "1.0 a 1.5", "min": 1.0, "max": 1.5, "count": 0},
+        {"label": "1.5 a 2.0", "min": 1.5, "max": 2.0, "count": 0},
+        {"label": ">= 2.0", "min": 2.0, "max": float("inf"), "count": 0},
+    ]
+    rmse_bins = [
+        {"label": "Empeora (< 0%)", "min": float("-inf"), "max": 0.0, "count": 0},
+        {"label": "0% a 10%", "min": 0.0, "max": 0.1, "count": 0},
+        {"label": "10% a 30%", "min": 0.1, "max": 0.3, "count": 0},
+        {"label": "30% a 50%", "min": 0.3, "max": 0.5, "count": 0},
+        {"label": ">= 50%", "min": 0.5, "max": float("inf"), "count": 0},
+    ]
+
+    for case in cases:
+        cr_val = case["metrics"].get("cr")
+        if cr_val is not None:
+            for item in cr_bins:
+                if item["min"] <= cr_val < item["max"]:
+                    item["count"] += 1
+                    break
+        rmse_val = case["metrics"].get("rmse_reduction")
+        if rmse_val is not None:
+            for item in rmse_bins:
+                if item["min"] <= rmse_val < item["max"]:
+                    item["count"] += 1
+                    break
+
     timeline = []
     for c in cases:
         case_row = {
@@ -625,6 +654,8 @@ def _build_summary(cases: list[dict[str, Any]]) -> dict[str, Any]:
         "criteria_order": criteria_order,
         "criteria_pass_rates": criteria_pass_rates,
         "edi_bins": [{"label": x["label"], "count": x["count"]} for x in edi_bins],
+        "cr_bins": [{"label": x["label"], "count": x["count"]} for x in cr_bins],
+        "rmse_bins": [{"label": x["label"], "count": x["count"]} for x in rmse_bins],
         "timeline": sorted(timeline, key=lambda x: (x["case_num"] or 9999, x["case_name"])),
         "top_edi": top_edi,
         "bottom_edi": bottom_edi,

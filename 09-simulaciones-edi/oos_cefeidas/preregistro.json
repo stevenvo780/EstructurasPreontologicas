@@ -1,0 +1,57 @@
+{
+  "preregistro_version": "1.0",
+  "fecha_preregistro_utc": "2026-04-29T04:30:00Z",
+  "autores": ["Jacob Agudelo (concepto)", "Steven Vallejo Ortiz (técnica)"],
+  "compromiso": "Paso 6.ter hoja de ruta cap. 06-03 — predicción out-of-sample preregistrada",
+  "caso": {
+    "nombre": "OGLE-IV LMC Cepheids fundamental mode",
+    "fuente_url": "https://www.astrouw.edu.pl/ogle/ogle4/OCVS/lmc/cep/cepF.dat",
+    "razon": "Dataset astrofísico público no usado por el corpus inter-dominio ni por el corpus multiescala. La relación período-luminosidad (Leavitt 1908) es regularidad estructural establecida; el caso 39 del corpus multiescala usa una versión sintética derivada de parámetros publicados, NO los datos OGLE crudos",
+    "out_of_sample_garantizado": true
+  },
+  "hipotesis_principal": {
+    "Q": "¿Es el período ablativamente necesario para predecir la luminosidad media V de cefeidas fundamentales?",
+    "claim": "La información del período (log10 P) contribuye de manera ablativamente decisiva al modelo predictivo de V. Bajo el aparato EDI, la relación P-L-color produce EDI ≥ 0.40 (strong) cuando se ablate el regresor log10 P y se mantiene únicamente el color (V-I)",
+    "interpretacion_filosofica": "La pulsación radial (período P) es atractor empírico del sistema acoplado gas estelar↔radiación↔gravedad. La relación P-L es la firma macro del cierre operativo de ese atractor. Si la tesis tiene transferibilidad real, su métrica EDI debe detectar esa firma sobre datos no vistos del aparato"
+  },
+  "sonda_fijada_pre_descarga": {
+    "modelo_acoplado": {
+      "forma": "V_pred = a + b * log10(P) + c * (V - I)",
+      "parametros_libres": ["a", "b", "c"],
+      "interpretacion": "P-L con corrección de color para extinción + metalicidad"
+    },
+    "modelo_no_ode": {
+      "forma": "V_pred = a' + c' * (V - I)",
+      "parametros_libres": ["a'", "c'"],
+      "interpretacion": "Sin información de período; sólo color como predictor"
+    },
+    "metrica": "EDI = 1 - RMSE(modelo_acoplado, V_obs) / RMSE(modelo_no_ode, V_obs)",
+    "ajuste": "OLS sobre los datos completos (no hay fase de calibración separada en el sentido temporal: cada cefeida es un punto independiente, no una serie temporal)"
+  },
+  "umbrales_clasificacion_pre_registrados": {
+    "strong": "EDI >= 0.40 y p (permutación) <= 0.01",
+    "weak": "0.20 <= EDI < 0.40 y p <= 0.05",
+    "suggestive": "0.10 <= EDI < 0.20 y p <= 0.05",
+    "trend": "EDI > 0 y 0.05 < p <= 0.10",
+    "null": "EDI <= 0 o p > 0.10"
+  },
+  "test_estadistico": {
+    "n_perm": 2999,
+    "metodo": "permutacion_simple_sobre_log10_P (rompe asociacion P->V manteniendo distribución marginal)",
+    "seed": 42,
+    "alpha": 0.05
+  },
+  "filtros_de_admision_pre_registrados": [
+    "Filtrar OGLE-LMC-CEP fundamental mode (archivo cepF.dat) sin filtros adicionales",
+    "Excluir filas con período <= 0 o magnitud no finita",
+    "No excluir outliers a posteriori",
+    "No re-ajustar el modelo o cambiar la sonda tras observar el resultado"
+  ],
+  "compromiso_publico_de_reporte": [
+    "Cualquier resultado se publica sin atenuación: strong, weak, suggestive, trend o null",
+    "Si el resultado es weak o inferior, queda como evidencia de límite del aparato sobre regresión inter-objeto (no serie temporal)",
+    "Si el resultado es strong, queda como evidencia de transferibilidad operativa del aparato sobre dato público no visto",
+    "El resultado se inserta en el manuscrito en cap. 06-03 §7.ter sin reformulacion retorica"
+  ],
+  "datos_aun_no_descargados": "El dataset cepF.dat NO se ha descargado al momento de fijar este pre-registro. La descarga ocurre tras computar SHA-256 de este archivo y registrar el hash en el manuscrito"
+}

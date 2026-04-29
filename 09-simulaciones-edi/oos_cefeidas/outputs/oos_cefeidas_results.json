@@ -1,0 +1,41 @@
+{
+  "compromiso": "paso 6.ter hoja de ruta cap. 06-03 \u2014 predicci\u00f3n out-of-sample preregistrada",
+  "preregistro_path": "09-simulaciones-edi/oos_cefeidas/preregistro.json",
+  "preregistro_sha256": "ae42965cc1de2326cd326e1c504a8249c469b2735a132e8ea3f0caaba23d235d",
+  "dataset": {
+    "fuente_url": "https://www.astrouw.edu.pl/ogle/ogle4/OCVS/lmc/cep/cepF.dat",
+    "archivo_local": "09-simulaciones-edi/oos_cefeidas/cepF.dat",
+    "sha256_dato_crudo": "33801db30be60032525372943dcd0f346a25fc8728972447646c22ab0e5c6eb6",
+    "n_filas_validas": 2314
+  },
+  "modelo_acoplado": {
+    "forma": "V = a + b*log10(P) + c*(V-I)",
+    "coeficientes": {
+      "a": 16.08772845417878,
+      "b_logP": -3.206513764878065,
+      "c_color": 2.2022743345787243
+    },
+    "rmse": 0.158458367620629
+  },
+  "modelo_no_ode": {
+    "forma": "V = a' + c'*(V-I)",
+    "coeficientes": {
+      "a_prime": 15.784332148162978,
+      "c_prime": 0.10542206717003516
+    },
+    "rmse": 0.6503670540042621
+  },
+  "edi": 0.7563554816545326,
+  "permutacion": {
+    "n_perm": 2999,
+    "seed": 42,
+    "metodo": "permutacion_logP",
+    "p_value": 0.0003333333333333333,
+    "null_max": 0.0024684664347299767,
+    "null_p95": 0.0008333571127805637,
+    "null_mean": 0.0002187087298314598
+  },
+  "clasificacion_calibrada_preregistrada": "strong",
+  "veredicto": "Hip\u00f3tesis pre-registrada CONFIRMADA: el per\u00edodo es ablativamente necesario para predecir luminosidad media de cefeidas fundamentales bajo el aparato.",
+  "ejecutado_en_utc": "2026-04-29T04:32:30Z"
+}
