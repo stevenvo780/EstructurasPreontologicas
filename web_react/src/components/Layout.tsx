@@ -11,6 +11,8 @@ import {
   Search,
   Github,
   Sparkles,
+  Menu,
+  X,
 } from 'lucide-react';
 import { useTheme } from '../hooks/useTheme';
 import { cn } from '../lib/cn';
@@ -38,6 +40,7 @@ export default function Layout() {
   const location = useLocation();
   const [paletteOpen, setPaletteOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 8);
@@ -52,17 +55,29 @@ export default function Layout() {
         e.preventDefault();
         setPaletteOpen((o) => !o);
       }
+      if (e.key === 'Escape' && mobileMenuOpen) {
+        setMobileMenuOpen(false);
+      }
     };
     window.addEventListener('keydown', onKey);
     return () => window.removeEventListener('keydown', onKey);
-  }, []);
+  }, [mobileMenuOpen]);
 
-  // Scroll a top en cambio de ruta
+  // Cerrar menú móvil + scroll a top en cambio de ruta
   useEffect(() => {
+    setMobileMenuOpen(false);
     if (!location.hash) {
       window.scrollTo({ top: 0, behavior: 'instant' });
     }
   }, [location.pathname]);
+
+  // Bloquear scroll cuando el drawer móvil está abierto
+  useEffect(() => {
+    document.body.style.overflow = mobileMenuOpen ? 'hidden' : '';
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [mobileMenuOpen]);
 
   return (
     <div className="min-h-screen flex flex-col">
@@ -76,29 +91,30 @@ export default function Layout() {
         )}
       >
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-16">
+          <div className="flex items-center justify-between h-16 gap-3">
             <NavLink
               to="/"
-              className="flex items-center gap-2.5 group"
+              className="flex items-center gap-2.5 group min-w-0"
               aria-label="Inicio"
             >
-              <div className="relative">
+              <div className="relative flex-none">
                 <div className="w-9 h-9 rounded-lg bg-gradient-to-br from-accent-500 to-accent-700 flex items-center justify-center shadow-md group-hover:shadow-lg transition-shadow">
                   <Sparkles className="w-5 h-5 text-white" />
                 </div>
                 <div className="absolute -inset-1 rounded-lg bg-accent-500/20 blur-sm opacity-0 group-hover:opacity-100 transition-opacity" />
               </div>
-              <div className="hidden sm:block">
-                <div className="font-semibold text-sm tracking-tight">
+              <div className="hidden sm:block min-w-0">
+                <div className="font-semibold text-sm tracking-tight truncate">
                   Estructuras Pre-Ontológicas
                 </div>
-                <div className="text-[10.5px] font-medium text-ink-500 dark:text-ink-400 -mt-0.5">
+                <div className="text-[10.5px] font-medium text-ink-500 dark:text-ink-400 -mt-0.5 truncate">
                   Irrealismo operativo · EDI multidominio
                 </div>
               </div>
             </NavLink>
 
-            <nav className="hidden lg:flex items-center gap-1">
+            {/* Nav desktop (≥xl) */}
+            <nav className="hidden xl:flex items-center gap-1">
               {NAV.map((item) => (
                 <NavLink
                   key={item.to}
@@ -119,17 +135,24 @@ export default function Layout() {
               ))}
             </nav>
 
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-1.5">
               <button
                 onClick={() => setPaletteOpen(true)}
-                className="hidden sm:flex items-center gap-2 px-3 py-1.5 rounded-lg border border-ink-300 dark:border-ink-700 text-sm text-ink-500 dark:text-ink-400 hover:border-accent-400 hover:text-accent-600 dark:hover:text-accent-400 transition-colors"
+                className="hidden md:flex items-center gap-2 px-3 py-1.5 rounded-lg border border-ink-300 dark:border-ink-700 text-sm text-ink-500 dark:text-ink-400 hover:border-accent-400 hover:text-accent-600 dark:hover:text-accent-400 transition-colors"
                 aria-label="Buscar"
               >
                 <Search className="w-3.5 h-3.5" />
-                <span>Buscar</span>
-                <kbd className="hidden md:inline-flex items-center gap-0.5 px-1.5 py-0.5 rounded text-[10px] bg-ink-100 dark:bg-ink-800 text-ink-500 dark:text-ink-400 font-mono">
+                <span className="hidden lg:inline">Buscar</span>
+                <kbd className="hidden lg:inline-flex items-center gap-0.5 px-1.5 py-0.5 rounded text-[10px] bg-ink-100 dark:bg-ink-800 text-ink-500 dark:text-ink-400 font-mono">
                   ⌘K
                 </kbd>
+              </button>
+              <button
+                onClick={() => setPaletteOpen(true)}
+                className="md:hidden btn-ghost !p-2"
+                aria-label="Buscar"
+              >
+                <Search className="w-4 h-4" />
               </button>
               <button
                 onClick={toggleTheme}
@@ -147,18 +170,54 @@ export default function Layout() {
                 href="https://github.com/stevenvo780/EstructurasPreontologicas"
                 target="_blank"
                 rel="noreferrer"
-                className="btn-ghost !p-2"
+                className="btn-ghost !p-2 hidden sm:inline-flex"
                 aria-label="Repositorio en GitHub"
                 title="GitHub"
               >
                 <Github className="w-4 h-4" />
               </a>
+
+              {/* Toggle drawer móvil/tablet (<xl) */}
+              <button
+                onClick={() => setMobileMenuOpen((o) => !o)}
+                className="xl:hidden btn-ghost !p-2"
+                aria-label={mobileMenuOpen ? 'Cerrar menú' : 'Abrir menú'}
+                aria-expanded={mobileMenuOpen}
+              >
+                {mobileMenuOpen ? (
+                  <X className="w-5 h-5" />
+                ) : (
+                  <Menu className="w-5 h-5" />
+                )}
+              </button>
             </div>
           </div>
+        </div>
 
-          {/* Nav móvil */}
-          <nav className="lg:hidden -mx-4 px-4 pb-2 overflow-x-auto">
-            <div className="flex items-center gap-1 min-w-max">
+        {/* Drawer móvil/tablet — overlay full screen */}
+        <div
+          className={cn(
+            'xl:hidden fixed inset-0 z-30 transition-all duration-200',
+            mobileMenuOpen
+              ? 'opacity-100 pointer-events-auto'
+              : 'opacity-0 pointer-events-none'
+          )}
+        >
+          <div
+            className="absolute inset-0 bg-ink-950/40 backdrop-blur-sm"
+            onClick={() => setMobileMenuOpen(false)}
+            aria-hidden
+          />
+          <div
+            className={cn(
+              'absolute right-0 top-16 bottom-0 w-full max-w-sm bg-white dark:bg-ink-950 shadow-2xl border-l border-ink-200 dark:border-ink-800 overflow-y-auto transition-transform duration-200',
+              mobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
+            )}
+          >
+            <nav className="p-3">
+              <div className="text-[10px] uppercase tracking-wider font-semibold text-ink-500 dark:text-ink-400 px-3 pt-2 pb-1">
+                Navegación
+              </div>
               {NAV.map((item) => (
                 <NavLink
                   key={item.to}
@@ -166,19 +225,31 @@ export default function Layout() {
                   end={item.end}
                   className={({ isActive }) =>
                     cn(
-                      'flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg text-xs font-medium transition-colors whitespace-nowrap',
+                      'flex items-center gap-3 px-3 py-3 rounded-lg text-sm font-medium transition-colors mb-0.5',
                       isActive
                         ? 'bg-accent-100 dark:bg-accent-900/30 text-accent-700 dark:text-accent-300'
-                        : 'text-ink-600 dark:text-ink-300 hover:bg-ink-100 dark:hover:bg-ink-800/50'
+                        : 'text-ink-700 dark:text-ink-200 hover:bg-ink-100 dark:hover:bg-ink-800/50'
                     )
                   }
                 >
-                  <item.icon className="w-3.5 h-3.5" />
+                  <item.icon className="w-4.5 h-4.5 flex-none" />
                   <span>{item.label}</span>
                 </NavLink>
               ))}
-            </div>
-          </nav>
+
+              <div className="mt-4 pt-3 border-t border-ink-200 dark:border-ink-800 px-3 space-y-2">
+                <a
+                  href="https://github.com/stevenvo780/EstructurasPreontologicas"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="flex items-center gap-3 py-2 text-sm text-ink-600 dark:text-ink-400 hover:text-accent-600 dark:hover:text-accent-400"
+                >
+                  <Github className="w-4 h-4" />
+                  <span>Repositorio en GitHub</span>
+                </a>
+              </div>
+            </nav>
+          </div>
         </div>
       </header>
 
