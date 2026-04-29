@@ -416,6 +416,34 @@ def quality_score(metrics: dict, case_dir: Path) -> dict:
 
     q0 = components["Q0_signo_potencia_edi"].score
     q1b = components["Q1b_traza_empirica"].score
+    q5 = components["Q5_multi_sonda_penalizada"].score
+
+    # Filtro duro para INADMISIBLE introducido tras calibración externa F17
+    # (Bem 2011 falsabilidad invertida): si Q0 < 0.20 (EDI prácticamente nulo
+    # o negativo, sin potencia significativa) **y** Q5 < 0.50 (sonda
+    # secundaria divergente o replicaciones independientes nulas), el caso es
+    # INADMISIBLE independientemente del QES agregado. Esto codifica que
+    # presentación formal correcta no compensa ausencia de contenido empírico
+    # positivo + replicación.
+    if q0 < 0.20 and q5 < 0.50:
+        category = "INADMISIBLE"
+        recommendation = (
+            "Filtro duro INADMISIBLE: Q0 < 0.20 (EDI sin potencia) + "
+            f"Q5 < 0.50 (divergencia inter-paradigma o replicación nula). "
+            "Calibración F17. La presentación formal no compensa la falta "
+            "de contenido empírico positivo replicado."
+        )
+        role_note = _role_note_for_case(case_dir.name)
+        if role_note:
+            recommendation = f"{recommendation} {role_note}"
+        return {
+            "case_id": case_dir.name,
+            "QES": float(qes),
+            "components": {k: asdict(c) for k, c in components.items()},
+            "category": category,
+            "recommendation": recommendation,
+            "weights": QES_WEIGHTS,
+        }
 
     # Filtros duros para ROBUSTO: necesita Q0 ≥ 0.60 (EDI positivo con
     # potencia razonable) y Q1b ≥ 0.50 (datos reales o sintéticos derivados

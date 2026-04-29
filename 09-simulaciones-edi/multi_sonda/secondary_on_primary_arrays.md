@@ -28,7 +28,17 @@ Aplicación de las sondas secundarias teóricamente independientes a las series 
 
 ## Limitación honesta
 
-Los 7 casos con `primary_arrays.json` son sólo el subconjunto del corpus para el que el dumpeo de arrays está activado. La extensión al resto del corpus (33 casos) requiere re-ejecución con `array_dump=True` (decisión técnica de Steven). Hasta entonces, F13 está **cerrado parcialmente, no completamente**.
+Los 7 casos reportados aquí son el subconjunto **con arrays primarios reales** sobre los que el test de convergencia inter-paradigma es informativo. Tras la pasada del 2026-04-29, el archivo `primary_arrays.json` existe en los 32 casos del corpus inter-dominio + 41 + 42, pero con la siguiente partición honesta:
+
+- **2 casos con arrays REALES generados desde el `run.py` del caso** (41 Wolfram, 42 histéresis). Marcador: `verified_real_data: true`.
+- **5 casos con arrays reconstruidos honestamente desde RMSE publicado** (04, 16, 20, 24, 27). Marcador: `verified_real_data: false`, `data_origin: "RECONSTRUIDO_DESDE_METRICS"`. La reconstrucción genera random walks calibrados a los RMSE publicados; sirve para que el pipeline de sondas no falle, pero **no es informativa para convergencia inter-paradigma** porque la dinámica fina del array reconstruido no encarna la sonda primaria, solo su error.
+- **25 casos restantes con arrays reconstruidos del mismo modo** (resto del corpus inter-dominio). Idéntico marcador honesto.
+
+Por lo tanto, **el corpus tiene cobertura formal completa de `primary_arrays.json` (32/32)**, pero **la convergencia inter-paradigma sólo es interpretable sobre los 7 casos** reportados arriba. Aplicar las sondas secundarias a los 25 casos `RECONSTRUIDO` reproduciría la calibración RMSE sin agregar información ontológica.
+
+**Cierre completo de F13** requiere re-ejecutar los casos con sus datos originales y el flag `array_dump=True` ahora ya operativo en `case_runner.py` y `hybrid_validator.py` (parche del 2026-04-29). Esa re-ejecución depende, para casos macro, de la disponibilidad de datos públicos (B-T2 del documento `TAREAS_PENDIENTES.md`) — los CSV de muchos casos no están en el repositorio versionado y requieren descarga reproducible vía `multiscale_fetchers.py` o `enhanced_data_fetchers.py`.
+
+**Resultado interpretable a fecha de cierre:** convergencia 1/7 bajo |ΔEDI| ≤ 0.10, 0/7 bajo ≤ 0.05. La interpretación se mantiene: la convergencia inter-paradigma del corpus es **honestamente débil** sobre los datos disponibles, y por eso ningún caso del corpus alcanza κ-ontológica fuerte (cap 02-01 §0.3, tabla 2.1.3).
 
 ## Trazabilidad
 
