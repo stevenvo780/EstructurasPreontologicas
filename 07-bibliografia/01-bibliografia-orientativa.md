@@ -47,7 +47,7 @@ Cada capítulo del manuscrito se ancla en al menos un interlocutor principal y u
 12. Ladyman, J. y Ross, D. (2007). *Every Thing Must Go: Metaphysics Naturalized*. Oxford: Oxford University Press.
 13. Latour, B. (2005). *Reassembling the Social: An Introduction to Actor-Network-Theory*. Oxford: Oxford University Press.
 14. Latour, B. (2017). *Facing Gaia: Eight Lectures on the New Climatic Regime*. Cambridge: Polity Press.
-15. Morton, T. (2013). *Hyperobjects: Philosophy and Ecology after the End of the World*. Minneapolis: University of Minnesota Press.
+15. Morton, T. (2013). *Hyperobjects: Philosophy and Ecology after the End of the World*. Minneapolis: University of Minnesota Press. [**Nota de uso:** referenciado por continuidad con el origen del proyecto (cuyo título inicial era "Irrealismo Operativo de Hiperobjetos"). La tesis **no adopta** la ontología mortoniana —cuasi-sustancial, viscosa, ontológicamente masiva— por incompatibilidad con el irrealismo operativo de cap 02-01 §0.3. El término "hiperobjeto" se mantiene en uso técnico como heurística operativa multiescalar; ver Anexo A.1, entrada "Hiperobjeto (operativo) — uso técnico, no mortoniano".]
 16. Nicholson, D. y Dupré, J. (eds.) (2018). *Everything Flows: Towards a Processual Philosophy of Biology*. Oxford: Oxford University Press.
 17. O'Connor, T. y Wong, H. Y. (2005). "The Metaphysics of Emergence". *Noûs* 39(4): 658–678.
 18. Sellars, W. (1962). "Philosophy and the Scientific Image of Man". En R. Colodny (ed.), *Frontiers of Science and Philosophy*. Pittsburgh: University of Pittsburgh Press.

@@ -62,7 +62,9 @@ disponible en la biblioteca local (31 archivos PDF/EPUB, 112 MB).
 - **Robótica embodied**: Brooks 1991 *Intelligence Without Representation*;
   Pfeifer y Scheier 1999 *Understanding Intelligence*.
 - **Otros realismos / OOO**: Harman 2018 *Object-Oriented Ontology*; Ladyman
-  & Ross 2007 *Every Thing Must Go*; Morton 2013 *Hyperobjects*; Psillos 1999
+  & Ross 2007 *Every Thing Must Go*; Morton 2013 *Hyperobjects* (referenciado por
+  continuidad histórica del proyecto, no adoptado ontológicamente — ver nota de
+  uso en `01-bibliografia-orientativa.md` y Anexo A.1); Psillos 1999
   *Scientific Realism*; Sellars *Empiricism and the Philosophy of Mind /
   Scientific Image of Man*; van Fraassen 1980 *The Scientific Image*;
   Humphreys 2016 *Emergence*.

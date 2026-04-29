@@ -29,8 +29,12 @@ Métrica empírica que opera el operador κ. Definición: `EDI = 1 - RMSE_couple
 ### Estructura pre-ontológica
 Regularidad operativa anterior a la objetualidad sustancial. Ni cosa con esencia, ni ficción lingüística. Identificable como atractor empíricamente robusto de un sistema dinámico acoplado. Núcleo del nombre del proyecto. Capítulo 02-01.
 
-### Hiperobjeto (operativo)
-Constructo del entendimiento que designa un fenómeno de cualquier escala con cierre operativo alto (Nivel 4+) que excede la captura intuitiva inmediata. No restringido a gran escala temporal o espacial: aplica desde decoherencia cuántica (caso 31) hasta cúmulos globulares (caso 40), pasando por dinámica social macro. No implica existencia metafísica adicional. Heurística de candidatura inspirada en Morton (2013) pero usada en sentido operativo y multiescalar. Capítulo 02-01.
+### Hiperobjeto (operativo) — uso técnico, no mortoniano
+Constructo del entendimiento que designa un fenómeno de cualquier escala con cierre operativo alto (Nivel 4+) que excede la captura intuitiva inmediata. No restringido a gran escala temporal o espacial: aplica desde decoherencia cuántica (caso 31) hasta cúmulos globulares (caso 40), pasando por dinámica social macro. No implica existencia metafísica adicional.
+
+**Escisión explícita respecto al uso de Morton (2013):** este término se adopta por continuidad con el origen del proyecto (cuyo título inicial fue "Irrealismo Operativo de Hiperobjetos") pero **NO adopta la ontología mortoniana**. Morton afirma una ontología fuerte: el hiperobjeto es real en sentido sustancial, viscoso, no-local, fásico, ontológicamente masivo. Esa lectura es incompatible con el irrealismo operativo defendido en cap 02-01 §0.3 y §3.2 (κ-pragmática como afirmación demostrada; κ-ontológica fuerte como deuda metodológica fechada).
+
+Aquí "hiperobjeto" es **heurística operativa de candidatura**: una etiqueta práctica para fenómenos cuya cuenca de atracción es robusta y multiescalar, sin compromiso con la viscosidad ontológica mortoniana ni con la cuasi-sustancialidad ecológica que Morton defiende. La afinidad con Morton se limita a la intuición de fenómenos que exceden la representación inmediata; la ontología subyacente es opuesta. Capítulo 02-01.
 
 ### Irrealismo operativo
 Posición filosófica del manuscrito: realismo estructural moderado + pluralismo epistemológico + anti-reificación operativa. Ni realismo ingenuo, ni instrumentalismo puro, ni irrealismo radical. Capítulo 02-01.
