@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Re-ejecuta el caso 03 (Contaminación) con panel multi-ciudad para
-elevación genuina del n efectivo.
+extensión a panel del n efectivo.
 
 Sustento filosófico: la dinámica contaminación-respuesta institucional
 es replicable a través de ciudades distintas. El panel agregado es
@@ -105,7 +105,7 @@ def baseline_no_coupling(emissions: np.ndarray, seed: int = SEED) -> np.ndarray:
 
 def main() -> int:
     print("=" * 72)
-    print("Caso 03 — Contaminación: re-ejecución con panel V5.5")
+    print("Caso 03 — Contaminación: re-ejecución con panel")
     print("=" * 72)
 
     panel = _generate_panel()
@@ -156,7 +156,7 @@ def main() -> int:
     print(f"CI 95%: [{ci_lo:+.4f}, {ci_hi:+.4f}]")
     print(f"n efectivo:            {N_CITIES * N_WEEKS}")
 
-    # Sobrescribir metrics.json con panel V5.5
+    # Sobrescribir metrics.json con panel
     metrics_path = CASE_DIR / "outputs" / "metrics.json"
     if metrics_path.is_file():
         m = json.loads(metrics_path.read_text())

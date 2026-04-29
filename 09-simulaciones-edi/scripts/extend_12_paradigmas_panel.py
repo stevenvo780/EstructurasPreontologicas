@@ -96,7 +96,7 @@ def baseline(citations: np.ndarray, seed: int = SEED) -> np.ndarray:
 
 def main() -> int:
     print("=" * 72)
-    print("Caso 12 — Paradigmas: re-ejecución multi-disciplina V5.5")
+    print("Caso 12 — Paradigmas: re-ejecución multi-disciplina")
     print("=" * 72)
 
     panel = _generate_disciplines_panel()

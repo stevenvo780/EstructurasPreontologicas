@@ -1,0 +1,2963 @@
+{
+  "version_protocolo": "V5.3",
+  "weights": {
+    "Q0_signo_potencia_edi": 0.1,
+    "Q1a_traza_criptografica": 0.1,
+    "Q1b_traza_empirica": 0.15,
+    "Q2_tamano_efectivo": 0.1,
+    "Q3_calidad_sonda": 0.15,
+    "Q4_reproducibilidad": 0.1,
+    "Q5_multi_sonda_penalizada": 0.1,
+    "Q6_loe_empirico": 0.1,
+    "Q7_calibracion_estadistica": 0.1
+  },
+  "n_total": 42,
+  "categories": {
+    "ROBUSTO": 8,
+    "DEMOSTRATIVO": 23,
+    "PROGRAMÁTICO": 9,
+    "PILOTO": 2
+  },
+  "results_sorted": [
+    {
+      "case_id": "16_caso_deforestacion",
+      "QES": 0.9224990169320637,
+      "components": {
+        "Q0_signo_potencia_edi": {
+          "score": 0.9999963134952387,
+          "evidence": "EDI=+0.580 en rango strong, p=0.000, n=390",
+          "raw": {
+            "edi": 0.5802201286883273,
+            "p_value": 0.0,
+            "n": 390
+          }
+        },
+        "Q1a_traza_criptografica": {
+          "score": 1.0,
+          "evidence": "2 archivos con SHA-256",
+          "raw": {}
+        },
+        "Q1b_traza_empirica": {
+          "score": 1.0,
+          "evidence": "datos reales con URL: World Bank Open Data forest area",
+          "raw": {}
+        },
+        "Q2_tamano_efectivo": {
+          "score": 0.9999938558253978,
+          "evidence": "n=390: potencia ≥ 0.80 para detectar EDI weak",
+          "raw": {
+            "n": 390
+          }
+        },
+        "Q3_calidad_sonda": {
+          "score": 0.85,
+          "evidence": "protocolo con cita disciplinar",
+          "raw": {}
+        },
+        "Q4_reproducibilidad": {
+          "score": 1.0,
+          "evidence": "SETUP_HASH | git 2ac549bc | seed fijo",
+          "raw": {}
+        },
+        "Q5_multi_sonda_penalizada": {
+          "score": 0.45,
+          "evidence": "sonda secundaria con divergencia (Δ=0.160)",
+          "raw": {}
+        },
+        "Q6_loe_empirico": {
+          "score": 1.0,
+          "evidence": "LoE 5 (datos físicos directos > 30 años)",
+          "raw": {}
+        },
+        "Q7_calibracion_estadistica": {
+          "score": 1.0,
+          "evidence": "p_block=0.0003333333333333333, FWER=True, SE_HAC=0.1096199326563392",
+          "raw": {}
+        }
+      },
+      "category": "ROBUSTO",
+      "recommendation": "Apto para afirmación demostrativa.",
+      "weights": {
+        "Q0_signo_potencia_edi": 0.1,
+        "Q1a_traza_criptografica": 0.1,
+        "Q1b_traza_empirica": 0.15,
+        "Q2_tamano_efectivo": 0.1,
+        "Q3_calidad_sonda": 0.15,
+        "Q4_reproducibilidad": 0.1,
+        "Q5_multi_sonda_penalizada": 0.1,
+        "Q6_loe_empirico": 0.1,
+        "Q7_calibracion_estadistica": 0.1
+      }
+    },
+    {
+      "case_id": "13_caso_politicas_estrategicas",
+      "QES": 0.9124991275272065,
+      "components": {
+        "Q0_signo_potencia_edi": {
+          "score": 0.699997419446667,
+          "evidence": "EDI=+0.297 en rango weak, p=0.002, n=390",
+          "raw": {
+            "edi": 0.2972459599653249,
+            "p_value": 0.0015001500150015,
+            "n": 390
+          }
+        },
+        "Q1a_traza_criptografica": {
+          "score": 1.0,
+          "evidence": "1 archivos con SHA-256",
+          "raw": {}
+        },
+        "Q1b_traza_empirica": {
+          "score": 1.0,
+          "evidence": "datos reales con URL: World Bank Open Data",
+          "raw": {}
+        },
+        "Q2_tamano_efectivo": {
+          "score": 0.9999938558253978,
+          "evidence": "n=390: potencia ≥ 0.80 para detectar EDI weak",
+          "raw": {
+            "n": 390
+          }
+        },
+        "Q3_calidad_sonda": {
+          "score": 0.85,
+          "evidence": "protocolo con cita disciplinar",
+          "raw": {}
+        },
+        "Q4_reproducibilidad": {
+          "score": 1.0,
+          "evidence": "SETUP_HASH | git 8a684bcb | seed fijo",
+          "raw": {}
+        },
+        "Q5_multi_sonda_penalizada": {
+          "score": 0.85,
+          "evidence": "convergencia inter-paradigma sobre proxys (Δ=0.024)",
+          "raw": {}
+        },
+        "Q6_loe_empirico": {
+          "score": 0.8,
+          "evidence": "LoE 4 (series consistentes > 10 años)",
+          "raw": {}
+        },
+        "Q7_calibracion_estadistica": {
+          "score": 1.0,
+          "evidence": "p_block=0.001, FWER=True, SE_HAC=0.027158218330942317",
+          "raw": {}
+        }
+      },
+      "category": "ROBUSTO",
+      "recommendation": "Apto para afirmación demostrativa.",
+      "weights": {
+        "Q0_signo_potencia_edi": 0.1,
+        "Q1a_traza_criptografica": 0.1,
+        "Q1b_traza_empirica": 0.15,
+        "Q2_tamano_efectivo": 0.1,
+        "Q3_calidad_sonda": 0.15,
+        "Q4_reproducibilidad": 0.1,
+        "Q5_multi_sonda_penalizada": 0.1,
+        "Q6_loe_empirico": 0.1,
+        "Q7_calibracion_estadistica": 0.1
+      }
+    },
+    {
+      "case_id": "24_caso_microplasticos",
+      "QES": 0.8824998669555156,
+      "components": {
+        "Q0_signo_potencia_edi": {
+          "score": 0.9999995010831834,
+          "evidence": "EDI=+0.782 en rango strong, p=0.000, n=450",
+          "raw": {
+            "edi": 0.7818771547395869,
+            "p_value": 0.0,
+            "n": 450
+          }
+        },
+        "Q1a_traza_criptografica": {
+          "score": 1.0,
+          "evidence": "1 archivos con SHA-256",
+          "raw": {}
+        },
+        "Q1b_traza_empirica": {
+          "score": 1.0,
+          "evidence": "datos reales con URL: Jambeck 2015 et al. + OWID",
+          "raw": {}
+        },
+        "Q2_tamano_efectivo": {
+          "score": 0.9999991684719722,
+          "evidence": "n=450: potencia ≥ 0.80 para detectar EDI weak",
+          "raw": {
+            "n": 450
+          }
+        },
+        "Q3_calidad_sonda": {
+          "score": 0.85,
+          "evidence": "protocolo con cita disciplinar",
+          "raw": {}
+        },
+        "Q4_reproducibilidad": {
+          "score": 1.0,
+          "evidence": "SETUP_HASH | git 8a684bcb | seed fijo",
+          "raw": {}
+        },
+        "Q5_multi_sonda_penalizada": {
+          "score": 0.25,
+          "evidence": "divergencia alta inter-paradigma (Δ=1.782); al menos una sonda es inadecuada",
+          "raw": {}
+        },
+        "Q6_loe_empirico": {
+          "score": 0.8,
+          "evidence": "LoE 4 (series consistentes > 10 años)",
+          "raw": {}
+        },
+        "Q7_calibracion_estadistica": {
+          "score": 1.0,
+          "evidence": "p_block=0.0003333333333333333, FWER=True, SE_HAC=0.08617728838166884",
+          "raw": {}
+        }
+      },
+      "category": "ROBUSTO",
+      "recommendation": "Apto para afirmación demostrativa.",
+      "weights": {
+        "Q0_signo_potencia_edi": 0.1,
+        "Q1a_traza_criptografica": 0.1,
+        "Q1b_traza_empirica": 0.15,
+        "Q2_tamano_efectivo": 0.1,
+        "Q3_calidad_sonda": 0.15,
+        "Q4_reproducibilidad": 0.1,
+        "Q5_multi_sonda_penalizada": 0.1,
+        "Q6_loe_empirico": 0.1,
+        "Q7_calibracion_estadistica": 0.1
+      }
+    },
+    {
+      "case_id": "27_caso_riesgo_biologico",
+      "QES": 0.8824463439791255,
+      "components": {
+        "Q0_signo_potencia_edi": {
+          "score": 0.9997987899217202,
+          "evidence": "EDI=+0.333 en rango strong, p=0.002, n=270",
+          "raw": {
+            "edi": 0.3325786296723718,
+            "p_value": 0.0022002200220022,
+            "n": 270
+          }
+        },
+        "Q1a_traza_criptografica": {
+          "score": 1.0,
+          "evidence": "1 archivos con SHA-256",
+          "raw": {}
+        },
+        "Q1b_traza_empirica": {
+          "score": 1.0,
+          "evidence": "datos reales con URL: World Bank mortality + WHO",
+          "raw": {}
+        },
+        "Q2_tamano_efectivo": {
+          "score": 0.9996646498695336,
+          "evidence": "n=270: potencia ≥ 0.80 para detectar EDI weak",
+          "raw": {
+            "n": 270
+          }
+        },
+        "Q3_calidad_sonda": {
+          "score": 0.85,
+          "evidence": "protocolo con cita disciplinar",
+          "raw": {}
+        },
+        "Q4_reproducibilidad": {
+          "score": 1.0,
+          "evidence": "SETUP_HASH | git 8a684bcb | seed fijo",
+          "raw": {}
+        },
+        "Q5_multi_sonda_penalizada": {
+          "score": 0.25,
+          "evidence": "divergencia alta inter-paradigma (Δ=0.417); al menos una sonda es inadecuada",
+          "raw": {}
+        },
+        "Q6_loe_empirico": {
+          "score": 0.8,
+          "evidence": "LoE 4 (series consistentes > 10 años)",
+          "raw": {}
+        },
+        "Q7_calibracion_estadistica": {
+          "score": 1.0,
+          "evidence": "p_block=0.0003333333333333333, FWER=True, SE_HAC=0.32371347239439685",
+          "raw": {}
+        }
+      },
+      "category": "ROBUSTO",
+      "recommendation": "Apto para afirmación demostrativa.",
+      "weights": {
+        "Q0_signo_potencia_edi": 0.1,
+        "Q1a_traza_criptografica": 0.1,
+        "Q1b_traza_empirica": 0.15,
+        "Q2_tamano_efectivo": 0.1,
+        "Q3_calidad_sonda": 0.15,
+        "Q4_reproducibilidad": 0.1,
+        "Q5_multi_sonda_penalizada": 0.1,
+        "Q6_loe_empirico": 0.1,
+        "Q7_calibracion_estadistica": 0.1
+      }
+    },
+    {
+      "case_id": "05_caso_epidemiologia",
+      "QES": 0.8749999999999997,
+      "components": {
+        "Q0_signo_potencia_edi": {
+          "score": 0.699999999999999,
+          "evidence": "EDI=+0.129 en rango weak, p=0.000, n=1040",
+          "raw": {
+            "edi": 0.12944152062099962,
+            "p_value": 0.0,
+            "n": 1040
+          }
+        },
+        "Q1a_traza_criptografica": {
+          "score": 1.0,
+          "evidence": "1 archivos con SHA-256",
+          "raw": {}
+        },
+        "Q1b_traza_empirica": {
+          "score": 1.0,
+          "evidence": "datos reales con URL: OWID COVID-19",
+          "raw": {}
+        },
+        "Q2_tamano_efectivo": {
+          "score": 0.9999999999999976,
+          "evidence": "n=1040: potencia ≥ 0.80 para detectar EDI weak",
+          "raw": {
+            "n": 1040
+          }
+        },
+        "Q3_calidad_sonda": {
+          "score": 1.0,
+          "evidence": "protocolo + arquitectura + cita disciplinar",
+          "raw": {}
+        },
+        "Q4_reproducibilidad": {
+          "score": 1.0,
+          "evidence": "SETUP_HASH | git ed2571b4 | seed fijo",
+          "raw": {}
+        },
+        "Q5_multi_sonda_penalizada": {
+          "score": 0.25,
+          "evidence": "divergencia alta inter-paradigma (Δ=0.379); al menos una sonda es inadecuada",
+          "raw": {}
+        },
+        "Q6_loe_empirico": {
+          "score": 0.8,
+          "evidence": "LoE 4 (series consistentes > 10 años)",
+          "raw": {}
+        },
+        "Q7_calibracion_estadistica": {
+          "score": 1.0,
+          "evidence": "p_block=0.0003333333333333333, FWER=True, SE_HAC=0.013889443379233346",
+          "raw": {}
+        }
+      },
+      "category": "ROBUSTO",
+      "recommendation": "Apto para afirmación demostrativa.",
+      "weights": {
+        "Q0_signo_potencia_edi": 0.1,
+        "Q1a_traza_criptografica": 0.1,
+        "Q1b_traza_empirica": 0.15,
+        "Q2_tamano_efectivo": 0.1,
+        "Q3_calidad_sonda": 0.15,
+        "Q4_reproducibilidad": 0.1,
+        "Q5_multi_sonda_penalizada": 0.1,
+        "Q6_loe_empirico": 0.1,
+        "Q7_calibracion_estadistica": 0.1
+      }
+    },
+    {
+      "case_id": "18_caso_urbanizacion",
+      "QES": 0.8724999999603895,
+      "components": {
+        "Q0_signo_potencia_edi": {
+          "score": 0.6999999998828422,
+          "evidence": "EDI=+0.236 en rango weak, p=0.000, n=690",
+          "raw": {
+            "edi": 0.23583251166779556,
+            "p_value": 0.0,
+            "n": 690
+          }
+        },
+        "Q1a_traza_criptografica": {
+          "score": 1.0,
+          "evidence": "1 archivos con SHA-256",
+          "raw": {}
+        },
+        "Q1b_traza_empirica": {
+          "score": 1.0,
+          "evidence": "datos reales con URL: World Bank Open Data urban",
+          "raw": {}
+        },
+        "Q2_tamano_efectivo": {
+          "score": 0.9999999997210531,
+          "evidence": "n=690: potencia ≥ 0.80 para detectar EDI weak",
+          "raw": {
+            "n": 690
+          }
+        },
+        "Q3_calidad_sonda": {
+          "score": 0.85,
+          "evidence": "protocolo con cita disciplinar",
+          "raw": {}
+        },
+        "Q4_reproducibilidad": {
+          "score": 1.0,
+          "evidence": "SETUP_HASH | git 8a684bcb | seed fijo",
+          "raw": {}
+        },
+        "Q5_multi_sonda_penalizada": {
+          "score": 0.25,
+          "evidence": "divergencia alta inter-paradigma (Δ=1.236); al menos una sonda es inadecuada",
+          "raw": {}
+        },
+        "Q6_loe_empirico": {
+          "score": 1.0,
+          "evidence": "LoE 5 (datos físicos directos > 30 años)",
+          "raw": {}
+        },
+        "Q7_calibracion_estadistica": {
+          "score": 1.0,
+          "evidence": "p_block=0.0003333333333333333, FWER=True, SE_HAC=0.004366005205103755",
+          "raw": {}
+        }
+      },
+      "category": "ROBUSTO",
+      "recommendation": "Apto para afirmación demostrativa.",
+      "weights": {
+        "Q0_signo_potencia_edi": 0.1,
+        "Q1a_traza_criptografica": 0.1,
+        "Q1b_traza_empirica": 0.15,
+        "Q2_tamano_efectivo": 0.1,
+        "Q3_calidad_sonda": 0.15,
+        "Q4_reproducibilidad": 0.1,
+        "Q5_multi_sonda_penalizada": 0.1,
+        "Q6_loe_empirico": 0.1,
+        "Q7_calibracion_estadistica": 0.1
+      }
+    },
+    {
+      "case_id": "20_caso_kessler",
+      "QES": 0.8529065070077033,
+      "components": {
+        "Q0_signo_potencia_edi": {
+          "score": 0.6265244012788873,
+          "evidence": "EDI=+0.353 en rango strong, p=0.000, n=15",
+          "raw": {
+            "edi": 0.35269595151500943,
+            "p_value": 0.0,
+            "n": 15
+          }
+        },
+        "Q1a_traza_criptografica": {
+          "score": 1.0,
+          "evidence": "2 archivos con SHA-256",
+          "raw": {}
+        },
+        "Q1b_traza_empirica": {
+          "score": 1.0,
+          "evidence": "datos reales con URL: CelesTrak debris",
+          "raw": {}
+        },
+        "Q2_tamano_efectivo": {
+          "score": 0.3775406687981454,
+          "evidence": "n=15: tamaño limitado",
+          "raw": {
+            "n": 15
+          }
+        },
+        "Q3_calidad_sonda": {
+          "score": 0.85,
+          "evidence": "protocolo con cita disciplinar",
+          "raw": {}
+        },
+        "Q4_reproducibilidad": {
+          "score": 1.0,
+          "evidence": "SETUP_HASH | git 8a684bcb | seed fijo",
+          "raw": {}
+        },
+        "Q5_multi_sonda_penalizada": {
+          "score": 0.95,
+          "evidence": "convergencia inter-paradigma sobre arrays reales (Δ=0.017)",
+          "raw": {}
+        },
+        "Q6_loe_empirico": {
+          "score": 0.8,
+          "evidence": "LoE 4 (series consistentes > 10 años)",
+          "raw": {}
+        },
+        "Q7_calibracion_estadistica": {
+          "score": 1.0,
+          "evidence": "p_block=0.0003333333333333333, FWER=True, SE_HAC=0.08093132472507826",
+          "raw": {}
+        }
+      },
+      "category": "ROBUSTO",
+      "recommendation": "Apto para afirmación demostrativa.",
+      "weights": {
+        "Q0_signo_potencia_edi": 0.1,
+        "Q1a_traza_criptografica": 0.1,
+        "Q1b_traza_empirica": 0.15,
+        "Q2_tamano_efectivo": 0.1,
+        "Q3_calidad_sonda": 0.15,
+        "Q4_reproducibilidad": 0.1,
+        "Q5_multi_sonda_penalizada": 0.1,
+        "Q6_loe_empirico": 0.1,
+        "Q7_calibracion_estadistica": 0.1
+      }
+    },
+    {
+      "case_id": "22_caso_fosforo",
+      "QES": 0.8524999941212887,
+      "components": {
+        "Q0_signo_potencia_edi": {
+          "score": 0.6999999826122623,
+          "evidence": "EDI=+0.192 en rango weak, p=0.000, n=540",
+          "raw": {
+            "edi": 0.19240058742600652,
+            "p_value": 0.0,
+            "n": 540
+          }
+        },
+        "Q1a_traza_criptografica": {
+          "score": 1.0,
+          "evidence": "1 archivos con SHA-256",
+          "raw": {}
+        },
+        "Q1b_traza_empirica": {
+          "score": 1.0,
+          "evidence": "datos reales con URL: World Bank fertilizer use",
+          "raw": {}
+        },
+        "Q2_tamano_efectivo": {
+          "score": 0.9999999586006244,
+          "evidence": "n=540: potencia ≥ 0.80 para detectar EDI weak",
+          "raw": {
+            "n": 540
+          }
+        },
+        "Q3_calidad_sonda": {
+          "score": 0.85,
+          "evidence": "protocolo con cita disciplinar",
+          "raw": {}
+        },
+        "Q4_reproducibilidad": {
+          "score": 1.0,
+          "evidence": "SETUP_HASH | git 8a684bcb | seed fijo",
+          "raw": {}
+        },
+        "Q5_multi_sonda_penalizada": {
+          "score": 0.25,
+          "evidence": "divergencia alta inter-paradigma (Δ=1.119); al menos una sonda es inadecuada",
+          "raw": {}
+        },
+        "Q6_loe_empirico": {
+          "score": 0.8,
+          "evidence": "LoE 4 (series consistentes > 10 años)",
+          "raw": {}
+        },
+        "Q7_calibracion_estadistica": {
+          "score": 1.0,
+          "evidence": "p_block=0.0003333333333333333, FWER=True, SE_HAC=0.295277659582838",
+          "raw": {}
+        }
+      },
+      "category": "ROBUSTO",
+      "recommendation": "Apto para afirmación demostrativa.",
+      "weights": {
+        "Q0_signo_potencia_edi": 0.1,
+        "Q1a_traza_criptografica": 0.1,
+        "Q1b_traza_empirica": 0.15,
+        "Q2_tamano_efectivo": 0.1,
+        "Q3_calidad_sonda": 0.15,
+        "Q4_reproducibilidad": 0.1,
+        "Q5_multi_sonda_penalizada": 0.1,
+        "Q6_loe_empirico": 0.1,
+        "Q7_calibracion_estadistica": 0.1
+      }
+    },
+    {
+      "case_id": "40_cumulos_globulares",
+      "QES": 0.8403939329015642,
+      "components": {
+        "Q0_signo_potencia_edi": {
+          "score": 0.5613648528219971,
+          "evidence": "EDI=+0.428 en rango strong, p=0.000, n=0",
+          "raw": {
+            "edi": 0.4275530650113536,
+            "p_value": 0.0,
+            "n": 0
+          }
+        },
+        "Q1a_traza_criptografica": {
+          "score": 1.0,
+          "evidence": "1 archivos con SHA-256",
+          "raw": {}
+        },
+        "Q1b_traza_empirica": {
+          "score": 1.0,
+          "evidence": "datos reales con URL: Sintético Plummer — parámetros Gaia DR3",
+          "raw": {}
+        },
+        "Q2_tamano_efectivo": {
+          "score": 0.8175744761936437,
+          "evidence": "n=75: tamaño aceptable; potencia ≈ 0.50",
+          "raw": {
+            "n": 75
+          }
+        },
+        "Q3_calidad_sonda": {
+          "score": 0.85,
+          "evidence": "protocolo con cita disciplinar",
+          "raw": {}
+        },
+        "Q4_reproducibilidad": {
+          "score": 1.0,
+          "evidence": "SETUP_HASH | git a24f6dd1 | seed fijo",
+          "raw": {}
+        },
+        "Q5_multi_sonda_penalizada": {
+          "score": 0.85,
+          "evidence": "convergencia inter-paradigma sobre proxys (Δ=0.035)",
+          "raw": {}
+        },
+        "Q6_loe_empirico": {
+          "score": 0.4,
+          "evidence": "LoE 1 (especulativo o sintético)",
+          "raw": {}
+        },
+        "Q7_calibracion_estadistica": {
+          "score": 1.0,
+          "evidence": "p_block=0.0003333333333333333, FWER=True, SE_HAC=0.06267407406289249",
+          "raw": {}
+        }
+      },
+      "category": "DEMOSTRATIVO",
+      "recommendation": "Apto para afirmación demostrativa con limitaciones explícitas.",
+      "weights": {
+        "Q0_signo_potencia_edi": 0.1,
+        "Q1a_traza_criptografica": 0.1,
+        "Q1b_traza_empirica": 0.15,
+        "Q2_tamano_efectivo": 0.1,
+        "Q3_calidad_sonda": 0.15,
+        "Q4_reproducibilidad": 0.1,
+        "Q5_multi_sonda_penalizada": 0.1,
+        "Q6_loe_empirico": 0.1,
+        "Q7_calibracion_estadistica": 0.1
+      }
+    },
+    {
+      "case_id": "42_caso_histeresis_institucional",
+      "QES": 0.8325,
+      "components": {
+        "Q0_signo_potencia_edi": {
+          "score": 1.0,
+          "evidence": "EDI=+0.777 en rango strong, p=0.001, n=1560",
+          "raw": {
+            "edi": 0.7774574369516496,
+            "p_value": 0.001,
+            "n": 1560
+          }
+        },
+        "Q1a_traza_criptografica": {
+          "score": 0.5,
+          "evidence": "FETCH_MANIFEST presente, sin archivos listados",
+          "raw": {}
+        },
+        "Q1b_traza_empirica": {
+          "score": 1.0,
+          "evidence": "datos reales con URL: Panel sintético calibrado OxCGRT (Hale et al. 2021)",
+          "raw": {}
+        },
+        "Q2_tamano_efectivo": {
+          "score": 1.0,
+          "evidence": "n=1560: potencia ≥ 0.80 para detectar EDI weak",
+          "raw": {
+            "n": 1560
+          }
+        },
+        "Q3_calidad_sonda": {
+          "score": 0.85,
+          "evidence": "protocolo con cita disciplinar",
+          "raw": {}
+        },
+        "Q4_reproducibilidad": {
+          "score": 1.0,
+          "evidence": "SETUP_HASH | git a05767f0 | seed fijo",
+          "raw": {}
+        },
+        "Q5_multi_sonda_penalizada": {
+          "score": 0.25,
+          "evidence": "divergencia alta inter-paradigma (Δ=0.915); al menos una sonda es inadecuada",
+          "raw": {}
+        },
+        "Q6_loe_empirico": {
+          "score": 0.8,
+          "evidence": "LoE 4 (series consistentes > 10 años)",
+          "raw": {}
+        },
+        "Q7_calibracion_estadistica": {
+          "score": 1.0,
+          "evidence": "p_block=0.0003333333333333333, FWER=True, SE_HAC=0.05861568367250502",
+          "raw": {}
+        }
+      },
+      "category": "DEMOSTRATIVO",
+      "recommendation": "Apto para afirmación demostrativa con limitaciones explícitas.",
+      "weights": {
+        "Q0_signo_potencia_edi": 0.1,
+        "Q1a_traza_criptografica": 0.1,
+        "Q1b_traza_empirica": 0.15,
+        "Q2_tamano_efectivo": 0.1,
+        "Q3_calidad_sonda": 0.15,
+        "Q4_reproducibilidad": 0.1,
+        "Q5_multi_sonda_penalizada": 0.1,
+        "Q6_loe_empirico": 0.1,
+        "Q7_calibracion_estadistica": 0.1
+      }
+    },
+    {
+      "case_id": "09_caso_finanzas",
+      "QES": 0.8313256873797054,
+      "components": {
+        "Q0_signo_potencia_edi": {
+          "score": 0.2982086756639572,
+          "evidence": "EDI=+0.081 bajo umbral weak, p=0.000, n=168",
+          "raw": {
+            "edi": 0.08125725845167885,
+            "p_value": 0.0,
+            "n": 168
+          }
+        },
+        "Q1a_traza_criptografica": {
+          "score": 1.0,
+          "evidence": "1 archivos con SHA-256",
+          "raw": {}
+        },
+        "Q1b_traza_empirica": {
+          "score": 1.0,
+          "evidence": "datos reales con URL: Yahoo Finance",
+          "raw": {}
+        },
+        "Q2_tamano_efectivo": {
+          "score": 0.9900481981330957,
+          "evidence": "n=168: potencia ≥ 0.80 para detectar EDI weak",
+          "raw": {
+            "n": 168
+          }
+        },
+        "Q3_calidad_sonda": {
+          "score": 0.85,
+          "evidence": "protocolo con cita disciplinar",
+          "raw": {}
+        },
+        "Q4_reproducibilidad": {
+          "score": 1.0,
+          "evidence": "SETUP_HASH | git ed2571b4 | seed fijo",
+          "raw": {}
+        },
+        "Q5_multi_sonda_penalizada": {
+          "score": 0.25,
+          "evidence": "divergencia alta inter-paradigma (Δ=1.081); al menos una sonda es inadecuada",
+          "raw": {}
+        },
+        "Q6_loe_empirico": {
+          "score": 1.0,
+          "evidence": "LoE 5 (datos físicos directos > 30 años)",
+          "raw": {}
+        },
+        "Q7_calibracion_estadistica": {
+          "score": 1.0,
+          "evidence": "p_block=0.010333333333333333, FWER=True, SE_HAC=0.0038265306122448983",
+          "raw": {}
+        }
+      },
+      "category": "DEMOSTRATIVO",
+      "recommendation": "Apto para afirmación demostrativa con limitaciones explícitas.",
+      "weights": {
+        "Q0_signo_potencia_edi": 0.1,
+        "Q1a_traza_criptografica": 0.1,
+        "Q1b_traza_empirica": 0.15,
+        "Q2_tamano_efectivo": 0.1,
+        "Q3_calidad_sonda": 0.15,
+        "Q4_reproducibilidad": 0.1,
+        "Q5_multi_sonda_penalizada": 0.1,
+        "Q6_loe_empirico": 0.1,
+        "Q7_calibracion_estadistica": 0.1
+      }
+    },
+    {
+      "case_id": "04_caso_energia",
+      "QES": 0.8229210126942426,
+      "components": {
+        "Q0_signo_potencia_edi": {
+          "score": 0.6172037976034097,
+          "evidence": "EDI=+0.650 en rango strong, p=0.000, n=13",
+          "raw": {
+            "edi": 0.650265837204689,
+            "p_value": 0.0,
+            "n": 13
+          }
+        },
+        "Q1a_traza_criptografica": {
+          "score": 1.0,
+          "evidence": "1 archivos con SHA-256",
+          "raw": {}
+        },
+        "Q1b_traza_empirica": {
+          "score": 1.0,
+          "evidence": "datos reales con URL: Open Power Systems Data",
+          "raw": {}
+        },
+        "Q2_tamano_efectivo": {
+          "score": 0.3620063293390162,
+          "evidence": "n=13: tamaño limitado",
+          "raw": {
+            "n": 13
+          }
+        },
+        "Q3_calidad_sonda": {
+          "score": 1.0,
+          "evidence": "protocolo + arquitectura + cita disciplinar",
+          "raw": {}
+        },
+        "Q4_reproducibilidad": {
+          "score": 1.0,
+          "evidence": "SETUP_HASH | git ed2571b4 | seed fijo",
+          "raw": {}
+        },
+        "Q5_multi_sonda_penalizada": {
+          "score": 0.25,
+          "evidence": "divergencia alta inter-paradigma (Δ=0.457); al menos una sonda es inadecuada",
+          "raw": {}
+        },
+        "Q6_loe_empirico": {
+          "score": 1.0,
+          "evidence": "LoE 5 (datos físicos directos > 30 años)",
+          "raw": {}
+        },
+        "Q7_calibracion_estadistica": {
+          "score": 1.0,
+          "evidence": "p_block=0.0003333333333333333, FWER=True, SE_HAC=0.13155999431253643",
+          "raw": {}
+        }
+      },
+      "category": "DEMOSTRATIVO",
+      "recommendation": "Apto para afirmación demostrativa con limitaciones explícitas.",
+      "weights": {
+        "Q0_signo_potencia_edi": 0.1,
+        "Q1a_traza_criptografica": 0.1,
+        "Q1b_traza_empirica": 0.15,
+        "Q2_tamano_efectivo": 0.1,
+        "Q3_calidad_sonda": 0.15,
+        "Q4_reproducibilidad": 0.1,
+        "Q5_multi_sonda_penalizada": 0.1,
+        "Q6_loe_empirico": 0.1,
+        "Q7_calibracion_estadistica": 0.1
+      }
+    },
+    {
+      "case_id": "11_caso_movilidad",
+      "QES": 0.822499997837343,
+      "components": {
+        "Q0_signo_potencia_edi": {
+          "score": 0.6999999936034086,
+          "evidence": "EDI=+0.128 en rango weak, p=0.002, n=570",
+          "raw": {
+            "edi": 0.12828980793063793,
+            "p_value": 0.002002002002002002,
+            "n": 570
+          }
+        },
+        "Q1a_traza_criptografica": {
+          "score": 1.0,
+          "evidence": "1 archivos con SHA-256",
+          "raw": {}
+        },
+        "Q1b_traza_empirica": {
+          "score": 1.0,
+          "evidence": "datos reales con URL: World Bank Open Data",
+          "raw": {}
+        },
+        "Q2_tamano_efectivo": {
+          "score": 0.9999999847700205,
+          "evidence": "n=570: potencia ≥ 0.80 para detectar EDI weak",
+          "raw": {
+            "n": 570
+          }
+        },
+        "Q3_calidad_sonda": {
+          "score": 0.65,
+          "evidence": "protocolo sin cita disciplinar verificada",
+          "raw": {}
+        },
+        "Q4_reproducibilidad": {
+          "score": 1.0,
+          "evidence": "SETUP_HASH | git ed2571b4 | seed fijo",
+          "raw": {}
+        },
+        "Q5_multi_sonda_penalizada": {
+          "score": 0.25,
+          "evidence": "divergencia alta inter-paradigma (Δ=1.128); al menos una sonda es inadecuada",
+          "raw": {}
+        },
+        "Q6_loe_empirico": {
+          "score": 0.8,
+          "evidence": "LoE 4 (series consistentes > 10 años)",
+          "raw": {}
+        },
+        "Q7_calibracion_estadistica": {
+          "score": 1.0,
+          "evidence": "p_block=0.0003333333333333333, FWER=True, SE_HAC=0.12435856112199115",
+          "raw": {}
+        }
+      },
+      "category": "DEMOSTRATIVO",
+      "recommendation": "Apto para afirmación demostrativa con limitaciones explícitas.",
+      "weights": {
+        "Q0_signo_potencia_edi": 0.1,
+        "Q1a_traza_criptografica": 0.1,
+        "Q1b_traza_empirica": 0.15,
+        "Q2_tamano_efectivo": 0.1,
+        "Q3_calidad_sonda": 0.15,
+        "Q4_reproducibilidad": 0.1,
+        "Q5_multi_sonda_penalizada": 0.1,
+        "Q6_loe_empirico": 0.1,
+        "Q7_calibracion_estadistica": 0.1
+      }
+    },
+    {
+      "case_id": "34_michaelis_menten",
+      "QES": 0.8017423431452002,
+      "components": {
+        "Q0_signo_potencia_edi": {
+          "score": 0.5613648528219971,
+          "evidence": "EDI=+0.458 en rango strong, p=0.000, n=0",
+          "raw": {
+            "edi": 0.4580474281524688,
+            "p_value": 0.0,
+            "n": 0
+          }
+        },
+        "Q1a_traza_criptografica": {
+          "score": 1.0,
+          "evidence": "1 archivos con SHA-256",
+          "raw": {}
+        },
+        "Q1b_traza_empirica": {
+          "score": 1.0,
+          "evidence": "datos reales con URL: Sintético MM — parámetros BRENDA",
+          "raw": {}
+        },
+        "Q2_tamano_efectivo": {
+          "score": 0.7310585786300049,
+          "evidence": "n=60: tamaño aceptable; potencia ≈ 0.50",
+          "raw": {
+            "n": 60
+          }
+        },
+        "Q3_calidad_sonda": {
+          "score": 0.65,
+          "evidence": "protocolo sin cita disciplinar verificada",
+          "raw": {}
+        },
+        "Q4_reproducibilidad": {
+          "score": 1.0,
+          "evidence": "SETUP_HASH | git a24f6dd1 | seed fijo",
+          "raw": {}
+        },
+        "Q5_multi_sonda_penalizada": {
+          "score": 0.85,
+          "evidence": "convergencia inter-paradigma sobre proxys (Δ=0.003)",
+          "raw": {}
+        },
+        "Q6_loe_empirico": {
+          "score": 0.4,
+          "evidence": "LoE 1 (especulativo o sintético)",
+          "raw": {}
+        },
+        "Q7_calibracion_estadistica": {
+          "score": 1.0,
+          "evidence": "p_block=0.0003333333333333333, FWER=True, SE_HAC=0.08987836894061729",
+          "raw": {}
+        }
+      },
+      "category": "DEMOSTRATIVO",
+      "recommendation": "Apto para afirmación demostrativa con limitaciones explícitas.",
+      "weights": {
+        "Q0_signo_potencia_edi": 0.1,
+        "Q1a_traza_criptografica": 0.1,
+        "Q1b_traza_empirica": 0.15,
+        "Q2_tamano_efectivo": 0.1,
+        "Q3_calidad_sonda": 0.15,
+        "Q4_reproducibilidad": 0.1,
+        "Q5_multi_sonda_penalizada": 0.1,
+        "Q6_loe_empirico": 0.1,
+        "Q7_calibracion_estadistica": 0.1
+      }
+    },
+    {
+      "case_id": "39_cefeidas_ogle",
+      "QES": 0.786716193079988,
+      "components": {
+        "Q0_signo_potencia_edi": {
+          "score": 0.5613648528219971,
+          "evidence": "EDI=+0.916 en rango strong, p=0.000, n=0",
+          "raw": {
+            "edi": 0.9162290686317869,
+            "p_value": 0.0,
+            "n": 0
+          }
+        },
+        "Q1a_traza_criptografica": {
+          "score": 1.0,
+          "evidence": "1 archivos con SHA-256",
+          "raw": {}
+        },
+        "Q1b_traza_empirica": {
+          "score": 1.0,
+          "evidence": "datos reales con URL: Sintético Leavitt P-L — parámetros OGLE LMC",
+          "raw": {}
+        },
+        "Q2_tamano_efectivo": {
+          "score": 0.8807970779778823,
+          "evidence": "n=90: tamaño aceptable; potencia ≈ 0.50",
+          "raw": {
+            "n": 90
+          }
+        },
+        "Q3_calidad_sonda": {
+          "score": 0.85,
+          "evidence": "protocolo con cita disciplinar",
+          "raw": {}
+        },
+        "Q4_reproducibilidad": {
+          "score": 1.0,
+          "evidence": "SETUP_HASH | git a24f6dd1 | seed fijo",
+          "raw": {}
+        },
+        "Q5_multi_sonda_penalizada": {
+          "score": 0.25,
+          "evidence": "divergencia alta inter-paradigma (Δ=1.916); al menos una sonda es inadecuada",
+          "raw": {}
+        },
+        "Q6_loe_empirico": {
+          "score": 0.4,
+          "evidence": "LoE 1 (especulativo o sintético)",
+          "raw": {}
+        },
+        "Q7_calibracion_estadistica": {
+          "score": 1.0,
+          "evidence": "p_block=0.0003333333333333333, FWER=True, SE_HAC=0.011626018486440154",
+          "raw": {}
+        }
+      },
+      "category": "DEMOSTRATIVO",
+      "recommendation": "Apto para afirmación demostrativa con limitaciones explícitas.",
+      "weights": {
+        "Q0_signo_potencia_edi": 0.1,
+        "Q1a_traza_criptografica": 0.1,
+        "Q1b_traza_empirica": 0.15,
+        "Q2_tamano_efectivo": 0.1,
+        "Q3_calidad_sonda": 0.15,
+        "Q4_reproducibilidad": 0.1,
+        "Q5_multi_sonda_penalizada": 0.1,
+        "Q6_loe_empirico": 0.1,
+        "Q7_calibracion_estadistica": 0.1
+      }
+    },
+    {
+      "case_id": "01_caso_clima",
+      "QES": 0.7864152535965074,
+      "components": {
+        "Q0_signo_potencia_edi": {
+          "score": 0.1491043378319786,
+          "evidence": "EDI=+0.011 bajo umbral weak, p=0.999, n=168",
+          "raw": {
+            "edi": 0.011072299899552383,
+            "p_value": 0.998998998998999,
+            "n": 168
+          }
+        },
+        "Q1a_traza_criptografica": {
+          "score": 1.0,
+          "evidence": "1 archivos con SHA-256",
+          "raw": {}
+        },
+        "Q1b_traza_empirica": {
+          "score": 1.0,
+          "evidence": "datos reales con URL: Meteostat / NOAA",
+          "raw": {}
+        },
+        "Q2_tamano_efectivo": {
+          "score": 0.9900481981330957,
+          "evidence": "n=168: potencia ≥ 0.80 para detectar EDI weak",
+          "raw": {
+            "n": 168
+          }
+        },
+        "Q3_calidad_sonda": {
+          "score": 0.85,
+          "evidence": "protocolo con cita disciplinar",
+          "raw": {}
+        },
+        "Q4_reproducibilidad": {
+          "score": 1.0,
+          "evidence": "SETUP_HASH | git ed2571b4 | seed fijo",
+          "raw": {}
+        },
+        "Q5_multi_sonda_penalizada": {
+          "score": 0.25,
+          "evidence": "divergencia alta inter-paradigma (Δ=1.011); al menos una sonda es inadecuada",
+          "raw": {}
+        },
+        "Q6_loe_empirico": {
+          "score": 0.8,
+          "evidence": "LoE 4 (series consistentes > 10 años)",
+          "raw": {}
+        },
+        "Q7_calibracion_estadistica": {
+          "score": 0.9,
+          "evidence": "p_block=0.0003333333333333333, FWER=False, SE_HAC=0.01210687852811625",
+          "raw": {}
+        }
+      },
+      "category": "DEMOSTRATIVO",
+      "recommendation": "Apto para afirmación demostrativa con limitaciones explícitas.",
+      "weights": {
+        "Q0_signo_potencia_edi": 0.1,
+        "Q1a_traza_criptografica": 0.1,
+        "Q1b_traza_empirica": 0.15,
+        "Q2_tamano_efectivo": 0.1,
+        "Q3_calidad_sonda": 0.15,
+        "Q4_reproducibilidad": 0.1,
+        "Q5_multi_sonda_penalizada": 0.1,
+        "Q6_loe_empirico": 0.1,
+        "Q7_calibracion_estadistica": 0.1
+      }
+    },
+    {
+      "case_id": "21_caso_salinizacion",
+      "QES": 0.7824999951148737,
+      "components": {
+        "Q0_signo_potencia_edi": {
+          "score": 0.2999999925481124,
+          "evidence": "EDI=+0.018 bajo umbral weak, p=0.003, n=540",
+          "raw": {
+            "edi": 0.01842115528473093,
+            "p_value": 0.0028002800280028,
+            "n": 540
+          }
+        },
+        "Q1a_traza_criptografica": {
+          "score": 1.0,
+          "evidence": "1 archivos con SHA-256",
+          "raw": {}
+        },
+        "Q1b_traza_empirica": {
+          "score": 1.0,
+          "evidence": "datos reales con URL: World Bank irrigated land",
+          "raw": {}
+        },
+        "Q2_tamano_efectivo": {
+          "score": 0.9999999586006244,
+          "evidence": "n=540: potencia ≥ 0.80 para detectar EDI weak",
+          "raw": {
+            "n": 540
+          }
+        },
+        "Q3_calidad_sonda": {
+          "score": 0.65,
+          "evidence": "protocolo sin cita disciplinar verificada",
+          "raw": {}
+        },
+        "Q4_reproducibilidad": {
+          "score": 1.0,
+          "evidence": "SETUP_HASH | git 8a684bcb | seed fijo",
+          "raw": {}
+        },
+        "Q5_multi_sonda_penalizada": {
+          "score": 0.45,
+          "evidence": "sonda secundaria con divergencia (Δ=0.236)",
+          "raw": {}
+        },
+        "Q6_loe_empirico": {
+          "score": 0.6,
+          "evidence": "LoE 3 (datos estructurados)",
+          "raw": {}
+        },
+        "Q7_calibracion_estadistica": {
+          "score": 1.0,
+          "evidence": "p_block=0.0003333333333333333, FWER=True, SE_HAC=0.06110112999761645",
+          "raw": {}
+        }
+      },
+      "category": "DEMOSTRATIVO",
+      "recommendation": "Apto para afirmación demostrativa con limitaciones explícitas.",
+      "weights": {
+        "Q0_signo_potencia_edi": 0.1,
+        "Q1a_traza_criptografica": 0.1,
+        "Q1b_traza_empirica": 0.15,
+        "Q2_tamano_efectivo": 0.1,
+        "Q3_calidad_sonda": 0.15,
+        "Q4_reproducibilidad": 0.1,
+        "Q5_multi_sonda_penalizada": 0.1,
+        "Q6_loe_empirico": 0.1,
+        "Q7_calibracion_estadistica": 0.1
+      }
+    },
+    {
+      "case_id": "37_hrv_cardiaco",
+      "QES": 0.7803939329015641,
+      "components": {
+        "Q0_signo_potencia_edi": {
+          "score": 0.5613648528219971,
+          "evidence": "EDI=+0.577 en rango strong, p=0.000, n=0",
+          "raw": {
+            "edi": 0.5771350469912229,
+            "p_value": 0.0,
+            "n": 0
+          }
+        },
+        "Q1a_traza_criptografica": {
+          "score": 1.0,
+          "evidence": "1 archivos con SHA-256",
+          "raw": {}
+        },
+        "Q1b_traza_empirica": {
+          "score": 1.0,
+          "evidence": "datos reales con URL: Sintético Mackey-Glass — parámetros PhysioNet",
+          "raw": {}
+        },
+        "Q2_tamano_efectivo": {
+          "score": 0.8175744761936437,
+          "evidence": "n=75: tamaño aceptable; potencia ≈ 0.50",
+          "raw": {
+            "n": 75
+          }
+        },
+        "Q3_calidad_sonda": {
+          "score": 0.85,
+          "evidence": "protocolo con cita disciplinar",
+          "raw": {}
+        },
+        "Q4_reproducibilidad": {
+          "score": 1.0,
+          "evidence": "SETUP_HASH | git a24f6dd1 | seed fijo",
+          "raw": {}
+        },
+        "Q5_multi_sonda_penalizada": {
+          "score": 0.25,
+          "evidence": "divergencia alta inter-paradigma (Δ=1.256); al menos una sonda es inadecuada",
+          "raw": {}
+        },
+        "Q6_loe_empirico": {
+          "score": 0.4,
+          "evidence": "LoE 1 (especulativo o sintético)",
+          "raw": {}
+        },
+        "Q7_calibracion_estadistica": {
+          "score": 1.0,
+          "evidence": "p_block=0.0003333333333333333, FWER=True, SE_HAC=0.05187985963113345",
+          "raw": {}
+        }
+      },
+      "category": "DEMOSTRATIVO",
+      "recommendation": "Apto para afirmación demostrativa con limitaciones explícitas.",
+      "weights": {
+        "Q0_signo_potencia_edi": 0.1,
+        "Q1a_traza_criptografica": 0.1,
+        "Q1b_traza_empirica": 0.15,
+        "Q2_tamano_efectivo": 0.1,
+        "Q3_calidad_sonda": 0.15,
+        "Q4_reproducibilidad": 0.1,
+        "Q5_multi_sonda_penalizada": 0.1,
+        "Q6_loe_empirico": 0.1,
+        "Q7_calibracion_estadistica": 0.1
+      }
+    },
+    {
+      "case_id": "12_caso_paradigmas",
+      "QES": 0.7724999694097773,
+      "components": {
+        "Q0_signo_potencia_edi": {
+          "score": 0.0,
+          "evidence": "EDI=-0.154 ≤ 0 (null o negativo), p=0.497, n=480",
+          "raw": {
+            "edi": -0.1535856201178349,
+            "p_value": 0.497,
+            "n": 480
+          }
+        },
+        "Q1a_traza_criptografica": {
+          "score": 1.0,
+          "evidence": "1 archivos con SHA-256",
+          "raw": {}
+        },
+        "Q1b_traza_empirica": {
+          "score": 1.0,
+          "evidence": "datos reales con URL: OWID educación",
+          "raw": {}
+        },
+        "Q2_tamano_efectivo": {
+          "score": 0.999999694097773,
+          "evidence": "n=480: potencia ≥ 0.80 para detectar EDI weak",
+          "raw": {
+            "n": 480
+          }
+        },
+        "Q3_calidad_sonda": {
+          "score": 0.85,
+          "evidence": "protocolo con cita disciplinar",
+          "raw": {}
+        },
+        "Q4_reproducibilidad": {
+          "score": 1.0,
+          "evidence": "SETUP_HASH | git ed2571b4 | seed fijo",
+          "raw": {}
+        },
+        "Q5_multi_sonda_penalizada": {
+          "score": 0.65,
+          "evidence": "sonda secundaria con Δ moderado (0.090)",
+          "raw": {}
+        },
+        "Q6_loe_empirico": {
+          "score": 0.6,
+          "evidence": "LoE 3 (datos estructurados)",
+          "raw": {}
+        },
+        "Q7_calibracion_estadistica": {
+          "score": 0.7000000000000001,
+          "evidence": "p_block=0.619, FWER=True, SE_HAC=0.0038265306122448983",
+          "raw": {}
+        }
+      },
+      "category": "DEMOSTRATIVO",
+      "recommendation": "Apto para afirmación demostrativa con limitaciones explícitas.",
+      "weights": {
+        "Q0_signo_potencia_edi": 0.1,
+        "Q1a_traza_criptografica": 0.1,
+        "Q1b_traza_empirica": 0.15,
+        "Q2_tamano_efectivo": 0.1,
+        "Q3_calidad_sonda": 0.15,
+        "Q4_reproducibilidad": 0.1,
+        "Q5_multi_sonda_penalizada": 0.1,
+        "Q6_loe_empirico": 0.1,
+        "Q7_calibracion_estadistica": 0.1
+      }
+    },
+    {
+      "case_id": "10_caso_justicia",
+      "QES": 0.7724979791279565,
+      "components": {
+        "Q0_signo_potencia_edi": {
+          "score": 0.3499964927014119,
+          "evidence": "EDI=+0.227 en rango weak, p=0.477, n=360",
+          "raw": {
+            "edi": 0.22744325283615935,
+            "p_value": 0.4774774774774775,
+            "n": 360
+          }
+        },
+        "Q1a_traza_criptografica": {
+          "score": 1.0,
+          "evidence": "1 archivos con SHA-256",
+          "raw": {}
+        },
+        "Q1b_traza_empirica": {
+          "score": 1.0,
+          "evidence": "datos reales con URL: World Bank Open Data",
+          "raw": {}
+        },
+        "Q2_tamano_efectivo": {
+          "score": 0.999983298578152,
+          "evidence": "n=360: potencia ≥ 0.80 para detectar EDI weak",
+          "raw": {
+            "n": 360
+          }
+        },
+        "Q3_calidad_sonda": {
+          "score": 0.85,
+          "evidence": "protocolo con cita disciplinar",
+          "raw": {}
+        },
+        "Q4_reproducibilidad": {
+          "score": 1.0,
+          "evidence": "SETUP_HASH | git ed2571b4 | seed fijo",
+          "raw": {}
+        },
+        "Q5_multi_sonda_penalizada": {
+          "score": 0.25,
+          "evidence": "divergencia alta inter-paradigma (Δ=0.489); al menos una sonda es inadecuada",
+          "raw": {}
+        },
+        "Q6_loe_empirico": {
+          "score": 0.8,
+          "evidence": "LoE 4 (series consistentes > 10 años)",
+          "raw": {}
+        },
+        "Q7_calibracion_estadistica": {
+          "score": 0.55,
+          "evidence": "p_block=1.0, FWER=False, SE_HAC=0.06064211198576083",
+          "raw": {}
+        }
+      },
+      "category": "DEMOSTRATIVO",
+      "recommendation": "Apto para afirmación demostrativa con limitaciones explícitas.",
+      "weights": {
+        "Q0_signo_potencia_edi": 0.1,
+        "Q1a_traza_criptografica": 0.1,
+        "Q1b_traza_empirica": 0.15,
+        "Q2_tamano_efectivo": 0.1,
+        "Q3_calidad_sonda": 0.15,
+        "Q4_reproducibilidad": 0.1,
+        "Q5_multi_sonda_penalizada": 0.1,
+        "Q6_loe_empirico": 0.1,
+        "Q7_calibracion_estadistica": 0.1
+      }
+    },
+    {
+      "case_id": "15_caso_wikipedia",
+      "QES": 0.772183195484063,
+      "components": {
+        "Q0_signo_potencia_edi": {
+          "score": 0.551175648614834,
+          "evidence": "EDI=+0.192 en rango weak, p=0.000, n=48",
+          "raw": {
+            "edi": 0.19162977697124867,
+            "p_value": 0.0,
+            "n": 48
+          }
+        },
+        "Q1a_traza_criptografica": {
+          "score": 1.0,
+          "evidence": "1 archivos con SHA-256",
+          "raw": {}
+        },
+        "Q1b_traza_empirica": {
+          "score": 1.0,
+          "evidence": "datos reales con URL: Wikimedia Statistics",
+          "raw": {}
+        },
+        "Q2_tamano_efectivo": {
+          "score": 0.6456563062257954,
+          "evidence": "n=48: tamaño aceptable; potencia ≈ 0.50",
+          "raw": {
+            "n": 48
+          }
+        },
+        "Q3_calidad_sonda": {
+          "score": 0.65,
+          "evidence": "protocolo sin cita disciplinar verificada",
+          "raw": {}
+        },
+        "Q4_reproducibilidad": {
+          "score": 1.0,
+          "evidence": "SETUP_HASH | git 8a684bcb | seed fijo",
+          "raw": {}
+        },
+        "Q5_multi_sonda_penalizada": {
+          "score": 0.25,
+          "evidence": "divergencia alta inter-paradigma (Δ=0.958); al menos una sonda es inadecuada",
+          "raw": {}
+        },
+        "Q6_loe_empirico": {
+          "score": 0.8,
+          "evidence": "LoE 4 (series consistentes > 10 años)",
+          "raw": {}
+        },
+        "Q7_calibracion_estadistica": {
+          "score": 1.0,
+          "evidence": "p_block=0.0003333333333333333, FWER=True, SE_HAC=0.1487990324251577",
+          "raw": {}
+        }
+      },
+      "category": "DEMOSTRATIVO",
+      "recommendation": "Apto para afirmación demostrativa con limitaciones explícitas.",
+      "weights": {
+        "Q0_signo_potencia_edi": 0.1,
+        "Q1a_traza_criptografica": 0.1,
+        "Q1b_traza_empirica": 0.15,
+        "Q2_tamano_efectivo": 0.1,
+        "Q3_calidad_sonda": 0.15,
+        "Q4_reproducibilidad": 0.1,
+        "Q5_multi_sonda_penalizada": 0.1,
+        "Q6_loe_empirico": 0.1,
+        "Q7_calibracion_estadistica": 0.1
+      }
+    },
+    {
+      "case_id": "31_decoherencia_cuantica",
+      "QES": 0.7717423431452002,
+      "components": {
+        "Q0_signo_potencia_edi": {
+          "score": 0.5613648528219971,
+          "evidence": "EDI=+0.913 en rango strong, p=0.000, n=0",
+          "raw": {
+            "edi": 0.913177796635811,
+            "p_value": 0.0,
+            "n": 0
+          }
+        },
+        "Q1a_traza_criptografica": {
+          "score": 1.0,
+          "evidence": "1 archivos con SHA-256",
+          "raw": {}
+        },
+        "Q1b_traza_empirica": {
+          "score": 1.0,
+          "evidence": "datos reales con URL: Sintético Lindblad — parámetros transmón NIST/IBM",
+          "raw": {}
+        },
+        "Q2_tamano_efectivo": {
+          "score": 0.7310585786300049,
+          "evidence": "n=60: tamaño aceptable; potencia ≈ 0.50",
+          "raw": {
+            "n": 60
+          }
+        },
+        "Q3_calidad_sonda": {
+          "score": 0.85,
+          "evidence": "protocolo con cita disciplinar",
+          "raw": {}
+        },
+        "Q4_reproducibilidad": {
+          "score": 1.0,
+          "evidence": "SETUP_HASH | git a24f6dd1 | seed fijo",
+          "raw": {}
+        },
+        "Q5_multi_sonda_penalizada": {
+          "score": 0.25,
+          "evidence": "divergencia alta inter-paradigma (Δ=0.397); al menos una sonda es inadecuada",
+          "raw": {}
+        },
+        "Q6_loe_empirico": {
+          "score": 0.4,
+          "evidence": "LoE 1 (especulativo o sintético)",
+          "raw": {}
+        },
+        "Q7_calibracion_estadistica": {
+          "score": 1.0,
+          "evidence": "p_block=0.0003333333333333333, FWER=True, SE_HAC=0.017672768164763288",
+          "raw": {}
+        }
+      },
+      "category": "DEMOSTRATIVO",
+      "recommendation": "Apto para afirmación demostrativa con limitaciones explícitas.",
+      "weights": {
+        "Q0_signo_potencia_edi": 0.1,
+        "Q1a_traza_criptografica": 0.1,
+        "Q1b_traza_empirica": 0.15,
+        "Q2_tamano_efectivo": 0.1,
+        "Q3_calidad_sonda": 0.15,
+        "Q4_reproducibilidad": 0.1,
+        "Q5_multi_sonda_penalizada": 0.1,
+        "Q6_loe_empirico": 0.1,
+        "Q7_calibracion_estadistica": 0.1
+      }
+    },
+    {
+      "case_id": "14_caso_postverdad",
+      "QES": 0.7532249693176487,
+      "components": {
+        "Q0_signo_potencia_edi": {
+          "score": 0.5246794867141722,
+          "evidence": "EDI=+0.243 en rango weak, p=0.000, n=40",
+          "raw": {
+            "edi": 0.24284958859933714,
+            "p_value": 0.0,
+            "n": 40
+          }
+        },
+        "Q1a_traza_criptografica": {
+          "score": 1.0,
+          "evidence": "1 archivos con SHA-256",
+          "raw": {}
+        },
+        "Q1b_traza_empirica": {
+          "score": 1.0,
+          "evidence": "datos reales con URL: Google Trends + Wikipedia stats",
+          "raw": {}
+        },
+        "Q2_tamano_efectivo": {
+          "score": 0.5825702064623147,
+          "evidence": "n=40: tamaño aceptable; potencia ≈ 0.50",
+          "raw": {
+            "n": 40
+          }
+        },
+        "Q3_calidad_sonda": {
+          "score": 0.85,
+          "evidence": "protocolo con cita disciplinar",
+          "raw": {}
+        },
+        "Q4_reproducibilidad": {
+          "score": 1.0,
+          "evidence": "SETUP_HASH | git 8a684bcb | seed fijo",
+          "raw": {}
+        },
+        "Q5_multi_sonda_penalizada": {
+          "score": 0.25,
+          "evidence": "divergencia alta inter-paradigma (Δ=0.385); al menos una sonda es inadecuada",
+          "raw": {}
+        },
+        "Q6_loe_empirico": {
+          "score": 0.4,
+          "evidence": "LoE 2 (datos digitales con ruido alto)",
+          "raw": {}
+        },
+        "Q7_calibracion_estadistica": {
+          "score": 1.0,
+          "evidence": "p_block=0.0003333333333333333, FWER=True, SE_HAC=0.07213478979969593",
+          "raw": {}
+        }
+      },
+      "category": "DEMOSTRATIVO",
+      "recommendation": "Apto para afirmación demostrativa con limitaciones explícitas.",
+      "weights": {
+        "Q0_signo_potencia_edi": 0.1,
+        "Q1a_traza_criptografica": 0.1,
+        "Q1b_traza_empirica": 0.15,
+        "Q2_tamano_efectivo": 0.1,
+        "Q3_calidad_sonda": 0.15,
+        "Q4_reproducibilidad": 0.1,
+        "Q5_multi_sonda_penalizada": 0.1,
+        "Q6_loe_empirico": 0.1,
+        "Q7_calibracion_estadistica": 0.1
+      }
+    },
+    {
+      "case_id": "19_caso_acidificacion_oceanica",
+      "QES": 0.7525000000000001,
+      "components": {
+        "Q0_signo_potencia_edi": {
+          "score": 0.5,
+          "evidence": "EDI=+0.728 en rango strong, p=0.490, n=2880",
+          "raw": {
+            "edi": 0.7278020987862708,
+            "p_value": 0.49,
+            "n": 2880
+          }
+        },
+        "Q1a_traza_criptografica": {
+          "score": 1.0,
+          "evidence": "1 archivos con SHA-256",
+          "raw": {}
+        },
+        "Q1b_traza_empirica": {
+          "score": 1.0,
+          "evidence": "datos reales con URL: PMEL/NOAA pH proxy",
+          "raw": {}
+        },
+        "Q2_tamano_efectivo": {
+          "score": 1.0,
+          "evidence": "n=2880: potencia ≥ 0.80 para detectar EDI weak",
+          "raw": {
+            "n": 2880
+          }
+        },
+        "Q3_calidad_sonda": {
+          "score": 0.65,
+          "evidence": "protocolo sin cita disciplinar verificada",
+          "raw": {}
+        },
+        "Q4_reproducibilidad": {
+          "score": 1.0,
+          "evidence": "SETUP_HASH | git 8a684bcb | seed fijo",
+          "raw": {}
+        },
+        "Q5_multi_sonda_penalizada": {
+          "score": 0.25,
+          "evidence": "divergencia alta inter-paradigma (Δ=0.404); al menos una sonda es inadecuada",
+          "raw": {}
+        },
+        "Q6_loe_empirico": {
+          "score": 0.6,
+          "evidence": "LoE 3 (datos estructurados)",
+          "raw": {}
+        },
+        "Q7_calibracion_estadistica": {
+          "score": 0.7000000000000001,
+          "evidence": "p_block=0.5496666666666666, FWER=True, SE_HAC=0.0038265306122448983",
+          "raw": {}
+        }
+      },
+      "category": "DEMOSTRATIVO",
+      "recommendation": "Apto para afirmación demostrativa con limitaciones explícitas.",
+      "weights": {
+        "Q0_signo_potencia_edi": 0.1,
+        "Q1a_traza_criptografica": 0.1,
+        "Q1b_traza_empirica": 0.15,
+        "Q2_tamano_efectivo": 0.1,
+        "Q3_calidad_sonda": 0.15,
+        "Q4_reproducibilidad": 0.1,
+        "Q5_multi_sonda_penalizada": 0.1,
+        "Q6_loe_empirico": 0.1,
+        "Q7_calibracion_estadistica": 0.1
+      }
+    },
+    {
+      "case_id": "03_caso_contaminacion",
+      "QES": 0.75,
+      "components": {
+        "Q0_signo_potencia_edi": {
+          "score": 0.0,
+          "evidence": "EDI=-0.090 ≤ 0 (null o negativo), p=0.509, n=1560",
+          "raw": {
+            "edi": -0.09014535958048145,
+            "p_value": 0.509,
+            "n": 1560
+          }
+        },
+        "Q1a_traza_criptografica": {
+          "score": 1.0,
+          "evidence": "1 archivos con SHA-256",
+          "raw": {}
+        },
+        "Q1b_traza_empirica": {
+          "score": 1.0,
+          "evidence": "datos reales con URL: AQICN",
+          "raw": {}
+        },
+        "Q2_tamano_efectivo": {
+          "score": 1.0,
+          "evidence": "n=1560: potencia ≥ 0.80 para detectar EDI weak",
+          "raw": {
+            "n": 1560
+          }
+        },
+        "Q3_calidad_sonda": {
+          "score": 1.0,
+          "evidence": "protocolo + arquitectura + cita disciplinar",
+          "raw": {}
+        },
+        "Q4_reproducibilidad": {
+          "score": 1.0,
+          "evidence": "SETUP_HASH | git ed2571b4 | seed fijo",
+          "raw": {}
+        },
+        "Q5_multi_sonda_penalizada": {
+          "score": 0.25,
+          "evidence": "divergencia alta inter-paradigma (Δ=0.612); al menos una sonda es inadecuada",
+          "raw": {}
+        },
+        "Q6_loe_empirico": {
+          "score": 0.6,
+          "evidence": "LoE 3 (datos estructurados)",
+          "raw": {}
+        },
+        "Q7_calibracion_estadistica": {
+          "score": 0.65,
+          "evidence": "p_block=0.21933333333333332, FWER=False, SE_HAC=0.012470075802712574",
+          "raw": {}
+        }
+      },
+      "category": "DEMOSTRATIVO",
+      "recommendation": "Apto para afirmación demostrativa con limitaciones explícitas.",
+      "weights": {
+        "Q0_signo_potencia_edi": 0.1,
+        "Q1a_traza_criptografica": 0.1,
+        "Q1b_traza_empirica": 0.15,
+        "Q2_tamano_efectivo": 0.1,
+        "Q3_calidad_sonda": 0.15,
+        "Q4_reproducibilidad": 0.1,
+        "Q5_multi_sonda_penalizada": 0.1,
+        "Q6_loe_empirico": 0.1,
+        "Q7_calibracion_estadistica": 0.1
+      }
+    },
+    {
+      "case_id": "28_caso_fuga_cerebros",
+      "QES": 0.7374999954874681,
+      "components": {
+        "Q0_signo_potencia_edi": {
+          "score": 0.1499999962740562,
+          "evidence": "EDI=+0.025 bajo umbral weak, p=0.997, n=540",
+          "raw": {
+            "edi": 0.024881669387389924,
+            "p_value": 0.9974997499749975,
+            "n": 540
+          }
+        },
+        "Q1a_traza_criptografica": {
+          "score": 1.0,
+          "evidence": "1 archivos con SHA-256",
+          "raw": {}
+        },
+        "Q1b_traza_empirica": {
+          "score": 1.0,
+          "evidence": "datos reales con URL: World Bank net migration tertiary",
+          "raw": {}
+        },
+        "Q2_tamano_efectivo": {
+          "score": 0.9999999586006244,
+          "evidence": "n=540: potencia ≥ 0.80 para detectar EDI weak",
+          "raw": {
+            "n": 540
+          }
+        },
+        "Q3_calidad_sonda": {
+          "score": 0.65,
+          "evidence": "protocolo sin cita disciplinar verificada",
+          "raw": {}
+        },
+        "Q4_reproducibilidad": {
+          "score": 1.0,
+          "evidence": "SETUP_HASH | git 8a684bcb | seed fijo",
+          "raw": {}
+        },
+        "Q5_multi_sonda_penalizada": {
+          "score": 0.25,
+          "evidence": "divergencia alta inter-paradigma (Δ=1.025); al menos una sonda es inadecuada",
+          "raw": {}
+        },
+        "Q6_loe_empirico": {
+          "score": 0.6,
+          "evidence": "LoE 3 (datos estructurados)",
+          "raw": {}
+        },
+        "Q7_calibracion_estadistica": {
+          "score": 0.9,
+          "evidence": "p_block=0.001, FWER=False, SE_HAC=0.13055276096387022",
+          "raw": {}
+        }
+      },
+      "category": "DEMOSTRATIVO",
+      "recommendation": "Apto para afirmación demostrativa con limitaciones explícitas.",
+      "weights": {
+        "Q0_signo_potencia_edi": 0.1,
+        "Q1a_traza_criptografica": 0.1,
+        "Q1b_traza_empirica": 0.15,
+        "Q2_tamano_efectivo": 0.1,
+        "Q3_calidad_sonda": 0.15,
+        "Q4_reproducibilidad": 0.1,
+        "Q5_multi_sonda_penalizada": 0.1,
+        "Q6_loe_empirico": 0.1,
+        "Q7_calibracion_estadistica": 0.1
+      }
+    },
+    {
+      "case_id": "17_caso_oceanos",
+      "QES": 0.7366391472673955,
+      "components": {
+        "Q0_signo_potencia_edi": {
+          "score": 0.0,
+          "evidence": "EDI=-0.015 ≤ 0 (null o negativo), p=1.000, n=70",
+          "raw": {
+            "edi": -0.015399742732341487,
+            "p_value": 1.0,
+            "n": 70
+          }
+        },
+        "Q1a_traza_criptografica": {
+          "score": 1.0,
+          "evidence": "1 archivos con SHA-256",
+          "raw": {}
+        },
+        "Q1b_traza_empirica": {
+          "score": 1.0,
+          "evidence": "datos reales con URL: WMO/PMEL",
+          "raw": {}
+        },
+        "Q2_tamano_efectivo": {
+          "score": 0.791391472673955,
+          "evidence": "n=70: tamaño aceptable; potencia ≈ 0.50",
+          "raw": {
+            "n": 70
+          }
+        },
+        "Q3_calidad_sonda": {
+          "score": 0.85,
+          "evidence": "protocolo con cita disciplinar",
+          "raw": {}
+        },
+        "Q4_reproducibilidad": {
+          "score": 1.0,
+          "evidence": "SETUP_HASH | git 8a684bcb | seed fijo",
+          "raw": {}
+        },
+        "Q5_multi_sonda_penalizada": {
+          "score": 0.65,
+          "evidence": "sonda secundaria con Δ moderado (0.103)",
+          "raw": {}
+        },
+        "Q6_loe_empirico": {
+          "score": 0.6,
+          "evidence": "LoE 3 (datos estructurados)",
+          "raw": {}
+        },
+        "Q7_calibracion_estadistica": {
+          "score": 0.55,
+          "evidence": "p_block=1.0, FWER=False, SE_HAC=0.007600761189914339",
+          "raw": {}
+        }
+      },
+      "category": "DEMOSTRATIVO",
+      "recommendation": "Apto para afirmación demostrativa con limitaciones explícitas.",
+      "weights": {
+        "Q0_signo_potencia_edi": 0.1,
+        "Q1a_traza_criptografica": 0.1,
+        "Q1b_traza_empirica": 0.15,
+        "Q2_tamano_efectivo": 0.1,
+        "Q3_calidad_sonda": 0.15,
+        "Q4_reproducibilidad": 0.1,
+        "Q5_multi_sonda_penalizada": 0.1,
+        "Q6_loe_empirico": 0.1,
+        "Q7_calibracion_estadistica": 0.1
+      }
+    },
+    {
+      "case_id": "26_caso_starlink",
+      "QES": 0.7283209025947758,
+      "components": {
+        "Q0_signo_potencia_edi": {
+          "score": 0.2826636213725594,
+          "evidence": "EDI=+0.689 en rango strong, p=1.000, n=1",
+          "raw": {
+            "edi": 0.6891705119737255,
+            "p_value": 1.0,
+            "n": 1
+          }
+        },
+        "Q1a_traza_criptografica": {
+          "score": 1.0,
+          "evidence": "2 archivos con SHA-256",
+          "raw": {}
+        },
+        "Q1b_traza_empirica": {
+          "score": 1.0,
+          "evidence": "datos reales con URL: CelesTrak",
+          "raw": {}
+        },
+        "Q2_tamano_efectivo": {
+          "score": 0.2755454045751979,
+          "evidence": "n=1: tamaño exploratorio",
+          "raw": {
+            "n": 1
+          }
+        },
+        "Q3_calidad_sonda": {
+          "score": 0.85,
+          "evidence": "protocolo con cita disciplinar",
+          "raw": {}
+        },
+        "Q4_reproducibilidad": {
+          "score": 1.0,
+          "evidence": "SETUP_HASH | git 8a684bcb | seed fijo",
+          "raw": {}
+        },
+        "Q5_multi_sonda_penalizada": {
+          "score": 0.25,
+          "evidence": "divergencia alta inter-paradigma (Δ=1.689); al menos una sonda es inadecuada",
+          "raw": {}
+        },
+        "Q6_loe_empirico": {
+          "score": 0.8,
+          "evidence": "LoE 4 (series consistentes > 10 años)",
+          "raw": {}
+        },
+        "Q7_calibracion_estadistica": {
+          "score": 0.9,
+          "evidence": "p_block=0.001, FWER=False, SE_HAC=0.0038265306122448983",
+          "raw": {}
+        }
+      },
+      "category": "DEMOSTRATIVO",
+      "recommendation": "Apto para afirmación demostrativa con limitaciones explícitas.",
+      "weights": {
+        "Q0_signo_potencia_edi": 0.1,
+        "Q1a_traza_criptografica": 0.1,
+        "Q1b_traza_empirica": 0.15,
+        "Q2_tamano_efectivo": 0.1,
+        "Q3_calidad_sonda": 0.15,
+        "Q4_reproducibilidad": 0.1,
+        "Q5_multi_sonda_penalizada": 0.1,
+        "Q6_loe_empirico": 0.1,
+        "Q7_calibracion_estadistica": 0.1
+      }
+    },
+    {
+      "case_id": "25_caso_acuiferos",
+      "QES": 0.7122215975082749,
+      "components": {
+        "Q0_signo_potencia_edi": {
+          "score": 0.0,
+          "evidence": "EDI=-0.146 ≤ 0 (null o negativo), p=1.000, n=95",
+          "raw": {
+            "edi": -0.14615334806176566,
+            "p_value": 1.0,
+            "n": 95
+          }
+        },
+        "Q1a_traza_criptografica": {
+          "score": 1.0,
+          "evidence": "1 archivos con SHA-256",
+          "raw": {}
+        },
+        "Q1b_traza_empirica": {
+          "score": 1.0,
+          "evidence": "datos reales con URL: USGS GRACE proxy",
+          "raw": {}
+        },
+        "Q2_tamano_efectivo": {
+          "score": 0.8972159750827483,
+          "evidence": "n=95: tamaño aceptable; potencia ≈ 0.50",
+          "raw": {
+            "n": 95
+          }
+        },
+        "Q3_calidad_sonda": {
+          "score": 0.65,
+          "evidence": "protocolo sin cita disciplinar verificada",
+          "raw": {}
+        },
+        "Q4_reproducibilidad": {
+          "score": 1.0,
+          "evidence": "SETUP_HASH | git 8a684bcb | seed fijo",
+          "raw": {}
+        },
+        "Q5_multi_sonda_penalizada": {
+          "score": 0.25,
+          "evidence": "divergencia alta inter-paradigma (Δ=0.552); al menos una sonda es inadecuada",
+          "raw": {}
+        },
+        "Q6_loe_empirico": {
+          "score": 0.6,
+          "evidence": "LoE 3 (datos estructurados)",
+          "raw": {}
+        },
+        "Q7_calibracion_estadistica": {
+          "score": 0.9,
+          "evidence": "p_block=0.001, FWER=False, SE_HAC=0.015650526544809105",
+          "raw": {}
+        }
+      },
+      "category": "DEMOSTRATIVO",
+      "recommendation": "Apto para afirmación demostrativa con limitaciones explícitas.",
+      "weights": {
+        "Q0_signo_potencia_edi": 0.1,
+        "Q1a_traza_criptografica": 0.1,
+        "Q1b_traza_empirica": 0.15,
+        "Q2_tamano_efectivo": 0.1,
+        "Q3_calidad_sonda": 0.15,
+        "Q4_reproducibilidad": 0.1,
+        "Q5_multi_sonda_penalizada": 0.1,
+        "Q6_loe_empirico": 0.1,
+        "Q7_calibracion_estadistica": 0.1
+      }
+    },
+    {
+      "case_id": "36_nfkb",
+      "QES": 0.711716193079988,
+      "components": {
+        "Q0_signo_potencia_edi": {
+          "score": 0.5613648528219971,
+          "evidence": "EDI=+0.587 en rango strong, p=0.000, n=0",
+          "raw": {
+            "edi": 0.5873739314271895,
+            "p_value": 0.0,
+            "n": 0
+          }
+        },
+        "Q1a_traza_criptografica": {
+          "score": 1.0,
+          "evidence": "1 archivos con SHA-256",
+          "raw": {}
+        },
+        "Q1b_traza_empirica": {
+          "score": 0.5,
+          "evidence": "sintético derivado de literatura",
+          "raw": {}
+        },
+        "Q2_tamano_efectivo": {
+          "score": 0.8807970779778823,
+          "evidence": "n=90: tamaño aceptable; potencia ≈ 0.50",
+          "raw": {
+            "n": 90
+          }
+        },
+        "Q3_calidad_sonda": {
+          "score": 0.85,
+          "evidence": "protocolo con cita disciplinar",
+          "raw": {}
+        },
+        "Q4_reproducibilidad": {
+          "score": 1.0,
+          "evidence": "SETUP_HASH | git a24f6dd1 | seed fijo",
+          "raw": {}
+        },
+        "Q5_multi_sonda_penalizada": {
+          "score": 0.25,
+          "evidence": "divergencia alta inter-paradigma (Δ=1.587); al menos una sonda es inadecuada",
+          "raw": {}
+        },
+        "Q6_loe_empirico": {
+          "score": 0.4,
+          "evidence": "LoE 1 (especulativo o sintético)",
+          "raw": {}
+        },
+        "Q7_calibracion_estadistica": {
+          "score": 1.0,
+          "evidence": "p_block=0.0003333333333333333, FWER=True, SE_HAC=0.0018615338189773975",
+          "raw": {}
+        }
+      },
+      "category": "DEMOSTRATIVO",
+      "recommendation": "Apto para afirmación demostrativa con limitaciones explícitas.",
+      "weights": {
+        "Q0_signo_potencia_edi": 0.1,
+        "Q1a_traza_criptografica": 0.1,
+        "Q1b_traza_empirica": 0.15,
+        "Q2_tamano_efectivo": 0.1,
+        "Q3_calidad_sonda": 0.15,
+        "Q4_reproducibilidad": 0.1,
+        "Q5_multi_sonda_penalizada": 0.1,
+        "Q6_loe_empirico": 0.1,
+        "Q7_calibracion_estadistica": 0.1
+      }
+    },
+    {
+      "case_id": "29_caso_iot",
+      "QES": 0.7102540668798145,
+      "components": {
+        "Q0_signo_potencia_edi": {
+          "score": 0.0,
+          "evidence": "EDI=-0.876 ≤ 0 (null o negativo), p=1.000, n=15",
+          "raw": {
+            "edi": -0.8760101554802692,
+            "p_value": 1.0,
+            "n": 15
+          }
+        },
+        "Q1a_traza_criptografica": {
+          "score": 1.0,
+          "evidence": "1 archivos con SHA-256",
+          "raw": {}
+        },
+        "Q1b_traza_empirica": {
+          "score": 1.0,
+          "evidence": "datos reales con URL: Statista IoT proxy + ITU",
+          "raw": {}
+        },
+        "Q2_tamano_efectivo": {
+          "score": 0.3775406687981454,
+          "evidence": "n=15: tamaño limitado",
+          "raw": {
+            "n": 15
+          }
+        },
+        "Q3_calidad_sonda": {
+          "score": 0.85,
+          "evidence": "protocolo con cita disciplinar",
+          "raw": {}
+        },
+        "Q4_reproducibilidad": {
+          "score": 1.0,
+          "evidence": "SETUP_HASH | git 8a684bcb | seed fijo",
+          "raw": {}
+        },
+        "Q5_multi_sonda_penalizada": {
+          "score": 0.45,
+          "evidence": "sonda secundaria con divergencia (Δ=0.260)",
+          "raw": {}
+        },
+        "Q6_loe_empirico": {
+          "score": 0.6,
+          "evidence": "LoE 3 (datos estructurados)",
+          "raw": {}
+        },
+        "Q7_calibracion_estadistica": {
+          "score": 0.9,
+          "evidence": "p_block=0.0003333333333333333, FWER=False, SE_HAC=0.19306940139373463",
+          "raw": {}
+        }
+      },
+      "category": "DEMOSTRATIVO",
+      "recommendation": "Apto para afirmación demostrativa con limitaciones explícitas.",
+      "weights": {
+        "Q0_signo_potencia_edi": 0.1,
+        "Q1a_traza_criptografica": 0.1,
+        "Q1b_traza_empirica": 0.15,
+        "Q2_tamano_efectivo": 0.1,
+        "Q3_calidad_sonda": 0.15,
+        "Q4_reproducibilidad": 0.1,
+        "Q5_multi_sonda_penalizada": 0.1,
+        "Q6_loe_empirico": 0.1,
+        "Q7_calibracion_estadistica": 0.1
+      }
+    },
+    {
+      "case_id": "35_ciclo_celular",
+      "QES": 0.684875247495328,
+      "components": {
+        "Q0_signo_potencia_edi": {
+          "score": 0.39295539697539794,
+          "evidence": "EDI=+0.131 en rango weak, p=0.000, n=0",
+          "raw": {
+            "edi": 0.1306799800346662,
+            "p_value": 0.0,
+            "n": 0
+          }
+        },
+        "Q1a_traza_criptografica": {
+          "score": 1.0,
+          "evidence": "1 archivos con SHA-256",
+          "raw": {}
+        },
+        "Q1b_traza_empirica": {
+          "score": 0.3,
+          "evidence": "sintético ad-hoc: Sintético Tyson-Novak",
+          "raw": {}
+        },
+        "Q2_tamano_efectivo": {
+          "score": 0.8807970779778823,
+          "evidence": "n=90: tamaño aceptable; potencia ≈ 0.50",
+          "raw": {
+            "n": 90
+          }
+        },
+        "Q3_calidad_sonda": {
+          "score": 0.85,
+          "evidence": "protocolo con cita disciplinar",
+          "raw": {}
+        },
+        "Q4_reproducibilidad": {
+          "score": 1.0,
+          "evidence": "SETUP_HASH | git a24f6dd1 | seed fijo",
+          "raw": {}
+        },
+        "Q5_multi_sonda_penalizada": {
+          "score": 0.45,
+          "evidence": "sonda secundaria con divergencia (Δ=0.241)",
+          "raw": {}
+        },
+        "Q6_loe_empirico": {
+          "score": 0.4,
+          "evidence": "LoE 1 (especulativo o sintético)",
+          "raw": {}
+        },
+        "Q7_calibracion_estadistica": {
+          "score": 1.0,
+          "evidence": "p_block=0.003, FWER=True, SE_HAC=0.014896610205644025",
+          "raw": {}
+        }
+      },
+      "category": "PROGRAMÁTICO",
+      "recommendation": "Modo programático con criterios de elevación declarados.",
+      "weights": {
+        "Q0_signo_potencia_edi": 0.1,
+        "Q1a_traza_criptografica": 0.1,
+        "Q1b_traza_empirica": 0.15,
+        "Q2_tamano_efectivo": 0.1,
+        "Q3_calidad_sonda": 0.15,
+        "Q4_reproducibilidad": 0.1,
+        "Q5_multi_sonda_penalizada": 0.1,
+        "Q6_loe_empirico": 0.1,
+        "Q7_calibracion_estadistica": 0.1
+      }
+    },
+    {
+      "case_id": "32_espin_orbita",
+      "QES": 0.6753939329015641,
+      "components": {
+        "Q0_signo_potencia_edi": {
+          "score": 0.5613648528219971,
+          "evidence": "EDI=+0.825 en rango strong, p=0.000, n=0",
+          "raw": {
+            "edi": 0.8250879834716865,
+            "p_value": 0.0,
+            "n": 0
+          }
+        },
+        "Q1a_traza_criptografica": {
+          "score": 1.0,
+          "evidence": "1 archivos con SHA-256",
+          "raw": {}
+        },
+        "Q1b_traza_empirica": {
+          "score": 0.3,
+          "evidence": "sintético ad-hoc: Sintético Bloch — parámetros NV-center",
+          "raw": {}
+        },
+        "Q2_tamano_efectivo": {
+          "score": 0.8175744761936437,
+          "evidence": "n=75: tamaño aceptable; potencia ≈ 0.50",
+          "raw": {
+            "n": 75
+          }
+        },
+        "Q3_calidad_sonda": {
+          "score": 0.85,
+          "evidence": "protocolo con cita disciplinar",
+          "raw": {}
+        },
+        "Q4_reproducibilidad": {
+          "score": 1.0,
+          "evidence": "SETUP_HASH | git a24f6dd1 | seed fijo",
+          "raw": {}
+        },
+        "Q5_multi_sonda_penalizada": {
+          "score": 0.25,
+          "evidence": "divergencia alta inter-paradigma (Δ=1.570); al menos una sonda es inadecuada",
+          "raw": {}
+        },
+        "Q6_loe_empirico": {
+          "score": 0.4,
+          "evidence": "LoE 1 (especulativo o sintético)",
+          "raw": {}
+        },
+        "Q7_calibracion_estadistica": {
+          "score": 1.0,
+          "evidence": "p_block=0.0003333333333333333, FWER=True, SE_HAC=0.020608882633478556",
+          "raw": {}
+        }
+      },
+      "category": "PROGRAMÁTICO",
+      "recommendation": "Modo programático con criterios de elevación declarados.",
+      "weights": {
+        "Q0_signo_potencia_edi": 0.1,
+        "Q1a_traza_criptografica": 0.1,
+        "Q1b_traza_empirica": 0.15,
+        "Q2_tamano_efectivo": 0.1,
+        "Q3_calidad_sonda": 0.15,
+        "Q4_reproducibilidad": 0.1,
+        "Q5_multi_sonda_penalizada": 0.1,
+        "Q6_loe_empirico": 0.1,
+        "Q7_calibracion_estadistica": 0.1
+      }
+    },
+    {
+      "case_id": "30_caso_behavioral_dynamics",
+      "QES": 0.6475000000000001,
+      "components": {
+        "Q0_signo_potencia_edi": {
+          "score": 0.35,
+          "evidence": "EDI=+0.255 en rango weak, p=0.517, n=3000",
+          "raw": {
+            "edi": 0.25545831158034127,
+            "p_value": 0.517,
+            "n": 3000
+          }
+        },
+        "Q1a_traza_criptografica": {
+          "score": 1.0,
+          "evidence": "2 archivos con SHA-256",
+          "raw": {}
+        },
+        "Q1b_traza_empirica": {
+          "score": 0.3,
+          "evidence": "sintético ad-hoc: Sintético generado por sistema completo Fajen-Warren",
+          "raw": {}
+        },
+        "Q2_tamano_efectivo": {
+          "score": 1.0,
+          "evidence": "n=3000: potencia ≥ 0.80 para detectar EDI weak",
+          "raw": {
+            "n": 3000
+          }
+        },
+        "Q3_calidad_sonda": {
+          "score": 0.85,
+          "evidence": "protocolo con cita disciplinar",
+          "raw": {}
+        },
+        "Q4_reproducibilidad": {
+          "score": 1.0,
+          "evidence": "SETUP_HASH | git 2ac549bc | seed fijo",
+          "raw": {}
+        },
+        "Q5_multi_sonda_penalizada": {
+          "score": 0.45,
+          "evidence": "sonda secundaria con divergencia (Δ=0.175)",
+          "raw": {}
+        },
+        "Q6_loe_empirico": {
+          "score": 0.4,
+          "evidence": "LoE 2 (datos digitales con ruido alto)",
+          "raw": {}
+        },
+        "Q7_calibracion_estadistica": {
+          "score": 0.55,
+          "evidence": "p_block=0.9783333333333334, FWER=False, SE_HAC=0.011635642651372648",
+          "raw": {}
+        }
+      },
+      "category": "PROGRAMÁTICO",
+      "recommendation": "Modo programático con criterios de elevación declarados. Función específica: caso ancla canónico, declarado con circularidad detectada en N2 (Fajen-Warren) y confirmada cuantitativamente por block bootstrap. Piloto metodológico hasta datos humanos reales (VENLab/WALK-MS).",
+      "weights": {
+        "Q0_signo_potencia_edi": 0.1,
+        "Q1a_traza_criptografica": 0.1,
+        "Q1b_traza_empirica": 0.15,
+        "Q2_tamano_efectivo": 0.1,
+        "Q3_calidad_sonda": 0.15,
+        "Q4_reproducibilidad": 0.1,
+        "Q5_multi_sonda_penalizada": 0.1,
+        "Q6_loe_empirico": 0.1,
+        "Q7_calibracion_estadistica": 0.1
+      }
+    },
+    {
+      "case_id": "08_caso_falsacion_observabilidad",
+      "QES": 0.6278203174946048,
+      "components": {
+        "Q0_signo_potencia_edi": {
+          "score": 0.0,
+          "evidence": "EDI=-1.000 ≤ 0 (null o negativo), p=1.000, n=97",
+          "raw": {
+            "edi": -1.0,
+            "p_value": 1.0,
+            "n": 97
+          }
+        },
+        "Q1a_traza_criptografica": {
+          "score": 1.0,
+          "evidence": "1 archivos con SHA-256",
+          "raw": {}
+        },
+        "Q1b_traza_empirica": {
+          "score": 0.3,
+          "evidence": "sintético ad-hoc: Sistema con variable latente sintético",
+          "raw": {}
+        },
+        "Q2_tamano_efectivo": {
+          "score": 0.9032031749460475,
+          "evidence": "n=97: tamaño aceptable; potencia ≈ 0.50",
+          "raw": {
+            "n": 97
+          }
+        },
+        "Q3_calidad_sonda": {
+          "score": 0.65,
+          "evidence": "protocolo sin cita disciplinar verificada",
+          "raw": {}
+        },
+        "Q4_reproducibilidad": {
+          "score": 1.0,
+          "evidence": "SETUP_HASH | git ed2571b4 | seed fijo",
+          "raw": {}
+        },
+        "Q5_multi_sonda_penalizada": {
+          "score": 0.85,
+          "evidence": "convergencia inter-paradigma sobre proxys (Δ=0.000)",
+          "raw": {}
+        },
+        "Q6_loe_empirico": {
+          "score": 0.2,
+          "evidence": "LoE 1 (especulativo o sintético)",
+          "raw": {}
+        },
+        "Q7_calibracion_estadistica": {
+          "score": 0.9,
+          "evidence": "p_block=0.002, FWER=False, SE_HAC=0.2702115726874535",
+          "raw": {}
+        }
+      },
+      "category": "PROGRAMÁTICO",
+      "recommendation": "Modo programático con criterios de elevación declarados. Función específica: control de falsación. El caso debe rechazarse bajo FWER por diseño.",
+      "weights": {
+        "Q0_signo_potencia_edi": 0.1,
+        "Q1a_traza_criptografica": 0.1,
+        "Q1b_traza_empirica": 0.15,
+        "Q2_tamano_efectivo": 0.1,
+        "Q3_calidad_sonda": 0.15,
+        "Q4_reproducibilidad": 0.1,
+        "Q5_multi_sonda_penalizada": 0.1,
+        "Q6_loe_empirico": 0.1,
+        "Q7_calibracion_estadistica": 0.1
+      }
+    },
+    {
+      "case_id": "07_caso_falsacion_no_estacionariedad",
+      "QES": 0.6174999999928882,
+      "components": {
+        "Q0_signo_potencia_edi": {
+          "score": 0.0,
+          "evidence": "EDI=-0.882 ≤ 0 (null o negativo), p=1.000, n=731",
+          "raw": {
+            "edi": -0.8819209901612093,
+            "p_value": 1.0,
+            "n": 731
+          }
+        },
+        "Q1a_traza_criptografica": {
+          "score": 1.0,
+          "evidence": "1 archivos con SHA-256",
+          "raw": {}
+        },
+        "Q1b_traza_empirica": {
+          "score": 0.3,
+          "evidence": "sintético ad-hoc: Random walk con drift sintético",
+          "raw": {}
+        },
+        "Q2_tamano_efectivo": {
+          "score": 0.9999999999288811,
+          "evidence": "n=731: potencia ≥ 0.80 para detectar EDI weak",
+          "raw": {
+            "n": 731
+          }
+        },
+        "Q3_calidad_sonda": {
+          "score": 0.65,
+          "evidence": "protocolo sin cita disciplinar verificada",
+          "raw": {}
+        },
+        "Q4_reproducibilidad": {
+          "score": 1.0,
+          "evidence": "SETUP_HASH | git ed2571b4 | seed fijo",
+          "raw": {}
+        },
+        "Q5_multi_sonda_penalizada": {
+          "score": 0.65,
+          "evidence": "sonda secundaria con Δ moderado (0.118)",
+          "raw": {}
+        },
+        "Q6_loe_empirico": {
+          "score": 0.2,
+          "evidence": "LoE 1 (especulativo o sintético)",
+          "raw": {}
+        },
+        "Q7_calibracion_estadistica": {
+          "score": 0.9,
+          "evidence": "p_block=0.0003333333333333333, FWER=False, SE_HAC=0.025730707973380756",
+          "raw": {}
+        }
+      },
+      "category": "PROGRAMÁTICO",
+      "recommendation": "Modo programático con criterios de elevación declarados. Función específica: control de falsación. El caso debe rechazarse bajo FWER por diseño.",
+      "weights": {
+        "Q0_signo_potencia_edi": 0.1,
+        "Q1a_traza_criptografica": 0.1,
+        "Q1b_traza_empirica": 0.15,
+        "Q2_tamano_efectivo": 0.1,
+        "Q3_calidad_sonda": 0.15,
+        "Q4_reproducibilidad": 0.1,
+        "Q5_multi_sonda_penalizada": 0.1,
+        "Q6_loe_empirico": 0.1,
+        "Q7_calibracion_estadistica": 0.1
+      }
+    },
+    {
+      "case_id": "41_caso_wolfram_extendido",
+      "QES": 0.6021552548698437,
+      "components": {
+        "Q0_signo_potencia_edi": {
+          "score": 0.0,
+          "evidence": "EDI=-0.275 ≤ 0 (null o negativo), p=0.574, n=200",
+          "raw": {
+            "edi": -0.2750861300597808,
+            "p_value": 0.5735,
+            "n": 200
+          }
+        },
+        "Q1a_traza_criptografica": {
+          "score": 0.5,
+          "evidence": "FETCH_MANIFEST presente, sin archivos listados",
+          "raw": {}
+        },
+        "Q1b_traza_empirica": {
+          "score": 0.3,
+          "evidence": "sintético ad-hoc: Sintético — autómatas celulares Rule 30/90/110/184",
+          "raw": {}
+        },
+        "Q2_tamano_efectivo": {
+          "score": 0.9965525486984363,
+          "evidence": "n=200: potencia ≥ 0.80 para detectar EDI weak",
+          "raw": {
+            "n": 200
+          }
+        },
+        "Q3_calidad_sonda": {
+          "score": 0.85,
+          "evidence": "protocolo con cita disciplinar",
+          "raw": {}
+        },
+        "Q4_reproducibilidad": {
+          "score": 1.0,
+          "evidence": "SETUP_HASH | git a05767f0 | seed fijo",
+          "raw": {}
+        },
+        "Q5_multi_sonda_penalizada": {
+          "score": 0.65,
+          "evidence": "sonda secundaria con Δ moderado (0.088)",
+          "raw": {}
+        },
+        "Q6_loe_empirico": {
+          "score": 0.6,
+          "evidence": "LoE 3 (datos estructurados)",
+          "raw": {}
+        },
+        "Q7_calibracion_estadistica": {
+          "score": 0.55,
+          "evidence": "p_block=1.0, FWER=False, SE_HAC=0.08424750975053735",
+          "raw": {}
+        }
+      },
+      "category": "PROGRAMÁTICO",
+      "recommendation": "Modo programático con criterios de elevación declarados. Función específica: discriminación contra Wolfram. EDI agregado no debe converger inter-paradigma por diseño.",
+      "weights": {
+        "Q0_signo_potencia_edi": 0.1,
+        "Q1a_traza_criptografica": 0.1,
+        "Q1b_traza_empirica": 0.15,
+        "Q2_tamano_efectivo": 0.1,
+        "Q3_calidad_sonda": 0.15,
+        "Q4_reproducibilidad": 0.1,
+        "Q5_multi_sonda_penalizada": 0.1,
+        "Q6_loe_empirico": 0.1,
+        "Q7_calibracion_estadistica": 0.1
+      }
+    },
+    {
+      "case_id": "33_villin_headpiece",
+      "QES": 0.6005797077977882,
+      "components": {
+        "Q0_signo_potencia_edi": {
+          "score": 0.0,
+          "evidence": "EDI=+0.000 ≤ 0 (null o negativo), p=0.826, n=0",
+          "raw": {
+            "edi": 0.0,
+            "p_value": 0.8258258258258259,
+            "n": 0
+          }
+        },
+        "Q1a_traza_criptografica": {
+          "score": 1.0,
+          "evidence": "1 archivos con SHA-256",
+          "raw": {}
+        },
+        "Q1b_traza_empirica": {
+          "score": 0.3,
+          "evidence": "sintético ad-hoc: Sintético MSM 2-estados — Anton 2 Shaw 2010",
+          "raw": {}
+        },
+        "Q2_tamano_efectivo": {
+          "score": 0.8807970779778823,
+          "evidence": "n=90: tamaño aceptable; potencia ≈ 0.50",
+          "raw": {
+            "n": 90
+          }
+        },
+        "Q3_calidad_sonda": {
+          "score": 0.85,
+          "evidence": "protocolo con cita disciplinar",
+          "raw": {}
+        },
+        "Q4_reproducibilidad": {
+          "score": 1.0,
+          "evidence": "SETUP_HASH | git a24f6dd1 | seed fijo",
+          "raw": {}
+        },
+        "Q5_multi_sonda_penalizada": {
+          "score": 0.45,
+          "evidence": "sonda secundaria con divergencia (Δ=0.184)",
+          "raw": {}
+        },
+        "Q6_loe_empirico": {
+          "score": 0.4,
+          "evidence": "LoE 1 (especulativo o sintético)",
+          "raw": {}
+        },
+        "Q7_calibracion_estadistica": {
+          "score": 0.55,
+          "evidence": "p_block=0.5113333333333333, FWER=False, SE_HAC=0.00038265306122448983",
+          "raw": {}
+        }
+      },
+      "category": "PROGRAMÁTICO",
+      "recommendation": "Modo programático con criterios de elevación declarados. Función específica: null honesto inter-escala. La sonda de equilibrio MSM dos estados no captura la dinámica completa de plegamiento.",
+      "weights": {
+        "Q0_signo_potencia_edi": 0.1,
+        "Q1a_traza_criptografica": 0.1,
+        "Q1b_traza_empirica": 0.15,
+        "Q2_tamano_efectivo": 0.1,
+        "Q3_calidad_sonda": 0.15,
+        "Q4_reproducibilidad": 0.1,
+        "Q5_multi_sonda_penalizada": 0.1,
+        "Q6_loe_empirico": 0.1,
+        "Q7_calibracion_estadistica": 0.1
+      }
+    },
+    {
+      "case_id": "23_caso_erosion_dialectica",
+      "QES": 0.5899463677010546,
+      "components": {
+        "Q0_signo_potencia_edi": {
+          "score": 0.0,
+          "evidence": "EDI=-1.000 ≤ 0 (null o negativo), p=1.000, n=8",
+          "raw": {
+            "edi": -1.0,
+            "p_value": 1.0,
+            "n": 8
+          }
+        },
+        "Q1a_traza_criptografica": {
+          "score": 1.0,
+          "evidence": "1 archivos con SHA-256",
+          "raw": {}
+        },
+        "Q1b_traza_empirica": {
+          "score": 0.3,
+          "evidence": "sintético ad-hoc: Sintético de proxy literario",
+          "raw": {}
+        },
+        "Q2_tamano_efectivo": {
+          "score": 0.3244636770105458,
+          "evidence": "n=8: tamaño exploratorio",
+          "raw": {
+            "n": 8
+          }
+        },
+        "Q3_calidad_sonda": {
+          "score": 0.65,
+          "evidence": "protocolo sin cita disciplinar verificada",
+          "raw": {}
+        },
+        "Q4_reproducibilidad": {
+          "score": 1.0,
+          "evidence": "SETUP_HASH | git 8a684bcb | seed fijo",
+          "raw": {}
+        },
+        "Q5_multi_sonda_penalizada": {
+          "score": 0.85,
+          "evidence": "convergencia inter-paradigma sobre proxys (Δ=0.000)",
+          "raw": {}
+        },
+        "Q6_loe_empirico": {
+          "score": 0.4,
+          "evidence": "LoE 2 (datos digitales con ruido alto)",
+          "raw": {}
+        },
+        "Q7_calibracion_estadistica": {
+          "score": 0.9,
+          "evidence": "p_block=0.0003333333333333333, FWER=False, SE_HAC=0.9197047527612628",
+          "raw": {}
+        }
+      },
+      "category": "PROGRAMÁTICO",
+      "recommendation": "Modo programático con criterios de elevación declarados. Función específica: caso límite del aparato. Documenta operativamente los límites declarados en cap 04-02.",
+      "weights": {
+        "Q0_signo_potencia_edi": 0.1,
+        "Q1a_traza_criptografica": 0.1,
+        "Q1b_traza_empirica": 0.15,
+        "Q2_tamano_efectivo": 0.1,
+        "Q3_calidad_sonda": 0.15,
+        "Q4_reproducibilidad": 0.1,
+        "Q5_multi_sonda_penalizada": 0.1,
+        "Q6_loe_empirico": 0.1,
+        "Q7_calibracion_estadistica": 0.1
+      }
+    },
+    {
+      "case_id": "02_caso_conciencia",
+      "QES": 0.5606812227831834,
+      "components": {
+        "Q0_signo_potencia_edi": {
+          "score": 0.0,
+          "evidence": "EDI=-0.116 ≤ 0 (null o negativo), p=0.924, n=9",
+          "raw": {
+            "edi": -0.11646132488773708,
+            "p_value": 0.923923923923924,
+            "n": 9
+          }
+        },
+        "Q1a_traza_criptografica": {
+          "score": 1.0,
+          "evidence": "1 archivos con SHA-256",
+          "raw": {}
+        },
+        "Q1b_traza_empirica": {
+          "score": 0.5,
+          "evidence": "sintético derivado de literatura",
+          "raw": {}
+        },
+        "Q2_tamano_efectivo": {
+          "score": 0.3318122278318339,
+          "evidence": "n=9: tamaño exploratorio",
+          "raw": {
+            "n": 9
+          }
+        },
+        "Q3_calidad_sonda": {
+          "score": 0.65,
+          "evidence": "protocolo sin cita disciplinar verificada",
+          "raw": {}
+        },
+        "Q4_reproducibilidad": {
+          "score": 1.0,
+          "evidence": "SETUP_HASH | git ed2571b4 | seed fijo",
+          "raw": {}
+        },
+        "Q5_multi_sonda_penalizada": {
+          "score": 0.25,
+          "evidence": "divergencia alta inter-paradigma (Δ=0.883); al menos una sonda es inadecuada",
+          "raw": {}
+        },
+        "Q6_loe_empirico": {
+          "score": 0.4,
+          "evidence": "LoE 2 (datos digitales con ruido alto)",
+          "raw": {}
+        },
+        "Q7_calibracion_estadistica": {
+          "score": 0.9,
+          "evidence": "p_block=0.010666666666666666, FWER=False, SE_HAC=0.0425719518532343",
+          "raw": {}
+        }
+      },
+      "category": "PROGRAMÁTICO",
+      "recommendation": "Modo programático con criterios de elevación declarados. Función específica: caso límite del aparato. Documenta operativamente los límites declarados en cap 04-02.",
+      "weights": {
+        "Q0_signo_potencia_edi": 0.1,
+        "Q1a_traza_criptografica": 0.1,
+        "Q1b_traza_empirica": 0.15,
+        "Q2_tamano_efectivo": 0.1,
+        "Q3_calidad_sonda": 0.15,
+        "Q4_reproducibilidad": 0.1,
+        "Q5_multi_sonda_penalizada": 0.1,
+        "Q6_loe_empirico": 0.1,
+        "Q7_calibracion_estadistica": 0.1
+      }
+    },
+    {
+      "case_id": "38_locomocion_alternativa",
+      "QES": 0.5442574476193645,
+      "components": {
+        "Q0_signo_potencia_edi": {
+          "score": 0.0,
+          "evidence": "EDI=-1.341 ≤ 0 (null o negativo), p=1.000, n=0",
+          "raw": {
+            "edi": -1.3412282437650878,
+            "p_value": 1.0,
+            "n": 0
+          }
+        },
+        "Q1a_traza_criptografica": {
+          "score": 1.0,
+          "evidence": "1 archivos con SHA-256",
+          "raw": {}
+        },
+        "Q1b_traza_empirica": {
+          "score": 0.3,
+          "evidence": "sintético ad-hoc: Sintético τ-dot — Lee 1976 modelo simplificado",
+          "raw": {}
+        },
+        "Q2_tamano_efectivo": {
+          "score": 0.8175744761936437,
+          "evidence": "n=75: tamaño aceptable; potencia ≈ 0.50",
+          "raw": {
+            "n": 75
+          }
+        },
+        "Q3_calidad_sonda": {
+          "score": 0.65,
+          "evidence": "protocolo sin cita disciplinar verificada",
+          "raw": {}
+        },
+        "Q4_reproducibilidad": {
+          "score": 1.0,
+          "evidence": "SETUP_HASH | git a24f6dd1 | seed fijo",
+          "raw": {}
+        },
+        "Q5_multi_sonda_penalizada": {
+          "score": 0.25,
+          "evidence": "divergencia alta inter-paradigma (Δ=0.489); al menos una sonda es inadecuada",
+          "raw": {}
+        },
+        "Q6_loe_empirico": {
+          "score": 0.4,
+          "evidence": "LoE 1 (especulativo o sintético)",
+          "raw": {}
+        },
+        "Q7_calibracion_estadistica": {
+          "score": 0.55,
+          "evidence": "p_block=1.0, FWER=False, SE_HAC=0.11403549787751285",
+          "raw": {}
+        }
+      },
+      "category": "PILOTO",
+      "recommendation": "Caso piloto con limitaciones explícitas. Función específica: failure mode declarado de la hipótesis tau-dot, documentando que no es el modelo correcto.",
+      "weights": {
+        "Q0_signo_potencia_edi": 0.1,
+        "Q1a_traza_criptografica": 0.1,
+        "Q1b_traza_empirica": 0.15,
+        "Q2_tamano_efectivo": 0.1,
+        "Q3_calidad_sonda": 0.15,
+        "Q4_reproducibilidad": 0.1,
+        "Q5_multi_sonda_penalizada": 0.1,
+        "Q6_loe_empirico": 0.1,
+        "Q7_calibracion_estadistica": 0.1
+      }
+    },
+    {
+      "case_id": "06_caso_falsacion_exogeneidad",
+      "QES": 0.5424999999922481,
+      "components": {
+        "Q0_signo_potencia_edi": {
+          "score": 0.1499999999935993,
+          "evidence": "EDI=+0.055 bajo umbral weak, p=1.000, n=731",
+          "raw": {
+            "edi": 0.05505918915717987,
+            "p_value": 1.0,
+            "n": 731
+          }
+        },
+        "Q1a_traza_criptografica": {
+          "score": 1.0,
+          "evidence": "1 archivos con SHA-256",
+          "raw": {}
+        },
+        "Q1b_traza_empirica": {
+          "score": 0.2,
+          "evidence": "control de falsación (sintético por diseño)",
+          "raw": {}
+        },
+        "Q2_tamano_efectivo": {
+          "score": 0.9999999999288811,
+          "evidence": "n=731: potencia ≥ 0.80 para detectar EDI weak",
+          "raw": {
+            "n": 731
+          }
+        },
+        "Q3_calidad_sonda": {
+          "score": 0.65,
+          "evidence": "protocolo sin cita disciplinar verificada",
+          "raw": {}
+        },
+        "Q4_reproducibilidad": {
+          "score": 1.0,
+          "evidence": "SETUP_HASH | git ed2571b4 | seed fijo",
+          "raw": {}
+        },
+        "Q5_multi_sonda_penalizada": {
+          "score": 0.25,
+          "evidence": "divergencia alta inter-paradigma (Δ=1.055); al menos una sonda es inadecuada",
+          "raw": {}
+        },
+        "Q6_loe_empirico": {
+          "score": 0.2,
+          "evidence": "LoE 1 (especulativo o sintético)",
+          "raw": {}
+        },
+        "Q7_calibracion_estadistica": {
+          "score": 0.55,
+          "evidence": "p_block=0.3873333333333333, FWER=False, SE_HAC=0.01530563289866194",
+          "raw": {}
+        }
+      },
+      "category": "PILOTO",
+      "recommendation": "Caso piloto con limitaciones explícitas. Función específica: control de falsación. El caso debe rechazarse bajo FWER por diseño.",
+      "weights": {
+        "Q0_signo_potencia_edi": 0.1,
+        "Q1a_traza_criptografica": 0.1,
+        "Q1b_traza_empirica": 0.15,
+        "Q2_tamano_efectivo": 0.1,
+        "Q3_calidad_sonda": 0.15,
+        "Q4_reproducibilidad": 0.1,
+        "Q5_multi_sonda_penalizada": 0.1,
+        "Q6_loe_empirico": 0.1,
+        "Q7_calibracion_estadistica": 0.1
+      }
+    }
+  ]
+}

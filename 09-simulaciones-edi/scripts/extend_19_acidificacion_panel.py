@@ -75,7 +75,7 @@ def baseline_random(co2_atm: np.ndarray, observed: np.ndarray, seed: int = SEED)
 
 def main() -> int:
     print("=" * 72)
-    print("Caso 19 — Acidificación oceánica: panel multi-región V5.5")
+    print("Caso 19 — Acidificación oceánica: panel multi-región")
     print("=" * 72)
 
     panel = _generate_regions_panel()

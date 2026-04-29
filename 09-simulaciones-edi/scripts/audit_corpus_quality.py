@@ -60,20 +60,22 @@ def main() -> int:
     for r in results:
         cat_counts[r["category"]] = cat_counts.get(r["category"], 0) + 1
 
-    print(f"{'Caso':<42}{'QES':>7}  Categoría        Q1   Q2   Q3   Q4   Q5   Q6   Q7")
-    print("-" * 90)
+    print(f"{'Caso':<42}{'QES':>7}  Categoría        Q0   Q1a  Q1b  Q2   Q3   Q4   Q5   Q6   Q7")
+    print("-" * 105)
     for r in results:
         comps = r["components"]
-        q1 = comps["Q1_trazabilidad_datos"]["score"]
+        q0 = comps["Q0_signo_potencia_edi"]["score"]
+        q1a = comps["Q1a_traza_criptografica"]["score"]
+        q1b = comps["Q1b_traza_empirica"]["score"]
         q2 = comps["Q2_tamano_efectivo"]["score"]
         q3 = comps["Q3_calidad_sonda"]["score"]
         q4 = comps["Q4_reproducibilidad"]["score"]
-        q5 = comps["Q5_convergencia_multisonda"]["score"]
+        q5 = comps["Q5_multi_sonda_penalizada"]["score"]
         q6 = comps["Q6_loe_empirico"]["score"]
         q7 = comps["Q7_calibracion_estadistica"]["score"]
         print(
             f"{r['case_id']:<42}{r['QES']:>6.3f}  {r['category']:<14} "
-            f"{q1:.2f} {q2:.2f} {q3:.2f} {q4:.2f} {q5:.2f} {q6:.2f} {q7:.2f}"
+            f"{q0:.2f} {q1a:.2f} {q1b:.2f} {q2:.2f} {q3:.2f} {q4:.2f} {q5:.2f} {q6:.2f} {q7:.2f}"
         )
 
     print("\n" + "=" * 90)
@@ -131,18 +133,20 @@ def main() -> int:
         "",
         "## Tabla por caso (ordenada de mayor a menor QES)",
         "",
-        "| Caso | QES | Categoría | Q1 trz | Q2 n | Q3 sonda | Q4 repr | Q5 multi | Q6 LoE | Q7 calib |",
-        "|------|----:|-----------|-------:|------:|----------:|--------:|----------:|--------:|----------:|",
+        "| Caso | QES | Categoría | Q0 EDI | Q1a crp | Q1b emp | Q2 n | Q3 sonda | Q4 repr | Q5 multi | Q6 LoE | Q7 calib |",
+        "|------|----:|-----------|-------:|--------:|--------:|-----:|---------:|--------:|---------:|-------:|---------:|",
     ])
     for r in results:
         c = r["components"]
         md_lines.append(
             f"| {r['case_id']} | **{r['QES']:.3f}** | {r['category']} | "
-            f"{c['Q1_trazabilidad_datos']['score']:.2f} | "
+            f"{c['Q0_signo_potencia_edi']['score']:.2f} | "
+            f"{c['Q1a_traza_criptografica']['score']:.2f} | "
+            f"{c['Q1b_traza_empirica']['score']:.2f} | "
             f"{c['Q2_tamano_efectivo']['score']:.2f} | "
             f"{c['Q3_calidad_sonda']['score']:.2f} | "
             f"{c['Q4_reproducibilidad']['score']:.2f} | "
-            f"{c['Q5_convergencia_multisonda']['score']:.2f} | "
+            f"{c['Q5_multi_sonda_penalizada']['score']:.2f} | "
             f"{c['Q6_loe_empirico']['score']:.2f} | "
             f"{c['Q7_calibracion_estadistica']['score']:.2f} |"
         )
@@ -150,13 +154,12 @@ def main() -> int:
         "",
         "## Lectura",
         "",
-        "Esta auditoría es el filtro **anti-paper-science** del aparato V5.3: ningún caso pasa a afirmación demostrativa si su QES < 0.70. Casos en categoría INADMISIBLE deben retirarse, declararse como hipótesis especulativa, o re-implementarse con datos reales y sonda físicamente motivada.",
+        "QES es métrica ad-hoc del proyecto, no estándar reconocido en literatura externa (no es GRADE ni AMSTAR). Sirve como filtro interno: la categoría ROBUSTO requiere QES ≥ 0.85 *y* Q0 ≥ 0.60 (EDI positivo con potencia razonable) *y* Q1b ≥ 0.50 (trazabilidad empírica suficiente). Sin ambas precondiciones, un caso con infraestructura adecuada pero contenido empírico nulo o sintético ad-hoc clasifica como DEMOSTRATIVO o inferior.",
         "",
         "## Lectura cruzada",
         "",
         "- `09-simulaciones-edi/common/quality_scorer.py` — implementación del scorer.",
         "- `Anexos/A0-limitaciones-declaradas.md` — limitaciones consolidadas.",
-        "- `09-simulaciones-edi/CIERRE_V5_2.md` — síntesis de los ocho bloques V5.2.",
     ])
     out_md = ROOT / "QES_AUDIT_REPORT.md"
     out_md.write_text("\n".join(md_lines), encoding="utf-8")

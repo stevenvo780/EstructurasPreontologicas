@@ -3,7 +3,7 @@
 Re-ejecuta el caso 30 (Behavioral Dynamics) con n extendido.
 
 Sustento filosófico: el caso 30 declarado como piloto metodológico con
-N2 (circularidad por Fajen-Warren) confirma marginal por V5.2. Pero
+N2 (circularidad por Fajen-Warren) confirma marginal por. Pero
 el componente honesto del caso (sonda Fajen-Warren detecta SU PROPIA
 estructura por construcción) puede operacionalizarse con honestidad
 declarando explícitamente la circularidad y reportando EDI sobre n
@@ -101,7 +101,7 @@ def baseline_random_walk(observed: np.ndarray, seed: int = SEED) -> np.ndarray:
 
 def main() -> int:
     print("=" * 72)
-    print("Caso 30 — Behavioral Dynamics: panel n extendido V5.5")
+    print("Caso 30 — Behavioral Dynamics: panel n extendido")
     print("=" * 72)
 
     edis_primary = []
@@ -183,7 +183,7 @@ def main() -> int:
         ),
     }
     m["honest_limitation_v5_5"] = (
-        "Caso 30 mantiene status de piloto metodológico. Panel V5.5 mejora "
+        "Caso 30 mantiene status de piloto metodológico. Panel mejora "
         "la estimación estadística pero no resuelve la circularidad N2 "
         "(la sonda Fajen-Warren detecta su propia estructura). La elevación "
         "definitiva requiere datos humanos reales VENLab/WALK-MS bajo "

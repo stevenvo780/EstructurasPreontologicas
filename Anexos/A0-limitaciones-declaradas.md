@@ -75,6 +75,10 @@ Esto está consolidado de cap 06-01 §7 y cap 04-02 §8.
 
 ## 5.5. Módulos metodológicos implementados
 
+**Nota sobre el sistema QES (Quality of Evidence Score):** la métrica QES de auditoría interna es construcción del proyecto, no estándar reconocido en literatura externa de calidad de evidencia. No es GRADE ni AMSTAR. Sirve como filtro interno para distinguir casos con infraestructura adecuada y contenido empírico sustantivo de casos con sólo infraestructura. La afirmación "ningún caso del corpus es paper-science según QES" debe interpretarse como "ningún caso cae bajo el umbral interno de QES = 0.40"; la clasificación contra criterios externos (revisión por pares, GRADE) es deuda explícita L17.
+
+
+
 Los siguientes módulos resuelven o reducen seis limitaciones sin re-ejecutar el corpus:
 
 | Módulo | Limitación afectada | Resolución | Ruta |
