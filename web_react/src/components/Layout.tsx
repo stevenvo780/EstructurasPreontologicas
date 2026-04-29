@@ -180,9 +180,10 @@ export default function Layout() {
               {/* Toggle drawer móvil/tablet (<xl) */}
               <button
                 onClick={() => setMobileMenuOpen((o) => !o)}
-                className="xl:hidden btn-ghost !p-2"
+                className="xl:hidden btn-ghost !p-2 relative"
                 aria-label={mobileMenuOpen ? 'Cerrar menú' : 'Abrir menú'}
                 aria-expanded={mobileMenuOpen}
+                aria-controls="mobile-nav-drawer"
               >
                 {mobileMenuOpen ? (
                   <X className="w-5 h-5" />
@@ -193,27 +194,57 @@ export default function Layout() {
             </div>
           </div>
         </div>
+      </header>
 
-        {/* Drawer móvil/tablet — overlay full screen */}
+      {/* Drawer móvil/tablet — overlay full screen.
+          IMPORTANTE: vive FUERA del <header> para evitar que su stacking
+          context confine el fixed inset-0 al área del header. */}
+      {mobileMenuOpen && (
         <div
-          className={cn(
-            'xl:hidden fixed inset-0 z-30 transition-all duration-200',
-            mobileMenuOpen
-              ? 'opacity-100 pointer-events-auto'
-              : 'opacity-0 pointer-events-none'
-          )}
+          id="mobile-nav-drawer"
+          className="xl:hidden fixed inset-0 z-[60] animate-fade-in"
+          role="dialog"
+          aria-modal="true"
+          aria-label="Menú de navegación"
         >
           <div
-            className="absolute inset-0 bg-ink-950/40 backdrop-blur-sm"
+            className="absolute inset-0 bg-ink-950/50 backdrop-blur-sm"
             onClick={() => setMobileMenuOpen(false)}
             aria-hidden
           />
           <div
             className={cn(
-              'absolute right-0 top-16 bottom-0 w-full max-w-sm bg-white dark:bg-ink-950 shadow-2xl border-l border-ink-200 dark:border-ink-800 overflow-y-auto transition-transform duration-200',
-              mobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
+              'absolute right-0 top-0 bottom-0 w-[85vw] max-w-sm',
+              'bg-white dark:bg-ink-950 shadow-2xl',
+              'border-l border-ink-200 dark:border-ink-800',
+              'overflow-y-auto overscroll-contain',
+              'animate-slide-in'
             )}
           >
+            {/* Cabecera del drawer */}
+            <div className="sticky top-0 z-10 flex items-center justify-between gap-2 px-4 h-16 border-b border-ink-200 dark:border-ink-800 bg-white/90 dark:bg-ink-950/90 backdrop-blur-md">
+              <div className="flex items-center gap-2 min-w-0">
+                <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-accent-500 to-accent-700 flex items-center justify-center shadow-md flex-none">
+                  <Sparkles className="w-4 h-4 text-white" />
+                </div>
+                <div className="min-w-0">
+                  <div className="font-semibold text-sm tracking-tight truncate">
+                    Estructuras Pre-Ontológicas
+                  </div>
+                  <div className="text-[10px] font-medium text-ink-500 dark:text-ink-400 truncate">
+                    Tesis doctoral
+                  </div>
+                </div>
+              </div>
+              <button
+                onClick={() => setMobileMenuOpen(false)}
+                className="btn-ghost !p-1.5 flex-none"
+                aria-label="Cerrar menú"
+              >
+                <X className="w-4 h-4" />
+              </button>
+            </div>
+
             <nav className="p-3">
               <div className="text-[10px] uppercase tracking-wider font-semibold text-ink-500 dark:text-ink-400 px-3 pt-2 pb-1">
                 Navegación
@@ -232,12 +263,43 @@ export default function Layout() {
                     )
                   }
                 >
-                  <item.icon className="w-4.5 h-4.5 flex-none" />
+                  <item.icon className="w-4 h-4 flex-none" />
                   <span>{item.label}</span>
                 </NavLink>
               ))}
 
-              <div className="mt-4 pt-3 border-t border-ink-200 dark:border-ink-800 px-3 space-y-2">
+              <div className="mt-4 pt-3 border-t border-ink-200 dark:border-ink-800 px-3 space-y-1">
+                <button
+                  onClick={() => {
+                    setMobileMenuOpen(false);
+                    setPaletteOpen(true);
+                  }}
+                  className="w-full flex items-center gap-3 px-0 py-2 text-sm text-ink-600 dark:text-ink-400 hover:text-accent-600 dark:hover:text-accent-400"
+                >
+                  <Search className="w-4 h-4" />
+                  <span>Búsqueda global</span>
+                  <kbd className="ml-auto font-mono text-[10px] bg-ink-100 dark:bg-ink-800 px-1.5 py-0.5 rounded">
+                    ⌘K
+                  </kbd>
+                </button>
+                <button
+                  onClick={() => {
+                    toggleTheme();
+                  }}
+                  className="w-full flex items-center gap-3 py-2 text-sm text-ink-600 dark:text-ink-400 hover:text-accent-600 dark:hover:text-accent-400"
+                >
+                  {theme === 'dark' ? (
+                    <>
+                      <Sun className="w-4 h-4" />
+                      <span>Modo claro</span>
+                    </>
+                  ) : (
+                    <>
+                      <Moon className="w-4 h-4" />
+                      <span>Modo oscuro</span>
+                    </>
+                  )}
+                </button>
                 <a
                   href="https://github.com/stevenvo780/EstructurasPreontologicas"
                   target="_blank"
@@ -251,7 +313,7 @@ export default function Layout() {
             </nav>
           </div>
         </div>
-      </header>
+      )}
 
       <main className="flex-1">
         <Outlet />
