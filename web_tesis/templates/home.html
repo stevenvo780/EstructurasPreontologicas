@@ -4,7 +4,10 @@
 <div id="top"></div>
 <section id="tesis" class="panel thesis-panel">
   <aside class="toc-box">
-    <h3>📑 Índice de la Tesis</h3>
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.2rem;">
+      <h3 style="margin: 0;">📑 Índice de la Tesis</h3>
+      <button id="hide-sidebar-btn" class="sidebar-toggle" title="Ocultar Índice (Modo Lectura)">✕</button>
+    </div>
     <p style="font-size: 0.72rem; color: #5a7178; margin: 0 0 0.55rem;">
       Las primeras 4 secciones se abren automáticamente. Haz clic en ▸ para expandir las demás.
     </p>
@@ -31,8 +34,8 @@
 
   <article class="thesis-content markdown-body">
     <div class="reading-mode-toggle" style="text-align: right; margin-bottom: 1rem; position: sticky; top: 60px; z-index: 10;">
-      <button id="toggle-sidebar-btn" style="background: #ffffff; border: 1px solid var(--line); padding: 0.5rem 0.9rem; border-radius: 8px; cursor: pointer; font-size: 0.85rem; font-weight: 600; color: #143036; box-shadow: 0 2px 8px rgba(0,0,0,0.05); transition: all 0.2s;">
-        👁️ Ocultar Índice
+      <button id="show-sidebar-btn" class="sidebar-toggle-show" title="Mostrar Índice">
+        ☰ Mostrar Índice
       </button>
     </div>
     {{ thesis_html|safe }}
@@ -219,16 +222,16 @@
 <script src="{{ request.url_for('static', path='js/dashboard.js') }}"></script>
 <script>
   document.addEventListener('DOMContentLoaded', () => {
-    const toggleBtn = document.getElementById('toggle-sidebar-btn');
+    const hideBtn = document.getElementById('hide-sidebar-btn');
+    const showBtn = document.getElementById('show-sidebar-btn');
     const thesisPanel = document.querySelector('.thesis-panel');
-    if (toggleBtn && thesisPanel) {
-      toggleBtn.addEventListener('click', () => {
-        thesisPanel.classList.toggle('reading-mode');
-        if (thesisPanel.classList.contains('reading-mode')) {
-          toggleBtn.innerHTML = '📖 Mostrar Índice';
-        } else {
-          toggleBtn.innerHTML = '👁️ Ocultar Índice';
-        }
+    
+    if (hideBtn && showBtn && thesisPanel) {
+      hideBtn.addEventListener('click', () => {
+        thesisPanel.classList.add('reading-mode');
+      });
+      showBtn.addEventListener('click', () => {
+        thesisPanel.classList.remove('reading-mode');
       });
     }
   });
