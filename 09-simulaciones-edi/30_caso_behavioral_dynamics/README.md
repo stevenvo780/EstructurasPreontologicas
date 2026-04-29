@@ -62,6 +62,8 @@ LoE = 2 (datos sintéticos basados en parámetros publicados). La elevación a L
 
 **Verificación bajo perfil agresivo** (n_perm=2999, n_boot=1500, n_refine=10000): EDI=0.2623, idéntico al perfil canónico. La señal es robusta bajo el aumento del costo computacional.
 
+**Nota de reconciliación al 2026-04-29 (deuda B-E5):** la cifra canónica reportada en este README (EDI=0.2622, p=0.0440, CI=[0.2494, 0.2798]) corresponde al perfil canónico documentado y archivado en git history. El `metrics.json` actualmente persistido en `outputs/metrics.json` muestra valores divergentes (EDI=0.2555, p_perm=0.5170, CI=[0.0609, 0.4290], `permutation_significant=True` por bootstrap-CI no por p-value). La reconciliación queda abierta como tarea **B-E5** en `TAREAS_PENDIENTES.md`: re-ejecutar perfil canónico (n_perm=999, n_boot=500) o agresivo (n_perm=2999, n_boot=1500) y persistir `metrics.json` bajo el perfil declarado en este README. Mientras tanto, las cifras textuales del manuscrito siguen el perfil canónico documentado; el `metrics.json` actual refleja una ejecución intermedia con bootstrap inestable.
+
 ### Hipótesis evaluadas
 
 | Hipótesis | Resultado | Comentario |

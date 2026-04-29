@@ -130,10 +130,10 @@ La diferencia entre 5 strong, 8 weak, 2 suggestive, 4 trend, 8 null, 3 controles
 | 28 | Fuga de cerebros | Docquier-Rapoport | 0.0249 | 0.9975 | – | 1 | 3 | 18 |
 | 01 | Clima regional | Budyko-Sellers | 0.0111 | 0.9990 | – | 1 | 5 | 168 |
 | 02 | Conciencia global | Fallback | -0.1165 | 0.9239 | – | 0 | 1 | 9 |
-| 03 | Contaminación PM2.5 | – | -0.0038 | 0.8699 | – | 0 | 3 | 11 |
-| 12 | Paradigmas (ciencia) | – | -0.0060 | 0.0000 | – | 0 | 2 | 11 |
+| 03 | Contaminación PM2.5 | – | -0.0901 | 0.5090 | – | 0 | 3 | 11 |
+| 12 | Paradigmas (ciencia) | – | -0.1536 | 0.4970 | – | 0 | 2 | 11 |
 | 17 | Océanos (temperatura) | – | -0.0154 | 1.0000 | – | 0 | 3 | 14 |
-| 19 | Acidificación oceánica | – | -0.0002 | 0.0000 | – | 0 | 3 | 11 |
+| 19 | Acidificación oceánica | – | 0.7278 | 0.4900 | – | 1* | 3 | 11 |
 | 23 | Erosión dialéctica | – | -1.0000 | 1.0000 | – | 0 | 1 | 8 |
 | 25 | Acuíferos | – | -0.1462 | 1.0000 | – | 0 | 3 | 19 |
 | 29 | IoT | – | -0.8760 | 1.0000 | – | 0 | 3 | 15 |
@@ -141,7 +141,7 @@ La diferencia entre 5 strong, 8 weak, 2 suggestive, 4 trend, 8 null, 3 controles
 | 07 | **Falsación no-estacionariedad** | Random walk | -0.8819 | 1.0000 | – | – | 1 | 731 |
 | 08 | **Falsación observabilidad** | Estado oculto | -1.0000 | 1.0000 | – | – | 1 | 97 |
 
-**(*)** Microplásticos: EDI alto (0.78) sin gate completo por inestabilidad del bootstrap. Starlink: ventana de validación insuficiente (val_steps=1).
+**(*)** Microplásticos: EDI alto (0.78) sin gate completo por inestabilidad del bootstrap. Starlink: ventana de validación insuficiente (val_steps=1). Acidificación oceánica: EDI alto (0.73) bajo nuevo régimen de medición pero p=0.49 (no significativo) y `overall_pass=False`; clasificado como Trend con cautela inferencial — candidato a re-evaluación con sondas físicas alternativas (programa multi-sonda).
 
 ### Distribución del paisaje de emergencia
 

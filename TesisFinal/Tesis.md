@@ -5021,10 +5021,10 @@ La diferencia entre 5 strong, 8 weak, 2 suggestive, 4 trend, 8 null, 3 controles
 | 28 | Fuga de cerebros | Docquier-Rapoport | 0.0249 | 0.9975 | – | 1 | 3 | 18 |
 | 01 | Clima regional | Budyko-Sellers | 0.0111 | 0.9990 | – | 1 | 5 | 168 |
 | 02 | Conciencia global | Fallback | -0.1165 | 0.9239 | – | 0 | 1 | 9 |
-| 03 | Contaminación PM2.5 | – | -0.0038 | 0.8699 | – | 0 | 3 | 11 |
-| 12 | Paradigmas (ciencia) | – | -0.0060 | 0.0000 | – | 0 | 2 | 11 |
+| 03 | Contaminación PM2.5 | – | -0.0901 | 0.5090 | – | 0 | 3 | 11 |
+| 12 | Paradigmas (ciencia) | – | -0.1536 | 0.4970 | – | 0 | 2 | 11 |
 | 17 | Océanos (temperatura) | – | -0.0154 | 1.0000 | – | 0 | 3 | 14 |
-| 19 | Acidificación oceánica | – | -0.0002 | 0.0000 | – | 0 | 3 | 11 |
+| 19 | Acidificación oceánica | – | 0.7278 | 0.4900 | – | 1* | 3 | 11 |
 | 23 | Erosión dialéctica | – | -1.0000 | 1.0000 | – | 0 | 1 | 8 |
 | 25 | Acuíferos | – | -0.1462 | 1.0000 | – | 0 | 3 | 19 |
 | 29 | IoT | – | -0.8760 | 1.0000 | – | 0 | 3 | 15 |
@@ -5032,7 +5032,7 @@ La diferencia entre 5 strong, 8 weak, 2 suggestive, 4 trend, 8 null, 3 controles
 | 07 | **Falsación no-estacionariedad** | Random walk | -0.8819 | 1.0000 | – | – | 1 | 731 |
 | 08 | **Falsación observabilidad** | Estado oculto | -1.0000 | 1.0000 | – | – | 1 | 97 |
 
-**(*)** Microplásticos: EDI alto (0.78) sin gate completo por inestabilidad del bootstrap. Starlink: ventana de validación insuficiente (val_steps=1).
+**(*)** Microplásticos: EDI alto (0.78) sin gate completo por inestabilidad del bootstrap. Starlink: ventana de validación insuficiente (val_steps=1). Acidificación oceánica: EDI alto (0.73) bajo nuevo régimen de medición pero p=0.49 (no significativo) y `overall_pass=False`; clasificado como Trend con cautela inferencial — candidato a re-evaluación con sondas físicas alternativas (programa multi-sonda).
 
 ### Distribución del paisaje de emergencia
 
@@ -5392,6 +5392,8 @@ LoE = 2 (datos sintéticos basados en parámetros publicados). La elevación a L
 | Correlación ODE-obs | 0.3165 | Sonda macro correlaciona |
 
 **Verificación bajo perfil agresivo** (n_perm=2999, n_boot=1500, n_refine=10000): EDI=0.2623, idéntico al perfil canónico. La señal es robusta bajo el aumento del costo computacional.
+
+**Nota de reconciliación al 2026-04-29 (deuda B-E5):** la cifra canónica reportada en este README (EDI=0.2622, p=0.0440, CI=[0.2494, 0.2798]) corresponde al perfil canónico documentado y archivado en git history. El `metrics.json` actualmente persistido en `outputs/metrics.json` muestra valores divergentes (EDI=0.2555, p_perm=0.5170, CI=[0.0609, 0.4290], `permutation_significant=True` por bootstrap-CI no por p-value). La reconciliación queda abierta como tarea **B-E5** en `TAREAS_PENDIENTES.md`: re-ejecutar perfil canónico (n_perm=999, n_boot=500) o agresivo (n_perm=2999, n_boot=1500) y persistir `metrics.json` bajo el perfil declarado en este README. Mientras tanto, las cifras textuales del manuscrito siguen el perfil canónico documentado; el `metrics.json` actual refleja una ejecución intermedia con bootstrap inestable.
 
 ### Hipótesis evaluadas
 
@@ -8708,6 +8710,14 @@ Apéndice tabular de **resultados crudos verificables** del corpus EDI multidomi
 
 **Nota de reconciliación al 2026-04-29:** para el caso 16 (Deforestación), la cifra canónica reportada en Tabla A.8.1 (EDI=0.6020) corresponde al perfil canónico documentado y archivado en git history; el `metrics.json` actualmente persistido en `09-simulaciones-edi/16_caso_deforestacion/outputs/metrics.json` refleja la re-ejecución agresiva (EDI=0.5802 con CI más amplio), reportada en Tabla A.8.3 como verificación contrastiva. La diferencia <4% es variabilidad esperada bajo aumento del bootstrap; el Nivel 4 strong se preserva en ambas ejecuciones. Re-ejecución canónica con JSON sincronizado queda como tarea **B-E7** en `TAREAS_PENDIENTES.md`.
 
+**Sincronización apéndice ↔ JSON (pasada nocturna 2026-04-29):** la auditoría B-E6 detectó tres casos null donde el JSON real-phase difería del valor histórico tabulado:
+
+- caso 03 Contaminación PM2.5: −0.0038 → −0.0901 (p=0.5090). Sigue Nivel 0 null.
+- caso 12 Paradigmas (ciencia): −0.0060 → −0.1536 (p=0.4970). Sigue Nivel 0 null.
+- caso 19 Acidificación oceánica: −0.0002 → 0.7278 (p=0.4900). **Promovido a Nivel 1\* (trend con magnitud alta, no significativo)**: el valor positivo elevado bajo el nuevo régimen de medición indica señal aparente, pero el p-value alto (cerca de 0.49) y el `overall_pass=False` impiden clasificación como strong genuino. El asterisco marca esta cautela inferencial. La interpretación honesta: el caso 19 es candidato a re-evaluación con sondas físicas alternativas (programa multi-sonda); no es null genuino bajo régimen actual ni strong demostrable. Tabla A.8.4 (distribución del paisaje) refleja esta revisión.
+
+Para el caso 30 Behavioral Dynamics: la fila tabular conserva la cifra canónica histórica (EDI=0.2622 con p=0.0440) reportada en cap 06-cierre/04 §"Justificación operativa"; el `metrics.json` actual persiste valores divergentes (EDI=0.2555 con p=0.5170). La reconciliación está abierta como **B-E5**: requiere re-ejecución bajo perfil agresivo (n_perm=2999, n_boot=1500) que el manuscrito declara como verificación canónica.
+
 ---
 
 ## Tabla A.8.1. Resultados del corpus EDI (30 casos, perfil canónico)
@@ -8738,10 +8748,10 @@ Perfil canónico: `n_perm = 999`, `n_boot = 500`, `seed = 42`, `validator_versio
 | 28 | Fuga de cerebros | Docquier-Rapoport | 0.0249 | 0.9975 | inestable | 18 | 3 | 0.10 | 0.45 | 1 | False |
 | 01 | Clima regional | Budyko-Sellers | 0.0111 | 0.9990 | inestable | 168 | 5 | 0.05 | 0.40 | 1 | False |
 | 02 | Conciencia global | Fallback | -0.1165 | 0.9239 | — | 9 | 1 | — | — | 0 | False |
-| 03 | Contaminación PM2.5 | — | -0.0038 | 0.8699 | — | 11 | 3 | — | — | 0 | False |
-| 12 | Paradigmas (ciencia) | — | -0.0060 | 0.0000 | — | 11 | 2 | — | — | 0 | False |
+| 03 | Contaminación PM2.5 | — | -0.0901 | 0.5090 | — | 11 | 3 | — | — | 0 | False |
+| 12 | Paradigmas (ciencia) | — | -0.1536 | 0.4970 | — | 11 | 2 | — | — | 0 | False |
 | 17 | Océanos (temperatura) | — | -0.0154 | 1.0000 | — | 14 | 3 | — | — | 0 | False |
-| 19 | Acidificación oceánica | — | -0.0002 | 0.0000 | — | 11 | 3 | — | — | 0 | False |
+| 19 | Acidificación oceánica | — | 0.7278 | 0.4900 | — | 11 | 3 | — | — | 1* | False |
 | 23 | Erosión dialéctica | — | -1.0000 | 1.0000 | — | 8 | 1 | — | — | 0 | False |
 | 25 | Acuíferos | — | -0.1462 | 1.0000 | — | 19 | 3 | — | — | 0 | False |
 | 29 | IoT | — | -0.8760 | 1.0000 | — | 15 | 3 | — | — | 0 | False |

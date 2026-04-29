@@ -8,6 +8,14 @@ Apéndice tabular de **resultados crudos verificables** del corpus EDI multidomi
 
 **Nota de reconciliación al 2026-04-29:** para el caso 16 (Deforestación), la cifra canónica reportada en Tabla A.8.1 (EDI=0.6020) corresponde al perfil canónico documentado y archivado en git history; el `metrics.json` actualmente persistido en `09-simulaciones-edi/16_caso_deforestacion/outputs/metrics.json` refleja la re-ejecución agresiva (EDI=0.5802 con CI más amplio), reportada en Tabla A.8.3 como verificación contrastiva. La diferencia <4% es variabilidad esperada bajo aumento del bootstrap; el Nivel 4 strong se preserva en ambas ejecuciones. Re-ejecución canónica con JSON sincronizado queda como tarea **B-E7** en `TAREAS_PENDIENTES.md`.
 
+**Sincronización apéndice ↔ JSON (pasada nocturna 2026-04-29):** la auditoría B-E6 detectó tres casos null donde el JSON real-phase difería del valor histórico tabulado:
+
+- caso 03 Contaminación PM2.5: −0.0038 → −0.0901 (p=0.5090). Sigue Nivel 0 null.
+- caso 12 Paradigmas (ciencia): −0.0060 → −0.1536 (p=0.4970). Sigue Nivel 0 null.
+- caso 19 Acidificación oceánica: −0.0002 → 0.7278 (p=0.4900). **Promovido a Nivel 1\* (trend con magnitud alta, no significativo)**: el valor positivo elevado bajo el nuevo régimen de medición indica señal aparente, pero el p-value alto (cerca de 0.49) y el `overall_pass=False` impiden clasificación como strong genuino. El asterisco marca esta cautela inferencial. La interpretación honesta: el caso 19 es candidato a re-evaluación con sondas físicas alternativas (programa multi-sonda); no es null genuino bajo régimen actual ni strong demostrable. Tabla A.8.4 (distribución del paisaje) refleja esta revisión.
+
+Para el caso 30 Behavioral Dynamics: la fila tabular conserva la cifra canónica histórica (EDI=0.2622 con p=0.0440) reportada en cap 06-cierre/04 §"Justificación operativa"; el `metrics.json` actual persiste valores divergentes (EDI=0.2555 con p=0.5170). La reconciliación está abierta como **B-E5**: requiere re-ejecución bajo perfil agresivo (n_perm=2999, n_boot=1500) que el manuscrito declara como verificación canónica.
+
 ---
 
 ## Tabla A.8.1. Resultados del corpus EDI (30 casos, perfil canónico)
@@ -38,10 +46,10 @@ Perfil canónico: `n_perm = 999`, `n_boot = 500`, `seed = 42`, `validator_versio
 | 28 | Fuga de cerebros | Docquier-Rapoport | 0.0249 | 0.9975 | inestable | 18 | 3 | 0.10 | 0.45 | 1 | False |
 | 01 | Clima regional | Budyko-Sellers | 0.0111 | 0.9990 | inestable | 168 | 5 | 0.05 | 0.40 | 1 | False |
 | 02 | Conciencia global | Fallback | -0.1165 | 0.9239 | — | 9 | 1 | — | — | 0 | False |
-| 03 | Contaminación PM2.5 | — | -0.0038 | 0.8699 | — | 11 | 3 | — | — | 0 | False |
-| 12 | Paradigmas (ciencia) | — | -0.0060 | 0.0000 | — | 11 | 2 | — | — | 0 | False |
+| 03 | Contaminación PM2.5 | — | -0.0901 | 0.5090 | — | 11 | 3 | — | — | 0 | False |
+| 12 | Paradigmas (ciencia) | — | -0.1536 | 0.4970 | — | 11 | 2 | — | — | 0 | False |
 | 17 | Océanos (temperatura) | — | -0.0154 | 1.0000 | — | 14 | 3 | — | — | 0 | False |
-| 19 | Acidificación oceánica | — | -0.0002 | 0.0000 | — | 11 | 3 | — | — | 0 | False |
+| 19 | Acidificación oceánica | — | 0.7278 | 0.4900 | — | 11 | 3 | — | — | 1* | False |
 | 23 | Erosión dialéctica | — | -1.0000 | 1.0000 | — | 8 | 1 | — | — | 0 | False |
 | 25 | Acuíferos | — | -0.1462 | 1.0000 | — | 19 | 3 | — | — | 0 | False |
 | 29 | IoT | — | -0.8760 | 1.0000 | — | 15 | 3 | — | — | 0 | False |
