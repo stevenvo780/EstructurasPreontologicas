@@ -71,7 +71,7 @@ Los 3 controles (exogeneidad, no-estacionariedad, observabilidad) están constru
 
 ### Articulación ontológica del corpus inter-escala
 
-Los 10 casos del corpus inter-escala (`corpus_multiescala/`) instancian los mismos cuatro invariantes en escalas físicas distintas. Ver `09-simulaciones-edi/corpus_multiescala/README.md` y `Anexos/A12-corpus-multiescala-tablas.md` para la tabla detallada. Lo importante para esta sección: los 7 strong en 7 escalas distintas (atómica, cuántica, bioquímica, celular oscilatoria, individual, astrofísica, astrofísica masiva) **no son aplicación nominal del aparato a otros dominios**: cada uno verifica los cuatro invariantes ontológicos en su escala, con sondas físicamente motivadas y test cruzado de especificidad (V4-01: 0/12 circularidad).
+Los 10 casos del corpus inter-escala (`corpus_multiescala/`) instancian los mismos cuatro invariantes en escalas físicas distintas. Ver `09-simulaciones-edi/corpus_multiescala/README.md` y `10-apendices-tecnicos/02-tablas-crudas-corpus-multiescala.md` para la tabla detallada. Lo importante para esta sección: los 7 strong en 7 escalas distintas (atómica, cuántica, bioquímica, celular oscilatoria, individual, astrofísica, astrofísica masiva) **no son aplicación nominal del aparato a otros dominios**: cada uno verifica los cuatro invariantes ontológicos en su escala, con sondas físicamente motivadas y test cruzado de especificidad (V4-01: 0/12 circularidad).
 
 ### Síntesis filosófica del corpus agregado
 

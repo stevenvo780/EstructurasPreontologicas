@@ -1,4 +1,4 @@
-# Anexo A.9. Listas de figuras, tablas y abreviaturas
+# Listas de figuras, tablas y abreviaturas
 
 ## Función
 
@@ -8,7 +8,7 @@ Listas de soporte editorial requeridas por el formato de tesis doctoral instituc
 
 ## A.9.1. Lista de figuras
 
-> Nota: las versiones Mermaid renderizables de las 9 figuras principales están consolidadas en el Anexo A.10 (`Anexos/A10-figuras-mermaid.md`). En el cuerpo de los capítulos los diagramas siguen en ASCII art para legibilidad en texto plano. La conversión final a SVG/PNG con `mmdc` (mermaid-cli) o equivalente es trámite editorial pre-depósito con cronograma específico: 3-5 días en la semana previa al depósito institucional. Esta lista anticipa la numeración estable.
+> Nota: las versiones Mermaid renderizables de las 9 figuras principales están consolidadas en `10-apendices-tecnicos/03-figuras-mermaid.md`. En el cuerpo de los capítulos los diagramas siguen en ASCII art para legibilidad en texto plano. La conversión final a SVG/PNG con `mmdc` (mermaid-cli) o equivalente es trámite editorial pre-depósito con cronograma específico: 3-5 días en la semana previa al depósito institucional. Esta lista anticipa la numeración estable.
 
 **Tabla A.9.1.**
 
@@ -43,7 +43,7 @@ Listas de soporte editorial requeridas por el formato de tesis doctoral instituc
 | Tabla 5.1 | Casos del corpus por dominio de aplicación | 05-00 |
 | Tabla 5.2 | Comparativa cualitativa-cuantitativa para behavioral dynamics | 05-05 |
 | Tabla 6.1 | Cuadro síntesis del paisaje de emergencia | 06-01 |
-| Tabla A.4.1 | Tabla comparativa con 14 rivales (Anexo) | A.4 |
+| Tabla A.4.1 | Tabla comparativa con 14 rivales | Parte IV |
 | Tabla A.5.1 | Mapa de aplicaciones del marco | A.5 |
 | Tabla A.8.1 | Resultados del corpus EDI (30 casos) | A.8 |
 | Tabla A.8.2 | Métricas de robustez por caso | A.8 |
@@ -126,4 +126,4 @@ Listas de soporte editorial requeridas por el formato de tesis doctoral instituc
 
 ## Trazabilidad
 
-Las listas de este anexo se actualizarán automáticamente desde el manuscrito ensamblado (`TesisFinal/Tesis.md`) cuando se haga la conversión final a LaTeX/PDF mediante Pandoc + script de extracción. Hasta entonces, este anexo se mantiene manualmente coherente con los capítulos de origen.
+Estas listas se actualizarán automáticamente desde el manuscrito ensamblado (`TesisFinal/Tesis.md`) cuando se haga la conversión final a LaTeX/PDF mediante Pandoc + script de extracción. Hasta entonces, se mantienen manualmente coherentes con los capítulos de origen.

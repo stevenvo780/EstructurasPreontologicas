@@ -36,7 +36,7 @@
 - piloto Wolfram Rule 110 ejecutado con EDI 0.55 (`09-simulaciones-edi/wolfram_pilot/`);
 - caso piloto COVID con ablación real ejecutado (`09-simulaciones-edi/covid_pilot/`);
 - análisis de drift bajo perfil agresivo (`09-simulaciones-edi/perfil_agresivo/`);
-- 14 anexos consolidados con índice temático (`Anexos/README.md`); A.13 borrador filosófico para validación de Jacob;
+- anexos operativos absorbidos al cuerpo del manuscrito, con solo tres apéndices técnicos mínimos (`10-apendices-tecnicos/`) y mapa de trazabilidad (`TesisFinal/MAPA_INTEGRACION_ANEXOS.md`);
 - visualización vectorial completa: 5 figuras del corpus + espacio de fase del caso ancla + 9 figuras Mermaid en SVG/PNG (`figures/`);
 - 114 tablas y 9 figuras numeradas formalmente con prefijo `<capítulo>.<orden>` en 37 archivos;
 - fetchers de datos reales para multiescala (PhysioNet HRV, OGLE Cefeidas verificado, BRENDA, Gaia DR3, IBM Quantum) en `09-simulaciones-edi/multiscale_fetchers.py`;
@@ -119,7 +119,7 @@ Operacionalización dinámica de validez, legitimidad y efectividad como propied
 
 ### Entregable
 
-Capítulo metodológico adicional o anexo del capítulo 03 con formalización dinámica de las tres propiedades, casos posibles de operacionalización, dialogo bibliográfico con Searle, Bourdieu, Latour, Gilbert.
+Capítulo metodológico adicional dentro de la Parte II con formalización dinámica de las tres propiedades, casos posibles de operacionalización, dialogo bibliográfico con Searle, Bourdieu, Latour, Gilbert.
 
 ### Plazo
 
@@ -177,18 +177,11 @@ Manuscrito doctoral en estilo unificado, listo para depósito.
 
 3-6 meses tras lectura externa.
 
-## 8. Paso 7. Anexos operativos
+## 8. Paso 7. Apéndices técnicos mínimos
 
-### Anexos obligatorios
+### Regla editorial
 
-- **glosario operativo**: definición de trabajo de cada término del marco con remisión a capítulos;
-- **mapa de operadores formales**: presentación visual del aparato μ, G, H, κ, ε con flujo canónico de uso;
-- **matriz de auditoría ontológica**: plantilla replicable del capítulo 03-03;
-- **plantilla del dossier de anclaje**: del capítulo 03-02 §3, lista para uso por terceros;
-- **cuadros comparativos con posiciones rivales**: del capítulo 04-01;
-- **mapa de aplicaciones**: estado demostrativo / programático, criterios de elevación, deuda;
-- **versión corta de la tesis** (1 página, 2 minutos, 5 minutos, 15 minutos);
-- **bibliografía consolidada** en formato académico estándar.
+El material argumental deja de ser anexo y pasa al cuerpo: glosario, operadores, dossier, rivales, aplicaciones, objeciones, limitaciones y validación ST. Solo permanecen como apéndices los soportes que no conviene interrumpir en la lectura principal: tablas crudas y fuentes visuales.
 
 ### Plazo
 
@@ -204,7 +197,7 @@ Continuo durante el desarrollo. Cierre completo al final.
 | 13-18 | Elevación de segundo caso (paso 4 inicial); aparato normativo en estado avanzado (paso 3) |
 | 19-24 | Cierre de aparato normativo (paso 3); elevación de tercer caso si es viable; integración bibliográfica completa (paso 2) |
 | 25-30 | Lectura externa hostil (paso 5); revisión |
-| 31-33 | Redacción final unificada (paso 6); anexos completos (paso 7) |
+| 31-33 | Redacción final unificada (paso 6); apéndices técnicos mínimos completos (paso 7) |
 | 34-36 | Pulido, formato académico, depósito |
 
 Plazo plausible: 24-36 meses con dedicación seria. Plazo real depende de bibliografía y disponibilidad de datasets.
@@ -240,7 +233,7 @@ El manuscrito doctoral final está listo si:
 - los seis límites del capítulo 04-02 se reconocen y se traducen en programa posterior;
 - las cuatro condiciones de fracaso del capítulo 06-01 se aceptan;
 - la guía de defensa oral funciona en simulación con interlocutor competente;
-- los anexos están completos.
+- los apéndices técnicos mínimos están completos y no sustituyen el cuerpo argumental.
 
 ## 12. Resultado deseado
 

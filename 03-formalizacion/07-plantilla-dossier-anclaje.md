@@ -1,4 +1,4 @@
-# Anexo A.3. Plantilla del dossier de anclaje
+# Plantilla del dossier de anclaje
 
 ## Función
 

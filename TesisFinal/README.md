@@ -4,25 +4,23 @@ Este directorio contiene el manuscrito doctoral consolidado en un archivo único
 
 ## Archivos
 
-- **Tesis.md** — manuscrito ensamblado completo (~7,200 líneas, ~432 KB).
+- **Tesis.md** — manuscrito ensamblado completo.
 - **README.md** — este archivo.
+- **MAPA_INTEGRACION_ANEXOS.md** — trazabilidad de la absorción de anexos al cuerpo y de los apéndices técnicos mínimos.
 
 ## Cómo se construye
 
 El archivo `Tesis.md` se ensambla automáticamente desde los capítulos del repositorio en el orden canónico definido por el plan doctoral:
 
-1. Front matter (portada, autoría, versión)
-2. Abstract bilingüe (español + inglés)
-3. Capítulos 0 — Plan general
-4. Capítulos 1 — Diagnóstico y objeciones
-5. Capítulos 2 — Fundamentos (ontología, epistemología, categorías, nivel B)
-6. Capítulos 3 — Aparato formal y operacionalización EDI
-7. Capítulos 4 — Debates con rivales y limitaciones
-8. Capítulos 5 — Aplicaciones (criterios, programáticos, caso ancla)
-9. Capítulos 6 — Cierre demostrativo, defensa, hoja de ruta
-10. Capítulo 9 — Corpus EDI (validación multidominio)
-11. Anexos A.1 a A.6 (glosario, operadores, dossier, rivales, aplicaciones, defensa)
-12. Bibliografía formal (90 referencias)
+1. Preliminares: portada, resumen/abstract, listas editoriales y glosario.
+2. Introducción y estado del arte.
+3. Parte I: fundamentos ontológicos y epistemológicos.
+4. Parte II: aparato formal, dossier, operacionalización EDI, validación ST y gobernanza.
+5. Parte III: evidencia empírica, corpus EDI, corpus multiescala y aplicaciones.
+6. Parte IV: rivales, objeciones y limitaciones consolidadas.
+7. Parte V: cierre demostrativo y hoja de ruta post-defensa.
+8. Bibliografía.
+9. Apéndices técnicos mínimos: tablas crudas inter-dominio, tablas crudas multiescala y figuras Mermaid.
 
 ## Re-ensamblaje
 
@@ -35,4 +33,4 @@ python3 TesisFinal/build.py
 
 ## Política
 
-Este es el documento que se presenta a la Universidad. Cualquier corrección final se hace primero en los capítulos individuales (fuente de verdad) y luego se re-ensambla.
+Este es el documento que se presenta a la Universidad. Cualquier corrección final se hace primero en los capítulos individuales (fuente de verdad) y luego se re-ensambla. Los materiales administrativos, bitácoras y defensa oral quedan en el repositorio, pero fuera del cuerpo del manuscrito salvo cuando aportan argumento o evidencia verificable.

@@ -1,4 +1,4 @@
-# Anexo A.7. Abstract bilingüe
+# Resumen y abstract bilingüe
 
 ## Resumen (español)
 

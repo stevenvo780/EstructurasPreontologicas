@@ -1,8 +1,8 @@
-# Anexo A.6b. Respuestas tipo para defensa oral (Q&A consolidado)
+# Respuestas tipo para defensa oral (Q&A consolidado)
 
 ## Función
 
-Mapeo directo de las 12 preguntas más probables del tribunal doctoral a respuestas calibradas en 3-5 líneas, con referencia exacta al capítulo donde está la justificación completa. Este anexo NO introduce contenido nuevo: **consolida** lo disperso en cap 06-02, cap 04-01, cap 04-02 y cap 06-01 en formato Q&A apto para defensa oral.
+Mapeo directo de las 12 preguntas más probables del tribunal doctoral a respuestas calibradas en 3-5 líneas, con referencia exacta al capítulo donde está la justificación completa. Este material NO introduce contenido nuevo: **consolida** lo disperso en cap 06-02, cap 04-01, cap 04-02 y cap 06-01 en formato Q&A apto para defensa oral.
 
 **Política:** cada respuesta debe poder darse de memoria en menos de 30 segundos durante la defensa. La referencia al capítulo está para que el evaluador hostil pueda verificar.
 
@@ -28,7 +28,7 @@ Mapeo directo de las 12 preguntas más probables del tribunal doctoral a respues
 
 **Respuesta:** Lo declaramos abiertamente: los datos son sintéticos derivados de parámetros publicados (Lindblad, Bloch, Tyson-Novak, etc.). Lo que el corpus inter-escala demuestra **hoy** es que el aparato y las sondas son **estructuralmente transferibles** entre escalas sin reentrenar arquitectura, verificado por test cruzado V4-01 con 0/12 circularidad. La elevación a datos reales (IBM Quantum, BRENDA, OGLE) está fechada como deuda priorizada de 6-12 meses post-defensa. La afirmación es **operativamente articulada con demostración parcial**, no κ-ontológica fuerte.
 
-**Referencia:** Cap 06-01 §8.2 + L7 del Anexo A.0.
+**Referencia:** Cap 06-01 §8.2 + L7 del capítulo de limitaciones declaradas.
 
 ---
 
@@ -52,7 +52,7 @@ Mapeo directo de las 12 preguntas más probables del tribunal doctoral a respues
 
 **Respuesta:** Caso 30 está declarado como piloto metodológico con circularidad detectada por la sonda alternativa (N2: Fajen-Warren produce EDI > 0.30 en 50% de mass-spring puro). Programa con datos VENLab/WALK-MS está documentado con dossier técnico-ético en `Bitacora/2026-04-28-cierre-doctoral/02-`, plazo 9-12 meses, requiere aval CEI. La trayectoria desde el rechazo del v1 (EDI=0.002) hasta el v2 weak honesto (EDI=0.262) ilustra la disciplina del aparato.
 
-**Referencia:** Cap 06-01 §3.5 + L5 del Anexo A.0.
+**Referencia:** Cap 06-01 §3.5 + L5 del capítulo de limitaciones declaradas.
 
 ---
 
@@ -68,7 +68,7 @@ Mapeo directo de las 12 preguntas más probables del tribunal doctoral a respues
 
 **Respuesta:** El corpus agregado de 40 casos cubre dominios y escalas que están **muy lejos** de behavioral dynamics: dinámica de espín-órbita atómica (10⁻¹⁰ m), decoherencia cuántica, plegamiento de proteína, ciclo celular, dinámica gravitacional de cúmulos globulares (10²⁰ m). La generalidad multiescalar de 30 órdenes de magnitud refuta directamente la objeción. Behavioral dynamics es **un caso entre 40**, no la tesis.
 
-**Referencia:** Cap 06-01 §5.4 + Anexo A.6 trampa 1.
+**Referencia:** Cap 06-01 §5.4 + sección de versiones cortas de defensa, trampa 1.
 
 ---
 
@@ -76,7 +76,7 @@ Mapeo directo de las 12 preguntas más probables del tribunal doctoral a respues
 
 **Respuesta:** La novedad no es de inventario sino de **articulación**: dossier de 14 componentes + asimetría L1↔B↔L3↔S como filtro de admisión simultáneo + cartografía inter-dominio + inter-escala con falsación + hostile testing aplicado + suite ST formal de 24 teorías. Cada marco vecino captura una pieza; ninguno reúne las cinco con el filtro de admisión multiescalar. La tabla del cap 04-01 documenta la discriminación caso por caso.
 
-**Referencia:** Cap 04-01 + Anexo A.4.
+**Referencia:** Cap 04-01 + capítulo de tabla comparativa con rivales.
 
 ---
 
@@ -92,19 +92,19 @@ Mapeo directo de las 12 preguntas más probables del tribunal doctoral a respues
 
 **Respuesta:** Wolfram Physics Project comparte hipergrafos centrales con la tesis pero discriminamos en C (admisión empírica), D (asimetría protocolar), E (cartografía multidominio con falsación). **Piloto Rule 110 ejecutado**: EDI = 0.55 sobre dos sondas independientes mostrando convivencia de irreducibilidad computacional micro y cierre operativo macro detectable. Wolfram fundamenta; nosotros disciplinamos.
 
-**Referencia:** Cap 04-01 §15 + Anexo A.4 fila 14 + `09-simulaciones-edi/wolfram_pilot/`.
+**Referencia:** Cap 04-01 §15 + capítulo de tabla comparativa con rivales, fila 14 + `09-simulaciones-edi/wolfram_pilot/`.
 
 ---
 
 ## P12. ¿Por qué su tesis no tiene revisión por pares externos aún?
 
-**Respuesta:** Lo declaramos como deuda externa bloqueante para sustentación (README línea 51, L17 del Anexo A.0). Todas las auditorías internas se han realizado con asistencia computacional bajo dirección humana. La revisión por pares externos está fechada como gestión activa, con plazo de 3 a 6 meses, y la tesis se presenta al director para iniciar precisamente esa fase.
+**Respuesta:** Lo declaramos como deuda externa bloqueante para sustentación (README línea 51, L17 del capítulo de limitaciones declaradas). Todas las auditorías internas se han realizado con asistencia computacional bajo dirección humana. La revisión por pares externos está fechada como gestión activa, con plazo de 3 a 6 meses, y la tesis se presenta al director para iniciar precisamente esa fase.
 
-**Referencia:** README líneas 47-51 + L17 del Anexo A.0.
+**Referencia:** README líneas 47-51 + L17 del capítulo de limitaciones declaradas.
 
 ---
 
-## Trampas anticipadas (de A.6 §Trampas)
+## Trampas anticipadas (de la sección de versiones cortas de defensa)
 
 ### Trampa 1. "Behavioral dynamics renombrado"
 Ver P8.
@@ -131,7 +131,7 @@ Esta es la frase que sobrevive incluso si el resto del día filosófico se incen
 ## Lectura cruzada
 
 - Cap 06-02 — guía de defensa con versiones 2/5/15 minutos.
-- Anexo A.6 — versiones cortas de defensa oral (versión completa).
-- Anexo A.0 — limitaciones declaradas consolidadas.
+- Versiones cortas de defensa oral (versión completa).
+- Limitaciones declaradas consolidadas.
 - Cap 04-01 — debates con rivales (extenso).
 - Cap 06-01 — conclusión demostrativa con compromisos públicos.

@@ -1,4 +1,4 @@
-# Anexo A.2. Mapa de operadores formales
+# Mapa de operadores formales
 
 ## Función
 
@@ -231,7 +231,7 @@ EDI = -1 ─┬───────────────────┬─�
        (null)         (trend/sug/weak)        (strong)
                             │
        EDI ≤ 0      0 < EDI ≤ 0.30           0.30 < EDI ≤ 0.90
-       
+
                                             (con overall_pass=True
                                              requiere 13 condiciones)
 ```

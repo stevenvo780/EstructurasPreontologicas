@@ -1,4 +1,4 @@
-# Anexo A.5. Mapa de aplicaciones — corpus inter-dominio + inter-escala
+# Mapa de aplicaciones — corpus inter-dominio e inter-escala
 
 ## Función
 

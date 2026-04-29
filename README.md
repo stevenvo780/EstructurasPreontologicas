@@ -144,7 +144,7 @@ La novedad no es de inventario sino de **articulación ontológica multiescalar*
 - caso piloto COVID dimensión normativa ejecutado con resultado null honesto;
 - hostile testing N1-N5 + V4-01-V4-09 ejecutado;
 - suite ST extendida a 13 teorías con 2 hallazgos críticos corregidos;
-- 4 anexos nuevos (A.8-A.11), capítulo 05-06 nuevo, cap 02-01 con declaración multiescalar;
+- apéndices técnicos mínimos de tablas/figuras y capítulos integrados de glosario, operadores, dossier, rivales, aplicaciones, limitaciones y validación ST;
 - distinción κ-pragmática/κ-ontológica formalizada;
 - pre-registro honesto reconociendo limitaciones post-hoc;
 - 18 citas textuales con paginación inyectadas en cap 02-01, 02-02, 02-03, 03-01, 03-02, 03-03.

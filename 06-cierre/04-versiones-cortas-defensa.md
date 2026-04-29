@@ -1,4 +1,4 @@
-# Anexo A.6. Versiones cortas de defensa oral
+# Versiones cortas de defensa oral
 
 ## Función
 

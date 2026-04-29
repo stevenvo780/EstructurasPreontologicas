@@ -91,7 +91,7 @@ El manuscrito se entrega en estado **integral defendible bajo régimen declarado
 
 - arquitectura argumental cerrada (capítulos 02 a 06);
 - aparato formal completo (capítulo 03);
-- corpus EDI inter-dominio (30 casos) y inter-escala (10 casos) con resultados verificables (`09-simulaciones-edi/`, `Anexos/A8`, `A12`);
+- corpus EDI inter-dominio (30 casos) y inter-escala (10 casos) con resultados verificables (`09-simulaciones-edi/`, `10-apendices-tecnicos/01-tablas-crudas-corpus-interdominio.md`, `10-apendices-tecnicos/02-tablas-crudas-corpus-multiescala.md`);
 - programa multi-sonda y baselines estadísticos ejecutados (`Bitacora/2026-04-28-cierre-doctoral/`);
 - caso 30 (behavioral dynamics) con dossier técnico-ético para elevación documentada;
 - bibliografía consolidada (`07-bibliografia/01-bibliografia-orientativa.md`);

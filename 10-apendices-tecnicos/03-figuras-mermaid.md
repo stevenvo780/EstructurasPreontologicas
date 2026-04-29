@@ -1,4 +1,4 @@
-# Anexo A.10. Figuras Mermaid
+# Apéndice técnico 3. Figuras Mermaid
 
 Diagramas formales del manuscrito en formato Mermaid (renderable directamente por GitHub, GitLab, Pandoc + filtros, y la mayoría de visores Markdown). Reemplaza los diagramas ASCII art que aparecen en el cuerpo de los capítulos.
 
@@ -8,7 +8,7 @@ Diagramas formales del manuscrito en formato Mermaid (renderable directamente po
 - PNG (1600×1200): `figures/mermaid_png/figura_<NN>.png`
 - Fuente `.mmd` extraída automáticamente: `figures/mermaid_src/figura_<NN>.mmd`
 
-La numeración `<NN>` (01-09) corresponde al orden de aparición en este anexo (`Figura A.10.1` → `figura_01.svg`, etc.). La regeneración es reproducible con `scripts/render_mermaid.sh`.
+La numeración `<NN>` (01-09) corresponde al orden de aparición en este apéndice (`Figura T.3.1` → `figura_01.svg`, etc.). La regeneración es reproducible con `scripts/render_mermaid.sh`.
 
 ---
 
@@ -197,10 +197,10 @@ graph TD
 
 ## Trazabilidad
 
-Las figuras están versionadas en este anexo. Cualquier cambio se ejecuta aquí y se referencia desde el capítulo que las menciona. La conversión a SVG/PNG se ejecuta pre-depósito mediante:
+Las figuras están versionadas en este apéndice. Cualquier cambio se ejecuta aquí y se referencia desde el capítulo que las menciona. La conversión a SVG/PNG se ejecuta pre-depósito mediante:
 
 ```bash
-mmdc -i Anexos/A10-figuras-mermaid.md -o Anexos/figuras/  # mermaid-cli
+mmdc -i 10-apendices-tecnicos/03-figuras-mermaid.md -o figures/mermaid_svg/  # mermaid-cli
 ```
 
 o automáticamente por GitHub/Pandoc con filtros mermaid.

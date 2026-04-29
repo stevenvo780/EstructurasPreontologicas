@@ -91,8 +91,8 @@ Los invariantes ontológicos son cuatro:
 
 Esta invarianza no es postulado *a priori*: está respaldada por los corpus operativos complementarios que **no se distinguen ontológicamente entre sí**, solo metodológicamente:
 
-- **Corpus inter-dominio (30 casos):** discriminación entre dominios heterogéneos —física, biología, economía, política, tecnología, cultura, conducta humana— operando en escalas variables según el dominio (cap 09 + Anexo A.8).
-- **Corpus inter-escala (10 casos):** discriminación a través de **30 órdenes de magnitud espaciales** y temporales, desde dinámica de espín-órbita atómica (10⁻¹⁰ m, 10⁻¹⁵ s) hasta dinámica de cúmulos globulares (10²⁰ m, 10¹⁴ s), con **7 strong en 7 escalas distintas** + 1 weak + 2 nulls honestos (cap 05-06 + Anexo A.12).
+- **Corpus inter-dominio (30 casos):** discriminación entre dominios heterogéneos —física, biología, economía, política, tecnología, cultura, conducta humana— operando en escalas variables según el dominio (cap 09 + apéndice técnico 1).
+- **Corpus inter-escala (10 casos):** discriminación a través de **30 órdenes de magnitud espaciales** y temporales, desde dinámica de espín-órbita atómica (10⁻¹⁰ m, 10⁻¹⁵ s) hasta dinámica de cúmulos globulares (10²⁰ m, 10¹⁴ s), con **7 strong en 7 escalas distintas** + 1 weak + 2 nulls honestos (cap 05-06 + apéndice técnico 2).
 
 Las **estructuras pre-ontológicas** son objeto operativo a cualquier escala donde el aparato puede operar con sondas físicamente motivadas. No son artefacto de ninguna escala particular. Esta es la afirmación ontológica más fuerte que el corpus actual sostiene, con la honestidad metodológica de reportar los nulls (Villin Headpiece bajo sonda equilibrio; locomoción τ-dot bajo observación con reinicios discretos) sin ajustarlos para forzar overall_pass.
 
@@ -123,7 +123,7 @@ Esta es la diferencia entre **ontología general** y **descripción multidominio
 
 ### Nota sobre el sistema modal asumido
 
-Cuando este capítulo y los posteriores invocan **necesidad** o **contingencia** (e.g., "la materialidad es necesaria", "el cierre operativo es contingente"), la lógica modal asumida es **al menos T (KT)**: el axioma de reflexividad `□P → P` está disponible. Esto significa que lo declarado como necesario implica que ocurre en el mundo de evaluación, evitando una lectura puramente esquemática de la necesidad. Sistemas más ricos (S4, S5) son admisibles para la lectura epistémica del capítulo de epistemología. La validación lógica formal con ST (Anexo A.11) verificó que en `modal.k` básico la necesidad no implica efectividad, lo cual sería incoherente con la posición material-relacional.
+Cuando este capítulo y los posteriores invocan **necesidad** o **contingencia** (e.g., "la materialidad es necesaria", "el cierre operativo es contingente"), la lógica modal asumida es **al menos T (KT)**: el axioma de reflexividad `□P → P` está disponible. Esto significa que lo declarado como necesario implica que ocurre en el mundo de evaluación, evitando una lectura puramente esquemática de la necesidad. Sistemas más ricos (S4, S5) son admisibles para la lectura epistémica del capítulo de epistemología. La validación lógica formal con ST (Parte II) verificó que en `modal.k` básico la necesidad no implica efectividad, lo cual sería incoherente con la posición material-relacional.
 
 ### Nota sobre el grado de compromiso ontológico de κ
 
@@ -359,4 +359,3 @@ La afirmación "estructuras pre-ontológicas a escala cuántica" tiene sentido *
 ## 14. Evolución conceptual
 
 La formulación intuitiva de partida evolucionó hacia la versión canónica. Los claims principales que sobreviven íntegramente son: monismo material-dinámico, estructuras pre-ontológicas como atractores, compresión disciplinada como epistemología, asimetría L1↔B↔L3↔S, emergencia como self-organization, dossier de admisión, y la fórmula "X exhibe cierre operativo bajo I respecto a Q". Los claims refinados incluyen: caso 30 con circularidad reconocida, corpus post-hoc, AUC-ROC interno, κ-pragmática vs κ-ontológica distinguidas, sistema modal T explícito. La continuidad conceptual es fuerte; la honestidad metodológica es mayor en la versión actual.
-

@@ -2,7 +2,7 @@
 
 ## Visión general
 
-La tesis se transforma en manuscrito doctoral final de **seis capítulos**, más introducción, conclusión demostrativa, guía de defensa, hoja de ruta y anexos operativos. Esta distribución mantiene la fortaleza filosófica del manuscrito-fuente y le añade la arquitectura argumental que cierra la demostración.
+La tesis se transforma en manuscrito doctoral final con preliminares, partes argumentales, conclusión demostrativa, hoja de ruta y apéndices técnicos mínimos. Esta distribución mantiene la fortaleza filosófica del manuscrito-fuente y evita que materiales operativos sustituyan el cuerpo argumental.
 
 ## Política de capítulos
 
@@ -171,16 +171,16 @@ Cerrar la tesis con su régimen de validez declarado. La tesis demuestra lo que 
 - líneas futuras de investigación (hoja de ruta del capítulo 06-03);
 - alcance interdisciplinario (filosofía, ciencia cognitiva, sistemas dinámicos, biología, sociología, informática).
 
-## Anexos operativos
+## Integración de materiales operativos
 
-1. **glosario operativo**: definición de trabajo de cada término del marco;
-2. **mapa de operadores formales**: presentación visual del aparato μ, G, H, κ, ε;
-3. **plantilla del dossier de anclaje** (de capítulo 03-02 §3);
-4. **matriz de auditoría ontológica** (de capítulo 03-03);
-5. **cuadros comparativos con posiciones rivales** (de capítulo 04-01);
-6. **mapa de aplicaciones** (estado demostrativo / programático y deuda);
-7. **versiones cortas de la tesis** (1 página, 2 minutos, 5 minutos, 15 minutos);
-8. **bibliografía consolidada** en formato académico estándar.
+1. **glosario operativo**: preliminares;
+2. **mapa de operadores formales**: Parte II;
+3. **plantilla del dossier de anclaje**: Parte II;
+4. **matriz de auditoría ontológica**: Parte II;
+5. **cuadros comparativos con posiciones rivales**: Parte IV;
+6. **mapa de aplicaciones**: Parte III;
+7. **versiones cortas de la tesis**: soporte de defensa en `06-cierre/`, fuera del manuscrito principal;
+8. **bibliografía consolidada**: capítulo final.
 
 ## Regla práctica de redacción
 

@@ -1,4 +1,4 @@
-# Anexo A.13. Anticipación de objeciones filosóficas (borrador)
+# Anticipación de objeciones filosóficas (borrador validable)
 
 > **Status:** borrador. Estos textos son propuestas de respuesta argumental que **Jacob debe validar y reescribir** desde su voz filosófica antes de incorporar al manuscrito. La asistencia técnica los redacta como anclaje argumental para 7 objeciones críticas detectadas en la auditoría doctoral (F1, F2, F3, F5, F6, F9, F10), no como respuestas definitivas. Si Jacob discrepa con la línea argumental, el borrador se rechaza completo.
 
@@ -44,7 +44,7 @@ La política es: **no responder con bravata; responder con honestidad estructura
 
 **Costo.** La identidad nominal pre-formal (lo que el sentido común llama "este objeto") sigue requiriendo recorte. La tesis declara que ese recorte es construido (cap 02-03 §1) y no pretende derivar la identidad cotidiana del aparato formal. Lo que sí deriva: la individuación operativa replicable.
 
-**Lectura recomendada:** cap 02-03 §4, cap 03-01 §operadores, Anexo A.3 §componentes 6-8.
+**Lectura recomendada:** cap 02-03 §4, cap 03-01 §operadores, capítulo metodológico sobre plantilla del dossier §componentes 6-8.
 
 ---
 
@@ -65,7 +65,7 @@ La conjunción "ontología subyacente multiescalar" es lectura **regulativa** (e
 
 **Costo.** La tesis sale del territorio de lo demostrado para entrar en el de lo programático. Lakatos llamaría a esto "núcleo duro + cinturón protector": el núcleo duro es la articulación L1↔B↔L3↔S; el cinturón es el corpus que falsa o confirma. Si el corpus deja de extenderse (caso 41 nuevo deja de pasar), el núcleo duro queda en duda.
 
-**Lectura recomendada:** cap 02-01 §0.4, cap 04-02 §3 limitaciones, A.0 limitaciones declaradas.
+**Lectura recomendada:** cap 02-01 §0.4, cap 04-02 §3 limitaciones, capítulo de limitaciones declaradas consolidadas.
 
 ---
 
@@ -118,7 +118,7 @@ La conjunción "ontología subyacente multiescalar" es lectura **regulativa** (e
 
 **Costo.** Si el lector espera una diferencia ontológica fuerte entre B y L3, no la encontrará. La tesis paga el costo de tener una asimetría más modesta (procedimental) a cambio de tener una asimetría **operativamente verificable** en cada caso del corpus.
 
-**Lectura recomendada:** cap 02-04 §8, cap 03-01 §operador κ, A.3 §componentes 9-12.
+**Lectura recomendada:** cap 02-04 §8, cap 03-01 §operador κ, capítulo metodológico sobre plantilla del dossier §componentes 9-12.
 
 ---
 
@@ -143,7 +143,7 @@ La conjunción "ontología subyacente multiescalar" es lectura **regulativa** (e
 
 **Costo.** Comités humanistas pueden rechazar la tesis por demasiado restringida. La defensa es: una tesis con alcance acotado y demostrado es preferible a una con alcance ilimitado y no demostrado.
 
-**Lectura recomendada:** A.0 limitaciones declaradas, cap 06-03 hoja de ruta para extensiones.
+**Lectura recomendada:** capítulo de limitaciones declaradas consolidadas, cap 06-03 hoja de ruta para extensiones.
 
 ---
 
@@ -153,7 +153,7 @@ La conjunción "ontología subyacente multiescalar" es lectura **regulativa** (e
 - Tarea original: anticipación de objeciones para Jacob (`TAREAS_POR_RESPONSABLE.md` §2 — borrador asistido, validación humana).
 - Estado: borrador. Requiere validación filosófica de Jacob antes de incorporación al manuscrito.
 - Si Jacob aprueba sustancialmente: las secciones se mueven a `04-debates/03-anticipacion-objeciones.md` como capítulo permanente.
-- Si Jacob discrepa sustancialmente: el borrador se rechaza completo y este anexo se archiva en Bitacora como referencia histórica.
+- Si Jacob discrepa sustancialmente: el borrador se rechaza completo y este capítulo se archiva en Bitacora como referencia histórica.
 
 ## Recordatorio metodológico
 

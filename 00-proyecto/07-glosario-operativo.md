@@ -1,4 +1,4 @@
-# Anexo A.1. Glosario operativo
+# Glosario operativo
 
 ## Función
 

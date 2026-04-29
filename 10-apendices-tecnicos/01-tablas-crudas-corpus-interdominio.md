@@ -1,10 +1,10 @@
-# Anexo A.8. Tablas crudas del corpus EDI
+# Apéndice técnico 1. Tablas crudas del corpus EDI inter-dominio
 
 ## Función
 
-Anexo tabular de **resultados crudos verificables** del corpus EDI multidominio. La fuente de verdad numérica son los `outputs/metrics.json` versionados en `09-simulaciones-edi/<caso>/`. Este anexo consolida las cifras exactas en una sola tabla auditable por el comité doctoral.
+Apéndice tabular de **resultados crudos verificables** del corpus EDI multidominio. La fuente de verdad numérica son los `outputs/metrics.json` versionados en `09-simulaciones-edi/<caso>/`. Este apéndice consolida las cifras exactas en una sola tabla auditable por el comité doctoral.
 
-**Política:** todas las cifras son las publicadas en los `metrics.json` del repositorio. Si hay discrepancia entre este anexo y el `metrics.json` correspondiente, **prevalece el `metrics.json`** y este anexo se actualiza como erratum.
+**Política:** todas las cifras son las publicadas en los `metrics.json` del repositorio. Si hay discrepancia entre este apéndice y el `metrics.json` correspondiente, **prevalece el `metrics.json`** y este apéndice se actualiza como erratum.
 
 ---
 
@@ -121,11 +121,11 @@ La verificación masiva del corpus completo bajo perfil agresivo es trabajo futu
 
 ## Instrucción al lector
 
-Para verificar cualquier cifra de este anexo:
+Para verificar cualquier cifra de este apéndice:
 
 ```bash
 cd 09-simulaciones-edi/<NN_caso_xxx>
 cat outputs/metrics.json | python3 -m json.tool
 ```
 
-Si una cifra del anexo no coincide con `metrics.json`, prevalece `metrics.json` y este anexo se corrige.
+Si una cifra del apéndice no coincide con `metrics.json`, prevalece `metrics.json` y este apéndice se corrige.

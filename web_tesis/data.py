@@ -20,7 +20,7 @@ VIS_ROOT = ROOT / "visualizations"  # Optional; created on demand if missing
 
 CHAPTER_DIRS = [
     # Introducción
-    ("00-proyecto", "Introducción y plan del proyecto"),
+    ("00-proyecto", "Preliminares, introducción y plan del proyecto"),
     ("01-diagnostico", "Estado del arte y diagnóstico"),
     # Cuerpo argumental principal
     ("02-fundamentos", "Parte I · Fundamentos ontológicos y epistemológicos"),
@@ -29,9 +29,9 @@ CHAPTER_DIRS = [
     ("09-simulaciones-edi", "Parte III · Corpus EDI inter-dominio + inter-escala"),
     ("04-debates", "Parte IV · Discusión crítica"),
     ("06-cierre", "Parte V · Cierre demostrativo"),
-    # Material complementario al final
+    # Material complementario mínimo al final
     ("07-bibliografia", "Bibliografía consolidada"),
-    ("Anexos", "Anexos operativos (A.1 a A.12)"),
+    ("10-apendices-tecnicos", "Apéndices técnicos mínimos"),
     ("08-consistencia-st", "Consistencia ST (validación lógica)"),
 ]
 

@@ -1,4 +1,4 @@
-# Anexo A.4. Tabla comparativa con rivales
+# Tabla comparativa con rivales
 
 ## Función
 

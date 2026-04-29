@@ -156,7 +156,7 @@ Este es el aporte estructural del capítulo. La asimetría no es decorativa; es 
 
 ### 8.0. Nota sobre el nivel cuantificacional de la asimetría
 
-La asimetría se formula con dos partes que viven en niveles cuantificacionales distintos. La validación lógica formal con ST (Anexo A.11, Hallazgo ST-1) detectó que mezclarlos en un solo nivel produce contradicción proposicional. La formulación correcta es:
+La asimetría se formula con dos partes que viven en niveles cuantificacionales distintos. La validación lógica formal con ST (Parte II, validación lógica formal, Hallazgo ST-1) detectó que mezclarlos en un solo nivel produce contradicción proposicional. La formulación correcta es:
 
 - **Universal:** la traducción B ↔ L3 es bidireccional para toda categoría admisible (`∀x ((B(x) ↔ L3(x)))`); el filtro de S vía B y L3 es universal (`∀x ((B(x) ∧ L3(x)) → S(x))`).
 - **Existencial:** las afirmaciones *"L1 no se deriva universalmente de S"* y *"S no se deriva universalmente de L1"* son **existenciales** (`∃x (L1(x) ∧ ¬S(x))` y `∃x (S(x) ∧ ¬L1(x))`), no negaciones de implicación universal. Significan: existen categorías L1 que no sobreviven al filtro y existen categorías S que no proceden de un L1 nombrado.

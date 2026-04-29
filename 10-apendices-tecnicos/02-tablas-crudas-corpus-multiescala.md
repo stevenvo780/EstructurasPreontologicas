@@ -1,10 +1,10 @@
-# Anexo A.12. Corpus EDI multiescala — tablas crudas
+# Apéndice técnico 2. Tablas crudas del corpus EDI multiescala
 
 ## Función
 
-Anexo tabular de **resultados crudos verificables** del corpus EDI multiescala (10 casos en escalas distintas a la macro). La fuente de verdad numérica son los `outputs/metrics.json` versionados en `09-simulaciones-edi/corpus_multiescala/<caso>/`.
+Apéndice tabular de **resultados crudos verificables** del corpus EDI multiescala (10 casos en escalas distintas a la macro). La fuente de verdad numérica son los `outputs/metrics.json` versionados en `09-simulaciones-edi/corpus_multiescala/<caso>/`.
 
-**Política:** todas las cifras son las publicadas en los `metrics.json`. Si hay discrepancia entre este anexo y el `metrics.json` correspondiente, **prevalece el `metrics.json`**.
+**Política:** todas las cifras son las publicadas en los `metrics.json`. Si hay discrepancia entre este apéndice y el `metrics.json` correspondiente, **prevalece el `metrics.json`**.
 
 ---
 
@@ -77,4 +77,4 @@ Anexo tabular de **resultados crudos verificables** del corpus EDI multiescala (
 - código: `09-simulaciones-edi/corpus_multiescala/<caso>/run.py`
 - motor común: `09-simulaciones-edi/corpus_multiescala/edi_engine.py`
 - discusión: `05-aplicaciones/06-corpus-multiescala.md`
-- corpus macro original: `Anexos/A8-tablas-crudas-corpus.md`
+- corpus macro original: `10-apendices-tecnicos/01-tablas-crudas-corpus-interdominio.md`

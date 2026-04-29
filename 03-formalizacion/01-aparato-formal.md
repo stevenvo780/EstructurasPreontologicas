@@ -19,7 +19,7 @@ S4  — semántica revisada (S)                   (capítulo 02-03)
 
 El nivel B (conductual-biológico, capítulo 02-04) no es un registro paralelo; es el lugar donde E1 vive cuando el dominio es psicológico-conductual: la medición se hace sobre el par dinámico acoplado.
 
-> Notas terminológicas: cada operador definido a continuación está glosado además en el **Anexo A.1 — Glosario operativo**. Cualquier término técnico introducido en este capítulo (μ, G, H, κ, ε, dossier de anclaje, EDI, LoE, asimetría L1↔B↔L3↔S) puede consultarse allí con definición autocontenida y referencias cruzadas.
+> Notas terminológicas: cada operador definido a continuación está glosado además en el **Glosario operativo** de preliminares. Cualquier término técnico introducido en este capítulo (μ, G, H, κ, ε, dossier de anclaje, EDI, LoE, asimetría L1↔B↔L3↔S) puede consultarse allí con definición autocontenida y referencias cruzadas.
 
 > Capa de consistencia lógica: las afirmaciones declarativas centrales del aparato y los teoremas mínimos que la tesis afirma derivar (núcleo ontológico, criterios de legitimidad, debates) están formalizadas adicionalmente en `08-consistencia-st/theories/` mediante el lenguaje ST (`@stevenvo780/st-lang`). Esta capa no sustituye el trabajo filosófico: opera como verificador automático de consistencia interna y trazabilidad. Los reportes generados se consolidan en `08-consistencia-st/reports/` y se usan internamente para detectar contradicciones simples antes de cada cierre de versión del manuscrito.
 
@@ -255,7 +255,7 @@ Pearl (2009, *Causality*, 2.ª ed., cap. 3, p. 70) define el operador de interve
 
 ### 12.2. Ladyman y Ross — realismo estructural informativo
 
-Ladyman y Ross (2007, *Every Thing Must Go*, §3.4) sostienen que la ontología fundamental es estructural: *"the world is not made of things or stuff but of structure all the way down"*. La tesis converge parcialmente: las invariantes son, en este marco, las propiedades preservadas por `κ`. Diverge en que la tesis no postula estructura como ontología fundamental sino como **descripción operativa del sustrato material**: la estructura es estructura **del** sustrato dinámico, no flotante (cap 02-01). Esta es la diferencia que la tabla A.4 codifica como discriminación en el criterio A (anclaje material).
+Ladyman y Ross (2007, *Every Thing Must Go*, §3.4) sostienen que la ontología fundamental es estructural: *"the world is not made of things or stuff but of structure all the way down"*. La tesis converge parcialmente: las invariantes son, en este marco, las propiedades preservadas por `κ`. Diverge en que la tesis no postula estructura como ontología fundamental sino como **descripción operativa del sustrato material**: la estructura es estructura **del** sustrato dinámico, no flotante (cap 02-01). Esta es la diferencia que la tabla comparativa con rivales codifica como discriminación en el criterio A (anclaje material).
 
 ### 12.3. Strogatz, Kelso, Haken — sistemas dinámicos no lineales
 

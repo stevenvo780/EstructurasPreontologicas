@@ -1,4 +1,4 @@
-# Anexo A.11. Validación lógica formal con ST
+# Validación lógica formal con ST
 
 ## Función
 
@@ -186,7 +186,7 @@ Sistema modal **al menos T (KT)** declarado en cap 02-01. T22 confirma: en `moda
 
 La validación ST debe leerse como certificación de coherencia interna del marco, no como certificación de validez filosófica o empírica. Las dos validaciones complementarias son:
 
-- **validez empírica:** corpus EDI inter-dominio + inter-escala (cap 09 + 05-06 + A.8 + A.12), con limitaciones documentadas en las auditorías iterativas;
+- **validez empírica:** corpus EDI inter-dominio + inter-escala (cap 09 + 05-06 + apéndices técnicos de tablas crudas), con limitaciones documentadas en las auditorías iterativas;
 - **validez filosófica:** revisión por pares humanos competentes en filosofía de la mente, ontología analítica y ciencias de la complejidad (deuda externa pendiente).
 
 Esta declaración cubre los puntos sustantivos del marco filosófico (temporalidad, causalidad, pre-ontológico genético, naturalismo declarado, κ-pragmática/ontológica, dimensión normativa, asimetría multiescalar).

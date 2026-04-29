@@ -58,7 +58,7 @@ Regla operativa: cada uso de un término del marco debe poder traducirse a opera
 
 ### Programa posterior
 
-Glosario operativo (capítulo 06-03 §anexos) y auditoría periódica del propio léxico durante la fase de redacción final.
+Glosario operativo de preliminares y auditoría periódica del propio léxico durante la fase de redacción final.
 
 ## 4. Tratamiento programático de la dimensión normativa
 
@@ -198,4 +198,3 @@ Ese tipo de modestia fuerte suele convencer más que una ambición totalizadora 
 ## 13. Cierre
 
 La tesis sobrevive a las objeciones discriminantes (capítulo 04-01 y 01-diagnostico/02) si logra mantener austeridad ontológica, riqueza estructural, criterios explícitos, casos comparativos fuertes y vigilancia del propio léxico. Los seis límites de este capítulo no debilitan la tesis: la sitúan en su régimen de validez. Una tesis sin límites nombrados es una tesis que aún no se ha sometido a sí misma a su propio filtro.
-
