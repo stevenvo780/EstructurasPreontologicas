@@ -1,7 +1,7 @@
 """
 data.py — 29_caso_iot (Top-Tier)
 
-Ecosistema IoT Global: Difusión tecnológica masiva como hiperobjeto.
+Ecosistema IoT Global: Difusión tecnológica masiva como estructura pre-ontológica de cierre operativo distribuido.
 
 Fuentes de datos reales (multi-indicador World Bank):
 1. IT.CEL.SETS.P2 — Suscripciones móviles por 100 hab (variable objetivo)

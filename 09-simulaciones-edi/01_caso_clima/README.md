@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Modelado del **clima regional** como hiperobjeto mediante un modelo híbrido ABM+ODE basado en el **Balance Energético de Budyko-Sellers** linealizado. El observable es la temperatura media mensual de la región CONUS (Continental US) con drivers exógenos reales: CO₂ (Mauna Loa), TSI (irradiancia solar), OHC (contenido calórico oceánico) y AOD (profundidad óptica de aerosoles).
+Modelado del **clima regional** como estructura pre-ontológica mediante un modelo híbrido ABM+ODE basado en el **Balance Energético de Budyko-Sellers** linealizado. El observable es la temperatura media mensual de la región CONUS (Continental US) con drivers exógenos reales: CO₂ (Mauna Loa), TSI (irradiancia solar), OHC (contenido calórico oceánico) y AOD (profundidad óptica de aerosoles).
 
 **Dominio**: Ciencias climáticas  
 **Nivel de Evidencia (LoE)**: 5 (máximo) — IPCC AR6, CMIP6 ensemble, datos instrumentales de alta calidad  
@@ -108,7 +108,7 @@ $$
 G_t \leftarrow G_t + m_c \cdot (T'_{\text{ODE},t} - \bar{G}_t)
 $$
 
-Esto implementa la "descendencia causal" del hiperobjeto: la estructura macro (ODE) constriñe la dinámica micro (ABM).
+Esto implementa la "descendencia causal" del estructura pre-ontológica: la estructura macro (ODE) constriñe la dinámica micro (ABM).
 
 **Topología**: Red de mundo pequeño Watts-Strogatz (k=4, p=0.1) sobre la grilla, lo que permite conexiones de largo alcance con baja probabilidad de reconexión.
 
@@ -218,7 +218,7 @@ python3 validate.py
 | Sintético | ~-0.60 | ❌ | ✅ | ✅ | ✅ | ✅ | ❌ |
 | Real | ~-0.30 | ❌ | ❌ | ✅ | ✅ | ❌ | ❌ |
 
-**Interpretación**: El EDI negativo indica que el ABM sin ODE trackea mejor que el acoplado. Esto es consistente con la alta inercia climática (τ ≈ 139 años) — en una ventana de 14 años, la estructura macro del ODE no aporta información predictiva adicional significativa sobre la tendencia que el ABM puro ya captura mediante el forcing directo. El caso documenta correctamente los límites del framework cuando la escala temporal del hiperobjeto excede la ventana observacional.
+**Interpretación**: El EDI negativo indica que el ABM sin ODE trackea mejor que el acoplado. Esto es consistente con la alta inercia climática (τ ≈ 139 años) — en una ventana de 14 años, la estructura macro del ODE no aporta información predictiva adicional significativa sobre la tendencia que el ABM puro ya captura mediante el forcing directo. El caso documenta correctamente los límites del framework cuando la escala temporal del estructura pre-ontológica excede la ventana observacional.
 
 ---
 

@@ -1,8 +1,8 @@
 # Caso 29 — Ecosistema IoT Global
 
-## Hiperobjeto
+## Estructura pre-ontológica
 
-El ecosistema global del Internet de las Cosas como hiperobjeto.
+El ecosistema global del Internet de las Cosas como estructura pre-ontológica.
 Propiedades: masivamente distribuido (miles de millones de dispositivos),
 no-local (interconexión global), viscoso (path dependency tecnológica,
 lock-in) y con efectos de red Metcalfe (valor ∝ N²).

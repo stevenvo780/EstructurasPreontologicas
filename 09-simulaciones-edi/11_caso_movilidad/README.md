@@ -2,7 +2,7 @@
 
 ## Propósito
 
-Evaluar si el tráfico urbano agregado exhibe propiedades de hiperobjeto:
+Evaluar si el tráfico urbano agregado exhibe propiedades de cierre operativo:
 viscosidad temporal (congestión persistente), no-localidad (efectos en
 toda la red), y causalidad descendente (MFD constriñe velocidades locales).
 

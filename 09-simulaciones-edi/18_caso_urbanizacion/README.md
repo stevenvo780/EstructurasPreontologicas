@@ -2,7 +2,7 @@
 
 ## Propósito
 
-Evaluar si el sistema urbano global exhibe propiedades de hiperobjeto:
+Evaluar si el sistema urbano global exhibe propiedades de cierre operativo:
 no-localidad (ciudades conectadas por comercio, migración, ideas),
 viscosidad temporal (infraestructura persiste siglos), y causalidad
 descendente del «sistema urbano» sobre decisiones individuales de

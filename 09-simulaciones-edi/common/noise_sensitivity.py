@@ -1,5 +1,5 @@
 """
-noise_sensitivity.py — Test de sensibilidad al ruido para validación de hiperobjetos.
+noise_sensitivity.py — Test de sensibilidad al ruido para validación de estructuras pre-ontológicas.
 
 Verifica que el EDI no sea artefacto del nivel de ruido:
 - Re-ejecuta el modelo con 5 niveles de base_noise (0.5×, 0.75×, 1.0×, 1.5×, 2.0× del original)

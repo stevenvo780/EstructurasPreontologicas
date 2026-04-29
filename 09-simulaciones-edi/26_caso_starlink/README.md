@@ -1,9 +1,9 @@
 # Caso 26 — Constelaciones Satelitales (Starlink)
 
-## Hiperobjeto
+## Estructura pre-ontológica
 
 Las mega-constelaciones satelitales como estructura emergente que modifica
-irreversiblemente el entorno orbital. Propiedades de hiperobjeto: masivamente
+irreversiblemente el entorno orbital. Propiedades de estructura pre-ontológica: masivamente
 distribuido (miles de objetos en LEO), no-local (afecta observaciones
 astronómicas globales), viscoso (debris persiste décadas) y con transición
 de fase Kessler (Kessler & Cour-Palais 1978).

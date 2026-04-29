@@ -1,7 +1,7 @@
 # Arquitectura de Modelos (Capas)
 
 ## Conceptual
-- Hiperobjeto: demanda electrica agregada persistente con shocks externos.
+- Estructura pre-ontológica: demanda electrica agregada persistente con shocks externos.
 - Mecanismo: difusion local + forcing externo (clima, actividad economica).
 - Delimitacion: serie nacional de demanda como proxy del sistema.
 

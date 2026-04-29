@@ -153,7 +153,7 @@ def fetch_worldbank_indicator(
     params = {"format": "json", "per_page": 500, "date": f"{start_year}:{end_year}"}
     
     try:
-        resp = requests.get(url, params=params, headers={"User-Agent": "Hiperobjetos/0.1"}, timeout=timeout)
+        resp = requests.get(url, params=params, headers={"User-Agent": "EDI-validator/1.0"}, timeout=timeout)
         resp.raise_for_status()
         data = resp.json()
         

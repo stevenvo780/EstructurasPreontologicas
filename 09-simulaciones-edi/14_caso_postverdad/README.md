@@ -3,7 +3,7 @@
 ## Propósito
 
 Evaluar si la desinformación masiva (postverdad) exhibe propiedades de
-hiperobjeto: persistencia temporal, viscosidad, y causalidad descendente
+estructura pre-ontológica: persistencia temporal, viscosidad, y causalidad descendente
 del «ecosistema informativo» sobre la opinión individual.
 
 ---

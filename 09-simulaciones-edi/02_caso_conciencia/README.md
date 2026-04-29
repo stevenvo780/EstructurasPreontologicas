@@ -174,7 +174,7 @@ synthetic: EDI = 0.112, overall_pass = False
 real:      EDI = -0.063, overall_pass = False
 ```
 
-El caso NO valida la hipótesis de hiperobjeto (EDI < 0.30). El driver
+El caso NO valida la hipótesis de estructura pre-ontológica (EDI < 0.30). El driver
 (tasa de suicidio) tiene resolución temporal demasiado baja (anual) para
 capturar la dinámica mensual de la atención colectiva.
 

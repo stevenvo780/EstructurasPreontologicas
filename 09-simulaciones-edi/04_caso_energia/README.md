@@ -2,7 +2,7 @@
 
 ## Descripción
 
-Modela la **transición energética** como hiperobjeto emergente. La
+Modela la **transición energética** como estructura pre-ontológica de cierre operativo. La
 competencia entre fuentes fósiles y renovables en el mix energético
 produce dinámicas de sustitución tecnológica que trascienden las
 decisiones individuales de los productores.

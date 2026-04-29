@@ -1,8 +1,8 @@
 # Caso 24 — Microplásticos Oceánicos
 
-## Hiperobjeto
+## Estructura pre-ontológica
 
-Contaminación por microplásticos en los océanos. Paradigma de hiperobjeto
+Contaminación por microplásticos en los océanos. Paradigma de estructura pre-ontológica
 mortoniano: persistencia extrema (t½ ≈ 300–450 años), distribución masiva
 (gyres, sedimentos, columna de agua), invisibilidad a escala humana y
 retroalimentación con cadenas tróficas (Jambeck et al. 2015; Geyer et al. 2017).
@@ -63,7 +63,7 @@ F(t) = 0.010·t + 0.0003·t^1.2
 confirmando que la ODE macro (acumulación persistente) reduce significativamente
 el error del ABM. La persistencia extrema (β + burial ≈ 0.5%/año de remoción)
 genera un atractor macroscópico genuino. Este caso valida la hipótesis del
-hiperobjeto: la acumulación global de microplásticos constituye una estructura
+estructura pre-ontológica: la acumulación global de microplásticos constituye una estructura
 emergente irreducible a los agentes individuales.
 
 ## Archivos

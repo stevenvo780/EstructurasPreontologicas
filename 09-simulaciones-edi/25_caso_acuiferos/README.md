@@ -1,8 +1,8 @@
 # Caso 25 — Depleción de Acuíferos
 
-## Hiperobjeto
+## Estructura pre-ontológica
 
-Sobreexplotación global de acuíferos. Los acuíferos son hiperobjetos
+Sobreexplotación global de acuíferos. Los acuíferos son estructuras pre-ontológicas
 mortonianos: masivamente distribuidos, con inercia temporal enorme (recarga
 en escalas de décadas-siglos), invisibles (subterráneos) y con subsidencia
 irreversible por debajo de umbrales críticos (Konikow & Kendy 2005).

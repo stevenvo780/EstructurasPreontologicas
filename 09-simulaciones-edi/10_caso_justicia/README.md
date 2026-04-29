@@ -3,7 +3,7 @@
 ## Propósito
 
 Evaluar si la «justicia algorítmica» (normas legales que permean la
-sociedad) exhibe propiedades de hiperobjeto: viscosidad temporal,
+sociedad) exhibe propiedades de cierre operativo: viscosidad temporal,
 no-localidad, y causalidad descendente sobre las opiniones individuales.
 
 ---

@@ -30,7 +30,7 @@ nuevo = actual
 ## Acoplamiento
 El parámetro de orden macro restringe las dinámicas locales vía `macro_coupling`.
 La asimilación de datos (nudging) conecta observaciones reales al modelo,
-justificada teóricamente como la formalización del acoplamiento hiperobjeto–materia.
+justificada teóricamente como la formalización del acoplamiento estructura pre-ontológica–materia.
 
 ## Supuestos
 - Separación de escalas temporal entre macro y micro

@@ -5,7 +5,7 @@
 
 ## Resumen de Calidad
 
-Tras inspeccionar el código fuente (`ode.py` y `abm.py`) de los 29 casos, se confirma que el **100% de los casos validados (26/29)** utilizan modelos personalizados y específicos para su dominio. No se detectaron modelos genéricos ("Random Walk" o "Mean Reversion" simple) en los casos que pretenden validar hiperobjetos realistas.
+Tras inspeccionar el código fuente (`ode.py` y `abm.py`) de los 29 casos, se confirma que el **100% de los casos validados (26/29)** utilizan modelos personalizados y específicos para su dominio. No se detectaron modelos genéricos ("Random Walk" o "Mean Reversion" simple) en los casos que pretenden validar estructuras pre-ontológicas robustas.
 
 *   **Nivel 1 (Gold Standard):** Modelos con ecuaciones diferenciales con nombre propio (ej. Budyko-Sellers, Heston, SEIR) y ABMs con topología específica.
 *   **Nivel 2 (Silver Standard):** Modelos fenomenológicos adaptados (ej. Acumulación con decaimiento parametrizado) donde no existe una ecuación física única.

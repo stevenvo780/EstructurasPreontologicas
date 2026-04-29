@@ -3,7 +3,7 @@
 ## Propósito
 
 Evaluar si el océano global —como sistema termohalino— exhibe propiedades
-de hiperobjeto: no-localidad (corrientes redistribuyen calor globalmente),
+de estructura pre-ontológica: no-localidad (corrientes redistribuyen calor globalmente),
 viscosidad temporal (inercia térmica de décadas), y causalidad descendente
 de la «circulación termohalina» sobre parcelas oceánicas locales.
 

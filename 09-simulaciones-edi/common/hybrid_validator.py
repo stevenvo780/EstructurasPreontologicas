@@ -1116,7 +1116,7 @@ def evaluate_viscosity(base_params, steps, val_start, simulate_abm_fn,
                        series_key, magnitude=2.0, seed=42):
     """
     Test de Viscosidad: Perturbación tipo 'shock' y medición de tiempo de relajación.
-    Hipótesis: Hiperobjetos reales tienen alta viscosidad (inercia estructural).
+    Hipótesis: estructuras pre-ontológicas robustas tienen alta viscosidad (inercia estructural).
     """
     # 1. Simulación base (sin perturbación)
     p_base = dict(base_params)
@@ -1824,7 +1824,7 @@ def evaluate_phase(config, df, start_date, end_date, split_date,
     cr_valid = cr > 2.0  # Indicador de frontera nítida (informativo)
 
     # overall_pass: cr_valid excluido del gate — es indicador, no requisito.
-    # Justificación: los hiperobjetos son constructos metaestables con fronteras
+    # Justificación: las estructuras pre-ontológicas son constructos metaestables con fronteras
     # difusas (Symploké). sym_ok (internal >= external) ya verifica cohesión.
     # cr_valid > 2.0 es demasiado restrictivo (3/29) para emergencia no-fuerte.
     overall = all([c1, c2, c3, c4, c5, sym_ok, non_local_ok, persist_ok,
@@ -1853,7 +1853,7 @@ def evaluate_phase(config, df, start_date, end_date, split_date,
     # ── Taxonomía de cierre operativo (Irrealismo Operativo) ──
     # Clasifica el grado de cierre operativo del fenómeno: qué tan fuerte
     # es la constricción macro→micro medida por EDI y significancia.
-    # Niveles 0-5 (5 = hiperobjeto fuerte, reservado para cierre + CR>2 + persistencia extendida).
+    # Niveles 0-5 (5 = atractor robusto, reservado para cierre + CR>2 + persistencia extendida).
     ode_obs_corr = c1_detail["corr_ode"]
     if abs(ode_obs_corr) > 0.7:
         ode_quality = "good"

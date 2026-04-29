@@ -1,9 +1,9 @@
 # Caso 23 — Erosión Dialéctica
 
-## Hiperobjeto
+## Estructura pre-ontológica
 
 Pérdida progresiva de diversidad lingüística dialectal bajo presión mediática
-y globalización. La erosión dialectal opera como hiperobjeto: es no-local
+y globalización. La erosión dialectal opera como estructura pre-ontológica: es no-local
 (afecta simultáneamente comunidades distantes), viscosa (los hablantes no
 perciben el cambio generacional) y masivamente distribuida (Crystal 2000).
 

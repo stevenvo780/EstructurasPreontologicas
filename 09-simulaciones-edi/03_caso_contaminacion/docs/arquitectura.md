@@ -1,7 +1,7 @@
 # Arquitectura de Modelos (Capas)
 
 ## Conceptual
-- Hiperobjeto: contaminacion del aire persistente con acoplamientos internos y shocks externos.
+- Estructura pre-ontológica: contaminacion del aire persistente con acoplamientos internos y shocks externos.
 - Mecanismo: difusion local + forcing externo (regulacion, actividad economica).
 - Delimitacion: serie global promedio como proxy del sistema.
 

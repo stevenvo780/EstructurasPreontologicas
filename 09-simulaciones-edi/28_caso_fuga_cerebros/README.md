@@ -1,8 +1,8 @@
 # Caso 28 — Fuga de Cerebros (Brain Drain)
 
-## Hiperobjeto
+## Estructura pre-ontológica
 
-La fuga de cerebros global como hiperobjeto: masivamente distribuida
+La fuga de cerebros global como estructura pre-ontológica: masivamente distribuida
 (afecta a todos los países en desarrollo), no-local (la decisión individual
 de migrar depende de condiciones globales), viscosa (path dependency
 en formación de capital humano) y con la paradoja del brain drain

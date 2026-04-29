@@ -3,7 +3,7 @@
 ## Propósito
 
 Evaluar si Wikipedia, como proyecto colectivo de conocimiento, exhibe
-propiedades de hiperobjeto: dinámica predador-presa entre calidad editorial
+propiedades de cierre operativo: dinámica predador-presa entre calidad editorial
 y controversia, viscosidad temporal, causalidad descendente del «proyecto
 enciclopédico» sobre editores individuales.
 

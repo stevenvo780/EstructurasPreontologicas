@@ -1,7 +1,7 @@
 # Arquitectura de Modelos (Capas)
 
 ## Conceptual
-- Hiperobjeto: dinamica epidemiologica persistente con shocks externos.
+- Estructura pre-ontológica: dinamica epidemiologica persistente con shocks externos.
 - Mecanismo: contagio local + transicion de estados (S, E, I, R).
 - Delimitacion: serie global agregada como proxy del sistema.
 

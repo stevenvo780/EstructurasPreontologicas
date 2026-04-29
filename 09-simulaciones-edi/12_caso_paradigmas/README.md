@@ -3,7 +3,7 @@
 ## Propósito
 
 Evaluar si los cambios de paradigma científico (Kuhn 1962) exhiben
-propiedades de hiperobjeto: transición de fase, viscosidad temporal, y
+propiedades de cierre operativo: transición de fase, viscosidad temporal, y
 causalidad descendente del «paradigma dominante» sobre investigadores.
 
 ---

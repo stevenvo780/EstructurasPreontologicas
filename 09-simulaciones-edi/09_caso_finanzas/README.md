@@ -3,7 +3,7 @@
 ## Propósito
 
 Evaluar si el mercado financiero (S&P 500) exhibe emergencia tipo
-hiperobjeto.  Resultado histórico: **RECHAZADO** — EDI ≈ 0.05 (por
+estructura pre-ontológica.  Resultado histórico: **RECHAZADO** — EDI ≈ 0.05 (por
 debajo del umbral 0.30), consistente con reflexividad (Soros 1987),
 aliasing temporal, y eficiencia de mercado (Fama 1970).
 
@@ -120,7 +120,7 @@ config = CaseConfig(
 | Sintética | −0.000 | Neutral |
 | Real | 0.051 | Muy bajo → **RECHAZADO** |
 
-El mercado financiero no exhibe emergencia tipo hiperobjeto bajo este
+El mercado financiero no exhibe emergencia tipo estructura pre-ontológica bajo este
 protocolo.  Consistente con:
 - **Reflexividad** (Soros 1987): los agentes reaccionan al agregado,
   creando ciclos endógenos que impiden la causalidad descendente estable.

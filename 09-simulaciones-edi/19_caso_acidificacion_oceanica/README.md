@@ -3,7 +3,7 @@
 ## Propósito
 
 Evaluar si la acidificación oceánica global exhibe propiedades de
-hiperobjeto: no-localidad (afecta todos los océanos), viscosidad temporal
+estructura pre-ontológica: no-localidad (afecta todos los océanos), viscosidad temporal
 (cambios químicos persisten milenios), y causalidad descendente del
 «sistema carbonato» sobre organismos calcificadores individuales.
 

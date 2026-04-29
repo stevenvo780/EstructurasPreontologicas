@@ -2,7 +2,7 @@
 
 ## Descripción
 
-Modela la **contaminación atmosférica por PM2.5** como hiperobjeto
+Modela la **contaminación atmosférica por PM2.5** como estructura pre-ontológica
 emergente. La concentración de partículas finas a escala global es
 resultado de miles de fuentes industriales y vehiculares individuales
 que, en conjunto, generan un campo de concentración con estructura

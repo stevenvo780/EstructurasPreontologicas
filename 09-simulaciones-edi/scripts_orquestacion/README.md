@@ -1,6 +1,6 @@
 # Scripts de la Tesis
 
-Herramientas para ejecutar, auditar y documentar las **29 simulaciones ABM+ODE** del proyecto de tesis doctoral *"Irrealismo Operativo de Hiperobjetos"*.
+Herramientas para ejecutar, auditar y documentar las **29 simulaciones ABM+ODE** del proyecto de tesis doctoral *"Irrealismo Operativo de Estructuras pre-ontológicas"*.
 
 ---
 

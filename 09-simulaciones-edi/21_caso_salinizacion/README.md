@@ -3,7 +3,7 @@
 ## Propósito
 
 Evaluar si la salinización de suelos a escala global exhibe propiedades de
-hiperobjeto: no-localidad (irrigación global redistribuye sales),
+estructura pre-ontológica: no-localidad (irrigación global redistribuye sales),
 viscosidad temporal (acumulación irreversible a escalas humanas), y
 causalidad descendente del «proceso de salinización» sobre parcelas locales.
 

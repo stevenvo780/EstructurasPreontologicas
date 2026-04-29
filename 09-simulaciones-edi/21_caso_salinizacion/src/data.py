@@ -16,7 +16,7 @@ import pandas as pd
 import requests
 
 API_BASE = "https://api.worldbank.org/v2"
-DEFAULT_UA = "Hiperobjetos/0.1"
+DEFAULT_UA = "EDI-validator/1.0"
 INDICATOR = "AG.LND.IRIG.AG.ZS"
 DRIVER_INDICATOR = "ER.H2O.FWTL.ZS"  # Freshwater withdrawal (% of internal resources)
 

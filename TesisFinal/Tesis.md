@@ -203,7 +203,7 @@ El resultado principal no es una validación binaria sino una **cartografía dis
 
 **Limitaciones honestamente reconocidas:** p-value declarado mal calibrado al 24% empírico (umbrales EDI sí robustos); caso 30 con circularidad detectada por sonda alternativa; depuración post-hoc del corpus inter-escala documentada; datos sintéticos del corpus inter-escala derivados de parámetros publicados (elevación a LoE 4-5 con datos reales abiertos como deuda priorizada de 6-12 meses post-defensa); AUC-ROC de discriminación interno (0.886) no validación externa contra estándar de oro; ningún caso cumple los tres criterios κ-ontológica simultáneamente (todas las afirmaciones son κ-pragmática hasta convergencia inter-grupo); revisión por pares humanos hostiles como deuda externa bloqueante para sustentación.
 
-**Palabras clave:** estructuras pre-ontológicas, irrealismo operativo, ontología general multiescalar, realismo estructural moderado, pluralismo epistemológico, anti-reificación, emergencia operativa, naturalismo metafísico moderado, B-series relacional, manipulabilidad woodwardiana, constitución descendente, complementarismo metodológico fenomenológico, ABM, ODE, EDI, cierre operativo κ-pragmática vs κ-ontológica, hiperobjetos, asimetría L1-B-L3-S, dossier de anclaje, validación computacional, suite ST, hostile testing, complejidad multiescalar, corpus inter-dominio + inter-escala, behavioral dynamics, Wolfram Physics Project.
+**Palabras clave:** estructuras pre-ontológicas, irrealismo operativo, ontología general multiescalar, realismo estructural moderado, pluralismo epistemológico, anti-reificación, emergencia operativa, naturalismo metafísico moderado, B-series relacional, manipulabilidad woodwardiana, constitución descendente, complementarismo metodológico fenomenológico, ABM, ODE, EDI, cierre operativo κ-pragmática vs κ-ontológica, asimetría L1-B-L3-S, dossier de anclaje, validación computacional, suite ST, hostile testing, complejidad multiescalar, corpus inter-dominio + inter-escala, behavioral dynamics, Wolfram Physics Project.
 
 ---
 
@@ -227,7 +227,7 @@ The main outcome is not a binary validation score but a **discriminative map of 
 
 **Honestly acknowledged limitations:** declared p-value miscalibrated at 24% empirical (EDI thresholds remain robust); case 30 with circularity detected by alternative probe; post-hoc tuning of inter-scale corpus documented; inter-scale corpus data are synthetic derived from published parameters (elevation to LoE 4-5 with open real data as priority debt of 6-12 months post-defense); discrimination AUC-ROC (0.886) is internal, not external validation against gold standard; no case meets the three κ-ontological criteria simultaneously (all claims remain κ-pragmatic until inter-group convergence); peer review by hostile human reviewers as blocking external debt for public defense.
 
-**Keywords:** pre-ontological structures, operative irrealism, general multiscale ontology, moderate structural realism, epistemic pluralism, anti-reification, operational emergence, moderate metaphysical naturalism, relational B-series, Woodwardian manipulability, downward constitution, phenomenological methodological complementarism, ABM, ODE, EDI, operational closure κ-pragmatic vs κ-ontological, hyperobjects, L1-B-L3-S asymmetry, anchoring dossier, computational validation, ST suite, hostile testing, multiscale complexity, inter-domain + inter-scale corpus, behavioral dynamics, Wolfram Physics Project.
+**Keywords:** pre-ontological structures, operative irrealism, general multiscale ontology, moderate structural realism, epistemic pluralism, anti-reification, operational emergence, moderate metaphysical naturalism, relational B-series, Woodwardian manipulability, downward constitution, phenomenological methodological complementarism, ABM, ODE, EDI, operational closure κ-pragmatic vs κ-ontological, L1-B-L3-S asymmetry, anchoring dossier, computational validation, ST suite, hostile testing, multiscale complexity, inter-domain + inter-scale corpus, behavioral dynamics, Wolfram Physics Project.
 
 ---
 
@@ -6299,7 +6299,7 @@ Cada capítulo del manuscrito se ancla en al menos un interlocutor principal y u
 | 05-04 (instituciones) | Bourdieu (1980) | Searle, Latour, Gilbert, Bunge, North |
 | 05-05 (caso ancla cualitativo) | Warren (2006), Gibson (1979) | Fajen, Sternad, Foo, Yilmaz, Lee, Fink |
 | 06-01 (cierre) | — | sintetiza todos los anteriores |
-| 09 (corpus EDI) | Hoel (2017), Morton (2013) | Bunge, Ladyman y Ross, Woodward, Kim, Humphreys, O'Connor y Wong |
+| 09 (corpus EDI) | Hoel (2017) | Bunge, Ladyman y Ross, Woodward, Kim, Humphreys, O'Connor y Wong |
 
 ## Bibliografía nuclear completa
 
@@ -6319,14 +6319,13 @@ Cada capítulo del manuscrito se ancla en al menos un interlocutor principal y u
 12. Ladyman, J. y Ross, D. (2007). *Every Thing Must Go: Metaphysics Naturalized*. Oxford: Oxford University Press.
 13. Latour, B. (2005). *Reassembling the Social: An Introduction to Actor-Network-Theory*. Oxford: Oxford University Press.
 14. Latour, B. (2017). *Facing Gaia: Eight Lectures on the New Climatic Regime*. Cambridge: Polity Press.
-15. Morton, T. (2013). *Hyperobjects: Philosophy and Ecology after the End of the World*. Minneapolis: University of Minnesota Press.
-16. Nicholson, D. y Dupré, J. (eds.) (2018). *Everything Flows: Towards a Processual Philosophy of Biology*. Oxford: Oxford University Press.
-17. O'Connor, T. y Wong, H. Y. (2005). "The Metaphysics of Emergence". *Noûs* 39(4): 658–678.
-18. Sellars, W. (1962). "Philosophy and the Scientific Image of Man". En R. Colodny (ed.), *Frontiers of Science and Philosophy*. Pittsburgh: University of Pittsburgh Press.
-19. Simondon, G. (1989). *Du mode d'existence des objets techniques*. Paris: Aubier.
-20. van Fraassen, B. C. (1980). *The Scientific Image*. Oxford: Oxford University Press.
-21. Whitehead, A. N. (1929). *Process and Reality*. New York: Macmillan.
-22. Wittgenstein, L. (1953). *Philosophical Investigations*. Oxford: Blackwell.
+15. Nicholson, D. y Dupré, J. (eds.) (2018). *Everything Flows: Towards a Processual Philosophy of Biology*. Oxford: Oxford University Press.
+16. O'Connor, T. y Wong, H. Y. (2005). "The Metaphysics of Emergence". *Noûs* 39(4): 658–678.
+17. Sellars, W. (1962). "Philosophy and the Scientific Image of Man". En R. Colodny (ed.), *Frontiers of Science and Philosophy*. Pittsburgh: University of Pittsburgh Press.
+18. Simondon, G. (1989). *Du mode d'existence des objets techniques*. Paris: Aubier.
+19. van Fraassen, B. C. (1980). *The Scientific Image*. Oxford: Oxford University Press.
+20. Whitehead, A. N. (1929). *Process and Reality*. New York: Macmillan.
+21. Wittgenstein, L. (1953). *Philosophical Investigations*. Oxford: Blackwell.
 
 ### B. Causalidad, Reducción, Mecanismos
 
@@ -6691,9 +6690,6 @@ Métrica empírica que opera el operador κ. Definición: `EDI = 1 - RMSE_couple
 
 ### Estructura pre-ontológica
 Regularidad operativa anterior a la objetualidad sustancial. Ni cosa con esencia, ni ficción lingüística. Identificable como atractor empíricamente robusto de un sistema dinámico acoplado. Núcleo del nombre del proyecto. Capítulo 02-01.
-
-### Hiperobjeto (operativo)
-Constructo del entendimiento que designa un fenómeno de cualquier escala con cierre operativo alto (Nivel 4+) que excede la captura intuitiva inmediata. No restringido a gran escala temporal o espacial: aplica desde decoherencia cuántica (caso 31) hasta cúmulos globulares (caso 40), pasando por dinámica social macro. No implica existencia metafísica adicional. Heurística de candidatura inspirada en Morton (2013) pero usada en sentido operativo y multiescalar. Capítulo 02-01.
 
 ### Irrealismo operativo
 Posición filosófica del manuscrito: realismo estructural moderado + pluralismo epistemológico + anti-reificación operativa. Ni realismo ingenuo, ni instrumentalismo puro, ni irrealismo radical. Capítulo 02-01.

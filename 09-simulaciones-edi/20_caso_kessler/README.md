@@ -3,7 +3,7 @@
 ## Propósito
 
 Evaluar si la nube de basura espacial en LEO exhibe propiedades de
-hiperobjeto: no-localidad (debris orbita toda la Tierra), viscosidad
+estructura pre-ontológica: no-localidad (debris orbita toda la Tierra), viscosidad
 temporal (décadas-siglos a altitudes altas), y causalidad descendente
 del «campo de debris» sobre objetos individuales (cascada colisional).
 

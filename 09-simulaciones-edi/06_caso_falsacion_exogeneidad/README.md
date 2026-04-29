@@ -136,4 +136,3 @@ del protocolo.
 
 - Hull, J. (2018). *Options, Futures, and Other Derivatives* (10ª ed.). Pearson. — GBM.
 - Baur, D. G. & Dimpfl, T. (2021). *The volatility of Bitcoin and its role as a medium of exchange and a store of value*. Empirical Economics, 61, 2663–2683. — Parámetros BTC.
-- Morton, T. (2013). *Hyperobjects*. University of Minnesota Press. — Viscosidad temporal, no-localidad.

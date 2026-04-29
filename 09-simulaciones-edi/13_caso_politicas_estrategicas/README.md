@@ -3,7 +3,7 @@
 ## Propósito
 
 Evaluar si la inercia institucional que gobierna la adopción y persistencia
-de políticas estratégicas constituye un hiperobjeto: viscosidad temporal,
+de políticas estratégicas constituye un estructura pre-ontológica: viscosidad temporal,
 resistencia al cambio, y causalidad descendente del entorno institucional
 sobre actores individuales.
 

@@ -12,7 +12,7 @@
 1. Obtener datos observacionales de {{data_source}}
 2. Calibrar parámetros sobre partición de entrenamiento
 3. Evaluar C1–C5 sobre partición de validación
-4. **Criterio de paso:** EDI > 0.30 para confirmar hiperobjeto
+4. **Criterio de paso:** EDI > 0.30 para confirmar estructura pre-ontológica
 
 ## Calibración
 - **ODE:** Regresión lineal sobre primeras diferencias → α, β

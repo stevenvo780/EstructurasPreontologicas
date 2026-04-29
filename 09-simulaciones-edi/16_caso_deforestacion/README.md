@@ -3,7 +3,7 @@
 ## Propósito
 
 Evaluar si la deforestación tropical global exhibe propiedades de
-hiperobjeto: no-localidad (frontera de deforestación migratoria),
+estructura pre-ontológica: no-localidad (frontera de deforestación migratoria),
 viscosidad temporal (irreversibilidad a escalas humanas), y causalidad
 descendente del «frente de deforestación» sobre parcelas locales.
 

@@ -1,9 +1,9 @@
 # Caso 27 — Riesgo Biológico Global
 
-## Hiperobjeto
+## Estructura pre-ontológica
 
 El riesgo biológico global (pandemias, enfermedades zoonóticas emergentes)
-como hiperobjeto. Propiedades: no-local (pandemias cruzan fronteras
+como estructura pre-ontológica. Propiedades: no-local (pandemias cruzan fronteras
 instantáneamente), viscoso (patógenos persisten en reservorios animales),
 masivamente distribuido (One Health: humanos-animales-ambiente) y con
 bio-amplificación (riesgo existente facilita nuevos eventos).

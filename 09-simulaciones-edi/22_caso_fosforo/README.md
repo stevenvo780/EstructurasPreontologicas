@@ -1,6 +1,6 @@
 # Caso 22 — Ciclo del Fósforo
 
-## Hiperobjeto
+## Estructura pre-ontológica
 
 Acumulación global de fósforo reactivo en ecosistemas acuáticos y terrestres.
 El fósforo antropogénico (fertilizantes, detergentes) se acumula de forma

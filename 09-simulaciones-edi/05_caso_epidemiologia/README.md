@@ -2,9 +2,9 @@
 
 ## Descripción
 
-Modela la **pandemia COVID-19** como hiperobjeto emergente usando el
+Modela la **pandemia COVID-19** como estructura pre-ontológica de cierre operativo usando el
 modelo compartimental SEIR a nivel macro y un ABM de red epidémica a
-nivel micro. La dinámica pandémica exhibe propiedades de hiperobjeto:
+nivel micro. La dinámica pandémica exhibe propiedades de cierre operativo:
 no-localidad, viscosidad temporal y phasing.
 
 **Dominio:** Epidemiología  

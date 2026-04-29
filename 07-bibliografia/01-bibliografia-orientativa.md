@@ -27,7 +27,7 @@ Cada capítulo del manuscrito se ancla en al menos un interlocutor principal y u
 | 05-04 (instituciones) | Bourdieu (1980) | Searle, Latour, Gilbert, Bunge, North |
 | 05-05 (caso ancla cualitativo) | Warren (2006), Gibson (1979) | Fajen, Sternad, Foo, Yilmaz, Lee, Fink |
 | 06-01 (cierre) | — | sintetiza todos los anteriores |
-| 09 (corpus EDI) | Hoel (2017), Morton (2013) | Bunge, Ladyman y Ross, Woodward, Kim, Humphreys, O'Connor y Wong |
+| 09 (corpus EDI) | Hoel (2017) | Bunge, Ladyman y Ross, Woodward, Kim, Humphreys, O'Connor y Wong |
 
 ## Bibliografía nuclear completa
 
@@ -47,14 +47,13 @@ Cada capítulo del manuscrito se ancla en al menos un interlocutor principal y u
 12. Ladyman, J. y Ross, D. (2007). *Every Thing Must Go: Metaphysics Naturalized*. Oxford: Oxford University Press.
 13. Latour, B. (2005). *Reassembling the Social: An Introduction to Actor-Network-Theory*. Oxford: Oxford University Press.
 14. Latour, B. (2017). *Facing Gaia: Eight Lectures on the New Climatic Regime*. Cambridge: Polity Press.
-15. Morton, T. (2013). *Hyperobjects: Philosophy and Ecology after the End of the World*. Minneapolis: University of Minnesota Press.
-16. Nicholson, D. y Dupré, J. (eds.) (2018). *Everything Flows: Towards a Processual Philosophy of Biology*. Oxford: Oxford University Press.
-17. O'Connor, T. y Wong, H. Y. (2005). "The Metaphysics of Emergence". *Noûs* 39(4): 658–678.
-18. Sellars, W. (1962). "Philosophy and the Scientific Image of Man". En R. Colodny (ed.), *Frontiers of Science and Philosophy*. Pittsburgh: University of Pittsburgh Press.
-19. Simondon, G. (1989). *Du mode d'existence des objets techniques*. Paris: Aubier.
-20. van Fraassen, B. C. (1980). *The Scientific Image*. Oxford: Oxford University Press.
-21. Whitehead, A. N. (1929). *Process and Reality*. New York: Macmillan.
-22. Wittgenstein, L. (1953). *Philosophical Investigations*. Oxford: Blackwell.
+15. Nicholson, D. y Dupré, J. (eds.) (2018). *Everything Flows: Towards a Processual Philosophy of Biology*. Oxford: Oxford University Press.
+16. O'Connor, T. y Wong, H. Y. (2005). "The Metaphysics of Emergence". *Noûs* 39(4): 658–678.
+17. Sellars, W. (1962). "Philosophy and the Scientific Image of Man". En R. Colodny (ed.), *Frontiers of Science and Philosophy*. Pittsburgh: University of Pittsburgh Press.
+18. Simondon, G. (1989). *Du mode d'existence des objets techniques*. Paris: Aubier.
+19. van Fraassen, B. C. (1980). *The Scientific Image*. Oxford: Oxford University Press.
+20. Whitehead, A. N. (1929). *Process and Reality*. New York: Macmillan.
+21. Wittgenstein, L. (1953). *Philosophical Investigations*. Oxford: Blackwell.
 
 ### B. Causalidad, Reducción, Mecanismos
 

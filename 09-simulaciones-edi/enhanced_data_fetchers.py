@@ -116,7 +116,7 @@ def fetch_openalex_citations(concept_id="C41008148", start_year=2000, end_year=2
     url = f"https://api.openalex.org/concepts/{concept_id}"
     
     try:
-        resp = requests.get(url, headers={"User-Agent": "Hiperobjetos/0.1"}, timeout=30)
+        resp = requests.get(url, headers={"User-Agent": "EDI-validator/1.0"}, timeout=30)
         resp.raise_for_status()
         data = resp.json()
         

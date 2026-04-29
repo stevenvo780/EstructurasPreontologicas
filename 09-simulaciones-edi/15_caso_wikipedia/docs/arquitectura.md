@@ -1,7 +1,7 @@
 # Arquitectura de Modelos (Capas)
 
 ## Conceptual
-- Hiperobjeto: atencion colectiva persistente con acoplamientos internos y shocks externos.
+- Estructura pre-ontológica: atencion colectiva persistente con acoplamientos internos y shocks externos.
 - Mecanismo: contagio local de interes + forcing externo (eventos mediaticos).
 - Delimitacion: cluster de articulos de Wikipedia como proxy del sistema.
 

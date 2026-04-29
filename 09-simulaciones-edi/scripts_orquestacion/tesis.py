@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-tesis.py — CLI para operativizar la tesis "Irrealismo Operativo de Hiperobjetos"
+tesis.py — CLI para operativizar la tesis "Estructuras Pre-Ontológicas"
 
 Subcomandos:
     scaffold   Genera estructura completa de un caso nuevo desde plantillas
@@ -158,10 +158,10 @@ def cmd_scaffold(args):
         "case_title": title,
         "domain": args.domain or "general",
         "description": args.description or
-            f"Validación del hiperobjeto «{title}» mediante modelo híbrido ABM+ODE.",
+            f"Validación de la estructura pre-ontológica «{title}» mediante modelo híbrido ABM+ODE.",
         "hypothesis": args.hypothesis or
             f"El sistema «{title}» presenta emergencia causal (EDI > 0.30) "
-            f"que justifica su tratamiento como hiperobjeto.",
+            f"que justifica su tratamiento como estructura pre-ontológica de cierre operativo robusto.",
         "observable": args.observable or "Variable macro del dominio (por definir)",
         "data_source": args.data_source or "Fuente de datos por definir",
         "macro_description": args.macro_desc or
@@ -786,7 +786,7 @@ def cmd_validate(args):
 def main():
     parser = argparse.ArgumentParser(
         prog="tesis",
-        description="CLI para operativizar la tesis «Irrealismo Operativo de Hiperobjetos»",
+        description="CLI para operativizar la tesis «Estructuras Pre-Ontológicas»",
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog=(
             "Ejemplos:\n"
