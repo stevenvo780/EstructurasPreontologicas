@@ -1,6 +1,8 @@
 ---
 description: Muestra estado actual del harness — última pasada, items needs_human, cola de ejecución.
-allowed-tools: Bash, Read
+allowed-tools:
+  - Bash
+  - Read
 ---
 
 1. `python3 harness/cli.py status`

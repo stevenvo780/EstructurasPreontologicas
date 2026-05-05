@@ -1,7 +1,9 @@
 ---
 description: Prepara material de engagement filosófico con un autor primario (Bunge, Dennett, Simondon, Strawson, Chalmers, Goff, Lakatos, Maturana-Varela, Haken).
 argument-hint: <apellido_autor> [obra]
-allowed-tools: Bash, Read
+allowed-tools:
+  - Bash
+  - Read
 ---
 
 1. Verifica que el PDF existe: `ls 07-bibliografia/ | grep -i "$1"`

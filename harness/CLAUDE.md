@@ -1,6 +1,32 @@
 # CLAUDE.md — Harness de investigación
 
-Este archivo extiende el `CLAUDE.md` raíz con el protocolo específico del harness.
+Este archivo extiende el `CLAUDE.md` raíz con el protocolo específico del harness. Claude Code lo carga **adicionalmente** al raíz cuando trabajas en archivos bajo `harness/` (descubrimiento por proximidad de path, verificado en docs oficiales).
+
+## Cómo Claude Code carga este harness al abrir el workspace
+
+Al iniciar sesión en este repositorio, Claude Code descubre automáticamente:
+
+1. **`CLAUDE.md` raíz** (`/datos/repos/EstructurasPreontologicas/CLAUDE.md`) — siempre cargado.
+2. **`.claude/agents/*.md`** — los 10 sub-agentes (citation-agent, prose-json-verifier, multi-probe-runner, philosophical-reader, debt-validator, self-indulgence-linter, execution-queue, adversarial-reviewer, process-verifier, bibliography-fetcher). Disponibles para `@-mention` y delegación automática según su `description`.
+3. **`.claude/commands/*.md`** — los 12 slash commands (`/harness-pass`, `/verify-citations`, `/run-case`, etc.).
+4. **`.claude/skills/*/SKILL.md`** — el skill `/tesis-pass` orquestador.
+5. **`.claude/hooks/*.sh`** — 7 hooks lifecycle activados según `.claude/settings.json`.
+6. **`.claude/settings.json`** — permissions allow/deny + hook bindings.
+7. **`.mcp.json`** raíz — pide confirmación al usuario para activar MCPs (filesystem, git, memory, sequential-thinking, fetch + opcionales paper-search/arxiv).
+8. **Este `harness/CLAUDE.md`** — cargado automáticamente cuando Claude lee cualquier archivo bajo `harness/`.
+
+No hay registro manual ni manifiesto adicional. Si abres este workspace y los sub-agentes no aparecen al ejecutar `/agents`, el problema típico es: (a) Claude Code desactualizado, (b) frontmatter inválido en algún `.md`, (c) permisos del workspace.
+
+## Verificación rápida del setup
+
+```bash
+ls -1 .claude/agents/ | wc -l        # debe ser 11 (10 agentes + README)
+ls -1 .claude/commands/ | wc -l      # 13 (12 commands + README)
+ls -1 .claude/hooks/*.sh | wc -l     # 7 hooks
+ls -1 .claude/skills/*/SKILL.md | wc -l   # 1 skill
+python3 harness/cli.py init           # smoke test del CLI
+python3 harness/cli.py pass           # pasada determinista (sin LLM)
+```
 
 ## Postura del harness frente a la tesis
 

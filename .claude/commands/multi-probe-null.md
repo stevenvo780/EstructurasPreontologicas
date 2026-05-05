@@ -1,7 +1,9 @@
 ---
 description: Re-analiza un caso null con sondas alternativas físicamente motivadas.
 argument-hint: <case_id>
-allowed-tools: Bash, Read
+allowed-tools:
+  - Bash
+  - Read
 ---
 
 Inspecciona estado del caso null y, si está listo, lanza `@multi-probe-runner`.

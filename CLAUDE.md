@@ -199,6 +199,15 @@ outputs/report.md        ← narrativo derivado
 
 ---
 
+## Harness de re-validación (Claude Code)
+
+Este repositorio incluye un harness de re-validación automática en `harness/` y `.claude/`. Al abrir el workspace, Claude Code carga 10 sub-agentes (`@citation-agent`, `@prose-json-verifier`, `@multi-probe-runner`, `@philosophical-reader`, `@debt-validator`, `@self-indulgence-linter`, `@execution-queue`, `@adversarial-reviewer`, `@process-verifier`, `@bibliography-fetcher`), 12 slash commands (`/harness-pass`, `/verify-citations`, `/verify-prose-json`, `/verify-debt`, `/lint-indulgence`, `/run-case`, `/multi-probe-null`, `/engage-author`, `/adversarial`, `/process-verify`, `/fetch-biblio`, `/harness-status`), 1 skill (`/tesis-pass`), 7 hooks (bloquean edits a `metrics.json` y `Tesis.md`, git destructivo; checkpoint en `Stop`), y MCPs declarados en `.mcp.json`.
+
+Protocolo de uso completo: `harness/CLAUDE.md`.
+Comparación honesta vs SOTA 2025-2026: `Bitacora/2026-05-04-harness-sota/COMPARACION_SOTA.md`.
+
+El harness re-valida lo que esta `CLAUDE.md` raíz exige: cita textual con paginación (§5), prosa↔JSON (§4), deuda residual declarada (§7), no auto-indulgencia (§1). Cada cifra que reporta tiene su comando regenerador. NO genera prosa filosófica final ni cierra tareas H-J*.
+
 ## Convenciones del repositorio
 
 - Las carpetas `00-…` a `08-…` son capítulos numerados; cada archivo `.md` es una sección. El orden canónico está fijado en `TesisFinal/build.py` (`PARTS`).

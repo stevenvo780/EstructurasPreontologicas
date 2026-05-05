@@ -1,6 +1,8 @@
 ---
 description: Verifica que las cifras EDI/p_perm/RMSE en la prosa coincidan con metrics.json (CLAUDE.md §4).
-allowed-tools: Bash, Read
+allowed-tools:
+  - Bash
+  - Read
 ---
 
 1. `python3 harness/cli.py verify --prose-json`

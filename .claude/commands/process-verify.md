@@ -1,7 +1,10 @@
 ---
 description: Verifica un argumento o pipeline PASO POR PASO (no solo el outcome). Mitiga reward hacking textual.
 argument-hint: <archivo o sección o pipeline>
-allowed-tools: Read, Grep, Bash
+allowed-tools:
+  - Read
+  - Grep
+  - Bash
 ---
 
 Lanza `@process-verifier` sobre el argumento/pipeline indicado.

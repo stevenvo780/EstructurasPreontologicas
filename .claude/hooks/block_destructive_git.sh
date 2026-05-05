@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# PreToolUse hook sobre Bash: bloquea operaciones git destructivas sin confirmación humana.
+# PreToolUse hook (matcher: Bash) — bloquea operaciones git destructivas sin confirmación humana.
 set -euo pipefail
 
 input="$(cat || true)"
@@ -16,7 +16,6 @@ if [[ -z "$cmd" ]]; then
     exit 0
 fi
 
-# Patrones bloqueados
 patterns=(
     "git reset --hard"
     "git push --force"
@@ -30,10 +29,10 @@ patterns=(
 
 for p in "${patterns[@]}"; do
     if [[ "$cmd" == *"$p"* ]]; then
-        cat <<EOF >&2
-{"decision": "block", "reason": "Operación git destructiva bloqueada: '$p'. Si el usuario lo pidió explícitamente, ejecutarlo manualmente fuera del harness."}
-EOF
-        exit 2
+        cat <<JSON
+{"hookSpecificOutput": {"hookEventName": "PreToolUse", "permissionDecision": "deny", "permissionDecisionReason": "Operación git destructiva bloqueada: '$p'. Si el usuario lo pidió explícitamente, ejecutarlo manualmente fuera del harness."}}
+JSON
+        exit 0
     fi
 done
 

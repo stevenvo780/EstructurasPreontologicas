@@ -1,7 +1,9 @@
 ---
 description: Pasada completa del harness — ejecuta todos los verificadores formales (citas, prosa↔JSON, hashes, deuda, auto-indulgencia, doc↔config) y muestra reporte honesto.
 argument-hint: [budget-min]
-allowed-tools: Bash, Read
+allowed-tools:
+  - Bash
+  - Read
 ---
 
 Ejecuta una pasada determinista del harness sobre el repositorio de tesis.

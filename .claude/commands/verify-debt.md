@@ -1,6 +1,8 @@
 ---
 description: Audita secciones "Deuda residual" en cada capítulo (CLAUDE.md §7).
-allowed-tools: Bash, Read
+allowed-tools:
+  - Bash
+  - Read
 ---
 
 1. `python3 harness/cli.py verify --debt`

@@ -1,7 +1,9 @@
 ---
 description: Recupera papers académicos externos (arXiv, Semantic Scholar, OpenAlex) para autores/temas no presentes en 07-bibliografia/.
 argument-hint: <autor> [tema o palabras clave]
-allowed-tools: Bash, Read
+allowed-tools:
+  - Bash
+  - Read
 ---
 
 Lanza `@bibliography-fetcher` para recuperar metadata de papers externos.

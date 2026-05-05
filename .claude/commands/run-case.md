@@ -1,7 +1,9 @@
 ---
 description: Re-ejecuta uno o varios casos EDI del corpus invocando directamente validate.py.
 argument-hint: <case_id_o_lista> [perfil:canonico|agresivo]
-allowed-tools: Bash, Read
+allowed-tools:
+  - Bash
+  - Read
 ---
 
 Re-ejecuta caso(s) del corpus EDI. La ejecución la hace `@execution-queue`, NO un wrapper Python.

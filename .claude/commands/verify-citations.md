@@ -1,6 +1,8 @@
 ---
 description: Verifica citas con paginación contra los PDFs en 07-bibliografia/ (CLAUDE.md §5).
-allowed-tools: Bash, Read
+allowed-tools:
+  - Bash
+  - Read
 ---
 
 Ejecuta el verificador formal de citas y luego, si hay hits, invoca `@citation-agent` para análisis profundo.

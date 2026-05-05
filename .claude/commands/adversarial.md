@@ -1,7 +1,10 @@
 ---
 description: Red-team contra una afirmación específica del manuscrito. Busca el modo de fallo más serio.
 argument-hint: <archivo>:<línea> "<afirmación literal>"
-allowed-tools: Read, Grep, Bash
+allowed-tools:
+  - Read
+  - Grep
+  - Bash
 ---
 
 Lanza `@adversarial-reviewer` contra la afirmación dada por el usuario.

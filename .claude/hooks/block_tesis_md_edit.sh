@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# PreToolUse hook: bloquea Edit/Write/MultiEdit sobre TesisFinal/Tesis.md (es derivado).
+# PreToolUse hook (matcher: Edit|Write|MultiEdit) — bloquea ediciones a TesisFinal/Tesis.md (es derivado).
 set -euo pipefail
 
 input="$(cat || true)"
@@ -15,10 +15,10 @@ except Exception:
 ' 2>/dev/null)"
 
 if [[ "$file_path" == *"/TesisFinal/Tesis.md" ]]; then
-    cat <<EOF >&2
-{"decision": "block", "reason": "TesisFinal/Tesis.md es derivado. Edita el capítulo fuente (00-…/ a 08-…/) y luego: python3 TesisFinal/build.py"}
-EOF
-    exit 2
+    cat <<'JSON'
+{"hookSpecificOutput": {"hookEventName": "PreToolUse", "permissionDecision": "deny", "permissionDecisionReason": "TesisFinal/Tesis.md es derivado. Edita el capítulo fuente (00-…/ a 08-…/) y luego ejecuta: python3 TesisFinal/build.py"}}
+JSON
+    exit 0
 fi
 
 exit 0

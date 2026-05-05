@@ -1,6 +1,8 @@
 ---
 description: Lint de auto-indulgencia: versionología, manierismo, plantillas spam (CLAUDE.md §1).
-allowed-tools: Bash, Read
+allowed-tools:
+  - Bash
+  - Read
 ---
 
 1. `python3 harness/cli.py verify --self-indulgence`
