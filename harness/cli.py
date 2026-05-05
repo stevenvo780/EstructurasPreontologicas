@@ -63,11 +63,13 @@ def cmd_status(args):
 
 def cmd_verify(args):
     if args.all or not any([args.citations, args.prose_json, args.replay_hash,
-                            args.debt, args.self_indulgence, args.doc_config]):
+                            args.debt, args.self_indulgence, args.doc_config,
+                            args.decorative]):
         targets = list(orchestrator.VERIFIERS.keys())
     else:
         targets = []
         if args.citations: targets.append("citation_pagination")
+        if args.decorative: targets.append("decorative_citations")
         if args.prose_json: targets.append("prose_against_json")
         if args.replay_hash: targets.append("replay_hash")
         if args.debt: targets.append("debt_index")
@@ -127,6 +129,7 @@ def main():
     p_v = sub.add_parser("verify", help="Ejecuta verificadores formales")
     p_v.add_argument("--all", action="store_true")
     p_v.add_argument("--citations", action="store_true")
+    p_v.add_argument("--decorative", action="store_true")
     p_v.add_argument("--prose-json", action="store_true")
     p_v.add_argument("--replay-hash", action="store_true")
     p_v.add_argument("--debt", action="store_true")

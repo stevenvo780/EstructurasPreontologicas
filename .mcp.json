@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json.schemastore.org/mcp-servers.json",
+  "_comment": "MCPs del proyecto. Claude Code los descubre automáticamente y pedirá confirmación al activarlos. Versionados para reproducibilidad entre máquinas.",
+  "mcpServers": {
+    "filesystem": {
+      "_purpose": "Acceso controlado al filesystem del repo. Mejor que Read/Write nativos para operaciones masivas.",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "/datos/repos/EstructurasPreontologicas"
+      ]
+    },
+    "git": {
+      "_purpose": "Operaciones git de alto nivel: blame, log estructurado, búsqueda en historia.",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-git",
+        "--repository",
+        "/datos/repos/EstructurasPreontologicas"
+      ]
+    },
+    "memory": {
+      "_purpose": "Memoria persistente cross-session como knowledge graph. Útil para acumular hallazgos entre pasadas del harness.",
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-memory"]
+    },
+    "sequential-thinking": {
+      "_purpose": "Razonamiento estructurado paso-a-paso. Mitiga drift en sub-agentes filosóficos.",
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-sequential-thinking"]
+    },
+    "fetch": {
+      "_purpose": "Recuperar contenido web (HTML→Markdown). Para verificar referencias online cuando no hay PDF local.",
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-fetch"]
+    },
+    "paper-search": {
+      "_purpose": "Búsqueda multi-fuente: arXiv, PubMed, bioRxiv, Semantic Scholar, Crossref, OpenAlex. Para B-F1 (engagement con fuentes primarias).",
+      "_install_hint": "pip install paper-search-mcp  (o)  uvx paper-search-mcp",
+      "command": "uvx",
+      "args": ["paper-search-mcp"],
+      "_optional": true
+    },
+    "arxiv": {
+      "_purpose": "Búsqueda y descarga directa de papers arXiv con análisis local.",
+      "_install_hint": "pip install arxiv-mcp-server  (o)  uvx arxiv-mcp-server",
+      "command": "uvx",
+      "args": ["arxiv-mcp-server"],
+      "_optional": true
+    }
+  }
+}
