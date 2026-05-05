@@ -111,6 +111,8 @@ Aplicada al modelo de Fajen y Warren (2003) bajo Q = `predicción de heading en 
 
 **Tabla 3.2.1.**
 
+**Tabla 3.2.1.**
+
 | Criterio | Valor | Justificación |
 |---|---|---|
 | Anclaje material | 2 | Cuerpo + entorno + tarea + información ecológica explícita |

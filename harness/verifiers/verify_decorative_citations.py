@@ -111,8 +111,10 @@ def main() -> dict:
         "total_citations_in_paragraphs": total_citations_in_text,
         "decorative_suspect_count": len(decorative_suspect),
         "decorative_suspect_sample": decorative_suspect[:15],
+        "decorative_suspect_full": decorative_suspect,
         "list_dump_count": len(list_dump),
         "list_dump_sample": list_dump[:10],
+        "list_dump_full": list_dump,
         "interpretation": (
             "Citas en párrafos SIN comillas ni verbos de engagement (CLAUDE.md §5, F6). "
             "Listas de >3 autores agrupados (\"X, Y, Z, W sostienen…\") sin engagement individual "

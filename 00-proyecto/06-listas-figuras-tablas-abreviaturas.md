@@ -66,8 +66,11 @@ Listas de soporte editorial requeridas por el formato de tesis doctoral instituc
 | κ | Operador de compresión multiescala | 03-01 / 03-04 |
 | ε | Operador de errores de traducción | 03-01 |
 | φ, ψ | Heading actual y heading de meta (caso 30) | 05-05 / 09-30 |
-| τ | Razón tamaño-óptico / tasa-de-cambio (Lee 1976) | 02-04 |
+| τ ≡ θ/θ̇ | Razón entre tamaño angular óptico θ y su tasa de cambio θ̇; especifica tiempo-hasta-contacto bajo aproximación de velocidad constante (Lee, 1976, *Perception* 5(4):437-459, pp. 439-441; mención secundaria — ver nota [a]) | 02-04 |
 | β | Error de heading φ − ψ_g | 02-04 |
+
+
+[a] Lee, D. N. (1976). "A theory of visual control of braking based on information about time-to-collision." *Perception* 5(4):437-459. La definición canónica de τ como razón entre tamaño angular óptico (θ) y su tasa de cambio (θ̇), especificando tiempo hasta contacto, se localiza en pp. 439-441 (locus declarado posicionalmente; PDF no disponible en `07-bibliografia/` al cierre — referencia bibliográfica verificada contra la entrada canónica del journal *Perception*, vol. 5). Deuda: verificación textual con paginación exacta pendiente cuando el PDF se incorpore al repositorio.
 
 ### Métricas y protocolos
 

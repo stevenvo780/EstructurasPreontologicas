@@ -59,6 +59,8 @@ La objeción humeana clásica: *"de hechos descriptivos no se siguen prescripcio
 
 **Tabla 2.6.1.**
 
+**Tabla 2.6.1.**
+
 | Tradición | Postura de la tesis |
 |-----------|---------------------|
 | **Bunge ético sistemista** | Adoptado como interlocutor principal (1989, vol. VIII) |

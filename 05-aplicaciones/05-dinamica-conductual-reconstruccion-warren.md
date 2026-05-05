@@ -128,7 +128,7 @@ La región del espacio de fase donde el bote es **pasivamente estable** correspo
 
 Aquí la tesis identifica un atractor **realmente existente** en el sistema acoplado: la región pasivamente estable es una propiedad de la composición pelota–raqueta–gravedad, no del agente. La conducta humana se acopla al atractor, no lo construye. Esto es realismo estructural en sentido fuerte: el patrón existe en el sustrato dinámico antes de cualquier descripción.
 
-La compresión es legítima por las cuatro pruebas: reproduce las distribuciones de aceleración de impacto observadas (Sternad et al. 2001, fig. 5 del paper), generaliza a otros valores de `g` y `α`, conserva el atractor empíricamente identificado, y predice correctamente la respuesta a perturbaciones.
+La compresión es legítima por las cuatro pruebas: reproduce las distribuciones de aceleración de impacto reportadas en la literatura experimental sobre raqueteo de pelota (Sternad, Duarte, Katsumata y Schaal 2001, citado por Warren 2006 como evidencia del régimen pasivamente estable; PDF primario no disponible localmente, mención secundaria vía Warren), generaliza a otros valores de `g` y `α`, conserva el atractor empíricamente identificado, y predice correctamente la respuesta a perturbaciones.
 
 ## Caso 2: Equilibrio del palo invertido (tarea activamente estable)
 
@@ -209,6 +209,8 @@ Y también ilustra los límites: el modelo trata obstáculos como puntos, no cap
 
 **Tabla 5.5.1.**
 
+**Tabla 5.5.1.**
+
 | Aspecto | Conservado tal cual | Reformulado | Añadido por el marco |
 |---|---|---|---|
 | Ciclo percepción–acción y ecuaciones acopladas | Sí | — | Lectura como par dinámico acoplado canónico |
@@ -229,7 +231,7 @@ Postulan que el sistema nervioso construye representaciones del cuerpo y del ent
 
 - ¿qué patrón material-relacional comprime `modelo interno`? Una caja desconocida.
 - ¿qué dependencias preserva? Las que el modelo sintáctico estipula, no las que se hayan medido.
-- ¿qué predicciones discriminantes hace frente a control directo informacional? En las tareas estudiadas (frenado, locomoción, equilibrio, raqueteo), ninguna que mejore. El degrado de desempeño al retirar la información en línea (Wallis et al. 2002, Hildreth et al. 2000) es predicho por el control informacional y no por el modelo interno robusto.
+- ¿qué predicciones discriminantes hace frente a control directo informacional? En las tareas estudiadas (frenado, locomoción, equilibrio, raqueteo), ninguna que mejore. Argumento empírico relevante: experimentos de oclusión/retirada de la información óptica en línea durante locomoción y rastreo (referidos secundariamente vía Warren a partir de Wallis et al. 2002 y Hildreth et al. 2000; **mención secundaria declarada** — PDFs primarios no disponibles en `07-bibliografia/`, cf. CLAUDE.md §5) muestran degradación inmediata del desempeño, patrón predicho por el control informacional acoplado y no por modelos internos robustos, que deberían sostener la ejecución aun sin entrada actualizada. <!-- BORRADOR-IA · requires: H-J* (Jacob debe verificar Wallis 2002 y Hildreth 2000 en fuente primaria con paginación literal o sustituir la mención) -->
 - ¿se traduce a B? Solo nominalmente.
 
 Diagnóstico: en las tareas de Warren, los modelos internos son una compresión sin baja dimensionalidad efectiva justificada y sin predicción discriminante a favor. La tesis los descalifica para esos casos. Los preserva, en cambio, como hipótesis para conducta secuencial, anticipatoria, predictiva y estratégica donde la información ocurrente no basta — exactamente la limitación que Warren mismo reconoce.

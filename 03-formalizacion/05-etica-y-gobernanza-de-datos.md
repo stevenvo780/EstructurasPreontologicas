@@ -10,6 +10,8 @@ El corpus EDI consta de **30 casos**. Por su naturaleza de datos, se clasifican 
 
 **Tabla 3.5.1.**
 
+**Tabla 3.5.1.**
+
 | Categoría | Cuenta | Casos | Implicaciones éticas |
 |-----------|-------:|-------|----------------------|
 | Datos públicos secundarios verificables | 22 | Energía, Deforestación, Kessler, Riesgo Bio, Microplásticos, Políticas, Postverdad, Urbanización, Fósforo, Wikipedia, Epidemiología, Movilidad, Finanzas, Salinización, Justicia, Starlink, Fuga cerebros, Clima, Contaminación, Océanos, Acidificación, Acuíferos | Mínimas: solo trazabilidad de fuente y cumplimiento de licencias |
@@ -26,6 +28,8 @@ El corpus EDI consta de **30 casos**. Por su naturaleza de datos, se clasifican 
 **Política:** trazabilidad completa de la fuente, cita de la institución que publica, cumplimiento de la licencia de cada dataset, reproducción mediante URLs documentadas o caché versionado.
 
 **Fuentes principales y sus licencias:**
+
+**Tabla 3.5.2.**
 
 **Tabla 3.5.2.**
 
@@ -59,6 +63,8 @@ El corpus EDI consta de **30 casos**. Por su naturaleza de datos, se clasifican 
 Cuando el caso 30 se eleve con datos humanos:
 
 **Datasets candidatos:**
+
+**Tabla 3.5.3.**
 
 **Tabla 3.5.3.**
 
@@ -120,6 +126,8 @@ La declaración se ajusta a:
 ### 5.2. Rol específico de la IA en esta tesis
 
 Anthropic Claude (Opus 4.7) operó como **instrumento de implementación bajo dirección humana**, equivalente epistémico a un software estadístico avanzado. Específicamente:
+
+**Tabla 3.5.4.**
 
 **Tabla 3.5.4.**
 

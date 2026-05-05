@@ -42,7 +42,12 @@ VERIFIERS = {
 
 
 def run_all_verifiers(budget: Budget) -> dict:
-    """Ejecuta todos los verificadores formales. Siempre seguro."""
+    """Ejecuta todos los verificadores formales. Siempre seguro.
+
+    Cada verificador es independiente: pass/warn/fail son resultados válidos
+    y no afectan a los siguientes. El budget se respeta solo por tiempo/tokens.
+    El conteo de no-progress está reservado a iteraciones LLM (fuera de aquí).
+    """
     results = {}
     state = load_state()
     for name, fn in VERIFIERS.items():
@@ -59,14 +64,9 @@ def run_all_verifiers(budget: Budget) -> dict:
                 "elapsed_s": r["elapsed_s"],
                 **{k: v for k, v in r.items() if not isinstance(v, (list, dict))},
             })
-            if r.get("status") == "pass":
-                budget.mark_progress()
-            else:
-                budget.mark_no_progress()
         except Exception as e:
             results[name] = {"status": "error", "error": str(e)}
             record_verifier_run(state, name, "error", {"error": str(e)})
-            budget.mark_no_progress()
     save_state(state)
     return results
 

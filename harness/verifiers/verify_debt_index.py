@@ -19,7 +19,12 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent.parent))
 from harness.lib.tesis_paths import paths_list, repo_root, load_config
 
 
-DEBT_HEADING_RX = re.compile(r'^##+\s+Deuda\s+residual', re.IGNORECASE | re.MULTILINE)
+# Acepta encabezados numerados ("## 4. Deuda residual"), variantes "Deudas residuales"
+# y prefijos como "## Deuda residual declarada".
+DEBT_HEADING_RX = re.compile(
+    r'^##+\s+(?:[\dA-Z]+[.\)]?\s+)?Deuda[s]?\s+residual',
+    re.IGNORECASE | re.MULTILINE,
+)
 DATE_RX = re.compile(r'\b(\d{4}-\d{2}-\d{2})\b')
 
 

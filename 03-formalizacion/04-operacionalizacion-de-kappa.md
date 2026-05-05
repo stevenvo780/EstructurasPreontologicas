@@ -140,6 +140,8 @@ La taxonomía operativa del corpus EDI distingue seis niveles (0–5):
 
 **Tabla 3.4.1.**
 
+**Tabla 3.4.1.**
+
 | Nivel | Etiqueta | Definición operativa | Ejemplos del corpus |
 |------:|----------|----------------------|---------------------|
 | 0 | Null | EDI ≤ 0 o sin estructura macro detectable | Conciencia, Acidificación, Erosión |
@@ -161,7 +163,7 @@ La permutación simple con `n_perm=999` produce tasa empírica de tipo I cercana
 
 1. **Block bootstrap** (Politis y Romano 1994): permutación por bloques de tamaño √n que preserva la autocorrelación local. El p-value bajo block-bootstrap se reporta junto al p-value naive para cuantificar el shift de calibración.
 2. **Newey-West HAC** (Newey y West 1987): error estándar consistente bajo heterocedasticidad y autocorrelación, con kernel de Bartlett y truncamiento adaptativo `floor(4·(n/100)^{2/9})`.
-3. **FWER Holm-Bonferroni** (Holm 1979): corrección de family-wise error rate sobre los casos del corpus. Aplicada al corpus completo: **14 casos inter-dominio + 8 casos inter-escala = 22 casos sobreviven Holm-Bonferroni a α=0.05**; los 4 casos macro `overall_pass=True` están entre los sobrevivientes (caso por caso documentado en `metrics.json::fwer_holm`). La clasificación strong sobrevive a la corrección por comparaciones múltiples.
+3. **FWER Holm-Bonferroni** (procedimiento step-down de Holm, 1979 — referencia secundaria, sin acceso a PDF original): los $m$ p-values se ordenan ascendentemente $p_{(1)} \le \dots \le p_{(m)}$ y se rechaza $H_{(i)}$ sii $p_{(j)} \le \alpha/(m-j+1)$ para todo $j \le i$. Es uniformemente más potente que Bonferroni preservando el control FWER fuerte a nivel $\alpha$, lo que justifica preferirlo aquí sobre la corrección Bonferroni plana. Aplicado al corpus completo: **14 casos inter-dominio + 8 casos inter-escala = 22 casos sobreviven Holm-Bonferroni a α=0.05**; los 4 casos macro `overall_pass=True` están entre los sobrevivientes (caso por caso documentado en `metrics.json::fwer_holm`). La clasificación strong sobrevive a la corrección por comparaciones múltiples.
 
 ### Replicación robusta sin replicador externo
 
@@ -180,6 +182,8 @@ Esto no produce pre-registro retroactivo (lógicamente imposible); produce pre-r
 ### Sondas teóricamente independientes
 
 Ningún caso del corpus actual cumple los tres criterios de κ-ontológica fuerte simultáneamente. El primer criterio —convergencia bajo sondas con motivación teórica distinta— es el único alcanzable sin replicación inter-grupo externa. El módulo `common/full_secondary_probes.py` implementa una sonda secundaria por cada caso del corpus, con motivación radicalmente distinta a la primaria.
+
+**Tabla 3.4.2.**
 
 **Tabla 3.4.2.**
 

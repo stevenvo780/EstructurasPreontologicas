@@ -11,6 +11,8 @@ Mucho error filosófico nace de confundir lo que existe con lo que modelamos o c
 
 **Tabla 2.2.1.**
 
+**Tabla 2.2.1.**
+
 | Plano | Qué entra | Qué no entra |
 |---|---|---|
 | **Realidad** | Sustrato material dinámico; restricciones; patrones estabilizados | Cualquier modelo; cualquier nombre |
@@ -170,6 +172,8 @@ Una epistemología seria debe incluir el problema del costo. Más detalle no imp
 Esto conecta con la noción de baja dimensionalidad efectiva del capítulo 03-04: cuando el sistema vive realmente en pocas dimensiones, el modelo de baja dimensión no es simplificación cosmética; es captura estructural.
 
 ## 9. Errores epistémicos típicos
+
+**Tabla 2.2.2.**
 
 **Tabla 2.2.2.**
 

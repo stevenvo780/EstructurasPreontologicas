@@ -92,6 +92,8 @@ Candidatos: SRE journals con post-mortems publicados, datasets de Google Borg, t
 
 **Tabla 5.3.1.**
 
+**Tabla 5.3.1.**
+
 | Tentación | Razón |
 |---|---|
 | Reificado técnico | No tratar `la plataforma`, `la app` o `el backend` como cosas simples |
@@ -111,7 +113,7 @@ Latour (2005, *Reassembling the Social*, cap. 3) insiste en distribución simét
 
 ### 6.3. SRE / práctica de operaciones (Beyer et al. 2016)
 
-Beyer, Jones, Petoff y Murphy (2016, *Site Reliability Engineering: How Google Runs Production Systems*, O'Reilly) sistematizan los principios SRE: SLO (Service Level Objectives), error budgets, circuit breakers, blast radius limitation, postmortems sin culpa. La tesis los recoge como **implementación informal del aparato del manuscrito**: SLO ↔ tolerancia τ de la pregunta Q; error budget ↔ región de admisibilidad; circuit breaker ↔ operador ε activado bajo bifurcación detectada; postmortem ↔ auditoría ontológica del fallo (cap 03-03). La convergencia entre filosofía de la ciencia formal y práctica industrial madura es **fricción productiva**: ambas tradiciones independientemente desarrollan la misma estructura operativa.
+Beyer, Jones, Petoff y Murphy (eds., 2016, *Site Reliability Engineering: How Google Runs Production Systems*, O'Reilly) sistematizan los principios SRE: SLO (Service Level Objectives), error budgets, circuit breakers, blast radius limitation, postmortems sin culpa. **Mención secundaria declarada** (CLAUDE.md §5): el PDF no está en `07-bibliografia/`; la lectura aquí se apoya en la divulgación canónica del libro (capítulos 3 "Embracing Risk", 4 "Service Level Objectives" y 15 "Postmortem Culture") y no en cita verbatim paginada — corresponde levantar la deuda en una pasada posterior con el ejemplar físico. La tesis recoge esos principios como **implementación informal del aparato del manuscrito**: SLO ↔ tolerancia τ de la pregunta Q; error budget ↔ región de admisibilidad; circuit breaker ↔ operador ε activado bajo bifurcación detectada; postmortem ↔ auditoría ontológica del fallo (cap 03-03). La convergencia entre filosofía de la ciencia formal y práctica industrial madura es **fricción productiva**: ambas tradiciones desarrollan independientemente la misma estructura operativa.
 
 ## 7. Lo que este capítulo devuelve a la tesis general
 

@@ -141,7 +141,8 @@ Una vez completada, esta arquitectura permite que cualquier lector pueda respond
 
 El manuscrito-fuente histórico (archivado en `Bitacora/2026-04-27-integracion-jacob/00-tesis-fuente-original.md`) es la formulación extensa y continua de la intuición central. El resto del repositorio convierte esa intuición en arquitectura doctoral defendible mediante seis correcciones estructurales (capítulo 01-01):
 
-- caso ancla canónico (Warren 2006) en lugar de generalidad sin demostración;
+- caso ancla canónico (Warren, 2006, pp. 358–359), elegido porque formula explícitamente el patrón conductual como atractor de un sistema agente-entorno acoplado: «Agent–environment interactions give rise to emergent behavior that has a dynamics of its own [...] stable behavioral solutions correspond to attractors in the behavioral dynamics, and transitions between behavioral patterns correspond to bifurcations» (Warren, 2006, p. 359), en lugar de generalidad sin demostración; <!-- BORRADOR-IA, requires: H-J revisión voz autoral -->
+
 - patrón estabilizado definido técnicamente como atractor empírico;
 - aparato formal con protocolo empírico de κ vía baja dimensionalidad;
 - nivel B (conductual-biológico) en lugar de L2 neurobiológico estrecho;

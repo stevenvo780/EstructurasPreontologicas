@@ -7,6 +7,8 @@ Cada capítulo del manuscrito se ancla en al menos un interlocutor principal y u
 
 **Tabla 7.1.**
 
+**Tabla 7.1.**
+
 | Capítulo | Interlocutor principal | Secundarios |
 |----------|------------------------|-------------|
 | 02-01 (ontología) | Bunge (1979) | Dupré, Ladyman y Ross, Dennett, Sellars, Wittgenstein, Simondon, Bueno |
@@ -311,6 +313,8 @@ Cada capítulo del manuscrito se ancla en al menos un interlocutor principal y u
 157. Coleman, S. (2014). "The Real Combination Problem: Panpsychism, Micro-subjects, and Emergence". *Erkenntnis* 79(1): 19–44.
 
 ## Fuentes de Datos (Repositorios Principales)
+
+**Tabla 7.2.**
 
 **Tabla 7.2.**
 

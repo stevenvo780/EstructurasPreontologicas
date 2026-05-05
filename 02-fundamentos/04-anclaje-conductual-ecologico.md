@@ -18,6 +18,8 @@ S  — semántica revisada                   : recoge las categorías que sobrev
 
 **Tabla 2.4.1.**
 
+**Tabla 2.4.1.**
+
 | Escala | "Organismo" en B | "Entorno" en B | "Tarea" en B | "Historia" en B |
 |--------|------------------|-----------------|---------------|-----------------|
 | Cuántica (caso 31) | Qubit | Baño térmico | Mantener coherencia | Pulsos previos |
@@ -186,6 +188,8 @@ S (la semántica revisada: las categorías que sobreviven a la auditoría) se ga
 
 **Tabla 2.4.2.**
 
+**Tabla 2.4.2.**
+
 | Tentación rechazada | Razón |
 |---|---|
 | Reduccionismo neurocéntrico | Sin tarea, entorno e historia, los circuitos no explican conducta |
@@ -224,9 +228,9 @@ La tesis lo opera como caso de B donde el entorno técnico se incorpora a las va
 
 ### 10.5. Warren — behavioral dynamics
 
-Warren (2006, *Psychological Review* 113:358-389) proporciona el caso paradigmático trabajado del nivel B. La conjetura clave: *"the laws of behavior are descriptions of regular dynamical relations between organism and environment, that emerge from interactions in a particular task context"* (p. 359). Y la formulación dinámica de Fajen y Warren (2003, *JEP:HPP* 29:343-362, p. 348): la ecuación de heading de segundo orden (b = 3.25, k_g = 7.50, c1 = 0.40, c2 = 0.40) ajustada con r² = 0.980 sobre datos de locomoción dirigida.
+Warren (2006, *Psychological Review* 113:358-389) proporciona el caso paradigmático trabajado del nivel B. La tesis central del programa es que el comportamiento adaptativo no está impuesto por un controlador interno sino que emerge de la interacción agente–entorno bajo restricciones físicas, informacionales y de tarea. Cita verificada en PDF: *"Adaptive behavior, rather than being imposed by a preexisting structure, emerges from this confluence of constraints under the boundary condition of a particular task or goal"* (Warren 2006, p. 358). La formulación dinámica de la locomoción dirigida: ecuación de heading de segundo orden con parámetros ajustados (b = 3.25, k_g = 7.50, c1 = 0.40, c2 = 0.40), que reproduce el r² = .980 de la varianza de las series temporales medias (Warren 2006, p. 375).
 
-La tesis recoge el caso Warren como demostración cualitativa (capítulo 05-05) y lo eleva a versión cuantitativa-EDI (caso 30 del corpus). Warren queda como **interlocutor principal de B**: vocabulario operativo (atractor, repulsor, bifurcación, ley de control, dinámica intrínseca, acoplamiento) y caso ancla. La complementariedad cualitativa (Warren 2006, r² = 0.980 individual) y cuantitativa (caso 30 EDI = 0.262, weak poblacional) cubre dos escalas temporales del fenómeno.
+La tesis recoge el caso Warren como demostración cualitativa (capítulo 05-05) y lo eleva a versión cuantitativa-EDI (caso 30 del corpus). Warren queda como **interlocutor principal de B**: vocabulario operativo (atractor, repulsor, bifurcación, ley de control, dinámica intrínseca, acoplamiento) y caso ancla. La complementariedad cualitativa (Warren 2006, p. 375, r² = 0.980 individual sobre la ecuación de heading citada arriba) y cuantitativa (caso 30 EDI = 0.262, weak poblacional) cubre dos escalas temporales del fenómeno.
 
 ## 11. Consecuencia para el aparato formal
 

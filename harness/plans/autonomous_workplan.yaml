@@ -1,0 +1,229 @@
+# Plan operativo para modo continuo del harness
+#
+# Cada entrada es una tarea autónoma que la asistencia computacional puede
+# ejecutar sin firma humana. NUNCA incluye:
+#   - Edición de TesisFinal/Tesis.md (derivado, hook bloquea)
+#   - Edición de outputs/metrics.json (fuente de verdad numérica, hook bloquea)
+#   - Tareas H-J* (requieren firma de Jacob)
+#   - Operaciones git destructivas
+#
+# Cada tarea declara:
+#   id            - identificador estable
+#   subject       - descripción corta
+#   priority      - 1 (alta) ... 4 (baja)
+#   est_minutes   - estimación honesta de duración
+#   action        - kind: verifier | shell | engagement | audit
+#   blocked_by    - dependencias (otras tareas o ID externo)
+#   touches       - paths que modifica (auditar contra hooks)
+#   acceptance    - métrica para considerar la tarea cerrada
+
+version: 1
+metadata:
+  description: "Plan operativo para modo continuo del harness. Tareas seguras y auditables."
+  honors:
+    - "CLAUDE.md §1 (no auto-indulgencia)"
+    - "CLAUDE.md §2 (cierre bajo crítica hostil)"
+    - "CLAUDE.md §4 (reproducibilidad)"
+    - "CLAUDE.md §5 (citas con paginación)"
+    - "CLAUDE.md §7 (deuda declarada)"
+    - "harness/CLAUDE.md (no edita Tesis.md ni metrics.json)"
+
+tasks:
+  # ---- Bloque A: paginación y engagement de citas (alimenta B-F1, F6) ----
+  - id: A1-pag-takens
+    subject: "Paginación de Takens 1981 en cap 02-01"
+    priority: 2
+    est_minutes: 20
+    action:
+      kind: engagement
+      target_file: "02-fundamentos/01-ontologia-material-relacional.md"
+      target_line: 217
+      author: "Takens"
+      year: 1981
+      strategy: "buscar PDF en 07-bibliografia/; si no existe, reformular como mención secundaria (CLAUDE.md §5)"
+    touches: ["02-fundamentos/01-ontologia-material-relacional.md"]
+    acceptance: "cita textual con pp. o reformulación secundaria declarada"
+
+  - id: A2-pag-zurek
+    subject: "Paginación de Zurek 2003 en cap 02-01"
+    priority: 2
+    est_minutes: 20
+    action:
+      kind: engagement
+      target_file: "02-fundamentos/01-ontologia-material-relacional.md"
+      target_line: 383
+      author: "Zurek"
+      year: 2003
+      strategy: "buscar PDF; reformular si no hay"
+    touches: ["02-fundamentos/01-ontologia-material-relacional.md"]
+    acceptance: "cita textual paginada o mención secundaria"
+
+  - id: A3-pag-hoel
+    subject: "Paginación de Hoel 2017 en cap 02-05"
+    priority: 2
+    est_minutes: 25
+    action:
+      kind: engagement
+      target_file: "02-fundamentos/05-temporalidad-y-causalidad.md"
+      target_line: 118
+      author: "Hoel"
+      year: 2017
+      strategy: "buscar PDF Hoel 2017 'When the map is better than the territory'; integrar paginación o reformular"
+    touches: ["02-fundamentos/05-temporalidad-y-causalidad.md"]
+    acceptance: "cita textual paginada o mención secundaria"
+
+  - id: A4-pag-holm
+    subject: "Paginación de Holm 1979 en cap 04-05"
+    priority: 3
+    est_minutes: 15
+    action:
+      kind: engagement
+      target_file: "04-debates/05-limitaciones-declaradas-consolidacion.md"
+      target_line: 17
+      author: "Holm"
+      year: 1979
+      strategy: "Holm 1979 'A simple sequentially rejective multiple test procedure', Scand. J. Statist. 6: 65-70"
+    touches: ["04-debates/05-limitaciones-declaradas-consolidacion.md"]
+    acceptance: "cita textual paginada"
+
+  # ---- Bloque B: decorative_citations 27 hits (alimenta B-F1) ----
+  - id: B1-decorative-warren
+    subject: "Convertir menciones decorativas de Warren 2006 a engagement"
+    priority: 2
+    est_minutes: 60
+    action:
+      kind: engagement
+      author: "Warren"
+      year: 2006
+      strategy: "auditar todas las menciones de (Warren 2006); donde sea cita decorativa, agregar cita textual paginada o convertir en referencia técnica explicada"
+    touches: ["00-proyecto/", "01-diagnostico/", "02-fundamentos/04-anclaje-conductual-ecologico.md", "03-formalizacion/", "05-aplicaciones/"]
+    acceptance: "≥80% de menciones de Warren 2006 con engagement (cita o explicación técnica)"
+
+  - id: B2-decorative-lee1976
+    subject: "Engagement Lee 1976 (variable τ óptica)"
+    priority: 3
+    est_minutes: 30
+    action:
+      kind: engagement
+      author: "Lee"
+      year: 1976
+      strategy: "Lee 1976 'A theory of visual control of braking based on information about time-to-collision'; agregar cita paginada en glosario y abreviaturas"
+    touches: ["00-proyecto/06-listas-figuras-tablas-abreviaturas.md", "00-proyecto/07-glosario-operativo.md"]
+    acceptance: "Lee 1976 citado con pp. en cada locus técnico"
+
+  - id: B3-decorative-friston-clark
+    subject: "Engagement Friston 2010 / Clark 2013 en estado del arte"
+    priority: 3
+    est_minutes: 45
+    action:
+      kind: engagement
+      authors: ["Friston", "Clark"]
+      strategy: "Free-energy principle (Friston 2010 Nat. Rev. Neurosci. 11:127-138) + Whatever next? (Clark 2013 BBS 36:181-204); engagement con la posición predictiva/activa vs la tesis"
+    touches: ["01-diagnostico/03-estado-del-arte.md"]
+    acceptance: "≥1 cita textual paginada por autor; engagement no decorativo"
+
+  - id: B4-decorative-woodward-craver
+    subject: "Engagement Woodward 2003 / Craver 2007 en cap 02-05"
+    priority: 2
+    est_minutes: 40
+    action:
+      kind: engagement
+      authors: ["Woodward", "Craver"]
+      strategy: "Woodward 2003 cap. 2 manipulabilidad ya está; reforzar Craver 2007 con cita textual sobre manipulabilidad mutua"
+    touches: ["02-fundamentos/05-temporalidad-y-causalidad.md"]
+    acceptance: "Woodward 2003 y Craver 2007 con citas textuales paginadas en §2"
+
+  - id: B5-decorative-everett-zurek
+    subject: "Reformular menciones Everett 1957 / Zurek 2003 sobre interpretaciones QM"
+    priority: 3
+    est_minutes: 30
+    action:
+      kind: engagement
+      authors: ["Everett", "Zurek"]
+      strategy: "convertir lista decorativa de interpretaciones QM en engagement con cita o referencia técnica concreta a decoherencia"
+    touches: ["02-fundamentos/01-ontologia-material-relacional.md"]
+    acceptance: "Everett y Zurek con verbo de engagement explícito y cita técnica"
+
+  # ---- Bloque C: editorial / consistencia (B-E1...E4) ----
+  - id: C1-rebuild-tesis
+    subject: "Re-ejecutar TesisFinal/build.py y verificar diff"
+    priority: 4
+    est_minutes: 5
+    action:
+      kind: shell
+      cmd: "python3 TesisFinal/build.py && git diff --stat TesisFinal/Tesis.md"
+    touches: ["TesisFinal/Tesis.md (regenerable, no es edit manual)"]
+    acceptance: "build.py corre sin error; diff esperado o nulo"
+
+  - id: C2-chicago-uniformity
+    subject: "Auditoría de Chicago author-date (& vs y, paginación)"
+    priority: 3
+    est_minutes: 60
+    action:
+      kind: audit
+      pattern: "&"
+      strategy: "grep '&' citado vs ', y'; reportar inconsistencias y proponer fixes en bitácora"
+    touches: ["02-fundamentos/", "04-debates/", "05-aplicaciones/", "06-cierre/"]
+    acceptance: "≤5 anomalías persistentes documentadas"
+
+  - id: C3-table-numbering
+    subject: "Verificar numeración de tablas y figuras tras inserciones"
+    priority: 4
+    est_minutes: 15
+    action:
+      kind: shell
+      cmd: "python3 scripts/number_tables.py --dry-run"
+    touches: []
+    acceptance: "numeración estable; sin cambios o cambios listados"
+
+  - id: C4-glossary-coverage
+    subject: "Cobertura del glosario tras B-F4/B-F5/B-F6"
+    priority: 3
+    est_minutes: 20
+    action:
+      kind: audit
+      strategy: "auditar términos técnicos introducidos en cuerpo (Lyapunov, Grassberger-Procaccia, embedding Takens, slaving principle) están en glosario"
+    touches: ["00-proyecto/07-glosario-operativo.md"]
+    acceptance: "todos los términos técnicos clave presentes en glosario"
+
+  # ---- Bloque D: harness mantenimiento ----
+  - id: D1-harness-pass
+    subject: "Pasada completa del harness (8 verificadores) y registrar drift"
+    priority: 1
+    est_minutes: 5
+    action:
+      kind: shell
+      cmd: "/usr/bin/python3 harness/cli.py pass --budget-min 5"
+    touches: ["harness/state.json", "harness/reports/"]
+    acceptance: "reporte generado; deltas vs pasada anterior identificados"
+
+  - id: D2-bitacora-update
+    subject: "Actualizar bitácora del modo continuo con progreso del bloque"
+    priority: 2
+    est_minutes: 5
+    action:
+      kind: shell
+      cmd: "echo '(actualización de bitácora gestionada por continuous.py)'"
+    touches: ["Bitacora/2026-05-05-continuous-run/"]
+    acceptance: "bitácora reflejada con tareas done/pending/failed"
+
+  # ---- Bloque E: técnicas seguras (no tocan metrics.json) ----
+  - id: E1-corpus-summary-audit
+    subject: "Auditar tablas crudas de corpus contra outputs/metrics.json (read-only)"
+    priority: 3
+    est_minutes: 30
+    action:
+      kind: audit
+      strategy: "para cada caso 09-simulaciones-edi/<NN>_caso/outputs/metrics.json comparar vs Anexo correspondiente; reportar discrepancias en bitácora; NO editar metrics.json"
+    touches: ["10-apendices-tecnicos/", "Bitacora/"]
+    acceptance: "discrepancias listadas para revisión humana; ningún metrics.json modificado"
+
+  - id: E2-doc-config-deep
+    subject: "Verificación profunda doc↔config para casos 03/12/29 (B-T6)"
+    priority: 3
+    est_minutes: 45
+    action:
+      kind: audit
+      strategy: "leer Evaluacion_Modelos_Dominio.md vs case_config.json de cada caso; reportar"
+    touches: ["Bitacora/"]
+    acceptance: "reporte con propuesta de salida (a) cambiar config (b) cambiar doc"

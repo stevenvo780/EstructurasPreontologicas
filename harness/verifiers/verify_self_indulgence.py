@@ -9,6 +9,7 @@ Patrones:
 Reporte advisory (no bloqueante por sí solo).
 """
 from __future__ import annotations
+import fnmatch
 import json
 import re
 import sys
@@ -22,10 +23,26 @@ from harness.lib.tesis_paths import (
 )
 
 
+def _is_excluded(rel_path: str, patterns: list[str]) -> bool:
+    """fnmatch con glob '**' soportado vía Path.match (que acepta dobles asteriscos)."""
+    p = Path(rel_path)
+    for pat in patterns:
+        # fnmatch trata '**' como '*'; usamos PurePath.match para precisión
+        if fnmatch.fnmatch(rel_path, pat):
+            return True
+        try:
+            if p.match(pat):
+                return True
+        except (ValueError, IndexError):
+            pass
+    return False
+
+
 def main() -> dict:
     cfg = load_config()
     flag_terms = cfg["self_indulgence"]["flag_terms"]
     min_phrase_len = cfg["self_indulgence"]["template_signatures"]["min_phrase_length"]
+    exclude_globs = cfg["self_indulgence"].get("exclude_globs", []) or []
 
     # También escanear bitácora y harness mismo
     files = chapter_md_files()
@@ -38,7 +55,12 @@ def main() -> dict:
 
     flag_regex = [(t, re.compile(t, re.IGNORECASE)) for t in flag_terms]
 
+    excluded_count = 0
     for f in files:
+        rel = str(f.relative_to(repo_root()))
+        if _is_excluded(rel, exclude_globs):
+            excluded_count += 1
+            continue
         try:
             text = f.read_text(encoding="utf-8")
         except Exception:
@@ -76,14 +98,17 @@ def main() -> dict:
     return {
         "verifier": "self_indulgence",
         "status": status,
-        "files_scanned": len(files),
+        "files_scanned": len(files) - excluded_count,
+        "files_excluded": excluded_count,
         "flag_hits_count": len(flag_hits),
         "flag_hits_sample": flag_hits[:25],
         "template_duplicates_count": len(template_dupes),
         "template_duplicates_sample": template_dupes[:10],
         "interpretation": (
             "Banderas indican manierismo / versionología / plantillas spam (CLAUDE.md §1). "
-            "Cada hit debe revisarse y borrarse si no aporta contenido sustantivo."
+            "Cada hit debe revisarse y borrarse si no aporta contenido sustantivo. "
+            "Archivos que documentan los patrones (REPORTE_AUTOINDULGENCIAS.md, V5_documentos/) "
+            "están excluidos vía self_indulgence.exclude_globs."
         ),
     }
 

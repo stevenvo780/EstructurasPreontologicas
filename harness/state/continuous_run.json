@@ -1,0 +1,986 @@
+{
+  "version": 1,
+  "status": "running",
+  "started_at": "2026-05-05T02:21:33+00:00",
+  "started_epoch": 1777947693.0047443,
+  "target_hours": 150.0,
+  "ticks": 22,
+  "tasks": [
+    {
+      "id": "A1-pag-takens",
+      "subject": "Paginación de Takens 1981 en cap 02-01",
+      "priority": 2,
+      "est_minutes": 20,
+      "status": "done",
+      "started_at": "2026-05-05T02:28:08+00:00",
+      "finished_at": "2026-05-05T02:29:44+00:00",
+      "result": "ref LNM 898 pp.366-381; PDF ausente, paginación verbatim declarada pendiente",
+      "notes": []
+    },
+    {
+      "id": "A2-pag-zurek",
+      "subject": "Paginación de Zurek 2003 en cap 02-01",
+      "priority": 2,
+      "est_minutes": 20,
+      "status": "done",
+      "started_at": "2026-05-05T02:33:23+00:00",
+      "finished_at": "2026-05-05T02:33:45+00:00",
+      "result": "Zurek 2003 reformulado como referencia posicional con cita canónica Rev. Mod. Phys. 75:715-775; PDF ausente, deuda verbatim declarada",
+      "notes": []
+    },
+    {
+      "id": "A3-pag-hoel",
+      "subject": "Paginación de Hoel 2017 en cap 02-05",
+      "priority": 2,
+      "est_minutes": 25,
+      "status": "done",
+      "started_at": "2026-05-05T02:28:08+00:00",
+      "finished_at": "2026-05-05T02:31:34+00:00",
+      "result": "Hoel 2013 paginado PNAS 110:19790-19795; Hoel 2017 sin PDF declarado deuda",
+      "notes": []
+    },
+    {
+      "id": "A4-pag-holm",
+      "subject": "Paginación de Holm 1979 en cap 04-05",
+      "priority": 3,
+      "est_minutes": 15,
+      "status": "done",
+      "started_at": "2026-05-05T02:28:08+00:00",
+      "finished_at": "2026-05-05T02:31:57+00:00",
+      "result": "Holm 1979 declarado ref sin PDF; sin paginación inventada",
+      "notes": []
+    },
+    {
+      "id": "B1-decorative-warren",
+      "subject": "Convertir menciones decorativas de Warren 2006 a engagement",
+      "priority": 2,
+      "est_minutes": 60,
+      "status": "done",
+      "started_at": "2026-05-05T02:49:39+00:00",
+      "finished_at": "2026-05-05T02:49:40+00:00",
+      "result": "dry-run ok",
+      "notes": []
+    },
+    {
+      "id": "B2-decorative-lee1976",
+      "subject": "Engagement Lee 1976 (variable τ óptica)",
+      "priority": 3,
+      "est_minutes": 30,
+      "status": "done",
+      "started_at": "2026-05-05T02:38:36+00:00",
+      "finished_at": "2026-05-05T02:40:20+00:00",
+      "result": "Lee 1976 Perception 5(4):437-459; pp.439-441 posicional; deuda PDF",
+      "notes": []
+    },
+    {
+      "id": "B3-decorative-friston-clark",
+      "subject": "Engagement Friston 2010 / Clark 2013 en estado del arte",
+      "priority": 3,
+      "est_minutes": 45,
+      "status": "done",
+      "started_at": "2026-05-05T02:38:00+00:00",
+      "finished_at": "2026-05-05T02:38:56+00:00",
+      "result": "engagement contrastivo Friston/Clark + deuda PDF declarada",
+      "notes": []
+    },
+    {
+      "id": "B4-decorative-woodward-craver",
+      "subject": "Engagement Woodward 2003 / Craver 2007 en cap 02-05",
+      "priority": 2,
+      "est_minutes": 40,
+      "status": "done",
+      "started_at": "2026-05-05T02:35:54+00:00",
+      "finished_at": "2026-05-05T02:38:33+00:00",
+      "result": "Woodward p.59 + Craver p.153 verbatim (Craver secundaria declarada) en §2",
+      "notes": []
+    },
+    {
+      "id": "B5-decorative-everett-zurek",
+      "subject": "Reformular menciones Everett 1957 / Zurek 2003 sobre interpretaciones QM",
+      "priority": 3,
+      "est_minutes": 30,
+      "status": "done",
+      "started_at": "2026-05-05T02:35:54+00:00",
+      "finished_at": "2026-05-05T02:37:08+00:00",
+      "result": "Everett+Zurek upgraded to posicional engagement (relative-state/einselection) with Rev Mod Phys coords",
+      "notes": []
+    },
+    {
+      "id": "C1-rebuild-tesis",
+      "subject": "Re-ejecutar TesisFinal/build.py y verificar diff",
+      "priority": 4,
+      "est_minutes": 5,
+      "status": "done",
+      "started_at": "2026-05-05T02:38:00+00:00",
+      "finished_at": "2026-05-05T02:38:33+00:00",
+      "result": "build.py exit 0; diff registrado",
+      "notes": []
+    },
+    {
+      "id": "C2-chicago-uniformity",
+      "subject": "Auditoría de Chicago author-date (& vs y, paginación)",
+      "priority": 3,
+      "est_minutes": 60,
+      "status": "done",
+      "started_at": "2026-05-05T02:49:40+00:00",
+      "finished_at": "2026-05-05T02:49:41+00:00",
+      "result": "dry-run ok",
+      "notes": []
+    },
+    {
+      "id": "C3-table-numbering",
+      "subject": "Verificar numeración de tablas y figuras tras inserciones",
+      "priority": 4,
+      "est_minutes": 15,
+      "status": "done",
+      "started_at": "2026-05-05T02:38:00+00:00",
+      "finished_at": "2026-05-05T02:38:33+00:00",
+      "result": "number_tables.py --dry-run exit 0",
+      "notes": []
+    },
+    {
+      "id": "C4-glossary-coverage",
+      "subject": "Cobertura del glosario tras B-F4/B-F5/B-F6",
+      "priority": 3,
+      "est_minutes": 20,
+      "status": "done",
+      "started_at": "2026-05-05T02:35:54+00:00",
+      "finished_at": "2026-05-05T02:38:33+00:00",
+      "result": "4 términos auditados, 4 ausentes en glosario, DRAFT-IA propuesto",
+      "notes": []
+    },
+    {
+      "id": "D1-harness-pass",
+      "subject": "Pasada completa del harness (8 verificadores) y registrar drift",
+      "priority": 1,
+      "est_minutes": 5,
+      "status": "done",
+      "started_at": "2026-05-05T02:21:35+00:00",
+      "finished_at": "2026-05-05T02:21:41+00:00",
+      "result": "Pasada dry completada. Reporte: harness/reports/pass-2026-05-05-022138.md",
+      "notes": []
+    },
+    {
+      "id": "D2-bitacora-update",
+      "subject": "Actualizar bitácora del modo continuo con progreso del bloque",
+      "priority": 2,
+      "est_minutes": 5,
+      "status": "done",
+      "started_at": "2026-05-05T02:24:04+00:00",
+      "finished_at": "2026-05-05T02:24:14+00:00",
+      "result": "Bitácora actualizada por continuous.py; reporte previo intacto.",
+      "notes": []
+    },
+    {
+      "id": "E1-corpus-summary-audit",
+      "subject": "Auditar tablas crudas de corpus contra outputs/metrics.json (read-only)",
+      "priority": 3,
+      "est_minutes": 30,
+      "status": "done",
+      "started_at": "2026-05-05T02:38:00+00:00",
+      "finished_at": "2026-05-05T02:40:20+00:00",
+      "result": "29/30 match; caso 16 discrepancia ya declarada; caso 30 nota obsoleta",
+      "notes": []
+    },
+    {
+      "id": "E2-doc-config-deep",
+      "subject": "Verificación profunda doc↔config para casos 03/12/29 (B-T6)",
+      "priority": 3,
+      "est_minutes": 45,
+      "status": "done",
+      "started_at": "2026-05-05T02:49:39+00:00",
+      "finished_at": "2026-05-05T02:49:40+00:00",
+      "result": "dry-run ok",
+      "notes": []
+    },
+    {
+      "id": "AD-edc90560",
+      "subject": "Decorativa→engagement Warren 2006 en 00-proyecto/01-estructura-general.md:144",
+      "priority": 3,
+      "est_minutes": 25,
+      "status": "done",
+      "started_at": "2026-05-05T03:21:16+00:00",
+      "finished_at": "2026-05-05T03:21:48+00:00",
+      "result": "Engagement Warren 2006 con cita verbatim p.359 (atractores conductuales)",
+      "notes": [],
+      "completed_at": null
+    },
+    {
+      "id": "AD-fa3a687c",
+      "subject": "Decorativa→engagement Lee 1976 en 00-proyecto/06-listas-figuras-tablas-abreviaturas.md:61",
+      "priority": 3,
+      "est_minutes": 25,
+      "status": "done",
+      "started_at": "2026-05-05T03:21:16+00:00",
+      "finished_at": "2026-05-05T03:21:53+00:00",
+      "result": "Engagement técnico de τ y marca de mención secundaria; deuda de PDF mantenida",
+      "notes": [],
+      "completed_at": null
+    },
+    {
+      "id": "AD-4f983f4b",
+      "subject": "Decorativa→engagement Warren 2006 en 01-diagnostico/01-falencias-de-la-tesis.md:20",
+      "priority": 3,
+      "est_minutes": 25,
+      "status": "done",
+      "started_at": "2026-05-05T03:21:17+00:00",
+      "finished_at": "2026-05-05T03:21:53+00:00",
+      "result": "Warren 2006 p.358 cita verbatim + pp.359-361 contraste rivales",
+      "notes": [],
+      "completed_at": null
+    },
+    {
+      "id": "AD-00e24f26",
+      "subject": "Decorativa→engagement Colombia 1935 en 01-diagnostico/03-estado-del-arte.md:90",
+      "priority": 3,
+      "est_minutes": 25,
+      "status": "done",
+      "started_at": "2026-05-05T03:21:17+00:00",
+      "finished_at": "2026-05-05T03:21:38+00:00",
+      "result": "Desambigua \"(Colombia, 1935–2013)\" → \"(filósofo colombiano, 1935–2013)\"",
+      "notes": [],
+      "completed_at": null
+    },
+    {
+      "id": "AD-762792a0",
+      "subject": "Decorativa→engagement Warren 2006 en 01-diagnostico/03-estado-del-arte.md:106",
+      "priority": 3,
+      "est_minutes": 25,
+      "status": "done",
+      "started_at": "2026-05-05T03:21:17+00:00",
+      "finished_at": "2026-05-05T03:22:33+00:00",
+      "result": "Engagement Warren 2006 con citas verbatim p.358 y p.359 verificadas contra PDF",
+      "notes": [],
+      "completed_at": null
+    },
+    {
+      "id": "AD-e153bc43",
+      "subject": "Decorativa→engagement Warren 2006 en 02-fundamentos/04-anclaje-conductual-ecologico.md:233",
+      "priority": 3,
+      "est_minutes": 25,
+      "status": "done",
+      "started_at": "2026-05-05T03:21:17+00:00",
+      "finished_at": "2026-05-05T03:21:48+00:00",
+      "result": "Añadida paginación p. 375 a back-ref Warren 2006 en línea 233 (engagement principal en 231)",
+      "notes": [],
+      "completed_at": null
+    },
+    {
+      "id": "AD-b57b1877",
+      "subject": "Decorativa→engagement Warren 2006 en 03-formalizacion/01-aparato-formal.md:216",
+      "priority": 3,
+      "est_minutes": 25,
+      "status": "done",
+      "started_at": "2026-05-05T03:21:17+00:00",
+      "finished_at": "2026-05-05T03:22:43+00:00",
+      "result": "Engagement Warren 2006 p.374 con cita verbatim VENLab + attractors",
+      "notes": [],
+      "completed_at": null
+    },
+    {
+      "id": "AD-889c5fff",
+      "subject": "Decorativa→engagement Warren 2006 en 03-formalizacion/03-auditoria-ontologica-y-diseno-de-investigacion.md:117",
+      "priority": 3,
+      "est_minutes": 25,
+      "status": "done",
+      "started_at": "2026-05-05T03:21:17+00:00",
+      "finished_at": "2026-05-05T03:22:18+00:00",
+      "result": "Engagement Warren 2006 pp. 358-359 con cita verbatim verificada PDF",
+      "notes": [],
+      "completed_at": null
+    },
+    {
+      "id": "AD-7e3b8bf6",
+      "subject": "Decorativa→engagement Holm 1979 en 03-formalizacion/04-operacionalizacion-de-kappa.md:164",
+      "priority": 3,
+      "est_minutes": 25,
+      "status": "done",
+      "started_at": "2026-05-05T03:21:17+00:00",
+      "finished_at": "2026-05-05T03:22:23+00:00",
+      "result": "Holm 1979 → engagement técnico step-down, marcado secundaria (sin PDF)",
+      "notes": [],
+      "completed_at": null
+    },
+    {
+      "id": "AD-5ac49bbc",
+      "subject": "Decorativa→engagement Wallis 2002 en 04-debates/01-debates-con-posiciones-rivales.md:234",
+      "priority": 3,
+      "est_minutes": 25,
+      "status": "done",
+      "started_at": "2026-05-05T03:21:17+00:00",
+      "finished_at": "2026-05-05T03:22:58+00:00",
+      "result": "Wallis/Hildreth marcados como reporte secundario + deuda paginación",
+      "notes": [],
+      "completed_at": null
+    },
+    {
+      "id": "AD-03d878e2",
+      "subject": "Decorativa→engagement Woodward 2003 en 04-debates/04-anticipacion-objeciones-filosoficas.md:221",
+      "priority": 3,
+      "est_minutes": 25,
+      "status": "done",
+      "started_at": "2026-05-05T03:21:17+00:00",
+      "finished_at": "2026-05-05T03:22:03+00:00",
+      "result": "Engagement Woodward interventionist + mención secundaria declarada (PDF escaneo sin OCR)",
+      "notes": [],
+      "completed_at": null
+    },
+    {
+      "id": "AD-4d6f3a8f",
+      "subject": "Decorativa→engagement Warren 2006 en 05-aplicaciones/00-criterios-de-admision.md:67",
+      "priority": 3,
+      "est_minutes": 25,
+      "status": "done",
+      "started_at": "2026-05-05T03:21:18+00:00",
+      "finished_at": "2026-05-05T03:22:23+00:00",
+      "result": "Engagement Warren 2006 con dos citas paginadas (p.358, p.359) verificadas contra PDF",
+      "notes": [],
+      "completed_at": null
+    },
+    {
+      "id": "AD-a6b652f5",
+      "subject": "Decorativa→engagement Husserl 1913 en 05-aplicaciones/01-mente-memoria-yo.md:231",
+      "priority": 3,
+      "est_minutes": 25,
+      "status": "done",
+      "started_at": "2026-05-05T03:21:38+00:00",
+      "finished_at": "2026-05-05T03:22:08+00:00",
+      "result": "Husserl 1913 reformulado como referencia secundaria con deuda H-J5 inline",
+      "notes": [],
+      "completed_at": null
+    },
+    {
+      "id": "AD-e7fd5ec9",
+      "subject": "Decorativa→engagement Beyer 2016 en 05-aplicaciones/03-sistemas-tecnicos-distribuidos.md:114",
+      "priority": 3,
+      "est_minutes": 25,
+      "status": "done",
+      "started_at": "2026-05-05T03:21:48+00:00",
+      "finished_at": "2026-05-05T03:22:18+00:00",
+      "result": "Beyer 2016 reformulado como mención secundaria declarada (PDF ausente)",
+      "notes": [],
+      "completed_at": null
+    },
+    {
+      "id": "AD-4ae47def",
+      "subject": "Decorativa→engagement Hale 2021 en 05-aplicaciones/04-instituciones-mercado-y-estado.md:194",
+      "priority": 3,
+      "est_minutes": 25,
+      "status": "done",
+      "started_at": "2026-05-05T03:21:48+00:00",
+      "finished_at": "2026-05-05T03:22:28+00:00",
+      "result": "Hale 2021 reformulado como mención secundaria con engagement técnico sobre OxCGRT",
+      "notes": [],
+      "completed_at": null
+    },
+    {
+      "id": "AD-261ffc48",
+      "subject": "Decorativa→engagement Sternad 2001 en 05-aplicaciones/05-dinamica-conductual-reconstruccion-warren.md:131",
+      "priority": 3,
+      "est_minutes": 25,
+      "status": "done",
+      "started_at": "2026-05-05T03:21:53+00:00",
+      "finished_at": "2026-05-05T03:22:18+00:00",
+      "result": "Sternad 2001 reformulada como mención secundaria vía Warren 2006 (PDF primario ausente)",
+      "notes": [],
+      "completed_at": null
+    },
+    {
+      "id": "AD-5a15b050",
+      "subject": "Decorativa→engagement Wallis 2002 en 05-aplicaciones/05-dinamica-conductual-reconstruccion-warren.md:232",
+      "priority": 3,
+      "est_minutes": 25,
+      "status": "done",
+      "started_at": "2026-05-05T03:21:53+00:00",
+      "finished_at": "2026-05-05T03:22:38+00:00",
+      "result": "Wallis/Hildreth reformulados como mención secundaria declarada (no PDF)",
+      "notes": [],
+      "completed_at": null
+    },
+    {
+      "id": "AD-3642dbb7",
+      "subject": "Decorativa→engagement Warren 2006 en 06-cierre/02-guia-de-defensa.md:32",
+      "priority": 3,
+      "est_minutes": 25,
+      "status": "done",
+      "started_at": "2026-05-05T03:22:03+00:00",
+      "finished_at": "2026-05-05T03:22:33+00:00",
+      "result": "Warren 2006 p.358 cita verbatim insertada (agent–environment coupled dynamics)",
+      "notes": [],
+      "completed_at": null
+    },
+    {
+      "id": "AU-1-caso26-starlink",
+      "status": "pending",
+      "kind": "science-audit",
+      "priority": "high",
+      "subject": "Caso 26 Starlink: EDI=+0.689 p=1.000 con val_steps=1 — heredar cuarentena de B-T5",
+      "source": "adversarial-reviewer 2026-05-05",
+      "files": [
+        "05-aplicaciones/07-mapa-aplicaciones-corpus.md:124",
+        "06-cierre/04-versiones-cortas-defensa.md:110",
+        "09-simulaciones-edi/26_caso_starlink/case_config.json"
+      ],
+      "acceptance": "metrics.json regenerado con val_steps>=8 y bloque-permutación n_perm=2999; clasificación final justificada; tablas coherentes",
+      "started_at": null,
+      "completed_at": null,
+      "result": null
+    },
+    {
+      "id": "AU-2-caso27-bootstrap-cruza-cero",
+      "status": "pending",
+      "kind": "science-audit",
+      "priority": "high",
+      "subject": "Caso 27 Riesgo Biológico: CI bootstrap [-0.198,+0.648] cruza cero pero declarado strong gate completo",
+      "source": "adversarial-reviewer 2026-05-05",
+      "files": [
+        "06-cierre/01-conclusion-demostrativa.md:55",
+        "05-aplicaciones/07-mapa-aplicaciones-corpus.md:28"
+      ],
+      "acceptance": "CI bootstrap completamente positivo o reclasificación weak con conteo strong actualizado de 4 a 3 en cap 06-01, 06-04, 05-aplicaciones/07",
+      "started_at": null,
+      "completed_at": null,
+      "result": null
+    },
+    {
+      "id": "AU-3-baselines-superan-modelo",
+      "status": "pending",
+      "kind": "science-audit",
+      "priority": "critical",
+      "subject": "ARIMA/VAR superan modelo acoplado en 3/7 casos (Deforestación, Riesgo Biológico, Microplásticos) — condición de fracaso autodeclarada se cumple",
+      "source": "adversarial-reviewer 2026-05-05",
+      "files": [
+        "06-cierre/01-conclusion-demostrativa.md:87",
+        "09-simulaciones-edi/baselines/baselines_report.md"
+      ],
+      "acceptance": "Sección honesta en cap 06-01 con tabla de signos negativos visibles; pretensión multidominio reformulada o restringida; lectura literal de baselines_report.md citada",
+      "started_at": null,
+      "completed_at": null,
+      "result": null
+    },
+    {
+      "id": "AU-4-significance-theater-21-22",
+      "status": "pending",
+      "kind": "science-audit",
+      "priority": "medium",
+      "subject": "Casos 21 Salinización (EDI=0.018) y 22 Fósforo: p significativo con magnitud trivial o CI cruza cero — significance theater",
+      "source": "adversarial-reviewer 2026-05-05",
+      "files": [
+        "05-aplicaciones/07-mapa-aplicaciones-corpus.md:113",
+        "06-cierre/04-versiones-cortas-defensa.md:110"
+      ],
+      "acceptance": "Columna CI añadida a tablas resumen 06-01 y 05-aplicaciones/07; reclasificación 21,22; cita Wasserstein-Lazar 2016 p.131 en cap 03-formalizacion/02",
+      "started_at": null,
+      "completed_at": null,
+      "result": null
+    },
+    {
+      "id": "AU-5-auc-roc-circular",
+      "status": "pending",
+      "kind": "science-audit",
+      "priority": "high",
+      "subject": "AUC-ROC=0.886 vs ARIMA=0.600 sin documento metodológico — sospecha de circularidad y baseline de paja",
+      "source": "adversarial-reviewer 2026-05-05",
+      "files": [
+        "06-cierre/01-conclusion-demostrativa.md:243"
+      ],
+      "acceptance": "Documento 09-simulaciones-edi/auc_roc/methodology.md define outcome/predictor/gold standard; o eliminación de la cifra; o reformulación honesta sin comparar con ARIMA en task que ARIMA no hace",
+      "started_at": null,
+      "completed_at": null,
+      "result": null
+    },
+    {
+      "id": "AU-6-multisonda-1-de-7",
+      "status": "pending",
+      "kind": "science-audit",
+      "priority": "critical",
+      "subject": "Multi-sonda 1/7 convergencia (14%) — limitación reportada pero no propaga al juicio del corpus (Cartwright 1999)",
+      "source": "adversarial-reviewer 2026-05-05",
+      "files": [
+        "06-cierre/04-versiones-cortas-defensa.md:60",
+        "06-cierre/01-conclusion-demostrativa.md:147"
+      ],
+      "acceptance": "Convergencia inter-sonda reportada para 40 casos tras B-T1; ajuste lenguaje abstract/conclusión proporcional a la tasa; cita Cartwright 1999 cap.4 p.89 paginada en cap 04-debates",
+      "started_at": null,
+      "completed_at": null,
+      "result": null
+    },
+    {
+      "id": "AU-7-caso30-holm-bonferroni",
+      "status": "pending",
+      "kind": "science-audit",
+      "priority": "high",
+      "subject": "Caso 30 Behavioral p=0.044 al borde — bajo Holm-Bonferroni con 30 casos (α/30=0.0017) cae; valid=False en JSON",
+      "source": "adversarial-reviewer 2026-05-05",
+      "files": [
+        "06-cierre/04-versiones-cortas-defensa.md:118",
+        "06-cierre/04-versiones-cortas-defensa.md:27",
+        "09-simulaciones-edi/30_caso_behavioral/outputs/metrics.json"
+      ],
+      "acceptance": "Tabla con p-values Holm-corregidos para los 30 casos; relato caso 30 reescrito si no sobrevive; bandera valid=False documentada en glosario o eliminada con justificación",
+      "started_at": null,
+      "completed_at": null,
+      "result": null
+    },
+    {
+      "id": "AU-8-1500-fp-totem",
+      "status": "pending",
+      "kind": "science-audit",
+      "priority": "medium",
+      "subject": "'0/1500 falsos positivos' repetido 5× sin script regenerador documentado — patrón totem CLAUDE.md §1",
+      "source": "adversarial-reviewer 2026-05-05",
+      "files": [
+        "06-cierre/01-conclusion-demostrativa.md:238",
+        "06-cierre/01-conclusion-demostrativa.md:245",
+        "06-cierre/04-versiones-cortas-defensa.md:60",
+        "06-cierre/04-versiones-cortas-defensa.md:114",
+        "06-cierre/05-respuestas-tipo-defensa.md:61"
+      ],
+      "acceptance": "Comando regenerador con seed/hash citado en una nota al pie; verificación bit-a-bit; reducir 5 ocurrencias literales a 1 con cita interna",
+      "started_at": null,
+      "completed_at": null,
+      "result": null
+    },
+    {
+      "id": "AU-9-edi-negativo-no-es-null",
+      "status": "pending",
+      "kind": "science-audit",
+      "priority": "critical",
+      "subject": "Casos 23/07/08/29 con EDI<<0 (≤-0.876) listados como 'null genuino' — son fallos catastróficos del modelo, categoría inventada para que el conteo encaje",
+      "source": "adversarial-reviewer 2026-05-05",
+      "files": [
+        "06-cierre/04-versiones-cortas-defensa.md:110",
+        "06-cierre/01-conclusion-demostrativa.md:55",
+        "05-aplicaciones/07-mapa-aplicaciones-corpus.md:31"
+      ],
+      "acceptance": "Taxonomía separa 'null genuino |EDI|<0.05' de 'fallo modelo EDI<<0'; conteos actualizados en 3 loci; análisis de por qué falla la sonda en cada caso",
+      "started_at": null,
+      "completed_at": null,
+      "result": null
+    }
+  ],
+  "log": [
+    {
+      "at": "2026-05-05T02:21:35+00:00",
+      "entry": "tick 1: in_progress=D1-harness-pass"
+    },
+    {
+      "at": "2026-05-05T02:21:41+00:00",
+      "entry": "complete D1-harness-pass"
+    },
+    {
+      "at": "2026-05-05T02:24:04+00:00",
+      "entry": "tick 2: in_progress=D2-bitacora-update"
+    },
+    {
+      "at": "2026-05-05T02:24:14+00:00",
+      "entry": "complete D2-bitacora-update"
+    },
+    {
+      "at": "2026-05-05T02:27:35+00:00",
+      "entry": "tick-batch 3: claimed=['A1-pag-takens', 'A2-pag-zurek', 'A3-pag-hoel', 'B4-decorative-woodward-craver']"
+    },
+    {
+      "at": "2026-05-05T02:28:01+00:00",
+      "entry": "reset in_progress -> pending (refactor a tick-batch con anti-colisión)"
+    },
+    {
+      "at": "2026-05-05T02:28:08+00:00",
+      "entry": "tick-batch 4: claimed=['A1-pag-takens', 'A3-pag-hoel', 'B1-decorative-warren', 'A4-pag-holm']"
+    },
+    {
+      "at": "2026-05-05T02:29:44+00:00",
+      "entry": "complete A1-pag-takens"
+    },
+    {
+      "at": "2026-05-05T02:31:34+00:00",
+      "entry": "complete A3-pag-hoel"
+    },
+    {
+      "at": "2026-05-05T02:31:57+00:00",
+      "entry": "complete A4-pag-holm"
+    },
+    {
+      "at": "2026-05-05T02:33:23+00:00",
+      "entry": "tick 5: in_progress=A2-pag-zurek"
+    },
+    {
+      "at": "2026-05-05T02:33:45+00:00",
+      "entry": "complete A2-pag-zurek"
+    },
+    {
+      "at": "2026-05-05T02:35:54+00:00",
+      "entry": "tick-batch 6: claimed=['B4-decorative-woodward-craver', 'C4-glossary-coverage', 'B5-decorative-everett-zurek']"
+    },
+    {
+      "at": "2026-05-05T02:37:04+00:00",
+      "entry": "failed B5-decorative-everett-zurek: <reason>"
+    },
+    {
+      "at": "2026-05-05T02:37:08+00:00",
+      "entry": "complete B5-decorative-everett-zurek"
+    },
+    {
+      "at": "2026-05-05T02:38:00+00:00",
+      "entry": "tick-batch 7: claimed=['E1-corpus-summary-audit', 'B3-decorative-friston-clark', 'C1-rebuild-tesis', 'C3-table-numbering']"
+    },
+    {
+      "at": "2026-05-05T02:38:05+00:00",
+      "entry": "complete C4-glossary-coverage"
+    },
+    {
+      "at": "2026-05-05T02:38:33+00:00",
+      "entry": "complete C4-glossary-coverage"
+    },
+    {
+      "at": "2026-05-05T02:38:33+00:00",
+      "entry": "complete B4-decorative-woodward-craver"
+    },
+    {
+      "at": "2026-05-05T02:38:33+00:00",
+      "entry": "complete C1-rebuild-tesis"
+    },
+    {
+      "at": "2026-05-05T02:38:33+00:00",
+      "entry": "complete C3-table-numbering"
+    },
+    {
+      "at": "2026-05-05T02:38:36+00:00",
+      "entry": "tick-batch 8: claimed=['B2-decorative-lee1976']"
+    },
+    {
+      "at": "2026-05-05T02:38:56+00:00",
+      "entry": "complete B3-decorative-friston-clark"
+    },
+    {
+      "at": "2026-05-05T02:40:04+00:00",
+      "entry": "complete B2-decorative-lee1976"
+    },
+    {
+      "at": "2026-05-05T02:40:20+00:00",
+      "entry": "complete B2-decorative-lee1976"
+    },
+    {
+      "at": "2026-05-05T02:40:20+00:00",
+      "entry": "complete E1-corpus-summary-audit"
+    },
+    {
+      "at": "2026-05-05T02:40:27+00:00",
+      "entry": "tick-batch 9: claimed=['E2-doc-config-deep']"
+    },
+    {
+      "at": "2026-05-05T02:47:48+00:00",
+      "entry": "daemon-claim AD-edc90560"
+    },
+    {
+      "at": "2026-05-05T02:47:48+00:00",
+      "entry": "daemon-claim AD-fa3a687c"
+    },
+    {
+      "at": "2026-05-05T02:47:48+00:00",
+      "entry": "daemon-claim AD-4f983f4b"
+    },
+    {
+      "at": "2026-05-05T02:47:49+00:00",
+      "entry": "complete AD-edc90560 (dry)"
+    },
+    {
+      "at": "2026-05-05T02:47:49+00:00",
+      "entry": "complete AD-fa3a687c (dry)"
+    },
+    {
+      "at": "2026-05-05T02:47:49+00:00",
+      "entry": "complete AD-4f983f4b (dry)"
+    },
+    {
+      "at": "2026-05-05T02:47:49+00:00",
+      "entry": "daemon-claim AD-00e24f26"
+    },
+    {
+      "at": "2026-05-05T02:47:49+00:00",
+      "entry": "daemon-claim AD-762792a0"
+    },
+    {
+      "at": "2026-05-05T02:47:49+00:00",
+      "entry": "daemon-claim AD-e153bc43"
+    },
+    {
+      "at": "2026-05-05T02:47:50+00:00",
+      "entry": "complete AD-00e24f26 (dry)"
+    },
+    {
+      "at": "2026-05-05T02:47:50+00:00",
+      "entry": "complete AD-762792a0 (dry)"
+    },
+    {
+      "at": "2026-05-05T02:47:50+00:00",
+      "entry": "complete AD-e153bc43 (dry)"
+    },
+    {
+      "at": "2026-05-05T02:47:50+00:00",
+      "entry": "daemon-claim AD-b57b1877"
+    },
+    {
+      "at": "2026-05-05T02:47:50+00:00",
+      "entry": "daemon-claim AD-889c5fff"
+    },
+    {
+      "at": "2026-05-05T02:47:50+00:00",
+      "entry": "daemon-claim AD-7e3b8bf6"
+    },
+    {
+      "at": "2026-05-05T02:47:51+00:00",
+      "entry": "complete AD-b57b1877 (dry)"
+    },
+    {
+      "at": "2026-05-05T02:47:51+00:00",
+      "entry": "complete AD-889c5fff (dry)"
+    },
+    {
+      "at": "2026-05-05T02:47:51+00:00",
+      "entry": "complete AD-7e3b8bf6 (dry)"
+    },
+    {
+      "at": "2026-05-05T02:47:51+00:00",
+      "entry": "daemon-claim AD-5ac49bbc"
+    },
+    {
+      "at": "2026-05-05T02:47:51+00:00",
+      "entry": "daemon-claim AD-03d878e2"
+    },
+    {
+      "at": "2026-05-05T02:47:51+00:00",
+      "entry": "daemon-claim AD-4d6f3a8f"
+    },
+    {
+      "at": "2026-05-05T02:47:52+00:00",
+      "entry": "complete AD-5ac49bbc (dry)"
+    },
+    {
+      "at": "2026-05-05T02:47:52+00:00",
+      "entry": "complete AD-03d878e2 (dry)"
+    },
+    {
+      "at": "2026-05-05T02:47:52+00:00",
+      "entry": "complete AD-4d6f3a8f (dry)"
+    },
+    {
+      "at": "2026-05-05T02:47:52+00:00",
+      "entry": "daemon-claim AD-a6b652f5"
+    },
+    {
+      "at": "2026-05-05T02:47:52+00:00",
+      "entry": "daemon-claim AD-e7fd5ec9"
+    },
+    {
+      "at": "2026-05-05T02:47:52+00:00",
+      "entry": "daemon-claim AD-4ae47def"
+    },
+    {
+      "at": "2026-05-05T02:47:53+00:00",
+      "entry": "complete AD-a6b652f5 (dry)"
+    },
+    {
+      "at": "2026-05-05T02:47:53+00:00",
+      "entry": "complete AD-e7fd5ec9 (dry)"
+    },
+    {
+      "at": "2026-05-05T02:47:53+00:00",
+      "entry": "complete AD-4ae47def (dry)"
+    },
+    {
+      "at": "2026-05-05T02:47:53+00:00",
+      "entry": "daemon-claim AD-261ffc48"
+    },
+    {
+      "at": "2026-05-05T02:47:53+00:00",
+      "entry": "daemon-claim AD-5a15b050"
+    },
+    {
+      "at": "2026-05-05T02:47:53+00:00",
+      "entry": "daemon-claim AD-3642dbb7"
+    },
+    {
+      "at": "2026-05-05T02:47:54+00:00",
+      "entry": "complete AD-261ffc48 (dry)"
+    },
+    {
+      "at": "2026-05-05T02:47:54+00:00",
+      "entry": "complete AD-5a15b050 (dry)"
+    },
+    {
+      "at": "2026-05-05T02:47:54+00:00",
+      "entry": "complete AD-3642dbb7 (dry)"
+    },
+    {
+      "at": "2026-05-05T02:49:39+00:00",
+      "entry": "daemon-claim B1-decorative-warren"
+    },
+    {
+      "at": "2026-05-05T02:49:39+00:00",
+      "entry": "daemon-claim E2-doc-config-deep"
+    },
+    {
+      "at": "2026-05-05T02:49:40+00:00",
+      "entry": "complete B1-decorative-warren (dry)"
+    },
+    {
+      "at": "2026-05-05T02:49:40+00:00",
+      "entry": "complete E2-doc-config-deep (dry)"
+    },
+    {
+      "at": "2026-05-05T02:49:40+00:00",
+      "entry": "daemon-claim C2-chicago-uniformity"
+    },
+    {
+      "at": "2026-05-05T02:49:41+00:00",
+      "entry": "complete C2-chicago-uniformity (dry)"
+    },
+    {
+      "at": "2026-05-05T03:21:16+00:00",
+      "entry": "daemon-claim AD-edc90560"
+    },
+    {
+      "at": "2026-05-05T03:21:16+00:00",
+      "entry": "daemon-claim AD-fa3a687c"
+    },
+    {
+      "at": "2026-05-05T03:21:17+00:00",
+      "entry": "daemon-claim AD-4f983f4b"
+    },
+    {
+      "at": "2026-05-05T03:21:17+00:00",
+      "entry": "daemon-claim AD-00e24f26"
+    },
+    {
+      "at": "2026-05-05T03:21:17+00:00",
+      "entry": "daemon-claim AD-762792a0"
+    },
+    {
+      "at": "2026-05-05T03:21:17+00:00",
+      "entry": "daemon-claim AD-e153bc43"
+    },
+    {
+      "at": "2026-05-05T03:21:17+00:00",
+      "entry": "daemon-claim AD-b57b1877"
+    },
+    {
+      "at": "2026-05-05T03:21:17+00:00",
+      "entry": "daemon-claim AD-889c5fff"
+    },
+    {
+      "at": "2026-05-05T03:21:17+00:00",
+      "entry": "daemon-claim AD-7e3b8bf6"
+    },
+    {
+      "at": "2026-05-05T03:21:17+00:00",
+      "entry": "daemon-claim AD-5ac49bbc"
+    },
+    {
+      "at": "2026-05-05T03:21:17+00:00",
+      "entry": "daemon-claim AD-03d878e2"
+    },
+    {
+      "at": "2026-05-05T03:21:18+00:00",
+      "entry": "daemon-claim AD-4d6f3a8f"
+    },
+    {
+      "at": "2026-05-05T03:21:38+00:00",
+      "entry": "complete AD-00e24f26"
+    },
+    {
+      "at": "2026-05-05T03:21:38+00:00",
+      "entry": "daemon-claim AD-a6b652f5"
+    },
+    {
+      "at": "2026-05-05T03:21:48+00:00",
+      "entry": "complete AD-edc90560"
+    },
+    {
+      "at": "2026-05-05T03:21:48+00:00",
+      "entry": "complete AD-e153bc43"
+    },
+    {
+      "at": "2026-05-05T03:21:48+00:00",
+      "entry": "daemon-claim AD-e7fd5ec9"
+    },
+    {
+      "at": "2026-05-05T03:21:48+00:00",
+      "entry": "daemon-claim AD-4ae47def"
+    },
+    {
+      "at": "2026-05-05T03:21:53+00:00",
+      "entry": "complete AD-fa3a687c"
+    },
+    {
+      "at": "2026-05-05T03:21:53+00:00",
+      "entry": "complete AD-4f983f4b"
+    },
+    {
+      "at": "2026-05-05T03:21:53+00:00",
+      "entry": "daemon-claim AD-261ffc48"
+    },
+    {
+      "at": "2026-05-05T03:21:53+00:00",
+      "entry": "daemon-claim AD-5a15b050"
+    },
+    {
+      "at": "2026-05-05T03:22:03+00:00",
+      "entry": "complete AD-03d878e2"
+    },
+    {
+      "at": "2026-05-05T03:22:03+00:00",
+      "entry": "daemon-claim AD-3642dbb7"
+    },
+    {
+      "at": "2026-05-05T03:22:08+00:00",
+      "entry": "complete AD-a6b652f5"
+    },
+    {
+      "at": "2026-05-05T03:22:18+00:00",
+      "entry": "complete AD-889c5fff"
+    },
+    {
+      "at": "2026-05-05T03:22:18+00:00",
+      "entry": "complete AD-e7fd5ec9"
+    },
+    {
+      "at": "2026-05-05T03:22:18+00:00",
+      "entry": "complete AD-261ffc48"
+    },
+    {
+      "at": "2026-05-05T03:22:23+00:00",
+      "entry": "complete AD-7e3b8bf6"
+    },
+    {
+      "at": "2026-05-05T03:22:23+00:00",
+      "entry": "complete AD-4d6f3a8f"
+    },
+    {
+      "at": "2026-05-05T03:22:28+00:00",
+      "entry": "complete AD-4ae47def"
+    },
+    {
+      "at": "2026-05-05T03:22:33+00:00",
+      "entry": "complete AD-762792a0"
+    },
+    {
+      "at": "2026-05-05T03:22:33+00:00",
+      "entry": "complete AD-3642dbb7"
+    },
+    {
+      "at": "2026-05-05T03:22:38+00:00",
+      "entry": "complete AD-5a15b050"
+    },
+    {
+      "at": "2026-05-05T03:22:43+00:00",
+      "entry": "complete AD-b57b1877"
+    },
+    {
+      "at": "2026-05-05T03:22:58+00:00",
+      "entry": "complete AD-5ac49bbc"
+    }
+  ],
+  "updated_at": "2026-05-05T03:28:30+00:00",
+  "stopped_at": "2026-05-05T03:04:14+00:00"
+}

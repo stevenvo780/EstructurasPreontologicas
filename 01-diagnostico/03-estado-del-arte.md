@@ -9,13 +9,13 @@ Tres oleadas:
 
 - **Embodied cognition (1991–2005).** Programa que rechaza el cognitivismo simbólico y rehabilita cuerpo, acción y entorno como variables constitutivas del proceso cognitivo. Texto fundacional: Varela, Thompson y Rosch (1991), *The Embodied Mind*.
 - **Extended mind y enactivismo (1998–2015).** Clark y Chalmers (1998) formalizan el principio de paridad ("if a process counts as cognitive when done in the head, it should also count as cognitive when done in the world", p. 8). Noë (2004) y Thompson (2007) consolidan el enactivismo. Hutto y Myin (2013) plantean el enactivismo radical (REC) eliminando representaciones contentful en niveles básicos.
-- **Ecological dynamics (2003–presente).** Recupera y formaliza Gibson (1979/1986). Warren (2006) consolida el programa de **dinámica perceptiva-motora** con la conjetura clave: *"the laws of behavior are descriptions of regular dynamical relations between organism and environment"* (p. 359). Fajen y Warren (2003) ofrecen la formalización dinámica de segundo orden de la locomoción dirigida.
+- **Ecological dynamics (2003–presente).** Recupera y formaliza Gibson (1979/1986). Warren (2006) consolida el programa de **dinámica perceptiva-motora**: la tesis central es que el comportamiento adaptativo no está impuesto por un controlador interno sino que emerge de la interacción agente–entorno bajo restricciones físicas, informacionales y de tarea. Cita verificada en PDF: *"Adaptive behavior, rather than being imposed by a preexisting structure, emerges from this confluence of constraints under the boundary condition of a particular task or goal"* (Warren 2006, p. 358). Fajen y Warren (2003) ofrecen la formalización dinámica de segundo orden de la locomoción dirigida.
 
 ### 1.2. Controversias activas
 
 - ¿es la representación necesaria a algún nivel cognitivo? Debate entre Clark (2008, *Supersizing the Mind*) y Hutto-Myin (2013, *Radicalizing Enactivism*).
 - ¿basta la dinámica acoplada para explicar fenómenos cognitivos de alto nivel (lenguaje, planificación)? Open question post-Thompson 2007.
-- ¿se puede integrar con neurociencia computacional sin recaer en cognitivismo? Programa de active inference (Friston 2010) y predictive processing (Clark 2013) intenta esa síntesis.
+- ¿se puede integrar con neurociencia computacional sin recaer en cognitivismo? El programa de **active inference** (Friston 2010, *Nat. Rev. Neurosci.* 11:127-138) postula la minimización de energía libre variacional como principio unificador del cerebro: los sistemas auto-organizados resisten la disipación entrópica acotando estados sorprendentes mediante un modelo generativo interno. El **predictive processing** de Clark (2013, *BBS* 36:181-204) extiende esa lectura a una arquitectura jerárquica de predicción descendente y error de predicción ascendente, donde el agente situado es esencialmente un motor bayesiano que minimiza error. **Discrepancia con la tesis:** ambos marcos cargan el peso explicativo en un *modelo generativo interno* del agente y comprometen ontológicamente con representaciones probabilísticas en el cerebro como variables causales primarias; la tesis, en cambio, opera con estructuras pre-ontológicas relacionales cuyo cierre operativo κ se mide por intervención ablativa sobre el acoplamiento organismo-entorno (no por adecuación bayesiana de un modelo interno). La tesis no niega que la inferencia activa describa correctamente *parte* del fenómeno —Friston/Clark son compatibles con la dinámica acoplada cuando se reinterpretan como descripción macro—, pero rechaza la inversión que vuelve el modelo generativo en sustancia ontológica primaria. *Deuda declarada:* este capítulo no incluye cita textual paginada de Friston 2010 ni Clark 2013; ambos PDFs no están en `07-bibliografia/`. Referencia posicional con coordenadas canónicas; engagement textual pendiente (CLAUDE.md §5).
 
 ### 1.3. Hueco que la tesis ocupa
 
@@ -88,7 +88,7 @@ Warren (2006) ofrece la conjetura cualitativa con r²=0.980 entre datos experime
 ### 5.1. Líneas principales
 
 - **Mario Bunge.** Argentino-canadiense, sistemismo, materialismo emergentista científico. *Treatise on Basic Philosophy* (1974–1989, 8 vols.); *Buscar la filosofía en las ciencias sociales* (1995); *Crisis y reconstrucción de la filosofía* (2002). Es interlocutor sustantivo de la tesis: el sistemismo es esquema afín, pero la tesis exige criterio empírico operativo más estricto.
-- **Guillermo Hoyos Vásquez** (Colombia, 1935–2013). Filosofía hermenéutica, ciencia y comunidad. Relevante para la dimensión normativa.
+- **Guillermo Hoyos Vásquez** (filósofo colombiano, 1935–2013). Filosofía hermenéutica, ciencia y comunidad. Relevante para la dimensión normativa.
 - **Jaime Salas Echeverri** (Universidad de Antioquia). Filosofía analítica latinoamericana.
 - **Fernando Salmerón** (México), **Carlos Ulises Moulines** (México-Alemania, estructuralismo de teorías). Aporte a metateoría científica.
 - **Eduardo Rabossi** (Argentina), **Carlos Pereda** (Argentina-México). Filosofía analítica.
@@ -101,13 +101,17 @@ La filosofía latinoamericana de la ciencia tiene tradición sistemista fuerte (
 
 **Tabla 1.3.1.**
 
+**Tabla 1.3.1.**
+
 | Subcampo | Posición consolidada | Posición de la tesis | Discriminación específica |
 |----------|----------------------|----------------------|---------------------------|
 | Mente postcognitivista | Acoplamiento organismo-entorno como tesis general | Cuantificación EDI del cierre operativo en behavioral dynamics | Caso 30 cuantitativo + caso 05-05 cualitativo |
 | Ontología analítica | Realismo estructural óntico (Ladyman-Ross) o sistemismo (Bunge) | Realismo estructural moderado + materialidad + EDI | Filtro empírico operativo no presente en rivales |
 | Complejidad computacional | Emergencia causal (Hoel) o irreducibilidad (Wolfram) | Cierre operativo κ vía EDI multidominio | Dossier reproducible + falsación rechazada |
-| Behavioral dynamics | Acoplamiento dinámico cualitativo (Warren 2006) | Versión cuantitativa Nivel 3 weak (caso 30) | Discriminación pública contra cognitivismo |
+| Behavioral dynamics | Acoplamiento dinámico cualitativo (Warren, 2006) | Versión cuantitativa Nivel 3 weak (caso 30) | Discriminación pública contra cognitivismo |
 | Filosofía latinoamericana | Sistemismo (Bunge) o hermenéutica (Hoyos) | Puente operativo entre sistemismo y validación cuantitativa | Aparato EDI multidominio |
+
+Sobre la celda *Behavioral dynamics*: Warren (2006) sostiene literalmente que «for a given task, the agent and its environment are treated as a pair of dynamical systems that are coupled mechanically and informationally. Their interactions give rise to the behavioral dynamics, a vector field with attractors that correspond to stable task solutions, repellers that correspond to avoided states, and bifurcations that correspond to behavioral transitions» (Warren, 2006, p. 358), y precisa que «stable behavioral solutions correspond to attractors in the behavioral dynamics, and transitions between behavioral patterns correspond to bifurcations. Such stabilities do not inhere a priori in the structure of the environment or in the structure of the agent but are codetermined by the confluence of task constraints and perceptual–motor control laws» (Warren, 2006, p. 359). El programa es cualitativo: enuncia atractores y bifurcaciones como descriptores conceptuales del acoplamiento agente–entorno sin un criterio empírico cuantitativo de admisión del cierre operativo. La tesis discrimina ahí: convierte ese "codetermined by the confluence of task constraints" en una métrica EDI con permutación 999 + bootstrap 500 (caso 30, Nivel 3 weak), permitiendo decidir empíricamente cuándo el acoplamiento es no trivial. <!-- BORRADOR-IA · requires: H-J* (voz autoral final de Jacob) -->
 
 ## 7. Contribución específica
 

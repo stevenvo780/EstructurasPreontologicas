@@ -122,8 +122,10 @@ def main(verbose: bool = False) -> dict:
         "total_citations": total,
         "without_pagination_count": len(sin_paginacion),
         "without_pagination_sample": sin_paginacion[:10],
+        "without_pagination_full": sin_paginacion,
         "without_pdf_in_07_count": len(sin_pdf_disponible),
         "without_pdf_in_07_sample": sin_pdf_disponible[:10],
+        "without_pdf_in_07_full": sin_pdf_disponible,
         "pdftotext_available": not pdf_extract_unavailable,
         "interpretation": (
             "Citas sin paginación violan CLAUDE.md §5 ('cita textual con paginación o no cita'). "

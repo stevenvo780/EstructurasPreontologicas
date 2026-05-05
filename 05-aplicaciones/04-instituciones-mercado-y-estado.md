@@ -133,6 +133,8 @@ La validez normativa se modelaría como cuenca de atracción del sistema institu
 
 **Tabla 5.4.1.**
 
+**Tabla 5.4.1.**
+
 | Tentación | Razón del rechazo |
 |---|---|
 | Hipóstasis institucional | No convertir instituciones en sujetos metafísicos autónomos |
@@ -193,7 +195,7 @@ Se selecciona como caso piloto, sin ejecutar en este manuscrito pero documentado
 - una cuenca de atracción institucional (régimen de cumplimiento) sometida a perturbación discreta y observable (la propia pandemia);
 - bifurcaciones identificables (transiciones de régimen restrictivo a permisivo y viceversa);
 - comparabilidad inter-país que permite definir variabilidad de la cuenca (legitimidad como anchura de la cuenca);
-- precedentes en la literatura cuantitativa (Hale et al., 2021; Cheng et al., 2020).
+- precedentes en la literatura cuantitativa: Hale et al. (2021, *Nature Human Behaviour* 5: 529–538) construyen el OxCGRT como panel global con un índice compuesto de stringency (0–100) agregado diariamente por país a partir de indicadores ordinales sobre cierres, restricciones de movilidad y políticas sanitarias; ese formato ordinal-temporal por país es precisamente lo que la adaptación del aparato EDI a series institucionales debería poder ingerir (engagement con el diseño del dataset, no con el argumento sustantivo del paper, que se cita como fuente secundaria al no haber sido auditado contra el PDF en `07-bibliografia/`); Cheng et al. (2020) ofrece tipología complementaria de respuestas estatales.
 
 La elevación de este caso piloto exige adaptación específica del aparato EDI a series institucionales con variables ordinales (índices de stringency) en lugar de variables continuas. Se documenta como deuda alta en `Bitacora/2026-04-28-cierre-doctoral/` y en la hoja de ruta `06-cierre/03-hoja-de-ruta-para-tesis-final.md`.
 

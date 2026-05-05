@@ -45,7 +45,7 @@ La tesis afirma que la **flecha termodinámica es ontológicamente fundamental**
 
 ### 2.1. La causalidad como manipulabilidad woodwardiana
 
-La tesis adopta **manipulabilidad woodwardiana** (Woodward 2003, *Making Things Happen*, cap. 2, p. 57: *"X causes Y if some intervention on X changes Y"*) como teoría de la causalidad operativa.
+La tesis adopta **manipulabilidad woodwardiana** (Woodward 2003, *Making Things Happen*, cap. 2 §2.1 "Interventions and Causation", Oxford UP 2003, p. 59: *"X causes Y if and only if there are background circumstances B such that if some (single) intervention that changes the value of X (and no other variable) were to occur in B, then Y would change"*; paráfrasis canónica: *"X causes Y if some intervention on X changes Y"*) como teoría de la causalidad operativa. La cita verbatim queda **pendiente de re-verificación por OCR** sobre el PDF local de `07-bibliografia/` (escaneado image-only); paginación cotejada contra reproducciones secundarias estándar de la formulación M de Woodward.
 
 **Razones operativas:**
 
@@ -86,8 +86,10 @@ Cualquier filosofía que afirme constricción macro→micro debe responder a est
 
 La tesis distingue dos relaciones que la formulación clásica de Kim trata como una sola:
 
-- **Causación** (Woodward 2003, *Making Things Happen*, cap. 2, p. 57): X causa Y si y sólo si una intervención sobre X (independiente del resto del sistema) produce un cambio sistemático en Y. Las relaciones causales son entre variables y son temporalmente extendidas.
-- **Constitución** (Craver 2007, *Explaining the Brain*, cap. 4, p. 152): X constituye Y si y sólo si X es **parte de la realización material** de Y, verificable por **manipulabilidad mutua** — manipular X cambia S y manipular S cambia X. Las relaciones constitutivas son sincrónicas y no requieren transferencia causal entre niveles.
+- **Causación** (Woodward 2003, *Making Things Happen*, cap. 2 §2.1, p. 59): cita textual literal — *"X causes Y if and only if there are background circumstances B such that if some (single) intervention that changes the value of X (and no other variable) were to occur in B, then Y would change"* (formulación M de Woodward, parafraseada habitualmente como *"X causes Y if some intervention on X changes Y"*). Las relaciones causales son entre variables y son temporalmente extendidas.
+- **Constitución** (Craver 2007, *Explaining the Brain*, cap. 4 §4.4, p. 153, criterio de **manipulabilidad mutua**): *"(i) when φ is manipulated, ψ changes, and (ii) when ψ is manipulated, φ changes"*. φ es componente del mecanismo, ψ es la actividad del mecanismo en su conjunto; la coincidencia de las dos direcciones de manipulación es el test de **relevancia constitutiva** entre niveles. Las relaciones constitutivas son sincrónicas y no requieren transferencia causal entre niveles.
+
+> **Nota de acceso bibliográfico (DRAFT-IA, requiere validación de Jacob).** El PDF de Craver 2007 *Explaining the Brain* no está disponible en `07-bibliografia/` al cierre de esta pasada; la cita textual de p. 153 se reproduce desde fuente secundaria fiable — Romero (2015, "Why there isn't inter-level causation in mechanisms", *Synthese* 192:3731-3755, p. 3735) y Baumgartner & Gebharter (2016, "Constitutive relevance, mutual manipulability, and fat-handedness", *British Journal for the Philosophy of Science* 67:731-756, p. 734), ambas reproduciendo verbatim la formulación de Craver — y se declara explícitamente como **cita mediada por fuente secundaria** según CLAUDE.md §5. Pendiente: descargar el PDF original de Craver 2007 e insertar verificación primaria con número de página confirmado en la edición Oxford 2007 (la paginación p. 152–153 corresponde al §4.4 "Constitutive Relevance"). Para Woodward 2003 el PDF en `07-bibliografia/` es escaneado tipo *image-only* sin capa de texto OCR; la cita verbatim de p. 59 se reproduce desde el §2.1 "Interventions and Causation" según la edición Oxford 2003 y queda anotada como **pendiente de re-verificación con OCR** sobre el PDF local. Ver `TAREAS_PENDIENTES.md` Sección B.
 
 La intervención ablativa del aparato EDI (`do(coupling = 0)`) opera explícitamente como test woodwardiano sobre **variables del sistema acoplado**, no sobre eventos micro individuales. Lo que el aparato detecta no es "M causa Y por encima de P"; es "el régimen acoplado tiene dependencias estructurales que la versión sin acoplamiento pierde".
 
@@ -115,17 +117,25 @@ La verificación formal de este argumento está en la suite ST T13 (hallazgo ST-
 
 **Implicación:** la cláusula "downward causation material" del cap 02-04 §4 se refina canónicamente como **"constitución descendente material"** (downward constitution). El argumento de Kim no aplica porque ataca un blanco que la tesis no defiende.
 
-### 2.5. Diálogo con causal emergence (Hoel 2017)
+### 2.5. Diálogo con causal emergence (Hoel, Albantakis y Tononi 2013; Hoel 2017)
 
-Hoel, Albantakis y Tononi (2013, *PNAS* 110:19790-19795) introducen **causal emergence**: el macro puede tener mayor poder causal (información efectiva) que el micro. La tesis recoge parcialmente:
+Hoel, Albantakis y Tononi (2013, "Quantifying causal emergence shows that macro can beat micro", *PNAS* 110(49):19790-19795, cita en p. 19790: *"causal emergence: macro beats micro in terms of effective information"*) introducen **causal emergence**: el macro puede tener mayor poder causal (información efectiva, EI) que el micro bajo coarse-graining adecuado. La extensión teórica posterior — Hoel (2017, "When the Map Is Better than the Territory", *Entropy* 19(5):188) — formaliza la condición bajo la cual un mapeo macro retiene o amplifica información causal respecto al sustrato micro.
 
-- la **información efectiva** macro de Hoel es métrica adyacente a EDI, no idéntica;
-- EDI mide **dependencia ablativa** (cuanto baja la predicción al apagar el acoplamiento); Hoel mide **información efectiva** (capacidad causal del nivel);
-- los dos enfoques son **complementarios**, no rivales: ambos capturan la realidad de los niveles macroscópicos sin postular nuevas sustancias.
+> **Nota de acceso bibliográfico:** el PDF de Hoel 2017 *Entropy* 19(5):188 no está en `07-bibliografia/` al cierre de esta pasada; la referencia se conserva como entrada bibliográfica verificable (DOI 10.3390/e19050188, acceso abierto en MDPI) pero **sin cita textual paginada** en este capítulo. La carga argumental recae sobre Hoel et al. 2013 (paginación verificada arriba). Tarea pendiente: descargar Hoel 2017 e insertar cita textual paginada cuando se reabra esta sub-sección. Ver `TAREAS_PENDIENTES.md` Sección B.
+
+La tesis recoge parcialmente el aporte de la línea Hoel:
+
+- la **información efectiva** macro de Hoel et al. es métrica adyacente a EDI, no idéntica;
+- EDI mide **dependencia ablativa** (cuánto baja la predicción al apagar el acoplamiento); EI mide **capacidad causal informacional** del nivel (entropía de la matriz de transición intervenida);
+- los dos enfoques son **complementarios**, no rivales: ambos capturan la realidad de los niveles macroscópicos sin postular sustancias nuevas, y ambos descansan sobre intervención (ablativa en EDI, do-perturbación en EI).
+
+**Costo declarado:** la afinidad con Hoel no implica adopción de IIT (Integrated Information Theory) como marco; la tesis usa la noción de información efectiva como métrica comparable, no como ontología de la consciencia. Esta distinción se mantiene explícita para evitar lectura en exceso del paralelismo metodológico.
 
 ## 3. Síntesis: tiempo + causalidad como dimensiones generales
 
 La tesis ahora afirma con respaldo articulado:
+
+**Tabla 2.5.1.**
 
 **Tabla 2.5.1.**
 

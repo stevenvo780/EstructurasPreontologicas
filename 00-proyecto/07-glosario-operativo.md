@@ -187,6 +187,8 @@ CI bootstrap, modos de fallo, LoE, val_steps reportados con su implicación infe
 
 **Tabla A.1.1.**
 
+**Tabla 0.7.1.**
+
 | LoE | Descripción | Ejemplos |
 |----:|-------------|----------|
 | 1 | Especulativo | Proxies indirectos, encuestas subjetivas, datos sintéticos sin ground truth |
@@ -247,7 +249,7 @@ Coupling ABM↔ODE: la sonda macro afecta a la dinámica micro y viceversa cuand
 Marco teórico de Warren (2006): comportamiento adaptativo orientado a meta sin postular controlador centralizado. La organización emerge de la interacción agente-entorno bajo restricciones físicas, informacionales y de tarea.
 
 ### Variable τ (tau)
-Razón entre tamaño angular óptico y su tasa de cambio. Especifica tiempo hasta contacto (Lee 1976).
+Razón entre tamaño angular óptico (θ) y su tasa de cambio (θ̇). Especifica tiempo hasta contacto sin requerir conocimiento explícito de distancia ni velocidad absoluta. Referencia canónica: Lee, D. N. (1976). "A theory of visual control of braking based on information about time-to-collision." *Perception* 5(4):437-459 (definición pp. 439-441, locus declarado posicionalmente; PDF no disponible en `07-bibliografia/` al cierre — verificación textual con paginación exacta pendiente como deuda menor cuando el PDF se incorpore). Capítulo 02-04.
 
 ### Variable τ_bal
 `θ/θ̇`. Razón entre ángulo del palo y velocidad angular. Especifica tiempo hasta vertical (Foo, Kelso, Guzman 2000).

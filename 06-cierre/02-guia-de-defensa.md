@@ -29,7 +29,7 @@ Una compresión es legítima si preserva las dependencias relevantes para la pre
 
 ### Demostración
 
-En behavioral dynamics (Warren 2006, Fajen-Warren 2003) el aparato se implementa completo: locomoción con r²=0.980, frenado con r²=0.98, equilibrio activo con τ_bal entre 0.5 y 1.0, raqueteo en zona pasivamente estable. Discriminación contra modelos internos / control óptimo en cinco celdas de la tabla.
+En behavioral dynamics el aparato se implementa completo. Warren (2006, p. 358) lo formula así: «the agent and its environment are treated as a pair of dynamical systems that are coupled mechanically and informationally [...] stable behavioral solutions correspond to attractors in the behavioral dynamics, and transitions between behavioral patterns correspond to bifurcations»; este es exactamente el patrón que la tesis usa como caso anclado (junto con Fajen-Warren 2003): locomoción con r²=0.980, frenado con r²=0.98, equilibrio activo con τ_bal entre 0.5 y 1.0, raqueteo en zona pasivamente estable. Discriminación contra modelos internos / control óptimo en cinco celdas de la tabla.
 
 ### Programa
 

@@ -213,7 +213,9 @@ La cláusula es estricta: ninguna entidad del aparato formal se reifica. La disc
 
 ## 10. Ejemplo canónico: caso ancla
 
-En el caso ancla canónico (Warren 2006, capítulo 05-05) los operadores se instancian así:
+En el caso ancla canónico (locomoción humana hacia meta con obstáculo, capítulo 05-05) los operadores se instancian sobre el dispositivo experimental que Warren describe textualmente: «The research was carried out in the Virtual Environment Navigation Lab (VENLab) at Brown University, a 12 m × 12 m room in which a participant can walk freely wearing a head-mounted display (60° horizontal × 40° vertical) while head position is recorded with a sonic–inertial tracking system» (Warren, 2006, p. 374). El compromiso teórico que importa para nuestro aparato es que en ese marco «attractors correspond to goal states and repellers to avoided states» (p. 374), es decir, las regularidades conductuales se leen como estructuras del sistema acoplado agente–entorno y no como representaciones internas previas. Sobre esa base los operadores se instancian así (BORRADOR-IA, requires: H-J3 — verificación final de equivalencia operador↔variable Fajen-Warren a cargo de Jacob):
+
+**Tabla 3.1.1.**
 
 **Tabla 3.1.1.**
 
@@ -232,6 +234,8 @@ Este ejemplo no es ilustrativo: es la prueba de que el aparato opera empíricame
 ## 11. Ejemplo programático: sistemas técnicos
 
 En sistemas distribuidos los operadores se instancian programáticamente (sin medición experimental controlada equivalente al caso ancla):
+
+**Tabla 3.1.2.**
 
 **Tabla 3.1.2.**
 

@@ -16,6 +16,8 @@ disponible en la biblioteca local (31 archivos PDF/EPUB, 112 MB).
 
 **Tabla 7.1.**
 
+**Tabla 7.1.**
+
 | Ref. | Edición presente |
 |------|------------------|
 | **Kant — Crítica de la razón pura** | `Kant, Immanuel - Critica de la razon pura, Pedro Ribas.pdf` (+ epub) |

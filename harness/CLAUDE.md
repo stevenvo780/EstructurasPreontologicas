@@ -115,6 +115,90 @@ Output siempre marcado `BORRADOR-IA` con `requires: H-J5`. La voz autoral final 
 - NO ejecuta operaciones git destructivas sin confirmación humana (hook bloquea).
 - NO marca tareas como completas — solo re-valida y reporta.
 
+## Modo continuo (sesiones de N horas reales) — DAEMON PARALELO
+
+**El modo continuo correcto es un daemon Python independiente** que vive como proceso `nohup` fuera de la sesión interactiva de Claude Code. Lanza K workers paralelos con `claude -p` headless, regenera tareas desde verificadores cuando la cola se vacía, y respeta hooks/budget.
+
+### Activación canónica
+
+```bash
+# 80 horas, 8 workers paralelos Opus
+bash harness/scripts/run_daemon.sh 80 8
+
+# 150 horas, 12 workers
+bash harness/scripts/run_daemon.sh 150 12
+
+# Tope alto de coste por worker (env vars)
+HARNESS_MAX_BUDGET_USD=10 HARNESS_MAX_TURNS=200 \
+  bash harness/scripts/run_daemon.sh 150 12
+```
+
+El launcher hace `continuous start` (si no hay sesión), `continuous replenish` inicial, y arranca `continuous daemon --hours N --parallel K` con `nohup`. Guarda PID en `harness/state/daemon.pid`.
+
+### Status, logs, stop
+
+```bash
+# Status
+python3 harness/cli.py continuous status
+
+# Log estructurado del daemon
+tail -f Bitacora/$(date +%F)-continuous-run/daemon.log
+
+# Logs por worker individual
+ls -lt Bitacora/$(date +%F)-continuous-run/workers/
+
+# Detener (drena workers en vuelo, SIGKILL si persiste 120s)
+bash harness/scripts/stop_daemon.sh
+
+# Generar más tareas manualmente desde verificadores
+python3 harness/cli.py continuous replenish --max-new 500
+```
+
+### Cómo despacha cada tarea
+
+| `action.kind` | proceso | flags |
+|---|---|---|
+| `engagement` | `claude -p` headless | `--permission-mode acceptEdits --max-turns 120 --max-budget-usd 5.00 --model opus` |
+| `audit` | `claude -p` headless | idem; output a `Bitacora/.../<task_id>.md` |
+| `shell` | `bash -c <cmd>` directo | sin Claude |
+| `verifier` | `python3 harness/verifiers/<...>.py` | sin Claude |
+
+Parsea la última línea `RESULT: <complete|fail> | <task_id> | <resumen>` del log del worker para marcar el resultado.
+
+### Generadores de tareas (auto-replenish)
+
+Cuando la cola baja de `--replenish-threshold` (default 2), `harness/lib/plan_generator.py` regenera tareas desde:
+
+- `verify_citation_pagination` → tareas de paginación verbatim
+- `verify_decorative_citations` → tareas de engagement de citas decorativas + list-dumps
+- `verify_debt_index` → tareas para añadir Deuda residual fechada
+- `verify_consistency_doc_config` → tareas de auditoría doc↔config
+- `verify_self_indulgence` → tareas de eliminación de patrones manieristas
+
+IDs deterministas (sha1 de file:line:autor) → no duplica tareas entre replenish.
+
+### Variables de entorno
+
+| Var | Default | Efecto |
+|---|---|---|
+| `HARNESS_MAX_TURNS` | 120 | Máximo turnos por worker Claude |
+| `HARNESS_MAX_BUDGET_USD` | 5.00 | Cap coste por worker (USD) |
+| `HARNESS_WORKER_MODEL` | opus | Modelo del worker |
+| `CLAUDE_BIN` | claude | Binario de Claude Code |
+
+### Modo viejo (DEPRECADO pero aún disponible)
+
+`/loop /continuous-run-tick` con `ScheduleWakeup` requería que la sesión interactiva siguiera viva entre wakeups. **No usar para 80h+** — se cae y deja la cola sin avanzar. Usar el daemon.
+
+### Archivos clave del modo continuo
+
+- [`harness/scripts/run_daemon.sh`](scripts/run_daemon.sh) — launcher con `nohup`
+- [`harness/scripts/stop_daemon.sh`](scripts/stop_daemon.sh) — stop con drain
+- [`harness/lib/daemon.py`](lib/daemon.py) — bucle principal: spawn N workers, reap, replenish, deadline
+- [`harness/lib/plan_generator.py`](lib/plan_generator.py) — generación de tareas desde verificadores
+- [`harness/state/continuous_run.json`](state/) — state persistente (sobrevive reinicios)
+- [`harness/state/daemon.pid`](state/) — PID del daemon activo
+
 ## Disciplina sobre el harness mismo
 
 El harness está sujeto a sus propias reglas. Si el linter de auto-indulgencia detecta patrones-bandera en outputs del harness, corrige el harness, no el linter.

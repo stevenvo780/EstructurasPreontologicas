@@ -17,7 +17,7 @@ La tesis debe distinguir explícitamente dos modos de operación: **modo demostr
 
 ### Cómo se resuelve
 
-El caso ancla canónico es la **dinámica conductual de la percepción y la acción** (Warren 2006). Razón: cumple las condiciones de admisión que el profesor pone como filtro de toda L3 admisible — variables empíricas, predicciones discriminantes, intervenciones, traducibilidad B↔L3, comparación rival viable. Los demás dominios quedan en modo programático, marcados como tales, hasta que se construya su análogo.
+El caso ancla canónico es la **dinámica conductual de la percepción y la acción** tal como la formula Warren (2006). Su tesis técnica es explícita: «the agent and its environment are treated as a pair of dynamical systems that are coupled mechanically and informationally. Their interactions give rise to the behavioral dynamics, a vector field with attractors that correspond to stable task solutions, repellers that correspond to avoided states, and bifurcations that correspond to behavioral transitions» (Warren, 2006, p. 358). Este marco se elige como ancla porque cumple punto por punto las condiciones de admisión que el profesor pone como filtro de toda L3 admisible — variables empíricas (cinemática del agente y estructura óptica/mecánica del entorno), atractores y bifurcaciones medibles, intervenciones discriminantes sobre el acoplamiento agente–entorno, traducibilidad B↔L3 a través del campo vectorial conductual, y comparación rival viable frente a teorías representacionalistas (modelos internos, sense–model–plan–act) que Warren discute en las pp. 359–361. Los demás dominios quedan en modo programático, marcados como tales, hasta que se construya su análogo.
 
 ### Dónde se trata
 

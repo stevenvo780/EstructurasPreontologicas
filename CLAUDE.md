@@ -206,6 +206,8 @@ Este repositorio incluye un harness de re-validación automática en `harness/` 
 Protocolo de uso completo: `harness/CLAUDE.md`.
 Comparación honesta vs SOTA 2025-2026: `Bitacora/2026-05-04-harness-sota/COMPARACION_SOTA.md`.
 
+**Sesiones largas autónomas (80-150 h):** usar el daemon paralelo con `bash harness/scripts/run_daemon.sh <horas> <parallel>`. Vive como proceso `nohup` independiente de la sesión Claude Code interactiva, lanza K workers `claude -p` Opus en paralelo, regenera tareas desde verificadores cuando la cola se vacía. NO usar el viejo `/loop /continuous-run-tick` para sesiones largas — requiere sesión interactiva viva y se cae. Detalles en `harness/CLAUDE.md` §"Modo continuo".
+
 El harness re-valida lo que esta `CLAUDE.md` raíz exige: cita textual con paginación (§5), prosa↔JSON (§4), deuda residual declarada (§7), no auto-indulgencia (§1). Cada cifra que reporta tiene su comando regenerador. NO genera prosa filosófica final ni cierra tareas H-J*.
 
 ## Convenciones del repositorio

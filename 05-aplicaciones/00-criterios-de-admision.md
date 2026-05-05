@@ -62,11 +62,17 @@ Una aplicación que solo renombra el fenómeno con vocabulario del marco sin pro
 
 **Tabla 5.0.1.**
 
+**Tabla 5.0.1.**
+
 | Capítulo | Tema | Estado |
 |---|---|---|
 | 05-05 | Behavioral dynamics: locomoción, obstáculos, frenado, raqueteo, equilibrio | DEMOSTRATIVO con dossier completo (Warren 2006, Fajen y Warren 2003, Yilmaz y Warren 1995, Foo et al. 2000, Sternad et al. 2001) |
 
+[BORRADOR-IA · requires: H-J*] El anclaje teórico del caso 05-05 es explícitamente Warren (2006), quien plantea que «the agent and its environment are treated as a pair of dynamical systems that are coupled mechanically and informationally. Their interactions give rise to the behavioral dynamics, a vector field with attractors that correspond to stable task solutions, repellers that correspond to avoided states, and bifurcations that correspond to behavioral transitions» (Warren, 2006, p. 358). Esta tesis hace al programa de Warren un caso ancla natural para la ontología material-relacional: los atractores no se postulan como entidades internas al agente ni como propiedades del entorno aislado, sino que «are codetermined by the confluence of task constraints and perceptual–motor control laws» (p. 359). El capítulo 05-05 hereda esa carga discriminante —no la presupone—.
+
 ### 4.2. Aplicaciones en modo programático
+
+**Tabla 5.0.2.**
 
 **Tabla 5.0.2.**
 

@@ -136,6 +136,8 @@ Para no debilitarse, conviene no prometer más de lo que el proyecto realmente p
 
 **Tabla 4.2.1.**
 
+**Tabla 4.2.1.**
+
 | Promesa rechazada | Razón |
 |---|---|
 | Ontología total cerrada | El proyecto no es totalizador; es articulador |
@@ -146,6 +148,8 @@ Para no debilitarse, conviene no prometer más de lo que el proyecto realmente p
 | Predicción de fenómenos sociales individuales | Las leyes de control institucionales son objeto de investigación, no resultado disponible |
 
 ## 9. Lo que la tesis sí puede prometer con fuerza
+
+**Tabla 4.2.2.**
 
 **Tabla 4.2.2.**
 

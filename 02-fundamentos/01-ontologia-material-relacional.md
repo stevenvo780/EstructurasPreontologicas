@@ -22,6 +22,8 @@ La tesis adopta **naturalismo metafísico moderado** como **compromiso de partid
 
 **Tabla 2.1.1.**
 
+**Tabla 2.1.1.**
+
 | Alternativa rechazada | Por qué la tesis no la asume |
 |---|---|
 | **Dualismo cartesiano** | Postula segunda sustancia (*res cogitans*) sin ganancia operativa y con problema de interacción no resuelto |
@@ -102,6 +104,8 @@ La distinción "macro vs micro" en el manuscrito original era **artefacto de la 
 
 **Tabla 2.1.2.**
 
+**Tabla 2.1.2.**
+
 | Invariante | Caso 31 (cuántico) | Caso 33 (molecular) | Caso 36 (celular) | Caso 04 (energético macro) | Caso 27 (riesgo bio macro) | Caso 30 (conductual) | Caso 39 (estelar) | Caso 40 (cosmológico) |
 |------------|--------------------|---------------------|-------------------|----------------------------|----------------------------|---------------------|-------------------|----------------------|
 | **Sustrato material** | qubit superconductor + baño térmico | proteína Villin + solvente | núcleo celular + citoplasma | red eléctrica + agentes económicos | población humana + patógenos | cuerpo + entorno físico | gas estelar + radiación | gas estelar + campo galáctico |
@@ -148,6 +152,8 @@ Para que la afirmación κ-ontológica fuerte se sostenga sobre un caso particul
 3. **Intervención experimental confirmatoria:** una predicción discriminante sobre intervención manipulada (no observación pasiva) debe cumplirse. Sin esto, la estructura puede ser correlación elaborada.
 
 **Estado del corpus actual respecto a κ-ontológica:**
+
+**Tabla 2.1.3.**
 
 **Tabla 2.1.3.**
 
@@ -214,12 +220,14 @@ Las cinco condiciones operativas son condiciones de admisión cualitativa. Para 
 
 1. **Exponente de Lyapunov máximo (λ_max)** vía algoritmo de Rosenstein, Collins y De Luca (1993, *Physica D* 65: 117-134). Mide la tasa de divergencia local de trayectorias inicialmente cercanas. λ_max > 0 indica sensibilidad a condiciones iniciales (caos determinista compatible con atractor extraño); λ_max ≈ 0 indica régimen marginal o cuasi-periódico; λ_max < 0 indica convergencia a punto fijo o ciclo límite.
 2. **Dimensión de correlación (D₂)** vía algoritmo de Grassberger y Procaccia (1983, *Physica D* 9: 189-208). Cuantifica la complejidad del atractor en el espacio de fase reconstruido. Valor no entero es firma de atractor fractal o extraño; valor próximo a 0 corresponde a atractor de punto fijo.
-3. **Embedding de Takens** (Takens 1981) con dimensión `dim=5` y retardo τ obtenido por primer cero de la autocorrelación. Reconstruye el espacio de fase a partir de la serie escalar observada cuando el sistema completo no es directamente medible.
+3. **Embedding de Takens** (Takens, F., "Detecting strange attractors in turbulence", en *Dynamical Systems and Turbulence, Warwick 1980*, eds. D. Rand y L.-S. Young, *Lecture Notes in Mathematics* vol. 898, Springer, Berlin, 1981, pp. 366–381; referencia secundaria: PDF no disponible en `07-bibliografia/`, paginación verbatim pendiente — el teorema de embedding de retardos enunciado en ese trabajo justifica la reconstrucción) con dimensión `dim=5` y retardo τ obtenido por primer cero de la autocorrelación. Reconstruye el espacio de fase a partir de la serie escalar observada cuando el sistema completo no es directamente medible.
 4. **Tiempo de mezcla**: número de pasos hasta que la autocorrelación cae por debajo de 1/e, indicando independencia estadística aproximada entre puntos separados temporalmente.
 
 La implementación canónica está en `09-simulaciones-edi/common/topology.py` con tests sobre 7 casos del corpus que tienen `primary_arrays.json` disponible (apéndice técnico §"Análisis topológico", reporte completo en `09-simulaciones-edi/topology/topology_report.{json,md}`):
 
 **Tabla 2.1.6.**
+
+**Tabla 2.1.4.**
 
 | Caso | λ_max | D₂ | r² (D₂) | Lectura cualitativa |
 |---|---:|---:|---:|---|
@@ -253,6 +261,8 @@ La extensión de las métricas topológicas a los 33 casos restantes del corpus 
 La realidad no es plana. La tesis distingue cinco modos de realidad sin multiplicar mundos:
 
 **Tabla 2.1.4.**
+
+**Tabla 2.1.5.**
 
 | Modo | Definición | Ejemplo paradigmático |
 |---|---|---|
@@ -332,6 +342,8 @@ La causalidad circular (upward + downward) emerge naturalmente del acoplamiento 
 
 **Tabla 2.1.5.**
 
+**Tabla 2.1.6.**
+
 | Tentación rechazada | Razón |
 |---|---|
 | Dualismo | Multiplica sustancias sin necesidad y sin compromiso operacional |
@@ -377,10 +389,10 @@ La generalidad multiescalar de la tesis llega hasta la escala cuántica (caso 31
 
 La tesis adopta postura **explícita** sobre la mecánica cuántica: rechaza la **interpretación Copenhagen instrumentalista pura** (estado cuántico solo describe conocimiento del observador) y declara compatibilidad con **interpretaciones realistas**:
 
-- **Many-worlds** (Everett 1957, DeWitt 1970): todas las ramas se realizan; el observador es subsistema dentro de la rama;
+- **Many-worlds / formulación de estado relativo** (Everett, *Rev. Mod. Phys.* 29:454-462, 1957; DeWitt 1970 — referencia posicional; PDF no disponible localmente, paginación verbatim declarada como deuda en `TAREAS_PENDIENTES.md` §A2): el aparato y el observador se tratan como subsistemas cuánticos y el estado conjunto evoluciona unitariamente; el "colapso" se reinterpreta como ramificación del estado relativo del observador respecto al sistema medido, sin postulado de proyección adicional. La tesis **engancha** el punto técnico (no la metafísica de mundos paralelos): que la frontera observador/observado puede trazarse internamente al sistema físico es condición de posibilidad del monismo material defendido en §0.1;
 - **Bohmiana** (de Broglie-Bohm): hay variables ocultas reales (posiciones de partículas) que evolucionan deterministamente;
 - **GRW / colapso objetivo** (Ghirardi-Rimini-Weber 1986): el colapso es proceso físico real, no efecto del observador;
-- **Decoherencia ambiental** (Zurek 2003): la medición efectiva emerge del acoplamiento al ambiente, no del observador consciente.
+- **Decoherencia ambiental y einselection** (Zurek, *Rev. Mod. Phys.* 75:715-775, 2003 — referencia posicional; PDF no disponible localmente, paginación verbatim declarada como deuda en `TAREAS_PENDIENTES.md` §A2): el acoplamiento sistema-ambiente selecciona dinámicamente una **base puntero** (pointer basis) — los estados estables bajo monitoreo ambiental — y suprime las coherencias entre ramas en escalas de tiempo de decoherencia. La tesis **engancha** el punto técnico (no la lectura epistémica): que la transición cuántico→clásico sea producto de acoplamientos físicos —no de un observador consciente— es lo que permite tratar la "medición" como caso particular de estabilización dinámica multiescalar (§§4-7), sin importar metafísica subjetivista.
 
 La tesis NO decide entre estas interpretaciones realistas — esa decisión rebasa el alcance del manuscrito. **Pero sí rechaza Copenhagen instrumentalista pura** porque:
 

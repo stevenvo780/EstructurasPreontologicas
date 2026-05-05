@@ -48,6 +48,8 @@ La tesis queda demostrada cuando se cumplen siete condiciones simultáneas. Cada
 
 **Tabla 6.1.1.**
 
+**Tabla 6.1.1.**
+
 | Categoría | N | Casos clave |
 |-----------|--:|-------------|
 | Strong (gate completo) | 4 | Energía (0.650), Deforestación (0.602), Kessler (0.353), Riesgo Biológico (0.333) |
@@ -130,6 +132,8 @@ Lo que el manuscrito no demuestra y reconoce explícitamente como deuda con plaz
 
 **Tabla 6.1.2.**
 
+**Tabla 6.1.2.**
+
 | Deuda | Descripción | Plazo | Entregable | Estado al 2026-04-28 |
 |---|---|---|---|---|
 | Caso 30 elevación a LoE = 4 | Datos humanos reales (VENLab/WALK-MS) con aval CEI, pipeline alta frecuencia | 9-10 meses | Caso 30 con EDI sobre datos humanos | Dossier técnico-ético en `Bitacora/2026-04-28-cierre-doctoral/02-` |
@@ -197,6 +201,8 @@ Establece el **irrealismo operativo** como tercera vía: ni cosa, ni ficción, s
 
 **Tabla 6.1.3.**
 
+**Tabla 6.1.3.**
+
 | Afirmación | Compromiso | Verificación |
 |---|---|---|
 | **La ontología es general (no regional macro)** | Cuatro invariantes válidos a cualquier escala | Capítulo 02-01 |
@@ -212,6 +218,8 @@ Establece el **irrealismo operativo** como tercera vía: ni cosa, ni ficción, s
 | El aparato tiene dominio de validez declarado | Casos null + caso 38 failure mode reportados honestamente | Capítulo 06-01 §3.5 |
 
 ## 7. Lo que la tesis no afirma
+
+**Tabla 6.1.4.**
 
 **Tabla 6.1.4.**
 

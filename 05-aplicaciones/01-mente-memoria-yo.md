@@ -177,6 +177,8 @@ La regla del capítulo 03-02 aplica: comprimir cuando el detalle interno no camb
 
 **Tabla 5.1.1.**
 
+**Tabla 5.1.1.**
+
 | Tentación | Razón del rechazo |
 |---|---|
 | Dualismo cartesiano | No requiere mente separada del cuerpo o el entorno |
@@ -228,7 +230,7 @@ Chalmers (1995, *Journal of Consciousness Studies* 2:200-219) plantea que ningú
 
 - el aparato EDI **no resuelve** el problema duro: ese no es su propósito;
 - el aparato describe la dinámica conductual-acoplada (tercera persona); no agota la realidad fenomenológica;
-- la **complementariedad** con métodos fenomenológicos (Husserl 1913 *Ideas I*, Merleau-Ponty 1945 *Fenomenología de la percepción*, Varela neurofenomenología) es una característica de diseño, no un fallo;
+- la **complementariedad** con la tradición fenomenológica (Husserl 1913 *Ideas I* y Merleau-Ponty 1945 *Fenomenología de la percepción* —referidos aquí como tradición metodológica, sin engagement textual paginado en este capítulo: ver `TAREAS_PENDIENTES.md` H-J5—; Varela neurofenomenología) es una característica de diseño, no un fallo;
 - la tesis ofrece **co-existencia disciplinada** entre tercera y primera persona, no eliminación de una por la otra.
 
 ### 7.3. Diálogo textual extendido

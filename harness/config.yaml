@@ -59,6 +59,16 @@ self_indulgence:
     - "8/8 verdes"
     - "42/42 ROBUSTO"
     - "BREAKTHROUGH"
+  # Archivos donde los hits son ejemplos legítimos (documentan los patrones, no los cometen).
+  # Excluidos del conteo para evitar falsos positivos auto-referenciales.
+  exclude_globs:
+    - "Bitacora/2026-04-28-iteraciones-IA/REPORTE_AUTOINDULGENCIAS.md"
+    - "Bitacora/2026-04-28-iteraciones-IA/V5_documentos/**"
+    - "Bitacora/2026-04-28-iteraciones-IA/V5_reportes_tecnicos/**"
+    - "Bitacora/2026-04-28-iteraciones-IA/V5_plantillas_por_caso/**"
+    - "Bitacora/2026-04-28-cierre-pendientes/**"
+    - "Bitacora/2026-05-04-harness-investigacion/PROPUESTA_HARNESS.md"
+    - "Bitacora/2026-05-04-harness-sota/COMPARACION_SOTA.md"
   template_signatures:
     # Frases que aparecen idénticas en >2 archivos -> sospecha de plantilla spam
     similarity_threshold: 0.85
