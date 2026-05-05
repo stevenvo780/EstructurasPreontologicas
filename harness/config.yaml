@@ -1,0 +1,100 @@
+# Configuración del harness — parámetros operativos
+# Editable, pero los defaults son los recomendados.
+
+repo_root: "/datos/repos/EstructurasPreontologicas"
+
+# Paths canónicos (no inventar; verificados contra el repo real)
+paths:
+  tesis_final: "TesisFinal/Tesis.md"
+  tesis_build: "TesisFinal/build.py"
+  chapters:
+    - "00-proyecto"
+    - "01-diagnostico"
+    - "02-fundamentos"
+    - "03-formalizacion"
+    - "04-debates"
+    - "05-aplicaciones"
+    - "06-cierre"
+  bibliography_pdfs: "07-bibliografia"
+  edi_engine: "09-simulaciones-edi"
+  metrics_glob: "09-simulaciones-edi/*_caso_*/outputs/metrics.json"
+  case_configs_glob: "09-simulaciones-edi/*_caso_*/case_config.json"
+  evaluacion_doc: "09-simulaciones-edi/Evaluacion_Modelos_Dominio.md"
+  tareas_pendientes: "TAREAS_PENDIENTES.md"
+  bitacora: "Bitacora"
+  glosario: "00-proyecto/07-glosario-operativo.md"
+
+# Presupuestos (cuotas de detención obligatorias)
+budgets:
+  default_pass_minutes: 30
+  long_pass_minutes: 480           # 8h máximo por pasada autónoma
+  max_tokens_per_subagent: 50000
+  max_tokens_per_pass: 500000
+  max_consecutive_no_progress_iterations: 3
+
+# Modelos (live mode)
+llm:
+  orchestrator_model: "claude-opus-4-7"
+  worker_model: "claude-sonnet-4-6"
+  reader_model: "claude-opus-4-7"
+  api_endpoint: "https://api.anthropic.com/v1/messages"
+  request_timeout_s: 120
+
+# Hooks de protección (gates de fuente de verdad)
+hooks:
+  block_metrics_edit: true         # bloquea edits directas a metrics.json
+  block_tesis_md_edit: true        # bloquea edits directas a TesisFinal/Tesis.md
+  block_destructive_git: true      # bloquea reset --hard, push --force, etc.
+  checkpoint_every_minutes: 30
+
+# Linter de auto-indulgencia (lexicón de banderas)
+self_indulgence:
+  flag_terms:
+    - "brutalmente honesto"
+    - "anti-paper-science"
+    - "honestidad simétrica"
+    - "V_FINAL"
+    - "V[0-9]+_FINAL"
+    - "v[0-9]+-final"
+    - "8/8 verdes"
+    - "42/42 ROBUSTO"
+    - "BREAKTHROUGH"
+  template_signatures:
+    # Frases que aparecen idénticas en >2 archivos -> sospecha de plantilla spam
+    similarity_threshold: 0.85
+    min_phrase_length: 80
+  # Las banderas son advisory, no bloqueantes (se reportan al humano)
+
+# Verificación de citas
+citation_verification:
+  required_sections:
+    - "02-fundamentos"
+    - "04-debates"
+    - "05-aplicaciones"
+  citation_regex_paginated: '\(([A-ZÁÉÍÓÚÑ][a-záéíóúñ\-]+)(?:[\s,]+([0-9]{4}))?,?\s*p?p?\.?\s*([0-9]+(?:[\-–][0-9]+)?)\)'
+  citation_regex_anyform: '\(([A-ZÁÉÍÓÚÑ][a-záéíóúñ\-]+)\s*([0-9]{4})\)'
+  pdf_match_min_chars: 40
+
+# Verificación prosa↔JSON
+prose_json_verification:
+  numeric_pattern: '(EDI|p_perm|p-perm|p_value|RMSE|edi)\s*[=≈:]\s*([\-]?[0-9]+\.[0-9]+)'
+  tolerance_relative: 0.005   # 0.5% de tolerancia para evitar falsos positivos por redondeo
+  metric_keys:
+    - "edi"
+    - "edi_real"
+    - "p_permutation"
+    - "p_perm"
+    - "rmse_coupled"
+    - "rmse_no_ode"
+
+# Validador de deuda residual
+debt_validation:
+  required_section_pattern: '^##\s+Deuda\s+residual'
+  required_chapters:
+    - "06-cierre"
+  date_required_format: '\d{4}-\d{2}-\d{2}'
+
+# Reporte
+report:
+  output_dir: "harness/reports"
+  also_write_to_bitacora: true

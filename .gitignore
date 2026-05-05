@@ -44,3 +44,11 @@ web_react/.vite/
 # El build de Vite se sincroniza a /public para Vercel; web_react/dist es intermedio
 web_react/dist/
 .vercel
+
+# Harness — caches y reportes locales (no a git)
+.cache_harness/
+harness/reports/
+harness/state.json
+harness/__pycache__/
+harness/**/__pycache__/
+harness/**/*.pyc

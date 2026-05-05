@@ -1,0 +1,41 @@
+# Rubric hostil para cierre de cita bibliográfica.
+
+name: bibliographic_close
+applies_to:
+  - "*.md"  # cualquier archivo con citas
+
+questions:
+  - id: b1_pagination_present
+    text: "¿La cita incluye página específica?"
+    verifier: verify_citation_pagination
+    severity: critical
+
+  - id: b2_pdf_in_07_bibliografia
+    text: "¿El PDF del autor existe en 07-bibliografia/?"
+    verifier: verify_citation_pagination
+    severity: critical
+
+  - id: b3_textual_or_paraphrased
+    text: "¿La cita textual está entre comillas y la paráfrasis es honesta?"
+    verifier: llm_judge
+    severity: high
+
+  - id: b4_passage_in_pdf
+    text: "¿El pasaje citado se encuentra en el PDF en la página declarada?"
+    verifier: verify_citation_pagination_with_pdf_match
+    severity: critical
+
+  - id: b5_engages_argument
+    text: "¿La cita reproduce el argumento del autor o lo invoca como autoridad sin engagement?"
+    verifier: llm_judge
+    severity: critical
+
+  - id: b6_chicago_format
+    text: "¿Sigue Chicago author-date (ej: 'Bunge 2003, 45')?"
+    verifier: regex_chicago
+    severity: medium
+
+  - id: b7_no_secondary_passing_as_primary
+    text: "¿Si es cita secundaria, se declara como tal?"
+    verifier: llm_judge
+    severity: high

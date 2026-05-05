@@ -1,0 +1,63 @@
+# Rubric hostil para cierre de capítulo/sección filosófica.
+# CLAUDE.md §2: una tarea solo se cierra si sobrevive crítica hostil.
+#
+# Cada item se evalúa: pass | fail | needs_human.
+# Si CUALQUIERA es fail, el cierre se bloquea.
+# Si ≥1 needs_human, el item va a cola de Jacob.
+
+name: philosophical_close
+applies_to:
+  - "02-fundamentos/**/*.md"
+  - "04-debates/**/*.md"
+  - "05-aplicaciones/**/*.md"
+
+questions:
+  - id: q1_strongest_objection
+    text: "¿La sección presenta la versión más fuerte de la objeción rival, no una caricatura?"
+    verifier: llm_judge   # no automatizable formalmente
+    severity: critical
+
+  - id: q2_argued_position
+    text: "¿La posición propia se argumenta o se afirma? ¿Hay engagement con el argumento del rival?"
+    verifier: llm_judge
+    severity: critical
+
+  - id: q3_cited_with_pages
+    text: "¿Cada autor citado tiene paginación verificable y no es invocación de autoridad sin engagement?"
+    verifier: verify_citation_pagination
+    severity: critical
+
+  - id: q4_cost_declared
+    text: "¿La sección declara explícitamente qué cede al adoptar su posición?"
+    verifier: llm_judge
+    severity: high
+
+  - id: q5_no_decoration
+    text: "¿Si se eliminan los adjetivos manieristas ('brutalmente honesto', etc.), sobrevive la oración?"
+    verifier: verify_self_indulgence
+    severity: high
+
+  - id: q6_distinctions_have_consequences
+    text: "¿Cada distinción nueva tiene una consecuencia operativa verificable, o es solo terminológica?"
+    verifier: llm_judge
+    severity: high
+
+  - id: q7_no_authority_appeal
+    text: "¿Hay alguna 'cita decorativa' (autor invocado sin reproducir su argumento)?"
+    verifier: llm_judge
+    severity: critical
+
+  - id: q8_glosario_consistency
+    text: "¿Los términos centrales usan la convención del glosario operativo?"
+    verifier: llm_judge_with_glosario
+    severity: medium
+
+  - id: q9_h_j_signature
+    text: "¿La voz autoral final es de Jacob, no de la asistencia?"
+    verifier: needs_human   # H-J*
+    severity: critical
+
+  - id: q10_no_premature_closure
+    text: "¿La sección admite abiertamente lo que no resolvió, o pretende cierre?"
+    verifier: llm_judge
+    severity: high

@@ -1,0 +1,38 @@
+# Rubric para validez de una sección "Deuda residual".
+# CLAUDE.md §7.
+
+name: debt_declaration
+applies_to:
+  - "00-proyecto/**/*.md"
+  - "01-diagnostico/**/*.md"
+  - "02-fundamentos/**/*.md"
+  - "03-formalizacion/**/*.md"
+  - "04-debates/**/*.md"
+  - "05-aplicaciones/**/*.md"
+  - "06-cierre/**/*.md"
+
+questions:
+  - id: d1_section_present
+    text: "¿El capítulo cerrado tiene sección 'Deuda residual'?"
+    verifier: verify_debt_index
+    severity: critical
+
+  - id: d2_dated
+    text: "¿La sección está fechada (YYYY-MM-DD)?"
+    verifier: verify_debt_index
+    severity: high
+
+  - id: d3_items_specific
+    text: "¿Cada ítem es específico (no genérico tipo 'falta más trabajo')?"
+    verifier: llm_judge
+    severity: high
+
+  - id: d4_tracking_in_tareas_pendientes
+    text: "¿Cada ítem aparece en TAREAS_PENDIENTES.md o se justifica por qué no?"
+    verifier: cross_check_tareas_pendientes
+    severity: high
+
+  - id: d5_no_hidden_debt
+    text: "¿El capítulo no oculta deuda evidente desde la auditoría técnica?"
+    verifier: llm_judge
+    severity: critical

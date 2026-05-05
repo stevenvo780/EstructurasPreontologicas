@@ -1,0 +1,46 @@
+# Rubric hostil para cierre técnico de un caso EDI.
+
+name: technical_close
+applies_to:
+  - "09-simulaciones-edi/*_caso_*/"
+
+questions:
+  - id: t1_command_reproducible
+    text: "¿La cifra reportada en metrics.json se regenera con un comando documentado?"
+    verifier: verify_replay_hash
+    severity: critical
+
+  - id: t2_canonical_profile
+    text: "¿Se ejecutó bajo perfil canónico (n_perm=999, n_boot=500)?"
+    verifier: check_metrics_header
+    severity: critical
+
+  - id: t3_doc_config_consistency
+    text: "¿La sonda declarada en Evaluacion_Modelos_Dominio.md coincide con case_config.json?"
+    verifier: verify_consistency_doc_config
+    severity: high
+
+  - id: t4_data_real_or_declared_synthetic
+    text: "¿Los datos son reales o se declara explícitamente como sintético con razón?"
+    verifier: check_fetch_manifest
+    severity: high
+
+  - id: t5_baselines_present
+    text: "¿Hay comparación con baselines (ARIMA/VAR/RW/GP)?"
+    verifier: check_baselines
+    severity: medium
+
+  - id: t6_falsacion_controles_pasaron
+    text: "¿Los controles de falsación (06/07/08) fallan correctamente?"
+    verifier: check_falsacion
+    severity: critical
+
+  - id: t7_taxonomy_correct
+    text: "¿La clasificación (strong/weak/null/suggestive/trend) usa los gates correctos?"
+    verifier: check_taxonomy
+    severity: high
+
+  - id: t8_prose_matches_json
+    text: "¿La prosa que cita este caso reporta las mismas cifras que metrics.json?"
+    verifier: verify_prose_against_json
+    severity: critical
