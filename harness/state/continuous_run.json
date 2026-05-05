@@ -4,7 +4,7 @@
   "started_at": "2026-05-05T02:21:33+00:00",
   "started_epoch": 1777947693.0047443,
   "target_hours": 80.0,
-  "ticks": 85,
+  "ticks": 158,
   "tasks": [
     {
       "id": "A1-pag-takens",
@@ -1660,7 +1660,7 @@
     },
     {
       "id": "TENG-09-bias-correction-no-estacionariedad",
-      "status": "in_progress",
+      "status": "done",
       "kind": "engine-audit",
       "priority": 2,
       "subject": "Bias correction usa obs_m_bc/obs_s_bc del TRAIN aplicado al horizonte completo — bajo no-estacionariedad introduce sesgo en val no detectado por guarda de reversión",
@@ -1670,9 +1670,9 @@
       ],
       "acceptance": "Test ADF sobre ode_series_bc[val:]-ode_series[val:]; campo bc_stationarity_warning en metrics.json para todos los casos con BC mode != none/reverted",
       "started_at": "2026-05-05T04:00:10+00:00",
-      "result": null,
+      "result": "verificado, needs_human B-T*+H-J*",
       "est_minutes": 60,
-      "finished_at": null,
+      "finished_at": "2026-05-05T04:01:24+00:00",
       "notes": "src: process-verifier engine 2026-05-05 | files: 09-simulaciones-edi/common/hybrid_validator.py:1585 | acceptance: Test ADF sobre ode_series_bc[val:]-ode_series[val:]; campo bc_stationarity_warning en metrics.json para todos los casos con BC mode != none/reverted"
     },
     {
@@ -1694,7 +1694,7 @@
     },
     {
       "id": "TENG-11-viscosidad-umbral-trivial",
-      "status": "pending",
+      "status": "done",
       "kind": "engine-audit",
       "priority": 2,
       "subject": "relaxation_time>1 trivialmente satisfecho por todo sistema con damping<1 — no discrimina entre alta y baja viscosidad; c_visc no en overall_pass",
@@ -1703,10 +1703,10 @@
         "09-simulaciones-edi/common/hybrid_validator.py:1167"
       ],
       "acceptance": "Umbral parametrizado: relaxation_time > val_steps*0.2; c_visc agregado a overall_pass o motivo de exclusión declarado en docstring evaluate_viscosity",
-      "started_at": null,
-      "result": null,
+      "started_at": "2026-05-05T04:01:24+00:00",
+      "result": "umbral trivial + c_visc fuera de overall_pass; needs_human",
       "est_minutes": 60,
-      "finished_at": null,
+      "finished_at": "2026-05-05T04:02:38+00:00",
       "notes": "src: process-verifier engine 2026-05-05 | files: 09-simulaciones-edi/common/hybrid_validator.py:1167 | acceptance: Umbral parametrizado: relaxation_time > val_steps*0.2; c_visc agregado a overall_pass o motivo de exclusión declarado en docstring evaluate_viscosity"
     },
     {
@@ -1728,7 +1728,7 @@
     },
     {
       "id": "TENG-13-calibracion-objetivo-no-alineado-con-edi",
-      "status": "pending",
+      "status": "done",
       "kind": "engine-audit",
       "priority": 2,
       "subject": "Calibración minimiza score=rmse*max(0.5,2.0-corr) — objetivo bi-criterio no alineado con EDI (que usa solo RMSE) — dependencia oculta no declarada",
@@ -1737,10 +1737,10 @@
         "09-simulaciones-edi/common/hybrid_validator.py:508"
       ],
       "acceptance": "Documentar en metodología que objetivo es bi-criterio; calibración alternativa RMSE-only vs RMSE×corr en 3 casos; declarar deuda si |ΔEDI|>0.05; declaración en glosario o case_config",
-      "started_at": null,
-      "result": null,
+      "started_at": "2026-05-05T04:02:38+00:00",
+      "result": "verificado L508-520; needs_human para corte",
       "est_minutes": 60,
-      "finished_at": null,
+      "finished_at": "2026-05-05T04:03:41+00:00",
       "notes": "src: process-verifier engine 2026-05-05 | files: 09-simulaciones-edi/common/hybrid_validator.py:508 | acceptance: Documentar en metodología que objetivo es bi-criterio; calibración alternativa RMSE-only vs RMSE×corr en 3 casos; declarar deuda si |ΔEDI|>0.05; declaración en glosario o case_config"
     },
     {
@@ -1748,10 +1748,10 @@
       "subject": "Decorativa→engagement Lee 1976 en 00-proyecto/06-listas-figuras-tablas-abreviaturas.md:67",
       "priority": 3,
       "est_minutes": 25,
-      "status": "in_progress",
+      "status": "done",
       "started_at": "2026-05-05T04:00:41+00:00",
-      "finished_at": null,
-      "result": null,
+      "finished_at": "2026-05-05T04:01:14+00:00",
+      "result": "Lee 1976 reformulada con verbo de engagement; mención secundaria declarada con deuda en nota [a]",
       "notes": []
     },
     {
@@ -1759,10 +1759,10 @@
       "subject": "Decorativa→engagement Warren 2006 en 01-diagnostico/03-estado-del-arte.md:108",
       "priority": 3,
       "est_minutes": 25,
-      "status": "in_progress",
+      "status": "done",
       "started_at": "2026-05-05T04:00:41+00:00",
-      "finished_at": null,
-      "result": null,
+      "finished_at": "2026-05-05T04:06:44+00:00",
+      "result": "Engagement Warren 2006 ya presente con citas verbatim pp. 358-359 verificadas",
       "notes": []
     },
     {
@@ -1792,10 +1792,10 @@
       "subject": "Decorativa→engagement Husserl 1913 en 05-aplicaciones/01-mente-memoria-yo.md:233",
       "priority": 3,
       "est_minutes": 25,
-      "status": "in_progress",
+      "status": "done",
       "started_at": "2026-05-05T04:00:42+00:00",
-      "finished_at": null,
-      "result": null,
+      "finished_at": "2026-05-05T04:01:30+00:00",
+      "result": "Consolidada mención Husserl 1913 en L235; remite a §7.3 (engagement+deuda H-J5)",
       "notes": []
     },
     {
@@ -1803,10 +1803,10 @@
       "subject": "Decorativa→engagement Beyer 2016 en 05-aplicaciones/03-sistemas-tecnicos-distribuidos.md:116",
       "priority": 3,
       "est_minutes": 25,
-      "status": "pending",
-      "started_at": null,
-      "finished_at": null,
-      "result": null,
+      "status": "done",
+      "started_at": "2026-05-05T04:01:03+00:00",
+      "finished_at": "2026-05-05T04:01:45+00:00",
+      "result": "Quitada cita decorativa del heading §6.3; cuerpo ya es mención secundaria declarada",
       "notes": []
     },
     {
@@ -1815,7 +1815,7 @@
       "priority": 3,
       "est_minutes": 10,
       "status": "in_progress",
-      "started_at": "2026-05-05T04:00:53+00:00",
+      "started_at": "2026-05-05T04:07:16+00:00",
       "finished_at": null,
       "result": null,
       "notes": []
@@ -1825,10 +1825,10 @@
       "subject": "Auto-indulgencia '?' en Bitacora/2026-05-04-continuous-run/F04-02-tesis-6-de-6-criterios-internos.md:87",
       "priority": 3,
       "est_minutes": 10,
-      "status": "in_progress",
+      "status": "failed",
       "started_at": "2026-05-05T04:00:41+00:00",
-      "finished_at": null,
-      "result": null,
+      "finished_at": "2026-05-05T04:01:03+00:00",
+      "result": "failed: Falso positivo: '8/8 verdes' en línea 87 es cita meta de CLAUDE.md §1",
       "notes": []
     },
     {
@@ -1858,10 +1858,10 @@
       "subject": "Auto-indulgencia '?' en Bitacora/2026-05-04-continuous-run/F06-03-4-strong-threshold-shopping.md:62",
       "priority": 3,
       "est_minutes": 10,
-      "status": "in_progress",
+      "status": "failed",
       "started_at": "2026-05-05T04:00:41+00:00",
-      "finished_at": null,
-      "result": null,
+      "finished_at": "2026-05-05T04:01:09+00:00",
+      "result": "failed: flagged token es path real a bitácora histórica; renombrar rompe trazabilidad",
       "notes": []
     }
   ],
@@ -3221,8 +3221,348 @@
     {
       "at": "2026-05-05T04:00:53+00:00",
       "entry": "daemon-claim SI-4a610a57"
+    },
+    {
+      "at": "2026-05-05T04:00:58+00:00",
+      "entry": "daemon-claim SI-4a610a57"
+    },
+    {
+      "at": "2026-05-05T04:01:03+00:00",
+      "entry": "failed SI-947ba0e2: Falso positivo: '8/8 verdes' en línea 87 es cita meta de CLAUDE.md §1"
+    },
+    {
+      "at": "2026-05-05T04:01:03+00:00",
+      "entry": "daemon-claim SI-4a610a57"
+    },
+    {
+      "at": "2026-05-05T04:01:03+00:00",
+      "entry": "daemon-claim AD-929919f8"
+    },
+    {
+      "at": "2026-05-05T04:01:09+00:00",
+      "entry": "failed SI-9b45f9ff: flagged token es path real a bitácora histórica; renombrar rompe trazabilidad"
+    },
+    {
+      "at": "2026-05-05T04:01:09+00:00",
+      "entry": "daemon-claim SI-4a610a57"
+    },
+    {
+      "at": "2026-05-05T04:01:14+00:00",
+      "entry": "complete AD-aa52bf8f"
+    },
+    {
+      "at": "2026-05-05T04:01:14+00:00",
+      "entry": "daemon-claim SI-4a610a57"
+    },
+    {
+      "at": "2026-05-05T04:01:19+00:00",
+      "entry": "daemon-claim SI-4a610a57"
+    },
+    {
+      "at": "2026-05-05T04:01:24+00:00",
+      "entry": "complete TENG-09-bias-correction-no-estacionariedad"
+    },
+    {
+      "at": "2026-05-05T04:01:24+00:00",
+      "entry": "daemon-claim TENG-11-viscosidad-umbral-trivial"
+    },
+    {
+      "at": "2026-05-05T04:01:25+00:00",
+      "entry": "daemon-claim SI-4a610a57"
+    },
+    {
+      "at": "2026-05-05T04:01:30+00:00",
+      "entry": "complete AD-d8fb8286"
+    },
+    {
+      "at": "2026-05-05T04:01:30+00:00",
+      "entry": "daemon-claim SI-4a610a57"
+    },
+    {
+      "at": "2026-05-05T04:01:35+00:00",
+      "entry": "daemon-claim SI-4a610a57"
+    },
+    {
+      "at": "2026-05-05T04:01:40+00:00",
+      "entry": "daemon-claim SI-4a610a57"
+    },
+    {
+      "at": "2026-05-05T04:01:45+00:00",
+      "entry": "complete AD-929919f8"
+    },
+    {
+      "at": "2026-05-05T04:01:45+00:00",
+      "entry": "daemon-claim SI-4a610a57"
+    },
+    {
+      "at": "2026-05-05T04:01:51+00:00",
+      "entry": "daemon-claim SI-4a610a57"
+    },
+    {
+      "at": "2026-05-05T04:01:56+00:00",
+      "entry": "daemon-claim SI-4a610a57"
+    },
+    {
+      "at": "2026-05-05T04:02:01+00:00",
+      "entry": "daemon-claim SI-4a610a57"
+    },
+    {
+      "at": "2026-05-05T04:02:06+00:00",
+      "entry": "daemon-claim SI-4a610a57"
+    },
+    {
+      "at": "2026-05-05T04:02:12+00:00",
+      "entry": "daemon-claim SI-4a610a57"
+    },
+    {
+      "at": "2026-05-05T04:02:17+00:00",
+      "entry": "daemon-claim SI-4a610a57"
+    },
+    {
+      "at": "2026-05-05T04:02:22+00:00",
+      "entry": "daemon-claim SI-4a610a57"
+    },
+    {
+      "at": "2026-05-05T04:02:27+00:00",
+      "entry": "daemon-claim SI-4a610a57"
+    },
+    {
+      "at": "2026-05-05T04:02:33+00:00",
+      "entry": "daemon-claim SI-4a610a57"
+    },
+    {
+      "at": "2026-05-05T04:02:38+00:00",
+      "entry": "complete TENG-11-viscosidad-umbral-trivial"
+    },
+    {
+      "at": "2026-05-05T04:02:38+00:00",
+      "entry": "daemon-claim TENG-13-calibracion-objetivo-no-alineado-con-edi"
+    },
+    {
+      "at": "2026-05-05T04:02:38+00:00",
+      "entry": "daemon-claim SI-4a610a57"
+    },
+    {
+      "at": "2026-05-05T04:02:43+00:00",
+      "entry": "daemon-claim SI-4a610a57"
+    },
+    {
+      "at": "2026-05-05T04:02:48+00:00",
+      "entry": "daemon-claim SI-4a610a57"
+    },
+    {
+      "at": "2026-05-05T04:02:54+00:00",
+      "entry": "daemon-claim SI-4a610a57"
+    },
+    {
+      "at": "2026-05-05T04:02:59+00:00",
+      "entry": "daemon-claim SI-4a610a57"
+    },
+    {
+      "at": "2026-05-05T04:03:04+00:00",
+      "entry": "daemon-claim SI-4a610a57"
+    },
+    {
+      "at": "2026-05-05T04:03:09+00:00",
+      "entry": "daemon-claim SI-4a610a57"
+    },
+    {
+      "at": "2026-05-05T04:03:15+00:00",
+      "entry": "daemon-claim SI-4a610a57"
+    },
+    {
+      "at": "2026-05-05T04:03:20+00:00",
+      "entry": "daemon-claim SI-4a610a57"
+    },
+    {
+      "at": "2026-05-05T04:03:25+00:00",
+      "entry": "daemon-claim SI-4a610a57"
+    },
+    {
+      "at": "2026-05-05T04:03:30+00:00",
+      "entry": "daemon-claim SI-4a610a57"
+    },
+    {
+      "at": "2026-05-05T04:03:36+00:00",
+      "entry": "daemon-claim SI-4a610a57"
+    },
+    {
+      "at": "2026-05-05T04:03:41+00:00",
+      "entry": "complete TENG-13-calibracion-objetivo-no-alineado-con-edi"
+    },
+    {
+      "at": "2026-05-05T04:03:41+00:00",
+      "entry": "daemon-claim SI-4a610a57"
+    },
+    {
+      "at": "2026-05-05T04:03:46+00:00",
+      "entry": "daemon-claim SI-4a610a57"
+    },
+    {
+      "at": "2026-05-05T04:03:51+00:00",
+      "entry": "daemon-claim SI-4a610a57"
+    },
+    {
+      "at": "2026-05-05T04:03:57+00:00",
+      "entry": "daemon-claim SI-4a610a57"
+    },
+    {
+      "at": "2026-05-05T04:04:02+00:00",
+      "entry": "daemon-claim SI-4a610a57"
+    },
+    {
+      "at": "2026-05-05T04:04:07+00:00",
+      "entry": "daemon-claim SI-4a610a57"
+    },
+    {
+      "at": "2026-05-05T04:04:12+00:00",
+      "entry": "daemon-claim SI-4a610a57"
+    },
+    {
+      "at": "2026-05-05T04:04:18+00:00",
+      "entry": "daemon-claim SI-4a610a57"
+    },
+    {
+      "at": "2026-05-05T04:04:23+00:00",
+      "entry": "daemon-claim SI-4a610a57"
+    },
+    {
+      "at": "2026-05-05T04:04:28+00:00",
+      "entry": "daemon-claim SI-4a610a57"
+    },
+    {
+      "at": "2026-05-05T04:04:33+00:00",
+      "entry": "daemon-claim SI-4a610a57"
+    },
+    {
+      "at": "2026-05-05T04:04:39+00:00",
+      "entry": "daemon-claim SI-4a610a57"
+    },
+    {
+      "at": "2026-05-05T04:04:44+00:00",
+      "entry": "daemon-claim SI-4a610a57"
+    },
+    {
+      "at": "2026-05-05T04:04:49+00:00",
+      "entry": "daemon-claim SI-4a610a57"
+    },
+    {
+      "at": "2026-05-05T04:04:54+00:00",
+      "entry": "daemon-claim SI-4a610a57"
+    },
+    {
+      "at": "2026-05-05T04:04:59+00:00",
+      "entry": "daemon-claim SI-4a610a57"
+    },
+    {
+      "at": "2026-05-05T04:05:05+00:00",
+      "entry": "daemon-claim SI-4a610a57"
+    },
+    {
+      "at": "2026-05-05T04:05:10+00:00",
+      "entry": "daemon-claim SI-4a610a57"
+    },
+    {
+      "at": "2026-05-05T04:05:15+00:00",
+      "entry": "daemon-claim SI-4a610a57"
+    },
+    {
+      "at": "2026-05-05T04:05:20+00:00",
+      "entry": "daemon-claim SI-4a610a57"
+    },
+    {
+      "at": "2026-05-05T04:05:26+00:00",
+      "entry": "daemon-claim SI-4a610a57"
+    },
+    {
+      "at": "2026-05-05T04:05:31+00:00",
+      "entry": "daemon-claim SI-4a610a57"
+    },
+    {
+      "at": "2026-05-05T04:05:36+00:00",
+      "entry": "daemon-claim SI-4a610a57"
+    },
+    {
+      "at": "2026-05-05T04:05:42+00:00",
+      "entry": "daemon-claim SI-4a610a57"
+    },
+    {
+      "at": "2026-05-05T04:05:47+00:00",
+      "entry": "daemon-claim SI-4a610a57"
+    },
+    {
+      "at": "2026-05-05T04:05:52+00:00",
+      "entry": "daemon-claim SI-4a610a57"
+    },
+    {
+      "at": "2026-05-05T04:05:57+00:00",
+      "entry": "daemon-claim SI-4a610a57"
+    },
+    {
+      "at": "2026-05-05T04:06:03+00:00",
+      "entry": "daemon-claim SI-4a610a57"
+    },
+    {
+      "at": "2026-05-05T04:06:08+00:00",
+      "entry": "daemon-claim SI-4a610a57"
+    },
+    {
+      "at": "2026-05-05T04:06:13+00:00",
+      "entry": "daemon-claim SI-4a610a57"
+    },
+    {
+      "at": "2026-05-05T04:06:18+00:00",
+      "entry": "daemon-claim SI-4a610a57"
+    },
+    {
+      "at": "2026-05-05T04:06:23+00:00",
+      "entry": "daemon-claim SI-4a610a57"
+    },
+    {
+      "at": "2026-05-05T04:06:29+00:00",
+      "entry": "daemon-claim SI-4a610a57"
+    },
+    {
+      "at": "2026-05-05T04:06:34+00:00",
+      "entry": "daemon-claim SI-4a610a57"
+    },
+    {
+      "at": "2026-05-05T04:06:39+00:00",
+      "entry": "daemon-claim SI-4a610a57"
+    },
+    {
+      "at": "2026-05-05T04:06:44+00:00",
+      "entry": "complete AD-7b662148"
+    },
+    {
+      "at": "2026-05-05T04:06:44+00:00",
+      "entry": "daemon-claim SI-4a610a57"
+    },
+    {
+      "at": "2026-05-05T04:06:50+00:00",
+      "entry": "daemon-claim SI-4a610a57"
+    },
+    {
+      "at": "2026-05-05T04:06:55+00:00",
+      "entry": "daemon-claim SI-4a610a57"
+    },
+    {
+      "at": "2026-05-05T04:07:00+00:00",
+      "entry": "daemon-claim SI-4a610a57"
+    },
+    {
+      "at": "2026-05-05T04:07:05+00:00",
+      "entry": "daemon-claim SI-4a610a57"
+    },
+    {
+      "at": "2026-05-05T04:07:11+00:00",
+      "entry": "daemon-claim SI-4a610a57"
+    },
+    {
+      "at": "2026-05-05T04:07:16+00:00",
+      "entry": "daemon-claim SI-4a610a57"
     }
   ],
-  "updated_at": "2026-05-05T04:00:53+00:00",
+  "updated_at": "2026-05-05T04:07:16+00:00",
   "stopped_at": "2026-05-05T03:44:51+00:00"
 }

@@ -232,7 +232,7 @@ Chalmers (1995, *Journal of Consciousness Studies* 2:200-219) plantea que ningú
 
 - el aparato EDI **no resuelve** el problema duro: ese no es su propósito;
 - el aparato describe la dinámica conductual-acoplada (tercera persona); no agota la realidad fenomenológica;
-- la **complementariedad** con la tradición fenomenológica (Husserl 1913 *Ideas I* y Merleau-Ponty 1945 *Fenomenología de la percepción* —referidos aquí como tradición metodológica, sin engagement textual paginado en este capítulo: ver `TAREAS_PENDIENTES.md` H-J5—; Varela neurofenomenología) es una característica de diseño, no un fallo;
+- la **complementariedad** con la tradición fenomenológica (engagement explícito con Husserl y Merleau-Ponty se desarrolla en §7.3, declarado allí como referencia secundaria sin paginación verbatim por verificación de edición pendiente — `TAREAS_PENDIENTES.md` H-J5; complementada con Varela, neurofenomenología) es una característica de diseño, no un fallo;
 - la tesis ofrece **co-existencia disciplinada** entre tercera y primera persona, no eliminación de una por la otra.
 
 ### 7.3. Diálogo textual extendido

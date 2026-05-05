@@ -72,7 +72,7 @@ Listas de soporte editorial requeridas por el formato de tesis doctoral instituc
 | κ | Operador de compresión multiescala | 03-01 / 03-04 |
 | ε | Operador de errores de traducción | 03-01 |
 | φ, ψ | Heading actual y heading de meta (caso 30) | 05-05 / 09-30 |
-| τ ≡ θ/θ̇ | Razón entre tamaño angular óptico θ y su tasa de cambio θ̇; especifica tiempo-hasta-contacto bajo aproximación de velocidad constante (Lee, 1976, *Perception* 5(4):437-459, pp. 439-441; mención secundaria — ver nota [a]) | 02-04 |
+| τ ≡ θ/θ̇ | Razón entre tamaño angular óptico θ y su tasa de cambio θ̇; según la formulación que Lee (1976) introduce y desarrolla en *Perception* 5(4):437-459, especifica tiempo-hasta-contacto bajo aproximación de velocidad constante (locus pp. 439-441; mención secundaria declarada — ver nota [a]) | 02-04 |
 | β | Error de heading φ − ψ_g | 02-04 |
 
 
