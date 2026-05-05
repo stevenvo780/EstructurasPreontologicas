@@ -61,9 +61,24 @@ Cada uno instancia los invariantes con **componente exógeno dominante** o **aco
 - **05 Epidemiología, 18 Urbanización, 22 Fósforo, 13 Políticas, 14 Postverdad, 15 Wikipedia, 11 Movilidad** — sustratos sociotecnoecológicos con acoplamientos identificables, atractores parciales, cierre operativo modesto pero significativo.
 - **30 Behavioral Dynamics** — caso bisagra entre dimensión individual y poblacional; sustrato organismo-entorno-tarea; acoplamiento informacional vía τ; atractor de control de heading; κ medido bajo Fajen-Warren con circularidad detectada por N2 (limita la fuerza ontológica del caso individual).
 
-#### Casos null (8 con EDI ≤ 0): instancias donde el aparato detecta correctamente ausencia de cierre operativo bajo la sonda elegida
+#### Casos null (8 sin evidencia de cierre operativo bajo la sonda elegida): el aparato lo reporta honestamente
 
-Estos casos **no refutan la ontología general**: muestran que **no toda regularidad superficial es atractor de cierre operativo**. Conciencia global, contaminación PM2.5, paradigmas científicos, océanos como temperatura agregada, acidificación, erosión dialéctica, acuíferos, IoT — en cada uno, la sonda específica no captura un acoplamiento dinámico genuino. La ontología sí se afirma: el aparato distingue entre cierre operativo real y ausencia de él.
+La etiqueta `null` viene del Emergentómetro (`emergence_taxonomy.category`): no hay evidencia de cierre operativo, sea por EDI ≤ 0 (acoplar el ODE no mejora o empeora el RMSE), sea por EDI positivo no significativo bajo permutación. De los 8 casos, **7 tienen EDI ≤ 0** (02 conciencia, 03 contaminación, 12 paradigmas, 17 océanos, 23 erosión dialéctica, 25 acuíferos, 29 IoT) y **1 tiene EDI alto sin significancia ni robustez** (19 acidificación, EDI=+0.728, p=0.49, C2 fail — anomalía sin resolver).
+
+La causa del null **no es la misma en cada caso**, y la honestidad metodológica obliga a separarlas:
+
+| Caso | Causa dominante del null |
+|------|--------------------------|
+| 02 conciencia | Datos sintéticos sin ground truth fenoménico + drivers proxy + sonda logística genérica |
+| 03 contaminación | Sonda `mean_reversion` subespecificada para PM2.5; brecha sint→real ≈0.32 |
+| 12 paradigmas | Anti-correlación ABM-obs (−0.96 vs +0.30): sonda y observable no co-medibles |
+| 17 océanos | Observable agregado anual macro-suficiente: la dinámica micro no es operativamente relevante a esta resolución |
+| **19 acidificación** | **EDI alto pero p=0.49 y C2 fail — anomalía estadística que requiere reanálisis** |
+| 23 erosión dialéctica | Caso piloto declarado sin observable real (limitación en `FETCH_MANIFEST.json`) |
+| 25 acuíferos | Cobertura de datos al 51%: insuficiencia, no inadecuación de sonda |
+| 29 IoT | Sonda `bilinear` mal especificada para difusión tecnológica con saltos exponenciales |
+
+Estos casos **no refutan la ontología general**: muestran que **no toda regularidad superficial es atractor de cierre operativo**, y que el aparato distingue tres condiciones distintas — sonda inadecuada, datos insuficientes, anomalía estadística — que la prosa agregada no debe homogenizar. Diagnóstico por caso en `Bitacora/2026-04-29-diagnostico-nulls/diagnostico-casos-null.md`.
 
 #### Controles de falsación (3 rechazados): la prueba inversa de la ontología
 

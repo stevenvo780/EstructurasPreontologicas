@@ -53,6 +53,7 @@ export default function CaseDetail() {
 
   const arr = c.primary_arrays;
   const hasArrays = !!(arr && arr.obs && arr.obs.length > 0);
+  const simPath = c.sim_path ?? c.case_name;
 
   let chartData: Array<Record<string, number>> = [];
   if (hasArrays) {
@@ -248,7 +249,7 @@ export default function CaseDetail() {
           {activeTab === 'overview' && !c.report_html && (
             <div className="text-sm text-ink-500 dark:text-ink-400">
               Sin reporte adicional disponible. Métricas verificables en{' '}
-              <code className="text-xs">09-simulaciones-edi/{c.case_name}/outputs/metrics.json</code>.
+              <code className="text-xs">09-simulaciones-edi/{simPath}/outputs/metrics.json</code>.
             </div>
           )}
           {activeTab === 'readme' && c.thesis_readme_html && (
@@ -278,7 +279,7 @@ export default function CaseDetail() {
         <h3 className="font-semibold text-ink-800 dark:text-ink-100 mb-3 text-sm">Recursos del caso</h3>
         <div className="grid sm:grid-cols-2 gap-2 text-sm">
           <a
-            href={`/sim_files/${c.case_name}/outputs/metrics.json`}
+            href={`/sim_files/${simPath}/outputs/metrics.json`}
             target="_blank"
             rel="noreferrer"
             className="flex items-center gap-2 px-3 py-2 rounded-lg border border-ink-200 dark:border-ink-800 hover:border-accent-400 hover:bg-accent-50 dark:hover:bg-accent-900/10 transition-colors"
@@ -287,17 +288,17 @@ export default function CaseDetail() {
             <code className="text-xs">metrics.json</code>
           </a>
           <a
-            href={`/sim_files/${c.case_name}/case_config.json`}
+            href={c.scope === 'inter-scale' ? `/sim_files/${simPath}/run.py` : `/sim_files/${simPath}/case_config.json`}
             target="_blank"
             rel="noreferrer"
             className="flex items-center gap-2 px-3 py-2 rounded-lg border border-ink-200 dark:border-ink-800 hover:border-accent-400 hover:bg-accent-50 dark:hover:bg-accent-900/10 transition-colors"
           >
             <ExternalLink className="w-3.5 h-3.5 text-ink-400" />
-            <code className="text-xs">case_config.json</code>
+            <code className="text-xs">{c.scope === 'inter-scale' ? 'run.py' : 'case_config.json'}</code>
           </a>
           {hasArrays && (
             <a
-              href={`/sim_files/${c.case_name}/outputs/primary_arrays.json`}
+              href={`/sim_files/${simPath}/outputs/primary_arrays.json`}
               target="_blank"
               rel="noreferrer"
               className="flex items-center gap-2 px-3 py-2 rounded-lg border border-ink-200 dark:border-ink-800 hover:border-accent-400 hover:bg-accent-50 dark:hover:bg-accent-900/10 transition-colors"

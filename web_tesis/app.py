@@ -112,8 +112,11 @@ def _case_summary_dict(case: dict[str, Any]) -> dict[str, Any]:
     return {
         "case_id": case.get("case_name"),
         "case_name": case.get("case_name"),
+        "sim_path": case.get("sim_path", case.get("case_name")),
+        "scope": case.get("scope"),
         "case_num": case.get("case_num"),
         "title": case.get("title"),
+        "scale": case.get("scale"),
         "category": metrics.get("category"),
         "metrics": {
             "edi": metrics.get("edi"),
@@ -178,11 +181,12 @@ def _build_summary_v2(dataset: dict[str, Any]) -> dict[str, Any]:
     falsified = sum(
         1
         for c in cases
-        if (c["metrics"].get("category") or "").lower() in {"falsified", "falsacion"}
+        if (c["metrics"].get("category") or "").lower() in {"falsified", "falsacion", "falsification"}
     )
 
-    # Distribución por categoría — etiquetas estándar
     from collections import Counter
+
+    # Distribución por categoría — etiquetas estándar
     cat_counter: Counter[str] = Counter(
         (c["metrics"].get("category") or "unknown").lower() for c in cases
     )
@@ -190,8 +194,46 @@ def _build_summary_v2(dataset: dict[str, Any]) -> dict[str, Any]:
         {"category": k, "count": v}
         for k, v in sorted(cat_counter.items(), key=lambda kv: (-kv[1], kv[0]))
     ]
+    level_counter: Counter[str] = Counter(
+        "sin nivel" if c["metrics"].get("nivel") is None else str(c["metrics"].get("nivel"))
+        for c in cases
+    )
+    level_breakdown = [
+        {
+            "level": int(k) if k.isdigit() else None,
+            "label": "Sin nivel" if not k.isdigit() else f"Nivel {k}",
+            "count": v,
+        }
+        for k, v in sorted(level_counter.items(), key=lambda kv: (kv[0] == "sin nivel", kv[0]))
+    ]
+
+    top_cases = [
+        {
+            "case_id": c.get("case_name"),
+            "case_num": c.get("case_num"),
+            "title": c.get("title"),
+            "edi": c["metrics"].get("edi"),
+            "category": c["metrics"].get("category"),
+            "scope": c.get("scope"),
+        }
+        for c in sorted(
+            [c for c in cases if isinstance(c["metrics"].get("edi"), (int, float))],
+            key=lambda c: c["metrics"]["edi"],
+            reverse=True,
+        )[:8]
+    ]
+
+    core_inter_domain = sum(
+        1 for c in cases if c.get("scope") == "inter-domain" and isinstance(c.get("case_num"), int) and c["case_num"] <= 30
+    )
+    multiscale = sum(1 for c in cases if c.get("scope") == "inter-scale")
+    extensions = sum(
+        1 for c in cases if isinstance(c.get("case_num"), int) and c["case_num"] > 40
+    )
+    by_scope: Counter[str] = Counter(c.get("scope") or "unknown" for c in cases)
 
     return {
+        "presentation": dataset.get("presentation", {}),
         "stats": {
             "total_cases": len(cases),
             "overall_pass": overall_pass,
@@ -202,6 +244,17 @@ def _build_summary_v2(dataset: dict[str, Any]) -> dict[str, Any]:
             "mean_edi": _mean(edis),
         },
         "distribution": distribution,
+        "level_breakdown": level_breakdown,
+        "top_cases": top_cases,
+        "corpus_scope": {
+            "visible_metrics": len(cases),
+            "declared_core_cases": core_inter_domain + multiscale,
+            "core_inter_domain": core_inter_domain,
+            "multiscale": multiscale,
+            "extensions": extensions,
+            "by_scope": [{"scope": k, "count": v} for k, v in sorted(by_scope.items())],
+            "note": "La tesis declara 40 casos agregados; la web muestra además las extensiones versionadas 41-42 cuando existen.",
+        },
     }
 
 

@@ -16,6 +16,7 @@ ROOT = Path(__file__).resolve().parents[1]
 SIM_ROOT = ROOT / "09-simulaciones-edi"
 THESIS_CASES_ROOT = SIM_ROOT  # In this repo, case docs live alongside metrics
 THESIS_FINAL_MD = ROOT / "TesisFinal" / "Tesis.md"
+SUMMARY_MD = ROOT / "00-proyecto" / "05-resumen-y-abstract.md"
 VIS_ROOT = ROOT / "visualizations"  # Optional; created on demand if missing
 
 CHAPTER_DIRS = [
@@ -145,13 +146,19 @@ def _case_sort_key(path: Path) -> tuple[int, str]:
     return (int(m.group(1)) if m else 9999, path.name)
 
 
-def _extract_title(case_name: str) -> str:
-    readme = THESIS_CASES_ROOT / case_name / "README.md"
+def _extract_title(case_name: str, case_dir: Path | None = None, metrics: dict[str, Any] | None = None) -> str:
+    if metrics and isinstance(metrics.get("case_name"), str) and metrics["case_name"].strip():
+        return metrics["case_name"].strip()
+
+    readme = (case_dir or (THESIS_CASES_ROOT / case_name)) / "README.md"
     if readme.exists():
         for line in readme.read_text(encoding="utf-8", errors="ignore").splitlines():
             if line.startswith("# "):
                 return line[2:].strip()
     m = re.match(r"^\d+_caso_(.+)$", case_name)
+    if m:
+        return m.group(1).replace("_", " ").title()
+    m = re.match(r"^\d+_(.+)$", case_name)
     return (m.group(1).replace("_", " ").title() if m else case_name)
 
 
@@ -347,6 +354,58 @@ def _build_case_insights(case_name: str, phases: dict[str, Any]) -> list[str]:
 
 def _extract_case_metrics(metrics: dict[str, Any]) -> dict[str, Any]:
     phases = metrics.get("phases", {})
+    if not isinstance(phases, dict) or not phases:
+        edi_value = _to_float(metrics.get("edi"))
+        pvalue = _to_float(metrics.get("p_value"))
+        if pvalue is None:
+            pvalue = _to_float(metrics.get("pvalue"))
+
+        nivel_raw = metrics.get("nivel")
+        nivel: int | None = None
+        category = "unknown"
+        if isinstance(nivel_raw, int):
+            nivel = nivel_raw
+        elif isinstance(nivel_raw, str):
+            m = re.match(r"^(\d+)[_\-\s]*(.*)$", nivel_raw.strip().lower())
+            if m:
+                nivel = int(m.group(1))
+                category = m.group(2) or category
+        if category == "unknown":
+            category = {
+                0: "null",
+                1: "trend",
+                2: "suggestive",
+                3: "weak",
+                4: "strong",
+            }.get(nivel, "unknown")
+
+        rmse_abm = _to_float(metrics.get("rmse_coupled"))
+        rmse_abm_no_ode = _to_float(metrics.get("rmse_no_ode"))
+        rmse_reduction = None
+        if rmse_abm is not None and rmse_abm_no_ode not in (None, 0.0):
+            rmse_reduction = (rmse_abm_no_ode - rmse_abm) / rmse_abm_no_ode
+
+        significant = pvalue is not None and pvalue < 0.05
+        return {
+            "overall_pass": bool(metrics.get("overall_pass", False)),
+            "edi": edi_value,
+            "pvalue": pvalue,
+            "significant": significant,
+            "cr": None,
+            "category": category,
+            "nivel": nivel,
+            "interpretation": metrics.get("notes", ""),
+            "criteria": {},
+            "criteria_pass_count": 0,
+            "criteria_total": 0,
+            "criteria_pass_ratio": None,
+            "rmse_abm": rmse_abm,
+            "rmse_abm_no_ode": rmse_abm_no_ode,
+            "rmse_reduction": rmse_reduction,
+            "corr_abm": None,
+            "corr_ode": None,
+        }
+
     real = phases.get("real") or phases.get("synthetic") or {}
 
     edi_obj = real.get("edi")
@@ -367,6 +426,22 @@ def _extract_case_metrics(metrics: dict[str, Any]) -> dict[str, Any]:
     nivel = taxonomy.get("nivel")
     if nivel is None:
         nivel = NIVEL_MAP.get(category)
+    if category == "unknown" and edi_value is not None:
+        if edi_value >= 0.30 and pvalue is not None and pvalue < 0.05:
+            category = "strong"
+            nivel = 4
+        elif edi_value >= 0.10 and pvalue is not None and pvalue < 0.05:
+            category = "weak"
+            nivel = 3
+        elif edi_value >= 0.10:
+            category = "suggestive"
+            nivel = 2
+        elif edi_value > 0:
+            category = "trend"
+            nivel = 1
+        else:
+            category = "null"
+            nivel = 0
 
     errors = real.get("errors", {}) if isinstance(real.get("errors"), dict) else {}
     correlations = real.get("correlations", {}) if isinstance(real.get("correlations"), dict) else {}
@@ -378,6 +453,8 @@ def _extract_case_metrics(metrics: dict[str, Any]) -> dict[str, Any]:
 
     rmse_abm = _to_float(errors.get("rmse_abm"))
     rmse_abm_no_ode = _to_float(errors.get("rmse_abm_no_ode"))
+    if rmse_abm_no_ode is None:
+        rmse_abm_no_ode = _to_float(errors.get("rmse_reduced"))
     rmse_reduction = None
     if rmse_abm is not None and rmse_abm_no_ode not in (None, 0.0):
         rmse_reduction = (rmse_abm_no_ode - rmse_abm) / rmse_abm_no_ode
@@ -414,6 +491,8 @@ def _find_visual(slug: str, suffix: str) -> str | None:
 
 def _collect_case_entry(case_dir: Path) -> dict[str, Any] | None:
     case_name = case_dir.name
+    sim_rel = case_dir.relative_to(SIM_ROOT).as_posix()
+    scope = "inter-scale" if "corpus_multiescala" in case_dir.parts else "inter-domain"
     outputs = case_dir / "outputs"
     metrics_path = outputs / "metrics.json"
     report_path = outputs / "report.md"
@@ -434,8 +513,13 @@ def _collect_case_entry(case_dir: Path) -> dict[str, Any] | None:
     insights = _build_case_insights(case_name, phases)
 
     m = re.match(r"^(\d+)_caso_(.+)$", case_name)
-    case_num = int(m.group(1)) if m else None
-    slug = m.group(2) if m else case_name
+    if m:
+        case_num = int(m.group(1))
+        slug = m.group(2)
+    else:
+        m = re.match(r"^(\d+)_(.+)$", case_name)
+        case_num = int(m.group(1)) if m else None
+        slug = m.group(2) if m else case_name
 
     docs_dir = case_dir / "docs"
     docs = []
@@ -445,15 +529,18 @@ def _collect_case_entry(case_dir: Path) -> dict[str, Any] | None:
                 {
                     "name": doc.name,
                     "path": doc.relative_to(ROOT).as_posix(),
-                    "url": f"/sim_files/{case_name}/docs/{doc.name}",
+                    "url": f"/sim_files/{sim_rel}/docs/{doc.name}",
                 }
             )
 
     return {
         "case_name": case_name,
+        "sim_path": sim_rel,
+        "scope": scope,
         "case_num": case_num,
         "slug": slug,
-        "title": _extract_title(case_name),
+        "title": _extract_title(case_name, case_dir=case_dir, metrics=metrics),
+        "scale": metrics.get("scale") if isinstance(metrics.get("scale"), str) else None,
         "meta": {
             "generated_at": metrics.get("generated_at"),
             "git": metrics.get("git") if isinstance(metrics.get("git"), dict) else {},
@@ -466,9 +553,12 @@ def _collect_case_entry(case_dir: Path) -> dict[str, Any] | None:
         "generated_at": metrics.get("generated_at"),
         "metrics_path": metrics_path.relative_to(ROOT).as_posix(),
         "report_path": report_path.relative_to(ROOT).as_posix() if report_path.exists() else None,
-        "report_url": f"/sim_files/{case_name}/outputs/report.md" if report_path.exists() else None,
-        "metrics_url": f"/sim_files/{case_name}/outputs/metrics.json",
-        "thesis_readme_url": f"/sim_files/{case_name}/README.md"
+        "report_url": f"/sim_files/{sim_rel}/outputs/report.md" if report_path.exists() else None,
+        "metrics_url": f"/sim_files/{sim_rel}/outputs/metrics.json",
+        "thesis_readme_url": f"/sim_files/{sim_rel}/README.md"
+        if (case_dir / "README.md").exists()
+        else None,
+        "readme_path": (case_dir / "README.md").relative_to(ROOT).as_posix()
         if (case_dir / "README.md").exists()
         else None,
         "docs": docs,
@@ -715,22 +805,90 @@ def _collect_chapters() -> list[dict[str, Any]]:
     return out
 
 
+def _section_between(text: str, heading: str) -> str:
+    lines = text.splitlines()
+    out: list[str] = []
+    active = False
+    for line in lines:
+        if line.strip() == heading:
+            active = True
+            continue
+        if active and line.startswith("## "):
+            break
+        if active:
+            out.append(line)
+    return "\n".join(out).strip()
+
+
+def _paragraphs(markdown: str) -> list[str]:
+    return [
+        p.strip()
+        for p in re.split(r"\n\s*\n", markdown.strip())
+        if p.strip() and not p.strip().startswith("**Palabras clave:")
+    ]
+
+
+def _extract_keywords(markdown: str) -> list[str]:
+    match = re.search(r"\*\*Palabras clave:\*\*\s*(.+)", markdown)
+    if not match:
+        return []
+    return [x.strip().strip(".") for x in match.group(1).split(",") if x.strip()]
+
+
+def _load_presentation_summary() -> dict[str, Any]:
+    text = SUMMARY_MD.read_text(encoding="utf-8", errors="ignore") if SUMMARY_MD.exists() else ""
+    resumen_md = _section_between(text, "## Resumen (español)")
+    abstract_md = _section_between(text, "## Abstract (English)")
+    bibliografia_md = _section_between(text, "## Información bibliográfica")
+    resumen_paragraphs = _paragraphs(resumen_md)
+
+    excerpt_md = "\n\n".join(resumen_paragraphs[:3])
+    key_lesson_md = next(
+        (p for p in resumen_paragraphs if p.startswith("**Lección epistémica clave:**")),
+        "",
+    )
+    limitations_md = next(
+        (p for p in resumen_paragraphs if p.startswith("**Limitaciones honestamente reconocidas:**")),
+        "",
+    )
+
+    return {
+        "title": "Estructuras Pre-Ontológicas",
+        "subtitle": "Realismo irrealista operativo y compresión multiescala con validación EDI multidominio",
+        "source_path": SUMMARY_MD.relative_to(ROOT).as_posix(),
+        "resumen_html": render_markdown(resumen_md),
+        "resumen_excerpt_html": render_markdown(excerpt_md),
+        "abstract_html": render_markdown(abstract_md),
+        "bibliografia_html": render_markdown(bibliografia_md),
+        "key_lesson_html": render_markdown(key_lesson_md),
+        "limitations_html": render_markdown(limitations_md),
+        "keywords": _extract_keywords(resumen_md),
+    }
+
+
 _DATASET_CACHE: dict[str, Any] = {}
 _DATASET_MTIME: float = 0.0
 
 
-def _compute_thesis_mtime() -> float:
-    """mtime del archivo Tesis.md para invalidación automática del caché."""
-    try:
-        return THESIS_FINAL_MD.stat().st_mtime if THESIS_FINAL_MD.exists() else 0.0
-    except OSError:
-        return 0.0
+def _compute_dataset_mtime() -> float:
+    """mtime máximo de los archivos que alimentan la API pública."""
+    candidates = [THESIS_FINAL_MD, SUMMARY_MD]
+    candidates.extend(SIM_ROOT.glob("*_caso_*/outputs/metrics.json"))
+    candidates.extend((SIM_ROOT / "corpus_multiescala").glob("*/outputs/metrics.json"))
+    mtimes: list[float] = []
+    for path in candidates:
+        try:
+            if path.exists():
+                mtimes.append(path.stat().st_mtime)
+        except OSError:
+            continue
+    return max(mtimes) if mtimes else 0.0
 
 
 def get_dataset() -> dict[str, Any]:
     """Carga el dataset, recargando automáticamente si Tesis.md cambió."""
     global _DATASET_CACHE, _DATASET_MTIME
-    current_mtime = _compute_thesis_mtime()
+    current_mtime = _compute_dataset_mtime()
     if _DATASET_CACHE and abs(current_mtime - _DATASET_MTIME) < 1e-3:
         return _DATASET_CACHE
 
@@ -742,6 +900,16 @@ def get_dataset() -> dict[str, Any]:
         case_entry = _collect_case_entry(case_dir)
         if case_entry is not None:
             cases.append(case_entry)
+    multiscale_root = SIM_ROOT / "corpus_multiescala"
+    if multiscale_root.exists():
+        for case_dir in sorted(multiscale_root.glob("*"), key=_case_sort_key):
+            if not case_dir.is_dir():
+                continue
+            case_entry = _collect_case_entry(case_dir)
+            if case_entry is not None:
+                cases.append(case_entry)
+
+    cases.sort(key=lambda x: (x["case_num"] or 9999, x["case_name"]))
 
     summary = _build_summary(cases)
     chapters = _collect_chapters()
@@ -749,9 +917,14 @@ def get_dataset() -> dict[str, Any]:
     _DATASET_CACHE = {
         "thesis_html": thesis_html,
         "thesis_toc": thesis_toc,
+        "presentation": _load_presentation_summary(),
         "summary": summary,
         "cases": cases,
-        "case_map": {c["case_name"]: c for c in cases},
+        "case_map": {
+            key: c
+            for c in cases
+            for key in {c["case_name"], c["slug"], str(c["case_num"]) if c["case_num"] is not None else c["case_name"]}
+        },
         "chapters": chapters,
         "chapter_map": {c["slug"]: c for c in chapters},
     }
@@ -774,9 +947,13 @@ def resolve_case(case_id: str, refresh: bool = False) -> dict[str, Any] | None:
         return copy.deepcopy(direct)
 
     q = case_id.lower().strip()
+    q_alt = q.replace("-", "_")
     matched = []
     for case in dataset["cases"]:
-        if q in case["case_name"].lower() or q in case["slug"].lower():
+        case_name = case["case_name"].lower()
+        slug = case["slug"].lower()
+        ascii_slug = _slugify_ascii(case["slug"])
+        if q in case_name or q in slug or q == ascii_slug or q_alt in case_name or q_alt in slug:
             matched.append(case)
 
     if len(matched) == 1:
@@ -804,7 +981,8 @@ def case_report_html(case: dict[str, Any]) -> str:
 
 
 def case_readme_html(case: dict[str, Any]) -> str:
-    readme_abs = ROOT / SIM_ROOT.name / case["case_name"] / "README.md"
+    readme_rel = case.get("readme_path")
+    readme_abs = ROOT / readme_rel if readme_rel else ROOT / SIM_ROOT.name / case["case_name"] / "README.md"
     if not readme_abs.exists():
         return ""
     return render_markdown(readme_abs.read_text(encoding="utf-8", errors="ignore"))
