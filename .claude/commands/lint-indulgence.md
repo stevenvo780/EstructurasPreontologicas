@@ -1,5 +1,5 @@
 ---
-description: Lint de auto-indulgencia: versionología, manierismo, plantillas spam (CLAUDE.md §1).
+description: "Lint de auto-indulgencia: versionología, manierismo, plantillas spam (CLAUDE.md §1)."
 allowed-tools:
   - Bash
   - Read

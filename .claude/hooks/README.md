@@ -11,6 +11,7 @@ Cada hook es un script bash que Claude Code invoca en momentos específicos del 
 | `block_metrics_edit.sh` | `PreToolUse(Edit/Write/MultiEdit)` | Bloquea edición directa a `outputs/metrics.json` |
 | `block_tesis_md_edit.sh` | `PreToolUse(Edit/Write/MultiEdit)` | Bloquea edición directa a `TesisFinal/Tesis.md` (es derivado) |
 | `block_destructive_git.sh` | `PreToolUse(Bash)` | Bloquea `git reset --hard`, `push --force`, etc. |
+| `protect_main_push.sh` | `PreToolUse(Bash)` | Bloquea `git push` directo a `main`/`master` — exige rama+PR o autorización explícita |
 | `post_validate_check_drift.sh` | `PostToolUse(Bash)` | Tras `validate.py`, verifica drift de hashes |
 | `checkpoint_state.sh` | `Stop` | Snapshot de `harness/state.json` al cerrar sesión |
 

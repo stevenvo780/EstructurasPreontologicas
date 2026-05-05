@@ -25,10 +25,12 @@ from harness.verifiers import (
     verify_self_indulgence,
     verify_consistency_doc_config,
     verify_decorative_citations,
+    verify_harness_compliance,
 )
 
 
 VERIFIERS = {
+    "harness_compliance": verify_harness_compliance.main,
     "citation_pagination": verify_citation_pagination.main,
     "decorative_citations": verify_decorative_citations.main,
     "prose_against_json": verify_prose_against_json.main,
