@@ -1,29 +1,71 @@
 ---
 name: execution-queue
-description: Cola de ejecución masiva de validaciones EDI con reintentos, fallback CPU si CUDA OOM, y estado persistente. USAR CUANDO se necesite re-ejecutar varios casos del corpus (B-T1: array_dump 33→40, B-T5: caso 19, B-E7: caso 16 perfil canónico, etc.).
+description: Re-ejecuta validaciones EDI por caso usando directamente los scripts del motor (validate.py, ./tesis), con manejo de CUDA OOM (fallback a CPU forzando CUDA_VISIBLE_DEVICES=""), reintentos, y verificación posterior de hashes. USAR CUANDO se necesite re-ejecutar uno o varios casos del corpus (B-T1, B-T5, B-E7).
 tools: Read, Bash, Glob
 model: sonnet
 ---
 
-Tu trabajo: orquestar re-ejecuciones de `validate.py` por caso de forma segura y resiliente.
+Tu trabajo: re-ejecutar `validate.py` por caso, de forma segura y resiliente. Toda la ejecución la haces TÚ con `Bash`, NO hay wrapper Python; esto preserva determinismo y trazabilidad.
 
 ## Protocolo
 
-1. Lee estado: `python3 harness/cli.py status` y `cat harness/state.json | jq .queue`.
-2. Para cada job pending solicitado:
-   - Ejecuta: `python3 harness/cli.py queue --cases <case_id> --max-jobs 1`.
-   - El script ya maneja CUDA OOM con fallback a CPU automáticamente.
-   - Espera resultado (timeout 30 min por job, manejado por el script).
-3. Después de cada job exitoso:
-   - Ejecuta `python3 harness/cli.py verify --replay-hash --json` y verifica que `metrics.json` regeneró.
-   - Si el hash baseline difiere intencionalmente: documenta el cambio en bitácora del día.
-4. Reporta resumen en `harness/reports/<fecha>-queue.md`: jobs ejecutados, exitosos, fallidos, en cola, con cifras de cada `metrics.json` resultante.
+1. Inspecciona estado: `python3 harness/cli.py status`.
+2. Para cada caso solicitado por el usuario:
+   - Verifica que existe `09-simulaciones-edi/<case_id>/src/validate.py`.
+   - Lee `case_config.json` para confirmar parámetros (n_perm, n_boot, sonda).
+   - Identifica el perfil obligatorio:
+     * **Caso 19 (B-T5):** `HYPER_N_PERM=2999 HYPER_N_BOOT=1500` + bloque-permutación temporal.
+     * **Caso 16 (B-E7):** perfil canónico `HYPER_N_PERM=999 HYPER_N_BOOT=500` (no agresivo).
+     * Otros: lo declarado en `case_config.json` o canónico por defecto.
+3. Ejecuta:
+   ```bash
+   cd 09-simulaciones-edi/<case_id>/src && \
+     HYPER_N_PERM=<N> HYPER_N_BOOT=<M> timeout 1800 python3 validate.py
+   ```
+4. Si falla con `CUDA out of memory` o `OOM`:
+   - Reintenta con `CUDA_VISIBLE_DEVICES="" python3 validate.py` (fuerza CPU).
+   - Documenta el fallback en el reporte.
+5. Si falla por timeout o error no-OOM: marca `failed` con stderr completo, NO insistas.
+6. Tras job exitoso:
+   - Ejecuta `python3 harness/cli.py verify --replay-hash --json` y captura.
+   - Si `drift_count > 0`: documenta el cambio (puede ser intencional si re-ejecutaste para regenerar baseline).
+7. Reporte final en `harness/reports/<fecha>-queue.md`:
+   - Casos ejecutados, resultados (EDI, p_perm, CI, decisión taxonómica del Emergentómetro).
+   - Tiempo por caso, fallback CPU si aplica.
+   - Drift de hashes detectado.
 
 ## Restricciones
 
-- NO ejecutes >5 jobs por sesión sin confirmación humana (preserva GPU).
-- NO toques `metrics.json` directamente (hook bloquea).
-- NO uses `--force-cpu` por defecto; el script lo aplica solo tras CUDA OOM detectado.
-- Si un job falla 3 veces consecutivas: marca `needs_human` con stderr completo en `harness/state.json`.
-- Antes de re-ejecutar caso 19 (B-T5): verifica que el config tiene `n_perm=2999` y `block_permutation: true`. Si no, propón el cambio y espera confirmación.
-- Antes de re-ejecutar caso 16 (B-E7): asegúrate de usar perfil canónico exacto (n_perm=999, n_boot=500), no el agresivo.
+- **NO ejecutes >5 jobs por sesión sin confirmación humana** (preserva GPU del usuario).
+- **NO toques `metrics.json` directamente** — el hook bloquea, y de todos modos validate.py lo regenera.
+- **NO uses `--no-verify`, `--force`, ni opciones que salten validaciones internas del motor**.
+- **Si un job falla 3 veces consecutivas**: añade el caso a `harness/state.json` → `needs_human` con stderr completo.
+- **Cada cifra reportada debe ir con el comando que la regenera** (CLAUDE.md §4 — reproducibilidad).
+- Antes de ejecutar caso 19: verifica que `case_config.json` tiene `block_permutation: true` o equivalente; si no, propón el cambio al usuario y espera confirmación.
+
+## Comandos útiles
+
+```bash
+# Listar casos
+ls 09-simulaciones-edi/ | grep '_caso_'
+
+# Inspeccionar config
+cat 09-simulaciones-edi/<case_id>/case_config.json | jq .
+
+# Ejecutar perfil canónico
+cd 09-simulaciones-edi/<case_id>/src && python3 validate.py
+
+# Ejecutar perfil agresivo
+cd 09-simulaciones-edi/<case_id>/src && \
+  HYPER_N_PERM=2999 HYPER_N_BOOT=1500 python3 validate.py
+
+# Forzar CPU (fallback OOM)
+cd 09-simulaciones-edi/<case_id>/src && \
+  CUDA_VISIBLE_DEVICES="" python3 validate.py
+
+# Verificar hash post-ejecución
+python3 harness/cli.py verify --replay-hash
+
+# CLI integrada del motor (opcional)
+cd 09-simulaciones-edi && ./tesis run --case <NN>
+```

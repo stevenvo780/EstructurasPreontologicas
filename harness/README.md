@@ -62,14 +62,12 @@ harness/
 ├── orchestrator.py           ← pipeline de verificadores
 ├── config.yaml               ← parámetros operativos
 ├── state.json                ← estado persistente
-├── lib/                      ← biblioteca interna
+├── lib/                      ← biblioteca interna (solo soporte de verificadores)
 │   ├── state.py
 │   ├── memory.py
 │   ├── budget.py
 │   ├── pdftext.py
-│   ├── tesis_paths.py
-│   ├── execution_queue.py
-│   └── multi_probe.py
+│   └── tesis_paths.py
 ├── verifiers/                ← verificadores formales
 │   ├── verify_citation_pagination.py
 │   ├── verify_prose_against_json.py
@@ -98,7 +96,7 @@ Slash commands:
 - `/verify-prose-json` — solo prosa↔JSON
 - `/verify-debt` — solo deuda residual
 - `/lint-indulgence` — solo auto-indulgencia
-- `/run-case <case_id> [max-jobs]` — re-ejecutar caso EDI
+- `/run-case <case_id> [perfil]` — re-ejecutar caso EDI (delega a `@execution-queue`)
 - `/multi-probe-null <case_id>` — multi-sonda sobre caso null
 - `/engage-author <apellido> [obra]` — engagement filosófico
 
@@ -119,10 +117,19 @@ python3 harness/cli.py status
 python3 harness/cli.py verify --all
 python3 harness/cli.py verify --citations
 python3 harness/cli.py pass --budget-min 30
-python3 harness/cli.py queue --list-cases
-python3 harness/cli.py queue --cases 19_caso_acidificacion_oceanica --max-jobs 1 --dry
-python3 harness/cli.py multi-probe --cases 19_caso_acidificacion_oceanica
 ```
+
+**Re-ejecución de casos EDI** y **multi-sonda** se hacen invocando directamente
+los scripts del motor:
+
+```bash
+cd 09-simulaciones-edi/<case_id>/src && python3 validate.py
+cd 09-simulaciones-edi && ./tesis run --case <NN>
+```
+
+Eso lo hace Claude Code vía sub-agentes `@execution-queue` y `@multi-probe-runner`,
+no un wrapper Python en el harness (eliminado deliberadamente para preservar
+trazabilidad y evitar duplicar la CLI ya existente del motor).
 
 ---
 

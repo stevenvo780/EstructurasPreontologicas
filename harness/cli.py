@@ -1,13 +1,16 @@
-"""CLI única del harness.
+"""CLI única del harness — solo verificadores deterministas.
 
 Subcomandos:
   init        Inicializa state.json y verifica dependencias.
   status      Muestra estado actual del harness y la tesis.
   verify      Ejecuta verificadores (todos o individuales).
-  pass        Pasada completa (dry/live).
+  pass        Pasada completa de verificadores deterministas.
   audit       Verify + reporte detallado a archivo.
-  queue       Operaciones sobre la cola de ejecución de validaciones.
-  multi-probe Re-análisis de casos null con sondas alternativas.
+
+Re-ejecución de casos EDI y multi-sonda los hace Claude Code directamente
+vía sub-agentes (.claude/agents/execution-queue.md, multi-probe-runner.md)
+invocando `python3 09-simulaciones-edi/<caso>/src/validate.py` y
+`./tesis run --case <id>`. No hay wrapper Python aquí.
 """
 from __future__ import annotations
 import argparse
@@ -21,12 +24,11 @@ from harness.lib.state import load_state, save_state, now_iso
 from harness.lib.tesis_paths import HARNESS_DIR, repo_root, load_config
 from harness.lib import pdftext
 from harness import orchestrator
-from harness.lib import execution_queue, multi_probe
 
 
 def cmd_init(args):
     state = load_state()
-    cfg = load_config()
+    load_config()
     print(f"[init] state.json en {HARNESS_DIR / 'state.json'}")
     print(f"[init] repo_root = {repo_root()}")
     print(f"[init] pdftotext disponible = {pdftext.have_pdftotext()}")
@@ -57,12 +59,6 @@ def cmd_status(args):
     print(f"\nItems needs_human ({len(nh)}):")
     for item in nh:
         print(f"  - {item}")
-    queue = state.get("queue", {}).get("jobs", {})
-    if queue:
-        done = sum(1 for j in queue.values() if j["status"] == "done")
-        failed = sum(1 for j in queue.values() if j["status"] == "failed")
-        pending = sum(1 for j in queue.values() if j["status"] == "pending")
-        print(f"\nCola de ejecución: done={done} failed={failed} pending={pending}")
 
 
 def cmd_verify(args):
@@ -105,8 +101,8 @@ def cmd_verify(args):
 def cmd_pass(args):
     r = orchestrator.run_pass("dry", args.budget_min, args.max_tokens)
     print(f"\nReporte: {r['report_path']}")
-    print("Para invocar sub-agentes filosóficos/técnicos: usa Claude Code")
-    print("(/harness-pass, /verify-citations, /verify-prose, etc.)")
+    print("Sub-agentes filosóficos/técnicos: invoca con @<nombre> en Claude Code")
+    print("(/harness-pass, /verify-citations, /verify-prose-json, /run-case, etc.)")
 
 
 def cmd_audit(args):
@@ -117,24 +113,12 @@ def cmd_audit(args):
     print(f"Auditoría completa: {out}")
 
 
-def cmd_queue(args):
-    if args.list_cases:
-        for c in execution_queue.list_cases():
-            print(c)
-        return
-    cs = args.cases.split(",") if args.cases else None
-    r = execution_queue.queue_pass(cases=cs, max_jobs=args.max_jobs, dry=args.dry)
-    print(json.dumps(r, indent=2, ensure_ascii=False))
-
-
-def cmd_multi_probe(args):
-    cs = args.cases.split(",") if args.cases else None
-    r = multi_probe.main(cases=cs, dry=not args.execute)
-    print(json.dumps(r, indent=2, ensure_ascii=False))
-
-
 def main():
-    ap = argparse.ArgumentParser(prog="harness", description="Harness de investigación científico-filosófica para la tesis.")
+    ap = argparse.ArgumentParser(
+        prog="harness",
+        description="Harness de re-validación científico-filosófica. "
+                    "Solo verificadores deterministas — la capa LLM vive en Claude Code.",
+    )
     sub = ap.add_subparsers(dest="cmd", required=True)
 
     sub.add_parser("init", help="Inicializa state.json y verifica dependencias").set_defaults(func=cmd_init)
@@ -151,7 +135,7 @@ def main():
     p_v.add_argument("--json", action="store_true", help="Output como JSON")
     p_v.set_defaults(func=cmd_verify)
 
-    p_p = sub.add_parser("pass", help="Pasada determinista (todos los verificadores formales)")
+    p_p = sub.add_parser("pass", help="Pasada determinista (todos los verificadores)")
     p_p.add_argument("--budget-min", type=int, default=30)
     p_p.add_argument("--max-tokens", type=int, default=100000)
     p_p.set_defaults(func=cmd_pass)
@@ -160,18 +144,6 @@ def main():
     p_a.add_argument("--output", type=str, default=None)
     p_a.add_argument("--budget-min", type=int, default=30)
     p_a.set_defaults(func=cmd_audit)
-
-    p_q = sub.add_parser("queue", help="Cola de ejecución de validaciones EDI")
-    p_q.add_argument("--list-cases", action="store_true")
-    p_q.add_argument("--cases", type=str, default=None)
-    p_q.add_argument("--max-jobs", type=int, default=3)
-    p_q.add_argument("--dry", action="store_true")
-    p_q.set_defaults(func=cmd_queue)
-
-    p_m = sub.add_parser("multi-probe", help="Multi-sonda sobre casos null")
-    p_m.add_argument("--cases", type=str, default=None)
-    p_m.add_argument("--execute", action="store_true", help="Ejecuta sondas reales (largas)")
-    p_m.set_defaults(func=cmd_multi_probe)
 
     args = ap.parse_args()
     args.func(args)
