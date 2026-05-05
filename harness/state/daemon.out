@@ -1,85 +1,17 @@
-[03:16:45] daemon iniciado: hours=150.0 parallel=12 dry=False pid=368991
-[03:16:45] logs por worker en: /datos/repos/EstructurasPreontologicas/Bitacora/2026-05-04-continuous-run/workers
-[03:16:45] deadline en 150.00h (2026-05-11T04:16:45.987477)
-[03:16:46] idle: queue vacía y sin hits nuevos — esperando 30s
-[03:17:16] idle: queue vacía y sin hits nuevos — esperando 30s
-[03:17:46] idle: queue vacía y sin hits nuevos — esperando 30s
-[03:18:16] idle: queue vacía y sin hits nuevos — esperando 30s
-[03:18:46] idle: queue vacía y sin hits nuevos — esperando 30s
-[03:19:16] idle: queue vacía y sin hits nuevos — esperando 30s
-[03:19:46] idle: queue vacía y sin hits nuevos — esperando 30s
-[03:20:16] idle: queue vacía y sin hits nuevos — esperando 30s
-[03:20:46] idle: queue vacía y sin hits nuevos — esperando 30s
-[03:21:16] [AD-edc90560] spawned (1/12)
-[03:21:17] [AD-fa3a687c] spawned (2/12)
-[03:21:17] [AD-4f983f4b] spawned (3/12)
-[03:21:17] [AD-00e24f26] spawned (4/12)
-[03:21:17] [AD-762792a0] spawned (5/12)
-[03:21:17] [AD-e153bc43] spawned (6/12)
-[03:21:17] [AD-b57b1877] spawned (7/12)
-[03:21:17] [AD-889c5fff] spawned (8/12)
-[03:21:17] [AD-7e3b8bf6] spawned (9/12)
-[03:21:17] [AD-5ac49bbc] spawned (10/12)
-[03:21:18] [AD-03d878e2] spawned (11/12)
-[03:21:18] [AD-4d6f3a8f] spawned (12/12)
-[03:21:38] [AD-00e24f26] OK — Desambigua "(Colombia, 1935–2013)" → "(filósofo colombiano, 
-[03:21:38] [AD-a6b652f5] spawned (12/12)
-[03:21:48] [AD-edc90560] OK — Engagement Warren 2006 con cita verbatim p.359 (atractores c
-[03:21:48] [AD-e153bc43] OK — Añadida paginación p. 375 a back-ref Warren 2006 en línea 23
-[03:21:48] [AD-e7fd5ec9] spawned (11/12)
-[03:21:48] [AD-4ae47def] spawned (12/12)
-[03:21:53] [AD-fa3a687c] OK — Engagement técnico de τ y marca de mención secundaria; deuda
-[03:21:53] [AD-4f983f4b] OK — Warren 2006 p.358 cita verbatim + pp.359-361 contraste rival
-[03:21:53] [AD-261ffc48] spawned (11/12)
-[03:21:53] [AD-5a15b050] spawned (12/12)
-[03:22:03] [AD-03d878e2] OK — Engagement Woodward interventionist + mención secundaria dec
-[03:22:03] [AD-3642dbb7] spawned (12/12)
-[03:22:08] [AD-a6b652f5] OK — Husserl 1913 reformulado como referencia secundaria con deud
-[03:22:18] [AD-889c5fff] OK — Engagement Warren 2006 pp. 358-359 con cita verbatim verific
-[03:22:18] [AD-e7fd5ec9] OK — Beyer 2016 reformulado como mención secundaria declarada (PD
-[03:22:18] [AD-261ffc48] OK — Sternad 2001 reformulada como mención secundaria vía Warren 
-[03:22:23] [AD-7e3b8bf6] OK — Holm 1979 → engagement técnico step-down, marcado secundaria
-[03:22:23] [AD-4d6f3a8f] OK — Engagement Warren 2006 con dos citas paginadas (p.358, p.359
-[03:22:28] [AD-4ae47def] OK — Hale 2021 reformulado como mención secundaria con engagement
-[03:22:33] [AD-762792a0] OK — Engagement Warren 2006 con citas verbatim p.358 y p.359 veri
-[03:22:33] [AD-3642dbb7] OK — Warren 2006 p.358 cita verbatim insertada (agent–environment
-[03:22:38] [AD-5a15b050] OK — Wallis/Hildreth reformulados como mención secundaria declara
-[03:22:43] [AD-b57b1877] OK — Engagement Warren 2006 p.374 con cita verbatim VENLab + attr
-[03:22:58] [AD-5ac49bbc] OK — Wallis/Hildreth marcados como reporte secundario + deuda pag
-[03:22:59] idle: queue vacía y sin hits nuevos — esperando 30s
-[03:23:29] idle: queue vacía y sin hits nuevos — esperando 30s
-[03:23:59] idle: queue vacía y sin hits nuevos — esperando 30s
-[03:24:29] idle: queue vacía y sin hits nuevos — esperando 30s
-[03:24:59] idle: queue vacía y sin hits nuevos — esperando 30s
-[03:25:29] idle: queue vacía y sin hits nuevos — esperando 30s
-[03:25:59] idle: queue vacía y sin hits nuevos — esperando 30s
-[03:26:29] idle: queue vacía y sin hits nuevos — esperando 30s
-[03:26:59] idle: queue vacía y sin hits nuevos — esperando 30s
-[03:27:29] idle: queue vacía y sin hits nuevos — esperando 30s
-[03:28:00] idle: queue vacía y sin hits nuevos — esperando 30s
-[03:28:30] idle: queue vacía y sin hits nuevos — esperando 30s
-Traceback (most recent call last):
-  File "/datos/repos/EstructurasPreontologicas/harness/cli.py", line 332, in <module>
-    main()
-    ~~~~^^
-  File "/datos/repos/EstructurasPreontologicas/harness/cli.py", line 328, in main
-    args.func(args)
-    ~~~~~~~~~^^^^^^
-  File "/datos/repos/EstructurasPreontologicas/harness/cli.py", line 246, in cmd_continuous
-    daemon.run_daemon(args.hours, parallel=args.parallel,
-    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-                      dry_run=args.dry_run,
-                      ^^^^^^^^^^^^^^^^^^^^^
-                      replenish_threshold=args.replenish_threshold,
-                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-                      poll_seconds=args.poll_seconds)
-                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/datos/repos/EstructurasPreontologicas/harness/lib/daemon.py", line 388, in run_daemon
-    picked = cont.select_next_n_tasks(state, free, reserved_paths=reserved)
-  File "/datos/repos/EstructurasPreontologicas/harness/lib/continuous.py", line 180, in select_next_n_tasks
-    pending.sort(key=lambda t: (t["priority"], t["est_minutes"]))
-    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/datos/repos/EstructurasPreontologicas/harness/lib/continuous.py", line 180, in <lambda>
-    pending.sort(key=lambda t: (t["priority"], t["est_minutes"]))
-                                               ~^^^^^^^^^^^^^^^
-KeyError: 'est_minutes'
+[03:45:12] daemon iniciado: hours=80.0 parallel=12 dry=False pid=482075
+[03:45:12] logs por worker en: /datos/repos/EstructurasPreontologicas/Bitacora/2026-05-04-continuous-run/workers
+[03:45:12] deadline en 80.00h (2026-05-08T06:45:12.834217)
+[03:45:12] [AU-3-baselines-superan-modelo] spawned (1/12)
+[03:45:12] [F02-01-woodward-pendiente-ocr] spawned (2/12)
+[03:45:13] [F03-04-traduccion-b-l3-sin-criterio] spawned (3/12)
+[03:45:13] [F03-05-asimetria-existencial-trivial] spawned (4/12)
+[03:45:13] [F03-08-do-test-confundido-con-ablacion] spawned (5/12)
+[03:45:13] [F05-01-memoria-sin-tulving] spawned (6/12)
+[03:45:13] [F05-04-instituciones-sin-north-ostrom] spawned (7/12)
+[03:45:13] [F05-07-r2-098-sin-roberts-pashler] spawned (8/12)
+[03:45:13] [F05-09-edi-negativo-cuenta-como-demostrativo] spawned (9/12)
+[03:45:13] [F04-02-tesis-6-de-6-criterios-internos] spawned (10/12)
+[03:45:13] [F04-04-kim-modus-tollens-vacuo] spawned (11/12)
+[03:45:13] [TENG-01-permutacion-iid-temporales] spawned (12/12)
+[03:46:23] [F05-01-memoria-sin-tulving] OK — needs_biblio+needs_human; sin PDFs en 07-bibliografia
+[03:46:23] [TENG-12-hash-no-detecta-inconsistencia-interna] spawned (12/12)
