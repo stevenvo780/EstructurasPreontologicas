@@ -22,8 +22,6 @@ La tesis adopta **naturalismo metafísico moderado** como **compromiso de partid
 
 **Tabla 2.1.1.**
 
-**Tabla 2.1.1.**
-
 | Alternativa rechazada | Por qué la tesis no la asume |
 |---|---|
 | **Dualismo cartesiano** | Postula segunda sustancia (*res cogitans*) sin ganancia operativa y con problema de interacción no resuelto |
@@ -104,8 +102,6 @@ La distinción "macro vs micro" en el manuscrito original era **artefacto de la 
 
 **Tabla 2.1.2.**
 
-**Tabla 2.1.2.**
-
 | Invariante | Caso 31 (cuántico) | Caso 33 (molecular) | Caso 36 (celular) | Caso 04 (energético macro) | Caso 27 (riesgo bio macro) | Caso 30 (conductual) | Caso 39 (estelar) | Caso 40 (cosmológico) |
 |------------|--------------------|---------------------|-------------------|----------------------------|----------------------------|---------------------|-------------------|----------------------|
 | **Sustrato material** | qubit superconductor + baño térmico | proteína Villin + solvente | núcleo celular + citoplasma | red eléctrica + agentes económicos | población humana + patógenos | cuerpo + entorno físico | gas estelar + radiación | gas estelar + campo galáctico |
@@ -152,8 +148,6 @@ Para que la afirmación κ-ontológica fuerte se sostenga sobre un caso particul
 3. **Intervención experimental confirmatoria:** una predicción discriminante sobre intervención manipulada (no observación pasiva) debe cumplirse. Sin esto, la estructura puede ser correlación elaborada.
 
 **Estado del corpus actual respecto a κ-ontológica:**
-
-**Tabla 2.1.3.**
 
 **Tabla 2.1.3.**
 
@@ -225,8 +219,6 @@ Las cinco condiciones operativas son condiciones de admisión cualitativa. Para 
 
 La implementación canónica está en `09-simulaciones-edi/common/topology.py` con tests sobre 7 casos del corpus que tienen `primary_arrays.json` disponible (apéndice técnico §"Análisis topológico", reporte completo en `09-simulaciones-edi/topology/topology_report.{json,md}`):
 
-**Tabla 2.1.6.**
-
 **Tabla 2.1.4.**
 
 | Caso | λ_max | D₂ | r² (D₂) | Lectura cualitativa |
@@ -259,8 +251,6 @@ La extensión de las métricas topológicas a los 33 casos restantes del corpus 
 ## 3. Tipos de realidad
 
 La realidad no es plana. La tesis distingue cinco modos de realidad sin multiplicar mundos:
-
-**Tabla 2.1.4.**
 
 **Tabla 2.1.5.**
 
@@ -339,8 +329,6 @@ La tesis no reduce toda explicación a causalidad lineal. Reconoce un repertorio
 La causalidad circular (upward + downward) emerge naturalmente del acoplamiento dinámico: las componentes producen la dinámica conjunta y la dinámica conjunta retroalimenta a las componentes. No hay aquí emergencia fuerte: hay self-organization en el sentido técnico anclado en Maturana y Varela (1980, *Autopoiesis and Cognition*) y Haken (1977, *Synergetics*) — ver cap 02-04 §4 para la formulación con cita textual paginada.
 
 ## 10. Qué evita la ontología
-
-**Tabla 2.1.5.**
 
 **Tabla 2.1.6.**
 

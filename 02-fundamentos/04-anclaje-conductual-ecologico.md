@@ -20,6 +20,8 @@ S  — semántica revisada                   : recoge las categorías que sobrev
 
 **Tabla 2.4.1.**
 
+**Tabla 2.4.1.**
+
 | Escala | "Organismo" en B | "Entorno" en B | "Tarea" en B | "Historia" en B |
 |--------|------------------|-----------------|---------------|-----------------|
 | Cuántica (caso 31) | Qubit | Baño térmico | Mantener coherencia | Pulsos previos |
@@ -185,6 +187,8 @@ L3 es la reconstrucción formal de las dependencias detectadas en B. Cada térmi
 S (la semántica revisada: las categorías que sobreviven a la auditoría) se gana solo a posteriori. Las categorías que valga la pena conservar son las que: corresponden a atractores reales identificados en B; tienen formalización en L3; discriminan predicción e intervención. Las que no, se eliminan o se descomponen. La aspiración no es eliminar L1; es reconstruir S desde B + L3.
 
 ## 9. Qué descarta este nivel
+
+**Tabla 2.4.2.**
 
 **Tabla 2.4.2.**
 

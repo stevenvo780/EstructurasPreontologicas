@@ -91,7 +91,7 @@ def number_file(path: Path) -> tuple[int, int]:
                 if new_lines[k].strip():
                     previous_real = new_lines[k]
                     break
-            already_labeled = bool(re.search(r"\*\*Tabla [\dA-Z]+\.\d+\*\*", previous_real))
+            already_labeled = bool(re.search(r"\*\*Tabla [\dA-Z]+(?:\.\d+)+\.?\*\*", previous_real))
             if not already_labeled:
                 table_counter += 1
                 # Insertar línea en blanco si no la hay
@@ -109,7 +109,7 @@ def number_file(path: Path) -> tuple[int, int]:
                 if new_lines[k].strip():
                     previous_real = new_lines[k]
                     break
-            already_labeled = bool(re.search(r"\*\*Figura [\dA-Z]+\.\d+\*\*", previous_real))
+            already_labeled = bool(re.search(r"\*\*Figura [\dA-Z]+(?:\.\d+)+\.?\*\*", previous_real))
             if not already_labeled:
                 figure_counter += 1
                 if new_lines and new_lines[-1].strip():

@@ -12,6 +12,8 @@ Listas de soporte editorial requeridas por el formato de tesis doctoral instituc
 
 **Tabla A.9.1.**
 
+**Tabla 0.6.1.**
+
 | Figura | Título | Capítulo |
 |--------|--------|----------|
 | Fig. 2.1 | Cuatro modos de realidad operativa | 02-01 |
@@ -30,6 +32,8 @@ Listas de soporte editorial requeridas por el formato de tesis doctoral instituc
 ## A.9.2. Lista de tablas
 
 **Tabla A.9.2.**
+
+**Tabla 0.6.2.**
 
 | Tabla | Título | Capítulo |
 |-------|--------|----------|
@@ -58,6 +62,8 @@ Listas de soporte editorial requeridas por el formato de tesis doctoral instituc
 
 **Tabla A.9.3.**
 
+**Tabla 0.6.3.**
+
 | Símbolo | Significado | Capítulo |
 |---------|-------------|----------|
 | μ | Operador de medición; recorta R en X observable | 03-01 |
@@ -76,6 +82,8 @@ Listas de soporte editorial requeridas por el formato de tesis doctoral instituc
 
 **Tabla A.9.4.**
 
+**Tabla 0.6.4.**
+
 | Sigla | Significado | Capítulo |
 |-------|-------------|----------|
 | EDI | Effective Dependence Index | 03-04 |
@@ -90,6 +98,8 @@ Listas de soporte editorial requeridas por el formato de tesis doctoral instituc
 ### Niveles del corpus
 
 **Tabla A.9.5.**
+
+**Tabla 0.6.5.**
 
 | Nivel | Categoría | Definición operativa |
 |------:|-----------|----------------------|
@@ -106,6 +116,8 @@ Listas de soporte editorial requeridas por el formato de tesis doctoral instituc
 
 **Tabla A.9.6.**
 
+**Tabla 0.6.6.**
+
 | Sigla | Registro | Capítulo |
 |-------|----------|----------|
 | L1 | Psicológico-ordinario (preguntas comunicables) | 02-04 |
@@ -116,6 +128,8 @@ Listas de soporte editorial requeridas por el formato de tesis doctoral instituc
 ### Instituciones y datasets
 
 **Tabla A.9.7.**
+
+**Tabla 0.6.7.**
 
 | Sigla | Significado |
 |-------|-------------|

@@ -189,6 +189,8 @@ CI bootstrap, modos de fallo, LoE, val_steps reportados con su implicación infe
 
 **Tabla 0.7.1.**
 
+**Tabla 0.7.1.**
+
 | LoE | Descripción | Ejemplos |
 |----:|-------------|----------|
 | 1 | Especulativo | Proxies indirectos, encuestas subjetivas, datos sintéticos sin ground truth |

@@ -4,7 +4,7 @@
   "started_at": "2026-05-05T02:21:33+00:00",
   "started_epoch": 1777947693.0047443,
   "target_hours": 80.0,
-  "ticks": 31,
+  "ticks": 85,
   "tasks": [
     {
       "id": "A1-pag-takens",
@@ -411,7 +411,7 @@
     },
     {
       "id": "AU-1-caso26-starlink",
-      "status": "pending",
+      "status": "done",
       "kind": "science-audit",
       "priority": 1,
       "subject": "Caso 26 Starlink: EDI=+0.689 p=1.000 con val_steps=1 — heredar cuarentena de B-T5",
@@ -422,15 +422,15 @@
         "09-simulaciones-edi/26_caso_starlink/case_config.json"
       ],
       "acceptance": "metrics.json regenerado con val_steps>=8 y bloque-permutación n_perm=2999; clasificación final justificada; tablas coherentes",
-      "started_at": null,
-      "result": null,
+      "started_at": "2026-05-05T03:47:03+00:00",
+      "result": "val_steps=1 confirmado, cuarentena needs_human",
       "est_minutes": 40,
-      "finished_at": null,
+      "finished_at": "2026-05-05T03:48:19+00:00",
       "notes": "src: adversarial-reviewer 2026-05-05 | files: 05-aplicaciones/07-mapa-aplicaciones-corpus.md:124,06-cierre/04-versiones-cortas-defensa.md:110,09-simulaciones-edi/26_caso_starlink/case_config.json | acceptance: metrics.json regenerado con val_steps>=8 y bloque-permutación n_perm=2999; clasificación final justificada; tablas coherentes"
     },
     {
       "id": "AU-2-caso27-bootstrap-cruza-cero",
-      "status": "pending",
+      "status": "done",
       "kind": "science-audit",
       "priority": 1,
       "subject": "Caso 27 Riesgo Biológico: CI bootstrap [-0.198,+0.648] cruza cero pero declarado strong gate completo",
@@ -440,15 +440,15 @@
         "05-aplicaciones/07-mapa-aplicaciones-corpus.md:28"
       ],
       "acceptance": "CI bootstrap completamente positivo o reclasificación weak con conteo strong actualizado de 4 a 3 en cap 06-01, 06-04, 05-aplicaciones/07",
-      "started_at": null,
-      "result": null,
+      "started_at": "2026-05-05T03:48:54+00:00",
+      "result": "needs_human: CI cruza cero, decisión 4→3 strong requiere Jacob",
       "est_minutes": 40,
-      "finished_at": null,
+      "finished_at": "2026-05-05T03:50:20+00:00",
       "notes": "src: adversarial-reviewer 2026-05-05 | files: 06-cierre/01-conclusion-demostrativa.md:55,05-aplicaciones/07-mapa-aplicaciones-corpus.md:28 | acceptance: CI bootstrap completamente positivo o reclasificación weak con conteo strong actualizado de 4 a 3 en cap 06-01, 06-04, 05-aplicaciones/07"
     },
     {
       "id": "AU-3-baselines-superan-modelo",
-      "status": "in_progress",
+      "status": "done",
       "kind": "science-audit",
       "priority": 0,
       "subject": "ARIMA/VAR superan modelo acoplado en 3/7 casos (Deforestación, Riesgo Biológico, Microplásticos) — condición de fracaso autodeclarada se cumple",
@@ -459,14 +459,14 @@
       ],
       "acceptance": "Sección honesta en cap 06-01 con tabla de signos negativos visibles; pretensión multidominio reformulada o restringida; lectura literal de baselines_report.md citada",
       "started_at": "2026-05-05T03:45:12+00:00",
-      "result": null,
+      "result": "2/4 overall_pass dominados por ARIMA/VAR; needs_human",
       "est_minutes": 40,
-      "finished_at": null,
+      "finished_at": "2026-05-05T03:48:54+00:00",
       "notes": "src: adversarial-reviewer 2026-05-05 | files: 06-cierre/01-conclusion-demostrativa.md:87,09-simulaciones-edi/baselines/baselines_report.md | acceptance: Sección honesta en cap 06-01 con tabla de signos negativos visibles; pretensión multidominio reformulada o restringida; lectura literal de baselines_report.md citada"
     },
     {
       "id": "AU-4-significance-theater-21-22",
-      "status": "pending",
+      "status": "done",
       "kind": "science-audit",
       "priority": 2,
       "subject": "Casos 21 Salinización (EDI=0.018) y 22 Fósforo: p significativo con magnitud trivial o CI cruza cero — significance theater",
@@ -476,15 +476,15 @@
         "06-cierre/04-versiones-cortas-defensa.md:110"
       ],
       "acceptance": "Columna CI añadida a tablas resumen 06-01 y 05-aplicaciones/07; reclasificación 21,22; cita Wasserstein-Lazar 2016 p.131 en cap 03-formalizacion/02",
-      "started_at": null,
-      "result": null,
+      "started_at": "2026-05-05T03:58:43+00:00",
+      "result": "CI21=[-0.077,+0.083] CI22=[-0.221,+0.550] cruzan 0; needs_human",
       "est_minutes": 40,
-      "finished_at": null,
+      "finished_at": "2026-05-05T04:00:35+00:00",
       "notes": "src: adversarial-reviewer 2026-05-05 | files: 05-aplicaciones/07-mapa-aplicaciones-corpus.md:113,06-cierre/04-versiones-cortas-defensa.md:110 | acceptance: Columna CI añadida a tablas resumen 06-01 y 05-aplicaciones/07; reclasificación 21,22; cita Wasserstein-Lazar 2016 p.131 en cap 03-formalizacion/02"
     },
     {
       "id": "AU-5-auc-roc-circular",
-      "status": "pending",
+      "status": "done",
       "kind": "science-audit",
       "priority": 1,
       "subject": "AUC-ROC=0.886 vs ARIMA=0.600 sin documento metodológico — sospecha de circularidad y baseline de paja",
@@ -493,15 +493,15 @@
         "06-cierre/01-conclusion-demostrativa.md:243"
       ],
       "acceptance": "Documento 09-simulaciones-edi/auc_roc/methodology.md define outcome/predictor/gold standard; o eliminación de la cifra; o reformulación honesta sin comparar con ARIMA en task que ARIMA no hace",
-      "started_at": null,
-      "result": null,
+      "started_at": "2026-05-05T03:50:20+00:00",
+      "result": "needs_human: circularidad + baseline paja confirmados",
       "est_minutes": 40,
-      "finished_at": null,
+      "finished_at": "2026-05-05T03:52:07+00:00",
       "notes": "src: adversarial-reviewer 2026-05-05 | files: 06-cierre/01-conclusion-demostrativa.md:243 | acceptance: Documento 09-simulaciones-edi/auc_roc/methodology.md define outcome/predictor/gold standard; o eliminación de la cifra; o reformulación honesta sin comparar con ARIMA en task que ARIMA no hace"
     },
     {
       "id": "AU-6-multisonda-1-de-7",
-      "status": "pending",
+      "status": "done",
       "kind": "science-audit",
       "priority": 0,
       "subject": "Multi-sonda 1/7 convergencia (14%) — limitación reportada pero no propaga al juicio del corpus (Cartwright 1999)",
@@ -511,15 +511,15 @@
         "06-cierre/01-conclusion-demostrativa.md:147"
       ],
       "acceptance": "Convergencia inter-sonda reportada para 40 casos tras B-T1; ajuste lenguaje abstract/conclusión proporcional a la tasa; cita Cartwright 1999 cap.4 p.89 paginada en cap 04-debates",
-      "started_at": null,
-      "result": null,
+      "started_at": "2026-05-05T03:53:28+00:00",
+      "result": "needs_human: edits + B-T1 + Cartwright1999 fetch",
       "est_minutes": 40,
-      "finished_at": null,
+      "finished_at": "2026-05-05T03:55:10+00:00",
       "notes": "src: adversarial-reviewer 2026-05-05 | files: 06-cierre/04-versiones-cortas-defensa.md:60,06-cierre/01-conclusion-demostrativa.md:147 | acceptance: Convergencia inter-sonda reportada para 40 casos tras B-T1; ajuste lenguaje abstract/conclusión proporcional a la tasa; cita Cartwright 1999 cap.4 p.89 paginada en cap 04-debates"
     },
     {
       "id": "AU-7-caso30-holm-bonferroni",
-      "status": "pending",
+      "status": "done",
       "kind": "science-audit",
       "priority": 1,
       "subject": "Caso 30 Behavioral p=0.044 al borde — bajo Holm-Bonferroni con 30 casos (α/30=0.0017) cae; valid=False en JSON",
@@ -530,15 +530,15 @@
         "09-simulaciones-edi/30_caso_behavioral/outputs/metrics.json"
       ],
       "acceptance": "Tabla con p-values Holm-corregidos para los 30 casos; relato caso 30 reescrito si no sobrevive; bandera valid=False documentada en glosario o eliminada con justificación",
-      "started_at": null,
-      "result": null,
+      "started_at": "2026-05-05T03:48:19+00:00",
+      "result": "Holm m=30 confirma p=0.044 no sobrevive; needs_human H-J",
       "est_minutes": 40,
-      "finished_at": null,
+      "finished_at": "2026-05-05T03:50:40+00:00",
       "notes": "src: adversarial-reviewer 2026-05-05 | files: 06-cierre/04-versiones-cortas-defensa.md:118,06-cierre/04-versiones-cortas-defensa.md:27,09-simulaciones-edi/30_caso_behavioral/outputs/metrics.json | acceptance: Tabla con p-values Holm-corregidos para los 30 casos; relato caso 30 reescrito si no sobrevive; bandera valid=False documentada en glosario o eliminada con justificación"
     },
     {
       "id": "AU-8-1500-fp-totem",
-      "status": "pending",
+      "status": "in_progress",
       "kind": "science-audit",
       "priority": 2,
       "subject": "'0/1500 falsos positivos' repetido 5× sin script regenerador documentado — patrón totem CLAUDE.md §1",
@@ -551,7 +551,7 @@
         "06-cierre/05-respuestas-tipo-defensa.md:61"
       ],
       "acceptance": "Comando regenerador con seed/hash citado en una nota al pie; verificación bit-a-bit; reducir 5 ocurrencias literales a 1 con cita interna",
-      "started_at": null,
+      "started_at": "2026-05-05T04:00:35+00:00",
       "result": null,
       "est_minutes": 40,
       "finished_at": null,
@@ -559,7 +559,7 @@
     },
     {
       "id": "AU-9-edi-negativo-no-es-null",
-      "status": "pending",
+      "status": "done",
       "kind": "science-audit",
       "priority": 0,
       "subject": "Casos 23/07/08/29 con EDI<<0 (≤-0.876) listados como 'null genuino' — son fallos catastróficos del modelo, categoría inventada para que el conteo encaje",
@@ -570,15 +570,15 @@
         "05-aplicaciones/07-mapa-aplicaciones-corpus.md:31"
       ],
       "acceptance": "Taxonomía separa 'null genuino |EDI|<0.05' de 'fallo modelo EDI<<0'; conteos actualizados en 3 loci; análisis de por qué falla la sonda en cada caso",
-      "started_at": null,
-      "result": null,
+      "started_at": "2026-05-05T03:55:10+00:00",
+      "result": "5 nulls genuinos + 1 fallo sonda + 2 rechazos C1-C5",
       "est_minutes": 40,
-      "finished_at": null,
+      "finished_at": "2026-05-05T03:56:52+00:00",
       "notes": "src: adversarial-reviewer 2026-05-05 | files: 06-cierre/04-versiones-cortas-defensa.md:110,06-cierre/01-conclusion-demostrativa.md:55,05-aplicaciones/07-mapa-aplicaciones-corpus.md:31 | acceptance: Taxonomía separa 'null genuino |EDI|<0.05' de 'fallo modelo EDI<<0'; conteos actualizados en 3 loci; análisis de por qué falla la sonda en cada caso"
     },
     {
       "id": "F02-01-woodward-pendiente-ocr",
-      "status": "in_progress",
+      "status": "done",
       "kind": "science-audit",
       "priority": 0,
       "subject": "Woodward 2003 p.59 declarada pendiente OCR sostiene postura causal — paginación dudosa",
@@ -589,14 +589,14 @@
       ],
       "acceptance": "Cita verbatim verificada contra PDF Oxford de Woodward 2003 (definición M en pp.98-99 cap.2 §2.4) o párrafo reescrito sin pretender cita literal",
       "started_at": "2026-05-05T03:45:12+00:00",
-      "result": null,
+      "result": "needs_human: OCR no disponible; 2 rutas propuestas",
       "est_minutes": 40,
-      "finished_at": null,
+      "finished_at": "2026-05-05T03:49:15+00:00",
       "notes": "src: adversarial-reviewer cap02 2026-05-05 | files: 02-fundamentos/05-temporalidad-y-causalidad.md:48,02-fundamentos/05-temporalidad-y-causalidad.md:89 | acceptance: Cita verbatim verificada contra PDF Oxford de Woodward 2003 (definición M en pp.98-99 cap.2 §2.4) o párrafo reescrito sin pretender cita literal"
     },
     {
       "id": "F02-02-craver-mediado-via-criticos",
-      "status": "pending",
+      "status": "done",
       "kind": "science-audit",
       "priority": 0,
       "subject": "Cita Craver 2007 p.153 mediada por Romero 2015 + Baumgartner-Gebharter 2016 que precisamente refutan mutual manipulability",
@@ -605,15 +605,15 @@
         "02-fundamentos/05-temporalidad-y-causalidad.md:92"
       ],
       "acceptance": "PDF Craver 2007 verificado p.152-153 + párrafo nuevo en §2.4 que responde a Baumgartner-Gebharter 2016 sobre fat-handedness en ablación EDI",
-      "started_at": null,
-      "result": null,
+      "started_at": "2026-05-05T03:49:15+00:00",
+      "result": "needs_human: PDFs ausentes + §2.4.5 requiere firma Jacob",
       "est_minutes": 40,
-      "finished_at": null,
+      "finished_at": "2026-05-05T03:50:45+00:00",
       "notes": "src: adversarial-reviewer cap02 2026-05-05 | files: 02-fundamentos/05-temporalidad-y-causalidad.md:92 | acceptance: PDF Craver 2007 verificado p.152-153 + párrafo nuevo en §2.4 que responde a Baumgartner-Gebharter 2016 sobre fat-handedness en ablación EDI"
     },
     {
       "id": "F02-03-strawson-1959-individuation",
-      "status": "pending",
+      "status": "done",
       "kind": "science-audit",
       "priority": 1,
       "subject": "Strawson 1959 citado decorativamente — la tesis de personas como tipo lógico primitivo (cap.3) se colapsa a re-identificación corporal",
@@ -622,15 +622,15 @@
         "02-fundamentos/03-categorias-objetos-propiedades-e-identidad.md:202"
       ],
       "acceptance": "Cita Strawson 1959 cap.3 §Persons con paginación verificada + respuesta a circularidad de individuación de Lowe 1998 cap.6",
-      "started_at": null,
-      "result": null,
+      "started_at": "2026-05-05T03:47:28+00:00",
+      "result": "needs_human + fetch-biblio (Strawson/Lowe ausentes)",
       "est_minutes": 40,
-      "finished_at": null,
+      "finished_at": "2026-05-05T03:49:15+00:00",
       "notes": "src: adversarial-reviewer cap02 2026-05-05 | files: 02-fundamentos/03-categorias-objetos-propiedades-e-identidad.md:202 | acceptance: Cita Strawson 1959 cap.3 §Persons con paginación verificada + respuesta a circularidad de individuación de Lowe 1998 cap.6"
     },
     {
       "id": "F02-04-maturana-haken-tension",
-      "status": "pending",
+      "status": "done",
       "kind": "science-audit",
       "priority": 1,
       "subject": "Self-organization invoca Maturana-Varela + Haken como doble base sin reconocer que son tradiciones incompatibles (Thompson 2007 cap.5)",
@@ -640,15 +640,15 @@
         "02-fundamentos/04-anclaje-conductual-ecologico.md"
       ],
       "acceptance": "Párrafo ≤200 palabras en cap 02-04 §4 que reconoce y responde la tensión autopoiesis vs slaving principle; cap 02-01 §9 con anchor a esa discusión",
-      "started_at": null,
-      "result": null,
+      "started_at": "2026-05-05T03:47:33+00:00",
+      "result": "draft + needs_human Jacob + fetch Thompson 2007",
       "est_minutes": 40,
-      "finished_at": null,
+      "finished_at": "2026-05-05T03:49:30+00:00",
       "notes": "src: adversarial-reviewer cap02 2026-05-05 | files: 02-fundamentos/01-ontologia-material-relacional.md:339,02-fundamentos/04-anclaje-conductual-ecologico.md | acceptance: Párrafo ≤200 palabras en cap 02-04 §4 que reconoce y responde la tensión autopoiesis vs slaving principle; cap 02-01 §9 con anchor a esa discusión"
     },
     {
       "id": "F02-05-brandom-pagina-incorrecta",
-      "status": "pending",
+      "status": "done",
       "kind": "science-audit",
       "priority": 1,
       "subject": "Brandom 1994 cap.3 p.89 — el cap.3 va de pp.141-198 (página fuera de rango); además inferencialismo brandomiano contradice homomorfismo material defendido en §3.5.3",
@@ -657,15 +657,15 @@
         "02-fundamentos/02-epistemologia-de-la-compresion.md:72"
       ],
       "acceptance": "Paginación corregida o cita removida + declaración explícita de cuál tesis brandomiana se importa (expresivismo cap.5 vs inferencialismo material cap.8)",
-      "started_at": null,
-      "result": null,
+      "started_at": "2026-05-05T03:47:39+00:00",
+      "result": "needs_human: 3 opciones, PDF Brandom ausente",
       "est_minutes": 40,
-      "finished_at": null,
+      "finished_at": "2026-05-05T03:48:44+00:00",
       "notes": "src: adversarial-reviewer cap02 2026-05-05 | files: 02-fundamentos/02-epistemologia-de-la-compresion.md:72 | acceptance: Paginación corregida o cita removida + declaración explícita de cuál tesis brandomiana se importa (expresivismo cap.5 vs inferencialismo material cap.8)"
     },
     {
       "id": "F02-06-gibson-warren-elision",
-      "status": "pending",
+      "status": "done",
       "kind": "science-audit",
       "priority": 1,
       "subject": "Anclaje ecológico salta de Gibson directo a Warren — omite 25 años de programación dinamicista (Turvey-Shaw 1981, Turvey 1992, Kugler-Turvey 1987)",
@@ -674,15 +674,15 @@
         "02-fundamentos/04-anclaje-conductual-ecologico.md:207"
       ],
       "acceptance": "§10.1.bis con cita paginada de Turvey 1992 Ecological Psychology 4:173-187 o Kugler-Turvey 1987; declaración honesta de qué se toma de cada uno",
-      "started_at": null,
-      "result": null,
+      "started_at": "2026-05-05T03:49:30+00:00",
+      "result": "needs_human: faltan PDFs Turvey/Kugler",
       "est_minutes": 40,
-      "finished_at": null,
+      "finished_at": "2026-05-05T03:50:45+00:00",
       "notes": "src: adversarial-reviewer cap02 2026-05-05 | files: 02-fundamentos/04-anclaje-conductual-ecologico.md:207 | acceptance: §10.1.bis con cita paginada de Turvey 1992 Ecological Psychology 4:173-187 o Kugler-Turvey 1987; declaración honesta de qué se toma de cada uno"
     },
     {
       "id": "F02-07-kappa-sin-mdl-solomonoff",
-      "status": "pending",
+      "status": "done",
       "kind": "science-audit",
       "priority": 1,
       "subject": "Compresión κ presentada como innovación pero núcleo formal precedido por Solomonoff 1964, Kolmogorov 1965, Rissanen 1978 MDL — no citados",
@@ -691,15 +691,15 @@
         "02-fundamentos/02-epistemologia-de-la-compresion.md:46"
       ],
       "acceptance": "§3.4 nuevo κ y la tradición Kolmogorov-MDL con cita paginada Rissanen 1978 Automatica 14:465-471 + Grünwald 2007 cap.1; delimitación honesta del aporte",
-      "started_at": null,
-      "result": null,
+      "started_at": "2026-05-05T03:48:44+00:00",
+      "result": "needs_human: paginación MDL + firma Jacob §3.4",
       "est_minutes": 40,
-      "finished_at": null,
+      "finished_at": "2026-05-05T03:51:31+00:00",
       "notes": "src: adversarial-reviewer cap02 2026-05-05 | files: 02-fundamentos/02-epistemologia-de-la-compresion.md:46 | acceptance: §3.4 nuevo κ y la tradición Kolmogorov-MDL con cita paginada Rissanen 1978 Automatica 14:465-471 + Grünwald 2007 cap.1; delimitación honesta del aporte"
     },
     {
       "id": "F02-08-searle-1964-sin-hare",
-      "status": "pending",
+      "status": "done",
       "kind": "science-audit",
       "priority": 1,
       "subject": "Naturalismo ético cita Searle 1964 Is-Ought sin abordar refutación de Hare 1964 ni respuesta de Korsgaard 1996 sobre residuo normativo",
@@ -708,15 +708,15 @@
         "02-fundamentos/06-dimension-normativa-y-etica.md:56"
       ],
       "acceptance": "Párrafo en §4 con cita paginada Korsgaard 1996 Sources of Normativity Lecture 1 pp.7-48 reconociendo el residuo normativo no respondido por la salida constitutiva",
-      "started_at": null,
-      "result": null,
+      "started_at": "2026-05-05T03:48:09+00:00",
+      "result": "needs_human + needs_biblio Hare1964/Korsgaard1996",
       "est_minutes": 40,
-      "finished_at": null,
+      "finished_at": "2026-05-05T03:49:04+00:00",
       "notes": "src: adversarial-reviewer cap02 2026-05-05 | files: 02-fundamentos/06-dimension-normativa-y-etica.md:56 | acceptance: Párrafo en §4 con cita paginada Korsgaard 1996 Sources of Normativity Lecture 1 pp.7-48 reconociendo el residuo normativo no respondido por la salida constitutiva"
     },
     {
       "id": "F02-09-bunge-cesm-no-declarado",
-      "status": "pending",
+      "status": "done",
       "kind": "science-audit",
       "priority": 2,
       "subject": "Slogan bungeano 'to be is to be a system' importado sin declarar costo CESM (composición-entorno-estructura-mecanismo)",
@@ -725,15 +725,15 @@
         "02-fundamentos/01-ontologia-material-relacional.md:189"
       ],
       "acceptance": "Párrafo en §1.3 declarando explícitamente qué se toma del slogan y qué no se asume de CESM Bunge 1977 cap.3 pp.110-120",
-      "started_at": null,
-      "result": null,
+      "started_at": "2026-05-05T03:51:52+00:00",
+      "result": "needs_human; draft propuesto, paginación Bunge pendiente",
       "est_minutes": 40,
-      "finished_at": null,
+      "finished_at": "2026-05-05T03:53:18+00:00",
       "notes": "src: adversarial-reviewer cap02 2026-05-05 | files: 02-fundamentos/01-ontologia-material-relacional.md:189 | acceptance: Párrafo en §1.3 declarando explícitamente qué se toma del slogan y qué no se asume de CESM Bunge 1977 cap.3 pp.110-120"
     },
     {
       "id": "F02-10-realismo-estructural-doble-rotulo",
-      "status": "pending",
+      "status": "done",
       "kind": "science-audit",
       "priority": 2,
       "subject": "Cap 02-02 usa 'realismo estructural moderado' (§6) y 'realismo estructural representacional' (§3.5.3) sin distinguirlos — duplica B-F2",
@@ -743,15 +743,15 @@
         "02-fundamentos/02-epistemologia-de-la-compresion.md:93"
       ],
       "acceptance": "Un único rótulo en cap 02-02 + entrada glosario que distingue los dos si se mantienen ambos; 0 ocurrencias del no-canónico",
-      "started_at": null,
-      "result": null,
+      "started_at": "2026-05-05T03:51:57+00:00",
+      "result": "doble rótulo confirmado; needs_human Jacob elige A/B/C",
       "est_minutes": 40,
-      "finished_at": null,
+      "finished_at": "2026-05-05T03:53:18+00:00",
       "notes": "src: adversarial-reviewer cap02 2026-05-05 | files: 02-fundamentos/02-epistemologia-de-la-compresion.md:154,02-fundamentos/02-epistemologia-de-la-compresion.md:93 | acceptance: Un único rótulo en cap 02-02 + entrada glosario que distingue los dos si se mantienen ambos; 0 ocurrencias del no-canónico"
     },
     {
       "id": "F02-11-bateson-dretske-incompatibles",
-      "status": "pending",
+      "status": "done",
       "kind": "science-audit",
       "priority": 2,
       "subject": "Síntesis Bateson + Dretske declarada como combinación pero las tradiciones se contradicen (Adams 2003 sobre informational turn)",
@@ -761,15 +761,15 @@
         "02-fundamentos/04-anclaje-conductual-ecologico.md:67"
       ],
       "acceptance": "§2.3.0 reescrito sin verbo 'combina' o tensión declarada y resuelta con argumento; declarar primaria Gibson-Dretske operativa",
-      "started_at": null,
-      "result": null,
+      "started_at": "2026-05-05T03:52:02+00:00",
+      "result": "needs_human: degradación Bateson requiere firma Jacob",
       "est_minutes": 40,
-      "finished_at": null,
+      "finished_at": "2026-05-05T03:53:23+00:00",
       "notes": "src: adversarial-reviewer cap02 2026-05-05 | files: 02-fundamentos/04-anclaje-conductual-ecologico.md:54,02-fundamentos/04-anclaje-conductual-ecologico.md:67 | acceptance: §2.3.0 reescrito sin verbo 'combina' o tensión declarada y resuelta con argumento; declarar primaria Gibson-Dretske operativa"
     },
     {
       "id": "F02-12-st-t13-trivializacion",
-      "status": "pending",
+      "status": "done",
       "kind": "science-audit",
       "priority": 1,
       "subject": "Suite ST T13 'neutraliza' Kim por modus tollens vacuo — toda implicación con antecedente falso es vacuamente verdadera, no neutraliza",
@@ -778,15 +778,15 @@
         "02-fundamentos/05-temporalidad-y-causalidad.md:116"
       ],
       "acceptance": "§2.4.4 reescrito sin término 'neutralizado' + respuesta explícita a Kim 2005 cap.2 sobre riesgo epifenomenista de salida constitutiva",
-      "started_at": null,
-      "result": null,
+      "started_at": "2026-05-05T03:50:46+00:00",
+      "result": "needs_human; vacuidad ≠ neutralización; salida constitutiva = riesgo Kim",
       "est_minutes": 40,
-      "finished_at": null,
+      "finished_at": "2026-05-05T03:52:02+00:00",
       "notes": "src: adversarial-reviewer cap02 2026-05-05 | files: 02-fundamentos/05-temporalidad-y-causalidad.md:116 | acceptance: §2.4.4 reescrito sin término 'neutralizado' + respuesta explícita a Kim 2005 cap.2 sobre riesgo epifenomenista de salida constitutiva"
     },
     {
       "id": "F02-13-quantum-compromiso-oculto",
-      "status": "pending",
+      "status": "done",
       "kind": "science-audit",
       "priority": 2,
       "subject": "'Compatible con familia realista QM sin decidir' es evasión — caso 31 (decoherencia+einselection) ya está comprometido a everettiano operacional (Wallace 2012)",
@@ -795,15 +795,15 @@
         "02-fundamentos/01-ontologia-material-relacional.md:390"
       ],
       "acceptance": "Párrafo §13.1 declarando compromiso interpretativo efectivo + cita paginada Wallace 2012 Emergent Multiverse cap.2; reconocer que Bohm/GRW exigirían modificación",
-      "started_at": null,
-      "result": null,
+      "started_at": "2026-05-05T03:53:18+00:00",
+      "result": "needs_human: fetch Wallace 2012 + firma H-J Jacob",
       "est_minutes": 40,
-      "finished_at": null,
+      "finished_at": "2026-05-05T03:54:55+00:00",
       "notes": "src: adversarial-reviewer cap02 2026-05-05 | files: 02-fundamentos/01-ontologia-material-relacional.md:390 | acceptance: Párrafo §13.1 declarando compromiso interpretativo efectivo + cita paginada Wallace 2012 Emergent Multiverse cap.2; reconocer que Bohm/GRW exigirían modificación"
     },
     {
       "id": "F02-14-numeracion-tablas-doble",
-      "status": "pending",
+      "status": "done",
       "kind": "science-audit",
       "priority": 2,
       "subject": "Tablas 2.1.5/2.1.6 con numeración duplicada e inconsistente — number_tables.py no se ejecutó",
@@ -813,15 +813,15 @@
         "02-fundamentos/01-ontologia-material-relacional.md:228"
       ],
       "acceptance": "Ejecutar scripts/number_tables.py; 0 tablas con doble encabezado; numeración monótona en cap 02-01",
-      "started_at": null,
-      "result": null,
+      "started_at": "2026-05-05T03:54:55+00:00",
+      "result": "bug regex fix + dedup; 6 labels monotónicos 2.1.1→2.1.6",
       "est_minutes": 40,
-      "finished_at": null,
+      "finished_at": "2026-05-05T03:57:58+00:00",
       "notes": "src: adversarial-reviewer cap02 2026-05-05 | files: 02-fundamentos/01-ontologia-material-relacional.md:23,02-fundamentos/01-ontologia-material-relacional.md:228 | acceptance: Ejecutar scripts/number_tables.py; 0 tablas con doble encabezado; numeración monótona en cap 02-01"
     },
     {
       "id": "F02-15-panpsiquismo-russelliano-caricaturizado",
-      "status": "pending",
+      "status": "done",
       "kind": "science-audit",
       "priority": 2,
       "subject": "Panpsiquismo russelliano (Strawson 2006, Goff 2017) reducido a 'experiencia de partículas' — la tesis defiende disposiciones relacionales sin fundamento categórico",
@@ -830,15 +830,15 @@
         "02-fundamentos/01-ontologia-material-relacional.md:33"
       ],
       "acceptance": "Tabla 2.1.1 reescrita verificable contra Goff 2017 cap.6 (categoricidad/disposicionalidad); ≤2 líneas + anchor a cap 04-debates §4 (H-J6)",
-      "started_at": null,
-      "result": null,
+      "started_at": "2026-05-05T03:57:58+00:00",
+      "result": "needs_human H-J6: edicion lista, falta firma Jacob + Goff PDF",
       "est_minutes": 40,
-      "finished_at": null,
+      "finished_at": "2026-05-05T03:59:24+00:00",
       "notes": "src: adversarial-reviewer cap02 2026-05-05 | files: 02-fundamentos/01-ontologia-material-relacional.md:33 | acceptance: Tabla 2.1.1 reescrita verificable contra Goff 2017 cap.6 (categoricidad/disposicionalidad); ≤2 líneas + anchor a cap 04-debates §4 (H-J6)"
     },
     {
       "id": "F03-01-kappa-bicondicional-criterio-d-inverificable",
-      "status": "pending",
+      "status": "done",
       "kind": "science-audit",
       "priority": 1,
       "subject": "κ legitimidad 'sii' incluye criterio (d) 'no oculta transición' inverificable sin oráculo (Glymour bootstrap problem)",
@@ -848,15 +848,15 @@
         "03-formalizacion/04-operacionalizacion-de-kappa.md:9"
       ],
       "acceptance": "Línea 149 reescrita: bicondicional reemplazado por 'legítima si (a)∧(b)∧(c) bajo Q vigente; sujeta a retiro si nuevos datos exhiben transición no capturada'",
-      "started_at": null,
-      "result": null,
+      "started_at": "2026-05-05T03:48:14+00:00",
+      "result": "needs_human, draft listo",
       "est_minutes": 40,
-      "finished_at": null,
+      "finished_at": "2026-05-05T03:49:30+00:00",
       "notes": "src: adversarial-reviewer cap03 2026-05-05 | files: 03-formalizacion/01-aparato-formal.md:149,03-formalizacion/04-operacionalizacion-de-kappa.md:9 | acceptance: Línea 149 reescrita: bicondicional reemplazado por 'legítima si (a)∧(b)∧(c) bajo Q vigente; sujeta a retiro si nuevos datos exhiben transición no capturada'"
     },
     {
       "id": "F03-02-fidelidad-circular-duhem-quine",
-      "status": "pending",
+      "status": "done",
       "kind": "science-audit",
       "priority": 1,
       "subject": "Criterio fidelidad 'diferencia inferencial inesperada' es relativa al modelo mismo — Duhem-Quine evade falsación si no se pre-registra banda predictiva",
@@ -865,15 +865,15 @@
         "03-formalizacion/02-criterios-de-legitimidad-y-metodo.md:25"
       ],
       "acceptance": "Dossier §10 (Intervención discriminante) requiere banda predictiva pre-registrada con τ explícita antes de la prueba interventiva",
-      "started_at": null,
-      "result": null,
+      "started_at": "2026-05-05T03:49:05+00:00",
+      "result": "objeción válida; edición propuesta needs_human",
       "est_minutes": 40,
-      "finished_at": null,
+      "finished_at": "2026-05-05T03:50:15+00:00",
       "notes": "src: adversarial-reviewer cap03 2026-05-05 | files: 03-formalizacion/02-criterios-de-legitimidad-y-metodo.md:25 | acceptance: Dossier §10 (Intervención discriminante) requiere banda predictiva pre-registrada con τ explícita antes de la prueba interventiva"
     },
     {
       "id": "F03-03-dossier-tautologico-sin-rubrica",
-      "status": "pending",
+      "status": "done",
       "kind": "science-audit",
       "priority": 1,
       "subject": "Dossier 14-componentes sin rúbrica cuantitativa — 'contenido sustantivo' es juicio del autor (Hempel criterion of empirical significance)",
@@ -883,15 +883,15 @@
         "03-formalizacion/02-criterios-de-legitimidad-y-metodo.md:82"
       ],
       "acceptance": "Tabla nueva en cap 03-02 §4 con rúbrica 0/1/2 explícita por criterio (umbrales justificados por dominio); reevaluación caso ancla con rúbrica nueva",
-      "started_at": null,
-      "result": null,
+      "started_at": "2026-05-05T03:50:15+00:00",
+      "result": "rubrica esqueleto+caso ancla needs_human",
       "est_minutes": 40,
-      "finished_at": null,
+      "finished_at": "2026-05-05T03:51:41+00:00",
       "notes": "src: adversarial-reviewer cap03 2026-05-05 | files: 03-formalizacion/02-criterios-de-legitimidad-y-metodo.md:6,03-formalizacion/02-criterios-de-legitimidad-y-metodo.md:82 | acceptance: Tabla nueva en cap 03-02 §4 con rúbrica 0/1/2 explícita por criterio (umbrales justificados por dominio); reevaluación caso ancla con rúbrica nueva"
     },
     {
       "id": "F03-04-traduccion-b-l3-sin-criterio",
-      "status": "in_progress",
+      "status": "done",
       "kind": "science-audit",
       "priority": 0,
       "subject": "Traducción B↔L3 admite trampa: parámetro k_g=7.50 nombrado 'biomecánico' sin medición independiente cuenta como traducido (Frigg-Hartmann SEP §2.4)",
@@ -902,14 +902,14 @@
       ],
       "acceptance": "Patología 3 reescrita: traducción admisible = procedimiento de medición independiente en B sin usar ajuste L3; Tabla 3.7.4 con columna 'valor medido independientemente'",
       "started_at": "2026-05-05T03:45:12+00:00",
-      "result": null,
+      "result": "objeción válida; 4 ediciones DRAFT-AI; needs_human Jacob",
       "est_minutes": 40,
-      "finished_at": null,
+      "finished_at": "2026-05-05T03:47:28+00:00",
       "notes": "src: adversarial-reviewer cap03 2026-05-05 | files: 03-formalizacion/04-operacionalizacion-de-kappa.md:106,03-formalizacion/02-criterios-de-legitimidad-y-metodo.md:94 | acceptance: Patología 3 reescrita: traducción admisible = procedimiento de medición independiente en B sin usar ajuste L3; Tabla 3.7.4 con columna 'valor medido independientemente'"
     },
     {
       "id": "F03-05-asimetria-existencial-trivial",
-      "status": "in_progress",
+      "status": "done",
       "kind": "science-audit",
       "priority": 0,
       "subject": "Asimetría L1↔B↔L3↔S debilitada de ∀ a ∃ — existencial es trivial y compatible con rivales (Lakatos monster-barring)",
@@ -919,14 +919,14 @@
       ],
       "acceptance": "Cap 03-08 §ST-1 amplía nota con costo argumentativo paso ∀→∃: la tesis afirma 'mejor recorte por defecto' no axioma universal; documentar categorías que violan el orden",
       "started_at": "2026-05-05T03:45:13+00:00",
-      "result": null,
+      "result": "needs_human: edición propuesta espera firma Jacob",
       "est_minutes": 40,
-      "finished_at": null,
+      "finished_at": "2026-05-05T03:47:38+00:00",
       "notes": "src: adversarial-reviewer cap03 2026-05-05 | files: 03-formalizacion/08-validacion-logica-st.md:21 | acceptance: Cap 03-08 §ST-1 amplía nota con costo argumentativo paso ∀→∃: la tesis afirma 'mejor recorte por defecto' no axioma universal; documentar categorías que violan el orden"
     },
     {
       "id": "F03-06-kelso-1995-condiciones-no-medidas",
-      "status": "pending",
+      "status": "done",
       "kind": "science-audit",
       "priority": 2,
       "subject": "Cita Kelso 1995 p.73 sobre 'phase transition' importa vocabulario sin condiciones operativas (critical slowing down, hysteresis) — no medidas en VENLab",
@@ -935,15 +935,15 @@
         "03-formalizacion/01-aparato-formal.md:266"
       ],
       "acceptance": "Cita verificada contra PDF Kelso 1995 + sub-sección 'qué del programa Kelso adoptamos y qué no' declarando los tres signos kelsoianos medidos vs no-medidos en caso ancla",
-      "started_at": null,
-      "result": null,
+      "started_at": "2026-05-05T03:52:07+00:00",
+      "result": "needs_human+needs_biblio; PDF Kelso ausente, edición DRAFT-AI propuesta",
       "est_minutes": 40,
-      "finished_at": null,
+      "finished_at": "2026-05-05T03:53:08+00:00",
       "notes": "src: adversarial-reviewer cap03 2026-05-05 | files: 03-formalizacion/01-aparato-formal.md:266 | acceptance: Cita verificada contra PDF Kelso 1995 + sub-sección 'qué del programa Kelso adoptamos y qué no' declarando los tres signos kelsoianos medidos vs no-medidos en caso ancla"
     },
     {
       "id": "F03-07-ladyman-ross-falsa-convergencia",
-      "status": "pending",
+      "status": "done",
       "kind": "science-audit",
       "priority": 1,
       "subject": "Ladyman-Ross OSR presentado como 'convergencia parcial' cuando la tesis explícitamente lo rechaza (glosario) — debería ser discrepancia fundamental",
@@ -953,15 +953,15 @@
         "03-formalizacion/03-auditoria-ontologica-y-diseno-de-investigacion.md:254"
       ],
       "acceptance": "§12.2 reescrita como discrepancia con OSR (no convergencia); cita L&R 2007 p.130 verbatim sobre 'identity conditions exhausted by nomological role'; replicar en cap 03-03 §10.5",
-      "started_at": null,
-      "result": null,
+      "started_at": "2026-05-05T03:49:30+00:00",
+      "result": "needs_human: reescritura §12.2 y §10.5 lista para firma Jacob",
       "est_minutes": 40,
-      "finished_at": null,
+      "finished_at": "2026-05-05T03:51:06+00:00",
       "notes": "src: adversarial-reviewer cap03 2026-05-05 | files: 03-formalizacion/01-aparato-formal.md:260,03-formalizacion/03-auditoria-ontologica-y-diseno-de-investigacion.md:254 | acceptance: §12.2 reescrita como discrepancia con OSR (no convergencia); cita L&R 2007 p.130 verbatim sobre 'identity conditions exhausted by nomological role'; replicar en cap 03-03 §10.5"
     },
     {
       "id": "F03-08-do-test-confundido-con-ablacion",
-      "status": "in_progress",
+      "status": "done",
       "kind": "science-audit",
       "priority": 0,
       "subject": "'do-test pearliano' invocado para admisión de aristas pero el grafo de los 30 casos macro se construye por correlación condicional, no intervención (Pearl 2009 p.23)",
@@ -972,14 +972,14 @@
       ],
       "acceptance": "§4.3 y §12.1 reescritas declarando 'do-test del aparato es ablación de modelo, no intervención sobre sistema real (excepto VENLab)'; tabla 3.6.2 actualizada",
       "started_at": "2026-05-05T03:45:13+00:00",
-      "result": null,
+      "result": "needs_human, propuesta §4.3/§12.1/T3.6.2",
       "est_minutes": 40,
-      "finished_at": null,
+      "finished_at": "2026-05-05T03:48:09+00:00",
       "notes": "src: adversarial-reviewer cap03 2026-05-05 | files: 03-formalizacion/01-aparato-formal.md:96,03-formalizacion/06-mapa-operadores-formales.md:138 | acceptance: §4.3 y §12.1 reescritas declarando 'do-test del aparato es ablación de modelo, no intervención sobre sistema real (excepto VENLab)'; tabla 3.6.2 actualizada"
     },
     {
       "id": "F03-09-dimensionalidad-sin-protocolo",
-      "status": "pending",
+      "status": "done",
       "kind": "science-audit",
       "priority": 1,
       "subject": "Paso 3 κ admite PCA/Grassberger-Procaccia/NN sin criterio de elección — selección post-hoc del método más conveniente (Camastra-Staiano 2016, Simmons et al. 2011)",
@@ -988,15 +988,15 @@
         "03-formalizacion/04-operacionalizacion-de-kappa.md:36"
       ],
       "acceptance": "Paso 3 reescrito: aplicar los tres métodos, reportar valores con CI, admisión requiere acuerdo cualitativo entre ≥2; tabla por caso d_PCA, d_GP, d_NN",
-      "started_at": null,
-      "result": null,
+      "started_at": "2026-05-05T03:49:40+00:00",
+      "result": "needs_human; borrador triple-estimador",
       "est_minutes": 40,
-      "finished_at": null,
+      "finished_at": "2026-05-05T03:51:01+00:00",
       "notes": "src: adversarial-reviewer cap03 2026-05-05 | files: 03-formalizacion/04-operacionalizacion-de-kappa.md:36 | acceptance: Paso 3 reescrito: aplicar los tres métodos, reportar valores con CI, admisión requiere acuerdo cualitativo entre ≥2; tabla por caso d_PCA, d_GP, d_NN"
     },
     {
       "id": "F03-10-caso30-sintetico-circularidad-parcial",
-      "status": "pending",
+      "status": "done",
       "kind": "science-audit",
       "priority": 1,
       "subject": "Caso 30 sintético con ODE Fajen-Warren completa + sonda EDI con misma forma funcional — circularidad parcial (Forster-Sober 1994)",
@@ -1006,15 +1006,15 @@
         "09-simulaciones-edi/30_caso_behavioral/case_config.json"
       ],
       "acceptance": "Re-ejecutar caso 30 con sonda alternativa estructuralmente distinta (neural ODE/MLP/GP); metrics.json incluye edi_alt_probe; declaración honesta de la diferencia",
-      "started_at": null,
-      "result": null,
+      "started_at": "2026-05-05T03:49:15+00:00",
+      "result": "needs_human B-T sonda alt",
       "est_minutes": 40,
-      "finished_at": null,
+      "finished_at": "2026-05-05T03:50:45+00:00",
       "notes": "src: adversarial-reviewer cap03 2026-05-05 | files: 03-formalizacion/05-etica-y-gobernanza-de-datos.md:55,09-simulaciones-edi/30_caso_behavioral/case_config.json | acceptance: Re-ejecutar caso 30 con sonda alternativa estructuralmente distinta (neural ODE/MLP/GP); metrics.json incluye edi_alt_probe; declaración honesta de la diferencia"
     },
     {
       "id": "F03-11-replicabilidad-no-testada",
-      "status": "pending",
+      "status": "done",
       "kind": "science-audit",
       "priority": 1,
       "subject": "Auditoría ontológica afirma 'reproducible por tercero competente' pero nunca aplicada por tercero independiente — auto-replicación con seed≠replicación (Collins 1985)",
@@ -1023,15 +1023,15 @@
         "03-formalizacion/03-auditoria-ontologica-y-diseno-de-investigacion.md:6"
       ],
       "acceptance": "§1 reescrita: protocolo construido para admitir replicación por tercero; replicación externa es deuda fechada; nueva entrada H-J* para gestión de replicación externa de ≥1 caso",
-      "started_at": null,
-      "result": null,
+      "started_at": "2026-05-05T03:51:06+00:00",
+      "result": "needs_human: reescritura §1 + H-J* replicación externa",
       "est_minutes": 40,
-      "finished_at": null,
+      "finished_at": "2026-05-05T03:51:57+00:00",
       "notes": "src: adversarial-reviewer cap03 2026-05-05 | files: 03-formalizacion/03-auditoria-ontologica-y-diseno-de-investigacion.md:6 | acceptance: §1 reescrita: protocolo construido para admitir replicación por tercero; replicación externa es deuda fechada; nueva entrada H-J* para gestión de replicación externa de ≥1 caso"
     },
     {
       "id": "F03-12-bunge-criterios-reemplazo-no-extension",
-      "status": "pending",
+      "status": "done",
       "kind": "science-audit",
       "priority": 2,
       "subject": "Bunge 1967 vol.2 p.32 invocado: lista 6 criterios, la tesis tiene 10 que reemplazan (no extienden) — falsabilidad y compatibilidad desplazadas",
@@ -1040,10 +1040,10 @@
         "03-formalizacion/02-criterios-de-legitimidad-y-metodo.md:230"
       ],
       "acceptance": "§11.1 reescrita: 'los 10 criterios sustituyen no extienden la lista bungeana — desplazan falsabilidad y compatibilidad por anclaje material y reversibilidad con justificación' o lista ampliada a 12",
-      "started_at": null,
-      "result": null,
+      "started_at": "2026-05-05T03:52:32+00:00",
+      "result": "mapeo confirma sustitución; cita p.32 needs_human",
       "est_minutes": 40,
-      "finished_at": null,
+      "finished_at": "2026-05-05T03:55:00+00:00",
       "notes": "src: adversarial-reviewer cap03 2026-05-05 | files: 03-formalizacion/02-criterios-de-legitimidad-y-metodo.md:230 | acceptance: §11.1 reescrita: 'los 10 criterios sustituyen no extienden la lista bungeana — desplazan falsabilidad y compatibilidad por anclaje material y reversibilidad con justificación' o lista ampliada a 12"
     },
     {
@@ -1065,7 +1065,7 @@
     },
     {
       "id": "F05-02-yo-sin-damasio-ledoux",
-      "status": "pending",
+      "status": "done",
       "kind": "science-audit",
       "priority": 1,
       "subject": "Caso 'yo' sin Damasio 1999 (proto/core/autobiographical), LeDoux 2002, Botvinick-Cohen 1998 RHI — atractor sin discriminar contra taxonomías neurales",
@@ -1074,15 +1074,15 @@
         "05-aplicaciones/01-mente-memoria-yo.md:114"
       ],
       "acceptance": "§3.5 incluye discusión paginada de ≥2 fuentes (Damasio o LeDoux + Botvinick/Tsakiris RHI) mostrando cómo difiere o converge la cuenca",
-      "started_at": null,
-      "result": null,
+      "started_at": "2026-05-05T03:50:10+00:00",
+      "result": "needs_human; fuentes ausentes en biblio local; 2 rutas",
       "est_minutes": 40,
-      "finished_at": null,
+      "finished_at": "2026-05-05T03:51:21+00:00",
       "notes": "src: adversarial-reviewer cap05 2026-05-05 | files: 05-aplicaciones/01-mente-memoria-yo.md:114 | acceptance: §3.5 incluye discusión paginada de ≥2 fuentes (Damasio o LeDoux + Botvinick/Tsakiris RHI) mostrando cómo difiere o converge la cuenca"
     },
     {
       "id": "F05-03-block-access-vs-phenomenal",
-      "status": "pending",
+      "status": "done",
       "kind": "science-audit",
       "priority": 1,
       "subject": "Block 1995 access vs phenomenal omitido en sección qualia — distinción técnica que organiza la disputa hace 30 años",
@@ -1091,15 +1091,15 @@
         "05-aplicaciones/01-mente-memoria-yo.md:216"
       ],
       "acceptance": "§7.1 cita textual Block 1995 BBS 18 p.230-231 + posicionamiento explícito A-consciousness vs P-consciousness",
-      "started_at": null,
-      "result": null,
+      "started_at": "2026-05-05T03:51:21+00:00",
+      "result": "needs_human: PDF Block 1995 ausente, firma Jacob",
       "est_minutes": 40,
-      "finished_at": null,
+      "finished_at": "2026-05-05T03:52:47+00:00",
       "notes": "src: adversarial-reviewer cap05 2026-05-05 | files: 05-aplicaciones/01-mente-memoria-yo.md:216 | acceptance: §7.1 cita textual Block 1995 BBS 18 p.230-231 + posicionamiento explícito A-consciousness vs P-consciousness"
     },
     {
       "id": "F05-04-instituciones-sin-north-ostrom",
-      "status": "in_progress",
+      "status": "done",
       "kind": "science-audit",
       "priority": 0,
       "subject": "05-04 omite North 1990 (PDF en repo), Ostrom 1990 (8 principios), Williamson 1985 — engagement institucional truncado a Bunge sistemista",
@@ -1109,14 +1109,14 @@
       ],
       "acceptance": "§1.2 y §6 citan verbatim a North 1990 cap.1 con paginación; §7.1 reformula caso piloto OxCGRT en stringency-as-rule (North) vs cuenca dinámica (tesis)",
       "started_at": "2026-05-05T03:45:13+00:00",
-      "result": null,
+      "result": "edits con North verbatim; Ostrom/Williamson needs_biblio; needs_human",
       "est_minutes": 40,
-      "finished_at": null,
+      "finished_at": "2026-05-05T03:47:33+00:00",
       "notes": "src: adversarial-reviewer cap05 2026-05-05 | files: 05-aplicaciones/04-instituciones-mercado-y-estado.md:145 | acceptance: §1.2 y §6 citan verbatim a North 1990 cap.1 con paginación; §7.1 reformula caso piloto OxCGRT en stringency-as-rule (North) vs cuenca dinámica (tesis)"
     },
     {
       "id": "F05-05-sondas-eco-sin-may-levin",
-      "status": "pending",
+      "status": "done",
       "kind": "science-audit",
       "priority": 1,
       "subject": "Lotka-Volterra para 'energía eléctrica' y von Thünen para deforestación sin justificar frente a May 1973 (estabilidad LV) y Levin 1992 (problema escala)",
@@ -1126,15 +1126,15 @@
         "05-aplicaciones/07-mapa-aplicaciones-corpus.md:69"
       ],
       "acceptance": "§4.7 'Justificación de sondas' con cita paginada May 1973 p.74 y Levin 1992 Ecology 73:1943; defensa de LV en caso 04 o sustitución",
-      "started_at": null,
-      "result": null,
+      "started_at": "2026-05-05T03:50:40+00:00",
+      "result": "needs_human; falta §4.7 + biblio May/Levin",
       "est_minutes": 40,
-      "finished_at": null,
+      "finished_at": "2026-05-05T03:51:46+00:00",
       "notes": "src: adversarial-reviewer cap05 2026-05-05 | files: 05-aplicaciones/02-biologia-y-ecologia.md:139,05-aplicaciones/07-mapa-aplicaciones-corpus.md:69 | acceptance: §4.7 'Justificación de sondas' con cita paginada May 1973 p.74 y Levin 1992 Ecology 73:1943; defensa de LV en caso 04 o sustitución"
     },
     {
       "id": "F05-06-self-org-tecnico-sin-mitchell",
-      "status": "pending",
+      "status": "done",
       "kind": "science-audit",
       "priority": 1,
       "subject": "'Self-organization' aplicado a microservicios SRE — emergencia computacional, no autopoiesis Maturana-Varela; mezcla prohibida por glosario",
@@ -1144,15 +1144,15 @@
         "05-aplicaciones/03-sistemas-tecnicos-distribuidos.md"
       ],
       "acceptance": "0 ocurrencias 'self-organization' sin anclaje paginado en 05-03/05-05/02; sustituir por 'estabilización dinámica' o citar Mitchell 2009 Complexity cap.12 p.180",
-      "started_at": null,
-      "result": null,
+      "started_at": "2026-05-05T03:50:46+00:00",
+      "result": "adversarial falso-positivo: 05-03 sin ocurrencias; 05-05/02 ancladas a 02-04§4 Haken paginado",
       "est_minutes": 40,
-      "finished_at": null,
+      "finished_at": "2026-05-05T03:51:51+00:00",
       "notes": "src: adversarial-reviewer cap05 2026-05-05 | files: 05-aplicaciones/05-dinamica-conductual-reconstruccion-warren.md:153,05-aplicaciones/03-sistemas-tecnicos-distribuidos.md | acceptance: 0 ocurrencias 'self-organization' sin anclaje paginado en 05-03/05-05/02; sustituir por 'estabilización dinámica' o citar Mitchell 2009 Complexity cap.12 p.180"
     },
     {
       "id": "F05-07-r2-098-sin-roberts-pashler",
-      "status": "in_progress",
+      "status": "done",
       "kind": "science-audit",
       "priority": 0,
       "subject": "r²=0.98 Yilmaz-Warren 1995 reportado sin Roberts-Pashler 2000 — 7 parámetros libres, ajuste in-sample, fuerza inferencial inflada",
@@ -1163,14 +1163,14 @@
       ],
       "acceptance": "Subsección 'Crítica Roberts-Pashler 2000' con cita Psych Review 107:358 p.360; razón k/N reportada; status cross-validation declarado; fuerza inferencial bajada si in-sample",
       "started_at": "2026-05-05T03:45:13+00:00",
-      "result": null,
+      "result": "reporte+borrador; needs_human firma Jacob + fetch PDF Roberts-Pashler",
       "est_minutes": 40,
-      "finished_at": null,
+      "finished_at": "2026-05-05T03:47:54+00:00",
       "notes": "src: adversarial-reviewer cap05 2026-05-05 | files: 05-aplicaciones/05-dinamica-conductual-reconstruccion-warren.md:163,05-aplicaciones/05-dinamica-conductual-reconstruccion-warren.md:188 | acceptance: Subsección 'Crítica Roberts-Pashler 2000' con cita Psych Review 107:358 p.360; razón k/N reportada; status cross-validation declarado; fuerza inferencial bajada si in-sample"
     },
     {
       "id": "F05-08-criterios-admision-post-hoc",
-      "status": "pending",
+      "status": "done",
       "kind": "science-audit",
       "priority": 0,
       "subject": "14 criterios diseñados leyendo Warren — caso ancla satisface por construcción (Lakatos ad hoc rescue); contradicción 30 demostrativos vs único ancla",
@@ -1180,15 +1180,15 @@
         "05-aplicaciones/05-dinamica-conductual-reconstruccion-warren.md"
       ],
       "acceptance": "Documento aplicando 14-criterios a 5 casos EDI muestreados con resultado pase/falla por componente; corrección contradicción 00 vs 05-05 vs 07",
-      "started_at": null,
-      "result": null,
+      "started_at": "2026-05-05T03:47:54+00:00",
+      "result": "ad hoc rescue confirmado; needs_human firma Jacob",
       "est_minutes": 40,
-      "finished_at": null,
+      "finished_at": "2026-05-05T03:50:10+00:00",
       "notes": "src: adversarial-reviewer cap05 2026-05-05 | files: 05-aplicaciones/00-criterios-de-admision.md:96,05-aplicaciones/05-dinamica-conductual-reconstruccion-warren.md | acceptance: Documento aplicando 14-criterios a 5 casos EDI muestreados con resultado pase/falla por componente; corrección contradicción 00 vs 05-05 vs 07"
     },
     {
       "id": "F05-09-edi-negativo-cuenta-como-demostrativo",
-      "status": "in_progress",
+      "status": "done",
       "kind": "science-audit",
       "priority": 0,
       "subject": "Tabla 5.7.1 cuenta 30 'demostrativos' incluyendo casos EDI<<0 (02,12,23,25,29) que son falsación por la propia métrica",
@@ -1199,14 +1199,14 @@
       ],
       "acceptance": "Tabla revisada: N=12 demostrativos, N=8 nulls, N=8 negativos, N=2 suggestive — no N=30 indistinto; reclasificar EDI≤0 como controles negativos o no-aplicabilidad",
       "started_at": "2026-05-05T03:45:13+00:00",
-      "result": null,
+      "result": "needs_human (taxonomía requiere firma Jacob)",
       "est_minutes": 40,
-      "finished_at": null,
+      "finished_at": "2026-05-05T03:47:03+00:00",
       "notes": "src: adversarial-reviewer cap05 2026-05-05 | files: 05-aplicaciones/07-mapa-aplicaciones-corpus.md:17,05-aplicaciones/07-mapa-aplicaciones-corpus.md:134 | acceptance: Tabla revisada: N=12 demostrativos, N=8 nulls, N=8 negativos, N=2 suggestive — no N=30 indistinto; reclasificar EDI≤0 como controles negativos o no-aplicabilidad"
     },
     {
       "id": "F05-10-19-26-promovidos-sin-significancia",
-      "status": "pending",
+      "status": "done",
       "kind": "science-audit",
       "priority": 1,
       "subject": "Caso 19 acidificación EDI=0.728 p=0.49 promovido a 'trend'; caso 26 Starlink val_steps=1 — Ioannidis 2005, categorías inventadas",
@@ -1216,15 +1216,15 @@
         "05-aplicaciones/07-mapa-aplicaciones-corpus.md:140"
       ],
       "acceptance": "Tablas 5.7.7 y 5.7.8 reformuladas: 19 y 26 fuera de 'Trend'; reclasificados como 'exploratorios sin discriminación estadística'; eliminados del conteo 30",
-      "started_at": null,
-      "result": null,
+      "started_at": "2026-05-05T03:51:46+00:00",
+      "result": "needs_human: 19+26 fuera de Trend; bloque entero sin p<α",
       "est_minutes": 40,
-      "finished_at": null,
+      "finished_at": "2026-05-05T03:53:38+00:00",
       "notes": "src: adversarial-reviewer cap05 2026-05-05 | files: 05-aplicaciones/07-mapa-aplicaciones-corpus.md:124,05-aplicaciones/07-mapa-aplicaciones-corpus.md:140 | acceptance: Tablas 5.7.7 y 5.7.8 reformuladas: 19 y 26 fuera de 'Trend'; reclasificados como 'exploratorios sin discriminación estadística'; eliminados del conteo 30"
     },
     {
       "id": "F05-11-caso30-doble-elevacion-improcedente",
-      "status": "pending",
+      "status": "done",
       "kind": "science-audit",
       "priority": 2,
       "subject": "Caso 30 (locomoción) usado como elevación parcial simultánea de cap 05-01 (cognición) y cap 05-05 (Warren) — double-counting evidencial",
@@ -1234,15 +1234,15 @@
         "05-aplicaciones/07-mapa-aplicaciones-corpus.md:224"
       ],
       "acceptance": "§Capítulo 05-01 en 07-mapa no menciona caso 30 como 'primer paso de elevación'; declarar 05-01 sin caso EDI ejecutado ni candidato",
-      "started_at": null,
-      "result": null,
+      "started_at": "2026-05-05T03:53:38+00:00",
+      "result": "doble-conteo verificado L171+L224; needs_human edit propuesto",
       "est_minutes": 40,
-      "finished_at": null,
+      "finished_at": "2026-05-05T03:54:39+00:00",
       "notes": "src: adversarial-reviewer cap05 2026-05-05 | files: 05-aplicaciones/07-mapa-aplicaciones-corpus.md:171,05-aplicaciones/07-mapa-aplicaciones-corpus.md:224 | acceptance: §Capítulo 05-01 en 07-mapa no menciona caso 30 como 'primer paso de elevación'; declarar 05-01 sin caso EDI ejecutado ni candidato"
     },
     {
       "id": "F05-12-sre-beyer-sin-pdf",
-      "status": "pending",
+      "status": "done",
       "kind": "science-audit",
       "priority": 2,
       "subject": "SRE/Beyer 2016 citado como 'convergencia productiva' sin PDF — analogía SLO↔τ y circuit-breaker↔ε retórica de afinidad",
@@ -1251,15 +1251,15 @@
         "05-aplicaciones/03-sistemas-tecnicos-distribuidos.md:114"
       ],
       "acceptance": "Citas paginadas Beyer 2016 cap.4 (SLO) y cap.15 (postmortem) o reescritura eliminando tabla de homologías y reduciendo a 'ilustración informal'",
-      "started_at": null,
-      "result": null,
+      "started_at": "2026-05-05T03:52:47+00:00",
+      "result": "needs_human: 2 salidas; recomendada reducir a ilustración informal",
       "est_minutes": 40,
-      "finished_at": null,
+      "finished_at": "2026-05-05T03:53:43+00:00",
       "notes": "src: adversarial-reviewer cap05 2026-05-05 | files: 05-aplicaciones/03-sistemas-tecnicos-distribuidos.md:114 | acceptance: Citas paginadas Beyer 2016 cap.4 (SLO) y cap.15 (postmortem) o reescritura eliminando tabla de homologías y reduciendo a 'ilustración informal'"
     },
     {
       "id": "F04-01-tabla-rivales-dualismo-paja",
-      "status": "pending",
+      "status": "done",
       "kind": "science-audit",
       "priority": 1,
       "subject": "Tabla 4.3.2 da 6/6 ✗ a 'dualismo' incluyendo dualismo de propiedades naturalista de Chalmers que SÍ acepta supervenience",
@@ -1268,15 +1268,15 @@
         "04-debates/03-tabla-comparativa-rivales.md:34"
       ],
       "acceptance": "Tabla 4.3.2 con ≥2 filas para dualismo (cartesiano vs propiedades); Chalmers 1996 cap.4 pp.123-130 citado verbatim en cap 04-01 §2",
-      "started_at": null,
-      "result": null,
+      "started_at": "2026-05-05T03:50:46+00:00",
+      "result": "needs_human: falta Chalmers1996 PDF + firma Jacob",
       "est_minutes": 40,
-      "finished_at": null,
+      "finished_at": "2026-05-05T03:52:07+00:00",
       "notes": "src: adversarial-reviewer cap04+06 2026-05-05 | files: 04-debates/03-tabla-comparativa-rivales.md:34 | acceptance: Tabla 4.3.2 con ≥2 filas para dualismo (cartesiano vs propiedades); Chalmers 1996 cap.4 pp.123-130 citado verbatim en cap 04-01 §2"
     },
     {
       "id": "F04-02-tesis-6-de-6-criterios-internos",
-      "status": "in_progress",
+      "status": "done",
       "kind": "science-audit",
       "priority": 0,
       "subject": "Tesis cumple 6/6 criterios A-F diseñados por la tesis misma — tautología disfrazada (Lakatos ad hoc, Bunge 1977 vol.3)",
@@ -1286,14 +1286,14 @@
       ],
       "acceptance": "§Criterios de discriminación reconoce circularidad criterio-evaluador; ofrece ≥1 criterio externo donde la tesis muestra ✗ o parcial",
       "started_at": "2026-05-05T03:45:13+00:00",
-      "result": null,
+      "result": "needs_human Jacob; propuesta criterios externos G/H/I con ≥1 ✗",
       "est_minutes": 40,
-      "finished_at": null,
+      "finished_at": "2026-05-05T03:47:49+00:00",
       "notes": "src: adversarial-reviewer cap04+06 2026-05-05 | files: 04-debates/03-tabla-comparativa-rivales.md:59 | acceptance: §Criterios de discriminación reconoce circularidad criterio-evaluador; ofrece ≥1 criterio externo donde la tesis muestra ✗ o parcial"
     },
     {
       "id": "F04-03-dennett-real-patterns-mal-leido",
-      "status": "pending",
+      "status": "done",
       "kind": "science-audit",
       "priority": 1,
       "subject": "Dennett 1991 'Real Patterns' invocado como aliado pero su mild-realism predictivo dispara contra EDI: ablación es interna al modelo, no intervención sobre sustrato",
@@ -1302,15 +1302,15 @@
         "04-debates/04-anticipacion-objeciones-filosoficas.md:216"
       ],
       "acceptance": "§5 declara que 'intervención ablativa simulada ≠ intervención woodwardiana sobre sistema físico'; lista de casos donde la diferencia es operativa; cita Dennett J.Phil.88 p.39",
-      "started_at": null,
-      "result": null,
+      "started_at": "2026-05-05T03:51:01+00:00",
+      "result": "borrador needs_human, p.39 verificada",
       "est_minutes": 40,
-      "finished_at": null,
+      "finished_at": "2026-05-05T03:53:02+00:00",
       "notes": "src: adversarial-reviewer cap04+06 2026-05-05 | files: 04-debates/04-anticipacion-objeciones-filosoficas.md:216 | acceptance: §5 declara que 'intervención ablativa simulada ≠ intervención woodwardiana sobre sistema físico'; lista de casos donde la diferencia es operativa; cita Dennett J.Phil.88 p.39"
     },
     {
       "id": "F04-04-kim-modus-tollens-vacuo",
-      "status": "in_progress",
+      "status": "done",
       "kind": "science-audit",
       "priority": 0,
       "subject": "P4 'argumento de Kim queda neutralizado por modus tollens vacuo' — Kim 2005 cap.2 §5 anticipa exactamente la maniobra constitución/causación",
@@ -1320,14 +1320,14 @@
       ],
       "acceptance": "P4 con cita verbatim paginada Kim 2005 (PDF o secundaria honesta); respuesta articulada vía contextualismo Woodward o pluralismo Mitchell 2003; eliminar frase 'modus tollens vacuo'",
       "started_at": "2026-05-05T03:45:13+00:00",
-      "result": null,
+      "result": "needs_human: Jacob elige Woodward vs Mitchell; eliminar frase",
       "est_minutes": 40,
-      "finished_at": null,
+      "finished_at": "2026-05-05T03:51:41+00:00",
       "notes": "src: adversarial-reviewer cap04+06 2026-05-05 | files: 06-cierre/05-respuestas-tipo-defensa.md:37 | acceptance: P4 con cita verbatim paginada Kim 2005 (PDF o secundaria honesta); respuesta articulada vía contextualismo Woodward o pluralismo Mitchell 2003; eliminar frase 'modus tollens vacuo'"
     },
     {
       "id": "F06-01-1500-fp-totem-7-veces",
-      "status": "pending",
+      "status": "done",
       "kind": "science-audit",
       "priority": 1,
       "subject": "'0/1500 falsos positivos' aparece 7+ veces en 06 como totem retórico; CI Wilson [0,0.0025] no es discriminación absoluta; gate C1-C5 excluye RW por construcción",
@@ -1337,15 +1337,15 @@
         "06-cierre/04-versiones-cortas-defensa.md:11"
       ],
       "acceptance": "≤2 menciones en archivos 06-cierre; al menos una con CI Wilson [0,0.0025] al 95%; nota §3.4 explicando que C1-C5 contiene filtros que RW falla por diseño",
-      "started_at": null,
-      "result": null,
+      "started_at": "2026-05-05T03:56:52+00:00",
+      "result": "9 menciones; Wilson [0,0.00255]; needs_human Jacob",
       "est_minutes": 40,
-      "finished_at": null,
+      "finished_at": "2026-05-05T03:58:43+00:00",
       "notes": "src: adversarial-reviewer cap04+06 2026-05-05 | files: 06-cierre/01-conclusion-demostrativa.md:5,06-cierre/04-versiones-cortas-defensa.md:11 | acceptance: ≤2 menciones en archivos 06-cierre; al menos una con CI Wilson [0,0.0025] al 95%; nota §3.4 explicando que C1-C5 contiene filtros que RW falla por diseño"
     },
     {
       "id": "F04-05-trampa1-corpus-sintetico",
-      "status": "pending",
+      "status": "done",
       "kind": "science-audit",
       "priority": 0,
       "subject": "Defensa contra 'behavioral dynamics renombrado' invoca corpus 10⁻¹⁰..10²⁰m que es sintético — circularidad: aparato general porque datos generados para que aparato aplique",
@@ -1355,15 +1355,15 @@
         "06-cierre/05-respuestas-tipo-defensa.md:69"
       ],
       "acceptance": "Trampa 1 reformulada: generalidad inter-escala es conjetura sobre datos sintéticos; defensa descansa en casos macro reales (16 deforestación + 4 strong) explícitamente listados",
-      "started_at": null,
-      "result": null,
+      "started_at": "2026-05-05T03:51:41+00:00",
+      "result": "reformulación propuesta, needs_human Jacob",
       "est_minutes": 40,
-      "finished_at": null,
+      "finished_at": "2026-05-05T03:53:13+00:00",
       "notes": "src: adversarial-reviewer cap04+06 2026-05-05 | files: 06-cierre/04-versiones-cortas-defensa.md:190,06-cierre/05-respuestas-tipo-defensa.md:69 | acceptance: Trampa 1 reformulada: generalidad inter-escala es conjetura sobre datos sintéticos; defensa descansa en casos macro reales (16 deforestación + 4 strong) explícitamente listados"
     },
     {
       "id": "F06-02-complementarismo-metodologico-neologismo",
-      "status": "pending",
+      "status": "done",
       "kind": "science-audit",
       "priority": 1,
       "subject": "'Complementarismo metodológico' término inventado — categoría no reconocida en literatura (Varela-Thompson 1999 hablan de neurofenomenología)",
@@ -1372,15 +1372,15 @@
         "06-cierre/05-respuestas-tipo-defensa.md:45"
       ],
       "acceptance": "P5 reemplaza neologismo por 'pluralismo explicativo' (Mitchell 2003) o 'dualismo metodológico no-ontológico' con cita; respuesta sí/no a '¿la cuenca ES la experiencia?'; declarar costo",
-      "started_at": null,
-      "result": null,
+      "started_at": "2026-05-05T03:53:13+00:00",
+      "result": "needs_human: Jacob elige opción 1 (Mitchell) o 2 (Chalmers)",
       "est_minutes": 40,
-      "finished_at": null,
+      "finished_at": "2026-05-05T03:54:09+00:00",
       "notes": "src: adversarial-reviewer cap04+06 2026-05-05 | files: 06-cierre/05-respuestas-tipo-defensa.md:45 | acceptance: P5 reemplaza neologismo por 'pluralismo explicativo' (Mitchell 2003) o 'dualismo metodológico no-ontológico' con cita; respuesta sí/no a '¿la cuenca ES la experiencia?'; declarar costo"
     },
     {
       "id": "F04-06-wolfram-ruliad-asimetria-oculta",
-      "status": "pending",
+      "status": "done",
       "kind": "science-audit",
       "priority": 2,
       "subject": "'Wolfram fundamenta, la tesis disciplina' eslogan oculta que si Ruliad es real la tesis es subsumida — pierde prioridad ontológica",
@@ -1390,15 +1390,15 @@
         "04-debates/03-tabla-comparativa-rivales.md:216"
       ],
       "acceptance": "§Convergencia con Wolfram con párrafo explícito sobre asimetría (Ruliad correcto ⇒ tesis subsumida); eliminar eslogan o subordinarlo a la concesión",
-      "started_at": null,
-      "result": null,
+      "started_at": "2026-05-05T03:52:52+00:00",
+      "result": "needs_human, borrador concesión modal listo",
       "est_minutes": 40,
-      "finished_at": null,
+      "finished_at": "2026-05-05T03:53:48+00:00",
       "notes": "src: adversarial-reviewer cap04+06 2026-05-05 | files: 04-debates/01-debates-con-posiciones-rivales.md:422,04-debates/03-tabla-comparativa-rivales.md:216 | acceptance: §Convergencia con Wolfram con párrafo explícito sobre asimetría (Ruliad correcto ⇒ tesis subsumida); eliminar eslogan o subordinarlo a la concesión"
     },
     {
       "id": "F04-07-iit-tononi-omitida-de-rivales",
-      "status": "pending",
+      "status": "done",
       "kind": "science-audit",
       "priority": 0,
       "subject": "Lista de 14 rivales omite IIT/Tononi 2008-2014 que ofrece métrica Φ comparable con EDI — selección sesgada por ausencia de respuesta lista",
@@ -1408,15 +1408,15 @@
         "04-debates/03-tabla-comparativa-rivales.md:32"
       ],
       "acceptance": "§IIT en cap 04-01 con cita verbatim Tononi 2008 o Oizumi-Albantakis-Tononi 2014; tabla 4.3.2 fila 15 IIT con criterios discriminación EDI vs Φ; o declarar rival no-discriminado con costo",
-      "started_at": null,
-      "result": null,
+      "started_at": "2026-05-05T03:47:49+00:00",
+      "result": "needs_human: 3 opciones con costo, IIT ausente confirmada",
       "est_minutes": 40,
-      "finished_at": null,
+      "finished_at": "2026-05-05T03:49:40+00:00",
       "notes": "src: adversarial-reviewer cap04+06 2026-05-05 | files: 04-debates/01-debates-con-posiciones-rivales.md:6,04-debates/03-tabla-comparativa-rivales.md:32 | acceptance: §IIT en cap 04-01 con cita verbatim Tononi 2008 o Oizumi-Albantakis-Tononi 2014; tabla 4.3.2 fila 15 IIT con criterios discriminación EDI vs Φ; o declarar rival no-discriminado con costo"
     },
     {
       "id": "F04-08-eliminativismo-respuesta-incompleta",
-      "status": "pending",
+      "status": "done",
       "kind": "science-audit",
       "priority": 2,
       "subject": "Trampa eliminativismo solo aborda 'la tesis es eliminativa'; no responde 'la tesis es insuficientemente eliminativa cuando casos null lo sugieren'",
@@ -1425,15 +1425,15 @@
         "06-cierre/02-guia-de-defensa.md:174"
       ],
       "acceptance": "Cap 06-cierre/02 o /05 con pregunta explícita '¿por qué NO ser eliminativista cuando casos null real con potencia ≥0.80 lo sugieren?'; respuesta declarando criterio de elevación L21 o admitiendo conclusión eliminativista honesta",
-      "started_at": null,
-      "result": null,
+      "started_at": "2026-05-05T03:53:08+00:00",
+      "result": "needs_human: 3 salidas con costos, corte de Jacob",
       "est_minutes": 40,
-      "finished_at": null,
+      "finished_at": "2026-05-05T03:54:24+00:00",
       "notes": "src: adversarial-reviewer cap04+06 2026-05-05 | files: 06-cierre/02-guia-de-defensa.md:174 | acceptance: Cap 06-cierre/02 o /05 con pregunta explícita '¿por qué NO ser eliminativista cuando casos null real con potencia ≥0.80 lo sugieren?'; respuesta declarando criterio de elevación L21 o admitiendo conclusión eliminativista honesta"
     },
     {
       "id": "F06-03-4-strong-threshold-shopping",
-      "status": "pending",
+      "status": "done",
       "kind": "science-audit",
       "priority": 1,
       "subject": "'4 strong' usa umbral 0.10/0.30; con 0.15/0.40 son 3, con 0.05/0.20 son 9 — post-hoc threshold-shopping (Lakatos ad hoc)",
@@ -1443,15 +1443,15 @@
         "06-cierre/01-conclusion-demostrativa.md:55"
       ],
       "acceptance": "Cada mención '4 strong' en abstract/conclusión/defensa con paréntesis sensibilidad: '(4 con 0.10/0.30; 3 con 0.15/0.40; 9 con 0.05/0.20)'; o declarar pre-registro umbrales con commit hash anterior",
-      "started_at": null,
-      "result": null,
+      "started_at": "2026-05-05T03:52:07+00:00",
+      "result": "needs_human: 3 opciones edición, fondo defendible",
       "est_minutes": 40,
-      "finished_at": null,
+      "finished_at": "2026-05-05T03:53:28+00:00",
       "notes": "src: adversarial-reviewer cap04+06 2026-05-05 | files: 06-cierre/01-conclusion-demostrativa.md:5,06-cierre/01-conclusion-demostrativa.md:55 | acceptance: Cada mención '4 strong' en abstract/conclusión/defensa con paréntesis sensibilidad: '(4 con 0.10/0.30; 3 con 0.15/0.40; 9 con 0.05/0.20)'; o declarar pre-registro umbrales con commit hash anterior"
     },
     {
       "id": "F04-09-caso30-v1-v2-cinturon-protector",
-      "status": "pending",
+      "status": "done",
       "kind": "science-audit",
       "priority": 0,
       "subject": "P10 'rechazo caso 30 v1 prueba no-inmunización' — pero v1→v2 cambió la sonda tras fallo: monster-barring lakatosiano (Proofs and Refutations)",
@@ -1461,15 +1461,15 @@
         "06-cierre/02-guia-de-defensa.md:130"
       ],
       "acceptance": "P10 con commit hash y fecha pre-registro de sonda v2 ANTES ejecución v2; o reconocer v1→v2 como ajuste de cinturón protector sin garantía de pre-registro",
-      "started_at": null,
-      "result": null,
+      "started_at": "2026-05-05T03:54:24+00:00",
+      "result": "sin pre-registro v2; cinturón protector lakatosiano; needs_human B1+B2",
       "est_minutes": 40,
-      "finished_at": null,
+      "finished_at": "2026-05-05T03:56:16+00:00",
       "notes": "src: adversarial-reviewer cap04+06 2026-05-05 | files: 06-cierre/05-respuestas-tipo-defensa.md:85,06-cierre/02-guia-de-defensa.md:130 | acceptance: P10 con commit hash y fecha pre-registro de sonda v2 ANTES ejecución v2; o reconocer v1→v2 como ajuste de cinturón protector sin garantía de pre-registro"
     },
     {
       "id": "F04-10-compromiso-publico-vacio",
-      "status": "pending",
+      "status": "done",
       "kind": "science-audit",
       "priority": 2,
       "subject": "§17 'absorción si rival no cede en 2 celdas' — celdas A-F son criterios internos; árbitro de absorción es la propia tesis",
@@ -1479,15 +1479,15 @@
         "04-debates/03-tabla-comparativa-rivales.md:222"
       ],
       "acceptance": "§17 con cláusula 'absorción se verifica si revisor hostil H-S1/H-S2 declara que tesis no añade pieza articulada bajo criterios del rival'; o declarar limitación del compromiso interno",
-      "started_at": null,
-      "result": null,
+      "started_at": "2026-05-05T03:53:49+00:00",
+      "result": "needs_human: 3 opciones para firma Jacob",
       "est_minutes": 40,
-      "finished_at": null,
+      "finished_at": "2026-05-05T03:54:44+00:00",
       "notes": "src: adversarial-reviewer cap04+06 2026-05-05 | files: 04-debates/01-debates-con-posiciones-rivales.md:506,04-debates/03-tabla-comparativa-rivales.md:222 | acceptance: §17 con cláusula 'absorción se verifica si revisor hostil H-S1/H-S2 declara que tesis no añade pieza articulada bajo criterios del rival'; o declarar limitación del compromiso interno"
     },
     {
       "id": "F06-04-cinco-escenarios-cuatro-iguales",
-      "status": "pending",
+      "status": "done",
       "kind": "science-audit",
       "priority": 1,
       "subject": "'5 escenarios falsables globales' — 4 son variaciones de 'el corpus deja de discriminar', el #5 (Wolfram absorbe) está blindado por criterio interno (TAREA F04-02)",
@@ -1496,15 +1496,15 @@
         "06-cierre/01-conclusion-demostrativa.md:84"
       ],
       "acceptance": "§2 condiciones de fracaso ≤3 escenarios genuinamente independientes con criterio externo; o declarar que los 5 son aspectos del mismo fallo (Popper 1959 §6 ad hoc immunization)",
-      "started_at": null,
-      "result": null,
+      "started_at": "2026-05-05T03:58:43+00:00",
+      "result": "3 indep + 1 prioridad histórica; needs_human",
       "est_minutes": 40,
-      "finished_at": null,
+      "finished_at": "2026-05-05T04:00:05+00:00",
       "notes": "src: adversarial-reviewer cap04+06 2026-05-05 | files: 06-cierre/01-conclusion-demostrativa.md:84 | acceptance: §2 condiciones de fracaso ≤3 escenarios genuinamente independientes con criterio externo; o declarar que los 5 son aspectos del mismo fallo (Popper 1959 §6 ad hoc immunization)"
     },
     {
       "id": "F04-11-caso33-no-es-novel-fact-lakatos",
-      "status": "pending",
+      "status": "done",
       "kind": "science-audit",
       "priority": 1,
       "subject": "Caso 33 Villin Headpiece 'null genuino' presentado como predicción lakatosiana corroborada — es hecho sobre el aparato no sobre el sustrato",
@@ -1513,15 +1513,15 @@
         "04-debates/04-anticipacion-objeciones-filosoficas.md:138"
       ],
       "acceptance": "§3 (d) elimina caso 33 como ejemplo novel fact lakatosiano; sustituir por caso con predicción genuina sobre sustrato + fecha pre-ejecución; o declarar progresividad lakatosiana como deuda no-cerrada",
-      "started_at": null,
-      "result": null,
+      "started_at": "2026-05-05T03:53:03+00:00",
+      "result": "needs_human; §3(d) confunde robustez metodológica con novel fact",
       "est_minutes": 40,
-      "finished_at": null,
+      "finished_at": "2026-05-05T03:54:44+00:00",
       "notes": "src: adversarial-reviewer cap04+06 2026-05-05 | files: 04-debates/04-anticipacion-objeciones-filosoficas.md:138 | acceptance: §3 (d) elimina caso 33 como ejemplo novel fact lakatosiano; sustituir por caso con predicción genuina sobre sustrato + fecha pre-ejecución; o declarar progresividad lakatosiana como deuda no-cerrada"
     },
     {
       "id": "TENG-01-permutacion-iid-temporales",
-      "status": "in_progress",
+      "status": "done",
       "kind": "engine-audit",
       "priority": 0,
       "subject": "Permutación iid sobre series temporales destruye autocorrelación → p-values optimistas (Davison-Hinkley 1997 cap.8)",
@@ -1532,14 +1532,14 @@
       ],
       "acceptance": "Reemplazar permutación iid por block-permutation con longitud ≈ mixing_time(); para casos con ACF(lag=1)>0.5 la diferencia p_iid vs p_block <0.05; recomputar p en ≥5 casos clima/epi/deforest",
       "started_at": "2026-05-05T03:45:13+00:00",
-      "result": null,
+      "result": "hallazgo confirmado, propuesta needs_human (B-T)",
       "est_minutes": 60,
-      "finished_at": null,
+      "finished_at": "2026-05-05T03:51:41+00:00",
       "notes": "src: process-verifier engine 2026-05-05 | files: 09-simulaciones-edi/common/hybrid_validator.py:174,09-simulaciones-edi/common/topology.py | acceptance: Reemplazar permutación iid por block-permutation con longitud ≈ mixing_time(); para casos con ACF(lag=1)>0.5 la diferencia p_iid vs p_block <0.05; recomputar p en ≥5 casos clima/epi/deforest"
     },
     {
       "id": "TENG-02-bootstrap-percentil-sesgo-pequenas",
-      "status": "pending",
+      "status": "done",
       "kind": "engine-audit",
       "priority": 1,
       "subject": "Bootstrap CI percentil simple con val_steps≤9 sesgado — DiCiccio-Efron 1996 muestran BCa con error O(n⁻¹) vs percentil O(n⁻¹/²)",
@@ -1548,15 +1548,15 @@
         "09-simulaciones-edi/common/hybrid_validator.py:193"
       ],
       "acceptance": "Implementar BCa en bootstrap_edi() cuando n<30; campo ci_method en metrics.json; cobertura empírica BCa vs percentil en datos sintéticos con EDI conocido",
-      "started_at": null,
-      "result": null,
+      "started_at": "2026-05-05T03:53:28+00:00",
+      "result": "needs_human: 21/32 casos afectados",
       "est_minutes": 60,
-      "finished_at": null,
+      "finished_at": "2026-05-05T03:56:11+00:00",
       "notes": "src: process-verifier engine 2026-05-05 | files: 09-simulaciones-edi/common/hybrid_validator.py:193 | acceptance: Implementar BCa en bootstrap_edi() cuando n<30; campo ci_method en metrics.json; cobertura empírica BCa vs percentil en datos sintéticos con EDI conocido"
     },
     {
       "id": "TENG-03-gpu-batch-init-noise-compartido",
-      "status": "pending",
+      "status": "done",
       "kind": "engine-audit",
       "priority": 1,
       "subject": "GPU batch: B candidatos inician con MISMO ruido init_noise[None,:,:] — sesgo exploratorio del grid search",
@@ -1565,15 +1565,15 @@
         "09-simulaciones-edi/common/abm_core_gpu.py:583"
       ],
       "acceptance": "init_noise = rng.uniform(...,(B,n,n)) con subseeds por candidato; |rmse_calib_cpu - rmse_calib_gpu|/rmse_calib_cpu < 0.05 en casos 01,16,05",
-      "started_at": null,
-      "result": null,
+      "started_at": "2026-05-05T03:51:31+00:00",
+      "result": "needs_human: paridad CPU↔GPU intencional, decisión H-J",
       "est_minutes": 60,
-      "finished_at": null,
+      "finished_at": "2026-05-05T03:52:32+00:00",
       "notes": "src: process-verifier engine 2026-05-05 | files: 09-simulaciones-edi/common/abm_core_gpu.py:583 | acceptance: init_noise = rng.uniform(...,(B,n,n)) con subseeds por candidato; |rmse_calib_cpu - rmse_calib_gpu|/rmse_calib_cpu < 0.05 en casos 01,16,05"
     },
     {
       "id": "TENG-04-c2-cpu-vs-gpu-semillas-divergentes",
-      "status": "pending",
+      "status": "done",
       "kind": "engine-audit",
       "priority": 1,
       "subject": "C2 sensibilidad: GPU usa seed_base único, CPU usa 2+i+10 — C2 booleano puede diferir entre plataformas (no reproducible)",
@@ -1583,15 +1583,15 @@
         "09-simulaciones-edi/common/hybrid_validator.py:997"
       ],
       "acceptance": "Unificar CPU path a seed=seed_base; CHANGELOG documenta cambio; C2 booleano idéntico CPU vs GPU en 5 casos con C2=True",
-      "started_at": null,
-      "result": null,
+      "started_at": "2026-05-05T03:56:11+00:00",
+      "result": "needs_human: divergencia confirmada hybrid_validator.py:977 vs 997",
       "est_minutes": 60,
-      "finished_at": null,
+      "finished_at": "2026-05-05T03:57:32+00:00",
       "notes": "src: process-verifier engine 2026-05-05 | files: 09-simulaciones-edi/common/hybrid_validator.py:977,09-simulaciones-edi/common/hybrid_validator.py:997 | acceptance: Unificar CPU path a seed=seed_base; CHANGELOG documenta cambio; C2 booleano idéntico CPU vs GPU en 5 casos con C2=True"
     },
     {
       "id": "TENG-05-caso19-edi-inconsistencia-interna",
-      "status": "pending",
+      "status": "done",
       "kind": "engine-audit",
       "priority": 0,
       "subject": "Caso 19 metrics.json: edi.value=0.73 mientras weighted_value/loe_factor=-0.00019 — archivo de dos ejecuciones distintas",
@@ -1601,15 +1601,15 @@
         "09-simulaciones-edi/common/hybrid_validator.py:1744"
       ],
       "acceptance": "Re-ejecutar validate.py caso 19 completo; assertion en write_outputs() abs(edi.value - edi.weighted_value/edi.loe_factor)<1e-6; el assertion pasa tras re-ejecución",
-      "started_at": null,
-      "result": null,
+      "started_at": "2026-05-05T03:51:41+00:00",
+      "result": "JSON mezclado real.value stale vs weighted/loe actual",
       "est_minutes": 60,
-      "finished_at": null,
+      "finished_at": "2026-05-05T03:53:28+00:00",
       "notes": "src: process-verifier engine 2026-05-05 | files: 09-simulaciones-edi/19_caso_acidificacion_oceanica/outputs/metrics.json,09-simulaciones-edi/common/hybrid_validator.py:1744 | acceptance: Re-ejecutar validate.py caso 19 completo; assertion en write_outputs() abs(edi.value - edi.weighted_value/edi.loe_factor)<1e-6; el assertion pasa tras re-ejecución"
     },
     {
       "id": "TENG-06-np-random-seed-global-correlaciona-workers",
-      "status": "pending",
+      "status": "done",
       "kind": "engine-audit",
       "priority": 2,
       "subject": "np.random.seed(42) global antes de joblib fork puede correlacionar estados de workers (loky hereda seed)",
@@ -1618,15 +1618,15 @@
         "09-simulaciones-edi/common/hybrid_validator.py:1278"
       ],
       "acceptance": "Eliminar seed global; depender de RandomState(seed) locales; |Δrmse_calib| < 0.01 sin/con seed global en casos 01,16,05",
-      "started_at": null,
-      "result": null,
+      "started_at": "2026-05-05T03:58:59+00:00",
+      "result": "needs_human: auditoría RNG + diff 01/16/05",
       "est_minutes": 60,
-      "finished_at": null,
+      "finished_at": "2026-05-05T04:00:10+00:00",
       "notes": "src: process-verifier engine 2026-05-05 | files: 09-simulaciones-edi/common/hybrid_validator.py:1278 | acceptance: Eliminar seed global; depender de RandomState(seed) locales; |Δrmse_calib| < 0.01 sin/con seed global en casos 01,16,05"
     },
     {
       "id": "TENG-07-topology-dim-5-hardcoded",
-      "status": "pending",
+      "status": "done",
       "kind": "engine-audit",
       "priority": 2,
       "subject": "topology_report(x, dim=5) hard-codeado: con val_steps≤8 ⇒ 'insufficient embedded points' silencioso en ~40% del corpus",
@@ -1635,15 +1635,15 @@
         "09-simulaciones-edi/common/topology.py:183"
       ],
       "acceptance": "dim adaptativo decreciente hasta dim=2 si n_embedded<50; campo topology_valid:bool en metrics.json; ningún metrics.json con topology.lyapunov.error si val_steps≥20",
-      "started_at": null,
-      "result": null,
+      "started_at": "2026-05-05T03:53:18+00:00",
+      "result": "claim parcial: defecto real, \"~40%\" no se reproduce; needs_human",
       "est_minutes": 60,
-      "finished_at": null,
+      "finished_at": "2026-05-05T03:55:10+00:00",
       "notes": "src: process-verifier engine 2026-05-05 | files: 09-simulaciones-edi/common/topology.py:183 | acceptance: dim adaptativo decreciente hasta dim=2 si n_embedded<50; campo topology_valid:bool en metrics.json; ningún metrics.json con topology.lyapunov.error si val_steps≥20"
     },
     {
       "id": "TENG-08-c1-or-fallback-permite-edi-negativo",
-      "status": "pending",
+      "status": "done",
       "kind": "engine-audit",
       "priority": 1,
       "subject": "C1 = c1_relative OR c1_absolute — caso 23 tiene C1=True con EDI=-1.0 porque (B) corr>0.3 pasa sin que ODE aporte",
@@ -1652,15 +1652,15 @@
         "09-simulaciones-edi/common/hybrid_validator.py:892"
       ],
       "acceptance": "C1 cambiado a AND o (B) marcada c1_fallback con bandera separada que NO contribuya a overall_pass; documentar todos los casos donde c1=True con edi_val<0",
-      "started_at": null,
-      "result": null,
+      "started_at": "2026-05-05T03:57:32+00:00",
+      "result": "8 fases c1=T con EDI<0; needs_human salida 1/2/3",
       "est_minutes": 60,
-      "finished_at": null,
+      "finished_at": "2026-05-05T03:58:59+00:00",
       "notes": "src: process-verifier engine 2026-05-05 | files: 09-simulaciones-edi/common/hybrid_validator.py:892 | acceptance: C1 cambiado a AND o (B) marcada c1_fallback con bandera separada que NO contribuya a overall_pass; documentar todos los casos donde c1=True con edi_val<0"
     },
     {
       "id": "TENG-09-bias-correction-no-estacionariedad",
-      "status": "pending",
+      "status": "in_progress",
       "kind": "engine-audit",
       "priority": 2,
       "subject": "Bias correction usa obs_m_bc/obs_s_bc del TRAIN aplicado al horizonte completo — bajo no-estacionariedad introduce sesgo en val no detectado por guarda de reversión",
@@ -1669,7 +1669,7 @@
         "09-simulaciones-edi/common/hybrid_validator.py:1585"
       ],
       "acceptance": "Test ADF sobre ode_series_bc[val:]-ode_series[val:]; campo bc_stationarity_warning en metrics.json para todos los casos con BC mode != none/reverted",
-      "started_at": null,
+      "started_at": "2026-05-05T04:00:10+00:00",
       "result": null,
       "est_minutes": 60,
       "finished_at": null,
@@ -1677,7 +1677,7 @@
     },
     {
       "id": "TENG-10-baselines-target-distinto-aparato",
-      "status": "pending",
+      "status": "done",
       "kind": "engine-audit",
       "priority": 1,
       "subject": "baselines.py genera serie sintética con _gen_series_with_coupling distinto del ABM+ODE del caso — RMSE baseline vs RMSE aparato no en mismo espacio",
@@ -1686,10 +1686,10 @@
         "09-simulaciones-edi/common/baselines.py:141"
       ],
       "acceptance": "Baselines target = primary_arrays.json (obs real); o serie val ABM guardada en outputs/primary_arrays.json; campo baselines_target en reporte; rmse_arima y rmse_coupled_aparato sobre mismo vector obs",
-      "started_at": null,
-      "result": null,
+      "started_at": "2026-05-05T03:51:41+00:00",
+      "result": "claim verificada; needs_human Ruta 1/2",
       "est_minutes": 60,
-      "finished_at": null,
+      "finished_at": "2026-05-05T03:52:52+00:00",
       "notes": "src: process-verifier engine 2026-05-05 | files: 09-simulaciones-edi/common/baselines.py:141 | acceptance: Baselines target = primary_arrays.json (obs real); o serie val ABM guardada en outputs/primary_arrays.json; campo baselines_target en reporte; rmse_arima y rmse_coupled_aparato sobre mismo vector obs"
     },
     {
@@ -1711,7 +1711,7 @@
     },
     {
       "id": "TENG-12-hash-no-detecta-inconsistencia-interna",
-      "status": "in_progress",
+      "status": "done",
       "kind": "engine-audit",
       "priority": 0,
       "subject": "MD5(metrics.json) detecta cambios externos pero no contradicciones internas como caso 19 — reproducibilidad reproduce el bug",
@@ -1721,9 +1721,9 @@
       ],
       "acceptance": "Verificador consistencia interna: |edi.value - weighted_value/loe_factor|<1e-6; |edi.value - (rmse_no_ode-rmse_abm)/rmse_no_ode|<1e-4; ci_lo<=edi.value<=ci_hi; corre sobre 30+ casos",
       "started_at": "2026-05-05T03:46:23+00:00",
-      "result": null,
+      "result": "claim verified, fix needs_human",
       "est_minutes": 60,
-      "finished_at": null,
+      "finished_at": "2026-05-05T03:48:14+00:00",
       "notes": "src: process-verifier engine 2026-05-05 | files: 09-simulaciones-edi/scripts_orquestacion/audit/replay_hash.py:44 | acceptance: Verificador consistencia interna: |edi.value - weighted_value/loe_factor|<1e-6; |edi.value - (rmse_no_ode-rmse_abm)/rmse_no_ode|<1e-4; ci_lo<=edi.value<=ci_hi; corre sobre 30+ casos"
     },
     {
@@ -1742,6 +1742,127 @@
       "est_minutes": 60,
       "finished_at": null,
       "notes": "src: process-verifier engine 2026-05-05 | files: 09-simulaciones-edi/common/hybrid_validator.py:508 | acceptance: Documentar en metodología que objetivo es bi-criterio; calibración alternativa RMSE-only vs RMSE×corr en 3 casos; declarar deuda si |ΔEDI|>0.05; declaración en glosario o case_config"
+    },
+    {
+      "id": "AD-aa52bf8f",
+      "subject": "Decorativa→engagement Lee 1976 en 00-proyecto/06-listas-figuras-tablas-abreviaturas.md:67",
+      "priority": 3,
+      "est_minutes": 25,
+      "status": "in_progress",
+      "started_at": "2026-05-05T04:00:41+00:00",
+      "finished_at": null,
+      "result": null,
+      "notes": []
+    },
+    {
+      "id": "AD-7b662148",
+      "subject": "Decorativa→engagement Warren 2006 en 01-diagnostico/03-estado-del-arte.md:108",
+      "priority": 3,
+      "est_minutes": 25,
+      "status": "in_progress",
+      "started_at": "2026-05-05T04:00:41+00:00",
+      "finished_at": null,
+      "result": null,
+      "notes": []
+    },
+    {
+      "id": "AD-4e0533a5",
+      "subject": "Decorativa→engagement Warren 2006 en 02-fundamentos/04-anclaje-conductual-ecologico.md:237",
+      "priority": 3,
+      "est_minutes": 25,
+      "status": "in_progress",
+      "started_at": "2026-05-05T04:00:42+00:00",
+      "finished_at": null,
+      "result": null,
+      "notes": []
+    },
+    {
+      "id": "AD-0409520d",
+      "subject": "Decorativa→engagement Warren 2006 en 05-aplicaciones/00-criterios-de-admision.md:69",
+      "priority": 3,
+      "est_minutes": 25,
+      "status": "in_progress",
+      "started_at": "2026-05-05T04:00:42+00:00",
+      "finished_at": null,
+      "result": null,
+      "notes": []
+    },
+    {
+      "id": "AD-d8fb8286",
+      "subject": "Decorativa→engagement Husserl 1913 en 05-aplicaciones/01-mente-memoria-yo.md:233",
+      "priority": 3,
+      "est_minutes": 25,
+      "status": "in_progress",
+      "started_at": "2026-05-05T04:00:42+00:00",
+      "finished_at": null,
+      "result": null,
+      "notes": []
+    },
+    {
+      "id": "AD-929919f8",
+      "subject": "Decorativa→engagement Beyer 2016 en 05-aplicaciones/03-sistemas-tecnicos-distribuidos.md:116",
+      "priority": 3,
+      "est_minutes": 25,
+      "status": "pending",
+      "started_at": null,
+      "finished_at": null,
+      "result": null,
+      "notes": []
+    },
+    {
+      "id": "SI-4a610a57",
+      "subject": "Auto-indulgencia '?' en Bitacora/2026-05-04-continuous-run/F04-02-tesis-6-de-6-criterios-internos.md:67",
+      "priority": 3,
+      "est_minutes": 10,
+      "status": "in_progress",
+      "started_at": "2026-05-05T04:00:53+00:00",
+      "finished_at": null,
+      "result": null,
+      "notes": []
+    },
+    {
+      "id": "SI-947ba0e2",
+      "subject": "Auto-indulgencia '?' en Bitacora/2026-05-04-continuous-run/F04-02-tesis-6-de-6-criterios-internos.md:87",
+      "priority": 3,
+      "est_minutes": 10,
+      "status": "in_progress",
+      "started_at": "2026-05-05T04:00:41+00:00",
+      "finished_at": null,
+      "result": null,
+      "notes": []
+    },
+    {
+      "id": "SI-4a610a57",
+      "subject": "Auto-indulgencia '?' en Bitacora/2026-05-04-continuous-run/F04-02-tesis-6-de-6-criterios-internos.md:67",
+      "priority": 3,
+      "est_minutes": 10,
+      "status": "pending",
+      "started_at": null,
+      "finished_at": null,
+      "result": null,
+      "notes": []
+    },
+    {
+      "id": "SI-b1a18bd9",
+      "subject": "Auto-indulgencia '?' en Bitacora/2026-05-04-continuous-run/F06-03-4-strong-threshold-shopping.md:18",
+      "priority": 3,
+      "est_minutes": 10,
+      "status": "in_progress",
+      "started_at": "2026-05-05T04:00:41+00:00",
+      "finished_at": null,
+      "result": null,
+      "notes": []
+    },
+    {
+      "id": "SI-9b45f9ff",
+      "subject": "Auto-indulgencia '?' en Bitacora/2026-05-04-continuous-run/F06-03-4-strong-threshold-shopping.md:62",
+      "priority": 3,
+      "est_minutes": 10,
+      "status": "in_progress",
+      "started_at": "2026-05-05T04:00:41+00:00",
+      "finished_at": null,
+      "result": null,
+      "notes": []
     }
   ],
   "log": [
@@ -2524,8 +2645,584 @@
     {
       "at": "2026-05-05T03:46:23+00:00",
       "entry": "daemon-claim TENG-12-hash-no-detecta-inconsistencia-interna"
+    },
+    {
+      "at": "2026-05-05T03:47:03+00:00",
+      "entry": "complete F05-09-edi-negativo-cuenta-como-demostrativo"
+    },
+    {
+      "at": "2026-05-05T03:47:03+00:00",
+      "entry": "daemon-claim AU-1-caso26-starlink"
+    },
+    {
+      "at": "2026-05-05T03:47:28+00:00",
+      "entry": "complete F03-04-traduccion-b-l3-sin-criterio"
+    },
+    {
+      "at": "2026-05-05T03:47:28+00:00",
+      "entry": "daemon-claim F02-03-strawson-1959-individuation"
+    },
+    {
+      "at": "2026-05-05T03:47:33+00:00",
+      "entry": "complete F05-04-instituciones-sin-north-ostrom"
+    },
+    {
+      "at": "2026-05-05T03:47:33+00:00",
+      "entry": "daemon-claim F02-04-maturana-haken-tension"
+    },
+    {
+      "at": "2026-05-05T03:47:38+00:00",
+      "entry": "complete F03-05-asimetria-existencial-trivial"
+    },
+    {
+      "at": "2026-05-05T03:47:39+00:00",
+      "entry": "daemon-claim F02-05-brandom-pagina-incorrecta"
+    },
+    {
+      "at": "2026-05-05T03:47:49+00:00",
+      "entry": "complete F04-02-tesis-6-de-6-criterios-internos"
+    },
+    {
+      "at": "2026-05-05T03:47:49+00:00",
+      "entry": "daemon-claim F04-07-iit-tononi-omitida-de-rivales"
+    },
+    {
+      "at": "2026-05-05T03:47:54+00:00",
+      "entry": "complete F05-07-r2-098-sin-roberts-pashler"
+    },
+    {
+      "at": "2026-05-05T03:47:54+00:00",
+      "entry": "daemon-claim F05-08-criterios-admision-post-hoc"
+    },
+    {
+      "at": "2026-05-05T03:48:09+00:00",
+      "entry": "complete F03-08-do-test-confundido-con-ablacion"
+    },
+    {
+      "at": "2026-05-05T03:48:09+00:00",
+      "entry": "daemon-claim F02-08-searle-1964-sin-hare"
+    },
+    {
+      "at": "2026-05-05T03:48:14+00:00",
+      "entry": "complete TENG-12-hash-no-detecta-inconsistencia-interna"
+    },
+    {
+      "at": "2026-05-05T03:48:14+00:00",
+      "entry": "daemon-claim F03-01-kappa-bicondicional-criterio-d-inverificable"
+    },
+    {
+      "at": "2026-05-05T03:48:19+00:00",
+      "entry": "complete AU-1-caso26-starlink"
+    },
+    {
+      "at": "2026-05-05T03:48:19+00:00",
+      "entry": "daemon-claim AU-7-caso30-holm-bonferroni"
+    },
+    {
+      "at": "2026-05-05T03:48:44+00:00",
+      "entry": "complete F02-05-brandom-pagina-incorrecta"
+    },
+    {
+      "at": "2026-05-05T03:48:44+00:00",
+      "entry": "daemon-claim F02-07-kappa-sin-mdl-solomonoff"
+    },
+    {
+      "at": "2026-05-05T03:48:54+00:00",
+      "entry": "complete AU-3-baselines-superan-modelo"
+    },
+    {
+      "at": "2026-05-05T03:48:54+00:00",
+      "entry": "daemon-claim AU-2-caso27-bootstrap-cruza-cero"
+    },
+    {
+      "at": "2026-05-05T03:49:04+00:00",
+      "entry": "complete F02-08-searle-1964-sin-hare"
+    },
+    {
+      "at": "2026-05-05T03:49:05+00:00",
+      "entry": "daemon-claim F03-02-fidelidad-circular-duhem-quine"
+    },
+    {
+      "at": "2026-05-05T03:49:15+00:00",
+      "entry": "complete F02-01-woodward-pendiente-ocr"
+    },
+    {
+      "at": "2026-05-05T03:49:15+00:00",
+      "entry": "complete F02-03-strawson-1959-individuation"
+    },
+    {
+      "at": "2026-05-05T03:49:15+00:00",
+      "entry": "daemon-claim F02-02-craver-mediado-via-criticos"
+    },
+    {
+      "at": "2026-05-05T03:49:15+00:00",
+      "entry": "daemon-claim F03-10-caso30-sintetico-circularidad-parcial"
+    },
+    {
+      "at": "2026-05-05T03:49:30+00:00",
+      "entry": "complete F02-04-maturana-haken-tension"
+    },
+    {
+      "at": "2026-05-05T03:49:30+00:00",
+      "entry": "complete F03-01-kappa-bicondicional-criterio-d-inverificable"
+    },
+    {
+      "at": "2026-05-05T03:49:30+00:00",
+      "entry": "daemon-claim F02-06-gibson-warren-elision"
+    },
+    {
+      "at": "2026-05-05T03:49:30+00:00",
+      "entry": "daemon-claim F03-07-ladyman-ross-falsa-convergencia"
+    },
+    {
+      "at": "2026-05-05T03:49:40+00:00",
+      "entry": "complete F04-07-iit-tononi-omitida-de-rivales"
+    },
+    {
+      "at": "2026-05-05T03:49:40+00:00",
+      "entry": "daemon-claim F03-09-dimensionalidad-sin-protocolo"
+    },
+    {
+      "at": "2026-05-05T03:50:10+00:00",
+      "entry": "complete F05-08-criterios-admision-post-hoc"
+    },
+    {
+      "at": "2026-05-05T03:50:10+00:00",
+      "entry": "daemon-claim F05-02-yo-sin-damasio-ledoux"
+    },
+    {
+      "at": "2026-05-05T03:50:15+00:00",
+      "entry": "complete F03-02-fidelidad-circular-duhem-quine"
+    },
+    {
+      "at": "2026-05-05T03:50:15+00:00",
+      "entry": "daemon-claim F03-03-dossier-tautologico-sin-rubrica"
+    },
+    {
+      "at": "2026-05-05T03:50:20+00:00",
+      "entry": "complete AU-2-caso27-bootstrap-cruza-cero"
+    },
+    {
+      "at": "2026-05-05T03:50:20+00:00",
+      "entry": "daemon-claim AU-5-auc-roc-circular"
+    },
+    {
+      "at": "2026-05-05T03:50:40+00:00",
+      "entry": "complete AU-7-caso30-holm-bonferroni"
+    },
+    {
+      "at": "2026-05-05T03:50:40+00:00",
+      "entry": "daemon-claim F05-05-sondas-eco-sin-may-levin"
+    },
+    {
+      "at": "2026-05-05T03:50:45+00:00",
+      "entry": "complete F02-02-craver-mediado-via-criticos"
+    },
+    {
+      "at": "2026-05-05T03:50:45+00:00",
+      "entry": "complete F03-10-caso30-sintetico-circularidad-parcial"
+    },
+    {
+      "at": "2026-05-05T03:50:45+00:00",
+      "entry": "complete F02-06-gibson-warren-elision"
+    },
+    {
+      "at": "2026-05-05T03:50:46+00:00",
+      "entry": "daemon-claim F02-12-st-t13-trivializacion"
+    },
+    {
+      "at": "2026-05-05T03:50:46+00:00",
+      "entry": "daemon-claim F05-06-self-org-tecnico-sin-mitchell"
+    },
+    {
+      "at": "2026-05-05T03:50:46+00:00",
+      "entry": "daemon-claim F04-01-tabla-rivales-dualismo-paja"
+    },
+    {
+      "at": "2026-05-05T03:51:01+00:00",
+      "entry": "complete F03-09-dimensionalidad-sin-protocolo"
+    },
+    {
+      "at": "2026-05-05T03:51:01+00:00",
+      "entry": "daemon-claim F04-03-dennett-real-patterns-mal-leido"
+    },
+    {
+      "at": "2026-05-05T03:51:06+00:00",
+      "entry": "complete F03-07-ladyman-ross-falsa-convergencia"
+    },
+    {
+      "at": "2026-05-05T03:51:06+00:00",
+      "entry": "daemon-claim F03-11-replicabilidad-no-testada"
+    },
+    {
+      "at": "2026-05-05T03:51:21+00:00",
+      "entry": "complete F05-02-yo-sin-damasio-ledoux"
+    },
+    {
+      "at": "2026-05-05T03:51:21+00:00",
+      "entry": "daemon-claim F05-03-block-access-vs-phenomenal"
+    },
+    {
+      "at": "2026-05-05T03:51:31+00:00",
+      "entry": "complete F02-07-kappa-sin-mdl-solomonoff"
+    },
+    {
+      "at": "2026-05-05T03:51:31+00:00",
+      "entry": "daemon-claim TENG-03-gpu-batch-init-noise-compartido"
+    },
+    {
+      "at": "2026-05-05T03:51:41+00:00",
+      "entry": "complete F04-04-kim-modus-tollens-vacuo"
+    },
+    {
+      "at": "2026-05-05T03:51:41+00:00",
+      "entry": "complete TENG-01-permutacion-iid-temporales"
+    },
+    {
+      "at": "2026-05-05T03:51:41+00:00",
+      "entry": "complete F03-03-dossier-tautologico-sin-rubrica"
+    },
+    {
+      "at": "2026-05-05T03:51:41+00:00",
+      "entry": "daemon-claim F04-05-trampa1-corpus-sintetico"
+    },
+    {
+      "at": "2026-05-05T03:51:41+00:00",
+      "entry": "daemon-claim TENG-05-caso19-edi-inconsistencia-interna"
+    },
+    {
+      "at": "2026-05-05T03:51:41+00:00",
+      "entry": "daemon-claim TENG-10-baselines-target-distinto-aparato"
+    },
+    {
+      "at": "2026-05-05T03:51:46+00:00",
+      "entry": "complete F05-05-sondas-eco-sin-may-levin"
+    },
+    {
+      "at": "2026-05-05T03:51:46+00:00",
+      "entry": "daemon-claim F05-10-19-26-promovidos-sin-significancia"
+    },
+    {
+      "at": "2026-05-05T03:51:51+00:00",
+      "entry": "complete F05-06-self-org-tecnico-sin-mitchell"
+    },
+    {
+      "at": "2026-05-05T03:51:52+00:00",
+      "entry": "daemon-claim F02-09-bunge-cesm-no-declarado"
+    },
+    {
+      "at": "2026-05-05T03:51:57+00:00",
+      "entry": "complete F03-11-replicabilidad-no-testada"
+    },
+    {
+      "at": "2026-05-05T03:51:57+00:00",
+      "entry": "daemon-claim F02-10-realismo-estructural-doble-rotulo"
+    },
+    {
+      "at": "2026-05-05T03:52:02+00:00",
+      "entry": "complete F02-12-st-t13-trivializacion"
+    },
+    {
+      "at": "2026-05-05T03:52:02+00:00",
+      "entry": "daemon-claim F02-11-bateson-dretske-incompatibles"
+    },
+    {
+      "at": "2026-05-05T03:52:07+00:00",
+      "entry": "complete AU-5-auc-roc-circular"
+    },
+    {
+      "at": "2026-05-05T03:52:07+00:00",
+      "entry": "complete F04-01-tabla-rivales-dualismo-paja"
+    },
+    {
+      "at": "2026-05-05T03:52:07+00:00",
+      "entry": "daemon-claim F06-03-4-strong-threshold-shopping"
+    },
+    {
+      "at": "2026-05-05T03:52:07+00:00",
+      "entry": "daemon-claim F03-06-kelso-1995-condiciones-no-medidas"
+    },
+    {
+      "at": "2026-05-05T03:52:32+00:00",
+      "entry": "complete TENG-03-gpu-batch-init-noise-compartido"
+    },
+    {
+      "at": "2026-05-05T03:52:32+00:00",
+      "entry": "daemon-claim F03-12-bunge-criterios-reemplazo-no-extension"
+    },
+    {
+      "at": "2026-05-05T03:52:47+00:00",
+      "entry": "complete F05-03-block-access-vs-phenomenal"
+    },
+    {
+      "at": "2026-05-05T03:52:47+00:00",
+      "entry": "daemon-claim F05-12-sre-beyer-sin-pdf"
+    },
+    {
+      "at": "2026-05-05T03:52:52+00:00",
+      "entry": "complete TENG-10-baselines-target-distinto-aparato"
+    },
+    {
+      "at": "2026-05-05T03:52:52+00:00",
+      "entry": "daemon-claim F04-06-wolfram-ruliad-asimetria-oculta"
+    },
+    {
+      "at": "2026-05-05T03:53:02+00:00",
+      "entry": "complete F04-03-dennett-real-patterns-mal-leido"
+    },
+    {
+      "at": "2026-05-05T03:53:03+00:00",
+      "entry": "daemon-claim F04-11-caso33-no-es-novel-fact-lakatos"
+    },
+    {
+      "at": "2026-05-05T03:53:08+00:00",
+      "entry": "complete F03-06-kelso-1995-condiciones-no-medidas"
+    },
+    {
+      "at": "2026-05-05T03:53:08+00:00",
+      "entry": "daemon-claim F04-08-eliminativismo-respuesta-incompleta"
+    },
+    {
+      "at": "2026-05-05T03:53:13+00:00",
+      "entry": "complete F04-05-trampa1-corpus-sintetico"
+    },
+    {
+      "at": "2026-05-05T03:53:13+00:00",
+      "entry": "daemon-claim F06-02-complementarismo-metodologico-neologismo"
+    },
+    {
+      "at": "2026-05-05T03:53:18+00:00",
+      "entry": "complete F02-09-bunge-cesm-no-declarado"
+    },
+    {
+      "at": "2026-05-05T03:53:18+00:00",
+      "entry": "complete F02-10-realismo-estructural-doble-rotulo"
+    },
+    {
+      "at": "2026-05-05T03:53:18+00:00",
+      "entry": "daemon-claim F02-13-quantum-compromiso-oculto"
+    },
+    {
+      "at": "2026-05-05T03:53:18+00:00",
+      "entry": "daemon-claim TENG-07-topology-dim-5-hardcoded"
+    },
+    {
+      "at": "2026-05-05T03:53:23+00:00",
+      "entry": "complete F02-11-bateson-dretske-incompatibles"
+    },
+    {
+      "at": "2026-05-05T03:53:28+00:00",
+      "entry": "complete TENG-05-caso19-edi-inconsistencia-interna"
+    },
+    {
+      "at": "2026-05-05T03:53:28+00:00",
+      "entry": "complete F06-03-4-strong-threshold-shopping"
+    },
+    {
+      "at": "2026-05-05T03:53:28+00:00",
+      "entry": "daemon-claim AU-6-multisonda-1-de-7"
+    },
+    {
+      "at": "2026-05-05T03:53:28+00:00",
+      "entry": "daemon-claim TENG-02-bootstrap-percentil-sesgo-pequenas"
+    },
+    {
+      "at": "2026-05-05T03:53:38+00:00",
+      "entry": "complete F05-10-19-26-promovidos-sin-significancia"
+    },
+    {
+      "at": "2026-05-05T03:53:38+00:00",
+      "entry": "daemon-claim F05-11-caso30-doble-elevacion-improcedente"
+    },
+    {
+      "at": "2026-05-05T03:53:43+00:00",
+      "entry": "complete F05-12-sre-beyer-sin-pdf"
+    },
+    {
+      "at": "2026-05-05T03:53:48+00:00",
+      "entry": "complete F04-06-wolfram-ruliad-asimetria-oculta"
+    },
+    {
+      "at": "2026-05-05T03:53:49+00:00",
+      "entry": "daemon-claim F04-10-compromiso-publico-vacio"
+    },
+    {
+      "at": "2026-05-05T03:54:09+00:00",
+      "entry": "complete F06-02-complementarismo-metodologico-neologismo"
+    },
+    {
+      "at": "2026-05-05T03:54:24+00:00",
+      "entry": "complete F04-08-eliminativismo-respuesta-incompleta"
+    },
+    {
+      "at": "2026-05-05T03:54:24+00:00",
+      "entry": "daemon-claim F04-09-caso30-v1-v2-cinturon-protector"
+    },
+    {
+      "at": "2026-05-05T03:54:39+00:00",
+      "entry": "complete F05-11-caso30-doble-elevacion-improcedente"
+    },
+    {
+      "at": "2026-05-05T03:54:44+00:00",
+      "entry": "complete F04-11-caso33-no-es-novel-fact-lakatos"
+    },
+    {
+      "at": "2026-05-05T03:54:44+00:00",
+      "entry": "complete F04-10-compromiso-publico-vacio"
+    },
+    {
+      "at": "2026-05-05T03:54:55+00:00",
+      "entry": "complete F02-13-quantum-compromiso-oculto"
+    },
+    {
+      "at": "2026-05-05T03:54:55+00:00",
+      "entry": "daemon-claim F02-14-numeracion-tablas-doble"
+    },
+    {
+      "at": "2026-05-05T03:55:00+00:00",
+      "entry": "complete F03-12-bunge-criterios-reemplazo-no-extension"
+    },
+    {
+      "at": "2026-05-05T03:55:10+00:00",
+      "entry": "complete TENG-07-topology-dim-5-hardcoded"
+    },
+    {
+      "at": "2026-05-05T03:55:10+00:00",
+      "entry": "complete AU-6-multisonda-1-de-7"
+    },
+    {
+      "at": "2026-05-05T03:55:10+00:00",
+      "entry": "daemon-claim AU-9-edi-negativo-no-es-null"
+    },
+    {
+      "at": "2026-05-05T03:56:11+00:00",
+      "entry": "complete TENG-02-bootstrap-percentil-sesgo-pequenas"
+    },
+    {
+      "at": "2026-05-05T03:56:11+00:00",
+      "entry": "daemon-claim TENG-04-c2-cpu-vs-gpu-semillas-divergentes"
+    },
+    {
+      "at": "2026-05-05T03:56:16+00:00",
+      "entry": "complete F04-09-caso30-v1-v2-cinturon-protector"
+    },
+    {
+      "at": "2026-05-05T03:56:52+00:00",
+      "entry": "complete AU-9-edi-negativo-no-es-null"
+    },
+    {
+      "at": "2026-05-05T03:56:52+00:00",
+      "entry": "daemon-claim F06-01-1500-fp-totem-7-veces"
+    },
+    {
+      "at": "2026-05-05T03:57:32+00:00",
+      "entry": "complete TENG-04-c2-cpu-vs-gpu-semillas-divergentes"
+    },
+    {
+      "at": "2026-05-05T03:57:32+00:00",
+      "entry": "daemon-claim TENG-08-c1-or-fallback-permite-edi-negativo"
+    },
+    {
+      "at": "2026-05-05T03:57:58+00:00",
+      "entry": "complete F02-14-numeracion-tablas-doble"
+    },
+    {
+      "at": "2026-05-05T03:57:58+00:00",
+      "entry": "daemon-claim F02-15-panpsiquismo-russelliano-caricaturizado"
+    },
+    {
+      "at": "2026-05-05T03:58:43+00:00",
+      "entry": "complete F06-01-1500-fp-totem-7-veces"
+    },
+    {
+      "at": "2026-05-05T03:58:43+00:00",
+      "entry": "daemon-claim F06-04-cinco-escenarios-cuatro-iguales"
+    },
+    {
+      "at": "2026-05-05T03:58:43+00:00",
+      "entry": "daemon-claim AU-4-significance-theater-21-22"
+    },
+    {
+      "at": "2026-05-05T03:58:59+00:00",
+      "entry": "complete TENG-08-c1-or-fallback-permite-edi-negativo"
+    },
+    {
+      "at": "2026-05-05T03:58:59+00:00",
+      "entry": "daemon-claim TENG-06-np-random-seed-global-correlaciona-workers"
+    },
+    {
+      "at": "2026-05-05T03:59:24+00:00",
+      "entry": "complete F02-15-panpsiquismo-russelliano-caricaturizado"
+    },
+    {
+      "at": "2026-05-05T04:00:05+00:00",
+      "entry": "complete F06-04-cinco-escenarios-cuatro-iguales"
+    },
+    {
+      "at": "2026-05-05T04:00:10+00:00",
+      "entry": "complete TENG-06-np-random-seed-global-correlaciona-workers"
+    },
+    {
+      "at": "2026-05-05T04:00:10+00:00",
+      "entry": "daemon-claim TENG-09-bias-correction-no-estacionariedad"
+    },
+    {
+      "at": "2026-05-05T04:00:35+00:00",
+      "entry": "complete AU-4-significance-theater-21-22"
+    },
+    {
+      "at": "2026-05-05T04:00:35+00:00",
+      "entry": "daemon-claim AU-8-1500-fp-totem"
+    },
+    {
+      "at": "2026-05-05T04:00:40+00:00",
+      "entry": "daemon-claim SI-4a610a57"
+    },
+    {
+      "at": "2026-05-05T04:00:41+00:00",
+      "entry": "daemon-claim SI-947ba0e2"
+    },
+    {
+      "at": "2026-05-05T04:00:41+00:00",
+      "entry": "daemon-claim SI-4a610a57"
+    },
+    {
+      "at": "2026-05-05T04:00:41+00:00",
+      "entry": "daemon-claim SI-b1a18bd9"
+    },
+    {
+      "at": "2026-05-05T04:00:41+00:00",
+      "entry": "daemon-claim SI-9b45f9ff"
+    },
+    {
+      "at": "2026-05-05T04:00:41+00:00",
+      "entry": "daemon-claim AD-aa52bf8f"
+    },
+    {
+      "at": "2026-05-05T04:00:41+00:00",
+      "entry": "daemon-claim AD-7b662148"
+    },
+    {
+      "at": "2026-05-05T04:00:42+00:00",
+      "entry": "daemon-claim AD-4e0533a5"
+    },
+    {
+      "at": "2026-05-05T04:00:42+00:00",
+      "entry": "daemon-claim AD-0409520d"
+    },
+    {
+      "at": "2026-05-05T04:00:42+00:00",
+      "entry": "daemon-claim AD-d8fb8286"
+    },
+    {
+      "at": "2026-05-05T04:00:48+00:00",
+      "entry": "daemon-claim SI-4a610a57"
+    },
+    {
+      "at": "2026-05-05T04:00:53+00:00",
+      "entry": "daemon-claim SI-4a610a57"
     }
   ],
-  "updated_at": "2026-05-05T03:46:23+00:00",
+  "updated_at": "2026-05-05T04:00:53+00:00",
   "stopped_at": "2026-05-05T03:44:51+00:00"
 }

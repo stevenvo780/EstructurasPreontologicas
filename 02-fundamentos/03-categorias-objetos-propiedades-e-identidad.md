@@ -49,6 +49,8 @@ Esto rechaza el objeto como sustancia simple autosuficiente y rechaza también e
 
 **Tabla 2.3.1.**
 
+**Tabla 2.3.1.**
+
 | Tipo | Definición | Ejemplos |
 |---|---|---|
 | **Compacto** | Continuidad material relativamente clara, límites estables | piedras, herramientas, moléculas |
@@ -129,6 +131,8 @@ Una frontera es real si su trazado mejora la legibilidad del patrón sin destrui
 - ¿dónde termina la mente y empieza el entorno técnico-social que la soporta? Frontera funcional/pragmática: depende del fenómeno (cognición situada, herramienta, prótesis).
 
 ## 6. Qué se evita con esta cuadrícula
+
+**Tabla 2.3.2.**
 
 **Tabla 2.3.2.**
 

@@ -14,6 +14,8 @@ Listado consolidado de **todas las limitaciones que la tesis declara explícitam
 
 **Tabla 4.5.1.**
 
+**Tabla 4.5.1.**
+
 | # | Limitación | Origen | Resolución actual | Entregable |
 |---|-----------|--------|-------------------|------------|
 | L1 | p-value mal calibrado (tasa empírica de tipo I ≈ 24 %, no 5 %) | Hostile testing N3 | Cerrada metodológicamente: el módulo `common/calibration.py` implementa block bootstrap (Politis y Romano 1994), Newey-West HAC (Newey y West 1987) y corrección Holm-Bonferroni (Holm 1979, "A simple sequentially rejective multiple test procedure", *Scand. J. Statist.* 6: 65–70; referencia bibliográfica sin PDF en `07-bibliografia/`, paginación verbatim no verificable en esta pasada). Aplicada al corpus inter-dominio, 14 casos del corpus inter-dominio + 8 del corpus multiescala = 22 casos sobreviven Holm-Bonferroni a α=0.05; los 4 casos macro `overall_pass=True` están entre los sobrevivientes. La inferencia formal sigue requiriendo invocación desde `edi_engine.py` con flag `--calibrated` en la ejecución final. | Re-ejecución del corpus con flag activo (≈ 3 semanas) |
@@ -28,6 +30,8 @@ Listado consolidado de **todas las limitaciones que la tesis declara explícitam
 ## 2. Limitaciones empíricas declaradas
 
 **Tabla A.0.2.**
+
+**Tabla 4.5.2.**
 
 **Tabla 4.5.2.**
 
@@ -46,6 +50,8 @@ Listado consolidado de **todas las limitaciones que la tesis declara explícitam
 
 **Tabla 4.5.3.**
 
+**Tabla 4.5.3.**
+
 | # | Limitación | Origen | Plazo | Entregable |
 |---|-----------|--------|-------|------------|
 | L11 | κ-ontológica fuerte no demostrada; sólo κ-pragmática | Cap 02-01 §Nota sobre κ | El módulo `common/independent_probes.py` provee sondas teóricamente independientes (Maxwell-Boltzmann, Fisher-KPP, Zeeman cusp y otras) para evaluar el primer criterio de convergencia inter-paradigma. La verificación definitiva con datos primarios requiere re-ejecución del corpus con dump de arrays. | Programa multi-sonda con datos reales + revisión externa |
@@ -60,6 +66,8 @@ Listado consolidado de **todas las limitaciones que la tesis declara explícitam
 ## 4. Limitaciones procedimentales (bloqueadores externos)
 
 **Tabla A.0.4.**
+
+**Tabla 4.5.4.**
 
 **Tabla 4.5.4.**
 
@@ -101,6 +109,8 @@ Los siguientes módulos resuelven o reducen seis limitaciones sin re-ejecutar el
 
 **Tabla 4.5.5.**
 
+**Tabla 4.5.5.**
+
 | Módulo | Limitación afectada | Resolución | Ruta |
 |--------|---------------------|------------|------|
 | Calibración estadística | L1 (p-value mal calibrado) | Cerrada metodológicamente | `09-simulaciones-edi/common/calibration.py` |
@@ -117,6 +127,8 @@ La corrección FWER Holm-Bonferroni sobre los 30 casos del corpus inter-dominio 
 La aplicación caso por caso de los módulos a los casos no invariantes produce los siguientes veredictos:
 
 **Tabla A.0.6.**
+
+**Tabla 4.5.6.**
 
 **Tabla 4.5.6.**
 
@@ -142,6 +154,8 @@ Bajo `common/power_analysis.py` se distingue entre `null_real` (potencia ≥ 0.8
 
 **Tabla 4.5.7.**
 
+**Tabla 4.5.7.**
+
 | Categoría | n | Implicación |
 |-----------|--:|-------------|
 | No null (EDI > 0.10) | 23 | Casos con señal detectable |
@@ -157,6 +171,8 @@ El módulo de calibración estadística controla falsos positivos por autocorrel
 Si en defensa una limitación es señalada por el tribunal, la respuesta canónica del manuscrito es:
 
 **Tabla A.0.8.**
+
+**Tabla 4.5.8.**
 
 **Tabla 4.5.8.**
 

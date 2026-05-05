@@ -12,6 +12,8 @@ Síntesis de la discriminación pública contra catorce posiciones rivales. Cada
 
 **Tabla 4.3.1.**
 
+**Tabla 4.3.1.**
+
 | Código | Criterio |
 |--------|----------|
 | **A** | Anclaje material sin reducción a partículas |
@@ -26,6 +28,8 @@ Síntesis de la discriminación pública contra catorce posiciones rivales. Cada
 ## Tabla síntesis (14 rivales)
 
 **Tabla A.4.2.**
+
+**Tabla 4.3.2.**
 
 **Tabla 4.3.2.**
 
@@ -51,6 +55,8 @@ Síntesis de la discriminación pública contra catorce posiciones rivales. Cada
 ## La tesis (irrealismo operativo) en la matriz
 
 **Tabla A.4.3.**
+
+**Tabla 4.3.3.**
 
 **Tabla 4.3.3.**
 
