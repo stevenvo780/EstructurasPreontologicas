@@ -30,10 +30,6 @@ Astrofísica masiva ~10¹⁷-10²⁰m  ~10¹⁴ s         Caso 40 (Cúmulo globu
 
 **Tabla 5.6.1.**
 
-**Tabla 5.6.1.**
-
-**Tabla 5.6.1.**
-
 | # | Caso | Escala | EDI | p | Sonda |
 |---|------|--------|----:|--:|-------|
 | 32 | Espín-órbita | Atómica | 0.83 | 0.000 | H_eff con coupling |
@@ -48,19 +44,11 @@ Astrofísica masiva ~10¹⁷-10²⁰m  ~10¹⁴ s         Caso 40 (Cúmulo globu
 
 **Tabla 5.6.2.**
 
-**Tabla 5.6.2.**
-
-**Tabla 5.6.2.**
-
 | # | Caso | Escala | EDI | Comentario |
 |---|------|--------|----:|------------|
 | 35 | Ciclo celular | Celular | 0.13 | Tyson-Novak; señal genuina pero menor |
 
 ### 2.3. Casos null honestos (Nivel 0) y failure modes
-
-**Tabla 5.6.3.**
-
-**Tabla 5.6.3.**
 
 **Tabla 5.6.3.**
 
@@ -109,10 +97,6 @@ Bajo este criterio, el corpus multiescala produce **7 strong en 7 escalas distin
 - **La discriminación strong/null es robusta** a la elección de escala: el aparato no produce strong indiscriminadamente.
 
 ## 5. Cómo conecta con el corpus macro original
-
-**Tabla 5.6.4.**
-
-**Tabla 5.6.4.**
 
 **Tabla 5.6.4.**
 
@@ -166,10 +150,6 @@ Una crítica posible: *"el aparato funciona en muchas escalas porque es estadís
 ### 7.4. Lo que esto cambia respecto a la primera iteración del manuscrito
 
 La primera iteración era **ontología regional macro-poblacional con extensión multiescalar opcional**. Después del corpus inter-escala y la auditoría V4 con narrativa unificada, la tesis es:
-
-**Tabla 5.6.5.**
-
-**Tabla 5.6.5.**
 
 **Tabla 5.6.5.**
 

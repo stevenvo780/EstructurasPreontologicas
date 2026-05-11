@@ -22,7 +22,7 @@ Defiendo una tesis ontológica-epistemológica-metodológica **triple general y 
 
 **Aparato (metodología general):** cinco operadores formales (μ, G, H, κ, ε) invariantes a la escala, asimetría L1↔B↔L3↔S como protocolo, dossier de anclaje de catorce componentes, métrica EDI calculada por intervención ablativa con permutación 999 y bootstrap 500, protocolo C1-C5, suite ST de 24 teorías formales.
 
-**Justificación operativa (40 casos):** **corpus inter-dominio:** 4 casos `overall_pass=True` strong (Energía 0.65, Deforestación 0.60, Kessler 0.35, Riesgo Biológico 0.33), 1 strong sin gate (Microplásticos 0.78), 8 weak (incluido caso 30 behavioral dynamics 0.26), 3 controles de falsación correctamente rechazados. **Corpus inter-escala:** 7 strong en 7 escalas distintas (atómica, cuántica, bioquímica, celular oscilatoria, individual, astrofísica, astrofísica masiva). Hostile testing severo: 0/1500 falsos positivos del gate completo bajo random walk masivo. Discriminación pública contra catorce rivales identificables, incluido Wolfram Physics Project (con piloto Rule 110 ejecutado mostrando convivencia de irreducibilidad micro y cierre macro detectable).
+**Justificación operativa (40 casos):** **corpus inter-dominio:** 4 casos `overall_pass=True` strong (Energía 0.65, Deforestación 0.60, Kessler 0.35, Riesgo Biológico 0.33), 1 strong sin gate (Microplásticos 0.78), 8 weak (incluido caso 30 behavioral dynamics 0.26), 3 controles de falsación correctamente rechazados. **Corpus inter-escala:** 7 strong en 7 escalas distintas (atómica, cuántica, bioquímica, celular oscilatoria, individual, astrofísica, astrofísica masiva). Hostile testing severo: 0/2000 falsos positivos del gate completo bajo random walk masivo (Wilson 95 % CI [0, 0.00191], suma de N1+V4_06+N5). Discriminación pública contra catorce rivales identificables, incluido Wolfram Physics Project (con piloto Rule 110 ejecutado mostrando convivencia de irreducibilidad micro y cierre macro detectable).
 
 **Lección epistémica clave:** el aparato rechazó el caso 30 v1 (EDI=0.002) a pesar de que el equipo lo construyó con expectativa de aceptación. La sonda mejorada v2 produjo Nivel 3 weak honesto. **El aparato funciona porque rechaza honestamente cuando debe rechazar.** Los 40 casos son justificación operativa del marco tripartito; **NO son la tesis**. La tesis son los tres marcos generales; los casos muestran que sus afirmaciones son ejecutables, discriminantes y transferibles entre escalas.
 
@@ -57,7 +57,7 @@ Cinco operadores formales (μ medición, G grafo, H hipergrafo, κ compresión, 
 
 - **7 strong en 7 escalas distintas:** decoherencia cuántica (10⁻⁹ m), espín-órbita atómica (10⁻¹⁰ m), Michaelis-Menten bioquímica (10⁻⁸ m), NF-κB celular oscilatoria (10⁻⁵ m), HRV cardíaco individual (1 m), Cefeida pulsante (10¹¹ m), cúmulo globular (10²⁰ m).
 
-**Hostile testing severo:** 0/1500 falsos positivos del gate completo bajo random walk masivo, 0/12 circularidad detectada en test cruzado de sondas inter-escala, suite ST con 6 hallazgos críticos detectados y corregidos. Sondas secundarias re-aplicadas a arrays primarios reales (no proxys derivados): 1/7 converge bajo \|ΔEDI\| ≤ 0.10 — limitación honestamente reportada.
+**Hostile testing severo:** 0/2000 falsos positivos del gate completo bajo random walk masivo (Wilson 95 % CI [0, 0.00191]), 0/12 circularidad detectada en test cruzado de sondas inter-escala, suite ST con 6 hallazgos críticos detectados y corregidos. Sondas secundarias re-aplicadas a arrays primarios reales (no proxys derivados): 1/7 converge bajo \|ΔEDI\| ≤ 0.10 — limitación honestamente reportada.
 
 **Los 40 casos son justificación operativa del marco tripartito; no son la tesis.** La tesis son los tres marcos generales; los casos muestran que sus afirmaciones son ejecutables, discriminantes y transferibles entre escalas.
 
@@ -111,7 +111,7 @@ Catorce componentes obligatorios para cualquier categoría candidata: pregunta f
 
 **Corpus inter-escala (10 casos)** desde dinámica subatómica hasta cosmológica, **30 órdenes de magnitud** espaciales y temporales: **7 strong en 7 escalas distintas** — atómica (espín-órbita), cuántica (decoherencia), bioquímica (Michaelis-Menten), celular oscilatoria (NF-κB), individual (HRV cardíaco), astrofísica (Cefeida), astrofísica masiva (cúmulo globular). 1 weak (ciclo celular Tyson-Novak), 2 nulls honestos (Villin Headpiece bajo sonda equilibrio inadecuada; locomoción τ-dot bajo observación con reinicios).
 
-**Hostile testing severo:** 0/1500 falsos positivos del gate completo bajo random walk masivo, 0/12 circularidad detectada en test cruzado de sondas inter-escala. Reproducibilidad verificada: caso 16 Deforestación re-ejecutado con datos World Bank descargados en vivo, EDI=0.580 vs referencia 0.602 (variabilidad <4%, mismo Nivel 4).
+**Hostile testing severo:** 0/2000 falsos positivos del gate completo bajo random walk masivo (Wilson 95 % CI [0, 0.00191]), 0/12 circularidad detectada en test cruzado de sondas inter-escala. Reproducibilidad verificada: caso 16 Deforestación re-ejecutado con datos World Bank descargados en vivo, EDI=0.580 vs referencia 0.602 (variabilidad <4%, mismo Nivel 4).
 
 ### 8. El caso 30 como prueba de disciplina (1.5 minutos)
 

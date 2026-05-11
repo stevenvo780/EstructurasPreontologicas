@@ -101,10 +101,6 @@ La filosofía latinoamericana de la ciencia tiene tradición sistemista fuerte (
 
 **Tabla 1.3.1.**
 
-**Tabla 1.3.1.**
-
-**Tabla 1.3.1.**
-
 | Subcampo | Posición consolidada | Posición de la tesis | Discriminación específica |
 |----------|----------------------|----------------------|---------------------------|
 | Mente postcognitivista | Acoplamiento organismo-entorno como tesis general | Cuantificación EDI del cierre operativo en behavioral dynamics | Caso 30 cuantitativo + caso 05-05 cualitativo |

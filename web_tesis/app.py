@@ -31,6 +31,7 @@ try:
         refresh_dataset,
         resolve_case,
         resolve_chapter,
+        resolve_chapter_extra,
         render_markdown,
         render_markdown_with_toc,
     )
@@ -47,6 +48,7 @@ except ImportError:
         refresh_dataset,
         resolve_case,
         resolve_chapter,
+        resolve_chapter_extra,
         render_markdown,
         render_markdown_with_toc,
     )
@@ -267,12 +269,22 @@ def _chapter_summary_dict(ch: dict[str, Any]) -> dict[str, Any]:
                 "path": d.get("path", ""),
             }
         )
+    extras_simple = [
+        {
+            "name": e.get("name"),
+            "title": e.get("title"),
+            "extends": e.get("extends"),
+            "mtime": e.get("mtime"),
+        }
+        for e in ch.get("extras", []) or []
+    ]
     return {
         "slug": ch.get("slug"),
         "code": ch.get("code"),
         "title": ch.get("title"),
         "description": ch.get("description"),
         "docs": docs_simple,
+        "extras": extras_simple,
     }
 
 
@@ -355,6 +367,40 @@ async def api_chapter(slug: str, refresh: bool = Query(default=False)):
     if not chapter:
         raise HTTPException(status_code=404, detail=f"Capítulo no encontrado: {slug}")
     return JSONResponse(_chapter_full_dict(chapter))
+
+
+@app.get("/api/chapters/{slug}/extras", response_class=JSONResponse)
+async def api_chapter_extras(slug: str, refresh: bool = Query(default=False)):
+    chapter = resolve_chapter(slug, refresh=refresh)
+    if not chapter:
+        raise HTTPException(status_code=404, detail=f"Capítulo no encontrado: {slug}")
+    return JSONResponse(
+        {
+            "slug": slug,
+            "extras": [
+                {
+                    "name": e.get("name"),
+                    "title": e.get("title"),
+                    "extends": e.get("extends"),
+                    "mtime": e.get("mtime"),
+                }
+                for e in chapter.get("extras", []) or []
+            ],
+        }
+    )
+
+
+@app.get("/api/chapters/{slug}/extras/{name}", response_class=JSONResponse)
+async def api_chapter_extra(slug: str, name: str, refresh: bool = Query(default=False)):
+    # `refresh` invalida el cache global para reflejar archivos recién añadidos
+    if refresh:
+        refresh_dataset()
+    extra = resolve_chapter_extra(slug, name)
+    if not extra:
+        raise HTTPException(
+            status_code=404, detail=f"Extra no encontrado: {slug}/_extendido/{name}"
+        )
+    return JSONResponse(extra)
 
 
 @app.get("/api/thesis", response_class=JSONResponse)

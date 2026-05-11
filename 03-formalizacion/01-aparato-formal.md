@@ -217,10 +217,6 @@ En el caso ancla canónico (locomoción humana hacia meta con obstáculo, capít
 
 **Tabla 3.1.1.**
 
-**Tabla 3.1.1.**
-
-**Tabla 3.1.1.**
-
 | Operador | Instanciación |
 |---|---|
 | Q | `¿qué dirección de marcha adopta un humano caminando hacia meta y evitando obstáculo?` con τ = error en `r²` ≤ 0.02 |
@@ -236,10 +232,6 @@ Este ejemplo no es ilustrativo: es la prueba de que el aparato opera empíricame
 ## 11. Ejemplo programático: sistemas técnicos
 
 En sistemas distribuidos los operadores se instancian programáticamente (sin medición experimental controlada equivalente al caso ancla):
-
-**Tabla 3.1.2.**
-
-**Tabla 3.1.2.**
 
 **Tabla 3.1.2.**
 

@@ -18,10 +18,6 @@ S  — semántica revisada                   : recoge las categorías que sobrev
 
 **Tabla 2.4.1.**
 
-**Tabla 2.4.1.**
-
-**Tabla 2.4.1.**
-
 | Escala | "Organismo" en B | "Entorno" en B | "Tarea" en B | "Historia" en B |
 |--------|------------------|-----------------|---------------|-----------------|
 | Cuántica (caso 31) | Qubit | Baño térmico | Mantener coherencia | Pulsos previos |
@@ -190,10 +186,6 @@ S (la semántica revisada: las categorías que sobreviven a la auditoría) se ga
 
 **Tabla 2.4.2.**
 
-**Tabla 2.4.2.**
-
-**Tabla 2.4.2.**
-
 | Tentación rechazada | Razón |
 |---|---|
 | Reduccionismo neurocéntrico | Sin tarea, entorno e historia, los circuitos no explican conducta |
@@ -234,7 +226,7 @@ La tesis lo opera como caso de B donde el entorno técnico se incorpora a las va
 
 Warren (2006, *Psychological Review* 113:358-389) proporciona el caso paradigmático trabajado del nivel B. La tesis central del programa es que el comportamiento adaptativo no está impuesto por un controlador interno sino que emerge de la interacción agente–entorno bajo restricciones físicas, informacionales y de tarea. Cita verificada en PDF: *"Adaptive behavior, rather than being imposed by a preexisting structure, emerges from this confluence of constraints under the boundary condition of a particular task or goal"* (Warren 2006, p. 358). La formulación dinámica de la locomoción dirigida: ecuación de heading de segundo orden con parámetros ajustados (b = 3.25, k_g = 7.50, c1 = 0.40, c2 = 0.40), que reproduce el r² = .980 de la varianza de las series temporales medias (Warren 2006, p. 375).
 
-La tesis recoge el caso Warren como demostración cualitativa (capítulo 05-05) y lo eleva a versión cuantitativa-EDI (caso 30 del corpus). Warren queda como **interlocutor principal de B**: vocabulario operativo (atractor, repulsor, bifurcación, ley de control, dinámica intrínseca, acoplamiento) y caso ancla. La complementariedad cualitativa (Warren 2006, p. 375, r² = 0.980 individual sobre la ecuación de heading citada arriba) y cuantitativa (caso 30 EDI = 0.262, weak poblacional) cubre dos escalas temporales del fenómeno.
+La tesis recoge el caso Warren como demostración cualitativa (capítulo 05-05) y lo eleva a versión cuantitativa-EDI (caso 30 del corpus). Warren queda como **interlocutor principal de B**: vocabulario operativo (atractor, repulsor, bifurcación, ley de control, dinámica intrínseca, acoplamiento) y caso ancla. Warren es explícito sobre el alcance del ajuste individual: *"The fits to the mean time series accounted for a proportion of .980 of the variance, indicating that model behavior is highly similar to the mean human behavior"* (Warren 2006, p. 375). La tesis lee este resultado como cota superior del nivel B en escala intra-sesión (sondas dinámicas con parámetros fijos sobre series promediadas) y lo confronta con el caso 30 EDI = 0.262 (weak poblacional), que opera en escala inter-sujeto agregada. La asimetría entre r² ≈ 0.98 individual y EDI ≈ 0.26 poblacional no es contradicción: indica que el acoplamiento informacional dominante a escala de un agente se diluye al promediar trayectorias heterogéneas, lo cual es predicción operativa del propio programa de Warren (ley de control intrínseca + condiciones de tarea variables).
 
 ## 11. Consecuencia para el aparato formal
 

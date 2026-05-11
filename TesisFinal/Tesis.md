@@ -249,6 +249,8 @@ Listas de soporte editorial requeridas por el formato de tesis doctoral instituc
 
 **Tabla A.9.1.**
 
+**Tabla 0.6.1.**
+
 | Figura | Título | Capítulo |
 |--------|--------|----------|
 | Fig. 2.1 | Cuatro modos de realidad operativa | 02-01 |
@@ -267,6 +269,8 @@ Listas de soporte editorial requeridas por el formato de tesis doctoral instituc
 ## A.9.2. Lista de tablas
 
 **Tabla A.9.2.**
+
+**Tabla 0.6.2.**
 
 | Tabla | Título | Capítulo |
 |-------|--------|----------|
@@ -295,6 +299,8 @@ Listas de soporte editorial requeridas por el formato de tesis doctoral instituc
 
 **Tabla A.9.3.**
 
+**Tabla 0.6.3.**
+
 | Símbolo | Significado | Capítulo |
 |---------|-------------|----------|
 | μ | Operador de medición; recorta R en X observable | 03-01 |
@@ -303,12 +309,17 @@ Listas de soporte editorial requeridas por el formato de tesis doctoral instituc
 | κ | Operador de compresión multiescala | 03-01 / 03-04 |
 | ε | Operador de errores de traducción | 03-01 |
 | φ, ψ | Heading actual y heading de meta (caso 30) | 05-05 / 09-30 |
-| τ | Razón tamaño-óptico / tasa-de-cambio (Lee 1976) | 02-04 |
+| τ ≡ θ/θ̇ | Razón entre tamaño angular óptico θ y su tasa de cambio θ̇; según la formulación que Lee (1976) introduce y desarrolla en *Perception* 5(4):437-459, especifica tiempo-hasta-contacto bajo aproximación de velocidad constante (locus pp. 439-441; mención secundaria declarada — ver nota [a]) | 02-04 |
 | β | Error de heading φ − ψ_g | 02-04 |
+
+
+[a] Lee, D. N. (1976). "A theory of visual control of braking based on information about time-to-collision." *Perception* 5(4):437-459. La definición canónica de τ como razón entre tamaño angular óptico (θ) y su tasa de cambio (θ̇), especificando tiempo hasta contacto, se localiza en pp. 439-441 (locus declarado posicionalmente; PDF no disponible en `07-bibliografia/` al cierre — referencia bibliográfica verificada contra la entrada canónica del journal *Perception*, vol. 5). Deuda: verificación textual con paginación exacta pendiente cuando el PDF se incorpore al repositorio.
 
 ### Métricas y protocolos
 
 **Tabla A.9.4.**
+
+**Tabla 0.6.4.**
 
 | Sigla | Significado | Capítulo |
 |-------|-------------|----------|
@@ -325,6 +336,8 @@ Listas de soporte editorial requeridas por el formato de tesis doctoral instituc
 
 **Tabla A.9.5.**
 
+**Tabla 0.6.5.**
+
 | Nivel | Categoría | Definición operativa |
 |------:|-----------|----------------------|
 | 0 | Null | EDI ≤ 0 o sin estructura macro |
@@ -340,6 +353,8 @@ Listas de soporte editorial requeridas por el formato de tesis doctoral instituc
 
 **Tabla A.9.6.**
 
+**Tabla 0.6.6.**
+
 | Sigla | Registro | Capítulo |
 |-------|----------|----------|
 | L1 | Psicológico-ordinario (preguntas comunicables) | 02-04 |
@@ -350,6 +365,8 @@ Listas de soporte editorial requeridas por el formato de tesis doctoral instituc
 ### Instituciones y datasets
 
 **Tabla A.9.7.**
+
+**Tabla 0.6.7.**
 
 | Sigla | Significado |
 |-------|-------------|
@@ -561,6 +578,8 @@ CI bootstrap, modos de fallo, LoE, val_steps reportados con su implicación infe
 
 **Tabla A.1.1.**
 
+**Tabla 0.7.1.**
+
 | LoE | Descripción | Ejemplos |
 |----:|-------------|----------|
 | 1 | Especulativo | Proxies indirectos, encuestas subjetivas, datos sintéticos sin ground truth |
@@ -621,7 +640,7 @@ Coupling ABM↔ODE: la sonda macro afecta a la dinámica micro y viceversa cuand
 Marco teórico de Warren (2006): comportamiento adaptativo orientado a meta sin postular controlador centralizado. La organización emerge de la interacción agente-entorno bajo restricciones físicas, informacionales y de tarea.
 
 ### Variable τ (tau)
-Razón entre tamaño angular óptico y su tasa de cambio. Especifica tiempo hasta contacto (Lee 1976).
+Razón entre tamaño angular óptico (θ) y su tasa de cambio (θ̇). Especifica tiempo hasta contacto sin requerir conocimiento explícito de distancia ni velocidad absoluta. Referencia canónica: Lee, D. N. (1976). "A theory of visual control of braking based on information about time-to-collision." *Perception* 5(4):437-459 (definición pp. 439-441, locus declarado posicionalmente; PDF no disponible en `07-bibliografia/` al cierre — verificación textual con paginación exacta pendiente como deuda menor cuando el PDF se incorpore). Capítulo 02-04.
 
 ### Variable τ_bal
 `θ/θ̇`. Razón entre ángulo del palo y velocidad angular. Especifica tiempo hasta vertical (Foo, Kelso, Guzman 2000).
@@ -754,7 +773,7 @@ Tres oleadas:
 
 - ¿es la representación necesaria a algún nivel cognitivo? Debate entre Clark (2008, *Supersizing the Mind*) y Hutto-Myin (2013, *Radicalizing Enactivism*).
 - ¿basta la dinámica acoplada para explicar fenómenos cognitivos de alto nivel (lenguaje, planificación)? Open question post-Thompson 2007.
-- ¿se puede integrar con neurociencia computacional sin recaer en cognitivismo? Programa de active inference (Friston 2010) y predictive processing (Clark 2013) intenta esa síntesis.
+- ¿se puede integrar con neurociencia computacional sin recaer en cognitivismo? El programa de **active inference** (Friston 2010, *Nat. Rev. Neurosci.* 11:127-138) postula la minimización de energía libre variacional como principio unificador del cerebro: los sistemas auto-organizados resisten la disipación entrópica acotando estados sorprendentes mediante un modelo generativo interno. El **predictive processing** de Clark (2013, *BBS* 36:181-204) extiende esa lectura a una arquitectura jerárquica de predicción descendente y error de predicción ascendente, donde el agente situado es esencialmente un motor bayesiano que minimiza error. **Discrepancia con la tesis:** ambos marcos cargan el peso explicativo en un *modelo generativo interno* del agente y comprometen ontológicamente con representaciones probabilísticas en el cerebro como variables causales primarias; la tesis, en cambio, opera con estructuras pre-ontológicas relacionales cuyo cierre operativo κ se mide por intervención ablativa sobre el acoplamiento organismo-entorno (no por adecuación bayesiana de un modelo interno). La tesis no niega que la inferencia activa describa correctamente *parte* del fenómeno —Friston/Clark son compatibles con la dinámica acoplada cuando se reinterpretan como descripción macro—, pero rechaza la inversión que vuelve el modelo generativo en sustancia ontológica primaria. *Deuda declarada:* este capítulo no incluye cita textual paginada de Friston 2010 ni Clark 2013; ambos PDFs no están en `07-bibliografia/`. Referencia posicional con coordenadas canónicas; engagement textual pendiente (CLAUDE.md §5).
 
 ### 1.3. Hueco que la tesis ocupa
 
@@ -827,7 +846,7 @@ Warren (2006) ofrece la conjetura cualitativa con r²=0.980 entre datos experime
 ### 5.1. Líneas principales
 
 - **Mario Bunge.** Argentino-canadiense, sistemismo, materialismo emergentista científico. *Treatise on Basic Philosophy* (1974–1989, 8 vols.); *Buscar la filosofía en las ciencias sociales* (1995); *Crisis y reconstrucción de la filosofía* (2002). Es interlocutor sustantivo de la tesis: el sistemismo es esquema afín, pero la tesis exige criterio empírico operativo más estricto.
-- **Guillermo Hoyos Vásquez** (Colombia, 1935–2013). Filosofía hermenéutica, ciencia y comunidad. Relevante para la dimensión normativa.
+- **Guillermo Hoyos Vásquez** (filósofo colombiano, 1935–2013). Filosofía hermenéutica, ciencia y comunidad. Relevante para la dimensión normativa.
 - **Jaime Salas Echeverri** (Universidad de Antioquia). Filosofía analítica latinoamericana.
 - **Fernando Salmerón** (México), **Carlos Ulises Moulines** (México-Alemania, estructuralismo de teorías). Aporte a metateoría científica.
 - **Eduardo Rabossi** (Argentina), **Carlos Pereda** (Argentina-México). Filosofía analítica.
@@ -845,8 +864,10 @@ La filosofía latinoamericana de la ciencia tiene tradición sistemista fuerte (
 | Mente postcognitivista | Acoplamiento organismo-entorno como tesis general | Cuantificación EDI del cierre operativo en behavioral dynamics | Caso 30 cuantitativo + caso 05-05 cualitativo |
 | Ontología analítica | Realismo estructural óntico (Ladyman-Ross) o sistemismo (Bunge) | Realismo estructural moderado + materialidad + EDI | Filtro empírico operativo no presente en rivales |
 | Complejidad computacional | Emergencia causal (Hoel) o irreducibilidad (Wolfram) | Cierre operativo κ vía EDI multidominio | Dossier reproducible + falsación rechazada |
-| Behavioral dynamics | Acoplamiento dinámico cualitativo (Warren 2006) | Versión cuantitativa Nivel 3 weak (caso 30) | Discriminación pública contra cognitivismo |
+| Behavioral dynamics | Acoplamiento dinámico cualitativo (Warren, 2006) | Versión cuantitativa Nivel 3 weak (caso 30) | Discriminación pública contra cognitivismo |
 | Filosofía latinoamericana | Sistemismo (Bunge) o hermenéutica (Hoyos) | Puente operativo entre sistemismo y validación cuantitativa | Aparato EDI multidominio |
+
+Sobre la celda *Behavioral dynamics*: Warren (2006) sostiene literalmente que «for a given task, the agent and its environment are treated as a pair of dynamical systems that are coupled mechanically and informationally. Their interactions give rise to the behavioral dynamics, a vector field with attractors that correspond to stable task solutions, repellers that correspond to avoided states, and bifurcations that correspond to behavioral transitions» (Warren, 2006, p. 358), y precisa que «stable behavioral solutions correspond to attractors in the behavioral dynamics, and transitions between behavioral patterns correspond to bifurcations. Such stabilities do not inhere a priori in the structure of the environment or in the structure of the agent but are codetermined by the confluence of task constraints and perceptual–motor control laws» (Warren, 2006, p. 359). El programa es cualitativo: enuncia atractores y bifurcaciones como descriptores conceptuales del acoplamiento agente–entorno sin un criterio empírico cuantitativo de admisión del cierre operativo. La tesis discrimina ahí: convierte ese "codetermined by the confluence of task constraints" en una métrica EDI con permutación 999 + bootstrap 500 (caso 30, Nivel 3 weak), permitiendo decidir empíricamente cuándo el acoplamiento es no trivial. <!-- BORRADOR-IA · requires: H-J* (voz autoral final de Jacob) -->
 
 ## 7. Contribución específica
 
@@ -1000,7 +1021,7 @@ Cada columna representa una **instancia particular** de los mismos cuatro invari
 
 Un escéptico podría decir: *"el aparato funciona a múltiples escalas porque es estadístico genérico; eso no demuestra ontología, sólo capacidad descriptiva"*. La respuesta de la tesis tiene tres partes:
 
-1. **Si el aparato fuera estadístico genérico, sus controles de falsación NO se rechazarían** (random walk, no-estacionariedad, observabilidad). Pero los 3 controles del corpus inter-dominio se rechazan correctamente, y los 1500 random walks bajo hostile testing producen 0 falsos positivos del gate completo. Esto significa que el aparato **discrimina entre dinámica con cierre operativo y dinámica sin él**, no solo describe trayectorias.
+1. **Si el aparato fuera estadístico genérico, sus controles de falsación NO se rechazarían** (random walk, no-estacionariedad, observabilidad). Pero los 3 controles del corpus inter-dominio se rechazan correctamente, y los 2000 random walks bajo hostile testing (N1+V4_06+N5) producen 0 falsos positivos del gate completo (Wilson 95 % CI [0, 0.00191]). Esto significa que el aparato **discrimina entre dinámica con cierre operativo y dinámica sin él**, no solo describe trayectorias.
 2. **Si la coincidencia ontológica entre escalas fuera artefacto del aparato, las sondas de una escala detectarían cierre sobre datos de otra escala.** El test cruzado V4-01 lo refuta: las sondas multiescala son específicas (0/12 circularidad sobre datos no-suyos). Cada sonda sólo detecta el atractor que su escala instancia.
 3. **La estructura ontológica común NO es nominal.** Los cuatro invariantes (sustrato, acoplamiento, atractor, cierre operativo) son **operativamente medibles** en cada caso del corpus. La tabla síntesis no es resumen retórico; es lectura directa de los `metrics.json` de cada caso.
 
@@ -1104,7 +1125,7 @@ Las cinco condiciones operativas son condiciones de admisión cualitativa. Para 
 
 La implementación canónica está en `09-simulaciones-edi/common/topology.py` con tests sobre 7 casos del corpus que tienen `primary_arrays.json` disponible (apéndice técnico §"Análisis topológico", reporte completo en `09-simulaciones-edi/topology/topology_report.{json,md}`):
 
-**Tabla 2.1.6.**
+**Tabla 2.1.4.**
 
 | Caso | λ_max | D₂ | r² (D₂) | Lectura cualitativa |
 |---|---:|---:|---:|---|
@@ -1137,7 +1158,7 @@ La extensión de las métricas topológicas a los 33 casos restantes del corpus 
 
 La realidad no es plana. La tesis distingue cinco modos de realidad sin multiplicar mundos:
 
-**Tabla 2.1.4.**
+**Tabla 2.1.5.**
 
 | Modo | Definición | Ejemplo paradigmático |
 |---|---|---|
@@ -1215,7 +1236,7 @@ La causalidad circular (upward + downward) emerge naturalmente del acoplamiento 
 
 ## 10. Qué evita la ontología
 
-**Tabla 2.1.5.**
+**Tabla 2.1.6.**
 
 | Tentación rechazada | Razón |
 |---|---|
@@ -1991,7 +2012,7 @@ La tesis lo opera como caso de B donde el entorno técnico se incorpora a las va
 
 Warren (2006, *Psychological Review* 113:358-389) proporciona el caso paradigmático trabajado del nivel B. La tesis central del programa es que el comportamiento adaptativo no está impuesto por un controlador interno sino que emerge de la interacción agente–entorno bajo restricciones físicas, informacionales y de tarea. Cita verificada en PDF: *"Adaptive behavior, rather than being imposed by a preexisting structure, emerges from this confluence of constraints under the boundary condition of a particular task or goal"* (Warren 2006, p. 358). La formulación dinámica de la locomoción dirigida: ecuación de heading de segundo orden con parámetros ajustados (b = 3.25, k_g = 7.50, c1 = 0.40, c2 = 0.40), que reproduce el r² = .980 de la varianza de las series temporales medias (Warren 2006, p. 375).
 
-La tesis recoge el caso Warren como demostración cualitativa (capítulo 05-05) y lo eleva a versión cuantitativa-EDI (caso 30 del corpus). Warren queda como **interlocutor principal de B**: vocabulario operativo (atractor, repulsor, bifurcación, ley de control, dinámica intrínseca, acoplamiento) y caso ancla. La complementariedad cualitativa (Warren 2006, r² = 0.980 individual) y cuantitativa (caso 30 EDI = 0.262, weak poblacional) cubre dos escalas temporales del fenómeno.
+La tesis recoge el caso Warren como demostración cualitativa (capítulo 05-05) y lo eleva a versión cuantitativa-EDI (caso 30 del corpus). Warren queda como **interlocutor principal de B**: vocabulario operativo (atractor, repulsor, bifurcación, ley de control, dinámica intrínseca, acoplamiento) y caso ancla. Warren es explícito sobre el alcance del ajuste individual: *"The fits to the mean time series accounted for a proportion of .980 of the variance, indicating that model behavior is highly similar to the mean human behavior"* (Warren 2006, p. 375). La tesis lee este resultado como cota superior del nivel B en escala intra-sesión (sondas dinámicas con parámetros fijos sobre series promediadas) y lo confronta con el caso 30 EDI = 0.262 (weak poblacional), que opera en escala inter-sujeto agregada. La asimetría entre r² ≈ 0.98 individual y EDI ≈ 0.26 poblacional no es contradicción: indica que el acoplamiento informacional dominante a escala de un agente se diluye al promediar trayectorias heterogéneas, lo cual es predicción operativa del propio programa de Warren (ley de control intrínseca + condiciones de tarea variables).
 
 ## 11. Consecuencia para el aparato formal
 
@@ -2503,7 +2524,7 @@ La cláusula es estricta: ninguna entidad del aparato formal se reifica. La disc
 
 ## 10. Ejemplo canónico: caso ancla
 
-En el caso ancla canónico (Warren 2006, capítulo 05-05) los operadores se instancian así:
+En el caso ancla canónico (locomoción humana hacia meta con obstáculo, capítulo 05-05) los operadores se instancian sobre el dispositivo experimental que Warren describe textualmente: «The research was carried out in the Virtual Environment Navigation Lab (VENLab) at Brown University, a 12 m × 12 m room in which a participant can walk freely wearing a head-mounted display (60° horizontal × 40° vertical) while head position is recorded with a sonic–inertial tracking system» (Warren, 2006, p. 374). El compromiso teórico que importa para nuestro aparato es que en ese marco «attractors correspond to goal states and repellers to avoided states» (p. 374), es decir, las regularidades conductuales se leen como estructuras del sistema acoplado agente–entorno y no como representaciones internas previas. Sobre esa base los operadores se instancian así (BORRADOR-IA, requires: H-J3 — verificación final de equivalencia operador↔variable Fajen-Warren a cargo de Jacob):
 
 **Tabla 3.1.1.**
 
@@ -2719,6 +2740,8 @@ nivel = clasificar(EDI=validacion.edi,
 
 **Tabla A.2.1.**
 
+**Tabla 3.6.1.**
+
 | Campo | Especificación |
 |-------|----------------|
 | Firma | `μ : R → X` |
@@ -2733,6 +2756,8 @@ nivel = clasificar(EDI=validacion.edi,
 ## Operador G — detalle
 
 **Tabla A.2.2.**
+
+**Tabla 3.6.2.**
 
 | Campo | Especificación |
 |-------|----------------|
@@ -2751,6 +2776,8 @@ nivel = clasificar(EDI=validacion.edi,
 
 **Tabla A.2.3.**
 
+**Tabla 3.6.3.**
+
 | Campo | Especificación |
 |-------|----------------|
 | Firma | `H = (V, 𝓔)` |
@@ -2764,6 +2791,8 @@ nivel = clasificar(EDI=validacion.edi,
 ## Operador κ — detalle (operacionalizado vía EDI)
 
 **Tabla A.2.4.**
+
+**Tabla 3.6.4.**
 
 | Campo | Especificación |
 |-------|----------------|
@@ -2790,6 +2819,8 @@ nivel = clasificar(EDI=validacion.edi,
 
 **Tabla A.2.5.**
 
+**Tabla 3.6.5.**
+
 | Campo | Especificación |
 |-------|----------------|
 | Firma | `ε : n → G_n` |
@@ -2803,6 +2834,8 @@ nivel = clasificar(EDI=validacion.edi,
 ## Pregunta Q — detalle
 
 **Tabla A.2.6.**
+
+**Tabla 3.6.6.**
 
 | Campo | Especificación |
 |-------|----------------|
@@ -2818,6 +2851,8 @@ nivel = clasificar(EDI=validacion.edi,
 ## Validación canónica vs perfiles agresivos
 
 **Tabla A.2.7.**
+
+**Tabla 3.6.7.**
 
 | Parámetro | Canónico | Agresivo (HYPER_*) |
 |-----------|---------:|-------------------:|
@@ -3149,6 +3184,8 @@ Plantilla estandarizada del dossier de anclaje obligatorio para cualquier catego
 
 **Tabla A.3.1.**
 
+**Tabla 3.7.1.**
+
 | Variable | Tipo | Régimen R | Operacionalización |
 |----------|------|-----------|--------------------|
 | ... | observable / inferida | mensual / anual / etc | método de medición |
@@ -3192,6 +3229,8 @@ de orden superior, listar hiperaristas y justificar no-reducibilidad.]
 
 **Tabla A.3.2.**
 
+**Tabla 3.7.2.**
+
 | Prueba | Resultado | Tolerancia |
 |--------|-----------|-----------:|
 | Reproducción | varianza explicada = X% | τ específica |
@@ -3202,6 +3241,8 @@ de orden superior, listar hiperaristas y justificar no-reducibilidad.]
 **Protocolo C1-C5:**
 
 **Tabla A.3.3.**
+
+**Tabla 3.7.3.**
 
 | Filtro | Estado | Detalle |
 |--------|:------:|---------|
@@ -3244,6 +3285,8 @@ Identificar variables que se reabrirían y régimen de reapertura.]
 
 **Tabla A.3.4.**
 
+**Tabla 3.7.4.**
+
 | Parámetro de L3 | Variable de B | Unidad | Operacionalización |
 |-----------------|---------------|--------|---------------------|
 | ode_alpha | tasa de [...] | unidades físicas | medición directa |
@@ -3263,6 +3306,8 @@ categoría está flotando y debe reformularse.]
 ## 14. Comparación rival
 
 **Tabla A.3.5.**
+
+**Tabla 3.7.5.**
 
 | Criterio | Tesis (irrealismo operativo) | Rival 1 | Rival 2 | Rival 3 |
 |---|---|---|---|---|
@@ -3433,7 +3478,7 @@ Un caso que no cumple las cuatro queda fuera del manuscrito o se incluye con mar
 
 ### 6.1. Caso ancla canónico (modo demostrativo)
 
-**Behavioral dynamics** (Warren 2006): tareas de raqueteo, equilibrio, frenado, locomoción. Datos públicos, ecuaciones ajustadas, predicciones cumplidas, intervenciones documentadas. Dossier completo en capítulo 05-05.
+**Behavioral dynamics** (Warren 2006). Warren formula explícitamente el programa: "the agent and its environment are treated as a pair of dynamical systems that are coupled mechanically and informationally. Their interactions give rise to the behavioral dynamics, a vector field with attractors that correspond to stable task solutions, repellers that correspond to avoided states, and bifurcations that correspond to behavioral transitions" (Warren 2006, p. 358). El framework se aplica a "bouncing a ball on a racquet, balancing an object, braking a vehicle, and guiding locomotion" (p. 358), todas con datos públicos, ecuaciones ajustadas, predicciones cumplidas e intervenciones documentadas. Lo que hace al caso ancla canónico no es la lista de tareas sino la tesis estructural: "stable behavioral solutions correspond to attractors in the behavioral dynamics, and transitions between behavioral patterns correspond to bifurcations […] codetermined by the confluence of task constraints and perceptual–motor control laws" (p. 359). Esa codeterminación agente–entorno es justamente lo que el aparato κ/ε intenta auditar empíricamente. Dossier completo en capítulo 05-05.
 
 ### 6.2. Casos en modo programático
 
@@ -3748,7 +3793,7 @@ La permutación simple con `n_perm=999` produce tasa empírica de tipo I cercana
 
 1. **Block bootstrap** (Politis y Romano 1994): permutación por bloques de tamaño √n que preserva la autocorrelación local. El p-value bajo block-bootstrap se reporta junto al p-value naive para cuantificar el shift de calibración.
 2. **Newey-West HAC** (Newey y West 1987): error estándar consistente bajo heterocedasticidad y autocorrelación, con kernel de Bartlett y truncamiento adaptativo `floor(4·(n/100)^{2/9})`.
-3. **FWER Holm-Bonferroni** (Holm 1979): corrección de family-wise error rate sobre los casos del corpus. Aplicada al corpus completo: **14 casos inter-dominio + 8 casos inter-escala = 22 casos sobreviven Holm-Bonferroni a α=0.05**; los 4 casos macro `overall_pass=True` están entre los sobrevivientes (caso por caso documentado en `metrics.json::fwer_holm`). La clasificación strong sobrevive a la corrección por comparaciones múltiples.
+3. **FWER Holm-Bonferroni** (procedimiento step-down de Holm, 1979 — referencia secundaria, sin acceso a PDF original): los $m$ p-values se ordenan ascendentemente $p_{(1)} \le \dots \le p_{(m)}$ y se rechaza $H_{(i)}$ sii $p_{(j)} \le \alpha/(m-j+1)$ para todo $j \le i$. Es uniformemente más potente que Bonferroni preservando el control FWER fuerte a nivel $\alpha$, lo que justifica preferirlo aquí sobre la corrección Bonferroni plana. Aplicado al corpus completo: **14 casos inter-dominio + 8 casos inter-escala = 22 casos sobreviven Holm-Bonferroni a α=0.05**; los 4 casos macro `overall_pass=True` están entre los sobrevivientes (caso por caso documentado en `metrics.json::fwer_holm`). La clasificación strong sobrevive a la corrección por comparaciones múltiples.
 
 ### Replicación robusta sin replicador externo
 
@@ -3891,6 +3936,8 @@ Sistema modal **al menos T (KT)** declarado en cap 02-01. T22 confirma: en `moda
 ## Resumen de la suite refactorizada
 
 **Tabla A.11.1.**
+
+**Tabla 3.8.1.**
 
 | Teoría | Perfil ST | Foco | Estado |
 |--------|-----------|------|--------|
@@ -4294,7 +4341,9 @@ Una aplicación que solo renombra el fenómeno con vocabulario del marco sin pro
 
 | Capítulo | Tema | Estado |
 |---|---|---|
-| 05-05 | Behavioral dynamics: locomoción, obstáculos, frenado, raqueteo, equilibrio | DEMOSTRATIVO con dossier completo (Warren 2006, Fajen y Warren 2003, Yilmaz y Warren 1995, Foo et al. 2000, Sternad et al. 2001) |
+| 05-05 | Behavioral dynamics: locomoción, obstáculos, frenado, raqueteo, equilibrio | DEMOSTRATIVO con dossier completo; el anclaje primario es Warren (2006, pp. 358–359), engaged textualmente en el párrafo siguiente, complementado con Fajen y Warren (2003), Yilmaz y Warren (1995), Foo et al. (2000) y Sternad et al. (2001) |
+
+[BORRADOR-IA · requires: H-J*] El anclaje teórico del caso 05-05 es explícitamente Warren (2006), quien plantea que «the agent and its environment are treated as a pair of dynamical systems that are coupled mechanically and informationally. Their interactions give rise to the behavioral dynamics, a vector field with attractors that correspond to stable task solutions, repellers that correspond to avoided states, and bifurcations that correspond to behavioral transitions» (Warren, 2006, p. 358). Esta tesis hace al programa de Warren un caso ancla natural para la ontología material-relacional: los atractores no se postulan como entidades internas al agente ni como propiedades del entorno aislado, sino que «are codetermined by the confluence of task constraints and perceptual–motor control laws» (p. 359). El capítulo 05-05 hereda esa carga discriminante —no la presupone—.
 
 ### 4.2. Aplicaciones en modo programático
 
@@ -4387,6 +4436,8 @@ Mapa completo del paisaje de aplicaciones del marco como **ontología general mu
 
 **Tabla A.5.1.**
 
+**Tabla 5.7.1.**
+
 | Nivel | Categoría | N | Casos |
 |:----:|-----------|:-:|-------|
 | 4 | Strong (`overall_pass=True`) | 4 | Energía, Deforestación, Kessler, Riesgo Biológico |
@@ -4403,6 +4454,8 @@ Mapa completo del paisaje de aplicaciones del marco como **ontología general mu
 ### Corpus inter-escala (10 casos)
 
 **Tabla A.5.2.**
+
+**Tabla 5.7.2.**
 
 | Nivel | Categoría | N | Casos (escala instanciada) |
 |:----:|-----------|:-:|----------------------------|
@@ -4425,6 +4478,8 @@ Los 40 casos del corpus agregado **no son aplicaciones independientes**: cada un
 
 **Tabla A.5.3.**
 
+**Tabla 5.7.3.**
+
 | # | Caso | EDI | p | Sonda | LoE | Datos |
 |---|------|----:|--:|-------|----:|-------|
 | 04 | Energía eléctrica | 0.6503 | 0.0000 | Lotka-Volterra | 4 | OPSD |
@@ -4438,6 +4493,8 @@ Reproducibilidad: el caso 16 ha sido re-ejecutado con datos World Bank descargad
 
 **Tabla A.5.4.**
 
+**Tabla 5.7.4.**
+
 | # | Caso | EDI | p | Sonda | Por qué no gate |
 |---|------|----:|--:|-------|-----------------|
 | 24 | Microplásticos | 0.7819 | 0.0000 | Jambeck Accumulation | Bootstrap CI inestable |
@@ -4445,6 +4502,8 @@ Reproducibilidad: el caso 16 ha sido re-ejecutado con datos World Bank descargad
 ### Bloque III — Weak (Nivel 3)
 
 **Tabla A.5.5.**
+
+**Tabla 5.7.5.**
 
 | # | Caso | EDI | p | Sonda |
 |---|------|----:|--:|-------|
@@ -4461,6 +4520,8 @@ Reproducibilidad: el caso 16 ha sido re-ejecutado con datos World Bank descargad
 
 **Tabla A.5.6.**
 
+**Tabla 5.7.6.**
+
 | # | Caso | EDI | p |
 |---|------|----:|--:|
 | 09 | Finanzas globales | 0.0813 | 0.0000 |
@@ -4469,6 +4530,8 @@ Reproducibilidad: el caso 16 ha sido re-ejecutado con datos World Bank descargad
 ### Bloque V — Trend (Nivel 1)
 
 **Tabla A.5.7.**
+
+**Tabla 5.7.7.**
 
 | # | Caso | EDI | p | Comentario |
 |---|------|----:|--:|------------|
@@ -4480,6 +4543,8 @@ Reproducibilidad: el caso 16 ha sido re-ejecutado con datos World Bank descargad
 ### Bloque VI — Null (Nivel 0)
 
 **Tabla A.5.8.**
+
+**Tabla 5.7.8.**
 
 | # | Caso | EDI | Comentario |
 |---|------|----:|-----------|
@@ -4495,6 +4560,8 @@ Reproducibilidad: el caso 16 ha sido re-ejecutado con datos World Bank descargad
 ### Bloque VII — Controles de falsación (correctamente rechazados)
 
 **Tabla A.5.9.**
+
+**Tabla 5.7.9.**
 
 | # | Caso | EDI | p | Diseño |
 |---|------|----:|--:|--------|
@@ -4720,7 +4787,7 @@ La región del espacio de fase donde el bote es **pasivamente estable** correspo
 
 Aquí la tesis identifica un atractor **realmente existente** en el sistema acoplado: la región pasivamente estable es una propiedad de la composición pelota–raqueta–gravedad, no del agente. La conducta humana se acopla al atractor, no lo construye. Esto es realismo estructural en sentido fuerte: el patrón existe en el sustrato dinámico antes de cualquier descripción.
 
-La compresión es legítima por las cuatro pruebas: reproduce las distribuciones de aceleración de impacto observadas (Sternad et al. 2001, fig. 5 del paper), generaliza a otros valores de `g` y `α`, conserva el atractor empíricamente identificado, y predice correctamente la respuesta a perturbaciones.
+La compresión es legítima por las cuatro pruebas: reproduce las distribuciones de aceleración de impacto reportadas en la literatura experimental sobre raqueteo de pelota (Sternad, Duarte, Katsumata y Schaal 2001, citado por Warren 2006 como evidencia del régimen pasivamente estable; PDF primario no disponible localmente, mención secundaria vía Warren), generaliza a otros valores de `g` y `α`, conserva el atractor empíricamente identificado, y predice correctamente la respuesta a perturbaciones.
 
 ## Caso 2: Equilibrio del palo invertido (tarea activamente estable)
 
@@ -4821,7 +4888,7 @@ Postulan que el sistema nervioso construye representaciones del cuerpo y del ent
 
 - ¿qué patrón material-relacional comprime `modelo interno`? Una caja desconocida.
 - ¿qué dependencias preserva? Las que el modelo sintáctico estipula, no las que se hayan medido.
-- ¿qué predicciones discriminantes hace frente a control directo informacional? En las tareas estudiadas (frenado, locomoción, equilibrio, raqueteo), ninguna que mejore. El degrado de desempeño al retirar la información en línea (Wallis et al. 2002, Hildreth et al. 2000) es predicho por el control informacional y no por el modelo interno robusto.
+- ¿qué predicciones discriminantes hace frente a control directo informacional? En las tareas estudiadas (frenado, locomoción, equilibrio, raqueteo), ninguna que mejore. Argumento empírico relevante: experimentos de oclusión/retirada de la información óptica en línea durante locomoción y rastreo (referidos secundariamente vía Warren a partir de Wallis et al. 2002 y Hildreth et al. 2000; **mención secundaria declarada** — PDFs primarios no disponibles en `07-bibliografia/`, cf. CLAUDE.md §5) muestran degradación inmediata del desempeño, patrón predicho por el control informacional acoplado y no por modelos internos robustos, que deberían sostener la ejecución aun sin entrada actualizada. <!-- BORRADOR-IA · requires: H-J* (Jacob debe verificar Wallis 2002 y Hildreth 2000 en fuente primaria con paginación literal o sustituir la mención) -->
 - ¿se traduce a B? Solo nominalmente.
 
 Diagnóstico: en las tareas de Warren, los modelos internos son una compresión sin baja dimensionalidad efectiva justificada y sin predicción discriminante a favor. La tesis los descalifica para esos casos. Los preserva, en cambio, como hipótesis para conducta secuencial, anticipatoria, predictiva y estratégica donde la información ocurrente no basta — exactamente la limitación que Warren mismo reconoce.
@@ -5741,7 +5808,7 @@ Chalmers (1995, *Journal of Consciousness Studies* 2:200-219) plantea que ningú
 
 - el aparato EDI **no resuelve** el problema duro: ese no es su propósito;
 - el aparato describe la dinámica conductual-acoplada (tercera persona); no agota la realidad fenomenológica;
-- la **complementariedad** con métodos fenomenológicos (Husserl 1913 *Ideas I*, Merleau-Ponty 1945 *Fenomenología de la percepción*, Varela neurofenomenología) es una característica de diseño, no un fallo;
+- la **complementariedad** con la tradición fenomenológica (engagement explícito con Husserl y Merleau-Ponty se desarrolla en §7.3, declarado allí como referencia secundaria sin paginación verbatim por verificación de edición pendiente — `TAREAS_PENDIENTES.md` H-J5; complementada con Varela, neurofenomenología) es una característica de diseño, no un fallo;
 - la tesis ofrece **co-existencia disciplinada** entre tercera y primera persona, no eliminación de una por la otra.
 
 ### 7.3. Diálogo textual extendido
@@ -6129,9 +6196,9 @@ Simondon (1989, *Du mode d'existence des objets techniques*, parte I) introduce 
 
 Latour (2005, *Reassembling the Social*, cap. 3) insiste en distribución simétrica de agencia entre humanos y no-humanos. La tesis lo aplica: los componentes técnicos (servidores, balanceadores, certificados, DNS) son actantes que entran en `V` si pasan filtro de admisión por intervención (su ablación produce diferencia inferencial significativa).
 
-### 6.3. SRE / práctica de operaciones (Beyer et al. 2016)
+### 6.3. SRE / práctica de operaciones
 
-Beyer, Jones, Petoff y Murphy (2016, *Site Reliability Engineering: How Google Runs Production Systems*, O'Reilly) sistematizan los principios SRE: SLO (Service Level Objectives), error budgets, circuit breakers, blast radius limitation, postmortems sin culpa. La tesis los recoge como **implementación informal del aparato del manuscrito**: SLO ↔ tolerancia τ de la pregunta Q; error budget ↔ región de admisibilidad; circuit breaker ↔ operador ε activado bajo bifurcación detectada; postmortem ↔ auditoría ontológica del fallo (cap 03-03). La convergencia entre filosofía de la ciencia formal y práctica industrial madura es **fricción productiva**: ambas tradiciones independientemente desarrollan la misma estructura operativa.
+Beyer, Jones, Petoff y Murphy (eds., 2016, *Site Reliability Engineering: How Google Runs Production Systems*, O'Reilly) sistematizan los principios SRE: SLO (Service Level Objectives), error budgets, circuit breakers, blast radius limitation, postmortems sin culpa. **Mención secundaria declarada** (CLAUDE.md §5): el PDF no está en `07-bibliografia/`; la lectura aquí se apoya en la divulgación canónica del libro (capítulos 3 "Embracing Risk", 4 "Service Level Objectives" y 15 "Postmortem Culture") y no en cita verbatim paginada — corresponde levantar la deuda en una pasada posterior con el ejemplar físico. La tesis recoge esos principios como **implementación informal del aparato del manuscrito**: SLO ↔ tolerancia τ de la pregunta Q; error budget ↔ región de admisibilidad; circuit breaker ↔ operador ε activado bajo bifurcación detectada; postmortem ↔ auditoría ontológica del fallo (cap 03-03). La convergencia entre filosofía de la ciencia formal y práctica industrial madura es **fricción productiva**: ambas tradiciones desarrollan independientemente la misma estructura operativa.
 
 ## 7. Lo que este capítulo devuelve a la tesis general
 
@@ -6343,7 +6410,7 @@ Se selecciona como caso piloto, sin ejecutar en este manuscrito pero documentado
 - una cuenca de atracción institucional (régimen de cumplimiento) sometida a perturbación discreta y observable (la propia pandemia);
 - bifurcaciones identificables (transiciones de régimen restrictivo a permisivo y viceversa);
 - comparabilidad inter-país que permite definir variabilidad de la cuenca (legitimidad como anchura de la cuenca);
-- precedentes en la literatura cuantitativa (Hale et al., 2021; Cheng et al., 2020).
+- precedentes en la literatura cuantitativa: Hale et al. (2021, *Nature Human Behaviour* 5: 529–538) construyen el OxCGRT como panel global con un índice compuesto de stringency (0–100) agregado diariamente por país a partir de indicadores ordinales sobre cierres, restricciones de movilidad y políticas sanitarias; ese formato ordinal-temporal por país es precisamente lo que la adaptación del aparato EDI a series institucionales debería poder ingerir (engagement con el diseño del dataset, no con el argumento sustantivo del paper, que se cita como fuente secundaria al no haber sido auditado contra el PDF en `07-bibliografia/`); Cheng et al. (2020) ofrece tipología complementaria de respuestas estatales.
 
 La elevación de este caso piloto exige adaptación específica del aparato EDI a series institucionales con variables ordinales (índices de stringency) en lugar de variables continuas. Se documenta como deuda alta en `Bitacora/2026-04-28-cierre-doctoral/` y en la hoja de ruta `06-cierre/03-hoja-de-ruta-para-tesis-final.md`.
 
@@ -6598,7 +6665,7 @@ Que los modelos internos sean recurso primario para tareas como locomoción, fre
 | Criterio | Tesis (control informacional, leyes acopladas) | Modelos internos / control óptimo |
 |---|---|---|
 | Reproducción de datos | r²=0.980 (locomoción Fajen-Warren) | Requiere parámetros adicionales no derivados |
-| Predicción de degradación al retirar visión en línea | Predice degradación marcada, confirmada (Wallis et al. 2002, Hildreth et al. 2000) | Predice estabilidad relativa, no confirmada |
+| Predicción de degradación al retirar visión en línea | Predice degradación marcada, consistente con lo reportado en la literatura sobre control visomotor en ausencia de información óptica continua [Wallis et al. 2002; Hildreth et al. 2000 — citados como reporte secundario, sin PDF en `07-bibliografia/`; deuda residual: cita textual paginada pendiente] | Predice estabilidad relativa, no confirmada en esa misma literatura |
 | Predicción de uso de τ̇=−0.5 en frenado | Predicha (r²=0.98 en Yilmaz-Warren 1995) | No deriva la constante |
 | Bifurcación de ruta como cambio cualitativo | Predicha y observada | Requiere meta-decisión planificada |
 | Economía paramétrica | 4 parámetros para locomoción | Requiere modelo interno completo |
@@ -6889,6 +6956,8 @@ Síntesis de la discriminación pública contra catorce posiciones rivales. Cada
 
 **Tabla A.4.1.**
 
+**Tabla 4.3.1.**
+
 | Código | Criterio |
 |--------|----------|
 | **A** | Anclaje material sin reducción a partículas |
@@ -6903,6 +6972,8 @@ Síntesis de la discriminación pública contra catorce posiciones rivales. Cada
 ## Tabla síntesis (14 rivales)
 
 **Tabla A.4.2.**
+
+**Tabla 4.3.2.**
 
 | # | Posición rival | A | B | C | D | E | F | Discrimina en |
 |---|----------------|:-:|:-:|:-:|:-:|:-:|:-:|:------------:|
@@ -6926,6 +6997,8 @@ Síntesis de la discriminación pública contra catorce posiciones rivales. Cada
 ## La tesis (irrealismo operativo) en la matriz
 
 **Tabla A.4.3.**
+
+**Tabla 4.3.3.**
 
 | # | A | B | C | D | E | F |
 |---|:-:|:-:|:-:|:-:|:-:|:-:|
@@ -7184,6 +7257,8 @@ La objeción es correcta si se lee la cuenca como **definición ostensiva de ide
 
 La cuenca opera como **criterio operacional de individuación**, no como definición de identidad pre-individual. Hay tres niveles distinguibles que la objeción colapsa:
 
+**Tabla 4.4.1.**
+
 | Nivel | Pregunta | Respuesta de la tesis |
 |---|---|---|
 | Pre-individual | ¿Qué hay antes del recorte? | Sustrato material dinámico con restricciones (cap 02-01 §1.1; Simondon, *L'individuation* 1958/2005, sobre lo metaestable previo a la individuación) |
@@ -7330,7 +7405,7 @@ Sobre **Dennett** en *Real Patterns* (1991, *Journal of Philosophy* 88: 27-51, e
 1. **Materialmente sostenido:** el patrón es propiedad de un sistema con sustrato dinámico, no propiedad de un conjunto de datos abstractos.
 2. **Discriminante bajo intervención:** el patrón debe predecir efectos de manipulación, no solo regularidades estadísticas.
 
-La condición 1 separa la tesis del cuasi-pitagorismo en el que Dennett a veces resbala (los patrones son reales si capturan compresión, sin importar dónde están instanciados). La condición 2 es manipulabilidad woodwardiana (Woodward 2003, *Making Things Happen*, cap. 2), que Dennett solo invoca tangencialmente.
+La condición 1 separa la tesis del cuasi-pitagorismo en el que Dennett a veces resbala (los patrones son reales si capturan compresión, sin importar dónde están instanciados). La condición 2 traduce el criterio interventivo que Woodward (2003, *Making Things Happen*, cap. 2; mención secundaria — el PDF disponible en `07-bibliografia/` es escaneo sin capa de texto, lo que impide cita verbatim paginada) articula como núcleo de la causalidad: una variable X es causalmente relevante para Y si y solo si existe una intervención sobre X (en el sentido técnico de Woodward: manipulación que rompe la dependencia previa de X respecto de sus causas y la fija a un valor) que cambia la distribución de Y. Trasladado al criterio de patrón real: el patrón discrimina si las predicciones que sostiene se mantienen bajo intervenciones reales (ablaciones, manipulaciones experimentales, contrafácticos no triviales) y no solo bajo regularidades observacionales. Dennett invoca esta dimensión solo tangencialmente; la tesis la incorpora como condición de admisión operativa (cap 03-03 §criterios-admision; cap 09 corpus EDI con ablaciones).
 
 Sobre **Searle** y la intencionalidad colectiva: Searle (1995, *The Construction of Social Reality*, cap. 2) distingue hechos brutos de hechos institucionales y construye los segundos como impuestos por intencionalidad colectiva mediante reglas constitutivas ("X cuenta como Y en C"). La tesis cap 05-04 trata las instituciones como atractores normativos sostenidos por restricciones históricas, infraestructurales y comunicacionales. La diferencia es operativa: para Searle, la institución existe **por** la asignación de función vía intencionalidad colectiva; para la tesis, la institución existe **como atractor que sobrevive auditoría con dossier**, lo cual no excluye la asignación de función pero no la trata como condición exclusiva. Quien busque un Searle estricto verá esto como debilitamiento; quien busque articulación con dinámica acoplada verá la asignación de función como **un componente** del dossier institucional, no como su totalidad.
 
@@ -7395,6 +7470,8 @@ Si el lector espera una asimetría ontológica fuerte entre B y L3, no la encont
 Correcto. La tesis no aborda estas dimensiones. La omisión es **deliberada**, no oversight. Cada omisión tiene una razón distinta y declarada.
 
 ### Distinción
+
+**Tabla 4.4.2.**
 
 | Omisión | Razón declarada | Estatus |
 |---|---|---|
@@ -7658,6 +7735,8 @@ Listado consolidado de **todas las limitaciones que la tesis declara explícitam
 
 **Tabla A.0.1.**
 
+**Tabla 4.5.1.**
+
 | # | Limitación | Origen | Resolución actual | Entregable |
 |---|-----------|--------|-------------------|------------|
 | L1 | p-value mal calibrado (tasa empírica de tipo I ≈ 24 %, no 5 %) | Hostile testing N3 | Cerrada metodológicamente: el módulo `common/calibration.py` implementa block bootstrap (Politis y Romano 1994), Newey-West HAC (Newey y West 1987) y corrección Holm-Bonferroni (Holm 1979, "A simple sequentially rejective multiple test procedure", *Scand. J. Statist.* 6: 65–70; referencia bibliográfica sin PDF en `07-bibliografia/`, paginación verbatim no verificable en esta pasada). Aplicada al corpus inter-dominio, 14 casos del corpus inter-dominio + 8 del corpus multiescala = 22 casos sobreviven Holm-Bonferroni a α=0.05; los 4 casos macro `overall_pass=True` están entre los sobrevivientes. La inferencia formal sigue requiriendo invocación desde `edi_engine.py` con flag `--calibrated` en la ejecución final. | Re-ejecución del corpus con flag activo (≈ 3 semanas) |
@@ -7673,6 +7752,8 @@ Listado consolidado de **todas las limitaciones que la tesis declara explícitam
 
 **Tabla A.0.2.**
 
+**Tabla 4.5.2.**
+
 | # | Limitación | Origen | Plazo | Entregable |
 |---|-----------|--------|-------|------------|
 | L7 | **Datos del corpus inter-escala son sintéticos** derivados de parámetros publicados | V4 post-multiescala | 6-12 meses | Elevación a datos reales abiertos: IBM Quantum, BRENDA, PhysioNet, OGLE, Gaia DR3 |
@@ -7685,6 +7766,8 @@ Listado consolidado de **todas las limitaciones que la tesis declara explícitam
 ## 3. Limitaciones filosóficas declaradas
 
 **Tabla A.0.3.**
+
+**Tabla 4.5.3.**
 
 | # | Limitación | Origen | Plazo | Entregable |
 |---|-----------|--------|-------|------------|
@@ -7700,6 +7783,8 @@ Listado consolidado de **todas las limitaciones que la tesis declara explícitam
 ## 4. Limitaciones procedimentales (bloqueadores externos)
 
 **Tabla A.0.4.**
+
+**Tabla 4.5.4.**
 
 | # | Limitación | Origen | Plazo | Entregable |
 |---|-----------|--------|-------|------------|
@@ -7737,6 +7822,8 @@ Los siguientes módulos resuelven o reducen seis limitaciones sin re-ejecutar el
 
 **Tabla A.0.5.**
 
+**Tabla 4.5.5.**
+
 | Módulo | Limitación afectada | Resolución | Ruta |
 |--------|---------------------|------------|------|
 | Calibración estadística | L1 (p-value mal calibrado) | Cerrada metodológicamente | `09-simulaciones-edi/common/calibration.py` |
@@ -7753,6 +7840,8 @@ La corrección FWER Holm-Bonferroni sobre los 30 casos del corpus inter-dominio 
 La aplicación caso por caso de los módulos a los casos no invariantes produce los siguientes veredictos:
 
 **Tabla A.0.6.**
+
+**Tabla 4.5.6.**
 
 | Veredicto | Casos | Significado |
 |-----------|-------|-------------|
@@ -7774,6 +7863,8 @@ Bajo `common/power_analysis.py` se distingue entre `null_real` (potencia ≥ 0.8
 
 **Tabla A.0.7.**
 
+**Tabla 4.5.7.**
+
 | Categoría | n | Implicación |
 |-----------|--:|-------------|
 | No null (EDI > 0.10) | 23 | Casos con señal detectable |
@@ -7789,6 +7880,8 @@ El módulo de calibración estadística controla falsos positivos por autocorrel
 Si en defensa una limitación es señalada por el tribunal, la respuesta canónica del manuscrito es:
 
 **Tabla A.0.8.**
+
+**Tabla 4.5.8.**
 
 | Tipo de limitación | Respuesta canónica |
 |--------------------|---------------------|
@@ -7828,7 +7921,7 @@ Una tesis sin límites nombrados es una tesis que aún no se ha sometido a sí m
 
 ## Tesis del capítulo
 
-> La tesis del **irrealismo operativo de estructuras pre-ontológicas** se sostiene como **propuesta ontológica general multiescalar** validada operativamente sobre **40 casos del corpus EDI agregado** (30 inter-dominio + 10 inter-escala). El corpus inter-dominio cubre física, biología, economía, política, tecnología, cultura y conducta humana con 4 casos `overall_pass=True` + 1 strong sin gate + 8 weak + 2 suggestive + 4 trend + 8 null + 3 controles de falsación rechazados. El corpus inter-escala cubre **30 órdenes de magnitud** espaciales y temporales (desde dinámica subatómica de espín-órbita 10⁻¹⁰ m a cúmulos globulares 10²⁰ m) con **7 strong en 7 escalas distintas** + 1 weak + 2 nulls honestos. El aparato ha sobrevivido hostile testing severo (0/1500 falsos positivos del gate completo bajo random walk masivo, 0/12 circularidad en test cruzado de sondas). Las condiciones de fracaso son falsables y la deuda residual está fechada. La tesis es **ontología general operativamente articulada con demostración parcial multiescalar bajo régimen declarado**, no ontología regional macro-poblacional como sugería la primera iteración del manuscrito.
+> La tesis del **irrealismo operativo de estructuras pre-ontológicas** se sostiene como **propuesta ontológica general multiescalar** validada operativamente sobre **40 casos del corpus EDI agregado** (30 inter-dominio + 10 inter-escala). El corpus inter-dominio cubre física, biología, economía, política, tecnología, cultura y conducta humana con 4 casos `overall_pass=True` + 1 strong sin gate + 8 weak + 2 suggestive + 4 trend + 8 null + 3 controles de falsación rechazados. El corpus inter-escala cubre **30 órdenes de magnitud** espaciales y temporales (desde dinámica subatómica de espín-órbita 10⁻¹⁰ m a cúmulos globulares 10²⁰ m) con **7 strong en 7 escalas distintas** + 1 weak + 2 nulls honestos. El aparato ha sobrevivido hostile testing severo (0/2000 falsos positivos del gate completo bajo random walk masivo agregando los tres scripts canónicos N1+V4_06+N5, Wilson 95 % CI [0, 0.00191]; 0/12 circularidad en test cruzado de sondas). Las condiciones de fracaso son falsables y la deuda residual está fechada. La tesis es **ontología general operativamente articulada con demostración parcial multiescalar bajo régimen declarado**, no ontología regional macro-poblacional como sugería la primera iteración del manuscrito.
 
 ## 1. Condiciones de demostración de la tesis
 
@@ -7989,7 +8082,7 @@ Reformula el conocimiento como compresión disciplinada bajo intervención ablat
 
 ### 5.3. Aporte metodológico (general, no regional)
 
-Ofrece la auditoría ontológica como protocolo replicable de nueve fases con dossier de catorce componentes, más el pipeline ABM+ODE con soporte CPU/GPU, validador canónico, controles de falsación incorporados, suite ST de 24 teorías formales y procedimiento de hostile testing automatizado. Determinismo `seed=42` con `requirements-locked.txt` para reproducibilidad inter-instalación. **Esta metodología es general**: el mismo motor `edi_engine` opera sobre los 10 casos del corpus inter-escala y el mismo protocolo C1-C5 opera sobre los 30 casos del corpus inter-dominio sin reentrenar arquitectura. La transferibilidad metodológica entre escalas y dominios —verificada por test cruzado (0/12 circularidad) y hostile testing (0/1500 falsos positivos)— es **prueba operativa de que la metodología no es regional**: una misma máquina funciona desde lo cuántico hasta lo cosmológico, desde lo físico hasta lo social.
+Ofrece la auditoría ontológica como protocolo replicable de nueve fases con dossier de catorce componentes, más el pipeline ABM+ODE con soporte CPU/GPU, validador canónico, controles de falsación incorporados, suite ST de 24 teorías formales y procedimiento de hostile testing automatizado. Determinismo `seed=42` con `requirements-locked.txt` para reproducibilidad inter-instalación. **Esta metodología es general**: el mismo motor `edi_engine` opera sobre los 10 casos del corpus inter-escala y el mismo protocolo C1-C5 opera sobre los 30 casos del corpus inter-dominio sin reentrenar arquitectura. La transferibilidad metodológica entre escalas y dominios —verificada por test cruzado (0/12 circularidad) y hostile testing (0/2000 falsos positivos)— es **prueba operativa de que la metodología no es regional**: una misma máquina funciona desde lo cuántico hasta lo cosmológico, desde lo físico hasta lo social.
 
 **Este aporte es ejecutable, no solo declarativo:** cualquier tercero puede correr el motor sobre datos nuevos en cualquier escala con sondas físicamente motivadas. La generalidad metodológica está respaldada por código, no por afirmación retórica.
 
@@ -8053,14 +8146,14 @@ Establece el **irrealismo operativo** como tercera vía: ni cosa, ni ficción, s
 
 ## 8. Fórmula final demostrativa
 
-> Bajo el aparato consolidado — irrealismo operativo de estructuras pre-ontológicas como **ontología general multiescalar**, asimetría L1↔B↔L3↔S como protocolo formal con sistema modal T declarado e invariante a la escala, dossier de anclaje de catorce componentes, protocolo C1-C5 con 13 condiciones simultáneas, EDI por intervención ablativa con permutación 999 y bootstrap 500, cartografía agregada de 40 casos: **30 inter-dominio** sobre física, biología, economía, política, tecnología, cultura y conducta humana (4 `overall_pass=True` + 1 strong sin gate + 8 weak + 3 controles rechazados) y **10 inter-escala** desde dinámica de espín-órbita atómica (10⁻¹⁰ m) hasta dinámica de cúmulos globulares (10²⁰ m) con **7 strong en 7 escalas distintas** + 1 weak + 2 nulls honestos, validación lógica formal con suite ST de 24 teorías (6 hallazgos críticos detectados y corregidos), hostile testing aplicado al motor (0/1500 falsos positivos en gate completo bajo random walk masivo) y al test cruzado de sondas inter-escala (0/12 circularidad detectada), AUC-ROC = 0.886 para discriminación de ranking interno vs ARIMA = 0.600, y discriminación pública contra catorce rivales (incluido Wolfram con piloto Rule 110 ejecutado mostrando convivencia de irreducibilidad micro y cierre macro detectable) — la tesis del irrealismo operativo de estructuras pre-ontológicas se sostiene como **propuesta ontológica general multiescalar articulada con demostración parcial bajo régimen declarado**, con limitaciones honestamente reconocidas (p-value mal calibrado al 24% empírico aunque umbrales EDI robustos, caso 30 con circularidad detectada por sonda alternativa, depuración post-hoc del corpus inter-escala, datos sintéticos pendientes de elevación a LoE 4-5, escalas como etiquetas nominales basadas en parámetros publicados, AUC-ROC interno no externo, ningún caso cumple los tres criterios κ-ontológica, sin revisión por pares humanos externos) y deuda residual fechada con cronograma firme post-defensa.
+> Bajo el aparato consolidado — irrealismo operativo de estructuras pre-ontológicas como **ontología general multiescalar**, asimetría L1↔B↔L3↔S como protocolo formal con sistema modal T declarado e invariante a la escala, dossier de anclaje de catorce componentes, protocolo C1-C5 con 13 condiciones simultáneas, EDI por intervención ablativa con permutación 999 y bootstrap 500, cartografía agregada de 40 casos: **30 inter-dominio** sobre física, biología, economía, política, tecnología, cultura y conducta humana (4 `overall_pass=True` + 1 strong sin gate + 8 weak + 3 controles rechazados) y **10 inter-escala** desde dinámica de espín-órbita atómica (10⁻¹⁰ m) hasta dinámica de cúmulos globulares (10²⁰ m) con **7 strong en 7 escalas distintas** + 1 weak + 2 nulls honestos, validación lógica formal con suite ST de 24 teorías (6 hallazgos críticos detectados y corregidos), hostile testing aplicado al motor (0/2000 falsos positivos en gate completo bajo random walk masivo, Wilson 95 % CI [0, 0.00191]) y al test cruzado de sondas inter-escala (0/12 circularidad detectada), AUC-ROC = 0.886 para discriminación de ranking interno vs ARIMA = 0.600, y discriminación pública contra catorce rivales (incluido Wolfram con piloto Rule 110 ejecutado mostrando convivencia de irreducibilidad micro y cierre macro detectable) — la tesis del irrealismo operativo de estructuras pre-ontológicas se sostiene como **propuesta ontológica general multiescalar articulada con demostración parcial bajo régimen declarado**, con limitaciones honestamente reconocidas (p-value mal calibrado al 24% empírico aunque umbrales EDI robustos, caso 30 con circularidad detectada por sonda alternativa, depuración post-hoc del corpus inter-escala, datos sintéticos pendientes de elevación a LoE 4-5, escalas como etiquetas nominales basadas en parámetros publicados, AUC-ROC interno no externo, ningún caso cumple los tres criterios κ-ontológica, sin revisión por pares humanos externos) y deuda residual fechada con cronograma firme post-defensa.
 
 ### 8.1. Lo que la tesis afirma con fuerza tras hostile testing severo
 
 - **Aporte metodológico:** protocolo replicable con motor común (ABM+ODE acoplado, suite ST, hostile testing automatizado, requirements-locked) que cualquier tercero puede ejecutar y verificar.
 - **Discriminación de ranking interno** sobre el corpus inter-dominio: AUC-ROC 0.886 vs ARIMA 0.600 (V4-05 reconoce que es interno, no validación externa contra estándar de oro).
 - **Discriminación multiescalar:** 7 strong en 7 escalas distintas con sondas físicamente motivadas (Lindblad, Bloch, Tyson-Novak, Hoffmann, Mackey-Glass, Leavitt, Plummer); las sondas son específicas (test cruzado V4-01: 0% circularidad sobre datos no-suyos).
-- **Robustez del gate completo:** 0/1500 falsos positivos bajo random walk masivo.
+- **Robustez del gate completo:** 0/2000 falsos positivos bajo random walk masivo agregando los tres scripts canónicos (`N1_falsos_positivos.py` n=500, `V4_06_hostile_multiescala.py` n=500, `N5_hostile_testing.py` n=1000); Wilson 95 % CI [0, 0.00191]. El gate filtra ruido sin acoplamiento ODE→ABM por construcción (§3.4): el resultado certifica integridad de implementación, no discriminación contra rivales con estructura — esa carga la sostienen AUC-ROC = 0.886 vs ARIMA y 3/3 controles de falsación rechazados.
 - **Validación lógica formal:** suite ST de 24 teorías con coherencia interna verificada y limitaciones explícitas declaradas.
 
 ### 8.2. Lo que la tesis NO afirma (limitaciones honestas)

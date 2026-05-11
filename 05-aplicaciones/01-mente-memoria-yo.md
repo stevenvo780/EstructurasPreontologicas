@@ -177,10 +177,6 @@ La regla del capítulo 03-02 aplica: comprimir cuando el detalle interno no camb
 
 **Tabla 5.1.1.**
 
-**Tabla 5.1.1.**
-
-**Tabla 5.1.1.**
-
 | Tentación | Razón del rechazo |
 |---|---|
 | Dualismo cartesiano | No requiere mente separada del cuerpo o el entorno |

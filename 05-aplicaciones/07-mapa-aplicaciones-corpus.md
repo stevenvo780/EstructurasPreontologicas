@@ -23,8 +23,6 @@ Mapa completo del paisaje de aplicaciones del marco como **ontología general mu
 
 **Tabla 5.7.1.**
 
-**Tabla 5.7.1.**
-
 | Nivel | Categoría | N | Casos |
 |:----:|-----------|:-:|-------|
 | 4 | Strong (`overall_pass=True`) | 4 | Energía, Deforestación, Kessler, Riesgo Biológico |
@@ -41,8 +39,6 @@ Mapa completo del paisaje de aplicaciones del marco como **ontología general mu
 ### Corpus inter-escala (10 casos)
 
 **Tabla A.5.2.**
-
-**Tabla 5.7.2.**
 
 **Tabla 5.7.2.**
 
@@ -69,8 +65,6 @@ Los 40 casos del corpus agregado **no son aplicaciones independientes**: cada un
 
 **Tabla 5.7.3.**
 
-**Tabla 5.7.3.**
-
 | # | Caso | EDI | p | Sonda | LoE | Datos |
 |---|------|----:|--:|-------|----:|-------|
 | 04 | Energía eléctrica | 0.6503 | 0.0000 | Lotka-Volterra | 4 | OPSD |
@@ -86,8 +80,6 @@ Reproducibilidad: el caso 16 ha sido re-ejecutado con datos World Bank descargad
 
 **Tabla 5.7.4.**
 
-**Tabla 5.7.4.**
-
 | # | Caso | EDI | p | Sonda | Por qué no gate |
 |---|------|----:|--:|-------|-----------------|
 | 24 | Microplásticos | 0.7819 | 0.0000 | Jambeck Accumulation | Bootstrap CI inestable |
@@ -95,8 +87,6 @@ Reproducibilidad: el caso 16 ha sido re-ejecutado con datos World Bank descargad
 ### Bloque III — Weak (Nivel 3)
 
 **Tabla A.5.5.**
-
-**Tabla 5.7.5.**
 
 **Tabla 5.7.5.**
 
@@ -117,8 +107,6 @@ Reproducibilidad: el caso 16 ha sido re-ejecutado con datos World Bank descargad
 
 **Tabla 5.7.6.**
 
-**Tabla 5.7.6.**
-
 | # | Caso | EDI | p |
 |---|------|----:|--:|
 | 09 | Finanzas globales | 0.0813 | 0.0000 |
@@ -127,8 +115,6 @@ Reproducibilidad: el caso 16 ha sido re-ejecutado con datos World Bank descargad
 ### Bloque V — Trend (Nivel 1)
 
 **Tabla A.5.7.**
-
-**Tabla 5.7.7.**
 
 **Tabla 5.7.7.**
 
@@ -142,8 +128,6 @@ Reproducibilidad: el caso 16 ha sido re-ejecutado con datos World Bank descargad
 ### Bloque VI — Null (Nivel 0)
 
 **Tabla A.5.8.**
-
-**Tabla 5.7.8.**
 
 **Tabla 5.7.8.**
 
@@ -161,8 +145,6 @@ Reproducibilidad: el caso 16 ha sido re-ejecutado con datos World Bank descargad
 ### Bloque VII — Controles de falsación (correctamente rechazados)
 
 **Tabla A.5.9.**
-
-**Tabla 5.7.9.**
 
 **Tabla 5.7.9.**
 

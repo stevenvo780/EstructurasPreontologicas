@@ -68,6 +68,36 @@ def chapter_prefix(path: Path) -> str | None:
 
 
 SEP_RE = re.compile(r"^\s*\|[\s\-:|]+\|\s*$")
+LABEL_RE = re.compile(r"^\*\*(?:Tabla|Figura) [\dA-Z]+(?:\.\d+)+\.?\*\*\s*$")
+
+
+def _dedupe_consecutive_labels(lines: list[str]) -> list[str]:
+    """Colapsa runs consecutivos de labels idénticos (con o sin línea en blanco entre ellos).
+
+    Defensa contra el bug histórico (pre-commit 052a073) en el que el regex de
+    detección no soportaba numeración multi-nivel; al re-ejecutarse, el script
+    apilaba labels duplicados/triplicados. Esta pasada limpia es idempotente.
+    """
+    out: list[str] = []
+    i = 0
+    n = len(lines)
+    while i < n:
+        if LABEL_RE.match(lines[i]):
+            label = lines[i]
+            out.append(label)
+            i += 1
+            while True:
+                j = i
+                if j < n and lines[j].strip() == "":
+                    j += 1
+                if j < n and lines[j] == label:
+                    i = j + 1
+                    continue
+                break
+        else:
+            out.append(lines[i])
+            i += 1
+    return out
 
 
 def number_file(path: Path) -> tuple[int, int]:
@@ -75,7 +105,7 @@ def number_file(path: Path) -> tuple[int, int]:
     if not prefix:
         return 0, 0
     text = path.read_text()
-    lines = text.splitlines()
+    lines = _dedupe_consecutive_labels(text.splitlines())
     new_lines: list[str] = []
     table_counter = 0
     figure_counter = 0

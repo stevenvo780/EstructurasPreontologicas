@@ -72,8 +72,6 @@ La cuenca opera como **criterio operacional de individuación**, no como definic
 
 **Tabla 4.4.1.**
 
-**Tabla 4.4.1.**
-
 | Nivel | Pregunta | Respuesta de la tesis |
 |---|---|---|
 | Pre-individual | ¿Qué hay antes del recorte? | Sustrato material dinámico con restricciones (cap 02-01 §1.1; Simondon, *L'individuation* 1958/2005, sobre lo metaestable previo a la individuación) |
@@ -285,8 +283,6 @@ Si el lector espera una asimetría ontológica fuerte entre B y L3, no la encont
 Correcto. La tesis no aborda estas dimensiones. La omisión es **deliberada**, no oversight. Cada omisión tiene una razón distinta y declarada.
 
 ### Distinción
-
-**Tabla 4.4.2.**
 
 **Tabla 4.4.2.**
 

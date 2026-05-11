@@ -119,10 +119,6 @@ Capítulo 05-00 (criterios de admisión), capítulos 05-01 a 05-04 (modos progra
 
 **Tabla 1.2.1.**
 
-**Tabla 1.2.1.**
-
-**Tabla 1.2.1.**
-
 | Objeción | Forma corta | Respuesta corta | Compromiso público |
 |---|---|---|---|
 | Sustitución nominal | Renombras, no explicas | Predicción discriminante por categoría | Dossier de anclaje publicado |

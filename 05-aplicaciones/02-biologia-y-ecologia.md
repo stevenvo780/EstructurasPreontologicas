@@ -179,10 +179,6 @@ La tesis no privilegia ninguno como único verdadero. Cada nivel se justifica po
 
 **Tabla 5.2.1.**
 
-**Tabla 5.2.1.**
-
-**Tabla 5.2.1.**
-
 | Tentación | Razón del rechazo |
 |---|---|
 | Esencialismo biológico | Categorías como especie o función no son esencias inmóviles |

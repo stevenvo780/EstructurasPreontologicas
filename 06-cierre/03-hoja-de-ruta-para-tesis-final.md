@@ -81,10 +81,6 @@ Convertir el mapa de interlocutores funcionales del capítulo 07 en aparato bibl
 
 **Tabla 6.3.1.**
 
-**Tabla 6.3.1.**
-
-**Tabla 6.3.1.**
-
 | Capítulo | Interlocutor principal | Interlocutores secundarios |
 |---|---|---|
 | 02-01 (ontología) | Bunge | Dupré, Ladyman-Ross, Dennett, Sellars, Wittgenstein, Simondon |
@@ -192,10 +188,6 @@ El material argumental deja de ser anexo y pasa al cuerpo: glosario, operadores,
 Continuo durante el desarrollo. Cierre completo al final.
 
 ## 9. Cronograma agregado
-
-**Tabla 6.3.2.**
-
-**Tabla 6.3.2.**
 
 **Tabla 6.3.2.**
 

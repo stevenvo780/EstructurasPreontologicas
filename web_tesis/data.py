@@ -760,13 +760,72 @@ def _doc_title_from_md(text: str, fallback: str) -> str:
     return fallback
 
 
+_FRONTMATTER_RE = re.compile(r"\A---\s*\n(.*?)\n---\s*\n", re.DOTALL)
+
+
+def _parse_extra_frontmatter(text: str) -> tuple[dict[str, str], str]:
+    """Lee frontmatter YAML-ish minimalista (title:, extends:) sin dependencia
+    externa. Devuelve (meta, body_sin_frontmatter)."""
+    m = _FRONTMATTER_RE.match(text)
+    if not m:
+        return {}, text
+    meta: dict[str, str] = {}
+    for line in m.group(1).splitlines():
+        if ":" not in line:
+            continue
+        key, _, value = line.partition(":")
+        key = key.strip().lower()
+        value = value.strip().strip('"').strip("'")
+        if key and value:
+            meta[key] = value
+    return meta, text[m.end():]
+
+
+def _collect_chapter_extras(chapter_dir: Path) -> list[dict[str, Any]]:
+    """Lista resúmenes de extras en <cap>/_extendido/. Excluye README.md.
+
+    No carga `html` aquí (se sirve bajo demanda en el endpoint detallado) para
+    mantener `get_dataset()` ligero. Cada item: {name, title, extends, mtime}.
+    """
+    extras_dir = chapter_dir / "_extendido"
+    if not extras_dir.exists() or not extras_dir.is_dir():
+        return []
+    out: list[dict[str, Any]] = []
+    for md in sorted(extras_dir.glob("*.md")):
+        if md.name.lower() == "readme.md":
+            continue
+        try:
+            text = md.read_text(encoding="utf-8", errors="ignore")
+        except OSError:
+            continue
+        meta, body = _parse_extra_frontmatter(text)
+        title = meta.get("title") or _doc_title_from_md(body, md.stem)
+        try:
+            mtime = md.stat().st_mtime
+        except OSError:
+            mtime = 0.0
+        out.append(
+            {
+                "name": md.name,
+                "title": title,
+                "extends": meta.get("extends"),
+                "mtime": mtime,
+            }
+        )
+    return out
+
+
 def _collect_chapter(slug: str, title: str) -> dict[str, Any] | None:
     chapter_dir = ROOT / slug
     if not chapter_dir.exists():
         return None
 
     docs: list[dict[str, Any]] = []
-    md_files = sorted([p for p in chapter_dir.rglob("*.md") if "node_modules" not in p.parts])
+    md_files = sorted(
+        p
+        for p in chapter_dir.rglob("*.md")
+        if "node_modules" not in p.parts and "_extendido" not in p.parts
+    )
     seen_anchors: Counter[str] = Counter()
     for md in md_files:
         rel = md.relative_to(ROOT).as_posix()
@@ -780,6 +839,7 @@ def _collect_chapter(slug: str, title: str) -> dict[str, Any] | None:
                 "name": md.relative_to(chapter_dir).as_posix(),
                 "title": doc_title,
                 "anchor": anchor,
+                "path": rel,
                 "url": f"/repo_files/{rel}",
                 "html": render_markdown(text),
             }
@@ -793,6 +853,49 @@ def _collect_chapter(slug: str, title: str) -> dict[str, Any] | None:
         "title": title,
         "code": code,
         "docs": docs,
+        "extras": _collect_chapter_extras(chapter_dir),
+    }
+
+
+def resolve_chapter_extra(slug: str, name: str) -> dict[str, Any] | None:
+    """Devuelve el contenido renderizado de un extra <cap>/_extendido/<name>.
+
+    Filtra path-traversal: `name` debe ser un .md plano sin separadores.
+    """
+    if not name.endswith(".md") or "/" in name or "\\" in name or name.startswith("."):
+        return None
+    if name.lower() == "readme.md":
+        return None
+    chapter_dir = ROOT / slug
+    extras_dir = chapter_dir / "_extendido"
+    if not extras_dir.exists():
+        return None
+    md_path = extras_dir / name
+    try:
+        md_path = md_path.resolve()
+        extras_dir_resolved = extras_dir.resolve()
+    except OSError:
+        return None
+    # Defensa adicional contra symlinks que escapen del directorio.
+    if extras_dir_resolved not in md_path.parents:
+        return None
+    if not md_path.exists() or not md_path.is_file():
+        return None
+    text = md_path.read_text(encoding="utf-8", errors="ignore")
+    meta, body = _parse_extra_frontmatter(text)
+    title = meta.get("title") or _doc_title_from_md(body, md_path.stem)
+    html, toc = render_markdown_with_toc(body, max_level=3)
+    try:
+        mtime = md_path.stat().st_mtime
+    except OSError:
+        mtime = 0.0
+    return {
+        "name": md_path.name,
+        "title": title,
+        "extends": meta.get("extends"),
+        "html": html,
+        "toc": toc,
+        "mtime": mtime,
     }
 
 
@@ -875,6 +978,12 @@ def _compute_dataset_mtime() -> float:
     candidates = [THESIS_FINAL_MD, SUMMARY_MD]
     candidates.extend(SIM_ROOT.glob("*_caso_*/outputs/metrics.json"))
     candidates.extend((SIM_ROOT / "corpus_multiescala").glob("*/outputs/metrics.json"))
+    # Extras por capítulo: cualquier .md dentro de <cap>/_extendido/ afecta listing.
+    for slug, _ in CHAPTER_DIRS:
+        extras_dir = ROOT / slug / "_extendido"
+        if extras_dir.exists():
+            candidates.append(extras_dir)
+            candidates.extend(extras_dir.glob("*.md"))
     mtimes: list[float] = []
     for path in candidates:
         try:

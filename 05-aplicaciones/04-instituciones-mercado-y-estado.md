@@ -133,10 +133,6 @@ La validez normativa se modelaría como cuenca de atracción del sistema institu
 
 **Tabla 5.4.1.**
 
-**Tabla 5.4.1.**
-
-**Tabla 5.4.1.**
-
 | Tentación | Razón del rechazo |
 |---|---|
 | Hipóstasis institucional | No convertir instituciones en sujetos metafísicos autónomos |

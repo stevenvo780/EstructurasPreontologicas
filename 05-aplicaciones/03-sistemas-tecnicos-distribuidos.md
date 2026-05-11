@@ -92,10 +92,6 @@ Candidatos: SRE journals con post-mortems publicados, datasets de Google Borg, t
 
 **Tabla 5.3.1.**
 
-**Tabla 5.3.1.**
-
-**Tabla 5.3.1.**
-
 | Tentación | Razón |
 |---|---|
 | Reificado técnico | No tratar `la plataforma`, `la app` o `el backend` como cosas simples |

@@ -137,10 +137,6 @@ La tesis ahora afirma con respaldo articulado:
 
 **Tabla 2.5.1.**
 
-**Tabla 2.5.1.**
-
-**Tabla 2.5.1.**
-
 | Dimensión | Postura | Operacionalización |
 |-----------|---------|---------------------|
 | **Tiempo** | B-series relacional, eternalismo moderado | Series temporales del corpus, dt explícito en sondas |
