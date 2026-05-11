@@ -88,13 +88,13 @@ Esto resuelve la objeción "¿la compresión es semántica o solo sintáctica?":
 
 #### 3.5.3. La sonda como representación
 
-¿Qué es una sonda ODE en relación con el fenómeno que describe? La tesis adopta **realismo estructural representacional**:
+¿Qué es una sonda ODE en relación con el fenómeno que describe? La tesis lo articula bajo el **realismo estructural moderado** (glosario operativo §"Realismo estructural moderado", uso operativo no-Ladyman) en su faceta representacional:
 
 - la sonda **NO es copia** del fenómeno (no es isomorfismo);
 - la sonda **NO es ficción útil sin referencia** (no es ficcionalismo);
-- la sonda es **homomorfismo parcial**: preserva las **dependencias decisivas** del fenómeno bajo la pregunta `Q` con tolerancia explícita.
+- la sonda es **homomorfismo parcial bajo `Q`**: preserva las **dependencias decisivas** del fenómeno bajo la pregunta `Q` con tolerancia explícita, y declara las que no preserva.
 
-Esto se alinea con **Sellars** (1956, *Empiricism and the Philosophy of Mind*, §41): la representación es **inferencial-funcional**, no pictórica. Y con Pearl: el modelo causal es **estructura mínima suficiente** para responder a intervenciones, no copia exhaustiva.
+La cita a **Sellars** (1956, *Empiricism and the Philosophy of Mind*, §41) y a Pearl funciona como apoyo conceptual (representación inferencial-funcional, estructura mínima suficiente bajo intervención), no como aval de un rótulo distinto al canónico del glosario.
 
 #### 3.5.4. Por qué la sustitución nominal es prohibida
 

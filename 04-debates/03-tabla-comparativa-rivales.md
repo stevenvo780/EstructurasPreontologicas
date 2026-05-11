@@ -2,7 +2,7 @@
 
 ## Función
 
-Síntesis de la discriminación pública contra catorce posiciones rivales. Cada celda representa cumplimiento del criterio: ✓ (satisface), parcial (satisface en parte), ✗ (no satisface). La tesis discrimina en al menos dos criterios contra cada rival.
+Síntesis de la discriminación pública contra quince posiciones rivales. Cada celda representa cumplimiento del criterio: ✓ (satisface), parcial (satisface en parte), ✗ (no satisface). La tesis discrimina en al menos dos criterios contra cada rival.
 
 ---
 
@@ -23,7 +23,7 @@ Síntesis de la discriminación pública contra catorce posiciones rivales. Cada
 
 ---
 
-## Tabla síntesis (14 rivales)
+## Tabla síntesis (15 rivales)
 
 **Tabla A.4.2.**
 
@@ -45,10 +45,15 @@ Síntesis de la discriminación pública contra catorce posiciones rivales. Cada
 | 12 | Realismo estructural informativo | ✗ | ✓ | parcial | ✗ | ✗ | ✓ | A, C, D |
 | 13 | Mecanicismo multinivel sin filtro | ✓ | ✓ | parcial | parcial | parcial | ✓ | C, D, F |
 | 14 | **Wolfram Physics Project** | ✓ | ✓ | ✗ | ✗ | ✗ | ✓ | C, D, E |
+| 15 | **IIT (Tononi-Boly-Massimini-Koch 2016; Oizumi-Albantakis-Tononi 2014)** | ✓ | parcial | ✗ | ✗ | parcial | ✗ | C, D, F + tratabilidad >12 nodos |
 
 ---
 
 ## La tesis (irrealismo operativo) en la matriz
+
+### Reconocimiento de circularidad criterio-evaluador
+
+Los criterios A-F que organizan la Tabla 4.3.3 fueron formulados desde el aparato de esta tesis. Que la tesis los satisfaga 6/6 no es virtud, sino tautología si se lee como discriminación pública. La función real de la tabla es doble: (i) explicitar las dimensiones que la tesis considera relevantes para que el lector pueda contestarlas, y (ii) mostrar que ningún rival las satisface conjuntamente —lo que es informativo sólo en la medida en que el lector acepte previamente la pertinencia del conjunto-criterio. Para mitigar la circularidad, el apartado siguiente "Evaluación contra criterios externos" somete la tesis a tres criterios no diseñados por ella, donde su puntaje no es 6/6.
 
 **Tabla A.4.3.**
 
@@ -58,7 +63,17 @@ Síntesis de la discriminación pública contra catorce posiciones rivales. Cada
 |---|:-:|:-:|:-:|:-:|:-:|:-:|
 | **Tesis** | **✓** | **✓** | **✓** | **✓** | **✓** | **✓** |
 
-La tesis cumple los seis criterios. Ninguna posición rival cumple los seis. La novedad no es de inventario (cada criterio aislado se encuentra en algún rival) sino de **articulación**: la combinación dossier + asimetría L1↔B↔L3↔S + cartografía con falsación es propia.
+La tesis satisface los seis criterios A-F por construcción —ellos fueron formulados desde el aparato propio—; este hecho es informativo sólo si el lector acepta el conjunto-criterio. La discriminación sustantiva contra rivales se sostiene en (a) las celdas individuales donde rivales no satisfacen criterios que ellos mismos reconocerían como deseables (por ejemplo, enactivismo radical reconoce la ausencia de filtro formal) y (b) los criterios externos G-I del apartado siguiente, donde la tesis muestra al menos un ✗.
+
+### Evaluación contra criterios externos
+
+| Código | Criterio externo (fuente) | Tesis |
+|---|---|---|
+| **G** | **Parsimonia ontológica estricta** (Quine 1948, *On What There Is*, *Review of Metaphysics* 2(5)). Preferir el menor número de tipos de entidad. La tesis postula sustrato material + estructura emergente + categorías operativas: más tipos que el materialismo de partículas. | **parcial** |
+| **H** | **Predictividad novedosa cuantitativa fuera del corpus de calibración** (Popper 1959, *Logic of Scientific Discovery* §85; Lakatos 1970, *Falsification and the Methodology of Scientific Research Programmes*, sobre *novel facts*). El corpus EDI fue diseñado y los casos null (8/40) se reanalizaron post-hoc; predicciones novedosas pre-registradas fechadas: 0. | **✗** |
+| **I** | **Independencia del evaluador** (Bunge 1977, *Treatise on Basic Philosophy* vol. 3 — PDF no disponible localmente; paráfrasis declarada). El sistema debe ser evaluable por criterios no construidos por sus proponentes. La presente tabla es interna; al cierre actual no hay revisión externa formal. | **✗** (al cierre actual; muta a parcial tras defensa pública) |
+
+Bajo la columna externa el puntaje agregado es **3/9** o, contando "parcial", **4/9** — no 6/6. La tabla interna mantiene su valor como auto-ubicación; la cláusula H queda como **deuda residual fechada** del cap 06 (post-defensa: pre-registrar ≥3 predicciones novedosas en dominios no calibrados con fecha pública anterior a su ejecución).
 
 ---
 
@@ -221,7 +236,7 @@ La tesis cumple los seis criterios. Ninguna posición rival cumple los seis. La 
 
 Esta tabla es compromiso. Si en algún rival la tesis no muestra ventaja en al menos dos celdas, la tesis admite haber sido absorbida y debe reformularse.
 
-**Estado actual:** la tesis discrimina contra cada uno de los catorce rivales en al menos dos criterios. La tabla no produce absorción.
+**Estado actual:** la tesis discrimina contra cada uno de los quince rivales en al menos dos criterios. La tabla no produce absorción.
 
 ---
 

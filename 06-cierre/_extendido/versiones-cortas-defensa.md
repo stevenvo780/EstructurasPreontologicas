@@ -52,7 +52,7 @@ Cinco operadores formales (μ medición, G grafo, H hipergrafo, κ compresión, 
 
 **Los 40 casos son justificación operativa del marco tripartito; no son la tesis.** La tesis son los tres marcos generales; los casos muestran que sus afirmaciones son ejecutables, discriminantes y transferibles entre escalas.
 
-Discriminación pública contra catorce posiciones rivales identificables: dualismo, materialismo de partículas, reduccionismo plano, emergentismo fuerte, constructivismo arbitrario, instrumentalismo puro, formalismo vacío, modelos internos / control óptimo, cognitivismo computacional, conductismo radical, enactivismo radical, realismo estructural informativo, mecanicismo multinivel sin filtro, **y Wolfram Physics Project** (con piloto Rule 110 ejecutado mostrando convivencia de irreducibilidad computacional micro y cierre operativo macro detectable: Wolfram fundamenta; nosotros disciplinamos).
+Discriminación pública contra quince posiciones rivales identificables: dualismo, materialismo de partículas, reduccionismo plano, emergentismo fuerte, constructivismo arbitrario, instrumentalismo puro, formalismo vacío, modelos internos / control óptimo, cognitivismo computacional, conductismo radical, enactivismo radical, realismo estructural informativo, mecanicismo multinivel sin filtro, **Wolfram Physics Project** (con piloto Rule 110 ejecutado mostrando convivencia de irreducibilidad computacional micro y cierre operativo macro detectable: Wolfram fundamenta; nosotros disciplinamos), **e IIT** (Tononi-Boly-Massimini-Koch 2016: comparte la apuesta por una métrica computable definida sobre estructura de dependencias; discriminamos en C, D, F + tratabilidad).
 
 ### Lección epistémica clave
 
@@ -70,7 +70,7 @@ Cinco escenarios falsables canónicos (consolidados tras cierre 2026-05): (1) lo
 
 ### 3.1. Punto de partida (1 minuto)
 
-La tesis fue desarrollada bajo dirección de Jacob Agudelo (Universidad de Antioquia) con colaboración técnica de Steven Vallejo Ortiz: marco *Irrealismo Operativo de Estructuras Pre-Ontológicas* como **ontología, epistemología y metodología generales aplicables a cualquier escala física, biológica o cosmológica** con métrica EDI, asimetría L1↔B↔L3↔S, dossier de anclaje de catorce componentes, corpus EDI agregado de **40 casos** (30 inter-dominio + 10 inter-escala desde 10⁻¹⁰ m hasta 10²⁰ m), suite ST de 24 teorías formales, y discriminación pública contra catorce rivales incluido Wolfram Physics Project.
+La tesis fue desarrollada bajo dirección de Jacob Agudelo (Universidad de Antioquia) con colaboración técnica de Steven Vallejo Ortiz: marco *Irrealismo Operativo de Estructuras Pre-Ontológicas* como **ontología, epistemología y metodología generales aplicables a cualquier escala física, biológica o cosmológica** con métrica EDI, asimetría L1↔B↔L3↔S, dossier de anclaje de catorce componentes, corpus EDI agregado de **40 casos** (30 inter-dominio + 10 inter-escala desde 10⁻¹⁰ m hasta 10²⁰ m), suite ST de 24 teorías formales, y discriminación pública contra quince rivales incluidos Wolfram Physics Project e IIT.
 
 ### 3.2. Problema filosófico (2 minutos)
 
@@ -96,7 +96,7 @@ Catorce componentes obligatorios para cualquier categoría candidata: pregunta f
 
 **40 casos justifican operativamente el marco tripartito; no son la tesis**. La tesis son los marcos generales; los casos muestran que sus afirmaciones son ejecutables, discriminantes y transferibles entre escalas.
 
-**Corpus inter-dominio (30 casos):** **4 strong con gate completo**: Energía, Deforestación, Kessler, Riesgo Biológico. **1 strong sin gate**: Microplásticos (EDI=0.78 pero CI inestable). **8 weak**: Políticas, Postverdad, Urbanización, Fósforo, Wikipedia, Epidemiología, Movilidad, **Behavioral Dynamics (caso 30)**. **2 suggestive**: Finanzas, Salinización. **4 trend**: Justicia, Starlink, Fuga de cerebros, Clima. **8 null**: Conciencia, Contaminación, Paradigmas, Océanos, Acidificación, Erosión, Acuíferos, IoT. **3 controles de falsación correctamente rechazados**.
+**Corpus inter-dominio (30 casos):** **4 strong con gate completo**: Energía, Deforestación, Kessler, Riesgo Biológico. **1 strong sin gate**: Microplásticos (EDI=0.78 pero CI inestable). **8 weak**: Políticas, Postverdad, Urbanización, Fósforo, Wikipedia, Epidemiología, Movilidad, **Behavioral Dynamics (caso 30)**. **1 suggestive**: Finanzas (Salinización reclasificada por AU-4: CI 95 % `[-0.077, +0.083]` cruza cero + magnitud EDI=0.018 trivial). **4 trend**: Justicia, Starlink, Fuga de cerebros, Clima. **Bloque "null" subdividido (AU-9)**: 5 nulls genuinos (Conciencia, Acidificación, Erosión, Acuíferos, IoT), 1 EDI negativo por sonda macro inadecuada (Paradigmas, EDI=-0.144), 2 señales rechazadas por gate C1-C5 (Contaminación, Océanos). **3 controles de falsación correctamente rechazados**.
 
 **Corpus inter-escala (10 casos)** desde dinámica subatómica hasta cosmológica, **30 órdenes de magnitud** espaciales y temporales: **7 strong en 7 escalas distintas** — atómica (espín-órbita), cuántica (decoherencia), bioquímica (Michaelis-Menten), celular oscilatoria (NF-κB), individual (HRV cardíaco), astrofísica (Cefeida), astrofísica masiva (cúmulo globular). 1 weak (ciclo celular Tyson-Novak), 2 nulls honestos (Villin Headpiece bajo sonda equilibrio inadecuada; locomoción τ-dot bajo observación con reinicios).
 
@@ -108,7 +108,7 @@ Behavioral dynamics se incorpora al corpus mediante sonda `behavioral_attractor`
 
 ### 3.9. Discriminación pública contra rivales (1.5 minutos)
 
-Catorce posiciones discriminadas en al menos dos criterios cada una. Especialmente importante: **Wolfram Physics Project** comparte hipergrafos pero discriminamos en C (admisión empírica), D (asimetría protocolar), E (cartografía multidominio con falsación). Wolfram fundamenta; nosotros disciplinamos.
+Quince posiciones discriminadas en al menos dos criterios cada una. Especialmente importante: **Wolfram Physics Project** comparte hipergrafos pero discriminamos en C (admisión empírica), D (asimetría protocolar), E (cartografía multidominio con falsación) — Wolfram fundamenta; nosotros disciplinamos. **IIT (Tononi-Boly-Massimini-Koch 2016)** comparte la apuesta por una métrica computable definida sobre estructura de dependencias; discriminamos en C, D, F + tratabilidad (Φ intratable más allá de ~10-12 nodos).
 
 ### 3.10. Condiciones de fracaso falsables (1 minuto)
 

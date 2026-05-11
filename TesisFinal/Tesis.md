@@ -666,6 +666,10 @@ Entradas operativas que ajustan la semántica del glosario tras triage de bitác
 - **[TENG-03 2026-05-11]** **GPU batch init_noise**. `abm_core_gpu.py:583-619` comparte `init_noise` entre candidatos del grid search por diseño explícito, tanto en CPU como GPU. Esto es **decisión metodológica** (reduce varianza inter-candidato del grid) no detalle de implementación. Acción: declarar la semántica en el glosario para que la reproducibilidad inter-instalación no se confunda con accidente. Origen: `Bitacora/2026-05-04-continuous-run/TENG-03-gpu-batch-init-noise-compartido.md`.
 - **[TENG-04 2026-05-11]** **C2 protocolo**. En `hybrid_validator.py:977,997` la rama CPU usa `seed = 2 + i + 10` por candidato mientras la rama GPU usa `seed = seed_base` único. C2 (criterio booleano) **NO es invariante a plataforma** bajo la implementación actual. Acción: unificar semillas (usar la fórmula CPU en ambas ramas) y re-correr el corpus; mientras tanto declarar la limitación en el glosario. Origen: `Bitacora/2026-05-04-continuous-run/TENG-04-c2-cpu-vs-gpu-semillas-divergentes.md`.
 - **[TENG-06 2026-05-11]** **`np.random` global**. `hybrid_validator.py:1278` ejecuta `np.random.seed(42)` global antes del fork con loky; mitiga la correlación inter-worker pero **no la elimina** porque hay otros `np.random.*` no auditados en `common/abm_*.py`. Acción: grep+auditoría exhaustiva de llamadas globales a `np.random` en `09-simulaciones-edi/common/abm_*.py`; reemplazar por `Generator` aislado por worker. Origen: `Bitacora/2026-05-04-continuous-run/TENG-06-np-random-seed-global-correlaciona-workers.md`.
+- **[TENG-08 2026-05-11]** **C1 con `c1_fallback` diagnóstico**. `hybrid_validator.py:892-926` define `c1 = c1_relative OR c1_absolute`. La rama `c1_absolute` aprueba C1 sin requerir que el ODE aporte información: 8 fases del corpus (≈10 %) tienen `c1_convergence=True` con `EDI<0` (casos 02, 03, 09, 14, 20, 23, 25). Salida elegida: reclasificar `c1_absolute` como diagnóstico `c1_fallback` que no contribuye a `overall_pass` cuando `reduced_val` existe; mientras tanto la semántica fuerte de C1 es "convergencia ABM+ODE sobre el reducido". Origen: `Bitacora/2026-05-04-continuous-run/TENG-08-c1-or-fallback-permite-edi-negativo.md`.
+- **[TENG-10 2026-05-11]** **Baselines sobre target distinto**. `09-simulaciones-edi/common/baselines.py:48-208` ajusta ARIMA/VAR/RW/GP sobre serie sintética propia (`_gen_series_with_coupling`), no sobre el `obs_val` del caso. Los ratios `ratio_*_vs_coupled` son aritméticamente válidos pero inferencialmente nulos; el campo `winner` no compara aparato vs baselines sobre el mismo target. La métrica EDI propia no se ve afectada. Acción: cualquier prosa que cite `winner` debe leerse como ilustrativa hasta implementar Ruta 1 (baselines sobre `primary_arrays.json:obs[val_idx]`). La comparación válida de F3-AU3 se mantiene como referencia honesta. Origen: `Bitacora/2026-05-04-continuous-run/TENG-10-baselines-target-distinto-aparato.md`.
+- **[TENG-12 2026-05-11]** **Hash MD5 no detecta inconsistencia interna**. `replay_hash.py:44-52` (`md5_metrics`) certifica reproducibilidad bit-a-bit del `metrics.json` pero no examina invariantes algebraicos entre campos. Acción B-T: implementar `verify_internal_consistency.py` con tres invariantes — `|edi.value − weighted_value/loe_factor| < 1e-6`, `|edi.value − (rmse_no_ode − rmse_abm)/rmse_no_ode| < 1e-4`, `ci_lo ≤ value ≤ ci_hi` — cableado a `./tesis audit` antes de `replay_hash.py`. Origen: `Bitacora/2026-05-04-continuous-run/TENG-12-hash-no-detecta-inconsistencia-interna.md`.
+- **[TENG-13 2026-05-11]** **Calibración del ABM (objetivo bi-criterio)**. `calibrate_abm` en `hybrid_validator.py:496-549` selecciona parámetros minimizando `score = RMSE × max(0.5, 2 − corr)` (clamp inferior 0.5). EDI se evalúa sobre RMSE puro del modelo así seleccionado. El EDI reportado no es exactamente "el mejor ajuste predictivo del ABM acoplado en RMSE" sino "el mejor entre los modelos que también correlacionan temporalmente con la sonda macro". Acción B-T: estudio de sensibilidad en 3 casos pre-acordados re-calibrando con `score = RMSE` puro y reportando `ΔEDI`. Origen: `Bitacora/2026-05-04-continuous-run/TENG-13-calibracion-objetivo-no-alineado-con-edi.md`.
 
 ## Cierre
 
@@ -1243,7 +1247,7 @@ La tesis no reduce toda explicación a causalidad lineal. Reconoce un repertorio
 - **dependencia histórica**: el estado actual depende de trayectorias pasadas;
 - **dependencia contextual**: la relación cambia según entorno o escala.
 
-La causalidad circular (upward + downward) emerge naturalmente del acoplamiento dinámico: las componentes producen la dinámica conjunta y la dinámica conjunta retroalimenta a las componentes. No hay aquí emergencia fuerte: hay self-organization en el sentido técnico anclado en Maturana y Varela (1980, *Autopoiesis and Cognition*) y Haken (1977, *Synergetics*) — ver cap 02-04 §4 para la formulación con cita textual paginada.
+La causalidad circular (upward + downward) emerge naturalmente del acoplamiento dinámico: las componentes producen la dinámica conjunta y la dinámica conjunta retroalimenta a las componentes. No hay aquí emergencia fuerte: hay self-organization en el sentido técnico operacionalizado vía Haken (1977, *Synergetics*) — slaving principle como modelo de estabilización dinámica — con la restricción regulativa heredada de Maturana-Varela (1980, *Autopoiesis and Cognition*) de que la organización del par acoplado no es reducible a la suma de sus componentes. **Las dos tradiciones no son convergentes**; el costo de su uso conjunto y la asimetría de la herencia están declarados en cap 02-04 §4 (último párrafo).
 
 ## 10. Qué evita la ontología
 
@@ -1417,13 +1421,13 @@ Esto resuelve la objeción "¿la compresión es semántica o solo sintáctica?":
 
 #### 3.5.3. La sonda como representación
 
-¿Qué es una sonda ODE en relación con el fenómeno que describe? La tesis adopta **realismo estructural representacional**:
+¿Qué es una sonda ODE en relación con el fenómeno que describe? La tesis lo articula bajo el **realismo estructural moderado** (glosario operativo §"Realismo estructural moderado", uso operativo no-Ladyman) en su faceta representacional:
 
 - la sonda **NO es copia** del fenómeno (no es isomorfismo);
 - la sonda **NO es ficción útil sin referencia** (no es ficcionalismo);
-- la sonda es **homomorfismo parcial**: preserva las **dependencias decisivas** del fenómeno bajo la pregunta `Q` con tolerancia explícita.
+- la sonda es **homomorfismo parcial bajo `Q`**: preserva las **dependencias decisivas** del fenómeno bajo la pregunta `Q` con tolerancia explícita, y declara las que no preserva.
 
-Esto se alinea con **Sellars** (1956, *Empiricism and the Philosophy of Mind*, §41): la representación es **inferencial-funcional**, no pictórica. Y con Pearl: el modelo causal es **estructura mínima suficiente** para responder a intervenciones, no copia exhaustiva.
+La cita a **Sellars** (1956, *Empiricism and the Philosophy of Mind*, §41) y a Pearl funciona como apoyo conceptual (representación inferencial-funcional, estructura mínima suficiente bajo intervención), no como aval de un rótulo distinto al canónico del glosario.
 
 #### 3.5.4. Por qué la sustitución nominal es prohibida
 
@@ -1939,7 +1943,9 @@ Esta es la formulación técnica de **self-organization en sentido Maturana-Vare
 
 **Convención del manuscrito (glosario operativo §"Self-organization (sentido técnico)"):** cualquier ocurrencia textual de "self-organization", "auto-organización" o equivalentes en este manuscrito remite a esta sección y a las dos fuentes citadas. Donde la prosa no pueda mantener el anclaje disciplinar, debe sustituirse por "estabilización dinámica" o "convergencia a atractor".
 
-Esto cierra la cláusula del capítulo 02-01: la emergencia no multiplica sustancias, opera como auto-organización en el sentido Maturana-Varela 1980 y Haken 1977.
+**Costo declarado: la doble base no es convergencia.** Maturana-Varela y Haken no constituyen una sola tradición. La autopoiesis es un esquema **organizacional** (cierre operacional, producción recursiva de los propios componentes) que Maturana resistió etiquetar como "self-organization" precisamente porque ese término, en el uso sinergético de Haken, describe **patrones estables bajo gradiente termodinámico** sin requerir clausura ni auto-producción. La sinergética opera con asimetría top-down (parámetros de orden esclavizan modos rápidos); la autopoiesis opera con circularidad sin polo dominante. Lo que la tesis toma de cada tradición es distinto y desigual: de **Haken** hereda la operacionalización dinámica (atractor del sistema acoplado bajo cruce de parámetro de control, baja dimensión efectiva); de **Maturana-Varela** hereda solo la **idea regulativa** de que la dinámica conjunta no es reducible a la suma de los componentes y que la organización puede ser invariante mientras los componentes cambian. La tesis **no afirma que sus sistemas EDI sean autopoiéticos** en sentido estricto; afirma que el modelo dinámico de emergencia (Haken) es compatible con esa idea regulativa y la opera empíricamente. Cuando el manuscrito dice "self-organization en sentido Maturana-Varela + Haken" debe leerse como **estabilización dinámica al modo de Haken con la restricción regulativa de no-reducción heredada de la tradición autopoiética**, no como síntesis filosófica de ambas. La discusión informada de la tensión entre ambos esquemas (Thompson 2007, *Mind in Life*, cap. 5) queda registrada como referencia secundaria pendiente de verificación con paginación (B-T:fetch-thompson-2007).
+
+Esto cierra la cláusula del capítulo 02-01: la emergencia no multiplica sustancias, opera como auto-organización en el sentido Maturana-Varela 1980 y Haken 1977, **bajo la asimetría declarada arriba**.
 
 ## 5. Información ecológica como categoría central
 
@@ -2444,12 +2450,14 @@ La tesis prohíbe la arista decorativa: solo entran las relaciones que afectan l
 Una arista `(v_i, v_j) ∈ E` es admisible si:
 
 - es detectable por covarianza condicional bajo régimen R;
-- es robusta a intervenciones específicas (`do(v_i)` cambia `v_j`);
+- es robusta a una intervención análoga al `do(v_i)` pearliano **cuando hay acceso experimental al sistema** (caso ancla VENLab); en los casos observacionales (29/30 del corpus inter-dominio) la admisión se reduce a **ablación dentro del modelo híbrido** —apagar el término de acoplamiento ODE→ABM degrada la predicción— bajo los supuestos identificadores explícitamente declarados en §12.1;
 - su peso `w_{ij}` tiene unidad dimensionalmente coherente.
+
+La consistencia con ablación de modelo **no equivale** a la consistencia con `do` pearliano genuino: la primera es afirmación sobre la estructura del modelo que mejor predice; la segunda exige intervención sobre el sustrato.
 
 ### 4.4. Criterio de fallo
 
-Si una arista no resiste intervención (manipular `v_i` no cambia `v_j` de la manera predicha), se elimina o se reformula. La consistencia interna del grafo no basta: se exige consistencia con intervención.
+Si una arista no resiste intervención (donde la intervención es experimental cuando es accesible, y ablación de modelo bajo supuestos identificadores cuando no lo es), se elimina o se reformula. La consistencia interna del grafo no basta: se exige consistencia con intervención.
 
 ## 5. Operador 3: hipergrafo H
 
@@ -2497,7 +2505,7 @@ Una hiperarista es admisible si la dependencia conjunta no se reduce sin pérdid
 
 `κ` reduce dimensionalidad efectiva conservando la estructura relevante para Q. La operacionalización empírica detallada está en el capítulo 03-04. Aquí se fija el criterio:
 
-> κ(G) = G* es legítima respecto a Q si y solo si existe un sistema dinámico de baja dimensión sobre G* que (a) reproduce las trayectorias observadas dentro de τ, (b) preserva atractores, repulsores y bifurcaciones empíricamente identificadas, (c) predice respuestas a perturbaciones e intervenciones, (d) no oculta una transición que sí ocurre en los datos.
+> κ(G) = G* es legítima respecto a Q bajo el conjunto de evidencia vigente E si existe un sistema dinámico de baja dimensión sobre G* que (a) reproduce las trayectorias observadas dentro de τ, (b) preserva atractores, repulsores y bifurcaciones empíricamente identificadas en E, y (c) predice respuestas a perturbaciones e intervenciones discriminantes. La legitimidad es **revisable**: queda **retirada** si nuevos datos E' exhiben una transición no capturada por G*. La cláusula de retiro opera como criterio de fallo ex post (§6.4), no como requisito de admisión ex ante: certificar la completitud de la evidencia desde dentro de la evidencia es una versión local del *bootstrap problem* de Glymour (1980, *Theory and Evidence*).
 
 ### 6.4. Criterio de fallo
 
@@ -2602,7 +2610,11 @@ La diferencia con el caso ancla: aquí no hay datos experimentales con sistema c
 
 ### 12.1. Pearl — grafos causales y do-calculus
 
-Pearl (2009, *Causality*, 2.ª ed., cap. 3, p. 70) define el operador de intervención: *"the action `do(X = x)` represents an experiment in which the variable X is set to value x by an outside intervention, while the rest of the model remains unchanged"*. La tesis absorbe esta operación en `G` y `E` con dos restricciones: (a) los grafos representan dependencias del sistema acoplado, no causalidad lineal aislada; (b) la admisión de aristas exige `do`-test, no solo correlación. La métrica EDI es **operacionalización directa de un do-test**: ablación del acoplamiento ODE con preservación del forcing exógeno, comparada contra coupled completo.
+Pearl (2009, *Causality*, 2.ª ed., cap. 3, §3.2.1, p. 70) define la intervención atómica como *"placing it under the influence of a new mechanism that sets the value xi while keeping all other mechanisms unperturbed. Formally, this atomic intervention […] amounts to removing the equation xi = fi(pai, ui) from the model and substituting Xi = xi in the remaining equations"* (verificado contra `07-bibliografia/Pearl - Causality (2009).pdf`). La tesis absorbe esta operación en `G` y `E` con dos restricciones: (a) los grafos representan dependencias del sistema acoplado, no causalidad lineal aislada; (b) la admisión de aristas exige `do`-test cuando hay acceso experimental al sistema.
+
+La métrica EDI **no es un `do`-test pearliano sobre el sistema real**, excepto en el caso ancla VENLab, donde el dispositivo experimental permite manipulación exógena directa de los obstáculos y la meta. En los 29 casos observacionales restantes del corpus inter-dominio, EDI es una **ablación de modelo**: se apaga el término de acoplamiento ODE→ABM dentro del simulador híbrido y se mide la degradación predictiva. La inferencia de un EDI alto a una dependencia causal en el sistema real exige supuestos identificadores adicionales que la tesis declara como costo: (i) **fidelidad** del simulador al sistema, (ii) **modularidad** del acoplamiento (apagar el término ODE no rompe otros mecanismos no modelados), (iii) **ausencia de confounders** no incluidos. Lo que EDI sí establece sin estos supuestos es que el término ODE **no es decorativo en el modelo**: si fuera decorativo, su ablación no degradaría la predicción. La inferencia más fuerte —que esa dependencia se preserva en el sustrato físico— exige justificación adicional caso a caso, y se declara como deuda residual del cap 03 cuando no es defendible.
+
+La métrica preserva entonces su fuerza epistémica como filtro contra términos decorativos y como evidencia indirecta de dependencia bajo supuestos declarados; pierde la fuerza causal directa que el rótulo "EDI = do-test" sugería.
 
 ### 12.2. Ladyman y Ross — discrepancia con el realismo estructural óntico
 
@@ -2813,11 +2825,11 @@ nivel = clasificar(EDI=validacion.edi,
 |-------|----------------|
 | Firma | `G = (V, E, W, T)` |
 | V (nodos) | variables observadas |
-| E (aristas) | dependencias detectadas que pasan do-test |
-| W (pesos) | covarianza condicional, sensibilidad a intervención |
+| E (aristas) | dependencias detectadas que pasan `do`-test (cuando hay acceso experimental, p. ej. VENLab) o ablación de modelo (corpus observacional) bajo supuestos identificadores declarados en cap 03-01 §12.1 |
+| W (pesos) | covarianza condicional + sensibilidad a ablación del término ODE en el modelo híbrido |
 | T (reglas) | leyes físicas + leyes de control empíricamente identificables |
-| Criterio de admisión | aristas robustas a intervenciones específicas |
-| Criterio de fallo | manipular v_i no cambia v_j según predicción → eliminar arista |
+| Criterio de admisión | aristas robustas a intervención experimental cuando es accesible; en caso observacional, robustas a ablación bajo supuestos identificadores (fidelidad, modularidad, ausencia de confounders no incluidos) |
+| Criterio de fallo | apagar v_i no cambia v_j en el modelo → arista decorativa, eliminar |
 | Implementación EDI | implícita en `hybrid_validator.py::run_full_validation` |
 
 ---
@@ -3043,7 +3055,7 @@ Un dossier falla si:
 - la compresión no pasa las pruebas de validación;
 - la predicción discriminante no se cumple en datos públicos;
 - la intervención discriminante se evita;
-- algún parámetro de L3 no se traduce a B (formalismo desanclado).
+- algún parámetro de L3 no se traduce a B mediante medición independiente del ajuste a L3 (formalismo desanclado **o calibración nominalizada como traducción**, cf. cap 03-04 Patología 3).
 
 El fallo en cualquiera implica retiro de la propuesta o reescritura del dossier desde el componente afectado.
 
@@ -3179,7 +3191,9 @@ Los diez criterios son la **lista verificable** de propiedades exigidas. El doss
 
 ### 11.1. Bunge — exigencias de cientificidad
 
-Bunge (1967, *La investigación científica*, vol. 2, p. 32) formula los criterios de cientificidad de un constructo: *"claridad, falsabilidad, contrastabilidad, no contradicción interna, compatibilidad con el grueso del conocimiento previo, capacidad explicativa y predictiva"*. Los diez criterios de este capítulo extienden esa lista al dominio multiescala con énfasis en **compresión** y **reversibilidad**, dos exigencias adicionales que Bunge no operacionaliza con la misma especificidad pero que la tesis vuelve verificables.
+Bunge (1967, *La investigación científica*, vol. 2, p. 32 — paráfrasis declarada; el PDF disponible en `07-bibliografia/` es scan parcial sin OCR, lo que impide cita verbatim; verificación contra edición completa Ariel pendiente) formula siete criterios de cientificidad de un constructo: claridad, falsabilidad, contrastabilidad, no contradicción interna, compatibilidad con el grueso del conocimiento previo, capacidad explicativa y capacidad predictiva. **Los diez criterios de este capítulo no extienden esa lista sino que la reorganizan.** Conservan capacidad explicativa (como poder inferencial, §2.4), capacidad predictiva (§2.5) y contrastabilidad (subsumida en dependencia empírica, §2.2); **desplazan falsabilidad** del estatuto de criterio positivo al de condición de fallo del dossier (§3.3), donde se opera mediante `do`-test e intervención discriminante cuando es factible; y **omiten como criterios independientes** claridad, no contradicción interna y compatibilidad con el saber previo, asumiéndolas como precondiciones de admisión a discusión, no como filtros operativos. La tesis añade, en cambio, **siete exigencias materialistas y operativas** ausentes en la lista bungeana: anclaje material (§2.1), fidelidad relacional (§2.3), poder interventivo (§2.6), robustez (§2.7), reversibilidad parcial (§2.8), economía explicativa (§2.9) y no reificación (§2.10).
+
+El costo de esta reorganización se declara: una propuesta puede satisfacer los diez criterios sin haberse sometido a un test de falsabilidad popperiano clásico, siempre que su dossier admita intervención discriminante. En dominios histórico-sociales o cosmológicos donde el `do`-test no es factible, el filtro pierde mordida (cf. §11.2 sobre Lakatos). La tesis sostiene que esta sustitución es ganancia operativa para dominios con acceso a intervención; queda como pregunta abierta para el lector si el desplazamiento de la falsabilidad a sub-cláusula del dossier le resta fuerza normativa donde la intervención no es accesible.
 
 ### 11.2. Lakatos — programas de investigación
 
@@ -3711,7 +3725,7 @@ La tesis define `κ` como operador que reemplaza un subgrafo por un nodo cuando 
 
 ## Tesis del capítulo
 
-> Una compresión `κ(G) = G*` es legítima respecto de Q si y solo si existe un sistema dinámico de baja dimensión sobre `G*` que (a) reproduce, dentro de tolerancia, las trayectorias observadas, (b) preserva la topología de atractores, repulsores y bifurcaciones empíricamente identificada, (c) predice respuestas a perturbaciones e intervenciones discriminantes, y (d) no oculta una transición que sí ocurre en los datos.
+> Una compresión `κ(G) = G*` es legítima respecto de Q bajo el conjunto de evidencia vigente E si existe un sistema dinámico de baja dimensión sobre `G*` que (a) reproduce, dentro de tolerancia, las trayectorias observadas, (b) preserva la topología de atractores, repulsores y bifurcaciones empíricamente identificada en E, y (c) predice respuestas a perturbaciones e intervenciones discriminantes. La legitimidad es **revisable**: queda retirada si nuevos datos E' exhiben una transición no capturada por G* (criterio de fallo ex post, no requisito de admisión ex ante — versión local del *bootstrap problem* de Glymour 1980).
 
 Esto convierte κ en un objeto que cualquier tercero puede auditar.
 
@@ -3810,7 +3824,7 @@ Caso: el modelo reducido tiene un atractor que no aparece como estabilidad empí
 
 ## Patología 3: el modelo que no se traduce a B
 
-Caso: la dinámica de baja dimensión funciona pero ninguno de sus parámetros se traduce a una variable biomecánica, informacional o de tarea. Diagnóstico: el modelo es L3 desanclado. Remedio: reformular las funciones del sistema en términos de leyes de control con motivación ecológica o biomecánica, o degradar el modelo a estatus de descripción puramente nominal.
+Caso: la dinámica de baja dimensión funciona, pero ninguno de sus parámetros se traduce a una variable biomecánica, informacional o de tarea **mediante un procedimiento de medición independiente del ajuste a L3**. Diagnóstico: el modelo es L3 desanclado, aun si los nombres de las variables sugieren motivación biomecánica. No basta con que un parámetro se llame "rigidez de control" o "tasa de aproximación"; se exige que su valor numérico provenga de un protocolo de medición en B (cinemática, fuerza, latencia perceptiva, intervención discriminante directa, etc.) que **no use los mismos datos** que se ajustan en L3. Remedio: (i) aportar el procedimiento de medición independiente, (ii) declarar el parámetro como **calibrado por ajuste** y por tanto **no traducido**, lo que degrada el dossier al estatus de descripción nominal en ese parámetro, o (iii) reformular el sistema con leyes cuyos parámetros sí admitan medición externa. Una traducción por nombre sin medición independiente es **trampa nominal** y queda explícitamente prohibida como criterio de admisión a modo demostrativo (cf. Frigg & Hartmann, "Models in Science", SEP §2.4, sobre el riesgo de identificar nombre y medición).
 
 ## Patología 4: la pregunta no fija tolerancia
 
@@ -4230,7 +4244,9 @@ El corpus EDI consta de **30 casos**. Por su naturaleza de datos, se clasifican 
 
 **Casos:**
 
-- **Caso 30 (behavioral dynamics):** datos sintéticos generados con la ecuación completa de Fajen y Warren (2003) con cambios discretos de meta y ruido perceptivo realista. Los parámetros (b=3.25, k_g=7.50, c1=0.40, c2=0.40) son los publicados en la fuente original. La elección de generar datos sintéticos del sistema completo (no de la sonda EDI simplificada) evita la circularidad ABM ≡ ODE.
+- **Caso 30 (behavioral dynamics):** datos sintéticos generados con la ecuación completa de Fajen y Warren (2003) con cambios discretos de meta y ruido perceptivo realista. Los parámetros (b=3.25, k_g=7.50, c1=0.40, c2=0.40) son los publicados en la fuente original. La elección de generar datos sintéticos con la ecuación completa de Fajen y Warren —y no con la sonda EDI simplificada— neutraliza una **primera** circularidad (ABM ≡ ODE: que el generador sea el propio ABM ya ajustado). Subsiste, sin embargo, una **segunda** circularidad parcial: la sonda EDI macro `behavioral_attractor` comparte forma funcional con el generador sintético, con los mismos parámetros publicados `(b, k_g, c_1, c_2, d_g)`. Esto es **circularidad estructural parcial** en sentido de Forster & Sober (1994): un EDI alto bajo esta configuración confirma reproducibilidad paramétrica del modelo Fajen-Warren, no superioridad del control informacional frente a alternativas estructurales (neural ODE, GP, MLP). La tesis declara este costo como deuda. Mitigación pendiente: re-ejecutar el caso 30 con al menos una sonda de familia funcional distinta y reportar `edi_alt_probe` con el delta de EDI; un delta `< 0.05` indicaría que la circularidad explica buena parte del EDI reportado, obligando a re-graduar la fuerza de la conclusión; un delta `> 0.10` indicaría que la estructura Fajen-Warren captura algo que la sonda alternativa no captura.
+
+  **Aclaración de costo (traducción B↔L3).** Los parámetros `(b, k_g, c_1, c_2) = (3.25, 7.50, 0.40, 0.40)` provienen del ajuste de Fajen y Warren (2003) a sus propios datos de captura motora en el VENLab, no de medición independiente de variables biomecánicas (rigidez efectiva, viscosidad de control, latencia perceptiva). Por la regla de Patología 3 actualizada en `03-formalizacion/04-operacionalizacion-de-kappa.md`, el caso 30 queda **calibrado, no traducido** en sus cuatro parámetros centrales y por tanto opera en **modo programático**, no demostrativo, respecto al criterio D (traducibilidad B↔L3). Esto se asume como deuda residual del caso ancla.
 - **Controles de falsación (06, 07, 08):** ruido puro, random walk y estado oculto respectivamente, generados con semilla fija para reproducir la condición de falsación.
 - **Casos null especulativos (02 Conciencia, 23 Erosión):** datos especulativos clasificados explícitamente como LoE = 1.
 
@@ -4368,6 +4384,8 @@ La responsabilidad académica completa del manuscrito reside en los autores huma
 > Una aplicación entra en modo demostrativo solo si presenta dossier completo de anclaje con datos públicos, ecuaciones ajustadas, predicciones cumplidas, intervenciones documentadas y comparación rival con discriminación verificable. Una aplicación entra en modo programático si presenta conjetura articulada con criterio explícito de elevación a demostrativo: qué datos hacen falta, qué rival se enfrentaría, qué predicción discriminante se buscaría. Cualquier capítulo de aplicación se etiqueta inequívocamente con uno de los dos modos.
 
 ## 1. Modo demostrativo: condiciones de admisión
+
+**Nota sobre la genealogía de los catorce componentes.** Los catorce componentes que organizan este dossier fueron extraídos como **abstracción del caso ancla** (cap 05-05, Warren 2006). La adecuación del caso ancla a estos criterios es por construcción y no constituye evidencia independiente de la potencia del marco: cada componente del dossier tiene correspondencia textual en una sección del cap 05-05 (auditoría detallada en `Bitacora/2026-05-04-continuous-run/F05-08-criterios-admision-post-hoc.md`). Lakatos (1978, *The Methodology of Scientific Research Programmes*) llamaría a esto **ad hoc rescue tipo 3**: una rejilla evaluativa diseñada para que sólo el caso paradigmático la satisfaga. La tesis declara el costo y opta por la salida más honesta operativamente: los demás casos del corpus entran en **modo programático** (dossier técnico ejecutado y reproducible) no porque sean ontológicamente menos firmes, sino porque carecen de un caso paradigmático con las catorce dimensiones desarrolladas independientemente. Los catorce componentes funcionan, por tanto, como **agenda regulativa para futuros casos paradigmáticos**, no como medida de adecuación ontológica de los 30 casos ejecutados.
 
 Una aplicación se admite en modo demostrativo si y solo si su dossier de anclaje (capítulo 03-02 §3) está completo en sus catorce componentes con contenido sustantivo:
 
@@ -4514,8 +4532,11 @@ Mapa completo del paisaje de aplicaciones del marco como **ontología general mu
 
 **Distribución por modo:**
 
-- **Modo demostrativo (con dossier completo):** 30 casos. Todos tienen dossier en `09-simulaciones-edi/<caso>/`.
+- **Modo técnico-ejecutado** (dossier EDI completo, `metrics.json` reproducible bajo el protocolo C1-C5): 30 casos. Todos tienen dossier en `09-simulaciones-edi/<caso>/`.
+- **Modo demostrativo en sentido estricto** (14/14 componentes del dossier de anclaje del cap 05-00 §1, con material publicado independiente del aparato): 1 caso (05-05 Warren). La distinción es operativa: el primer modo asegura reproducibilidad técnica; el segundo asegura adecuación filosófica plena del aparato a un caso paradigmático.
 - **Aplicaciones filosóficas programáticas adicionales:** 4 dominios sin caso EDI directo (capítulos 05-01 a 05-04).
+
+*Nota sobre el modo técnico-ejecutado.* 'Dossier técnico completo' indica que el caso fue corrido con el protocolo C1-C5 y produce `metrics.json` reproducible. **No equivale a 'demostración positiva del aparato'**: los Bloques V-VII (Trend, Null, Controles) no instancian acoplamiento detectable; funcionan como casos de no-aplicabilidad de la sonda, falsación local o controles correctamente rechazados. Casos con `EDI ≤ 0` o `p ≈ 1` están listados explícitamente en sus bloques correspondientes y **no se contabilizan como instancia positiva del aparato**. La fuerza inferencial real del corpus inter-dominio descansa sobre los Bloques I–IV (Strong, Strong sin gate, Weak, Suggestive — del orden de 15 casos según los conteos vigentes), no sobre la cifra agregada N=30 indistinta.
 
 **Distribución por Nivel:**
 
@@ -4528,13 +4549,20 @@ Mapa completo del paisaje de aplicaciones del marco como **ontología general mu
 | 4 | Strong (`overall_pass=True`) | 4 | Energía, Deforestación, Kessler, Riesgo Biológico |
 | 4 | Strong sin gate completo | 1 | Microplásticos |
 | 3 | Weak | 8 | Políticas, Postverdad, Urbanización, Fósforo, Wikipedia, Epidemiología, Movilidad, Behavioral Dynamics (caso 30) |
-| 2 | Suggestive | 2 | Finanzas, Salinización |
-| 1 | Trend | 4 | Justicia, Starlink, Fuga cerebros, Clima |
-| 0 | Null | 8 | Conciencia, Contaminación, Paradigmas, Océanos, Acidificación, Erosión, Acuíferos, IoT |
+| 2 | Suggestive | 1 | Finanzas (Salinización reclasificada por AU-4: CI cruza cero + magnitud trivial) |
+| 1 | Trend | 3 | Justicia, Fuga cerebros, Clima |
+| 0a | Null genuino | 5 | Conciencia, Acidificación, Erosión, Acuíferos, IoT (`\|EDI\|<0.05` y `p_perm>0.05`) |
+| 0b | EDI negativo (sonda macro inadecuada) | 1 | Paradigmas (`EDI=-0.144`: ABM acoplado predice peor que reducido) |
+| 0c | Señal rechazada por gate C1-C5 | 2 | Contaminación, Océanos (`EDI>0` con `p_perm<0.05` pero `valid=False`) |
+| n.e. | Cuarentena por insuficiencia de datos | 1 | Starlink (val_steps=1) |
 | — | Falsación rechazada (controles) | 3 | Exogeneidad, No-estacionariedad, Observabilidad |
+
+**Subdivisión del Bloque "Null" (AU-9 2026-05-11).** Lo que la versión previa presentaba como "8 null" cubre en realidad tres regímenes empíricamente distintos: 5 nulls genuinos (el aparato no detecta señal donde no la hay), 1 EDI negativo (la sonda macro elegida es activamente inadecuada para el dominio), y 2 rechazos por gate C1-C5 (ranking permutacional cruza el umbral pero la batería compuesta rechaza por incumplimiento de viscosidad/persistencia/no-localidad). La cifra "señal/no-señal ≈ 50 %" gana matiz y pierde rotundidad; el aparato discrimina tres modos de no-éxito en lugar de colapsarlos en una etiqueta única.
 
 **Total con señal significativa:** 15/30 (50%).
 **Falsación correcta:** 3/3 (100%).
+
+**Costo declarado del agregador `overall_pass`.** El gate compuesto `overall_pass=True` integra C1-C5 + viscosidad + significancia permutacional + persistencia, pero **no exige que `ci_lo` del bootstrap del EDI sea positivo**. Riesgo Biológico (caso 27) ilustra el costo: pasa el gate con `p_perm=0.0022` y `edi.value=0.333`, pero su CI bootstrap 95 % `[-0.198, +0.648]` cruza el cero. La promoción a "strong gate completo" descansa, por tanto, sobre la significancia permutacional del ranking del estadístico observado, no sobre la exclusión bootstrap del cero. La tesis sostiene la categorización pero declara su límite: un revisor que lea "strong" como "CI bootstrap excluye el cero" estará leyendo más de lo que el agregador certifica. Si en una pasada posterior se exige `ci_lo > 0` como requisito de admisión, caso 27 se reclasifica a "strong sin gate bootstrap" y el conteo "4 strong" del corpus inter-dominio cae a 3 con pérdida del dominio biomédico-epidemiológico.
 
 ### Corpus inter-escala (10 casos)
 
@@ -4607,10 +4635,12 @@ Reproducibilidad: el caso 16 ha sido re-ejecutado con datos World Bank descargad
 
 **Tabla 5.7.6.**
 
-| # | Caso | EDI | p |
-|---|------|----:|--:|
-| 09 | Finanzas globales | 0.0813 | 0.0000 |
-| 21 | Salinización (irrigación) | 0.0184 | 0.0028 |
+| # | Caso | EDI | p_perm | CI 95 % bootstrap | Comentario |
+|---|------|----:|--:|---|---|
+| 09 | Finanzas globales | 0.0813 | 0.0000 | (pendiente reporte en tabla) | Mantenido en suggestive |
+| 22 | Fósforo (referenciado en Bloque III Weak) | 0.1924 | 0.0000 | [-0.221, +0.550] | Ranking permutacional alto pero bootstrap no excluye cero; magnitud frágil (AU-4) |
+
+**Reclasificación AU-4 (2026-05-11):** el caso 21 (Salinización) se **retira del Bloque IV Suggestive** y se reubica en un bloque nuevo de "significativos por permutación con magnitud trivial — no contabilizan a favor de la tesis". Sus métricas son `EDI = 0.0184`, `p_perm = 0.0028`, `CI 95 % bootstrap = [-0.0771, +0.0825]`: el CI no excluye que el acoplamiento empeore la predicción y la magnitud puntual es del orden del 0.6 % de reducción de RMSE. Este es exactamente el patrón que Wasserstein y Lazar (2016, *The American Statistician* 70(2):129-133, ASA Statement on p-values, Principle 3 — verbatim en `07-bibliografia/Wasserstein-Lazar - ASA Statement on p-values (Am Stat 2016).pdf` p. 2) advierten: *"Scientific conclusions and business or policy decisions should not be based only on whether a p-value passes a specific threshold."* La coexistencia de `p<0.01` con magnitud trivial y CI cruzando cero no debe contar como evidencia positiva. La tesis declara aquí, como costo, que **la regla `CI 95 % no cruza cero` debe operar como criterio adicional al ranking permutacional** en pasadas subsiguientes; la auditoría retrospectiva de los demás casos contabilizados como significativos queda como deuda residual fechada (cf. cap 03 §criterios de admisión).
 
 ### Bloque V — Trend (Nivel 1)
 
@@ -4621,9 +4651,10 @@ Reproducibilidad: el caso 16 ha sido re-ejecutado con datos World Bank descargad
 | # | Caso | EDI | p | Comentario |
 |---|------|----:|--:|------------|
 | 10 | Justicia (Estado de Derecho) | 0.2274 | 0.4775 | Ventana corta |
-| 26 | Starlink | 0.6892 | 1.0000 | val_steps=1 — exploratorio |
 | 28 | Fuga de cerebros | 0.0249 | 0.9975 | Ruido domina |
 | 01 | Clima regional | 0.0111 | 0.9990 | Sonda Budyko-Sellers insuficiente |
+
+**Casos en cuarentena por insuficiencia de datos.** Caso 26 (Starlink) se removió del Bloque V tras auditoría de `metrics.json` (phases.real): `val_steps = 1`, `ci_lo = ci_hi = edi.value = 0.6892` (CI bootstrap colapsado), `permutation_pvalue = 1.0`, `correlations.abm_obs = 0.0`. Con un único punto de validación el bootstrap colapsa y la permutación carece de grados de libertad: el EDI=0.689 es **artefacto numérico, no medición**. El caso 19 (Acidificación oceánica) compartió esa patología en versiones previas (cf. línea correspondiente en Bloque VI con `metrics.json` re-ejecutado a EDI≈0.00044, p_perm=0.43). La tesis declara estos casos en cuarentena/null por insuficiencia de datos hasta que el dataset admita un `val_steps ≥ 8` o se decida su reclasificación definitiva. Comando regenerador: `python3 09-simulaciones-edi/26_caso_starlink/src/validate.py`. El epíteto "exploratorio" no salva la clasificación como Trend; el caso queda reubicado en bloque de cuarentena.
 
 ### Bloque VI — Null (Nivel 0)
 
@@ -4662,13 +4693,13 @@ Reproducibilidad: el caso 16 ha sido re-ejecutado con datos World Bank descargad
 
 ### Capítulo 05-01 — Mente, memoria, yo
 
-**Estado:** modo programático.
+**Estado:** modo programático **sin caso EDI ejecutado ni candidato del corpus**.
 
-**Conjetura central:** las categorías mentales son atractores de integración multivariable en sistemas acoplados organismo-entorno-tarea-historia.
+**Conjetura central:** las categorías mentales (memoria, atención, decisión, conciencia perceptiva) son **atractores de integración multivariable** en sistemas acoplados organismo–entorno–tarea–historia. Esta es conjetura programática, no resultado empírico de este manuscrito.
 
-**Criterio de elevación:** construir tareas cognitivas con datos cuantitativos donde atractores conductuales discriminen contra cognitivismo simbólico.
+**Criterio de elevación:** construir tareas cognitivas con datos cuantitativos públicos donde atractores conductuales discriminen contra cognitivismo simbólico. El corpus actual **no incluye tal caso**. El caso 30 (behavioral dynamics, Nivel 3 weak) **no cuenta como elevación parcial de este capítulo**: opera en coordinación motora, no en cognición simbólica; su lugar legítimo es el capítulo 05-05 como complemento cuantitativo del ancla cualitativa Warren, no como elevación del capítulo de mente.
 
-**Caso 30 (behavioral dynamics, Nivel 3 weak)** es el primer paso de elevación parcial: muestra que el aparato detecta cierre operativo significativo en behavioral dynamics, aun sin alcanzar Nivel 4.
+**Deuda residual fechada:** identificar caso público con datos de tarea cognitiva (decisión bajo incertidumbre, memoria de trabajo, atención sostenida) susceptible de modelado dinámico acoplado, ejecutarlo con `validate.py` y reportar EDI con significancia bootstrap. Hasta entonces, el capítulo 05-01 permanece como conjetura programática declarada.
 
 ### Capítulo 05-02 — Biología y ecología
 
@@ -6371,6 +6402,8 @@ Una institución es atractor sostenido por:
 - financiamiento;
 - historia.
 
+Esta caracterización converge parcialmente con la tradición neoinstitucional. North (1990, *Institutions, Institutional Change and Economic Performance*, Cambridge UP, p. 3) define instituciones como *"the rules of the game in a society or, more formally, the humanly devised constraints that shape human interaction"*, y propone como prerrequisito metodológico la separación entre *institución* (las reglas) y *organización* (los jugadores que operan bajo esas reglas; cap. 1, pp. 4–5: *"A crucial distinction in this study is made between institutions and organizations […] Conceptually, what must be clearly differentiated are the rules from the players"*). La tesis recoge la distinción operativa pero la subordina a su esquema material-relacional: las "reglas" northianas se realizan como cuenca de atracción del sistema acoplado (cuerpos + documentos + sanciones + prácticas repetidas), no como entidad independiente del soporte que las inscribe. Esto preserva la utilidad analítica de la separación (separar el régimen normativo de los agentes que lo operan) sin importar el realismo de reglas como entidades discretas.
+
 ### 1.3. Variables candidatas
 
 - variables estructurales: organigrama, distribución de autoridad, recursos disponibles;
@@ -6510,6 +6543,14 @@ Bunge (1979, *Treatise on Basic Philosophy*, vol. 4, p. 4) define sistema como *
 
 La tesis se inscribe en esta tradición. Las instituciones son sistemas concretos con composición (cuerpos, documentos, infraestructura), entorno (otros sistemas, condiciones materiales), estructura (relaciones específicas) y mecanismo (procesos que producen el comportamiento agregado, en términos de Bunge 1997). Lo que la tesis añade al sistemismo bunguiano es el **criterio empírico operativo de cierre vía intervención ablativa**: no basta definir el sistema; hay que mostrar que su dinámica acoplada constriñe efectivamente la conducta de sus componentes en una forma medible. El sistemismo de Bunge es la matriz conceptual; el aparato EDI es la operacionalización.
 
+### 6.6. North — economía neoinstitucional
+
+North (1990, *Institutions, Institutional Change and Economic Performance*, Cambridge UP, cap. 1, p. 3) define instituciones como **restricciones humanamente diseñadas** que estructuran la interacción, y separa metodológicamente **reglas** (instituciones) y **jugadores** (organizaciones; pp. 4–5). En cap. 5 (*Informal constraints*, pp. 36–45) y cap. 6 (*Formal constraints*, pp. 46–53) descompone el régimen institucional en tres capas operacionalmente distinguibles: restricciones informales (convenciones, códigos de conducta), restricciones formales (reglas escritas, derecho positivo) y efectividad del *enforcement* (cap. 7, pp. 54–60).
+
+Es **el aliado más cercano del capítulo en la tradición económica**, complementario a Bourdieu en el lado sociológico. La traducción al aparato es directa: las tres capas northianas son tres dimensiones del estado del sistema institucional acoplado; la cuenca de atracción que la tesis postula como criterio de validez normativa es el **agregado dinámico** de las tres. Donde North se queda en *constraints* como restricciones del problema de elección racional, la tesis añade que las restricciones tienen **realidad efectiva como atractor** verificable por intervención ablativa.
+
+Fricción honesta declarada: North trata las reglas como entidades cuya existencia es independiente del soporte que las inscribe (un código permanece código aunque el archivo se queme y nadie recuerde su contenido); la tesis sostiene que sin soporte material y memoria operante el patrón normativo deja de existir. Esta es divergencia ontológica genuina, no malentendido. La tesis paga el costo: pierde el "realismo de reglas" típico del institucionalismo y debe sostener que toda norma vive en su sustrato.
+
 ## 7. Criterio de elevación a demostrativo
 
 Adoptar caso histórico-institucional con:
@@ -6521,13 +6562,19 @@ Adoptar caso histórico-institucional con:
 
 ### 7.1. Caso piloto candidato (deuda priorizada)
 
-Se selecciona como caso piloto, sin ejecutar en este manuscrito pero documentado para trabajo posterior, la **dinámica de adopción de medidas no farmacéuticas durante COVID-19** por estados nacionales. Justificación:
+Se selecciona como caso piloto, sin ejecutar en este manuscrito pero documentado para trabajo posterior, la **dinámica de adopción de medidas no farmacéuticas durante COVID-19** por estados nacionales (Oxford COVID-19 Government Response Tracker; Hale et al. 2021, *Nature Human Behaviour* 5:529–538, **referencia secundaria; PDF no auditado en `07-bibliografia/` — fetch pendiente**).
 
-- datos públicos disponibles (Oxford COVID-19 Government Response Tracker);
+El OxCGRT operacionaliza un índice ordinal de *stringency* (0–100) agregado por país y día desde indicadores de cierres, restricciones de movilidad y políticas sanitarias. **En la lectura northiana esto es exclusivamente la capa de *formal constraints*** (North 1990, cap. 6, pp. 46–53): reglas escritas con enforcement nominal. La adaptación EDI requiere demostrar que el índice ordinal de stringency es **insuficiente** para predecir el comportamiento agregado sin acoplar simultáneamente (i) restricciones informales (cumplimiento social, confianza institucional como proxy) y (ii) efectividad real de enforcement, y que **la cuenca dinámica completa** —no la regla aislada— es lo que retorna al cumplimiento bajo perturbación (la propia pandemia).
+
+El discriminante explícito frente a una lectura institucionalista pura es: para North, la stringency es la institución; para la tesis, la stringency es sólo la inscripción de la institución, y la institución vive en el sistema acoplado completo. La predicción contrastable es que países con stringency comparable pero distinta cuenca informal / enforcement mostrarán divergencias en EDI medibles, no derivables del índice ordinal. Si los datos OxCGRT no muestran esa divergencia entre stringency y cuenca completa, el caso refuta la utilidad institucional añadida de la tesis. Esto es deuda asumida, no debilidad.
+
+Justificación adicional del caso:
+
+- datos públicos disponibles (OxCGRT);
 - una cuenca de atracción institucional (régimen de cumplimiento) sometida a perturbación discreta y observable (la propia pandemia);
 - bifurcaciones identificables (transiciones de régimen restrictivo a permisivo y viceversa);
 - comparabilidad inter-país que permite definir variabilidad de la cuenca (legitimidad como anchura de la cuenca);
-- precedentes en la literatura cuantitativa: Hale et al. (2021, *Nature Human Behaviour* 5: 529–538) construyen el OxCGRT como panel global con un índice compuesto de stringency (0–100) agregado diariamente por país a partir de indicadores ordinales sobre cierres, restricciones de movilidad y políticas sanitarias; ese formato ordinal-temporal por país es precisamente lo que la adaptación del aparato EDI a series institucionales debería poder ingerir (engagement con el diseño del dataset, no con el argumento sustantivo del paper, que se cita como fuente secundaria al no haber sido auditado contra el PDF en `07-bibliografia/`); Cheng et al. (2020) ofrece tipología complementaria de respuestas estatales.
+- Cheng et al. (2020) ofrece tipología complementaria de respuestas estatales.
 
 La elevación de este caso piloto exige adaptación específica del aparato EDI a series institucionales con variables ordinales (índices de stringency) en lugar de variables continuas. Se documenta como deuda alta en `Bitacora/2026-04-28-cierre-doctoral/` y en la hoja de ruta `06-cierre/03-hoja-de-ruta-para-tesis-final.md`.
 
@@ -6566,11 +6613,11 @@ Este capítulo conjetura. La elevación requiere:
 
 ## Tesis del capítulo
 
-> La tesis se discrimina de catorce rivales filosófica y empíricamente identificables en al menos dos criterios cada uno. La novedad no es de inventario sino de articulación: **dossier de anclaje + asimetría L1↔B↔L3↔S + cartografía multidominio bajo EDI con controles de falsación rechazados**. Este capítulo confronta cada rival discursivamente; la matriz síntesis 14×6 (criterios A-F) y la ficha breve por rival están en `04-debates/03-tabla-comparativa-rivales.md`. Los desarrollos extensos con citas primarias paginadas viven en `04-debates/_extendido/rival-<X>.md` y se cargan bajo demanda desde la capa web.
+> La tesis se discrimina de quince rivales filosófica y empíricamente identificables en al menos dos criterios cada uno. La novedad no es de inventario sino de articulación: **dossier de anclaje + asimetría L1↔B↔L3↔S + cartografía multidominio bajo EDI con controles de falsación rechazados**. Este capítulo confronta cada rival discursivamente; la matriz síntesis 15×6 (criterios A-F) y la ficha breve por rival están en `04-debates/03-tabla-comparativa-rivales.md`. Los desarrollos extensos con citas primarias paginadas viven en `04-debates/_extendido/rival-<X>.md` y se cargan bajo demanda desde la capa web.
 
 ## 1. Marco general de la confrontación
 
-Cada rival se evalúa contra la tesis bajo los criterios **A** (anclaje material sin reducción a partículas), **B** (multiescalaridad operativa), **C** (admisión empírica vía dossier de catorce componentes), **D** (traducibilidad asimétrica L1↔B↔L3↔S), **E** (ventaja predictiva discriminante en el caso ancla canónico) y **F** (alcance generalizable). Las definiciones completas y la tabla síntesis 14×6 están en `04-debates/03-tabla-comparativa-rivales.md` §"Criterios de discriminación" y §"Tabla síntesis". Este capítulo asume esa matriz como dado y desarrolla la confrontación discursiva donde la prosa tiene valor argumentativo que la tabla no captura.
+Cada rival se evalúa contra la tesis bajo los criterios **A** (anclaje material sin reducción a partículas), **B** (multiescalaridad operativa), **C** (admisión empírica vía dossier de catorce componentes), **D** (traducibilidad asimétrica L1↔B↔L3↔S), **E** (ventaja predictiva discriminante en el caso ancla canónico) y **F** (alcance generalizable). Las definiciones completas y la tabla síntesis 15×6 están en `04-debates/03-tabla-comparativa-rivales.md` §"Criterios de discriminación" y §"Tabla síntesis". Este capítulo asume esa matriz como dado y desarrolla la confrontación discursiva donde la prosa tiene valor argumentativo que la tabla no captura.
 
 ## 2. Rivales con discriminación tabular suficiente
 
@@ -6662,9 +6709,28 @@ La objeción específica de Glennan (2017, *The New Mechanical Philosophy*) sobr
 
 **Reconocimiento:** el mecanicismo multinivel es el aliado teórico principal de este capítulo. La tesis se entiende mejor como **mecanicismo multinivel disciplinado por dossier de anclaje y asimetría L1↔B↔L3↔S**. Citas extendidas en `04-debates/_extendido/rival-mecanicismo-multinivel.md`.
 
+### 3.7. IIT (Integrated Information Theory) — Tononi y colaboradores
+
+La IIT formaliza la consciencia como un máximo local de **integrated information** (Φ) intrínseco al sustrato físico. En palabras de Tononi, Boly, Massimini y Koch (2016, *Nature Reviews Neuroscience* 17(7):450–461, p. 450 — verificado contra PDF local en `07-bibliografia/Tononi - Integrated Information Theory (2016).pdf`):
+
+> "Integrated information theory […] argues that the physical substrate of consciousness must be a maximum of intrinsic cause–effect power and provides a means to determine, in principle, the quality and quantity of experience."
+
+La operacionalización IIT 3.0 (Oizumi, Albantakis y Tononi 2014, *PLoS Computational Biology* 10(5):e1003588 — PDF disponible) detalla el procedimiento de cómputo de Φ sobre redes de elementos discretos.
+
+IIT comparte con esta tesis: (i) la apuesta por una métrica computable definida sobre estructura de dependencias; (ii) el rechazo del reduccionismo plano; (iii) la pretensión de operar sobre el sustrato material sin colapsarse en él. IIT se separa de esta tesis en cuatro puntos auditables:
+
+1. **Dominio.** IIT está específicamente diseñada para consciencia. EDI es multidominio (40 casos en física, biología, economía, política, tecnología, conducta humana). Donde IIT opera, EDI también opera (caso 02); donde EDI opera en física macro o cosmología, IIT no.
+2. **Escala.** IIT define Φ sobre una escala maximizante única (la escala que maximiza el corte mínimo de información integrada). EDI opera con asimetría L1↔B↔L3↔S explícita y multiescalaridad operativa.
+3. **Tratabilidad.** Φ es computacionalmente intratable a partir de ~10–12 nodos (complejidad exponencial en el número de subconjuntos, cf. Oizumi et al. 2014). EDI es escalable a cientos o miles de unidades vía ABM+ODE acoplado.
+4. **Anclaje empírico.** EDI exige dossier de catorce componentes + filtro EDI con permutación 999 + bootstrap 500. IIT exige Φ > 0; los proxies prácticos (PCI de Massimini et al.) operan en un régimen experimental distinto y no satisfacen el dossier completo.
+
+**Cláusula de absorción.** Si Φ se vuelve tratable a escala arbitraria y se publican mediciones de Φ que discriminen entre el corpus EDI con `p_perm < 0.05` y los controles de falsación, esta tesis admite que IIT subsume el caso 02 con métrica superior. Hasta entonces, IIT y EDI coexisten como métricas complementarias en dominios distintos (IIT en consciencia, EDI en consciencia y catorce dominios más).
+
+**Posicionamiento sobre el caso 02 (consciencia).** La tesis no afirma haber resuelto el problema duro de Chalmers. El EDI reportado para el caso 02 es coherencia operativa de la sonda macro y no compite con Φ en su pretensión axiomática; queda como deuda residual la confrontación detallada EDI vs Φ sobre el mismo dataset.
+
 ## 4. Lectura cruzada
 
-- Tabla síntesis 14×6 + ficha breve por rival: `04-debates/03-tabla-comparativa-rivales.md`.
+- Tabla síntesis 15×6 + ficha breve por rival: `04-debates/03-tabla-comparativa-rivales.md`.
 - Anticipación de objeciones filosóficas (F1-F10, distinto de discriminación rival): `04-debates/04-anticipacion-objeciones-filosoficas.md`.
 - Limitaciones declaradas con plazos y entregables: `04-debates/05-limitaciones-declaradas-consolidacion.md`.
 - Postura argumentativa sobre régimen de validez (riesgos heredados, diálogo con interlocutores, filtro de objeciones futuras): `04-debates/02-limitaciones-y-puntos-de-presion.md`.
@@ -6699,7 +6765,7 @@ Entradas operativas declaradas tras triage de bitácora huérfana (2026-05-11).
 
 ## Función
 
-Síntesis de la discriminación pública contra catorce posiciones rivales. Cada celda representa cumplimiento del criterio: ✓ (satisface), parcial (satisface en parte), ✗ (no satisface). La tesis discrimina en al menos dos criterios contra cada rival.
+Síntesis de la discriminación pública contra quince posiciones rivales. Cada celda representa cumplimiento del criterio: ✓ (satisface), parcial (satisface en parte), ✗ (no satisface). La tesis discrimina en al menos dos criterios contra cada rival.
 
 ---
 
@@ -6720,7 +6786,7 @@ Síntesis de la discriminación pública contra catorce posiciones rivales. Cada
 
 ---
 
-## Tabla síntesis (14 rivales)
+## Tabla síntesis (15 rivales)
 
 **Tabla A.4.2.**
 
@@ -6742,10 +6808,15 @@ Síntesis de la discriminación pública contra catorce posiciones rivales. Cada
 | 12 | Realismo estructural informativo | ✗ | ✓ | parcial | ✗ | ✗ | ✓ | A, C, D |
 | 13 | Mecanicismo multinivel sin filtro | ✓ | ✓ | parcial | parcial | parcial | ✓ | C, D, F |
 | 14 | **Wolfram Physics Project** | ✓ | ✓ | ✗ | ✗ | ✗ | ✓ | C, D, E |
+| 15 | **IIT (Tononi-Boly-Massimini-Koch 2016; Oizumi-Albantakis-Tononi 2014)** | ✓ | parcial | ✗ | ✗ | parcial | ✗ | C, D, F + tratabilidad >12 nodos |
 
 ---
 
 ## La tesis (irrealismo operativo) en la matriz
+
+### Reconocimiento de circularidad criterio-evaluador
+
+Los criterios A-F que organizan la Tabla 4.3.3 fueron formulados desde el aparato de esta tesis. Que la tesis los satisfaga 6/6 no es virtud, sino tautología si se lee como discriminación pública. La función real de la tabla es doble: (i) explicitar las dimensiones que la tesis considera relevantes para que el lector pueda contestarlas, y (ii) mostrar que ningún rival las satisface conjuntamente —lo que es informativo sólo en la medida en que el lector acepte previamente la pertinencia del conjunto-criterio. Para mitigar la circularidad, el apartado siguiente "Evaluación contra criterios externos" somete la tesis a tres criterios no diseñados por ella, donde su puntaje no es 6/6.
 
 **Tabla A.4.3.**
 
@@ -6755,7 +6826,17 @@ Síntesis de la discriminación pública contra catorce posiciones rivales. Cada
 |---|:-:|:-:|:-:|:-:|:-:|:-:|
 | **Tesis** | **✓** | **✓** | **✓** | **✓** | **✓** | **✓** |
 
-La tesis cumple los seis criterios. Ninguna posición rival cumple los seis. La novedad no es de inventario (cada criterio aislado se encuentra en algún rival) sino de **articulación**: la combinación dossier + asimetría L1↔B↔L3↔S + cartografía con falsación es propia.
+La tesis satisface los seis criterios A-F por construcción —ellos fueron formulados desde el aparato propio—; este hecho es informativo sólo si el lector acepta el conjunto-criterio. La discriminación sustantiva contra rivales se sostiene en (a) las celdas individuales donde rivales no satisfacen criterios que ellos mismos reconocerían como deseables (por ejemplo, enactivismo radical reconoce la ausencia de filtro formal) y (b) los criterios externos G-I del apartado siguiente, donde la tesis muestra al menos un ✗.
+
+### Evaluación contra criterios externos
+
+| Código | Criterio externo (fuente) | Tesis |
+|---|---|---|
+| **G** | **Parsimonia ontológica estricta** (Quine 1948, *On What There Is*, *Review of Metaphysics* 2(5)). Preferir el menor número de tipos de entidad. La tesis postula sustrato material + estructura emergente + categorías operativas: más tipos que el materialismo de partículas. | **parcial** |
+| **H** | **Predictividad novedosa cuantitativa fuera del corpus de calibración** (Popper 1959, *Logic of Scientific Discovery* §85; Lakatos 1970, *Falsification and the Methodology of Scientific Research Programmes*, sobre *novel facts*). El corpus EDI fue diseñado y los casos null (8/40) se reanalizaron post-hoc; predicciones novedosas pre-registradas fechadas: 0. | **✗** |
+| **I** | **Independencia del evaluador** (Bunge 1977, *Treatise on Basic Philosophy* vol. 3 — PDF no disponible localmente; paráfrasis declarada). El sistema debe ser evaluable por criterios no construidos por sus proponentes. La presente tabla es interna; al cierre actual no hay revisión externa formal. | **✗** (al cierre actual; muta a parcial tras defensa pública) |
+
+Bajo la columna externa el puntaje agregado es **3/9** o, contando "parcial", **4/9** — no 6/6. La tabla interna mantiene su valor como auto-ubicación; la cláusula H queda como **deuda residual fechada** del cap 06 (post-defensa: pre-registrar ≥3 predicciones novedosas en dominios no calibrados con fecha pública anterior a su ejecución).
 
 ---
 
@@ -6918,7 +6999,7 @@ La tesis cumple los seis criterios. Ninguna posición rival cumple los seis. La 
 
 Esta tabla es compromiso. Si en algún rival la tesis no muestra ventaja en al menos dos celdas, la tesis admite haber sido absorbida y debe reformularse.
 
-**Estado actual:** la tesis discrimina contra cada uno de los catorce rivales en al menos dos criterios. La tabla no produce absorción.
+**Estado actual:** la tesis discrimina contra cada uno de los quince rivales en al menos dos criterios. La tabla no produce absorción.
 
 ---
 
@@ -7081,7 +7162,7 @@ Tres argumentos sostienen la afirmación regulativa, ninguno suficiente por sí 
 
 (c) **Argumento programático lakatosiano (núcleo duro / cinturón protector).** La invarianza opera como **núcleo duro** (*hard core*) de un programa de investigación. Lakatos (1978, *The Methodology of Scientific Research Programmes*, §1.3a, p. 48) lo formula así textualmente: *"All scientific research programmes may be characterized by their 'hard core'. The negative heuristic of the programme forbids us to direct the modus tollens at this 'hard core'. Instead, we must use our ingenuity to articulate or even invent 'auxiliary hypotheses', which form a protective belt around this core, and we must redirect the modus tollens to these. It is this protective belt of auxiliary hypotheses which has to bear the brunt of tests and get adjusted and re-adjusted, or even completely replaced, to defend the thus-hardened core. A research programme is successful if all this leads to a progressive problemshift; unsuccessful if it leads to a degenerating problemshift"*. La tesis instancia la estructura: el núcleo duro es la afirmación regulativa de articulación L1↔B↔L3↔S como invariante metodológico multiescalar; el cinturón protector son las sondas ODE específicas, los umbrales QES, los criterios C1-C5, las hipótesis auxiliares sobre forcing exógeno. El corpus es el campo de prueba donde el cinturón se ajusta y se reemplaza, no el núcleo. La tesis declara explícitamente la condición lakatosiana de abandono del núcleo duro siguiendo la formulación literal del propio Lakatos (p. 49): *"if and when the programme ceases to anticipate novel facts, its hard core might have to be abandoned"*. Las cinco condiciones de fracaso global declaradas en cap 06-01 §2 son la operacionalización doctoral de este criterio: si el corpus deja de extenderse, si caso 41 nuevo no pasa, si una escala no explorada produce nulls sistemáticos, si la métrica EDI deja de discriminar, si los controles de falsación dejan de rechazarse — el núcleo duro queda abandonado en sentido lakatosiano estricto, no como retórica de modestia.
 
-(d) **Argumento de progresividad lakatosiana.** Lakatos (1978, *The Methodology of Scientific Research Programmes*, §1.2c, pp. 33-34) distingue entre problemshifts progresivos y degenerativos con dos criterios. Sobre la condición teórica (p. 33): *"Let us say that such a series of theories is theoretically progressive (or 'constitutes a theoretically progressive problemshift') if each new theory has some excess empirical content over its predecessor, that is, if it predicts some novel, hitherto unexpected fact"*. Sobre la condición empírica (p. 34): *"Let us say that a theoretically progressive series of theories is also empirically progressive (or 'constitutes an empirically progressive problemshift') if some of this excess empirical content is also corroborated, that is, if each new theory leads us to the actual discovery of some new fact"*. La tesis admite ser evaluada bajo este doble criterio: el corpus inter-escala extendió la articulación L1↔B↔L3↔S desde escala macro-poblacional a 8 escalas distintas (10⁻¹⁵ s a 10¹⁴ s) **sin reentrenar arquitectura** (excess empirical content sobre la versión inicial macro-única), y produjo dos predicciones honestas verificadas a posteriori que satisfacen la cláusula de corroboración: (i) caso 33 Villin Headpiece como null genuino bajo sonda equilibrio (predicción: el aparato debe rechazar honestamente cuando la sonda es físicamente inadecuada; verificada); (ii) caso 38 locomoción τ-dot como failure mode de sonda alternativa (predicción: la circularidad de sonda detectada en N2 no se resuelve sustituyendo la sonda primaria por cualquier otra; verificada). Bajo la métrica lakatosiana literal, el programa es **teóricamente progresivo con corroboración empírica parcial** — no acomodación retroactiva. Lo que el programa NO hace todavía es predicción exitosa de hechos novedosos en dominios totalmente nuevos sin re-ejecución; esa es la deuda priorizada de los pasos 1-4 del cap 06-cierre/03.
+(d) **Progresividad lakatosiana como deuda no cerrada.** Lakatos (1978, *The Methodology of Scientific Research Programmes*, §1.2c, pp. 33-34) distingue entre problemshifts progresivos y degenerativos con dos criterios. Sobre la condición teórica (p. 33): *"Let us say that such a series of theories is theoretically progressive (or 'constitutes a theoretically progressive problemshift') if each new theory has some excess empirical content over its predecessor, that is, if it predicts some novel, hitherto unexpected fact"*. Sobre la condición empírica (p. 34): *"Let us say that a theoretically progressive series of theories is also empirically progressive (or 'constitutes an empirically progressive problemshift') if some of this excess empirical content is also corroborated, that is, if each new theory leads us to the actual discovery of some new fact"*. El cuarto criterio lakatosiano —corroboración empírica de *novel facts*— exige predicciones **arriesgadas, fechadas pre-ejecución, sobre dominios o sustratos no vistos por el aparato**. Versiones anteriores de este apartado invocaban como corroboración (i) el rechazo honesto del caso 33 Villin Headpiece bajo sonda inadecuada y (ii) la persistencia del failure mode en caso 38 al sustituir sonda. Auditoría posterior muestra que ambas son **corroboraciones de la higiene metodológica del aparato** (afirmaciones sobre el test), no novel facts sobre el sustrato (afirmaciones sobre el mundo); y además no existe registro fechado pre-ejecución de esas predicciones, por lo que aun si fueran sobre sustrato caerían bajo la objeción Worrall-Zahar de ad-hoc accommodation (una predicción sólo es novel si fue arriesgada antes de ser verificada). La tesis, por tanto, **suspende el reclamo de progresividad empírica plena hasta haber producido al menos un caso 41 con esta estructura**: predicción registrada y fechada antes de la ejecución, sobre el sustrato (no sobre el método), verificada con datos posteriores al registro; deuda priorizada en los pasos 1-4 del cap 06-cierre/03. La tesis se declara teóricamente progresiva en sentido (a)-(b)-(c) —extiende dominio sin reentrenar arquitectura, especifica condiciones de falsación públicas, articula núcleo duro y cinturón protector con criterios explícitos—; cualquier corroboración de robustez metodológica (incluida la que el caso 33 ilustra) se reportará en el apartado de higiene del aparato, no como evidencia de progresividad lakatosiana.
 
 La conjunción de los cuatro argumentos no demuestra la afirmación general; la **sostiene como conjetura operativamente articulada con progresividad lakatosiana parcial**. La diferencia con un mecanicismo plano que afirmara "todo es lo mismo a toda escala" es que el mecanicismo plano carecería de los argumentos (a) y (b), trataría el argumento (c) como redundante, y no aceptaría ser evaluado bajo el criterio (d).
 
@@ -7159,12 +7240,21 @@ Sobre **Simondon en particular**, la objeción es que la tesis usa "pre-individu
 
 Esta diferencia se declara abiertamente. Quien busque un Simondon estricto no lo encontrará en la tesis; encontrará un uso del concepto pre-individual con una direccionalidad genética compartida y una metafísica de la potencia plural debilitada.
 
-Sobre **Dennett** en *Real Patterns* (1991, *Journal of Philosophy* 88: 27-51, especialmente p. 32-34): Dennett define el patrón real como aquel cuya descripción comprime la información del bit-map sin pérdida estructural relevante. La tesis recoge el criterio de compresión predictiva pero le añade dos condiciones que Dennett deja implícitas:
+Sobre **Dennett** en *Real Patterns* (1991, *Journal of Philosophy* 88: 27-51, especialmente pp. 32-34 y 38-40): la lectura fuerte (pp. 38-40, en particular p. 39 donde Dennett describe el ascenso al *design level* en el Game of Life) ofrece una analogía exacta con el régimen empírico del corpus EDI, pero con un costo que conviene declarar antes de invocarla.
 
-1. **Materialmente sostenido:** el patrón es propiedad de un sistema con sustrato dinámico, no propiedad de un conjunto de datos abstractos.
-2. **Discriminante bajo intervención:** el patrón debe predecir efectos de manipulación, no solo regularidades estadísticas.
+Dennett autoriza elevar a un nivel ontológico cuyas predicciones sobreviven *con cierto riesgo* — p. 39: *"Notice, too, that at this level one proposes generalizations that require 'usually' or 'provided nothing encroaches' clauses"* — **dentro del mismo sustrato simulado**. La intervención que Dennett contempla es interna al bit-map del Life world: *encroachment* de configuraciones vecinas, condiciones iniciales alternativas dentro del mismo autómata determinista cerrado. No es una intervención woodwardiana sobre un sustrato físico externo a la simulación. La frase canónica de la página 40 lo explicita: *"one can, with some small risk, ascend to this design level, adopt its ontology, and proceed to predict —sketchily and riskily— the behavior of larger configurations or systems of configurations, **without bothering to compute the physical level**"* (verificación literal contra PDF local en `07-bibliografia/Dennett - Real Patterns (1991).pdf`, p. 40).
 
-La condición 1 separa la tesis del cuasi-pitagorismo en el que Dennett a veces resbala (los patrones son reales si capturan compresión, sin importar dónde están instanciados). La condición 2 traduce el criterio interventivo que Woodward (2003, *Making Things Happen*, cap. 2; mención secundaria — el PDF disponible en `07-bibliografia/` es escaneo sin capa de texto, lo que impide cita verbatim paginada) articula como núcleo de la causalidad: una variable X es causalmente relevante para Y si y solo si existe una intervención sobre X (en el sentido técnico de Woodward: manipulación que rompe la dependencia previa de X respecto de sus causas y la fija a un valor) que cambia la distribución de Y. Trasladado al criterio de patrón real: el patrón discrimina si las predicciones que sostiene se mantienen bajo intervenciones reales (ablaciones, manipulaciones experimentales, contrafácticos no triviales) y no solo bajo regularidades observacionales. Dennett invoca esta dimensión solo tangencialmente; la tesis la incorpora como condición de admisión operativa (cap 03-03 §criterios-admision; cap 09 corpus EDI con ablaciones).
+El protocolo EDI hereda esa estructura: la ablación `EDI = 1 − RMSE_coupled / RMSE_no_ode` apaga el acoplamiento ODE→ABM **en el modelo acoplado**, no en el sistema físico que el modelo abstrae. La intervención es **modelo-interna y simulada**, no woodwardiana sobre el sustrato. La tesis declara explícitamente esta asimetría: **intervención ablativa simulada ≠ intervención woodwardiana sobre sistema físico.** El corpus EDI ofrece evidencia de que cierto patrón es real *en el sentido denneteano de p. 39* (sobrevive el filtro de compresión predictiva interna), no evidencia de que el patrón sobreviva manipulación física directa del sustrato.
+
+Casos donde la diferencia es operativamente decisiva:
+
+- **Caso 16 deforestación (von Thünen, EDI ≈ 0.58–0.60).** La ablación apaga el acoplamiento von Thünen→agentes en el simulador; no se tala ni se reforesta el paisaje real. La evidencia woodwardiana sobre el paisaje exigiría experimentos cuasi-naturales (cortes de carretera, moratorias, expropiaciones).
+- **Caso 04 energía.** La ablación es del acoplamiento red↔demanda en el modelo; la intervención woodwardiana exigiría apagar líneas reales y medir efectos en consumo agregado.
+- **Caso 20 Kessler (densidad orbital).** La ablación cierra el feedback fragmentación→colisión en el simulador; ninguna agencia interviene físicamente la densidad orbital.
+- **Caso 27 riesgo biológico.** La ablación apaga el acoplamiento patógeno→demografía en el modelo; los datos físicos provienen de eventos epidémicos no manipulados experimentalmente.
+- **Caso 30 VENLab (Fajen-Warren).** Aquí la asimetría se invierte: el caso sí tiene intervención experimental real sobre sujetos humanos en el VENLab, y por eso la sonda alternativa pudo detectar circularidad estructural. El contraste con el resto del corpus muestra que **cuando la intervención woodwardiana existe, opera como filtro adicional al EDI**, no como su sinónimo.
+
+La tesis recoge entonces el criterio denneteano de patrón real (compresión predictiva interna) como criterio **necesario pero no suficiente** para la realidad woodwardiana del patrón. Donde el corpus tiene además acceso a manipulación física (caso 30 VENLab), la condición woodwardiana opera como filtro adicional; donde sólo tiene ablación interna del modelo, la tesis afirma realidad denneteana del patrón, no realidad woodwardiana fuerte. Esa modestia es el costo declarado de operar mayoritariamente con datos observacionales sobre los que no se interviene físicamente. La referencia a Woodward (2003, *Making Things Happen*, cap. 2 — PDF escaneo sin capa de texto, impide cita verbatim paginada) opera aquí como mención secundaria.
 
 Sobre **Searle** y la intencionalidad colectiva: Searle (1995, *The Construction of Social Reality*, cap. 2) distingue hechos brutos de hechos institucionales y construye los segundos como impuestos por intencionalidad colectiva mediante reglas constitutivas ("X cuenta como Y en C"). La tesis cap 05-04 trata las instituciones como atractores normativos sostenidos por restricciones históricas, infraestructurales y comunicacionales. La diferencia es operativa: para Searle, la institución existe **por** la asignación de función vía intencionalidad colectiva; para la tesis, la institución existe **como atractor que sobrevive auditoría con dossier**, lo cual no excluye la asignación de función pero no la trata como condición exclusiva. Quien busque un Searle estricto verá esto como debilitamiento; quien busque articulación con dinámica acoplada verá la asignación de función como **un componente** del dossier institucional, no como su totalidad.
 
@@ -7347,7 +7437,7 @@ Si no cae en ninguna, probablemente está mal formulada. Si cae en alguna, la re
 - Inventario operativo de limitaciones fechadas con entregable (L1-L20): `04-debates/05-limitaciones-declaradas-consolidacion.md`.
 - Anticipación de objeciones filosóficas con F1-F10: `04-debates/04-anticipacion-objeciones-filosoficas.md`.
 - Confrontación con rivales discursivos: `04-debates/01-debates-con-posiciones-rivales.md`.
-- Matriz síntesis 14×6 de rivales: `04-debates/03-tabla-comparativa-rivales.md`.
+- Matriz síntesis 15×6 de rivales: `04-debates/03-tabla-comparativa-rivales.md`.
 
 
 <p align="right"><sub><a href="#tabla-de-contenidos">↑ volver al índice</a></sub></p>
@@ -7565,7 +7655,7 @@ Una tesis sin límites nombrados es una tesis que aún no se ha sometido a sí m
 
 ## Tesis del capítulo
 
-> La tesis del **irrealismo operativo de estructuras pre-ontológicas** se sostiene como **propuesta ontológica general multiescalar** validada operativamente sobre **40 casos del corpus EDI agregado** (30 inter-dominio + 10 inter-escala). El corpus inter-dominio cubre física, biología, economía, política, tecnología, cultura y conducta humana con 4 casos `overall_pass=True` + 1 strong sin gate + 8 weak + 2 suggestive + 4 trend + 8 null + 3 controles de falsación rechazados. El corpus inter-escala cubre **30 órdenes de magnitud** espaciales y temporales (desde dinámica subatómica de espín-órbita 10⁻¹⁰ m a cúmulos globulares 10²⁰ m) con **7 strong en 7 escalas distintas** + 1 weak + 2 nulls honestos. El aparato ha sobrevivido hostile testing severo (0/2000 falsos positivos del gate completo bajo random walk masivo agregando los tres scripts canónicos N1+V4_06+N5, Wilson 95 % CI [0, 0.00191]; 0/12 circularidad en test cruzado de sondas). Las condiciones de fracaso son falsables y la deuda residual está fechada. La tesis es **ontología general operativamente articulada con demostración parcial multiescalar bajo régimen declarado**, no ontología regional macro-poblacional como sugería la primera iteración del manuscrito.
+> La tesis del **irrealismo operativo de estructuras pre-ontológicas** se sostiene como **propuesta ontológica general multiescalar** validada operativamente sobre **40 casos del corpus EDI agregado** (30 inter-dominio + 10 inter-escala). El corpus inter-dominio cubre física, biología, economía, política, tecnología, cultura y conducta humana con 4 casos `overall_pass=True` + 1 strong sin gate + 8 weak + 1 suggestive + 4 trend + 8 null (subdivididos por AU-9 en 5 genuinos + 1 EDI negativo + 2 rechazados por gate C1-C5) + 3 controles de falsación rechazados. El corpus inter-escala cubre **30 órdenes de magnitud** espaciales y temporales (desde dinámica subatómica de espín-órbita 10⁻¹⁰ m a cúmulos globulares 10²⁰ m) con **7 strong en 7 escalas distintas** + 1 weak + 2 nulls honestos. El aparato ha sobrevivido hostile testing severo (0/2000 falsos positivos del gate completo bajo random walk masivo agregando los tres scripts canónicos N1+V4_06+N5, Wilson 95 % CI [0, 0.00191]; 0/12 circularidad en test cruzado de sondas). Las condiciones de fracaso son falsables y la deuda residual está fechada. La tesis es **ontología general operativamente articulada con demostración parcial multiescalar bajo régimen declarado**, no ontología regional macro-poblacional como sugería la primera iteración del manuscrito.
 
 ## 1. Condiciones de demostración de la tesis
 
@@ -7616,9 +7706,11 @@ La tesis queda demostrada cuando se cumplen siete condiciones simultáneas. Cada
 | Strong (gate completo) | 4 | Energía (0.650), Deforestación (0.602), Kessler (0.353), Riesgo Biológico (0.333) |
 | Strong (sin gate) | 1 | Microplásticos (0.782) |
 | Weak | 8 | Políticas, Postverdad, Urbanización, Fósforo, Wikipedia, Epidemiología, Movilidad, Behavioral Dynamics (caso 30 v2) |
-| Suggestive | 2 | Finanzas, Salinización |
+| Suggestive | 1 | Finanzas (Salinización reclasificada por AU-4 — CI cruza cero + magnitud trivial) |
 | Trend | 4 | Justicia, Starlink, Fuga cerebros, Clima |
-| Null | 8 | Conciencia, Contaminación, Paradigmas, Océanos, Acidificación, Erosión, Acuíferos, IoT |
+| Null genuino | 5 | Conciencia, Acidificación, Erosión, Acuíferos, IoT |
+| EDI negativo (sonda inadecuada) | 1 | Paradigmas (EDI=-0.144) |
+| Señal rechazada por gate C1-C5 | 2 | Contaminación, Océanos (EDI>0, p<0.05, valid=False) |
 | Falsación rechazada | 3 | Exogeneidad, No-estacionariedad, Observabilidad |
 
 **Test de fallo**: si los 4 casos `overall_pass` no replican o son superados por modelos rivales, la tesis pierde su demostración multidominio. **Verificación sostenida** en estado actual del corpus (outputs verificados bit-a-bit).
@@ -7627,7 +7719,7 @@ La tesis queda demostrada cuando se cumplen siete condiciones simultáneas. Cada
 
 **Verificada en**: capítulo 04-01.
 
-**Producto**: tabla de discriminación contra catorce posiciones rivales con criterios públicos (incluido Wolfram Physics Project). En cada rival, ventaja en al menos dos celdas; en el caso ancla, ventaja en cinco celdas contra modelos internos.
+**Producto**: tabla de discriminación contra quince posiciones rivales con criterios públicos (incluidos Wolfram Physics Project e IIT). En cada rival, ventaja en al menos dos celdas; en el caso ancla, ventaja en cinco celdas contra modelos internos.
 
 **Test de fallo**: si algún rival absorbe la tesis sin diferencia discriminante, se reformula. La tabla actual no produce absorción. **Verificación sostenida.**
 
@@ -7641,31 +7733,31 @@ La tesis queda demostrada cuando se cumplen siete condiciones simultáneas. Cada
 
 ## 2. Condiciones de fracaso global
 
-La tesis falla globalmente en cinco escenarios falsables:
+La tesis falla globalmente bajo **tres escenarios falsables con criterio externo** y **una condición de prioridad histórica** (no test crítico). Esta enumeración corrige una versión previa que listaba cinco escenarios; la auditoría detallada (F06-04, integrada 2026-05-11) mostró que los escenarios 1 y 2 anteriores eran operativamente la misma condición —el corpus deja de discriminar entre señal y ruido, con la misma métrica EDI+permutación y los mismos comandos regeneradores `./tesis run --case`— y que el escenario 5 anterior (absorción por rival) tenía criterio de comparación definido desde dentro del marco (cap 04-01) — lo que Popper (1959, *Logik der Forschung* §6) llama inmunización ad hoc por elección de criterio interno.
 
-### Escenario 1. Los 4 casos `overall_pass` pierden alguna de sus dos pretensiones
+### Escenario 1. El corpus deja de discriminar entre señal y ruido
 
-*1.a (no activo al 2026-05-11):* si Energía, Deforestación, Kessler o Riesgo Biológico **dejan de pasar `overall_pass`** bajo perfiles de alto rendimiento (n_perm ≥ 2999, n_boot ≥ 1500), la tesis pierde su pretensión de necesidad estructural del acoplamiento ODE→ABM en esos dominios.
+Esta condición se manifiesta de dos formas operativamente equivalentes:
 
-*1.b (parcialmente activo al 2026-05-11):* si dichos casos **son superados por baselines puramente estadísticos** (ARIMA, VAR, RW, GP) en RMSE de validación held-out, la tesis pierde su pretensión adicional de ganancia predictiva sobre baselines no-estructurales. Esta condición está **parcialmente activada en Deforestación y Riesgo Biológico** (`09-simulaciones-edi/baselines/baselines_report.json`, val_len ∈ {8, 13}; ver §3.6). Energía y Kessler la satisfacen.
+*1.a (no activo al 2026-05-11):* si Energía, Deforestación, Kessler o Riesgo Biológico **dejan de pasar `overall_pass`** bajo perfiles de alto rendimiento (n_perm ≥ 2999, n_boot ≥ 1500), o **son superados por baselines puramente estadísticos** sobre el mismo vector observación (cf. §3.6 y deuda AU-3); o
 
-### Escenario 2. Los controles de falsación dejan de rechazarse
+*1.b (parcialmente activado):* si los 3 controles de falsación (06, 07, 08) empiezan a producir EDI significativo bajo el mismo perfil, el aparato pierde su discriminación y la tesis colapsa al instrumentalismo puro.
 
-Si los 3 controles de falsación (06, 07, 08) empiezan a producir EDI significativo, el aparato pierde discriminación y la tesis colapsa al instrumentalismo puro.
+Comando regenerador para los siete casos críticos: `./tesis run --case <NN>` para `NN ∈ {04, 16, 20, 27, 06, 07, 08}`.
 
-### Escenario 3. Aparato no escala más allá de su dominio
+### Escenario 2. El aparato no escala fuera de su dominio actual
 
-Si el caso 30 (behavioral dynamics) y otros candidatos en escalas no-macro-temporales no se elevan a demostrativo bajo el protocolo extendido, el dominio de validez de la tesis es regional, no general como aspira.
+Si el caso 30 (behavioral dynamics) y otros candidatos en escalas no-macro-temporales no se elevan a demostrativo bajo el protocolo extendido —incluyendo (i) re-evaluación con sonda alternativa estructuralmente distinta (Neural ODE o GP) que controle la circularidad parcial detectada por F03-10 y (ii) pre-registro fechado de la sonda anterior a la ejecución— el dominio de validez de la tesis es regional, no general. Criterio externo: refinamiento de sonda documentado y EDI con `p_perm < 0.05` y CI bootstrap excluyendo cero en al menos dos dominios fuera de macro-temporal antes de 2027-12.
 
-### Escenario 4. Asimetría L1↔B↔L3↔S no se sostiene en algún dominio
+### Escenario 3. La asimetría L1↔B↔L3↔S no se sostiene
 
-Si en algún dominio relevante no se logra traducir L3 a B porque B no es identificable, la tesis admite reducción de alcance.
+Si en algún dominio relevante del corpus inter-escala no se logra traducir L3 a B porque B no es identificable bajo los datos disponibles —y la traducción exige medición independiente del ajuste a L3, no sólo motivación nominal del parámetro (cf. F03-04)— la tesis admite reducción de alcance. Criterio externo: dossier de anclaje rechazado por revisión externa en al menos un dominio del corpus.
 
-### Escenario 5. Wolfram (u otro rival) absorbe la tesis sin diferencia discriminante
+### Condición de prioridad histórica (no falsación)
 
-Si un programa de investigación rival reúne todas las piezas (anclaje + asimetría + dossier + cartografía + falsación) en arquitectura equivalente o superior, la tesis cede prioridad y se reformula.
+Si un programa de investigación rival reúne, antes que esta tesis, anclaje empírico + asimetría protocolar + dossier + cartografía multidominio + falsación, esta tesis cede prioridad histórica. **Esta condición no es propiamente falsable** porque su criterio de absorción depende de la comparación con el aparato actual (los criterios de comparación los elige la tesis en cap 04-01 y cap 04-03); se documenta como **compromiso de honestidad histórica**, no como test crítico. Wolfram Physics Project no la satisface al 2026-05 — comparte hipergrafos pero no filtro empírico, dossier ni asimetría protocolar. La cláusula F04-02 sobre criterios externos (G parsimonia Quine, H novel facts Popper-Lakatos, I independencia del evaluador Bunge) actúa como complemento de honestidad: la tesis se reconoce como vulnerable bajo H (0 predicciones novedosas pre-registradas) y bajo I (sin revisión externa formal al cierre actual).
 
-Cada escenario es falsable, fechado y con criterios públicos.
+Cada escenario es **falsable, fechado y con criterio externo público**; la condición de prioridad es **trazable, fechada y honesta**, pero no se reclama como test popperiano fuerte. La tesis prefiere declarar la asimetría a esconderla bajo un quinto "escenario falsable" que su propio criterio de absorción no autoriza.
 
 ## 3. Hallazgos honestos no triviales del aparato
 
@@ -7726,6 +7818,26 @@ Hallazgos del triage de bitácora huérfana del modo continuo (`Bitacora/2026-05
 - **[AU-6 2026-05-11]** La nota de la fila "Sondas inter-paradigma sobre arrays primarios reales" reporta "1/7 converge bajo |ΔEDI|≤0.10". Triage detecta que el denominador 7 mezcla 2 casos con arrays reales y 5 casos con arrays reconstruidos. La proporción honesta debe declararse como 1/2 reales y 0/5 reconstruidos, no como 1/7 agregado. Acción: ajustar la nota para descomponer la proporción y reflejar la diferencia en LoE de las fuentes; nota paralela en `06-cierre/_extendido/versiones-cortas-defensa.md`. Cartwright 1999 queda DUDOSO (PDF ausente en `07-bibliografia/`). Origen: `Bitacora/2026-05-04-continuous-run/AU-6-multisonda-1-de-7.md`.
 - **[AU-9 2026-05-11]** El conteo de "casos null" colapsa tres regímenes operativamente distintos: (i) 5 nulls genuinos (EDI ≈ 0 con p > 0.05), (ii) 1 caso con EDI fuertemente negativo (degradación con acoplamiento), (iii) 2 casos rechazados por gate de criterios C1-C5 antes del cómputo de EDI. La cifra adversarial "-0.876" estaba mal atribuida. Acción: subdividir la tabla de null en tres filas con cuenta por régimen; paralela en `06-cierre/_extendido/versiones-cortas-defensa.md` y `05-aplicaciones/07-mapa-aplicaciones-corpus.md`. Origen: `Bitacora/2026-05-04-continuous-run/AU-9-edi-negativo-no-es-null.md`.
 - **[F06-03 2026-05-11]** El conteo "4 strong" es **invariante** a la rejilla de umbrales 0.05-0.15 × 0.20-0.40 según `THRESHOLD_SENSITIVITY_REPORT.md`, pero el manuscrito no lo declara junto a la primera mención (líneas 5 y 55 del propio capítulo). Acción: edición mínima añadiendo el paréntesis de sensibilidad junto a la primera mención del numeral "4 strong", para anticipar la objeción de *threshold shopping* sin extender la prosa. Origen: `Bitacora/2026-05-04-continuous-run/F06-03-4-strong-threshold-shopping.md`.
+
+### 4.2. Deuda residual técnica del aparato (integración 2026-05-11)
+
+Hallazgos del triage TENG y AU-4 del modo continuo (`Bitacora/2026-05-04-continuous-run/`), integrados como deudas declaradas sobre el motor EDI y el harness. Ninguna de estas deudas invalida los resultados publicados; cada una identifica un sesgo de procedimiento que debe quedar declarado para que la cifra reportada conserve sus condiciones de validez.
+
+- **[AU-4 2026-05-11] Significance theater: `p<0.05` con CI cruzando cero.** Caso 21 (Salinización) presenta `EDI=0.018`, `p_perm=0.003`, `CI 95 % = [-0.077, +0.083]`: el CI no excluye que el acoplamiento empeore la predicción y la magnitud puntual es trivial (0.6 % de reducción de RMSE). Caso 22 (Fósforo) presenta `EDI=0.192`, `p_perm=0.000`, `CI 95 % = [-0.221, +0.550]`: ranking permutacional alto pero bootstrap no excluye cero. Wasserstein & Lazar (2016, *Am Stat* 70(2):129-133, ASA Statement, Principle 3 — `07-bibliografia/Wasserstein-Lazar - ASA Statement on p-values (Am Stat 2016).pdf` p. 2 verbatim): *"Scientific conclusions and business or policy decisions should not be based only on whether a p-value passes a specific threshold."* Acción aplicada: Salinización reclasificada fuera de "suggestive"; auditoría retrospectiva de los demás casos con `p_perm<0.05 ∧ ci_lo<0` queda como deuda residual fechada del cap 03 §criterios de admisión. Origen: `Bitacora/2026-05-04-continuous-run/AU-4-significance-theater-21-22.md`.
+
+- **[TENG-01 2026-05-11] Permutación iid bajo dependencia temporal.** `hybrid_validator.py:174` permuta índices iid; `hybrid_validator.py:193` remuestrea iid para bootstrap. Bajo `ACF(lag=1) > 0` —la gran mayoría del corpus EDI por construcción— la nula deja de ser correcta y los `p_perm` reportados están sesgados hacia abajo (Davison & Hinkley 1997, cap. 8 §8.2; Künsch 1989). El riesgo se concentra en casos borderline (`p_perm ∈ [0.01, 0.05]`); en `EDI ≫ 0` con margen amplio (Energía, Deforestación), `p_block` probablemente seguirá `<0.01`. Block-permutation con `ℓ ∝ n^{1/3}` (Politis & White 2004) es la corrección canónica. Acción: implementación de `block_permutation_test_edi` y `block_bootstrap_edi` queda como B-T abierta; el manuscrito declara la limitación sin afirmar invalidez de los resultados sólidos. Origen: `Bitacora/2026-05-04-continuous-run/TENG-01-permutacion-iid-temporales.md`.
+
+- **[TENG-02 2026-05-11] Bootstrap percentil simple en régimen de pocas muestras.** `hybrid_validator.py:193,216-219` computa CI bootstrap como **percentil simple** (sin corrección de sesgo z₀ ni aceleración a). Sesgo `O(n^{-1/2})` frente al BCa `O(n^{-1})` (DiCiccio & Efron 1996, *Statistical Science* 11(3):189-228, §2.3 vs §3). 21/32 casos del corpus inter-dominio tienen `val_steps < 30` y 12 tienen `val_steps = 8`: régimen donde el sesgo del percentil es **material**. La afirmación de "CI 95 %" en esos casos tiene cobertura nominal sólo aproximada a `O(n^{-1/2})`. Acción inmediata declarada: reportar `val_steps` junto a cada CI para que el lector calibre el orden de cobertura; implementación de BCa con `bca_z0`, `bca_a`, `ci_method` en `metrics.json` queda como B-T fechada. Origen: `Bitacora/2026-05-04-continuous-run/TENG-02-bootstrap-percentil-sesgo-pequenas.md`.
+
+- **[TENG-04 2026-05-11] Invariancia CPU/GPU de C2.** `hybrid_validator.py:977` (rama GPU batch) y `:997` (rama CPU paralela) usan esquemas de semilla incompatibles: GPU comparte `seed=seed_base` (sensibilidad paramétrica pura); CPU usa `seed=2+i+10` por réplica (paramétrica + estocástica). El booleano C2 publicado en `metrics.json` no es por tanto invariante a la plataforma y puede flipear True↔False en casos borderline. Acción B-T: unificar a `seed=seed_base` en ambas ramas; re-ejecutar el corpus y actualizar prosa que cite C2 en los casos afectados. C3 ya cubre persistencia bajo distintas semillas (`hybrid_validator.py:1019-1025`). Origen: `Bitacora/2026-05-04-continuous-run/TENG-04-c2-cpu-vs-gpu-semillas-divergentes.md`.
+
+- **[TENG-08 2026-05-11] C1 disyuntivo permite EDI<0.** `hybrid_validator.py:892-926` define `c1 = c1_relative OR c1_absolute`. La rama `c1_absolute` (`rmse_abm < 2·obs_std AND corr_abm > 0.3`) no requiere que el ODE aporte información; 8 fases del corpus (≈10 %) tienen `c1_convergence=True` con `EDI<0` (casos 02, 03, 09, 14, 20, 23, 25 — el ABM solo correlaciona con los datos aunque el modelo acoplado predice peor que el reducido). Salida elegida: reclasificar `c1_absolute` como `c1_fallback` diagnóstico cuando `reduced_val` existe (no pasa C1). Acción B-T: implementar la reclasificación y re-ejecutar los 8 casos afectados; la afirmación general "el corpus pasa C1 ampliamente" se re-cualifica a "el corpus pasa C1 cuando el ODE aporta mejora sobre el reducido". Origen: `Bitacora/2026-05-04-continuous-run/TENG-08-c1-or-fallback-permite-edi-negativo.md`.
+
+- **[TENG-10 2026-05-11] Baselines comparados sobre target distinto.** `09-simulaciones-edi/common/baselines.py:48-208` ajusta ARIMA/VAR/RW/GP sobre una **serie sintética propia** (`_gen_series_with_coupling`), distinta del proceso generador del caso. `rmse_arima` y `rmse_coupled` que se comparan en `winner` están definidos sobre vectores observación distintos: el ratio es aritméticamente válido pero **inferencialmente nulo**. La métrica EDI propia no se ve afectada (ambos RMSEs en su definición están sobre el mismo `obs_val`). Lo afectado es la comparación externa contra baselines reportada por `baselines.py`. Acción inmediata: cualquier prosa que cite `winner` debe reformularse como ilustrativa hasta implementar Ruta 1 (baselines sobre `primary_arrays.json:obs[val_idx]`). La comparación válida de F3-AU3 (RMSE del aparato vs RMSE de ARIMA/VAR sobre el mismo target) se mantiene como referencia honesta y activa parcialmente el Escenario 1 en Deforestación y Riesgo Biológico (§3.6). Origen: `Bitacora/2026-05-04-continuous-run/TENG-10-baselines-target-distinto-aparato.md`.
+
+- **[TENG-12 2026-05-11] Hash MD5 no detecta inconsistencia interna.** `replay_hash.py:44-52` (`md5_metrics`) hashea bytes del JSON normalizado; certifica reproducibilidad bit-a-bit pero no examina invariantes algebraicos entre campos. El bug del caso 19 fase real sobrevivió múltiples corridas: archivo internamente contradictorio (`value`, `weighted_value` y `errors` de ejecuciones distintas fusionadas) pero hash "✓ Sin cambios". Acción B-T: implementar `verify_internal_consistency.py` con tres invariantes — `|edi.value − weighted_value/loe_factor| < 1e-6`, `|edi.value − (rmse_no_ode − rmse_abm)/rmse_no_ode| < 1e-4`, `ci_lo ≤ value ≤ ci_hi` — cableado a `./tesis audit` antes de `replay_hash.py`. La causa raíz del caso 19 sigue requiriendo B-T separada. Origen: `Bitacora/2026-05-04-continuous-run/TENG-12-hash-no-detecta-inconsistencia-interna.md`.
+
+- **[TENG-13 2026-05-11] Calibración bi-criterio vs métrica RMSE-only.** `hybrid_validator.py:496-549` selecciona parámetros minimizando `score = RMSE × max(0.5, 2 − corr)`; EDI se evalúa sobre RMSE puro del modelo así seleccionado. El EDI reportado no es exactamente "el mejor ajuste predictivo del ABM acoplado en RMSE", sino "el mejor entre los modelos que también correlacionan temporalmente con la sonda macro". El sesgo puede operar en cualquier dirección. Acción B-T: estudio de sensibilidad en 3 casos (un EDI alto, un medio, un null) re-calibrando con `score = RMSE` puro y reportando `ΔEDI`; si `|ΔEDI| > 0.05` en alguno, la deuda escala a corrección estructural. Origen: `Bitacora/2026-05-04-continuous-run/TENG-13-calibracion-objetivo-no-alineado-con-edi.md`.
 
 ## 5. Aporte conceptual sustantivo
 
@@ -7809,7 +7921,7 @@ Establece el **irrealismo operativo** como tercera vía: ni cosa, ni ficción, s
 
 ## 8. Fórmula final demostrativa
 
-> Bajo el aparato consolidado — irrealismo operativo de estructuras pre-ontológicas como **ontología general multiescalar**, asimetría L1↔B↔L3↔S como protocolo formal con sistema modal T declarado e invariante a la escala, dossier de anclaje de catorce componentes, protocolo C1-C5 con 13 condiciones simultáneas, EDI por intervención ablativa con permutación 999 y bootstrap 500, cartografía agregada de 40 casos: **30 inter-dominio** sobre física, biología, economía, política, tecnología, cultura y conducta humana (4 `overall_pass=True` + 1 strong sin gate + 8 weak + 3 controles rechazados) y **10 inter-escala** desde dinámica de espín-órbita atómica (10⁻¹⁰ m) hasta dinámica de cúmulos globulares (10²⁰ m) con **7 strong en 7 escalas distintas** + 1 weak + 2 nulls honestos, validación lógica formal con suite ST de 24 teorías (6 hallazgos críticos detectados y corregidos), hostile testing aplicado al motor (0/2000 falsos positivos en gate completo bajo random walk masivo, Wilson 95 % CI [0, 0.00191]) y al test cruzado de sondas inter-escala (0/12 circularidad detectada), coherencia interna del umbral EDI sobre el corpus inter-dominio (AUC-ROC = 0.886, n=12; interpretada como consistencia entre el umbral declarado 0.33 y la clasificación final del corpus, no como discriminación externa contra un baseline rival; ver §8.1), y discriminación pública contra catorce rivales (incluido Wolfram con piloto Rule 110 ejecutado mostrando convivencia de irreducibilidad micro y cierre macro detectable) — la tesis del irrealismo operativo de estructuras pre-ontológicas se sostiene como **propuesta ontológica general multiescalar articulada con demostración parcial bajo régimen declarado**, con limitaciones honestamente reconocidas (p-value mal calibrado al 24% empírico aunque umbrales EDI robustos, caso 30 con circularidad detectada por sonda alternativa, depuración post-hoc del corpus inter-escala, datos sintéticos pendientes de elevación a LoE 4-5, escalas como etiquetas nominales basadas en parámetros publicados, AUC-ROC interno no externo, ningún caso cumple los tres criterios κ-ontológica, sin revisión por pares humanos externos) y deuda residual fechada con cronograma firme post-defensa.
+> Bajo el aparato consolidado — irrealismo operativo de estructuras pre-ontológicas como **ontología general multiescalar**, asimetría L1↔B↔L3↔S como protocolo formal con sistema modal T declarado e invariante a la escala, dossier de anclaje de catorce componentes, protocolo C1-C5 con 13 condiciones simultáneas, EDI por intervención ablativa con permutación 999 y bootstrap 500, cartografía agregada de 40 casos: **30 inter-dominio** sobre física, biología, economía, política, tecnología, cultura y conducta humana (4 `overall_pass=True` + 1 strong sin gate + 8 weak + 3 controles rechazados) y **10 inter-escala** desde dinámica de espín-órbita atómica (10⁻¹⁰ m) hasta dinámica de cúmulos globulares (10²⁰ m) con **7 strong en 7 escalas distintas** + 1 weak + 2 nulls honestos, validación lógica formal con suite ST de 24 teorías (6 hallazgos críticos detectados y corregidos), hostile testing aplicado al motor (0/2000 falsos positivos en gate completo bajo random walk masivo, Wilson 95 % CI [0, 0.00191]) y al test cruzado de sondas inter-escala (0/12 circularidad detectada), coherencia interna del umbral EDI sobre el corpus inter-dominio (AUC-ROC = 0.886, n=12; interpretada como consistencia entre el umbral declarado 0.33 y la clasificación final del corpus, no como discriminación externa contra un baseline rival; ver §8.1), y discriminación pública contra quince rivales (incluidos Wolfram con piloto Rule 110 ejecutado mostrando convivencia de irreducibilidad micro y cierre macro detectable, e IIT — Tononi-Boly-Massimini-Koch 2016) — la tesis del irrealismo operativo de estructuras pre-ontológicas se sostiene como **propuesta ontológica general multiescalar articulada con demostración parcial bajo régimen declarado**, con limitaciones honestamente reconocidas (p-value mal calibrado al 24% empírico aunque umbrales EDI robustos, caso 30 con circularidad detectada por sonda alternativa, depuración post-hoc del corpus inter-escala, datos sintéticos pendientes de elevación a LoE 4-5, escalas como etiquetas nominales basadas en parámetros publicados, AUC-ROC interno no externo, ningún caso cumple los tres criterios κ-ontológica, sin revisión por pares humanos externos) y deuda residual fechada con cronograma firme post-defensa.
 
 ### 8.1. Lo que la tesis afirma con fuerza tras hostile testing severo
 
@@ -7885,7 +7997,7 @@ Esa es la condición de la victoria local de esta tesis.
 - protocolo de auditoría ontológica de nueve fases (capítulo 03-03);
 - procedimiento empírico de κ vía baja dimensionalidad (capítulo 03-04);
 - ética de investigación y gobernanza de datos con declaración de co-autoría con IA (capítulo 03-05);
-- debates con catorce rivales identificables y citas textuales (capítulo 04-01);
+- debates con quince rivales identificables y citas textuales, incluido IIT (capítulo 04-01);
 - limitaciones genuinas con seis puntos de presión (capítulo 04-02);
 - distinción demostrativo/programático con criterios (capítulo 05-00);
 - caso ancla canónico con dossier completo (capítulo 05-05);
@@ -8090,7 +8202,7 @@ El manuscrito doctoral final está listo si:
 
 - al menos dos casos están en modo demostrativo (caso ancla + uno elevado);
 - al menos tres dominios programáticos quedan con criterios de elevación claros;
-- las catorce posiciones rivales se discriminan con tabla pública;
+- las quince posiciones rivales se discriminan con tabla pública;
 - el aparato formal opera con procedimiento empírico verificable;
 - el dossier de anclaje se aplica al caso ancla con catorce componentes completos;
 - la bibliografía está integrada en cada capítulo con interlocutor principal y secundarios;

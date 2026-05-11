@@ -14,8 +14,11 @@ Mapa completo del paisaje de aplicaciones del marco como **ontología general mu
 
 **Distribución por modo:**
 
-- **Modo demostrativo (con dossier completo):** 30 casos. Todos tienen dossier en `09-simulaciones-edi/<caso>/`.
+- **Modo técnico-ejecutado** (dossier EDI completo, `metrics.json` reproducible bajo el protocolo C1-C5): 30 casos. Todos tienen dossier en `09-simulaciones-edi/<caso>/`.
+- **Modo demostrativo en sentido estricto** (14/14 componentes del dossier de anclaje del cap 05-00 §1, con material publicado independiente del aparato): 1 caso (05-05 Warren). La distinción es operativa: el primer modo asegura reproducibilidad técnica; el segundo asegura adecuación filosófica plena del aparato a un caso paradigmático.
 - **Aplicaciones filosóficas programáticas adicionales:** 4 dominios sin caso EDI directo (capítulos 05-01 a 05-04).
+
+*Nota sobre el modo técnico-ejecutado.* 'Dossier técnico completo' indica que el caso fue corrido con el protocolo C1-C5 y produce `metrics.json` reproducible. **No equivale a 'demostración positiva del aparato'**: los Bloques V-VII (Trend, Null, Controles) no instancian acoplamiento detectable; funcionan como casos de no-aplicabilidad de la sonda, falsación local o controles correctamente rechazados. Casos con `EDI ≤ 0` o `p ≈ 1` están listados explícitamente en sus bloques correspondientes y **no se contabilizan como instancia positiva del aparato**. La fuerza inferencial real del corpus inter-dominio descansa sobre los Bloques I–IV (Strong, Strong sin gate, Weak, Suggestive — del orden de 15 casos según los conteos vigentes), no sobre la cifra agregada N=30 indistinta.
 
 **Distribución por Nivel:**
 
@@ -28,13 +31,20 @@ Mapa completo del paisaje de aplicaciones del marco como **ontología general mu
 | 4 | Strong (`overall_pass=True`) | 4 | Energía, Deforestación, Kessler, Riesgo Biológico |
 | 4 | Strong sin gate completo | 1 | Microplásticos |
 | 3 | Weak | 8 | Políticas, Postverdad, Urbanización, Fósforo, Wikipedia, Epidemiología, Movilidad, Behavioral Dynamics (caso 30) |
-| 2 | Suggestive | 2 | Finanzas, Salinización |
-| 1 | Trend | 4 | Justicia, Starlink, Fuga cerebros, Clima |
-| 0 | Null | 8 | Conciencia, Contaminación, Paradigmas, Océanos, Acidificación, Erosión, Acuíferos, IoT |
+| 2 | Suggestive | 1 | Finanzas (Salinización reclasificada por AU-4: CI cruza cero + magnitud trivial) |
+| 1 | Trend | 3 | Justicia, Fuga cerebros, Clima |
+| 0a | Null genuino | 5 | Conciencia, Acidificación, Erosión, Acuíferos, IoT (`\|EDI\|<0.05` y `p_perm>0.05`) |
+| 0b | EDI negativo (sonda macro inadecuada) | 1 | Paradigmas (`EDI=-0.144`: ABM acoplado predice peor que reducido) |
+| 0c | Señal rechazada por gate C1-C5 | 2 | Contaminación, Océanos (`EDI>0` con `p_perm<0.05` pero `valid=False`) |
+| n.e. | Cuarentena por insuficiencia de datos | 1 | Starlink (val_steps=1) |
 | — | Falsación rechazada (controles) | 3 | Exogeneidad, No-estacionariedad, Observabilidad |
+
+**Subdivisión del Bloque "Null" (AU-9 2026-05-11).** Lo que la versión previa presentaba como "8 null" cubre en realidad tres regímenes empíricamente distintos: 5 nulls genuinos (el aparato no detecta señal donde no la hay), 1 EDI negativo (la sonda macro elegida es activamente inadecuada para el dominio), y 2 rechazos por gate C1-C5 (ranking permutacional cruza el umbral pero la batería compuesta rechaza por incumplimiento de viscosidad/persistencia/no-localidad). La cifra "señal/no-señal ≈ 50 %" gana matiz y pierde rotundidad; el aparato discrimina tres modos de no-éxito en lugar de colapsarlos en una etiqueta única.
 
 **Total con señal significativa:** 15/30 (50%).
 **Falsación correcta:** 3/3 (100%).
+
+**Costo declarado del agregador `overall_pass`.** El gate compuesto `overall_pass=True` integra C1-C5 + viscosidad + significancia permutacional + persistencia, pero **no exige que `ci_lo` del bootstrap del EDI sea positivo**. Riesgo Biológico (caso 27) ilustra el costo: pasa el gate con `p_perm=0.0022` y `edi.value=0.333`, pero su CI bootstrap 95 % `[-0.198, +0.648]` cruza el cero. La promoción a "strong gate completo" descansa, por tanto, sobre la significancia permutacional del ranking del estadístico observado, no sobre la exclusión bootstrap del cero. La tesis sostiene la categorización pero declara su límite: un revisor que lea "strong" como "CI bootstrap excluye el cero" estará leyendo más de lo que el agregador certifica. Si en una pasada posterior se exige `ci_lo > 0` como requisito de admisión, caso 27 se reclasifica a "strong sin gate bootstrap" y el conteo "4 strong" del corpus inter-dominio cae a 3 con pérdida del dominio biomédico-epidemiológico.
 
 ### Corpus inter-escala (10 casos)
 
@@ -107,10 +117,12 @@ Reproducibilidad: el caso 16 ha sido re-ejecutado con datos World Bank descargad
 
 **Tabla 5.7.6.**
 
-| # | Caso | EDI | p |
-|---|------|----:|--:|
-| 09 | Finanzas globales | 0.0813 | 0.0000 |
-| 21 | Salinización (irrigación) | 0.0184 | 0.0028 |
+| # | Caso | EDI | p_perm | CI 95 % bootstrap | Comentario |
+|---|------|----:|--:|---|---|
+| 09 | Finanzas globales | 0.0813 | 0.0000 | (pendiente reporte en tabla) | Mantenido en suggestive |
+| 22 | Fósforo (referenciado en Bloque III Weak) | 0.1924 | 0.0000 | [-0.221, +0.550] | Ranking permutacional alto pero bootstrap no excluye cero; magnitud frágil (AU-4) |
+
+**Reclasificación AU-4 (2026-05-11):** el caso 21 (Salinización) se **retira del Bloque IV Suggestive** y se reubica en un bloque nuevo de "significativos por permutación con magnitud trivial — no contabilizan a favor de la tesis". Sus métricas son `EDI = 0.0184`, `p_perm = 0.0028`, `CI 95 % bootstrap = [-0.0771, +0.0825]`: el CI no excluye que el acoplamiento empeore la predicción y la magnitud puntual es del orden del 0.6 % de reducción de RMSE. Este es exactamente el patrón que Wasserstein y Lazar (2016, *The American Statistician* 70(2):129-133, ASA Statement on p-values, Principle 3 — verbatim en `07-bibliografia/Wasserstein-Lazar - ASA Statement on p-values (Am Stat 2016).pdf` p. 2) advierten: *"Scientific conclusions and business or policy decisions should not be based only on whether a p-value passes a specific threshold."* La coexistencia de `p<0.01` con magnitud trivial y CI cruzando cero no debe contar como evidencia positiva. La tesis declara aquí, como costo, que **la regla `CI 95 % no cruza cero` debe operar como criterio adicional al ranking permutacional** en pasadas subsiguientes; la auditoría retrospectiva de los demás casos contabilizados como significativos queda como deuda residual fechada (cf. cap 03 §criterios de admisión).
 
 ### Bloque V — Trend (Nivel 1)
 
@@ -121,9 +133,10 @@ Reproducibilidad: el caso 16 ha sido re-ejecutado con datos World Bank descargad
 | # | Caso | EDI | p | Comentario |
 |---|------|----:|--:|------------|
 | 10 | Justicia (Estado de Derecho) | 0.2274 | 0.4775 | Ventana corta |
-| 26 | Starlink | 0.6892 | 1.0000 | val_steps=1 — exploratorio |
 | 28 | Fuga de cerebros | 0.0249 | 0.9975 | Ruido domina |
 | 01 | Clima regional | 0.0111 | 0.9990 | Sonda Budyko-Sellers insuficiente |
+
+**Casos en cuarentena por insuficiencia de datos.** Caso 26 (Starlink) se removió del Bloque V tras auditoría de `metrics.json` (phases.real): `val_steps = 1`, `ci_lo = ci_hi = edi.value = 0.6892` (CI bootstrap colapsado), `permutation_pvalue = 1.0`, `correlations.abm_obs = 0.0`. Con un único punto de validación el bootstrap colapsa y la permutación carece de grados de libertad: el EDI=0.689 es **artefacto numérico, no medición**. El caso 19 (Acidificación oceánica) compartió esa patología en versiones previas (cf. línea correspondiente en Bloque VI con `metrics.json` re-ejecutado a EDI≈0.00044, p_perm=0.43). La tesis declara estos casos en cuarentena/null por insuficiencia de datos hasta que el dataset admita un `val_steps ≥ 8` o se decida su reclasificación definitiva. Comando regenerador: `python3 09-simulaciones-edi/26_caso_starlink/src/validate.py`. El epíteto "exploratorio" no salva la clasificación como Trend; el caso queda reubicado en bloque de cuarentena.
 
 ### Bloque VI — Null (Nivel 0)
 
@@ -162,13 +175,13 @@ Reproducibilidad: el caso 16 ha sido re-ejecutado con datos World Bank descargad
 
 ### Capítulo 05-01 — Mente, memoria, yo
 
-**Estado:** modo programático.
+**Estado:** modo programático **sin caso EDI ejecutado ni candidato del corpus**.
 
-**Conjetura central:** las categorías mentales son atractores de integración multivariable en sistemas acoplados organismo-entorno-tarea-historia.
+**Conjetura central:** las categorías mentales (memoria, atención, decisión, conciencia perceptiva) son **atractores de integración multivariable** en sistemas acoplados organismo–entorno–tarea–historia. Esta es conjetura programática, no resultado empírico de este manuscrito.
 
-**Criterio de elevación:** construir tareas cognitivas con datos cuantitativos donde atractores conductuales discriminen contra cognitivismo simbólico.
+**Criterio de elevación:** construir tareas cognitivas con datos cuantitativos públicos donde atractores conductuales discriminen contra cognitivismo simbólico. El corpus actual **no incluye tal caso**. El caso 30 (behavioral dynamics, Nivel 3 weak) **no cuenta como elevación parcial de este capítulo**: opera en coordinación motora, no en cognición simbólica; su lugar legítimo es el capítulo 05-05 como complemento cuantitativo del ancla cualitativa Warren, no como elevación del capítulo de mente.
 
-**Caso 30 (behavioral dynamics, Nivel 3 weak)** es el primer paso de elevación parcial: muestra que el aparato detecta cierre operativo significativo en behavioral dynamics, aun sin alcanzar Nivel 4.
+**Deuda residual fechada:** identificar caso público con datos de tarea cognitiva (decisión bajo incertidumbre, memoria de trabajo, atención sostenida) susceptible de modelado dinámico acoplado, ejecutarlo con `validate.py` y reportar EDI con significancia bootstrap. Hasta entonces, el capítulo 05-01 permanece como conjetura programática declarada.
 
 ### Capítulo 05-02 — Biología y ecología
 

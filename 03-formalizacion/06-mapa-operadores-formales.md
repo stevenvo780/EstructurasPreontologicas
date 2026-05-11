@@ -135,11 +135,11 @@ nivel = clasificar(EDI=validacion.edi,
 |-------|----------------|
 | Firma | `G = (V, E, W, T)` |
 | V (nodos) | variables observadas |
-| E (aristas) | dependencias detectadas que pasan do-test |
-| W (pesos) | covarianza condicional, sensibilidad a intervención |
+| E (aristas) | dependencias detectadas que pasan `do`-test (cuando hay acceso experimental, p. ej. VENLab) o ablación de modelo (corpus observacional) bajo supuestos identificadores declarados en cap 03-01 §12.1 |
+| W (pesos) | covarianza condicional + sensibilidad a ablación del término ODE en el modelo híbrido |
 | T (reglas) | leyes físicas + leyes de control empíricamente identificables |
-| Criterio de admisión | aristas robustas a intervenciones específicas |
-| Criterio de fallo | manipular v_i no cambia v_j según predicción → eliminar arista |
+| Criterio de admisión | aristas robustas a intervención experimental cuando es accesible; en caso observacional, robustas a ablación bajo supuestos identificadores (fidelidad, modularidad, ausencia de confounders no incluidos) |
+| Criterio de fallo | apagar v_i no cambia v_j en el modelo → arista decorativa, eliminar |
 | Implementación EDI | implícita en `hybrid_validator.py::run_full_validation` |
 
 ---

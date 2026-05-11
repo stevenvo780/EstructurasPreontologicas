@@ -58,7 +58,7 @@ Mapeo directo de las 12 preguntas más probables del tribunal doctoral a respues
 
 ## P8. ¿No es esta tesis "behavioral dynamics renombrado"?
 
-**Respuesta:** El corpus agregado de 40 casos cubre dominios y escalas que están **muy lejos** de behavioral dynamics: dinámica de espín-órbita atómica (10⁻¹⁰ m), decoherencia cuántica, plegamiento de proteína, ciclo celular, dinámica gravitacional de cúmulos globulares (10²⁰ m). La generalidad multiescalar de 30 órdenes de magnitud refuta directamente la objeción. Behavioral dynamics es **un caso entre 40**, no la tesis.
+**Respuesta:** Behavioral dynamics es un caso entre 40, y la generalidad de la tesis no descansa en él ni en su réplica multiescalar sintética. Descansa en los casos macro con datos públicos reales (16 deforestación, 04 energía, 20 Kessler, 27 riesgo biológico, y la cohorte weak en epidemiología/urbanización/dinámica institucional) que superan umbrales strong/weak bajo permutación 999. El **corpus inter-escala** 10⁻¹⁰–10²⁰ m (casos 31-40, sondas Lindblad/Plummer/Tyson-Novak) es **sintético** —datos generados por las mismas ODE que las sondas prueban— y se reporta como **conjetura de aplicabilidad** del aparato fuera de su dominio macro original, no como prueba empírica de generalidad. Confundir ambos niveles sería la trampa que la tesis denuncia.
 
 **Referencia:** Cap 06-01 §5.4 + `06-cierre/02-guia-de-defensa.md §4` (Trampa 1).
 

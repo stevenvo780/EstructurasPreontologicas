@@ -8,6 +8,26 @@ del aparato ya disponible en outputs/metrics.json.
 
 El propósito de este módulo no es predicción óptima sino discriminar si el
 aparato aporta algo más que un modelo estadístico genérico.
+
+ADVERTENCIA (TENG-10 2026-05-11) — Target distinto entre baselines y aparato.
+============================================================================
+Esta función NO compara aparato vs baselines sobre el mismo vector observación.
+Los `rmse_arima`, `rmse_var`, `rmse_rw`, `rmse_gp` están definidos sobre una
+serie sintética propia generada aquí por `_gen_series_with_coupling` (modelo
+AR1 simple); el `rmse_coupled` se lee desde `metrics.json` y está definido
+sobre la observación real del caso. Los ratios `ratio_*_vs_coupled` y el campo
+`winner` son aritméticamente válidos pero INFERENCIALMENTE NULOS: no son una
+comparación entre aparato y baselines sobre el mismo target.
+
+Para una comparación válida ver Ruta 1 de TENG-10: leer `obs` desde
+`outputs/primary_arrays.json` (emitido por `array_dump.py`), particionar
+train/val con la frontera del aparato, ajustar baselines sobre `train` y
+forecast a `val`, computar `rmse_arima = rmse(forecast, val_obs)`.
+
+Mientras se implementa Ruta 1, cualquier prosa del manuscrito que cite el
+campo `winner` de este módulo debe reformularse como ilustrativa. La
+comparación honesta del aparato vs ARIMA/VAR sobre el mismo target ya está
+reportada en `09-simulaciones-edi/baselines/baselines_report.md` (F3-AU3).
 """
 
 from __future__ import annotations

@@ -91,7 +91,7 @@ Un dossier falla si:
 - la compresión no pasa las pruebas de validación;
 - la predicción discriminante no se cumple en datos públicos;
 - la intervención discriminante se evita;
-- algún parámetro de L3 no se traduce a B (formalismo desanclado).
+- algún parámetro de L3 no se traduce a B mediante medición independiente del ajuste a L3 (formalismo desanclado **o calibración nominalizada como traducción**, cf. cap 03-04 Patología 3).
 
 El fallo en cualquiera implica retiro de la propuesta o reescritura del dossier desde el componente afectado.
 
@@ -227,7 +227,9 @@ Los diez criterios son la **lista verificable** de propiedades exigidas. El doss
 
 ### 11.1. Bunge — exigencias de cientificidad
 
-Bunge (1967, *La investigación científica*, vol. 2, p. 32) formula los criterios de cientificidad de un constructo: *"claridad, falsabilidad, contrastabilidad, no contradicción interna, compatibilidad con el grueso del conocimiento previo, capacidad explicativa y predictiva"*. Los diez criterios de este capítulo extienden esa lista al dominio multiescala con énfasis en **compresión** y **reversibilidad**, dos exigencias adicionales que Bunge no operacionaliza con la misma especificidad pero que la tesis vuelve verificables.
+Bunge (1967, *La investigación científica*, vol. 2, p. 32 — paráfrasis declarada; el PDF disponible en `07-bibliografia/` es scan parcial sin OCR, lo que impide cita verbatim; verificación contra edición completa Ariel pendiente) formula siete criterios de cientificidad de un constructo: claridad, falsabilidad, contrastabilidad, no contradicción interna, compatibilidad con el grueso del conocimiento previo, capacidad explicativa y capacidad predictiva. **Los diez criterios de este capítulo no extienden esa lista sino que la reorganizan.** Conservan capacidad explicativa (como poder inferencial, §2.4), capacidad predictiva (§2.5) y contrastabilidad (subsumida en dependencia empírica, §2.2); **desplazan falsabilidad** del estatuto de criterio positivo al de condición de fallo del dossier (§3.3), donde se opera mediante `do`-test e intervención discriminante cuando es factible; y **omiten como criterios independientes** claridad, no contradicción interna y compatibilidad con el saber previo, asumiéndolas como precondiciones de admisión a discusión, no como filtros operativos. La tesis añade, en cambio, **siete exigencias materialistas y operativas** ausentes en la lista bungeana: anclaje material (§2.1), fidelidad relacional (§2.3), poder interventivo (§2.6), robustez (§2.7), reversibilidad parcial (§2.8), economía explicativa (§2.9) y no reificación (§2.10).
+
+El costo de esta reorganización se declara: una propuesta puede satisfacer los diez criterios sin haberse sometido a un test de falsabilidad popperiano clásico, siempre que su dossier admita intervención discriminante. En dominios histórico-sociales o cosmológicos donde el `do`-test no es factible, el filtro pierde mordida (cf. §11.2 sobre Lakatos). La tesis sostiene que esta sustitución es ganancia operativa para dominios con acceso a intervención; queda como pregunta abierta para el lector si el desplazamiento de la falsabilidad a sub-cláusula del dossier le resta fuerza normativa donde la intervención no es accesible.
 
 ### 11.2. Lakatos — programas de investigación
 

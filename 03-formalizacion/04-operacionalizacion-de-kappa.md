@@ -6,7 +6,7 @@ La tesis define `κ` como operador que reemplaza un subgrafo por un nodo cuando 
 
 ## Tesis del capítulo
 
-> Una compresión `κ(G) = G*` es legítima respecto de Q si y solo si existe un sistema dinámico de baja dimensión sobre `G*` que (a) reproduce, dentro de tolerancia, las trayectorias observadas, (b) preserva la topología de atractores, repulsores y bifurcaciones empíricamente identificada, (c) predice respuestas a perturbaciones e intervenciones discriminantes, y (d) no oculta una transición que sí ocurre en los datos.
+> Una compresión `κ(G) = G*` es legítima respecto de Q bajo el conjunto de evidencia vigente E si existe un sistema dinámico de baja dimensión sobre `G*` que (a) reproduce, dentro de tolerancia, las trayectorias observadas, (b) preserva la topología de atractores, repulsores y bifurcaciones empíricamente identificada en E, y (c) predice respuestas a perturbaciones e intervenciones discriminantes. La legitimidad es **revisable**: queda retirada si nuevos datos E' exhiben una transición no capturada por G* (criterio de fallo ex post, no requisito de admisión ex ante — versión local del *bootstrap problem* de Glymour 1980).
 
 Esto convierte κ en un objeto que cualquier tercero puede auditar.
 
@@ -105,7 +105,7 @@ Caso: el modelo reducido tiene un atractor que no aparece como estabilidad empí
 
 ## Patología 3: el modelo que no se traduce a B
 
-Caso: la dinámica de baja dimensión funciona pero ninguno de sus parámetros se traduce a una variable biomecánica, informacional o de tarea. Diagnóstico: el modelo es L3 desanclado. Remedio: reformular las funciones del sistema en términos de leyes de control con motivación ecológica o biomecánica, o degradar el modelo a estatus de descripción puramente nominal.
+Caso: la dinámica de baja dimensión funciona, pero ninguno de sus parámetros se traduce a una variable biomecánica, informacional o de tarea **mediante un procedimiento de medición independiente del ajuste a L3**. Diagnóstico: el modelo es L3 desanclado, aun si los nombres de las variables sugieren motivación biomecánica. No basta con que un parámetro se llame "rigidez de control" o "tasa de aproximación"; se exige que su valor numérico provenga de un protocolo de medición en B (cinemática, fuerza, latencia perceptiva, intervención discriminante directa, etc.) que **no use los mismos datos** que se ajustan en L3. Remedio: (i) aportar el procedimiento de medición independiente, (ii) declarar el parámetro como **calibrado por ajuste** y por tanto **no traducido**, lo que degrada el dossier al estatus de descripción nominal en ese parámetro, o (iii) reformular el sistema con leyes cuyos parámetros sí admitan medición externa. Una traducción por nombre sin medición independiente es **trampa nominal** y queda explícitamente prohibida como criterio de admisión a modo demostrativo (cf. Frigg & Hartmann, "Models in Science", SEP §2.4, sobre el riesgo de identificar nombre y medición).
 
 ## Patología 4: la pregunta no fija tolerancia
 

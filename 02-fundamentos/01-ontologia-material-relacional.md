@@ -326,7 +326,7 @@ La tesis no reduce toda explicación a causalidad lineal. Reconoce un repertorio
 - **dependencia histórica**: el estado actual depende de trayectorias pasadas;
 - **dependencia contextual**: la relación cambia según entorno o escala.
 
-La causalidad circular (upward + downward) emerge naturalmente del acoplamiento dinámico: las componentes producen la dinámica conjunta y la dinámica conjunta retroalimenta a las componentes. No hay aquí emergencia fuerte: hay self-organization en el sentido técnico anclado en Maturana y Varela (1980, *Autopoiesis and Cognition*) y Haken (1977, *Synergetics*) — ver cap 02-04 §4 para la formulación con cita textual paginada.
+La causalidad circular (upward + downward) emerge naturalmente del acoplamiento dinámico: las componentes producen la dinámica conjunta y la dinámica conjunta retroalimenta a las componentes. No hay aquí emergencia fuerte: hay self-organization en el sentido técnico operacionalizado vía Haken (1977, *Synergetics*) — slaving principle como modelo de estabilización dinámica — con la restricción regulativa heredada de Maturana-Varela (1980, *Autopoiesis and Cognition*) de que la organización del par acoplado no es reducible a la suma de sus componentes. **Las dos tradiciones no son convergentes**; el costo de su uso conjunto y la asimetría de la herencia están declarados en cap 02-04 §4 (último párrafo).
 
 ## 10. Qué evita la ontología
 

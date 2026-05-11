@@ -7,6 +7,8 @@
 
 ## 1. Modo demostrativo: condiciones de admisión
 
+**Nota sobre la genealogía de los catorce componentes.** Los catorce componentes que organizan este dossier fueron extraídos como **abstracción del caso ancla** (cap 05-05, Warren 2006). La adecuación del caso ancla a estos criterios es por construcción y no constituye evidencia independiente de la potencia del marco: cada componente del dossier tiene correspondencia textual en una sección del cap 05-05 (auditoría detallada en `Bitacora/2026-05-04-continuous-run/F05-08-criterios-admision-post-hoc.md`). Lakatos (1978, *The Methodology of Scientific Research Programmes*) llamaría a esto **ad hoc rescue tipo 3**: una rejilla evaluativa diseñada para que sólo el caso paradigmático la satisfaga. La tesis declara el costo y opta por la salida más honesta operativamente: los demás casos del corpus entran en **modo programático** (dossier técnico ejecutado y reproducible) no porque sean ontológicamente menos firmes, sino porque carecen de un caso paradigmático con las catorce dimensiones desarrolladas independientemente. Los catorce componentes funcionan, por tanto, como **agenda regulativa para futuros casos paradigmáticos**, no como medida de adecuación ontológica de los 30 casos ejecutados.
+
 Una aplicación se admite en modo demostrativo si y solo si su dossier de anclaje (capítulo 03-02 §3) está completo en sus catorce componentes con contenido sustantivo:
 
 1. **Pregunta Q fechada** con tolerancia y régimen de medición explícitos;

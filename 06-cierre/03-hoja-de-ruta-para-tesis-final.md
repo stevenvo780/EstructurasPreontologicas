@@ -21,7 +21,7 @@
 - protocolo de auditoría ontológica de nueve fases (capítulo 03-03);
 - procedimiento empírico de κ vía baja dimensionalidad (capítulo 03-04);
 - ética de investigación y gobernanza de datos con declaración de co-autoría con IA (capítulo 03-05);
-- debates con catorce rivales identificables y citas textuales (capítulo 04-01);
+- debates con quince rivales identificables y citas textuales, incluido IIT (capítulo 04-01);
 - limitaciones genuinas con seis puntos de presión (capítulo 04-02);
 - distinción demostrativo/programático con criterios (capítulo 05-00);
 - caso ancla canónico con dossier completo (capítulo 05-05);
@@ -226,7 +226,7 @@ El manuscrito doctoral final está listo si:
 
 - al menos dos casos están en modo demostrativo (caso ancla + uno elevado);
 - al menos tres dominios programáticos quedan con criterios de elevación claros;
-- las catorce posiciones rivales se discriminan con tabla pública;
+- las quince posiciones rivales se discriminan con tabla pública;
 - el aparato formal opera con procedimiento empírico verificable;
 - el dossier de anclaje se aplica al caso ancla con catorce componentes completos;
 - la bibliografía está integrada en cada capítulo con interlocutor principal y secundarios;

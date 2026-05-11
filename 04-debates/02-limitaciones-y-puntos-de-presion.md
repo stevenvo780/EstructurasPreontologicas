@@ -73,4 +73,4 @@ Si no cae en ninguna, probablemente está mal formulada. Si cae en alguna, la re
 - Inventario operativo de limitaciones fechadas con entregable (L1-L20): `04-debates/05-limitaciones-declaradas-consolidacion.md`.
 - Anticipación de objeciones filosóficas con F1-F10: `04-debates/04-anticipacion-objeciones-filosoficas.md`.
 - Confrontación con rivales discursivos: `04-debates/01-debates-con-posiciones-rivales.md`.
-- Matriz síntesis 14×6 de rivales: `04-debates/03-tabla-comparativa-rivales.md`.
+- Matriz síntesis 15×6 de rivales: `04-debates/03-tabla-comparativa-rivales.md`.

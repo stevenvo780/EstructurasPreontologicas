@@ -93,12 +93,14 @@ La tesis prohíbe la arista decorativa: solo entran las relaciones que afectan l
 Una arista `(v_i, v_j) ∈ E` es admisible si:
 
 - es detectable por covarianza condicional bajo régimen R;
-- es robusta a intervenciones específicas (`do(v_i)` cambia `v_j`);
+- es robusta a una intervención análoga al `do(v_i)` pearliano **cuando hay acceso experimental al sistema** (caso ancla VENLab); en los casos observacionales (29/30 del corpus inter-dominio) la admisión se reduce a **ablación dentro del modelo híbrido** —apagar el término de acoplamiento ODE→ABM degrada la predicción— bajo los supuestos identificadores explícitamente declarados en §12.1;
 - su peso `w_{ij}` tiene unidad dimensionalmente coherente.
+
+La consistencia con ablación de modelo **no equivale** a la consistencia con `do` pearliano genuino: la primera es afirmación sobre la estructura del modelo que mejor predice; la segunda exige intervención sobre el sustrato.
 
 ### 4.4. Criterio de fallo
 
-Si una arista no resiste intervención (manipular `v_i` no cambia `v_j` de la manera predicha), se elimina o se reformula. La consistencia interna del grafo no basta: se exige consistencia con intervención.
+Si una arista no resiste intervención (donde la intervención es experimental cuando es accesible, y ablación de modelo bajo supuestos identificadores cuando no lo es), se elimina o se reformula. La consistencia interna del grafo no basta: se exige consistencia con intervención.
 
 ## 5. Operador 3: hipergrafo H
 
@@ -146,7 +148,7 @@ Una hiperarista es admisible si la dependencia conjunta no se reduce sin pérdid
 
 `κ` reduce dimensionalidad efectiva conservando la estructura relevante para Q. La operacionalización empírica detallada está en el capítulo 03-04. Aquí se fija el criterio:
 
-> κ(G) = G* es legítima respecto a Q si y solo si existe un sistema dinámico de baja dimensión sobre G* que (a) reproduce las trayectorias observadas dentro de τ, (b) preserva atractores, repulsores y bifurcaciones empíricamente identificadas, (c) predice respuestas a perturbaciones e intervenciones, (d) no oculta una transición que sí ocurre en los datos.
+> κ(G) = G* es legítima respecto a Q bajo el conjunto de evidencia vigente E si existe un sistema dinámico de baja dimensión sobre G* que (a) reproduce las trayectorias observadas dentro de τ, (b) preserva atractores, repulsores y bifurcaciones empíricamente identificadas en E, y (c) predice respuestas a perturbaciones e intervenciones discriminantes. La legitimidad es **revisable**: queda **retirada** si nuevos datos E' exhiben una transición no capturada por G*. La cláusula de retiro opera como criterio de fallo ex post (§6.4), no como requisito de admisión ex ante: certificar la completitud de la evidencia desde dentro de la evidencia es una versión local del *bootstrap problem* de Glymour (1980, *Theory and Evidence*).
 
 ### 6.4. Criterio de fallo
 
@@ -251,7 +253,11 @@ La diferencia con el caso ancla: aquí no hay datos experimentales con sistema c
 
 ### 12.1. Pearl — grafos causales y do-calculus
 
-Pearl (2009, *Causality*, 2.ª ed., cap. 3, p. 70) define el operador de intervención: *"the action `do(X = x)` represents an experiment in which the variable X is set to value x by an outside intervention, while the rest of the model remains unchanged"*. La tesis absorbe esta operación en `G` y `E` con dos restricciones: (a) los grafos representan dependencias del sistema acoplado, no causalidad lineal aislada; (b) la admisión de aristas exige `do`-test, no solo correlación. La métrica EDI es **operacionalización directa de un do-test**: ablación del acoplamiento ODE con preservación del forcing exógeno, comparada contra coupled completo.
+Pearl (2009, *Causality*, 2.ª ed., cap. 3, §3.2.1, p. 70) define la intervención atómica como *"placing it under the influence of a new mechanism that sets the value xi while keeping all other mechanisms unperturbed. Formally, this atomic intervention […] amounts to removing the equation xi = fi(pai, ui) from the model and substituting Xi = xi in the remaining equations"* (verificado contra `07-bibliografia/Pearl - Causality (2009).pdf`). La tesis absorbe esta operación en `G` y `E` con dos restricciones: (a) los grafos representan dependencias del sistema acoplado, no causalidad lineal aislada; (b) la admisión de aristas exige `do`-test cuando hay acceso experimental al sistema.
+
+La métrica EDI **no es un `do`-test pearliano sobre el sistema real**, excepto en el caso ancla VENLab, donde el dispositivo experimental permite manipulación exógena directa de los obstáculos y la meta. En los 29 casos observacionales restantes del corpus inter-dominio, EDI es una **ablación de modelo**: se apaga el término de acoplamiento ODE→ABM dentro del simulador híbrido y se mide la degradación predictiva. La inferencia de un EDI alto a una dependencia causal en el sistema real exige supuestos identificadores adicionales que la tesis declara como costo: (i) **fidelidad** del simulador al sistema, (ii) **modularidad** del acoplamiento (apagar el término ODE no rompe otros mecanismos no modelados), (iii) **ausencia de confounders** no incluidos. Lo que EDI sí establece sin estos supuestos es que el término ODE **no es decorativo en el modelo**: si fuera decorativo, su ablación no degradaría la predicción. La inferencia más fuerte —que esa dependencia se preserva en el sustrato físico— exige justificación adicional caso a caso, y se declara como deuda residual del cap 03 cuando no es defendible.
+
+La métrica preserva entonces su fuerza epistémica como filtro contra términos decorativos y como evidencia indirecta de dependencia bajo supuestos declarados; pierde la fuerza causal directa que el rótulo "EDI = do-test" sugería.
 
 ### 12.2. Ladyman y Ross — discrepancia con el realismo estructural óntico
 

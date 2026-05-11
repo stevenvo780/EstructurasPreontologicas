@@ -37,6 +37,8 @@ Una institución es atractor sostenido por:
 - financiamiento;
 - historia.
 
+Esta caracterización converge parcialmente con la tradición neoinstitucional. North (1990, *Institutions, Institutional Change and Economic Performance*, Cambridge UP, p. 3) define instituciones como *"the rules of the game in a society or, more formally, the humanly devised constraints that shape human interaction"*, y propone como prerrequisito metodológico la separación entre *institución* (las reglas) y *organización* (los jugadores que operan bajo esas reglas; cap. 1, pp. 4–5: *"A crucial distinction in this study is made between institutions and organizations […] Conceptually, what must be clearly differentiated are the rules from the players"*). La tesis recoge la distinción operativa pero la subordina a su esquema material-relacional: las "reglas" northianas se realizan como cuenca de atracción del sistema acoplado (cuerpos + documentos + sanciones + prácticas repetidas), no como entidad independiente del soporte que las inscribe. Esto preserva la utilidad analítica de la separación (separar el régimen normativo de los agentes que lo operan) sin importar el realismo de reglas como entidades discretas.
+
 ### 1.3. Variables candidatas
 
 - variables estructurales: organigrama, distribución de autoridad, recursos disponibles;
@@ -176,6 +178,14 @@ Bunge (1979, *Treatise on Basic Philosophy*, vol. 4, p. 4) define sistema como *
 
 La tesis se inscribe en esta tradición. Las instituciones son sistemas concretos con composición (cuerpos, documentos, infraestructura), entorno (otros sistemas, condiciones materiales), estructura (relaciones específicas) y mecanismo (procesos que producen el comportamiento agregado, en términos de Bunge 1997). Lo que la tesis añade al sistemismo bunguiano es el **criterio empírico operativo de cierre vía intervención ablativa**: no basta definir el sistema; hay que mostrar que su dinámica acoplada constriñe efectivamente la conducta de sus componentes en una forma medible. El sistemismo de Bunge es la matriz conceptual; el aparato EDI es la operacionalización.
 
+### 6.6. North — economía neoinstitucional
+
+North (1990, *Institutions, Institutional Change and Economic Performance*, Cambridge UP, cap. 1, p. 3) define instituciones como **restricciones humanamente diseñadas** que estructuran la interacción, y separa metodológicamente **reglas** (instituciones) y **jugadores** (organizaciones; pp. 4–5). En cap. 5 (*Informal constraints*, pp. 36–45) y cap. 6 (*Formal constraints*, pp. 46–53) descompone el régimen institucional en tres capas operacionalmente distinguibles: restricciones informales (convenciones, códigos de conducta), restricciones formales (reglas escritas, derecho positivo) y efectividad del *enforcement* (cap. 7, pp. 54–60).
+
+Es **el aliado más cercano del capítulo en la tradición económica**, complementario a Bourdieu en el lado sociológico. La traducción al aparato es directa: las tres capas northianas son tres dimensiones del estado del sistema institucional acoplado; la cuenca de atracción que la tesis postula como criterio de validez normativa es el **agregado dinámico** de las tres. Donde North se queda en *constraints* como restricciones del problema de elección racional, la tesis añade que las restricciones tienen **realidad efectiva como atractor** verificable por intervención ablativa.
+
+Fricción honesta declarada: North trata las reglas como entidades cuya existencia es independiente del soporte que las inscribe (un código permanece código aunque el archivo se queme y nadie recuerde su contenido); la tesis sostiene que sin soporte material y memoria operante el patrón normativo deja de existir. Esta es divergencia ontológica genuina, no malentendido. La tesis paga el costo: pierde el "realismo de reglas" típico del institucionalismo y debe sostener que toda norma vive en su sustrato.
+
 ## 7. Criterio de elevación a demostrativo
 
 Adoptar caso histórico-institucional con:
@@ -187,13 +197,19 @@ Adoptar caso histórico-institucional con:
 
 ### 7.1. Caso piloto candidato (deuda priorizada)
 
-Se selecciona como caso piloto, sin ejecutar en este manuscrito pero documentado para trabajo posterior, la **dinámica de adopción de medidas no farmacéuticas durante COVID-19** por estados nacionales. Justificación:
+Se selecciona como caso piloto, sin ejecutar en este manuscrito pero documentado para trabajo posterior, la **dinámica de adopción de medidas no farmacéuticas durante COVID-19** por estados nacionales (Oxford COVID-19 Government Response Tracker; Hale et al. 2021, *Nature Human Behaviour* 5:529–538, **referencia secundaria; PDF no auditado en `07-bibliografia/` — fetch pendiente**).
 
-- datos públicos disponibles (Oxford COVID-19 Government Response Tracker);
+El OxCGRT operacionaliza un índice ordinal de *stringency* (0–100) agregado por país y día desde indicadores de cierres, restricciones de movilidad y políticas sanitarias. **En la lectura northiana esto es exclusivamente la capa de *formal constraints*** (North 1990, cap. 6, pp. 46–53): reglas escritas con enforcement nominal. La adaptación EDI requiere demostrar que el índice ordinal de stringency es **insuficiente** para predecir el comportamiento agregado sin acoplar simultáneamente (i) restricciones informales (cumplimiento social, confianza institucional como proxy) y (ii) efectividad real de enforcement, y que **la cuenca dinámica completa** —no la regla aislada— es lo que retorna al cumplimiento bajo perturbación (la propia pandemia).
+
+El discriminante explícito frente a una lectura institucionalista pura es: para North, la stringency es la institución; para la tesis, la stringency es sólo la inscripción de la institución, y la institución vive en el sistema acoplado completo. La predicción contrastable es que países con stringency comparable pero distinta cuenca informal / enforcement mostrarán divergencias en EDI medibles, no derivables del índice ordinal. Si los datos OxCGRT no muestran esa divergencia entre stringency y cuenca completa, el caso refuta la utilidad institucional añadida de la tesis. Esto es deuda asumida, no debilidad.
+
+Justificación adicional del caso:
+
+- datos públicos disponibles (OxCGRT);
 - una cuenca de atracción institucional (régimen de cumplimiento) sometida a perturbación discreta y observable (la propia pandemia);
 - bifurcaciones identificables (transiciones de régimen restrictivo a permisivo y viceversa);
 - comparabilidad inter-país que permite definir variabilidad de la cuenca (legitimidad como anchura de la cuenca);
-- precedentes en la literatura cuantitativa: Hale et al. (2021, *Nature Human Behaviour* 5: 529–538) construyen el OxCGRT como panel global con un índice compuesto de stringency (0–100) agregado diariamente por país a partir de indicadores ordinales sobre cierres, restricciones de movilidad y políticas sanitarias; ese formato ordinal-temporal por país es precisamente lo que la adaptación del aparato EDI a series institucionales debería poder ingerir (engagement con el diseño del dataset, no con el argumento sustantivo del paper, que se cita como fuente secundaria al no haber sido auditado contra el PDF en `07-bibliografia/`); Cheng et al. (2020) ofrece tipología complementaria de respuestas estatales.
+- Cheng et al. (2020) ofrece tipología complementaria de respuestas estatales.
 
 La elevación de este caso piloto exige adaptación específica del aparato EDI a series institucionales con variables ordinales (índices de stringency) en lugar de variables continuas. Se documenta como deuda alta en `Bitacora/2026-04-28-cierre-doctoral/` y en la hoja de ruta `06-cierre/03-hoja-de-ruta-para-tesis-final.md`.
 

@@ -2,11 +2,11 @@
 
 ## Tesis del capítulo
 
-> La tesis se discrimina de catorce rivales filosófica y empíricamente identificables en al menos dos criterios cada uno. La novedad no es de inventario sino de articulación: **dossier de anclaje + asimetría L1↔B↔L3↔S + cartografía multidominio bajo EDI con controles de falsación rechazados**. Este capítulo confronta cada rival discursivamente; la matriz síntesis 14×6 (criterios A-F) y la ficha breve por rival están en `04-debates/03-tabla-comparativa-rivales.md`. Los desarrollos extensos con citas primarias paginadas viven en `04-debates/_extendido/rival-<X>.md` y se cargan bajo demanda desde la capa web.
+> La tesis se discrimina de quince rivales filosófica y empíricamente identificables en al menos dos criterios cada uno. La novedad no es de inventario sino de articulación: **dossier de anclaje + asimetría L1↔B↔L3↔S + cartografía multidominio bajo EDI con controles de falsación rechazados**. Este capítulo confronta cada rival discursivamente; la matriz síntesis 15×6 (criterios A-F) y la ficha breve por rival están en `04-debates/03-tabla-comparativa-rivales.md`. Los desarrollos extensos con citas primarias paginadas viven en `04-debates/_extendido/rival-<X>.md` y se cargan bajo demanda desde la capa web.
 
 ## 1. Marco general de la confrontación
 
-Cada rival se evalúa contra la tesis bajo los criterios **A** (anclaje material sin reducción a partículas), **B** (multiescalaridad operativa), **C** (admisión empírica vía dossier de catorce componentes), **D** (traducibilidad asimétrica L1↔B↔L3↔S), **E** (ventaja predictiva discriminante en el caso ancla canónico) y **F** (alcance generalizable). Las definiciones completas y la tabla síntesis 14×6 están en `04-debates/03-tabla-comparativa-rivales.md` §"Criterios de discriminación" y §"Tabla síntesis". Este capítulo asume esa matriz como dado y desarrolla la confrontación discursiva donde la prosa tiene valor argumentativo que la tabla no captura.
+Cada rival se evalúa contra la tesis bajo los criterios **A** (anclaje material sin reducción a partículas), **B** (multiescalaridad operativa), **C** (admisión empírica vía dossier de catorce componentes), **D** (traducibilidad asimétrica L1↔B↔L3↔S), **E** (ventaja predictiva discriminante en el caso ancla canónico) y **F** (alcance generalizable). Las definiciones completas y la tabla síntesis 15×6 están en `04-debates/03-tabla-comparativa-rivales.md` §"Criterios de discriminación" y §"Tabla síntesis". Este capítulo asume esa matriz como dado y desarrolla la confrontación discursiva donde la prosa tiene valor argumentativo que la tabla no captura.
 
 ## 2. Rivales con discriminación tabular suficiente
 
@@ -98,9 +98,28 @@ La objeción específica de Glennan (2017, *The New Mechanical Philosophy*) sobr
 
 **Reconocimiento:** el mecanicismo multinivel es el aliado teórico principal de este capítulo. La tesis se entiende mejor como **mecanicismo multinivel disciplinado por dossier de anclaje y asimetría L1↔B↔L3↔S**. Citas extendidas en `04-debates/_extendido/rival-mecanicismo-multinivel.md`.
 
+### 3.7. IIT (Integrated Information Theory) — Tononi y colaboradores
+
+La IIT formaliza la consciencia como un máximo local de **integrated information** (Φ) intrínseco al sustrato físico. En palabras de Tononi, Boly, Massimini y Koch (2016, *Nature Reviews Neuroscience* 17(7):450–461, p. 450 — verificado contra PDF local en `07-bibliografia/Tononi - Integrated Information Theory (2016).pdf`):
+
+> "Integrated information theory […] argues that the physical substrate of consciousness must be a maximum of intrinsic cause–effect power and provides a means to determine, in principle, the quality and quantity of experience."
+
+La operacionalización IIT 3.0 (Oizumi, Albantakis y Tononi 2014, *PLoS Computational Biology* 10(5):e1003588 — PDF disponible) detalla el procedimiento de cómputo de Φ sobre redes de elementos discretos.
+
+IIT comparte con esta tesis: (i) la apuesta por una métrica computable definida sobre estructura de dependencias; (ii) el rechazo del reduccionismo plano; (iii) la pretensión de operar sobre el sustrato material sin colapsarse en él. IIT se separa de esta tesis en cuatro puntos auditables:
+
+1. **Dominio.** IIT está específicamente diseñada para consciencia. EDI es multidominio (40 casos en física, biología, economía, política, tecnología, conducta humana). Donde IIT opera, EDI también opera (caso 02); donde EDI opera en física macro o cosmología, IIT no.
+2. **Escala.** IIT define Φ sobre una escala maximizante única (la escala que maximiza el corte mínimo de información integrada). EDI opera con asimetría L1↔B↔L3↔S explícita y multiescalaridad operativa.
+3. **Tratabilidad.** Φ es computacionalmente intratable a partir de ~10–12 nodos (complejidad exponencial en el número de subconjuntos, cf. Oizumi et al. 2014). EDI es escalable a cientos o miles de unidades vía ABM+ODE acoplado.
+4. **Anclaje empírico.** EDI exige dossier de catorce componentes + filtro EDI con permutación 999 + bootstrap 500. IIT exige Φ > 0; los proxies prácticos (PCI de Massimini et al.) operan en un régimen experimental distinto y no satisfacen el dossier completo.
+
+**Cláusula de absorción.** Si Φ se vuelve tratable a escala arbitraria y se publican mediciones de Φ que discriminen entre el corpus EDI con `p_perm < 0.05` y los controles de falsación, esta tesis admite que IIT subsume el caso 02 con métrica superior. Hasta entonces, IIT y EDI coexisten como métricas complementarias en dominios distintos (IIT en consciencia, EDI en consciencia y catorce dominios más).
+
+**Posicionamiento sobre el caso 02 (consciencia).** La tesis no afirma haber resuelto el problema duro de Chalmers. El EDI reportado para el caso 02 es coherencia operativa de la sonda macro y no compite con Φ en su pretensión axiomática; queda como deuda residual la confrontación detallada EDI vs Φ sobre el mismo dataset.
+
 ## 4. Lectura cruzada
 
-- Tabla síntesis 14×6 + ficha breve por rival: `04-debates/03-tabla-comparativa-rivales.md`.
+- Tabla síntesis 15×6 + ficha breve por rival: `04-debates/03-tabla-comparativa-rivales.md`.
 - Anticipación de objeciones filosóficas (F1-F10, distinto de discriminación rival): `04-debates/04-anticipacion-objeciones-filosoficas.md`.
 - Limitaciones declaradas con plazos y entregables: `04-debates/05-limitaciones-declaradas-consolidacion.md`.
 - Postura argumentativa sobre régimen de validez (riesgos heredados, diálogo con interlocutores, filtro de objeciones futuras): `04-debates/02-limitaciones-y-puntos-de-presion.md`.
