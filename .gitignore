@@ -54,6 +54,12 @@ web_react/dist/
 .cache_harness/
 harness/reports/
 harness/state.json
+harness/state/
 harness/__pycache__/
 harness/**/__pycache__/
 harness/**/*.pyc
+
+# Logs y residuos del daemon viejo (deprecado 2026-05-11)
+Bitacora/*-continuous-run/daemon.log
+Bitacora/*-continuous-run/daemon.out
+Bitacora/*-continuous-run/workers/

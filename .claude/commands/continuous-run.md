@@ -1,5 +1,5 @@
 ---
-description: "Modo continuo del harness — daemon paralelo de N horas reales que sobrevive al cierre de la sesión Claude Code. Uso: `/continuous-run 80` o `/continuous-run 150 6`."
+description: "Inicia el modo continuo INTERACTIVO del harness — tú (este Claude) orquestas sub-agentes vía el Agent tool dentro de esta sesión. NO spawnea `claude -p`. Uso: `/continuous-run [horas]` (default: hasta que el usuario detenga)."
 allowed-tools:
   - Bash
   - Read
@@ -7,91 +7,71 @@ allowed-tools:
   - Write
   - Grep
   - Glob
+  - Agent
+  - TaskCreate
+  - TaskUpdate
+  - TaskList
+  - ScheduleWakeup
 ---
 
-# Modo continuo del harness (daemon paralelo)
+# Modo continuo del harness (orquestación interactiva)
 
-Sesión auto-orquestada de N horas reales. **Vive como proceso `nohup` independiente de la sesión Claude Code interactiva** — si cierras la terminal o se cae la sesión, el daemon sigue trabajando hasta que se le acaben las horas o lo detengas explícitamente. Lanza hasta K workers en paralelo (`subprocess.Popen` + `claude -p` headless), uno por tarea, con presupuesto cap por worker (`--max-budget-usd 0.50 --max-turns 30`). Cuando la cola de tareas baja de un umbral, **regenera tareas automáticamente** desde la salida de los verificadores (`citation_pagination`, `decorative_citations`).
+**Política (2026-05-11):** el modo continuo se ejecuta **dentro de esta sesión Claude Code**, NO como daemon `nohup` que spawnea `claude -p` headless.
 
-## Cómo activarlo (lo que debes ejecutar como Bash)
+Razón: los workers `claude -p` independientes pierden contexto, no se ven entre sí y producen archivos descoordinados en el repo (ver `Bitacora/2026-05-04-continuous-run/README.md` para evidencia del problema con el daemon viejo). La orquestación correcta es:
 
-Argumentos del slash command: `$ARGUMENTS` ≈ `<horas> [parallel]`. Default: 80h, 4 workers.
+- **Tú (este Claude)** mantienes el plan en memoria y la `TaskList`.
+- **Sub-agentes** se invocan vía el `Agent` tool (`.claude/agents/*.md`) — heredan tu contexto y devuelven su resultado a tu hilo, no escriben a oscuras.
+- **Verificadores deterministas** se invocan vía `Bash` directo (sin LLM).
 
-```bash
-# Lanzar daemon (sobrevive cierre de terminal)
-bash harness/scripts/run_daemon.sh $ARGUMENTS
-```
+## Flujo de activación
 
-El launcher hace tres cosas:
-1. Si no existe sesión continua, llama a `continuous start --hours N`.
-2. Llama a `continuous replenish` para generar tareas reales desde los verificadores (~20-200 tareas según hits actuales).
-3. Lanza `continuous daemon --hours N --parallel K` con `nohup` y guarda el PID en `harness/state/daemon.pid`.
+Argumento opcional del slash: `$ARGUMENTS` = horas estimadas (sólo informativo; no es un deadline duro).
 
-Tras lanzarlo, reporta al usuario:
-- el PID del daemon,
-- el archivo de log (`Bitacora/<fecha>-continuous-run/daemon.log`),
-- el comando para detenerlo (`bash harness/scripts/stop_daemon.sh`),
-- el comando para ver progreso (`python3 harness/cli.py continuous status`).
-
-## Comandos auxiliares
+### 1. Cargar estado y arrancar/reanudar sesión continua
 
 ```bash
-# Status sin avanzar (puedes correrlo aunque el daemon esté en marcha)
-python3 harness/cli.py continuous status
-
-# Tail del log
-tail -f Bitacora/$(date +%F)-continuous-run/daemon.log
-
-# Logs por worker individual
-ls -lt Bitacora/$(date +%F)-continuous-run/workers/
-
-# Detener (drena workers en vuelo, espera 120s y SIGKILL si persiste)
-bash harness/scripts/stop_daemon.sh
-
-# Forzar regeneración manual del plan desde verificadores
-python3 harness/cli.py continuous replenish --max-new 500
+# Si no existe state, iniciar (horas es target informativo)
+python3 harness/cli.py continuous status 2>/dev/null || \
+  python3 harness/cli.py continuous start --hours ${ARGUMENTS:-24} --resume
 ```
 
-## Qué hace cada worker
+### 2. Reabastecer cola desde verificadores
 
-Cada tarea claimed se despacha a un subprocess:
+```bash
+python3 harness/cli.py continuous replenish --max-new 200
+```
 
-| `action.kind` | proceso | flags |
-|---|---|---|
-| `engagement` | `claude -p` headless | `--permission-mode bypassPermissions --max-turns 120 --max-budget-usd 5.00 --model opus` |
-| `audit` | `claude -p` headless | idem; output a `Bitacora/.../<task_id>.md` |
-| `shell` | `bash -c <cmd>` directo | sin Claude |
-| `verifier` | `python3 harness/verifiers/<...>.py` | sin Claude |
+Esto regenera tareas frescas a partir de los hits de los verificadores (`citation_pagination`, `decorative_citations`, `debt_index`, `self_indulgence`, `consistency_doc_config`).
 
-El daemon parsea la última línea `RESULT: <complete\|fail> | <task_id> | <resumen>` del log del worker para marcar el resultado. Si el worker termina con `rc != 0`, se marca `failed`.
+### 3. Iterar
 
-## Restricciones duras (no negociables)
+Para cada iteración invocar `/continuous-run-tick`. Si el usuario quiere autoritmado, sugerir `/loop /continuous-run-tick`.
 
-- **Hooks PreToolUse + deny rules son la barrera real:** los workers corren con `--permission-mode bypassPermissions` (única forma de evitar que se cuelguen pidiendo confirmación en headless con stdin cerrado). La protección NO desaparece — sigue aplicada por:
-  - `deny` rules en `.claude/settings.json` (`Edit/Write` a `TesisFinal/Tesis.md` y `**/outputs/metrics.json`).
-  - hooks `PreToolUse` que devuelven `permissionDecision: deny` (`block_metrics_edit`, `block_tesis_md_edit`, `block_destructive_git`, `protect_main_push`).
-  - Estos siguen efectivos bajo `bypassPermissions`. `bypassPermissions` sólo elimina los prompts interactivos, NO las barreras de seguridad declaradas.
-- **Timeout duro por worker**: `HARNESS_WORKER_TIMEOUT_S` (default 1800s = 30 min). Si un worker se cuelga por cualquier razón, el daemon lo mata (SIGTERM→SIGKILL) y reclama la siguiente tarea. **El daemon NUNCA se para por un worker individual.**
-- **No se cierran tareas H-J\***: si una tarea genera un cambio filosófico sustantivo, debe marcarse `BORRADOR-IA` con `requires: H-J*` y dejar la firma a Jacob.
-- **Cada cita inyectada DEBE ser verbatim** contra PDF. Si no hay PDF, reformulación secundaria declarada (CLAUDE.md §5).
-- **Coste cap por worker**: `--max-budget-usd 5.00` por subprocess (override con env `HARNESS_MAX_BUDGET_USD`).
+### 4. Detener
 
-## Variables de entorno
+El usuario detiene escribiendo "detén el modo continuo" o cerrando la sesión. NO hay daemon detrás que siga corriendo: cerrar la sesión cierra el modo continuo. Para marcarlo explícito:
 
-| Var | Default | Efecto |
-|---|---|---|
-| `HARNESS_MAX_TURNS` | 120 | Máximo de turnos por worker Claude |
-| `HARNESS_MAX_BUDGET_USD` | 5.00 | Cap de coste por worker |
-| `HARNESS_WORKER_MODEL` | opus | Modelo del worker (opus/sonnet/haiku) |
-| `HARNESS_WORKER_TIMEOUT_S` | 1800 | Timeout duro por worker (SIGTERM→SIGKILL) |
-| `CLAUDE_BIN` | claude | Binario de Claude Code |
+```bash
+python3 harness/cli.py continuous stop
+```
 
-## Diferencia con el modo `/loop /continuous-run-tick` anterior
+## Lo que el modo continuo NO hace
 
-El modo `/loop` antiguo dependía de que la sesión Claude Code interactiva siguiera viva entre wakeups, lo cual no se cumplía en sesiones de 80+ horas. El daemon nuevo:
+- **NO** lanza `bash harness/scripts/run_daemon.sh` — está neutralizado.
+- **NO** invoca `python3 harness/cli.py continuous daemon ...` — devuelve error de deprecación.
+- **NO** spawnea `claude -p` directa ni indirectamente (hay un hook `block_claude_headless` que bloquea cualquier `Bash` que contenga `claude -p` o `claude --print`).
+- **NO** edita `TesisFinal/Tesis.md` ni `**/outputs/metrics.json` (hooks bloquean).
+- **NO** cierra tareas `H-J*` (firma humana).
 
-- vive en su propio proceso (no requiere sesión interactiva),
-- ejecuta paralelismo real con `subprocess.Popen` (no espera al modelo principal),
-- regenera tareas desde verificadores automáticamente (no se queda sin trabajo a los 20 minutos),
-- tiene presupuesto y límites de turnos por worker (no hay runaway de costes),
-- escribe logs por worker auditables a posteriori.
+## Antipatrones detectados (no repetir)
+
+El daemon viejo (2026-05-04→05) lanzaba 4-12 workers `claude -p` en paralelo sin que ninguno viera lo que los otros estaban editando. Resultado: 79 archivos generados en `Bitacora/2026-05-04-continuous-run/` por workers ciegos entre sí. Si en una pasada futura alguien sugiere "relanzar el daemon" o "spawnear claude -p en background", responde **no**, y apunta a este archivo.
+
+## Diferencia con sesiones largas reales
+
+Si el usuario pide "déjalo corriendo 80 horas y vete", la respuesta honesta es: **no es posible sin sacrificar orquestación**. Las opciones son:
+
+1. **Sesión interactiva larga**: el usuario deja la terminal abierta, `/loop /continuous-run-tick` autoritma iteraciones, y tú mantienes el contexto. Si la sesión se cae, el state en `harness/state/continuous_run.json` permite reanudar manualmente.
+2. **Tickets discretos**: el usuario corre `/continuous-run-tick` N veces a mano. Más control, menos automatización.
+3. **Solo verificadores deterministas**: `python3 harness/cli.py pass` o `verify --all` corren sin LLM en segundos y producen reporte JSON — eso sí puede ir en cron sin daemon Claude.

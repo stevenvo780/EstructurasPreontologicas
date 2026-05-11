@@ -18,6 +18,9 @@ Comandos `/<name>` invocables desde el chat de Claude Code en este workspace.
 | `/adversarial <file:line> "<claim>"` | Red-team contra una afirmación | `@adversarial-reviewer` |
 | `/process-verify <archivo>` | Verificar argumento paso por paso | `@process-verifier` |
 | `/fetch-biblio <autor> [tema]` | Recuperar paper externo vía MCP | `@bibliography-fetcher` |
+| `/continuous-run [horas]` | Inicia modo continuo (orquestación interactiva) | sub-agentes vía `Agent` tool |
+| `/continuous-run-tick` | Una iteración del modo continuo | `Agent` tool con `run_in_background=true` |
+| `/daemon-watch` | Inspección read-only del state continuo y residuos | (ninguno) |
 
 ## Convención
 

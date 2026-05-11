@@ -1,5 +1,5 @@
 ---
-description: "Avanza una iteración del modo continuo CON PARALELISMO real (hasta N sub-agentes en background simultáneos). Invocar desde `/loop /continuous-run-tick`."
+description: "Avanza UNA iteración del modo continuo del harness. Lanza hasta N sub-agentes en paralelo VÍA EL AGENT TOOL (en esta sesión, contexto compartido). No spawnea `claude -p`. Invocable suelto o desde `/loop /continuous-run-tick`."
 allowed-tools:
   - Bash
   - Read
@@ -11,9 +11,17 @@ allowed-tools:
   - ScheduleWakeup
 ---
 
-# Tick del modo continuo (paralelo)
+# Tick del modo continuo (orquestación interactiva)
 
-Una iteración del modo continuo. **Cada tick mantiene hasta MAX_PARALLEL=4 sub-agentes trabajando en background simultáneamente**, llenando huecos a medida que terminan. Diseñado para `/loop /continuous-run-tick`.
+Una iteración del modo continuo. **MODO CANÓNICO** (2026-05-11): tú (este Claude) orquestas hasta `MAX_PARALLEL=4` sub-agentes en background simultáneamente **vía el `Agent` tool**. NO se spawnean instancias `claude -p` headless — eso es la arquitectura vieja del daemon, neutralizada.
+
+Cada sub-agente que lances:
+- Recibe contexto explícito en el prompt (task_id, archivo, autor, estrategia).
+- Hereda los hooks de la sesión (no puede editar `Tesis.md` ni `metrics.json`).
+- Devuelve su resultado a TU hilo (tú lo ves, no escribe a oscuras).
+- Está enumerado en `.claude/agents/` (citation-agent, philosophical-reader, etc.).
+
+Diseñado para `/loop /continuous-run-tick` (autoritmado) o invocación suelta.
 
 ## Flujo del tick
 

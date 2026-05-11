@@ -242,11 +242,16 @@ def cmd_continuous(args):
         cont.save_state(state)
         print(f"[continuous] +{added} tareas generadas desde verificadores")
     elif sub == "daemon":
-        from harness.lib import daemon
-        daemon.run_daemon(args.hours, parallel=args.parallel,
-                          dry_run=args.dry_run,
-                          replenish_threshold=args.replenish_threshold,
-                          poll_seconds=args.poll_seconds)
+        print(
+            "[continuous] sub-comando `daemon` DEPRECADO Y NEUTRALIZADO (2026-05-11).\n"
+            "  Razón: spawneaba `claude -p` headless sin orquestación.\n"
+            "  Uso correcto:\n"
+            "    /continuous-run              → orquestación interactiva (Agent tool)\n"
+            "    /continuous-run-tick         → una iteración\n"
+            "    /loop /continuous-run-tick   → loop autoritmado\n",
+            file=sys.stderr,
+        )
+        sys.exit(2)
     else:
         print(f"sub-comando desconocido: {sub}", file=sys.stderr); sys.exit(2)
 
@@ -312,17 +317,18 @@ def main():
     p_cr = csub.add_parser("replenish",
                            help="Genera tareas frescas desde verificadores y las añade al state")
     p_cr.add_argument("--max-new", type=int, default=200)
+    # Sub-comando `daemon` DEPRECADO Y NEUTRALIZADO (2026-05-11).
+    # Conservamos el parser para que `continuous daemon ...` produzca un
+    # error claro en lugar de "sub-comando desconocido". Spawneaba
+    # `claude -p` headless sin orquestación; ahora la iteración va por el
+    # Agent tool dentro de la sesión interactiva.
     p_cd = csub.add_parser("daemon",
-                           help="Lanza daemon paralelo (subprocess.Popen + claude -p) — "
-                                "modo recomendado para sesiones de 80-150 h.")
-    p_cd.add_argument("--hours", type=float, required=True)
-    p_cd.add_argument("--parallel", type=int, default=4,
-                      help="Workers en paralelo (default 4)")
-    p_cd.add_argument("--dry-run", action="store_true",
-                      help="No spawnea claude; sólo reporta qué haría")
-    p_cd.add_argument("--replenish-threshold", type=int, default=2,
-                      help="Si pending ≤ N, regenerar plan desde verificadores")
-    p_cd.add_argument("--poll-seconds", type=float, default=5.0)
+                           help="DEPRECADO (2026-05-11). Usa /continuous-run o /continuous-run-tick.")
+    p_cd.add_argument("--hours", type=float, default=0)
+    p_cd.add_argument("--parallel", type=int, default=0)
+    p_cd.add_argument("--dry-run", action="store_true")
+    p_cd.add_argument("--replenish-threshold", type=int, default=0)
+    p_cd.add_argument("--poll-seconds", type=float, default=0.0)
 
     args = ap.parse_args()
     args.func(args)

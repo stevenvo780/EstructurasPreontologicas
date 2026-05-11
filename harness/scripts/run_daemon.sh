@@ -1,71 +1,37 @@
 #!/usr/bin/env bash
-# Launcher del daemon de modo continuo.
+# DEPRECADO Y NEUTRALIZADO (2026-05-11)
 #
-# Uso:
-#   harness/scripts/run_daemon.sh <horas> [parallel]
+# Este launcher arrancaba un daemon que spawneaba `claude -p` en paralelo.
+# Esa arquitectura producía instancias Claude independientes, sin contexto
+# compartido y sin orquestación. La política actual usa el `Agent` tool dentro
+# de la sesión interactiva (un único contexto orquestador).
 #
-# Ejemplos:
-#   harness/scripts/run_daemon.sh 80         # 80h, 4 workers
-#   harness/scripts/run_daemon.sh 150 6      # 150h, 6 workers paralelos
+# Uso correcto:
+#   /continuous-run          → orquestación interactiva (este Claude orquesta)
+#   /continuous-run-tick     → una iteración (Agent tool)
+#   /loop /continuous-run-tick → loop autoritmado, también vía Agent tool
 #
-# Sobrevive cierre de terminal (nohup), survives Claude Code session crash.
-# Stop:  kill $(cat harness/state/daemon.pid)
-# Logs:  Bitacora/<fecha>-continuous-run/daemon.log
-# Outs:  harness/state/daemon.out (stdout/stderr crudos)
+# Para verificadores deterministas (sin LLM):
+#   python3 harness/cli.py verify --all
+#   python3 harness/cli.py pass
+#
+# El código original está en git history (commit anterior a 2026-05-11).
 
-set -euo pipefail
+cat >&2 <<'EOF'
+[run_daemon] DEPRECADO Y NEUTRALIZADO (2026-05-11).
 
-HOURS="${1:-80}"
-PARALLEL="${2:-4}"
-REPO="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
-cd "$REPO"
+Razón: spawneaba `claude -p` headless sin orquestación.
+       Producía outputs IA descoordinados (79 archivos en
+       Bitacora/2026-05-04-continuous-run/ son la evidencia).
 
-mkdir -p harness/state
-PIDFILE="harness/state/daemon.pid"
+Uso correcto:
+  /continuous-run                  → orquestación interactiva
+  /continuous-run-tick             → una iteración (Agent tool)
+  /loop /continuous-run-tick       → loop autoritmado
+  python3 harness/cli.py verify --all  → verificadores deterministas
 
-if [[ -f "$PIDFILE" ]]; then
-  OLD_PID=$(cat "$PIDFILE")
-  if kill -0 "$OLD_PID" 2>/dev/null; then
-    echo "[run_daemon] daemon ya activo (pid=$OLD_PID). Detenlo primero:"
-    echo "    kill $OLD_PID"
-    exit 1
-  else
-    echo "[run_daemon] pidfile huérfano — limpiando"
-    rm -f "$PIDFILE"
-  fi
-fi
+Para recuperar el script viejo:
+  git log --all -- harness/scripts/run_daemon.sh
 
-# Si no hay sesión continua activa, iniciarla
-if [[ ! -f harness/state/continuous_run.json ]]; then
-  /usr/bin/python3 harness/cli.py continuous start --hours "$HOURS"
-fi
-
-# Replenish inicial: tareas frescas desde verificadores
-/usr/bin/python3 harness/cli.py continuous replenish --max-new 200 || true
-
-OUT="harness/state/daemon.out"
-echo "[run_daemon] arrancando daemon: hours=$HOURS parallel=$PARALLEL"
-echo "[run_daemon] stdout/stderr → $OUT"
-echo "[run_daemon] log estructurado → Bitacora/$(date +%F)-continuous-run/daemon.log"
-
-nohup /usr/bin/python3 harness/cli.py continuous daemon \
-      --hours "$HOURS" \
-      --parallel "$PARALLEL" \
-      --replenish-threshold 2 \
-      --poll-seconds 5 \
-      > "$OUT" 2>&1 &
-
-DPID=$!
-echo "$DPID" > "$PIDFILE"
-disown
-sleep 1
-
-if kill -0 "$DPID" 2>/dev/null; then
-  echo "[run_daemon] OK — pid=$DPID. Para detener:  kill $DPID"
-  echo "[run_daemon] Status:   python3 harness/cli.py continuous status"
-  echo "[run_daemon] Tail log: tail -f Bitacora/$(date +%F)-continuous-run/daemon.log"
-else
-  echo "[run_daemon] FALLO — el daemon no quedó vivo. Revisa $OUT" >&2
-  rm -f "$PIDFILE"
-  exit 2
-fi
+EOF
+exit 2

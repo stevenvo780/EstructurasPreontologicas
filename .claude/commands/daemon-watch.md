@@ -1,54 +1,55 @@
 ---
-description: "Mira qué hace el daemon de modo continuo en este momento — status compacto, últimas N líneas del log, y workers vivos. Read-only."
+description: "Inspección rápida del estado del modo continuo del harness (sesión interactiva). Reporta state, último log, y detecta procesos `claude -p` huérfanos del daemon viejo. Read-only."
 allowed-tools:
   - Bash
   - Read
 ---
 
-# Watch del daemon de modo continuo
+# Watch del modo continuo
 
-Inspección rápida de un daemon `harness/scripts/run_daemon.sh` en marcha. No modifica nada, no detiene nada — solo reporta.
+Inspección rápida y read-only del estado del modo continuo. **Importante (2026-05-11):** el daemon paralelo viejo (`claude -p` headless) está neutralizado. El modo continuo correcto vive **dentro de esta sesión Claude Code** — orquestación vía `Agent` tool. Este comando reporta tanto el state legítimo como cualquier residuo del daemon viejo (pidfile huérfano, procesos `claude -p` rezagados).
 
 ## Pasos a ejecutar
 
-Ejecutar **en este orden** y reportar al usuario un resumen humano (no volcar logs crudos enteros):
-
 ```bash
-# 1. ¿Vive el daemon?
-PID=$(cat harness/state/daemon.pid 2>/dev/null || echo "")
-if [[ -n "$PID" ]] && kill -0 "$PID" 2>/dev/null; then
-  echo "DAEMON: vivo pid=$PID"
-  ps -o pid,etime,pcpu,pmem,cmd -p "$PID"
-else
-  echo "DAEMON: NO ACTIVO (no hay pidfile o pid muerto)"
+# 1. ¿Hay residuos del daemon viejo?
+PIDFILE="harness/state/daemon.pid"
+if [[ -f "$PIDFILE" ]]; then
+  OLD_PID=$(cat "$PIDFILE")
+  if kill -0 "$OLD_PID" 2>/dev/null; then
+    echo "AVISO: PID $OLD_PID vive según pidfile. El daemon está neutralizado;"
+    echo "       investiga qué es ese proceso y, si es realmente el daemon viejo,"
+    echo "       detenlo con: bash harness/scripts/stop_daemon.sh"
+    ps -o pid,etime,pcpu,pmem,cmd -p "$OLD_PID"
+  else
+    echo "pidfile huérfano (pid=$OLD_PID muerto). Limpia con: rm $PIDFILE"
+  fi
 fi
 
-# 2. Status del state
-python3 harness/cli.py continuous status | head -25
+# 2. Procesos `claude -p` huérfanos (no deberían existir bajo la nueva política)
+ORPH=$(pgrep -fa "claude -p" 2>/dev/null | grep -v "$$" || true)
+if [[ -n "$ORPH" ]]; then
+  echo "AVISO: procesos `claude -p` activos (la política los prohíbe):"
+  echo "$ORPH"
+fi
 
-# 3. Últimas 30 líneas del log estructurado
+# 3. State de la sesión continua
+python3 harness/cli.py continuous status 2>/dev/null | head -25 || \
+  echo "(no hay sesión continua activa)"
+
+# 4. Últimas 30 líneas del log si existe
 LOG="Bitacora/$(date +%F)-continuous-run/daemon.log"
-echo "--- tail $LOG ---"
-tail -30 "$LOG" 2>/dev/null || echo "(sin log hoy)"
-
-# 4. Workers Claude vivos (subprocesos hijos del daemon)
-if [[ -n "$PID" ]] && kill -0 "$PID" 2>/dev/null; then
-  echo "--- workers vivos ---"
-  pgrep -P "$PID" -a 2>/dev/null | head -20 || echo "(sin hijos)"
+if [[ -f "$LOG" ]]; then
+  echo "--- tail $LOG ---"
+  tail -30 "$LOG"
 fi
-
-# 5. Logs de worker más recientes
-echo "--- últimos 5 logs de worker ---"
-ls -lt Bitacora/$(date +%F)-continuous-run/workers/*.log 2>/dev/null | head -5
 ```
 
 ## Reporte al usuario
 
 Sintetizar en ≤8 líneas:
-- daemon vivo/muerto, pid, tiempo desde arranque
-- pending / in_progress / done / failed (de `continuous status`)
-- última actividad significativa del log (último spawn, último complete/fail)
-- N workers Claude actualmente corriendo
-- si `failed` >> `done`, advertir y sugerir leer un worker.log concreto
-
-Si el daemon está muerto pero hay pidfile, sugerir `bash harness/scripts/stop_daemon.sh` para limpiar y relanzar.
+- residuos del daemon viejo (pidfile vivo / huérfano / ninguno)
+- procesos `claude -p` rezagados (debería ser cero)
+- pending / in_progress / done / failed del state continuo
+- última actividad del log estructurado (si existe)
+- si hay residuos, sugerir limpiar antes de continuar

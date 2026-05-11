@@ -74,6 +74,10 @@
           {
             "type": "command",
             "command": ".claude/hooks/protect_main_push.sh"
+          },
+          {
+            "type": "command",
+            "command": ".claude/hooks/block_claude_headless.sh"
           }
         ]
       }
