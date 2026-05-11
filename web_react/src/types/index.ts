@@ -92,6 +92,7 @@ export interface Chapter {
   title: string;
   description?: string;
   docs: { title: string; path: string; size?: number }[];
+  extras?: ChapterExtraSummary[];
 }
 
 export interface ChapterDetail {
@@ -100,6 +101,7 @@ export interface ChapterDetail {
   title: string;
   description?: string;
   docs: ChapterDoc[];
+  extras?: ChapterExtraSummary[];
 }
 
 export interface ChapterDoc {
@@ -107,6 +109,27 @@ export interface ChapterDoc {
   path: string;
   html: string;
   toc?: TocItem[];
+}
+
+export interface ChapterExtraSummary {
+  name: string;
+  title: string;
+  extends?: string | null;
+  mtime?: number;
+}
+
+export interface ChapterExtrasResponse {
+  slug: string;
+  extras: ChapterExtraSummary[];
+}
+
+export interface ChapterExtraContent {
+  name: string;
+  title: string;
+  extends?: string | null;
+  html: string;
+  toc?: TocItem[];
+  mtime?: number;
 }
 
 export interface TocItem {

@@ -5,6 +5,7 @@ import { useState } from 'react';
 import { api } from '../lib/api';
 import { PageLoading, ErrorBox } from '../components/Loading';
 import HtmlContent from '../components/HtmlContent';
+import ChapterExtras from '../components/ChapterExtras';
 import { cn } from '../lib/cn';
 
 export default function ChapterDetail() {
@@ -118,6 +119,8 @@ export default function ChapterDetail() {
               <p className="text-sm text-ink-500">Selecciona un documento</p>
             )}
           </div>
+
+          <ChapterExtras slug={slug} />
         </article>
       </div>
     </div>

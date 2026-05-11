@@ -22,6 +22,14 @@ export const api = {
   chapter: (slug: string) =>
     request<import('../types').ChapterDetail>(`/api/chapters/${slug}`),
   thesis: () => request<import('../types').ThesisData>('/api/thesis'),
+  chapterExtras: (slug: string) =>
+    request<import('../types').ChapterExtrasResponse>(
+      `/api/chapters/${slug}/extras`
+    ),
+  chapterExtra: (slug: string, name: string) =>
+    request<import('../types').ChapterExtraContent>(
+      `/api/chapters/${slug}/extras/${name}`
+    ),
   runST: () =>
     request<{ success: boolean; log: string; html: string }>('/api/run-st', {
       method: 'POST',
