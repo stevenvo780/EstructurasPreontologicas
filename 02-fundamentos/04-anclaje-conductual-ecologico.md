@@ -247,3 +247,10 @@ Con la incorporación de B como nivel pleno, la tesis recupera el plano que la r
 - la ontología de patrones estabilizados gana su modelo positivo (atractores de sistemas acoplados);
 - la epistemología de la compresión gana su test (la dinámica de baja dimensión a nivel B);
 - la crítica al mentalismo deja de ser eliminativa para volverse constructiva: no se trata de borrar `mente`, `memoria` o `yo`, sino de reconstruir cuáles atractores conductuales-ecológicos comprime cada una y, a partir de ahí, decidir qué se conserva, qué se reformula y qué se descarta.
+
+## 13. Deuda residual
+
+Entradas operativas declaradas tras triage de bitácora huérfana (2026-05-11).
+
+- **[F02-06 2026-05-11]** §10 (anclaje gibsoniano y reconstrucción Warren) salta de Gibson 1979 directamente a Warren 2006 omitiendo los pasos intermedios Turvey-Shaw 1981 y Kugler-Turvey 1987, que articularon la psicología ecológica como dinámica de sistemas. PDFs ausentes en `07-bibliografia/`. Acción: fetch Turvey-Shaw 1981 y Kugler-Turvey 1987 antes de redactar §10.1.bis con paginación verbatim. Pendiente fetch. Origen: `Bitacora/2026-05-04-continuous-run/F02-06-gibson-warren-elision.md`.
+- **[F02-11 2026-05-11]** §50-67 invoca a Bateson (cibernética) y Dretske (información shannoniana) como combinables bajo la noción ecológica de información. Hallazgo: Bateson cibernético ("the difference that makes a difference") y Dretske semántico-shannoniano son incompatibles en su tratamiento de la intencionalidad; "combina" es engañoso. PDFs Bateson 1972 y Dretske 1981 ausentes en `07-bibliografia/`. Acción: declarar subordinación bajo Gibson (información ecológica como variable estructural del entorno) y fetch Bateson/Dretske antes de cita paginada. `needs_human` para corte filosófico. Origen: `Bitacora/2026-05-04-continuous-run/F02-11-bateson-dretske-incompatibles.md`.

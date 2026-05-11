@@ -262,6 +262,14 @@ Este dominio prueba que el aparato puede tratar fenómenos clásicamente difíci
 
 Este capítulo conjetura. No demuestra. La elevación a modo demostrativo requiere construir tareas y datos que no están en el manuscrito. La tesis no presenta este dominio como prueba; lo presenta como aplicación articulada con plan.
 
-## 11. Cierre
+## 11. Deuda residual
+
+Entradas operativas declaradas tras triage de bitácora huérfana (2026-05-11). Este capítulo opera en modo programático; las deudas precisan los fetchs y engagements bibliográficos necesarios antes de elevación a demostrativo.
+
+- **[F05-01 2026-05-11]** §2.6 (líneas 63-112) invoca "datos publicados sobre consolidación, memoria implícita, reconsolidación" sin citar a los autores canónicos de psicología y neurociencia de la memoria: Tulving 1972 (memoria episódica/semántica), Schacter 1996 (memoria implícita), Squire 1992 (memoria declarativa/no-declarativa) y Nader-Schafe-LeDoux 2000 (reconsolidación amigdalar). Ninguno de los PDFs está en `07-bibliografia/`. Acción: fetch Tulving 1972, Schacter 1996, Squire 1992, Nader et al. 2000 antes de cerrar engagement de §2.6 con paginación. Pendiente fetch. Origen: `Bitacora/2026-05-04-continuous-run/F05-01-memoria-sin-tulving.md`.
+- **[F05-02 2026-05-11]** §3 (líneas 114-156) desarrolla "yo como atractor de integración multinivel" mencionando RHI (Rubber Hand Illusion) pero sin engagement primario con Damasio 1999 (*The Feeling of What Happens*), LeDoux 2002 (*Synaptic Self*), Botvinick-Cohen 1998 (RHI original) ni Tsakiris 2010 (modelo bayesiano de ownership). PDFs ausentes en `07-bibliografia/`. Acción: fetch Damasio 1999, LeDoux 2002, Botvinick-Cohen 1998, Tsakiris 2010 antes de cerrar §3, o reescribir §3 declarando explícitamente que es "hipótesis programática sin engagement bibliográfico cerrado". Pendiente fetch. Origen: `Bitacora/2026-05-04-continuous-run/F05-02-yo-sin-damasio-ledoux.md`.
+- **[F05-03 2026-05-11]** §7.1 (líneas 220-225) omite la distinción de Block 1995 (*BBS*) entre consciencia de acceso (A-consciousness) y consciencia fenoménica (P-consciousness), central en filosofía de la conciencia post-1995. PDF Block 1995 ausente en `07-bibliografia/`. Acción: fetch Block 1995 antes de cerrar §7.1.1 con engagement explícito sobre cuál de las dos modalidades de consciencia es candidata legítima a κ-pragmática vs cuál queda fuera del alcance del aparato. Pendiente fetch. Origen: `Bitacora/2026-05-04-continuous-run/F05-03-block-access-vs-phenomenal.md`.
+
+## 12. Cierre
 
 > La mente no es cosa adicional al organismo, pero tampoco se deja agotar por una lista plana de eventos neuronales. Es atractor de integración corporal-cognitivo-afectivo-social-histórico cuya legitimidad como compresión depende de qué integra, qué conserva, para qué pregunta sirve, y qué predicción discriminante propone respecto a rivales identificables.

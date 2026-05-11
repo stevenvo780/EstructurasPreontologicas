@@ -128,6 +128,13 @@ Esta es la frase que sobrevive incluso si el resto del día filosófico se incen
 
 ---
 
+## Deuda residual
+
+Entradas operativas declaradas tras triage de bitácora huérfana (2026-05-11).
+
+- **[F04-04 2026-05-11]** La respuesta P4 (línea 37) usa "modus tollens vacuo" como categoría de réplica a Kim 2005. Hallazgo del triage: "modus tollens vacuo" es manierismo no técnico, y Kim 2005 en *Physicalism, or Something Near Enough* anticipa explícitamente la maniobra "constitución, no causación". PDF Kim 2005 ausente en `07-bibliografia/`. Acción: reescribir P4 invocando manipulabilidad woodwardiana (Woodward 2003 presente local) sin pretender "refutación" de Kim, o fetch Kim 2005 antes de paginar el engagement. `needs_human` para corte filosófico. Origen: `Bitacora/2026-05-04-continuous-run/F04-04-kim-modus-tollens-vacuo.md`.
+- **[F04-08 2026-05-11]** La respuesta P-eliminativismo (línea 119) responde a "eliminar de más" sin responder a la objeción complementaria "eliminar de menos": casos null del corpus podrían exigir eliminación regional de la categoría asociada. Acción: añadir sub-respuesta articulando la doble exigencia. Paralela en `06-cierre/02-guia-de-defensa.md` §8. `needs_human` para corte filosófico. Origen: `Bitacora/2026-05-04-continuous-run/F04-08-eliminativismo-respuesta-incompleta.md`.
+
 ## Lectura cruzada
 
 - Cap 06-02 — guía de defensa con versiones 2/5/15 minutos.

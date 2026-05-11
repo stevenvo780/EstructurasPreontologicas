@@ -253,6 +253,12 @@ Ladyman y Ross sugieren tomar la estructura como ontología fundamental. La audi
 
 Con esta auditoría, la tesis se presenta no solo como respuesta a una pregunta metafísica sino como técnica filosófica para examinar conceptos complejos. El protocolo es explícito, replicable y sometido a criterios de fallo. Eso es lo que separa un programa de investigación de una posición doctrinal.
 
-## 12. Cierre
+## 12. Deuda residual
+
+Entradas operativas declaradas tras triage de bitácora huérfana (2026-05-11).
+
+- **[F03-11 2026-05-11]** §6 (línea 6) afirma "criterio de cierre es replicabilidad por tercero", pero **ninguna replicación externa ha sido ejecutada** sobre el corpus EDI: el manuscrito no tiene evidencia de tercero independiente reproduciendo los resultados desde `case_config.json` + datos. Esto choca con la objeción de Collins ("experimenter's regress"). Acción: degradar "replicabilidad" de hecho consumado a reclamo operativo (CLAUDE.md §10 — promesa pública defendible, no afirmación retórica); abrir entrada `H-J##` en `TAREAS_PENDIENTES.md` para invitar replicación independiente con plazo declarado. `needs_human` para apertura formal de la invitación. Origen: `Bitacora/2026-05-04-continuous-run/F03-11-replicabilidad-no-testada.md`.
+
+## 13. Cierre
 
 > La filosofía propuesta no pregunta solo qué existe; pregunta también cómo recortar lo existente sin convertir un nombre útil en sustancia imaginaria ni una complejidad real en niebla conceptual. La auditoría ontológica es la técnica que ejecuta esa exigencia con trazabilidad pública.

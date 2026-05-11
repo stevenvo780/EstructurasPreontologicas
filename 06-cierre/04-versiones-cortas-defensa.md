@@ -203,6 +203,14 @@ Esta tesis no clausura la complejidad de lo real. Ofrece reglas para no empeorar
 
 ---
 
+## Deuda residual
+
+Entradas operativas declaradas tras triage de bitácora huérfana (2026-05-11).
+
+- **[AU-6 2026-05-11]** La nota sobre convergencia inter-paradigma (línea 60) declara una proporción agregada que oculta la diferencia entre arrays reales y reconstruidos. Acción: descomponer la proporción en (real, reconstruido) para preservar la diferencia en nivel de evidencia. Paralela en `06-cierre/01-conclusion-demostrativa.md` §4.1. Origen: `Bitacora/2026-05-04-continuous-run/AU-6-multisonda-1-de-7.md`.
+- **[AU-7 2026-05-11]** La afirmación de significancia del caso 30 (p=0.044, línea 118 aprox.) debe aclararse como "significativo en test único, no bajo control de FWER": el umbral de Holm-Bonferroni para m=30 contrastes paralelos es 0.0031, que el caso 30 no atraviesa. Sólo 14 casos del corpus sobreviven al control FWER. Acción: añadir nota junto a la cifra; añadir entrada `edi.valid` en `00-proyecto/07-glosario-operativo.md` distinguiendo "significativo en test único" vs "significativo bajo FWER". Origen: `Bitacora/2026-05-04-continuous-run/AU-7-caso30-holm-bonferroni.md`.
+- **[AU-9 2026-05-11]** El conteo "8 null" (línea 110) colapsa tres regímenes operativamente distintos: 5 nulls genuinos, 1 EDI fuertemente negativo, 2 rechazos por gate C1-C5. Acción: subdividir la tabla null en tres filas. Paralela en `06-cierre/01-conclusion-demostrativa.md` §4.1 y `05-aplicaciones/07-mapa-aplicaciones-corpus.md`. Origen: `Bitacora/2026-05-04-continuous-run/AU-9-edi-negativo-no-es-null.md`.
+
 ## Fórmula final para cerrar oralmente
 
 > Mi tesis sostiene que la realidad es material, pero las unidades con que la pensamos son **estructuras pre-ontológicas** — atractores empíricamente identificables bajo dossier de anclaje y validación EDI por intervención ablativa. Lo demuestro en cartografía multidominio de 30 casos con discriminación pública contra rivales incluido Wolfram, condiciones de fracaso falsables, y reconocimiento honesto del dominio de validez del aparato. La filosofía propuesta no clausura la complejidad de lo real; ofrece reglas para no empeorarla con malas categorías. Y demuestra esas reglas al rechazar honestamente cuando debe rechazar.

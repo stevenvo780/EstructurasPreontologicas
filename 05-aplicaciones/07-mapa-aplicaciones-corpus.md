@@ -226,6 +226,12 @@ El caso 30 (Nivel 3 weak) demuestra que **el aparato EDI funciona en escala beha
 
 ---
 
+## Deuda residual
+
+Entradas operativas declaradas tras triage de bitácora huérfana (2026-05-11).
+
+- **[AU-9 2026-05-11]** El Bloque VI (Null, Nivel 0, líneas 128-143) agrega ocho casos sin distinguir tres regímenes operativamente distintos: (i) cinco nulls genuinos (EDI ≈ 0, p > 0.05), (ii) un caso con EDI fuertemente negativo (degradación bajo acoplamiento), (iii) dos casos rechazados por gate C1-C5 antes del cómputo de EDI. La cifra adversarial "-0.876" estaba mal atribuida en versiones previas. Acción: subdividir el bloque en tres etiquetas distintas en la próxima pasada; el conteo agregado preserva el total pero pierde la diferencia operativa entre "el aparato no detecta señal" vs "el aparato detecta degradación" vs "el aparato rechaza antes de calcular". Paralela en `06-cierre/01-conclusion-demostrativa.md` §4.1 y `06-cierre/04-versiones-cortas-defensa.md`. Origen: `Bitacora/2026-05-04-continuous-run/AU-9-edi-negativo-no-es-null.md`.
+
 ## Lectura cruzada
 
 - Caso ancla canónico cualitativo: capítulo 05-05

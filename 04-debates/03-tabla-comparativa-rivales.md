@@ -231,3 +231,11 @@ Esta tabla es compromiso. Si en algún rival la tesis no muestra ventaja en al m
 - Limitaciones que sobreviven: capítulo 04-02.
 - Caso ancla canónico (donde se opera la discriminación contra modelos internos): capítulo 05-05.
 - Convergencia con Wolfram (programa futuro): capítulo 06-03.
+
+## Deuda residual
+
+Entradas operativas declaradas tras triage de bitácora huérfana (2026-05-11).
+
+- **[F04-01 2026-05-11]** Fila 1 de la tabla (Dualismo de propiedades, línea 34) marca "✗" en la columna A (sustrato físico). El dualismo de propiedades **naturalista** (Chalmers 1996) acepta sustrato físico; el "✗" es hombre de paja contra esa versión. Acción: dividir fila 1 en 1a (naturalista, A=✓) y 1b (anti-naturalista, A=✗); fetch Chalmers 1996 *The Conscious Mind*. `needs_human` para validar división filosófica. Paralela en `04-debates/01-debates-con-posiciones-rivales.md` §2. Origen: `Bitacora/2026-05-04-continuous-run/F04-01-tabla-rivales-dualismo-paja.md`.
+- **[F04-06 2026-05-11]** Fila Wolfram (línea 216 aprox.) presenta complementariedad simétrica con la tesis. Asimetría modal oculta: si la Ruliad realiza su pretensión fundacional, la tesis queda subsumida. Acción: añadir cláusula de complementariedad asimétrica modal en la nota de la fila. Paralela en `04-debates/01-debates-con-posiciones-rivales.md` §13. Origen: `Bitacora/2026-05-04-continuous-run/F04-06-wolfram-ruliad-asimetria-oculta.md`.
+- **[F04-10 2026-05-11]** "Compromiso público" (líneas 222-224) sin árbitro externo. Auto-arbitraje. Acción: añadir cláusula de árbitro H-S1/H-S2 o declarar explícitamente la limitación. Paralela en `04-debates/01-debates-con-posiciones-rivales.md` §506. Origen: `Bitacora/2026-05-04-continuous-run/F04-10-compromiso-publico-vacio.md`.

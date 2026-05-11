@@ -245,3 +245,10 @@ Esto es lo que opera el capítulo 03 (formalización) y lo que el capítulo 05-0
 > Conocer es comprimir estructura real bajo restricciones empíricas, sin mutilar la diferencia que importa para la pregunta planteada y bajo compromiso público de predicción discriminante.
 
 Si la ontología (capítulo 02-01) da el suelo, esta epistemología enseña a caminar sobre él sin confundir el mapa con el territorio ni el territorio con masa muda. Si el aparato formal (capítulo 03) da los instrumentos, esta epistemología fija para qué sirven.
+
+## 15. Deuda residual
+
+Entradas operativas declaradas tras triage de bitácora huérfana (2026-05-11).
+
+- **[F02-05 2026-05-11]** La cita atribuida a Brandom *Making it Explicit* (1994) en §72 con paginación "p.89" no es verificable: el cap.3 de MiE (Harvard UP, 1994) corre aprox. pp.141-198 según índice estándar editorial, por lo que p.89 es presuntivamente incorrecta. El PDF NO está en `07-bibliografia/`. Acción: fetch Brandom 1994 y verificar paginación, o eliminar la cita decorativa y sustituirla por paráfrasis declarada. Pendiente verificación contra fuente primaria. Origen: `Bitacora/2026-05-04-continuous-run/F02-05-brandom-pagina-incorrecta.md`.
+- **[F02-07 2026-05-11]** §3 articula compresión epistémica sin engagement con la tradición Kolmogorov / Solomonoff / Rissanen / Grünwald (MDL, inferencia inductiva universal). El slot §3.4 entre §3.3 y §3.5 está vacío respecto a esa familia; PDFs ausentes en `07-bibliografia/`. Acción: fetch Solomonoff 1964, Rissanen 1978, Grünwald 2007 antes de inyectar §3.4 que delimite la compresión EDI respecto a MDL/Kolmogorov. Pendiente fetch. Origen: `Bitacora/2026-05-04-continuous-run/F02-07-kappa-sin-mdl-solomonoff.md`.

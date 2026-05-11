@@ -292,6 +292,12 @@ Este capítulo demuestra cuatro cosas.
 
 No demuestra que la tesis funcione en todos los dominios mencionados en su versión general. Mente, identidad, mercados, instituciones, ecología requieren cada uno su propio caso paradigmático trabajado. Lo que el capítulo demuestra es que cuando el dominio admite tarea, medición y acoplamiento empíricamente identificable, el aparato funciona y mejora respecto a alternativas. Eso es lo máximo que puede pedir un caso, y es exactamente lo que el profesor pedía.
 
+## Deuda residual
+
+Entradas operativas declaradas tras triage de bitácora huérfana (2026-05-11).
+
+- **[F05-07 2026-05-11]** Las líneas 163 y 188 reportan ajustes Fajen-Warren / Yilmaz-Warren con r² = 0.98 sin declarar (a) que el modelo tiene siete parámetros libres ajustados conjuntamente sobre el mismo conjunto de datos, (b) que no se reporta cross-validation hold-out ni leave-one-out, y (c) que la crítica de Roberts y Pashler 2000 (*Psych Rev* 107: 358-367) sobre "How persuasive is a good fit? A comment on theory testing" advierte contra interpretar r² alto como evidencia de teoría correcta cuando los parámetros libres son comparables al número de observaciones. PDF Roberts-Pashler 2000 ausente en `07-bibliografia/`. Acción: fetch Roberts-Pashler 2000 y, antes de redactar el §"Costo argumental" del capítulo, declarar (a) número de parámetros libres, (b) ausencia de cross-validation, (c) la advertencia de Roberts-Pashler como costo asumido por el capítulo. Pendiente fetch. Origen: `Bitacora/2026-05-04-continuous-run/F05-07-r2-098-sin-roberts-pashler.md`.
+
 ## Cierre
 
 La frase de Gibson que Warren cita al inicio — `el comportamiento puede ser regular sin ser regulado` — admite ahora una traducción precisa al marco material-relacional: el comportamiento es regular cuando el sistema acoplado tiene atractores empíricamente identificables; no necesita ser regulado por un controlador central porque la regulación está distribuida entre la física del entorno, la biomecánica del cuerpo, la información ecológica y la ley de control aprendida. La tesis no añade misterio a esa formulación; le añade un aparato ontológico, un procedimiento empírico de compresión, un test público de admisión y una taxonomía de errores. El paper de Warren, leído así, no es un argumento contra la representación: es la demostración de que un L3 anclado puede explicar lo que parecía requerir L1 sin caer en sustitución nominal, sin desligarse de B y sin multiplicar sustancias.

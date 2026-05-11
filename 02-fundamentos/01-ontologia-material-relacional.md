@@ -395,3 +395,10 @@ La afirmación "estructuras pre-ontológicas a escala cuántica" tiene sentido *
 ## 14. Evolución conceptual
 
 La formulación intuitiva de partida evolucionó hacia la versión canónica. Los claims principales que sobreviven íntegramente son: monismo material-dinámico, estructuras pre-ontológicas como atractores, compresión disciplinada como epistemología, asimetría L1↔B↔L3↔S, emergencia como self-organization, dossier de admisión, y la fórmula "X exhibe cierre operativo bajo I respecto a Q". Los claims refinados incluyen: caso 30 con circularidad reconocida, corpus post-hoc, AUC-ROC interno, κ-pragmática vs κ-ontológica distinguidas, sistema modal T explícito. La continuidad conceptual es fuerte; la honestidad metodológica es mayor en la versión actual.
+
+## 15. Deuda residual
+
+Entradas operativas declaradas tras triage de bitácora huérfana (2026-05-11). Cada deuda nombra el hueco, el plan mínimo de mitigación y el origen verificable.
+
+- **[F02-09 2026-05-11]** §1.3 importa el ontology CESM bungeano sin disociar el M-mecanismo (materialismo) del esqueleto C+E. Los volúmenes 3 y 4 del *Treatise on Basic Philosophy* de Bunge NO están en `07-bibliografia/`; la adopción del CESM debe declararse como restringida a Composición y Entorno, con costo: la tesis no compra el materialismo bungeano íntegro. Acción: añadir declaración explícita de adopción restringida + fetch Bunge vol.3/4 antes de citar paginación. `needs_human` para validación filosófica. Origen: `Bitacora/2026-05-04-continuous-run/F02-09-bunge-cesm-no-declarado.md`.
+- **[F02-13 2026-05-11]** §13 (caso 31 decoherencia cuántica) opera con decoherencia + einselection y declara neutralidad entre interpretaciones realistas. Hallazgo del triage: decoherencia + einselection compromete *en uso* con la familia Everett-Wallace (no es neutra entre Bohm-DeBroglie, GRW, Everett). Wallace 2012 *The Emergent Multiverse* NO está en `07-bibliografia/`. Acción: reescribir §13 declarando compromiso interpretativo efectivo o fetch de Wallace 2012 antes de paginar la cita. `needs_human` para corte filosófico. Origen: `Bitacora/2026-05-04-continuous-run/F02-13-quantum-compromiso-oculto.md`.

@@ -307,3 +307,9 @@ La tesis adopta **estructuralismo matemático moderado** como postura de partida
 Si las **estructuras pre-ontológicas son atractores** y los atractores son **objetos matemáticos definidos sobre espacios de fase**, ¿qué tan real es la matemática en la ontología?
 
 **Respuesta:** la matemática es **real en sentido representacional moderado**: es la herramienta formal que captura las dependencias del sustrato material. Los atractores existen materialmente (como patrones del sustrato dinámico); las descripciones matemáticas de los atractores existen como **representaciones legítimas** de esos patrones cuando preservan dependencias decisivas. La realidad ontológica primaria está en el sustrato; la realidad de las estructuras matemáticas es **derivada y representacional**.
+
+## 16. Deuda residual
+
+Entradas operativas declaradas tras triage de bitácora huérfana (2026-05-11).
+
+- **[F03-06 2026-05-11]** §12.3 (línea 266) importa vocabulario "phase transition" de Kelso 1995 *Dynamic Patterns* para describir la transición de régimen en el aparato, pero ninguno de los signos canónicos de transición de fase en sistemas dinámicos coordinativos (critical slowing down, fluctuaciones críticas, histéresis) es medido en el corpus EDI. El uso es metafórico-descriptivo, no fuerte. PDF Kelso 1995 ausente en `07-bibliografia/`. Acción: declarar uso descriptivo y fetch Kelso 1995 antes de invocar paginación; opcionalmente añadir test de critical slowing down como criterio de elevación para casos con dinámica claramente bimodal. Pendiente fetch. Origen: `Bitacora/2026-05-04-continuous-run/F03-06-kelso-1995-condiciones-no-medidas.md`.

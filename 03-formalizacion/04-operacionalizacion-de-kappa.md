@@ -234,6 +234,12 @@ Algunos casos tienen funciones específicas que justifican categorías ROBUSTO e
 
 `09-simulaciones-edi/scripts/run_full_pipeline.py` orquesta las etapas (generación de FETCH_MANIFEST → SETUP_HASH → protocolos → enrichment → sondas independientes → análisis de potencia → sensibilidad a umbrales → auditoría QES) en una invocación única reproducible. Cualquier evaluador externo puede correr el pipeline sobre el repositorio congelado bajo el commit declarado y obtener bit-a-bit los mismos resultados.
 
+## Deuda residual
+
+Entradas operativas declaradas tras triage de bitácora huérfana (2026-05-11).
+
+- **[F03-09 2026-05-11]** Paso 3 (líneas 36-48) enumera cinco métodos de estimación de dimensionalidad ("según el caso": PCA, GP, NN, Takens, false nearest neighbors) sin protocolo de reconciliación entre ellos. PCA tiene sesgo lineal; Grassberger-Procaccia es sensible a longitud de serie; NN tiene sesgo de overfitting opuesto. El "según el caso" abre un *garden of forking paths*. PDFs Camastra-Staiano 2016 y Simmons-Nelson-Simonsohn 2011 ausentes en `07-bibliografia/`. Acción: exigir triple estimación (PCA + GP + Takens) reportada conjuntamente con discrepancia declarada; fetch Camastra-Staiano 2016 antes de invocar paginación. Pendiente fetch y reescritura del Paso 3. Origen: `Bitacora/2026-05-04-continuous-run/F03-09-dimensionalidad-sin-protocolo.md`.
+
 ## Cierre
 
 La operación κ deja de ser un acto interpretativo y se convierte en un protocolo reproducible. Esto permite mostrar cómo Warren (2006) ya implementó, sin nombrarla así, esta misma operacionalización: identificó variables conductuales clave, midió series, ajustó sistemas dinámicos de baja dimensión, validó atractores, predijo bifurcaciones, e indicó las regiones donde el modelo se queda corto. Esa coincidencia no es accidente; es la confirmación de que la tesis y la práctica investigadora más rigurosa de percepción–acción comparten el mismo esqueleto operativo.

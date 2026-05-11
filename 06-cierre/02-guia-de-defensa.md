@@ -175,7 +175,13 @@ Si el interlocutor dice "esto es teoría regional con pretensiones generales", r
 
 Si el interlocutor dice "estás eliminando categorías mentales", recordar: la tesis no es eliminativa. Reformula: las categorías se admiten como compresiones legítimas si pasan auditoría. Mente, memoria, yo se discuten en capítulo 05-01 con conjetura articulada y criterios de elevación. La eliminación es opción rechazada, no propuesta.
 
-## 8. Fórmula final para cerrar oralmente
+## 8. Deuda residual
+
+Entradas operativas declaradas tras triage de bitácora huérfana (2026-05-11).
+
+- **[F04-08 2026-05-11]** La Trampa 4 (líneas 174-176) responde a la objeción eliminativista "eliminar de más" (la tesis no es eliminativa). Falta la respuesta complementaria a "eliminar **de menos**": los propios casos null del corpus podrían exigir eliminación regional de la categoría correspondiente (si la sonda no detecta cierre operativo, ¿por qué se preserva el término?). Acción: añadir sub-trampa 4b a la Trampa 4 articulando la doble exigencia (no eliminar de más, no preservar de más); paralela en `06-cierre/05-respuestas-tipo-defensa.md:119`. `needs_human` para corte filosófico sobre umbral de eliminación regional. Origen: `Bitacora/2026-05-04-continuous-run/F04-08-eliminativismo-respuesta-incompleta.md`.
+
+## 9. Fórmula final para cerrar oralmente
 
 > Mi tesis sostiene que la realidad es material, pero que nuestras unidades explicativas son compresiones controladas de patrones relacionales — atractores empíricamente identificables de sistemas dinámicos acoplados. Por eso no basta heredar categorías ni reducir todo a partes aisladas: hay que justificar el nivel de descripción que conserva mejor la estructura relevante para una pregunta determinada con tolerancia explícita, traducibilidad B↔L3, predicción discriminante contra rival, y dossier completo. Lo demuestro en behavioral dynamics; lo articulo en programa de extensión; lo someto a condiciones de fracaso falsables; lo discrimino contra rivales identificables. La filosofía propuesta no clausura la complejidad de lo real; ofrece reglas para no empeorarla con malas categorías.
 

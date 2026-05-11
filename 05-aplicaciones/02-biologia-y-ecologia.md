@@ -222,3 +222,9 @@ Y articula explícitamente que la elevación a modo demostrativo está al alcanc
 ## 9. Limitación honesta
 
 Este capítulo conjetura. La elevación a modo demostrativo requiere adoptar un caso específico publicado con datos cuantitativos y construir el dossier completo. El programa posterior se prioriza en capítulo 06-03.
+
+## 10. Deuda residual
+
+Entradas operativas declaradas tras triage de bitácora huérfana (2026-05-11).
+
+- **[F05-05 2026-05-11]** El caso 04 utiliza Lotka-Volterra y el caso 16 utiliza von Thünen como sondas ODE sin discutir el rango de validez ni las críticas canónicas de la teoría ecológica matemática: May 1973 (*Stability and Complexity in Model Ecosystems*) sobre el equilibrio inestable de comunidades complejas, y Levin 1992 (*Ecology* 73: pattern and scale) sobre la dependencia de la dinámica respecto a la escala espacio-temporal. PDFs ausentes en `07-bibliografia/`. Acción: añadir §4.7 "Justificación de sondas ecológicas" tras fetch May 1973 y Levin 1992, declarando explícitamente el rango de aplicabilidad de LV y von Thünen al corpus EDI y los costos de elegir esas sondas frente a alternativas (Holling 1973 resilience, Scheffer 2001 regime shifts). Pendiente fetch. Origen: `Bitacora/2026-05-04-continuous-run/F05-05-sondas-eco-sin-may-levin.md`.

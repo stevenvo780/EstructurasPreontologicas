@@ -197,6 +197,12 @@ Cada uno tiene:
 2. **Modo programático:** componentes 1-3 (Q, X, sustrato) y 7-9 (atractores conjeturados, ¿pruebas?, predicción discriminante a buscar) son obligatorios. El resto son objetivos del programa de elevación.
 3. **Auditoría:** un tercer investigador competente debe poder reproducir el dossier desde el case_config y los datos.
 
+## Deuda residual
+
+Entradas operativas declaradas tras triage de bitácora huérfana (2026-05-11).
+
+- **[F03-02 2026-05-11]** El componente 10 del dossier ("predicción discriminante a buscar" / "diferencia inferencial inesperada") se exige sin obligar al investigador a pre-registrar banda predictiva (`[a, b]`), umbral τ ni variables auxiliares fijadas. Vulnerabilidad Duhem-Quine. Acción: actualizar §3.1 (componente 10) para exigir esos tres elementos como pre-condición de admisión a modo demostrativo. Plazo: previo a la siguiente pasada de dossiers contra el corpus. Origen paralelo a `03-formalizacion/02-criterios-de-legitimidad-y-metodo.md` §12; archivo origen: `Bitacora/2026-05-04-continuous-run/F03-02-fidelidad-circular-duhem-quine.md`.
+
 ## Cierre
 
 > El dossier no es burocracia: es la articulación operativa del filtro de admisión que distingue una tesis de un manifiesto. Cualquier categoría que entre al manuscrito sin dossier completo (en demostrativo) o sin criterio de elevación (en programático) está fuera del marco.

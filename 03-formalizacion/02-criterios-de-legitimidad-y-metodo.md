@@ -241,6 +241,13 @@ Cartwright (1989, *Nature's Capacities and their Measurement*, cap. 4, p. 141) p
 
 Pearl (2009, *Causality*, cap. 3, p. 86) formaliza la diferencia entre `P(y|x)` y `P(y|do(x))`: la primera es observación, la segunda intervención. La tesis exige `do`-test cuando es factible (criterios 3, 5 y 6). Las dependencias del grafo G no son correlaciones: son sensibilidades a intervención. Esta es la diferencia entre el corpus EDI (admite ablación) y comparaciones puramente correlacionales (no admiten).
 
-## 12. Cierre
+## 12. Deuda residual
+
+Entradas operativas declaradas tras triage de bitácora huérfana (2026-05-11).
+
+- **[F03-02 2026-05-11]** El criterio 2.3 (línea 26) "diferencia inferencial inesperada" se enuncia sin pre-registro de banda predictiva (`[a, b]`), umbral τ ni cierre de variables auxiliares. Esto deja al criterio vulnerable a Duhem-Quine: cualquier divergencia puede reasignarse a auxiliares sueltas. Acción: exigir pre-registro de banda + τ + auxiliares en componente 10 de `03-formalizacion/07-plantilla-dossier-anclaje.md` §3.1 antes de admitir un caso como "discriminante". Plazo: previo a la próxima pasada de criterios contra el corpus. Origen: `Bitacora/2026-05-04-continuous-run/F03-02-fidelidad-circular-duhem-quine.md`.
+- **[F03-03 2026-05-11]** §82 y §98-129 describen la matriz dossier con valoraciones 0/1/2 sin definir qué cuenta como "contenido sustantivo" para asignar cada nivel; el caso ancla Warren obtiene 20/20 por construcción del propio capítulo 05-05. Acción: añadir rúbrica explícita por criterio (umbrales operativos para 0, 1, 2) en el cuerpo del capítulo; DRAFT de rúbrica está en el archivo de origen y debe migrarse aquí. `needs_human` para validar umbrales. Origen: `Bitacora/2026-05-04-continuous-run/F03-03-dossier-tautologico-sin-rubrica.md`.
+
+## 13. Cierre
 
 Los diez criterios y el dossier de anclaje convierten la tesis en una propuesta auditable. Ningún producto del marco entra en el manuscrito sin pasar el filtro. La diferencia con un manifiesto es esta exactamente: un manifiesto promete; un programa de investigación se compromete. La tesis se compromete con el dossier.

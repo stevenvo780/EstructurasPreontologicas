@@ -656,6 +656,17 @@ Dirección de marcha actual. Variable conductual clave en locomoción (Fajen y W
 
 ---
 
+## Deuda residual operativa (integración 2026-05-11)
+
+Entradas operativas que ajustan la semántica del glosario tras triage de bitácora huérfana del modo continuo. Estas deudas precisan distinciones que el manuscrito vivo aún no formaliza explícitamente.
+
+- **[AU-7 2026-05-11]** **`edi.valid`**. La p-value reportada en `metrics.json` es válida para un único contraste (`α=0.05`). El corpus contiene m=30 contrastes; bajo control FWER (Holm-Bonferroni, umbral 0.0031), sólo 14 casos sobreviven. La validez "en test único" no implica validez "bajo control de errores familiares". Acción: distinguir explícitamente en cada cifra de p-value reportada cuál es el régimen aplicado. Origen: `Bitacora/2026-05-04-continuous-run/AU-7-caso30-holm-bonferroni.md`.
+- **[TENG-01 2026-05-11]** **Permutación EDI**. El test de permutación en `09-simulaciones-edi/common/hybrid_validator.py:174` opera con `iid` sobre índices temporales. Hallazgo: para series con ACF > 0 (mayoría del corpus), los p-values están **subestimados** — resultado estándar de Davison-Hinkley 1997 (*Bootstrap Methods and their Application*, cap. 8). Acción: implementar `block_permutation_test_edi` con tamaño de bloque adaptado a la longitud de decorrelación de cada serie; declarar la semántica actual como "permutación iid sin control de autocorrelación" hasta entonces. Origen: `Bitacora/2026-05-04-continuous-run/TENG-01-permutacion-iid-temporales.md`.
+- **[TENG-02 2026-05-11]** **Bootstrap CI**. `bootstrap_edi()` en `hybrid_validator.py:193-219` reporta intervalos percentiles simples sin corrección BCa (bias-corrected accelerated). De los 32 casos del corpus, 21 tienen `val_steps < 30` y 12 tienen `val_steps = 8`, donde el sesgo de cobertura del percentil simple es severo (DiCiccio-Efron 1996). Acción: implementar BCa en `bootstrap_edi()` y añadir campo `ci_method` en `metrics.json` para preservar la trazabilidad histórica. Origen: `Bitacora/2026-05-04-continuous-run/TENG-02-bootstrap-percentil-sesgo-pequenas.md`.
+- **[TENG-03 2026-05-11]** **GPU batch init_noise**. `abm_core_gpu.py:583-619` comparte `init_noise` entre candidatos del grid search por diseño explícito, tanto en CPU como GPU. Esto es **decisión metodológica** (reduce varianza inter-candidato del grid) no detalle de implementación. Acción: declarar la semántica en el glosario para que la reproducibilidad inter-instalación no se confunda con accidente. Origen: `Bitacora/2026-05-04-continuous-run/TENG-03-gpu-batch-init-noise-compartido.md`.
+- **[TENG-04 2026-05-11]** **C2 protocolo**. En `hybrid_validator.py:977,997` la rama CPU usa `seed = 2 + i + 10` por candidato mientras la rama GPU usa `seed = seed_base` único. C2 (criterio booleano) **NO es invariante a plataforma** bajo la implementación actual. Acción: unificar semillas (usar la fórmula CPU en ambas ramas) y re-correr el corpus; mientras tanto declarar la limitación en el glosario. Origen: `Bitacora/2026-05-04-continuous-run/TENG-04-c2-cpu-vs-gpu-semillas-divergentes.md`.
+- **[TENG-06 2026-05-11]** **`np.random` global**. `hybrid_validator.py:1278` ejecuta `np.random.seed(42)` global antes del fork con loky; mitiga la correlación inter-worker pero **no la elimina** porque hay otros `np.random.*` no auditados en `common/abm_*.py`. Acción: grep+auditoría exhaustiva de llamadas globales a `np.random` en `09-simulaciones-edi/common/abm_*.py`; reemplazar por `Generator` aislado por worker. Origen: `Bitacora/2026-05-04-continuous-run/TENG-06-np-random-seed-global-correlaciona-workers.md`.
+
 ## Cierre
 
 Cada término del glosario se usa de manera consistente en todos los capítulos del manuscrito. Cuando un capítulo introduce un término nuevo, se añade aquí con su definición operativa y referencia cruzada.
@@ -1302,6 +1313,13 @@ La afirmación "estructuras pre-ontológicas a escala cuántica" tiene sentido *
 
 La formulación intuitiva de partida evolucionó hacia la versión canónica. Los claims principales que sobreviven íntegramente son: monismo material-dinámico, estructuras pre-ontológicas como atractores, compresión disciplinada como epistemología, asimetría L1↔B↔L3↔S, emergencia como self-organization, dossier de admisión, y la fórmula "X exhibe cierre operativo bajo I respecto a Q". Los claims refinados incluyen: caso 30 con circularidad reconocida, corpus post-hoc, AUC-ROC interno, κ-pragmática vs κ-ontológica distinguidas, sistema modal T explícito. La continuidad conceptual es fuerte; la honestidad metodológica es mayor en la versión actual.
 
+## 15. Deuda residual
+
+Entradas operativas declaradas tras triage de bitácora huérfana (2026-05-11). Cada deuda nombra el hueco, el plan mínimo de mitigación y el origen verificable.
+
+- **[F02-09 2026-05-11]** §1.3 importa el ontology CESM bungeano sin disociar el M-mecanismo (materialismo) del esqueleto C+E. Los volúmenes 3 y 4 del *Treatise on Basic Philosophy* de Bunge NO están en `07-bibliografia/`; la adopción del CESM debe declararse como restringida a Composición y Entorno, con costo: la tesis no compra el materialismo bungeano íntegro. Acción: añadir declaración explícita de adopción restringida + fetch Bunge vol.3/4 antes de citar paginación. `needs_human` para validación filosófica. Origen: `Bitacora/2026-05-04-continuous-run/F02-09-bunge-cesm-no-declarado.md`.
+- **[F02-13 2026-05-11]** §13 (caso 31 decoherencia cuántica) opera con decoherencia + einselection y declara neutralidad entre interpretaciones realistas. Hallazgo del triage: decoherencia + einselection compromete *en uso* con la familia Everett-Wallace (no es neutra entre Bohm-DeBroglie, GRW, Everett). Wallace 2012 *The Emergent Multiverse* NO está en `07-bibliografia/`. Acción: reescribir §13 declarando compromiso interpretativo efectivo o fetch de Wallace 2012 antes de paginar la cita. `needs_human` para corte filosófico. Origen: `Bitacora/2026-05-04-continuous-run/F02-13-quantum-compromiso-oculto.md`.
+
 
 <p align="right"><sub><a href="#tabla-de-contenidos">↑ volver al índice</a></sub></p>
 
@@ -1556,6 +1574,13 @@ Esto es lo que opera el capítulo 03 (formalización) y lo que el capítulo 05-0
 > Conocer es comprimir estructura real bajo restricciones empíricas, sin mutilar la diferencia que importa para la pregunta planteada y bajo compromiso público de predicción discriminante.
 
 Si la ontología (capítulo 02-01) da el suelo, esta epistemología enseña a caminar sobre él sin confundir el mapa con el territorio ni el territorio con masa muda. Si el aparato formal (capítulo 03) da los instrumentos, esta epistemología fija para qué sirven.
+
+## 15. Deuda residual
+
+Entradas operativas declaradas tras triage de bitácora huérfana (2026-05-11).
+
+- **[F02-05 2026-05-11]** La cita atribuida a Brandom *Making it Explicit* (1994) en §72 con paginación "p.89" no es verificable: el cap.3 de MiE (Harvard UP, 1994) corre aprox. pp.141-198 según índice estándar editorial, por lo que p.89 es presuntivamente incorrecta. El PDF NO está en `07-bibliografia/`. Acción: fetch Brandom 1994 y verificar paginación, o eliminar la cita decorativa y sustituirla por paráfrasis declarada. Pendiente verificación contra fuente primaria. Origen: `Bitacora/2026-05-04-continuous-run/F02-05-brandom-pagina-incorrecta.md`.
+- **[F02-07 2026-05-11]** §3 articula compresión epistémica sin engagement con la tradición Kolmogorov / Solomonoff / Rissanen / Grünwald (MDL, inferencia inductiva universal). El slot §3.4 entre §3.3 y §3.5 está vacío respecto a esa familia; PDFs ausentes en `07-bibliografia/`. Acción: fetch Solomonoff 1964, Rissanen 1978, Grünwald 2007 antes de inyectar §3.4 que delimite la compresión EDI respecto a MDL/Kolmogorov. Pendiente fetch. Origen: `Bitacora/2026-05-04-continuous-run/F02-07-kappa-sin-mdl-solomonoff.md`.
 
 
 <p align="right"><sub><a href="#tabla-de-contenidos">↑ volver al índice</a></sub></p>
@@ -2034,6 +2059,13 @@ Con la incorporación de B como nivel pleno, la tesis recupera el plano que la r
 - la epistemología de la compresión gana su test (la dinámica de baja dimensión a nivel B);
 - la crítica al mentalismo deja de ser eliminativa para volverse constructiva: no se trata de borrar `mente`, `memoria` o `yo`, sino de reconstruir cuáles atractores conductuales-ecológicos comprime cada una y, a partir de ahí, decidir qué se conserva, qué se reformula y qué se descarta.
 
+## 13. Deuda residual
+
+Entradas operativas declaradas tras triage de bitácora huérfana (2026-05-11).
+
+- **[F02-06 2026-05-11]** §10 (anclaje gibsoniano y reconstrucción Warren) salta de Gibson 1979 directamente a Warren 2006 omitiendo los pasos intermedios Turvey-Shaw 1981 y Kugler-Turvey 1987, que articularon la psicología ecológica como dinámica de sistemas. PDFs ausentes en `07-bibliografia/`. Acción: fetch Turvey-Shaw 1981 y Kugler-Turvey 1987 antes de redactar §10.1.bis con paginación verbatim. Pendiente fetch. Origen: `Bitacora/2026-05-04-continuous-run/F02-06-gibson-warren-elision.md`.
+- **[F02-11 2026-05-11]** §50-67 invoca a Bateson (cibernética) y Dretske (información shannoniana) como combinables bajo la noción ecológica de información. Hallazgo: Bateson cibernético ("the difference that makes a difference") y Dretske semántico-shannoniano son incompatibles en su tratamiento de la intencionalidad; "combina" es engañoso. PDFs Bateson 1972 y Dretske 1981 ausentes en `07-bibliografia/`. Acción: declarar subordinación bajo Gibson (información ecológica como variable estructural del entorno) y fetch Bateson/Dretske antes de cita paginada. `needs_human` para corte filosófico. Origen: `Bitacora/2026-05-04-continuous-run/F02-11-bateson-dretske-incompatibles.md`.
+
 
 <p align="right"><sub><a href="#tabla-de-contenidos">↑ volver al índice</a></sub></p>
 
@@ -2189,6 +2221,14 @@ La tesis ahora afirma con respaldo articulado:
 | **Downward "causation"** | Reformulado como constitución | Mutual manipulability de Craver |
 
 Esto cubre los vacíos V5-02, V5-03, V5-09 con honestidad: la tesis no inventa metafísica del tiempo ni de la causalidad; **adopta posturas defendidas en la literatura** y las articula explícitamente para que el aparato no quede flotando metodológicamente.
+
+## Deuda residual
+
+Entradas operativas declaradas tras triage de bitácora huérfana (2026-05-11).
+
+- **[F02-01 2026-05-11]** Las citas a Woodward 2003 *Making Things Happen* en las líneas 48, 89 y 92 invocan la p.59 § 2.1, pero el PDF de Woodward 2003 en `07-bibliografia/` es image-only sin OCR aplicado. Adicionalmente, la definición canónica woodwardiana de manipulabilidad (M) está en §2.7 pp.98-99, no en §2.1; la cita a p.59 es presuntivamente desplazada. Pendiente verificación contra PDF tras OCR. Acción: aplicar OCR al PDF local de Woodward 2003 o convertir las invocaciones a paráfrasis declarada con referencia secundaria. Origen: `Bitacora/2026-05-04-continuous-run/F02-01-woodward-pendiente-ocr.md`.
+- **[F02-02 2026-05-11]** §90-92 cita Craver 2007 *Explaining the Brain* p.153 mediado por Romero 2015 y Baumgartner-Gebharter 2016 — ambos autores rebaten la versión "mutual manipulability" de Craver vía la objeción de *fat-handedness* (intervenciones no quirúrgicas en sistemas multinivel). El manuscrito invoca a Craver sin responder a la objeción mediada. Acción: fetch Craver 2007 (PDF principal), Baumgartner-Gebharter 2016 y Romero 2015 antes de cerrar el engagement en §90-92; la respuesta a fat-handedness es necesaria para sostener la traducción "downward causation → constitución". Pendiente fetch. Origen: `Bitacora/2026-05-04-continuous-run/F02-02-craver-mediado-via-criticos.md`.
+- **[F02-12 2026-05-11]** §2.4.4 (línea 116) usa la expresión "modus tollens vacuo" para describir la refutación a Kim 2005 sobre causación mental. Hallazgo: "modus tollens vacuo" no es un término técnico estándar; la teoría ST T13 verifica vacuidad lógica, no fuerza filosófica. Kim 2005 anticipa la maniobra "constitución, no causación" en *Physicalism, or Something Near Enough* pp.39-42; PDF ausente en `07-bibliografia/`. Acción: reescribir §2.4.4 invocando manipulabilidad woodwardiana (presente local) sin declarar "refutación" de Kim, o fetch Kim 2005 antes de paginar. `needs_human` para corte filosófico. Origen: `Bitacora/2026-05-04-continuous-run/F02-12-st-t13-trivializacion.md`.
 
 
 <p align="right"><sub><a href="#tabla-de-contenidos">↑ volver al índice</a></sub></p>
@@ -2618,6 +2658,12 @@ La tesis adopta **estructuralismo matemático moderado** como postura de partida
 Si las **estructuras pre-ontológicas son atractores** y los atractores son **objetos matemáticos definidos sobre espacios de fase**, ¿qué tan real es la matemática en la ontología?
 
 **Respuesta:** la matemática es **real en sentido representacional moderado**: es la herramienta formal que captura las dependencias del sustrato material. Los atractores existen materialmente (como patrones del sustrato dinámico); las descripciones matemáticas de los atractores existen como **representaciones legítimas** de esos patrones cuando preservan dependencias decisivas. La realidad ontológica primaria está en el sustrato; la realidad de las estructuras matemáticas es **derivada y representacional**.
+
+## 16. Deuda residual
+
+Entradas operativas declaradas tras triage de bitácora huérfana (2026-05-11).
+
+- **[F03-06 2026-05-11]** §12.3 (línea 266) importa vocabulario "phase transition" de Kelso 1995 *Dynamic Patterns* para describir la transición de régimen en el aparato, pero ninguno de los signos canónicos de transición de fase en sistemas dinámicos coordinativos (critical slowing down, fluctuaciones críticas, histéresis) es medido en el corpus EDI. El uso es metafórico-descriptivo, no fuerte. PDF Kelso 1995 ausente en `07-bibliografia/`. Acción: declarar uso descriptivo y fetch Kelso 1995 antes de invocar paginación; opcionalmente añadir test de critical slowing down como criterio de elevación para casos con dinámica claramente bimodal. Pendiente fetch. Origen: `Bitacora/2026-05-04-continuous-run/F03-06-kelso-1995-condiciones-no-medidas.md`.
 
 
 <p align="right"><sub><a href="#tabla-de-contenidos">↑ volver al índice</a></sub></p>
@@ -3143,7 +3189,14 @@ Cartwright (1989, *Nature's Capacities and their Measurement*, cap. 4, p. 141) p
 
 Pearl (2009, *Causality*, cap. 3, p. 86) formaliza la diferencia entre `P(y|x)` y `P(y|do(x))`: la primera es observación, la segunda intervención. La tesis exige `do`-test cuando es factible (criterios 3, 5 y 6). Las dependencias del grafo G no son correlaciones: son sensibilidades a intervención. Esta es la diferencia entre el corpus EDI (admite ablación) y comparaciones puramente correlacionales (no admiten).
 
-## 12. Cierre
+## 12. Deuda residual
+
+Entradas operativas declaradas tras triage de bitácora huérfana (2026-05-11).
+
+- **[F03-02 2026-05-11]** El criterio 2.3 (línea 26) "diferencia inferencial inesperada" se enuncia sin pre-registro de banda predictiva (`[a, b]`), umbral τ ni cierre de variables auxiliares. Esto deja al criterio vulnerable a Duhem-Quine: cualquier divergencia puede reasignarse a auxiliares sueltas. Acción: exigir pre-registro de banda + τ + auxiliares en componente 10 de `03-formalizacion/07-plantilla-dossier-anclaje.md` §3.1 antes de admitir un caso como "discriminante". Plazo: previo a la próxima pasada de criterios contra el corpus. Origen: `Bitacora/2026-05-04-continuous-run/F03-02-fidelidad-circular-duhem-quine.md`.
+- **[F03-03 2026-05-11]** §82 y §98-129 describen la matriz dossier con valoraciones 0/1/2 sin definir qué cuenta como "contenido sustantivo" para asignar cada nivel; el caso ancla Warren obtiene 20/20 por construcción del propio capítulo 05-05. Acción: añadir rúbrica explícita por criterio (umbrales operativos para 0, 1, 2) en el cuerpo del capítulo; DRAFT de rúbrica está en el archivo de origen y debe migrarse aquí. `needs_human` para validar umbrales. Origen: `Bitacora/2026-05-04-continuous-run/F03-03-dossier-tautologico-sin-rubrica.md`.
+
+## 13. Cierre
 
 Los diez criterios y el dossier de anclaje convierten la tesis en una propuesta auditable. Ningún producto del marco entra en el manuscrito sin pasar el filtro. La diferencia con un manifiesto es esta exactamente: un manifiesto promete; un programa de investigación se compromete. La tesis se compromete con el dossier.
 
@@ -3352,6 +3405,12 @@ Cada uno tiene:
 1. **Modo demostrativo:** los catorce componentes son obligatorios.
 2. **Modo programático:** componentes 1-3 (Q, X, sustrato) y 7-9 (atractores conjeturados, ¿pruebas?, predicción discriminante a buscar) son obligatorios. El resto son objetivos del programa de elevación.
 3. **Auditoría:** un tercer investigador competente debe poder reproducir el dossier desde el case_config y los datos.
+
+## Deuda residual
+
+Entradas operativas declaradas tras triage de bitácora huérfana (2026-05-11).
+
+- **[F03-02 2026-05-11]** El componente 10 del dossier ("predicción discriminante a buscar" / "diferencia inferencial inesperada") se exige sin obligar al investigador a pre-registrar banda predictiva (`[a, b]`), umbral τ ni variables auxiliares fijadas. Vulnerabilidad Duhem-Quine. Acción: actualizar §3.1 (componente 10) para exigir esos tres elementos como pre-condición de admisión a modo demostrativo. Plazo: previo a la siguiente pasada de dossiers contra el corpus. Origen paralelo a `03-formalizacion/02-criterios-de-legitimidad-y-metodo.md` §12; archivo origen: `Bitacora/2026-05-04-continuous-run/F03-02-fidelidad-circular-duhem-quine.md`.
 
 ## Cierre
 
@@ -3619,7 +3678,13 @@ Ladyman y Ross sugieren tomar la estructura como ontología fundamental. La audi
 
 Con esta auditoría, la tesis se presenta no solo como respuesta a una pregunta metafísica sino como técnica filosófica para examinar conceptos complejos. El protocolo es explícito, replicable y sometido a criterios de fallo. Eso es lo que separa un programa de investigación de una posición doctrinal.
 
-## 12. Cierre
+## 12. Deuda residual
+
+Entradas operativas declaradas tras triage de bitácora huérfana (2026-05-11).
+
+- **[F03-11 2026-05-11]** §6 (línea 6) afirma "criterio de cierre es replicabilidad por tercero", pero **ninguna replicación externa ha sido ejecutada** sobre el corpus EDI: el manuscrito no tiene evidencia de tercero independiente reproduciendo los resultados desde `case_config.json` + datos. Esto choca con la objeción de Collins ("experimenter's regress"). Acción: degradar "replicabilidad" de hecho consumado a reclamo operativo (CLAUDE.md §10 — promesa pública defendible, no afirmación retórica); abrir entrada `H-J##` en `TAREAS_PENDIENTES.md` para invitar replicación independiente con plazo declarado. `needs_human` para apertura formal de la invitación. Origen: `Bitacora/2026-05-04-continuous-run/F03-11-replicabilidad-no-testada.md`.
+
+## 13. Cierre
 
 > La filosofía propuesta no pregunta solo qué existe; pregunta también cómo recortar lo existente sin convertir un nombre útil en sustancia imaginaria ni una complejidad real en niebla conceptual. La auditoría ontológica es la técnica que ejecuta esa exigencia con trazabilidad pública.
 
@@ -3866,6 +3931,12 @@ Algunos casos tienen funciones específicas que justifican categorías ROBUSTO e
 
 `09-simulaciones-edi/scripts/run_full_pipeline.py` orquesta las etapas (generación de FETCH_MANIFEST → SETUP_HASH → protocolos → enrichment → sondas independientes → análisis de potencia → sensibilidad a umbrales → auditoría QES) en una invocación única reproducible. Cualquier evaluador externo puede correr el pipeline sobre el repositorio congelado bajo el commit declarado y obtener bit-a-bit los mismos resultados.
 
+## Deuda residual
+
+Entradas operativas declaradas tras triage de bitácora huérfana (2026-05-11).
+
+- **[F03-09 2026-05-11]** Paso 3 (líneas 36-48) enumera cinco métodos de estimación de dimensionalidad ("según el caso": PCA, GP, NN, Takens, false nearest neighbors) sin protocolo de reconciliación entre ellos. PCA tiene sesgo lineal; Grassberger-Procaccia es sensible a longitud de serie; NN tiene sesgo de overfitting opuesto. El "según el caso" abre un *garden of forking paths*. PDFs Camastra-Staiano 2016 y Simmons-Nelson-Simonsohn 2011 ausentes en `07-bibliografia/`. Acción: exigir triple estimación (PCA + GP + Takens) reportada conjuntamente con discrepancia declarada; fetch Camastra-Staiano 2016 antes de invocar paginación. Pendiente fetch y reescritura del Paso 3. Origen: `Bitacora/2026-05-04-continuous-run/F03-09-dimensionalidad-sin-protocolo.md`.
+
 ## Cierre
 
 La operación κ deja de ser un acto interpretativo y se convierte en un protocolo reproducible. Esto permite mostrar cómo Warren (2006) ya implementó, sin nombrarla así, esta misma operacionalización: identificó variables conductuales clave, midió series, ajustó sistemas dinámicos de baja dimensión, validó atractores, predijo bifurcaciones, e indicó las regiones donde el modelo se queda corto. Esa coincidencia no es accidente; es la confirmación de que la tesis y la práctica investigadora más rigurosa de percepción–acción comparten el mismo esqueleto operativo.
@@ -4087,6 +4158,12 @@ Las teorías iniciales (T0–T12) verifican la lógica metodológica del marco; 
 - Reporte automatizado: `08-consistencia-st/reports/ultimo-reporte.md`.
 - Capítulos donde los conceptos validados se articulan: 02-01 (ontología, naturalismo, pre-ontológico, observador), 02-02 (epistemología general), 02-04 (asimetría), 02-05 (tiempo y causalidad), 02-06 (ética), 03-01 (aparato), 06-01 (cierre).
 - Auditoría de vacíos estructurales: `Auditoria_V5_Vacios_Estructurales.md`.
+
+## Deuda residual
+
+Entradas operativas declaradas tras triage de bitácora huérfana (2026-05-11).
+
+- **[F03-05 2026-05-11]** §ST-1 (líneas 21-23) plantea la asimetría L1↔B↔L3↔S como `∀x ∃y ...` (existencial sobre cada cuantificador), lo que la deja **trivialmente satisfacible** por rivales: cualquier teoría rival puede atestiguar `∃` con algún caso de su preferencia. La fuerza de la asimetría requiere o bien regularidad operativa (frontera de dominio declarada) o bien existencial calificado contra rival nombrado. Acción: añadir frontera de dominio (`∀x ∈ D ∃y ∈ D' ...`) con `D`, `D'` operativamente definidos sobre el corpus; declarar costo: la asimetría así pierde universalidad y se sostiene sólo sobre el dominio del corpus. Origen: `Bitacora/2026-05-04-continuous-run/F03-05-asimetria-existencial-trivial.md`.
 
 
 <p align="right"><sub><a href="#tabla-de-contenidos">↑ volver al índice</a></sub></p>
@@ -4641,6 +4718,12 @@ El caso 30 (Nivel 3 weak) demuestra que **el aparato EDI funciona en escala beha
 
 ---
 
+## Deuda residual
+
+Entradas operativas declaradas tras triage de bitácora huérfana (2026-05-11).
+
+- **[AU-9 2026-05-11]** El Bloque VI (Null, Nivel 0, líneas 128-143) agrega ocho casos sin distinguir tres regímenes operativamente distintos: (i) cinco nulls genuinos (EDI ≈ 0, p > 0.05), (ii) un caso con EDI fuertemente negativo (degradación bajo acoplamiento), (iii) dos casos rechazados por gate C1-C5 antes del cómputo de EDI. La cifra adversarial "-0.876" estaba mal atribuida en versiones previas. Acción: subdividir el bloque en tres etiquetas distintas en la próxima pasada; el conteo agregado preserva el total pero pierde la diferencia operativa entre "el aparato no detecta señal" vs "el aparato detecta degradación" vs "el aparato rechaza antes de calcular". Paralela en `06-cierre/01-conclusion-demostrativa.md` §4.1 y `06-cierre/04-versiones-cortas-defensa.md`. Origen: `Bitacora/2026-05-04-continuous-run/AU-9-edi-negativo-no-es-null.md`.
+
 ## Lectura cruzada
 
 - Caso ancla canónico cualitativo: capítulo 05-05
@@ -4950,6 +5033,12 @@ Este capítulo demuestra cuatro cosas.
 ## Lo que este caso no demuestra
 
 No demuestra que la tesis funcione en todos los dominios mencionados en su versión general. Mente, identidad, mercados, instituciones, ecología requieren cada uno su propio caso paradigmático trabajado. Lo que el capítulo demuestra es que cuando el dominio admite tarea, medición y acoplamiento empíricamente identificable, el aparato funciona y mejora respecto a alternativas. Eso es lo máximo que puede pedir un caso, y es exactamente lo que el profesor pedía.
+
+## Deuda residual
+
+Entradas operativas declaradas tras triage de bitácora huérfana (2026-05-11).
+
+- **[F05-07 2026-05-11]** Las líneas 163 y 188 reportan ajustes Fajen-Warren / Yilmaz-Warren con r² = 0.98 sin declarar (a) que el modelo tiene siete parámetros libres ajustados conjuntamente sobre el mismo conjunto de datos, (b) que no se reporta cross-validation hold-out ni leave-one-out, y (c) que la crítica de Roberts y Pashler 2000 (*Psych Rev* 107: 358-367) sobre "How persuasive is a good fit? A comment on theory testing" advierte contra interpretar r² alto como evidencia de teoría correcta cuando los parámetros libres son comparables al número de observaciones. PDF Roberts-Pashler 2000 ausente en `07-bibliografia/`. Acción: fetch Roberts-Pashler 2000 y, antes de redactar el §"Costo argumental" del capítulo, declarar (a) número de parámetros libres, (b) ausencia de cross-validation, (c) la advertencia de Roberts-Pashler como costo asumido por el capítulo. Pendiente fetch. Origen: `Bitacora/2026-05-04-continuous-run/F05-07-r2-098-sin-roberts-pashler.md`.
 
 ## Cierre
 
@@ -5842,7 +5931,15 @@ Este dominio prueba que el aparato puede tratar fenómenos clásicamente difíci
 
 Este capítulo conjetura. No demuestra. La elevación a modo demostrativo requiere construir tareas y datos que no están en el manuscrito. La tesis no presenta este dominio como prueba; lo presenta como aplicación articulada con plan.
 
-## 11. Cierre
+## 11. Deuda residual
+
+Entradas operativas declaradas tras triage de bitácora huérfana (2026-05-11). Este capítulo opera en modo programático; las deudas precisan los fetchs y engagements bibliográficos necesarios antes de elevación a demostrativo.
+
+- **[F05-01 2026-05-11]** §2.6 (líneas 63-112) invoca "datos publicados sobre consolidación, memoria implícita, reconsolidación" sin citar a los autores canónicos de psicología y neurociencia de la memoria: Tulving 1972 (memoria episódica/semántica), Schacter 1996 (memoria implícita), Squire 1992 (memoria declarativa/no-declarativa) y Nader-Schafe-LeDoux 2000 (reconsolidación amigdalar). Ninguno de los PDFs está en `07-bibliografia/`. Acción: fetch Tulving 1972, Schacter 1996, Squire 1992, Nader et al. 2000 antes de cerrar engagement de §2.6 con paginación. Pendiente fetch. Origen: `Bitacora/2026-05-04-continuous-run/F05-01-memoria-sin-tulving.md`.
+- **[F05-02 2026-05-11]** §3 (líneas 114-156) desarrolla "yo como atractor de integración multinivel" mencionando RHI (Rubber Hand Illusion) pero sin engagement primario con Damasio 1999 (*The Feeling of What Happens*), LeDoux 2002 (*Synaptic Self*), Botvinick-Cohen 1998 (RHI original) ni Tsakiris 2010 (modelo bayesiano de ownership). PDFs ausentes en `07-bibliografia/`. Acción: fetch Damasio 1999, LeDoux 2002, Botvinick-Cohen 1998, Tsakiris 2010 antes de cerrar §3, o reescribir §3 declarando explícitamente que es "hipótesis programática sin engagement bibliográfico cerrado". Pendiente fetch. Origen: `Bitacora/2026-05-04-continuous-run/F05-02-yo-sin-damasio-ledoux.md`.
+- **[F05-03 2026-05-11]** §7.1 (líneas 220-225) omite la distinción de Block 1995 (*BBS*) entre consciencia de acceso (A-consciousness) y consciencia fenoménica (P-consciousness), central en filosofía de la conciencia post-1995. PDF Block 1995 ausente en `07-bibliografia/`. Acción: fetch Block 1995 antes de cerrar §7.1.1 con engagement explícito sobre cuál de las dos modalidades de consciencia es candidata legítima a κ-pragmática vs cuál queda fuera del alcance del aparato. Pendiente fetch. Origen: `Bitacora/2026-05-04-continuous-run/F05-03-block-access-vs-phenomenal.md`.
+
+## 12. Cierre
 
 > La mente no es cosa adicional al organismo, pero tampoco se deja agotar por una lista plana de eventos neuronales. Es atractor de integración corporal-cognitivo-afectivo-social-histórico cuya legitimidad como compresión depende de qué integra, qué conserva, para qué pregunta sirve, y qué predicción discriminante propone respecto a rivales identificables.
 
@@ -6078,6 +6175,12 @@ Y articula explícitamente que la elevación a modo demostrativo está al alcanc
 
 Este capítulo conjetura. La elevación a modo demostrativo requiere adoptar un caso específico publicado con datos cuantitativos y construir el dossier completo. El programa posterior se prioriza en capítulo 06-03.
 
+## 10. Deuda residual
+
+Entradas operativas declaradas tras triage de bitácora huérfana (2026-05-11).
+
+- **[F05-05 2026-05-11]** El caso 04 utiliza Lotka-Volterra y el caso 16 utiliza von Thünen como sondas ODE sin discutir el rango de validez ni las críticas canónicas de la teoría ecológica matemática: May 1973 (*Stability and Complexity in Model Ecosystems*) sobre el equilibrio inestable de comunidades complejas, y Levin 1992 (*Ecology* 73: pattern and scale) sobre la dependencia de la dinámica respecto a la escala espacio-temporal. PDFs ausentes en `07-bibliografia/`. Acción: añadir §4.7 "Justificación de sondas ecológicas" tras fetch May 1973 y Levin 1992, declarando explícitamente el rango de aplicabilidad de LV y von Thünen al corpus EDI y los costos de elegir esas sondas frente a alternativas (Holling 1973 resilience, Scheffer 2001 regime shifts). Pendiente fetch. Origen: `Bitacora/2026-05-04-continuous-run/F05-05-sondas-eco-sin-may-levin.md`.
+
 
 <p align="right"><sub><a href="#tabla-de-contenidos">↑ volver al índice</a></sub></p>
 
@@ -6207,6 +6310,12 @@ Este caso es valioso pedagógicamente: muestra con claridad mínima de filosofí
 ## 8. Limitación honesta
 
 Este capítulo articula la conjetura con claridad, pero falta el modelo dinámico cuantitativo con datos públicos que eleve a demostrativo. La elevación es plausible y se prioriza en hoja de ruta.
+
+## 9. Deuda residual
+
+Entradas operativas declaradas tras triage de bitácora huérfana (2026-05-11).
+
+- **[F05-12 2026-05-11]** §6.3 (línea 114) cita Beyer, Jones, Petoff y Murphy 2016 (*Site Reliability Engineering*) sin PDF en `07-bibliografia/`, declarando "mención secundaria". La tabla de homologías SLO ↔ tolerancia τ, error budget ↔ región de admisibilidad, circuit breaker ↔ operador ε, postmortem ↔ auditoría ontológica funciona retóricamente pero **no está formalizada**: ninguna de esas homologías está respaldada por isomorfismo declarado entre los operadores SRE y los operadores del aparato. Adicionalmente, el archivo de origen señala que el material sobre *circuit breaker* del libro está en el cap.22 ("Addressing Cascading Failures"), no en el cap.4 — aceptación previa confundía los capítulos. Acción: o bien reducir §6.3 a ilustración informal explícitamente declarada como tal (sin tabla de homologías), o fetch del PDF y formalización del isomorfismo con paginación correcta (cap.4 SLO/error budget; cap.22 circuit breaker). Pendiente fetch o degradación retórica. Origen: `Bitacora/2026-05-04-continuous-run/F05-12-sre-beyer-sin-pdf.md`.
 
 
 <p align="right"><sub><a href="#tabla-de-contenidos">↑ volver al índice</a></sub></p>
@@ -6937,6 +7046,14 @@ La tesis ocupa un punto difícil pero filosóficamente fértil:
 
 Eso es lo que la tesis quiere demostrar una y otra vez, hasta que incluso sus objeciones tengan que discutir en ese terreno.
 
+## Deuda residual
+
+Entradas operativas declaradas tras triage de bitácora huérfana (2026-05-11).
+
+- **[F04-01 2026-05-11]** §2 ("Dualismo de propiedades") trata al dualismo como una posición monolítica. Hallazgo: el dualismo de propiedades **naturalista** de Chalmers 1996 (*The Conscious Mind*) acepta sustrato físico — el "✗" en la columna A (sustrato físico) es hombre de paja contra la versión naturalista; sólo aplica al dualismo de propiedades **anti-naturalista**. PDF *The Conscious Mind* ausente en `07-bibliografia/`. Acción: dividir la fila 1 de la tabla en 1a (naturalista) y 1b (anti-naturalista) con valoraciones distintas en A; fetch Chalmers 1996. `needs_human` para validar la división filosófica. Origen: `Bitacora/2026-05-04-continuous-run/F04-01-tabla-rivales-dualismo-paja.md`.
+- **[F04-06 2026-05-11]** §13 (línea 422 aprox.) sostiene el eslogan "Wolfram fundamenta; la tesis disciplina" como complementariedad simétrica. Hallazgo: la complementariedad es asimétrica modalmente — si la Ruliad de Wolfram realiza su pretensión fundacional, la tesis material-relacional queda **subsumida** como caso particular de hypergraph rewriting, no preservada como alternativa. La complementariedad presupone que Wolfram no entrega su pretensión fundacional, lo cual es deuda futura no resuelta. Acción: declarar complementariedad asimétrica modal explícita (cláusula "si Wolfram entrega → tesis subsumida; si no → complementariedad sostenida"). Paralela en `04-debates/03-tabla-comparativa-rivales.md` §216. Origen: `Bitacora/2026-05-04-continuous-run/F04-06-wolfram-ruliad-asimetria-oculta.md`.
+- **[F04-10 2026-05-11]** §"Compromiso público" (línea 506) declara compromisos epistémicos sin árbitro externo: el manuscrito mismo evalúa si los compromisos se cumplen. Esto es auto-arbitraje. Acción: añadir cláusula de árbitro humano externo (H-S1 director, H-S2 jurado) para la evaluación post-defensa de los compromisos, o declarar explícitamente la limitación (auto-arbitraje preserva trazabilidad pero no objetividad inter-subjetiva). `needs_human` para designar árbitros. Paralela en `04-debates/03-tabla-comparativa-rivales.md` §222-224. Origen: `Bitacora/2026-05-04-continuous-run/F04-10-compromiso-publico-vacio.md`.
+
 
 <p align="right"><sub><a href="#tabla-de-contenidos">↑ volver al índice</a></sub></p>
 
@@ -7177,6 +7294,14 @@ Esta tabla es compromiso. Si en algún rival la tesis no muestra ventaja en al m
 - Limitaciones que sobreviven: capítulo 04-02.
 - Caso ancla canónico (donde se opera la discriminación contra modelos internos): capítulo 05-05.
 - Convergencia con Wolfram (programa futuro): capítulo 06-03.
+
+## Deuda residual
+
+Entradas operativas declaradas tras triage de bitácora huérfana (2026-05-11).
+
+- **[F04-01 2026-05-11]** Fila 1 de la tabla (Dualismo de propiedades, línea 34) marca "✗" en la columna A (sustrato físico). El dualismo de propiedades **naturalista** (Chalmers 1996) acepta sustrato físico; el "✗" es hombre de paja contra esa versión. Acción: dividir fila 1 en 1a (naturalista, A=✓) y 1b (anti-naturalista, A=✗); fetch Chalmers 1996 *The Conscious Mind*. `needs_human` para validar división filosófica. Paralela en `04-debates/01-debates-con-posiciones-rivales.md` §2. Origen: `Bitacora/2026-05-04-continuous-run/F04-01-tabla-rivales-dualismo-paja.md`.
+- **[F04-06 2026-05-11]** Fila Wolfram (línea 216 aprox.) presenta complementariedad simétrica con la tesis. Asimetría modal oculta: si la Ruliad realiza su pretensión fundacional, la tesis queda subsumida. Acción: añadir cláusula de complementariedad asimétrica modal en la nota de la fila. Paralela en `04-debates/01-debates-con-posiciones-rivales.md` §13. Origen: `Bitacora/2026-05-04-continuous-run/F04-06-wolfram-ruliad-asimetria-oculta.md`.
+- **[F04-10 2026-05-11]** "Compromiso público" (líneas 222-224) sin árbitro externo. Auto-arbitraje. Acción: añadir cláusula de árbitro H-S1/H-S2 o declarar explícitamente la limitación. Paralela en `04-debates/01-debates-con-posiciones-rivales.md` §506. Origen: `Bitacora/2026-05-04-continuous-run/F04-10-compromiso-publico-vacio.md`.
 
 
 <p align="right"><sub><a href="#tabla-de-contenidos">↑ volver al índice</a></sub></p>
@@ -7900,7 +8025,16 @@ Si en defensa una limitación es señalada por el tribunal, la respuesta canóni
 - `Bitacora/2026-04-28-cierre-pendientes/` — pre-registros honestos y auditorías severas.
 - Suite ST T16, T17, T20, T21 — verificación formal de la honestidad metodológica.
 
-## 8. Cierre
+## 8. Deuda residual (integración 2026-05-11)
+
+Entradas operativas declaradas tras triage de bitácora huérfana del modo continuo. Cada deuda enlaza a código fuente versionado en `09-simulaciones-edi/common/`.
+
+- **[TENG-05 2026-05-11]** El `metrics.json` del caso 19 (fase real) contiene `phases.real.edi.value=0.7278` mientras `(rmse_no_ode-rmse_abm)/rmse_no_ode = -0.000191` y `weighted_value = -0.000115`. El JSON mezcla dos ejecuciones; el valor publicado contradice los `errors` y el `weighted_value` del propio archivo. Caso 19 figura como "Trend Nivel 1*" en `05-aplicaciones/07-mapa-aplicaciones-corpus.md:140`. Acción: re-ejecutar `09-simulaciones-edi/19_caso_<nombre>/src/validate.py` con seed canónico; añadir assertion en `write_outputs()` de `hybrid_validator.py` que garantice `abs(value - (rmse_no_ode-rmse)/rmse_no_ode) < ε`; auditoría retroactiva sobre los 40 casos del corpus. **Crítico**: viola CLAUDE.md §4 ("gana el JSON" presupone JSON coherente). Origen: `Bitacora/2026-05-04-continuous-run/TENG-05-caso19-edi-inconsistencia-interna.md`.
+- **[TENG-08 2026-05-11]** En `09-simulaciones-edi/common/hybrid_validator.py:892-926`, el criterio C1 está implementado como `c1 = c1_relative OR c1_absolute` con la rama (B) (absoluta) **sin requerir aporte ODE** sobre la baseline no-ODE. Esto permite C1=True con EDI<0 (8 fases del corpus listadas en el archivo de origen). Acción: cambiar la lógica a `c1_fallback` diagnóstico (Salida 2 con flag explícito), no a `c1=True` directo; re-correr corpus con la corrección. Origen: `Bitacora/2026-05-04-continuous-run/TENG-08-c1-or-fallback-permite-edi-negativo.md`.
+- **[TENG-09 2026-05-11]** En `hybrid_validator.py:1560-1681`, la corrección de sesgo (BC) se calibra sobre train y se aplica a la serie completa (incluido val). El guarda actual sólo detecta degradación catastrófica; **no detecta sesgo bajo no-estacionariedad** del residuo BC en val. Acción: añadir test ADF (Augmented Dickey-Fuller) sobre el residuo BC en val con `α=0.05`; emitir warning en `metrics.json` cuando el residuo no sea estacionario. Origen: `Bitacora/2026-05-04-continuous-run/TENG-09-bias-correction-no-estacionariedad.md`.
+- **[TENG-11 2026-05-11]** En `hybrid_validator.py:1167` y :1831-1833, el umbral de "viscosidad" del atractor es `relaxation_time > 1`, que es trivialmente verdadero salvo en degeneración numérica; además `c_visc` NO está en `overall_pass`. Defectos compuestos: criterio trivial + no incorporado al gate. Acción: parametrizar el umbral relativo a la escala temporal del caso (`relaxation_time > k · dt`) y decidir si `c_visc` se incorpora a `overall_pass` o se documenta como diagnóstico secundario. Origen: `Bitacora/2026-05-04-continuous-run/TENG-11-viscosidad-umbral-trivial.md`.
+
+## 9. Cierre
 
 Una tesis sin límites nombrados es una tesis que aún no se ha sometido a sí misma a su propio filtro. Esta tesis nombra 20 limitaciones explícitas con entregable. Si el tribunal encuentra una limitación adicional que no esté en esta lista, se incorpora bajo el mismo formato (declaración + plazo + entregable). La política es: **nada se oculta; todo se fecha.**
 
@@ -8063,6 +8197,14 @@ Lo que el manuscrito no demuestra y reconoce explícitamente como deuda con plaz
 | Visualización del corpus | Scatter espacial × temporal, barras EDI con CI bootstrap, heatmap dominio × banda, espacio de fase del caso ancla | 1 mes | 5 figuras vectoriales SVG/PNG | **EJECUTADO** (`figures/corpus/`, `figures/caso30/`, `figures/mermaid_svg/`); CSV maestro con 42 casos en `figures/corpus/corpus_summary_table.csv` |
 | Anticipación filosófica de objeciones | Borradores estructurados (concesión / distinción / argumento / costo) para 7 objeciones críticas | Hito de cierre | Capítulo crítico con 7 secciones | **BORRADOR EJECUTADO** (`04-debates/04-anticipacion-objeciones-filosoficas.md`); validación filosófica de Jacob pendiente antes de estabilizarlo como capítulo definitivo. |
 | Conversión editorial pre-depósito | LaTeX/PDF + figuras SVG/PNG + plantilla institucional | 3 semanas pre-depósito | PDF institucional final | PDF intermedio generado (`TesisFinal/Tesis.pdf` 1.83 MB); figuras Mermaid convertidas a SVG vectorial (`figures/mermaid_svg/`) y PNG 1600×1200 (`figures/mermaid_png/`); conversión a plantilla institucional pendiente del momento del depósito |
+
+### 4.1. Deuda residual operativa (integración 2026-05-11)
+
+Hallazgos del triage de bitácora huérfana del modo continuo (`Bitacora/2026-05-04-continuous-run/`), integrados como deudas declaradas:
+
+- **[AU-6 2026-05-11]** La nota de la fila "Sondas inter-paradigma sobre arrays primarios reales" reporta "1/7 converge bajo |ΔEDI|≤0.10". Triage detecta que el denominador 7 mezcla 2 casos con arrays reales y 5 casos con arrays reconstruidos. La proporción honesta debe declararse como 1/2 reales y 0/5 reconstruidos, no como 1/7 agregado. Acción: ajustar la nota para descomponer la proporción y reflejar la diferencia en LoE de las fuentes; nota paralela en `06-cierre/04-versiones-cortas-defensa.md`. Cartwright 1999 queda DUDOSO (PDF ausente en `07-bibliografia/`). Origen: `Bitacora/2026-05-04-continuous-run/AU-6-multisonda-1-de-7.md`.
+- **[AU-9 2026-05-11]** El conteo de "casos null" colapsa tres regímenes operativamente distintos: (i) 5 nulls genuinos (EDI ≈ 0 con p > 0.05), (ii) 1 caso con EDI fuertemente negativo (degradación con acoplamiento), (iii) 2 casos rechazados por gate de criterios C1-C5 antes del cómputo de EDI. La cifra adversarial "-0.876" estaba mal atribuida. Acción: subdividir la tabla de null en tres filas con cuenta por régimen; paralela en `06-cierre/04-versiones-cortas-defensa.md` y `05-aplicaciones/07-mapa-aplicaciones-corpus.md`. Origen: `Bitacora/2026-05-04-continuous-run/AU-9-edi-negativo-no-es-null.md`.
+- **[F06-03 2026-05-11]** El conteo "4 strong" es **invariante** a la rejilla de umbrales 0.05-0.15 × 0.20-0.40 según `THRESHOLD_SENSITIVITY_REPORT.md`, pero el manuscrito no lo declara junto a la primera mención (líneas 5 y 55 del propio capítulo). Acción: edición mínima añadiendo el paréntesis de sensibilidad junto a la primera mención del numeral "4 strong", para anticipar la objeción de *threshold shopping* sin extender la prosa. Origen: `Bitacora/2026-05-04-continuous-run/F06-03-4-strong-threshold-shopping.md`.
 
 ## 5. Aporte conceptual sustantivo
 
