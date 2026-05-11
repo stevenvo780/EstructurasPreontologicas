@@ -1,188 +1,123 @@
 # Guía de defensa oral
 
-
 ## Tesis del capítulo
 
-> La tesis admite presentación en tres tiempos (2 minutos, 5 minutos, 15 minutos), con respuestas calibradas a las objeciones discriminantes (capítulo 01-02) y compromiso público con la matriz de fallo (capítulo 06-01). La defensa no esconde la asimetría entre caso ancla y dominios programáticos: la nombra como fortaleza programática, no como debilidad.
+> La defensa oral de la tesis se sostiene sobre cuatro instrumentos: una tesis canónica memorizable (§1), tres versiones cortas calibradas por duración (§2), un banco de respuestas a las objeciones más probables del tribunal (§3) y un conjunto de trampas a anticipar (§4). El material desarrollado y los formatos largos viven en `_extendido/` para consulta detallada. La defensa no esconde la asimetría entre caso ancla y dominios programáticos: la nombra como fortaleza programática, no como debilidad oculta.
 
-## 1. Versión de 2 minutos
+## 1. Tesis canónica memorizable (30 segundos)
 
-> Defiendo una tesis ontológico-epistemológica general que sostengo demostrada en un caso paradigmático y articulada en programa para los demás dominios. Sostengo que todo fenómeno empíricamente explicable está materialmente instanciado, pero que los objetos, niveles y categorías con los que lo pensamos son patrones relacionales estabilizados — atractores empíricamente identificables de sistemas dinámicos acoplados — no sustancias separadas. Mi aparato consiste en cinco operadores formales (medición μ, grafo G, hipergrafo H, compresión κ, expansión ε) con procedimiento empírico explícito; cuatro registros articulados (L1 psicológico, B conductual-biológico, L3 estructural-relacional, S semántica revisada); y un filtro de admisión de catorce componentes — el dossier de anclaje — que cualquier categoría debe pasar para ser admitida. Lo demuestro en behavioral dynamics, donde el modelo de Fajen y Warren predice rutas humanas con varianza explicada superior al 97% y discrimina contra modelos internos en cinco celdas. Articulo programa de extensión a mente, biología, sistemas técnicos e instituciones, con criterios explícitos de elevación. La tesis ocupa un punto difícil pero filosóficamente fértil: austera como el materialismo, sensible a la organización como el emergentismo, cuidadosa con las mediaciones como el constructivismo, rigurosa en su modelización como el formalismo, sin caer en ninguno.
+> Defiendo un irrealismo operativo de estructuras pre-ontológicas como **ontología, epistemología y metodología generales aplicables a cualquier escala**: las entidades nombradas en ciencia y filosofía son atractores empíricamente identificables de sistemas dinámicos acoplados, admisibles solo bajo dossier de anclaje y validación EDI por intervención ablativa. Lo justifico operativamente en 40 casos del corpus agregado (30 inter-dominio + 10 inter-escala desde 10⁻¹⁰ m hasta 10²⁰ m) con discriminación pública contra catorce rivales —incluido Wolfram—, condiciones de fracaso falsables y deuda residual fechada. El aparato rechaza honestamente cuando debe rechazar: el caso 30 v1 (EDI=0.002) fue rechazado a pesar de la expectativa del equipo, y solo la sonda v2 produjo Nivel 3 weak. La tesis discrimina, no glorifica.
 
-## 2. Versión de 5 minutos
+## 2. Versiones cortas por duración
 
-### Problema
+### 2.1. Versión de 2 minutos
 
-Muchas disciplinas heredan categorías que funcionan bien en lenguaje pero no necesariamente en explicación. Hablamos de mente, memoria, mercado, institución, servicio, organismo o identidad como si fueran cosas simples cuando a menudo condensan organizaciones complejas. La pregunta es bajo qué condiciones es legítimo reemplazar una categoría heredada por una construcción formal sin sustitución nominal.
+Defiendo una tesis ontológico-epistemológico-metodológica triple general y multiescalar bajo dirección de Jacob Agudelo (Universidad de Antioquia) con colaboración técnica de Steven Vallejo Ortiz.
 
-### Tesis
+**Problema:** muchas disciplinas reifican categorías heredadas a múltiples escalas (qubit, proteína, célula, mercado, organismo, estrella, cúmulo galáctico). La pregunta filosófica: ¿qué hay que hay y cómo lo conocemos sin reificarlo prematuramente a cualquier escala?
 
-Todo fenómeno empíricamente explicable está anclado en un sustrato material dinámico. Pero las unidades con las que lo describimos deben entenderse como recortes estructurales y relacionales bajo control epistemológico verificable, articulados como atractores empíricamente identificables de sistemas dinámicos acoplados.
+**Tesis:** todo fenómeno empíricamente explicable está anclado en sustrato material dinámico, pero las unidades son estructuras pre-ontológicas en sentido genético-epistemológico simondoniano —regularidades operativas anteriores al recorte categorial nominalizante—. Posición: irrealismo operativo = realismo estructural moderado + pluralismo epistemológico + anti-reificación operativa, como ontología, epistemología y metodología generales invariantes a la escala.
 
-### Aparato
+**Aparato:** cinco operadores formales (μ, G, H, κ, ε) sobre pregunta Q fechada, asimetría L1↔B↔L3↔S como protocolo, dossier de anclaje de catorce componentes, métrica EDI = 1 − RMSE_coupled / RMSE_no_ode por intervención ablativa con permutación 999 y bootstrap 500, protocolo C1-C5 con 13 condiciones simultáneas para `overall_pass=True`, suite ST de 24 teorías formales.
 
-Cinco operadores formales con procedimiento empírico, cuatro registros articulados, filtro de admisión de catorce componentes. Cada categoría candidata debe traer dossier que incluya pregunta fechada, variables operacionalizadas, sustrato material, grafo de dependencias, compresión justificada por baja dimensionalidad, atractores empíricos, predicción discriminante contra rival explícito.
+**Justificación operativa:** corpus inter-dominio con 4 strong con gate completo (Energía 0.65, Deforestación 0.60, Kessler 0.35, Riesgo Biológico 0.33), 1 strong sin gate (Microplásticos 0.78), 8 weak, 3 controles de falsación correctamente rechazados; corpus inter-escala con 7 strong en 7 escalas distintas (atómica, cuántica, bioquímica, celular oscilatoria, individual, astrofísica, astrofísica masiva). Hostile testing: 0/2000 falsos positivos del gate completo bajo random walk masivo (Wilson 95 % CI [0, 0.00191]). Discriminación pública contra catorce rivales, incluido Wolfram con piloto Rule 110 ejecutado (EDI = 0.55, convivencia de irreducibilidad micro y cierre macro detectable).
 
-### Criterio central
+**Lección epistémica:** los 40 casos son justificación operativa del marco tripartito; NO son la tesis. La tesis son los tres marcos generales; los casos muestran que sus afirmaciones son ejecutables, discriminantes y transferibles entre escalas.
 
-Una compresión es legítima si preserva las dependencias relevantes para la pregunta con tolerancia explícita y produce predicción o intervención discriminante. La emergencia es self-organization de sistemas acoplados (sentido técnico anclado en cap 02-04 §4: Maturana-Varela 1980, Haken 1977), no sustancia nueva. La causalidad es circular y completamente material.
+### 2.2. Versión de 5 minutos
 
-### Demostración
+Disponible en `06-cierre/_extendido/versiones-cortas-defensa.md §2`.
 
-En behavioral dynamics el aparato se implementa completo. Warren (2006, p. 358) lo formula así: «the agent and its environment are treated as a pair of dynamical systems that are coupled mechanically and informationally [...] stable behavioral solutions correspond to attractors in the behavioral dynamics, and transitions between behavioral patterns correspond to bifurcations»; este es exactamente el patrón que la tesis usa como caso anclado (junto con Fajen-Warren 2003): locomoción con r²=0.980, frenado con r²=0.98, equilibrio activo con τ_bal entre 0.5 y 1.0, raqueteo en zona pasivamente estable. Discriminación contra modelos internos / control óptimo en cinco celdas de la tabla.
+### 2.3. Versión de 15 minutos
 
-### Programa
+Disponible en `06-cierre/_extendido/versiones-cortas-defensa.md §3`.
 
-Mente, biología, sistemas técnicos e instituciones quedan en modo programático con criterios de elevación: qué datos faltan, qué rival se enfrentaría, qué predicción discriminante se buscaría. La asimetría no se disimula; se convierte en hoja de ruta.
+## 3. Respuestas a las objeciones más probables del tribunal
 
-### Consecuencia
+Banco compactado de las 7 preguntas con mayor probabilidad de aparición. Cada una se responde de memoria en menos de 30 segundos. El banco completo (12 preguntas con referencias paginadas al capítulo verificador) está en `06-cierre/_extendido/respuestas-tipo-defensa.md`.
 
-Los niveles superiores son legítimos cuando capturan organización real, sin postular sustancias nuevas. El modelo no es la realidad, pero puede capturar restricciones reales. La filosofía de la mente, la biología, la sociología y la informática comparten matriz de auditoría ontológica común.
+### P1. ¿Por qué "Estructuras Pre-Ontológicas" si la tesis afirma ontología material-relacional?
 
-## 3. Versión de 15 minutos
+«Pre-ontológico» es término técnico en sentido genético-epistemológico simondoniano, no temporal: significa anterior al recorte categorial nominalizante, no anterior temporalmente al sustrato material. Cinco sentidos del prefijo «pre» se distinguen en el manuscrito; tres se rechazan explícitamente.
 
-### 1. Punto de partida
+**Verificación:** cap 02-01 §0.2.1 (rechazos) y §0.2.2 (adopciones).
 
-El borrador inicial parte de una intuición: no debemos confundir el sustrato material con las categorías que usamos para describirlo. Pero la intuición sola no basta. Necesita aparato, casos, comparación rival, criterios públicos de fallo.
+### P2. ¿Cómo distinguen su irrealismo operativo del instrumentalismo de van Fraassen?
 
-### 2. Problema filosófico
+El instrumentalismo puro afirma que los modelos son herramientas sin compromiso estructural. El irrealismo operativo afirma que las estructuras pre-ontológicas son reales en sentido moderado (atractores materialmente sostenidos), pero su descripción cuantitativa depende del aparato. La distinción se operacionaliza vía κ-pragmática (lo demostrado) vs κ-ontológica fuerte (lo postulado, requiere convergencia inter-grupo).
 
-El lenguaje heredado tiende a reificar. El reduccionismo plano no resuelve el problema, solo lo desplaza al nivel inferior. El emergentismo fuerte multiplica sustancias. El constructivismo arbitrario entrega cualquier recorte. El formalismo vacío produce elegancia sin captura. La tesis intenta ocupar un punto distinto.
+**Verificación:** cap 02-01 §Nota sobre κ + cap 04-01 §6.
 
-### 3. Núcleo de la tesis
+### P3. ¿No es esto behavioral dynamics renombrado, o colcha de retazos de Bechtel-Craver / Dennett / Ladyman-Ross / Hoel?
 
-Hay una sola realidad material, dinámica y multiescala. Los objetos, sistemas y niveles son patrones estabilizados — atractores empíricamente identificables de sistemas dinámicos acoplados con cuenca, bifurcaciones y discriminación inferencial.
+No. El corpus agregado de 40 casos cubre dominios y escalas muy lejos de behavioral dynamics: espín-órbita atómica (10⁻¹⁰ m), decoherencia cuántica, plegamiento de proteína, ciclo celular, cúmulos globulares (10²⁰ m). 30 órdenes de magnitud refutan la objeción de regionalidad encubierta. Y la novedad frente a marcos vecinos no es de inventario sino de articulación: dossier de 14 componentes + asimetría L1↔B↔L3↔S como filtro de admisión simultáneo + cartografía con falsación + hostile testing + suite ST. Cada marco vecino captura una pieza; ninguno las reúne.
 
-### 4. Asimetría L1↔B↔L3↔S
+**Verificación:** cap 04-01 (discriminación caso por caso) + cap 04-03 (tabla síntesis).
 
-L1 fija qué pregunta importa. B (conductual-biológico) ancla la respuesta: organismo + entorno + información ecológica + tarea + historia. L3 reconstruye formalmente las dependencias. S recoge las categorías que sobreviven a la auditoría. La asimetría es protocolo: cada parámetro de L3 debe traducirse a variable de B, o no se admite.
+### P4. La cláusula "el nivel correcto depende de la pregunta" parece máquina de inmunización.
 
-### 5. Herramienta metodológica
+La pregunta Q se fija fechada antes del intento de modelización, con tolerancia explícita y régimen de medición preestablecido. Cambiar Q después del fallo está prohibido por el protocolo. Las revisiones se documentan como nuevas Q. El aparato rechazó el caso 30 v1 (EDI=0.002) a pesar de la expectativa del equipo: si fuera máquina de inmunización, ese rechazo no habría ocurrido.
 
-Compresión κ y expansión ε. Tratamos como unidad lo que puede comprimirse sin pérdida relevante para Q; expandimos cuando la estructura interna sí cambia la inferencia. La compresión se opera empíricamente vía baja dimensionalidad (PCA, ajuste de sistemas dinámicos, validación por reproducción, generalización, topología, intervención).
+**Verificación:** cap 03-01 §2 + cap 06-01 §3.5.
 
-### 6. Aparato formal
+### P5. Su p-value declarado tiene tasa empírica de tipo I de 24%, no 5%. ¿Cómo se sostiene la inferencia?
 
-Cinco operadores: μ medición, G grafo, H hipergrafo, κ compresión, ε expansión. Cada uno con criterio de admisión y de fallo. Q es pregunta paramétrica fechada con tolerancia y régimen de medición. Cambiar Q después del fallo invalida el ciclo: cierra la objeción de irrefutabilidad por nivel.
+La inferencia del manuscrito NO descansa en el p-value declarado sino en los umbrales EDI, que sí son robustos bajo hostile testing. Bajo random walk masivo (2000 ejecuciones agregadas N1+V4_06+N5; Wilson 95 % CI sobre 0/2000 = [0, 0.00191]), 0 % supera el umbral strong (EDI ≥ 0.30) y solo 0.6 % supera weak (EDI ≥ 0.10). Los 4 casos `overall_pass=True` se sostienen porque están por encima de umbrales que el ruido puro no alcanza. La calibración correcta del p-value es refinamiento metodológico fechado en deuda residual.
 
-### 7. Filtro de admisión
+**Verificación:** cap 06-01 §8.2 (L1) + glosario operativo entrada EDI.
 
-Dossier de catorce componentes que cualquier categoría debe llevar para ser admitida. Sin dossier completo, la categoría no entra en el manuscrito como modo demostrativo; entra programática con criterio de elevación, o no entra.
+### P6. Su corpus inter-escala está sobre datos sintéticos. ¿Por qué llamarla ontología general multiescalar?
 
-### 8. Demostración: behavioral dynamics
+Lo declaramos abiertamente: los datos son sintéticos derivados de parámetros publicados (Lindblad, Bloch, Tyson-Novak, Hoffmann, Mackey-Glass, Leavitt, Plummer). Lo que el corpus demuestra hoy es que el aparato y las sondas son estructuralmente transferibles entre escalas sin reentrenar arquitectura, verificado por test cruzado V4-01 (0/12 circularidad). La elevación a datos reales abiertos (IBM Quantum, BRENDA, PhysioNet, OGLE, Gaia DR3) está fechada como deuda priorizada de 6–12 meses post-defensa. La afirmación es operativamente articulada con demostración parcial, no κ-ontológica fuerte.
 
-Caso ancla canónico. Cuatro tareas (raqueteo, equilibrio, frenado, locomoción) con datos públicos, ecuaciones ajustadas, predicciones cumplidas. Locomoción con r²=0.980 (meta) y 0.975 (meta + obstáculo). Frenado con τ̇=−0.52 y r²=0.98. Equilibrio activo con τ_bal entre 0.5 y 1.0. Raqueteo concentrado en zona pasivamente estable. Comparación rival con modelos internos: discriminación en cinco celdas.
+**Verificación:** cap 06-01 §8.2 + L7 de las limitaciones declaradas.
 
-### 9. Valor comparativo
+### P7. ¿Qué tendría que pasar para que su tesis fracase?
 
-Discriminación pública contra catorce posiciones rivales (capítulo 04-01). Ningún rival absorbe la tesis sin diferencia. El más cercano — mecanicismo multinivel — carece del filtro completo y de la asimetría como protocolo formal. La tesis se entiende como mecanicismo multinivel disciplinado.
+**Cinco escenarios falsables canónicos** (consolidados tras cierre 2026-05; originalmente la guía mencionaba 4 escenarios coincidentes entre `06-02` y `06-04`, y el cierre del manuscrito incorporó «un rival absorbe la tesis» como quinto criterio público de fracaso, presente en algunas formulaciones como complementario):
 
-### 10. Programa
+1. **Los 4 casos `overall_pass` se desmoronan** empíricamente bajo perfiles agresivos o ante baselines estadísticos puros (ARIMA, VAR, RW, GP) que igualen o superen la métrica EDI.
+2. **Los 3 controles de falsación** (random walk masivo + dos sintéticos de control) **dejan de rechazarse** bajo re-ejecución independiente.
+3. **Ningún caso programático se eleva a Nivel 3 weak** tras dossier completo y datos reales, en plazo de 24 meses post-defensa.
+4. **La asimetría L1↔B↔L3↔S no se sostiene** en algún dominio relevante: parámetros de L3 sin traducción a variable medible de B, o B sin reconstrucción consistente en L3.
+5. **Un rival absorbe la tesis** sin diferencia discriminante público: alguna posición rival captura las cinco piezas articuladas (dossier + asimetría + cartografía + hostile testing + suite ST) sin restos identificables del marco propio.
 
-Mente, biología, sistemas técnicos, instituciones en modo programático con criterios de elevación. La asimetría con el caso ancla se nombra como hoja de ruta, no como debilidad oculta.
+Cada escenario es falsable, fechado, con criterios públicos. La lista exhaustiva de limitaciones declaradas (L1-L20) vive en cap 04-05.
 
-### 11. Condiciones de fracaso
+**Verificación:** cap 06-01 §2 + cap 04-05 (consolidación de limitaciones).
 
-Cuatro escenarios falsables: caso ancla se desmorona, ningún programático se eleva, el aparato no escala, la asimetría no se sostiene en algún dominio relevante. La tesis acepta los términos de su propia pérdida.
+### Banco extendido
 
-### 12. Cierre
+P8 (Wolfram), P9 (¿qué aporta frente a un materialismo conocido?), P10 (¿no estás reformulando emergentismo débil?), P11 (datos humanos reales en behavioral dynamics), P12 (revisión por pares externos pendiente) están en `06-cierre/_extendido/respuestas-tipo-defensa.md` con sus referencias paginadas.
 
-Explicar es elegir el nivel de descripción que preserva la organización relevante con el menor costo, validado por predicción y por intervención discriminante. La tesis no clausura la complejidad; ofrece reglas para no empeorarla con malas categorías.
+## 4. Trampas a anticipar
 
-## 4. Preguntas probables del tribunal
+### Trampa 1. El interlocutor reduce la tesis a su caso ancla o a marcos vecinos
 
-### Pregunta 1. ¿Qué aporta tu tesis frente a un materialismo ya conocido?
+Las dos formulaciones más frecuentes («esto es behavioral dynamics renombrado», «esto ya está en Bechtel-Craver / Dennett / Ladyman-Ross / Hoel») se responden con P3.
 
-**Respuesta breve**: aporta una teoría explícita de patrones como atractores empíricos, una articulación protocolar L1↔B↔L3↔S, un filtro de admisión de catorce componentes, una operacionalización empírica de κ vía baja dimensionalidad, y un caso ancla con discriminación pública. No se limita a decir que todo es material; especifica cómo deben justificarse las unidades con las que pensamos lo material.
+### Trampa 2. El interlocutor ataca la generalidad
 
-### Pregunta 2. ¿No estás simplemente reformulando un emergentismo débil?
+«Esto es teoría regional con pretensiones generales.» La generalidad se justifica operativamente: corpus inter-escala con 10 casos en 8 escalas distintas, 30 órdenes de magnitud cubiertos, test cruzado de sondas con 0/12 circularidad. La pretensión es ontológica general multiescalar operativamente articulada con demostración parcial, no demostración cerrada —pero tampoco regional encubierta—.
 
-**Respuesta breve**: no, porque no presento la organización como sustancia nueva. La trato como self-organization en sentido técnico (cap 02-04 §4, Maturana-Varela 1980, Haken 1977): estabilización dinámica del sistema acoplado verificable por cuenca de atracción y bifurcación. La diferencia es operativa, no retórica.
+### Trampa 3. El interlocutor pide eliminar mente, memoria o categorías sociales
 
-### Pregunta 3. ¿Cómo decides cuándo una categoría es legítima?
+La tesis NO es eliminativa. Reformula: las categorías se admiten como compresiones legítimas si pasan auditoría (dossier completo + protocolo C1-C5 + EDI + discriminación contra rival). Mente, memoria, instituciones se discuten en cap 05-01 y 05-04 con conjeturas articuladas y criterios de elevación. La eliminación es opción rechazada explícitamente, no propuesta.
 
-**Respuesta breve**: por dossier de anclaje completo de catorce componentes y por discriminación verificable contra rival explícito. Si no hay dossier o no hay discriminación, la categoría no entra en modo demostrativo. Puede entrar programática con criterio de elevación.
+### Trampa 4. El interlocutor cuestiona el conteo de escenarios falsables
 
-### Pregunta 4. ¿Por qué usar formalismo si tu tesis es filosófica?
+Si el evaluador señala incoherencia entre 4, 5 o 6 escenarios falsables a lo largo del manuscrito, la respuesta canónica es: **5 escenarios** (los enumerados en §3 P7), consolidados tras cierre 2026-05. Las limitaciones (L1-L20 en cap 04-05) son una lista más fina y específica; los «escenarios de fracaso global» son un subconjunto declarado en cap 06-01. La diferencia con 4 corresponde a versiones tempranas del manuscrito que no incluían «un rival absorbe la tesis» como condición separada; la diferencia con 6 corresponde a categorías de cap 04-02 que ahora viven subsumidas en L1-L20.
 
-**Respuesta breve**: para disciplinar distinciones y evitar ambigüedades, sí. Pero más importante: porque cada operador formal trae procedimiento empírico que conecta con datos publicados. El formalismo no sustituye al argumento; lo somete a verificación contra observables.
+## 5. Fórmula final para cerrar oralmente
 
-### Pregunta 5. ¿Qué significa exactamente `material` en tu proyecto?
-
-**Respuesta breve**: no fisicalismo de partículas. Toda condición efectiva de instanciación: cuerpos, campos, energía, infraestructuras, soportes, prácticas materialmente sostenidas, configuraciones dinámicas. La materialidad es multiescalar y heterogénea organizada.
-
-### Pregunta 6. ¿No vuelves demasiado vaga la idea de patrón?
-
-**Respuesta breve**: no. Patrón estabilizado se define técnicamente como atractor empíricamente identificable con cinco condiciones de admisión: variables componentes, estabilidad asintótica, cuenca de atracción, comportamiento bajo bifurcación, discriminación inferencial. Una regularidad que no satisface las cinco no es patrón en el sentido del marco.
-
-### Pregunta 7. ¿No es tu tesis una colcha de retazos de marcos vecinos?
-
-**Respuesta breve**: no. La novedad no es de inventario sino de articulación: dossier de anclaje + asimetría L1↔B↔L3↔S como filtro de admisión simultáneo. Ningún marco vecino reúne las cinco piezas (ontología material, epistemología empírica, asimetría protocolar, dossier filtrante, caso ancla discriminante) en la misma arquitectura. La tabla del capítulo 04-01 documenta la discriminación.
-
-### Pregunta 8. Solo demuestras un caso. ¿Cómo lo justificas?
-
-**Respuesta breve**: lo nombro explícitamente. La tesis se presenta en dos modos disjuntos: demostrativo (caso ancla canónico, dossier completo) y programático (cuatro dominios con criterios de elevación). La asimetría no es defecto oculto; es estructura del programa de investigación. Trabajar más casos es exactamente la hoja de ruta posterior.
-
-### Pregunta 9. ¿Qué tendría que pasar para que tu tesis fracase?
-
-**Respuesta breve**: cuatro escenarios falsables. Caso ancla se desmorona empíricamente. Ningún programático se eleva tras trabajo serio. El aparato no escala a dimensionalidad genuinamente alta. La asimetría L1↔B↔L3↔S no se sostiene en algún dominio relevante. Cada escenario está nombrado en capítulo 06-01 y se acepta como condición de fracaso.
-
-### Pregunta 10. La cláusula `el nivel correcto depende de la pregunta` parece máquina de inmunización. ¿Cómo respondes?
-
-**Respuesta breve**: la pregunta Q se fija fechada antes del intento de modelización, con tolerancia explícita y régimen de medición preestablecido. Cambiar Q después del fallo está prohibido por el protocolo. Las revisiones se documentan como nuevas Q. Esto cierra la inmunización: cada aplicación del marco lleva fecha y criterio.
-
-### Pregunta 11. Su p-value declarado tiene tasa empírica de tipo I de 24%, no 5%. ¿Cómo se sostiene la inferencia?
-
-**Respuesta breve**: la inferencia del manuscrito **no descansa en el p-value declarado, sino en los umbrales EDI**, que sí son robustos bajo hostile testing. Bajo random walk masivo (1500 ejecuciones), 0% supera el umbral strong (EDI ≥ 0.30) y sólo 0.6% supera weak (EDI ≥ 0.10). Por eso los 4 casos `overall_pass=True` y los 7 strong inter-escala se sostienen: están por encima de umbrales que el ruido puro no alcanza. La calibración correcta del p-value es refinamiento metodológico fechado en la deuda residual (cap 06-01), no condición previa de admisión de los hallazgos. Esta distinción —inferencia por umbrales robustos vs. inferencia por p-value calibrado— está declarada en el manuscrito y no se esconde.
-
-### Pregunta 12. Su corpus inter-escala está sobre datos sintéticos. ¿Cómo lo defienden?
-
-**Respuesta breve**: lo declaramos abiertamente. Los datos del corpus inter-escala son sintéticos derivados de parámetros publicados en literatura disciplinar (Lindblad, Bloch, Tyson-Novak, Hoffmann, Mackey-Glass, Leavitt, Plummer). La elevación a datos reales abiertos (IBM Quantum, BRENDA, PhysioNet, OGLE, Gaia DR3) está fechada como deuda priorizada de 6–12 meses post-defensa. Lo que el corpus inter-escala demuestra **hoy** es que el aparato y las sondas son **estructuralmente transferibles entre escalas** sin reentrenar arquitectura, verificado por test cruzado V4-01 (0/12 circularidad detectada sobre datos no-suyos). Lo que **NO** afirma es que ya existe validación experimental directa sobre datos reales en cada escala — eso es deuda. La distinción entre transferibilidad estructural verificada y validación empírica directa pendiente está explícita en cap 06-01 §8.2.
-
-## 5. Qué conviene enfatizar
-
-- la tesis es general en estructura pero regional en demostración, y eso se nombra explícitamente;
-- distingue con claridad ontología, modelo y categoría;
-- ofrece criterios públicos, no solo intuiciones;
-- tiene caso ancla con datos publicados y discriminación verificable;
-- reconoce sus límites y nombra deuda residual con plazo;
-- trata a sus rivales en su forma fuerte, no en silueta.
-
-## 6. Qué conviene evitar
-
-- responder con demasiados ejemplos antes de fijar la tesis;
-- abusar de la palabra `relacional` sin especificar dependencias;
-- presentar el formalismo como si resolviera por sí mismo el problema;
-- prometer que la tesis explica todos los dominios con el mismo detalle;
-- esconder la asimetría entre demostrativo y programático;
-- responder objeciones con reformulaciones retóricas en lugar de compromisos verificables.
-
-## 7. Trampas a anticipar
-
-### Trampa 1. El interlocutor reduce la tesis a su caso
-
-Si el interlocutor dice "esto es behavioral dynamics renombrado", recordar que el caso ancla **demuestra** la tesis, no la agota. La generalidad ontológica es del marco; la demostración es regional. La extensión programática está articulada con criterios.
-
-### Trampa 2. El interlocutor disuelve la tesis en marcos vecinos
-
-Si el interlocutor dice "esto ya está en Bechtel-Craver / Dennett / Ladyman-Ross", recordar que la novedad es la articulación dossier + asimetría L1↔B↔L3↔S. Cada marco vecino captura una pieza; ninguno las reúne con el filtro de admisión.
-
-### Trampa 3. El interlocutor ataca la generalidad
-
-Si el interlocutor dice "esto es teoría regional con pretensiones generales", responder: la pretensión general es de marco, no de demostración; la asimetría está nombrada; la hoja de ruta extiende el programa. Esto no es debilidad; es honestidad.
-
-### Trampa 4. El interlocutor pide eliminar mente o memoria
-
-Si el interlocutor dice "estás eliminando categorías mentales", recordar: la tesis no es eliminativa. Reformula: las categorías se admiten como compresiones legítimas si pasan auditoría. Mente, memoria, yo se discuten en capítulo 05-01 con conjetura articulada y criterios de elevación. La eliminación es opción rechazada, no propuesta.
-
-## 8. Deuda residual
-
-Entradas operativas declaradas tras triage de bitácora huérfana (2026-05-11).
-
-- **[F04-08 2026-05-11]** La Trampa 4 (líneas 174-176) responde a la objeción eliminativista "eliminar de más" (la tesis no es eliminativa). Falta la respuesta complementaria a "eliminar **de menos**": los propios casos null del corpus podrían exigir eliminación regional de la categoría correspondiente (si la sonda no detecta cierre operativo, ¿por qué se preserva el término?). Acción: añadir sub-trampa 4b a la Trampa 4 articulando la doble exigencia (no eliminar de más, no preservar de más); paralela en `06-cierre/05-respuestas-tipo-defensa.md:119`. `needs_human` para corte filosófico sobre umbral de eliminación regional. Origen: `Bitacora/2026-05-04-continuous-run/F04-08-eliminativismo-respuesta-incompleta.md`.
-
-## 9. Fórmula final para cerrar oralmente
-
-> Mi tesis sostiene que la realidad es material, pero que nuestras unidades explicativas son compresiones controladas de patrones relacionales — atractores empíricamente identificables de sistemas dinámicos acoplados. Por eso no basta heredar categorías ni reducir todo a partes aisladas: hay que justificar el nivel de descripción que conserva mejor la estructura relevante para una pregunta determinada con tolerancia explícita, traducibilidad B↔L3, predicción discriminante contra rival, y dossier completo. Lo demuestro en behavioral dynamics; lo articulo en programa de extensión; lo someto a condiciones de fracaso falsables; lo discrimino contra rivales identificables. La filosofía propuesta no clausura la complejidad de lo real; ofrece reglas para no empeorarla con malas categorías.
+> Mi tesis sostiene que la realidad es material y dinámica, pero las unidades con que la pensamos son **estructuras pre-ontológicas** —atractores empíricamente identificables bajo dossier de anclaje y validación EDI por intervención ablativa—. Lo justifico en 40 casos del corpus agregado con discriminación pública contra catorce rivales —incluido Wolfram—, condiciones de fracaso falsables y reconocimiento honesto de veinte limitaciones declaradas. La filosofía propuesta no clausura la complejidad de lo real; ofrece reglas para no empeorarla con malas categorías. Y demuestra esas reglas al rechazar honestamente cuando debe rechazar.
 
 Esa es la frase que debería poder sobrevivir incluso si el resto del día filosófico se incendia un poco.
+
+## 6. Lectura cruzada
+
+- `06-cierre/_extendido/versiones-cortas-defensa.md` — versiones 5 min y 15 min completas.
+- `06-cierre/_extendido/respuestas-tipo-defensa.md` — banco completo de 12 P&R con referencias paginadas.
+- `06-cierre/01-conclusion-demostrativa.md` — siete condiciones de demostración y deuda residual.
+- `04-debates/01-debates-con-posiciones-rivales.md` y `04-debates/03-tabla-comparativa-rivales.md` — discriminación detallada por rival.
+- `04-debates/05-limitaciones-declaradas-consolidacion.md` — lista exhaustiva L1-L20.

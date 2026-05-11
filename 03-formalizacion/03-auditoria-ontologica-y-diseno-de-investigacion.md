@@ -245,9 +245,13 @@ Craver (2007, *Explaining the Brain*, cap. 4, p. 152) define el criterio de **mu
 
 Mitchell defiende coexistencia de modelos parciales para fenómenos complejos. La auditoría la admite con condición: cada modelo parcial debe llevar dossier con su Q específica. Pluralismo no es mezcla; es articulación bajo criterios.
 
-### 10.5. Ladyman y Ross — realismo estructural
+### 10.5. Ladyman y Ross — rival eliminativista en el espacio de auditorías ontológicas
 
-Ladyman y Ross sugieren tomar la estructura como ontología fundamental. La auditoría adopta estructura como objeto del análisis, pero se compromete con sustrato material como ontología base: la estructura es estructura **del** sustrato, no estructura sin sustrato.
+Ladyman y Ross (2007, *Every Thing Must Go*, cap. 3, p. 130) toman la estructura como ontología fundamental al precio de eliminar los individuos auto-subsistentes: *"even the identity and individuality of objects depends on the relational structure of the world. Hence, a first approximation to our metaphysics is: 'There are no things. Structure is all there is.'"* En su versión Rainforest Realism (cap. 4, p. 191) admiten que los individuos son "legitimate book-keeping devices" de las ciencias especiales, pero subordinados a un criterio de patrones reales que no exige sustrato material en los términos de esta tesis.
+
+La auditoría ontológica de este capítulo se sitúa en posición contraria: el sustrato material y sus procesos son ontológicamente primeros; las estructuras (atractores, invariantes bajo κ, regularidades que pasan el dossier) son **propiedades operativas del sustrato**, no entidades autónomas que lo dispensen. La consecuencia metodológica es directa para la auditoría: los criterios Fase 5 (patrones de orden superior) y Fase 6 (compresión legítima) operan sobre **individuos materialmente sostenidos** —átomos, organismos, instituciones— cuya admisión exige dossier empírico, no derivación a partir de estructura modal fundamental. La diferencia con L&R no es retórica: si OSR fuese correcta, el criterio A del dossier (anclaje material) sería redundante; en la tesis, ese criterio es decisivo.
+
+Por tanto OSR cuenta en el cuadro de la auditoría como **rival** en el espacio de posiciones, no como referente afín. La tabla comparativa con rivales (cap 04-03, criterio A) codifica esta discrepancia. La etiqueta "realismo estructural moderado" se usa en sentido operativo no-Ladyman; el glosario (`00-proyecto/07-glosario-operativo.md`) declara esta convención de lectura.
 
 ## 11. Resultado metodológico
 

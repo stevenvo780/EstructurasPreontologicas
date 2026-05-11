@@ -137,7 +137,7 @@ Reproducibilidad: el caso 16 ha sido re-ejecutado con datos World Bank descargad
 | 03 | Contaminación PM2.5 | -0.0901 | Sin estructura macro detectable bajo régimen real-phase actual |
 | 12 | Paradigmas (ciencia) | -0.1536 | Reflexividad; null bajo régimen real-phase actual |
 | 17 | Océanos (temperatura) | -0.0154 | Sin sonda específica |
-| 19 | Acidificación oceánica | 0.7278 | EDI elevado pero p=0.49 (no significativo); promovido a Nivel 1\* trend con cautela inferencial — candidato a re-evaluación con sondas físicas alternativas |
+| 19 | Acidificación oceánica | 0.00044 | **Null genuino tras re-ejecución canónica 2026-05-11** (EDI=0.00044, p_perm=0.433, CI=[0.00023, 0.00065], n_perm=2999). El `metrics.json` previo (`edi.value=0.7278`) era inconsistente internamente (TENG-05): mezclaba dos ejecuciones; los `errors` almacenados implicaban `computed_edi=-0.000191`. La re-ejecución coherente clasifica el caso como null. **Caveat de datos:** `data/dataset.csv` PMEL/NOAA no estaba versionado; se usó proxy sintético calibrado a estadísticas del run original. Reproducción bit-a-bit requiere fetch del CSV NOAA real. Block-permutation no implementada (i.i.d. Phipson-Smyth); con EDI≈0 y p=0.43 el resultado null tiene margen amplio. Detalle en `Bitacora/2026-05-11-sintesis-tesis/F5-A-caso19-reejecucion.md`. |
 | 23 | Erosión dialéctica | -1.0000 | Categoría mal definida |
 | 25 | Acuíferos | -0.1462 | Datos heterogéneos |
 | 29 | IoT | -0.8760 | Reflexividad técnica |
@@ -230,7 +230,7 @@ El caso 30 (Nivel 3 weak) demuestra que **el aparato EDI funciona en escala beha
 
 Entradas operativas declaradas tras triage de bitácora huérfana (2026-05-11).
 
-- **[AU-9 2026-05-11]** El Bloque VI (Null, Nivel 0, líneas 128-143) agrega ocho casos sin distinguir tres regímenes operativamente distintos: (i) cinco nulls genuinos (EDI ≈ 0, p > 0.05), (ii) un caso con EDI fuertemente negativo (degradación bajo acoplamiento), (iii) dos casos rechazados por gate C1-C5 antes del cómputo de EDI. La cifra adversarial "-0.876" estaba mal atribuida en versiones previas. Acción: subdividir el bloque en tres etiquetas distintas en la próxima pasada; el conteo agregado preserva el total pero pierde la diferencia operativa entre "el aparato no detecta señal" vs "el aparato detecta degradación" vs "el aparato rechaza antes de calcular". Paralela en `06-cierre/01-conclusion-demostrativa.md` §4.1 y `06-cierre/04-versiones-cortas-defensa.md`. Origen: `Bitacora/2026-05-04-continuous-run/AU-9-edi-negativo-no-es-null.md`.
+- **[AU-9 2026-05-11]** El Bloque VI (Null, Nivel 0, líneas 128-143) agrega ocho casos sin distinguir tres regímenes operativamente distintos: (i) cinco nulls genuinos (EDI ≈ 0, p > 0.05), (ii) un caso con EDI fuertemente negativo (degradación bajo acoplamiento), (iii) dos casos rechazados por gate C1-C5 antes del cómputo de EDI. La cifra adversarial "-0.876" estaba mal atribuida en versiones previas. Acción: subdividir el bloque en tres etiquetas distintas en la próxima pasada; el conteo agregado preserva el total pero pierde la diferencia operativa entre "el aparato no detecta señal" vs "el aparato detecta degradación" vs "el aparato rechaza antes de calcular". Paralela en `06-cierre/01-conclusion-demostrativa.md` §4.1 y `06-cierre/_extendido/versiones-cortas-defensa.md`. Origen: `Bitacora/2026-05-04-continuous-run/AU-9-edi-negativo-no-es-null.md`.
 
 ## Lectura cruzada
 

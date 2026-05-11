@@ -25,7 +25,7 @@ Tres aportes específicos al programa mecanicista:
 2. **Procedimiento empírico de κ vía baja dimensionalidad.** El mecanicismo deja la legitimidad de niveles relativamente abierta; la tesis la cierra con criterios verificables (capítulo 03-04).
 3. **Cartografía multidominio.** Bechtel-Craver trabajan principalmente en neurobiología y ciencias biomédicas; la tesis extiende la lógica a 30 dominios heterogéneos con controles de falsación rechazados.
 
-La discusión específica con la **objeción de Glennan (2017, *The New Mechanical Philosophy*)** sobre si la dinámica acoplada continua admite descripción mecanicista discreta, queda como punto de presión legítimo y se trata en `04-debates/02-limitaciones-y-puntos-de-presion.md`.
+La discusión específica con la **objeción de Glennan (2017, *The New Mechanical Philosophy*)** sobre si la dinámica acoplada continua admite descripción mecanicista discreta, queda como punto de presión legítimo y se trata en `04-debates/05-limitaciones-declaradas-consolidacion.md §3 L11`.
 
 ## Discriminación
 

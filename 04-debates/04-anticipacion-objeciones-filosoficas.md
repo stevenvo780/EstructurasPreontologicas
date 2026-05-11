@@ -129,7 +129,7 @@ La afirmación 2 es **regulativa en sentido kantiano**: principio de unificació
 
 Tres argumentos sostienen la afirmación regulativa, ninguno suficiente por sí solo, los tres conjuntamente articulables:
 
-(a) **Argumento de discriminación, no descripción.** Si el aparato fuese estadístico genérico, sus controles de falsación deberían pasar el gate (random walk, no-estacionariedad, observabilidad). Pero los 3 controles del corpus inter-dominio se rechazan correctamente, y los 1500 random walks bajo hostile testing producen 0 falsos positivos del gate completo. El aparato discrimina entre dinámica con cierre operativo y dinámica sin él, no solo describe trayectorias.
+(a) **Argumento de discriminación, no descripción.** Si el aparato fuese estadístico genérico, sus controles de falsación deberían pasar el gate (random walk, no-estacionariedad, observabilidad). Pero los 3 controles del corpus inter-dominio se rechazan correctamente, y los 2000 random walks bajo hostile testing (N1+V4_06+N5) producen 0 falsos positivos del gate completo (Wilson 95 % CI [0, 0.00191]). El aparato discrimina entre dinámica con cierre operativo y dinámica sin él, no solo describe trayectorias.
 
 (b) **Argumento de especificidad cruzada.** Si la coincidencia ontológica entre escalas fuese artefacto del aparato, las sondas de una escala detectarían cierre sobre datos de otra escala. El test cruzado V4-01 lo refuta: 0/12 circularidad sobre datos no-suyos. Cada sonda solo detecta el atractor que su escala instancia.
 

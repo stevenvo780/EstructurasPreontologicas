@@ -88,15 +88,16 @@ El aparato ABM+ODE no se justifica por **mejor predicción puntual** sino por:
 
 ARIMA y VAR pueden ganar en RMSE absoluto en casos con dinámica lineal estacionaria. Esto **no anula** la tesis: la anularía si ARIMA produjera tan buena clasificación en niveles como el aparato, lo cual no ocurre.
 
-### Aclaración crítica: el AUC-ROC = 0.886 es interno, no externo
+### Aclaración crítica (actualizada 2026-05-11): la cifra AUC-ROC = 0.886 NO es comparación contra ARIMA
 
-El AUC-ROC reportado en N3 (0.886 vs ARIMA 0.600) mide la **capacidad de ranking interno** del EDI sobre el corpus de 12 casos donde las etiquetas strong/no-strong fueron asignadas por el propio aparato. Esto es **consistencia interna**, no validación contra estándar de oro independiente. Una validación AUC-ROC genuinamente externa requeriría:
+El AUC-ROC = 0.886 mide **coherencia interna del umbral EDI** sobre el corpus inter-dominio: consistencia entre el umbral declarado a priori (EDI ≥ 0.33 → `label_strong`) y la clasificación final del corpus tras gate completo + C1-C5 + hostile testing. La cifra se computa con el mismo EDI como **score** y como **etiqueta** (vía umbral 0.33); es estructuralmente un test de **consistencia umbral interna**, no de discriminación externa.
 
-- etiquetas strong/no-strong asignadas por especialistas de cada dominio sin acceso al EDI;
-- replicación del cálculo EDI por un grupo independiente;
-- comparación de ranking EDI vs ranking experto.
+**Se retira la comparación 0.886 vs ARIMA = 0.600** previamente reportada por dos razones:
 
-Esto NO se ha hecho. La afirmación correcta es: *"EDI tiene mejor capacidad de ranking interno que ARIMA sobre el mismo corpus"*, no *"EDI valida la tesis contra estándar de oro independiente"*. La validación externa es deuda bloqueante para sustentación.
+1. **ARIMA no es un baseline pertinente para clasificación binaria** strong/null: produce predicción univariada con RMSE, convertirla en score AUC vía `RMSE_rw / RMSE_arima` es construcción ad hoc, no comparación canónica.
+2. **n distinto:** EDI se computaba sobre n = 12, ARIMA sobre n = 8 (filtrando 4 nulls sin `rmse_arima`). La comparación pareada exige misma muestra; aquí no la hay.
+
+La metodología canónica del AUC-ROC con CI bootstrap [0.6571, 1.0000] (B = 2000, seed = 42, estratificado) y comando regenerador vive en `09-simulaciones-edi/auc_roc/methodology.md`. La afirmación correcta es: *"el umbral EDI ≥ 0.33 declarado a priori es internamente consistente con la clasificación final del corpus, con inconsistencia residual atribuible a `26_starlink` (EDI = 0.6892, gate=false)"*, NO *"EDI discrimina mejor que ARIMA"*. La validación externa (etiquetas por especialistas de dominio sin acceso al EDI, replicación independiente, comparación de rankings) es deuda bloqueante post-defensa.
 
 ## Limitaciones reconocidas
 

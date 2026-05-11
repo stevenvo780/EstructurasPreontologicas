@@ -37,7 +37,7 @@ La tesis se sostiene como **propuesta ontológica multiescalar** validada operat
 
 ### Aparato verificado bajo hostile testing severo
 
-- **0/1500 falsos positivos** del gate completo bajo random walk masivo (N1+N5+V4-06).
+- **0/2000 falsos positivos** del gate completo bajo random walk masivo (N1+V4_06+N5; Wilson 95 % CI [0, 0.00191]).
 - **Suite ST de 13 teorías** formales con 2 hallazgos críticos detectados y corregidos.
 - **Tests unitarios** del motor `edi_engine.py` pasados (V4-09).
 - **Discriminación pública** contra catorce posiciones rivales (incluido Wolfram Physics Project, con piloto Rule 110 ejecutado mostrando convivencia de irreducibilidad micro y cierre macro detectable).

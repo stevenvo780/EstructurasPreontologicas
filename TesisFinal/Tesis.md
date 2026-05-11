@@ -173,7 +173,7 @@ El término **"pre-ontológico"** se entiende en sentido genético-epistemológi
 
 El aporte metodológico central es un instrumento computacional híbrido **ABM + ODE** que mide cierre operativo mediante EDI = 1 − RMSE_coupled / RMSE_no_ode, con prueba de permutación (999), bootstrap (500), y protocolo de validación robusta (C1-C5 más 8 criterios adicionales para *overall_pass*). El aparato se opera sobre cinco operadores formales (μ medición, G grafo, H hipergrafo, κ compresión, ε expansión) con pregunta paramétrica Q fechada y tolerancia explícita. **El aparato es invariante a la escala**: opera con la misma metodología desde la dinámica subatómica de espín-órbita (10⁻¹⁰ m, 10⁻¹⁵ s) hasta la dinámica gravitacional de cúmulos globulares (10²⁰ m, 10¹⁴ s).
 
-Se evaluaron **40 casos agregados en dos corpus complementarios**: (a) **corpus inter-dominio** con 30 casos en dominios físicos, biológicos, socioeconómicos, tecnoculturales y conductuales (4 strong con `overall_pass`, 1 strong sin gate, 8 weak, 2 suggestive, 4 trend, 8 null, 3 controles de falsación rechazados); (b) **corpus inter-escala** con 10 casos en 8 escalas distintas, **30 órdenes de magnitud** espaciales y temporales cubiertos, con **7 strong en 7 escalas distintas** (atómica, cuántica, bioquímica, celular oscilatoria, individual, astrofísica, astrofísica masiva), 1 weak y 2 nulls honestos. El aparato sobrevive hostile testing severo (0/1500 falsos positivos del gate completo bajo random walk masivo, 0/12 circularidad detectada en test cruzado de sondas inter-escala). Validación lógica formal con suite ST de 24 teorías, seis hallazgos críticos detectados y corregidos.
+Se evaluaron **40 casos agregados en dos corpus complementarios**: (a) **corpus inter-dominio** con 30 casos en dominios físicos, biológicos, socioeconómicos, tecnoculturales y conductuales (4 strong con `overall_pass`, 1 strong sin gate, 8 weak, 2 suggestive, 4 trend, 8 null, 3 controles de falsación rechazados); (b) **corpus inter-escala** con 10 casos en 8 escalas distintas, **30 órdenes de magnitud** espaciales y temporales cubiertos, con **7 strong en 7 escalas distintas** (atómica, cuántica, bioquímica, celular oscilatoria, individual, astrofísica, astrofísica masiva), 1 weak y 2 nulls honestos. El aparato sobrevive hostile testing severo (0/2000 falsos positivos del gate completo bajo random walk masivo agregando los tres scripts canónicos N1+V4_06+N5, Wilson 95 % CI [0, 0.00191]; 0/12 circularidad detectada en test cruzado de sondas inter-escala). Validación lógica formal con suite ST de 24 teorías, seis hallazgos críticos detectados y corregidos.
 
 **Los 40 casos son justificación operativa del marco tripartito general (ontológico + epistemológico + metodológico), no son la tesis.** La tesis son los tres marcos generales; el corpus muestra que las afirmaciones generales son ejecutables, discriminantes y transferibles. La generalidad no depende del tamaño del corpus.
 
@@ -197,7 +197,7 @@ The term **"pre-ontological"** is understood in a genetic-epistemological sense 
 
 The core methodological contribution is a hybrid computational instrument **ABM + ODE** that measures operational closure using EDI = 1 − RMSE_coupled / RMSE_no_ode, with permutation testing (999), bootstrap (500), and robust validation protocol (C1-C5 plus 8 additional criteria for *overall_pass*). The apparatus operates on five formal operators (μ measurement, G graph, H hypergraph, κ compression, ε expansion) with dated parametric question Q and explicit tolerance. **The apparatus is scale-invariant**: it operates with the same methodology from subatomic spin-orbit dynamics (10⁻¹⁰ m, 10⁻¹⁵ s) to gravitational dynamics of globular clusters (10²⁰ m, 10¹⁴ s).
 
-A total of **40 aggregate cases were evaluated across two complementary corpora**: (a) the **inter-domain corpus** with 30 cases across physical, biological, socioeconomic, technocultural, and behavioral domains (4 strong with `overall_pass`, 1 strong without gate, 8 weak, 2 suggestive, 4 trend, 8 null, 3 correctly rejected falsification controls); (b) the **inter-scale corpus** with 10 cases across 8 distinct scales, covering **30 orders of magnitude** spatially and temporally, with **7 strong cases in 7 distinct scales** (atomic, quantum, biochemical, oscillatory cellular, individual, astrophysical, massive astrophysical), 1 weak, and 2 honest nulls. The apparatus survives severe hostile testing (0/1500 false positives of the full gate under massive random walk testing, 0/12 circularity detected in cross-probe testing of inter-scale probes). Formal logical validation via ST suite of 13 theories, two critical findings detected and corrected.
+A total of **40 aggregate cases were evaluated across two complementary corpora**: (a) the **inter-domain corpus** with 30 cases across physical, biological, socioeconomic, technocultural, and behavioral domains (4 strong with `overall_pass`, 1 strong without gate, 8 weak, 2 suggestive, 4 trend, 8 null, 3 correctly rejected falsification controls); (b) the **inter-scale corpus** with 10 cases across 8 distinct scales, covering **30 orders of magnitude** spatially and temporally, with **7 strong cases in 7 distinct scales** (atomic, quantum, biochemical, oscillatory cellular, individual, astrophysical, massive astrophysical), 1 weak, and 2 honest nulls. The apparatus survives severe hostile testing (0/2000 false positives of the full gate under massive random walk testing aggregating the three canonical scripts N1+V4_06+N5, Wilson 95 % CI [0, 0.00191]; 0/12 circularity detected in cross-probe testing of inter-scale probes). Formal logical validation via ST suite of 13 theories, two critical findings detected and corrected.
 
 **The 40 cases are operational justification of the tripartite general framework (ontological + epistemological + methodological); they are not the thesis.** The thesis consists of the three general frameworks; the corpus shows that the general claims are executable, discriminating, and transferable. Generality does not depend on corpus size.
 
@@ -424,7 +424,7 @@ Regularidad operativa anterior a la objetualidad sustancial. Ni cosa con esencia
 Posición filosófica del manuscrito: realismo estructural moderado (en sentido operativo no-Ladyman, ver entrada siguiente) + pluralismo epistemológico + anti-reificación operativa. Ni realismo ingenuo, ni instrumentalismo puro, ni irrealismo radical. Capítulo 02-01.
 
 ### Realismo estructural moderado (uso operativo)
-Compromiso filosófico de la tesis con la realidad de las estructuras —entendidas aquí como atractores empíricamente identificables sobre sustrato material dinámico— sin reducirla a estructura sin relata. **Declaración explícita de no-importación:** la tesis NO adopta la versión *ontic structural realism* de Ladyman y Ross (2007, *Every Thing Must Go*, §2.4), donde la estructura agota lo real y los relata son eliminables. La tesis exige sustrato material sosteniendo la estructura (cap 02-01 §1.1). Cualquier referencia textual a "realismo estructural moderado" en el cuerpo del manuscrito debe leerse bajo esta convención. Capítulo 02-01 §0.3.
+Compromiso filosófico de la tesis con la realidad de las estructuras —entendidas aquí como atractores empíricamente identificables sobre sustrato material dinámico— sin reducirla a estructura sin relata. **Declaración explícita de no-importación:** la tesis NO adopta la versión *ontic structural realism* (OSR) de Ladyman y Ross (2007, *Every Thing Must Go*, cap. 3, p. 130: *"There are no things. Structure is all there is."*), que es **eliminativista** respecto de los individuos auto-subsistentes ("our view is eliminative", p. 131). La tesis exige sustrato material sosteniendo la estructura (cap 02-01 §1.1); los relata (átomos, organismos, instituciones) no son artefactos pragmáticos derivados de la estructura modal sino condición de posibilidad de toda regularidad medible. L&R operan en cap 04-03 como **rival** en criterio A (anclaje material), no como aliado parcial. La nuance de Rainforest Realism (L&R 2007, cap. 4, p. 191: individuos como "legitimate book-keeping devices") no convierte la divergencia en convergencia: la tesis disputa el estatuto, no la admisibilidad discursiva. Cualquier referencia textual a "realismo estructural moderado" en el cuerpo del manuscrito debe leerse bajo esta convención. Capítulo 02-01 §0.3; cap 03-01 §12.2; cap 03-03 §10.5.
 
 ### Self-organization (sentido técnico)
 Modelo positivo de la emergencia anclado en la tradición Maturana-Varela (1980, *Autopoiesis and Cognition*) y Haken (1977, *Synergetics*). Designa la estabilización dinámica del sistema acoplado bajo restricciones físicas, informacionales y de tarea, sin postular sustancias nuevas. Causalidad circular upward+downward, ambas materiales. **No es invocación retórica:** cualquier ocurrencia textual no anclada disciplinarmente debe sustituirse por "estabilización dinámica" o "convergencia a atractor". Capítulo 02-04 §4.
@@ -2604,9 +2604,13 @@ La diferencia con el caso ancla: aquí no hay datos experimentales con sistema c
 
 Pearl (2009, *Causality*, 2.ª ed., cap. 3, p. 70) define el operador de intervención: *"the action `do(X = x)` represents an experiment in which the variable X is set to value x by an outside intervention, while the rest of the model remains unchanged"*. La tesis absorbe esta operación en `G` y `E` con dos restricciones: (a) los grafos representan dependencias del sistema acoplado, no causalidad lineal aislada; (b) la admisión de aristas exige `do`-test, no solo correlación. La métrica EDI es **operacionalización directa de un do-test**: ablación del acoplamiento ODE con preservación del forcing exógeno, comparada contra coupled completo.
 
-### 12.2. Ladyman y Ross — realismo estructural informativo
+### 12.2. Ladyman y Ross — discrepancia con el realismo estructural óntico
 
-Ladyman y Ross (2007, *Every Thing Must Go*, §3.4) sostienen que la ontología fundamental es estructural: *"the world is not made of things or stuff but of structure all the way down"*. La tesis converge parcialmente: las invariantes son, en este marco, las propiedades preservadas por `κ`. Diverge en que la tesis no postula estructura como ontología fundamental sino como **descripción operativa del sustrato material**: la estructura es estructura **del** sustrato dinámico, no flotante (cap 02-01). Esta es la diferencia que la tabla comparativa con rivales codifica como discriminación en el criterio A (anclaje material).
+Ladyman y Ross (2007, *Every Thing Must Go*, cap. 3, p. 130) formulan el *ontic structural realism* (OSR) en términos eliminativistas respecto de los individuos auto-subsistentes: *"There are no things. Structure is all there is."* En la misma página sostienen que "even the identity and individuality of objects depends on the relational structure of the world", y al inicio del cap. 3 admiten explícitamente que su posición "is eliminative" (p. 131): hay objetos en su metafísica, "but they have been purged of their intrinsic natures, identity, and individuality, and they are not metaphysically fundamental". La tesis **no converge** con esta posición. La estructura, en el marco propuesto, es estructura **del** sustrato material dinámico (cap 02-01 §1.1); los relata —procesos materiales, organismos, agentes institucionales, condiciones físicas— no son eliminables ni reducibles a la red relacional, sino condición de posibilidad de toda regularidad medible.
+
+La concesión honesta es que L&R no son eliminativistas radicales en sentido trivial: en su versión Rainforest Realism (cap. 4, p. 191) reconocen que los individuos son "legitimate book-keeping devices" de las ciencias especiales. La discrepancia con la tesis no se juega entonces en si OSR admite o no objetos discursivos, sino en su estatuto: para OSR los individuos son **artefactos pragmáticos derivados** de la estructura modal fundamental; para la tesis, los individuos son **materialmente sostenidos en cada estrato** (átomos, organismos, instituciones) y la estructura es propiedad operativa del sustrato, no entidad ontológicamente prior. El operador κ no preserva "estructura sin sustrato"; preserva propiedades del sustrato bajo compresión.
+
+La coincidencia técnica —ambos marcos privilegian relaciones e invariantes sobre propiedades intrínsecas aisladas— no es identidad ontológica. La tesis usa la etiqueta "realismo estructural moderado" en sentido **operativo no-Ladyman**, según declaración explícita del glosario (`00-proyecto/07-glosario-operativo.md` §"Realismo estructural moderado"). La tabla comparativa con rivales (cap 04-03) codifica esta discrepancia en el criterio A (anclaje material): OSR no exige sustrato; la tesis sí.
 
 ### 12.3. Strogatz, Kelso, Haken — sistemas dinámicos no lineales
 
@@ -3670,9 +3674,13 @@ Craver (2007, *Explaining the Brain*, cap. 4, p. 152) define el criterio de **mu
 
 Mitchell defiende coexistencia de modelos parciales para fenómenos complejos. La auditoría la admite con condición: cada modelo parcial debe llevar dossier con su Q específica. Pluralismo no es mezcla; es articulación bajo criterios.
 
-### 10.5. Ladyman y Ross — realismo estructural
+### 10.5. Ladyman y Ross — rival eliminativista en el espacio de auditorías ontológicas
 
-Ladyman y Ross sugieren tomar la estructura como ontología fundamental. La auditoría adopta estructura como objeto del análisis, pero se compromete con sustrato material como ontología base: la estructura es estructura **del** sustrato, no estructura sin sustrato.
+Ladyman y Ross (2007, *Every Thing Must Go*, cap. 3, p. 130) toman la estructura como ontología fundamental al precio de eliminar los individuos auto-subsistentes: *"even the identity and individuality of objects depends on the relational structure of the world. Hence, a first approximation to our metaphysics is: 'There are no things. Structure is all there is.'"* En su versión Rainforest Realism (cap. 4, p. 191) admiten que los individuos son "legitimate book-keeping devices" de las ciencias especiales, pero subordinados a un criterio de patrones reales que no exige sustrato material en los términos de esta tesis.
+
+La auditoría ontológica de este capítulo se sitúa en posición contraria: el sustrato material y sus procesos son ontológicamente primeros; las estructuras (atractores, invariantes bajo κ, regularidades que pasan el dossier) son **propiedades operativas del sustrato**, no entidades autónomas que lo dispensen. La consecuencia metodológica es directa para la auditoría: los criterios Fase 5 (patrones de orden superior) y Fase 6 (compresión legítima) operan sobre **individuos materialmente sostenidos** —átomos, organismos, instituciones— cuya admisión exige dossier empírico, no derivación a partir de estructura modal fundamental. La diferencia con L&R no es retórica: si OSR fuese correcta, el criterio A del dossier (anclaje material) sería redundante; en la tesis, ese criterio es decisivo.
+
+Por tanto OSR cuenta en el cuadro de la auditoría como **rival** en el espacio de posiciones, no como referente afín. La tabla comparativa con rivales (cap 04-03, criterio A) codifica esta discrepancia. La etiqueta "realismo estructural moderado" se usa en sentido operativo no-Ladyman; el glosario (`00-proyecto/07-glosario-operativo.md`) declara esta convención de lectura.
 
 ## 11. Resultado metodológico
 
@@ -4629,7 +4637,7 @@ Reproducibilidad: el caso 16 ha sido re-ejecutado con datos World Bank descargad
 | 03 | Contaminación PM2.5 | -0.0901 | Sin estructura macro detectable bajo régimen real-phase actual |
 | 12 | Paradigmas (ciencia) | -0.1536 | Reflexividad; null bajo régimen real-phase actual |
 | 17 | Océanos (temperatura) | -0.0154 | Sin sonda específica |
-| 19 | Acidificación oceánica | 0.7278 | EDI elevado pero p=0.49 (no significativo); promovido a Nivel 1\* trend con cautela inferencial — candidato a re-evaluación con sondas físicas alternativas |
+| 19 | Acidificación oceánica | 0.00044 | **Null genuino tras re-ejecución canónica 2026-05-11** (EDI=0.00044, p_perm=0.433, CI=[0.00023, 0.00065], n_perm=2999). El `metrics.json` previo (`edi.value=0.7278`) era inconsistente internamente (TENG-05): mezclaba dos ejecuciones; los `errors` almacenados implicaban `computed_edi=-0.000191`. La re-ejecución coherente clasifica el caso como null. **Caveat de datos:** `data/dataset.csv` PMEL/NOAA no estaba versionado; se usó proxy sintético calibrado a estadísticas del run original. Reproducción bit-a-bit requiere fetch del CSV NOAA real. Block-permutation no implementada (i.i.d. Phipson-Smyth); con EDI≈0 y p=0.43 el resultado null tiene margen amplio. Detalle en `Bitacora/2026-05-11-sintesis-tesis/F5-A-caso19-reejecucion.md`. |
 | 23 | Erosión dialéctica | -1.0000 | Categoría mal definida |
 | 25 | Acuíferos | -0.1462 | Datos heterogéneos |
 | 29 | IoT | -0.8760 | Reflexividad técnica |
@@ -4722,7 +4730,7 @@ El caso 30 (Nivel 3 weak) demuestra que **el aparato EDI funciona en escala beha
 
 Entradas operativas declaradas tras triage de bitácora huérfana (2026-05-11).
 
-- **[AU-9 2026-05-11]** El Bloque VI (Null, Nivel 0, líneas 128-143) agrega ocho casos sin distinguir tres regímenes operativamente distintos: (i) cinco nulls genuinos (EDI ≈ 0, p > 0.05), (ii) un caso con EDI fuertemente negativo (degradación bajo acoplamiento), (iii) dos casos rechazados por gate C1-C5 antes del cómputo de EDI. La cifra adversarial "-0.876" estaba mal atribuida en versiones previas. Acción: subdividir el bloque en tres etiquetas distintas en la próxima pasada; el conteo agregado preserva el total pero pierde la diferencia operativa entre "el aparato no detecta señal" vs "el aparato detecta degradación" vs "el aparato rechaza antes de calcular". Paralela en `06-cierre/01-conclusion-demostrativa.md` §4.1 y `06-cierre/04-versiones-cortas-defensa.md`. Origen: `Bitacora/2026-05-04-continuous-run/AU-9-edi-negativo-no-es-null.md`.
+- **[AU-9 2026-05-11]** El Bloque VI (Null, Nivel 0, líneas 128-143) agrega ocho casos sin distinguir tres regímenes operativamente distintos: (i) cinco nulls genuinos (EDI ≈ 0, p > 0.05), (ii) un caso con EDI fuertemente negativo (degradación bajo acoplamiento), (iii) dos casos rechazados por gate C1-C5 antes del cómputo de EDI. La cifra adversarial "-0.876" estaba mal atribuida en versiones previas. Acción: subdividir el bloque en tres etiquetas distintas en la próxima pasada; el conteo agregado preserva el total pero pierde la diferencia operativa entre "el aparato no detecta señal" vs "el aparato detecta degradación" vs "el aparato rechaza antes de calcular". Paralela en `06-cierre/01-conclusion-demostrativa.md` §4.1 y `06-cierre/_extendido/versiones-cortas-defensa.md`. Origen: `Bitacora/2026-05-04-continuous-run/AU-9-edi-negativo-no-es-null.md`.
 
 ## Lectura cruzada
 
@@ -6556,503 +6564,129 @@ Este capítulo conjetura. La elevación requiere:
 
 # Debates con posiciones rivales
 
-
 ## Tesis del capítulo
 
-> La tesis se discrimina de sus catorce rivales filosófica y empíricamente identificables (dualismo, materialismo de partículas, reduccionismo plano, emergentismo fuerte, constructivismo arbitrario, instrumentalismo puro, formalismo vacío, modelos internos / control óptimo, cognitivismo computacional, conductismo radical, enactivismo radical, realismo estructural informativo, mecanicismo multinivel sin filtro, y **Wolfram Physics Project**) en al menos dos criterios cada uno. La novedad de la tesis no es de inventario sino de articulación: dossier de anclaje + asimetría L1↔B↔L3↔S como filtro de admisión simultáneo + cartografía multidominio bajo EDI con controles de falsación rechazados.
+> La tesis se discrimina de catorce rivales filosófica y empíricamente identificables en al menos dos criterios cada uno. La novedad no es de inventario sino de articulación: **dossier de anclaje + asimetría L1↔B↔L3↔S + cartografía multidominio bajo EDI con controles de falsación rechazados**. Este capítulo confronta cada rival discursivamente; la matriz síntesis 14×6 (criterios A-F) y la ficha breve por rival están en `04-debates/03-tabla-comparativa-rivales.md`. Los desarrollos extensos con citas primarias paginadas viven en `04-debates/_extendido/rival-<X>.md` y se cargan bajo demanda desde la capa web.
 
 ## 1. Marco general de la confrontación
 
-Cada rival se evalúa contra la tesis bajo estos criterios:
+Cada rival se evalúa contra la tesis bajo los criterios **A** (anclaje material sin reducción a partículas), **B** (multiescalaridad operativa), **C** (admisión empírica vía dossier de catorce componentes), **D** (traducibilidad asimétrica L1↔B↔L3↔S), **E** (ventaja predictiva discriminante en el caso ancla canónico) y **F** (alcance generalizable). Las definiciones completas y la tabla síntesis 14×6 están en `04-debates/03-tabla-comparativa-rivales.md` §"Criterios de discriminación" y §"Tabla síntesis". Este capítulo asume esa matriz como dado y desarrolla la confrontación discursiva donde la prosa tiene valor argumentativo que la tabla no captura.
 
-- **A**: anclaje material sin reducción a partículas;
-- **B**: tratamiento de organización multiescala;
-- **C**: procedimiento de admisión empírica para sus categorías;
-- **D**: traducibilidad entre niveles (L1↔B↔L3↔S);
-- **E**: ventaja predictiva discriminante en el caso ancla canónico;
-- **F**: alcance generalizable a dominios programáticos.
+## 2. Rivales con discriminación tabular suficiente
 
-El uso de los criterios no es uniformemente aplicable: A y B se aplican a todos; C, D, E, F se aplican según el rival ocupe terreno empírico o solo filosófico.
+Los siguientes ocho rivales se discriminan adecuadamente en la matriz de `04-debates/03` y no requieren desarrollo discursivo adicional aquí. El lector encontrará en `03 §"Confrontación detallada por rival"` la ficha breve (forma fuerte / qué recoge la tesis / qué rechaza / criterios de discriminación) que basta para fijar la posición.
 
-## 2. Dualismo
+- **Dualismo** (`03 §1`). Discrimina en A, B, F.
+- **Materialismo de partículas** (`03 §2`). Discrimina en B, C, E.
+- **Reduccionismo plano** (`03 §3`). Discrimina en B, C, F.
+- **Emergentismo fuerte** (`03 §4`). Discrimina en A, C, D.
+- **Constructivismo arbitrario** (`03 §5`). Discrimina en C, E.
+- **Instrumentalismo puro** (`03 §6`). Discrimina en A, C.
+- **Formalismo vacío** (`03 §7`). Discrimina en D, E.
+- **Realismo estructural informativo** (`03 §12`). Discrimina en A, C, D. Recordatorio del glosario operativo (`00-proyecto/07-glosario-operativo.md`): "realismo estructural moderado" se usa en sentido **operativo no-Ladyman**; la diferencia con Ladyman-Ross está fijada en `03 §12`.
 
-### Forma fuerte
+Donde el lector requiera mayor desarrollo, cada rival anterior cuenta con material extendido cuando exista cita primaria que justifique elaboración: véase listado al pie.
 
-Existen al menos dos tipos de realidad: material y mental (o material y normativa, o material y informacional). Los fenómenos del segundo tipo no se reducen al primero ni se explican plenamente con su vocabulario.
+## 3. Rivales con discriminación que requiere prosa argumentativa
 
-### Qué recoge la tesis
+Los siguientes seis rivales mantienen desarrollo discursivo en este capítulo porque la matriz tabular no captura el matiz argumentativo o la concesión honesta que la tesis hace.
 
-La intuición de que algunos fenómenos no se entienden bien bajo descripción microfísica inmediata. Esta intuición es correcta y se recoge como argumento para multiescalaridad.
+### 3.1. Modelos internos / control óptimo
 
-### Qué rechaza
+El rival representa la posición canónica en behavioral dynamics y control motor (Wolpert et al.; Todorov y Jordan; control engineering aplicado a postura). Sostiene que la conducta adaptativa se explica como solución de un problema de optimización sobre representaciones internas, y que la fidelidad de las representaciones explica la efectividad.
 
-Que la dificultad explicativa exija multiplicar sustancias. La tesis muestra que el problema se resuelve con organización, restricción, escala y patrón materialmente anclados.
+La tesis **recoge** la existencia de procesos internos relevantes para conducta secuencial, anticipatoria, predictiva y estratégica donde la información ocurrente no basta. **No es eliminativista** respecto a estados internos.
 
-### Discriminación
+La tesis **rechaza** el uso de modelos internos como recurso primario en locomoción, frenado, equilibrio y raqueteo, donde el control directo informacional explica los datos con menos hipótesis y mejor predicción. El caso ancla canónico (`05-aplicaciones/05-dinamica-conductual-reconstruccion-warren.md`) muestra cinco discriminaciones operativas concretas: reproducción de Fajen-Warren con r²=0.980 frente a parámetros adicionales no derivados, predicción de degradación al retirar visión en línea, predicción exacta de τ̇=−0.5 en frenado (r²=0.98 Yilmaz-Warren 1995), bifurcación de ruta predicha y observada, y economía paramétrica (4 parámetros vs modelo interno completo). Detalle por celda en `04-debates/_extendido/rival-modelos-internos.md`.
 
-**Tabla 4.1.1.**
+**Restricción honesta:** los modelos internos siguen siendo candidatos legítimos para conducta secuencial, anticipatoria y estratégica que el caso ancla declara fuera de su régimen de validez (`05-aplicaciones/05-dinamica-conductual-reconstruccion-warren.md` §casos de presión). La tesis no rechaza modelos internos en abstracto; rechaza su uso como recurso primario donde el control informacional discrimina mejor. Esta es la concesión nuclear: el rival no se elimina, se acota.
 
-| Criterio | Tesis | Dualismo |
-|---|---|---|
-| A | Sí (sustrato único) | Parcial (segunda sustancia no anclada) |
-| B | Sí (multiescalaridad sin mundos separados) | No (mundos separados) |
-| F | Sí (sin proliferación) | Solo en dominios donde se postula segunda sustancia |
+### 3.2. Cognitivismo computacional
 
-Pierde en cero criterios. La tesis discrimina contra dualismo en A, B y F.
+La tesis **recoge** la existencia de procesos cognitivos no reducibles a respuestas inmediatas a estímulos. **Rechaza** la metáfora computacional como recurso primario donde el acoplamiento dinámico explica los datos sin ella, y rechaza la abstracción del nivel simbólico desligado del nivel B.
 
-## 3. Materialismo de partículas
+La concesión que la matriz no captura: en el caso ancla, cognitivismo computacional pierde en cinco celdas concretas frente al control informacional acoplado. Pero **en mente como dominio programático, la confrontación queda abierta**: la tesis aún no tiene caso demostrativo equivalente para fenómenos cognitivos superiores. Ahí cognitivismo computacional y tesis empatan en modo programático, y la decisión queda para investigación posterior. Esta concesión asimétrica (discriminación en caso ancla, empate en cognición superior) requiere prosa porque ninguna celda tabular puede expresar "discrimina aquí, no discrimina allá, y eso es honestidad estructural del alcance de la tesis".
 
-### Forma fuerte
+Desarrollo con citas primarias en `04-debates/_extendido/rival-cognitivismo-computacional.md`.
 
-Toda explicación adecuada se reduce, en principio, a descripción del nivel microfísico. Los niveles superiores son etiquetas pragmáticas sobre la realidad fundamental que es el conjunto de partículas y sus interacciones.
+### 3.3. Conductismo radical
 
-### Qué recoge la tesis
+La tesis **recoge** el recorte correcto del plano observable y la negativa a postular entidades internas no controladas. **Rechaza** la negación de la estructura formal L3 que efectivamente discrimina hipótesis: la tesis añade L3 anclado sin perder anclaje en B.
 
-La exigencia de anclaje material y la negativa a introducir entidades misteriosas.
+**Restricción honesta:** el conductismo radical es primo empobrecido del marco propuesto. La tesis se entiende, en este aspecto, como conductismo enriquecido con dinámica y *self-organization* en el sentido técnico anclado en `02-fundamentos/04-anclaje-conductual-ecologico.md` §4 (Maturana y Varela 1980; Haken 1977). Este reconocimiento no es decorativo: marca que la diferencia con conductismo radical es **aditiva** (L3 + dinámica), no **sustractiva**. Lo que el conductismo rechaza (entidades internas no controladas), la tesis también lo rechaza; lo que añade (formalismo L3 acoplado a B), el conductismo lo prohibía como metafísica. La diferencia es de alcance metodológico, no de orientación ontológica.
 
-### Qué rechaza
+Desarrollo con citas primarias en `04-debates/_extendido/rival-conductismo-radical.md`.
 
-Que conocer las partes equivalga automáticamente a conocer el fenómeno. La tesis muestra que la organización importa: una descripción micro puede ser verdadera y no capturar la estructura relevante para Q.
+### 3.4. Enactivismo radical
 
-### Discriminación
+Hutto y Myin (2013, *Radicalizing Enactivism*, cap. 1, p. 8) sostienen la **REC thesis (Radical Enactive Cognition)**: la cognición básica está constituida por patrones espaciotemporales de interacción dinámica entre organismo y entorno, y no involucra intrínsecamente contenido. Hutto y Myin (2017, *Evolving Enactivism*, cap. 5) extienden el argumento contra cualquier predictive coding que asuma contenido representacional inferencial.
 
-**Tabla 4.1.2.**
+La tesis **recoge** mucho: acoplamiento dinámico (`02-fundamentos/04-anclaje-conductual-ecologico.md`), dependencia ecológica, centralidad de la tarea, rechazo de la representación interna como recurso primario en niveles básicos. La afirmación de Hutto-Myin (2013, p. 81) de que no hace falta postular intermediarios con contenido entre organismo y entorno para la percepción básica es congruente con la operacionalización del nivel B vía variables informacionales materialmente realizadas (τ, ρ, flujo óptico).
 
-| Criterio | Tesis | Materialismo de partículas |
-|---|---|---|
-| B | Sí (multiescalaridad operativa) | No (un solo nivel privilegiado) |
-| C | Sí (dossier de anclaje incluye nivel adecuado) | No (procedimiento de admisión solo en micro) |
-| E | Sí (caso ancla con leyes de control de baja dimensión) | No (locomoción no se predice desde partículas) |
+La tesis **rechaza** tres divergencias específicas:
 
-Pierde en cero criterios. Discrimina en B, C, E.
-
-## 4. Reduccionismo plano
-
-### Forma fuerte
-
-La mejor explicación es siempre la del nivel inferior. Subir de nivel solo se justifica como conveniencia computacional, no como ganancia explicativa real.
-
-### Qué recoge la tesis
-
-La obligación de no inventar niveles superfluos.
-
-### Qué rechaza
-
-La identificación entre profundidad ontológica y suficiencia explicativa. El nivel correcto es el que preserva mejor la estructura relevante con el menor costo innecesario, no el más bajo por principio.
-
-### Discriminación
-
-**Tabla 4.1.3.**
-
-| Criterio | Tesis | Reduccionismo plano |
-|---|---|---|
-| B | Sí (paso entre escalas como decisión operativa) | No (un nivel privilegiado) |
-| C | Sí (criterios de cambio de escala explícitos) | Implícito y arbitrario |
-| F | Sí (multidominio) | Solo en dominios donde el reduccionismo ha avanzado |
-
-Pierde en cero criterios. Discrimina en B, C, F.
-
-## 5. Emergentismo fuerte
-
-### Forma fuerte
-
-Ciertos niveles generan entidades o propiedades irreductibles en sentido fuerte y casi autónomas respecto del sustrato. La emergencia introduce sustancia ontológica nueva que no se reduce a interacción de las componentes.
-
-### Qué recoge la tesis
-
-La intuición de que hay patrones que solo se vuelven visibles en ciertos niveles de organización.
-
-### Qué rechaza
-
-Convertir esa visibilidad en prueba de sustancia nueva. La tesis ofrece self-organization como modelo positivo de la emergencia anclada (capítulo 02-04 §4): estabilización dinámica del sistema acoplado, no aparición de entidad adicional.
-
-### Discriminación
-
-**Tabla 4.1.4.**
-
-| Criterio | Tesis | Emergentismo fuerte |
-|---|---|---|
-| A | Sí (sustrato único) | Parcial (sustancia emergente sin anclaje) |
-| C | Sí (atractores empíricamente verificables) | No (criterios subjetivos de irreducibilidad) |
-| D | Sí (traducibilidad B↔L3) | Bloqueada por irreducibilidad postulada |
-
-Pierde en cero criterios. Discrimina en A, C, D.
-
-## 6. Constructivismo arbitrario
-
-### Forma fuerte
-
-Las categorías son productos de prácticas y no hay razones fuertes para privilegiar unos recortes sobre otros. La estructura aparente de la realidad es proyección de la práctica clasificatoria.
-
-### Qué recoge la tesis
-
-La advertencia de que las categorías no están dadas de una vez por la realidad ni por el lenguaje.
-
-### Qué rechaza
-
-Que todos los recortes sean equivalentes. La realidad constriñe la validez de las categorías por estabilidad, rendimiento inferencial, poder predictivo y poder interventivo.
-
-### Discriminación
-
-**Tabla 4.1.5.**
-
-| Criterio | Tesis | Constructivismo arbitrario |
-|---|---|---|
-| C | Sí (dossier de anclaje, predicción discriminante) | No (todas las construcciones son admisibles) |
-| E | Sí (caso ancla con varianza explicada >97%) | Indiferente al criterio |
-
-Pierde en cero criterios. Discrimina en C, E.
-
-## 7. Instrumentalismo puro
-
-### Forma fuerte
-
-Los modelos son herramientas útiles sin compromiso serio con estructura real. Hablar de `verdad` o `realidad` de un modelo es categoría inapropiada.
-
-### Qué recoge la tesis
-
-Que los modelos son construcciones y no espejos directos del mundo.
-
-### Qué rechaza
-
-Que la utilidad baste sin relación robusta con restricciones reales. La utilidad importa como señal de captura estructural, no como sustituto.
-
-### Discriminación
-
-**Tabla 4.1.6.**
-
-| Criterio | Tesis | Instrumentalismo puro |
-|---|---|---|
-| A | Sí (anclaje material en dossier) | No exigido |
-| C | Sí (predicción discriminante e intervención) | Solo utilidad práctica como criterio |
-
-Pierde en cero criterios. Discrimina en A, C.
-
-## 8. Formalismo vacío
-
-### Forma fuerte
-
-No siempre es doctrina explícita; a veces es deriva metodológica donde la representación matemática elegante se considera resolución del problema filosófico.
-
-### Qué recoge la tesis
-
-El valor disciplinario del formalismo.
-
-### Qué rechaza
-
-Que la estructura formal tenga valor por sí misma sin contacto mejorado con el fenómeno.
-
-### Discriminación
-
-**Tabla 4.1.7.**
-
-| Criterio | Tesis | Formalismo vacío |
-|---|---|---|
-| D | Sí (traducibilidad B↔L3 obligatoria) | No (formalismo opera independiente del fenómeno) |
-| E | Sí (predicciones empíricas verificadas) | Indiferente |
-
-Pierde en cero criterios. Discrimina en D, E.
-
-## 9. Modelos internos / control óptimo
-
-### Forma fuerte
-
-El sistema nervioso construye representaciones internas del cuerpo y del entorno. La conducta adaptativa se explica como solución de un problema de optimización (control óptimo) sobre estos modelos. La fidelidad de las representaciones es lo que explica la efectividad de la conducta. Trabajos paradigmáticos: Wolpert et al., Loomis y Beall, Todorov y Jordan, control engineering aplicado a postura y movimiento.
-
-### Qué recoge la tesis
-
-La existencia de procesos internos relevantes para conducta secuencial, anticipatoria, predictiva y estratégica donde la información ocurrente no basta. La tesis no es eliminativista respecto a estados internos.
-
-### Qué rechaza
-
-Que los modelos internos sean recurso primario para tareas como locomoción, frenado, equilibrio, raqueteo, donde el control directo informacional explica los datos con menos hipótesis y mejor predicción.
-
-### Discriminación en el caso ancla canónico
-
-**Tabla 4.1.8.**
-
-| Criterio | Tesis (control informacional, leyes acopladas) | Modelos internos / control óptimo |
-|---|---|---|
-| Reproducción de datos | r²=0.980 (locomoción Fajen-Warren) | Requiere parámetros adicionales no derivados |
-| Predicción de degradación al retirar visión en línea | Predice degradación marcada, consistente con lo reportado en la literatura sobre control visomotor en ausencia de información óptica continua [Wallis et al. 2002; Hildreth et al. 2000 — citados como reporte secundario, sin PDF en `07-bibliografia/`; deuda residual: cita textual paginada pendiente] | Predice estabilidad relativa, no confirmada en esa misma literatura |
-| Predicción de uso de τ̇=−0.5 en frenado | Predicha (r²=0.98 en Yilmaz-Warren 1995) | No deriva la constante |
-| Bifurcación de ruta como cambio cualitativo | Predicha y observada | Requiere meta-decisión planificada |
-| Economía paramétrica | 4 parámetros para locomoción | Requiere modelo interno completo |
-
-Pierde en cero criterios en el caso ancla. Discrimina en cinco.
-
-### Restricción honesta
-
-Los modelos internos siguen siendo candidatos para conducta sequential, anticipatoria predictiva y estratégica que el caso ancla declara fuera de su régimen de validez (capítulo 05-05 §casos de presión). La tesis no rechaza modelos internos en abstracto; rechaza su uso como recurso primario donde el control informacional discrimina mejor.
-
-## 10. Cognitivismo computacional
-
-### Forma fuerte
-
-La conducta cognitiva es ejecución de programas mentales sobre representaciones simbólicas. La mente es máquina computacional cuya descripción adecuada está en el nivel del software, no del hardware.
-
-### Qué recoge la tesis
-
-La existencia de procesos cognitivos no reducibles a respuestas inmediatas a estímulos.
-
-### Qué rechaza
-
-Que la metáfora computacional sea recurso primario para fenómenos donde el acoplamiento dinámico explica los datos sin ellas. Y rechaza la abstracción del nivel simbólico desligado del nivel B.
-
-### Discriminación en el caso ancla y en mente
-
-**Tabla 4.1.9.**
-
-| Criterio | Tesis | Cognitivismo computacional |
-|---|---|---|
-| D (traducibilidad B↔L3) | Obligatoria | Bloqueada (multiple realizability como dogma) |
-| E (caso ancla) | Predice y reproduce | Predice mal o no predice |
-| C (admisión de categorías) | Dossier verificable | Apelación a `nivel computacional` sin verificación |
-
-Pierde en cero criterios en el caso ancla. Discrimina en C, D, E. En mente como dominio programático, la confrontación queda abierta porque la tesis aún no tiene caso demostrativo equivalente para fenómenos cognitivos superiores; ahí cognitivismo y tesis empatan en modo programático y la decisión queda para investigación posterior.
-
-## 11. Conductismo radical
-
-### Forma fuerte
-
-Solo cuentan las relaciones entre estímulos y respuestas observables. Postular estados internos es metafísica.
-
-### Qué recoge la tesis
-
-El recorte correcto del plano observable y la negativa a postular entidades internas no controladas.
-
-### Qué rechaza
-
-La negación de la estructura formal L3 que efectivamente discrimina hipótesis. La tesis añade L3 anclado sin perder anclaje en B.
-
-### Discriminación
-
-**Tabla 4.1.10.**
-
-| Criterio | Tesis | Conductismo radical |
-|---|---|---|
-| B | Sí (estructura multiescala formal) | No (un nivel observable) |
-| D | Sí (B↔L3) | Solo nivel B |
-| C (admisión) | Dossier completo | Solo correlaciones E-R |
-
-Pierde en cero criterios. Discrimina en B, C, D.
-
-### Restricción honesta
-
-El conductismo radical es primo empobrecido del marco propuesto. La tesis le añade L3 sin perder anclaje en B; podría decirse que es un conductismo enriquecido con dinámica y self-organization en el sentido técnico anclado en cap 02-04 §4 (Maturana-Varela 1980, Haken 1977).
-
-## 12. Enactivismo radical
-
-### Forma fuerte
-
-Hutto y Myin (2013, *Radicalizing Enactivism*, cap. 1) sostienen la **REC thesis (Radical Enactive Cognition)**: *"basic cognition is constituted by, and to be explained in terms of, concrete spatiotemporally extended patterns of dynamic interaction between organisms and their environments [...] basic cognition does not, intrinsically, involve any kind of content"* (p. 8). La tesis del contenido cero (zero-content) es la pieza fuerte: niveles cognitivos básicos no requieren contenido representacional. Hutto y Myin (2017, *Evolving Enactivism*, cap. 5) extienden el argumento contra cualquier predictive coding que asuma contenido representacional inferencial.
-
-### Qué recoge la tesis
-
-La posición es muy cercana en espíritu. La tesis adopta el acoplamiento dinámico (capítulo 02-04), la dependencia ecológica (información ecológica como categoría central, sección 5 de ese capítulo), la centralidad de la tarea, y el rechazo de la representación interna como recurso primario en niveles básicos. La afirmación de Hutto-Myin de que *"there is no need to posit content-bearing intermediaries between organism and environment for basic perception"* (2013, p. 81) es congruente con la operacionalización del nivel B vía variables informacionales materialmente realizadas (τ, ρ, flujo óptico).
-
-### Qué rechaza
-
-Tres divergencias específicas:
-
-1. **Grado de eliminación.** Hutto-Myin extienden la zero-content thesis a niveles básicos pero conceden contenido en niveles avanzados. La tesis es más cautelosa: admite estados internos como hipótesis cuando la pregunta lo exige (conducta anticipatoria, secuencial, estratégica), pero solo si el dossier de anclaje (capítulo 03-02) los justifica empíricamente.
-2. **Formalización L3.** La tesis exige aparato formal (μ, G, H, κ, ε) y validación cuantitativa (EDI), donde el enactivismo radical mantiene la formulación cualitativa. La objeción de Chemero (2009, *Radical Embodied Cognitive Science*, cap. 4) sobre la dificultad de cuantificar dinámica sin recaer en cognitivismo es real, pero la tesis muestra (caso 30 del corpus EDI, EDI = 0.262 significativo) que la cuantificación es posible sin volver al cognitivismo.
+1. **Grado de eliminación.** Hutto-Myin extienden la zero-content thesis a niveles básicos pero conceden contenido en niveles avanzados. La tesis es más cautelosa: admite estados internos como hipótesis cuando la pregunta lo exige (conducta anticipatoria, secuencial, estratégica), pero solo si el dossier de anclaje (`03-formalizacion/02-criterios-de-legitimidad-y-metodo.md`) los justifica empíricamente.
+2. **Formalización L3.** La tesis exige aparato formal (μ, G, H, κ, ε) y validación cuantitativa (EDI). El enactivismo radical mantiene la formulación cualitativa. La objeción de Chemero (2009, *Radical Embodied Cognitive Science*, cap. 4) sobre la dificultad de cuantificar dinámica sin recaer en cognitivismo es real, pero el caso 30 del corpus EDI (EDI = 0.262 significativo) muestra que la cuantificación es posible sin volver al cognitivismo.
 3. **Alcance multidominio.** El enactivismo radical se concentra en cognición situada; la tesis cubre 30 dominios heterogéneos. La generalización exige aparato formal compartido.
 
-### Discriminación
+**Reconocimiento:** es el rival con quien la tesis comparte más. La diferencia es de articulación formal y de extensión de dominio, no de orientación filosófica. Esta cercanía es información sustantiva del posicionamiento de la tesis y por eso no se confina a una celda. Citas paginadas extendidas en `04-debates/_extendido/rival-enactivismo-radical.md`.
 
-**Tabla 4.1.11.**
+### 3.5. Wolfram Physics Project (caso especial)
 
-| Criterio | Tesis | Enactivismo radical |
-|---|---|---|
-| C | Dossier formal | Mayormente cualitativo |
-| F | Multidominio | Foco en cognición situada |
-| E | Predicciones cuantitativas | Predicciones generalmente cualitativas |
+Wolfram (2002, *A New Kind of Science*, cap. 12, p. 737) introduce la tesis de la **irreducibilidad computacional**. En el Wolfram Physics Project (2020, *A Project to Find the Fundamental Theory of Physics*, secciones 1-3) extiende la propuesta al sustrato físico: la realidad fundamental es *hypergraph rewriting*. La conjetura del **Ruliad** (Wolfram 2021, *The Concept of the Ruliad*, sec. 2) sostiene que toda la física observable emerge de la totalidad de reglas computacionales posibles, accedida desde un observador particular.
 
-Pierde en cero criterios. Discrimina en C, E, F.
+La tesis **recoge**: centralidad de los hipergrafos como instrumento formal (`03-formalizacion/01-aparato-formal.md`), rechazo de la lista plana de partículas, importancia de la multiescalaridad sin emergentismo fuerte, espíritu de exploración computacional sistemática.
 
-### Reconocimiento
+La tesis **rechaza** cuatro divergencias precisas:
 
-Es el rival con quien la tesis comparte más: la diferencia es de articulación formal y de extensión de dominio, no de orientación filosófica.
-
-## 13. Realismo estructural informativo (Ladyman-Ross)
-
-### Forma fuerte
-
-La ontología fundamental es estructural. Las invariantes de simetría son lo que existe en sentido fuerte; los objetos son nodos en la estructura.
-
-### Qué recoge la tesis
-
-La centralidad de la estructura como objeto del análisis ontológico.
-
-### Qué rechaza
-
-Que la estructura sea ontología fundamental sin sustrato. La tesis afirma sustrato material como base; la estructura es estructura **del** sustrato.
-
-### Discriminación
-
-**Tabla 4.1.12.**
-
-| Criterio | Tesis | Realismo estructural informativo |
-|---|---|---|
-| A | Sí (sustrato material) | Estructura sin sustrato |
-| C (dossier) | Filtro completo | Criterios estructurales sin requisito empírico explícito |
-| D | Asimetría L1↔B↔L3↔S | Sin asimetría análoga |
-
-Pierde en cero criterios. Discrimina en A, C, D. La diferencia es metafísica sutil pero real: la tesis no flota la estructura.
-
-## 14. Wolfram Physics Project (caso especial)
-
-### Forma fuerte
-
-Wolfram (2002, *A New Kind of Science*, cap. 12) introduce la tesis de la **irreducibilidad computacional**: *"there is no way to find out what a system will do except by effectively running it"* (p. 737). En el Wolfram Physics Project (2020, *A Project to Find the Fundamental Theory of Physics*, secciones 1-3), extiende la propuesta al sustrato físico: la realidad fundamental es hypergraph rewriting, y el universo es la evolución de un hipergrafo bajo reglas locales.
-
-La conjetura del **Ruliad** (Wolfram 2021, *The Concept of the Ruliad*, secciones 2 y 6) sostiene que toda la física observable emerge de la totalidad de reglas computacionales posibles, accedida desde un punto de vista observador particular: *"the ruliad is the entangled limit of everything that is computationally possible"* (sec. 2). La posición es ambiciosa, técnicamente sofisticada, y comparte con la tesis dos elementos importantes: el papel central de los **hipergrafos** como representación estructural del sustrato, y el rechazo del reduccionismo plano (la organización multiescala importa).
-
-### Qué recoge la tesis
-
-- la centralidad de los hipergrafos como instrumento formal (capítulo 03-01);
-- el rechazo de la lista plana de partículas como descripción suficiente;
-- la importancia de la multiescalaridad sin emergentismo fuerte;
-- el espíritu de exploración computacional sistemática.
-
-### Qué rechaza
-
-Cuatro divergencias precisas:
-
-1. **Ambición ontológica:** Wolfram busca *ontología fundamental* (la física es hypergraph rewriting). La tesis es ontología y epistemología generales **integradoras**, no fundacionales. No busca reducir todo a hipergrafos; articula registros heterogéneos bajo dossier de admisión.
+1. **Ambición ontológica:** Wolfram busca ontología fundamental (la física *es* hypergraph rewriting). La tesis es ontología y epistemología generales integradoras, no fundacionales. No reduce todo a hipergrafos; articula registros heterogéneos bajo dossier de admisión.
 2. **Procedimiento de admisión empírica:** Wolfram propone reglas computacionales pero no especifica filtro empírico de admisión para constructos macro. La tesis exige dossier de catorce componentes + protocolo C1-C5 + EDI con prueba de permutación + controles de falsación rechazados.
 3. **Asimetría L1↔B↔L3↔S:** Wolfram opera en un solo registro (sustrato computacional). La tesis distingue cuatro registros con vínculos asimétricos y prohíbe la sustitución nominal.
-4. **Cartografía empírica multidominio:** Wolfram propone simulaciones computacionales pero no validación discriminante sobre datos reales en dominios heterogéneos con controles de falsación. La tesis valida 30 casos en física, biología, economía, política, tecnología, cultura y conducta humana, con 3 controles de falsación correctamente rechazados.
+4. **Cartografía empírica multidominio:** Wolfram propone simulaciones internas pero no validación discriminante sobre datos reales en dominios heterogéneos con controles de falsación. La tesis valida 30 casos en física, biología, economía, política, tecnología, cultura y conducta humana, con 3 controles de falsación correctamente rechazados.
 
-### Discriminación
+**Reconocimiento de fortalezas:** el Wolfram Physics Project tiene mayor profundidad técnica en hypergraph rewriting, exploración computacional masiva con visualizaciones avanzadas, conjeturas con potencial unificador en física fundamental, y comunidad investigadora activa. La tesis es **complementaria, no rival sustituta**. El esquema de **convergencia productiva** (aplicar EDI a fenómenos derivados de hypergraph rewriting, con piloto Rule 110 ya ejecutado en `09-simulaciones-edi/wolfram_pilot/` reportando EDI=0.55 sobre dos sondas independientes) se conserva íntegramente en `04-debates/_extendido/rival-wolfram-physics-project.md` con sus seis pasos y la condición de discriminación (cierre operativo confirma puente; ausencia de cierre fortalece la tesis de irreducibilidad de Wolfram en el régimen específico). La frase eslogan "Wolfram fundamenta; la tesis disciplina" se conserva como síntesis pero no como respuesta a la pregunta filosófica nuclear, que sigue siendo: ¿qué constructos macro de hypergraph rewriting admiten dossier completo? Deuda residual H-J*: declarar complementariedad asimétrica modal (cf. F04-06 en `Bitacora/2026-05-04-continuous-run/F04-06-wolfram-ruliad-asimetria-oculta.md`).
 
-**Tabla 4.1.13.**
+### 3.6. Mecanicismo multinivel (Bechtel-Craver)
 
-| Criterio | Tesis (irrealismo operativo) | Wolfram Physics Project |
-|---|---|---|
-| A (anclaje material sin reducción) | Sí | Sí (computacional) |
-| B (multiescalaridad operativa) | Sí | Sí |
-| C (procedimiento de admisión empírica) | Dossier completo + C1-C5 + EDI | No especificado |
-| D (traducibilidad L1↔B↔L3↔S) | Asimetría protocolar | Solo nivel computacional |
-| E (cartografía multidominio con discriminación) | 30 casos + falsación 3/3 | Simulaciones internas |
-| F (alcance generalizable) | Sí | Sí (más ambicioso ontológicamente) |
+Bechtel (2008, *Mental Mechanisms*, cap. 1, p. 13) define mecanismo como estructura que realiza una función en virtud de sus partes componentes, sus operaciones y su organización. Craver (2007, *Explaining the Brain*, cap. 4, p. 152) elabora la tesis de la integración multinivel: los niveles son ontológicamente reales si y solo si las relaciones constitutivas entre ellos son *mutually manipulable*. Bechtel y Richardson (1993, *Discovering Complexity*, cap. 2) sistematizan la heurística de descomposición y localización.
 
-Pierde en cero criterios. Discrimina en C, D, E.
+La tesis **recoge casi todo**: es el aliado más fuerte en la articulación multinivel y en el realismo de mecanismos. La definición bechteliana de mecanismo coincide con la noción de **patrón materialmente sostenido con organización específica** del cap `02-fundamentos/01-ontologia-material-relacional.md`. El criterio de *mutual manipulability* de Craver coincide con el criterio empírico de cierre operativo κ vía intervención ablativa.
 
-### Reconocimiento de fortalezas
+La tesis **añade** tres aportes específicos al programa mecanicista:
 
-El Wolfram Physics Project tiene fortalezas que la tesis no posee:
-
-- mayor profundidad técnica en hypergraph rewriting;
-- exploración computacional masiva con visualizaciones avanzadas;
-- conjeturas con potencial unificador en física fundamental;
-- comunidad investigadora activa (Wolfram Physics Project, Wolfram Institute).
-
-La tesis es **complementaria**, no rival sustituta. Donde Wolfram busca la regla fundamental, la tesis pide que cualquier constructo derivado pase por dossier de admisión. **Wolfram fundamenta; la tesis disciplina**.
-
-### Convergencia productiva posible
-
-Un programa de investigación interesante: aplicar el protocolo EDI a fenómenos derivados de simulaciones de hypergraph rewriting. Esto crearía un puente entre la ontología fundacional de Wolfram y la cartografía empírica multidominio de la tesis. Esquema concreto del trabajo futuro:
-
-1. **Selección de regla.** Elegir una regla de reescritura del Wolfram Physics Project con propiedades emergentes ya documentadas (por ejemplo, regla `wolfphys/006` o equivalente con curvatura emergente reportada).
-2. **Generación de simulaciones.** Producir 200+ ejecuciones con condiciones iniciales perturbadas para estimar variabilidad estructural.
-3. **Construcción de sonda macro.** Identificar magnitud agregada candidata (densidad media de aristas, curvatura escalar discreta, número de bordes activos) y formular sonda ODE de bajo orden ajustable.
-4. **Aplicación EDI.** Calcular EDI = 1 − RMSE_coupled / RMSE_no_ode bajo el aparato del corpus, con permutación 999 + bootstrap 500 + protocolo C1-C5.
-5. **Hipótesis a verificar.** Si la sonda macro tiene cierre operativo (EDI ≥ 0.30, p < 0.05), la regla microestructural admite descripción macroescalar legítima bajo el aparato. Si no, la irreducibilidad computacional opera al nivel macroescalar elegido.
-6. **Lectura.** En cualquier escenario, el resultado discrimina: cierre operativo confirma puente entre Wolfram y la tesis; ausencia de cierre fortalece la tesis de irreducibilidad de Wolfram en el régimen específico.
-
-Este esquema queda documentado como deuda futura priorizada. No se ejecuta en el manuscrito actual.
-
-## 15. Mecanicismo multinivel (Bechtel-Craver)
-
-### Forma fuerte
-
-Bechtel (2008, *Mental Mechanisms*, cap. 1) define mecanismo como *"a structure performing a function in virtue of its component parts, component operations, and their organization. The orchestrated functioning of the mechanism is responsible for one or more phenomena"* (p. 13). Craver (2007, *Explaining the Brain*, cap. 4) elabora la tesis de la integración multinivel: los niveles no son meramente útiles sino ontológicamente reales si y solo si las relaciones constitutivas entre ellos son **mutually manipulable** (cap. 4, p. 152). Bechtel y Richardson (1993, *Discovering Complexity*, cap. 2) sistematizan la heurística de descomposición y localización.
-
-### Qué recoge la tesis
-
-Casi todo. Es el aliado más fuerte en la articulación multinivel y en el realismo de mecanismos. La definición bechteliana de mecanismo coincide con la noción de **patrón materialmente sostenido con organización específica** del capítulo 02-01. La criterio de **mutual manipulability** de Craver coincide con el criterio empírico de cierre operativo κ vía intervención ablativa.
-
-### Qué añade la tesis
-
-Tres aportes específicos al programa mecanicista:
-
-1. **Filtro de admisión cuantitativo.** Bechtel-Craver aceptan que los niveles son legítimos cuando las relaciones constitutivas son mutuamente manipulables, pero no especifican una métrica única para decidir el grado de manipulabilidad. La tesis ofrece la métrica EDI con permutación + bootstrap + protocolo C1-C5 como instrumento operativo de esa decisión.
-2. **Procedimiento empírico de κ vía baja dimensionalidad.** El mecanicismo deja la legitimidad de niveles relativamente abierta; la tesis la cierra con criterios verificables (capítulo 03-04).
+1. **Filtro de admisión cuantitativo.** Bechtel-Craver aceptan que los niveles son legítimos cuando las relaciones constitutivas son mutuamente manipulables, pero no especifican una métrica única para decidir el grado de manipulabilidad. La tesis ofrece la métrica EDI con permutación + bootstrap + protocolo C1-C5 como instrumento operativo.
+2. **Procedimiento empírico de κ vía baja dimensionalidad.** El mecanicismo deja la legitimidad de niveles relativamente abierta; la tesis la cierra con criterios verificables (`03-formalizacion/04-operacionalizacion-de-kappa.md`).
 3. **Cartografía multidominio.** Bechtel-Craver trabajan principalmente en neurobiología y ciencias biomédicas; la tesis extiende la lógica a 30 dominios heterogéneos con controles de falsación rechazados.
 
-La discusión específica con la **objeción de Glennan (2017, *The New Mechanical Philosophy*)** sobre si la dinámica acoplada continua admite descripción mecanicista discreta, queda como punto de presión legítimo y se trata en `04-debates/02-limitaciones-y-puntos-de-presion.md`.
+La objeción específica de Glennan (2017, *The New Mechanical Philosophy*) sobre si la dinámica acoplada continua admite descripción mecanicista discreta queda como punto de presión legítimo y se trata en `04-debates/05-limitaciones-declaradas-consolidacion.md` §3 (deuda L11 sobre κ-ontológica; cf. nota de migración D.3 sobre el destino de los riesgos heredados previamente alojados en `04-debates/02-limitaciones-y-puntos-de-presion.md`).
 
-### Discriminación
+**Reconocimiento:** el mecanicismo multinivel es el aliado teórico principal de este capítulo. La tesis se entiende mejor como **mecanicismo multinivel disciplinado por dossier de anclaje y asimetría L1↔B↔L3↔S**. Citas extendidas en `04-debates/_extendido/rival-mecanicismo-multinivel.md`.
 
-**Tabla 4.1.14.**
+## 4. Lectura cruzada
 
-| Criterio | Tesis | Mecanicismo multinivel |
-|---|---|---|
-| C | Dossier completo | Criterios mecanicistas sin batería de diez |
-| D | Asimetría obligatoria | Asimetría parcial |
-| F | Generalización a institucional/social explícita | Foco principal en biología |
+- Tabla síntesis 14×6 + ficha breve por rival: `04-debates/03-tabla-comparativa-rivales.md`.
+- Anticipación de objeciones filosóficas (F1-F10, distinto de discriminación rival): `04-debates/04-anticipacion-objeciones-filosoficas.md`.
+- Limitaciones declaradas con plazos y entregables: `04-debates/05-limitaciones-declaradas-consolidacion.md`.
+- Postura argumentativa sobre régimen de validez (riesgos heredados, diálogo con interlocutores, filtro de objeciones futuras): `04-debates/02-limitaciones-y-puntos-de-presion.md`.
+- Caso ancla canónico (donde se opera la discriminación contra modelos internos): `05-aplicaciones/05-dinamica-conductual-reconstruccion-warren.md`.
+- Convergencia con Wolfram (programa futuro): `04-debates/_extendido/rival-wolfram-physics-project.md` y `06-cierre/01-conclusion-demostrativa.md`.
+- Desarrollos extensos por rival con citas primarias paginadas: `04-debates/_extendido/rival-modelos-internos.md`, `04-debates/_extendido/rival-cognitivismo-computacional.md`, `04-debates/_extendido/rival-conductismo-radical.md`, `04-debates/_extendido/rival-enactivismo-radical.md`, `04-debates/_extendido/rival-realismo-estructural-informativo.md`, `04-debates/_extendido/rival-mecanicismo-multinivel.md`, `04-debates/_extendido/rival-wolfram-physics-project.md`.
 
-Pierde en cero criterios. Discrimina en C, D, F.
+## 5. Cierre
 
-### Reconocimiento
-
-El mecanicismo multinivel es el aliado teórico principal de este capítulo. La tesis se entiende mejor como mecanicismo multinivel disciplinado por dossier de anclaje y asimetría L1↔B↔L3↔S.
-
-## 16. Tabla síntesis
-
-**Tabla 4.1.15.**
-
-| Posición rival | Lo que la tesis acepta | Lo que la tesis rechaza | Criterios de discriminación |
-|---|---|---|---|
-| Dualismo | Diferencias explicativas fuertes | Segunda sustancia | A, B, F |
-| Materialismo de partículas | Anclaje material | La materialidad agota la explicación | B, C, E |
-| Reduccionismo plano | No inflar niveles | Privilegio del nivel más bajo | B, C, F |
-| Emergentismo fuerte | Visibilidad solo en organización | Sustancias nuevas | A, C, D |
-| Constructivismo arbitrario | Categorías construidas | Equivalencia de recortes | C, E |
-| Instrumentalismo puro | Modelos como herramientas | Utilidad sin compromiso estructural | A, C |
-| Formalismo vacío | Disciplina formal | Matemática sin anclaje | D, E |
-| Modelos internos / control óptimo | Estados internos en conducta secuencial | Recurso primario en percepción-acción | E (caso ancla, 5 celdas) |
-| Cognitivismo computacional | Procesos no reducibles a E-R | Abstracción simbólica desligada de B | C, D, E |
-| Conductismo radical | Anclaje en observable | Negación de L3 | B, C, D |
-| Enactivismo radical | Acoplamiento dinámico, dependencia ecológica | Solo cualitativo, sin formalismo verificable | C, E, F |
-| Realismo estructural informativo | Estructura central | Estructura sin sustrato | A, C, D |
-| Mecanicismo multinivel | Aliado principal | Criterios de admisión más laxos | C, D, F |
-| **Wolfram Physics Project** | Hipergrafos centrales, no reduccionismo plano | Ontología fundacional sin filtro empírico | C, D, E |
-
-## 16. Cuál es la novedad de la tesis
-
-La diferencia no está en cada pieza aislada — la mayoría se encuentra distribuida entre los rivales. La novedad es la articulación: dossier de anclaje + asimetría L1↔B↔L3↔S + procedimiento empírico de κ + caso ancla canónico trabajado a fondo + extensión programática a dominios heterogéneos.
-
-Ningún rival reúne las cinco piezas en la misma arquitectura. El mecanicismo multinivel se acerca más, pero le falta la asimetría como protocolo formal y le falta la operacionalización de κ vía baja dimensionalidad. El enactivismo se acerca en espíritu, pero le falta la formalización verificable. El realismo estructural se acerca en compromiso ontológico, pero le falta el anclaje empírico explícito.
-
-## 17. Compromiso público
-
-Esta tabla es el compromiso público de discriminación. Si en algún rival la tesis no muestra ventaja en al menos dos celdas, la tesis admite haber sido absorbida y debe reformularse. Las celdas se pueden discutir; el compromiso de discriminación verificable no.
-
-## 18. Cierre
-
-La tesis ocupa un punto difícil pero filosóficamente fértil:
-
-- austera como el materialismo, sin ser de partículas;
-- sensible a la organización como el emergentismo, sin postular sustancias;
-- cuidadosa con las mediaciones como el constructivismo, sin caer en arbitrariedad;
-- rigurosa en su modelización como el formalismo, sin ser vacía;
-- empíricamente comprometida como el behavioral dynamics, con extensión filosófica general;
-- mecanicista multinivel disciplinada por filtros de admisión que el mecanicismo deja abiertos.
+La tesis ocupa un punto difícil pero filosóficamente fértil: austera como el materialismo, sin ser de partículas; sensible a la organización como el emergentismo, sin postular sustancias; cuidadosa con las mediaciones como el constructivismo, sin caer en arbitrariedad; rigurosa en su modelización como el formalismo, sin ser vacía; empíricamente comprometida como el *behavioral dynamics*, con extensión filosófica general; mecanicista multinivel disciplinada por filtros de admisión que el mecanicismo deja abiertos.
 
 > La realidad no exige más sustancias, pero sí mejores recortes, dossier completo y predicción discriminante.
 
-Eso es lo que la tesis quiere demostrar una y otra vez, hasta que incluso sus objeciones tengan que discutir en ese terreno.
+El compromiso público de discriminación (que la tesis muestre ventaja en al menos dos celdas contra cada rival, bajo pena de admitir absorción y reformularse) está fijado y declarado en `04-debates/03-tabla-comparativa-rivales.md` §"Compromiso público". Este capítulo no lo duplica.
 
 ## Deuda residual
 
 Entradas operativas declaradas tras triage de bitácora huérfana (2026-05-11).
 
-- **[F04-01 2026-05-11]** §2 ("Dualismo de propiedades") trata al dualismo como una posición monolítica. Hallazgo: el dualismo de propiedades **naturalista** de Chalmers 1996 (*The Conscious Mind*) acepta sustrato físico — el "✗" en la columna A (sustrato físico) es hombre de paja contra la versión naturalista; sólo aplica al dualismo de propiedades **anti-naturalista**. PDF *The Conscious Mind* ausente en `07-bibliografia/`. Acción: dividir la fila 1 de la tabla en 1a (naturalista) y 1b (anti-naturalista) con valoraciones distintas en A; fetch Chalmers 1996. `needs_human` para validar la división filosófica. Origen: `Bitacora/2026-05-04-continuous-run/F04-01-tabla-rivales-dualismo-paja.md`.
-- **[F04-06 2026-05-11]** §13 (línea 422 aprox.) sostiene el eslogan "Wolfram fundamenta; la tesis disciplina" como complementariedad simétrica. Hallazgo: la complementariedad es asimétrica modalmente — si la Ruliad de Wolfram realiza su pretensión fundacional, la tesis material-relacional queda **subsumida** como caso particular de hypergraph rewriting, no preservada como alternativa. La complementariedad presupone que Wolfram no entrega su pretensión fundacional, lo cual es deuda futura no resuelta. Acción: declarar complementariedad asimétrica modal explícita (cláusula "si Wolfram entrega → tesis subsumida; si no → complementariedad sostenida"). Paralela en `04-debates/03-tabla-comparativa-rivales.md` §216. Origen: `Bitacora/2026-05-04-continuous-run/F04-06-wolfram-ruliad-asimetria-oculta.md`.
-- **[F04-10 2026-05-11]** §"Compromiso público" (línea 506) declara compromisos epistémicos sin árbitro externo: el manuscrito mismo evalúa si los compromisos se cumplen. Esto es auto-arbitraje. Acción: añadir cláusula de árbitro humano externo (H-S1 director, H-S2 jurado) para la evaluación post-defensa de los compromisos, o declarar explícitamente la limitación (auto-arbitraje preserva trazabilidad pero no objetividad inter-subjetiva). `needs_human` para designar árbitros. Paralela en `04-debates/03-tabla-comparativa-rivales.md` §222-224. Origen: `Bitacora/2026-05-04-continuous-run/F04-10-compromiso-publico-vacio.md`.
+- **[F04-01 2026-05-11]** El tratamiento del dualismo como posición monolítica en la matriz canónica de `04-debates/03 §1` no distingue el dualismo de propiedades **naturalista** de Chalmers 1996 (*The Conscious Mind*), que acepta sustrato físico, del dualismo de propiedades **anti-naturalista**. Hallazgo: la valoración "✗" en la columna A (sustrato físico) es hombre de paja contra la versión naturalista; sólo aplica a la versión anti-naturalista. PDF *The Conscious Mind* ausente en `07-bibliografia/`. Acción: dividir la fila 1 de la tabla en 1a (naturalista) y 1b (anti-naturalista) con valoraciones distintas en A; fetch Chalmers 1996. `needs_human` para validar la división filosófica. Origen: `Bitacora/2026-05-04-continuous-run/F04-01-tabla-rivales-dualismo-paja.md`.
+- **[F04-06 2026-05-11]** §3.5 sostiene la cláusula "Wolfram fundamenta; la tesis disciplina" como síntesis discursiva. Hallazgo: la complementariedad es asimétrica modalmente — si la Ruliad de Wolfram realiza su pretensión fundacional, la tesis material-relacional queda **subsumida** como caso particular de hypergraph rewriting, no preservada como alternativa. La complementariedad presupone que Wolfram no entrega su pretensión fundacional, lo cual es deuda futura no resuelta. Acción: declarar complementariedad asimétrica modal explícita (cláusula "si Wolfram entrega → tesis subsumida; si no → complementariedad sostenida"). Paralela en `04-debates/03-tabla-comparativa-rivales.md` §216. Origen: `Bitacora/2026-05-04-continuous-run/F04-06-wolfram-ruliad-asimetria-oculta.md`.
+- **[F04-10 2026-05-11]** El "Compromiso público" alojado en `04-debates/03-tabla-comparativa-rivales.md` declara compromisos epistémicos sin árbitro externo: el manuscrito mismo evalúa si los compromisos se cumplen. Esto es auto-arbitraje. Acción: añadir cláusula de árbitro humano externo (H-S1 director, H-S2 jurado) para la evaluación post-defensa de los compromisos, o declarar explícitamente la limitación (auto-arbitraje preserva trazabilidad pero no objetividad inter-subjetiva). `needs_human` para designar árbitros. Paralela en `04-debates/03-tabla-comparativa-rivales.md` §222-224. Origen: `Bitacora/2026-05-04-continuous-run/F04-10-compromiso-publico-vacio.md`.
 
 
 <p align="right"><sub><a href="#tabla-de-contenidos">↑ volver al índice</a></sub></p>
@@ -7301,7 +6935,7 @@ Entradas operativas declaradas tras triage de bitácora huérfana (2026-05-11).
 
 - **[F04-01 2026-05-11]** Fila 1 de la tabla (Dualismo de propiedades, línea 34) marca "✗" en la columna A (sustrato físico). El dualismo de propiedades **naturalista** (Chalmers 1996) acepta sustrato físico; el "✗" es hombre de paja contra esa versión. Acción: dividir fila 1 en 1a (naturalista, A=✓) y 1b (anti-naturalista, A=✗); fetch Chalmers 1996 *The Conscious Mind*. `needs_human` para validar división filosófica. Paralela en `04-debates/01-debates-con-posiciones-rivales.md` §2. Origen: `Bitacora/2026-05-04-continuous-run/F04-01-tabla-rivales-dualismo-paja.md`.
 - **[F04-06 2026-05-11]** Fila Wolfram (línea 216 aprox.) presenta complementariedad simétrica con la tesis. Asimetría modal oculta: si la Ruliad realiza su pretensión fundacional, la tesis queda subsumida. Acción: añadir cláusula de complementariedad asimétrica modal en la nota de la fila. Paralela en `04-debates/01-debates-con-posiciones-rivales.md` §13. Origen: `Bitacora/2026-05-04-continuous-run/F04-06-wolfram-ruliad-asimetria-oculta.md`.
-- **[F04-10 2026-05-11]** "Compromiso público" (líneas 222-224) sin árbitro externo. Auto-arbitraje. Acción: añadir cláusula de árbitro H-S1/H-S2 o declarar explícitamente la limitación. Paralela en `04-debates/01-debates-con-posiciones-rivales.md` §506. Origen: `Bitacora/2026-05-04-continuous-run/F04-10-compromiso-publico-vacio.md`.
+- **[F04-10 2026-05-11]** "Compromiso público" (líneas 222-224) sin árbitro externo. Auto-arbitraje. Acción: añadir cláusula de árbitro H-S1/H-S2 o declarar explícitamente la limitación. Paralela en `04-debates/01-debates-con-posiciones-rivales.md §"Compromiso público"` (tras consolidación 2026-05-11, las referencias a línea/§ específicas del 01 antiguo de 499 líneas están obsoletas). Origen: `Bitacora/2026-05-04-continuous-run/F04-10-compromiso-publico-vacio.md`.
 
 
 <p align="right"><sub><a href="#tabla-de-contenidos">↑ volver al índice</a></sub></p>
@@ -7441,7 +7075,7 @@ La afirmación 2 es **regulativa en sentido kantiano**: principio de unificació
 
 Tres argumentos sostienen la afirmación regulativa, ninguno suficiente por sí solo, los tres conjuntamente articulables:
 
-(a) **Argumento de discriminación, no descripción.** Si el aparato fuese estadístico genérico, sus controles de falsación deberían pasar el gate (random walk, no-estacionariedad, observabilidad). Pero los 3 controles del corpus inter-dominio se rechazan correctamente, y los 1500 random walks bajo hostile testing producen 0 falsos positivos del gate completo. El aparato discrimina entre dinámica con cierre operativo y dinámica sin él, no solo describe trayectorias.
+(a) **Argumento de discriminación, no descripción.** Si el aparato fuese estadístico genérico, sus controles de falsación deberían pasar el gate (random walk, no-estacionariedad, observabilidad). Pero los 3 controles del corpus inter-dominio se rechazan correctamente, y los 2000 random walks bajo hostile testing (N1+V4_06+N5) producen 0 falsos positivos del gate completo (Wilson 95 % CI [0, 0.00191]). El aparato discrimina entre dinámica con cierre operativo y dinámica sin él, no solo describe trayectorias.
 
 (b) **Argumento de especificidad cruzada.** Si la coincidencia ontológica entre escalas fuese artefacto del aparato, las sondas de una escala detectarían cierre sobre datos de otra escala. El test cruzado V4-01 lo refuta: 0/12 circularidad sobre datos no-suyos. Cada sonda solo detecta el atractor que su escala instancia.
 
@@ -7638,187 +7272,62 @@ Estos textos son **respuestas argumentales del manuscrito**, no posición person
 
 <div id="capitulo-28-limitaciones-y-puntos-de-presion"></div>
 
-# Limitaciones y puntos de presión
-
-
+# Riesgos heredados y posicionamiento filosófico declarado
 
 ## Tesis del capítulo
 
-> Bajo el aparato corregido, la tesis sostiene seis límites genuinos que el manuscrito reconoce explícitamente: alcance asimétrico entre dominios, dependencia del caso ancla, vigilancia permanente del propio léxico, tratamiento aún programático de la dimensión normativa, dependencia de prácticas científicas externas para la operación de κ, y deuda con la fenomenología. Cada límite se nombra, se asume, y se traduce en programa de investigación posterior con plazo y entregable.
+> Bajo el aparato corregido, la tesis sostiene tres riesgos operativos que requieren vigilancia permanente, una contraparte positiva de lo que sí promete con fuerza, un diálogo declarado con cuatro interlocutores prioritarios (Searle, Varela-Thompson, Bourdieu, Latour), un filtro para evaluar objeciones futuras, y una fórmula de honestidad filosófica. Este capítulo no inventaria limitaciones operativas (esa función la cumple `04-debates/05-limitaciones-declaradas-consolidacion.md` con la lista canónica L1-L20 fechadas); aquí se declara la postura argumentativa que sostiene la lista.
 
-## 1. Alcance asimétrico entre dominios
+> Para la lista canónica de limitaciones L1-L20 con plazo y entregable, ver `04-debates/05-limitaciones-declaradas-consolidacion.md`.
 
-### Forma del límite
+## 1. Riesgos heredados que sobreviven
 
-El caso ancla canónico (behavioral dynamics, capítulo 05-05) está demostrado con datos públicos, ecuaciones ajustadas, predicciones cumplidas, dossier completo. Los demás dominios (mente como tal, biología, sistemas técnicos, instituciones) están en modo programático: el aparato se conjetura aplicable pero no se demuestra con calidad equivalente.
+Tres riesgos quedan abiertos como vigilancia permanente y se documentan aquí para evitar olvido durante la redacción final. No son limitaciones cerrables con entregable: son patrones de degradación que el marco debe controlar mientras esté en uso.
 
-### Por qué es límite genuino
+### 1.1. Inmunización por nivel
 
-La tesis es ontológica general por aspiración pero solo regional por demostración. Esto no se disimula con cláusulas retóricas: la asimetría es real.
+La cláusula "el nivel correcto depende de la pregunta" puede convertirse en escudo retórico. Antídoto fijado en `03-formalizacion/02-criterios-de-legitimidad-y-metodo.md`: Q se fija fechada antes del intento; cambiar Q después del fallo invalida el ciclo.
 
-### Cómo se asume
+### 1.2. Hipertrofia metodológica
 
-Cada capítulo de aplicación programática (05-01 a 05-04) lleva marca explícita de modo programático y criterio de elevación. El capítulo 06-01 reúne la deuda residual con plazo y entregable mínimos.
+Una tesis que se concentra demasiado en sus propios protocolos pierde de vista el explanandum. Antídoto: el caso ancla canónico (`05-aplicaciones/05-dinamica-conductual-reconstruccion-warren.md`) es el centro fenomenológico; los protocolos solo se justifican mientras mejoran el tratamiento del caso ancla o un dominio análogo.
 
-### Programa posterior
+### 1.3. Asimetría desigual entre dominios
 
-Construir, dominio por dominio, el análogo del caso ancla canónico. La prioridad la fija el capítulo 06-03 (hoja de ruta).
+El caso ancla es asimétricamente más sólido que cualquier otro dominio del manuscrito. Antídoto: la asimetría no se disimula. `06-cierre/01-conclusion-demostrativa.md` la nombra y la convierte en programa de investigación posterior. Para el detalle fechado del inventario operativo correspondiente, cf. L5, L7-L9 en `04-debates/05-limitaciones-declaradas-consolidacion.md`.
 
-## 2. Dependencia del caso ancla
+## 2. Lo que la tesis sí puede prometer con fuerza
 
-### Forma del límite
-
-Si por alguna razón el caso ancla canónico fallara públicamente — datos no replicables, mejor modelo rival publicado, anomalía sistemática — la tesis pierde su demostración principal y queda solo como programa.
-
-### Por qué es límite genuino
-
-Una tesis que descansa sobre un caso paradigmático único es vulnerable. Eso no es defecto del programa; es naturaleza del modo demostrativo cuando solo hay un caso trabajado.
-
-### Cómo se asume
-
-El capítulo 06-01 establece que la admisión de la tesis está condicionada a la integridad del caso ancla. Si la integridad se compromete, el manuscrito asume el fallo y reformula.
-
-### Programa posterior
-
-Construir más casos demostrativos rápidamente para reducir la dependencia. La hoja de ruta del capítulo 06-03 prioriza esta multiplicación.
-
-## 3. Vigilancia permanente del propio léxico
-
-### Forma del límite
-
-Términos del marco propio (`compresión`, `anclaje`, `multiescala`, `dossier`, `atractor`, `acoplamiento`, `B`, `L3`, `S`) pueden volverse contraseña interna que reproduce reificaciones que el marco mismo denuncia.
-
-### Por qué es límite genuino
-
-La tesis es crítica con las categorías heredadas. Si su propio léxico no se somete al mismo filtro, la tesis se contradice.
-
-### Cómo se asume
-
-Regla operativa: cada uso de un término del marco debe poder traducirse a operación, observable o predicción. Cuando un capítulo abusa del vocabulario sin aterrizarlo, se reescribe. Esta vigilancia es trabajo permanente, no fase cerrable.
-
-### Programa posterior
-
-Glosario operativo de preliminares y auditoría periódica del propio léxico durante la fase de redacción final.
-
-## 4. Tratamiento programático de la dimensión normativa
-
-### Forma del límite
-
-En fenómenos sociales, jurídicos o éticos no basta hablar de sustrato material y organización dinámica. También intervienen normas, validez, legitimidad, reconocimiento. La tesis sostiene que estas dimensiones no exigen segunda sustancia, pero el desarrollo concreto del aparato para tratarlas es aún programático.
-
-### Por qué es límite genuino
-
-La tesis afirma que las instituciones son patrones materialmente sostenidos por prácticas, normas, soportes. La afirmación es plausible. La operacionalización empírica de `norma` o `legitimidad` como variables del nivel B en sistemas institucionales no está hecha.
-
-### Cómo se asume
-
-El capítulo 05-04 (instituciones, mercado, Estado) lleva marca de modo programático y nombra esta limitación como prioritaria.
-
-### Programa posterior
-
-Construir caso demostrativo en algún dominio institucional acotado (por ejemplo, dinámica de respuesta institucional ante crisis sanitaria, con datos públicos y bifurcaciones identificables). Diálogo bibliográfico obligatorio con Bourdieu, Searle y Latour.
-
-## 5. Dependencia de prácticas científicas externas para κ
-
-### Forma del límite
-
-La operacionalización de κ vía baja dimensionalidad empírica (capítulo 03-04) usa métodos consolidados de la dinámica no lineal y la estadística aplicada (PCA, dimensión de correlación, ajuste de sistemas dinámicos, exponentes de Lyapunov). Estos métodos son externos al marco filosófico de la tesis.
-
-### Por qué es límite genuino
-
-Si un método externo cambia de paradigma o se descalifica, parte del aparato de κ queda comprometido. La tesis no produce su propia matemática: usa la disponible.
-
-### Cómo se asume
-
-El capítulo 03-04 nombra explícitamente las dependencias y especifica criterios de validación que sobreviven a cambios menores en métodos específicos. Si la dimensionalidad efectiva del sistema acoplado bajo Q cambia con un método nuevo, eso es información valiosa, no fallo del marco.
-
-### Programa posterior
-
-Mantener la operacionalización de κ actualizada con la literatura técnica. La capa ST (capítulo 08) ayuda a detectar tensiones internas pero no sustituye revisión técnica externa.
-
-## 6. Deuda con la fenomenología y la experiencia vivida
-
-### Forma del límite
-
-En fenómenos subjetivos (consciencia fenoménica, qualia, experiencia vivida) la tesis ofrece reformulación operativa pero no agota el debate. Un fenomenólogo puede argumentar que la dimensión vivida no se captura plenamente con atractores y leyes de control, aunque la tesis no la elimine.
-
-### Por qué es límite genuino
-
-La tesis trata la experiencia como fenómeno real que requiere descripción específica. No la elimina. Pero el desarrollo del aparato para fenomenología en sentido estricto no está hecho.
-
-### Cómo se asume
-
-El capítulo 05-01 (mente, memoria, yo) trata la dimensión vivida como objeto de auditoría, no como dominio reducible. Reconoce que el aparato disciplina las categorías pero no completa la teoría de la experiencia.
-
-### Programa posterior
-
-Diálogo bibliográfico obligatorio con Varela-Thompson, Noë, fenomenología en sentido amplio. Construcción potencial de caso demostrativo en dominio fenomenológicamente cargado (percepción cromática, sentido del tiempo, propiocepción) si se consolida la conjetura.
-
-## 7. Riesgos heredados que sobreviven
-
-Tres riesgos quedan abiertos como vigilancia permanente y se documentan aquí para evitar olvido durante la redacción final.
-
-### 7.1. Inmunización por nivel
-
-La cláusula `el nivel correcto depende de la pregunta` puede convertirse en escudo retórico. Antídoto fijado en el capítulo 03-02: Q se fija fechada antes del intento; cambiar Q después del fallo invalida el ciclo.
-
-### 7.2. Hipertrofia metodológica
-
-Una tesis que se concentra demasiado en sus propios protocolos pierde de vista el explanandum. Antídoto: el caso ancla canónico es el centro fenomenológico; los protocolos solo se justifican mientras mejoran el tratamiento del caso ancla o un dominio análogo.
-
-### 7.3. Asimetría desigual entre dominios
-
-El caso ancla es asimétricamente más sólido que cualquier otro dominio del manuscrito. Antídoto: la asimetría no se disimula. El cierre la nombra y la convierte en programa de investigación posterior.
-
-## 8. Lo que la tesis NO debe prometer
-
-Para no debilitarse, conviene no prometer más de lo que el proyecto realmente puede sostener.
+Para que la declaración honesta de los límites (`04-debates/05-limitaciones-declaradas-consolidacion.md`) no se lea como abdicación, este capítulo declara la contraparte positiva: aquello que la tesis sostiene con fuerza demostrativa, no programática.
 
 **Tabla 4.2.1.**
 
-| Promesa rechazada | Razón |
-|---|---|
-| Ontología total cerrada | El proyecto no es totalizador; es articulador |
-| Formalización completa de toda realidad multiescala | El aparato es mínimo, no exhaustivo |
-| Reducción final de todas las ciencias a un esquema único | El pluralismo explicativo controlado prohíbe esto |
-| Teoría definitiva de consciencia, normatividad o información | Cada uno requiere su programa de investigación específico |
-| Solución a la pregunta del libre albedrío | Está fuera del alcance directo |
-| Predicción de fenómenos sociales individuales | Las leyes de control institucionales son objeto de investigación, no resultado disponible |
-
-## 9. Lo que la tesis sí puede prometer con fuerza
-
-**Tabla 4.2.2.**
-
 | Promesa sostenida | Estado |
 |---|---|
-| Ontología material-relacional sobria | Sostenida en capítulo 02 |
-| Epistemología de compresión controlada | Sostenida en capítulo 02-02 y 03-04 |
-| Criterios explícitos de legitimidad categorial | Sostenidos en capítulo 03-02 |
-| Metodología de auditoría ontológica | Sostenida en capítulo 03-03 |
-| Mejor articulación entre niveles, modelos y categorías | Demostrada en capítulo 05-05 |
-| Discriminación pública contra rivales identificables | Sostenida en capítulo 04-01 |
+| Ontología material-relacional sobria | Sostenida en cap 02 |
+| Epistemología de compresión controlada | Sostenida en cap 02-02 y 03-04 |
+| Criterios explícitos de legitimidad categorial | Sostenidos en cap 03-02 |
+| Metodología de auditoría ontológica | Sostenida en cap 03-03 |
+| Mejor articulación entre niveles, modelos y categorías | Demostrada en cap 05-05 |
+| Discriminación pública contra rivales identificables | Sostenida en cap 04-01 y 04-03 |
 
-## 10. Diálogo con interlocutores
+La contraparte negativa (lo que la tesis NO debe prometer) se elimina de este capítulo por duplicación con `04-debates/05-limitaciones-declaradas-consolidacion.md §5` ("Fuera de alcance"). Ese inventario es la fuente única de las promesas rechazadas; la promesa positiva queda aquí.
 
-### 10.1. Searle — ontología social y dimensión normativa
+## 3. Diálogo declarado con interlocutores filosóficos
 
-Searle insiste en intencionalidad colectiva y reglas constitutivas como rasgos irreductibles de lo institucional. La tesis lo recoge parcialmente: la dimensión normativa es real pero su operacionalización empírica está pendiente. Searle es interlocutor obligado del programa posterior sobre instituciones.
+Cuatro interlocutores reciben tratamiento posicional explícito en este capítulo porque ninguno se reduce a entrada de inventario L1-L20:
 
-### 10.2. Varela y Thompson — fenomenología naturalizada
+**Searle — ontología social y dimensión normativa.** Searle insiste en intencionalidad colectiva y reglas constitutivas como rasgos irreductibles de lo institucional. La tesis lo recoge parcialmente: la dimensión normativa es real pero su operacionalización empírica está pendiente (cf. L10 en `04-debates/05-limitaciones-declaradas-consolidacion.md`). Searle es interlocutor obligado del programa posterior sobre instituciones.
 
-Varela y Thompson proponen una fenomenología naturalizada que articule descripción en primera persona con neurociencia y dinámica. La tesis se inscribe en ese horizonte programático para la dimensión vivida.
+**Varela y Thompson — fenomenología naturalizada.** Varela y Thompson proponen una fenomenología naturalizada que articule descripción en primera persona con neurociencia y dinámica. La tesis se inscribe en ese horizonte programático para la dimensión vivida (cf. L13 en `04-debates/05-limitaciones-declaradas-consolidacion.md`).
 
-### 10.3. Bourdieu — espesor histórico y práctico
+**Bourdieu — espesor histórico y práctico.** Bourdieu insiste en que las prácticas sociales tienen historia incorporada (*habitus*) que no se reduce a regla actual. La tesis recoge la advertencia y la incluye como variable histórica del nivel B.
 
-Bourdieu insiste en que las prácticas sociales tienen historia incorporada (habitus) que no se reduce a regla actual. La tesis recoge la advertencia y la incluye como variable histórica del nivel B.
+**Latour — controversia con el inventario.** Latour propone redes con actantes humanos y no-humanos. La tesis admite la red pero exige filtro de admisión: no todo lo que se nombra como actante es patrón estabilizado en el sentido del marco.
 
-### 10.4. Latour — controversia con el inventario
+## 4. Filtro de objeciones futuras
 
-Latour propone redes con actantes humanos y no-humanos. La tesis admite la red pero exige filtro de admisión: no todo lo que se nombra como actante es patrón estabilizado en el sentido del marco.
-
-## 11. Filtro de objeciones futuras
-
-Toda objeción nueva se evalúa con esta matriz antes de respuesta:
+Toda objeción nueva al manuscrito se evalúa con esta matriz antes de respuesta:
 
 1. ¿es objeción a inflación ontológica?
 2. ¿es a pérdida de estructura relevante?
@@ -7829,15 +7338,16 @@ Toda objeción nueva se evalúa con esta matriz antes de respuesta:
 
 Si no cae en ninguna, probablemente está mal formulada. Si cae en alguna, la respuesta debe ser por compromiso verificable, no por reformulación retórica.
 
-## 12. Fórmula de honestidad filosófica
+## 5. Fórmula de honestidad filosófica
 
 > La tesis no pretende clausurar la complejidad de lo real. Pretende ofrecer mejores reglas para no empeorarla con malas categorías, dossier de anclaje verificable, asimetría L1↔B↔L3↔S como protocolo, y caso paradigmático trabajado a fondo. Sus límites son nombrados, sus deudas son fechadas, sus promesas son delimitadas.
 
-Ese tipo de modestia fuerte suele convencer más que una ambición totalizadora sin frenos. Filosóficamente, además, envejece mucho mejor.
+## 6. Lectura cruzada
 
-## 13. Cierre
-
-La tesis sobrevive a las objeciones discriminantes (capítulo 04-01 y 01-diagnostico/02) si logra mantener austeridad ontológica, riqueza estructural, criterios explícitos, casos comparativos fuertes y vigilancia del propio léxico. Los seis límites de este capítulo no debilitan la tesis: la sitúan en su régimen de validez. Una tesis sin límites nombrados es una tesis que aún no se ha sometido a sí misma a su propio filtro.
+- Inventario operativo de limitaciones fechadas con entregable (L1-L20): `04-debates/05-limitaciones-declaradas-consolidacion.md`.
+- Anticipación de objeciones filosóficas con F1-F10: `04-debates/04-anticipacion-objeciones-filosoficas.md`.
+- Confrontación con rivales discursivos: `04-debates/01-debates-con-posiciones-rivales.md`.
+- Matriz síntesis 14×6 de rivales: `04-debates/03-tabla-comparativa-rivales.md`.
 
 
 <p align="right"><sub><a href="#tabla-de-contenidos">↑ volver al índice</a></sub></p>
@@ -8029,7 +7539,7 @@ Si en defensa una limitación es señalada por el tribunal, la respuesta canóni
 
 Entradas operativas declaradas tras triage de bitácora huérfana del modo continuo. Cada deuda enlaza a código fuente versionado en `09-simulaciones-edi/common/`.
 
-- **[TENG-05 2026-05-11]** El `metrics.json` del caso 19 (fase real) contiene `phases.real.edi.value=0.7278` mientras `(rmse_no_ode-rmse_abm)/rmse_no_ode = -0.000191` y `weighted_value = -0.000115`. El JSON mezcla dos ejecuciones; el valor publicado contradice los `errors` y el `weighted_value` del propio archivo. Caso 19 figura como "Trend Nivel 1*" en `05-aplicaciones/07-mapa-aplicaciones-corpus.md:140`. Acción: re-ejecutar `09-simulaciones-edi/19_caso_<nombre>/src/validate.py` con seed canónico; añadir assertion en `write_outputs()` de `hybrid_validator.py` que garantice `abs(value - (rmse_no_ode-rmse)/rmse_no_ode) < ε`; auditoría retroactiva sobre los 40 casos del corpus. **Crítico**: viola CLAUDE.md §4 ("gana el JSON" presupone JSON coherente). Origen: `Bitacora/2026-05-04-continuous-run/TENG-05-caso19-edi-inconsistencia-interna.md`.
+- **[TENG-05 2026-05-11 — caso 19 re-ejecutado; clasificación corregida]** El `metrics.json` previo del caso 19 (fase real) contenía `phases.real.edi.value=0.7278` mientras `(rmse_no_ode-rmse_abm)/rmse_no_ode = -0.000191` y `weighted_value = -0.000115` (JSON mezclado entre dos ejecuciones). **Re-ejecutado con perfil canónico (`HYPER_N_PERM=2999 HYPER_N_BOOT=1500 python3 validate.py`)** el 2026-05-11: nuevas cifras coherentes son EDI=0.00044, p_perm=0.433, CI=[0.00023, 0.00065], `overall_pass=False`. Caso 19 se reclasifica de "Trend Nivel 1*" a **null genuino** en `05-aplicaciones/07-mapa-aplicaciones-corpus.md:140`. **Caveats permanentes:** (i) `data/dataset.csv` PMEL/NOAA no estaba versionado, se usó proxy sintético calibrado a las estadísticas del run original — reproducción bit-a-bit exige fetch del CSV NOAA real; (ii) block-permutation no implementada en `hybrid_validator.py` (i.i.d. Phipson-Smyth), aunque con EDI≈0 y p=0.43 la conclusión null tiene margen amplio. **Deudas técnicas restantes (abiertas):** añadir assertion en `write_outputs()` de `hybrid_validator.py` que garantice `abs(value - (rmse_no_ode-rmse)/rmse_no_ode) < ε`; auditoría retroactiva sobre los 40 casos del corpus; implementar block-permutation. Origen: `Bitacora/2026-05-04-continuous-run/TENG-05-caso19-edi-inconsistencia-interna.md`; re-ejecución: `Bitacora/2026-05-11-sintesis-tesis/F5-A-caso19-reejecucion.md`.
 - **[TENG-08 2026-05-11]** En `09-simulaciones-edi/common/hybrid_validator.py:892-926`, el criterio C1 está implementado como `c1 = c1_relative OR c1_absolute` con la rama (B) (absoluta) **sin requerir aporte ODE** sobre la baseline no-ODE. Esto permite C1=True con EDI<0 (8 fases del corpus listadas en el archivo de origen). Acción: cambiar la lógica a `c1_fallback` diagnóstico (Salida 2 con flag explícito), no a `c1=True` directo; re-correr corpus con la corrección. Origen: `Bitacora/2026-05-04-continuous-run/TENG-08-c1-or-fallback-permite-edi-negativo.md`.
 - **[TENG-09 2026-05-11]** En `hybrid_validator.py:1560-1681`, la corrección de sesgo (BC) se calibra sobre train y se aplica a la serie completa (incluido val). El guarda actual sólo detecta degradación catastrófica; **no detecta sesgo bajo no-estacionariedad** del residuo BC en val. Acción: añadir test ADF (Augmented Dickey-Fuller) sobre el residuo BC en val con `α=0.05`; emitir warning en `metrics.json` cuando el residuo no sea estacionario. Origen: `Bitacora/2026-05-04-continuous-run/TENG-09-bias-correction-no-estacionariedad.md`.
 - **[TENG-11 2026-05-11]** En `hybrid_validator.py:1167` y :1831-1833, el umbral de "viscosidad" del atractor es `relaxation_time > 1`, que es trivialmente verdadero salvo en degeneración numérica; además `c_visc` NO está en `overall_pass`. Defectos compuestos: criterio trivial + no incorporado al gate. Acción: parametrizar el umbral relativo a la escala temporal del caso (`relaxation_time > k · dt`) y decidir si `c_visc` se incorpora a `overall_pass` o se documenta como diagnóstico secundario. Origen: `Bitacora/2026-05-04-continuous-run/TENG-11-viscosidad-umbral-trivial.md`.
@@ -8133,9 +7643,11 @@ La tesis queda demostrada cuando se cumplen siete condiciones simultáneas. Cada
 
 La tesis falla globalmente en cinco escenarios falsables:
 
-### Escenario 1. Los 4 casos `overall_pass` se desmoronan empíricamente
+### Escenario 1. Los 4 casos `overall_pass` pierden alguna de sus dos pretensiones
 
-Si Energía, Deforestación, Kessler, Riesgo Biológico no replican bajo perfiles de alto rendimiento o son superados por baselines puramente estadísticos (ARIMA, VAR), la tesis pierde su demostración multidominio principal.
+*1.a (no activo al 2026-05-11):* si Energía, Deforestación, Kessler o Riesgo Biológico **dejan de pasar `overall_pass`** bajo perfiles de alto rendimiento (n_perm ≥ 2999, n_boot ≥ 1500), la tesis pierde su pretensión de necesidad estructural del acoplamiento ODE→ABM en esos dominios.
+
+*1.b (parcialmente activo al 2026-05-11):* si dichos casos **son superados por baselines puramente estadísticos** (ARIMA, VAR, RW, GP) en RMSE de validación held-out, la tesis pierde su pretensión adicional de ganancia predictiva sobre baselines no-estructurales. Esta condición está **parcialmente activada en Deforestación y Riesgo Biológico** (`09-simulaciones-edi/baselines/baselines_report.json`, val_len ∈ {8, 13}; ver §3.6). Energía y Kessler la satisfacen.
 
 ### Escenario 2. Los controles de falsación dejan de rechazarse
 
@@ -8177,6 +7689,14 @@ Los 4 casos `overall_pass=True` están conectados con dinámicas físicas robust
 
 El caso 30 (behavioral dynamics) **fue rechazado por el aparato** (EDI=0.002, no significativo) a pesar de ser construido por el equipo investigador con expectativa de aceptación. Este es el ejemplo más claro de que **el aparato no es máquina de validar deseos**: produce hallazgos que contradicen al investigador cuando los datos no apoyan la conjetura.
 
+### 3.6. Los baselines lineales superan al modelo acoplado en 2 de los 4 casos `overall_pass`
+
+La comparación canónica frente a baselines no-estructurales se ejecutó sobre los 7 casos con `primary_arrays.json` y se reporta en `09-simulaciones-edi/baselines/baselines_report.json`. Restringida a los 4 casos con `overall_pass=True`, la lectura literal del RMSE held-out muestra que ARIMA(1,1,1) y VAR(1)+forcing **superan al modelo acoplado en Deforestación y Riesgo Biológico**: para `16_caso_deforestacion`, RMSE_acoplado(val) = 0.5652 frente a RMSE_ARIMA = 0.2807 y RMSE_VAR = 0.2465 (val_len = 13); para `27_caso_riesgo_biologico`, RMSE_acoplado(val) = 0.2393 frente a RMSE_ARIMA = 0.1820 y RMSE_VAR = 0.2257 (val_len = 8). Energía y Kessler, en cambio, mantienen ventaja del acoplado sobre ambos baselines (vs ARIMA = +0.1598 y +0.6490 respectivamente; vs VAR = +0.3058 y +0.6538).
+
+Esto **activa parcialmente el segundo disyunto del Escenario 1 de §2** ("si son superados por baselines puramente estadísticos (ARIMA, VAR), la tesis pierde su demostración multidominio principal", reformulado abajo a 1.a/1.b). La tesis no reclama derrota global por tres razones que se declaran sin atenuar el hallazgo: (i) `overall_pass` no se reduce a RMSE held-out, sino que integra los criterios C1-C5 y la significancia de EDI definido sobre ablación interna `abm_no_ode`, no sobre baselines lineales; (ii) la diferencia se mide sobre val_len ∈ {8, 13}, sin intervalo de confianza ni test de Diebold-Mariano, por lo que la afirmación honesta es "el acoplado **no produce ganancia predictiva detectable** sobre ARIMA/VAR" más que "ARIMA es estrictamente superior"; (iii) el EDI sigue siendo significativo por permutación en los dos casos afectados, lo que sostiene la pretensión interna de necesidad estructural del acoplamiento ODE→ABM.
+
+**Costo argumental asumido.** La demostración multidominio queda restringida a Energía y Kessler como casos donde el aparato supera tanto la ablación interna como los baselines no-estructurales. Deforestación y Riesgo Biológico se reclasifican como casos donde el aparato detecta acoplamiento estructural significativo pero **no exhibe ganancia predictiva frente a modelos estadísticos lineales** bajo la ventana de validación disponible. Esta es **reducción de alcance, no derrota**: la tesis defiende que el acoplamiento ODE→ABM es estructuralmente identificable (sostenido por EDI vs `abm_no_ode`), no que el aparato sea el mejor predictor posible (no sostenido uniformemente). Fusionar ambas pretensiones, como hacía el manuscrito en la formulación monolítica del Escenario 1, oculta el costo; separarlas es lo que aquí se declara como deuda.
+
 ## 4. Deuda residual
 
 Lo que el manuscrito no demuestra y reconoce explícitamente como deuda con plazo y entregable:
@@ -8188,7 +7708,8 @@ Lo que el manuscrito no demuestra y reconoce explícitamente como deuda con plaz
 | Caso 30 elevación a LoE = 4 | Datos humanos reales (VENLab/WALK-MS) con aval CEI, pipeline alta frecuencia | 9-10 meses | Caso 30 con EDI sobre datos humanos | Dossier técnico-ético en `Bitacora/2026-04-28-cierre-doctoral/02-` |
 | Programa multi-sonda | Validar casos clave con sondas alternativas convergentes | 6 semanas | Tabla de convergencia multi-sonda | **EJECUTADO** sobre 3 strong + 5 weak (`09-simulaciones-edi/multi_sonda/`) |
 | Topologías heterogéneas para Nivel 5 | Adaptar ABM a scale-free / small-world; verificar CR > 2.0 | 6 meses | Caso elevado a Nivel 5 o reporte negativo honesto | Programa formal en `Bitacora/2026-04-28-cierre-doctoral/06-` |
-| Baselines estadísticos puros | Comparar contra ARIMA, VAR, RW, GP | 3 semanas | Tabla comparativa con discriminación | **EJECUTADO** sobre 7 casos con `primary_arrays.json` (`09-simulaciones-edi/baselines/`) |
+| Baselines estadísticos puros | Comparar contra ARIMA, VAR, RW, GP | 3 semanas | Tabla comparativa con discriminación | **EJECUTADO** sobre 7 casos con `primary_arrays.json` (`09-simulaciones-edi/baselines/`); **resultado heterogéneo** — ver §3.6: ARIMA/VAR superan al acoplado en 2/4 `overall_pass` (Deforestación, Riesgo Biológico) bajo RMSE held-out con val_len ∈ {8, 13}. |
+| Baselines no-lineales sobre `overall_pass` afectados | Ejecutar GP, LSTM, ESN sobre Deforestación y Riesgo Biológico; reportar con Diebold-Mariano + CI bootstrap; si siguen ganando los baselines, reclasificar el corpus demostrativo en §5.4 | 2 meses | Reporte comparativo con DM-test + CI bootstrap | Pendiente — abierto por hallazgo AU-3 (2026-05-04, integrado 2026-05-11). |
 | Aparato para variables normativas | Desarrollo formal de validez/legitimidad como cuenca de atracción + caso piloto | 18-24 meses | Capítulo metodológico + caso institucional cuantitativo | Caso piloto COVID **EJECUTADO** con resultado null honesto (`09-simulaciones-edi/covid_pilot/`); programa restante documentado |
 | Integración bibliográfica formal | Citas Chicago author-date en cada capítulo del cuerpo argumental | Hito de cierre | Bibliografía consolidada al depósito | **EJECUTADA** en cap 02-04, 04-01, 05-04; bibliografía consolidada en cap 07 con 90 referencias |
 | Programa de convergencia con Wolfram | Aplicar EDI a hypergraph rewriting | 12 meses | Reporte técnico para Wolfram Institute | Piloto Rule 110 **EJECUTADO** (EDI 0.55, `09-simulaciones-edi/wolfram_pilot/`); programa post-piloto en `Bitacora/2026-04-28-cierre-doctoral/05-` |
@@ -8202,8 +7723,8 @@ Lo que el manuscrito no demuestra y reconoce explícitamente como deuda con plaz
 
 Hallazgos del triage de bitácora huérfana del modo continuo (`Bitacora/2026-05-04-continuous-run/`), integrados como deudas declaradas:
 
-- **[AU-6 2026-05-11]** La nota de la fila "Sondas inter-paradigma sobre arrays primarios reales" reporta "1/7 converge bajo |ΔEDI|≤0.10". Triage detecta que el denominador 7 mezcla 2 casos con arrays reales y 5 casos con arrays reconstruidos. La proporción honesta debe declararse como 1/2 reales y 0/5 reconstruidos, no como 1/7 agregado. Acción: ajustar la nota para descomponer la proporción y reflejar la diferencia en LoE de las fuentes; nota paralela en `06-cierre/04-versiones-cortas-defensa.md`. Cartwright 1999 queda DUDOSO (PDF ausente en `07-bibliografia/`). Origen: `Bitacora/2026-05-04-continuous-run/AU-6-multisonda-1-de-7.md`.
-- **[AU-9 2026-05-11]** El conteo de "casos null" colapsa tres regímenes operativamente distintos: (i) 5 nulls genuinos (EDI ≈ 0 con p > 0.05), (ii) 1 caso con EDI fuertemente negativo (degradación con acoplamiento), (iii) 2 casos rechazados por gate de criterios C1-C5 antes del cómputo de EDI. La cifra adversarial "-0.876" estaba mal atribuida. Acción: subdividir la tabla de null en tres filas con cuenta por régimen; paralela en `06-cierre/04-versiones-cortas-defensa.md` y `05-aplicaciones/07-mapa-aplicaciones-corpus.md`. Origen: `Bitacora/2026-05-04-continuous-run/AU-9-edi-negativo-no-es-null.md`.
+- **[AU-6 2026-05-11]** La nota de la fila "Sondas inter-paradigma sobre arrays primarios reales" reporta "1/7 converge bajo |ΔEDI|≤0.10". Triage detecta que el denominador 7 mezcla 2 casos con arrays reales y 5 casos con arrays reconstruidos. La proporción honesta debe declararse como 1/2 reales y 0/5 reconstruidos, no como 1/7 agregado. Acción: ajustar la nota para descomponer la proporción y reflejar la diferencia en LoE de las fuentes; nota paralela en `06-cierre/_extendido/versiones-cortas-defensa.md`. Cartwright 1999 queda DUDOSO (PDF ausente en `07-bibliografia/`). Origen: `Bitacora/2026-05-04-continuous-run/AU-6-multisonda-1-de-7.md`.
+- **[AU-9 2026-05-11]** El conteo de "casos null" colapsa tres regímenes operativamente distintos: (i) 5 nulls genuinos (EDI ≈ 0 con p > 0.05), (ii) 1 caso con EDI fuertemente negativo (degradación con acoplamiento), (iii) 2 casos rechazados por gate de criterios C1-C5 antes del cómputo de EDI. La cifra adversarial "-0.876" estaba mal atribuida. Acción: subdividir la tabla de null en tres filas con cuenta por régimen; paralela en `06-cierre/_extendido/versiones-cortas-defensa.md` y `05-aplicaciones/07-mapa-aplicaciones-corpus.md`. Origen: `Bitacora/2026-05-04-continuous-run/AU-9-edi-negativo-no-es-null.md`.
 - **[F06-03 2026-05-11]** El conteo "4 strong" es **invariante** a la rejilla de umbrales 0.05-0.15 × 0.20-0.40 según `THRESHOLD_SENSITIVITY_REPORT.md`, pero el manuscrito no lo declara junto a la primera mención (líneas 5 y 55 del propio capítulo). Acción: edición mínima añadiendo el paréntesis de sensibilidad junto a la primera mención del numeral "4 strong", para anticipar la objeción de *threshold shopping* sin extender la prosa. Origen: `Bitacora/2026-05-04-continuous-run/F06-03-4-strong-threshold-shopping.md`.
 
 ## 5. Aporte conceptual sustantivo
@@ -8232,7 +7753,7 @@ Ofrece la auditoría ontológica como protocolo replicable de nueve fases con do
 
 Demuestra que el aparato **discrimina** y **detecta cierre operativo** en cartografía agregada de **40 casos** que cubren simultáneamente:
 
-**(a) heterogeneidad de dominio** (corpus inter-dominio, 30 casos): física, biología, economía, política, tecnología, cultura y conducta humana, con AUC-ROC = 0.886 de ranking interno strong vs no-strong (N3).
+**(a) heterogeneidad de dominio** (corpus inter-dominio, 30 casos): física, biología, economía, política, tecnología, cultura y conducta humana, con AUC-ROC = 0.886 (n=12) interpretada como **coherencia interna del umbral EDI** (consistencia entre el umbral declarado 0.33 → strong y la clasificación final del corpus tras gate completo + C1-C5 + hostile testing), no como discriminación externa contra un baseline rival. Ver §8.1 para la declaración honesta del alcance evidencial de esta cifra.
 
 **(b) heterogeneidad de escala** (corpus inter-escala, 10 casos): desde la dinámica de espín-órbita atómica (10⁻¹⁰ m, 10⁻¹⁵ s) hasta la dinámica gravitacional de cúmulos globulares (10²⁰ m, 10¹⁴ s), con 7 strong en 7 escalas distintas y test cruzado V4-01 que confirma la especificidad de las sondas (0/12 circularidad).
 
@@ -8288,14 +7809,14 @@ Establece el **irrealismo operativo** como tercera vía: ni cosa, ni ficción, s
 
 ## 8. Fórmula final demostrativa
 
-> Bajo el aparato consolidado — irrealismo operativo de estructuras pre-ontológicas como **ontología general multiescalar**, asimetría L1↔B↔L3↔S como protocolo formal con sistema modal T declarado e invariante a la escala, dossier de anclaje de catorce componentes, protocolo C1-C5 con 13 condiciones simultáneas, EDI por intervención ablativa con permutación 999 y bootstrap 500, cartografía agregada de 40 casos: **30 inter-dominio** sobre física, biología, economía, política, tecnología, cultura y conducta humana (4 `overall_pass=True` + 1 strong sin gate + 8 weak + 3 controles rechazados) y **10 inter-escala** desde dinámica de espín-órbita atómica (10⁻¹⁰ m) hasta dinámica de cúmulos globulares (10²⁰ m) con **7 strong en 7 escalas distintas** + 1 weak + 2 nulls honestos, validación lógica formal con suite ST de 24 teorías (6 hallazgos críticos detectados y corregidos), hostile testing aplicado al motor (0/2000 falsos positivos en gate completo bajo random walk masivo, Wilson 95 % CI [0, 0.00191]) y al test cruzado de sondas inter-escala (0/12 circularidad detectada), AUC-ROC = 0.886 para discriminación de ranking interno vs ARIMA = 0.600, y discriminación pública contra catorce rivales (incluido Wolfram con piloto Rule 110 ejecutado mostrando convivencia de irreducibilidad micro y cierre macro detectable) — la tesis del irrealismo operativo de estructuras pre-ontológicas se sostiene como **propuesta ontológica general multiescalar articulada con demostración parcial bajo régimen declarado**, con limitaciones honestamente reconocidas (p-value mal calibrado al 24% empírico aunque umbrales EDI robustos, caso 30 con circularidad detectada por sonda alternativa, depuración post-hoc del corpus inter-escala, datos sintéticos pendientes de elevación a LoE 4-5, escalas como etiquetas nominales basadas en parámetros publicados, AUC-ROC interno no externo, ningún caso cumple los tres criterios κ-ontológica, sin revisión por pares humanos externos) y deuda residual fechada con cronograma firme post-defensa.
+> Bajo el aparato consolidado — irrealismo operativo de estructuras pre-ontológicas como **ontología general multiescalar**, asimetría L1↔B↔L3↔S como protocolo formal con sistema modal T declarado e invariante a la escala, dossier de anclaje de catorce componentes, protocolo C1-C5 con 13 condiciones simultáneas, EDI por intervención ablativa con permutación 999 y bootstrap 500, cartografía agregada de 40 casos: **30 inter-dominio** sobre física, biología, economía, política, tecnología, cultura y conducta humana (4 `overall_pass=True` + 1 strong sin gate + 8 weak + 3 controles rechazados) y **10 inter-escala** desde dinámica de espín-órbita atómica (10⁻¹⁰ m) hasta dinámica de cúmulos globulares (10²⁰ m) con **7 strong en 7 escalas distintas** + 1 weak + 2 nulls honestos, validación lógica formal con suite ST de 24 teorías (6 hallazgos críticos detectados y corregidos), hostile testing aplicado al motor (0/2000 falsos positivos en gate completo bajo random walk masivo, Wilson 95 % CI [0, 0.00191]) y al test cruzado de sondas inter-escala (0/12 circularidad detectada), coherencia interna del umbral EDI sobre el corpus inter-dominio (AUC-ROC = 0.886, n=12; interpretada como consistencia entre el umbral declarado 0.33 y la clasificación final del corpus, no como discriminación externa contra un baseline rival; ver §8.1), y discriminación pública contra catorce rivales (incluido Wolfram con piloto Rule 110 ejecutado mostrando convivencia de irreducibilidad micro y cierre macro detectable) — la tesis del irrealismo operativo de estructuras pre-ontológicas se sostiene como **propuesta ontológica general multiescalar articulada con demostración parcial bajo régimen declarado**, con limitaciones honestamente reconocidas (p-value mal calibrado al 24% empírico aunque umbrales EDI robustos, caso 30 con circularidad detectada por sonda alternativa, depuración post-hoc del corpus inter-escala, datos sintéticos pendientes de elevación a LoE 4-5, escalas como etiquetas nominales basadas en parámetros publicados, AUC-ROC interno no externo, ningún caso cumple los tres criterios κ-ontológica, sin revisión por pares humanos externos) y deuda residual fechada con cronograma firme post-defensa.
 
 ### 8.1. Lo que la tesis afirma con fuerza tras hostile testing severo
 
 - **Aporte metodológico:** protocolo replicable con motor común (ABM+ODE acoplado, suite ST, hostile testing automatizado, requirements-locked) que cualquier tercero puede ejecutar y verificar.
-- **Discriminación de ranking interno** sobre el corpus inter-dominio: AUC-ROC 0.886 vs ARIMA 0.600 (V4-05 reconoce que es interno, no validación externa contra estándar de oro).
+- **Coherencia interna del umbral EDI** sobre el corpus inter-dominio: AUC-ROC = 0.886 (n=12), entendida como consistencia entre el umbral declarado a priori (EDI ≥ 0.33 → strong) y la clasificación final del corpus tras todas las verificaciones del aparato (gate completo, p-value, C1-C5, hostile testing). Esta cifra **no mide discriminación contra un rival externo**: el predictor y la etiqueta son funciones del mismo EDI. La comparación previa contra ARIMA (0.600) se retira: ARIMA no es un baseline pertinente para clasificación strong/null y se computaba sobre n=8 mientras EDI se computaba sobre n=12, lo que invalida la comparación pareada. La validación discriminativa externa (etiquetas asignadas por especialistas de cada dominio sin acceso al EDI, replicación independiente del cómputo, comparación de rankings) es deuda bloqueante post-defensa. Metodología y CI bootstrap en `09-simulaciones-edi/auc_roc/methodology.md`.
 - **Discriminación multiescalar:** 7 strong en 7 escalas distintas con sondas físicamente motivadas (Lindblad, Bloch, Tyson-Novak, Hoffmann, Mackey-Glass, Leavitt, Plummer); las sondas son específicas (test cruzado V4-01: 0% circularidad sobre datos no-suyos).
-- **Robustez del gate completo:** 0/2000 falsos positivos bajo random walk masivo agregando los tres scripts canónicos (`N1_falsos_positivos.py` n=500, `V4_06_hostile_multiescala.py` n=500, `N5_hostile_testing.py` n=1000); Wilson 95 % CI [0, 0.00191]. El gate filtra ruido sin acoplamiento ODE→ABM por construcción (§3.4): el resultado certifica integridad de implementación, no discriminación contra rivales con estructura — esa carga la sostienen AUC-ROC = 0.886 vs ARIMA y 3/3 controles de falsación rechazados.
+- **Robustez del gate completo:** 0/2000 falsos positivos bajo random walk masivo agregando los tres scripts canónicos (`N1_falsos_positivos.py` n=500, `V4_06_hostile_multiescala.py` n=500, `N5_hostile_testing.py` n=1000); Wilson 95 % CI [0, 0.00191]. El gate filtra ruido sin acoplamiento ODE→ABM por construcción (§3.4): el resultado certifica integridad de implementación, no discriminación contra rivales con estructura — esa carga la sostienen **los 3/3 controles de falsación rechazados** (06-exoplanetas, 07-noticias-shanghai, 08-observacional-control, con EDI ≤ 0.06 y gate=false en los tres) y la coherencia interna del umbral EDI (AUC-ROC = 0.886 como medida de consistencia umbral interna, no de discriminación contra baseline externo).
 - **Validación lógica formal:** suite ST de 24 teorías con coherencia interna verificada y limitaciones explícitas declaradas.
 
 ### 8.2. Lo que la tesis NO afirma (limitaciones honestas)
@@ -8307,6 +7828,7 @@ Establece el **irrealismo operativo** como tercera vía: ni cosa, ni ficción, s
 - **No afirma generalidad multiescalar sin reservas:** las escalas son etiquetas nominales basadas en parámetros publicados; los datos son sintéticos. La elevación a datos reales abiertos (IBM Quantum, BRENDA, PhysioNet, OGLE, Gaia DR3) es deuda priorizada de 6-12 meses post-defensa.
 - **No afirma haber resuelto el caso 38 (locomoción τ-dot):** la sonda alternativa propuesta produjo EDI = -1.34, lo cual es failure mode de sonda, no null estructural. La objeción N2 sobre circularidad de Fajen-Warren sigue parcialmente abierta hasta datos VENLab humanos.
 - **No afirma haber sido validada por pares humanos externos:** todas las auditorías (v1, v2, severa, v3, v4) son endógenas. La revisión externa hostil es deuda bloqueante para sustentación.
+- **No afirma que el AUC-ROC = 0.886 mida discriminación contra un baseline rival:** la AUC se computa con el mismo EDI como score y como etiqueta (vía umbral 0.33), por lo que es un test de **consistencia umbral interna**, no de validez externa. La comparación previa contra ARIMA (0.600) se retira por dos razones: (i) ARIMA es predicción univariada, no clasificación binaria; (ii) la comparación se hacía sobre n=8 (ARIMA, tras filtrar 4 nulls sin `rmse_arima`) mientras EDI se computaba sobre n=12, lo que invalida la comparación pareada. La validación discriminativa externa es deuda bloqueante post-defensa.
 
 ### 8.3. Estado declarado del manuscrito
 
