@@ -6,7 +6,7 @@ tools:
   - Bash
   - Grep
   - Glob
-model: sonnet
+model: haiku
 ---
 
 You detect and propose corrections of numeric claims in prose that diverge from `metrics.json`.

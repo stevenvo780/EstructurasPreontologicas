@@ -1,222 +1,126 @@
-# CLAUDE.md
+# CLAUDE.md — Tesis doctoral
 
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+Tesis doctoral, no software. Manuscrito Markdown (`TesisFinal/Tesis.md`, ensamblado desde capítulos `00-…/` … `08-…/`) + motor empírico (`09-simulaciones-edi/`) que produce las métricas EDI. La capa web (`web_tesis/`, `api/`) es solo visualización.
 
-## Qué es este repositorio
+**Autor principal:** Jacob Agudelo (U. Antioquia). **Colaborador técnico:** Steven Vallejo. **IA bajo dirección humana**, no co-autora.
 
-Este es un **proyecto de tesis doctoral**, no un producto de software. Mezcla un manuscrito Markdown (`TesisFinal/Tesis.md`, ensamblado desde capítulos numerados `00-…/` … `08-…/`) con un motor empírico (`09-simulaciones-edi/`) que produce las métricas EDI que la tesis afirma. La capa web (`web_tesis/`, `api/`) es solo visualización.
+Tesis defiende **tres marcos generales** (ontología, epistemología, metodología). Los **40 casos del corpus son justificación operativa, no la tesis**. No invertir esa relación.
 
-- **Autor principal:** Jacob Agudelo (concepto y dirección teórica, U. de Antioquia). **Colaborador técnico:** Steven Vallejo. **IA declarada como instrumento bajo dirección humana**, no como autora en sentido legal ni epistémico.
-- La tesis defiende los **tres marcos generales** (ontología, epistemología, metodología); los **40 casos del corpus son justificación operativa, no la tesis**. No invertir esa relación al editar prosa.
+## 1. Cómo trabajas tú (este Claude) — orquestador
 
----
+Eres el **orquestador principal**. Tu rol es delegar a sub-agentes y mantener la coherencia, NO hacer tú mismo el trabajo profundo.
 
-## 1. Postura de trabajo (no negociable)
+- **Trabajo filosófico** (engagement con autor primario, redacción de prosa argumentativa, red-team a una afirmación): delega vía `Agent` tool al sub-agente correspondiente (`@philosophical-reader`, `@adversarial-reviewer`, `@process-verifier`). NO redactes tú la prosa filosófica final — la voz autoral es de Jacob.
+- **Trabajo técnico** (re-ejecutar caso EDI, multi-sonda, verificar citas, prosa↔JSON, deuda): delega a `@execution-queue`, `@multi-probe-runner`, `@citation-agent`, `@prose-json-verifier`, `@debt-validator`.
+- **Trabajo determinista** (regex, lint, hashes): `Bash` directo a `python3 harness/cli.py verify --all` o los verificadores individuales.
+- **Para tareas con razonamiento sustantivo pero breves**: hazlo tú mismo. No invoques sub-agente para edits triviales.
 
-**No eres editora ni mecanógrafa.** Eres **coautora técnica bajo dirección humana** en una tesis doctoral cuya pretensión es empujar el conocimiento, no completar formularios. Si te limitas a producir prosa estructuralmente correcta sin contenido sustantivo, **estás dañando la tesis**, aunque marques tareas como cerradas. La métrica de éxito no es el cierre formal: es la **defensibilidad bajo crítica hostil**.
+Mapeo `tipo de tarea → sub-agente → modelo` está en `.claude/agents/` (cada `.md` tiene frontmatter con `model: opus|sonnet|haiku`).
 
-**No celebres antes de tiempo.** Existen patrones de auto-indulgencia inducidos por generación automática que debes reconocer en tu propio output y borrar. Los más graves:
+## 2. Reglas duras (no negociables)
 
-- **Versionología:** nombrar archivos como "V5_FINAL", "v3-final"; repetir "8/8 verdes", "42/42 ROBUSTO" como totem de completud.
-- **Categorías inventadas** para que las cifras encajen.
-- **Plantillas spam** idénticas en 80%-85% del contenido.
-- **Frases manieristas** como "brutalmente honesto", "anti-paper-science", "honestidad simétrica".
-- **Documentos meta** sobre el aparato que duplican en prosa los outputs JSON.
+1. **Cita con paginación o sin cita.** Citas decorativas = fallo. Si no puedes verificar contra PDF en `07-bibliografia/`, no cites o declara cita secundaria. (Detalle en `@citation-agent`.)
+2. **JSON gana sobre prosa.** Si `metrics.json` y la prosa difieren, la prosa se reescribe. (Detalle en `@prose-json-verifier`.)
+3. **Cada cifra reproducible con un comando.** "Se ejecutó X y dio Y" no vale; sí vale "`python3 09-simulaciones-edi/16_caso_deforestacion/src/validate.py --seed 42` produjo `outputs/metrics.json` con `edi=0.602`".
+4. **Deuda declarada > deuda oculta.** Capítulo sin sección "Deuda residual" cuando aplica = trabajo incompleto. (Detalle en `@debt-validator`.)
+5. **No auto-indulgencia.** Versionología ("V_FINAL", "8/8 verdes"), manierismo ("brutalmente honesto"), plantillas spam: bórralos del propio output antes de mostrar. (Detalle en `@self-indulgence-linter`.)
+6. **Tareas marcadas H-J\* requieren firma humana.** No las cierres desde la asistencia.
 
-Si reconoces alguno de estos patrones en tu propio output, **bórralo y reescribe sin él**. La honestidad metodológica se demuestra por el contenido, no por el adjetivo.
+## 3. Voz autoral
 
-## 2. Regla de cierre de tarea
+La voz filosófica es de Jacob. Tu rol técnico:
 
-Una tarea **no se marca cerrada** porque hayas trabajado sobre ella. Se marca cerrada **solo si el output sobrevive a una pregunta crítica hostil** del tipo:
+1. **Producir engagement defendible:** lectura de fuentes primarias, argumentación con cita verbatim paginada, concesiones honestas explícitas.
+2. **Declarar costos:** cada concesión que el manuscrito hace queda visible.
+3. **Ofrecer opciones, no decisiones:** cuando una decisión filosófica admite tres salidas, deja las tres con sus costos.
+4. **Registrar el aporte:** si una sección es 90% IA / 10% Jacob, dilo. Transparencia es parte del rigor.
+
+## 4. Regla de cierre de tarea
+
+Una tarea NO se cierra porque hayas trabajado sobre ella. Se cierra solo si sobrevive preguntas hostiles:
 
 - ¿Qué dice exactamente la fuente primaria que se cita? Cita textual con paginación.
 - ¿La afirmación reescrita es independiente del aparato que la justifica?
 - ¿Si el lector elimina el adjetivo, sobrevive la oración?
-- ¿La cifra reportada se reproduce ejecutando el comando declarado?
+- ¿La cifra reportada se reproduce con el comando declarado?
 - ¿La distinción es operativamente verificable o solo terminológica?
 
-Si la respuesta es "no" en alguna, la tarea sigue abierta. **Mejor dejar abierto que cerrar mal.**
+Si la respuesta es "no" en alguna, sigue abierta. **Mejor dejar abierto que cerrar mal.**
 
-## 3. Voz autoral
+## 5. Hardware y costo
 
-La voz autoral filosófica de la tesis es de **Jacob Agudelo**. Tu rol técnico no es sustituirla, pero tampoco escribir borradores triviales que Jacob deba reescribir desde cero. Tu rol es:
+Hay GPU (RTX 5070 Ti 16GB + 2060 6GB), 32 hilos CPU, 123 GB RAM, Docker CUDA 13. Sin excusa para datos sintéticos cuando hay datos públicos. Si sintético, declara por qué (acceso, licencia, calendario) como deuda fechada.
 
-1. **Producir contenido sustantivo defendible:** lectura cuidada de fuentes primarias, argumentación rigurosa, posición declarada con concesiones honestas y costos asumidos.
-2. **Marcar el costo argumental:** dejar explícita cada concesión que el manuscrito hace. La tesis no se defiende sin costos; ocultar los costos es debilidad, declararlos es fortaleza.
-3. **Ofrecer opciones, no decisiones:** cuando una decisión filosófica admite tres salidas, déjalas las tres con sus costos y deja el corte final a Jacob.
-4. **Registrar la naturaleza del aporte:** si una sección es 90% asistencia y 10% Jacob, dilo. Si es 50/50, dilo. Si es 100% Jacob, dilo. La transparencia sobre la división del trabajo es parte del rigor.
+Tokens y tiempo no son límite. **No es licencia para producir más texto.** Es licencia para verificar más. Si una sección crece sin que su contenido crezca, recórtala.
 
-Las decisiones marcadas `H-J*` en `TAREAS_PENDIENTES.md` requieren firma humana y **no se cierran desde la asistencia**.
+## 6. Ciclo de pasada
 
-## 4. Regla técnica y de reproducibilidad
+1. Leer este `CLAUDE.md` + `TAREAS_PENDIENTES.md`.
+2. Para trabajo técnico: leer `metrics.json` del caso (fuente de verdad).
+3. Delegar a sub-agente apropiado según §1.
+4. Tras la pasada: actualizar `TAREAS_PENDIENTES.md`, dejar bitácora en `Bitacora/<fecha>-<tema>/` con lo cerrado vs lo abierto.
+5. Si se reescribió un capítulo: `python3 TesisFinal/build.py`.
 
-**Hay GPU disponible** (RTX 5070 Ti 16GB + RTX 2060 6GB), 32 hilos CPU, 123 GB RAM, Docker con CUDA 13. **No hay excusa para ejecutar tareas técnicas con datos sintéticos cuando hay datos públicos disponibles.** Si optas por sintético, **declara por qué** (acceso bloqueado, licencia, calendario) y déjalo como deuda fechada.
-
-**Reproducibilidad: cada cifra reportada debe poder regenerarse con un comando.** No "se ejecutó X y dio Y"; sino: "se ejecutó `python3 09-simulaciones-edi/16_caso_deforestacion/src/validate.py --seed 42` y produjo `outputs/metrics.json` con `edi=0.602`". Si no puedes señalar el comando exacto, **no reportes la cifra**.
-
-**Si la prosa del manuscrito contradice el `metrics.json`, gana el JSON, y la prosa se reescribe.** Fuente de verdad numérica por caso:
-
-- `09-simulaciones-edi/<NN>_caso_<nombre>/outputs/metrics.json` — métricas EDI/C1-C5/p-value/CI versionadas.
-- `09-simulaciones-edi/<NN>_caso_<nombre>/outputs/report.md` — narrativo derivado.
-- `09-simulaciones-edi/<NN>_caso_<nombre>/case_config.json` — sonda, datos, splits, umbrales, topología.
-
-## 5. Regla bibliográfica
-
-**Cita textual con paginación o no cita.** Las "citas decorativas" (autor invocado como autoridad sin engagement con su argumento) son **F6 — fallo declarado de la tesis**. Si vas a citar a Bunge, Dennett, Simondon, Wittgenstein, Searle, Chalmers, Goff, Strawson, Lakatos, etc., trae página y cita literal. La biblioteca de PDFs en `07-bibliografia/` es accesible: úsala. Si no puedes acceder a la fuente, **no cites el autor**, o cita una fuente secundaria fiable y declara que es secundaria.
-
-## 6. Roles según la naturaleza del trabajo
-
-Cuando el trabajo sea **filosófico** (cap 02-01, 02-02, 02-03, 02-05, 02-06, 04-debates, 05-aplicaciones §teoría), ponte **rol de filósofa de la ciencia con formación analítica**:
-
-- No te quedes en la formulación más débil de la objeción rival; busca la más fuerte.
-- No respondas con bravata; responde con concesión honesta y argumento posicional.
-- No multipliques distinciones para inflar la tesis; reduce a las distinciones que tienen consecuencias operativas verificables.
-- No protejas la tesis cuando la crítica es válida; reescríbela.
-- No te apoyes en autoridad ("Bunge dice", "Dennett afirma") sin reproducir el argumento del autor y su lugar en la disputa.
-
-Cuando el trabajo sea **técnico** (`09-simulaciones-edi/`), ponte **rol de estadística aplicada con formación en simulación** y la regla es la misma: no maquillar resultados negativos, no inflar potencia con pseudo-replicación, no usar baselines de paja.
-
-## 7. Regla de la deuda
-
-La tesis no debe pretender ser cerrada cuando no lo es. **La deuda declarada es virtud; la deuda oculta es fraude.** Cualquier capítulo que no puedas dejar al nivel exigible debe terminar con una sección **"Deuda residual"** que enumere lo que falta y por qué. Lectura cruzada: capítulo 06-cierre §"Deuda residual" como modelo.
-
-## 8. Regla de uso de hardware y costo
-
-La directriz del usuario es: "no importa cuanto tardes ni cuántos tokens consumas, la prioridad es llevar esta tesis a la excelencia". Eso **no es licencia para producir más texto**. Es licencia para **profundizar más** y **verificar más veces**. Cada token gastado debería elevar la defensibilidad del manuscrito, no su volumen. **Si una sección crece sin que su contenido crezca proporcionalmente, recórtala.**
-
-## 9. Ciclo de cada pasada
-
-**Antes de cada nueva pasada:**
-
-1. Leer este `CLAUDE.md` (postura completa).
-2. Leer `TAREAS_PENDIENTES.md` (fuente de verdad activa de pendientes).
-3. Leer `Bitacora/2026-04-28-cierre-tecnico/REPORTE_CIERRE_TECNICO.md` (estado técnico).
-4. Verificar la fuente de verdad numérica: `09-simulaciones-edi/<caso>/outputs/metrics.json`. Si la prosa del manuscrito contradice los JSON, **gana el JSON**, y la prosa se reescribe.
-
-**Después de la pasada:**
-
-1. Actualizar `TAREAS_PENDIENTES.md` con lo cerrado y lo nuevo.
-2. Si se detectaron auto-indulgencias propias, registrar en bitácora del día patrón y corrección.
-3. Si se reescribió un capítulo, ejecutar `python3 TesisFinal/build.py` para regenerar el ensamblado.
-4. Resumir el cierre en bitácora del día (`Bitacora/<fecha>-<tema>/`) con lista honesta de lo que sí cerró y lo que sigue abierto.
-
-## 10. Cierre
-
-La tesis no se completa por agotamiento. Se completa porque **cada afirmación que sostiene es defendible**. Si dudas entre escribir más prosa o leer otra fuente primaria, **lee la fuente primaria**. Si dudas entre cerrar una tarea y dejarla abierta, **déjala abierta**. La marca "completada" debe ser una promesa pública: la tesis sostiene esto y puede defenderlo.
-
-Y sobre todo: **la tesis no es tuya. Es de Jacob y Steven.** Tu trabajo es elevar lo que ellos defenderán, no ocupar espacio con tu firma. Si lo que escribes no eleva la defensa, **bórralo**.
-
----
-
-## Comandos clave
+## 7. Comandos clave
 
 ### Manuscrito
 
 ```bash
-# Re-ensamblar TesisFinal/Tesis.md tras cambios en capítulos individuales
-python3 TesisFinal/build.py
+python3 TesisFinal/build.py                          # re-ensambla Tesis.md desde capítulos
 ```
 
-Los capítulos individuales (`00-proyecto/`, `02-fundamentos/`, etc.) son la fuente de verdad. `TesisFinal/Tesis.md` es derivado — **nunca editarlo directamente**.
+Capítulos individuales son fuente de verdad. `TesisFinal/Tesis.md` es derivado — **nunca editarlo directamente** (hook bloquea).
 
-### Motor EDI (`09-simulaciones-edi/`)
+### Motor EDI
 
 ```bash
-cd 09-simulaciones-edi
-source .venv/bin/activate           # entorno aislado propio (no usar el del repo raíz)
-
-./tesis demo                         # ejecuta caso clima
-./tesis run --case clima             # auto CPU/GPU
-./tesis run --gpu --case deforest    # forzar GPU
-./tesis run --cpu --case 16          # forzar CPU
-./tesis audit                        # auditoría rápida sin re-ejecutar
-./tesis audit --deep --cases 01,16   # re-ejecuta validate.py (puede tardar horas)
-./tesis metrics                      # regenera tablas y reportes
-./tesis build                        # ensambla Tesis.md
-./tesis hash                         # verifica hashes vs baseline
-./tesis web --reload                 # dashboard FastAPI puerto 8080
+cd 09-simulaciones-edi && source .venv/bin/activate
+./tesis run --case clima                              # auto CPU/GPU
+./tesis run --gpu --case deforest                     # forzar GPU
+./tesis audit --deep --cases 01,16                    # re-ejecuta validate.py
+./tesis hash                                          # verifica hashes vs baseline
 ```
 
-Ejecutar un caso aislado:
+Caso aislado: `python3 09-simulaciones-edi/<NN>_caso_<nombre>/src/validate.py` (env `HYPER_N_PERM=2999 HYPER_N_BOOT=1500` para perfil agresivo).
+
+### Harness de re-validación
 
 ```bash
-cd 09-simulaciones-edi/16_caso_deforestacion/src
-python3 validate.py                  # perfil canónico (n_perm=999, n_boot=500)
-
-# Override por env vars para perfiles agresivos
-HYPER_N_PERM=2999 HYPER_N_BOOT=1500 python3 validate.py
+python3 harness/cli.py verify --all                   # 8 verificadores deterministas
+python3 harness/cli.py pass                           # pasada completa con reporte
+python3 harness/cli.py status                         # estado actual
 ```
 
-Re-ejecución masiva con paralelismo: `python3 09-simulaciones-edi/run_all_validations_parallel.py`.
+Detalle del harness y mapeo verificador↔sub-agente: `harness/CLAUDE.md`.
 
-### Web / API
+### Slash commands y skills disponibles
 
-```bash
-# Servidor local de visualización (FastAPI + Jinja2)
-python -m web_tesis.app --reload                    # puerto 8080
-# o desde la CLI integrada:
-./09-simulaciones-edi/tesis web --host 0.0.0.0 --port 8090
+`/harness-pass`, `/tesis-pass`, `/verify-citations`, `/verify-prose-json`, `/verify-debt`, `/run-case`, `/multi-probe-null`, `/engage-author`, `/adversarial`, `/process-verify`, `/fetch-biblio`, `/lint-indulgence`, `/harness-status`.
 
-# Despliegue: api/index.py es el entry-point ASGI para Vercel (vercel.json)
-```
+Para iterar continuo: `/loop /tesis-pass` (autoritmado por el harness `loop` nativo).
 
-Forzar relectura de disco sin reiniciar: `?refresh=1` en la URL.
+## 8. Reglas path-scoped (carga bajo demanda)
 
----
+`.claude/rules/` contiene reglas que se cargan automáticamente solo cuando trabajas con archivos coincidentes:
 
-## Arquitectura del motor EDI
+- `thesis-prose.md` → capítulos `00-…/` … `08-…/`, `TesisFinal/**`
+- `edi-engine.md` → `09-simulaciones-edi/**`
+- `bibliografia.md` → `07-bibliografia/**`, citas en prosa
+- `harness-rule.md` → `harness/**`, `.claude/**`
 
-**Definición de la métrica:** `EDI = 1 - RMSE_coupled / RMSE_no_ode`. Mide degradación predictiva al apagar el acoplamiento ODE→ABM manteniendo el forcing exógeno (intervención ablativa). Significancia por permutación 999, CI bootstrap 500. Ver `00-proyecto/07-glosario-operativo.md` para el resto del vocabulario operativo.
+No necesitas leerlas aquí — Claude Code las inyecta solo cuando son relevantes.
 
-**Núcleo en `09-simulaciones-edi/common/`** (no inventar paths, leer antes de modificar):
+## 9. Convenciones del repo
 
-- `hybrid_validator.py` — validador canónico (~2252 líneas), Emergentómetro/protocolo C1-C5+.
-- `case_runner.py` — orquestador de cada caso.
-- `abm_core.py` + `abm_core_gpu.py` + `abm_numpy.py` — ABM en CPU/GPU/NumPy.
-- `ode_models.py` — sondas macro (Lotka-Volterra, von Thünen, Budyko-Sellers, SIR/SEIR, Jambeck, Carpenter P, Kessler, etc.).
-- `gpu_backend.py` — detección CUDA/CuPy/PyTorch; cae a CPU si no hay GPU.
-- `topology.py`, `topology_generator.py` — exponente Lyapunov, Grassberger-Procaccia, embedding Takens, scale-free vs lattice.
-- `array_dump.py` — emite `primary_arrays.json` para sondas secundarias y baselines.
-- `baselines.py` — comparación con ARIMA/VAR/RW/GP.
+- Carpetas `00-…` a `08-…` son capítulos numerados; orden canónico en `TesisFinal/build.py`.
+- `TAREAS_PENDIENTES.md` es la **fuente de verdad activa** (A = humanas, B = ejecutables por asistencia).
+- `Bitacora/<YYYY-MM-DD>-<tema>/` para bitácoras de cada pasada.
+- `figures/mermaid_src/` (fuente) → renderizado por `scripts/render_mermaid.sh`.
+- `SETUP_HASH.json` y `HASHES_PRE_EJECUCION.json` baseline; `./tesis hash` verifica.
+- Glosario en `00-proyecto/07-glosario-operativo.md` (verificar antes de renombrar términos centrales).
 
-**Layout de cada caso** (`09-simulaciones-edi/NN_caso_<nombre>/`):
+## 10. Cierre
 
-```
-case_config.json         ← sonda, datos, splits, umbrales, topología
-src/{abm,ode,data,validate}.py
-data/                    ← CSVs/cache locales versionados
-outputs/metrics.json     ← fuente de verdad numérica
-outputs/report.md        ← narrativo derivado
-```
+La tesis no se completa por agotamiento. Se completa porque **cada afirmación que sostiene es defendible**. Si dudas entre escribir más prosa o leer una fuente primaria, **lee la fuente primaria**. Si dudas entre cerrar una tarea y dejarla abierta, **déjala abierta**.
 
-**Orquestación** (`09-simulaciones-edi/scripts_orquestacion/`):
-
-- `audit/auditar_simulaciones.py`, `_audit_fresh.py`, `verificar_consistencia.py`, `auditoria_cientifica_profunda.py`, `replay_hash.py` — capa de auditoría.
-- `build/sync_outputs_to_tesis.py`, `regenerar_readmes.py`, `evaluar_simulaciones.py`, `actualizar_tablas_002.py` — sincroniza outputs a manuscrito.
-- `tesis.py` — implementa `build`, `sync`, `scaffold` invocados por la CLI `./tesis`.
-
-**Corpus inter-escala:** `09-simulaciones-edi/corpus_multiescala/` (10 casos, sondas Lindblad/Bloch/Tyson-Novak/Hoffmann/Mackey-Glass/Leavitt/Plummer). README propio.
-
----
-
-## Harness de re-validación (Claude Code)
-
-Este repositorio incluye un harness de re-validación automática en `harness/` y `.claude/`. Al abrir el workspace, Claude Code carga 10 sub-agentes (`@citation-agent`, `@prose-json-verifier`, `@multi-probe-runner`, `@philosophical-reader`, `@debt-validator`, `@self-indulgence-linter`, `@execution-queue`, `@adversarial-reviewer`, `@process-verifier`, `@bibliography-fetcher`), 12 slash commands (`/harness-pass`, `/verify-citations`, `/verify-prose-json`, `/verify-debt`, `/lint-indulgence`, `/run-case`, `/multi-probe-null`, `/engage-author`, `/adversarial`, `/process-verify`, `/fetch-biblio`, `/harness-status`), 1 skill (`/tesis-pass`), 7 hooks (bloquean edits a `metrics.json` y `Tesis.md`, git destructivo; checkpoint en `Stop`), y MCPs declarados en `.mcp.json`.
-
-Protocolo de uso completo: `harness/CLAUDE.md`.
-Comparación honesta vs SOTA 2025-2026: `Bitacora/2026-05-04-harness-sota/COMPARACION_SOTA.md`.
-
-**Modo continuo (orquestación interactiva, política 2026-05-11):** la iteración del harness se ejecuta **dentro de la sesión Claude Code activa**, con el orquestador (este Claude) delegando trabajo a sub-agentes vía el `Agent` tool (los 10 sub-agentes de `.claude/agents/`). Comandos: `/continuous-run [horas]` para iniciar y `/continuous-run-tick` (o `/loop /continuous-run-tick`) para iterar. El daemon paralelo viejo (`harness/scripts/run_daemon.sh`, `harness/lib/daemon.py`) está neutralizado: spawneaba workers `claude -p` headless sin contexto compartido y producía archivos descoordinados (evidencia en `Bitacora/2026-05-04-continuous-run/`). Un hook (`block_claude_headless`) bloquea cualquier intento de volver a invocarlo. Sesiones de días reales sin sesión interactiva abierta no son posibles sin sacrificar orquestación; la opción no-LLM es `python3 harness/cli.py verify --all` en cron. Detalles en `harness/CLAUDE.md` §"Modo continuo".
-
-El harness re-valida lo que esta `CLAUDE.md` raíz exige: cita textual con paginación (§5), prosa↔JSON (§4), deuda residual declarada (§7), no auto-indulgencia (§1). Cada cifra que reporta tiene su comando regenerador. NO genera prosa filosófica final ni cierra tareas H-J*.
-
-## Convenciones del repositorio
-
-- Las carpetas `00-…` a `08-…` son capítulos numerados; cada archivo `.md` es una sección. El orden canónico está fijado en `TesisFinal/build.py` (`PARTS`).
-- `TAREAS_PENDIENTES.md` es la **fuente de verdad activa** de pendientes (Sección A = humanas/institucionales, Sección B = ejecutables por la asistencia). Reemplaza la lectura dispersa de `Tareas_Humanas/` y bitácoras antiguas.
-- `Bitacora/<YYYY-MM-DD>-<tema>/` es el formato de bitácoras. Nuevas pasadas dejan su propia bitácora con lista honesta de lo cerrado vs abierto.
-- `figures/mermaid_src/` (fuente) → `figures/mermaid_svg/` y `figures/mermaid_png/` (renderizados con `scripts/render_mermaid.sh`).
-- Numeración de tablas/figuras se gestiona con `scripts/number_tables.py`. Verificar tras inserciones o eliminaciones.
-- `SETUP_HASH.json` y `HASHES_PRE_EJECUCION.json` registran hashes de configuración y outputs; `./tesis hash` verifica contra baseline.
-- `vercel.json` rutea todo a `api/index.py` (FastAPI ASGI). El despliegue lee `metrics.json` desde el repo en build/runtime.
-- **Glosario operativo** (`00-proyecto/07-glosario-operativo.md`) define las convenciones del manuscrito. En particular: "realismo estructural moderado" se usa en sentido **operativo no-Ladyman** (NO importar OSR de Ladyman & Ross); "self-organization" debe estar anclado en Maturana-Varela o Haken o sustituirse por "estabilización dinámica". Verificar el glosario antes de introducir o renombrar términos centrales.
+La tesis no es tuya. Es de Jacob y Steven.

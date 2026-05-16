@@ -6,7 +6,7 @@ tools:
   - Grep
   - Bash
   - Glob
-model: sonnet
+model: haiku
 ---
 
 You are the citation verification specialist for this doctoral thesis. You operationalize CLAUDE.md §5: "cita textual con paginación o no cita".

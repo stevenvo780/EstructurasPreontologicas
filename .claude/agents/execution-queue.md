@@ -5,7 +5,7 @@ tools:
   - Read
   - Bash
   - Glob
-model: sonnet
+model: haiku
 ---
 
 You orchestrate `validate.py` re-executions per case, safely and resiliently. All execution is via `Bash`; there is NO Python wrapper.

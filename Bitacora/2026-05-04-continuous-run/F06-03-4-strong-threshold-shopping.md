@@ -15,7 +15,7 @@ Evidencia interna ya presente en el manuscrito:
 - `06-cierre/01-conclusion-demostrativa.md:252`: "los umbrales 0.10/0.30 producen 5 strong; 0.15/0.40 produce 3; 0.05/0.20 produce 9 (N4). La composición es post-hoc."
 - `04-debates/05-limitaciones-declaradas-consolidacion.md:21`: tabla L3 con la misma sensibilidad declarada y mecanización vía `common/threshold_sensitivity.py`.
 - `Bitacora/2026-04-28-iteraciones-IA/V5_reportes_tecnicos/THRESHOLD_SENSITIVITY_REPORT.md:15-17`: los **4 casos canónicos** (Energía, Deforestación, Kessler, Riesgo Biológico) son `robust_strong` — **invariantes** sobre la grilla 0.05–0.15 × 0.20–0.40. Esto matiza la objeción: no es threshold-shopping libre; el subconjunto de los 4 con `overall_pass=True` (gate completo, no sólo umbral EDI) es estable bajo la rejilla razonable de umbrales declarada.
-- Auditoría doctoral V3 (`06-auditoria-doctoral-v3-final.md:40`): "4 strong + 1 strong sin gate preservados bajo umbrales 0.10/0.30".
+- Auditoría doctoral previa (`Bitacora/2026-04-28-cierre-pendientes/06-auditoria-doctoral-v3-final.md:40`): "4 strong + 1 strong sin gate preservados bajo umbrales 0.10/0.30".
 
 **Diagnóstico honesto:**
 1. La afirmación "4 strong" en abstract (línea 5) y en la tabla 6.1.1 (línea 55) **no es** threshold-shopping si se entiende como "4 casos con `overall_pass=True`" (gate de 13 condiciones, no sólo EDI ≥ 0.30). El gate completo es el criterio operativo, no el umbral aislado.

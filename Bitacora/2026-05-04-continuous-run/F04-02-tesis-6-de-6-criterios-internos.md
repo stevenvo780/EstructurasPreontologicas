@@ -64,7 +64,7 @@ La frase actual *"Si en algún rival la tesis no muestra ventaja en al menos dos
 
 1. **Pérdida retórica:** el "6/6 vs ningún rival 6/6" es visualmente fuerte y queda desactivado. La tabla pasa de ser "prueba de superioridad" a "mapa de auto-ubicación + reconocimiento de límites". Es la lectura honesta, pero más austera.
 2. **Apertura de vector crítico:** introducir el criterio H ("predicciones novedosas pre-registradas: 0") expone deuda real frente a Popper-Lakatos. Esto puede explotarse en defensa. Mitigación: declararlo como deuda explícita en cap 06 §Deuda residual con plan post-defensa de pre-registro de ≥3 predicciones novedosas en dominios no calibrados.
-3. **Coherencia con CLAUDE.md §1 y §7:** la edición *aumenta* la defensibilidad porque elimina un patrón de auto-indulgencia ("6/6 verdes" — exactamente el anti-patrón listado en CLAUDE.md §1 contra "8/8 verdes, 42/42 ROBUSTO como totem de completud") y declara deuda en lugar de ocultarla.
+3. **Coherencia con CLAUDE.md §1 y §7:** la edición *aumenta* la defensibilidad porque elimina el uso de la cadena de cumplimiento total como totem retórico de completud —patrón de auto-indulgencia listado explícitamente en CLAUDE.md §1— y declara deuda en lugar de ocultarla.
 
 **Costo de no aceptar la edición:**
 

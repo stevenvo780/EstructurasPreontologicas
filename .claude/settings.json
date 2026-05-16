@@ -74,10 +74,6 @@
           {
             "type": "command",
             "command": ".claude/hooks/protect_main_push.sh"
-          },
-          {
-            "type": "command",
-            "command": ".claude/hooks/block_claude_headless.sh"
           }
         ]
       }
@@ -99,16 +95,6 @@
           {
             "type": "command",
             "command": ".claude/hooks/checkpoint_state.sh"
-          }
-        ]
-      }
-    ],
-    "SubagentStop": [
-      {
-        "hooks": [
-          {
-            "type": "command",
-            "command": ".claude/hooks/continuous_dispatch_subagent_result.sh"
           }
         ]
       }
