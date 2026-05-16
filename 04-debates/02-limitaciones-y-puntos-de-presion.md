@@ -1,5 +1,7 @@
 # Riesgos heredados y posicionamiento filosófico declarado
 
+> **BORRADOR-IA — pendiente firma H-J8.** Este capítulo es el resultado de la reducción D.3 (200→~65 líneas) ejecutada como consolidación editorial bajo Fase 2 de la síntesis 2026-05-11: §1, §4, §6, §8 originales se eliminaron por subsunción en `04-debates/05-limitaciones-declaradas-consolidacion.md` (L1-L20); se preservaron §7 «Riesgos heredados» (aquí §1), §9 «Lo que sí puede prometer» (aquí §2), §10 «Diálogo con interlocutores» (aquí §3), §11 «Filtro de objeciones futuras» (aquí §4) y §12 «Fórmula de honestidad filosófica» (aquí §5). Origen: `Bitacora/2026-05-11-sintesis-tesis/borradores/D3-debates-02-decision.md`. Decisiones pendientes Jacob: (1) ratificar el nuevo título; (2) decidir si `02` permanece en posición canónica (capítulo 28) o se reordena después de `05`.
+
 ## Tesis del capítulo
 
 > Bajo el aparato corregido, la tesis sostiene tres riesgos operativos que requieren vigilancia permanente, una contraparte positiva de lo que sí promete con fuerza, un diálogo declarado con cuatro interlocutores prioritarios (Searle, Varela-Thompson, Bourdieu, Latour), un filtro para evaluar objeciones futuras, y una fórmula de honestidad filosófica. Este capítulo no inventaria limitaciones operativas (esa función la cumple `04-debates/05-limitaciones-declaradas-consolidacion.md` con la lista canónica L1-L20 fechadas); aquí se declara la postura argumentativa que sostiene la lista.

@@ -1,5 +1,7 @@
 # Guía de defensa oral
 
+> **BORRADOR-IA — pendiente firma H-J8.** Este archivo es el resultado de la consolidación D.1 (defensa oral `06-cierre/02+04+05` → `02` principal + `_extendido/versiones-cortas-defensa.md` + `_extendido/respuestas-tipo-defensa.md`, −139 líneas en material de defensa oral, no afecta `Tesis.md` porque los tres archivos son satélites no incluidos en `TesisFinal/build.py PARTS`) ejecutada como consolidación editorial bajo Fase 2 de la síntesis 2026-05-11. Origen: `Bitacora/2026-05-11-sintesis-tesis/borradores/D1-defensa-oral-consolidada.md`. **Decisión filosófica pendiente Jacob (no resuelta por la consolidación editorial):** el conteo canónico de escenarios falsables (4/5/6 inconsistente entre `06-02`, `06-04` original, `04-02` original) sigue abierto. El §3 P7 y §4 Trampa 4 actuales muestran 5 escenarios como recomendación operativa del borrador; la cifra no ha recibido firma autoral y puede revisarse a 4 (sólo los coincidentes en todas las formulaciones tempranas) o a 6 (si se reincorpora la categoría adicional de `04-02` original). Mientras Jacob no firme, el conteo es provisional y la vulnerabilidad en defensa permanece declarada. Otras decisiones pendientes: (2) política de `_extendido/` como convención del manuscrito; (3) si la versión 2 min queda en el principal o se externaliza.
+
 ## Tesis del capítulo
 
 > La defensa oral de la tesis se sostiene sobre cuatro instrumentos: una tesis canónica memorizable (§1), tres versiones cortas calibradas por duración (§2), un banco de respuestas a las objeciones más probables del tribunal (§3) y un conjunto de trampas a anticipar (§4). El material desarrollado y los formatos largos viven en `_extendido/` para consulta detallada. La defensa no esconde la asimetría entre caso ancla y dominios programáticos: la nombra como fortaleza programática, no como debilidad oculta.
@@ -74,13 +76,14 @@ Lo declaramos abiertamente: los datos son sintéticos derivados de parámetros p
 
 ### P7. ¿Qué tendría que pasar para que su tesis fracase?
 
-**Cinco escenarios falsables canónicos** (consolidados tras cierre 2026-05; originalmente la guía mencionaba 4 escenarios coincidentes entre `06-02` y `06-04`, y el cierre del manuscrito incorporó «un rival absorbe la tesis» como quinto criterio público de fracaso, presente en algunas formulaciones como complementario):
+**BORRADOR-IA pendiente firma H-J8** — conteo unificado a 4 (3+1) 2026-05-16 alineando con cap 06-01 §2.
+
+**Cuatro condiciones canónicas: tres escenarios falsables con criterio externo + una condición de prioridad histórica** (consolidados tras cierre 2026-05; cap 06-01 §2 cita Popper §6 para no readmitir «absorción por rival» como escenario empírico independiente — la prioridad histórica del marco frente a una eventual absorción retroactiva opera como condición separada, no como quinto escenario):
 
 1. **Los 4 casos `overall_pass` se desmoronan** empíricamente bajo perfiles agresivos o ante baselines estadísticos puros (ARIMA, VAR, RW, GP) que igualen o superen la métrica EDI.
 2. **Los 3 controles de falsación** (random walk masivo + dos sintéticos de control) **dejan de rechazarse** bajo re-ejecución independiente.
 3. **Ningún caso programático se eleva a Nivel 3 weak** tras dossier completo y datos reales, en plazo de 24 meses post-defensa.
-4. **La asimetría L1↔B↔L3↔S no se sostiene** en algún dominio relevante: parámetros de L3 sin traducción a variable medible de B, o B sin reconstrucción consistente en L3.
-5. **Un rival absorbe la tesis** sin diferencia discriminante público: alguna posición rival captura las cinco piezas articuladas (dossier + asimetría + cartografía + hostile testing + suite ST) sin restos identificables del marco propio.
+4. **(Condición de prioridad histórica)** **La asimetría L1↔B↔L3↔S no se sostiene** en algún dominio relevante: parámetros de L3 sin traducción a variable medible de B, o B sin reconstrucción consistente en L3 — condición que opera como criterio de prioridad histórica del marco frente a reformulaciones rivales posteriores.
 
 Cada escenario es falsable, fechado, con criterios públicos. La lista exhaustiva de limitaciones declaradas (L1-L20) vive en cap 04-05.
 
@@ -108,7 +111,7 @@ La tesis NO es eliminativa. Reformula: las categorías se admiten como compresio
 
 ### Trampa 4. El interlocutor cuestiona el conteo de escenarios falsables
 
-Si el evaluador señala incoherencia entre 4, 5 o 6 escenarios falsables a lo largo del manuscrito, la respuesta canónica es: **5 escenarios** (los enumerados en §3 P7), consolidados tras cierre 2026-05. Las limitaciones (L1-L20 en cap 04-05) son una lista más fina y específica; los «escenarios de fracaso global» son un subconjunto declarado en cap 06-01. La diferencia con 4 corresponde a versiones tempranas del manuscrito que no incluían «un rival absorbe la tesis» como condición separada; la diferencia con 6 corresponde a categorías de cap 04-02 que ahora viven subsumidas en L1-L20.
+Si el evaluador señala incoherencia entre 3, 4, 5 o 6 escenarios falsables a lo largo del manuscrito, la respuesta canónica es: **4 condiciones (3 escenarios falsables con criterio externo + 1 condición de prioridad histórica)** (los enumerados en §3 P7), consolidados tras cierre 2026-05 alineando con cap 06-01 §2 que cita Popper §6 contra readmitir «absorción por rival» como escenario empírico independiente. Las limitaciones (L1-L20 en cap 04-05) son una lista más fina y específica; los «escenarios de fracaso global» son un subconjunto declarado en cap 06-01. La diferencia con 5 corresponde a versiones tempranas que contaban «absorción por rival» como quinto escenario antes del cierre Popperiano de 2026-05; la diferencia con 6 corresponde a categorías de cap 04-02 que ahora viven subsumidas en L1-L20.
 
 ## 5. Fórmula final para cerrar oralmente
 

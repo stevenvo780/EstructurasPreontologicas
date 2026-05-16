@@ -231,7 +231,7 @@ El manuscrito doctoral final está listo si:
 - el dossier de anclaje se aplica al caso ancla con catorce componentes completos;
 - la bibliografía está integrada en cada capítulo con interlocutor principal y secundarios;
 - los seis límites del capítulo 04-02 se reconocen y se traducen en programa posterior;
-- las cuatro condiciones de fracaso del capítulo 06-01 se aceptan;
+- las cuatro condiciones de fracaso del capítulo 06-01 (3 escenarios falsables con criterio externo + 1 condición de prioridad histórica) se aceptan; [BORRADOR-IA pendiente firma H-J8 — conteo unificado a 4 (3+1) 2026-05-16 alineando con cap 06-01 §2]
 - la guía de defensa oral funciona en simulación con interlocutor competente;
 - los apéndices técnicos mínimos están completos y no sustituyen el cuerpo argumental.
 

@@ -33,7 +33,7 @@ Todo fenómeno empíricamente explicable, **a cualquier escala física, biológi
 
 ### Aparato (metodología general)
 
-Cinco operadores formales (μ medición, G grafo, H hipergrafo, κ compresión, ε expansión) **invariantes a la escala** sobre pregunta paramétrica Q fechada con tolerancia. Asimetría L1↔B↔L3↔S: L1 fija qué pregunta importa, B (acoplamiento empírico genérico — qubit-baño, proteína-solvente, célula-citoplasma, organismo-entorno, cúmulo-galaxia, según la escala) ancla la respuesta, L3 reconstruye, S recoge categorías que sobreviven. Dossier de anclaje de catorce componentes obligatorio. Métrica EDI = 1 - RMSE_coupled / RMSE_no_ode con permutación 999 y bootstrap 500. Protocolo C1-C5 con 13 condiciones simultáneas para `overall_pass=True`. Validación lógica formal con suite ST de 24 teorías.
+Cinco operadores formales (μ, G, H, κ, ε) **invariantes a la escala** sobre pregunta paramétrica Q fechada. Asimetría L1↔B↔L3↔S — donde B ancla en acoplamiento empírico que cambia según la escala (qubit-baño cuántico, organismo-entorno conductual, cúmulo-galaxia astrofísico). Dossier de anclaje de catorce componentes y protocolo C1-C5 con trece condiciones simultáneas funcionan como filtros encadenados: si el candidato no pasa los catorce ítems del dossier, no entra al gate; si no pasa las trece condiciones, no se reporta como `overall_pass`. Métrica EDI con permutación 999 y bootstrap 500. Validación lógica complementaria por suite ST de 24 teorías. Detalle operativo: §3.5–3.6 de la versión de 15 minutos.
 
 ### Justificación operativa (40 casos)
 
@@ -52,7 +52,7 @@ Cinco operadores formales (μ medición, G grafo, H hipergrafo, κ compresión, 
 
 **Los 40 casos son justificación operativa del marco tripartito; no son la tesis.** La tesis son los tres marcos generales; los casos muestran que sus afirmaciones son ejecutables, discriminantes y transferibles entre escalas.
 
-Discriminación pública contra quince posiciones rivales identificables: dualismo, materialismo de partículas, reduccionismo plano, emergentismo fuerte, constructivismo arbitrario, instrumentalismo puro, formalismo vacío, modelos internos / control óptimo, cognitivismo computacional, conductismo radical, enactivismo radical, realismo estructural informativo, mecanicismo multinivel sin filtro, **Wolfram Physics Project** (con piloto Rule 110 ejecutado mostrando convivencia de irreducibilidad computacional micro y cierre operativo macro detectable: Wolfram fundamenta; nosotros disciplinamos), **e IIT** (Tononi-Boly-Massimini-Koch 2016: comparte la apuesta por una métrica computable definida sobre estructura de dependencias; discriminamos en C, D, F + tratabilidad).
+Discriminación pública contra quince posiciones rivales identificables — desde dualismo y reduccionismo plano hasta enactivismo radical y realismo estructural informativo, pasando por Wolfram Physics Project (piloto Rule 110 ejecutado) e IIT. La nómina completa y los criterios de discriminación caso a caso se desarrollan en §3.9 de la versión larga.
 
 ### Lección epistémica clave
 
@@ -60,7 +60,9 @@ El caso 30 (behavioral dynamics) fue rechazado por el aparato en su versión v1 
 
 ### Condiciones de fracaso falsables
 
-Cinco escenarios falsables canónicos (consolidados tras cierre 2026-05): (1) los 4 casos `overall_pass` se desmoronan, (2) los controles de falsación dejan de rechazarse, (3) ningún programático se eleva, (4) la asimetría L1↔B↔L3↔S no se sostiene, (5) un rival absorbe la tesis sin diferencia discriminante. Cada escenario es falsable, fechado, con criterios públicos.
+**BORRADOR-IA pendiente firma H-J8** — conteo unificado a 4 (3+1) 2026-05-16 alineando con cap 06-01 §2.
+
+La tesis se compromete con **cuatro condiciones falsables fechadas: tres escenarios con criterio externo + una condición de prioridad histórica** —pérdida del gate completo, recuperación de los controles, estancamiento de los programáticos, ruptura de la asimetría L1↔B↔L3↔S como condición de prioridad histórica— cualquiera de las cuales basta para rechazarla. La enumeración exacta con criterios públicos vive en §3.10. El cierre del cap 06-01 §2 cita Popper §6 contra readmitir «absorción por rival» como escenario empírico independiente.
 
 ### Cierre
 
@@ -70,7 +72,7 @@ Cinco escenarios falsables canónicos (consolidados tras cierre 2026-05): (1) lo
 
 ### 3.1. Punto de partida (1 minuto)
 
-La tesis fue desarrollada bajo dirección de Jacob Agudelo (Universidad de Antioquia) con colaboración técnica de Steven Vallejo Ortiz: marco *Irrealismo Operativo de Estructuras Pre-Ontológicas* como **ontología, epistemología y metodología generales aplicables a cualquier escala física, biológica o cosmológica** con métrica EDI, asimetría L1↔B↔L3↔S, dossier de anclaje de catorce componentes, corpus EDI agregado de **40 casos** (30 inter-dominio + 10 inter-escala desde 10⁻¹⁰ m hasta 10²⁰ m), suite ST de 24 teorías formales, y discriminación pública contra quince rivales incluidos Wolfram Physics Project e IIT.
+La tesis fue desarrollada bajo dirección de Jacob Agudelo (Universidad de Antioquia) con colaboración técnica de Steven Vallejo Ortiz: marco *Irrealismo Operativo de Estructuras Pre-Ontológicas* como **ontología, epistemología y metodología generales aplicables a cualquier escala física, biológica o cosmológica** con cuatro piezas articuladas — métrica EDI, asimetría L1↔B↔L3↔S, dossier de anclaje y protocolo C1-C5 (especificados en §3.5–3.6) —, corpus EDI agregado de **40 casos** (30 inter-dominio + 10 inter-escala desde 10⁻¹⁰ m hasta 10²⁰ m), suite ST de 24 teorías formales, y discriminación pública contra quince rivales incluidos Wolfram Physics Project e IIT.
 
 ### 3.2. Problema filosófico (2 minutos)
 
@@ -112,7 +114,7 @@ Quince posiciones discriminadas en al menos dos criterios cada una. Especialment
 
 ### 3.10. Condiciones de fracaso falsables (1 minuto)
 
-Cinco escenarios canónicos (consolidados tras cierre 2026-05): (1) los 4 casos `overall_pass` se desmoronan, (2) los controles de falsación dejan de rechazarse, (3) ningún programático se eleva tras trabajo serio, (4) la asimetría no se sostiene, (5) un rival absorbe la tesis sin diferencia. Cada escenario es falsable, fechado, con criterios públicos.
+**Cuatro condiciones canónicas: 3 escenarios falsables con criterio externo + 1 condición de prioridad histórica** (consolidadas tras cierre 2026-05 alineando con cap 06-01 §2, que cita Popper §6 contra readmitir «absorción por rival» como escenario empírico independiente): (1) los 4 casos `overall_pass` se desmoronan, (2) los controles de falsación dejan de rechazarse, (3) ningún programático se eleva tras trabajo serio, (4) la asimetría L1↔B↔L3↔S no se sostiene —condición de prioridad histórica del marco frente a reformulaciones rivales posteriores—. Cada condición es falsable, fechada, con criterios públicos.
 
 ### 3.11. Cierre
 

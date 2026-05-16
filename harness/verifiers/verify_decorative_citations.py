@@ -31,7 +31,7 @@ ENGAGEMENT_RX = re.compile(
     r'\b(' + '|'.join(ENGAGEMENT_VERBS) + r')\b',
     re.IGNORECASE,
 )
-QUOTE_RX = re.compile(r'["""].{20,}["""]')
+QUOTE_RX = re.compile(r'["""«].{20,}["""»]')
 BLOCKQUOTE_RX = re.compile(r'^\s*>\s+', re.MULTILINE)
 CITATION_RX = re.compile(
     r'\(([A-ZÁÉÍÓÚÑ][a-záéíóúñ\-]+)(?:\s+et\s+al\.?)?[\s,]+(\d{4})',
@@ -39,6 +39,37 @@ CITATION_RX = re.compile(
 LIST_OF_AUTHORS_RX = re.compile(
     r'\b((?:[A-ZÁÉÍÓÚÑ][a-záéíóúñ\-]+,?\s*){4,})',
 )
+
+# Referencias internas de taxonomía (NO son apellidos):
+# - "Nivel N" / "Nivel N-M": niveles del corpus EDI (0..5)
+# - "LoE N": Level of Evidence (escala interna 0..5)
+# - "Tipo N": clasificación interna (fallback de sondas, etc.)
+# - "Fase N": fase del proyecto (Fase 1..7)
+# Estos tokens disparan falsos positivos en CITATION_RX cuando van seguidos
+# de un número de 4 dígitos cercano. Se filtran post-extracción para no tocar
+# la regex base y mantener detecciones legítimas.
+INTERNAL_TAXONOMY_TOKENS = frozenset({"Nivel", "LoE", "Tipo", "Fase"})
+INTERNAL_TAXONOMY_RX = re.compile(
+    r'\((?:Nivel\s+\d+(?:-\d+)?|LoE\s+\d+|Tipo\s+\d+|Fase\s+\d+)\)',
+)
+
+
+def _is_internal_taxonomy(author: str) -> bool:
+    """True si el 'autor' extraído por CITATION_RX es en realidad un token
+    de taxonomía interna (Nivel/LoE/Tipo/Fase), no un apellido."""
+    return author in INTERNAL_TAXONOMY_TOKENS
+
+
+def _is_markdown_table(para: str) -> bool:
+    """True si el párrafo es predominantemente una tabla Markdown.
+    Las tablas comparativas son instrumentos taxonómicos: las citas en
+    sus celdas son referencias-índice, no engagement narrativo (el
+    engagement vive en la sección que precede/sigue la tabla)."""
+    lines = [ln for ln in para.split("\n") if ln.strip()]
+    if not lines:
+        return False
+    pipe_lines = sum(1 for ln in lines if ln.lstrip().startswith("|"))
+    return pipe_lines / len(lines) >= 0.5
 
 
 def split_paragraphs(text: str) -> list[tuple[int, str]]:
@@ -75,7 +106,12 @@ def main() -> dict:
         except Exception:
             continue
         for line_start, para in split_paragraphs(text):
+            if _is_markdown_table(para):
+                continue
             cits = CITATION_RX.findall(para)
+            # Filtrar referencias internas de taxonomía (Nivel/LoE/Tipo/Fase N)
+            # que no son apellidos pese a comenzar con mayúscula.
+            cits = [(a, y) for (a, y) in cits if not _is_internal_taxonomy(a)]
             if not cits:
                 continue
             total_citations_in_text += len(cits)

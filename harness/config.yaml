@@ -69,6 +69,13 @@ self_indulgence:
     - "Bitacora/2026-04-28-cierre-pendientes/**"
     - "Bitacora/2026-05-04-harness-investigacion/PROPUESTA_HARNESS.md"
     - "Bitacora/2026-05-04-harness-sota/COMPARACION_SOTA.md"
+    - "Bitacora/2026-05-04-continuous-run/F04-02-tesis-6-de-6-criterios-internos.md"
+    - "Bitacora/2026-05-04-continuous-run/F06-03-4-strong-threshold-shopping.md"
+    - "Bitacora/2026-05-11-sintesis-tesis/01-redundancia-inter-capitulos.md"
+    # Borradores históricos pre-aplicación: contenido ya consolidado en cuerpo argumental.
+    - "Bitacora/2026-05-11-sintesis-tesis/borradores/**"
+    # README de _extendido/: cabecera-convención del repo, no spam textual.
+    - "**/_extendido/README.md"
   template_signatures:
     # Frases que aparecen idénticas en >2 archivos -> sospecha de plantilla spam
     similarity_threshold: 0.85

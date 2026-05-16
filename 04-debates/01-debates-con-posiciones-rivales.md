@@ -1,5 +1,7 @@
 # Debates con posiciones rivales
 
+> **BORRADOR-IA — pendiente firma H-J8.** Este capítulo es el resultado de la consolidación D.2 (reducción 491→~246 líneas + migración de 7 desarrollos extensos a `04-debates/_extendido/rival-<X>.md`) ejecutada como consolidación editorial bajo Fase 2 de la síntesis 2026-05-11. Origen: `Bitacora/2026-05-11-sintesis-tesis/borradores/D2-debates-01-consolidado.md`. Decisiones pendientes Jacob: (1) confirmar la división rivales tabulares §2 vs rivales discursivos §3; (2) confirmar la lista de siete `_extendido/rival-<X>.md` ya creados; (3) decidir si la frase eslogan «Wolfram fundamenta; la tesis disciplina» se conserva o se reemplaza (auditoría F04-06 la marca como manierismo que oculta asimetría modal).
+
 ## Tesis del capítulo
 
 > La tesis se discrimina de quince rivales filosófica y empíricamente identificables en al menos dos criterios cada uno. La novedad no es de inventario sino de articulación: **dossier de anclaje + asimetría L1↔B↔L3↔S + cartografía multidominio bajo EDI con controles de falsación rechazados**. Este capítulo confronta cada rival discursivamente; la matriz síntesis 15×6 (criterios A-F) y la ficha breve por rival están en `04-debates/03-tabla-comparativa-rivales.md`. Los desarrollos extensos con citas primarias paginadas viven en `04-debates/_extendido/rival-<X>.md` y se cargan bajo demanda desde la capa web.

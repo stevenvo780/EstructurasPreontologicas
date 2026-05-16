@@ -46,10 +46,10 @@ Esta sección lista únicamente lo que **requiere voz autoral propia** o **decis
 
 | ID | Tarea | Plazo | Estado |
 |----|-------|-------|--------|
-| H-S1 | Contactar 1-2 filósofos hostiles externos (humanista clásico, filósofo de la ciencia analítico) para revisión crítica de fundamentos. | 3-6 meses | Abierto |
-| H-S2 | Contactar 1-2 estadísticos / físicos de complejidad para revisión crítica del aparato cuantitativo. | 3-6 meses | Abierto |
+| H-S1 | Contactar 1-2 filósofos hostiles externos (humanista clásico, filósofo de la ciencia analítico) para revisión crítica de fundamentos. **EN PREPARACIÓN 2026-05-16: shortlist en producción** (`Bitacora/2026-05-16-shortlist-revisores/`). | 3-6 meses | En preparación |
+| H-S2 | Contactar 1-2 estadísticos / físicos de complejidad para revisión crítica del aparato cuantitativo. **EN PREPARACIÓN 2026-05-16: shortlist en producción** (`Bitacora/2026-05-16-shortlist-revisores/`). | 3-6 meses | En preparación |
 | H-S3 | Coordinación con director (una vez designado, H-U1) sobre cronograma de defensa, plantilla institucional y política IA. | 2-4 semanas | Abierto |
-| H-S4 | Decisión sobre si el caso 30 con datos humanos VENLab se ejecuta antes o después de defensa. Implica programa de 9-10 meses (B-S1) y aprobación de Comité de Ética (H-U6). | Decisión: 1 semana | Abierto |
+| H-S4 | Decisión sobre si el caso 30 con datos humanos VENLab se ejecuta antes o después de defensa. Implica programa de 9-10 meses (B-S1) y aprobación de Comité de Ética (H-U6). **DECIDIDA 2026-05-16 → (b) después de defensa**: caso 30 ya tiene EDI=0.002 honesto declarado; bloquear sustentación 10 meses por elevarlo no compensa; queda como deuda externa post-defensa. H-U6 (Comité de Ética) queda diferido sin urgencia. | Cerrada | Decidida |
 
 ---
 
@@ -72,11 +72,11 @@ Cada tarea declara: **estado actual**, **acción operativa**, **métrica de acep
 
 | ID | Tarea | Estado | Métrica de aceptación |
 |----|-------|--------|----------------------|
-| B-T1 (F13) | `array_dump=True` para los 33 casos del corpus inter-dominio que aún no emiten `primary_arrays.json`. Modificar `09-simulaciones-edi/common/array_dump.py` y `case_runner.py` para activar emisión por defecto cuando se invoque desde `run_all_validations_parallel.py`. Re-ejecutar `scripts/run_secondary_probes_on_primary_arrays.py` sobre los 40 casos. | Parcial: 7/40 cerrados | 40/40 con `primary_arrays.json` válido (≥2 series obs/forcing con ≥80 puntos cada una); reporte actualizado en `09-simulaciones-edi/multi_sonda/secondary_on_primary_arrays.md` con tasa de convergencia honesta. |
-| B-T2 (F16) | Fetchers reales para casos macro donde es viable (World Bank, OWID, AQICN, NOAA, OPSD, Yahoo Finance). Esqueletos en `multiscale_fetchers.py` y `enhanced_data_fetchers.py`. Re-ejecutar casos integrables; declarar honestamente cuáles permanecen sintéticos. | Esqueletos listos; 0/30 macro re-ejecutados con datos reales | ≥3 casos macro re-ejecutados con datos reales descargados (cache local versionado); manifest `data/FETCH_MANIFEST.json` con `data_source: real_external` para esos casos; declaración honesta en cap 03-04 §sobre datos sintéticos vs reales. |
-| B-T3 (F17) | Ejecución de calibración externa de QES sobre los 10 estudios Q1 propuestos en `09-simulaciones-edi/common/qes_external_calibration.md` (LIGO GW150914, Higgs ATLAS+CMS, EHT M87*, Hodgkin-Huxley, Pfizer NEJM 2020, Card-Krueger 1994, Reinhart-Rogoff 2010, Henrich WEIRD, Bem 2011 como falsabilidad invertida). | Propuesta operativa lista; 0/10 ejecutados | Concordancia categorial ≥70% con clasificación esperada; Bem 2011 categorizado como INADMISIBLE (falsabilidad inversa); reporte ejecutivo en `09-simulaciones-edi/qes_calibration/external_calibration_report.md`. |
-| B-T4 | Verificación de "Effective Information": localizar el cómputo en `09-simulaciones-edi/common/`; declarar si es métrica auxiliar (sin compromiso con IIT/Hoel) o central (con compromiso explícito). Documentar la decisión en cap 03-04. | Sin auditar | Decisión registrada con ubicación de código y declaración filosófica explícita en cap 03-04. |
-| B-T5 | **Anomalía caso 19 acidificación oceánica.** EDI real=+0.728 con p_perm=0.490 y C2 (robustez) fail; sintético produce EDI≈0. La discrepancia sugiere correlación espuria con tendencia temporal aprovechada por la sonda Revelle real. Re-ejecutar con `n_perm=2999`, bloque-permutación temporal y test de robustez extendido antes de usar el caso como evidencia. Hasta resolverlo, no debe citarse como positivo ni como null limpio. Diagnóstico en `Bitacora/2026-04-29-diagnostico-nulls/diagnostico-casos-null.md`. | Sin re-ejecutar | `metrics.json` regenerado bajo permutación de bloques + n_perm=2999; clasificación taxonómica final justificada (null genuino, suggestive, o trend según resultado). |
+| B-T1 (F13) | **CERRADA 2026-05-16**. Corpus efectivo = 32 casos (30 numerados 01-30 + 41 Wolfram + 42 histéresis); todos con `primary_arrays.json` válido. La métrica original "40/40" era universo equivocado. Falta solo re-ejecutar `scripts/run_secondary_probes_on_primary_arrays.py` con conteo correcto. | ✓ Cerrada | 32/32 con `primary_arrays.json` válido verificado vía `find 09-simulaciones-edi -name "primary_arrays.json" -path "*/outputs/*"`. |
+| B-T2 (F16) | Fetchers reales para casos macro donde es viable (World Bank, OWID, AQICN, NOAA, OPSD, Yahoo Finance). Esqueletos en `multiscale_fetchers.py` y `enhanced_data_fetchers.py`. Re-ejecutar casos integrables; declarar honestamente cuáles permanecen sintéticos. **EN EJECUCIÓN PILOTO 2026-05-16 → caso 16 Deforestación como piloto antes de defensa; los demás casos macro quedan como deuda externa post-defensa.** Prueba de concepto sin retrasar defensa; podría destrabar B-T7. | Piloto caso 16 en ejecución; resto diferido post-defensa | Caso 16 re-ejecutado con datos reales (cache local versionado); manifest `data/FETCH_MANIFEST.json` con `data_source: real_external` para caso 16; declaración honesta en cap 03-04 §sobre datos sintéticos vs reales; resto declarado como deuda externa post-defensa. |
+| B-T3 (F17) | **CERRADA 2026-05-16**. Reporte existente en `09-simulaciones-edi/qes_calibration/external_calibration_report.md`: 10/10 estudios ejecutados, concordancia loose 100%, estricta 50%, Bem 2011 → INADMISIBLE (falsabilidad inversa) verificado. | ✓ Cerrada | 10/10 estudios ejecutados, concordancia loose 100%, estricta 50%, Bem 2011 INADMISIBLE. |
+| B-T4 | **CERRADA 2026-05-16**. Función localizada en `09-simulaciones-edi/common/hybrid_validator.py:249` (`H(residuos_reducido) − H(residuos_completo)`, KDE gaussiana). Declarada como **métrica auxiliar sin compromiso IIT/Hoel** en `03-formalizacion/04-operacionalizacion-de-kappa.md` §"Información efectiva como métrica auxiliar (declaración)" (líneas 205-215, con tres aclaraciones explícitas) y referenciada en glosario operativo (`00-proyecto/07-glosario-operativo.md:99`). No entra en QES, no entra en `overall_pass`, no entra en clasificación del paisaje. | ✓ Cerrada | Decisión registrada con ubicación de código y declaración filosófica explícita en cap 03-04. |
+| B-T5 | **CERRADA 2026-05-11** (ver H-J12). Re-ejecución canónica produjo EDI=0.00044, CI=[0.00023, 0.00065], p_perm=0.433, overall_pass=False. Reclasificado a null genuino. | ✓ Cerrada | `metrics.json` regenerado; clasificación null genuino confirmada; firma humana en H-J12. |
 | B-T6 | **Disonancia doc↔config en sondas ODE de 03/12/29.** `Evaluacion_Modelos_Dominio.md` declara Acumulación/Dispersión (03), Landau-Ginzburg (12), Difusión+Metcalfe (29) como sondas óptimas, pero `case_config.json` ejecuta `mean_reversion`/`mean_reversion`/`bilinear`. La afirmación del doc "100% modelos personalizados" no se sostiene en estos casos. Decidir: (a) actualizar config para usar la sonda declarada y re-ejecutar, o (b) actualizar doc para reflejar lo ejecutado. | Sin decidir | Coherencia restaurada entre doc de evaluación y config ejecutado; los tres casos con justificación de su sonda. |
 | B-T7 | **Caso 25 acuíferos con cobertura 0.51.** El null actual está dominado por datos faltantes (la mitad del periodo), no por sonda inadecuada. Re-ejecutar con cobertura GRACE mensual completa antes de declararlo cerrado. Bloqueado por B-T2 (fetchers reales). | Bloqueado | `metrics.json` regenerado con cobertura ≥0.95; null o no-null reasignado con base en datos completos. |
 
@@ -108,12 +108,13 @@ Cada tarea declara: **estado actual**, **acción operativa**, **métrica de acep
 - H-J2, H-J3, H-J4, H-J5, H-J6 (decisiones de Jacob).
 
 ### Prioridad 3 — cierre técnico opcional pre-defensa
-- B-T1, B-T2, B-T3, B-T4.
+- B-T2 (acotada 2026-05-16: piloto caso 16 Deforestación; resto post-defensa).
 
 ### Prioridad 4 — deuda externa post-defensa
-- H-S1, H-S2 (revisores externos hostiles).
+- H-S1, H-S2 (revisores externos hostiles; en preparación 2026-05-16, shortlist).
 - H-U5 (tribunal completo).
-- Caso 30 con datos humanos (B-S1 en `Bitacora/`).
+- Caso 30 con datos humanos (B-S1 en `Bitacora/`; H-S4 decidida 2026-05-16 → post-defensa; H-U6 diferido sin urgencia).
+- B-T2 resto de casos macro (no pilotados).
 
 ---
 

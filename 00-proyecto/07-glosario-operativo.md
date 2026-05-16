@@ -99,6 +99,12 @@ Corrección de family-wise error rate sobre comparaciones múltiples. Aplicada a
 ### Información efectiva (uso auxiliar)
 Cantidad reportada en `metrics.json::effective_information` definida operacionalmente como `H(residuos_reducido) − H(residuos_completo)` con `H` = entropía diferencial KDE. Se calcula en `09-simulaciones-edi/common/hybrid_validator.py:249`. **No es la Effective Information de Hoel-Albantakis-Tononi** (2013, *PNAS* 110:19790-19795); no implica adopción de IIT. Métrica **auxiliar**, no central: no entra en QES, no entra en `overall_pass`, no entra en la clasificación del paisaje de emergencia. La inferencia central procede por EDI + permutación 999 + bootstrap 500 + FWER Holm. Capítulo 03-04 §"Información efectiva como métrica auxiliar (declaración)".
 
+### QES (Quality of Evidence Score)
+Auditoría interna de calidad de evidencia por caso: media ponderada de siete puntajes Qi ∈ [0,1] (trazabilidad de datos, tamaño efectivo, calidad de sonda, reproducibilidad mecanizada, convergencia multi-sonda, LoE, calibración estadística) computada en `common/quality_scorer.py`.
+Categorías: ROBUSTO (≥0.85), DEMOSTRATIVO (0.70–0.85), PROGRAMÁTICO (0.55–0.70), PILOTO (0.40–0.55), INADMISIBLE (<0.40).
+Definido en cap 03-formalizacion/04 §«Auditoría QES»; nota metodológica en cap 04-debates/05.
+Construcción interna del aparato; NO es GRADE/AMSTAR/Cochrane.
+
 ### Auditoría criptográfica del setup
 Cálculo de SHA-256 sobre el código, parámetros y datos de entrada de cada caso, junto con git_commit_sha y timestamp UTC. Permite verificar que el setup actual coincide con el setup que produjo los outputs publicados. NO es pre-registro estricto en plataforma externa (que requeriría depósito previo a ver los datos en OSF u homólogo); es cadena de custodia computacional. Capítulo 03-04 §"Pre-registro criptográfico".
 

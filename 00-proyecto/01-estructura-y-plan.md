@@ -1,5 +1,7 @@
 # Estructura del proyecto y plan de capítulos
 
+> **BORRADOR-IA — pendiente firma H-J8.** Este archivo es el resultado de la fusión D.4 (`00-proyecto/01-estructura-general.md` + `00-proyecto/03-plan-de-capitulos.md` → un solo archivo) ejecutada como consolidación editorial bajo Fase 2 de la síntesis 2026-05-11. Reemplaza ambos archivos sin afectar `TesisFinal/Tesis.md` (ninguno entra al ensamblado). Origen: `Bitacora/2026-05-11-sintesis-tesis/borradores/D4-proyecto-01-03-decision.md`. Decisión pendiente Jacob: (1) si `01-estructura-y-plan.md` debe promoverse al cuerpo del manuscrito como capítulo introductorio metodológico; (2) si la política «un capítulo = una pregunta = un interlocutor principal» debe sobrevivir como doctrina declarada en este archivo o sólo operativa en el cuerpo.
+
 ## Función de esta carpeta y de este archivo
 
 Esta carpeta aloja **andamiaje del repositorio**: arquitectura del manuscrito doctoral, formulación institucional y materiales operativos no incorporados al cuerpo ensamblado. La **fuente de verdad del orden de capítulos** del manuscrito es `TesisFinal/build.py` (lista `PARTS`), no este archivo. Este documento sirve para **navegación humana del repositorio**: explica cómo se relacionan las carpetas numeradas con el ensamblado final, qué pregunta resuelve cada módulo y bajo qué política se admiten capítulos.
@@ -100,11 +102,11 @@ Esto exige tres disciplinas simultáneas:
 
 El manuscrito-fuente histórico (archivado en `Bitacora/2026-04-27-integracion-jacob/00-tesis-fuente-original.md`) es la formulación extensa y continua de la intuición central. El resto del repositorio convierte esa intuición en arquitectura doctoral defendible mediante seis correcciones estructurales documentadas (capítulo 01-01):
 
-- **caso ancla canónico** (Warren, 2006, pp. 358–359), elegido porque formula explícitamente el patrón conductual como atractor de un sistema agente-entorno acoplado: «Agent–environment interactions give rise to emergent behavior that has a dynamics of its own [...] stable behavioral solutions correspond to attractors in the behavioral dynamics, and transitions between behavioral patterns correspond to bifurcations» (Warren, 2006, p. 359), en lugar de generalidad sin demostración;
+- **caso ancla canónico** (caso 05-05 del corpus, ver capítulo 05-05), elegido porque formula explícitamente el patrón conductual como atractor de un sistema agente-entorno acoplado: «Agent–environment interactions give rise to emergent behavior that has a dynamics of its own [...] stable behavioral solutions correspond to attractors in the behavioral dynamics, and transitions between behavioral patterns correspond to bifurcations» (Warren, 2006, p. 359), en lugar de generalidad sin demostración;
 - **patrón estabilizado** definido técnicamente como atractor empírico;
 - **aparato formal** con protocolo empírico de κ vía baja dimensionalidad operacionalizado como EDI;
 - **nivel B** (acoplamiento empírico genérico multiescalar) en lugar de L2 neurobiológico estrecho;
-- **condiciones de fracaso global falsables** (cinco escenarios canónicos consolidados tras cierre 2026-05);
+- **condiciones de fracaso global falsables** (BORRADOR-IA pendiente firma H-J8 — conteo unificado a 4 (3+1) 2026-05-16 alineando con cap 06-01 §2: tres escenarios falsables con criterio externo + una condición de prioridad histórica, consolidados tras cierre 2026-05);
 - **bibliografía integrada por capítulo** con interlocutor principal nombrado.
 
 ## Política de subcarpetas y materiales auxiliares
