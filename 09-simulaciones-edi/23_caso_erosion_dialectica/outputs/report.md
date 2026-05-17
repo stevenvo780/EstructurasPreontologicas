@@ -1,6 +1,6 @@
 # Reporte de Validación — Erosión Dialéctica (Abrams-Strogatz Prestige)
 
-- generated_at: 2026-05-17T15:01:01.803920Z
+- generated_at: 2026-05-17T15:29:07.186095Z
 
 ## Fase synthetic
 - **overall_pass**: False
@@ -56,7 +56,7 @@
 - CI 95%: [-3.3357, -1.0078]
 - weighted_value (LoE factor 0.60): -0.6000
 - válido (0.30-0.90): False
-- detrended_edi: -1.0000
+- detrended_edi: -0.0228
 - trend_ratio: 1.000
 - trend_r2: 0.988
 

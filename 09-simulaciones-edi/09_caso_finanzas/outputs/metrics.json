@@ -1,8 +1,8 @@
 {
   "case": "Finanzas (SPY)",
-  "generated_at": "2026-05-17T04:49:09.590571Z",
+  "generated_at": "2026-05-17T15:28:29.005105Z",
   "git": {
-    "commit": "22b167fb46ba0bf755caa6bb2cb3f69a1abdade3",
+    "commit": "4a43a472c2b7167c6fe363e5a36fee5f7112b3b6",
     "dirty": true
   },
   "phases": {
@@ -60,7 +60,7 @@
         "permutation_significant": false,
         "permutation_method": "iid",
         "trend_bias": {
-          "detrended_edi": -0.6648,
+          "detrended_edi": -0.0091,
           "trend_ratio": 1.0,
           "trend_r2": 0.632,
           "warning": false
@@ -745,10 +745,10 @@
         "permutation_significant": true,
         "permutation_method": "iid",
         "trend_bias": {
-          "detrended_edi": 0.1027,
-          "trend_ratio": 1.0,
+          "detrended_edi": -0.002,
+          "trend_ratio": -0.02,
           "trend_r2": 0.979,
-          "warning": false
+          "warning": true
         }
       },
       "viscosity": {

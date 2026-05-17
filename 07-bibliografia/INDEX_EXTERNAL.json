@@ -460,6 +460,86 @@
       "needs_human": true,
       "needs_human_reason": "Copyright status not definitively confirmed as public domain for AoI. Jacob debe verificar licencia antes de citar en manuscrito publicado.",
       "thesis_relevance": "Complementa Process and Reality en su tratamiento de la civilización, la estética y la razón especulativa; útil para H-J4 si la dimensión estética requiere extensión más allá de PR."
+    },
+    {
+      "id": "friston2010_free_energy_nrn",
+      "status": "local_pdf_verified",
+      "authors": [
+        "Friston, Karl"
+      ],
+      "title": "The free-energy principle: a unified brain theory?",
+      "year": 2010,
+      "type": "journal_article",
+      "journal": "Nature Reviews Neuroscience",
+      "volume": 11,
+      "issue": 2,
+      "pages": "127-138",
+      "doi": "10.1038/nrn2787",
+      "pubmed_id": "20068583",
+      "published_online": "2010-01-13",
+      "paywall": false,
+      "open_access": "author_postprint",
+      "open_access_note": "Author postprint hosted on Friston personal page at UCL FIL. Copyright Springer Nature. License: author self-archiving (green OA).",
+      "local_path": "07-bibliografia/Friston_2010_FreeEnergyPrinciple_NRN.pdf",
+      "local_file_size_kb": 693,
+      "local_pages": 15,
+      "download_date": "2026-05-17",
+      "download_source": "https://www.fil.ion.ucl.ac.uk/~karl/NRN.pdf",
+      "abstract_verified": "A free-energy principle has been proposed recently that accounts for action, perception and learning. This Review looks at some key brain theories in the biological (for example, neural Darwinism) and physical (for example, information theory and optimal control theory) sciences from the free-energy perspective. Crucially, one key theme runs through each of these theories — optimization.",
+      "thesis_relevance": "Fuente primaria canónica para engagement cap 04-03 fila 16 (predictive processing): la hipótesis del cerebro bayesiano como minimización de energía libre fundamenta la discusión sobre estructuras pre-ontológicas en sistemas cognitivos."
+    },
+    {
+      "id": "clark2013_whatever_next",
+      "status": "local_pdf_verified",
+      "authors": [
+        "Clark, Andy"
+      ],
+      "title": "Whatever next? Predictive brains, situated agents, and the future of cognitive science",
+      "year": 2013,
+      "type": "journal_article",
+      "journal": "Behavioral and Brain Sciences",
+      "volume": 36,
+      "issue": 3,
+      "pages": "181-204",
+      "doi": "10.1017/S0140525X12000477",
+      "pubmed_id": "23663408",
+      "format": "BBS target article with peer commentaries (73 pages total in combined PDF)",
+      "paywall": false,
+      "open_access": "author_postprint",
+      "open_access_note": "Author postprint hosted on Friston UCL FIL page (mirroring Clark with permission). Copyright Cambridge University Press.",
+      "local_path": "07-bibliografia/Clark_2013_WhateverNext_BBS.pdf",
+      "local_file_size_kb": 1400,
+      "local_pages_note": "73 pages in BBS combined format (target article + commentaries); PDF file reports 2 logical pages due to structure but pdftotext extracts full 73-page content",
+      "download_date": "2026-05-17",
+      "download_source": "https://www.fil.ion.ucl.ac.uk/~karl/Whatever%20next.pdf",
+      "abstract_verified": "Brains, it has recently been argued, are essentially prediction machines. They are bundles of cells that support perception and action by constantly attempting to match incoming sensory inputs with top-down expectations or predictions. This is achieved using a hierarchical generative model that aims to minimize prediction error within a bidirectional cascade of cortical processing.",
+      "thesis_relevance": "Artículo seminal del predictive processing; complementa Friston 2010 y da el marco cognitivo situado. Cierra engagement cap 04-03 fila 16 con la dimensión filosófica de los agentes situados como relevante para estructuras pre-ontológicas."
+    },
+    {
+      "id": "dewey1934_art_as_experience",
+      "status": "local_pdf_verified",
+      "authors": [
+        "Dewey, John"
+      ],
+      "title": "Art as Experience",
+      "year": 1934,
+      "type": "book",
+      "publisher_original": "Minton, Balch & Company",
+      "location_original": "New York",
+      "edition_note": "PDF is Perigee/G. P. Putnam's Sons 1980 reprint (23rd impression). Text identical to 1934 original; no revisions.",
+      "copyright_status": "Copyright 1934 by John Dewey. Dewey died 1952. In jurisdictions with life+70 (EU, Latin America): public domain from 2022 onward. In United States: published 1934, copyright renewal would be needed (pre-1964 works); original registration expired if not renewed. Archive.org hosts freely. DO NOT use in US publication without confirming renewal status.",
+      "copyright_us_note": "Pre-1964 US copyright: public domain if copyright was not renewed 28 years after publication (i.e., by 1962). Most Dewey works were renewed by his estate; needs_human to confirm renewal for AE specifically.",
+      "needs_human": true,
+      "needs_human_reason": "US copyright renewal status for Dewey 1934 Art as Experience not confirmed. Jacob must verify before citing in a US-published manuscript. In Latin American and EU jurisdictions (life+70), PD since 2022.",
+      "open_access": "archive_org",
+      "local_path": "07-bibliografia/Dewey_1934_ArtAsExperience_Perigee1980.pdf",
+      "local_file_size_mb": 19,
+      "download_date": "2026-05-17",
+      "download_source": "https://ia902908.us.archive.org/28/items/deweyjohnartasanexperience/DEWEY%20John,%20Art%20as%20an%20Experience%22.pdf",
+      "archive_org_url": "https://archive.org/details/deweyjohnartasanexperience",
+      "isbn_perigee": "0-399-50025-1",
+      "abstract_verified": "In the winter and spring of 1931, [Dewey] was invited to give a series of ten lectures at Harvard University. The subject chosen was the Philosophy of Art; the lectures are the origin of the present volume. [Copyright notice:] Copyright 1934 by John Dewey.",
+      "thesis_relevance": "Fuente primaria para engagement H-J4 (dimensión estética): Dewey desarrolla la experiencia estética como integración dinámica de organismo y entorno, directamente relevante para estructuras pre-ontológicas con carácter experiencial."
     }
   ]
 }

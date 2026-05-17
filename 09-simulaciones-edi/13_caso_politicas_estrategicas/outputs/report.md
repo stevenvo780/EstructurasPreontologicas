@@ -1,6 +1,6 @@
 # Reporte de Validación — Políticas Estratégicas (Bass Diffusion + Inertia)
 
-- generated_at: 2026-05-17T14:53:44.031115Z
+- generated_at: 2026-05-17T15:28:46.349844Z
 
 ## Fase synthetic
 - **overall_pass**: False
@@ -11,7 +11,7 @@
 - CI 95%: [-0.9773, 0.4523]
 - weighted_value (LoE factor 0.60): -0.0092
 - válido (0.30-0.90): False
-- detrended_edi: -0.0153
+- detrended_edi: -0.0215
 - trend_ratio: 1.000
 - trend_r2: 0.794
 

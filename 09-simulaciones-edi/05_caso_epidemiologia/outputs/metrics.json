@@ -1,8 +1,8 @@
 {
   "case": "Epidemiolog\u00eda (COVID-19 Global)",
-  "generated_at": "2026-05-17T04:57:33.934339Z",
+  "generated_at": "2026-05-17T15:28:23.246684Z",
   "git": {
-    "commit": "88a58df7a0a0030c17aa2cedd3a1e16f630acda9",
+    "commit": "4a43a472c2b7167c6fe363e5a36fee5f7112b3b6",
     "dirty": true
   },
   "phases": {
@@ -60,10 +60,10 @@
         "permutation_significant": true,
         "permutation_method": "iid",
         "trend_bias": {
-          "detrended_edi": 0.3282,
-          "trend_ratio": 1.0,
+          "detrended_edi": 0.0881,
+          "trend_ratio": 0.268,
           "trend_r2": 0.998,
-          "warning": false
+          "warning": true
         }
       },
       "viscosity": {
@@ -1408,10 +1408,10 @@
         "permutation_significant": true,
         "permutation_method": "iid",
         "trend_bias": {
-          "detrended_edi": 0.1294,
-          "trend_ratio": 1.0,
+          "detrended_edi": 0.0516,
+          "trend_ratio": 0.398,
           "trend_r2": 0.815,
-          "warning": false
+          "warning": true
         }
       },
       "viscosity": {

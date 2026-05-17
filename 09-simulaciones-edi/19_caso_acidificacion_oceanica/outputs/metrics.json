@@ -1,8 +1,8 @@
 {
   "case": "Acidificaci\u00f3n Oce\u00e1nica",
-  "generated_at": "2026-05-17T04:37:08.877143Z",
+  "generated_at": "2026-05-17T15:29:00.870877Z",
   "git": {
-    "commit": "904aeae5de91bbbc7c0d6946b3f52c2001db2a45",
+    "commit": "4a43a472c2b7167c6fe363e5a36fee5f7112b3b6",
     "dirty": true
   },
   "phases": {
@@ -49,14 +49,14 @@
       },
       "edi": {
         "value": 4.279257183288182e-05,
-        "bootstrap_mean": 4.279039888834916e-05,
-        "ci_lo": -2.9054207884734038e-05,
-        "ci_hi": 0.000134036437530908,
+        "bootstrap_mean": 4.362042524639811e-05,
+        "ci_lo": -2.4306619283561678e-05,
+        "ci_hi": 0.0001319440010046621,
         "valid": false,
         "weighted_value": 2.5675543099729093e-05,
         "loe_factor": 0.6,
         "permutation_pvalue": 0.0,
-        "permutation_null_95": 2.6326934607404748e-05,
+        "permutation_null_95": 2.6451112096609916e-05,
         "permutation_significant": false,
         "permutation_method": "iid",
         "trend_bias": {
@@ -228,14 +228,14 @@
       },
       "edi": {
         "value": -0.004699607674074715,
-        "bootstrap_mean": -0.004716256004248515,
-        "ci_lo": -0.005410909844498477,
-        "ci_hi": -0.004103555825153624,
+        "bootstrap_mean": -0.004730354689613962,
+        "ci_lo": -0.005384718403543376,
+        "ci_hi": -0.004097258350397944,
         "valid": false,
         "weighted_value": -0.002819764604444829,
         "loe_factor": 0.6,
-        "permutation_pvalue": 0.883294431477159,
-        "permutation_null_95": -0.004341021853026334,
+        "permutation_pvalue": 0.8678678678678678,
+        "permutation_null_95": -0.004336061667397251,
         "permutation_significant": false,
         "permutation_method": "iid",
         "trend_bias": {

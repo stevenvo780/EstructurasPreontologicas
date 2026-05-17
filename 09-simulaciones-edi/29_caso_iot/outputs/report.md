@@ -1,6 +1,6 @@
 # Reporte de Validación — Ecosistema IoT Global (Bass-Metcalfe Bilineal)
 
-- generated_at: 2026-05-17T14:57:37.309346Z
+- generated_at: 2026-05-17T15:29:24.044886Z
 
 ## Fase synthetic
 - **overall_pass**: False
@@ -11,7 +11,7 @@
 - CI 95%: [-0.0114, -0.0066]
 - weighted_value (LoE factor 0.60): -0.0056
 - válido (0.30-0.90): False
-- detrended_edi: -0.0093
+- detrended_edi: -0.0018
 - trend_ratio: 1.000
 - trend_r2: 0.627
 
@@ -59,7 +59,7 @@
 - CI 95%: [-1.2520, -0.7336]
 - weighted_value (LoE factor 0.60): -0.5394
 - válido (0.30-0.90): False
-- detrended_edi: -0.8989
+- detrended_edi: -1.0000
 - trend_ratio: 1.000
 - trend_r2: 0.815
 

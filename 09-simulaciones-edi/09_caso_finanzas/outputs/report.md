@@ -1,6 +1,6 @@
 # Reporte de Validación — Finanzas (SPY)
 
-- generated_at: 2026-05-17T04:49:09.590571Z
+- generated_at: 2026-05-17T15:28:29.005105Z
 
 ## Fase synthetic
 - **overall_pass**: False
@@ -11,7 +11,7 @@
 - CI 95%: [-0.7183, -0.6211]
 - weighted_value (LoE factor 1.00): -0.6648
 - válido (0.30-0.90): False
-- detrended_edi: -0.6648
+- detrended_edi: -0.0091
 - trend_ratio: 1.000
 - trend_r2: 0.632
 
@@ -59,9 +59,10 @@
 - CI 95%: [0.1006, 0.1052]
 - weighted_value (LoE factor 1.00): 0.1027
 - válido (0.30-0.90): False
-- detrended_edi: 0.1027
-- trend_ratio: 1.000
+- detrended_edi: -0.0020
+- trend_ratio: -0.020
 - trend_r2: 0.979
+- ⚠️ **Advertencia**: trend_ratio < 0.5 — la mayor parte del EDI podría provenir de la tendencia lineal
 
 ### Symploké y CR
 - internal: 0.9997

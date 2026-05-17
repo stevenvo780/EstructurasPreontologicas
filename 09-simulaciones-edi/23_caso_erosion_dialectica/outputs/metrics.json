@@ -1,8 +1,8 @@
 {
   "case": "Erosi\u00f3n Dial\u00e9ctica (Abrams-Strogatz Prestige)",
-  "generated_at": "2026-05-17T15:01:01.803920Z",
+  "generated_at": "2026-05-17T15:29:07.186095Z",
   "git": {
-    "commit": "e5c85f4c4c62088006c8cf967ea2fc672657d1cc",
+    "commit": "4a43a472c2b7167c6fe363e5a36fee5f7112b3b6",
     "dirty": true
   },
   "phases": {
@@ -289,7 +289,7 @@
         "permutation_significant": false,
         "permutation_method": "iid",
         "trend_bias": {
-          "detrended_edi": -1.0,
+          "detrended_edi": -0.0228,
           "trend_ratio": 1.0,
           "trend_r2": 0.988,
           "warning": false

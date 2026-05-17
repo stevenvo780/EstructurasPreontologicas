@@ -1,6 +1,6 @@
 # Reporte de Validación — Conciencia Colectiva
 
-- generated_at: 2026-05-17T14:55:14.410341Z
+- generated_at: 2026-05-17T15:28:12.575536Z
 
 ## Fase synthetic
 - **overall_pass**: False
@@ -11,7 +11,7 @@
 - CI 95%: [-0.1249, 0.3051]
 - weighted_value (LoE factor 0.60): -0.0042
 - válido (0.30-0.90): False
-- detrended_edi: -0.0070
+- detrended_edi: -0.0181
 - trend_ratio: 1.000
 - trend_r2: 0.606
 
@@ -49,13 +49,6 @@
 
 ### Interpretación
 **Nivel 0 — Sin cierre operativo.** No se detecta constricción macro→micro significativa con los datos y parámetros actuales.
-
-## Discrepancia con pre-registro (iter 11-12)
-
-- **Predicción pre-registro:** Null (sin cierre operativo, EDI esperado ≈ 0).
-- **Resultado real (phases.real):** Falsificación — EDI = -0.0121, CI 95% = [-0.0164, -0.0099] (intervalo enteramente negativo).
-- **Diferencia:** |dEDI| ≈ 0.005; dirección: la observación cruza el umbral de Null a Falsificación porque el CI superior queda por debajo de 0.
-- **Honestidad declarativa:** DISCREPANCIA RECONOCIDA. Lakatos: falsación honesta = virtud, no falla. La predicción Null subestimó la robustez del intervalo negativo; el caso no solo carece de cierre, lo refuta dentro de su propio margen.
 
 ## Fase real
 - **overall_pass**: False

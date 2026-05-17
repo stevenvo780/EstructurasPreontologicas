@@ -1,8 +1,8 @@
 {
   "case": "Pol\u00edticas Estrat\u00e9gicas (Bass Diffusion + Inertia)",
-  "generated_at": "2026-05-17T14:53:44.031115Z",
+  "generated_at": "2026-05-17T15:28:46.349844Z",
   "git": {
-    "commit": "c6b3d3b2bbe21b28c8afc0a3e1c740eca55fc3b0",
+    "commit": "4a43a472c2b7167c6fe363e5a36fee5f7112b3b6",
     "dirty": true
   },
   "phases": {
@@ -60,7 +60,7 @@
         "permutation_significant": false,
         "permutation_method": "iid",
         "trend_bias": {
-          "detrended_edi": -0.0153,
+          "detrended_edi": -0.0215,
           "trend_ratio": 1.0,
           "trend_r2": 0.794,
           "warning": false

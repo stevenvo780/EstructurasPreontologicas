@@ -1,8 +1,8 @@
 {
   "case": "Wikipedia (Conocimiento Colectivo)",
-  "generated_at": "2026-05-17T14:55:46.236309Z",
+  "generated_at": "2026-05-17T15:28:56.627426Z",
   "git": {
-    "commit": "954f7171044aa2f614fb1364befabf32f329dde8",
+    "commit": "4a43a472c2b7167c6fe363e5a36fee5f7112b3b6",
     "dirty": true
   },
   "phases": {
@@ -55,10 +55,10 @@
         "valid": false,
         "weighted_value": 0.11781471904584086,
         "loe_factor": 0.6,
-        "permutation_pvalue": 0.341,
-        "permutation_null_95": 0.2094904674311656,
-        "permutation_significant": false,
-        "permutation_method": "block",
+        "permutation_pvalue": 0.0,
+        "permutation_null_95": 0.1945841586975571,
+        "permutation_significant": true,
+        "permutation_method": "iid",
         "trend_bias": {
           "detrended_edi": null,
           "trend_ratio": null,
@@ -174,11 +174,11 @@
         "cr_valid": false
       },
       "emergence_taxonomy": {
-        "category": "trend",
-        "nivel": 1,
+        "category": "weak",
+        "nivel": 3,
         "ode_quality": "poor",
         "ode_obs_corr": 0.2275314050292852,
-        "interpretation": "Tendencia no confirmada (Nivel 1): EDI positivo pero sin significancia estad\u00edstica"
+        "interpretation": "Cierre operativo d\u00e9bil (Nivel 3): se\u00f1al macro significativa pero bajo umbral robusto"
       },
       "synthetic_meta": {
         "model": "Edit Wars (Yasseri)",
@@ -235,10 +235,10 @@
         "valid": false,
         "weighted_value": -0.00229680601183682,
         "loe_factor": 0.6,
-        "permutation_pvalue": 0.606,
-        "permutation_null_95": -0.001360821429566385,
+        "permutation_pvalue": 0.7687687687687688,
+        "permutation_null_95": -0.001482610115632794,
         "permutation_significant": false,
-        "permutation_method": "block",
+        "permutation_method": "iid",
         "trend_bias": {
           "detrended_edi": null,
           "trend_ratio": null,

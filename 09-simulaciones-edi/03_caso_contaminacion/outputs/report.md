@@ -1,6 +1,6 @@
 # Reporte de Validación — Contaminación PM2.5
 
-- generated_at: 2026-05-17T14:55:23.789420Z
+- generated_at: 2026-05-17T15:28:16.930660Z
 
 ## Fase synthetic
 - **overall_pass**: False
@@ -11,9 +11,10 @@
 - CI 95%: [0.1993, 0.2586]
 - weighted_value (LoE factor 0.60): 0.1365
 - válido (0.30-0.90): False
-- detrended_edi: 0.2275
-- trend_ratio: 1.000
+- detrended_edi: -0.0049
+- trend_ratio: -0.022
 - trend_r2: 0.805
+- ⚠️ **Advertencia**: trend_ratio < 0.5 — la mayor parte del EDI podría provenir de la tendencia lineal
 
 ### Symploké y CR
 - internal: 0.9998

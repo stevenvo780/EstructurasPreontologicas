@@ -1,6 +1,6 @@
 # Reporte de Validación — Fuga de Cerebros Global (Docquier-Rapoport)
 
-- generated_at: 2026-05-17T14:56:19.583641Z
+- generated_at: 2026-05-17T15:29:20.554025Z
 
 ## Fase synthetic
 - **overall_pass**: False
@@ -56,8 +56,8 @@
 - CI 95%: [-0.0946, 0.1585]
 - weighted_value (LoE factor 0.60): 0.0179
 - válido (0.30-0.90): False
-- detrended_edi: 0.0298
-- trend_ratio: 1.000
+- detrended_edi: 0.0610
+- trend_ratio: 2.047
 - trend_r2: 0.809
 
 ### Symploké y CR

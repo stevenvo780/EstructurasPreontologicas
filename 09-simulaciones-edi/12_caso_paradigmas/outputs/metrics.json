@@ -1,8 +1,8 @@
 {
   "case": "Paradigmas Cient\u00edficos (R&D)",
-  "generated_at": "2026-05-17T14:56:53.236771Z",
+  "generated_at": "2026-05-17T15:28:42.350014Z",
   "git": {
-    "commit": "954f7171044aa2f614fb1364befabf32f329dde8",
+    "commit": "4a43a472c2b7167c6fe363e5a36fee5f7112b3b6",
     "dirty": true
   },
   "phases": {
@@ -239,7 +239,7 @@
         "permutation_significant": false,
         "permutation_method": "iid",
         "trend_bias": {
-          "detrended_edi": -0.1715,
+          "detrended_edi": 0.0432,
           "trend_ratio": 1.0,
           "trend_r2": 0.992,
           "warning": false

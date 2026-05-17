@@ -1,6 +1,6 @@
 # Reporte de Validación — Postverdad (SIS Infodemic)
 
-- generated_at: 2026-05-17T14:55:32.620669Z
+- generated_at: 2026-05-17T15:28:50.276970Z
 
 ## Fase synthetic
 - **overall_pass**: False
@@ -11,7 +11,7 @@
 - CI 95%: [-0.0234, 0.0171]
 - weighted_value (LoE factor 0.60): -0.0071
 - válido (0.30-0.90): False
-- detrended_edi: -0.0119
+- detrended_edi: 0.0101
 - trend_ratio: 1.000
 - trend_r2: 0.760
 
@@ -59,7 +59,7 @@
 - CI 95%: [0.0011, 0.0050]
 - weighted_value (LoE factor 0.60): 0.0013
 - válido (0.30-0.90): False
-- detrended_edi: 0.0022
+- detrended_edi: -0.0004
 - trend_ratio: 1.000
 - trend_r2: 0.761
 

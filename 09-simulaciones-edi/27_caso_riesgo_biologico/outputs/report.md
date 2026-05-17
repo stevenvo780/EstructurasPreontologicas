@@ -1,6 +1,6 @@
 # Reporte de Validación — Riesgo Biológico Global (Woolhouse Bilineal)
 
-- generated_at: 2026-05-17T14:56:06.897143Z
+- generated_at: 2026-05-17T15:29:16.517262Z
 
 ## Fase synthetic
 - **overall_pass**: False
@@ -56,8 +56,8 @@
 - CI 95%: [-20.0495, 0.3226]
 - weighted_value (LoE factor 0.60): 0.1296
 - válido (0.30-0.90): False
-- detrended_edi: 0.2160
-- trend_ratio: 1.000
+- detrended_edi: -0.0019
+- trend_ratio: -0.009
 - trend_r2: 0.547
 
 ### Symploké y CR

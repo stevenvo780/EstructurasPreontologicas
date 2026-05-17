@@ -1,8 +1,8 @@
 {
   "case": "Ecosistema IoT Global (Bass-Metcalfe Bilineal)",
-  "generated_at": "2026-05-17T14:57:37.309346Z",
+  "generated_at": "2026-05-17T15:29:24.044886Z",
   "git": {
-    "commit": "954f7171044aa2f614fb1364befabf32f329dde8",
+    "commit": "4a43a472c2b7167c6fe363e5a36fee5f7112b3b6",
     "dirty": true
   },
   "phases": {
@@ -55,12 +55,12 @@
         "valid": false,
         "weighted_value": -0.005601676934390093,
         "loe_factor": 0.6,
-        "permutation_pvalue": 0.929,
-        "permutation_null_95": -0.005640827631549578,
+        "permutation_pvalue": 0.995995995995996,
+        "permutation_null_95": -0.005568287539563089,
         "permutation_significant": false,
-        "permutation_method": "block",
+        "permutation_method": "iid",
         "trend_bias": {
-          "detrended_edi": -0.0093,
+          "detrended_edi": -0.0018,
           "trend_ratio": 1.0,
           "trend_r2": 0.627,
           "warning": false
@@ -285,11 +285,11 @@
         "weighted_value": -0.5393584422009524,
         "loe_factor": 0.6,
         "permutation_pvalue": 1.0,
-        "permutation_null_95": -0.6647118026807171,
+        "permutation_null_95": -0.6792281876076637,
         "permutation_significant": false,
-        "permutation_method": "block",
+        "permutation_method": "iid",
         "trend_bias": {
-          "detrended_edi": -0.8989,
+          "detrended_edi": -1.0,
           "trend_ratio": 1.0,
           "trend_r2": 0.815,
           "warning": false

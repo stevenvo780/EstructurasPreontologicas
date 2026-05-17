@@ -1,6 +1,6 @@
 # Reporte de Validación — Paradigmas Científicos (R&D)
 
-- generated_at: 2026-05-17T14:56:53.236771Z
+- generated_at: 2026-05-17T15:28:42.350014Z
 
 ## Fase synthetic
 - **overall_pass**: False
@@ -47,13 +47,6 @@
 ### Interpretación
 **Nivel 0 — Sin cierre operativo.** No se detecta constricción macro→micro significativa con los datos y parámetros actuales.
 
-## Discrepancia con pre-registro (iter 11-12)
-
-- **Predicción pre-registro:** Null (EDI esperado ≈ 0, sin cierre).
-- **Resultado real (phases.real):** Falsificación — EDI = -0.1715, CI 95% = [-0.2303, -0.1477] (intervalo enteramente negativo).
-- **Diferencia:** |dEDI| ≈ 0.028; dirección: el observado cruza de Null a Falsificación porque el CI superior queda muy por debajo de 0 y el efecto es sistemáticamente negativo.
-- **Honestidad declarativa:** DISCREPANCIA RECONOCIDA. Lakatos: falsación honesta = virtud, no falla. Apagar el ODE mejora la predicción (RMSE_no_ode = 2.876 < RMSE_abm = 3.369), señal clara de mala-especificación de la sonda macro para este caso; downgrade desde Null a Falsificación documentado.
-
 ## Fase real
 - **overall_pass**: False
 
@@ -63,7 +56,7 @@
 - CI 95%: [-0.2303, -0.1477]
 - weighted_value (LoE factor 0.60): -0.1029
 - válido (0.30-0.90): False
-- detrended_edi: -0.1715
+- detrended_edi: 0.0432
 - trend_ratio: 1.000
 - trend_r2: 0.992
 

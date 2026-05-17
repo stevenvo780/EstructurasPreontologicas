@@ -1,6 +1,6 @@
 # Reporte de Validación — Epidemiología (COVID-19 Global)
 
-- generated_at: 2026-05-17T04:57:33.934339Z
+- generated_at: 2026-05-17T15:28:23.246684Z
 
 ## Fase synthetic
 - **overall_pass**: True
@@ -11,9 +11,10 @@
 - CI 95%: [0.3251, 0.3322]
 - weighted_value (LoE factor 0.60): 0.1969
 - válido (0.30-0.90): True
-- detrended_edi: 0.3282
-- trend_ratio: 1.000
+- detrended_edi: 0.0881
+- trend_ratio: 0.268
 - trend_r2: 0.998
+- ⚠️ **Advertencia**: trend_ratio < 0.5 — la mayor parte del EDI podría provenir de la tendencia lineal
 
 ### Symploké y CR
 - internal: 1.0000
@@ -59,9 +60,10 @@
 - CI 95%: [0.1124, 0.1487]
 - weighted_value (LoE factor 0.60): 0.0777
 - válido (0.30-0.90): False
-- detrended_edi: 0.1294
-- trend_ratio: 1.000
+- detrended_edi: 0.0516
+- trend_ratio: 0.398
 - trend_r2: 0.815
+- ⚠️ **Advertencia**: trend_ratio < 0.5 — la mayor parte del EDI podría provenir de la tendencia lineal
 
 ### Symploké y CR
 - internal: 0.9995

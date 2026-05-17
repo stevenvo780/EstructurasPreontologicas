@@ -1,6 +1,6 @@
 # Reporte de Validación — Wikipedia (Conocimiento Colectivo)
 
-- generated_at: 2026-05-17T14:55:46.236309Z
+- generated_at: 2026-05-17T15:28:56.627426Z
 
 ## Fase synthetic
 - **overall_pass**: False
@@ -45,7 +45,7 @@
 - ode_rolling: None
 
 ### Interpretación
-**Nivel 1 — Tendencia no confirmada.** Se detecta EDI positivo pero sin significancia estadística. El fenómeno no muestra cierre operativo verificable.
+**Nivel 3 — Cierre operativo weak.** La constricción macro es detectable pero no alcanza robustez suficiente para cierre operativo fuerte. El fenómeno muestra grados parciales de organización macro→micro.
 
 ## Fase real
 - **overall_pass**: False
@@ -91,11 +91,4 @@
 
 ### Interpretación
 **Nivel 0 — Sin cierre operativo.** No se detecta constricción macro→micro significativa con los datos y parámetros actuales.
-
-## Discrepancia con pre-registro (iter 11-12)
-
-- **Predicción pre-registro:** Weak (EDI esperado en rango 0.10-0.33 con p < 0.05).
-- **Resultado real (phases.real):** Null — EDI = -0.0038, CI 95% = [-0.0227, -0.0016].
-- **Diferencia:** |dEDI| ≈ 0.196; dirección: el observado cae por debajo del umbral Weak (0.10) e incluso del umbral Trend (0.05); efecto efectivamente nulo (CI rozando cero).
-- **Honestidad declarativa:** DISCREPANCIA RECONOCIDA. Lakatos: falsación honesta = virtud, no falla. El caso Wikipedia no replica el efecto Weak pre-registrado: downgrade Weak → Null documentado. La sonda macro empleada no captura la dinámica del corpus editorial real.
 
