@@ -1,6 +1,6 @@
 # Reporte de Validación — Energía (Consumo Per Cápita)
 
-- generated_at: 2026-05-17T14:53:13.811983Z
+- generated_at: 2026-05-17T15:20:15.689007Z
 
 ## Fase synthetic
 - **overall_pass**: True
@@ -11,9 +11,10 @@
 - CI 95%: [0.2880, 0.3796]
 - weighted_value (LoE factor 0.60): 0.1979
 - válido (0.30-0.90): True
-- detrended_edi: 0.3298
-- trend_ratio: 1.000
+- detrended_edi: -0.0104
+- trend_ratio: -0.032
 - trend_r2: 0.852
+- ⚠️ **Advertencia**: trend_ratio < 0.5 — la mayor parte del EDI podría provenir de la tendencia lineal
 
 ### Symploké y CR
 - internal: 0.9994
@@ -59,9 +60,10 @@
 - CI 95%: [0.3779, 0.5500]
 - weighted_value (LoE factor 0.60): 0.2769
 - válido (0.30-0.90): True
-- detrended_edi: 0.4615
-- trend_ratio: 1.000
+- detrended_edi: 0.0036
+- trend_ratio: 0.008
 - trend_r2: 0.912
+- ⚠️ **Advertencia**: trend_ratio < 0.5 — la mayor parte del EDI podría provenir de la tendencia lineal
 
 ### Symploké y CR
 - internal: 0.9993

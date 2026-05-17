@@ -1,8 +1,8 @@
 {
   "case": "Clima Regional (CONUS)",
-  "generated_at": "2026-05-17T15:16:41.385907Z",
+  "generated_at": "2026-05-17T15:20:15.760131Z",
   "git": {
-    "commit": "4dd54e389f7a54a6eecaeeb8a631f44c0a4dd49c",
+    "commit": "32e2fff051901c284bd8d6f88b9aa6a4329989d8",
     "dirty": true
   },
   "phases": {

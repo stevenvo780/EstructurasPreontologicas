@@ -1,8 +1,8 @@
 {
   "case": "Kessler (Debris Orbital)",
-  "generated_at": "2026-05-17T04:28:21.059077Z",
+  "generated_at": "2026-05-17T15:20:36.040282Z",
   "git": {
-    "commit": "2934c3fa00aed17301bc1436072df38f1f294abb",
+    "commit": "32e2fff051901c284bd8d6f88b9aa6a4329989d8",
     "dirty": true
   },
   "phases": {
@@ -60,7 +60,7 @@
         "permutation_significant": false,
         "permutation_method": "iid",
         "trend_bias": {
-          "detrended_edi": -0.1388,
+          "detrended_edi": 0.0256,
           "trend_ratio": 1.0,
           "trend_r2": 0.851,
           "warning": false
@@ -244,10 +244,10 @@
         "permutation_significant": true,
         "permutation_method": "iid",
         "trend_bias": {
-          "detrended_edi": 0.6936,
-          "trend_ratio": 1.0,
+          "detrended_edi": -1.0,
+          "trend_ratio": -1.442,
           "trend_r2": 1.0,
-          "warning": false
+          "warning": true
         }
       },
       "viscosity": {

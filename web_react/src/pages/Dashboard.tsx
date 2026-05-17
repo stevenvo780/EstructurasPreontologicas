@@ -474,7 +474,8 @@ function HeroMetric({
 }
 
 const VERIFIED_COUNTS: { key: string; label: string; count: number; note?: string }[] = [
-  { key: 'strong', label: 'Strong', count: 7, note: '6 con gate + 1 sin gate' },
+  { key: 'strong', label: 'Strong robusto', count: 1, note: 'caso 24 sobrevive block-perm + detrended fix' },
+  { key: 'unknown', label: 'En revisión', count: 6, note: 'casos 16, 17, 18, 21, 26, 30 (bug detrended / block-perm)' },
   { key: 'null', label: 'Null genuinos', count: 9 },
   { key: 'weak', label: 'Weak', count: 6 },
   { key: 'falsification', label: 'Falsación local', count: 2, note: 'aparato refutado' },
@@ -490,11 +491,12 @@ function VerifiedCountsPanel() {
         <div>
           <h2 className="font-semibold text-ink-900 dark:text-ink-100 flex items-center gap-2">
             <ShieldCheck className="w-4 h-4 text-success" />
-            Conteos verificados (iter 10)
+            Conteos verificados (iter 13-14)
           </h2>
           <p className="text-xs text-ink-500 dark:text-ink-400 mt-1">
-            Cifras definitivas validadas contra <code className="font-mono text-[11px]">metrics.json</code> por categoría
-            de cierre. Total auditado: {total} casos.
+            Cifras post-fix bug <code className="font-mono text-[11px]">detrended_edi</code> +
+            re-corrida block-permutation. Validadas contra <code className="font-mono text-[11px]">metrics.json</code>.
+            Total auditado: {total} casos.
           </p>
         </div>
       </div>

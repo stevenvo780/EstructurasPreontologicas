@@ -1,6 +1,6 @@
 # Reporte de Validación — Kessler (Debris Orbital)
 
-- generated_at: 2026-05-17T04:28:21.059077Z
+- generated_at: 2026-05-17T15:20:36.040282Z
 
 ## Fase synthetic
 - **overall_pass**: False
@@ -11,7 +11,7 @@
 - CI 95%: [-0.2414, 0.0067]
 - weighted_value (LoE factor 0.60): -0.0833
 - válido (0.30-0.90): False
-- detrended_edi: -0.1388
+- detrended_edi: 0.0256
 - trend_ratio: 1.000
 - trend_r2: 0.851
 
@@ -59,9 +59,10 @@
 - CI 95%: [0.6617, 0.7174]
 - weighted_value (LoE factor 0.60): 0.4162
 - válido (0.30-0.90): True
-- detrended_edi: 0.6936
-- trend_ratio: 1.000
+- detrended_edi: -1.0000
+- trend_ratio: -1.442
 - trend_r2: 1.000
+- ⚠️ **Advertencia**: trend_ratio < 0.5 — la mayor parte del EDI podría provenir de la tendencia lineal
 
 ### Symploké y CR
 - internal: 0.9995

@@ -1,9 +1,9 @@
 {
   "case": "Energ\u00eda (Consumo Per C\u00e1pita)",
-  "generated_at": "2026-05-17T14:53:13.811983Z",
+  "generated_at": "2026-05-17T15:20:15.689007Z",
   "git": {
-    "commit": "c6b3d3b2bbe21b28c8afc0a3e1c740eca55fc3b0",
-    "dirty": true
+    "commit": "32e2fff051901c284bd8d6f88b9aa6a4329989d8",
+    "dirty": false
   },
   "phases": {
     "synthetic": {
@@ -60,10 +60,10 @@
         "permutation_significant": true,
         "permutation_method": "iid",
         "trend_bias": {
-          "detrended_edi": 0.3298,
-          "trend_ratio": 1.0,
+          "detrended_edi": -0.0104,
+          "trend_ratio": -0.032,
           "trend_r2": 0.852,
-          "warning": false
+          "warning": true
         }
       },
       "viscosity": {
@@ -341,10 +341,10 @@
         "permutation_significant": true,
         "permutation_method": "iid",
         "trend_bias": {
-          "detrended_edi": 0.4615,
-          "trend_ratio": 1.0,
+          "detrended_edi": 0.0036,
+          "trend_ratio": 0.008,
           "trend_r2": 0.912,
-          "warning": false
+          "warning": true
         }
       },
       "viscosity": {
