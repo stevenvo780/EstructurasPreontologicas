@@ -2,7 +2,7 @@
 
 ## Función
 
-Síntesis de la discriminación pública contra quince posiciones rivales. Cada celda representa cumplimiento del criterio: ✓ (satisface), parcial (satisface en parte), ✗ (no satisface). La tesis discrimina en al menos dos criterios contra cada rival.
+Síntesis de la discriminación pública contra dieciséis posiciones rivales. Cada celda representa cumplimiento del criterio: ✓ (satisface), parcial (satisface en parte), ✗ (no satisface). La tesis discrimina en al menos dos criterios contra cada rival; en el caso de Predictive Processing/Active Inference la relación es de **complementariedad parcial** (ver fila 16 y nota).
 
 ---
 
@@ -23,7 +23,7 @@ Síntesis de la discriminación pública contra quince posiciones rivales. Cada 
 
 ---
 
-## Tabla síntesis (15 rivales)
+## Tabla síntesis (16 rivales)
 
 **Tabla A.4.2.**
 
@@ -46,6 +46,9 @@ Síntesis de la discriminación pública contra quince posiciones rivales. Cada 
 | 13 | Mecanicismo multinivel sin filtro | ✓ | ✓ | parcial | parcial | parcial | ✓ | C, D, F |
 | 14 | **Wolfram Physics Project** [^wolfram-modal] | ✓ | ✓ | ✗ | ✗ | ✗ | ✓ | C, D, E (ventaja parcial; deuda F04-06 abierta) |
 | 15 | **IIT (Tononi-Boly-Massimini-Koch 2016; Oizumi-Albantakis-Tononi 2014)** | ✓ | parcial | ✗ | ✗ | parcial | ✗ | C, D, F + tratabilidad >12 nodos |
+| 16 | **Predictive Processing / Active Inference (Friston 2010, Clark 2013)** [^pp-complementario] | ✓ | ✓ | ✗ | parcial | parcial | parcial | D (compresión), E (intervención discriminante), F (multidominio) — complementariedad parcial, no rival fuerte |
+
+[^pp-complementario]: (integración 2026-05-17 tras audit process-verifier cap 00-01): Friston (2010, *Nat. Rev. Neurosci.* 11:127-138, "The free-energy principle: a unified brain theory?") y Clark (2013, *BBS* 36:181-204, "Whatever next? Predictive brains, situated agents, and the future of cognitive science"). Tesis del rival: el cerebro minimiza error de predicción jerárquicamente sobre un modelo generativo interno (Bayesian brain). **PDFs no disponibles localmente** (`07-bibliografia/` contiene Clark 2008 *Supersizing the Mind*, no Clark 2013 ni Friston 2010); referencias secundarias. **Argumento de la tesis:** el irrealismo operativo es complementario, no rival fuerte. La métrica EDI cuantifica con intervención ablativa lo que predictive processing describe cualitativamente como minimización de error; donde PP/AI carga ontológicamente el modelo generativo interno como variable causal primaria, la tesis opera en la dinámica acoplada organismo-entorno sin comprometerse con representaciones probabilísticas internas (cfr. `01-diagnostico/03-estado-del-arte.md` §1.2). Estado: rival con complementariedad parcial; ver 01-03 §1.2.
 
 [^wolfram-modal]: (aclaración terminológica 2026-05-16, ver F04-06): la complementariedad simétrica entre Wolfram y la tesis aún no está formalizada modalmente — si la Ruliad realiza su pretensión fundacional, la tesis queda subsumida como caso particular de hypergraph rewriting; la "ventaja parcial" en C/D/E debe leerse como **deuda abierta**, no como discriminación cerrada. Detalle en `04-debates/01-debates-con-posiciones-rivales.md` §3.5 y deuda F04-06.
 
@@ -238,7 +241,7 @@ Bajo la columna externa el puntaje agregado es **3/9** o, contando "parcial", **
 
 Esta tabla es compromiso. Si en algún rival la tesis no muestra ventaja en al menos dos celdas, la tesis admite haber sido absorbida y debe reformularse.
 
-**Estado actual:** la tesis discrimina contra cada uno de los quince rivales en al menos dos criterios. La tabla no produce absorción.
+**Estado actual:** la tesis discrimina contra quince de los dieciséis rivales en al menos dos criterios; con Predictive Processing/Active Inference (fila 16) la relación es de complementariedad parcial, declarada explícitamente. La tabla no produce absorción.
 
 ---
 

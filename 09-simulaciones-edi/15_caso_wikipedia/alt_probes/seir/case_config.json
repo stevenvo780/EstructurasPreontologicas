@@ -1,0 +1,82 @@
+{
+  "case_name": "Wikipedia (Conocimiento Colectivo) — SEIR",
+  "ode_model": "seir",
+  "ode_key": "w",
+  "series_key": "w",
+  "log_transform": false,
+  "loe": 3,
+  "motivation": "Difusión epidémica de atención con período de latencia: el estado Expuesto (E) representa usuarios que han encontrado el tema pero aún no contribuyen. dS=-β·S·I, dE=β·S·I-σ·E, dI=σ·E-γ·I. La forcing modula β(t). Motivación: Bettencourt et al. 2008 (Phys Rev E 77:041901) modelan difusión de ideas científicas con SEIR. Goel et al. 2016 (WWW proc.) usan modelos epidémicos para propagación de noticias. El período de incubación (1/σ) capta el retraso entre exposición mediática y participación activa.",
+  "data": {
+    "csv": "../../data/wiki_climate.csv",
+    "date_col": "date",
+    "value_col": "attention",
+    "driver_cols": []
+  },
+  "dates": {
+    "synthetic_start": "2005-01-01",
+    "synthetic_end": "2019-12-01",
+    "synthetic_split": "2014-01-01",
+    "real_start": "2015-07-01",
+    "real_end": "2024-12-01",
+    "real_split": "2021-01-01"
+  },
+  "synthetic": {
+    "freq": "MS",
+    "measurement_noise": 0.04,
+    "forcing": {
+      "type": "linear_cycle",
+      "base": 13.0,
+      "slope": 0.002,
+      "cycle_amp": 0.3,
+      "cycle_period": 12,
+      "noise_std": 0.05
+    },
+    "true_params": {
+      "ode_alpha": 0.05,
+      "ode_beta": 0.3,
+      "ode_noise": 0.04,
+      "beta": 0.3,
+      "sigma": 0.2,
+      "gamma": 0.1,
+      "s0": 0.999,
+      "e0": 0.001,
+      "i0": 0.0,
+      "r0": 0.0
+    }
+  },
+  "thresholds": {
+    "corr_threshold": 0.5,
+    "persistence_window": 6
+  },
+  "execution": {
+    "grid_size": 25,
+    "n_perm": 999,
+    "n_boot": 500,
+    "n_refine": 5000,
+    "n_runs": 5
+  },
+  "abm": {
+    "diffusion": 0.2,
+    "noise": 0.002,
+    "heterogeneity_strength": 0.25,
+    "init_range": 0.5
+  },
+  "calibration": {
+    "param_grid": {
+      "forcing_scale": [0.01, 0.05, 0.1, 0.2, 0.5, 0.8, 0.99],
+      "macro_coupling": [0.1, 0.15, 0.25, 0.35, 0.45, 0.55, 0.65],
+      "damping": [0.0, 0.05, 0.1, 0.2, 0.3, 0.5]
+    }
+  },
+  "extra_ode_params": {
+    "ode_alpha": 0.05,
+    "ode_beta": 0.3,
+    "beta": 0.3,
+    "sigma": 0.2,
+    "gamma": 0.1,
+    "s0": 0.999,
+    "e0": 0.001,
+    "i0": 0.0,
+    "r0": 0.0
+  }
+}
