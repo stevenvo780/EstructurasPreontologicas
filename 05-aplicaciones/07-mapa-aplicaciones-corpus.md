@@ -33,9 +33,9 @@ Mapa completo del paisaje de aplicaciones del marco como **ontología general mu
 | 3 | Weak | 8 | Políticas, Postverdad, Urbanización, Fósforo, Wikipedia, Epidemiología, Movilidad, Behavioral Dynamics (caso 30) |
 | 2 | Suggestive | 1 | Finanzas (Salinización reclasificada por AU-4: CI cruza cero + magnitud trivial) |
 | 1 | Trend | 2 | Justicia, Fuga cerebros |
-| 0a | Null genuino | 6 | Conciencia, Acidificación, Erosión, Acuíferos, IoT, Clima (caso 01 reclasificado Trend→Null tras re-ejecución con datos reales IPCC-calibrados 2026-05-16, EDI=-0.0007, p_perm=0.998) (`\|EDI\|<0.05` y `p_perm>0.05`) |
+| 0a | Null genuino | 7 | Conciencia, Acidificación, Erosión, Acuíferos, IoT, Clima (caso 01 reclasificado Trend→Null tras re-ejecución con datos reales IPCC-calibrados 2026-05-16, EDI=-0.0007, p_perm=0.998), Contaminación (caso 03 reclasificado Weak→Null tras re-ejecución con datos World Bank PM2.5 reales 2026-05-16, EDI=-0.0109, p_perm=0.616) (`\|EDI\|<0.05` y `p_perm>0.05`) |
 | 0b | EDI negativo (sonda macro inadecuada) | 1 | Paradigmas (`EDI=-0.144`: ABM acoplado predice peor que reducido) |
-| 0c | Señal rechazada por gate C1-C5 | 2 | Contaminación, Océanos (`EDI>0` con `p_perm<0.05` pero `valid=False`) |
+| 0c | Señal rechazada por gate C1-C5 | 1 | Océanos (`EDI>0` con `p_perm<0.05` pero `valid=False`) |
 | n.e. | Cuarentena por insuficiencia de datos | 1 | Starlink (val_steps=1) |
 | — | Falsación rechazada (controles) | 3 | Exogeneidad, No-estacionariedad, Observabilidad |
 
@@ -147,7 +147,7 @@ Reproducibilidad: el caso 16 ha sido re-ejecutado con datos World Bank descargad
 |---|------|----:|-----------|
 | 01 | Clima regional | -0.0007 | **Null genuino tras re-ejecución con datos reales IPCC-calibrados 2026-05-16** (EDI=-0.0007, p_perm=0.998, sonda Budyko-Sellers). Reclasificado Trend→Null: con datos reales el aparato declara honestamente ausencia de cierre macro detectable bajo esta sonda. Comando regenerador: `python3 09-simulaciones-edi/01_caso_clima/src/validate.py`. |
 | 02 | Conciencia global | -0.1165 | Datos especulativos LoE=1 |
-| 03 | Contaminación PM2.5 | -0.0901 | Sin estructura macro detectable bajo régimen real-phase actual |
+| 03 | Contaminación PM2.5 | -0.0109 | **Null genuino tras re-ejecución iter 3 con datos World Bank PM2.5 reales 2026-05-16** (EDI=-0.0109, p_perm=0.616, sonda dispersión-decaimiento). Reclasificado Weak→Null: con datos reales el aparato declara honestamente ausencia de cierre macro detectable bajo esta sonda. Comando regenerador: `python3 09-simulaciones-edi/03_caso_contaminacion/src/validate.py`. |
 | 12 | Paradigmas (ciencia) | -0.1536 | Reflexividad; null bajo régimen real-phase actual |
 | 17 | Océanos (temperatura) | -0.0154 | Sin sonda específica |
 | 19 | Acidificación oceánica | 0.00044 | **Null genuino tras re-ejecución canónica 2026-05-11** (EDI=0.00044, p_perm=0.433, CI=[0.00023, 0.00065], n_perm=2999). El `metrics.json` previo (`edi.value=0.7278`) era inconsistente internamente (TENG-05): mezclaba dos ejecuciones; los `errors` almacenados implicaban `computed_edi=-0.000191`. La re-ejecución coherente clasifica el caso como null. **Caveat de datos:** `data/dataset.csv` PMEL/NOAA no estaba versionado; se usó proxy sintético calibrado a estadísticas del run original. Reproducción bit-a-bit requiere fetch del CSV NOAA real. Block-permutation no implementada (i.i.d. Phipson-Smyth); con EDI≈0 y p=0.43 el resultado null tiene margen amplio. Detalle en `Bitacora/2026-05-11-sintesis-tesis/F5-A-caso19-reejecucion.md`. |

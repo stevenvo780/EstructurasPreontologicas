@@ -44,8 +44,10 @@ Síntesis de la discriminación pública contra quince posiciones rivales. Cada 
 | 11 | Enactivismo radical | ✓ | ✓ | parcial | ✓ | parcial | ✗ | C, E, F |
 | 12 | Realismo estructural informativo | ✗ | ✓ | parcial | ✗ | ✗ | ✓ | A, C, D |
 | 13 | Mecanicismo multinivel sin filtro | ✓ | ✓ | parcial | parcial | parcial | ✓ | C, D, F |
-| 14 | **Wolfram Physics Project** | ✓ | ✓ | ✗ | ✗ | ✗ | ✓ | C, D, E |
+| 14 | **Wolfram Physics Project** [^wolfram-modal] | ✓ | ✓ | ✗ | ✗ | ✗ | ✓ | C, D, E (ventaja parcial; deuda F04-06 abierta) |
 | 15 | **IIT (Tononi-Boly-Massimini-Koch 2016; Oizumi-Albantakis-Tononi 2014)** | ✓ | parcial | ✗ | ✗ | parcial | ✗ | C, D, F + tratabilidad >12 nodos |
+
+[^wolfram-modal]: (aclaración terminológica 2026-05-16, ver F04-06): la complementariedad simétrica entre Wolfram y la tesis aún no está formalizada modalmente — si la Ruliad realiza su pretensión fundacional, la tesis queda subsumida como caso particular de hypergraph rewriting; la "ventaja parcial" en C/D/E debe leerse como **deuda abierta**, no como discriminación cerrada. Detalle en `04-debates/01-debates-con-posiciones-rivales.md` §3.5 y deuda F04-06.
 
 ---
 

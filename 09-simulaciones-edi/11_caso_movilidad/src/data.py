@@ -97,20 +97,36 @@ def make_synthetic(start_date, end_date, seed=101):
     return df, meta
 
 def load_real_data(start_date, end_date):
-    # Construct absolute path to the data directory (root/data)
-    # Assuming this script is in repos/Simulaciones/11_caso_movilidad/src/
+    """
+    Load real traffic data from dataset_real.csv (TomTom Traffic Index).
+    Falls back to synthetic if not available.
+    """
+    # Primero, intenta cargar dataset_real.csv (datos reales TomTom)
+    real_path = os.path.abspath(
+        os.path.join(os.path.dirname(__file__), "..", "data", "dataset_real.csv")
+    )
+    
+    if os.path.exists(real_path):
+        try:
+            df = pd.read_csv(real_path)
+            df["date"] = pd.to_datetime(df["date"])
+            df = df[(df['date'] >= start_date) & (df['date'] <= end_date)].dropna()
+            if not df.empty:
+                print(f"[load_real_data] Loaded real data from {real_path} ({len(df)} rows)")
+                return df
+        except Exception as e:
+            print(f"[load_real_data] Error reading {real_path}: {e}. Falling back to synthetic.")
+    
+    # Fallback a generic fetch_case_data
     cache_path = os.path.abspath(
         os.path.join(os.path.dirname(__file__), "..", "data", "dataset.csv")
     )
-    # For now, return synthetic if no real data
-    # fetch_case_data handles the fallback logic internally usually, 
-    # but here we hardcode fallback to make_synthetic if file missing logic 
-    # isn't fully in fetch_case_data for this specific path style.
-    # Actually, let's use the fetch_case_data generic.
     
     df, meta = fetch_case_data("11_caso_movilidad", start_date, end_date, cache_path=cache_path)
     if df is not None and not df.empty:
-         df["date"] = pd.to_datetime(df["date"])
-         return df.dropna()
-         
+        df["date"] = pd.to_datetime(df["date"])
+        return df.dropna()
+    
+    # Final fallback: synthetic
+    print(f"[load_real_data] No real data found. Using synthetic data.")
     return make_synthetic(start_date, end_date)[0]
