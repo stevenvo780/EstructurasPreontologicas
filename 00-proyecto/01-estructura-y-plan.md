@@ -106,7 +106,7 @@ El manuscrito-fuente histórico (archivado en `Bitacora/2026-04-27-integracion-j
 - **patrón estabilizado** definido técnicamente como atractor empírico;
 - **aparato formal** con protocolo empírico de κ vía baja dimensionalidad operacionalizado como EDI;
 - **nivel B** (acoplamiento empírico genérico multiescalar) en lugar de L2 neurobiológico estrecho;
-- **condiciones de fracaso global falsables** (BORRADOR-IA pendiente firma H-J8 — conteo unificado a 4 (3+1) 2026-05-16 alineando con cap 06-01 §2: tres escenarios falsables con criterio externo + una condición de prioridad histórica, consolidados tras cierre 2026-05);
+- **condiciones de fracaso global falsables** según el conteo canónico unificado de cap 06-01 §2 (3 escenarios falsables con criterio externo + 1 condición de prioridad histórica; decisión pendiente firma H-J8 declarada en TAREAS_PENDIENTES.md);
 - **bibliografía integrada por capítulo** con interlocutor principal nombrado.
 
 ## Política de subcarpetas y materiales auxiliares

@@ -94,6 +94,28 @@ Cada tarea declara: **estado actual**, **acción operativa**, **métrica de acep
 
 ---
 
+## BORRADOR-IA por tipo y prioridad (consolidación 2026-05-17)
+
+Inventario actual: **53 marcadores `BORRADOR-IA` activos en 17 archivos** del manuscrito (chapters `00-…` a `06-…` + `Correspondencia_Ricardo/`). Snapshot iter 14 había reportado 63 (contando ocurrencias en el `Tesis.md` derivado, que no debe editarse — CLAUDE.md §7); la cifra operativa sobre capítulos fuente era 56. Tras consolidación 2026-05-17 (cross-references a notas canónicas en `06-cierre/01-conclusion-demostrativa.md §1` y `§2`): **56 → 53 marcadores activos**.
+
+Clasificación por tipo (las eliminaciones son consolidaciones honestas, no cierres de H-J*):
+
+| Tipo | Descripción | Acción | Conteo |
+|---|---|---|---|
+| **A** — Firma trivial | Marcador donde el contenido es defendible y solo falta firma autoral. Bajo costo de cierre. | Esperar firma Jacob. | ~12 (H-J3, H-J10, H-J11, mayoría de los referenciales 06-01) |
+| **B** — Decisión filosófica pendiente | H-J2/H-J3/H-J4/H-J5/H-J6 — requieren juicio autoral sustantivo. | Esperar firma Jacob; no cerrar desde asistencia. | ~25 (5 instancias de la Nota epistemológica H-J5/H-J6/H-J7 ahora consolidadas a 1 canónica + 4 cross-refs) |
+| **C** — Deuda metodológica | H-J7 (denominador 0/2000), H-J8 (conteo escenarios 3+1), H-J9 (baselines ARIMA/VAR), H-J12 (post-fix iter 13 + iter 15 inversiones de signo) — requieren trabajo técnico + firma. | Trabajo técnico declarado; firma Jacob pendiente. | ~14 |
+| **D** — Redundante (consolidado 2026-05-17) | Múltiples copias de la misma nota epistemológica en distintos archivos. | Convertidos a cross-reference a la nota canónica en cap 06-01 §1/§2/§5. | -3 net (4 consolidaciones de "Nota epistemológica H-J5/H-J6/H-J7" + 4 de "Corrección iter 13 H-J12" + 4 de "Conteo escenarios H-J8" reemplazados por cross-refs; iter 15 + parallel updates añadieron ~9 nuevos marcadores sustantivos) |
+
+Notas canónicas establecidas en esta consolidación:
+- **Nota epistemológica sobre bidireccionalidad B-T2 + forking-paths + lock-in-post-hoc:** canónica en `06-cierre/01-conclusion-demostrativa.md §1` (nota iter 8/iter 11). Reapariciones en resumen 00-05, guía-defensa 06-02 P7-bis, correspondencia Ricardo 05/06 son ahora cross-references.
+- **Corrección honesta iter 13/iter 15 (downgrade post-fix `detrended_edi` + block-perm + reversión caso 30):** canónica en `06-cierre/01-conclusion-demostrativa.md §5 Tabla 6.1.1 Nota iter 13` + `§4.5 deuda B-T2.1`. Reapariciones en resumen 00-05, correspondencia Ricardo 06, versiones-cortas-defensa son cross-references.
+- **Conteo unificado de escenarios falsables 4 (3+1):** canónica en `06-cierre/01-conclusion-demostrativa.md §2`. Reapariciones en 00-01 estructura-y-plan, 06-03 hoja-de-ruta, versiones-cortas-defensa, 04-04 debates ya no llevan marcador BORRADOR-IA propio; remiten a la decisión H-J8.
+
+**Regla:** ningún H-J* fue cerrado en esta consolidación. La firma autoral de Jacob sigue siendo requisito; las cross-references reducen ruido visual sin diluir responsabilidad ni ocultar lo pendiente.
+
+---
+
 ## Mapa de prioridades
 
 ### Prioridad 1 — bloqueadores de sustentación
