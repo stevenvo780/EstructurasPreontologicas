@@ -190,6 +190,72 @@ def permutation_test_edi(obs_val, abm_val, reduced_val, n_perm=999, seed=42):
     return edi_real, p_value, edi_null_95
 
 
+def block_permutation_pvalue(obs_val, abm_val, reduced_val,
+                              block_size=None, n_perm=999, seed=42):
+    """
+    Test de permutación por bloques (moving blocks) para EDI sobre series
+    temporales autocorrelacionadas. Cierra deuda B-T5 declarada en
+    06-cierre/01-conclusion-demostrativa.md §4: la permutación i.i.d.
+    estándar (`permutation_test_edi`) destruye la estructura temporal y puede
+    subestimar p-values cuando los residuos tienen autocorrelación serial.
+
+    Implementación: **moving block bootstrap** (Künsch 1989, Annals of
+    Statistics 17:1217-1241) — extrae bloques contiguos de tamaño `block_size`
+    con posiciones iniciales muestreadas con reemplazo desde {0..n-block_size},
+    los concatena hasta cubrir `n` puntos y trunca al largo original. Preserva
+    autocorrelación local de orden ≤ block_size.
+
+    `block_size` default = `int(np.sqrt(n))` (regla heurística de
+    Politis & Romano 1994, J. American Statistical Association 89:1303-1313).
+
+    Retorna (edi_real, p_value, edi_null_95) con la misma firma que
+    `permutation_test_edi` para drop-in compatibility.
+    """
+    obs_a = np.asarray(obs_val, dtype=np.float64)
+    abm_a = np.asarray(abm_val, dtype=np.float64)
+    red_a = np.asarray(reduced_val, dtype=np.float64)
+    n = len(obs_a)
+
+    edi_real = compute_edi(rmse(abm_a, obs_a), rmse(red_a, obs_a))
+
+    if n < 4:
+        # Serie demasiado corta para bloques significativos
+        return edi_real, 1.0, edi_real
+
+    if block_size is None:
+        block_size = max(2, int(np.sqrt(n)))
+    block_size = int(min(max(2, block_size), n))
+
+    rng = np.random.RandomState(seed)
+    n_starts = n - block_size + 1  # posiciones iniciales válidas
+    n_blocks = int(np.ceil(n / block_size))
+
+    # Genera todos los starts: (n_perm, n_blocks)
+    starts = rng.randint(0, n_starts, size=(n_perm, n_blocks))
+
+    # Construye matriz de índices: para cada start s, expandir a s, s+1, ..., s+block_size-1
+    offsets = np.arange(block_size)
+    # shape: (n_perm, n_blocks, block_size)
+    idx_full = starts[:, :, np.newaxis] + offsets[np.newaxis, np.newaxis, :]
+    idx_flat = idx_full.reshape(n_perm, n_blocks * block_size)[:, :n]
+
+    obs_perms = obs_a[idx_flat]  # (n_perm, n)
+
+    rmse_abm_null = np.sqrt(np.mean((abm_a[np.newaxis, :] - obs_perms) ** 2, axis=1))
+    rmse_red_null = np.sqrt(np.mean((red_a[np.newaxis, :] - obs_perms) ** 2, axis=1))
+
+    mask = rmse_red_null > 1e-15
+    null_edis = np.where(mask, (rmse_red_null - rmse_abm_null) / rmse_red_null, 0.0)
+    null_edis = np.clip(null_edis, -1.0, 1.0)
+
+    # p-value Phipson-Smyth (2010): (k+1)/(B+1) para evitar p=0 exacto
+    k = int(np.sum(null_edis >= edi_real))
+    p_value = float((k + 1) / (n_perm + 1))
+    edi_null_95 = float(np.percentile(null_edis, 95))
+
+    return edi_real, p_value, edi_null_95
+
+
 def bootstrap_edi(obs_val, abm_val, reduced_val, n_boot=500, ci=0.95, seed=42):
     """Bootstrap CI para EDI — vectorizado con NumPy."""
     n = len(obs_val)
@@ -1227,6 +1293,12 @@ class CaseConfig:
         # Defaults para parámetros estadísticos
         self.n_perm = 999      # Phipson & Smyth (2010): resolución p=0.001
         self.n_boot = 500      # Bootstrap CI para EDI
+        # Método de permutación: "iid" (default, i.i.d. shuffle) o
+        # "block" (moving blocks Künsch 1989, preserva autocorrelación).
+        # Override desde case_config.json: execution.permutation_method
+        # o variable de entorno HYPER_PERMUTATION_METHOD.
+        self.permutation_method = "iid"
+        self.permutation_block_size = None   # None → sqrt(n) (Politis-Romano 1994)
         self.n_refine = 5000   # Iteraciones de refinamiento en calibrate_abm
         self.param_grid = None # None = usar grid default de calibrate_abm
         self.refinement_clamps = None  # None = usar defaults de calibrate_abm/perturb_params
@@ -1258,6 +1330,15 @@ class CaseConfig:
         # Más permutaciones → p-value más preciso (útil en EDI borderline)
         if "HYPER_N_PERM" in os.environ:
             self.n_perm = int(os.environ["HYPER_N_PERM"])
+        if "HYPER_PERMUTATION_METHOD" in os.environ:
+            method = os.environ["HYPER_PERMUTATION_METHOD"].strip().lower()
+            if method in ("iid", "block"):
+                self.permutation_method = method
+        if "HYPER_PERMUTATION_BLOCK_SIZE" in os.environ:
+            try:
+                self.permutation_block_size = int(os.environ["HYPER_PERMUTATION_BLOCK_SIZE"])
+            except ValueError:
+                pass
         # HYPER_N_BOOT: muestras bootstrap para CI del EDI
         if "HYPER_N_BOOT" in os.environ:
             self.n_boot = int(os.environ["HYPER_N_BOOT"])
@@ -1690,9 +1771,19 @@ def evaluate_phase(config, df, start_date, end_date, split_date,
     
     # Fix C12: Permutation test para significancia del EDI
     # n_perm=999: estándar en literatura (Phipson & Smyth 2010), resolución p=0.001
-    _, edi_pvalue, edi_null_95 = permutation_test_edi(
-        obs_val, abm_val, abm_no_ode_val, n_perm=config.n_perm, seed=42
-    )
+    # B-T5: si permutation_method="block", usar moving blocks (Künsch 1989)
+    # para preservar autocorrelación temporal en series con dependencia serial.
+    _perm_method = getattr(config, "permutation_method", "iid")
+    if _perm_method == "block":
+        _, edi_pvalue, edi_null_95 = block_permutation_pvalue(
+            obs_val, abm_val, abm_no_ode_val,
+            block_size=getattr(config, "permutation_block_size", None),
+            n_perm=config.n_perm, seed=42
+        )
+    else:
+        _, edi_pvalue, edi_null_95 = permutation_test_edi(
+            obs_val, abm_val, abm_no_ode_val, n_perm=config.n_perm, seed=42
+        )
     # Significancia requiere AMBOS: p < 0.05 Y EDI > 0.01 (mínimo efecto).
     # Sin el gate de magnitud, series con autocorrelación fuerte pueden producir
     # p=0.0 con EDI≈0, lo cual es un artefacto estadístico sin valor ontológico.
@@ -1945,6 +2036,7 @@ def evaluate_phase(config, df, start_date, end_date, split_date,
             "permutation_pvalue": edi_pvalue,
             "permutation_null_95": edi_null_95,
             "permutation_significant": edi_significant,
+            "permutation_method": _perm_method,
             "trend_bias": trend_bias,
         },
         "viscosity": {

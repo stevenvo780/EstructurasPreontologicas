@@ -1,21 +1,21 @@
 # Reporte de Validación — Riesgo Biológico Global (Woolhouse Bilineal)
 
-- generated_at: 2026-02-15T23:50:17.847190Z
+- generated_at: 2026-05-17T04:20:36.055676Z
 
 ## Fase synthetic
 - **overall_pass**: False
 
 ### EDI
-- valor: -0.0028
-- bootstrap_mean: -0.0027
-- CI 95%: [-0.0046, -0.0004]
-- weighted_value (LoE factor 0.60): -0.0017
+- valor: -0.0035
+- bootstrap_mean: -0.0034
+- CI 95%: [-0.0055, -0.0007]
+- weighted_value (LoE factor 0.60): -0.0021
 - válido (0.30-0.90): False
 
 ### Symploké y CR
-- internal: 0.9951
-- external: 0.9962
-- CR: 0.9989
+- internal: 0.9948
+- external: 0.9957
+- CR: 0.9991
 - CR indicador (>2.0 = frontera nítida): False
 
 ### Criterios C1-C5
@@ -26,44 +26,44 @@
 - c5_uncertainty: True
 
 ### Errores
-- rmse_abm: 1.9400
-- rmse_abm_no_ode: 1.9347
-- rmse_ode: 2.7015
+- rmse_abm: 1.9603
+- rmse_abm_no_ode: 1.9535
+- rmse_ode: 2.7220
 - rmse_reduced: 2.3900
 - threshold: 0.9305
 
 ### Calibración
-- forcing_scale: 0.9900
-- macro_coupling: 0.1000
-- ode_coupling_strength: 0.0800
+- forcing_scale: 0.9489
+- macro_coupling: 0.1275
+- ode_coupling_strength: 0.1020
 - abm_feedback_gamma: 0.0500
 - damping: 0.9500
 - ode_alpha: 0.0010
 - ode_beta: 1.0000
 - assimilation_strength: 0.0000
-- calibration_rmse: 0.8803
+- calibration_rmse: 0.8791
 - ode_rolling: None
 
 ### Interpretación
 **Nivel 0 — Sin cierre operativo.** No se detecta constricción macro→micro significativa con los datos y parámetros actuales.
 
 ## Fase real
-- **overall_pass**: True
+- **overall_pass**: False
 
 ### EDI
-- valor: 0.3326
-- bootstrap_mean: 0.3096
-- CI 95%: [-0.1975, 0.6484]
-- weighted_value (LoE factor 0.60): 0.1995
-- válido (0.30-0.90): True
-- detrended_edi: 0.3326
+- valor: 0.2160
+- bootstrap_mean: -1.1124
+- CI 95%: [-20.0495, 0.3226]
+- weighted_value (LoE factor 0.60): 0.1296
+- válido (0.30-0.90): False
+- detrended_edi: 0.2160
 - trend_ratio: 1.000
-- trend_r2: 0.661
+- trend_r2: 0.547
 
 ### Symploké y CR
-- internal: 0.9998
-- external: 0.9952
-- CR: 1.0046
+- internal: 0.9952
+- external: 0.9958
+- CR: 0.9993
 - CR indicador (>2.0 = frontera nítida): False
 
 ### Criterios C1-C5
@@ -74,24 +74,24 @@
 - c5_uncertainty: True
 
 ### Errores
-- rmse_abm: 0.3252
-- rmse_abm_no_ode: 0.4872
-- rmse_ode: 2.8892
-- rmse_reduced: 2.9797
-- threshold: 0.3368
+- rmse_abm: 0.9643
+- rmse_abm_no_ode: 1.2300
+- rmse_ode: 2.2089
+- rmse_reduced: 1.5950
+- threshold: 0.8154
 
 ### Calibración
 - forcing_scale: 0.9900
-- macro_coupling: 0.2503
-- ode_coupling_strength: 0.2003
+- macro_coupling: 0.5000
+- ode_coupling_strength: 0.3000
 - abm_feedback_gamma: 0.0500
-- damping: 0.8619
+- damping: 0.9500
 - ode_alpha: 0.0010
 - ode_beta: 0.0010
 - assimilation_strength: 0.0000
-- calibration_rmse: 0.1528
+- calibration_rmse: 0.1123
 - ode_rolling: None
 
 ### Interpretación
-**Nivel 4 — Cierre operativo fuerte.** El EDI se encuentra en el rango válido y el test de permutación confirma significancia estadística, indicando constricción macro→micro robusta. No obstante, estos resultados no implican compromiso ontológico: el cierre es operativo, no sustancial.
+**Nivel 1 — Tendencia no confirmada.** Se detecta EDI positivo pero sin significancia estadística. El fenómeno no muestra cierre operativo verificable.
 

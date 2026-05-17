@@ -125,7 +125,7 @@ La cifra 0.886 sobrevive como **coherencia umbral interna** con sus salvedades; 
 ## 8. Estado del documento y deuda asociada
 
 - **Hecho:** documento canónico bajo `09-simulaciones-edi/auc_roc/` con comando regenerador y CI bootstrap.
+- **Hecho (2026-05-16):** script autocontenido `09-simulaciones-edi/auc_roc/compute_auc_ci.py` (no dependiente de `Bitacora/`). Reproduce bit-a-bit `AUC=0.8857`, `mean=0.8861`, `CI95=[0.6571,1.0000]`. Ejecutar: `python3 09-simulaciones-edi/auc_roc/compute_auc_ci.py --seed 42`.
 - **Pendiente:**
-  - script `auc_roc_compute.py` autocontenido (no dependiente de `Bitacora/`) que reciba `metrics.json` y produzca AUC + CI;
   - validación externa con etiquetas por especialistas (deuda H-J*/B-T futuro);
   - actualizar `09-simulaciones-edi/baselines/README.md` §"Aclaración crítica" para reflejar el retiro de la comparación contra ARIMA y reenviar a este documento.

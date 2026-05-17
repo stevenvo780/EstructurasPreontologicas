@@ -132,6 +132,16 @@ def apply_config_to_case(config: dict, case_config_obj) -> None:
         case_config_obj.n_runs = int(execution["n_runs"])
     if "persistence_window" in execution:
         case_config_obj.persistence_window = int(execution["persistence_window"])
+    # B-T5: permutation_method ∈ {"iid", "block"}; block_size opcional (default sqrt(n))
+    if "permutation_method" in execution:
+        method = str(execution["permutation_method"]).strip().lower()
+        if method in ("iid", "block"):
+            case_config_obj.permutation_method = method
+    if "permutation_block_size" in execution:
+        try:
+            case_config_obj.permutation_block_size = int(execution["permutation_block_size"])
+        except (TypeError, ValueError):
+            pass
     
     # ABM overrides → extra_base_params
     for key in ("diffusion", "noise", "heterogeneity_strength", "init_range",
