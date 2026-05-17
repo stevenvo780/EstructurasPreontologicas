@@ -1,6 +1,6 @@
 # Reporte de Validación — Constelaciones Satelitales Starlink (Saturation Growth)
 
-- generated_at: 2026-05-17T15:16:29.352845Z
+- generated_at: 2026-05-17T15:51:46.983593Z
 
 ## Fase synthetic
 - **overall_pass**: False
@@ -93,5 +93,5 @@
 - ode_rolling: None
 
 ### Interpretación
-**Nivel 4 — Cierre operativo fuerte.** El EDI se encuentra en el rango válido y el test de permutación confirma significancia estadística, indicando constricción macro→micro robusta. No obstante, estos resultados no implican compromiso ontológico: el cierre es operativo, no sustancial.
+**Nivel 1 — Tendencia no confirmada.** Se detecta EDI positivo pero sin significancia estadística. El fenómeno no muestra cierre operativo verificable.
 

@@ -1,8 +1,8 @@
 {
   "case": "Constelaciones Satelitales Starlink (Saturation Growth)",
-  "generated_at": "2026-05-17T15:16:29.352845Z",
+  "generated_at": "2026-05-17T15:51:46.983593Z",
   "git": {
-    "commit": "4dd54e389f7a54a6eecaeeb8a631f44c0a4dd49c",
+    "commit": "2a076d0233b90f849479bdd206e9dca78d5b6b24",
     "dirty": true
   },
   "phases": {
@@ -55,10 +55,10 @@
         "valid": false,
         "weighted_value": -0.2548990773790116,
         "loe_factor": 0.6,
-        "permutation_pvalue": 0.998998998998999,
-        "permutation_null_95": -0.4050198736013292,
+        "permutation_pvalue": 0.874,
+        "permutation_null_95": -0.3917329372858029,
         "permutation_significant": false,
-        "permutation_method": "iid",
+        "permutation_method": "block",
         "trend_bias": {
           "detrended_edi": null,
           "trend_ratio": null,
@@ -734,10 +734,10 @@
         "valid": true,
         "weighted_value": 0.4544926059211016,
         "loe_factor": 0.6,
-        "permutation_pvalue": 0.0,
-        "permutation_null_95": 0.6919852813364695,
-        "permutation_significant": true,
-        "permutation_method": "iid",
+        "permutation_pvalue": 0.079,
+        "permutation_null_95": 0.7711000025279704,
+        "permutation_significant": false,
+        "permutation_method": "block",
         "trend_bias": {
           "detrended_edi": 0.5127,
           "trend_ratio": 0.677,
@@ -853,11 +853,11 @@
         "cr_valid": true
       },
       "emergence_taxonomy": {
-        "category": "strong",
-        "nivel": 4,
+        "category": "trend",
+        "nivel": 1,
         "ode_quality": "good",
         "ode_obs_corr": 0.9947393225394517,
-        "interpretation": "Cierre operativo fuerte (Nivel 4): la macro constri\u00f1e significativamente la din\u00e1mica micro"
+        "interpretation": "Tendencia no confirmada (Nivel 1): EDI positivo pero sin significancia estad\u00edstica"
       }
     }
   },
