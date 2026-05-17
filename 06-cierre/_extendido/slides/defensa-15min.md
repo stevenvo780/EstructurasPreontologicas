@@ -67,8 +67,8 @@ footer: "U. de Antioquia · 2026"
 
 - 6 strong con gate (post-iter-7 B-T2 2026-05-17): Energía **0.650**, Deforestación **0.602**, Kessler **0.353**, Riesgo Biológico **0.333**, Urbanización **0.337**, Microplásticos **0.806**
 - 1 strong sin gate: Starlink **0.7575** (CI estable, gate C1-C5 no superado — disclosure)
-- 7 weak con disclosure (incluye Océanos iter 7 `valid=False`) · 0 suggestive · 4 trend
-- 6 null genuinos + 1 EDI negativo (Paradigmas −0.144) + 1 falsificación local (Acidificación caso 19) + 0 rechazados por C1-C5
+- 6 weak con disclosure (incluye Océanos iter 7 `valid=False`; Wikipedia retirado iter 8 → Null tras pre-registro firmado) · 1 suggestive (Justicia caso 10 iter 8 pre-registrado) · 3 trend
+- 7 null genuinos (incluye Wikipedia caso 15 iter 8 pre-registrado) + 1 EDI negativo (Paradigmas −0.144) + 1 falsificación local (Acidificación caso 19) + 0 rechazados por C1-C5
 - 3 controles de falsación rechazados
 - Composición invariante a rejilla F06-03 bajo régimen sintético
 - Figura: `corpus_edi_bars.svg`
