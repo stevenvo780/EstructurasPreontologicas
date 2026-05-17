@@ -122,3 +122,49 @@ Todas las citas primarias fueron verificadas extrayendo el PDF con `pdftotext -l
 3. **Conseguir PDF de *L'individuation*** (fetch vía `@bibliography-fetcher` o adquisición) antes de redactar la versión final del §pre-ontológico.
 4. **No usar Pablo Rodríguez** como respaldo directo de afirmaciones atribuidas a Simondon. Si se cita, declarar secundaria.
 5. **Añadir al glosario** entrada explícita sobre la relación entre "pre-individual" (Simondon) y "pre-ontológico" (tesis): no son sinónimos, hay una decisión terminológica autoral que debe justificarse.
+
+---
+
+## §7. Intento de fetch — L'individuation (2026-05-16)
+
+**Ejecutado por:** `@bibliography-fetcher` (sub-agente bibliográfico).
+**PDF descargado:** NO.
+
+### Fuentes verificadas
+
+| Fuente | URL | Resultado |
+|--------|-----|-----------|
+| HAL Science hal-01485173 | https://hal.science/hal-01485173 | Bloqueado (Anubis bot-protection). Identificado por metadatos: es un *compte-rendu* (reseña) de Rémi Jardat en *Comptabilité Contrôle Audit*, 2016, 22(3), pp. 145-147 — NO es el libro. |
+| UFRJ blog (fragmento FR) | https://blog.lidis.ufrj.br/… | PDF de 5 páginas / 44.5KB — solo primeras páginas, no el libro completo. |
+| monoskop.org (FR original) | https://monoskop.org/Simondon | HTTP 403 Forbidden en el PDF del texto FR. |
+| monoskop.org (EN excerpt) | https://monoskop.org/images/…Genesis_of_the_Individual.pdf | HTTP 403. Identificado por metadatos: es capítulo en inglés (1992), "The Genesis of the Individual", trad. Cohen & Kwinter, en *Incorporations* (Zone Books), pp. 297-319 — NO es el libro completo. |
+| Columbia University PDF | https://www.columbia.edu/…/Simondon.PDF | HTTP 403 Forbidden. |
+| archive.org | búsqueda directa | Sin resultados para la edición FR Millon 2005. |
+| Open Library | https://openlibrary.org/books/OL29480821M/ | Edición EN disponible solo para compra (no borrow/read). |
+| memoof.me | https://memoof.me/download/958/pdf/958.pdf | HTTP 403 Forbidden. |
+| anthropogenie.com | https://anthropogenie.com/…/simondon.pdf | 10 páginas — comentario secundario de Henri Van Lier, no Simondon. |
+| Scribd | https://fr.scribd.com/doc/204143359/… | Requiere cuenta — no verificado sin autenticación. |
+
+### Edición inglesa (University of Minnesota Press, 2020)
+
+- **Título completo:** *Individuation in Light of Notions of Form and Information* (Vol. I + Vol. II: Supplemental Texts)
+- **Traductor:** Taylor Adkins
+- **Publisher:** University of Minnesota Press, Posthumanities series
+- **ISBN Vol. I:** 978-0-8166-8002-3
+- **Estado:** Publicación comercial. No open access. No disponible para descarga legítima gratuita.
+
+### Conclusión del fetch
+
+No existe PDF de *L'individuation* (ni edición FR 2005 ni EN 2020) en ningún repositorio de acceso abierto verificable sin autenticación. Las únicas copias accesibles sin cuenta son fragmentos o reseñas. Los repositorios con copias completas (Scribd, memoof.me) requieren autenticación o son de estatus legal ambiguo.
+
+**PDF descargado a 07-bibliografia/:** NO.
+
+### Próximo paso recomendado para H-J5
+
+**Opción 1 (recomendada):** Reformular el engagement con MEOT 1958 como obra accesible (ya en `07-bibliografia/`) y declarar en el manuscrito que las citas de *L'individuation* son deuda bibliográfica pendiente de acceso institucional. Usar prólogo de Rodríguez solo como fuente secundaria declarada.
+
+**Opción 2:** Solicitar acceso institucional U. de Antioquia — biblioteca tiene suscripción a BVU (Biblioteca Virtual Universitaria) y/o acceso a JSTOR/Springer donde puede haber capítulos accesibles. Requiere firma humana (H-J5 + acceso biblioteca).
+
+**Opción 3:** Adquirir edición EN (Minnesota Press, 2020, ~USD 27.50 PB) o edición FR Millon (ISBN 978-2-84137-181-5). Requiere decisión y gasto humano.
+
+**H-J5 sigue abierta.**

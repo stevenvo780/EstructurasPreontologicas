@@ -1852,6 +1852,8 @@ S  — semántica revisada                   : recoge las categorías que sobrev
 
 La conducta humana (caso ancla Warren 2006, caso 30) es **una instancia entre muchas** de B, no su definición exclusiva. La primera iteración del manuscrito etiquetaba B como "conductual-biológico" porque el caso ancla era de behavioral dynamics; la versión multiescalar reconoce que B es **acoplamiento empírico genérico** y la subetiqueta "conductual" aplica solo a casos donde el agente es organismo en tarea conductual.
 
+> **Nota sobre la columna "atractor" (aclaración terminológica 2026-05-16).** Los atractores listados en la Tabla 2.4.1 deben leerse bajo la distinción de cap 02-01 §0.3: para escalas con intervención experimental independiente del ajuste (casos 30, 31, 34, 35-37) la columna remite a **atractores en sentido κ-ontológica** (cuenca medida con manipulación); para escalas no experimentales o donde la cuenca se infiere de datos observacionales (casos 33, 39, 40) la columna remite a **atractores en sentido κ-pragmática** (cuenca observacional, sin manipulación independiente). La tabla no reescribe esta distinción — solo la reactiva como ancla cruzada al §0.3 del cap 02-01.
+
 Lo que el borrador llamaba L2 se reparte entre B (donde están las cinco familias de variables descritas en §2) y los tramos específicos de la escala (neurobiología en escala individual, electroquímica en escala celular, hidrodinámica en escala astrofísica, etc.) cuando hagan falta para una pregunta concreta.
 
 ## 2. Qué incluye B
@@ -2381,6 +2383,8 @@ S4  — semántica revisada (S)                   (capítulo 02-03)
 ```
 
 El nivel B (conductual-biológico, capítulo 02-04) no es un registro paralelo; es el lugar donde E1 vive cuando el dominio es psicológico-conductual: la medición se hace sobre el par dinámico acoplado.
+
+> **Aclaración terminológica 2026-05-16.** La regionalización a "dominio psicológico-conductual" en el párrafo previo refleja el **alcance original** del término B (cap 02-04 §1, primera iteración del manuscrito), no la convención vigente. La **convención global del manuscrito** —fijada en cap 02-04 §1 versión multiescalar y Tabla 2.4.1— es: B = **acoplamiento empírico genérico multiescalar** (organismo-entorno-tarea-historia en cualquier escala donde se mide el par dinámico acoplado: qubit-baño, proteína-solvente, cúmulo-marea, etc.). El zoom biológico-conductual aplica solo cuando el agente es organismo en tarea. Los operadores μ, G, H, κ, ε definidos abajo se aplican a B en su sentido multiescalar.
 
 > Notas terminológicas: cada operador definido a continuación está glosado además en el **Glosario operativo** de preliminares. Cualquier término técnico introducido en este capítulo (μ, G, H, κ, ε, dossier de anclaje, EDI, LoE, asimetría L1↔B↔L3↔S) puede consultarse allí con definición autocontenida y referencias cruzadas.
 
@@ -3799,7 +3803,7 @@ Se prefieren formas funcionales con motivación física o ecológica (por ejempl
 
 ### Paso 6. Validar empíricamente
 
-Cuatro pruebas, todas necesarias:
+Cuatro pruebas, todas necesarias (aclaración terminológica 2026-05-16: las 4 pruebas de este paso **extienden** los 3 criterios de legitimidad de κ enunciados en cap 03-01 §6.3 —reproducción, topología, intervención— añadiendo un **cuarto criterio de generalización inter-condición** que el aparato formal no exigía como requisito de admisión. La justificación operativa de esta extensión queda en el propio Paso 6 y en cap 06-01 §4.2 [TENG-10]: sin generalización a condiciones no usadas para ajuste, la reproducción intra-muestra es vulnerable a sobreajuste paramétrico y por tanto insuficiente como evidencia de cierre operativo):
 
 1. **Reproducción**: ¿el sistema reducido reproduce las trayectorias medias observadas con error dentro de la tolerancia? Métrica habitual: proporción de varianza explicada en condiciones similares a las del entrenamiento.
 2. **Generalización**: ¿predice trayectorias en condiciones no usadas para ajuste (otras condiciones iniciales, otros parámetros de tarea)?
@@ -4977,6 +4981,8 @@ Fajen y Warren (2003) modelaron la dirección de marcha humana caminando hacia m
 ```
 
 con `b = 3.25`, `k_g = 7.50`, `c1 = 0.40`, `c2 = 0.40`, `k_o = 198.0`, `c3 = 6.5`, `c4 = 0.8`. Las simulaciones reproducen 0.980 de la varianza de los caminos humanos para meta sola y 0.975 para meta con obstáculo.
+
+> **Aclaración terminológica 2026-05-16.** El r² = 0.980 / 0.975 reportado aquí es **ajuste paramétrico Fajen-Warren sobre datos VENLab** (sondas dinámicas con parámetros fijos sobre series promediadas intra-sesión), no es EDI. El EDI = 0.262 (weak) del caso 30 del corpus se calcula sobre datos sintéticos calibrados bajo protocolo C1-C5 con ablación interna del término ODE→ABM en régimen poblacional inter-sujeto. Son **métricas complementarias, no comparables directamente**: el r² mide reproducción intra-muestra de la dinámica conductual; el EDI mide cierre operativo bajo permutación + bootstrap + las 4 pruebas del Paso 6 de cap 03-04. La asimetría se discute en cap 02-04 §10 y queda fechada como deuda F05-07.
 
 ### Atractores, repulsores, bifurcaciones
 
@@ -7703,9 +7709,9 @@ La tesis queda demostrada cuando se cumplen siete condiciones simultáneas. Cada
 
 **Verificada en**: capítulo 02-04.
 
-**Producto**: cuatro registros articulados con vínculo asimétrico. Cada parámetro de L3 (ode_alpha, ode_beta, macro_coupling, forcing_scale, etc.) se traduce a variable de B medible.
+**Producto**: cuatro registros articulados con vínculo asimétrico. Cada parámetro de L3 (ode_alpha, ode_beta, macro_coupling, forcing_scale, etc.) admite correspondencia nominal con una variable de B con contraparte empírica.
 
-**Test de fallo**: si algún parámetro no se traduce a B, hay formalismo desanclado. **Verificación sostenida** en los 5 casos strong: todos los parámetros corresponden a magnitudes físicas, biológicas o socioeconómicas con contraparte empírica.
+**Test de fallo**: si algún parámetro no se traduce a B, hay formalismo desanclado. **Verificación sostenida en sentido pragmático; deuda metodológica declarada para verificación ontológica fuerte (cap 03-04 §Patología 3)**. La verificación actual establece **correspondencia nominal con magnitudes empíricas, no medición independiente de cada parámetro fuera del ajuste**: en los 5 casos strong, ode_alpha/ode_beta y demás parámetros L3 se calibran sobre los mismos datos que los validan, por lo que el dossier sostiene una traducción nominal motivada en B pero no una medición externa al ajuste. La elevación a "verificación sostenida fuerte" requiere medición independiente vía intervención experimental sobre cada parámetro (no calibración sobre el mismo split), conforme al criterio (iii) de la Patología 3 del cap 03-04. `[BORRADOR-IA — pendiente firma H-J3: decisión sobre estatus ontológica/epistemológica/procedimental de la asimetría L1↔B↔L3↔S]`
 
 ### Condición 5. Cartografía multidominio con dossier completo
 
@@ -7834,6 +7840,8 @@ Hallazgos del triage de bitácora huérfana del modo continuo (`Bitacora/2026-05
 - **[AU-6 2026-05-11]** La nota de la fila "Sondas inter-paradigma sobre arrays primarios reales" reporta "1/7 converge bajo |ΔEDI|≤0.10". Triage detecta que el denominador 7 mezcla 2 casos con arrays reales y 5 casos con arrays reconstruidos. La proporción honesta debe declararse como 1/2 reales y 0/5 reconstruidos, no como 1/7 agregado. Acción: ajustar la nota para descomponer la proporción y reflejar la diferencia en LoE de las fuentes; nota paralela en `06-cierre/_extendido/versiones-cortas-defensa.md`. Cartwright 1999 queda DUDOSO (PDF ausente en `07-bibliografia/`). Origen: `Bitacora/2026-05-04-continuous-run/AU-6-multisonda-1-de-7.md`.
 - **[AU-9 2026-05-11]** El conteo de "casos null" colapsa tres regímenes operativamente distintos: (i) 5 nulls genuinos (EDI ≈ 0 con p > 0.05), (ii) 1 caso con EDI fuertemente negativo (degradación con acoplamiento), (iii) 2 casos rechazados por gate de criterios C1-C5 antes del cómputo de EDI. La cifra adversarial "-0.876" estaba mal atribuida. Acción: subdividir la tabla de null en tres filas con cuenta por régimen; paralela en `06-cierre/_extendido/versiones-cortas-defensa.md` y `05-aplicaciones/07-mapa-aplicaciones-corpus.md`. Origen: `Bitacora/2026-05-04-continuous-run/AU-9-edi-negativo-no-es-null.md`.
 - **[F06-03 2026-05-11]** El conteo "4 strong" es **invariante** a la rejilla de umbrales 0.05-0.15 × 0.20-0.40 según `THRESHOLD_SENSITIVITY_REPORT.md`, pero el manuscrito no lo declara junto a la primera mención (líneas 5 y 55 del propio capítulo). Acción: edición mínima añadiendo el paréntesis de sensibilidad junto a la primera mención del numeral "4 strong", para anticipar la objeción de *threshold shopping* sin extender la prosa. Origen: `Bitacora/2026-05-04-continuous-run/F06-03-4-strong-threshold-shopping.md`.
+- **[ADV-2026-05-16]** Deuda nueva: engagement con Yablo 1998-2014 (*Aboutness*) y Ladyman-Ross 2007 cap 4-5 (PNC) — `Bitacora/2026-05-16-adversarial-irrealismo-operativo/`. El red-team identifica que cap 04-04 §1 menciona Ladyman-Ross solo defensivamente (sin argumento sustantivo de diferencia metafísica con OSR) y no enfrenta a Yablo (ficcionalismo materialista). Acción: redactar respuesta dura en cap 04-04 §1 (Yablo) y §1 (Ladyman-Ross con PNC) o ceder explícitamente reposicionando como "OSR operativizado + protocolo de admisión EDI". Pendiente firma H-J5/H-J6.
+- **[AU-PROCES-2026-05-16]** Condición 4 reformulada — pendiente medición independiente de parámetros L3 ode_alpha/ode_beta vía intervención experimental. Origen: `Bitacora/2026-05-16-process-verifier-hilo-narrativo/audit.md` (BROKEN_STEP iter 1). La verificación actual de la asimetría L1↔B↔L3↔S es correspondencia nominal con magnitudes empíricas, no medición externa al ajuste; los parámetros se calibran sobre los mismos datos que validan, lo que satisface la Patología 3 cap 03-04 solo en sentido pragmático. Elevación a verificación ontológica fuerte requiere protocolo de intervención discriminante por parámetro (criterio (iii) Patología 3). Pendiente firma H-J3.
 
 ### 4.2. Deuda residual técnica del aparato (integración 2026-05-11)
 
@@ -7917,7 +7925,7 @@ Demuestra que el aparato **discrimina** y **detecta cierre operativo** en cartog
 
 ### 5.5. Aporte filosófico de fondo
 
-Establece el **irrealismo operativo** como tercera vía: ni cosa, ni ficción, sino patrón cuya admisión requiere intervención empírica controlada. La distinción entre κ-pragmática y κ-ontológica (véase capítulo 1) es crítica: el manuscrito demuestra κ-pragmática con rigor; la afirmación κ-ontológica fuerte requiere convergencia bajo múltiples sondas y validación inter-grupo.
+Establece el **irrealismo operativo** como **operativización del realismo de patrones dennetteano (Dennett 1991) con protocolo de admisión refutable** (dossier de 14 componentes, protocolo C1-C5, métrica EDI por intervención ablativa, gate hostile-tested). El aporte original no es la posición ontológica (compartida con Dennett 1991) sino el aparato de admisión que la operacionaliza públicamente. *(BORRADOR-IA pendiente firma H-J5 — reformulación tras red-team adversarial 2026-05-16; ver `Bitacora/2026-05-16-adversarial-irrealismo-operativo/red-team.md`.)* La distinción entre κ-pragmática y κ-ontológica (véase capítulo 1) es crítica: el manuscrito demuestra κ-pragmática con rigor; la afirmación κ-ontológica fuerte requiere convergencia bajo múltiples sondas y validación inter-grupo.
 
 ## 6. Lo que la tesis afirma con compromiso público
 

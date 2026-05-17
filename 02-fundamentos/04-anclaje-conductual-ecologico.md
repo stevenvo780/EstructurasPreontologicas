@@ -31,6 +31,8 @@ S  — semántica revisada                   : recoge las categorías que sobrev
 
 La conducta humana (caso ancla Warren 2006, caso 30) es **una instancia entre muchas** de B, no su definición exclusiva. La primera iteración del manuscrito etiquetaba B como "conductual-biológico" porque el caso ancla era de behavioral dynamics; la versión multiescalar reconoce que B es **acoplamiento empírico genérico** y la subetiqueta "conductual" aplica solo a casos donde el agente es organismo en tarea conductual.
 
+> **Nota sobre la columna "atractor" (aclaración terminológica 2026-05-16).** Los atractores listados en la Tabla 2.4.1 deben leerse bajo la distinción de cap 02-01 §0.3: para escalas con intervención experimental independiente del ajuste (casos 30, 31, 34, 35-37) la columna remite a **atractores en sentido κ-ontológica** (cuenca medida con manipulación); para escalas no experimentales o donde la cuenca se infiere de datos observacionales (casos 33, 39, 40) la columna remite a **atractores en sentido κ-pragmática** (cuenca observacional, sin manipulación independiente). La tabla no reescribe esta distinción — solo la reactiva como ancla cruzada al §0.3 del cap 02-01.
+
 Lo que el borrador llamaba L2 se reparte entre B (donde están las cinco familias de variables descritas en §2) y los tramos específicos de la escala (neurobiología en escala individual, electroquímica en escala celular, hidrodinámica en escala astrofísica, etc.) cuando hagan falta para una pregunta concreta.
 
 ## 2. Qué incluye B

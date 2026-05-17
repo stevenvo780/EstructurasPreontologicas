@@ -10,7 +10,7 @@ Una entidad **viva** es un **atractor autopoiético materialmente sostenido** qu
 
 1. **cierre operacional**: el sistema produce los componentes que lo constituyen (Maturana-Varela 1980, *Autopoiesis and Cognition*, p. 79);
 2. **acoplamiento estructural**: mantiene su organización bajo perturbación del entorno con tolerancia identificable (cap 02-04 §3);
-3. **metabolismo material**: intercambia materia y energía con el entorno preservando su forma (Schrödinger 1944, p. 76: la vida se mantiene "negentropía");
+3. **metabolismo material**: intercambia materia y energía con el entorno preservando su forma (Schrödinger 1944, *What Is Life?*, cap. 6, secc. "IT FEEDS ON 'NEGATIVE ENTROPY'": *"What an organism feeds upon is negative entropy"* — p. 76 ed. CUP original no verificable en PDF disponible localmente; texto confirmado en 07-bibliografia/Schrödinger - What Is Life (1944).pdf);
 4. **reproducción** (en sentido amplio: replicación, división, transmisión de información estructural): el patrón se transmite a nuevos sustratos;
 5. **historia evolutiva**: la organización tiene origen en linajes con descendencia con modificación.
 

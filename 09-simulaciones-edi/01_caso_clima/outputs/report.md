@@ -1,24 +1,21 @@
 # Reporte de Validación — Clima Regional (CONUS)
 
-- generated_at: 2026-02-16T01:28:57.061697Z
+- generated_at: 2026-05-17T04:34:27.278935Z
 
 ## Fase synthetic
 - **overall_pass**: False
 
 ### EDI
-- valor: 0.0089
-- bootstrap_mean: 0.0089
-- CI 95%: [0.0084, 0.0095]
-- weighted_value (LoE factor 1.00): 0.0089
+- valor: 0.0689
+- bootstrap_mean: 0.0692
+- CI 95%: [0.0626, 0.0760]
+- weighted_value (LoE factor 1.00): 0.0689
 - válido (0.30-0.90): False
-- detrended_edi: 0.0089
-- trend_ratio: 1.000
-- trend_r2: 0.984
 
 ### Symploké y CR
-- internal: 1.0000
-- external: 0.9999
-- CR: 1.0000
+- internal: 0.9998
+- external: 0.9699
+- CR: 1.0309
 - CR indicador (>2.0 = frontera nítida): False
 
 ### Criterios C1-C5
@@ -29,72 +26,69 @@
 - c5_uncertainty: True
 
 ### Errores
-- rmse_abm: 3.9541
-- rmse_abm_no_ode: 3.9895
-- rmse_ode: 2.9654
-- rmse_reduced: 7.0524
-- threshold: 2.7786
+- rmse_abm: 1.5248
+- rmse_abm_no_ode: 1.6377
+- rmse_ode: 1.6466
+- rmse_reduced: 1.9038
+- threshold: 1.0649
 
 ### Calibración
-- forcing_scale: 0.8668
-- macro_coupling: 0.2593
-- ode_coupling_strength: 0.2074
+- forcing_scale: 0.9900
+- macro_coupling: 0.3456
+- ode_coupling_strength: 0.2765
 - abm_feedback_gamma: 0.0500
-- damping: 0.8515
-- ode_alpha: 0.1600
+- damping: 0.6579
+- ode_alpha: 0.1977
 - ode_beta: 1.0000
 - assimilation_strength: 0.0000
-- calibration_rmse: 0.1864
+- calibration_rmse: 0.8022
 - ode_rolling: None
 
 ### Interpretación
-**Nivel 1 — Tendencia no confirmada.** Se detecta EDI positivo pero sin significancia estadística. El fenómeno no muestra cierre operativo verificable.
+**Nivel 2 — Cierre operativo suggestive.** La constricción macro es detectable pero no alcanza robustez suficiente para cierre operativo fuerte. El fenómeno muestra grados parciales de organización macro→micro.
 
 ## Fase real
 - **overall_pass**: False
 
 ### EDI
-- valor: 0.0111
-- bootstrap_mean: 0.0113
-- CI 95%: [-0.0033, 0.0284]
-- weighted_value (LoE factor 1.00): 0.0111
+- valor: -0.0007
+- bootstrap_mean: -0.0006
+- CI 95%: [-0.0044, 0.0033]
+- weighted_value (LoE factor 1.00): -0.0007
 - válido (0.30-0.90): False
-- detrended_edi: 0.0111
-- trend_ratio: 1.000
-- trend_r2: 0.525
 
 ### Symploké y CR
-- internal: 1.0000
-- external: 0.9948
-- CR: 1.0052
+- internal: 0.9999
+- external: 0.9999
+- CR: 1.0001
 - CR indicador (>2.0 = frontera nítida): False
 
 ### Criterios C1-C5
-- c1_convergence: True
+- c1_convergence: False
 - c2_robustness: True
 - c3_replication: True
 - c4_validity: True
 - c5_uncertainty: True
 
 ### Errores
-- rmse_abm: 0.8629
-- rmse_abm_no_ode: 0.8725
-- rmse_ode: 0.8646
-- rmse_reduced: 2.4944
-- threshold: 1.1902
+- rmse_abm: 0.9274
+- rmse_abm_no_ode: 0.9268
+- rmse_ode: 0.9302
+- rmse_reduced: 1.4942
+- threshold: 0.9458
 
 ### Calibración
-- forcing_scale: 0.1814
-- macro_coupling: 0.1452
-- ode_coupling_strength: 0.1161
+- forcing_scale: 0.2703
+- macro_coupling: 0.1148
+- ode_coupling_strength: 0.0919
 - abm_feedback_gamma: 0.0500
-- damping: 0.1082
-- ode_alpha: 0.4014
+- damping: 0.1676
+- ode_alpha: 0.1465
 - ode_beta: 1.0000
 - assimilation_strength: 0.0000
-- calibration_rmse: 0.7386
+- calibration_rmse: 0.9348
 - ode_rolling: None
 
 ### Interpretación
-**Nivel 1 — Tendencia no confirmada.** Se detecta EDI positivo pero sin significancia estadística. El fenómeno no muestra cierre operativo verificable.
+**Nivel 0 — Sin cierre operativo.** No se detecta constricción macro→micro significativa con los datos y parámetros actuales.
 

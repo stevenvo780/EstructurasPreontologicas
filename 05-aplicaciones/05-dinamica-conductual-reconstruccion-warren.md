@@ -187,6 +187,8 @@ Fajen y Warren (2003) modelaron la dirección de marcha humana caminando hacia m
 
 con `b = 3.25`, `k_g = 7.50`, `c1 = 0.40`, `c2 = 0.40`, `k_o = 198.0`, `c3 = 6.5`, `c4 = 0.8`. Las simulaciones reproducen 0.980 de la varianza de los caminos humanos para meta sola y 0.975 para meta con obstáculo.
 
+> **Aclaración terminológica 2026-05-16.** El r² = 0.980 / 0.975 reportado aquí es **ajuste paramétrico Fajen-Warren sobre datos VENLab** (sondas dinámicas con parámetros fijos sobre series promediadas intra-sesión), no es EDI. El EDI = 0.262 (weak) del caso 30 del corpus se calcula sobre datos sintéticos calibrados bajo protocolo C1-C5 con ablación interna del término ODE→ABM en régimen poblacional inter-sujeto. Son **métricas complementarias, no comparables directamente**: el r² mide reproducción intra-muestra de la dinámica conductual; el EDI mide cierre operativo bajo permutación + bootstrap + las 4 pruebas del Paso 6 de cap 03-04. La asimetría se discute en cap 02-04 §10 y queda fechada como deuda F05-07.
+
 ### Atractores, repulsores, bifurcaciones
 
 - la dirección de la meta `ψ_g` actúa como atractor del heading;

@@ -9,12 +9,17 @@
     {
       "id": "lakatos1978",
       "status": "local_pdf_verified",
-      "authors": ["Lakatos, Imre"],
+      "authors": [
+        "Lakatos, Imre"
+      ],
       "title": "The Methodology of Scientific Research Programmes",
       "year": 1978,
       "type": "book",
       "publisher": "Cambridge University Press",
-      "editors": ["Worrall, John", "Currie, Gregory"],
+      "editors": [
+        "Worrall, John",
+        "Currie, Gregory"
+      ],
       "doi": "10.1017/CBO9780511694051",
       "isbn": "9780521280310",
       "local_path": "07-bibliografia/Lakatos - Methodology of Scientific Research Programmes (1978).pdf",
@@ -30,7 +35,9 @@
     {
       "id": "bunge1967_vol2_3_4",
       "status": "local_pdf_partial",
-      "authors": ["Bunge, Mario"],
+      "authors": [
+        "Bunge, Mario"
+      ],
       "title": "La Investigación Científica. Su estrategia y su filosofía",
       "year": 1967,
       "type": "book",
@@ -50,7 +57,9 @@
     {
       "id": "mitchell2003",
       "status": "found_metadata",
-      "authors": ["Mitchell, Sandra D."],
+      "authors": [
+        "Mitchell, Sandra D."
+      ],
       "title": "Biological Complexity and Integrative Pluralism",
       "year": 2003,
       "type": "book",
@@ -69,7 +78,9 @@
     {
       "id": "chalmers1996",
       "status": "found_metadata",
-      "authors": ["Chalmers, David J."],
+      "authors": [
+        "Chalmers, David J."
+      ],
       "title": "The Conscious Mind: In Search of a Fundamental Theory",
       "year": 1996,
       "type": "book",
@@ -86,7 +97,9 @@
     {
       "id": "tononi2008",
       "status": "found_metadata",
-      "authors": ["Tononi, Giulio"],
+      "authors": [
+        "Tononi, Giulio"
+      ],
       "title": "Consciousness as Integrated Information: A Provisional Manifesto",
       "year": 2008,
       "type": "journal_article",
@@ -106,7 +119,11 @@
     {
       "id": "oizumi2014",
       "status": "found_pdf",
-      "authors": ["Oizumi, Masafumi", "Albantakis, Larissa", "Tononi, Giulio"],
+      "authors": [
+        "Oizumi, Masafumi",
+        "Albantakis, Larissa",
+        "Tononi, Giulio"
+      ],
       "title": "From the Phenomenology to the Mechanisms of Consciousness: Integrated Information Theory 3.0",
       "year": 2014,
       "type": "journal_article",
@@ -127,7 +144,9 @@
     {
       "id": "thompson2007",
       "status": "found_metadata",
-      "authors": ["Thompson, Evan"],
+      "authors": [
+        "Thompson, Evan"
+      ],
       "title": "Mind in Life: Biology, Phenomenology, and the Sciences of Mind",
       "year": 2007,
       "type": "book",
@@ -144,7 +163,9 @@
     {
       "id": "ostrom1990",
       "status": "found_metadata",
-      "authors": ["Ostrom, Elinor"],
+      "authors": [
+        "Ostrom, Elinor"
+      ],
       "title": "Governing the Commons: The Evolution of Institutions for Collective Action",
       "year": 1990,
       "type": "book",
@@ -162,7 +183,9 @@
     {
       "id": "williamson1985",
       "status": "found_metadata",
-      "authors": ["Williamson, Oliver E."],
+      "authors": [
+        "Williamson, Oliver E."
+      ],
       "title": "The Economic Institutions of Capitalism: Firms, Markets, Relational Contracting",
       "year": 1985,
       "type": "book",
@@ -179,7 +202,9 @@
     {
       "id": "strawson1959",
       "status": "found_metadata",
-      "authors": ["Strawson, P. F."],
+      "authors": [
+        "Strawson, P. F."
+      ],
       "title": "Individuals: An Essay in Descriptive Metaphysics",
       "year": 1959,
       "type": "book",
@@ -196,7 +221,9 @@
     {
       "id": "searle1964",
       "status": "found_metadata",
-      "authors": ["Searle, John R."],
+      "authors": [
+        "Searle, John R."
+      ],
       "title": "How to Derive 'Ought' from 'Is'",
       "year": 1964,
       "type": "journal_article",
@@ -217,7 +244,9 @@
     {
       "id": "goff2017",
       "status": "found_metadata",
-      "authors": ["Goff, Philip"],
+      "authors": [
+        "Goff, Philip"
+      ],
       "title": "Consciousness and Fundamental Reality",
       "year": 2017,
       "type": "book",
@@ -235,7 +264,9 @@
     {
       "id": "wallace2012",
       "status": "found_metadata",
-      "authors": ["Wallace, David"],
+      "authors": [
+        "Wallace, David"
+      ],
       "title": "The Emergent Multiverse: Quantum Theory according to the Everett Interpretation",
       "year": 2012,
       "type": "book",
@@ -253,7 +284,10 @@
     {
       "id": "wasserstein2016",
       "status": "found_pdf",
-      "authors": ["Wasserstein, Ronald L.", "Lazar, Nicole A."],
+      "authors": [
+        "Wasserstein, Ronald L.",
+        "Lazar, Nicole A."
+      ],
       "title": "The ASA's Statement on p-Values: Context, Process, and Purpose",
       "year": 2016,
       "type": "journal_article",
@@ -273,7 +307,9 @@
     {
       "id": "ioannidis2005",
       "status": "found_pdf",
-      "authors": ["Ioannidis, John P. A."],
+      "authors": [
+        "Ioannidis, John P. A."
+      ],
       "title": "Why Most Published Research Findings Are False",
       "year": 2005,
       "type": "journal_article",
@@ -290,6 +326,39 @@
       "download_date": "2026-05-11",
       "download_source": "https://journals.plos.org/plosmedicine/article/file?id=10.1371/journal.pmed.0020124&type=printable",
       "thesis_relevance": "Afecta F05-10: sesgo de publicación y criterios de reproducibilidad, apoyo empírico para el protocolo de verificación EDI"
+    },
+    {
+      "id": "schrodinger1944",
+      "status": "local_pdf_no_original_pagination",
+      "authors": [
+        "Schrödinger, Erwin"
+      ],
+      "title": "What Is Life? The Physical Aspect of the Living Cell",
+      "year": 1944,
+      "type": "book",
+      "publisher": "Cambridge University Press",
+      "location": "Cambridge",
+      "based_on_lectures": "Trinity College Dublin, February 1943",
+      "public_domain": true,
+      "open_access": true,
+      "local_path": "07-bibliografia/Schrödinger - What Is Life (1944).pdf",
+      "local_pdf_pages": 32,
+      "local_pdf_edition": "Digital reprint (social-ecology.org), 32-page reformat — does NOT carry original CUP pagination",
+      "download_date": "2026-05-16",
+      "download_source": "https://www.social-ecology.org/wp/wp-content/uploads/2022/08/schrodinger_whatislife.pdf",
+      "license": "Public domain (1944, >70 years)",
+      "archive_org_urls": [
+        "https://archive.org/details/ErwinSchrodingerWhatIsLife1944",
+        "https://archive.org/details/schrodinger-what-is-life-1944"
+      ],
+      "verbatim_text_verified": {
+        "location": "Chapter 6, section 'IT FEEDS ON NEGATIVE ENTROPY'",
+        "text": "What an organism feeds upon is negative entropy.",
+        "also_verified": "We said before: 'It feeds upon negative entropy', attracting, as it were, a stream of negative entropy upon itself, to compensate the entropy increase it produces by living and thus to maintain itself on a stationary and fairly low entropy level.",
+        "method": "pdftotext extraction, 2026-05-16"
+      },
+      "pagination_note": "Citation 'p. 76' refers to Cambridge University Press original edition. Not verifiable from available 32-page digital reprint. The section 'IT FEEDS ON NEGATIVE ENTROPY' falls in PDF segment 24-25 of the reprint. Original CUP edition has ~91 pages; p. 76 is plausible but not locally confirmed.",
+      "thesis_relevance": "Fundamento para 05-aplicaciones/02-biologia-y-ecologia.md §0.1 cond. 3: metabolismo como intercambio de entropía negativa — negentropía como propiedad termodinámica de sistemas vivos"
     }
   ]
 }

@@ -70,7 +70,7 @@ Se prefieren formas funcionales con motivación física o ecológica (por ejempl
 
 ### Paso 6. Validar empíricamente
 
-Cuatro pruebas, todas necesarias:
+Cuatro pruebas, todas necesarias (aclaración terminológica 2026-05-16: las 4 pruebas de este paso **extienden** los 3 criterios de legitimidad de κ enunciados en cap 03-01 §6.3 —reproducción, topología, intervención— añadiendo un **cuarto criterio de generalización inter-condición** que el aparato formal no exigía como requisito de admisión. La justificación operativa de esta extensión queda en el propio Paso 6 y en cap 06-01 §4.2 [TENG-10]: sin generalización a condiciones no usadas para ajuste, la reproducción intra-muestra es vulnerable a sobreajuste paramétrico y por tanto insuficiente como evidencia de cierre operativo):
 
 1. **Reproducción**: ¿el sistema reducido reproduce las trayectorias medias observadas con error dentro de la tolerancia? Métrica habitual: proporción de varianza explicada en condiciones similares a las del entrenamiento.
 2. **Generalización**: ¿predice trayectorias en condiciones no usadas para ajuste (otras condiciones iniciales, otros parámetros de tarea)?
