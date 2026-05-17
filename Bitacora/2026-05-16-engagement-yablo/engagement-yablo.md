@@ -1,49 +1,68 @@
-# Engagement con Yablo (1998–2014) — DRAFT-IA
+# Engagement con Yablo (1998) — DRAFT-IA
 
 **Naturaleza del aporte:** ~90% asistencia, 10% Jacob (validación final pendiente).
 **Requires:** H-J* (decisión filosófica de Jacob sobre R1/R2/R3).
-**Verificación:** SIN-PDF. `ls 07-bibliografia/ | grep -i yablo` → 0 resultados. No hay PDF de Yablo en la biblioteca local; tampoco hay PDFs de *Aboutness* (2014), *Things* (2010), "Does Ontology Rest on a Mistake?" (1998) ni "How in the World?" (1996). **Este engagement es secundario**: reconstruye la posición de Yablo a partir de su recepción consensual en metaontología contemporánea (Eklund, Thomasson, Sider) y de la lectura disponible del propio Chalmers, "Ontological Anti-Realism" (PDF presente en `07-bibliografia/`), que glosa la posición ficcionalista de Yablo. **No se ofrecen citas verbatim de Yablo con paginación**: hacerlo sin PDF abierto sería inventarlo. Donde el argumento de Yablo se reproduce, se reproduce parafraseado y marcado como tal.
+**Verificación (iter 5, 2026-05-16):** PDF abierto. `07-bibliografia/Yablo - Does Ontology Rest on a Mistake (1998).pdf` (149 KB, MIT om.pdf). Paginación verificada contra texto extraído por `pdftotext -layout`. Las citas de §1, §2, §3, §4 originales se reescriben con verbatim paginado de Yablo 1998. *Aboutness* (2014) sigue sin PDF local — toda referencia a "literal vs. subject-matter" se restringe ahora al desarrollo de literal/metafórico ya presente en Yablo 1998.
 
 ---
 
 ## §1 — La objeción ficcionalista contra el irrealismo operativo
 
-Yablo (1998, "Does Ontology Rest on a Mistake?") sostiene —según la recepción estándar— que el discurso ontológico ordinario funciona en modo *make-believe*: las oraciones existenciales ("hay números", "hay patrones") son literalmente falsas pero pragmáticamente indispensables; lo que sostienen no es lo que presuponen. En *Aboutness* (2014) refina la distinción: el contenido literal de una oración (lo que afirma) se separa del contenido subject-matter (sobre qué versa). Aplicada a la tesis, la objeción es:
+Yablo (1998) ataca el programa quineano de ontología vía Carnap revisado: la distinción interno/externo se rescata como caso especial de la distinción entre lo dicho dentro de juegos de make-believe y lo dicho fuera de ellos. Su tesis central, en sus propias palabras:
 
-> "La tesis llama 'real bajo intervención EDI' a lo que es un artefacto representacional sofisticado del aparato. El patrón pre-ontológico no es descubierto; es presupuesto por el modelo dinámico y luego *verificado* por una métrica diseñada para detectar exactamente esa presuposición. Cambia 'EDI > umbral' por 'la ficción coopera con la intervención simulada' y se preserva todo el contenido empírico. La diferencia entre tu posición y el ficcionalismo es la etiqueta."
+> "the distinction between statements made within make-believe games and those made without them—or, rather, a special case of it with some claim to be called the metaphorical/literal distinction." (Yablo 1998, p. 232)
 
-Esta es la **versión fuerte** que un comité hostil leería en Yablo: no que la tesis sea instrumentalismo de van Fraassen, sino que el "compromiso estructural moderado" del cap 02-01 §0.3 es ficción cuasi-comprometida (quasi-committed fiction) re-bautizada.
+La consecuencia para Quine — y por tanto para todo programa que infiera compromiso ontológico de lo que la "mejor teoría" cuantifica — es directa:
+
+> "To determine our commitments, we need to be able to ferret out all traces of non-literality in our assertions. If there is no feasible project of doing that, then there is no feasible project of Quinean ontology." (Yablo 1998, p. 233)
+
+Aplicada a la tesis: cuando se declara "el patrón pre-ontológico del caso 16 es real bajo cierre operativo EDI=0.602", Yablo preguntaría si esa afirmación pertenece al juego (a la práctica disciplinada de modelar dinámicas acopladas con métricas de ablación) o si pretende fijar un compromiso literal sobre lo que existe independientemente del juego. Su diagnóstico —si fuera consistente con su crítica a Quine— sería: no hay procedimiento para separar literal de metafórico aquí, y por tanto el programa ontológico recae sobre una distinción que no puede demarcar.
 
 ## §2 — La distinción que Yablo fuerza a explicitar
 
-Yablo distingue (según *Aboutness* en lectura estándar) entre:
+Yablo no propone "literal vs. presupuesto" (esa formulación pertenece a *Aboutness* 2014, no a 1998). En 1998 lo que ofrece es **literal vs. metafórico** asentado sobre la teoría make-believe de Walton. El núcleo es:
 
-- **Contenido literal** — lo que la oración afirma estrictamente, evaluable como verdadero/falso.
-- **Contenido presupuesto / real subject-matter** — sobre qué versa la oración, lo que sobrevive a la suspensión del compromiso literal.
+> "A metaphor on this view is an utterance that represents its objects as being like so: the way that they need to be to make the utterance pretence-worthy in a game that it itself suggests. The game is played not for its own sake but to make clear which game-independent properties are being attributed." (Yablo 1998, p. 247)
 
-Pregunta para la tesis: cuando se afirma "el patrón pre-ontológico del caso 16 deforestación es real bajo cierre operativo (EDI=0.602, C1–C5 satisfechos)", ¿esa oración hace una afirmación literal sobre el mundo, o presupone una ontología de patrones cuya función es organizar el discurso predictivo sin compromiso literal?
+Y la consecuencia anti-realista que el comité hostil leería contra la tesis:
 
-La tesis actual (cap 04-04 §1) responde implícitamente: la distinción κ-pragmática / κ-ontológica **es exactamente este corte**. κ-pragmática = compromiso suspendible bajo el aparato; κ-ontológica = compromiso que sobrevive a los tres criterios externos. Yablo aceptaría la primera mitad y diría: nunca llegarás a la segunda, porque ningún criterio operativo trasciende el aparato que lo formula.
+> "It is only by making as if to countenance numbers that one can give expression in English to a fact having nothing to do with numbers, a fact about stars and planets and how they are numerically proportioned." (Yablo 1998, p. 251)
+
+Trasladado: la tesis "el patrón pre-ontológico co-determina la dinámica" puede ser un make-as-if útil para articular hechos sobre acoplamientos sin que haya patrones-objeto. La métrica EDI funcionaría como prop del juego, no como evidencia de un compromiso literal. La distinción κ-pragmática / κ-ontológica del manuscrito (cap 04-04 §1) **no mapea directamente** al literal/metafórico de Yablo 1998: κ-pragmática se acerca a "metáfora útil disciplinada", pero κ-ontológica presupone que un criterio externo puede zanjar lo que Yablo declara indecidible:
+
+> "the more controversial of these claims are equipoised between literal and metaphorical in a way that Quine's method is powerless to address." (Yablo 1998, p. 259)
 
 ## §3 — Tres respuestas candidatas (con costo)
 
-**R1 — Concesión amplia.** La tesis admite que su posición vigente *es* ficcionalismo cuasi-comprometido en el sentido de Yablo, y reclama solo dos diferencias: (a) la métrica EDI hace la ficción *públicamente discriminante* (ficciones rivales producen EDI distintos sobre los mismos datos); (b) el horizonte regulativo κ-ontológica es no-trivial porque los tres criterios externos son formulables y refutables. **Costo:** la tesis se inscribe en la familia ficcionalista; pierde el derecho a presentarse como "irrealismo operativo *sui generis*". Gana coherencia metaontológica.
+**R1 — Concesión amplia.** La tesis admite que su posición vigente *es* ficcionalismo cuasi-comprometido en el sentido de Yablo 1998, y reclama solo dos diferencias: (a) la métrica EDI hace la ficción *públicamente discriminante* (ficciones rivales producen EDI distintos sobre los mismos datos); (b) el horizonte regulativo κ-ontológica es no-trivial porque los tres criterios externos son formulables y refutables. **Costo:** la tesis se inscribe en la familia ficcionalista; pierde el derecho a presentarse como "irrealismo operativo *sui generis*". Gana coherencia metaontológica.
 
-**R2 — Diferenciación por intervención.** La tesis se separa de Yablo apelando a Woodward (2003) + Hacking (1983): la intervención manipulada no es presupuesta por la ficción, la rompe. Si el patrón fuera puro contenido presupuesto, la intervención no produciría efectos discriminantes; produce efectos discriminantes → hay algo más que presuposición. **Costo:** Yablo replica que la "intervención" misma es descrita dentro del aparato simulado (en los casos EDI, la intervención es ablación de acoplamiento en el sistema de ODEs, no manipulación de un sistema natural). El argumento sobrevive solo para los casos con datos empíricos reales (subset del corpus), no para los casos sintético-dinámicos. La tesis debería declarar qué casos pasan este filtro.
+**R2 — Diferenciación por intervención.** La tesis se separa de Yablo apelando a Woodward (2003) + Hacking (1983): la intervención manipulada no es prop del juego, lo rompe. Si el patrón fuera "prop", la ablación no produciría efectos discriminantes consistentes a través de seeds y replicaciones. **Costo:** Yablo replicaría que la intervención EDI es ablación dentro del sistema simulado de ODEs, no manipulación de un sistema natural. El argumento sobrevive solo para casos con datos empíricos reales (subset del corpus). La tesis debe declarar qué casos pasan este filtro.
 
-**R3 — Disenso fuerte.** La tesis rechaza la dicotomía literal/presupuesto de Yablo y sostiene que en sistemas dinámicos no-lineales acoplados, la distinción colapsa porque el patrón emergente *es* su comportamiento bajo perturbación. No hay un "literal" separable del "operativo". **Costo:** posición filosóficamente cara; requiere defender una metafísica de patrones dinámicos (cercana a Dennett 1991 "Real Patterns" + Ladyman-Ross fuerte) que la tesis ha rechazado explícitamente en cap 04-04 §1. R3 contradice el glosario.
+**R3 — Disenso fuerte.** Rechazar la dicotomía literal/metafórico en dinámicas no-lineales acopladas. **Costo:** requiere defender una metafísica de patrones dinámicos (Dennett 1991 + Ladyman-Ross fuerte) que la tesis ha rechazado en cap 04-04 §1. R3 contradice el glosario.
 
 ## §4 — Concesión honesta
 
-Lo que la tesis **no puede negar** sin mala fe: si se retira la métrica EDI y los tres criterios externos, lo que queda del "irrealismo operativo" es indistinguible del ficcionalismo de Yablo. La diferencia es enteramente cargada por el aparato empírico y por la apuesta regulativa (no realizada) de κ-ontológica. La tesis no tiene un argumento *a priori* contra Yablo; tiene una **apuesta empírica** de que algún caso del corpus eventualmente satisfará criterios externos que ningún ficcionalismo coherente puede absorber sin volverse trivial.
+Lo que la tesis **no puede negar** sin mala fe: si se retira la métrica EDI y los tres criterios externos, lo que queda del "irrealismo operativo" es indistinguible del ficcionalismo de Yablo. La cita de p. 259 ("equipoised between literal and metaphorical... Quine's method is powerless to address") describe con precisión la situación de la mayoría de los casos del corpus EDI tomados aisladamente. La diferencia es enteramente cargada por el aparato empírico y por la apuesta regulativa (no realizada) de κ-ontológica. La tesis no tiene un argumento *a priori* contra Yablo; tiene una **apuesta empírica** de que el procedimiento de ablación + perturbación bajo C1–C5 instala una asimetría que la teoría make-believe no puede absorber sin que Yablo conceda lo que negó en p. 259.
 
-## §5 — Lo que este borrador NO resuelve
+## §5 — Verificación
 
-1. No hay cita verbatim de Yablo con paginación. Cerrar la deuda ADV-2026-05-16 requiere descargar al menos uno de: *Aboutness* (2014, Princeton UP) o "Does Ontology Rest on a Mistake?" (1998, *Proc. Arist. Soc. Suppl.* 72), abrir el PDF, y citar verbatim los pasajes sobre contenido literal vs. presupuesto y sobre fictionalism cuasi-comprometido.
-2. No hay decisión entre R1/R2/R3. Es decisión filosófica de Jacob.
-3. No se verificó si Chalmers, "Ontological Anti-Realism" (PDF presente en `07-bibliografia/Chalmers - Ontological Anti Realism.pdf`) ofrece glosa paginable de Yablo utilizable como cita secundaria explícita; ese sub-engagement queda pendiente.
-4. R2 requiere auditar el corpus EDI distinguiendo casos con datos empíricos reales vs. sintético-dinámicos. Esa partición no está hecha en el manuscrito actual.
+| # | Cita | Página verificada (PDF) | Estado |
+|---|------|------------------------|--------|
+| 1 | "the distinction between statements made within make-believe games..." | p. 232 | verbatim, verificado |
+| 2 | "To determine our commitments, we need to be able to ferret out..." | p. 233 | verbatim, verificado |
+| 3 | "A metaphor on this view is an utterance that represents its objects..." | p. 247 | verbatim, verificado |
+| 4 | "It is only by making as if to countenance numbers..." | p. 251 | verbatim, verificado |
+| 5 | "the more controversial of these claims are equipoised..." | p. 259 | verbatim, verificado |
+
+**Cita secundaria evitada:** la versión iter-3 atribuía a Yablo una distinción "contenido literal vs. contenido subject-matter / presupuesto" propia de *Aboutness* (2014). El PDF disponible es solo Yablo 1998; esa formulación se retira y se sustituye por literal/metafórico verbatim. La afinidad con κ-pragmática/κ-ontológica se reformula como **parcial**, no isomórfica.
+
+## §6 — Lo que este borrador NO resuelve
+
+1. *Aboutness* (2014) y *Things* (2010) siguen sin PDF en `07-bibliografia/`. La objeción "subject-matter / aboutness" más fina (post-1998) no está verificada; queda como deuda diferida.
+2. No hay decisión entre R1/R2/R3 — decisión filosófica de Jacob.
+3. R2 requiere auditar el corpus EDI distinguiendo casos con datos empíricos reales vs. sintético-dinámicos. Esa partición no está hecha en el manuscrito actual.
+4. La afirmación de que la ablación EDI "rompe el prop" (R2) no tiene aún formalización; es intuición operativa que requeriría defensa explícita contra Yablo p. 251.
 
 ---
 
-**Recomendación operativa para Jacob:** R2 con declaración explícita de su límite (solo válida para casos con intervención sobre datos reales) + R1 como concesión de fondo para el resto del corpus. Esto preserva la honestidad ya instalada en cap 04-04 §1 (κ-pragmática como estado actual) y evita R3, que contradice el glosario.
+**Recomendación operativa para Jacob (actualizada iter 5):** **R2 con declaración explícita de su límite + R1 como concesión de fondo.** La verificación verbatim **confirma** el diagnóstico previo: la fuerza de Yablo 1998 está en p. 259 ("equipoised... Quine's method is powerless"), y la única salida no-evasiva de la tesis es mostrar que la ablación EDI sobre datos empíricos reales instala una asimetría que la teoría make-believe no puede neutralizar sin trivializarse. Para el resto del corpus, R1 es honesta. R3 sigue descartada por contradicción con el glosario.

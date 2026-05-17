@@ -28,10 +28,10 @@ Mapa completo del paisaje de aplicaciones del marco como **ontología general mu
 
 | Nivel | Categoría | N | Casos |
 |:----:|-----------|:-:|-------|
-| 4 | Strong (`overall_pass=True`) | 4 | Energía, Deforestación, Kessler, Riesgo Biológico |
+| 4 | Strong (`overall_pass=True`) | 5 | Energía, Deforestación, Kessler, Riesgo Biológico, Urbanización (caso 18 promovido Weak→Strong iter 5 B-T2 con datos World Bank SP.URB.TOTL.IN.ZS reales 2026-05-16: EDI=0.3366, p_perm=0.0, CI=[0.331, 0.347], `overall_pass=True`) |
 | 4 | Strong sin gate completo | 1 | Microplásticos |
-| 3 | Weak | 6 | Postverdad, Urbanización, Fósforo, Wikipedia, Epidemiología, Behavioral Dynamics (caso 30) |
-| 2 | Suggestive | 1 | Finanzas (Salinización reclasificada por AU-4: CI cruza cero + magnitud trivial) |
+| 3 | Weak | 6 | Postverdad, Fósforo, Wikipedia, Epidemiología, Behavioral Dynamics (caso 30), Finanzas (caso 09 promovido Suggestive→Weak iter 5 B-T2 con yfinance SPY + FRED reales 2026-05-16: EDI=0.1027, p_perm=0.0, CI=[0.1006, 0.1052]; `overall_pass=False` por gate C1-C5 pero EDI>0.1 y CI estrictamente positivo) |
+| 2 | Suggestive | 0 | (Finanzas elevada a Weak iter 5 B-T2 2026-05-16; Salinización reclasificada por AU-4: CI cruza cero + magnitud trivial) |
 | 1 | Trend | 4 | Justicia, Fuga cerebros, Políticas (caso 13 reclasificado Weak→Trend tras re-ejecución con datos institucionales reales 2026-05-16, EDI=0.0821, p_perm=0.162), Movilidad (caso 11 confirmado Trend tras re-ejecución con datos TomTom reales 2026-05-16, EDI=0.0599, p_perm=0.922) |
 | 0a | Null genuino | 6 | Conciencia, Erosión, Acuíferos, IoT, Clima (caso 01 reclasificado Trend→Null tras re-ejecución con datos reales IPCC-calibrados 2026-05-16, EDI=-0.0007, p_perm=0.998), Contaminación (caso 03 reclasificado Weak→Null tras re-ejecución con datos World Bank PM2.5 reales 2026-05-16, EDI=-0.0109, p_perm=0.616) (`\|EDI\|<0.05` y `p_perm>0.05`) |
 | 0b | EDI negativo (sonda macro inadecuada) | 1 | Paradigmas (`EDI=-0.144`: ABM acoplado predice peor que reducido) |
@@ -82,8 +82,9 @@ Los 40 casos del corpus agregado **no son aplicaciones independientes**: cada un
 | 16 | Deforestación global | 0.5802 | 0.0000 | von Thünen | 4 | World Bank |
 | 20 | Síndrome de Kessler | 0.3527 | 0.0000 | Densidad orbital | 3 | CelesTrak |
 | 27 | Riesgo biológico (mortalidad) | 0.3326 | 0.0022 | Mortalidad | 3 | World Bank |
+| 18 | Urbanización global | 0.3366 | 0.0000 | Logística + atracción | 4 | World Bank (SP.URB.TOTL.IN.ZS) |
 
-Reproducibilidad: el caso 16 ha sido re-ejecutado con datos World Bank descargados en vivo (variabilidad estocástica <4%, mismo Nivel 4 strong). La trazabilidad detallada está en `Bitacora/`.
+Reproducibilidad: el caso 16 ha sido re-ejecutado con datos World Bank descargados en vivo (variabilidad estocástica <4%, mismo Nivel 4 strong). La trazabilidad detallada está en `Bitacora/`. **Caso 18 Urbanización promovido Weak→Strong iter 5 B-T2 2026-05-16** con datos World Bank `SP.URB.TOTL.IN.ZS` reales (`overall_pass=True`, `edi_valid=True`, CI=[0.331, 0.347]). Comando regenerador: `python3 09-simulaciones-edi/18_caso_urbanizacion/src/validate.py`.
 
 ### Bloque II — Strong sin gate completo (Nivel 4*)
 
@@ -105,10 +106,12 @@ Reproducibilidad: el caso 16 ha sido re-ejecutado con datos World Bank descargad
 |---|------|----:|--:|-------|
 | 30 | Behavioral Dynamics | 0.2622 | 0.0440 | behavioral_attractor (segundo orden) |
 | 14 | Postverdad (desinformación) | 0.2428 | 0.0000 | SIS contagion |
-| 18 | Urbanización | 0.2358 | 0.0000 | Logística + atracción |
 | 22 | Fósforo (fertilizantes) | 0.1924 | 0.0000 | Carpenter P Cycle |
 | 15 | Wikipedia (ediciones) | 0.1916 | 0.0000 | Saturation growth |
 | 05 | Epidemiología (COVID-19) | 0.1294 | 0.0000 | SEIR |
+| 09 | Finanzas globales | 0.1027 | 0.0000 | Macro-financiero (yfinance SPY + FRED) |
+
+**Reclasificación iter 5 B-T2 (2026-05-16, calibración bidireccional):** el caso 18 Urbanización se **retira del Bloque III Weak** y se promueve al Bloque I Strong gate completo tras re-ejecución con datos World Bank `SP.URB.TOTL.IN.ZS` reales (EDI=0.3366 vs sintético 0.2358; `overall_pass=True`). El caso 09 Finanzas se **incorpora al Bloque III Weak** desde Bloque IV Suggestive tras re-ejecución con yfinance SPY + FRED reales (EDI=0.1027 vs sintético 0.0813, CI=[0.1006, 0.1052] estrictamente positivo). Esto confirma que el aparato modula en ambas direcciones bajo datos reales: declara strong real cuando los datos lo soportan (18) y eleva suggestive a weak cuando el CI estabiliza (09), no solo produce downgrades (01, 03, 11, 13).
 
 **Reclasificación iter 4 B-T2 (2026-05-16):** los casos 13 Políticas estratégicas y 11 Movilidad se **retiran del Bloque III Weak** y se reubican en Bloque V Trend tras re-ejecución con datos reales. Caso 13: con datos sintéticos producía EDI=0.2972 / p=0.0015 (Weak); con datos institucionales reales 2026-05-16 produce EDI=0.0821 / p_perm=0.162 (Trend Nivel 1, p>0.05). Caso 11: con datos sintéticos producía EDI=0.1283 / p=0.0020 (Weak); con datos TomTom reales 2026-05-16 confirma EDI=0.0599 / p_perm=0.922 (Trend Nivel 1, p>0.05). Comando regenerador: `python3 09-simulaciones-edi/13_caso_politicas_estrategicas/src/validate.py` y `python3 09-simulaciones-edi/11_caso_movilidad/src/validate.py`. Patrón consistente con casos 01 Clima y 03 Contaminación (Weak/Trend sintético → Null/Trend real): el aparato declara honestamente cuando los datos reales no soportan la magnitud previa.
 
@@ -120,8 +123,9 @@ Reproducibilidad: el caso 16 ha sido re-ejecutado con datos World Bank descargad
 
 | # | Caso | EDI | p_perm | CI 95 % bootstrap | Comentario |
 |---|------|----:|--:|---|---|
-| 09 | Finanzas globales | 0.0813 | 0.0000 | (pendiente reporte en tabla) | Mantenido en suggestive |
 | 22 | Fósforo (referenciado en Bloque III Weak) | 0.1924 | 0.0000 | [-0.221, +0.550] | Ranking permutacional alto pero bootstrap no excluye cero; magnitud frágil (AU-4) |
+
+**Reclasificación iter 5 B-T2 (2026-05-16):** el caso 09 Finanzas globales se **retira del Bloque IV Suggestive** y se reubica en Bloque III Weak tras re-ejecución con yfinance SPY + FRED reales 2026-05-16 (EDI=0.1027 vs sintético 0.0813, p_perm=0.0, CI=[0.1006, 0.1052] estrictamente positivo). La estabilización del CI sobre datos financieros reales eleva el caso por encima del umbral Weak EDI>0.1 con CI excluyendo cero — comportamiento opuesto a la advertencia AU-4 sobre CI cruzando cero.
 
 **Reclasificación AU-4 (2026-05-11):** el caso 21 (Salinización) se **retira del Bloque IV Suggestive** y se reubica en un bloque nuevo de "significativos por permutación con magnitud trivial — no contabilizan a favor de la tesis". Sus métricas son `EDI = 0.0184`, `p_perm = 0.0028`, `CI 95 % bootstrap = [-0.0771, +0.0825]`: el CI no excluye que el acoplamiento empeore la predicción y la magnitud puntual es del orden del 0.6 % de reducción de RMSE. Este es exactamente el patrón que Wasserstein y Lazar (2016, *The American Statistician* 70(2):129-133, ASA Statement on p-values, Principle 3 — verbatim en `07-bibliografia/Wasserstein-Lazar - ASA Statement on p-values (Am Stat 2016).pdf` p. 2) advierten: *"Scientific conclusions and business or policy decisions should not be based only on whether a p-value passes a specific threshold."* La coexistencia de `p<0.01` con magnitud trivial y CI cruzando cero no debe contar como evidencia positiva. La tesis declara aquí, como costo, que **la regla `CI 95 % no cruza cero` debe operar como criterio adicional al ranking permutacional** en pasadas subsiguientes; la auditoría retrospectiva de los demás casos contabilizados como significativos queda como deuda residual fechada (cf. cap 03 §criterios de admisión).
 
