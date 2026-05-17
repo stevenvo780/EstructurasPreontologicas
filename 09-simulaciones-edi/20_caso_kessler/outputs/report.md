@@ -1,6 +1,6 @@
-# Reporte de Validación — Kessler (Debris Orbital)
+# Reporte de Validación — Kessler (Debris Orbital) — B-T2.1 refrescado
 
-- generated_at: 2026-05-17T15:20:36.040282Z
+- generated_at: 2026-05-17T15:44:19.265975Z
 
 ## Fase synthetic
 - **overall_pass**: False
@@ -51,23 +51,22 @@
 **Nivel 0 — Sin cierre operativo.** No se detecta constricción macro→micro significativa con los datos y parámetros actuales.
 
 ## Fase real
-- **overall_pass**: True
+- **overall_pass**: False
 
 ### EDI
-- valor: 0.6936
-- bootstrap_mean: 0.6924
-- CI 95%: [0.6617, 0.7174]
-- weighted_value (LoE factor 0.60): 0.4162
-- válido (0.30-0.90): True
-- detrended_edi: -1.0000
-- trend_ratio: -1.442
+- valor: -1.0000
+- bootstrap_mean: -8.7600
+- CI 95%: [-12.2673, -6.0086]
+- weighted_value (LoE factor 0.60): -0.6000
+- válido (0.30-0.90): False
+- detrended_edi: -0.3295
+- trend_ratio: 1.000
 - trend_r2: 1.000
-- ⚠️ **Advertencia**: trend_ratio < 0.5 — la mayor parte del EDI podría provenir de la tendencia lineal
 
 ### Symploké y CR
-- internal: 0.9995
-- external: 0.9966
-- CR: 1.0029
+- internal: 0.9988
+- external: 0.9936
+- CR: 1.0052
 - CR indicador (>2.0 = frontera nítida): False
 
 ### Criterios C1-C5
@@ -78,24 +77,24 @@
 - c5_uncertainty: True
 
 ### Errores
-- rmse_abm: 0.1770
-- rmse_abm_no_ode: 0.5775
-- rmse_ode: 2.9807
-- rmse_reduced: 3.0157
-- threshold: 0.4881
+- rmse_abm: 0.6319
+- rmse_abm_no_ode: 0.0651
+- rmse_ode: 2.5167
+- rmse_reduced: 2.1189
+- threshold: 0.3248
 
 ### Calibración
-- forcing_scale: 0.8885
-- macro_coupling: 0.4429
+- forcing_scale: 0.8867
+- macro_coupling: 0.4973
 - ode_coupling_strength: 0.3000
 - abm_feedback_gamma: 0.0500
 - damping: 0.9500
 - ode_alpha: 0.0010
 - ode_beta: 0.0010
 - assimilation_strength: 0.0000
-- calibration_rmse: 0.1177
+- calibration_rmse: 0.1581
 - ode_rolling: None
 
 ### Interpretación
-**Nivel 4 — Cierre operativo fuerte.** El EDI se encuentra en el rango válido y el test de permutación confirma significancia estadística, indicando constricción macro→micro robusta. No obstante, estos resultados no implican compromiso ontológico: el cierre es operativo, no sustancial.
+**Nivel 0 — Sin cierre operativo.** No se detecta constricción macro→micro significativa con los datos y parámetros actuales.
 
