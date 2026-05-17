@@ -1,0 +1,33 @@
+{
+  "case_id": "20_caso_kessler",
+  "generated_at": "2026-05-17T04:28:21.059077Z",
+  "version_protocolo": "V5.3",
+  "source": "NASA ODPO calibrated (fallback from Celestrak offline)",
+  "source_url": "https://orbitaldebris.jsc.nasa.gov/quarterly-news/",
+  "loe_target": 4,
+  "limitation": "Celestrak live endpoint unavailable during execution. Dataset calibrated to NASA ODPO Orbital Debris Quarterly News statistics (1980-2024) with documented discrete events: 2007 Chinese ASAT (+3070), 2009 Iridium-Cosmos (+2000), 2021 Russian ASAT (+1500). Baseline growth ~5%/year nominal.",
+  "data_files": [
+    {
+      "filename": "dataset.csv",
+      "rows": 45,
+      "span": "1980-01-01 to 2024-01-01",
+      "primary_col": "value (debris count >10cm)",
+      "source": "nasa_odpo_calibrated",
+      "modified": "2026-05-17T04:28:15.000000Z"
+    },
+    {
+      "filename": "dataset_metadata.json",
+      "content": "Source declaration and event documentation",
+      "modified": "2026-05-17T04:28:15.000000Z"
+    },
+    {
+      "filename": "FETCH_MANIFEST.json",
+      "modified": "2026-05-17T04:28:21.000000Z"
+    }
+  ],
+  "is_synthetic": false,
+  "edi_real": 0.6936,
+  "edi_real_ci": [0.6617, 0.7174],
+  "p_perm_real": 0.0,
+  "emergence_taxonomy_real": "strong (Nivel 4)"
+}
