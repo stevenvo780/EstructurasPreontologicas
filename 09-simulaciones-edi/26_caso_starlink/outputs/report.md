@@ -1,6 +1,6 @@
 # Reporte de Validación — Constelaciones Satelitales Starlink (Saturation Growth)
 
-- generated_at: 2026-05-17T11:03:38.638627Z
+- generated_at: 2026-05-17T15:16:29.352845Z
 
 ## Fase synthetic
 - **overall_pass**: False
@@ -56,8 +56,8 @@
 - CI 95%: [0.7406, 0.7747]
 - weighted_value (LoE factor 0.60): 0.4545
 - válido (0.30-0.90): True
-- detrended_edi: 0.7575
-- trend_ratio: 1.000
+- detrended_edi: 0.5127
+- trend_ratio: 0.677
 - trend_r2: 0.976
 
 ### Symploké y CR

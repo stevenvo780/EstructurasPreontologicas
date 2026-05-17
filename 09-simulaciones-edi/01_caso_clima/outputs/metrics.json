@@ -1,8 +1,8 @@
 {
   "case": "Clima Regional (CONUS)",
-  "generated_at": "2026-05-17T14:55:05.814335Z",
+  "generated_at": "2026-05-17T15:16:41.385907Z",
   "git": {
-    "commit": "954f7171044aa2f614fb1364befabf32f329dde8",
+    "commit": "4dd54e389f7a54a6eecaeeb8a631f44c0a4dd49c",
     "dirty": true
   },
   "phases": {
@@ -55,10 +55,10 @@
         "valid": false,
         "weighted_value": 0.06894972616153591,
         "loe_factor": 1.0,
-        "permutation_pvalue": 0.017,
-        "permutation_null_95": 0.06400181944787917,
+        "permutation_pvalue": 0.0,
+        "permutation_null_95": 0.05149945393763658,
         "permutation_significant": true,
-        "permutation_method": "block",
+        "permutation_method": "iid",
         "trend_bias": {
           "detrended_edi": null,
           "trend_ratio": null,
@@ -245,13 +245,13 @@
         "valid": false,
         "weighted_value": 0.2689584214240151,
         "loe_factor": 1.0,
-        "permutation_pvalue": 0.843,
-        "permutation_null_95": 0.3346661210510212,
+        "permutation_pvalue": 1.0,
+        "permutation_null_95": 0.2830786871715802,
         "permutation_significant": false,
-        "permutation_method": "block",
+        "permutation_method": "iid",
         "trend_bias": {
-          "detrended_edi": 0.269,
-          "trend_ratio": 1.0,
+          "detrended_edi": 0.3968,
+          "trend_ratio": 1.475,
           "trend_r2": 0.998,
           "warning": false
         }

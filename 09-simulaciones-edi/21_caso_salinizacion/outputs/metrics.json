@@ -1,8 +1,8 @@
 {
   "case": "Salinizaci\u00f3n de Suelos (Richards Bilineal)",
-  "generated_at": "2026-05-17T14:55:54.532089Z",
+  "generated_at": "2026-05-17T15:16:42.435353Z",
   "git": {
-    "commit": "954f7171044aa2f614fb1364befabf32f329dde8",
+    "commit": "4dd54e389f7a54a6eecaeeb8a631f44c0a4dd49c",
     "dirty": true
   },
   "phases": {
@@ -55,10 +55,10 @@
         "valid": false,
         "weighted_value": -0.0017569908161324196,
         "loe_factor": 0.6,
-        "permutation_pvalue": 0.995,
-        "permutation_null_95": -8.164959989367925e-06,
+        "permutation_pvalue": 0.986986986986987,
+        "permutation_null_95": 0.00028967536237104683,
         "permutation_significant": false,
-        "permutation_method": "block",
+        "permutation_method": "iid",
         "trend_bias": {
           "detrended_edi": null,
           "trend_ratio": null,
@@ -284,15 +284,15 @@
         "valid": true,
         "weighted_value": 0.30909614756131437,
         "loe_factor": 0.6,
-        "permutation_pvalue": 0.001,
-        "permutation_null_95": 0.23048221976837144,
+        "permutation_pvalue": 0.0,
+        "permutation_null_95": 0.07920035965716384,
         "permutation_significant": true,
-        "permutation_method": "block",
+        "permutation_method": "iid",
         "trend_bias": {
-          "detrended_edi": 0.5152,
-          "trend_ratio": 1.0,
+          "detrended_edi": 0.0007,
+          "trend_ratio": 0.001,
           "trend_r2": 0.893,
-          "warning": false
+          "warning": true
         }
       },
       "viscosity": {

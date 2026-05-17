@@ -1,8 +1,8 @@
 {
   "case": "Urbanizaci\u00f3n Global",
-  "generated_at": "2026-05-17T04:50:04.193284Z",
+  "generated_at": "2026-05-17T15:16:13.729971Z",
   "git": {
-    "commit": "22b167fb46ba0bf755caa6bb2cb3f69a1abdade3",
+    "commit": "4dd54e389f7a54a6eecaeeb8a631f44c0a4dd49c",
     "dirty": true
   },
   "phases": {
@@ -60,10 +60,10 @@
         "permutation_significant": true,
         "permutation_method": "iid",
         "trend_bias": {
-          "detrended_edi": 0.8331,
-          "trend_ratio": 1.0,
+          "detrended_edi": -0.0006,
+          "trend_ratio": -0.001,
           "trend_r2": 0.981,
-          "warning": false
+          "warning": true
         }
       },
       "viscosity": {
@@ -240,10 +240,10 @@
         "permutation_significant": true,
         "permutation_method": "iid",
         "trend_bias": {
-          "detrended_edi": 0.3366,
-          "trend_ratio": 1.0,
+          "detrended_edi": 0.0722,
+          "trend_ratio": 0.214,
           "trend_r2": 0.997,
-          "warning": false
+          "warning": true
         }
       },
       "viscosity": {

@@ -1,6 +1,6 @@
 # Reporte de Validación — Ciclo del Fósforo (Carpenter Biogeoquímico)
 
-- generated_at: 2026-05-17T04:57:20.284823Z
+- generated_at: 2026-05-17T15:16:09.931153Z
 
 ## Fase synthetic
 - **overall_pass**: False
@@ -11,8 +11,8 @@
 - CI 95%: [0.1608, 0.2388]
 - weighted_value (LoE factor 0.60): 0.1152
 - válido (0.30-0.90): False
-- detrended_edi: 0.1921
-- trend_ratio: 1.000
+- detrended_edi: -0.0031
+- trend_ratio: -0.016
 - trend_r2: 0.534
 
 ### Symploké y CR
@@ -59,9 +59,10 @@
 - CI 95%: [-0.0573, 0.6540]
 - weighted_value (LoE factor 0.60): 0.1933
 - válido (0.30-0.90): True
-- detrended_edi: 0.3221
-- trend_ratio: 1.000
+- detrended_edi: -0.0449
+- trend_ratio: -0.139
 - trend_r2: 0.774
+- ⚠️ **Advertencia**: trend_ratio < 0.5 — la mayor parte del EDI podría provenir de la tendencia lineal
 
 ### Symploké y CR
 - internal: 0.9992
@@ -97,4 +98,11 @@
 
 ### Interpretación
 **Nivel 4 — Cierre operativo fuerte.** El EDI se encuentra en el rango válido y el test de permutación confirma significancia estadística, indicando constricción macro→micro robusta. No obstante, estos resultados no implican compromiso ontológico: el cierre es operativo, no sustancial.
+
+## Discrepancia con pre-registro (iter 11-12)
+
+- **Predicción pre-registro:** Weak (EDI esperado en rango 0.10-0.33 con p < 0.05).
+- **Resultado real (phases.real):** Weak tocando Strong — EDI = 0.3221, CI 95% = [-0.0573, 0.6540], válido (rango 0.30-0.90) por margen mínimo.
+- **Diferencia:** |dEDI| ≈ 0.130; dirección: upgrade en magnitud (Weak → frontera Strong) pero el CI cruza cero, indicando incertidumbre relevante sobre la consolidación.
+- **Honestidad declarativa:** DISCREPANCIA RECONOCIDA. Lakatos: falsación honesta = virtud, no falla. La señal Carpenter biogeoquímico supera la predicción Weak pre-registrada y roza Strong, pero la amplitud del CI exige cautela: no se reclasifica formalmente sin reducción del intervalo bootstrap.
 

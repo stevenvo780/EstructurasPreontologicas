@@ -1,8 +1,8 @@
 {
   "case": "Ciclo del F\u00f3sforo (Carpenter Biogeoqu\u00edmico)",
-  "generated_at": "2026-05-17T04:57:20.284823Z",
+  "generated_at": "2026-05-17T15:16:09.931153Z",
   "git": {
-    "commit": "88a58df7a0a0030c17aa2cedd3a1e16f630acda9",
+    "commit": "4dd54e389f7a54a6eecaeeb8a631f44c0a4dd49c",
     "dirty": true
   },
   "phases": {
@@ -60,8 +60,8 @@
         "permutation_significant": true,
         "permutation_method": "iid",
         "trend_bias": {
-          "detrended_edi": 0.1921,
-          "trend_ratio": 1.0,
+          "detrended_edi": -0.0031,
+          "trend_ratio": -0.016,
           "trend_r2": 0.534,
           "warning": false
         }
@@ -289,10 +289,10 @@
         "permutation_significant": true,
         "permutation_method": "iid",
         "trend_bias": {
-          "detrended_edi": 0.3221,
-          "trend_ratio": 1.0,
+          "detrended_edi": -0.0449,
+          "trend_ratio": -0.139,
           "trend_r2": 0.774,
-          "warning": false
+          "warning": true
         }
       },
       "viscosity": {

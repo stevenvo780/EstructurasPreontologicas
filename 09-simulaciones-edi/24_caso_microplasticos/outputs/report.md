@@ -1,6 +1,6 @@
 # Reporte de Validación — Microplásticos Oceánicos (Jambeck Accumulation-Decay)
 
-- generated_at: 2026-05-17T11:02:08.251338Z
+- generated_at: 2026-05-17T15:16:18.814455Z
 
 ## Fase synthetic
 - **overall_pass**: False
@@ -11,9 +11,10 @@
 - CI 95%: [0.0693, 0.0920]
 - weighted_value (LoE factor 0.60): 0.0456
 - válido (0.30-0.90): False
-- detrended_edi: 0.0760
-- trend_ratio: 1.000
+- detrended_edi: -0.0143
+- trend_ratio: -0.189
 - trend_r2: 0.820
+- ⚠️ **Advertencia**: trend_ratio < 0.5 — la mayor parte del EDI podría provenir de la tendencia lineal
 
 ### Symploké y CR
 - internal: 0.9992
@@ -59,9 +60,10 @@
 - CI 95%: [0.7011, 0.8799]
 - weighted_value (LoE factor 0.60): 0.4834
 - válido (0.30-0.90): True
-- detrended_edi: 0.8057
-- trend_ratio: 1.000
+- detrended_edi: 0.3320
+- trend_ratio: 0.412
 - trend_r2: 0.978
+- ⚠️ **Advertencia**: trend_ratio < 0.5 — la mayor parte del EDI podría provenir de la tendencia lineal
 
 ### Symploké y CR
 - internal: 0.9998

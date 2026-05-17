@@ -1,6 +1,6 @@
 # Reporte de Validación — Clima Regional (CONUS)
 
-- generated_at: 2026-05-17T14:55:05.814335Z
+- generated_at: 2026-05-17T15:16:41.385907Z
 
 ## Fase synthetic
 - **overall_pass**: False
@@ -56,8 +56,8 @@
 - CI 95%: [0.2572, 0.2826]
 - weighted_value (LoE factor 1.00): 0.2690
 - válido (0.30-0.90): False
-- detrended_edi: 0.2690
-- trend_ratio: 1.000
+- detrended_edi: 0.3968
+- trend_ratio: 1.475
 - trend_r2: 0.998
 
 ### Symploké y CR

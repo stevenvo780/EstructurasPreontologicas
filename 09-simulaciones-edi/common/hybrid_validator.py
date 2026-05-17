@@ -1808,11 +1808,26 @@ def evaluate_phase(config, df, start_date, end_date, split_date,
 
             # Solo reportar si R² de tendencia es alto
             if trend_r2 > 0.5:
-                # Remover tendencia de las 3 series
-                obs_dt = np.asarray(obs_val) - trend_line
-                abm_dt = np.asarray(abm_val) - trend_line
-                noode_dt = np.asarray(abm_no_ode_val) - trend_line
-                # RMSE estándar sobre residuos detrended
+                # Fix bug detrending (2026-05-17): restar la MISMA trend_line a
+                # las 3 series es algebraicamente vacío: (abm - L) - (obs - L) =
+                # abm - obs, por lo que detrended_edi == edi exactamente
+                # (trend_ratio = 1.0 era la firma del bug). El detrending
+                # correcto ajusta una tendencia lineal INDEPENDIENTE a cada
+                # serie y resta de cada una su propia tendencia. Así el EDI se
+                # calcula sobre fluctuaciones residuales, no sobre niveles
+                # dominados por la tendencia común que cualquier modelo razonable
+                # reproduce trivialmente.
+                obs_arr = np.asarray(obs_val, dtype=np.float64)
+                abm_arr = np.asarray(abm_val, dtype=np.float64)
+                noode_arr = np.asarray(abm_no_ode_val, dtype=np.float64)
+                # Tendencias propias
+                coeffs_obs = np.polyfit(t_axis, obs_arr, 1)
+                coeffs_abm = np.polyfit(t_axis, abm_arr, 1)
+                coeffs_noode = np.polyfit(t_axis, noode_arr, 1)
+                obs_dt = obs_arr - np.polyval(coeffs_obs, t_axis)
+                abm_dt = abm_arr - np.polyval(coeffs_abm, t_axis)
+                noode_dt = noode_arr - np.polyval(coeffs_noode, t_axis)
+                # RMSE estándar sobre residuos detrended (cada serie respecto a su propia tendencia)
                 err_abm_dt = float(np.sqrt(np.mean((abm_dt - obs_dt) ** 2)))
                 err_red_dt = float(np.sqrt(np.mean((noode_dt - obs_dt) ** 2)))
                 edi_detrended = compute_edi(err_abm_dt, err_red_dt)

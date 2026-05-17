@@ -1,6 +1,6 @@
 # Reporte de Validación — Urbanización Global
 
-- generated_at: 2026-05-17T04:50:04.193284Z
+- generated_at: 2026-05-17T15:16:13.729971Z
 
 ## Fase synthetic
 - **overall_pass**: True
@@ -11,9 +11,10 @@
 - CI 95%: [0.7882, 0.8733]
 - weighted_value (LoE factor 0.60): 0.4999
 - válido (0.30-0.90): True
-- detrended_edi: 0.8331
-- trend_ratio: 1.000
+- detrended_edi: -0.0006
+- trend_ratio: -0.001
 - trend_r2: 0.981
+- ⚠️ **Advertencia**: trend_ratio < 0.5 — la mayor parte del EDI podría provenir de la tendencia lineal
 
 ### Symploké y CR
 - internal: 0.9994
@@ -59,9 +60,10 @@
 - CI 95%: [0.3305, 0.3467]
 - weighted_value (LoE factor 0.60): 0.2020
 - válido (0.30-0.90): True
-- detrended_edi: 0.3366
-- trend_ratio: 1.000
+- detrended_edi: 0.0722
+- trend_ratio: 0.214
 - trend_r2: 0.997
+- ⚠️ **Advertencia**: trend_ratio < 0.5 — la mayor parte del EDI podría provenir de la tendencia lineal
 
 ### Symploké y CR
 - internal: 0.9997

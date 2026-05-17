@@ -92,3 +92,10 @@
 ### Interpretación
 **Nivel 2 — Cierre operativo suggestive.** La constricción macro es detectable pero no alcanza robustez suficiente para cierre operativo fuerte. El fenómeno muestra grados parciales de organización macro→micro.
 
+## Discrepancia con pre-registro (iter 11-12)
+
+- **Predicción pre-registro:** Weak (EDI esperado en rango 0.10-0.33 con p < 0.05).
+- **Resultado real (phases.real):** Trend / Suggestive — EDI = 0.0579, CI 95% = [-0.1513, 0.3451].
+- **Diferencia:** |dEDI| ≈ 0.169; dirección: el observado queda por debajo del umbral Weak (0.10) y dentro del rango Trend; el CI cruza cero, lo que impide significancia.
+- **Honestidad declarativa:** DISCREPANCIA RECONOCIDA. Lakatos: falsación honesta = virtud, no falla. El acoplamiento macro→micro existe como tendencia pero no alcanza la robustez Weak pre-registrada; downgrade documentado.
+

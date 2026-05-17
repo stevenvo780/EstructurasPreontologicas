@@ -1,8 +1,8 @@
 {
   "case": "Deforestaci\u00f3n Global (von Th\u00fcnen Frontier)",
-  "generated_at": "2026-05-16T21:09:31.109048Z",
+  "generated_at": "2026-05-17T15:16:40.936052Z",
   "git": {
-    "commit": "c44eaa1789b388dbcbff29589d247f7eafcc4054",
+    "commit": "4dd54e389f7a54a6eecaeeb8a631f44c0a4dd49c",
     "dirty": true
   },
   "phases": {
@@ -58,6 +58,7 @@
         "permutation_pvalue": 0.7167167167167167,
         "permutation_null_95": 0.0709924040677604,
         "permutation_significant": false,
+        "permutation_method": "iid",
         "trend_bias": {
           "detrended_edi": null,
           "trend_ratio": null,
@@ -313,11 +314,12 @@
         "permutation_pvalue": 0.0,
         "permutation_null_95": 0.25791335153564793,
         "permutation_significant": true,
+        "permutation_method": "iid",
         "trend_bias": {
-          "detrended_edi": 0.5802,
-          "trend_ratio": 1.0,
+          "detrended_edi": -0.0438,
+          "trend_ratio": -0.075,
           "trend_r2": 0.785,
-          "warning": false
+          "warning": true
         }
       },
       "viscosity": {

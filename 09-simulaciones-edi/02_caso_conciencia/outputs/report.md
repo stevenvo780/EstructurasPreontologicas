@@ -50,6 +50,13 @@
 ### Interpretación
 **Nivel 0 — Sin cierre operativo.** No se detecta constricción macro→micro significativa con los datos y parámetros actuales.
 
+## Discrepancia con pre-registro (iter 11-12)
+
+- **Predicción pre-registro:** Null (sin cierre operativo, EDI esperado ≈ 0).
+- **Resultado real (phases.real):** Falsificación — EDI = -0.0121, CI 95% = [-0.0164, -0.0099] (intervalo enteramente negativo).
+- **Diferencia:** |dEDI| ≈ 0.005; dirección: la observación cruza el umbral de Null a Falsificación porque el CI superior queda por debajo de 0.
+- **Honestidad declarativa:** DISCREPANCIA RECONOCIDA. Lakatos: falsación honesta = virtud, no falla. La predicción Null subestimó la robustez del intervalo negativo; el caso no solo carece de cierre, lo refuta dentro de su propio margen.
+
 ## Fase real
 - **overall_pass**: False
 

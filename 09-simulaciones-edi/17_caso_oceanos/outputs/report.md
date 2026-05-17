@@ -1,6 +1,6 @@
 # Reporte de Validación — Océanos (OHC proxy)
 
-- generated_at: 2026-05-17T15:02:14.778710Z
+- generated_at: 2026-05-17T15:16:39.714100Z
 
 ## Fase synthetic
 - **overall_pass**: False
@@ -11,9 +11,10 @@
 - CI 95%: [0.1212, 0.1744]
 - weighted_value (LoE factor 0.60): 0.0824
 - válido (0.30-0.90): False
-- detrended_edi: 0.1374
-- trend_ratio: 1.000
+- detrended_edi: -0.0447
+- trend_ratio: -0.326
 - trend_r2: 0.982
+- ⚠️ **Advertencia**: trend_ratio < 0.5 — la mayor parte del EDI podría provenir de la tendencia lineal
 
 ### Symploké y CR
 - internal: 0.9986
@@ -54,15 +55,19 @@
 - **overall_pass**: False
 
 ### EDI
-- valor: 0.0002
-- bootstrap_mean: -0.0062
-- CI 95%: [-0.0806, 0.0468]
-- weighted_value (LoE factor 0.60): 0.0001
+- valor: 0.1902
+- bootstrap_mean: 0.1989
+- CI 95%: [0.1574, 0.2800]
+- weighted_value (LoE factor 0.60): 0.1141
 - válido (0.30-0.90): False
+- detrended_edi: -0.0040
+- trend_ratio: -0.021
+- trend_r2: 0.871
+- ⚠️ **Advertencia**: trend_ratio < 0.5 — la mayor parte del EDI podría provenir de la tendencia lineal
 
 ### Symploké y CR
-- internal: 0.9966
-- external: 0.9966
+- internal: 0.9994
+- external: 0.9994
 - CR: 1.0000
 - CR indicador (>2.0 = frontera nítida): False
 
@@ -74,24 +79,24 @@
 - c5_uncertainty: True
 
 ### Errores
-- rmse_abm: 2.4952
-- rmse_abm_no_ode: 2.4958
-- rmse_ode: 2.5070
-- rmse_reduced: 3.0252
-- threshold: 2.5001
+- rmse_abm: 0.5441
+- rmse_abm_no_ode: 0.6719
+- rmse_ode: 0.4036
+- rmse_reduced: 3.0191
+- threshold: 0.7153
 
 ### Calibración
-- forcing_scale: 0.6505
-- macro_coupling: 0.5000
+- forcing_scale: 0.8846
+- macro_coupling: 0.3986
 - ode_coupling_strength: 0.3000
 - abm_feedback_gamma: 0.0500
-- damping: 0.6463
-- ode_alpha: 0.5000
+- damping: 0.9500
+- ode_alpha: 0.4410
 - ode_beta: 1.0000
 - assimilation_strength: 0.0000
-- calibration_rmse: 0.9190
+- calibration_rmse: 0.2780
 - ode_rolling: None
 
 ### Interpretación
-**Nivel 1 — Tendencia no confirmada.** Se detecta EDI positivo pero sin significancia estadística. El fenómeno no muestra cierre operativo verificable.
+**Nivel 3 — Cierre operativo weak.** La constricción macro es detectable pero no alcanza robustez suficiente para cierre operativo fuerte. El fenómeno muestra grados parciales de organización macro→micro.
 

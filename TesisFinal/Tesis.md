@@ -8699,6 +8699,64 @@ Cada capítulo del manuscrito se ancla en al menos un interlocutor principal y u
 
 157. Coleman, S. (2014). "The Real Combination Problem: Panpsychism, Micro-subjects, and Emergence". *Erkenntnis* 79(1): 19–44.
 
+### HH. Auditoría iter 12 (2026-05-17) — autores citados sin entrada formal
+
+Sección añadida tras process-verifier iter 12: dieciocho autores eran invocados en cuerpo (cap 00-06) sin entrada en la bibliografía formal. Cuatro tienen PDF local verificado; catorce son citas secundarias o referencias posicionales sin acceso a primario en `07-bibliografia/`. Esta sección consolida las entradas faltantes manteniendo la regla CLAUDE.md §5 (cita verbatim paginada o cita secundaria declarada). Cinco autores adicionales del reporte iter 12 (Massimini en 44; Myin en 126-127; Ross en 12; De Luca en 116; van Fraassen en 19) **ya estaban registrados** y se conservan en sus secciones de origen.
+
+#### HH.1. Estadística y crítica de p-values (cap 03-04, 06-01)
+
+158. Wasserstein, R. L. y Lazar, N. A. (2016). "The ASA Statement on p-Values: Context, Process, and Purpose". *The American Statistician* 70(2): 129–133. [PDF local: `07-bibliografia/Wasserstein-Lazar - ASA Statement on p-values (Am Stat 2016).pdf`; cita verbatim p. 2 verificada en cap 06-01].
+
+159. Gelman, A. y Loken, E. (2014). "The Statistical Crisis in Science". *American Scientist* 102(6): 460–465. [PDF local: `07-bibliografia/Gelman Loken - Statistical Crisis in Science (2014).pdf`; cita p. 464 verificada en cap 00-05 sobre limitaciones de pre-registros retrospectivos].
+
+#### HH.2. Information theory de la integración (cap 04-01, 03-04)
+
+160. Oizumi, M., Albantakis, L. y Tononi, G. (2014). "From the Phenomenology to the Mechanisms of Consciousness: Integrated Information Theory 3.0". *PLoS Computational Biology* 10(5): e1003588. [PDF local: `07-bibliografia/Oizumi-Albantakis-Tononi - IIT 3.0 (PLoS Comp Biol 2014).pdf`; referencia operativa IIT 3.0 en cap 04-01 §IIT].
+
+#### HH.3. Realismo estructural — debate post-Ladyman-Ross (cap 01-03)
+
+161. Worrall, J. (1989). "Structural Realism: The Best of Both Worlds?". *Dialectica* 43(1–2): 99–124. [PDF no disponible localmente — cita posicional sobre realismo estructural epistémico; cap 01-03 §1].
+
+162. French, S. (2014). *The Structure of the World: Metaphysics and Representation*. Oxford: Oxford University Press. [PDF no disponible localmente — referencia posicional sobre OSR ontic; cap 01-03 §1].
+
+163. Esfeld, M. y Lam, V. (2008). "Moderate Structural Realism about Space-Time". *Synthese* 160(1): 27–46. [PDF no disponible localmente — referencia posicional sobre crítica al OSR puro; cap 01-03 §1].
+
+#### HH.4. Ontología analítica (cap 01-03)
+
+164. Armstrong, D. M. (1997). *A World of States of Affairs*. Cambridge: Cambridge University Press. [PDF no disponible localmente — referencia posicional sobre ontología de universales y particulares; cap 01-03 §1].
+
+165. Yablo, S. (1998). "Does Ontology Rest on a Mistake?". *Proceedings of the Aristotelian Society* Supplementary Volume 72: 229–262. [PDF local: `07-bibliografia/Yablo - Does Ontology Rest on a Mistake (1998).pdf`; engagement pendiente cap 04-04 §1 declarado como deuda ADV-2026-05-16].
+
+#### HH.5. Mecanismos y causación inter-nivel (cap 02-05)
+
+166. Baumgartner, M. y Gebharter, A. (2016). "Constitutive Relevance, Mutual Manipulability, and Fat-Handedness". *British Journal for the Philosophy of Science* 67(3): 731–756. [PDF no disponible localmente — usada como fuente secundaria para mediar cita Craver 2007 p. 153 en cap 02-05; declarada cita mediada].
+
+167. Romero, F. (2015). "Why There Isn't Inter-Level Causation in Mechanisms". *Synthese* 192(11): 3731–3755. [PDF no disponible localmente — usada como fuente secundaria para mediar cita Craver 2007 p. 153 en cap 02-05; declarada cita mediada].
+
+168. Glymour, C. (1980). *Theory and Evidence*. Princeton: Princeton University Press. [PDF no disponible localmente — referencia al *bootstrap problem* en cap 03-01 §legitimidad y 03-04 §operacionalización; cita posicional].
+
+#### HH.6. Crítica a la emergencia causal (cap 01-03 §1)
+
+169. Dewhurst, J. (2021). "Causal Emergence from Effective Information: Neither Causal nor Emergent?". *Thought: A Journal of Philosophy* 10(3): 158–168. [PDF no disponible localmente — referencia posicional sobre crítica a coarse-graining; cap 01-03 §1].
+
+#### HH.7. Behavioral dynamics y control motor (cap 01-03, 04-01)
+
+170. Stoffregen, T. A. (2003). "Affordances as Properties of the Animal-Environment System". *Ecological Psychology* 15(2): 115–134. [PDF no disponible localmente — referencia posicional ecological psychology; cap 01-03 §sec. ecological].
+
+171. Fajen, B. R., Warren, W. H., Temizer, S. y Bogasch, S. (2003). "A Dynamical Model of Visually-Guided Steering, Obstacle Avoidance, and Route Selection". *International Journal of Computer Vision* 54(1–3): 13–34. [PDF no disponible localmente — referencia posicional behavioral dynamics; cap 01-03; complementa entrada 64 de Fajen y Warren 2003 *J Exp Psychol*].
+
+172. Todorov, E. (2004). "Optimal Feedback Control as a Theory of Motor Coordination". *Nature Neuroscience* 7(9): 907–915. [PDF no disponible localmente — referencia posicional sobre rival de modelos internos; cap 01-03 §motor control y cap 04-01].
+
+173. Jordan, M. I. y Wolpert, D. M. (1999). "Computational Motor Control". En M. S. Gazzaniga (ed.), *The Cognitive Neurosciences*, 2.ª ed., pp. 71–118. Cambridge: MIT Press. [PDF no disponible localmente — referencia posicional sobre control motor con modelos internos; cap 01-03 §motor control y cap 04-01].
+
+#### HH.8. Predictive processing y active inference (cap 01-03, 04-01)
+
+174. Friston, K. (2010). "The Free-Energy Principle: A Unified Brain Theory?". *Nature Reviews Neuroscience* 11(2): 127–138. [PDF no disponible localmente — referencia posicional rival predictive processing en cap 04-01 §16; deuda declarada en cap 01-03 §1.2: "engagement textual pendiente"].
+
+#### HH.9. Selección de modelos y circularidad estructural (cap 03-05)
+
+175. Forster, M. y Sober, E. (1994). "How to Tell When Simpler, More Unified, or Less Ad Hoc Theories Will Provide More Accurate Predictions". *British Journal for the Philosophy of Science* 45(1): 1–35. [PDF no disponible localmente — referencia posicional sobre circularidad estructural parcial; cap 03-05 caso 30 behavioral dynamics].
+
 ## Fuentes de Datos (Repositorios Principales)
 
 **Tabla 7.2.**
@@ -8720,7 +8778,7 @@ Cada capítulo del manuscrito se ancla en al menos un interlocutor principal y u
 ## Notas editoriales
 
 1. **Convención de citación:** Chicago author-date adaptado al manuscrito doctoral en español. Para envío a revista Q1 específica, debe ajustarse al estilo solicitado (APA, Vancouver según campo).
-2. **Cobertura por capítulo:** las 90 referencias cubren todos los capítulos del manuscrito con al menos 3 fuentes nucleares por capítulo.
+2. **Cobertura por capítulo:** las 175 referencias (157 nucleares + 18 añadidas iter 12) cubren todos los capítulos del manuscrito con al menos 3 fuentes nucleares por capítulo. De las 18 entradas iter 12, cuatro tienen PDF local verificado (Wasserstein-Lazar 2016, Gelman-Loken 2014, Oizumi-Albantakis-Tononi 2014, Yablo 1998) y catorce son posicionales o secundarias declaradas — ver sección HH para el detalle por autor.
 3. **Fuentes faltantes para futuro:** envío a revistas exige revisión sistemática por dominio. Aquí están las fuentes nucleares; las complementarias se incorporan en fase de redacción final.
 4. **Bibliografía secundaria:** el corpus PDF en `07-bibliografia/` (Bunge, Dennett, Searle, Bourdieu, Latour, Simondon, Wittgenstein, Sellars, Maturana-Varela, Whitehead, Chalmers, Noë-Thompson, Warren) sirve como fuente directa para citas extensas.
 

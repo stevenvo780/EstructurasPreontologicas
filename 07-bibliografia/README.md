@@ -3,14 +3,40 @@
 **Tesis**: Estructuras Pre-Ontológicas: Realismo Irrealista Operativo y Compresión
 Multiescala con Validación EDI Multidominio.
 
-Fecha: 2026-04-28
+Fecha original: 2026-04-28 · Actualización iter 12: 2026-05-17
 Origen: NAS `nass-stev` (`/mnt/pool/data/filebrowser/...` y `/mnt/pool/datos/investigacion/`)
 Destino: `~/Documentos/bibliografia-doctorado/` en pc-stev
 
 ## Cobertura
 
-De **~76 referencias** del manuscrito, **15 referencias** tienen edición
-disponible en la biblioteca local (31 archivos PDF/EPUB, 112 MB).
+La bibliografía formal `01-bibliografia-orientativa.md` consolida **175 entradas**
+(157 nucleares + 18 añadidas en auditoría iter 12 sección HH). El directorio
+local `07-bibliografia/` contiene **111 archivos binarios** (100 PDF + 10 EPUB
++ 1 RTF) que cubren las citas verbatim paginadas verificables; el resto son
+citas posicionales o secundarias declaradas según CLAUDE.md §5.
+
+### Auditoría iter 12 (2026-05-17)
+
+Process-verifier detectó 23 autores citados en cuerpo sin entrada en
+bibliografía formal. Tras revisión: 5 ya estaban presentes (Massimini en
+Tononi-Boly-Massimini-Koch 2016 #44; Myin en Hutto-Myin 2013/2017 #126-127;
+Ross en Ladyman-Ross 2007 #12; De Luca en Rosenstein-Collins-De Luca 1993
+#116; van Fraassen 1980 #19) y 18 se añadieron en sección HH:
+
+- **Con PDF local verificado (4):** Wasserstein-Lazar 2016, Gelman-Loken 2014,
+  Oizumi-Albantakis-Tononi 2014, Yablo 1998.
+- **Sin PDF local — posicionales o secundarias declaradas (14):** Worrall 1989,
+  French 2014, Esfeld-Lam 2008, Armstrong 1997, Baumgartner-Gebharter 2016,
+  Romero 2015, Glymour 1980, Dewhurst 2021, Stoffregen 2003, Fajen-Warren-
+  Temizer-Bogasch 2003, Todorov 2004, Jordan-Wolpert 1999, Friston 2010,
+  Forster-Sober 1994.
+
+## Cobertura histórica (snapshot 2026-04-28)
+
+De las ~76 referencias del manuscrito al cierre de abril 2026, **15 referencias**
+tenían edición disponible en la biblioteca local NAS (31 archivos PDF/EPUB,
+112 MB). El conteo actualizado al iter 12 es de 111 archivos / 175 entradas
+formales.
 
 ### ✅ Encontrados (con edición disponible)
 
