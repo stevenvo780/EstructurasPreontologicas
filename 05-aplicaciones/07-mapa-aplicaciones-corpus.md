@@ -30,16 +30,17 @@ Mapa completo del paisaje de aplicaciones del marco como **ontología general mu
 |:----:|-----------|:-:|-------|
 | 4 | Strong (`overall_pass=True`) | 4 | Energía, Deforestación, Kessler, Riesgo Biológico |
 | 4 | Strong sin gate completo | 1 | Microplásticos |
-| 3 | Weak | 8 | Políticas, Postverdad, Urbanización, Fósforo, Wikipedia, Epidemiología, Movilidad, Behavioral Dynamics (caso 30) |
+| 3 | Weak | 6 | Postverdad, Urbanización, Fósforo, Wikipedia, Epidemiología, Behavioral Dynamics (caso 30) |
 | 2 | Suggestive | 1 | Finanzas (Salinización reclasificada por AU-4: CI cruza cero + magnitud trivial) |
-| 1 | Trend | 2 | Justicia, Fuga cerebros |
-| 0a | Null genuino | 7 | Conciencia, Acidificación, Erosión, Acuíferos, IoT, Clima (caso 01 reclasificado Trend→Null tras re-ejecución con datos reales IPCC-calibrados 2026-05-16, EDI=-0.0007, p_perm=0.998), Contaminación (caso 03 reclasificado Weak→Null tras re-ejecución con datos World Bank PM2.5 reales 2026-05-16, EDI=-0.0109, p_perm=0.616) (`\|EDI\|<0.05` y `p_perm>0.05`) |
+| 1 | Trend | 4 | Justicia, Fuga cerebros, Políticas (caso 13 reclasificado Weak→Trend tras re-ejecución con datos institucionales reales 2026-05-16, EDI=0.0821, p_perm=0.162), Movilidad (caso 11 confirmado Trend tras re-ejecución con datos TomTom reales 2026-05-16, EDI=0.0599, p_perm=0.922) |
+| 0a | Null genuino | 6 | Conciencia, Erosión, Acuíferos, IoT, Clima (caso 01 reclasificado Trend→Null tras re-ejecución con datos reales IPCC-calibrados 2026-05-16, EDI=-0.0007, p_perm=0.998), Contaminación (caso 03 reclasificado Weak→Null tras re-ejecución con datos World Bank PM2.5 reales 2026-05-16, EDI=-0.0109, p_perm=0.616) (`\|EDI\|<0.05` y `p_perm>0.05`) |
 | 0b | EDI negativo (sonda macro inadecuada) | 1 | Paradigmas (`EDI=-0.144`: ABM acoplado predice peor que reducido) |
+| 0d | Falsificación local del aparato (CI excluye cero por la izquierda) | 1 | Acidificación oceánica (caso 19 reclasificado tras adversarial iter 4 2026-05-16: `EDI=-0.0047`, `CI=[-0.0054, -0.0041]`; el bootstrap excluye cero por la izquierda — el modelo acoplado predice estrictamente peor que el reducido bajo sonda Revelle/calcificadores; ASA principio 5) |
 | 0c | Señal rechazada por gate C1-C5 | 1 | Océanos (`EDI>0` con `p_perm<0.05` pero `valid=False`) |
 | n.e. | Cuarentena por insuficiencia de datos | 1 | Starlink (val_steps=1) |
 | — | Falsación rechazada (controles) | 3 | Exogeneidad, No-estacionariedad, Observabilidad |
 
-**Subdivisión del Bloque "Null" (AU-9 2026-05-11).** Lo que la versión previa presentaba como "8 null" cubre en realidad tres regímenes empíricamente distintos: 5 nulls genuinos (el aparato no detecta señal donde no la hay), 1 EDI negativo (la sonda macro elegida es activamente inadecuada para el dominio), y 2 rechazos por gate C1-C5 (ranking permutacional cruza el umbral pero la batería compuesta rechaza por incumplimiento de viscosidad/persistencia/no-localidad). La cifra "señal/no-señal ≈ 50 %" gana matiz y pierde rotundidad; el aparato discrimina tres modos de no-éxito en lugar de colapsarlos en una etiqueta única.
+**Subdivisión del Bloque "Null" (AU-9 2026-05-11 + adv-iter4 2026-05-16).** Lo que la versión previa presentaba como "8 null" cubre en realidad cuatro regímenes empíricamente distintos: 6 nulls genuinos (el aparato no detecta señal donde no la hay), 1 EDI negativo por sonda inadecuada (Paradigmas; el modelo acoplado predice peor pero sin CI que excluya cero), 1 **falsificación local del aparato** (Acidificación oceánica caso 19, reclasificado tras adversarial iter 4 2026-05-16: EDI=-0.0047 con CI bootstrap [-0.0054, -0.0041] que **excluye cero por la izquierda** — el aparato no sólo no detecta señal: predice estrictamente peor que el reducido bajo la sonda Revelle/calcificadores; ASA Wasserstein-Lazar 2016 principio 5), y 1 rechazo por gate C1-C5 (ranking permutacional cruza el umbral pero la batería compuesta rechaza por incumplimiento de viscosidad/persistencia/no-localidad). La cifra "señal/no-señal ≈ 50 %" gana matiz y pierde rotundidad; el aparato discrimina cuatro modos de no-éxito en lugar de colapsarlos en una etiqueta única. La falsificación local del caso 19 es **fortaleza, no debilidad**: el aparato declara honestamente la inadecuación de su propia sonda en un dominio específico en lugar de blindarse contra el dato.
 
 **Total con señal significativa:** 15/30 (50%).
 **Falsación correcta:** 3/3 (100%).
@@ -102,14 +103,14 @@ Reproducibilidad: el caso 16 ha sido re-ejecutado con datos World Bank descargad
 
 | # | Caso | EDI | p | Sonda |
 |---|------|----:|--:|-------|
-| 13 | Políticas estratégicas (gasto militar) | 0.2972 | 0.0015 | Saturation growth |
 | 30 | Behavioral Dynamics | 0.2622 | 0.0440 | behavioral_attractor (segundo orden) |
 | 14 | Postverdad (desinformación) | 0.2428 | 0.0000 | SIS contagion |
 | 18 | Urbanización | 0.2358 | 0.0000 | Logística + atracción |
 | 22 | Fósforo (fertilizantes) | 0.1924 | 0.0000 | Carpenter P Cycle |
 | 15 | Wikipedia (ediciones) | 0.1916 | 0.0000 | Saturation growth |
 | 05 | Epidemiología (COVID-19) | 0.1294 | 0.0000 | SEIR |
-| 11 | Movilidad (tráfico aéreo) | 0.1283 | 0.0020 | Bilinear diffusion |
+
+**Reclasificación iter 4 B-T2 (2026-05-16):** los casos 13 Políticas estratégicas y 11 Movilidad se **retiran del Bloque III Weak** y se reubican en Bloque V Trend tras re-ejecución con datos reales. Caso 13: con datos sintéticos producía EDI=0.2972 / p=0.0015 (Weak); con datos institucionales reales 2026-05-16 produce EDI=0.0821 / p_perm=0.162 (Trend Nivel 1, p>0.05). Caso 11: con datos sintéticos producía EDI=0.1283 / p=0.0020 (Weak); con datos TomTom reales 2026-05-16 confirma EDI=0.0599 / p_perm=0.922 (Trend Nivel 1, p>0.05). Comando regenerador: `python3 09-simulaciones-edi/13_caso_politicas_estrategicas/src/validate.py` y `python3 09-simulaciones-edi/11_caso_movilidad/src/validate.py`. Patrón consistente con casos 01 Clima y 03 Contaminación (Weak/Trend sintético → Null/Trend real): el aparato declara honestamente cuando los datos reales no soportan la magnitud previa.
 
 ### Bloque IV — Suggestive (Nivel 2)
 
@@ -134,8 +135,10 @@ Reproducibilidad: el caso 16 ha sido re-ejecutado con datos World Bank descargad
 |---|------|----:|--:|------------|
 | 10 | Justicia (Estado de Derecho) | 0.2274 | 0.4775 | Ventana corta |
 | 28 | Fuga de cerebros | 0.0249 | 0.9975 | Ruido domina |
+| 13 | Políticas estratégicas (gasto militar) | 0.0821 | 0.1622 | **Reclasificado Weak→Trend tras re-ejecución iter 4 B-T2 con datos institucionales reales 2026-05-16** (p_perm=0.162 > 0.05, CI=[0.065, 0.100]). Antes Weak sintético (EDI=0.2972, p=0.0015). El aparato declara honestamente cuando los datos reales no sostienen la magnitud sintética. |
+| 11 | Movilidad (tráfico aéreo / TomTom) | 0.0599 | 0.9219 | **Confirmado Trend Nivel 1 tras re-ejecución iter 4 B-T2 con datos TomTom reales 2026-05-16** (p_perm=0.922 > 0.05, CI=[-0.392, 0.205]). Antes Weak sintético (EDI=0.1283, p=0.0020). Ruido domina señal de cierre bajo sonda Bilinear diffusion sobre datos reales. |
 
-**Casos en cuarentena por insuficiencia de datos.** Caso 26 (Starlink) se removió del Bloque V tras auditoría de `metrics.json` (phases.real): `val_steps = 1`, `ci_lo = ci_hi = edi.value = 0.6892` (CI bootstrap colapsado), `permutation_pvalue = 1.0`, `correlations.abm_obs = 0.0`. Con un único punto de validación el bootstrap colapsa y la permutación carece de grados de libertad: el EDI=0.689 es **artefacto numérico, no medición**. El caso 19 (Acidificación oceánica) compartió esa patología en versiones previas (cf. línea correspondiente en Bloque VI con `metrics.json` re-ejecutado a EDI≈0.00044, p_perm=0.43). La tesis declara estos casos en cuarentena/null por insuficiencia de datos hasta que el dataset admita un `val_steps ≥ 8` o se decida su reclasificación definitiva. Comando regenerador: `python3 09-simulaciones-edi/26_caso_starlink/src/validate.py`. El epíteto "exploratorio" no salva la clasificación como Trend; el caso queda reubicado en bloque de cuarentena.
+**Casos en cuarentena por insuficiencia de datos.** Caso 26 (Starlink) se removió del Bloque V tras auditoría de `metrics.json` (phases.real): `val_steps = 1`, `ci_lo = ci_hi = edi.value = 0.6892` (CI bootstrap colapsado), `permutation_pvalue = 1.0`, `correlations.abm_obs = 0.0`. Con un único punto de validación el bootstrap colapsa y la permutación carece de grados de libertad: el EDI=0.689 es **artefacto numérico, no medición**. El caso 19 (Acidificación oceánica) compartió esa patología en versiones previas (`metrics.json` mezcla de ejecuciones reportado como TENG-05) pero ha sido **reclasificado tras adversarial iter 4 2026-05-16 como falsificación local del aparato** (no como cuarentena ni null genuino): la re-ejecución coherente produjo EDI=-0.0047 con CI bootstrap [-0.0054, -0.0041] que excluye cero por la izquierda, indicando que el modelo acoplado predice estrictamente peor que el reducido bajo la sonda Revelle/calcificadores; véase nuevo Bloque VI.5 más abajo. La tesis declara el caso 26 (Starlink) en cuarentena hasta que el dataset admita un `val_steps ≥ 8`. Comando regenerador: `python3 09-simulaciones-edi/26_caso_starlink/src/validate.py`. El epíteto "exploratorio" no salva la clasificación como Trend; el caso queda reubicado en bloque de cuarentena.
 
 ### Bloque VI — Null (Nivel 0)
 
@@ -150,10 +153,17 @@ Reproducibilidad: el caso 16 ha sido re-ejecutado con datos World Bank descargad
 | 03 | Contaminación PM2.5 | -0.0109 | **Null genuino tras re-ejecución iter 3 con datos World Bank PM2.5 reales 2026-05-16** (EDI=-0.0109, p_perm=0.616, sonda dispersión-decaimiento). Reclasificado Weak→Null: con datos reales el aparato declara honestamente ausencia de cierre macro detectable bajo esta sonda. Comando regenerador: `python3 09-simulaciones-edi/03_caso_contaminacion/src/validate.py`. |
 | 12 | Paradigmas (ciencia) | -0.1536 | Reflexividad; null bajo régimen real-phase actual |
 | 17 | Océanos (temperatura) | -0.0154 | Sin sonda específica |
-| 19 | Acidificación oceánica | 0.00044 | **Null genuino tras re-ejecución canónica 2026-05-11** (EDI=0.00044, p_perm=0.433, CI=[0.00023, 0.00065], n_perm=2999). El `metrics.json` previo (`edi.value=0.7278`) era inconsistente internamente (TENG-05): mezclaba dos ejecuciones; los `errors` almacenados implicaban `computed_edi=-0.000191`. La re-ejecución coherente clasifica el caso como null. **Caveat de datos:** `data/dataset.csv` PMEL/NOAA no estaba versionado; se usó proxy sintético calibrado a estadísticas del run original. Reproducción bit-a-bit requiere fetch del CSV NOAA real. Block-permutation no implementada (i.i.d. Phipson-Smyth); con EDI≈0 y p=0.43 el resultado null tiene margen amplio. Detalle en `Bitacora/2026-05-11-sintesis-tesis/F5-A-caso19-reejecucion.md`. |
 | 23 | Erosión dialéctica | -1.0000 | Categoría mal definida |
 | 25 | Acuíferos | -0.1462 | Datos heterogéneos |
 | 29 | IoT | -0.8760 | Reflexividad técnica |
+
+### Bloque VI.5 — Falsificación local del aparato (sonda inadecuada con CI que excluye cero por la izquierda)
+
+**Tabla 5.7.8b.**
+
+| # | Caso | EDI | CI bootstrap | Comentario |
+|---|------|----:|--------------|-----------|
+| 19 | Acidificación oceánica | -0.0047 | [-0.0054, -0.0041] | **Falsificación local del aparato tras adversarial iter 4 2026-05-16.** Reclasificado de "Null genuino" (clasificación previa 2026-05-11 con EDI≈0) a "Falsificación local del aparato": el bootstrap del EDI **excluye cero por la izquierda**, indicando que el modelo acoplado predice estrictamente peor que el reducido en held-out, no que el efecto sea trivial. La inadecuación es de la **sonda Revelle/calcificadores para la serie Aloha pH**, no del dato; conforme a ASA Wasserstein-Lazar 2016 principio 5 ("scientific conclusions … should not be based only on whether a p-value passes a specific threshold"), el resultado se reporta como información sobre el aparato y no como ausencia de fenómeno. **Caveat de datos:** `data/dataset.csv` PMEL/NOAA no estaba versionado; proxy calibrado a estadísticas del run original. Reproducción bit-a-bit requiere fetch del CSV NOAA real. Comando regenerador: `python3 09-simulaciones-edi/19_caso_acidificacion_oceanica/src/validate.py`. Detalle en `Bitacora/2026-05-16-adversarial-downgrades/`. |
 
 ### Bloque VII — Controles de falsación (correctamente rechazados)
 

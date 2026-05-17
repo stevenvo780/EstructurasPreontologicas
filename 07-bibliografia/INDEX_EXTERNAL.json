@@ -359,6 +359,69 @@
       },
       "pagination_note": "Citation 'p. 76' refers to Cambridge University Press original edition. Not verifiable from available 32-page digital reprint. The section 'IT FEEDS ON NEGATIVE ENTROPY' falls in PDF segment 24-25 of the reprint. Original CUP edition has ~91 pages; p. 76 is plausible but not locally confirmed.",
       "thesis_relevance": "Fundamento para 05-aplicaciones/02-biologia-y-ecologia.md §0.1 cond. 3: metabolismo como intercambio de entropía negativa — negentropía como propiedad termodinámica de sistemas vivos"
+    },
+    {
+      "id": "gelman_loken2014",
+      "status": "local_pdf_verified",
+      "authors": [
+        "Gelman, Andrew",
+        "Loken, Eric"
+      ],
+      "title": "The Statistical Crisis in Science",
+      "subtitle": "Data-dependent analysis — a 'garden of forking paths' — explains why many statistically significant comparisons don't hold up",
+      "year": 2014,
+      "type": "journal_article",
+      "journal": "American Scientist",
+      "volume": 102,
+      "issue": 6,
+      "pages": "460-465",
+      "month": "November-December",
+      "doi": "10.1511/2014.111.460",
+      "issn": "0003-0996",
+      "open_access": true,
+      "license": "Author's personal copy hosted on author's Columbia University page (stat.columbia.edu/~gelman/)",
+      "local_path": "07-bibliografia/Gelman Loken - Statistical Crisis in Science (2014).pdf",
+      "local_file_size_kb": 6102,
+      "download_date": "2026-05-16",
+      "download_source": "https://sites.stat.columbia.edu/gelman/research/published/ForkingPaths.pdf",
+      "pdf_note": "High-res scan of journal article. Text extractable via pdftotext. Last page verifies p. 465 and Nov-Dec 2014.",
+      "abstract_verified": "Reports growing realization that statistically significant claims in scientific publications are routinely mistaken; introduces 'garden of forking paths' concept showing how multiple implicit analytical choices inflate false positives even without intentional p-hacking.",
+      "key_concept": "Garden of forking paths: researcher degrees of freedom in analytical choices that inflate false positive rates without explicit multiple comparisons",
+      "thesis_relevance": "Audita la objeción B del adversarial iter 4 (PASS 72): la cita sobre 'forking paths' era secundaria; este PDF permite verificarla contra fuente primaria y establecer páginas exactas para la citación"
+    },
+    {
+      "id": "yablo1998",
+      "status": "local_pdf_verified",
+      "authors": [
+        "Yablo, Stephen"
+      ],
+      "title": "Does Ontology Rest on a Mistake?",
+      "year": 1998,
+      "type": "journal_article",
+      "journal": "Aristotelian Society Supplementary Volume",
+      "volume": 72,
+      "issue": 1,
+      "pages": "229-261",
+      "doi": "10.1111/1467-8349.00044",
+      "issn": "0309-7013",
+      "publisher": "Wiley / Aristotelian Society",
+      "open_access": true,
+      "license": "Author's personal copy hosted on MIT personal page (mit.edu/~yablo/)",
+      "local_path": "07-bibliografia/Yablo - Does Ontology Rest on a Mistake (1998).pdf",
+      "local_file_size_kb": 149,
+      "download_date": "2026-05-16",
+      "download_source": "https://www.mit.edu/~yablo/om.pdf",
+      "pdf_note": "148 KB, clean text PDF from author's MIT page. pdftotext confirms full text starts 'DOES ONTOLOGY REST ON A MISTAKE? Stephen Yablo and Andre Gallois'.",
+      "abstract_verified": "Defends a version of Carnap's internal/external distinction freed from the analytic/synthetic distinction, reframed as the distinction between statements made within make-believe games and those made outside them (metaphorical/literal distinction). Argues that to determine ontological commitments we must ferret out all traces of non-literality; if no sensible project of doing that exists, there is no sensible project of Quinean ontology.",
+      "key_concepts": [
+        "Internal vs external questions (Carnap)",
+        "Make-believe games / figurative speech",
+        "Ontological commitment and non-literality",
+        "Irrealism about abstract objects"
+      ],
+      "companion_paper": "Andre Gallois response in same volume: DOI 10.1111/1467-8349.00045",
+      "philpapers_url": "https://philpapers.org/rec/YABDOR",
+      "thesis_relevance": "PASS 72 engagement-yablo: fundamento primario para defender que afirmaciones sobre estructuras pre-ontológicas son figural/internal (no comprometidas ontológicamente en sentido quiniano); permite auditar y refinar el capítulo de engagement con Yablo"
     }
   ]
 }

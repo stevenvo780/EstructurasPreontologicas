@@ -89,6 +89,12 @@ Cada escenario es falsable, fechado, con criterios públicos. La lista exhaustiv
 
 **Verificación:** cap 06-01 §2 + cap 04-05 (consolidación de limitaciones).
 
+### P7-bis. ¿Por qué 30 casos sintéticos justifican una ontología multiescalar? (BORRADOR-IA pendiente firma autoral H-J5/H-J6/H-J7)
+
+> **BORRADOR-IA pendiente firma autoral — reformulación post-adversarial 2026-05-16.** Respuesta honesta endurecida (opción (c) del adversarial iter 4): los 30 casos sintéticos del corpus inter-dominio **calibran el aparato** y mapean su cobertura; no constituyen demostración ontológica positiva. Los casos con datos reales (al cierre iter 5: 3 strong reales — Deforestación, Energía, Kessler — 3 null genuinos y 1 falsificación local del aparato en caso 19) son **la evidencia ontológica positiva real** de la tesis. El aparato cumple su rol de protocolo de admisión: declara strong cuando los datos lo soportan; null o falsificación cuando no. Mientras Jacob no firme la reformulación, la formulación canónica multiescalar previa permanece como vigente y esta respuesta opera como fallback honesto si el tribunal presiona sobre la asimetría sintético/real. Detalle: `Bitacora/2026-05-16-adversarial-downgrades/`.
+
+**Verificación:** cap 06-01 §1 (nota epistemológica BORRADOR-IA) + `Bitacora/2026-05-16-adversarial-downgrades/`.
+
 ### Banco extendido
 
 P8 (Wolfram), P9 (¿qué aporta frente a un materialismo conocido?), P10 (¿no estás reformulando emergentismo débil?), P11 (datos humanos reales en behavioral dynamics), P12 (revisión por pares externos pendiente) están en `06-cierre/_extendido/respuestas-tipo-defensa.md` con sus referencias paginadas.
