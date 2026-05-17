@@ -20,7 +20,9 @@
 - **EDI** (Effective Dependence Index) = 1 − RMSE_coupled / RMSE_no_ode, con prueba de permutación (n = 999) + bootstrap (n = 500) e intervención ablativa woodwardiana sobre el acoplamiento dinámico.
 - **Corpus de 40 casos** (30 inter-dominio + 10 inter-escala) con `validate.py` reproducible por caso y hashes de baseline.
 - **4 escenarios `overall_pass = True`** (3 con datos sintéticos calibrados a parámetros publicados + 1 con datos reales).
+- **Conteo corpus inter-dominio (30 casos, actualizado 2026-05-16):** 4 strong con `overall_pass`, 1 strong sin gate, 8 weak, 2 suggestive, **3 trend (antes 4)**, **9 null (antes 8)**, 3 controles de falsación rechazados.
 - **Caso 16 — Deforestación con datos REALES de World Bank API**: EDI = 0.5802 (rango Strong, p < 0.001). Es la primera verificación del marco con datos públicos no sintéticos.
+- **Caso 01 — Clima regional reclasificado Trend → Null tras re-ejecución con datos reales IPCC-calibrados (2026-05-16)**: EDI = -0.0007, p_perm = 0.998 bajo sonda Budyko-Sellers. Es ejemplo del aparato declarando honestamente ausencia de cierre cuando datos reales contradicen la expectativa previa (Trend con datos sintéticos). El aparato no es máquina de validar deseos.
 - **Hostile testing severo**: 0 / 2 000 falsos positivos del gate completo (C1–C5), Wilson 95 % CI = [0, 0.00191].
 
 ## 3. Dónde la tesis va más allá de tu carta

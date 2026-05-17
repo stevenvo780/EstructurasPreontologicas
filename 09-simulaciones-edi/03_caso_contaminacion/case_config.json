@@ -1,12 +1,12 @@
 {
-  "case_name": "Contaminación PM2.5",
+  "case_name": "Contaminaci\u00f3n PM2.5",
   "ode_model": "mean_reversion",
   "ode_key": "p",
   "series_key": "p",
   "log_transform": false,
   "loe": 3,
   "data": {
-    "csv": "data/dataset.csv",
+    "csv": "data/dataset_real.csv",
     "date_col": "date",
     "value_col": "pm25",
     "driver_cols": [

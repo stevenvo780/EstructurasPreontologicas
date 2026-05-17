@@ -173,7 +173,7 @@ El término **"pre-ontológico"** se entiende en sentido genético-epistemológi
 
 El aporte metodológico central es un instrumento computacional híbrido **ABM + ODE** que mide cierre operativo mediante EDI = 1 − RMSE_coupled / RMSE_no_ode, con prueba de permutación (999), bootstrap (500), y protocolo de validación robusta (C1-C5 más 8 criterios adicionales para *overall_pass*). El aparato se opera sobre cinco operadores formales (μ medición, G grafo, H hipergrafo, κ compresión, ε expansión) con pregunta paramétrica Q fechada y tolerancia explícita. **El aparato es invariante a la escala**: opera con la misma metodología desde la dinámica subatómica de espín-órbita (10⁻¹⁰ m, 10⁻¹⁵ s) hasta la dinámica gravitacional de cúmulos globulares (10²⁰ m, 10¹⁴ s).
 
-Se evaluaron **40 casos agregados en dos corpus complementarios**: (a) **corpus inter-dominio** con 30 casos en dominios físicos, biológicos, socioeconómicos, tecnoculturales y conductuales (4 strong con `overall_pass`, 1 strong sin gate, 8 weak, 2 suggestive, 4 trend, 8 null, 3 controles de falsación rechazados); (b) **corpus inter-escala** con 10 casos en 8 escalas distintas, **30 órdenes de magnitud** espaciales y temporales cubiertos, con **7 strong en 7 escalas distintas** (atómica, cuántica, bioquímica, celular oscilatoria, individual, astrofísica, astrofísica masiva), 1 weak y 2 nulls honestos. El aparato sobrevive hostile testing severo (0/2000 falsos positivos del gate completo bajo random walk masivo agregando los tres scripts canónicos N1+V4_06+N5, Wilson 95 % CI [0, 0.00191]; 0/12 circularidad detectada en test cruzado de sondas inter-escala). Validación lógica formal con suite ST de 24 teorías, seis hallazgos críticos detectados y corregidos.
+Se evaluaron **40 casos agregados en dos corpus complementarios**: (a) **corpus inter-dominio** con 30 casos en dominios físicos, biológicos, socioeconómicos, tecnoculturales y conductuales (4 strong con `overall_pass`, 1 strong sin gate, 8 weak, 2 suggestive, 3 trend, 9 null, 3 controles de falsación rechazados; caso 01 Clima reclasificado Trend→Null tras re-ejecución con datos reales IPCC-calibrados 2026-05-16, EDI=-0.0007); (b) **corpus inter-escala** con 10 casos en 8 escalas distintas, **30 órdenes de magnitud** espaciales y temporales cubiertos, con **7 strong en 7 escalas distintas** (atómica, cuántica, bioquímica, celular oscilatoria, individual, astrofísica, astrofísica masiva), 1 weak y 2 nulls honestos. El aparato sobrevive hostile testing severo (0/2000 falsos positivos del gate completo bajo random walk masivo agregando los tres scripts canónicos N1+V4_06+N5, Wilson 95 % CI [0, 0.00191]; 0/12 circularidad detectada en test cruzado de sondas inter-escala). Validación lógica formal con suite ST de 24 teorías, seis hallazgos críticos detectados y corregidos.
 
 **Los 40 casos son justificación operativa del marco tripartito general (ontológico + epistemológico + metodológico), no son la tesis.** La tesis son los tres marcos generales; el corpus muestra que las afirmaciones generales son ejecutables, discriminantes y transferibles. La generalidad no depende del tamaño del corpus.
 
@@ -197,7 +197,7 @@ The term **"pre-ontological"** is understood in a genetic-epistemological sense 
 
 The core methodological contribution is a hybrid computational instrument **ABM + ODE** that measures operational closure using EDI = 1 − RMSE_coupled / RMSE_no_ode, with permutation testing (999), bootstrap (500), and robust validation protocol (C1-C5 plus 8 additional criteria for *overall_pass*). The apparatus operates on five formal operators (μ measurement, G graph, H hypergraph, κ compression, ε expansion) with dated parametric question Q and explicit tolerance. **The apparatus is scale-invariant**: it operates with the same methodology from subatomic spin-orbit dynamics (10⁻¹⁰ m, 10⁻¹⁵ s) to gravitational dynamics of globular clusters (10²⁰ m, 10¹⁴ s).
 
-A total of **40 aggregate cases were evaluated across two complementary corpora**: (a) the **inter-domain corpus** with 30 cases across physical, biological, socioeconomic, technocultural, and behavioral domains (4 strong with `overall_pass`, 1 strong without gate, 8 weak, 2 suggestive, 4 trend, 8 null, 3 correctly rejected falsification controls); (b) the **inter-scale corpus** with 10 cases across 8 distinct scales, covering **30 orders of magnitude** spatially and temporally, with **7 strong cases in 7 distinct scales** (atomic, quantum, biochemical, oscillatory cellular, individual, astrophysical, massive astrophysical), 1 weak, and 2 honest nulls. The apparatus survives severe hostile testing (0/2000 false positives of the full gate under massive random walk testing aggregating the three canonical scripts N1+V4_06+N5, Wilson 95 % CI [0, 0.00191]; 0/12 circularity detected in cross-probe testing of inter-scale probes). Formal logical validation via ST suite of 24 theories, six critical findings detected and corrected.
+A total of **40 aggregate cases were evaluated across two complementary corpora**: (a) the **inter-domain corpus** with 30 cases across physical, biological, socioeconomic, technocultural, and behavioral domains (4 strong with `overall_pass`, 1 strong without gate, 8 weak, 2 suggestive, 3 trend, 9 null, 3 correctly rejected falsification controls; case 01 Climate reclassified Trend→Null after re-execution with real IPCC-calibrated data 2026-05-16, EDI=-0.0007); (b) the **inter-scale corpus** with 10 cases across 8 distinct scales, covering **30 orders of magnitude** spatially and temporally, with **7 strong cases in 7 distinct scales** (atomic, quantum, biochemical, oscillatory cellular, individual, astrophysical, massive astrophysical), 1 weak, and 2 honest nulls. The apparatus survives severe hostile testing (0/2000 false positives of the full gate under massive random walk testing aggregating the three canonical scripts N1+V4_06+N5, Wilson 95 % CI [0, 0.00191]; 0/12 circularity detected in cross-probe testing of inter-scale probes). Formal logical validation via ST suite of 24 theories, six critical findings detected and corrected.
 
 **The 40 cases are operational justification of the tripartite general framework (ontological + epistemological + methodological); they are not the thesis.** The thesis consists of the three general frameworks; the corpus shows that the general claims are executable, discriminating, and transferable. Generality does not depend on corpus size.
 
@@ -4564,8 +4564,8 @@ Mapa completo del paisaje de aplicaciones del marco como **ontología general mu
 | 4 | Strong sin gate completo | 1 | Microplásticos |
 | 3 | Weak | 8 | Políticas, Postverdad, Urbanización, Fósforo, Wikipedia, Epidemiología, Movilidad, Behavioral Dynamics (caso 30) |
 | 2 | Suggestive | 1 | Finanzas (Salinización reclasificada por AU-4: CI cruza cero + magnitud trivial) |
-| 1 | Trend | 3 | Justicia, Fuga cerebros, Clima |
-| 0a | Null genuino | 5 | Conciencia, Acidificación, Erosión, Acuíferos, IoT (`\|EDI\|<0.05` y `p_perm>0.05`) |
+| 1 | Trend | 2 | Justicia, Fuga cerebros |
+| 0a | Null genuino | 6 | Conciencia, Acidificación, Erosión, Acuíferos, IoT, Clima (caso 01 reclasificado Trend→Null tras re-ejecución con datos reales IPCC-calibrados 2026-05-16, EDI=-0.0007, p_perm=0.998) (`\|EDI\|<0.05` y `p_perm>0.05`) |
 | 0b | EDI negativo (sonda macro inadecuada) | 1 | Paradigmas (`EDI=-0.144`: ABM acoplado predice peor que reducido) |
 | 0c | Señal rechazada por gate C1-C5 | 2 | Contaminación, Océanos (`EDI>0` con `p_perm<0.05` pero `valid=False`) |
 | n.e. | Cuarentena por insuficiencia de datos | 1 | Starlink (val_steps=1) |
@@ -4666,7 +4666,6 @@ Reproducibilidad: el caso 16 ha sido re-ejecutado con datos World Bank descargad
 |---|------|----:|--:|------------|
 | 10 | Justicia (Estado de Derecho) | 0.2274 | 0.4775 | Ventana corta |
 | 28 | Fuga de cerebros | 0.0249 | 0.9975 | Ruido domina |
-| 01 | Clima regional | 0.0111 | 0.9990 | Sonda Budyko-Sellers insuficiente |
 
 **Casos en cuarentena por insuficiencia de datos.** Caso 26 (Starlink) se removió del Bloque V tras auditoría de `metrics.json` (phases.real): `val_steps = 1`, `ci_lo = ci_hi = edi.value = 0.6892` (CI bootstrap colapsado), `permutation_pvalue = 1.0`, `correlations.abm_obs = 0.0`. Con un único punto de validación el bootstrap colapsa y la permutación carece de grados de libertad: el EDI=0.689 es **artefacto numérico, no medición**. El caso 19 (Acidificación oceánica) compartió esa patología en versiones previas (cf. línea correspondiente en Bloque VI con `metrics.json` re-ejecutado a EDI≈0.00044, p_perm=0.43). La tesis declara estos casos en cuarentena/null por insuficiencia de datos hasta que el dataset admita un `val_steps ≥ 8` o se decida su reclasificación definitiva. Comando regenerador: `python3 09-simulaciones-edi/26_caso_starlink/src/validate.py`. El epíteto "exploratorio" no salva la clasificación como Trend; el caso queda reubicado en bloque de cuarentena.
 
@@ -4678,6 +4677,7 @@ Reproducibilidad: el caso 16 ha sido re-ejecutado con datos World Bank descargad
 
 | # | Caso | EDI | Comentario |
 |---|------|----:|-----------|
+| 01 | Clima regional | -0.0007 | **Null genuino tras re-ejecución con datos reales IPCC-calibrados 2026-05-16** (EDI=-0.0007, p_perm=0.998, sonda Budyko-Sellers). Reclasificado Trend→Null: con datos reales el aparato declara honestamente ausencia de cierre macro detectable bajo esta sonda. Comando regenerador: `python3 09-simulaciones-edi/01_caso_clima/src/validate.py`. |
 | 02 | Conciencia global | -0.1165 | Datos especulativos LoE=1 |
 | 03 | Contaminación PM2.5 | -0.0901 | Sin estructura macro detectable bajo régimen real-phase actual |
 | 12 | Paradigmas (ciencia) | -0.1536 | Reflexividad; null bajo régimen real-phase actual |
@@ -6017,7 +6017,7 @@ Una entidad **viva** es un **atractor autopoiético materialmente sostenido** qu
 
 1. **cierre operacional**: el sistema produce los componentes que lo constituyen (Maturana-Varela 1980, *Autopoiesis and Cognition*, p. 79);
 2. **acoplamiento estructural**: mantiene su organización bajo perturbación del entorno con tolerancia identificable (cap 02-04 §3);
-3. **metabolismo material**: intercambia materia y energía con el entorno preservando su forma (Schrödinger 1944, p. 76: la vida se mantiene "negentropía");
+3. **metabolismo material**: intercambia materia y energía con el entorno preservando su forma (Schrödinger 1944, *What Is Life?*, cap. 6, secc. "IT FEEDS ON 'NEGATIVE ENTROPY'": *"What an organism feeds upon is negative entropy"* — p. 76 ed. CUP original no verificable en PDF disponible localmente; texto confirmado en 07-bibliografia/Schrödinger - What Is Life (1944).pdf);
 4. **reproducción** (en sentido amplio: replicación, división, transmisión de información estructural): el patrón se transmite a nuevos sustratos;
 5. **historia evolutiva**: la organización tiene origen en linajes con descendencia con modificación.
 
@@ -7727,8 +7727,8 @@ La tesis queda demostrada cuando se cumplen siete condiciones simultáneas. Cada
 | Strong (sin gate) | 1 | Microplásticos (0.782) |
 | Weak | 8 | Políticas, Postverdad, Urbanización, Fósforo, Wikipedia, Epidemiología, Movilidad, Behavioral Dynamics (caso 30 v2) |
 | Suggestive | 1 | Finanzas (Salinización reclasificada por AU-4 — CI cruza cero + magnitud trivial) |
-| Trend | 4 | Justicia, Starlink, Fuga cerebros, Clima |
-| Null genuino | 5 | Conciencia, Acidificación, Erosión, Acuíferos, IoT |
+| Trend | 3 | Justicia, Starlink, Fuga cerebros |
+| Null genuino | 6 | Conciencia, Acidificación, Erosión, Acuíferos, IoT, Clima (caso 01 Clima reclasificado Trend→Null tras re-ejecución con datos reales IPCC-calibrados 2026-05-16, EDI=-0.0007) |
 | EDI negativo (sonda inadecuada) | 1 | Paradigmas (EDI=-0.144) |
 | Señal rechazada por gate C1-C5 | 2 | Contaminación, Océanos (EDI>0, p<0.05, valid=False) |
 | Falsación rechazada | 3 | Exogeneidad, No-estacionariedad, Observabilidad |

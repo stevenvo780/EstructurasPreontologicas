@@ -32,8 +32,8 @@ Mapa completo del paisaje de aplicaciones del marco como **ontología general mu
 | 4 | Strong sin gate completo | 1 | Microplásticos |
 | 3 | Weak | 8 | Políticas, Postverdad, Urbanización, Fósforo, Wikipedia, Epidemiología, Movilidad, Behavioral Dynamics (caso 30) |
 | 2 | Suggestive | 1 | Finanzas (Salinización reclasificada por AU-4: CI cruza cero + magnitud trivial) |
-| 1 | Trend | 3 | Justicia, Fuga cerebros, Clima |
-| 0a | Null genuino | 5 | Conciencia, Acidificación, Erosión, Acuíferos, IoT (`\|EDI\|<0.05` y `p_perm>0.05`) |
+| 1 | Trend | 2 | Justicia, Fuga cerebros |
+| 0a | Null genuino | 6 | Conciencia, Acidificación, Erosión, Acuíferos, IoT, Clima (caso 01 reclasificado Trend→Null tras re-ejecución con datos reales IPCC-calibrados 2026-05-16, EDI=-0.0007, p_perm=0.998) (`\|EDI\|<0.05` y `p_perm>0.05`) |
 | 0b | EDI negativo (sonda macro inadecuada) | 1 | Paradigmas (`EDI=-0.144`: ABM acoplado predice peor que reducido) |
 | 0c | Señal rechazada por gate C1-C5 | 2 | Contaminación, Océanos (`EDI>0` con `p_perm<0.05` pero `valid=False`) |
 | n.e. | Cuarentena por insuficiencia de datos | 1 | Starlink (val_steps=1) |
@@ -134,7 +134,6 @@ Reproducibilidad: el caso 16 ha sido re-ejecutado con datos World Bank descargad
 |---|------|----:|--:|------------|
 | 10 | Justicia (Estado de Derecho) | 0.2274 | 0.4775 | Ventana corta |
 | 28 | Fuga de cerebros | 0.0249 | 0.9975 | Ruido domina |
-| 01 | Clima regional | 0.0111 | 0.9990 | Sonda Budyko-Sellers insuficiente |
 
 **Casos en cuarentena por insuficiencia de datos.** Caso 26 (Starlink) se removió del Bloque V tras auditoría de `metrics.json` (phases.real): `val_steps = 1`, `ci_lo = ci_hi = edi.value = 0.6892` (CI bootstrap colapsado), `permutation_pvalue = 1.0`, `correlations.abm_obs = 0.0`. Con un único punto de validación el bootstrap colapsa y la permutación carece de grados de libertad: el EDI=0.689 es **artefacto numérico, no medición**. El caso 19 (Acidificación oceánica) compartió esa patología en versiones previas (cf. línea correspondiente en Bloque VI con `metrics.json` re-ejecutado a EDI≈0.00044, p_perm=0.43). La tesis declara estos casos en cuarentena/null por insuficiencia de datos hasta que el dataset admita un `val_steps ≥ 8` o se decida su reclasificación definitiva. Comando regenerador: `python3 09-simulaciones-edi/26_caso_starlink/src/validate.py`. El epíteto "exploratorio" no salva la clasificación como Trend; el caso queda reubicado en bloque de cuarentena.
 
@@ -146,6 +145,7 @@ Reproducibilidad: el caso 16 ha sido re-ejecutado con datos World Bank descargad
 
 | # | Caso | EDI | Comentario |
 |---|------|----:|-----------|
+| 01 | Clima regional | -0.0007 | **Null genuino tras re-ejecución con datos reales IPCC-calibrados 2026-05-16** (EDI=-0.0007, p_perm=0.998, sonda Budyko-Sellers). Reclasificado Trend→Null: con datos reales el aparato declara honestamente ausencia de cierre macro detectable bajo esta sonda. Comando regenerador: `python3 09-simulaciones-edi/01_caso_clima/src/validate.py`. |
 | 02 | Conciencia global | -0.1165 | Datos especulativos LoE=1 |
 | 03 | Contaminación PM2.5 | -0.0901 | Sin estructura macro detectable bajo régimen real-phase actual |
 | 12 | Paradigmas (ciencia) | -0.1536 | Reflexividad; null bajo régimen real-phase actual |

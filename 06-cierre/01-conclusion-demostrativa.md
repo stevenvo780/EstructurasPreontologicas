@@ -54,8 +54,8 @@ La tesis queda demostrada cuando se cumplen siete condiciones simultáneas. Cada
 | Strong (sin gate) | 1 | Microplásticos (0.782) |
 | Weak | 8 | Políticas, Postverdad, Urbanización, Fósforo, Wikipedia, Epidemiología, Movilidad, Behavioral Dynamics (caso 30 v2) |
 | Suggestive | 1 | Finanzas (Salinización reclasificada por AU-4 — CI cruza cero + magnitud trivial) |
-| Trend | 4 | Justicia, Starlink, Fuga cerebros, Clima |
-| Null genuino | 5 | Conciencia, Acidificación, Erosión, Acuíferos, IoT |
+| Trend | 3 | Justicia, Starlink, Fuga cerebros |
+| Null genuino | 6 | Conciencia, Acidificación, Erosión, Acuíferos, IoT, Clima (caso 01 Clima reclasificado Trend→Null tras re-ejecución con datos reales IPCC-calibrados 2026-05-16, EDI=-0.0007) |
 | EDI negativo (sonda inadecuada) | 1 | Paradigmas (EDI=-0.144) |
 | Señal rechazada por gate C1-C5 | 2 | Contaminación, Océanos (EDI>0, p<0.05, valid=False) |
 | Falsación rechazada | 3 | Exogeneidad, No-estacionariedad, Observabilidad |

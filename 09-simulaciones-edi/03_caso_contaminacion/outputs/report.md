@@ -1,6 +1,6 @@
 # Reporte de Validación — Contaminación PM2.5
 
-- generated_at: 2026-02-16T01:29:22.237054Z
+- generated_at: 2026-05-17T04:37:57.998987Z
 
 ## Fase synthetic
 - **overall_pass**: False
@@ -54,42 +54,42 @@
 - **overall_pass**: False
 
 ### EDI
-- valor: -0.0038
-- bootstrap_mean: -0.0040
-- CI 95%: [-0.0209, 0.0116]
-- weighted_value (LoE factor 0.60): -0.0023
+- valor: -0.0109
+- bootstrap_mean: -0.0110
+- CI 95%: [-0.0752, 0.0655]
+- weighted_value (LoE factor 0.60): -0.0066
 - válido (0.30-0.90): False
 
 ### Symploké y CR
-- internal: 0.9966
-- external: 0.9968
-- CR: 0.9999
+- internal: 0.9863
+- external: 0.8998
+- CR: 1.0961
 - CR indicador (>2.0 = frontera nítida): False
 
 ### Criterios C1-C5
-- c1_convergence: True
+- c1_convergence: False
 - c2_robustness: True
 - c3_replication: True
 - c4_validity: True
 - c5_uncertainty: True
 
 ### Errores
-- rmse_abm: 2.9508
-- rmse_abm_no_ode: 2.9396
-- rmse_ode: 3.2334
-- rmse_reduced: 3.2946
-- threshold: 3.2834
+- rmse_abm: 4.0971
+- rmse_abm_no_ode: 4.0527
+- rmse_ode: 4.1826
+- rmse_reduced: 4.0836
+- threshold: 3.8703
 
 ### Calibración
 - forcing_scale: 0.9900
-- macro_coupling: 0.1000
-- ode_coupling_strength: 0.0800
+- macro_coupling: 0.5000
+- ode_coupling_strength: 0.3000
 - abm_feedback_gamma: 0.0500
 - damping: 0.9500
 - ode_alpha: 0.0010
 - ode_beta: 0.0010
 - assimilation_strength: 0.0000
-- calibration_rmse: 0.7927
+- calibration_rmse: 0.8699
 - ode_rolling: None
 
 ### Interpretación

@@ -1,5 +1,5 @@
 {
-  "case_name": "Acidificación Oceánica",
+  "case_name": "Acidificaci\u00f3n Oce\u00e1nica",
   "ode_model": "acidification",
   "ode_key": "ac",
   "series_key": "ac",
@@ -45,7 +45,9 @@
     "n_perm": 999,
     "n_boot": 500,
     "n_refine": 5000,
-    "n_runs": 5
+    "n_runs": 5,
+    "block_permutation": true,
+    "block_size": 3
   },
   "abm": {
     "diffusion": 0.2,
