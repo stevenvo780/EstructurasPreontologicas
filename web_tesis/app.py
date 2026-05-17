@@ -132,6 +132,36 @@ def _case_summary_dict(case: dict[str, Any]) -> dict[str, Any]:
     }
 
 
+def _phases_compact_dict(case: dict[str, Any]) -> dict[str, Any]:
+    """Subset comparable de fases (synthetic vs real) para la UI.
+
+    Solo expone los campos que el panel comparativo necesita: EDI, p-perm,
+    IC95, categoría/nivel y overall_pass. Mantiene phase_order canónico.
+    """
+    phases = case.get("phases") or {}
+    if not isinstance(phases, dict):
+        return {}
+    out: dict[str, Any] = {}
+    for name, ph in phases.items():
+        if not isinstance(ph, dict):
+            continue
+        edi = ph.get("edi") or {}
+        sym = ph.get("symploke") or {}
+        tax = ph.get("taxonomy") or {}
+        out[name] = {
+            "overall_pass": bool(ph.get("overall_pass", False)),
+            "edi": edi.get("value"),
+            "edi_ci_lo": edi.get("ci_lo"),
+            "edi_ci_hi": edi.get("ci_hi"),
+            "pvalue": edi.get("pvalue"),
+            "significant": edi.get("significant"),
+            "cr": sym.get("cr"),
+            "category": tax.get("category"),
+            "nivel": tax.get("nivel"),
+        }
+    return out
+
+
 def _load_primary_arrays(case_name: str) -> dict[str, Any] | None:
     """Carga primary_arrays.json si existe; devuelve solo la fase real."""
     pa_path = SIM_ROOT / case_name / "outputs" / "primary_arrays.json"
@@ -343,6 +373,7 @@ async def api_case(case_id: str, refresh: bool = Query(default=False)):
         {
             **_case_summary_dict(case),
             "phase_order": case.get("phase_order", []),
+            "phases": _phases_compact_dict(case),
             "report_html": case_report_html(case),
             "thesis_readme_html": case_readme_html(case),
             "thesis_docs_html": [

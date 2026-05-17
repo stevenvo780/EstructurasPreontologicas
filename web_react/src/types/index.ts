@@ -70,8 +70,21 @@ export interface Case {
   loe?: number | null;
 }
 
+export interface PhaseSummary {
+  overall_pass: boolean;
+  edi: number | null;
+  edi_ci_lo?: number | null;
+  edi_ci_hi?: number | null;
+  pvalue: number | null;
+  significant?: boolean | null;
+  cr?: number | null;
+  category?: string | null;
+  nivel?: number | null;
+}
+
 export interface CaseDetail extends Case {
   phase_order?: string[];
+  phases?: Record<string, PhaseSummary>;
   report_html?: string;
   thesis_readme_html?: string;
   thesis_docs_html?: { title: string; html: string }[];

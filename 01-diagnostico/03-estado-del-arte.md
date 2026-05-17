@@ -118,7 +118,7 @@ A partir del mapa anterior, la contribución específica de la tesis al estado d
 1. **Marco ontológico unificado** — irrealismo operativo de estructuras pre-ontológicas como vía media entre realismo metafísico y anti-realismo, con materialidad de soportes y filtro empírico de admisión.
 2. **Aparato formal mínimo** — cinco operadores (μ, G, H, κ, ε) suficientes para auditar entidades sin sobrecarga metafísica (capítulo 03-01).
 3. **Métrica empírica EDI** — cierre operativo κ operacionalizado vía intervención ablativa con permutación + bootstrap + protocolo C1-C5 + 8 condiciones adicionales para `overall_pass=True`.
-4. **Corpus EDI multidominio** — 30 casos heterogéneos cubriendo física, biología, economía, política, tecnología, cultura, conducta humana; 5 strong, 7 weak, 2 suggestive, 4 trend, 8 null, 3 controles de falsación rechazados.
+4. **Corpus EDI multidominio** — 30 casos heterogéneos cubriendo física, biología, economía, política, tecnología, cultura, conducta humana; 6 strong gate completo, 1 strong sin gate, 7 weak con disclosure, 0 suggestive, 4 trend, 8 null subdivididos en 6 genuinos + 1 EDI negativo + 1 falsificación local, 3 controles de falsación rechazados (cifras tras iter 7 B-T2 2026-05-17).
 5. **Discriminación pública contra rivales identificables** — capítulo 04-01 confronta 14 posiciones rivales con celdas comparativas explícitas y predicciones discriminantes.
 
 Cada punto es contribución verificable, no afirmación retórica.

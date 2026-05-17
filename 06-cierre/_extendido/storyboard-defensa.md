@@ -110,12 +110,12 @@ created: 2026-05-16
 
 ### Slide 11 — Cifras agregadas del corpus inter-dominio (Tabla 6.1.1)
 
-- 4 strong con gate completo: Energía 0.650, Deforestación 0.602, Kessler 0.353, Riesgo Biológico 0.333.
-- 1 strong sin gate: Microplásticos 0.782.
-- 8 weak, 1 suggestive, 4 trend.
-- 5 null genuinos + 1 EDI negativo (Paradigmas −0.144) + 2 rechazados por gate C1-C5 (Contaminación, Océanos).
+- 6 strong con gate completo (post-iter-7 B-T2 2026-05-17): Energía 0.650, Deforestación 0.602, Kessler 0.353, Riesgo Biológico 0.333, Urbanización 0.337 (caso 18 iter 5), Microplásticos 0.806 (caso 24 iter 7).
+- 1 strong sin gate: Starlink 0.7575 (caso 26 promovido Trend→Strong-sin-gate iter 7 con CI bootstrap estable [0.741, 0.775]).
+- 7 weak con disclosure (incluye Océanos caso 17 promovido Null→Weak iter 7 con `valid=False`), 0 suggestive, 4 trend.
+- 6 null genuinos (incluye Conciencia caso 02 confirmado iter 7) + 1 EDI negativo (Paradigmas −0.144) + 1 falsificación local del aparato (Acidificación oceánica caso 19 iter 4) + 0 rechazados por gate C1-C5 (Océanos promovido iter 7).
 - 3 controles de falsación rechazados (Exogeneidad, No-estacionariedad, Observabilidad).
-- Nota: composición invariante a rejilla de umbrales 0.05-0.15 × 0.20-0.40 (F06-03).
+- Nota: composición invariante a rejilla de umbrales 0.05-0.15 × 0.20-0.40 (F06-03) bajo régimen sintético; iter 7 consolida los upgrades reales (09 Finanzas, 17 Océanos, 18 Urbanización, 22 Fósforo, 24 Microplásticos, 26 Starlink) frente a downgrades reales (01 Clima, 03 Contaminación, 13 Políticas).
 - Figura: `figures/corpus/corpus_edi_bars.svg` + `figures/mermaid_svg/figura_06.svg` (pie 30 casos).
 - → cap 06-01 §1 Condición 5 (Tabla 6.1.1) + Tabla.
 
@@ -250,7 +250,7 @@ Selección mínima de piezas no comprimibles:
 - **Slide 1** — Portada con tesis en una frase + autor/director (Slide 1+3 fundidos).
 - **Slide 2** — Aparato (figura `figura_02.svg` + 5 operadores μ, G, H, κ, ε + EDI = 1 − RMSE_coupled / RMSE_no_ode).
 - **Slide 3** — 7 condiciones de demostración en una tabla (capítulo verificador + estado).
-- **Slide 4** — Cifras canónicas inter-dominio: 4 strong (Energía 0.650, Deforestación 0.602, Kessler 0.353, Riesgo Biológico 0.333) + 3 controles rechazados (figura `corpus_edi_bars.svg`).
+- **Slide 4** — Cifras canónicas inter-dominio (post-iter-7 2026-05-17): 6 strong gate completo (Energía 0.650, Deforestación 0.602, Kessler 0.353, Riesgo Biológico 0.333, Urbanización 0.337, Microplásticos 0.806) + 1 strong sin gate (Starlink 0.7575) + 3 controles rechazados (figura `corpus_edi_bars.svg`).
 - **Slide 5** — Corpus inter-escala: 7 strong en 7 escalas + 30 órdenes de magnitud + aclaración de datos sintéticos (figura `corpus_multiescala_scatter.svg`).
 - **Slide 6** — Hostile testing: 0/2000 (Wilson 95 % CI [0, 0.00191]) + 0/12 circularidad + 3/3 controles rechazados.
 - **Slide 7** — 5 escenarios falsables canónicos (1.a, 1.b, 2, 3, prioridad histórica) en una sola viñeta cada uno.

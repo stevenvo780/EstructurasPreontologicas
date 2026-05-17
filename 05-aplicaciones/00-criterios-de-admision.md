@@ -58,6 +58,35 @@ La distinción permite que la hoja de ruta (capítulo 06-03) priorice exactament
 
 Una aplicación que solo renombra el fenómeno con vocabulario del marco sin producir predicción discriminante es candidata a sustitución nominal. La obligación de criterio de elevación obliga a articular la diferencia.
 
+## 3.bis. Modo técnico-ejecutado: tercera categoría operativa
+
+[BORRADOR-IA · requires: H-J* — integración 2026-05-17 tras audit process-verifier cap 05] La dicotomía demostrativo/programático cubre los casos del manuscrito principal (§4.1 y §4.2), pero **no captura el régimen bajo el cual operan los 40 casos del corpus EDI** (30 inter-dominio + 10 inter-escala, capítulos 05-06 y 05-07). Para esos casos se reconoce explícitamente una tercera categoría operativa: **modo técnico-ejecutado**.
+
+### 3.bis.1. Definición
+
+Un caso está en modo técnico-ejecutado si:
+
+1. **El aparato EDI se ejecuta completo**: sonda ODE + ABM contrafáctico + permutación (N ≥ 999) + bootstrap (N ≥ 500) + protocolo C1-C5 (13 condiciones simultáneas), produciendo `metrics.json` reproducible con comando declarado.
+2. **NO se construye dossier completo de catorce componentes** del §1: faltan típicamente predicción discriminante fechada con rival específico, intervención discriminante ejecutable empíricamente, traducción B↔L3 desarrollada por extenso, operador ε con protocolo de reapertura caso-específico, y/o comparación rival con tabla de discriminación caso-por-caso.
+
+### 3.bis.2. Justificación
+
+El corpus de 30 casos inter-dominio + 10 inter-escala opera en este modo por diseño metodológico: la pregunta que el corpus responde no es ontológica fuerte («este atractor existe en sentido pleno bajo dossier de catorce componentes»), sino **operativa de cobertura del aparato** («el aparato EDI discrimina señal acoplada de baseline desacoplado bajo permutación y gate C1-C5 en este dominio/escala, con tasa de falsos positivos acotada por hostile testing»). La discriminación es protocolar (permutación + gate + Wilson CI), no dossier ontológico fuerte. Construir dossier de catorce componentes para los 40 casos excedería el alcance de la tesis y, por la genealogía declarada en el §1 nota inicial, repetiría el problema de ad hoc rescue tipo 3 al escalar.
+
+### 3.bis.3. Relación con los otros modos
+
+| Modo | Aparato EDI ejecutado | Dossier 14 componentes | Pretensión filosófica | Casos |
+|---|---|---|---|---|
+| Demostrativo | Sí | Completo y sustantivo | Ontológica fuerte: el atractor es patrón material realmente existente bajo dossier auditado | 1 (Warren, cap 05-05) |
+| Programático | No (o piloto parcial) | Conjeturado con criterio de elevación | Conjetura articulada con plan de prueba; no demuestra | 4 (caps 05-01 a 05-04) |
+| **Técnico-ejecutado** | **Sí, completo y reproducible** | **No (mapeo de cobertura, no dossier ontológico)** | **Operativa: el aparato discrimina y mapea cobertura del marco a esta escala/dominio** | **40 (corpus 05-06 + 05-07)** |
+
+El modo técnico-ejecutado **coincide con la reformulación opción (c) suave** del cierre `06-01` y la nota epistemológica BORRADOR-IA de `06-02 §3 P7-bis`: los 40 casos son **mapa de cobertura del aparato y calibración bidireccional**, no demostración ontológica adicional. La afirmación «ontología general multiescalar» se sostiene operativamente sobre los casos con datos públicos reales (subconjunto B-T2 + Warren); los demás técnicos-ejecutados son evidencia de transferibilidad estructural del aparato sin reentrenar arquitectura, con falsos positivos acotados por hostile testing (Wilson 95 % CI [0, 0.00191] sobre 0/2000 random walk).
+
+### 3.bis.4. Marca obligatoria
+
+Un capítulo o caso en modo técnico-ejecutado debe declararlo explícitamente y referenciar su `metrics.json` reproducible. La marca distingue cobertura operativa del aparato (admisible) de dossier ontológico completo (no reclamado).
+
 ## 4. Inventario de aplicaciones del manuscrito
 
 ### 4.1. Caso ancla canónico (modo demostrativo)
@@ -80,6 +109,10 @@ Una aplicación que solo renombra el fenómeno con vocabulario del marco sin pro
 | 05-02 | Biología y ecología | PROGRAMÁTICO | Atractores de regulación con bifurcaciones empíricas en datos publicados; rival principal: reduccionismo molecular o holismo ecológico inflado |
 | 05-03 | Sistemas técnicos distribuidos | PROGRAMÁTICO | Modelo dinámico cuantitativo de sistema distribuido con predicción de fallo verificable; rival: arquitectura sin dependencias dinámicas |
 | 05-04 | Instituciones, mercado, Estado | PROGRAMÁTICO | Atractores institucionales con bifurcaciones en datos históricos; rival: individualismo metodológico o holismo trascendental |
+
+### 4.3. Corpus técnico-ejecutado (modo técnico-ejecutado)
+
+[BORRADOR-IA · requires: H-J* — integración 2026-05-17] El corpus EDI agregado opera en **modo técnico-ejecutado** según §3.bis. Se compone de los 30 casos inter-dominio (capítulo 05-07, mapa de aplicaciones-corpus) y 10 casos inter-escala (capítulo 05-06). Cada caso tiene `metrics.json` reproducible bajo el comando declarado en su `src/validate.py`. La cobertura, gates C1-C5 y reclasificaciones bidireccionales se reportan en los capítulos respectivos y en `09-simulaciones-edi/Evaluacion_Modelos_Dominio.md`. Esta capa no constituye dossier de catorce componentes y no se reclama como tal; constituye **mapeo de cobertura del aparato** según la definición del §3.bis.
 
 ## 5. Política de extensión
 

@@ -167,6 +167,119 @@ export default function CaseDetail() {
         />
       </section>
 
+      {/* Panel comparativo Sintético vs Real */}
+      {c.phases && c.phases.synthetic && c.phases.real && (
+        <section className="card p-5 mb-6">
+          <h3 className="font-semibold text-ink-800 dark:text-ink-100 mb-3 flex items-center gap-2">
+            <Layers className="w-4 h-4 text-accent-500" />
+            Sintético vs Real
+            <span className="text-xs font-normal text-ink-500 dark:text-ink-400">
+              (mismo protocolo, dos sustratos de datos)
+            </span>
+          </h3>
+          <div className="overflow-x-auto">
+            <table className="w-full text-sm">
+              <thead>
+                <tr className="text-left text-xs uppercase tracking-wider text-ink-500 dark:text-ink-400 border-b border-ink-200 dark:border-ink-800">
+                  <th className="py-2 pr-3 font-medium">Fase</th>
+                  <th className="py-2 px-3 font-medium tabular-nums">EDI</th>
+                  <th className="py-2 px-3 font-medium tabular-nums">IC 95%</th>
+                  <th className="py-2 px-3 font-medium tabular-nums">p-perm</th>
+                  <th className="py-2 px-3 font-medium">Categoría</th>
+                  <th className="py-2 px-3 font-medium">overall_pass</th>
+                </tr>
+              </thead>
+              <tbody className="font-mono text-[13px]">
+                {(['synthetic', 'real'] as const).map((k) => {
+                  const ph = c.phases![k]!;
+                  const ci =
+                    ph.edi_ci_lo != null && ph.edi_ci_hi != null
+                      ? `[${ph.edi_ci_lo.toFixed(3)}, ${ph.edi_ci_hi.toFixed(3)}]`
+                      : '—';
+                  return (
+                    <tr
+                      key={k}
+                      className="border-b border-ink-100 dark:border-ink-800/60 last:border-0"
+                    >
+                      <td className="py-2 pr-3 font-sans">
+                        <span
+                          className={cn(
+                            'badge',
+                            k === 'real'
+                              ? 'bg-success/15 text-success'
+                              : 'bg-ink-200 dark:bg-ink-800 text-ink-700 dark:text-ink-300'
+                          )}
+                        >
+                          {k === 'real' ? 'Real' : 'Sintético'}
+                        </span>
+                      </td>
+                      <td className="py-2 px-3 tabular-nums">
+                        {ph.edi != null ? ph.edi.toFixed(4) : '—'}
+                      </td>
+                      <td className="py-2 px-3 tabular-nums text-ink-600 dark:text-ink-400">
+                        {ci}
+                      </td>
+                      <td
+                        className={cn(
+                          'py-2 px-3 tabular-nums',
+                          ph.pvalue != null && ph.pvalue < 0.05
+                            ? 'text-success'
+                            : 'text-ink-600 dark:text-ink-400'
+                        )}
+                      >
+                        {ph.pvalue != null ? ph.pvalue.toFixed(4) : '—'}
+                      </td>
+                      <td className="py-2 px-3 font-sans capitalize">
+                        {ph.category ?? '—'}
+                        {ph.nivel != null && (
+                          <span className="ml-1 text-xs text-ink-500 dark:text-ink-400">
+                            (N{ph.nivel})
+                          </span>
+                        )}
+                      </td>
+                      <td className="py-2 px-3 font-sans">
+                        {ph.overall_pass ? (
+                          <span className="inline-flex items-center gap-1 text-success">
+                            <CheckCircle2 className="w-3.5 h-3.5" /> PASS
+                          </span>
+                        ) : (
+                          <span className="inline-flex items-center gap-1 text-ink-500 dark:text-ink-400">
+                            <XCircle className="w-3.5 h-3.5" /> FAIL
+                          </span>
+                        )}
+                      </td>
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
+          </div>
+          {(() => {
+            const s = c.phases!.synthetic!;
+            const r = c.phases!.real!;
+            if (s.edi == null || r.edi == null) return null;
+            const delta = r.edi - s.edi;
+            return (
+              <p className="text-xs text-ink-500 dark:text-ink-400 mt-3 leading-relaxed">
+                Δ EDI (real − sintético) ={' '}
+                <span
+                  className={cn(
+                    'font-mono font-semibold',
+                    delta >= 0 ? 'text-success' : 'text-danger'
+                  )}
+                >
+                  {delta >= 0 ? '+' : ''}
+                  {delta.toFixed(4)}
+                </span>
+                . El protocolo es el mismo en ambas fases; la diferencia mide el efecto del
+                sustrato de datos (sintético calibrado vs serie empírica) sobre el cierre
+                operativo κ.
+              </p>
+            );
+          })()}
+        </section>
+      )}
+
       {/* Charts */}
       {hasArrays && (
         <section className="card p-5 mb-6">

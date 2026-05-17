@@ -125,12 +125,12 @@ footer: "U. de Antioquia · 2026"
 
 # Corpus inter-dominio — Tabla 6.1.1
 
-- 4 strong con gate: Energía **0.650**, Deforestación **0.602**, Kessler **0.353**, Riesgo Biológico **0.333**
-- 1 strong sin gate: Microplásticos **0.782**
-- 8 weak · 1 suggestive · 4 trend · 5 null genuinos
-- 1 EDI negativo (Paradigmas −0.144) + 2 rechazados por C1-C5
+- 6 strong con gate (post-iter-7 B-T2 2026-05-17): Energía **0.650**, Deforestación **0.602**, Kessler **0.353**, Riesgo Biológico **0.333**, Urbanización **0.337**, Microplásticos **0.806**
+- 1 strong sin gate: Starlink **0.7575** (CI estable, gate C1-C5 no superado — disclosure)
+- 7 weak con disclosure (incluye Océanos iter 7 `valid=False`) · 0 suggestive · 4 trend · 6 null genuinos
+- 1 EDI negativo (Paradigmas −0.144) + 1 falsificación local (Acidificación caso 19) + 0 rechazados por C1-C5
 - 3 controles de falsación rechazados
-- Composición invariante a rejilla 0.05-0.15 × 0.20-0.40 (F06-03)
+- Composición invariante a rejilla 0.05-0.15 × 0.20-0.40 (F06-03) bajo régimen sintético
 - Figura: `corpus_edi_bars.svg` + `figura_06.svg`
 
 <!-- speaker notes: subrayar que la composición no depende de los umbrales elegidos; F06-03 documenta la invariancia. -->

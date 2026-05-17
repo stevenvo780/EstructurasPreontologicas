@@ -16,7 +16,7 @@ Listado consolidado de **todas las limitaciones que la tesis declara explícitam
 
 | # | Limitación | Origen | Resolución actual | Entregable |
 |---|-----------|--------|-------------------|------------|
-| L1 | p-value mal calibrado (tasa empírica de tipo I ≈ 24 %, no 5 %) | Hostile testing N3 | Cerrada metodológicamente: el módulo `common/calibration.py` implementa block bootstrap (Politis y Romano 1994), Newey-West HAC (Newey y West 1987) y corrección Holm-Bonferroni (Holm 1979, "A simple sequentially rejective multiple test procedure", *Scand. J. Statist.* 6: 65–70; referencia bibliográfica sin PDF en `07-bibliografia/`, paginación verbatim no verificable en esta pasada). Aplicada al corpus inter-dominio, 14 casos del corpus inter-dominio + 8 del corpus multiescala = 22 casos sobreviven Holm-Bonferroni a α=0.05; los 4 casos macro `overall_pass=True` están entre los sobrevivientes. La inferencia formal sigue requiriendo invocación desde `edi_engine.py` con flag `--calibrated` en la ejecución final. | Re-ejecución del corpus con flag activo (≈ 3 semanas) |
+| L1 | p-value mal calibrado (tasa empírica de tipo I ≈ 24 %, no 5 %) | Hostile testing N3 | Cerrada metodológicamente: el módulo `common/calibration.py` implementa block bootstrap (Politis y Romano 1994), Newey-West HAC (Newey y West 1987) y corrección Holm-Bonferroni (Holm 1979, "A simple sequentially rejective multiple test procedure", *Scand. J. Statist.* 6: 65–70; referencia bibliográfica sin PDF en `07-bibliografia/`, paginación verbatim no verificable en esta pasada). Aplicada al corpus inter-dominio, 14 casos del corpus inter-dominio + 8 del corpus multiescala = 22 casos sobreviven Holm-Bonferroni a α=0.05; los 6 casos macro `overall_pass=True` (post-iter-7 B-T2 2026-05-17) están entre los sobrevivientes. La inferencia formal sigue requiriendo invocación desde `edi_engine.py` con flag `--calibrated` en la ejecución final. | Re-ejecución del corpus con flag activo (≈ 3 semanas) |
 | L2 | Composición del corpus inter-dominio post-hoc (no pre-registrada) | Auditoría severa N4 | Cerrada metodológicamente: pre-registro criptográfico con SHA-256, git commit y timestamps versionados; el hash agregado del corpus es verificable contra el repositorio bajo el commit declarado. | Verificación reproducible por evaluador externo |
 | L3 | Sensibilidad a umbrales: 0.10/0.30 → 5 strong; 0.15/0.40 → 3; 0.05/0.20 → 9 | N4 | Mecanizada: el módulo `common/threshold_sensitivity.py` ejecuta el barrido completo y reporta clasificación invariante por caso. Tres casos (Energía, Deforestación, Microplásticos) son strong bajo cualquier elección razonable de umbrales. | Reporte automatizable por caso |
 | L4 | AUC-ROC = 0.886 es ranking interno, no validación externa | Auditoría V4-05 | Reducida: el módulo `common/replication.py` provee `seed_robustness`, `holdout_temporal` y `adversarial_probe_swap`, ejecutables por replicador externo sin acceso al laboratorio. | Validación inter-grupo con replicador independiente |
@@ -35,7 +35,7 @@ Listado consolidado de **todas las limitaciones que la tesis declara explícitam
 |---|-----------|--------|-------|------------|
 | L7 | **Datos del corpus inter-escala son sintéticos** derivados de parámetros publicados | V4 post-multiescala | 6-12 meses | Elevación a datos reales abiertos: IBM Quantum, BRENDA, PhysioNet, OGLE, Gaia DR3 |
 | L8 | **Escalas del corpus inter-escala son etiquetas nominales** sobre datos sintéticos | Idem | Idem | Documentado en cap 06-01 §8.2 |
-| L9 | **Sólo 4/30 casos con `overall_pass=True`** y gate completo en corpus inter-dominio | Estado del corpus | No es defecto: es discriminación honesta | Reportado como hallazgo, no como debilidad |
+| L9 | **6/30 casos con `overall_pass=True`** y gate completo en corpus inter-dominio (tras iter 7 B-T2 2026-05-17: 4 históricos + Urbanización iter 5 + Microplásticos iter 7) | Estado del corpus | No es defecto: es discriminación honesta | Reportado como hallazgo, no como debilidad |
 | L10 | **Caso piloto COVID dimensión normativa** produjo null honesto (sonda continua simple inadecuada) | Piloto ejecutado | 18-24 meses | Sondas con histéresis y variables ordinales |
 
 ---
@@ -110,7 +110,7 @@ Los siguientes módulos resuelven o reducen seis limitaciones sin re-ejecutar el
 | Sensibilidad a umbrales | L3 (sensibilidad declarada) | Mecanizada | `09-simulaciones-edi/common/threshold_sensitivity.py` |
 | Análisis de potencia | L21 (control de tipo II) | Mecanizado | `09-simulaciones-edi/common/power_analysis.py` |
 
-La corrección FWER Holm-Bonferroni sobre los 30 casos del corpus inter-dominio preserva 14 casos inter-dominio (más 8 inter-escala) tras Holm; los 4 casos macro `overall_pass=True` están entre los sobrevivientes: la clasificación strong sobrevive a la corrección por comparaciones múltiples.
+La corrección FWER Holm-Bonferroni sobre los 30 casos del corpus inter-dominio preserva 14 casos inter-dominio (más 8 inter-escala) tras Holm; los 6 casos macro `overall_pass=True` (post-iter-7 B-T2 2026-05-17) están entre los sobrevivientes: la clasificación strong sobrevive a la corrección por comparaciones múltiples.
 
 ### Reclasificación de casos bajo régimen calibrado
 
