@@ -189,6 +189,16 @@ export default function Dashboard() {
                 <HeroMetric label="Pass ratio" value={`${passRatio}%`} />
               </div>
 
+              <div className="mt-4 flex items-center gap-2">
+                <span className="inline-flex items-center gap-1.5 rounded-md border border-success/30 bg-success/10 px-2.5 py-1 text-xs font-semibold text-success">
+                  <Database className="w-3.5 h-3.5" />
+                  B-T2: 23/32 datos reales
+                </span>
+                <span className="text-[11px] text-ink-500 dark:text-ink-400">
+                  cobertura corpus inter-dominio
+                </span>
+              </div>
+
               {corpusScope && (
                 <div className="mt-5 space-y-2 text-sm">
                   <ScopeRow
@@ -259,6 +269,8 @@ export default function Dashboard() {
             hint="corpus multiescala"
           />
         </section>
+
+        <VerifiedCountsPanel />
 
         <section className="grid lg:grid-cols-[minmax(0,1fr)_360px] gap-5 mb-8">
           <div className="card p-5">
@@ -458,6 +470,54 @@ function HeroMetric({
         {value}
       </div>
     </div>
+  );
+}
+
+const VERIFIED_COUNTS: { key: string; label: string; count: number; note?: string }[] = [
+  { key: 'strong', label: 'Strong', count: 7, note: '6 con gate + 1 sin gate' },
+  { key: 'null', label: 'Null genuinos', count: 9 },
+  { key: 'weak', label: 'Weak', count: 6 },
+  { key: 'falsification', label: 'Falsación local', count: 2, note: 'aparato refutado' },
+  { key: 'trend', label: 'Trend', count: 2 },
+  { key: 'suggestive', label: 'Suggestive', count: 1 },
+];
+
+function VerifiedCountsPanel() {
+  const total = VERIFIED_COUNTS.reduce((acc, x) => acc + x.count, 0);
+  return (
+    <section className="card p-5 mb-8 border-success/30 bg-success/[0.03]">
+      <div className="flex items-start justify-between gap-3 mb-4 flex-wrap">
+        <div>
+          <h2 className="font-semibold text-ink-900 dark:text-ink-100 flex items-center gap-2">
+            <ShieldCheck className="w-4 h-4 text-success" />
+            Conteos verificados (iter 10)
+          </h2>
+          <p className="text-xs text-ink-500 dark:text-ink-400 mt-1">
+            Cifras definitivas validadas contra <code className="font-mono text-[11px]">metrics.json</code> por categoría
+            de cierre. Total auditado: {total} casos.
+          </p>
+        </div>
+      </div>
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3">
+        {VERIFIED_COUNTS.map((c) => (
+          <div
+            key={c.key}
+            className="rounded-lg border border-ink-200 dark:border-ink-800 bg-white dark:bg-ink-950/55 px-3 py-3"
+            style={{ borderLeft: `3px solid ${colorFor(c.key)}` }}
+          >
+            <div className="text-[10px] uppercase tracking-wider font-semibold text-ink-500 dark:text-ink-400">
+              {c.label}
+            </div>
+            <div className="mt-1 text-2xl font-semibold tabular-nums text-ink-950 dark:text-ink-50">
+              {c.count}
+            </div>
+            {c.note && (
+              <div className="mt-1 text-[10.5px] leading-snug text-ink-500 dark:text-ink-400">{c.note}</div>
+            )}
+          </div>
+        ))}
+      </div>
+    </section>
   );
 }
 

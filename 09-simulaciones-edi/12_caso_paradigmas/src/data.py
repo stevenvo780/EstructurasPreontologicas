@@ -61,11 +61,20 @@ def make_synthetic(start_date, end_date, seed=101):
     return df, meta
 
 def load_real_data(start_date, end_date):
-    """Carga datos reales de World Bank (R&D % GDP)."""
-    csv_path = os.path.join(os.path.dirname(__file__), "..", "data", "dataset.csv")
+    """
+    Loads real data from dataset_real.csv (Semantic Scholar publication counts).
+    Paradigm-shift publication trends: 1996-2022, keywords:
+    - phase transition
+    - complex system
+    - critical phenomena
+    - paradigm shift
+    """
+    csv_path = os.path.join(os.path.dirname(__file__), "..", "data", "dataset_real.csv")
     if not os.path.exists(csv_path):
-        raise FileNotFoundError(f"Datos reales no encontrados: {csv_path}")
+        raise FileNotFoundError(f"Real data not found: {csv_path}")
+    
     df = pd.read_csv(csv_path, parse_dates=["date"])
     df = df[(df["date"] >= start_date) & (df["date"] <= end_date)]
     df = df[["date", "value"]].dropna(subset=["date", "value"]).reset_index(drop=True)
+    
     return df

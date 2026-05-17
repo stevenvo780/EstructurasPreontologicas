@@ -1,6 +1,6 @@
 # Reporte de Validación — Clima Regional (CONUS)
 
-- generated_at: 2026-05-17T04:34:27.278935Z
+- generated_at: 2026-05-17T14:55:05.814335Z
 
 ## Fase synthetic
 - **overall_pass**: False
@@ -51,44 +51,47 @@
 - **overall_pass**: False
 
 ### EDI
-- valor: -0.0007
-- bootstrap_mean: -0.0006
-- CI 95%: [-0.0044, 0.0033]
-- weighted_value (LoE factor 1.00): -0.0007
+- valor: 0.2690
+- bootstrap_mean: 0.2691
+- CI 95%: [0.2572, 0.2826]
+- weighted_value (LoE factor 1.00): 0.2690
 - válido (0.30-0.90): False
+- detrended_edi: 0.2690
+- trend_ratio: 1.000
+- trend_r2: 0.998
 
 ### Symploké y CR
 - internal: 0.9999
-- external: 0.9999
-- CR: 1.0001
+- external: 0.9663
+- CR: 1.0348
 - CR indicador (>2.0 = frontera nítida): False
 
 ### Criterios C1-C5
-- c1_convergence: False
+- c1_convergence: True
 - c2_robustness: True
 - c3_replication: True
 - c4_validity: True
 - c5_uncertainty: True
 
 ### Errores
-- rmse_abm: 0.9274
-- rmse_abm_no_ode: 0.9268
-- rmse_ode: 0.9302
-- rmse_reduced: 1.4942
-- threshold: 0.9458
+- rmse_abm: 1.5665
+- rmse_abm_no_ode: 2.1429
+- rmse_ode: 1.1228
+- rmse_reduced: 0.9242
+- threshold: 0.6950
 
 ### Calibración
-- forcing_scale: 0.2703
-- macro_coupling: 0.1148
-- ode_coupling_strength: 0.0919
+- forcing_scale: 0.0463
+- macro_coupling: 0.3607
+- ode_coupling_strength: 0.2886
 - abm_feedback_gamma: 0.0500
-- damping: 0.1676
-- ode_alpha: 0.1465
-- ode_beta: 1.0000
+- damping: 0.0455
+- ode_alpha: 0.0010
+- ode_beta: 0.6762
 - assimilation_strength: 0.0000
-- calibration_rmse: 0.9348
+- calibration_rmse: 0.5420
 - ode_rolling: None
 
 ### Interpretación
-**Nivel 0 — Sin cierre operativo.** No se detecta constricción macro→micro significativa con los datos y parámetros actuales.
+**Nivel 1 — Tendencia no confirmada.** Se detecta EDI positivo pero sin significancia estadística. El fenómeno no muestra cierre operativo verificable.
 

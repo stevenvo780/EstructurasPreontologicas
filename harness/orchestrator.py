@@ -26,6 +26,7 @@ from harness.verifiers import (
     verify_consistency_doc_config,
     verify_decorative_citations,
     verify_harness_compliance,
+    verify_preregistration,
 )
 
 
@@ -38,6 +39,7 @@ VERIFIERS = {
     "debt_index": verify_debt_index.main,
     "self_indulgence": verify_self_indulgence.main,
     "consistency_doc_config": verify_consistency_doc_config.main,
+    "preregistration": verify_preregistration.main,
 }
 
 
@@ -121,7 +123,9 @@ def synthesize_report(verifier_results: dict, plan: dict, budget: Budget) -> str
         for k in ("total_citations", "without_pagination_count",
                   "discrepancies_count", "discordances_count",
                   "flag_hits_count", "drift_count",
-                  "required_chapters_missing_debt", "ready_count"):
+                  "required_chapters_missing_debt", "ready_count",
+                  "prereg_count", "validations_count",
+                  "config_modified_count"):
             v = r.get(k)
             if v is not None:
                 detail_parts.append(f"{k}={v if not isinstance(v, list) else len(v)}")

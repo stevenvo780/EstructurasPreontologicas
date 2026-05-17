@@ -1,9 +1,9 @@
 {
   "case": "Ecosistema IoT Global (Bass-Metcalfe Bilineal)",
-  "generated_at": "2026-05-17T11:40:39.160877Z",
+  "generated_at": "2026-05-17T14:57:37.309346Z",
   "git": {
-    "commit": "d79f98a074dd9db3df1eb48e5d3bd710b9f1b850",
-    "dirty": false
+    "commit": "954f7171044aa2f614fb1364befabf32f329dde8",
+    "dirty": true
   },
   "phases": {
     "synthetic": {
@@ -55,10 +55,10 @@
         "valid": false,
         "weighted_value": -0.005601676934390093,
         "loe_factor": 0.6,
-        "permutation_pvalue": 0.995995995995996,
-        "permutation_null_95": -0.005568287539563089,
+        "permutation_pvalue": 0.929,
+        "permutation_null_95": -0.005640827631549578,
         "permutation_significant": false,
-        "permutation_method": "iid",
+        "permutation_method": "block",
         "trend_bias": {
           "detrended_edi": -0.0093,
           "trend_ratio": 1.0,
@@ -285,9 +285,9 @@
         "weighted_value": -0.5393584422009524,
         "loe_factor": 0.6,
         "permutation_pvalue": 1.0,
-        "permutation_null_95": -0.6792281876076637,
+        "permutation_null_95": -0.6647118026807171,
         "permutation_significant": false,
-        "permutation_method": "iid",
+        "permutation_method": "block",
         "trend_bias": {
           "detrended_edi": -0.8989,
           "trend_ratio": 1.0,

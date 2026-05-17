@@ -1,5 +1,5 @@
 {
-  "case_name": "Behavioral Dynamics — Locomoción dirigida (Fajen-Warren 2003, segundo orden)",
+  "case_name": "Behavioral Dynamics \u2014 Locomoci\u00f3n dirigida (Fajen-Warren 2003 vs Google Mobility)",
   "ode_model": "behavioral_attractor",
   "ode_key": "heading_error",
   "series_key": "heading_error",
@@ -11,13 +11,20 @@
     "value_col": "value",
     "driver_cols": []
   },
+  "data_real": {
+    "csv": "data/behavioral_dynamics_real.csv",
+    "source": "Google Mobility proxy (COVID-19 2020-2021)",
+    "date_col": "date",
+    "value_col": "value",
+    "loe": 1.5
+  },
   "dates": {
     "synthetic_start": "2000-01-01",
     "synthetic_end": "2010-01-01",
     "synthetic_split": "2007-01-01",
-    "real_start": "2000-01-01",
-    "real_end": "2010-01-01",
-    "real_split": "2007-01-01"
+    "real_start": "2020-03-01",
+    "real_end": "2021-01-31",
+    "real_split": "2020-08-01"
   },
   "synthetic": {
     "freq": "MS",
@@ -29,13 +36,13 @@
       "noise_std": 0.04
     },
     "true_params": {
-      "ode_alpha": 0.30,
+      "ode_alpha": 0.3,
       "ode_beta": 0.85,
       "ode_noise": 0.03,
       "fw_b": 3.25,
-      "fw_k_g": 7.50,
-      "fw_c1": 0.40,
-      "fw_c2": 0.40,
+      "fw_k_g": 7.5,
+      "fw_c1": 0.4,
+      "fw_c2": 0.4,
       "fw_d_g": 4.0,
       "fw_dt": 0.05
     }
@@ -54,41 +61,77 @@
   "abm": {
     "diffusion": 0.15,
     "noise": 0.005,
-    "heterogeneity_strength": 0.20,
+    "heterogeneity_strength": 0.2,
     "init_range": 0.4,
     "forcing_gradient_type": "uniform",
     "forcing_gradient_strength": 0.3
   },
   "calibration": {
     "param_grid": {
-      "forcing_scale": [0.05, 0.1, 0.15, 0.2, 0.3, 0.5, 0.7, 0.9],
-      "macro_coupling": [0.1, 0.15, 0.2, 0.25, 0.3, 0.4, 0.5],
-      "damping": [0.0, 0.05, 0.1, 0.2, 0.4, 0.6, 0.8, 0.9]
+      "forcing_scale": [
+        0.05,
+        0.1,
+        0.15,
+        0.2,
+        0.3,
+        0.5,
+        0.7,
+        0.9
+      ],
+      "macro_coupling": [
+        0.1,
+        0.15,
+        0.2,
+        0.25,
+        0.3,
+        0.4,
+        0.5
+      ],
+      "damping": [
+        0.0,
+        0.05,
+        0.1,
+        0.2,
+        0.4,
+        0.6,
+        0.8,
+        0.9
+      ]
     },
     "refinement_clamps": {
-      "damping": [0.0, 0.95],
-      "forcing_scale": [0.001, 0.99],
-      "macro_coupling": [0.0, 0.6]
+      "damping": [
+        0.0,
+        0.95
+      ],
+      "forcing_scale": [
+        0.001,
+        0.99
+      ],
+      "macro_coupling": [
+        0.0,
+        0.6
+      ]
     }
   },
   "extra_ode_params": {
-    "ode_alpha": 0.30,
+    "ode_alpha": 0.3,
     "ode_beta": 0.85,
     "fw_b": 3.25,
-    "fw_k_g": 7.50,
-    "fw_c1": 0.40,
-    "fw_c2": 0.40,
+    "fw_k_g": 7.5,
+    "fw_c1": 0.4,
+    "fw_c2": 0.4,
     "fw_d_g": 4.0,
     "fw_dt": 0.05,
     "forcing_scale": 0.2,
-    "macro_coupling": 0.30
+    "macro_coupling": 0.3
   },
   "metadata": {
     "domain": "perception-action behavioral dynamics",
-    "theoretical_basis": "Fajen y Warren (2003), Warren (2006). Dinámica de heading en locomoción dirigida.",
-    "ode_interpretation": "φ̈ = -b·φ̇ - k_g·(φ - ψ_g)·(e^{-c1·d_g} + c2). Sistema de segundo orden completo.",
-    "abm_interpretation": "Agentes en grilla 40x40 ejecutan pasos individuales con biomecánica realista y ruido motor.",
-    "edi_interpretation": "EDI alto indica que el acoplamiento informacional macro (heading constraint via Fajen-Warren) es necesario para reproducir trayectorias humanas — confirmando control informacional sobre control representacional interno.",
-    "version": "v2 sonda segundo orden 2026-04-27"
+    "theoretical_basis": "Fajen y Warren (2003), Warren (2006). Din\u00e1mica de heading en locomoci\u00f3n dirigida.",
+    "ode_interpretation": "\u03c6\u0308 = -b\u00b7\u03c6\u0307 - k_g\u00b7(\u03c6 - \u03c8_g)\u00b7(e^{-c1\u00b7d_g} + c2). Sistema de segundo orden completo.",
+    "abm_interpretation": "Agentes en grilla 40x40 ejecutan pasos individuales con biomec\u00e1nica realista y ruido motor.",
+    "edi_interpretation": "EDI alto indica que el acoplamiento informacional macro (heading constraint via Fajen-Warren) es necesario para reproducir trayectorias humanas \u2014 confirmando control informacional sobre control representacional interno.",
+    "real_data_note": "Real phase now uses Google Mobility proxy (LoE=1.5) instead of synthetic, testing whether behavioral heading dynamics appear under real pandemic constraints.",
+    "version": "v3 real Google Mobility 2026-05-17"
   }
 }

@@ -422,6 +422,44 @@
       "companion_paper": "Andre Gallois response in same volume: DOI 10.1111/1467-8349.00045",
       "philpapers_url": "https://philpapers.org/rec/YABDOR",
       "thesis_relevance": "PASS 72 engagement-yablo: fundamento primario para defender que afirmaciones sobre estructuras pre-ontológicas son figural/internal (no comprometidas ontológicamente en sentido quiniano); permite auditar y refinar el capítulo de engagement con Yablo"
+    },
+    {
+      "id": "whitehead1929_process_reality",
+      "status": "local_pdf_verified",
+      "authors": [
+        "Whitehead, Alfred North"
+      ],
+      "title": "Process and Reality: An Essay in Cosmology",
+      "year": 1929,
+      "type": "book",
+      "publisher": "Macmillan",
+      "edition_note": "Downloaded from Wikimedia Commons: 1960 fifth printing (Macmillan). Original Gifford Lectures 1927-28, first published 1929.",
+      "copyright_status": "Public domain in the United States (published before January 1, 1931, per US copyright 95-year rule). Also public domain in jurisdictions with life+70 (Whitehead died 1947).",
+      "pdf_source": "Wikimedia Commons — https://commons.wikimedia.org/wiki/File:Alfred_North_Whitehead_-_Process_and_Reality_(1960_fifth_printing,_Macmillan).pdf",
+      "pdf_source_verified": "2026-05-17",
+      "local_path": "07-bibliografia/Whitehead - Process and Reality (1929).pdf",
+      "file_size_mb": 21,
+      "pages": 564,
+      "thesis_relevance": "Obra principal de la ontología de procesos de Whitehead; necesaria para H-J4 (dimensión estética, occasiones de experiencia, sociedad de entidades actuales) y engagement iter 7+."
+    },
+    {
+      "id": "whitehead1933_adventures_ideas",
+      "status": "local_pdf_verified",
+      "authors": [
+        "Whitehead, Alfred North"
+      ],
+      "title": "Adventures of Ideas",
+      "year": 1933,
+      "type": "book",
+      "publisher": "Cambridge University Press",
+      "copyright_status": "In Copyright per Internet Archive rights statement. Public domain status by jurisdiction unclear — verify before citation in published work. Downloaded from Internet Archive (archive.org/details/b30010238), hosted openly.",
+      "pdf_source": "Internet Archive — https://archive.org/details/b30010238",
+      "pdf_source_verified": "2026-05-17",
+      "local_path": "07-bibliografia/Whitehead - Adventures of Ideas (1933).pdf",
+      "file_size_mb": 22,
+      "needs_human": true,
+      "needs_human_reason": "Copyright status not definitively confirmed as public domain for AoI. Jacob debe verificar licencia antes de citar en manuscrito publicado.",
+      "thesis_relevance": "Complementa Process and Reality en su tratamiento de la civilización, la estética y la razón especulativa; útil para H-J4 si la dimensión estética requiere extensión más allá de PR."
     }
   ]
 }

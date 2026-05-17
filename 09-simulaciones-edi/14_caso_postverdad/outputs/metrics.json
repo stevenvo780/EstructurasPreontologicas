@@ -1,8 +1,8 @@
 {
   "case": "Postverdad (SIS Infodemic)",
-  "generated_at": "2026-05-17T04:57:23.603735Z",
+  "generated_at": "2026-05-17T14:55:32.620669Z",
   "git": {
-    "commit": "88a58df7a0a0030c17aa2cedd3a1e16f630acda9",
+    "commit": "954f7171044aa2f614fb1364befabf32f329dde8",
     "dirty": true
   },
   "phases": {
@@ -55,10 +55,10 @@
         "valid": false,
         "weighted_value": -0.007138688086881862,
         "loe_factor": 0.6,
-        "permutation_pvalue": 0.990990990990991,
-        "permutation_null_95": 0.01723783399682623,
+        "permutation_pvalue": 0.98,
+        "permutation_null_95": 0.03138755241717631,
         "permutation_significant": false,
-        "permutation_method": "iid",
+        "permutation_method": "block",
         "trend_bias": {
           "detrended_edi": -0.0119,
           "trend_ratio": 1.0,
@@ -236,10 +236,10 @@
         "valid": false,
         "weighted_value": 0.001318130279539189,
         "loe_factor": 0.6,
-        "permutation_pvalue": 0.984984984984985,
-        "permutation_null_95": 0.003283145209381837,
+        "permutation_pvalue": 0.949,
+        "permutation_null_95": 0.004162563030621299,
         "permutation_significant": false,
-        "permutation_method": "iid",
+        "permutation_method": "block",
         "trend_bias": {
           "detrended_edi": 0.0022,
           "trend_ratio": 1.0,

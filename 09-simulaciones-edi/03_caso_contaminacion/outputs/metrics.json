@@ -1,8 +1,8 @@
 {
   "case": "Contaminaci\u00f3n PM2.5",
-  "generated_at": "2026-05-17T04:37:57.998987Z",
+  "generated_at": "2026-05-17T14:55:23.789420Z",
   "git": {
-    "commit": "904aeae5de91bbbc7c0d6946b3f52c2001db2a45",
+    "commit": "954f7171044aa2f614fb1364befabf32f329dde8",
     "dirty": true
   },
   "phases": {
@@ -55,10 +55,10 @@
         "valid": false,
         "weighted_value": 0.1364802294698496,
         "loe_factor": 0.6,
-        "permutation_pvalue": 0.0,
-        "permutation_null_95": 0.17641059367186795,
+        "permutation_pvalue": 0.037,
+        "permutation_null_95": 0.21611580902199792,
         "permutation_significant": true,
-        "permutation_method": "iid",
+        "permutation_method": "block",
         "trend_bias": {
           "detrended_edi": 0.2275,
           "trend_ratio": 1.0,
@@ -331,10 +331,10 @@
         "valid": false,
         "weighted_value": -0.006566503255403257,
         "loe_factor": 0.6,
-        "permutation_pvalue": 0.6156156156156156,
-        "permutation_null_95": 0.03595156049579761,
+        "permutation_pvalue": 0.532,
+        "permutation_null_95": 0.029868812076101373,
         "permutation_significant": false,
-        "permutation_method": "iid",
+        "permutation_method": "block",
         "trend_bias": {
           "detrended_edi": null,
           "trend_ratio": null,

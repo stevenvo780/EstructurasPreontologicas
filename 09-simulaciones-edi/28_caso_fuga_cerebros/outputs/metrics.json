@@ -1,9 +1,9 @@
 {
   "case": "Fuga de Cerebros Global (Docquier-Rapoport)",
-  "generated_at": "2026-05-17T11:24:38.850535Z",
+  "generated_at": "2026-05-17T14:56:19.583641Z",
   "git": {
-    "commit": "4858a09a385d074c4340055fb0aeda22e5d1d854",
-    "dirty": false
+    "commit": "954f7171044aa2f614fb1364befabf32f329dde8",
+    "dirty": true
   },
   "phases": {
     "synthetic": {
@@ -55,10 +55,10 @@
         "valid": false,
         "weighted_value": -0.004195238334120916,
         "loe_factor": 0.6,
-        "permutation_pvalue": 0.21921921921921922,
-        "permutation_null_95": 0.010494263576163256,
+        "permutation_pvalue": 0.507,
+        "permutation_null_95": 0.08494915516430239,
         "permutation_significant": false,
-        "permutation_method": "iid",
+        "permutation_method": "block",
         "trend_bias": {
           "detrended_edi": null,
           "trend_ratio": null,
@@ -348,10 +348,10 @@
         "valid": false,
         "weighted_value": 0.01787278308640559,
         "loe_factor": 0.6,
-        "permutation_pvalue": 0.968968968968969,
-        "permutation_null_95": 0.09635420246892772,
+        "permutation_pvalue": 0.984,
+        "permutation_null_95": 0.12969257297701556,
         "permutation_significant": false,
-        "permutation_method": "iid",
+        "permutation_method": "block",
         "trend_bias": {
           "detrended_edi": 0.0298,
           "trend_ratio": 1.0,

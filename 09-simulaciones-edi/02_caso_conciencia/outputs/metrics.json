@@ -1,8 +1,8 @@
 {
   "case": "Conciencia Colectiva",
-  "generated_at": "2026-05-17T11:02:37.760126Z",
+  "generated_at": "2026-05-17T14:55:14.410341Z",
   "git": {
-    "commit": "744724e565f6027b7f29eae919c32e8aaf2f197d",
+    "commit": "954f7171044aa2f614fb1364befabf32f329dde8",
     "dirty": true
   },
   "phases": {
@@ -55,10 +55,10 @@
         "valid": false,
         "weighted_value": -0.004201457315644498,
         "loe_factor": 0.6,
-        "permutation_pvalue": 0.8668668668668669,
-        "permutation_null_95": 0.02827680441047683,
+        "permutation_pvalue": 0.507,
+        "permutation_null_95": 0.12998987446721028,
         "permutation_significant": false,
-        "permutation_method": "iid",
+        "permutation_method": "block",
         "trend_bias": {
           "detrended_edi": -0.007,
           "trend_ratio": 1.0,
@@ -292,10 +292,10 @@
         "valid": false,
         "weighted_value": -0.007289072008247799,
         "loe_factor": 0.6,
-        "permutation_pvalue": 0.3153153153153153,
-        "permutation_null_95": -0.011633571597317168,
+        "permutation_pvalue": 0.283,
+        "permutation_null_95": -0.011123710786404492,
         "permutation_significant": false,
-        "permutation_method": "iid",
+        "permutation_method": "block",
         "trend_bias": {
           "detrended_edi": null,
           "trend_ratio": null,

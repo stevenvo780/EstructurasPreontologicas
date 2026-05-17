@@ -1,8 +1,8 @@
 {
   "case": "Riesgo Biol\u00f3gico Global (Woolhouse Bilineal)",
-  "generated_at": "2026-05-17T04:20:36.055676Z",
+  "generated_at": "2026-05-17T14:56:06.897143Z",
   "git": {
-    "commit": "661af57931f73dfeace41f838a5c6de1759dc70c",
+    "commit": "954f7171044aa2f614fb1364befabf32f329dde8",
     "dirty": true
   },
   "phases": {
@@ -55,10 +55,10 @@
         "valid": false,
         "weighted_value": -0.002094346951784462,
         "loe_factor": 0.6,
-        "permutation_pvalue": 0.986986986986987,
-        "permutation_null_95": -0.00021247239037204405,
+        "permutation_pvalue": 0.992,
+        "permutation_null_95": -0.0005289041843314959,
         "permutation_significant": false,
-        "permutation_method": "iid",
+        "permutation_method": "block",
         "trend_bias": {
           "detrended_edi": null,
           "trend_ratio": null,
@@ -284,10 +284,10 @@
         "valid": false,
         "weighted_value": 0.1296078853576925,
         "loe_factor": 0.6,
-        "permutation_pvalue": 0.955955955955956,
-        "permutation_null_95": 0.2583623793082575,
+        "permutation_pvalue": 0.52,
+        "permutation_null_95": 0.2946900108490236,
         "permutation_significant": false,
-        "permutation_method": "iid",
+        "permutation_method": "block",
         "trend_bias": {
           "detrended_edi": 0.216,
           "trend_ratio": 1.0,

@@ -63,7 +63,7 @@ def cmd_status(args):
 def cmd_verify(args):
     if args.all or not any([args.citations, args.prose_json, args.replay_hash,
                             args.debt, args.self_indulgence, args.doc_config,
-                            args.decorative, args.compliance]):
+                            args.decorative, args.compliance, args.preregistration]):
         targets = list(orchestrator.VERIFIERS.keys())
     else:
         targets = []
@@ -75,6 +75,7 @@ def cmd_verify(args):
         if args.debt: targets.append("debt_index")
         if args.self_indulgence: targets.append("self_indulgence")
         if args.doc_config: targets.append("consistency_doc_config")
+        if args.preregistration: targets.append("preregistration")
 
     out = {}
     for name in targets:
@@ -95,7 +96,9 @@ def cmd_verify(args):
             print(f"   {r.get('interpretation', '')}")
             for k in ("total_citations", "without_pagination_count",
                       "discrepancies_count", "discordances_count",
-                      "flag_hits_count", "drift_count", "ready_count"):
+                      "flag_hits_count", "drift_count", "ready_count",
+                      "prereg_count", "validations_count",
+                      "config_modified_count"):
                 if k in r:
                     print(f"   {k}: {r[k]}")
 
@@ -137,6 +140,8 @@ def main():
     p_v.add_argument("--debt", action="store_true")
     p_v.add_argument("--self-indulgence", action="store_true")
     p_v.add_argument("--doc-config", action="store_true")
+    p_v.add_argument("--preregistration", action="store_true",
+                     help="Verifica pre-registros EDI vs metrics.json (B-T2)")
     p_v.add_argument("--json", action="store_true", help="Output como JSON")
     p_v.set_defaults(func=cmd_verify)
 
