@@ -147,7 +147,7 @@ EDI > 0.01, p < 0.05. Constricción débil. 2 casos.
 0.10 ≤ EDI < 0.30, p < 0.05. Componente funcional con significancia. Análogo al ribosoma: tiene función pero no es organismo autónomo. 8 casos (incluido caso 30 v2).
 
 ### Nivel 4 (strong)
-0.30 ≤ EDI ≤ 0.90, p < 0.05 (con `overall_pass=True` para gate completo). Cierre operativo alto. **En el corpus inter-dominio:** 5 casos (4 con gate + 1 sin gate). **En el corpus inter-escala:** 7 casos en 7 escalas distintas (atómica, cuántica, bioquímica, celular oscilatoria, individual, astrofísica, astrofísica masiva).
+0.30 ≤ EDI ≤ 0.90, p < 0.05 (con `overall_pass=True` para gate completo). Cierre operativo alto. **En el corpus inter-dominio (verificado contra `metrics.json::phases.real` 2026-05-17):** 7 casos sobre datos reales = 6 con gate (`overall_pass=True`: casos 04 Energía EDI=0.461, 16 Deforestación EDI=0.580, 18 Urbanización EDI=0.337, 20 Kessler EDI=0.694, 22 Fósforo EDI=0.322, 24 Microplásticos EDI=0.806) + 1 sin gate (caso 26 Starlink EDI=0.757 con `overall_pass=False` por C4_validity). **En el corpus inter-escala:** 7 casos en 7 escalas distintas (atómica, cuántica, bioquímica, celular oscilatoria, individual, astrofísica, astrofísica masiva).
 
 ### Nivel 5 (cierre operativo fuerte)
 Strong + convergencia bajo múltiples sondas independientes + LoE = 5 (datos físicos directos) + frontera espacial nítida verificada. Programa futuro. Ningún caso del corpus actual lo alcanza, en ninguna escala. Definido con criterios operativos explícitos en cap 03-04 §"Niveles del paisaje" para evitar lectura como promesa no cumplida.

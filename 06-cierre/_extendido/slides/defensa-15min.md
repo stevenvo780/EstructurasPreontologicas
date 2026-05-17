@@ -133,7 +133,7 @@ footer: "U. de Antioquia · 2026"
 
 - 15 rivales discriminados en ≥ 2 criterios
 - **Wolfram Physics**: comparte hipergrafos; discrimina en C, D, E. Piloto Rule 110: **EDI=0.55**
-- **IIT** (Tononi 2016): comparte métrica computable; discrimina en C, D, F + tratabilidad (Φ intratable >10-12 nodos)
+- **IIT**: Tononi (2016) propone Φ como métrica computable; discrimina en C, D, F + tratabilidad (Φ intratable >10-12 nodos)
 - Figura: `figura_09.svg`
 - cap 04-01 + cap 04-03
 
