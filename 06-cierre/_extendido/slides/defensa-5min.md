@@ -52,7 +52,7 @@ footer: "U. de Antioquia · 2026"
 
 # Cifras canónicas inter-dominio
 
-- 6 strong con gate (post-iter-7 B-T2 2026-05-17): Energía **0.650**, Deforestación **0.602**, Kessler **0.353**, Riesgo Biológico **0.333**, Urbanización **0.337**, Microplásticos **0.806**
+- 6 strong con gate: Energía **0.650**, Deforestación **0.602**, Kessler **0.353**, Riesgo Biológico **0.333**, Urbanización **0.337**, Microplásticos **0.806**
 - 1 strong sin gate: Starlink **0.7575** (CI estable, gate C1-C5 no superado — disclosure)
 - 3 controles de falsación rechazados (06, 07, 08): EDI ≤ 0.06
 - Composición invariante a rejilla F06-03 bajo régimen sintético

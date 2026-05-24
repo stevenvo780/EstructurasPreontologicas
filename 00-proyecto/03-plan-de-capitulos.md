@@ -1,6 +1,6 @@
 # Plan de capítulos
 
-> **Stub redirect (fusión D.4 BORRADOR-IA H-J8).** El contenido de este archivo fue fusionado en `00-proyecto/01-estructura-y-plan.md` como parte de la consolidación editorial D.4 (Fase 2, síntesis 2026-05-11). La decisión H-J8 sigue pendiente de firma humana; este stub existe únicamente para que las referencias cruzadas vivas no apunten a archivo inexistente.
+> **Stub redirect (fusión D.4, cf. marcador BORRADOR-IA H-J8 vivo en `00-proyecto/01-estructura-y-plan.md` §encabezado).** El contenido de este archivo fue fusionado en `00-proyecto/01-estructura-y-plan.md` como parte de la consolidación editorial D.4 (Fase 2, síntesis 2026-05-11). Este stub existe únicamente para que las referencias cruzadas vivas no apunten a archivo inexistente; el marcador pendiente de firma autoral H-J8 vive en el archivo destino, no aquí.
 
 ## Dónde está cada cosa
 

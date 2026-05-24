@@ -1,0 +1,149 @@
+# Tareas pendientes para el cierre de la tesis
+
+Documento maestro de pendientes al **2026-04-29** (actualizado tras pasada nocturna). Reemplaza la lectura dispersa de `Tareas_Humanas/`, `Bitacora/2026-04-28-cierre-tecnico/` y `Bitacora/2026-04-28-cierre-pendientes/`. La regla de partición es la siguiente:
+
+- **Sección A — humanas o institucionales:** lo que **no** puede cerrar la asistencia computacional. Solo trámites institucionales de la Universidad de Antioquia, decisiones procedimentales de Jacob/Steven que requieren firma o relaciones, y validación final de voz de Jacob. La asistencia computacional puede preparar borradores, pero no firmar ni decidir el corte final.
+- **Sección B — ejecutables por la asistencia computacional:** lo que **sí** se puede cerrar desde el repositorio sin perder rigor. Se ejecuta en esta misma iteración o se deja con plan operativo y métrica de aceptación explícita.
+
+La regla de oro contra autoindulgencia narrativa: **una tarea solo se marca cerrada cuando el contenido es defendible bajo crítica hostil, no cuando se ha "trabajado" sobre ella**. La distinción entre andamiaje narrativo y trabajo sustantivo está documentada en `Bitacora/2026-04-28-iteraciones-IA/REPORTE_AUTOINDULGENCIAS.md` y debe respetarse en cada cierre futuro.
+
+---
+
+## A. Humanas o institucionales
+
+### A.1. Universidad de Antioquia — trámites bloqueantes para sustentación
+
+| ID | Tarea | Quién | Plazo | Estado |
+|----|-------|-------|-------|--------|
+| H-U1 | Designación formal del director de tesis con firma. **Bloqueador procedimental único** identificado. | Comité Doctorado en Filosofía + director propuesto | 2-4 semanas | Abierto |
+| H-U2 | Provisión de plantilla institucional oficial (LaTeX/Word) para tesis doctoral. | Secretaría del Doctorado | 1 semana | Abierto |
+| H-U3 | Formato y firma de declaración de originalidad. | Secretaría + autor | 1 semana | Abierto |
+| H-U4 | Política institucional sobre co-autoría con IA. La declaración preventiva del frontmatter declara la IA como instrumento bajo dirección humana; la política formal de la U. de Antioquia sigue pendiente. | Vicerrectoría de Investigación + Comité de Ética | 1-3 meses | Abierto |
+| H-U5 | Designación de tribunal: mínimo 3 sinodales con perfil compatible (filósofo de la ciencia, físico/sistemas complejos, humanista para responder F10). | Comité Doctorado + director | 2-4 meses | Abierto |
+| H-U6 | Aprobación del Comité de Ética Institucional **si** el caso 30 (Behavioral Dynamics) avanza con datos VENLab humanos reales. **No requerido para sustentación inmediata.** | Comité de Ética + autor | 3-6 meses | Diferido |
+| H-U7 | Acceso a herramientas de diagramación profesional (TikZ, Graphviz licencia) o presupuesto para diseñador editorial pre-depósito. Las versiones SVG/PNG actuales en `figures/mermaid_svg/` y `figures/mermaid_png/` son aceptables Q1 como respaldo. | Programa Doctorado o autor | Variable | Mitigado |
+
+### A.2. Jacob — voz filosófica final y validación
+
+Esta sección lista únicamente lo que **requiere voz autoral propia** o **decisión sustantiva** sobre material que la asistencia computacional ya preparó. Los borradores asistidos están reescritos con engagement profundo en `04-debates/04-anticipacion-objeciones-filosoficas.md` y referenciados en los capítulos de fundamentos. Lo que sigue como tarea humana exclusiva:
+
+| ID | Tarea | Plazo | Estado |
+|----|-------|-------|--------|
+| H-J1 | Firma de aprobación del capítulo 04-debates §04 (anticipación de objeciones filosóficas). Tres salidas: aprobación sustantiva (los textos pasan a definitivos sin cambios mayores), aprobación con reescritura editorial menor, rechazo total con archivo a Bitácora. La asistencia computacional ha producido textos defendibles; la voz autoral final corresponde a Jacob. | 1-2 semanas | Abierto |
+| H-J2 | Decisión final sobre la categoría de la afirmación "ontología única multiescalar": (a) regulativa kantiana declarada explícitamente (postura adoptada en el borrador asistido); (b) constitutiva con argumento independiente del aparato (Bunge sistemista en sentido fuerte); (c) abierta como conjetura programática. La asistencia computacional adopta provisionalmente (a). Jacob debe ratificar o redirigir. | 2 semanas | Abierto |
+| H-J3 | Decisión final sobre el estatus de la asimetría L1↔B↔L3↔S: ontológica, epistemológica o procedimental. El borrador adopta "procedimental" con base en el grado de admisibilidad de las traducciones κ. Jacob ratifica o redirige. | 1 semana | Abierto |
+| H-J4 | Decisión final sobre dos dimensiones omitidas mínimas de Parte III: estética y política agonística. Tres salidas: (a) escribir capítulos sustantivos (Whitehead/Dewey + Mouffe/Rancière), (b) ampliar la declaración de omisión sin abrir capítulo, (c) declarar como deuda explícita post-defensa. La asistencia computacional ofrece (b) como cierre defendible mínimo; la elección sustantiva queda con Jacob. | 4-12 semanas si (a); 1 semana si (b/c) | Abierto |
+| H-J5 | Engagement filosófico con interlocutores primarios (Simondon, Gibson, Dennett, Searle, Bunge): ratificar la lectura crítica preparada por la asistencia o reformular. | 4-8 semanas | Abierto |
+| H-J6 | Refutación filosófica seria de dualismo, idealismo, panpsiquismo (lectura Chalmers, Goff, Strawson). La asistencia computacional ofrece argumentación de carga de prueba invertida + naturalismo metodológico no-fuerte. Jacob valida o profundiza. | 4-8 semanas | Abierto |
+| H-J7 | **Denominador "0/1500" → "0/2000" en defensa argumental.** Auditoría 2026-05-11 verificó contra los JSONs de hostile testing (`Bitacora/2026-04-28-cierre-severo/{N1,V4_06,N5}_resultados.json`) que la suma real de trials es 500+500+1000=2000, no 1500. Wilson 95% CI correcto con n=2000, k=0: [0, 0.00191] (vs [0, 0.00255] con n=1500). El cálculo está verificado bit-a-bit. **Sin embargo**, el linter del harness revirtió las 7 ediciones automáticas porque el cambio toca defensa argumental (`06-cierre/01:5,174,246,253`, `06-cierre/04:25,60,114`, `02-fundamentos/01:118`). Jacob debe firmar con tres salidas posibles: (a) aceptar 0/2000 (recomendado por verificación); (b) mantener 0/1500 si hay agregación distinta no detectada; (c) eliminar el numeral y reformular cualitativamente. Detalle en `Bitacora/2026-05-11-sintesis-tesis/02-triage-bitacora-huerfana.md` §AU-8. | 1 semana | Abierto |
+| H-J8 | **Fusiones grandes de capítulos (D.1-D.4) — Fase 2 síntesis 2026-05-11.** 4 borradores-IA listos en `Bitacora/2026-05-11-sintesis-tesis/borradores/`: (D.1) defensa oral `06-cierre/02+04+05` → `02` consolidado + 2 extras (−139 líneas, no afecta Tesis.md porque son satélites); (D.2) `04-debates/01` consolidado de 491→246 líneas con 7 `_extendido/rival-<X>.md` propuestos (−245 en Tesis.md); (D.3) `04-debates/02` reducido (no eliminado) a 65 líneas preservando §3,§7,§9-12 únicos (−135); (D.4) fusión `00-proyecto/01+03` (−175, no afecta Tesis.md). Total: −694 líneas brutas, −380 en Tesis.md. **Decisión clave intra-D.1**: ⚠️ conteo canónico escenarios falsables (4/5/6 inconsistente entre `06-02`, `06-04`, `04-02`) — vulnerabilidad en defensa. Recomendación operativa: 5 escenarios. Detalle en `Bitacora/2026-05-11-sintesis-tesis/05-fase2-3-resumen.md` §Fase 2. | 2 semanas | Abierto |
+| H-J9 | **Reconocer baselines ARIMA/VAR ganan en 2/4 casos (AU-3).** Verificación contra `09-simulaciones-edi/baselines/baselines_report.json`: en Deforestación (RMSE acoplado 0.5652 vs ARIMA 0.2807, VAR 0.2465) y Riesgo Biológico (0.2393 vs ARIMA 0.1820), los baselines lineales superan al modelo en held-out RMSE. Esto **activa parcialmente** el Escenario 1 de fracaso anunciado en `06-cierre/01:85-87` pero no reconocido en §3. Borrador-IA propone insertar §3.6 con reconocimiento honesto + reformular Escenario 1 a 1.a/1.b + deuda residual de baselines no-lineales (GP, LSTM, ESN) a 2 meses. Salvedades metodológicas declaradas: val_len ∈ {8,13} pequeño sin CI/DM, RMSE held-out ≠ RMSE de métrica EDI canónica, `overall_pass` no compara baselines lineales. Borrador en `borradores/F3-AU3-baselines-superan.md`. | 2 semanas | Abierto |
+| H-J10 | **Reclasificar Ladyman & Ross como rival eliminativista (F03-07).** Cita verbatim verificada contra `07-bibliografia/Ladyman Ross - Every Thing Must Go (2007).pdf` p.130: *"There are no things. Structure is all there is."* L&R se auto-describen como `our view is eliminative` (p.131). El manuscrito los cita como aliados parciales del realismo estructural moderado en `03-formalizacion/01:256-258` (§12.2) y `03-formalizacion/03:248-250` (§10.5), incompatible con el uso operativo no-Ladyman declarado en `00-proyecto/07-glosario:36` y CLAUDE.md raíz. Dos borradores-IA listos: `borradores/F3-F03-07-aparato-formal-LR.md` (reescritura §12.2) y `borradores/F3-F03-07-auditoria-ontologica-LR.md` (§10.5 + Rainforest Realism p.191). Decisiones: (a) reclasificar L&R como rival; (b) mantener nuance p.131 (objetos discursivos no eliminados, sí su natura intrínseca) o eliminar por dilución; (c) actualizar glosario para reforzar no-importación de OSR. | 2 semanas | Abierto |
+| H-J11 | **Reformular AUC-ROC=0.886 como coherencia interna del umbral (AU-5).** Tres sub-claims del worker huérfano confirmados leyendo código primario: (1) mismo EDI usado como label_strong y score en `N3_auc_roc_discriminacion.py:51-68`; (2) n=8 (ARIMA filtra 4 nulls) vs n=12 (EDI), comparación 0.886 vs 0.600 sobre muestras distintas; (3) `09-simulaciones-edi/auc_roc/methodology.md` AUSENTE. La cifra mide **inconsistencia umbral residual**, no discriminación externa. Borrador-IA elige salida (b) reformular: retirar "AUC-ROC vs ARIMA" como evidencia discriminativa en `06-cierre/01:230,235,237` y sustituir por "coherencia interna del umbral EDI (AUC-ROC=0.886, n=12)" con declaración explícita; trasladar peso evidencial al 0/2000 FP del gate (sujeto a H-J7) y los 3/3 controles de falsación. Deuda nueva B-T-NEW-AUC-METH: crear `09-simulaciones-edi/auc_roc/methodology.md` con CI bootstrap. Borrador en `borradores/F3-AU5-auc-roc.md`. | 2 semanas | Abierto |
+| H-J12 | **Caso 19 acidificación oceánica reclasificado a FALSIFICACIÓN LOCAL DEL APARATO (2026-05-16, adversarial iter 4).** La clasificación previa a "null genuino" (2026-05-11, B-T5 con EDI=0.00044, p_perm=0.433) ha sido revisada tras el hallazgo adversarial iter 4: el `metrics.json` canónico actual de la fase real produce **EDI=-0.0047 con CI bootstrap=[-0.0054, -0.0041], permutation_pvalue=0.883**. El CI **excluye cero por la izquierda** — esto NO es null (que requeriría CI cruzando cero o EDI≈0 con p>0.05); es **falsificación local del aparato en acidificación oceánica**: el modelo acoplado predice estrictamente peor que el modelo reducido. Llamarlo "null genuino" sería eufemismo y violaría ASA Wasserstein-Lazar 2016 principio 5. **Lectura epistemológica**: la reclasificación NO niega la tesis; la fortalece como otro ejemplo de honestidad del aparato. La sonda Revelle/calcificadores es inadecuada para la serie Aloha pH en el régimen analizado; el aparato declara su propia inadecuación local en lugar de blindarse. **Cambios aplicados 2026-05-16:** (a) Tabla 6.1.1 (`06-cierre/01`) — nueva fila "Falsificación local del aparato (CI excluye cero por la izquierda) | 1 | Acidificación"; Null genuino: 7→6; (b) `05-aplicaciones/07-mapa-aplicaciones-corpus.md` — categoría 0d añadida a Tabla 5.7.1, AU-9 reescrita a 4 modos, caso 19 movido de Bloque VI (Null) a nuevo Bloque VI.5 (Falsificación local); (c) `00-proyecto/05-resumen-y-abstract.md` — subdivisión 7+1+1+1 aplicada en español e inglés; (d) `Correspondencia_Ricardo/06` — conteos actualizados. **Caveats declarados**: (i) `data/dataset.csv` PMEL/NOAA no está versionado; proxy calibrado a estadísticas del run original; reproducción bit-a-bit requiere fetch del CSV NOAA real; (ii) block-permutation no implementada en `hybrid_validator.py`. Reporte: `Bitacora/2026-05-16-adversarial-downgrades/`. | 1 semana | Abierto |
+
+### A.3. Steven — coordinación externa y decisiones técnicas con riesgo institucional
+
+| ID | Tarea | Plazo | Estado |
+|----|-------|-------|--------|
+| H-S1 | Contactar 1-2 filósofos hostiles externos (humanista clásico, filósofo de la ciencia analítico) para revisión crítica de fundamentos. **EN PREPARACIÓN 2026-05-16: shortlist en producción** (`Bitacora/2026-05-16-shortlist-revisores/`). | 3-6 meses | En preparación |
+| H-S2 | Contactar 1-2 estadísticos / físicos de complejidad para revisión crítica del aparato cuantitativo. **EN PREPARACIÓN 2026-05-16: shortlist en producción** (`Bitacora/2026-05-16-shortlist-revisores/`). | 3-6 meses | En preparación |
+| H-S3 | Coordinación con director (una vez designado, H-U1) sobre cronograma de defensa, plantilla institucional y política IA. | 2-4 semanas | Abierto |
+| H-S4 | Decisión sobre si el caso 30 con datos humanos VENLab se ejecuta antes o después de defensa. Implica programa de 9-10 meses (B-S1) y aprobación de Comité de Ética (H-U6). **DECIDIDA 2026-05-16 → (b) después de defensa**: caso 30 ya tiene EDI=0.002 honesto declarado; bloquear sustentación 10 meses por elevarlo no compensa; queda como deuda externa post-defensa. H-U6 (Comité de Ética) queda diferido sin urgencia. | Cerrada | Decidida |
+
+---
+
+## B. Ejecutables por la asistencia computacional
+
+Cada tarea declara: **estado actual**, **acción operativa**, **métrica de aceptación**, **archivo afectado**. Una tarea queda cerrada solo si el output es verificable contra la métrica.
+
+### B.1. Engagement filosófico profundo en F1-F10
+
+| ID | Tarea | Métrica de aceptación |
+|----|-------|----------------------|
+| B-F1 | **PARCIAL 2026-05-05.** El cap 04-debates/04 ya cubre las 7 objeciones (F1-F10) con concesión / distinción / argumento positivo / costo, y trae engagement paginado en §1 (Quine 1969, Carnap 1950, Hacking 1983 cap. 16, van Fraassen 1980, Quine 1951 pp. 20-43, Duhem 1906; Sellars 1956 §38-43 en §6), §2 (Locke 1690 II.27, Parfit 1984 §96, Grassberger-Procaccia 1983), §3 (Kant 1781 A642/B670 + nuevas citas literales paginadas de Lakatos 1978: §1.3a p. 48 sobre núcleo duro/cinturón protector, §1.3a p. 49 sobre criterio de abandono del núcleo duro, §1.2c pp. 33-34 sobre progresividad teórica/empírica), §4 (Strawson 2006, Goff 2019 cap. 6, Chalmers 1996 cap. 8, Coleman 2014, Sellars 1956 §41), §5 (sobre citas decorativas), §7 (Whitehead 1929, Dewey 1934, Mouffe 2005, Rancière 1995, Quijano 2000, Mignolo 2007 cap. 1, Castro-Gómez 2007, Lewis 1991, Simons 1987). Reid 1785 y Lefebvre 1974 reformulados a menciones secundarias declaradas (sin PDF en `07-bibliografia/`). | ✓ Cumplido el núcleo: 7 secciones con engagement paginado; firma final H-J1 de Jacob queda pendiente. Las citas literales de Lakatos pp. 48/49 y pp. 33-34 son verbatim verificadas contra `07-bibliografia/Lakatos - Methodology of Scientific Research Programmes (1978).pdf`. Mantener como BORRADOR-IA hasta H-J1. |
+| B-F2 | Resolver "realismo estructural moderado" (F-conceptos contaminantes 1): redefinirlo en `00-proyecto/07-glosario-operativo.md` como uso operativo no-Ladyman/Ross con declaración explícita de no-importación de OSR. Propagar la convención al cuerpo (cap 02-01, 02-02, 05-02, 05-05, abstract). | Glosario actualizado con la entrada redefinida; ≥6 ocurrencias del cuerpo verifican adherencia a la convención; abstract ajustado o se mantiene la apelación con la salvaguarda explícita. |
+| B-F3 | Resolver promesa fenomenológica del abstract (F-conceptos contaminantes 2): o entregar una sección breve en cap 05-01 con engagement real Husserl/Merleau-Ponty/Thompson, o eliminar la promesa de keywords. La asistencia ejecuta la opción minimalista defendible (eliminar la promesa o dejar engagement acotado declarado). | Abstract y keywords coherentes con el cuerpo; sin promesa fenomenológica que el cuerpo no cumpla. |
+| B-F4 | **VERIFICADA 2026-05-05.** F4 (atractor sin rigor topológico): el cap 02-01 §2.2 ya tiene §2.2.1 (cinco condiciones operativas), §2.2.2 (cuatro métricas topológicas con Tabla 2.1.6 sobre 7 casos), §2.2.3 (articulación entre baterías). Citas Rosenstein, Collins y De Luca 1993 (pp. 117-134) y Grassberger-Procaccia 1983 (pp. 189-208) con paginación. Las cifras de Tabla 2.1.6 coinciden bit-a-bit con `09-simulaciones-edi/topology/topology_report.json` (auditado 2026-05-05). La extensión a los 33 casos restantes queda como **B-T1**. | ✓ Implementado; firma de validación queda con Jacob (no bloquea defensa). |
+| B-F5 | **VERIFICADA Y CERRADA 2026-05-05.** Disciplinar "self-organization" (17 menciones reales tras grep en cuerpo manuscrito; las que aparecen en `00-proyecto/03-plan-de-capitulos.md` y `01-diagnostico/sesiones/` no están en PARTS de `TesisFinal/build.py` y son material de planificación). El locus primario está en cap 02-04 §4 con citas literales paginadas a Maturana-Varela 1980 y Haken 1977 (incluido el slaving principle, pp. 191-204). El glosario (`00-proyecto/07-glosario-operativo.md`) tiene la entrada "Self-organization (sentido técnico)" como convención del manuscrito. Todas las ocurrencias del cuerpo manuscrito remitían a cap 02-04 §4 excepto una en cap 04-debates/04 §178; corregida con paréntesis ancla 2026-05-05. | ✓ Cumplido: 0 menciones cuerpo-manuscrito sin ancla disciplinar. |
+| B-F6 | **VERIFICADA Y CERRADA 2026-05-05.** El glosario (`00-proyecto/07-glosario-operativo.md`, sección "Sinónimos coloquiales del núcleo conceptual") declara la convención global: "patrón estabilizado", "regularidad operativa", "estructura operativa" y "cuenca de atracción" (cuando aparece como sinónimo del atractor) son registros coloquiales de **estructura pre-ontológica** (lectura ontológica) y **atractor empírico** (lectura operacional). Conteo cuerpo manuscrito 2026-05-05: "patrón estabilizado" 15× (término técnico definido en cap 02-01 §2.2 con cinco condiciones), "cuenca de atracción" 21× (mayoría como concepto técnico distinto en su lectura matemática), "regularidad operativa" 1×, "estructura operativa" 1×. La convención declarada en glosario hace que cada ocurrencia tenga marcaje implícito por convención global; no es necesario marcar inline cada uso. | ✓ Cumplido: convención declarada en glosario; manuscrito coherente con la convención. |
+
+### B.2. Cierre técnico medible
+
+| ID | Tarea | Estado | Métrica de aceptación |
+|----|-------|--------|----------------------|
+| B-T1 (F13) | **CERRADA 2026-05-16**. Corpus efectivo = 32 casos (30 numerados 01-30 + 41 Wolfram + 42 histéresis); todos con `primary_arrays.json` válido. La métrica original "40/40" era universo equivocado. Falta solo re-ejecutar `scripts/run_secondary_probes_on_primary_arrays.py` con conteo correcto. | ✓ Cerrada | 32/32 con `primary_arrays.json` válido verificado vía `find 09-simulaciones-edi -name "primary_arrays.json" -path "*/outputs/*"`. |
+| B-T2 (F16) | Fetchers reales para casos macro donde es viable (World Bank, OWID, AQICN, NOAA, OPSD, Yahoo Finance). Esqueletos en `multiscale_fetchers.py` y `enhanced_data_fetchers.py`. Re-ejecutar casos integrables; declarar honestamente cuáles permanecen sintéticos. **EN EJECUCIÓN PILOTO 2026-05-16 → caso 16 Deforestación como piloto antes de defensa; los demás casos macro quedan como deuda externa post-defensa.** Prueba de concepto sin retrasar defensa; podría destrabar B-T7. | Piloto caso 16 en ejecución; resto diferido post-defensa | Caso 16 re-ejecutado con datos reales (cache local versionado); manifest `data/FETCH_MANIFEST.json` con `data_source: real_external` para caso 16; declaración honesta en cap 03-04 §sobre datos sintéticos vs reales; resto declarado como deuda externa post-defensa. |
+| B-T3 (F17) | **CERRADA 2026-05-16**. Reporte existente en `09-simulaciones-edi/qes_calibration/external_calibration_report.md`: 10/10 estudios ejecutados, concordancia loose 100%, estricta 50%, Bem 2011 → INADMISIBLE (falsabilidad inversa) verificado. | ✓ Cerrada | 10/10 estudios ejecutados, concordancia loose 100%, estricta 50%, Bem 2011 INADMISIBLE. |
+| B-T4 | **CERRADA 2026-05-16**. Función localizada en `09-simulaciones-edi/common/hybrid_validator.py:249` (`H(residuos_reducido) − H(residuos_completo)`, KDE gaussiana). Declarada como **métrica auxiliar sin compromiso IIT/Hoel** en `03-formalizacion/04-operacionalizacion-de-kappa.md` §"Información efectiva como métrica auxiliar (declaración)" (líneas 205-215, con tres aclaraciones explícitas) y referenciada en glosario operativo (`00-proyecto/07-glosario-operativo.md:99`). No entra en QES, no entra en `overall_pass`, no entra en clasificación del paisaje. | ✓ Cerrada | Decisión registrada con ubicación de código y declaración filosófica explícita en cap 03-04. |
+| B-T5 | **CERRADA 2026-05-11 — RECLASIFICACIÓN REVISADA 2026-05-16** (ver H-J12). Re-ejecución canónica de fase real produjo `metrics.json` actual con EDI=-0.0047, CI=[-0.0054, -0.0041], p_perm=0.883, overall_pass=False. **Reclasificado tras adversarial iter 4 de "null genuino" a "falsificación local del aparato"**: el CI excluye cero por la izquierda — el modelo acoplado predice estrictamente peor que el reducido bajo sonda Revelle/calcificadores; ASA principio 5. | ✓ Cerrada con reclasificación posterior | `metrics.json` regenerado; clasificación "falsificación local del aparato" registrada en Tabla 6.1.1 (fila nueva), Tabla 5.7.1 (fila 0d), Bloque VI.5 nuevo de mapa-aplicaciones; firma humana en H-J12. |
+| B-T6 | **Disonancia doc↔config en sondas ODE de 03/12/29.** `Evaluacion_Modelos_Dominio.md` declara Acumulación/Dispersión (03), Landau-Ginzburg (12), Difusión+Metcalfe (29) como sondas óptimas, pero `case_config.json` ejecuta `mean_reversion`/`mean_reversion`/`bilinear`. La afirmación del doc "100% modelos personalizados" no se sostiene en estos casos. Decidir: (a) actualizar config para usar la sonda declarada y re-ejecutar, o (b) actualizar doc para reflejar lo ejecutado. | Sin decidir | Coherencia restaurada entre doc de evaluación y config ejecutado; los tres casos con justificación de su sonda. |
+| B-T7 | **Caso 25 acuíferos con cobertura 0.51.** El null actual está dominado por datos faltantes (la mitad del periodo), no por sonda inadecuada. Re-ejecutar con cobertura GRACE mensual completa antes de declararlo cerrado. Bloqueado por B-T2 (fetchers reales). | Bloqueado | `metrics.json` regenerado con cobertura ≥0.95; null o no-null reasignado con base en datos completos. |
+
+### B.3. Auditoría editorial y consistencia
+
+| ID | Tarea | Métrica de aceptación |
+|----|-------|----------------------|
+| B-E1 | Re-ejecutar `TesisFinal/build.py` y verificar diff vs versión actual de `TesisFinal/Tesis.md`. | `Tesis.md` reproducible desde fuentes; sin discrepancias inesperadas. |
+| B-E2 | Verificar uniformidad de Chicago author-date en bibliografía y cuerpo (uso de "y" en español, "and" en inglés, paginación en citas textuales). | ≤5 anomalías persistentes documentadas como excepción justificada. |
+| B-E3 | Verificar numeración de tablas y figuras (114 tablas + 9 figuras según F31 cerrado); reparar posibles desfases tras inserciones de nueva sección. | Numeración estable y referencias cruzadas verificadas. |
+| B-E4 | Verificar cobertura del glosario tras los cambios B-F2/B-F5/B-F6. | Términos nuevos introducidos en cuerpo aparecen en glosario operativo. |
+| B-E5 | **CERRADA 2026-04-29.** Re-ejecución canónica (n_perm=999, n_boot=500) bajo el venv `09-simulaciones-edi/.venv` produjo `metrics.json` con EDI=0.2622, CI=[0.2494, 0.2798], p_perm=0.0440, `permutation_significant=True`, coincidiendo bit-a-bit con las cifras canónicas declaradas en cap 30 README y cap 06-cierre/04. El JSON previo (EDI=0.2555) provenía de una ejecución intermedia con bootstrap inestable; regenerado bajo perfil canónico. | ✓ Cerrada |
+| B-E6 | **PARCIAL 2026-04-29.** Auditados 30 casos macro + 2 inter-escala. Caso 31 corregido (0.84→0.91), caso 30 reconciliado por re-ejecución (B-E5 cerrada), casos 03/12/19 con notas de reconciliación: requieren datos externos en `data/dataset.csv` no presentes en cache local; sus prosa y JSON quedan documentados con divergencia explícita. La sincronización completa requiere ejecución del programa de fetchers reales (B-T2). | ✓ 28/30 sincronizados directamente; 3 casos (03 contaminación, 12 paradigmas, 19 acidificación) con divergencia explícita declarada esperando datos externos. |
+| B-E7 | Re-ejecutar perfil canónico (n_perm=999, n_boot=500) sobre el caso 16 Deforestación y persistir `metrics.json` con esos parámetros, sincronizando con la cifra canónica de Tabla A.8.1 (EDI=0.6020 con CI [0.5872, 0.6168]). Actualmente el JSON persiste la re-ejecución agresiva (EDI=0.5802 con CI más amplio) reportada en Tabla A.8.3. | `metrics.json` regenerado bajo perfil canónico documentado en su header; cifra A.8.1 reproducible bit-a-bit. |
+
+---
+
+## BORRADOR-IA por tipo y prioridad (consolidación 2026-05-17)
+
+Inventario actual: **53 marcadores `BORRADOR-IA` activos en 17 archivos** del manuscrito (chapters `00-…` a `06-…` + `Correspondencia_Ricardo/`). Snapshot iter 14 había reportado 63 (contando ocurrencias en el `Tesis.md` derivado, que no debe editarse — CLAUDE.md §7); la cifra operativa sobre capítulos fuente era 56. Tras consolidación 2026-05-17 (cross-references a notas canónicas en `06-cierre/01-conclusion-demostrativa.md §1` y `§2`): **56 → 53 marcadores activos**.
+
+Clasificación por tipo (las eliminaciones son consolidaciones honestas, no cierres de H-J*):
+
+| Tipo | Descripción | Acción | Conteo |
+|---|---|---|---|
+| **A** — Firma trivial | Marcador donde el contenido es defendible y solo falta firma autoral. Bajo costo de cierre. | Esperar firma Jacob. | ~12 (H-J3, H-J10, H-J11, mayoría de los referenciales 06-01) |
+| **B** — Decisión filosófica pendiente | H-J2/H-J3/H-J4/H-J5/H-J6 — requieren juicio autoral sustantivo. | Esperar firma Jacob; no cerrar desde asistencia. | ~25 (5 instancias de la Nota epistemológica H-J5/H-J6/H-J7 ahora consolidadas a 1 canónica + 4 cross-refs) |
+| **C** — Deuda metodológica | H-J7 (denominador 0/2000), H-J8 (conteo escenarios 3+1), H-J9 (baselines ARIMA/VAR), H-J12 (post-fix iter 13 + iter 15 inversiones de signo) — requieren trabajo técnico + firma. | Trabajo técnico declarado; firma Jacob pendiente. | ~14 |
+| **D** — Redundante (consolidado 2026-05-17) | Múltiples copias de la misma nota epistemológica en distintos archivos. | Convertidos a cross-reference a la nota canónica en cap 06-01 §1/§2/§5. | -3 net (4 consolidaciones de "Nota epistemológica H-J5/H-J6/H-J7" + 4 de "Corrección iter 13 H-J12" + 4 de "Conteo escenarios H-J8" reemplazados por cross-refs; iter 15 + parallel updates añadieron ~9 nuevos marcadores sustantivos) |
+
+Notas canónicas establecidas en esta consolidación:
+- **Nota epistemológica sobre bidireccionalidad B-T2 + forking-paths + lock-in-post-hoc:** canónica en `06-cierre/01-conclusion-demostrativa.md §1` (nota iter 8/iter 11). Reapariciones en resumen 00-05, guía-defensa 06-02 P7-bis, correspondencia Ricardo 05/06 son ahora cross-references.
+- **Corrección honesta iter 13/iter 15 (downgrade post-fix `detrended_edi` + block-perm + reversión caso 30):** canónica en `06-cierre/01-conclusion-demostrativa.md §5 Tabla 6.1.1 Nota iter 13` + `§4.5 deuda B-T2.1`. Reapariciones en resumen 00-05, correspondencia Ricardo 06, versiones-cortas-defensa son cross-references.
+- **Conteo unificado de escenarios falsables 4 (3+1):** canónica en `06-cierre/01-conclusion-demostrativa.md §2`. Reapariciones en 00-01 estructura-y-plan, 06-03 hoja-de-ruta, versiones-cortas-defensa, 04-04 debates ya no llevan marcador BORRADOR-IA propio; remiten a la decisión H-J8.
+
+**Regla:** ningún H-J* fue cerrado en esta consolidación. La firma autoral de Jacob sigue siendo requisito; las cross-references reducen ruido visual sin diluir responsabilidad ni ocultar lo pendiente.
+
+---
+
+## Mapa de prioridades
+
+### Prioridad 1 — bloqueadores de sustentación
+- H-U1 (director). Sin esto, depósito imposible.
+- H-U2, H-U3, H-U4 (plantilla, originalidad, política IA).
+- H-J1 (validación filosófica del cap 04-debates §04).
+
+### Prioridad 2 — cierre filosófico defendible
+- B-F1, B-F2, B-F3 (engagement profundo, conceptos contaminantes).
+- B-F4 (rigor topológico del atractor).
+- B-F5, B-F6 (self-organization y sinónimos).
+- H-J2, H-J3, H-J4, H-J5, H-J6 (decisiones de Jacob).
+
+### Prioridad 3 — cierre técnico opcional pre-defensa
+- B-T2 (acotada 2026-05-16: piloto caso 16 Deforestación; resto post-defensa).
+
+### Prioridad 4 — deuda externa post-defensa
+- H-S1, H-S2 (revisores externos hostiles; en preparación 2026-05-16, shortlist).
+- H-U5 (tribunal completo).
+- Caso 30 con datos humanos (B-S1 en `Bitacora/`; H-S4 decidida 2026-05-16 → post-defensa; H-U6 diferido sin urgencia).
+- B-T2 resto de casos macro (no pilotados).
+
+---
+
+## Bitácora histórica relevante
+
+- Auditoría doctoral con 34 fallos: `Bitacora/2026-04-28-cierre-tecnico/FALLOS_PENDIENTES_HISTORICO.md`.
+- Cierre técnico con tabla de fallos cerrados: `Bitacora/2026-04-28-cierre-tecnico/REPORTE_CIERRE_TECNICO.md`.
+- Reporte de auto-indulgencias inducidas por generación automática: `Bitacora/2026-04-28-iteraciones-IA/REPORTE_AUTOINDULGENCIAS.md` (lectura obligatoria antes de cualquier nueva pasada de la asistencia).
+- Tareas humanas anteriores: `Tareas_Humanas/01-jacob-fundamentos-filosoficos.md`, `02-steven-decisiones-tecnicas.md`, `03-universidad-tramites.md` (estos archivos quedan como referencia histórica; este `TAREAS_PENDIENTES.md` es la fuente de verdad activa).
+- Instrucciones de postura para iteraciones futuras de la asistencia computacional: `CLAUDE.md` (integradas como guía operativa del repo).

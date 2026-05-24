@@ -60,7 +60,7 @@ Una aplicación que solo renombra el fenómeno con vocabulario del marco sin pro
 
 ## 3.bis. Modo técnico-ejecutado: tercera categoría operativa
 
-[BORRADOR-IA · requires: H-J* — integración 2026-05-17 tras audit process-verifier cap 05] La dicotomía demostrativo/programático cubre los casos del manuscrito principal (§4.1 y §4.2), pero **no captura el régimen bajo el cual operan los 40 casos del corpus EDI** (30 inter-dominio + 10 inter-escala, capítulos 05-06 y 05-07). Para esos casos se reconoce explícitamente una tercera categoría operativa: **modo técnico-ejecutado**.
+[BORRADOR-IA · requires: H-J*] La dicotomía demostrativo/programático cubre los casos del manuscrito principal (§4.1 y §4.2), pero **no captura el régimen bajo el cual operan los 40 casos del corpus EDI** (30 inter-dominio + 10 inter-escala, capítulos 05-06 y 05-07). Para esos casos se reconoce explícitamente una tercera categoría operativa: **modo técnico-ejecutado**.
 
 ### 3.bis.1. Definición
 
@@ -81,7 +81,7 @@ El corpus de 30 casos inter-dominio + 10 inter-escala opera en este modo por dis
 | Programático | No (o piloto parcial) | Conjeturado con criterio de elevación | Conjetura articulada con plan de prueba; no demuestra | 4 (caps 05-01 a 05-04) |
 | **Técnico-ejecutado** | **Sí, completo y reproducible** | **No (mapeo de cobertura, no dossier ontológico)** | **Operativa: el aparato discrimina y mapea cobertura del marco a esta escala/dominio** | **40 (corpus 05-06 + 05-07)** |
 
-El modo técnico-ejecutado **coincide con la reformulación opción (c) suave** del cierre `06-01` y la nota epistemológica BORRADOR-IA de `06-02 §3 P7-bis`: los 40 casos son **mapa de cobertura del aparato y calibración bidireccional**, no demostración ontológica adicional. La afirmación «ontología general multiescalar» se sostiene operativamente sobre los casos con datos públicos reales (subconjunto B-T2 + Warren); los demás técnicos-ejecutados son evidencia de transferibilidad estructural del aparato sin reentrenar arquitectura, con falsos positivos acotados por hostile testing (Wilson 95 % CI [0, 0.00191] sobre 0/2000 random walk).
+El modo técnico-ejecutado **coincide con la reformulación opción (c) suave** del cierre `06-01` y la nota epistemológica pendiente de firma autoral de `06-02 §3 P7-bis`: los 40 casos son **mapa de cobertura del aparato y calibración bidireccional**, no demostración ontológica adicional. La afirmación «ontología general multiescalar» se sostiene operativamente sobre los casos con datos públicos reales (subconjunto B-T2 + Warren); los demás técnicos-ejecutados son evidencia de transferibilidad estructural del aparato sin reentrenar arquitectura, con falsos positivos acotados por hostile testing (Wilson 95 % CI [0, 0.00191] sobre 0/2000 random walk).
 
 ### 3.bis.4. Marca obligatoria
 
@@ -112,7 +112,7 @@ Un capítulo o caso en modo técnico-ejecutado debe declararlo explícitamente y
 
 ### 4.3. Corpus técnico-ejecutado (modo técnico-ejecutado)
 
-[BORRADOR-IA · requires: H-J* — integración 2026-05-17] El corpus EDI agregado opera en **modo técnico-ejecutado** según §3.bis. Se compone de los 30 casos inter-dominio (capítulo 05-07, mapa de aplicaciones-corpus) y 10 casos inter-escala (capítulo 05-06). Cada caso tiene `metrics.json` reproducible bajo el comando declarado en su `src/validate.py`. La cobertura, gates C1-C5 y reclasificaciones bidireccionales se reportan en los capítulos respectivos y en `09-simulaciones-edi/Evaluacion_Modelos_Dominio.md`. Esta capa no constituye dossier de catorce componentes y no se reclama como tal; constituye **mapeo de cobertura del aparato** según la definición del §3.bis.
+El corpus EDI agregado opera en **modo técnico-ejecutado** según §3.bis (decisión autoral H-J* cubierta por el marcador maestro de §3.bis arriba; aquí solo se aplica la definición ya marcada). Se compone de los 30 casos inter-dominio (capítulo 05-07, mapa de aplicaciones-corpus) y 10 casos inter-escala (capítulo 05-06). Cada caso tiene `metrics.json` reproducible bajo el comando declarado en su `src/validate.py`. La cobertura, gates C1-C5 y reclasificaciones bidireccionales se reportan en los capítulos respectivos y en `09-simulaciones-edi/Evaluacion_Modelos_Dominio.md`. Esta capa no constituye dossier de catorce componentes y no se reclama como tal; constituye **mapeo de cobertura del aparato** según la definición del §3.bis.
 
 ## 5. Política de extensión
 
