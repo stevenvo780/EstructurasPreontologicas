@@ -1,8 +1,6 @@
 ---
 title: "Realismo estructural informativo (Ladyman-Ross) — desarrollo extenso"
 extends: 04-debates/01-debates-con-posiciones-rivales.md
-created: 2026-05-11
-parte_de: H-J8 (fusión D.2)
 ---
 
 # Realismo estructural informativo (Ladyman-Ross)

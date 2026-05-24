@@ -247,8 +247,6 @@ Mitchell defiende coexistencia de modelos parciales para fenómenos complejos. L
 
 ### 10.5. Ladyman y Ross — rival eliminativista en el espacio de auditorías ontológicas
 
-(BORRADOR-IA, requires: H-J10 — firma autoral pendiente sobre reclasificación de L&R como rival eliminativista; decisión pendiente sobre nuance p.131/p.191: opción conservadora aplicada — se mantiene la concesión de Rainforest Realism para evitar acusación de strawman.)
-
 Ladyman y Ross (2007, *Every Thing Must Go*, cap. 3, p. 130) toman la estructura como ontología fundamental al precio de eliminar los individuos auto-subsistentes: *"even the identity and individuality of objects depends on the relational structure of the world. Hence, a first approximation to our metaphysics is: 'There are no things. Structure is all there is.'"* (p. 130). Los autores se auto-describen sin ambigüedad: *"our view is eliminative"* (Ladyman y Ross 2007, p. 131). En su versión Rainforest Realism (cap. 4, p. 191) admiten que los individuos son *"legitimate book-keeping devices"* de las ciencias especiales, pero subordinados a un criterio de patrones reales que no exige sustrato material en los términos de esta tesis.
 
 La auditoría ontológica de este capítulo se sitúa en posición contraria: el sustrato material y sus procesos son ontológicamente primeros; las estructuras (atractores, invariantes bajo κ, regularidades que pasan el dossier) son **propiedades operativas del sustrato**, no entidades autónomas que lo dispensen. La consecuencia metodológica es directa para la auditoría: los criterios Fase 5 (patrones de orden superior) y Fase 6 (compresión legítima) operan sobre **individuos materialmente sostenidos** —átomos, organismos, instituciones— cuya admisión exige dossier empírico, no derivación a partir de estructura modal fundamental. La diferencia con L&R no es retórica: si OSR fuese correcta, el criterio A del dossier (anclaje material) sería redundante; en la tesis, ese criterio es decisivo.
@@ -261,9 +259,7 @@ Con esta auditoría, la tesis se presenta no solo como respuesta a una pregunta 
 
 ## 12. Deuda residual
 
-Entradas operativas declaradas tras triage de bitácora huérfana (2026-05-11).
-
-- **[F03-11 2026-05-11]** §6 (línea 6) afirma "criterio de cierre es replicabilidad por tercero", pero **ninguna replicación externa ha sido ejecutada** sobre el corpus EDI: el manuscrito no tiene evidencia de tercero independiente reproduciendo los resultados desde `case_config.json` + datos. Esto choca con la objeción de Collins ("experimenter's regress"). Acción: degradar "replicabilidad" de hecho consumado a reclamo operativo (CLAUDE.md §10 — promesa pública defendible, no afirmación retórica); abrir entrada `H-J##` en `TAREAS_PENDIENTES.md` para invitar replicación independiente con plazo declarado. `needs_human` para apertura formal de la invitación.
+- **Limitación 1.** §6 (línea 6) afirma "criterio de cierre es replicabilidad por tercero", pero **ninguna replicación externa ha sido ejecutada** sobre el corpus EDI: el manuscrito no tiene evidencia de tercero independiente reproduciendo los resultados desde `case_config.json` + datos. Esto choca con la objeción de Collins ("experimenter's regress"). Camino de resolución: degradar "replicabilidad" de hecho consumado a reclamo operativo (promesa pública defendible, no afirmación retórica) e invitar replicación independiente con plazo declarado; apertura formal de la invitación pendiente de firma autoral.
 
 ## 13. Cierre
 

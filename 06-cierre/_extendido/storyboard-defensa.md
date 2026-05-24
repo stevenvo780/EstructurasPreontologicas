@@ -5,7 +5,7 @@ extends: 06-cierre/02-guia-de-defensa.md
 
 # Storyboard estructural — Defensa oral
 
-> **STORYBOARD-IA pendiente firma autoral Jacob.** Este archivo es guion estructural: define qué slide cubre qué condición demostrativa, con cifras canónicas literales y referencias a capítulo/figura del corpus. NO contiene voz visual final ni redacción narrativa: la voz visual final es de Jacob + plantilla institucional H-U2 (pendiente). Cuando llegue la plantilla, el ensamblaje es mecánico. Fuentes consolidadas: `06-cierre/01-conclusion-demostrativa.md`, `06-cierre/02-guia-de-defensa.md`, `06-cierre/_extendido/versiones-cortas-defensa.md`, `figures/`.
+> **STORYBOARD-IA pendiente firma autoral Jacob.** Este archivo es guion estructural: define qué slide cubre qué condición demostrativa, con cifras canónicas literales y referencias a capítulo/figura del corpus. NO contiene voz visual final ni redacción narrativa: la voz visual final es de Jacob + plantilla institucional. Cuando llegue la plantilla, el ensamblaje es mecánico. Fuentes consolidadas: `06-cierre/01-conclusion-demostrativa.md`, `06-cierre/02-guia-de-defensa.md`, `06-cierre/_extendido/versiones-cortas-defensa.md`, `figures/`.
 
 ## Función del archivo
 
@@ -39,7 +39,7 @@ extends: 06-cierre/02-guia-de-defensa.md
 - Subtítulo: ontología, epistemología y metodología generales multiescalares.
 - Autor principal: Jacob Agudelo (U. Antioquia). Colaborador técnico: Steven Vallejo Ortiz.
 - Fecha de sustentación, programa doctoral, director.
-- [PENDIENTE: plantilla institucional H-U2 — logo, tipografía oficial.]
+- [PENDIENTE: plantilla institucional — logo, tipografía oficial.]
 
 ### Slide 2 — Agradecimientos
 
@@ -258,4 +258,4 @@ Selección mínima de piezas no comprimibles:
 
 ## Cierre del storyboard
 
-Estructura final: 25 / 13 / 9 slides para 30 / 15 / 5 minutos. Toda cifra es literal contra `metrics.json` y prosa de cap 06-01. Toda figura existe en `figures/`. Voz visual y redacción narrativa pendientes de Jacob + plantilla institucional H-U2.
+Estructura final: 25 / 13 / 9 slides para 30 / 15 / 5 minutos. Toda cifra es literal contra `metrics.json` y prosa de cap 06-01. Toda figura existe en `figures/`. Voz visual y redacción narrativa pendientes de Jacob + plantilla institucional.

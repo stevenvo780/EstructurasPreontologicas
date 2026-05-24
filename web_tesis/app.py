@@ -3,6 +3,7 @@ from __future__ import annotations
 import argparse
 import copy
 import json
+import re
 import sys
 import subprocess
 from pathlib import Path
@@ -186,6 +187,181 @@ def _load_primary_arrays(case_name: str) -> dict[str, Any] | None:
         return None
 
 
+# ─── Sanitizer de marcadores internos (BORRADOR-IA, requires: H-J*) ──────────
+#
+# Política (CLAUDE.md §1, §2):
+#   - Los marcadores BORRADOR-IA · requires: H-J* son señales internas de
+#     trabajo (afirmaciones pendientes de firma humana). NO deben filtrarse al
+#     cliente HTML; el lector externo debe ver prosa limpia.
+#   - Los archivos Markdown fuente conservan los marcadores intactos
+#     (autoría/auditoría); el sanitizer opera SOLO sobre el HTML servido.
+#   - Se preserva el contenido sustantivo: cita verbatim paginada, tablas,
+#     prosa argumentativa. Solo se elimina el prefijo/etiqueta del marcador.
+#   - Las referencias H-J\d+ / H-U\d+ / H-S\d+ que aparecen como filas
+#     legítimas de la tabla "Deuda residual" (ej. "H-U1. Director de tesis...",
+#     "H-S1/H-S2. Revisión por pares") NO se tocan: aparecen fuera de
+#     bloques BORRADOR-IA y son parte del aparato de transparencia declarada.
+
+# Comentarios HTML internos: <!-- BORRADOR-IA ... --> y <!-- requires: H-J\d+ ... -->
+_RE_HTML_COMMENT_BORRADOR = re.compile(
+    r"<!--\s*BORRADOR-IA[^-]*(?:-(?!->)[^-]*)*-->",
+    re.IGNORECASE | re.DOTALL,
+)
+_RE_HTML_COMMENT_REQUIRES = re.compile(
+    r"<!--\s*requires:\s*H-[JUS]\*?\d*[^-]*(?:-(?!->)[^-]*)*-->",
+    re.IGNORECASE | re.DOTALL,
+)
+
+# Prefijo BORRADOR-IA inline en prosa renderizada:
+#   [BORRADOR-IA · requires: H-J*]   (corchetes, separador punto medio)
+#   [BORRADOR-IA, requires: H-J5]    (coma)
+#   (BORRADOR-IA · requires: H-J7)   (paréntesis)
+#   (BORRADOR-IA, requires: H-Jx)
+# Tras quitar el marcador queda un espacio inicial — se normaliza luego.
+_RE_INLINE_MARKER = re.compile(
+    r"[\[\(]\s*BORRADOR-IA\s*[·,][^\]\)]*?H-[JUS]\*?\d*[^\]\)]*?[\]\)]\s*",
+    re.IGNORECASE,
+)
+
+# Variante simplificada: [BORRADOR-IA] o (BORRADOR-IA) sin "requires:".
+_RE_INLINE_BORRADOR_BARE = re.compile(
+    r"[\[\(]\s*BORRADOR-IA\s*[\]\)]\s*",
+    re.IGNORECASE,
+)
+
+# Espacios redundantes entre etiquetas HTML tras eliminar marcador
+# (ej. "<p>  La" → "<p>La", ">  <strong>" → "><strong>").
+_RE_SPACE_AFTER_TAG = re.compile(r">(\s+)(?=\S)")
+
+
+def _sanitize_internal_markers(html: str) -> str:
+    """Oculta marcadores internos al servir HTML al cliente.
+
+    Elimina:
+      1. Comentarios HTML <!-- BORRADOR-IA ... --> y <!-- requires: H-J\\d+ ... -->.
+      2. Prefijos inline [BORRADOR-IA · requires: H-J*] y variantes con
+         paréntesis o coma.
+      3. Marcador escueto [BORRADOR-IA] / (BORRADOR-IA).
+
+    Preserva el contenido sustantivo (prosa, citas, tablas) y NO toca
+    referencias H-U1/H-S1 que aparecen como filas legítimas de la tabla
+    "Deuda residual" (estas viven fuera de bloques BORRADOR-IA y no caen
+    en ninguno de los patrones anteriores).
+    """
+    if not html or "BORRADOR-IA" not in html and "requires:" not in html:
+        # Fast path: nada que limpiar.
+        return html
+    out = _RE_HTML_COMMENT_BORRADOR.sub("", html)
+    out = _RE_HTML_COMMENT_REQUIRES.sub("", out)
+    out = _RE_INLINE_MARKER.sub("", out)
+    out = _RE_INLINE_BORRADOR_BARE.sub("", out)
+    # Normaliza espacio inicial dentro de etiquetas tras quitar el marcador.
+    out = _RE_SPACE_AFTER_TAG.sub(">", out)
+    return out
+
+
+_ACADEMIC_TAXONOMY_NOTE = (
+    "Distribución académica final tras correcciones del aparato — "
+    "ver cap 06-01 §5 Tabla 6.1.1. Aplica filtros B-T2.1 + detrend honesto + "
+    "block-permutation que la categoría cruda de metrics.json no aplica."
+)
+
+
+# Mapeo canónico cap 06-01 §5 Tabla 6.1.1 (cierre régimen B-T2.1 genuino).
+# Aplica al corpus inter-dominio. Casos no listados se reclasifican por la
+# regla general inter-dominio (ver _academic_category).
+#
+# CLAUDE.md §4: la prosa gana sobre el JSON crudo cuando el JSON no aplica
+# los filtros académicos (B-T2.1 + detrend honesto + block-perm) que la
+# prosa SÍ aplica.
+#
+# Distribución canónica resultante (cap 06-01 §5):
+#   0 strong robusto puro | 1 candidato | 1 weak validado B-T2.1
+#   3 weak | 1 suggestive | 2 trend | 9 null genuino
+#   1 EDI negativo por sonda inadecuada | 4 falsificación local
+#   3 falsación rechazada (controles) | otros (case 30 behavioral programático)
+_TABLE_611_INTER_DOMAIN: dict[int, str] = {
+    # Null genuino (9): clima(1), conciencia(2), contaminación(3), wikipedia(15),
+    # océanos(17), acuíferos(25), fuga cerebros(28), IoT(29) + erosión(23)
+    # (pero 23 se categoriza como falsificación local en la tabla; el listado
+    # de "null genuino" del párrafo §1 menciona "Erosión" → se mantiene como
+    # falsificación local pues el §5 es más específico).
+    1: "null",                    # Clima
+    2: "null",                    # Conciencia
+    3: "null",                    # Contaminación
+    # Energía — Weak validado por pre-registro B-T2.1 genuino (único)
+    4: "weak_validado_bt21",
+    # Epidemiología — Weak (cap 06-01 §5 "Weak: 3")
+    5: "weak",
+    # Falsación rechazada (controles): 06, 07, 08
+    6: "falsacion_rechazada_control",
+    7: "falsacion_rechazada_control",
+    8: "falsacion_rechazada_control",
+    # Finanzas(9): no enumerado en cap 06-01 — conserva category cruda
+    # Justicia — Suggestive
+    10: "suggestive",
+    # Movilidad — Trend
+    11: "trend",
+    # Paradigmas — EDI negativo por sonda inadecuada
+    12: "edi_negativo_sonda_inadecuada",
+    # Políticas estratégicas — Trend
+    13: "trend",
+    # Postverdad — Weak
+    14: "weak",
+    15: "null",                   # Wikipedia
+    # Deforestación(16), Urbanización(18), Salinización(21): no figuran como
+    # Strong en la Tabla 6.1.1 (que tiene 0 Strong robusto). La regla general
+    # inter-dominio de _academic_category() degrada strong → weak.
+    17: "null",                   # Océanos
+    # Falsificación local del aparato: 4 casos
+    19: "falsification_local",    # Acidificación oceánica
+    20: "falsification_local",    # Kessler
+    # Fósforo — Weak (cap 06-01 §5 "Weak: 3")
+    22: "weak",
+    23: "falsification_local",    # Erosión dialéctica
+    24: "falsification_local",    # Microplásticos
+    25: "null",                   # Acuíferos
+    # Starlink — Candidato pendiente block-perm tras corrección del aparato
+    26: "candidato_pendiente",
+    # Riesgo biológico(27): no enumerado — conserva category cruda
+    28: "null",                   # Fuga de cerebros
+    29: "null",                   # IoT
+    # Behavioral dynamics(30): programático con elevación documentada (cap 06-01
+    # Condición 7) — conserva category cruda.
+}
+
+
+def _academic_category(case: dict[str, Any]) -> str:
+    """Aplica filtros académicos del cap 06-01 §5 Tabla 6.1.1.
+
+    Estrategia (CLAUDE.md §4 — JSON gana sobre prosa, pero solo cuando el JSON
+    ya aplica los mismos filtros que la prosa). Aquí el JSON crudo NO aplica
+    B-T2.1 + detrend + block-perm, así que reclasificamos a partir del mapeo
+    canónico de la Tabla 6.1.1 (que sí los aplica) cuando el caso aparece allí.
+    Para casos no listados explícitamente, conservamos la categoría cruda.
+    """
+    metrics = case.get("metrics", {}) or {}
+    raw = (metrics.get("category") or "unknown").lower()
+    scope = case.get("scope")
+    case_num = case.get("case_num")
+
+    # Inter-escala: la Tabla 6.1.1 NO lo cubre; conserva categoría cruda
+    # (cap 06-01 §1: "7 strong en 7 escalas distintas + 1 weak + 2 nulls").
+    if scope != "inter-domain":
+        return raw
+
+    # Reclasificación canónica si el caso está en la Tabla 6.1.1.
+    if isinstance(case_num, int) and case_num in _TABLE_611_INTER_DOMAIN:
+        return _TABLE_611_INTER_DOMAIN[case_num]
+
+    # Regla general para inter-dominio no enumerados (incluye extensiones >30):
+    # la Tabla 6.1.1 declara 0 Strong robusto puro, así que cualquier strong
+    # crudo se degrada a weak. Los demás conservan su category cruda.
+    if raw == "strong":
+        return "weak"
+    return raw
+
+
 def _build_summary_v2(dataset: dict[str, Any]) -> dict[str, Any]:
     """Resumen compacto adaptado a la UI React (Recharts amigable)."""
     cases = dataset["cases"]
@@ -203,28 +379,51 @@ def _build_summary_v2(dataset: dict[str, Any]) -> dict[str, Any]:
     def _mean(xs):
         return sum(xs) / len(xs) if xs else None
 
+    # Categorías académicas (post cap 06-01 §5 Tabla 6.1.1).
+    academic_cats = [_academic_category(c) for c in cases]
+
     overall_pass = sum(1 for c in cases if c["metrics"].get("overall_pass"))
     weak_or_better = sum(
         1
-        for c in cases
-        if (c["metrics"].get("category") or "").lower() in {"strong", "weak", "suggestive"}
+        for cat in academic_cats
+        if cat in {
+            "strong",
+            "weak",
+            "weak_validado_bt21",
+            "suggestive",
+            "candidato_pendiente",
+        }
     )
-    null_count = sum(1 for c in cases if (c["metrics"].get("category") or "").lower() == "null")
+    null_count = sum(1 for cat in academic_cats if cat == "null")
     falsified = sum(
         1
-        for c in cases
-        if (c["metrics"].get("category") or "").lower() in {"falsified", "falsacion", "falsification"}
+        for cat in academic_cats
+        if cat in {
+            "falsified",
+            "falsacion",
+            "falsification",
+            "falsification_local",
+        }
     )
 
     from collections import Counter
 
-    # Distribución por categoría — etiquetas estándar
-    cat_counter: Counter[str] = Counter(
-        (c["metrics"].get("category") or "unknown").lower() for c in cases
-    )
+    # Distribución académica (CLAUDE.md §4: refleja la prosa del cap 06-01).
+    cat_counter: Counter[str] = Counter(academic_cats)
     distribution = [
         {"category": k, "count": v}
         for k, v in sorted(cat_counter.items(), key=lambda kv: (-kv[1], kv[0]))
+    ]
+
+    # Distribución por categoría cruda de metrics.json (uso técnico interno):
+    # NO aplica filtros B-T2.1 + detrend + block-perm. No usar para reporte
+    # académico; ver `distribution` arriba.
+    raw_cat_counter: Counter[str] = Counter(
+        (c["metrics"].get("category") or "unknown").lower() for c in cases
+    )
+    distribution_raw_metrics = [
+        {"category": k, "count": v}
+        for k, v in sorted(raw_cat_counter.items(), key=lambda kv: (-kv[1], kv[0]))
     ]
     level_counter: Counter[str] = Counter(
         "sin nivel" if c["metrics"].get("nivel") is None else str(c["metrics"].get("nivel"))
@@ -276,6 +475,8 @@ def _build_summary_v2(dataset: dict[str, Any]) -> dict[str, Any]:
             "mean_edi": _mean(edis),
         },
         "distribution": distribution,
+        "distribution_source": _ACADEMIC_TAXONOMY_NOTE,
+        "distribution_raw_metrics": distribution_raw_metrics,
         "level_breakdown": level_breakdown,
         "top_cases": top_cases,
         "corpus_scope": {
@@ -334,7 +535,7 @@ def _chapter_full_dict(ch: dict[str, Any]) -> dict[str, Any]:
             {
                 "title": d.get("title", d.get("name", path_abs.name)),
                 "path": path_rel,
-                "html": html,
+                "html": _sanitize_internal_markers(html),
                 "toc": toc,
             }
         )
@@ -431,13 +632,15 @@ async def api_chapter_extra(slug: str, name: str, refresh: bool = Query(default=
         raise HTTPException(
             status_code=404, detail=f"Extra no encontrado: {slug}/_extendido/{name}"
         )
+    if isinstance(extra, dict) and "html" in extra:
+        extra = {**extra, "html": _sanitize_internal_markers(extra.get("html", ""))}
     return JSONResponse(extra)
 
 
 @app.get("/api/thesis", response_class=JSONResponse)
 async def api_thesis(refresh: bool = Query(default=False)):
     dataset = refresh_dataset() if refresh else get_dataset()
-    html = dataset.get("thesis_html", "")
+    html = _sanitize_internal_markers(dataset.get("thesis_html", ""))
     toc = dataset.get("thesis_toc", [])
     line_count = html.count("\n") + 1 if html else 0
     word_count = len(html.split()) if html else 0

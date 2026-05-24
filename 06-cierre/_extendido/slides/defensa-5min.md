@@ -15,7 +15,6 @@ footer: "U. de Antioquia · 2026"
 - «Defiendo un irrealismo operativo de estructuras pre-ontológicas como ontología, epistemología y metodología generales aplicables a cualquier escala»
 - Jacob Agudelo (U. Antioquia) — autor principal
 - Steven Vallejo — colaborador técnico · IA bajo dirección humana
-- [PENDIENTE: plantilla institucional H-U2]
 - cap 06-01 §0 + cap 03-01 §1
 
 <!-- speaker notes: portada + tesis canónica fundidas; arrancar fuerte en 30 segundos. -->

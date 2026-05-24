@@ -76,6 +76,9 @@ self_indulgence:
     - "Bitacora/2026-05-11-sintesis-tesis/borradores/**"
     # README de _extendido/: cabecera-convención del repo, no spam textual.
     - "**/_extendido/README.md"
+    # Backups verbatim de limpieza radical 2026-05-17: copias intencionales del cuerpo manuscrito
+    # para trazabilidad post-drenaje; el template-detector las flagea como duplicados del cuerpo.
+    - "Bitacora/2026-05-17-limpieza-final/historico-*.md"
   template_signatures:
     # Frases que aparecen idénticas en >2 archivos -> sospecha de plantilla spam
     similarity_threshold: 0.85

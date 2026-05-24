@@ -245,10 +245,8 @@ Pearl (2009, *Causality*, cap. 3, p. 86) formaliza la diferencia entre `P(y|x)` 
 
 ## 12. Deuda residual
 
-Entradas operativas declaradas tras triage de bitácora huérfana (2026-05-11).
-
-- **[F03-02 2026-05-11]** El criterio 2.3 (línea 26) "diferencia inferencial inesperada" se enuncia sin pre-registro de banda predictiva (`[a, b]`), umbral τ ni cierre de variables auxiliares. Esto deja al criterio vulnerable a Duhem-Quine: cualquier divergencia puede reasignarse a auxiliares sueltas. Acción: exigir pre-registro de banda + τ + auxiliares en componente 10 de `03-formalizacion/07-plantilla-dossier-anclaje.md` §3.1 antes de admitir un caso como "discriminante". Plazo: previo a la próxima pasada de criterios contra el corpus.
-- **[F03-03 2026-05-11]** §82 y §98-129 describen la matriz dossier con valoraciones 0/1/2 sin definir qué cuenta como "contenido sustantivo" para asignar cada nivel; el caso ancla Warren obtiene 20/20 por construcción del propio capítulo 05-05. Acción: añadir rúbrica explícita por criterio (umbrales operativos para 0, 1, 2) en el cuerpo del capítulo; DRAFT de rúbrica pendiente de migrar al cuerpo del capítulo. `needs_human` para validar umbrales.
+- **Limitación 1.** El criterio 2.3 (línea 26) "diferencia inferencial inesperada" se enuncia sin pre-registro de banda predictiva (`[a, b]`), umbral τ ni cierre de variables auxiliares. Esto deja al criterio vulnerable a Duhem-Quine: cualquier divergencia puede reasignarse a auxiliares sueltas. Camino de resolución: exigir pre-registro de banda + τ + auxiliares en componente 10 de `03-formalizacion/07-plantilla-dossier-anclaje.md` §3.1 antes de admitir un caso como "discriminante", previo a la próxima pasada de criterios contra el corpus.
+- **Limitación 2.** §82 y §98-129 describen la matriz dossier con valoraciones 0/1/2 sin definir qué cuenta como "contenido sustantivo" para asignar cada nivel; el caso ancla Warren obtiene 20/20 por construcción del propio capítulo 05-05. Camino de resolución: añadir rúbrica explícita por criterio (umbrales operativos para 0, 1, 2) en el cuerpo del capítulo; rúbrica preliminar pendiente de migrar al cuerpo y validación de umbrales pendiente de decisión autoral.
 
 ## 13. Cierre
 

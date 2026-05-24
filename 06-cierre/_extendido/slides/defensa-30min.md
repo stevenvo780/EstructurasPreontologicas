@@ -15,7 +15,6 @@ footer: "U. de Antioquia · 2026"
 - Ontología, epistemología y metodología generales multiescalares
 - Autor principal: Jacob Agudelo (U. Antioquia)
 - Colaborador técnico: Steven Vallejo Ortiz
-- [PENDIENTE: plantilla institucional H-U2 — logo, tipografía oficial]
 
 <!-- speaker notes: presentar título canónico, autoría y programa doctoral. Mencionar director y jurado. -->
 

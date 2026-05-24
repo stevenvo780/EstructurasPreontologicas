@@ -1,7 +1,6 @@
 ---
 title: "Versiones extendidas (5min, 15min) — Defensa oral"
 extends: 06-cierre/02-guia-de-defensa.md
-created: 2026-05-11
 ---
 
 # Versiones extendidas de defensa oral (5 min y 15 min)
@@ -62,7 +61,7 @@ El caso 30 (behavioral dynamics) fue rechazado por el aparato en su versión v1 
 
 ### Condiciones de fracaso falsables
 
-Conteo canónico de escenarios falsables = 4 (3+1) conforme a cap 06-01 §2 (decisión pendiente firma autoral H-J8, ver TAREAS_PENDIENTES.md).
+Conteo canónico de escenarios falsables = 4 (3+1) conforme a cap 06-01 §2.
 
 La tesis se compromete con **cuatro condiciones falsables fechadas: tres escenarios con criterio externo + una condición de prioridad histórica** —pérdida del gate completo, recuperación de los controles, estancamiento de los programáticos, ruptura de la asimetría L1↔B↔L3↔S como condición de prioridad histórica— cualquiera de las cuales basta para rechazarla. La enumeración exacta con criterios públicos vive en §3.10. El cierre del cap 06-01 §2 cita Popper §6 contra readmitir «absorción por rival» como escenario empírico independiente.
 
@@ -124,8 +123,6 @@ Esta tesis no clausura la complejidad de lo real. Ofrece reglas para no empeorar
 
 ## 4. Deuda residual heredada
 
-Entradas operativas declaradas tras triage de bitácora huérfana (2026-05-11), preservadas desde `06-cierre/04-versiones-cortas-defensa.md` (consolidado en este archivo):
-
-- **[AU-6 2026-05-11]** La nota sobre convergencia inter-paradigma declara una proporción agregada que oculta la diferencia entre arrays reales y reconstruidos. Acción: descomponer la proporción en (real, reconstruido) para preservar la diferencia en nivel de evidencia. Paralela en `06-cierre/01-conclusion-demostrativa.md` §4.1.
-- **[AU-7 2026-05-11]** La afirmación de significancia del caso 30 (p=0.044) debe aclararse como "significativo en test único, no bajo control de FWER": el umbral de Holm-Bonferroni para m=30 contrastes paralelos es 0.0031, que el caso 30 no atraviesa. Sólo 14 casos del corpus sobreviven al control FWER. Acción: añadir nota junto a la cifra; añadir entrada `edi.valid` en `00-proyecto/07-glosario-operativo.md` distinguiendo "significativo en test único" vs "significativo bajo FWER".
-- **[AU-9 2026-05-11]** El conteo "8 null" colapsa tres regímenes operativamente distintos: 5 nulls genuinos, 1 EDI fuertemente negativo, 2 rechazos por gate C1-C5. Acción: subdividir la tabla null en tres filas. Paralela en `06-cierre/01-conclusion-demostrativa.md` §4.1 y `05-aplicaciones/07-mapa-aplicaciones-corpus.md`.
+- **Limitación 1.** La nota sobre convergencia inter-paradigma declara una proporción agregada que oculta la diferencia entre arrays reales y reconstruidos. Camino de resolución: descomponer la proporción en (real, reconstruido) para preservar la diferencia en nivel de evidencia. Paralela en `06-cierre/01-conclusion-demostrativa.md` §4.1.
+- **Limitación 2.** La afirmación de significancia del caso 30 (p=0.044) debe aclararse como "significativo en test único, no bajo control de FWER": el umbral de Holm-Bonferroni para m=30 contrastes paralelos es 0.0031, que el caso 30 no atraviesa. Sólo 14 casos del corpus sobreviven al control FWER. Camino de resolución: añadir nota junto a la cifra; añadir entrada `edi.valid` en `00-proyecto/07-glosario-operativo.md` distinguiendo "significativo en test único" vs "significativo bajo FWER".
+- **Limitación 3.** El conteo "8 null" colapsa tres regímenes operativamente distintos: 5 nulls genuinos, 1 EDI fuertemente negativo, 2 rechazos por gate C1-C5. Camino de resolución: subdividir la tabla null en tres filas. Paralela en `06-cierre/01-conclusion-demostrativa.md` §4.1 y `05-aplicaciones/07-mapa-aplicaciones-corpus.md`.

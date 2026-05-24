@@ -60,7 +60,7 @@ Una aplicación que solo renombra el fenómeno con vocabulario del marco sin pro
 
 ## 3.bis. Modo técnico-ejecutado: tercera categoría operativa
 
-[BORRADOR-IA · requires: H-J*] La dicotomía demostrativo/programático cubre los casos del manuscrito principal (§4.1 y §4.2), pero **no captura el régimen bajo el cual operan los 40 casos del corpus EDI** (30 inter-dominio + 10 inter-escala, capítulos 05-06 y 05-07). Para esos casos se reconoce explícitamente una tercera categoría operativa: **modo técnico-ejecutado**.
+La dicotomía demostrativo/programático cubre los casos del manuscrito principal (§4.1 y §4.2), pero **no captura el régimen bajo el cual operan los 40 casos del corpus EDI** (30 inter-dominio + 10 inter-escala, capítulos 05-06 y 05-07). Para esos casos se reconoce explícitamente una tercera categoría operativa: **modo técnico-ejecutado**.
 
 ### 3.bis.1. Definición
 
@@ -97,7 +97,7 @@ Un capítulo o caso en modo técnico-ejecutado debe declararlo explícitamente y
 |---|---|---|
 | 05-05 | Behavioral dynamics: locomoción, obstáculos, frenado, raqueteo, equilibrio | DEMOSTRATIVO con dossier completo; el anclaje primario es Warren (2006, pp. 358–359), engaged textualmente en el párrafo siguiente, complementado con Fajen y Warren (2003), Yilmaz y Warren (1995), Foo et al. (2000) y Sternad et al. (2001) |
 
-[BORRADOR-IA · requires: H-J*] El anclaje teórico del caso 05-05 es explícitamente Warren (2006), quien plantea que «the agent and its environment are treated as a pair of dynamical systems that are coupled mechanically and informationally. Their interactions give rise to the behavioral dynamics, a vector field with attractors that correspond to stable task solutions, repellers that correspond to avoided states, and bifurcations that correspond to behavioral transitions» (Warren, 2006, p. 358). Esta tesis hace al programa de Warren un caso ancla natural para la ontología material-relacional: los atractores no se postulan como entidades internas al agente ni como propiedades del entorno aislado, sino que «are codetermined by the confluence of task constraints and perceptual–motor control laws» (p. 359). El capítulo 05-05 hereda esa carga discriminante —no la presupone—.
+El anclaje teórico del caso 05-05 es explícitamente Warren (2006), quien plantea que «the agent and its environment are treated as a pair of dynamical systems that are coupled mechanically and informationally. Their interactions give rise to the behavioral dynamics, a vector field with attractors that correspond to stable task solutions, repellers that correspond to avoided states, and bifurcations that correspond to behavioral transitions» (Warren, 2006, p. 358). Esta tesis hace al programa de Warren un caso ancla natural para la ontología material-relacional: los atractores no se postulan como entidades internas al agente ni como propiedades del entorno aislado, sino que «are codetermined by the confluence of task constraints and perceptual–motor control laws» (p. 359). El capítulo 05-05 hereda esa carga discriminante —no la presupone—.
 
 ### 4.2. Aplicaciones en modo programático
 

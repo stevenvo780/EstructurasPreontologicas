@@ -199,9 +199,7 @@ Cada uno tiene:
 
 ## Deuda residual
 
-Entradas operativas declaradas tras triage de bitácora huérfana (2026-05-11).
-
-- **[F03-02 2026-05-11]** El componente 10 del dossier ("predicción discriminante a buscar" / "diferencia inferencial inesperada") se exige sin obligar al investigador a pre-registrar banda predictiva (`[a, b]`), umbral τ ni variables auxiliares fijadas. Vulnerabilidad Duhem-Quine. Acción: actualizar §3.1 (componente 10) para exigir esos tres elementos como pre-condición de admisión a modo demostrativo. Plazo: previo a la siguiente pasada de dossiers contra el corpus. Cf. `03-formalizacion/02-criterios-de-legitimidad-y-metodo.md` §12.
+- **Limitación 1.** El componente 10 del dossier ("predicción discriminante a buscar" / "diferencia inferencial inesperada") se exige sin obligar al investigador a pre-registrar banda predictiva (`[a, b]`), umbral τ ni variables auxiliares fijadas. Vulnerabilidad Duhem-Quine. Camino de resolución: actualizar §3.1 (componente 10) para exigir esos tres elementos como pre-condición de admisión a modo demostrativo, previo a la siguiente pasada de dossiers contra el corpus. Cf. `03-formalizacion/02-criterios-de-legitimidad-y-metodo.md` §12.
 
 ## Cierre
 

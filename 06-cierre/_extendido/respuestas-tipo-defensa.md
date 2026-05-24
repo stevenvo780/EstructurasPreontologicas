@@ -1,7 +1,6 @@
 ---
 title: "Banco completo de respuestas-tipo (12 P&R) — Defensa oral"
 extends: 06-cierre/02-guia-de-defensa.md
-created: 2026-05-11
 ---
 
 # Banco completo de respuestas-tipo para defensa oral (Q&A)
@@ -36,7 +35,7 @@ Mapeo directo de las 12 preguntas más probables del tribunal doctoral a respues
 
 **Referencia:** Cap 02-05 §2.4 (cuatro pasos articulados) + ST T13 hallazgo ST-3.
 
-> **Deuda residual [F04-04 2026-05-11]:** la formulación "modus tollens vacuo" es manierismo no técnico; Kim 2005 en *Physicalism, or Something Near Enough* anticipa explícitamente la maniobra "constitución, no causación". PDF Kim 2005 ausente en `07-bibliografia/`. Acción pendiente: reescribir invocando manipulabilidad woodwardiana (Woodward 2003 presente local) sin pretender "refutación" de Kim, o fetch Kim 2005 antes de paginar el engagement. `needs_human` para corte filosófico.
+> **Deuda residual.** La formulación "modus tollens vacuo" es manierismo no técnico; Kim 2005 en *Physicalism, or Something Near Enough* anticipa explícitamente la maniobra "constitución, no causación". PDF Kim 2005 ausente en `07-bibliografia/`. Camino de resolución: reescribir invocando manipulabilidad woodwardiana (Woodward 2003 presente local) sin pretender "refutación" de Kim, o recuperar Kim 2005 antes de paginar el engagement; corte filosófico pendiente de decisión autoral.
 
 ## P5. ¿Qué dice su tesis sobre la consciencia fenoménica?
 
@@ -88,10 +87,8 @@ Mapeo directo de las 12 preguntas más probables del tribunal doctoral a respues
 
 ## Deuda residual heredada
 
-Entradas operativas declaradas tras triage de bitácora huérfana (2026-05-11), preservadas desde `06-cierre/05-respuestas-tipo-defensa.md` (consolidado en este archivo):
-
-- **[F04-04 2026-05-11]** Ver nota inline junto a P4 (más arriba).
-- **[F04-08 2026-05-11]** La respuesta sobre eliminativismo (Trampa 4 en `06-cierre/02-guia-de-defensa.md §4`) responde a "eliminar de más" sin responder a la objeción complementaria "eliminar **de menos**": los casos null del corpus podrían exigir eliminación regional de la categoría asociada (si la sonda no detecta cierre operativo, ¿por qué se preserva el término?). Acción: añadir sub-respuesta articulando la doble exigencia (no eliminar de más, no preservar de más). `needs_human` para corte filosófico sobre umbral de eliminación regional.
+- **Limitación 1.** Ver nota inline junto a P4 (más arriba).
+- **Limitación 2.** La respuesta sobre eliminativismo (Trampa 4 en `06-cierre/02-guia-de-defensa.md §4`) responde a "eliminar de más" sin responder a la objeción complementaria "eliminar **de menos**": los casos null del corpus podrían exigir eliminación regional de la categoría asociada (si la sonda no detecta cierre operativo, ¿por qué se preserva el término?). Camino de resolución: añadir sub-respuesta articulando la doble exigencia (no eliminar de más, no preservar de más); corte filosófico sobre umbral de eliminación regional pendiente de decisión autoral.
 
 ## Lectura cruzada
 

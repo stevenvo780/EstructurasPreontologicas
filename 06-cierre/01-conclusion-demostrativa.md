@@ -1,7 +1,5 @@
 # Conclusión demostrativa
 
-> **Decisiones autorales pendientes:** H-J1..H-J12 (firma filosófica) y H-U1..H-U2 + H-S1/H-S2 (procedimentales) listadas en `TAREAS_PENDIENTES.md`. Las secciones de este capítulo cuya prosa final espera firma de Jacob están registradas allí por identificador; no representan trabajo incompleto del aparato.
-
 ## Tesis del capítulo
 
 La tesis del **irrealismo operativo de estructuras pre-ontológicas** se sostiene como **propuesta ontológica general multiescalar metodológicamente articulada con aparato auto-correctivo demostrado**, no como cartografía positiva confirmada por acumulación de casos. El núcleo duro —irrealismo operativo, asimetría L1↔B↔L3↔S, dossier de catorce componentes, protocolo C1-C5, EDI por intervención ablativa— queda intacto. Lo que el corpus empírico aporta es **justificación operativa**: 40 casos (30 inter-dominio + 10 inter-escala) sobre los que el aparato discrimina entre presencia y ausencia de cierre operativo, declara su propia inadecuación cuando los datos contradicen el modelo, y registra los resultados sin reescritura post-hoc.

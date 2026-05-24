@@ -16,7 +16,6 @@ footer: "U. de Antioquia · 2026"
 - Jacob Agudelo (U. Antioquia) — autor principal
 - Steven Vallejo — colaborador técnico
 - IA bajo dirección humana, no co-autora
-- [PENDIENTE: plantilla institucional H-U2]
 
 <!-- speaker notes: portada + agradecimientos comprimidos en 1 slide. -->
 

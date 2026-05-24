@@ -1,7 +1,5 @@
 # Estructura del proyecto y plan de capítulos
 
-> **BORRADOR-IA — pendiente firma H-J8.** Este archivo es el resultado de la fusión D.4 (`00-proyecto/01-estructura-general.md` + `00-proyecto/03-plan-de-capitulos.md` → un solo archivo) ejecutada como consolidación editorial bajo Fase 2 de la síntesis 2026-05-11. Reemplaza ambos archivos sin afectar `TesisFinal/Tesis.md` (ninguno entra al ensamblado). Decisión pendiente Jacob: (1) si `01-estructura-y-plan.md` debe promoverse al cuerpo del manuscrito como capítulo introductorio metodológico; (2) si la política «un capítulo = una pregunta = un interlocutor principal» debe sobrevivir como doctrina declarada en este archivo o sólo operativa en el cuerpo.
-
 ## Función de esta carpeta y de este archivo
 
 Esta carpeta aloja **andamiaje del repositorio**: arquitectura del manuscrito doctoral, formulación institucional y materiales operativos no incorporados al cuerpo ensamblado. La **fuente de verdad del orden de capítulos** del manuscrito es `TesisFinal/build.py` (lista `PARTS`), no este archivo. Este documento sirve para **navegación humana del repositorio**: explica cómo se relacionan las carpetas numeradas con el ensamblado final, qué pregunta resuelve cada módulo y bajo qué política se admiten capítulos.
@@ -59,30 +57,30 @@ Tabla canónica que cruza las nueve carpetas numeradas del repositorio con las c
 - Los archivos `06-cierre/02-…`, `06-cierre/_extendido/…` **no entran al ensamblado**: son satélites de defensa oral.
 - Las bitácoras del repositorio interno son trazabilidad histórica, no canon vivo.
 
-## Lógica de fases del proyecto
+## Bloques de consolidación
 
-### Fase 1: consolidación del problema y del marco
+### Consolidación del problema y del marco
 
 - diagnóstico cerrado;
 - preguntas, objetivos, hipótesis fijados;
 - ontología y epistemología consolidadas;
 - nivel B y asimetría L1↔B↔L3↔S explícitos.
 
-### Fase 2: consolidación del aparato
+### Consolidación del aparato
 
 - operadores definidos con criterio de admisión y de fallo;
 - dossier de anclaje como filtro;
 - procedimiento empírico de κ vía EDI;
 - auditoría ontológica como protocolo replicable.
 
-### Fase 3: contraste y demostración
+### Contraste y demostración
 
 - discriminación pública contra rivales;
 - caso ancla canónico con dossier completo;
 - aplicaciones programáticas con criterios de elevación;
 - limitaciones nombradas (L1-L20 en cap 04-05).
 
-### Fase 4: cierre y proyección
+### Cierre y proyección
 
 - conclusión demostrativa con condiciones de fracaso falsables;
 - guía de defensa oral (`06-cierre/02-…` + `_extendido/`);
@@ -106,7 +104,7 @@ El manuscrito-fuente histórico (archivado internamente) es la formulación exte
 - **patrón estabilizado** definido técnicamente como atractor empírico;
 - **aparato formal** con protocolo empírico de κ vía baja dimensionalidad operacionalizado como EDI;
 - **nivel B** (acoplamiento empírico genérico multiescalar) en lugar de L2 neurobiológico estrecho;
-- **condiciones de fracaso global falsables** según el conteo canónico unificado de cap 06-01 §2 (3 escenarios falsables con criterio externo + 1 condición de prioridad histórica; decisión pendiente firma H-J8 declarada en TAREAS_PENDIENTES.md);
+- **condiciones de fracaso global falsables** según el conteo canónico unificado de cap 06-01 §2 (3 escenarios falsables con criterio externo + 1 condición de prioridad histórica);
 - **bibliografía integrada por capítulo** con interlocutor principal nombrado.
 
 ## Política de subcarpetas y materiales auxiliares

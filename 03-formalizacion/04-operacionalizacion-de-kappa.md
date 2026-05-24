@@ -79,7 +79,7 @@ Cuatro pruebas, todas necesarias:
 
 Si las cuatro pruebas pasan, `κ(G) = G*` es legítima respecto de Q. Si alguna falla, la compresión está empíricamente desautorizada.
 
-Estas cuatro pruebas **extienden** los tres criterios de legitimidad de κ enunciados en cap 03-01 §6.3 —reproducción, topología, intervención— añadiendo un **cuarto criterio de generalización inter-condición** que el aparato formal no exigía como requisito de admisión. La justificación operativa de la extensión: sin generalización a condiciones no usadas para ajuste, la reproducción intra-muestra es vulnerable a sobreajuste paramétrico y por tanto insuficiente como evidencia de cierre operativo (cf. cap 06-01 §4.2 [TENG-10]).
+Estas cuatro pruebas **extienden** los tres criterios de legitimidad de κ enunciados en cap 03-01 §6.3 —reproducción, topología, intervención— añadiendo un **cuarto criterio de generalización inter-condición** que el aparato formal no exigía como requisito de admisión. La justificación operativa de la extensión: sin generalización a condiciones no usadas para ajuste, la reproducción intra-muestra es vulnerable a sobreajuste paramétrico y por tanto insuficiente como evidencia de cierre operativo (cf. cap 06-01 §4.2, limitación sobre baselines).
 
 ### Paso 7. Identificar fronteras de validez y reabrir donde haga falta
 
@@ -238,9 +238,7 @@ Algunos casos tienen funciones específicas que justifican categorías ROBUSTO e
 
 ## Deuda residual
 
-Entradas operativas declaradas tras triage de bitácora huérfana (2026-05-11).
-
-- **[F03-09 2026-05-11]** Paso 3 (líneas 36-48) enumera cinco métodos de estimación de dimensionalidad ("según el caso": PCA, GP, NN, Takens, false nearest neighbors) sin protocolo de reconciliación entre ellos. PCA tiene sesgo lineal; Grassberger-Procaccia es sensible a longitud de serie; NN tiene sesgo de overfitting opuesto. El "según el caso" abre un *garden of forking paths*. PDFs Camastra-Staiano 2016 y Simmons-Nelson-Simonsohn 2011 ausentes en `07-bibliografia/`. Acción: exigir triple estimación (PCA + GP + Takens) reportada conjuntamente con discrepancia declarada; fetch Camastra-Staiano 2016 antes de invocar paginación. Pendiente fetch y reescritura del Paso 3.
+- **Limitación 1.** Paso 3 (líneas 36-48) enumera cinco métodos de estimación de dimensionalidad ("según el caso": PCA, GP, NN, Takens, false nearest neighbors) sin protocolo de reconciliación entre ellos. PCA tiene sesgo lineal; Grassberger-Procaccia es sensible a longitud de serie; NN tiene sesgo de overfitting opuesto. El "según el caso" abre un *garden of forking paths*. PDFs Camastra-Staiano 2016 y Simmons-Nelson-Simonsohn 2011 ausentes en `07-bibliografia/`. Camino de resolución: exigir triple estimación (PCA + GP + Takens) reportada conjuntamente con discrepancia declarada; recuperar Camastra-Staiano 2016 antes de invocar paginación; reescritura del Paso 3 pendiente.
 
 ## Cierre
 
