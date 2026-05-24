@@ -34,7 +34,7 @@ function statusColor(c: Case): string {
 export default function CaseCard({ c }: CaseCardProps) {
   const nivelInfo = c.metrics.nivel != null ? NIVEL_LABELS[c.metrics.nivel] : null;
   const Status = statusIcon(c);
-  const isFalsacion = c.case_id.startsWith('06_') || c.case_id.startsWith('07_') || c.case_id.startsWith('08_');
+  const isFalsacion = c.metrics?.category === 'falsification';
 
   return (
     <Link

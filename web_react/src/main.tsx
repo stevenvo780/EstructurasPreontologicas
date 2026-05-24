@@ -5,6 +5,7 @@ import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { Toaster } from 'react-hot-toast';
 import App from './App';
 import { ThemeProvider } from './hooks/useTheme';
+import ErrorBoundary from './components/ErrorBoundary';
 import './styles/global.css';
 
 const queryClient = new QueryClient({
@@ -19,20 +20,22 @@ const queryClient = new QueryClient({
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <ThemeProvider>
-      <QueryClientProvider client={queryClient}>
-        <BrowserRouter>
-          <App />
-          <Toaster
-            position="bottom-right"
-            toastOptions={{
-              className:
-                '!bg-ink-800 !text-ink-50 dark:!bg-ink-700 !shadow-2xl !rounded-xl !border !border-ink-700/50 dark:!border-ink-600/50',
-              duration: 3500,
-            }}
-          />
-        </BrowserRouter>
-      </QueryClientProvider>
-    </ThemeProvider>
+    <ErrorBoundary>
+      <ThemeProvider>
+        <QueryClientProvider client={queryClient}>
+          <BrowserRouter>
+            <App />
+            <Toaster
+              position="bottom-right"
+              toastOptions={{
+                className:
+                  '!bg-ink-800 !text-ink-50 dark:!bg-ink-700 !shadow-2xl !rounded-xl !border !border-ink-700/50 dark:!border-ink-600/50',
+                duration: 3500,
+              }}
+            />
+          </BrowserRouter>
+        </QueryClientProvider>
+      </ThemeProvider>
+    </ErrorBoundary>
   </React.StrictMode>
 );

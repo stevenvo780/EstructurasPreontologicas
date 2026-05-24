@@ -25,10 +25,10 @@ export default function Cases() {
     if (!cases) return [];
     let out = [...cases];
     if (filter !== 'all') {
-      out = out.filter((c) => c.metrics.category.toLowerCase() === filter);
+      out = out.filter((c) => (c.metrics?.category ?? '').toLowerCase() === filter);
     }
     if (onlyPass) {
-      out = out.filter((c) => c.metrics.overall_pass);
+      out = out.filter((c) => c.metrics?.overall_pass);
     }
     if (query.trim()) {
       const q = query.toLowerCase();
@@ -42,13 +42,15 @@ export default function Cases() {
     out.sort((a, b) => {
       switch (sortBy) {
         case 'edi-desc':
-          return (b.metrics.edi ?? -Infinity) - (a.metrics.edi ?? -Infinity);
+          return (b.metrics?.edi ?? -Infinity) - (a.metrics?.edi ?? -Infinity);
         case 'edi-asc':
-          return (a.metrics.edi ?? Infinity) - (b.metrics.edi ?? Infinity);
+          return (a.metrics?.edi ?? Infinity) - (b.metrics?.edi ?? Infinity);
         case 'p-asc':
-          return (a.metrics.pvalue ?? Infinity) - (b.metrics.pvalue ?? Infinity);
+          return (a.metrics?.pvalue ?? Infinity) - (b.metrics?.pvalue ?? Infinity);
         case 'case-num':
           return (a.case_num ?? 999) - (b.case_num ?? 999);
+        default:
+          return 0;
       }
     });
     return out;
@@ -58,13 +60,13 @@ export default function Cases() {
     const c = cases ?? [];
     return {
       total: c.length,
-      strong: c.filter((x) => x.metrics.category.toLowerCase() === 'strong').length,
-      weak: c.filter((x) => x.metrics.category.toLowerCase() === 'weak').length,
-      suggestive: c.filter((x) => x.metrics.category.toLowerCase() === 'suggestive').length,
-      trend: c.filter((x) => x.metrics.category.toLowerCase() === 'trend').length,
-      null: c.filter((x) => x.metrics.category.toLowerCase() === 'null').length,
-      falsified: c.filter((x) => x.metrics.category.toLowerCase() === 'falsified').length,
-      pass: c.filter((x) => x.metrics.overall_pass).length,
+      strong: c.filter((x) => (x.metrics?.category ?? '').toLowerCase() === 'strong').length,
+      weak: c.filter((x) => (x.metrics?.category ?? '').toLowerCase() === 'weak').length,
+      suggestive: c.filter((x) => (x.metrics?.category ?? '').toLowerCase() === 'suggestive').length,
+      trend: c.filter((x) => (x.metrics?.category ?? '').toLowerCase() === 'trend').length,
+      null: c.filter((x) => (x.metrics?.category ?? '').toLowerCase() === 'null').length,
+      falsified: c.filter((x) => (x.metrics?.category ?? '').toLowerCase() === 'falsified').length,
+      pass: c.filter((x) => x.metrics?.overall_pass).length,
     };
   }, [cases]);
 

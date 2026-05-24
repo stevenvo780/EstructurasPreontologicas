@@ -6,9 +6,19 @@ import { PageLoading, ErrorBox } from '../components/Loading';
 import HtmlContent from '../components/HtmlContent';
 
 export default function Bibliography() {
+  // Resuelve el slug del capítulo de bibliografía vía el índice, no hardcoded:
+  // busca por code '07' (orden canónico) y cae al slug histórico si falta.
+  const { data: chapters } = useQuery({
+    queryKey: ['chapters'],
+    queryFn: api.chapters,
+  });
+  const biblioSlug =
+    chapters?.find((c) => c.code === '07')?.slug ?? '07-bibliografia';
+
   const { data, isLoading, error } = useQuery({
-    queryKey: ['chapter', 'bibliografia'],
-    queryFn: () => api.chapter('07-bibliografia'),
+    queryKey: ['chapter', biblioSlug],
+    queryFn: () => api.chapter(biblioSlug),
+    enabled: Boolean(biblioSlug),
   });
 
   const [query, setQuery] = useState('');
