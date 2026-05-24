@@ -151,7 +151,7 @@ La taxonomía operativa del corpus EDI distingue seis niveles (0–5):
 | 4 | Strong | EDI ≥ 0.30, p < 0.01, `overall_pass = True` | Energía, Deforestación, Kessler, Riesgo Bio |
 | 5 | Crítico | Convergencia bajo múltiples sondas + LoE = 5 + frontera espacial nítida | **(programa futuro, no alcanzado en el corpus actual)** |
 
-**Aclaración explícita y reiterada del Nivel 5:** el Nivel 5 está definido como **horizonte programático del marco**, no como nivel alcanzado en el corpus actual. Sus condiciones (multi-sonda convergente con resultados consistentes, LoE = 5, topología heterogénea con frontera espacial nítida) son objetivos del programa de elevación documentado en `Bitacora/2026-04-28-cierre-doctoral/03-programa-multi-sonda.md`. El manuscrito no afirma haberlo alcanzado en ningún caso. Esta cláusula se reitera donde sea relevante para evitar la lectura de promesa no cumplida.
+**Aclaración explícita y reiterada del Nivel 5:** el Nivel 5 está definido como **horizonte programático del marco**, no como nivel alcanzado en el corpus actual. Sus condiciones (multi-sonda convergente con resultados consistentes, LoE = 5, topología heterogénea con frontera espacial nítida) son objetivos del programa de elevación declarado en la hoja de ruta (`06-cierre/03-hoja-de-ruta-para-tesis-final.md`, programa multi-sonda). El manuscrito no afirma haberlo alcanzado en ningún caso. Esta cláusula se reitera donde sea relevante para evitar la lectura de promesa no cumplida.
 
 ## Módulos metodológicos complementarios
 
@@ -240,7 +240,7 @@ Algunos casos tienen funciones específicas que justifican categorías ROBUSTO e
 
 Entradas operativas declaradas tras triage de bitácora huérfana (2026-05-11).
 
-- **[F03-09 2026-05-11]** Paso 3 (líneas 36-48) enumera cinco métodos de estimación de dimensionalidad ("según el caso": PCA, GP, NN, Takens, false nearest neighbors) sin protocolo de reconciliación entre ellos. PCA tiene sesgo lineal; Grassberger-Procaccia es sensible a longitud de serie; NN tiene sesgo de overfitting opuesto. El "según el caso" abre un *garden of forking paths*. PDFs Camastra-Staiano 2016 y Simmons-Nelson-Simonsohn 2011 ausentes en `07-bibliografia/`. Acción: exigir triple estimación (PCA + GP + Takens) reportada conjuntamente con discrepancia declarada; fetch Camastra-Staiano 2016 antes de invocar paginación. Pendiente fetch y reescritura del Paso 3. Origen: `Bitacora/2026-05-04-continuous-run/F03-09-dimensionalidad-sin-protocolo.md`.
+- **[F03-09 2026-05-11]** Paso 3 (líneas 36-48) enumera cinco métodos de estimación de dimensionalidad ("según el caso": PCA, GP, NN, Takens, false nearest neighbors) sin protocolo de reconciliación entre ellos. PCA tiene sesgo lineal; Grassberger-Procaccia es sensible a longitud de serie; NN tiene sesgo de overfitting opuesto. El "según el caso" abre un *garden of forking paths*. PDFs Camastra-Staiano 2016 y Simmons-Nelson-Simonsohn 2011 ausentes en `07-bibliografia/`. Acción: exigir triple estimación (PCA + GP + Takens) reportada conjuntamente con discrepancia declarada; fetch Camastra-Staiano 2016 antes de invocar paginación. Pendiente fetch y reescritura del Paso 3.
 
 ## Cierre
 

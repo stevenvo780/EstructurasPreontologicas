@@ -78,7 +78,7 @@ Los autores declaran no tener conflictos de interés financieros con los dataset
 Compromiso público:
 
 - el repositorio del manuscrito y del aparato EDI está disponible en repositorio público controlado por los autores;
-- la trazabilidad histórica del proyecto (Bitacora/) permite reproducción del crecimiento del corpus paso a paso;
+- la trazabilidad histórica del proyecto permite reproducción del crecimiento del corpus paso a paso;
 - los `metrics.json` versionados en cada caso son la fuente de verdad numérica;
 - los datos públicos secundarios (World Bank, OWID, OPSD, CelesTrak, etc.) están cacheados o reproducibles vía URLs documentadas;
 - los datos sintéticos del caso 30 son reproducibles bit-a-bit con `seed=42`.
@@ -92,10 +92,10 @@ El manuscrito se entrega en estado **integral defendible bajo régimen declarado
 - arquitectura argumental cerrada (capítulos 02 a 06);
 - aparato formal completo (capítulo 03);
 - corpus EDI inter-dominio (30 casos) y inter-escala (10 casos) con resultados verificables (`09-simulaciones-edi/`, `10-apendices-tecnicos/01-tablas-crudas-corpus-interdominio.md`, `10-apendices-tecnicos/02-tablas-crudas-corpus-multiescala.md`);
-- programa multi-sonda y baselines estadísticos ejecutados (`Bitacora/2026-04-28-cierre-doctoral/`);
+- programa multi-sonda y baselines estadísticos ejecutados;
 - caso 30 (behavioral dynamics) con dossier técnico-ético para elevación documentada;
 - bibliografía consolidada (`07-bibliografia/01-bibliografia-orientativa.md`);
-- trazabilidad de proceso documentada (`Bitacora/`);
+- trazabilidad de proceso documentada internamente;
 - validación lógica formal con suite ST de 24 teorías;
 - hostile testing aplicado y verificado (auditoría severa N1-N5 + auditoría V4 V4-01, V4-06, V4-09).
 

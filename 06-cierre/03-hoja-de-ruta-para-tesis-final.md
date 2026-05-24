@@ -109,7 +109,7 @@ Cada capítulo con citas insertadas, bibliografía formal por capítulo y biblio
 
 ### Plazo
 
-Continuo durante redacción final, con prioridad alta. Tareas documentales delegables a IA según el archivo `Bitacora/2026-04-28-cierre-pendientes/mega-tareas-archivadas/90-tareas-documentales-delegables-a-ia.md` ayudan acumulativamente.
+Continuo durante redacción final, con prioridad alta. Tareas documentales delegables a IA (archivadas en el repositorio interno del proyecto) ayudan acumulativamente.
 
 ## 4. Paso 3. Desarrollo del aparato para variables normativas
 

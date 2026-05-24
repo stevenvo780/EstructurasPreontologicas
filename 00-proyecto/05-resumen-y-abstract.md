@@ -28,10 +28,6 @@ The core methodological contribution is a hybrid **ABM + ODE** instrument that m
 
 ---
 
-> `[BORRADOR-IA — pendiente firma autoral H-J5/H-J6/H-J7]` Reformulación limpia bajo CLAUDE.md §1. Detalle de reclasificaciones por caso en `06-cierre/01-cierre-doctoral.md` §1, §4.5, §5; histórico de versiones previas archivado en `Bitacora/`.
-
----
-
 ## Información bibliográfica
 
 **Autor principal (concepto y dirección):** Jacob Agudelo, Universidad de Antioquia.

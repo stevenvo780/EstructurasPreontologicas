@@ -36,7 +36,7 @@ Mapeo directo de las 12 preguntas más probables del tribunal doctoral a respues
 
 **Referencia:** Cap 02-05 §2.4 (cuatro pasos articulados) + ST T13 hallazgo ST-3.
 
-> **Deuda residual [F04-04 2026-05-11]:** la formulación "modus tollens vacuo" es manierismo no técnico; Kim 2005 en *Physicalism, or Something Near Enough* anticipa explícitamente la maniobra "constitución, no causación". PDF Kim 2005 ausente en `07-bibliografia/`. Acción pendiente: reescribir invocando manipulabilidad woodwardiana (Woodward 2003 presente local) sin pretender "refutación" de Kim, o fetch Kim 2005 antes de paginar el engagement. `needs_human` para corte filosófico. Origen: `Bitacora/2026-05-04-continuous-run/F04-04-kim-modus-tollens-vacuo.md`.
+> **Deuda residual [F04-04 2026-05-11]:** la formulación "modus tollens vacuo" es manierismo no técnico; Kim 2005 en *Physicalism, or Something Near Enough* anticipa explícitamente la maniobra "constitución, no causación". PDF Kim 2005 ausente en `07-bibliografia/`. Acción pendiente: reescribir invocando manipulabilidad woodwardiana (Woodward 2003 presente local) sin pretender "refutación" de Kim, o fetch Kim 2005 antes de paginar el engagement. `needs_human` para corte filosófico.
 
 ## P5. ¿Qué dice su tesis sobre la consciencia fenoménica?
 
@@ -46,7 +46,7 @@ Mapeo directo de las 12 preguntas más probables del tribunal doctoral a respues
 
 ## P6. ¿Por qué no operaron sobre datos humanos reales en behavioral dynamics?
 
-**Respuesta:** Caso 30 está declarado como piloto metodológico con circularidad detectada por la sonda alternativa (N2: Fajen-Warren produce EDI > 0.30 en 50% de mass-spring puro). Programa con datos VENLab/WALK-MS está documentado con dossier técnico-ético en `Bitacora/2026-04-28-cierre-doctoral/02-`, plazo 9-12 meses, requiere aval CEI. La trayectoria desde el rechazo del v1 (EDI=0.002) hasta el v2 weak honesto (EDI=0.262) ilustra la disciplina del aparato.
+**Respuesta:** Caso 30 está declarado como piloto metodológico con circularidad detectada por la sonda alternativa (N2: Fajen-Warren produce EDI > 0.30 en 50% de mass-spring puro). Programa con datos VENLab/WALK-MS está documentado con dossier técnico-ético en la hoja de ruta (`06-cierre/03-hoja-de-ruta-para-tesis-final.md`), plazo 9-12 meses, requiere aval CEI. La trayectoria desde el rechazo del v1 (EDI=0.002) hasta el v2 weak honesto (EDI=0.262) ilustra la disciplina del aparato.
 
 **Referencia:** Cap 06-01 §3.5 + L5 del capítulo de limitaciones declaradas.
 
@@ -91,7 +91,7 @@ Mapeo directo de las 12 preguntas más probables del tribunal doctoral a respues
 Entradas operativas declaradas tras triage de bitácora huérfana (2026-05-11), preservadas desde `06-cierre/05-respuestas-tipo-defensa.md` (consolidado en este archivo):
 
 - **[F04-04 2026-05-11]** Ver nota inline junto a P4 (más arriba).
-- **[F04-08 2026-05-11]** La respuesta sobre eliminativismo (Trampa 4 en `06-cierre/02-guia-de-defensa.md §4`) responde a "eliminar de más" sin responder a la objeción complementaria "eliminar **de menos**": los casos null del corpus podrían exigir eliminación regional de la categoría asociada (si la sonda no detecta cierre operativo, ¿por qué se preserva el término?). Acción: añadir sub-respuesta articulando la doble exigencia (no eliminar de más, no preservar de más). `needs_human` para corte filosófico sobre umbral de eliminación regional. Origen: `Bitacora/2026-05-04-continuous-run/F04-08-eliminativismo-respuesta-incompleta.md`.
+- **[F04-08 2026-05-11]** La respuesta sobre eliminativismo (Trampa 4 en `06-cierre/02-guia-de-defensa.md §4`) responde a "eliminar de más" sin responder a la objeción complementaria "eliminar **de menos**": los casos null del corpus podrían exigir eliminación regional de la categoría asociada (si la sonda no detecta cierre operativo, ¿por qué se preserva el término?). Acción: añadir sub-respuesta articulando la doble exigencia (no eliminar de más, no preservar de más). `needs_human` para corte filosófico sobre umbral de eliminación regional.
 
 ## Lectura cruzada
 

@@ -78,7 +78,7 @@ La causa del null **no es la misma en cada caso**, y la honestidad metodológica
 | 25 acuíferos | Cobertura de datos al 51%: insuficiencia, no inadecuación de sonda |
 | 29 IoT | Sonda `bilinear` mal especificada para difusión tecnológica con saltos exponenciales |
 
-Estos casos **no refutan la ontología general**: muestran que **no toda regularidad superficial es atractor de cierre operativo**, y que el aparato distingue tres condiciones distintas — sonda inadecuada, datos insuficientes, anomalía estadística — que la prosa agregada no debe homogenizar. Diagnóstico por caso en `Bitacora/2026-04-29-diagnostico-nulls/diagnostico-casos-null.md`.
+Estos casos **no refutan la ontología general**: muestran que **no toda regularidad superficial es atractor de cierre operativo**, y que el aparato distingue tres condiciones distintas — sonda inadecuada, datos insuficientes, anomalía estadística — que la prosa agregada no debe homogenizar. Diagnóstico por caso disponible bajo solicitud en el archivo interno del proyecto.
 
 #### Controles de falsación (3 rechazados): la prueba inversa de la ontología
 
@@ -266,7 +266,7 @@ HYPER_N_PERM=2999 HYPER_N_BOOT=1500 ./tesis run --case deforest
 
 ## Trazabilidad
 
-La trazabilidad histórica del crecimiento del corpus, las decisiones metodológicas y el desarrollo del caso behavioral dynamics está documentada en `Bitacora/`. La fuente de verdad del manuscrito son los `outputs/metrics.json` versionados en cada caso.
+La trazabilidad histórica del crecimiento del corpus, las decisiones metodológicas y el desarrollo del caso behavioral dynamics está documentada en el archivo interno del proyecto. La fuente de verdad del manuscrito son los `outputs/metrics.json` versionados en cada caso.
 
 ## Cierre
 

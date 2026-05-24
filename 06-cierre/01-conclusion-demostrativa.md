@@ -1,6 +1,6 @@
 # Conclusión demostrativa
 
-> **Decisiones autorales pendientes:** H-J1..H-J12 (firma filosófica) y H-U1..H-U2 + H-S1/H-S2 (procedimentales) listadas en `TAREAS_PENDIENTES.md`. Las marcas `[BORRADOR-IA]` que aparecen en este capítulo señalan exclusivamente los puntos donde la prosa final espera firma de Jacob; no representan trabajo incompleto del aparato.
+> **Decisiones autorales pendientes:** H-J1..H-J12 (firma filosófica) y H-U1..H-U2 + H-S1/H-S2 (procedimentales) listadas en `TAREAS_PENDIENTES.md`. Las secciones de este capítulo cuya prosa final espera firma de Jacob están registradas allí por identificador; no representan trabajo incompleto del aparato.
 
 ## Tesis del capítulo
 
@@ -44,7 +44,7 @@ La tesis queda demostrada cuando se cumplen siete condiciones simultáneas. Cada
 
 **Producto**: cuatro registros articulados con vínculo asimétrico. Cada parámetro de L3 (ode_alpha, ode_beta, macro_coupling, forcing_scale) admite correspondencia nominal con una variable de B con contraparte empírica.
 
-**Test de fallo**: si algún parámetro no se traduce a B, hay formalismo desanclado. **Verificación sostenida en sentido pragmático; deuda metodológica declarada para verificación ontológica fuerte (cap 03-04 §Patología 3)**. La verificación actual establece **correspondencia nominal con magnitudes empíricas, no medición independiente de cada parámetro fuera del ajuste**: en los casos con gate completo, ode_alpha/ode_beta y demás parámetros L3 se calibran sobre los mismos datos que los validan, por lo que el dossier sostiene una traducción nominal motivada en B pero no una medición externa al ajuste. La elevación a "verificación sostenida fuerte" requiere medición independiente vía intervención experimental sobre cada parámetro (no calibración sobre el mismo split), conforme al criterio (iii) de la Patología 3 del cap 03-04. `[BORRADOR-IA pendiente firma H-J3]`
+**Test de fallo**: si algún parámetro no se traduce a B, hay formalismo desanclado. **Verificación sostenida en sentido pragmático; deuda metodológica declarada para verificación ontológica fuerte (cap 03-04 §Patología 3)**. La verificación actual establece **correspondencia nominal con magnitudes empíricas, no medición independiente de cada parámetro fuera del ajuste**: en los casos con gate completo, ode_alpha/ode_beta y demás parámetros L3 se calibran sobre los mismos datos que los validan, por lo que el dossier sostiene una traducción nominal motivada en B pero no una medición externa al ajuste. La elevación a "verificación sostenida fuerte" requiere medición independiente vía intervención experimental sobre cada parámetro (no calibración sobre el mismo split), conforme al criterio (iii) de la Patología 3 del cap 03-04.
 
 ### Condición 5. Cartografía multidominio con dossier completo
 
@@ -72,7 +72,7 @@ La tesis queda demostrada cuando se cumplen siete condiciones simultáneas. Cada
 
 Detalle metodológico relevante: en los casos donde el régimen de pre-registro B-T2.1 *genuino* (firmado antes del fetch de datos refrescados) se aplicó, el aparato no defendió clasificaciones previas. El último Strong robusto previamente declarado (caso 24 Microplásticos, EDI = 0.806 en fase histórica) colapsó en ventana 2000-2019 refrescada a EDI = −1.000, p_perm = 1.0, `overall_pass=False`; el caso 04 Energía descendió de Strong canónico sintético a Weak validado bajo block-permutation; el caso 20 Kessler confirmó Null. Esta auto-corrección bajo pre-registro firmado es **virtud del aparato**, no derrota de la tesis: define operativamente lo que el manuscrito entiende por "demostración honesta".
 
-**Test de fallo**: si los casos que pasan gate completo + block-perm + pre-registro genuino no replican o son superados por modelos rivales bajo el mismo protocolo, la cartografía multidominio pierde su demostración. **Verificación sostenida** en el sentido procesal declarado (defensa por proceso, no por acumulación); deuda B-T2.1 sobre 30 casos en §4. `[BORRADOR-IA pendiente firma H-J5/H-J6/H-J7/H-J12]`
+**Test de fallo**: si los casos que pasan gate completo + block-perm + pre-registro genuino no replican o son superados por modelos rivales bajo el mismo protocolo, la cartografía multidominio pierde su demostración. **Verificación sostenida** en el sentido procesal declarado (defensa por proceso, no por acumulación); deuda B-T2.1 sobre 30 casos en §4.
 
 ### Condición 6. Discriminación pública contra rivales
 
@@ -142,13 +142,13 @@ El caso 30 (behavioral dynamics) **fue rechazado por el aparato** (EDI = 0.002, 
 
 ### 3.6. Los baselines lineales superan al modelo acoplado en parte del corpus
 
-> Origen: `Bitacora/2026-05-11-sintesis-tesis/borradores/F3-AU3-baselines-superan.md`. Cifras verificadas contra `09-simulaciones-edi/baselines/baselines_report.json`.
+> Cifras verificadas contra `09-simulaciones-edi/baselines/baselines_report.json`.
 
 La comparación canónica frente a baselines no-estructurales se reporta en `09-simulaciones-edi/baselines/baselines_report.json`. Restringida a los casos con `overall_pass=True` previo al régimen B-T2.1 genuino, la lectura literal del RMSE held-out muestra que ARIMA(1,1,1) y VAR(1) + forcing **superan al modelo acoplado en Deforestación y Riesgo Biológico**: para `16_caso_deforestacion`, RMSE_acoplado(val) = 0.5652 frente a RMSE_ARIMA = 0.2807 y RMSE_VAR = 0.2465 (val_len = 13); para `27_caso_riesgo_biologico`, RMSE_acoplado(val) = 0.2393 frente a RMSE_ARIMA = 0.1820 y RMSE_VAR = 0.2257 (val_len = 8). Energía y Kessler, en cambio, mantienen ventaja del acoplado sobre ambos baselines.
 
 Esto **activa parcialmente el segundo disyunto del Escenario 1 de §2**. La tesis no reclama derrota global por tres razones declaradas sin atenuar el hallazgo: (i) `overall_pass` no se reduce a RMSE held-out, sino que integra los criterios C1-C5 y la significancia de EDI definido sobre ablación interna `abm_no_ode`, no sobre baselines lineales; (ii) la diferencia se mide sobre val_len ∈ {8, 13}, sin intervalo de confianza ni test de Diebold-Mariano, por lo que la afirmación honesta es "el acoplado **no produce ganancia predictiva detectable** sobre ARIMA/VAR" más que "ARIMA es estrictamente superior"; (iii) el EDI sigue siendo significativo por permutación en los dos casos afectados, lo que sostiene la pretensión interna de necesidad estructural del acoplamiento ODE→ABM.
 
-**Costo argumental asumido.** Deforestación y Riesgo Biológico se reclasifican como casos donde el aparato detecta acoplamiento estructural significativo pero **no exhibe ganancia predictiva frente a modelos estadísticos lineales** bajo la ventana de validación disponible. Esto es **reducción de alcance, no derrota**: la tesis defiende que el acoplamiento ODE→ABM es estructuralmente identificable (sostenido por EDI vs `abm_no_ode`), no que el aparato sea el mejor predictor posible (no sostenido uniformemente). `[BORRADOR-IA pendiente firma H-J9]`
+**Costo argumental asumido.** Deforestación y Riesgo Biológico se reclasifican como casos donde el aparato detecta acoplamiento estructural significativo pero **no exhibe ganancia predictiva frente a modelos estadísticos lineales** bajo la ventana de validación disponible. Esto es **reducción de alcance, no derrota**: la tesis defiende que el acoplamiento ODE→ABM es estructuralmente identificable (sostenido por EDI vs `abm_no_ode`), no que el aparato sea el mejor predictor posible (no sostenido uniformemente).
 
 ## 4. Deuda residual
 
@@ -161,7 +161,7 @@ Esto **activa parcialmente el segundo disyunto del Escenario 1 de §2**. La tesi
 | B-T2.3 (auditoría de violación de pre-registro) | Hook `verify_preregistration --strict` que falle si `git log -- case_config.json` muestra commits posteriores al sello sin re-firma documentada. Caso 30 demostró que un commit posterior al sello puede sustituir silenciosamente la sonda declarada | 2 semanas | Verificador en `harness/cli.py verify --preregistration --strict` y reporte sobre los 30 casos |
 | Baselines no-lineales sobre casos afectados por §3.6 | Ejecutar GP, LSTM, ESN sobre Deforestación y Riesgo Biológico con Diebold-Mariano + CI bootstrap; si siguen ganando los baselines, reclasificar la cartografía demostrativa | 2 meses | Reporte comparativo con DM-test + CI bootstrap |
 | Verificación ontológica fuerte L1↔B↔L3↔S | Medición independiente de parámetros L3 (ode_alpha, ode_beta) vía intervención experimental, no calibración sobre el mismo split (criterio (iii) Patología 3 cap 03-04) | 12-18 meses | Protocolo de intervención discriminante por parámetro y reporte por caso |
-| Methodology canónica del AUC-ROC = 0.886 | Crear `09-simulaciones-edi/auc_roc/methodology.md` + script regenerador con CI bootstrap B ≥ 2 000 y `seed=42`. El productor numérico vive actualmente en `Bitacora/2026-04-28-cierre-severo/N3_auc_roc_discriminacion.py:51-68` | 3 semanas | Methodology + script bajo `09-simulaciones-edi/` |
+| Methodology canónica del AUC-ROC = 0.886 | Crear `09-simulaciones-edi/auc_roc/methodology.md` + script regenerador con CI bootstrap B ≥ 2 000 y `seed=42` (el productor numérico vive actualmente en un script `N3_auc_roc_discriminacion.py` archivado en el repositorio interno) | 3 semanas | Methodology + script bajo `09-simulaciones-edi/` |
 | Engagement Yablo 1998-2014 + Ladyman-Ross PNC (cap 04-04 §1) | Respuesta dura a ficcionalismo materialista (Yablo) y a PNC (Ladyman-Ross). Parcialmente atendida en cap 04-04 §1 (engagement con PNC verbatim p. 37-38, concesión de distancia con OSR); pendiente vertiente Yablo y firma | Hito de cierre | Sección consolidada en cap 04-04 §1 |
 | Aparato para variables normativas | Desarrollo formal de validez/legitimidad como cuenca de atracción + caso piloto institucional cuantitativo (caso piloto COVID ejecutado con resultado null honesto en `09-simulaciones-edi/covid_pilot/`) | 18-24 meses post-defensa | Capítulo metodológico + caso institucional cuantitativo |
 
@@ -233,7 +233,7 @@ Demuestra que el aparato **discrimina** y **detecta cierre operativo** en cartog
 
 ### 5.6. Aporte filosófico de fondo
 
-Establece el **irrealismo operativo** como **operativización del realismo de patrones dennetteano (Dennett 1991) con protocolo de admisión refutable** (dossier de 14 componentes, protocolo C1-C5, métrica EDI por intervención ablativa, gate hostile-tested, pre-registro firmado *ex ante*). El aporte original no es la posición ontológica (compartida con Dennett 1991) sino el aparato de admisión que la operacionaliza públicamente. La distinción entre κ-pragmática y κ-ontológica (véase capítulo 1) es crítica: el manuscrito demuestra κ-pragmática con rigor; la afirmación κ-ontológica fuerte requiere convergencia bajo múltiples sondas y validación inter-grupo. `[BORRADOR-IA pendiente firma H-J5]`
+Establece el **irrealismo operativo** como **operativización del realismo de patrones dennetteano (Dennett 1991) con protocolo de admisión refutable** (dossier de 14 componentes, protocolo C1-C5, métrica EDI por intervención ablativa, gate hostile-tested, pre-registro firmado *ex ante*). El aporte original no es la posición ontológica (compartida con Dennett 1991) sino el aparato de admisión que la operacionaliza públicamente. La distinción entre κ-pragmática y κ-ontológica (véase capítulo 1) es crítica: el manuscrito demuestra κ-pragmática con rigor; la afirmación κ-ontológica fuerte requiere convergencia bajo múltiples sondas y validación inter-grupo.
 
 ## 6. Lo que la tesis afirma con compromiso público
 
@@ -316,4 +316,4 @@ Esa es la condición de la victoria local de esta tesis.
 
 ---
 
-**Nota sobre procedencia metodológica.** Las correcciones, reclasificaciones y cierres de tareas B-T documentadas en este capítulo provienen del proceso de auto-corrección registrado en `Bitacora/loop-nocturno/` (incluye F06-04, shortlist de revisores externos, reescritura del cap 04-04 §1 y cierres B-T5/B-T6). Cada cifra reportada se reproduce con el comando declarado en el caso correspondiente bajo `09-simulaciones-edi/`; la trazabilidad fechada vive en la bitácora, no en el cuerpo argumental.
+**Nota sobre procedencia metodológica.** Las correcciones, reclasificaciones y cierres de tareas B-T documentadas en este capítulo provienen de un proceso interno de auto-corrección iterada (registrado en el repositorio interno del proyecto): incluye F06-04, shortlist de revisores externos, reescritura del cap 04-04 §1 y cierres B-T5/B-T6. Cada cifra reportada se reproduce con el comando declarado en el caso correspondiente bajo `09-simulaciones-edi/`; la trazabilidad fechada vive en el archivo interno, no en el cuerpo argumental.

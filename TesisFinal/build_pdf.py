@@ -3,6 +3,11 @@
 Usa la librería markdown-pdf (Python puro, sin pandoc/LaTeX) para producir
 un PDF razonablemente bien formateado a partir del manuscrito ensamblado.
 
+Tras la generación, se realiza un post-proceso con PyMuPDF para añadir
+paginación (header con título corto + footer con número de página). Se
+hace en post-proceso porque markdown-pdf usa `fitz.Story`, que no honra
+las reglas CSS `@page { @bottom-center { ... } }` de WeasyPrint.
+
 Uso:
     source 09-simulaciones-edi/.venv/bin/activate
     python3 TesisFinal/build_pdf.py
@@ -11,6 +16,56 @@ Uso:
 from pathlib import Path
 
 REPO = Path(__file__).parent.parent
+
+# Constantes de paginación (deben coincidir con los `borders` por defecto
+# de markdown_pdf.Section: (36, 36, -36, -36) puntos = 12.7 mm).
+HEADER_TEXT = "Estructuras Pre-Ontologicas"  # ASCII puro: helv no tiene tildes
+FOOTER_FONT_SIZE = 9
+HEADER_FONT_SIZE = 8
+MARGIN_PT = 18  # distancia desde el borde de página al texto del header/footer
+
+
+def _add_pagination(pdf_path: Path) -> None:
+    """Añade número de página (footer centrado) y título corto (header
+    derecho) a cada página del PDF, in-place.
+    """
+    import pymupdf  # alias moderno de fitz
+
+    doc = pymupdf.open(str(pdf_path))
+    total = doc.page_count
+    for i, page in enumerate(doc, start=1):
+        w = page.rect.width
+        h = page.rect.height
+
+        # Footer: "i / total" centrado abajo.
+        footer = f"{i} / {total}"
+        tw = pymupdf.get_text_length(
+            footer, fontname="helv", fontsize=FOOTER_FONT_SIZE
+        )
+        page.insert_text(
+            (w / 2 - tw / 2, h - MARGIN_PT),
+            footer,
+            fontname="helv",
+            fontsize=FOOTER_FONT_SIZE,
+            color=(0.35, 0.35, 0.35),
+        )
+
+        # Header: título corto a la derecha, color tenue. Omitido en p.1.
+        if i > 1:
+            tw_h = pymupdf.get_text_length(
+                HEADER_TEXT, fontname="helv", fontsize=HEADER_FONT_SIZE
+            )
+            page.insert_text(
+                (w - MARGIN_PT - tw_h, MARGIN_PT),
+                HEADER_TEXT,
+                fontname="helv",
+                fontsize=HEADER_FONT_SIZE,
+                color=(0.6, 0.6, 0.6),
+            )
+
+    # Incremental save preserva metadata, outline y enlaces ya generados.
+    doc.saveIncr()
+    doc.close()
 
 
 def build():
@@ -52,6 +107,10 @@ def build():
     pdf.meta["creator"] = "markdown-pdf"
 
     pdf.save(str(out))
+
+    # Post-proceso: paginación (footer centrado + header derecho).
+    _add_pagination(out)
+
     size = out.stat().st_size
     print(f"PDF generado: {out}")
     print(f"Tamaño: {size:,} bytes ({size / 1024 / 1024:.2f} MB)")

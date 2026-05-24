@@ -4,7 +4,9 @@
 
 Mapa completo del paisaje de aplicaciones del marco como **ontología general multiescalar**. Cada caso aparece con su modo (demostrativo/programático), nivel de cierre operativo, escala instanciada, criterio de elevación si procede, y referencias cruzadas. El paisaje agrega 40 casos: 30 inter-dominio + 10 inter-escala. Cada caso es **instancia particular de los cuatro invariantes ontológicos** (sustrato material, acoplamiento dinámico, atractor empírico, cierre operativo κ); ningún caso es aplicación aislada del aparato a un dominio.
 
-> **Nota global de versionado.** Las clasificaciones reflejan el estado del corpus tras re-validación consolidada. Histórico de evolución archivado en `Bitacora/2026-05-17-limpieza-final/historico-05-07.md`.
+> **Nota global de versionado.** Las clasificaciones reflejan el estado del corpus tras re-validación consolidada. Histórico de evolución archivado internamente y disponible bajo solicitud.
+>
+> **Régimen reportado en este capítulo.** Cuando un caso aparece con dos cifras (canónica pre-B-T2.1 vs post-B-T2.1 genuino), refleja la corrección del aparato bajo detrend honesto + block-permutation + pre-registro firmado *ex ante*. La cifra **autoritativa para la conclusión del manuscrito es la de la columna post-B-T2.1**, reflejada también en cap 06-01 §1 Condición 5 Tabla 6.1.1. El régimen canónico se conserva en este capítulo por trazabilidad histórica (las tablas y figuras del corpus se construyeron sobre él) y para permitir auditar la magnitud de la auto-corrección caso por caso.
 
 ---
 
@@ -72,24 +74,26 @@ Los 40 casos del corpus agregado **no son aplicaciones independientes**: cada un
 
 ## Casos del corpus EDI
 
-### Bloque I — Strong con gate completo (Nivel 4)
+### Bloque I — Strong con gate completo (Nivel 4) — reconciliación canónica ↔ B-T2.1
 
 **Tabla A.5.3.**
 
-**Tabla 5.7.3.**
+**Tabla 5.7.3.** Casos históricamente clasificados como *Strong con gate completo* bajo el régimen canónico (pre-B-T2.1, sin block-permutation ni detrend honesto, en algunos casos con ventana sintética o histórica), reconciliados con la clasificación post-B-T2.1 genuino (block-permutation con `ℓ ∝ n^{1/3}` Politis & White 2004 + detrend honesto + pre-registro firmado *ex ante* del fetch de datos). La cifra autoritativa para la conclusión del manuscrito es la de la columna post-B-T2.1 (cf. cap 06-01 §1 Tabla 6.1.1).
 
-| # | Caso | EDI | p | Sonda | LoE | Datos |
-|---|------|----:|--:|-------|----:|-------|
-| 04 | Energía eléctrica | 0.6503 | 0.0000 | Lotka-Volterra | 4 | OPSD |
-| 16 | Deforestación global | 0.5802 | 0.0000 | von Thünen | 4 | World Bank |
-| 20 | Síndrome de Kessler | 0.3527 | 0.0000 | Densidad orbital | 3 | CelesTrak |
-| 27 | Riesgo biológico (mortalidad) | 0.3326 | 0.0022 | Mortalidad | 3 | World Bank |
-| 18 | Urbanización global | 0.3366 | 0.0000 | Logística + atracción | 4 | World Bank (SP.URB.TOTL.IN.ZS) |
-| 24 | Microplásticos oceánicos | 0.8057 | 0.0000 | Jambeck Accumulation-Decay | 4 | Jambeck et al. real |
-| 30 | Behavioral Dynamics | 0.6143 | 0.0000 | Behavioral attractor | 3 | Google Mobility real |
-| 21 | Salinización (FAOSTAT enhanced) | 0.5152 | 0.0010 | Richards bilineal | 3 | FAOSTAT enhanced |
+| # | Caso | Canónica pre-B-T2.1 (EDI raw, p, sonda, LoE) | Post-B-T2.1 genuino (cifras reales `metrics.json` real-phase) | Reclasificación |
+|---|------|---|---|---|
+| 04 | Energía eléctrica | EDI=0.6503, p=0.0000, Lotka-Volterra, LoE=4, datos OPSD | EDI=0.1571, p_block=0.006, CI=[0.133, 0.193], `overall_pass=false`, `detrended_edi=null` (sin tendencia residual material), sonda Lotka-Volterra, datos OPSD | **Weak validado por pre-registro B-T2.1 genuino** (block-perm significativa; magnitud reducida tras corrección del aparato). Cf. cap 06-01 Tabla 6.1.1 fila "Weak validado por pre-registro B-T2.1 genuino". |
+| 16 | Deforestación global | EDI=0.5802, p=0.0000, von Thünen, LoE=4, World Bank | EDI=0.5802, p_perm=0.0 (método `iid`), CI=[0.423, 0.709], `overall_pass=true`, `detrended_edi=-0.0438`, `trend_r2=0.785`, `trend_ratio=-0.075`, `warning=true` | **Pendiente B-T2.1 genuino** (gate canónico sostenido en real-phase pero `warning=true` por componente de tendencia; reducción de alcance ya activa por baselines lineales superando al acoplado, cf. cap 06-01 §3.6). |
+| 20 | Síndrome de Kessler | EDI=0.3527, p=0.0000, Densidad orbital, LoE=3, CelesTrak | EDI=-1.000, p_perm=1.0 (método `block`), CI=[-12.27, -6.01], `overall_pass=false`, `permutation_significant=false`, sonda densidad orbital, CelesTrak | **Falsificación local del aparato** bajo régimen post-B-T2.1 (sonda densidad orbital no captura la dinámica acoplada en la ventana real evaluada; CI bootstrap excluye cero por la izquierda). Cf. cap 06-01 Tabla 6.1.1 fila "Falsificación local del aparato". |
+| 27 | Riesgo biológico (mortalidad) | EDI=0.3326, p=0.0022, Mortalidad, LoE=3, World Bank | EDI=0.2160, p_perm=0.956 (método `iid`), `permutation_significant=false`, CI=[-20.05, 0.32], `overall_pass=false`, sonda mortalidad, World Bank | **Sin significancia permutacional bajo régimen real-phase actual**: el ranking canónico cae cuando se cierra el cómputo de p_perm sobre la ventana real con `iid` sin block-perm calibrada. Pendiente B-T2.1 genuino con block-perm explícita. Cf. cap 06-01 §3.6 (baselines ARIMA/VAR superan al acoplado en val_len=8). |
+| 18 | Urbanización global | EDI=0.3366, p=0.0000, Logística + atracción, LoE=4, World Bank (SP.URB.TOTL.IN.ZS) | EDI=0.3366, p_perm=0.0 (método `iid`), CI=[0.330, 0.347], `overall_pass=true`, `detrended_edi=0.0722`, `trend_r2=0.997`, `trend_ratio=0.214`, `warning=true` | **Pendiente B-T2.1 genuino**: `trend_r2=0.997` indica componente de tendencia altamente dominante; el detrended EDI cae a 0.0722. Sostiene gate canónico bajo `iid` pero queda condicionado a block-permutation y pre-registro firmado *ex ante*. |
+| 24 | Microplásticos oceánicos | EDI=0.8057, p=0.0000, Jambeck Accumulation-Decay, LoE=4, Jambeck et al. (fase histórica) | EDI=-1.000, p_perm=1.0 (método `block`), CI=[-3.05, -2.34], `overall_pass=false`, `permutation_significant=false`, `detrended_edi=0.3254`, `trend_r2=0.998`, sonda Jambeck Accumulation-Decay, ventana 2000-2019 refrescada | **Falsificación local del aparato**: el último Strong robusto previamente declarado colapsó al refrescar la ventana de validación bajo pre-registro genuino. Cf. cap 06-01 Tabla 6.1.1 fila "Falsificación local del aparato" y nota narrativa del §1 Condición 5 sobre auto-corrección bajo B-T2.1 genuino. |
+| 30 | Behavioral Dynamics | EDI=0.6143, p=0.0000, Behavioral attractor, LoE=3, Google Mobility real | EDI=0.2622, p_perm=0.044 (método `iid`), CI=[0.249, 0.280], `overall_pass=false`, `detrended_edi=null`, sonda Fajen-Warren behavioral attractor, Google Mobility real | **Sub-Strong bajo régimen real-phase** (p_perm apenas <0.05 sin block-perm; magnitud baja). Cf. cap 06-01 §3.5 ("disciplina del aparato": el caso se admite explícitamente como programático con criterio de elevación documentado, no como elevación del cap 05-01). |
+| 21 | Salinización (FAOSTAT enhanced) | EDI=0.5152, p=0.0010, Richards bilineal, LoE=3, FAOSTAT enhanced | EDI=0.5152, p_perm=0.0 (método `iid`), CI=[0.337, 0.668], `overall_pass=true`, `detrended_edi=0.0007`, `trend_r2=0.893`, `trend_ratio=0.001`, `warning=true` | **Pendiente B-T2.1 genuino**: el detrended EDI colapsa a magnitud trivial (`0.0007`) bajo detrend honesto; la cifra raw está dominada por componente de tendencia (`trend_r2=0.893`). Gate canónico sostenido bajo `iid`, pero la magnitud estructural es cuestionable. |
 
-Reproducibilidad: cada caso es reproducible con `python3 09-simulaciones-edi/<NN>_caso_<nombre>/src/validate.py --seed 42`. La trazabilidad detallada está en `Bitacora/`.
+**Reproducibilidad.** Cada cifra de la columna post-B-T2.1 se regenera con `python3 09-simulaciones-edi/<NN>_caso_<nombre>/src/validate.py --seed 42` y queda registrada en `outputs/metrics.json` bajo la rama `phases.real`. La columna canónica corresponde a la clasificación histórica (régimen sintético + `iid` sin block-permutation, anterior al fix del bug `detrended_edi` y a la activación de block-permutation en `common/hybrid_validator.py:1810-1843`); el archivo histórico de reclasificaciones se conserva en el repositorio interno del proyecto.
+
+**Conteo agregado post-B-T2.1 del Bloque I histórico.** De los 8 casos originalmente listados como *Strong con gate completo*: 0 sobreviven como Strong robusto puro bajo el régimen B-T2.1 genuino (consistente con cap 06-01 Tabla 6.1.1 fila "Strong robusto puro"); 1 baja a Weak validado por pre-registro genuino (04 Energía); 3 mantienen gate canónico bajo `iid` pero quedan pendientes de block-perm y pre-registro firmado *ex ante* (16, 18, 21); 1 queda sub-Strong sin significancia firme bajo `iid` (30); 1 cae sin significancia permutacional bajo régimen real-phase actual (27); 2 se reclasifican como falsificación local del aparato (20, 24). La auto-corrección es **virtud del aparato**, no derrota de la tesis tripartita (cap 06-01 §1 Condición 5, párrafo cerrando).
 
 ### Bloque II — Strong sin gate completo (Nivel 4*)
 
@@ -255,7 +259,7 @@ El caso 30 (Nivel 4 strong bajo Google Mobility real) demuestra que **el aparato
 
 Entradas operativas declaradas tras triage de bitácora huérfana (2026-05-11).
 
-- **[AU-9 2026-05-11]** El Bloque VI (Null, Nivel 0) agrega casos heterogéneos que requieren distinguir tres regímenes operativamente distintos: (i) nulls genuinos (EDI ≈ 0, p > 0.05), (ii) caso con EDI fuertemente negativo (degradación bajo acoplamiento), (iii) casos rechazados por gate C1-C5 antes del cómputo de EDI. La subdivisión vigente en bloques 0a / 0b / 0c / 0d (más Bloque VI.5 de falsificación local) atiende esa distinción; el conteo agregado preserva el total pero hace visible la diferencia operativa entre "el aparato no detecta señal" vs "el aparato detecta degradación" vs "el aparato rechaza antes de calcular". Paralela en `06-cierre/01-conclusion-demostrativa.md` §4.1 y `06-cierre/_extendido/versiones-cortas-defensa.md`. Origen: `Bitacora/2026-05-04-continuous-run/AU-9-edi-negativo-no-es-null.md`.
+- **[AU-9 2026-05-11]** El Bloque VI (Null, Nivel 0) agrega casos heterogéneos que requieren distinguir tres regímenes operativamente distintos: (i) nulls genuinos (EDI ≈ 0, p > 0.05), (ii) caso con EDI fuertemente negativo (degradación bajo acoplamiento), (iii) casos rechazados por gate C1-C5 antes del cómputo de EDI. La subdivisión vigente en bloques 0a / 0b / 0c / 0d (más Bloque VI.5 de falsificación local) atiende esa distinción; el conteo agregado preserva el total pero hace visible la diferencia operativa entre "el aparato no detecta señal" vs "el aparato detecta degradación" vs "el aparato rechaza antes de calcular". Paralela en `06-cierre/01-conclusion-demostrativa.md` §4.1 y `06-cierre/_extendido/versiones-cortas-defensa.md`.
 
 ## Lectura cruzada
 
@@ -264,5 +268,4 @@ Entradas operativas declaradas tras triage de bitácora huérfana (2026-05-11).
 - Caso 30 detallado: `09-simulaciones-edi/30_caso_behavioral_dynamics/README.md`
 - Cada caso del corpus: `09-simulaciones-edi/<caso>/README.md`
 - Resultados consolidados: `09-simulaciones-edi/README.md`
-- Verificación de reproducibilidad: `Bitacora/2026-04-27-integracion-jacob/02-verificacion-reproducibilidad.md`
-- Histórico de reclasificaciones del corpus: `Bitacora/2026-05-17-limpieza-final/historico-05-07.md`
+- Verificación de reproducibilidad y histórico de reclasificaciones del corpus: archivados internamente y disponibles bajo solicitud.

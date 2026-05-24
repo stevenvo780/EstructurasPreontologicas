@@ -89,7 +89,7 @@ La objeción humeana clásica: *"de hechos descriptivos no se siguen prescripcio
 
 ## 7. Limitación reconocida
 
-La operacionalización empírica completa de la dimensión normativa **requiere desarrollo metodológico adicional**. El caso piloto COVID confirmó que el aparato actual no captura la dinámica normativa con sondas continuas simples. La elevación a casos demostrativos genuinos es **deuda priorizada** (programa formal en `Bitacora/2026-04-28-cierre-doctoral/`). Mientras tanto, la postura ética de la tesis se sostiene **filosóficamente** sobre las bases articuladas en este capítulo, no como demostración empírica cerrada.
+La operacionalización empírica completa de la dimensión normativa **requiere desarrollo metodológico adicional**. El caso piloto COVID confirmó que el aparato actual no captura la dinámica normativa con sondas continuas simples. La elevación a casos demostrativos genuinos es **deuda priorizada** declarada en la hoja de ruta (`06-cierre/03-hoja-de-ruta-para-tesis-final.md`). Mientras tanto, la postura ética de la tesis se sostiene **filosóficamente** sobre las bases articuladas en este capítulo, no como demostración empírica cerrada.
 
 ## 8. Implicaciones para los capítulos posteriores
 

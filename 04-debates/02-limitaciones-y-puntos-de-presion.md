@@ -1,6 +1,6 @@
 # Riesgos heredados y posicionamiento filosófico declarado
 
-> **BORRADOR-IA — pendiente firma H-J8.** Este capítulo es el resultado de la reducción D.3 (200→~65 líneas) ejecutada como consolidación editorial bajo Fase 2 de la síntesis 2026-05-11: §1, §4, §6, §8 originales se eliminaron por subsunción en `04-debates/05-limitaciones-declaradas-consolidacion.md` (L1-L20); se preservaron §7 «Riesgos heredados» (aquí §1), §9 «Lo que sí puede prometer» (aquí §2), §10 «Diálogo con interlocutores» (aquí §3), §11 «Filtro de objeciones futuras» (aquí §4) y §12 «Fórmula de honestidad filosófica» (aquí §5). Origen: `Bitacora/2026-05-11-sintesis-tesis/borradores/D3-debates-02-decision.md`. Decisiones pendientes Jacob: (1) ratificar el nuevo título; (2) decidir si `02` permanece en posición canónica (capítulo 28) o se reordena después de `05`.
+> **BORRADOR-IA — pendiente firma H-J8.** Este capítulo es el resultado de la reducción D.3 (200→~65 líneas) ejecutada como consolidación editorial bajo Fase 2 de la síntesis 2026-05-11: §1, §4, §6, §8 originales se eliminaron por subsunción en `04-debates/05-limitaciones-declaradas-consolidacion.md` (L1-L20); se preservaron §7 «Riesgos heredados» (aquí §1), §9 «Lo que sí puede prometer» (aquí §2), §10 «Diálogo con interlocutores» (aquí §3), §11 «Filtro de objeciones futuras» (aquí §4) y §12 «Fórmula de honestidad filosófica» (aquí §5). Decisiones pendientes Jacob: (1) ratificar el nuevo título; (2) decidir si `02` permanece en posición canónica (capítulo 28) o se reordena después de `05`.
 
 ## Tesis del capítulo
 

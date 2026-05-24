@@ -1,12 +1,12 @@
 # Estructura del proyecto y plan de capítulos
 
-> **BORRADOR-IA — pendiente firma H-J8.** Este archivo es el resultado de la fusión D.4 (`00-proyecto/01-estructura-general.md` + `00-proyecto/03-plan-de-capitulos.md` → un solo archivo) ejecutada como consolidación editorial bajo Fase 2 de la síntesis 2026-05-11. Reemplaza ambos archivos sin afectar `TesisFinal/Tesis.md` (ninguno entra al ensamblado). Origen: `Bitacora/2026-05-11-sintesis-tesis/borradores/D4-proyecto-01-03-decision.md`. Decisión pendiente Jacob: (1) si `01-estructura-y-plan.md` debe promoverse al cuerpo del manuscrito como capítulo introductorio metodológico; (2) si la política «un capítulo = una pregunta = un interlocutor principal» debe sobrevivir como doctrina declarada en este archivo o sólo operativa en el cuerpo.
+> **BORRADOR-IA — pendiente firma H-J8.** Este archivo es el resultado de la fusión D.4 (`00-proyecto/01-estructura-general.md` + `00-proyecto/03-plan-de-capitulos.md` → un solo archivo) ejecutada como consolidación editorial bajo Fase 2 de la síntesis 2026-05-11. Reemplaza ambos archivos sin afectar `TesisFinal/Tesis.md` (ninguno entra al ensamblado). Decisión pendiente Jacob: (1) si `01-estructura-y-plan.md` debe promoverse al cuerpo del manuscrito como capítulo introductorio metodológico; (2) si la política «un capítulo = una pregunta = un interlocutor principal» debe sobrevivir como doctrina declarada en este archivo o sólo operativa en el cuerpo.
 
 ## Función de esta carpeta y de este archivo
 
 Esta carpeta aloja **andamiaje del repositorio**: arquitectura del manuscrito doctoral, formulación institucional y materiales operativos no incorporados al cuerpo ensamblado. La **fuente de verdad del orden de capítulos** del manuscrito es `TesisFinal/build.py` (lista `PARTS`), no este archivo. Este documento sirve para **navegación humana del repositorio**: explica cómo se relacionan las carpetas numeradas con el ensamblado final, qué pregunta resuelve cada módulo y bajo qué política se admiten capítulos.
 
-La fuente de verdad textual son los capítulos individuales en `00-…/`, `02-…/`, `03-…/`, `04-…/`, `05-…/`, `06-…/` y derivados. El manuscrito-fuente histórico (formulación extensa continua de la intuición central) está archivado en `Bitacora/2026-04-27-integracion-jacob/00-tesis-fuente-original.md`.
+La fuente de verdad textual son los capítulos individuales en `00-…/`, `02-…/`, `03-…/`, `04-…/`, `05-…/`, `06-…/` y derivados. El manuscrito-fuente histórico (formulación extensa continua de la intuición central) está archivado internamente y disponible bajo solicitud.
 
 ## Principio de organización
 
@@ -57,7 +57,7 @@ Tabla canónica que cruza las nueve carpetas numeradas del repositorio con las c
 
 - Los archivos `00-proyecto/01-…`, `02-…`, `03-…`, `04-…` **no entran al manuscrito ensamblado**: son andamiaje interno del repositorio (formulación institucional, preguntas-objetivos-hipótesis, este plan).
 - Los archivos `06-cierre/02-…`, `06-cierre/_extendido/…` **no entran al ensamblado**: son satélites de defensa oral.
-- Las bitácoras en `Bitacora/<fecha>-<tema>/` son trazabilidad histórica, no canon vivo.
+- Las bitácoras del repositorio interno son trazabilidad histórica, no canon vivo.
 
 ## Lógica de fases del proyecto
 
@@ -100,7 +100,7 @@ Esto exige tres disciplinas simultáneas:
 
 ## Diferencia con el borrador original y trazabilidad histórica
 
-El manuscrito-fuente histórico (archivado en `Bitacora/2026-04-27-integracion-jacob/00-tesis-fuente-original.md`) es la formulación extensa y continua de la intuición central. El resto del repositorio convierte esa intuición en arquitectura doctoral defendible mediante seis correcciones estructurales documentadas (capítulo 01-01):
+El manuscrito-fuente histórico (archivado internamente) es la formulación extensa y continua de la intuición central. El resto del repositorio convierte esa intuición en arquitectura doctoral defendible mediante seis correcciones estructurales documentadas (capítulo 01-01):
 
 - **caso ancla canónico** (caso 05-05 del corpus, ver capítulo 05-05), elegido porque formula explícitamente el patrón conductual como atractor de un sistema agente-entorno acoplado: «Agent–environment interactions give rise to emergent behavior that has a dynamics of its own [...] stable behavioral solutions correspond to attractors in the behavioral dynamics, and transitions between behavioral patterns correspond to bifurcations» (Warren, 2006, p. 359), en lugar de generalidad sin demostración;
 - **patrón estabilizado** definido técnicamente como atractor empírico;

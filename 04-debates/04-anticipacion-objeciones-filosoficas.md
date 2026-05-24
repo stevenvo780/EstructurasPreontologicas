@@ -2,7 +2,7 @@
 
 > **Estado:** capítulo argumental defendible. Las siete objeciones que siguen reproducen la formulación más fuerte que un comité doctoral exigente puede plantear contra la tesis (auditoría doctoral, fallos F1, F2, F3, F5, F6, F9, F10). Cada respuesta sigue el esquema **objeción / concesión / distinción / argumento positivo / costo**. La voz autoral final es de Jacob Agudelo: la asistencia computacional preparó el aparato citacional y la articulación argumental con engagement directo a las fuentes primarias indicadas; cada sección admite reescritura editorial menor sin perder su núcleo. La tarea **H-J1** del documento `TAREAS_PENDIENTES.md` corresponde a la firma final.
 >
-> **Nota sobre la numeración F1-F10 con saltos en F4, F7, F8.** La taxonomía F1-F10 proviene del inventario de fallos filosóficos de fondo registrado en `Bitacora/2026-04-28-cierre-tecnico/FALLOS_PENDIENTES_HISTORICO.md` §A. Tres de los diez fallos originales **no aparecen como secciones en este capítulo** porque fueron atendidos en otra parte del manuscrito y no requieren respuesta filosófica adicional aquí:
+> **Nota sobre la numeración F1-F10 con saltos en F4, F7, F8.** La taxonomía F1-F10 proviene del inventario interno de fallos filosóficos de fondo. Tres de los diez fallos originales **no aparecen como secciones en este capítulo** porque fueron atendidos en otra parte del manuscrito y no requieren respuesta filosófica adicional aquí:
 >
 > - **F4 — "Atractor empírico sin rigor topológico estándar"**: atendido en cap 02-01 §2.2.2 (Tabla 2.1.6, métricas topológicas Lyapunov / dimensión de correlación Grassberger-Procaccia / espectro de bifurcación sobre 7 casos del corpus) y en el reporte técnico `09-simulaciones-edi/topology/topology_report.md`. Pasó de "concepto vago" a "métrica cuantitativa reproducible" por trabajo técnico, no por argumento filosófico.
 > - **F7 — "Dimensión normativa contradictoria entre cap 02-06 y cap 04-02 §4"**: atendido como inconsistencia inter-capítulos resuelta en la consolidación 2026-04-28 (ver `REPORTE_CIERRE_TECNICO.md`). La normatividad se trata ahora consistentemente como atractor con grado de cierre operativo variable, declarando explícitamente los casos donde el aparato no captura la dinámica (cap 04-02 §4 lo declara como deuda, no como contradicción).
@@ -334,7 +334,7 @@ Comités humanistas pueden rechazar la tesis por demasiado restringida. La defen
 
 ## Trazabilidad
 
-- Origen: F1, F2, F3, F5, F6, F9, F10 documentados en `Bitacora/2026-04-28-cierre-tecnico/FALLOS_PENDIENTES_HISTORICO.md` §A "Fallos filosóficos de fondo".
+- Origen: F1, F2, F3, F5, F6, F9, F10 documentados en el inventario interno de fallos filosóficos de fondo (taxonomía cerrada en la auditoría 2026-04-28).
 - Fuentes primarias citadas con paginación: Simondon 1958, Bunge 1977 y 1979, Dennett 1987 y 1991, Sellars 1956, Quine 1969, Carnap 1950, Hacking 1983, Strawson 2006, Goff 2019, Lakatos 1978, Kant 1781, Locke 1690, Reid 1785, Parfit 1984, Searle 1995, Woodward 2003, Whitehead 1929, Dewey 1934, Mouffe 2005, Rancière 1995, Lefebvre 1974, Lewis 1991, Simons 1987, Quijano 2000, Mignolo 2007. La asignación detallada por capítulo está en `07-bibliografia/01-bibliografia-orientativa.md`.
 - Pendiente: validación final de Jacob (`TAREAS_PENDIENTES.md` H-J1). Tres salidas posibles según escala de cambio: aprobación con cambios editoriales menores, reescritura ampliada por Jacob, reformulación argumental mayor en una o más secciones.
 
