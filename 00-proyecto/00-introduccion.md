@@ -1,69 +1,75 @@
 # Introducción
 
-> **[BORRADOR-IA · requires: H-J2/H-J8]** Revisión de consistencia posterior al régimen B-T2.1. Requiere firma autoral para fijar el estatuto definitivo de la generalidad ontológica.
+<!-- BORRADOR-IA. Revisión de consistencia posterior al régimen B-T2.1. Requiere firma autoral para fijar el estatuto definitivo de la generalidad ontológica. -->
 
-## Pregunta central
+## Problema y pregunta central
 
-> ¿Bajo qué condiciones es legítimo reemplazar una categoría heredada por una construcción formal estructural-relacional sin caer en sustitución nominal y sin desligarse del nivel donde el fenómeno vive empíricamente?
+Hablamos de mente, memoria, organismo, institución, mercado o identidad como si cada término designara una unidad ya delimitada. Sin embargo, esas categorías suelen comprimir procesos distribuidos, dependencias históricas y relaciones entre escalas. Tomarlas como sustancias produce reificación; disolverlas en componentes elementales elimina la organización que pretendíamos explicar; tratarlas como construcciones libres vuelve arbitrario cualquier recorte; formalizarlas sin traducción empírica solo reemplaza una palabra por otra.
 
-Esta pregunta concentra el problema fundamental del proyecto. El lenguaje heredado tiende a reificar: hablamos de mente, memoria, mercado, institución, servicio, organismo o identidad como si fueran cosas simples cuando a menudo condensan organizaciones complejas. El reduccionismo plano no resuelve el problema, solo lo desplaza al nivel inferior. El emergentismo fuerte multiplica sustancias. El constructivismo arbitrario entrega cualquier recorte. El formalismo vacío produce elegancia sin captura. La tesis intenta ocupar un punto distinto.
+La pregunta de esta tesis es, por tanto:
+
+> ¿Bajo qué condiciones una categoría heredada puede reconstruirse como estructura material-relacional sin incurrir en sustitución nominal ni separarse del nivel donde el fenómeno puede observarse e intervenirse?
 
 ## Tesis principal
 
-> Este programa trata todo fenómeno empíricamente investigable como materialmente instanciado y propone admitir sus entidades, niveles y categorías como **estructuras pre-ontológicas** solo cuando las regularidades operativas que las sostienen sobreviven un dossier de anclaje, traducción entre registros y pruebas de intervención. EDI no convierte una categoría en entidad: mide cierre operativo del trío fenómeno-sonda-modelo respecto de una pregunta Q. La generalidad ontológica es una conjetura sometida a ese procedimiento, no una consecuencia automática de aplicarlo.
+> Una categoría merece compromiso ontológico moderado cuando la regularidad material que pretende captar conserva organización bajo perturbaciones relevantes, admite traducción entre registros descriptivos y formales, y produce diferencias públicas frente a modelos rivales. Antes de satisfacer esas condiciones, la regularidad es pre-ontológica: es real como proceso material, pero todavía está subdeterminada respecto de qué objeto, propiedad o nivel constituye.
 
-## Tres marcos generales simultáneos
+La tesis no sostiene que el mundo dependa del lenguaje ni que las entidades sean ficciones útiles. Sostiene algo más restringido: la materialidad precede al recorte, pero el estatuto de objeto no debe presuponerse. Debe justificarse.
 
-La tesis ofrece tres marcos generales coordinados:
+## Aporte filosófico: principio de aplazamiento ontológico
 
-1. **Programa ontológico:** cuatro invariantes candidatos (sustrato material dinámico, acoplamiento, atractor empírico y cierre operativo κ) cuya generalidad debe probarse sin inferirla del mismo instrumento que los define.
-2. **Tesis epistemológica:** conocer una estructura exige compresión disciplinada, traducción entre registros y condiciones públicas de fracaso.
-3. **Metodología transferible:** un aparato común (motor ABM+ODE, protocolo C1-C5, EDI, dossier de 14 componentes y suite ST) aplicable entre dominios sin cambiar su arquitectura, aunque cada sonda y cada inferencia conservan validez local.
+El núcleo original del programa puede formularse como un principio:
 
-Los 40 casos evalúan la ejecutabilidad, selectividad y límites del aparato. No prueban por enumeración la generalidad ontológica. Los resultados negativos y las falsificaciones locales limitan el alcance de las sondas propuestas en vez de convertirse retrospectivamente en confirmaciones del marco.
+> **Principio de aplazamiento ontológico:** no inferir identidad, entidad o nivel a partir del nombre de una categoría, de la estabilidad aparente de un patrón ni del ajuste de un único modelo. El compromiso ontológico debe aplazarse hasta que la estructura sobreviva traducción empírica, perturbación, comparación rival y criterios explícitos de fracaso.
 
-## Posición filosófica: irrealismo operativo
+Este principio articula tres tesis:
 
-Realismo estructural moderado + pluralismo epistemológico + anti-reificación operativa. Nunca afirmamos `X es Y`; afirmamos `bajo el instrumento I, X exhibe cierre operativo de grado G respecto a la pregunta Q`. La dependencia instrumento-fenómeno no es defecto: es condición epistémica honesta.
+1. **Prioridad material:** toda estructura estudiada está sostenida por procesos materiales dinámicos; no se postulan sustancias adicionales.
+2. **Subdeterminación categorial:** una misma organización puede admitir recortes distintos según la pregunta, la escala y el régimen de medición. Ningún recorte obtiene privilegio ontológico solo por ser habitual o predictivo.
+3. **Realidad relacional graduada:** una estructura gana realidad explicativa cuando conserva dependencias relevantes entre transformaciones, sondas y modelos, no cuando recibe un nombre estable.
 
-## Hipótesis
+La posición resultante se denomina **irrealismo operativo**. Es realista respecto de la materialidad y de las restricciones que el mundo impone, pero irrealista respecto del derecho automático de nuestras categorías a convertirse en mobiliario definitivo de la realidad.
 
-### Hipótesis general
+## Arquitectura de la investigación
 
-> Una ontología material-relacional articulada con epistemología formal de compresión multiescala, asimetría L1↔B↔L3↔S y dossier de anclaje produce criterios públicos de admisión y fracaso que las categorías heredadas, el reduccionismo plano y el formalismo sin traducción no ofrecen por sí solos.
+La propuesta coordina tres niveles que deben mantenerse separados:
 
-### Hipótesis específicas
+| Nivel | Afirmación | Estatuto actual |
+|---|---|---|
+| Ontológico | Ciertos objetos pueden reconstruirse como estabilizaciones material-relacionales | Hipótesis programática |
+| Epistemológico | Toda atribución de estructura depende de una pregunta, una sonda y un régimen de medición declarados | Tesis argumentada y apoyada localmente |
+| Metodológico | Un protocolo común puede evaluar admisión, alcance y fracaso sin convertir cada resultado en confirmación | Artefacto ejecutable y reproducible |
 
-- **H1 (ontológica):** la realidad está materialmente instanciada, pero sus unidades explicativas son patrones relacionales estabilizados, definidos como atractores empíricamente identificables de sistemas dinámicos acoplados (capítulo 02-01).
-- **H2 (epistemológica):** el conocimiento es compresión disciplinada de estructura material-relacional bajo restricciones empíricas, con verdad como preservación estructural verificable (capítulo 02-02).
-- **H3 (nivel B):** el nivel de anclaje empírico es el sistema dinámico acoplado organismo–entorno bajo restricciones de tarea, físicas, informacionales e históricas (capítulo 02-04).
-- **H4 (metodológica):** las operaciones de compresión κ y expansión ε permiten justificar el paso entre escalas sin inflación ontológica ni empobrecimiento explicativo (capítulos 03-01 y 03-04).
-- **H5 (comparativa):** la tesis establece diferencias públicas respecto a catorce posiciones rivales; esa no-equivalencia conceptual no se presenta como superioridad empírica global (capítulo 04-01).
-- **H6 (caso ancla):** Warren aporta adecuación cuantitativa publicada dentro de behavioral dynamics; el caso EDI 30 es un piloto débil y circularmente comprometido, no una corroboración independiente del marco (capítulo 05-05 y corpus EDI caso 30).
-- **H7 (programática):** el aparato es extensible a mente, biología, sistemas técnicos e instituciones bajo criterios explícitos de elevación (capítulos 05-01 a 05-04).
+El aparato combina modelos ABM+ODE, intervención ablativa, EDI, protocolo C1-C5, dossier de anclaje y validación lógica ST. EDI mide cuánto aporta el acoplamiento a la predicción frente a un modelo reducido. No convierte una ganancia predictiva en prueba automática de existencia: produce evidencia local sobre el recorte fenómeno-sonda-modelo respecto de una pregunta Q.
 
-## Régimen de validez declarado
+## Hipótesis de trabajo
 
-La tesis se sostiene como **programa ontológico multiescalar con método ejecutable y evidencia parcial**, no como ontología general confirmada. La Parte III presenta los resultados; el capítulo de limitaciones concentra los problemas de calibración, circularidad, datos sintéticos, cobertura incompleta y falta de replicación externa. Esta introducción no adelanta de nuevo ese inventario.
+- **H1, material-relacional:** las unidades explicativas relevantes son patrones materialmente sostenidos cuya estabilidad puede caracterizarse mediante relaciones, atractores y transformaciones, sin reducirlas a sustancias primitivas.
+- **H2, epistemológica:** conocer una estructura consiste en comprimir dependencias sin perder las diferencias necesarias para explicar, intervenir y reconocer el fracaso del modelo.
+- **H3, traduccional:** una formalización solo es legítima si puede traducirse hacia un registro empírico B y devolver una semántica revisada S sin borrar el fenómeno planteado en L1.
+- **H4, comparativa:** la arquitectura propuesta es filosóficamente informativa solo donde establece diferencias contrastables frente a categorías heredadas y modelos rivales con presupuestos comparables.
 
-## Aporte original
+Las antiguas hipótesis específicas sobre operadores, dominios y casos se desarrollan en sus capítulos respectivos. No se repiten aquí como inventario.
 
-El proyecto combina cinco movimientos en una sola arquitectura que ningún rival reúne:
+## Evidencia y alcance
 
-1. **monismo ontológico** sin reduccionismo plano;
-2. **realismo estructural moderado** con anclaje empírico explícito;
-3. **pluralismo explicativo controlado** con asimetría L1↔B↔L3↔S como protocolo;
-4. **formalización metodológica** con procedimiento empírico de κ vía EDI;
-5. **cartografía de alcance y fallo** con 40 casos, controles negativos, pre-registro ex ante y conservación explícita de nulls y falsificaciones locales.
+Los 40 casos, 30 inter-dominio y 10 inter-escala, evalúan ejecutabilidad, selectividad y límites del aparato. No prueban por enumeración una ontología general. Los resultados positivos apoyan inferencias locales; los nulos y las falsificaciones restringen sondas, modelos o ventanas; los casos sintéticos demuestran portabilidad computacional, no invariancia del mundo entre escalas.
 
-La novedad no es de inventario (cada pieza está distribuida entre marcos vecinos). Es de articulación: dossier de anclaje + asimetría + intervención ablativa como filtro de admisión simultáneo, con un protocolo capaz de degradar las clasificaciones producidas por versiones anteriores del propio aparato.
+El resultado defendible es asimétrico: el método está más desarrollado que la metafísica. La tesis presenta un programa ontológico multiescalar, una epistemología explícita de la dependencia instrumental y un procedimiento capaz de corregir sus propias clasificaciones. La generalidad ontológica permanece abierta hasta contar con convergencia entre sondas, parámetros medidos independientemente, comparación rival y replicación externa.
+
+## Contribución específica
+
+La contribución no consiste en inventar aisladamente el sistemismo, el realismo estructural, la individuación, la explicación multinivel o la modelación ablativa. Consiste en reunirlos bajo una regla de admisión común que impide pasar sin justificación de una regularidad observada a una entidad postulada. Esa articulación produce cuatro resultados:
+
+1. una definición de lo pre-ontológico como regularidad material anterior al compromiso categorial fuerte;
+2. un protocolo de traducción entre lenguaje ordinario, interfaz empírica, formalización y semántica revisada;
+3. una medición ablativa del cierre operativo que conserva resultados adversos;
+4. una cartografía explícita de qué está establecido, qué recibe apoyo local y qué sigue siendo conjetural.
 
 ## Estructura del manuscrito
 
-El manuscrito se organiza en cinco partes:
-
-- **Parte I (Fundamentos):** ontología material-relacional, epistemología de la compresión, categorías, anclaje empírico, temporalidad y causalidad, dimensión normativa.
-- **Parte II (Aparato y método):** operadores formales, criterios de legitimidad, auditoría ontológica, operacionalización de κ, ética de investigación.
-- **Parte III (Evidencia empírica):** caso ancla canónico, corpus inter-dominio (30 casos), corpus inter-escala (10 casos), aplicaciones programáticas.
-- **Parte IV (Discusión):** posiciones rivales, objeciones principales y limitaciones declaradas.
-- **Parte V (Cierre):** conclusión, estado de la demostración y condiciones de fracaso.
+- **Parte I:** fundamentos ontológicos y epistemológicos, individuación, categorías, temporalidad, causalidad y normatividad.
+- **Parte II:** operadores formales, criterios de legitimidad, dossier de anclaje, auditoría, EDI, ST y gobernanza de datos.
+- **Parte III:** caso conductual, corpus inter-dominio, corpus inter-escala y aplicaciones programáticas.
+- **Parte IV:** comparación con posiciones rivales, objeciones y limitaciones.
+- **Parte V:** balance de la demostración, condiciones de elevación y condiciones de fracaso.
