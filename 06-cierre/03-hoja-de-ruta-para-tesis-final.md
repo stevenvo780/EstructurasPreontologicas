@@ -240,7 +240,7 @@ El manuscrito doctoral final está listo si:
 El objetivo no es solo tener un texto largo defendible sino un manuscrito que reúna seis cualidades simultáneas:
 
 - problema claro;
-- tesis demostrada en su régimen declarado;
+- tesis graduada por alcance: método establecido, resultados locales evaluados y ontología general declarada como hipótesis abierta;
 - rivales identificados con discriminación pública;
 - criterio de evaluación explícito;
 - aplicaciones con rendimiento (al menos demostrativas);

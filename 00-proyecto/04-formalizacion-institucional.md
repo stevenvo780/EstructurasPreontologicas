@@ -87,7 +87,7 @@ Compromiso público:
 
 ## 9. Estado del manuscrito
 
-El manuscrito se entrega en estado **integral defendible bajo régimen declarado**:
+El manuscrito se encuentra en **revisión predefensa**. Es defendible como propuesta filosófica formalizada con contribución metodológica reproducible y evidencia parcial, pero no como demostración cerrada de una ontología general multiescalar:
 
 - arquitectura argumental cerrada (capítulos 02 a 06);
 - aparato formal completo (capítulo 03);

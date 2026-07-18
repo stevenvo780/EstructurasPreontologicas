@@ -138,17 +138,17 @@ Se pierde la posibilidad de aplicar la tesis a cualquier dominio sin medidas, si
 
 ## Niveles del paisaje de emergencia (clarificación)
 
-La taxonomía operativa del corpus EDI distingue seis niveles (0–5):
+La taxonomía operativa histórica del corpus EDI distingue seis niveles (0–5). Estas etiquetas describen la salida cruda del motor; no sustituyen el estatus inferencial B-T2.1:
 
 **Tabla 3.4.1.**
 
 | Nivel | Etiqueta | Definición operativa | Ejemplos del corpus |
 |------:|----------|----------------------|---------------------|
-| 0 | Null | EDI ≤ 0 o sin estructura macro detectable | Conciencia, Acidificación, Erosión |
-| 1 | Trend | EDI > 0 sin significancia (p ≥ 0.05) | Justicia, Starlink, Clima |
-| 2 | Suggestive | 0.01 ≤ EDI < 0.10, p < 0.05 | Finanzas, Salinización |
-| 3 | Weak | 0.10 ≤ EDI < 0.30, p < 0.05 | Epidemiología, Behavioral Dynamics, Wikipedia |
-| 4 | Strong | EDI ≥ 0.30, p < 0.01, `overall_pass = True` | Energía, Deforestación, Kessler, Riesgo Bio |
+| 0 | Null | EDI ≤ 0 o sin estructura detectable | Conciencia, Clima, Contaminación |
+| 1 | Trend | EDI > 0 sin significancia robusta | Movilidad, Políticas |
+| 2 | Suggestive | 0.01 ≤ EDI < 0.10, p < 0.05 | Justicia, según régimen crudo |
+| 3 | Weak | 0.10 ≤ EDI < 0.30, p < 0.05 | Energía bajo B-T2.1; otros casos crudos requieren cierre |
+| 4 | Strong | EDI ≥ 0.30, p < 0.01, `overall_pass = True` | Ninguno confirmado bajo B-T2.1; existen salidas crudas e históricas |
 | 5 | Crítico | Convergencia bajo múltiples sondas + LoE = 5 + frontera espacial nítida | **(programa futuro, no alcanzado en el corpus actual)** |
 
 **Aclaración explícita y reiterada del Nivel 5:** el Nivel 5 está definido como **horizonte programático del marco**, no como nivel alcanzado en el corpus actual. Sus condiciones (multi-sonda convergente con resultados consistentes, LoE = 5, topología heterogénea con frontera espacial nítida) son objetivos del programa de elevación declarado en la hoja de ruta (`06-cierre/03-hoja-de-ruta-para-tesis-final.md`, programa multi-sonda). El manuscrito no afirma haberlo alcanzado en ningún caso. Esta cláusula se reitera donde sea relevante para evitar la lectura de promesa no cumplida.
@@ -163,11 +163,11 @@ La permutación simple con `n_perm=999` produce tasa empírica de tipo I cercana
 
 1. **Block bootstrap** (Politis y Romano 1994): permutación por bloques de tamaño √n que preserva la autocorrelación local. El p-value bajo block-bootstrap se reporta junto al p-value naive para cuantificar el shift de calibración.
 2. **Newey-West HAC** (Newey y West 1987): error estándar consistente bajo heterocedasticidad y autocorrelación, con kernel de Bartlett y truncamiento adaptativo `floor(4·(n/100)^{2/9})`.
-3. **FWER Holm-Bonferroni** (procedimiento step-down de Holm, 1979 — referencia secundaria, sin acceso a PDF original): los $m$ p-values se ordenan ascendentemente $p_{(1)} \le \dots \le p_{(m)}$ y se rechaza $H_{(i)}$ sii $p_{(j)} \le \alpha/(m-j+1)$ para todo $j \le i$. Es uniformemente más potente que Bonferroni preservando el control FWER fuerte a nivel $\alpha$, lo que justifica preferirlo aquí sobre la corrección Bonferroni plana. Aplicado al corpus completo: **14 casos inter-dominio + 8 casos inter-escala = 22 casos sobreviven Holm-Bonferroni a α=0.05**; los 4 casos macro `overall_pass=True` están entre los sobrevivientes (caso por caso documentado en `metrics.json::fwer_holm`). La clasificación strong sobrevive a la corrección por comparaciones múltiples.
+3. **FWER Holm-Bonferroni** (procedimiento step-down de Holm, 1979 — referencia secundaria): los $m$ p-values se ordenan ascendentemente $p_{(1)} \le \dots \le p_{(m)}$ y se rechaza $H_{(i)}$ sii $p_{(j)} \le \alpha/(m-j+1)$ para todo $j \le i$. El reporte histórico indica 22 rechazos tras Holm sobre p-values no homogéneos. Como la tasa de tipo I del p-value naive está mal calibrada y B-T2.1 no cubre todo el corpus, ese conteo no se usa como confirmación vigente.
 
 ### Replicación robusta sin replicador externo
 
-El AUC-ROC = 0.886 declarado es ranking interno; un crítico podría atribuirlo a sobreajuste del investigador. El módulo `common/replication.py` ofrece tres pruebas que cualquier evaluador externo puede correr sobre los outputs versionados:
+El AUC-ROC histórico de 0.886 es consistencia interna del umbral porque score y etiqueta dependen del mismo EDI. No es validación externa. El módulo `common/replication.py` ofrece tres pruebas técnicas que cualquier evaluador puede correr sobre los outputs versionados:
 
 1. **`seed_robustness`**: distribución de EDI bajo cambio de semilla. Criterio: `max_drift ≤ 0.05`. Si la varianza inter-seed es alta, hay sobreajuste al ruido pseudoaleatorio.
 2. **`holdout_temporal`**: EDI sobre la ventana out-of-sample (último 20 %). Criterio: `|EDI_test − EDI_full| ≤ 0.10`.
@@ -198,7 +198,7 @@ Cuando los `metrics.json` no exponen los arrays primarios `obs/abm/forcing`, las
 
 ### Análisis de sensibilidad a umbrales
 
-El módulo `common/threshold_sensitivity.py` barre la grilla `weak_low ∈ {0.05, 0.075, 0.10, 0.125, 0.15} × strong_low ∈ {0.20, 0.25, 0.30, 0.35, 0.40}` y reporta para cada caso la clasificación invariante. Los casos siempre strong bajo toda la grilla razonable (Energía, Deforestación, Microplásticos) tienen clasificación independiente de la elección de umbrales. La declaración del cap 06-01 §5.4 sobre sensibilidad de la composición a la elección de umbrales queda mecanizada y verificable.
+El módulo `common/threshold_sensitivity.py` barre la grilla `weak_low ∈ {0.05, 0.075, 0.10, 0.125, 0.15} × strong_low ∈ {0.20, 0.25, 0.30, 0.35, 0.40}` y reporta para cada caso la clasificación invariante. El reporte histórico marcó Energía, Deforestación y Microplásticos como Strong en toda la grilla, pero esa estabilidad de umbral no sobrevivió datos refrescados y B-T2.1. El módulo evalúa sensibilidad a cortes; no evalúa estabilidad frente a cambios de datos, tendencia o esquema de permutación.
 
 ### Análisis de potencia estadística
 

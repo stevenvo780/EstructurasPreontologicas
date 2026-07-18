@@ -135,6 +135,12 @@ export default function CaseDetail() {
         </div>
       </header>
 
+      <div className="rounded-lg border border-warning/30 bg-warning/5 px-4 py-3 mb-6 text-sm text-ink-700 dark:text-ink-300">
+        Esta ficha expone la salida técnica de <code className="font-mono text-xs">metrics.json</code>.
+        Categoría, nivel y <code className="font-mono text-xs">overall_pass</code> no sustituyen el estatus
+        estricto B-T2.1 ni prueban por sí solos una inferencia ontológica.
+      </div>
+
       {/* KPIs */}
       <section className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3 mb-6">
         <StatCard
@@ -157,10 +163,10 @@ export default function CaseDetail() {
           accent={c.metrics.pvalue != null && c.metrics.pvalue < 0.05 ? 'success' : 'default'}
         />
         <StatCard label="CR" value={c.metrics.cr != null ? c.metrics.cr.toFixed(3) : '—'} />
-        <StatCard label="Categoría" value={c.metrics.category} />
-        <StatCard label="Nivel" value={c.metrics.nivel != null ? String(c.metrics.nivel) : '—'} />
+        <StatCard label="Categoría cruda" value={c.metrics.category} />
+        <StatCard label="Nivel crudo" value={c.metrics.nivel != null ? String(c.metrics.nivel) : '—'} />
         <StatCard
-          label="overall_pass"
+          label="overall_pass técnico"
           value={c.metrics.overall_pass ? 'PASS' : 'FAIL'}
           icon={c.metrics.overall_pass ? CheckCircle2 : XCircle}
           accent={c.metrics.overall_pass ? 'success' : 'danger'}

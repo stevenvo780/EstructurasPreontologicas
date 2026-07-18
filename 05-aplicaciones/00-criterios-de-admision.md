@@ -77,11 +77,12 @@ El corpus de 30 casos inter-dominio + 10 inter-escala opera en este modo por dis
 
 | Modo | Aparato EDI ejecutado | Dossier 14 componentes | Pretensión filosófica | Casos |
 |---|---|---|---|---|
-| Demostrativo | Sí | Completo y sustantivo | Ontológica fuerte: el atractor es patrón material realmente existente bajo dossier auditado | 1 (Warren, cap 05-05) |
+| Demostrativo | Sí | Completo y sustantivo | Afirmación local fuerte bajo dossier auditado | 0 cerrados en el manuscrito actual |
+| Ancla paradigmática | No aplica como EDI propio | 9/14 componentes sustantivos | Compatibilidad local y motivación del programa | 1 (Warren, cap 05-05) |
 | Programático | No (o piloto parcial) | Conjeturado con criterio de elevación | Conjetura articulada con plan de prueba; no demuestra | 4 (caps 05-01 a 05-04) |
 | **Técnico-ejecutado** | **Sí, completo y reproducible** | **No (mapeo de cobertura, no dossier ontológico)** | **Operativa: el aparato discrimina y mapea cobertura del marco a esta escala/dominio** | **40 (corpus 05-06 + 05-07)** |
 
-El modo técnico-ejecutado **coincide con la reformulación opción (c) suave** del cierre `06-01` y la nota epistemológica pendiente de firma autoral de `06-02 §3 P7-bis`: los 40 casos son **mapa de cobertura del aparato y calibración bidireccional**, no demostración ontológica adicional. La afirmación «ontología general multiescalar» se sostiene operativamente sobre los casos con datos públicos reales (subconjunto B-T2 + Warren); los demás técnicos-ejecutados son evidencia de transferibilidad estructural del aparato sin reentrenar arquitectura, con falsos positivos acotados por hostile testing (Wilson 95 % CI [0, 0.00191] sobre 0/2000 random walk).
+El modo técnico-ejecutado coincide con la reformulación del cierre `06-01`: los 40 casos son **mapa de cobertura y calibración bidireccional**, no demostración ontológica adicional. Los casos con datos públicos reales aportan resultados epistemológicos locales; los inter-escala muestran transferibilidad computacional. La afirmación «ontología general multiescalar» permanece como hipótesis programática H-J2, con falsos positivos del gate acotados solo para la familia de random walks ensayada (Wilson 95 % [0, 0.00191] sobre 0/2000).
 
 ### 3.bis.4. Marca obligatoria
 
@@ -89,13 +90,13 @@ Un capítulo o caso en modo técnico-ejecutado debe declararlo explícitamente y
 
 ## 4. Inventario de aplicaciones del manuscrito
 
-### 4.1. Caso ancla canónico (modo demostrativo)
+### 4.1. Caso ancla paradigmático con dossier parcial
 
 **Tabla 5.0.1.**
 
 | Capítulo | Tema | Estado |
 |---|---|---|
-| 05-05 | Behavioral dynamics: locomoción, obstáculos, frenado, raqueteo, equilibrio | DEMOSTRATIVO con dossier completo; el anclaje primario es Warren (2006, pp. 358–359), engaged textualmente en el párrafo siguiente, complementado con Fajen y Warren (2003), Yilmaz y Warren (1995), Foo et al. (2000) y Sternad et al. (2001) |
+| 05-05 | Behavioral dynamics: locomoción, obstáculos, frenado, raqueteo, equilibrio | ANCLA PARADIGMÁTICA, 9/14 componentes sustantivos; el anclaje primario es Warren (2006, pp. 358–359), complementado con Fajen y Warren (2003), Yilmaz y Warren (1995), Foo et al. (2000) y Sternad et al. (2001) |
 
 El anclaje teórico del caso 05-05 es explícitamente Warren (2006), quien plantea que «the agent and its environment are treated as a pair of dynamical systems that are coupled mechanically and informationally. Their interactions give rise to the behavioral dynamics, a vector field with attractors that correspond to stable task solutions, repellers that correspond to avoided states, and bifurcations that correspond to behavioral transitions» (Warren, 2006, p. 358). Esta tesis hace al programa de Warren un caso ancla natural para la ontología material-relacional: los atractores no se postulan como entidades internas al agente ni como propiedades del entorno aislado, sino que «are codetermined by the confluence of task constraints and perceptual–motor control laws» (p. 359). El capítulo 05-05 hereda esa carga discriminante —no la presupone—.
 

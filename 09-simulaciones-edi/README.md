@@ -1,273 +1,121 @@
-# Capítulo 09. Corpus EDI: validación empírica inter-dominio + inter-escala
+# Corpus EDI inter-dominio: ejecución, resultados y alcance
 
-## Función de este capítulo
+## Función
 
-Este capítulo aloja la **justificación operativa del marco general** de la tesis: el motor de simulación híbrido ABM+ODE, los **30 casos del corpus inter-dominio**, los **10 casos del corpus inter-escala** (ver `corpus_multiescala/`), y la infraestructura de ejecución, auditoría y reporte. El corpus inter-dominio cubre física, biología, economía, política, tecnología, cultura y conducta humana con sondas ODE específicas por dominio. El corpus inter-escala cubre **30 órdenes de magnitud** espaciales y temporales, desde dinámica de espín-órbita atómica (10⁻¹⁰ m, 10⁻¹⁵ s) hasta dinámica de cúmulos globulares (10²⁰ m, 10¹⁴ s). Validación canónica unificada en ambos corpus.
+Este capítulo documenta el motor híbrido ABM+ODE, los 30 casos inter-dominio y la infraestructura de ejecución y auditoría. El corpus evalúa si una sonda acoplada mejora la predicción frente a un modelo reducido. No convierte esa ganancia, por sí sola, en prueba de una entidad o invariante ontológico.
 
-### Estatus epistémico de los casos: justificación, no tesis
-
-Los 40 casos del corpus **no son la tesis**. La tesis son los tres marcos generales:
-
-- **ontología general** (cap 02-01): cuatro invariantes (sustrato material dinámico, acoplamiento, atractor empírico, cierre operativo κ) válidos a cualquier escala;
-- **epistemología general** (cap 02-02): una teoría del conocimiento como compresión disciplinada bajo intervención ablativa, válida a cualquier escala;
-- **metodología general** (cap 03): un aparato formal y empírico que ejecuta la epistemología sobre la ontología sin reentrenar arquitectura entre dominios o escalas.
-
-Los 40 casos son **justificación operativa parcial de los tres marcos**: instancias verificables que muestran que las afirmaciones generales son ejecutables, discriminantes y transferibles. La generalidad del marco es **conceptualmente independiente** del tamaño del corpus: si el corpus tuviera 4 o 400 casos, el marco general no cambiaría — solo la fuerza inferencial del respaldo cambiaría. Lo que el corpus aporta es **demostración operativa de transferibilidad** (el aparato funciona en 8 escalas y 30 dominios) y **discriminación verificada** (gate completo robusto bajo random walk masivo, controles de falsación rechazados, sondas específicas).
-
-Esta distinción importa filosóficamente: confundir el corpus con la tesis sería caer en la falacia inductivista (más casos → más verdad). El marco general se sostiene por su **estructura interna coherente y operativamente articulada**, no por la cuenta de casos. El corpus respalda; la tesis se sostiene en su propia articulación tripartita general.
+> **Nota de versionado.** `metrics.json` es la fuente de verdad de cada ejecución. El estatus inferencial final requiere además el régimen estricto B-T2.1. Los valores crudos, históricos y estrictos no deben mezclarse.
 
 ## Tesis del capítulo
 
-> El irrealismo operativo de estructuras pre-ontológicas se demuestra como **ontología general multiescalar** mediante cartografía empírica agregada de 40 casos. El motor ABM+ODE acoplado, el protocolo C1-C5 y la métrica EDI calculada por intervención ablativa producen un paisaje de emergencia robusto, discriminante y falsable a través de escalas: corpus inter-dominio con 5 casos strong (4 con `overall_pass=True`), 7 weak, 2 suggestive, 4 trend, 8 null, 3 controles de falsación rechazados; corpus inter-escala con 7 strong en 7 escalas distintas + 1 weak + 2 nulls honestos. El aparato es **invariante a la escala**: opera con la misma metodología desde el qubit superconductor hasta el cúmulo globular, con sondas físicamente motivadas específicas a cada escala.
+El corpus prueba que el aparato es ejecutable, trazable y capaz de producir resultados positivos, nulos y negativos. Como B-T2.1 todavía no cubre los 30 casos, no existe una distribución confirmatoria homogénea del corpus ni un conjunto Strong robusto confirmado.
 
-## Lectura ontológica del corpus: cada caso es instanciación de la misma estructura
+## 1. Estado estricto vigente
 
-Los 40 casos del corpus agregado **no son listado de aplicaciones independientes**: cada caso instancia **los cuatro invariantes ontológicos** que la tesis afirma (cap 02-01). Lo que cambia entre casos es la escala y el dominio donde los invariantes se materializan; la **estructura ontológica subyacente es una sola**.
+| Estatus B-T2.1 | N | Casos o alcance |
+|---|---:|---|
+| Strong robusto puro confirmado | 0 | Ninguno |
+| Weak validado | 1 | Energía, caso 04: EDI 0.1571, p_block 0.006, CI [0.133, 0.193] |
+| Candidato pendiente | 1 | Starlink, caso 26: EDI 0.7575, p_block 0.079, `overall_pass=false` |
+| Falsificación local del aparato | 4 | Acidificación, Kessler, Erosión y Microplásticos, casos 19, 20, 23 y 24 |
+| Controles negativos rechazados | 3 | Casos 06, 07 y 08 |
+| Sin estatus estricto cerrado | 21 | Requieren reejecución B-T2.1 |
 
-Para cada caso del corpus, la lectura ontológica articula:
+Una falsificación local indica que la sonda o el modelo propuestos predicen peor que el reducido en la ventana evaluada. No demuestra ausencia del fenómeno y tampoco salva automáticamente la ontología.
 
-- **Sustrato material:** qué cuerpo material dinámico aloja el fenómeno;
-- **Acoplamiento:** qué dos polos interactúan dinámicamente bajo restricciones de la escala;
-- **Atractor empírico:** qué región del espacio de fase concentra la convergencia bajo perturbación;
-- **Cierre operativo κ:** qué reducción a sistema de baja dimensión preserva las dependencias decisivas, medida por EDI.
+## 2. Reclasificaciones decisivas
 
-Esta lectura no es opcional retórica: es lo que el motor del aparato computa para cada caso. El `metrics.json` de cada caso reporta el cierre operativo κ; los demás invariantes están instanciados en `case_config.json` y la sonda específica.
+| Caso | Resultado histórico | Resultado vigente | Lectura |
+|---|---|---|---|
+| 04 Energía | Strong, EDI 0.6503 | Weak validado, EDI 0.1571, p_block 0.006 | La corrección reduce la magnitud, conserva señal local |
+| 20 Kessler | Strong, EDI 0.3527 | EDI -1.000, p_block 1.0 | Falsificación local |
+| 24 Microplásticos | Strong, EDI ~0.8 | EDI -1.000, p_block 1.0 | Falsificación local tras datos refrescados |
+| 26 Starlink | Strong sin gate | EDI 0.7575, p_block 0.079, gate fallido | Candidato, no confirmación |
+| 30 Behavioral | Strong o Weak en narrativas previas | EDI 0.2622, `overall_pass=false`; block bootstrap p≈0.978 | Piloto con circularidad parcial |
 
-### Articulación ontológica por familia de casos del corpus inter-dominio
+Las reclasificaciones muestran que el pipeline puede corregir sus resultados. Esta propiedad sustenta la auditabilidad del método; no constituye evidencia independiente de la ontología.
 
-#### Casos strong (4 con `overall_pass=True`): donde la estructura ontológica se manifiesta más nítidamente
+## 3. Controles y calibración
 
-| Caso | Sustrato material | Acoplamiento | Atractor | Cierre operativo κ |
-|------|-------------------|--------------|----------|---------------------|
-| 04 Energía | Red eléctrica + agentes económicos + recursos | F↔R bajo coste y política | Mix energético de equilibrio dinámico | EDI 0.65 (Lotka-Volterra) |
-| 16 Deforestación | Frontera agrícola/forestal + agentes humanos + biosfera | Renta agrícola↔distancia al mercado | Patrón espacial de ocupación territorial | EDI 0.60 (von Thünen) |
-| 20 Kessler | Densidad orbital + flujo de fragmentos | Densidad↔tasa colisional | Régimen de saturación orbital | EDI 0.35 (densidad orbital) |
-| 27 Riesgo Biológico | Población humana + patógenos + sistemas sanitarios | Mortalidad↔presión biológica | Tasa de mortalidad estable bajo régimen | EDI 0.33 (mortalidad) |
+- Los casos 06, 07 y 08 fueron rechazados correctamente.
+- El hostile testing con random walks reporta 0/2000 falsos positivos del gate, Wilson 95 % [0, 0.00191].
+- La tasa empírica de tipo I del p-value nominal es aproximadamente 24 %, no 5 %.
+- El AUC-ROC histórico 0.8857, CI bootstrap [0.6571, 1.0000], usa EDI como score y una etiqueta derivada del umbral de EDI. Mide consistencia interna, no validez externa.
 
-Estos cuatro casos, aunque pertenecen a dominios heterogéneos (energético, ecológico, espacial, sanitario), instancian la **misma estructura ontológica**. La diferencia entre ellos es de escala temporal (años en Energía vs décadas en Deforestación) y de dominio sustantivo (recursos vs biosfera vs órbita vs salud), no de **forma ontológica**. Cada uno es atractor empírico de un sistema material acoplado con cierre operativo medible.
+Los controles reducen la objeción de validación indiscriminada frente a la familia ensayada. Faltan nulos más diversos y rivales estructurados con el mismo presupuesto de ajuste.
 
-#### Caso strong sin gate completo: estructura ontológica detectada con cautela inferencial
+## 4. Estructura del corpus
 
-| Caso | Sustrato material | Acoplamiento | Atractor | Cierre operativo κ |
-|------|-------------------|--------------|----------|---------------------|
-| 24 Microplásticos | Hidrosfera + materiales sintéticos + ecosistemas marinos | Generación↔acumulación | Concentración acumulada estable | EDI 0.78 (Jambeck) |
-
-EDI muy alto pero CI bootstrap inestable. Estructura ontológica plausible pero la inferencia estadística requiere refinamiento.
-
-#### Casos weak (8 con p < 0.05 y EDI ≥ 0.10): estructura ontológica detectable pero atenuada
-
-Cada uno instancia los invariantes con **componente exógeno dominante** o **acoplamiento parcial**:
-
-- **05 Epidemiología, 18 Urbanización, 22 Fósforo, 13 Políticas, 14 Postverdad, 15 Wikipedia, 11 Movilidad** — sustratos sociotecnoecológicos con acoplamientos identificables, atractores parciales, cierre operativo modesto pero significativo.
-- **30 Behavioral Dynamics** — caso bisagra entre dimensión individual y poblacional; sustrato organismo-entorno-tarea; acoplamiento informacional vía τ; atractor de control de heading; κ medido bajo Fajen-Warren con circularidad detectada por N2 (limita la fuerza ontológica del caso individual).
-
-#### Casos null (8 sin evidencia de cierre operativo bajo la sonda elegida): el aparato lo reporta honestamente
-
-La etiqueta `null` viene del Emergentómetro (`emergence_taxonomy.category`): no hay evidencia de cierre operativo, sea por EDI ≤ 0 (acoplar el ODE no mejora o empeora el RMSE), sea por EDI positivo no significativo bajo permutación. De los 8 casos, **7 tienen EDI ≤ 0** (02 conciencia, 03 contaminación, 12 paradigmas, 17 océanos, 23 erosión dialéctica, 25 acuíferos, 29 IoT) y **1 tiene EDI alto sin significancia ni robustez** (19 acidificación, EDI=+0.728, p=0.49, C2 fail — anomalía sin resolver).
-
-La causa del null **no es la misma en cada caso**, y la honestidad metodológica obliga a separarlas:
-
-| Caso | Causa dominante del null |
-|------|--------------------------|
-| 02 conciencia | Datos sintéticos sin ground truth fenoménico + drivers proxy + sonda logística genérica |
-| 03 contaminación | Sonda `mean_reversion` subespecificada para PM2.5; brecha sint→real ≈0.32 |
-| 12 paradigmas | Anti-correlación ABM-obs (−0.96 vs +0.30): sonda y observable no co-medibles |
-| 17 océanos | Observable agregado anual macro-suficiente: la dinámica micro no es operativamente relevante a esta resolución |
-| **19 acidificación** | **EDI alto pero p=0.49 y C2 fail — anomalía estadística que requiere reanálisis** |
-| 23 erosión dialéctica | Caso piloto declarado sin observable real (limitación en `FETCH_MANIFEST.json`) |
-| 25 acuíferos | Cobertura de datos al 51%: insuficiencia, no inadecuación de sonda |
-| 29 IoT | Sonda `bilinear` mal especificada para difusión tecnológica con saltos exponenciales |
-
-Estos casos **no refutan la ontología general**: muestran que **no toda regularidad superficial es atractor de cierre operativo**, y que el aparato distingue tres condiciones distintas — sonda inadecuada, datos insuficientes, anomalía estadística — que la prosa agregada no debe homogenizar. Diagnóstico por caso disponible bajo solicitud en el archivo interno del proyecto.
-
-#### Controles de falsación (3 rechazados): la prueba inversa de la ontología
-
-Los 3 controles (exogeneidad, no-estacionariedad, observabilidad) están construidos para que el aparato **DEBA fallar**. El rechazo correcto de los tres confirma que el cierre operativo detectado en los strong/weak no es artefacto del aparato: si fuera artefacto, los controles también producirían EDI alto. **No lo hacen.** Esto es prueba operativa de que la ontología no es vacía.
-
-### Articulación ontológica del corpus inter-escala
-
-Los 10 casos del corpus inter-escala (`corpus_multiescala/`) instancian los mismos cuatro invariantes en escalas físicas distintas. Ver `09-simulaciones-edi/corpus_multiescala/README.md` y `10-apendices-tecnicos/02-tablas-crudas-corpus-multiescala.md` para la tabla detallada. Lo importante para esta sección: los 7 strong en 7 escalas distintas (atómica, cuántica, bioquímica, celular oscilatoria, individual, astrofísica, astrofísica masiva) **no son aplicación nominal del aparato a otros dominios**: cada uno verifica los cuatro invariantes ontológicos en su escala, con sondas físicamente motivadas y test cruzado de especificidad (V4-01: 0/12 circularidad).
-
-### Síntesis filosófica del corpus agregado
-
-Los 40 casos del corpus, leídos ontológicamente, **dicen lo mismo**: hay un sustrato material dinámico que se acopla en pares (o más) bajo restricciones, produce atractores empíricos, y admite descripción comprimida cuando el detalle local no afecta la dependencia decisiva. Esta es **una sola ontología**, no una colección. Los dominios y las escalas cambian; los invariantes permanecen.
-
-La diferencia entre 5 strong, 8 weak, 2 suggestive, 4 trend, 8 null, 3 controles rechazados (corpus inter-dominio) y 7 strong + 1 weak + 2 null (corpus inter-escala) **no es diferencia ontológica**: es diferencia de **calidad de la sonda y de los datos** disponibles para verificar la estructura común. Donde la sonda es físicamente adecuada y los datos preservan la dinámica, el cierre operativo aparece. Donde la sonda no captura el acoplamiento o los datos son ruido sin estructura, el aparato lo reporta honestamente.
-
-**Esto es lo que significa "ontología general operativamente articulada":** una sola estructura ontológica, multiescalar e inter-dominio, validada caso por caso por su capacidad de discriminar genuinamente entre presencia y ausencia de cierre operativo bajo intervención ablativa controlada.
-
-## Estructura del corpus
-
-```
+```text
 09-simulaciones-edi/
-├── README.md                          ← este archivo
-├── tesis                              ← CLI principal (./tesis demo, audit, build...)
-├── run_demo.sh                        ← demo rápido
-├── requirements.txt                   ← dependencias
-├── .venv/                             ← entorno aislado
-├── common/                            ← validador canónico, ABM, ODE, GPU backend
-│   ├── hybrid_validator.py            ← 2252 líneas, núcleo del Emergentómetro
-│   ├── abm_core.py + abm_core_gpu.py  ← ABM CPU/GPU
-│   ├── ode_models.py                  ← sondas macro (Lotka-Volterra, von Thünen, etc.)
-│   ├── case_runner.py                 ← orquestador de cada caso
-│   ├── gpu_backend.py                 ← detección CUDA/CuPy/PyTorch
-│   └── ...
-├── 01_caso_clima/ ... 30_caso_behavioral_dynamics/  ← 30 casos del corpus EDI
-│   └── src/{abm,ode,data,validate}.py
-│   └── outputs/metrics.json + report.md
-│   └── case_config.json
-├── docker/                            ← entorno reproducible con GPU
-└── scripts_orquestacion/              ← auditoría, evaluación, build
+├── README.md
+├── common/                              validador, ABM, ODE y backend
+├── 01_caso_clima/ ... 30_caso_.../     corpus inter-dominio
+│   ├── case_config.json
+│   ├── src/
+│   └── outputs/metrics.json
+├── corpus_multiescala/                  casos 31 a 40
+├── auc_roc/                             diagnóstico histórico del umbral
+├── baselines/                           comparaciones rivales
+└── scripts_orquestacion/                auditoría y reportes
 ```
 
-## Resultados consolidados
+## 5. Cómo ejecutar
 
-### Tabla maestra (30 casos, fase real, outputs verificados)
-
-| # | Caso | Sonda macro | EDI | p-value | overall | Nivel | LoE | val_steps |
-|---|------|-------------|----:|--------:|:-------:|:-----:|----:|----------:|
-| 04 | Energía eléctrica | Lotka-Volterra | **0.6503** | 0.0000 | ✓ | **4** | 4 | 13 |
-| 16 | Deforestación global | von Thünen | **0.6020** | 0.0000 | ✓ | **4** | 4 | 13 |
-| 20 | Síndrome de Kessler | Densidad orbital | **0.3527** | 0.0000 | ✓ | **4** | 3 | 15 |
-| 27 | Riesgo biológico | Mortalidad | **0.3326** | 0.0022 | ✓ | **4** | 3 | 9 |
-| 24 | Microplásticos | Jambeck Accumulation | **0.7819** | 0.0000 | – | 4* | 4 | 15 |
-| 13 | Políticas estratégicas | Gasto militar | 0.2972 | 0.0015 | – | 3 | 3 | 13 |
-| 14 | Postverdad | SIS Desinformación | 0.2428 | 0.0000 | – | 3 | 2 | 8 |
-| 18 | Urbanización | Logística + Atracción | 0.2358 | 0.0000 | – | 3 | 4 | 23 |
-| 22 | Fósforo | Carpenter P Cycle | 0.1924 | 0.0000 | – | 3 | 4 | 18 |
-| 15 | Wikipedia | Crecimiento social | 0.1916 | 0.0000 | – | 3 | 3 | 48 |
-| 05 | Epidemiología | SIR/SEIR | 0.1294 | 0.0000 | – | 3 | 4 | 104 |
-| 11 | Movilidad | Difusión aérea | 0.1283 | 0.0020 | – | 3 | 3 | 19 |
-| 09 | Finanzas globales | Pricing factor | 0.0813 | 0.0000 | – | 2 | 4 | 168 |
-| 21 | Salinización | Balance hídrico | 0.0184 | 0.0028 | – | 2 | 3 | 18 |
-| 10 | Justicia | – | 0.2274 | 0.4775 | – | 1 | 2 | 12 |
-| 26 | Starlink | Densidad orbital | 0.6892 | 1.0000 | – | 1* | 3 | 1 |
-| 28 | Fuga de cerebros | Docquier-Rapoport | 0.0249 | 0.9975 | – | 1 | 3 | 18 |
-| 01 | Clima regional | Budyko-Sellers | 0.0111 | 0.9990 | – | 1 | 5 | 168 |
-| 02 | Conciencia global | Fallback | -0.1165 | 0.9239 | – | 0 | 1 | 9 |
-| 03 | Contaminación PM2.5 | – | -0.0901 | 0.5090 | – | 0 | 3 | 11 |
-| 12 | Paradigmas (ciencia) | – | -0.1536 | 0.4970 | – | 0 | 2 | 11 |
-| 17 | Océanos (temperatura) | – | -0.0154 | 1.0000 | – | 0 | 3 | 14 |
-| 19 | Acidificación oceánica | – | 0.7278 | 0.4900 | – | 1* | 3 | 11 |
-| 23 | Erosión dialéctica | – | -1.0000 | 1.0000 | – | 0 | 1 | 8 |
-| 25 | Acuíferos | – | -0.1462 | 1.0000 | – | 0 | 3 | 19 |
-| 29 | IoT | – | -0.8760 | 1.0000 | – | 0 | 3 | 15 |
-| 06 | **Falsación exogeneidad** | Ruido puro | 0.0551 | 1.0000 | – | – | 1 | 731 |
-| 07 | **Falsación no-estacionariedad** | Random walk | -0.8819 | 1.0000 | – | – | 1 | 731 |
-| 08 | **Falsación observabilidad** | Estado oculto | -1.0000 | 1.0000 | – | – | 1 | 97 |
-
-**(*)** Microplásticos: EDI alto (0.78) sin gate completo por inestabilidad del bootstrap. Starlink: ventana de validación insuficiente (val_steps=1). Acidificación oceánica: EDI alto (0.73) bajo nuevo régimen de medición pero p=0.49 (no significativo) y `overall_pass=False`; clasificado como Trend con cautela inferencial — candidato a re-evaluación con sondas físicas alternativas (programa multi-sonda).
-
-### Distribución del paisaje de emergencia
-
-| Categoría | Conteo | Porcentaje |
-|-----------|-------:|-----------:|
-| Strong (Nivel 4) — gate completo | 4 | 14% |
-| Strong (Nivel 4) — sin gate | 1 | 3% |
-| Weak (Nivel 3) | 7 | 24% |
-| Suggestive (Nivel 2) | 2 | 7% |
-| Trend (Nivel 1) | 4 | 14% |
-| Null (Nivel 0) | 8 | 28% |
-| Falsación rechazada | 3 | 10% |
-
-**Total:** 30 casos del corpus EDI. **Selectividad:** 15/30 con significancia (p<0.05 y EDI>0.01). **Falsación correcta:** 3/3.
-
-### Métricas globales de robustez
-
-| Métrica | Valor | Interpretación |
-|---------|------:|----------------|
-| Estabilidad numérica | 29/29 | Pipeline numéricamente sólido |
-| Persistencia temporal | 28/29 | Ventanas de validación adecuadas |
-| Determinismo (seed=42) | 29/29 | Reproducibilidad bit-a-bit |
-| Coupling > 0.10 | 21/29 | Mayoría con acoplamiento no epifenoménico |
-
-## Análisis transversal
-
-### Patrón 1. La termodinámica manda
-
-Los cuatro casos con `overall_pass=True` están conectados con dinámicas físicas o termodinámicas robustas (Energía, Deforestación, Riesgo Biológico, Kessler). Esto es coherente con la hipótesis: cuanto más anclado físicamente está un fenómeno, más robusto es su cierre operativo.
-
-### Patrón 2. La paradoja de los datos (LoE)
-
-Los casos con LoE 5 (datos físicos directos) no necesariamente alcanzan los EDI más altos. El Clima (LoE=5, EDI=0.011) muestra que sondas inadecuadas producen EDI bajos incluso con datos excelentes. Sondas, no datos, son el cuello de botella en algunos casos.
-
-### Patrón 3. La importancia del val_steps
-
-Casos con ventanas largas (Epidemiología 104, Finanzas 168, Clima 168) producen estadística robusta pero EDI moderados. Casos con ventanas cortas (Riesgo Biológico 9, Postverdad 8) pueden producir EDI altos pero requieren cautela inferencial. Starlink (val_steps=1) es exploratorio, no confirmatorio.
-
-### Patrón 4. El éxito de la falsación
-
-3 de 3 controles de falsación rechazados correctamente. Esto refuta la objeción de tautología: si la ablación fuera trivialmente destructiva, los controles también producirían EDI alto, pero no lo hacen.
-
-## Cómo ejecutar
-
-### Setup (una vez)
+### Verificación general
 
 ```bash
-cd /datos/repos/EstructurasPreontologicas/09-simulaciones-edi
-python3 -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
+python3 harness/cli.py verify --all
 ```
 
-### Ejecución básica
+### Ejecución desde la CLI
 
 ```bash
-source .venv/bin/activate
-./tesis demo               # ejecuta caso clima
-./tesis audit              # auditoría rápida (sin re-ejecutar)
-./tesis metrics            # regenera tablas
-./tesis build              # ensambla tesis
+./tesis demo
+./tesis audit
+./tesis metrics
+./tesis build
 ```
 
-### Ejecución de un caso específico
+### Caso específico
 
 ```bash
-cd 16_caso_deforestacion/src
-python3 validate.py        # perfil canónico (n_perm=999, n_boot=500)
+python3 09-simulaciones-edi/04_caso_energia/src/validate.py --seed 42
 ```
 
-### Re-ejecución masiva con perfiles agresivos (GPU)
+Cada caso debe declarar sus requisitos adicionales. Una reejecución confirmatoria debe fijar datos, sonda, baseline, ventana, umbrales y criterio de pérdida antes de observar el resultado.
 
-```bash
-./tesis run --gpu --case clima
-HYPER_N_PERM=2999 HYPER_N_BOOT=1500 ./tesis run --case deforest
-```
+## 6. Sondas de referencia
 
-## Sondas macro implementadas
-
-| Caso | Sonda ODE | Referencia teórica |
-|------|-----------|--------------------|
-| Clima | Budyko-Sellers | Budyko 1969, Sellers 1969 |
-| Energía | Lotka-Volterra | Lotka 1925, Volterra 1926 |
-| Deforestación | von Thünen frontier | von Thünen 1826 |
-| Microplásticos | Jambeck Accumulation | Jambeck et al. 2015 |
+| Caso | Sonda | Referencia disciplinar |
+|---|---|---|
+| Clima | Budyko-Sellers | Budyko 1969; Sellers 1969 |
+| Energía | Lotka-Volterra | Lotka 1925; Volterra 1926 |
+| Deforestación | von Thünen | von Thünen 1826 |
 | Epidemiología | SIR/SEIR | Kermack-McKendrick 1927 |
-| Urbanización | Logística + Atracción | Pearl-Reed 1920 |
-| Fósforo | Carpenter P Cycle | Carpenter 2005 |
 | Kessler | Densidad orbital | Kessler-Cour-Palais 1978 |
-| Fuga cerebros | Docquier-Rapoport | Docquier-Rapoport 2012 |
-| Behavioral Dynamics (caso 30) | Atractor de heading (segundo orden) | Fajen y Warren 2003, Warren 2006 |
+| Microplásticos | Acumulación-decaimiento | Jambeck et al. 2015 |
+| Behavioral Dynamics | Atractor de heading | Fajen y Warren 2003; Warren 2006 |
 
-## Limitaciones reconocidas
+La referencia disciplinar motiva una sonda; no prueba que su parametrización concreta sea adecuada para la ventana evaluada.
 
-1. **Una sonda por caso:** la dependencia instrumental es limitación; programa multi-sonda como trabajo futuro.
-2. **Ventanas cortas en algunos casos:** Riesgo Biológico (val_steps=9), Postverdad (8), Starlink (1) requieren cautela inferencial.
-3. **Topología de retícula homogénea:** la condición de Nivel 5 (frontera espacial nítida) requeriría topologías heterogéneas (scale-free) ya implementadas en `common/topology_generator.py` pero no aplicadas masivamente.
-4. **Baseline solo ABM-sin-ODE:** comparación con ARIMA/VAR como trabajo futuro.
+## 7. Límites
 
-## Conexión con el resto del manuscrito
+1. B-T2.1 no está cerrado para los 30 casos.
+2. Las ventanas, pruebas y fuentes no son todavía homogéneas.
+3. Algunos parámetros se estiman con los mismos datos que validan el modelo.
+4. Las comparaciones contra rivales no tienen cobertura equivalente en todo el corpus.
+5. La dependencia de una sonda por caso limita la inferencia ontológica.
+6. No existe replicación externa ciega al EDI.
 
-- **Posición filosófica que justifica este corpus:** capítulo 02 (fundamentos);
-- **Aparato formal del que κ es operacionalizado vía EDI:** capítulo 03;
-- **Discriminación pública contra rivales (incluido Wolfram):** capítulo 04-01;
-- **Caso ancla canónico (caso 30, behavioral dynamics):** capítulo 05-05 + `30_caso_behavioral_dynamics/`;
-- **Conclusión demostrativa con condiciones de fracaso:** capítulo 06-01.
+## 8. Relación con el manuscrito
 
-## Trazabilidad
+- fundamento filosófico: capítulos 02;
+- definición de κ y EDI: capítulo 03-04;
+- mapa reconciliado del corpus: capítulo 05-07;
+- corpus inter-escala: capítulo 05-06;
+- conclusión y condiciones de elevación: capítulo 06-01.
 
-La trazabilidad histórica del crecimiento del corpus, las decisiones metodológicas y el desarrollo del caso behavioral dynamics está documentada en el archivo interno del proyecto. La fuente de verdad del manuscrito son los `outputs/metrics.json` versionados en cada caso.
+## 9. Cierre
 
-## Cierre
-
-Este corpus es la prueba empírica del irrealismo operativo. No es ilustración de la tesis: es su demostración bajo intervención controlada con datos públicos, semillas fijas, controles de falsación rechazados, y discriminación entre fenómenos con y sin cierre operativo. Lo que el aparato formal del capítulo 03 promete operativamente, este corpus lo entrega cuantitativamente sobre 30 dominios heterogéneos.
+El corpus es evidencia del funcionamiento y de los límites del método. Su aporte más sólido consiste en hacer públicas las condiciones bajo las cuales una afirmación de cierre se admite, se degrada o se rechaza. La generalización ontológica queda abierta hasta completar el régimen estricto y obtener convergencia y replicación independientes.

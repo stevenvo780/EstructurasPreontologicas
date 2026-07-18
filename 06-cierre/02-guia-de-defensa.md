@@ -1,130 +1,102 @@
 # Guía de defensa oral
 
-## Tesis del capítulo
+> **[BORRADOR-IA · requires: H-J2/H-J8]** Guion actualizado al estado estricto del corpus. Requiere apropiación y firma autoral.
 
-> La defensa oral de la tesis se sostiene sobre cuatro instrumentos: una tesis canónica memorizable (§1), tres versiones cortas calibradas por duración (§2), un banco de respuestas a las objeciones más probables del tribunal (§3) y un conjunto de trampas a anticipar (§4). El material desarrollado y los formatos largos viven en `_extendido/` para consulta detallada. La defensa no esconde la asimetría entre caso ancla y dominios programáticos: la nombra como fortaleza programática, no como debilidad oculta.
+## 1. Tesis canónica, 30 segundos
 
-## 1. Tesis canónica memorizable (30 segundos)
+> Defiendo un programa de irrealismo operativo para estudiar algunas categorías como estabilizaciones relacionales antes que como sustancias dadas. Su instrumento central, el EDI, mide cuánto aporta un acoplamiento a la predicción para un fenómeno, una sonda, un baseline y una pregunta declarados. El corpus actual demuestra que el método es ejecutable, trazable y capaz de corregirse; no demuestra todavía una ontología general multiescalar. Mi contribución es haber construido una interfaz pública entre afirmación filosófica y condición empírica de pérdida.
 
-> Defiendo un irrealismo operativo de estructuras pre-ontológicas como **ontología, epistemología y metodología generales aplicables a cualquier escala**: las entidades nombradas en ciencia y filosofía son atractores empíricamente identificables de sistemas dinámicos acoplados, admisibles solo bajo dossier de anclaje y validación EDI por intervención ablativa. Lo justifico operativamente en 40 casos del corpus agregado (30 inter-dominio + 10 inter-escala desde 10⁻¹⁰ m hasta 10²⁰ m) con discriminación pública contra quince rivales —incluidos Wolfram e IIT—, condiciones de fracaso falsables y deuda residual fechada. El aparato rechaza honestamente cuando debe rechazar: el caso 30 v1 (EDI=0.002) fue rechazado a pesar de la expectativa del equipo, y solo la sonda v2 produjo Nivel 3 weak. La tesis discrimina, no glorifica.
+## 2. Versión de dos minutos
 
-## 2. Versiones cortas por duración
+**Problema.** La filosofía y las ciencias reifican con frecuencia categorías heredadas. El proyecto pregunta cómo someter esas categorías a una auditoría que preserve su utilidad sin convertirlas prematuramente en sustancias.
 
-### 2.1. Versión de 2 minutos
+**Propuesta.** El irrealismo operativo combina un programa material-relacional, una epistemología de compresiones indexadas a preguntas y un método ablativo. Las estructuras pre-ontológicas son la hipótesis de que algunos objetos pueden describirse como patrones dinámicos estabilizados.
 
-Defiendo una tesis ontológico-epistemológico-metodológica triple general y multiescalar bajo dirección de Jacob Agudelo (Universidad de Antioquia) con colaboración técnica de Steven Vallejo Ortiz.
+**Aparato.** Cinco operadores, μ, G, H, κ y ε, articulan el protocolo. El EDI compara RMSE del modelo acoplado con el reducido. C1-C5, permutación, bootstrap, controles y pre-registro determinan si una afirmación local puede admitirse.
 
-**Problema:** muchas disciplinas reifican categorías heredadas a múltiples escalas (qubit, proteína, célula, mercado, organismo, estrella, cúmulo galáctico). La pregunta filosófica: ¿qué hay que hay y cómo lo conocemos sin reificarlo prematuramente a cualquier escala?
+**Resultados.** En el corpus inter-dominio no hay Strong robustos confirmados bajo el régimen estricto. Hay un Weak validado, Energía; un candidato, Starlink; cuatro falsificaciones locales; tres controles negativos rechazados; y veintiún casos sin cierre B-T2.1. Los diez casos inter-escala muestran portabilidad sobre datos sintéticos, no invariancia ontológica. El caso conductual es piloto y no supera block bootstrap.
 
-**Tesis:** todo fenómeno empíricamente explicable está anclado en sustrato material dinámico, pero las unidades son estructuras pre-ontológicas en sentido genético-epistemológico simondoniano —regularidades operativas anteriores al recorte categorial nominalizante—. Posición: irrealismo operativo = realismo estructural moderado + pluralismo epistemológico + anti-reificación operativa, como ontología, epistemología y metodología generales invariantes a la escala.
+**Conclusión.** El método y su trazabilidad están más cerrados que la metafísica. El programa ontológico permanece abierto y tiene condiciones explícitas de elevación y fracaso.
 
-**Aparato:** cinco operadores formales (μ, G, H, κ, ε) sobre pregunta Q fechada, asimetría L1↔B↔L3↔S como protocolo, dossier de anclaje de catorce componentes, métrica EDI = 1 − RMSE_coupled / RMSE_no_ode por intervención ablativa con permutación 999 y bootstrap 500, protocolo C1-C5 con 13 condiciones simultáneas para `overall_pass=True`, suite ST de 24 teorías formales.
+## 3. Respuestas breves a objeciones probables
 
-**Justificación operativa:** corpus inter-dominio con 6 strong con gate completo (Energía 0.65, Deforestación 0.60, Kessler 0.35, Riesgo Biológico 0.33, Urbanización 0.337, Microplásticos 0.806), 1 strong sin gate (Starlink 0.7575), 6 weak con disclosure, 1 suggestive, 3 controles de falsación correctamente rechazados; corpus inter-escala con 7 strong en 7 escalas distintas (atómica, cuántica, bioquímica, celular oscilatoria, individual, astrofísica, astrofísica masiva). Hostile testing: 0/2000 falsos positivos del gate completo bajo random walk masivo (Wilson 95 % CI [0, 0.00191]). Discriminación pública contra quince rivales, incluidos Wolfram (piloto Rule 110 ejecutado, EDI = 0.55) e IIT (Tononi-Boly-Massimini-Koch 2016).
+### P1. ¿Por qué "pre-ontológicas" si se hace una propuesta ontológica?
 
-**Lección epistémica:** los 40 casos son justificación operativa del marco tripartito; NO son la tesis. La tesis son los tres marcos generales; los casos muestran que sus afirmaciones son ejecutables, discriminantes y transferibles entre escalas.
+"Pre" no significa anterior temporalmente a la materia. Nombra el estado anterior al recorte categorial que convierte una estabilización en objeto. El sustrato material se asume; lo revisable es la unidad con que se lo describe.
 
-### 2.2. Versión de 5 minutos
+### P2. ¿En qué se diferencia del instrumentalismo?
 
-Disponible en `06-cierre/_extendido/versiones-cortas-defensa.md §2`.
+El método acepta que toda medición depende de un aparato, pero no concluye que todos los modelos sean equivalentes. Exige estabilidad, intervención, comparación y posibilidad de pérdida. La realidad moderada de las estructuras es una hipótesis adicional; no se deduce automáticamente del EDI.
 
-### 2.3. Versión de 15 minutos
+### P3. ¿No es la métrica circular?
 
-Disponible en `06-cierre/_extendido/versiones-cortas-defensa.md §3`.
+Puede serlo si generador, sonda y etiqueta comparten estructura. Por eso se retiró el AUC como validación externa y el caso 30 quedó como piloto. La elevación exige sondas distintas, etiquetas ciegas al EDI y parámetros medidos fuera del ajuste.
 
-## 3. Respuestas a las objeciones más probables del tribunal
+### P4. ¿Qué significa tener 0 Strong confirmados?
 
-Banco compactado de las 7 preguntas con mayor probabilidad de aparición. Cada una se responde de memoria en menos de 30 segundos. El banco completo (12 preguntas con referencias paginadas al capítulo verificador) está en `06-cierre/_extendido/respuestas-tipo-defensa.md`.
+Significa que la evidencia actual no sostiene una cartografía positiva fuerte bajo el régimen más exigente. No invalida la utilidad del método, pero obliga a reducir el alcance ontológico y completar B-T2.1 antes de agregar resultados.
 
-### P1. ¿Por qué "Estructuras Pre-Ontológicas" si la tesis afirma ontología material-relacional?
+### P5. ¿Por qué conservar el proyecto si Microplásticos y Kessler colapsaron?
 
-«Pre-ontológico» es término técnico en sentido genético-epistemológico simondoniano, no temporal: significa anterior al recorte categorial nominalizante, no anterior temporalmente al sustrato material. Cinco sentidos del prefijo «pre» se distinguen en el manuscrito; tres se rechazan explícitamente.
+Porque las reclasificaciones son información. Muestran que datos refrescados, detrend y block-permutation cambian conclusiones. Eso apoya la auditabilidad del procedimiento, no la verdad de la ontología.
 
-**Verificación:** cap 02-01 §0.2.1 (rechazos) y §0.2.2 (adopciones).
+### P6. ¿Qué prueban los casos inter-escala?
 
-### P2. ¿Cómo distinguen su irrealismo operativo del instrumentalismo de van Fraassen?
+Prueban portabilidad computacional: la interfaz puede formularse con sondas cuánticas, bioquímicas, celulares y astrofísicas. Como usan datos sintéticos, no prueban que una estructura ontológica única atraviese esas escalas.
 
-El instrumentalismo puro afirma que los modelos son herramientas sin compromiso estructural. El irrealismo operativo afirma que las estructuras pre-ontológicas son reales en sentido moderado (atractores materialmente sostenidos), pero su descripción cuantitativa depende del aparato. La distinción se operacionaliza vía κ-pragmática (lo demostrado) vs κ-ontológica fuerte (lo postulado, requiere convergencia inter-grupo).
+### P7. ¿El caso 30 valida behavioral dynamics?
 
-**Verificación:** cap 02-01 §Nota sobre κ + cap 04-01 §6.
+No. Produce EDI 0.2622 y `overall_pass=false`; la significancia iid no sobrevive el block bootstrap posterior, p≈0.978. Warren es un ancla experimental independiente, no validación del EDI.
 
-### P3. ¿No es esto behavioral dynamics renombrado, o colcha de retazos de Bechtel-Craver / Dennett / Ladyman-Ross / Hoel?
+### P8. ¿Qué pasa con el p-value mal calibrado?
 
-No. El corpus agregado de 40 casos cubre dominios y escalas muy lejos de behavioral dynamics: espín-órbita atómica (10⁻¹⁰ m), decoherencia cuántica, plegamiento de proteína, ciclo celular, cúmulos globulares (10²⁰ m). 30 órdenes de magnitud refutan la objeción de regionalidad encubierta. Y la novedad frente a marcos vecinos no es de inventario sino de articulación: dossier de 14 componentes + asimetría L1↔B↔L3↔S como filtro de admisión simultáneo + cartografía con falsación + hostile testing + suite ST. Cada marco vecino captura una pieza; ninguno las reúne.
+La tasa empírica de tipo I es aproximadamente 24 %, no 5 %. Por eso el manuscrito no usa el p-value naive como árbitro final. B-T2.1 exige block-permutation y la conclusión se limita a los casos donde ese régimen se ejecutó.
 
-**Verificación:** cap 04-01 (discriminación caso por caso) + cap 04-03 (tabla síntesis).
+### P9. ¿Los controles refutan la tautología?
 
-### P4. La cláusula "el nivel correcto depende de la pregunta" parece máquina de inmunización.
+No de manera general. Tres controles rechazados y 0/2000 falsos positivos bajo random walks debilitan la versión más simple de la objeción. Todavía faltan nulos diversos y rivales estructurados con igual presupuesto.
 
-La pregunta Q se fija fechada antes del intento de modelización, con tolerancia explícita y régimen de medición preestablecido. Cambiar Q después del fallo está prohibido por el protocolo. Las revisiones se documentan como nuevas Q. El aparato rechazó el caso 30 v1 (EDI=0.002) a pesar de la expectativa del equipo: si fuera máquina de inmunización, ese rechazo no habría ocurrido.
+### P10. ¿Qué tendría que pasar para elevar la ontología?
 
-**Verificación:** cap 03-01 §2 + cap 06-01 §3.5.
+Cierre homogéneo del corpus, pre-registro genuino, parámetros independientes, convergencia entre sondas, comparación contra rivales, datos reales inter-escala y replicación externa.
 
-### P5. Su p-value declarado tiene tasa empírica de tipo I de 24%, no 5%. ¿Cómo se sostiene la inferencia?
+### P11. ¿Qué haría fracasar o reducir la tesis?
 
-La inferencia del manuscrito NO descansa en el p-value declarado sino en los umbrales EDI, que sí son robustos bajo hostile testing. Bajo random walk masivo (2000 ejecuciones agregadas N1+V4_06+N5; Wilson 95 % CI sobre 0/2000 = [0, 0.00191]), 0 % supera el umbral strong (EDI ≥ 0.30) y solo 0.6 % supera weak (EDI ≥ 0.10). Los 4 casos `overall_pass=True` se sostienen porque están por encima de umbrales que el ruido puro no alcanza. La calibración correcta del p-value es refinamiento metodológico fechado en deuda residual.
+Que los candidatos no repliquen, que los rivales superen sistemáticamente al acoplado, que controles amplios pasen el gate, que la traducción L3-B sea circular o que sondas independientes no converjan. Cada fallo reduce el alcance correspondiente.
 
-**Verificación:** cap 06-01 §8.2 (L1) + glosario operativo entrada EDI.
+### P12. ¿Cuál es entonces la contribución original?
 
-### P6. Su corpus inter-escala está sobre datos sintéticos. ¿Por qué llamarla ontología general multiescalar?
+Una interfaz entre filosofía y evaluación: obliga a declarar fenómeno, sonda, modelo, baseline, pregunta, criterio de admisión y condición de pérdida. Esa contribución sobrevive incluso si la ontología fuerte es rechazada.
 
-Lo declaramos abiertamente: los datos son sintéticos derivados de parámetros publicados (Lindblad, Bloch, Tyson-Novak, Hoffmann, Mackey-Glass, Leavitt, Plummer). Lo que el corpus demuestra hoy es que el aparato y las sondas son estructuralmente transferibles entre escalas sin reentrenar arquitectura, verificado por test cruzado V4-01 (0/12 circularidad). La elevación a datos reales abiertos (IBM Quantum, BRENDA, PhysioNet, OGLE, Gaia DR3) está fechada como deuda priorizada de 6–12 meses post-defensa. La afirmación es operativamente articulada con demostración parcial, no κ-ontológica fuerte.
+## 4. Cifras que deben memorizarse
 
-**Verificación:** cap 06-01 §8.2 + L7 de las limitaciones declaradas.
+| Dato | Valor defendible |
+|---|---|
+| Strong estricto inter-dominio | 0 |
+| Weak validado | 1, Energía |
+| Candidato | 1, Starlink |
+| Falsificaciones locales | 4, casos 19, 20, 23 y 24 |
+| Controles rechazados | 3, casos 06, 07 y 08 |
+| Sin cierre estricto | 21 de 30 |
+| Random walks que pasan gate | 0 de 2000 |
+| Tipo I del p-value naive | aproximadamente 24 % |
+| Caso 30 | EDI 0.2622, overall false, p_block≈0.978 |
+| Inter-escala | 10 casos sintéticos; portabilidad, no validación ontológica |
 
-### P7. ¿Qué tendría que pasar para que su tesis fracase?
+## 5. Trampas a evitar
 
-**Cuatro condiciones canónicas: tres escenarios falsables con criterio externo + una condición de prioridad histórica.** Cap 06-01 §2 cita Popper §6 para no readmitir «absorción por rival» como escenario empírico independiente — la prioridad histórica del marco frente a una eventual absorción retroactiva opera como condición separada, no como quinto escenario:
+- No llamar Strong a una categoría cruda o histórica.
+- No presentar 40 casos como 40 corroboraciones.
+- No usar AUC 0.886 como comparación contra ARIMA.
+- No decir que los nulls o falsificaciones confirman el marco.
+- No usar el ajuste de Warren para validar el caso 30.
+- No confundir coherencia ST con verdad empírica.
+- No prometer revisión externa o aval institucional que todavía no existen.
 
-1. **Los 4 casos `overall_pass` se desmoronan** empíricamente bajo perfiles agresivos o ante baselines estadísticos puros (ARIMA, VAR, RW, GP) que igualen o superen la métrica EDI.
-2. **Los 3 controles de falsación** (random walk masivo + dos sintéticos de control) **dejan de rechazarse** bajo re-ejecución independiente.
-3. **Ningún caso programático se eleva a Nivel 3 weak** tras dossier completo y datos reales, en plazo de 24 meses post-defensa.
-4. **(Condición de prioridad histórica)** **La asimetría L1↔B↔L3↔S no se sostiene** en algún dominio relevante: parámetros de L3 sin traducción a variable medible de B, o B sin reconstrucción consistente en L3 — condición que opera como criterio de prioridad histórica del marco frente a reformulaciones rivales posteriores.
+## 6. Fórmula de cierre oral
 
-Cada escenario es falsable, fechado, con criterios públicos. La lista exhaustiva de limitaciones declaradas (L1-L20) vive en cap 04-05.
+> La tesis no concluye que una métrica haya probado una ontología. Concluye que una afirmación de cierre puede hacerse pública, compararse, degradarse y perder. Hoy el método soporta mejor esa exigencia que la generalización metafísica. Ese desnivel no se oculta: define el programa de investigación que sigue.
 
-**Verificación:** cap 06-01 §2 + cap 04-05 (consolidación de limitaciones).
+## 7. Estado de uso
 
-### P7-bis. Si el tribunal pregunta por la validez del corpus tras los pre-registros, ¿qué respondemos?
-
-La respuesta honesta es: el aparato bajo pre-registro genuino (B-T2.1, firmado antes del fetch de datos) declara explícitamente cuando los datos no soportan el modelo. Tres casos B-T2.1 ejecutados ilustran el comportamiento: el caso 24 (Microplásticos) colapsa de Strong a Falsificación local; el caso 04 (Energía) valida como Weak; el caso 20 (Kessler) confirma Null. El corpus deja de ser cartografía positiva acumulada y se reposiciona como ejemplo paradigmático de auto-corrección protocolar: los 30 sintéticos calibran el aparato, los casos con datos públicos son evidencia ontológica positiva acotada con sesgo de cobertura declarado, y los pre-registros genuinos actúan como contra-falsadores del propio núcleo empírico previo. La defensa procede por proceso (progresividad lakatosiana: cinturón protector revisable, predicciones novedosas, contra-falsadores internos), no por cifras acumuladas. El núcleo duro —irrealismo operativo, asimetría L1↔B↔L3↔S, dossier de 14 componentes, protocolo C1-C5, EDI por intervención ablativa— permanece intacto.
-
-**Verificación:** cap 06-01 §1 y §5 + cap 05-00 §3.bis.
-
-### Banco extendido
-
-P8 (Wolfram), P9 (¿qué aporta frente a un materialismo conocido?), P10 (¿no estás reformulando emergentismo débil?), P11 (datos humanos reales en behavioral dynamics), P12 (revisión por pares externos pendiente) están en `06-cierre/_extendido/respuestas-tipo-defensa.md` con sus referencias paginadas.
-
-## 4. Trampas a anticipar
-
-### Trampa 1. El interlocutor reduce la tesis a su caso ancla o a marcos vecinos
-
-Las dos formulaciones más frecuentes («esto es behavioral dynamics renombrado», «esto ya está en Bechtel-Craver / Dennett / Ladyman-Ross / Hoel») se responden con P3.
-
-**Aclaración crítica al invocar el corpus inter-escala.** La defensa empírica de la generalidad **descansa en los casos macro del corpus inter-dominio con datos públicos reales que pasaron umbrales strong** (16 deforestación con Hansen / MapBiomas, 04 energía, 20 Kessler, 27 riesgo biológico, además de los casos weak en epidemiología, urbanización, dinámica institucional). El **corpus inter-escala** (casos 31-40, sondas Lindblad/Plummer/Tyson-Novak…) opera con **datos sintéticos** generados por las propias ODE generadoras: su función es **conjetura de aplicabilidad y prueba mínima de no-degeneración numérica** del aparato fuera de su dominio macro original, no demostración de generalidad ontológica. La frase «30 órdenes de magnitud cubiertos» se reporta como **conjetura demostrada formalmente consistente con el aparato**, no como evidencia empírica adicional. La objeción "behavioral dynamics renombrado" se refuta por los casos macro reales listados; no por los 30 órdenes de magnitud sintéticos. Confundir ambos niveles sería precisamente la trampa que la tesis denuncia en cap 03 cuando exige distinguir entre ajustar paramétricamente la fenomenología y tener una sonda mecanísticamente correcta.
-
-### Trampa 2. El interlocutor ataca la generalidad
-
-«Esto es teoría regional con pretensiones generales.» La generalidad se justifica operativamente: corpus inter-escala con 10 casos en 8 escalas distintas, 30 órdenes de magnitud cubiertos, test cruzado de sondas con 0/12 circularidad. La pretensión es ontológica general multiescalar operativamente articulada con demostración parcial, no demostración cerrada —pero tampoco regional encubierta—.
-
-### Trampa 3. El interlocutor pide eliminar mente, memoria o categorías sociales
-
-La tesis NO es eliminativa. Reformula: las categorías se admiten como compresiones legítimas si pasan auditoría (dossier completo + protocolo C1-C5 + EDI + discriminación contra rival). Mente, memoria, instituciones se discuten en cap 05-01 y 05-04 con conjeturas articuladas y criterios de elevación. La eliminación es opción rechazada explícitamente, no propuesta.
-
-### Trampa 4. El interlocutor cuestiona el conteo de escenarios falsables
-
-Si el evaluador señala incoherencia entre 3, 4, 5 o 6 escenarios falsables a lo largo del manuscrito, la respuesta canónica es: **4 condiciones (3 escenarios falsables con criterio externo + 1 condición de prioridad histórica)** (los enumerados en §3 P7), consolidados tras cierre 2026-05 alineando con cap 06-01 §2 que cita Popper §6 contra readmitir «absorción por rival» como escenario empírico independiente. Las limitaciones (L1-L20 en cap 04-05) son una lista más fina y específica; los «escenarios de fracaso global» son un subconjunto declarado en cap 06-01. La diferencia con 5 corresponde a versiones tempranas que contaban «absorción por rival» como quinto escenario antes del cierre Popperiano de 2026-05; la diferencia con 6 corresponde a categorías de cap 04-02 que ahora viven subsumidas en L1-L20.
-
-## 5. Fórmula final para cerrar oralmente
-
-> Mi tesis sostiene que la realidad es material y dinámica, pero las unidades con que la pensamos son **estructuras pre-ontológicas** —atractores empíricamente identificables bajo dossier de anclaje y validación EDI por intervención ablativa—. Lo justifico en 40 casos del corpus agregado con discriminación pública contra quince rivales —incluido Wolfram e IIT—, condiciones de fracaso falsables y reconocimiento honesto de veinte limitaciones declaradas. La filosofía propuesta no clausura la complejidad de lo real; ofrece reglas para no empeorarla con malas categorías. Y demuestra esas reglas al rechazar honestamente cuando debe rechazar.
-
-Esa es la frase que debería poder sobrevivir incluso si el resto del día filosófico se incendia un poco.
-
-## 6. Lectura cruzada
-
-- `06-cierre/_extendido/versiones-cortas-defensa.md` — versiones 5 min y 15 min completas.
-- `06-cierre/_extendido/respuestas-tipo-defensa.md` — banco completo de 12 P&R con referencias paginadas.
-- `06-cierre/01-conclusion-demostrativa.md` — siete condiciones de demostración y deuda residual.
-- `04-debates/01-debates-con-posiciones-rivales.md` y `04-debates/03-tabla-comparativa-rivales.md` — discriminación detallada por rival.
-- `04-debates/05-limitaciones-declaradas-consolidacion.md` — lista exhaustiva L1-L20.
+Esta guía sustituye los conteos históricos de defensa. Las versiones extensas en `_extendido/` conservan material anterior y no deben usarse sin reconciliación. La conclusión autoritativa es `06-cierre/01-conclusion-demostrativa.md`.

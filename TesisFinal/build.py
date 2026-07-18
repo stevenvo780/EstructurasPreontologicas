@@ -20,7 +20,7 @@ PARTS = [
     ('Front matter', 'frontmatter', [
         ('Front matter', None, '''# Estructuras Pre-Ontológicas
 
-## Realismo Irrealista Operativo y Compresión Multiescala con Validación EDI Multidominio
+## Irrealismo Operativo y Compresión Multiescala con Evaluación EDI Multidominio
 
 **Tesis doctoral en Filosofía de la Ciencia y Ciencias de la Complejidad**
 
@@ -36,15 +36,15 @@ PARTS = [
 
 **Director de tesis:** [pendiente de declaración formal — bloqueador procedimental conocido; documentación administrativa fuera del manuscrito en `00-proyecto/04-formalizacion-institucional.md`].
 
-**Co-autoría con inteligencia artificial declarada:** Anthropic Claude (Opus 4.7), como instrumento de implementación bajo dirección humana. La IA no aparece como autora en el sentido legal ni epistémico: aparece como herramienta, igual que cualquier software estadístico avanzado. La declaración detallada del rol y los límites de la IA está en el capítulo de ética de investigación y gobernanza de datos (Parte II, cap. 5).
+**Asistencia con inteligencia artificial declarada:** sistemas de IA generativa, incluidos Anthropic Claude y OpenAI Codex, como instrumentos de implementación bajo dirección humana. La IA no aparece como autora en sentido legal ni epistémico. La declaración detallada del rol y los límites de la IA está en el capítulo de ética de investigación y gobernanza de datos.
 
 ### Marco institucional
 
 **Programa de inscripción:** Doctorado en Filosofía. Línea: filosofía de la ciencia y ciencias de la complejidad.
 
-**Estado del manuscrito:** integral defendible. La formalización institucional completa se conserva como documentación administrativa del repositorio, fuera del cuerpo argumental.
+**Estado del manuscrito:** revisión predefensa. Defendible como propuesta filosófica formalizada con contribución metodológica reproducible y evidencia parcial; no cerrado como demostración de una ontología general multiescalar.
 
-**Versión consolidada:** 2026-04-28.
+**Versión consolidada:** 2026-07-17.
 
 ### Sobre la disponibilidad y la fuente de verdad del documento
 
@@ -105,8 +105,8 @@ A la Universidad de Antioquia, por sostener una tradición de filosofía de la c
         ('Capítulo 29: Limitaciones declaradas consolidadas', '04-debates/05-limitaciones-declaradas-consolidacion.md', None),
     ]),
     # ── PARTE V: CIERRE ─────────────────────────────────────────────
-    ('Parte V — Cierre demostrativo', 'parte-5-cierre', [
-        ('Capítulo 30: Conclusión demostrativa', '06-cierre/01-conclusion-demostrativa.md', None),
+    ('Parte V — Cierre y estado de la demostración', 'parte-5-cierre', [
+        ('Capítulo 30: Conclusión y estado de la demostración', '06-cierre/01-conclusion-demostrativa.md', None),
         ('Capítulo 31: Hoja de ruta post-defensa', '06-cierre/03-hoja-de-ruta-para-tesis-final.md', None),
     ]),
     # ── BIBLIOGRAFÍA ────────────────────────────────────────────────

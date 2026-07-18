@@ -127,15 +127,15 @@ graph LR
 **Figura A.10.6.**
 
 ```mermaid
-pie title Distribución del corpus EDI 30 casos
-    "Strong gate (4)" : 4
-    "Strong sin gate (1)" : 1
-    "Weak (8)" : 8
-    "Suggestive (2)" : 2
-    "Trend (4)" : 4
-    "Null (8)" : 8
-    "Falsación rechazada (3)" : 3
+pie title Estado estricto B-T2.1 del corpus inter-dominio
+    "Weak validado (1)" : 1
+    "Candidato (1)" : 1
+    "Falsificaciones locales (4)" : 4
+    "Controles rechazados (3)" : 3
+    "Sin cierre estricto (21)" : 21
 ```
+
+**Strong robusto puro confirmado: 0.** La figura representa estado de cierre, no la taxonomía cruda de `metrics.json`.
 
 ---
 

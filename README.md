@@ -1,168 +1,156 @@
 # Estructuras Pre-Ontológicas
-## Realismo Irrealista Operativo y Compresión Multiescala con Validación EDI Multidominio
 
-**Tesis doctoral en filosofía de la ciencia y ciencias de la complejidad**
+## Irrealismo operativo y compresión multiescala con evaluación EDI
 
-**Autor principal (concepto y dirección):** Jacob Agudelo, Universidad de Antioquia.
-**Colaborador (técnica e ingeniería computacional):** Steven Vallejo Ortiz.
-**Co-autoría IA:** declarada como instrumento de implementación bajo dirección humana.
-**Versión:** 2026-04-27.
+**Manuscrito doctoral en filosofía de la ciencia y ciencias de la complejidad**
 
----
+**Autor principal, concepto y dirección filosófica:** Jacob Agudelo, Universidad de Antioquia
 
-## Idea-fuerza
+**Colaboración técnica e ingeniería computacional:** Steven Vallejo Ortiz
 
-> Todo fenómeno empíricamente explicable, **a cualquier escala física, biológica o cosmológica**, está anclado en un sustrato material dinámico. Las entidades, niveles y categorías con que lo pensamos son **estructuras pre-ontológicas**: regularidades operativas anteriores a la objetualidad, identificables como atractores empíricamente robustos de sistemas dinámicos acoplados, admisibles solo bajo dossier de anclaje completo, protocolo C1-C5 satisfecho y EDI medido por intervención ablativa.
+**Asistencia de IA:** declarada como instrumento de implementación bajo dirección humana
+**Estado:** revisión predefensa, 2026-07-17
 
-**La tesis ofrece tres marcos generales simultáneos:**
+> **[BORRADOR-IA · requires: H-J2/H-J8]** La formulación filosófica de este resumen requiere firma autoral.
 
-1. **Ontología general:** una sola estructura ontológica (sustrato material dinámico + acoplamiento + atractor empírico + cierre operativo κ) que se instancia a cualquier escala.
-2. **Epistemología general:** una sola teoría del conocimiento como compresión disciplinada bajo intervención ablativa, operativa al mismo modo desde lo cuántico hasta lo cosmológico.
-3. **Metodología general:** un solo aparato (motor ABM+ODE acoplado + protocolo C1-C5 + EDI + dossier de 14 componentes + suite ST) que ejecuta esa epistemología sobre esa ontología sin reentrenar arquitectura entre dominios o escalas.
+## Tesis en una frase
 
-**Los 40 casos del corpus son justificación operativa de los tres marcos, NO son la tesis.** La tesis son los marcos generales; el corpus muestra que las afirmaciones generales de los marcos son ejecutables, discriminantes y transferibles. Sin los casos los marcos serían conjetura plausible; con los casos son propuesta operativamente articulada con respaldo empírico parcial. Pero **la generalidad de los marcos no depende del tamaño del corpus**.
+Algunas categorías pueden estudiarse como estabilizaciones relacionales antes que como sustancias dadas. El EDI evalúa, para un fenómeno, una sonda, un modelo, un baseline y una pregunta declarados, cuánto aporta el acoplamiento a la predicción. Los resultados actuales establecen la ejecutabilidad y auditabilidad del programa, pero no demuestran todavía una ontología general multiescalar.
 
-## Posición filosófica: Irrealismo Operativo
+## Qué propone el proyecto
 
-**Realismo estructural moderado + pluralismo epistemológico + anti-reificación operativa.** Nunca afirmamos `X es Y`; afirmamos `bajo el instrumento I, X exhibe cierre operativo de grado G respecto a la pregunta Q`. La dependencia instrumento-fenómeno no es defecto: es condición epistémica honesta. Esta posición se afirma **como ontología general**, no como ontología regional para una escala específica.
+El manuscrito distingue tres estratos que no deben confundirse:
 
-## Régimen de validez declarado
+1. **Programa ontológico:** el irrealismo operativo interpreta ciertos objetos como estabilizaciones de relaciones materiales dinámicas.
+2. **Tesis epistemológica:** toda atribución de cierre está indexada al recorte fenómeno-sonda-modelo-pregunta.
+3. **Resultado metodológico:** el protocolo C1-C5, el EDI, los controles y los pre-registros vuelven ejecutable y refutable esa atribución.
 
-La tesis se sostiene como **propuesta ontológica multiescalar** validada operativamente sobre **40 casos** del corpus EDI agregado:
+El resultado metodológico es reproducible. La tesis epistemológica recibe apoyo local. La generalidad ontológica permanece como hipótesis filosófica abierta.
 
-### Cobertura empírica
+## Estado empírico vigente
 
-- **Corpus inter-dominio (30 casos):** discriminación entre dominios heterogéneos —física, biología, economía, política, tecnología, cultura, conducta humana— con EDI por intervención ablativa, permutación 999, bootstrap 500, protocolo C1-C5, AUC-ROC = 0.886 vs ARIMA = 0.600. **5 strong** (4 con gate completo): Energía (0.650), Deforestación (0.602), Microplásticos (0.782), Kessler (0.353), Riesgo Biológico (0.333). **3 controles de falsación** correctamente rechazados.
-- **Corpus inter-escala (10 casos):** discriminación a través de **30 órdenes de magnitud espaciales** (10⁻¹⁰ m a 10²⁰ m) y **30 órdenes temporales** (10⁻¹⁵ s a 10¹⁴ s), desde dinámica subatómica hasta dinámica de cúmulos globulares. **7 strong en 7 escalas distintas** (atómica, cuántica, bioquímica, celular oscilatoria, individual, astrofísica, astrofísica masiva) + 1 weak + 2 nulls honestos. Sondas físicamente motivadas (Lindblad, Bloch, Tyson-Novak, Hoffmann, Mackey-Glass, Leavitt, Plummer); test cruzado V4-01 confirma especificidad (0/12 circularidad sobre datos no-suyos).
+El corpus central contiene 40 casos: 30 inter-dominio y 10 inter-escala. La cobertura muestra dónde se ejecutó el aparato; no equivale al número de corroboraciones ontológicas.
 
-### Aparato verificado bajo hostile testing severo
+### Corpus inter-dominio
 
-- **0/2000 falsos positivos** del gate completo bajo random walk masivo (N1+V4_06+N5; Wilson 95 % CI [0, 0.00191]).
-- **Suite ST de 13 teorías** formales con 2 hallazgos críticos detectados y corregidos.
-- **Tests unitarios** del motor `edi_engine.py` pasados (V4-09).
-- **Discriminación pública** contra catorce posiciones rivales (incluido Wolfram Physics Project, con piloto Rule 110 ejecutado mostrando convivencia de irreducibilidad micro y cierre macro detectable).
+| Estatus estricto B-T2.1 | N | Alcance |
+|---|---:|---|
+| Strong robusto puro confirmado | 0 | Ninguno |
+| Weak validado | 1 | Energía, caso 04: EDI 0.1571, p_block 0.006 |
+| Candidato pendiente | 1 | Starlink, caso 26: EDI 0.7575, p_block 0.079, `overall_pass=false` |
+| Falsificación local del aparato | 4 | Casos 19, 20, 23 y 24 |
+| Controles negativos rechazados | 3 | Casos 06, 07 y 08 |
+| Sin estatus estricto cerrado | 21 | Requieren B-T2.1 caso por caso |
 
-### Limitaciones honestas reconocidas
+Las categorías históricas y el campo crudo `overall_pass` no se agregan como evidencia final porque el mismo régimen estadístico no se aplicó a los 30 casos.
 
-- p-value declarado mal calibrado (tasa empírica de tipo I = 24%, no 5%); **los umbrales EDI sí son robustos**;
-- caso 30 (behavioral dynamics) sufre circularidad detectada por sonda alternativa; se mantiene como caso piloto metodológico hasta elevación con datos humanos reales;
-- composición de los corpus es post-hoc, no pre-registrada;
-- datos del corpus inter-escala son **sintéticos derivados de parámetros publicados**; la elevación a datos reales abiertos (IBM Quantum, BRENDA, PhysioNet, OGLE, Gaia DR3) es deuda priorizada de 6-12 meses post-defensa;
-- todas las auditorías son endógenas; revisión por pares humanos hostiles es deuda externa bloqueante para sustentación.
+### Corpus inter-escala
+
+Los 10 casos trasladan la arquitectura de cómputo a escalas nominales desde 10⁻¹⁰ m hasta 10²⁰ m. Siete obtienen `overall_pass=true` bajo el régimen crudo, uno queda Weak y dos son null o failure mode. Como parte de los datos son sintéticos o parametrizados desde la literatura, este bloque prueba portabilidad computacional, no invariancia ontológica ni validación empírica a través de treinta órdenes de magnitud.
+
+### Caso conductual
+
+El caso 30 es piloto, no demostración. En la fase real obtiene EDI 0.2622 y `overall_pass=false`; el control posterior con block bootstrap estima p ≈ 0.978 y detecta circularidad parcial de la sonda.
+
+## Qué sí queda establecido
+
+- vocabulario material-relacional articulado mediante μ, G, H, κ y ε;
+- protocolo C1-C5 y EDI por intervención ablativa;
+- dossiers versionados, métricas legibles por máquina y comandos regeneradores;
+- 0/2000 falsos positivos del gate bajo random walks, con Wilson 95 % [0, 0.00191];
+- 3/3 controles negativos rechazados;
+- capacidad documentada de degradar o rechazar clasificaciones previas;
+- suite ST de control de coherencia formal.
+
+Estos resultados prueban trazabilidad y selectividad frente a la familia de nulos ensayada. No sustituyen comparación contra rivales estructurados ni replicación independiente.
+
+## Qué no se afirma
+
+- que κ-pragmática implique κ-ontológica;
+- que los cuatro invariantes existan en todos los casos;
+- que una sola estructura ontológica se conserve en todas las escalas;
+- que el EDI supere globalmente a ARIMA, VAR, GP o Neural ODE;
+- que el AUC-ROC histórico de 0.886 mida validez externa;
+- que el p-value nominal esté calibrado a 5 %;
+- que exista validación externa por especialistas o pares humanos.
+
+El AUC histórico usa el EDI como score y una etiqueta derivada del mismo umbral de EDI. Se conserva como diagnóstico de consistencia interna, no como evidencia discriminativa.
 
 ## Estructura del repositorio
 
-```
+```text
 .
-├── README.md                         ← este archivo
-├── TesisFinal/                       ← manuscrito doctoral ensamblado (Tesis.md + Tesis.pdf)
-├── 00-proyecto/                      ← arquitectura, preguntas, plan de capítulos
-├── 01-diagnostico/                   ← falencias, objeciones, sesiones (subcarpeta)
-├── 02-fundamentos/                   ← ontología, epistemología, categorías, nivel B
-├── 03-formalizacion/                 ← aparato, criterios, auditoría, κ empírico (EDI)
-├── 04-debates/                       ← rivales (incluido Wolfram), limitaciones
-├── 05-aplicaciones/                  ← criterios, programáticas, caso ancla behavioral
-├── 06-cierre/                        ← conclusión demostrativa, defensa, hoja de ruta
-├── 07-bibliografia/                  ← corpus PDF y mapa de interlocutores
-├── 08-consistencia-st/               ← capa ST de validación lógica
-├── 09-simulaciones-edi/              ← código y outputs de los 30 casos del corpus EDI
-└── Bitacora/                         ← bitácoras, trazabilidad histórica y mega-tareas archivadas
+├── 00-proyecto/          arquitectura, preguntas, objetivos y resúmenes
+├── 01-diagnostico/       falencias, objeciones y sesiones
+├── 02-fundamentos/       ontología, epistemología, categorías y nivel B
+├── 03-formalizacion/     aparato, criterios, auditoría y κ empírico
+├── 04-debates/           posiciones rivales y limitaciones
+├── 05-aplicaciones/      casos filosóficos y mapa del corpus
+├── 06-cierre/            conclusión, defensa y hoja de ruta
+├── 07-bibliografia/      corpus bibliográfico
+├── 08-consistencia-st/   validación lógica interna
+├── 09-simulaciones-edi/  código, datos y outputs EDI
+├── Bitacora/             trazabilidad de revisiones
+└── TesisFinal/           manuscrito ensamblado
 ```
 
-## Orden recomendado de lectura
+## Lectura recomendada
 
-### Para evaluador externo
+1. `00-proyecto/02-preguntas-objetivos-hipotesis.md`
+2. `00-proyecto/05-resumen-y-abstract.md`
+3. `02-fundamentos/01-ontologia-material-relacional.md`
+4. `02-fundamentos/04-anclaje-conductual-ecologico.md`
+5. `03-formalizacion/01-aparato-formal.md`
+6. `03-formalizacion/02-criterios-de-legitimidad-y-metodo.md`
+7. `03-formalizacion/04-operacionalizacion-de-kappa.md`
+8. `05-aplicaciones/07-mapa-aplicaciones-corpus.md`
+9. `04-debates/01-debates-con-posiciones-rivales.md`
+10. `06-cierre/01-conclusion-demostrativa.md`
+11. `TAREAS_PENDIENTES.md`
 
-1. `00-proyecto/01-estructura-general.md` (mapa);
-2. `00-proyecto/02-preguntas-objetivos-hipotesis.md` (qué se pregunta y se responde);
-3. `02-fundamentos/01-ontologia-material-relacional.md` (qué existe);
-4. `02-fundamentos/04-anclaje-conductual-ecologico.md` (nivel B, asimetría L1↔B↔L3↔S);
-5. `03-formalizacion/01-aparato-formal.md` (operadores μ, G, H, κ, ε);
-6. `03-formalizacion/02-criterios-de-legitimidad-y-metodo.md` (dossier de anclaje);
-7. `03-formalizacion/04-operacionalizacion-de-kappa.md` (κ vía baja dimensionalidad);
-8. `09-simulaciones-edi/README.md` (corpus EDI: 30 casos);
-9. `04-debates/01-debates-con-posiciones-rivales.md` (discriminación contra rivales, incluido Wolfram);
-10. `05-aplicaciones/05-dinamica-conductual-reconstruccion-warren.md` (caso ancla);
-11. `06-cierre/01-conclusion-demostrativa.md` (la tesis demostrada y sus condiciones de fracaso);
-12. `06-cierre/02-guia-de-defensa.md` (la tesis defendible oralmente).
+## Reproducción
 
-### Para autor o continuador del proyecto
-
-Igual que arriba, más todos los capítulos restantes y `Bitacora/2026-04-27-integracion-jacob/00-bitacora.md` para entender cómo se consolidaron las dos iteraciones.
-
-## Hardware disponible para validación empírica
-
-- 2 GPUs NVIDIA: RTX 5070 Ti (16GB) + RTX 2060 (6GB)
-- CPU 32 hilos
-- 123 GB RAM, 191 GB swap
-- Disco RAID 0: 1.2 TB (579 GB libres)
-- Docker, PyTorch 2.10, CUDA 13.0, TensorRT, cuDNN
-- Stack Python: numpy, scipy, pandas, joblib, meteostat, yfinance, pytrends
-
-Las 29 simulaciones del corpus EDI están en `09-simulaciones-edi/` y se ejecutan con:
+Verificación general:
 
 ```bash
-cd 09-simulaciones-edi
-source .venv/bin/activate    # entorno aislado
-./tesis demo                  # ejecuta caso clima
-./tesis run --case clima      # CPU/GPU auto
-./tesis audit                 # auditoría de outputs
+python3 harness/cli.py verify --all
 ```
 
-## Aporte original sustantivo
+Reconstrucción del manuscrito:
 
-La novedad no es de inventario sino de **articulación ontológica multiescalar**:
+```bash
+python3 TesisFinal/build.py
+```
 
-1. **Monismo ontológico multiescalar** sin reduccionismo plano: el mismo sustrato material dinámico subyace desde la dinámica subatómica hasta la cosmológica.
-2. **Realismo estructural moderado** con anclaje empírico (estructuras pre-ontológicas como atractores con cinco condiciones, **independientemente de la escala**).
-3. **Pluralismo explicativo controlado** con asimetría L1↔B↔L3↔S como protocolo formal y sistema modal T declarado.
-4. **Formalización metodológica** con procedimiento empírico de κ vía EDI + C1-C5, distinción explícita κ-pragmática vs κ-ontológica.
-5. **Cartografía multidominio + multiescala** con 40 casos agregados (30 inter-dominio + 10 inter-escala), discriminación pública contra rivales identificables (incluido Wolfram con piloto ejecutado), validación lógica formal con suite ST de 13 teorías, hostile testing aplicado y verificado.
+Ejecución de un caso:
+
+```bash
+./tesis run --case <NN>
+```
+
+Cada caso declara su comando y conserva `outputs/metrics.json`. La cifra visible en el JSON debe distinguirse de su estatus inferencial bajo B-T2.1.
+
+## Condiciones de elevación
+
+Antes de defender la propuesta como ontología general deben cerrarse, como mínimo:
+
+- B-T2.1 sobre los 30 casos con un único régimen estadístico;
+- parámetros medidos fuera del ajuste;
+- convergencia entre sondas estructuralmente distintas;
+- comparación contra rivales con igual presupuesto de ajuste;
+- datos reales abiertos para el corpus inter-escala;
+- replicación independiente y evaluación externa ciega al EDI;
+- decisión y firma autoral de H-J2/H-J8;
+- requisitos institucionales de dirección, plantilla, originalidad y política de IA.
 
 ## Estado del manuscrito
 
-**Lo consolidado:**
+El manuscrito es defendible como propuesta filosófica formalizada con contribución metodológica reproducible y evidencia parcial. No está cerrado como demostración de una ontología general multiescalar. El registro autoritativo de bloqueos y cierres está en `TAREAS_PENDIENTES.md`.
 
-- ontología material-relacional con definición técnica de patrón;
-- epistemología de la compresión con verdad como preservación estructural;
-- nivel B y asimetría L1↔B↔L3↔S;
-- aparato formal de cinco operadores con procedimiento empírico de κ vía EDI;
-- diez criterios y dossier de catorce componentes;
-- protocolo C1-C5 con 13 condiciones para `overall_pass`;
-- discriminación pública contra catorce rivales (incluido Wolfram);
-- corpus EDI con 30 casos validados sobre datos públicos y sintéticos;
-- 4 casos `overall_pass=True`;
-- 3 controles de falsación correctamente rechazados;
-- conclusión demostrativa con cinco condiciones de fracaso falsables;
-- guía de defensa oral en tres tiempos.
+## Cómo citar, versión preliminar
 
-**Lo ejecutado en el cierre 2026-04-28:**
-
-- corpus inter-escala con 10 casos (atómica → astrofísica masiva): **7 strong**;
-- multi-sonda + baselines ARIMA/VAR/RW/GP ejecutados;
-- piloto EDI sobre Wolfram Rule 110 ejecutado (EDI 0.55, cierre macro detectable);
-- caso piloto COVID dimensión normativa ejecutado con resultado null honesto;
-- hostile testing N1-N5 + V4-01-V4-09 ejecutado;
-- suite ST extendida a 13 teorías con 2 hallazgos críticos corregidos;
-- apéndices técnicos mínimos de tablas/figuras y capítulos integrados de glosario, operadores, dossier, rivales, aplicaciones, limitaciones y validación ST;
-- distinción κ-pragmática/κ-ontológica formalizada;
-- pre-registro honesto reconociendo limitaciones post-hoc;
-- 18 citas textuales con paginación inyectadas en cap 02-01, 02-02, 02-03, 03-01, 03-02, 03-03.
-
-**Lo que queda como deuda externa post-defensa:**
-
-- elevación del caso 30 (behavioral dynamics) con datos humanos VENLab/WALK-MS (9-12 meses, requiere aval CEI);
-- elevación del corpus inter-escala con datos reales abiertos en 5 escalas (6-12 meses);
-- revisión por pares humanos hostiles (3-6 meses, deuda externa bloqueante);
-- calibración correcta del p-value (refinamiento metodológico);
-- conversión a plantilla institucional para depósito (3 semanas pre-depósito).
-
-Cronograma post-defensa para programa de validación completo: 24-36 meses (capítulo 06-03).
-
-## Cómo citar (versión preliminar)
-
-> Agudelo, J., y Vallejo Ortiz, S. (2026). *Estructuras Pre-Ontológicas: Realismo Irrealista Operativo y Compresión Multiescala con Validación EDI Multidominio*. Manuscrito doctoral en preparación, Universidad de Antioquia.
+> Agudelo, J., y Vallejo Ortiz, S. (2026). *Estructuras Pre-Ontológicas: Irrealismo operativo y compresión multiescala con evaluación EDI*. Manuscrito doctoral en preparación, Universidad de Antioquia.
 
 ## Licencia
 
-[Por especificar según política institucional]
+Pendiente de definición según política institucional.

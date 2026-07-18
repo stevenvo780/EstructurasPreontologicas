@@ -1,6 +1,6 @@
 # Corpus EDI multiescala — 10 casos en escalas distintas a la macro
 
-> Extensión del corpus EDI para demostrar que el aparato funciona **a través de escalas**, no solo en sistemas macro-poblacionales. Ejecutado en respuesta a la observación de la dirección durante la auditoría severa: la tesis ontológica del **irrealismo operativo de estructuras pre-ontológicas** debe ser **multiescalar** o restringirse honestamente a la escala donde se demuestra.
+> Extensión exploratoria del corpus EDI para probar portabilidad computacional fuera de sistemas macro-poblacionales. No demuestra generalidad ontológica porque usa datos sintéticos y carece de pre-registro estricto.
 
 **Fecha de ejecución:** 2026-04-28.
 **Política de ejecución:** sin pre-registro estricto (es exploración inicial), pero con sondas físicamente motivadas y datos sintéticos derivados de parámetros publicados.
@@ -25,7 +25,7 @@
 
 - **7 strong** (escalas: cuántica, atómica, bioquímica, celular oscilatoria, individual, astrofísica chica, astrofísica grande)
 - **1 weak** (celular: ciclo celular)
-- **2 null honestos** (Villin con sonda equilibrio inadecuada; Lee-locomoción con observación reset que la sonda const captura mejor)
+- **1 null** (Villin con sonda de equilibrio) y **1 failure mode** (Lee-locomoción con observación reset)
 - 0 falsificaciones espurias
 
 ## Escalas cubiertas
@@ -40,7 +40,7 @@
 
 ## Hallazgo central
 
-> El aparato EDI detecta cierre operativo significativo (Nivel 4 strong, `overall_pass=True`) en **al menos 7 de las 10 escalas distintas**, desde la dinámica subatómica hasta la dinámica de cúmulos globulares. Esto valida operativamente la afirmación de **generalidad ontológica multiescalar** del marco: las estructuras pre-ontológicas no son artefacto de la escala macro; existen como atractores empíricamente identificables a múltiples escalas.
+> El aparato EDI produce siete salidas Strong crudas en diez parametrizaciones de escalas distintas. El hallazgo prueba que la interfaz computacional puede ejecutarse con sondas heterogéneas. No prueba que las estructuras pre-ontológicas existan como invariantes independientes del aparato.
 
 **Honestidad metodológica:**
 
@@ -61,15 +61,11 @@ Los 2 null muestran que el aparato **no glorifica indiscriminadamente**:
 - **Caso 33 (Villin):** la sonda de equilibrio termodinámico predice idénticamente bajo coupled y no_ode (porque la temperatura promedio domina la dinámica de equilibrio). EDI = 0, p = 0.83 → null honesto. La elevación requeriría sonda dinámica fuera-de-equilibrio (transition path theory), no equilibrio.
 - **Caso 38 (Lee τ-dot):** la observación tiene reinicios discretos a metas distintas, lo que la predicción media (sin forcing) captura tan bien o mejor que la sonda τ-dot continua. EDI < 0, null. Esto **NO refuta el control τ-dot**; muestra que el aparato EDI con esta operacionalización no captura el control en presencia de re-inicios discretos.
 
-**Estos dos null son resultados informativos, no fallas del marco.**
+Estos dos resultados son informativos sobre las sondas ensayadas. No deben reinterpretarse automáticamente como protección del marco.
 
 ## Implicación filosófica
 
-La tesis del **irrealismo operativo de estructuras pre-ontológicas** se sostiene como **ontología general multiescalar** bajo el criterio:
-
-> *Si el aparato EDI detecta cierre operativo significativo en al menos 5 escalas distintas con sondas físicamente motivadas, y si los nulls son fallas honestas de las sondas (no del marco), entonces las estructuras pre-ontológicas son atractores reales identificables a través de escalas, no artefacto de la escala macro.*
-
-Bajo este criterio, **la tesis pasa**: 7 strong en 7 escalas distintas (cuántica, atómica, bioquímica, celular oscilatoria, individual, astrofísica chica, astrofísica grande).
+El umbral de "cinco escalas" es un criterio interno y no autoriza una inferencia ontológica si los datos fueron generados por modelos emparentados con las sondas. La generalidad multiescalar permanece como hipótesis H-J2. Para elevarla se necesitan datos reales, parámetros medidos fuera del ajuste, sondas independientes, rivales equivalentes y replicación externa.
 
 ## Limitaciones honestas
 

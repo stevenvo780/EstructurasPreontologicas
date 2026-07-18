@@ -2,9 +2,9 @@
 
 ## Función
 
-Apéndice tabular de **resultados crudos verificables** del corpus EDI multidominio. La fuente de verdad numérica son los `outputs/metrics.json` versionados en `09-simulaciones-edi/<caso>/`. Este apéndice consolida las cifras exactas en una sola tabla auditable por el comité doctoral.
+Apéndice tabular de **resultados crudos históricos** del corpus EDI multidominio. La fuente de verdad numérica vigente son los `outputs/metrics.json` versionados y el estatus inferencial reconciliado en los capítulos 05-07 y 06-01. Las tablas siguientes preservan perfiles anteriores para trazabilidad; no deben citarse como distribución confirmatoria actual.
 
-**Política:** todas las cifras son las publicadas en los `metrics.json` del repositorio. Si hay discrepancia entre este apéndice y el `metrics.json` correspondiente, **prevalece el `metrics.json`** y este apéndice se actualiza como erratum.
+**Política:** si hay discrepancia, prevalece el `metrics.json` para la ejecución técnica y el régimen B-T2.1 para la interpretación. Strong, nivel y `overall_pass` en este apéndice son etiquetas históricas o crudas.
 
 **Nota de reconciliación al 2026-04-29:** para el caso 16 (Deforestación), la cifra canónica reportada en Tabla A.8.1 (EDI=0.6020) corresponde al perfil canónico documentado y archivado en git history; el `metrics.json` actualmente persistido en `09-simulaciones-edi/16_caso_deforestacion/outputs/metrics.json` refleja la re-ejecución agresiva (EDI=0.5802 con CI más amplio), reportada en Tabla A.8.3 como verificación contrastiva. La diferencia <4% es variabilidad esperada bajo aumento del bootstrap; el Nivel 4 strong se preserva en ambas ejecuciones. Re-ejecución canónica con JSON sincronizado queda como tarea **B-E7** en `TAREAS_PENDIENTES.md`.
 
@@ -18,7 +18,7 @@ Para el caso 30 Behavioral Dynamics: la fila tabular conserva la cifra canónica
 
 ---
 
-## Tabla A.8.1. Resultados del corpus EDI (30 casos, perfil canónico)
+## Tabla A.8.1. Resultados históricos del corpus EDI (30 casos, perfil canónico pre-B-T2.1)
 
 Perfil canónico: `n_perm = 999`, `n_boot = 500`, `seed = 42`, `validator_version = canonical-2026-04`.
 

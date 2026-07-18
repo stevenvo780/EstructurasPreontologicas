@@ -84,8 +84,8 @@ export default function Cases() {
           Casos del corpus
         </h1>
         <p className="mt-2 text-ink-600 dark:text-ink-400 max-w-3xl">
-          Cartografía empírica del paisaje de emergencia. Cada caso instancia los cuatro invariantes
-          ontológicos: sustrato material, acoplamiento dinámico, atractor empírico, cierre operativo κ.
+          Explorador técnico de metrics.json. Las categorías y overall_pass son salidas crudas del motor;
+          no equivalen al estatus inferencial estricto B-T2.1 ni a corroboración ontológica.
         </p>
       </header>
 
@@ -134,7 +134,7 @@ export default function Cases() {
               onChange={(e) => setOnlyPass(e.target.checked)}
               className="w-4 h-4 rounded accent-accent-500"
             />
-            Solo overall_pass
+            Solo overall_pass técnico
           </label>
         </div>
 
@@ -145,7 +145,7 @@ export default function Cases() {
             Todos · {counts.total}
           </FilterPill>
           <FilterPill active={filter === 'strong'} onClick={() => setFilter('strong')} accent="success">
-            Strong · {counts.strong}
+            Strong crudo · {counts.strong}
           </FilterPill>
           <FilterPill active={filter === 'weak'} onClick={() => setFilter('weak')} accent="accent">
             Weak · {counts.weak}

@@ -116,10 +116,6 @@ export default function Dashboard() {
       scope: c.scope,
     }));
 
-  const passRatio = stats.total_cases
-    ? Math.round((stats.overall_pass / stats.total_cases) * 100)
-    : 0;
-
   return (
     <div className="pb-12">
       <section className="border-b border-ink-200 dark:border-ink-800 bg-white dark:bg-ink-950">
@@ -185,17 +181,17 @@ export default function Dashboard() {
               <div className="grid grid-cols-2 gap-3">
                 <HeroMetric label="Métricas visibles" value={stats.total_cases} />
                 <HeroMetric label="Core declarado" value={corpusScope?.declared_core_cases ?? 40} />
-                <HeroMetric label="overall_pass" value={stats.overall_pass} tone="success" />
-                <HeroMetric label="Pass ratio" value={`${passRatio}%`} />
+                <HeroMetric label="Strong estricto" value={0} />
+                <HeroMetric label="Estatus cerrado" value="9/30" tone="success" />
               </div>
 
               <div className="mt-4 flex items-center gap-2">
                 <span className="inline-flex items-center gap-1.5 rounded-md border border-success/30 bg-success/10 px-2.5 py-1 text-xs font-semibold text-success">
                   <Database className="w-3.5 h-3.5" />
-                  B-T2: 23/32 datos reales
+                  B-T2.1: cierre parcial
                 </span>
                 <span className="text-[11px] text-ink-500 dark:text-ink-400">
-                  cobertura corpus inter-dominio
+                  21 casos aún sin estatus estricto
                 </span>
               </div>
 
@@ -237,30 +233,29 @@ export default function Dashboard() {
             hint="metrics.json detectados"
           />
           <StatCard
-            label="overall_pass"
-            value={stats.overall_pass}
+            label="Strong estricto"
+            value={0}
             icon={CheckCircle2}
-            accent="success"
-            hint="Gate completo"
+            hint="Confirmados bajo B-T2.1"
           />
           <StatCard
-            label="Weak o mejor"
-            value={stats.weak_or_better}
+            label="Weak validado"
+            value={1}
             icon={TrendingUp}
             accent="warning"
-            hint="Strong + weak + suggestive"
+            hint="Energía, caso 04"
           />
           <StatCard
-            label="Null honesto"
-            value={stats.null_count}
-            icon={XCircle}
-            hint="Sin señal robusta"
-          />
-          <StatCard
-            label="EDI mediana"
-            value={fmt(stats.median_edi)}
+            label="Candidato"
+            value={1}
             icon={Activity}
-            hint={`Media: ${fmt(stats.mean_edi)}`}
+            hint="Starlink, sin gate"
+          />
+          <StatCard
+            label="Falsación local"
+            value={4}
+            icon={XCircle}
+            hint="Casos 19, 20, 23 y 24"
           />
           <StatCard
             label="Escalas"
@@ -277,10 +272,10 @@ export default function Dashboard() {
             <div className="flex items-center justify-between gap-3 mb-4">
               <div>
                 <h2 className="font-semibold text-ink-900 dark:text-ink-100">
-                  Distribución del corpus
+                  Distribución técnica cruda
                 </h2>
                 <p className="text-xs text-ink-500 dark:text-ink-400 mt-1">
-                  Categorías de cierre operativo calculadas desde la API.
+                  Lectura de metrics.json; no equivale al estatus estricto B-T2.1.
                 </p>
               </div>
               <Link
@@ -329,10 +324,10 @@ export default function Dashboard() {
 
           <div className="card p-5">
             <h2 className="font-semibold text-ink-900 dark:text-ink-100 mb-1">
-              Casos de mayor EDI
+              Casos de mayor EDI crudo
             </h2>
             <p className="text-xs text-ink-500 dark:text-ink-400 mb-4">
-              Accesos rápidos para defensa y discusión.
+              El ranking no implica corroboración ontológica ni gate completo.
             </p>
             <div className="space-y-2.5">
               {(summary.top_cases ?? []).slice(0, 6).map((c) => (
@@ -367,7 +362,7 @@ export default function Dashboard() {
                   EDI vs p-value
                 </h2>
                 <p className="text-xs text-ink-500 dark:text-ink-400 mt-1">
-                  Selectividad empírica: señal, significancia y categoría.
+                  Diagnóstico crudo; p-value y categoría no están calibrados homogéneamente.
                 </p>
               </div>
               <span className="text-xs text-ink-500">{scatterData.length} casos</span>
@@ -474,13 +469,12 @@ function HeroMetric({
 }
 
 const VERIFIED_COUNTS: { key: string; label: string; count: number; note?: string }[] = [
-  { key: 'strong', label: 'Strong robusto', count: 1, note: 'caso 24 sobrevive block-perm + detrended fix' },
-  { key: 'unknown', label: 'En revisión', count: 6, note: 'casos 16, 17, 18, 21, 26, 30 (bug detrended / block-perm)' },
-  { key: 'null', label: 'Null genuinos', count: 9 },
-  { key: 'weak', label: 'Weak', count: 6 },
-  { key: 'falsification', label: 'Falsación local', count: 2, note: 'aparato refutado' },
-  { key: 'trend', label: 'Trend', count: 2 },
-  { key: 'suggestive', label: 'Suggestive', count: 1 },
+  { key: 'strong', label: 'Strong confirmado', count: 0, note: 'ningún caso sobrevive el régimen estricto completo' },
+  { key: 'weak', label: 'Weak validado', count: 1, note: 'Energía, caso 04' },
+  { key: 'suggestive', label: 'Candidato', count: 1, note: 'Starlink: p_block=0.079 y overall_pass=false' },
+  { key: 'falsification', label: 'Falsación local', count: 4, note: 'casos 19, 20, 23 y 24' },
+  { key: 'unknown', label: 'Sin cierre estricto', count: 21, note: 'requieren B-T2.1 caso por caso' },
+  { key: 'null', label: 'Controles rechazados', count: 3, note: 'casos 06, 07 y 08' },
 ];
 
 function VerifiedCountsPanel() {
@@ -491,12 +485,11 @@ function VerifiedCountsPanel() {
         <div>
           <h2 className="font-semibold text-ink-900 dark:text-ink-100 flex items-center gap-2">
             <ShieldCheck className="w-4 h-4 text-success" />
-            Conteos verificados (iter 13-14)
+            Estado estricto del corpus inter-dominio
           </h2>
           <p className="text-xs text-ink-500 dark:text-ink-400 mt-1">
-            Cifras post-fix bug <code className="font-mono text-[11px]">detrended_edi</code> +
-            re-corrida block-permutation. Validadas contra <code className="font-mono text-[11px]">metrics.json</code>.
-            Total auditado: {total} casos.
+            Estatus inferencial B-T2.1. Las categorías crudas de <code className="font-mono text-[11px]">metrics.json</code>
+            se muestran aparte y no se agregan como evidencia homogénea. Total del corpus: {total} casos.
           </p>
         </div>
       </div>

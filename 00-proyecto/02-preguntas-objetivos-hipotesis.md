@@ -1,5 +1,7 @@
 # Preguntas, objetivos e hipótesis
 
+> **[BORRADOR-IA · requires: H-J2/H-J8]** Revisión de consistencia posterior al régimen B-T2.1. Sustituye afirmaciones empíricas incompatibles con el estado actual del corpus, pero requiere firma autoral para fijar el estatuto final de la generalidad ontológica.
+
 
 ## Pregunta central
 
@@ -15,15 +17,15 @@ Esta pregunta concentra el problema fundamental del proyecto. Es la pregunta que
 4. ¿cómo justificar niveles de organización sin convertirlos en mundos o sustancias nuevas, dando modelo positivo de la emergencia?
 5. ¿qué papel cumplen grafos, hipergrafos y operaciones de compresión y expansión en la formalización empíricamente verificable de la tesis?
 6. ¿cómo evita la tesis simultáneamente dualismo, reduccionismo plano, emergentismo fuerte, constructivismo arbitrario y formalismo vacío?
-7. ¿qué rendimiento explicativo discriminante obtiene la tesis en su caso ancla canónico (behavioral dynamics) y bajo qué condiciones puede extenderse a otros dominios?
+7. ¿qué alcance tiene el caso ancla de Warren, qué añade realmente el caso EDI 30 y bajo qué condiciones alguno de los dos puede contar como evidencia independiente del marco?
 
 ## Tesis principal
 
-> Todo fenómeno empíricamente explicable está anclado en un sustrato material dinámico. Los objetos, niveles y categorías mediante los cuales lo entendemos son patrones relacionales estabilizados — atractores empíricamente identificables de sistemas dinámicos acoplados — que se admiten en el marco solo bajo dossier de anclaje completo y traducibilidad B↔L3 verificable. La tesis queda demostrada en su caso ancla canónico (behavioral dynamics) y articulada como programa para mente, biología, sistemas técnicos e instituciones.
+> Todo fenómeno empíricamente investigable por este programa se trata como materialmente instanciado. Sus objetos, niveles y categorías se admiten como estructuras pre-ontológicas solo cuando una regularidad operativa sobrevive un dossier de anclaje, una traducción B↔L3 y pruebas de intervención independientes de la nominalización propuesta. El marco no infiere ontología fuerte del rendimiento de EDI: EDI prueba cierre operativo del trío fenómeno-sonda-modelo respecto de una pregunta Q. La generalidad ontológica permanece como conjetura articulada; la contribución demostrada es el protocolo público que permite admitirla, degradarla o rechazarla caso por caso.
 
 ## Hipótesis general
 
-> Una ontología material-relacional articulada con epistemología formal de compresión multiescala bajo asimetría L1↔B↔L3↔S y dossier de anclaje permite explicar mejor fenómenos complejos que las alternativas que reifican categorías ordinarias o reducen la explicación a descripción plana de componentes locales.
+> Una ontología material-relacional articulada con una epistemología de compresión multiescala, asimetría L1↔B↔L3↔S y dossier de anclaje produce criterios públicos de admisión y fracaso que las categorías heredadas, el reduccionismo plano y el formalismo sin traducción no ofrecen por sí solos.
 
 ## Hipótesis específicas
 
@@ -53,13 +55,13 @@ Las operaciones de compresión κ y expansión ε permiten justificar el paso en
 
 ### H5. Hipótesis comparativa
 
-La tesis ofrece una posición filosófica más equilibrada y empíricamente más discriminante que dualismo, materialismo de partículas, reduccionismo plano, emergentismo fuerte, constructivismo arbitrario, instrumentalismo puro, formalismo vacío, modelos internos, cognitivismo computacional, conductismo radical, enactivismo radical, realismo estructural informativo y mecanicismo multinivel sin filtro.
+La tesis formula diferencias públicas respecto de dualismo, materialismo de partículas, reduccionismo plano, emergentismo fuerte, constructivismo arbitrario, instrumentalismo puro, formalismo vacío, modelos internos, cognitivismo computacional, conductismo radical, enactivismo radical, realismo estructural informativo y mecanicismo multinivel sin filtro. La tabla comparativa prueba no-equivalencia conceptual; no demuestra superioridad empírica global sobre todos esos rivales.
 
 **Verificación**: capítulo 04-01.
 
-### H6. Hipótesis demostrativa
+### H6. Hipótesis del caso ancla
 
-En behavioral dynamics, el aparato del marco produce predicciones cuantitativas verificadas (varianza explicada superior al 97%) y discrimina contra modelos internos / control óptimo en cinco celdas de la tabla de comparación.
+Los modelos de behavioral dynamics reconstruidos desde Warren ofrecen un caso filosófico de alta adecuación cuantitativa dentro de su dominio publicado, pero esa adecuación no demuestra por sí sola el irrealismo operativo. El caso EDI 30 constituye un piloto metodológico separado: su señal actual es débil, no supera el gate completo y conserva circularidad de sonda, por lo que no cuenta como corroboración independiente hasta replicación con datos humanos y sonda pre-registrada alternativa.
 
 **Verificación**: capítulo 05-05.
 
@@ -71,7 +73,7 @@ El aparato de la tesis es extensible a mente, biología, sistemas técnicos e in
 
 ## Objetivo general
 
-Desarrollar una teoría ontológico-epistemológica general capaz de explicar la legitimidad y los límites de las categorías, niveles y objetos mediante una noción material-relacional de patrón estabilizado y una teoría formal de la compresión multiescala con procedimiento empírico, demostrar la teoría en un caso paradigmático trabajado, y articular el programa de extensión a dominios adicionales con criterios públicos de elevación.
+Desarrollar una teoría ontológico-epistemológica capaz de explicar la legitimidad y los límites de categorías, niveles y objetos mediante una noción material-relacional de patrón estabilizado y una teoría formal de la compresión multiescala; construir un procedimiento empírico refutable; evaluar su alcance en un caso paradigmático y en un corpus heterogéneo; y declarar las condiciones necesarias para elevar el programa a una ontología general confirmada.
 
 ## Objetivos específicos
 
@@ -85,7 +87,7 @@ Desarrollar una teoría ontológico-epistemológica general capaz de explicar la
 8. operacionalizar empíricamente κ vía baja dimensionalidad efectiva con cuatro pruebas de validación;
 9. construir auditoría ontológica como protocolo replicable de nueve fases;
 10. discriminar la tesis contra catorce posiciones rivales con tabla pública;
-11. demostrar el aparato en behavioral dynamics con dossier completo (caso ancla canónico);
+11. reconstruir el caso Warren, separar su adecuación publicada del caso EDI 30 y especificar qué evidencia independiente faltaría para una demostración;
 12. articular extensión programática a mente, biología, sistemas técnicos, instituciones con criterios de elevación;
 13. especificar condiciones de fracaso global falsables;
 14. preparar formulación defendible en contexto académico con guía oral en tres tiempos.
@@ -98,9 +100,9 @@ El proyecto no ofrece otra defensa genérica del materialismo. Combina cinco mov
 2. **realismo estructural moderado** con anclaje empírico explícito (patrón = atractor con cinco condiciones);
 3. **pluralismo explicativo controlado** con asimetría L1↔B↔L3↔S como protocolo;
 4. **formalización metodológica** con procedimiento empírico de κ vía baja dimensionalidad;
-5. **caso ancla canónico** trabajado a fondo con discriminación pública contra rivales identificables.
+5. **protocolo auto-correctivo** aplicado a un caso ancla y a corpus heterogéneos, con resultados positivos, nulls, candidatos y falsificaciones locales conservados bajo el mismo régimen de reporte.
 
-La novedad no es de inventario (cada pieza está distribuida entre marcos vecinos: Bunge, Bechtel-Craver, Dennett, Ladyman-Ross, Warren, Bourdieu, Searle). Es de articulación: dossier de anclaje + asimetría como filtro de admisión simultáneo, validado en caso ancla y articulado en programa.
+La novedad no es de inventario (cada pieza está distribuida entre marcos vecinos: Bunge, Bechtel-Craver, Dennett, Ladyman-Ross, Warren, Bourdieu, Searle). Es de articulación: dossier de anclaje + asimetría + intervención ablativa como filtro de admisión simultáneo, sometido a casos que también pueden degradar o refutar localmente el modelo propuesto.
 
 ## Resultado académico
 
@@ -110,11 +112,11 @@ La tesis se presenta con tres aportes coordinados:
 - **aporte epistemológico**: define conocer como compresión de estructura real bajo control empírico, con verdad como preservación estructural y procedimiento de validación de cuatro pruebas;
 - **aporte metodológico**: ofrece auditoría ontológica como protocolo replicable de nueve fases con dossier de catorce componentes.
 
-A esto se añade el aporte aplicado: demostración en behavioral dynamics con discriminación pública contra modelos internos.
+A esto se añade el aporte aplicado: reconstrucción crítica de behavioral dynamics, piloto EDI separado y cartografía de los límites actuales del instrumento.
 
 ## Régimen de validez declarado
 
-La tesis está demostrada en behavioral dynamics. Es marco general por aspiración y por conjetura articulada en programa. La asimetría entre demostración y conjetura no se disimula: se nombra como hoja de ruta del capítulo 06-03.
+La tesis demuestra la ejecutabilidad y la capacidad auto-correctiva de su método, no una ontología general confirmada. Behavioral dynamics aporta un caso de adecuación disciplinar y un piloto EDI todavía no independiente. La ontología multiescalar es una conjetura articulada cuyo estatuto final requiere la decisión H-J2; el régimen empírico estricto B-T2.1 permanece incompleto sobre el corpus.
 
 ## Fórmula de cierre del proyecto
 

@@ -76,27 +76,25 @@ Para tesis depositada en la Universidad de Antioquia, el diálogo con la tradici
 
 > Existe un solo plano ontológico básico — sustrato material dinámico — sobre el cual se constituyen patrones estabilizados (atractores empíricos de sistemas dinámicos acoplados) que cuentan como entidades reales en sentido moderado, **a través de escalas físicas, biológicas y cosmológicas**. Las propiedades son disposiciones relacionales del sistema; la identidad es continuidad organizada bajo transformación; los niveles son registros descriptivos del mismo plano, no mundos separados. La ontología no multiplica sustancias y, simultáneamente, no empobrece la organización: es austera en sustancia y rica en relación, condicionada en cada paso por traducibilidad al nivel conductual-biológico (B) y por validación empírica multiescalar.
 
-### La tesis como ontología general invariante a la escala
+### La generalidad ontológica como hipótesis programática
 
-La tesis del **irrealismo operativo de estructuras pre-ontológicas** afirma una sola estructura ontológica que se instancia a múltiples escalas. No es la suma de ontologías regionales (una para lo cuántico, otra para lo biológico, otra para lo social) ni es ontología macro extendida nominalmente a otras escalas. Es **una ontología cuyos invariantes estructurales no dependen de la escala**. Lo que sí depende de la escala son las **instancias** de esos invariantes (qué cuerpo, qué entorno, qué tarea, qué historia entran en cada caso).
+> **[BORRADOR-IA · requires: H-J2]** La decisión entre lectura regulativa, constitutiva o programática requiere firma autoral.
+
+El **irrealismo operativo de estructuras pre-ontológicas** propone una arquitectura común que podría instanciarse a múltiples escalas. En el estado actual del manuscrito, esa generalidad no es una conclusión derivada del corpus. Es una hipótesis filosófica que organiza la comparación entre dominios y declara de antemano qué regularidades buscar.
 
 Los invariantes ontológicos son cuatro:
 
-1. **Sustrato material dinámico:** existe a cualquier escala (campos cuánticos, moléculas, células, organismos, estrellas, cúmulos). No hay escala donde la materialidad deje de ser materialidad.
-2. **Acoplamiento dinámico:** a cualquier escala hay un sistema con dos polos en interacción (qubit↔baño térmico; enzima↔sustrato; organismo↔entorno; estrella↔espacio-tiempo galáctico) cuyo estado conjunto evoluciona bajo restricciones específicas de la escala.
-3. **Atractor empírico:** a cualquier escala el sistema acoplado tiene regiones de convergencia bajo perturbación acotada (estado de equilibrio térmico del qubit; forma plegada de la proteína; ciclo límite del NF-κB; cuenca del campo institucional; relación período-luminosidad de la Cefeida; equilibrio gravitacional del cúmulo).
-4. **Cierre operativo κ:** el atractor admite descripción comprimida con dependencias decisivas preservadas y detalle local removible cuando la pregunta lo permite. Esta operación es **la misma operación matemática** independientemente de la escala: ablación del acoplamiento + comparación de RMSE + permutación + bootstrap + protocolo C1-C5.
+1. **Sustrato material dinámico:** todo caso debe identificar qué procesos materiales sostienen el fenómeno.
+2. **Acoplamiento dinámico:** el modelo debe declarar qué componentes interactúan y bajo qué restricciones.
+3. **Atractor empírico:** la sonda debe especificar una región o régimen de estabilidad susceptible de contraste.
+4. **Cierre operativo κ:** una ablación debe medir cuánto aporta el acoplamiento a una predicción respecto de una pregunta Q.
 
-**Lo que cambia con la escala** son los nombres específicos: el "agente" en la escala atómica es una configuración de espín; en la celular es un cuerpo celular con su maquinaria; en la individual es un organismo; en la astrofísica es un cuerpo estelar. Pero la estructura ontológica que estos nombres instancian es **una sola**.
+Los cuatro puntos funcionan primero como requisitos de modelado. Para elevarlos a invariantes ontológicos sería necesario mostrar que no son solo casillas impuestas por el aparato. El corpus disponible aporta dos clases de prueba metodológica:
 
-Esta invarianza no es postulado *a priori*: está respaldada por los corpus operativos complementarios que **no se distinguen ontológicamente entre sí**, solo metodológicamente:
+- **Corpus inter-dominio, 30 casos:** muestra dónde puede formularse el protocolo y dónde falla la sonda o el modelo.
+- **Corpus inter-escala, 10 casos:** muestra portabilidad computacional sobre parametrizaciones de escalas distintas; sus datos son sintéticos y su clasificación es cruda.
 
-- **Corpus inter-dominio (30 casos):** discriminación entre dominios heterogéneos —física, biología, economía, política, tecnología, cultura, conducta humana— operando en escalas variables según el dominio (cap 09 + apéndice técnico 1).
-- **Corpus inter-escala (10 casos):** discriminación a través de **30 órdenes de magnitud espaciales** y temporales, desde dinámica de espín-órbita atómica (10⁻¹⁰ m, 10⁻¹⁵ s) hasta dinámica de cúmulos globulares (10²⁰ m, 10¹⁴ s), con **7 strong en 7 escalas distintas** + 1 weak + 2 nulls honestos (cap 05-06 + apéndice técnico 2).
-
-Las **estructuras pre-ontológicas** son objeto operativo a cualquier escala donde el aparato puede operar con sondas físicamente motivadas. No son artefacto de ninguna escala particular. Esta es la afirmación ontológica más fuerte que el corpus actual sostiene, con la honestidad metodológica de reportar los nulls (Villin Headpiece bajo sonda equilibrio; locomoción τ-dot bajo observación con reinicios discretos) sin ajustarlos para forzar overall_pass.
-
-La distinción "macro vs micro" en el manuscrito original era **artefacto de la primera iteración**, donde el corpus estaba sesgado a sistemas con datos públicos macro-poblacionales. La iteración posterior con corpus inter-escala demuestra que el aparato y la tesis son **ontológicamente generales**: el dominio macro-poblacional no es preferencial; es uno entre múltiples donde la tesis se demuestra. Cualquier referencia residual a "escala macro" en capítulos posteriores debe leerse como **una entre las escalas cubiertas**, no como límite de la tesis.
+Los resultados eliminan una restricción puramente técnica a la escala macro, pero no eliminan la carga ontológica. Poder ejecutar la misma interfaz en varias escalas no implica que la estructura del mundo sea idéntica en ellas. La afirmación fuerte requiere convergencia entre sondas, parámetros medidos de forma independiente, datos reales y replicación externa.
 
 #### Tabla síntesis: invariantes ontológicos instanciados a través de escalas
 
@@ -109,17 +107,11 @@ La distinción "macro vs micro" en el manuscrito original era **artefacto de la 
 | **Atractor empírico** | estado coherente bajo pulso | basin del estado plegado | ciclo límite oscilatorio | mix energético de equilibrio | tasa de mortalidad estable | trayectoria a meta | relación P-L como atractor | equilibrio Plummer |
 | **Cierre operativo κ** | EDI 0.91 (Lindblad) | EDI 0.00 (sonda equilibrio inadecuada) | EDI 0.59 (Hoffmann) | EDI 0.65 (Lotka-Volterra) | EDI 0.33 (mortalidad) | EDI 0.26 (Fajen-Warren) | EDI 0.92 (P-L) | EDI 0.43 (Plummer+marea) |
 
-Cada columna representa una **instancia particular** de los mismos cuatro invariantes ontológicos. Leer la tabla horizontalmente es leer la **unidad ontológica** de la tesis; leer cada columna verticalmente es leer la **especificación de escala** que cada caso requiere. Ambas lecturas son simultáneas y no opcionales.
+Cada columna muestra cómo el vocabulario del programa se traduce a un caso. La lectura horizontal es una comparación metodológica. Interpretarla como unidad ontológica es la hipótesis que el programa debe poner a prueba, no el resultado contenido automáticamente en la tabla.
 
 #### Por qué esta estructura es ontológica, no metodológica
 
-Un escéptico podría decir: *"el aparato funciona a múltiples escalas porque es estadístico genérico; eso no demuestra ontología, sólo capacidad descriptiva"*. La respuesta de la tesis tiene tres partes:
-
-1. **Si el aparato fuera estadístico genérico, sus controles de falsación NO se rechazarían** (random walk, no-estacionariedad, observabilidad). Pero los 3 controles del corpus inter-dominio se rechazan correctamente, y los 2000 random walks bajo hostile testing (N1+V4_06+N5) producen 0 falsos positivos del gate completo (Wilson 95 % CI [0, 0.00191]). Esto significa que el aparato **discrimina entre dinámica con cierre operativo y dinámica sin él**, no solo describe trayectorias.
-2. **Si la coincidencia ontológica entre escalas fuera artefacto del aparato, las sondas de una escala detectarían cierre sobre datos de otra escala.** El test cruzado V4-01 lo refuta: las sondas multiescala son específicas (0/12 circularidad sobre datos no-suyos). Cada sonda sólo detecta el atractor que su escala instancia.
-3. **La estructura ontológica común NO es nominal.** Los cuatro invariantes (sustrato, acoplamiento, atractor, cierre operativo) son **operativamente medibles** en cada caso del corpus. La tabla síntesis no es resumen retórico; es lectura directa de los `metrics.json` de cada caso.
-
-Esta es la diferencia entre **ontología general** y **descripción multidominio**: la primera afirma que hay una estructura común; la segunda solo cataloga. La tesis afirma la primera, con respaldo operativo de los 40 casos del corpus agregado.
+La objeción del aparato genérico permanece parcialmente abierta. Los 3 controles rechazados y los 0/2000 falsos positivos bajo random walks muestran selectividad frente a las familias de nulos ensayadas. El test cruzado V4-01 muestra que las sondas no son intercambiables en 12 cruces. Ninguno de esos resultados establece por sí solo que el patrón detectado exista con independencia del aparato. La diferencia entre descripción multidominio y ontología general es precisamente el salto que H-J2 debe justificar o mantener como programa.
 
 ### Nota sobre el sistema modal asumido
 
@@ -132,7 +124,7 @@ La compresión κ admite **dos lecturas** que conviene distinguir explícitament
 - **κ-pragmática:** la compresión es legítima si el sistema reducido predice trayectorias dentro de tolerancia, preserva topología y discrimina intervenciones. Esta lectura es la que el cap 03-04 operacionaliza vía EDI, prueba de permutación, bootstrap y protocolo C1-C5. Es **interna** al modelo.
 - **κ-ontológica:** la compresión corresponde a una estructura material independiente del modelo — no solo es útil, es real en el sentido de que existiría aunque nadie la modelara.
 
-**El manuscrito demuestra κ-pragmática con rigor cuantificado** (corpus EDI multidominio, AUC-ROC de discriminación = 0.886 según auditoría severa N3). **La afirmación κ-ontológica fuerte requiere argumento adicional** que el corpus por sí solo no provee: se requeriría convergencia bajo múltiples sondas con motivaciones teóricas independientes (programa multi-sonda extendido declarado en la hoja de ruta `06-cierre/03-hoja-de-ruta-para-tesis-final.md`) más correspondencia con resultados experimentales obtenidos por otros grupos con métodos distintos (deuda externa).
+**El manuscrito operacionaliza κ-pragmática y la evalúa localmente.** El AUC-ROC histórico de 0.886 es consistencia interna del umbral, no discriminación externa, y no puede usarse para elevar la afirmación. **La κ-ontológica fuerte requiere argumento adicional**: convergencia bajo sondas con motivaciones teóricas independientes, medición fuera del ajuste y resultados experimentales obtenidos por otros grupos.
 
 La posición filosófica del **irrealismo operativo** se sitúa **explícitamente entre las dos lecturas**: ni operacionalismo puro (κ-pragmática sola) ni realismo metafísico fuerte (κ-ontológica sin filtro empírico). El compromiso es:
 
@@ -153,8 +145,8 @@ Para que la afirmación κ-ontológica fuerte se sostenga sobre un caso particul
 
 | Caso del corpus | C1 multi-sonda independiente | C2 replicación inter-grupo | C3 intervención confirmatoria |
 |-----------------|:---:|:---:|:---:|
-| 4 strong macro (04, 16, 20, 27) | parcial (multi-sonda interno solo) | NO | NO |
-| 7 strong inter-escala (31-40) | NO (depuración post-hoc) | NO | NO |
+| Corpus inter-dominio | parcial y endógeno | NO | NO |
+| Casos inter-escala con Strong crudo | NO (depuración post-hoc y datos sintéticos) | NO | NO |
 | Caso 30 behavioral | NO (circularidad detectada) | NO | NO |
 
 **Implicación operacional:** **ningún caso** del corpus actual cumple los tres criterios simultáneos. Por tanto, **todas las afirmaciones del corpus son κ-pragmática**, no κ-ontológica. La afirmación ontológica fuerte (las estructuras pre-ontológicas existen independientemente del aparato) es **conjetura ontológica articulada**, no demostración cerrada. Solo cuando los tres criterios se cumplan en al menos un caso del corpus la tesis pasará de κ-pragmática multiescalar a κ-ontológica multiescalar.

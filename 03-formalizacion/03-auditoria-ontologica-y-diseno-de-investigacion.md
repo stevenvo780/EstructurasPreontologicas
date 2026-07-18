@@ -83,7 +83,7 @@ La tesis requiere tres tipos de trabajo simultáneos:
 
 - **análisis conceptual riguroso**: limpieza de vocabulario, definiciones de trabajo, separación de niveles;
 - **comparación filosófica con posiciones rivales**: discriminación bajo criterios públicos, no contraste retórico;
-- **estudios de caso estratégicos**: caso ancla canónico (modo demostrativo) y dominios adicionales (modo programático con criterios de elevación).
+- **estudios de caso estratégicos**: caso ancla paradigmático con dossier parcial y dominios adicionales en modo programático con criterios de elevación.
 
 ### 4.2. Por qué esta combinación funciona
 
@@ -93,7 +93,7 @@ La tesis requiere tres tipos de trabajo simultáneos:
 |---|---|
 | Análisis conceptual | Permite limpiar vocabulario, separar niveles, fijar definiciones operativas |
 | Comparación filosófica | Permite mostrar que la tesis no es intuición aislada sino intervención en debates reales con discriminación verificable |
-| Estudios de caso | Permiten demostrar que la tesis produce rendimiento explicativo efectivo respecto a rivales explícitos |
+| Estudios de caso | Permiten evaluar si la tesis produce rendimiento explicativo local respecto a rivales explícitos |
 
 Sin alguna de las tres patas, el manuscrito es incompleto: análisis sin comparación es solipsismo; comparación sin caso es académicamente vacía; caso sin análisis es ad hoc.
 
@@ -110,9 +110,9 @@ Un caso que no cumple las cuatro queda fuera del manuscrito o se incluye con mar
 
 ## 6. Casos del manuscrito
 
-### 6.1. Caso ancla canónico (modo demostrativo)
+### 6.1. Caso ancla paradigmático con dossier parcial
 
-**Behavioral dynamics** (Warren 2006). Warren formula explícitamente el programa: "the agent and its environment are treated as a pair of dynamical systems that are coupled mechanically and informationally. Their interactions give rise to the behavioral dynamics, a vector field with attractors that correspond to stable task solutions, repellers that correspond to avoided states, and bifurcations that correspond to behavioral transitions" (Warren 2006, p. 358). El framework se aplica a "bouncing a ball on a racquet, balancing an object, braking a vehicle, and guiding locomotion" (p. 358), todas con datos públicos, ecuaciones ajustadas, predicciones cumplidas e intervenciones documentadas. Lo que hace al caso ancla canónico no es la lista de tareas sino la tesis estructural: "stable behavioral solutions correspond to attractors in the behavioral dynamics, and transitions between behavioral patterns correspond to bifurcations […] codetermined by the confluence of task constraints and perceptual–motor control laws" (p. 359). Esa codeterminación agente–entorno es justamente lo que el aparato κ/ε intenta auditar empíricamente. Dossier completo en capítulo 05-05.
+**Behavioral dynamics** (Warren 2006). Warren formula explícitamente el programa: "the agent and its environment are treated as a pair of dynamical systems that are coupled mechanically and informationally. Their interactions give rise to the behavioral dynamics, a vector field with attractors that correspond to stable task solutions, repellers that correspond to avoided states, and bifurcations that correspond to behavioral transitions" (Warren 2006, p. 358). El framework se aplica a "bouncing a ball on a racquet, balancing an object, braking a vehicle, and guiding locomotion" (p. 358). La codeterminación agente-entorno motiva lo que κ/ε intenta auditar. El capítulo 05-05 cubre 9 de 14 componentes; no constituye un dossier confirmatorio completo.
 
 ### 6.2. Casos en modo programático
 

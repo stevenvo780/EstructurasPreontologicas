@@ -1,10 +1,12 @@
 # La dinámica de la percepción y la acción, reconstruida bajo monismo material-relacional con compresión multiescala
 
-## MODO DEMOSTRATIVO — CASO ANCLA CANÓNICO
+## CASO ANCLA PARADIGMÁTICO — DOSSIER PARCIAL
 
-Este capítulo presenta el único caso del manuscrito que entra en **modo demostrativo** según el capítulo 05-00. Su dossier de anclaje está completo en sus catorce componentes con datos públicos, ecuaciones ajustadas, predicciones cumplidas, intervenciones documentadas y comparación rival con discriminación verificable. La tesis se demuestra aquí; los demás dominios quedan en modo programático con criterios de elevación; los 40 casos del corpus EDI quedan en **modo técnico-ejecutado** (cap 05-00 §3.bis).
+> **[BORRADOR-IA · requires: H-J8]** La reclasificación del caso ancla requiere firma autoral.
 
-> **Cobertura efectiva del dossier: 9 de 14 componentes con desarrollo sustantivo verificable; 5 con deudas declaradas fechadas.** La admisión en modo demostrativo se sostiene por completitud sustantiva de los nueve componentes auditados (Q fechada, variables X con régimen R, sustrato material, grafo G con intervenciones, hipergrafo H justificado, compresión κ con varianza explicada >97 %, atractores/repulsores/bifurcaciones en datos, pruebas de validación con reproducción y preservación topológica, traducción B↔L3 completa por familia de variables) y por reconocimiento explícito de deudas en los cinco restantes: (i) **predicción discriminante fechada** y (ii) **intervención discriminante ejecutable empíricamente** quedan parcialmente cubiertas por los experimentos de Warren ya publicados pero requieren desarrollo F05-07 con rivales contemporáneos actualizados; (iii) **cross-validation independiente** con datasets fuera del entrenamiento original de Warren está fechada como deuda; (iv) **operador ε con protocolo de reapertura caso-específico** está enunciado pero no operacionalizado con criterio fechado; (v) **tabla de comparación rival** está en cap 04-03 pero su anclaje contrastivo caso-por-caso dentro del propio dossier de Warren queda pendiente. La cobertura 9/14 no invalida la admisión demostrativa porque la genealogía declarada en cap 05-00 §1 reconoce el carácter post-hoc de la rejilla; lo que sí queda visible es que **el modo demostrativo opera con deudas declaradas, no con dossier perfecto**.
+Este capítulo reconstruye el caso paradigmático que mejor motiva la propuesta material-relacional. Warren aporta datos públicos, ecuaciones ajustadas, atractores, intervenciones y comparación teórica. La reconstrucción muestra compatibilidad y poder interpretativo local; no demuestra la tesis general ni valida el EDI del caso 30. Los demás dominios permanecen programáticos o técnico-ejecutados.
+
+> **Cobertura efectiva del dossier: 9 de 14 componentes con desarrollo sustantivo verificable; 5 con deudas fechadas.** Están cubiertos Q, variables, sustrato, grafo, hipergrafo, compresión, atractores, pruebas y traducción B↔L3. Permanecen incompletas la predicción discriminante preregistrada, la intervención confirmatoria propia, la validación cruzada independiente, el operador ε caso-específico y la comparación rival dentro del dossier. Por ello el caso es ancla paradigmática con evidencia local, no demostración cerrada.
 
 > Reconstrucción de Warren, W. H. (2006). *The Dynamics of Perception and Action*. Psychological Review, 113(2), 358–389.
 
@@ -20,7 +22,7 @@ Tercero, Warren mismo formula el debate en los términos que la tesis necesita: 
 
 ## Tesis del capítulo
 
-> Las dinámicas conductuales que Warren formaliza son sistemas dinámicos acoplados organismo–entorno cuyas estabilizaciones (atractores, repulsores, bifurcaciones) son patrones materiales realmente existentes. Su descripción mediante ecuaciones diferenciales de bajo orden no es un nuevo dominio ontológico ni una representación interna postulada, sino la operación empírica de κ — compresión legítima — sobre el sistema acoplado, traducible a variables biomecánicas, informacionales y de tarea. Bajo el marco material-relacional, el programa de Warren se lee no como antirepresentacionalismo polémico sino como un caso paradigmático de L3 anclado, demostrando lo que la tesis sostiene de manera general.
+> Las dinámicas que Warren formaliza pueden reconstruirse como sistemas acoplados organismo-entorno cuyas estabilizaciones admiten una lectura material-relacional. Las ecuaciones de bajo orden constituyen un caso paradigmático de L3 anclado y motivan la noción de κ. Esta compatibilidad local no demuestra que la misma lectura se generalice a todos los dominios.
 
 ## Recorte del fenómeno
 
