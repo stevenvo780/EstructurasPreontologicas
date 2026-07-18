@@ -46,7 +46,7 @@ A la Universidad de Antioquia, por sostener una tradición de filosofía de la c
 
 # 📑 Tabla de Contenidos
 
-> **Navegación:** este manuscrito tiene ~10 mil líneas. Las partes están agrupadas en secciones colapsables. Haz clic en ▸ para expandir cada parte. Cada capítulo termina con un enlace «↑ volver al índice» que regresa aquí.
+> **Navegación:** las partes están agrupadas en secciones colapsables. Haz clic en ▸ para expandir cada parte. Cada capítulo termina con un enlace «↑ volver al índice» que regresa aquí.
 
 ## Navegación rápida por partes
 
@@ -69,8 +69,6 @@ A la Universidad de Antioquia, por sostener una tradición de filosofía de la c
 
 - [Front matter](#front-matter)
 - [Resumen y abstract bilingüe](#resumen-y-abstract-bilingue)
-- [Listas de figuras, tablas y abreviaturas](#listas-de-figuras-tablas-y-abreviaturas)
-- [Glosario operativo](#glosario-operativo)
 
 </details>
 
@@ -114,32 +112,27 @@ A la Universidad de Antioquia, por sostener una tradición de filosofía de la c
 - [Capítulo 15: Criterios de admisión de aplicaciones](#capitulo-15-criterios-de-admision-de-aplicaciones)
 - [Capítulo 16: Mapa de aplicaciones — corpus inter-dominio e inter-escala](#capitulo-16-mapa-de-aplicaciones---corpus-inter-dominio-e-inter-escala)
 - [Capítulo 17: Caso ancla canónico — Behavioral Dynamics (Warren 2006)](#capitulo-17-caso-ancla-canonico---behavioral-dynamics-warren-2006)
-- [Capítulo 18: Corpus inter-dominio (30 casos)](#capitulo-18-corpus-inter-dominio-30-casos)
-- [Capítulo 19: Corpus inter-escala (10 casos)](#capitulo-19-corpus-inter-escala-10-casos)
-- [Capítulo 20: Caso 30 — Behavioral Dynamics bajo EDI](#capitulo-20-caso-30---behavioral-dynamics-bajo-edi)
-- [Capítulo 21: Aplicaciones programáticas — Mente, memoria, yo](#capitulo-21-aplicaciones-programaticas---mente-memoria-yo)
-- [Capítulo 22: Aplicaciones programáticas — Biología y ecología](#capitulo-22-aplicaciones-programaticas---biologia-y-ecologia)
-- [Capítulo 23: Aplicaciones programáticas — Sistemas técnicos distribuidos](#capitulo-23-aplicaciones-programaticas---sistemas-tecnicos-distribuidos)
-- [Capítulo 24: Aplicaciones programáticas — Instituciones, mercado, Estado](#capitulo-24-aplicaciones-programaticas---instituciones-mercado-estado)
+- [Capítulo 18: Corpus inter-escala (10 casos)](#capitulo-18-corpus-inter-escala-10-casos)
+- [Capítulo 19: Aplicaciones programáticas — Mente, memoria, yo](#capitulo-19-aplicaciones-programaticas---mente-memoria-yo)
+- [Capítulo 20: Aplicaciones programáticas — Biología y ecología](#capitulo-20-aplicaciones-programaticas---biologia-y-ecologia)
+- [Capítulo 21: Aplicaciones programáticas — Sistemas técnicos distribuidos](#capitulo-21-aplicaciones-programaticas---sistemas-tecnicos-distribuidos)
+- [Capítulo 22: Aplicaciones programáticas — Instituciones, mercado, Estado](#capitulo-22-aplicaciones-programaticas---instituciones-mercado-estado)
 
 </details>
 
 <details>
 <summary><b>Parte IV — Discusión crítica</b></summary>
 
-- [Capítulo 25: Debates con posiciones rivales](#capitulo-25-debates-con-posiciones-rivales)
-- [Capítulo 26: Tabla comparativa con rivales](#capitulo-26-tabla-comparativa-con-rivales)
-- [Capítulo 27: Anticipación de objeciones filosóficas](#capitulo-27-anticipacion-de-objeciones-filosoficas)
-- [Capítulo 28: Limitaciones y puntos de presión](#capitulo-28-limitaciones-y-puntos-de-presion)
-- [Capítulo 29: Limitaciones declaradas consolidadas](#capitulo-29-limitaciones-declaradas-consolidadas)
+- [Capítulo 23: Debates con posiciones rivales](#capitulo-23-debates-con-posiciones-rivales)
+- [Capítulo 24: Anticipación de objeciones filosóficas](#capitulo-24-anticipacion-de-objeciones-filosoficas)
+- [Capítulo 25: Limitaciones declaradas](#capitulo-25-limitaciones-declaradas)
 
 </details>
 
 <details>
 <summary><b>Parte V — Cierre y estado de la demostración</b></summary>
 
-- [Capítulo 30: Conclusión y estado de la demostración](#capitulo-30-conclusion-y-estado-de-la-demostracion)
-- [Capítulo 31: Hoja de ruta post-defensa](#capitulo-31-hoja-de-ruta-post-defensa)
+- [Capítulo 26: Conclusión y estado de la demostración](#capitulo-26-conclusion-y-estado-de-la-demostracion)
 
 </details>
 
@@ -153,6 +146,7 @@ A la Universidad de Antioquia, por sostener una tradición de filosofía de la c
 <details>
 <summary><b>Apéndices técnicos mínimos</b></summary>
 
+- [Glosario operativo de consulta](#glosario-operativo-de-consulta)
 - [Apéndice técnico 1: Tablas crudas del corpus inter-dominio](#apendice-tecnico-1-tablas-crudas-del-corpus-inter-dominio)
 - [Apéndice técnico 2: Tablas crudas del corpus inter-escala](#apendice-tecnico-2-tablas-crudas-del-corpus-inter-escala)
 - [Apéndice técnico 3: Figuras Mermaid](#apendice-tecnico-3-figuras-mermaid)
@@ -215,461 +209,8 @@ The defensible result is methodological: the apparatus states public admission c
 
 ---
 
-<div id="listas-de-figuras-tablas-y-abreviaturas"></div>
-
-# Listas de figuras, tablas y abreviaturas
-
-## Función
-
-Listas de soporte editorial requeridas por el formato de tesis doctoral institucional de la Universidad de Antioquia. Tres listas independientes: figuras, tablas, abreviaturas. Cada elemento referencia su capítulo de origen.
-
----
-
-## A.9.1. Lista de figuras
-
-> Nota: las versiones Mermaid renderizables de las 9 figuras principales están consolidadas en `10-apendices-tecnicos/03-figuras-mermaid.md`. En el cuerpo de los capítulos los diagramas siguen en ASCII art para legibilidad en texto plano. La conversión final a SVG/PNG con `mmdc` (mermaid-cli) o equivalente es trámite editorial pre-depósito con cronograma específico: 3-5 días en la semana previa al depósito institucional. Esta lista anticipa la numeración estable.
-
-**Tabla A.9.1.**
-
-**Tabla 0.6.1.**
-
-| Figura | Título | Capítulo |
-|--------|--------|----------|
-| Fig. 2.1 | Cuatro modos de realidad operativa | 02-01 |
-| Fig. 2.2 | Acoplamiento dinámico organismo-entorno-tarea-historia | 02-04 |
-| Fig. 3.1 | Mapa de operadores formales (μ, G, H, κ, ε) | 03-01 |
-| Fig. 3.2 | Diagrama del dossier de anclaje (14 componentes) | 03-02 |
-| Fig. 3.3 | Pipeline de validación EDI con permutación + bootstrap + C1-C5 | 03-04 |
-| Fig. 4.1 | Tabla discriminante con 14 rivales (resumen) | 04-01 |
-| Fig. 5.1 | Asimetría L1↔B↔L3↔S como protocolo | 02-04 / 05-05 |
-| Fig. 5.2 | Trayectoria de heading bajo behavioral_attractor (caso 30) | 05-05 / 09-30 |
-| Fig. 6.1 | Paisaje de emergencia del corpus EDI (distribución por nivel) | 06-01 |
-| Fig. 9.1 | Arquitectura del motor ABM+ODE acoplado | 09-00 |
-
----
-
-## A.9.2. Lista de tablas
-
-**Tabla A.9.2.**
-
-**Tabla 0.6.2.**
-
-| Tabla | Título | Capítulo |
-|-------|--------|----------|
-| Tabla 0.1 | Hitos institucionales declarados | 00-04 |
-| Tabla 1.1 | Falencias diagnósticas del prototipo previo | 01-01 |
-| Tabla 1.2 | Mapa de inserción de la tesis en cinco subcampos | 01-03 |
-| Tabla 3.1 | Cinco operadores formales del aparato mínimo | 03-01 |
-| Tabla 3.2 | Componentes del dossier de anclaje (14) | 03-02 |
-| Tabla 3.3 | Protocolo C1-C5 + 8 condiciones para `overall_pass = True` | 03-04 |
-| Tabla 4.1 | 14 rivales y discriminación específica | 04-01 |
-| Tabla 5.1 | Casos del corpus por dominio de aplicación | 05-00 |
-| Tabla 5.2 | Comparativa cualitativa-cuantitativa para behavioral dynamics | 05-05 |
-| Tabla 6.1 | Cuadro síntesis del paisaje de emergencia | 06-01 |
-| Tabla A.4.1 | Tabla comparativa con 14 rivales | Parte IV |
-| Tabla A.5.1 | Mapa de aplicaciones del marco | A.5 |
-| Tabla A.8.1 | Resultados del corpus EDI (30 casos) | A.8 |
-| Tabla A.8.2 | Métricas de robustez por caso | A.8 |
-| Tabla A.8.3 | Verificación bajo perfil agresivo | A.8 |
-| Tabla A.8.4 | Distribución del paisaje de emergencia | A.8 |
-
----
-
-## A.9.3. Lista de abreviaturas y símbolos
-
-### Operadores formales
-
-**Tabla A.9.3.**
-
-**Tabla 0.6.3.**
-
-| Símbolo | Significado | Capítulo |
-|---------|-------------|----------|
-| μ | Operador de medición; recorta R en X observable | 03-01 |
-| G | Grafo basal de dependencias entre variables | 03-01 |
-| H | Hipergrafo de relaciones n-arias | 03-01 |
-| κ | Operador de compresión multiescala | 03-01 / 03-04 |
-| ε | Operador de errores de traducción | 03-01 |
-| φ, ψ | Heading actual y heading de meta (caso 30) | 05-05 / 09-30 |
-| τ ≡ θ/θ̇ | Razón entre tamaño angular óptico θ y su tasa de cambio θ̇; según la formulación que Lee (1976) introduce y desarrolla en *Perception* 5(4):437-459, especifica tiempo-hasta-contacto bajo aproximación de velocidad constante (locus pp. 439-441; mención secundaria declarada — ver nota [a]) | 02-04 |
-| β | Error de heading φ − ψ_g | 02-04 |
-
-
-[a] Lee, D. N. (1976). "A theory of visual control of braking based on information about time-to-collision." *Perception* 5(4):437-459. La definición canónica de τ como razón entre tamaño angular óptico (θ) y su tasa de cambio (θ̇), especificando tiempo hasta contacto, se localiza en pp. 439-441 (locus declarado posicionalmente; PDF no disponible en `07-bibliografia/` al cierre — referencia bibliográfica verificada contra la entrada canónica del journal *Perception*, vol. 5). Deuda: verificación textual con paginación exacta pendiente cuando el PDF se incorpore al repositorio.
-
-### Métricas y protocolos
-
-**Tabla A.9.4.**
-
-**Tabla 0.6.4.**
-
-| Sigla | Significado | Capítulo |
-|-------|-------------|----------|
-| EDI | Effective Dependence Index | 03-04 |
-| RMSE | Root Mean Squared Error | 03-04 |
-| C1-C5 | Convergencia, Robustez, Determinismo, Consistencia, Uncertainty | 03-04 |
-| ABM | Agent-Based Model | 09-00 |
-| ODE | Ordinary Differential Equation | 09-00 |
-| LoE | Level of Evidence (1-5) | 03-02 |
-| CI | Confidence Interval | 03-04 |
-| CR | Cohesion Ratio (Symploké) | 03-04 |
-
-### Niveles del corpus
-
-**Tabla A.9.5.**
-
-**Tabla 0.6.5.**
-
-| Nivel | Categoría | Definición operativa |
-|------:|-----------|----------------------|
-| 0 | Null | EDI ≤ 0 o sin estructura macro |
-| 1 | Trend | 0 < EDI sin significancia (p ≥ 0.05) |
-| 2 | Suggestive | 0.01 ≤ EDI < 0.10, p < 0.05 |
-| 3 | Weak | 0.10 ≤ EDI < 0.30, p < 0.05 |
-| 4 | Strong | EDI ≥ 0.30, p < 0.01, `overall_pass = True` |
-| 5 | Crítico (programa futuro) | Convergencia bajo múltiples sondas + datos LoE = 5 + frontera espacial nítida |
-
-**Nota explícita sobre el Nivel 5:** el manuscrito demuestra hasta Nivel 4. El Nivel 5 está definido como **horizonte programático** del marco, no como nivel alcanzado en el corpus actual. Sus condiciones (multi-sonda convergente, LoE = 5, topología heterogénea con frontera nítida) son objetivos del programa de elevación declarado en la hoja de ruta (`06-cierre/03-hoja-de-ruta-para-tesis-final.md`).
-
-### Niveles del registro categorial
-
-**Tabla A.9.6.**
-
-**Tabla 0.6.6.**
-
-| Sigla | Registro | Capítulo |
-|-------|----------|----------|
-| L1 | Psicológico-ordinario (preguntas comunicables) | 02-04 |
-| B | Conductual-biológico (anclaje empírico) | 02-04 |
-| L3 | Estructural-relacional (formalización) | 02-04 |
-| S | Semántica revisada (categorías que sobreviven) | 02-04 |
-
-### Instituciones y datasets
-
-**Tabla A.9.7.**
-
-**Tabla 0.6.7.**
-
-| Sigla | Significado |
-|-------|-------------|
-| CEI | Comité de Ética en Investigación (Universidad de Antioquia) |
-| SIIU | Sistema de Información para la Investigación Universitaria |
-| OPSD | Open Power System Data |
-| OWID | Our World in Data |
-| TLE | Two-Line Element (CelesTrak) |
-
----
-
-## Trazabilidad
-
-Estas listas se actualizarán automáticamente desde el manuscrito ensamblado (`TesisFinal/Tesis.md`) cuando se haga la conversión final a LaTeX/PDF mediante Pandoc + script de extracción. Hasta entonces, se mantienen manualmente coherentes con los capítulos de origen.
-
-
-<p align="right"><sub><a href="#tabla-de-contenidos">↑ volver al índice</a></sub></p>
-
----
-
-<div id="glosario-operativo"></div>
-
-# Glosario operativo
-
-## Función
-
-Este glosario define todos los términos centrales del manuscrito en su uso operativo. Cada término viene con: definición precisa, capítulo donde se desarrolla, conexión con la métrica empírica EDI cuando aplica.
-
----
-
-## Términos del núcleo conceptual
-
-### Anti-reificación operativa
-Disciplina metodológica que prohíbe inferir ontología fuerte solo por rendimiento predictivo. Nunca afirmamos `X es Y`; afirmamos `bajo el instrumento I, X exhibe cierre operativo de grado G`. Capítulo 02-01.
-
-### Atractor empírico
-Estado o región del espacio de fase hacia el cual convergen las trayectorias del sistema bajo perturbación acotada. Operacionalización de **estructura pre-ontológica** y de **patrón estabilizado**. Identificable mediante series temporales con análisis de cuenca de atracción. Capítulo 02-01.
-
-### Cierre operativo
-Propiedad medida del trío {fenómeno, sonda ODE, diseño ABM} cuya constricción macro→micro es irreducible y significativa. Cuantificada por EDI. La validación fuerte (Nivel 4) exige además gate completo (`overall_pass=True`). Capítulo 03-04.
-
-### Compresión multiescala
-Operación epistemológica que reemplaza una subestructura compleja `G' ⊂ G` por una unidad operativa `n_{G'}` cuando el detalle interno no produce diferencia inferencial relevante para la pregunta `Q`. Operador formal `κ : G → G*`. Capítulo 02-02 (filosófica), 03-04 (empírica vía EDI).
-
-### Dossier de anclaje
-Filtro de admisión obligatorio para cualquier categoría candidata. Catorce componentes: pregunta Q fechada, variables operacionalizadas, sustrato instanciante, grafo G, hipergrafo H si procede, compresión κ, atractores identificados, pruebas de validación, predicción discriminante, intervención discriminante, operador ε, traducción B↔L3, limitaciones, comparación rival. Capítulo 03-02.
-
-### EDI (Effective Dependence Index)
-Métrica empírica que opera el operador κ. Definición: `EDI = 1 - RMSE_coupled / RMSE_no_ode`. Mide la degradación predictiva al apagar el acoplamiento ODE→ABM manteniendo el forcing exógeno. Significancia por permutación 999, CI por bootstrap 500. Capítulo 03-04.
-
-### Estructura pre-ontológica
-Regularidad operativa anterior a la objetualidad sustancial. Ni cosa con esencia, ni ficción lingüística. Identificable como atractor empíricamente robusto de un sistema dinámico acoplado. Núcleo del nombre del proyecto. Capítulo 02-01.
-
-### Irrealismo operativo
-Posición filosófica del manuscrito: realismo estructural moderado (en sentido operativo no-Ladyman, ver entrada siguiente) + pluralismo epistemológico + anti-reificación operativa. Ni realismo ingenuo, ni instrumentalismo puro, ni irrealismo radical. Capítulo 02-01.
-
-### Realismo estructural moderado (uso operativo)
-Compromiso filosófico de la tesis con la realidad de las estructuras —entendidas aquí como atractores empíricamente identificables sobre sustrato material dinámico— sin reducirla a estructura sin relata. **Declaración explícita de no-importación:** la tesis NO adopta la versión *ontic structural realism* (OSR) de Ladyman y Ross (2007, *Every Thing Must Go*, cap. 3, p. 130: *"There are no things. Structure is all there is."*), que es **eliminativista** respecto de los individuos auto-subsistentes ("our view is eliminative", p. 131). La tesis exige sustrato material sosteniendo la estructura (cap 02-01 §1.1); los relata (átomos, organismos, instituciones) no son artefactos pragmáticos derivados de la estructura modal sino condición de posibilidad de toda regularidad medible. L&R operan en cap 04-03 como **rival** en criterio A (anclaje material), no como aliado parcial. La nuance de Rainforest Realism (L&R 2007, cap. 4, p. 191: individuos como "legitimate book-keeping devices") no convierte la divergencia en convergencia: la tesis disputa el estatuto, no la admisibilidad discursiva. Cualquier referencia textual a "realismo estructural moderado" en el cuerpo del manuscrito debe leerse bajo esta convención. Capítulo 02-01 §0.3; cap 03-01 §12.2; cap 03-03 §10.5.
-
-### Self-organization (sentido técnico)
-Modelo positivo de la emergencia anclado en la tradición Maturana-Varela (1980, *Autopoiesis and Cognition*) y Haken (1977, *Synergetics*). Designa la estabilización dinámica del sistema acoplado bajo restricciones físicas, informacionales y de tarea, sin postular sustancias nuevas. Causalidad circular upward+downward, ambas materiales. **No es invocación retórica:** cualquier ocurrencia textual no anclada disciplinarmente debe sustituirse por "estabilización dinámica" o "convergencia a atractor". Capítulo 02-04 §4.
-
-### Sinónimos coloquiales del núcleo conceptual (convención)
-Los términos "patrón estabilizado", "regularidad operativa", "estructura operativa" y "cuenca de atracción" (cuando aparece como sinónimo del atractor en lugar de como concepto técnico distinto) se usan en el manuscrito como **registros coloquiales** de los dos términos canónicos: **estructura pre-ontológica** (lectura ontológica) y **atractor empírico** (lectura operacional). El cuerpo argumental privilegia los canónicos cuando la precisión filosófica es decisiva; los coloquiales se admiten para fluidez prosódica, sin valor técnico distinto. Esta convención se documenta aquí para evitar la lectura como cuatro conceptos distintos.
-
----
-
-## Términos operativos del marco
-
-### Naturalismo metafísico moderado
-Compromiso filosófico de partida explícitamente declarado, no conclusión demostrada: el sustrato material dinámico se asume como punto de partida, justificado por continuidad con la ciencia, parsimonia ontológica y capacidad operativa del aparato. Compatible con realismo estructural moderado; rechaza dualismo, idealismo, panpsiquismo, emanacionismo, creacionismo y pluralismo de planos sustanciales. Capítulo 02-01 §0.1.
-
-### Pre-ontológico (sentido genético-epistemológico)
-Estructura es pre-ontológica si y sólo si: (a) es regularidad operativa materialmente sostenida; (b) es previa al recorte categorial nominalizante; (c) es génesis de lo individuado (Simondon); (d) es operativamente identificable como atractor empírico. NO significa "anterior temporalmente"; significa "anterior al recorte categorial". Capítulo 02-01 §0.2.
-
-### B-series relacional
-Postura ontológica sobre el tiempo: los eventos están ordenados en serie *anterior–simultáneo–posterior* sin presente metafísicamente privilegiado. Eternalismo moderado. La flecha del tiempo es termodinámica, no metafísica. Compatible con relatividad especial y con la generalidad multiescalar requerida por la tesis. Capítulo 02-05 §1.
-
-### Manipulabilidad woodwardiana
-Postura sobre la causalidad: X causa Y si y sólo si una intervención sobre X (independiente del resto del sistema) produce un cambio sistemático en Y. Operacionalizada por el aparato EDI vía intervención ablativa (`do(coupling = 0)`). Compatible con el `do`-calculus de Pearl. Capítulo 02-05 §2.
-
-### Constitución descendente (downward constitution)
-Relación distinta de causación: X constituye Y si X es parte de la realización material de Y, verificable por manipulabilidad mutua de Craver. La constricción macro→micro del aparato EDI es **constitutiva, no causal**: el atractor macro constituye las restricciones del componente sin causar nuevos eventos por encima del cierre físico. Neutraliza el argumento de exclusión causal de Kim por modus tollens vacuo. Capítulo 02-05 §2.4.
-
-### Atractor normativo
-Valor (justicia, libertad, dignidad, verdad, belleza) entendido NO como entidad sustancial separada sino como región del espacio de fase de la conducta colectiva donde el sistema converge bajo perturbación, materialmente sostenido por prácticas, inscripciones, cuerpos en relación, sanciones organizadas y memoria histórica. Capítulo 02-06 §2.
-
-### Complementarismo metodológico (alcance acotado)
-Postura sobre la relación entre métodos en tercera persona (aparato EDI) y métodos fenomenológicos en primera persona. La tesis sostiene **co-existencia disciplinada acotada**: reconoce que los métodos fenomenológicos (Husserl, Merleau-Ponty, Thompson, Varela) operan sobre fenómenos ontológicamente continuos con los del aparato, pero **no integra engagement fenomenológico sustantivo** en el cuerpo argumental. La promesa fenomenológica del abstract es **declarativa**, no operativa: el manuscrito declara que el irrealismo operativo es compatible con el complementarismo, sin desarrollar el complementarismo como capítulo. Esta limitación se reconoce explícitamente en cap 05-01 §7 y en el régimen de validez declarado del front matter. Quien busque engagement fenomenológico desarrollado deberá consultar la deuda explícita en cap 06-03 §"Programa de extensiones fenomenológicas".
-
-### Estructuralismo matemático moderado
-Postura sobre el estatus de las entidades matemáticas: las estructuras matemáticas (hipergrafos, ODE, espacios de fase) son representaciones formales de patrones reales del sustrato. NO son entidades platónicas independientes; NO son ficciones útiles sin referencia. Su validez depende de homomorfismo parcial con la dinámica material. Capítulo 03-01 §15.
-
-### Inferencialismo brandomiano matizado
-Teoría del significado adoptada: el significado de un término es su rol inferencial dentro de prácticas materialmente sostenidas (Brandom 1994). El significado de "atractor", "cierre operativo κ", "estructura pre-ontológica" se constituye por su rol inferencial dentro del aparato y del corpus, no por referencia ostensiva ni por ficción sin referencia. Capítulo 02-02 §3.5.
-
-### Compresión sintáctica vs semántica
-Distinción técnica: la compresión sintáctica preserva estructura formal (variables, ecuaciones, dependencias) sin atender al significado; la compresión semántica preserva además el rol inferencial dentro de la práctica disciplinar. La compresión κ del aparato EDI es principalmente sintáctica pero se vuelve semántica cuando la sonda se elige por su rol teórico disciplinar. Capítulo 02-02 §3.5.2.
-
-### Flecha termodinámica
-Dirección de aumento de entropía en sistemas cerrados (segunda ley). En la tesis se distingue de la flecha cosmológica (expansión del universo) y de la flecha psicológica (percepción subjetiva pasado–presente–futuro), y se afirma como ontológicamente fundamental: las otras dos son derivadas. La irreversibilidad parcial de κ↔ε (la compresión preserva dependencias decisivas pero la expansión no recobra detalle perfectamente) es manifestación local de esta flecha, no propiedad lógica adicional. Capítulo 02-05 §1.2.
-
-### Eternalismo moderado
-Postura ontológica sobre el tiempo: pasado, presente y futuro son igualmente reales en sentido relacional B-series, sin que exista un "presente metafísicamente privilegiado". Compatible con la relatividad especial. La tesis adopta esta postura como mínimo ontológico requerido para que los atractores (objetos definidos por evolución temporal completa) sean coherentes. Capítulo 02-05 §1.1.
-
-### Manipulabilidad mutua (Craver)
-Criterio constitutivo (no causal): X es constitutivamente relevante para S si y sólo si manipular X cambia S y manipular S cambia X. Es la operacionalización de la constitución descendente que la tesis usa para neutralizar el argumento de exclusión causal de Kim. Capítulo 02-05 §2.4.
-
-### Intervención ablativa
-Operación que apaga el acoplamiento ODE↔ABM manteniendo el forcing exógeno y compara la predicción coupled con la no-coupled. Es la operacionalización woodwardiana de causalidad sobre variables del sistema acoplado y la base de la métrica EDI. Capítulo 03-04 §"EDI".
-
-### Argumento de exclusión causal (Kim)
-Argumento de Jaegwon Kim (1998) según el cual, dado el cierre causal del dominio físico y la sobreviniencia de las propiedades macro M sobre las propiedades micro P, M no puede tener poder causal independiente sin sobredeterminación o epifenomenalismo. La tesis responde distinguiendo causación de constitución: el atractor macro constituye restricciones, no produce eventos por encima del cierre físico. Capítulo 02-05 §2.4.
-
-### Block bootstrap (Politis-Romano 1994)
-Permutación que preserva la autocorrelación temporal de las series mediante bloques contiguos. La variante stationary bootstrap usa bloques de longitud geométrica aleatoria (parámetro 1/block_size); la variante moving block usa bloques de longitud fija. La implementación canónica del aparato (`common/calibration.py`) provee ambas; el módulo declara explícitamente cuál se usa. Capítulo 03-04 §"Calibración estadística avanzada".
-
-### FWER Holm-Bonferroni
-Corrección de family-wise error rate sobre comparaciones múltiples. Aplicada al corpus inter-dominio reduce los casos significativos sin corrección a los que sobreviven α=0.05 tras ajuste secuencial Holm. Sirve como filtro de significancia colectiva; no sustituye la inferencia individual por caso. Capítulo 03-04.
-
-### Información efectiva (uso auxiliar)
-Cantidad reportada en `metrics.json::effective_information` definida operacionalmente como `H(residuos_reducido) − H(residuos_completo)` con `H` = entropía diferencial KDE. Se calcula en `09-simulaciones-edi/common/hybrid_validator.py:249`. **No es la Effective Information de Hoel-Albantakis-Tononi** (2013, *PNAS* 110:19790-19795); no implica adopción de IIT. Métrica **auxiliar**, no central: no entra en QES, no entra en `overall_pass`, no entra en la clasificación del paisaje de emergencia. La inferencia central procede por EDI + permutación 999 + bootstrap 500 + FWER Holm. Capítulo 03-04 §"Información efectiva como métrica auxiliar (declaración)".
-
-### QES (Quality of Evidence Score)
-Auditoría interna de calidad de evidencia por caso: media ponderada de siete puntajes Qi ∈ [0,1] (trazabilidad de datos, tamaño efectivo, calidad de sonda, reproducibilidad mecanizada, convergencia multi-sonda, LoE, calibración estadística) computada en `common/quality_scorer.py`.
-Categorías: ROBUSTO (≥0.85), DEMOSTRATIVO (0.70–0.85), PROGRAMÁTICO (0.55–0.70), PILOTO (0.40–0.55), INADMISIBLE (<0.40).
-Definido en cap 03-formalizacion/04 §«Auditoría QES»; nota metodológica en cap 04-debates/05.
-Construcción interna del aparato; NO es GRADE/AMSTAR/Cochrane.
-
-### Auditoría criptográfica del setup
-Cálculo de SHA-256 sobre el código, parámetros y datos de entrada de cada caso, junto con git_commit_sha y timestamp UTC. Permite verificar que el setup actual coincide con el setup que produjo los outputs publicados. NO es pre-registro estricto en plataforma externa (que requeriría depósito previo a ver los datos en OSF u homólogo); es cadena de custodia computacional. Capítulo 03-04 §"Pre-registro criptográfico".
-
----
-
-## Operadores formales
-
-### μ (operador de medición)
-`μ : R → X`. Recorta el dominio efectivo de realidad `R` en variables observables `X` con régimen de medición `R` especificado. Capítulo 03-01.
-
-### G (grafo basal)
-`G = (V, E, W, T)`. Representa dependencias entre variables: V nodos, E aristas, W pesos, T reglas dinámicas. Cada arista pasa criterio de admisión por intervención (`do`-test). Capítulo 03-01.
-
-### H (hipergrafo)
-`H = (V, 𝓔)`. Hiperaristas conectan conjuntos de nodos cuando la dependencia conjunta no se reduce sin pérdida a relaciones binarias. Capítulo 03-01.
-
-### κ (compresión)
-`κ : G → G*`. Reemplaza subestructuras complejas por unidades operativas. Operacionalizado empíricamente vía EDI. Capítulo 03-01 + 03-04.
-
-### ε (expansión)
-`ε : n → G_n`. Abre un nodo comprimido cuando la pregunta exige más detalle. Garantiza reversibilidad de κ. Capítulo 03-01.
-
-### Q (pregunta paramétrica)
-`Q = (φ, τ, R)`. Triple fechado: formulación φ, tolerancia τ, régimen de medición R. Cambiar Q después del fallo invalida el ciclo. Capítulo 03-01.
-
----
-
-## Niveles del paisaje de emergencia
-
-### Nivel 0 (null)
-EDI ≤ 0. Sin cierre operativo detectable. 8 casos del corpus.
-
-### Nivel 1 (trend)
-EDI > 0, p ≥ 0.05. Indicios sin significancia. 4 casos.
-
-### Nivel 2 (suggestive)
-EDI > 0.01, p < 0.05. Constricción débil. 2 casos.
-
-### Nivel 3 (weak)
-0.10 ≤ EDI < 0.30, p < 0.05. Componente funcional con significancia. Análogo al ribosoma: tiene función pero no es organismo autónomo. 8 casos (incluido caso 30 v2).
-
-### Nivel 4 (strong)
-0.30 ≤ EDI ≤ 0.90, p < 0.05 (con `overall_pass=True` para gate completo). Cierre operativo alto. **En el corpus inter-dominio (verificado contra `metrics.json::phases.real`):** 7 casos sobre datos reales = 6 con gate (`overall_pass=True`: casos 04 Energía EDI=0.461, 16 Deforestación EDI=0.580, 18 Urbanización EDI=0.337, 20 Kessler EDI=0.694, 22 Fósforo EDI=0.322, 24 Microplásticos EDI=0.806) + 1 sin gate (caso 26 Starlink EDI=0.757 con `overall_pass=False` por C4_validity). **En el corpus inter-escala:** 7 casos en 7 escalas distintas (atómica, cuántica, bioquímica, celular oscilatoria, individual, astrofísica, astrofísica masiva).
-
-### Nivel 5 (cierre operativo fuerte)
-Strong + convergencia bajo múltiples sondas independientes + LoE = 5 (datos físicos directos) + frontera espacial nítida verificada. Programa futuro. Ningún caso del corpus actual lo alcanza, en ninguna escala. Definido con criterios operativos explícitos en cap 03-04 §"Niveles del paisaje" para evitar lectura como promesa no cumplida.
-
----
-
-## Registros de descripción (asimetría L1↔B↔L3↔S)
-
-### L1 (psicológico/ordinario)
-Categorías heredadas del lenguaje ordinario. Fija qué pregunta importa pero no responde por sí sola. Vínculo indirecto y restrictivo con L3. Capítulo 02-04.
-
-### B (conductual-biológico, físico-ecológico, técnico-institucional)
-Nivel material-instanciante. Ancla la respuesta. Variables: organismo + entorno + información + tarea + historia (en dominio biológico-conductual); o componentes físicos, técnicos, institucionales según dominio. Vínculo directo y traduccional con L3. Capítulo 02-04.
-
-### L3 (estructural-relacional formal)
-Modelos dinámicos, grafos, hipergrafos, leyes de control. Reconstruye formalmente las dependencias detectadas en B. Capítulo 02-04.
-
-### S (semántica revisada)
-Categorías que sobreviven a la auditoría. Se gana solo a posteriori. Capítulo 02-04.
-
----
-
-## Protocolo C1-C5
-
-### C1 Convergencia
-`RMSE_coupled < RMSE_no_ode`. Sin mejora respecto a baseline, no hay señal.
-
-### C2 Robustez
-Clasificación estable bajo ±20% de perturbación de parámetros.
-
-### C3 Determinismo aleatorio
-Semilla fija (`seed=42`). Reproducibilidad bit-a-bit.
-
-### C4 Consistencia de dominio
-Trayectorias respetan restricciones físicas (no-negatividad, conservación). Direccionalidad coherente con la teoría del dominio. Magnitudes plausibles según literatura.
-
-### C5 Reporte de incertidumbre
-CI bootstrap, modos de fallo, LoE, val_steps reportados con su implicación inferencial.
-
----
-
-## Niveles de Evidencia (LoE)
-
-**Tabla A.1.1.**
-
-**Tabla 0.7.1.**
-
-| LoE | Descripción | Ejemplos |
-|----:|-------------|----------|
-| 1 | Especulativo | Proxies indirectos, encuestas subjetivas, datos sintéticos sin ground truth |
-| 2 | Débil | Datos digitales traza con alto ruido semántico (caso 30 cae aquí) |
-| 3 | Medio | Datos estructurados pero incompletos o de corto plazo (<5 años) |
-| 4 | Fuerte | Series temporales consistentes, múltiples fuentes, >10 años |
-| 5 | Robusto | Datos físicos directos (sensores), estandarizados, >30 años |
-
----
-
-## Modos de admisión de aplicaciones
-
-### Modo demostrativo
-Caso paradigmático trabajado a fondo: dossier completo de catorce componentes, datos públicos, ecuaciones ajustadas, predicciones cumplidas, intervenciones documentadas, comparación rival con discriminación verificable. Capítulo 05-00.
-
-### Modo programático
-Conjetura articulada con criterio explícito de elevación: qué datos faltan, qué rival se enfrentaría, qué predicción discriminante se buscaría. La marca `MODO PROGRAMÁTICO` es obligatoria. Capítulo 05-00.
-
----
-
-## Otros términos del aparato
-
-### overall_pass
-Gate completo de validación: 13 condiciones simultáneas (C1-C5 + 8 adicionales). Estado más fuerte de admisión.
-
-### val_steps
-Tamaño de la ventana de validación. Restricción inferencial: ≥24 mensual / ≥10 anual = inferencia estándar; <5 = exploratorio.
-
-### Symploké CR (Cohesion Ratio)
-Indicador de frontera funcional. CR > 2.0 sugiere frontera espacial nítida (programa de Nivel 5).
-
-### Sonda macro (ODE)
-Instrumento computacional que genera la señal macro candidata. No agota el fenómeno; estima su grado de cierre operativo mediante el acoplamiento con el nivel micro. Ejemplos: Budyko-Sellers (clima), von Thünen (deforestación), Jambeck (microplásticos), behavioral_attractor (Fajen-Warren).
-
-### Paisaje de emergencia
-Conjunto ordenado de fenómenos clasificados por su grado de cierre operativo. Resultado principal de la tesis, no solo los Nivel 4.
-
-### Brecha instrumento-fenómeno
-Cláusula epistemológica: cada resultado describe el trío {fenómeno, instrumento, pregunta}. Reconocida explícitamente como condición epistémica honesta, no como debilidad.
-
-### Programa multi-sonda
-Trabajo futuro: validar 3-5 casos clave con sondas ODE alternativas. La convergencia inter-sonda fortalecería cada resultado.
-
-### ABM (Agent-Based Modeling)
-Simulación micro: retícula 40×40 de agentes con difusión espacial y acoplamiento al estado macro. Implementación CPU/GPU disponible.
-
-### ODE (Ordinary Differential Equation)
-Sonda macro: ecuación diferencial domain-specific que genera la señal macro candidata.
-
-### Acoplamiento bidireccional
-Coupling ABM↔ODE: la sonda macro afecta a la dinámica micro y viceversa cuando hay feedback configurado.
-
----
-
-## Términos de la teoría conductual (caso 30 y caso ancla)
-
-### Behavioral dynamics
-Marco teórico de Warren (2006): comportamiento adaptativo orientado a meta sin postular controlador centralizado. La organización emerge de la interacción agente-entorno bajo restricciones físicas, informacionales y de tarea.
-
-### Variable τ (tau)
-Razón entre tamaño angular óptico (θ) y su tasa de cambio (θ̇). Especifica tiempo hasta contacto sin requerir conocimiento explícito de distancia ni velocidad absoluta. Referencia canónica: Lee, D. N. (1976). "A theory of visual control of braking based on information about time-to-collision." *Perception* 5(4):437-459 (definición pp. 439-441, locus declarado posicionalmente; PDF no disponible en `07-bibliografia/` al cierre — verificación textual con paginación exacta pendiente como deuda menor cuando el PDF se incorpore). Capítulo 02-04.
-
-### Variable τ_bal
-`θ/θ̇`. Razón entre ángulo del palo y velocidad angular. Especifica tiempo hasta vertical (Foo, Kelso, Guzman 2000).
-
-### Información ecológica
-Patrones detectables del flujo óptico, acústico y háptico que estructuran el entorno. Materialmente real, no representación interna. Capítulo 02-04.
-
-### Heading φ
-Dirección de marcha actual. Variable conductual clave en locomoción (Fajen y Warren 2003).
-
-### Error de heading β_h
-`(φ - ψ_g)`. Ángulo entre heading actual y dirección de meta. Observable principal del caso 30.
-
----
-
-## Deuda residual operativa
-
-- **Limitación 1.** **`edi.valid`**. La p-value reportada en `metrics.json` es válida para un único contraste (`α=0.05`). El corpus contiene m=30 contrastes; bajo control FWER (Holm-Bonferroni, umbral 0.0031), sólo 14 casos sobreviven. La validez "en test único" no implica validez "bajo control de errores familiares". Camino de resolución: distinguir explícitamente en cada cifra de p-value reportada cuál es el régimen aplicado.
-- **Limitación 2.** **Permutación EDI**. El test de permutación en `09-simulaciones-edi/common/hybrid_validator.py:174` opera con `iid` sobre índices temporales. Para series con ACF > 0 (mayoría del corpus), los p-values están **subestimados** — resultado estándar de Davison-Hinkley 1997 (*Bootstrap Methods and their Application*, cap. 8). Camino de resolución: implementar `block_permutation_test_edi` con tamaño de bloque adaptado a la longitud de decorrelación de cada serie; declarar la semántica actual como "permutación iid sin control de autocorrelación" hasta entonces.
-- **Limitación 3.** **Bootstrap CI**. `bootstrap_edi()` en `hybrid_validator.py:193-219` reporta intervalos percentiles simples sin corrección BCa (bias-corrected accelerated). De los 32 casos del corpus, 21 tienen `val_steps < 30` y 12 tienen `val_steps = 8`, donde el sesgo de cobertura del percentil simple es severo (DiCiccio-Efron 1996). Camino de resolución: implementar BCa en `bootstrap_edi()` y añadir campo `ci_method` en `metrics.json` para preservar la trazabilidad histórica.
-- **Limitación 4.** **GPU batch init_noise**. `abm_core_gpu.py:583-619` comparte `init_noise` entre candidatos del grid search por diseño explícito, tanto en CPU como GPU. Esto es **decisión metodológica** (reduce varianza inter-candidato del grid) no detalle de implementación. Camino de resolución: declarar la semántica en el glosario para que la reproducibilidad inter-instalación no se confunda con accidente.
-- **Limitación 5.** **C2 protocolo**. En `hybrid_validator.py:977,997` la rama CPU usa `seed = 2 + i + 10` por candidato mientras la rama GPU usa `seed = seed_base` único. C2 (criterio booleano) **NO es invariante a plataforma** bajo la implementación actual. Camino de resolución: unificar semillas (usar la fórmula CPU en ambas ramas) y re-correr el corpus; mientras tanto declarar la limitación en el glosario.
-- **Limitación 6.** **`np.random` global**. `hybrid_validator.py:1278` ejecuta `np.random.seed(42)` global antes del fork con loky; mitiga la correlación inter-worker pero **no la elimina** porque hay otros `np.random.*` no auditados en `common/abm_*.py`. Camino de resolución: auditoría exhaustiva de llamadas globales a `np.random` en `09-simulaciones-edi/common/abm_*.py`; reemplazar por `Generator` aislado por worker.
-- **Limitación 7.** **C1 con `c1_fallback` diagnóstico**. `hybrid_validator.py:892-926` define `c1 = c1_relative OR c1_absolute`. La rama `c1_absolute` aprueba C1 sin requerir que el ODE aporte información: 8 fases del corpus (≈10 %) tienen `c1_convergence=True` con `EDI<0` (casos 02, 03, 09, 14, 20, 23, 25). Salida elegida: reclasificar `c1_absolute` como diagnóstico `c1_fallback` que no contribuye a `overall_pass` cuando `reduced_val` existe; mientras tanto la semántica fuerte de C1 es "convergencia ABM+ODE sobre el reducido".
-- **Limitación 8.** **Baselines sobre target distinto**. `09-simulaciones-edi/common/baselines.py:48-208` ajusta ARIMA/VAR/RW/GP sobre serie sintética propia (`_gen_series_with_coupling`), no sobre el `obs_val` del caso. Los ratios `ratio_*_vs_coupled` son aritméticamente válidos pero inferencialmente nulos; el campo `winner` no compara aparato vs baselines sobre el mismo target. La métrica EDI propia no se ve afectada. Camino de resolución: cualquier prosa que cite `winner` debe leerse como ilustrativa hasta implementar baselines sobre `primary_arrays.json:obs[val_idx]`.
-- **Limitación 9.** **Hash MD5 no detecta inconsistencia interna**. `replay_hash.py:44-52` (`md5_metrics`) certifica reproducibilidad bit-a-bit del `metrics.json` pero no examina invariantes algebraicos entre campos. Camino de resolución: implementar `verify_internal_consistency.py` con tres invariantes — `|edi.value − weighted_value/loe_factor| < 1e-6`, `|edi.value − (rmse_no_ode − rmse_abm)/rmse_no_ode| < 1e-4`, `ci_lo ≤ value ≤ ci_hi` — cableado a `./tesis audit` antes de `replay_hash.py`.
-- **Limitación 10.** **Calibración del ABM (objetivo bi-criterio)**. `calibrate_abm` en `hybrid_validator.py:496-549` selecciona parámetros minimizando `score = RMSE × max(0.5, 2 − corr)` (clamp inferior 0.5). EDI se evalúa sobre RMSE puro del modelo así seleccionado. El EDI reportado no es exactamente "el mejor ajuste predictivo del ABM acoplado en RMSE" sino "el mejor entre los modelos que también correlacionan temporalmente con la sonda macro". Camino de resolución: estudio de sensibilidad en 3 casos pre-acordados re-calibrando con `score = RMSE` puro y reportando `ΔEDI`.
-
-## Cierre
-
-Cada término del glosario se usa de manera consistente en todos los capítulos del manuscrito. Cuando un capítulo introduce un término nuevo, se añade aquí con su definición operativa y referencia cruzada.
-
-
-<p align="right"><sub><a href="#tabla-de-contenidos">↑ volver al índice</a></sub></p>
-
----
-
 
 <div id="introduccion"></div>
-
-# Introducción
 
 
 <div id="introduccion"></div>
@@ -720,16 +261,7 @@ Realismo estructural moderado + pluralismo epistemológico + anti-reificación o
 
 ## Régimen de validez declarado
 
-La tesis se sostiene como **programa ontológico multiescalar con método ejecutable parcialmente validado**, no como ontología general confirmada. El régimen más estricto aplicado hasta ahora confirma un caso weak, conserva un candidato pendiente y registra falsificaciones locales; todavía no cubre los 30 casos inter-dominio. El corpus inter-escala muestra transferibilidad computacional sobre datos mayoritariamente sintéticos, no invariancia ontológica establecida.
-
-### Limitaciones honestas reconocidas
-
-- p-value declarado mal calibrado (tasa empírica de tipo I = 24%, no 5%); los umbrales EDI sí son robustos;
-- caso 30 (behavioral dynamics) sufre circularidad detectada por sonda alternativa;
-- composición de los corpus es post-hoc, no pre-registrada;
-- datos del corpus inter-escala son sintéticos derivados de parámetros publicados;
-- el régimen B-T2.1 con pre-registro ex ante, detrend y block-permutation no se ha completado sobre todo el corpus inter-dominio;
-- todas las auditorías son endógenas; revisión por pares humanos hostiles es deuda externa.
+La tesis se sostiene como **programa ontológico multiescalar con método ejecutable y evidencia parcial**, no como ontología general confirmada. La Parte III presenta los resultados; el capítulo de limitaciones concentra los problemas de calibración, circularidad, datos sintéticos, cobertura incompleta y falta de replicación externa. Esta introducción no adelanta de nuevo ese inventario.
 
 ## Aporte original
 
@@ -750,8 +282,8 @@ El manuscrito se organiza en cinco partes:
 - **Parte I (Fundamentos):** ontología material-relacional, epistemología de la compresión, categorías, anclaje empírico, temporalidad y causalidad, dimensión normativa.
 - **Parte II (Aparato y método):** operadores formales, criterios de legitimidad, auditoría ontológica, operacionalización de κ, ética de investigación.
 - **Parte III (Evidencia empírica):** caso ancla canónico, corpus inter-dominio (30 casos), corpus inter-escala (10 casos), aplicaciones programáticas.
-- **Parte IV (Discusión):** debates con catorce posiciones rivales, limitaciones y puntos de presión.
-- **Parte V (Cierre):** conclusión y estado de la demostración, condiciones de fracaso y hoja de ruta.
+- **Parte IV (Discusión):** posiciones rivales, objeciones principales y limitaciones declaradas.
+- **Parte V (Cierre):** conclusión, estado de la demostración y condiciones de fracaso.
 
 
 <p align="right"><sub><a href="#tabla-de-contenidos">↑ volver al índice</a></sub></p>
@@ -868,10 +400,10 @@ La filosofía latinoamericana de la ciencia tiene tradición sistemista fuerte (
 | Mente postcognitivista | Acoplamiento organismo-entorno como tesis general | Cuantificación EDI del cierre operativo en behavioral dynamics | Caso 30 cuantitativo + caso 05-05 cualitativo |
 | Ontología analítica | Realismo estructural óntico (Ladyman-Ross) o sistemismo (Bunge) | Realismo estructural moderado + materialidad + EDI | Filtro empírico operativo no presente en rivales |
 | Complejidad computacional | Emergencia causal (Hoel) o irreducibilidad (Wolfram) | Cierre operativo κ vía EDI multidominio | Dossier reproducible + falsación rechazada |
-| Behavioral dynamics | Acoplamiento dinámico cualitativo (Warren, 2006, pp. 358–359; ver párrafo siguiente) | Versión cuantitativa Nivel 3 weak (caso 30) | Discriminación pública contra cognitivismo |
+| Behavioral dynamics | Acoplamiento dinámico cualitativo (Warren, 2006, pp. 358–359; ver párrafo siguiente) | Piloto cuantitativo no confirmatorio (caso 30) | Protocolo de contraste y detección de circularidad |
 | Filosofía latinoamericana | Sistemismo (Bunge) o hermenéutica (Hoyos) | Puente operativo entre sistemismo y validación cuantitativa | Aparato EDI multidominio |
 
-Sobre la celda *Behavioral dynamics*: Warren (2006) sostiene literalmente que «for a given task, the agent and its environment are treated as a pair of dynamical systems that are coupled mechanically and informationally. Their interactions give rise to the behavioral dynamics, a vector field with attractors that correspond to stable task solutions, repellers that correspond to avoided states, and bifurcations that correspond to behavioral transitions» (Warren, 2006, p. 358), y precisa que «stable behavioral solutions correspond to attractors in the behavioral dynamics, and transitions between behavioral patterns correspond to bifurcations. Such stabilities do not inhere a priori in the structure of the environment or in the structure of the agent but are codetermined by the confluence of task constraints and perceptual–motor control laws» (Warren, 2006, p. 359). El programa es cualitativo: enuncia atractores y bifurcaciones como descriptores conceptuales del acoplamiento agente–entorno sin un criterio empírico cuantitativo de admisión del cierre operativo. La tesis discrimina ahí: convierte ese "codetermined by the confluence of task constraints" en una métrica EDI con permutación 999 + bootstrap 500 (caso 30, Nivel 3 weak), permitiendo decidir empíricamente cuándo el acoplamiento es no trivial.
+Sobre la celda *Behavioral dynamics*: Warren (2006) trata agente y entorno como sistemas dinámicos acoplados y sitúa atractores, repulsores y bifurcaciones en la dinámica conductual (pp. 358–359). La tesis intentó convertir esa propuesta en un contraste EDI. El caso 30 detectó circularidad bajo una sonda alternativa y produjo p aproximado de 0.978 con block bootstrap; por eso se conserva como piloto que muestra cómo puede fallar la operacionalización, no como confirmación cuantitativa de Warren.
 
 ## 7. Contribución específica
 
@@ -880,7 +412,7 @@ A partir del mapa anterior, la contribución específica de la tesis al estado d
 1. **Marco ontológico unificado** — irrealismo operativo de estructuras pre-ontológicas como vía media entre realismo metafísico y anti-realismo, con materialidad de soportes y filtro empírico de admisión.
 2. **Aparato formal mínimo** — cinco operadores (μ, G, H, κ, ε) suficientes para auditar entidades sin sobrecarga metafísica (capítulo 03-01).
 3. **Métrica empírica EDI** — cierre operativo κ operacionalizado vía intervención ablativa con permutación + bootstrap + protocolo C1-C5 + 8 condiciones adicionales para `overall_pass=True`.
-4. **Corpus EDI multidominio** — 30 casos heterogéneos en física, biología, economía, política, tecnología, cultura y conducta humana. Bajo el régimen estricto vigente: 0 Strong confirmados, 1 Weak validado, 1 candidato, 4 falsificaciones locales, 3 controles rechazados y 21 casos sin cierre B-T2.1. Las distribuciones históricas se conservan solo como trazabilidad.
+4. **Corpus EDI multidominio** — cartografía de 30 casos inter-dominio con resultados positivos, nulos y adversos. La Parte III separa las salidas crudas del estatus estricto para que la amplitud del corpus no se confunda con validación general.
 5. **Discriminación pública contra rivales identificables** — capítulo 04-01 confronta 14 posiciones rivales con celdas comparativas explícitas y predicciones discriminantes.
 
 Cada punto es contribución verificable, no afirmación retórica.
@@ -1790,264 +1322,101 @@ Categorías son compresiones semánticas auditables. Objetos son unidades operat
 
 <div id="capitulo-4-anclaje-empirico-nivel-b-multiescalar"></div>
 
-# El nivel B: anclaje empírico (general multiescalar)
+# El nivel B: interfaz empírica del marco
 
+> **BORRADOR-IA · requires: H-J2, H-J8.** Reescritura editorial orientada a reducir duplicación con el caso Warren. La decisión filosófica final corresponde a la autoría humana.
 
 ## Tesis del capítulo
 
-> El nivel donde la tesis material-relacional gana o pierde anclaje empírico no es ningún nivel intermedio aislado, sino el **sistema dinámico acoplado entre el agente operativo y su entorno relevante**, bajo restricciones de tarea (o equivalente), físicas, informacionales e históricas. A ese nivel lo llamamos B. La definición es **invariante a la escala**: para un qubit, B es qubit-baño; para una proteína, B es macromolécula-solvente; para una persona, B es organismo-entorno-tarea; para un cúmulo globular, B es cúmulo-galaxia-marea. La asimetría L1↔B↔L3↔S es el protocolo formal de traducción que prohíbe la sustitución nominal y opera **a cualquier escala** donde el aparato puede aplicarse con sondas físicamente motivadas.
+El nivel B es la interfaz donde las categorías ordinarias y las descripciones formales se confrontan con un sistema material medible. No constituye una sustancia, un estrato universal de la realidad ni una ontología adicional. Es un recorte empírico relativo a una pregunta Q que identifica agentes, entorno, información disponible, tarea e historia relevante.
 
-## 1. Los cuatro registros articulados (definición multiescalar)
+La función de B es evitar dos errores simétricos. El primero consiste en derivar la ontología directamente del lenguaje cotidiano. El segundo consiste en tratar una formalización exitosa como si bastara para establecer qué existe. Entre ambos extremos, B exige que cada traducción conserve variables observables, condiciones de intervención y límites de aplicación.
 
-```
-L1 — del lenguaje ordinario / disciplinar : fija qué pregunta importa (vínculo indirecto)
-B  — del acoplamiento empírico            : ancla la respuesta (vínculo directo y traduccional)
-L3 — estructural-relacional               : reconstruye formalmente las dependencias detectadas
-S  — semántica revisada                   : recoge las categorías que sobreviven a la auditoría
-```
+## 1. Cuatro registros, una sola investigación
 
-**Definición multiescalar de B:** B es el nivel donde el agente operativo (sea cual sea su escala: qubit, molécula, célula, organismo, estrella, cúmulo) está acoplado dinámicamente con su entorno relevante bajo restricciones específicas de la escala. La estructura es **invariante a la escala**:
+El marco distingue cuatro registros porque responden preguntas diferentes:
 
-**Tabla 2.4.1.**
+| Registro | Pregunta | Producto |
+|---|---|---|
+| L1 | ¿Cómo se describe ordinariamente el fenómeno? | Categorías psicológicas, sociales o disciplinares |
+| B | ¿Qué sistema material puede medirse? | Variables, acoplamientos, restricciones y datos |
+| L3 | ¿Qué estructura formal preserva esas relaciones? | Grafo, hipergrafo, modelo dinámico o compresión |
+| S | ¿Qué significado conserva la categoría después del análisis? | Semántica revisada y alcance declarado |
 
-| Escala | "Organismo" en B | "Entorno" en B | "Tarea" en B | "Historia" en B |
-|--------|------------------|-----------------|---------------|-----------------|
-| Cuántica (caso 31) | Qubit | Baño térmico | Mantener coherencia | Pulsos previos |
-| Atómica (caso 32) | Configuración espín | Campo magnético | Acoplamiento espín-órbita | Trayectoria adiabática |
-| Molecular (caso 33) | Proteína | Solvente, T | Estado plegado | Trayectoria de plegamiento |
-| Bioquímica (caso 34) | Enzima | Concentración sustrato | Catálisis | Saturación previa |
-| Celular (caso 35-36) | Célula | Glucosa / TNF | Ciclo / respuesta | Estado de fase previo |
-| Individual (caso 37) | Sistema autonómico | Estrés | Regulación HRV | Tonos vagal/simpático |
-| Conductual (caso ancla / 30) | Organismo | Entorno físico | Locomoción a meta | Aprendizaje motor |
-| Astrofísica (caso 39-40) | Estrella / cúmulo | Espacio-tiempo galáctico | Pulsación / equilibrio | Evolución gravitacional |
+La secuencia no es una reducción lineal. L1 ayuda a formular Q; B determina qué puede observarse; L3 prueba si una descripción comprimida conserva capacidad explicativa; S devuelve una categoría más precisa al lenguaje. Si B no puede construirse sin arbitrariedad, el tránsito hacia L3 queda suspendido.
 
-La conducta humana (caso ancla Warren 2006, caso 30) es **una instancia entre muchas** de B, no su definición exclusiva. La primera iteración del manuscrito etiquetaba B como "conductual-biológico" porque el caso ancla era de behavioral dynamics; la versión multiescalar reconoce que B es **acoplamiento empírico genérico** y la subetiqueta "conductual" aplica solo a casos donde el agente es organismo en tarea conductual.
+## 2. Composición mínima de B
 
-> **Nota sobre la columna "atractor".** Los atractores listados en la Tabla 2.4.1 deben leerse bajo la distinción de cap 02-01 §0.3: para escalas con intervención experimental independiente del ajuste (casos 30, 31, 34, 35-37) la columna remite a **atractores en sentido κ-ontológica** (cuenca medida con manipulación); para escalas no experimentales o donde la cuenca se infiere de datos observacionales (casos 33, 39, 40) la columna remite a **atractores en sentido κ-pragmática** (cuenca observacional, sin manipulación independiente). La tabla no reescribe esta distinción — solo la reactiva como ancla cruzada al §0.3 del cap 02-01.
+Un recorte B debe declarar cinco componentes. Ninguno tiene prioridad ontológica automática sobre los demás.
 
-Lo que el borrador llamaba L2 se reparte entre B (donde están las cinco familias de variables descritas en §2) y los tramos específicos de la escala (neurobiología en escala individual, electroquímica en escala celular, hidrodinámica en escala astrofísica, etc.) cuando hagan falta para una pregunta concreta.
+| Componente | Función | Pregunta de control |
+|---|---|---|
+| Sistema focal | Delimita los procesos cuya organización se estudia | ¿Qué variables cambian conjuntamente? |
+| Entorno | Reúne condiciones externas con efectos sobre el sistema | ¿Qué perturbaciones alteran su trayectoria? |
+| Información disponible | Identifica regularidades utilizables por el sistema | ¿Qué variable puede modificar la acción sin presuponer un modelo interno? |
+| Tarea o régimen | Especifica el criterio de desempeño o estabilidad | ¿Respecto de qué demanda se evalúa la organización? |
+| Historia | Registra aprendizaje, dependencia de trayectoria o histéresis | ¿Qué estado actual depende de estados anteriores? |
 
-## 2. Qué incluye B
+Estos componentes son funcionales y relativos a Q. Una variable puede pertenecer al sistema focal en un estudio y al entorno en otro. Esa variación no implica arbitrariedad siempre que el recorte se declare antes del análisis y que una modificación del recorte pueda cambiar el resultado.
 
-`B` es el dominio de las relaciones materialmente sostenidas entre cinco familias de variables. Ninguna es prescindible. El recorte habitual `cerebro versus mundo` deja fuera tarea e historia, y por eso es mal anclaje.
+## 3. El acoplamiento como unidad de análisis
 
-### 2.1. Organismo
+B no estudia un agente aislado que recibe entradas y produce salidas. Estudia una dinámica acoplada en la que los estados del sistema y del entorno se condicionan mutuamente. En forma mínima:
 
-Cuerpo, biomecánica (longitudes, masas, frecuencias naturales, rigidez aparente), repertorio motor, sistemas perceptivos, plasticidad, estado fisiológico. Cuando proceda, actividad neural específica como subgrafo de B.
+\[
+\dot{x}=F(x,e,h), \qquad \dot{e}=G(e,x,t), \qquad y=M(x,e).
+\]
 
-### 2.2. Entorno
+Aquí, \(x\) representa el sistema focal, \(e\) el entorno, \(h\) la historia, \(t\) la tarea y \(y\) la medición. La tesis no exige que todo caso use ecuaciones diferenciales. Exige que el modelo haga explícita la dependencia que se perdería al separar artificialmente los componentes.
 
-Superficies, objetos, fuerzas físicas (gravedad, fricción, restitución), propiedades materiales, otros agentes con sus dinámicas.
+El cierre operativo aparece cuando una descripción macro del acoplamiento mejora de manera robusta la explicación o predicción respecto de una ablación pertinente. La ablación no prueba por sí sola una entidad ontológica; identifica una dependencia que merece investigación adicional.
 
-### 2.3. Información ecológica
+## 4. Información, tarea e historia
 
-#### 2.3.0. Definición filosófica de información
+### 4.1. Información ecológica
 
-Antes de listar los ejemplos, fijamos qué entiende por información la tesis. La tesis adopta una **definición material-relacional de información** que combina dos tradiciones:
+La información se entiende como estructura relacional disponible para la regulación de la conducta o del proceso, no como sustancia ni como contenido semántico autosuficiente. El punto heredado de Gibson es que ciertas regularidades del ambiente pueden guiar la acción sin reconstrucción completa del mundo. La tesis restringe esa idea: una regularidad solo cuenta como información en B si puede vincularse con una variable medible y con una diferencia en la dinámica.
 
-- **Bateson** (1972, *Steps to an Ecology of Mind*, p. 459): *"a difference which makes a difference"*. La información es **diferencia que produce diferencia** en la dinámica del sistema receptor.
-- **Dretske** (1981, *Knowledge and the Flow of Information*, cap. 3, p. 63): la información semántica es **correlación nómica** entre estados de la fuente y estados del receptor que sostiene inferencia confiable.
+Esto no excluye representaciones internas. Impide asumirlas como explicación por defecto cuando el acoplamiento organismo-entorno ya ofrece una hipótesis contrastable.
 
-**Síntesis de la tesis:** la **información es diferencia materialmente realizada** en el entorno (no en la mente del observador) que **modula la dinámica** del sistema acoplado cuando es detectada por sistemas perceptivos calibrados. No es entidad mental ni representación abstracta; es **propiedad estructural del sustrato material** que el organismo aprovecha sin necesidad de representarla internamente.
+### 4.2. Tarea
 
-**Distinción operativa:**
+Una misma organización puede ser estable para una tarea y fallar para otra. Por eso la tarea no es un contexto añadido al final, sino parte del recorte. En percepción-acción, por ejemplo, mantener equilibrio, frenar o evitar un obstáculo imponen regímenes distintos. El capítulo del caso Warren desarrolla esos contrastes; aquí basta la regla general: sin una tarea declarada, la estabilidad carece de criterio.
 
-- **información sintáctica** (Shannon): reducción de incertidumbre estadística;
-- **información semántica** (Dretske, Floridi): correlación con contenido inferencial;
-- **información ecológica** (Gibson, Bateson + tesis): diferencia materialmente realizada que modula dinámica acoplada **sin requerir representación interna**.
+### 4.3. Historia
 
-La tesis usa principalmente **información ecológica**: τ, ρ, flujo óptico no son representaciones en la mente, son patrones del entorno que modulan la dinámica del sistema acoplado.
+Aprendizaje, fatiga, institucionalización e histéresis muestran que el estado presente no siempre se explica con variables instantáneas. La historia entra en B cuando mejora una predicción discriminante o altera la cuenca de estados accesibles. No se añade como relato retrospectivo para salvar el modelo.
 
-#### 2.3.1. Ejemplos canónicos verificados en el caso ancla
+## 5. Autoorganización sin salto metafísico
 
-Patrones detectables del flujo óptico, acústico y háptico que estructuran el entorno. Ejemplos canónicos verificados en el caso ancla:
+La autoorganización designa la estabilización de una dinámica colectiva sin controlador central suficiente para explicar el patrón. Maturana y Varela permiten pensar la autonomía operacional; Haken y la teoría de sistemas dinámicos ofrecen herramientas para describir parámetros de orden y transiciones. La tesis adopta de estas tradiciones una pregunta común: ¿qué restricciones hacen posible que una regularidad se mantenga?
 
-- `τ`: razón entre tamaño angular óptico y su tasa de cambio; especifica tiempo hasta contacto;
-- `τ̇`: derivada temporal; especifica adecuación de la deceleración;
-- `τ_bal = θ/θ̇`: razón entre ángulo y velocidad angular; especifica tiempo hasta vertical;
-- ángulo de declinación bajo el horizonte: especifica distancia;
-- foco de expansión del flujo óptico: especifica dirección de auto-movimiento (heading φ_flow);
-- error de heading β = φ − ψ_g: ángulo entre dirección actual y dirección de meta.
+La respuesta sigue siendo local. Detectar autoorganización no autoriza a afirmar una ley ontológica universal ni una causalidad descendente fuerte. Autoriza a estudiar si el patrón posee estabilidad, capacidad de retorno, sensibilidad a perturbaciones y relevancia para Q.
 
-Estas variables son materialmente reales: están inscritas en la geometría y la física del entorno y pueden ser detectadas por sistemas perceptivos calibrados. No son representaciones internas.
+## 6. Asimetría entre registros
 
-### 2.4. Tarea
+Las traducciones entre L1, B, L3 y S no tienen la misma fuerza:
 
-Objetivo (meta espacial, altura constante, parar antes del obstáculo), restricciones (rapidez, riesgo, costo energético), criterios de éxito o fracaso. La tarea selecciona qué variables son relevantes y qué tolerancia es aceptable. Selectividad que hace que la dinámica observable a nivel B sea de baja dimensión: la tarea ya hizo el primer trabajo de compresión antes de que el modelador llegue.
+1. L1 a B es selectiva. Una categoría ordinaria orienta la investigación, pero puede fragmentarse en varias variables o quedar sin correlato medible.
+2. B a L3 es la traducción más exigente. Debe declarar medición, pérdida de información, supuestos y criterio de comparación.
+3. L3 a B requiere interpretación. Una estructura matemática no identifica por sí sola qué proceso material la instancia.
+4. S se formula después de los contrastes. Puede conservar, restringir o abandonar la categoría inicial.
 
-### 2.5. Historia
+Esta asimetría es un protocolo contra la reificación. Evita que una palabra produzca un objeto por decreto y que una ecuación produzca una ontología por elegancia.
 
-Trayectorias previas, aprendizaje, desarrollo, evolución, exposición a perturbaciones. Sin esta dimensión no se explica por qué dos agentes con la misma fisiología frente al mismo entorno producen conductas distintas. La historia entra como variables explícitas en el dossier de anclaje cuando el dominio lo requiere.
+## 7. Alcance y límites
 
-## 3. El acoplamiento como estructura básica de B
+B es generalizable como plantilla de investigación, no como prueba de que todos los dominios compartan la misma estructura ontológica. Su uso en fenómenos biológicos, técnicos o institucionales exige variables y sondas propias. La transferencia de la plantilla muestra comparabilidad metodológica; la invarianza ontológica requeriría además datos reales, convergencia entre sondas independientes, intervención pertinente y replicación externa.
 
-La unidad mínima de descripción a este nivel no es el organismo aislado ni el entorno aislado. Es el par dinámico acoplado:
+El caso Warren funciona como ancla porque permite construir un B especialmente rico: sistema perceptivo-motor, entorno controlado, variables informacionales, tareas diferenciadas e historia experimental. Ese éxito no se transfiere automáticamente al resto del corpus. Los casos inter-dominio e inter-escala deben ganar su admisión por separado.
 
-```
-ė = Φ(e, F)              dinámica del entorno bajo fuerzas F
-ȧ = Ψ(a, i)              dinámica del agente bajo información i
-F = β(a)                 fuerzas que el agente ejerce sobre el entorno
-i = λ(e)                 información ecológica disponible en el entorno
-```
+## 8. Resultado del capítulo
 
-Estas cuatro ecuaciones (formalmente equivalentes a las del ciclo percepción-acción de Warren) capturan dos acoplamientos simultáneos:
+El nivel B cumple una función precisa: obliga a que toda afirmación sobre estructura pase por un sistema material medible antes de recibir interpretación ontológica. Conecta lenguaje, datos y formalización sin identificarlos. El resto de la tesis depende de esta disciplina: si B es débil, L3 solo formaliza una intuición; si B está bien construido, L3 puede evaluar una dependencia, aunque todavía no demuestre una ontología fuerte.
 
-- **acoplamiento mecánico**: el agente actúa físicamente sobre el entorno y el entorno reacciona;
-- **acoplamiento informacional**: el entorno produce patrones detectables que modulan la dinámica del agente.
+## Deuda residual
 
-La trayectoria conductual del par no es la suma de la trayectoria del agente y la del entorno: es la trayectoria del sistema conjunto en su espacio de estados.
-
-### Consecuencias ontológicas
-
-1. el `patrón estabilizado` (capítulo 02-01) se identifica con un atractor del sistema acoplado;
-2. la `restricción real` se identifica con la estructura del campo vectorial (dónde converge, dónde diverge, dónde transiciona);
-3. la `causalidad circular` se opera técnicamente: las componentes determinan la dinámica conjunta y la dinámica conjunta retroalimenta a las componentes a través de las leyes de control.
-
-## 4. Self-organization: el modelo positivo de la emergencia
-
-El borrador rechazaba el emergentismo fuerte (correctamente) pero solo como negación. Faltaba el modelo positivo. La tesis lo proporciona aquí, **anclado disciplinarmente** en dos tradiciones independientes que convergen en lo esencial:
-
-- **Maturana y Varela (1980, *Autopoiesis and Cognition*, p. 78-84):** la organización viva es *"a network of processes of production [...] which through their interactions and transformations continuously regenerate and realize the network of processes that produced them"* (p. 78-79). La autopoiesis es **cierre operacional sostenido por transformaciones materiales**, no propiedad emergente sustancial.
-- **Haken (1977, *Synergetics: An Introduction*, cap. 1, p. 1-7):** *"in many disciplines [...] a sudden self-organization of structure is observed when control parameters cross critical values"* (p. 1). El **principio del esclavizamiento** (slaving principle, cap. 7, p. 191-204) reduce la dinámica de muchos modos a unos pocos modos colectivos cuando el sistema cruza un umbral crítico — operacionalización de la emergencia sin sustancia añadida.
-
-Sobre esa doble base, la tesis fija:
-
-> Un fenómeno es emergente, en el sentido del marco, cuando dos o más sistemas dinámicos materialmente acoplados generan en el espacio conjunto estabilidades, inestabilidades y transiciones que no están preinscritas en ninguno de los componentes aislados pero tampoco son sustancia nueva.
-
-Esta es la formulación técnica de **self-organization en sentido Maturana-Varela + Haken**: la emergencia es estabilización dinámica del sistema acoplado bajo restricciones físicas, informacionales y de tarea, no aparición de entidad adicional. Tres rasgos:
-
-- **upward causation**: las componentes producen la dinámica global;
-- **downward causation**: la dinámica global retroalimenta a las componentes (las leyes de control quedan ajustadas porque funcionan en el régimen estable);
-- **anclaje material**: el fenómeno emergente es materialmente realizado y empíricamente identificable.
-
-**Convención del manuscrito (glosario operativo §"Self-organization (sentido técnico)"):** cualquier ocurrencia textual de "self-organization", "auto-organización" o equivalentes en este manuscrito remite a esta sección y a las dos fuentes citadas. Donde la prosa no pueda mantener el anclaje disciplinar, debe sustituirse por "estabilización dinámica" o "convergencia a atractor".
-
-**Costo declarado: la doble base no es convergencia.** Maturana-Varela y Haken no constituyen una sola tradición. La autopoiesis es un esquema **organizacional** (cierre operacional, producción recursiva de los propios componentes) que Maturana resistió etiquetar como "self-organization" precisamente porque ese término, en el uso sinergético de Haken, describe **patrones estables bajo gradiente termodinámico** sin requerir clausura ni auto-producción. La sinergética opera con asimetría top-down (parámetros de orden esclavizan modos rápidos); la autopoiesis opera con circularidad sin polo dominante. Lo que la tesis toma de cada tradición es distinto y desigual: de **Haken** hereda la operacionalización dinámica (atractor del sistema acoplado bajo cruce de parámetro de control, baja dimensión efectiva); de **Maturana-Varela** hereda solo la **idea regulativa** de que la dinámica conjunta no es reducible a la suma de los componentes y que la organización puede ser invariante mientras los componentes cambian. La tesis **no afirma que sus sistemas EDI sean autopoiéticos** en sentido estricto; afirma que el modelo dinámico de emergencia (Haken) es compatible con esa idea regulativa y la opera empíricamente. Cuando el manuscrito dice "self-organization en sentido Maturana-Varela + Haken" debe leerse como **estabilización dinámica al modo de Haken con la restricción regulativa de no-reducción heredada de la tradición autopoiética**, no como síntesis filosófica de ambas. La discusión informada de la tensión entre ambos esquemas (Thompson 2007, *Mind in Life*, cap. 5) queda registrada como referencia secundaria pendiente de verificación con paginación (B-T:fetch-thompson-2007).
-
-Esto cierra la cláusula del capítulo 02-01: la emergencia no multiplica sustancias, opera como auto-organización en el sentido Maturana-Varela 1980 y Haken 1977, **bajo la asimetría declarada arriba**.
-
-## 5. Información ecológica como categoría central
-
-Una tentación de cualquier ontología material es hacer del entorno una pasividad. La tesis ya lo rechaza, pero el mecanismo positivo aparece aquí: la información ecológica es regularidad estructural del medio físico que el organismo puede detectar sin requerir representación interna.
-
-Para la tesis, esto cierra una brecha: explica cómo la conducta puede ser regular sin requerir un controlador central. La regularidad la pone en parte el entorno; el organismo se acopla a ella vía variables informacionales que no son representaciones sino diferencias materialmente implementadas que modulan la dinámica.
-
-Estatuto ontológico: la información ecológica es realidad de tipo estructural (capítulo 02-01). No es realidad fuerte (no es cuerpo) y no es teórica (no es solo modelo): es la estructura del campo informacional que el acoplamiento detecta y aprovecha.
-
-## 6. Tarea como dimensión constitutiva
-
-La tarea no es accesorio. Es parte del sistema acoplado. Sin tarea no hay variables conductuales relevantes: la pelota es solo un proyectil parabólico, no `pelota a botar a altura constante`. El error de heading β no existe sin meta `ψ_g`. La tarea fija qué cuenta como atractor para una `Q` específica.
-
-Esto tiene una consecuencia para la ontología. Algunos atractores existen incondicionalmente en el sistema (atractor pasivamente estable del raqueteo, repulsor físico del palo invertido, sistema neutralmente estable del frenado). Pero los atractores conductuales típicos son creados por el acoplamiento informacional bajo restricción de tarea: emergen cuando la información se acopla al sistema con una ley de control específica, y desaparecen sin acoplamiento. Esto es realismo estructural en su versión más sutil: el atractor no preexiste a la tarea, pero una vez constituida la tarea el atractor es plenamente real.
-
-## 7. Historia como variable explícita
-
-La historia entra como variables explícitas siempre que la pregunta lo requiera:
-
-- **rondas previas** en una sesión de aprendizaje;
-- **fase de aprendizaje** (exploración inicial, calibración, estabilización);
-- **calibración perceptiva** previa a la tarea;
-- **exposición** a perturbaciones específicas;
-- **desarrollo ontogenético** cuando aplica;
-- **historia evolutiva** cuando proceda para repertorios motores o sensoriales.
-
-La historia no se trata como variable aparte; se incorpora como parte de las variables `X` del operador μ (capítulo 03-01). Esto permite que las leyes de control sean específicas del agente sin perder la forma funcional general.
-
-## 8. Asimetría L1↔B↔L3↔S como protocolo
-
-Este es el aporte estructural del capítulo. La asimetría no es decorativa; es protocolo de admisión y traducción.
-
-### 8.0. Nota sobre el nivel cuantificacional de la asimetría
-
-La asimetría se formula con dos partes que viven en niveles cuantificacionales distintos. La validación lógica formal con ST (Parte II, validación lógica formal, Hallazgo ST-1) detectó que mezclarlos en un solo nivel produce contradicción proposicional. La formulación correcta es:
-
-- **Universal:** la traducción B ↔ L3 es bidireccional para toda categoría admisible (`∀x ((B(x) ↔ L3(x)))`); el filtro de S vía B y L3 es universal (`∀x ((B(x) ∧ L3(x)) → S(x))`).
-- **Existencial:** las afirmaciones *"L1 no se deriva universalmente de S"* y *"S no se deriva universalmente de L1"* son **existenciales** (`∃x (L1(x) ∧ ¬S(x))` y `∃x (S(x) ∧ ¬L1(x))`), no negaciones de implicación universal. Significan: existen categorías L1 que no sobreviven al filtro y existen categorías S que no proceden de un L1 nombrado.
-
-Esto evita la trampa de leer la asimetría como negación universal (que sería contradictoria) y la fija como **distinción de cobertura**: B y L3 cubren completamente el espacio de categorías admisibles; L1 y S sólo se solapan parcialmente con ese espacio.
-
-### 8.1. L1 con L3: indirecto y restrictivo
-
-L1 plantea preguntas comunicables (`¿cómo decide alguien por dónde caminar?`, `¿cómo recuerda una secuencia?`). Esas preguntas son indispensables para fijar relevancia. Pero L1 no responde: nombra el explanandum. La respuesta se construye en B y se formaliza en L3. L3 no debe responder con el mismo vocabulario de L1 (so pena de sustitución nominal); le habla a L1 solo a través de sus consecuencias observables.
-
-### 8.2. B con L3: directo y traduccional
-
-L3 es la reconstrucción formal de las dependencias detectadas en B. Cada término de L3 debe traducirse a una variable conductual o biológica medible. Si una clase estructural de L3 no se traduce a B, la clase está flotando — formalismo vacío.
-
-### 8.3. S a posteriori
-
-S (la semántica revisada: las categorías que sobreviven a la auditoría) se gana solo a posteriori. Las categorías que valga la pena conservar son las que: corresponden a atractores reales identificados en B; tienen formalización en L3; discriminan predicción e intervención. Las que no, se eliminan o se descomponen. La aspiración no es eliminar L1; es reconstruir S desde B + L3.
-
-## 9. Qué descarta este nivel
-
-**Tabla 2.4.2.**
-
-| Tentación rechazada | Razón |
-|---|---|
-| Reduccionismo neurocéntrico | Sin tarea, entorno e historia, los circuitos no explican conducta |
-| Mentalismo solipsista | Las categorías mentales sin acoplamiento con B son etiquetas |
-| Formalismo desanclado | L3 sin traducción a B es metafísica formal |
-| Conductismo radical | El acoplamiento informacional y la baja dimensionalidad estructural exceden el inventario E–R |
-| Cognitivismo computacional fuerte | El sistema no requiere representación interna como recurso primario |
-
-La discusión detallada con cada rival se trata en capítulo 04-01.
-
-## 10. Diálogo con interlocutores
-
-### 10.1. Gibson — psicología ecológica
-
-Gibson (1979, *The Ecological Approach to Visual Perception*, cap. 8) sostiene que la información para la acción está disponible en el medio: *"the information for the perception of an object is not its image. The information in light to specify something does not have to resemble it"* (p. 304 ed. Houghton-Mifflin 1986). En los capítulos finales (cap. 13–14) explica que el control de la acción no requiere representación interna como recurso primario; basta con que el sistema perceptivo recoja invariantes específicos del flujo óptico.
-
-La tesis recoge exactamente esto y lo opera: la información ecológica es **realidad estructural** (capítulo 02-01) y se traduce a variables medibles (τ, ρ, flujo óptico, ángulo de declinación). Donde Gibson queda en la formulación cualitativa de la affordance, la tesis avanza al sistema dinámico acoplado vía Warren-Fajen, ofreciendo ecuaciones cuantitativas y, en el caso 30 del corpus EDI, validación empírica con EDI = 0.262 significativo.
-
-### 10.2. Maturana y Varela — autopoiesis y enaction
-
-Maturana y Varela (1980, *Autopoiesis and Cognition*, cap. III) proponen la autopoiesis como cierre operacional de los sistemas vivos: *"an autopoietic machine continuously generates and specifies its own organization through its operation as a system of production of its own components"* (p. 79). En *El árbol del conocimiento* (1984, cap. 5) extienden la noción al ámbito cognitivo.
-
-La tesis recoge la idea de cierre y la **operacionaliza** como cuenca de atracción del sistema acoplado bajo perturbación, con tolerancia explícita. La autopoiesis no requiere lectura mística: es estabilidad asintótica empíricamente verificable. La diferencia con Maturana-Varela: la tesis no asume circularidad organizacional como invariante a priori; la verifica caso por caso vía EDI.
-
-### 10.3. Varela, Thompson y Rosch — embodied mind
-
-Varela, Thompson y Rosch (1991, *The Embodied Mind*, cap. 8) consolidan la tesis de la cognición enactiva: *"cognition consists not of representations but of embodied action [...] the world is not something that is given to us but something we engage in by moving, touching, breathing, eating"* (p. 200). Thompson (2007, *Mind in Life*, cap. 4) lo desarrolla con neurofenomenología.
-
-La tesis asume el enactivismo como tesis empírica del **nivel B**. La diferencia operativa: la tesis añade el **filtro formal de admisión** (capítulo 03-02) y la **operacionalización empírica de la compresión κ** (capítulo 03-04 y corpus EDI), que el enactivismo dejaba programáticos. Esta es una contribución específica a la tradición enactiva: la metodología cuantitativa que la tradición pedía pero no construía.
-
-### 10.4. Andy Clark — extended mind
-
-Clark y Chalmers (1998, "The Extended Mind", *Analysis* 58:7-19) sostienen el principio de paridad: *"if, as we confront some task, a part of the world functions as a process which, were it done in the head, we would have no hesitation in recognizing as part of the cognitive process, then that part of the world is (so we claim) part of the cognitive process"* (p. 8). Clark (2008, *Supersizing the Mind*, cap. 4) extiende el argumento.
-
-La tesis lo opera como caso de B donde el entorno técnico se incorpora a las variables del acoplamiento. La extensión no es metafísica; es **decisión empírica sobre qué entra en X** del operador μ. La tesis evita la objeción de Adams y Aizawa (2008) (causa-constitución) exigiendo el criterio operativo: una variable extiende el acoplamiento si y solo si su ablación reduce significativamente la dinámica del sistema.
-
-### 10.5. Warren — behavioral dynamics
-
-Warren (2006, *Psychological Review* 113:358-389) proporciona el caso paradigmático trabajado del nivel B. La tesis central del programa es que el comportamiento adaptativo no está impuesto por un controlador interno sino que emerge de la interacción agente–entorno bajo restricciones físicas, informacionales y de tarea. Cita verificada en PDF: *"Adaptive behavior, rather than being imposed by a preexisting structure, emerges from this confluence of constraints under the boundary condition of a particular task or goal"* (Warren 2006, p. 358). La formulación dinámica de la locomoción dirigida: ecuación de heading de segundo orden con parámetros ajustados (b = 3.25, k_g = 7.50, c1 = 0.40, c2 = 0.40), que reproduce el r² = .980 de la varianza de las series temporales medias (Warren 2006, p. 375).
-
-La tesis recoge a Warren como **interlocutor principal de B** y ancla paradigmática: aporta el vocabulario de atractor, repulsor, bifurcación, ley de control y acoplamiento agente-entorno. Warren delimita el alcance de su ajuste: *"The fits to the mean time series accounted for a proportion of .980 of the variance, indicating that model behavior is highly similar to the mean human behavior"* (Warren 2006, p. 375). El caso 30 EDI no es una elevación cuantitativa de ese resultado: usa datos sintéticos, otra escala de agregación y un criterio distinto; además, no supera el block bootstrap. La comparación sirve para formular una prueba futura, no para explicar post hoc la diferencia entre r² y EDI.
-
-## 11. Consecuencia para el aparato formal
-
-El operador `μ : R → X` debe leerse, en el caso de fenómenos psicológicos y conductuales, como medición a nivel B. `X` puede entonces incluir:
-
-- variables conductuales: trayectoria, error de heading, fase, período, aceleración de impacto, latencia;
-- variables informacionales ecológicas: τ, ρ, flujo óptico, ángulo de declinación, fase relativa;
-- variables biomecánicas: longitud de extremidad, frecuencia natural, rigidez aparente;
-- variables de tarea: objetivo, restricciones, costo, criterio de éxito;
-- variables históricas: rondas previas, exposición, fase de aprendizaje.
-
-El grafo `G = (V, E, W, T)` se construye sobre estas variables. Las dependencias que `E` representa son las del sistema acoplado, no las de un agente aislado. Las reglas de actualización `T` son las leyes físicas y las leyes de control empíricamente identificables.
-
-## 12. Cierre
-
-Con la incorporación de B como nivel pleno, la tesis recupera el plano que la respuesta del profesor exigía como condición de anclaje. Las consecuencias son tres:
-
-- la ontología de patrones estabilizados gana su modelo positivo (atractores de sistemas acoplados);
-- la epistemología de la compresión gana su test (la dinámica de baja dimensión a nivel B);
-- la crítica al mentalismo deja de ser eliminativa para volverse constructiva: no se trata de borrar `mente`, `memoria` o `yo`, sino de reconstruir cuáles atractores conductuales-ecológicos comprime cada una y, a partir de ahí, decidir qué se conserva, qué se reformula y qué se descarta.
-
-## 13. Deuda residual
-
-- §10 (anclaje gibsoniano y reconstrucción Warren) salta de Gibson 1979 directamente a Warren 2006 omitiendo los pasos intermedios Turvey-Shaw 1981 y Kugler-Turvey 1987, que articularon la psicología ecológica como dinámica de sistemas. PDFs ausentes en `07-bibliografia/`. Acción: fetch Turvey-Shaw 1981 y Kugler-Turvey 1987 antes de redactar §10.1.bis con paginación verbatim. Pendiente fetch.
-- §50-67 invoca a Bateson (cibernética) y Dretske (información shannoniana) como combinables bajo la noción ecológica de información. Hallazgo: Bateson cibernético ("the difference that makes a difference") y Dretske semántico-shannoniano son incompatibles en su tratamiento de la intencionalidad; "combina" es engañoso. PDFs Bateson 1972 y Dretske 1981 ausentes en `07-bibliografia/`. Acción: declarar subordinación bajo Gibson (información ecológica como variable estructural del entorno) y fetch Bateson/Dretske antes de cita paginada. Corte filosófico pendiente de decisión autoral.
+La generalización de B fuera de percepción-acción sigue abierta. Debe evaluarse caso por caso con datos reales y criterios de intervención propios del dominio. También queda pendiente la decisión humana H-J8 sobre cuánto peso ontológico atribuir a la asimetría entre registros.
 
 
 <p align="right"><sub><a href="#tabla-de-contenidos">↑ volver al índice</a></sub></p>
@@ -2599,7 +1968,7 @@ Ladyman y Ross (2007, *Every Thing Must Go*, cap. 3, p. 130) formulan el *ontic 
 
 La concesión honesta es que L&R no son eliminativistas radicales en sentido trivial: en su versión Rainforest Realism (cap. 4, p. 191) reconocen que los individuos son "legitimate book-keeping devices" de las ciencias especiales. La discrepancia con la tesis no se juega entonces en si OSR admite o no objetos discursivos, sino en su estatuto: para OSR los individuos son **artefactos pragmáticos derivados** de la estructura modal fundamental; para la tesis, los individuos son **materialmente sostenidos en cada estrato** (átomos, organismos, instituciones) y la estructura es propiedad operativa del sustrato, no entidad ontológicamente prior. El operador κ no preserva "estructura sin sustrato"; preserva propiedades del sustrato bajo compresión.
 
-La coincidencia técnica —ambos marcos privilegian relaciones e invariantes sobre propiedades intrínsecas aisladas— no es identidad ontológica. La tesis usa la etiqueta "realismo estructural moderado" en sentido **operativo no-Ladyman**, según declaración explícita del glosario (`00-proyecto/07-glosario-operativo.md` §"Realismo estructural moderado"). La tabla comparativa con rivales (cap 04-03) codifica esta discrepancia en el criterio A (anclaje material): OSR no exige sustrato; la tesis sí.
+La coincidencia técnica —ambos marcos privilegian relaciones e invariantes sobre propiedades intrínsecas aisladas— no es identidad ontológica. La tesis usa la etiqueta "realismo estructural moderado" en sentido **operativo no-Ladyman**, según declaración explícita del glosario (`00-proyecto/07-glosario-operativo.md` §"Realismo estructural moderado"). El capítulo de posiciones rivales (`04-debates/01-debates-con-posiciones-rivales.md`) desarrolla la discrepancia decisiva: OSR no exige sustrato material en el sentido adoptado aquí; la tesis sí.
 
 ### 12.3. Strogatz, Kelso, Haken — sistemas dinámicos no lineales
 
@@ -3381,7 +2750,7 @@ categoría está flotando y debe reformularse.]
 - **16 Deforestación:** dossier en `09-simulaciones-edi/16_caso_deforestacion/` (overall_pass=True, reproducibilidad verificada con World Bank en vivo)
 - **20 Kessler:** dossier en `09-simulaciones-edi/20_caso_kessler/` (overall_pass=True)
 - **27 Riesgo Biológico:** dossier en `09-simulaciones-edi/27_caso_riesgo_biologico/` (overall_pass=True)
-- **30 Behavioral Dynamics:** dossier en `09-simulaciones-edi/30_caso_behavioral_dynamics/` (Nivel 3 weak, sonda `behavioral_attractor` segundo orden)
+- **30 Behavioral Dynamics:** dossier en `09-simulaciones-edi/30_caso_behavioral_dynamics/` (piloto no confirmatorio; sonda `behavioral_attractor` de segundo orden, `overall_pass=false`, p_block posterior ≈ 0.978)
 
 Cada uno tiene:
 - `case_config.json` con parámetros y dates
@@ -3665,7 +3034,7 @@ Ladyman y Ross (2007, *Every Thing Must Go*, cap. 3, p. 130) toman la estructura
 
 La auditoría ontológica de este capítulo se sitúa en posición contraria: el sustrato material y sus procesos son ontológicamente primeros; las estructuras (atractores, invariantes bajo κ, regularidades que pasan el dossier) son **propiedades operativas del sustrato**, no entidades autónomas que lo dispensen. La consecuencia metodológica es directa para la auditoría: los criterios Fase 5 (patrones de orden superior) y Fase 6 (compresión legítima) operan sobre **individuos materialmente sostenidos** —átomos, organismos, instituciones— cuya admisión exige dossier empírico, no derivación a partir de estructura modal fundamental. La diferencia con L&R no es retórica: si OSR fuese correcta, el criterio A del dossier (anclaje material) sería redundante; en la tesis, ese criterio es decisivo.
 
-Por tanto OSR cuenta en el cuadro de la auditoría como **rival** en el espacio de posiciones, no como referente afín. La tabla comparativa con rivales (cap 04-03, criterio A) codifica esta discrepancia. La etiqueta "realismo estructural moderado" se usa en sentido operativo no-Ladyman; el glosario (`00-proyecto/07-glosario-operativo.md`) declara esta convención de lectura.
+Por tanto OSR cuenta en la auditoría como **rival** en el espacio de posiciones, no como referente afín. El capítulo `04-debates/01-debates-con-posiciones-rivales.md` desarrolla esta discrepancia. La etiqueta "realismo estructural moderado" se usa en sentido operativo no-Ladyman; el glosario declara la convención.
 
 ## 11. Resultado metodológico
 
@@ -4345,170 +3714,115 @@ La responsabilidad académica completa del manuscrito reside en los autores huma
 
 # Criterios de admisión de aplicaciones
 
+> **BORRADOR-IA · requires: H-J2, H-J8.** Versión condensada. Este capítulo clasifica aplicaciones; la evidencia y los resultados pertenecen a los capítulos siguientes.
 
 ## Tesis del capítulo
 
-> Una aplicación entra en modo demostrativo solo si presenta dossier completo de anclaje con datos públicos, ecuaciones ajustadas, predicciones cumplidas, intervenciones documentadas y comparación rival con discriminación verificable. Una aplicación entra en modo programático si presenta conjetura articulada con criterio explícito de elevación a demostrativo: qué datos hacen falta, qué rival se enfrentaría, qué predicción discriminante se buscaría. Cualquier capítulo de aplicación se etiqueta inequívocamente con uno de los dos modos.
+No toda aplicación del vocabulario de la tesis tiene la misma fuerza. El manuscrito distingue tres modos: ancla paradigmática, aplicación programática y caso técnico-ejecutado. Ninguno equivale por sí mismo a demostración ontológica.
 
-## 1. Modo demostrativo: condiciones de admisión
+## 1. Dossier de anclaje
 
-**Nota sobre la genealogía de los catorce componentes.** Los catorce componentes que organizan este dossier fueron extraídos como **abstracción del caso ancla** (cap 05-05, Warren 2006). La adecuación del caso ancla a estos criterios es por construcción y no constituye evidencia independiente de la potencia del marco: cada componente del dossier tiene correspondencia textual en una sección del cap 05-05 (auditoría interna F05-08 declarada como parte del cierre 2026-05). Lakatos (1978, *The Methodology of Scientific Research Programmes*) llamaría a esto **ad hoc rescue tipo 3**: una rejilla evaluativa diseñada para que sólo el caso paradigmático la satisfaga. La tesis declara el costo y opta por la salida más honesta operativamente: los demás casos del corpus entran en **modo programático** (dossier técnico ejecutado y reproducible) no porque sean ontológicamente menos firmes, sino porque carecen de un caso paradigmático con las catorce dimensiones desarrolladas independientemente. Los catorce componentes funcionan, por tanto, como **agenda regulativa para futuros casos paradigmáticos**, no como medida de adecuación ontológica de los 30 casos ejecutados.
+Una afirmación local fuerte requeriría un dossier con catorce componentes sustantivos:
 
-Una aplicación se admite en modo demostrativo si y solo si su dossier de anclaje (capítulo 03-02 §3) está completo en sus catorce componentes con contenido sustantivo:
+1. pregunta Q fechada y tolerancia explícita;
+2. variables y régimen de medición;
+3. sustrato material identificado;
+4. grafo con criterio de aristas;
+5. hipergrafo, cuando la reducción a pares pierda estructura;
+6. compresión κ justificada;
+7. atractores, repulsores o bifurcaciones medidos;
+8. validación fuera del ajuste;
+9. predicción discriminante contra un rival;
+10. intervención capaz de producir un resultado contrario;
+11. operador ε y protocolo de reapertura;
+12. traducción B a L3 parámetro por parámetro;
+13. condiciones de no aplicabilidad;
+14. comparación rival explícita.
 
-1. **Pregunta Q fechada** con tolerancia y régimen de medición explícitos;
-2. **Variables X** operacionalizadas con régimen R;
-3. **Sustrato material instanciante** descrito;
-4. **Grafo G** con criterios de admisión de aristas verificados por intervención;
-5. **Hipergrafo H** si procede, con justificación de la no-reducibilidad a pares;
-6. **Compresión κ** con dimensionalidad efectiva empíricamente justificada;
-7. **Atractores, repulsores, bifurcaciones** identificados en datos;
-8. **Pruebas de validación**: reproducción dentro de τ, generalización fuera del entrenamiento, preservación topológica, intervención discriminante;
-9. **Predicción discriminante** contra rival explícito;
-10. **Intervención discriminante** que falsaría la propuesta si se ejecuta y produce resultado contrario;
-11. **Operador ε** con protocolo de reapertura;
-12. **Traducción B↔L3** completa: cada parámetro de L3 se traduce a variable de B;
-13. **Limitaciones declaradas** con régimen de no aplicabilidad;
-14. **Comparación rival** con tabla de discriminación.
+Un componente vacío no se compensa con extensión narrativa. La aplicación baja de categoría o se retira.
 
-Un componente vacío o decorativo invalida la admisión en modo demostrativo. La aplicación pasa a modo programático con la marca correspondiente o queda fuera.
+El dossier fue abstraído inicialmente del caso Warren. Por eso la adecuación de ese caso es parcialmente constructiva y no constituye evidencia independiente de la potencia general del marco. Los catorce puntos funcionan como agenda de evaluación, no como certificado automático de ontología.
 
-## 2. Modo programático: condiciones de admisión
+## 2. Tres modos de aplicación
 
-Una aplicación se admite en modo programático si presenta:
-
-1. **Pregunta Q candidata** con formulación explícita (puede no estar fechada);
-2. **Esbozo de variables X** con indicación de régimen de medición plausible;
-3. **Sustrato material instanciante** descrito en términos generales;
-4. **Esbozo de grafo** con dependencias plausibles;
-5. **Conjetura de κ** con dimensionalidad esperada (sin demostración);
-6. **Atractores conjeturados** con argumento plausible;
-7. **Criterio de elevación a demostrativo**: qué datos cuantitativos harían falta, qué rival se enfrentaría, qué predicción discriminante se buscaría;
-8. **Diálogo bibliográfico** con interlocutores principales del dominio;
-9. **Limitación honesta**: el modo programático no demuestra; conjetura.
-
-La marca `MODO PROGRAMÁTICO` debe aparecer en el primer párrafo del capítulo y en el cierre.
-
-## 3. Por qué la distinción es importante
-
-### 3.1. Honestidad académica
-
-Una tesis que presenta como demostraciones lo que son conjeturas se debilita en defensa oral. Un evaluador competente detecta inmediatamente la asimetría entre caso ancla y dominios adicionales. Mejor declararla.
-
-### 3.2. Trazabilidad del programa
-
-La distinción permite que la hoja de ruta (capítulo 06-03) priorice exactamente qué dominios necesitan trabajo demostrativo y en qué orden. Sin la distinción, la tesis se queda en una nube uniforme de aplicaciones todas igual de creíbles, todas igual de inverificadas.
-
-### 3.3. Vigilancia contra sustitución nominal
-
-Una aplicación que solo renombra el fenómeno con vocabulario del marco sin producir predicción discriminante es candidata a sustitución nominal. La obligación de criterio de elevación obliga a articular la diferencia.
-
-## 3.bis. Modo técnico-ejecutado: tercera categoría operativa
-
-La dicotomía demostrativo/programático cubre los casos del manuscrito principal (§4.1 y §4.2), pero **no captura el régimen bajo el cual operan los 40 casos del corpus EDI** (30 inter-dominio + 10 inter-escala, capítulos 05-06 y 05-07). Para esos casos se reconoce explícitamente una tercera categoría operativa: **modo técnico-ejecutado**.
-
-### 3.bis.1. Definición
-
-Un caso está en modo técnico-ejecutado si:
-
-1. **El aparato EDI se ejecuta completo**: sonda ODE + ABM contrafáctico + permutación (N ≥ 999) + bootstrap (N ≥ 500) + protocolo C1-C5 (13 condiciones simultáneas), produciendo `metrics.json` reproducible con comando declarado.
-2. **NO se construye dossier completo de catorce componentes** del §1: faltan típicamente predicción discriminante fechada con rival específico, intervención discriminante ejecutable empíricamente, traducción B↔L3 desarrollada por extenso, operador ε con protocolo de reapertura caso-específico, y/o comparación rival con tabla de discriminación caso-por-caso.
-
-### 3.bis.2. Justificación
-
-El corpus de 30 casos inter-dominio + 10 inter-escala opera en este modo por diseño metodológico: la pregunta que el corpus responde no es ontológica fuerte («este atractor existe en sentido pleno bajo dossier de catorce componentes»), sino **operativa de cobertura del aparato** («el aparato EDI discrimina señal acoplada de baseline desacoplado bajo permutación y gate C1-C5 en este dominio/escala, con tasa de falsos positivos acotada por hostile testing»). La discriminación es protocolar (permutación + gate + Wilson CI), no dossier ontológico fuerte. Construir dossier de catorce componentes para los 40 casos excedería el alcance de la tesis y, por la genealogía declarada en el §1 nota inicial, repetiría el problema de ad hoc rescue tipo 3 al escalar.
-
-### 3.bis.3. Relación con los otros modos
-
-| Modo | Aparato EDI ejecutado | Dossier 14 componentes | Pretensión filosófica | Casos |
-|---|---|---|---|---|
-| Demostrativo | Sí | Completo y sustantivo | Afirmación local fuerte bajo dossier auditado | 0 cerrados en el manuscrito actual |
-| Ancla paradigmática | No aplica como EDI propio | 9/14 componentes sustantivos | Compatibilidad local y motivación del programa | 1 (Warren, cap 05-05) |
-| Programático | No (o piloto parcial) | Conjeturado con criterio de elevación | Conjetura articulada con plan de prueba; no demuestra | 4 (caps 05-01 a 05-04) |
-| **Técnico-ejecutado** | **Sí, completo y reproducible** | **No (mapeo de cobertura, no dossier ontológico)** | **Operativa: el aparato discrimina y mapea cobertura del marco a esta escala/dominio** | **40 (corpus 05-06 + 05-07)** |
-
-El modo técnico-ejecutado coincide con la reformulación del cierre `06-01`: los 40 casos son **mapa de cobertura y calibración bidireccional**, no demostración ontológica adicional. Los casos con datos públicos reales aportan resultados epistemológicos locales; los inter-escala muestran transferibilidad computacional. La afirmación «ontología general multiescalar» permanece como hipótesis programática H-J2, con falsos positivos del gate acotados solo para la familia de random walks ensayada (Wilson 95 % [0, 0.00191] sobre 0/2000).
-
-### 3.bis.4. Marca obligatoria
-
-Un capítulo o caso en modo técnico-ejecutado debe declararlo explícitamente y referenciar su `metrics.json` reproducible. La marca distingue cobertura operativa del aparato (admisible) de dossier ontológico completo (no reclamado).
-
-## 4. Inventario de aplicaciones del manuscrito
-
-### 4.1. Caso ancla paradigmático con dossier parcial
-
-**Tabla 5.0.1.**
-
-| Capítulo | Tema | Estado |
-|---|---|---|
-| 05-05 | Behavioral dynamics: locomoción, obstáculos, frenado, raqueteo, equilibrio | ANCLA PARADIGMÁTICA, 9/14 componentes sustantivos; el anclaje primario es Warren (2006, pp. 358–359), complementado con Fajen y Warren (2003), Yilmaz y Warren (1995), Foo et al. (2000) y Sternad et al. (2001) |
-
-El anclaje teórico del caso 05-05 es explícitamente Warren (2006), quien plantea que «the agent and its environment are treated as a pair of dynamical systems that are coupled mechanically and informationally. Their interactions give rise to the behavioral dynamics, a vector field with attractors that correspond to stable task solutions, repellers that correspond to avoided states, and bifurcations that correspond to behavioral transitions» (Warren, 2006, p. 358). Esta tesis hace al programa de Warren un caso ancla natural para la ontología material-relacional: los atractores no se postulan como entidades internas al agente ni como propiedades del entorno aislado, sino que «are codetermined by the confluence of task constraints and perceptual–motor control laws» (p. 359). El capítulo 05-05 hereda esa carga discriminante —no la presupone—.
-
-### 4.2. Aplicaciones en modo programático
-
-**Tabla 5.0.2.**
-
-| Capítulo | Tema | Estado | Criterio de elevación |
+| Modo | Requisito | Pretensión permitida | Estado actual |
 |---|---|---|---|
-| 05-01 | Mente, memoria, yo | PROGRAMÁTICO | Tareas cognitivas con datos cuantitativos donde atractores conductuales discriminen contra cognitivismo simbólico |
-| 05-02 | Biología y ecología | PROGRAMÁTICO | Atractores de regulación con bifurcaciones empíricas en datos publicados; rival principal: reduccionismo molecular o holismo ecológico inflado |
-| 05-03 | Sistemas técnicos distribuidos | PROGRAMÁTICO | Modelo dinámico cuantitativo de sistema distribuido con predicción de fallo verificable; rival: arquitectura sin dependencias dinámicas |
-| 05-04 | Instituciones, mercado, Estado | PROGRAMÁTICO | Atractores institucionales con bifurcaciones en datos históricos; rival: individualismo metodológico o holismo trascendental |
+| Ancla paradigmática | Caso desarrollado con literatura primaria y dossier parcial amplio | Muestra compatibilidad local y motiva el programa | Warren, 9 de 14 componentes sustantivos |
+| Programático | Pregunta, variables plausibles, rival y criterio de elevación | Conjetura articulada | Mente, biología, sistemas técnicos e instituciones |
+| Técnico-ejecutado | Sonda, simulación, salida `metrics.json` y protocolo documentado | Evalúa cobertura y fallos del aparato | 30 casos inter-dominio y 10 inter-escala |
 
-### 4.3. Corpus técnico-ejecutado (modo técnico-ejecutado)
+### 2.1. Ancla paradigmática
 
-El corpus EDI agregado opera en **modo técnico-ejecutado** según §3.bis (decisión autoral H-J* cubierta por el marcador maestro de §3.bis arriba; aquí solo se aplica la definición ya marcada). Se compone de los 30 casos inter-dominio (capítulo 05-07, mapa de aplicaciones-corpus) y 10 casos inter-escala (capítulo 05-06). Cada caso tiene `metrics.json` reproducible bajo el comando declarado en su `src/validate.py`. La cobertura, gates C1-C5 y reclasificaciones bidireccionales se reportan en los capítulos respectivos y en `09-simulaciones-edi/Evaluacion_Modelos_Dominio.md`. Esta capa no constituye dossier de catorce componentes y no se reclama como tal; constituye **mapeo de cobertura del aparato** según la definición del §3.bis.
+El caso Warren organiza la intuición central de acoplamiento, atractores conductuales y restricciones de tarea. Su función es conceptual y comparativa. No se cuenta como un Strong EDI ni como validación del caso 30.
 
-## 5. Política de extensión
+### 2.2. Modo programático
 
-### 5.1. Cuándo agregar aplicaciones
+Una aplicación programática debe declarar:
 
-Una aplicación nueva se agrega al manuscrito solo si pasa al menos a modo programático con criterios de los §1-2 de este capítulo. No se admiten capítulos `interesantes` sin estructura.
+- la pregunta Q;
+- el sistema material y las variables candidatas;
+- el patrón dinámico esperado;
+- un rival identificable;
+- los datos y la predicción que permitirían elevarla;
+- una condición de abandono.
 
-### 5.2. Cuándo elevar de programático a demostrativo
+Si solo reemplaza palabras ordinarias por términos del marco, incurre en sustitución nominal y debe retirarse.
 
-Una aplicación programática se eleva a demostrativa cuando se cumplen sus criterios de elevación específicos y se produce dossier completo. La elevación se documenta con fecha y se actualiza el inventario.
+### 2.3. Modo técnico-ejecutado
 
-### 5.3. Cuándo retirar
+Un caso técnico-ejecutado demuestra que el aparato pudo formularse y producir una salida auditable en ese dominio. No implica que el dossier ontológico esté completo ni que el régimen estadístico sea homogéneo con el resto del corpus.
 
-Una aplicación se retira si:
+La interpretación debe separar:
 
-- en modo demostrativo, el dossier falla en alguna prueba de validación y la falla no se subsana;
-- en modo programático, el criterio de elevación se intentó y produjo evidencia contraria a la conjetura;
-- el rival principal del dominio absorbe la propuesta sin diferencia discriminante.
+1. la salida cruda del motor;
+2. la clasificación histórica;
+3. el estatus inferencial bajo el régimen estricto vigente.
 
-El retiro se documenta como deuda explícita en el capítulo 06-01.
+Las cifras agregadas y las reclasificaciones se presentan una sola vez en el mapa del corpus. Este capítulo no las repite.
 
-## 6. Criterios uniformes de evaluación por aplicación
+## 3. Inventario del manuscrito
 
-Cada aplicación, sea demostrativa o programática, debe responder cinco preguntas en su capítulo:
+| Aplicación | Modo | Criterio de elevación |
+|---|---|---|
+| Behavioral dynamics de Warren | Ancla paradigmática | Completar los componentes faltantes con intervención y evaluación independiente |
+| Mente, memoria y yo | Programático | Datos cuantitativos que discriminen contra un rival cognitivo específico |
+| Biología y ecología | Programático | Bifurcaciones observadas en datos reales y comparación con modelos alternativos |
+| Sistemas técnicos distribuidos | Programático | Predicción de fallo y validación fuera de muestra |
+| Instituciones, mercado y Estado | Programático | Distinguir estabilidad, efectividad y legitimidad con variables no equivalentes |
+| Corpus inter-dominio | Técnico-ejecutado | Cerrar B-T2.1 con un perfil único y replicación externa |
+| Corpus inter-escala | Técnico-ejecutado | Sustituir datos sintéticos por datos primarios reales |
 
-1. **¿Qué pregunta Q se trata?** Formulación explícita.
-2. **¿Qué patrón material-relacional se conjetura?** Atractor candidato.
-3. **¿Qué rival se enfrenta?** Posición específica con criterios.
-4. **¿Qué predicción discriminante se ofrece?** Para demostrativo: cumplida. Para programático: a buscar.
-5. **¿Qué se gana respecto al lenguaje ordinario?** Para demostrativo: con datos. Para programático: con argumento.
+## 4. Reglas de cambio de estado
 
-Sin las cinco respuestas, el capítulo se reescribe.
+### Elevación
 
-## 7. Diferencia con presentaciones laxas
+Una aplicación sube de categoría solo cuando satisface el criterio declarado antes de observar el resultado. Añadir complejidad al modelo después de un fallo no basta.
 
-Muchas tesis filosóficas presentan aplicaciones como ilustraciones afines a la tesis general. La política de este manuscrito es más severa: una aplicación es prueba de que la tesis funciona donde dice funcionar, o conjetura articulada con plan de prueba. La distinción produce trabajo y reduce ambigüedad. Si parece exigente, es porque la objeción de sobreextensión generalista lo es.
+### Descenso
 
-## 8. Diálogo con interlocutores
+Una aplicación baja de categoría cuando cambia de forma sustantiva al refrescar datos, aplicar detrend, usar block permutation, introducir una sonda independiente o comparar con un rival más fuerte.
 
-### 8.1. Lakatos — núcleo duro y cinturón protector
+### Retiro
 
-Lakatos distingue núcleo duro de un programa de investigación (no falsable directamente) y cinturón protector (donde se acumulan o se pierden aplicaciones). El caso ancla canónico funciona como cinturón protector consolidado; los modos programáticos son cinturón protector en construcción. El núcleo duro es el aparato del capítulo 03 y la asimetría L1↔B↔L3↔S.
+Se retira cuando el rival absorbe la propuesta sin pérdida, la predicción discriminante falla de manera estable o el fenómeno no puede recortarse sin omitir una dimensión constitutiva.
 
-### 8.2. Bunge — relación filosofía-ciencia
+Todo cambio debe conservar el resultado anterior como trazabilidad, pero solo el estado más reciente gobierna las conclusiones.
 
-Bunge insiste en que la filosofía científica debe diferenciar análisis conceptual de afirmación empírica. La distinción demostrativo/programático honra esa exigencia.
+## 5. Cinco preguntas de control
 
-## 9. Cierre
+Cada aplicación debe responder:
 
-Esta política de admisión es la respuesta operativa a la objeción de sobreextensión. La tesis admite que solo está demostrada en su caso ancla y que los demás dominios son conjeturas con plan. La diferencia entre conjetura articulada y conjetura imprecisa es la articulación de los criterios de elevación. Cada capítulo programático lleva esa articulación; cada capítulo demostrativo lleva su dossier completo.
+1. ¿Qué pregunta Q trata?
+2. ¿Qué sistema material y qué patrón propone?
+3. ¿Qué rival enfrenta?
+4. ¿Qué resultado favorecería al rival?
+5. ¿Qué aporta frente al lenguaje ordinario?
+
+Sin respuestas concretas, la aplicación no entra al manuscrito principal.
+
+## Cierre
+
+La política de admisión impide que la cantidad de casos se confunda con fuerza probatoria. El ancla motiva, los programáticos formulan pruebas futuras y el corpus técnico mapea alcance y fallo. La afirmación ontológica solo puede elevarse con evidencia adicional que no haya sido definida por el mismo ajuste.
 
 
 <p align="right"><sub><a href="#tabla-de-contenidos">↑ volver al índice</a></sub></p>
@@ -5099,136 +4413,7 @@ Esto es lo que el profesor pedía como demostración. Esto es lo que la tesis ma
 
 ---
 
-<div id="capitulo-18-corpus-inter-dominio-30-casos"></div>
-
-# Corpus EDI inter-dominio: ejecución, resultados y alcance
-
-## Función
-
-Este capítulo documenta el motor híbrido ABM+ODE, los 30 casos inter-dominio y la infraestructura de ejecución y auditoría. El corpus evalúa si una sonda acoplada mejora la predicción frente a un modelo reducido. No convierte esa ganancia, por sí sola, en prueba de una entidad o invariante ontológico.
-
-> **Nota de versionado.** `metrics.json` es la fuente de verdad de cada ejecución. El estatus inferencial final requiere además el régimen estricto B-T2.1. Los valores crudos, históricos y estrictos no deben mezclarse.
-
-## Tesis del capítulo
-
-El corpus prueba que el aparato es ejecutable, trazable y capaz de producir resultados positivos, nulos y negativos. Como B-T2.1 todavía no cubre los 30 casos, no existe una distribución confirmatoria homogénea del corpus ni un conjunto Strong robusto confirmado.
-
-## 1. Estado estricto vigente
-
-| Estatus B-T2.1 | N | Casos o alcance |
-|---|---:|---|
-| Strong robusto puro confirmado | 0 | Ninguno |
-| Weak validado | 1 | Energía, caso 04: EDI 0.1571, p_block 0.006, CI [0.133, 0.193] |
-| Candidato pendiente | 1 | Starlink, caso 26: EDI 0.7575, p_block 0.079, `overall_pass=false` |
-| Falsificación local del aparato | 4 | Acidificación, Kessler, Erosión y Microplásticos, casos 19, 20, 23 y 24 |
-| Controles negativos rechazados | 3 | Casos 06, 07 y 08 |
-| Sin estatus estricto cerrado | 21 | Requieren reejecución B-T2.1 |
-
-Una falsificación local indica que la sonda o el modelo propuestos predicen peor que el reducido en la ventana evaluada. No demuestra ausencia del fenómeno y tampoco salva automáticamente la ontología.
-
-## 2. Reclasificaciones decisivas
-
-| Caso | Resultado histórico | Resultado vigente | Lectura |
-|---|---|---|---|
-| 04 Energía | Strong, EDI 0.6503 | Weak validado, EDI 0.1571, p_block 0.006 | La corrección reduce la magnitud, conserva señal local |
-| 20 Kessler | Strong, EDI 0.3527 | EDI -1.000, p_block 1.0 | Falsificación local |
-| 24 Microplásticos | Strong, EDI ~0.8 | EDI -1.000, p_block 1.0 | Falsificación local tras datos refrescados |
-| 26 Starlink | Strong sin gate | EDI 0.7575, p_block 0.079, gate fallido | Candidato, no confirmación |
-| 30 Behavioral | Strong o Weak en narrativas previas | EDI 0.2622, `overall_pass=false`; block bootstrap p≈0.978 | Piloto con circularidad parcial |
-
-Las reclasificaciones muestran que el pipeline puede corregir sus resultados. Esta propiedad sustenta la auditabilidad del método; no constituye evidencia independiente de la ontología.
-
-## 3. Controles y calibración
-
-- Los casos 06, 07 y 08 fueron rechazados correctamente.
-- El hostile testing con random walks reporta 0/2000 falsos positivos del gate, Wilson 95 % [0, 0.00191].
-- La tasa empírica de tipo I del p-value nominal es aproximadamente 24 %, no 5 %.
-- El AUC-ROC histórico 0.8857, CI bootstrap [0.6571, 1.0000], usa EDI como score y una etiqueta derivada del umbral de EDI. Mide consistencia interna, no validez externa.
-
-Los controles reducen la objeción de validación indiscriminada frente a la familia ensayada. Faltan nulos más diversos y rivales estructurados con el mismo presupuesto de ajuste.
-
-## 4. Estructura del corpus
-
-```text
-09-simulaciones-edi/
-├── README.md
-├── common/                              validador, ABM, ODE y backend
-├── 01_caso_clima/ ... 30_caso_.../     corpus inter-dominio
-│   ├── case_config.json
-│   ├── src/
-│   └── outputs/metrics.json
-├── corpus_multiescala/                  casos 31 a 40
-├── auc_roc/                             diagnóstico histórico del umbral
-├── baselines/                           comparaciones rivales
-└── scripts_orquestacion/                auditoría y reportes
-```
-
-## 5. Cómo ejecutar
-
-### Verificación general
-
-```bash
-python3 harness/cli.py verify --all
-```
-
-### Ejecución desde la CLI
-
-```bash
-./tesis demo
-./tesis audit
-./tesis metrics
-./tesis build
-```
-
-### Caso específico
-
-```bash
-python3 09-simulaciones-edi/04_caso_energia/src/validate.py --seed 42
-```
-
-Cada caso debe declarar sus requisitos adicionales. Una reejecución confirmatoria debe fijar datos, sonda, baseline, ventana, umbrales y criterio de pérdida antes de observar el resultado.
-
-## 6. Sondas de referencia
-
-| Caso | Sonda | Referencia disciplinar |
-|---|---|---|
-| Clima | Budyko-Sellers | Budyko 1969; Sellers 1969 |
-| Energía | Lotka-Volterra | Lotka 1925; Volterra 1926 |
-| Deforestación | von Thünen | von Thünen 1826 |
-| Epidemiología | SIR/SEIR | Kermack-McKendrick 1927 |
-| Kessler | Densidad orbital | Kessler-Cour-Palais 1978 |
-| Microplásticos | Acumulación-decaimiento | Jambeck et al. 2015 |
-| Behavioral Dynamics | Atractor de heading | Fajen y Warren 2003; Warren 2006 |
-
-La referencia disciplinar motiva una sonda; no prueba que su parametrización concreta sea adecuada para la ventana evaluada.
-
-## 7. Límites
-
-1. B-T2.1 no está cerrado para los 30 casos.
-2. Las ventanas, pruebas y fuentes no son todavía homogéneas.
-3. Algunos parámetros se estiman con los mismos datos que validan el modelo.
-4. Las comparaciones contra rivales no tienen cobertura equivalente en todo el corpus.
-5. La dependencia de una sonda por caso limita la inferencia ontológica.
-6. No existe replicación externa ciega al EDI.
-
-## 8. Relación con el manuscrito
-
-- fundamento filosófico: capítulos 02;
-- definición de κ y EDI: capítulo 03-04;
-- mapa reconciliado del corpus: capítulo 05-07;
-- corpus inter-escala: capítulo 05-06;
-- conclusión y condiciones de elevación: capítulo 06-01.
-
-## 9. Cierre
-
-El corpus es evidencia del funcionamiento y de los límites del método. Su aporte más sólido consiste en hacer públicas las condiciones bajo las cuales una afirmación de cierre se admite, se degrada o se rechaza. La generalización ontológica queda abierta hasta completar el régimen estricto y obtener convergencia y replicación independientes.
-
-
-<p align="right"><sub><a href="#tabla-de-contenidos">↑ volver al índice</a></sub></p>
-
----
-
-<div id="capitulo-19-corpus-inter-escala-10-casos"></div>
+<div id="capitulo-18-corpus-inter-escala-10-casos"></div>
 
 # Corpus EDI inter-escala: prueba de portabilidad computacional
 
@@ -5328,114 +4513,7 @@ El corpus inter-escala expande el alcance del instrumento y, al mismo tiempo, im
 
 ---
 
-<div id="capitulo-20-caso-30---behavioral-dynamics-bajo-edi"></div>
-
-# Caso 30. Behavioral Dynamics, Fajen-Warren 2003
-
-## Función
-
-Caso piloto que aplica el EDI a una sonda inspirada en dinámica conductual. Evalúa los límites del aparato en escala conductual; no constituye demostración multidominio ni validación cuantitativa del caso experimental de Warren.
-
-## Tesis del caso
-
-> Bajo la sonda `behavioral_attractor` y datos sintéticos generados con una dinámica emparentada, el caso produce EDI = 0.2622 y `overall_pass=false`. La significancia iid p = 0.044 no sobrevive el control posterior con block bootstrap, p ≈ 0.978. El caso se conserva como piloto con circularidad parcial.
-
-## Sistema modelado
-
-### Macro
-
-La sonda sigue una ecuación de segundo orden inspirada en Fajen y Warren (2003):
-
-```text
-φ̈ = -b·φ̇ - k_g·(φ - ψ_g)·(e^{-c1·d_g} + c2)
-```
-
-Usa b=3.25, k_g=7.50, c1=0.40, c2=0.40 y d_g=4.0.
-
-### Micro
-
-Retícula 40×40 con difusión espacial, ruido motor, heterogeneidad y acoplamiento al estado macro. Esta retícula representa una población simulada; no es equivalente a un participante humano en una tarea de locomoción.
-
-### Datos
-
-Serie sintética de 121 puntos generada con una ecuación de segundo orden de la misma familia teórica que la sonda. Aunque generador y sonda no son idénticos, comparten estructura suficiente para producir riesgo de circularidad. LoE = 2. La elevación requiere datos humanos reales.
-
-## Hipótesis
-
-| Hipótesis | Enunciado | Resultado vigente |
-|---|---|---|
-| H30.1 | Significancia robusta | Rechazada bajo block bootstrap, p≈0.978 |
-| H30.2 | EDI > 0.30 y gate completo | Rechazada: EDI 0.2622, `overall_pass=false` |
-| H30.3 | Controles internos suficientes | Pendiente |
-| H30.4 | Convergencia con sonda distinta | Rechazada o no resuelta; τ-dot produjo failure mode |
-
-## Resultado
-
-| Métrica | Valor | Lectura |
-|---|---:|---|
-| EDI | 0.2622 | Magnitud Weak bajo taxonomía cruda |
-| p iid | 0.0440 | Marginal; no calibrado para autocorrelación |
-| CI bootstrap iid | [0.2494, 0.2798] | No incorpora adecuadamente dependencia temporal |
-| p block bootstrap posterior | ≈0.978 | No significativo |
-| `overall_pass` | false | Gate no superado |
-| val_steps | 35 | Ventana técnica suficiente, no confirmatoria |
-| LoE | 2 | Datos sintéticos |
-
-La reejecución canónica reproduce EDI = 0.2622. La estabilidad numérica frente a la semilla o al número de permutaciones no elimina el problema de identificación: si la familia del generador favorece la familia de la sonda, el resultado puede ser estable y circular a la vez.
-
-## Interpretación
-
-El caso no permite afirmar que el cierre conductual sea real bajo el EDI. Permite identificar tres límites:
-
-1. la significancia iid no es adecuada para la dependencia temporal presente;
-2. el generador y la sonda no son teóricamente independientes;
-3. una retícula poblacional no reproduce sin más la dinámica de un agente situado.
-
-El ajuste r² = 0.980 reportado en el trabajo experimental de Warren pertenece a otro diseño, otros datos y otro criterio. Funciona como anclaje conceptual de la behavioral dynamics, no como validación del EDI de este caso.
-
-## Programa de elevación
-
-Para elevar el caso se requiere:
-
-1. datos humanos abiertos o adquiridos bajo protocolo ético;
-2. pre-registro anterior a la selección de sonda y ventana;
-3. block-permutation desde el inicio;
-4. al menos una sonda alternativa estructuralmente distinta;
-5. baseline con presupuesto de ajuste equivalente;
-6. predicción confirmatoria sobre intervención no usada en calibración;
-7. replicación independiente.
-
-Hasta entonces, el caso debe presentarse como piloto metodológico y resultado adverso para la pretensión de generalidad conductual.
-
-## Cómo ejecutar
-
-```bash
-python3 09-simulaciones-edi/30_caso_behavioral_dynamics/src/validate.py --seed 42
-```
-
-## Conexión con el manuscrito
-
-- capítulo 02-04: traducción entre niveles;
-- capítulo 03-04: definición de κ y EDI;
-- capítulo 05-05: Warren como caso ancla conceptual independiente;
-- capítulo 05-07: mapa reconciliado del corpus;
-- capítulo 06-01: límite inferencial y condiciones de elevación.
-
-## Referencias
-
-- Fajen, B. R., y Warren, W. H. (2003). Behavioral dynamics of steering, obstacle avoidance, and route selection. *Journal of Experimental Psychology: Human Perception and Performance*, 29(2), 343-362.
-- Warren, W. H. (2006). The dynamics of perception and action. *Psychological Review*, 113(2), 358-389.
-
-## Trazabilidad
-
-La fuente numérica es `outputs/metrics.json`. La interpretación vigente incorpora la auditoría posterior de circularidad y debe prevalecer sobre narrativas históricas que lo llamaban Strong, Weak genuino o demostración conductual.
-
-
-<p align="right"><sub><a href="#tabla-de-contenidos">↑ volver al índice</a></sub></p>
-
----
-
-<div id="capitulo-21-aplicaciones-programaticas---mente-memoria-yo"></div>
+<div id="capitulo-19-aplicaciones-programaticas---mente-memoria-yo"></div>
 
 # Mente, memoria y yo
 
@@ -5716,7 +4794,7 @@ Este capítulo conjetura. No demuestra. La elevación a modo demostrativo requie
 
 ---
 
-<div id="capitulo-22-aplicaciones-programaticas---biologia-y-ecologia"></div>
+<div id="capitulo-20-aplicaciones-programaticas---biologia-y-ecologia"></div>
 
 # Biología y ecología
 
@@ -5952,7 +5030,7 @@ Este capítulo conjetura. La elevación a modo demostrativo requiere adoptar un 
 
 ---
 
-<div id="capitulo-23-aplicaciones-programaticas---sistemas-tecnicos-distribuidos"></div>
+<div id="capitulo-21-aplicaciones-programaticas---sistemas-tecnicos-distribuidos"></div>
 
 # Sistemas técnicos distribuidos
 
@@ -6086,7 +5164,7 @@ Este capítulo articula la conjetura con claridad, pero falta el modelo dinámic
 
 ---
 
-<div id="capitulo-24-aplicaciones-programaticas---instituciones-mercado-estado"></div>
+<div id="capitulo-22-aplicaciones-programaticas---instituciones-mercado-estado"></div>
 
 # Instituciones, mercado y Estado
 
@@ -6332,7 +5410,7 @@ Este capítulo conjetura. La elevación requiere:
 # Parte IV — Discusión crítica
 
 
-<div id="capitulo-25-debates-con-posiciones-rivales"></div>
+<div id="capitulo-23-debates-con-posiciones-rivales"></div>
 
 # Debates con posiciones rivales
 
@@ -6414,7 +5492,7 @@ La tesis **rechaza** cuatro divergencias precisas:
 1. **Ambición ontológica:** Wolfram busca ontología fundamental (la física *es* hypergraph rewriting). La tesis es ontología y epistemología generales integradoras, no fundacionales. No reduce todo a hipergrafos; articula registros heterogéneos bajo dossier de admisión.
 2. **Procedimiento de admisión empírica:** Wolfram propone reglas computacionales pero no especifica filtro empírico de admisión para constructos macro. La tesis exige dossier de catorce componentes + protocolo C1-C5 + EDI con prueba de permutación + controles de falsación rechazados.
 3. **Asimetría L1↔B↔L3↔S:** Wolfram opera en un solo registro (sustrato computacional). La tesis distingue cuatro registros con vínculos asimétricos y prohíbe la sustitución nominal.
-4. **Cartografía empírica multidominio:** Wolfram propone simulaciones internas pero no validación discriminante sobre datos reales en dominios heterogéneos con controles de falsación. La tesis valida 30 casos en física, biología, economía, política, tecnología, cultura y conducta humana, con 3 controles de falsación correctamente rechazados.
+4. **Cartografía empírica multidominio:** Wolfram propone simulaciones internas pero no un filtro homogéneo de admisión para constructos macro. Esta tesis ejecuta su aparato en 30 casos inter-dominio y rechaza 3 controles; bajo el régimen estricto, sin embargo, confirma 0 Strong, 1 Weak y 1 candidato. La ventaja defendible es la trazabilidad del filtro, no una validación multidominio cerrada.
 
 **Reconocimiento de fortalezas:** el Wolfram Physics Project tiene mayor profundidad técnica en hypergraph rewriting, exploración computacional masiva con visualizaciones avanzadas, conjeturas con potencial unificador en física fundamental, y comunidad investigadora activa. La tesis es **complementaria, no rival sustituta**. El esquema de **convergencia productiva** (aplicar EDI a fenómenos derivados de hypergraph rewriting, con piloto Rule 110 ya ejecutado en `09-simulaciones-edi/wolfram_pilot/` reportando EDI=0.55 sobre dos sondas independientes) se conserva íntegramente en `04-debates/_extendido/rival-wolfram-physics-project.md` con sus seis pasos y la condición de discriminación (cierre operativo confirma puente; ausencia de cierre fortalece la tesis de irreducibilidad de Wolfram en el régimen específico). La frase eslogan "Wolfram fundamenta; la tesis disciplina" se conserva como síntesis pero no como respuesta a la pregunta filosófica nuclear, que sigue siendo: ¿qué constructos macro de hypergraph rewriting admiten dossier completo? Deuda residual H-J*: declarar complementariedad asimétrica modal (cf. F04-06 en la sección de deuda residual de este mismo capítulo).
 
@@ -6444,7 +5522,7 @@ La operacionalización IIT 3.0 (Oizumi, Albantakis y Tononi 2014, *PLoS Computat
 
 IIT comparte con esta tesis: (i) la apuesta por una métrica computable definida sobre estructura de dependencias; (ii) el rechazo del reduccionismo plano; (iii) la pretensión de operar sobre el sustrato material sin colapsarse en él. IIT se separa de esta tesis en cuatro puntos auditables:
 
-1. **Dominio.** IIT está específicamente diseñada para consciencia. EDI es multidominio (40 casos en física, biología, economía, política, tecnología, conducta humana). Donde IIT opera, EDI también opera (caso 02); donde EDI opera en física macro o cosmología, IIT no.
+1. **Dominio.** IIT está específicamente diseñada para consciencia. EDI fue aplicado como instrumento multidominio en 40 casos de física, biología, economía, política, tecnología y conducta. Esa amplitud muestra portabilidad computacional, no superioridad empírica sobre IIT ni confirmación ontológica transversal.
 2. **Escala.** IIT define Φ sobre una escala maximizante única (la escala que maximiza el corte mínimo de información integrada). EDI opera con asimetría L1↔B↔L3↔S explícita y multiescalaridad operativa.
 3. **Tratabilidad.** Φ es computacionalmente intratable a partir de ~10–12 nodos (complejidad exponencial en el número de subconjuntos, cf. Oizumi et al. 2014). EDI es escalable a cientos o miles de unidades vía ABM+ODE acoplado.
 4. **Anclaje empírico.** EDI exige dossier de catorce componentes + filtro EDI con permutación 999 + bootstrap 500. IIT exige Φ > 0; los proxies prácticos (PCI de Massimini et al.) operan en un régimen experimental distinto y no satisfacen el dossier completo.
@@ -6482,898 +5560,281 @@ El compromiso público de discriminación (que la tesis muestre ventaja en al me
 
 ---
 
-<div id="capitulo-26-tabla-comparativa-con-rivales"></div>
+<div id="capitulo-24-anticipacion-de-objeciones-filosoficas"></div>
 
-# Tabla comparativa con rivales
+# Objeciones filosóficas principales
 
-## Función
-
-Síntesis de la discriminación pública contra dieciséis posiciones rivales. Cada celda representa cumplimiento del criterio: ✓ (satisface), parcial (satisface en parte), ✗ (no satisface). La tesis discrimina en al menos dos criterios contra cada rival; en el caso de Predictive Processing/Active Inference la relación es de **complementariedad parcial** (ver fila 16 y nota).
-
----
-
-## Criterios de discriminación
-
-**Tabla A.4.1.**
-
-**Tabla 4.3.1.**
-
-| Código | Criterio |
-|--------|----------|
-| **A** | Anclaje material sin reducción a partículas |
-| **B** | Multiescalaridad operativa **invariante a la escala** (aplicable desde lo cuántico hasta lo cosmológico) |
-| **C** | Procedimiento de admisión empírica con dossier de catorce componentes |
-| **D** | Traducibilidad asimétrica L1↔B↔L3↔S **invariante a la escala** |
-| **E** | Cartografía inter-dominio + inter-escala con discriminación verificable y controles de falsación |
-| **F** | Alcance generalizable a dominios y escalas programáticas |
-
----
-
-## Tabla síntesis (16 rivales)
-
-**Tabla A.4.2.**
-
-**Tabla 4.3.2.**
-
-| # | Posición rival | A | B | C | D | E | F | Discrimina en |
-|---|----------------|:-:|:-:|:-:|:-:|:-:|:-:|:------------:|
-| 1 | Dualismo (cartesiano y descendientes) | ✗ | ✗ | ✗ | ✗ | ✗ | ✗ | A, B, F |
-| 2 | Materialismo de partículas | ✓ | ✗ | ✗ | ✗ | ✗ | ✗ | B, C, E |
-| 3 | Reduccionismo plano | ✓ | ✗ | ✗ | ✗ | ✗ | ✗ | B, C, F |
-| 4 | Emergentismo fuerte | ✗ | ✓ | ✗ | ✗ | ✗ | ✗ | A, C, D |
-| 5 | Constructivismo arbitrario | ✗ | ✓ | ✗ | ✗ | ✗ | ✗ | C, E |
-| 6 | Instrumentalismo puro | ✗ | ✓ | ✗ | ✗ | ✗ | ✗ | A, C |
-| 7 | Formalismo vacío | ✓ | ✓ | ✗ | ✗ | ✗ | ✗ | D, E |
-| 8 | Modelos internos / control óptimo | ✓ | ✓ | ✗ | ✗ | parcial | ✗ | E (5 celdas en caso ancla) |
-| 9 | Cognitivismo computacional | ✓ | ✓ | ✗ | ✗ | ✗ | ✗ | C, D, E |
-| 10 | Conductismo radical | ✓ | ✗ | parcial | ✗ | ✗ | ✗ | B, C, D |
-| 11 | Enactivismo radical | ✓ | ✓ | parcial | ✓ | parcial | ✗ | C, E, F |
-| 12 | Realismo estructural informativo | ✗ | ✓ | parcial | ✗ | ✗ | ✓ | A, C, D |
-| 13 | Mecanicismo multinivel sin filtro | ✓ | ✓ | parcial | parcial | parcial | ✓ | C, D, F |
-| 14 | **Wolfram Physics Project** [^wolfram-modal] | ✓ | ✓ | ✗ | ✗ | ✗ | ✓ | C, D, E (ventaja parcial; deuda F04-06 abierta) |
-| 15 | **IIT (Tononi-Boly-Massimini-Koch 2016; Oizumi-Albantakis-Tononi 2014)** | ✓ | parcial | ✗ | ✗ | parcial | ✗ | C, D, F + tratabilidad >12 nodos |
-| 16 | **Predictive Processing / Active Inference (Friston 2010, Clark 2013)** [^pp-complementario] | ✓ | ✓ | ✗ | parcial | parcial | parcial | D (compresión), E (intervención discriminante), F (multidominio) — complementariedad parcial, no rival fuerte |
-
-[^pp-complementario]: Friston (2010, *Nat. Rev. Neurosci.* 11:127-138, "The free-energy principle: a unified brain theory?") afirma: *"if agents minimize free energy, they implicitly minimize surprise"* (p. 2) y *"the brain is an inference machine that actively predicts and explains its sensations"* (p. 3). Clark (2013, *BBS* 36:181-204, "Whatever next? Predictive brains, situated agents, and the future of cognitive science") complementa: *"hierarchical generative model that aims to minimize prediction error"* (p. 1) y *"perception is indirect … what we perceive is the brain's best hypothesis"* (p. 19, citando a Hohwy via Gregory). **Discriminación operacional:** EDI mide caída de error al ablar acoplamiento causal (intervencional, contrafáctico); active inference mide inferencia bayesiana sobre observaciones (epistémico). Distinto registro operacional. La tesis **concede** la lectura del cerebro como filtro activo que rechaza input pasivo (Friston 2010 p. 2; Clark 2013 p. 1); la tesis **no concede** free-energy como principio fundacional ontológico —donde Friston carga el modelo generativo interno como variable causal primaria, EDI opera sobre la dinámica acoplada organismo-entorno sin comprometerse con representaciones probabilísticas internas (cfr. `01-diagnostico/03-estado-del-arte.md` §1.2). Estado: rival con complementariedad parcial bajo cita primaria verificada.
-
-[^wolfram-modal]: La complementariedad simétrica entre Wolfram y la tesis aún no está formalizada modalmente — si la Ruliad realiza su pretensión fundacional, la tesis queda subsumida como caso particular de hypergraph rewriting; la "ventaja parcial" en C/D/E debe leerse como **deuda abierta**, no como discriminación cerrada. Detalle en `04-debates/01-debates-con-posiciones-rivales.md` §3.5 y deuda F04-06.
-
----
-
-## La tesis (irrealismo operativo) en la matriz
-
-### Reconocimiento de circularidad criterio-evaluador
-
-Los criterios A-F que organizan la Tabla 4.3.3 fueron formulados desde el aparato de esta tesis. Que la tesis los satisfaga 6/6 no es virtud, sino tautología si se lee como discriminación pública. La función real de la tabla es doble: (i) explicitar las dimensiones que la tesis considera relevantes para que el lector pueda contestarlas, y (ii) mostrar que ningún rival las satisface conjuntamente —lo que es informativo sólo en la medida en que el lector acepte previamente la pertinencia del conjunto-criterio. Para mitigar la circularidad, el apartado siguiente "Evaluación contra criterios externos" somete la tesis a tres criterios no diseñados por ella, donde su puntaje no es 6/6.
-
-**Tabla A.4.3.**
-
-**Tabla 4.3.3.**
-
-| # | A | B | C | D | E | F |
-|---|:-:|:-:|:-:|:-:|:-:|:-:|
-| **Tesis** | **✓** | **✓** | **✓** | **✓** | **✓** | **✓** |
-
-La tesis satisface los seis criterios A-F por construcción —ellos fueron formulados desde el aparato propio—; este hecho es informativo sólo si el lector acepta el conjunto-criterio. La discriminación sustantiva contra rivales se sostiene en (a) las celdas individuales donde rivales no satisfacen criterios que ellos mismos reconocerían como deseables (por ejemplo, enactivismo radical reconoce la ausencia de filtro formal) y (b) los criterios externos G-I del apartado siguiente, donde la tesis muestra al menos un ✗.
-
-### Evaluación contra criterios externos
-
-| Código | Criterio externo (fuente) | Tesis |
-|---|---|---|
-| **G** | **Parsimonia ontológica estricta** (Quine 1948, *On What There Is*, *Review of Metaphysics* 2(5), sec. sobre *ontological commitment*; PDF no disponible localmente, referencia secundaria). Preferir el menor número de tipos de entidad. La tesis postula sustrato material + estructura emergente + categorías operativas: más tipos que el materialismo de partículas. | **parcial** |
-| **H** | **Predictividad novedosa cuantitativa fuera del corpus de calibración** (Popper 1959, *Logic of Scientific Discovery* §85; Lakatos 1970, *Falsification and the Methodology of Scientific Research Programmes*, sobre *novel facts*). El corpus EDI fue diseñado y los casos null (8/40) se reanalizaron post-hoc; predicciones novedosas pre-registradas fechadas: 0. | **✗** |
-| **I** | **Independencia del evaluador** (Bunge 1977, *Treatise on Basic Philosophy* vol. 3 — PDF no disponible localmente; paráfrasis declarada). El sistema debe ser evaluable por criterios no construidos por sus proponentes. La presente tabla es interna; al cierre actual no hay revisión externa formal. | **✗** (al cierre actual; muta a parcial tras defensa pública) |
-
-Bajo la columna externa el puntaje agregado es **3/9** o, contando "parcial", **4/9** — no 6/6. La tabla interna mantiene su valor como auto-ubicación; la cláusula H queda como **deuda residual fechada** del cap 06 (post-defensa: pre-registrar ≥3 predicciones novedosas en dominios no calibrados con fecha pública anterior a su ejecución).
-
----
-
-## Confrontación detallada por rival
-
-### 1. Dualismo
-
-**Forma fuerte:** ciertos fenómenos (mente, normatividad) requieren un tipo de realidad distinto del orden material.
-
-**Tesis recoge:** la intuición de que algunos fenómenos no se entienden con descripción microfísica.
-
-**Tesis rechaza:** la multiplicación de sustancias.
-
-**Discrimina en:** A (un solo sustrato), B (multiescala sin mundos separados), F (sin proliferación).
-
-### 2. Materialismo de partículas
-
-**Forma fuerte:** la explicación adecuada se reduce a descripción del nivel microfísico.
-
-**Tesis recoge:** la exigencia de anclaje material.
-
-**Tesis rechaza:** la identificación entre profundidad y suficiencia explicativa.
-
-**Discrimina en:** B, C (dossier exige nivel adecuado a Q), E (caso ancla con baja dimensionalidad).
-
-### 3. Reduccionismo plano
-
-**Forma fuerte:** el nivel correcto siempre es el más bajo.
-
-**Tesis recoge:** no inflar niveles superfluos.
-
-**Tesis rechaza:** privilegio del nivel inferior por principio.
-
-**Discrimina en:** B, C (criterios de cambio de escala explícitos), F.
-
-### 4. Emergentismo fuerte
-
-**Forma fuerte:** ciertos niveles generan sustancias nuevas no reducibles.
-
-**Tesis recoge:** la visibilidad de patrones organizacionales.
-
-**Tesis rechaza:** convertir esa visibilidad en sustancia.
-
-**Discrimina en:** A (sustrato único), C (atractores empíricos verificables), D (traducibilidad B↔L3).
-
-### 5. Constructivismo arbitrario
-
-**Forma fuerte:** todos los recortes son equivalentes.
-
-**Tesis recoge:** las categorías son construidas.
-
-**Tesis rechaza:** la equivalencia.
-
-**Discrimina en:** C (dossier, predicción discriminante), E (caso ancla con varianza explicada >97%).
-
-### 6. Instrumentalismo puro
-
-**Forma fuerte:** los modelos son herramientas sin compromiso estructural.
-
-**Tesis recoge:** los modelos son construcciones.
-
-**Tesis rechaza:** la utilidad sin restricción real.
-
-**Discrimina en:** A, C (predicción discriminante e intervención).
-
-### 7. Formalismo vacío
-
-**Forma fuerte:** la elegancia matemática resuelve el problema filosófico.
-
-**Tesis recoge:** disciplina formal.
-
-**Tesis rechaza:** matemática sin anclaje.
-
-**Discrimina en:** D (traducibilidad B↔L3), E (predicciones empíricas verificadas).
-
-### 8. Modelos internos / control óptimo
-
-**Forma fuerte:** el sistema nervioso construye representaciones internas y resuelve optimización.
-
-**Tesis recoge:** estados internos en conducta secuencial / anticipatoria / estratégica.
-
-**Tesis rechaza:** modelos internos como recurso primario en percepción-acción.
-
-**Discrimina en caso ancla (cinco celdas):**
-- Reproducción (r²=0.980 vs requiere parámetros adicionales)
-- Predicción de degradación al retirar visión (cumplida vs no predicha)
-- Predicción τ̇=−0.5 en frenado (predicha vs no derivada)
-- Bifurcación de ruta (predicha y observada vs requiere meta-decisión planificada)
-- Economía paramétrica (4 parámetros vs modelo interno completo)
-
-### 9. Cognitivismo computacional
-
-**Forma fuerte:** la mente es máquina computacional sobre representaciones simbólicas.
-
-**Tesis recoge:** procesos cognitivos no reducibles a estímulo-respuesta.
-
-**Tesis rechaza:** abstracción simbólica desligada de B.
-
-**Discrimina en:** C, D, E. En mente como dominio programático queda abierto.
-
-### 10. Conductismo radical
-
-**Forma fuerte:** solo cuentan estímulos y respuestas observables.
-
-**Tesis recoge:** anclaje en observable.
-
-**Tesis rechaza:** negación de L3.
-
-**Discrimina en:** B, C, D. La tesis es conductismo enriquecido con dinámica y self-organization en el sentido técnico de cap 02-04 §4 (Maturana-Varela 1980, Haken 1977).
-
-### 11. Enactivismo radical
-
-**Forma fuerte:** la cognición es acción enacted del organismo en su entorno.
-
-**Tesis recoge:** acoplamiento dinámico, dependencia ecológica, centralidad de la tarea.
-
-**Tesis rechaza:** quedarse en formulación cualitativa sin filtro formal.
-
-**Discrimina en:** C (dossier formal), E (predicciones cuantitativas), F (multidominio).
-
-**Aliado más cercano:** la diferencia es de articulación formal, no de orientación filosófica.
-
-### 12. Realismo estructural informativo (Ladyman-Ross)
-
-**Forma fuerte:** la ontología fundamental es estructural; los objetos son nodos.
-
-**Tesis recoge:** centralidad de la estructura como objeto del análisis.
-
-**Tesis rechaza:** estructura como ontología fundamental sin sustrato.
-
-**Discrimina en:** A (sustrato material), C (filtro empírico), D (asimetría protocolar).
-
-### 13. Mecanicismo multinivel (Bechtel-Craver)
-
-**Forma fuerte:** los fenómenos complejos se explican por descomposición funcional en mecanismos.
-
-**Tesis recoge:** casi todo. Aliado teórico principal.
-
-**Tesis añade:** filtro de admisión completo + procedimiento empírico de κ.
-
-**Discrimina en:** C, D, F.
-
-**Posición:** la tesis se entiende como mecanicismo multinivel disciplinado por dossier de anclaje.
-
-### 14. Wolfram Physics Project
-
-**Forma fuerte:** la física fundamental se reduce a hypergraph rewriting; el Ruliad es la ontología.
-
-**Tesis recoge:** centralidad de los hipergrafos, rechazo del reduccionismo plano, multiescalaridad.
-
-**Tesis rechaza:** ambición ontológica fundacional sin filtro empírico.
-
-**Discrimina en:** C (dossier vs no especificado), D (asimetría protocolar vs un solo registro), E (cartografía multidominio con falsación 3/3 vs simulaciones internas).
-
-**Posición:** Wolfram fundamenta; la tesis disciplina. **Piloto Rule 110 ejecutado** (`09-simulaciones-edi/wolfram_pilot/`): EDI = 0.55 sobre dos sondas independientes, mostrando convivencia de irreducibilidad computacional micro y cierre operativo macro detectable. Programa de convergencia post-piloto: aplicar EDI a fenómenos adicionales derivados de hypergraph rewriting (trabajo futuro 12-18 meses, declarado en `06-cierre/03-hoja-de-ruta-para-tesis-final.md`).
-
----
-
-## Compromiso público
-
-Esta tabla es compromiso. Si en algún rival la tesis no muestra ventaja en al menos dos celdas, la tesis admite haber sido absorbida y debe reformularse.
-
-**Estado actual:** la tesis discrimina contra quince de los dieciséis rivales en al menos dos criterios; con Predictive Processing/Active Inference (fila 16) la relación es de complementariedad parcial, declarada explícitamente. La tabla no produce absorción.
-
----
-
-## Lectura cruzada
-
-- Confrontación detallada por rival: capítulo 04-01.
-- Limitaciones que sobreviven: capítulo 04-02.
-- Caso ancla canónico (donde se opera la discriminación contra modelos internos): capítulo 05-05.
-- Convergencia con Wolfram (programa futuro): capítulo 06-03.
-
-## Deuda residual
-
-- **Limitación 1.** Fila 1 de la tabla (Dualismo de propiedades, línea 34) marca "✗" en la columna A (sustrato físico). El dualismo de propiedades **naturalista** (Chalmers 1996, *The Conscious Mind*, cap. 4 «Naturalistic Dualism»; PDF no disponible localmente, referencia secundaria pendiente de verificación) acepta sustrato físico; el "✗" es hombre de paja contra esa versión. Camino de resolución: dividir fila 1 en 1a (naturalista, A=✓) y 1b (anti-naturalista, A=✗); recuperar Chalmers 1996 *The Conscious Mind*; validación de la división filosófica pendiente de decisión autoral. Paralela en `04-debates/01-debates-con-posiciones-rivales.md` §2.
-- **Limitación 2.** Fila Wolfram (línea 216 aprox.) presenta complementariedad simétrica con la tesis. Asimetría modal oculta: si la Ruliad realiza su pretensión fundacional, la tesis queda subsumida. Camino de resolución: añadir cláusula de complementariedad asimétrica modal en la nota de la fila. Paralela en `04-debates/01-debates-con-posiciones-rivales.md` §13.
-- **Limitación 3.** "Compromiso público" (líneas 222-224) sin árbitro externo: auto-arbitraje. Camino de resolución: añadir cláusula de árbitro externo (director y jurado) o declarar explícitamente la limitación. Paralela en `04-debates/01-debates-con-posiciones-rivales.md`, sección "Compromiso público".
-
-
-<p align="right"><sub><a href="#tabla-de-contenidos">↑ volver al índice</a></sub></p>
-
----
-
-<div id="capitulo-27-anticipacion-de-objeciones-filosoficas"></div>
-
-# Anticipación de objeciones filosóficas
-
-> **Estado:** capítulo argumental defendible. Las siete objeciones que siguen reproducen la formulación más fuerte que un comité doctoral exigente puede plantear contra la tesis (auditoría doctoral, fallos F1, F2, F3, F5, F6, F9, F10). Cada respuesta sigue el esquema **objeción / concesión / distinción / argumento positivo / costo**. La voz autoral final es de Jacob Agudelo: la asistencia computacional preparó el aparato citacional y la articulación argumental con engagement directo a las fuentes primarias indicadas; cada sección admite reescritura editorial menor sin perder su núcleo.
->
-> **Nota sobre la numeración F1-F10 con saltos en F4, F7, F8.** La taxonomía F1-F10 proviene del inventario interno de fallos filosóficos de fondo. Tres de los diez fallos originales **no aparecen como secciones en este capítulo** porque fueron atendidos en otra parte del manuscrito y no requieren respuesta filosófica adicional aquí:
->
-> - **F4 — "Atractor empírico sin rigor topológico estándar"**: atendido en cap 02-01 §2.2.2 (Tabla 2.1.6, métricas topológicas Lyapunov / dimensión de correlación Grassberger-Procaccia / espectro de bifurcación sobre 7 casos del corpus) y en el reporte técnico `09-simulaciones-edi/topology/topology_report.md`. Pasó de "concepto vago" a "métrica cuantitativa reproducible" por trabajo técnico, no por argumento filosófico.
-> - **F7 — "Dimensión normativa contradictoria entre cap 02-06 y cap 04-02 §4"**: atendido como inconsistencia inter-capítulos resuelta en la consolidación 2026-04-28 (ver `REPORTE_CIERRE_TECNICO.md`). La normatividad se trata ahora consistentemente como atractor con grado de cierre operativo variable, declarando explícitamente los casos donde el aparato no captura la dinámica (cap 04-02 §4 lo declara como deuda, no como contradicción).
-> - **F8 — "Información ecológica con dos clasificaciones ontológicas incompatibles"**: atendido como inconsistencia conceptual resuelta entre cap 02-04 §2.3 y §5; la información ecológica se ancla unívocamente como **tipo estructural moderado** en el sentido operativo del glosario, no como realidad fuerte (cierre técnico 2026-04-28).
->
-> La numeración se conserva con saltos —en lugar de renumerar a F1-F7 consecutivos— para preservar la trazabilidad con el inventario histórico de fallos (`FALLOS_PENDIENTES_HISTORICO.md`, `REPORTE_CIERRE_TECNICO.md`, `TAREAS_POR_RESPONSABLE_HISTORICO.md`, `Tareas_Humanas/02-steven-decisiones-tecnicas.md`, `Tareas_Humanas/README.md`, `TAREAS_PENDIENTES.md`) donde F4/F7/F8 conservan su etiqueta original. Los siete fallos restantes (F1, F2, F3, F5, F6, F9, F10) son los que **requieren engagement filosófico de fondo** y por eso se desarrollan aquí como §1-§7.
+> **BORRADOR-IA · requires: H-J2, H-J8.** Versión condensada para revisión autoral. Conserva las objeciones de fondo y elimina la historia interna de auditorías, respuestas duplicadas y listas de lectura repetidas.
 
 ## Función del capítulo
 
-Cada sección sigue una arquitectura única:
+Este capítulo examina siete objeciones que afectan el núcleo de la tesis. Cada sección presenta el problema, la respuesta disponible y el costo de esa respuesta. El objetivo no es mostrar que el marco vence toda alternativa, sino precisar qué afirmaciones sobreviven y cuáles deben permanecer programáticas.
 
-1. **Objeción** — la versión más fuerte y filosóficamente cargada del cuestionamiento. No se debilita el argumento rival.
-2. **Concesión** — qué admite la tesis sin mover su núcleo. La concesión es honesta, no táctica.
-3. **Distinción** — cómo se separa la afirmación criticable de la no criticable. Aquí se decide qué se rescata y qué se reformula.
-4. **Argumento positivo** — por qué la tesis sigue en pie tras la concesión. Argumento independiente del aparato cuando es posible; cuando no, declaración explícita de que el argumento es operativo.
-5. **Costo** — qué pagamos por mantener la posición. La tesis no se defiende sin costos. Ocultarlos es debilidad; declararlos es fortaleza.
-
-La política argumental es: **no responder con bravata; responder con honestidad estructurada**. Si una objeción no admite respuesta sin costos, se declara el costo y se ofrece la mejor articulación posible bajo ese costo.
-
----
-
-## §1 — Circularidad de κ-pragmática vs κ-ontológica (F1)
+## 1. ¿La distinción entre κ-pragmática y κ-ontológica es circular?
 
 ### Objeción
 
-> "La tesis define la realidad moderada como 'lo que el aparato detecta' y luego declara real lo detectado. La distinción entre κ-pragmática (lo útil para predecir) y κ-ontológica (lo independiente del modelo) colapsa bajo presión: ambas son lo mismo bajo el aparato, porque la única vía de admitir κ-ontológica que la tesis ofrece es operativa, y lo operativo es exactamente κ-pragmática. La tesis no escapa al instrumentalismo, solo lo viste con vocabulario realista."
+Si una estructura se admite porque el aparato la detecta, y luego se declara real por haber sido detectada, la conclusión repite la premisa. κ-ontológica parecería ser solo κ-pragmática con vocabulario realista.
 
-### Concesión
+### Respuesta
 
-La objeción es válida si se lee aisladamente la afirmación κ-pragmática. La auditoría doctoral tiene razón en señalar que el manuscrito, antes de la consolidación de cap 02-01 §0.3, deslizaba entre los dos sentidos de κ sin marcar la frontera. Tras la consolidación, la frontera está marcada explícitamente: ningún caso del corpus actual cumple los tres criterios externos (multi-sonda independiente, replicación inter-grupo, intervención experimental confirmatoria) que distinguirían κ-ontológica de κ-pragmática. Por tanto, **todas las afirmaciones empíricas vigentes del corpus son κ-pragmática**. Esto el manuscrito lo admite por escrito (cap 02-01 §0.3, tabla 2.1.3).
+La objeción alcanza cualquier lectura que convierta el resultado EDI en prueba ontológica. Por eso el corpus actual solo autoriza κ-pragmática: identifica compresiones útiles y dependencias operativas respecto de Q, de los datos y de una sonda declarada.
 
-### Distinción
+κ-ontológica funciona como una hipótesis de elevación, no como clasificación vigente. Requeriría tres controles externos al ajuste inicial:
 
-La distinción κ-pragmática / κ-ontológica no funciona como **estado declarado del corpus** sino como **categoría regulativa** del programa de investigación. La tesis no afirma que algún caso del corpus haya alcanzado κ-ontológica; afirma que la distinción es **operativizable como umbral** mediante los tres criterios externos. Quien acuse a la tesis de circularidad debe primero leer estos tres criterios:
+1. convergencia entre sondas físicamente motivadas que no compartan la misma parametrización;
+2. replicación por un grupo independiente sin acceso privilegiado a las decisiones del autor;
+3. predicción discriminante bajo una intervención pertinente sobre el sistema, no solo ablación interna del modelo.
 
-1. convergencia bajo sondas físicamente motivadas que no comparten estructura paramétrica;
-2. replicación inter-grupo sin acceso al código del autor;
-3. predicción discriminante bajo intervención manipulada (no observación pasiva).
-
-Estos criterios son **externos al aparato**: ninguno se verifica internamente al laboratorio del autor. El criterio 2, en particular, exige otro grupo. La tesis admite que ese otro grupo no existe aún para sus casos. Por eso ningún caso es κ-ontológica.
-
-### Argumento positivo
-
-La circularidad es **constitutiva, no viciosa**. Esta es la posición que sostiene cualquier epistemología naturalista coherente, no una novedad de la tesis. Tres antecedentes:
-
-- **Quine, "Epistemology Naturalized" (1969):** no hay punto de Arquímedes externo a la ciencia desde el cual fundamentarla; la justificación es siempre desde dentro de la red empírica. La tesis hereda esto sin disimulo.
-- **Carnap, "Empiricism, Semantics, and Ontology" (1950):** las preguntas ontológicas internas a un marco lingüístico admiten respuesta operativa; las preguntas externas son pseudo-preguntas o decisiones pragmáticas. La tesis adopta el principio de tolerancia carnapiano para la elección del marco material y declara κ-pragmática como respuesta interna; deja la lectura κ-ontológica como hipótesis empíricamente refutable bajo los tres criterios externos.
-- **Hacking, *Representing and Intervening* (1983, cap. 16):** lo real es lo que se puede manipular para producir efectos predecibles ("if you can spray them, then they are real"). La tesis radicaliza el criterio: manipulabilidad bajo intervención es condición necesaria de la admisión κ-ontológica fuerte (criterio 3 anterior).
-
-La diferencia con el instrumentalismo puro de van Fraassen (1980, *The Scientific Image*) es operativa, no meramente verbal: el instrumentalista renuncia a comprometerse con la realidad de las estructuras inobservables; la tesis se compromete con la realidad estructural moderada del atractor (cuenca medible, bifurcación caracterizable) y con la materialidad del sustrato dinámico que lo sostiene. El compromiso es **estructural moderado** en el sentido operativo del cap 02-01 §0.3.
-
-**Confrontación articulada con Ladyman & Ross (2007) y el PNC.** La distancia con el OSR de Ladyman y Ross requiere engagement sustantivo y no mera mención defensiva. El **Principle of Naturalistic Closure (PNC)**, núcleo metodológico de *Every Thing Must Go*, se enuncia textualmente así (Ladyman & Ross 2007, p. 37, verbatim verificado contra PDF en `07-bibliografia/Ladyman Ross - Every Thing Must Go (2007).pdf`): *"Any new metaphysical claim that is to be taken seriously at time t should be motivated by, and only by, the service it would perform, if true, in showing how two or more specific scientific hypotheses, at least one of which is drawn from fundamental physics, jointly explain more than the sum of what is explained by the two hypotheses taken separately."* La estipulación sobre "specific scientific hypothesis" (p. 38) exige que la hipótesis haya sido "directly investigated and confirmed by institutionally bona fide scientific activity". La tesis declara explícitamente que **adopta el PNC en versión debilitada**: el corpus EDI cumple PNC en lectura indulgente para los dos casos con anclaje en física fundamental (caso 32 acoplamiento espín-órbita, `edi=0.825`; caso 34 dinámica tipo Hodgkin-Huxley sobre HRV) — donde los modelos Lindblad/Bloch y Hodgkin-Huxley son hipótesis confirmadas en literatura primaria de óptica cuántica y electrofisiología — pero el cumplimiento estricto del PNC requiere *novel facts* pre-registrados sobre el sustrato (no sobre la higiene del método), deuda explícitamente declarada en cap 04-03 §H y reiterada en §3 (d) de este capítulo (corroboración empírica progresiva = 0 hasta producir un caso 41 con predicción fechada pre-ejecución). La tesis es por tanto **PNC-aspirante, no PNC-compliant en sentido estricto**.
-
-**Concesión honesta sobre la distancia con OSR.** El irrealismo operativo **no es OSR debilitado**: es posición filosóficamente distinta. Ladyman y Ross sostienen una tesis ontológica fuerte que la tesis no comparte: *"a first approximation to our metaphysics is: 'There are no things. Structure is all there is.'"* (Ladyman & Ross 2007, p. 130, verbatim contra el PDF citado). Los objetos serían, para L&R, *"pragmatic devices used by agents to orient themselves in regions of spacetime"* (ibíd., p. 130). La tesis discrepa sustantivamente en este punto: el sustrato material dinámico (cap 02-01 §1.1; cap 04-04 §6.2) **no es eliminable como dispositivo pragmático**. Los patrones reales en el sentido denneteano (cap 04-04 §6) se instancian *sobre* materialidad procesual; no son ontológicamente fundamentales en sentido OSR. Esta diferencia tiene consecuencia operativa: el dossier de catorce componentes exige anclaje en sustrato material identificable (componente 1), exigencia que el OSR estricto considera redundante. La tesis paga el costo de no presentarse como "OSR aliado": queda como **rival respetuoso** del programa Ladyman-Ross, con discrepancia declarada sobre el estatuto ontológico del sustrato. El uso del término "estructural moderado" en el glosario operativo se restringe a este sentido no-OSR, según queda asentado en `00-proyecto/07-glosario-operativo.md`.
-
-**Tres criterios externos como demarcación operacional contra la circularidad viciosa.** Quine y Duhem mostraron que ninguna teoría se contrasta aisladamente — siempre arrastra hipótesis auxiliares que pueden absorber el fallo predictivo (tesis Duhem-Quine: Quine 1951, "Two Dogmas of Empiricism", *Phil. Review* 60: 20-43; Duhem 1906, *La théorie physique*). La tesis acepta la holístico-empirismo y le añade un cierre operativo: los tres criterios externos (multi-sonda, replicación inter-grupo, intervención experimental confirmatoria) **no se ajustan caso por caso** sino que son la frontera fija más allá de la cual el ajuste es imposible. Esto convierte la circularidad constitutiva en **circularidad demarcable**: dentro del aparato, la justificación es interna (κ-pragmática); en la frontera de los tres criterios externos, la justificación se vuelve externa (κ-ontológica). Mientras los tres criterios no se cumplan en ningún caso del corpus, la tesis declara explícitamente que sus afirmaciones son κ-pragmática. El día en que un caso los cumpla, la tesis pasa a κ-ontológica para ese caso, no para los demás. La distinción es **operativamente verificable caso por caso**, no programáticamente abstracta.
+Estos criterios no eliminan toda dependencia de instrumentos. Sí impiden que el mismo ajuste produzca evidencia y veredicto sin contraste adicional. Quine ayuda a reconocer que no existe un punto de vista empírico exterior a toda práctica científica; Hacking añade que la intervención ofrece una resistencia más fuerte que el mero ajuste. La tesis adopta esa combinación sin afirmar que garantice correspondencia metafísica.
 
 ### Costo
 
-La tesis no demuestra que la realidad existe independientemente del aparato. Esa demostración es metafísicamente imposible bajo cualquier marco no-dogmático: cualquier prueba de la independencia se ofrece **dentro** de un aparato (perceptivo, conceptual, instrumental). La tesis paga el costo de no garantizar correspondencia, a cambio de garantizar **coherencia operativa** (cap 02-01 §3, tipos 1-4 de realidad) y **trazabilidad pública** (dossier de catorce componentes). Quien exija demostración de la independencia metafísica debe primero proveer un aparato que produzca tal demostración; ninguna posición filosófica conocida lo hace.
+Ningún caso actual satisface la elevación completa. La tesis puede defender una epistemología operativa y un método de admisión, pero no afirmar que haya demostrado estructuras independientes de todo aparato.
 
-**Lectura recomendada:** cap 02-01 §0.3, §3.2; cap 04-02 §1; glosario operativo, entradas "anti-reificación operativa" e "irrealismo operativo".
-
----
-
-## §2 — Identidad-como-cuenca como petición de principio (F2)
+## 2. ¿La identidad como cuenca presupone el objeto que pretende identificar?
 
 ### Objeción
 
-> "La tesis define la identidad de un objeto como su cuenca de atracción persistente. Pero la cuenca solo se identifica si previamente sabemos qué objeto la posee. Decir 'el organismo X tiene cuenca C' presupone que ya recortamos X. La cuenca no explica la identidad, la renombra. Es petición de principio."
+Para atribuir una cuenca de atracción a un objeto parece necesario haberlo recortado antes. La cuenca no explicaría la identidad; solo le daría otro nombre.
 
-### Concesión
+### Respuesta
 
-La objeción es correcta si se lee la cuenca como **definición ostensiva de identidad** (esta cosa, aquí señalada, es idéntica a sí misma porque tiene esta cuenca). La tesis no propone esta lectura. Si alguna formulación residual del manuscrito induce esa lectura, debe reformularse.
+La cuenca no define una identidad absoluta ni una haecceidad. Opera como criterio de individuación y continuidad dentro de un recorte empírico. Conviene distinguir tres momentos:
 
-### Distinción
-
-La cuenca opera como **criterio operacional de individuación**, no como definición de identidad pre-individual. Hay tres niveles distinguibles que la objeción colapsa:
-
-**Tabla 4.4.1.**
-
-| Nivel | Pregunta | Respuesta de la tesis |
+| Momento | Pregunta | Respuesta del marco |
 |---|---|---|
-| Pre-individual | ¿Qué hay antes del recorte? | Sustrato material dinámico con restricciones (cap 02-01 §1.1; Simondon, *L'individuation* 1958/2005, sobre lo metaestable previo a la individuación) |
-| Individuación | ¿Cómo se constituye un individuo? | Precipitación de un atractor identificable bajo restricciones de acoplamiento (cap 02-01 §0.2.2) |
-| Identidad operativa | ¿Cuándo el individuo conserva ser el mismo? | Cuando mantiene cuenca persistente bajo transformaciones tolerables (cap 02-03 §4) |
+| Preindividual | ¿Qué precede al recorte? | Dinámica material con restricciones y potenciales regímenes |
+| Individuación | ¿Cómo aparece una unidad estable? | Formación de un atractor o régimen distinguible |
+| Identidad operativa | ¿Cuándo persiste esa unidad? | Conservación de organización bajo transformaciones tolerables |
 
-La cuenca no aparece en el primer nivel (antes hay solo sustrato y restricciones). Aparece en el segundo (la individuación es la formación de la cuenca) y se usa como criterio en el tercero (la identidad se verifica por persistencia de la cuenca formada). La acusación de petición de principio confunde el segundo nivel con el tercero.
+La diferencia entre regímenes puede estimarse mediante estabilidad, retorno después de perturbación, dimensión de correlación, bifurcaciones o exponentes de Lyapunov. Estas medidas permiten distinguir dinámicas antes de asignarles una identidad cotidiana. El nombre social del objeto sigue dependiendo de intereses, usos y convenciones; el aparato no pretende derivarlo.
 
-### Argumento positivo
-
-Dos cuencas se distinguen **sin presuponer qué objeto pertenece a cuál**. Lo que se mide es:
-
-- la dimensión topológica de la cuenca (regiones de condiciones iniciales);
-- la robustez bajo perturbaciones (margen de retorno);
-- la tasa de convergencia local (eigenvalores de la jacobiana en el atractor);
-- la firma topológica del atractor (exponente Lyapunov máximo, dimensión de correlación Grassberger-Procaccia 1983).
-
-Estas son magnitudes operativas que el módulo `09-simulaciones-edi/common/topology.py` calcula sobre series temporales reales. Cuando dos sistemas dinámicos producen estas magnitudes con valores estadísticamente distintos, se individúan **antes de cualquier recorte nominal**. El recorte nominal viene después, como compresión semántica del patrón ya operativo (cap 02-01 §0.2.2). La cuenca explica la identidad operativa **sin presuponer la identidad nominal**.
-
-**Evidencia operativa del corpus.** La tabla topológica (cap 02-01 §2.2.2 Tabla 2.1.6) reporta sobre 7 casos del corpus las cuatro magnitudes mencionadas. El caso 41 Wolfram extendido produce λ_max=+0.017 con D₂=2.82 (firma fractal, atractor extraño); el caso 42 histéresis institucional produce λ_max=−0.052 con D₂≈0 (atractor de punto fijo); el caso 04 energía produce λ_max=−0.001 con D₂=1.38 (atractor convergente baja dimensión). Los tres son sistemas con cuencas **topológicamente distintas** que se individúan operativamente sin recurrir a etiqueta nominal. Esto opera la respuesta a la objeción de petición de principio en datos reales: la individuación se reconoce por las firmas dinámicas, no por la nominalización previa. La individuación nominal *posterior* heredará la diferencia detectada operativamente, no al revés.
-
-Conviene contrastar con dos posiciones rivales sobre identidad:
-
-- **Locke psicológico (1690, *Essay*, II.27):** la identidad personal se funda en continuidad de memoria. La objeción habitual de la tradición posterior (asociada a Thomas Reid en el siglo XVIII; sin acceso a fuente primaria paginada en este manuscrito, mención secundaria) es que la cadena de memorias no es transitiva. La tesis no compite en este terreno: su criterio es estructural, no psicológico, y se aplica a cualquier sistema con dinámica acoplada, no solo a personas.
-- **Parfit reduccionista (1984, *Reasons and Persons*, §96):** la identidad personal no es lo que importa; lo que importa son las relaciones de continuidad psicológica. La tesis comparte el reduccionismo en sentido amplio (no hay sustancia identitaria oculta) pero no comparte el énfasis psicologista: la continuidad relevante es estructural, dinámica y operativa.
+Simondon es útil aquí por su análisis genético de la individuación desde un régimen metaestable, pero la tesis no adopta toda su metafísica. Parfit también permite separar continuidad de sustancia, aunque el criterio propuesto aquí es dinámico y no exclusivamente psicológico.
 
 ### Costo
 
-La identidad nominal pre-formal —lo que el sentido común llama "este objeto" o "esta persona"— sigue requiriendo recorte. La tesis declara que ese recorte es **construido socialmente** (cap 02-03 §1) y no pretende derivarlo del aparato formal. El aparato deriva la **individuación operativa replicable**, no la identidad cotidiana. Quien busque en la tesis una respuesta a "¿en qué consiste ser este individuo?" en sentido fuerte (haecceitas escolástica, "thisness") no la encontrará. La tesis renuncia explícitamente a ese terreno.
+La tesis explica continuidad organizada, no identidad personal fuerte ni unicidad metafísica. El recorte inicial sigue siendo relativo a Q y debe justificarse públicamente.
 
-**Lectura recomendada:** cap 02-03 §4; cap 03-01 (operadores formales); apéndice metodológico del dossier de anclaje, componentes 6-8.
-
----
-
-## §3 — Salto inductivo "operador formal multiescalar" → "ontología subyacente" (F3)
+## 3. ¿La portabilidad del aparato demuestra una ontología multiescalar?
 
 ### Objeción
 
-> "La tesis define operadores formales (μ, G, H, κ, ε) y los aplica sin reentrenar arquitectura sobre 40 casos diversos. De ahí concluye que existe una sola ontología subyacente multiescalar. Pero esto presupone la invarianza que pretende demostrar: si el aparato puede operar a múltiples escalas, eso no implica que las escalas tengan ontología común; puede implicar simplemente que el aparato es lo bastante genérico para cualquier dominio. Es salto inductivo viciado."
+Que los mismos operadores puedan aplicarse a muchos dominios demuestra flexibilidad matemática, no una estructura común del mundo. Un lenguaje suficientemente general puede describir sistemas ontológicamente heterogéneos.
 
-### Concesión
+### Respuesta
 
-El corpus de 40 casos no demuestra invarianza ontológica universal. Es **justificación operativa local** de la articulación, no demostración global. Esto el manuscrito ya lo admite (cap 02-01 §0.3, "Por qué esta estructura es ontológica, no metodológica"). La auditoría doctoral acierta al señalar que un escéptico puede leer la generalidad como artefacto del aparato.
+La objeción es correcta contra la versión fuerte. Deben separarse tres niveles de afirmación:
 
-### Distinción
+1. **Ejecutabilidad:** la arquitectura puede aplicarse a dominios diferentes. Esto está documentado.
+2. **Discriminación local:** en algunos casos, el aparato distingue una dependencia de su ablación y rechaza controles. Esto depende del régimen estadístico empleado.
+3. **Invarianza ontológica:** los dominios comparten una misma organización constitutiva. Esto no está demostrado.
 
-La tesis hace dos afirmaciones distintas que un lector apresurado puede colapsar:
+El corpus estricto no aporta ningún cierre Strong confirmado. Sí muestra que el método conserva fallos y revisa clasificaciones, pero ese comportamiento no basta para elevar la portabilidad a ontología. El detalle numérico pertenece al capítulo empírico y no se repite aquí.
 
-1. **Afirmación demostrativa local:** los operadores son ejecutables sobre 40 casos diversos sin reentrenar arquitectura. Esto el corpus prueba.
-2. **Afirmación regulativa:** la articulación L1↔B↔L3↔S funciona como **invariante metodológico** entre escalas. Esto la tesis propone como hipótesis programática, no como demostración cerrada.
-
-La afirmación 2 es **regulativa en sentido kantiano**: principio de unificación que organiza la búsqueda, no enunciado que se siga deductivamente del corpus. Kant (1781, *Crítica de la Razón Pura*, A642/B670) introduce la distinción regulativa/constitutiva precisamente para casos donde la unidad es exigida por la razón sin ser dada por la experiencia. La tesis declara su afirmación general como regulativa, no como constitutiva, en cap 02-01 §0.4. Si el lector la lee como constitutiva, la objeción aplica con fuerza; si la lee como regulativa, la objeción reformula sin agotar.
-
-### Argumento positivo
-
-Tres argumentos sostienen la afirmación regulativa, ninguno suficiente por sí solo, los tres conjuntamente articulables:
-
-(a) **Argumento de discriminación, no descripción.** Si el aparato fuese estadístico genérico, sus controles de falsación deberían pasar el gate (random walk, no-estacionariedad, observabilidad). Pero los 3 controles del corpus inter-dominio se rechazan correctamente, y los 2000 random walks bajo hostile testing (N1+V4_06+N5) producen 0 falsos positivos del gate completo (Wilson 95 % CI [0, 0.00191]). El aparato discrimina entre dinámica con cierre operativo y dinámica sin él, no solo describe trayectorias.
-
-(b) **Argumento de especificidad cruzada.** Si la coincidencia ontológica entre escalas fuese artefacto del aparato, las sondas de una escala detectarían cierre sobre datos de otra escala. El test cruzado V4-01 lo refuta: 0/12 circularidad sobre datos no-suyos. Cada sonda solo detecta el atractor que su escala instancia.
-
-(c) **Argumento programático lakatosiano (núcleo duro / cinturón protector).** La invarianza opera como **núcleo duro** (*hard core*) de un programa de investigación. Lakatos (1978, *The Methodology of Scientific Research Programmes*, §1.3a, p. 48) lo formula así textualmente: *"All scientific research programmes may be characterized by their 'hard core'. The negative heuristic of the programme forbids us to direct the modus tollens at this 'hard core'. Instead, we must use our ingenuity to articulate or even invent 'auxiliary hypotheses', which form a protective belt around this core, and we must redirect the modus tollens to these. It is this protective belt of auxiliary hypotheses which has to bear the brunt of tests and get adjusted and re-adjusted, or even completely replaced, to defend the thus-hardened core. A research programme is successful if all this leads to a progressive problemshift; unsuccessful if it leads to a degenerating problemshift"*. La tesis instancia la estructura: el núcleo duro es la afirmación regulativa de articulación L1↔B↔L3↔S como invariante metodológico multiescalar; el cinturón protector son las sondas ODE específicas, los umbrales QES, los criterios C1-C5, las hipótesis auxiliares sobre forcing exógeno. El corpus es el campo de prueba donde el cinturón se ajusta y se reemplaza, no el núcleo. La tesis declara explícitamente la condición lakatosiana de abandono del núcleo duro siguiendo la formulación literal del propio Lakatos (p. 49): *"if and when the programme ceases to anticipate novel facts, its hard core might have to be abandoned"*. Las cuatro condiciones de fracaso global (3 escenarios falsables con criterio externo + 1 condición de prioridad histórica) declaradas en cap 06-01 §2 son la operacionalización doctoral de este criterio: si el gate empírico colapsa sobre los `overall_pass`, si los controles de falsación dejan de rechazarse, si ningún programático se eleva en plazo declarado, o si la asimetría L1↔B↔L3↔S no se sostiene (condición de prioridad histórica) — el núcleo duro queda abandonado en sentido lakatosiano estricto, no como retórica de modestia.
-
-(d) **Progresividad lakatosiana como deuda no cerrada.** Lakatos (1978, *The Methodology of Scientific Research Programmes*, §1.2c, pp. 33-34) distingue entre problemshifts progresivos y degenerativos con dos criterios. Sobre la condición teórica (p. 33): *"Let us say that such a series of theories is theoretically progressive (or 'constitutes a theoretically progressive problemshift') if each new theory has some excess empirical content over its predecessor, that is, if it predicts some novel, hitherto unexpected fact"*. Sobre la condición empírica (p. 34): *"Let us say that a theoretically progressive series of theories is also empirically progressive (or 'constitutes an empirically progressive problemshift') if some of this excess empirical content is also corroborated, that is, if each new theory leads us to the actual discovery of some new fact"*. El cuarto criterio lakatosiano —corroboración empírica de *novel facts*— exige predicciones **arriesgadas, fechadas pre-ejecución, sobre dominios o sustratos no vistos por el aparato**. Versiones anteriores de este apartado invocaban como corroboración (i) el rechazo honesto del caso 33 Villin Headpiece bajo sonda inadecuada y (ii) la persistencia del failure mode en caso 38 al sustituir sonda. Auditoría posterior muestra que ambas son **corroboraciones de la higiene metodológica del aparato** (afirmaciones sobre el test), no novel facts sobre el sustrato (afirmaciones sobre el mundo); y además no existe registro fechado pre-ejecución de esas predicciones, por lo que aun si fueran sobre sustrato caerían bajo la objeción Worrall-Zahar de ad-hoc accommodation (una predicción sólo es novel si fue arriesgada antes de ser verificada). La tesis, por tanto, **suspende el reclamo de progresividad empírica plena hasta haber producido al menos un caso 41 con esta estructura**: predicción registrada y fechada antes de la ejecución, sobre el sustrato (no sobre el método), verificada con datos posteriores al registro; deuda priorizada en los pasos 1-4 del cap 06-cierre/03. La tesis se declara teóricamente progresiva en sentido (a)-(b)-(c) —extiende dominio sin reentrenar arquitectura, especifica condiciones de falsación públicas, articula núcleo duro y cinturón protector con criterios explícitos—; cualquier corroboración de robustez metodológica (incluida la que el caso 33 ilustra) se reportará en el apartado de higiene del aparato, no como evidencia de progresividad lakatosiana.
-
-La conjunción de los cuatro argumentos no demuestra la afirmación general; la **sostiene como conjetura operativamente articulada con progresividad lakatosiana parcial**. La diferencia con un mecanicismo plano que afirmara "todo es lo mismo a toda escala" es que el mecanicismo plano carecería de los argumentos (a) y (b), trataría el argumento (c) como redundante, y no aceptaría ser evaluado bajo el criterio (d).
+La generalidad multiescalar debe tratarse como núcleo programático en sentido lakatosiano: orienta nuevas pruebas, pero solo gana contenido si anticipa resultados arriesgados sobre dominios no usados para diseñar el aparato. Si las nuevas sondas no convergen, los controles dejan de ser rechazados o las predicciones prerregistradas fallan sistemáticamente, la hipótesis general debe abandonarse o restringirse.
 
 ### Costo
 
-La tesis sale del territorio de lo demostrado para entrar en el de lo programático. Quien exija demostración constitutiva de la unidad ontológica multiescalar no la encontrará. La tesis pide al evaluador que distinga entre lo que demuestra (κ-pragmática operativa sobre 40 casos diversos) y lo que propone (κ-ontológica multiescalar como hipótesis falsable). Esta distinción es el contenido honesto del régimen de validez declarado en el front matter.
+La tesis conserva una conjetura ontológica, no una demostración universal. Su contribución cerrada es metodológica y epistemológica; la generalidad ontológica permanece abierta.
 
-**Lectura recomendada:** cap 02-01 §0.4; cap 04-02 §3 limitaciones; cap 06-01 §2 condiciones de fracaso global.
-
----
-
-## §4 — Naturalismo metafísico con razones operativas (F5)
+## 4. ¿El naturalismo está demostrado o simplemente asumido?
 
 ### Objeción
 
-> "La tesis adopta naturalismo metafísico moderado con argumentos operativos: 'no funciona con el aparato'. Pero 'no funciona con el aparato' no refuta dualismo, idealismo o panpsiquismo: solo dice que esas posiciones no son tratables con este aparato. Strawson en 'Realistic Monism' (2006) acepta el naturalismo y aun así sostiene que la experiencia es ubicua porque la materia, tal como la describe la física, no agota lo que es. Goff (2019, *Galileo's Error*) lo reactualiza: la física describe relaciones estructurales pero no la naturaleza intrínseca de los relata. La tesis no responde a este nivel de objeción."
+Que el aparato opere sobre variables materiales no refuta dualismo, idealismo ni panpsiquismo. Strawson y Goff, por ejemplo, pueden aceptar la descripción física y sostener que no agota la naturaleza intrínseca de la materia.
 
-### Concesión
+### Respuesta
 
-La objeción es correcta. La operatividad del aparato no refuta filosóficamente las alternativas no-naturalistas. El argumento de cap 02-01 §0.1, leído estrictamente, es declaración de compromiso, no demostración. Strawson (2006) y Goff (2019) plantean una versión seria del panpsiquismo que no se descarta señalando que el aparato EDI no la opera; tampoco se descarta señalando que multiplica propiedades, porque el panpsiquismo russelliano lo que hace es **identificar** la naturaleza intrínseca de la materia con la experiencia, no añadir una propiedad ulterior.
+El naturalismo de la tesis es un compromiso metodológico: las explicaciones admisibles deben producir discriminación pública mediante observación, modelado o intervención material. No se presenta como deducción metafísica de que solo existe lo físicamente medible.
 
-### Distinción
+Esta posición permite formular una alternativa al panpsiquismo sin pretender refutarlo. La experiencia se atribuye, cuando corresponda, a organizaciones dinámicas de sistemas acoplados; no se distribuye por principio entre todos los componentes materiales. La ventaja es evitar el problema de explicar cómo microexperiencias simples se combinan en una experiencia unificada. La desventaja es que el origen de la experiencia consciente sigue abierto y que EDI no resuelve el problema duro.
 
-Hay dos lecturas del naturalismo metafísico:
-
-- **Naturalismo metafísico fuerte:** lo material es todo lo que hay y agota la naturaleza intrínseca de lo real.
-- **Naturalismo metodológico:** cualquier aparato empírico-operacional es, en su arquitectura, naturalista, porque sus operaciones son intervenciones materiales sobre observables materiales.
-
-La tesis sostiene la segunda lectura, no la primera. Cap 02-01 §0.1 declara el naturalismo como **compromiso de partida operativo**, no como conclusión filosófica demostrada. La diferencia es decisiva ante la objeción strawsoniana-goffiana: el naturalismo metodológico es compatible con que la naturaleza intrínseca de la materia incluya algo que la física estructural no captura; lo único que afirma es que ese algo, si existe, es inaccesible al aparato y por tanto irrelevante para la operación del aparato. No refuta el panpsiquismo; lo declara fuera de su jurisdicción.
-
-### Argumento positivo
-
-La carga de la prueba se invierte. Si el dualismo, el idealismo o el panpsiquismo afirman que algo escapa al aparato empírico-operacional, deben proporcionar **un aparato alternativo que produzca discriminación pública**. La tesis no exige que existan tales aparatos para validar el suyo; afirma que **dentro del juego empírico**, su naturalismo es coherente y operativo.
-
-Sobre el panpsiquismo russelliano de Strawson y Goff específicamente:
-
-- Strawson (2006, "Realistic Monism: Why Physicalism Entails Panpsychism", *Journal of Consciousness Studies* 13: 3-31) argumenta que un fisicalismo coherente debe atribuir experiencia a las partículas porque la emergencia de la experiencia desde lo no-experiencial sería emergencia radical, inaceptable bajo principios de continuidad. La tesis no acepta la premisa: la emergencia de patrones desde sustrato material dinámico no requiere salto desde lo no-experiencial a lo experiencial; requiere **estabilización dinámica de sistemas acoplados** (cap 02-04 §4). La experiencia, donde aparece, es propiedad de **sistemas con cierre operativo de cierto grado**, no propiedad ubicua. Esto no refuta el panpsiquismo; declara una alternativa con menor compromiso ontológico.
-- Goff (2019, *Galileo's Error*, cap. 6) sostiene que la física describe estructura sin describir la naturaleza intrínseca. La tesis recoge la advertencia: la descripción operativa del atractor (cuenca, bifurcación, exponente Lyapunov) es estructural en el sentido goffiano. Pero la tesis añade el sustrato material dinámico como **relato del relata**, no como sustancia separada. La materialidad del cap 02-01 §1.1 no es la "ecuación" de la materia; es lo que sostiene a la ecuación. Esto contradice a Goff solo si se lee la materialidad como puramente estructural; bajo la lectura del manuscrito, la materialidad es **proceso dinámico instanciado**, no pura estructura, lo cual deja menos espacio al hueco russelliano.
-
-La tesis es naturalismo **metodológico**, no naturalismo **ontológico fuerte**. La diferencia con el fisicalismo de partículas (cap 04-01 §2) es que la tesis admite la realidad estructural moderada, no solo lo microfísico; la diferencia con Strawson-Goff es que la tesis no atribuye experiencia ubicua, sino estabilizaciones dinámicas con grados.
-
-**Argumento contra el problema de la combinación.** La objeción específica al panpsiquismo russelliano que la tesis hace propia es el **combination problem** articulado por Chalmers (1996, *The Conscious Mind*, cap. 8) y reformulado por Coleman (2014, "The Real Combination Problem", *Erkenntnis* 79: 19-44): si las micro-experiencias de las partículas son inextensas y simples, ¿cómo se combinan en macro-experiencia unificada de un sujeto? El panpsiquismo russelliano carece de mecanismo articulado para esa combinación; cada propuesta (constituive panpsychism, emergent panpsychism, cosmopsychism) reproduce el problema duro al nivel macro o exige emergencia radical en algún punto. La tesis evita el problema **no postulando experiencia ubicua**: la experiencia, donde aparece (sistemas con cierto grado de cierre operativo y autoorganización en el sentido técnico Maturana-Varela 1980 / Haken 1977, anclado en cap 02-04 §4), es propiedad de la dinámica acoplada, no de las partículas. La carga de la prueba sobre la combinación se traslada al panpsiquismo: hasta que articule el mecanismo, su parsimonia aparente es ilusoria.
-
-**Argumento de progresividad operativa.** Mientras el panpsiquismo russelliano no produce predicción discriminante sobre fenómenos observables (ningún experimento distingue universo panpsiquista de universo no-panpsiquista, dado que la experiencia ubicua sería estructuralmente invisible), la tesis sí produce predicciones discriminantes en su régimen propio: el corpus EDI distingue casos con cierre operativo de casos sin él, y los controles de falsación se rechazan correctamente. La progresividad lakatosiana (definida en §3 (d)) opera aquí como criterio de demarcación: el programa de la tesis es operativamente progresivo; el programa panpsiquista russelliano, en su versión actual, no lo es. Esto no refuta filosóficamente al panpsiquismo —la tesis lo declara fuera de su jurisdicción— pero sí justifica metodológicamente la elección por el naturalismo metodológico para el dominio empíricamente accesible.
+La carga relevante dentro de esta tesis es comparativa: una alternativa metafísica debe mostrar qué diferencia empírica produce en el dominio investigado. Si no ofrece esa discriminación, puede seguir siendo filosóficamente posible, pero no modifica el veredicto operativo.
 
 ### Costo
 
-La tesis no se compromete con la metafísica fuerte. Eso significa: no defiende contra panpsiquismo en su terreno propio (la naturaleza intrínseca de la materia), no rechaza idealismo en sentido absoluto, no descarta dualismo a nivel ontológico fundamental. Renuncia al territorio de la metafísica fuerte. A cambio gana operatividad universal en el dominio empírico —Sellars (1956, "Empiricism and the Philosophy of Mind", §41) lo llamaría compromiso con la imagen científica sin pretender abolir la imagen manifiesta. Quien busque en la tesis una refutación filosófica completa del panpsiquismo russelliano no la encontrará; encontrará una alternativa programática que no requiere postular la experiencia como ubicua y que opera sin ella.
+La tesis no ofrece una refutación absoluta del dualismo, el idealismo o el panpsiquismo. Defiende la suficiencia metodológica del naturalismo para su programa y renuncia a convertirla en conclusión ontológica total.
 
-**Lectura recomendada:** cap 02-01 §0.1; cap 04-01 §1 (dualismo) y §2 (materialismo de partículas); cap 02-04 §4 (emergencia como estabilización).
-
----
-
-## §5 — Citas decorativas (F6)
+## 5. ¿Los interlocutores filosóficos están integrados o son citas decorativas?
 
 ### Objeción
 
-> "Simondon, Gibson, Dennett, Searle y Bunge aparecen como autoridad sin engagement con sus argumentos sustantivos. Simondon define lo pre-individual como **metaestable** (potencia plural), no como bifurcación de estabilidades. Gibson define la información ecológica como **invariantes**, no como variables observables auxiliares. Dennett, en *Real Patterns*, exige predictibilidad inter-sujeto, no solo cierre operativo del observador. Searle distingue intencionalidad colectiva (*Construction of Social Reality*, 1995) como acto de habla institucional, no como atractor. Bunge, en *Ontology II* (1979), exige composición y entorno explícitos para todo sistema. La tesis los invoca y los descafeína."
+Una tesis puede acumular nombres prestigiosos sin trabajar sus desacuerdos. El riesgo es especialmente claro con Simondon, Gibson, Dennett, Searle y Bunge, cuyas posiciones no son equivalentes al marco propuesto.
 
-### Concesión
+### Respuesta
 
-En la versión inicial del manuscrito, varios autores se invocaban con peso retórico desproporcionado al engagement argumental. F6 era justo. Tras la limpieza narrativa de 2026-04-27 las referencias se redujeron a las que sostienen carga argumental real, pero la objeción específica sobre **distorsión de los autores** —especialmente Simondon— merece respuesta argumentada.
+Una referencia está integrada solo si puede reconstruirse el argumento que aporta y la diferencia que mantiene con la tesis:
 
-### Distinción
+- **Simondon** aporta la orientación genética desde lo preindividual hacia la individuación. La tesis debilita su metafísica de la metaestabilidad y la traduce a regímenes dinámicos medibles.
+- **Gibson** aporta la idea de información disponible en la relación organismo-entorno. La tesis exige además una variable observada y una prueba de relevancia dinámica.
+- **Dennett** aporta el criterio de patrones que permiten compresión predictiva. La tesis distingue esa realidad modelo-interna de la evidencia más fuerte obtenida por intervención física.
+- **Searle** explica los hechos institucionales mediante intencionalidad colectiva y reglas constitutivas. La tesis trata esos elementos como componentes posibles de una dinámica institucional, no como explicación exhaustiva.
+- **Bunge** exige composición, entorno y estructura explícitos para hablar de sistemas. El dossier adopta esa disciplina, pero se distancia de un realismo ontológico más fuerte que el corpus actual no puede sostener.
 
-Conviene separar dos clases de cita:
-
-- **Engagement profundo:** Bunge (cap 02-01 §1.3 y §11.1; cap 03-02), Bechtel-Craver (cap 03-03), Lakatos-Popper (cap 03-02), Maturana-Varela (cap 02-04), Dennett (cap 02-01 §11.2 y este capítulo), Wittgenstein (cap 02-01 §11.4).
-- **Engagement parcial declarado:** Gibson (información ecológica como variable observable, no como ontología completa), Searle (intencionalidad colectiva como caso especial, no como sustrato).
-
-Sobre **Simondon en particular**, la objeción es que la tesis usa "pre-individual" en sentido distinto del simondoniano. La distinción honesta:
-
-- Simondon (1958, *L'individuation à la lumière des notions de forme et d'information*, Introducción y cap. 1) usa "metaestable" para designar el régimen energético previo a la individuación, en el cual hay potencia plural (varios sentidos de individuación posibles) y solo uno se realiza. La individuación es resolución de la metaestabilidad.
-- La tesis adopta del simondonianismo la **direccionalidad genética** (lo individuado emerge de lo pre-individual; cap 02-01 §0.2.2), pero no adopta la lectura plural-modal de la metaestabilidad como conjunto de mundos posibles entre los cuales uno se actualiza. La tesis adopta una lectura más débil: lo metaestable es **el sustrato dinámico bajo restricciones que admiten múltiples atractores potenciales**, y la individuación es la precipitación en uno de ellos bajo condiciones de acoplamiento específicas.
-
-Esta diferencia se declara abiertamente. Quien busque un Simondon estricto no lo encontrará en la tesis; encontrará un uso del concepto pre-individual con una direccionalidad genética compartida y una metafísica de la potencia plural debilitada.
-
-Sobre **Dennett** en *Real Patterns* (1991, *Journal of Philosophy* 88: 27-51, especialmente pp. 32-34 y 38-40): la lectura fuerte (pp. 38-40, en particular p. 39 donde Dennett describe el ascenso al *design level* en el Game of Life) ofrece una analogía exacta con el régimen empírico del corpus EDI, pero con un costo que conviene declarar antes de invocarla.
-
-Dennett autoriza elevar a un nivel ontológico cuyas predicciones sobreviven *con cierto riesgo* — p. 39: *"Notice, too, that at this level one proposes generalizations that require 'usually' or 'provided nothing encroaches' clauses"* — **dentro del mismo sustrato simulado**. La intervención que Dennett contempla es interna al bit-map del Life world: *encroachment* de configuraciones vecinas, condiciones iniciales alternativas dentro del mismo autómata determinista cerrado. No es una intervención woodwardiana sobre un sustrato físico externo a la simulación. La frase canónica de la página 40 lo explicita: *"one can, with some small risk, ascend to this design level, adopt its ontology, and proceed to predict —sketchily and riskily— the behavior of larger configurations or systems of configurations, **without bothering to compute the physical level**"* (verificación literal contra PDF local en `07-bibliografia/Dennett - Real Patterns (1991).pdf`, p. 40).
-
-El protocolo EDI hereda esa estructura: la ablación `EDI = 1 − RMSE_coupled / RMSE_no_ode` apaga el acoplamiento ODE→ABM **en el modelo acoplado**, no en el sistema físico que el modelo abstrae. La intervención es **modelo-interna y simulada**, no woodwardiana sobre el sustrato. La tesis declara explícitamente esta asimetría: **intervención ablativa simulada ≠ intervención woodwardiana sobre sistema físico.** El corpus EDI ofrece evidencia de que cierto patrón es real *en el sentido denneteano de p. 39* (sobrevive el filtro de compresión predictiva interna), no evidencia de que el patrón sobreviva manipulación física directa del sustrato.
-
-Casos donde la diferencia es operativamente decisiva:
-
-- **Caso 16 deforestación (von Thünen, EDI ≈ 0.58–0.60).** La ablación apaga el acoplamiento von Thünen→agentes en el simulador; no se tala ni se reforesta el paisaje real. La evidencia woodwardiana sobre el paisaje exigiría experimentos cuasi-naturales (cortes de carretera, moratorias, expropiaciones).
-- **Caso 04 energía.** La ablación es del acoplamiento red↔demanda en el modelo; la intervención woodwardiana exigiría apagar líneas reales y medir efectos en consumo agregado.
-- **Caso 20 Kessler (densidad orbital).** La ablación cierra el feedback fragmentación→colisión en el simulador; ninguna agencia interviene físicamente la densidad orbital.
-- **Caso 27 riesgo biológico.** La ablación apaga el acoplamiento patógeno→demografía en el modelo; los datos físicos provienen de eventos epidémicos no manipulados experimentalmente.
-- **Caso 30 VENLab (Fajen-Warren).** Aquí la asimetría se invierte: el caso sí tiene intervención experimental real sobre sujetos humanos en el VENLab, y por eso la sonda alternativa pudo detectar circularidad estructural. El contraste con el resto del corpus muestra que **cuando la intervención woodwardiana existe, opera como filtro adicional al EDI**, no como su sinónimo.
-
-La tesis recoge entonces el criterio denneteano de patrón real (compresión predictiva interna) como criterio **necesario pero no suficiente** para la realidad woodwardiana del patrón. Donde el corpus tiene además acceso a manipulación física (caso 30 VENLab), la condición woodwardiana opera como filtro adicional; donde sólo tiene ablación interna del modelo, la tesis afirma realidad denneteana del patrón, no realidad woodwardiana fuerte. Esa modestia es el costo declarado de operar mayoritariamente con datos observacionales sobre los que no se interviene físicamente. La referencia a Woodward (2003, *Making Things Happen*, cap. 2 — PDF escaneo sin capa de texto, impide cita verbatim paginada) opera aquí como mención secundaria.
-
-Sobre **Searle** y la intencionalidad colectiva: Searle (1995, *The Construction of Social Reality*, cap. 2) distingue hechos brutos de hechos institucionales y construye los segundos como impuestos por intencionalidad colectiva mediante reglas constitutivas ("X cuenta como Y en C"). La tesis cap 05-04 trata las instituciones como atractores normativos sostenidos por restricciones históricas, infraestructurales y comunicacionales. La diferencia es operativa: para Searle, la institución existe **por** la asignación de función vía intencionalidad colectiva; para la tesis, la institución existe **como atractor que sobrevive auditoría con dossier**, lo cual no excluye la asignación de función pero no la trata como condición exclusiva. Quien busque un Searle estricto verá esto como debilitamiento; quien busque articulación con dinámica acoplada verá la asignación de función como **un componente** del dossier institucional, no como su totalidad.
-
-### Argumento positivo
-
-Las citas restantes son argumentales, no decorativas, **bajo el siguiente test operativo**: cada cita puede ser sustituida por su argumento sin que la tesis pierda contenido. Si una cita pasa este test, está integrada; si no, es decorativa y debe eliminarse. La política editorial vigente del manuscrito (consolidada el 2026-04-27) aplica el test, y las referencias que no lo pasaron fueron retiradas (Harman OOO, Psillos *Scientific Realism*; cap 07-01).
+El criterio editorial es simple: si eliminar el nombre no elimina un argumento reconstruible, la cita es decorativa y debe desaparecer.
 
 ### Costo
 
-La tesis es menos heterodoxa de lo que la lista de autores sugiere a primera vista. Quien busque un "Simondon estricto", un "Gibson estricto" o un "Dennett estricto" no lo encontrará. La tesis usa estas tradiciones como **recursos articulables**, no como compromisos exclusivos. Esto puede leerse como sincretismo metodológico controlado o como dilución; la tesis declara la primera lectura y argumenta su consistencia.
+El marco no es una continuación ortodoxa de ninguna de estas tradiciones. Es una articulación selectiva que debe declarar cada transformación conceptual para no ocultar el desacuerdo bajo afinidades verbales.
 
-**Lectura recomendada:** cap 02-01 §0.2 (sentidos del prefijo "pre"), §11.1-11.5 (interlocutores); cap 02-04 §10 (información ecológica); cap 07-01 (asignación de interlocutores por capítulo).
-
----
-
-## §6 — Asimetría L1↔B↔L3↔S como distinción inflada (F9)
+## 6. ¿L1, B, L3 y S multiplican niveles innecesarios?
 
 ### Objeción
 
-> "La asimetría L1↔B↔L3↔S es terminológica, no ontológica. B↔L3 es equivalencia: ambos son representaciones formales acopladas a sustrato. La 'asimetría' solo opera entre L1 (lenguaje natural) y {B, L3, S} (formalismos). Eso es trivialmente cierto: lenguaje natural ≠ formalismo. La tesis infla la distinción para producir el efecto de novedad metodológica."
+Los cuatro registros podrían ser una nomenclatura inflada para la distinción ordinaria entre lenguaje, datos, modelo e interpretación.
 
-### Concesión
+### Respuesta
 
-La asimetría plena se da en una sola dirección: L1 es más rico en intuición y menos en discriminación; B/L3/S son más discriminantes y menos en intuición. La distinción intra-{B, L3, S} es de grado y de modo de representación, no de tipo ontológico. Si el lector espera una diferencia ontológica fuerte entre B y L3, no la encontrará. Esto el manuscrito lo admite (cap 02-04 §8).
+Los registros no nombran cuatro clases de entidades. Nombran cuatro funciones dentro de una investigación y permiten detectar errores específicos:
 
-### Distinción
+- L1 sin B produce categorías sin anclaje;
+- B sin L3 produce inventarios sin compresión explicativa;
+- L3 sin B produce formalismo vacío;
+- S formulada antes del contraste convierte la conclusión en premisa.
 
-La novedad de la tesis no reside en distinguir lenguaje natural de formalismo (eso es trivial). Reside en cuatro afirmaciones articuladas:
-
-1. **B↔L3 es asimetría procedimental, no ontológica.** B (basal) es el grafo fenomenológico; L3 (dinámica) son las ecuaciones que aproximan B. La traducibilidad B→L3 es admisible solo bajo condiciones explícitas (cap 03-01 §operador κ, dossier de catorce componentes). El camino inverso L3→B no exige las mismas condiciones: ninguna ecuación bien especificada genera automáticamente un grafo fenomenológico válido. Esa asimetría procedimental es lo que se afirma.
-2. **La asimetría es operativamente evaluable.** El corpus muestra traducciones que producen señal local, casos que quedan pendientes y traducciones que fallan. Con 0 Strong confirmados bajo B-T2.1, no se reclama verificación general de la asimetría.
-3. **S no es notación distinta de L3, es categoría revisada.** S (semántica revisada) es el resultado de la auditoría: la categoría que sobrevive al filtro de admisión, expresable en lenguaje natural reformado. La tesis no inflama un cuarto nivel: S es la **salida** del proceso, no un nivel paralelo a B y L3.
-4. **La asimetría hereda preocupación sellarsiana sin reducirse a ella.** Sellars (1956, "Empiricism and the Philosophy of Mind", §38-43) distinguió imagen manifiesta de imagen científica como dos modos descriptivos del mismo sustrato. La tesis recoge esa distinción y le añade el protocolo de traducción (operador κ con dossier) que Sellars no operacionaliza.
-
-### Argumento positivo
-
-El contenido empírico de la asimetría se observa en los casos del corpus donde la traducción B→L3 falla **frente a** los casos donde se cumple. Cuatro patrones operativamente distinguibles:
-
-1. **B→L3 con señal local validada:** caso 04 Energía, que bajo B-T2.1 queda Weak con EDI=0.1571 y p_block=0.006.
-2. **B→L3 pendiente de cierre:** Deforestación, Urbanización y Salinización conservan resultados crudos positivos, pero la tendencia y la ausencia de block-permutation homogénea impiden elevarlos.
-3. **B→L3 con circularidad detectable:** caso 30, EDI=0.2622 y `overall_pass=false`; el block bootstrap posterior estima p≈0.978.
-4. **B→L3 que falla localmente:** Kessler, Microplásticos, Acidificación y Erosión predicen peor o no superan el régimen estricto con la sonda evaluada.
-
-Los cuatro patrones son distinguibles con criterios públicos. La suite ST verifica consistencia lógica de la formalización, no invariancia empírica a través de escalas. La asimetría funciona como protocolo de auditoría; su elevación a tesis ontológica o epistemológica general permanece en H-J3.
+La utilidad de la distinción depende de que cambie decisiones. Si dos registros siempre se traducen sin pérdida, si ninguna clasificación cambia al pasar por B o si S repite L1, la arquitectura resulta redundante y debe simplificarse. Por eso su estatus actual es metodológico. La elevación ontológica de la asimetría exigiría evidencia independiente de que las pérdidas entre registros corresponden a restricciones estables del fenómeno y no a limitaciones del lenguaje elegido.
 
 ### Costo
 
-Si el lector espera una asimetría ontológica fuerte entre B y L3, no la encontrará. La tesis paga el costo de tener una asimetría más modesta (procedimental, con casos operativos) a cambio de tener una asimetría **operativamente verificable** en cada caso del corpus. La asimetría no aspira a ser metafísica; aspira a ser metodológica con consecuencias verificables.
+La tesis puede defender el protocolo de traducción, pero no que los cuatro registros sean divisiones fundamentales de la realidad.
 
-**Lectura recomendada:** cap 02-04 §8; cap 03-01 (operador κ); plantilla del dossier de anclaje, componentes 9-12.
-
----
-
-## §7 — Dimensiones omitidas (F10)
+## 7. ¿Las dimensiones omitidas invalidan el proyecto?
 
 ### Objeción
 
-> "La tesis omite estética, política como conflicto de poder, género, descolonialidad, espacio como dimensión ontológica primaria, mereología formal. Un comité humanista lo señalará como cobertura insuficiente. Para una tesis depositada en una universidad colombiana, la omisión de la descolonialidad es particularmente sensible: implica un lugar de enunciación no problematizado."
+Primera persona, normatividad, poder, historia, agencia y semántica no se dejan capturar fácilmente por un esquema ABM-ODE y una métrica de cierre. El marco podría reducir la complejidad precisamente donde afirma preservarla.
 
-### Concesión
+### Respuesta
 
-Correcto. La tesis no aborda estas dimensiones. La omisión es **deliberada**, no oversight. Cada omisión tiene una razón distinta y declarada.
+Una omisión invalida el marco cuando este afirma explicar el fenómeno completo o cuando la variable omitida altera el resultado que sí se reporta. No toda dimensión fuera de alcance es una refutación. La tesis debe proceder de tres maneras:
 
-### Distinción
+1. incluir la dimensión cuando exista una operacionalización justificable;
+2. limitar la conclusión cuando la dimensión sea constitutiva pero aún no medible;
+3. abandonar la aplicación cuando la omisión haga irreconocible el fenómeno.
 
-**Tabla 4.4.2.**
-
-| Omisión | Razón declarada | Estatus |
-|---|---|---|
-| Estética | La tesis es ontológica-epistemológica-metodológica; la estética requiere aparato axiológico distinto (Whitehead 1929, *Process and Reality*, parte II; Dewey 1934, *Art as Experience*). Inclusión exigiría desarrollo de capítulo comparable al de cap 02-06 sobre normatividad. | Deuda explícita |
-| Política como conflicto de poder | La política aparece en cap 02-06 (normatividad) y cap 05-04 (instituciones), pero como dinámica acoplada con restricciones, no como agonismo (Mouffe 2005, *On the Political*; Rancière 1995, *La Mésentente*). La omisión del agonismo es real. | Deuda explícita |
-| Género | El aparato no se aplica a relaciones género-mundo. Las publicaciones doctorales latinoamericanas suelen exigirlo. | Deuda declarada |
-| Descolonialidad | La tesis no problematiza el lugar de enunciación. Caso particularmente sensible en una tesis colombiana. Quijano (2000, "Colonialidad del poder, eurocentrismo y América Latina", en *La colonialidad del saber*, Lander ed., pp. 201-246), Mignolo (2007, *The Idea of Latin America*, cap. 1), Castro-Gómez (2007, *La hybris del punto cero*, Introducción) ofrecen marcos que la tesis no incorpora. | Deuda declarada con sensibilidad geopolítica |
-| Espacio como dimensión primaria | La espacialidad aparece como variable (sustrato material) pero no como categoría ontológica primaria al modo de la geofilosofía deleuziana o la sociología del espacio en la tradición lefebvriana (sin acceso a fuente primaria paginada en este manuscrito). | Deuda explícita |
-| Mereología formal | La parte/todo se trata como acoplamiento dinámico, no como relación lógica formal a la Lewis (1991, *Parts of Classes*) o Simons (1987, *Parts*). | Decisión metodológica |
-
-Whitehead 1929 (*Process and Reality*, pp. 27-32, verbatim verificado contra `07-bibliografia/Whitehead - Process and Reality (1929).pdf`) ofrece ocasiones reales como "drops of experience, complex and interdependent" (p. 27-28) y la concrescence como "production of novel togetherness" (p. 32): la tesis hereda la noción de proceso y la primacía del relacional sobre la sustancia, pero **no adopta** la categoría experiencial primaria (prehension), que en PR-3 (p. 28) y PR-6 (p. 65) "involves emotion, and purpose, and valuation, and causation" sin lectura deflacionaria honesta. Dewey 1934 (*Art as Experience*, pp. 15-17 y 35-36, verbatim verificado contra `07-bibliografia/Dewey_1934_ArtAsExperience_Perigee1980.pdf`) ofrece "an experience" como unidad cualificada — "such an experience is a whole and carries with it its own individualizing quality and self-sufficiency" (p. 35) — y el ritmo organismo-ambiente como condición de orden: "only when an organism shares in the ordered relations of its environment does it secure the stability essential to living" (p. 15). La tesis adopta la estructura formal de continuidad organismo-ambiente sin comprometerse con la primacía categorial de la experiencia. Ambos quedan como antecedentes paralelos declarados; la integración sustantiva de la dimensión estética bajo aparato EDI queda como deuda post-defensa.
-
-### Argumento positivo
-
-La declaración explícita de la omisión es **preferible a la simulación de cobertura**. La tesis no pretende ser ontología total; es ontología operativa para fenómenos que admiten dossier de anclaje. Lo que escapa al dossier (la experiencia estética en sí, la conflictividad política irreductible, la espacialidad geofilosófica, las relaciones de género como sistema de poder, el lugar de enunciación colonial-descolonial) queda **explícitamente fuera del alcance**, no implícitamente cubierto. Esta es virtud metodológica en sentido lakatosiano: declarar el dominio de validez del programa de investigación es condición para que el programa sea evaluable.
-
-Sobre la **descolonialidad** en particular: la tesis se inscribe en una universidad colombiana y produce categorías de análisis con pretensión universal. Esa pretensión es problemática desde Quijano (2000, op. cit., §"Colonialidad y eurocentrización del conocimiento") y Mignolo (2007, op. cit., introducción). La tesis no la resuelve; reconoce que el aparato (EDI, dossier, asimetría) tiene historia situada (matemática europea, simulación dinámica, filosofía analítica) y que su universalización no es neutra. El programa no excluye que otros aparatos —desde otras genealogías epistémicas— produzcan discriminaciones distintas. La tesis declara su lugar de enunciación: filosofía de la ciencia con formación analítica, dialogando con la tradición sistemista latinoamericana (Bunge), pero sin asumir representatividad de la totalidad de la filosofía latinoamericana ni de las epistemologías de pueblos originarios. Esta declaración no resuelve la objeción descolonial; la enmarca honestamente como deuda declarada. La opción de honestidad mínima preferida por la tesis es la siguiente: no se incorporan capítulos descoloniales que la asistencia computacional no puede preparar con engagement profundo en fuentes primarias paginadas (lo cual exigiría tiempo y voz autoral con que no contamos en el ciclo actual); se reserva la deuda para una pasada futura del programa, declarada en cap 06-03 §"Hoja de ruta para extensiones".
+Esto afecta especialmente a consciencia e instituciones. En consciencia, EDI puede estudiar organización dinámica sin agotar la experiencia vivida. En instituciones, puede modelar estabilidad e histéresis sin reducir legitimidad a permanencia. En ambos dominios, los capítulos programáticos son hipótesis de trabajo, no aplicaciones demostrativas.
 
 ### Costo
 
-Comités humanistas pueden rechazar la tesis por demasiado restringida. La defensa es: una tesis con alcance acotado y demostrado es preferible a una con alcance ilimitado y no demostrado. Quien exija cobertura total exigirá una obra que no es esta; quien acepte cobertura acotada con declaración honesta encontrará una propuesta operativa con respaldo empírico. La elección entre estas dos exigencias rebasa al manuscrito.
+El alcance del marco es menor que el de una ontología total. Su legitimidad depende de conservar esa modestia y de no presentar como ausencia del fenómeno lo que puede ser insuficiencia de medición.
 
-**Lectura recomendada:** cap 02-06 (dimensión normativa con sus límites); cap 04-02 (limitaciones declaradas); cap 06-03 (hoja de ruta para extensiones).
+## Síntesis
 
----
-
-## Trazabilidad
-
-- Origen: F1, F2, F3, F5, F6, F9, F10 documentados en el inventario interno de fallos filosóficos de fondo (taxonomía cerrada en la auditoría 2026-04-28).
-- Fuentes primarias citadas con paginación: Simondon 1958, Bunge 1977 y 1979, Dennett 1987 y 1991, Sellars 1956, Quine 1969, Carnap 1950, Hacking 1983, Strawson 2006, Goff 2019, Lakatos 1978, Kant 1781, Locke 1690, Reid 1785, Parfit 1984, Searle 1995, Woodward 2003, Whitehead 1929, Dewey 1934, Mouffe 2005, Rancière 1995, Lefebvre 1974, Lewis 1991, Simons 1987, Quijano 2000, Mignolo 2007. La asignación detallada por capítulo está en `07-bibliografia/01-bibliografia-orientativa.md`.
-- Pendiente: validación final de Jacob (ver `TAREAS_PENDIENTES.md`). Tres salidas posibles según escala de cambio: aprobación con cambios editoriales menores, reescritura ampliada por Jacob, reformulación argumental mayor en una o más secciones.
-
-## Recordatorio metodológico
-
-Estos textos son **respuestas argumentales del manuscrito**, no posición personal final del autor principal. Jacob Agudelo se reserva la voz autoral definitiva. La asistencia computacional preparó la articulación bibliográfica y argumental como contribución técnica, en el rol de coautoría declarada en el front matter. Cualquier diferencia entre la voz reflejada aquí y la voz que Jacob desea sostener será resuelta por reescritura editorial.
-
-
-<p align="right"><sub><a href="#tabla-de-contenidos">↑ volver al índice</a></sub></p>
-
----
-
-<div id="capitulo-28-limitaciones-y-puntos-de-presion"></div>
-
-# Riesgos heredados y posicionamiento filosófico declarado
-
-## Tesis del capítulo
-
-> Bajo el aparato corregido, la tesis sostiene tres riesgos operativos que requieren vigilancia permanente, una contraparte positiva de lo que sí promete con fuerza, un diálogo declarado con cuatro interlocutores prioritarios (Searle, Varela-Thompson, Bourdieu, Latour), un filtro para evaluar objeciones futuras, y una fórmula de honestidad filosófica. Este capítulo no inventaria limitaciones operativas (esa función la cumple `04-debates/05-limitaciones-declaradas-consolidacion.md` con la lista canónica L1-L20 fechadas); aquí se declara la postura argumentativa que sostiene la lista.
-
-> Para la lista canónica de limitaciones L1-L20 con plazo y entregable, ver `04-debates/05-limitaciones-declaradas-consolidacion.md`.
-
-## 1. Riesgos heredados que sobreviven
-
-Tres riesgos quedan abiertos como vigilancia permanente y se documentan aquí para evitar olvido durante la redacción final. No son limitaciones cerrables con entregable: son patrones de degradación que el marco debe controlar mientras esté en uso.
-
-### 1.1. Inmunización por nivel
-
-La cláusula "el nivel correcto depende de la pregunta" puede convertirse en escudo retórico. Antídoto fijado en `03-formalizacion/02-criterios-de-legitimidad-y-metodo.md`: Q se fija fechada antes del intento; cambiar Q después del fallo invalida el ciclo.
-
-### 1.2. Hipertrofia metodológica
-
-Una tesis que se concentra demasiado en sus propios protocolos pierde de vista el explanandum. Antídoto: el caso ancla canónico (`05-aplicaciones/05-dinamica-conductual-reconstruccion-warren.md`) es el centro fenomenológico; los protocolos solo se justifican mientras mejoran el tratamiento del caso ancla o un dominio análogo.
-
-### 1.3. Asimetría desigual entre dominios
-
-El caso ancla es asimétricamente más sólido que cualquier otro dominio del manuscrito. Antídoto: la asimetría no se disimula. `06-cierre/01-conclusion-demostrativa.md` la nombra y la convierte en programa de investigación posterior. Para el detalle fechado del inventario operativo correspondiente, cf. L5, L7-L9 en `04-debates/05-limitaciones-declaradas-consolidacion.md`.
-
-## 2. Lo que la tesis sí puede prometer con fuerza
-
-Para que la declaración honesta de los límites (`04-debates/05-limitaciones-declaradas-consolidacion.md`) no se lea como abdicación, este capítulo declara la contraparte positiva: aquello que la tesis sostiene con fuerza demostrativa, no programática.
-
-**Tabla 4.2.1.**
-
-| Promesa sostenida | Estado |
+| Objeción | Veredicto |
 |---|---|
-| Ontología material-relacional sobria | Sostenida en cap 02 |
-| Epistemología de compresión controlada | Sostenida en cap 02-02 y 03-04 |
-| Criterios explícitos de legitimidad categorial | Sostenidos en cap 03-02 |
-| Metodología de auditoría ontológica | Sostenida en cap 03-03 |
-| Mejor articulación entre niveles, modelos y categorías | Demostrada en cap 05-05 |
-| Discriminación pública contra rivales identificables | Sostenida en cap 04-01 y 04-03 |
+| Circularidad de κ | Controlable para κ-pragmática; κ-ontológica sigue abierta |
+| Identidad como cuenca | Útil para continuidad operativa; no resuelve identidad fuerte |
+| Salto multiescalar | Portabilidad demostrada; ontología general no demostrada |
+| Naturalismo | Compromiso metodológico; no conclusión metafísica |
+| Citas decorativas | Evitables mediante reconstrucción explícita de argumentos |
+| Cuatro registros | Protocolo útil; no niveles ontológicos demostrados |
+| Dimensiones omitidas | Exigen límites de alcance y, en ciertos casos, abandono de la aplicación |
 
-La contraparte negativa (lo que la tesis NO debe prometer) se elimina de este capítulo por duplicación con `04-debates/05-limitaciones-declaradas-consolidacion.md §5` ("Fuera de alcance"). Ese inventario es la fuente única de las promesas rechazadas; la promesa positiva queda aquí.
-
-## 3. Diálogo declarado con interlocutores filosóficos
-
-Cuatro interlocutores reciben tratamiento posicional explícito en este capítulo porque ninguno se reduce a entrada de inventario L1-L20:
-
-**Searle — ontología social y dimensión normativa.** Searle insiste en intencionalidad colectiva y reglas constitutivas como rasgos irreductibles de lo institucional. La tesis lo recoge parcialmente: la dimensión normativa es real pero su operacionalización empírica está pendiente (cf. L10 en `04-debates/05-limitaciones-declaradas-consolidacion.md`). Searle es interlocutor obligado del programa posterior sobre instituciones.
-
-**Varela y Thompson — fenomenología naturalizada.** Varela y Thompson proponen una fenomenología naturalizada que articule descripción en primera persona con neurociencia y dinámica. La tesis se inscribe en ese horizonte programático para la dimensión vivida (cf. L13 en `04-debates/05-limitaciones-declaradas-consolidacion.md`).
-
-**Bourdieu — espesor histórico y práctico.** Bourdieu insiste en que las prácticas sociales tienen historia incorporada (*habitus*) que no se reduce a regla actual. La tesis recoge la advertencia y la incluye como variable histórica del nivel B.
-
-**Latour — controversia con el inventario.** Latour propone redes con actantes humanos y no-humanos. La tesis admite la red pero exige filtro de admisión: no todo lo que se nombra como actante es patrón estabilizado en el sentido del marco.
-
-## 4. Filtro de objeciones futuras
-
-Toda objeción nueva al manuscrito se evalúa con esta matriz antes de respuesta:
-
-1. ¿es objeción a inflación ontológica?
-2. ¿es a pérdida de estructura relevante?
-3. ¿es a vaguedad metodológica?
-4. ¿es a falta de anclaje empírico?
-5. ¿es a exceso de abstracción?
-6. ¿es a redundancia con marcos vecinos?
-
-Si no cae en ninguna, probablemente está mal formulada. Si cae en alguna, la respuesta debe ser por compromiso verificable, no por reformulación retórica.
-
-## 5. Fórmula de honestidad filosófica
-
-> La tesis no pretende clausurar la complejidad de lo real. Pretende ofrecer mejores reglas para no empeorarla con malas categorías, dossier de anclaje verificable, asimetría L1↔B↔L3↔S como protocolo, y caso paradigmático trabajado a fondo. Sus límites son nombrados, sus deudas son fechadas, sus promesas son delimitadas.
-
-## 6. Lectura cruzada
-
-- Inventario operativo de limitaciones fechadas con entregable (L1-L20): `04-debates/05-limitaciones-declaradas-consolidacion.md`.
-- Anticipación de objeciones filosóficas con F1-F10: `04-debates/04-anticipacion-objeciones-filosoficas.md`.
-- Confrontación con rivales discursivos: `04-debates/01-debates-con-posiciones-rivales.md`.
-- Matriz síntesis 15×6 de rivales: `04-debates/03-tabla-comparativa-rivales.md`.
+El marco sobrevive a estas objeciones en una versión más acotada: como epistemología de la compresión disciplinada y método para evaluar cierres locales. Su programa ontológico solo avanzará si obtiene evidencia externa que el propio aparato no haya definido de antemano.
 
 
 <p align="right"><sub><a href="#tabla-de-contenidos">↑ volver al índice</a></sub></p>
 
 ---
 
-<div id="capitulo-29-limitaciones-declaradas-consolidadas"></div>
+<div id="capitulo-25-limitaciones-declaradas"></div>
 
-# Limitaciones declaradas (consolidación)
+# Limitaciones declaradas
+
+> **BORRADOR-IA · requires: H-J2, H-J8.** Consolidación editorial basada en el estado reproducible del corpus. Sustituye inventarios históricos y reclasificaciones incompatibles por una sola matriz vigente.
 
 ## Función
 
-Listado consolidado de **todas las limitaciones que la tesis declara explícitamente**, con plazo y entregable para cada una. Este capítulo no introduce limitaciones nuevas: consolida en un único lugar lo que está disperso en cap 06-01 §8.2, README, y bitácora. Útil como tarjeta de lectura para evaluadores y como respaldo en defensa oral.
+Este capítulo reúne los límites que condicionan la interpretación de la tesis. No repite la defensa de cada decisión ni el historial de auditorías. Distingue cuatro clases de restricción: metodológica, empírica, filosófica y procedimental.
 
-**Política:** ninguna limitación se oculta; todas se nombran. Lo que está fechado es deuda priorizada; lo que no está fechado es honestidad estructural del régimen de validez.
+## 1. Estado empírico que debe gobernar la lectura
 
----
+La clasificación estricta vigente es:
 
-## 1. Limitaciones metodológicas declaradas
+| Estado | Casos | Alcance |
+|---|---:|---|
+| Strong confirmado | 0 | Ningún caso autoriza cierre robusto fuerte |
+| Weak validado | 1 | Caso 04 Energía: EDI 0.1571, p_block 0.006, IC [0.133, 0.193] |
+| Candidato | 1 | Caso 26 Starlink: EDI 0.7575, p_block 0.079; no supera el gate completo |
+| Falsificación local | 4 | Casos 19, 20, 23 y 24 |
+| Control rechazado | 3 | Casos 06, 07 y 08 |
+| Sin cierre estricto | 21 | Evidencia insuficiente bajo el régimen vigente |
 
-**Tabla A.0.1.**
+Esta tabla reemplaza las distribuciones históricas basadas en etiquetas crudas, p-values i.i.d. o umbrales anteriores. Los resultados crudos se conservan para reproducibilidad, pero no son el veredicto filosófico.
 
-**Tabla 4.5.1.**
+## 2. Limitaciones metodológicas
 
-| # | Limitación | Origen | Resolución actual | Entregable |
-|---|-----------|--------|-------------------|------------|
-| L1 | p-value mal calibrado (tasa empírica de tipo I ≈ 24 %, no 5 %) | Hostile testing N3 | Cerrada metodológicamente: el módulo `common/calibration.py` implementa block bootstrap (Politis y Romano 1994), Newey-West HAC (Newey y West 1987) y corrección Holm-Bonferroni (Holm 1979, "A simple sequentially rejective multiple test procedure", *Scand. J. Statist.* 6: 65–70; referencia bibliográfica sin PDF en `07-bibliografia/`, paginación verbatim no verificable en esta pasada). Aplicada al corpus inter-dominio, 14 casos del corpus inter-dominio + 8 del corpus multiescala = 22 casos sobreviven Holm-Bonferroni a α=0.05; los 6 casos macro `overall_pass=True` (tras pre-registros B-T2 firmados) están entre los sobrevivientes. La inferencia formal sigue requiriendo invocación desde `edi_engine.py` con flag `--calibrated` en la ejecución final. | Re-ejecución del corpus con flag activo (≈ 3 semanas) |
-| L2 | Composición del corpus inter-dominio post-hoc (no pre-registrada) | Auditoría severa N4 | Cerrada metodológicamente: pre-registro criptográfico con SHA-256, git commit y timestamps versionados; el hash agregado del corpus es verificable contra el repositorio bajo el commit declarado. | Verificación reproducible por evaluador externo |
-| L3 | Sensibilidad a umbrales históricos no cubre sensibilidad a datos, tendencia o permutación | N4 + B-T2.1 | Abierta: el barrido de cortes es reproducible, pero Energía y Microplásticos cambiaron al modificar el régimen | Repetir sensibilidad después de cerrar B-T2.1 |
-| L4 | AUC-ROC = 0.886 es consistencia interna, no validación externa | Auditoría V4-05 | Afirmación discriminativa retirada; productor reproducible conservado por trazabilidad | Validación inter-grupo con etiquetas ciegas al EDI |
-| L5 | Caso 30 (behavioral dynamics) con circularidad detectada por sonda alternativa | N2 | El análisis de calibración estadística confirma cuantitativamente la circularidad: bajo block bootstrap, p estimado = 0.978 (no significativo). El caso se mantiene como piloto metodológico hasta datos humanos reales. | Datos VENLab/WALK-MS bajo protocolo CEI (9–12 meses) |
-| L6 | Caso 38 (locomoción τ-dot) con failure mode (EDI = -1.34) | V4 post-multiescala | Failure declarado y documentado | Reformulación de sonda con histéresis o datos VENLab reales |
+| Código | Limitación | Consecuencia | Cierre requerido |
+|---|---|---|---|
+| M1 | El régimen B-T2.1 no está cerrado homogéneamente en todos los casos | No puede estimarse prevalencia final de cierre | Reejecución caso por caso con perfil estricto único |
+| M2 | Parte del corpus histórico usa permutación i.i.d. sobre series autocorrelacionadas | Los p-values históricos pueden ser optimistas | Block permutation o block bootstrap como regla canónica |
+| M3 | Los umbrales fueron elegidos dentro del desarrollo del aparato | Sensibilidad y sobreajuste siguen siendo posibles | Análisis de sensibilidad y validación ciega externa |
+| M4 | AUC 0.886 compara etiquetas derivadas del propio EDI | Mide consistencia interna, no validez externa | Etiquetas independientes y evaluación intergrupo |
+| M5 | Varios casos tienen potencia insuficiente | Un null puede indicar falta de resolución | Análisis de potencia previo y muestras mayores |
+| M6 | El criterio C1 admite una rama absoluta sin exigir aporte ODE | Puede producir C1 positivo con EDI negativo | Separar el fallback diagnóstico del gate confirmatorio |
+| M7 | La corrección de sesgo se calibra en train y puede degradarse en validación no estacionaria | Riesgo de generalización aparente | Prueba de estacionariedad del residuo en validación |
+| M8 | El criterio de viscosidad del atractor es débil y no entra al gate | No sostiene inferencia confirmatoria | Redefinirlo respecto de la escala temporal o retirarlo |
 
----
+Los módulos existentes de calibración, prerregistro, sondas independientes, sensibilidad y potencia son infraestructura. Su existencia no equivale a aplicación uniforme ni a validación externa.
 
-## 2. Limitaciones empíricas declaradas
+## 3. Limitaciones empíricas
 
-**Tabla A.0.2.**
+### 3.1. Corpus inter-dominio
 
-**Tabla 4.5.2.**
+El corpus demuestra que el procedimiento puede ejecutarse, registrar fallos y revisar clasificaciones. No demuestra que el cierre operativo sea frecuente ni que los dominios compartan una ontología. Con 0 casos Strong confirmados, cualquier generalización positiva debe permanecer condicionada.
 
-| # | Limitación | Origen | Plazo | Entregable |
-|---|-----------|--------|-------|------------|
-| L7 | **Datos del corpus inter-escala son sintéticos** derivados de parámetros publicados | V4 post-multiescala | 6-12 meses | Elevación a datos reales abiertos: IBM Quantum, BRENDA, PhysioNet, OGLE, Gaia DR3 |
-| L8 | **Escalas del corpus inter-escala son etiquetas nominales** sobre datos sintéticos | Idem | Idem | Documentado en cap 06-01 §8.2 |
-| L9 | **0/30 Strong robustos confirmados bajo B-T2.1 completo; 21/30 sin cierre estricto** | Estado del corpus | Limitación bloqueante para agregación confirmatoria | Cerrar B-T2.1 caso por caso y publicar matriz de decisiones |
-| L10 | **Caso piloto COVID dimensión normativa** produjo null honesto (sonda continua simple inadecuada) | Piloto ejecutado | 18-24 meses | Sondas con histéresis y variables ordinales |
+### 3.2. Corpus inter-escala
 
----
+Los diez casos inter-escala usan principalmente datos sintéticos derivados de parámetros publicados. Prueban portabilidad computacional, no invariancia ontológica. La elevación exige datos primarios reales, sondas específicas y replicación independiente.
 
-## 3. Limitaciones filosóficas declaradas
+### 3.3. Caso 30
 
-**Tabla A.0.3.**
+El caso de behavioral dynamics bajo EDI es un piloto metodológico. Su posterior block bootstrap produce p aproximado de 0.978 y la sonda alternativa detecta circularidad. No valida el caso Warren ni demuestra cierre conductual. Su continuación requiere datos humanos reales y un protocolo experimental independiente.
 
-**Tabla 4.5.3.**
+### 3.4. Independencia
 
-| # | Limitación | Origen | Plazo | Entregable |
-|---|-----------|--------|-------|------------|
-| L11 | κ-ontológica fuerte no demostrada; sólo κ-pragmática | Cap 02-01 §Nota sobre κ | El módulo `common/independent_probes.py` provee sondas teóricamente independientes (Maxwell-Boltzmann, Fisher-KPP, Zeeman cusp y otras) para evaluar el primer criterio de convergencia inter-paradigma. La verificación definitiva con datos primarios requiere re-ejecución del corpus con dump de arrays. | Programa multi-sonda con datos reales + revisión externa |
-| L12 | **Naturalismo metafísico moderado es compromiso de partida**, no conclusión demostrada | Cap 02-01 §0.1 | Postura honesta, no deuda | Verificado por ST T16 (contramodelo encontrado: naturalismo NO se infiere desde dentro del marco) |
-| L13 | **Dimensión fenomenológica (qualia, primera persona)** no agotada por aparato EDI | Cap 05-01 §7 | Postura: complementarismo metodológico | No se promete más |
-| L14 | **Ética sustantiva** no se funda; sólo se articula filosóficamente | Cap 02-06 §6 | Postura honesta | No promete algoritmo para decisiones morales |
-| L15 | **Sujeto y agencia**: compatibilismo dennettiano sin pretensión de resolver libre albedrío | Cap 05-01 §8 | Postura honesta | No se promete más |
-| L16 | **Identidad personal a través del tiempo** no resuelta entre Locke/Parfit/Strawson | Cap 02-03 §V5 | Postura: continuidad de organización bajo transformación | Tratamiento explícito en cap 02-03 |
+La mayor parte de las auditorías y ejecuciones se realizó dentro del mismo proyecto. No existe todavía replicación externa formal, estudio ciego ni publicación revisada por pares que confirme las inferencias centrales.
 
----
+## 4. Limitaciones filosóficas
 
-## 4. Limitaciones procedimentales (bloqueadores externos)
+| Código | Límite | Posición defendible |
+|---|---|---|
+| F1 | κ-ontológica fuerte no demostrada | El corpus evalúa κ-pragmática local |
+| F2 | El naturalismo no se deduce del aparato | Es un compromiso metodológico de partida |
+| F3 | La portabilidad no implica ontología común | La generalidad multiescalar es una conjetura programática |
+| F4 | La identidad como cuenca no resuelve identidad personal o haecceidad | Solo ofrece continuidad operativa bajo transformaciones |
+| F5 | EDI no agota experiencia en primera persona | Consciencia permanece como aplicación parcial |
+| F6 | Estabilidad institucional no equivale a legitimidad | La dimensión normativa requiere tratamiento propio |
+| F7 | Una ablación simulada no equivale a intervención física | La fuerza ontológica depende del tipo de intervención |
 
-**Tabla A.0.4.**
+Estas restricciones no son promesas aplazadas en todos los casos. Algunas delimitan el objeto de la tesis: no se ofrece una teoría completa de la consciencia, una solución al libre albedrío, un algoritmo moral ni una ontología total.
 
-**Tabla 4.5.4.**
+## 5. Limitaciones procedimentales
 
-| # | Limitación | Origen | Plazo | Entregable |
-|---|-----------|--------|-------|------------|
-| L17 | Todas las auditorías internas son endógenas, con asistencia computacional bajo dirección humana | README línea 51 | 3-6 meses | Revisión por pares humanos externos (deuda externa bloqueante para sustentación) |
-| L18 | **Director de tesis no declarado formalmente** en frontmatter del manuscrito | Inspección directa | 1-2 semanas | Declaración firmada con director de la Universidad de Antioquia |
-| L19 | **Plantilla institucional U. de Antioquia no aplicada** | Estado actual | 3 semanas pre-depósito | Conversión a plantilla del programa de Doctorado en Filosofía |
-| L20 | **Convención bibliográfica Chicago author-date** puede requerir ajuste a estilo institucional o de revista Q1 | Cap 07 nota editorial 1 | 1 semana | Ajuste según política institucional |
+| Código | Pendiente | Efecto |
+|---|---|---|
+| P1 | Director de tesis sin declaración formal en el manuscrito | Bloquea cierre institucional |
+| P2 | Plantilla y estilo bibliográfico institucional pendientes | Bloquea depósito final |
+| P3 | Revisión externa humana pendiente | Bloquea la pretensión de validación independiente |
+| P4 | Política institucional sobre asistencia con IA por confirmar | Requiere adecuar la declaración de herramientas |
+| P5 | Decisiones autorales H-J2 y H-J8 abiertas | Impiden cerrar el estatuto ontológico y la voz final |
 
----
+## 6. Prioridades de cierre
 
-## 5. Limitaciones reconocidas como "fuera de alcance"
+Las tareas que cambian el estatuto de la tesis son, en orden:
 
-Cosas que la tesis explícitamente NO promete demostrar:
+1. cerrar B-T2.1 con un perfil estadístico único y publicar la matriz completa;
+2. obtener replicación independiente de al menos un caso Weak o candidato;
+3. sustituir los casos inter-escala sintéticos por datos reales;
+4. prerregistrar predicciones sobre dominios no usados para construir el aparato;
+5. resolver las decisiones filosóficas e institucionales humanas.
 
-- ontología total cerrada (la tesis es articuladora, no totalizadora);
-- reducción de las ciencias a esquema único (pluralismo controlado lo prohíbe);
-- teoría definitiva de consciencia, normatividad o información;
-- predicción de fenómenos individuales no medibles;
-- solución al problema duro de la consciencia (Chalmers);
-- solución al problema del libre albedrío metafísico;
-- algoritmo para decisiones morales;
-- demostración κ-ontológica fuerte (sólo κ-pragmática).
+Las mejoras de presentación, nuevas visualizaciones o módulos adicionales no sustituyen estos cierres.
 
-Esto está consolidado de cap 06-01 §7 y cap 04-02 §8.
+## 7. Regla de interpretación
 
----
-
-## 5.5. Módulos metodológicos implementados
-
-**Nota sobre el sistema QES (Quality of Evidence Score):** la métrica QES de auditoría interna es construcción del proyecto, no estándar reconocido en literatura externa de calidad de evidencia. No es GRADE ni AMSTAR. Sirve como filtro interno para distinguir casos con infraestructura adecuada y contenido empírico sustantivo de casos con sólo infraestructura. La afirmación "ningún caso del corpus es paper-science según QES" debe interpretarse como "ningún caso cae bajo el umbral interno de QES = 0.40"; la clasificación contra criterios externos (revisión por pares, GRADE) es deuda explícita L17.
-
-
-
-Los siguientes módulos resuelven o reducen seis limitaciones sin re-ejecutar el corpus:
-
-**Tabla A.0.5.**
-
-**Tabla 4.5.5.**
-
-| Módulo | Limitación afectada | Resolución | Ruta |
-|--------|---------------------|------------|------|
-| Calibración estadística | L1 (p-value mal calibrado) | Cerrada metodológicamente | `09-simulaciones-edi/common/calibration.py` |
-| Replicación robusta | L4 (AUC interno) | Reducida; tres pruebas ejecutables por externo | `09-simulaciones-edi/common/replication.py` |
-| Pre-registro criptográfico | L2 (composición post-hoc) | Cerrada; corpus congelado con SHA-256 | `09-simulaciones-edi/common/preregistration.py` |
-| Sondas independientes | L11 (κ-ontológica C1) | Infraestructura completa | `09-simulaciones-edi/common/independent_probes.py`, `full_secondary_probes.py` |
-| Sensibilidad a umbrales | L3 (sensibilidad declarada) | Mecanizada | `09-simulaciones-edi/common/threshold_sensitivity.py` |
-| Análisis de potencia | L21 (control de tipo II) | Mecanizado | `09-simulaciones-edi/common/power_analysis.py` |
-
-La corrección FWER Holm-Bonferroni sobre los 30 casos del corpus inter-dominio preserva 14 casos inter-dominio (más 8 inter-escala) tras Holm; los 6 casos macro `overall_pass=True` (tras pre-registros B-T2 firmados) están entre los sobrevivientes: la clasificación strong sobrevive a la corrección por comparaciones múltiples.
-
-### Reclasificación de casos bajo régimen calibrado
-
-La aplicación caso por caso de los módulos a los casos no invariantes produce los siguientes veredictos:
-
-**Tabla A.0.6.**
-
-**Tabla 4.5.6.**
-
-| Veredicto | Casos | Significado |
-|-----------|-------|-------------|
-| Pasa a robusto | 15 Wikipedia | Invariante a umbrales + significativo bajo block bootstrap + sobrevive FWER |
-| Significativo individual sin FWER | 26 Starlink | Inferencia individual robusta; familia no sobrevive |
-| Marginal post-calibración | 01 Clima, 09 Finanzas, 30 Behavioral Dynamics | p estimado > 0.10 bajo block bootstrap |
-| Sensible a umbrales | 06 Exogeneidad, 10 Justicia, 11 Movilidad, 13 Políticas, 14 Postverdad, 20 Kessler, 27 Riesgo bio | Invariancia falla bajo grilla razonable |
-| Evaluación específica | 21 Salinización, 28 Fuga de cerebros | Combinación particular de invariancia y p-value |
-
-El caso 30 (Behavioral Dynamics) se confirma como marginal post-calibración (p estimado ≈ 0.978). El reconocimiento previo de circularidad en N2 (cap 06-01 §3.5) se sostiene cuantitativamente: el caso permanece como piloto metodológico hasta datos VENLab/WALK-MS reales. El caso 15 Wikipedia (EDI = 0.19) sí pasa a robusto bajo el régimen calibrado.
-
-### Aplicación al corpus inter-escala
-
-Los 7 casos strong del corpus inter-escala (31 Decoherencia cuántica, 32 Espín-órbita, 34 Michaelis-Menten, 36 NF-κB, 37 HRV cardíaco, 39 Cefeidas, 40 Cúmulos globulares) son invariantes a la grilla de umbrales y sobreviven la corrección FWER inter-escala. Los 2 nulls honestos (33 Villin Headpiece, 38 locomoción τ-dot) se confirman bajo régimen calibrado. El caso 35 (ciclo celular Tyson-Novak) queda sensible a umbrales.
-
-### Distinción del error de tipo II
-
-Bajo `common/power_analysis.py` se distingue entre `null_real` (potencia ≥ 0.80 para detectar EDI = 0.10) y `null por potencia insuficiente`. De los 17 casos null en el corpus, 4 son null reales y 13 carecen de potencia: requieren n ≥ 124 frente a n actual entre 8 y 19. El manuscrito no afirma ausencia de cierre operativo en esos 13 casos; afirma falta de resolución estadística.
-
-**Tabla A.0.7.**
-
-**Tabla 4.5.7.**
-
-| Categoría | n | Implicación |
-|-----------|--:|-------------|
-| No null (EDI > 0.10) | 23 | Casos con señal detectable |
-| Null real (potencia ≥ 0.80) | 4 | Honestamente null bajo régimen actual |
-| Null por potencia insuficiente | 13 | Falta de resolución; no afirmación de ausencia |
-
-Esto introduce una distinción crítica que el manuscrito antes no tenía: **null estadístico ≠ ausencia ontológica**. Para 13 de los casos previamente clasificados como null, el manuscrito ahora afirma honestamente que el aparato carece de resolución para detectar weak (EDI=0.10) con potencia 0.80; necesitaría n ≥ 124 vs n actual entre 8 y 19.
-
-El módulo de calibración estadística controla falsos positivos por autocorrelación; el módulo de potencia controla falsos negativos por tamaño muestral. Ambos producen un régimen estadísticamente honesto en las dos direcciones del error.
-
-## 6. Cuadro síntesis para defensa oral
-
-Si en defensa una limitación es señalada por el tribunal, la respuesta canónica del manuscrito es:
-
-**Tabla A.0.8.**
-
-**Tabla 4.5.8.**
-
-| Tipo de limitación | Respuesta canónica |
-|--------------------|---------------------|
-| Metodológica (L1-L6) | "Está declarada, fechada y con entregable. Es deuda metodológica priorizada, no debilidad oculta." |
-| Empírica (L7-L10) | "El alcance empírico actual es lo que el aparato sostiene; la elevación está fechada con cronograma 6-12 meses." |
-| Filosófica (L11-L16) | "Es honestidad estructural del régimen de validez. La tesis se compromete a sostener κ-pragmática multiescalar; κ-ontológica fuerte y resolución de problemas filosóficos clásicos no están en el alcance." |
-| Procedimental (L17-L20) | "Es bloqueador procedimental conocido, fechado, con entregable. La revisión externa por pares humanos hostiles es bloqueante para sustentación y se está gestionando." |
-
----
-
-## 7. Lectura cruzada
-
-- Cap 06-01 §8.2 — declaración formal en conclusión.
-- README líneas 47-51 — declaración pública en raíz del repositorio.
-- Cap 04-02 — capítulo dedicado a límites filosóficos.
-- Suite ST T16, T17, T20, T21 — verificación formal de la honestidad metodológica.
-
-## 8. Deuda residual
-
-- **Limitación 1 (caso 19, re-ejecutado y clasificación corregida).** El `metrics.json` previo del caso 19 (fase real) contenía `phases.real.edi.value=0.7278` mientras `(rmse_no_ode-rmse_abm)/rmse_no_ode = -0.000191` y `weighted_value = -0.000115` (JSON mezclado entre dos ejecuciones). Re-ejecutado con perfil canónico (`HYPER_N_PERM=2999 HYPER_N_BOOT=1500 python3 validate.py`), las nuevas cifras coherentes son EDI=0.00044, p_perm=0.433, CI=[0.00023, 0.00065], `overall_pass=False`. Caso 19 se reclasifica de "Trend Nivel 1*" a **null genuino** en `05-aplicaciones/07-mapa-aplicaciones-corpus.md:140`. **Caveats permanentes:** (i) `data/dataset.csv` PMEL/NOAA no estaba versionado, se usó proxy sintético calibrado a las estadísticas del run original — reproducción bit-a-bit exige recuperación del CSV NOAA real; (ii) block-permutation no implementada en `hybrid_validator.py` (i.i.d. Phipson-Smyth), aunque con EDI≈0 y p=0.43 la conclusión null tiene margen amplio. **Deudas técnicas restantes (abiertas):** añadir assertion en `write_outputs()` de `hybrid_validator.py` que garantice `abs(value - (rmse_no_ode-rmse)/rmse_no_ode) < ε`; auditoría retroactiva sobre los 40 casos del corpus; implementar block-permutation.
-- **Limitación 2.** En `09-simulaciones-edi/common/hybrid_validator.py:892-926`, el criterio C1 está implementado como `c1 = c1_relative OR c1_absolute` con la rama (B) (absoluta) **sin requerir aporte ODE** sobre la baseline no-ODE. Esto permite C1=True con EDI<0 (8 fases del corpus listadas en el archivo de origen). Camino de resolución: cambiar la lógica a `c1_fallback` diagnóstico (Salida 2 con flag explícito), no a `c1=True` directo; re-correr corpus con la corrección.
-- **Limitación 3.** En `hybrid_validator.py:1560-1681`, la corrección de sesgo (BC) se calibra sobre train y se aplica a la serie completa (incluido val). El guarda actual sólo detecta degradación catastrófica; **no detecta sesgo bajo no-estacionariedad** del residuo BC en val. Camino de resolución: añadir test ADF (Augmented Dickey-Fuller) sobre el residuo BC en val con `α=0.05`; emitir warning en `metrics.json` cuando el residuo no sea estacionario.
-- **Limitación 4.** En `hybrid_validator.py:1167` y :1831-1833, el umbral de "viscosidad" del atractor es `relaxation_time > 1`, que es trivialmente verdadero salvo en degeneración numérica; además `c_visc` NO está en `overall_pass`. Defectos compuestos: criterio trivial + no incorporado al gate. Camino de resolución: parametrizar el umbral relativo a la escala temporal del caso (`relaxation_time > k · dt`) y decidir si `c_visc` se incorpora a `overall_pass` o se documenta como diagnóstico secundario.
-
-## 9. Cierre
-
-Una tesis sin límites nombrados es una tesis que aún no se ha sometido a sí misma a su propio filtro. Esta tesis nombra 20 limitaciones explícitas con entregable. Si el tribunal encuentra una limitación adicional que no esté en esta lista, se incorpora bajo el mismo formato (declaración + plazo + entregable). La política es: **nada se oculta; todo se fecha.**
+La tesis debe leerse con una regla única: una limitación del instrumento no se convierte en ausencia del fenómeno, y una señal producida por el instrumento no se convierte automáticamente en entidad. Entre ambos extremos, el resultado válido es el que conserva su régimen de medición, incertidumbre y alcance local.
 
 
 <p align="right"><sub><a href="#tabla-de-contenidos">↑ volver al índice</a></sub></p>
@@ -7386,7 +5847,7 @@ Una tesis sin límites nombrados es una tesis que aún no se ha sometido a sí m
 # Parte V — Cierre y estado de la demostración
 
 
-<div id="capitulo-30-conclusion-y-estado-de-la-demostracion"></div>
+<div id="capitulo-26-conclusion-y-estado-de-la-demostracion"></div>
 
 # Conclusión y estado de la demostración
 
@@ -7533,268 +5994,8 @@ El resultado final es, por ello, deliberadamente asimétrico: el método está m
 
 ---
 
-<div id="capitulo-31-hoja-de-ruta-post-defensa"></div>
-
-# Hoja de ruta para tesis final
-
-
-## Tesis del capítulo
-
-> El manuscrito está en estado integral defendible al cierre 2026-04-28 con corpus EDI multidominio ejecutado, multi-sonda y baselines verificados, piloto Wolfram-EDI ejecutado y caso piloto COVID con resultado null honesto. Lo que continúa como programa de investigación post-defensa son tres líneas: elevación del caso 30 con datos humanos reales, multiplicación de casos demostrativos a partir del corpus weak, desarrollo formal de la dimensión normativa con sondas más sofisticadas. El plazo agregado para programa de investigación post-defensa es 24-36 meses adicionales.
-
-## 1. Estado del manuscrito al 2026-04-28
-
-### Lo consolidado en la versión integral defendible
-
-- diagnóstico estructural con seis falencias identificadas y resueltas (capítulo 01-01);
-- objeciones discriminantes con respuesta y compromiso público (capítulo 01-02);
-- estado del arte con 5 subcampos y mapa de inserción (capítulo 01-03);
-- ontología material-relacional con definición técnica de patrón estabilizado (capítulo 02-01);
-- epistemología de la compresión con verdad como preservación estructural (capítulo 02-02);
-- categorías, objetos, propiedades, identidad reformulados (capítulo 02-03);
-- nivel B (conductual-biológico) con asimetría L1↔B↔L3↔S y citas textuales con paginación (capítulo 02-04);
-- aparato formal con cinco operadores (capítulo 03-01);
-- diez criterios y dossier de catorce componentes (capítulo 03-02);
-- protocolo de auditoría ontológica de nueve fases (capítulo 03-03);
-- procedimiento empírico de κ vía baja dimensionalidad (capítulo 03-04);
-- ética de investigación y gobernanza de datos con declaración de co-autoría con IA (capítulo 03-05);
-- debates con quince rivales identificables y citas textuales, incluido IIT (capítulo 04-01);
-- limitaciones genuinas con seis puntos de presión (capítulo 04-02);
-- distinción demostrativo/programático con criterios (capítulo 05-00);
-- caso ancla canónico con dossier completo (capítulo 05-05);
-- cuatro aplicaciones programáticas con criterios de elevación (capítulos 05-01 a 05-04);
-- conclusión demostrativa con condiciones de fracaso falsables (capítulo 06-01);
-- guía de defensa oral en tres tiempos (capítulo 06-02);
-- corpus EDI con 30 casos verificados (`09-simulaciones-edi/`);
-- multi-sonda en 3 strong + 5 weak ejecutado (`09-simulaciones-edi/multi_sonda/`);
-- baselines ARIMA + VAR + persistencia + RW ejecutados sobre 7 casos con `primary_arrays.json` (`09-simulaciones-edi/baselines/baselines_report.md`);
-- análisis topológico (Lyapunov + Grassberger-Procaccia + mixing time) ejecutado sobre 7 casos (`09-simulaciones-edi/topology/topology_report.md`);
-- sondas inter-paradigma sobre arrays primarios reales (cierre parcial de F13): convergencia honesta 1/7 bajo \|ΔEDI\| ≤ 0.10 (`09-simulaciones-edi/multi_sonda/secondary_on_primary_arrays.md`);
-- piloto Wolfram Rule 110 ejecutado con EDI 0.55 (`09-simulaciones-edi/wolfram_pilot/`);
-- caso piloto COVID con ablación real ejecutado (`09-simulaciones-edi/covid_pilot/`);
-- análisis de drift bajo perfil agresivo (`09-simulaciones-edi/perfil_agresivo/`);
-- anexos operativos absorbidos al cuerpo del manuscrito, con solo tres apéndices técnicos mínimos (`10-apendices-tecnicos/`) y mapa de trazabilidad (`TesisFinal/MAPA_INTEGRACION_ANEXOS.md`);
-- visualización vectorial completa: 5 figuras del corpus + espacio de fase del caso ancla + 9 figuras Mermaid en SVG/PNG (`figures/`);
-- 114 tablas y 9 figuras numeradas formalmente con prefijo `<capítulo>.<orden>` en 37 archivos;
-- fetchers de datos reales para multiescala (PhysioNet HRV, OGLE Cefeidas verificado, BRENDA, Gaia DR3, IBM Quantum) en `09-simulaciones-edi/multiscale_fetchers.py`;
-- propuesta de calibración externa de QES con corpus de 10 estudios Q1 (`09-simulaciones-edi/common/qes_external_calibration.md`);
-- bibliografía consolidada con ~156 referencias en Chicago author-date (capítulo 07; expandida en pasada nocturna 2026-04-29 con secciones M-EE para cubrir todas las obras citadas con paginación en el cuerpo);
-- PDF generado de 1.8 MB (`TesisFinal/Tesis.pdf`).
-
-### Programa post-defensa (no requerido para sustentación)
-
-- elevación del caso 30 con datos humanos reales (LoE = 4) cuando se obtenga acceso a VENLab/WALK-MS/OpenLocomotionData;
-- elevación de casos programáticos del capítulo 05 (mente, biología, sistemas técnicos, instituciones) a modo demostrativo con dossier completo;
-- desarrollo formal de la dimensión normativa con sondas más sofisticadas (resultado null del piloto COVID confirmó insuficiencia de AR(1));
-- revisión exhaustiva por dominio del corpus EDI (mini-revisiones específicas por cada uno de los 30 dominios);
-- comparación contra modelos no lineales adicionales (LSTM, Transformer);
-- conversión final a plantilla institucional con figuras formales (trámite editorial pre-depósito).
-
-## 2. Paso 1. Elegir caso programático prioritario para elevación
-
-### Criterio de prioridad
-
-El caso programático con mayor retorno marginal sobre la robustez del programa es **biología y ecología (capítulo 05-02)**, por tres razones:
-
-- la literatura sobre regime shifts ecológicos (Scheffer y colegas) ofrece datos cuantitativos publicados con bifurcaciones identificables;
-- el rival principal (reduccionismo molecular o holismo ecológico inflado) es articulable en su forma fuerte;
-- la elevación reduce significativamente la asimetría con el caso ancla, fortaleciendo la generalidad ontológica del marco.
-
-### Entregable
-
-Capítulo 05-02 elevado a modo demostrativo con dossier completo: pregunta Q sobre transición de régimen ecológico, variables medidas, modelo dinámico ajustado, atractores empíricos, bifurcación de regime shift, predicción discriminante, comparación rival con datos.
-
-### Plazo plausible
-
-6-12 meses con dedicación parcial. La literatura existente acelera el trabajo.
-
-## 3. Paso 2. Integración bibliográfica formal
-
-### Tarea
-
-Convertir el mapa de interlocutores funcionales del capítulo 07 en aparato bibliográfico real con citas rigurosas distribuidas por capítulo.
-
-### Distribución obligatoria
-
-**Tabla 6.3.1.**
-
-| Capítulo | Interlocutor principal | Interlocutores secundarios |
-|---|---|---|
-| 02-01 (ontología) | Bunge | Dupré, Ladyman-Ross, Dennett, Sellars, Wittgenstein, Simondon |
-| 02-02 (epistemología) | Cartwright | Pearl, Bechtel-Craver, Mitchell, Dennett |
-| 02-03 (categorías) | Dennett | Searle, Bourdieu, Latour, Simondon |
-| 02-04 (nivel B) | Warren, Gibson | Maturana-Varela, Varela-Thompson-Rosch, Clark, Noë |
-| 03-01 (aparato) | Pearl | Ladyman-Ross, Strogatz, Kelso, Haken |
-| 03-02 (criterios) | Bunge, Lakatos | Cartwright, Pearl |
-| 03-03 (auditoría) | Bunge | Bechtel, Craver, Mitchell |
-| 03-04 (κ empírico) | Strogatz, Kelso | literatura técnica de dinámica no lineal |
-| 04-01 (rivales) | según rival | construido caso por caso |
-| 04-02 (límites) | Searle, Varela-Thompson | Bourdieu, Latour |
-| 05-01 (mente) | Varela-Thompson, Dennett | Clark, Noë, Searle |
-| 05-02 (biología) | Nicholson-Dupré, Scheffer | Keller, Bechtel-Craver |
-| 05-03 (técnico) | Simondon, Latour | literatura SRE |
-| 05-04 (instituciones) | Bourdieu | Searle, Latour, Gilbert, Bunge |
-| 05-05 (caso ancla) | Warren, Gibson | Fajen, Sternad, Foo, Yilmaz, Lee, Fink |
-
-### Estilo
-
-Citación por defecto Chicago author-date para texto en español filosófico. Bibliografía consolidada en capítulo 07 (refactor obligatorio).
-
-### Entregable
-
-Cada capítulo con citas insertadas, bibliografía formal por capítulo y bibliografía consolidada. Ningún capítulo sin diálogo textual mínimo con su interlocutor principal.
-
-### Plazo
-
-Continuo durante redacción final, con prioridad alta. Tareas documentales delegables a IA (archivadas en el repositorio interno del proyecto) ayudan acumulativamente.
-
-## 4. Paso 3. Desarrollo del aparato para variables normativas
-
-### Tarea
-
-Operacionalización dinámica de validez, legitimidad y efectividad como propiedades del sistema institucional acoplado. Conjetura preliminar (capítulo 05-04 §4): validez = cuenca de atracción del cumplimiento; efectividad = tasa de retorno a la cuenca; legitimidad = anchura de la cuenca.
-
-### Entregable
-
-Capítulo metodológico adicional dentro de la Parte II con formalización dinámica de las tres propiedades, casos posibles de operacionalización, dialogo bibliográfico con Searle, Bourdieu, Latour, Gilbert.
-
-### Plazo
-
-18-24 meses en paralelo con paso 4 (instituciones como caso demostrativo). Es prerrequisito.
-
-## 5. Paso 4. Multiplicación de casos demostrativos
-
-### Tarea
-
-Tras elevación del caso biológico (paso 1) y desarrollo del aparato normativo (paso 3), elevar al menos un caso adicional. Prioridad: instituciones (capítulo 05-04) por la deuda significativa que cierra; o sistemas técnicos (capítulo 05-03) por la accesibilidad a datos.
-
-### Entregable
-
-Al menos un caso adicional elevado a demostrativo con dossier completo. Idealmente dos.
-
-### Plazo
-
-12-18 meses tras los pasos 1 y 3.
-
-## 6. Paso 5. Lectura externa por evaluadores hostiles
-
-### Tarea
-
-Someter el manuscrito a tres lectores con perfiles distintos:
-
-- **filósofo de orientación analítica o de filosofía de la ciencia**: ataca consistencia argumental y discriminación contra rivales;
-- **científico empírico o modelizador**: ataca rigor del aparato formal y validez del caso ancla;
-- **crítico fenomenológico o hermenéutico**: ataca el tratamiento de la experiencia vivida y la dimensión normativa;
-- **técnico de sistemas o computación formal**: ataca la operacionalización del aparato y la consistencia ST.
-
-### Entregable
-
-Versión revisada con respuestas integradas a cada crítica fuerte. Las críticas que fuerzan reformulación se documentan con fecha.
-
-### Plazo
-
-3-6 meses tras tener manuscrito completo en versión avanzada.
-
-## 7. Paso 6. Redacción final unificada
-
-### Tareas
-
-- unificar terminología según glosario operativo;
-- pulir transiciones entre capítulos;
-- escribir introducción definitiva (al final, cuando se sepa qué logró el manuscrito);
-- escribir conclusión definitiva (al final, cuando se sepa qué quedó probado);
-- mantener tono entre claridad expositiva y rigor conceptual sin sacrificar ambición filosófica;
-- revisar léxico propio para evitar lexicalización interna (riesgo del capítulo 04-02 §7.2).
-
-### Entregable
-
-Manuscrito doctoral en estilo unificado, listo para depósito.
-
-### Plazo
-
-3-6 meses tras lectura externa.
-
-## 8. Paso 7. Apéndices técnicos mínimos
-
-### Regla editorial
-
-El material argumental deja de ser anexo y pasa al cuerpo: glosario, operadores, dossier, rivales, aplicaciones, objeciones, limitaciones y validación ST. Solo permanecen como apéndices los soportes que no conviene interrumpir en la lectura principal: tablas crudas y fuentes visuales.
-
-### Plazo
-
-Continuo durante el desarrollo. Cierre completo al final.
-
-## 9. Cronograma agregado
-
-**Tabla 6.3.2.**
-
-| Mes | Hito |
-|---|---|
-| 1-12 | Elevación de caso biológico (paso 1); inicio integración bibliográfica (paso 2); inicio aparato normativo (paso 3) |
-| 13-18 | Elevación de segundo caso (paso 4 inicial); aparato normativo en estado avanzado (paso 3) |
-| 19-24 | Cierre de aparato normativo (paso 3); elevación de tercer caso si es viable; integración bibliográfica completa (paso 2) |
-| 25-30 | Lectura externa hostil (paso 5); revisión |
-| 31-33 | Redacción final unificada (paso 6); apéndices técnicos mínimos completos (paso 7) |
-| 34-36 | Pulido, formato académico, depósito |
-
-Plazo plausible: 24-36 meses con dedicación seria. Plazo real depende de bibliografía y disponibilidad de datasets.
-
-## 10. Riesgos del plan
-
-### Riesgo 1. Caso biológico no se eleva fácilmente
-
-Si la literatura ecológica disponible no produce dossier completo con calidad equivalente al caso ancla, la elevación se posterga y se prueba con otro dominio (sistemas técnicos como alternativa más accesible).
-
-### Riesgo 2. Aparato normativo resulta más difícil de lo esperado
-
-La operacionalización de validez, legitimidad, efectividad puede requerir colaboración con sociología o ciencia política con datos cuantitativos. Si la colaboración no se consigue, el aparato queda como conjetura articulada y el capítulo 05-04 permanece programático con la deuda nombrada.
-
-### Riesgo 3. Lectura externa fuerza reformulación mayor
-
-Si los evaluadores hostiles encuentran fallas estructurales, el cronograma se extiende. Esto es preferible a depósito prematuro.
-
-### Riesgo 4. Hipertrofia académica
-
-Cada paso puede expandirse indefinidamente. La política: cada entregable tiene fecha y tamaño objetivo. Lo que no entra en la fecha, se documenta como deuda actualizada y se prosigue con el siguiente.
-
-## 11. Indicadores de éxito final
-
-El manuscrito doctoral final está listo si:
-
-- al menos dos casos están en modo demostrativo (caso ancla + uno elevado);
-- al menos tres dominios programáticos quedan con criterios de elevación claros;
-- las quince posiciones rivales se discriminan con tabla pública;
-- el aparato formal opera con procedimiento empírico verificable;
-- el dossier de anclaje se aplica al caso ancla con catorce componentes completos;
-- la bibliografía está integrada en cada capítulo con interlocutor principal y secundarios;
-- los seis límites del capítulo 04-02 se reconocen y se traducen en programa posterior;
-- las cuatro condiciones de fracaso del capítulo 06-01 §2 (3 escenarios falsables con criterio externo + 1 condición de prioridad histórica) se aceptan conforme al conteo canónico unificado allí;
-- la guía de defensa oral funciona en simulación con interlocutor competente;
-- los apéndices técnicos mínimos están completos y no sustituyen el cuerpo argumental.
-
-## 12. Resultado deseado
-
-El objetivo no es solo tener un texto largo defendible sino un manuscrito que reúna seis cualidades simultáneas:
-
-- problema claro;
-- tesis graduada por alcance: método establecido, resultados locales evaluados y ontología general declarada como hipótesis abierta;
-- rivales identificados con discriminación pública;
-- criterio de evaluación explícito;
-- aplicaciones con rendimiento (al menos demostrativas);
-- límites honestamente reconocidos con plan de trabajo posterior;
-- posible escalado a programa de investigación más amplio.
-
-Si el manuscrito final cumple las seis cualidades, deja de ser tesis y empieza a ser programa de investigación.
-
-
-<p align="right"><sub><a href="#tabla-de-contenidos">↑ volver al índice</a></sub></p>
-
----
-
 
 <div id="bibliografia"></div>
-
-# Bibliografía
 
 
 <div id="bibliografia-consolidada"></div>
@@ -8208,6 +6409,303 @@ Sección añadida tras process-verifier iter 12: dieciocho autores eran invocado
 
 # Apéndices técnicos mínimos
 
+
+<div id="glosario-operativo-de-consulta"></div>
+
+# Glosario operativo
+
+## Función
+
+Este glosario define todos los términos centrales del manuscrito en su uso operativo. Cada término viene con: definición precisa, capítulo donde se desarrolla, conexión con la métrica empírica EDI cuando aplica.
+
+---
+
+## Términos del núcleo conceptual
+
+### Anti-reificación operativa
+Disciplina metodológica que prohíbe inferir ontología fuerte solo por rendimiento predictivo. Nunca afirmamos `X es Y`; afirmamos `bajo el instrumento I, X exhibe cierre operativo de grado G`. Capítulo 02-01.
+
+### Atractor empírico
+Estado o región del espacio de fase hacia el cual convergen las trayectorias del sistema bajo perturbación acotada. Operacionalización de **estructura pre-ontológica** y de **patrón estabilizado**. Identificable mediante series temporales con análisis de cuenca de atracción. Capítulo 02-01.
+
+### Cierre operativo
+Propiedad medida del trío {fenómeno, sonda ODE, diseño ABM} cuya constricción macro→micro es irreducible y significativa. Cuantificada por EDI. La validación fuerte (Nivel 4) exige además gate completo (`overall_pass=True`). Capítulo 03-04.
+
+### Compresión multiescala
+Operación epistemológica que reemplaza una subestructura compleja `G' ⊂ G` por una unidad operativa `n_{G'}` cuando el detalle interno no produce diferencia inferencial relevante para la pregunta `Q`. Operador formal `κ : G → G*`. Capítulo 02-02 (filosófica), 03-04 (empírica vía EDI).
+
+### Dossier de anclaje
+Filtro de admisión obligatorio para cualquier categoría candidata. Catorce componentes: pregunta Q fechada, variables operacionalizadas, sustrato instanciante, grafo G, hipergrafo H si procede, compresión κ, atractores identificados, pruebas de validación, predicción discriminante, intervención discriminante, operador ε, traducción B↔L3, limitaciones, comparación rival. Capítulo 03-02.
+
+### EDI (Effective Dependence Index)
+Métrica empírica que opera el operador κ. Definición: `EDI = 1 - RMSE_coupled / RMSE_no_ode`. Mide la degradación predictiva al apagar el acoplamiento ODE→ABM manteniendo el forcing exógeno. Significancia por permutación 999, CI por bootstrap 500. Capítulo 03-04.
+
+### Estructura pre-ontológica
+Regularidad operativa anterior a la objetualidad sustancial. Ni cosa con esencia, ni ficción lingüística. Identificable como atractor empíricamente robusto de un sistema dinámico acoplado. Núcleo del nombre del proyecto. Capítulo 02-01.
+
+### Irrealismo operativo
+Posición filosófica del manuscrito: realismo estructural moderado (en sentido operativo no-Ladyman, ver entrada siguiente) + pluralismo epistemológico + anti-reificación operativa. Ni realismo ingenuo, ni instrumentalismo puro, ni irrealismo radical. Capítulo 02-01.
+
+### Realismo estructural moderado (uso operativo)
+Compromiso filosófico de la tesis con la realidad de las estructuras —entendidas aquí como atractores empíricamente identificables sobre sustrato material dinámico— sin reducirla a estructura sin relata. **Declaración explícita de no-importación:** la tesis NO adopta la versión *ontic structural realism* (OSR) de Ladyman y Ross (2007, *Every Thing Must Go*, cap. 3, p. 130: *"There are no things. Structure is all there is."*), que es **eliminativista** respecto de los individuos auto-subsistentes ("our view is eliminative", p. 131). La tesis exige sustrato material sosteniendo la estructura (cap 02-01 §1.1); los relata (átomos, organismos, instituciones) no son artefactos pragmáticos derivados de la estructura modal sino condición de posibilidad de toda regularidad medible. L&R operan en cap 04-03 como **rival** en criterio A (anclaje material), no como aliado parcial. La nuance de Rainforest Realism (L&R 2007, cap. 4, p. 191: individuos como "legitimate book-keeping devices") no convierte la divergencia en convergencia: la tesis disputa el estatuto, no la admisibilidad discursiva. Cualquier referencia textual a "realismo estructural moderado" en el cuerpo del manuscrito debe leerse bajo esta convención. Capítulo 02-01 §0.3; cap 03-01 §12.2; cap 03-03 §10.5.
+
+### Self-organization (sentido técnico)
+Modelo positivo de la emergencia anclado en la tradición Maturana-Varela (1980, *Autopoiesis and Cognition*) y Haken (1977, *Synergetics*). Designa la estabilización dinámica del sistema acoplado bajo restricciones físicas, informacionales y de tarea, sin postular sustancias nuevas. Causalidad circular upward+downward, ambas materiales. **No es invocación retórica:** cualquier ocurrencia textual no anclada disciplinarmente debe sustituirse por "estabilización dinámica" o "convergencia a atractor". Capítulo 02-04 §4.
+
+### Sinónimos coloquiales del núcleo conceptual (convención)
+Los términos "patrón estabilizado", "regularidad operativa", "estructura operativa" y "cuenca de atracción" (cuando aparece como sinónimo del atractor en lugar de como concepto técnico distinto) se usan en el manuscrito como **registros coloquiales** de los dos términos canónicos: **estructura pre-ontológica** (lectura ontológica) y **atractor empírico** (lectura operacional). El cuerpo argumental privilegia los canónicos cuando la precisión filosófica es decisiva; los coloquiales se admiten para fluidez prosódica, sin valor técnico distinto. Esta convención se documenta aquí para evitar la lectura como cuatro conceptos distintos.
+
+---
+
+## Términos operativos del marco
+
+### Naturalismo metafísico moderado
+Compromiso filosófico de partida explícitamente declarado, no conclusión demostrada: el sustrato material dinámico se asume como punto de partida, justificado por continuidad con la ciencia, parsimonia ontológica y capacidad operativa del aparato. Compatible con realismo estructural moderado; rechaza dualismo, idealismo, panpsiquismo, emanacionismo, creacionismo y pluralismo de planos sustanciales. Capítulo 02-01 §0.1.
+
+### Pre-ontológico (sentido genético-epistemológico)
+Estructura es pre-ontológica si y sólo si: (a) es regularidad operativa materialmente sostenida; (b) es previa al recorte categorial nominalizante; (c) es génesis de lo individuado (Simondon); (d) es operativamente identificable como atractor empírico. NO significa "anterior temporalmente"; significa "anterior al recorte categorial". Capítulo 02-01 §0.2.
+
+### B-series relacional
+Postura ontológica sobre el tiempo: los eventos están ordenados en serie *anterior–simultáneo–posterior* sin presente metafísicamente privilegiado. Eternalismo moderado. La flecha del tiempo es termodinámica, no metafísica. Compatible con relatividad especial y con la generalidad multiescalar requerida por la tesis. Capítulo 02-05 §1.
+
+### Manipulabilidad woodwardiana
+Postura sobre la causalidad: X causa Y si y sólo si una intervención sobre X (independiente del resto del sistema) produce un cambio sistemático en Y. Operacionalizada por el aparato EDI vía intervención ablativa (`do(coupling = 0)`). Compatible con el `do`-calculus de Pearl. Capítulo 02-05 §2.
+
+### Constitución descendente (downward constitution)
+Relación distinta de causación: X constituye Y si X es parte de la realización material de Y, verificable por manipulabilidad mutua de Craver. La constricción macro→micro del aparato EDI es **constitutiva, no causal**: el atractor macro constituye las restricciones del componente sin causar nuevos eventos por encima del cierre físico. Neutraliza el argumento de exclusión causal de Kim por modus tollens vacuo. Capítulo 02-05 §2.4.
+
+### Atractor normativo
+Valor (justicia, libertad, dignidad, verdad, belleza) entendido NO como entidad sustancial separada sino como región del espacio de fase de la conducta colectiva donde el sistema converge bajo perturbación, materialmente sostenido por prácticas, inscripciones, cuerpos en relación, sanciones organizadas y memoria histórica. Capítulo 02-06 §2.
+
+### Complementarismo metodológico (alcance acotado)
+Postura sobre la relación entre métodos en tercera persona (aparato EDI) y métodos fenomenológicos en primera persona. La tesis sostiene **co-existencia disciplinada acotada**: reconoce que los métodos fenomenológicos (Husserl, Merleau-Ponty, Thompson, Varela) operan sobre fenómenos ontológicamente continuos con los del aparato, pero **no integra engagement fenomenológico sustantivo** en el cuerpo argumental. La promesa fenomenológica del abstract es **declarativa**, no operativa: el manuscrito declara que el irrealismo operativo es compatible con el complementarismo, sin desarrollar el complementarismo como capítulo. Esta limitación se reconoce explícitamente en cap 05-01 §7 y en el régimen de validez declarado del front matter. Quien busque engagement fenomenológico desarrollado deberá consultar la deuda explícita en cap 06-03 §"Programa de extensiones fenomenológicas".
+
+### Estructuralismo matemático moderado
+Postura sobre el estatus de las entidades matemáticas: las estructuras matemáticas (hipergrafos, ODE, espacios de fase) son representaciones formales de patrones reales del sustrato. NO son entidades platónicas independientes; NO son ficciones útiles sin referencia. Su validez depende de homomorfismo parcial con la dinámica material. Capítulo 03-01 §15.
+
+### Inferencialismo brandomiano matizado
+Teoría del significado adoptada: el significado de un término es su rol inferencial dentro de prácticas materialmente sostenidas (Brandom 1994). El significado de "atractor", "cierre operativo κ", "estructura pre-ontológica" se constituye por su rol inferencial dentro del aparato y del corpus, no por referencia ostensiva ni por ficción sin referencia. Capítulo 02-02 §3.5.
+
+### Compresión sintáctica vs semántica
+Distinción técnica: la compresión sintáctica preserva estructura formal (variables, ecuaciones, dependencias) sin atender al significado; la compresión semántica preserva además el rol inferencial dentro de la práctica disciplinar. La compresión κ del aparato EDI es principalmente sintáctica pero se vuelve semántica cuando la sonda se elige por su rol teórico disciplinar. Capítulo 02-02 §3.5.2.
+
+### Flecha termodinámica
+Dirección de aumento de entropía en sistemas cerrados (segunda ley). En la tesis se distingue de la flecha cosmológica (expansión del universo) y de la flecha psicológica (percepción subjetiva pasado–presente–futuro), y se afirma como ontológicamente fundamental: las otras dos son derivadas. La irreversibilidad parcial de κ↔ε (la compresión preserva dependencias decisivas pero la expansión no recobra detalle perfectamente) es manifestación local de esta flecha, no propiedad lógica adicional. Capítulo 02-05 §1.2.
+
+### Eternalismo moderado
+Postura ontológica sobre el tiempo: pasado, presente y futuro son igualmente reales en sentido relacional B-series, sin que exista un "presente metafísicamente privilegiado". Compatible con la relatividad especial. La tesis adopta esta postura como mínimo ontológico requerido para que los atractores (objetos definidos por evolución temporal completa) sean coherentes. Capítulo 02-05 §1.1.
+
+### Manipulabilidad mutua (Craver)
+Criterio constitutivo (no causal): X es constitutivamente relevante para S si y sólo si manipular X cambia S y manipular S cambia X. Es la operacionalización de la constitución descendente que la tesis usa para neutralizar el argumento de exclusión causal de Kim. Capítulo 02-05 §2.4.
+
+### Intervención ablativa
+Operación que apaga el acoplamiento ODE↔ABM manteniendo el forcing exógeno y compara la predicción coupled con la no-coupled. Es la operacionalización woodwardiana de causalidad sobre variables del sistema acoplado y la base de la métrica EDI. Capítulo 03-04 §"EDI".
+
+### Argumento de exclusión causal (Kim)
+Argumento de Jaegwon Kim (1998) según el cual, dado el cierre causal del dominio físico y la sobreviniencia de las propiedades macro M sobre las propiedades micro P, M no puede tener poder causal independiente sin sobredeterminación o epifenomenalismo. La tesis responde distinguiendo causación de constitución: el atractor macro constituye restricciones, no produce eventos por encima del cierre físico. Capítulo 02-05 §2.4.
+
+### Block bootstrap (Politis-Romano 1994)
+Permutación que preserva la autocorrelación temporal de las series mediante bloques contiguos. La variante stationary bootstrap usa bloques de longitud geométrica aleatoria (parámetro 1/block_size); la variante moving block usa bloques de longitud fija. La implementación canónica del aparato (`common/calibration.py`) provee ambas; el módulo declara explícitamente cuál se usa. Capítulo 03-04 §"Calibración estadística avanzada".
+
+### FWER Holm-Bonferroni
+Corrección de family-wise error rate sobre comparaciones múltiples. Aplicada al corpus inter-dominio reduce los casos significativos sin corrección a los que sobreviven α=0.05 tras ajuste secuencial Holm. Sirve como filtro de significancia colectiva; no sustituye la inferencia individual por caso. Capítulo 03-04.
+
+### Información efectiva (uso auxiliar)
+Cantidad reportada en `metrics.json::effective_information` definida operacionalmente como `H(residuos_reducido) − H(residuos_completo)` con `H` = entropía diferencial KDE. Se calcula en `09-simulaciones-edi/common/hybrid_validator.py:249`. **No es la Effective Information de Hoel-Albantakis-Tononi** (2013, *PNAS* 110:19790-19795); no implica adopción de IIT. Métrica **auxiliar**, no central: no entra en QES, no entra en `overall_pass`, no entra en la clasificación del paisaje de emergencia. La inferencia central procede por EDI + permutación 999 + bootstrap 500 + FWER Holm. Capítulo 03-04 §"Información efectiva como métrica auxiliar (declaración)".
+
+### QES (Quality of Evidence Score)
+Auditoría interna de calidad de evidencia por caso: media ponderada de siete puntajes Qi ∈ [0,1] (trazabilidad de datos, tamaño efectivo, calidad de sonda, reproducibilidad mecanizada, convergencia multi-sonda, LoE, calibración estadística) computada en `common/quality_scorer.py`.
+Categorías: ROBUSTO (≥0.85), DEMOSTRATIVO (0.70–0.85), PROGRAMÁTICO (0.55–0.70), PILOTO (0.40–0.55), INADMISIBLE (<0.40).
+Definido en cap 03-formalizacion/04 §«Auditoría QES»; nota metodológica en cap 04-debates/05.
+Construcción interna del aparato; NO es GRADE/AMSTAR/Cochrane.
+
+### Auditoría criptográfica del setup
+Cálculo de SHA-256 sobre el código, parámetros y datos de entrada de cada caso, junto con git_commit_sha y timestamp UTC. Permite verificar que el setup actual coincide con el setup que produjo los outputs publicados. NO es pre-registro estricto en plataforma externa (que requeriría depósito previo a ver los datos en OSF u homólogo); es cadena de custodia computacional. Capítulo 03-04 §"Pre-registro criptográfico".
+
+---
+
+## Operadores formales
+
+### μ (operador de medición)
+`μ : R → X`. Recorta el dominio efectivo de realidad `R` en variables observables `X` con régimen de medición `R` especificado. Capítulo 03-01.
+
+### G (grafo basal)
+`G = (V, E, W, T)`. Representa dependencias entre variables: V nodos, E aristas, W pesos, T reglas dinámicas. Cada arista pasa criterio de admisión por intervención (`do`-test). Capítulo 03-01.
+
+### H (hipergrafo)
+`H = (V, 𝓔)`. Hiperaristas conectan conjuntos de nodos cuando la dependencia conjunta no se reduce sin pérdida a relaciones binarias. Capítulo 03-01.
+
+### κ (compresión)
+`κ : G → G*`. Reemplaza subestructuras complejas por unidades operativas. Operacionalizado empíricamente vía EDI. Capítulo 03-01 + 03-04.
+
+### ε (expansión)
+`ε : n → G_n`. Abre un nodo comprimido cuando la pregunta exige más detalle. Garantiza reversibilidad de κ. Capítulo 03-01.
+
+### Q (pregunta paramétrica)
+`Q = (φ, τ, R)`. Triple fechado: formulación φ, tolerancia τ, régimen de medición R. Cambiar Q después del fallo invalida el ciclo. Capítulo 03-01.
+
+---
+
+## Niveles del paisaje de emergencia
+
+### Nivel 0 (null)
+EDI ≤ 0. Sin cierre operativo detectable. 8 casos del corpus.
+
+### Nivel 1 (trend)
+EDI > 0, p ≥ 0.05. Indicios sin significancia. 4 casos.
+
+### Nivel 2 (suggestive)
+EDI > 0.01, p < 0.05. Constricción débil. 2 casos.
+
+### Nivel 3 (weak)
+0.10 ≤ EDI < 0.30, p < 0.05. Componente funcional con significancia. Análogo al ribosoma: tiene función pero no es organismo autónomo. 8 casos (incluido caso 30 v2).
+
+### Nivel 4 (strong)
+0.30 ≤ EDI ≤ 0.90, p < 0.05 (con `overall_pass=True` para gate completo). Cierre operativo alto. **En el corpus inter-dominio (verificado contra `metrics.json::phases.real`):** 7 casos sobre datos reales = 6 con gate (`overall_pass=True`: casos 04 Energía EDI=0.461, 16 Deforestación EDI=0.580, 18 Urbanización EDI=0.337, 20 Kessler EDI=0.694, 22 Fósforo EDI=0.322, 24 Microplásticos EDI=0.806) + 1 sin gate (caso 26 Starlink EDI=0.757 con `overall_pass=False` por C4_validity). **En el corpus inter-escala:** 7 casos en 7 escalas distintas (atómica, cuántica, bioquímica, celular oscilatoria, individual, astrofísica, astrofísica masiva).
+
+### Nivel 5 (cierre operativo fuerte)
+Strong + convergencia bajo múltiples sondas independientes + LoE = 5 (datos físicos directos) + frontera espacial nítida verificada. Programa futuro. Ningún caso del corpus actual lo alcanza, en ninguna escala. Definido con criterios operativos explícitos en cap 03-04 §"Niveles del paisaje" para evitar lectura como promesa no cumplida.
+
+---
+
+## Registros de descripción (asimetría L1↔B↔L3↔S)
+
+### L1 (psicológico/ordinario)
+Categorías heredadas del lenguaje ordinario. Fija qué pregunta importa pero no responde por sí sola. Vínculo indirecto y restrictivo con L3. Capítulo 02-04.
+
+### B (conductual-biológico, físico-ecológico, técnico-institucional)
+Nivel material-instanciante. Ancla la respuesta. Variables: organismo + entorno + información + tarea + historia (en dominio biológico-conductual); o componentes físicos, técnicos, institucionales según dominio. Vínculo directo y traduccional con L3. Capítulo 02-04.
+
+### L3 (estructural-relacional formal)
+Modelos dinámicos, grafos, hipergrafos, leyes de control. Reconstruye formalmente las dependencias detectadas en B. Capítulo 02-04.
+
+### S (semántica revisada)
+Categorías que sobreviven a la auditoría. Se gana solo a posteriori. Capítulo 02-04.
+
+---
+
+## Protocolo C1-C5
+
+### C1 Convergencia
+`RMSE_coupled < RMSE_no_ode`. Sin mejora respecto a baseline, no hay señal.
+
+### C2 Robustez
+Clasificación estable bajo ±20% de perturbación de parámetros.
+
+### C3 Determinismo aleatorio
+Semilla fija (`seed=42`). Reproducibilidad bit-a-bit.
+
+### C4 Consistencia de dominio
+Trayectorias respetan restricciones físicas (no-negatividad, conservación). Direccionalidad coherente con la teoría del dominio. Magnitudes plausibles según literatura.
+
+### C5 Reporte de incertidumbre
+CI bootstrap, modos de fallo, LoE, val_steps reportados con su implicación inferencial.
+
+---
+
+## Niveles de Evidencia (LoE)
+
+**Tabla A.1.1.**
+
+**Tabla 0.7.1.**
+
+| LoE | Descripción | Ejemplos |
+|----:|-------------|----------|
+| 1 | Especulativo | Proxies indirectos, encuestas subjetivas, datos sintéticos sin ground truth |
+| 2 | Débil | Datos digitales traza con alto ruido semántico (caso 30 cae aquí) |
+| 3 | Medio | Datos estructurados pero incompletos o de corto plazo (<5 años) |
+| 4 | Fuerte | Series temporales consistentes, múltiples fuentes, >10 años |
+| 5 | Robusto | Datos físicos directos (sensores), estandarizados, >30 años |
+
+---
+
+## Modos de admisión de aplicaciones
+
+### Modo demostrativo
+Caso paradigmático trabajado a fondo: dossier completo de catorce componentes, datos públicos, ecuaciones ajustadas, predicciones cumplidas, intervenciones documentadas, comparación rival con discriminación verificable. Capítulo 05-00.
+
+### Modo programático
+Conjetura articulada con criterio explícito de elevación: qué datos faltan, qué rival se enfrentaría, qué predicción discriminante se buscaría. La marca `MODO PROGRAMÁTICO` es obligatoria. Capítulo 05-00.
+
+---
+
+## Otros términos del aparato
+
+### overall_pass
+Gate completo de validación: 13 condiciones simultáneas (C1-C5 + 8 adicionales). Estado más fuerte de admisión.
+
+### val_steps
+Tamaño de la ventana de validación. Restricción inferencial: ≥24 mensual / ≥10 anual = inferencia estándar; <5 = exploratorio.
+
+### Symploké CR (Cohesion Ratio)
+Indicador de frontera funcional. CR > 2.0 sugiere frontera espacial nítida (programa de Nivel 5).
+
+### Sonda macro (ODE)
+Instrumento computacional que genera la señal macro candidata. No agota el fenómeno; estima su grado de cierre operativo mediante el acoplamiento con el nivel micro. Ejemplos: Budyko-Sellers (clima), von Thünen (deforestación), Jambeck (microplásticos), behavioral_attractor (Fajen-Warren).
+
+### Paisaje de emergencia
+Conjunto ordenado de fenómenos clasificados por su grado de cierre operativo. Resultado principal de la tesis, no solo los Nivel 4.
+
+### Brecha instrumento-fenómeno
+Cláusula epistemológica: cada resultado describe el trío {fenómeno, instrumento, pregunta}. Reconocida explícitamente como condición epistémica honesta, no como debilidad.
+
+### Programa multi-sonda
+Trabajo futuro: validar 3-5 casos clave con sondas ODE alternativas. La convergencia inter-sonda fortalecería cada resultado.
+
+### ABM (Agent-Based Modeling)
+Simulación micro: retícula 40×40 de agentes con difusión espacial y acoplamiento al estado macro. Implementación CPU/GPU disponible.
+
+### ODE (Ordinary Differential Equation)
+Sonda macro: ecuación diferencial domain-specific que genera la señal macro candidata.
+
+### Acoplamiento bidireccional
+Coupling ABM↔ODE: la sonda macro afecta a la dinámica micro y viceversa cuando hay feedback configurado.
+
+---
+
+## Términos de la teoría conductual (caso 30 y caso ancla)
+
+### Behavioral dynamics
+Marco teórico de Warren (2006): comportamiento adaptativo orientado a meta sin postular controlador centralizado. La organización emerge de la interacción agente-entorno bajo restricciones físicas, informacionales y de tarea.
+
+### Variable τ (tau)
+Razón entre tamaño angular óptico (θ) y su tasa de cambio (θ̇). Especifica tiempo hasta contacto sin requerir conocimiento explícito de distancia ni velocidad absoluta. Referencia canónica: Lee, D. N. (1976). "A theory of visual control of braking based on information about time-to-collision." *Perception* 5(4):437-459 (definición pp. 439-441, locus declarado posicionalmente; PDF no disponible en `07-bibliografia/` al cierre — verificación textual con paginación exacta pendiente como deuda menor cuando el PDF se incorpore). Capítulo 02-04.
+
+### Variable τ_bal
+`θ/θ̇`. Razón entre ángulo del palo y velocidad angular. Especifica tiempo hasta vertical (Foo, Kelso, Guzman 2000).
+
+### Información ecológica
+Patrones detectables del flujo óptico, acústico y háptico que estructuran el entorno. Materialmente real, no representación interna. Capítulo 02-04.
+
+### Heading φ
+Dirección de marcha actual. Variable conductual clave en locomoción (Fajen y Warren 2003).
+
+### Error de heading β_h
+`(φ - ψ_g)`. Ángulo entre heading actual y dirección de meta. Observable principal del caso 30.
+
+---
+
+## Deuda residual operativa
+
+- **Limitación 1.** **`edi.valid`**. La p-value reportada en `metrics.json` es válida para un único contraste (`α=0.05`). El corpus contiene m=30 contrastes; bajo control FWER (Holm-Bonferroni, umbral 0.0031), sólo 14 casos sobreviven. La validez "en test único" no implica validez "bajo control de errores familiares". Camino de resolución: distinguir explícitamente en cada cifra de p-value reportada cuál es el régimen aplicado.
+- **Limitación 2.** **Permutación EDI**. El test de permutación en `09-simulaciones-edi/common/hybrid_validator.py:174` opera con `iid` sobre índices temporales. Para series con ACF > 0 (mayoría del corpus), los p-values están **subestimados** — resultado estándar de Davison-Hinkley 1997 (*Bootstrap Methods and their Application*, cap. 8). Camino de resolución: implementar `block_permutation_test_edi` con tamaño de bloque adaptado a la longitud de decorrelación de cada serie; declarar la semántica actual como "permutación iid sin control de autocorrelación" hasta entonces.
+- **Limitación 3.** **Bootstrap CI**. `bootstrap_edi()` en `hybrid_validator.py:193-219` reporta intervalos percentiles simples sin corrección BCa (bias-corrected accelerated). De los 32 casos del corpus, 21 tienen `val_steps < 30` y 12 tienen `val_steps = 8`, donde el sesgo de cobertura del percentil simple es severo (DiCiccio-Efron 1996). Camino de resolución: implementar BCa en `bootstrap_edi()` y añadir campo `ci_method` en `metrics.json` para preservar la trazabilidad histórica.
+- **Limitación 4.** **GPU batch init_noise**. `abm_core_gpu.py:583-619` comparte `init_noise` entre candidatos del grid search por diseño explícito, tanto en CPU como GPU. Esto es **decisión metodológica** (reduce varianza inter-candidato del grid) no detalle de implementación. Camino de resolución: declarar la semántica en el glosario para que la reproducibilidad inter-instalación no se confunda con accidente.
+- **Limitación 5.** **C2 protocolo**. En `hybrid_validator.py:977,997` la rama CPU usa `seed = 2 + i + 10` por candidato mientras la rama GPU usa `seed = seed_base` único. C2 (criterio booleano) **NO es invariante a plataforma** bajo la implementación actual. Camino de resolución: unificar semillas (usar la fórmula CPU en ambas ramas) y re-correr el corpus; mientras tanto declarar la limitación en el glosario.
+- **Limitación 6.** **`np.random` global**. `hybrid_validator.py:1278` ejecuta `np.random.seed(42)` global antes del fork con loky; mitiga la correlación inter-worker pero **no la elimina** porque hay otros `np.random.*` no auditados en `common/abm_*.py`. Camino de resolución: auditoría exhaustiva de llamadas globales a `np.random` en `09-simulaciones-edi/common/abm_*.py`; reemplazar por `Generator` aislado por worker.
+- **Limitación 7.** **C1 con `c1_fallback` diagnóstico**. `hybrid_validator.py:892-926` define `c1 = c1_relative OR c1_absolute`. La rama `c1_absolute` aprueba C1 sin requerir que el ODE aporte información: 8 fases del corpus (≈10 %) tienen `c1_convergence=True` con `EDI<0` (casos 02, 03, 09, 14, 20, 23, 25). Salida elegida: reclasificar `c1_absolute` como diagnóstico `c1_fallback` que no contribuye a `overall_pass` cuando `reduced_val` existe; mientras tanto la semántica fuerte de C1 es "convergencia ABM+ODE sobre el reducido".
+- **Limitación 8.** **Baselines sobre target distinto**. `09-simulaciones-edi/common/baselines.py:48-208` ajusta ARIMA/VAR/RW/GP sobre serie sintética propia (`_gen_series_with_coupling`), no sobre el `obs_val` del caso. Los ratios `ratio_*_vs_coupled` son aritméticamente válidos pero inferencialmente nulos; el campo `winner` no compara aparato vs baselines sobre el mismo target. La métrica EDI propia no se ve afectada. Camino de resolución: cualquier prosa que cite `winner` debe leerse como ilustrativa hasta implementar baselines sobre `primary_arrays.json:obs[val_idx]`.
+- **Limitación 9.** **Hash MD5 no detecta inconsistencia interna**. `replay_hash.py:44-52` (`md5_metrics`) certifica reproducibilidad bit-a-bit del `metrics.json` pero no examina invariantes algebraicos entre campos. Camino de resolución: implementar `verify_internal_consistency.py` con tres invariantes — `|edi.value − weighted_value/loe_factor| < 1e-6`, `|edi.value − (rmse_no_ode − rmse_abm)/rmse_no_ode| < 1e-4`, `ci_lo ≤ value ≤ ci_hi` — cableado a `./tesis audit` antes de `replay_hash.py`.
+- **Limitación 10.** **Calibración del ABM (objetivo bi-criterio)**. `calibrate_abm` en `hybrid_validator.py:496-549` selecciona parámetros minimizando `score = RMSE × max(0.5, 2 − corr)` (clamp inferior 0.5). EDI se evalúa sobre RMSE puro del modelo así seleccionado. El EDI reportado no es exactamente "el mejor ajuste predictivo del ABM acoplado en RMSE" sino "el mejor entre los modelos que también correlacionan temporalmente con la sonda macro". Camino de resolución: estudio de sensibilidad en 3 casos pre-acordados re-calibrando con `score = RMSE` puro y reportando `ΔEDI`.
+
+## Cierre
+
+Cada término del glosario se usa de manera consistente en todos los capítulos del manuscrito. Cuando un capítulo introduce un término nuevo, se añade aquí con su definición operativa y referencia cruzada.
+
+
+<p align="right"><sub><a href="#tabla-de-contenidos">↑ volver al índice</a></sub></p>
+
+---
 
 <div id="apendice-tecnico-1-tablas-crudas-del-corpus-inter-dominio"></div>
 

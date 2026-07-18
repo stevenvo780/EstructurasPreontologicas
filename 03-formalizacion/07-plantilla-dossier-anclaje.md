@@ -181,7 +181,7 @@ categoría está flotando y debe reformularse.]
 - **16 Deforestación:** dossier en `09-simulaciones-edi/16_caso_deforestacion/` (overall_pass=True, reproducibilidad verificada con World Bank en vivo)
 - **20 Kessler:** dossier en `09-simulaciones-edi/20_caso_kessler/` (overall_pass=True)
 - **27 Riesgo Biológico:** dossier en `09-simulaciones-edi/27_caso_riesgo_biologico/` (overall_pass=True)
-- **30 Behavioral Dynamics:** dossier en `09-simulaciones-edi/30_caso_behavioral_dynamics/` (Nivel 3 weak, sonda `behavioral_attractor` segundo orden)
+- **30 Behavioral Dynamics:** dossier en `09-simulaciones-edi/30_caso_behavioral_dynamics/` (piloto no confirmatorio; sonda `behavioral_attractor` de segundo orden, `overall_pass=false`, p_block posterior ≈ 0.978)
 
 Cada uno tiene:
 - `case_config.json` con parámetros y dates

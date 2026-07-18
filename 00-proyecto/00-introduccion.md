@@ -44,16 +44,7 @@ Realismo estructural moderado + pluralismo epistemológico + anti-reificación o
 
 ## Régimen de validez declarado
 
-La tesis se sostiene como **programa ontológico multiescalar con método ejecutable parcialmente validado**, no como ontología general confirmada. El régimen más estricto aplicado hasta ahora confirma un caso weak, conserva un candidato pendiente y registra falsificaciones locales; todavía no cubre los 30 casos inter-dominio. El corpus inter-escala muestra transferibilidad computacional sobre datos mayoritariamente sintéticos, no invariancia ontológica establecida.
-
-### Limitaciones honestas reconocidas
-
-- p-value declarado mal calibrado (tasa empírica de tipo I = 24%, no 5%); los umbrales EDI sí son robustos;
-- caso 30 (behavioral dynamics) sufre circularidad detectada por sonda alternativa;
-- composición de los corpus es post-hoc, no pre-registrada;
-- datos del corpus inter-escala son sintéticos derivados de parámetros publicados;
-- el régimen B-T2.1 con pre-registro ex ante, detrend y block-permutation no se ha completado sobre todo el corpus inter-dominio;
-- todas las auditorías son endógenas; revisión por pares humanos hostiles es deuda externa.
+La tesis se sostiene como **programa ontológico multiescalar con método ejecutable y evidencia parcial**, no como ontología general confirmada. La Parte III presenta los resultados; el capítulo de limitaciones concentra los problemas de calibración, circularidad, datos sintéticos, cobertura incompleta y falta de replicación externa. Esta introducción no adelanta de nuevo ese inventario.
 
 ## Aporte original
 
@@ -74,5 +65,5 @@ El manuscrito se organiza en cinco partes:
 - **Parte I (Fundamentos):** ontología material-relacional, epistemología de la compresión, categorías, anclaje empírico, temporalidad y causalidad, dimensión normativa.
 - **Parte II (Aparato y método):** operadores formales, criterios de legitimidad, auditoría ontológica, operacionalización de κ, ética de investigación.
 - **Parte III (Evidencia empírica):** caso ancla canónico, corpus inter-dominio (30 casos), corpus inter-escala (10 casos), aplicaciones programáticas.
-- **Parte IV (Discusión):** debates con catorce posiciones rivales, limitaciones y puntos de presión.
-- **Parte V (Cierre):** conclusión y estado de la demostración, condiciones de fracaso y hoja de ruta.
+- **Parte IV (Discusión):** posiciones rivales, objeciones principales y limitaciones declaradas.
+- **Parte V (Cierre):** conclusión, estado de la demostración y condiciones de fracaso.

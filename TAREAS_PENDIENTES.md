@@ -1,6 +1,6 @@
 # Tareas pendientes para el cierre de la tesis
 
-Documento maestro de pendientes. Estado consolidado al **2026-05-17** (limpieza final tras loop nocturno iter 18). El histórico previo (con tabla BORRADOR-IA por tipo, notas iter-X y reclasificaciones intermedias) está preservado en `Bitacora/2026-05-17-limpieza-final/historico-tareas-pendientes.md`.
+Documento maestro de pendientes. Estado consolidado al **2026-07-17** tras auditoría de consistencia inferencial del manuscrito y la web. El histórico previo (con tabla BORRADOR-IA por tipo, notas iter-X y reclasificaciones intermedias) está preservado en `Bitacora/2026-05-17-limpieza-final/historico-tareas-pendientes.md`.
 
 **Partición:**
 - **Sección A — humanas o institucionales:** lo que **no** puede cerrar la asistencia computacional. Trámites de la U. de Antioquia, decisiones procedimentales de Jacob/Steven, validación final de voz autoral.
@@ -59,8 +59,8 @@ Documento maestro de pendientes. Estado consolidado al **2026-05-17** (limpieza 
 | ID | Tarea | Estado |
 |----|-------|--------|
 | B-F1 | Cap `04-debates/04` cubre F1–F10 con concesión/distinción/argumento/costo + paginación Lakatos 1978 pp.33-34, 48, 49. | Núcleo cumplido; firma final en H-J1 |
-| B-F2 | Redefinir "realismo estructural moderado" en glosario como uso operativo no-Ladyman/Ross. | Abierta |
-| B-F3 | Promesa fenomenológica del abstract: entregar sección breve en `05-01` o eliminar del keyword. | Abierta |
+| B-F2 | Redefinir "realismo estructural moderado" en glosario como uso operativo no-Ladyman/Ross. | Cerrada técnicamente; firma filosófica absorbida por H-J2/H-J10 |
+| B-F3 | Promesa fenomenológica del abstract: entregar sección breve en `05-01` o eliminar del keyword. | Cerrada: promesa retirada del resumen y alcance declarado como programático |
 | B-F4 | Atractor con rigor topológico (cap `02-01 §2.2.1-3` + Tabla 2.1.6 sobre 7 casos, paginación Rosenstein 1993 pp.117-134, Grassberger-Procaccia 1983 pp.189-208). Extensión a 33 casos = B-T1. | Cerrada (firma de validación con Jacob, no bloquea) |
 | B-F5 | Disciplinar "self-organization" — 0 menciones del cuerpo sin ancla en cap `02-04 §4` (Maturana-Varela 1980, Haken 1977 pp.191-204). | Cerrada |
 | B-F6 | Sinónimos coloquiales del núcleo conceptual declarados en glosario como convención global. | Cerrada |
@@ -78,13 +78,13 @@ Documento maestro de pendientes. Estado consolidado al **2026-05-17** (limpieza 
 | B-T6 | Disonancia doc↔config sondas ODE casos 03/12/29 (`Evaluacion_Modelos_Dominio.md` declara Acumulación/Landau-Ginzburg/Difusión+Metcalfe; `case_config.json` ejecuta `mean_reversion`/`mean_reversion`/`bilinear`). | Abierta | Coherencia restaurada: (a) actualizar config y re-ejecutar, o (b) actualizar doc; en ambos casos justificar sonda |
 | B-T7 | Caso 25 acuíferos con cobertura 0.51 dominado por datos faltantes. Bloqueado por B-T2. | Bloqueada | `metrics.json` con cobertura ≥0.95; null/no-null reasignado |
 | **B-T2.4** | **Re-verificación inter-escala con datos reales por escala**. Generalidad multiescalar bajo aparato post-fix (`detrended_edi` corregido iter 13 + block-perm propagada). Posición filosófica en `Bitacora/2026-05-17-cierre-loop/posicion-filosofica-final.md`; H-J6 decide si es deuda fechada o condición de defensa. | **Abierta** | Casos inter-escala (31/32) re-ejecutados bajo aparato corregido con datos por escala; tabla comparativa pre/post |
-| **B-T-NEW-AUC-METH** | **Crear `09-simulaciones-edi/auc_roc/methodology.md` + script regenerador** con CI bootstrap (B≥2000) y comando declarado. Sin esto, la cifra 0.886 sigue violando `CLAUDE.md §4` aunque la reescritura prosaica de H-J11 esté hecha. | **Abierta** | Archivo `methodology.md` creado; cifra reproducible bit-a-bit con comando único bajo `09-simulaciones-edi/` |
+| **B-T-NEW-AUC-METH** | **Crear `09-simulaciones-edi/auc_roc/methodology.md` + script regenerador** con CI bootstrap (B≥2000) y comando declarado. La cifra se conserva solo como consistencia interna del umbral, no como validación externa. | **Cerrada técnicamente; afirmación discriminativa retirada** | `methodology.md` y `compute_auc_ci.py` reproducen AUC=0.8857, CI=[0.6571, 1.0000]; H-J11 firma la interpretación |
 
 ### B.3. Auditoría editorial (B-E*)
 
 | ID | Tarea | Estado |
 |----|-------|--------|
-| B-E1 | Re-ejecutar `TesisFinal/build.py` y verificar diff. | Abierta (rutinaria pre-depósito) |
+| B-E1 | Re-ejecutar `TesisFinal/build.py`, regenerar PDF y verificar diff/render. | Cerrada 2026-07-17: MD 7.159 líneas y 75.792 palabras; PDF 204 páginas; 0 páginas con texto recortado |
 | B-E2 | Uniformidad Chicago author-date (≤5 anomalías documentadas). | Abierta |
 | B-E3 | Numeración tablas/figuras tras inserciones recientes. | Abierta |
 | B-E4 | Cobertura glosario tras B-F2/B-F5/B-F6. | Abierta |
@@ -96,7 +96,7 @@ Documento maestro de pendientes. Estado consolidado al **2026-05-17** (limpieza 
 
 ## BORRADOR-IA — resumen consolidado
 
-**53 marcadores activos en 17 archivos** del manuscrito al 2026-05-17. Clasificación operativa: ~12 firma trivial (esperando Jacob), ~25 decisión filosófica pendiente (H-J2/3/4/5/6), ~14 deuda metodológica (H-J7/8/9/12), ~2 cross-references consolidadas a notas canónicas en `06-cierre/01-conclusion-demostrativa.md §1/§2/§5`. **Ningún H-J* se cierra por consolidación de marcadores.**
+El conteo de marcadores debe regenerarse tras esta pasada. La introducción, las preguntas, el resumen, el mapa del corpus y la conclusión contienen nuevos marcadores **BORRADOR-IA · requires: H-J2/H-J8** porque la reducción explícita de alcance requiere voz y firma autoral. **Ningún H-J* se cierra por consolidación de marcadores.**
 
 ---
 
@@ -104,9 +104,9 @@ Documento maestro de pendientes. Estado consolidado al **2026-05-17** (limpieza 
 
 **Prioridad 1 — bloqueadores de sustentación:** H-U1, H-U2, H-U3, H-U4 + H-J1, H-J7, H-J12.
 
-**Prioridad 2 — cierre filosófico defendible:** B-F2, B-F3 + H-J2, H-J3, H-J5, H-J6, H-J8, H-J9, H-J10, H-J11.
+**Prioridad 2 — cierre filosófico defendible:** H-J2, H-J3, H-J5, H-J6, H-J8, H-J9, H-J10, H-J11.
 
-**Prioridad 3 — cierre técnico pre-defensa:** B-T2 piloto, B-T2.1 ampliado (4 casos restantes), B-T6, B-T-NEW-AUC-METH, B-E1–E7.
+**Prioridad 3 — cierre técnico pre-defensa:** B-T2 piloto, B-T2.1 ampliado (4 casos restantes), B-T6, B-E2–E4 y B-E6–E7.
 
 **Prioridad 4 — deuda externa post-defensa:** H-S1, H-S2, H-U5, B-T2 resto, B-T2.4 inter-escala, B-T7 acuíferos, caso 30 VENLab (H-S4 decidida).
 

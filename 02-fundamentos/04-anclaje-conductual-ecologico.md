@@ -1,258 +1,95 @@
-# El nivel B: anclaje empírico (general multiescalar)
+# El nivel B: interfaz empírica del marco
 
+> **BORRADOR-IA · requires: H-J2, H-J8.** Reescritura editorial orientada a reducir duplicación con el caso Warren. La decisión filosófica final corresponde a la autoría humana.
 
 ## Tesis del capítulo
 
-> El nivel donde la tesis material-relacional gana o pierde anclaje empírico no es ningún nivel intermedio aislado, sino el **sistema dinámico acoplado entre el agente operativo y su entorno relevante**, bajo restricciones de tarea (o equivalente), físicas, informacionales e históricas. A ese nivel lo llamamos B. La definición es **invariante a la escala**: para un qubit, B es qubit-baño; para una proteína, B es macromolécula-solvente; para una persona, B es organismo-entorno-tarea; para un cúmulo globular, B es cúmulo-galaxia-marea. La asimetría L1↔B↔L3↔S es el protocolo formal de traducción que prohíbe la sustitución nominal y opera **a cualquier escala** donde el aparato puede aplicarse con sondas físicamente motivadas.
+El nivel B es la interfaz donde las categorías ordinarias y las descripciones formales se confrontan con un sistema material medible. No constituye una sustancia, un estrato universal de la realidad ni una ontología adicional. Es un recorte empírico relativo a una pregunta Q que identifica agentes, entorno, información disponible, tarea e historia relevante.
 
-## 1. Los cuatro registros articulados (definición multiescalar)
+La función de B es evitar dos errores simétricos. El primero consiste en derivar la ontología directamente del lenguaje cotidiano. El segundo consiste en tratar una formalización exitosa como si bastara para establecer qué existe. Entre ambos extremos, B exige que cada traducción conserve variables observables, condiciones de intervención y límites de aplicación.
 
-```
-L1 — del lenguaje ordinario / disciplinar : fija qué pregunta importa (vínculo indirecto)
-B  — del acoplamiento empírico            : ancla la respuesta (vínculo directo y traduccional)
-L3 — estructural-relacional               : reconstruye formalmente las dependencias detectadas
-S  — semántica revisada                   : recoge las categorías que sobreviven a la auditoría
-```
+## 1. Cuatro registros, una sola investigación
 
-**Definición multiescalar de B:** B es el nivel donde el agente operativo (sea cual sea su escala: qubit, molécula, célula, organismo, estrella, cúmulo) está acoplado dinámicamente con su entorno relevante bajo restricciones específicas de la escala. La estructura es **invariante a la escala**:
+El marco distingue cuatro registros porque responden preguntas diferentes:
 
-**Tabla 2.4.1.**
+| Registro | Pregunta | Producto |
+|---|---|---|
+| L1 | ¿Cómo se describe ordinariamente el fenómeno? | Categorías psicológicas, sociales o disciplinares |
+| B | ¿Qué sistema material puede medirse? | Variables, acoplamientos, restricciones y datos |
+| L3 | ¿Qué estructura formal preserva esas relaciones? | Grafo, hipergrafo, modelo dinámico o compresión |
+| S | ¿Qué significado conserva la categoría después del análisis? | Semántica revisada y alcance declarado |
 
-| Escala | "Organismo" en B | "Entorno" en B | "Tarea" en B | "Historia" en B |
-|--------|------------------|-----------------|---------------|-----------------|
-| Cuántica (caso 31) | Qubit | Baño térmico | Mantener coherencia | Pulsos previos |
-| Atómica (caso 32) | Configuración espín | Campo magnético | Acoplamiento espín-órbita | Trayectoria adiabática |
-| Molecular (caso 33) | Proteína | Solvente, T | Estado plegado | Trayectoria de plegamiento |
-| Bioquímica (caso 34) | Enzima | Concentración sustrato | Catálisis | Saturación previa |
-| Celular (caso 35-36) | Célula | Glucosa / TNF | Ciclo / respuesta | Estado de fase previo |
-| Individual (caso 37) | Sistema autonómico | Estrés | Regulación HRV | Tonos vagal/simpático |
-| Conductual (caso ancla / 30) | Organismo | Entorno físico | Locomoción a meta | Aprendizaje motor |
-| Astrofísica (caso 39-40) | Estrella / cúmulo | Espacio-tiempo galáctico | Pulsación / equilibrio | Evolución gravitacional |
+La secuencia no es una reducción lineal. L1 ayuda a formular Q; B determina qué puede observarse; L3 prueba si una descripción comprimida conserva capacidad explicativa; S devuelve una categoría más precisa al lenguaje. Si B no puede construirse sin arbitrariedad, el tránsito hacia L3 queda suspendido.
 
-La conducta humana (caso ancla Warren 2006, caso 30) es **una instancia entre muchas** de B, no su definición exclusiva. La primera iteración del manuscrito etiquetaba B como "conductual-biológico" porque el caso ancla era de behavioral dynamics; la versión multiescalar reconoce que B es **acoplamiento empírico genérico** y la subetiqueta "conductual" aplica solo a casos donde el agente es organismo en tarea conductual.
+## 2. Composición mínima de B
 
-> **Nota sobre la columna "atractor".** Los atractores listados en la Tabla 2.4.1 deben leerse bajo la distinción de cap 02-01 §0.3: para escalas con intervención experimental independiente del ajuste (casos 30, 31, 34, 35-37) la columna remite a **atractores en sentido κ-ontológica** (cuenca medida con manipulación); para escalas no experimentales o donde la cuenca se infiere de datos observacionales (casos 33, 39, 40) la columna remite a **atractores en sentido κ-pragmática** (cuenca observacional, sin manipulación independiente). La tabla no reescribe esta distinción — solo la reactiva como ancla cruzada al §0.3 del cap 02-01.
+Un recorte B debe declarar cinco componentes. Ninguno tiene prioridad ontológica automática sobre los demás.
 
-Lo que el borrador llamaba L2 se reparte entre B (donde están las cinco familias de variables descritas en §2) y los tramos específicos de la escala (neurobiología en escala individual, electroquímica en escala celular, hidrodinámica en escala astrofísica, etc.) cuando hagan falta para una pregunta concreta.
+| Componente | Función | Pregunta de control |
+|---|---|---|
+| Sistema focal | Delimita los procesos cuya organización se estudia | ¿Qué variables cambian conjuntamente? |
+| Entorno | Reúne condiciones externas con efectos sobre el sistema | ¿Qué perturbaciones alteran su trayectoria? |
+| Información disponible | Identifica regularidades utilizables por el sistema | ¿Qué variable puede modificar la acción sin presuponer un modelo interno? |
+| Tarea o régimen | Especifica el criterio de desempeño o estabilidad | ¿Respecto de qué demanda se evalúa la organización? |
+| Historia | Registra aprendizaje, dependencia de trayectoria o histéresis | ¿Qué estado actual depende de estados anteriores? |
 
-## 2. Qué incluye B
+Estos componentes son funcionales y relativos a Q. Una variable puede pertenecer al sistema focal en un estudio y al entorno en otro. Esa variación no implica arbitrariedad siempre que el recorte se declare antes del análisis y que una modificación del recorte pueda cambiar el resultado.
 
-`B` es el dominio de las relaciones materialmente sostenidas entre cinco familias de variables. Ninguna es prescindible. El recorte habitual `cerebro versus mundo` deja fuera tarea e historia, y por eso es mal anclaje.
+## 3. El acoplamiento como unidad de análisis
 
-### 2.1. Organismo
+B no estudia un agente aislado que recibe entradas y produce salidas. Estudia una dinámica acoplada en la que los estados del sistema y del entorno se condicionan mutuamente. En forma mínima:
 
-Cuerpo, biomecánica (longitudes, masas, frecuencias naturales, rigidez aparente), repertorio motor, sistemas perceptivos, plasticidad, estado fisiológico. Cuando proceda, actividad neural específica como subgrafo de B.
+\[
+\dot{x}=F(x,e,h), \qquad \dot{e}=G(e,x,t), \qquad y=M(x,e).
+\]
 
-### 2.2. Entorno
+Aquí, \(x\) representa el sistema focal, \(e\) el entorno, \(h\) la historia, \(t\) la tarea y \(y\) la medición. La tesis no exige que todo caso use ecuaciones diferenciales. Exige que el modelo haga explícita la dependencia que se perdería al separar artificialmente los componentes.
 
-Superficies, objetos, fuerzas físicas (gravedad, fricción, restitución), propiedades materiales, otros agentes con sus dinámicas.
+El cierre operativo aparece cuando una descripción macro del acoplamiento mejora de manera robusta la explicación o predicción respecto de una ablación pertinente. La ablación no prueba por sí sola una entidad ontológica; identifica una dependencia que merece investigación adicional.
 
-### 2.3. Información ecológica
+## 4. Información, tarea e historia
 
-#### 2.3.0. Definición filosófica de información
+### 4.1. Información ecológica
 
-Antes de listar los ejemplos, fijamos qué entiende por información la tesis. La tesis adopta una **definición material-relacional de información** que combina dos tradiciones:
+La información se entiende como estructura relacional disponible para la regulación de la conducta o del proceso, no como sustancia ni como contenido semántico autosuficiente. El punto heredado de Gibson es que ciertas regularidades del ambiente pueden guiar la acción sin reconstrucción completa del mundo. La tesis restringe esa idea: una regularidad solo cuenta como información en B si puede vincularse con una variable medible y con una diferencia en la dinámica.
 
-- **Bateson** (1972, *Steps to an Ecology of Mind*, p. 459): *"a difference which makes a difference"*. La información es **diferencia que produce diferencia** en la dinámica del sistema receptor.
-- **Dretske** (1981, *Knowledge and the Flow of Information*, cap. 3, p. 63): la información semántica es **correlación nómica** entre estados de la fuente y estados del receptor que sostiene inferencia confiable.
+Esto no excluye representaciones internas. Impide asumirlas como explicación por defecto cuando el acoplamiento organismo-entorno ya ofrece una hipótesis contrastable.
 
-**Síntesis de la tesis:** la **información es diferencia materialmente realizada** en el entorno (no en la mente del observador) que **modula la dinámica** del sistema acoplado cuando es detectada por sistemas perceptivos calibrados. No es entidad mental ni representación abstracta; es **propiedad estructural del sustrato material** que el organismo aprovecha sin necesidad de representarla internamente.
+### 4.2. Tarea
 
-**Distinción operativa:**
+Una misma organización puede ser estable para una tarea y fallar para otra. Por eso la tarea no es un contexto añadido al final, sino parte del recorte. En percepción-acción, por ejemplo, mantener equilibrio, frenar o evitar un obstáculo imponen regímenes distintos. El capítulo del caso Warren desarrolla esos contrastes; aquí basta la regla general: sin una tarea declarada, la estabilidad carece de criterio.
 
-- **información sintáctica** (Shannon): reducción de incertidumbre estadística;
-- **información semántica** (Dretske, Floridi): correlación con contenido inferencial;
-- **información ecológica** (Gibson, Bateson + tesis): diferencia materialmente realizada que modula dinámica acoplada **sin requerir representación interna**.
+### 4.3. Historia
 
-La tesis usa principalmente **información ecológica**: τ, ρ, flujo óptico no son representaciones en la mente, son patrones del entorno que modulan la dinámica del sistema acoplado.
+Aprendizaje, fatiga, institucionalización e histéresis muestran que el estado presente no siempre se explica con variables instantáneas. La historia entra en B cuando mejora una predicción discriminante o altera la cuenca de estados accesibles. No se añade como relato retrospectivo para salvar el modelo.
 
-#### 2.3.1. Ejemplos canónicos verificados en el caso ancla
+## 5. Autoorganización sin salto metafísico
 
-Patrones detectables del flujo óptico, acústico y háptico que estructuran el entorno. Ejemplos canónicos verificados en el caso ancla:
+La autoorganización designa la estabilización de una dinámica colectiva sin controlador central suficiente para explicar el patrón. Maturana y Varela permiten pensar la autonomía operacional; Haken y la teoría de sistemas dinámicos ofrecen herramientas para describir parámetros de orden y transiciones. La tesis adopta de estas tradiciones una pregunta común: ¿qué restricciones hacen posible que una regularidad se mantenga?
 
-- `τ`: razón entre tamaño angular óptico y su tasa de cambio; especifica tiempo hasta contacto;
-- `τ̇`: derivada temporal; especifica adecuación de la deceleración;
-- `τ_bal = θ/θ̇`: razón entre ángulo y velocidad angular; especifica tiempo hasta vertical;
-- ángulo de declinación bajo el horizonte: especifica distancia;
-- foco de expansión del flujo óptico: especifica dirección de auto-movimiento (heading φ_flow);
-- error de heading β = φ − ψ_g: ángulo entre dirección actual y dirección de meta.
+La respuesta sigue siendo local. Detectar autoorganización no autoriza a afirmar una ley ontológica universal ni una causalidad descendente fuerte. Autoriza a estudiar si el patrón posee estabilidad, capacidad de retorno, sensibilidad a perturbaciones y relevancia para Q.
 
-Estas variables son materialmente reales: están inscritas en la geometría y la física del entorno y pueden ser detectadas por sistemas perceptivos calibrados. No son representaciones internas.
+## 6. Asimetría entre registros
 
-### 2.4. Tarea
+Las traducciones entre L1, B, L3 y S no tienen la misma fuerza:
 
-Objetivo (meta espacial, altura constante, parar antes del obstáculo), restricciones (rapidez, riesgo, costo energético), criterios de éxito o fracaso. La tarea selecciona qué variables son relevantes y qué tolerancia es aceptable. Selectividad que hace que la dinámica observable a nivel B sea de baja dimensión: la tarea ya hizo el primer trabajo de compresión antes de que el modelador llegue.
+1. L1 a B es selectiva. Una categoría ordinaria orienta la investigación, pero puede fragmentarse en varias variables o quedar sin correlato medible.
+2. B a L3 es la traducción más exigente. Debe declarar medición, pérdida de información, supuestos y criterio de comparación.
+3. L3 a B requiere interpretación. Una estructura matemática no identifica por sí sola qué proceso material la instancia.
+4. S se formula después de los contrastes. Puede conservar, restringir o abandonar la categoría inicial.
 
-### 2.5. Historia
+Esta asimetría es un protocolo contra la reificación. Evita que una palabra produzca un objeto por decreto y que una ecuación produzca una ontología por elegancia.
 
-Trayectorias previas, aprendizaje, desarrollo, evolución, exposición a perturbaciones. Sin esta dimensión no se explica por qué dos agentes con la misma fisiología frente al mismo entorno producen conductas distintas. La historia entra como variables explícitas en el dossier de anclaje cuando el dominio lo requiere.
+## 7. Alcance y límites
 
-## 3. El acoplamiento como estructura básica de B
+B es generalizable como plantilla de investigación, no como prueba de que todos los dominios compartan la misma estructura ontológica. Su uso en fenómenos biológicos, técnicos o institucionales exige variables y sondas propias. La transferencia de la plantilla muestra comparabilidad metodológica; la invarianza ontológica requeriría además datos reales, convergencia entre sondas independientes, intervención pertinente y replicación externa.
 
-La unidad mínima de descripción a este nivel no es el organismo aislado ni el entorno aislado. Es el par dinámico acoplado:
+El caso Warren funciona como ancla porque permite construir un B especialmente rico: sistema perceptivo-motor, entorno controlado, variables informacionales, tareas diferenciadas e historia experimental. Ese éxito no se transfiere automáticamente al resto del corpus. Los casos inter-dominio e inter-escala deben ganar su admisión por separado.
 
-```
-ė = Φ(e, F)              dinámica del entorno bajo fuerzas F
-ȧ = Ψ(a, i)              dinámica del agente bajo información i
-F = β(a)                 fuerzas que el agente ejerce sobre el entorno
-i = λ(e)                 información ecológica disponible en el entorno
-```
+## 8. Resultado del capítulo
 
-Estas cuatro ecuaciones (formalmente equivalentes a las del ciclo percepción-acción de Warren) capturan dos acoplamientos simultáneos:
+El nivel B cumple una función precisa: obliga a que toda afirmación sobre estructura pase por un sistema material medible antes de recibir interpretación ontológica. Conecta lenguaje, datos y formalización sin identificarlos. El resto de la tesis depende de esta disciplina: si B es débil, L3 solo formaliza una intuición; si B está bien construido, L3 puede evaluar una dependencia, aunque todavía no demuestre una ontología fuerte.
 
-- **acoplamiento mecánico**: el agente actúa físicamente sobre el entorno y el entorno reacciona;
-- **acoplamiento informacional**: el entorno produce patrones detectables que modulan la dinámica del agente.
+## Deuda residual
 
-La trayectoria conductual del par no es la suma de la trayectoria del agente y la del entorno: es la trayectoria del sistema conjunto en su espacio de estados.
-
-### Consecuencias ontológicas
-
-1. el `patrón estabilizado` (capítulo 02-01) se identifica con un atractor del sistema acoplado;
-2. la `restricción real` se identifica con la estructura del campo vectorial (dónde converge, dónde diverge, dónde transiciona);
-3. la `causalidad circular` se opera técnicamente: las componentes determinan la dinámica conjunta y la dinámica conjunta retroalimenta a las componentes a través de las leyes de control.
-
-## 4. Self-organization: el modelo positivo de la emergencia
-
-El borrador rechazaba el emergentismo fuerte (correctamente) pero solo como negación. Faltaba el modelo positivo. La tesis lo proporciona aquí, **anclado disciplinarmente** en dos tradiciones independientes que convergen en lo esencial:
-
-- **Maturana y Varela (1980, *Autopoiesis and Cognition*, p. 78-84):** la organización viva es *"a network of processes of production [...] which through their interactions and transformations continuously regenerate and realize the network of processes that produced them"* (p. 78-79). La autopoiesis es **cierre operacional sostenido por transformaciones materiales**, no propiedad emergente sustancial.
-- **Haken (1977, *Synergetics: An Introduction*, cap. 1, p. 1-7):** *"in many disciplines [...] a sudden self-organization of structure is observed when control parameters cross critical values"* (p. 1). El **principio del esclavizamiento** (slaving principle, cap. 7, p. 191-204) reduce la dinámica de muchos modos a unos pocos modos colectivos cuando el sistema cruza un umbral crítico — operacionalización de la emergencia sin sustancia añadida.
-
-Sobre esa doble base, la tesis fija:
-
-> Un fenómeno es emergente, en el sentido del marco, cuando dos o más sistemas dinámicos materialmente acoplados generan en el espacio conjunto estabilidades, inestabilidades y transiciones que no están preinscritas en ninguno de los componentes aislados pero tampoco son sustancia nueva.
-
-Esta es la formulación técnica de **self-organization en sentido Maturana-Varela + Haken**: la emergencia es estabilización dinámica del sistema acoplado bajo restricciones físicas, informacionales y de tarea, no aparición de entidad adicional. Tres rasgos:
-
-- **upward causation**: las componentes producen la dinámica global;
-- **downward causation**: la dinámica global retroalimenta a las componentes (las leyes de control quedan ajustadas porque funcionan en el régimen estable);
-- **anclaje material**: el fenómeno emergente es materialmente realizado y empíricamente identificable.
-
-**Convención del manuscrito (glosario operativo §"Self-organization (sentido técnico)"):** cualquier ocurrencia textual de "self-organization", "auto-organización" o equivalentes en este manuscrito remite a esta sección y a las dos fuentes citadas. Donde la prosa no pueda mantener el anclaje disciplinar, debe sustituirse por "estabilización dinámica" o "convergencia a atractor".
-
-**Costo declarado: la doble base no es convergencia.** Maturana-Varela y Haken no constituyen una sola tradición. La autopoiesis es un esquema **organizacional** (cierre operacional, producción recursiva de los propios componentes) que Maturana resistió etiquetar como "self-organization" precisamente porque ese término, en el uso sinergético de Haken, describe **patrones estables bajo gradiente termodinámico** sin requerir clausura ni auto-producción. La sinergética opera con asimetría top-down (parámetros de orden esclavizan modos rápidos); la autopoiesis opera con circularidad sin polo dominante. Lo que la tesis toma de cada tradición es distinto y desigual: de **Haken** hereda la operacionalización dinámica (atractor del sistema acoplado bajo cruce de parámetro de control, baja dimensión efectiva); de **Maturana-Varela** hereda solo la **idea regulativa** de que la dinámica conjunta no es reducible a la suma de los componentes y que la organización puede ser invariante mientras los componentes cambian. La tesis **no afirma que sus sistemas EDI sean autopoiéticos** en sentido estricto; afirma que el modelo dinámico de emergencia (Haken) es compatible con esa idea regulativa y la opera empíricamente. Cuando el manuscrito dice "self-organization en sentido Maturana-Varela + Haken" debe leerse como **estabilización dinámica al modo de Haken con la restricción regulativa de no-reducción heredada de la tradición autopoiética**, no como síntesis filosófica de ambas. La discusión informada de la tensión entre ambos esquemas (Thompson 2007, *Mind in Life*, cap. 5) queda registrada como referencia secundaria pendiente de verificación con paginación (B-T:fetch-thompson-2007).
-
-Esto cierra la cláusula del capítulo 02-01: la emergencia no multiplica sustancias, opera como auto-organización en el sentido Maturana-Varela 1980 y Haken 1977, **bajo la asimetría declarada arriba**.
-
-## 5. Información ecológica como categoría central
-
-Una tentación de cualquier ontología material es hacer del entorno una pasividad. La tesis ya lo rechaza, pero el mecanismo positivo aparece aquí: la información ecológica es regularidad estructural del medio físico que el organismo puede detectar sin requerir representación interna.
-
-Para la tesis, esto cierra una brecha: explica cómo la conducta puede ser regular sin requerir un controlador central. La regularidad la pone en parte el entorno; el organismo se acopla a ella vía variables informacionales que no son representaciones sino diferencias materialmente implementadas que modulan la dinámica.
-
-Estatuto ontológico: la información ecológica es realidad de tipo estructural (capítulo 02-01). No es realidad fuerte (no es cuerpo) y no es teórica (no es solo modelo): es la estructura del campo informacional que el acoplamiento detecta y aprovecha.
-
-## 6. Tarea como dimensión constitutiva
-
-La tarea no es accesorio. Es parte del sistema acoplado. Sin tarea no hay variables conductuales relevantes: la pelota es solo un proyectil parabólico, no `pelota a botar a altura constante`. El error de heading β no existe sin meta `ψ_g`. La tarea fija qué cuenta como atractor para una `Q` específica.
-
-Esto tiene una consecuencia para la ontología. Algunos atractores existen incondicionalmente en el sistema (atractor pasivamente estable del raqueteo, repulsor físico del palo invertido, sistema neutralmente estable del frenado). Pero los atractores conductuales típicos son creados por el acoplamiento informacional bajo restricción de tarea: emergen cuando la información se acopla al sistema con una ley de control específica, y desaparecen sin acoplamiento. Esto es realismo estructural en su versión más sutil: el atractor no preexiste a la tarea, pero una vez constituida la tarea el atractor es plenamente real.
-
-## 7. Historia como variable explícita
-
-La historia entra como variables explícitas siempre que la pregunta lo requiera:
-
-- **rondas previas** en una sesión de aprendizaje;
-- **fase de aprendizaje** (exploración inicial, calibración, estabilización);
-- **calibración perceptiva** previa a la tarea;
-- **exposición** a perturbaciones específicas;
-- **desarrollo ontogenético** cuando aplica;
-- **historia evolutiva** cuando proceda para repertorios motores o sensoriales.
-
-La historia no se trata como variable aparte; se incorpora como parte de las variables `X` del operador μ (capítulo 03-01). Esto permite que las leyes de control sean específicas del agente sin perder la forma funcional general.
-
-## 8. Asimetría L1↔B↔L3↔S como protocolo
-
-Este es el aporte estructural del capítulo. La asimetría no es decorativa; es protocolo de admisión y traducción.
-
-### 8.0. Nota sobre el nivel cuantificacional de la asimetría
-
-La asimetría se formula con dos partes que viven en niveles cuantificacionales distintos. La validación lógica formal con ST (Parte II, validación lógica formal, Hallazgo ST-1) detectó que mezclarlos en un solo nivel produce contradicción proposicional. La formulación correcta es:
-
-- **Universal:** la traducción B ↔ L3 es bidireccional para toda categoría admisible (`∀x ((B(x) ↔ L3(x)))`); el filtro de S vía B y L3 es universal (`∀x ((B(x) ∧ L3(x)) → S(x))`).
-- **Existencial:** las afirmaciones *"L1 no se deriva universalmente de S"* y *"S no se deriva universalmente de L1"* son **existenciales** (`∃x (L1(x) ∧ ¬S(x))` y `∃x (S(x) ∧ ¬L1(x))`), no negaciones de implicación universal. Significan: existen categorías L1 que no sobreviven al filtro y existen categorías S que no proceden de un L1 nombrado.
-
-Esto evita la trampa de leer la asimetría como negación universal (que sería contradictoria) y la fija como **distinción de cobertura**: B y L3 cubren completamente el espacio de categorías admisibles; L1 y S sólo se solapan parcialmente con ese espacio.
-
-### 8.1. L1 con L3: indirecto y restrictivo
-
-L1 plantea preguntas comunicables (`¿cómo decide alguien por dónde caminar?`, `¿cómo recuerda una secuencia?`). Esas preguntas son indispensables para fijar relevancia. Pero L1 no responde: nombra el explanandum. La respuesta se construye en B y se formaliza en L3. L3 no debe responder con el mismo vocabulario de L1 (so pena de sustitución nominal); le habla a L1 solo a través de sus consecuencias observables.
-
-### 8.2. B con L3: directo y traduccional
-
-L3 es la reconstrucción formal de las dependencias detectadas en B. Cada término de L3 debe traducirse a una variable conductual o biológica medible. Si una clase estructural de L3 no se traduce a B, la clase está flotando — formalismo vacío.
-
-### 8.3. S a posteriori
-
-S (la semántica revisada: las categorías que sobreviven a la auditoría) se gana solo a posteriori. Las categorías que valga la pena conservar son las que: corresponden a atractores reales identificados en B; tienen formalización en L3; discriminan predicción e intervención. Las que no, se eliminan o se descomponen. La aspiración no es eliminar L1; es reconstruir S desde B + L3.
-
-## 9. Qué descarta este nivel
-
-**Tabla 2.4.2.**
-
-| Tentación rechazada | Razón |
-|---|---|
-| Reduccionismo neurocéntrico | Sin tarea, entorno e historia, los circuitos no explican conducta |
-| Mentalismo solipsista | Las categorías mentales sin acoplamiento con B son etiquetas |
-| Formalismo desanclado | L3 sin traducción a B es metafísica formal |
-| Conductismo radical | El acoplamiento informacional y la baja dimensionalidad estructural exceden el inventario E–R |
-| Cognitivismo computacional fuerte | El sistema no requiere representación interna como recurso primario |
-
-La discusión detallada con cada rival se trata en capítulo 04-01.
-
-## 10. Diálogo con interlocutores
-
-### 10.1. Gibson — psicología ecológica
-
-Gibson (1979, *The Ecological Approach to Visual Perception*, cap. 8) sostiene que la información para la acción está disponible en el medio: *"the information for the perception of an object is not its image. The information in light to specify something does not have to resemble it"* (p. 304 ed. Houghton-Mifflin 1986). En los capítulos finales (cap. 13–14) explica que el control de la acción no requiere representación interna como recurso primario; basta con que el sistema perceptivo recoja invariantes específicos del flujo óptico.
-
-La tesis recoge exactamente esto y lo opera: la información ecológica es **realidad estructural** (capítulo 02-01) y se traduce a variables medibles (τ, ρ, flujo óptico, ángulo de declinación). Donde Gibson queda en la formulación cualitativa de la affordance, la tesis avanza al sistema dinámico acoplado vía Warren-Fajen, ofreciendo ecuaciones cuantitativas y, en el caso 30 del corpus EDI, validación empírica con EDI = 0.262 significativo.
-
-### 10.2. Maturana y Varela — autopoiesis y enaction
-
-Maturana y Varela (1980, *Autopoiesis and Cognition*, cap. III) proponen la autopoiesis como cierre operacional de los sistemas vivos: *"an autopoietic machine continuously generates and specifies its own organization through its operation as a system of production of its own components"* (p. 79). En *El árbol del conocimiento* (1984, cap. 5) extienden la noción al ámbito cognitivo.
-
-La tesis recoge la idea de cierre y la **operacionaliza** como cuenca de atracción del sistema acoplado bajo perturbación, con tolerancia explícita. La autopoiesis no requiere lectura mística: es estabilidad asintótica empíricamente verificable. La diferencia con Maturana-Varela: la tesis no asume circularidad organizacional como invariante a priori; la verifica caso por caso vía EDI.
-
-### 10.3. Varela, Thompson y Rosch — embodied mind
-
-Varela, Thompson y Rosch (1991, *The Embodied Mind*, cap. 8) consolidan la tesis de la cognición enactiva: *"cognition consists not of representations but of embodied action [...] the world is not something that is given to us but something we engage in by moving, touching, breathing, eating"* (p. 200). Thompson (2007, *Mind in Life*, cap. 4) lo desarrolla con neurofenomenología.
-
-La tesis asume el enactivismo como tesis empírica del **nivel B**. La diferencia operativa: la tesis añade el **filtro formal de admisión** (capítulo 03-02) y la **operacionalización empírica de la compresión κ** (capítulo 03-04 y corpus EDI), que el enactivismo dejaba programáticos. Esta es una contribución específica a la tradición enactiva: la metodología cuantitativa que la tradición pedía pero no construía.
-
-### 10.4. Andy Clark — extended mind
-
-Clark y Chalmers (1998, "The Extended Mind", *Analysis* 58:7-19) sostienen el principio de paridad: *"if, as we confront some task, a part of the world functions as a process which, were it done in the head, we would have no hesitation in recognizing as part of the cognitive process, then that part of the world is (so we claim) part of the cognitive process"* (p. 8). Clark (2008, *Supersizing the Mind*, cap. 4) extiende el argumento.
-
-La tesis lo opera como caso de B donde el entorno técnico se incorpora a las variables del acoplamiento. La extensión no es metafísica; es **decisión empírica sobre qué entra en X** del operador μ. La tesis evita la objeción de Adams y Aizawa (2008) (causa-constitución) exigiendo el criterio operativo: una variable extiende el acoplamiento si y solo si su ablación reduce significativamente la dinámica del sistema.
-
-### 10.5. Warren — behavioral dynamics
-
-Warren (2006, *Psychological Review* 113:358-389) proporciona el caso paradigmático trabajado del nivel B. La tesis central del programa es que el comportamiento adaptativo no está impuesto por un controlador interno sino que emerge de la interacción agente–entorno bajo restricciones físicas, informacionales y de tarea. Cita verificada en PDF: *"Adaptive behavior, rather than being imposed by a preexisting structure, emerges from this confluence of constraints under the boundary condition of a particular task or goal"* (Warren 2006, p. 358). La formulación dinámica de la locomoción dirigida: ecuación de heading de segundo orden con parámetros ajustados (b = 3.25, k_g = 7.50, c1 = 0.40, c2 = 0.40), que reproduce el r² = .980 de la varianza de las series temporales medias (Warren 2006, p. 375).
-
-La tesis recoge a Warren como **interlocutor principal de B** y ancla paradigmática: aporta el vocabulario de atractor, repulsor, bifurcación, ley de control y acoplamiento agente-entorno. Warren delimita el alcance de su ajuste: *"The fits to the mean time series accounted for a proportion of .980 of the variance, indicating that model behavior is highly similar to the mean human behavior"* (Warren 2006, p. 375). El caso 30 EDI no es una elevación cuantitativa de ese resultado: usa datos sintéticos, otra escala de agregación y un criterio distinto; además, no supera el block bootstrap. La comparación sirve para formular una prueba futura, no para explicar post hoc la diferencia entre r² y EDI.
-
-## 11. Consecuencia para el aparato formal
-
-El operador `μ : R → X` debe leerse, en el caso de fenómenos psicológicos y conductuales, como medición a nivel B. `X` puede entonces incluir:
-
-- variables conductuales: trayectoria, error de heading, fase, período, aceleración de impacto, latencia;
-- variables informacionales ecológicas: τ, ρ, flujo óptico, ángulo de declinación, fase relativa;
-- variables biomecánicas: longitud de extremidad, frecuencia natural, rigidez aparente;
-- variables de tarea: objetivo, restricciones, costo, criterio de éxito;
-- variables históricas: rondas previas, exposición, fase de aprendizaje.
-
-El grafo `G = (V, E, W, T)` se construye sobre estas variables. Las dependencias que `E` representa son las del sistema acoplado, no las de un agente aislado. Las reglas de actualización `T` son las leyes físicas y las leyes de control empíricamente identificables.
-
-## 12. Cierre
-
-Con la incorporación de B como nivel pleno, la tesis recupera el plano que la respuesta del profesor exigía como condición de anclaje. Las consecuencias son tres:
-
-- la ontología de patrones estabilizados gana su modelo positivo (atractores de sistemas acoplados);
-- la epistemología de la compresión gana su test (la dinámica de baja dimensión a nivel B);
-- la crítica al mentalismo deja de ser eliminativa para volverse constructiva: no se trata de borrar `mente`, `memoria` o `yo`, sino de reconstruir cuáles atractores conductuales-ecológicos comprime cada una y, a partir de ahí, decidir qué se conserva, qué se reformula y qué se descarta.
-
-## 13. Deuda residual
-
-- §10 (anclaje gibsoniano y reconstrucción Warren) salta de Gibson 1979 directamente a Warren 2006 omitiendo los pasos intermedios Turvey-Shaw 1981 y Kugler-Turvey 1987, que articularon la psicología ecológica como dinámica de sistemas. PDFs ausentes en `07-bibliografia/`. Acción: fetch Turvey-Shaw 1981 y Kugler-Turvey 1987 antes de redactar §10.1.bis con paginación verbatim. Pendiente fetch.
-- §50-67 invoca a Bateson (cibernética) y Dretske (información shannoniana) como combinables bajo la noción ecológica de información. Hallazgo: Bateson cibernético ("the difference that makes a difference") y Dretske semántico-shannoniano son incompatibles en su tratamiento de la intencionalidad; "combina" es engañoso. PDFs Bateson 1972 y Dretske 1981 ausentes en `07-bibliografia/`. Acción: declarar subordinación bajo Gibson (información ecológica como variable estructural del entorno) y fetch Bateson/Dretske antes de cita paginada. Corte filosófico pendiente de decisión autoral.
+La generalización de B fuera de percepción-acción sigue abierta. Debe evaluarse caso por caso con datos reales y criterios de intervención propios del dominio. También queda pendiente la decisión humana H-J8 sobre cuánto peso ontológico atribuir a la asimetría entre registros.

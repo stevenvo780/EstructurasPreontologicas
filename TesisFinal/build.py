@@ -55,8 +55,6 @@ PARTS = [
 A la Universidad de Antioquia, por sostener una tradición de filosofía de la ciencia que hace posible este trabajo. A los colegas y revisores que aportaron críticas tempranas. A los autores de los datasets públicos del corpus, sin los cuales la cartografía multidominio no sería viable. A William H. Warren y Brett R. Fajen por la conjetura cuantitativa de la behavioral dynamics que opera como caso ancla.
 '''),
         ('Resumen y abstract bilingüe', '00-proyecto/05-resumen-y-abstract.md', None),
-        ('Listas de figuras, tablas y abreviaturas', '00-proyecto/06-listas-figuras-tablas-abreviaturas.md', None),
-        ('Glosario operativo', '00-proyecto/07-glosario-operativo.md', None),
     ]),
     # ── INTRODUCCIÓN ────────────────────────────────────────────────
     ('Introducción', 'introduccion', [
@@ -88,26 +86,21 @@ A la Universidad de Antioquia, por sostener una tradición de filosofía de la c
         ('Capítulo 15: Criterios de admisión de aplicaciones', '05-aplicaciones/00-criterios-de-admision.md', None),
         ('Capítulo 16: Mapa de aplicaciones — corpus inter-dominio e inter-escala', '05-aplicaciones/07-mapa-aplicaciones-corpus.md', None),
         ('Capítulo 17: Caso ancla canónico — Behavioral Dynamics (Warren 2006)', '05-aplicaciones/05-dinamica-conductual-reconstruccion-warren.md', None),
-        ('Capítulo 18: Corpus inter-dominio (30 casos)', '09-simulaciones-edi/README.md', None),
-        ('Capítulo 19: Corpus inter-escala (10 casos)', '05-aplicaciones/06-corpus-multiescala.md', None),
-        ('Capítulo 20: Caso 30 — Behavioral Dynamics bajo EDI', '09-simulaciones-edi/30_caso_behavioral_dynamics/README.md', None),
-        ('Capítulo 21: Aplicaciones programáticas — Mente, memoria, yo', '05-aplicaciones/01-mente-memoria-yo.md', None),
-        ('Capítulo 22: Aplicaciones programáticas — Biología y ecología', '05-aplicaciones/02-biologia-y-ecologia.md', None),
-        ('Capítulo 23: Aplicaciones programáticas — Sistemas técnicos distribuidos', '05-aplicaciones/03-sistemas-tecnicos-distribuidos.md', None),
-        ('Capítulo 24: Aplicaciones programáticas — Instituciones, mercado, Estado', '05-aplicaciones/04-instituciones-mercado-y-estado.md', None),
+        ('Capítulo 18: Corpus inter-escala (10 casos)', '05-aplicaciones/06-corpus-multiescala.md', None),
+        ('Capítulo 19: Aplicaciones programáticas — Mente, memoria, yo', '05-aplicaciones/01-mente-memoria-yo.md', None),
+        ('Capítulo 20: Aplicaciones programáticas — Biología y ecología', '05-aplicaciones/02-biologia-y-ecologia.md', None),
+        ('Capítulo 21: Aplicaciones programáticas — Sistemas técnicos distribuidos', '05-aplicaciones/03-sistemas-tecnicos-distribuidos.md', None),
+        ('Capítulo 22: Aplicaciones programáticas — Instituciones, mercado, Estado', '05-aplicaciones/04-instituciones-mercado-y-estado.md', None),
     ]),
     # ── PARTE IV: DISCUSIÓN CRÍTICA ─────────────────────────────────
     ('Parte IV — Discusión crítica', 'parte-4-discusion', [
-        ('Capítulo 25: Debates con posiciones rivales', '04-debates/01-debates-con-posiciones-rivales.md', None),
-        ('Capítulo 26: Tabla comparativa con rivales', '04-debates/03-tabla-comparativa-rivales.md', None),
-        ('Capítulo 27: Anticipación de objeciones filosóficas', '04-debates/04-anticipacion-objeciones-filosoficas.md', None),
-        ('Capítulo 28: Limitaciones y puntos de presión', '04-debates/02-limitaciones-y-puntos-de-presion.md', None),
-        ('Capítulo 29: Limitaciones declaradas consolidadas', '04-debates/05-limitaciones-declaradas-consolidacion.md', None),
+        ('Capítulo 23: Debates con posiciones rivales', '04-debates/01-debates-con-posiciones-rivales.md', None),
+        ('Capítulo 24: Anticipación de objeciones filosóficas', '04-debates/04-anticipacion-objeciones-filosoficas.md', None),
+        ('Capítulo 25: Limitaciones declaradas', '04-debates/05-limitaciones-declaradas-consolidacion.md', None),
     ]),
     # ── PARTE V: CIERRE ─────────────────────────────────────────────
     ('Parte V — Cierre y estado de la demostración', 'parte-5-cierre', [
-        ('Capítulo 30: Conclusión y estado de la demostración', '06-cierre/01-conclusion-demostrativa.md', None),
-        ('Capítulo 31: Hoja de ruta post-defensa', '06-cierre/03-hoja-de-ruta-para-tesis-final.md', None),
+        ('Capítulo 26: Conclusión y estado de la demostración', '06-cierre/01-conclusion-demostrativa.md', None),
     ]),
     # ── BIBLIOGRAFÍA ────────────────────────────────────────────────
     ('Bibliografía', 'bibliografia', [
@@ -115,6 +108,7 @@ A la Universidad de Antioquia, por sostener una tradición de filosofía de la c
     ]),
     # ── APÉNDICES TÉCNICOS MÍNIMOS ─────────────────────────────────
     ('Apéndices técnicos mínimos', 'apendices-tecnicos', [
+        ('Glosario operativo de consulta', '00-proyecto/07-glosario-operativo.md', None),
         ('Apéndice técnico 1: Tablas crudas del corpus inter-dominio', '10-apendices-tecnicos/01-tablas-crudas-corpus-interdominio.md', None),
         ('Apéndice técnico 2: Tablas crudas del corpus inter-escala', '10-apendices-tecnicos/02-tablas-crudas-corpus-multiescala.md', None),
         ('Apéndice técnico 3: Figuras Mermaid', '10-apendices-tecnicos/03-figuras-mermaid.md', None),
@@ -153,8 +147,7 @@ def build_toc():
     toc.append(f'<div id="{TOC_ANCHOR}"></div>\n\n')
     toc.append('# 📑 Tabla de Contenidos\n\n')
     toc.append(
-        '> **Navegación:** este manuscrito tiene ~10 mil líneas. '
-        'Las partes están agrupadas en secciones colapsables. '
+        '> **Navegación:** las partes están agrupadas en secciones colapsables. '
         'Haz clic en ▸ para expandir cada parte. Cada capítulo termina '
         'con un enlace «↑ volver al índice» que regresa aquí.\n\n')
 
@@ -192,7 +185,7 @@ def build():
         body.append(f'\n\n<div id="{part_anchor}"></div>\n\n')
 
         # Encabezado de parte (front matter ya viene con su propio H1)
-        if part_anchor != 'frontmatter':
+        if part_anchor not in ('frontmatter', 'introduccion', 'bibliografia'):
             body.append(f'# {part_title}\n\n')
 
         # Capítulos de la parte

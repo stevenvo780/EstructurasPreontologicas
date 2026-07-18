@@ -251,7 +251,7 @@ Ladyman y Ross (2007, *Every Thing Must Go*, cap. 3, p. 130) toman la estructura
 
 La auditoría ontológica de este capítulo se sitúa en posición contraria: el sustrato material y sus procesos son ontológicamente primeros; las estructuras (atractores, invariantes bajo κ, regularidades que pasan el dossier) son **propiedades operativas del sustrato**, no entidades autónomas que lo dispensen. La consecuencia metodológica es directa para la auditoría: los criterios Fase 5 (patrones de orden superior) y Fase 6 (compresión legítima) operan sobre **individuos materialmente sostenidos** —átomos, organismos, instituciones— cuya admisión exige dossier empírico, no derivación a partir de estructura modal fundamental. La diferencia con L&R no es retórica: si OSR fuese correcta, el criterio A del dossier (anclaje material) sería redundante; en la tesis, ese criterio es decisivo.
 
-Por tanto OSR cuenta en el cuadro de la auditoría como **rival** en el espacio de posiciones, no como referente afín. La tabla comparativa con rivales (cap 04-03, criterio A) codifica esta discrepancia. La etiqueta "realismo estructural moderado" se usa en sentido operativo no-Ladyman; el glosario (`00-proyecto/07-glosario-operativo.md`) declara esta convención de lectura.
+Por tanto OSR cuenta en la auditoría como **rival** en el espacio de posiciones, no como referente afín. El capítulo `04-debates/01-debates-con-posiciones-rivales.md` desarrolla esta discrepancia. La etiqueta "realismo estructural moderado" se usa en sentido operativo no-Ladyman; el glosario declara la convención.
 
 ## 11. Resultado metodológico
 

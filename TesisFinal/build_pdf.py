@@ -53,7 +53,6 @@ def build() -> None:
         f"--lua-filter={REPO / 'TesisFinal' / 'pdf_sanitize.lua'}",
         f"--include-in-header={REPO / 'TesisFinal' / 'pdf_header.tex'}",
         "--pdf-engine=xelatex",
-        "--number-sections",
         "-V", "documentclass=report",
         "-V", "papersize=a4",
         "-V", "geometry:margin=1.8cm",
