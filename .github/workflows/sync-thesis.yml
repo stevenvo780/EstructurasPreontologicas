@@ -1,0 +1,56 @@
+name: Sincronizar manuscrito derivado
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "00-proyecto/**/*.md"
+      - "01-diagnostico/**/*.md"
+      - "02-fundamentos/**/*.md"
+      - "03-formalizacion/**/*.md"
+      - "04-debates/**/*.md"
+      - "05-aplicaciones/**/*.md"
+      - "06-cierre/**/*.md"
+      - "07-bibliografia/**/*.md"
+      - "10-apendices-tecnicos/**/*.md"
+      - "TesisFinal/build.py"
+      - ".github/workflows/sync-thesis.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync-thesis-main
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Ensamblar manuscrito
+        run: python TesisFinal/build.py
+
+      - name: Publicar cambios derivados
+        shell: bash
+        run: |
+          if git diff --quiet -- TesisFinal/Tesis.md; then
+            echo "El manuscrito ya está sincronizado."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add TesisFinal/Tesis.md
+          git commit -m "Sincroniza manuscrito derivado"
+          git push
