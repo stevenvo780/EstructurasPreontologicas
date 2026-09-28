@@ -1,13 +1,13 @@
 {
   "rewrites": [
-    { "source": "/api/:path*", "destination": "/api/index.py" },
-    { "source": "/healthz", "destination": "/api/index.py" },
-    { "source": "/visualizations/:path*", "destination": "/api/index.py" },
-    { "source": "/sim_files/:path*", "destination": "/api/index.py" },
-    { "source": "/repo_files/:path*", "destination": "/api/index.py" },
-    { "source": "/legacy_static/:path*", "destination": "/api/index.py" },
-    { "source": "/legacy/:path*", "destination": "/api/index.py" },
-    { "source": "/legacy", "destination": "/api/index.py" },
+    { "source": "/api/:path*", "destination": "/api/index.py?__route__=/api/:path*" },
+    { "source": "/healthz", "destination": "/api/index.py?__route__=/healthz" },
+    { "source": "/visualizations/:path*", "destination": "/api/index.py?__route__=/visualizations/:path*" },
+    { "source": "/sim_files/:path*", "destination": "/api/index.py?__route__=/sim_files/:path*" },
+    { "source": "/repo_files/:path*", "destination": "/api/index.py?__route__=/repo_files/:path*" },
+    { "source": "/legacy_static/:path*", "destination": "/api/index.py?__route__=/legacy_static/:path*" },
+    { "source": "/legacy/:path*", "destination": "/api/index.py?__route__=/legacy/:path*" },
+    { "source": "/legacy", "destination": "/api/index.py?__route__=/legacy" },
     { "source": "/", "destination": "/index.html" },
     {
       "source": "/((?!api|healthz|visualizations|sim_files|repo_files|legacy|assets|favicon|robots|.*\\.(?:js|css|png|jpg|jpeg|gif|svg|ico|webp|woff|woff2|ttf|eot|map)$).*)",

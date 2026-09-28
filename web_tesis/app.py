@@ -721,11 +721,6 @@ async def api_run_st():
     return JSONResponse({"success": success, "log": log, "html": html})
 
 
-@app.get("/api/__scope__", include_in_schema=False)
-async def __scope__(request: Request):
-    return JSONResponse({"path": request.url.path, "scope_path": request.scope.get("path"), "root_path": request.scope.get("root_path"), "route": str(request.scope.get("route")), "registered": [getattr(r, "path", "?") for r in app.routes][:12], "headers": {k: v for k, v in request.headers.items() if "vercel" in k.lower() or "forwarded" in k.lower() or "uri" in k.lower() or "rewrite" in k.lower() or "matched" in k.lower()}})
-
-
 @app.get("/healthz", response_class=JSONResponse)
 async def healthz():
     return JSONResponse(
@@ -777,8 +772,10 @@ async def home_legacy(request: Request, refresh: bool = Query(default=False)):
 # Catch-all para SPA — debe ir DESPUÉS de las rutas /api/*
 @app.get("/{full_path:path}", response_class=HTMLResponse)
 async def spa_catchall(full_path: str, request: Request):
-    # DIAG TEMPORAL (REVERTIR): revelar scope en vez de 404
-    return JSONResponse({"full_path": full_path, "scope_path": request.scope.get("path"), "root_path": request.scope.get("root_path"), "method": request.method, "registered": [getattr(r, "path", "?") for r in app.routes][:14], "headers": {k: v for k, v in request.headers.items() if "vercel" in k.lower() or "forwarded" in k.lower() or "uri" in k.lower() or "rewrite" in k.lower() or "matched" in k.lower() or k.lower() == "host"}})
+    # Si la URL apunta a un archivo estático, dejar que StaticFiles lo maneje
+    if full_path.startswith(("api/", "sim_files/", "repo_files/", "visualizations/", "assets/", "legacy_static/", "legacy/")):
+        raise HTTPException(status_code=404)
+    return _serve_spa()
 
 
 # Raíz: misma lógica que catch-all
