@@ -5,6 +5,15 @@ Ejecuta sondas secundarias B10 sobre los 40 casos del corpus.
 Para cada caso, evalúa la convergencia inter-paradigma con la sonda
 primaria a partir del EDI publicado en metrics.json. Genera
 SECONDARY_PROBE_REPORT_BY_CASE.json + .md por caso y reporte global.
+
+ESTADO (2026-09-28, ronda cierre E5): LEGACY PROVISIONAL. Sucesor:
+scripts/run_secondary_probes_on_primary_arrays.py (F13). Limitaciones
+declaradas: (1) semilla abs(hash(case_id)) no-determinista entre
+procesos (PYTHONHASHSEED) — outputs no reproducibles bit-idénticos;
+(2) predicción primaria reconstruida circularmente desde el EDI
+publicado (:94-100), sobre proxys sintéticos, no arrays primarios
+(F13 histórico). Ningún veredicto vigente depende de este runner.
+Deuda: B-T-NEW-PROBE-DET.
 """
 from __future__ import annotations
 
@@ -81,6 +90,8 @@ def main() -> int:
             continue
 
         primary_edi = _load_primary_edi(case_dir)
+        # NO-DETERMINISTA entre procesos (PYTHONHASHSEED). Legacy: no
+        # tocar sin migrar al sucesor (ver docstring). Deuda B-T-NEW-PROBE-DET.
         seed = abs(hash(case_id)) % (2**31)
         proxy = _synthetic_proxy(seed)
 

@@ -1279,7 +1279,7 @@ Simondon distingue individuo de individuación y trata la información como dife
 
 ### 8.5. Dennett — abstracciones reales
 
-Dennett (1991, *Consciousness Explained*, cap. 13, p. 412) trata `el yo` como *"a center of narrative gravity"*: *"like a center of gravity in physics, it is a wonderfully useful fiction. It allows us to organize our world the way we are inclined to organize it"*. La tesis recoge el realismo de patrones pero **exige más**: el yo no es ficción útil sino atractor de integración corporal-narrativa-social-afectiva con cuenca medible; las creencias son disposiciones relacionales con efectos sobre la trayectoria conductual. Donde Dennett admite que el yo es ficción útil con consecuencias, la tesis distingue κ-pragmática (utilidad) de κ-ontológica (realidad estructural moderada): el yo es ficción útil **además de** patrón estabilizado del sistema acoplado organismo-entorno-tarea-historia. La diferencia se opera empíricamente en 05-01.
+Dennett (1991, *Consciousness Explained*, cap. 13, p. 412) trata `el yo` como *"a center of narrative gravity"*: *"like a center of gravity in physics, it is a wonderfully useful fiction. It allows us to organize our world the way we are inclined to organize it"*. La tesis recoge el realismo de patrones pero **exige más**: el yo no es ficción útil sino atractor de integración corporal-narrativa-social-afectiva con cuenca medible; las creencias son disposiciones relacionales con efectos sobre la trayectoria conductual. Donde Dennett admite que el yo es ficción útil con consecuencias, la tesis distingue κ-pragmática (utilidad) de κ-ontológica (realidad estructural moderada): el yo es ficción útil **además de** patrón estabilizado del sistema acoplado organismo-entorno-tarea-historia. La diferencia se operaría empíricamente en 05-01, hoy en modo programático (conjetura con plan de prueba; tareas y datos no disponibles en este manuscrito — 05-01:5,10).
 
 ### 8.6. Wittgenstein — uso categorial y semejanzas de familia
 
@@ -2566,7 +2566,7 @@ Lakatos (1970, "Falsification and the Methodology of Scientific Research Program
 
 ### 11.3. Cartwright — capacidades verificables por intervención
 
-Cartwright (1989, *Nature's Capacities and their Measurement*, cap. 4, p. 141) propone que *"causes are taken to act 'individually', i.e., they have stable, transferable capacities to produce effects which they continue to be disposed to do whether they actually do produce them or not"*. La tesis recoge esta idea: los criterios 5 (predictivo) y 6 (interventivo) son **verificación de capacidad bajo intervención**, no de regularidad observada. La métrica EDI mide capacidad ablativa: si el acoplamiento es capacidad real, su ablación produce diferencia; si es ficción explicativa, no.
+Cartwright (1989, *Nature's Capacities and their Measurement*, cap. 4, p. 141) propone que *"causes are taken to act 'individually', i.e., they have stable, transferable capacities to produce effects which they continue to be disposed to do whether they actually do produce them or not"*. La tesis recoge esta idea: los criterios 5 (predictivo) y 6 (interventivo) son **verificación de capacidad bajo intervención**, no de regularidad observada. La métrica EDI mide capacidad ablativa: si el acoplamiento es capacidad real, su ablación produce diferencia; si es ficción explicativa, no. Esta lectura vale bajo los supuestos identificadores declarados en 03-01 §12.1 (fidelidad, modularidad, ausencia de confounders); sin ellos, EDI solo establece que el término de acoplamiento no es decorativo en el modelo.
 
 ### 11.4. Pearl — `do`-calculus
 
@@ -3975,10 +3975,11 @@ El corpus agregado prueba que un vocabulario común puede formularse y ejecutars
 | # | Caso | EDI | p | Sonda |
 |---|------|----:|--:|-------|
 | 04 | Energía eléctrica | 0.1571 | 0.0060 (block) | Lotka-Volterra |
-| 14 | Postverdad (desinformación) | 0.2428 | 0.0000 | SIS contagion |
 | 17 | Océanos (OHC proxy) | 0.1902 | 0.0000 | Sonda térmica (disclosure: `valid=False`, gate C1-C5 no superado pero CI=[0.157, 0.280] estrictamente positivo) |
-| 22 | Fósforo (fertilizantes) | 0.1924 | 0.0000 | Carpenter P Cycle |
+| 22 | Fósforo (fertilizantes) | 0.3221 | 0.0000 | Carpenter P Cycle |
 | 05 | Epidemiología (COVID-19) | 0.1294 | 0.0000 | SEIR |
+
+**Nota de régimen (2026-09-28, ronda cierre E9):** fila 22 corregida a `metrics.json` canónico real-phase (0.3221); el valor previo (0.1924) provenía de `metrics_enriched_v5_2.json` (era pre-B-T2.1, rancio). Fila 14 (Postverdad) eliminada de este bloque: su valor previo (0.2428) también provenía del enriquecido rancio; el canónico real (EDI=0.0022, p=0.9850) la reclasifica a Bloque V (trend). Tabla autoritativa de cierre: 06-01 §1.
 
 ### Bloque IV — Suggestive (Nivel 2)
 
@@ -4002,6 +4003,8 @@ El corpus agregado prueba que un vocabulario común puede formularse y ejecutars
 |---|------|----:|--:|------------|
 | 13 | Políticas estratégicas (gasto militar) | 0.0821 | 0.1622 | Trend Nivel 1 bajo datos institucionales reales; CI=[0.065, 0.100]. Ruido domina señal. |
 | 11 | Movilidad (tráfico aéreo / TomTom) | 0.0599 | 0.9219 | Trend Nivel 1 bajo datos TomTom reales; CI=[-0.392, 0.205]. Ruido domina señal de cierre bajo sonda Bilinear diffusion. |
+| 14 | Postverdad (desinformación) | 0.0022 | 0.9850 | Trend Nivel 1 bajo datos reales (sonda SIS contagion); CI=[0.001, 0.005]. Magnitud trivial, p no significativo. Reclasificada desde Bloque III el 2026-09-28 (valor previo 0.2428 rancio, ver nota Tabla 5.7.5). |
+| 25 | Acuíferos | 0.0035 | 0.1862 | Trend Nivel 1 bajo datos heterogéneos; CI=[0.002, 0.005]. Magnitud trivial, p no significativo. Reclasificado desde Bloque VI el 2026-09-28 (valor previo -0.1462 rancio, sin régimen versionado). |
 
 ### Bloque VI — Null (Nivel 0)
 
@@ -4011,13 +4014,12 @@ El corpus agregado prueba que un vocabulario común puede formularse y ejecutars
 
 | # | Caso | EDI | Comentario |
 |---|------|----:|-----------|
-| 01 | Clima regional | -0.0007 | Null genuino bajo datos reales IPCC-calibrados (p_perm=0.998, sonda Budyko-Sellers). |
+| 01 | Clima regional | 0.0030 | Null bajo re-ejecución real no versionada (sonda Budyko-Sellers, `overall_pass=False`); `metrics.json` versionado = 0.2581 sintético con receta perdida — ver B-T-NEW-CLIMA-DATA. Valor previo (-0.0007) sin fuente versionada, retirado. |
 | 02 | Conciencia global | -0.0121 | Null genuino bajo datos reales (p_perm=0.315, CI=[-0.016, -0.010]; sonda dinámica colectiva). Consistente con LoE=1 especulativa. |
 | 03 | Contaminación PM2.5 | -0.0109 | Null genuino bajo datos World Bank PM2.5 reales (p_perm=0.616, sonda dispersión-decaimiento). |
 | 09 | Finanzas globales | -0.0020 | Null/artefacto bajo régimen detrended honesto (raw=+0.1027 con `trend_r2=0.979`, warning activo). |
-| 12 | Paradigmas (ciencia) | -0.1536 | Reflexividad; null bajo régimen real-phase actual. |
-| 25 | Acuíferos | -0.1462 | Datos heterogéneos. |
-| 29 | IoT | -0.8760 | Reflexividad técnica. |
+| 12 | Paradigmas (ciencia) | -0.1715 | Reflexividad; null bajo régimen real-phase canónico (valor previo -0.1536 rancio, corregido 2026-09-28). |
+| 29 | IoT | -0.8989 | Reflexividad técnica (régimen real-phase canónico; valor previo -0.8760 rancio, corregido 2026-09-28). |
 | 15 | Wikipedia (atención colectiva — "Climate change" EN) | -0.0038 | Null genuino bajo datos Wikimedia pageviews mensuales 2015–2024 (p_perm=0.769, CI=[-0.023, -0.002]). Magnitud trivial domina (`\|EDI\|<0.05`). |
 | 28 | Fuga de cerebros (multi-driver WB) | 0.0298 | Null genuino bajo datos WB multi-driver (researchers, enrollment, remittances, GDP pc, net migration; p_perm=0.969, CI=[-0.095, +0.159], val_steps=18). Candidato a panel bilateral origen-destino para próxima ejecución. |
 
@@ -4425,13 +4427,13 @@ Respuesta: no, si se incluyen variables históricas en el dossier de anclaje. La
 
 ## Cómo este caso sostiene la tesis general
 
-Este capítulo demuestra cuatro cosas.
+Este capítulo sostiene cuatro tesis (con los costos declarados en Deuda residual).
 
 1. **L3 puede anclarse de manera no nominal**: cada parámetro del modelo dinámico se traduce a una variable conductual, biomecánica, informacional o de tarea. Ningún término flota.
 
 2. **κ se opera empíricamente**: la baja dimensionalidad del modelo (uno o dos grados de libertad efectivos para tareas con cientos de grados de libertad físicos) está justificada por análisis de componentes principales sobre los datos, por ajustes con varianza explicada superior al 97%, por preservación de la topología de atractores y bifurcaciones.
 
-3. **Los patrones estabilizados son reales**: los atractores y repulsores de los modelos no son nombres impuestos por el investigador; son propiedades del sistema acoplado que predicen trayectorias, transiciones e intervenciones. Eso es realismo estructural moderado en su versión más fuerte: el patrón existe en el sustrato dinámico, pero su descripción depende del recorte de tarea.
+3. **Los patrones estabilizados se postulan como reales**: los atractores y repulsores de los modelos no son nombres impuestos por el investigador; son propiedades del sistema acoplado que predicen trayectorias, transiciones e intervenciones. Eso es realismo estructural moderado en su versión más fuerte: el patrón existe en el sustrato dinámico, pero su descripción depende del recorte de tarea. La inferencia ajuste→realidad carga el costo declarado en Deuda residual (siete parámetros libres ajustados sin cross-validation; r² alto no equivale a teoría correcta — Roberts y Pashler 2000).
 
 4. **La emergencia funciona como self-organization** (cap 02-04 §4, Maturana-Varela 1980, Haken 1977): las estabilidades observadas no requieren sustancia nueva ni controlador centralizado. Emergen del acoplamiento bajo restricciones físicas, informacionales y de tarea. La causalidad es circular y completamente material.
 

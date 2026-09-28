@@ -20,8 +20,8 @@ ejemplares propios conseguidos por el lector. Los verificadores de citas del
 harness requieren esos PDFs en local.
 
 Versión web (lectura + exploración de casos, sin instalar nada):
-`https://estructuras-preontologicas.vercel.app` (redeploy pendiente de push —
-ver §5).
+`https://estructuras-preontologicas.vercel.app` (verifique frescura contra
+git según §5: tras un push reciente la web puede servir código viejo).
 
 ## 2. Verificación computacional rápida (~15-30 min, 1 caso + harness)
 
@@ -48,9 +48,9 @@ requiere red para este caso.
 Integridad de outputs versionados (sin re-ejecutar nada):
 
 ```bash
-cd 09-simulaciones-edi   # desde la raíz del repo
-./tesis hash              # 32 casos: hashes vs baseline, debe decir sin cambios
-./tesis audit             # 30 OK + 2 notas (casos 41/42 usan run.py, sin validate.py)
+cd ../..                 # de vuelta a 09-simulaciones-edi (venía de .../src)
+./tesis hash              # 32 casos: hashes vs baseline, debe decir "Sin cambios: 32"
+./tesis audit             # tabla corpus + overall_pass: 1/32 → ['42'] (42 legacy extra-corpus, ver §4); 2.º bloque: 29 CHECK + 3 NO-CHECK (30/41/42)
 ```
 
 Harness formal (solo Python 3 stdlib, desde la raíz del repo):
@@ -95,6 +95,23 @@ cd 09-simulaciones-edi
   arrays reales (n real 6-13, insuficiente para ARIMA/VAR).
 - **Casos 41/42** no tienen `validate.py` ni `case_config.json` (usan `run.py`
   por diseño); la auditoría los reporta como notas, no como OK/fallo.
+- **Caso 42 `overall_pass=True` es legacy extra-corpus** (E4, ronda cierre
+  2026-09-28): `metrics.json` del 2026-04-28 con schema antiguo (categoría
+  `?`, sin `trend_bias`/`criteria_breakdown` ni `config_file`); el gate
+  fresco post-Fix M4/M5 da **0 passes** en todo el corpus. No lo cite como
+  positivo vigente.
+- **`outputs/metrics_enriched_v5_2.json` es rancio pre-B-T2.1** (E9, ronda
+  cierre 2026-09-28): ej. caso 04 dice EDI=0.6503 "ELEVADO A ROBUSTO" vs
+  canónico 0.1571. Alimenta solo Q7 (calibración interna QES, no veredicto).
+  Las Tablas 5.7.5/5.7.8 que lo citaban (filas 14/22) se corrigieron a
+  `metrics.json` canónico el 2026-09-28. Valide contra `metrics.json`, nunca
+  contra el enriquecido.
+- **Runner `scripts/run_full_secondary_probes.py` es legacy provisional**
+  (E5, ronda cierre 2026-09-28): semilla `abs(hash(case_id))`
+  no-determinista entre procesos + reconstrucción circular desde EDI
+  publicado sobre proxys sintéticos (F13). Sucesor:
+  `scripts/run_secondary_probes_on_primary_arrays.py`. Ningún veredicto
+  vigente depende de él.
 - **Re-ejecuciones verificadas bit-idénticas 2026-09-28:** casos 06, 07, 08,
   12, 13, 25 (12/13 con ruido float 1e-15/1e-16, misma conclusión).
   Otros casos: fixtures presentes, re-ejecución completa pendiente de
@@ -122,7 +139,7 @@ cd 09-simulaciones-edi
 
 La tesis NO afirma certeza ni demostración cerrada (06-01 §3 lista qué no
 queda demostrado): afirma un programa articulado con 40 instancias operativas
-(0 strong / 0 `overall_pass` real tras Fix M4/M5; 1 weak validado B-T2.1 + 8 weak, 8 trend, 9 null),
+(0 strong / 0 `overall_pass` real tras Fix M4/M5; taxonomía cruda: 9 weak —1 validado B-T2.1—, 8 trend, 9 null, 3 falsificación, 1 suggestive),
 controles de falsación rechazados, hostile testing 0/2000 falsos positivos
 del gate, y deudas declaradas. Rondas adversariales 2026-09-28 ya ejecutaron
 este protocolo: el criterio (a) SE DISPARÓ (gate C1 vacuo + tendencia ciega

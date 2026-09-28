@@ -104,10 +104,11 @@ El corpus agregado prueba que un vocabulario común puede formularse y ejecutars
 | # | Caso | EDI | p | Sonda |
 |---|------|----:|--:|-------|
 | 04 | Energía eléctrica | 0.1571 | 0.0060 (block) | Lotka-Volterra |
-| 14 | Postverdad (desinformación) | 0.2428 | 0.0000 | SIS contagion |
 | 17 | Océanos (OHC proxy) | 0.1902 | 0.0000 | Sonda térmica (disclosure: `valid=False`, gate C1-C5 no superado pero CI=[0.157, 0.280] estrictamente positivo) |
-| 22 | Fósforo (fertilizantes) | 0.1924 | 0.0000 | Carpenter P Cycle |
+| 22 | Fósforo (fertilizantes) | 0.3221 | 0.0000 | Carpenter P Cycle |
 | 05 | Epidemiología (COVID-19) | 0.1294 | 0.0000 | SEIR |
+
+**Nota de régimen (2026-09-28, ronda cierre E9):** fila 22 corregida a `metrics.json` canónico real-phase (0.3221); el valor previo (0.1924) provenía de `metrics_enriched_v5_2.json` (era pre-B-T2.1, rancio). Fila 14 (Postverdad) eliminada de este bloque: su valor previo (0.2428) también provenía del enriquecido rancio; el canónico real (EDI=0.0022, p=0.9850) la reclasifica a Bloque V (trend). Tabla autoritativa de cierre: 06-01 §1.
 
 ### Bloque IV — Suggestive (Nivel 2)
 
@@ -131,6 +132,8 @@ El corpus agregado prueba que un vocabulario común puede formularse y ejecutars
 |---|------|----:|--:|------------|
 | 13 | Políticas estratégicas (gasto militar) | 0.0821 | 0.1622 | Trend Nivel 1 bajo datos institucionales reales; CI=[0.065, 0.100]. Ruido domina señal. |
 | 11 | Movilidad (tráfico aéreo / TomTom) | 0.0599 | 0.9219 | Trend Nivel 1 bajo datos TomTom reales; CI=[-0.392, 0.205]. Ruido domina señal de cierre bajo sonda Bilinear diffusion. |
+| 14 | Postverdad (desinformación) | 0.0022 | 0.9850 | Trend Nivel 1 bajo datos reales (sonda SIS contagion); CI=[0.001, 0.005]. Magnitud trivial, p no significativo. Reclasificada desde Bloque III el 2026-09-28 (valor previo 0.2428 rancio, ver nota Tabla 5.7.5). |
+| 25 | Acuíferos | 0.0035 | 0.1862 | Trend Nivel 1 bajo datos heterogéneos; CI=[0.002, 0.005]. Magnitud trivial, p no significativo. Reclasificado desde Bloque VI el 2026-09-28 (valor previo -0.1462 rancio, sin régimen versionado). |
 
 ### Bloque VI — Null (Nivel 0)
 
@@ -140,13 +143,12 @@ El corpus agregado prueba que un vocabulario común puede formularse y ejecutars
 
 | # | Caso | EDI | Comentario |
 |---|------|----:|-----------|
-| 01 | Clima regional | -0.0007 | Null genuino bajo datos reales IPCC-calibrados (p_perm=0.998, sonda Budyko-Sellers). |
+| 01 | Clima regional | 0.0030 | Null bajo re-ejecución real no versionada (sonda Budyko-Sellers, `overall_pass=False`); `metrics.json` versionado = 0.2581 sintético con receta perdida — ver B-T-NEW-CLIMA-DATA. Valor previo (-0.0007) sin fuente versionada, retirado. |
 | 02 | Conciencia global | -0.0121 | Null genuino bajo datos reales (p_perm=0.315, CI=[-0.016, -0.010]; sonda dinámica colectiva). Consistente con LoE=1 especulativa. |
 | 03 | Contaminación PM2.5 | -0.0109 | Null genuino bajo datos World Bank PM2.5 reales (p_perm=0.616, sonda dispersión-decaimiento). |
 | 09 | Finanzas globales | -0.0020 | Null/artefacto bajo régimen detrended honesto (raw=+0.1027 con `trend_r2=0.979`, warning activo). |
-| 12 | Paradigmas (ciencia) | -0.1536 | Reflexividad; null bajo régimen real-phase actual. |
-| 25 | Acuíferos | -0.1462 | Datos heterogéneos. |
-| 29 | IoT | -0.8760 | Reflexividad técnica. |
+| 12 | Paradigmas (ciencia) | -0.1715 | Reflexividad; null bajo régimen real-phase canónico (valor previo -0.1536 rancio, corregido 2026-09-28). |
+| 29 | IoT | -0.8989 | Reflexividad técnica (régimen real-phase canónico; valor previo -0.8760 rancio, corregido 2026-09-28). |
 | 15 | Wikipedia (atención colectiva — "Climate change" EN) | -0.0038 | Null genuino bajo datos Wikimedia pageviews mensuales 2015–2024 (p_perm=0.769, CI=[-0.023, -0.002]). Magnitud trivial domina (`\|EDI\|<0.05`). |
 | 28 | Fuga de cerebros (multi-driver WB) | 0.0298 | Null genuino bajo datos WB multi-driver (researchers, enrollment, remittances, GDP pc, net migration; p_perm=0.969, CI=[-0.095, +0.159], val_steps=18). Candidato a panel bilateral origen-destino para próxima ejecución. |
 

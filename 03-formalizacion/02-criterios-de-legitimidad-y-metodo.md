@@ -237,7 +237,7 @@ Lakatos (1970, "Falsification and the Methodology of Scientific Research Program
 
 ### 11.3. Cartwright — capacidades verificables por intervención
 
-Cartwright (1989, *Nature's Capacities and their Measurement*, cap. 4, p. 141) propone que *"causes are taken to act 'individually', i.e., they have stable, transferable capacities to produce effects which they continue to be disposed to do whether they actually do produce them or not"*. La tesis recoge esta idea: los criterios 5 (predictivo) y 6 (interventivo) son **verificación de capacidad bajo intervención**, no de regularidad observada. La métrica EDI mide capacidad ablativa: si el acoplamiento es capacidad real, su ablación produce diferencia; si es ficción explicativa, no.
+Cartwright (1989, *Nature's Capacities and their Measurement*, cap. 4, p. 141) propone que *"causes are taken to act 'individually', i.e., they have stable, transferable capacities to produce effects which they continue to be disposed to do whether they actually do produce them or not"*. La tesis recoge esta idea: los criterios 5 (predictivo) y 6 (interventivo) son **verificación de capacidad bajo intervención**, no de regularidad observada. La métrica EDI mide capacidad ablativa: si el acoplamiento es capacidad real, su ablación produce diferencia; si es ficción explicativa, no. Esta lectura vale bajo los supuestos identificadores declarados en 03-01 §12.1 (fidelidad, modularidad, ausencia de confounders); sin ellos, EDI solo establece que el término de acoplamiento no es decorativo en el modelo.
 
 ### 11.4. Pearl — `do`-calculus
 

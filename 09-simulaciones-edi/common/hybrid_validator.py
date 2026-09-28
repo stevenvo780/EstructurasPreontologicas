@@ -979,6 +979,10 @@ def evaluate_c1(abm_val, ode_val, obs_val, obs_std,
 
     # Condición (A): relativa — acoplado mejor que reducido, con epsilon
     # numérico relativo (1e-9 del RMSE reducido, piso 1e-12 absoluto).
+    # NOTA (ronda cierre 2026-09-28, E3): 1e-9/1e-12 son constantes sin
+    # derivación teórica; soporte empírico = barrido 77 fases reporta 0
+    # flips en [1e-13, 1e-6] (no re-ejecutado por juez, U2). Deuda:
+    # derivar de precisión float o fijar por calibración (B-T-NEW-EPS-DERIV).
     if reduced_val is not None:
         err_reduced = rmse(reduced_val, obs_val)
         relative_improvement = err_reduced - err_abm
@@ -1940,10 +1944,18 @@ def evaluate_phase(config, df, start_date, end_date, split_date,
     # Justificación: las estructuras pre-ontológicas son constructos metaestables con fronteras
     # difusas (Symploké). sym_ok (internal >= external) ya verifica cohesión.
     # cr_valid > 2.0 es demasiado restrictivo (3/29) para emergencia no-fuerte.
-    # Fix M4/M5 (2026-09-28): el gate exige ausencia de sesgo de tendencia.
-    # trend_bias["warning"] = ratio<0.5 y trend_r2>0.7, i.e. la mayoría del
-    # EDI viene de predecir una recta. Sin este término, fases 100%
-    # tendencia (04syn, 05syn, 16/18/21/22 real) pasaban overall_pass=True.
+    # Fix M4/M5 (2026-09-28): el gate exige ausencia de sesgo de
+    # tendencia LINEAL fuerte. trend_bias["warning"] = ratio<0.5 y
+    # trend_r2>0.7, i.e. la mayoría del EDI viene de predecir una recta.
+    # Sin este término, fases 100% tendencia (04syn, 05syn, 16/18/21/22
+    # real) pasaban overall_pass=True.
+    # LÍMITE (ronda cierre 2026-09-28, E1): NO detecta tendencias
+    # no-lineales — U-cuadrática (r2≈0), quiebres estructurales (r2≈0.4) y
+    # exponenciales (detrend lineal deja curvatura) saltean el bloque
+    # r2>0.5 y devuelven trend_ok=True con EDI≈0.92 espurio. Impacto
+    # corpus vigente = 0 (gate fresco: 0 passes; ningún veredicto depende
+    # de trend_ok=True). Deuda pre-defensa B-T-NEW-TREND-NONLIN: endurecer
+    # (detrend no-lineal / test de quiebre) antes de futuros overall_pass.
     trend_ok = not trend_bias.get("warning", False)
     overall = all([c1, c2, c3, c4, c5, sym_ok, non_local_ok, persist_ok,
                    emergence_ok, coupling_ok, not rmse_fraud, edi_valid,
