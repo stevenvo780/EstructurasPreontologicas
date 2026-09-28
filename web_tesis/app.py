@@ -721,6 +721,11 @@ async def api_run_st():
     return JSONResponse({"success": success, "log": log, "html": html})
 
 
+@app.get("/api/__scope__", include_in_schema=False)
+async def __scope__(request: Request):
+    return JSONResponse({"path": request.url.path, "scope_path": request.scope.get("path"), "root_path": request.scope.get("root_path"), "route": str(request.scope.get("route")), "registered": [getattr(r, "path", "?") for r in app.routes][:12], "headers": {k: v for k, v in request.headers.items() if "vercel" in k.lower() or "forwarded" in k.lower() or "uri" in k.lower() or "rewrite" in k.lower() or "matched" in k.lower()}})
+
+
 @app.get("/healthz", response_class=JSONResponse)
 async def healthz():
     return JSONResponse(
