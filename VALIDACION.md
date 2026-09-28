@@ -82,6 +82,17 @@ cd 09-simulaciones-edi
   de una variante sintética de julio cuya receta exacta se perdió; re-ejecutar
   con datos reales da EDI ≈ 0.003. **Mismo veredicto** (`overall_pass=False`,
   `trend`), distinta magnitud. La re-ejecución honesta conserva la conclusión.
+- **Caso 04 energía exige régimen B-T2.1**: el `metrics.json` canónico
+  (EDI = 0.1571, p_block = 0.006) se produce SOLO con
+  `CASE_CONFIG_JSON=case_config_b_t2_1.json`; el config por defecto da otro
+  experimento (EDI ≈ 0.46). El campo `config_file` en cada `metrics.json`
+  declara el régimen usado. Misma trampa potencial en casos 20/24 si se
+  re-ejecutan sin su config B-T2.1.
+- **Umbral p doc↔código** (`B-T-NEW-P-THRESH`): glosario/tablas dicen p<0.01,
+  el código usa p<0.05. No altera veredictos vigentes; pendiente decisión.
+- **Reportes baselines/topology son histórico-sintéticos** (n=100, era
+  pre-B-T2.1): llevan banner `provenance` explícito; no re-ejecutados sobre
+  arrays reales (n real 6-13, insuficiente para ARIMA/VAR).
 - **Casos 41/42** no tienen `validate.py` ni `case_config.json` (usan `run.py`
   por diseño); la auditoría los reporta como notas, no como OK/fallo.
 - **Re-ejecuciones verificadas bit-idénticas 2026-09-28:** casos 06, 07, 08,
@@ -109,12 +120,18 @@ cd 09-simulaciones-edi
 
 ## 6. Qué significa "validada"
 
-La tesis NO afirma certeza: afirma una ontología general con 40 instancias
-operativas, controles de falsación rechazados, hostile testing 0/2000 falsos
-positivos del gate completo, y deudas declaradas. Un validador externo la
-refuta suficientemente si demuestra, con evidencia `ruta:línea` o
-re-ejecución, cualquiera de: (a) error estadístico en el motor que invierta
-veredictos; (b) circularidad dato-sonda no declarada; (c) ruptura lógica
-premisa→conclusión en 06-01; (d) atribución falsa a un rival en 04.
+La tesis NO afirma certeza ni demostración cerrada (06-01 §3 lista qué no
+queda demostrado): afirma un programa articulado con 40 instancias operativas
+(0 strong / 0 `overall_pass` real tras Fix M4/M5; 1 weak validado B-T2.1 + 8 weak, 8 trend, 9 null),
+controles de falsación rechazados, hostile testing 0/2000 falsos positivos
+del gate, y deudas declaradas. Rondas adversariales 2026-09-28 ya ejecutaron
+este protocolo: el criterio (a) SE DISPARÓ (gate C1 vacuo + tendencia ciega
+→ Fix M4/M5, 7 flips strong→weak) y quedó cerrado con evidencia; (b)-(d)
+resultaron absorbidos por la reescritura jul-2026 o convertidos en deuda
+declarada (F2 κ: H-J-NEW-F2-KAPPA). Un validador externo refuta
+suficientemente si demuestra, con evidencia `ruta:línea` o re-ejecución,
+cualquiera de: (a') NUEVO error estadístico en el motor que invierta
+veredictos vigentes; (b) circularidad dato-sonda no declarada; (c) ruptura
+lógica en 06-01 §§2-5; (d) atribución falsa a un rival en 04.
 Si encuentra una, abra issue con la evidencia: es el resultado más valioso
 que puede producir esta guía.

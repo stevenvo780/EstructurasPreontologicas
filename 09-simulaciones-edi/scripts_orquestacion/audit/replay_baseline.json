@@ -12,12 +12,12 @@
     "report_md5": "699dfaf63ae3dd4c9ee44fda27038c31"
   },
   "04_caso_energia": {
-    "metrics_md5": "0358a37e2b5430b0b9d52c87ca400d49",
-    "report_md5": "801807c85ae7bfc0fe5ca24a513b73d4"
+    "metrics_md5": "55c7902fa76f1429617749af402816bb",
+    "report_md5": "758c9431961fdcf2d51e353754f0c0c8"
   },
   "05_caso_epidemiologia": {
-    "metrics_md5": "7984b14f5eae8919e1280acde162e605",
-    "report_md5": "d375edb90d6341d5608beb0b9ba91689"
+    "metrics_md5": "b58d6db29ec5363e0ae96e56ab351386",
+    "report_md5": "d7267e4ab945477255d7e279bc875414"
   },
   "06_caso_falsacion_exogeneidad": {
     "metrics_md5": "9dec2105ab71c754fe92c83503f32e0f",
@@ -60,16 +60,16 @@
     "report_md5": "b9499c9f0038f208c5ed24074734c3a9"
   },
   "16_caso_deforestacion": {
-    "metrics_md5": "ec5a63531775bf2099538d69999de422",
-    "report_md5": "9f4cfa9b67fa96bdbc9ce46dbbc12cfa"
+    "metrics_md5": "61939d42899793407d3738fcab777d07",
+    "report_md5": "d5dbd3d519eab67b3305b0871accf76c"
   },
   "17_caso_oceanos": {
     "metrics_md5": "30527e85dbf1f4c0efa864bd5a86324a",
     "report_md5": "0d08f5a5dba010fdbc471bc962dbfbff"
   },
   "18_caso_urbanizacion": {
-    "metrics_md5": "c1d204c5d0bca2b526efabcc054c6bd9",
-    "report_md5": "a5eef2e012873803da9547c4c4abb2a8"
+    "metrics_md5": "72c0fa21e2f3be681ff791a97885efd5",
+    "report_md5": "786835232f5eb7e77d0e690a646e5972"
   },
   "19_caso_acidificacion_oceanica": {
     "metrics_md5": "cd1c422b451cba356bd2100638dc22a3",
@@ -80,12 +80,12 @@
     "report_md5": "26dd9a5dc892a673bdb330d70024b573"
   },
   "21_caso_salinizacion": {
-    "metrics_md5": "1b7db4fb841c5920d0c258292a7276be",
-    "report_md5": "5aa96ab74b3dec644d1823ae5c60a583"
+    "metrics_md5": "70c3c98afcef0f18d8bd276ec2a85446",
+    "report_md5": "7f30162f716273a216336cab7c5433b1"
   },
   "22_caso_fosforo": {
-    "metrics_md5": "5ab50195beca8e5f1034ae64b7ff743a",
-    "report_md5": "3263f27c99d9b6d79033e3d9ba630274"
+    "metrics_md5": "c8a2273a4cfe657c5cea15b410a8128e",
+    "report_md5": "501a87f5d3e0cfda64ff1abef135a24a"
   },
   "23_caso_erosion_dialectica": {
     "metrics_md5": "1f4b3c1b96cfaa04063e7666cde9aa10",

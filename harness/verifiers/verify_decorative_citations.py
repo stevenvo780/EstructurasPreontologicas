@@ -49,6 +49,10 @@ LIST_OF_AUTHORS_RX = re.compile(
 # de un número de 4 dígitos cercano. Se filtran post-extracción para no tocar
 # la regex base y mantener detecciones legítimas.
 INTERNAL_TAXONOMY_TOKENS = frozenset({"Nivel", "LoE", "Tipo", "Fase"})
+# Sellos de estado fechados (NO son apellidos): "(Estado 2026-09-28 ...)",
+# "(Actualización 2026-09-28 ...)" y variantes. Fix FP 2026-09-28 (M-ripple:
+# CITATION_RX los parseaba como autor+año).
+STATUS_STAMP_TOKENS = frozenset({"Estado", "Actualización", "Actualizado"})
 INTERNAL_TAXONOMY_RX = re.compile(
     r'\((?:Nivel\s+\d+(?:-\d+)?|LoE\s+\d+|Tipo\s+\d+|Fase\s+\d+)\)',
 )
@@ -57,7 +61,7 @@ INTERNAL_TAXONOMY_RX = re.compile(
 def _is_internal_taxonomy(author: str) -> bool:
     """True si el 'autor' extraído por CITATION_RX es en realidad un token
     de taxonomía interna (Nivel/LoE/Tipo/Fase), no un apellido."""
-    return author in INTERNAL_TAXONOMY_TOKENS
+    return author in INTERNAL_TAXONOMY_TOKENS or author in STATUS_STAMP_TOKENS
 
 
 def _is_markdown_table(para: str) -> bool:

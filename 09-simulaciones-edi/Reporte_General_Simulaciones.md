@@ -5,7 +5,7 @@
 | 01_caso_clima | Clima Regional (CONUS) | 0.258 | 1.000 | ❌ | 1.036 | trend | 1 | `01_caso_clima/outputs/report.md` |
 | 02_caso_conciencia | Conciencia Colectiva | -0.012 | 0.315 | ❌ | 0.803 | null | 0 | `02_caso_conciencia/outputs/report.md` |
 | 03_caso_contaminacion | Contaminación PM2.5 | -0.011 | 0.616 | ❌ | 1.096 | null | 0 | `03_caso_contaminacion/outputs/report.md` |
-| 04_caso_energia | Energía (Consumo Per Cápita) — B-T2.1 Refrescado OWID Renovables | 0.157 | 0.006 | ✅ | 1.001 | weak | 3 | `04_caso_energia/outputs/report.md` |
+| 04_caso_energia | Energía (Consumo Per Cápita) — B-T2.1 Refrescado OWID Renovables | 0.157 | 0.016 | ✅ | 1.001 | weak | 3 | `04_caso_energia/outputs/report.md` |
 | 05_caso_epidemiologia | Epidemiología (COVID-19 Global) | 0.129 | 0.000 | ✅ | 1.009 | weak | 3 | `05_caso_epidemiologia/outputs/report.md` |
 | 06_caso_falsacion_exogeneidad | Falsación: Exogeneidad | 0.055 | 1.000 | ❌ | 1.006 | falsification | — | `06_caso_falsacion_exogeneidad/outputs/report.md` |
 | 07_caso_falsacion_no_estacionariedad | Falsación: No-Estacionariedad | -0.882 | 1.000 | ❌ | 1.005 | falsification | — | `07_caso_falsacion_no_estacionariedad/outputs/report.md` |
@@ -17,13 +17,13 @@
 | 13_caso_politicas_estrategicas | Políticas Estratégicas (Bass Diffusion + Inertia) | 0.082 | 0.162 | ❌ | 1.000 | trend | 1 | `13_caso_politicas_estrategicas/outputs/report.md` |
 | 14_caso_postverdad | Postverdad (SIS Infodemic) | 0.002 | 0.985 | ❌ | 1.009 | trend | 1 | `14_caso_postverdad/outputs/report.md` |
 | 15_caso_wikipedia | Wikipedia (Conocimiento Colectivo) | -0.004 | 0.769 | ❌ | 1.022 | null | 0 | `15_caso_wikipedia/outputs/report.md` |
-| 16_caso_deforestacion | Deforestación Global (von Thünen Frontier) | 0.580 | 0.000 | ✅ | 1.023 | strong | 4 | `16_caso_deforestacion/outputs/report.md` |
+| 16_caso_deforestacion | Deforestación Global (von Thünen Frontier) | 0.580 | 0.000 | ✅ | 1.023 | weak | 3 | `16_caso_deforestacion/outputs/report.md` |
 | 17_caso_oceanos | Océanos (OHC proxy) | 0.190 | 0.000 | ✅ | 1.000 | weak | 3 | `17_caso_oceanos/outputs/report.md` |
-| 18_caso_urbanizacion | Urbanización Global | 0.337 | 0.000 | ✅ | 1.003 | strong | 4 | `18_caso_urbanizacion/outputs/report.md` |
+| 18_caso_urbanizacion | Urbanización Global | 0.337 | 0.000 | ✅ | 1.003 | weak | 3 | `18_caso_urbanizacion/outputs/report.md` |
 | 19_caso_acidificacion_oceanica | Acidificación Oceánica | -0.005 | 0.868 | ❌ | 1.352 | null | 0 | `19_caso_acidificacion_oceanica/outputs/report.md` |
 | 20_caso_kessler | Kessler (Debris Orbital) — B-T2.1 refrescado | -1.000 | 1.000 | ❌ | 1.005 | null | 0 | `20_caso_kessler/outputs/report.md` |
-| 21_caso_salinizacion | Salinización de Suelos (Richards Bilineal) | 0.515 | 0.000 | ✅ | 1.001 | strong | 4 | `21_caso_salinizacion/outputs/report.md` |
-| 22_caso_fosforo | Ciclo del Fósforo (Carpenter Biogeoquímico) | 0.322 | 0.000 | ✅ | 1.003 | strong | 4 | `22_caso_fosforo/outputs/report.md` |
+| 21_caso_salinizacion | Salinización de Suelos (Richards Bilineal) | 0.515 | 0.000 | ✅ | 1.001 | weak | 3 | `21_caso_salinizacion/outputs/report.md` |
+| 22_caso_fosforo | Ciclo del Fósforo (Carpenter Biogeoquímico) | 0.322 | 0.000 | ✅ | 1.003 | weak | 3 | `22_caso_fosforo/outputs/report.md` |
 | 23_caso_erosion_dialectica | Erosión Dialéctica (Abrams-Strogatz Prestige) | -1.000 | 1.000 | ❌ | 1.001 | null | 0 | `23_caso_erosion_dialectica/outputs/report.md` |
 | 24_caso_microplasticos | Microplásticos Oceánicos (Jambeck Accumulation-Decay) | -1.000 | 1.000 | ❌ | 1.001 | null | 0 | `24_caso_microplasticos/outputs/report.md` |
 | 25_caso_acuiferos | Depleción de Acuíferos (Darcy-Theis) | 0.004 | 0.186 | ❌ | 1.067 | trend | 1 | `25_caso_acuiferos/outputs/report.md` |

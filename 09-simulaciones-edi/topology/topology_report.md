@@ -1,5 +1,7 @@
 # Análisis topológico del corpus EDI (F4)
 
+> **HISTÓRICO-SINTÉTICO (era pre-B-T2.1):** ejecutado sobre array-dumps reconstruidos n=100 (`verified_real_data=False`), NO sobre arrays primarios reales. Citado en prosa solo con esta calificación. Pendiente: re-ejecución sobre arrays reales.
+
 Métricas estándar para validar carácter atractor de las trayectorias `obs` del corpus:
 exponente de Lyapunov máximo (Rosenstein 1993), dimensión de correlación (Grassberger-Procaccia 1983),
 tiempo de mezcla (ACF < 1/e). Embedding Takens con dim=5 y τ por primer cero de ACF.

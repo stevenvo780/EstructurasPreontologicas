@@ -135,19 +135,19 @@ Cálculo de SHA-256 sobre el código, parámetros y datos de entrada de cada cas
 ## Niveles del paisaje de emergencia
 
 ### Nivel 0 (null)
-EDI ≤ 0. Sin cierre operativo detectable. 8 casos del corpus.
+EDI ≤ 0. Sin cierre operativo detectable. 9 casos del corpus.
 
 ### Nivel 1 (trend)
-EDI > 0, p ≥ 0.05. Indicios sin significancia. 4 casos.
+EDI > 0, p ≥ 0.05. Indicios sin significancia. 8 casos.
 
 ### Nivel 2 (suggestive)
-EDI > 0.01, p < 0.05. Constricción débil. 2 casos.
+EDI > 0.01, p < 0.05. Constricción débil. 1 caso (10 Justicia).
 
 ### Nivel 3 (weak)
-0.10 ≤ EDI < 0.30, p < 0.05. Componente funcional con significancia. Análogo al ribosoma: tiene función pero no es organismo autónomo. 8 casos (incluido caso 30 v2).
+EDI > 0.10, p < 0.05, sin gate completo (incluye EDI ≥ 0.30 que no supera `overall_pass`, p.ej. por `trend_ok=False`). Componente funcional con significancia. Análogo al ribosoma: tiene función pero no es organismo autónomo. 9 casos (04, 05, 09, 16, 17, 18, 21, 22, 30).
 
 ### Nivel 4 (strong)
-0.30 ≤ EDI ≤ 0.90, p < 0.05 (con `overall_pass=True` para gate completo). Cierre operativo alto. **En el corpus inter-dominio (verificado contra `metrics.json::phases.real`):** 7 casos sobre datos reales = 6 con gate (`overall_pass=True`: casos 04 Energía EDI=0.461, 16 Deforestación EDI=0.580, 18 Urbanización EDI=0.337, 20 Kessler EDI=0.694, 22 Fósforo EDI=0.322, 24 Microplásticos EDI=0.806) + 1 sin gate (caso 26 Starlink EDI=0.757 con `overall_pass=False` por C4_validity). **En el corpus inter-escala:** 7 casos en 7 escalas distintas (atómica, cuántica, bioquímica, celular oscilatoria, individual, astrofísica, astrofísica masiva).
+0.30 ≤ EDI ≤ 0.90, p < 0.05, `overall_pass=True` (gate completo incl. `trend_ok`, Fix M4/M5 2026-09-28). Cierre operativo alto. **En el corpus inter-dominio (verificado contra `metrics.json::phases.real`):** 0 casos — los 4 strong con gate pre-Fix (16, 18, 21, 22) cayeron a weak al exigir ausencia de sesgo de tendencia (`detrended_edi` ≈ 0). **En el corpus inter-escala** (motor `edi_engine`, régimen distinto): 7 strong crudos en 7 escalas sobre datos sintéticos, peso evidencial parcial (ver 05-06).
 
 ### Nivel 5 (cierre operativo fuerte)
 Strong + convergencia bajo múltiples sondas independientes + LoE = 5 (datos físicos directos) + frontera espacial nítida verificada. Programa futuro. Ningún caso del corpus actual lo alcanza, en ninguna escala. Definido con criterios operativos explícitos en cap 03-04 §"Niveles del paisaje" para evitar lectura como promesa no cumplida.

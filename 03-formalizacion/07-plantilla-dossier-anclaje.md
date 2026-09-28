@@ -177,10 +177,12 @@ categoría está flotando y debe reformularse.]
 
 ## Casos completos disponibles en el repositorio
 
-- **04 Energía:** dossier en `09-simulaciones-edi/04_caso_energia/` (overall_pass=True)
-- **16 Deforestación:** dossier en `09-simulaciones-edi/16_caso_deforestacion/` (overall_pass=True, reproducibilidad verificada con World Bank en vivo)
-- **20 Kessler:** dossier en `09-simulaciones-edi/20_caso_kessler/` (overall_pass=True)
-- **27 Riesgo Biológico:** dossier en `09-simulaciones-edi/27_caso_riesgo_biologico/` (overall_pass=True)
+(Actualización 2026-09-28, Fix M4/M5: 0 `overall_pass=True` en fase real. Los dossiers existen como documentación; ningún caso supera el gate completo vigente incl. `trend_ok`.)
+
+- **04 Energía:** dossier en `09-simulaciones-edi/04_caso_energia/` (weak, `overall_pass=false`; régimen B-T2.1: EDI=0.1571, p_block=0.006)
+- **16 Deforestación:** dossier en `09-simulaciones-edi/16_caso_deforestacion/` (`overall_pass=false` post-Fix M4/M5 por `trend_ok=false`, `detrended_edi=-0.0438`; reproducibilidad verificada bit-idéntica)
+- **20 Kessler:** dossier en `09-simulaciones-edi/20_caso_kessler/` (null, `overall_pass=false`; falsificación local)
+- **27 Riesgo Biológico:** dossier en `09-simulaciones-edi/27_caso_riesgo_biologico/` (trend, `overall_pass=false`, sin significancia permutacional)
 - **30 Behavioral Dynamics:** dossier en `09-simulaciones-edi/30_caso_behavioral_dynamics/` (piloto no confirmatorio; sonda `behavioral_attractor` de segundo orden, `overall_pass=false`, p_block posterior ≈ 0.978)
 
 Cada uno tiene:

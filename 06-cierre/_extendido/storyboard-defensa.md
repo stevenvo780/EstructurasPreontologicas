@@ -3,6 +3,8 @@ title: "Storyboard estructural — Defensa oral (versión 30 / 15 / 5 min)"
 extends: 06-cierre/02-guia-de-defensa.md
 ---
 
+> **Storyboard desactualizado 2026-09-28 (Fix M4/M5).** Slides 4-5 (6 strong con gate), slide 13, '2/4 ARIMA/VAR' y refs §3.6/§4.1/§8.2 corresponden al régimen pre-Fix. Vigente: 0 strong / 0 `overall_pass` real (Tabla 6.1.1, 05-07 §Bloque I). Re-storyboard pendiente de Jacob.
+
 # Storyboard estructural — Defensa oral
 
 > **STORYBOARD-IA pendiente firma autoral Jacob.** Este archivo es guion estructural: define qué slide cubre qué condición demostrativa, con cifras canónicas literales y referencias a capítulo/figura del corpus. NO contiene voz visual final ni redacción narrativa: la voz visual final es de Jacob + plantilla institucional. Cuando llegue la plantilla, el ensamblaje es mecánico. Fuentes consolidadas: `06-cierre/01-conclusion-demostrativa.md`, `06-cierre/02-guia-de-defensa.md`, `06-cierre/_extendido/versiones-cortas-defensa.md`, `figures/`.

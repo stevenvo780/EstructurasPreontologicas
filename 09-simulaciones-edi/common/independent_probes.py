@@ -87,7 +87,9 @@ def maxwell_boltzmann_energy_probe(
     if f_a.shape[0] < n:
         f_a = np.concatenate([f_a, np.full(n - f_a.shape[0], f_a[-1])])
 
-    rng = np.random.RandomState(seed)
+    # Fix M2 (2026-09-28): eliminado `rng = RandomState(seed)` muerto — la
+    # dinámica es determinista (rng jamás se usaba); `seed` se conserva en
+    # la firma por compatibilidad pero no afecta el resultado.
     T = np.zeros(n)
     T[0] = max(temperature_init, 1e-3)
     base = obs_a[0] if obs_a[0] > 0 else 1.0

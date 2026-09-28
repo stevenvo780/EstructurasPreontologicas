@@ -32,6 +32,10 @@ Una falsificación local indica que la sonda o el modelo propuestos predicen peo
 | 24 Microplásticos | Strong, EDI ~0.8 | EDI -1.000, p_block 1.0 | Falsificación local tras datos refrescados |
 | 26 Starlink | Strong sin gate | EDI 0.7575, p_block 0.079, gate fallido | Candidato, no confirmación |
 | 30 Behavioral | Strong o Weak en narrativas previas | EDI 0.2622, `overall_pass=false`; block bootstrap p≈0.978 | Piloto con circularidad parcial |
+| 16 Deforestación | Strong con gate, EDI 0.5802 | Weak, `overall_pass=false`, `trend_ok=false`, detrended -0.0438 | Fix M4/M5: magnitud raw era tendencia |
+| 18 Urbanización | Strong con gate, EDI 0.3366 | Weak, `overall_pass=false`, `trend_ok=false`, detrended 0.0722 | Fix M4/M5: trend_r2=0.997 |
+| 21 Salinización | Strong con gate, EDI 0.5152 | Weak, `overall_pass=false`, `trend_ok=false`, detrended 0.0007 | Fix M4/M5: detrended trivial |
+| 22 Fósforo | Strong con gate, EDI 0.3221 | Weak, `overall_pass=false`, `trend_ok=false`, detrended -0.0449 | Fix M4/M5: magnitud raw era tendencia |
 
 Las reclasificaciones muestran que el pipeline puede corregir sus resultados. Esta propiedad sustenta la auditabilidad del método; no constituye evidencia independiente de la ontología.
 
@@ -68,20 +72,32 @@ Los controles reducen la objeción de validación indiscriminada frente a la fam
 python3 harness/cli.py verify --all
 ```
 
+### Entorno (una vez, desde la raíz del repo)
+
+```bash
+cd 09-simulaciones-edi
+python3 -m venv .venv && source .venv/bin/activate
+pip install -r requirements.txt   # versiones pinnadas
+```
+
 ### Ejecución desde la CLI
 
 ```bash
-./tesis demo
-./tesis audit
-./tesis metrics
-./tesis build
+./tesis demo               # caso clima
+./tesis audit              # auditoría rápida (sin re-ejecutar)
+./tesis metrics            # regenera reportes
+./tesis build              # re-ensambla TesisFinal/Tesis.md
 ```
 
 ### Caso específico
 
 ```bash
-python3 09-simulaciones-edi/04_caso_energia/src/validate.py --seed 42
+python3 09-simulaciones-edi/16_caso_deforestacion/src/validate.py
+# Caso 04 (régimen estricto B-T2.1):
+CASE_CONFIG_JSON=case_config_b_t2_1.json python3 09-simulaciones-edi/04_caso_energia/src/validate.py
 ```
+
+Semillas fijas en código (sin flags). Guía completa de validación independiente: `VALIDACION.md`.
 
 Cada caso debe declarar sus requisitos adicionales. Una reejecución confirmatoria debe fijar datos, sonda, baseline, ventana, umbrales y criterio de pérdida antes de observar el resultado.
 

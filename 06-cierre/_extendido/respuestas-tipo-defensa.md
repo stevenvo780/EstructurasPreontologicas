@@ -3,6 +3,8 @@ title: "Banco completo de respuestas-tipo (12 P&R) — Defensa oral"
 extends: 06-cierre/02-guia-de-defensa.md
 ---
 
+> **Respuestas desactualizadas 2026-09-28 (Fix M4/M5): P7/P8 corregidas; resto pendiente de Jacob.** P7 (p-value) y P8 (behavioral) ya citan 0 strong / 0 `overall_pass` + cohorte weak. Verificar P3 (framing inter-escala), P5 y refs §3.5/§5.4/§8.2 (06-01 reescrito, numeración vieja). Cifras vigentes: Tabla 6.1.1.
+
 # Banco completo de respuestas-tipo para defensa oral (Q&A)
 
 ## Función
@@ -51,13 +53,13 @@ Mapeo directo de las 12 preguntas más probables del tribunal doctoral a respues
 
 ## P7. Su p-value tiene tasa de tipo I empírica de 24%, no 5%. ¿Cómo se sostiene la inferencia?
 
-**Respuesta:** La inferencia del manuscrito **no descansa en el p-value declarado, sino en los umbrales EDI**. Bajo random walk masivo (2000 ejecuciones agregadas N1+V4_06+N5; Wilson 95 % CI sobre 0/2000 = [0, 0.00191]), 0% supera el umbral strong (EDI ≥ 0.30) y sólo 0.6% supera weak. Los 4 casos `overall_pass=True` se sostienen porque están por encima de umbrales que el ruido puro no alcanza. La calibración correcta del p-value es refinamiento metodológico fechado, no condición previa de admisión.
+**Respuesta:** La inferencia del manuscrito **no descansa en el p-value declarado, sino en los umbrales EDI**. Bajo random walk masivo (2000 ejecuciones agregadas N1+V4_06+N5; Wilson 95 % CI sobre 0/2000 = [0, 0.00191]), 0% supera el umbral strong (EDI ≥ 0.30) y sólo 0.6% supera weak. Tras el Fix M4/M5 (2026-09-28) ningún caso supera el gate completo (`trend_ok` bloquea los 4 ex-strong); la inferencia positiva queda en el weak validado 04 (EDI=0.1571, p_block=0.006) y la cohorte weak, por encima de umbrales que el ruido puro no alcanza. La calibración correcta del p-value es refinamiento metodológico fechado, no condición previa de admisión.
 
 **Referencia:** Cap 06-01 §8.2 (L1) + glosario operativo entrada EDI.
 
 ## P8. ¿No es esta tesis "behavioral dynamics renombrado"?
 
-**Respuesta:** Behavioral dynamics es un caso entre 40, y la generalidad de la tesis no descansa en él ni en su réplica multiescalar sintética. Descansa en los casos macro con datos públicos reales (16 deforestación, 04 energía, 20 Kessler, 27 riesgo biológico, y la cohorte weak en epidemiología/urbanización/dinámica institucional) que superan umbrales strong/weak bajo permutación 999. El **corpus inter-escala** 10⁻¹⁰–10²⁰ m (casos 31-40, sondas Lindblad/Plummer/Tyson-Novak) es **sintético** —datos generados por las mismas ODE que las sondas prueban— y se reporta como **conjetura de aplicabilidad** del aparato fuera de su dominio macro original, no como prueba empírica de generalidad. Confundir ambos niveles sería la trampa que la tesis denuncia.
+**Respuesta:** Behavioral dynamics es un caso entre 40, y la generalidad de la tesis no descansa en él ni en su réplica multiescalar sintética. Descansa en los casos macro con datos públicos reales —04 energía (weak validado), 16 deforestación, 18 urbanización, 21 salinización, 22 fósforo (weak post-Fix M4/M5 por `trend_ok=false`), 05 epidemiología, 09 finanzas, 17 océanos, 30 behavioral (weak)—, con 20 Kessler y 24 Microplásticos como falsificaciones locales honestas. El **corpus inter-escala** 10⁻¹⁰–10²⁰ m (casos 31-40, sondas Lindblad/Plummer/Tyson-Novak) es **sintético** —datos generados por las mismas ODE que las sondas prueban— y se reporta como **conjetura de aplicabilidad** del aparato fuera de su dominio macro original, no como prueba empírica de generalidad. Confundir ambos niveles sería la trampa que la tesis denuncia.
 
 **Referencia:** Cap 06-01 §5.4 + `06-cierre/02-guia-de-defensa.md §4` (Trampa 1).
 

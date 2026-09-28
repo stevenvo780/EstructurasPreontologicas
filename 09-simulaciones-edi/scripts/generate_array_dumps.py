@@ -11,6 +11,7 @@ Casos cubiertos en V5.5:
 """
 from __future__ import annotations
 
+import hashlib
 import json
 import sys
 from pathlib import Path
@@ -46,7 +47,10 @@ def _reconstruct_arrays_from_metrics(case_dir: Path, n: int = 100) -> dict | Non
     if rmse_abm <= 0:
         return None
 
-    seed = abs(hash(case_dir.name)) % (2**31)
+    # Fix M3 (2026-09-28): antes abs(hash(name)) — hash() de str depende de
+    # PYTHONHASHSEED y era irreproducible entre procesos. Semilla estable
+    # derivada del nombre (los dumps siguen siendo RECONSTRUIDOS, no reales).
+    seed = int(hashlib.sha256(case_dir.name.encode()).hexdigest()[:8], 16)
     rng = np.random.RandomState(seed)
     obs = np.cumsum(rng.normal(0, 0.5, n))
     obs = (obs - obs.mean()) / (obs.std() + 1e-9) * 1.0  # estandarizar

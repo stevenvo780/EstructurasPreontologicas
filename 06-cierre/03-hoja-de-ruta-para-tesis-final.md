@@ -29,9 +29,9 @@
 - conclusión demostrativa con condiciones de fracaso falsables (capítulo 06-01);
 - guía de defensa oral en tres tiempos (capítulo 06-02);
 - corpus EDI con 30 casos verificados (`09-simulaciones-edi/`);
-- multi-sonda en 3 strong + 5 weak ejecutado (`09-simulaciones-edi/multi_sonda/`);
-- baselines ARIMA + VAR + persistencia + RW ejecutados sobre 7 casos con `primary_arrays.json` (`09-simulaciones-edi/baselines/baselines_report.md`);
-- análisis topológico (Lyapunov + Grassberger-Procaccia + mixing time) ejecutado sobre 7 casos (`09-simulaciones-edi/topology/topology_report.md`);
+- multi-sonda ejecutada sobre 8 casos (`09-simulaciones-edi/multi_sonda/`, era pre-Fix M4/M5);
+- baselines ARIMA + VAR + persistencia + RW ejecutados sobre 7 casos con `primary_arrays.json` reconstruidos — reporte histórico-sintético (`09-simulaciones-edi/baselines/baselines_report.md`, ver banner);
+- análisis topológico (Lyapunov + Grassberger-Procaccia + mixing time) ejecutado sobre 7 casos con arrays reconstruidos — reporte histórico-sintético (`09-simulaciones-edi/topology/topology_report.md`, ver banner);
 - sondas inter-paradigma sobre arrays primarios reales (cierre parcial de F13): convergencia honesta 1/7 bajo \|ΔEDI\| ≤ 0.10 (`09-simulaciones-edi/multi_sonda/secondary_on_primary_arrays.md`);
 - piloto Wolfram Rule 110 ejecutado con EDI 0.55 (`09-simulaciones-edi/wolfram_pilot/`);
 - caso piloto COVID con ablación real ejecutado (`09-simulaciones-edi/covid_pilot/`);

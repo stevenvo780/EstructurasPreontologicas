@@ -1,6 +1,6 @@
 # Reporte de Validación — Deforestación Global (von Thünen Frontier)
 
-- generated_at: 2026-05-17T15:16:40.936052Z
+- generated_at: 2026-09-28T03:25:03.181838Z
 
 ## Fase synthetic
 - **overall_pass**: False
@@ -48,7 +48,7 @@
 **Nivel 1 — Tendencia no confirmada.** Se detecta EDI positivo pero sin significancia estadística. El fenómeno no muestra cierre operativo verificable.
 
 ## Fase real
-- **overall_pass**: True
+- **overall_pass**: False
 
 ### EDI
 - valor: 0.5802
@@ -94,5 +94,5 @@
 - ode_rolling: None
 
 ### Interpretación
-**Nivel 4 — Cierre operativo fuerte.** El EDI se encuentra en el rango válido y el test de permutación confirma significancia estadística, indicando constricción macro→micro robusta. No obstante, estos resultados no implican compromiso ontológico: el cierre es operativo, no sustancial.
+**Nivel 3 — Cierre operativo weak.** La constricción macro es detectable pero no alcanza robustez suficiente para cierre operativo fuerte. El fenómeno muestra grados parciales de organización macro→micro.
 

@@ -956,18 +956,20 @@ def perturb_params(params, pct, seed, keys=None, refinement_clamps=None):
 # ─── Validación C1-C5 ────────────────────────────────────────────────────────
 
 def evaluate_c1(abm_val, ode_val, obs_val, obs_std,
-                threshold_factor=1.0, corr_threshold=0.7,
+                threshold_factor=1.0, corr_threshold=0.3,
                 reduced_val=None):
-    """C1 Convergence — criterio relativo + absoluto relajado.
-    
-    Aprueba si se cumple AL MENOS UNA de dos condiciones:
-      (A) Relativa: el modelo acoplado (ABM+ODE) tiene menor RMSE que el
-          reducido (ABM sin macro), es decir, el ODE aporta información.
-      (B) Absoluta relajada: RMSE < 2·obs_std Y corr > 0.3
-          (umbral anterior era 1·obs_std y corr > 0.7, demasiado estricto
-          para datos z-normalizados con ruido).
-    
-    Si reduced_val no se proporciona, solo se evalúa (B).
+    """C1 Convergence — criterio relativo para el gate + absoluto diagnóstico.
+
+    (A) Relativa (gate): el modelo acoplado (ABM+ODE) supera al reducido
+        (ABM sin macro) por un margen mayor que ruido numérico (Fix M4
+        2026-09-28: antes `> 0` aceptaba mejoras ~1e-14).
+    (B) Absoluta relajada (DIAGNÓSTICA, fuera del gate desde Fix M4/M6
+        2026-09-28): RMSE < 2·threshold Y corr > corr_threshold. La rama
+        (B) no exige aporte ODE, por lo que no puede confirmar convergencia
+        con aporte macro (04-debates/05 M6). Se reporta pero no aprueba C1.
+
+    Si reduced_val no se proporciona, (A) es False y C1 falla (antes caía
+    a (B) silenciosamente).
     """
     err_abm = rmse(abm_val, obs_val)
     err_ode = rmse(ode_val, obs_val)
@@ -975,28 +977,32 @@ def evaluate_c1(abm_val, ode_val, obs_val, obs_std,
     corr_ode = correlation(ode_val, obs_val)
     threshold = threshold_factor * max(obs_std, 0.1)
 
-    # Condición (A): relativa — acoplado mejor que reducido
+    # Condición (A): relativa — acoplado mejor que reducido, con epsilon
+    # numérico relativo (1e-9 del RMSE reducido, piso 1e-12 absoluto).
     if reduced_val is not None:
         err_reduced = rmse(reduced_val, obs_val)
         relative_improvement = err_reduced - err_abm
-        c1_relative = relative_improvement > 0  # cualquier mejora cuenta
+        eps = max(1e-9 * max(err_reduced, 0.0), 1e-12)
+        c1_relative = relative_improvement > eps
     else:
         err_reduced = None
         relative_improvement = None
         c1_relative = False
 
-    # Condición (B): absoluta relajada (2× threshold, corr 0.3)
-    c1_absolute = (err_abm < 2.0 * threshold and corr_abm > 0.3)
+    # Condición (B): absoluta relajada — solo diagnóstica (M6).
+    c1_absolute = (err_abm < 2.0 * threshold and corr_abm > corr_threshold)
 
-    # C1 pasa si cumple (A) o (B)
-    c1 = c1_relative or c1_absolute
+    # C1 del gate: SOLO (A). (B) se reporta como fallback diagnóstico.
+    c1 = c1_relative
 
     return c1, {
         "rmse_abm": err_abm, "rmse_ode": err_ode,
         "corr_abm": corr_abm, "corr_ode": corr_ode,
         "threshold": threshold,
+        "corr_threshold_used": corr_threshold,
         "c1_relative": c1_relative,
         "c1_absolute": c1_absolute,
+        "c1_via_absolute_only": (not c1_relative) and c1_absolute,
         "rmse_reduced": err_reduced,
         "relative_improvement": relative_improvement,
     }
@@ -1251,7 +1257,7 @@ class CaseConfig:
                  real_start="1990-01-01", real_end="2022-01-01",
                  real_split="2006-01-01",
                  ode_noise=0.001, base_noise=0.001,
-                 corr_threshold=0.7, threshold_factor=1.0,
+                 corr_threshold=0.3, threshold_factor=1.0,
                  extra_base_params=None, loe=1, n_runs=5,
                  driver_cols=None, edi_min=0.30,
                  use_topology=False, topology_type="small_world",
@@ -1934,15 +1940,23 @@ def evaluate_phase(config, df, start_date, end_date, split_date,
     # Justificación: las estructuras pre-ontológicas son constructos metaestables con fronteras
     # difusas (Symploké). sym_ok (internal >= external) ya verifica cohesión.
     # cr_valid > 2.0 es demasiado restrictivo (3/29) para emergencia no-fuerte.
+    # Fix M4/M5 (2026-09-28): el gate exige ausencia de sesgo de tendencia.
+    # trend_bias["warning"] = ratio<0.5 y trend_r2>0.7, i.e. la mayoría del
+    # EDI viene de predecir una recta. Sin este término, fases 100%
+    # tendencia (04syn, 05syn, 16/18/21/22 real) pasaban overall_pass=True.
+    trend_ok = not trend_bias.get("warning", False)
     overall = all([c1, c2, c3, c4, c5, sym_ok, non_local_ok, persist_ok,
                    emergence_ok, coupling_ok, not rmse_fraud, edi_valid,
-                   edi_significant])
+                   edi_significant, trend_ok])
 
-    # Fix P5: Breakdown explícito de los 13 criterios para overall_pass
+    # Fix P5: Breakdown explícito de los criterios para overall_pass
+    # (13 + trend_ok desde Fix M4/M5 2026-09-28).
     criteria_breakdown = {
         "c1_convergence": c1,
         "c1_relative": c1_detail.get("c1_relative", False),
         "c1_absolute": c1_detail.get("c1_absolute", False),
+        "c1_via_absolute_only": c1_detail.get("c1_via_absolute_only", False),
+        "trend_ok": trend_ok,
         "c2_robustness": c2,
         "c3_replication": c3,
         "c4_validity": c4,
@@ -1973,7 +1987,7 @@ def evaluate_phase(config, df, start_date, end_date, split_date,
     if is_falsification:
         emergence_category = "falsification"
         emergence_nivel = None  # Control — no se clasifica
-    elif edi_valid and edi_significant:
+    elif edi_valid and edi_significant and trend_ok:
         emergence_category = "strong"
         emergence_nivel = 4
     elif edi_val > 0.10 and edi_significant:

@@ -209,7 +209,7 @@ Las cinco condiciones operativas son condiciones de admisión cualitativa. Para 
 3. **Embedding de Takens** (Takens, F., "Detecting strange attractors in turbulence", en *Dynamical Systems and Turbulence, Warwick 1980*, eds. D. Rand y L.-S. Young, *Lecture Notes in Mathematics* vol. 898, Springer, Berlin, 1981, pp. 366–381; referencia secundaria: PDF no disponible en `07-bibliografia/`, paginación verbatim pendiente — el teorema de embedding de retardos enunciado en ese trabajo justifica la reconstrucción) con dimensión `dim=5` y retardo τ obtenido por primer cero de la autocorrelación. Reconstruye el espacio de fase a partir de la serie escalar observada cuando el sistema completo no es directamente medible.
 4. **Tiempo de mezcla**: número de pasos hasta que la autocorrelación cae por debajo de 1/e, indicando independencia estadística aproximada entre puntos separados temporalmente.
 
-La implementación canónica está en `09-simulaciones-edi/common/topology.py` con tests sobre 7 casos del corpus que tienen `primary_arrays.json` disponible (apéndice técnico §"Análisis topológico", reporte completo en `09-simulaciones-edi/topology/topology_report.{json,md}`):
+La implementación canónica está en `09-simulaciones-edi/common/topology.py` con tests sobre 7 casos del corpus que tienen `primary_arrays.json` disponible — arrays RECONSTRUIDOS (`verified_real_data=False`), no primarios reales (apéndice técnico §"Análisis topológico", reporte histórico-sintético en `09-simulaciones-edi/topology/topology_report.{json,md}`, ver banner de provenance):
 
 **Tabla 2.1.4.**
 

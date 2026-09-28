@@ -1,7 +1,7 @@
 {
   "case_id": "16_caso_deforestacion",
   "version_protocolo": "V5.5",
-  "generated_at": "2026-05-17T15:16:40Z",
+  "generated_at": "2026-09-28T03:25:03Z",
   "n": 13,
   "arrays": {
     "obs": [
@@ -32,7 +32,7 @@
       -4.354362493828822,
       -4.624230936591026,
       -4.8969182130322295,
-      -5.173221242221794
+      -5.1732212422217945
     ],
     "abm_no_ode": [
       -1.619608560172041,
@@ -44,8 +44,8 @@
       -2.3687541437686237,
       -2.49272256551993,
       -2.616816211720086,
-      -2.740871037723341,
-      -2.865000333160276,
+      -2.7408710377233416,
+      -2.8650003331602765,
       -2.988974205003461,
       -3.113052126242421
     ],
@@ -82,8 +82,8 @@
   },
   "hashes": {
     "obs": "a0dc2fae6a3c35f63fcc40e33d9465383f7d5b0dceefb8752f3dd61ae8821b14",
-    "abm_coupled": "78e69ace768f50aa63efb0d53b4cc1f33cb0b4fd31f3c527a664d1061f16f803",
-    "abm_no_ode": "9e1b71fd5d035975a1e2366e4d1fca36ea739b4b29f5cca7665e0bc3c1af550e",
+    "abm_coupled": "e2c55d56115de66afb9e8854a1c581026e53bd80935fa2b0de7eb4e71cc41b25",
+    "abm_no_ode": "670058fef0eb3c878ff0c8334e4c664a7c1092fe17ebc969a9f62f6f76a36236",
     "ode_pred": "bc97cf4ddda7ef1ba2d5a13f207bc9d63b479d7636309eaff7877d2b83ba0a79",
     "forcing": "4efad3122c49f4ebbb7cf768192663801cd1e410228a7083aecdb2c39f82ae05"
   },
@@ -92,5 +92,5 @@
     "verified_real_data": true,
     "case": "Deforestación Global (von Thünen Frontier)"
   },
-  "aggregate_hash": "b6b288cfd2de1c13a89c533043833d077ad3145457cd07f80daddf0b9b919a50"
+  "aggregate_hash": "f325c824b0486aa434c18a28050862d895dcc024116fd9de8e2957c92d51ae6a"
 }

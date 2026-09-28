@@ -1,5 +1,7 @@
 # Reporte de baselines (F15)
 
+> **HISTÓRICO-SINTÉTICO (era pre-B-T2.1, 2026-04-29):** ejecutado sobre series sintéticas n=100, NO sobre arrays primarios reales. Citado en prosa solo con esta calificación. Pendiente: re-ejecución sobre arrays reales (bloqueado por n real 6-13, insuficiente para ARIMA/VAR).
+
 Comparación del modelo acoplado EDI (`abm_coupled`) contra baselines no-estructurales: persistencia, random walk con drift, ARIMA(1,1,1)/(1,0,1), VAR(1) con forcing exógeno.
 
 **Casos procesados:** 7

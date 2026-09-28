@@ -1,14 +1,14 @@
 {
   "case": "Energ\u00eda (Consumo Per C\u00e1pita) \u2014 B-T2.1 Refrescado OWID Renovables",
-  "generated_at": "2026-05-17T15:44:48.169728Z",
+  "generated_at": "2026-09-28T03:24:17.017848Z",
   "git": {
-    "commit": "66ed88c493cf30b88e93204b111c17ced82efd08",
+    "commit": "4656701c863d79710c342ce9c14b570ad2e7920d",
     "dirty": true
   },
   "phases": {
     "synthetic": {
       "phase": "synthetic",
-      "overall_pass": true,
+      "overall_pass": false,
       "data": {
         "start": "1980-01-01",
         "end": "2019-01-01",
@@ -28,7 +28,7 @@
         "ode_alpha": 0.001,
         "ode_beta": 0.001,
         "assimilation_strength": 0.0,
-        "calibration_rmse": 0.28657762733847697,
+        "calibration_rmse": 0.2865776273384768,
         "ode_rolling": null
       },
       "forcing": {
@@ -38,27 +38,27 @@
       },
       "errors": {
         "rmse_abm": 1.5252972523421895,
-        "rmse_abm_no_ode": 2.276027933687563,
-        "rmse_ode": 5.340272474573621,
+        "rmse_abm_no_ode": 2.2760279336875633,
+        "rmse_ode": 5.340272474573622,
         "rmse_reduced": 4.95884178115948,
         "threshold": 1.185367658484158
       },
       "correlations": {
-        "abm_obs": 0.9221865376343504,
+        "abm_obs": 0.9221865376343503,
         "ode_obs": 0.9231316960376814
       },
       "edi": {
-        "value": 0.3298424725961331,
+        "value": 0.3298424725961332,
         "bootstrap_mean": 0.33183893036310685,
-        "ci_lo": 0.2879732772532249,
-        "ci_hi": 0.3796069087814028,
+        "ci_lo": 0.2879732772532248,
+        "ci_hi": 0.3796069087814031,
         "valid": true,
-        "weighted_value": 0.19790548355767984,
+        "weighted_value": 0.19790548355767992,
         "loe_factor": 0.6,
-        "permutation_pvalue": 0.027,
-        "permutation_null_95": 0.29431746078838655,
+        "permutation_pvalue": 0.0,
+        "permutation_null_95": 0.23294835506355976,
         "permutation_significant": true,
-        "permutation_method": "block",
+        "permutation_method": "iid",
         "trend_bias": {
           "detrended_edi": -0.0104,
           "trend_ratio": -0.032,
@@ -70,42 +70,42 @@
         "pass": true,
         "detail": {
           "relaxation_time": 6,
-          "peak_impact": 2.0,
+          "peak_impact": 2.000000000000001,
           "shock_step": 30,
           "recovered": true
         }
       },
       "noise_sensitivity": {
         "stable": true,
-        "cv": 1.1283121066892328e-05,
+        "cv": 1.1283121067016662e-05,
         "edi_mean": 0.32984112988401904,
-        "edi_std": 3.721637401321944e-06,
+        "edi_std": 3.721637401362954e-06,
         "monotonic_decrease": false
       },
-      "effective_information": 0.23456140935182068,
+      "effective_information": 0.2345614093518209,
       "symploke": {
         "internal": 0.9994162787776316,
-        "external": 0.993445596057508,
+        "external": 0.9934455960575082,
         "cr": 1.0060100751805818,
         "pass": true,
         "cr_valid": false
       },
       "non_locality": {
-        "dominance_share": 0.001600720172626744,
+        "dominance_share": 0.0016007201726267446,
         "pass": true
       },
       "persistence": {
-        "model_var": 0.04927659543657399,
+        "model_var": 0.049276595436574214,
         "obs_var": 0.16377518131412314,
-        "model_std": 0.22198332242890229,
+        "model_std": 0.22198332242890279,
         "obs_std": 0.4046914643455223,
-        "std_ratio": 0.5485248441992706,
+        "std_ratio": 0.5485248441992718,
         "threshold_std": 5.0,
         "pass": true
       },
       "emergence": {
         "err_reduced": 4.95884178115948,
-        "err_abm_no_ode": 2.276027933687563,
+        "err_abm_no_ode": 2.2760279336875633,
         "err_abm": 1.5252972523421895,
         "threshold": 0.2370735316968316,
         "pass": true,
@@ -120,27 +120,29 @@
       "c5_uncertainty": true,
       "c1_detail": {
         "rmse_abm": 1.5252972523421895,
-        "rmse_ode": 5.340272474573621,
-        "corr_abm": 0.9221865376343504,
+        "rmse_ode": 5.340272474573622,
+        "corr_abm": 0.9221865376343503,
         "corr_ode": 0.9231316960376814,
         "threshold": 1.185367658484158,
+        "corr_threshold_used": 0.5,
         "c1_relative": true,
         "c1_absolute": true,
-        "rmse_reduced": 2.276027933687563,
-        "relative_improvement": 0.7507306813453734
+        "c1_via_absolute_only": false,
+        "rmse_reduced": 2.2760279336875633,
+        "relative_improvement": 0.7507306813453738
       },
       "c2_detail": {
-        "mean_delta": 0.10418423663856669,
-        "var_delta": 0.04459829919471288,
-        "relative_mean": 0.03089987215627553,
-        "relative_var": 0.04459829919471288
+        "mean_delta": 0.10418423663856677,
+        "var_delta": 0.04459829919471279,
+        "relative_mean": 0.03089987215627556,
+        "relative_var": 0.04459829919471279
       },
       "c3_detail": {
-        "persistence_1": 0.04927659543657399,
-        "persistence_2": 0.04924374380202956
+        "persistence_1": 0.049276595436574214,
+        "persistence_2": 0.04924374380202978
       },
       "c4_detail": {
-        "diff": 0.3152965419188005
+        "diff": 0.3152965419188014
       },
       "c5_detail": {
         "sensitivity_min": 3.271451967989053,
@@ -160,6 +162,8 @@
         "c1_convergence": true,
         "c1_relative": true,
         "c1_absolute": true,
+        "c1_via_absolute_only": false,
+        "trend_ok": false,
         "c2_robustness": true,
         "c3_replication": true,
         "c4_validity": true,
@@ -174,11 +178,11 @@
         "cr_valid": false
       },
       "emergence_taxonomy": {
-        "category": "strong",
-        "nivel": 4,
+        "category": "weak",
+        "nivel": 3,
         "ode_quality": "good",
         "ode_obs_corr": 0.9231316960376814,
-        "interpretation": "Cierre operativo fuerte (Nivel 4): la macro constri\u00f1e significativamente la din\u00e1mica micro"
+        "interpretation": "Cierre operativo d\u00e9bil (Nivel 3): se\u00f1al macro significativa pero bajo umbral robusto"
       },
       "synthetic_meta": {
         "model": "mean_reversion",
@@ -336,10 +340,10 @@
         "valid": false,
         "weighted_value": 0.09428540598502752,
         "loe_factor": 0.6,
-        "permutation_pvalue": 0.006,
-        "permutation_null_95": 0.15057264187959052,
+        "permutation_pvalue": 0.016016016016016016,
+        "permutation_null_95": 0.15280716558083565,
         "permutation_significant": true,
-        "permutation_method": "block",
+        "permutation_method": "iid",
         "trend_bias": {
           "detrended_edi": null,
           "trend_ratio": null,
@@ -405,8 +409,10 @@
         "corr_abm": 0.5970672622141003,
         "corr_ode": 0.5100782655357745,
         "threshold": 0.2925335499215093,
+        "corr_threshold_used": 0.5,
         "c1_relative": true,
         "c1_absolute": false,
+        "c1_via_absolute_only": false,
         "rmse_reduced": 1.7462207184185181,
         "relative_improvement": 0.27440521562592735
       },
@@ -441,6 +447,8 @@
         "c1_convergence": true,
         "c1_relative": true,
         "c1_absolute": false,
+        "c1_via_absolute_only": false,
+        "trend_ok": true,
         "c2_robustness": true,
         "c3_replication": true,
         "c4_validity": true,
@@ -463,6 +471,7 @@
       }
     }
   },
+  "config_file": "case_config_b_t2_1.json",
   "primary_arrays_meta": {
     "phase": "real",
     "n": 11,

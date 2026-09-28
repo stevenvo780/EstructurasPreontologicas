@@ -6,6 +6,8 @@ header: "Estructuras Pre-Ontológicas — Jacob Agudelo + Steven Vallejo"
 footer: "U. de Antioquia · 2026"
 ---
 
+> **Slides 30min desactualizados 2026-09-28 (Fix M4/M5).** Listas '6 strong con gate', '5 casos strong', '2/4 overall_pass' y EDI 0.650/0.602/0.353/0.333/0.806 son pre-Fix. Vigente: 0 strong / 0 pass; weak validado 04 (0.1571, p_block 0.006). Re-hacer slides con Tabla 6.1.1 (Jacob).
+
 <!-- STORYBOARD-IA pendiente firma autoral Jacob -->
 <!-- Derivado de 06-cierre/_extendido/storyboard-defensa.md (versión 30 min, 25 slides) -->
 <!-- Toda cifra es literal contra metrics.json y prosa de cap 06-01 -->

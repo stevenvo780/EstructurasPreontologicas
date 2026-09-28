@@ -3,6 +3,8 @@ title: "Versiones extendidas (5min, 15min) — Defensa oral"
 extends: 06-cierre/02-guia-de-defensa.md
 ---
 
+> **Versiones desactualizadas 2026-09-28 (Fix M4/M5) + NOTA: condición de falsación (1) 'los 4 overall_pass se desmoronan' SE DISPARÓ** (0 pass vigentes). Bloque '6 strong con gate' y conteos weak/trend/null son pre-Fix. Reescritura + decisión Jacob sobre condición (1).
+
 # Versiones extendidas de defensa oral (5 min y 15 min)
 
 ## Función

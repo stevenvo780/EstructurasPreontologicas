@@ -1,6 +1,6 @@
 # Reporte de Validación — Salinización de Suelos (Richards Bilineal)
 
-- generated_at: 2026-05-17T15:16:42.435353Z
+- generated_at: 2026-09-28T03:25:14.177689Z
 
 ## Fase synthetic
 - **overall_pass**: False
@@ -48,7 +48,7 @@
 **Nivel 0 — Sin cierre operativo.** No se detecta constricción macro→micro significativa con los datos y parámetros actuales.
 
 ## Fase real
-- **overall_pass**: True
+- **overall_pass**: False
 
 ### EDI
 - valor: 0.5152
@@ -94,13 +94,12 @@
 - ode_rolling: None
 
 ### Interpretación
-**Nivel 4 — Cierre operativo fuerte.** El EDI se encuentra en el rango válido y el test de permutación confirma significancia estadística, indicando constricción macro→micro robusta. No obstante, estos resultados no implican compromiso ontológico: el cierre es operativo, no sustancial.
+**Nivel 3 — Cierre operativo weak.** La constricción macro es detectable pero no alcanza robustez suficiente para cierre operativo fuerte. El fenómeno muestra grados parciales de organización macro→micro.
 
-## Discrepancia con pre-registro (iter 11-12)
+## Discrepancia con pre-registro (generada automáticamente)
 
-- **Predicción pre-registro:** Null (EDI esperado ≈ 0, sin cierre operativo).
-- **Resultado real (phases.real):** Strong — EDI = 0.5152, CI 95% = [0.3367, 0.6681], válido (rango 0.30-0.90).
-- **Diferencia:** |dEDI| ≈ 0.497; dirección: upgrade fuerte desde Null a Strong; el caso muestra cierre operativo robusto donde el pre-registro predijo ausencia.
-- **Honestidad declarativa:** DISCREPANCIA RECONOCIDA. Lakatos: falsación honesta = virtud, no falla. Upgrade Null → Strong: la sonda Richards bilineal sí captura la dinámica de salinización donde el pre-registro anticipaba un null.
-- **PENDIENTE confirmación bajo block-permutation (adversarial iter 12)** — el upgrade no se considera consolidado hasta que iter 13 termine la auditoría con permutación por bloques (controla autocorrelación temporal).
+- **Predicción pre-registro:** Null (EDI esperado ≈ 0.0180, margen |ΔEDI| ≤ 0.05).
+- **Resultado real (phases.real):** Strong — EDI = 0.5152, p_perm = 0.0000, CI 95% = [0.3367, 0.6681].
+- **Diferencia:** |ΔEDI| = 0.4972; dirección: upgrade (Null → Strong).
+- **Declaración:** DISCREPANCIA RECONOCIDA. Contraevidencia declarada según PRE_REGISTRO.md §6: la discrepancia honesta es virtud, no fallo.
 

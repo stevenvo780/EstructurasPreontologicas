@@ -6,6 +6,8 @@ header: "Estructuras Pre-Ontológicas — Jacob Agudelo + Steven Vallejo"
 footer: "U. de Antioquia · 2026"
 ---
 
+> **Slides 5min desactualizados 2026-09-28 (Fix M4/M5).** 'Pipeline en 5 strong' y lista '6 strong con gate' son pre-Fix. Decir ahora: pipeline ejecutable en 30 casos, 0 strong robustos, 1 weak validado (04), 9 weak, 4 falsificaciones locales. Re-hacer (Jacob).
+
 <!-- STORYBOARD-IA pendiente firma autoral Jacob -->
 <!-- Derivado de 06-cierre/_extendido/storyboard-defensa.md (versión 5 min, 9 slides) -->
 <!-- Toda cifra es literal contra metrics.json y prosa de cap 06-01 -->

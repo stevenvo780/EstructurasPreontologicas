@@ -221,20 +221,26 @@ def _import_module_from_dir(module_name: str, case_src_dir: str):
 
 # ─── Runner principal ────────────────────────────────────────────────────────
 
-def run_case(case_src_dir: str):
+def run_case(case_src_dir: str, config_name: str | None = None):
     """
     Ejecuta validación completa de un caso.
 
     Args:
         case_src_dir: ruta absoluta al directorio src/ del caso
+        config_name: fichero de config alternativo (p.ej. case_config_b_t2_1.json).
+            Si es None, usa env CASE_CONFIG_JSON o el canónico case_config.json.
+            (Fix linaje B-T2.1 2026-09-28: antes el path estaba hardcodeado y el
+            régimen estricto exigía swap manual indocumentado del fichero.)
     """
     from hybrid_validator import run_full_validation, write_outputs
 
     case_src_dir = os.path.abspath(case_src_dir)
     case_dir = os.path.dirname(case_src_dir)  # NN_caso_X/
 
-    # 1. Leer case_config.json
-    config_path = os.path.join(case_dir, "case_config.json")
+    # 1. Leer case_config.json (o alternativo B-T2.1)
+    if config_name is None:
+        config_name = os.environ.get("CASE_CONFIG_JSON", "case_config.json")
+    config_path = os.path.join(case_dir, config_name)
     if not os.path.exists(config_path):
         raise FileNotFoundError(f"No se encontró {config_path}")
 
@@ -329,6 +335,8 @@ def run_case(case_src_dir: str):
         config, load_real_fn, make_synthetic_fn,
         simulate_abm_fn, simulate_ode_fn,
     )
+    # Linaje de régimen (Fix B-T2.1 2026-09-28): qué config produjo este run.
+    results["config_file"] = config_name
 
     # 6. Escribir outputs
     out_dir = os.path.join(case_dir, "outputs")
