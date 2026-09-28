@@ -64,6 +64,8 @@ El corpus agregado prueba que un vocabulario común puede formularse y ejecutars
 
 ## Casos del corpus EDI
 
+*Alcance (2026-09-28): los Bloques III–VI muestran una selección ilustrativa con regímenes notables, no el corpus exhaustivo (conteos autoritativos: Tabla 5.7.1, cap 06-01 §1 y `./tesis audit`).*
+
 ### Bloque I — Strong con gate completo (Nivel 4) — reconciliación canónica ↔ B-T2.1
 
 **Tabla A.5.3.**
@@ -134,6 +136,8 @@ El corpus agregado prueba que un vocabulario común puede formularse y ejecutars
 | 11 | Movilidad (tráfico aéreo / TomTom) | 0.0599 | 0.9219 | Trend Nivel 1 bajo datos TomTom reales; CI=[-0.392, 0.205]. Ruido domina señal de cierre bajo sonda Bilinear diffusion. |
 | 14 | Postverdad (desinformación) | 0.0022 | 0.9850 | Trend Nivel 1 bajo datos reales (sonda SIS contagion); CI=[0.001, 0.005]. Magnitud trivial, p no significativo. Reclasificada desde Bloque III el 2026-09-28 (valor previo 0.2428 rancio, ver nota Tabla 5.7.5). |
 | 25 | Acuíferos | 0.0035 | 0.1862 | Trend Nivel 1 bajo datos heterogéneos; CI=[0.002, 0.005]. Magnitud trivial, p no significativo. Reclasificado desde Bloque VI el 2026-09-28 (valor previo -0.1462 rancio, sin régimen versionado). |
+| 28 | Fuga de cerebros (multi-driver WB) | 0.0298 | 0.9690 | Trend Nivel 1 bajo datos WB multi-driver (researchers, enrollment, remittances, GDP pc, net migration; CI=[-0.095, +0.159], val_steps=18). EDI>0 sin significancia = trend por regla máquina (`hybrid_validator.py:2011-2012`); reclasificado desde Bloque VI el 2026-09-28. Candidato a panel bilateral origen-destino. |
+| 01 | Clima regional | 0.0030 | n.s. (rerun) | Trend Nivel 1 bajo re-ejecución real no versionada (sonda Budyko-Sellers, EDI>0 sin significancia, `overall_pass=False`); `metrics.json` versionado = 0.2581 sintético con receta perdida (también trend máquina) — ver B-T-NEW-CLIMA-DATA. |
 
 ### Bloque VI — Null (Nivel 0)
 
@@ -143,16 +147,14 @@ El corpus agregado prueba que un vocabulario común puede formularse y ejecutars
 
 | # | Caso | EDI | Comentario |
 |---|------|----:|-----------|
-| 01 | Clima regional | 0.0030 | Null bajo re-ejecución real no versionada (sonda Budyko-Sellers, `overall_pass=False`); `metrics.json` versionado = 0.2581 sintético con receta perdida — ver B-T-NEW-CLIMA-DATA. Valor previo (-0.0007) sin fuente versionada, retirado. |
 | 02 | Conciencia global | -0.0121 | Null genuino bajo datos reales (p_perm=0.315, CI=[-0.016, -0.010]; sonda dinámica colectiva). Consistente con LoE=1 especulativa. |
 | 03 | Contaminación PM2.5 | -0.0109 | Null genuino bajo datos World Bank PM2.5 reales (p_perm=0.616, sonda dispersión-decaimiento). |
 | 09 | Finanzas globales | -0.0020 | Null/artefacto bajo régimen detrended honesto (raw=+0.1027 con `trend_r2=0.979`, warning activo). |
 | 12 | Paradigmas (ciencia) | -0.1715 | Reflexividad; null bajo régimen real-phase canónico (valor previo -0.1536 rancio, corregido 2026-09-28). |
 | 29 | IoT | -0.8989 | Reflexividad técnica (régimen real-phase canónico; valor previo -0.8760 rancio, corregido 2026-09-28). |
 | 15 | Wikipedia (atención colectiva — "Climate change" EN) | -0.0038 | Null genuino bajo datos Wikimedia pageviews mensuales 2015–2024 (p_perm=0.769, CI=[-0.023, -0.002]). Magnitud trivial domina (`\|EDI\|<0.05`). |
-| 28 | Fuga de cerebros (multi-driver WB) | 0.0298 | Null genuino bajo datos WB multi-driver (researchers, enrollment, remittances, GDP pc, net migration; p_perm=0.969, CI=[-0.095, +0.159], val_steps=18). Candidato a panel bilateral origen-destino para próxima ejecución. |
 
-Convención para Bloque VI: `\|EDI\|<0.05` y `p_perm>0.05` cubren los nulls clásicos; el caso 15 con `p_perm>0.05` y CI bootstrap [-0.023, -0.002] que excluye cero por la izquierda con magnitud trivial se declara Null genuino porque la magnitud trivial domina sobre la exclusión bootstrap marginal.
+Convención (gana el código — `hybrid_validator.py:2008-2016`, corregida 2026-09-28): `trend` = EDI>0 sin significancia estadística; `null` = EDI≤0. La magnitud trivial (\|EDI\|<0.05) se declara en el comentario pero no reclasifica: la convención previa (\|EDI\|<0.05 + p>0.05 → null) contradecía la regla máquina y se aplicaba inconsistentemente (casos 28/01 en null vs 11/13 en trend). El caso 15 (EDI=-0.0038≤0) sigue null bajo ambas reglas.
 
 ### Bloque VI.5 — Falsificación local del aparato (sonda inadecuada con CI que excluye cero por la izquierda)
 
