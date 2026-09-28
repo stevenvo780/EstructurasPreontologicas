@@ -1,0 +1,29 @@
+{
+  "axis": "N (No-localidad / acoplamiento inter-estructura)",
+  "method": "proxy_rmse_reduction_ar1_ols_lagged_driver (ver common_coupling.py); N_axis = media de edi_coupling entre los pares registrados",
+  "pairs": [
+    {
+      "a": "16_caso_deforestacion",
+      "b": "01_caso_clima (temp regional)",
+      "edi_coupling": 0.004565328043241044,
+      "method": "proxy_rmse_reduction_ar1_ols_lagged_driver",
+      "n": 31,
+      "years_overlap": [
+        1992,
+        2022
+      ]
+    },
+    {
+      "a": "19_caso_acidificacion_oceanica",
+      "b": "22_caso_fosforo",
+      "edi_coupling": -0.0024254264447091892,
+      "method": "proxy_rmse_reduction_ar1_ols_lagged_driver",
+      "n": 31,
+      "years_overlap": [
+        1990,
+        2020
+      ]
+    }
+  ],
+  "N_axis": 0.0010699507992659274
+}

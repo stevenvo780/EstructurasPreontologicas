@@ -1,0 +1,17 @@
+{
+  "n": 31,
+  "n_train": 21,
+  "n_test": 9,
+  "rmse_without_driver": 0.002013269939293777,
+  "rmse_with_driver": 0.002004078701581305,
+  "edi_coupling": 0.004565328043241044,
+  "method": "proxy_rmse_reduction_ar1_ols_lagged_driver",
+  "pair": {
+    "a": "16_caso_deforestacion",
+    "b": "01_caso_clima (temp regional)"
+  },
+  "years_overlap": [
+    1992,
+    2022
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "axis": "V (Viscosidad / dependencia-instrumento)",
+  "method": "dispersion del EDI (fase real cuando existe, si no sintetica) entre >=2 sondas del mismo fenomeno (clima) que difieren SOLO en el observable/instrumento (co2 vs temperatura) o en la ventana/agregacion temporal (mensual interpolado vs anual nativo vs suavizado decadal). V_axis = desviacion estandar poblacional del EDI entre sondas.",
+  "probes": [
+    {
+      "name": "base_temperatura_mensual",
+      "edi": 0.2581462463989291
+    },
+    {
+      "name": "co2_instrument",
+      "edi": 0.18325468983806859
+    },
+    {
+      "name": "annual_window",
+      "edi": 0.44846240327449854
+    },
+    {
+      "name": "decadal_smoothed",
+      "edi": 0.5363436328538895
+    }
+  ],
+  "edi_spread": 0.35308894301582094,
+  "V_axis": 0.1418522149326898
+}

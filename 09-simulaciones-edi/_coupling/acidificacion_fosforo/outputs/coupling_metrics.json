@@ -1,0 +1,17 @@
+{
+  "n": 31,
+  "n_train": 21,
+  "n_test": 9,
+  "rmse_without_driver": 3.9549366167095217,
+  "rmse_with_driver": 3.9645290245668376,
+  "edi_coupling": -0.0024254264447091892,
+  "method": "proxy_rmse_reduction_ar1_ols_lagged_driver",
+  "pair": {
+    "a": "19_caso_acidificacion_oceanica",
+    "b": "22_caso_fosforo"
+  },
+  "years_overlap": [
+    1990,
+    2020
+  ]
+}

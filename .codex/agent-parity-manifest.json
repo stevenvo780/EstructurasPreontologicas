@@ -1,0 +1,243 @@
+{
+  "schemaVersion": 1,
+  "generator": "agent-parity",
+  "workspace": "/workspace/personal/EstructurasPreontologicas",
+  "artifacts": [
+    {
+      "source": "/workspace/personal/EstructurasPreontologicas/.claude/commands/adversarial.md",
+      "target": "/workspace/personal/EstructurasPreontologicas/.agents/skills/adversarial/SKILL.md",
+      "sha256": "ec8e8a771687dc524884ab79d29d6a3f437364e87aa785a5778a9bb73f1d7693"
+    },
+    {
+      "source": "/workspace/personal/EstructurasPreontologicas/.claude/commands/adversarial.md",
+      "target": "/workspace/personal/EstructurasPreontologicas/.agents/skills/adversarial/agents/openai.yaml",
+      "sha256": "250cd43641487e39b1033b343cfddc479ca87580c7afe9cb3e0d2fc3c0c319c4"
+    },
+    {
+      "source": "/workspace/personal/EstructurasPreontologicas/.claude/commands/engage-author.md",
+      "target": "/workspace/personal/EstructurasPreontologicas/.agents/skills/engage-author/SKILL.md",
+      "sha256": "7039cfd56d2105055042b733e6a3e7c53b31dbd51e741bcd15ed6a9cf8f9f37c"
+    },
+    {
+      "source": "/workspace/personal/EstructurasPreontologicas/.claude/commands/engage-author.md",
+      "target": "/workspace/personal/EstructurasPreontologicas/.agents/skills/engage-author/agents/openai.yaml",
+      "sha256": "53f52e6c8f7a1bc38fe0b6f46a001d380f46d7c83a59fba7cafc92967cbb4f80"
+    },
+    {
+      "source": "/workspace/personal/EstructurasPreontologicas/.claude/commands/fetch-biblio.md",
+      "target": "/workspace/personal/EstructurasPreontologicas/.agents/skills/fetch-biblio/SKILL.md",
+      "sha256": "81e5a55f96350b21ef2737fd8b58124cb880d2d9bafb84536b3e03ceb70972eb"
+    },
+    {
+      "source": "/workspace/personal/EstructurasPreontologicas/.claude/commands/fetch-biblio.md",
+      "target": "/workspace/personal/EstructurasPreontologicas/.agents/skills/fetch-biblio/agents/openai.yaml",
+      "sha256": "a54c00751c8c6f369ab9f5fbcfc05f7de24d2b762d666826c76389762a5c7211"
+    },
+    {
+      "source": "/workspace/personal/EstructurasPreontologicas/.claude/commands/harness-pass.md",
+      "target": "/workspace/personal/EstructurasPreontologicas/.agents/skills/harness-pass/SKILL.md",
+      "sha256": "aae75eb173c78387b198dbe252d3663539fbec952867700e517b10acd21db420"
+    },
+    {
+      "source": "/workspace/personal/EstructurasPreontologicas/.claude/commands/harness-pass.md",
+      "target": "/workspace/personal/EstructurasPreontologicas/.agents/skills/harness-pass/agents/openai.yaml",
+      "sha256": "7f04e659b4164aa8b04ba46b483ac752590c2ee20f75b7f167de8dca1f52f8fb"
+    },
+    {
+      "source": "/workspace/personal/EstructurasPreontologicas/.claude/commands/harness-status.md",
+      "target": "/workspace/personal/EstructurasPreontologicas/.agents/skills/harness-status/SKILL.md",
+      "sha256": "008faf768e39fcbd2818c764b3788955425cd503c4ef1f1d58a7631383681b0e"
+    },
+    {
+      "source": "/workspace/personal/EstructurasPreontologicas/.claude/commands/harness-status.md",
+      "target": "/workspace/personal/EstructurasPreontologicas/.agents/skills/harness-status/agents/openai.yaml",
+      "sha256": "b2a403550a11f16fc324dbf6cc684804206e280b921f177653437a5bdec675c1"
+    },
+    {
+      "source": "/workspace/personal/EstructurasPreontologicas/.claude/commands/lint-indulgence.md",
+      "target": "/workspace/personal/EstructurasPreontologicas/.agents/skills/lint-indulgence/SKILL.md",
+      "sha256": "abca136f514cf7c82640fafc150adbd3a253a54bd9c4fe0c3237382531561fbe"
+    },
+    {
+      "source": "/workspace/personal/EstructurasPreontologicas/.claude/commands/lint-indulgence.md",
+      "target": "/workspace/personal/EstructurasPreontologicas/.agents/skills/lint-indulgence/agents/openai.yaml",
+      "sha256": "85fd7b23e1991c65bad352c8f508dd7ca19733991c7c2b21d33009061771adc5"
+    },
+    {
+      "source": "/workspace/personal/EstructurasPreontologicas/.claude/commands/multi-probe-null.md",
+      "target": "/workspace/personal/EstructurasPreontologicas/.agents/skills/multi-probe-null/SKILL.md",
+      "sha256": "318f941725f5b34697a4c10c900189071d3b0066ecde0733310b04e716044e62"
+    },
+    {
+      "source": "/workspace/personal/EstructurasPreontologicas/.claude/commands/multi-probe-null.md",
+      "target": "/workspace/personal/EstructurasPreontologicas/.agents/skills/multi-probe-null/agents/openai.yaml",
+      "sha256": "c4912d05eb760aec8626cd8be46a343e48f7fbefb70a7b55c45a749d0b688f40"
+    },
+    {
+      "source": "/workspace/personal/EstructurasPreontologicas/.claude/commands/process-verify.md",
+      "target": "/workspace/personal/EstructurasPreontologicas/.agents/skills/process-verify/SKILL.md",
+      "sha256": "12480a9208660b8470e1d2c5e06fecdc549c12771c33c2083d2140efb288b8ba"
+    },
+    {
+      "source": "/workspace/personal/EstructurasPreontologicas/.claude/commands/process-verify.md",
+      "target": "/workspace/personal/EstructurasPreontologicas/.agents/skills/process-verify/agents/openai.yaml",
+      "sha256": "6426c4fa3a4ab7c33150e13d791bc061ea86606edd1c8f3c5d0e6aa470817d90"
+    },
+    {
+      "source": "/workspace/personal/EstructurasPreontologicas/.claude/rules/bibliografia.md",
+      "target": "/workspace/personal/EstructurasPreontologicas/.agents/skills/rule-bibliografia/SKILL.md",
+      "sha256": "1bf01be46eced6c221affb2ab20ebf1dc9c7c50354bbc8db88c574f1b37057f0"
+    },
+    {
+      "source": "/workspace/personal/EstructurasPreontologicas/.claude/rules/bibliografia.md",
+      "target": "/workspace/personal/EstructurasPreontologicas/.agents/skills/rule-bibliografia/agents/openai.yaml",
+      "sha256": "ea80c119565e05bf5c93eede062ccafdd5cc1baf2c8d3f40e5e2c3a0516b32fb"
+    },
+    {
+      "source": "/workspace/personal/EstructurasPreontologicas/.claude/rules/edi-engine.md",
+      "target": "/workspace/personal/EstructurasPreontologicas/.agents/skills/rule-edi-engine/SKILL.md",
+      "sha256": "822c362436ee340b626937aa729c015d62dce4f10a581294fcb48bd55287d53a"
+    },
+    {
+      "source": "/workspace/personal/EstructurasPreontologicas/.claude/rules/edi-engine.md",
+      "target": "/workspace/personal/EstructurasPreontologicas/.agents/skills/rule-edi-engine/agents/openai.yaml",
+      "sha256": "52921ef543a25e0e767cc1d8fd33bc9437c0c2e7f72d358300a713fc39c15c32"
+    },
+    {
+      "source": "/workspace/personal/EstructurasPreontologicas/.claude/rules/harness-rule.md",
+      "target": "/workspace/personal/EstructurasPreontologicas/.agents/skills/rule-harness-rule/SKILL.md",
+      "sha256": "d80054608d15017bd2c638fd6d367443b76a0fbf67d4ba21779c23d9b7d3c375"
+    },
+    {
+      "source": "/workspace/personal/EstructurasPreontologicas/.claude/rules/harness-rule.md",
+      "target": "/workspace/personal/EstructurasPreontologicas/.agents/skills/rule-harness-rule/agents/openai.yaml",
+      "sha256": "4f57acb79e5dd572c2dd4610f9ef2d27ec6ac21cad7a908884bb3c74e8abd2b9"
+    },
+    {
+      "source": "/workspace/personal/EstructurasPreontologicas/.claude/rules/thesis-prose.md",
+      "target": "/workspace/personal/EstructurasPreontologicas/.agents/skills/rule-thesis-prose/SKILL.md",
+      "sha256": "f3ee78e7cb4637b7193f2227a9bfc9b6623eab26377e97c64919ec90107e02d8"
+    },
+    {
+      "source": "/workspace/personal/EstructurasPreontologicas/.claude/rules/thesis-prose.md",
+      "target": "/workspace/personal/EstructurasPreontologicas/.agents/skills/rule-thesis-prose/agents/openai.yaml",
+      "sha256": "804a972da5c397b1afb03f4f7b7bad68c353c1d851e9b836c4bacc014d49d0a7"
+    },
+    {
+      "source": "/workspace/personal/EstructurasPreontologicas/.claude/commands/run-case.md",
+      "target": "/workspace/personal/EstructurasPreontologicas/.agents/skills/run-case/SKILL.md",
+      "sha256": "8be657b510aa599e7e5d1897db7e192ce14cce3da26f4c32becbd2651c84a80a"
+    },
+    {
+      "source": "/workspace/personal/EstructurasPreontologicas/.claude/commands/run-case.md",
+      "target": "/workspace/personal/EstructurasPreontologicas/.agents/skills/run-case/agents/openai.yaml",
+      "sha256": "9f4dc3a9ce1018ae677436db4276f748d43c899def3a805443433b123e4bceb1"
+    },
+    {
+      "source": "/workspace/personal/EstructurasPreontologicas/.claude/skills/tesis-pass/SKILL.md",
+      "target": "/workspace/personal/EstructurasPreontologicas/.agents/skills/tesis-pass/SKILL.md",
+      "sha256": "72435ea9de83633672ca60e5b2003cf88f8ad4adc90d7fa28aaa854de6736834"
+    },
+    {
+      "source": "/workspace/personal/EstructurasPreontologicas/.claude/skills/tesis-pass/SKILL.md",
+      "target": "/workspace/personal/EstructurasPreontologicas/.agents/skills/tesis-pass/agents/openai.yaml",
+      "sha256": "cd648d3fff55f8375eec5f4f4a553f7912696fde7ae6fefa172c6b21cf7a0882"
+    },
+    {
+      "source": "/workspace/personal/EstructurasPreontologicas/.claude/commands/verify-citations.md",
+      "target": "/workspace/personal/EstructurasPreontologicas/.agents/skills/verify-citations/SKILL.md",
+      "sha256": "a68db5accf43ced0739b6d3375555a2143236bb6dcbeeeefa880134abdaa7139"
+    },
+    {
+      "source": "/workspace/personal/EstructurasPreontologicas/.claude/commands/verify-citations.md",
+      "target": "/workspace/personal/EstructurasPreontologicas/.agents/skills/verify-citations/agents/openai.yaml",
+      "sha256": "7c2e7663bf57d3ab7da63a4bf6efab2f307ea14b0d304b6b4b31c0f42ce28228"
+    },
+    {
+      "source": "/workspace/personal/EstructurasPreontologicas/.claude/commands/verify-debt.md",
+      "target": "/workspace/personal/EstructurasPreontologicas/.agents/skills/verify-debt/SKILL.md",
+      "sha256": "efa9d87d44006ba6714961f9b77e8a513ca64155b78c6624d545d7f7eccadea2"
+    },
+    {
+      "source": "/workspace/personal/EstructurasPreontologicas/.claude/commands/verify-debt.md",
+      "target": "/workspace/personal/EstructurasPreontologicas/.agents/skills/verify-debt/agents/openai.yaml",
+      "sha256": "dc031cba878c5bffa94f41fedcb60666735a6edce4dce64ef14f6f14c23f2f52"
+    },
+    {
+      "source": "/workspace/personal/EstructurasPreontologicas/.claude/commands/verify-prose-json.md",
+      "target": "/workspace/personal/EstructurasPreontologicas/.agents/skills/verify-prose-json/SKILL.md",
+      "sha256": "09556177ff6281b83f66b642528199e0be25c354ea3af79ab5f12a39ce43a121"
+    },
+    {
+      "source": "/workspace/personal/EstructurasPreontologicas/.claude/commands/verify-prose-json.md",
+      "target": "/workspace/personal/EstructurasPreontologicas/.agents/skills/verify-prose-json/agents/openai.yaml",
+      "sha256": "83bb000643ce5457f436d835d6ee71a0ace7659263bb11463f53fa4945123b37"
+    },
+    {
+      "source": "/workspace/personal/EstructurasPreontologicas/.claude/agents/adversarial-reviewer.md",
+      "target": "/workspace/personal/EstructurasPreontologicas/.codex/agents/adversarial-reviewer.toml",
+      "sha256": "8657198267e2da363891bb95af530444fe8986d58f96eb9e5d1310063093953c"
+    },
+    {
+      "source": "/workspace/personal/EstructurasPreontologicas/.claude/agents/bibliography-fetcher.md",
+      "target": "/workspace/personal/EstructurasPreontologicas/.codex/agents/bibliography-fetcher.toml",
+      "sha256": "7d44ed17b768b187fe3ee59bcb68479394ab5c3e6f79b730d13074cb4d2af588"
+    },
+    {
+      "source": "/workspace/personal/EstructurasPreontologicas/.claude/agents/citation-agent.md",
+      "target": "/workspace/personal/EstructurasPreontologicas/.codex/agents/citation-agent.toml",
+      "sha256": "b7d60ba1725659711ebd40b65bae2af35f5e6a7b3bcbe2480a86cb1c29ccef43"
+    },
+    {
+      "source": "/workspace/personal/EstructurasPreontologicas/.claude/agents/debt-validator.md",
+      "target": "/workspace/personal/EstructurasPreontologicas/.codex/agents/debt-validator.toml",
+      "sha256": "b624559674da020af712487a4530c386c3e28b89111bb3fa292076d5b74b62ff"
+    },
+    {
+      "source": "/workspace/personal/EstructurasPreontologicas/.claude/agents/execution-queue.md",
+      "target": "/workspace/personal/EstructurasPreontologicas/.codex/agents/execution-queue.toml",
+      "sha256": "e3922219ec67207bc408dc469020ad30a26876d121aaf4abcd4aea03612e484b"
+    },
+    {
+      "source": "/workspace/personal/EstructurasPreontologicas/.claude/agents/multi-probe-runner.md",
+      "target": "/workspace/personal/EstructurasPreontologicas/.codex/agents/multi-probe-runner.toml",
+      "sha256": "e112231ab02dc8f4f02339c648e5b32ac56d8b538f1c997eaaa92c5f3ac83848"
+    },
+    {
+      "source": "/workspace/personal/EstructurasPreontologicas/.claude/agents/philosophical-reader.md",
+      "target": "/workspace/personal/EstructurasPreontologicas/.codex/agents/philosophical-reader.toml",
+      "sha256": "5ce5a82d7fce5a43b7a5a21b72037d7c9334df53e355ad9536486dec46165efb"
+    },
+    {
+      "source": "/workspace/personal/EstructurasPreontologicas/.claude/agents/process-verifier.md",
+      "target": "/workspace/personal/EstructurasPreontologicas/.codex/agents/process-verifier.toml",
+      "sha256": "121c877d086e766a6183f9513a559fbfea1307f35321f64c1f72de09c2bbce20"
+    },
+    {
+      "source": "/workspace/personal/EstructurasPreontologicas/.claude/agents/prose-json-verifier.md",
+      "target": "/workspace/personal/EstructurasPreontologicas/.codex/agents/prose-json-verifier.toml",
+      "sha256": "4a440298ad890d8c50a88e4697a313bd0f2ecbadcdbb7a210625ed6e226e00ca"
+    },
+    {
+      "source": "/workspace/personal/EstructurasPreontologicas/.claude/agents/self-indulgence-linter.md",
+      "target": "/workspace/personal/EstructurasPreontologicas/.codex/agents/self-indulgence-linter.toml",
+      "sha256": "9e70915d73b2990c95a1a0ca14c34eafd96cbeb224b17612a5f917aba9b260f0"
+    },
+    {
+      "source": "/workspace/personal/EstructurasPreontologicas/.claude/settings.json",
+      "target": "/workspace/personal/EstructurasPreontologicas/.codex/hooks.json",
+      "sha256": "b8e0fc87c785e6519681445185fcb4a044041c4807a831c140a68ccdccc4d2a7"
+    },
+    {
+      "source": "/workspace/personal/EstructurasPreontologicas/CLAUDE.md",
+      "target": "/workspace/personal/EstructurasPreontologicas/AGENTS.md",
+      "sha256": "a685a0a2737fe09e0209fa7427e4f631e45cec7a9f6673f192b44d0aa8b80b09"
+    },
+    {
+      "source": "/workspace/personal/EstructurasPreontologicas/harness/CLAUDE.md",
+      "target": "/workspace/personal/EstructurasPreontologicas/harness/AGENTS.md",
+      "sha256": "cd11679c1b68a30384d6eb73261cc1dc356ec4d64f304238b6f00aba8285339f"
+    }
+  ],
+  "omissions": []
+}

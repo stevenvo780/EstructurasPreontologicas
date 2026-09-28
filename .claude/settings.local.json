@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(rm -rf .git/refs/original/)",
+      "Bash(git reflog *)",
+      "Bash(git gc *)"
+    ]
+  }
+}
