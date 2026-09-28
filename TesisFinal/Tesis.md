@@ -159,50 +159,50 @@ A la Universidad de Antioquia, por sostener una tradición de filosofía de la c
 
 # Resumen y abstract bilingüe
 
-> **[BORRADOR-IA · requires: H-J2/H-J8]** Versión epistemicamente consistente con el estado B-T2.1. Requiere firma autoral antes de sustituir el resumen institucional.
+<!-- BORRADOR-IA. Versión consistente con el estado B-T2.1. Requiere firma autoral antes de sustituir el resumen institucional. -->
 
 ## Resumen (español)
 
-Esta tesis propone un **irrealismo operativo de estructuras pre-ontológicas** que articula realismo estructural moderado, pluralismo epistemológico y anti-reificación. Una categoría se admite como estructura operativa solo respecto de una pregunta, un instrumento y un régimen de medición declarados; el rendimiento predictivo no autoriza por sí mismo ontología fuerte. "Pre-ontológico" se entiende en sentido genético-epistemológico: regularidad material anterior al recorte que la objetiva. El programa distingue tres niveles de contribución: una conjetura ontológica multiescalar, una epistemología de la compresión disciplinada y una metodología transferible de admisión y fracaso.
+Esta tesis propone un **irrealismo operativo de estructuras pre-ontológicas**. Su tesis central es que una regularidad puede ser materialmente real sin que por ello esté decidido qué objeto, propiedad o nivel constituye. El estatuto ontológico de una categoría debe aplazarse hasta que la estructura que pretende captar sobreviva traducción empírica, perturbaciones relevantes, comparación con modelos rivales y criterios públicos de fracaso. La propuesta combina realismo estructural moderado, pluralismo epistemológico y anti-reificación: reconoce restricciones materiales independientes del observador, pero niega que el nombre de una categoría o el ajuste de un modelo basten para convertirla en entidad.
 
-El aporte metodológico central es un instrumento híbrido **ABM + ODE** que mide cierre operativo mediante EDI = 1 − RMSE_coupled / RMSE_no_ode, con permutación, bootstrap, protocolo C1-C5, dossier de catorce componentes y cinco operadores formales (μ, G, H, κ, ε). La misma arquitectura se ejecuta en dominios y escalas heterogéneos; esta transferibilidad computacional no se identifica con invariancia ontológica.
+El programa distingue tres contribuciones. En el plano ontológico, formula la hipótesis de que ciertos objetos son estabilizaciones material-relacionales antes que sustancias primitivas. En el plano epistemológico, sostiene que toda atribución de cierre está indexada por una pregunta, una sonda, un modelo, una ventana y un régimen de medición. En el plano metodológico, implementa un instrumento híbrido ABM+ODE que compara un modelo acoplado con una ablación reducida mediante el índice EDI, complementado por permutación, bootstrap, protocolo C1-C5, dossier de anclaje y validación lógica ST. La transferencia de esta arquitectura entre dominios demuestra ejecutabilidad, no invariancia ontológica.
 
-Se evaluaron **40 casos**: 30 inter-dominio y 10 inter-escala. Bajo el régimen más estricto ejecutado hasta ahora, con pre-registro ex ante, datos refrescados, detrend y block-permutation, hay **0 cierres strong robustos puros confirmados**, **1 weak validado** (caso 04 Energía, EDI = 0.1571, p_block = 0.006), **1 candidato pendiente** (caso 26 Starlink) y **4 falsificaciones locales del aparato** en el corpus (casos 19, 20, 23 y 24). Tres controles negativos fueron rechazados y el gate completo produjo 0/2000 falsos positivos bajo random walk masivo, con intervalo Wilson 95 % [0, 0.00191]. El régimen estricto todavía no cubre los 30 casos, por lo que no se reporta una prevalencia final de cierre. Los 10 casos inter-escala usan datos sintéticos derivados de parámetros publicados y prueban ejecutabilidad, no generalidad ontológica confirmada.
+El corpus contiene 40 casos: 30 inter-dominio y 10 inter-escala. Bajo el régimen estricto completado hasta ahora se registran 0 cierres strong robustos puros confirmados, 1 resultado weak validado, Energía, caso 04, con EDI = 0.1571 y p_block = 0.006, 1 candidato pendiente, Starlink, caso 26, y 4 falsificaciones locales del aparato, casos 19, 20, 23 y 24. Tres controles negativos fueron rechazados. El gate completo produjo 0/2000 falsos positivos bajo random walk masivo, con intervalo Wilson del 95 % [0, 0.00191]. El régimen estricto todavía no cubre los 30 casos, y los casos inter-escala emplean datos sintéticos derivados de parámetros publicados; por ello no se estima una prevalencia general de cierre ni se afirma validación empírica entre treinta órdenes de magnitud.
 
-El resultado defendible es metodológico: el aparato formula condiciones públicas de admisión, conserva resultados negativos y corrige clasificaciones propias sin convertir cada fallo local en confirmación del marco. No demuestra todavía κ-ontológica fuerte ni una ontología general multiescalar. Permanecen abiertas la calibración estadística completa, la re-ejecución estricta del corpus, los datos reales inter-escala, la replicación independiente, la revisión externa y las decisiones autorales sobre el estatuto de la generalidad ontológica.
+El resultado defendible es metodológico y epistemológico. La tesis ofrece una interfaz reproducible entre argumentación filosófica y evaluación empírica, conserva resultados negativos y permite revisar clasificaciones propias sin reinterpretar todo fallo como confirmación. No demuestra todavía que el cierre pragmático implique estructura ontológica independiente del instrumento ni establece una ontología general multiescalar. Permanecen abiertas la calibración estadística completa, la ejecución homogénea del corpus, el uso de datos reales inter-escala, la comparación con rivales de presupuesto equivalente, la replicación independiente y la revisión humana externa.
 
-**Palabras clave:** estructuras pre-ontológicas, irrealismo operativo, programa ontológico multiescalar, realismo estructural moderado, pluralismo epistemológico, anti-reificación, ABM-ODE, EDI, cierre operativo, asimetría L1-B-L3-S, dossier de anclaje, pre-registro.
+**Palabras clave:** estructuras pre-ontológicas, irrealismo operativo, aplazamiento ontológico, ontología material-relacional, realismo estructural moderado, pluralismo epistemológico, anti-reificación, ABM-ODE, EDI, cierre operativo, traducción entre niveles, dossier de anclaje.
 
 ---
 
 ## Abstract (English)
 
-This dissertation proposes an **operative irrealism of pre-ontological structures** combining moderate structural realism, epistemic pluralism and anti-reification. A category is admitted as an operative structure only relative to a declared question, instrument and measurement regime; predictive performance alone does not warrant strong ontology. "Pre-ontological" is used in a genetic-epistemological sense: a material regularity prior to the cut that objectifies it. The program separates three levels of contribution: a multiscale ontological conjecture, an epistemology of disciplined compression and a transferable methodology of admission and failure.
+This dissertation proposes an **operative irrealism of pre-ontological structures**. Its central claim is that a regularity may be materially real while remaining underdetermined with respect to which object, property, or level it constitutes. Ontological commitment should therefore be postponed until the candidate structure survives empirical translation, relevant perturbations, comparison with rival models, and public failure conditions. The proposal combines moderate structural realism, epistemic pluralism, and anti-reification: it recognizes observer-independent material constraints while denying that a category name or the fit of a single model is sufficient to establish an entity.
 
-The core methodological contribution is a hybrid **ABM + ODE** instrument measuring operational closure through EDI = 1 − RMSE_coupled / RMSE_no_ode, together with permutation, bootstrap, the C1-C5 protocol, a fourteen-component anchoring dossier and five formal operators (μ, G, H, κ, ε). The same architecture runs across heterogeneous domains and scale labels; computational transferability is not treated as ontological invariance.
+The program separates three contributions. Ontologically, it advances the hypothesis that some objects are material-relational stabilizations rather than primitive substances. Epistemologically, it argues that every attribution of closure is indexed by a question, probe, model, window, and measurement regime. Methodologically, it implements a hybrid ABM+ODE instrument comparing a coupled model with a reduced ablation through the EDI index, complemented by permutation, bootstrap, the C1-C5 protocol, an anchoring dossier, and ST logical validation. Transfer of the same architecture across domains establishes executability, not ontological invariance.
 
-**Forty cases** were evaluated: 30 inter-domain and 10 inter-scale. Under the strictest regime completed so far, combining ex ante pre-registration, refreshed data, detrending and block permutation, there are **0 confirmed pure robust strong closures**, **1 validated weak result** (case 04 Energy, EDI = 0.1571, p_block = 0.006), **1 pending candidate** (case 26 Starlink), and **4 local falsifications of the apparatus** across the corpus (cases 19, 20, 23 and 24). Three negative controls were rejected, and the full gate produced 0/2000 false positives under random walk, Wilson 95 % interval [0, 0.00191]. The strict regime does not yet cover all 30 cases, so no final prevalence of closure is reported. The inter-scale corpus uses synthetic data derived from published parameters and establishes executability rather than confirmed ontological generality.
+The corpus contains 40 cases: 30 inter-domain and 10 inter-scale. Under the strict regime completed so far, there are 0 confirmed pure robust strong closures, 1 validated weak result, Energy, case 04, with EDI = 0.1571 and p_block = 0.006, 1 pending candidate, Starlink, case 26, and 4 local falsifications of the apparatus, cases 19, 20, 23, and 24. Three negative controls were rejected. The full gate produced 0/2000 false positives under massive random walks, with a 95% Wilson interval of [0, 0.00191]. The strict regime does not yet cover all 30 cases, and the inter-scale cases rely on synthetic data derived from published parameters; consequently, the dissertation neither estimates a general prevalence of closure nor claims empirical validation across thirty orders of magnitude.
 
-The defensible result is methodological: the apparatus states public admission conditions, preserves negative results and revises its own classifications without redescribing each local failure as confirmation of the framework. It does not yet establish strong ontological κ or a general multiscale ontology. Open requirements include full statistical calibration, strict re-execution of the corpus, real inter-scale data, independent replication, external review and authorial decisions about the status of ontological generality.
+The defensible result is methodological and epistemological. The dissertation provides a reproducible interface between philosophical argument and empirical evaluation, preserves negative results, and revises its own classifications without redescribing every failure as confirmation. It does not yet show that pragmatic closure entails instrument-independent ontological structure, nor does it establish a general multiscale ontology. Open requirements include complete statistical calibration, homogeneous execution of the corpus, real inter-scale data, comparisons with equally resourced rivals, independent replication, and external human review.
 
-**Keywords:** pre-ontological structures, operative irrealism, multiscale ontological program, moderate structural realism, epistemic pluralism, anti-reification, ABM-ODE, EDI, operational closure, L1-B-L3-S asymmetry, anchoring dossier, pre-registration.
+**Keywords:** pre-ontological structures, operative irrealism, ontological postponement, material-relational ontology, moderate structural realism, epistemic pluralism, anti-reification, ABM-ODE, EDI, operational closure, cross-level translation, anchoring dossier.
 
 ---
 
 ## Información bibliográfica
 
-**Autor principal (concepto y dirección):** Jacob Agudelo, Universidad de Antioquia.
-**Colaborador (técnica e ingeniería computacional):** Steven Vallejo Ortiz.
-**Co-autoría IA:** Anthropic Claude (Opus 4.7) declarada como instrumento de implementación bajo dirección humana.
-**Filiación institucional:** Universidad de Antioquia, Medellín, Colombia.
-**Campo:** Filosofía de la Ciencia y Ciencias de la Complejidad.
+**Autor principal, concepto y dirección:** Jacob Agudelo, Universidad de Antioquia.  
+**Colaborador, técnica e ingeniería computacional:** Steven Vallejo Ortiz.  
+**Asistencia con IA:** sistemas generativos utilizados como instrumentos de implementación y revisión bajo dirección humana, sin atribución de autoría legal o epistémica.  
+**Filiación institucional:** Universidad de Antioquia, Medellín, Colombia.  
+**Campo:** Filosofía de la Ciencia y Ciencias de la Complejidad.  
 **Versión:** Manuscrito en revisión predefensa.
 
 ---
 
-## Citation suggestion
+## Citación sugerida
 
-> Agudelo, J., y Vallejo Ortiz, S. (2026). *Estructuras Pre-Ontológicas: Realismo Irrealista Operativo y Compresión Multiescala con Validación EDI Multidominio* [Manuscrito doctoral]. Universidad de Antioquia.
+> Agudelo, J., y Vallejo Ortiz, S. (2026). *Estructuras Pre-Ontológicas: Irrealismo Operativo y Compresión Multiescala con Evaluación EDI Multidominio* [Manuscrito doctoral]. Universidad de Antioquia.
 
 
 <p align="right"><sub><a href="#tabla-de-contenidos">↑ volver al índice</a></sub></p>
@@ -217,73 +217,79 @@ The defensible result is methodological: the apparatus states public admission c
 
 # Introducción
 
-> **[BORRADOR-IA · requires: H-J2/H-J8]** Revisión de consistencia posterior al régimen B-T2.1. Requiere firma autoral para fijar el estatuto definitivo de la generalidad ontológica.
+<!-- BORRADOR-IA. Revisión de consistencia posterior al régimen B-T2.1. Requiere firma autoral para fijar el estatuto definitivo de la generalidad ontológica. -->
 
-## Pregunta central
+## Problema y pregunta central
 
-> ¿Bajo qué condiciones es legítimo reemplazar una categoría heredada por una construcción formal estructural-relacional sin caer en sustitución nominal y sin desligarse del nivel donde el fenómeno vive empíricamente?
+Hablamos de mente, memoria, organismo, institución, mercado o identidad como si cada término designara una unidad ya delimitada. Sin embargo, esas categorías suelen comprimir procesos distribuidos, dependencias históricas y relaciones entre escalas. Tomarlas como sustancias produce reificación; disolverlas en componentes elementales elimina la organización que pretendíamos explicar; tratarlas como construcciones libres vuelve arbitrario cualquier recorte; formalizarlas sin traducción empírica solo reemplaza una palabra por otra.
 
-Esta pregunta concentra el problema fundamental del proyecto. El lenguaje heredado tiende a reificar: hablamos de mente, memoria, mercado, institución, servicio, organismo o identidad como si fueran cosas simples cuando a menudo condensan organizaciones complejas. El reduccionismo plano no resuelve el problema, solo lo desplaza al nivel inferior. El emergentismo fuerte multiplica sustancias. El constructivismo arbitrario entrega cualquier recorte. El formalismo vacío produce elegancia sin captura. La tesis intenta ocupar un punto distinto.
+La pregunta de esta tesis es, por tanto:
+
+> ¿Bajo qué condiciones una categoría heredada puede reconstruirse como estructura material-relacional sin incurrir en sustitución nominal ni separarse del nivel donde el fenómeno puede observarse e intervenirse?
 
 ## Tesis principal
 
-> Este programa trata todo fenómeno empíricamente investigable como materialmente instanciado y propone admitir sus entidades, niveles y categorías como **estructuras pre-ontológicas** solo cuando las regularidades operativas que las sostienen sobreviven un dossier de anclaje, traducción entre registros y pruebas de intervención. EDI no convierte una categoría en entidad: mide cierre operativo del trío fenómeno-sonda-modelo respecto de una pregunta Q. La generalidad ontológica es una conjetura sometida a ese procedimiento, no una consecuencia automática de aplicarlo.
+> Una categoría merece compromiso ontológico moderado cuando la regularidad material que pretende captar conserva organización bajo perturbaciones relevantes, admite traducción entre registros descriptivos y formales, y produce diferencias públicas frente a modelos rivales. Antes de satisfacer esas condiciones, la regularidad es pre-ontológica: es real como proceso material, pero todavía está subdeterminada respecto de qué objeto, propiedad o nivel constituye.
 
-## Tres marcos generales simultáneos
+La tesis no sostiene que el mundo dependa del lenguaje ni que las entidades sean ficciones útiles. Sostiene algo más restringido: la materialidad precede al recorte, pero el estatuto de objeto no debe presuponerse. Debe justificarse.
 
-La tesis ofrece tres marcos generales coordinados:
+## Aporte filosófico: principio de aplazamiento ontológico
 
-1. **Programa ontológico:** cuatro invariantes candidatos (sustrato material dinámico, acoplamiento, atractor empírico y cierre operativo κ) cuya generalidad debe probarse sin inferirla del mismo instrumento que los define.
-2. **Tesis epistemológica:** conocer una estructura exige compresión disciplinada, traducción entre registros y condiciones públicas de fracaso.
-3. **Metodología transferible:** un aparato común (motor ABM+ODE, protocolo C1-C5, EDI, dossier de 14 componentes y suite ST) aplicable entre dominios sin cambiar su arquitectura, aunque cada sonda y cada inferencia conservan validez local.
+El núcleo original del programa puede formularse como un principio:
 
-Los 40 casos evalúan la ejecutabilidad, selectividad y límites del aparato. No prueban por enumeración la generalidad ontológica. Los resultados negativos y las falsificaciones locales limitan el alcance de las sondas propuestas en vez de convertirse retrospectivamente en confirmaciones del marco.
+> **Principio de aplazamiento ontológico:** no inferir identidad, entidad o nivel a partir del nombre de una categoría, de la estabilidad aparente de un patrón ni del ajuste de un único modelo. El compromiso ontológico debe aplazarse hasta que la estructura sobreviva traducción empírica, perturbación, comparación rival y criterios explícitos de fracaso.
 
-## Posición filosófica: irrealismo operativo
+Este principio articula tres tesis:
 
-Realismo estructural moderado + pluralismo epistemológico + anti-reificación operativa. Nunca afirmamos `X es Y`; afirmamos `bajo el instrumento I, X exhibe cierre operativo de grado G respecto a la pregunta Q`. La dependencia instrumento-fenómeno no es defecto: es condición epistémica honesta.
+1. **Prioridad material:** toda estructura estudiada está sostenida por procesos materiales dinámicos; no se postulan sustancias adicionales.
+2. **Subdeterminación categorial:** una misma organización puede admitir recortes distintos según la pregunta, la escala y el régimen de medición. Ningún recorte obtiene privilegio ontológico solo por ser habitual o predictivo.
+3. **Realidad relacional graduada:** una estructura gana realidad explicativa cuando conserva dependencias relevantes entre transformaciones, sondas y modelos, no cuando recibe un nombre estable.
 
-## Hipótesis
+La posición resultante se denomina **irrealismo operativo**. Es realista respecto de la materialidad y de las restricciones que el mundo impone, pero irrealista respecto del derecho automático de nuestras categorías a convertirse en mobiliario definitivo de la realidad.
 
-### Hipótesis general
+## Arquitectura de la investigación
 
-> Una ontología material-relacional articulada con epistemología formal de compresión multiescala, asimetría L1↔B↔L3↔S y dossier de anclaje produce criterios públicos de admisión y fracaso que las categorías heredadas, el reduccionismo plano y el formalismo sin traducción no ofrecen por sí solos.
+La propuesta coordina tres niveles que deben mantenerse separados:
 
-### Hipótesis específicas
+| Nivel | Afirmación | Estatuto actual |
+|---|---|---|
+| Ontológico | Ciertos objetos pueden reconstruirse como estabilizaciones material-relacionales | Hipótesis programática |
+| Epistemológico | Toda atribución de estructura depende de una pregunta, una sonda y un régimen de medición declarados | Tesis argumentada y apoyada localmente |
+| Metodológico | Un protocolo común puede evaluar admisión, alcance y fracaso sin convertir cada resultado en confirmación | Artefacto ejecutable y reproducible |
 
-- **H1 (ontológica):** la realidad está materialmente instanciada, pero sus unidades explicativas son patrones relacionales estabilizados, definidos como atractores empíricamente identificables de sistemas dinámicos acoplados (capítulo 02-01).
-- **H2 (epistemológica):** el conocimiento es compresión disciplinada de estructura material-relacional bajo restricciones empíricas, con verdad como preservación estructural verificable (capítulo 02-02).
-- **H3 (nivel B):** el nivel de anclaje empírico es el sistema dinámico acoplado organismo–entorno bajo restricciones de tarea, físicas, informacionales e históricas (capítulo 02-04).
-- **H4 (metodológica):** las operaciones de compresión κ y expansión ε permiten justificar el paso entre escalas sin inflación ontológica ni empobrecimiento explicativo (capítulos 03-01 y 03-04).
-- **H5 (comparativa):** la tesis establece diferencias públicas respecto a catorce posiciones rivales; esa no-equivalencia conceptual no se presenta como superioridad empírica global (capítulo 04-01).
-- **H6 (caso ancla):** Warren aporta adecuación cuantitativa publicada dentro de behavioral dynamics; el caso EDI 30 es un piloto débil y circularmente comprometido, no una corroboración independiente del marco (capítulo 05-05 y corpus EDI caso 30).
-- **H7 (programática):** el aparato es extensible a mente, biología, sistemas técnicos e instituciones bajo criterios explícitos de elevación (capítulos 05-01 a 05-04).
+El aparato combina modelos ABM+ODE, intervención ablativa, EDI, protocolo C1-C5, dossier de anclaje y validación lógica ST. EDI mide cuánto aporta el acoplamiento a la predicción frente a un modelo reducido. No convierte una ganancia predictiva en prueba automática de existencia: produce evidencia local sobre el recorte fenómeno-sonda-modelo respecto de una pregunta Q.
 
-## Régimen de validez declarado
+## Hipótesis de trabajo
 
-La tesis se sostiene como **programa ontológico multiescalar con método ejecutable y evidencia parcial**, no como ontología general confirmada. La Parte III presenta los resultados; el capítulo de limitaciones concentra los problemas de calibración, circularidad, datos sintéticos, cobertura incompleta y falta de replicación externa. Esta introducción no adelanta de nuevo ese inventario.
+- **H1, material-relacional:** las unidades explicativas relevantes son patrones materialmente sostenidos cuya estabilidad puede caracterizarse mediante relaciones, atractores y transformaciones, sin reducirlas a sustancias primitivas.
+- **H2, epistemológica:** conocer una estructura consiste en comprimir dependencias sin perder las diferencias necesarias para explicar, intervenir y reconocer el fracaso del modelo.
+- **H3, traduccional:** una formalización solo es legítima si puede traducirse hacia un registro empírico B y devolver una semántica revisada S sin borrar el fenómeno planteado en L1.
+- **H4, comparativa:** la arquitectura propuesta es filosóficamente informativa solo donde establece diferencias contrastables frente a categorías heredadas y modelos rivales con presupuestos comparables.
 
-## Aporte original
+Las antiguas hipótesis específicas sobre operadores, dominios y casos se desarrollan en sus capítulos respectivos. No se repiten aquí como inventario.
 
-El proyecto combina cinco movimientos en una sola arquitectura que ningún rival reúne:
+## Evidencia y alcance
 
-1. **monismo ontológico** sin reduccionismo plano;
-2. **realismo estructural moderado** con anclaje empírico explícito;
-3. **pluralismo explicativo controlado** con asimetría L1↔B↔L3↔S como protocolo;
-4. **formalización metodológica** con procedimiento empírico de κ vía EDI;
-5. **cartografía de alcance y fallo** con 40 casos, controles negativos, pre-registro ex ante y conservación explícita de nulls y falsificaciones locales.
+Los 40 casos, 30 inter-dominio y 10 inter-escala, evalúan ejecutabilidad, selectividad y límites del aparato. No prueban por enumeración una ontología general. Los resultados positivos apoyan inferencias locales; los nulos y las falsificaciones restringen sondas, modelos o ventanas; los casos sintéticos demuestran portabilidad computacional, no invariancia del mundo entre escalas.
 
-La novedad no es de inventario (cada pieza está distribuida entre marcos vecinos). Es de articulación: dossier de anclaje + asimetría + intervención ablativa como filtro de admisión simultáneo, con un protocolo capaz de degradar las clasificaciones producidas por versiones anteriores del propio aparato.
+El resultado defendible es asimétrico: el método está más desarrollado que la metafísica. La tesis presenta un programa ontológico multiescalar, una epistemología explícita de la dependencia instrumental y un procedimiento capaz de corregir sus propias clasificaciones. La generalidad ontológica permanece abierta hasta contar con convergencia entre sondas, parámetros medidos independientemente, comparación rival y replicación externa.
+
+## Contribución específica
+
+La contribución no consiste en inventar aisladamente el sistemismo, el realismo estructural, la individuación, la explicación multinivel o la modelación ablativa. Consiste en reunirlos bajo una regla de admisión común que impide pasar sin justificación de una regularidad observada a una entidad postulada. Esa articulación produce cuatro resultados:
+
+1. una definición de lo pre-ontológico como regularidad material anterior al compromiso categorial fuerte;
+2. un protocolo de traducción entre lenguaje ordinario, interfaz empírica, formalización y semántica revisada;
+3. una medición ablativa del cierre operativo que conserva resultados adversos;
+4. una cartografía explícita de qué está establecido, qué recibe apoyo local y qué sigue siendo conjetural.
 
 ## Estructura del manuscrito
 
-El manuscrito se organiza en cinco partes:
-
-- **Parte I (Fundamentos):** ontología material-relacional, epistemología de la compresión, categorías, anclaje empírico, temporalidad y causalidad, dimensión normativa.
-- **Parte II (Aparato y método):** operadores formales, criterios de legitimidad, auditoría ontológica, operacionalización de κ, ética de investigación.
-- **Parte III (Evidencia empírica):** caso ancla canónico, corpus inter-dominio (30 casos), corpus inter-escala (10 casos), aplicaciones programáticas.
-- **Parte IV (Discusión):** posiciones rivales, objeciones principales y limitaciones declaradas.
-- **Parte V (Cierre):** conclusión, estado de la demostración y condiciones de fracaso.
+- **Parte I:** fundamentos ontológicos y epistemológicos, individuación, categorías, temporalidad, causalidad y normatividad.
+- **Parte II:** operadores formales, criterios de legitimidad, dossier de anclaje, auditoría, EDI, ST y gobernanza de datos.
+- **Parte III:** caso conductual, corpus inter-dominio, corpus inter-escala y aplicaciones programáticas.
+- **Parte IV:** comparación con posiciones rivales, objeciones y limitaciones.
+- **Parte V:** balance de la demostración, condiciones de elevación y condiciones de fracaso.
 
 
 <p align="right"><sub><a href="#tabla-de-contenidos">↑ volver al índice</a></sub></p>
@@ -832,6 +838,9 @@ La formulación intuitiva de partida evolucionó hacia la versión canónica. Lo
 
 ## 15. Deuda residual
 
+(Deuda declarada el 2026-05-11 — fecha del commit que introdujo esta sección.)
+
+
 - **Limitación 1.** §1.3 importa el ontology CESM bungeano sin disociar el M-mecanismo (materialismo) del esqueleto C+E. Los volúmenes 3 y 4 del *Treatise on Basic Philosophy* de Bunge NO están en `07-bibliografia/`; la adopción del CESM debe declararse como restringida a Composición y Entorno, con costo: la tesis no compra el materialismo bungeano íntegro. Camino de resolución: añadir declaración explícita de adopción restringida y recuperar Bunge vol.3/4 antes de citar paginación; validación filosófica pendiente de decisión autoral.
 - **Limitación 2.** §13 (caso 31 decoherencia cuántica) opera con decoherencia + einselection y declara neutralidad entre interpretaciones realistas. El triage identifica que decoherencia + einselection compromete *en uso* con la familia Everett-Wallace (no es neutra entre Bohm-DeBroglie, GRW, Everett). Wallace 2012 *The Emergent Multiverse* NO está en `07-bibliografia/`. Camino de resolución: reescribir §13 declarando compromiso interpretativo efectivo o recuperar Wallace 2012 antes de paginar la cita; corte filosófico pendiente de decisión autoral.
 
@@ -1091,6 +1100,9 @@ Esto es lo que opera el capítulo 03 (formalización) y lo que el capítulo 05-0
 Si la ontología (capítulo 02-01) da el suelo, esta epistemología enseña a caminar sobre él sin confundir el mapa con el territorio ni el territorio con masa muda. Si el aparato formal (capítulo 03) da los instrumentos, esta epistemología fija para qué sirven.
 
 ## 15. Deuda residual
+
+(Deuda declarada el 2026-05-11 — fecha del commit que introdujo esta sección.)
+
 
 - **Limitación 1.** La cita atribuida a Brandom *Making it Explicit* (1994) en §72 con paginación "p.89" no es verificable: el cap.3 de MiE (Harvard UP, 1994) corre aprox. pp.141-198 según índice estándar editorial, por lo que p.89 es presuntivamente incorrecta. El PDF no está disponible en `07-bibliografia/`. Camino de resolución: recuperar Brandom 1994 y verificar paginación, o sustituir la cita por paráfrasis declarada; verificación contra fuente primaria pendiente.
 - **Limitación 2.** §3 articula compresión epistémica sin engagement con la tradición Kolmogorov / Solomonoff / Rissanen / Grünwald (MDL, inferencia inductiva universal). El slot §3.4 entre §3.3 y §3.5 está vacío respecto a esa familia; PDFs ausentes en `07-bibliografia/`. Camino de resolución: recuperar Solomonoff 1964, Rissanen 1978, Grünwald 2007 antes de inyectar §3.4 que delimite la compresión EDI respecto a MDL/Kolmogorov.
@@ -1416,6 +1428,9 @@ El nivel B cumple una función precisa: obliga a que toda afirmación sobre estr
 
 ## Deuda residual
 
+(Deuda declarada el 2026-05-11 — fecha del commit que introdujo esta sección.)
+
+
 La generalización de B fuera de percepción-acción sigue abierta. Debe evaluarse caso por caso con datos reales y criterios de intervención propios del dominio. También queda pendiente la decisión humana H-J8 sobre cuánto peso ontológico atribuir a la asimetría entre registros.
 
 
@@ -1575,6 +1590,9 @@ La tesis ahora afirma con respaldo articulado:
 Esto cubre los vacíos V5-02, V5-03, V5-09 con honestidad: la tesis no inventa metafísica del tiempo ni de la causalidad; **adopta posturas defendidas en la literatura** y las articula explícitamente para que el aparato no quede flotando metodológicamente.
 
 ## Deuda residual
+
+(Deuda declarada el 2026-05-11 — fecha del commit que introdujo esta sección.)
+
 
 - **Limitación 1.** Las citas a Woodward 2003 *Making Things Happen* en las líneas 48, 89 y 92 invocan la p.59 § 2.1, pero el PDF de Woodward 2003 en `07-bibliografia/` es image-only sin OCR aplicado. Adicionalmente, la definición canónica woodwardiana de manipulabilidad (M) está en §2.7 pp.98-99, no en §2.1; la cita a p.59 es presuntivamente desplazada. Camino de resolución: aplicar OCR al PDF local de Woodward 2003 o convertir las invocaciones a paráfrasis declarada con referencia secundaria; verificación contra PDF pendiente.
 - **Limitación 2.** §90-92 cita Craver 2007 *Explaining the Brain* p.153 mediado por Romero 2015 y Baumgartner-Gebharter 2016 — ambos autores rebaten la versión "mutual manipulability" de Craver vía la objeción de *fat-handedness* (intervenciones no quirúrgicas en sistemas multinivel). El manuscrito invoca a Craver sin responder a la objeción mediada. Camino de resolución: recuperar Craver 2007, Baumgartner-Gebharter 2016 y Romero 2015 antes de cerrar el engagement en §90-92; la respuesta a fat-handedness es necesaria para sostener la traducción "downward causation → constitución".
@@ -2022,6 +2040,9 @@ Si las **estructuras pre-ontológicas son atractores** y los atractores son **ob
 **Respuesta:** la matemática es **real en sentido representacional moderado**: es la herramienta formal que captura las dependencias del sustrato material. Los atractores existen materialmente (como patrones del sustrato dinámico); las descripciones matemáticas de los atractores existen como **representaciones legítimas** de esos patrones cuando preservan dependencias decisivas. La realidad ontológica primaria está en el sustrato; la realidad de las estructuras matemáticas es **derivada y representacional**.
 
 ## 16. Deuda residual
+
+(Deuda declarada el 2026-05-11 — fecha del commit que introdujo esta sección.)
+
 
 - **Limitación 1.** §12.3 (línea 266) importa vocabulario "phase transition" de Kelso 1995 *Dynamic Patterns* para describir la transición de régimen en el aparato, pero ninguno de los signos canónicos de transición de fase en sistemas dinámicos coordinativos (critical slowing down, fluctuaciones críticas, histéresis) es medido en el corpus EDI. El uso es metafórico-descriptivo, no fuerte. PDF Kelso 1995 ausente en `07-bibliografia/`. Camino de resolución: declarar uso descriptivo y recuperar Kelso 1995 antes de invocar paginación; opcionalmente añadir test de critical slowing down como criterio de elevación para casos con dinámica claramente bimodal.
 
@@ -2553,6 +2574,9 @@ Pearl (2009, *Causality*, cap. 3, p. 86) formaliza la diferencia entre `P(y|x)` 
 
 ## 12. Deuda residual
 
+(Deuda declarada el 2026-05-11 — fecha del commit que introdujo esta sección.)
+
+
 - **Limitación 1.** El criterio 2.3 (línea 26) "diferencia inferencial inesperada" se enuncia sin pre-registro de banda predictiva (`[a, b]`), umbral τ ni cierre de variables auxiliares. Esto deja al criterio vulnerable a Duhem-Quine: cualquier divergencia puede reasignarse a auxiliares sueltas. Camino de resolución: exigir pre-registro de banda + τ + auxiliares en componente 10 de `03-formalizacion/07-plantilla-dossier-anclaje.md` §3.1 antes de admitir un caso como "discriminante", previo a la próxima pasada de criterios contra el corpus.
 - **Limitación 2.** §82 y §98-129 describen la matriz dossier con valoraciones 0/1/2 sin definir qué cuenta como "contenido sustantivo" para asignar cada nivel; el caso ancla Warren obtiene 20/20 por construcción del propio capítulo 05-05. Camino de resolución: añadir rúbrica explícita por criterio (umbrales operativos para 0, 1, 2) en el cuerpo del capítulo; rúbrica preliminar pendiente de migrar al cuerpo y validación de umbrales pendiente de decisión autoral.
 
@@ -2767,6 +2791,9 @@ Cada uno tiene:
 3. **Auditoría:** un tercer investigador competente debe poder reproducir el dossier desde el case_config y los datos.
 
 ## Deuda residual
+
+(Deuda declarada el 2026-05-11 — fecha del commit que introdujo esta sección.)
+
 
 - **Limitación 1.** El componente 10 del dossier ("predicción discriminante a buscar" / "diferencia inferencial inesperada") se exige sin obligar al investigador a pre-registrar banda predictiva (`[a, b]`), umbral τ ni variables auxiliares fijadas. Vulnerabilidad Duhem-Quine. Camino de resolución: actualizar §3.1 (componente 10) para exigir esos tres elementos como pre-condición de admisión a modo demostrativo, previo a la siguiente pasada de dossiers contra el corpus. Cf. `03-formalizacion/02-criterios-de-legitimidad-y-metodo.md` §12.
 
@@ -3042,6 +3069,9 @@ Con esta auditoría, la tesis se presenta no solo como respuesta a una pregunta 
 
 ## 12. Deuda residual
 
+(Deuda declarada el 2026-05-11 — fecha del commit que introdujo esta sección.)
+
+
 - **Limitación 1.** §6 (línea 6) afirma "criterio de cierre es replicabilidad por tercero", pero **ninguna replicación externa ha sido ejecutada** sobre el corpus EDI: el manuscrito no tiene evidencia de tercero independiente reproduciendo los resultados desde `case_config.json` + datos. Esto choca con la objeción de Collins ("experimenter's regress"). Camino de resolución: degradar "replicabilidad" de hecho consumado a reclamo operativo (promesa pública defendible, no afirmación retórica) e invitar replicación independiente con plazo declarado; apertura formal de la invitación pendiente de firma autoral.
 
 ## 13. Cierre
@@ -3295,6 +3325,9 @@ Algunos casos tienen funciones específicas que justifican categorías ROBUSTO e
 
 ## Deuda residual
 
+(Deuda declarada el 2026-05-11 — fecha del commit que introdujo esta sección.)
+
+
 - **Limitación 1.** Paso 3 (líneas 36-48) enumera cinco métodos de estimación de dimensionalidad ("según el caso": PCA, GP, NN, Takens, false nearest neighbors) sin protocolo de reconciliación entre ellos. PCA tiene sesgo lineal; Grassberger-Procaccia es sensible a longitud de serie; NN tiene sesgo de overfitting opuesto. El "según el caso" abre un *garden of forking paths*. PDFs Camastra-Staiano 2016 y Simmons-Nelson-Simonsohn 2011 ausentes en `07-bibliografia/`. Camino de resolución: exigir triple estimación (PCA + GP + Takens) reportada conjuntamente con discrepancia declarada; recuperar Camastra-Staiano 2016 antes de invocar paginación; reescritura del Paso 3 pendiente.
 
 ## Cierre
@@ -3520,6 +3553,9 @@ Las teorías iniciales (T0–T12) verifican la lógica metodológica del marco; 
 - Auditoría de vacíos estructurales: `Auditoria_V5_Vacios_Estructurales.md`.
 
 ## Deuda residual
+
+(Deuda declarada el 2026-05-11 — fecha del commit que introdujo esta sección.)
+
 
 - **Limitación 1.** §ST-1 (líneas 21-23) plantea la asimetría L1↔B↔L3↔S como `∀x ∃y ...` (existencial sobre cada cuantificador), lo que la deja **trivialmente satisfacible** por rivales: cualquier teoría rival puede atestiguar `∃` con algún caso de su preferencia. La fuerza de la asimetría requiere o bien regularidad operativa (frontera de dominio declarada) o bien existencial calificado contra rival nombrado. Camino de resolución: añadir frontera de dominio (`∀x ∈ D ∃y ∈ D' ...`) con `D`, `D'` operativamente definidos sobre el corpus; declarar costo: la asimetría así pierde universalidad y se sostiene sólo sobre el dominio del corpus.
 
@@ -4080,6 +4116,9 @@ El caso 30 no demuestra cierre operativo específico en escala conductual. Su ED
 
 ## Deuda residual
 
+(Deuda declarada el 2026-05-11 — fecha del commit que introdujo esta sección.)
+
+
 - **Limitación 1.** El Bloque VI (Null, Nivel 0) agrega casos heterogéneos que requieren distinguir tres regímenes operativamente distintos: (i) nulls genuinos (EDI ≈ 0, p > 0.05), (ii) caso con EDI fuertemente negativo (degradación bajo acoplamiento), (iii) casos rechazados por gate C1-C5 antes del cómputo de EDI. La subdivisión vigente en bloques 0a / 0b / 0c / 0d (más Bloque VI.5 de falsificación local) atiende esa distinción; el conteo agregado preserva el total pero hace visible la diferencia operativa entre "el aparato no detecta señal" vs "el aparato detecta degradación" vs "el aparato rechaza antes de calcular". Paralela en `06-cierre/01-conclusion-demostrativa.md` §4.1 y `06-cierre/_extendido/versiones-cortas-defensa.md`.
 
 ## Lectura cruzada
@@ -4399,6 +4438,9 @@ Este capítulo demuestra cuatro cosas.
 No demuestra que la tesis funcione en todos los dominios mencionados en su versión general. Mente, identidad, mercados, instituciones, ecología requieren cada uno su propio caso paradigmático trabajado. Lo que el capítulo demuestra es que cuando el dominio admite tarea, medición y acoplamiento empíricamente identificable, el aparato funciona y mejora respecto a alternativas. Eso es lo máximo que puede pedir un caso, y es exactamente lo que el profesor pedía.
 
 ## Deuda residual
+
+(Deuda declarada el 2026-05-11 — fecha del commit que introdujo esta sección.)
+
 
 - **Limitación 1.** Las líneas 163 y 188 reportan ajustes Fajen-Warren / Yilmaz-Warren con r² = 0.98 sin declarar (a) que el modelo tiene siete parámetros libres ajustados conjuntamente sobre el mismo conjunto de datos, (b) que no se reporta cross-validation hold-out ni leave-one-out, y (c) que la crítica de Roberts y Pashler 2000 (*Psych Rev* 107: 358-367) sobre "How persuasive is a good fit? A comment on theory testing" advierte contra interpretar r² alto como evidencia de teoría correcta cuando los parámetros libres son comparables al número de observaciones. PDF Roberts-Pashler 2000 ausente en `07-bibliografia/`. Camino de resolución: recuperar Roberts-Pashler 2000 y, antes de redactar el §"Costo argumental" del capítulo, declarar (a) número de parámetros libres, (b) ausencia de cross-validation y (c) la advertencia de Roberts-Pashler como costo asumido por el capítulo.
 
@@ -4781,6 +4823,9 @@ Este capítulo conjetura. No demuestra. La elevación a modo demostrativo requie
 
 ## 11. Deuda residual
 
+(Deuda declarada el 2026-05-11 — fecha del commit que introdujo esta sección.)
+
+
 - **Limitación 1.** §2.6 (líneas 63-112) invoca "datos publicados sobre consolidación, memoria implícita, reconsolidación" sin citar a los autores canónicos de psicología y neurociencia de la memoria: Tulving 1972 (memoria episódica/semántica), Schacter 1996 (memoria implícita), Squire 1992 (memoria declarativa/no-declarativa) y Nader-Schafe-LeDoux 2000 (reconsolidación amigdalar). Ninguno de los PDFs está en `07-bibliografia/`. Camino de resolución: recuperar Tulving 1972, Schacter 1996, Squire 1992 y Nader et al. 2000 antes de cerrar engagement de §2.6 con paginación.
 - **Limitación 2.** §3 (líneas 114-156) desarrolla "yo como atractor de integración multinivel" mencionando RHI (Rubber Hand Illusion) pero sin engagement primario con Damasio 1999 (*The Feeling of What Happens*), LeDoux 2002 (*Synaptic Self*), Botvinick-Cohen 1998 (RHI original) ni Tsakiris 2010 (modelo bayesiano de ownership). PDFs ausentes en `07-bibliografia/`. Camino de resolución: recuperar Damasio 1999, LeDoux 2002, Botvinick-Cohen 1998 y Tsakiris 2010 antes de cerrar §3, o reescribir §3 declarando explícitamente que es "hipótesis programática sin engagement bibliográfico cerrado".
 - **Limitación 3.** §7.1 (líneas 220-225) omite la distinción de Block 1995 (*BBS*) entre consciencia de acceso (A-consciousness) y consciencia fenoménica (P-consciousness), central en filosofía de la conciencia post-1995. PDF Block 1995 ausente en `07-bibliografia/`. Camino de resolución: recuperar Block 1995 antes de cerrar §7.1.1 con engagement explícito sobre cuál de las dos modalidades de consciencia es candidata legítima a κ-pragmática vs cuál queda fuera del alcance del aparato.
@@ -5023,6 +5068,9 @@ Este capítulo conjetura. La elevación a modo demostrativo requiere adoptar un 
 
 ## 10. Deuda residual
 
+(Deuda declarada el 2026-05-11 — fecha del commit que introdujo esta sección.)
+
+
 - **Limitación 1.** El caso 04 utiliza Lotka-Volterra y el caso 16 utiliza von Thünen como sondas ODE sin discutir el rango de validez ni las críticas canónicas de la teoría ecológica matemática: May 1973 (*Stability and Complexity in Model Ecosystems*) sobre el equilibrio inestable de comunidades complejas, y Levin 1992 (*Ecology* 73: pattern and scale) sobre la dependencia de la dinámica respecto a la escala espacio-temporal. PDFs ausentes en `07-bibliografia/`. Camino de resolución: añadir §4.7 "Justificación de sondas ecológicas" tras recuperar May 1973 y Levin 1992, declarando explícitamente el rango de aplicabilidad de LV y von Thünen al corpus EDI y los costos de elegir esas sondas frente a alternativas (Holling 1973 resilience, Scheffer 2001 regime shifts).
 
 
@@ -5156,6 +5204,9 @@ Este caso es valioso pedagógicamente: muestra con claridad mínima de filosofí
 Este capítulo articula la conjetura con claridad, pero falta el modelo dinámico cuantitativo con datos públicos que eleve a demostrativo. La elevación es plausible y se prioriza en hoja de ruta.
 
 ## 9. Deuda residual
+
+(Deuda declarada el 2026-05-11 — fecha del commit que introdujo esta sección.)
+
 
 - **Limitación 1.** §6.3 (línea 114) cita Beyer, Jones, Petoff y Murphy 2016 (*Site Reliability Engineering*) sin PDF en `07-bibliografia/`, declarando "mención secundaria". La tabla de homologías SLO ↔ tolerancia τ, error budget ↔ región de admisibilidad, circuit breaker ↔ operador ε, postmortem ↔ auditoría ontológica funciona retóricamente pero **no está formalizada**: ninguna de esas homologías está respaldada por isomorfismo declarado entre los operadores SRE y los operadores del aparato. Adicionalmente, el material sobre *circuit breaker* del libro está en el cap.22 ("Addressing Cascading Failures"), no en el cap.4 — aceptación previa confundía los capítulos. Camino de resolución: o bien reducir §6.3 a ilustración informal explícitamente declarada como tal (sin tabla de homologías), o recuperar el PDF y formalizar el isomorfismo con paginación correcta (cap.4 SLO/error budget; cap.22 circuit breaker).
 
@@ -5550,6 +5601,9 @@ La tesis ocupa un punto difícil pero filosóficamente fértil: austera como el 
 El compromiso público de discriminación (que la tesis muestre ventaja en al menos dos celdas contra cada rival, bajo pena de admitir absorción y reformularse) está fijado y declarado en `04-debates/03-tabla-comparativa-rivales.md` §"Compromiso público". Este capítulo no lo duplica.
 
 ## Deuda residual
+
+(Deuda declarada el 2026-05-11 — fecha del commit que introdujo esta sección.)
+
 
 - **Limitación 1.** El tratamiento del dualismo como posición monolítica en la matriz canónica de `04-debates/03 §1` no distingue el dualismo de propiedades **naturalista** de Chalmers 1996 (*The Conscious Mind*), que acepta sustrato físico, del dualismo de propiedades **anti-naturalista**. La valoración "✗" en la columna A (sustrato físico) es hombre de paja contra la versión naturalista; sólo aplica a la versión anti-naturalista. PDF *The Conscious Mind* ausente en `07-bibliografia/`. Camino de resolución: dividir la fila 1 de la tabla en 1a (naturalista) y 1b (anti-naturalista) con valoraciones distintas en A; recuperar Chalmers 1996. Validación de la división filosófica pendiente de decisión autoral.
 - **Limitación 2.** §3.5 sostiene la cláusula "Wolfram fundamenta; la tesis disciplina" como síntesis discursiva. La complementariedad es asimétrica modalmente — si la Ruliad de Wolfram realiza su pretensión fundacional, la tesis material-relacional queda **subsumida** como caso particular de hypergraph rewriting, no preservada como alternativa. La complementariedad presupone que Wolfram no entrega su pretensión fundacional, lo cual es deuda futura no resuelta. Camino de resolución: declarar complementariedad asimétrica modal explícita (cláusula "si Wolfram entrega → tesis subsumida; si no → complementariedad sostenida"). Paralela en `04-debates/03-tabla-comparativa-rivales.md` §216.
@@ -6686,6 +6740,9 @@ Dirección de marcha actual. Variable conductual clave en locomoción (Fajen y W
 ---
 
 ## Deuda residual operativa
+
+(Deuda declarada el 2026-05-24 — fecha del commit que introdujo esta sección.)
+
 
 - **Limitación 1.** **`edi.valid`**. La p-value reportada en `metrics.json` es válida para un único contraste (`α=0.05`). El corpus contiene m=30 contrastes; bajo control FWER (Holm-Bonferroni, umbral 0.0031), sólo 14 casos sobreviven. La validez "en test único" no implica validez "bajo control de errores familiares". Camino de resolución: distinguir explícitamente en cada cifra de p-value reportada cuál es el régimen aplicado.
 - **Limitación 2.** **Permutación EDI**. El test de permutación en `09-simulaciones-edi/common/hybrid_validator.py:174` opera con `iid` sobre índices temporales. Para series con ACF > 0 (mayoría del corpus), los p-values están **subestimados** — resultado estándar de Davison-Hinkley 1997 (*Bootstrap Methods and their Application*, cap. 8). Camino de resolución: implementar `block_permutation_test_edi` con tamaño de bloque adaptado a la longitud de decorrelación de cada serie; declarar la semántica actual como "permutación iid sin control de autocorrelación" hasta entonces.
