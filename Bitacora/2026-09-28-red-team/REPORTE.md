@@ -69,11 +69,28 @@ Fix: `CASE_CONFIG_JSON`/arg + campo `config_file` en metrics.json (04
 re-ejecutado canónico: EDI=0.1571 exacto). Documentado en VALIDACION.md §4,
 05-07 §Reproducibilidad, 09-README §5. Trampa análoga pendiente en 20/24.
 
+## Ronda de cierre + red-team sobre correcciones (2026-09-28T04:12Z, HEAD 3d8cc1f)
+
+- Sentencia juez cierre: `complete=true`, `fatal=[]` (M4/M5 aguantan en
+  lineal; bypass no-lineal probado con impacto corpus 0; E1–E10 verificados).
+- Reconciliación e7e0adf (verificación directa propia, JSON gana): mapa
+  filas 14/22/12/25/29/01 a canónico; hedges E6/E7/E8; comentarios E1/E2/E3;
+  banner legacy E5; VALIDACION exacta; TAREAS TREND-NONLIN/EPS-DERIV/
+  PROBE-DET abiertas, MAPA-REG cerrada.
+- Red-team sobre e7e0adf: AF3/AF4 SOSTENIDOS; AF1/AF2 DEBILITADOS →
+  3d8cc1f adopta regla máquina trend/null (`hybrid_validator.py:2008-2016`),
+  01/28→trend, convención reescrita. `fatal[]` vacío. Rerun independiente
+  caso 01 por red-team: EDI=0.0030, pass=False.
+- Vercel prod Ready sirviendo 3d8cc1f (allow/deny + marcadores verificados).
+- Síntesis completa: `harness/reports/2026-09-28-tesis-pass.md` (local,
+  gitignore) — este REPORTE.md es su espejo versionado.
+
 ## Deudas abiertas por estas rondas
 
 - H-J-NEW-F2-KAPPA, H-J-NEW-FALSIF-1 (condición (1) "los 4 overall_pass se
   desmoronan" SE DISPARÓ → decisión autoral), B-T-NEW-P-THRESH (p 0.01 vs
-  0.05), B-E-NEW-EXTENDIDO (reescritura voz autoral), B-T-NEW-CLIMA-DATA.
+  0.05), B-E-NEW-EXTENDIDO (reescritura voz autoral), B-T-NEW-CLIMA-DATA,
+  B-T-NEW-TREND-NONLIN, B-T-NEW-EPS-DERIV, B-T-NEW-PROBE-DET.
 - Unresolved rondas (no re-ejecutados por mí): hostile 0/2000 y cruzado 0/12
   independientes; 13 condiciones C1-C5 línea por línea (solo C1 auditada a
   fondo); calibration.py/full_secondary_probes.py/preregistration.py.
