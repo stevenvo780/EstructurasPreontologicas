@@ -1,8 +1,16 @@
-numpy
-pandas
-meteostat
-yfinance
-scipy
-requests
-joblib
-pytrends
+# Motor EDI (09-simulaciones-edi/.venv).
+# Pineadas exactas 2026-09-28 con versiones verificadas en ejecución real
+# (validate.py casos 01, 06, 07, 08, 12, 13, 25: 6/7 reproducen bit-idéntico;
+# caso 01 corre con datos CONUS reales tras restaurar builder meteostat 2.x).
+# Reconstruir entorno:  cd 09-simulaciones-edi && python3 -m venv .venv && .venv/bin/pip install -r requirements.txt
+numpy==2.5.3
+pandas==3.0.6
+scipy==1.18.1
+joblib==1.6.0
+requests==2.34.2
+networkx==3.7
+statsmodels==0.15.0
+scikit-learn==1.9.1
+meteostat==2.1.5
+yfinance==1.7.0
+pytrends==4.9.2

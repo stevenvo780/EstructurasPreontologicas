@@ -95,3 +95,11 @@
 ### Interpretación
 **Nivel 0 — Sin cierre operativo.** No se detecta constricción macro→micro significativa con los datos y parámetros actuales.
 
+
+## Discrepancia con pre-registro (generada automáticamente)
+
+- **Predicción pre-registro:** Null (EDI esperado ≈ -0.0070, margen |ΔEDI| ≤ 0.10).
+- **Resultado real (phases.real):** Falsificacion — EDI = -0.0121, p_perm = 0.3153, CI 95% = [-0.0164, -0.0099].
+- **Diferencia:** |ΔEDI| = 0.0051; dirección: downgrade (Null → Falsificacion).
+- **Declaración:** DISCREPANCIA RECONOCIDA. Contraevidencia declarada según PRE_REGISTRO.md §6: la discrepancia honesta es virtud, no fallo.
+

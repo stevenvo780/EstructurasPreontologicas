@@ -86,7 +86,7 @@ Test 6: ningún invariante implica circular hacia atrás.
 ### stdout
 
 ```text
-✓ /datos/repos/EstructurasPreontologicas/08-consistencia-st/theories/01-criterios-legitimidad.st: sin errores
+✓ /datos/workspaces/personal/EstructurasPreontologicas/08-consistencia-st/theories/01-criterios-legitimidad.st: sin errores
 ```
 
 ## theories/02-debates-y-limites.st
@@ -98,7 +98,7 @@ Test 6: ningún invariante implica circular hacia atrás.
 ### stdout
 
 ```text
-✓ /datos/repos/EstructurasPreontologicas/08-consistencia-st/theories/02-debates-y-limites.st: sin errores
+✓ /datos/workspaces/personal/EstructurasPreontologicas/08-consistencia-st/theories/02-debates-y-limites.st: sin errores
 ```
 
 ## theories/03-text-layer-tesis.st

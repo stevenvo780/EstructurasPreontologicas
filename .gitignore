@@ -9,11 +9,12 @@
 09-simulaciones-edi/**/*.pyc
 09-simulaciones-edi/**/*.pyo
 
-# Cache de datos descargados (se regeneran ejecutando los casos)
+# Cache de datos descargados voluminosos (se regeneran ejecutando los casos)
 09-simulaciones-edi/data_cache/
-09-simulaciones-edi/**/data/*.csv
-09-simulaciones-edi/**/data/*.json
 09-simulaciones-edi/**/data_cache/
+# NOTA 2026-09-28: los inputs por caso (*/data/*.csv + FETCH_MANIFEST*.json, ~0.4MB)
+# SI se versionan como fixtures exactos para validacion independiente bit-a-bit.
+# Solo data_cache/ (descargas pesadas regenerables via data.py) queda ignorado.
 
 # Outputs antiguos no canónicos (los canónicos están versionados)
 09-simulaciones-edi/**/outputs/*.tmp

@@ -2,6 +2,11 @@
 
 CLAUDE.md §4: si la prosa contradice la config, gana el código ejecutado.
 B-T6 declara disonancias específicas: 03/12/29.
+
+2026-09-28: se corrigió bug de precedencia (`A or B or C if cond else D`
+evaluaba la rama-false para TODA la cadena → real={} siempre, pass vacuoso)
+y se añadió el patrón de filas de tabla `| **NN Nombre** | **`sonda`**`
+porque el doc reconciliado declara las sondas en tabla, no en prosa.
 """
 from __future__ import annotations
 import json
@@ -44,6 +49,16 @@ def main() -> dict:
                       "metcalfe", "difusión", "difusion"]:
             if sonda in block:
                 declared.setdefault(num, set()).add(sonda)
+    # Patrón tabla reconciliada: | **NN Nombre** | **`sonda`** | ... |
+    # (la celda es bold-que-envuelve-código: **`sonda`**)
+    table_row_rx = re.compile(
+        r'\|\s*\*\*(\d+)\s+[^*|]+\*\*\s*\|\s*\*{0,2}`([^*`]+)`\*{0,2}'
+    )
+    for m in table_row_rx.finditer(doc_text):
+        num = m.group(1).zfill(2)
+        sonda = m.group(2).strip().lower()
+        if sonda:
+            declared.setdefault(num, set()).add(sonda)
 
     # Extraer sondas reales de case_config.json
     real = {}
@@ -58,11 +73,13 @@ def main() -> dict:
                 cfg = json.load(f)
         except Exception:
             continue
-        # buscar campo sonda
+        # buscar campo sonda (sin ternario: la precedencia tragaba toda la cadena)
+        ode_cfg = cfg.get("ode")
+        ode_model = ode_cfg.get("model") if isinstance(ode_cfg, dict) else None
         sonda = (
-            cfg.get("ode_model") or cfg.get("sonda")
-            or cfg.get("ode", {}).get("model") if isinstance(cfg.get("ode"), dict) else None
-        ) or cfg.get("probe")
+            cfg.get("ode_model") or cfg.get("sonda") or ode_model
+            or cfg.get("probe")
+        )
         if isinstance(sonda, str):
             real[num] = sonda.lower()
 

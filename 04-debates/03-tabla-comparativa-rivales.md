@@ -254,6 +254,9 @@ Esta tabla es compromiso. Si en algún rival la tesis no muestra ventaja en al m
 
 ## Deuda residual
 
+(Deuda declarada el 2026-05-11 — fecha del commit que introdujo esta sección.)
+
+
 - **Limitación 1.** Fila 1 de la tabla (Dualismo de propiedades, línea 34) marca "✗" en la columna A (sustrato físico). El dualismo de propiedades **naturalista** (Chalmers 1996, *The Conscious Mind*, cap. 4 «Naturalistic Dualism»; PDF no disponible localmente, referencia secundaria pendiente de verificación) acepta sustrato físico; el "✗" es hombre de paja contra esa versión. Camino de resolución: dividir fila 1 en 1a (naturalista, A=✓) y 1b (anti-naturalista, A=✗); recuperar Chalmers 1996 *The Conscious Mind*; validación de la división filosófica pendiente de decisión autoral. Paralela en `04-debates/01-debates-con-posiciones-rivales.md` §2.
 - **Limitación 2.** Fila Wolfram (línea 216 aprox.) presenta complementariedad simétrica con la tesis. Asimetría modal oculta: si la Ruliad realiza su pretensión fundacional, la tesis queda subsumida. Camino de resolución: añadir cláusula de complementariedad asimétrica modal en la nota de la fila. Paralela en `04-debates/01-debates-con-posiciones-rivales.md` §13.
 - **Limitación 3.** "Compromiso público" (líneas 222-224) sin árbitro externo: auto-arbitraje. Camino de resolución: añadir cláusula de árbitro externo (director y jurado) o declarar explícitamente la limitación. Paralela en `04-debates/01-debates-con-posiciones-rivales.md`, sección "Compromiso público".

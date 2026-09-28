@@ -73,7 +73,7 @@ case "$cmd" in
 
   metrics)
     python3 "$SCRIPTS/build/sync_outputs_to_tesis.py"
-    python3 "$SCRIPTS/build/regenerar_readmes.py"
+    # regenerar_readmes.py retirado 2026-09-28 (destruiría READMEs a mano).
     python3 "$SCRIPTS/build/evaluar_simulaciones.py" --write
     python3 "$SCRIPTS/build/actualizar_tablas_002.py"
     ;;

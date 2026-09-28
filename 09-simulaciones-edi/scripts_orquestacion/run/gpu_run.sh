@@ -56,12 +56,12 @@ set -euo pipefail
 
 # ── Rutas ─────────────────────────────────────────────────────────────────────
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
-SIM_DIR="$(cd "$SCRIPT_DIR/../../Simulaciones" && pwd)"
+SIM_DIR="$(cd "$SCRIPT_DIR/../.." && pwd)"
 ROOT_DIR="$(cd "$SCRIPT_DIR/../../.." && pwd)"
-SYNC_OUTPUTS_SCRIPT="$ROOT_DIR/repos/scripts/build/sync_outputs_to_tesis.py"
-REGEN_READMES_SCRIPT="$ROOT_DIR/repos/scripts/build/regenerar_readmes.py"
-UPDATE_TABLES_SCRIPT="$ROOT_DIR/repos/scripts/build/actualizar_tablas_002.py"
-TESIS_CLI_SCRIPT="$ROOT_DIR/repos/scripts/tesis.py"
+SYNC_OUTPUTS_SCRIPT="$SCRIPT_DIR/../build/sync_outputs_to_tesis.py"
+UPDATE_TABLES_SCRIPT="$SCRIPT_DIR/../build/actualizar_tablas_002.py"
+TESIS_CLI_SCRIPT="$SCRIPT_DIR/../tesis.py"
+# regenerar_readmes.py retirado 2026-09-28 (ver build/regenerar_readmes.py).
 
 # ── Defaults ──────────────────────────────────────────────────────────────────
 PARTS=1
@@ -777,10 +777,6 @@ run_post_sync() {
 
     if ! python3 "$SYNC_OUTPUTS_SCRIPT" "${case_args[@]}"; then
         echo "  ERROR: falló sync_outputs_to_tesis.py"
-        rc=1
-    fi
-    if ! python3 "$REGEN_READMES_SCRIPT" "${case_args[@]}"; then
-        echo "  ERROR: falló regenerar_readmes.py"
         rc=1
     fi
     if ! python3 "$UPDATE_TABLES_SCRIPT"; then

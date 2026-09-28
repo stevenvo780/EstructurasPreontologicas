@@ -23,16 +23,18 @@ import numpy as np
 import pandas as pd
 
 
-def fetch_crypto_daily(start_date, end_date, cache_path=None, seed=42):
-    """Genera par de tendencias independientes (regresión espuria)."""
+def fetch_crypto_daily(start_date, end_date, cache_path=None, seed=42, freq="D"):
+    """Genera par de tendencias independientes (regresión espuria).
+
+    freq="D" reproduce el CSV canónico (1462 filas diarias 2020-2024, seed 42)
+    que respalda outputs/metrics.json. Ver __main__ para regenerar el caché.
+    """
     if cache_path and os.path.exists(cache_path):
         df = pd.read_csv(cache_path, parse_dates=["date"])
         return df
 
     rng = np.random.default_rng(seed)
-    dates = pd.date_range(start=start_date, end=end_date, freq="YS")
-    if len(dates) < 5:
-        dates = pd.date_range(start=start_date, end=end_date, freq="MS")
+    dates = pd.date_range(start=start_date, end=end_date, freq=freq)
     n = len(dates)
     t = np.arange(n, dtype=float)
 
@@ -53,4 +55,13 @@ def fetch_crypto_daily(start_date, end_date, cache_path=None, seed=42):
         df.to_csv(cache_path, index=False)
 
     return df
+
+
+if __name__ == "__main__":
+    # Regenera el caché ignorado por git con los parámetros canónicos
+    # (verificado 2026-09-28: reproduce outputs/metrics.json bit-idéntico).
+    _here = os.path.dirname(os.path.abspath(__file__))
+    _csv = os.path.join(_here, "..", "data", "crypto.csv")
+    _df = fetch_crypto_daily("2020-01-01", "2024-01-01", cache_path=_csv)
+    print(f"OK: {os.path.abspath(_csv)} ({len(_df)} filas)")
 

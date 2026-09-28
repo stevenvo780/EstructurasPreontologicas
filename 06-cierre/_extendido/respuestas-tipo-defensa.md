@@ -87,6 +87,9 @@ Mapeo directo de las 12 preguntas más probables del tribunal doctoral a respues
 
 ## Deuda residual heredada
 
+(Deuda declarada el 2026-05-11 — fecha del commit que introdujo esta sección.)
+
+
 - **Limitación 1.** Ver nota inline junto a P4 (más arriba).
 - **Limitación 2.** La respuesta sobre eliminativismo (Trampa 4 en `06-cierre/02-guia-de-defensa.md §4`) responde a "eliminar de más" sin responder a la objeción complementaria "eliminar **de menos**": los casos null del corpus podrían exigir eliminación regional de la categoría asociada (si la sonda no detecta cierre operativo, ¿por qué se preserva el término?). Camino de resolución: añadir sub-respuesta articulando la doble exigencia (no eliminar de más, no preservar de más); corte filosófico sobre umbral de eliminación regional pendiente de decisión autoral.
 

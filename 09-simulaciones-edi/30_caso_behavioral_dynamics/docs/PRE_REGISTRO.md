@@ -7,7 +7,7 @@
 - **Caso:** `30_caso_behavioral_dynamics` — Locomoción dirigida (Fajen & Warren 2003; sonda `behavioral_attractor` de segundo orden)
 - **Fecha de pre-registro:** `2026-05-17` (firma previa al B-T2 que reemplaza el sintético basado en ecuación publicada por captura de movimiento humano real)
 - **Pre-registrador:** asistencia IA bajo dirección de Steven Vallejo
-- **Commit del repo en el momento del registro:** `c6b3d3b2bbe21b28c8afc0a3e1c740eca55fc3b0`
+- **Commit del repo en el momento del registro:** `70a4e374df82475261461110f3e4e21a5e0f455e` (re-sellado 2026-09-28; sello original `c6b3d3b2bbe21b28c8afc0a3e1c740eca55fc3b0` — ver §8)
 
 ## 2. Hipótesis y predicciones
 
@@ -76,3 +76,13 @@ Si el resultado no coincide con la predicción de §2, se reporta honestamente c
 - **Autor (Jacob Agudelo):** ___________________  Fecha: `YYYY-MM-DD`
 - **Co-firma técnica (Steven Vallejo):** ___________________  Fecha: `YYYY-MM-DD`
 - **Asistencia IA bajo dirección humana** (declarativo, no firmante): Claude Opus 4.7 (1M context)
+
+## 8. Adenda: violación, reversión y re-sellado (2026-09-28)
+
+Historial completo preservado — el sello del §1 se movió, la violación no se borra:
+
+- **Sello original:** `c6b3d3b2bbe21b28c8afc0a3e1c740eca55fc3b0` (2026-05-17).
+- **Violación (`e5c85f4`, 2026-05-17, ~3h tras el sello):** `case_config.json` ganó el campo `real_data_note` ("Real phase now uses Google Mobility proxy…") y `version` pasó a `v3 real Google Mobility 2026-05-17`. Google Mobility COVID-19 **no** estaba en este pre-registro (§4 declara VENLab/OpenLocomotionData/WALK-MS). EDI observado bajo config violada: 0.6143.
+- **Reversión (`32e2fff`, 2026-05-17):** campo `real_data_note` eliminado, `version` restaurada a `v2 sonda segundo orden 2026-04-27`. EDI revertido a 0.262 (Weak). Auditoría: `Bitacora/2026-05-17-loop-nocturno/auditoria-config-caso30.md`.
+- **Verificación de contenido (2026-09-28):** `git show c6b3d3b:…/case_config.json` es byte-idéntico al `case_config.json` actual (`diff` vacío). La violación fue de historial, no de estado final.
+- **Re-sellado:** sello movido a `70a4e374df82475261461110f3e4e21a5e0f455e` (HEAD al momento del re-sellado; `case_config.json` limpio contra HEAD). El verificador `preregistration` chequea integridad desde el sello vigente; esta adenda conserva la trazabilidad de la violación para auditoría humana.

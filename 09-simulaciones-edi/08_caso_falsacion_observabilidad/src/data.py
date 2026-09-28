@@ -25,18 +25,19 @@ import numpy as np
 import pandas as pd
 
 
-def fetch_sparse_happiness(cache_path, start_year=2011, end_year=2023, seed=42):
+def fetch_sparse_happiness(cache_path, start_year=2005, end_year=2023, seed=42,
+                           freq="MS"):
     """Genera datos sintéticos confounder: target con oscilación oculta,
-    driver que solo captura la tendencia."""
+    driver que solo captura la tendencia.
+
+    Defaults = CSV canónico (217 filas mensuales 2005-2023, seed 42) que
+    respalda outputs/metrics.json. Ver __main__ para regenerar el caché.
+    """
     rng = np.random.default_rng(seed)
 
     dates = pd.date_range(start=f"{start_year}-01-01",
-                          end=f"{end_year}-01-01", freq="YS")
+                          end=f"{end_year}-01-01", freq=freq)
     n = len(dates)
-    if n < 5:
-        dates = pd.date_range(start=f"{start_year}-01-01",
-                              end=f"{end_year}-01-01", freq="MS")
-        n = len(dates)
     t = np.arange(n, dtype=float)
 
     # Causa oculta Z: tendencia + oscilación rápida
@@ -64,4 +65,13 @@ def fetch_sparse_happiness(cache_path, start_year=2011, end_year=2023, seed=42):
     meta = {"source": "Synthetic Confounder", "start_year": start_year,
             "end_year": end_year}
     return df, meta
+
+
+if __name__ == "__main__":
+    # Regenera el caché ignorado por git con los parámetros canónicos
+    # (verificado 2026-09-28: reproduce outputs/metrics.json bit-idéntico).
+    _here = os.path.dirname(os.path.abspath(__file__))
+    _csv = os.path.join(_here, "..", "data", "sparse_happiness.csv")
+    _df, _ = fetch_sparse_happiness(_csv)
+    print(f"OK: {os.path.abspath(_csv)} ({len(_df)} filas)")
 

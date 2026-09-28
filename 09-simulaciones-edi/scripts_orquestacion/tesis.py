@@ -10,11 +10,11 @@ Subcomandos:
     validate   Ejecuta simulaciones y actualiza métricas
 
 Uso:
-    python3 scripts/tesis.py scaffold --id 19 --name biodiversidad --title "Biodiversidad"
-    python3 scripts/tesis.py build
-    python3 scripts/tesis.py sync
-    python3 scripts/tesis.py audit
-    python3 scripts/tesis.py validate --case caso_clima
+    python3 09-simulaciones-edi/scripts_orquestacion/tesis.py scaffold --id 19 --name biodiversidad --title "Biodiversidad"
+    python3 09-simulaciones-edi/scripts_orquestacion/tesis.py build
+    python3 09-simulaciones-edi/scripts_orquestacion/tesis.py sync
+    python3 09-simulaciones-edi/scripts_orquestacion/tesis.py audit
+    python3 09-simulaciones-edi/scripts_orquestacion/tesis.py validate --case caso_clima
 """
 
 import argparse
@@ -27,16 +27,17 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 # ─── Rutas ────────────────────────────────────────────────────────────────────
+# Layout real (mono-repo): los casos viven en 09-simulaciones-edi/NN_caso_*/.
+# Las rutas legacy TesisDesarrollo/ y repos/Simulaciones se retiraron 2026-09-28.
 
 ROOT = Path(__file__).resolve().parent.parent.parent
 SCRIPTS_DIR = Path(__file__).resolve().parent
 TEMPLATES_DIR = SCRIPTS_DIR / "templates" / "caso"
 MANIFEST_PATH = SCRIPTS_DIR / "tesis_manifest.json"
 
-TESIS_DEV = ROOT / "TesisDesarrollo"
+EDI_DIR = SCRIPTS_DIR.parent  # 09-simulaciones-edi — casos reales NN_caso_*
 TESIS_FINAL = ROOT / "TesisFinal"
-CASES_DIR = TESIS_DEV / "02_Modelado_Simulacion"
-REPOS_SIM = ROOT / "repos" / "Simulaciones"
+CASES_DIR = EDI_DIR
 
 
 # ─── Motor de plantillas ─────────────────────────────────────────────────────
@@ -75,7 +76,7 @@ def load_manifest():
 
 
 def find_cases():
-    """Descubre directorios XX_caso_* en TesisDesarrollo/02_Modelado_Simulacion."""
+    """Descubre directorios NN_caso_* en 09-simulaciones-edi/."""
     if not CASES_DIR.exists():
         return []
     return sorted(
@@ -84,23 +85,12 @@ def find_cases():
     )
 
 
-def case_slug(case_dir):
-    """Extrae el slug (sin número) de un directorio de caso."""
-    m = re.match(r'\d{2}_(caso_\w+)', case_dir.name)
-    return m.group(1) if m else case_dir.name
-
-
 def load_metrics(case_dir):
-    """Busca metrics.json priorizando outputs frescos de Simulaciones."""
+    """Lee outputs/metrics.json del caso (fuente de verdad numérica)."""
     case_name = case_dir.name
-    slug = case_slug(case_dir)
     candidates = [
-        REPOS_SIM / case_name / "outputs" / "metrics.json",
-        case_dir / "metrics.json",
-        REPOS_SIM / case_name / "metrics.json",
-        # Compatibilidad con nombres legacy sin prefijo numérico.
-        REPOS_SIM / slug / "outputs" / "metrics.json",
-        REPOS_SIM / slug / "metrics.json",
+        case_dir / "outputs" / "metrics.json",
+        EDI_DIR / case_name / "outputs" / "metrics.json",
     ]
     for mf in candidates:
         if mf.exists():
@@ -197,288 +187,20 @@ def cmd_scaffold(args):
 # ─── BUILD ────────────────────────────────────────────────────────────────────
 
 def cmd_build(args):
-    """Ensambla TesisFinal/Tesis.md desde secciones + tabla de casos automática."""
-    manifest = load_manifest()
-    meta = manifest.get("metadata", {})
-    sections = manifest.get("thesis_sections", [])
+    """Ensambla TesisFinal/Tesis.md vía el ensamblador canónico.
 
-    parts = []
-    toc_entries = []
-
-    # Header
-    parts.append(
-        f"# {meta.get('title', 'Tesis')}\n"
-        f"**{meta.get('subtitle', '')}**  \n"
-        f"**Autores:** {meta.get('author', '')}  \n"
-        f"**Fecha:** {meta.get('date', '')}  \n"
-        f"\n> Documento ensamblado automáticamente por `tesis.py build` "
-        f"el {datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M UTC')}  \n"
-        f"> Fuente de verdad: `TesisDesarrollo/`\n"
-    )
-
-    # Ensamblar secciones
-    loaded = 0
-    case_table = _build_case_summary_table()
-    case_table_injected = False
-    
-    for sec in sections:
-        source = ROOT / sec["source"]
-        if not source.exists():
-            if sec.get("optional"):
-                continue
-            print(f"[WARN] No encontrada: {source.relative_to(ROOT)}")
-            continue
-
-        content = source.read_text(encoding="utf-8").strip()
-        
-        # Inyectar tabla de casos si hay placeholder
-        if "<!-- AUTO:MATRIZ_DETALLADA -->" in content and case_table:
-            content = content.replace("<!-- AUTO:MATRIZ_DETALLADA -->", case_table)
-            case_table_injected = True
-        
-        loaded += 1
-
-        # Extraer título para TOC
-        h_match = re.search(r'^#{1,2}\s+(.+)$', content, re.MULTILINE)
-        title = h_match.group(1) if h_match else sec.get("title", f"Sección {loaded}")
-        anchor = re.sub(r'[^\w\s-]', '', title.lower()).strip().replace(' ', '-')
-        anchor = re.sub(r'-+', '-', anchor)
-        toc_entries.append(f"{loaded}. [{title}](#{anchor})")
-
-        parts.append(content)
-
-    # Generar tabla resumen de casos al final SOLO si no fue inyectada antes
-    if case_table and not case_table_injected:
-        parts.append(case_table)
-
-    # Componer documento final (temporal para extraer headers)
-    separator = "\n\n---\n\n"
-    temp_content = parts[0] + "\n\n" + separator.join(parts[1:])
-    
-    # Generar nueva TOC detallada
-    toc_lines = ["## Tabla de Contenidos\n"]
-    headers = []
-    lines = temp_content.splitlines()
-    thesis_title = meta.get('title', 'Tesis')
-    
-    for i, line in enumerate(lines):
-        if line.startswith("#"):
-            # Ignorar el título principal exacto si está al inicio
-            if i == 0 and thesis_title in line:
-                continue
-            # Ignorar la propia tabla de contenidos si ya existe o se detecta
-            if "Tabla de Contenidos" in line:
-                continue
-            headers.append(line)
-
-    for header in headers:
-        level = 0
-        while level < len(header) and header[level] == '#':
-            level += 1
-        if level > 4: continue # Limitar profundidad
-        
-        title = header.lstrip('#').strip()
-        # Generar anchor
-        anchor = title.lower()
-        anchor = re.sub(r'[^\w\s-]', '', anchor).strip().replace(' ', '-')
-        anchor = re.sub(r'-+', '-', anchor)
-        
-        indent = "  " * (level - 1)
-        toc_lines.append(f"{indent}- [{title}](#{anchor})")
-    
-    toc = "\n".join(toc_lines) + "\n"
-    final = parts[0] + "\n\n" + toc + separator + separator.join(parts[1:])
-
-    # Escribir
-    TESIS_FINAL.mkdir(exist_ok=True)
-    output = TESIS_FINAL / "Tesis.md"
-    output.write_text(final, encoding="utf-8")
-
-    line_count = final.count("\n") + 1
-    print(f"[OK] Tesis ensamblada: {output.relative_to(ROOT)}")
-    print(f"   Secciones: {loaded} | Líneas: {line_count}")
-    print(f"   Índice detallado generado.")
-    return 0
-
-
-
-
-# Mapeo categoría → nivel de cierre operativo (Irrealismo Operativo)
-NIVEL_MAP = {
-    'strong': 4, 'weak': 3, 'suggestive': 2, 'trend': 1, 'null': 0,
-    'falsification': None,  # Control — no se clasifica
-}
-
-
-
-def _build_case_summary_table():
-    """Genera Matriz de Protocolo Completa (32 × 11 criterios) desde metrics.json."""
-    cases = find_cases()
-    if not cases:
-        return ""
-
-    rows_validated = []
-    rows_rejected_high = []
-    rows_rejected_low = []
-    rows_falsacion = []
-
-    def yn(v):
-        return "Si" if v else "No"
-
-    def _get_bool(phase, key_dict, key_bool):
-        """Extrae booleano de un campo que puede ser dict o bool."""
-        val = phase.get(key_dict, {})
-        if isinstance(val, dict):
-            return val.get(key_bool, False)
-        return bool(val)
-
-    for case_dir in cases:
-        name = case_dir.name
-        metrics = load_metrics(case_dir)
-        if not metrics:
-            continue
-
-        phases = metrics.get("phases", {})
-        phase = phases.get("real", phases.get("synthetic", {}))
-        if not phase:
-            continue
-
-        errors = phase.get("errors", {})
-        edi_d = phase.get("edi", {})
-        if isinstance(edi_d, dict):
-            edi = edi_d.get("value", compute_edi(errors))
-        else:
-            edi = edi_d if edi_d else compute_edi(errors)
-
-        c1 = phase.get("c1_convergence", False)
-        c2 = phase.get("c2_robustness", False)
-        c3 = phase.get("c3_replication", False)
-        c4 = phase.get("c4_validity", False)
-        c5 = phase.get("c5_uncertainty", False)
-        sym = _get_bool(phase, "symploke", "pass")
-        nl = _get_bool(phase, "non_locality", "pass")
-        per = _get_bool(phase, "persistence", "pass")
-        emr = _get_bool(phase, "emergence", "pass")
-        cp_d = phase.get("coupling_check", {})
-        cp = _get_bool(phase, "coupling_check", "coupling_ok") if isinstance(cp_d, dict) else bool(cp_d)
-
-        overall = phase.get("overall_pass", False)
-        is_falsacion = "falsacion" in name
-
-        num = name.split("_")[0]
-        pretty = " ".join(name.split("_")[2:]).title()
-
-        if is_falsacion:
-            result = "Control (Rechazado)"
-            nivel_s = "—"
-        elif overall:
-            # Leer nivel de metrics o mapear
-            etax = phase.get("emergence_taxonomy", {})
-            nivel = etax.get("nivel")
-            if nivel is None:
-                cat = etax.get("category", "null")
-                nivel = NIVEL_MAP.get(cat, 0)
-            nivel_s = str(nivel)
-            result = "**Validado**"
-        else:
-            etax = phase.get("emergence_taxonomy", {})
-            nivel = etax.get("nivel")
-            if nivel is None:
-                cat = etax.get("category", "null")
-                nivel = NIVEL_MAP.get(cat, 0)
-            nivel_s = str(nivel) if nivel is not None else "0"
-            result = "Rechazado"
-
-        row = (f"| {num} | {pretty} | {edi:.3f} "
-               f"| {yn(c1)} | {yn(c2)} | {yn(c3)} | {yn(c4)} | {yn(c5)} "
-               f"| {yn(sym)} | {yn(nl)} | {yn(per)} | {yn(emr)} | {yn(cp)} "
-               f"| {nivel_s} | {result} |")
-
-        if is_falsacion:
-            rows_falsacion.append(row)
-        elif overall:
-            rows_validated.append((edi, row))
-        elif edi > 0.30:
-            rows_rejected_high.append((edi, row))
-        else:
-            rows_rejected_low.append((edi, row))
-
-    # Sort validated and rejected by EDI descending
-    rows_validated.sort(key=lambda x: -x[0])
-    rows_rejected_high.sort(key=lambda x: -x[0])
-
-    # Count failure modes in rejected genuine
-    failure_counts = {"C1": 0, "Emergence": 0, "Symploké": 0,
-                      "Persistencia": 0, "C5": 0, "C2": 0}
-    n_rejected = 0
-    for case_dir in cases:
-        name = case_dir.name
-        if "falsacion" in name:
-            continue
-        metrics = load_metrics(case_dir)
-        if not metrics:
-            continue
-        phase = metrics.get("phases", {}).get("real", {})
-        if phase.get("overall_pass", False):
-            continue
-        n_rejected += 1
-        if not phase.get("c1_convergence"): failure_counts["C1"] += 1
-        if not _get_bool(phase, "emergence", "pass"): failure_counts["Emergence"] += 1
-        if not _get_bool(phase, "symploke", "pass"): failure_counts["Symploké"] += 1
-        if not _get_bool(phase, "persistence", "pass"): failure_counts["Persistencia"] += 1
-        if not phase.get("c5_uncertainty"): failure_counts["C5"] += 1
-        if not phase.get("c2_robustness"): failure_counts["C2"] += 1
-
-    # Build output
-    lines = [
-        "\n## Resumen de Simulaciones",
-        "",
-        "> Tabla generada automáticamente desde `metrics.json` de cada caso.",
-        "",
-        "## Matriz de Clasificación Operativa (29 casos × 13 criterios + Nivel)",
-        "",
-        "Cada celda = resultado del criterio en **Fase Real** (`assimilation_strength = 0.0`). "
-        "**Nivel** = grado de cierre operativo (0–4, control = —). "
-        "**Validado** = 13 condiciones se cumplen simultáneamente (incluye EDI válido y EDI significativo).",
-        "",
-        "| # | Caso | EDI | C1 | C2 | C3 | C4 | C5 | Sym | NL | Per | Emr | Cp | Nivel | Result |",
-        "| :--- | :--- | ---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :--- |",
-    ]
-
-    # Validated first, then falsación, then rejected high EDI, then low EDI
-    for _, row in rows_validated:
-        lines.append(row)
-    for row in rows_falsacion:
-        lines.append(row)
-    for _, row in rows_rejected_high:
-        lines.append(row)
-    for _, row in rows_rejected_low:
-        lines.append(row)
-
-    n_rh = len(rows_rejected_high)
-    rh_label = "rechazado" if n_rh == 1 else "rechazados"
-    lines.append("")
-    lines.append(f"**Resumen:** {len(rows_validated)} validados (Nivel 4), "
-                 f"{n_rh} {rh_label} con EDI > 0.30 (selectividad), "
-                 f"{len(rows_falsacion)} controles de falsación, "
-                 f"{len(rows_rejected_low)} rechazados con EDI \u2264 0.30 (Nivel 0\u20133).")
-    lines.append("")
-
-    # Failure mode table
-    if n_rejected > 0:
-        lines.append("## Distribución de Modos de Fallo")
-        lines.append("")
-        lines.append(f"En los {n_rejected} rechazados genuinos:")
-        lines.append("")
-        lines.append("| Criterio | Fallos | % |")
-        lines.append("| :--- | :---: | :---: |")
-        for k in ["C1", "Emergence", "Symploké", "Persistencia", "C5", "C2"]:
-            v = failure_counts[k]
-            pct = 100 * v // n_rejected if n_rejected > 0 else 0
-            lines.append(f"| {k} | {v}/{n_rejected} | {pct}% |")
-        lines.append("")
-
-    return "\n".join(lines)
+    El ensamblado legacy desde TesisDesarrollo/ (thesis_sections de
+    tesis_manifest.json) se retiró 2026-09-28: ese árbol ya no existe y el
+    ensamblador canónico es TesisFinal/build.py (fuente: capítulos 00–08).
+    """
+    _ = args
+    builder = TESIS_FINAL / "build.py"
+    if not builder.exists():
+        print(f"[ERROR] Ensamblador canónico no encontrado: {builder}")
+        return 1
+    print("[INFO] tesis.py build delega en TesisFinal/build.py (ensamblador canónico).")
+    r = subprocess.run([sys.executable, str(builder)], cwd=str(ROOT))
+    return r.returncode
 
 
 # ─── SYNC ─────────────────────────────────────────────────────────────────────
@@ -486,6 +208,9 @@ def _build_case_summary_table():
 def cmd_sync(args):
     """Sincroniza metrics.json → bloques AUTO en docs. No toca prosa humana."""
     cases = find_cases()
+    if not cases:
+        print(f"[ERROR] No se encontró ningún caso en {CASES_DIR} (¿layout cambiado?)")
+        return 1
     case_filter = getattr(args, "case", None)
     if case_filter:
         cases = [c for c in cases if case_filter.lower() in c.name.lower()]
@@ -619,10 +344,23 @@ def cmd_audit(args):
         name = case_dir.name
         case_issues = []
 
-        # Estructura de archivos
-        for required in ["README.md", "report.md", "metrics.json"]:
-            if not (case_dir / required).exists():
-                case_issues.append(f"Falta {required}")
+        # Estructura de archivos (layout real: README/config/src/docs en raíz,
+        # métricas bajo outputs/). Casos 41/42 usan run.py en vez de src/.
+        is_special = not (case_dir / "src" / "validate.py").exists() and (
+            case_dir / "run.py"
+        ).exists()
+        if is_special:
+            case_issues.append("Caso especial (run.py, sin layout estándar src/)")
+        else:
+            for required in [
+                "README.md",
+                "case_config.json",
+                "src/validate.py",
+                "outputs/metrics.json",
+                "outputs/report.md",
+            ]:
+                if not (case_dir / required).exists():
+                    case_issues.append(f"Falta {required}")
 
         docs_dir = case_dir / "docs"
         if docs_dir.exists():
@@ -631,13 +369,6 @@ def cmd_audit(args):
                     case_issues.append(f"Falta docs/{doc}")
         else:
             case_issues.append("Falta directorio docs/")
-
-        # Verificar marcadores AUTO en README.md (para sync)
-        readme = case_dir / "README.md"
-        if readme.exists():
-            text = readme.read_text(encoding="utf-8")
-            if "<!-- AUTO:RESULTS:START -->" not in text:
-                case_issues.append("README.md sin marcadores AUTO (sync no funcionará)")
 
         # Métricas numéricas
         metrics = load_metrics(case_dir)
@@ -655,7 +386,7 @@ def cmd_audit(args):
                         f"{p_name}: RMSE={rmse_abm:.2e} < umbral (posible sobreajuste)")
 
             # Consistencia timestamps
-            report_path = case_dir / "report.md"
+            report_path = case_dir / "outputs" / "report.md"
             if report_path.exists():
                 report_text = report_path.read_text(encoding="utf-8")
                 gen_at = metrics.get("generated_at", "")
@@ -717,13 +448,13 @@ def cmd_validate(args):
 
     if args.case:
         # Match exacto primero; si no existe, usar match parcial case-insensitive.
-        exact_vpy = REPOS_SIM / args.case / "src" / "validate.py"
+        exact_vpy = EDI_DIR / args.case / "src" / "validate.py"
         if exact_vpy.exists():
             targets.append((args.case, exact_vpy))
         else:
             q = args.case.lower()
             matched = []
-            for d in sorted(REPOS_SIM.iterdir()):
+            for d in sorted(EDI_DIR.iterdir()):
                 if not d.is_dir():
                     continue
                 if q in d.name.lower():
@@ -740,7 +471,7 @@ def cmd_validate(args):
                 print("[INFO] Ejecutando todos los casos coincidentes.")
             targets.extend(matched)
     else:
-        for d in sorted(REPOS_SIM.iterdir()):
+        for d in sorted(EDI_DIR.iterdir()):
             if d.is_dir():
                 vpy = d / "src" / "validate.py"
                 if vpy.exists():
@@ -790,11 +521,12 @@ def main():
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog=(
             "Ejemplos:\n"
-            "  python3 repos/scripts/tesis.py scaffold --id 19 --name biodiversidad\n"
-            "  python3 repos/scripts/tesis.py build\n"
-            "  python3 repos/scripts/tesis.py sync\n"
-            "  python3 repos/scripts/tesis.py audit --output auditoria.md\n"
-            "  python3 repos/scripts/tesis.py validate --case caso_clima\n"
+            "  python3 09-simulaciones-edi/scripts_orquestacion/tesis.py scaffold --id 19 --name biodiversidad\n"
+            "  python3 09-simulaciones-edi/scripts_orquestacion/tesis.py build\n"
+            "  python3 09-simulaciones-edi/scripts_orquestacion/tesis.py sync\n"
+            "  python3 09-simulaciones-edi/scripts_orquestacion/tesis.py audit --output auditoria.md\n"
+            "  python3 09-simulaciones-edi/scripts_orquestacion/tesis.py validate --case caso_clima\n"
+            "Atajo: cd 09-simulaciones-edi && ./tesis <subcomando>\n"
         )
     )
     sub = parser.add_subparsers(dest="command")

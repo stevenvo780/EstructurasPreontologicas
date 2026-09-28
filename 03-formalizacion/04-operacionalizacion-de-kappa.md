@@ -238,6 +238,9 @@ Algunos casos tienen funciones específicas que justifican categorías ROBUSTO e
 
 ## Deuda residual
 
+(Deuda declarada el 2026-05-11 — fecha del commit que introdujo esta sección.)
+
+
 - **Limitación 1.** Paso 3 (líneas 36-48) enumera cinco métodos de estimación de dimensionalidad ("según el caso": PCA, GP, NN, Takens, false nearest neighbors) sin protocolo de reconciliación entre ellos. PCA tiene sesgo lineal; Grassberger-Procaccia es sensible a longitud de serie; NN tiene sesgo de overfitting opuesto. El "según el caso" abre un *garden of forking paths*. PDFs Camastra-Staiano 2016 y Simmons-Nelson-Simonsohn 2011 ausentes en `07-bibliografia/`. Camino de resolución: exigir triple estimación (PCA + GP + Takens) reportada conjuntamente con discrepancia declarada; recuperar Camastra-Staiano 2016 antes de invocar paginación; reescritura del Paso 3 pendiente.
 
 ## Cierre

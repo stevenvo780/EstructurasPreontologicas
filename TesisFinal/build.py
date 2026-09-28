@@ -7,7 +7,7 @@ Genera TesisFinal/Tesis.md con:
   - Enlaces "↑ volver al índice" tras cada capítulo
 
 Uso:
-    cd /datos/repos/EstructurasPreontologicas
+    cd <raíz-del-repo>
     python3 TesisFinal/build.py
 """
 

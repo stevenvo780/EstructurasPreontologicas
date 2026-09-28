@@ -1,5 +1,23 @@
 # Caso 01 — Clima Regional (CONUS)
 
+## Estado de datos (2026-09-28)
+
+- `data/conus_monthly.csv` (caché ignorado por git) se materializa con datos
+  reales: `.venv/bin/python src/data.py` (meteostat 2.x + NOAA CO₂ + drivers;
+  OHC/AOD pueden fallar si sus fuentes están caídas — el fetch declara warnings).
+- `outputs/metrics.json` commiteado (re-corrida 2026-07-16) usó una variante
+  sintética indocumentada (408 filas, media≈0, std≈0.01): reproducción
+  bit-idéntica bloqueada en rescate de datos (deuda declarada en
+  TAREAS_PENDIENTES.md). Revalidación 2026-09-28 con CONUS real: EDI=0.0030,
+  p=0.015, pass=False (misma conclusión: sin cierre operativo).
+- Incidente 2026-09-28 (documentado en
+  `Bitacora/2026-09-28-fix-all/REPORTE.md`): un `git checkout` descartó
+  transitoriamente el estado julio no-commiteado; `metrics.json` se restauró
+  desde copia (`/tmp`, figures intactas EDI=0.2581) y `report.md` se regeneró
+  desde esas métricas con `write_outputs` (timestamp + cifras coherentes).
+  `primary_arrays.json` corresponde a la corrida mayo (los arrays de julio
+  son irrecuperables sin el CSV de julio).
+
 ## Resumen
 
 Modelado del **clima regional** como estructura pre-ontológica mediante un modelo híbrido ABM+ODE basado en el **Balance Energético de Budyko-Sellers** linealizado. El observable es la temperatura media mensual de la región CONUS (Continental US) con drivers exógenos reales: CO₂ (Mauna Loa), TSI (irradiancia solar), OHC (contenido calórico oceánico) y AOD (profundidad óptica de aerosoles).

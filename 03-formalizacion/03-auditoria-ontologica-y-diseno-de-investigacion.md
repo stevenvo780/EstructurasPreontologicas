@@ -259,6 +259,9 @@ Con esta auditoría, la tesis se presenta no solo como respuesta a una pregunta 
 
 ## 12. Deuda residual
 
+(Deuda declarada el 2026-05-11 — fecha del commit que introdujo esta sección.)
+
+
 - **Limitación 1.** §6 (línea 6) afirma "criterio de cierre es replicabilidad por tercero", pero **ninguna replicación externa ha sido ejecutada** sobre el corpus EDI: el manuscrito no tiene evidencia de tercero independiente reproduciendo los resultados desde `case_config.json` + datos. Esto choca con la objeción de Collins ("experimenter's regress"). Camino de resolución: degradar "replicabilidad" de hecho consumado a reclamo operativo (promesa pública defendible, no afirmación retórica) e invitar replicación independiente con plazo declarado; apertura formal de la invitación pendiente de firma autoral.
 
 ## 13. Cierre

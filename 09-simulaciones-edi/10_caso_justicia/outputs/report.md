@@ -92,3 +92,11 @@
 ### Interpretación
 **Nivel 2 — Cierre operativo suggestive.** La constricción macro es detectable pero no alcanza robustez suficiente para cierre operativo fuerte. El fenómeno muestra grados parciales de organización macro→micro.
 
+
+## Discrepancia con pre-registro (generada automáticamente)
+
+- **Predicción pre-registro:** Weak (EDI esperado ≈ 0.2270, margen |ΔEDI| ≤ 0.10).
+- **Resultado real (phases.real):** Trend — EDI = 0.0579, p_perm = 0.0170, CI 95% = [-0.1513, 0.3451].
+- **Diferencia:** |ΔEDI| = 0.1691; dirección: downgrade (Weak → Trend).
+- **Declaración:** DISCREPANCIA RECONOCIDA. Contraevidencia declarada según PRE_REGISTRO.md §6: la discrepancia honesta es virtud, no fallo.
+

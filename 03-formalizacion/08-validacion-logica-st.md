@@ -209,4 +209,7 @@ Las teorías iniciales (T0–T12) verifican la lógica metodológica del marco; 
 
 ## Deuda residual
 
+(Deuda declarada el 2026-05-11 — fecha del commit que introdujo esta sección.)
+
+
 - **Limitación 1.** §ST-1 (líneas 21-23) plantea la asimetría L1↔B↔L3↔S como `∀x ∃y ...` (existencial sobre cada cuantificador), lo que la deja **trivialmente satisfacible** por rivales: cualquier teoría rival puede atestiguar `∃` con algún caso de su preferencia. La fuerza de la asimetría requiere o bien regularidad operativa (frontera de dominio declarada) o bien existencial calificado contra rival nombrado. Camino de resolución: añadir frontera de dominio (`∀x ∈ D ∃y ∈ D' ...`) con `D`, `D'` operativamente definidos sobre el corpus; declarar costo: la asimetría así pierde universalidad y se sostiene sólo sobre el dominio del corpus.

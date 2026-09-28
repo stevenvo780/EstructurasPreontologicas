@@ -17,9 +17,10 @@ import json
 import sys
 from pathlib import Path
 
-SIMS_DIR = Path(__file__).resolve().parent.parent.parent / "Simulaciones"
-THESIS_DIR = Path(__file__).resolve().parent.parent.parent.parent / "TesisDesarrollo" / "02_Modelado_Simulacion"
+EDI_DIR = Path(__file__).resolve().parent.parent.parent
 HASH_BASELINE = Path(__file__).resolve().parent / "replay_baseline.json"
+# Historial: también comparaba contra el espejo TesisDesarrollo/02_Modelado_Simulacion
+# (columna sync). Ese árbol se retiró 2026-09-28; la rama se eliminó.
 # Claves volátiles que cambian en cada corrida sin alterar resultados científicos.
 VOLATILE_KEYS = {"generated_at", "commit", "dirty"}
 
@@ -68,7 +69,9 @@ def collect_hashes(case_filter: str = None, raw: bool = False) -> dict:
     """Recoge hashes de metrics.json y report.md para cada caso."""
     results = {}
 
-    for caso_dir in sorted(SIMS_DIR.glob("[0-9]*_caso_*")):
+    for caso_dir in sorted(EDI_DIR.glob("[0-9][0-9]_caso_*")):
+        if not caso_dir.is_dir():
+            continue
         caso_name = caso_dir.name
         if case_filter and case_filter not in caso_name:
             continue
@@ -84,25 +87,6 @@ def collect_hashes(case_filter: str = None, raw: bool = False) -> dict:
         if report_path.exists():
             entry["report_md5"] = md5_report(report_path, raw=raw)
 
-        # También checkear en TesisDesarrollo
-        thesis_pattern = list(THESIS_DIR.glob(f"*{caso_name}*"))
-        if thesis_pattern:
-            thesis_metrics = thesis_pattern[0] / "metrics.json"
-            thesis_report = thesis_pattern[0] / "report.md"
-            if thesis_metrics.exists():
-                entry["thesis_metrics_md5"] = md5_metrics(thesis_metrics, raw=raw)
-            if thesis_report.exists():
-                entry["thesis_report_md5"] = md5_report(thesis_report, raw=raw)
-            # Coherencia: metrics.json + report.md en Simulaciones == TesisDesarrollo?
-            metrics_sync = entry.get("metrics_md5") and entry.get("thesis_metrics_md5") and (
-                entry["metrics_md5"] == entry["thesis_metrics_md5"]
-            )
-            report_sync = entry.get("report_md5") and entry.get("thesis_report_md5") and (
-                entry["report_md5"] == entry["thesis_report_md5"]
-            )
-            if metrics_sync is not None and report_sync is not None:
-                entry["sync"] = bool(metrics_sync and report_sync)
-
         results[caso_name] = entry
 
     return results
@@ -110,13 +94,12 @@ def collect_hashes(case_filter: str = None, raw: bool = False) -> dict:
 
 def print_table(hashes: dict):
     """Imprime tabla de hashes en consola."""
-    print(f"{'Caso':<40} {'metrics.json':<34} {'report.md':<34} {'sync':>5}")
-    print("-" * 115)
+    print(f"{'Caso':<40} {'metrics.json':<34} {'report.md':<34}")
+    print("-" * 110)
     for caso, h in sorted(hashes.items()):
         m = h.get("metrics_md5", "—") or "—"
         r = h.get("report_md5", "—") or "—"
-        s = "✓" if h.get("sync") else ("✗" if h.get("sync") is False else "—")
-        print(f"{caso:<40} {m:<34} {r:<34} {s:>5}")
+        print(f"{caso:<40} {m:<34} {r:<34}")
 
 
 def save_baseline(hashes: dict):

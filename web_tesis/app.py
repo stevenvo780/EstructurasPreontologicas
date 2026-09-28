@@ -22,6 +22,7 @@ if str(ROOT) not in sys.path:
 try:
     from web_tesis.data import (
         ROOT as DATA_ROOT,
+        CHAPTER_DIRS,
         SIM_ROOT,
         VIS_ROOT,
         case_docs_rendered,
@@ -39,6 +40,7 @@ try:
 except ImportError:
     from data import (  # type: ignore
         ROOT as DATA_ROOT,
+        CHAPTER_DIRS,
         SIM_ROOT,
         VIS_ROOT,
         case_docs_rendered,
@@ -102,8 +104,48 @@ if USE_REACT:
 
 if VIS_ROOT.exists():
     app.mount("/visualizations", StaticFiles(directory=str(VIS_ROOT)), name="visualizations")
-app.mount("/sim_files", StaticFiles(directory=str(SIM_ROOT)), name="sim_files")
-app.mount("/repo_files", StaticFiles(directory=str(DATA_ROOT)), name="repo_files")
+
+
+def _serve_constrained(
+    base: Path, rel: str, *, allowed_first: set[str] | None, allowed_exts: set[str]
+):
+    """Sirve un archivo bajo `base` con allowlist estricta (sin listado).
+
+    Reemplaza los mounts blanket StaticFiles (2026-09-28): /repo_files llegaba
+    a exponer .git/, Bitacora/, Correspondencia_Ricardo/, harness/ y PDFs con
+    copyright; /sim_files exponía .venv/ y __pycache__/. Solo se sirven las
+    rutas que el frontend genera (md de capítulos, md/json de casos).
+    """
+    try:
+        base_resolved = base.resolve()
+        target = (base / rel).resolve()
+    except (OSError, RuntimeError):
+        raise HTTPException(status_code=404)
+    if not target.is_relative_to(base_resolved) or not target.is_file():
+        raise HTTPException(status_code=404)
+    parts = target.relative_to(base_resolved).parts
+    if not parts or any(p.startswith(".") for p in parts):
+        raise HTTPException(status_code=404)
+    if allowed_first is not None and parts[0] not in allowed_first:
+        raise HTTPException(status_code=404)
+    if target.suffix.lower() not in allowed_exts:
+        raise HTTPException(status_code=404)
+    return FileResponse(str(target))
+
+
+_REPO_FIRST = {slug for slug, _ in CHAPTER_DIRS}
+
+
+@app.get("/repo_files/{rel:path}", include_in_schema=False)
+async def repo_files(rel: str):
+    """Capítulos markdown (único uso legítimo: urls generadas en data.py)."""
+    return _serve_constrained(DATA_ROOT, rel, allowed_first=_REPO_FIRST, allowed_exts={".md"})
+
+
+@app.get("/sim_files/{rel:path}", include_in_schema=False)
+async def sim_files(rel: str):
+    """Docs y métricas de casos (md/json generados en data.py)."""
+    return _serve_constrained(SIM_ROOT, rel, allowed_first=None, allowed_exts={".md", ".json"})
 
 
 # ─── Helpers de serialización para la API JSON nueva ──────────────────────────

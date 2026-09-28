@@ -1,6 +1,6 @@
 # Tareas pendientes para el cierre de la tesis
 
-Documento maestro de pendientes. Estado consolidado al **2026-07-17** tras auditoría de consistencia inferencial del manuscrito y la web. El histórico previo (con tabla BORRADOR-IA por tipo, notas iter-X y reclasificaciones intermedias) está preservado en `Bitacora/2026-05-17-limpieza-final/historico-tareas-pendientes.md`.
+Documento maestro de pendientes. Estado consolidado al **2026-07-17** tras auditoría de consistencia inferencial del manuscrito y la web; actualización parcial **2026-09-28** (pasada fix-all: B-T6 cerrada con evidencia pendiente re-verificación post-rebase, B-T-NEW-CLIMA-DATA abierta; B-E1 re-verificar tras rebuild). El histórico previo (con tabla BORRADOR-IA por tipo, notas iter-X y reclasificaciones intermedias) está preservado en `Bitacora/2026-05-17-limpieza-final/historico-tareas-pendientes.md`.
 
 **Partición:**
 - **Sección A — humanas o institucionales:** lo que **no** puede cerrar la asistencia computacional. Trámites de la U. de Antioquia, decisiones procedimentales de Jacob/Steven, validación final de voz autoral.
@@ -75,16 +75,17 @@ Documento maestro de pendientes. Estado consolidado al **2026-07-17** tras audit
 | B-T3 | Calibración externa QES (10/10 estudios, concordancia loose 100%, estricta 50%, Bem 2011 INADMISIBLE). | Cerrada | `09-simulaciones-edi/qes_calibration/external_calibration_report.md` |
 | B-T4 | Información efectiva como métrica auxiliar (sin compromiso IIT/Hoel) declarada en `03-formalizacion/04` §líneas 205-215 + glosario `:99`. | Cerrada | Ubicación de código `hybrid_validator.py:249` + declaración filosófica explícita |
 | B-T5 | Reclasificación caso 19 a falsificación local (ver H-J12 para firma). | Cerrada (firma en H-J12) | `metrics.json` regenerado; Tablas 6.1.1 / 5.7.1 / Bloque VI.5 actualizadas |
-| B-T6 | Disonancia doc↔config sondas ODE casos 03/12/29 (`Evaluacion_Modelos_Dominio.md` declara Acumulación/Landau-Ginzburg/Difusión+Metcalfe; `case_config.json` ejecuta `mean_reversion`/`mean_reversion`/`bilinear`). | Abierta | Coherencia restaurada: (a) actualizar config y re-ejecutar, o (b) actualizar doc; en ambos casos justificar sonda |
+| B-T6 | Disonancia doc↔config sondas ODE casos 03/12/29 (doc declaraba Acumulación/Landau-Ginzburg/Difusión+Metcalfe; configs ejecutan `mean_reversion`/`mean_reversion`/`bilinear`). | Cerrada 2026-09-28 | Opción (b) ya aplicada en el doc (filas tabla reconcilian a configs); verificado con diente: `verify_consistency_doc_config.py` (bug precedencia corregido + patrón tabla) → 3 doc × 30 configs, 0 disonancias. Falsador: re-correr el verificador. |
 | B-T7 | Caso 25 acuíferos con cobertura 0.51 dominado por datos faltantes. Bloqueado por B-T2. | Bloqueada | `metrics.json` con cobertura ≥0.95; null/no-null reasignado |
 | **B-T2.4** | **Re-verificación inter-escala con datos reales por escala**. Generalidad multiescalar bajo aparato post-fix (`detrended_edi` corregido iter 13 + block-perm propagada). Posición filosófica en `Bitacora/2026-05-17-cierre-loop/posicion-filosofica-final.md`; H-J6 decide si es deuda fechada o condición de defensa. | **Abierta** | Casos inter-escala (31/32) re-ejecutados bajo aparato corregido con datos por escala; tabla comparativa pre/post |
 | **B-T-NEW-AUC-METH** | **Crear `09-simulaciones-edi/auc_roc/methodology.md` + script regenerador** con CI bootstrap (B≥2000) y comando declarado. La cifra se conserva solo como consistencia interna del umbral, no como validación externa. | **Cerrada técnicamente; afirmación discriminativa retirada** | `methodology.md` y `compute_auc_ci.py` reproducen AUC=0.8857, CI=[0.6571, 1.0000]; H-J11 firma la interpretación |
+| **B-T-NEW-CLIMA-DATA** | **Rescate de datos caso 01**: `outputs/metrics.json` commiteado (2026-07-16, EDI=0.258) usó CSV post-procesado indocumentado (408 filas, media≈0, std≈0.01); reproducción bit-idéntica bloqueada. Vía real restaurada (`src/data.py` + meteostat 2.x; revalidación 2026-09-28: EDI=0.0030, misma conclusión pass=False). | **Abierta** | Receta documentada + bit-repro, o re-corrida fresca aceptada + prosa que cite EDI=0.258 actualizada |
 
 ### B.3. Auditoría editorial (B-E*)
 
 | ID | Tarea | Estado |
 |----|-------|--------|
-| B-E1 | Re-ejecutar `TesisFinal/build.py`, regenerar PDF y verificar diff/render. | Cerrada 2026-07-17: MD 7.159 líneas y 75.792 palabras; PDF 204 páginas; 0 páginas con texto recortado |
+| B-E1 | Re-ejecutar `TesisFinal/build.py`, regenerar PDF y verificar diff/render. | Cerrada 2026-07-17: MD 7.159 líneas y 75.792 palabras; PDF 204 páginas; 0 páginas con texto recortado. Re-verificar tras rebuild post-rebase 2026-09-28 (prosa origin + sellos deuda) |
 | B-E2 | Uniformidad Chicago author-date (≤5 anomalías documentadas). | Abierta |
 | B-E3 | Numeración tablas/figuras tras inserciones recientes. | Abierta |
 | B-E4 | Cobertura glosario tras B-F2/B-F5/B-F6. | Abierta |
@@ -106,7 +107,7 @@ El conteo de marcadores debe regenerarse tras esta pasada. La introducción, las
 
 **Prioridad 2 — cierre filosófico defendible:** H-J2, H-J3, H-J5, H-J6, H-J8, H-J9, H-J10, H-J11.
 
-**Prioridad 3 — cierre técnico pre-defensa:** B-T2 piloto, B-T2.1 ampliado (4 casos restantes), B-T6, B-E2–E4 y B-E6–E7.
+**Prioridad 3 — cierre técnico pre-defensa:** B-T2 piloto, B-T2.1 ampliado (4 casos restantes), B-T-NEW-CLIMA-DATA, B-E2–E4 y B-E6–E7 (B-T6 cerrada 2026-09-28 pendiente re-verificación post-rebase; B-E1 cerrada 2026-07-17, re-verificar tras rebuild).
 
 **Prioridad 4 — deuda externa post-defensa:** H-S1, H-S2, H-U5, B-T2 resto, B-T2.4 inter-escala, B-T7 acuíferos, caso 30 VENLab (H-S4 decidida).
 

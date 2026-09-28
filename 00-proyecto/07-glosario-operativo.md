@@ -273,6 +273,9 @@ Dirección de marcha actual. Variable conductual clave en locomoción (Fajen y W
 
 ## Deuda residual operativa
 
+(Deuda declarada el 2026-05-24 — fecha del commit que introdujo esta sección.)
+
+
 - **Limitación 1.** **`edi.valid`**. La p-value reportada en `metrics.json` es válida para un único contraste (`α=0.05`). El corpus contiene m=30 contrastes; bajo control FWER (Holm-Bonferroni, umbral 0.0031), sólo 14 casos sobreviven. La validez "en test único" no implica validez "bajo control de errores familiares". Camino de resolución: distinguir explícitamente en cada cifra de p-value reportada cuál es el régimen aplicado.
 - **Limitación 2.** **Permutación EDI**. El test de permutación en `09-simulaciones-edi/common/hybrid_validator.py:174` opera con `iid` sobre índices temporales. Para series con ACF > 0 (mayoría del corpus), los p-values están **subestimados** — resultado estándar de Davison-Hinkley 1997 (*Bootstrap Methods and their Application*, cap. 8). Camino de resolución: implementar `block_permutation_test_edi` con tamaño de bloque adaptado a la longitud de decorrelación de cada serie; declarar la semántica actual como "permutación iid sin control de autocorrelación" hasta entonces.
 - **Limitación 3.** **Bootstrap CI**. `bootstrap_edi()` en `hybrid_validator.py:193-219` reporta intervalos percentiles simples sin corrección BCa (bias-corrected accelerated). De los 32 casos del corpus, 21 tienen `val_steps < 30` y 12 tienen `val_steps = 8`, donde el sesgo de cobertura del percentil simple es severo (DiCiccio-Efron 1996). Camino de resolución: implementar BCa en `bootstrap_edi()` y añadir campo `ci_method` en `metrics.json` para preservar la trazabilidad histórica.

@@ -92,4 +92,7 @@ El nivel B cumple una función precisa: obliga a que toda afirmación sobre estr
 
 ## Deuda residual
 
+(Deuda declarada el 2026-05-11 — fecha del commit que introdujo esta sección.)
+
+
 La generalización de B fuera de percepción-acción sigue abierta. Debe evaluarse caso por caso con datos reales y criterios de intervención propios del dominio. También queda pendiente la decisión humana H-J8 sobre cuánto peso ontológico atribuir a la asimetría entre registros.

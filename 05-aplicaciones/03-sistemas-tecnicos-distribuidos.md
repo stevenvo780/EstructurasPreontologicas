@@ -123,4 +123,7 @@ Este capítulo articula la conjetura con claridad, pero falta el modelo dinámic
 
 ## 9. Deuda residual
 
+(Deuda declarada el 2026-05-11 — fecha del commit que introdujo esta sección.)
+
+
 - **Limitación 1.** §6.3 (línea 114) cita Beyer, Jones, Petoff y Murphy 2016 (*Site Reliability Engineering*) sin PDF en `07-bibliografia/`, declarando "mención secundaria". La tabla de homologías SLO ↔ tolerancia τ, error budget ↔ región de admisibilidad, circuit breaker ↔ operador ε, postmortem ↔ auditoría ontológica funciona retóricamente pero **no está formalizada**: ninguna de esas homologías está respaldada por isomorfismo declarado entre los operadores SRE y los operadores del aparato. Adicionalmente, el material sobre *circuit breaker* del libro está en el cap.22 ("Addressing Cascading Failures"), no en el cap.4 — aceptación previa confundía los capítulos. Camino de resolución: o bien reducir §6.3 a ilustración informal explícitamente declarada como tal (sin tabla de homologías), o recuperar el PDF y formalizar el isomorfismo con paginación correcta (cap.4 SLO/error budget; cap.22 circuit breaker).

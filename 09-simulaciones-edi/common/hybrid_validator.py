@@ -2377,6 +2377,33 @@ def write_outputs(results, output_dir):
                         "No se detecta constricción macro→micro significativa con los datos "
                         "y parámetros actuales.\n\n")
 
+        # Comparación pre-registro (B-T2): si el caso tiene docs/PRE_REGISTRO.md,
+        # declara automáticamente la validación o la discrepancia honesta para
+        # que las re-ejecuciones no borren la declaración exigida por §6.
+        # Fail-open: cualquier error → sin sección (el verificador lo detecta).
+        try:
+            from prereg_section import render_prereg_section  # type: ignore
+        except ImportError:
+            try:
+                from .prereg_section import render_prereg_section  # type: ignore
+            except Exception:
+                render_prereg_section = None  # noqa: N816
+        if render_prereg_section is not None:
+            try:
+                _real_phase = (results.get("phases") or {}).get("real") or {}
+                _edi_block = _real_phase.get("edi") or {}
+                _prereg_section = render_prereg_section(
+                    os.path.dirname(os.path.abspath(output_dir)),
+                    _edi_block.get("value"),
+                    _edi_block.get("permutation_pvalue"),
+                    _edi_block.get("ci_lo"),
+                    _edi_block.get("ci_hi"),
+                )
+                if _prereg_section:
+                    f.write(_prereg_section)
+            except Exception:
+                pass
+
 
 def _get_git_info():
     def _parse_dirty(raw):

@@ -123,6 +123,9 @@ Esta tesis no clausura la complejidad de lo real. Ofrece reglas para no empeorar
 
 ## 4. Deuda residual heredada
 
+(Deuda declarada el 2026-05-11 — fecha del commit que introdujo esta sección.)
+
+
 - **Limitación 1.** La nota sobre convergencia inter-paradigma declara una proporción agregada que oculta la diferencia entre arrays reales y reconstruidos. Camino de resolución: descomponer la proporción en (real, reconstruido) para preservar la diferencia en nivel de evidencia. Paralela en `06-cierre/01-conclusion-demostrativa.md` §4.1.
 - **Limitación 2.** La afirmación de significancia del caso 30 (p=0.044) debe aclararse como "significativo en test único, no bajo control de FWER": el umbral de Holm-Bonferroni para m=30 contrastes paralelos es 0.0031, que el caso 30 no atraviesa. Sólo 14 casos del corpus sobreviven al control FWER. Camino de resolución: añadir nota junto a la cifra; añadir entrada `edi.valid` en `00-proyecto/07-glosario-operativo.md` distinguiendo "significativo en test único" vs "significativo bajo FWER".
 - **Limitación 3.** El conteo "8 null" colapsa tres regímenes operativamente distintos: 5 nulls genuinos, 1 EDI fuertemente negativo, 2 rechazos por gate C1-C5. Camino de resolución: subdividir la tabla null en tres filas. Paralela en `06-cierre/01-conclusion-demostrativa.md` §4.1 y `05-aplicaciones/07-mapa-aplicaciones-corpus.md`.

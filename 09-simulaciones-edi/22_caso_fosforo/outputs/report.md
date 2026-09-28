@@ -99,3 +99,11 @@
 ### Interpretación
 **Nivel 4 — Cierre operativo fuerte.** El EDI se encuentra en el rango válido y el test de permutación confirma significancia estadística, indicando constricción macro→micro robusta. No obstante, estos resultados no implican compromiso ontológico: el cierre es operativo, no sustancial.
 
+
+## Discrepancia con pre-registro (generada automáticamente)
+
+- **Predicción pre-registro:** Weak (EDI esperado ≈ 0.1920, margen |ΔEDI| ≤ 0.10).
+- **Resultado real (phases.real):** Weak — EDI = 0.3221, p_perm = 0.0000, CI 95% = [-0.0573, 0.6540].
+- **Diferencia:** |ΔEDI| = 0.1301; dirección: misma clase, fuera de margen (Weak → Weak).
+- **Declaración:** DISCREPANCIA RECONOCIDA. Contraevidencia declarada según PRE_REGISTRO.md §6: la discrepancia honesta es virtud, no fallo.
+

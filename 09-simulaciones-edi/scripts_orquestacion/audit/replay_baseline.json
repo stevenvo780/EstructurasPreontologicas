@@ -1,205 +1,130 @@
 {
   "01_caso_clima": {
-    "metrics_md5": "00e97750193696bb93c87a7b8ab25425",
-    "report_md5": "c88c261eb48cfe250ec4077935aa8cb6",
-    "thesis_metrics_md5": "00e97750193696bb93c87a7b8ab25425",
-    "thesis_report_md5": "c88c261eb48cfe250ec4077935aa8cb6",
-    "sync": true
+    "metrics_md5": "299c935d81ffdc43a3e0bfc8556c249d",
+    "report_md5": "f1ddea9028f7e763fa55e17032590969"
   },
   "02_caso_conciencia": {
-    "metrics_md5": "d9a186164f2040ffbffb1e896b7b44bf",
-    "report_md5": "bbd4fa2e217d9cd56c8e09c43e73da73",
-    "thesis_metrics_md5": "d9a186164f2040ffbffb1e896b7b44bf",
-    "thesis_report_md5": "bbd4fa2e217d9cd56c8e09c43e73da73",
-    "sync": true
+    "metrics_md5": "a8c1259fa9529889033138d43ef04843",
+    "report_md5": "d5439e615fe8b28acac89981617a2e8f"
   },
   "03_caso_contaminacion": {
-    "metrics_md5": "71ce6923eaf4717d3720ae5c0eb52a4f",
-    "report_md5": "fd6913ebc901ce1ca44a569398baba53",
-    "thesis_metrics_md5": "71ce6923eaf4717d3720ae5c0eb52a4f",
-    "thesis_report_md5": "fd6913ebc901ce1ca44a569398baba53",
-    "sync": true
+    "metrics_md5": "b3b98b9be8315deb8989523f24b0f789",
+    "report_md5": "699dfaf63ae3dd4c9ee44fda27038c31"
   },
   "04_caso_energia": {
-    "metrics_md5": "e4644381d46c8c3cd97ecc306fd20181",
-    "report_md5": "0ab3a09f6726f3333b0f64e61c3c5388",
-    "thesis_metrics_md5": "e4644381d46c8c3cd97ecc306fd20181",
-    "thesis_report_md5": "0ab3a09f6726f3333b0f64e61c3c5388",
-    "sync": true
+    "metrics_md5": "0358a37e2b5430b0b9d52c87ca400d49",
+    "report_md5": "801807c85ae7bfc0fe5ca24a513b73d4"
   },
   "05_caso_epidemiologia": {
-    "metrics_md5": "c6a83d66a073b80a6c91297586bf41db",
-    "report_md5": "9f3a14df858930bdf08b16dee800633f",
-    "thesis_metrics_md5": "c6a83d66a073b80a6c91297586bf41db",
-    "thesis_report_md5": "9f3a14df858930bdf08b16dee800633f",
-    "sync": true
+    "metrics_md5": "7984b14f5eae8919e1280acde162e605",
+    "report_md5": "d375edb90d6341d5608beb0b9ba91689"
   },
   "06_caso_falsacion_exogeneidad": {
-    "metrics_md5": "7781d2f44018692e7d17e1345d9990cd",
-    "report_md5": "131effda1b578ea3d4be7dc7a0f8c97c",
-    "thesis_metrics_md5": "7781d2f44018692e7d17e1345d9990cd",
-    "thesis_report_md5": "131effda1b578ea3d4be7dc7a0f8c97c",
-    "sync": true
+    "metrics_md5": "9dec2105ab71c754fe92c83503f32e0f",
+    "report_md5": "131effda1b578ea3d4be7dc7a0f8c97c"
   },
   "07_caso_falsacion_no_estacionariedad": {
-    "metrics_md5": "6b8ea852813357726698579a93579de8",
-    "report_md5": "272b48be40cb5312f0a557bc1eac933c",
-    "thesis_metrics_md5": "6b8ea852813357726698579a93579de8",
-    "thesis_report_md5": "272b48be40cb5312f0a557bc1eac933c",
-    "sync": true
+    "metrics_md5": "430b1d9cbd86f4037143eeac8585f9df",
+    "report_md5": "272b48be40cb5312f0a557bc1eac933c"
   },
   "08_caso_falsacion_observabilidad": {
-    "metrics_md5": "1523cb8c7578ecb862f8be76749d6c0a",
-    "report_md5": "a8b892d06bc1a8947636124ec2a36ae0",
-    "thesis_metrics_md5": "1523cb8c7578ecb862f8be76749d6c0a",
-    "thesis_report_md5": "a8b892d06bc1a8947636124ec2a36ae0",
-    "sync": true
+    "metrics_md5": "536b1831ef9026eb30f9199361667075",
+    "report_md5": "a8b892d06bc1a8947636124ec2a36ae0"
   },
   "09_caso_finanzas": {
-    "metrics_md5": "3fb1b17f8c8ec1d156444ea73cad93a4",
-    "report_md5": "f98c66534800fed304952cb19814cb7d",
-    "thesis_metrics_md5": "3fb1b17f8c8ec1d156444ea73cad93a4",
-    "thesis_report_md5": "f98c66534800fed304952cb19814cb7d",
-    "sync": true
+    "metrics_md5": "2d58589b998e9fbb460ed9b26bb5e73c",
+    "report_md5": "91488334455c58e3494585cf22157225"
   },
   "10_caso_justicia": {
-    "metrics_md5": "194608b23e4e7546c9097968ec664d5a",
-    "report_md5": "d9f41e6b6c88f28a2013d8ad74caf9c1",
-    "thesis_metrics_md5": "194608b23e4e7546c9097968ec664d5a",
-    "thesis_report_md5": "d9f41e6b6c88f28a2013d8ad74caf9c1",
-    "sync": true
+    "metrics_md5": "182ef510ba9f8d3b4b800951438091ad",
+    "report_md5": "58e51fbcb04f83a123af4186612e3aa7"
   },
   "11_caso_movilidad": {
-    "metrics_md5": "dc8994509ada9ed40955aa293b411a3a",
-    "report_md5": "6b75959f028833cf2d50af2f2dfa0e89",
-    "thesis_metrics_md5": "dc8994509ada9ed40955aa293b411a3a",
-    "thesis_report_md5": "6b75959f028833cf2d50af2f2dfa0e89",
-    "sync": true
+    "metrics_md5": "fcdf4959faca722eb98966217b465773",
+    "report_md5": "127a8da7212339f856031bc10c62b36b"
   },
   "12_caso_paradigmas": {
-    "metrics_md5": "6011e22851e5428942422b5eb9376424",
-    "report_md5": "17b450061f011b0ba5a9451884ba9afe",
-    "thesis_metrics_md5": "6011e22851e5428942422b5eb9376424",
-    "thesis_report_md5": "17b450061f011b0ba5a9451884ba9afe",
-    "sync": true
+    "metrics_md5": "d03aefa532928484192c93bf5c54881c",
+    "report_md5": "a2eaaf69d2c642e425735d9ee1682958"
   },
   "13_caso_politicas_estrategicas": {
-    "metrics_md5": "b6bb0d33db4752049a42673609d51bc9",
-    "report_md5": "e14bb5b1d4742e6c0b080f6d8af20e2c",
-    "thesis_metrics_md5": "b6bb0d33db4752049a42673609d51bc9",
-    "thesis_report_md5": "e14bb5b1d4742e6c0b080f6d8af20e2c",
-    "sync": true
+    "metrics_md5": "4afcdf4c5a83696aeb7bac5c8377db82",
+    "report_md5": "51e0140e65138b020c2c14ff9c123711"
   },
   "14_caso_postverdad": {
-    "metrics_md5": "e73dadb672dd677ebe3504b690a5c469",
-    "report_md5": "27f2a971afc7bf3d35978843b240c37d",
-    "thesis_metrics_md5": "e73dadb672dd677ebe3504b690a5c469",
-    "thesis_report_md5": "27f2a971afc7bf3d35978843b240c37d",
-    "sync": true
+    "metrics_md5": "d0252b182d6af4001c21a25c2f4d37a4",
+    "report_md5": "c9bb55fef929c53735fa20190d51e210"
   },
   "15_caso_wikipedia": {
-    "metrics_md5": "170940cb00a0b87e89a608524fc0e9de",
-    "report_md5": "b5b994be86d7994ce1e68f533cb3c3a2",
-    "thesis_metrics_md5": "170940cb00a0b87e89a608524fc0e9de",
-    "thesis_report_md5": "b5b994be86d7994ce1e68f533cb3c3a2",
-    "sync": true
+    "metrics_md5": "7c7c73277e23514d25ed6999d1b1493c",
+    "report_md5": "b9499c9f0038f208c5ed24074734c3a9"
   },
   "16_caso_deforestacion": {
-    "metrics_md5": "49c22a2f91e0d06095d99277d823cfd0",
-    "report_md5": "af056bbdd4f1e7317cb109f6ce32b78c",
-    "thesis_metrics_md5": "49c22a2f91e0d06095d99277d823cfd0",
-    "thesis_report_md5": "af056bbdd4f1e7317cb109f6ce32b78c",
-    "sync": true
+    "metrics_md5": "ec5a63531775bf2099538d69999de422",
+    "report_md5": "9f4cfa9b67fa96bdbc9ce46dbbc12cfa"
   },
   "17_caso_oceanos": {
-    "metrics_md5": "7b219a825b3f5f56d1d271cc7a35b58c",
-    "report_md5": "df9cccab1abf76d15b30142a77cc5b3f",
-    "thesis_metrics_md5": "7b219a825b3f5f56d1d271cc7a35b58c",
-    "thesis_report_md5": "df9cccab1abf76d15b30142a77cc5b3f",
-    "sync": true
+    "metrics_md5": "30527e85dbf1f4c0efa864bd5a86324a",
+    "report_md5": "0d08f5a5dba010fdbc471bc962dbfbff"
   },
   "18_caso_urbanizacion": {
-    "metrics_md5": "fb8e48925d9498a5a0c0fdd00be1ec66",
-    "report_md5": "a21a769be59989d16aa7c53a2ecbf55d",
-    "thesis_metrics_md5": "fb8e48925d9498a5a0c0fdd00be1ec66",
-    "thesis_report_md5": "a21a769be59989d16aa7c53a2ecbf55d",
-    "sync": true
+    "metrics_md5": "c1d204c5d0bca2b526efabcc054c6bd9",
+    "report_md5": "a5eef2e012873803da9547c4c4abb2a8"
   },
   "19_caso_acidificacion_oceanica": {
-    "metrics_md5": "3c2ff5b2cd8609023eec8a7d512900bd",
-    "report_md5": "2077492c2e7aaac95841c51205ef04fb",
-    "thesis_metrics_md5": "3c2ff5b2cd8609023eec8a7d512900bd",
-    "thesis_report_md5": "2077492c2e7aaac95841c51205ef04fb",
-    "sync": true
+    "metrics_md5": "cd1c422b451cba356bd2100638dc22a3",
+    "report_md5": "1cbe3877a3750712e725526360e9e1a6"
   },
   "20_caso_kessler": {
-    "metrics_md5": "8611c4e88d4bf8dc0b613e0528e6e60c",
-    "report_md5": "66084d5359c64bb1936047d5bfb25941",
-    "thesis_metrics_md5": "8611c4e88d4bf8dc0b613e0528e6e60c",
-    "thesis_report_md5": "66084d5359c64bb1936047d5bfb25941",
-    "sync": true
+    "metrics_md5": "972e7ab53186c6d6272ab87d91309a75",
+    "report_md5": "26dd9a5dc892a673bdb330d70024b573"
   },
   "21_caso_salinizacion": {
-    "metrics_md5": "543204447bad477eceaf923b064a1ce7",
-    "report_md5": "9478e0bd7c944005a6f7e2c5b668a943",
-    "thesis_metrics_md5": "543204447bad477eceaf923b064a1ce7",
-    "thesis_report_md5": "9478e0bd7c944005a6f7e2c5b668a943",
-    "sync": true
+    "metrics_md5": "1b7db4fb841c5920d0c258292a7276be",
+    "report_md5": "5aa96ab74b3dec644d1823ae5c60a583"
   },
   "22_caso_fosforo": {
-    "metrics_md5": "6cdd1c8cc961d4c9652afaf97d0a5b46",
-    "report_md5": "83f3976d94bcd5d5ea749c535e2e3604",
-    "thesis_metrics_md5": "6cdd1c8cc961d4c9652afaf97d0a5b46",
-    "thesis_report_md5": "83f3976d94bcd5d5ea749c535e2e3604",
-    "sync": true
+    "metrics_md5": "5ab50195beca8e5f1034ae64b7ff743a",
+    "report_md5": "3263f27c99d9b6d79033e3d9ba630274"
   },
   "23_caso_erosion_dialectica": {
-    "metrics_md5": "fa6a53ca8ec8d5adb881a7c753cac6e1",
-    "report_md5": "e44096b901c2366cfdc4299575bb28d8",
-    "thesis_metrics_md5": "fa6a53ca8ec8d5adb881a7c753cac6e1",
-    "thesis_report_md5": "e44096b901c2366cfdc4299575bb28d8",
-    "sync": true
+    "metrics_md5": "1f4b3c1b96cfaa04063e7666cde9aa10",
+    "report_md5": "12b98679e2b85cebf80335853557ba12"
   },
   "24_caso_microplasticos": {
-    "metrics_md5": "696af2a218cb018faae651d9d88b14c6",
-    "report_md5": "7aa0f84426a1e95f4ac3f9b9cce27bd0",
-    "thesis_metrics_md5": "696af2a218cb018faae651d9d88b14c6",
-    "thesis_report_md5": "7aa0f84426a1e95f4ac3f9b9cce27bd0",
-    "sync": true
+    "metrics_md5": "a91f58700fc65aecb63e7b36ef055aaf",
+    "report_md5": "c4920f7ded4d121daa67877a23fe3bb5"
   },
   "25_caso_acuiferos": {
-    "metrics_md5": "5a2408f804e38dfdcc0c6342a19080bd",
-    "report_md5": "09f13ad75197ab033f4e5c3d6fb453a4",
-    "thesis_metrics_md5": "5a2408f804e38dfdcc0c6342a19080bd",
-    "thesis_report_md5": "09f13ad75197ab033f4e5c3d6fb453a4",
-    "sync": true
+    "metrics_md5": "72ec09a99de42a37df8c1f253f1ed627",
+    "report_md5": "f81ecf86c36c091ea3d9e47f8f3ec68b"
   },
   "26_caso_starlink": {
-    "metrics_md5": "1bb3fe9565f59762dd002cd9c62688fe",
-    "report_md5": "e3b09abb0d9d668cd738f10fd4465ca9",
-    "thesis_metrics_md5": "1bb3fe9565f59762dd002cd9c62688fe",
-    "thesis_report_md5": "e3b09abb0d9d668cd738f10fd4465ca9",
-    "sync": true
+    "metrics_md5": "cf1c3af90335863dbe0cd37212899ffe",
+    "report_md5": "7ab0e4063a3274807c3483774dbf59fa"
   },
   "27_caso_riesgo_biologico": {
-    "metrics_md5": "d98f89aa782c0766664dc8e94d1afe2f",
-    "report_md5": "7a5965d716ef50651483bb2aa7460d5c",
-    "thesis_metrics_md5": "d98f89aa782c0766664dc8e94d1afe2f",
-    "thesis_report_md5": "7a5965d716ef50651483bb2aa7460d5c",
-    "sync": true
+    "metrics_md5": "8006247aa6b9a22c6660ad156e9cf1e7",
+    "report_md5": "ece4b06f05d77293d23f40aecbfda7ca"
   },
   "28_caso_fuga_cerebros": {
-    "metrics_md5": "0ba368204d53de5f1bea869d14c9afed",
-    "report_md5": "dd1d258f931cd96d47ff9a57ef11d926",
-    "thesis_metrics_md5": "0ba368204d53de5f1bea869d14c9afed",
-    "thesis_report_md5": "dd1d258f931cd96d47ff9a57ef11d926",
-    "sync": true
+    "metrics_md5": "ff56bd13ffa9ca6a73d5923c10e1e1fc",
+    "report_md5": "e644be4bb44c5b1092243fd3d5ec17c8"
   },
   "29_caso_iot": {
-    "metrics_md5": "eaac6ccc6ac0958244268d1fb96a8c23",
-    "report_md5": "70375cff6e8e59093d703705354e4ef0",
-    "thesis_metrics_md5": "eaac6ccc6ac0958244268d1fb96a8c23",
-    "thesis_report_md5": "70375cff6e8e59093d703705354e4ef0",
-    "sync": true
+    "metrics_md5": "cb771deb092c9bbac32afe6860d962c7",
+    "report_md5": "6897de9b0e1e5c2b8244d48f91d64d90"
+  },
+  "30_caso_behavioral_dynamics": {
+    "metrics_md5": "485cba92a5fbd4da2848436aec11f780",
+    "report_md5": "2bfd09867e76499ca9a55568cb924dff"
+  },
+  "41_caso_wolfram_extendido": {
+    "metrics_md5": "db61db2526dcfb9a4eec8d52777bbe0f",
+    "report_md5": null
+  },
+  "42_caso_histeresis_institucional": {
+    "metrics_md5": "d1468502f437acc2cfc70280568e8782",
+    "report_md5": null
   }
 }

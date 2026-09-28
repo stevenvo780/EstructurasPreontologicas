@@ -390,5 +390,8 @@ La formulación intuitiva de partida evolucionó hacia la versión canónica. Lo
 
 ## 15. Deuda residual
 
+(Deuda declarada el 2026-05-11 — fecha del commit que introdujo esta sección.)
+
+
 - **Limitación 1.** §1.3 importa el ontology CESM bungeano sin disociar el M-mecanismo (materialismo) del esqueleto C+E. Los volúmenes 3 y 4 del *Treatise on Basic Philosophy* de Bunge NO están en `07-bibliografia/`; la adopción del CESM debe declararse como restringida a Composición y Entorno, con costo: la tesis no compra el materialismo bungeano íntegro. Camino de resolución: añadir declaración explícita de adopción restringida y recuperar Bunge vol.3/4 antes de citar paginación; validación filosófica pendiente de decisión autoral.
 - **Limitación 2.** §13 (caso 31 decoherencia cuántica) opera con decoherencia + einselection y declara neutralidad entre interpretaciones realistas. El triage identifica que decoherencia + einselection compromete *en uso* con la familia Everett-Wallace (no es neutra entre Bohm-DeBroglie, GRW, Everett). Wallace 2012 *The Emergent Multiverse* NO está en `07-bibliografia/`. Camino de resolución: reescribir §13 declarando compromiso interpretativo efectivo o recuperar Wallace 2012 antes de paginar la cita; corte filosófico pendiente de decisión autoral.

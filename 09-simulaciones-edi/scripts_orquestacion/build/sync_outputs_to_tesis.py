@@ -1,20 +1,24 @@
 #!/usr/bin/env python3
-"""Sincroniza outputs de repos/Simulaciones hacia TesisDesarrollo/02_Modelado_Simulacion.
+"""Verifica outputs in-place de cada caso (ex sync hacia TesisDesarrollo).
 
-Copia `outputs/metrics.json` y `outputs/report.md` de cada caso a:
-`TesisDesarrollo/02_Modelado_Simulacion/<caso>/metrics.json` y `report.md`.
+Historial: copiaba outputs/metrics.json y outputs/report.md desde
+repos/Simulaciones hacia TesisDesarrollo/02_Modelado_Simulacion. Ambos
+árboles se retiraron en la consolidación mono-repo: los outputs ya viven en
+09-simulaciones-edi/<caso>/outputs/. Desde 2026-09-28 este script verifica
+su presencia en lugar de copiar.
+
+Salida: exit 0 si todos los casos tienen outputs/metrics.json; exit 1 si
+falta algún metrics.json. Un report.md faltante es WARN (casos 41/42 no
+generan reporte narrativo por diseño) y no falla.
 """
 
 from __future__ import annotations
 
 import argparse
-import shutil
 from pathlib import Path
 
 
-ROOT = Path(__file__).resolve().parents[3]
-SIM_ROOT = ROOT / "repos" / "Simulaciones"
-TESIS_ROOT = ROOT / "TesisDesarrollo" / "02_Modelado_Simulacion"
+EDI_DIR = Path(__file__).resolve().parents[2]
 
 
 def _matches(case_name: str, case_filter: str | None) -> bool:
@@ -23,49 +27,57 @@ def _matches(case_name: str, case_filter: str | None) -> bool:
     return case_filter.lower() in case_name.lower()
 
 
-def sync_outputs(case_filter: str | None = None, dry_run: bool = False) -> tuple[int, int]:
-    copied = 0
+def check_outputs(
+    case_filter: str | None = None,
+) -> tuple[int, list[str], list[str]]:
+    """Retorna (revisados, metrics faltantes, reports faltantes)."""
     checked = 0
-
-    for case_dir in sorted(SIM_ROOT.glob("[0-9][0-9]_caso_*")):
+    missing_metrics: list[str] = []
+    missing_reports: list[str] = []
+    for case_dir in sorted(EDI_DIR.glob("[0-9][0-9]_caso_*")):
+        if not case_dir.is_dir():
+            continue
         case = case_dir.name
         if not _matches(case, case_filter):
             continue
-
         checked += 1
-        src_metrics = case_dir / "outputs" / "metrics.json"
-        src_report = case_dir / "outputs" / "report.md"
-
-        dst_dir = TESIS_ROOT / case
-        dst_metrics = dst_dir / "metrics.json"
-        dst_report = dst_dir / "report.md"
-
-        if dry_run:
-            if src_metrics.exists() or src_report.exists():
-                print(f"[DRY] {case}")
-            continue
-
-        dst_dir.mkdir(parents=True, exist_ok=True)
-
-        if src_metrics.exists():
-            shutil.copy2(src_metrics, dst_metrics)
-            copied += 1
-        if src_report.exists():
-            shutil.copy2(src_report, dst_report)
-            copied += 1
-
-    return checked, copied
+        if not (case_dir / "outputs" / "metrics.json").exists():
+            missing_metrics.append(f"{case}:outputs/metrics.json")
+        if not (case_dir / "outputs" / "report.md").exists():
+            missing_reports.append(f"{case}:outputs/report.md")
+    return checked, missing_metrics, missing_reports
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Sync outputs Simulaciones -> TesisDesarrollo")
+    parser = argparse.ArgumentParser(
+        description="Verifica outputs in-place (sin copiar; TesisDesarrollo retirado)"
+    )
     parser.add_argument("--case", help="Filtro parcial de caso (ej: clima, 06, falsacion)")
-    parser.add_argument("--dry-run", action="store_true", help="Solo mostrar casos, sin copiar")
+    parser.add_argument("--dry-run", action="store_true", help="Solo mostrar casos, sin verificar")
     args = parser.parse_args()
 
-    checked, copied = sync_outputs(case_filter=args.case, dry_run=args.dry_run)
+    if args.dry_run:
+        n = 0
+        for case_dir in sorted(EDI_DIR.glob("[0-9][0-9]_caso_*")):
+            if case_dir.is_dir() and _matches(case_dir.name, args.case):
+                print(f"[DRY] {case_dir.name}")
+                n += 1
+        print(f"Casos evaluados: {n}")
+        return 0
+
+    checked, missing_metrics, missing_reports = check_outputs(case_filter=args.case)
     print(f"Casos evaluados: {checked}")
-    print(f"Archivos copiados: {copied}")
+    print("Archivos copiados: 0 (verificación in-place; nada que sincronizar)")
+    if missing_reports:
+        print("WARN reports faltantes (no falla):")
+        for m in missing_reports:
+            print(f"  - {m}")
+    if missing_metrics:
+        print("Faltan metrics.json:")
+        for m in missing_metrics:
+            print(f"  - {m}")
+        return 1
+    print("metrics.json presente en todos los casos evaluados.")
     return 0
 
 

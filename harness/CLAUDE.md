@@ -34,7 +34,7 @@ El harness existe para **re-validar** afirmaciones del manuscrito y el corpus, N
 | pipeline >5 pasos | — | `@process-verifier` | opus |
 | paper externo | — | `@bibliography-fetcher` | sonnet |
 
-**Criterio del modelo:** opus para razonamiento profundo (filosofía, red-team, PRM); sonnet para tareas con criterio estructurado; haiku para tareas mecánicas (regex, grep, diff JSON↔prosa, invocación de Bash).
+**Criterio del modelo:** opus para razonamiento profundo (filosofía, red-team, PRM); sonnet para tareas con criterio estructurado; haiku para tareas mecánicas (regex, grep, diff JSON↔prosa, invocación de Bash). Los alias `opus`/`sonnet` resuelven a **Opus 4.8** / **Sonnet 5**; **Fable 5** (`claude-fable-5`) queda reservado SOLO para dificultad extrema real (razonamiento al límite), nunca por defecto.
 
 ## Flujos típicos
 

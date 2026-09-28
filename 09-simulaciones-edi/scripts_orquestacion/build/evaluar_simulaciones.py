@@ -2,10 +2,10 @@
 """Genera un resumen de metricas para todas las simulaciones.
 
 Uso:
-  python3 scripts/build/evaluar_simulaciones.py > /tmp/reporte.md
+  python3 09-simulaciones-edi/scripts_orquestacion/build/evaluar_simulaciones.py > /tmp/reporte.md
 
 Opcional:
-  python3 scripts/build/evaluar_simulaciones.py --write
+  python3 09-simulaciones-edi/scripts_orquestacion/build/evaluar_simulaciones.py --write
 """
 from pathlib import Path
 import json
@@ -13,8 +13,8 @@ import math
 import argparse
 
 ROOT = Path(__file__).resolve().parents[3]
-CASES_ROOT = ROOT / 'TesisDesarrollo' / '02_Modelado_Simulacion'
-OUTPUT = CASES_ROOT / 'Reporte_General_Simulaciones.md'
+EDI_DIR = ROOT / '09-simulaciones-edi'
+OUTPUT = EDI_DIR / 'Reporte_General_Simulaciones.md'
 
 # Mapeo categoría → nivel de cierre operativo
 NIVEL_MAP = {
@@ -24,7 +24,7 @@ NIVEL_MAP = {
 
 
 def read_metrics(case_dir: Path):
-    p = case_dir / 'metrics.json'
+    p = case_dir / 'outputs' / 'metrics.json'
     if not p.exists():
         return None
     return json.loads(p.read_text())
@@ -73,11 +73,13 @@ def fmt(x):
 
 def build_table():
     rows = []
-    for case_dir in sorted(CASES_ROOT.glob('*_caso_*')):
+    for case_dir in sorted(EDI_DIR.glob('[0-9][0-9]_caso_*')):
+        if not case_dir.is_dir():
+            continue
         metrics_obj = read_metrics(case_dir)
         m = compute_metrics(metrics_obj)
         case = case_dir.name
-        report_link = f"`{case_dir.name}/report.md`"
+        report_link = f"`{case_dir.name}/outputs/report.md`"
         rows.append((case, m, report_link))
 
     lines = []
