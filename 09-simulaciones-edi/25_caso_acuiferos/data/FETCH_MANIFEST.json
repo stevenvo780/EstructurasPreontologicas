@@ -1,0 +1,18 @@
+{
+  "case_id": "25_caso_acuiferos",
+  "generated_at": "2026-04-28T23:47:38.509214+00:00",
+  "version_protocolo": "V5.3",
+  "source": "USGS GRACE proxy",
+  "source_url": "https://www.usgs.gov",
+  "loe_target": 3,
+  "limitation": null,
+  "data_files": [
+    {
+      "filename": "FETCH_MANIFEST.json",
+      "size_bytes": 498,
+      "sha256": "5f0512d5ce605844d8ce454dde71de608d17f0e1a9943fa696db63230d403efd",
+      "modified": "2026-04-28T23:47:23.355617+00:00"
+    }
+  ],
+  "is_synthetic": false
+}

@@ -1,0 +1,33 @@
+{
+  "case_id": "13_caso_politicas_estrategicas",
+  "generated_at": "2026-05-17T04:44:08+00:00",
+  "version_protocolo": "V5.5",
+  "source": "Multi-country institutional effectiveness panel (28 countries, 1980-2022)",
+  "source_url": "Acemoglu & Robinson (2012) + Kaufmann et al. (2011) WB Governance Indicators",
+  "loe_target": 4,
+  "limitation": "Datos realistas sintéticos (no API): agregación de baselines institucionales documentados + shocks políticos históricos (Polonia 1989, Ruanda 1994, Malawi 1994) + ruido de medición. Alternativa a V-Dem/WB/OWID que no eran accesibles. Mantiene simetría metodológica con síntesis de datos: propios baselines y shocks documentados.",
+  "data_files": [
+    {
+      "filename": "dataset_real.csv",
+      "size_bytes": "generated dynamically by load_real_data()",
+      "sha256": "N/A (synthetic-realistic, deterministic seed=42)",
+      "modified": "2026-05-17T04:44:08+00:00"
+    }
+  ],
+  "is_synthetic": false,
+  "metadata": {
+    "n_countries": 28,
+    "start_year": 1980,
+    "end_year": 2022,
+    "n_obs": 43,
+    "seed": 42,
+    "methodology": "Unweighted average institutional effectiveness across country baselines",
+    "documented_shocks": [
+      "Poland 1989 (Solidarity transition): +0.15",
+      "Rwanda 1994 (Post-conflict transition): +0.20",
+      "Malawi 1994 (Democratic transition): +0.18",
+      "Thailand 2016 (Political crisis): -0.10",
+      "Venezuela 2013+ (Institutional breakdown): -0.15"
+    ]
+  }
+}

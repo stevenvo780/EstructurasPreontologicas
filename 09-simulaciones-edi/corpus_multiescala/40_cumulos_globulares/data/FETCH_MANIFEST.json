@@ -1,0 +1,18 @@
+{
+  "case_id": "40_cumulos_globulares",
+  "generated_at": "2026-04-28T23:47:38.510013+00:00",
+  "version_protocolo": "V5.3",
+  "source": "Sintético Plummer — parámetros Gaia DR3",
+  "source_url": "https://www.cosmos.esa.int/gaia",
+  "loe_target": 4,
+  "limitation": null,
+  "data_files": [
+    {
+      "filename": "FETCH_MANIFEST.json",
+      "size_bytes": 540,
+      "sha256": "1dca4a309b7274b9c921a22491fbb164e3cbc25d36e4c40ac8c7afaca767b8be",
+      "modified": "2026-04-28T23:47:23.356370+00:00"
+    }
+  ],
+  "is_synthetic": false
+}

@@ -1,0 +1,18 @@
+{
+  "case_id": "07_caso_falsacion_no_estacionariedad",
+  "generated_at": "2026-04-28T23:47:38.508377+00:00",
+  "version_protocolo": "V5.3",
+  "source": "Random walk con drift sintético",
+  "source_url": null,
+  "loe_target": 1,
+  "limitation": null,
+  "data_files": [
+    {
+      "filename": "FETCH_MANIFEST.json",
+      "size_bytes": 514,
+      "sha256": "9f9b64b06262afe385aec6f6db0310e137720c5065d17b028e7ba6b1ce783e3a",
+      "modified": "2026-04-28T23:47:23.354737+00:00"
+    }
+  ],
+  "is_synthetic": true
+}

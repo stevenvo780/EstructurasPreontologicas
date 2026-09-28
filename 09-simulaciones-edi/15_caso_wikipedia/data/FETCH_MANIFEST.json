@@ -1,0 +1,18 @@
+{
+  "case_id": "15_caso_wikipedia",
+  "generated_at": "2026-04-28T23:47:38.508746+00:00",
+  "version_protocolo": "V5.3",
+  "source": "Wikimedia Statistics",
+  "source_url": "https://stats.wikimedia.org",
+  "loe_target": 3,
+  "limitation": null,
+  "data_files": [
+    {
+      "filename": "FETCH_MANIFEST.json",
+      "size_bytes": 509,
+      "sha256": "bd1d76dd41f7e8e5597621a395bcc7e6853a4612840d53ba236c9335b87fd4b1",
+      "modified": "2026-04-28T23:47:23.355114+00:00"
+    }
+  ],
+  "is_synthetic": false
+}

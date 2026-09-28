@@ -1,0 +1,18 @@
+{
+  "case_id": "31_decoherencia_cuantica",
+  "generated_at": "2026-04-28T23:47:38.509598+00:00",
+  "version_protocolo": "V5.3",
+  "source": "Sintético Lindblad — parámetros transmón NIST/IBM",
+  "source_url": "https://quantum-computing.ibm.com",
+  "loe_target": 4,
+  "limitation": null,
+  "data_files": [
+    {
+      "filename": "FETCH_MANIFEST.json",
+      "size_bytes": 556,
+      "sha256": "24284ecb379473d138471397b58707e804ac1a35ccd632789cb9f704e8e0b1f2",
+      "modified": "2026-04-28T23:47:23.355936+00:00"
+    }
+  ],
+  "is_synthetic": false
+}

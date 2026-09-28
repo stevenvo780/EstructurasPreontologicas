@@ -1,0 +1,27 @@
+{
+  "pre_registro": "B-T2.1",
+  "fecha_descarga": "2026-05-17",
+  "urls_descargadas": {
+    "energy_pc": "https://ourworldindata.org/grapher/per-capita-energy-use.csv?v=1&csvType=full&useColumnShortNames=true",
+    "renewables_share": "https://ourworldindata.org/grapher/share-electricity-renewables.csv?v=1&csvType=full&useColumnShortNames=true",
+    "fossil_share": "https://ourworldindata.org/grapher/share-electricity-fossil-fuels.csv?v=1&csvType=full&useColumnShortNames=true",
+    "gdp_pc": "https://ourworldindata.org/grapher/gdp-per-capita-worldbank.csv?v=1&csvType=full&useColumnShortNames=true"
+  },
+  "region": "World",
+  "ventana": "1995-2022",
+  "registros": 28,
+  "columnas_utilizadas": {
+    "energy_pc": "primary_energy_consumption_per_capita__kwh",
+    "renewables_share": "renewable_share_of_electricity__pct",
+    "fossil_share": "fossil_share_of_electricity__pct",
+    "gdp_pc": "ny_gdp_pcap_pp_kd"
+  },
+  "nulos_post_interpolacion": {
+    "year": 0,
+    "energy_use_pc": 0,
+    "renewables_share": 0,
+    "fossil_share": 0,
+    "gdp_pc": 0,
+    "date": 0
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "case_id": "17_caso_oceanos",
+  "generated_at": "2026-04-28T23:47:38.508852+00:00",
+  "version_protocolo": "V5.3",
+  "source": "WMO/PMEL",
+  "source_url": "https://psl.noaa.gov",
+  "loe_target": 4,
+  "limitation": null,
+  "data_files": [
+    {
+      "filename": "FETCH_MANIFEST.json",
+      "size_bytes": 488,
+      "sha256": "3e3986ae75572b5de1d066966148cfbef139d68cb33c237178d5b03b9a87c8aa",
+      "modified": "2026-04-28T23:47:23.355227+00:00"
+    }
+  ],
+  "is_synthetic": false
+}

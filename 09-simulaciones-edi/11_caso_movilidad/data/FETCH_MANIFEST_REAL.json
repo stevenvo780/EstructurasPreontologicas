@@ -1,0 +1,9 @@
+{
+  "source": "TomTom Traffic Index",
+  "method": "direct_index",
+  "generated_at": "2026-05-17T04:43:21.079976+00:00",
+  "rows": 24,
+  "date_range": "2000-01-01 00:00:00 to 2023-01-01 00:00:00",
+  "case_id": "11_caso_movilidad",
+  "version_protocolo": "V5.3"
+}

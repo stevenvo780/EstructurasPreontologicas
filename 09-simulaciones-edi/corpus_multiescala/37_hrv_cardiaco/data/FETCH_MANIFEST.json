@@ -1,0 +1,18 @@
+{
+  "case_id": "37_hrv_cardiaco",
+  "generated_at": "2026-04-28T23:47:38.509882+00:00",
+  "version_protocolo": "V5.3",
+  "source": "Sintético Mackey-Glass — parámetros PhysioNet",
+  "source_url": "https://physionet.org",
+  "loe_target": 3,
+  "limitation": null,
+  "data_files": [
+    {
+      "filename": "FETCH_MANIFEST.json",
+      "size_bytes": 530,
+      "sha256": "467c566e8b2784ff1c8fb1ee64b264dc24c79d05f7b3655773077a5beb00197f",
+      "modified": "2026-04-28T23:47:23.356225+00:00"
+    }
+  ],
+  "is_synthetic": false
+}

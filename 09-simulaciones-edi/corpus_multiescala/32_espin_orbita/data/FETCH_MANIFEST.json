@@ -1,0 +1,18 @@
+{
+  "case_id": "32_espin_orbita",
+  "generated_at": "2026-04-28T23:47:38.509652+00:00",
+  "version_protocolo": "V5.3",
+  "source": "Sintético Bloch — parámetros NV-center",
+  "source_url": null,
+  "loe_target": 3,
+  "limitation": null,
+  "data_files": [
+    {
+      "filename": "FETCH_MANIFEST.json",
+      "size_bytes": 503,
+      "sha256": "8dfd4f068ab1ccd377459af4abed6377aa6ee3ef843119cb6e41de32978cda72",
+      "modified": "2026-04-28T23:47:23.355986+00:00"
+    }
+  ],
+  "is_synthetic": true
+}

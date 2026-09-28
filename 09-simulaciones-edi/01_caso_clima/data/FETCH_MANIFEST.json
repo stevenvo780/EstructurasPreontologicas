@@ -1,0 +1,20 @@
+{
+  "case_id": "01_caso_clima",
+  "generated_at": "2026-05-17T04:34:27.278935Z",
+  "version_protocolo": "V6.0",
+  "source": "Realistic synthetic (OWID-derived, deterministic seed=42)",
+  "source_url": "https://github.com/owid/co2-data (timeout fallback)",
+  "source_detail": "Temperature anomaly (1959-2024, trend 0.015°C/yr + seasonality) + CO2 (315→420 ppm, linear), interpolated monthly, linear-detrended",
+  "loe_target": 5,
+  "limitation": "Remote OWID fetch timeout due to SSL handshake. Used deterministic synthetic realistic dataset preserving: global warming trend (IPCC-like 0.015°C/yr), seasonal cycle ±0.3°C, CO2 atmospheric trend (315→420 ppm with 1 ppm annual cycle). Reproduces with HYPER_N_PERM=999 HYPER_N_BOOT=500.",
+  "is_synthetic": true,
+  "data_files": [
+    {
+      "filename": "FETCH_MANIFEST.json",
+      "size_bytes": 768,
+      "sha256": "tbd",
+      "modified": "2026-05-17T04:34:27Z"
+    }
+  ],
+  "reproducibility": "python3 09-simulaciones-edi/01_caso_clima/src/validate.py (seed=42 hardcoded in data.py)"
+}

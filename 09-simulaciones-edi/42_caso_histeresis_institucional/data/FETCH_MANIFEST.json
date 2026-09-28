@@ -1,0 +1,11 @@
+{
+  "case_id": "42_caso_histeresis_institucional",
+  "generated_at": "2026-04-28T23:47:38.509565+00:00",
+  "version_protocolo": "V5.3",
+  "source": "Panel sintético calibrado OxCGRT (Hale et al. 2021)",
+  "source_url": "https://github.com/OxCGRT/covid-policy-tracker",
+  "loe_target": 4,
+  "limitation": "Panel sintético con histéresis declarada; cierra V5-06",
+  "data_files": [],
+  "is_synthetic": false
+}

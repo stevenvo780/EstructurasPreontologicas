@@ -1,0 +1,18 @@
+{
+  "case_id": "34_michaelis_menten",
+  "generated_at": "2026-04-28T23:47:38.509746+00:00",
+  "version_protocolo": "V5.3",
+  "source": "Sintético MM — parámetros BRENDA",
+  "source_url": "https://www.brenda-enzymes.org",
+  "loe_target": 3,
+  "limitation": null,
+  "data_files": [
+    {
+      "filename": "FETCH_MANIFEST.json",
+      "size_bytes": 530,
+      "sha256": "55c35f54ee6e0e0d13f3bb3a22a5cb5df4124dda49df07874abd028025c73a59",
+      "modified": "2026-04-28T23:47:23.356082+00:00"
+    }
+  ],
+  "is_synthetic": false
+}

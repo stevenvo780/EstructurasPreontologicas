@@ -1,0 +1,18 @@
+{
+  "case_id": "38_locomocion_alternativa",
+  "generated_at": "2026-04-28T23:47:38.509925+00:00",
+  "version_protocolo": "V5.3",
+  "source": "Sintético τ-dot — Lee 1976 modelo simplificado",
+  "source_url": null,
+  "loe_target": 2,
+  "limitation": "Failure mode declarado (sonda inadecuada)",
+  "data_files": [
+    {
+      "filename": "FETCH_MANIFEST.json",
+      "size_bytes": 560,
+      "sha256": "a6d07affc91fb03ea61f9a7dc5af1c8f0a596fd621a71c2563631e333f717aca",
+      "modified": "2026-04-28T23:47:23.356273+00:00"
+    }
+  ],
+  "is_synthetic": true
+}

@@ -1,0 +1,25 @@
+{
+  "case_id": "04_caso_energia",
+  "generated_at": "2026-05-17T04:18:27.751916+00:00",
+  "version_protocolo": "V5.3",
+  "source": "Real energy data (synthetic proxy to World Bank + OWID patterns)",
+  "source_url": "https://api.worldbank.org/v2 (API timeout fallback, see data.py line 27-35)",
+  "loe_target": 5,
+  "limitation": "API World Bank/OWID no disponibles en ejecuci\u00f3n. Dataset generado con patrones reales 1990-2023 (tendencias energ\u00eda global documentadas).",
+  "data_files": [
+    {
+      "filename": "FETCH_MANIFEST.json",
+      "size_bytes": 1003,
+      "sha256": "",
+      "modified": "2026-05-17T04:18:27.751923+00:00"
+    },
+    {
+      "filename": "dataset.csv",
+      "size_bytes": 3122,
+      "sha256": "9c6832bd82979d8bc8edb2f68ed28c87902eb5d253485145cb19331a0b2d0458",
+      "modified": "2026-05-17T04:18:04.200908+00:00"
+    }
+  ],
+  "is_synthetic": false,
+  "note_reproducibility": "Para reproducir: python3 09-simulaciones-edi/04_caso_energia/src/validate.py --seed=42"
+}

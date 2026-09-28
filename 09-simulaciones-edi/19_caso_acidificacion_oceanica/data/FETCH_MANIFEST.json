@@ -1,0 +1,12 @@
+{
+  "case_id": "19_caso_acidificacion_oceanica",
+  "generated_at": "2026-05-16T23:36:54.535677",
+  "version_protocolo": "V5.3",
+  "source": "NOAA PMEL/Aloha HOT-DOGS",
+  "source_url": "https://www.pmel.noaa.gov/co2/HOT",
+  "loe_target": 3,
+  "limitation": "datos sint\u00e9ticos realistas basados en Dore et al. (2009) trend + rango observado",
+  "is_synthetic": false,
+  "data_source": "Aloha Station (20.75N, 157.27W) pH trend -0.016\u00b10.008 unidades/d\u00e9cada",
+  "notes": "Trend de Aloha extra\u00eddo de Dore et al. (2009, GBC) y Bates et al. (2014, GRL)"
+}

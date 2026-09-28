@@ -1,0 +1,18 @@
+{
+  "case_id": "24_caso_microplasticos",
+  "generated_at": "2026-04-28T23:47:38.509170+00:00",
+  "version_protocolo": "V5.3",
+  "source": "Jambeck 2015 et al. + OWID",
+  "source_url": "https://ourworldindata.org/plastic-pollution",
+  "loe_target": 4,
+  "limitation": null,
+  "data_files": [
+    {
+      "filename": "FETCH_MANIFEST.json",
+      "size_bytes": 537,
+      "sha256": "7b8bf01fb394c53210dc978033a7858e0e9f22efa9f762ed427f9bff5dfa7a74",
+      "modified": "2026-04-28T23:47:23.355575+00:00"
+    }
+  ],
+  "is_synthetic": false
+}

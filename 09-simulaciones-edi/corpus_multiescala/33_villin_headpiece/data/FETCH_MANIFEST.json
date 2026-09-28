@@ -1,0 +1,18 @@
+{
+  "case_id": "33_villin_headpiece",
+  "generated_at": "2026-04-28T23:47:38.509699+00:00",
+  "version_protocolo": "V5.3",
+  "source": "Sintético MSM 2-estados — Anton 2 Shaw 2010",
+  "source_url": null,
+  "loe_target": 3,
+  "limitation": "Sonda equilibrio inadecuada (declarado)",
+  "data_files": [
+    {
+      "filename": "FETCH_MANIFEST.json",
+      "size_bytes": 548,
+      "sha256": "1eb63bf9386aefbb2b9dd9e1a4f7a0d2d56564dc33549da49ac6a68f95c04ae1",
+      "modified": "2026-04-28T23:47:23.356037+00:00"
+    }
+  ],
+  "is_synthetic": true
+}

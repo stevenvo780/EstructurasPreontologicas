@@ -1,0 +1,18 @@
+{
+  "case_id": "28_caso_fuga_cerebros",
+  "generated_at": "2026-04-28T23:47:38.509355+00:00",
+  "version_protocolo": "V5.3",
+  "source": "World Bank net migration tertiary",
+  "source_url": "https://api.worldbank.org/v2",
+  "loe_target": 3,
+  "limitation": null,
+  "data_files": [
+    {
+      "filename": "FETCH_MANIFEST.json",
+      "size_bytes": 527,
+      "sha256": "a07212cbb4e9a5c3c05cf284908f822123867c43a7999c874da8db3f7190588f",
+      "modified": "2026-04-28T23:47:23.355769+00:00"
+    }
+  ],
+  "is_synthetic": false
+}

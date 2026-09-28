@@ -1,0 +1,18 @@
+{
+  "case_id": "14_caso_postverdad",
+  "generated_at": "2026-04-28T23:47:38.508703+00:00",
+  "version_protocolo": "V5.3",
+  "source": "Google Trends + Wikipedia stats",
+  "source_url": "https://trends.google.com",
+  "loe_target": 2,
+  "limitation": null,
+  "data_files": [
+    {
+      "filename": "FETCH_MANIFEST.json",
+      "size_bytes": 519,
+      "sha256": "e936be611c7efb793a34d9a05ca2362aec576d21c91d1b31e20f64c8326c965f",
+      "modified": "2026-04-28T23:47:23.355071+00:00"
+    }
+  ],
+  "is_synthetic": false
+}

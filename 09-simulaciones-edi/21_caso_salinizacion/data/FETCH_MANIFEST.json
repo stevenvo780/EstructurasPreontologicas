@@ -1,0 +1,18 @@
+{
+  "case_id": "21_caso_salinizacion",
+  "generated_at": "2026-04-28T23:47:38.509041+00:00",
+  "version_protocolo": "V5.3",
+  "source": "World Bank irrigated land",
+  "source_url": "https://api.worldbank.org/v2",
+  "loe_target": 3,
+  "limitation": null,
+  "data_files": [
+    {
+      "filename": "FETCH_MANIFEST.json",
+      "size_bytes": 518,
+      "sha256": "7ef3b861360e5390d70a4be69eb2dcc5690a7a9d255db0819e18f7a8496f7e1a",
+      "modified": "2026-04-28T23:47:23.355433+00:00"
+    }
+  ],
+  "is_synthetic": false
+}

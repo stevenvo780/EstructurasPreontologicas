@@ -1,0 +1,35 @@
+{
+  "case_id": "03_caso_contaminacion",
+  "generated_at": "2026-05-17T04:38:10.564299+00:00",
+  "version_protocolo": "V5.5",
+  "source": "World Bank Open Data API",
+  "source_url": "https://data.worldbank.org/indicator/EN.ATM.PM25.MC.M3",
+  "data_coverage": {
+    "temporal_start": "1990-01-01",
+    "temporal_end": "2022-01-01",
+    "observations": 33,
+    "coverage_percent": 100
+  },
+  "variables": {
+    "pm25": "EN.ATM.PM25.MC.M3 (PM2.5 air pollution global aggregate)",
+    "gdp_growth": "NY.GDP.MKTP.KD.ZG (annual GDP growth %)",
+    "coal_pct": "EG.ELC.COAL.ZS (coal as % of electricity)",
+    "renewable_pct": "EG.FEC.RNEW.ZS (renewable energy as % of total)"
+  },
+  "correlations_with_pm25": {
+    "gdp_growth": 0.53,
+    "coal_pct": 0.721,
+    "renewable_pct": -0.662
+  },
+  "data_files": [
+    {
+      "filename": "dataset_real.csv",
+      "size_bytes": 2643,
+      "sha256": "7f0a676c84ef08b30b4dd9c89affc93a8e67a2bea30929f9db2ad6ba4c2ee464",
+      "modified": "2026-05-17T04:38:10.564323+00:00",
+      "description": "Global PM2.5 + 3 exogenous drivers (1990-2022 annual)"
+    }
+  ],
+  "is_synthetic": false,
+  "api_fallback_note": "World Bank API stable; 33/33 years successfully retrieved. No interpolation required."
+}

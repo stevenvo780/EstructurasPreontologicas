@@ -1,0 +1,33 @@
+{
+  "case_id": "29_caso_iot",
+  "generated_at": "2026-05-17T11:40:39.160877Z",
+  "version_protocolo": "V5.3",
+  "source": "World Bank Open Data API",
+  "source_url": "https://data.worldbank.org",
+  "loe_target": 3,
+  "primary_indicator": "IT.CEL.SETS.P2",
+  "primary_indicator_label": "Mobile cellular telephone subscriptions per 100 inhabitants",
+  "secondary_indicators": [
+    "IT.NET.USER.ZS (Internet users %)",
+    "IT.NET.BBND.P2 (Fixed broadband subscriptions per 100)",
+    "IT.NET.SECR.P6 (Secure internet servers per million)",
+    "NY.GDP.PCAP.KD (GDP per capita)",
+    "NY.GDP.MKTP.KD.ZG (GDP growth %)"
+  ],
+  "limitation": "Cobertura asimétrica 1985-2022; datos interpolados linealmente",
+  "data_files": [
+    {
+      "filename": "dataset.csv",
+      "size_bytes": 1847,
+      "sha256": "auto_computed",
+      "modified": "2026-05-17T11:40:39.160877Z",
+      "obs_count": 33,
+      "date_range": "1985-01-01 to 2022-01-01"
+    }
+  ],
+  "is_synthetic": false,
+  "edi_real": -0.8989,
+  "edi_synthetic": -0.0093,
+  "p_perm_real": 1.0,
+  "taxonomy_real": "null"
+}

@@ -1,0 +1,24 @@
+{
+  "case_id": "16_caso_deforestacion",
+  "generated_at": "2026-04-28T23:47:38.508787+00:00",
+  "version_protocolo": "V5.3",
+  "source": "World Bank Open Data forest area",
+  "source_url": "https://api.worldbank.org/v2",
+  "loe_target": 5,
+  "limitation": null,
+  "data_files": [
+    {
+      "filename": "FETCH_MANIFEST.json",
+      "size_bytes": 744,
+      "sha256": "7835c60e809b2a9aae3d3e91bccaeccfb76abbe488da94532c17fbda9da8c281",
+      "modified": "2026-04-28T23:47:23.355181+00:00"
+    },
+    {
+      "filename": "wb_deforestation.csv",
+      "size_bytes": 1035,
+      "sha256": "b61c4b7e6590a748af2d92136ccdd1129ef7ac395e51001d0b3c5c24feac3035",
+      "modified": "2026-04-28T02:32:38.845223+00:00"
+    }
+  ],
+  "is_synthetic": false
+}

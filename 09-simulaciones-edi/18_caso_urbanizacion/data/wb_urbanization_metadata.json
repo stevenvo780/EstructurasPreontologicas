@@ -1,0 +1,8 @@
+{
+  "source": "World Bank",
+  "indicator": "SP.URB.TOTL.IN.ZS (% Urban Population)",
+  "date_range": "1960-2022",
+  "n_obs": 63,
+  "fetched_at": "2026-05-17T04:49:54.355272",
+  "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
+}

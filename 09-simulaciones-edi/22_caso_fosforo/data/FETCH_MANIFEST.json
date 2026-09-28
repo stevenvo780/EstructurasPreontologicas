@@ -1,0 +1,20 @@
+{
+  "case_id": "22_caso_fosforo",
+  "generated_at": "2026-05-17T04:57:29.378140+00:00",
+  "version_protocolo": "V5.3",
+  "source": "World Bank - Fertilizer consumption (kg per hectare)",
+  "source_url": "https://api.worldbank.org/v2/country/WLD/indicator/AG.CON.FERT.ZS",
+  "indicator": "AG.CON.FERT.ZS",
+  "coverage": "1966-2022 (57 years)",
+  "loe_target": 4,
+  "data_files": [
+    {
+      "filename": "wb_fertilizer_consumption.csv",
+      "size_bytes": 1884,
+      "sha256": "f03c3bdf97cc13a346f27e535cac7c2eec45e81f2adb546e8e3a115e5225102f",
+      "modified": "2026-05-17T04:57:29.378169+00:00"
+    }
+  ],
+  "is_synthetic": false,
+  "notes": "Real global fertilizer consumption data from World Bank. Variable: phosphate fertilizer use measured in kg/hectare."
+}

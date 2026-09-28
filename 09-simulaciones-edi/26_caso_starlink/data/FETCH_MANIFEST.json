@@ -1,0 +1,24 @@
+{
+  "case_id": "26_caso_starlink",
+  "generated_at": "2026-04-28T23:47:38.509257+00:00",
+  "version_protocolo": "V5.3",
+  "source": "CelesTrak",
+  "source_url": "https://celestrak.org",
+  "loe_target": 4,
+  "limitation": "Serie corta, ventana 2019-2024",
+  "data_files": [
+    {
+      "filename": "FETCH_MANIFEST.json",
+      "size_bytes": 738,
+      "sha256": "7beee68425291788012f1cca4c1b72e4beef7faab4bf1595a1f4cd42ee81f168",
+      "modified": "2026-04-28T23:47:23.355675+00:00"
+    },
+    {
+      "filename": "celestrak_snapshot.json",
+      "size_bytes": 82,
+      "sha256": "08f4860f141db578c77331d0efa0ffd98c416d9af7fec6ecb9c4f09bee566650",
+      "modified": "2026-04-28T02:13:41.509120+00:00"
+    }
+  ],
+  "is_synthetic": false
+}

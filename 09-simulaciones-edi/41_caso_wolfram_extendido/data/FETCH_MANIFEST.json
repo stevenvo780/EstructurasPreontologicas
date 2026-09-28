@@ -1,0 +1,11 @@
+{
+  "case_id": "41_caso_wolfram_extendido",
+  "generated_at": "2026-04-28T23:47:38.509513+00:00",
+  "version_protocolo": "V5.3",
+  "source": "Sintético — autómatas celulares Rule 30/90/110/184",
+  "source_url": null,
+  "loe_target": 3,
+  "limitation": "Datos del autómata reales pero sintéticos; sirve a discriminación contra Wolfram",
+  "data_files": [],
+  "is_synthetic": true
+}

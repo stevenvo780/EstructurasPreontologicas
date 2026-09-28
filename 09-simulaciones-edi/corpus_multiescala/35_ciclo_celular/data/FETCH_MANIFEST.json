@@ -1,0 +1,18 @@
+{
+  "case_id": "35_ciclo_celular",
+  "generated_at": "2026-04-28T23:47:38.509794+00:00",
+  "version_protocolo": "V5.3",
+  "source": "Sintético Tyson-Novak",
+  "source_url": null,
+  "loe_target": 3,
+  "limitation": null,
+  "data_files": [
+    {
+      "filename": "FETCH_MANIFEST.json",
+      "size_bytes": 484,
+      "sha256": "696866d97d2b996c38d1b5c6d1d3467130067fdd6f68627b431465288a65e7bb",
+      "modified": "2026-04-28T23:47:23.356127+00:00"
+    }
+  ],
+  "is_synthetic": true
+}

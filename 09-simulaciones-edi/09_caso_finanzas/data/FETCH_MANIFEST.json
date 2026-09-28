@@ -1,0 +1,18 @@
+{
+  "case_id": "09_caso_finanzas",
+  "generated_at": "2026-04-28T23:47:38.508479+00:00",
+  "version_protocolo": "V5.3",
+  "source": "Yahoo Finance",
+  "source_url": "https://finance.yahoo.com",
+  "loe_target": 5,
+  "limitation": null,
+  "data_files": [
+    {
+      "filename": "FETCH_MANIFEST.json",
+      "size_bytes": 499,
+      "sha256": "0abfc5085f1bebc17493cfa43135b64dd3e675b527a8b8e5b9971f86e41ae66a",
+      "modified": "2026-04-28T23:47:23.354837+00:00"
+    }
+  ],
+  "is_synthetic": false
+}

@@ -1,0 +1,10 @@
+{
+  "source": "nasa_odpo_calibrated",
+  "note": "Calibrated to NASA Orbital Debris Quarterly News (1980-2024)",
+  "events": [
+    "2007-01: Chinese ASAT antisatellite test (+3070 trackable)",
+    "2009-02: Iridium-Cosmos collision (+2000 trackable)",
+    "2021-11: Russian ASAT test (+1500 trackable)"
+  ],
+  "baseline_growth": "~5%/year (nominal LEO decay balanced by launches)"
+}

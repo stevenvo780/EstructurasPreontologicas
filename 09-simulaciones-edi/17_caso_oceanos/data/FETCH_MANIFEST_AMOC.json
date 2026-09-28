@@ -1,0 +1,8 @@
+{
+  "case_id": "17_caso_oceanos_amoc",
+  "generated_at": "2026-05-17T15:01:40.565921",
+  "source": "RAPID-MOC (University of Southampton) + NOAA ONI",
+  "variable": "AMOC Transport (Sv, normalized anomaly)",
+  "data_range": "1990-01-01 00:00:00 to 2023-01-01 00:00:00",
+  "limitation": "Published means 2004-2021, synthetic extension 1990-2003/2022-2023"
+}

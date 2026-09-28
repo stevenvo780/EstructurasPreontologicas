@@ -1,0 +1,18 @@
+{
+  "case_id": "27_caso_riesgo_biologico",
+  "generated_at": "2026-04-28T23:47:38.509312+00:00",
+  "version_protocolo": "V5.3",
+  "source": "World Bank mortality + WHO",
+  "source_url": "https://api.worldbank.org/v2",
+  "loe_target": 4,
+  "limitation": null,
+  "data_files": [
+    {
+      "filename": "FETCH_MANIFEST.json",
+      "size_bytes": 523,
+      "sha256": "4b2067d6b7cf68da260bce135d249d209068b06ff4ae170ad5ab6ad8e2c1aead",
+      "modified": "2026-04-28T23:47:23.355725+00:00"
+    }
+  ],
+  "is_synthetic": false
+}

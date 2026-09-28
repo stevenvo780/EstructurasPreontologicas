@@ -1,0 +1,18 @@
+{
+  "case_id": "11_caso_movilidad",
+  "generated_at": "2026-04-28T23:47:38.508570+00:00",
+  "version_protocolo": "V5.3",
+  "source": "World Bank Open Data",
+  "source_url": "https://api.worldbank.org/v2",
+  "loe_target": 4,
+  "limitation": null,
+  "data_files": [
+    {
+      "filename": "FETCH_MANIFEST.json",
+      "size_bytes": 510,
+      "sha256": "75b117da69edeb7d6460346af635969bb041d61422bebb7645c207ce8f55eab8",
+      "modified": "2026-04-28T23:47:23.354932+00:00"
+    }
+  ],
+  "is_synthetic": false
+}

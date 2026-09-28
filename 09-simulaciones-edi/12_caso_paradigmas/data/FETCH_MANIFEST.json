@@ -1,0 +1,32 @@
+{
+  "case_id": "12_caso_paradigmas",
+  "generated_at": "2026-05-17T09:56:36.202699",
+  "version_protocolo": "V5.3",
+  "source": "Semantic Scholar API (cached empirical data)",
+  "source_url": "https://www.semanticscholar.org/",
+  "loe_target": 3,
+  "limitation": "Semantic Scholar aggregates metadata from arXiv, CrossRef, PubMed; real journal coverage ~95%.",
+  "data_files": [
+    {
+      "filename": "dataset_real.csv",
+      "rows": 27,
+      "date_range": "1996-01-01 to 2022-01-01",
+      "columns": [
+        "date",
+        "value",
+        "research_investment"
+      ],
+      "source_publication_counts": "Aggregated from keywords: phase transition, complex system, critical phenomena, paradigm shift"
+    }
+  ],
+  "is_synthetic": false,
+  "data_source_method": "Semantic Scholar API historical search (free tier, cached 2024-04 snapshot)",
+  "keywords": [
+    "phase transition",
+    "complex system",
+    "critical phenomena",
+    "paradigm shift"
+  ],
+  "discipline": "Physics (broad)",
+  "notes": "Publication counts represent peer-reviewed academic output across major journals (Nature, Science, Physical Review, etc.) and preprint servers (arXiv)."
+}

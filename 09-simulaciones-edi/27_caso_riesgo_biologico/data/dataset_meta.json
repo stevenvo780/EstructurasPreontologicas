@@ -1,0 +1,8 @@
+{
+  "source": "WHO_GHO_WHOSIS_000015",
+  "indicator": "Neonatal Mortality Rate",
+  "meaning": "proxy for global surveillance system strength",
+  "n_raw_records": 12936,
+  "n_countries": 196,
+  "n_aggregated_years": 22
+}

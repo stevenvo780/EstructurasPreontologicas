@@ -1,0 +1,18 @@
+{
+  "case_id": "06_caso_falsacion_exogeneidad",
+  "generated_at": "2026-04-28T23:47:38.508329+00:00",
+  "version_protocolo": "V5.3",
+  "source": "Random walk sintético",
+  "source_url": null,
+  "loe_target": 1,
+  "limitation": "Control de falsación, no caso real",
+  "data_files": [
+    {
+      "filename": "FETCH_MANIFEST.json",
+      "size_bytes": 530,
+      "sha256": "d3d7ecb5342fb81c0117a6a479418aa580952cbad73eb1d90859f50578614ef6",
+      "modified": "2026-04-28T23:47:23.354680+00:00"
+    }
+  ],
+  "is_synthetic": true
+}

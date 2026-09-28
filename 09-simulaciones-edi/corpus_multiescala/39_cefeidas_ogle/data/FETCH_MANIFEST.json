@@ -1,0 +1,18 @@
+{
+  "case_id": "39_cefeidas_ogle",
+  "generated_at": "2026-04-28T23:47:38.509970+00:00",
+  "version_protocolo": "V5.3",
+  "source": "Sintético Leavitt P-L — parámetros OGLE LMC",
+  "source_url": "https://ogle.astrouw.edu.pl",
+  "loe_target": 4,
+  "limitation": null,
+  "data_files": [
+    {
+      "filename": "FETCH_MANIFEST.json",
+      "size_bytes": 535,
+      "sha256": "95a3ceef286a7a8ca640269f4fbb7975424cc06b585531dfada6992eef415001",
+      "modified": "2026-04-28T23:47:23.356319+00:00"
+    }
+  ],
+  "is_synthetic": false
+}

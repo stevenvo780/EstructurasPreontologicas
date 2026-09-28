@@ -1,0 +1,42 @@
+{
+  "last_updated": "2026-05-17T04:20:36Z",
+  "cases": {
+    "27_caso_riesgo_biologico": {
+      "data_source": "WHO_GHO_WHOSIS_000015",
+      "indicator": "Neonatal Mortality Rate (World Health Statistics)",
+      "meaning": "proxy for global surveillance system strength and epidemiological response capacity",
+      "url": "https://ghoapi.azureedge.net/api/WHOSIS_000015",
+      "coverage": {
+        "countries": 196,
+        "years": 22,
+        "date_range": "2000-01-01 to 2021-01-01"
+      },
+      "processing": {
+        "aggregation": "annual mean across countries",
+        "normalization": "min-max to [0,1]",
+        "original_range": "[18.03, 19.95]",
+        "normalized_range": "[0.0, 1.0]"
+      },
+      "metadata": {
+        "source_type": "real",
+        "fetch_method": "REST API with SSL bypass",
+        "fallback": "synthetic if API unavailable",
+        "validation_seed": 42
+      },
+      "dataset_info": {
+        "file": "27_caso_riesgo_biologico/data/dataset.csv",
+        "rows": 22,
+        "columns": ["date", "value"]
+      },
+      "validation_results": {
+        "edi_real": 0.2160,
+        "pass_real": false,
+        "category": "trend",
+        "nivel": 1,
+        "edi_synthetic": -0.0035,
+        "pass_synthetic": false
+      },
+      "notes": "Real data shows positive EDI but without statistical significance (p=0.956). WHO GHO neonatal mortality as proxy demonstrates capacity of global health monitoring systems; correlation trend with biological risk is inverted (decrease in mortality as surveillance improves), creating apparent negative correlation."
+    }
+  }
+}

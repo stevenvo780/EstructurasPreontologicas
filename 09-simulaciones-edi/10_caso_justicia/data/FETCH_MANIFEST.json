@@ -1,0 +1,18 @@
+{
+  "case_id": "10_caso_justicia",
+  "generated_at": "2026-04-28T23:47:38.508526+00:00",
+  "version_protocolo": "V5.3",
+  "source": "World Bank Open Data",
+  "source_url": "https://api.worldbank.org/v2",
+  "loe_target": 4,
+  "limitation": null,
+  "data_files": [
+    {
+      "filename": "FETCH_MANIFEST.json",
+      "size_bytes": 509,
+      "sha256": "47e0740f514af3395c577852ebfa1ad6effdba95e89e740c3426b53d0f8517af",
+      "modified": "2026-04-28T23:47:23.354882+00:00"
+    }
+  ],
+  "is_synthetic": false
+}

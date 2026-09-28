@@ -1,0 +1,24 @@
+{
+  "case_id": "30_caso_behavioral_dynamics",
+  "generated_at": "2026-04-28T23:47:38.509451+00:00",
+  "version_protocolo": "V5.3",
+  "source": "Sintético generado por sistema completo Fajen-Warren",
+  "source_url": null,
+  "loe_target": 2,
+  "limitation": "Sintético; elevación con datos VENLab/WALK-MS pendiente",
+  "data_files": [
+    {
+      "filename": "FETCH_MANIFEST.json",
+      "size_bytes": 808,
+      "sha256": "da92b85c9c6b6ea3c7081ca70059e2901d0fbcc2705922919fafd1ab31f59e64",
+      "modified": "2026-04-28T23:47:23.355884+00:00"
+    },
+    {
+      "filename": "behavioral_dynamics_synth.csv",
+      "size_bytes": 4309,
+      "sha256": "14ccc403222ad1181433d4bd427e00b7c18d14768008017172ed8332549bd1cf",
+      "modified": "2026-04-28T02:45:01.767332+00:00"
+    }
+  ],
+  "is_synthetic": true
+}
